@@ -120,11 +120,12 @@
 
 @layer base {
 :root {
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   --foreground: 222.2 47.4% 11.2%;
   --background: 255 0% 100%;
-  --primary: 223.8 90.6% 58.2%;
-  --secondary: 262.1 83.3% 57.8%;
+  /* HandballStats brand: energetic orange primary + deep court-blue secondary */
+  --primary: 22 92% 52%;
+  --secondary: 221 83% 53%;
   --accent: 0 0% 89%;
   --notification: 351.1 100% 50%;
   --success: 118.1 63% 39.2%;

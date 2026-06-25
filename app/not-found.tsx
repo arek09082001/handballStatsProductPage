@@ -2,23 +2,22 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Home, BriefcaseBusiness, ArrowLeft, Mail } from 'lucide-react';
+import { Home, ArrowLeft, Rocket } from 'lucide-react';
 import { motion } from 'framer-motion';
-import ContactDialog from '@/components/custom-ui/contact-dialog';
 
 export default function NotFound() {
   return (
-    <div className='relative min-h-screen overflow-hidden bg-slate-950 px-4 py-16 text-white'>
-      <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(14,165,233,0.25),transparent_45%),radial-gradient(circle_at_80%_15%,rgba(56,189,248,0.2),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(59,130,246,0.2),transparent_40%)]' />
+    <div className='relative min-h-screen overflow-hidden bg-[#0b1220] px-4 py-16 text-white'>
+      <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(249,115,22,0.28),transparent_45%),radial-gradient(circle_at_80%_15%,rgba(37,99,235,0.22),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(249,115,22,0.18),transparent_40%)]' />
       <div className='relative mx-auto flex min-h-[calc(100vh-8rem)] w-full max-w-3xl items-center justify-center'>
         <motion.div
-          className='w-full rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-[0_30px_90px_-35px_rgba(56,189,248,0.5)] backdrop-blur-xl md:p-12'
+          className='w-full rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-[0_30px_90px_-35px_rgba(249,115,22,0.5)] backdrop-blur-xl md:p-12'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
           <div className='mb-8'>
             <motion.h1
-              className='text-[120px] font-black leading-none tracking-[-0.06em] text-cyan-300 sm:text-[180px]'
+              className='text-[120px] font-black leading-none tracking-[-0.06em] text-[#fdba74] sm:text-[180px]'
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}>
@@ -34,8 +33,8 @@ export default function NotFound() {
               Diese Seite existiert nicht
             </h2>
             <p className='mx-auto mb-10 max-w-xl text-base leading-relaxed text-slate-200 md:text-lg'>
-              Die angeforderte URL passt nicht zur aktuellen Website-Struktur von Arkadiusz Weiss Webdesign.
-              Nutzen Sie die Schnellzugriffe, um direkt zu den wichtigsten Bereichen zu gelangen.
+              Die angeforderte Seite konnten wir nicht finden. Spring zurück zur
+              Startseite und entdecke, wie HandballStats dein Team besser macht.
             </p>
           </motion.div>
 
@@ -47,7 +46,7 @@ export default function NotFound() {
             <Button
               asChild
               size='lg'
-              className='w-full bg-cyan-400 text-slate-950 hover:bg-cyan-300 sm:w-auto'>
+              className='w-full bg-[#f97316] text-white hover:bg-[#ea580c] sm:w-auto'>
               <Link href='/' title='Zur Startseite' className='flex items-center gap-2'>
                 <Home className='size-5' />
                 Zur Startseite
@@ -58,9 +57,9 @@ export default function NotFound() {
               variant='outline'
               size='lg'
               className='w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto'>
-              <Link href='/leistungen' title='Leistungen ansehen' className='flex items-center gap-2'>
-                <BriefcaseBusiness className='size-5' />
-                Leistungen ansehen
+              <Link href='/#newsletter' title='In den Newsletter eintragen' className='flex items-center gap-2'>
+                <Rocket className='size-5' />
+                Newsletter
               </Link>
             </Button>
           </motion.div>
@@ -70,18 +69,13 @@ export default function NotFound() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}>
-            <p className='mb-4 text-sm text-slate-300'>
-              Beliebte Ziele:
-            </p>
-            <div className='flex flex-wrap gap-3 justify-center'>
+            <p className='mb-4 text-sm text-slate-300'>Beliebte Ziele:</p>
+            <div className='flex flex-wrap justify-center gap-3'>
               <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
-                <Link href='/unternehmen' title='Zur Unternehmensseite'>Unternehmen</Link>
+                <Link href='/#features' title='Funktionen ansehen'>Funktionen</Link>
               </Button>
               <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
-                <Link href='/kontakt' title='Zur Kontaktseite'>Kontakt</Link>
-              </Button>
-              <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
-                <Link href='/leistungen' title='Zur Leistungsseite'>Leistungen</Link>
+                <Link href='/#faq' title='Häufige Fragen'>FAQ</Link>
               </Button>
               <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
                 <Link href='/impressum' title='Zum Impressum'>Impressum</Link>
@@ -99,19 +93,9 @@ export default function NotFound() {
               size='sm'
               onClick={() => window.history.back()}
               className='text-slate-300 hover:bg-white/10 hover:text-white'>
-              <ArrowLeft className='size-4 mr-2' />
+              <ArrowLeft className='mr-2 size-4' />
               Zurück zur vorherigen Seite
             </Button>
-            <ContactDialog defaultSubject='Projektanfrage' title='Projekt anfragen'>
-              <Button
-                type='button'
-                variant='ghost'
-                size='sm'
-                className='ml-2 text-slate-300 hover:bg-white/10 hover:text-white'>
-                <Mail className='size-4' />
-                Projekt anfragen
-              </Button>
-            </ContactDialog>
           </motion.div>
         </motion.div>
       </div>

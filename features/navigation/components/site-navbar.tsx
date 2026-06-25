@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, MessageCircle, X } from 'lucide-react';
+import { Menu, Rocket, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import ContactDialog from '@/components/custom-ui/contact-dialog';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
@@ -64,7 +63,7 @@ export default function SiteNavbar() {
               type='button'
               onClick={handleBrandClick}
               className='flex max-w-[calc(100vw-7.5rem)] min-w-0 items-center gap-3 text-left transition-opacity hover:opacity-85 sm:max-w-[calc(100vw-9rem)] lg:max-w-none'>
-              <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#2563eb] shadow-[0_14px_30px_-18px_rgba(37,99,235,0.95)]'>
+              <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f97316] shadow-[0_14px_30px_-18px_rgba(249,115,22,0.95)]'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
                   alt={CLUB_CONFIG.display.logoAlt}
@@ -115,15 +114,13 @@ export default function SiteNavbar() {
 
           <div className='ml-auto hidden items-center justify-end gap-3 lg:flex lg:w-60'>
             <LanguageSwitcher />
-            <ContactDialog
-              defaultSubject={t('contactDialogSubject')}
-              title={t('contactCta')}>
-              <button
-                type='button'
-                className='inline-flex h-11 items-center justify-center rounded-full bg-slate-950 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800'>
-                {t('contactCta')}
-              </button>
-            </ContactDialog>
+            <Link
+              href='/#newsletter'
+              title={t('contactCta')}
+              className='inline-flex h-11 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#f97316] to-[#ea580c] px-5 text-sm font-semibold text-white shadow-[0_14px_30px_-18px_rgba(249,115,22,0.95)] transition-all hover:-translate-y-0.5'>
+              <Rocket className='size-4' />
+              {t('contactCta')}
+            </Link>
           </div>
 
           <button
@@ -165,7 +162,7 @@ export default function SiteNavbar() {
               closeMenu();
             }}
             className='flex w-full min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
-            <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#2563eb] shadow-[0_14px_30px_-18px_rgba(37,99,235,0.95)]'>
+            <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f97316] shadow-[0_14px_30px_-18px_rgba(249,115,22,0.95)]'>
               <Image
                 src={CLUB_CONFIG.branding.logo.path}
                 alt={CLUB_CONFIG.display.logoAlt}
@@ -212,17 +209,14 @@ export default function SiteNavbar() {
             </Link>
           ))}
 
-          <ContactDialog
-            defaultSubject={t('contactDialogSubject')}
-            title={t('contactCta')}>
-            <button
-              type='button'
-              onClick={closeMenu}
-              className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#2563eb] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1d4ed8]'>
-              <MessageCircle className='size-4' />
-              {t('contactCta')}
-            </button>
-          </ContactDialog>
+          <Link
+            href='/#newsletter'
+            title={t('contactCta')}
+            onClick={closeMenu}
+            className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#f97316] to-[#ea580c] px-4 py-3 text-sm font-semibold text-white transition-colors hover:opacity-95'>
+            <Rocket className='size-4' />
+            {t('contactCta')}
+          </Link>
 
           <div className='flex justify-center pt-2'>
             <LanguageSwitcher onLocaleChange={closeMenu} />

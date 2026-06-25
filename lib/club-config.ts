@@ -1,35 +1,35 @@
 /**
  * Site Configuration
  *
- * Central configuration file for all business and website information.
+ * Central configuration file for all product, brand and legal information.
  * Edit these values to change brand, legal, and SEO-relevant data globally.
  */
 
 export const CLUB_CONFIG = {
   // ============================================
-  // BASIC BUSINESS INFORMATION
+  // BASIC PRODUCT INFORMATION
   // ============================================
-  name: 'Arkadiusz Weiss Webentwicklung',
-  shortName: 'Arkadiusz Weiss', // For abbreviated displays
-  fullName: 'Arkadiusz Weiss Webentwicklung',
+  name: 'HandballStats',
+  shortName: 'HandballStats', // For abbreviated displays
+  fullName: 'HandballStats',
   foundingYear: 2026,
 
   // ============================================
-  // BUSINESS PROFILE
+  // PRODUCT PROFILE
   // ============================================
   business: {
-    primaryService: 'Webdesign',
-    description: 'Webdesign, Webentwicklung und lokale SEO',
-    audience: 'Unternehmen, Handwerker und Dienstleister',
+    primaryService: 'Handball-Statistik-App',
+    description: 'Live-Statistiken, Spieleranalyse und Team-Management für Handball',
+    audience: 'Trainer, Vereine und Handball-Teams',
   },
 
   // ============================================
   // CONTACT INFORMATION
   // ============================================
   email: {
-    main: 'kontakt@webdesign-weiss.de',
-    info: 'kontakt@webdesign-weiss.de',
-    noreply: 'noreply@webdesign-weiss.de',
+    main: 'kontakt@handballstats.app',
+    info: 'kontakt@handballstats.app',
+    noreply: 'noreply@handballstats.app',
   },
 
   phone: {
@@ -86,8 +86,8 @@ export const CLUB_CONFIG = {
   // WEBSITE AND DOMAIN
   // ============================================
   website: {
-    domain: 'webdesign-weiss.de',
-    url: 'https://www.webdesign-weiss.de',
+    domain: 'handballstats.app',
+    url: 'https://www.handballstats.app',
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
     },
@@ -98,9 +98,9 @@ export const CLUB_CONFIG = {
   // ============================================
   social: {
     instagram: {
-      url: 'https://www.instagram.com/webdesignweiss/',
-      handle: '@webdesignweiss',
-      username: 'webdesignweiss',
+      url: 'https://www.instagram.com/handballstats.app/',
+      handle: '@handballstats.app',
+      username: 'handballstats.app',
     },
     // Weitere Social Media können hier hinzugefügt werden
     // facebook: { url: '', handle: '' },
@@ -112,7 +112,7 @@ export const CLUB_CONFIG = {
   // ============================================
   legal: {
     responsiblePerson: 'Arkadiusz Weiss',
-    position: 'Inhaber & Webdesigner',
+    position: 'Inhaber',
     chairman: 'Arkadiusz Weiss',
     chairmanTitle: 'Inhaber',
     chairmanImage: '/arkadiusz_weiss.jpg',
@@ -123,9 +123,9 @@ export const CLUB_CONFIG = {
   // ============================================
   contacts: {
     primary: {
-      name: 'Arkadiusz Weiss',
-      position: 'Projektanfragen',
-      email: 'kontakt@webdesign-weiss.de',
+      name: 'HandballStats Team',
+      position: 'Support & Anfragen',
+      email: 'kontakt@handballstats.app',
       phone: '+49-0179-2630093',
       image: '/arkadiusz_weiss.jpg',
     },
@@ -136,7 +136,7 @@ export const CLUB_CONFIG = {
   // ============================================
   branding: {
     // Primary theme color (used in manifest, meta tags, etc.)
-    themeColor: '#2563eb',
+    themeColor: '#ea6a1d',
     backgroundColor: '#ffffff',
 
     // Logo configuration
@@ -145,7 +145,7 @@ export const CLUB_CONFIG = {
       get path() {
         return `/${this.filename}`;
       },
-      alt: 'Arkadiusz Weiss Webentwicklung Logo',
+      alt: 'HandballStats Logo',
       width: 768,
       height: 768,
     },
@@ -165,72 +165,52 @@ export const CLUB_CONFIG = {
   seo: {
     // Default meta description
     description:
-      'Arkadiusz Weiss Webentwicklung entwickelt moderne Webseiten, starke Markenauftritte und digitale Erlebnisse für Unternehmen, die klar auftreten und mehr Anfragen gewinnen wollen.',
+      'HandballStats ist die Statistik-App für Handball-Teams: Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und triff bessere Entscheidungen – direkt von der Bank.',
 
     // Short description for social media
     shortDescription:
-      'Moderne Websites und digitale Markenauftritte von Arkadiusz Weiss.',
+      'Live-Statistiken und Analyse für dein Handball-Team – einfach, schnell, präzise.',
 
     focusRegions: [
-      'Dortmund',
-      'Unna',
-      'Recklinghausen',
-      'Gladbeck',
-      'Kamen',
-      'Castrop-Rauxel',
-      'Bochum',
-      'Herne',
-      'Gelsenkirchen',
-      'Essen',
-      'Ruhrgebiet',
-      'Nordrhein-Westfalen',
+      'Deutschland',
+      'Österreich',
+      'Schweiz',
     ],
 
     // Keywords for SEO
     keywords: [
-      'Webdesign',
-      'Arkadiusz Weiss Webentwicklung',
-      'Arkadiusz Weiss',
-      'Webagentur',
-      'Portfolio Website',
-      'Unternehmenswebsite',
-      'Landingpage',
-      'UI Design',
-      'Branding',
-      'Webentwicklung',
-      'Responsive Design',
-      'Conversion Optimierung',
-      'Digitale Präsenz',
+      'Handball Statistik App',
+      'Handball Stats',
+      'Handball App',
+      'Handball Analyse',
+      'Spielerstatistik Handball',
+      'Live Scouting Handball',
+      'Handball Trainer App',
+      'Handball Team Management',
+      'Wurfbilder Handball',
+      'Handball Spielanalyse',
+      'Handball Verein App',
+      'Statistik für Trainer',
     ],
 
     // Page-specific titles and descriptions
     pages: {
       home: {
-        title: 'Arkadiusz Weiss Webentwicklung',
+        title: 'HandballStats – Die Statistik-App für dein Handball-Team',
         description:
-          'Arkadiusz Weiss Webentwicklung erstellt moderne Webseiten, starke Markenauftritte und digitale Erlebnisse für Unternehmen.',
-      },
-      leistungen: {
-        title: 'Leistungen',
-        description:
-          'Webdesign, Entwicklung, SEO und Wartung für Unternehmen, die online sichtbar werden und mehr Anfragen gewinnen wollen.',
-      },
-      unternehmen: {
-        title: 'Unternehmen',
-        description:
-          'Erfahre mehr über Arkadiusz Weiss Webentwicklung, Arbeitsweise, Referenzen und den strategischen Fokus auf messbare Ergebnisse.',
+          'Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und gewinne mehr Spiele mit datenbasierten Entscheidungen.',
       },
       impressum: {
         title: 'Impressum',
         description:
-          'Impressum und rechtliche Informationen von Arkadiusz Weiss Webentwicklung.',
+          'Impressum und rechtliche Informationen zur HandballStats App.',
       },
     },
 
     // Structured data / Schema.org
     schema: {
-      organizationType: 'ProfessionalService',
-      serviceType: 'Webdesign',
+      organizationType: 'Organization',
+      serviceType: 'SportsApplication',
     },
   },
 
@@ -239,31 +219,31 @@ export const CLUB_CONFIG = {
   // ============================================
   display: {
     // For page titles
-    pageTitle: 'Arkadiusz Weiss Webentwicklung',
+    pageTitle: 'HandballStats',
 
     // For admin areas
-    adminTitle: 'Arkadiusz Weiss Webentwicklung Admin',
+    adminTitle: 'HandballStats Admin',
 
     // For emails and formal contexts
-    emailSender: 'Arkadiusz Weiss Webentwicklung',
+    emailSender: 'HandballStats',
 
     // For navigation
-    navLabel: 'Arkadiusz Weiss Webentwicklung Hauptnavigation',
-    navAriaLabel: 'Arkadiusz Weiss Webentwicklung',
+    navLabel: 'HandballStats Hauptnavigation',
+    navAriaLabel: 'HandballStats',
 
     // For logos and headers
-    logoAlt: 'Arkadiusz Weiss Webentwicklung Logo',
+    logoAlt: 'HandballStats Logo',
 
-    brandTagline: 'Webdesign by Arkadiusz Weiss',
+    brandTagline: 'Statistik-App für Handball',
 
     footerDescription:
-      'Wir entwickeln performante digitale Erlebnisse für Unternehmen, die online gewinnen wollen.',
+      'HandballStats hilft Trainern und Teams, jedes Spiel in präzise Statistiken zu verwandeln und besser zu werden.',
 
-    footerLocation: 'Remote, Deutschland',
+    footerLocation: 'Made in Germany',
 
-    footerPhoneLabel: 'Projektgespräche auf Anfrage',
+    footerPhoneLabel: 'Support auf Anfrage',
 
-    contactCtaLabel: 'Lass uns sprechen',
+    contactCtaLabel: 'Jetzt starten',
 
     // Copyright text
     get copyright() {

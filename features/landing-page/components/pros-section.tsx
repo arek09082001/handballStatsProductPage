@@ -5,10 +5,10 @@ import { Check, X } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 
-export default function CostOfOutdatedWebsiteSection() {
-  const t = useTranslations('costOfOutdatedWebsiteSection');
-  const oldWayPoints = [t('oldPoint1'), t('oldPoint2'), t('oldPoint3')];
-  const betterWayPoints = [t('newPoint1'), t('newPoint2'), t('newPoint3')];
+export default function ProsSection() {
+  const t = useTranslations('productPage.pros');
+  const oldPoints = t.raw('oldPoints') as string[];
+  const newPoints = t.raw('newPoints') as string[];
 
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -61,18 +61,17 @@ export default function CostOfOutdatedWebsiteSection() {
             className='card-surface relative overflow-hidden rounded-[1.4rem] px-7 py-7'>
             <div className='absolute right-0 top-0 h-20 w-20 rounded-bl-[3rem] bg-rose-100/80' />
             <div className='relative'>
-              <div className='flex h-11 w-11 items-center justify-center rounded-xl bg-rose-100 text-rose-500'>
-                <X className='h-5 w-5' />
+              <div className='flex size-11 items-center justify-center rounded-xl bg-rose-100 text-rose-500'>
+                <X className='size-5' />
               </div>
               <p className='mt-5 text-2xl font-bold tracking-tight text-foreground'>
-                {t('oldWayTitle')}
+                {t('oldTitle')}
               </p>
-
               <ul className='mt-6 space-y-4'>
-                {oldWayPoints.map((point) => (
+                {oldPoints.map((point) => (
                   <li key={point} className='flex items-start gap-3'>
-                    <span className='mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-red-500 text-white'>
-                      <span className='h-1.5 w-1.5 rounded-full bg-white' />
+                    <span className='mt-1 flex size-4 shrink-0 items-center justify-center rounded-full bg-rose-500 text-white'>
+                      <X className='size-3' />
                     </span>
                     <span className='text-sm leading-7 text-muted-foreground'>{point}</span>
                   </li>
@@ -85,22 +84,26 @@ export default function CostOfOutdatedWebsiteSection() {
             ref={(el) => {
               if (el) cardsRef.current[1] = el;
             }}
-            className='card-surface-dark rounded-[1.4rem] px-7 py-7 text-white'>
-            <div className='flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-950/70 text-emerald-400'>
-              <Check className='h-5 w-5' />
+            className='relative overflow-hidden rounded-[1.4rem] bg-gradient-to-br from-[#0b1220] via-[#101a36] to-[#0b1220] px-7 py-7 text-white shadow-[0_30px_70px_-40px_rgba(15,23,42,0.7)]'>
+            <div className='absolute right-0 top-0 h-24 w-24 rounded-bl-[3rem] bg-primary/20' />
+            <div className='relative'>
+              <div className='flex size-11 items-center justify-center rounded-xl bg-primary/20 text-[#fdba74]'>
+                <Check className='size-5' />
+              </div>
+              <p className='mt-5 text-2xl font-bold tracking-tight text-white'>
+                {t('newTitle')}
+              </p>
+              <ul className='mt-6 space-y-4'>
+                {newPoints.map((point) => (
+                  <li key={point} className='flex items-start gap-3'>
+                    <span className='mt-1 flex size-4 shrink-0 items-center justify-center rounded-full bg-emerald-500 text-white'>
+                      <Check className='size-3' />
+                    </span>
+                    <span className='text-sm leading-7 text-slate-200'>{point}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className='mt-5 text-2xl font-bold tracking-tight text-white'>{t('newWayTitle')}</p>
-
-            <ul className='mt-6 space-y-4'>
-              {betterWayPoints.map((point) => (
-                <li key={point} className='flex items-start gap-3'>
-                  <span className='mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white'>
-                    <Check className='h-3 w-3' />
-                  </span>
-                  <span className='text-sm leading-7 text-slate-200'>{point}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>

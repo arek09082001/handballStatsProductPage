@@ -1,286 +1,44 @@
 {
-  "heroSection": {
-    "eyebrow": "Digital Growth Partners",
-    "headlineLine1": "Turn Your Website",
-    "headlinePrefix": "into a",
-    "headlineHighlight1": "Customer",
-    "headlineHighlight2": "Magnet",
-    "description": "If you want to have a website built, we create tailored websites for companies, tradespeople, and service providers that build trust, become visible on Google, and turn visitors into real enquiries.",
-    "primaryCta": "Start a Project",
-    "primarySubject": "New website or relaunch enquiry",
-    "secondaryCta": "Get a Free Website Analysis",
-    "secondarySubject": "Free website analysis enquiry",
-    "trustItem1": "100% Custom Design",
-    "trustItem2": "Visible on Google",
-    "trustItem3": "Fast Loading",
-    "imageAlt": "Website dashboard preview",
-    "loop0line2": "into a Customer",
-    "loop0line3": "Customer Magnet.",
-    "loop1line2": "into your personal",
-    "loop1line3": "Business Card.",
-    "loop2line2": "into your digital",
-    "loop2line3": "Growth Engine.",
-    "loop3line2": "into your own",
-    "loop3line3": "Sales Channel."
-  },
-  "transformationSection": {
-    "eyebrow": "The Transformation",
-    "title": "Before & After Website Redesign",
-    "description": "See how modern design and clear paths to contact turn an outdated site into an enquiry-generating machine.",
-    "beforeLabel": "Before Redesign",
-    "afterLabel": "After Redesign",
-    "beforeImageAlt": "Outdated website design before redesign",
-    "afterImageAlt": "Modern website design after redesign",
-    "beforePoint1": "Cluttered navigation confuses visitors.",
-    "beforePoint2": "No clear next step like 'Get in touch' visible on the page.",
-    "beforePoint3": "Outdated visuals weaken trust and reduce enquiries.",
-    "afterPoint1": "Clear headline and value proposition hook users fast.",
-    "afterPoint2": "Well-placed buttons like 'Get in touch' guide visitors to take action.",
-    "afterPoint3": "Modern visual language increases trust and quality signal."
-  },
-  "performanceAuditSection": {
-    "eyebrow": "Website Check",
-    "title": "Why Your Current Site is Invisible to Google",
-    "description": "A pretty website is useless if nobody can find it. We identify and fix the hidden technical issues that are actively sabotaging your search engine rankings and turning away local customers.",
-    "issue1Title": "Slow Loading Speeds",
-    "issue1Description": "53% of mobile users abandon sites that take over 3 seconds to load. Google actively penalizes slow sites.",
-    "issue2Title": "Not Mobile-Friendly",
-    "issue2Description": "With 60% of local searches happening on phones, a site that doesn't work well on mobile costs you real enquiries.",
-    "issue3Title": "Missing Google Basics",
-    "issue3Description": "Improper headings, missing page descriptions for Google, and poor page addresses confuse search engines.",
-    "scoreTitle": "Average Competitor Score",
-    "scoreSubtitle": "Most local businesses fail basic search engine optimisation",
-    "metricPerformance": "Speed",
-    "metricAccessibility": "Accessibility",
-    "metricBestPractices": "Best Practices",
-    "metricSeo": "SEO"
-  },
-  "whyUsSection": {
-    "eyebrow": "Why Work With Us",
-    "title": "Websites Built for Business Growth",
-    "description": "We don't just build digital brochures. We build websites that <roi>measurably generate more enquiries</roi> for your local business.",
-    "card1Title": "More Real Enquiries",
-    "card1Description": "Thoughtful page layouts and targeted persuasion elements guide visitors naturally toward contacting you. Better enquiries, more closed deals.",
-    "card2Title": "Dominate Local Visibility",
-    "card2Description": "Built from the ground up so Google understands exactly what you offer and where you should be found.",
-    "card3Title": "Instant Brand Trust",
-    "card3Description": "First impressions matter. A premium, modern design signals professionalism and reliability, making prospects choose you over the cheaper option."
-  },
-  "commonQuestionsSection": {
-    "bannerTitle": "Let us review your site's enquiry potential.",
-    "bannerDescription": "If your site already has visitors, we look at clarity, trust, Google visibility, and paths to contact. You get concrete next steps instead of vague advice.",
-    "bannerCta": "Request Analysis",
-    "contactSubject": "Free website analysis enquiry",
-    "contactTitle": "Get a Free Website Analysis",
-    "eyebrow": "Common Questions",
-    "title": "Still not sure if it's the right time?",
-    "description": "We know that investing in a new website is a big decision. Here are honest answers to the questions that come up most often before a project starts.",
-    "imageAlt": "Placeholder image for common questions section",
-    "q1Title": "Isn't a custom website too expensive for a small business?",
-    "q1Description": "Think of it as an investment, not an expense. A site that generates just 2-3 extra clients a month quickly pays for itself. We offer scalable packages designed specifically for local business budgets, focusing on features that actually drive revenue rather than unnecessary bells and whistles.",
-    "q2Title": "Will this take up a lot of my time? I'm busy running my business.",
-    "q2Description": "Our streamlined process requires minimal input from you. After an initial conversation, we handle the structure, copy, design, and development efficiently for you.",
-    "q3Title": "I'm not technical. How will I update the site later?",
-    "q3Description": "We build on user-friendly systems and give you clear guidance for updates. If you prefer, we can also handle future changes for you as part of ongoing maintenance."
-  },
-  "costOfOutdatedWebsiteSection": {
-    "eyebrow": "Outdated Website",
-    "title": "The Cost of an Outdated Website",
-    "description": "Your website is your 24/7 salesperson. If it's slow, confusing, or hard to find, you're handing customers to your competitors.",
-    "oldWayTitle": "The Old Way",
-    "newWayTitle": "The Weiss Webdesign Way",
-    "oldPoint1": "Slow loading times that frustrate visitors and hurt Google rankings.",
-    "oldPoint2": "Not mobile-friendly, losing 60% of potential local traffic.",
-    "oldPoint3": "Confusing navigation that makes visitors leave immediately.",
-    "newPoint1": "Lightning-fast loading times optimised to meet Google's quality standards.",
-    "newPoint2": "A design that automatically adapts to phone, tablet, and desktop.",
-    "newPoint3": "Clear paths to contact that measurably generate enquiries."
-  },
-  "ourExpertiseSection": {
-    "eyebrow": "Our Expertise",
-    "title": "Comprehensive Digital Solutions",
-    "viewAll": "View all services",
-    "card1Title": "Design & User Experience",
-    "card1Description": "Appealing design and clear navigation that engage visitors and build trust for your local brand.",
-    "card2Title": "Web Development",
-    "card2Description": "Robust, future-proof, and lightning-fast websites built on modern technologies.",
-    "card3Title": "Get Found on Google",
-    "card3Description": "Dominate local search results and get found by customers in your area.",
-    "card4Title": "Maintenance",
-    "card4Description": "Ongoing support, security updates, and speed monitoring."
-  },
-  "finalCtaSection": {
-    "title": "New website, redesign, or honest feedback on your current site",
-    "description": "If you want more qualified enquiries, we can either start with a new project or with a focused website analysis. Both routes go straight to us.",
-    "benefit1": "Clear guidance on whether a new website, a redesign, or targeted improvements make the most sense right now.",
-    "benefit2": "Direct contact without a sales layer or agency handoff.",
-    "benefit3": "Everything is geared toward better enquiries, more trust, and a site that fits your business.",
-    "suggestionHint": "Click one of these and we will prefill the message for you.",
-    "insertProjectTemplate": "Insert project enquiry template",
-    "insertAnalysisTemplate": "Insert analysis template",
-    "benefit1TemplateProject": "I would really appreciate a quick recommendation on which next step makes the most sense for my website right now.\n\nWhat this is about: [please describe briefly]\nWhat I am looking for: [new website, redesign, or targeted improvements]\nDo I already have a rough timeline? [optional]",
-    "benefit1TemplateAnalysis": "I would appreciate an honest assessment of whether my website needs a redesign or more focused improvements.\n\nWhat is currently not working well: [please describe briefly]\nWhat you should focus on: [for example trust, enquiries, structure, or overall impression]",
-    "benefit2TemplateProject": "I would love to discuss my website project directly and without unnecessary back and forth.\n\nWhat the project is about: [please describe briefly]\nWhat matters to me in the collaboration: [please add]",
-    "benefit2TemplateAnalysis": "I would really value direct feedback on my website.\n\nMy current issue: [please describe briefly]\nWhat kind of feedback I am looking for: [please add]",
-    "benefit3TemplateProject": "I am looking for a website that fits my business better and brings in more relevant enquiries.\n\nWhat currently does not feel right: [please describe briefly]\nWhat I want the new website to achieve: [please add]",
-    "benefit3TemplateAnalysis": "I would like to better understand how my website can improve in trust, positioning, and enquiries.\n\nWhat bothers me about the current website: [please describe briefly]\nWhat I would like to improve: [please add]",
-    "socialProof": "You are writing directly to our team.",
-    "formTitle": "Choose your next step",
-    "projectOption": "New Website / Redesign",
-    "analysisOption": "Website Analysis",
-    "projectSubject": "New website or relaunch enquiry",
-    "analysisSubject": "Free website analysis enquiry",
-    "nameLabel": "Name",
-    "emailLabel": "Email",
-    "websiteLabel": "Website URL optional",
-    "phoneLabel": "Phone number optional",
-    "messageLabel": "Message",
-    "namePlaceholder": "Your Name",
-    "emailPlaceholder": "Email Address",
-    "websitePlaceholder": "www.your-domain.com (optional)",
-    "phonePlaceholder": "Phone Number (Optional)",
-    "analysisWebsitePlaceholder": "www.your-domain.com",
-    "projectMessagePlaceholder": "Share what you are planning: a new website, relaunch, goals, or timeline.",
-    "analysisMessagePlaceholder": "Tell me what feels weak on your current website or where you see untapped potential.",
-    "privacyPrefix": "I agree to the processing of my data according to the",
-    "privacyLink": "privacy policy",
-    "privacySuffix": ".",
-    "submitProject": "Send Project Enquiry",
-    "submitAnalysis": "Request Analysis",
-    "submitPending": "Sending...",
-    "responseNote": "Email or phone is enough. We will reply personally."
-  },
   "footerSection": {
-    "description": "We build high-quality websites for businesses that want a stronger online presence and more enquiries.",
+    "description": "HandballStats turns every game into precise statistics – so coaches and teams keep improving.",
     "headings": {
-      "services": "Services",
-      "company": "Company",
-      "resources": "Resources",
+      "product": "Product",
+      "legal": "Legal",
       "contact": "Contact"
     },
-    "services": {
-      "webDesign": "Web Design",
-      "development": "Development",
-      "localSeo": "Local SEO",
-      "maintenance": "Maintenance"
-    },
-    "company": {
-      "about": "About Us",
-      "values": "Values",
-      "approach": "Approach"
+    "product": {
+      "features": "Features",
+      "how": "How it works",
+      "faq": "FAQ",
+      "newsletter": "Newsletter"
     },
     "contact": {
-      "projectCalls": "Project calls on request",
-      "location": "Remote, Germany",
-      "instagram": "Instagram"
-    },
-    "resources": {
-      "seobility": "Seobility SEO Check",
-      "googleSearchCentral": "Google Search Central",
-      "w3c": "W3C Standards"
+      "location": "Made in Germany",
+      "instagram": "Instagram",
+      "support": "Support on request"
     },
     "titles": {
-      "servicesOverview": "Go to services overview",
-      "companyOverview": "Go to company page",
-      "email": "Email",
-      "impressum": "Go to imprint and privacy policy"
+      "email": "Email to",
+      "impressum": "To the legal notice and privacy policy"
     },
     "legal": {
-      "impressumAndPrivacy": "Impressum & Datenschutz"
+      "impressumAndPrivacy": "Legal & Privacy"
     },
     "copyright": "Copyright © {year}. All rights reserved."
   },
   "navigationSection": {
     "items": {
       "home": "Home",
-      "services": "Services",
-      "company": "Company",
-      "references": "References",
-      "contact": "Imprint"
+      "features": "Features",
+      "howItWorks": "How it works",
+      "faq": "FAQ",
+      "impressum": "Legal"
     },
-    "contactCta": "Start a project",
-    "contactDialogSubject": "Project inquiry",
+    "contactCta": "Start for free",
     "languageSwitcher": {
       "label": "Switch language",
       "switchToGerman": "Switch to German",
       "switchToEnglish": "Switch to English"
-    }
-  },
-  "servicesPage": {
-    "hero": {
-      "eyebrow": "Services",
-      "title": "Digital services that turn visibility into real enquiries",
-      "description": "We offer web design, development, search engine optimisation and maintenance as one coordinated system. Not as disconnected add-ons, but as a digital foundation that builds trust locally and helps generate measurable enquiries.",
-      "primaryCta": "Discuss your project",
-      "secondaryCta": "Explore services",
-      "previewBadge": "Service overview",
-      "previewMeta": "Strategy • Design • Tech"
-    },
-    "overview": {
-      "readMore": "Read more"
-    },
-    "cards": {
-      "webdesign": {
-        "title": "Web Design",
-        "description": "Brand-driven websites with clear user journeys that build trust and turn visitors into real enquiries."
-      },
-      "development": {
-        "title": "Development",
-        "description": "Clean technical execution with fast loading times, stability and a structure that scales with your business."
-      },
-      "seo": {
-        "title": "SEO & Local Search Optimisation",
-        "description": "So your business shows up on Google exactly where your customers are already searching."
-      },
-      "maintenance": {
-        "title": "Maintenance",
-        "description": "Ongoing care, updates and monitoring so your website stays fast, secure and dependable over time."
-      }
-    },
-    "details": {
-      "outcomeLabel": "Practical outcome",
-      "placeholderBadge": "Visual placeholder",
-      "placeholderText": "A fitting project image, screen preview or case-study visual can be added here later.",
-      "placeholderMetricLabel1": "Focus",
-      "placeholderMetricValue1": "More trust",
-      "placeholderMetricLabel2": "Benefit",
-      "placeholderMetricValue2": "More enquiries",
-      "webdesign": {
-        "eyebrow": "Web Design",
-        "title": "Design that looks great and actually wins you enquiries",
-        "description": "Good design guides users, reduces friction and makes your offer instantly understandable. We create websites that feel modern, look premium and move visitors naturally toward contacting you.",
-        "point1": "Clear page structures with strong opening sections and thoughtful paths to contact.",
-        "point2": "Visual systems that communicate trust, quality and professionalism at first glance.",
-        "point3": "Mobile-first design thinking for strong impact across phone, tablet and desktop.",
-        "outcome": "You get a website that feels more premium, matches your brand better and converts more visitors into serious enquiries."
-      },
-      "development": {
-        "eyebrow": "Development",
-        "title": "Technical execution that stays fast, stable and scalable",
-        "description": "Design alone is not enough. The technical layer determines how fast your website loads, how reliable it feels and how easy it is to extend later. We build on modern technologies with clean, maintainable code.",
-        "point1": "Speed-focused implementation for fast loading and a polished experience.",
-        "point2": "Clean structure that makes future additions and changes straightforward.",
-        "point3": "Forms, Google basics, display across all devices and interaction details are considered from day one.",
-        "outcome": "Your website feels solid, performs reliably and stays flexible when your business evolves."
-      },
-      "seo": {
-        "eyebrow": "SEO & Local SEO",
-        "title": "Visibility where your customers are already searching",
-        "description": "We treat SEO as part of the full site strategy, not as an afterthought. From hierarchy and headings to local relevance and technical signals, the website is structured so Google understands what you offer and where you matter.",
-        "point1": "Structured content, clean page hierarchy and strong signals for Google.",
-        "point2": "Local optimisation for cities, regions and search terms with real buying intent.",
-        "point3": "Technical foundations for Google with a focus on discoverability, page descriptions and loading speed.",
-        "outcome": "You become easier to find, more relevant for local search and better positioned for consistent enquiries through Google."
-      },
-      "maintenance": {
-        "eyebrow": "Maintenance",
-        "title": "Ongoing support so your website stays strong",
-        "description": "A good website is not a one-time launch. It is a living system. With maintenance and support, we make sure content stays current, technical risks are handled early and your site keeps performing at a professional level.",
-        "point1": "Regular updates, security checks and technical care without extra effort on your side.",
-        "point2": "Fast support for content updates, new sections and small feature requests.",
-        "point3": "Monitoring for functionality, performance and user impact so problems never linger unnoticed.",
-        "outcome": "You do not have to worry about technical upkeep while still knowing your website remains current, stable and ready to perform."
-      }
     }
   },
   "legalPage": {
@@ -587,36 +345,158 @@
       }
     }
   },
-  "companyPage": {
-    "rework": {
-      "hero": {
-        "title": "Your partner for digital growth, merging creativity and technology for lasting results.",
-        "description": "We combine strategic thinking with modern execution to build digital experiences that do more than look good: they create tangible value.",
-        "imageAlt": "Portrait of Arkadiusz Weiss"
-      },
-      "coreValues": {
-        "title": "Our Core Values",
-        "value1Title": "Radical Candor",
-        "value1Description": "We believe in direct communication with genuine care. Honest feedback is the foundation of strong creative work.",
-        "value2Title": "Playful Precision",
-        "value2Description": "We combine rigorous engineering with bold imagination. The best solutions often come from unexpected combinations.",
-        "value3Title": "Holistic Empathy",
-        "value3Description": "We design for humans first. Understanding emotional needs leads to more meaningful digital products.",
-        "value4Title": "Relentless Evolution",
-        "value4Description": "The digital landscape keeps moving. We keep questioning, improving and evolving with every project."
-      },
-      "approach": {
-        "eyebrow": "Our Approach",
-        "title": "Where others see roadblocks, we uncover opportunities.",
-        "description": "Through close collaboration, we dive deep into your unique challenges and opportunities. This understanding shapes our holistic approach - from research and strategic direction to brand development and product delivery.",
-        "cta": "Our Services"
-      },
-      "collaborate": {
-        "eyebrow": "Let's get to work",
-        "title": "We're your partner in addressing real human needs, collaborating together to create something you can be proud of.",
-        "cta": "Let's Collaborate",
-        "ctaSubject": "Let's collaborate"
-      }
+  "productPage": {
+    "hero": {
+      "badge": "New · Ready for the season",
+      "headlineLead": "Win more games –",
+      "headlineHighlight": "with real data",
+      "headlineTail": "from every match.",
+      "description": "HandballStats turns every game into precise statistics. Track goals, shots and saves live from the bench and make better decisions – in real time.",
+      "primaryCta": "Start for free",
+      "secondaryCta": "Explore features",
+      "trust1": "Free to start",
+      "trust2": "No credit card required",
+      "trust3": "Works offline"
+    },
+    "stats": {
+      "items": [
+        {
+          "value": "1-tap",
+          "label": "Track actions live"
+        },
+        {
+          "value": "20+",
+          "label": "Stats automated"
+        },
+        {
+          "value": "100%",
+          "label": "Offline-ready"
+        },
+        {
+          "value": "€0",
+          "label": "To get started"
+        }
+      ]
+    },
+    "features": {
+      "eyebrow": "Features",
+      "title": "Everything that makes your team better",
+      "description": "From live tracking to deep analysis – HandballStats gives you the tools pro teams rely on.",
+      "items": [
+        {
+          "title": "Live tracking",
+          "description": "Goals, shots, 7m, saves, suspensions and substitutions – captured with a single tap, without taking your eyes off the game."
+        },
+        {
+          "title": "Player stats",
+          "description": "Shooting percentages, efficiency, plus/minus and playing time for every player – calculated automatically."
+        },
+        {
+          "title": "Shot maps & heatmaps",
+          "description": "See at a glance which positions score – and where the opponent is vulnerable."
+        },
+        {
+          "title": "Team & roster management",
+          "description": "Manage players, games and seasons in one place and stay on top of every development."
+        },
+        {
+          "title": "Real-time dashboard",
+          "description": "Half-time summaries, trends and live comparisons right on your device during the game."
+        },
+        {
+          "title": "Export & share",
+          "description": "Share insights as a link or PDF with players, assistant coaches and the board."
+        }
+      ]
+    },
+    "how": {
+      "eyebrow": "It's that simple",
+      "title": "Game analysis in three steps",
+      "description": "No training required, no complicated setup. You are ready to go in minutes.",
+      "steps": [
+        {
+          "title": "Create a game",
+          "description": "Pick your team and opponent and start in seconds – even offline in the gym."
+        },
+        {
+          "title": "Track live",
+          "description": "Tap every action during the match. HandballStats calculates all stats automatically."
+        },
+        {
+          "title": "Analyse & win",
+          "description": "Review shot maps and player trends and make data-driven decisions."
+        }
+      ]
+    },
+    "pros": {
+      "eyebrow": "Why HandballStats",
+      "title": "No more stats on a napkin",
+      "description": "See for yourself how much easier and more insightful your game analysis becomes with HandballStats.",
+      "oldTitle": "Pen & paper",
+      "oldPoints": [
+        "Numbers nobody analyses after the game",
+        "Error-prone and time-consuming to review",
+        "No shot maps, no trends, no comparisons"
+      ],
+      "newTitle": "With HandballStats",
+      "newPoints": [
+        "All stats calculated live and automatically",
+        "Shot maps, heatmaps and player trends at a glance",
+        "Shared with the whole team in seconds",
+        "Offline-ready and set up in minutes"
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "description": "Everything you need to know before getting started.",
+      "items": [
+        {
+          "question": "Do I need any technical knowledge?",
+          "answer": "No. HandballStats is designed so you can track your first game live within minutes. Every action is just one tap away – no training needed."
+        },
+        {
+          "question": "Does the app work offline in the gym?",
+          "answer": "Yes. You can track games completely offline. As soon as you are back online, your data syncs automatically."
+        },
+        {
+          "question": "Can I share stats with my team?",
+          "answer": "Absolutely. Players and assistant coaches get access to insights, shot maps and progress over time – as a link or PDF export."
+        },
+        {
+          "question": "How much does HandballStats cost?",
+          "answer": "You start for free and track your first game with no commitment. Fair plans are available for full teams and clubs – join the newsletter to secure the launch offer."
+        }
+      ]
+    },
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "title": "Be there at launch",
+      "description": "Sign up to get product updates, pro tips for your game analysis and the exclusive launch offer for clubs.",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "pending": "Sending…",
+      "benefits": [
+        "Product updates & new features",
+        "Pro tips on game analysis",
+        "Exclusive launch offer"
+      ],
+      "privacyPrefix": "I accept the",
+      "privacyLink": "privacy policy",
+      "privacySuffix": "and want to receive the newsletter.",
+      "note": "No spam. Unsubscribe anytime with one click.",
+      "successTitle": "Almost done!",
+      "successDescription": "Please confirm your subscription via the link in your email.",
+      "errorTitle": "Subscription failed",
+      "errorDescription": "Please try again later.",
+      "invalidEmail": "Please enter a valid email address."
+    },
+    "finalCta": {
+      "title": "Take your team to the next level",
+      "description": "Track your first game for free and see for yourself how much your data holds.",
+      "primaryCta": "Start for free",
+      "secondaryCta": "Join the newsletter",
+      "note": "Available for iOS, Android and in the browser."
     }
   }
 }

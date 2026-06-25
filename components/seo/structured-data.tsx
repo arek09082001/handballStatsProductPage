@@ -1,6 +1,6 @@
 import { CLUB_CONFIG } from '@/lib/club-config';
 import JsonLdScript from './json-ld-script';
-import { HOMEPAGE_FAQS, SERVICE_OFFERS, SITE_URL, absoluteUrl } from '@/lib/seo';
+import { HOMEPAGE_FAQS, APP_FEATURES, SITE_URL, absoluteUrl } from '@/lib/seo';
 
 export default function StructuredData() {
   const structuredData = {
@@ -10,7 +10,7 @@ export default function StructuredData() {
         '@type': 'WebPage',
         '@id': `${SITE_URL}#webpage`,
         url: SITE_URL,
-        name: 'Webdesign für Unternehmen, Handwerker und Dienstleister',
+        name: CLUB_CONFIG.seo.pages.home.title,
         description: CLUB_CONFIG.seo.description,
         isPartOf: {
           '@id': `${SITE_URL}/#website`,
@@ -25,6 +25,26 @@ export default function StructuredData() {
         inLanguage: 'de-DE',
       },
       {
+        '@type': 'SoftwareApplication',
+        '@id': `${SITE_URL}#app`,
+        name: CLUB_CONFIG.name,
+        description: CLUB_CONFIG.seo.description,
+        applicationCategory: 'SportsApplication',
+        operatingSystem: 'iOS, Android, Web',
+        url: SITE_URL,
+        image: absoluteUrl('/heroImage.png'),
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'EUR',
+          description: 'Kostenlos starten – erstes Spiel ohne Verpflichtung erfassen.',
+        },
+        featureList: APP_FEATURES.map((feature) => feature.name),
+        publisher: {
+          '@id': `${SITE_URL}/#organization`,
+        },
+      },
+      {
         '@type': 'FAQPage',
         '@id': `${SITE_URL}#faq`,
         mainEntity: HOMEPAGE_FAQS.map((faq) => ({
@@ -34,18 +54,6 @@ export default function StructuredData() {
             '@type': 'Answer',
             text: faq.answer,
           },
-        })),
-      },
-      {
-        '@type': 'ItemList',
-        '@id': `${SITE_URL}#services-overview`,
-        name: 'Leistungen im Überblick',
-        itemListElement: SERVICE_OFFERS.map((service, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: service.name,
-          url: absoluteUrl(`/leistungen#${service.slug}`),
-          description: service.description,
         })),
       },
     ],

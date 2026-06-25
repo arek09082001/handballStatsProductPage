@@ -1,187 +1,23 @@
 {
-  "heroSection": {
-    "eyebrow": "Digitale Wachstumspartner",
-    "headlineLine1": "Mach deine Website",
-    "headlinePrefix": "zu einem",
-    "headlineHighlight1": "Kunden",
-    "headlineHighlight2": "Magneten",
-    "description": "Wenn du eine Website erstellen lassen willst, entwickeln wir für Unternehmen, Handwerker und Dienstleister individuelle Websites, die Vertrauen aufbauen, bei Google sichtbar werden und aus Besuchern echte Anfragen machen.",
-    "primaryCta": "Projekt anfragen",
-    "primarySubject": "Neue Website oder Relaunch anfragen",
-    "secondaryCta": "Kostenlose Website-Analyse",
-    "secondarySubject": "Kostenlose Website-Analyse anfragen",
-    "trustItem1": "100% individuelles Design",
-    "trustItem2": "Sichtbar bei Google",
-    "trustItem3": "Schnelle Ladezeiten",
-    "imageAlt": "Vorschau eines Website-Dashboards",
-    "loop0line2": "zu einem",
-    "loop0line3": "Kundenmagneten.",
-    "loop1line2": "zu deiner",
-    "loop1line3": "Visitenkarte.",
-    "loop2line2": "zum digitalen",
-    "loop2line3": "Wachstumsmotor.",
-    "loop3line2": "zu deinem",
-    "loop3line3": "Vertriebskanal."
-  },
-  "transformationSection": {
-    "eyebrow": "Die Transformation",
-    "title": "Website Redesign Vorher & Nachher",
-    "description": "Sieh, wie modernes Design und klare Wege zur Kontaktaufnahme eine veraltete Website in eine Anfragen-Maschine verwandeln.",
-    "beforeLabel": "Vor dem Redesign",
-    "afterLabel": "Nach dem Redesign",
-    "beforeImageAlt": "Veraltetes Website-Design vor dem Redesign",
-    "afterImageAlt": "Modernes Website-Design nach dem Redesign",
-    "beforePoint1": "Unübersichtliche Navigation verwirrt Besucher.",
-    "beforePoint2": "Keine klare Handlungsaufforderung wie ‚Jetzt anfragen' im sichtbaren Bereich.",
-    "beforePoint3": "Veraltete Optik senkt Vertrauen und die Zahl der Anfragen.",
-    "afterPoint1": "Klare Überschrift und Nutzenversprechen überzeugen sofort.",
-    "afterPoint2": "Gut sichtbare Buttons wie ‚Jetzt anfragen' führen Besucher direkt zur Kontaktaufnahme.",
-    "afterPoint3": "Moderne Gestaltung stärkt Vertrauen und Qualitätswahrnehmung."
-  },
-  "performanceAuditSection": {
-    "eyebrow": "Website-Check",
-    "title": "Warum deine aktuelle Website bei Google unsichtbar ist",
-    "description": "Eine schöne Website bringt nichts, wenn sie niemand findet. Wir identifizieren und beheben technische Schwachstellen, die deine Platzierung bei Google zerstören und lokale Kunden abschrecken.",
-    "issue1Title": "Langsame Ladezeiten",
-    "issue1Description": "53% der mobilen Nutzer verlassen Seiten, die länger als 3 Sekunden laden. Google bestraft langsame Websites aktiv.",
-    "issue2Title": "Nicht mobilfreundlich",
-    "issue2Description": "Da 60% lokaler Suchen über Smartphones erfolgen, kostet eine nicht mobilfreundliche Seite direkte Anfragen.",
-    "issue3Title": "Fehlende Grundlagen für Google",
-    "issue3Description": "Fehlerhafte Überschriften, fehlende Seitenbeschreibungen für Google und schlechte Seitenadressen verwirren Suchmaschinen.",
-    "scoreTitle": "Durchschnittliche Bewertung der Wettbewerber",
-    "scoreSubtitle": "Die meisten lokalen Unternehmen scheitern an grundlegender Suchmaschinenoptimierung",
-    "metricPerformance": "Geschwindigkeit",
-    "metricAccessibility": "Barrierefreiheit",
-    "metricBestPractices": "Bewährte Methoden",
-    "metricSeo": "Suchmaschinenoptimierung"
-  },
-  "whyUsSection": {
-    "eyebrow": "Warum wir",
-    "title": "Websites für echtes Geschäftswachstum",
-    "description": "Wir bauen keine digitalen Visitenkarten. Wir entwickeln Websites, die für dein Unternehmen <roi>messbar mehr Anfragen</roi> bringen.",
-    "card1Title": "Mehr echte Anfragen",
-    "card1Description": "Durchdachter Seitenaufbau und gezielte Überzeugungselemente führen Besucher zur Kontaktaufnahme. Bessere Anfragen, mehr Aufträge.",
-    "card2Title": "Lokale Sichtbarkeit dominieren",
-    "card2Description": "Von Grund auf so entwickelt, dass Google genau versteht, was du anbietest und wo du gefunden werden willst.",
-    "card3Title": "Sofortiges Markenvertrauen",
-    "card3Description": "Der erste Eindruck entscheidet. Modernes Premium-Design signalisiert Professionalität und Verlässlichkeit und hebt dich vom Wettbewerb ab."
-  },
-  "commonQuestionsSection": {
-    "bannerTitle": "Lass deine Website auf Anfrage-Potenzial prüfen.",
-    "bannerDescription": "Wenn deine Seite bereits Besucher hat, schauen wir auf Klarheit, Vertrauen, Auffindbarkeit bei Google und Wege zur Kontaktaufnahme. Du bekommst konkrete Hebel statt vager Tipps.",
-    "bannerCta": "Analyse anfragen",
-    "contactSubject": "Kostenlose Website-Analyse anfragen",
-    "contactTitle": "Kostenlose Website-Analyse",
-    "eyebrow": "Häufige Fragen",
-    "title": "Noch unsicher, ob jetzt der richtige Zeitpunkt ist?",
-    "description": "Wir wissen, dass eine neue Website eine wichtige Entscheidung ist. Hier sind ehrliche Antworten auf häufige Fragen vor dem Start.",
-    "imageAlt": "Platzhalterbild für den Bereich häufige Fragen",
-    "q1Title": "Ist eine individuelle Website nicht zu teuer für kleine Unternehmen?",
-    "q1Description": "Sieh es als Investition, nicht als Kostenpunkt. Schon 2-3 zusätzliche Kunden pro Monat amortisieren die Website schnell. Unsere Pakete sind bewusst auf lokale Unternehmen zugeschnitten.",
-    "q2Title": "Nimmt das nicht zu viel Zeit in Anspruch? Ich bin im Tagesgeschäft eingespannt.",
-    "q2Description": "Unser Prozess braucht nur wenig Input von dir. Nach einem ersten Gespräch übernehmen wir Konzeption, Text, Design und Entwicklung effizient für dich.",
-    "q3Title": "Ich bin nicht technisch. Wie pflege ich später Inhalte?",
-    "q3Description": "Wir setzen auf benutzerfreundliche Systeme und geben dir klare Einweisungen. Und wenn du willst, übernehmen wir Änderungen im Rahmen eines Wartungspakets für dich."
-  },
-  "costOfOutdatedWebsiteSection": {
-    "eyebrow": "Veraltete Website",
-    "title": "Die Kosten einer veralteten Website",
-    "description": "Deine Website ist dein 24/7-Vertrieb. Wenn sie langsam, unklar oder schwer auffindbar ist, schickst du Kunden direkt zur Konkurrenz.",
-    "oldWayTitle": "Der alte Weg",
-    "newWayTitle": "Der Weiss-Webdesign Weg",
-    "oldPoint1": "Langsame Ladezeiten frustrieren Besucher und schaden dem Google-Ranking.",
-    "oldPoint2": "Nicht mobil optimiert, dadurch gehen bis zu 60% lokaler Zugriffe verloren.",
-    "oldPoint3": "Unklare Navigation führt dazu, dass Besucher sofort wieder abspringen.",
-    "newPoint1": "Blitzschnelle Ladezeiten – optimiert nach den Qualitätsstandards von Google.",
-    "newPoint2": "Ein Design, das sich automatisch an Smartphone, Tablet und PC anpasst.",
-    "newPoint3": "Klare Wege zur Kontaktaufnahme, die messbar Anfragen erzeugen."
-  },
-  "ourExpertiseSection": {
-    "eyebrow": "Unsere Expertise",
-    "title": "Ganzheitliche digitale Lösungen",
-    "viewAll": "Alle Leistungen ansehen",
-    "card1Title": "Design & Nutzerführung",
-    "card1Description": "Ansprechendes Design und klare Nutzerführung, die Vertrauen schaffen und Besucher in Kontakte verwandeln.",
-    "card2Title": "Webentwicklung",
-    "card2Description": "Robuste, zukunftssichere und schnelle Websites auf modernen Technologien.",
-    "card3Title": "Bei Google gefunden werden",
-    "card3Description": "Mehr Sichtbarkeit in lokalen Suchergebnissen und bessere Auffindbarkeit bei Kunden in deiner Region.",
-    "card4Title": "Wartung",
-    "card4Description": "Laufender Support, Sicherheitsupdates und Geschwindigkeitsüberwachung."
-  },
-  "finalCtaSection": {
-    "title": "Neue Website, Neugestaltung oder ehrliches Feedback zu deiner aktuellen Seite",
-    "description": "Wenn du mehr qualifizierte Anfragen willst, starten wir entweder mit einem neuen Projekt oder mit einer kompakten Website-Analyse. Beides landet direkt bei uns.",
-    "benefit1": "Klare Empfehlung, ob eine neue Website, eine Neugestaltung oder gezielte Verbesserungen gerade der richtige Schritt ist.",
-    "benefit2": "Direkter Kontakt ohne Vertriebsschleife oder Agentur-Weitergabe.",
-    "benefit3": "Fokus auf Anfragen, Vertrauen und einen Auftritt, der zu deinem Business passt.",
-    "suggestionHint": "Klicke auf einen Punkt und wir füllen dir die Nachricht schon vor.",
-    "insertProjectTemplate": "Vorlage für Projektanfrage einfügen",
-    "insertAnalysisTemplate": "Vorlage für Analyse einfügen",
-    "benefit1TemplateProject": "Ich würde mich über eine kurze Einschätzung freuen, welcher Schritt für meine Website gerade am sinnvollsten ist.\n\nWorum es gerade geht: [bitte kurz beschreiben]\nWas ich mir wünsche: [neue Website, Relaunch oder gezielte Verbesserungen]\nGibt es schon einen ungefähren Zeitrahmen? [optional]",
-    "benefit1TemplateAnalysis": "Ich würde mich über eine ehrliche Einschätzung freuen, ob meine Website eher eine Überarbeitung oder gezielte Verbesserungen braucht.\n\nWas aktuell nicht gut funktioniert: [bitte kurz beschreiben]\nWorauf du besonders achten sollst: [z. B. Vertrauen, Anfragen, Struktur oder Wirkung]",
-    "benefit2TemplateProject": "Ich würde mein Website-Projekt gerne direkt und unkompliziert mit dir besprechen.\n\nWorum es geht: [bitte kurz beschreiben]\nWas mir bei der Zusammenarbeit wichtig ist: [bitte ergänzen]",
-    "benefit2TemplateAnalysis": "Ich würde mich über direktes Feedback zu meiner Website freuen.\n\nMein aktuelles Problem: [bitte kurz beschreiben]\nWelche Rückmeldung ich mir wünsche: [bitte ergänzen]",
-    "benefit3TemplateProject": "Ich wünsche mir eine Website, die besser zu meinem Business passt und mehr passende Anfragen bringt.\n\nWas derzeit noch nicht gut passt: [bitte kurz beschreiben]\nWas die neue Website für mich erreichen soll: [bitte ergänzen]",
-    "benefit3TemplateAnalysis": "Ich möchte besser verstehen, wie meine Website bei Vertrauen, Positionierung und Anfragen stärker werden kann.\n\nWas mich an der aktuellen Website stört: [bitte kurz beschreiben]\nWas ich gerne verbessern möchte: [bitte ergänzen]",
-    "socialProof": "Du schreibst direkt mit unserem Team.",
-    "formTitle": "Wähle deinen nächsten Schritt",
-    "projectOption": "Website-Projekt",
-    "analysisOption": "Website-Analyse",
-    "projectSubject": "Neue Website oder Relaunch anfragen",
-    "analysisSubject": "Kostenlose Website-Analyse anfragen",
-    "nameLabel": "Name",
-    "emailLabel": "E-Mail",
-    "websiteLabel": "Website-URL",
-    "phoneLabel": "Telefonnummer optional",
-    "messageLabel": "Nachricht",
-    "namePlaceholder": "Dein Name",
-    "emailPlaceholder": "E-Mail-Adresse",
-    "websitePlaceholder": "www.deine-domain.de (optional)",
-    "phonePlaceholder": "Telefonnummer (optional)",
-    "analysisWebsitePlaceholder": "www.deine-domain.de",
-    "projectMessagePlaceholder": "Erzähl kurz, was du planst: neue Website, Relaunch, Ziele oder Timing.",
-    "analysisMessagePlaceholder": "Schick mir kurz, was dich an deiner aktuellen Website stört oder wo du Potenzial siehst.",
-    "privacyPrefix": "Ich stimme der Verarbeitung meiner Daten gemäß den",
-    "privacyLink": "Datenschutzbestimmungen",
-    "privacySuffix": "zu.",
-    "submitProject": "Projektanfrage senden",
-    "submitAnalysis": "Analyse anfragen",
-    "submitPending": "Wird gesendet...",
-    "responseNote": "E-Mail oder Telefonnummer reichen. Wir melden uns persönlich zurück."
-  },
   "footerSection": {
-    "description": "Wir entwickeln leistungsstarke Websites für Unternehmen, die online klar auftreten und mehr Anfragen gewinnen wollen.",
+    "description": "HandballStats verwandelt jedes Spiel in präzise Statistiken – damit Trainer und Teams besser werden.",
     "headings": {
-      "services": "Leistungen",
-      "company": "Unternehmen",
-      "resources": "Ressourcen",
+      "product": "Produkt",
+      "legal": "Rechtliches",
       "contact": "Kontakt"
     },
-    "services": {
-      "webDesign": "Webdesign",
-      "development": "Entwicklung",
-      "localSeo": "Lokale SEO",
-      "maintenance": "Wartung"
-    },
-    "company": {
-      "about": "Über uns",
-      "values": "Werte",
-      "approach": "Arbeitsweise"
+    "product": {
+      "features": "Funktionen",
+      "how": "So funktioniert's",
+      "faq": "FAQ",
+      "newsletter": "Newsletter"
     },
     "contact": {
-      "projectCalls": "Projektgespräche auf Anfrage",
-      "location": "Remote, Deutschland",
-      "instagram": "Instagram"
-    },
-    "resources": {
-      "seobility": "Seobility SEO Check",
-      "googleSearchCentral": "Google Search Central",
-      "w3c": "W3C Standards"
+      "location": "Made in Germany",
+      "instagram": "Instagram",
+      "support": "Support auf Anfrage"
     },
     "titles": {
-      "servicesOverview": "Zur Leistungsübersicht",
-      "companyOverview": "Zur Unternehmensseite",
       "email": "E-Mail an",
       "impressum": "Zum Impressum und Datenschutz"
     },
@@ -192,95 +28,17 @@
   },
   "navigationSection": {
     "items": {
-      "home": "Startseite",
-      "services": "Leistungen",
-      "company": "Unternehmen",
-      "references": "Referenzen",
-      "contact": "Impressum"
+      "home": "Start",
+      "features": "Funktionen",
+      "howItWorks": "So funktioniert's",
+      "faq": "FAQ",
+      "impressum": "Impressum"
     },
-    "contactCta": "Projekt anfragen",
-    "contactDialogSubject": "Projektanfrage",
+    "contactCta": "Kostenlos starten",
     "languageSwitcher": {
       "label": "Sprache wechseln",
       "switchToGerman": "Auf Deutsch wechseln",
       "switchToEnglish": "Auf Englisch wechseln"
-    }
-  },
-  "servicesPage": {
-    "hero": {
-      "eyebrow": "Leistungen",
-      "title": "Digitale Leistungen, die Sichtbarkeit in Anfragen verwandeln",
-      "description": "Wir bieten Webdesign, Entwicklung, Suchmaschinenoptimierung und Wartung als aufeinander abgestimmtes System an. Nicht als lose Einzelleistungen, sondern als digitales Fundament, das lokal Vertrauen aufbaut und messbar neue Anfragen erzeugt.",
-      "primaryCta": "Projekt besprechen",
-      "secondaryCta": "Leistungen ansehen",
-      "previewBadge": "Leistungsübersicht",
-      "previewMeta": "Strategie • Design • Technik"
-    },
-    "overview": {
-      "readMore": "Mehr erfahren"
-    },
-    "cards": {
-      "webdesign": {
-        "title": "Webdesign",
-        "description": "Markenstarke Websites mit klarer Nutzerführung, die Vertrauen aufbauen und Besucher in echte Anfragen verwandeln."
-      },
-      "development": {
-        "title": "Entwicklung",
-        "description": "Saubere technische Umsetzung mit schnellen Ladezeiten, Stabilität und einer Struktur, die mit deinem Unternehmen mitwächst."
-      },
-      "seo": {
-        "title": "SEO & Google Sichtbarkeit",
-        "description": "Damit du bei Google genau dort sichtbar wirst, wo deine Kunden nach dir suchen."
-      },
-      "maintenance": {
-        "title": "Wartung",
-        "description": "Kontinuierliche Pflege, Updates und Überwachung, damit deine Website dauerhaft schnell, sicher und zuverlässig bleibt."
-      }
-    },
-    "details": {
-      "outcomeLabel": "Ergebnis in der Praxis",
-      "placeholderBadge": "Visual Placeholder",
-      "placeholderText": "Hier kann später ein passendes Projektbild, ein Screen oder eine Case-Study-Vorschau eingebunden werden.",
-      "placeholderMetricLabel1": "Fokus",
-      "placeholderMetricValue1": "Mehr Vertrauen",
-      "placeholderMetricLabel2": "Nutzen",
-      "placeholderMetricValue2": "Mehr Anfragen",
-      "webdesign": {
-        "eyebrow": "Webdesign",
-        "title": "Design, das nicht nur gut aussieht, sondern verkauft",
-        "description": "Ein gutes Design führt Nutzer sicher durch die Seite, reduziert Reibung und macht das Angebot sofort verständlich. Wir entwickeln Websites, die modern wirken, professionell auftreten und deine Zielgruppe intuitiv zur Kontaktaufnahme führen.",
-        "point1": "Klare Seitenstruktur mit überzeugenden Startbereichen und durchdachten Wegen zur Kontaktaufnahme.",
-        "point2": "Visuelle Systeme, die Vertrauen, Qualität und Professionalität sofort kommunizieren.",
-        "point3": "Mobil gedachte Gestaltung für starke Wirkung auf Smartphone, Tablet und Desktop.",
-        "outcome": "Du bekommst eine Website, die modern aussieht, besser zu deiner Marke passt und Besucher schneller in qualifizierte Kontakte verwandelt."
-      },
-      "development": {
-        "eyebrow": "Entwicklung",
-        "title": "Technische Umsetzung, die schnell, stabil und skalierbar bleibt",
-        "description": "Design allein reicht nicht. Die technische Basis entscheidet darüber, wie schnell deine Seite lädt, wie zuverlässig sie funktioniert und wie leicht sie später erweitert werden kann. Wir setzen auf moderne Technologien mit sauberer, wartbarer Programmierung.",
-        "point1": "Auf Geschwindigkeit ausgerichtete Umsetzung für schnelle Ladezeiten und ein hochwertiges Nutzererlebnis.",
-        "point2": "Sauberer Aufbau und eine Struktur, die spätere Erweiterungen einfach macht.",
-        "point3": "Technische Details wie Formulare, Google-Grundlagen und Darstellung auf allen Geräten direkt mitgedacht.",
-        "outcome": "Deine Website funktioniert zuverlässig, fühlt sich hochwertig an und bleibt auch bei späteren Änderungen oder neuen Inhalten belastbar."
-      },
-      "seo": {
-        "eyebrow": "SEO & Google Sichtbarkeit",
-        "title": "Sichtbarkeit dort, wo deine Kunden wirklich suchen",
-        "description": "Wir denken Suchmaschinenoptimierung nicht als Nachtrag, sondern als Teil der gesamten Seitenstrategie. Von Seitenstruktur und Überschriften bis zu lokalen Signalen und inhaltlicher Relevanz wird deine Website so aufgebaut, dass Google dein Angebot sauber verstehen kann.",
-        "point1": "Strukturierte Inhalte, klare Seitenhierarchie und saubere Signale für Google.",
-        "point2": "Lokale Optimierung für Regionen, Städte und Suchanfragen mit echter Kaufabsicht.",
-        "point3": "Technische Grundlagen für Google mit Fokus auf Auffindbarkeit, Seitenbeschreibungen und Ladegeschwindigkeit.",
-        "outcome": "Du wirst besser gefunden, wirkst relevanter für lokale Suchanfragen und steigerst die Chance auf planbare Anfragen über Google."
-      },
-      "maintenance": {
-        "eyebrow": "Wartung",
-        "title": "Laufende Betreuung, damit deine Website stark bleibt",
-        "description": "Eine gute Website ist kein einmaliges Projekt, sondern ein lebendes System. Mit Wartung und Betreuung stellen wir sicher, dass Inhalte aktuell bleiben, technische Risiken früh erkannt werden und deine Website dauerhaft professionell performt.",
-        "point1": "Regelmäßige Updates, Sicherheitschecks und technische Pflege ohne Aufwand auf deiner Seite.",
-        "point2": "Schnelle Unterstützung bei inhaltlichen Änderungen, neuen Sektionen oder kleineren Erweiterungen.",
-        "point3": "Überwachung von Funktion, Geschwindigkeit und Nutzerwirkung, damit nichts unbemerkt liegen bleibt.",
-        "outcome": "Du musst dich nicht um technische Details kümmern und hast trotzdem die Sicherheit, dass deine Website aktuell, stabil und einsatzbereit bleibt."
-      }
     }
   },
   "legalPage": {
@@ -587,36 +345,158 @@
       }
     }
   },
-  "companyPage": {
-    "rework": {
-      "hero": {
-        "title": "Dein Partner für digitales Wachstum, der Kreativität und Technologie für nachhaltige Ergebnisse verbindet.",
-        "description": "Wir verbinden strategisches Denken mit moderner Umsetzung und entwickeln digitale Erlebnisse, die nicht nur gut aussehen, sondern echten Mehrwert schaffen.",
-        "imageAlt": "Porträt von Arkadiusz Weiss"
-      },
-      "coreValues": {
-        "title": "Unsere Kernwerte",
-        "value1Title": "Radikale Ehrlichkeit",
-        "value1Description": "Wir glauben an direkte Kommunikation mit echtem Respekt. Ehrliches Feedback ist die Basis für starke kreative Ergebnisse.",
-        "value2Title": "Präzision mit Fantasie",
-        "value2Description": "Wir kombinieren technische Sorgfalt mit mutigen Ideen. Die besten Lösungen entstehen oft aus ungewöhnlichen Verbindungen.",
-        "value3Title": "Echte Empathie",
-        "value3Description": "Wir gestalten für Menschen zuerst. Wer emotionale Bedürfnisse versteht, baut wirkungsvollere digitale Produkte.",
-        "value4Title": "Ständige Weiterentwicklung",
-        "value4Description": "Die digitale Welt bewegt sich ständig. Deshalb hinterfragen wir Bestehendes konsequent und entwickeln uns mit jedem Projekt weiter."
-      },
-      "approach": {
-        "eyebrow": "Unser Ansatz",
-        "title": "Wo andere Hindernisse sehen, entdecken wir Chancen.",
-        "description": "Durch intensive Zusammenarbeit verstehen wir deine individuellen Herausforderungen im Detail. Dieses Verständnis formt unseren ganzheitlichen Ansatz – von Analyse und strategischer Richtung bis zu Markenentwicklung und Projektumsetzung.",
-        "cta": "Unsere Leistungen"
-      },
-      "collaborate": {
-        "eyebrow": "Los geht's",
-        "title": "Wir sind dein Partner bei echten Herausforderungen und schaffen gemeinsam Ergebnisse, auf die du stolz sein kannst.",
-        "cta": "Lass uns zusammenarbeiten",
-        "ctaSubject": "Lass uns zusammenarbeiten"
-      }
+  "productPage": {
+    "hero": {
+      "badge": "Neu · Bereit für die Saison",
+      "headlineLead": "Mehr Spiele gewinnen –",
+      "headlineHighlight": "mit echten Daten",
+      "headlineTail": "aus jedem Spiel.",
+      "description": "HandballStats verwandelt jedes Spiel in präzise Statistiken. Erfasse Tore, Würfe und Paraden live von der Bank und triff bessere Entscheidungen – in Echtzeit.",
+      "primaryCta": "Kostenlos starten",
+      "secondaryCta": "Funktionen ansehen",
+      "trust1": "Kostenlos starten",
+      "trust2": "Keine Kreditkarte nötig",
+      "trust3": "Offline in der Halle"
+    },
+    "stats": {
+      "items": [
+        {
+          "value": "1-Tap",
+          "label": "Aktionen live erfassen"
+        },
+        {
+          "value": "20+",
+          "label": "Statistiken automatisch"
+        },
+        {
+          "value": "100%",
+          "label": "Offline-fähig"
+        },
+        {
+          "value": "0 €",
+          "label": "Zum Starten"
+        }
+      ]
+    },
+    "features": {
+      "eyebrow": "Funktionen",
+      "title": "Alles, was dein Team besser macht",
+      "description": "Von der Live-Erfassung bis zur Tiefenanalyse – HandballStats gibt dir die Werkzeuge, die Profi-Teams nutzen.",
+      "items": [
+        {
+          "title": "Live-Erfassung",
+          "description": "Tore, Würfe, 7m, Paraden, Zeitstrafen und Wechsel – mit einem Tap erfasst, ohne den Blick vom Spiel zu nehmen."
+        },
+        {
+          "title": "Spielerstatistiken",
+          "description": "Wurfquoten, Effizienz, Plus/Minus und Einsatzzeiten für jeden Spieler – automatisch berechnet."
+        },
+        {
+          "title": "Wurfbilder & Heatmaps",
+          "description": "Sieh auf einen Blick, von welchen Positionen getroffen wird – und wo der Gegner verwundbar ist."
+        },
+        {
+          "title": "Team- & Kaderverwaltung",
+          "description": "Verwalte Spieler, Spiele und Saisons an einem Ort und behalte die Entwicklung im Griff."
+        },
+        {
+          "title": "Echtzeit-Dashboard",
+          "description": "Halbzeit-Bilanz, Trends und Live-Vergleiche direkt während des Spiels auf deinem Gerät."
+        },
+        {
+          "title": "Export & Teilen",
+          "description": "Teile Auswertungen als Link oder PDF mit Spielern, Co-Trainern und dem Vorstand."
+        }
+      ]
+    },
+    "how": {
+      "eyebrow": "So einfach geht es",
+      "title": "In drei Schritten zur Spielanalyse",
+      "description": "Kein Schulungsaufwand, keine komplizierte Einrichtung. Du bist in wenigen Minuten startklar.",
+      "steps": [
+        {
+          "title": "Spiel anlegen",
+          "description": "Wähle dein Team, den Gegner und leg in Sekunden los – auch offline in der Halle."
+        },
+        {
+          "title": "Live erfassen",
+          "description": "Tippe jede Aktion während des Spiels. HandballStats berechnet alle Statistiken automatisch."
+        },
+        {
+          "title": "Analysieren & gewinnen",
+          "description": "Werte Wurfbilder und Spielertrends aus und triff datenbasierte Entscheidungen."
+        }
+      ]
+    },
+    "pros": {
+      "eyebrow": "Warum HandballStats",
+      "title": "Schluss mit Statistik auf dem Bierdeckel",
+      "description": "Vergleiche selbst, wie viel einfacher und aussagekräftiger deine Spielanalyse mit HandballStats wird.",
+      "oldTitle": "Zettel & Stift",
+      "oldPoints": [
+        "Zahlen, die nach dem Spiel niemand mehr auswertet",
+        "Fehleranfällig und zeitraubend in der Nachbereitung",
+        "Keine Wurfbilder, keine Trends, keine Vergleiche"
+      ],
+      "newTitle": "Mit HandballStats",
+      "newPoints": [
+        "Alle Statistiken live und automatisch berechnet",
+        "Wurfbilder, Heatmaps und Spielertrends auf einen Blick",
+        "In Sekunden mit dem ganzen Team geteilt",
+        "Offline-fähig und in wenigen Minuten startklar"
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Häufige Fragen",
+      "description": "Alles, was du vor dem Start wissen musst.",
+      "items": [
+        {
+          "question": "Brauche ich technisches Vorwissen?",
+          "answer": "Nein. HandballStats ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung."
+        },
+        {
+          "question": "Funktioniert die App offline in der Halle?",
+          "answer": "Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine Daten automatisch synchronisiert."
+        },
+        {
+          "question": "Kann ich Statistiken mit meinem Team teilen?",
+          "answer": "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export."
+        },
+        {
+          "question": "Was kostet HandballStats?",
+          "answer": "Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot."
+        }
+      ]
+    },
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "title": "Sei beim Launch dabei",
+      "description": "Trag dich ein und erhalte Produkt-Updates, Profi-Tipps für deine Spielanalyse und das exklusive Launch-Angebot für Vereine.",
+      "placeholder": "Deine E-Mail-Adresse",
+      "button": "Anmelden",
+      "pending": "Wird gesendet…",
+      "benefits": [
+        "Produkt-Updates & neue Funktionen",
+        "Profi-Tipps zur Spielanalyse",
+        "Exklusives Launch-Angebot"
+      ],
+      "privacyPrefix": "Ich akzeptiere die",
+      "privacyLink": "Datenschutzbestimmungen",
+      "privacySuffix": "und möchte den Newsletter erhalten.",
+      "note": "Kein Spam. Abmeldung jederzeit mit einem Klick möglich.",
+      "successTitle": "Fast geschafft!",
+      "successDescription": "Bitte bestätige deine Anmeldung über den Link in deiner E-Mail.",
+      "errorTitle": "Anmeldung fehlgeschlagen",
+      "errorDescription": "Bitte versuche es später erneut.",
+      "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
+    },
+    "finalCta": {
+      "title": "Bring dein Team aufs nächste Level",
+      "description": "Erfasse dein erstes Spiel kostenlos und sieh selbst, wie viel in deinen Daten steckt.",
+      "primaryCta": "Kostenlos starten",
+      "secondaryCta": "In den Newsletter eintragen",
+      "note": "Verfügbar für iOS, Android und im Browser."
     }
   }
 }
