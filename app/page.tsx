@@ -2,16 +2,16 @@ import LandingPage from '@/features/landing-page/pages/landing-page';
 import { createPageMetadata } from '@/lib/seo';
 
 export const metadata = createPageMetadata({
-  title: 'Website erstellen lassen für Unternehmen und Handwerker',
+  title: 'HandballStats – Die Statistik-App für dein Handball-Team',
   description:
-    'Individuelles Webdesign und lokale SEO für Unternehmen, Handwerker und Dienstleister, die bei Google sichtbar werden und mehr Anfragen gewinnen.',
+    'Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und gewinne mehr Spiele mit datenbasierten Entscheidungen. Kostenlos starten.',
   path: '/',
   keywords: [
-    'neue website',
-    'website erstellen lassen',
-    'webdesign handwerker',
-    'webdesign dienstleister',
-    'unternehmenswebsite erstellen lassen',
+    'handball statistik app',
+    'handball stats',
+    'handball scouting app',
+    'handball trainer app',
+    'spielerstatistik handball',
   ],
   imagePath: '/heroImage.png',
 });

@@ -2,10 +2,8 @@ import JsonLdScript from './json-ld-script';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
   absoluteUrl,
-  SERVICE_AREAS,
-  SERVICE_OFFERS,
+  APP_FEATURES,
   DEFAULT_OG_IMAGE,
-
   SITE_URL,
 } from '@/lib/seo';
 
@@ -14,13 +12,13 @@ export default function OrganizationSchema() {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': 'Organization',
     '@id': `${SITE_URL}/#organization`,
     name: CLUB_CONFIG.fullName,
     legalName: CLUB_CONFIG.fullName,
     alternateName: CLUB_CONFIG.display.pageTitle,
     description: CLUB_CONFIG.seo.description,
-    slogan: 'Webdesign für Unternehmen, Handwerker und Dienstleister',
+    slogan: 'Die Statistik-App für dein Handball-Team',
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -31,8 +29,7 @@ export default function OrganizationSchema() {
     image: absoluteUrl(DEFAULT_OG_IMAGE),
     contactPoint: {
       '@type': 'ContactPoint',
-      contactType: 'sales',
-      telephone: CLUB_CONFIG.phone.main,
+      contactType: 'customer support',
       email: CLUB_CONFIG.email.info,
       availableLanguage: 'German',
     },
@@ -41,16 +38,7 @@ export default function OrganizationSchema() {
       name: CLUB_CONFIG.legal.responsiblePerson,
     },
     foundingDate: String(CLUB_CONFIG.foundingYear),
-    areaServed: SERVICE_AREAS.map((area) => ({
-      '@type': 'AdministrativeArea',
-      name: area,
-    })),
-    serviceArea: SERVICE_AREAS.map((area) => ({
-      '@type': 'AdministrativeArea',
-      name: area,
-    })),
-    knowsAbout: SERVICE_OFFERS.map((service) => service.name),
-    priceRange: '$$',
+    knowsAbout: APP_FEATURES.map((feature) => feature.name),
     sameAs,
   };
 

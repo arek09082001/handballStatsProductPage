@@ -11,9 +11,7 @@ interface PageTransitionProps {
 // Navigation order based on the menu structure
 const navigationOrder: { [key: string]: number } = {
   '/': 0,
-  '/leistungen': 1,
-  '/unternehmen': 2,
-  '/impressum': 3,
+  '/impressum': 1,
 };
 
 // Get the base path from a pathname (e.g., /neuigkeiten/some-article -> /neuigkeiten)

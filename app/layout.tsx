@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'Webdesign für Unternehmen, Handwerker und Dienstleister | Arkadiusz Weiss Webentwicklung',
+      'HandballStats – Die Statistik-App für dein Handball-Team',
     template: `%s | ${CLUB_CONFIG.fullName}`,
   },
   description: CLUB_CONFIG.seo.description,
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   authors: [{ name: CLUB_CONFIG.fullName }],
   creator: CLUB_CONFIG.fullName,
   publisher: CLUB_CONFIG.fullName,
-  category: 'business',
-  classification: 'Webdesign, Webentwicklung und lokale SEO für Unternehmen',
+  category: 'sports',
+  classification: 'Handball-Statistik-App für Trainer, Vereine und Teams',
   referrer: 'origin-when-cross-origin',
   formatDetection: {
     email: false,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: SITE_URL,
-    title: 'Webdesign für Unternehmen, Handwerker und Dienstleister',
+    title: 'HandballStats – Die Statistik-App für dein Handball-Team',
     description: CLUB_CONFIG.seo.description,
     siteName: CLUB_CONFIG.fullName,
     images: [
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Webdesign für Unternehmen, Handwerker und Dienstleister',
+    title: 'HandballStats – Die Statistik-App für dein Handball-Team',
     description: CLUB_CONFIG.seo.description,
     images: [
       {

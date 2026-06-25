@@ -2,55 +2,34 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Instagram, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Mail, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 
 export default function Footer() {
   const t = useTranslations('footerSection');
 
-  const servicesLinks = [
-    { href: '/leistungen#webdesign', label: t('services.webDesign') },
-    { href: '/leistungen#entwicklung', label: t('services.development') },
-    { href: '/leistungen#seo', label: t('services.localSeo') },
-    { href: '/leistungen#wartung', label: t('services.maintenance') },
-  ];
-
-  const companyLinks = [
-    { href: '/unternehmen#ueber-mich', label: t('company.about') },
-    { href: '/unternehmen#werte', label: t('company.values') },
-    { href: '/unternehmen#arbeitsweise', label: t('company.approach') },
-  ];
-
-  const resourceLinks = [
-    {
-      href: 'https://www.seobility.net/de/seocheck/',
-      label: t('resources.seobility'),
-    },
-    {
-      href: 'https://developers.google.com/search?hl=de',
-      label: t('resources.googleSearchCentral'),
-    },
-    {
-      href: 'https://www.w3.org/',
-      label: t('resources.w3c'),
-    },
+  const productLinks = [
+    { href: '/#features', label: t('product.features') },
+    { href: '/#how-it-works', label: t('product.how') },
+    { href: '/#faq', label: t('product.faq') },
+    { href: '/#newsletter', label: t('product.newsletter') },
   ];
 
   return (
-    <footer className='w-full bg-[#0f172a] text-white'>
+    <footer className='w-full bg-[#0b1220] text-white'>
       <div className='mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-10 lg:py-12'>
-        <div className='grid gap-10 border-b border-white/10 pb-8 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr_1fr] lg:gap-12'>
+        <div className='grid gap-10 border-b border-white/10 pb-8 lg:grid-cols-[1.4fr_0.8fr_0.8fr_1.2fr] lg:gap-12'>
           <div className='space-y-5'>
             <div className='flex items-center gap-3'>
-              <span className='relative flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-[#2563eb]'>
+              <span className='relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#f97316]'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
                   alt={CLUB_CONFIG.display.logoAlt}
                   title={CLUB_CONFIG.display.logoAlt}
                   fill
-                  sizes='32px'
-                  className='object-contain p-1'
+                  sizes='36px'
+                  className='object-contain p-1.5'
                 />
               </span>
               <span className='text-base font-semibold tracking-[-0.03em] text-white'>
@@ -58,19 +37,15 @@ export default function Footer() {
               </span>
             </div>
 
-            <p className='max-w-[260px] text-[13px] leading-6 text-slate-300'>
+            <p className='max-w-[280px] text-[13px] leading-6 text-slate-300'>
               {t('description')}
             </p>
           </div>
 
           <div>
-            <Link
-              href={'/leistungen'}
-              title={t('titles.servicesOverview')}>
-              <p className='mb-4 text-sm font-semibold text-white'>{t('headings.services')}</p>
-            </Link>
+            <p className='mb-4 text-sm font-semibold text-white'>{t('headings.product')}</p>
             <div className='space-y-3'>
-              {servicesLinks.map((item) => (
+              {productLinks.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
@@ -83,38 +58,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <Link
-              href={'/unternehmen'}
-              title={t('titles.companyOverview')}>
-              <p className='mb-4 text-sm font-semibold text-white'>{t('headings.company')}</p>
-            </Link>
+            <p className='mb-4 text-sm font-semibold text-white'>{t('headings.legal')}</p>
             <div className='space-y-3'>
-              {companyLinks.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  title={item.label}
-                  className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className='mb-4 text-sm font-semibold text-white'>{t('headings.resources')}</p>
-            <div className='space-y-3'>
-              {resourceLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  target='_blank'
-                  rel='noreferrer'
-                  title={item.label}
-                  className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
-                  {item.label}
-                </Link>
-              ))}
+              <Link
+                href='/impressum'
+                title={t('titles.impressum')}
+                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                {t('legal.impressumAndPrivacy')}
+              </Link>
             </div>
           </div>
 
@@ -128,11 +79,6 @@ export default function Footer() {
                 <Mail className='mt-0.5 size-4 shrink-0' />
                 <span>{CLUB_CONFIG.email.main}</span>
               </Link>
-
-              <div className='flex items-start gap-3 text-[13px] text-slate-300'>
-                <Phone className='mt-0.5 size-4 shrink-0' />
-                <span>{t('contact.projectCalls')}</span>
-              </div>
 
               <div className='flex items-start gap-3 text-[13px] text-slate-300'>
                 <MapPin className='mt-0.5 size-4 shrink-0' />

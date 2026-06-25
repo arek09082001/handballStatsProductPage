@@ -11,38 +11,21 @@ export const DEFAULT_OG_IMAGE = '/defaultOgImage.png';
 export const SEO_KEYWORDS = Array.from(
     new Set([
         ...CLUB_CONFIG.seo.keywords,
-        'webdesign für unternehmen',
-        'webdesign für handwerker',
-        'webdesign für dienstleister',
-        'webdesign dortmund',
-        'webdesign unna',
-        'webdesign recklinghausen',
-        'webdesign gladbeck',
-        'webdesign ruhrgebiet',
-        'webagentur dortmund',
-        'webseite erstellen lassen dortmund',
-        'seo dortmund',
-        'seo für unternehmen im ruhrgebiet',
-        'website erstellen lassen',
-        'neue website erstellen lassen',
-        'homepage für handwerksbetrieb',
-        'webseite für lokale unternehmen',
-        'lokale seo',
-        'seo für handwerker',
-        'website relaunch',
-        'webdesigner deutschland',
-        'webdesigner nrw',
-        'webdesigner dortmund',
-        'webdesigner unna',
-        'webdesigner recklinghausen',
-        'webdesigner gladbeck',
-        'professionelle unternehmenswebsite',
-        'website für kleinunternehmen',
-        'mehr anfragen über google',
-        'website für dienstleister',
-        'webdesign kamen',
-        'webdesigner castrop-rauxel',
-        'webagentur ruhrgebiet',
+        'handball statistik app',
+        'handball stats app',
+        'handball scouting app',
+        'handball live statistik',
+        'handball spielanalyse app',
+        'handball trainer software',
+        'spielerstatistik handball',
+        'wurfquote handball',
+        'handball team app',
+        'handball verein statistik',
+        'handball videoanalyse',
+        'handball dashboard',
+        'handball app deutsch',
+        'beste handball app',
+        'handball statistik erfassen',
     ]),
 );
 
@@ -51,17 +34,7 @@ export const SITE_LINKS = [
         name: 'Startseite',
         path: '/',
         description:
-            'Strategisches Webdesign für Unternehmen, Handwerker und Dienstleister.',
-    },
-    {
-        name: 'Leistungen',
-        path: '/leistungen',
-        description: 'Webdesign, Entwicklung, SEO und Wartung im Leistungsüberblick.',
-    },
-    {
-        name: 'Unternehmen',
-        path: '/unternehmen',
-        description: 'Arbeitsweise, Positionierung und Profil von Arkadiusz Weiss.',
+            'HandballStats – die Statistik-App für Trainer, Vereine und Handball-Teams.',
     },
     {
         name: 'Impressum',
@@ -70,52 +43,55 @@ export const SITE_LINKS = [
     },
 ] as const;
 
-export const SERVICE_AREAS = Array.from(
-    new Set([...CLUB_CONFIG.seo.focusRegions, ...CLUB_CONFIG.serviceRegions.extended]),
-);
+export const SERVICE_AREAS = Array.from(new Set([...CLUB_CONFIG.seo.focusRegions]));
 
-export const SERVICE_OFFERS = [
+export const APP_FEATURES = [
     {
-        slug: 'webdesign',
-        name: 'Webdesign',
+        slug: 'live-tracking',
+        name: 'Live-Erfassung',
         description:
-            'Individuelle Unternehmenswebsites mit klarer Nutzerführung, starkem Markenauftritt und Fokus auf Anfragen.',
+            'Erfasse Tore, Würfe, Paraden, Strafen und Wechsel in Echtzeit – mit nur einem Tap, direkt von der Bank.',
     },
     {
-        slug: 'entwicklung',
-        name: 'Webentwicklung',
+        slug: 'player-stats',
+        name: 'Spielerstatistiken',
         description:
-            'Performante technische Umsetzung mit sauberer Architektur, responsivem Frontend und stabilen Nutzerflüssen.',
+            'Wurfquoten, Effizienz, Spielanteile und Entwicklungsverläufe für jeden Spieler auf einen Blick.',
     },
     {
-        slug: 'seo',
-        name: 'SEO und lokale SEO',
+        slug: 'shot-maps',
+        name: 'Wurfbilder & Analyse',
         description:
-            'Onpage-SEO, technische SEO und lokale Sichtbarkeit für Suchanfragen mit echter Kaufabsicht.',
+            'Visualisiere Würfe und Tore auf dem Spielfeld und erkenne Muster, die Spiele entscheiden.',
     },
     {
-        slug: 'wartung',
-        name: 'Wartung',
+        slug: 'team-management',
+        name: 'Team-Management',
         description:
-            'Laufende technische Betreuung, Updates, Monitoring und schnelle Anpassungen für professionelle Websites.',
+            'Verwalte Kader, Spiele und Saisons an einem Ort und teile Auswertungen mit dem ganzen Team.',
     },
 ] as const;
 
 export const HOMEPAGE_FAQS = [
     {
-        question: 'Ist eine individuelle Website nicht zu teuer für kleine Unternehmen?',
+        question: 'Brauche ich technisches Vorwissen, um HandballStats zu nutzen?',
         answer:
-            'Eine professionelle Website ist kein Kostenpunkt ohne Rücklauf, sondern ein Vertriebskanal. Schon wenige zusätzliche qualifizierte Anfragen pro Monat können den Aufwand schnell amortisieren.',
+            'Nein. HandballStats ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung.',
     },
     {
-        question: 'Nimmt ein Website-Projekt nicht zu viel Zeit im Tagesgeschäft ein?',
+        question: 'Funktioniert die App auch offline in der Halle?',
         answer:
-            'Der Prozess ist so aufgebaut, dass nach einem klaren Kickoff möglichst wenig Abstimmungsaufwand auf Kundenseite entsteht. Strategie, Struktur, Design und Umsetzung werden effizient vorbereitet und umgesetzt.',
+            'Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine Daten automatisch synchronisiert.',
     },
     {
-        question: 'Wie können Inhalte später gepflegt werden, wenn ich nicht technisch bin?',
+        question: 'Kann ich die Statistiken mit meinem Team teilen?',
         answer:
-            'Die Website wird auf einer verständlichen technischen Basis aufgebaut. Für spätere Anpassungen sind klare Prozesse vorgesehen, auf Wunsch inklusive laufender Wartung und Betreuung.',
+            'Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export.',
+    },
+    {
+        question: 'Was kostet HandballStats?',
+        answer:
+            'Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot.',
     },
 ] as const;
 

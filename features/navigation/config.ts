@@ -3,24 +3,29 @@ import { NavigationItem } from './interfaces';
 export const SITE_NAVBAR_OFFSET = 96;
 
 export const siteNavigationItems: NavigationItem[] = [
-    {
+  {
     ident: 0,
     href: '/',
     labelKey: 'home',
   },
   {
     ident: 1,
-    href: '/leistungen',
-    labelKey: 'services',
+    href: '/#features',
+    labelKey: 'features',
   },
   {
     ident: 2,
-    href: '/unternehmen',
-    labelKey: 'company',
+    href: '/#how-it-works',
+    labelKey: 'howItWorks',
   },
   {
     ident: 3,
+    href: '/#faq',
+    labelKey: 'faq',
+  },
+  {
+    ident: 4,
     href: '/impressum',
-    labelKey: 'contact',
+    labelKey: 'impressum',
   },
 ];
