@@ -1,0 +1,622 @@
+{
+  "heroSection": {
+    "eyebrow": "Digitale Wachstumspartner",
+    "headlineLine1": "Mach deine Website",
+    "headlinePrefix": "zu einem",
+    "headlineHighlight1": "Kunden",
+    "headlineHighlight2": "Magneten",
+    "description": "Wenn du eine Website erstellen lassen willst, entwickeln wir für Unternehmen, Handwerker und Dienstleister individuelle Websites, die Vertrauen aufbauen, bei Google sichtbar werden und aus Besuchern echte Anfragen machen.",
+    "primaryCta": "Projekt anfragen",
+    "primarySubject": "Neue Website oder Relaunch anfragen",
+    "secondaryCta": "Kostenlose Website-Analyse",
+    "secondarySubject": "Kostenlose Website-Analyse anfragen",
+    "trustItem1": "100% individuelles Design",
+    "trustItem2": "Sichtbar bei Google",
+    "trustItem3": "Schnelle Ladezeiten",
+    "imageAlt": "Vorschau eines Website-Dashboards",
+    "loop0line2": "zu einem",
+    "loop0line3": "Kundenmagneten.",
+    "loop1line2": "zu deiner",
+    "loop1line3": "Visitenkarte.",
+    "loop2line2": "zum digitalen",
+    "loop2line3": "Wachstumsmotor.",
+    "loop3line2": "zu deinem",
+    "loop3line3": "Vertriebskanal."
+  },
+  "transformationSection": {
+    "eyebrow": "Die Transformation",
+    "title": "Website Redesign Vorher & Nachher",
+    "description": "Sieh, wie modernes Design und klare Wege zur Kontaktaufnahme eine veraltete Website in eine Anfragen-Maschine verwandeln.",
+    "beforeLabel": "Vor dem Redesign",
+    "afterLabel": "Nach dem Redesign",
+    "beforeImageAlt": "Veraltetes Website-Design vor dem Redesign",
+    "afterImageAlt": "Modernes Website-Design nach dem Redesign",
+    "beforePoint1": "Unübersichtliche Navigation verwirrt Besucher.",
+    "beforePoint2": "Keine klare Handlungsaufforderung wie ‚Jetzt anfragen' im sichtbaren Bereich.",
+    "beforePoint3": "Veraltete Optik senkt Vertrauen und die Zahl der Anfragen.",
+    "afterPoint1": "Klare Überschrift und Nutzenversprechen überzeugen sofort.",
+    "afterPoint2": "Gut sichtbare Buttons wie ‚Jetzt anfragen' führen Besucher direkt zur Kontaktaufnahme.",
+    "afterPoint3": "Moderne Gestaltung stärkt Vertrauen und Qualitätswahrnehmung."
+  },
+  "performanceAuditSection": {
+    "eyebrow": "Website-Check",
+    "title": "Warum deine aktuelle Website bei Google unsichtbar ist",
+    "description": "Eine schöne Website bringt nichts, wenn sie niemand findet. Wir identifizieren und beheben technische Schwachstellen, die deine Platzierung bei Google zerstören und lokale Kunden abschrecken.",
+    "issue1Title": "Langsame Ladezeiten",
+    "issue1Description": "53% der mobilen Nutzer verlassen Seiten, die länger als 3 Sekunden laden. Google bestraft langsame Websites aktiv.",
+    "issue2Title": "Nicht mobilfreundlich",
+    "issue2Description": "Da 60% lokaler Suchen über Smartphones erfolgen, kostet eine nicht mobilfreundliche Seite direkte Anfragen.",
+    "issue3Title": "Fehlende Grundlagen für Google",
+    "issue3Description": "Fehlerhafte Überschriften, fehlende Seitenbeschreibungen für Google und schlechte Seitenadressen verwirren Suchmaschinen.",
+    "scoreTitle": "Durchschnittliche Bewertung der Wettbewerber",
+    "scoreSubtitle": "Die meisten lokalen Unternehmen scheitern an grundlegender Suchmaschinenoptimierung",
+    "metricPerformance": "Geschwindigkeit",
+    "metricAccessibility": "Barrierefreiheit",
+    "metricBestPractices": "Bewährte Methoden",
+    "metricSeo": "Suchmaschinenoptimierung"
+  },
+  "whyUsSection": {
+    "eyebrow": "Warum wir",
+    "title": "Websites für echtes Geschäftswachstum",
+    "description": "Wir bauen keine digitalen Visitenkarten. Wir entwickeln Websites, die für dein Unternehmen <roi>messbar mehr Anfragen</roi> bringen.",
+    "card1Title": "Mehr echte Anfragen",
+    "card1Description": "Durchdachter Seitenaufbau und gezielte Überzeugungselemente führen Besucher zur Kontaktaufnahme. Bessere Anfragen, mehr Aufträge.",
+    "card2Title": "Lokale Sichtbarkeit dominieren",
+    "card2Description": "Von Grund auf so entwickelt, dass Google genau versteht, was du anbietest und wo du gefunden werden willst.",
+    "card3Title": "Sofortiges Markenvertrauen",
+    "card3Description": "Der erste Eindruck entscheidet. Modernes Premium-Design signalisiert Professionalität und Verlässlichkeit und hebt dich vom Wettbewerb ab."
+  },
+  "commonQuestionsSection": {
+    "bannerTitle": "Lass deine Website auf Anfrage-Potenzial prüfen.",
+    "bannerDescription": "Wenn deine Seite bereits Besucher hat, schauen wir auf Klarheit, Vertrauen, Auffindbarkeit bei Google und Wege zur Kontaktaufnahme. Du bekommst konkrete Hebel statt vager Tipps.",
+    "bannerCta": "Analyse anfragen",
+    "contactSubject": "Kostenlose Website-Analyse anfragen",
+    "contactTitle": "Kostenlose Website-Analyse",
+    "eyebrow": "Häufige Fragen",
+    "title": "Noch unsicher, ob jetzt der richtige Zeitpunkt ist?",
+    "description": "Wir wissen, dass eine neue Website eine wichtige Entscheidung ist. Hier sind ehrliche Antworten auf häufige Fragen vor dem Start.",
+    "imageAlt": "Platzhalterbild für den Bereich häufige Fragen",
+    "q1Title": "Ist eine individuelle Website nicht zu teuer für kleine Unternehmen?",
+    "q1Description": "Sieh es als Investition, nicht als Kostenpunkt. Schon 2-3 zusätzliche Kunden pro Monat amortisieren die Website schnell. Unsere Pakete sind bewusst auf lokale Unternehmen zugeschnitten.",
+    "q2Title": "Nimmt das nicht zu viel Zeit in Anspruch? Ich bin im Tagesgeschäft eingespannt.",
+    "q2Description": "Unser Prozess braucht nur wenig Input von dir. Nach einem ersten Gespräch übernehmen wir Konzeption, Text, Design und Entwicklung effizient für dich.",
+    "q3Title": "Ich bin nicht technisch. Wie pflege ich später Inhalte?",
+    "q3Description": "Wir setzen auf benutzerfreundliche Systeme und geben dir klare Einweisungen. Und wenn du willst, übernehmen wir Änderungen im Rahmen eines Wartungspakets für dich."
+  },
+  "costOfOutdatedWebsiteSection": {
+    "eyebrow": "Veraltete Website",
+    "title": "Die Kosten einer veralteten Website",
+    "description": "Deine Website ist dein 24/7-Vertrieb. Wenn sie langsam, unklar oder schwer auffindbar ist, schickst du Kunden direkt zur Konkurrenz.",
+    "oldWayTitle": "Der alte Weg",
+    "newWayTitle": "Der Weiss-Webdesign Weg",
+    "oldPoint1": "Langsame Ladezeiten frustrieren Besucher und schaden dem Google-Ranking.",
+    "oldPoint2": "Nicht mobil optimiert, dadurch gehen bis zu 60% lokaler Zugriffe verloren.",
+    "oldPoint3": "Unklare Navigation führt dazu, dass Besucher sofort wieder abspringen.",
+    "newPoint1": "Blitzschnelle Ladezeiten – optimiert nach den Qualitätsstandards von Google.",
+    "newPoint2": "Ein Design, das sich automatisch an Smartphone, Tablet und PC anpasst.",
+    "newPoint3": "Klare Wege zur Kontaktaufnahme, die messbar Anfragen erzeugen."
+  },
+  "ourExpertiseSection": {
+    "eyebrow": "Unsere Expertise",
+    "title": "Ganzheitliche digitale Lösungen",
+    "viewAll": "Alle Leistungen ansehen",
+    "card1Title": "Design & Nutzerführung",
+    "card1Description": "Ansprechendes Design und klare Nutzerführung, die Vertrauen schaffen und Besucher in Kontakte verwandeln.",
+    "card2Title": "Webentwicklung",
+    "card2Description": "Robuste, zukunftssichere und schnelle Websites auf modernen Technologien.",
+    "card3Title": "Bei Google gefunden werden",
+    "card3Description": "Mehr Sichtbarkeit in lokalen Suchergebnissen und bessere Auffindbarkeit bei Kunden in deiner Region.",
+    "card4Title": "Wartung",
+    "card4Description": "Laufender Support, Sicherheitsupdates und Geschwindigkeitsüberwachung."
+  },
+  "finalCtaSection": {
+    "title": "Neue Website, Neugestaltung oder ehrliches Feedback zu deiner aktuellen Seite",
+    "description": "Wenn du mehr qualifizierte Anfragen willst, starten wir entweder mit einem neuen Projekt oder mit einer kompakten Website-Analyse. Beides landet direkt bei uns.",
+    "benefit1": "Klare Empfehlung, ob eine neue Website, eine Neugestaltung oder gezielte Verbesserungen gerade der richtige Schritt ist.",
+    "benefit2": "Direkter Kontakt ohne Vertriebsschleife oder Agentur-Weitergabe.",
+    "benefit3": "Fokus auf Anfragen, Vertrauen und einen Auftritt, der zu deinem Business passt.",
+    "suggestionHint": "Klicke auf einen Punkt und wir füllen dir die Nachricht schon vor.",
+    "insertProjectTemplate": "Vorlage für Projektanfrage einfügen",
+    "insertAnalysisTemplate": "Vorlage für Analyse einfügen",
+    "benefit1TemplateProject": "Ich würde mich über eine kurze Einschätzung freuen, welcher Schritt für meine Website gerade am sinnvollsten ist.\n\nWorum es gerade geht: [bitte kurz beschreiben]\nWas ich mir wünsche: [neue Website, Relaunch oder gezielte Verbesserungen]\nGibt es schon einen ungefähren Zeitrahmen? [optional]",
+    "benefit1TemplateAnalysis": "Ich würde mich über eine ehrliche Einschätzung freuen, ob meine Website eher eine Überarbeitung oder gezielte Verbesserungen braucht.\n\nWas aktuell nicht gut funktioniert: [bitte kurz beschreiben]\nWorauf du besonders achten sollst: [z. B. Vertrauen, Anfragen, Struktur oder Wirkung]",
+    "benefit2TemplateProject": "Ich würde mein Website-Projekt gerne direkt und unkompliziert mit dir besprechen.\n\nWorum es geht: [bitte kurz beschreiben]\nWas mir bei der Zusammenarbeit wichtig ist: [bitte ergänzen]",
+    "benefit2TemplateAnalysis": "Ich würde mich über direktes Feedback zu meiner Website freuen.\n\nMein aktuelles Problem: [bitte kurz beschreiben]\nWelche Rückmeldung ich mir wünsche: [bitte ergänzen]",
+    "benefit3TemplateProject": "Ich wünsche mir eine Website, die besser zu meinem Business passt und mehr passende Anfragen bringt.\n\nWas derzeit noch nicht gut passt: [bitte kurz beschreiben]\nWas die neue Website für mich erreichen soll: [bitte ergänzen]",
+    "benefit3TemplateAnalysis": "Ich möchte besser verstehen, wie meine Website bei Vertrauen, Positionierung und Anfragen stärker werden kann.\n\nWas mich an der aktuellen Website stört: [bitte kurz beschreiben]\nWas ich gerne verbessern möchte: [bitte ergänzen]",
+    "socialProof": "Du schreibst direkt mit unserem Team.",
+    "formTitle": "Wähle deinen nächsten Schritt",
+    "projectOption": "Website-Projekt",
+    "analysisOption": "Website-Analyse",
+    "projectSubject": "Neue Website oder Relaunch anfragen",
+    "analysisSubject": "Kostenlose Website-Analyse anfragen",
+    "nameLabel": "Name",
+    "emailLabel": "E-Mail",
+    "websiteLabel": "Website-URL",
+    "phoneLabel": "Telefonnummer optional",
+    "messageLabel": "Nachricht",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "websitePlaceholder": "www.deine-domain.de (optional)",
+    "phonePlaceholder": "Telefonnummer (optional)",
+    "analysisWebsitePlaceholder": "www.deine-domain.de",
+    "projectMessagePlaceholder": "Erzähl kurz, was du planst: neue Website, Relaunch, Ziele oder Timing.",
+    "analysisMessagePlaceholder": "Schick mir kurz, was dich an deiner aktuellen Website stört oder wo du Potenzial siehst.",
+    "privacyPrefix": "Ich stimme der Verarbeitung meiner Daten gemäß den",
+    "privacyLink": "Datenschutzbestimmungen",
+    "privacySuffix": "zu.",
+    "submitProject": "Projektanfrage senden",
+    "submitAnalysis": "Analyse anfragen",
+    "submitPending": "Wird gesendet...",
+    "responseNote": "E-Mail oder Telefonnummer reichen. Wir melden uns persönlich zurück."
+  },
+  "footerSection": {
+    "description": "Wir entwickeln leistungsstarke Websites für Unternehmen, die online klar auftreten und mehr Anfragen gewinnen wollen.",
+    "headings": {
+      "services": "Leistungen",
+      "company": "Unternehmen",
+      "resources": "Ressourcen",
+      "contact": "Kontakt"
+    },
+    "services": {
+      "webDesign": "Webdesign",
+      "development": "Entwicklung",
+      "localSeo": "Lokale SEO",
+      "maintenance": "Wartung"
+    },
+    "company": {
+      "about": "Über uns",
+      "values": "Werte",
+      "approach": "Arbeitsweise"
+    },
+    "contact": {
+      "projectCalls": "Projektgespräche auf Anfrage",
+      "location": "Remote, Deutschland",
+      "instagram": "Instagram"
+    },
+    "resources": {
+      "seobility": "Seobility SEO Check",
+      "googleSearchCentral": "Google Search Central",
+      "w3c": "W3C Standards"
+    },
+    "titles": {
+      "servicesOverview": "Zur Leistungsübersicht",
+      "companyOverview": "Zur Unternehmensseite",
+      "email": "E-Mail an",
+      "impressum": "Zum Impressum und Datenschutz"
+    },
+    "legal": {
+      "impressumAndPrivacy": "Impressum & Datenschutz"
+    },
+    "copyright": "Copyright © {year}. Alle Rechte vorbehalten."
+  },
+  "navigationSection": {
+    "items": {
+      "home": "Startseite",
+      "services": "Leistungen",
+      "company": "Unternehmen",
+      "references": "Referenzen",
+      "contact": "Impressum"
+    },
+    "contactCta": "Projekt anfragen",
+    "contactDialogSubject": "Projektanfrage",
+    "languageSwitcher": {
+      "label": "Sprache wechseln",
+      "switchToGerman": "Auf Deutsch wechseln",
+      "switchToEnglish": "Auf Englisch wechseln"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Digitale Leistungen, die Sichtbarkeit in Anfragen verwandeln",
+      "description": "Wir bieten Webdesign, Entwicklung, Suchmaschinenoptimierung und Wartung als aufeinander abgestimmtes System an. Nicht als lose Einzelleistungen, sondern als digitales Fundament, das lokal Vertrauen aufbaut und messbar neue Anfragen erzeugt.",
+      "primaryCta": "Projekt besprechen",
+      "secondaryCta": "Leistungen ansehen",
+      "previewBadge": "Leistungsübersicht",
+      "previewMeta": "Strategie • Design • Technik"
+    },
+    "overview": {
+      "readMore": "Mehr erfahren"
+    },
+    "cards": {
+      "webdesign": {
+        "title": "Webdesign",
+        "description": "Markenstarke Websites mit klarer Nutzerführung, die Vertrauen aufbauen und Besucher in echte Anfragen verwandeln."
+      },
+      "development": {
+        "title": "Entwicklung",
+        "description": "Saubere technische Umsetzung mit schnellen Ladezeiten, Stabilität und einer Struktur, die mit deinem Unternehmen mitwächst."
+      },
+      "seo": {
+        "title": "SEO & Google Sichtbarkeit",
+        "description": "Damit du bei Google genau dort sichtbar wirst, wo deine Kunden nach dir suchen."
+      },
+      "maintenance": {
+        "title": "Wartung",
+        "description": "Kontinuierliche Pflege, Updates und Überwachung, damit deine Website dauerhaft schnell, sicher und zuverlässig bleibt."
+      }
+    },
+    "details": {
+      "outcomeLabel": "Ergebnis in der Praxis",
+      "placeholderBadge": "Visual Placeholder",
+      "placeholderText": "Hier kann später ein passendes Projektbild, ein Screen oder eine Case-Study-Vorschau eingebunden werden.",
+      "placeholderMetricLabel1": "Fokus",
+      "placeholderMetricValue1": "Mehr Vertrauen",
+      "placeholderMetricLabel2": "Nutzen",
+      "placeholderMetricValue2": "Mehr Anfragen",
+      "webdesign": {
+        "eyebrow": "Webdesign",
+        "title": "Design, das nicht nur gut aussieht, sondern verkauft",
+        "description": "Ein gutes Design führt Nutzer sicher durch die Seite, reduziert Reibung und macht das Angebot sofort verständlich. Wir entwickeln Websites, die modern wirken, professionell auftreten und deine Zielgruppe intuitiv zur Kontaktaufnahme führen.",
+        "point1": "Klare Seitenstruktur mit überzeugenden Startbereichen und durchdachten Wegen zur Kontaktaufnahme.",
+        "point2": "Visuelle Systeme, die Vertrauen, Qualität und Professionalität sofort kommunizieren.",
+        "point3": "Mobil gedachte Gestaltung für starke Wirkung auf Smartphone, Tablet und Desktop.",
+        "outcome": "Du bekommst eine Website, die modern aussieht, besser zu deiner Marke passt und Besucher schneller in qualifizierte Kontakte verwandelt."
+      },
+      "development": {
+        "eyebrow": "Entwicklung",
+        "title": "Technische Umsetzung, die schnell, stabil und skalierbar bleibt",
+        "description": "Design allein reicht nicht. Die technische Basis entscheidet darüber, wie schnell deine Seite lädt, wie zuverlässig sie funktioniert und wie leicht sie später erweitert werden kann. Wir setzen auf moderne Technologien mit sauberer, wartbarer Programmierung.",
+        "point1": "Auf Geschwindigkeit ausgerichtete Umsetzung für schnelle Ladezeiten und ein hochwertiges Nutzererlebnis.",
+        "point2": "Sauberer Aufbau und eine Struktur, die spätere Erweiterungen einfach macht.",
+        "point3": "Technische Details wie Formulare, Google-Grundlagen und Darstellung auf allen Geräten direkt mitgedacht.",
+        "outcome": "Deine Website funktioniert zuverlässig, fühlt sich hochwertig an und bleibt auch bei späteren Änderungen oder neuen Inhalten belastbar."
+      },
+      "seo": {
+        "eyebrow": "SEO & Google Sichtbarkeit",
+        "title": "Sichtbarkeit dort, wo deine Kunden wirklich suchen",
+        "description": "Wir denken Suchmaschinenoptimierung nicht als Nachtrag, sondern als Teil der gesamten Seitenstrategie. Von Seitenstruktur und Überschriften bis zu lokalen Signalen und inhaltlicher Relevanz wird deine Website so aufgebaut, dass Google dein Angebot sauber verstehen kann.",
+        "point1": "Strukturierte Inhalte, klare Seitenhierarchie und saubere Signale für Google.",
+        "point2": "Lokale Optimierung für Regionen, Städte und Suchanfragen mit echter Kaufabsicht.",
+        "point3": "Technische Grundlagen für Google mit Fokus auf Auffindbarkeit, Seitenbeschreibungen und Ladegeschwindigkeit.",
+        "outcome": "Du wirst besser gefunden, wirkst relevanter für lokale Suchanfragen und steigerst die Chance auf planbare Anfragen über Google."
+      },
+      "maintenance": {
+        "eyebrow": "Wartung",
+        "title": "Laufende Betreuung, damit deine Website stark bleibt",
+        "description": "Eine gute Website ist kein einmaliges Projekt, sondern ein lebendes System. Mit Wartung und Betreuung stellen wir sicher, dass Inhalte aktuell bleiben, technische Risiken früh erkannt werden und deine Website dauerhaft professionell performt.",
+        "point1": "Regelmäßige Updates, Sicherheitschecks und technische Pflege ohne Aufwand auf deiner Seite.",
+        "point2": "Schnelle Unterstützung bei inhaltlichen Änderungen, neuen Sektionen oder kleineren Erweiterungen.",
+        "point3": "Überwachung von Funktion, Geschwindigkeit und Nutzerwirkung, damit nichts unbemerkt liegen bleibt.",
+        "outcome": "Du musst dich nicht um technische Details kümmern und hast trotzdem die Sicherheit, dass deine Website aktuell, stabil und einsatzbereit bleibt."
+      }
+    }
+  },
+  "legalPage": {
+    "header": {
+      "eyebrow": "Rechtliche Angaben",
+      "title": "Impressum & Datenschutz",
+      "description": "Pflichtangaben nach § 5 DDG und Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
+      "transparencyBadge": "Transparent und rechtssicher",
+      "lastUpdated": "Letzte Aktualisierung: 01. April 2026"
+    },
+    "impressum": {
+      "title": "Impressum",
+      "eyebrow": "Pflichtangaben nach § 5 DDG",
+      "providerLabel": "Anbieter",
+      "addressLabel": "Ladungsfähige Anschrift",
+      "contactLabel": "Kontakt und Verantwortlichkeit",
+      "contentResponsibilityLabel": "Verantwortlich für den Inhalt"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "shortTitle": "Datenschutz",
+      "preamble": {
+        "title": "Präambel",
+        "paragraph1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als Daten bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie zum Beispiel unserer Social-Media-Profile (nachfolgend zusammenfassend als Onlineangebot bezeichnet).",
+        "paragraph2": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
+        "updatedAt": "Stand: 01. April 2026"
+      },
+      "responsibleParty": {
+        "title": "Verantwortlicher",
+        "representativesLabel": "Vertretungsberechtigte Personen:",
+        "emailLabel": "E-Mail-Adresse:"
+      },
+      "processingOverview": {
+        "title": "Übersicht der Verarbeitungen",
+        "description": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+        "processedDataTypesTitle": "Arten der verarbeiteten Daten",
+        "processedDataTypes": [
+          "Bestandsdaten",
+          "Kontaktdaten",
+          "Inhaltsdaten",
+          "Nutzungsdaten",
+          "Meta-, Kommunikations- und Verfahrensdaten",
+          "Protokolldaten"
+        ],
+        "affectedPeopleTitle": "Kategorien betroffener Personen",
+        "affectedPeople": [
+          "Kommunikationspartner",
+          "Nutzer"
+        ],
+        "purposesTitle": "Zwecke der Verarbeitung",
+        "purposes": [
+          "Erbringung vertraglicher Leistungen und Erfüllung vertraglicher Pflichten",
+          "Kommunikation",
+          "Sicherheitsmaßnahmen",
+          "Büro- und Organisationsverfahren",
+          "Organisations- und Verwaltungsverfahren",
+          "Feedback",
+          "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit",
+          "Informationstechnische Infrastruktur",
+          "Öffentlichkeitsarbeit"
+        ]
+      },
+      "legalBasis": {
+        "title": "Maßgebliche Rechtsgrundlagen",
+        "introLabel": "Maßgebliche Rechtsgrundlagen nach der DSGVO:",
+        "introText": "Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.",
+        "items": [
+          {
+            "title": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)",
+            "description": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben."
+          },
+          {
+            "title": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)",
+            "description": "Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen."
+          },
+          {
+            "title": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)",
+            "description": "Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen."
+          }
+        ]
+      },
+      "securityMeasures": {
+        "title": "Sicherheitsmaßnahmen",
+        "paragraph1": "Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.",
+        "connectionLabel": "Sicherung von Online-Verbindungen durch TLS-/SSL-Verschlüsselungstechnologie (HTTPS):",
+        "connectionText": "Um die Daten der Nutzer, die über unsere Online-Dienste übertragen werden, vor unerlaubten Zugriffen zu schützen, setzen wir auf die TLS-/SSL-Verschlüsselungstechnologie. Diese Technologien verschlüsseln die Informationen, die zwischen der Website oder App und dem Browser des Nutzers übertragen werden, wodurch die Daten vor unbefugtem Zugriff geschützt sind."
+      },
+      "webHosting": {
+        "title": "Bereitstellung des Onlineangebots und Webhosting",
+        "description": "Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und Funktionen unserer Online-Dienste an den Browser oder das Endgerät der Nutzer zu übermitteln.",
+        "summaryItems": [
+          {
+            "label": "Verarbeitete Datenarten:",
+            "value": "Nutzungsdaten, Meta-, Kommunikations- und Verfahrensdaten, Protokolldaten, Inhaltsdaten."
+          },
+          {
+            "label": "Betroffene Personen:",
+            "value": "Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten)."
+          },
+          {
+            "label": "Zwecke der Verarbeitung:",
+            "value": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit; Informationstechnische Infrastruktur; Sicherheitsmaßnahmen."
+          },
+          {
+            "label": "Rechtsgrundlagen:",
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+          }
+        ],
+        "processorSectionTitle": "Auftragsverarbeitung",
+        "processorSectionText": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.",
+        "vercelTitle": "Vercel",
+        "vercelDescription": "Leistungen auf dem Gebiet der Bereitstellung von informationstechnischer Infrastruktur und verbundenen Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten) sowie Entwicklungsumgebung.",
+        "vercelItems": [
+          {
+            "label": "Rechtsgrundlagen:",
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+          },
+          {
+            "label": "Standardvertragsklauseln:"
+          },
+          {
+            "label": "Auftragsverarbeitungsvertrag:"
+          }
+        ],
+        "analyticsTitle": "Vercel Analytics & Speed Insights",
+        "analyticsDescription": "Wir nutzen Vercel Analytics und Speed Insights zur Messung der technischen Performance und zur Optimierung der Nutzerfreundlichkeit unserer Website. Die erhobenen Daten werden ausschließlich anonymisiert und aggregiert ausgewertet. Eine Zuordnung zu einzelnen Personen ist nicht möglich. Diese Tools erfassen ausschließlich anonymisierte, aggregierte Daten wie Seitenaufrufe, Gerätetyp, Browserdetails und Web Vitals. Es erfolgt keine Speicherung von IP-Adressen oder anderen Daten, die eine Identifizierung natürlicher Personen ermöglichen. Die Tools verwenden keine Cookies oder sonstige lokale Speichertechnologien.",
+        "analyticsItems": [
+          {
+            "label": "Dienstanbieter:",
+            "value": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA"
+          },
+          {
+            "label": "Zweck der Verarbeitung:",
+            "value": "Analyse der Website-Performance, Optimierung der Ladezeiten und Verbesserung der Nutzerfreundlichkeit."
+          },
+          {
+            "label": "Rechtsgrundlagen:",
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Unser berechtigtes Interesse liegt in der Optimierung und dem wirtschaftlichen Betrieb unseres Onlineangebotes."
+          },
+          {
+            "label": "Datenschutzerklärung:"
+          },
+          {
+            "label": "Datenübermittlung in Drittländer:",
+            "value": "Die Datenübertragung in die USA erfolgt auf Grundlage von Standardvertragsklauseln (Art. 46 DSGVO). Die Übertragung erfolgt verschlüsselt und es werden ausschließlich anonymisierte Daten übermittelt."
+          }
+        ]
+      },
+      "cookies": {
+        "title": "Einsatz von Cookies",
+        "description": "Unter dem Begriff Cookies werden Funktionen, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen, verstanden. Cookies können ferner in Bezug auf unterschiedliche Anliegen Einsatz finden, etwa zu Zwecken der Funktionsfähigkeit, der Sicherheit und des Komforts von Onlineangeboten sowie der Erstellung von Analysen der Besucherströme. Wir verwenden Cookies gemäß den gesetzlichen Vorschriften.",
+        "storageDurationLabel": "Speicherdauer:",
+        "storageDurationText": "Im Hinblick auf die Speicherdauer werden die folgenden Arten von Cookies unterschieden:",
+        "items": [
+          {
+            "title": "Temporäre Cookies (auch: Session- oder Sitzungscookies):",
+            "description": "Temporäre Cookies werden spätestens gelöscht, nachdem ein Nutzer ein Onlineangebot verlassen und sein Endgerät geschlossen hat."
+          },
+          {
+            "title": "Permanente Cookies:",
+            "description": "Permanente Cookies bleiben auch nach dem Schließen des Endgeräts gespeichert. Die Speicherdauer kann bis zu zwei Jahre betragen."
+          }
+        ]
+      },
+      "contactRequests": {
+        "title": "Kontakt- und Anfrageverwaltung",
+        "description": "Bei der Kontaktaufnahme mit uns (z. B. per Post, Kontaktformular, E-Mail, Telefon oder via soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist.",
+        "items": [
+          {
+            "label": "Verarbeitete Datenarten:",
+            "value": "Bestandsdaten, Kontaktdaten, Inhaltsdaten, Nutzungsdaten, Meta-, Kommunikations- und Verfahrensdaten."
+          },
+          {
+            "label": "Betroffene Personen:",
+            "value": "Kommunikationspartner."
+          },
+          {
+            "label": "Zwecke der Verarbeitung:",
+            "value": "Kommunikation; Organisations- und Verwaltungsverfahren; Feedback; Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit."
+          },
+          {
+            "label": "Rechtsgrundlagen:",
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+          }
+        ]
+      },
+      "dataSubjectRights": {
+        "title": "Rechte der betroffenen Personen",
+        "description": "Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als Betroffene nach der DSGVO verschiedene Rechte zu:",
+        "items": [
+          {
+            "title": "Widerspruchsrecht:",
+            "description": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten Widerspruch einzulegen."
+          },
+          {
+            "title": "Widerrufsrecht bei Einwilligungen:",
+            "description": "Sie haben das Recht, erteilte Einwilligungen jederzeit zu widerrufen."
+          },
+          {
+            "title": "Auskunftsrecht:",
+            "description": "Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend den gesetzlichen Vorgaben."
+          },
+          {
+            "title": "Recht auf Berichtigung:",
+            "description": "Sie haben entsprechend den gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie betreffenden Daten oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen."
+          },
+          {
+            "title": "Recht auf Löschung und Einschränkung der Verarbeitung:",
+            "description": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen."
+          },
+          {
+            "title": "Recht auf Datenübertragbarkeit:",
+            "description": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern."
+          },
+          {
+            "title": "Beschwerde bei Aufsichtsbehörde:",
+            "description": "Sie haben unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht auf Beschwerde bei einer Aufsichtsbehörde."
+          }
+        ]
+      },
+      "socialMedia": {
+        "title": "Präsenzen in sozialen Netzwerken (Social Media)",
+        "description": "Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und verarbeiten in diesem Rahmen Nutzerdaten, um mit den dort aktiven Nutzern zu kommunizieren oder Informationen über uns anzubieten.",
+        "instagramItems": [
+          {
+            "label": "Instagram:",
+            "value": "Soziales Netzwerk, ermöglicht das Teilen von Fotos und Videos, das Kommentieren und Favorisieren von Beiträgen, Nachrichtenversand, Abonnieren von Profilen und Seiten;"
+          },
+          {
+            "label": "Dienstanbieter:",
+            "value": "Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland;"
+          },
+          {
+            "label": "Website:"
+          },
+          {
+            "label": "Datenschutzerklärung:"
+          },
+          {
+            "label": "Grundlage Drittlandtransfers:",
+            "value": "Data Privacy Framework (DPF)."
+          }
+        ]
+      },
+      "dataRetention": {
+        "title": "Allgemeine Informationen zur Datenspeicherung und Löschung",
+        "description": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden.",
+        "retentionLabel": "Aufbewahrung und Löschung von Daten:",
+        "retentionText": "Die folgenden allgemeinen Fristen gelten für die Aufbewahrung und Archivierung nach deutschem Recht:",
+        "items": [
+          {
+            "title": "10 Jahre",
+            "description": "Aufbewahrungsfrist für Bücher und Aufzeichnungen, Jahresabschlüsse, Inventare, Lageberichte, Eröffnungsbilanz sowie die zu ihrem Verständnis erforderlichen Arbeitsanweisungen und sonstigen Organisationsunterlagen."
+          },
+          {
+            "title": "8 Jahre",
+            "description": "Buchungsbelege, wie z. B. Rechnungen und Kostenbelege."
+          },
+          {
+            "title": "6 Jahre",
+            "description": "Übrige Geschäftsunterlagen: empfangene Handels- oder Geschäftsbriefe, Wiedergaben der abgesandten Handels- oder Geschäftsbriefe, sonstige Unterlagen, soweit sie für die Besteuerung von Bedeutung sind."
+          },
+          {
+            "title": "3 Jahre",
+            "description": "Daten, die erforderlich sind, um potenzielle Gewährleistungs- und Schadensersatzansprüche oder ähnliche vertragliche Ansprüche und Rechte zu berücksichtigen sowie damit verbundene Anfragen zu bearbeiten."
+          }
+        ]
+      },
+      "definitions": {
+        "title": "Begriffsdefinitionen",
+        "description": "In diesem Abschnitt erhalten Sie eine Übersicht über die in dieser Datenschutzerklärung verwendeten Begrifflichkeiten. Soweit die Begrifflichkeiten gesetzlich definiert sind, gelten deren gesetzliche Definitionen. Die nachfolgenden Erläuterungen sollen dagegen vor allem dem Verständnis dienen.",
+        "items": [
+          {
+            "title": "Personenbezogene Daten:",
+            "description": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z. B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann."
+          },
+          {
+            "title": "Verarbeitung:",
+            "description": "Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten, sei es das Erheben, das Auswerten, das Speichern, das Übermitteln oder das Löschen."
+          },
+          {
+            "title": "Verantwortlicher:",
+            "description": "Als Verantwortlicher wird die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle bezeichnet, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+          },
+          {
+            "title": "Bestandsdaten:",
+            "description": "Bestandsdaten umfassen wesentliche Informationen, die für die Identifikation und Verwaltung von Vertragspartnern, Benutzerkonten, Profilen und ähnlichen Zuordnungen notwendig sind."
+          },
+          {
+            "title": "Kontaktdaten:",
+            "description": "Kontaktdaten sind essentielle Informationen, die die Kommunikation mit Personen oder Organisationen ermöglichen. Sie umfassen unter anderem Telefonnummern, postalische Adressen und E-Mail-Adressen sowie Kommunikationsmittel wie Social-Media-Handles."
+          },
+          {
+            "title": "Inhaltsdaten:",
+            "description": "Inhaltsdaten umfassen Informationen, die im Zuge der Erstellung, Bearbeitung und Veröffentlichung von Inhalten aller Art generiert werden."
+          },
+          {
+            "title": "Nutzungsdaten:",
+            "description": "Nutzungsdaten beziehen sich auf Informationen, die erfassen, wie Nutzer mit digitalen Produkten, Dienstleistungen oder Plattformen interagieren."
+          }
+        ],
+        "generatorLinkLabel": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke",
+        "generatorLinkTitle": "Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
+      }
+    }
+  },
+  "companyPage": {
+    "rework": {
+      "hero": {
+        "title": "Dein Partner für digitales Wachstum, der Kreativität und Technologie für nachhaltige Ergebnisse verbindet.",
+        "description": "Wir verbinden strategisches Denken mit moderner Umsetzung und entwickeln digitale Erlebnisse, die nicht nur gut aussehen, sondern echten Mehrwert schaffen.",
+        "imageAlt": "Porträt von Arkadiusz Weiss"
+      },
+      "coreValues": {
+        "title": "Unsere Kernwerte",
+        "value1Title": "Radikale Ehrlichkeit",
+        "value1Description": "Wir glauben an direkte Kommunikation mit echtem Respekt. Ehrliches Feedback ist die Basis für starke kreative Ergebnisse.",
+        "value2Title": "Präzision mit Fantasie",
+        "value2Description": "Wir kombinieren technische Sorgfalt mit mutigen Ideen. Die besten Lösungen entstehen oft aus ungewöhnlichen Verbindungen.",
+        "value3Title": "Echte Empathie",
+        "value3Description": "Wir gestalten für Menschen zuerst. Wer emotionale Bedürfnisse versteht, baut wirkungsvollere digitale Produkte.",
+        "value4Title": "Ständige Weiterentwicklung",
+        "value4Description": "Die digitale Welt bewegt sich ständig. Deshalb hinterfragen wir Bestehendes konsequent und entwickeln uns mit jedem Projekt weiter."
+      },
+      "approach": {
+        "eyebrow": "Unser Ansatz",
+        "title": "Wo andere Hindernisse sehen, entdecken wir Chancen.",
+        "description": "Durch intensive Zusammenarbeit verstehen wir deine individuellen Herausforderungen im Detail. Dieses Verständnis formt unseren ganzheitlichen Ansatz – von Analyse und strategischer Richtung bis zu Markenentwicklung und Projektumsetzung.",
+        "cta": "Unsere Leistungen"
+      },
+      "collaborate": {
+        "eyebrow": "Los geht's",
+        "title": "Wir sind dein Partner bei echten Herausforderungen und schaffen gemeinsam Ergebnisse, auf die du stolz sein kannst.",
+        "cta": "Lass uns zusammenarbeiten",
+        "ctaSubject": "Lass uns zusammenarbeiten"
+      }
+    }
+  }
+}

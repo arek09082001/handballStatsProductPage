@@ -1,0 +1,16 @@
+node_modules
+public
+build
+dist
+eslint.config.mjs
+.eslintrc.js
+.eslintignore
+.prettierrc.yml
+.prettierignore
+.gitignore
+postcss.config.mjs
+components/ui/*
+server.js
+web.config
+.next
+lib/utils.ts

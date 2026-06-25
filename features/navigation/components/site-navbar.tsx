@@ -1,0 +1,234 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { Menu, MessageCircle, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import ContactDialog from '@/components/custom-ui/contact-dialog';
+import { CLUB_CONFIG } from '@/lib/club-config';
+import { cn } from '@/lib/utils';
+import LanguageSwitcher from './language-switcher';
+import { siteNavigationItems } from '../config';
+import { useSiteNavbar } from '../hooks/use-site-navbar';
+
+export default function SiteNavbar() {
+  const t = useTranslations('navigationSection');
+  const {
+    isOpen,
+    isScrolled,
+    isScrollingUp,
+    toggleMenu,
+    closeMenu,
+    isActive,
+    handleBrandClick,
+  } = useSiteNavbar();
+
+  const isNavInFocus = isOpen || isScrollingUp || !isScrolled;
+
+  return (
+    <>
+      <nav
+        className={cn(
+          'fixed inset-x-0 top-0 z-50 flex justify-end px-4 pt-4 transition-transform duration-500 ease-out sm:px-6 lg:block lg:justify-start lg:translate-y-0',
+          isNavInFocus ? 'translate-y-0' : '-translate-y-1',
+        )}>
+        <div
+          className={cn(
+            'relative isolate ml-auto flex h-auto w-auto items-center justify-end gap-2 overflow-visible border-0 bg-transparent px-0 shadow-none transition-all duration-500 ease-out sm:gap-3 sm:px-0 lg:mx-auto lg:h-16 lg:w-auto lg:max-w-7xl lg:justify-normal lg:overflow-hidden lg:rounded-[28px] lg:border lg:px-8',
+            'lg:scale-100 lg:border-slate-200/85 lg:bg-white lg:shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] lg:backdrop-blur-none lg:supports-[backdrop-filter]:bg-white',
+            isNavInFocus
+              ? 'lg:bg-white/94 lg:shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] lg:backdrop-blur-[2px] lg:supports-[backdrop-filter]:bg-white/78'
+              : 'lg:border-white/55 lg:bg-white/72 lg:shadow-[0_20px_52px_-34px_rgba(15,23,42,0.38)] lg:backdrop-blur-[4px] lg:supports-[backdrop-filter]:bg-white/54',
+            !isNavInFocus && 'lg:scale-[0.95]',
+          )}>
+          <div
+            className={cn(
+              'pointer-events-none hidden absolute inset-0 transition-opacity duration-500 supports-[backdrop-filter]:backdrop-saturate-150 lg:hidden',
+              isNavInFocus
+                ? 'bg-[linear-gradient(180deg,rgba(255,255,255,0.72)_0%,rgba(255,255,255,0.36)_100%)] backdrop-blur-[2px]'
+                : 'bg-[linear-gradient(135deg,rgba(255,255,255,0.72)_0%,rgba(255,255,255,0.34)_40%,rgba(226,232,240,0.22)_100%)] backdrop-blur-[4px]',
+            )}
+          />
+
+          <div
+            className={cn(
+              'pointer-events-none hidden absolute inset-[1px] rounded-[27px] transition-opacity duration-500 lg:hidden',
+              isNavInFocus
+                ? 'opacity-75 bg-[linear-gradient(180deg,rgba(255,255,255,0.58)_0%,rgba(255,255,255,0.22)_100%)]'
+                : 'opacity-90 bg-[linear-gradient(135deg,rgba(255,255,255,0.74)_0%,rgba(255,255,255,0.36)_42%,rgba(203,213,225,0.16)_100%)]',
+            )}
+          />
+
+          <div className='relative z-10 hidden min-w-0 flex-1 lg:block lg:w-60 lg:flex-none'>
+            <button
+              type='button'
+              onClick={handleBrandClick}
+              className='flex max-w-[calc(100vw-7.5rem)] min-w-0 items-center gap-3 text-left transition-opacity hover:opacity-85 sm:max-w-[calc(100vw-9rem)] lg:max-w-none'>
+              <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#2563eb] shadow-[0_14px_30px_-18px_rgba(37,99,235,0.95)]'>
+                <Image
+                  src={CLUB_CONFIG.branding.logo.path}
+                  alt={CLUB_CONFIG.display.logoAlt}
+                  title={CLUB_CONFIG.display.logoAlt}
+                  fill
+                  sizes='44px'
+                  priority
+                  className='object-contain p-1.5'
+                />
+              </span>
+
+              <span className='min-w-0'>
+                <span className='block truncate text-sm font-semibold tracking-[-0.03em] text-slate-950 sm:text-lg'>
+                  {CLUB_CONFIG.name}
+                </span>
+                <span className='hidden truncate text-xs font-medium text-slate-500 sm:block'>
+                  {CLUB_CONFIG.display.brandTagline}
+                </span>
+              </span>
+            </button>
+          </div>
+
+          <div className='hidden flex-1 items-center justify-center lg:flex'>
+            <div className='flex items-center gap-1 rounded-full bg-slate-100/80 p-1'>
+              {siteNavigationItems.map((item) => (
+                <Link
+                  key={item.ident}
+                  href={item.href}
+                  title={t(`items.${item.labelKey}`)}
+                  aria-current={
+                    item.href.includes('#')
+                      ? undefined
+                      : isActive(item.href)
+                        ? 'page'
+                        : undefined
+                  }
+                  className={cn(
+                    'rounded-full px-3 py-2 text-sm font-medium tracking-[-0.01em] transition-colors',
+                    !item.href.includes('#') && isActive(item.href)
+                      ? 'bg-white text-slate-950 shadow-sm'
+                      : 'text-slate-500 hover:text-slate-900',
+                  )}>
+                  {t(`items.${item.labelKey}`)}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className='ml-auto hidden items-center justify-end gap-3 lg:flex lg:w-60'>
+            <LanguageSwitcher />
+            <ContactDialog
+              defaultSubject={t('contactDialogSubject')}
+              title={t('contactCta')}>
+              <button
+                type='button'
+                className='inline-flex h-11 items-center justify-center rounded-full bg-slate-950 px-5 text-sm font-semibold text-white transition-colors hover:bg-slate-800'>
+                {t('contactCta')}
+              </button>
+            </ContactDialog>
+          </div>
+
+          <button
+            type='button'
+            onClick={toggleMenu}
+            className={cn(
+              'relative z-10 ml-auto inline-flex size-11 shrink-0 items-center justify-center rounded-full border text-slate-700 transition-colors duration-300 hover:bg-slate-50 lg:hidden',
+              isNavInFocus
+                ? 'border-slate-200 bg-white'
+                : 'border-white/50 bg-white/72 supports-[backdrop-filter]:bg-white/56',
+            )}
+            aria-label={isOpen ? 'Menü schließen' : 'Menü öffnen'}
+            aria-expanded={isOpen}>
+            {isOpen ? <X className='size-5' /> : <Menu className='size-5' />}
+          </button>
+        </div>
+      </nav>
+
+      <div
+        className={cn(
+          'fixed inset-0 z-40 bg-slate-950/12 backdrop-blur-[1px] transition-opacity duration-200 lg:hidden',
+          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0',
+        )}
+        onClick={closeMenu}
+      />
+
+      <div
+        className={cn(
+          'fixed left-4 right-4 top-24 z-40 overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] transition-all duration-200 sm:left-6 sm:right-6 lg:hidden max-h-[calc(100vh-112px)]',
+          isOpen
+            ? 'translate-y-0 opacity-100'
+            : 'pointer-events-none -translate-y-2 opacity-0',
+        )}>
+        <div className='space-y-2 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
+          <button
+            type='button'
+            onClick={() => {
+              handleBrandClick();
+              closeMenu();
+            }}
+            className='flex w-full min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
+            <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#2563eb] shadow-[0_14px_30px_-18px_rgba(37,99,235,0.95)]'>
+              <Image
+                src={CLUB_CONFIG.branding.logo.path}
+                alt={CLUB_CONFIG.display.logoAlt}
+                title={CLUB_CONFIG.display.logoAlt}
+                fill
+                sizes='44px'
+                className='object-contain p-1.5'
+              />
+            </span>
+
+            <span className='min-w-0'>
+              <span className='block truncate text-base font-semibold tracking-[-0.03em] text-slate-950'>
+                {CLUB_CONFIG.name}
+              </span>
+              <span className='block truncate text-xs font-medium text-slate-500'>
+                {CLUB_CONFIG.display.brandTagline}
+              </span>
+            </span>
+          </button>
+
+          {siteNavigationItems.map((item) => (
+            <Link
+              key={item.ident}
+              href={item.href}
+              title={t(`items.${item.labelKey}`)}
+              onClick={closeMenu}
+              aria-current={
+                item.href.includes('#')
+                  ? undefined
+                  : isActive(item.href)
+                    ? 'page'
+                    : undefined
+              }
+              className={cn(
+                'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
+                !item.href.includes('#') && isActive(item.href)
+                  ? 'bg-slate-950 text-white'
+                  : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
+              )}>
+              <span>{t(`items.${item.labelKey}`)}</span>
+              {!item.href.includes('#') && isActive(item.href) && (
+                <span className='size-2 rounded-full bg-white' />
+              )}
+            </Link>
+          ))}
+
+          <ContactDialog
+            defaultSubject={t('contactDialogSubject')}
+            title={t('contactCta')}>
+            <button
+              type='button'
+              onClick={closeMenu}
+              className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#2563eb] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1d4ed8]'>
+              <MessageCircle className='size-4' />
+              {t('contactCta')}
+            </button>
+          </ContactDialog>
+
+          <div className='flex justify-center pt-2'>
+            <LanguageSwitcher onLocaleChange={closeMenu} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

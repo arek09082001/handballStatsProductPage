@@ -1,0 +1,1075 @@
+# AVIOR CRM - Code Standards and Project Structure Guide
+
+## Table of Contents
+1. [General Project Structure](#general-project-structure)
+2. [Naming Conventions](#naming-conventions)
+3. [Component Architecture](#component-architecture)
+4. [Feature Organization](#feature-organization)
+5. [Data Fetching & State Management](#data-fetching--state-management)
+6. [API Layer](#api-layer)
+7. [Next.js API Routes](#nextjs-api-routes)
+8. [TypeScript Standards](#typescript-standards)
+9. [Error Handling](#error-handling)
+10. [UI/UX Standards](#uiux-standards)
+11. [Internationalization](#internationalization)
+12. [Development Workflow](#development-workflow)
+
+---
+
+## General Project Structure
+
+### Root Directory Organization
+```
+projectName/
+├── app/                          # Next.js 15 App Router (Pages & Layouts)
+│   ├── (auth)/                   # Route groups for authenticated pages
+│   ├── api/                      # API routes (Next.js App Router)
+│   │   ├── auth/                 # Authentication endpoints
+│   │   ├── teams/                # Team management endpoints
+│   │   ├── organisations/        # Organisation endpoints
+│   │   └── [feature]/            # Feature-specific API routes
+│   │       ├── route.ts          # GET, POST, PUT, DELETE handlers
+│   │       └── [id]/             # Dynamic route segments
+│   │           └── route.ts      # Individual resource operations
+│   ├── globals.css               # Global styles
+│   ├── layout.tsx                # Root layout
+│   └── page.tsx                  # Home page
+├── components/                   # Reusable UI components
+│   ├── custom-ui/                # Project-specific components
+│   ├── forms/                    # Form-related components
+│   ├── ui/                       # Base UI components (shadcn/ui)
+│   └── wrapper/                  # Provider wrapper components
+├── features/                     # Feature-based modules
+│   ├── [feature-name]/           # Individual feature modules
+│   │   ├── components/           # Feature-specific components
+│   │   ├── hooks/                # Feature-specific hooks
+│   │   └── pages/                # Feature page components
+├── hooks/                        # Global custom hooks
+├── lib/                          # Core utilities and configurations
+│   ├── api/                      # API layer and interfaces
+│   ├── authentication/           # Auth configuration
+│   ├── hooks/                    # Global data hooks
+│   └── utils/                    # Utility functions
+├── messages/                     # Internationalization files
+│   ├── en.json                   # English translations
+│   └── de.json                   # German translations
+└── public/                       # Static assets
+```
+
+### Key Architectural Principles
+- **Feature-Based Organization**: Each domain (organizations, contacts, teams) has its own feature folder
+- **Separation of Concerns**: UI components, business logic, and data fetching are separated
+- **Reusability**: Common components and utilities are shared across features
+- **Type Safety**: Full TypeScript coverage with strict typing
+
+---
+
+## Naming Conventions
+
+### File and Folder Naming
+- **Folders**: `kebab-case` for all directories
+  - ✅ `postal-addresses`, `team-management`, `custom-ui`
+  - ❌ `PostalAddresses`, `teamManagement`
+
+- **File Names**: `kebab-case` for all file names
+  - ✅ `section-title-description.tsx`, `postal-address-form.tsx`, `use-team-members.tsx`
+  - ❌ `SectionTitleDescription.tsx`, `PostalAddressForm.tsx`, `useTeamMembers.tsx`
+
+- **React Components**: Export names use `PascalCase`, but file names use `kebab-case`
+  - ✅ `section-title-description.tsx` exports `SectionTitleDescription`
+  - ❌ `SectionTitleDescription.tsx` or `sectionTitleDescription` export
+
+- **Hooks**: File names `kebab-case` starting with "use-", export names `camelCase`
+  - ✅ `use-grid-layout-store.tsx` exports `useGridLayoutStore`
+  - ❌ `UseGridLayout.tsx` or `team-members-hook.tsx`
+
+- **Utilities and Configs**: `kebab-case` for all utility and configuration files
+  - ✅ `form-config.tsx`, `error-boundary.tsx`, `auth-config.tsx`
+  - ❌ `FormConfig.tsx`, `ErrorBoundary.tsx`, `AuthConfig.tsx`
+
+- **API Interfaces**: `kebab-case` for files, `PascalCase` for interface names
+  - ✅ `team-role.tsx` with `interface TeamRole`
+  - ❌ `TeamRole.tsx` or `interface teamRole`
+
+- **API Routes**: `kebab-case` for route directories, `route.ts` for handlers
+  - ✅ `app/api/team-management/route.ts`, `app/api/postal-addresses/[id]/route.ts`
+  - ❌ `app/api/TeamManagement/route.ts`, `app/api/postalAddresses/[id]/route.ts`
+
+### File Extensions
+- **React Components, Hooks, and JSX-related files**: Always use `.tsx`
+  - ✅ All components, custom hooks, context providers, higher-order components
+  - ✅ `section-title-description.tsx`, `use-team-members.tsx`, `error-boundary.tsx`
+
+- **Pure TypeScript files**: Use `.ts` only for files without JSX/React
+  - ✅ API routes (`route.ts`), pure utility functions, type-only files
+  - ✅ `app/api/teams/route.ts`, `constants.ts`, `types.ts`
+
+- **Configuration files**: Use `.tsx` for most project files to maintain consistency
+  - ✅ `form-config.tsx`, `auth-config.tsx`
+
+### Variable and Function Naming
+- **Variables**: `camelCase`
+  - ✅ `organisationId`, `teamMemberData`, `isLoading`
+  - ❌ `organisation_id`, `TeamMemberData`
+
+- **Functions**: `camelCase` with descriptive verbs
+  - ✅ `fetchTeamMembers`, `validateFormData`, `handleSubmit`
+  - ❌ `getTeamMembers`, `validate`, `submit`
+
+- **Constants**: `UPPER_SNAKE_CASE`
+  - ✅ `CONFIGURATION_OBJECTS`, `FILTER_KEY`
+  - ❌ `configurationObjects`, `filterKey`
+
+- **API Parameters**: Prefixed with `p` in Hungarian notation
+  - ✅ `pId`, `pOrganisationId`, `pTeamMember`
+  - ❌ `id`, `organisationId`, `teamMember`
+
+---
+
+## Component Architecture
+
+### Component Structure Standards
+All React components follow these patterns:
+
+```tsx
+'use client'; // For client components only
+
+import { useState, useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
+import { toast } from 'sonner';
+
+// External library imports
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+
+// Internal component imports
+import SectionTitleDescription from '@/components/custom-ui/section-title-description';
+import ErrorBoundary from '@/lib/utils/error-boundary';
+
+// Hook imports
+import useTeamMembers from '@/lib/hooks/use-team-members';
+
+// Type imports
+import { TeamMember } from '@/lib/api/interfaces/team';
+
+interface ComponentProperties {
+  organisationId: string;
+  onUpdate?: (data: TeamMember) => void;
+}
+
+export default function ComponentName({ 
+  organisationId,
+  onUpdate 
+}: ComponentProperties) {
+  const t = useTranslations('teamMembers');
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const { teamMembers, isError, refetch } = useTeamMembers(organisationId);
+
+  const handleSubmit = useCallback(async (data: TeamMember) => {
+    try {
+      setIsLoading(true);
+      // Business logic here
+      onUpdate?.(data);
+      toast.success(t('successMessage'));
+    } catch (error) {
+      toast.error(t('errorMessage'));
+    } finally {
+      setIsLoading(false);
+    }
+  }, [onUpdate, t]);
+
+  if (isError) {
+    return <ErrorComponent onRetry={refetch} />;
+  }
+
+  return (
+    <Card className="p-6">
+      <SectionTitleDescription
+        title={t('title')}
+        description={t('description')}
+      />
+      {/* Component JSX */}
+    </Card>
+  );
+}
+```
+
+### Component Types
+1. **Page Components**: Located in `features/[feature]/pages/`
+   - Handle route-level logic and layout
+   - Combine multiple feature components
+   - Example: `PostalAddressesPage`
+
+2. **Feature Components**: Located in `features/[feature]/components/`
+   - Domain-specific business logic
+   - Reusable within the feature
+   - Example: `TeamAssignment`, `PostalAddressForm`
+
+3. **UI Components**: Located in `components/ui/`
+   - Pure presentation components
+   - No business logic
+   - Example: `Button`, `Card`, `Dialog`
+
+4. **Custom UI Components**: Located in `components/custom-ui/`
+   - Project-specific reusable components
+   - May contain business logic
+   - Example: `SectionTitleDescription`, `LoadingButton`
+
+---
+
+## Feature Organization
+
+### Feature Folder Structure
+Each feature follows a consistent structure:
+
+```
+features/[feature-name]/
+├── components/
+│   ├── forms/           # Form components
+│   ├── tables/          # Data display components
+│   └── cards/           # Card-style components
+├── hooks/               # Feature-specific hooks
+├── pages/               # Page-level components
+└── interfaces.tsx       # Feature-specific types
+```
+
+### Page Component Pattern
+Pages in the `/app` directory are minimal and delegate to feature components:
+
+```tsx
+// app/(auth)/organisations/page.tsx
+import OrganisationsPage from '@/features/organisations/pages/organisations-page';
+
+export default function Page() {
+  return <OrganisationsPage />;
+}
+```
+
+### Feature Component Integration
+Feature components are composed to build complete pages:
+
+```tsx
+// features/organisations/pages/organisations-page.tsx
+export default function OrganisationsPage() {
+  return (
+    <div className="flex flex-col gap-6">
+      <OrganisationHeader />
+      <OrganisationFilters />
+      <OrganisationTable />
+      <OrganisationDialog />
+    </div>
+  );
+}
+```
+
+---
+
+## Data Fetching & State Management
+
+### React Query Pattern
+All data fetching uses TanStack Query with consistent patterns:
+
+```tsx
+// lib/hooks/use-team-members.tsx
+import { useQuery, useMutation, UseQueryResult } from '@tanstack/react-query';
+import LiveApi from '@/lib/api/live-api';
+
+const FILTER_KEY = 'team-members';
+
+// Fetch hook pattern
+const useTeamMembersGet = (pTeamId?: string): UseQueryResult<TeamMember[], unknown> => {
+  const filter = useFilterStore((state) => state.getFilter(FILTER_KEY));
+  
+  return useQuery<TeamMember[]>({
+    queryKey: [FILTER_KEY, pTeamId, filter],
+    queryFn: async () => {
+      if (!pTeamId) {
+        throw new Error('Team ID is required');
+      }
+      return await LiveApi.getTeamMembers(pTeamId, filter);
+    },
+    enabled: !!pTeamId,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
+  });
+};
+
+// Mutation hook pattern
+const useUpdateTeamMembers = (): UseMutationResult<
+  TeamMember[],
+  unknown,
+  { pTeamId: string; pTeamMembers: TeamMembersBody },
+  unknown
+> => {
+  return useMutation({
+    mutationFn: async (variables: {
+      pTeamId: string;
+      pTeamMembers: TeamMembersBody;
+    }) => {
+      return await LiveApi.updateTeamMembers(
+        variables.pTeamId,
+        variables.pTeamMembers,
+      );
+    },
+  });
+};
+
+// Export pattern with custom hook wrapper
+export const useTeamMembers = (pTeamId?: string) => {
+  const {
+    data: teamMembers,
+    isLoading,
+    isError,
+    refetch,
+  } = useTeamMembersGet(pTeamId);
+
+  const { mutateAsync: updateTeamMembers, isPending: updatePending } = useUpdateTeamMembers();
+
+  return {
+    teamMembers,
+    isLoading,
+    isError,
+    refetch,
+    updateTeamMembers,
+    updatePending,
+  };
+};
+```
+
+### State Management Patterns
+1. **Server State**: React Query for API data
+2. **Client State**: Zustand for global app state
+3. **Form State**: React Hook Form for form management
+4. **Component State**: useState for local component state
+
+### Query Key Patterns
+- Use consistent naming: `[FILTER_KEY, ...params, filter]`
+- Include all dependencies that affect the query
+- Use the same key for invalidation
+
+---
+
+## API Layer
+
+### API Structure
+The API layer is centralized in `lib/api/live-api.tsx`:
+
+```tsx
+export default class LiveApi extends AzureApi {
+  // CRUD pattern for each entity
+  public static async getTeams(pFilter?: Record<string, string>): Promise<Team[]> {
+    const response = (await this._GET('dynamic/teams', pFilter)) as Team[];
+    if (Array.isArray(response)) {
+      return defaultResponseParser(response) as Team[];
+    }
+    throw new Error('Unexpected response Type');
+  }
+
+  public static async getTeam(pId: string): Promise<Team> {
+    const response = (await this._GET(`dynamic/teams/${pId}`)) as Team[];
+    if (Array.isArray(response)) {
+      return (defaultResponseParser(response) as Team[])[0];
+    }
+    throw new Error('Unexpected response Type');
+  }
+
+  public static async createTeam(pBody: TeamBody): Promise<Team> {
+    const response = (await this._POST(
+      'dynamic/teams',
+      pBody as unknown as BodyInit,
+    )) as Team[];
+    if (Array.isArray(response)) {
+      return (defaultResponseParser(response) as Team[])[0];
+    }
+    throw new Error('Unexpected response Type');
+  }
+
+  public static async updateTeam(pId: string, pBody: TeamBody): Promise<Team> {
+    const response = (await this._PUT(
+      `dynamic/teams/${pId}`,
+      pBody as unknown as BodyInit,
+    )) as Team[];
+    if (Array.isArray(response)) {
+      return (defaultResponseParser(response) as Team[])[0];
+    }
+    throw new Error('Unexpected response Type');
+  }
+
+  public static async deleteTeam(pId: string): Promise<void> {
+    await this._DELETE(`dynamic/teams/${pId}`);
+  }
+}
+```
+
+### API Interface Patterns
+All API interfaces follow consistent patterns:
+
+```tsx
+// lib/api/interfaces/team.tsx
+import Base from './base';
+
+export interface Team extends Base {
+  Code: string;
+  Description: string;
+  Comment: string;
+  IsActive: 0 | 1;
+  TeamTypeId: string;
+  // Additional computed properties from joins
+  TeamTypeCode?: string;
+  TeamTypeDescription?: string;
+}
+
+export interface TeamBody {
+  p_Code: string;
+  p_Description: string;
+  p_TeamTypeId: string;
+  p_Comment?: string;
+  p_IsActive?: boolean;
+}
+```
+
+### API Response Handling
+- All responses are parsed through `defaultResponseParser`
+- Consistent error handling with typed responses
+- Array responses are validated before processing
+
+---
+
+## Next.js API Routes
+
+### API Route Organization
+API routes in the `app/api` directory follow RESTful conventions and feature-based organization:
+
+```
+app/api/
+├── auth/
+│   ├── login/
+│   │   └── route.ts          # POST /api/auth/login
+│   ├── logout/
+│   │   └── route.ts          # POST /api/auth/logout
+│   └── refresh/
+│       └── route.ts          # POST /api/auth/refresh
+├── teams/
+│   ├── route.ts              # GET /api/teams, POST /api/teams
+│   ├── [id]/
+│   │   ├── route.ts          # GET /api/teams/[id], PUT /api/teams/[id], DELETE /api/teams/[id]
+│   │   └── members/
+│   │       └── route.ts      # GET /api/teams/[id]/members, PUT /api/teams/[id]/members
+├── organisations/
+│   ├── route.ts              # GET /api/organisations, POST /api/organisations
+│   ├── [id]/
+│   │   ├── route.ts          # GET /api/organisations/[id], PUT /api/organisations/[id], DELETE /api/organisations/[id]
+│   │   ├── contacts/
+│   │   │   └── route.ts      # GET /api/organisations/[id]/contacts, POST /api/organisations/[id]/contacts
+│   │   └── addresses/
+│   │       └── route.ts      # GET /api/organisations/[id]/addresses, POST /api/organisations/[id]/addresses
+└── [feature]/
+    ├── route.ts              # Collection endpoints
+    └── [id]/
+        └── route.ts          # Resource-specific endpoints
+```
+
+### API Route Implementation Standards
+All API routes follow consistent patterns using Next.js App Router conventions:
+
+```ts
+// app/api/teams/route.ts
+import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+import { withAuth } from '@/lib/api/middleware/auth';
+import { handleApiError } from '@/lib/api/utils/error-handler';
+import LiveApi from '@/lib/api/live-api';
+import { Team, TeamBody } from '@/lib/api/interfaces/team';
+
+// Request validation schemas
+const CreateTeamSchema = z.object({
+  Code: z.string().min(1),
+  Description: z.string().min(1),
+  TeamTypeId: z.string().uuid(),
+  Comment: z.string().optional(),
+  IsActive: z.boolean().optional().default(true),
+});
+
+const GetTeamsQuerySchema = z.object({
+  page: z.coerce.number().min(1).optional(),
+  limit: z.coerce.number().min(1).max(100).optional(),
+  search: z.string().optional(),
+  isActive: z.coerce.boolean().optional(),
+});
+
+// GET /api/teams - Fetch teams with filtering
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const queryParams = Object.fromEntries(searchParams);
+    
+    // Validate query parameters
+    const validatedQuery = GetTeamsQuerySchema.parse(queryParams);
+    
+    // Build filter object for API call
+    const filter: Record<string, string> = {};
+    if (validatedQuery.search) filter.search = validatedQuery.search;
+    if (validatedQuery.isActive !== undefined) filter.isActive = String(validatedQuery.isActive);
+    if (validatedQuery.page) filter.page = String(validatedQuery.page);
+    if (validatedQuery.limit) filter.limit = String(validatedQuery.limit);
+
+    const teams = await LiveApi.getTeams(filter);
+
+    return NextResponse.json({
+      success: true,
+      data: teams,
+      meta: {
+        page: validatedQuery.page || 1,
+        limit: validatedQuery.limit || 20,
+      },
+    });
+  } catch (error) {
+    return handleApiError(error);
+  }
+}
+
+// POST /api/teams - Create new team
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const validatedData = CreateTeamSchema.parse(body);
+
+    const teamBody: TeamBody = {
+      p_Code: validatedData.Code,
+      p_Description: validatedData.Description,
+      p_TeamTypeId: validatedData.TeamTypeId,
+      p_Comment: validatedData.Comment,
+      p_IsActive: validatedData.IsActive,
+    };
+
+    const createdTeam = await LiveApi.createTeam(teamBody);
+
+    return NextResponse.json({
+      success: true,
+      data: createdTeam,
+      message: 'Team created successfully',
+    }, { status: 201 });
+  } catch (error) {
+    return handleApiError(error);
+  }
+}
+```
+
+```ts
+// app/api/teams/[id]/route.ts
+import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
+import { handleApiError } from '@/lib/api/utils/error-handler';
+import LiveApi from '@/lib/api/live-api';
+import { TeamBody } from '@/lib/api/interfaces/team';
+
+const UpdateTeamSchema = z.object({
+  Code: z.string().min(1).optional(),
+  Description: z.string().min(1).optional(),
+  TeamTypeId: z.string().uuid().optional(),
+  Comment: z.string().optional(),
+  IsActive: z.boolean().optional(),
+});
+
+// GET /api/teams/[id] - Fetch single team
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  try {
+    const team = await LiveApi.getTeam(params.id);
+    
+    return NextResponse.json({
+      success: true,
+      data: team,
+    });
+  } catch (error) {
+    return handleApiError(error);
+  }
+}
+
+// PUT /api/teams/[id] - Update team
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  try {
+    const body = await request.json();
+    const validatedData = UpdateTeamSchema.parse(body);
+
+    // Only include provided fields in the update
+    const teamBody: Partial<TeamBody> = {};
+    if (validatedData.Code) teamBody.p_Code = validatedData.Code;
+    if (validatedData.Description) teamBody.p_Description = validatedData.Description;
+    if (validatedData.TeamTypeId) teamBody.p_TeamTypeId = validatedData.TeamTypeId;
+    if (validatedData.Comment !== undefined) teamBody.p_Comment = validatedData.Comment;
+    if (validatedData.IsActive !== undefined) teamBody.p_IsActive = validatedData.IsActive;
+
+    const updatedTeam = await LiveApi.updateTeam(params.id, teamBody as TeamBody);
+
+    return NextResponse.json({
+      success: true,
+      data: updatedTeam,
+      message: 'Team updated successfully',
+    });
+  } catch (error) {
+    return handleApiError(error);
+  }
+}
+
+// DELETE /api/teams/[id] - Delete team
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  try {
+    await LiveApi.deleteTeam(params.id);
+
+    return NextResponse.json({
+      success: true,
+      message: 'Team deleted successfully',
+    });
+  } catch (error) {
+    return handleApiError(error);
+  }
+}
+```
+
+### API Middleware and Utilities
+Create reusable middleware and utilities for common API functionality:
+
+```ts
+// lib/api/middleware/auth.tsx
+import { NextRequest, NextResponse } from 'next/server';
+import { verifyToken } from '@/lib/authentication/token-utils';
+
+export function withAuth(handler: Function) {
+  return async (request: NextRequest, ...args: any[]) => {
+    try {
+      const token = request.headers.get('authorization')?.replace('Bearer ', '');
+      
+      if (!token) {
+        return NextResponse.json(
+          { success: false, error: 'Authentication required' },
+          { status: 401 }
+        );
+      }
+
+      const user = await verifyToken(token);
+      
+      // Add user context to request
+      (request as any).user = user;
+      
+      return handler(request, ...args);
+    } catch (error) {
+      return NextResponse.json(
+        { success: false, error: 'Invalid authentication' },
+        { status: 401 }
+      );
+    }
+  };
+}
+```
+
+```ts
+// lib/api/utils/error-handler.tsx
+import { NextResponse } from 'next/server';
+import { ZodError } from 'zod';
+
+export function handleApiError(error: unknown) {
+  console.error('API Error:', error);
+
+  // Zod validation errors
+  if (error instanceof ZodError) {
+    return NextResponse.json(
+      {
+        success: false,
+        error: 'Validation failed',
+        details: error.errors.map(err => ({
+          field: err.path.join('.'),
+          message: err.message,
+        })),
+      },
+      { status: 400 }
+    );
+  }
+
+  // Known API errors
+  if (error instanceof Error) {
+    if (error.message.includes('not found')) {
+      return NextResponse.json(
+        { success: false, error: 'Resource not found' },
+        { status: 404 }
+      );
+    }
+    
+    if (error.message.includes('Unauthorized')) {
+      return NextResponse.json(
+        { success: false, error: 'Unauthorized access' },
+        { status: 401 }
+      );
+    }
+  }
+
+  // Generic server error
+  return NextResponse.json(
+    { success: false, error: 'Internal server error' },
+    { status: 500 }
+  );
+}
+```
+
+### API Response Patterns
+All API responses follow consistent JSON structure:
+
+```ts
+// Success responses
+{
+  success: true,
+  data: T,                    // Single resource or array
+  meta?: {                    // Optional metadata for lists
+    page: number,
+    limit: number,
+    total?: number,
+  },
+  message?: string,           // Optional success message
+}
+
+// Error responses
+{
+  success: false,
+  error: string,              // Error message
+  details?: Array<{           // Validation errors
+    field: string,
+    message: string,
+  }>,
+}
+```
+
+### Integration with Frontend
+Update React Query hooks to use API routes when available:
+
+```tsx
+// lib/hooks/use-teams.tsx
+import { useQuery, useMutation, UseQueryResult } from '@tanstack/react-query';
+
+const API_BASE = '/api';
+
+// Use API routes for client-side data fetching
+const useTeamsGet = (): UseQueryResult<Team[], unknown> => {
+  return useQuery<Team[]>({
+    queryKey: ['teams'],
+    queryFn: async () => {
+      const response = await fetch(`${API_BASE}/teams`);
+      const result = await response.json();
+      
+      if (!result.success) {
+        throw new Error(result.error);
+      }
+      
+      return result.data;
+    },
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
+  });
+};
+
+// For server-side rendering, continue using LiveApi directly
+const useTeamsSSR = async (): Promise<Team[]> => {
+  return await LiveApi.getTeams();
+};
+```
+
+---
+
+## TypeScript Standards
+
+### Interface Design Patterns
+1. **Entity Interfaces**: Extend `Base` interface
+2. **Request Bodies**: Separate interfaces with `p_` prefixed properties
+3. **Form Data**: Separate interfaces for form-specific data shapes
+4. **Component Props**: Inline interfaces for simple props, separate for complex ones
+
+### Type Safety Standards
+```tsx
+// Strict typing for all function parameters and returns
+interface FormConfig<T> {
+  suggestionsPath: string;
+  fields: Array<FormFieldConfig<T>>;
+}
+
+interface FormFieldConfig<T> {
+  name: Path<T>;
+  type: FieldType;
+  label: string;
+  required?: boolean;
+  validation?: (translator: TranslationFunction) => ZodSchema;
+  className?: string;
+  delay?: number;
+}
+
+// Union types for specific values
+type FieldType = 
+  | 'text' 
+  | 'textarea' 
+  | 'date' 
+  | 'select' 
+  | 'number' 
+  | 'checkbox' 
+  | 'country' 
+  | 'region';
+
+// Generic typing for reusable components
+interface WizardStepConfig<T> {
+  id: string;
+  title: string;
+  component: React.ComponentType<{
+    wizardData: T;
+    updateWizardData: (data: Partial<T>) => void;
+  }>;
+  validate?: (data: T) => boolean;
+}
+```
+
+### Validation with Zod
+All form validation uses Zod schemas:
+
+```tsx
+const schema = z.object({
+  Code: z.string().min(1, t('errorMessages.cannotBeEmpty', { field: 'Code' })),
+  Description: z.string().min(1, t('errorMessages.cannotBeEmpty', { field: 'Description' })),
+  IsActive: z.boolean(),
+});
+
+type FormData = z.infer<typeof schema>;
+```
+
+---
+
+## Error Handling
+
+### Error Handling Patterns
+1. **API Errors**: Caught in mutation hooks and displayed via toast
+2. **Component Errors**: Error boundaries for graceful degradation
+3. **Form Errors**: Zod validation with translated messages
+4. **Network Errors**: Retry mechanisms with user feedback
+
+### Error Display Standards
+```tsx
+// Toast notifications for user actions
+try {
+  await createTeam({ pTeam: teamData });
+  toast.success(t('successfullCreate', { placeholder: 'Team' }));
+} catch (error) {
+  toast.error(t('errorMessages.errorOnCreate'));
+  throw error;
+}
+
+// Error boundaries for component failures
+<ErrorBoundary
+  fallBackComponent={
+    <Button
+      variant='destructive'
+      className='h-10 w-full'
+      onClick={(e) => {
+        e.preventDefault();
+        void refetch();
+      }}>
+      {t('common.tryAgain')}
+    </Button>
+  }
+  error={isError}>
+  <ComponentContent />
+</ErrorBoundary>
+```
+
+### Error Message Internationalization
+All error messages are internationalized:
+
+```json
+// messages/en.json
+{
+  "errorMessages": {
+    "cannotBeEmpty": "{field} cannot be empty",
+    "errorOnCreate": "Error occurred during creation",
+    "errorOnUpdate": "Error occurred during update",
+    "errorOnDelete": "Error occurred during deletion"
+  }
+}
+```
+
+---
+
+## UI/UX Standards
+
+### Design System
+- **Base**: shadcn/ui components as foundation
+- **Customization**: Extended components in `components/custom-ui/`
+- **Styling**: Tailwind CSS with consistent utility patterns
+- **Animations**: Framer Motion for smooth interactions
+
+### Layout Patterns
+```tsx
+// Standard page layout
+<div className='flex flex-col gap-3 h-full'>
+  <SectionTitleDescription
+    icon={<MapPinned size={28} />}
+    title={t('title')}
+    description={t('titleDescription')}
+    withSeparator
+  />
+  <div className='flex justify-between items-center'>
+    <FilterControls />
+    <ActionButtons />
+  </div>
+  <MainContent />
+</div>
+```
+
+### Component Styling Standards
+- Use Tailwind utility classes
+- Consistent spacing: `gap-3`, `gap-6` for different hierarchies
+- Responsive design with mobile-first approach
+- Dark mode support through CSS variables
+
+### Animation Guidelines
+```tsx
+// Consistent animation delays
+import { animationDelay } from '@/lib/constants';
+
+// Staggered animations for lists
+delay: animationDelay * index
+
+// Motion components for page transitions
+<motion.div
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+>
+```
+
+---
+
+## Internationalization
+
+### Translation Structure
+Messages are organized by feature and component:
+
+```json
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "teamMembers": {
+    "title": "Team Members",
+    "titleDescription": "Manage team member assignments and roles",
+    "successfullCreate": "Team member added successfully",
+    "successfullUpdate": "Team member updated successfully"
+  }
+}
+```
+
+### Translation Usage Patterns
+```tsx
+// Feature-specific translations
+const t = useTranslations('teamMembers');
+
+// Common translations
+const tCommon = useTranslations('common');
+
+// Error translations
+const tError = useTranslations('errorMessages');
+
+// Usage with interpolation
+t('successfullCreate', { placeholder: 'Team Member' })
+```
+
+### Supported Languages
+- English (en) - Primary
+- German (de) - Secondary
+
+---
+
+## Development Workflow
+
+### Code Quality Tools
+- **ESLint**: Airbnb config with React and TypeScript rules
+- **Prettier**: Code formatting with 2-space indentation
+- **TypeScript**: Strict mode with comprehensive type checking
+- **Husky**: Pre-commit hooks for code quality
+
+### Development Scripts
+```json
+{
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "lint": "next lint",
+  "lint-fix": "eslint --quiet --fix",
+  "check-types": "tsc --pretty --noEmit",
+  "format": "prettier --write .",
+  "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
+}
+```
+
+### VS Code Configuration
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.tabSize": 2,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname} - Page",
+    "**/app/**/layout.tsx": "${dirname} - Layout",
+    "**/components/**/index.tsx": "${dirname} - Component"
+  }
+}
+```
+
+### Git Workflow
+- Feature branches from main
+- Descriptive commit messages
+- Pull request reviews required
+- Automated CI/CD pipeline
+
+### Environment Standards
+- Node.js with npm
+- Next.js 15 with App Router
+- TypeScript strict mode
+- Tailwind CSS for styling
+
+---
+
+## Best Practices Summary
+
+### Performance
+- Use React Query for efficient data fetching and caching
+- Implement proper loading states and error boundaries
+- Lazy load heavy components and features
+- Optimize bundle size with proper imports
+
+### Security
+- Type-safe API interactions
+- Input validation with Zod schemas
+- Secure authentication with MSAL
+- Proper error handling without exposing sensitive data
+
+### Maintainability
+- Consistent file and folder organization
+- Comprehensive TypeScript typing
+- Reusable component patterns
+- Clear separation of concerns
+
+### Scalability
+- Feature-based architecture
+- Modular component design
+- Centralized configuration and utilities
+- Internationalization support
+
+This document serves as the definitive guide for all development work on the AVIOR CRM project. All new code should follow these established patterns and standards to maintain consistency and quality across the application.

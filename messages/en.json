@@ -1,0 +1,622 @@
+{
+  "heroSection": {
+    "eyebrow": "Digital Growth Partners",
+    "headlineLine1": "Turn Your Website",
+    "headlinePrefix": "into a",
+    "headlineHighlight1": "Customer",
+    "headlineHighlight2": "Magnet",
+    "description": "If you want to have a website built, we create tailored websites for companies, tradespeople, and service providers that build trust, become visible on Google, and turn visitors into real enquiries.",
+    "primaryCta": "Start a Project",
+    "primarySubject": "New website or relaunch enquiry",
+    "secondaryCta": "Get a Free Website Analysis",
+    "secondarySubject": "Free website analysis enquiry",
+    "trustItem1": "100% Custom Design",
+    "trustItem2": "Visible on Google",
+    "trustItem3": "Fast Loading",
+    "imageAlt": "Website dashboard preview",
+    "loop0line2": "into a Customer",
+    "loop0line3": "Customer Magnet.",
+    "loop1line2": "into your personal",
+    "loop1line3": "Business Card.",
+    "loop2line2": "into your digital",
+    "loop2line3": "Growth Engine.",
+    "loop3line2": "into your own",
+    "loop3line3": "Sales Channel."
+  },
+  "transformationSection": {
+    "eyebrow": "The Transformation",
+    "title": "Before & After Website Redesign",
+    "description": "See how modern design and clear paths to contact turn an outdated site into an enquiry-generating machine.",
+    "beforeLabel": "Before Redesign",
+    "afterLabel": "After Redesign",
+    "beforeImageAlt": "Outdated website design before redesign",
+    "afterImageAlt": "Modern website design after redesign",
+    "beforePoint1": "Cluttered navigation confuses visitors.",
+    "beforePoint2": "No clear next step like 'Get in touch' visible on the page.",
+    "beforePoint3": "Outdated visuals weaken trust and reduce enquiries.",
+    "afterPoint1": "Clear headline and value proposition hook users fast.",
+    "afterPoint2": "Well-placed buttons like 'Get in touch' guide visitors to take action.",
+    "afterPoint3": "Modern visual language increases trust and quality signal."
+  },
+  "performanceAuditSection": {
+    "eyebrow": "Website Check",
+    "title": "Why Your Current Site is Invisible to Google",
+    "description": "A pretty website is useless if nobody can find it. We identify and fix the hidden technical issues that are actively sabotaging your search engine rankings and turning away local customers.",
+    "issue1Title": "Slow Loading Speeds",
+    "issue1Description": "53% of mobile users abandon sites that take over 3 seconds to load. Google actively penalizes slow sites.",
+    "issue2Title": "Not Mobile-Friendly",
+    "issue2Description": "With 60% of local searches happening on phones, a site that doesn't work well on mobile costs you real enquiries.",
+    "issue3Title": "Missing Google Basics",
+    "issue3Description": "Improper headings, missing page descriptions for Google, and poor page addresses confuse search engines.",
+    "scoreTitle": "Average Competitor Score",
+    "scoreSubtitle": "Most local businesses fail basic search engine optimisation",
+    "metricPerformance": "Speed",
+    "metricAccessibility": "Accessibility",
+    "metricBestPractices": "Best Practices",
+    "metricSeo": "SEO"
+  },
+  "whyUsSection": {
+    "eyebrow": "Why Work With Us",
+    "title": "Websites Built for Business Growth",
+    "description": "We don't just build digital brochures. We build websites that <roi>measurably generate more enquiries</roi> for your local business.",
+    "card1Title": "More Real Enquiries",
+    "card1Description": "Thoughtful page layouts and targeted persuasion elements guide visitors naturally toward contacting you. Better enquiries, more closed deals.",
+    "card2Title": "Dominate Local Visibility",
+    "card2Description": "Built from the ground up so Google understands exactly what you offer and where you should be found.",
+    "card3Title": "Instant Brand Trust",
+    "card3Description": "First impressions matter. A premium, modern design signals professionalism and reliability, making prospects choose you over the cheaper option."
+  },
+  "commonQuestionsSection": {
+    "bannerTitle": "Let us review your site's enquiry potential.",
+    "bannerDescription": "If your site already has visitors, we look at clarity, trust, Google visibility, and paths to contact. You get concrete next steps instead of vague advice.",
+    "bannerCta": "Request Analysis",
+    "contactSubject": "Free website analysis enquiry",
+    "contactTitle": "Get a Free Website Analysis",
+    "eyebrow": "Common Questions",
+    "title": "Still not sure if it's the right time?",
+    "description": "We know that investing in a new website is a big decision. Here are honest answers to the questions that come up most often before a project starts.",
+    "imageAlt": "Placeholder image for common questions section",
+    "q1Title": "Isn't a custom website too expensive for a small business?",
+    "q1Description": "Think of it as an investment, not an expense. A site that generates just 2-3 extra clients a month quickly pays for itself. We offer scalable packages designed specifically for local business budgets, focusing on features that actually drive revenue rather than unnecessary bells and whistles.",
+    "q2Title": "Will this take up a lot of my time? I'm busy running my business.",
+    "q2Description": "Our streamlined process requires minimal input from you. After an initial conversation, we handle the structure, copy, design, and development efficiently for you.",
+    "q3Title": "I'm not technical. How will I update the site later?",
+    "q3Description": "We build on user-friendly systems and give you clear guidance for updates. If you prefer, we can also handle future changes for you as part of ongoing maintenance."
+  },
+  "costOfOutdatedWebsiteSection": {
+    "eyebrow": "Outdated Website",
+    "title": "The Cost of an Outdated Website",
+    "description": "Your website is your 24/7 salesperson. If it's slow, confusing, or hard to find, you're handing customers to your competitors.",
+    "oldWayTitle": "The Old Way",
+    "newWayTitle": "The Weiss Webdesign Way",
+    "oldPoint1": "Slow loading times that frustrate visitors and hurt Google rankings.",
+    "oldPoint2": "Not mobile-friendly, losing 60% of potential local traffic.",
+    "oldPoint3": "Confusing navigation that makes visitors leave immediately.",
+    "newPoint1": "Lightning-fast loading times optimised to meet Google's quality standards.",
+    "newPoint2": "A design that automatically adapts to phone, tablet, and desktop.",
+    "newPoint3": "Clear paths to contact that measurably generate enquiries."
+  },
+  "ourExpertiseSection": {
+    "eyebrow": "Our Expertise",
+    "title": "Comprehensive Digital Solutions",
+    "viewAll": "View all services",
+    "card1Title": "Design & User Experience",
+    "card1Description": "Appealing design and clear navigation that engage visitors and build trust for your local brand.",
+    "card2Title": "Web Development",
+    "card2Description": "Robust, future-proof, and lightning-fast websites built on modern technologies.",
+    "card3Title": "Get Found on Google",
+    "card3Description": "Dominate local search results and get found by customers in your area.",
+    "card4Title": "Maintenance",
+    "card4Description": "Ongoing support, security updates, and speed monitoring."
+  },
+  "finalCtaSection": {
+    "title": "New website, redesign, or honest feedback on your current site",
+    "description": "If you want more qualified enquiries, we can either start with a new project or with a focused website analysis. Both routes go straight to us.",
+    "benefit1": "Clear guidance on whether a new website, a redesign, or targeted improvements make the most sense right now.",
+    "benefit2": "Direct contact without a sales layer or agency handoff.",
+    "benefit3": "Everything is geared toward better enquiries, more trust, and a site that fits your business.",
+    "suggestionHint": "Click one of these and we will prefill the message for you.",
+    "insertProjectTemplate": "Insert project enquiry template",
+    "insertAnalysisTemplate": "Insert analysis template",
+    "benefit1TemplateProject": "I would really appreciate a quick recommendation on which next step makes the most sense for my website right now.\n\nWhat this is about: [please describe briefly]\nWhat I am looking for: [new website, redesign, or targeted improvements]\nDo I already have a rough timeline? [optional]",
+    "benefit1TemplateAnalysis": "I would appreciate an honest assessment of whether my website needs a redesign or more focused improvements.\n\nWhat is currently not working well: [please describe briefly]\nWhat you should focus on: [for example trust, enquiries, structure, or overall impression]",
+    "benefit2TemplateProject": "I would love to discuss my website project directly and without unnecessary back and forth.\n\nWhat the project is about: [please describe briefly]\nWhat matters to me in the collaboration: [please add]",
+    "benefit2TemplateAnalysis": "I would really value direct feedback on my website.\n\nMy current issue: [please describe briefly]\nWhat kind of feedback I am looking for: [please add]",
+    "benefit3TemplateProject": "I am looking for a website that fits my business better and brings in more relevant enquiries.\n\nWhat currently does not feel right: [please describe briefly]\nWhat I want the new website to achieve: [please add]",
+    "benefit3TemplateAnalysis": "I would like to better understand how my website can improve in trust, positioning, and enquiries.\n\nWhat bothers me about the current website: [please describe briefly]\nWhat I would like to improve: [please add]",
+    "socialProof": "You are writing directly to our team.",
+    "formTitle": "Choose your next step",
+    "projectOption": "New Website / Redesign",
+    "analysisOption": "Website Analysis",
+    "projectSubject": "New website or relaunch enquiry",
+    "analysisSubject": "Free website analysis enquiry",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "websiteLabel": "Website URL optional",
+    "phoneLabel": "Phone number optional",
+    "messageLabel": "Message",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Email Address",
+    "websitePlaceholder": "www.your-domain.com (optional)",
+    "phonePlaceholder": "Phone Number (Optional)",
+    "analysisWebsitePlaceholder": "www.your-domain.com",
+    "projectMessagePlaceholder": "Share what you are planning: a new website, relaunch, goals, or timeline.",
+    "analysisMessagePlaceholder": "Tell me what feels weak on your current website or where you see untapped potential.",
+    "privacyPrefix": "I agree to the processing of my data according to the",
+    "privacyLink": "privacy policy",
+    "privacySuffix": ".",
+    "submitProject": "Send Project Enquiry",
+    "submitAnalysis": "Request Analysis",
+    "submitPending": "Sending...",
+    "responseNote": "Email or phone is enough. We will reply personally."
+  },
+  "footerSection": {
+    "description": "We build high-quality websites for businesses that want a stronger online presence and more enquiries.",
+    "headings": {
+      "services": "Services",
+      "company": "Company",
+      "resources": "Resources",
+      "contact": "Contact"
+    },
+    "services": {
+      "webDesign": "Web Design",
+      "development": "Development",
+      "localSeo": "Local SEO",
+      "maintenance": "Maintenance"
+    },
+    "company": {
+      "about": "About Us",
+      "values": "Values",
+      "approach": "Approach"
+    },
+    "contact": {
+      "projectCalls": "Project calls on request",
+      "location": "Remote, Germany",
+      "instagram": "Instagram"
+    },
+    "resources": {
+      "seobility": "Seobility SEO Check",
+      "googleSearchCentral": "Google Search Central",
+      "w3c": "W3C Standards"
+    },
+    "titles": {
+      "servicesOverview": "Go to services overview",
+      "companyOverview": "Go to company page",
+      "email": "Email",
+      "impressum": "Go to imprint and privacy policy"
+    },
+    "legal": {
+      "impressumAndPrivacy": "Impressum & Datenschutz"
+    },
+    "copyright": "Copyright © {year}. All rights reserved."
+  },
+  "navigationSection": {
+    "items": {
+      "home": "Home",
+      "services": "Services",
+      "company": "Company",
+      "references": "References",
+      "contact": "Imprint"
+    },
+    "contactCta": "Start a project",
+    "contactDialogSubject": "Project inquiry",
+    "languageSwitcher": {
+      "label": "Switch language",
+      "switchToGerman": "Switch to German",
+      "switchToEnglish": "Switch to English"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Digital services that turn visibility into real enquiries",
+      "description": "We offer web design, development, search engine optimisation and maintenance as one coordinated system. Not as disconnected add-ons, but as a digital foundation that builds trust locally and helps generate measurable enquiries.",
+      "primaryCta": "Discuss your project",
+      "secondaryCta": "Explore services",
+      "previewBadge": "Service overview",
+      "previewMeta": "Strategy • Design • Tech"
+    },
+    "overview": {
+      "readMore": "Read more"
+    },
+    "cards": {
+      "webdesign": {
+        "title": "Web Design",
+        "description": "Brand-driven websites with clear user journeys that build trust and turn visitors into real enquiries."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Clean technical execution with fast loading times, stability and a structure that scales with your business."
+      },
+      "seo": {
+        "title": "SEO & Local Search Optimisation",
+        "description": "So your business shows up on Google exactly where your customers are already searching."
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "Ongoing care, updates and monitoring so your website stays fast, secure and dependable over time."
+      }
+    },
+    "details": {
+      "outcomeLabel": "Practical outcome",
+      "placeholderBadge": "Visual placeholder",
+      "placeholderText": "A fitting project image, screen preview or case-study visual can be added here later.",
+      "placeholderMetricLabel1": "Focus",
+      "placeholderMetricValue1": "More trust",
+      "placeholderMetricLabel2": "Benefit",
+      "placeholderMetricValue2": "More enquiries",
+      "webdesign": {
+        "eyebrow": "Web Design",
+        "title": "Design that looks great and actually wins you enquiries",
+        "description": "Good design guides users, reduces friction and makes your offer instantly understandable. We create websites that feel modern, look premium and move visitors naturally toward contacting you.",
+        "point1": "Clear page structures with strong opening sections and thoughtful paths to contact.",
+        "point2": "Visual systems that communicate trust, quality and professionalism at first glance.",
+        "point3": "Mobile-first design thinking for strong impact across phone, tablet and desktop.",
+        "outcome": "You get a website that feels more premium, matches your brand better and converts more visitors into serious enquiries."
+      },
+      "development": {
+        "eyebrow": "Development",
+        "title": "Technical execution that stays fast, stable and scalable",
+        "description": "Design alone is not enough. The technical layer determines how fast your website loads, how reliable it feels and how easy it is to extend later. We build on modern technologies with clean, maintainable code.",
+        "point1": "Speed-focused implementation for fast loading and a polished experience.",
+        "point2": "Clean structure that makes future additions and changes straightforward.",
+        "point3": "Forms, Google basics, display across all devices and interaction details are considered from day one.",
+        "outcome": "Your website feels solid, performs reliably and stays flexible when your business evolves."
+      },
+      "seo": {
+        "eyebrow": "SEO & Local SEO",
+        "title": "Visibility where your customers are already searching",
+        "description": "We treat SEO as part of the full site strategy, not as an afterthought. From hierarchy and headings to local relevance and technical signals, the website is structured so Google understands what you offer and where you matter.",
+        "point1": "Structured content, clean page hierarchy and strong signals for Google.",
+        "point2": "Local optimisation for cities, regions and search terms with real buying intent.",
+        "point3": "Technical foundations for Google with a focus on discoverability, page descriptions and loading speed.",
+        "outcome": "You become easier to find, more relevant for local search and better positioned for consistent enquiries through Google."
+      },
+      "maintenance": {
+        "eyebrow": "Maintenance",
+        "title": "Ongoing support so your website stays strong",
+        "description": "A good website is not a one-time launch. It is a living system. With maintenance and support, we make sure content stays current, technical risks are handled early and your site keeps performing at a professional level.",
+        "point1": "Regular updates, security checks and technical care without extra effort on your side.",
+        "point2": "Fast support for content updates, new sections and small feature requests.",
+        "point3": "Monitoring for functionality, performance and user impact so problems never linger unnoticed.",
+        "outcome": "You do not have to worry about technical upkeep while still knowing your website remains current, stable and ready to perform."
+      }
+    }
+  },
+  "legalPage": {
+    "header": {
+      "eyebrow": "Legal information",
+      "title": "Imprint & Privacy",
+      "description": "Mandatory information under Section 5 DDG and details on the processing of personal data in accordance with the GDPR.",
+      "transparencyBadge": "Transparent and compliant",
+      "lastUpdated": "Last updated: April 01, 2026"
+    },
+    "impressum": {
+      "title": "Imprint",
+      "eyebrow": "Mandatory information under Section 5 DDG",
+      "providerLabel": "Provider",
+      "addressLabel": "Service address",
+      "contactLabel": "Contact and responsibility",
+      "contentResponsibilityLabel": "Responsible for the content"
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "shortTitle": "Privacy",
+      "preamble": {
+        "title": "Preamble",
+        "paragraph1": "With the following privacy policy, we would like to inform you about the types of your personal data, also referred to below simply as data, that we process, for what purposes and to what extent. This privacy policy applies to all processing of personal data carried out by us, both in the context of providing our services and especially on our websites, in mobile applications and within external online presences such as our social media profiles, collectively referred to below as the online offering.",
+        "paragraph2": "The terms used are gender-neutral.",
+        "updatedAt": "Updated: April 01, 2026"
+      },
+      "responsibleParty": {
+        "title": "Controller",
+        "representativesLabel": "Authorized representatives:",
+        "emailLabel": "Email address:"
+      },
+      "processingOverview": {
+        "title": "Overview of processing activities",
+        "description": "The following overview summarizes the types of data processed, the purposes of processing and the categories of data subjects concerned.",
+        "processedDataTypesTitle": "Types of data processed",
+        "processedDataTypes": [
+          "Master data",
+          "Contact data",
+          "Content data",
+          "Usage data",
+          "Meta, communication and procedural data",
+          "Log data"
+        ],
+        "affectedPeopleTitle": "Categories of data subjects",
+        "affectedPeople": [
+          "Communication partners",
+          "Users"
+        ],
+        "purposesTitle": "Purposes of processing",
+        "purposes": [
+          "Provision of contractual services and fulfillment of contractual obligations",
+          "Communication",
+          "Security measures",
+          "Office and organizational procedures",
+          "Organizational and administrative procedures",
+          "Feedback",
+          "Provision of our online offering and user-friendliness",
+          "Information technology infrastructure",
+          "Public relations"
+        ]
+      },
+      "legalBasis": {
+        "title": "Relevant legal bases",
+        "introLabel": "Relevant legal bases under the GDPR:",
+        "introText": "Below you will find an overview of the legal bases of the GDPR on which we process personal data. Please note that, in addition to the GDPR, national data protection rules may apply in your or our country of residence or establishment. If more specific legal bases are relevant in individual cases, we will inform you of them in this privacy policy.",
+        "items": [
+          {
+            "title": "Consent (Art. 6 para. 1 sentence 1 lit. a GDPR)",
+            "description": "The data subject has given consent to the processing of personal data concerning them for one or more specific purposes."
+          },
+          {
+            "title": "Performance of a contract and pre-contractual requests (Art. 6 para. 1 sentence 1 lit. b GDPR)",
+            "description": "Processing is necessary for the performance of a contract to which the data subject is party or to take steps at the request of the data subject prior to entering into a contract."
+          },
+          {
+            "title": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)",
+            "description": "Processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, unless such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data."
+          }
+        ]
+      },
+      "securityMeasures": {
+        "title": "Security measures",
+        "paragraph1": "In accordance with legal requirements, taking into account the state of the art, implementation costs and the nature, scope, context and purposes of processing as well as the differing likelihood and severity of the risks to the rights and freedoms of natural persons, we implement appropriate technical and organizational measures to ensure a level of protection appropriate to the risk.",
+        "connectionLabel": "Securing online connections using TLS/SSL encryption technology (HTTPS):",
+        "connectionText": "To protect the data of users transmitted via our online services from unauthorized access, we rely on TLS/SSL encryption technology. These technologies encrypt the information transmitted between the website or app and the user's browser, thereby protecting the data from unauthorized access."
+      },
+      "webHosting": {
+        "title": "Provision of the online offering and web hosting",
+        "description": "We process users' data in order to provide them with our online services. For this purpose, we process the user's IP address, which is necessary to transmit the content and functions of our online services to the user's browser or device.",
+        "summaryItems": [
+          {
+            "label": "Types of processed data:",
+            "value": "Usage data, meta, communication and procedural data, log data, content data."
+          },
+          {
+            "label": "Data subjects:",
+            "value": "Users (e.g. website visitors, users of online services)."
+          },
+          {
+            "label": "Purposes of processing:",
+            "value": "Provision of our online offering and user-friendliness; information technology infrastructure; security measures."
+          },
+          {
+            "label": "Legal bases:",
+            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)."
+          }
+        ],
+        "processorSectionTitle": "Data processing agreement",
+        "processorSectionText": "We have concluded a data processing agreement for the use of the above-mentioned service. This is a contract required under data protection law which ensures that the service processes the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR.",
+        "vercelTitle": "Vercel",
+        "vercelDescription": "Services in the field of providing information technology infrastructure and related services, such as storage space and/or computing capacities, as well as development environments.",
+        "vercelItems": [
+          {
+            "label": "Legal bases:",
+            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)."
+          },
+          {
+            "label": "Standard contractual clauses:"
+          },
+          {
+            "label": "Data processing agreement:"
+          }
+        ],
+        "analyticsTitle": "Vercel Analytics & Speed Insights",
+        "analyticsDescription": "We use Vercel Analytics and Speed Insights to measure technical performance and optimize the usability of our website. The collected data is evaluated exclusively in anonymized and aggregated form. It is not possible to assign it to individual persons. These tools collect only anonymized, aggregated data such as page views, device types, browser details and web vitals. No IP addresses or other data that would allow the identification of natural persons are stored. The tools do not use cookies or other local storage technologies.",
+        "analyticsItems": [
+          {
+            "label": "Service provider:",
+            "value": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA"
+          },
+          {
+            "label": "Purpose of processing:",
+            "value": "Analysis of website performance, optimization of loading times and improvement of usability."
+          },
+          {
+            "label": "Legal bases:",
+            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR). Our legitimate interest lies in the optimization and economic operation of our online offering."
+          },
+          {
+            "label": "Privacy policy:"
+          },
+          {
+            "label": "Transfer of data to third countries:",
+            "value": "Data transfer to the USA takes place on the basis of standard contractual clauses (Art. 46 GDPR). The transfer is encrypted and only anonymized data is transmitted."
+          }
+        ]
+      },
+      "cookies": {
+        "title": "Use of cookies",
+        "description": "The term cookies refers to functions that store information on users' end devices and read it from them. Cookies may also be used for various purposes, for example to ensure functionality, security and convenience of online offerings and to create analyses of visitor flows. We use cookies in accordance with legal requirements.",
+        "storageDurationLabel": "Storage duration:",
+        "storageDurationText": "With regard to storage duration, the following types of cookies are distinguished:",
+        "items": [
+          {
+            "title": "Temporary cookies (also: session cookies):",
+            "description": "Temporary cookies are deleted at the latest after a user leaves an online offering and closes their end device."
+          },
+          {
+            "title": "Permanent cookies:",
+            "description": "Permanent cookies remain stored even after the end device is closed. The storage duration can be up to two years."
+          }
+        ]
+      },
+      "contactRequests": {
+        "title": "Contact and inquiry management",
+        "description": "When contacting us, for example by post, contact form, email, phone or via social media, as well as within the framework of existing user and business relationships, the data provided by the inquiring persons is processed insofar as this is necessary to answer the contact inquiries and any requested measures.",
+        "items": [
+          {
+            "label": "Types of processed data:",
+            "value": "Master data, contact data, content data, usage data, meta, communication and procedural data."
+          },
+          {
+            "label": "Data subjects:",
+            "value": "Communication partners."
+          },
+          {
+            "label": "Purposes of processing:",
+            "value": "Communication; organizational and administrative procedures; feedback; provision of our online offering and user-friendliness."
+          },
+          {
+            "label": "Legal bases:",
+            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR). Performance of a contract and pre-contractual requests (Art. 6 para. 1 sentence 1 lit. b GDPR)."
+          }
+        ]
+      },
+      "dataSubjectRights": {
+        "title": "Rights of data subjects",
+        "description": "Rights of data subjects under the GDPR: As a data subject, you are entitled to various rights under the GDPR:",
+        "items": [
+          {
+            "title": "Right to object:",
+            "description": "You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data concerning you."
+          },
+          {
+            "title": "Right to withdraw consent:",
+            "description": "You have the right to withdraw consents granted at any time."
+          },
+          {
+            "title": "Right of access:",
+            "description": "You have the right to request confirmation as to whether data concerning you is being processed and to obtain information about this data as well as further information and a copy of the data in accordance with legal requirements."
+          },
+          {
+            "title": "Right to rectification:",
+            "description": "In accordance with legal requirements, you have the right to request the completion of data concerning you or the correction of inaccurate data concerning you."
+          },
+          {
+            "title": "Right to erasure and restriction of processing:",
+            "description": "In accordance with legal requirements, you have the right to request that data concerning you be deleted without undue delay or, alternatively, to request restriction of the processing of the data."
+          },
+          {
+            "title": "Right to data portability:",
+            "description": "You have the right to receive the data concerning you that you have provided to us in a structured, commonly used and machine-readable format in accordance with legal requirements or to request its transfer to another controller."
+          },
+          {
+            "title": "Complaint to a supervisory authority:",
+            "description": "Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority."
+          }
+        ]
+      },
+      "socialMedia": {
+        "title": "Profiles on social networks (social media)",
+        "description": "We maintain online presences within social networks and process user data in this context in order to communicate with users active there or to provide information about us.",
+        "instagramItems": [
+          {
+            "label": "Instagram:",
+            "value": "Social network that enables sharing photos and videos, commenting on and liking posts, sending messages, and subscribing to profiles and pages;"
+          },
+          {
+            "label": "Service provider:",
+            "value": "Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Ireland;"
+          },
+          {
+            "label": "Website:"
+          },
+          {
+            "label": "Privacy policy:"
+          },
+          {
+            "label": "Basis for third-country transfers:",
+            "value": "Data Privacy Framework (DPF)."
+          }
+        ]
+      },
+      "dataRetention": {
+        "title": "General information on data storage and deletion",
+        "description": "We delete personal data that we process in accordance with legal provisions as soon as the underlying consents are withdrawn or no further legal bases for processing exist. This concerns cases in which the original processing purpose no longer applies or the data is no longer required.",
+        "retentionLabel": "Retention and deletion of data:",
+        "retentionText": "The following general retention periods apply for storage and archiving under German law:",
+        "items": [
+          {
+            "title": "10 years",
+            "description": "Retention period for books and records, annual financial statements, inventories, management reports, opening balance sheets as well as the work instructions and other organizational documents required for their understanding."
+          },
+          {
+            "title": "8 years",
+            "description": "Accounting records, such as invoices and expense receipts."
+          },
+          {
+            "title": "6 years",
+            "description": "Other business documents: received commercial or business letters, reproductions of sent commercial or business letters, and other documents insofar as they are relevant for taxation."
+          },
+          {
+            "title": "3 years",
+            "description": "Data required to consider potential warranty and damages claims or similar contractual claims and rights and to process related inquiries."
+          }
+        ]
+      },
+      "definitions": {
+        "title": "Definitions",
+        "description": "This section provides an overview of the terminology used in this privacy policy. Where the terms are legally defined, their legal definitions apply. The following explanations are primarily intended to aid understanding.",
+        "items": [
+          {
+            "title": "Personal data:",
+            "description": "Personal data means any information relating to an identified or identifiable natural person; a natural person is considered identifiable if they can be identified directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier such as a cookie, or one or more specific characteristics."
+          },
+          {
+            "title": "Processing:",
+            "description": "Processing means any operation or set of operations performed on personal data, whether or not by automated means. The term is broad and covers practically any handling of data, including collection, evaluation, storage, transmission or deletion."
+          },
+          {
+            "title": "Controller:",
+            "description": "Controller means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data."
+          },
+          {
+            "title": "Master data:",
+            "description": "Master data includes essential information necessary for the identification and administration of contractual partners, user accounts, profiles and similar assignments."
+          },
+          {
+            "title": "Contact data:",
+            "description": "Contact data is essential information that enables communication with persons or organizations. It includes, among other things, telephone numbers, postal addresses and email addresses as well as means of communication such as social media handles."
+          },
+          {
+            "title": "Content data:",
+            "description": "Content data includes information generated during the creation, editing and publication of content of all kinds."
+          },
+          {
+            "title": "Usage data:",
+            "description": "Usage data refers to information that records how users interact with digital products, services or platforms."
+          }
+        ],
+        "generatorLinkLabel": "Created with the free privacy policy generator from Datenschutz-Generator.de by Dr. Thomas Schwenke",
+        "generatorLinkTitle": "Legal text by Dr. Schwenke - click for more information."
+      }
+    }
+  },
+  "companyPage": {
+    "rework": {
+      "hero": {
+        "title": "Your partner for digital growth, merging creativity and technology for lasting results.",
+        "description": "We combine strategic thinking with modern execution to build digital experiences that do more than look good: they create tangible value.",
+        "imageAlt": "Portrait of Arkadiusz Weiss"
+      },
+      "coreValues": {
+        "title": "Our Core Values",
+        "value1Title": "Radical Candor",
+        "value1Description": "We believe in direct communication with genuine care. Honest feedback is the foundation of strong creative work.",
+        "value2Title": "Playful Precision",
+        "value2Description": "We combine rigorous engineering with bold imagination. The best solutions often come from unexpected combinations.",
+        "value3Title": "Holistic Empathy",
+        "value3Description": "We design for humans first. Understanding emotional needs leads to more meaningful digital products.",
+        "value4Title": "Relentless Evolution",
+        "value4Description": "The digital landscape keeps moving. We keep questioning, improving and evolving with every project."
+      },
+      "approach": {
+        "eyebrow": "Our Approach",
+        "title": "Where others see roadblocks, we uncover opportunities.",
+        "description": "Through close collaboration, we dive deep into your unique challenges and opportunities. This understanding shapes our holistic approach - from research and strategic direction to brand development and product delivery.",
+        "cta": "Our Services"
+      },
+      "collaborate": {
+        "eyebrow": "Let's get to work",
+        "title": "We're your partner in addressing real human needs, collaborating together to create something you can be proud of.",
+        "cta": "Let's Collaborate",
+        "ctaSubject": "Let's collaborate"
+      }
+    }
+  }
+}
