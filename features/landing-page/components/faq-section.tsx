@@ -38,22 +38,22 @@ export default function FaqSection() {
               <div
                 key={item.question}
                 className='overflow-hidden rounded-2xl border border-border bg-background'>
-                <button
-                  type='button'
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                  aria-expanded={isOpen}
-                  className='flex w-full items-center justify-between gap-4 px-5 py-4 text-left'>
-                  <span className='text-base font-semibold text-foreground'>
-                    {item.question}
-                  </span>
-                  <span
-                    className={cn(
-                      'flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform duration-300',
-                      isOpen && 'rotate-45'
-                    )}>
-                    <Plus className='size-4' />
-                  </span>
-                </button>
+                <h3 className='m-0'>
+                  <button
+                    type='button'
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    className='flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-base font-semibold text-foreground'>
+                    <span>{item.question}</span>
+                    <span
+                      className={cn(
+                        'flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform duration-300',
+                        isOpen && 'rotate-45'
+                      )}>
+                      <Plus className='size-4' />
+                    </span>
+                  </button>
+                </h3>
                 <div
                   className={cn(
                     'grid transition-all duration-300 ease-out',

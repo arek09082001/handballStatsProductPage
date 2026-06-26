@@ -11,6 +11,16 @@ export const DEFAULT_OG_IMAGE = '/defaultOgImage.png';
 export const SEO_KEYWORDS = Array.from(
     new Set([
         ...CLUB_CONFIG.seo.keywords,
+        // Core recording intent (primary German search terms)
+        'handball statistik erfassen',
+        'handball statistik aufnehmen',
+        'handball statistik aufzeichnen',
+        'handball spielstatistik erfassen',
+        'handball statistik führen',
+        'handball stats erfassen',
+        'handball live statistik erfassen',
+        'spielstatistik handball app',
+        // Product / category terms
         'handball statistik app',
         'handball stats app',
         'handball scouting app',
@@ -25,7 +35,6 @@ export const SEO_KEYWORDS = Array.from(
         'handball dashboard',
         'handball app deutsch',
         'beste handball app',
-        'handball statistik erfassen',
     ]),
 );
 
@@ -72,19 +81,26 @@ export const APP_FEATURES = [
     },
 ] as const;
 
+/**
+ * Fallback FAQ used for structured data when translations are unavailable.
+ * The live FAQ schema in `components/seo/structured-data.tsx` is generated
+ * from the same translations as the visible FAQ section, so the rich-result
+ * markup always matches the on-page content (a Google requirement). Keep this
+ * text in sync with `productPage.faq.items` in `messages/de.json`.
+ */
 export const HOMEPAGE_FAQS = [
     {
-        question: 'Brauche ich technisches Vorwissen, um HandballStats zu nutzen?',
+        question: 'Brauche ich technisches Vorwissen?',
         answer:
             'Nein. HandballStats ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung.',
     },
     {
-        question: 'Funktioniert die App auch offline in der Halle?',
+        question: 'Funktioniert die App offline in der Halle?',
         answer:
             'Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine Daten automatisch synchronisiert.',
     },
     {
-        question: 'Kann ich die Statistiken mit meinem Team teilen?',
+        question: 'Kann ich Statistiken mit meinem Team teilen?',
         answer:
             'Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export.',
     },
@@ -112,6 +128,13 @@ type CreatePageMetadataArgs = {
     keywords?: string[];
     imagePath?: string;
     noIndex?: boolean;
+    /**
+     * When true, the title is used as-is and the parent layout's title
+     * template (`%s | HandballStats`) is NOT appended. Use this for the
+     * home page, whose title already contains the brand – otherwise the
+     * brand would be duplicated ("… | HandballStats | HandballStats").
+     */
+    absoluteTitle?: boolean;
 };
 
 export function createPageMetadata({
@@ -121,13 +144,14 @@ export function createPageMetadata({
     keywords = [],
     imagePath = DEFAULT_OG_IMAGE,
     noIndex = false,
+    absoluteTitle = false,
 }: CreatePageMetadataArgs): Metadata {
     const canonical = absoluteUrl(path);
     const imageUrl = absoluteUrl(imagePath);
     const combinedKeywords = Array.from(new Set([...SEO_KEYWORDS, ...keywords]));
 
     return {
-        title,
+        title: absoluteTitle ? { absolute: title } : title,
         description,
         keywords: combinedKeywords,
         alternates: {

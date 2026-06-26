@@ -2,12 +2,15 @@ import LandingPage from '@/features/landing-page/pages/landing-page';
 import { createPageMetadata } from '@/lib/seo';
 
 export const metadata = createPageMetadata({
-  title: 'HandballStats – Die Statistik-App für dein Handball-Team',
+  title: 'Handball-Statistik App – Spiele live erfassen | HandballStats',
   description:
-    'Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und gewinne mehr Spiele mit datenbasierten Entscheidungen. Kostenlos starten.',
+    'Mit HandballStats erfasst du Handball-Statistiken live: Tore, Würfe, Paraden & Wurfquoten – automatisch ausgewertet, offline-fähig. Jetzt kostenlos starten.',
   path: '/',
+  absoluteTitle: true,
   keywords: [
+    'handball statistik erfassen',
     'handball statistik app',
+    'handball statistik aufnehmen',
     'handball stats',
     'handball scouting app',
     'handball trainer app',
