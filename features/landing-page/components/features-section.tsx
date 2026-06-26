@@ -83,9 +83,9 @@ export default function FeaturesSection() {
                 <div className='flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground'>
                   <Icon className='size-6' />
                 </div>
-                <p className='mt-5 text-xl font-bold tracking-tight text-foreground'>
+                <h3 className='mt-5 text-xl font-bold tracking-tight text-foreground'>
                   {item.title}
-                </p>
+                </h3>
                 <p className='mt-3 text-sm leading-7 text-muted-foreground'>
                   {item.description}
                 </p>

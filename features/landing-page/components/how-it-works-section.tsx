@@ -70,9 +70,9 @@ export default function HowItWorksSection() {
               <div className='flex size-12 items-center justify-center rounded-2xl bg-primary text-lg font-black text-primary-foreground shadow-[0_14px_30px_-16px_hsl(var(--primary)/0.9)]'>
                 {index + 1}
               </div>
-              <p className='mt-5 text-xl font-bold tracking-tight text-foreground'>
+              <h3 className='mt-5 text-xl font-bold tracking-tight text-foreground'>
                 {step.title}
-              </p>
+              </h3>
               <p className='mt-3 text-sm leading-7 text-muted-foreground'>
                 {step.description}
               </p>
