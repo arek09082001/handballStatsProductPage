@@ -1,41 +1,40 @@
-# Newsletter Double-Opt-In (Brevo) – Setup
+# Newsletter Double-Opt-In (self-hosted)
 
-The newsletter endpoint (`app/api/newsletter/route.ts`) requires a Brevo
-double-opt-in (DOI) template. Without it the endpoint returns `503` and no
-contact is added (we never subscribe someone without a confirmation email).
+Double opt-in is implemented **inside this app** — we don't rely on Brevo's
+built-in DOI template. The flow:
 
-## 1. Create the DOI template in Brevo
+1. **Signup** — `POST /api/newsletter` validates the email, then sends a
+   confirmation email via the Brevo **transactional** API
+   (`sendTransacEmail`). The contact is **not** added to the list yet.
+2. **Confirmation link** — the email links to
+   `/newsletter/confirm?token=…`. The token is an HMAC-signed value
+   containing the email + a 48h expiry (`lib/utils/newsletter-token.ts`).
+3. **Confirm page** — `app/newsletter/confirm/page.tsx` shows a card with a
+   "Anmeldung bestätigen" button. Clicking it calls
+   `POST /api/newsletter/confirm`, which verifies the token and adds the
+   contact to the Brevo list. Doing nothing = no subscription.
 
-1. Brevo dashboard → **Campaigns → Templates → New template**.
-2. Editor: **"Paste your code (HTML)"**.
-3. Paste the contents of [`brevo-doi-template.html`](./brevo-doi-template.html).
-4. **Subject:** `Bitte bestätige deine Newsletter-Anmeldung – MatchPulse`
-5. **Sender:** a *verified* sender/domain (e.g. `noreply@handballwebseite.de`).
-   Unverified senders are silently dropped by Brevo.
-6. Save and **activate** the template.
-7. Note its **numeric Template ID** (shown in the template list / URL).
+## Required environment variables
 
-> The template must keep the `{{ doubleOptin }}` merge tag — Brevo swaps it for
-> the unique confirmation link at send time.
+In Vercel → Project → Settings → Environment Variables:
 
-## 2. Set the environment variables
+| Variable | Required | Value |
+| --- | --- | --- |
+| `BREVO_API_KEY` | yes | API key from Brevo → SMTP & API → API Keys |
+| `NEXT_PUBLIC_BASE_URL` | yes | e.g. `https://www.handballwebseite.de` (used to build the confirm link) |
+| `BREVO_NEWSLETTER_LIST_ID` | optional | contact list ID for confirmed subscribers (default `4`) |
+| `NEWSLETTER_CONFIRM_SECRET` | optional | HMAC secret for the token; falls back to `BREVO_API_KEY` |
 
-In your deployment (Vercel → Project → Settings → Environment Variables):
+> The sender address (`noreply@handballwebseite.de`, from `lib/club-config.ts`)
+> must be a **verified** Brevo sender/domain, otherwise the confirmation email
+> won't be delivered.
 
-| Variable | Value |
-| --- | --- |
-| `BREVO_API_KEY` | API key from Brevo → SMTP & API → API Keys |
-| `BREVO_NEWSLETTER_LIST_ID` | ID of the contact list (default `4`) |
-| `BREVO_DOI_TEMPLATE_ID` | the numeric template ID from step 1 |
-| `BREVO_DOI_REDIRECT_URL` | *(optional)* page after confirmation; defaults to `${NEXT_PUBLIC_BASE_URL}/?newsletter=confirmed` |
+No Brevo DOI template needs to be created — the confirmation email is rendered
+by `generateNewsletterConfirmationEmail` in `lib/utils/email-templates.ts`.
 
-Redeploy after saving.
+## Test
 
-## 3. Test
-
-Submit the newsletter form → confirmation email arrives → clicking
-"Anmeldung bestätigen" confirms the subscription and redirects back to the site.
-
-> If a test address was added earlier under the old single-opt-in behaviour,
-> Brevo returns "already exists" and won't resend. Delete it from the list in
-> Brevo first, then re-test.
+1. Submit the newsletter form → "Bestätigungs-E-Mail gesendet", inline success
+   panel appears.
+2. Open the email → click "Anmeldung bestätigen" → confirm page shows success
+   and the contact appears in the Brevo list.

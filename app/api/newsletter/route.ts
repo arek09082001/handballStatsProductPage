@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import * as brevo from '@getbrevo/brevo';
 import { z } from 'zod';
 import { ContactFormRateLimit, getClientIP } from '@/lib/utils/rate-limit';
+import { CLUB_CONFIG } from '@/lib/club-config';
+import { generateNewsletterConfirmationEmail } from '@/lib/utils/email-templates';
+import { createNewsletterToken } from '@/lib/utils/newsletter-token';
 
 // Validation schema for the newsletter signup
 const newsletterSchema = z
@@ -55,61 +58,35 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Newsletter contacts are stored in Brevo list #4 by default.
-    const listId = process.env.BREVO_NEWSLETTER_LIST_ID
-      ? Number(process.env.BREVO_NEWSLETTER_LIST_ID)
-      : 4;
-    const doiTemplateId = process.env.BREVO_DOI_TEMPLATE_ID
-      ? Number(process.env.BREVO_DOI_TEMPLATE_ID)
-      : undefined;
-    const redirectionUrl =
-      process.env.BREVO_DOI_REDIRECT_URL ||
-      `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.handballwebseite.de'}/?newsletter=confirmed`;
+    // 3. Double opt-in: send a confirmation email with a signed link.
+    // The contact is only added to Brevo once the link is confirmed
+    // (see app/api/newsletter/confirm/route.ts).
+    const baseUrl =
+      process.env.NEXT_PUBLIC_BASE_URL || CLUB_CONFIG.website.url;
+    const token = createNewsletterToken(email);
+    const confirmUrl = `${baseUrl.replace(/\/$/, '')}/newsletter/confirm?token=${encodeURIComponent(token)}`;
 
-    // Double opt-in is required: a confirmation email must always be sent.
-    // If the DOI template is not configured we must NOT silently fall back to
-    // single opt-in (which would add the contact without any confirmation
-    // email), so we surface the misconfiguration instead.
-    if (!doiTemplateId || !listId) {
-      console.error(
-        'Newsletter double opt-in is not configured. Set BREVO_DOI_TEMPLATE_ID (and BREVO_NEWSLETTER_LIST_ID) to enable confirmation emails.'
-      );
-      return NextResponse.json(
-        { success: false, error: 'Newsletter ist derzeit nicht verfügbar.' },
-        { status: 503 }
-      );
-    }
+    const transactionalApi = new brevo.TransactionalEmailsApi();
+    transactionalApi.setApiKey(
+      brevo.TransactionalEmailsApiApiKeys.apiKey,
+      apiKey
+    );
 
-    const contactsApi = new brevo.ContactsApi();
-    contactsApi.setApiKey(brevo.ContactsApiApiKeys.apiKey, apiKey);
+    const { subject, htmlContent } = generateNewsletterConfirmationEmail({
+      confirmUrl,
+    });
 
-    try {
-      // Double opt-in: Brevo sends a confirmation email using the DOI template.
-      const doiContact = new brevo.CreateDoiContact();
-      doiContact.email = email;
-      doiContact.includeListIds = [listId];
-      doiContact.templateId = doiTemplateId;
-      doiContact.redirectionUrl = redirectionUrl;
-      await contactsApi.createDoiContact(doiContact);
-    } catch (error) {
-      // Brevo returns 400 with "Contact already exist" when re-subscribing –
-      // treat that as a success so users are not confused.
-      const message =
-        error instanceof Error ? error.message.toLowerCase() : '';
-      const responseBody =
-        // @ts-expect-error - Brevo errors carry an axios-style response body
-        error?.response?.body?.message?.toLowerCase?.() || '';
+    const confirmationEmail = new brevo.SendSmtpEmail();
+    confirmationEmail.sender = {
+      name: CLUB_CONFIG.display.emailSender,
+      email: CLUB_CONFIG.email.noreply,
+    };
+    confirmationEmail.to = [{ email }];
+    confirmationEmail.replyTo = { email: CLUB_CONFIG.email.main };
+    confirmationEmail.subject = subject;
+    confirmationEmail.htmlContent = htmlContent;
 
-      const alreadyExists =
-        message.includes('already') ||
-        message.includes('exist') ||
-        responseBody.includes('already') ||
-        responseBody.includes('exist');
-
-      if (!alreadyExists) {
-        throw error;
-      }
-    }
+    await transactionalApi.sendTransacEmail(confirmationEmail);
 
     await ContactFormRateLimit.recordSubmission({
       ipAddress: clientIP,
@@ -119,7 +96,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: 'Anmeldung erfolgreich',
+        message: 'Bestätigungs-E-Mail gesendet',
       },
       { status: 200 }
     );

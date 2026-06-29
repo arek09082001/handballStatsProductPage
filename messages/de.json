@@ -520,5 +520,19 @@
       "secondaryCta": "In den Newsletter eintragen",
       "note": "Verfügbar für iOS, Android und im Browser."
     }
+  },
+  "newsletterConfirm": {
+    "title": "Anmeldung bestätigen",
+    "description": "Klicke auf den Button, um deine Anmeldung zum MatchPulse-Newsletter abzuschließen.",
+    "confirmButton": "Anmeldung bestätigen",
+    "pending": "Wird bestätigt…",
+    "ignoreHint": "Du hast dich nicht angemeldet? Dann schließe diese Seite einfach – ohne Bestätigung passiert nichts.",
+    "successTitle": "Anmeldung bestätigt!",
+    "successDescription": "Vielen Dank – du bist jetzt für den MatchPulse-Newsletter angemeldet.",
+    "backHome": "Zur Startseite",
+    "invalidTitle": "Link ungültig",
+    "invalidDescription": "Dieser Bestätigungslink ist ungültig oder abgelaufen. Bitte melde dich erneut an.",
+    "backToForm": "Zur Anmeldung",
+    "errorDescription": "Bestätigung fehlgeschlagen. Bitte versuche es später erneut."
   }
 }

@@ -520,5 +520,19 @@
       "secondaryCta": "Join the newsletter",
       "note": "Available for iOS, Android and in the browser."
     }
+  },
+  "newsletterConfirm": {
+    "title": "Confirm your subscription",
+    "description": "Click the button to complete your subscription to the MatchPulse newsletter.",
+    "confirmButton": "Confirm subscription",
+    "pending": "Confirming…",
+    "ignoreHint": "Didn't sign up? Just close this page – nothing happens without confirmation.",
+    "successTitle": "Subscription confirmed!",
+    "successDescription": "Thank you – you are now subscribed to the MatchPulse newsletter.",
+    "backHome": "Back to home",
+    "invalidTitle": "Invalid link",
+    "invalidDescription": "This confirmation link is invalid or has expired. Please sign up again.",
+    "backToForm": "Back to sign-up",
+    "errorDescription": "Confirmation failed. Please try again later."
   }
 }
