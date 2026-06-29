@@ -2,9 +2,9 @@ import LandingPage from '@/features/landing-page/pages/landing-page';
 import { createPageMetadata } from '@/lib/seo';
 
 export const metadata = createPageMetadata({
-  title: 'Handball-Statistik App – Spiele live erfassen | HandballStats',
+  title: 'Handball-Statistik App – Spiele live erfassen | MatchPulse',
   description:
-    'Mit HandballStats erfasst du Handball-Statistiken live: Tore, Würfe, Paraden & Wurfquoten – automatisch ausgewertet, offline-fähig. Jetzt kostenlos starten.',
+    'Mit MatchPulse erfasst du Handball-Statistiken live: Tore, Würfe, Paraden & Wurfquoten – automatisch ausgewertet, offline-fähig. Jetzt kostenlos starten.',
   path: '/',
   absoluteTitle: true,
   keywords: [

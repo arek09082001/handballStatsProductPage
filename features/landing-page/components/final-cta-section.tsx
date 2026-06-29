@@ -44,7 +44,7 @@ export default function FinalCTASection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className='w-full bg-background py-12 md:py-24'>
+    <section ref={sectionRef} className='w-full bg-background py-20 md:py-24'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div
           ref={cardRef}
