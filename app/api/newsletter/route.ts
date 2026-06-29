@@ -55,9 +55,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const contactsApi = new brevo.ContactsApi();
-    contactsApi.setApiKey(brevo.ContactsApiApiKeys.apiKey, apiKey);
-
     // Newsletter contacts are stored in Brevo list #4 by default.
     const listId = process.env.BREVO_NEWSLETTER_LIST_ID
       ? Number(process.env.BREVO_NEWSLETTER_LIST_ID)
@@ -69,25 +66,31 @@ export async function POST(request: NextRequest) {
       process.env.BREVO_DOI_REDIRECT_URL ||
       `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.handballwebseite.de'}/?newsletter=confirmed`;
 
+    // Double opt-in is required: a confirmation email must always be sent.
+    // If the DOI template is not configured we must NOT silently fall back to
+    // single opt-in (which would add the contact without any confirmation
+    // email), so we surface the misconfiguration instead.
+    if (!doiTemplateId || !listId) {
+      console.error(
+        'Newsletter double opt-in is not configured. Set BREVO_DOI_TEMPLATE_ID (and BREVO_NEWSLETTER_LIST_ID) to enable confirmation emails.'
+      );
+      return NextResponse.json(
+        { success: false, error: 'Newsletter ist derzeit nicht verfügbar.' },
+        { status: 503 }
+      );
+    }
+
+    const contactsApi = new brevo.ContactsApi();
+    contactsApi.setApiKey(brevo.ContactsApiApiKeys.apiKey, apiKey);
+
     try {
-      if (doiTemplateId && listId) {
-        // Double opt-in: Brevo sends a confirmation email
-        const doiContact = new brevo.CreateDoiContact();
-        doiContact.email = email;
-        doiContact.includeListIds = [listId];
-        doiContact.templateId = doiTemplateId;
-        doiContact.redirectionUrl = redirectionUrl;
-        await contactsApi.createDoiContact(doiContact);
-      } else {
-        // Single opt-in fallback
-        const createContact = new brevo.CreateContact();
-        createContact.email = email;
-        createContact.updateEnabled = true;
-        if (listId) {
-          createContact.listIds = [listId];
-        }
-        await contactsApi.createContact(createContact);
-      }
+      // Double opt-in: Brevo sends a confirmation email using the DOI template.
+      const doiContact = new brevo.CreateDoiContact();
+      doiContact.email = email;
+      doiContact.includeListIds = [listId];
+      doiContact.templateId = doiTemplateId;
+      doiContact.redirectionUrl = redirectionUrl;
+      await contactsApi.createDoiContact(doiContact);
     } catch (error) {
       // Brevo returns 400 with "Contact already exist" when re-subscribing –
       // treat that as a success so users are not confused.

@@ -18,11 +18,11 @@ export default function StatsBarSection() {
           {items.map((item) => (
             <div
               key={item.label}
-              className='bg-background px-5 py-7 text-center'>
+              className='bg-background px-5 py-10 text-center sm:px-8 sm:py-14'>
               <div className='text-3xl font-extrabold tracking-tight text-primary sm:text-4xl'>
                 {item.value}
               </div>
-              <div className='mt-2 text-xs font-medium leading-5 text-muted-foreground sm:text-sm'>
+              <div className='mt-3 text-xs font-medium leading-5 text-muted-foreground sm:mt-4 sm:text-sm'>
                 {item.label}
               </div>
             </div>
