@@ -10,7 +10,8 @@
       "features": "Features",
       "how": "How it works",
       "faq": "FAQ",
-      "newsletter": "Newsletter"
+      "newsletter": "Newsletter",
+      "contact": "Contact"
     },
     "contact": {
       "location": "Made in Germany",
@@ -32,6 +33,7 @@
       "features": "Features",
       "howItWorks": "How it works",
       "faq": "FAQ",
+      "contact": "Contact",
       "impressum": "Legal"
     },
     "contactCta": "Start for free",
@@ -488,6 +490,26 @@
       "successTitle": "Almost done!",
       "successDescription": "Please confirm your subscription via the link in your email.",
       "errorTitle": "Subscription failed",
+      "errorDescription": "Please try again later.",
+      "invalidEmail": "Please enter a valid email address."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Get in touch – we're here for you",
+      "description": "Questions about MatchPulse, want to sign up your team, or have feedback? Send us a message and we'll get back to you personally as soon as possible.",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email address",
+      "topicPlaceholder": "What's it about?",
+      "messagePlaceholder": "Your message to us…",
+      "button": "Send message",
+      "pending": "Sending…",
+      "privacyPrefix": "I accept the",
+      "privacyLink": "privacy policy",
+      "privacySuffix": "and agree to the processing of my data.",
+      "note": "We only use your details to handle your request.",
+      "successTitle": "Message sent!",
+      "successDescription": "Thank you for reaching out. We'll get back to you as soon as possible.",
+      "errorTitle": "Sending failed",
       "errorDescription": "Please try again later.",
       "invalidEmail": "Please enter a valid email address."
     },
