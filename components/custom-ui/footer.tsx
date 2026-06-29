@@ -100,17 +100,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='flex flex-col gap-4 pt-5 text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-between'>
+        <div className='flex flex-col gap-4 pt-5 text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-center'>
           <p>{t('copyright', { year: new Date().getFullYear() })}</p>
-
-          <div className='flex items-center gap-5'>
-            <Link
-              href='/impressum'
-              title={t('titles.impressum')}
-              className='rounded-sm transition-colors duration-300 hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
-              {t('legal.impressumAndPrivacy')}
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
