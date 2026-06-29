@@ -6,6 +6,7 @@ import HowItWorksSection from '../components/how-it-works-section';
 import ProsSection from '../components/pros-section';
 import FaqSection from '../components/faq-section';
 import NewsletterSection from '../components/newsletter-section';
+import ContactSection from '../components/contact-section';
 import FinalCTASection from '../components/final-cta-section';
 
 export default function LandingPage() {
@@ -20,6 +21,7 @@ export default function LandingPage() {
         <ProsSection />
         <FaqSection />
         <NewsletterSection />
+        <ContactSection />
         <FinalCTASection />
       </div>
     </>

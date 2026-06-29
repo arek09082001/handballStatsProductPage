@@ -12,6 +12,13 @@ interface ContactConfirmationData {
   topic: string;
 }
 
+interface ContactNotificationData {
+  name: string;
+  email: string;
+  topic: string;
+  message: string;
+}
+
 interface RentalConfirmationData {
   name: string;
   eventType: string;
@@ -81,6 +88,51 @@ export function generateContactConfirmationEmail(
         <div style="text-align: center; margin-top: 20px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
           <p style="font-size: 12px; color: #64748b; margin: 0;">${CLUB_CONFIG.display.copyright}</p>
         </div>
+      </div>
+    </div>
+  `;
+
+  return { subject, htmlContent };
+}
+
+/**
+ * Generate the internal notification email that is sent to the team
+ * whenever a visitor submits the contact form.
+ */
+export function generateContactNotificationEmail(
+  data: ContactNotificationData
+): { subject: string; htmlContent: string } {
+  const safeName = escapeHtml(data.name);
+  const safeEmail = escapeHtml(data.email);
+  const safeTopic = escapeHtml(data.topic);
+  const safeMessage = escapeHtml(data.message).replace(/\n/g, '<br />');
+
+  const subject = `Neue Kontaktanfrage: ${safeTopic} – ${safeName}`;
+
+  const htmlContent = `
+    <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #0f172a; background: #ffffff;">
+      <div style="background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%); padding: 26px 24px; border-radius: 14px 14px 0 0;">
+        <p style="margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; color: #bfdbfe;">Neue Kontaktanfrage</p>
+        <h1 style="margin: 8px 0 0 0; color: #ffffff; font-size: 24px; line-height: 1.25;">${safeTopic}</h1>
+      </div>
+
+      <div style="padding: 24px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 14px 14px;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 0 0 16px 0;">
+          <p style="margin: 4px 0; font-size: 14px;"><strong>Name:</strong> ${safeName}</p>
+          <p style="margin: 4px 0; font-size: 14px;"><strong>E-Mail:</strong> <a href="mailto:${safeEmail}" style="color: #1d4ed8; text-decoration: none;">${safeEmail}</a></p>
+          <p style="margin: 4px 0; font-size: 14px;"><strong>Thema:</strong> ${safeTopic}</p>
+        </div>
+
+        <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 0 0 16px 0;">
+          <h2 style="margin: 0 0 10px 0; color: #1e293b; font-size: 16px;">Nachricht</h2>
+          <p style="margin: 0; color: #334155; font-size: 15px; line-height: 1.6;">${safeMessage}</p>
+        </div>
+
+        <p style="margin: 0; font-size: 13px; color: #64748b;">
+          Antworten Sie direkt an
+          <a href="mailto:${safeEmail}" style="color: #1d4ed8; text-decoration: none;">${safeEmail}</a>,
+          um dieser Person zu antworten.
+        </p>
       </div>
     </div>
   `;

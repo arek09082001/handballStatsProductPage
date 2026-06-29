@@ -25,6 +25,11 @@ export const siteNavigationItems: NavigationItem[] = [
   },
   {
     ident: 4,
+    href: '/#contact',
+    labelKey: 'contact',
+  },
+  {
+    ident: 5,
     href: '/impressum',
     labelKey: 'impressum',
   },

@@ -10,7 +10,8 @@
       "features": "Funktionen",
       "how": "So funktioniert's",
       "faq": "FAQ",
-      "newsletter": "Newsletter"
+      "newsletter": "Newsletter",
+      "contact": "Kontakt"
     },
     "contact": {
       "location": "Made in Germany",
@@ -32,6 +33,7 @@
       "features": "Funktionen",
       "howItWorks": "So funktioniert's",
       "faq": "FAQ",
+      "contact": "Kontakt",
       "impressum": "Impressum"
     },
     "contactCta": "Kostenlos starten",
@@ -488,6 +490,26 @@
       "successTitle": "Fast geschafft!",
       "successDescription": "Bitte bestätige deine Anmeldung über den Link in deiner E-Mail.",
       "errorTitle": "Anmeldung fehlgeschlagen",
+      "errorDescription": "Bitte versuche es später erneut.",
+      "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "title": "Schreib uns – wir sind für dich da",
+      "description": "Du hast Fragen zu MatchPulse, möchtest dein Team anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
+      "namePlaceholder": "Dein Name",
+      "emailPlaceholder": "Deine E-Mail-Adresse",
+      "topicPlaceholder": "Worum geht's?",
+      "messagePlaceholder": "Deine Nachricht an uns…",
+      "button": "Nachricht senden",
+      "pending": "Wird gesendet…",
+      "privacyPrefix": "Ich akzeptiere die",
+      "privacyLink": "Datenschutzbestimmungen",
+      "privacySuffix": "und bin mit der Verarbeitung meiner Daten einverstanden.",
+      "note": "Wir verwenden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage.",
+      "successTitle": "Nachricht gesendet!",
+      "successDescription": "Vielen Dank für deine Anfrage. Wir melden uns so schnell wie möglich bei dir.",
+      "errorTitle": "Senden fehlgeschlagen",
       "errorDescription": "Bitte versuche es später erneut.",
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
