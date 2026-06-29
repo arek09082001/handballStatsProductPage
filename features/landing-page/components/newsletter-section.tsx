@@ -2,9 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Check, Mail, Sparkles } from 'lucide-react';
+import { AlertCircle, Check, Mail, Sparkles } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { toast } from 'sonner';
 import { useNewsletter } from '@/lib/hooks/use-newsletter';
 import { Button } from '@/components/ui/button';
 
@@ -15,17 +14,26 @@ export default function NewsletterSection() {
 
   const [email, setEmail] = useState('');
   const [acceptPrivacy, setAcceptPrivacy] = useState(false);
+  // Client-side validation error shown inline in the card.
+  const [validationError, setValidationError] = useState<string | null>(null);
   // Honeypot
   const [website, setWebsite] = useState('');
 
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
   const isFormValid = isValidEmail && acceptPrivacy;
 
+  const errorMessage = validationError
+    ? validationError
+    : newsletterMutation.isError
+      ? newsletterMutation.error?.message || t('errorDescription')
+      : null;
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setValidationError(null);
 
     if (!isValidEmail) {
-      toast.error(t('invalidEmail'));
+      setValidationError(t('invalidEmail'));
       return;
     }
 
@@ -41,18 +49,8 @@ export default function NewsletterSection() {
       },
       {
         onSuccess: () => {
-          toast.success(t('successTitle'), {
-            description: t('successDescription'),
-            duration: 6000,
-          });
           setEmail('');
           setAcceptPrivacy(false);
-        },
-        onError: (error: Error) => {
-          toast.error(t('errorTitle'), {
-            description: error.message || t('errorDescription'),
-            duration: 6000,
-          });
         },
       }
     );
@@ -89,7 +87,20 @@ export default function NewsletterSection() {
               </ul>
             </div>
 
-            <form onSubmit={handleSubmit} className='w-full'>
+            {newsletterMutation.isSuccess ? (
+              <div className='flex w-full flex-col items-center justify-center rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-8 text-center backdrop-blur-sm'>
+                <span className='flex size-12 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300'>
+                  <Check className='size-6' />
+                </span>
+                <h3 className='mt-4 text-lg font-bold text-white'>
+                  {t('successTitle')}
+                </h3>
+                <p className='mt-2 max-w-sm text-sm leading-6 text-slate-200'>
+                  {t('successDescription')}
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className='w-full'>
               <div className='rounded-2xl border border-white/12 bg-white/5 p-5 backdrop-blur-sm sm:p-6'>
                 <label className='sr-only' htmlFor='newsletter-email'>
                   {t('placeholder')}
@@ -146,11 +157,24 @@ export default function NewsletterSection() {
                   {newsletterMutation.isPending ? t('pending') : t('button')}
                 </Button>
 
+                {errorMessage && (
+                  <div
+                    role='alert'
+                    className='mt-3 flex items-start gap-2 rounded-xl border border-red-400/30 bg-red-500/10 px-3.5 py-2.5 text-left text-sm leading-5 text-red-200'>
+                    <AlertCircle className='mt-0.5 size-4 shrink-0' />
+                    <span>
+                      <strong className='font-semibold'>{t('errorTitle')}:</strong>{' '}
+                      {errorMessage}
+                    </span>
+                  </div>
+                )}
+
                 <p className='mt-3 text-center text-xs leading-5 text-slate-400'>
                   {t('note')}
                 </p>
               </div>
             </form>
+            )}
           </div>
         </div>
       </div>

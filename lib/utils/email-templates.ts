@@ -34,6 +34,78 @@ function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
+interface NewsletterConfirmationData {
+  confirmUrl: string;
+}
+
+/**
+ * Generate the newsletter double opt-in confirmation email.
+ *
+ * The email contains a link back to the site's confirmation page; the
+ * subscription is only finalised once the recipient clicks it.
+ */
+export function generateNewsletterConfirmationEmail(
+  data: NewsletterConfirmationData
+): { subject: string; htmlContent: string } {
+  const confirmUrl = data.confirmUrl;
+
+  const subject = `Bitte bestätige deine Newsletter-Anmeldung – ${CLUB_CONFIG.name}`;
+
+  const htmlContent = `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #0f172a; background: #ffffff;">
+      <div style="background: linear-gradient(135deg, #0b1220 0%, #101a36 55%, #0b1220 100%); padding: 32px 28px; border-radius: 16px 16px 0 0; text-align: center;">
+        <p style="margin: 0; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: #fdba74;">${CLUB_CONFIG.name} Newsletter</p>
+        <h1 style="margin: 10px 0 0 0; color: #ffffff; font-size: 26px; line-height: 1.3;">Nur noch ein Schritt</h1>
+      </div>
+
+      <div style="padding: 28px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 16px 16px;">
+        <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.6; color: #334155;">
+          Hallo,
+        </p>
+        <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #334155;">
+          vielen Dank für dein Interesse am <strong>${CLUB_CONFIG.name}</strong>-Newsletter.
+          Um deine Anmeldung abzuschließen, bestätige bitte deine E-Mail-Adresse mit
+          einem Klick auf den Button.
+        </p>
+
+        <div style="text-align: center; margin: 0 0 24px 0;">
+          <a href="${confirmUrl}" style="display: inline-block; background: linear-gradient(90deg, #f97316 0%, #ea580c 100%); color: #ffffff; font-size: 16px; font-weight: bold; text-decoration: none; padding: 16px 36px; border-radius: 12px;">
+            Anmeldung bestätigen
+          </a>
+        </div>
+
+        <p style="margin: 0 0 6px 0; font-size: 13px; line-height: 1.6; color: #64748b;">
+          Falls der Button nicht funktioniert, kopiere diesen Link in deinen Browser:
+        </p>
+        <p style="margin: 0 0 22px 0; font-size: 13px; line-height: 1.6; word-break: break-all;">
+          <a href="${confirmUrl}" style="color: #ea6a1d; text-decoration: underline;">${confirmUrl}</a>
+        </p>
+
+        <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 14px 16px; margin: 0 0 22px 0;">
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #1e3a8a;">
+            Du hast dich nicht angemeldet? Dann ignoriere diese E-Mail einfach –
+            ohne Bestätigung wird deine Adresse <strong>nicht</strong> in unseren Verteiler aufgenommen.
+          </p>
+        </div>
+
+        <div style="padding-top: 18px; border-top: 1px solid #e5e7eb;">
+          <p style="margin: 0 0 6px 0; font-size: 13px; color: #334155;"><strong>${CLUB_CONFIG.fullName}</strong></p>
+          <p style="margin: 0 0 6px 0; font-size: 13px; color: #64748b;">${CLUB_CONFIG.address.street}, ${CLUB_CONFIG.address.cityWithPostal}</p>
+          <p style="margin: 0; font-size: 13px; color: #64748b;">
+            Web: <a href="${CLUB_CONFIG.website.url}" style="color: #ea6a1d; text-decoration: none;">${CLUB_CONFIG.website.urlWithoutProtocol}</a>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 18px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
+          <p style="font-size: 12px; color: #94a3b8; margin: 0;">${CLUB_CONFIG.display.copyright}</p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  return { subject, htmlContent };
+}
+
 /**
  * Generate confirmation email for contact form submission
  */
