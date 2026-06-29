@@ -6,9 +6,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = createPageMetadata({
   title: 'Impressum und rechtliche Angaben',
   description:
-    'Impressum, Anbieterkennzeichnung und rechtliche Informationen zur HandballStats App.',
+    'Impressum, Anbieterkennzeichnung und rechtliche Informationen zur MatchPulse App.',
   path: '/impressum',
-  keywords: ['impressum handballstats', 'anbieterkennzeichnung handballstats'],
+  keywords: ['impressum matchpulse', 'anbieterkennzeichnung matchpulse'],
   imagePath: '/logo.png',
 });
 
@@ -18,7 +18,7 @@ export default function Page() {
       <PageSchema
         id='impressum-page'
         name='Impressum und rechtliche Angaben'
-        description='Rechtliche Informationen, Anbieterkennzeichnung und Verantwortlichkeiten zur HandballStats App.'
+        description='Rechtliche Informationen, Anbieterkennzeichnung und Verantwortlichkeiten zur MatchPulse App.'
         path='/impressum'
         imagePath='/logo.png'
         breadcrumbs={[

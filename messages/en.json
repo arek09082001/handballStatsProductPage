@@ -1,6 +1,6 @@
 {
   "footerSection": {
-    "description": "HandballStats turns every game into precise statistics – so coaches and teams keep improving.",
+    "description": "MatchPulse turns every game into precise statistics – so coaches and teams keep improving.",
     "headings": {
       "product": "Product",
       "legal": "Legal",
@@ -351,7 +351,7 @@
       "headlineLead": "Record handball stats",
       "headlineHighlight": "live",
       "headlineTail": "and win more games.",
-      "description": "With HandballStats you record your full handball stats live from the bench: goals, shots, saves and shooting percentages – calculated automatically and available in real time.",
+      "description": "With MatchPulse you record your full handball stats live from the bench: goals, shots, saves and shooting percentages – calculated automatically and available in real time.",
       "primaryCta": "Start for free",
       "secondaryCta": "Explore features",
       "trust1": "Free to start",
@@ -381,7 +381,7 @@
     "features": {
       "eyebrow": "Features",
       "title": "Everything that makes your team better",
-      "description": "From live tracking to deep analysis – HandballStats gives you the tools pro teams rely on.",
+      "description": "From live tracking to deep analysis – MatchPulse gives you the tools pro teams rely on.",
       "items": [
         {
           "title": "Live tracking",
@@ -420,7 +420,7 @@
         },
         {
           "title": "Track live",
-          "description": "Tap every action during the match. HandballStats calculates all stats automatically."
+          "description": "Tap every action during the match. MatchPulse calculates all stats automatically."
         },
         {
           "title": "Analyse & win",
@@ -429,16 +429,16 @@
       ]
     },
     "pros": {
-      "eyebrow": "Why HandballStats",
+      "eyebrow": "Why MatchPulse",
       "title": "No more stats on a napkin",
-      "description": "See for yourself how much easier and more insightful your game analysis becomes with HandballStats.",
+      "description": "See for yourself how much easier and more insightful your game analysis becomes with MatchPulse.",
       "oldTitle": "Pen & paper",
       "oldPoints": [
         "Numbers nobody analyses after the game",
         "Error-prone and time-consuming to review",
         "No shot maps, no trends, no comparisons"
       ],
-      "newTitle": "With HandballStats",
+      "newTitle": "With MatchPulse",
       "newPoints": [
         "All stats calculated live and automatically",
         "Shot maps, heatmaps and player trends at a glance",
@@ -453,7 +453,7 @@
       "items": [
         {
           "question": "Do I need any technical knowledge?",
-          "answer": "No. HandballStats is designed so you can track your first game live within minutes. Every action is just one tap away – no training needed."
+          "answer": "No. MatchPulse is designed so you can track your first game live within minutes. Every action is just one tap away – no training needed."
         },
         {
           "question": "Does the app work offline in the gym?",
@@ -464,7 +464,7 @@
           "answer": "Absolutely. Players and assistant coaches get access to insights, shot maps and progress over time – as a link or PDF export."
         },
         {
-          "question": "How much does HandballStats cost?",
+          "question": "How much does MatchPulse cost?",
           "answer": "You start for free and track your first game with no commitment. Fair plans are available for full teams and clubs – join the newsletter to secure the launch offer."
         }
       ]

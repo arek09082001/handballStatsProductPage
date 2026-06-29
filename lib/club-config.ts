@@ -9,9 +9,9 @@ export const CLUB_CONFIG = {
   // ============================================
   // BASIC PRODUCT INFORMATION
   // ============================================
-  name: 'HandballStats',
-  shortName: 'HandballStats', // For abbreviated displays
-  fullName: 'HandballStats',
+  name: 'MatchPulse',
+  shortName: 'MatchPulse', // For abbreviated displays
+  fullName: 'MatchPulse',
   foundingYear: 2026,
 
   // ============================================
@@ -27,9 +27,9 @@ export const CLUB_CONFIG = {
   // CONTACT INFORMATION
   // ============================================
   email: {
-    main: 'kontakt@handballstats.app',
-    info: 'kontakt@handballstats.app',
-    noreply: 'noreply@handballstats.app',
+    main: 'kontakt@handballwebseite.de',
+    info: 'kontakt@handballwebseite.de',
+    noreply: 'noreply@handballwebseite.de',
   },
 
   phone: {
@@ -86,8 +86,8 @@ export const CLUB_CONFIG = {
   // WEBSITE AND DOMAIN
   // ============================================
   website: {
-    domain: 'handballstats.app',
-    url: 'https://www.handballstats.app',
+    domain: 'handballwebseite.de',
+    url: 'https://www.handballwebseite.de',
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
     },
@@ -98,9 +98,9 @@ export const CLUB_CONFIG = {
   // ============================================
   social: {
     instagram: {
-      url: 'https://www.instagram.com/handballstats.app/',
-      handle: '@handballstats.app',
-      username: 'handballstats.app',
+      url: 'https://www.instagram.com/matchpulse.app/',
+      handle: '@matchpulse.app',
+      username: 'matchpulse.app',
     },
     // Weitere Social Media können hier hinzugefügt werden
     // facebook: { url: '', handle: '' },
@@ -123,9 +123,9 @@ export const CLUB_CONFIG = {
   // ============================================
   contacts: {
     primary: {
-      name: 'HandballStats Team',
+      name: 'MatchPulse Team',
       position: 'Support & Anfragen',
-      email: 'kontakt@handballstats.app',
+      email: 'kontakt@handballwebseite.de',
       phone: '+49-0179-2630093',
       image: '/arkadiusz_weiss.jpg',
     },
@@ -145,7 +145,7 @@ export const CLUB_CONFIG = {
       get path() {
         return `/${this.filename}`;
       },
-      alt: 'HandballStats Logo',
+      alt: 'MatchPulse Logo',
       width: 768,
       height: 768,
     },
@@ -165,7 +165,7 @@ export const CLUB_CONFIG = {
   seo: {
     // Default meta description
     description:
-      'HandballStats ist die Statistik-App für Handball-Teams: Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und triff bessere Entscheidungen – direkt von der Bank.',
+      'MatchPulse ist die Statistik-App für Handball-Teams: Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und triff bessere Entscheidungen – direkt von der Bank.',
 
     // Short description for social media
     shortDescription:
@@ -196,14 +196,14 @@ export const CLUB_CONFIG = {
     // Page-specific titles and descriptions
     pages: {
       home: {
-        title: 'HandballStats – Die Statistik-App für dein Handball-Team',
+        title: 'MatchPulse – Die Statistik-App für dein Handball-Team',
         description:
           'Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und gewinne mehr Spiele mit datenbasierten Entscheidungen.',
       },
       impressum: {
         title: 'Impressum',
         description:
-          'Impressum und rechtliche Informationen zur HandballStats App.',
+          'Impressum und rechtliche Informationen zur MatchPulse App.',
       },
     },
 
@@ -219,25 +219,25 @@ export const CLUB_CONFIG = {
   // ============================================
   display: {
     // For page titles
-    pageTitle: 'HandballStats',
+    pageTitle: 'MatchPulse',
 
     // For admin areas
-    adminTitle: 'HandballStats Admin',
+    adminTitle: 'MatchPulse Admin',
 
     // For emails and formal contexts
-    emailSender: 'HandballStats',
+    emailSender: 'MatchPulse',
 
     // For navigation
-    navLabel: 'HandballStats Hauptnavigation',
-    navAriaLabel: 'HandballStats',
+    navLabel: 'MatchPulse Hauptnavigation',
+    navAriaLabel: 'MatchPulse',
 
     // For logos and headers
-    logoAlt: 'HandballStats Logo',
+    logoAlt: 'MatchPulse Logo',
 
     brandTagline: 'Statistik-App für Handball',
 
     footerDescription:
-      'HandballStats hilft Trainern und Teams, jedes Spiel in präzise Statistiken zu verwandeln und besser zu werden.',
+      'MatchPulse hilft Trainern und Teams, jedes Spiel in präzise Statistiken zu verwandeln und besser zu werden.',
 
     footerLocation: 'Made in Germany',
 

@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
       : undefined;
     const redirectionUrl =
       process.env.BREVO_DOI_REDIRECT_URL ||
-      `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.handballstats.app'}/?newsletter=confirmed`;
+      `${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.handballwebseite.de'}/?newsletter=confirmed`;
 
     try {
       if (doiTemplateId && listId) {
