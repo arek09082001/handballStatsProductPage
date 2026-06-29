@@ -14,6 +14,7 @@ export default function Footer() {
     { href: '/#how-it-works', label: t('product.how') },
     { href: '/#faq', label: t('product.faq') },
     { href: '/#newsletter', label: t('product.newsletter') },
+    { href: '/#contact', label: t('product.contact') },
   ];
 
   return (
@@ -22,7 +23,7 @@ export default function Footer() {
         <div className='grid gap-10 border-b border-white/10 pb-8 lg:grid-cols-[1.4fr_0.8fr_0.8fr_1.2fr] lg:gap-12'>
           <div className='space-y-5'>
             <div className='flex items-center gap-3'>
-              <span className='relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#f97316]'>
+              <span className='relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-xl'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
                   alt={CLUB_CONFIG.display.logoAlt}

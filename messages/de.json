@@ -1,6 +1,6 @@
 {
   "footerSection": {
-    "description": "HandballStats verwandelt jedes Spiel in präzise Statistiken – damit Trainer und Teams besser werden.",
+    "description": "MatchPulse verwandelt jedes Spiel in präzise Statistiken – damit Trainer und Teams besser werden.",
     "headings": {
       "product": "Produkt",
       "legal": "Rechtliches",
@@ -10,7 +10,8 @@
       "features": "Funktionen",
       "how": "So funktioniert's",
       "faq": "FAQ",
-      "newsletter": "Newsletter"
+      "newsletter": "Newsletter",
+      "contact": "Kontakt"
     },
     "contact": {
       "location": "Made in Germany",
@@ -32,6 +33,7 @@
       "features": "Funktionen",
       "howItWorks": "So funktioniert's",
       "faq": "FAQ",
+      "contact": "Kontakt",
       "impressum": "Impressum"
     },
     "contactCta": "Kostenlos starten",
@@ -351,7 +353,7 @@
       "headlineLead": "Handball-Statistik",
       "headlineHighlight": "live erfassen",
       "headlineTail": "und mehr Spiele gewinnen.",
-      "description": "Mit HandballStats erfasst du die komplette Handball-Statistik live von der Bank: Tore, Würfe, Paraden und Wurfquoten – automatisch ausgewertet und in Echtzeit verfügbar.",
+      "description": "Mit MatchPulse erfasst du die komplette Handball-Statistik live von der Bank: Tore, Würfe, Paraden und Wurfquoten – automatisch ausgewertet und in Echtzeit verfügbar.",
       "primaryCta": "Kostenlos starten",
       "secondaryCta": "Funktionen ansehen",
       "trust1": "Kostenlos starten",
@@ -381,7 +383,7 @@
     "features": {
       "eyebrow": "Funktionen",
       "title": "Alles, was dein Team besser macht",
-      "description": "Von der Live-Erfassung bis zur Tiefenanalyse – HandballStats gibt dir die Werkzeuge, die Profi-Teams nutzen.",
+      "description": "Von der Live-Erfassung bis zur Tiefenanalyse – MatchPulse gibt dir die Werkzeuge, die Profi-Teams nutzen.",
       "items": [
         {
           "title": "Live-Erfassung",
@@ -420,7 +422,7 @@
         },
         {
           "title": "Live erfassen",
-          "description": "Tippe jede Aktion während des Spiels. HandballStats berechnet alle Statistiken automatisch."
+          "description": "Tippe jede Aktion während des Spiels. MatchPulse berechnet alle Statistiken automatisch."
         },
         {
           "title": "Analysieren & gewinnen",
@@ -429,16 +431,16 @@
       ]
     },
     "pros": {
-      "eyebrow": "Warum HandballStats",
+      "eyebrow": "Warum MatchPulse",
       "title": "Schluss mit Statistik auf dem Bierdeckel",
-      "description": "Vergleiche selbst, wie viel einfacher und aussagekräftiger deine Spielanalyse mit HandballStats wird.",
+      "description": "Vergleiche selbst, wie viel einfacher und aussagekräftiger deine Spielanalyse mit MatchPulse wird.",
       "oldTitle": "Zettel & Stift",
       "oldPoints": [
         "Zahlen, die nach dem Spiel niemand mehr auswertet",
         "Fehleranfällig und zeitraubend in der Nachbereitung",
         "Keine Wurfbilder, keine Trends, keine Vergleiche"
       ],
-      "newTitle": "Mit HandballStats",
+      "newTitle": "Mit MatchPulse",
       "newPoints": [
         "Alle Statistiken live und automatisch berechnet",
         "Wurfbilder, Heatmaps und Spielertrends auf einen Blick",
@@ -453,7 +455,7 @@
       "items": [
         {
           "question": "Brauche ich technisches Vorwissen?",
-          "answer": "Nein. HandballStats ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung."
+          "answer": "Nein. MatchPulse ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung."
         },
         {
           "question": "Funktioniert die App offline in der Halle?",
@@ -464,7 +466,7 @@
           "answer": "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export."
         },
         {
-          "question": "Was kostet HandballStats?",
+          "question": "Was kostet MatchPulse?",
           "answer": "Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot."
         }
       ]
@@ -488,6 +490,26 @@
       "successTitle": "Fast geschafft!",
       "successDescription": "Bitte bestätige deine Anmeldung über den Link in deiner E-Mail.",
       "errorTitle": "Anmeldung fehlgeschlagen",
+      "errorDescription": "Bitte versuche es später erneut.",
+      "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "title": "Schreib uns – wir sind für dich da",
+      "description": "Du hast Fragen zu MatchPulse, möchtest dein Team anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
+      "namePlaceholder": "Dein Name",
+      "emailPlaceholder": "Deine E-Mail-Adresse",
+      "topicPlaceholder": "Worum geht's?",
+      "messagePlaceholder": "Deine Nachricht an uns…",
+      "button": "Nachricht senden",
+      "pending": "Wird gesendet…",
+      "privacyPrefix": "Ich akzeptiere die",
+      "privacyLink": "Datenschutzbestimmungen",
+      "privacySuffix": "und bin mit der Verarbeitung meiner Daten einverstanden.",
+      "note": "Wir verwenden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage.",
+      "successTitle": "Nachricht gesendet!",
+      "successDescription": "Vielen Dank für deine Anfrage. Wir melden uns so schnell wie möglich bei dir.",
+      "errorTitle": "Senden fehlgeschlagen",
       "errorDescription": "Bitte versuche es später erneut.",
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },

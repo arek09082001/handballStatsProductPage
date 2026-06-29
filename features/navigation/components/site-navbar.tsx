@@ -63,7 +63,7 @@ export default function SiteNavbar() {
               type='button'
               onClick={handleBrandClick}
               className='flex max-w-[calc(100vw-7.5rem)] min-w-0 items-center gap-3 text-left transition-opacity hover:opacity-85 sm:max-w-[calc(100vw-9rem)] lg:max-w-none'>
-              <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f97316] shadow-[0_14px_30px_-18px_rgba(249,115,22,0.95)]'>
+              <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
                   alt={CLUB_CONFIG.display.logoAlt}
@@ -117,8 +117,8 @@ export default function SiteNavbar() {
             <Link
               href='/#newsletter'
               title={t('contactCta')}
-              className='inline-flex h-11 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#f97316] to-[#ea580c] px-5 text-sm font-semibold text-white shadow-[0_14px_30px_-18px_rgba(249,115,22,0.95)] transition-all hover:-translate-y-0.5'>
-              <Rocket className='size-4' />
+              className='inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#f97316] px-5 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] hover:shadow-[0_8px_22px_-4px_rgba(249,115,22,0.5)] active:translate-y-0 active:scale-95'>
+              <Rocket className='size-3.5 shrink-0' />
               {t('contactCta')}
             </Link>
           </div>
@@ -162,7 +162,7 @@ export default function SiteNavbar() {
               closeMenu();
             }}
             className='flex w-full min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
-            <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f97316] shadow-[0_14px_30px_-18px_rgba(249,115,22,0.95)]'>
+            <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
               <Image
                 src={CLUB_CONFIG.branding.logo.path}
                 alt={CLUB_CONFIG.display.logoAlt}
@@ -213,8 +213,8 @@ export default function SiteNavbar() {
             href='/#newsletter'
             title={t('contactCta')}
             onClick={closeMenu}
-            className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#f97316] to-[#ea580c] px-4 py-3 text-sm font-semibold text-white transition-colors hover:opacity-95'>
-            <Rocket className='size-4' />
+            className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#f97316] px-4 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
+            <Rocket className='size-4 shrink-0' />
             {t('contactCta')}
           </Link>
 

@@ -79,7 +79,7 @@ export default function FeaturesSection() {
                 ref={(el) => {
                   if (el) cardsRef.current[index] = el;
                 }}
-                className='card-surface group rounded-[1.4rem] px-6 py-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_62px_-38px_hsl(var(--primary)/0.5)]'>
+                className='card-surface group rounded-[1.4rem] px-7 py-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_30px_62px_-38px_hsl(var(--primary)/0.5)]'>
                 <div className='flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground'>
                   <Icon className='size-6' />
                 </div>

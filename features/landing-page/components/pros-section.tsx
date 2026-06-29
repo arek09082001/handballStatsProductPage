@@ -53,12 +53,12 @@ export default function ProsSection() {
           </p>
         </div>
 
-        <div className='mt-12 grid gap-6 lg:grid-cols-2'>
+        <div className='mt-14 grid gap-6 lg:grid-cols-2'>
           <div
             ref={(el) => {
               if (el) cardsRef.current[0] = el;
             }}
-            className='card-surface relative overflow-hidden rounded-[1.4rem] px-7 py-7'>
+            className='card-surface relative overflow-hidden rounded-[1.4rem] px-7 py-8'>
             <div className='absolute right-0 top-0 h-20 w-20 rounded-bl-[3rem] bg-rose-100/80' />
             <div className='relative'>
               <div className='flex size-11 items-center justify-center rounded-xl bg-rose-100 text-rose-500'>
@@ -84,7 +84,7 @@ export default function ProsSection() {
             ref={(el) => {
               if (el) cardsRef.current[1] = el;
             }}
-            className='relative overflow-hidden rounded-[1.4rem] bg-gradient-to-br from-[#0b1220] via-[#101a36] to-[#0b1220] px-7 py-7 text-white shadow-[0_30px_70px_-40px_rgba(15,23,42,0.7)]'>
+            className='relative overflow-hidden rounded-[1.4rem] bg-gradient-to-br from-[#0b1220] via-[#101a36] to-[#0b1220] px-7 py-8 text-white shadow-[0_30px_70px_-40px_rgba(15,23,42,0.7)]'>
             <div className='absolute right-0 top-0 h-24 w-24 rounded-bl-[3rem] bg-primary/20' />
             <div className='relative'>
               <div className='flex size-11 items-center justify-center rounded-xl bg-primary/20 text-[#fdba74]'>

@@ -30,7 +30,7 @@ export default function FaqSection() {
           </p>
         </div>
 
-        <div className='mt-10 space-y-3'>
+        <div className='mt-12 space-y-3'>
           {items.map((item, index) => {
             const isOpen = openIndex === index;
 
