@@ -17,12 +17,6 @@ export const siteNavigationItems: NavigationItem[] = [
     sectionId: 'features',
   },
   {
-    ident: 6,
-    href: CLUB_CONFIG.website.demoUrl,
-    labelKey: 'demo',
-    external: true,
-  },
-  {
     ident: 3,
     href: '/#faq',
     labelKey: 'faq',
@@ -33,6 +27,12 @@ export const siteNavigationItems: NavigationItem[] = [
     href: '/#contact',
     labelKey: 'contact',
     sectionId: 'contact',
+  },
+  {
+    ident: 6,
+    href: CLUB_CONFIG.website.demoUrl,
+    labelKey: 'demo',
+    external: true,
   },
 ];
 

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -23,7 +24,15 @@ export default function SiteNavbar() {
     handleBrandClick,
   } = useSiteNavbar();
 
+  const [hoveredIdent, setHoveredIdent] = useState<number | null>(null);
+
   const isNavInFocus = isOpen || isScrollingUp || !isScrolled;
+
+  // The highlight pill rests on the active (scroll-spy) item, but follows the
+  // hovered item while the pointer is over the nav — so Live-Demo takes the
+  // pill too even though it has no page section of its own.
+  const activeItem = siteNavigationItems.find((item) => isItemActive(item));
+  const highlightedIdent = hoveredIdent ?? activeItem?.ident ?? null;
 
   return (
     <>
@@ -88,9 +97,12 @@ export default function SiteNavbar() {
           </div>
 
           <div className='hidden flex-1 items-center justify-center lg:flex'>
-            <div className='flex items-center gap-1 rounded-full bg-slate-100/80 p-1'>
+            <div
+              className='flex items-center gap-1 rounded-full bg-slate-100/80 p-1'
+              onMouseLeave={() => setHoveredIdent(null)}>
               {siteNavigationItems.map((item) => {
                 const active = isItemActive(item);
+                const highlighted = item.ident === highlightedIdent;
 
                 return (
                   <Link
@@ -100,15 +112,16 @@ export default function SiteNavbar() {
                     target={item.external ? '_blank' : undefined}
                     rel={item.external ? 'noopener noreferrer' : undefined}
                     aria-current={active ? 'page' : undefined}
+                    onMouseEnter={() => setHoveredIdent(item.ident)}
                     className={cn(
                       'relative inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200',
-                      active
+                      highlighted
                         ? 'text-slate-950'
                         : item.external
                           ? 'text-[#ea580c] hover:text-[#c2410c]'
                           : 'text-slate-500 hover:text-slate-900',
                     )}>
-                    {active && (
+                    {highlighted && (
                       <motion.span
                         layoutId='navActivePill'
                         className='absolute inset-0 rounded-full bg-white shadow-sm'
@@ -117,7 +130,12 @@ export default function SiteNavbar() {
                     )}
                     <span className='relative z-10 inline-flex items-center gap-1.5'>
                       {item.external && (
-                        <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
+                        <span
+                          className={cn(
+                            'size-1.5 animate-pulse rounded-full',
+                            highlighted ? 'bg-[#ea580c]' : 'bg-[#f97316]',
+                          )}
+                        />
                       )}
                       {t(`items.${item.labelKey}`)}
                     </span>
