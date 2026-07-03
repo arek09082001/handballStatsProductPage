@@ -32,6 +32,8 @@
       "home": "Home",
       "features": "Features",
       "howItWorks": "How it works",
+      "ai": "AI analysis",
+      "tournament": "Tournament",
       "demo": "Live demo",
       "faq": "FAQ",
       "contact": "Contact",
@@ -409,8 +411,104 @@
         {
           "title": "Export & share",
           "description": "Share insights as a link or PDF with players, assistant coaches and the board."
+        },
+        {
+          "title": "Tournament mode",
+          "description": "Create tournaments with several teams and start live games right from them – the standings update automatically."
+        },
+        {
+          "title": "AI analysis",
+          "description": "AI-powered insights for single games, your whole team and individual players – with concrete recommendations."
         }
       ]
+    },
+    "showcase": {
+      "eyebrow": "Product tour",
+      "title": "See MatchPulse in action",
+      "description": "From live tracking on the bench to the finished analysis – a look inside the app.",
+      "items": [
+        {
+          "badge": "Track live",
+          "title": "Every action with a single tap",
+          "description": "Tap right on the court: goal, fast-break goal, ball win, block, 7m, suspension or missed shot. Bench, line-up and score always in view – without taking your eyes off the game."
+        },
+        {
+          "badge": "Stay on top",
+          "title": "All games & key numbers in the dashboard",
+          "description": "Attack success, save rate, record and goal difference at a glance. Filter your games, jump straight into live tracking and keep the whole season under control."
+        },
+        {
+          "badge": "Instantly calculated",
+          "title": "Player stats in real time",
+          "description": "Goals, shots, percentage, assists, ball wins, blocks and discipline – calculated automatically for every player, while the game is still running."
+        }
+      ]
+    },
+    "ai": {
+      "eyebrow": "AI analysis",
+      "title": "AI analyses that explain why – not just what",
+      "description": "MatchPulse analyses your recorded games with AI on three levels: for every single game, for your whole team across the season, and as a scouting profile for individual players.",
+      "scopes": [
+        {
+          "title": "Single game",
+          "description": "Deep dive into one match: game flow, scoring runs, turning points, tactical patterns and behaviour under pressure – with clear coaching recommendations.",
+          "points": [
+            "Game flow & critical phases",
+            "Shot-zone efficiency",
+            "Turning points & key moments"
+          ]
+        },
+        {
+          "title": "Whole team",
+          "description": "Several games seen as one system: trends, stability, offensive structure and recurring error patterns across the season.",
+          "points": [
+            "Trends across the season",
+            "Structure & roles in the team",
+            "Recurring error patterns"
+          ]
+        },
+        {
+          "title": "Individual player",
+          "description": "A scouting profile per player across all games: player type, shot selection, efficiency, form curve and the situations where they shine or struggle.",
+          "points": [
+            "Player type & actual role",
+            "Shot selection & efficiency",
+            "Form & behaviour under pressure"
+          ]
+        }
+      ],
+      "showcase": {
+        "badge": "Single-game analysis",
+        "title": "An analysis that reads like a pro scout",
+        "description": "Interactive charts, shot-zone heatmaps and readable insights instead of bare numbers. The AI spots scoring runs, names turning points, exposes weaknesses under pressure and delivers concrete training recommendations.",
+        "imageOneLabel": "Game flow & shot-zone efficiency",
+        "imageTwoLabel": "Turning points, error distribution & player performance"
+      }
+    },
+    "tournament": {
+      "eyebrow": "Tournament mode",
+      "title": "Tournaments and leagues fully under control",
+      "description": "Create a tournament with several teams, start live games right from it and keep the standings in view at all times.",
+      "points": [
+        {
+          "title": "Automatic standings",
+          "description": "Games, wins, draws, losses, goals, goal difference and points – updated instantly after every result."
+        },
+        {
+          "title": "Start a live game directly",
+          "description": "Pick your opponent from the tournament and start full live tracking with a single tap."
+        },
+        {
+          "title": "Enter other results",
+          "description": "Add games you didn't track yourself too – so the standings stay complete."
+        },
+        {
+          "title": "Manage teams",
+          "description": "Add teams, manage opponents and keep an overview of the whole tournament."
+        }
+      ],
+      "imageOneLabel": "Standings & tournament mode",
+      "imageTwoLabel": "Fixtures & results"
     },
     "how": {
       "eyebrow": "It's that simple",

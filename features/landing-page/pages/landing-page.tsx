@@ -2,6 +2,9 @@ import StructuredData from '@/components/seo/structured-data';
 import ProductHero from '../components/product-hero';
 import StatsBarSection from '../components/stats-bar-section';
 import FeaturesSection from '../components/features-section';
+import ShowcaseSection from '../components/showcase-section';
+import AiAnalyticsSection from '../components/ai-analytics-section';
+import TournamentSection from '../components/tournament-section';
 import HowItWorksSection from '../components/how-it-works-section';
 import ProsSection from '../components/pros-section';
 import FaqSection from '../components/faq-section';
@@ -17,6 +20,9 @@ export default function LandingPage() {
         <ProductHero />
         <StatsBarSection />
         <FeaturesSection />
+        <ShowcaseSection />
+        <AiAnalyticsSection />
+        <TournamentSection />
         <HowItWorksSection />
         <ProsSection />
         <FaqSection />

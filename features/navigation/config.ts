@@ -17,6 +17,18 @@ export const siteNavigationItems: NavigationItem[] = [
     sectionId: 'features',
   },
   {
+    ident: 7,
+    href: '/#ai',
+    labelKey: 'ai',
+    sectionId: 'ai',
+  },
+  {
+    ident: 8,
+    href: '/#tournament',
+    labelKey: 'tournament',
+    sectionId: 'tournament',
+  },
+  {
     ident: 3,
     href: '/#faq',
     labelKey: 'faq',
