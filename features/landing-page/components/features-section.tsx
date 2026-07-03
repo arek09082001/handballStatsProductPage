@@ -5,7 +5,9 @@ import {
   BarChart3,
   Gauge,
   Share2,
+  Sparkles,
   Target,
+  Trophy,
   Users,
   Zap,
 } from 'lucide-react';
@@ -17,7 +19,7 @@ interface FeatureItem {
   description: string;
 }
 
-const ICONS = [Zap, BarChart3, Target, Users, Gauge, Share2];
+const ICONS = [Zap, BarChart3, Target, Users, Gauge, Share2, Trophy, Sparkles];
 
 export default function FeaturesSection() {
   const t = useTranslations('productPage.features');

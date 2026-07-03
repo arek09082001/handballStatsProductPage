@@ -32,6 +32,8 @@
       "home": "Start",
       "features": "Funktionen",
       "howItWorks": "So funktioniert's",
+      "ai": "KI-Analyse",
+      "tournament": "Turnier",
       "demo": "Live-Demo",
       "faq": "FAQ",
       "contact": "Kontakt",
@@ -409,8 +411,104 @@
         {
           "title": "Export & Teilen",
           "description": "Teile Auswertungen als Link oder PDF mit Spielern, Co-Trainern und dem Vorstand."
+        },
+        {
+          "title": "Turniermodus",
+          "description": "Lege Turniere mit mehreren Teams an, starte Live-Spiele direkt daraus – die Tabelle aktualisiert sich automatisch."
+        },
+        {
+          "title": "KI-Analyse",
+          "description": "KI-gestützte Auswertung für einzelne Spiele, dein ganzes Team und einzelne Spieler – mit konkreten Empfehlungen."
         }
       ]
+    },
+    "showcase": {
+      "eyebrow": "Produkt-Tour",
+      "title": "So sieht MatchPulse im Einsatz aus",
+      "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung – ein Blick in die App.",
+      "items": [
+        {
+          "badge": "Live erfassen",
+          "title": "Jede Aktion mit einem Tap",
+          "description": "Tippe direkt auf das Spielfeld: Tor, Tempo-Gegenstoß, Ballgewinn, Block, 7-Meter, Zeitstrafe oder Fehlwurf. Bank, Aufstellung und Spielstand immer im Blick – ohne den Blick vom Spiel zu nehmen."
+        },
+        {
+          "badge": "Überblick behalten",
+          "title": "Alle Spiele & Kennzahlen im Dashboard",
+          "description": "Angriffserfolg, Paradequote, Bilanz und Tordifferenz auf einen Blick. Filtere deine Spiele, springe direkt in die Live-Erfassung und behalte die ganze Saison im Griff."
+        },
+        {
+          "badge": "Sofort ausgewertet",
+          "title": "Spielerstatistiken in Echtzeit",
+          "description": "Tore, Würfe, Quote, Assists, Ballgewinne, Blocks und Disziplin – für jeden Spieler automatisch berechnet, schon während das Spiel läuft."
+        }
+      ]
+    },
+    "ai": {
+      "eyebrow": "KI-Analyse",
+      "title": "KI-Analysen, die erklären warum – nicht nur was",
+      "description": "MatchPulse wertet deine erfassten Spiele mit KI aus – auf drei Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison und als Scouting-Profil für einzelne Spieler.",
+      "scopes": [
+        {
+          "title": "Einzelspiel",
+          "description": "Tiefenanalyse eines Spiels: Spielverlauf, Torläufe, Wendepunkte, taktische Muster und Verhalten unter Druck – mit klaren Trainer-Empfehlungen.",
+          "points": [
+            "Spielverlauf & kritische Phasen",
+            "Wurfzonen-Effizienz",
+            "Wende- & Schlüsselmomente"
+          ]
+        },
+        {
+          "title": "Ganzes Team",
+          "description": "Mehrere Spiele als ein System betrachtet: Trends, Stabilität, Offensivsystem und wiederkehrende Fehlermuster über die Saison.",
+          "points": [
+            "Trends über die Saison",
+            "Struktur & Rollen im Team",
+            "Wiederkehrende Fehlermuster"
+          ]
+        },
+        {
+          "title": "Einzelspieler",
+          "description": "Ein Scouting-Profil pro Spieler über alle Spiele: Spielertyp, Wurfauswahl, Effizienz, Formkurve und in welchen Situationen er stark oder schwach ist.",
+          "points": [
+            "Spielertyp & tatsächliche Rolle",
+            "Wurfauswahl & Effizienz",
+            "Form & Verhalten unter Druck"
+          ]
+        }
+      ],
+      "showcase": {
+        "badge": "Einzelspiel-Analyse",
+        "title": "Eine Analyse, die wie ein Profi-Scout liest",
+        "description": "Interaktive Charts, Wurfzonen-Heatmaps und verständliche Insights statt nackter Zahlen. Die KI erkennt Torläufe, benennt Wendepunkte, deckt Schwachstellen unter Druck auf und liefert konkrete Trainings-Empfehlungen.",
+        "imageOneLabel": "Spielverlauf & Wurfzonen-Effizienz",
+        "imageTwoLabel": "Wendepunkte, Fehlerverteilung & Spieler-Performance"
+      }
+    },
+    "tournament": {
+      "eyebrow": "Turniermodus",
+      "title": "Turniere und Ligen komplett im Griff",
+      "description": "Lege ein Turnier mit mehreren Mannschaften an, starte Live-Spiele direkt daraus und behalte die Tabelle jederzeit im Blick.",
+      "points": [
+        {
+          "title": "Automatische Tabelle",
+          "description": "Spiele, Siege, Unentschieden, Niederlagen, Tore, Tordifferenz und Punkte – nach jedem Ergebnis sofort aktualisiert."
+        },
+        {
+          "title": "Live-Spiel direkt starten",
+          "description": "Wähle deinen Gegner aus dem Turnier und starte die volle Live-Erfassung mit einem Tap."
+        },
+        {
+          "title": "Fremd-Ergebnisse eintragen",
+          "description": "Trage auch Spiele ein, die du nicht selbst erfasst hast – so bleibt die Tabelle vollständig."
+        },
+        {
+          "title": "Mannschaften verwalten",
+          "description": "Füge Teams hinzu, verwalte Gegner und behalte den Überblick über das ganze Turnier."
+        }
+      ],
+      "imageOneLabel": "Tabelle & Turniermodus",
+      "imageTwoLabel": "Spielplan & Ergebnisse"
     },
     "how": {
       "eyebrow": "So einfach geht es",
