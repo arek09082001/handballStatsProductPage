@@ -48,38 +48,6 @@ const baseConfig = {
   },
   output: 'standalone',
 
-  // 301 Redirects for route germanization
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'webdesign-weiss.de' }],
-        destination: 'https://www.webdesign-weiss.de/:path*',
-        permanent: true,
-      },
-      {
-        source: '/teams/:path*',
-        destination: '/mannschaften/:path*',
-        permanent: true,
-      },
-      {
-        source: '/news/:path*',
-        destination: '/neuigkeiten/:path*',
-        permanent: true,
-      },
-      {
-        source: '/contact',
-        destination: '/kontakt',
-        permanent: true,
-      },
-      {
-        source: '/sponsoring',
-        destination: '/sponsoren',
-        permanent: true,
-      },
-    ];
-  },
-
   async headers() {
     return [
       {
