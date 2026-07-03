@@ -1,12 +1,10 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { SITE_NAVBAR_OFFSET, scrollSpySectionIds } from '../config';
 import { NavigationItem } from '../interfaces';
 
-const ADMIN_ACCESS_CLICK_COUNT = 2;
-const BRAND_CLICK_DELAY_MS = 400;
 const SCROLL_OFFSET_THRESHOLD = 16;
 const SCROLL_DIRECTION_THRESHOLD = 6;
 const HOME_SECTION_ID = 'home';
@@ -18,20 +16,10 @@ export const useSiteNavbar = () => {
   const [activeSection, setActiveSection] = useState<string>(HOME_SECTION_ID);
   const pathname = usePathname();
   const router = useRouter();
-  const clickCountRef = useRef(0);
-  const clickTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
-
-  useEffect(() => {
-    return () => {
-      if (clickTimeoutRef.current) {
-        clearTimeout(clickTimeoutRef.current);
-      }
-    };
-  }, []);
 
   useEffect(() => {
     let frameId = 0;
@@ -154,29 +142,8 @@ export const useSiteNavbar = () => {
   };
 
   const handleBrandClick = () => {
-    clickCountRef.current += 1;
-
-    if (clickTimeoutRef.current) {
-      clearTimeout(clickTimeoutRef.current);
-      clickTimeoutRef.current = null;
-    }
-
-    if (clickCountRef.current === ADMIN_ACCESS_CLICK_COUNT) {
-      clickCountRef.current = 0;
-      closeMenu();
-      router.push('/admin');
-      return;
-    }
-
-    clickTimeoutRef.current = setTimeout(() => {
-      if (clickCountRef.current === 1) {
-        closeMenu();
-        router.push('/');
-      }
-
-      clickCountRef.current = 0;
-      clickTimeoutRef.current = null;
-    }, BRAND_CLICK_DELAY_MS);
+    closeMenu();
+    router.push('/');
   };
 
   return {

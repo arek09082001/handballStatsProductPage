@@ -1,42 +1,11 @@
-import { Activity, Hand, Target, Timer } from 'lucide-react';
-
-function StatPill({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className='flex items-center gap-2.5 rounded-2xl bg-white/8 px-3 py-2.5 backdrop-blur-sm'>
-      <span className='flex size-8 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#fdba74]'>
-        {icon}
-      </span>
-      <span className='min-w-0'>
-        <span className='block text-[10px] font-semibold uppercase tracking-[0.14em] text-white/55'>
-          {label}
-        </span>
-        <span className='block text-sm font-bold text-white'>{value}</span>
-      </span>
-    </div>
-  );
-}
+import Image from 'next/image';
 
 /**
- * Stylised in-app preview for the hero — a live handball match screen with a
- * scoreboard, live shooting stats and a shot map. Purely decorative.
+ * In-app preview for the hero — a phone frame wrapping a real screenshot of the
+ * live match-recording screen. The slim status bar keeps the "live" context,
+ * while the screenshot itself shows the actual product.
  */
 export default function AppMockup() {
-  const shotBars = [
-    { label: 'RR', made: 'h-[72%]' },
-    { label: 'RM', made: 'h-[58%]' },
-    { label: 'KM', made: 'h-[84%]' },
-    { label: 'LM', made: 'h-[46%]' },
-    { label: 'LL', made: 'h-[66%]' },
-  ];
-
   return (
     <div className='relative mx-auto w-full max-w-[420px]'>
       {/* Glow */}
@@ -47,9 +16,9 @@ export default function AppMockup() {
         {/* Notch */}
         <div className='absolute left-1/2 top-0 z-10 h-6 w-32 -translate-x-1/2 rounded-b-2xl bg-slate-900' />
 
-        <div className='relative bg-gradient-to-b from-[#0b1220] via-[#0e1730] to-[#101a36] px-4 pb-5 pt-9'>
+        <div className='relative bg-[#0b1220] pt-9'>
           {/* Top bar */}
-          <div className='flex items-center justify-between text-white/70'>
+          <div className='flex items-center justify-between px-4 pb-3'>
             <div className='flex items-center gap-2'>
               <span className='flex size-7 items-center justify-center rounded-lg bg-[#f97316] text-xs font-black text-white'>
                 HS
@@ -62,64 +31,16 @@ export default function AppMockup() {
             </span>
           </div>
 
-          {/* Scoreboard */}
-          <div className='mt-4 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10'>
-            <div className='flex items-center justify-between'>
-              <div className='text-center'>
-                <div className='text-[11px] font-semibold text-white/60'>Heim</div>
-                <div className='mt-1 text-4xl font-black tracking-tight text-white'>27</div>
-              </div>
-              <div className='text-xs font-bold uppercase tracking-[0.2em] text-white/40'>
-                vs
-              </div>
-              <div className='text-center'>
-                <div className='text-[11px] font-semibold text-white/60'>Gast</div>
-                <div className='mt-1 text-4xl font-black tracking-tight text-[#fdba74]'>24</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Live stats */}
-          <div className='mt-3 grid grid-cols-2 gap-2.5'>
-            <StatPill icon={<Target className='size-4' />} label='Wurfquote' value='68 %' />
-            <StatPill icon={<Hand className='size-4' />} label='Paraden' value='11' />
-            <StatPill icon={<Activity className='size-4' />} label='Tempo-Tore' value='6' />
-            <StatPill icon={<Timer className='size-4' />} label='Zeitstrafen' value='2' />
-          </div>
-
-          {/* Shot map */}
-          <div className='mt-3 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10'>
-            <div className='flex items-center justify-between'>
-              <span className='text-[11px] font-semibold text-white/70'>Wurfquote nach Position</span>
-              <span className='rounded-full bg-emerald-400/15 px-2 py-0.5 text-[10px] font-bold text-emerald-300'>
-                +12 %
-              </span>
-            </div>
-            <div className='mt-4 flex h-24 items-end justify-between gap-2'>
-              {shotBars.map((bar) => (
-                <div key={bar.label} className='flex flex-1 flex-col items-center gap-1.5'>
-                  <div className='flex h-20 w-full items-end rounded-md bg-white/5'>
-                    <div
-                      className={`w-full rounded-md bg-gradient-to-t from-[#f97316] to-[#fdba74] ${bar.made}`}
-                    />
-                  </div>
-                  <span className='text-[9px] font-semibold text-white/45'>{bar.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Quick action buttons */}
-          <div className='mt-3 grid grid-cols-3 gap-2'>
-            <div className='rounded-xl bg-[#f97316] py-2.5 text-center text-xs font-bold text-white'>
-              Tor
-            </div>
-            <div className='rounded-xl bg-white/10 py-2.5 text-center text-xs font-bold text-white'>
-              Parade
-            </div>
-            <div className='rounded-xl bg-white/10 py-2.5 text-center text-xs font-bold text-white'>
-              Fehlwurf
-            </div>
+          {/* Real app screenshot, cropped to the phone screen */}
+          <div className='relative aspect-[9/16] w-full overflow-hidden bg-[#0b1220]'>
+            <Image
+              src='/recordStatsInGame.png'
+              alt='MatchPulse Live-Erfassung – Tore, Würfe und Paraden in Echtzeit erfassen'
+              fill
+              priority
+              sizes='(max-width: 1024px) 100vw, 420px'
+              className='object-cover object-top'
+            />
           </div>
         </div>
       </div>
