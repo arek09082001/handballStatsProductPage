@@ -88,8 +88,12 @@ export const CLUB_CONFIG = {
   website: {
     domain: 'handballwebseite.de',
     url: 'https://www.handballwebseite.de',
+    demoUrl: 'https://demo.handballwebseite.de',
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
+    },
+    get demoUrlWithoutProtocol() {
+      return this.demoUrl.replace('https://', '');
     },
   },
 

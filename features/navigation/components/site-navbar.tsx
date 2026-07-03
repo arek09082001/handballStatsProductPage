@@ -1,8 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, Rocket, X } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { ArrowUpRight, Menu, Rocket, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
@@ -18,11 +20,19 @@ export default function SiteNavbar() {
     isScrollingUp,
     toggleMenu,
     closeMenu,
-    isActive,
+    isItemActive,
     handleBrandClick,
   } = useSiteNavbar();
 
+  const [hoveredIdent, setHoveredIdent] = useState<number | null>(null);
+
   const isNavInFocus = isOpen || isScrollingUp || !isScrolled;
+
+  // The highlight pill rests on the active (scroll-spy) item, but follows the
+  // hovered item while the pointer is over the nav — so Live-Demo takes the
+  // pill too even though it has no page section of its own.
+  const activeItem = siteNavigationItems.find((item) => isItemActive(item));
+  const highlightedIdent = hoveredIdent ?? activeItem?.ident ?? null;
 
   return (
     <>
@@ -87,28 +97,51 @@ export default function SiteNavbar() {
           </div>
 
           <div className='hidden flex-1 items-center justify-center lg:flex'>
-            <div className='flex items-center gap-1 rounded-full bg-slate-100/80 p-1'>
-              {siteNavigationItems.map((item) => (
-                <Link
-                  key={item.ident}
-                  href={item.href}
-                  title={t(`items.${item.labelKey}`)}
-                  aria-current={
-                    item.href.includes('#')
-                      ? undefined
-                      : isActive(item.href)
-                        ? 'page'
-                        : undefined
-                  }
-                  className={cn(
-                    'rounded-full px-3 py-2 text-sm font-medium tracking-[-0.01em] transition-colors',
-                    !item.href.includes('#') && isActive(item.href)
-                      ? 'bg-white text-slate-950 shadow-sm'
-                      : 'text-slate-500 hover:text-slate-900',
-                  )}>
-                  {t(`items.${item.labelKey}`)}
-                </Link>
-              ))}
+            <div
+              className='flex items-center gap-1 rounded-full bg-slate-100/80 p-1'
+              onMouseLeave={() => setHoveredIdent(null)}>
+              {siteNavigationItems.map((item) => {
+                const active = isItemActive(item);
+                const highlighted = item.ident === highlightedIdent;
+
+                return (
+                  <Link
+                    key={item.ident}
+                    href={item.href}
+                    title={t(`items.${item.labelKey}`)}
+                    target={item.external ? '_blank' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
+                    aria-current={active ? 'page' : undefined}
+                    onMouseEnter={() => setHoveredIdent(item.ident)}
+                    className={cn(
+                      'relative inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200',
+                      highlighted
+                        ? 'text-slate-950'
+                        : item.external
+                          ? 'text-[#ea580c] hover:text-[#c2410c]'
+                          : 'text-slate-500 hover:text-slate-900',
+                    )}>
+                    {highlighted && (
+                      <motion.span
+                        layoutId='navActivePill'
+                        className='absolute inset-0 rounded-full bg-white shadow-sm'
+                        transition={{ type: 'spring', stiffness: 420, damping: 34 }}
+                      />
+                    )}
+                    <span className='relative z-10 inline-flex items-center gap-1.5'>
+                      {item.external && (
+                        <span
+                          className={cn(
+                            'size-1.5 animate-pulse rounded-full',
+                            highlighted ? 'bg-[#ea580c]' : 'bg-[#f97316]',
+                          )}
+                        />
+                      )}
+                      {t(`items.${item.labelKey}`)}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
@@ -183,31 +216,40 @@ export default function SiteNavbar() {
             </span>
           </button>
 
-          {siteNavigationItems.map((item) => (
-            <Link
-              key={item.ident}
-              href={item.href}
-              title={t(`items.${item.labelKey}`)}
-              onClick={closeMenu}
-              aria-current={
-                item.href.includes('#')
-                  ? undefined
-                  : isActive(item.href)
-                    ? 'page'
-                    : undefined
-              }
-              className={cn(
-                'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
-                !item.href.includes('#') && isActive(item.href)
-                  ? 'bg-slate-950 text-white'
-                  : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
-              )}>
-              <span>{t(`items.${item.labelKey}`)}</span>
-              {!item.href.includes('#') && isActive(item.href) && (
-                <span className='size-2 rounded-full bg-white' />
-              )}
-            </Link>
-          ))}
+          {siteNavigationItems.map((item) => {
+            const active = isItemActive(item);
+
+            return (
+              <Link
+                key={item.ident}
+                href={item.href}
+                title={t(`items.${item.labelKey}`)}
+                onClick={closeMenu}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noopener noreferrer' : undefined}
+                aria-current={active ? 'page' : undefined}
+                className={cn(
+                  'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
+                  item.external
+                    ? 'bg-orange-50 text-[#ea580c] hover:bg-orange-100'
+                    : active
+                      ? 'bg-slate-950 text-white'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
+                )}>
+                <span className='inline-flex items-center gap-2'>
+                  {item.external && (
+                    <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
+                  )}
+                  {t(`items.${item.labelKey}`)}
+                </span>
+                {item.external ? (
+                  <ArrowUpRight className='size-4' />
+                ) : (
+                  active && <span className='size-2 rounded-full bg-white' />
+                )}
+              </Link>
+            );
+          })}
 
           <Link
             href='/#newsletter'
