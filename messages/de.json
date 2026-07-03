@@ -32,6 +32,7 @@
       "home": "Start",
       "features": "Funktionen",
       "howItWorks": "So funktioniert's",
+      "demo": "Live-Demo",
       "faq": "FAQ",
       "contact": "Kontakt",
       "impressum": "Impressum"
@@ -514,11 +515,13 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "finalCta": {
-      "title": "Bring dein Team aufs nächste Level",
-      "description": "Erfasse dein erstes Spiel kostenlos und sieh selbst, wie viel in deinen Daten steckt.",
+      "title": "Erlebe MatchPulse in Aktion",
+      "description": "Klick dich durch eine voll ausgestattete Live-Demo mit echten Spieldaten – direkt im Browser, ganz ohne Account.",
       "primaryCta": "Kostenlos starten",
-      "secondaryCta": "In den Newsletter eintragen",
-      "note": "Verfügbar für iOS, Android und im Browser."
+      "note": "Verfügbar für iOS, Android und im Browser.",
+      "badge": "Live-Demo · keine Anmeldung nötig",
+      "demoCta": "Live-Demo öffnen",
+      "previewLabel": "Live-Erfassung"
     }
   },
   "newsletterConfirm": {

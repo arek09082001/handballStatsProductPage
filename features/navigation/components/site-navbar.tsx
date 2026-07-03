@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, Rocket, X } from 'lucide-react';
+import { ArrowUpRight, Menu, Rocket, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
@@ -93,19 +93,26 @@ export default function SiteNavbar() {
                   key={item.ident}
                   href={item.href}
                   title={t(`items.${item.labelKey}`)}
+                  target={item.external ? '_blank' : undefined}
+                  rel={item.external ? 'noopener noreferrer' : undefined}
                   aria-current={
-                    item.href.includes('#')
+                    item.external || item.href.includes('#')
                       ? undefined
                       : isActive(item.href)
                         ? 'page'
                         : undefined
                   }
                   className={cn(
-                    'rounded-full px-3 py-2 text-sm font-medium tracking-[-0.01em] transition-colors',
-                    !item.href.includes('#') && isActive(item.href)
+                    'inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium tracking-[-0.01em] transition-colors',
+                    !item.external && !item.href.includes('#') && isActive(item.href)
                       ? 'bg-white text-slate-950 shadow-sm'
-                      : 'text-slate-500 hover:text-slate-900',
+                      : item.external
+                        ? 'text-[#ea580c] hover:text-[#c2410c]'
+                        : 'text-slate-500 hover:text-slate-900',
                   )}>
+                  {item.external && (
+                    <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
+                  )}
                   {t(`items.${item.labelKey}`)}
                 </Link>
               ))}
@@ -189,8 +196,10 @@ export default function SiteNavbar() {
               href={item.href}
               title={t(`items.${item.labelKey}`)}
               onClick={closeMenu}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               aria-current={
-                item.href.includes('#')
+                item.external || item.href.includes('#')
                   ? undefined
                   : isActive(item.href)
                     ? 'page'
@@ -198,13 +207,23 @@ export default function SiteNavbar() {
               }
               className={cn(
                 'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
-                !item.href.includes('#') && isActive(item.href)
-                  ? 'bg-slate-950 text-white'
-                  : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
+                item.external
+                  ? 'bg-orange-50 text-[#ea580c] hover:bg-orange-100'
+                  : !item.href.includes('#') && isActive(item.href)
+                    ? 'bg-slate-950 text-white'
+                    : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
               )}>
-              <span>{t(`items.${item.labelKey}`)}</span>
-              {!item.href.includes('#') && isActive(item.href) && (
-                <span className='size-2 rounded-full bg-white' />
+              <span className='inline-flex items-center gap-2'>
+                {item.external && (
+                  <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
+                )}
+                {t(`items.${item.labelKey}`)}
+              </span>
+              {item.external ? (
+                <ArrowUpRight className='size-4' />
+              ) : (
+                !item.href.includes('#') &&
+                isActive(item.href) && <span className='size-2 rounded-full bg-white' />
               )}
             </Link>
           ))}

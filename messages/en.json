@@ -32,6 +32,7 @@
       "home": "Home",
       "features": "Features",
       "howItWorks": "How it works",
+      "demo": "Live demo",
       "faq": "FAQ",
       "contact": "Contact",
       "impressum": "Legal"
@@ -514,11 +515,13 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "finalCta": {
-      "title": "Take your team to the next level",
-      "description": "Track your first game for free and see for yourself how much your data holds.",
+      "title": "See MatchPulse in action",
+      "description": "Explore a fully loaded live demo with real match data – right in your browser, no account needed.",
       "primaryCta": "Start for free",
-      "secondaryCta": "Join the newsletter",
-      "note": "Available for iOS, Android and in the browser."
+      "note": "Available for iOS, Android and in the browser.",
+      "badge": "Live demo · no sign-up required",
+      "demoCta": "Open live demo",
+      "previewLabel": "Live tracking"
     }
   },
   "newsletterConfirm": {
