@@ -8,16 +8,13 @@ export const siteNavigationItems: NavigationItem[] = [
     ident: 0,
     href: '/',
     labelKey: 'home',
+    sectionId: 'home',
   },
   {
     ident: 1,
     href: '/#features',
     labelKey: 'features',
-  },
-  {
-    ident: 2,
-    href: '/#how-it-works',
-    labelKey: 'howItWorks',
+    sectionId: 'features',
   },
   {
     ident: 6,
@@ -29,15 +26,17 @@ export const siteNavigationItems: NavigationItem[] = [
     ident: 3,
     href: '/#faq',
     labelKey: 'faq',
+    sectionId: 'faq',
   },
   {
     ident: 4,
     href: '/#contact',
     labelKey: 'contact',
-  },
-  {
-    ident: 5,
-    href: '/impressum',
-    labelKey: 'impressum',
+    sectionId: 'contact',
   },
 ];
+
+/** In-page section ids tracked by the navbar scroll-spy, in document order. */
+export const scrollSpySectionIds = siteNavigationItems
+  .map((item) => item.sectionId)
+  .filter((id): id is string => Boolean(id));
