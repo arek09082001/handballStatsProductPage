@@ -383,45 +383,6 @@
         }
       ]
     },
-    "features": {
-      "eyebrow": "Funktionen",
-      "title": "Alles, was dein Team besser macht",
-      "description": "Von der Live-Erfassung bis zur Tiefenanalyse – MatchPulse gibt dir die Werkzeuge, die Profi-Teams nutzen.",
-      "items": [
-        {
-          "title": "Live-Erfassung",
-          "description": "Tore, Würfe, 7m, Paraden, Zeitstrafen und Wechsel – mit einem Tap erfasst, ohne den Blick vom Spiel zu nehmen."
-        },
-        {
-          "title": "Spielerstatistiken",
-          "description": "Wurfquoten, Effizienz, Plus/Minus und Einsatzzeiten für jeden Spieler – automatisch berechnet."
-        },
-        {
-          "title": "Wurfbilder & Heatmaps",
-          "description": "Sieh auf einen Blick, von welchen Positionen getroffen wird – und wo der Gegner verwundbar ist."
-        },
-        {
-          "title": "Team- & Kaderverwaltung",
-          "description": "Verwalte Spieler, Spiele und Saisons an einem Ort und behalte die Entwicklung im Griff."
-        },
-        {
-          "title": "Echtzeit-Dashboard",
-          "description": "Halbzeit-Bilanz, Trends und Live-Vergleiche direkt während des Spiels auf deinem Gerät."
-        },
-        {
-          "title": "Export & Teilen",
-          "description": "Teile Auswertungen als Link oder PDF mit Spielern, Co-Trainern und dem Vorstand."
-        },
-        {
-          "title": "Turniermodus",
-          "description": "Lege Turniere mit mehreren Teams an, starte Live-Spiele direkt daraus – die Tabelle aktualisiert sich automatisch."
-        },
-        {
-          "title": "KI-Analyse",
-          "description": "KI-gestützte Auswertung für einzelne Spiele, dein ganzes Team und einzelne Spieler – mit konkreten Empfehlungen."
-        }
-      ]
-    },
     "showcase": {
       "eyebrow": "Produkt-Tour",
       "title": "So sieht MatchPulse im Einsatz aus",

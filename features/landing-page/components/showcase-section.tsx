@@ -68,7 +68,7 @@ export default function ShowcaseSection() {
 
   return (
     <section
-      id='showcase'
+      id='features'
       ref={sectionRef}
       className='w-full scroll-mt-24 bg-muted/30 py-20 md:py-24'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
