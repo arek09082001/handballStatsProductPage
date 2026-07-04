@@ -11,25 +11,44 @@ interface ShowcaseItem {
   description: string;
 }
 
-/** Real in-app screenshots paired with the translated copy, in document order. */
+/**
+ * Real in-app screenshots paired with the translated copy, in document order.
+ * Entries flagged `pending` render a placeholder frame until the real shot is
+ * dropped at `src` – then just remove the flag.
+ */
 const SHOTS = [
   {
     src: '/recordStatsInGame.png',
     width: 1916,
     height: 879,
-    labelKey: 'items.0',
   },
   {
     src: '/gameListOverview.png',
     width: 1899,
     height: 874,
-    labelKey: 'items.1',
   },
   {
     src: '/statsTableInGame.png',
     width: 1896,
     height: 874,
-    labelKey: 'items.2',
+  },
+  {
+    src: '/shotMaps.png',
+    width: 1900,
+    height: 874,
+    pending: true,
+  },
+  {
+    src: '/teamManagement.png',
+    width: 1900,
+    height: 874,
+    pending: true,
+  },
+  {
+    src: '/exportShare.png',
+    width: 1900,
+    height: 874,
+    pending: true,
   },
 ] as const;
 
@@ -68,7 +87,7 @@ export default function ShowcaseSection() {
 
   return (
     <section
-      id='showcase'
+      id='features'
       ref={sectionRef}
       className='w-full scroll-mt-24 bg-muted/30 py-20 md:py-24'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
@@ -116,6 +135,12 @@ export default function ShowcaseSection() {
                     height={shot.height}
                     label={item.title}
                     priority={index === 0}
+                    pending={'pending' in shot && shot.pending}
+                    pendingHint={
+                      'pending' in shot && shot.pending
+                        ? `public${shot.src}`
+                        : undefined
+                    }
                   />
                 </div>
               </div>

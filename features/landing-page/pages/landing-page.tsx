@@ -1,7 +1,6 @@
 import StructuredData from '@/components/seo/structured-data';
 import ProductHero from '../components/product-hero';
 import StatsBarSection from '../components/stats-bar-section';
-import FeaturesSection from '../components/features-section';
 import ShowcaseSection from '../components/showcase-section';
 import AiAnalyticsSection from '../components/ai-analytics-section';
 import TournamentSection from '../components/tournament-section';
@@ -19,7 +18,6 @@ export default function LandingPage() {
       <div className='flex h-full w-full flex-col items-center'>
         <ProductHero />
         <StatsBarSection />
-        <FeaturesSection />
         <ShowcaseSection />
         <AiAnalyticsSection />
         <TournamentSection />

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { ImageIcon } from 'lucide-react';
 
 interface AppScreenshotProps {
   src: string;
@@ -10,6 +11,14 @@ interface AppScreenshotProps {
   priority?: boolean;
   sizes?: string;
   className?: string;
+  /**
+   * Renders a placeholder body instead of the image – used while a real
+   * screenshot is still missing. Drop the file at `src` and remove this flag
+   * to switch to the real shot.
+   */
+  pending?: boolean;
+  /** Optional hint shown inside the placeholder (e.g. the expected filename). */
+  pendingHint?: string;
 }
 
 /**
@@ -26,6 +35,8 @@ export default function AppScreenshot({
   priority = false,
   sizes = '(max-width: 1024px) 100vw, 60vw',
   className,
+  pending = false,
+  pendingHint,
 }: AppScreenshotProps) {
   return (
     <div
@@ -46,16 +57,32 @@ export default function AppScreenshot({
         ) : null}
       </div>
 
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        sizes={sizes}
-        priority={priority}
-        loading={priority ? 'eager' : 'lazy'}
-        className='h-auto w-full'
-      />
+      {pending ? (
+        <div
+          style={{ aspectRatio: `${width} / ${height}` }}
+          className='flex w-full flex-col items-center justify-center gap-3 bg-[radial-gradient(ellipse_60%_60%_at_50%_40%,rgba(249,115,22,0.12),transparent)] px-6 text-center'>
+          <span className='flex size-12 items-center justify-center rounded-2xl bg-white/5 text-[#fdba74] ring-1 ring-white/10'>
+            <ImageIcon className='size-6' />
+          </span>
+          <span className='text-sm font-semibold text-white/80'>Screenshot folgt</span>
+          {pendingHint ? (
+            <span className='rounded-md bg-black/30 px-2 py-1 font-mono text-xs text-white/40'>
+              {pendingHint}
+            </span>
+          ) : null}
+        </div>
+      ) : (
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          sizes={sizes}
+          priority={priority}
+          loading={priority ? 'eager' : 'lazy'}
+          className='h-auto w-full'
+        />
+      )}
     </div>
   );
 }

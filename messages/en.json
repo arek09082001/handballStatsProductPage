@@ -383,45 +383,6 @@
         }
       ]
     },
-    "features": {
-      "eyebrow": "Features",
-      "title": "Everything that makes your team better",
-      "description": "From live tracking to deep analysis – MatchPulse gives you the tools pro teams rely on.",
-      "items": [
-        {
-          "title": "Live tracking",
-          "description": "Goals, shots, 7m, saves, suspensions and substitutions – captured with a single tap, without taking your eyes off the game."
-        },
-        {
-          "title": "Player stats",
-          "description": "Shooting percentages, efficiency, plus/minus and playing time for every player – calculated automatically."
-        },
-        {
-          "title": "Shot maps & heatmaps",
-          "description": "See at a glance which positions score – and where the opponent is vulnerable."
-        },
-        {
-          "title": "Team & roster management",
-          "description": "Manage players, games and seasons in one place and stay on top of every development."
-        },
-        {
-          "title": "Real-time dashboard",
-          "description": "Half-time summaries, trends and live comparisons right on your device during the game."
-        },
-        {
-          "title": "Export & share",
-          "description": "Share insights as a link or PDF with players, assistant coaches and the board."
-        },
-        {
-          "title": "Tournament mode",
-          "description": "Create tournaments with several teams and start live games right from them – the standings update automatically."
-        },
-        {
-          "title": "AI analysis",
-          "description": "AI-powered insights for single games, your whole team and individual players – with concrete recommendations."
-        }
-      ]
-    },
     "showcase": {
       "eyebrow": "Product tour",
       "title": "See MatchPulse in action",
@@ -441,6 +402,21 @@
           "badge": "Instantly calculated",
           "title": "Player stats in real time",
           "description": "Goals, shots, percentage, assists, ball wins, blocks and discipline – calculated automatically for every player, while the game is still running."
+        },
+        {
+          "badge": "Shot maps & heatmaps",
+          "title": "Shots & goals on the court",
+          "description": "Visualize every shot and goal right on the court. Spot heatmaps, strong zones and the patterns that decide games – per player or for the whole team."
+        },
+        {
+          "badge": "Team & roster",
+          "title": "Team & roster management",
+          "description": "Manage players, jersey numbers and positions in one place. Build the matchday roster and reuse the same profiles across every game."
+        },
+        {
+          "badge": "Export & share",
+          "title": "Export & share your analysis",
+          "description": "Share stats and reports with your coaching staff and team, or export them for the debrief – the finished analysis is just one tap away."
         }
       ]
     },

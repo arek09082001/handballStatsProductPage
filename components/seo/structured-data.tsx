@@ -8,21 +8,16 @@ interface FaqItem {
   answer: string;
 }
 
-interface FeatureItem {
-  title: string;
-  description: string;
-}
-
 /**
  * Renders the JSON-LD graph for the home page (WebPage, SoftwareApplication
- * and FAQPage). FAQ and feature data are read from the same translations as
- * the visible sections, so the structured data always mirrors the on-page
- * content – a requirement for Google FAQ rich results. Falls back to the
- * constants in `lib/seo.ts` if a translation is unavailable.
+ * and FAQPage). FAQ data is read from the same translations as the visible
+ * section, so the structured data always mirrors the on-page content – a
+ * requirement for Google FAQ rich results. The machine-readable feature list
+ * comes from the `APP_FEATURES` constant in `lib/seo.ts`.
  */
 export default async function StructuredData() {
   let faqItems: FaqItem[] = [...HOMEPAGE_FAQS];
-  let featureList: string[] = APP_FEATURES.map((feature) => feature.name);
+  const featureList: string[] = APP_FEATURES.map((feature) => feature.name);
 
   try {
     const tFaq = await getTranslations('productPage.faq');
@@ -32,16 +27,6 @@ export default async function StructuredData() {
     }
   } catch {
     // keep fallback FAQ
-  }
-
-  try {
-    const tFeatures = await getTranslations('productPage.features');
-    const items = tFeatures.raw('items') as FeatureItem[] | undefined;
-    if (Array.isArray(items) && items.length > 0) {
-      featureList = items.map((feature) => feature.title);
-    }
-  } catch {
-    // keep fallback feature list
   }
 
   const structuredData = {
