@@ -402,6 +402,21 @@
           "badge": "Sofort ausgewertet",
           "title": "Spielerstatistiken in Echtzeit",
           "description": "Tore, Würfe, Quote, Assists, Ballgewinne, Blocks und Disziplin – für jeden Spieler automatisch berechnet, schon während das Spiel läuft."
+        },
+        {
+          "badge": "Wurfbilder & Heatmaps",
+          "title": "Würfe & Tore auf dem Spielfeld",
+          "description": "Visualisiere jeden Wurf und jedes Tor direkt auf dem Feld. Erkenne Heatmaps, starke Zonen und Muster, die Spiele entscheiden – pro Spieler oder fürs ganze Team."
+        },
+        {
+          "badge": "Team & Kader",
+          "title": "Team- & Kaderverwaltung",
+          "description": "Verwalte Spieler, Rückennummern und Positionen an einem Ort. Stelle den Spieltagskader zusammen und greife über alle Spiele auf dieselben Profile zu."
+        },
+        {
+          "badge": "Export & Teilen",
+          "title": "Auswertungen exportieren & teilen",
+          "description": "Teile Statistiken und Berichte mit Trainerstab und Team oder exportiere sie für die Nachbesprechung – die fertige Auswertung ist nur einen Tap entfernt."
         }
       ]
     },
