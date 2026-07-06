@@ -1,6 +1,6 @@
 {
   "footerSection": {
-    "description": "MatchPulse verwandelt jedes Spiel in präzise Statistiken – damit Trainer und Teams besser werden.",
+    "description": "Statix verwandelt jedes Spiel in präzise Statistiken – damit Trainer und Teams besser werden.",
     "headings": {
       "product": "Produkt",
       "legal": "Rechtliches",
@@ -356,7 +356,7 @@
       "headlineLead": "Handball-Statistik",
       "headlineHighlight": "live erfassen",
       "headlineTail": "und mehr Spiele gewinnen.",
-      "description": "Mit MatchPulse erfasst du die komplette Handball-Statistik live von der Bank: Tore, Würfe, Paraden und Wurfquoten – automatisch ausgewertet und in Echtzeit verfügbar.",
+      "description": "Mit Statix erfasst du die komplette Handball-Statistik live von der Bank: Tore, Würfe, Paraden und Wurfquoten – automatisch ausgewertet und in Echtzeit verfügbar.",
       "primaryCta": "Kostenlos starten",
       "secondaryCta": "Funktionen ansehen",
       "trust1": "In Minuten startklar",
@@ -385,7 +385,7 @@
     },
     "showcase": {
       "eyebrow": "Produkt-Tour",
-      "title": "So sieht MatchPulse im Einsatz aus",
+      "title": "So sieht Statix im Einsatz aus",
       "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung – ein Blick in die App.",
       "items": [
         {
@@ -423,7 +423,7 @@
     "ai": {
       "eyebrow": "KI-Analyse",
       "title": "KI-Analysen, die erklären warum – nicht nur was",
-      "description": "MatchPulse wertet deine erfassten Spiele mit KI aus – auf drei Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison und als Scouting-Profil für einzelne Spieler.",
+      "description": "Statix wertet deine erfassten Spiele mit KI aus – auf drei Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison und als Scouting-Profil für einzelne Spieler.",
       "scopes": [
         {
           "title": "Einzelspiel",
@@ -497,7 +497,7 @@
         },
         {
           "title": "Live erfassen",
-          "description": "Tippe jede Aktion während des Spiels. MatchPulse berechnet alle Statistiken automatisch."
+          "description": "Tippe jede Aktion während des Spiels. Statix berechnet alle Statistiken automatisch."
         },
         {
           "title": "Analysieren & gewinnen",
@@ -506,16 +506,16 @@
       ]
     },
     "pros": {
-      "eyebrow": "Warum MatchPulse",
+      "eyebrow": "Warum Statix",
       "title": "Schluss mit Statistik auf dem Bierdeckel",
-      "description": "Vergleiche selbst, wie viel einfacher und aussagekräftiger deine Spielanalyse mit MatchPulse wird.",
+      "description": "Vergleiche selbst, wie viel einfacher und aussagekräftiger deine Spielanalyse mit Statix wird.",
       "oldTitle": "Zettel & Stift",
       "oldPoints": [
         "Zahlen, die nach dem Spiel niemand mehr auswertet",
         "Fehleranfällig und zeitraubend in der Nachbereitung",
         "Keine Wurfbilder, keine Trends, keine Vergleiche"
       ],
-      "newTitle": "Mit MatchPulse",
+      "newTitle": "Mit Statix",
       "newPoints": [
         "Alle Statistiken live und automatisch berechnet",
         "Wurfbilder, Heatmaps und Spielertrends auf einen Blick",
@@ -530,7 +530,7 @@
       "items": [
         {
           "question": "Brauche ich technisches Vorwissen?",
-          "answer": "Nein. MatchPulse ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung."
+          "answer": "Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung."
         },
         {
           "question": "Funktioniert die App offline in der Halle?",
@@ -541,7 +541,7 @@
           "answer": "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export."
         },
         {
-          "question": "Was kostet MatchPulse?",
+          "question": "Was kostet Statix?",
           "answer": "Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot."
         }
       ]
@@ -571,7 +571,7 @@
     "contact": {
       "eyebrow": "Kontakt",
       "title": "Schreib uns – wir sind für dich da",
-      "description": "Du hast Fragen zu MatchPulse, möchtest dein Team anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
+      "description": "Du hast Fragen zu Statix, möchtest dein Team anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
       "namePlaceholder": "Dein Name",
       "emailPlaceholder": "Deine E-Mail-Adresse",
       "topicPlaceholder": "Worum geht's?",
@@ -589,7 +589,7 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "finalCta": {
-      "title": "Erlebe MatchPulse in Aktion",
+      "title": "Erlebe Statix in Aktion",
       "description": "Klick dich durch eine voll ausgestattete Live-Demo mit echten Spieldaten – direkt im Browser, ganz ohne Account.",
       "primaryCta": "Kostenlos starten",
       "note": "Verfügbar für iOS, Android und im Browser.",
@@ -600,12 +600,12 @@
   },
   "newsletterConfirm": {
     "title": "Anmeldung bestätigen",
-    "description": "Klicke auf den Button, um deine Anmeldung zum MatchPulse-Newsletter abzuschließen.",
+    "description": "Klicke auf den Button, um deine Anmeldung zum Statix-Newsletter abzuschließen.",
     "confirmButton": "Anmeldung bestätigen",
     "pending": "Wird bestätigt…",
     "ignoreHint": "Du hast dich nicht angemeldet? Dann schließe diese Seite einfach – ohne Bestätigung passiert nichts.",
     "successTitle": "Anmeldung bestätigt!",
-    "successDescription": "Vielen Dank – du bist jetzt für den MatchPulse-Newsletter angemeldet.",
+    "successDescription": "Vielen Dank – du bist jetzt für den Statix-Newsletter angemeldet.",
     "backHome": "Zur Startseite",
     "invalidTitle": "Link ungültig",
     "invalidDescription": "Dieser Bestätigungslink ist ungültig oder abgelaufen. Bitte melde dich erneut an.",

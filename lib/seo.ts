@@ -43,7 +43,7 @@ export const SITE_LINKS = [
         name: 'Startseite',
         path: '/',
         description:
-            'MatchPulse – die Statistik-App für Trainer, Vereine und Handball-Teams.',
+            'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams.',
     },
     {
         name: 'Impressum',
@@ -92,7 +92,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Brauche ich technisches Vorwissen?',
         answer:
-            'Nein. MatchPulse ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung.',
+            'Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung.',
     },
     {
         question: 'Funktioniert die App offline in der Halle?',
@@ -105,7 +105,7 @@ export const HOMEPAGE_FAQS = [
             'Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export.',
     },
     {
-        question: 'Was kostet MatchPulse?',
+        question: 'Was kostet Statix?',
         answer:
             'Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot.',
     },
@@ -130,9 +130,9 @@ type CreatePageMetadataArgs = {
     noIndex?: boolean;
     /**
      * When true, the title is used as-is and the parent layout's title
-     * template (`%s | MatchPulse`) is NOT appended. Use this for the
+     * template (`%s | Statix`) is NOT appended. Use this for the
      * home page, whose title already contains the brand – otherwise the
-     * brand would be duplicated ("… | MatchPulse | MatchPulse").
+     * brand would be duplicated ("… | Statix | Statix").
      */
     absoluteTitle?: boolean;
 };

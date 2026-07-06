@@ -34,7 +34,7 @@ export default function NotFound() {
             </h2>
             <p className='mx-auto mb-10 max-w-xl text-base leading-relaxed text-slate-200 md:text-lg'>
               Die angeforderte Seite konnten wir nicht finden. Spring zurück zur
-              Startseite und entdecke, wie MatchPulse dein Team besser macht.
+              Startseite und entdecke, wie Statix dein Team besser macht.
             </p>
           </motion.div>
 

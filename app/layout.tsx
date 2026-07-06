@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'MatchPulse – Handball-Statistik App zum Live-Erfassen',
+      'Statix – Handball-Statistik App zum Live-Erfassen',
     template: `%s | ${CLUB_CONFIG.fullName}`,
   },
   description: CLUB_CONFIG.seo.description,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: SITE_URL,
-    title: 'MatchPulse – Handball-Statistik App zum Live-Erfassen',
+    title: 'Statix – Handball-Statistik App zum Live-Erfassen',
     description: CLUB_CONFIG.seo.description,
     siteName: CLUB_CONFIG.fullName,
     images: [
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MatchPulse – Handball-Statistik App zum Live-Erfassen',
+    title: 'Statix – Handball-Statistik App zum Live-Erfassen',
     description: CLUB_CONFIG.seo.description,
     images: [
       {
