@@ -1,11 +1,15 @@
 import { CLUB_CONFIG } from '@/lib/club-config';
+import { generateStatixEmailShell } from '@/lib/utils/statix-email-shell';
 
 /**
  * Email Templates Utility
- * 
- * This module provides reusable email templates for confirmation emails
- * sent to users after form submissions.
+ *
+ * Reusable transactional-email templates. Every template renders its body into
+ * the shared Statix email shell (`generateStatixEmailShell`) so all outgoing
+ * mail — confirmations, notifications, newsletter — shares one branded frame.
  */
+
+const ACCENT = '#ea6a1d';
 
 interface ContactConfirmationData {
   name: string;
@@ -25,6 +29,10 @@ interface RentalConfirmationData {
   eventDate: string;
 }
 
+interface NewsletterConfirmationData {
+  confirmUrl: string;
+}
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, '&amp;')
@@ -34,142 +42,107 @@ function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
-interface NewsletterConfirmationData {
-  confirmUrl: string;
+// ─── Shared content building blocks ──────────────────────────────────────────
+
+function eyebrow(text: string): string {
+  return `<p style="margin:0 0 6px;font-size:10px;color:${ACCENT};text-transform:uppercase;letter-spacing:0.15em;font-family:monospace;font-weight:600;">${text}</p>`;
 }
+
+function heading(html: string): string {
+  return `<h2 style="margin:0 0 18px;font-size:23px;color:#0f172a;font-weight:800;letter-spacing:-0.03em;line-height:1.3;">${html}</h2>`;
+}
+
+function paragraph(html: string, marginBottom = 28): string {
+  return `<p style="margin:0 0 ${marginBottom}px;font-size:15px;color:#374151;line-height:1.75;">${html}</p>`;
+}
+
+function ctaButton(url: string, label: string): string {
+  return `
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 28px;">
+      <tr>
+        <td style="border-radius:10px;background:${ACCENT};">
+          <a href="${url}" style="display:inline-block;padding:15px 32px;color:#ffffff;font-size:15px;font-weight:700;text-decoration:none;letter-spacing:-0.01em;border-radius:10px;">${label}&nbsp;&rarr;</a>
+        </td>
+      </tr>
+    </table>`;
+}
+
+function infoCard(innerHtml: string): string {
+  return `<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 18px;margin:0 0 20px;">${innerHtml}</div>`;
+}
+
+// ─── Newsletter double opt-in ────────────────────────────────────────────────
 
 /**
  * Generate the newsletter double opt-in confirmation email.
- *
- * The email contains a link back to the site's confirmation page; the
- * subscription is only finalised once the recipient clicks it.
  */
 export function generateNewsletterConfirmationEmail(
   data: NewsletterConfirmationData
 ): { subject: string; htmlContent: string } {
   const confirmUrl = data.confirmUrl;
-
   const subject = `Bitte bestätige deine Newsletter-Anmeldung – ${CLUB_CONFIG.name}`;
 
-  const htmlContent = `
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #0f172a; background: #ffffff;">
-      <div style="background: linear-gradient(135deg, #0b1220 0%, #101a36 55%, #0b1220 100%); padding: 32px 28px; border-radius: 16px 16px 0 0; text-align: center;">
-        <p style="margin: 0; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: #fdba74;">${CLUB_CONFIG.name} Newsletter</p>
-        <h1 style="margin: 10px 0 0 0; color: #ffffff; font-size: 26px; line-height: 1.3;">Nur noch ein Schritt</h1>
-      </div>
-
-      <div style="padding: 28px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 16px 16px;">
-        <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.6; color: #334155;">
-          Hallo,
-        </p>
-        <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #334155;">
-          vielen Dank für dein Interesse am <strong>${CLUB_CONFIG.name}</strong>-Newsletter.
-          Um deine Anmeldung abzuschließen, bestätige bitte deine E-Mail-Adresse mit
-          einem Klick auf den Button.
-        </p>
-
-        <div style="text-align: center; margin: 0 0 24px 0;">
-          <a href="${confirmUrl}" style="display: inline-block; background: linear-gradient(90deg, #f97316 0%, #ea580c 100%); color: #ffffff; font-size: 16px; font-weight: bold; text-decoration: none; padding: 16px 36px; border-radius: 12px;">
-            Anmeldung bestätigen
-          </a>
-        </div>
-
-        <p style="margin: 0 0 6px 0; font-size: 13px; line-height: 1.6; color: #64748b;">
-          Falls der Button nicht funktioniert, kopiere diesen Link in deinen Browser:
-        </p>
-        <p style="margin: 0 0 22px 0; font-size: 13px; line-height: 1.6; word-break: break-all;">
-          <a href="${confirmUrl}" style="color: #ea6a1d; text-decoration: underline;">${confirmUrl}</a>
-        </p>
-
-        <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 14px 16px; margin: 0 0 22px 0;">
-          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #1e3a8a;">
-            Du hast dich nicht angemeldet? Dann ignoriere diese E-Mail einfach –
-            ohne Bestätigung wird deine Adresse <strong>nicht</strong> in unseren Verteiler aufgenommen.
-          </p>
-        </div>
-
-        <div style="padding-top: 18px; border-top: 1px solid #e5e7eb;">
-          <p style="margin: 0 0 6px 0; font-size: 13px; color: #334155;"><strong>${CLUB_CONFIG.fullName}</strong></p>
-          <p style="margin: 0 0 6px 0; font-size: 13px; color: #64748b;">${CLUB_CONFIG.address.street}, ${CLUB_CONFIG.address.cityWithPostal}</p>
-          <p style="margin: 0; font-size: 13px; color: #64748b;">
-            Web: <a href="${CLUB_CONFIG.website.url}" style="color: #ea6a1d; text-decoration: none;">${CLUB_CONFIG.website.urlWithoutProtocol}</a>
-          </p>
-        </div>
-
-        <div style="text-align: center; margin-top: 18px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
-          <p style="font-size: 12px; color: #94a3b8; margin: 0;">${CLUB_CONFIG.display.copyright}</p>
-        </div>
-      </div>
-    </div>
+  const content = `
+    ${eyebrow('Newsletter Bestätigung')}
+    ${heading('Nur noch ein Schritt')}
+    ${paragraph('Vielen Dank für dein Interesse am <strong>Statix</strong>-Newsletter.', 12)}
+    ${paragraph('Bestätige deine E-Mail-Adresse mit einem Klick, um ab sofort Produktneuheiten, Tipps und Updates rund um Handball-Statistik zu erhalten.')}
+    ${ctaButton(confirmUrl, 'Anmeldung bestätigen')}
+    ${infoCard(
+      `<p style="margin:0 0 8px;font-size:13px;color:#64748b;line-height:1.6;">Falls der Button nicht funktioniert, kopiere diesen Link in deinen Browser:</p>
+       <p style="margin:0;font-size:13px;line-height:1.6;word-break:break-all;"><a href="${confirmUrl}" style="color:${ACCENT};text-decoration:underline;">${confirmUrl}</a></p>`
+    )}
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      Du hast dich nicht angemeldet? Dann ignoriere diese E-Mail einfach – ohne Bestätigung wird deine Adresse <strong>nicht</strong> in unseren Verteiler aufgenommen.
+    </p>
   `;
 
-  return { subject, htmlContent };
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
 }
 
+// ─── Contact confirmation (to visitor) ───────────────────────────────────────
+
 /**
- * Generate confirmation email for contact form submission
+ * Generate confirmation email for contact form submission.
  */
 export function generateContactConfirmationEmail(
   data: ContactConfirmationData
 ): { subject: string; htmlContent: string } {
   const safeName = escapeHtml(data.name);
   const safeTopic = escapeHtml(data.topic);
+  const subject = `Ihre Anfrage ist eingegangen – ${CLUB_CONFIG.name}`;
 
-  const subject = `Ihre Anfrage ist eingegangen - ${CLUB_CONFIG.name}`;
-
-  const htmlContent = `
-    <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #0f172a; background: #ffffff;">
-      <div style="background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%); padding: 26px 24px; border-radius: 14px 14px 0 0;">
-        <p style="margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; color: #bfdbfe;">Kontaktanfrage</p>
-        <h1 style="margin: 8px 0 0 0; color: #ffffff; font-size: 26px; line-height: 1.25;">Vielen Dank, ${safeName}!</h1>
-      </div>
-
-      <div style="padding: 24px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 14px 14px;">
-        <p style="margin: 0 0 14px 0; color: #334155; font-size: 15px; line-height: 1.6;">
-          Ihre Nachricht zum Thema <strong>${safeTopic}</strong> ist erfolgreich bei uns eingegangen.
-        </p>
-        <p style="margin: 0 0 18px 0; color: #334155; font-size: 15px; line-height: 1.6;">
-          Wir melden uns zeitnah persönlich bei Ihnen zurück.
-        </p>
-
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 0 0 16px 0;">
-          <h2 style="margin: 0 0 10px 0; color: #1e293b; font-size: 16px;">Ihre Anfrage im Überblick</h2>
-          <p style="margin: 4px 0; font-size: 14px;"><strong>Thema:</strong> ${safeTopic}</p>
-          <p style="margin: 4px 0; font-size: 14px;"><strong>Status:</strong> Eingegangen</p>
-        </div>
-
-        <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 14px; margin: 0 0 18px 0;">
-          <p style="margin: 0; font-size: 14px; color: #1e3a8a; line-height: 1.5;">
-            <strong>Hinweis:</strong> Diese E-Mail wurde automatisch erstellt. Bitte antworten Sie nicht direkt auf diese Nachricht.
-            Bei Rückfragen erreichen Sie uns unter
-            <a href="mailto:${CLUB_CONFIG.email.info}" style="color: #1d4ed8; text-decoration: none;">${CLUB_CONFIG.email.info}</a>.
-          </p>
-        </div>
-
-        <div style="padding-top: 18px; border-top: 1px solid #e5e7eb;">
-          <p style="margin: 0 0 6px 0; font-size: 14px;"><strong>${CLUB_CONFIG.fullName}</strong></p>
-          <p style="margin: 0 0 6px 0; font-size: 14px;">${CLUB_CONFIG.address.street}, ${CLUB_CONFIG.address.cityWithPostal}</p>
-          <p style="margin: 0 0 6px 0; font-size: 14px;">
-            Telefon: <a href="tel:${CLUB_CONFIG.phone.main}" style="color: #1d4ed8; text-decoration: none;">${CLUB_CONFIG.phone.main}</a>
-          </p>
-          <p style="margin: 0; font-size: 14px;">
-            Web: <a href="${CLUB_CONFIG.website.url}" style="color: #1d4ed8; text-decoration: none;">${CLUB_CONFIG.website.urlWithoutProtocol}</a>
-          </p>
-        </div>
-
-        <div style="text-align: center; margin-top: 20px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
-          <p style="font-size: 12px; color: #64748b; margin: 0;">${CLUB_CONFIG.display.copyright}</p>
-        </div>
-      </div>
-    </div>
+  const content = `
+    ${eyebrow('Kontaktanfrage')}
+    ${heading(`Vielen Dank, ${safeName}!`)}
+    ${paragraph(`Ihre Nachricht zum Thema <strong>${safeTopic}</strong> ist erfolgreich bei uns eingegangen.`, 12)}
+    ${paragraph('Wir melden uns zeitnah persönlich bei Ihnen zurück.')}
+    ${infoCard(
+      `<h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Ihre Anfrage im Überblick</h3>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Thema:</strong> ${safeTopic}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Status:</strong> Eingegangen</p>`
+    )}
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      <strong style="color:#374151;">Hinweis:</strong> Diese E-Mail wurde automatisch erstellt. Bitte antworten Sie nicht direkt auf diese Nachricht.
+      Bei Rückfragen erreichen Sie uns unter
+      <a href="mailto:${CLUB_CONFIG.email.info}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${CLUB_CONFIG.email.info}</a>.
+    </p>
   `;
 
-  return { subject, htmlContent };
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
 }
 
+// ─── Contact notification (to team) ──────────────────────────────────────────
+
 /**
- * Generate the internal notification email that is sent to the team
- * whenever a visitor submits the contact form.
+ * Generate the internal notification email sent to the team when a visitor
+ * submits the contact form.
  */
 export function generateContactNotificationEmail(
   data: ContactNotificationData
@@ -178,39 +151,34 @@ export function generateContactNotificationEmail(
   const safeEmail = escapeHtml(data.email);
   const safeTopic = escapeHtml(data.topic);
   const safeMessage = escapeHtml(data.message).replace(/\n/g, '<br />');
-
   const subject = `Neue Kontaktanfrage: ${safeTopic} – ${safeName}`;
 
-  const htmlContent = `
-    <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #0f172a; background: #ffffff;">
-      <div style="background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%); padding: 26px 24px; border-radius: 14px 14px 0 0;">
-        <p style="margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; color: #bfdbfe;">Neue Kontaktanfrage</p>
-        <h1 style="margin: 8px 0 0 0; color: #ffffff; font-size: 24px; line-height: 1.25;">${safeTopic}</h1>
-      </div>
-
-      <div style="padding: 24px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 14px 14px;">
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 0 0 16px 0;">
-          <p style="margin: 4px 0; font-size: 14px;"><strong>Name:</strong> ${safeName}</p>
-          <p style="margin: 4px 0; font-size: 14px;"><strong>E-Mail:</strong> <a href="mailto:${safeEmail}" style="color: #1d4ed8; text-decoration: none;">${safeEmail}</a></p>
-          <p style="margin: 4px 0; font-size: 14px;"><strong>Thema:</strong> ${safeTopic}</p>
-        </div>
-
-        <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin: 0 0 16px 0;">
-          <h2 style="margin: 0 0 10px 0; color: #1e293b; font-size: 16px;">Nachricht</h2>
-          <p style="margin: 0; color: #334155; font-size: 15px; line-height: 1.6;">${safeMessage}</p>
-        </div>
-
-        <p style="margin: 0; font-size: 13px; color: #64748b;">
-          Antworten Sie direkt an
-          <a href="mailto:${safeEmail}" style="color: #1d4ed8; text-decoration: none;">${safeEmail}</a>,
-          um dieser Person zu antworten.
-        </p>
-      </div>
+  const content = `
+    ${eyebrow('Neue Kontaktanfrage')}
+    ${heading(safeTopic)}
+    ${infoCard(
+      `<p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Name:</strong> ${safeName}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>E-Mail:</strong> <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;">${safeEmail}</a></p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Thema:</strong> ${safeTopic}</p>`
+    )}
+    <div style="border:1px solid #e2e8f0;border-radius:10px;padding:16px 18px;margin:0 0 20px;">
+      <h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Nachricht</h3>
+      <p style="margin:0;font-size:15px;color:#374151;line-height:1.65;">${safeMessage}</p>
     </div>
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      Antworten Sie direkt an
+      <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${safeEmail}</a>,
+      um dieser Person zu antworten.
+    </p>
   `;
 
-  return { subject, htmlContent };
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
 }
+
+// ─── Consultation / rental confirmation ──────────────────────────────────────
 
 /**
  * Generate confirmation email for consultation requests.
@@ -220,11 +188,10 @@ export function generateContactNotificationEmail(
 export function generateRentalConfirmationEmail(
   data: RentalConfirmationData
 ): { subject: string; htmlContent: string } {
-  const { name, eventType, eventDate } = data;
+  const safeName = escapeHtml(data.name);
+  const safeEventType = escapeHtml(data.eventType);
+  const subject = `Bestätigung Ihrer Anfrage – ${CLUB_CONFIG.name}`;
 
-  const subject = `Bestätigung Ihrer Anfrage - ${CLUB_CONFIG.name}`;
-
-  // Format the date for better display
   const formatDate = (dateString: string) => {
     try {
       return new Date(dateString).toLocaleDateString('de-DE', {
@@ -237,77 +204,28 @@ export function generateRentalConfirmationEmail(
       return dateString;
     }
   };
+  const formattedDate = escapeHtml(formatDate(data.eventDate));
 
-  const formattedDate = formatDate(eventDate);
-
-  const htmlContent = `
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
-      <div style="background-color: ${CLUB_CONFIG.branding.themeColor}; padding: 20px; text-align: center;">
-        <h1 style="color: white; margin: 0;">${CLUB_CONFIG.name}</h1>
-        <p style="color: white; margin: 5px 0 0 0; font-size: 16px;">Projekt- und Beratungskontakt</p>
-      </div>
-
-      <div style="padding: 30px 20px;">
-        <h2 style="color: ${CLUB_CONFIG.branding.themeColor};">Vielen Dank für Ihre Anfrage!</h2>
-        
-        <p>Hallo ${name},</p>
-        
-        <p>wir haben Ihre Anfrage erfolgreich erhalten.</p>
-        
-        <div style="background-color: #f1f5f9; padding: 20px; border-radius: 8px; margin: 25px 0;">
-          <h3 style="color: ${CLUB_CONFIG.branding.themeColor}; margin-top: 0;">Ihre Anfrage:</h3>
-          <p style="margin: 5px 0;"><strong>Thema:</strong> ${eventType}</p>
-          <p style="margin: 5px 0;"><strong>Gewünschter Zeitpunkt:</strong> ${formattedDate}</p>
-        </div>
-
-        <p>Wir melden uns schnellstmöglich bei Ihnen, um die Details zu besprechen und den nächsten sinnvollen Schritt gemeinsam festzulegen.</p>
-
-        <div style="background-color: #fef3c7; padding: 20px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #f59e0b;">
-          <p style="margin: 0; font-size: 14px; color: #78350f;">
-            <strong>Wichtig:</strong> Dies ist eine automatische Eingangsbestätigung. 
-            Wir melden uns persönlich bei Ihnen zurück.
-          </p>
-        </div>
-
-        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 25px 0;">
-          <h4 style="margin-top: 0; color: ${CLUB_CONFIG.branding.themeColor};">Ihr Ansprechpartner:</h4>
-          <p style="margin: 5px 0;"><strong>${CLUB_CONFIG.contacts.primary.name}</strong></p>
-          <p style="margin: 5px 0;">${CLUB_CONFIG.contacts.primary.position}</p>
-          <p style="margin: 5px 0;">
-            Tel: <a href="tel:${CLUB_CONFIG.contacts.primary.phone}" style="color: ${CLUB_CONFIG.branding.themeColor}; text-decoration: none;">${CLUB_CONFIG.contacts.primary.phone}</a>
-          </p>
-        </div>
-
-        <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin: 25px 0;">
-          <p style="margin: 0; font-size: 14px; color: #666;">
-            <strong>Hinweis:</strong> Dies ist eine automatisch generierte Bestätigungsmail. 
-            Bitte antworten Sie nicht direkt auf diese E-Mail. 
-            Bei Rückfragen kontaktieren Sie uns bitte unter: 
-            <a href="mailto:${CLUB_CONFIG.email.info}" style="color: ${CLUB_CONFIG.branding.themeColor};">${CLUB_CONFIG.email.info}</a>
-          </p>
-        </div>
-
-        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
-          <p style="margin: 5px 0; font-size: 14px;"><strong>${CLUB_CONFIG.fullName}</strong></p>
-          <p style="margin: 5px 0; font-size: 14px;">${CLUB_CONFIG.address.street}</p>
-          <p style="margin: 5px 0; font-size: 14px;">${CLUB_CONFIG.address.cityWithPostal}</p>
-          <p style="margin: 5px 0; font-size: 14px;">
-            Tel: <a href="tel:${CLUB_CONFIG.phone.main}" style="color: ${CLUB_CONFIG.branding.themeColor}; text-decoration: none;">${CLUB_CONFIG.phone.main}</a>
-          </p>
-          <p style="margin: 5px 0; font-size: 14px;">
-            E-Mail: <a href="mailto:${CLUB_CONFIG.email.info}" style="color: ${CLUB_CONFIG.branding.themeColor}; text-decoration: none;">${CLUB_CONFIG.email.info}</a>
-          </p>
-          <p style="margin: 5px 0; font-size: 14px;">
-            Web: <a href="${CLUB_CONFIG.website.url}" style="color: ${CLUB_CONFIG.branding.themeColor}; text-decoration: none;">${CLUB_CONFIG.website.urlWithoutProtocol}</a>
-          </p>
-        </div>
-
-        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
-          <p style="font-size: 12px; color: #999; margin: 0;">${CLUB_CONFIG.display.copyright}</p>
-        </div>
-      </div>
-    </div>
+  const content = `
+    ${eyebrow('Anfrage erhalten')}
+    ${heading(`Vielen Dank, ${safeName}!`)}
+    ${paragraph('Wir haben Ihre Anfrage erfolgreich erhalten und melden uns schnellstmöglich, um die Details zu besprechen.')}
+    ${infoCard(
+      `<h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Ihre Anfrage</h3>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Thema:</strong> ${safeEventType}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Gewünschter Zeitpunkt:</strong> ${formattedDate}</p>`
+    )}
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      <strong style="color:#374151;">Hinweis:</strong> Dies ist eine automatische Eingangsbestätigung. Bitte antworten Sie nicht direkt auf diese E-Mail.
+      Bei Rückfragen erreichen Sie uns unter
+      <a href="mailto:${CLUB_CONFIG.email.info}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${CLUB_CONFIG.email.info}</a>
+      oder telefonisch unter
+      <a href="tel:${CLUB_CONFIG.phone.main}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${CLUB_CONFIG.phone.main}</a>.
+    </p>
   `;
 
-  return { subject, htmlContent };
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
 }
