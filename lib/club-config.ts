@@ -19,7 +19,8 @@ export const CLUB_CONFIG = {
   // ============================================
   business: {
     primaryService: 'Handball-Statistik-App',
-    description: 'Live-Statistiken, Spieleranalyse und Team-Management für Handball',
+    description:
+      'Live-Statistiken, Spieleranalyse und Team-Management für Handball',
     audience: 'Trainer, Vereine und Handball-Teams',
   },
 
@@ -102,9 +103,9 @@ export const CLUB_CONFIG = {
   // ============================================
   social: {
     instagram: {
-      url: 'https://www.instagram.com/statix.app/',
-      handle: '@statix.app',
-      username: 'statix.app',
+      url: 'https://www.instagram.com/statixapp/',
+      handle: '@statixapp',
+      username: 'statixapp',
     },
     // Weitere Social Media können hier hinzugefügt werden
     // facebook: { url: '', handle: '' },
@@ -153,6 +154,15 @@ export const CLUB_CONFIG = {
       width: 768,
       height: 768,
     },
+    logoName: {
+      filename: 'statixLogo.png',
+      get path() {
+        return `/${this.filename}`;
+      },
+      alt: 'Statix Logo',
+      width: 768,
+      height: 768,
+    },
 
     // Favicon paths (relative to /public)
     favicons: {
@@ -175,11 +185,7 @@ export const CLUB_CONFIG = {
     shortDescription:
       'Live-Statistiken und Analyse für dein Handball-Team – einfach, schnell, präzise.',
 
-    focusRegions: [
-      'Deutschland',
-      'Österreich',
-      'Schweiz',
-    ],
+    focusRegions: ['Deutschland', 'Österreich', 'Schweiz'],
 
     // Keywords for SEO
     keywords: [
@@ -206,8 +212,7 @@ export const CLUB_CONFIG = {
       },
       impressum: {
         title: 'Impressum',
-        description:
-          'Impressum und rechtliche Informationen zur Statix App.',
+        description: 'Impressum und rechtliche Informationen zur Statix App.',
       },
     },
 

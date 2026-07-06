@@ -72,7 +72,7 @@ export default function SiteNavbar() {
             <button
               type='button'
               onClick={handleBrandClick}
-              className='flex max-w-[calc(100vw-7.5rem)] min-w-0 items-center gap-3 text-left transition-opacity hover:opacity-85 sm:max-w-[calc(100vw-9rem)] lg:max-w-none'>
+              className='flex max-w-[calc(100vw-7.5rem)] min-w-0 items-center gap-3 text-left transition-opacity hover:opacity-85'>
               <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
@@ -85,11 +85,20 @@ export default function SiteNavbar() {
                 />
               </span>
 
-              <span className='min-w-0'>
-                <span className='block truncate text-sm font-semibold tracking-[-0.03em] text-slate-950 sm:text-lg'>
-                  {CLUB_CONFIG.name}
+              <span className='flex min-w-0 flex-col items-start leading-none'>
+                <span className='relative h-7 w-28 sm:w-32'>
+                  <Image
+                    src={CLUB_CONFIG.branding.logoName.path}
+                    alt={CLUB_CONFIG.display.logoAlt}
+                    title={CLUB_CONFIG.display.logoAlt}
+                    fill
+                    className='object-contain'
+                    sizes='128px'
+                    priority
+                  />
                 </span>
-                <span className='hidden truncate text-xs font-medium text-slate-500 sm:block'>
+
+                <span className='mt-1 hidden text-left text-xs font-medium text-slate-500 sm:block'>
                   {CLUB_CONFIG.display.brandTagline}
                 </span>
               </span>
@@ -125,7 +134,11 @@ export default function SiteNavbar() {
                       <motion.span
                         layoutId='navActivePill'
                         className='absolute inset-0 rounded-full bg-white shadow-sm'
-                        transition={{ type: 'spring', stiffness: 420, damping: 34 }}
+                        transition={{
+                          type: 'spring',
+                          stiffness: 420,
+                          damping: 34,
+                        }}
                       />
                     )}
                     <span className='relative z-10 inline-flex items-center gap-1.5'>
