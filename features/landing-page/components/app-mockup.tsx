@@ -35,7 +35,7 @@ export default function AppMockup() {
           <div className='relative aspect-[9/16] w-full overflow-hidden bg-[#0b1220]'>
             <Image
               src='/recordStatsInGame.png'
-              alt='MatchPulse Live-Erfassung – Tore, Würfe und Paraden in Echtzeit erfassen'
+              alt='Statix Live-Erfassung – Tore, Würfe und Paraden in Echtzeit erfassen'
               fill
               priority
               sizes='(max-width: 1024px) 100vw, 420px'

@@ -38,7 +38,7 @@ export default function DemoPreview({ url, liveLabel }: DemoPreviewProps) {
         {/* Real app screenshot */}
         <Image
           src='/statsTableInGame.png'
-          alt='MatchPulse Live-Demo – Spielstatistiken und Auswertungen im Browser'
+          alt='Statix Live-Demo – Spielstatistiken und Auswertungen im Browser'
           width={1896}
           height={874}
           sizes='(max-width: 1024px) 100vw, 520px'

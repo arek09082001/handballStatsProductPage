@@ -9,9 +9,9 @@ export const CLUB_CONFIG = {
   // ============================================
   // BASIC PRODUCT INFORMATION
   // ============================================
-  name: 'MatchPulse',
-  shortName: 'MatchPulse', // For abbreviated displays
-  fullName: 'MatchPulse',
+  name: 'Statix',
+  shortName: 'Statix', // For abbreviated displays
+  fullName: 'Statix',
   foundingYear: 2026,
 
   // ============================================
@@ -102,9 +102,9 @@ export const CLUB_CONFIG = {
   // ============================================
   social: {
     instagram: {
-      url: 'https://www.instagram.com/matchpulse.app/',
-      handle: '@matchpulse.app',
-      username: 'matchpulse.app',
+      url: 'https://www.instagram.com/statix.app/',
+      handle: '@statix.app',
+      username: 'statix.app',
     },
     // Weitere Social Media können hier hinzugefügt werden
     // facebook: { url: '', handle: '' },
@@ -127,7 +127,7 @@ export const CLUB_CONFIG = {
   // ============================================
   contacts: {
     primary: {
-      name: 'MatchPulse Team',
+      name: 'Statix Team',
       position: 'Support & Anfragen',
       email: 'kontakt@handballwebseite.de',
       phone: '+49-0179-2630093',
@@ -149,7 +149,7 @@ export const CLUB_CONFIG = {
       get path() {
         return `/${this.filename}`;
       },
-      alt: 'MatchPulse Logo',
+      alt: 'Statix Logo',
       width: 768,
       height: 768,
     },
@@ -169,7 +169,7 @@ export const CLUB_CONFIG = {
   seo: {
     // Default meta description
     description:
-      'MatchPulse ist die Statistik-App für Handball-Teams: Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und triff bessere Entscheidungen – direkt von der Bank.',
+      'Statix ist die Statistik-App für Handball-Teams: Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und triff bessere Entscheidungen – direkt von der Bank.',
 
     // Short description for social media
     shortDescription:
@@ -200,14 +200,14 @@ export const CLUB_CONFIG = {
     // Page-specific titles and descriptions
     pages: {
       home: {
-        title: 'MatchPulse – Die Statistik-App für dein Handball-Team',
+        title: 'Statix – Die Statistik-App für dein Handball-Team',
         description:
           'Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und gewinne mehr Spiele mit datenbasierten Entscheidungen.',
       },
       impressum: {
         title: 'Impressum',
         description:
-          'Impressum und rechtliche Informationen zur MatchPulse App.',
+          'Impressum und rechtliche Informationen zur Statix App.',
       },
     },
 
@@ -223,25 +223,25 @@ export const CLUB_CONFIG = {
   // ============================================
   display: {
     // For page titles
-    pageTitle: 'MatchPulse',
+    pageTitle: 'Statix',
 
     // For admin areas
-    adminTitle: 'MatchPulse Admin',
+    adminTitle: 'Statix Admin',
 
     // For emails and formal contexts
-    emailSender: 'MatchPulse',
+    emailSender: 'Statix',
 
     // For navigation
-    navLabel: 'MatchPulse Hauptnavigation',
-    navAriaLabel: 'MatchPulse',
+    navLabel: 'Statix Hauptnavigation',
+    navAriaLabel: 'Statix',
 
     // For logos and headers
-    logoAlt: 'MatchPulse Logo',
+    logoAlt: 'Statix Logo',
 
     brandTagline: 'Statistik-App für Handball',
 
     footerDescription:
-      'MatchPulse hilft Trainern und Teams, jedes Spiel in präzise Statistiken zu verwandeln und besser zu werden.',
+      'Statix hilft Trainern und Teams, jedes Spiel in präzise Statistiken zu verwandeln und besser zu werden.',
 
     footerLocation: 'Made in Germany',
 
