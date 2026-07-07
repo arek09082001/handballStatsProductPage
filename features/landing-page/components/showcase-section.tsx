@@ -36,19 +36,16 @@ const SHOTS = [
     src: '/shotMaps.png',
     width: 1900,
     height: 874,
-    pending: true,
   },
   {
     src: '/teamManagement.png',
     width: 1900,
     height: 874,
-    pending: true,
   },
   {
     src: '/exportShare.png',
     width: 1900,
     height: 874,
-    pending: true,
   },
 ] as const;
 
@@ -77,7 +74,7 @@ export default function ShowcaseSection() {
               start: 'top 82%',
               once: true,
             },
-          }
+          },
         );
       });
     }, sectionRef);
@@ -135,12 +132,6 @@ export default function ShowcaseSection() {
                     height={shot.height}
                     label={item.title}
                     priority={index === 0}
-                    pending={'pending' in shot && shot.pending}
-                    pendingHint={
-                      'pending' in shot && shot.pending
-                        ? `public${shot.src}`
-                        : undefined
-                    }
                   />
                 </div>
               </div>
