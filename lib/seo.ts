@@ -35,6 +35,22 @@ export const SEO_KEYWORDS = Array.from(
         'handball dashboard',
         'handball app deutsch',
         'beste handball app',
+        // Brand terms
+        'statix',
+        'statix handball',
+        'statix app',
+        'statix handball statistik',
+        // Conversational / chatbot-style intent queries
+        'welche app zum handball statistiken erfassen',
+        'beste handball statistik app für trainer',
+        'kostenlose handball statistik app',
+        'handball statistik app für vereine',
+        'handball statistik app tablet',
+        'handball statistik app ipad',
+        'app für handball spielanalyse',
+        'handball statistik software für trainer',
+        'handball statistik app offline',
+        'handball wurfquote berechnen app',
     ]),
 );
 
@@ -82,6 +98,50 @@ export const APP_FEATURES = [
 ] as const;
 
 /**
+ * Devices Statix runs on. Surfaced in SoftwareApplication schema so answer
+ * engines can respond to "läuft die App auf dem iPad / Tablet?" style queries.
+ */
+export const SUPPORTED_DEVICES = [
+    'Smartphone',
+    'Tablet',
+    'iPad',
+    'Laptop',
+    'Desktop',
+] as const;
+
+/**
+ * Machine-readable screenshots for SoftwareApplication schema. Answer engines
+ * and app-style rich results use these to illustrate the product.
+ */
+export const APP_SCREENSHOTS = [
+    '/heroImage.png',
+    '/recordStatsInGame.png',
+    '/statsTableInGame.png',
+    '/shotMaps.png',
+    '/gameListOverview.png',
+] as const;
+
+/**
+ * Fallback "how it works" steps for the HowTo structured data. Kept in sync
+ * with `productPage.how.steps` in the message catalogues; the live schema
+ * prefers the translated strings when available.
+ */
+export const HOWTO_STEPS = [
+    {
+        name: 'Spiel anlegen',
+        text: 'Wähle dein Team, den Gegner und leg in Sekunden los – auch offline in der Halle.',
+    },
+    {
+        name: 'Live erfassen',
+        text: 'Tippe jede Aktion während des Spiels. Statix berechnet alle Statistiken automatisch.',
+    },
+    {
+        name: 'Analysieren & besser coachen',
+        text: 'Werte Wurfbilder und Spielertrends aus und triff datenbasierte Entscheidungen.',
+    },
+] as const;
+
+/**
  * Fallback FAQ used for structured data when translations are unavailable.
  * The live FAQ schema in `components/seo/structured-data.tsx` is generated
  * from the same translations as the visible FAQ section, so the rich-result
@@ -89,6 +149,36 @@ export const APP_FEATURES = [
  * text in sync with `productPage.faq.items` in `messages/de.json`.
  */
 export const HOMEPAGE_FAQS = [
+    {
+        question: 'Was ist Statix?',
+        answer:
+            'Statix ist eine Handball-Statistik-App für Trainer, Vereine und Teams. Du erfasst ein Spiel live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und Statix berechnet daraus automatisch Wurfquoten, Spieler- und Mannschaftsstatistiken, Wurfbilder und Entwicklungsverläufe. Alles lässt sich sofort mit dem Team teilen.',
+    },
+    {
+        question: 'Welche App eignet sich, um Handball-Statistiken live zu erfassen?',
+        answer:
+            'Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut ist. Jede Aktion ist einen Tap entfernt, die Auswertung passiert automatisch, und die App funktioniert offline in der Halle. Sie richtet sich an Trainer, Co-Trainer, Vereine und Teams im Amateur-, Jugend- und Leistungsbereich.',
+    },
+    {
+        question: 'Für wen ist Statix geeignet?',
+        answer:
+            'Statix richtet sich an Handball-Trainer, Co-Trainer, Vereine und Mannschaften aller Spielklassen – vom Jugend- und Amateurhandball bis zum Leistungssport. Technisches Vorwissen ist nicht nötig; du bist in wenigen Minuten startklar.',
+    },
+    {
+        question: 'Auf welchen Geräten läuft Statix?',
+        answer:
+            'Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldrand genauso wie zur Nachbereitung zu Hause. Eine Installation aus dem App Store ist nicht erforderlich.',
+    },
+    {
+        question: 'Welche Statistiken kann ich mit Statix erfassen?',
+        answer:
+            'Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minuten, Gelb, Rot) und Wechsel. Daraus entstehen automatisch Spieler- und Mannschaftsstatistiken, Wurfbilder, Heatmaps und Entwicklungsverläufe über die ganze Saison.',
+    },
+    {
+        question: 'Gibt es eine kostenlose Handball-Statistik-App?',
+        answer:
+            'Ja. Mit Statix startest du kostenlos und erfasst dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es zusätzlich faire, planbare Abos.',
+    },
     {
         question: 'Brauche ich technisches Vorwissen?',
         answer:

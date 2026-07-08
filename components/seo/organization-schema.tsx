@@ -16,9 +16,16 @@ export default function OrganizationSchema() {
     '@id': `${SITE_URL}/#organization`,
     name: CLUB_CONFIG.fullName,
     legalName: CLUB_CONFIG.fullName,
-    alternateName: CLUB_CONFIG.display.pageTitle,
+    alternateName: ['Statix Handball', 'Statix App', 'Statix Handball-Statistik-App'],
     description: CLUB_CONFIG.seo.description,
+    disambiguatingDescription:
+      'Statix ist eine Handball-Statistik-App, mit der Trainer, Vereine und Teams Spiele live erfassen und auswerten.',
     slogan: 'Die Statistik-App für dein Handball-Team',
+    brand: {
+      '@type': 'Brand',
+      name: CLUB_CONFIG.fullName,
+      logo: absoluteUrl(CLUB_CONFIG.branding.logo.filename),
+    },
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -38,7 +45,18 @@ export default function OrganizationSchema() {
       name: CLUB_CONFIG.legal.responsiblePerson,
     },
     foundingDate: String(CLUB_CONFIG.foundingYear),
-    knowsAbout: APP_FEATURES.map((feature) => feature.name),
+    knowsAbout: [
+      'Handball',
+      'Handball-Statistik',
+      'Handball-Statistik-App',
+      'Live-Statistik-Erfassung',
+      'Spielanalyse',
+      'Wurfquoten',
+      'Wurfbilder',
+      'Spielerstatistik',
+      'Team-Management',
+      ...APP_FEATURES.map((feature) => feature.name),
+    ],
     sameAs,
   };
 
