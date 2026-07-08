@@ -529,6 +529,30 @@
       "description": "Everything you need to know before getting started.",
       "items": [
         {
+          "question": "What is Statix?",
+          "answer": "Statix is a handball statistics app for coaches, clubs and teams. You track a game live with a single tap – goals, shots, saves, penalties and substitutions – and Statix automatically calculates shooting percentages, player and team stats, shot maps and progress over time. Everything can be shared with your team instantly."
+        },
+        {
+          "question": "Which app is best for tracking handball statistics live?",
+          "answer": "Statix is a handball statistics app built specifically for live tracking on the bench. Every action is one tap away, analysis happens automatically, and the app works offline in the gym. It is made for coaches, assistant coaches, clubs and teams at amateur, youth and competitive levels."
+        },
+        {
+          "question": "Who is Statix for?",
+          "answer": "Statix is made for handball coaches, assistant coaches, clubs and teams across all divisions – from youth and amateur handball to competitive play. No technical knowledge is required; you are ready to go in minutes."
+        },
+        {
+          "question": "Which devices does Statix run on?",
+          "answer": "Statix runs directly in the browser on smartphone, tablet (iPad and Android) and laptop – both on the sideline and for post-game review at home. No app store installation is required."
+        },
+        {
+          "question": "Which statistics can I track with Statix?",
+          "answer": "You track goals, shots and shooting percentages, saves, fast breaks, technical errors, penalties (2 minutes, yellow, red) and substitutions. From this Statix automatically builds player and team statistics, shot maps, heatmaps and progress trends across the whole season."
+        },
+        {
+          "question": "Is there a free handball statistics app?",
+          "answer": "Yes. With Statix you start for free and track your first game with no commitment and no credit card. Fair, predictable plans are also available for full teams and clubs."
+        },
+        {
           "question": "Do I need any technical knowledge?",
           "answer": "No. Statix is designed so you can track your first game live within minutes. Every action is just one tap away – no training needed."
         },

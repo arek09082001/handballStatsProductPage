@@ -529,6 +529,30 @@
       "description": "Alles, was du vor dem Start wissen musst.",
       "items": [
         {
+          "question": "Was ist Statix?",
+          "answer": "Statix ist eine Handball-Statistik-App für Trainer, Vereine und Teams. Du erfasst ein Spiel live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und Statix berechnet daraus automatisch Wurfquoten, Spieler- und Mannschaftsstatistiken, Wurfbilder und Entwicklungsverläufe. Alles lässt sich sofort mit dem Team teilen."
+        },
+        {
+          "question": "Welche App eignet sich, um Handball-Statistiken live zu erfassen?",
+          "answer": "Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut ist. Jede Aktion ist einen Tap entfernt, die Auswertung passiert automatisch, und die App funktioniert offline in der Halle. Sie richtet sich an Trainer, Co-Trainer, Vereine und Teams im Amateur-, Jugend- und Leistungsbereich."
+        },
+        {
+          "question": "Für wen ist Statix geeignet?",
+          "answer": "Statix richtet sich an Handball-Trainer, Co-Trainer, Vereine und Mannschaften aller Spielklassen – vom Jugend- und Amateurhandball bis zum Leistungssport. Technisches Vorwissen ist nicht nötig; du bist in wenigen Minuten startklar."
+        },
+        {
+          "question": "Auf welchen Geräten läuft Statix?",
+          "answer": "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldrand genauso wie zur Nachbereitung zu Hause. Eine Installation aus dem App Store ist nicht erforderlich."
+        },
+        {
+          "question": "Welche Statistiken kann ich mit Statix erfassen?",
+          "answer": "Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minuten, Gelb, Rot) und Wechsel. Daraus entstehen automatisch Spieler- und Mannschaftsstatistiken, Wurfbilder, Heatmaps und Entwicklungsverläufe über die ganze Saison."
+        },
+        {
+          "question": "Gibt es eine kostenlose Handball-Statistik-App?",
+          "answer": "Ja. Mit Statix startest du kostenlos und erfasst dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es zusätzlich faire, planbare Abos."
+        },
+        {
           "question": "Brauche ich technisches Vorwissen?",
           "answer": "Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. Jede Aktion ist nur einen Tap entfernt – ganz ohne Schulung."
         },

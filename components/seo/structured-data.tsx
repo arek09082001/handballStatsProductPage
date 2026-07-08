@@ -1,11 +1,27 @@
 import { getTranslations } from 'next-intl/server';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import JsonLdScript from './json-ld-script';
-import { HOMEPAGE_FAQS, APP_FEATURES, SITE_URL, absoluteUrl } from '@/lib/seo';
+import {
+  HOMEPAGE_FAQS,
+  APP_FEATURES,
+  APP_SCREENSHOTS,
+  HOWTO_STEPS,
+  SEO_KEYWORDS,
+  SUPPORTED_DEVICES,
+  SITE_URL,
+  absoluteUrl,
+} from '@/lib/seo';
 
 interface FaqItem {
   question: string;
   answer: string;
+}
+
+interface HowToStep {
+  name?: string;
+  title?: string;
+  text?: string;
+  description?: string;
 }
 
 /**
@@ -17,6 +33,7 @@ interface FaqItem {
  */
 export default async function StructuredData() {
   let faqItems: FaqItem[] = [...HOMEPAGE_FAQS];
+  let howToSteps: HowToStep[] = [...HOWTO_STEPS];
   const featureList: string[] = APP_FEATURES.map((feature) => feature.name);
 
   try {
@@ -27,6 +44,16 @@ export default async function StructuredData() {
     }
   } catch {
     // keep fallback FAQ
+  }
+
+  try {
+    const tHow = await getTranslations('productPage.how');
+    const steps = tHow.raw('steps') as HowToStep[] | undefined;
+    if (Array.isArray(steps) && steps.length > 0) {
+      howToSteps = steps;
+    }
+  } catch {
+    // keep fallback steps
   }
 
   const structuredData = {
@@ -54,12 +81,23 @@ export default async function StructuredData() {
         '@type': 'SoftwareApplication',
         '@id': `${SITE_URL}#app`,
         name: CLUB_CONFIG.name,
+        alternateName: 'Statix Handball-Statistik-App',
         description: CLUB_CONFIG.seo.description,
         applicationCategory: 'SportsApplication',
+        applicationSubCategory: 'Handball-Statistik-App',
         operatingSystem: 'iOS, Android, Web',
+        browserRequirements: 'Requires JavaScript. Läuft in jedem modernen Browser.',
+        availableOnDevice: [...SUPPORTED_DEVICES],
+        countriesSupported: 'DE, AT, CH',
+        inLanguage: ['de-DE', 'en-GB'],
         url: SITE_URL,
         image: absoluteUrl('/heroImage.png'),
-        inLanguage: 'de-DE',
+        screenshot: APP_SCREENSHOTS.map((path) => absoluteUrl(path)),
+        keywords: SEO_KEYWORDS.join(', '),
+        audience: {
+          '@type': 'Audience',
+          audienceType: CLUB_CONFIG.business.audience,
+        },
         offers: {
           '@type': 'Offer',
           price: '0',
@@ -70,6 +108,21 @@ export default async function StructuredData() {
         publisher: {
           '@id': `${SITE_URL}/#organization`,
         },
+      },
+      {
+        '@type': 'HowTo',
+        '@id': `${SITE_URL}#howto`,
+        name: 'Handball-Statistiken mit Statix live erfassen',
+        description:
+          'In drei Schritten von der Aufstellung zur fertigen Spielanalyse – ganz ohne Schulung.',
+        inLanguage: 'de-DE',
+        totalTime: 'PT5M',
+        step: howToSteps.map((step, index) => ({
+          '@type': 'HowToStep',
+          position: index + 1,
+          name: step.name ?? step.title ?? `Schritt ${index + 1}`,
+          text: step.text ?? step.description ?? '',
+        })),
       },
       {
         '@type': 'FAQPage',
