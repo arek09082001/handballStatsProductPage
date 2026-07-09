@@ -20,7 +20,7 @@ export default function OrganizationSchema() {
     description: CLUB_CONFIG.seo.description,
     disambiguatingDescription:
       'Statix ist eine Handball-Statistik-App, mit der Trainer, Vereine und Teams Spiele live erfassen und auswerten.',
-    slogan: 'Die Statistik-App für dein Handball-Team',
+    slogan: 'Handball-Statistik live erfassen – mit einem Tap, direkt von der Bank',
     brand: {
       '@type': 'Brand',
       name: CLUB_CONFIG.fullName,

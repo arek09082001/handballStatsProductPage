@@ -179,11 +179,11 @@ export const CLUB_CONFIG = {
   seo: {
     // Default meta description
     description:
-      'Statix ist die Statistik-App für Handball-Teams: Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und triff bessere Entscheidungen – direkt von der Bank.',
+      'Handball-Statistiken live per Tap erfassen: Wurfquoten, Wurfbilder & Spielerwerte automatisch ausgewertet – offline in der Halle. Live-Demo ohne Account testen.',
 
     // Short description for social media
     shortDescription:
-      'Live-Statistiken und Analyse für dein Handball-Team – einfach, schnell, präzise.',
+      'Handball-Statistiken live erfassen und automatisch auswerten – Live-Demo ohne Account testen.',
 
     focusRegions: ['Deutschland', 'Österreich', 'Schweiz'],
 
@@ -201,14 +201,17 @@ export const CLUB_CONFIG = {
       'Handball Spielanalyse',
       'Handball Verein App',
       'Statistik für Trainer',
+      'Handball KI-Analyse',
+      'Handball Statistik kostenlos',
+      'Handball Live-Demo',
     ],
 
     // Page-specific titles and descriptions
     pages: {
       home: {
-        title: 'Statix – Die Statistik-App für dein Handball-Team',
+        title: 'Handball-Statistik-App: Spiele live erfassen & analysieren | Statix',
         description:
-          'Erfasse Spielzüge live, analysiere Spieler- und Mannschaftsleistung und gewinne mehr Spiele mit datenbasierten Entscheidungen.',
+          'Handball-Statistiken live per Tap erfassen: Wurfquoten, Wurfbilder & Spielerwerte automatisch ausgewertet – offline in der Halle. Live-Demo ohne Account testen.',
       },
       impressum: {
         title: 'Impressum',
@@ -246,7 +249,7 @@ export const CLUB_CONFIG = {
     brandTagline: 'Statistik-App für Handball',
 
     footerDescription:
-      'Statix hilft Trainern und Teams, jedes Spiel in präzise Statistiken zu verwandeln und besser zu werden.',
+      'Statix verwandelt jedes Spiel in präzise Statistiken – Wurfquoten, Wurfbilder und KI-Analysen, mit denen Trainer und Teams besser werden.',
 
     footerLocation: 'Made in Germany',
 

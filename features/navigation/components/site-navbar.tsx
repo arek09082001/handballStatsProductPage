@@ -4,8 +4,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Menu, Rocket, X } from 'lucide-react';
+import { ArrowUpRight, Menu, Play, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { trackDemoClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
@@ -29,8 +30,7 @@ export default function SiteNavbar() {
   const isNavInFocus = isOpen || isScrollingUp || !isScrolled;
 
   // The highlight pill rests on the active (scroll-spy) item, but follows the
-  // hovered item while the pointer is over the nav — so Live-Demo takes the
-  // pill too even though it has no page section of its own.
+  // hovered item while the pointer is over the nav.
   const activeItem = siteNavigationItems.find((item) => isItemActive(item));
   const highlightedIdent = hoveredIdent ?? activeItem?.ident ?? null;
 
@@ -161,11 +161,14 @@ export default function SiteNavbar() {
           <div className='ml-auto hidden items-center justify-end gap-3 lg:flex lg:w-60'>
             <LanguageSwitcher />
             <Link
-              href='/#newsletter'
-              title={t('contactCta')}
+              href={CLUB_CONFIG.website.demoUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              title={t('demoCta')}
+              onClick={() => trackDemoClick('navbar')}
               className='inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#f97316] px-5 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] hover:shadow-[0_8px_22px_-4px_rgba(249,115,22,0.5)] active:translate-y-0 active:scale-95'>
-              <Rocket className='size-3.5 shrink-0' />
-              {t('contactCta')}
+              <Play className='size-3.5 shrink-0' />
+              {t('demoCta')}
             </Link>
           </div>
 
@@ -265,12 +268,17 @@ export default function SiteNavbar() {
           })}
 
           <Link
-            href='/#newsletter'
-            title={t('contactCta')}
-            onClick={closeMenu}
+            href={CLUB_CONFIG.website.demoUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            title={t('demoCta')}
+            onClick={() => {
+              trackDemoClick('navbar');
+              closeMenu();
+            }}
             className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#f97316] px-4 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
-            <Rocket className='size-4 shrink-0' />
-            {t('contactCta')}
+            <Play className='size-4 shrink-0' />
+            {t('demoCta')}
           </Link>
 
           <div className='flex justify-center pt-2'>

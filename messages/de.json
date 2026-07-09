@@ -1,12 +1,13 @@
 {
   "footerSection": {
-    "description": "Statix verwandelt jedes Spiel in präzise Statistiken – damit Trainer und Teams besser werden.",
+    "description": "Statix verwandelt jedes Spiel in präzise Statistiken – Wurfquoten, Wurfbilder und KI-Analysen, mit denen Trainer und Teams besser werden.",
     "headings": {
       "product": "Produkt",
       "legal": "Rechtliches",
       "contact": "Kontakt"
     },
     "product": {
+      "demo": "Live-Demo",
       "features": "Funktionen",
       "how": "So funktioniert's",
       "faq": "FAQ",
@@ -34,12 +35,11 @@
       "howItWorks": "So funktioniert's",
       "ai": "KI-Analyse",
       "tournament": "Turnier",
-      "demo": "Live-Demo",
       "faq": "FAQ",
       "contact": "Kontakt",
       "impressum": "Impressum"
     },
-    "contactCta": "Kostenlos starten",
+    "demoCta": "Live-Demo starten",
     "languageSwitcher": {
       "label": "Sprache wechseln",
       "switchToGerman": "Auf Deutsch wechseln",
@@ -352,15 +352,15 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Für Trainer und Teams – vom Amateur- bis zum Ligahandball",
+      "badge": "Von einem Handballer entwickelt – Made in Germany",
       "headlineLead": "Handball-Statistik",
       "headlineHighlight": "live erfassen",
-      "headlineTail": "– und das Spiel besser verstehen.",
-      "description": "Erfasse jede Aktion mit einem Tap direkt von der Bank – Tore, Würfe, Paraden, Wurfquoten. Statix wertet automatisch aus, was sonst auf dem Zettel verloren geht: eine saubere Grundlage für Trainer, die fundierter coachen wollen, und für Spieler, die ihrem Trainer ein besseres Werkzeug zeigen möchten.",
-      "primaryCta": "Kostenlos starten",
+      "headlineTail": "– mit einem Tap, direkt von der Bank.",
+      "description": "Tore, Würfe, Paraden, Zeitstrafen – jede Aktion ein Tap. Statix macht daraus automatisch Wurfquoten, Wurfbilder und Spielerstatistiken, offline in der Halle. Schau dir zuerst die Live-Demo mit echten Spieldaten an – ohne Account.",
+      "primaryCta": "Live-Demo starten",
       "secondaryCta": "Funktionen ansehen",
-      "trust1": "In Minuten startklar",
-      "trust2": "Keine Kreditkarte nötig",
+      "trust1": "Demo mit echten Spieldaten",
+      "trust2": "Kostenlos starten – keine Kreditkarte",
       "trust3": "Offline in der Halle"
     },
     "stats": {
@@ -379,14 +379,15 @@
         },
         {
           "value": "0 €",
-          "label": "zum Ausprobieren"
+          "label": "kostenlos starten"
         }
       ]
     },
     "showcase": {
       "eyebrow": "Produkt-Tour",
       "title": "So arbeitest du mit Statix",
-      "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung für die Kabine – ein Blick in die App.",
+      "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung für die Kabine – ein Blick in die App. Alles davon kannst du in der Live-Demo ohne Account selbst ausprobieren.",
+      "ctaLabel": "Alle Funktionen direkt in der Live-Demo ausprobieren",
       "items": [
         {
           "badge": "Live erfassen",
@@ -423,7 +424,7 @@
     "ai": {
       "eyebrow": "KI-Analyse",
       "title": "KI-Analysen, die erklären warum – nicht nur was",
-      "description": "Statix wertet deine erfassten Spiele mit KI aus – auf drei Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison und als Scouting-Profil für einzelne Spieler.",
+      "description": "Statix wertet deine erfassten Spiele mit KI aus – auf drei Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison und als Scouting-Profil für einzelne Spieler. Das leistet kein Zettel und keine Excel-Tabelle.",
       "scopes": [
         {
           "title": "Einzelspiel",
@@ -508,7 +509,8 @@
     "pros": {
       "eyebrow": "Warum Statix",
       "title": "Schluss mit Statistik auf dem Bierdeckel",
-      "description": "Zeig deinem Trainer in zwei Minuten, warum die Spielanalyse nicht mehr auf dem Zettel enden muss – und wie viel klarer sie mit Statix wird.",
+      "description": "Zeig deinem Trainer in zwei Minuten, was auf dem Zettel verloren geht: Öffne die Live-Demo in der Halle – echtes Spiel, echte Zahlen, fertige Auswertung.",
+      "cta": "Demo öffnen & dem Trainer zeigen",
       "oldTitle": "Zettel & Stift",
       "oldPoints": [
         "Zahlen, die nach dem Spiel niemand mehr auswertet",
@@ -531,6 +533,10 @@
         {
           "question": "Was ist Statix?",
           "answer": "Statix ist eine Handball-Statistik-App für Trainer, Vereine und Teams. Du erfasst ein Spiel live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und Statix berechnet daraus automatisch Wurfquoten, Spieler- und Mannschaftsstatistiken, Wurfbilder und Entwicklungsverläufe. Alles lässt sich sofort mit dem Team teilen."
+        },
+        {
+          "question": "Kann ich Statix ohne Anmeldung testen?",
+          "answer": "Ja. Die Live-Demo ist eine voll ausgestattete Version von Statix mit echten Spieldaten: Live-Statistiken, Wurfbilder und KI-Analyse direkt im Browser – ganz ohne Account. Du siehst in zwei Minuten, wie Statix in der Halle funktioniert."
         },
         {
           "question": "Welche App eignet sich, um Handball-Statistiken live zu erfassen?",
@@ -566,21 +572,25 @@
         },
         {
           "question": "Was kostet Statix?",
-          "answer": "Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot."
+          "answer": "Du startest kostenlos: Probiere zuerst die Live-Demo ohne Account aus und erfasse dann dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das exklusive Launch-Angebot."
+        },
+        {
+          "question": "Wer steckt hinter Statix?",
+          "answer": "Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Praxis am Spielfeldrand heraus entwickelt. Kein anonymes Tool: Feedback aus der Halle fließt direkt in die Entwicklung ein."
         }
       ]
     },
     "newsletter": {
-      "eyebrow": "Newsletter",
-      "title": "Sei beim Launch dabei",
-      "description": "Trag dich ein und erhalte Produkt-Updates, Praxis-Tipps für deine Spielanalyse und das exklusive Launch-Angebot für Vereine.",
+      "eyebrow": "Launch-Angebot",
+      "title": "Sichere dir das Launch-Angebot für dein Team",
+      "description": "Statix startet bald offiziell. Trag dich ein und bekomme das exklusive Launch-Angebot für Vereine, neue Funktionen zuerst und Praxis-Tipps zur Spielanalyse – direkt vom Entwickler.",
       "placeholder": "Deine E-Mail-Adresse",
-      "button": "Anmelden",
+      "button": "Launch-Angebot sichern",
       "pending": "Wird gesendet…",
       "benefits": [
-        "Produkt-Updates & neue Funktionen",
-        "Praxis-Tipps zur Spielanalyse",
-        "Exklusives Launch-Angebot"
+        "Exklusives Launch-Angebot für Vereine",
+        "Neue Funktionen zuerst erfahren",
+        "Praxis-Tipps zur Spielanalyse"
       ],
       "privacyPrefix": "Ich akzeptiere die",
       "privacyLink": "Datenschutzbestimmungen",
@@ -613,9 +623,9 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "finalCta": {
-      "title": "Erlebe Statix in Aktion",
-      "description": "Klick dich durch eine voll ausgestattete Live-Demo mit echten Spieldaten – direkt im Browser, ganz ohne Account.",
-      "primaryCta": "Kostenlos starten",
+      "title": "Teste Statix jetzt – mit echten Spieldaten",
+      "description": "Klick dich durch ein komplett erfasstes Spiel: Live-Statistiken, Wurfbilder, KI-Analyse. Direkt im Browser, ohne Account.",
+      "primaryCta": "Launch-Angebot sichern",
       "note": "Läuft direkt im Browser – auf dem Tablet am Spielfeldrand genauso wie am Laptop zur Nachbereitung.",
       "badge": "Live-Demo · keine Anmeldung nötig",
       "demoCta": "Live-Demo öffnen",

@@ -102,7 +102,8 @@ export default async function StructuredData() {
           '@type': 'Offer',
           price: '0',
           priceCurrency: 'EUR',
-          description: 'Kostenlos starten – erstes Spiel ohne Verpflichtung erfassen.',
+          description:
+            'Kostenlos starten – Live-Demo ohne Account testen, erstes Spiel ohne Verpflichtung erfassen.',
         },
         featureList,
         publisher: {

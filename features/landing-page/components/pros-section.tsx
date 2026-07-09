@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Check, X } from 'lucide-react';
+import { ArrowUpRight, Check, X } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
+import { trackDemoClick } from '@/lib/analytics';
+import { CLUB_CONFIG } from '@/lib/club-config';
 
 export default function ProsSection() {
   const t = useTranslations('productPage.pros');
@@ -105,6 +107,18 @@ export default function ProsSection() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className='mt-12 text-center'>
+          <a
+            href={CLUB_CONFIG.website.demoUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            onClick={() => trackDemoClick('pros')}
+            className='inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10'>
+            {t('cta')}
+            <ArrowUpRight className='size-4' />
+          </a>
         </div>
       </div>
     </section>

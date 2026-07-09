@@ -4,12 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Mail, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { trackDemoClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 
 export default function Footer() {
   const t = useTranslations('footerSection');
 
-  const productLinks = [
+  const productLinks: { href: string; label: string; external?: boolean }[] = [
+    { href: CLUB_CONFIG.website.demoUrl, label: t('product.demo'), external: true },
     { href: '/#features', label: t('product.features') },
     { href: '/#how-it-works', label: t('product.how') },
     { href: '/#faq', label: t('product.faq') },
@@ -51,6 +53,9 @@ export default function Footer() {
                   key={item.label}
                   href={item.href}
                   title={item.label}
+                  target={item.external ? '_blank' : undefined}
+                  rel={item.external ? 'noopener noreferrer' : undefined}
+                  onClick={item.external ? () => trackDemoClick('footer') : undefined}
                   className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
                   {item.label}
                 </Link>
