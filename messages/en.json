@@ -1,12 +1,13 @@
 {
   "footerSection": {
-    "description": "Statix turns every game into precise statistics – so coaches and teams keep improving.",
+    "description": "Statix turns every game into precise statistics – shooting percentages, shot maps and AI analysis that help coaches and teams keep improving.",
     "headings": {
       "product": "Product",
       "legal": "Legal",
       "contact": "Contact"
     },
     "product": {
+      "demo": "Live demo",
       "features": "Features",
       "how": "How it works",
       "faq": "FAQ",
@@ -34,12 +35,11 @@
       "howItWorks": "How it works",
       "ai": "AI analysis",
       "tournament": "Tournament",
-      "demo": "Live demo",
       "faq": "FAQ",
       "contact": "Contact",
       "impressum": "Legal"
     },
-    "contactCta": "Start for free",
+    "demoCta": "Try the live demo",
     "languageSwitcher": {
       "label": "Switch language",
       "switchToGerman": "Switch to German",
@@ -352,16 +352,16 @@
   },
   "productPage": {
     "hero": {
-      "badge": "For coaches and teams – amateur to semi-pro",
+      "badge": "Built by a handball player – Made in Germany",
       "headlineLead": "Record handball stats",
       "headlineHighlight": "live",
-      "headlineTail": "and understand the game better.",
-      "description": "Log every action with a single tap right from the bench – goals, shots, saves, shooting percentages. Statix works out automatically what usually gets lost on a notepad: a clean basis for coaches who want to coach with more insight, and for players who want to show their coach a better tool.",
-      "primaryCta": "Start for free",
+      "headlineTail": "– one tap, right from the bench.",
+      "description": "Goals, shots, saves, suspensions – every action is one tap. Statix automatically turns it into shooting percentages, shot maps and player stats, offline in the gym. Start with the live demo full of real game data – no account needed.",
+      "primaryCta": "Try the live demo",
       "secondaryCta": "Explore features",
-      "trust1": "Ready in minutes",
-      "trust2": "No credit card required",
-      "trust3": "Works offline"
+      "trust1": "Demo with real game data",
+      "trust2": "Free to start – no credit card",
+      "trust3": "Works offline in the gym"
     },
     "stats": {
       "items": [
@@ -379,14 +379,15 @@
         },
         {
           "value": "€0",
-          "label": "to try it out"
+          "label": "to get started"
         }
       ]
     },
     "showcase": {
       "eyebrow": "Product tour",
       "title": "How you work with Statix",
-      "description": "From live tracking on the bench to the finished analysis for the locker room – a look inside the app.",
+      "description": "From live tracking on the bench to the finished analysis for the locker room – a look inside the app. And you can try all of it yourself in the live demo, no account needed.",
+      "ctaLabel": "Try every feature in the live demo",
       "items": [
         {
           "badge": "Track live",
@@ -423,7 +424,7 @@
     "ai": {
       "eyebrow": "AI analysis",
       "title": "AI analyses that explain why – not just what",
-      "description": "Statix analyses your recorded games with AI on three levels: for every single game, for your whole team across the season, and as a scouting profile for individual players.",
+      "description": "Statix analyses your recorded games with AI on three levels: for every single game, for your whole team across the season, and as a scouting profile for individual players. No notepad or spreadsheet can do that.",
       "scopes": [
         {
           "title": "Single game",
@@ -508,7 +509,8 @@
     "pros": {
       "eyebrow": "Why Statix",
       "title": "No more stats on a napkin",
-      "description": "Show your coach in two minutes why game analysis no longer has to end on a notepad – and how much clearer it gets with Statix.",
+      "description": "Show your coach in two minutes what gets lost on a notepad: open the live demo in the gym – a real game, real numbers, a finished analysis.",
+      "cta": "Open the demo & show your coach",
       "oldTitle": "Pen & paper",
       "oldPoints": [
         "Numbers nobody analyses after the game",
@@ -531,6 +533,10 @@
         {
           "question": "What is Statix?",
           "answer": "Statix is a handball statistics app for coaches, clubs and teams. You track a game live with a single tap – goals, shots, saves, penalties and substitutions – and Statix automatically calculates shooting percentages, player and team stats, shot maps and progress over time. Everything can be shared with your team instantly."
+        },
+        {
+          "question": "Can I try Statix without signing up?",
+          "answer": "Yes. The live demo is a fully featured version of Statix with real game data: live stats, shot maps and AI analysis right in your browser – no account needed. In two minutes you'll see how Statix works in the gym."
         },
         {
           "question": "Which app is best for tracking handball statistics live?",
@@ -566,21 +572,25 @@
         },
         {
           "question": "How much does Statix cost?",
-          "answer": "You start for free and track your first game with no commitment. Fair plans are available for full teams and clubs – join the newsletter to secure the launch offer."
+          "answer": "You start for free: try the live demo without an account first, then track your first game with no commitment and no credit card. Fair plans are available for full teams and clubs – join the newsletter to secure the exclusive launch offer."
+        },
+        {
+          "question": "Who is behind Statix?",
+          "answer": "Statix is built by Arkadiusz Weiss – a handball player from Germany who develops the app out of his own experience on the bench. No anonymous tool: feedback from the gym goes straight into development."
         }
       ]
     },
     "newsletter": {
-      "eyebrow": "Newsletter",
-      "title": "Be there at launch",
-      "description": "Sign up to get product updates, practical tips for your game analysis and the exclusive launch offer for clubs.",
+      "eyebrow": "Launch offer",
+      "title": "Secure the launch offer for your team",
+      "description": "Statix launches officially soon. Sign up to get the exclusive launch offer for clubs, new features first and practical tips on game analysis – straight from the developer.",
       "placeholder": "Your email address",
-      "button": "Subscribe",
+      "button": "Get the launch offer",
       "pending": "Sending…",
       "benefits": [
-        "Product updates & new features",
-        "Practical tips on game analysis",
-        "Exclusive launch offer"
+        "Exclusive launch offer for clubs",
+        "New features first",
+        "Practical tips on game analysis"
       ],
       "privacyPrefix": "I accept the",
       "privacyLink": "privacy policy",
@@ -613,9 +623,9 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "finalCta": {
-      "title": "See Statix in action",
-      "description": "Explore a fully loaded live demo with real match data – right in your browser, no account needed.",
-      "primaryCta": "Start for free",
+      "title": "Try Statix now – with real game data",
+      "description": "Click through a fully tracked game: live stats, shot maps, AI analysis. Right in your browser, no account needed.",
+      "primaryCta": "Get the launch offer",
       "note": "Runs right in your browser – on a tablet at the sideline just as well as on a laptop for the debrief.",
       "badge": "Live demo · no sign-up required",
       "demoCta": "Open live demo",

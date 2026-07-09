@@ -51,6 +51,15 @@ export const SEO_KEYWORDS = Array.from(
         'handball statistik software für trainer',
         'handball statistik app offline',
         'handball wurfquote berechnen app',
+        'handball spielanalyse',
+        'handball statistik erfassen kostenlos',
+        'handball statistik app kostenlos testen',
+        'handball statistik demo',
+        'handball wurfbilder erstellen',
+        'handball analyse tool',
+        'handball statistik excel alternative',
+        'handball ki analyse',
+        'handball statistik software kostenlos',
     ]),
 );
 
@@ -59,7 +68,7 @@ export const SITE_LINKS = [
         name: 'Startseite',
         path: '/',
         description:
-            'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams.',
+            'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams. Mit Live-Demo ohne Account.',
     },
     {
         name: 'Impressum',
@@ -155,6 +164,11 @@ export const HOMEPAGE_FAQS = [
             'Statix ist eine Handball-Statistik-App für Trainer, Vereine und Teams. Du erfasst ein Spiel live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und Statix berechnet daraus automatisch Wurfquoten, Spieler- und Mannschaftsstatistiken, Wurfbilder und Entwicklungsverläufe. Alles lässt sich sofort mit dem Team teilen.',
     },
     {
+        question: 'Kann ich Statix ohne Anmeldung testen?',
+        answer:
+            'Ja. Die Live-Demo ist eine voll ausgestattete Version von Statix mit echten Spieldaten: Live-Statistiken, Wurfbilder und KI-Analyse direkt im Browser – ganz ohne Account. Du siehst in zwei Minuten, wie Statix in der Halle funktioniert.',
+    },
+    {
         question: 'Welche App eignet sich, um Handball-Statistiken live zu erfassen?',
         answer:
             'Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut ist. Jede Aktion ist einen Tap entfernt, die Auswertung passiert automatisch, und die App funktioniert offline in der Halle. Sie richtet sich an Trainer, Co-Trainer, Vereine und Teams im Amateur-, Jugend- und Leistungsbereich.',
@@ -197,7 +211,12 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Was kostet Statix?',
         answer:
-            'Du startest kostenlos und erfasst dein erstes Spiel ohne Verpflichtung. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das Launch-Angebot.',
+            'Du startest kostenlos: Probiere zuerst die Live-Demo ohne Account aus und erfasse dann dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das exklusive Launch-Angebot.',
+    },
+    {
+        question: 'Wer steckt hinter Statix?',
+        answer:
+            'Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Praxis am Spielfeldrand heraus entwickelt. Kein anonymes Tool: Feedback aus der Halle fließt direkt in die Entwicklung ein.',
     },
 ] as const;
 

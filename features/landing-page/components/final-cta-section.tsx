@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { ArrowUpRight, Play } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
+import { trackDemoClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from './hero-action-button';
 import DemoPreview from './demo-preview';
@@ -80,6 +81,7 @@ export default function FinalCTASection() {
                   href={CLUB_CONFIG.website.demoUrl}
                   target='_blank'
                   rel='noopener noreferrer'
+                  onClick={() => trackDemoClick('final_cta')}
                   className='group inline-flex h-14 w-full max-w-[300px] items-center justify-center gap-2 rounded-full bg-white px-7 text-sm font-bold tracking-[-0.02em] text-slate-950 shadow-[0_18px_34px_-18px_rgba(15,23,42,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-50 hover:shadow-[0_22px_40px_-18px_rgba(15,23,42,0.5)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#ea580c] sm:w-auto sm:min-w-[240px]'>
                   <Play className='size-4 fill-current' />
                   <span>{t('demoCta')}</span>

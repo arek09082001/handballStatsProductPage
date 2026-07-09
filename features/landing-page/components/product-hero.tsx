@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { trackDemoClick } from '@/lib/analytics';
+import { CLUB_CONFIG } from '@/lib/club-config';
 import AppMockup from './app-mockup';
 import HeroActionButton from './hero-action-button';
 import HeroTrustBadge from './hero-trust-badge';
@@ -45,7 +47,12 @@ export default function ProductHero() {
           </p>
 
           <div className='mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start'>
-            <HeroActionButton variant='primary' onClick={() => scrollToId('newsletter')}>
+            <HeroActionButton
+              variant='primary'
+              href={CLUB_CONFIG.website.demoUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => trackDemoClick('hero')}>
               {t('primaryCta')}
             </HeroActionButton>
             <HeroActionButton variant='secondary' onClick={() => scrollToId('features')}>

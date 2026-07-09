@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { ArrowUpRight } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
+import { trackDemoClick } from '@/lib/analytics';
+import { CLUB_CONFIG } from '@/lib/club-config';
 import AppScreenshot from './app-screenshot';
 
 interface ShowcaseItem {
@@ -137,6 +140,18 @@ export default function ShowcaseSection() {
               </div>
             );
           })}
+        </div>
+
+        <div className='mt-16 text-center'>
+          <a
+            href={CLUB_CONFIG.website.demoUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            onClick={() => trackDemoClick('showcase')}
+            className='inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10'>
+            {t('ctaLabel')}
+            <ArrowUpRight className='size-4' />
+          </a>
         </div>
       </div>
     </section>

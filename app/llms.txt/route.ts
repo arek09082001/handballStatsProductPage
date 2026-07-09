@@ -32,16 +32,17 @@ export function GET() {
 
 > ${seo.description}
 
-${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, Co-Trainer, Vereine und Mannschaften erfassen Handball-Spiele live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und erhalten automatisch ausgewertete Spieler- und Mannschaftsstatistiken, Wurfbilder und Entwicklungsverläufe. ${name} läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop, funktioniert offline in der Halle und lässt sich in Sekunden mit dem Team teilen.
+${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, Co-Trainer, Vereine und Mannschaften erfassen Handball-Spiele live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und erhalten automatisch ausgewertete Spieler- und Mannschaftsstatistiken, Wurfbilder, KI-Analysen und Entwicklungsverläufe. ${name} läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop, funktioniert offline in der Halle und lässt sich in Sekunden mit dem Team teilen. Eine voll ausgestattete Live-Demo mit echten Spieldaten ist ohne Account unter ${CLUB_CONFIG.website.demoUrl} verfügbar. ${name} wird von Arkadiusz Weiss entwickelt – einem Handballer aus Deutschland (Made in Germany).
 
 - Kategorie: Handball-Statistik-App / Handball Scouting & Spielanalyse
 - Zielgruppe: ${business.audience}
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch
 - Regionen: ${SERVICE_AREAS.join(', ')}
-- Preis: Kostenlos starten, erstes Spiel ohne Verpflichtung – faire Abos für Teams und Vereine
+- Preis: Kostenlos starten, erstes Spiel ohne Verpflichtung und ohne Kreditkarte – faire Abos für Teams und Vereine
+- Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
-- Live-Demo: ${CLUB_CONFIG.website.demoUrl}
+- Live-Demo (ohne Account): ${CLUB_CONFIG.website.demoUrl}
 
 ## Funktionen
 ${features}
