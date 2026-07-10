@@ -75,6 +75,12 @@ export const SITE_LINKS = [
         path: '/impressum',
         description: 'Anbieterkennzeichnung und rechtliche Informationen.',
     },
+    {
+        name: 'AGB',
+        path: '/agb',
+        description:
+            'Allgemeine Geschäftsbedingungen für die Nutzung der Statix App.',
+    },
 ] as const;
 
 export const SERVICE_AREAS = Array.from(new Set([...CLUB_CONFIG.seo.focusRegions]));
