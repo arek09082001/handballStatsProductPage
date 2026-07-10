@@ -72,6 +72,12 @@ export default function Footer() {
                 className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
                 {t('legal.impressumAndPrivacy')}
               </Link>
+              <Link
+                href='/agb'
+                title={t('titles.agb')}
+                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                {t('legal.agb')}
+              </Link>
             </div>
           </div>
 

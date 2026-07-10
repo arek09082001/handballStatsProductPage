@@ -21,12 +21,197 @@
     },
     "titles": {
       "email": "Email to",
-      "impressum": "To the legal notice and privacy policy"
+      "impressum": "To the legal notice and privacy policy",
+      "agb": "To the general terms and conditions"
     },
     "legal": {
-      "impressumAndPrivacy": "Legal & Privacy"
+      "impressumAndPrivacy": "Legal & Privacy",
+      "agb": "Terms & Conditions"
     },
     "copyright": "Copyright © {year}. All rights reserved."
+  },
+  "agbPage": {
+    "header": {
+      "eyebrow": "Legal information",
+      "title": "General Terms and Conditions (GTC)",
+      "description": "Terms governing the use of the Statix handball statistics app and the associated websites and services.",
+      "transparencyBadge": "Fair and transparent",
+      "lastUpdated": "Last updated: July 10, 2026"
+    },
+    "documentTitle": "General Terms and Conditions",
+    "documentTitleShort": "GTC",
+    "providerLabel": "Provider and contracting party",
+    "privacyLinkLabel": "To the privacy policy",
+    "odrLinkLabel": "https://ec.europa.eu/consumers/odr/",
+    "intro": {
+      "title": "Preamble",
+      "paragraph1": "These General Terms and Conditions (hereinafter \"GTC\") govern the contractual relationship between you as the user (hereinafter \"user\" or \"you\") and the provider regarding the use of the handball statistics app \"Statix\" as well as the associated websites, the progressive web app and the related services (hereinafter collectively \"Statix\" or the \"service\").",
+      "paragraph2": "The terms and designations used in these GTC are to be understood as gender-neutral.",
+      "updatedAt": "As of: July 10, 2026"
+    },
+    "sections": {
+      "scope": {
+        "title": "§ 1 Scope and provider",
+        "paragraphs": [
+          "These GTC apply to the use of Statix in the version valid at the time the contract is concluded. Deviating terms of the user are not recognised unless the provider expressly agrees to their application in text form.",
+          "Statix is aimed at coaches, clubs and handball teams and may be used both by consumers (Section 13 of the German Civil Code, BGB) and by entrepreneurs (Section 14 BGB).",
+          "The provider and contracting party is the operator named below:"
+        ],
+        "items": []
+      },
+      "subject": {
+        "title": "§ 2 Subject matter of the contract and description of services",
+        "paragraphs": [
+          "Statix is a browser-based application (progressive web app) for recording and analysing handball statistics. The service includes in particular the following functions:"
+        ],
+        "items": [
+          "Live recording of match events (goals, shots, saves, penalties, substitutions, etc.) in real time by tapping – including offline in the sports hall, with automatic synchronisation as soon as an internet connection is available again.",
+          "Automatic calculation of player and team statistics, shooting percentages, shot maps, heatmaps and development trends.",
+          "Management of teams, rosters and player information as well as invitation of additional coaches.",
+          "Creation of tournaments with multiple teams, an automatic standings table and match scheduling.",
+          "Automated, AI-assisted analysis of matches, teams and individual players.",
+          "Sharing of analyses via link and export as PDF."
+        ],
+        "paragraphsAfter": [
+          "Statix is under continuous development and in its market-launch phase. The specific scope of functions results from the respective current version of the service as well as from the description of services on the provider's websites. The provider is entitled to further develop, modify or adjust individual functions, insofar as this is reasonable for the user."
+        ]
+      },
+      "registration": {
+        "title": "§ 3 Registration, user account and usage requirements",
+        "paragraphs": [
+          "Use of the full range of functions requires the registration of a user account with a valid email address and a password. A non-binding live demo of individual functions is possible without registration.",
+          "By submitting the registration, the user makes an offer to conclude a usage contract. The contract comes into effect once the provider activates the account.",
+          "The user is obliged to provide truthful and complete information during registration and to keep it up to date.",
+          "Registration is permitted to natural persons who have reached the age of 16 and have full legal capacity. If the user acts on behalf of a club or organisation, they warrant that they are authorised to represent it.",
+          "The access data must be kept secret and protected from access by third parties. The user shall inform the provider without undue delay as soon as there are indications of misuse of the account."
+        ],
+        "items": []
+      },
+      "availability": {
+        "title": "§ 4 Availability, maintenance and changes to the service",
+        "paragraphs": [
+          "The provider endeavours to keep the service available as uninterruptedly as possible but does not owe any specific level of availability. In particular, maintenance work, technical faults, capacity reasons or circumstances beyond the provider's control (e.g. force majeure or outages of third-party providers) may lead to temporary restrictions.",
+          "Statix is offline-capable. Data recorded during offline use is initially stored locally on the device and synchronised with the provider's servers once an internet connection exists. A functioning internet connection and a compatible device are required for a successful synchronisation.",
+          "As the provider is in its market-launch phase, further developments, adjustments and individual changes to functions may occur. The provider will inform the user of material changes in an appropriate manner.",
+          "The provider is entitled to discontinue the operation of the service in whole or in part. In the event of a permanent discontinuation, the provider will inform the user in advance within a reasonable period and give them the opportunity to export their data."
+        ],
+        "items": []
+      },
+      "pricing": {
+        "title": "§ 5 Free and paid services",
+        "paragraphs": [
+          "The service is currently provided free of charge. No fees are incurred for registration and the functions currently available; there is no obligation to pay without an express, separate agreement.",
+          "The provider intends to offer paid subscriptions (\"subscriptions\") in the future, in particular for teams and clubs. The scope, prices, billing periods and service details of a paid subscription result from the respective valid overview of services and prices in the ordering process.",
+          "A paid contract is only concluded once the user expressly selects a paid service, confirms the price details and completes the ordering process. Before concluding such a contract, the user will be informed of all material components of the contract, in particular the total price.",
+          "All prices are inclusive of any applicable statutory value-added tax, insofar as such tax applies."
+        ],
+        "items": []
+      },
+      "obligations": {
+        "title": "§ 6 User obligations and responsibility",
+        "paragraphs": [
+          "The user undertakes to use Statix only within the framework of applicable law and these GTC.",
+          "The user is solely responsible for all content and data that they enter, store or process in Statix. This applies in particular to personal data of third parties, such as players (e.g. names, jersey numbers, positions and performance data).",
+          "The user warrants that they are entitled to process the personal data of third parties entered by them and that they have the necessary legal basis (e.g. consent) for doing so. If the data concerns minors, the user must obtain the necessary consent from the legal guardians.",
+          "The user shall indemnify the provider against any third-party claims asserted against the provider due to an unlawful entry or processing of data by the user, including reasonable costs of legal defence. This does not apply insofar as the user is not responsible for the infringement.",
+          "The user is prohibited from posting unlawful, offensive or infringing content, from using the service abusively, from circumventing security mechanisms or from reverse-engineering the software, unless this is mandatorily permitted by law."
+        ],
+        "items": []
+      },
+      "dataProtection": {
+        "title": "§ 7 Data protection and order processing",
+        "paragraphs": [
+          "The provider processes personal data within the framework of applicable data protection laws. Details on the processing of personal data can be found in the privacy policy.",
+          "Insofar as the provider processes personal data of third parties (in particular player data) on behalf of the user, which the user enters on their own responsibility, the provider acts in this respect as a processor within the meaning of Art. 28 GDPR. Upon request, the provider will provide the user with a data processing agreement (DPA).",
+          "To provide the service, the provider uses carefully selected service providers as processors. These include in particular:"
+        ],
+        "items": [
+          "Supabase – database and storage services",
+          "Vercel – hosting and operation of the websites and the application",
+          "Brevo (Sendinblue) – sending of emails",
+          "Anthropic – AI-assisted analyses",
+          "OpenAI – AI-assisted analyses"
+        ],
+        "paragraphsAfter": [
+          "When using individual service providers, data may be transferred to third countries (e.g. the USA). The provider takes the measures necessary for this (e.g. EU standard contractual clauses). Further information can be found in the privacy policy."
+        ]
+      },
+      "ai": {
+        "title": "§ 8 AI-assisted analyses",
+        "paragraphs": [
+          "Statix offers automated, AI-assisted analyses of matches, teams and players. These analyses are created using third-party services (in particular Anthropic and OpenAI).",
+          "AI-generated analyses are based on statistical methods and the data recorded by the user. They may be incomplete, inaccurate or erroneous and serve exclusively for information and support purposes.",
+          "The analyses do not constitute a binding recommendation for action and do not replace the user's own assessment and decision. The provider assumes no warranty for the correctness, completeness or suitability of the AI-assisted results for a specific purpose."
+        ],
+        "items": []
+      },
+      "ipRights": {
+        "title": "§ 9 Rights of use and intellectual property",
+        "paragraphs": [
+          "All rights to the software, the websites, the design, the trademarks, logos and other content of Statix belong to the provider or its licensors.",
+          "For the duration of the contract, the provider grants the user a simple, non-exclusive, non-transferable and non-sublicensable right to use Statix within the contractually intended scope.",
+          "The user retains all rights to the content and data entered by them. They grant the provider the simple right of use necessary for providing the service, in particular for storing, processing, analysing and displaying this content within the scope of the service."
+        ],
+        "items": []
+      },
+      "dataExport": {
+        "title": "§ 10 Data export and deletion",
+        "paragraphs": [
+          "The user can share the analyses recorded in Statix within the scope of the functions provided and export them as PDF.",
+          "After the contract ends, the user account and the associated data are deleted in accordance with the statutory requirements and the privacy policy, insofar as no statutory retention obligations prevent this. The user is themselves responsible for exporting any required data before the contract ends."
+        ],
+        "items": []
+      },
+      "liability": {
+        "title": "§ 11 Warranty and liability",
+        "paragraphs": [
+          "Where the service is provided free of charge, the provider is only liable for damages based on intent or gross negligence, as well as in accordance with the provisions on gifts.",
+          "Otherwise, the provider is liable without limitation in the event of intent and gross negligence as well as for injury to life, body or health.",
+          "In the event of a slightly negligent breach of a material contractual obligation (cardinal obligation), the fulfilment of which is essential for the proper performance of the contract and on the observance of which the user may regularly rely, liability is limited to the foreseeable damage typical of the contract. Otherwise, liability for slight negligence is excluded.",
+          "Liability under the Product Liability Act and arising from an expressly assumed guarantee remains unaffected.",
+          "The user is themselves responsible for regularly backing up their data. The provider is only liable for the loss of data to the extent that the loss would have occurred even if the user had properly backed up the data."
+        ],
+        "items": []
+      },
+      "term": {
+        "title": "§ 12 Contract term and termination",
+        "paragraphs": [
+          "The usage contract for free use is concluded for an indefinite period and may be terminated by either party at any time without notice, in particular by deleting the user account.",
+          "The term, renewal and termination of any paid subscription are governed by the conditions specified in the respective ordering process.",
+          "The right to extraordinary termination for good cause remains unaffected for both parties. Good cause exists for the provider in particular in the event of a significant breach of these GTC by the user.",
+          "Terminations must be made in text form (e.g. by email)."
+        ],
+        "items": []
+      },
+      "withdrawal": {
+        "title": "§ 13 Right of withdrawal for consumers",
+        "paragraphs": [
+          "Consumers have a statutory right of withdrawal for paid contracts on digital content or services. For the currently free use, there is no right of withdrawal in the absence of a paid service.",
+          "If a paid contract is concluded in the future, the following applies: You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded. To exercise your right of withdrawal, you must inform us of your decision to withdraw from this contract by means of a clear statement (e.g. by email to the address given in the legal notice).",
+          "In the case of a contract for the supply of digital content not delivered on a physical medium, the right of withdrawal expires prematurely if you have expressly agreed that performance should begin before the withdrawal period expires and you have confirmed your knowledge that you thereby lose your right of withdrawal."
+        ],
+        "items": []
+      },
+      "changes": {
+        "title": "§ 14 Changes to these GTC",
+        "paragraphs": [
+          "The provider reserves the right to amend these GTC with effect for the future, insofar as this is necessary to adapt to changed legal or technical conditions or to expand the range of services and the user is not thereby unreasonably disadvantaged.",
+          "The provider will inform the user of changes in an appropriate manner (e.g. by email or within the service). The changes are deemed approved if the user does not object to them within six weeks of receiving the notification. The provider will draw particular attention to this consequence in the notification. If the user objects, both parties are entitled to terminate the contract."
+        ],
+        "items": []
+      },
+      "final": {
+        "title": "§ 15 Final provisions",
+        "paragraphs": [
+          "The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods. For consumers, this choice of law only applies insofar as the consumer is not thereby deprived of the protection of mandatory provisions of the law of the state of their habitual residence.",
+          "If the user is a merchant, a legal entity under public law or a special fund under public law, the exclusive place of jurisdiction for all disputes arising from this contract is the provider's registered office.",
+          "The European Commission provides a platform for online dispute resolution (ODR), which you can reach via the following link. The provider is neither obliged nor willing to participate in a dispute resolution procedure before a consumer arbitration board.",
+          "Should individual provisions of these GTC be or become wholly or partially invalid, the validity of the remaining provisions remains unaffected.",
+          "The German version of these GTC is authoritative. Translations serve exclusively for better comprehensibility."
+        ],
+        "items": []
+      }
+    }
   },
   "navigationSection": {
     "items": {
