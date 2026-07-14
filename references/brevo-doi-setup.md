@@ -32,9 +32,34 @@ In Vercel → Project → Settings → Environment Variables:
 No Brevo DOI template needs to be created — the confirmation email is rendered
 by `generateNewsletterConfirmationEmail` in `lib/utils/email-templates.ts`.
 
+## Unsubscribe
+
+Unsubscribing is the mirror image of the confirmation step:
+
+1. **Unsubscribe page** — `app/newsletter/unsubscribe/page.tsx` renders a card
+   at `/newsletter/unsubscribe`. It works two ways:
+   - **One-click** — a `?token=…` link (same HMAC token as the confirm flow,
+     `lib/utils/newsletter-token.ts`) shows a single "Newsletter abmelden"
+     button.
+   - **Manual** — without a token (e.g. linked from the site footer), the
+     visitor types their email address. If a token link is expired, the page
+     falls back to this manual form automatically.
+2. **API** — `POST /api/newsletter/unsubscribe` resolves the email (from the
+   token or the typed address) and calls Brevo `removeContactFromList` on
+   `BREVO_NEWSLETTER_LIST_ID` — the exact inverse of confirm's
+   `createContact`. Unknown / already-removed contacts are treated as success,
+   so the request is idempotent and never reveals whether an address was on
+   the list.
+
+To put a one-click link into an email, append
+`?token=${createNewsletterToken(email)}` to
+`${NEXT_PUBLIC_BASE_URL}/newsletter/unsubscribe`.
+
 ## Test
 
 1. Submit the newsletter form → "Bestätigungs-E-Mail gesendet", inline success
    panel appears.
 2. Open the email → click "Anmeldung bestätigen" → confirm page shows success
    and the contact appears in the Brevo list.
+3. Visit `/newsletter/unsubscribe`, enter the same address → success panel and
+   the contact is removed from the Brevo list.
