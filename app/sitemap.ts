@@ -1,5 +1,10 @@
 import { MetadataRoute } from 'next';
-import { SITE_URL } from '@/lib/seo';
+import { SITE_URL, absoluteUrl } from '@/lib/seo';
+import {
+  articlePath,
+  getAllArticles,
+  RATGEBER_BASE_PATH,
+} from '@/features/ratgeber/data/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -25,7 +30,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return staticPages;
+  // Ratgeber hub + every article, generated from the article data module so new
+  // articles appear in the sitemap automatically.
+  const ratgeberHub: MetadataRoute.Sitemap = [
+    {
+      url: absoluteUrl(RATGEBER_BASE_PATH),
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+  ];
+
+  const articlePages: MetadataRoute.Sitemap = getAllArticles().map((article) => ({
+    url: absoluteUrl(articlePath(article.slug)),
+    lastModified: new Date(article.dateModified),
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...ratgeberHub, ...articlePages];
 }
 
 // Revalidate sitemap every hour

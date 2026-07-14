@@ -14,6 +14,7 @@ export default function Footer() {
     { href: CLUB_CONFIG.website.demoUrl, label: t('product.demo'), external: true },
     { href: '/#features', label: t('product.features') },
     { href: '/#how-it-works', label: t('product.how') },
+    { href: '/ratgeber', label: t('product.ratgeber') },
     { href: '/#faq', label: t('product.faq') },
     { href: '/#newsletter', label: t('product.newsletter') },
     { href: '/#contact', label: t('product.contact') },
