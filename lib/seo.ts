@@ -81,6 +81,12 @@ export const SITE_LINKS = [
         description:
             'Allgemeine Geschäftsbedingungen für die Nutzung der Statix App.',
     },
+    {
+        name: 'Ratgeber',
+        path: '/ratgeber',
+        description:
+            'Handball-Ratgeber für Trainer: Wurfquote berechnen, Training planen, Abwehrsysteme, Spielanalyse und mehr – praxisnah erklärt.',
+    },
 ] as const;
 
 export const SERVICE_AREAS = Array.from(new Set([...CLUB_CONFIG.seo.focusRegions]));
@@ -250,6 +256,22 @@ type CreatePageMetadataArgs = {
      * brand would be duplicated ("… | Statix | Statix").
      */
     absoluteTitle?: boolean;
+    /**
+     * OpenGraph object type. Defaults to 'website'. Use 'article' for blog /
+     * Ratgeber pages so social + answer engines treat them as articles.
+     */
+    ogType?: 'website' | 'article';
+    /**
+     * Article-specific OpenGraph fields, applied only when `ogType` is
+     * 'article'. Dates are ISO 8601 strings.
+     */
+    article?: {
+        publishedTime?: string;
+        modifiedTime?: string;
+        authors?: string[];
+        section?: string;
+        tags?: string[];
+    };
 };
 
 export function createPageMetadata({
@@ -260,10 +282,47 @@ export function createPageMetadata({
     imagePath = DEFAULT_OG_IMAGE,
     noIndex = false,
     absoluteTitle = false,
+    ogType = 'website',
+    article,
 }: CreatePageMetadataArgs): Metadata {
     const canonical = absoluteUrl(path);
     const imageUrl = absoluteUrl(imagePath);
     const combinedKeywords = Array.from(new Set([...SEO_KEYWORDS, ...keywords]));
+
+    const ogImages = [
+        {
+            url: imageUrl,
+            width: 1200,
+            height: 630,
+            alt: `${title} | ${SITE_NAME}`,
+        },
+    ];
+
+    const openGraph: Metadata['openGraph'] =
+        ogType === 'article'
+            ? {
+                type: 'article',
+                locale: 'de_DE',
+                url: canonical,
+                title,
+                description,
+                siteName: SITE_NAME,
+                images: ogImages,
+                publishedTime: article?.publishedTime,
+                modifiedTime: article?.modifiedTime,
+                authors: article?.authors,
+                section: article?.section,
+                tags: article?.tags,
+            }
+            : {
+                type: 'website',
+                locale: 'de_DE',
+                url: canonical,
+                title,
+                description,
+                siteName: SITE_NAME,
+                images: ogImages,
+            };
 
     return {
         title: absoluteTitle ? { absolute: title } : title,
@@ -272,22 +331,7 @@ export function createPageMetadata({
         alternates: {
             canonical,
         },
-        openGraph: {
-            type: 'website',
-            locale: 'de_DE',
-            url: canonical,
-            title,
-            description,
-            siteName: SITE_NAME,
-            images: [
-                {
-                    url: imageUrl,
-                    width: 1200,
-                    height: 630,
-                    alt: `${title} | ${SITE_NAME}`,
-                },
-            ],
-        },
+        openGraph,
         twitter: {
             card: 'summary_large_image',
             title,

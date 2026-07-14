@@ -6,6 +6,11 @@ import {
   SITE_URL,
   absoluteUrl,
 } from '@/lib/seo';
+import {
+  articlePath,
+  getAllArticles,
+  RATGEBER_BASE_PATH,
+} from '@/features/ratgeber/data/articles';
 
 export const dynamic = 'force-static';
 export const revalidate = 86400;
@@ -27,6 +32,13 @@ export function GET() {
   const faq = HOMEPAGE_FAQS.map(
     (item) => `### ${item.question}\n${item.answer}`,
   ).join('\n\n');
+
+  const ratgeber = getAllArticles()
+    .map(
+      (article) =>
+        `- [${article.title}](${absoluteUrl(articlePath(article.slug))}): ${article.metaDescription}`,
+    )
+    .join('\n');
 
   const body = `# ${name} – Handball-Statistik-App
 
@@ -50,8 +62,13 @@ ${features}
 ## Häufige Fragen
 ${faq}
 
+## Ratgeber (Handball-Wissen für Trainer)
+Praxisnahe Artikel für Trainer zu Statistik, Training, Taktik und Spielanalyse:
+${ratgeber}
+
 ## Links
 - Startseite: ${SITE_URL}
+- Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}
 - Impressum: ${absoluteUrl('/impressum')}
 - Kontakt: ${CLUB_CONFIG.email.main}
