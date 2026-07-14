@@ -13,6 +13,17 @@ const SESSION_KEY = 'statix-product-intro-shown';
 // still never replay within one JS runtime.
 let consumedThisRuntime = false;
 
+// The pre-paint inline script (root layout) sets this on <html> so an opaque
+// cover hides the page before React mounts the overlay; we clear it once the
+// overlay has taken over (or immediately when the intro won't play), so the
+// cover is never left stranded over the page.
+const PENDING_ATTR = 'data-intro-pending';
+function clearIntroPending() {
+  if (typeof document !== 'undefined') {
+    document.documentElement.removeAttribute(PENDING_ATTR);
+  }
+}
+
 /**
  * The landing page's branded splash — the same kickoff the app's public survey
  * opens with: a handball bounces in, inflates into a full-screen orange wipe,
@@ -48,10 +59,22 @@ export function ProductIntro({
       // client-side navigation; a full reload will replay, the least-bad
       // behaviour for a decorative splash.
     }
-    if (seen || reduceMotion) return;
+    if (seen || reduceMotion) {
+      // Won't play — drop any cover the pre-paint script optimistically set.
+      clearIntroPending();
+      return;
+    }
     setShow(true);
     onPlayingChange?.(true);
   }, [reduceMotion, onPlayingChange]);
+
+  // Hand off from the static pre-paint cover to the animated overlay: this
+  // effect runs after the overlay has mounted and painted (its own opaque
+  // curtain now covers the screen), so removing the cover here never exposes
+  // the page for a frame.
+  useEffect(() => {
+    if (show) clearIntroPending();
+  }, [show]);
 
   if (!show) return null;
   return (

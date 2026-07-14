@@ -147,6 +147,22 @@
   --note-foreground: 235 59% 45%;
 }
 }
+
+/* Kickoff splash: an opaque cover painted on the very first frame (before React
+ * hydrates and mounts the animated overlay), so the landing page is never
+ * glimpsed before the splash. A pre-paint inline script in the root layout sets
+ * `data-intro-pending` on <html> only when the intro is about to play; ProductIntro
+ * clears it the moment its overlay has taken over. Kept outside @layer so it always
+ * wins over page styles, and matched to the overlay's own `bg-background`. */
+html[data-intro-pending] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  background: hsl(var(--background));
+  pointer-events: none;
+}
+
 @layer utilities {
   .autoGrid {
     display: grid;
