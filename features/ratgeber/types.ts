@@ -14,9 +14,12 @@
 export const ARTICLE_CATEGORIES = [
   'Statistik & Kennzahlen',
   'Training & Planung',
+  'Technik & Wurf',
   'Taktik & Abwehr',
   'Spielanalyse',
+  'Grundlagen & Regeln',
   'Jugend & Entwicklung',
+  'Mannschaft & Mentales',
 ] as const;
 
 export type ArticleCategory = (typeof ARTICLE_CATEGORIES)[number];

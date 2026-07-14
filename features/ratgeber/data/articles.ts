@@ -11,6 +11,16 @@ import { handballAngriffssystemeEinsteiger } from './articles/handball-angriffss
 import { handballTorwarttraining } from './articles/handball-torwarttraining';
 import { handballSpielanalyse } from './articles/handball-spielanalyse';
 import { jugendhandballTrainieren } from './articles/jugendhandball-trainieren';
+import { siebenmeterTrainieren } from './articles/siebenmeter-trainieren';
+import { handballKonditionVerbessern } from './articles/handball-kondition-verbessern';
+import { handballPasstrainingUebungen } from './articles/handball-passtraining-uebungen';
+import { handballWurftrainingSprungwurf } from './articles/handball-wurftraining-sprungwurf';
+import { handballTempogegenstoss } from './articles/handball-tempogegenstoss';
+import { handballPositionenErklaert } from './articles/handball-positionen-erklaert';
+import { handballRegelnEinfachErklaert } from './articles/handball-regeln-einfach-erklaert';
+import { handballMannschaftMotivieren } from './articles/handball-mannschaft-motivieren';
+import { handballTeambuildingUebungen } from './articles/handball-teambuilding-uebungen';
+import { handballSpielerentwicklungMessen } from './articles/handball-spielerentwicklung-messen';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -36,6 +46,16 @@ export const ARTICLES: Article[] = [
   handballTorwarttraining,
   handballSpielanalyse,
   jugendhandballTrainieren,
+  siebenmeterTrainieren,
+  handballKonditionVerbessern,
+  handballPasstrainingUebungen,
+  handballWurftrainingSprungwurf,
+  handballTempogegenstoss,
+  handballPositionenErklaert,
+  handballRegelnEinfachErklaert,
+  handballMannschaftMotivieren,
+  handballTeambuildingUebungen,
+  handballSpielerentwicklungMessen,
 ];
 
 /** Articles sorted newest-first by publication date. */
