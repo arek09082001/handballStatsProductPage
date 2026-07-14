@@ -27,7 +27,8 @@
     },
     "legal": {
       "impressumAndPrivacy": "Legal & Privacy",
-      "agb": "Terms & Conditions"
+      "agb": "Terms & Conditions",
+      "newsletterUnsubscribe": "Unsubscribe from newsletter"
     },
     "copyright": "Copyright © {year}. All rights reserved."
   },
@@ -831,5 +832,19 @@
     "invalidDescription": "This confirmation link is invalid or has expired. Please sign up again.",
     "backToForm": "Back to sign-up",
     "errorDescription": "Confirmation failed. Please try again later."
+  },
+  "newsletterUnsubscribe": {
+    "title": "Unsubscribe from newsletter",
+    "description": "Click the button to unsubscribe from the Statix newsletter. You won't receive any more emails from us.",
+    "descriptionManual": "Enter your email address to unsubscribe from the Statix newsletter.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "unsubscribeButton": "Unsubscribe",
+    "pending": "Unsubscribing…",
+    "successTitle": "Successfully unsubscribed",
+    "successDescription": "You won't receive any more emails from the Statix newsletter. Sorry to see you go!",
+    "backHome": "Back to home",
+    "resubscribeHint": "Changed your mind? You can sign up again any time.",
+    "errorDescription": "Unsubscribe failed. Please try again later."
   }
 }

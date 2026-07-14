@@ -27,7 +27,8 @@
     },
     "legal": {
       "impressumAndPrivacy": "Impressum & Datenschutz",
-      "agb": "AGB"
+      "agb": "AGB",
+      "newsletterUnsubscribe": "Newsletter abmelden"
     },
     "copyright": "Copyright © {year}. Alle Rechte vorbehalten."
   },
@@ -831,5 +832,19 @@
     "invalidDescription": "Dieser Bestätigungslink ist ungültig oder abgelaufen. Bitte melde dich erneut an.",
     "backToForm": "Zur Anmeldung",
     "errorDescription": "Bestätigung fehlgeschlagen. Bitte versuche es später erneut."
+  },
+  "newsletterUnsubscribe": {
+    "title": "Newsletter abmelden",
+    "description": "Klicke auf den Button, um dich vom Statix-Newsletter abzumelden. Du erhältst dann keine E-Mails mehr von uns.",
+    "descriptionManual": "Gib deine E-Mail-Adresse ein, um dich vom Statix-Newsletter abzumelden.",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "deine@e-mail.de",
+    "unsubscribeButton": "Newsletter abmelden",
+    "pending": "Wird abgemeldet…",
+    "successTitle": "Erfolgreich abgemeldet",
+    "successDescription": "Du erhältst ab sofort keine E-Mails mehr vom Statix-Newsletter. Schade, dass du gehst!",
+    "backHome": "Zur Startseite",
+    "resubscribeHint": "Hast du es dir anders überlegt? Du kannst dich jederzeit wieder anmelden.",
+    "errorDescription": "Abmeldung fehlgeschlagen. Bitte versuche es später erneut."
   }
 }
