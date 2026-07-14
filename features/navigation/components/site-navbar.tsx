@@ -13,7 +13,16 @@ import LanguageSwitcher from './language-switcher';
 import { siteNavigationItems } from '../config';
 import { useSiteNavbar } from '../hooks/use-site-navbar';
 
-export default function SiteNavbar() {
+export default function SiteNavbar({
+  brandRef,
+  hideBrand = false,
+}: {
+  /** Dock target for the kickoff splash — the desktop wordmark slot. */
+  brandRef?: React.Ref<HTMLSpanElement>;
+  /** Hide the wordmark (kept measurable) while the splash owns it, so the
+   * docked logo replaces it in a single commit. */
+  hideBrand?: boolean;
+} = {}) {
   const t = useTranslations('navigationSection');
   const {
     isOpen,
@@ -86,7 +95,12 @@ export default function SiteNavbar() {
               </span>
 
               <span className='flex min-w-0 flex-col items-start leading-none'>
-                <span className='relative h-7 w-28 sm:w-32'>
+                <span
+                  ref={brandRef}
+                  className={cn(
+                    'relative h-7 w-28 sm:w-32',
+                    hideBrand && 'opacity-0',
+                  )}>
                   <Image
                     src={CLUB_CONFIG.branding.logoName.path}
                     alt={CLUB_CONFIG.display.logoAlt}

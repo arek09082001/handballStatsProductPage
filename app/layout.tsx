@@ -129,6 +129,18 @@ export default async function RootLayout({
   return (
     <html lang={DEFAULT_HTML_LANG} suppressHydrationWarning>
       <head suppressHydrationWarning>
+        {/* Kickoff splash, no-flash guard: runs before first paint and, only
+            when the branded intro is about to play (home route, fresh tab
+            session, motion allowed), marks <html> so an opaque cover (see
+            globals.css) hides the page until the animated overlay takes over.
+            Conditions mirror ProductIntro; it only reads storage — ProductIntro
+            still owns the write — so the two never disagree. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{if(location.pathname!=='/')return;if(sessionStorage.getItem('statix-product-intro-shown')!==null)return;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;document.documentElement.setAttribute('data-intro-pending','');}catch(e){}})();",
+          }}
+        />
         <meta name='theme-color' content={CLUB_CONFIG.branding.themeColor} />
         <meta
           name='msapplication-TileColor'
