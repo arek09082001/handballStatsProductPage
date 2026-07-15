@@ -21,6 +21,21 @@ import { handballRegelnEinfachErklaert } from './articles/handball-regeln-einfac
 import { handballMannschaftMotivieren } from './articles/handball-mannschaft-motivieren';
 import { handballTeambuildingUebungen } from './articles/handball-teambuilding-uebungen';
 import { handballSpielerentwicklungMessen } from './articles/handball-spielerentwicklung-messen';
+import { handballKrafttraining } from './articles/handball-krafttraining';
+import { handballSprungkraftVerbessern } from './articles/handball-sprungkraft-verbessern';
+import { handballSchnelligkeitVerbessern } from './articles/handball-schnelligkeit-verbessern';
+import { handballVerletzungenVorbeugen } from './articles/handball-verletzungen-vorbeugen';
+import { handballErnaehrung } from './articles/handball-ernaehrung';
+import { handballMentaltraining } from './articles/handball-mentaltraining';
+import { handballKreislaeuferSpielen } from './articles/handball-kreislaeufer-spielen';
+import { handballManndeckung } from './articles/handball-manndeckung';
+import { handball321Abwehr } from './articles/handball-3-2-1-abwehr';
+import { handballKreuzenStossen } from './articles/handball-kreuzen-stossen';
+import { handballFinteLernen } from './articles/handball-finte-lernen';
+import { handballBallhandlingVerbessern } from './articles/handball-ballhandling-verbessern';
+import { handballSchlagwurfTechnik } from './articles/handball-schlagwurf-technik';
+import { handballTrainerWerden } from './articles/handball-trainer-werden';
+import { handballMinihandballKinder } from './articles/handball-minihandball-kinder';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -56,6 +71,21 @@ export const ARTICLES: Article[] = [
   handballMannschaftMotivieren,
   handballTeambuildingUebungen,
   handballSpielerentwicklungMessen,
+  handballKrafttraining,
+  handballSprungkraftVerbessern,
+  handballSchnelligkeitVerbessern,
+  handballVerletzungenVorbeugen,
+  handballErnaehrung,
+  handballMentaltraining,
+  handballKreislaeuferSpielen,
+  handballManndeckung,
+  handball321Abwehr,
+  handballKreuzenStossen,
+  handballFinteLernen,
+  handballBallhandlingVerbessern,
+  handballSchlagwurfTechnik,
+  handballTrainerWerden,
+  handballMinihandballKinder,
 ];
 
 /** Articles sorted newest-first by publication date. */
