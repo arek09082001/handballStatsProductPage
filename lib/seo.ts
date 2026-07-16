@@ -12,6 +12,11 @@ export const SEO_KEYWORDS = Array.from(
     new Set([
         ...CLUB_CONFIG.seo.keywords,
         // Core recording intent (primary German search terms)
+        'handball statistiken',
+        'handball statistiken erfassen',
+        'handball statistiken app',
+        'handball statistiken live',
+        'handball statistiken führen',
         'handball statistik erfassen',
         'handball statistik aufnehmen',
         'handball statistik aufzeichnen',

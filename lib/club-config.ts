@@ -189,6 +189,9 @@ export const CLUB_CONFIG = {
 
     // Keywords for SEO
     keywords: [
+      'Handball Statistiken',
+      'Handball Statistiken erfassen',
+      'Handball Statistiken App',
       'Handball Statistik App',
       'Handball Stats',
       'Handball App',
@@ -209,7 +212,7 @@ export const CLUB_CONFIG = {
     // Page-specific titles and descriptions
     pages: {
       home: {
-        title: 'Handball-Statistik-App: Spiele live erfassen & analysieren | Statix',
+        title: 'Handball-Statistiken live erfassen & analysieren | Statix App',
         description:
           'Handball-Statistiken live per Tap erfassen: Wurfquoten, Wurfbilder & Spielerwerte automatisch ausgewertet – offline in der Halle. Live-Demo ohne Account testen.',
       },

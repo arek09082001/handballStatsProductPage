@@ -542,7 +542,7 @@
   "productPage": {
     "hero": {
       "badge": "Von einem Handballer entwickelt – Made in Germany",
-      "headlineLead": "Handball-Statistik",
+      "headlineLead": "Handball-Statistiken",
       "headlineHighlight": "live erfassen",
       "headlineTail": "– mit einem Tap, direkt von der Bank.",
       "description": "Tore, Würfe, Paraden, Zeitstrafen – jede Aktion ein Tap. Statix macht daraus automatisch Wurfquoten, Wurfbilder und Spielerstatistiken, offline in der Halle. Schau dir zuerst die Live-Demo mit echten Spieldaten an – ohne Account.",
@@ -574,7 +574,7 @@
     },
     "showcase": {
       "eyebrow": "Produkt-Tour",
-      "title": "So arbeitest du mit Statix",
+      "title": "So erfasst und analysierst du Handball-Statistiken mit Statix",
       "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung für die Kabine – ein Blick in die App. Alles davon kannst du in der Live-Demo ohne Account selbst ausprobieren.",
       "ctaLabel": "Alle Funktionen direkt in der Live-Demo ausprobieren",
       "items": [
@@ -740,7 +740,7 @@
           "answer": "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldrand genauso wie zur Nachbereitung zu Hause. Eine Installation aus dem App Store ist nicht erforderlich."
         },
         {
-          "question": "Welche Statistiken kann ich mit Statix erfassen?",
+          "question": "Welche Handball-Statistiken kann ich mit Statix erfassen?",
           "answer": "Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minuten, Gelb, Rot) und Wechsel. Daraus entstehen automatisch Spieler- und Mannschaftsstatistiken, Wurfbilder, Heatmaps und Entwicklungsverläufe über die ganze Saison."
         },
         {
