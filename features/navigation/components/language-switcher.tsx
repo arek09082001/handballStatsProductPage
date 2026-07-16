@@ -2,10 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Flag from 'react-world-flags';
-import {
-  APP_LOCALES,
-  type AppLocale,
-} from '@/i18n/config';
+import { APP_LOCALES, type AppLocale } from '@/i18n/config';
 import { useAppLocale } from '@/app/locale-provider';
 import { cn } from '@/lib/utils';
 
@@ -59,7 +56,9 @@ export default function LanguageSwitcher({
             )}
             aria-pressed={isActive}
             aria-label={
-              supportedLocale === 'de' ? t('switchToGerman') : t('switchToEnglish')
+              supportedLocale === 'de'
+                ? t('switchToGerman')
+                : t('switchToEnglish')
             }
             disabled={isActive}>
             <span
@@ -69,6 +68,11 @@ export default function LanguageSwitcher({
               )}>
               <Flag
                 code={LOCALE_FLAG_CODES[supportedLocale]}
+                alt={
+                  supportedLocale === 'de'
+                    ? t('germanFlagAlt')
+                    : t('englishFlagAlt')
+                }
                 width='22'
                 height='16'
               />

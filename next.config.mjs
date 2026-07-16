@@ -13,6 +13,9 @@ const baseConfig = {
   // ⚠️ these *must* live here, before the plugin wraps it:
   typedRoutes: false, // moved from experimental in Next.js 16
 
+  // SEO/security: don't advertise the framework via the X-Powered-By header
+  poweredByHeader: false,
+
   // Enable use cache directive for Next.js 16
   experimental: {
     useCache: true,

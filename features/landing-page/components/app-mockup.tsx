@@ -14,7 +14,7 @@ export default function AppMockup() {
 
       <AppScreenshot
         src='/heroImage.png'
-        alt='Statix Live-Erfassung – Tore, Würfe und Paraden in Echtzeit erfassen'
+        alt='Handball-Statistiken live in der Statix App – Tore, Würfe und Paraden in Echtzeit erfassen'
         width={1916}
         height={879}
         label='Statix · Live-Erfassung'

@@ -8,12 +8,12 @@
     },
     "product": {
       "demo": "Live demo",
-      "features": "Features",
+      "features": "All features",
       "how": "How it works",
       "ratgeber": "Guide",
-      "faq": "FAQ",
+      "faq": "Frequently asked questions",
       "newsletter": "Newsletter",
-      "contact": "Contact"
+      "contact": "Get in touch"
     },
     "contact": {
       "location": "Made in Germany",
@@ -226,11 +226,13 @@
       "contact": "Contact",
       "impressum": "Legal"
     },
-    "demoCta": "Try the live demo",
+    "demoCta": "Try the demo",
     "languageSwitcher": {
       "label": "Switch language",
       "switchToGerman": "Switch to German",
-      "switchToEnglish": "Switch to English"
+      "switchToEnglish": "Switch to English",
+      "germanFlagAlt": "German flag",
+      "englishFlagAlt": "British flag"
     }
   },
   "legalPage": {
@@ -572,7 +574,7 @@
     },
     "showcase": {
       "eyebrow": "Product tour",
-      "title": "How you work with Statix",
+      "title": "How you track and analyze handball statistics with Statix",
       "description": "From live tracking on the bench to the finished analysis for the locker room – a look inside the app. And you can try all of it yourself in the live demo, no account needed.",
       "ctaLabel": "Try every feature in the live demo",
       "items": [
@@ -738,7 +740,7 @@
           "answer": "Statix runs directly in the browser on smartphone, tablet (iPad and Android) and laptop – both on the sideline and for post-game review at home. No app store installation is required."
         },
         {
-          "question": "Which statistics can I track with Statix?",
+          "question": "Which handball statistics can I track with Statix?",
           "answer": "You track goals, shots and shooting percentages, saves, fast breaks, technical errors, penalties (2 minutes, yellow, red) and substitutions. From this Statix automatically builds player and team statistics, shot maps, heatmaps and progress trends across the whole season."
         },
         {
@@ -800,7 +802,7 @@
       "button": "Send message",
       "pending": "Sending…",
       "privacyPrefix": "I accept the",
-      "privacyLink": "privacy policy",
+      "privacyLink": "privacy terms",
       "privacySuffix": "and agree to the processing of my data.",
       "note": "We only use your details to handle your request.",
       "successTitle": "Message sent!",

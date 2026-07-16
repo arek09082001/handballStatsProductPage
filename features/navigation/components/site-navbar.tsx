@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Menu, Play, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick } from '@/lib/analytics';
@@ -202,104 +202,116 @@ export default function SiteNavbar({
         </div>
       </nav>
 
-      <div
-        className={cn(
-          'fixed inset-0 z-40 bg-slate-950/12 backdrop-blur-[1px] transition-opacity duration-200 lg:hidden',
-          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0',
+      {/* The mobile menu only mounts while open, so crawlers don't see a
+       * second copy of every nav link in the server-rendered HTML. */}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <motion.div
+              key='mobile-menu-overlay'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className='fixed inset-0 z-40 bg-slate-950/12 backdrop-blur-[1px] lg:hidden'
+              onClick={closeMenu}
+            />
+
+            <motion.div
+              key='mobile-menu-panel'
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.2 }}
+              className='fixed left-4 right-4 top-24 z-40 overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] sm:left-6 sm:right-6 lg:hidden max-h-[calc(100vh-112px)]'>
+              <div className='space-y-2 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
+                <button
+                  type='button'
+                  onClick={() => {
+                    handleBrandClick();
+                    closeMenu();
+                  }}
+                  className='flex w-full min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
+                  <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
+                    <Image
+                      src={CLUB_CONFIG.branding.logo.path}
+                      alt={CLUB_CONFIG.display.logoAlt}
+                      title={CLUB_CONFIG.display.logoAlt}
+                      fill
+                      sizes='44px'
+                      className='object-contain p-1.5'
+                    />
+                  </span>
+
+                  <span className='min-w-0'>
+                    <span className='block truncate text-base font-semibold tracking-[-0.03em] text-slate-950'>
+                      {CLUB_CONFIG.name}
+                    </span>
+                    <span className='block truncate text-xs font-medium text-slate-500'>
+                      {CLUB_CONFIG.display.brandTagline}
+                    </span>
+                  </span>
+                </button>
+
+                {siteNavigationItems.map((item) => {
+                  const active = isItemActive(item);
+
+                  return (
+                    <Link
+                      key={item.ident}
+                      href={item.href}
+                      title={t(`items.${item.labelKey}`)}
+                      onClick={closeMenu}
+                      target={item.external ? '_blank' : undefined}
+                      rel={item.external ? 'noopener noreferrer' : undefined}
+                      aria-current={active ? 'page' : undefined}
+                      className={cn(
+                        'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
+                        item.external
+                          ? 'bg-orange-50 text-[#ea580c] hover:bg-orange-100'
+                          : active
+                            ? 'bg-slate-950 text-white'
+                            : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
+                      )}>
+                      <span className='inline-flex items-center gap-2'>
+                        {item.external && (
+                          <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
+                        )}
+                        {t(`items.${item.labelKey}`)}
+                      </span>
+                      {item.external ? (
+                        <ArrowUpRight className='size-4' />
+                      ) : (
+                        active && (
+                          <span className='size-2 rounded-full bg-white' />
+                        )
+                      )}
+                    </Link>
+                  );
+                })}
+
+                <Link
+                  href={CLUB_CONFIG.website.demoUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title={t('demoCta')}
+                  onClick={() => {
+                    trackDemoClick('navbar');
+                    closeMenu();
+                  }}
+                  className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#f97316] px-4 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
+                  <Play className='size-4 shrink-0' />
+                  {t('demoCta')}
+                </Link>
+
+                <div className='flex justify-center pt-2'>
+                  <LanguageSwitcher onLocaleChange={closeMenu} />
+                </div>
+              </div>
+            </motion.div>
+          </>
         )}
-        onClick={closeMenu}
-      />
-
-      <div
-        className={cn(
-          'fixed left-4 right-4 top-24 z-40 overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] transition-all duration-200 sm:left-6 sm:right-6 lg:hidden max-h-[calc(100vh-112px)]',
-          isOpen
-            ? 'translate-y-0 opacity-100'
-            : 'pointer-events-none -translate-y-2 opacity-0',
-        )}>
-        <div className='space-y-2 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
-          <button
-            type='button'
-            onClick={() => {
-              handleBrandClick();
-              closeMenu();
-            }}
-            className='flex w-full min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
-            <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
-              <Image
-                src={CLUB_CONFIG.branding.logo.path}
-                alt={CLUB_CONFIG.display.logoAlt}
-                title={CLUB_CONFIG.display.logoAlt}
-                fill
-                sizes='44px'
-                className='object-contain p-1.5'
-              />
-            </span>
-
-            <span className='min-w-0'>
-              <span className='block truncate text-base font-semibold tracking-[-0.03em] text-slate-950'>
-                {CLUB_CONFIG.name}
-              </span>
-              <span className='block truncate text-xs font-medium text-slate-500'>
-                {CLUB_CONFIG.display.brandTagline}
-              </span>
-            </span>
-          </button>
-
-          {siteNavigationItems.map((item) => {
-            const active = isItemActive(item);
-
-            return (
-              <Link
-                key={item.ident}
-                href={item.href}
-                title={t(`items.${item.labelKey}`)}
-                onClick={closeMenu}
-                target={item.external ? '_blank' : undefined}
-                rel={item.external ? 'noopener noreferrer' : undefined}
-                aria-current={active ? 'page' : undefined}
-                className={cn(
-                  'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
-                  item.external
-                    ? 'bg-orange-50 text-[#ea580c] hover:bg-orange-100'
-                    : active
-                      ? 'bg-slate-950 text-white'
-                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
-                )}>
-                <span className='inline-flex items-center gap-2'>
-                  {item.external && (
-                    <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
-                  )}
-                  {t(`items.${item.labelKey}`)}
-                </span>
-                {item.external ? (
-                  <ArrowUpRight className='size-4' />
-                ) : (
-                  active && <span className='size-2 rounded-full bg-white' />
-                )}
-              </Link>
-            );
-          })}
-
-          <Link
-            href={CLUB_CONFIG.website.demoUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            title={t('demoCta')}
-            onClick={() => {
-              trackDemoClick('navbar');
-              closeMenu();
-            }}
-            className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#f97316] px-4 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
-            <Play className='size-4 shrink-0' />
-            {t('demoCta')}
-          </Link>
-
-          <div className='flex justify-center pt-2'>
-            <LanguageSwitcher onLocaleChange={closeMenu} />
-          </div>
-        </div>
-      </div>
+      </AnimatePresence>
     </>
   );
 }
