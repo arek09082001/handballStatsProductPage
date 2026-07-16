@@ -99,9 +99,9 @@ export default function AiAnalyticsSection() {
                 <div className='flex size-12 items-center justify-center rounded-2xl bg-primary/20 text-[#fdba74]'>
                   <Icon className='size-6' />
                 </div>
-                <h3 className='mt-5 text-xl font-bold tracking-tight text-white'>
+                <p className='mt-5 text-xl font-bold tracking-tight text-white'>
                   {scope.title}
-                </h3>
+                </p>
                 <p className='mt-3 text-sm leading-7 text-slate-300'>
                   {scope.description}
                 </p>

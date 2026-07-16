@@ -8,12 +8,12 @@
     },
     "product": {
       "demo": "Live demo",
-      "features": "Features",
+      "features": "All features",
       "how": "How it works",
       "ratgeber": "Guide",
-      "faq": "FAQ",
+      "faq": "Frequently asked questions",
       "newsletter": "Newsletter",
-      "contact": "Contact"
+      "contact": "Get in touch"
     },
     "contact": {
       "location": "Made in Germany",
@@ -226,11 +226,13 @@
       "contact": "Contact",
       "impressum": "Legal"
     },
-    "demoCta": "Try the live demo",
+    "demoCta": "Try the demo",
     "languageSwitcher": {
       "label": "Switch language",
       "switchToGerman": "Switch to German",
-      "switchToEnglish": "Switch to English"
+      "switchToEnglish": "Switch to English",
+      "germanFlagAlt": "German flag",
+      "englishFlagAlt": "British flag"
     }
   },
   "legalPage": {
@@ -800,7 +802,7 @@
       "button": "Send message",
       "pending": "Sending…",
       "privacyPrefix": "I accept the",
-      "privacyLink": "privacy policy",
+      "privacyLink": "privacy terms",
       "privacySuffix": "and agree to the processing of my data.",
       "note": "We only use your details to handle your request.",
       "successTitle": "Message sent!",

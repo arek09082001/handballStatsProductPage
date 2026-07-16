@@ -66,9 +66,9 @@ export default function ProsSection() {
               <div className='flex size-11 items-center justify-center rounded-xl bg-rose-100 text-rose-500'>
                 <X className='size-5' />
               </div>
-              <h3 className='mt-5 text-2xl font-bold tracking-tight text-foreground'>
+              <p className='mt-5 text-2xl font-bold tracking-tight text-foreground'>
                 {t('oldTitle')}
-              </h3>
+              </p>
               <ul className='mt-6 space-y-4'>
                 {oldPoints.map((point) => (
                   <li key={point} className='flex items-start gap-3'>
@@ -92,9 +92,9 @@ export default function ProsSection() {
               <div className='flex size-11 items-center justify-center rounded-xl bg-primary/20 text-[#fdba74]'>
                 <Check className='size-5' />
               </div>
-              <h3 className='mt-5 text-2xl font-bold tracking-tight text-white'>
+              <p className='mt-5 text-2xl font-bold tracking-tight text-white'>
                 {t('newTitle')}
-              </h3>
+              </p>
               <ul className='mt-6 space-y-4'>
                 {newPoints.map((point) => (
                   <li key={point} className='flex items-start gap-3'>

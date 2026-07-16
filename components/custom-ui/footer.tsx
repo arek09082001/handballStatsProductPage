@@ -96,7 +96,9 @@ export default function Footer() {
                 title={`${t('titles.email')} ${CLUB_CONFIG.email.main}`}
                 className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
                 <Mail className='mt-0.5 size-4 shrink-0' />
-                <span>{CLUB_CONFIG.email.main}</span>
+                <span>
+                  {t('titles.email')} {CLUB_CONFIG.email.main}
+                </span>
               </Link>
 
               <div className='flex items-start gap-3 text-[13px] text-slate-300'>

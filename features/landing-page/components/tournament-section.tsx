@@ -76,9 +76,9 @@ export default function TournamentSection() {
                     <Icon className='size-5' />
                   </span>
                   <div>
-                    <h3 className='text-lg font-bold tracking-tight text-foreground'>
+                    <p className='text-lg font-bold tracking-tight text-foreground'>
                       {point.title}
-                    </h3>
+                    </p>
                     <p className='mt-1.5 text-sm leading-7 text-muted-foreground'>
                       {point.description}
                     </p>
