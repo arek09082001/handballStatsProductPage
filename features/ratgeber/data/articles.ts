@@ -36,6 +36,21 @@ import { handballBallhandlingVerbessern } from './articles/handball-ballhandling
 import { handballSchlagwurfTechnik } from './articles/handball-schlagwurf-technik';
 import { handballTrainerWerden } from './articles/handball-trainer-werden';
 import { handballMinihandballKinder } from './articles/handball-minihandball-kinder';
+import { handball1Gegen1Verbessern } from './articles/handball-1-gegen-1-verbessern';
+import { handballHarzTipps } from './articles/handball-harz-tipps';
+import { handballTorwartTipps } from './articles/handball-torwart-tipps';
+import { handballSiebenmeterHalten } from './articles/handball-siebenmeter-halten';
+import { handballAussenspielerTipps } from './articles/handball-aussenspieler-tipps';
+import { handballRueckraumspielerTipps } from './articles/handball-rueckraumspieler-tipps';
+import { handballSpielmacherWerden } from './articles/handball-spielmacher-werden';
+import { handballAbwehr1Gegen1 } from './articles/handball-abwehr-1-gegen-1';
+import { handballBlockenLernen } from './articles/handball-blocken-lernen';
+import { handballWurfarten } from './articles/handball-wurfarten';
+import { handballKempaTrick } from './articles/handball-kempa-trick';
+import { handballAlleineTrainieren } from './articles/handball-alleine-trainieren';
+import { handballNervositaetVorSpielen } from './articles/handball-nervositaet-vor-spielen';
+import { handballRegeneration } from './articles/handball-regeneration';
+import { handballWelchePositionPasstZuMir } from './articles/handball-welche-position-passt-zu-mir';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -86,6 +101,21 @@ export const ARTICLES: Article[] = [
   handballSchlagwurfTechnik,
   handballTrainerWerden,
   handballMinihandballKinder,
+  handball1Gegen1Verbessern,
+  handballHarzTipps,
+  handballTorwartTipps,
+  handballSiebenmeterHalten,
+  handballAussenspielerTipps,
+  handballRueckraumspielerTipps,
+  handballSpielmacherWerden,
+  handballAbwehr1Gegen1,
+  handballBlockenLernen,
+  handballWurfarten,
+  handballKempaTrick,
+  handballAlleineTrainieren,
+  handballNervositaetVorSpielen,
+  handballRegeneration,
+  handballWelchePositionPasstZuMir,
 ];
 
 /** Articles sorted newest-first by publication date. */
