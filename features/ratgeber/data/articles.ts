@@ -51,6 +51,26 @@ import { handballAlleineTrainieren } from './articles/handball-alleine-trainiere
 import { handballNervositaetVorSpielen } from './articles/handball-nervositaet-vor-spielen';
 import { handballRegeneration } from './articles/handball-regeneration';
 import { handballWelchePositionPasstZuMir } from './articles/handball-welche-position-passt-zu-mir';
+import { handballExpectedGoalsXg } from './articles/handball-expected-goals-xg';
+import { handballBallbesitzTempo } from './articles/handball-ballbesitz-tempo';
+import { handballTorwartStatistik } from './articles/handball-torwart-statistik';
+import { handballKoordinationstraining } from './articles/handball-koordinationstraining';
+import { handballBeweglichkeitDehnen } from './articles/handball-beweglichkeit-dehnen';
+import { handballTrainingslagerPlanen } from './articles/handball-trainingslager-planen';
+import { handballSpielformenTraining } from './articles/handball-spielformen-training';
+import { handballLinkshaender } from './articles/handball-linkshaender';
+import { handballStemmschrittDreierrhythmus } from './articles/handball-stemmschritt-dreierrhythmus';
+import { handball60Abwehr } from './articles/handball-6-0-abwehr';
+import { handball51Abwehr } from './articles/handball-5-1-abwehr';
+import { handballUeberzahlUnterzahl } from './articles/handball-ueberzahl-unterzahl';
+import { handballFreilaufenOhneBall } from './articles/handball-freilaufen-ohne-ball';
+import { handballTimeoutNutzen } from './articles/handball-timeout-nutzen';
+import { handballZeitstrafeRegeln } from './articles/handball-zeitstrafe-regeln';
+import { handballSpielfeldMasse } from './articles/handball-spielfeld-masse';
+import { handballAusruestungEinsteiger } from './articles/handball-ausruestung-einsteiger';
+import { handballPassivesSpiel } from './articles/handball-passives-spiel';
+import { handballQuereinsteigerErwachsene } from './articles/handball-quereinsteiger-erwachsene';
+import { handballKommunikationSpielfeld } from './articles/handball-kommunikation-spielfeld';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -116,6 +136,26 @@ export const ARTICLES: Article[] = [
   handballNervositaetVorSpielen,
   handballRegeneration,
   handballWelchePositionPasstZuMir,
+  handballExpectedGoalsXg,
+  handballBallbesitzTempo,
+  handballTorwartStatistik,
+  handballKoordinationstraining,
+  handballBeweglichkeitDehnen,
+  handballTrainingslagerPlanen,
+  handballSpielformenTraining,
+  handballLinkshaender,
+  handballStemmschrittDreierrhythmus,
+  handball60Abwehr,
+  handball51Abwehr,
+  handballUeberzahlUnterzahl,
+  handballFreilaufenOhneBall,
+  handballTimeoutNutzen,
+  handballZeitstrafeRegeln,
+  handballSpielfeldMasse,
+  handballAusruestungEinsteiger,
+  handballPassivesSpiel,
+  handballQuereinsteigerErwachsene,
+  handballKommunikationSpielfeld,
 ];
 
 /** Articles sorted newest-first by publication date. */
