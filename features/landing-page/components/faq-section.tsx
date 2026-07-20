@@ -16,21 +16,18 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id='faq' className='w-full scroll-mt-24 bg-muted/30 py-20 md:py-24'>
+    <section id='faq' className='w-full scroll-mt-24 bg-muted/30 py-24 md:py-32'>
       <div className='mx-auto w-full max-w-3xl px-6 sm:px-10'>
         <div className='text-center'>
-          <p className='text-xs font-semibold uppercase tracking-[0.2em] text-primary'>
-            {t('eyebrow')}
-          </p>
-          <h2 className='mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
             {t('title')}
           </h2>
-          <p className='mt-4 text-base leading-7 text-muted-foreground'>
+          <p className='mt-5 text-base leading-7 text-muted-foreground'>
             {t('description')}
           </p>
         </div>
 
-        <div className='mt-12 space-y-3'>
+        <div className='mt-16 space-y-3'>
           {items.map((item, index) => {
             const isOpen = openIndex === index;
 

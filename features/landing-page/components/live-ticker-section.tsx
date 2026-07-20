@@ -5,7 +5,6 @@ import {
   Activity,
   Link2,
   QrCode,
-  Radio,
   ShieldCheck,
 } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
@@ -88,24 +87,20 @@ export default function LiveTickerSection() {
     <section
       id='liveticker'
       ref={sectionRef}
-      className='relative w-full scroll-mt-24 overflow-hidden bg-gradient-to-b from-[#0a1020] via-[#111b34] to-[#0a1020] py-20 text-white md:py-24'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-gradient-to-b from-[#0a1020] via-[#111b34] to-[#0a1020] py-24 text-white md:py-32'>
       <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_45%_at_85%_0%,rgba(249,115,22,0.16),transparent),radial-gradient(ellipse_45%_45%_at_0%_100%,rgba(37,99,235,0.16),transparent)]' />
 
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div className='mx-auto max-w-3xl text-center'>
-          <p className='inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#fdba74] ring-1 ring-white/15'>
-            <Radio className='size-3.5' />
-            {t('eyebrow')}
-          </p>
-          <h2 className='mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
             {t('title')}
           </h2>
-          <p className='mt-4 text-base leading-7 text-slate-300'>
+          <p className='mt-5 text-base leading-7 text-slate-300'>
             {t('description')}
           </p>
         </div>
 
-        <div className='mt-14 grid items-center gap-12 lg:grid-cols-2 lg:gap-16'>
+        <div className='mt-16 grid items-center gap-12 lg:grid-cols-2 lg:gap-16'>
           <div ref={copyRef} className='space-y-7'>
             {points.map((point, index) => {
               const Icon = POINT_ICONS[index % POINT_ICONS.length];

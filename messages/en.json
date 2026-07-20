@@ -10,7 +10,6 @@
       "demo": "Live demo",
       "features": "All features",
       "liveTicker": "Live ticker",
-      "how": "How it works",
       "ratgeber": "Guide",
       "faq": "Frequently asked questions",
       "newsletter": "Newsletter",
@@ -575,7 +574,6 @@
       ]
     },
     "showcase": {
-      "eyebrow": "Product tour",
       "title": "How you track and analyze handball statistics with Statix",
       "description": "From live tracking on the bench to the finished analysis for the locker room – a look inside the app. And you can try all of it yourself in the live demo, no account needed.",
       "ctaLabel": "Try every feature in the live demo",
@@ -613,51 +611,28 @@
       ]
     },
     "ai": {
-      "eyebrow": "AI analysis",
       "title": "AI analyses that explain why – not just what",
       "description": "Statix analyses your recorded games with AI on four levels: for every single game, for your whole team across the season, as a scouting profile for individual players, and for entire tournaments. No notepad or spreadsheet can do that.",
       "privacyNote": "Privacy built in: player names are pseudonymised before any data reaches an AI – and reports are generated in the background while you keep working.",
       "scopes": [
         {
           "title": "Single game",
-          "description": "Deep dive into one match: game flow, scoring runs, turning points, tactical patterns and behaviour under pressure – with clear coaching recommendations.",
-          "points": [
-            "Game flow & critical phases",
-            "Shot-zone efficiency",
-            "Turning points & key moments",
-            "Timeout & substitution impact"
-          ]
+          "description": "Deep dive into one match: game flow, scoring runs, turning points, tactical patterns and behaviour under pressure – with clear coaching recommendations."
         },
         {
           "title": "Whole team",
-          "description": "Several games seen as one system: trends, stability, offensive structure and recurring error patterns across the season.",
-          "points": [
-            "Trends across the season",
-            "Structure & roles in the team",
-            "Recurring error patterns"
-          ]
+          "description": "Several games seen as one system: trends, stability, offensive structure and recurring error patterns across the season."
         },
         {
           "title": "Individual player",
-          "description": "A scouting profile per player across all games: player type, shot selection, efficiency, form curve and the situations where they shine or struggle.",
-          "points": [
-            "Player type & actual role",
-            "Shot selection & efficiency",
-            "Form & behaviour under pressure"
-          ]
+          "description": "A scouting profile per player across all games: player type, shot selection, efficiency, form curve and the situations where they shine or struggle."
         },
         {
           "title": "Tournament",
-          "description": "The AI looks at your whole tournament as one unit: the arc across all games, notable patterns and what made the difference in the end.",
-          "points": [
-            "Analysis across all tournament games",
-            "Patterns across the whole tournament",
-            "Takeaways for the next matchday"
-          ]
+          "description": "The AI looks at your whole tournament as one unit: the arc across all games, notable patterns and what made the difference in the end."
         }
       ],
       "showcase": {
-        "badge": "Single-game analysis",
         "title": "An analysis that explains the connections – not just the numbers",
         "description": "Interactive charts, shot-zone heatmaps and readable insights instead of bare numbers. The AI spots scoring runs, names turning points, exposes weaknesses under pressure and delivers concrete training recommendations.",
         "imageOneLabel": "Game flow & shot-zone efficiency",
@@ -665,7 +640,6 @@
       }
     },
     "tournament": {
-      "eyebrow": "Tournament mode",
       "title": "Tournaments and leagues fully under control",
       "description": "Create a tournament with several teams, start live games right from it and keep the standings in view at all times.",
       "points": [
@@ -694,7 +668,6 @@
       "imageTwoLabel": "Fixtures & results"
     },
     "liveTicker": {
-      "eyebrow": "New · Live ticker",
       "title": "The whole gym follows along – live",
       "description": "Publish your game as a public live ticker: parents, fans and club mates follow the score and game flow in real time in their browser – no account needed.",
       "points": [
@@ -746,7 +719,6 @@
       }
     },
     "collab": {
-      "eyebrow": "Collaboration",
       "title": "Stats that move your whole team forward",
       "description": "Statix is not a lone-wolf tool: share games with fellow coaches, bring your coaching staff on board and actively involve your players.",
       "points": [
@@ -781,7 +753,6 @@
       }
     },
     "allFeatures": {
-      "eyebrow": "All features",
       "title": "Everything included – from throw-off to analysis",
       "description": "Statix grows with every matchday. All of this is already in the app – features marked “New” have just landed.",
       "newBadge": "New",
@@ -968,27 +939,7 @@
         }
       ]
     },
-    "how": {
-      "eyebrow": "It's that simple",
-      "title": "Game analysis in three steps",
-      "description": "No training required, no complicated setup. You are ready to go in minutes.",
-      "steps": [
-        {
-          "title": "Create a game",
-          "description": "Pick your team and opponent and start in seconds – even offline in the gym."
-        },
-        {
-          "title": "Track live",
-          "description": "Tap every action during the match. Statix calculates all stats automatically."
-        },
-        {
-          "title": "Analyse & coach better",
-          "description": "Review shot maps and player trends and make data-driven decisions."
-        }
-      ]
-    },
     "pros": {
-      "eyebrow": "Why Statix",
       "title": "No more stats on a napkin",
       "description": "Show your coach in two minutes what gets lost on a notepad: open the live demo in the gym – a real game, real numbers, a finished analysis.",
       "cta": "Open the demo & show your coach",
@@ -1007,7 +958,6 @@
       ]
     },
     "faq": {
-      "eyebrow": "FAQ",
       "title": "Frequently asked questions",
       "description": "Everything you need to know before getting started.",
       "items": [
@@ -1078,7 +1028,6 @@
       ]
     },
     "newsletter": {
-      "eyebrow": "Launch offer",
       "title": "Secure the launch offer for your team",
       "description": "Statix launches officially soon. Sign up to get the exclusive launch offer for clubs, new features first and practical tips on game analysis – straight from the developer.",
       "placeholder": "Your email address",
@@ -1100,7 +1049,6 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "contact": {
-      "eyebrow": "Contact",
       "title": "Get in touch – we're here for you",
       "description": "Questions about Statix, want to sign up your team or club, or have feedback? Send us a message and we'll get back to you personally as soon as possible.",
       "namePlaceholder": "Your name",

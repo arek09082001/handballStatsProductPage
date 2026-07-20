@@ -103,21 +103,18 @@ export default function FeatureGridSection() {
     <section
       id='all-features'
       ref={sectionRef}
-      className='w-full scroll-mt-24 bg-background py-20 md:py-24'>
+      className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div className='mx-auto max-w-3xl text-center'>
-          <p className='text-xs font-semibold uppercase tracking-[0.2em] text-primary'>
-            {t('eyebrow')}
-          </p>
-          <h2 className='mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
             {t('title')}
           </h2>
-          <p className='mt-4 text-base leading-7 text-muted-foreground'>
+          <p className='mt-5 text-base leading-7 text-muted-foreground'>
             {t('description')}
           </p>
         </div>
 
-        <div className='mt-14 space-y-14'>
+        <div className='mt-20 space-y-20'>
           {groups.map((group, groupIndex) => {
             const GroupIcon = GROUP_ICONS[groupIndex % GROUP_ICONS.length];
             const itemIcons = ITEM_ICONS[groupIndex % ITEM_ICONS.length];
@@ -125,16 +122,13 @@ export default function FeatureGridSection() {
             return (
               <div key={group.title} data-feature-group>
                 <div className='flex items-center gap-3'>
-                  <span className='flex size-9 items-center justify-center rounded-lg bg-primary/10 text-primary'>
-                    <GroupIcon className='size-4.5' />
-                  </span>
+                  <GroupIcon className='size-5 text-primary' />
                   <h3 className='text-xl font-bold tracking-tight text-foreground'>
                     {group.title}
                   </h3>
-                  <span className='h-px flex-1 bg-border' />
                 </div>
 
-                <div className='mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4'>
+                <div className='mt-8 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
                   {group.items.map((item, itemIndex) => {
                     const ItemIcon = itemIcons[itemIndex % itemIcons.length];
 
@@ -142,21 +136,21 @@ export default function FeatureGridSection() {
                       <div
                         key={item.name}
                         data-feature-card
-                        className='rounded-xl border border-border bg-card p-4 transition-colors duration-200 hover:border-primary/30'>
-                        <div className='flex items-start gap-2.5'>
-                          <ItemIcon className='mt-0.5 size-4 shrink-0 text-primary' />
-                          <p className='min-w-0 text-sm font-bold leading-snug text-foreground'>
+                        className='flex items-start gap-3.5'>
+                        <ItemIcon className='mt-0.5 size-[18px] shrink-0 text-primary' />
+                        <div className='min-w-0'>
+                          <p className='text-sm font-bold leading-snug text-foreground'>
                             {item.name}
+                            {item.isNew && (
+                              <span className='ml-2 inline-block align-middle rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary'>
+                                {t('newBadge')}
+                              </span>
+                            )}
                           </p>
-                          {item.isNew && (
-                            <span className='ml-auto shrink-0 rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary'>
-                              {t('newBadge')}
-                            </span>
-                          )}
+                          <p className='mt-1.5 text-sm leading-6 text-muted-foreground'>
+                            {item.description}
+                          </p>
                         </div>
-                        <p className='mt-2 text-xs leading-5 text-muted-foreground'>
-                          {item.description}
-                        </p>
                       </div>
                     );
                   })}

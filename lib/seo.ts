@@ -204,26 +204,6 @@ export const APP_SCREENSHOTS = [
 ] as const;
 
 /**
- * Fallback "how it works" steps for the HowTo structured data. Kept in sync
- * with `productPage.how.steps` in the message catalogues; the live schema
- * prefers the translated strings when available.
- */
-export const HOWTO_STEPS = [
-    {
-        name: 'Spiel anlegen',
-        text: 'Wähle dein Team, den Gegner und leg in Sekunden los – auch offline in der Halle.',
-    },
-    {
-        name: 'Live erfassen',
-        text: 'Tippe jede Aktion während des Spiels. Statix berechnet alle Statistiken automatisch.',
-    },
-    {
-        name: 'Analysieren & besser coachen',
-        text: 'Werte Wurfbilder und Spielertrends aus und triff datenbasierte Entscheidungen.',
-    },
-] as const;
-
-/**
  * Fallback FAQ used for structured data when translations are unavailable.
  * The live FAQ schema in `components/seo/structured-data.tsx` is generated
  * from the same translations as the visible FAQ section, so the rich-result

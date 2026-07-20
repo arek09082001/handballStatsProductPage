@@ -50,7 +50,7 @@ export default function FinalCTASection() {
     <section
       ref={sectionRef}
       id='demo'
-      className='w-full scroll-mt-24 bg-background py-20 md:py-24'>
+      className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div
           ref={cardRef}

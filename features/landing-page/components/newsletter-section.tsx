@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { AlertCircle, Check, Mail, Sparkles } from 'lucide-react';
+import { AlertCircle, Check, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useNewsletter } from '@/lib/hooks/use-newsletter';
 import { Button } from '@/components/ui/button';
@@ -57,18 +57,14 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section id='newsletter' className='w-full scroll-mt-24 bg-background py-20 md:py-24'>
+    <section id='newsletter' className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div className='relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-[#0b1220] via-[#101a36] to-[#0b1220] px-7 py-10 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.7)] sm:px-10 md:px-14 md:py-12'>
           <div className='absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(249,115,22,0.22),transparent_45%),radial-gradient(circle_at_85%_90%,rgba(37,99,235,0.22),transparent_45%)]' />
 
           <div className='relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center'>
             <div className='text-center text-white lg:text-left'>
-              <span className='inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-[#fdba74]'>
-                <Sparkles className='size-3.5' />
-                {t('eyebrow')}
-              </span>
-              <h2 className='mt-4 text-3xl font-bold tracking-tight sm:text-4xl'>
+              <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
                 {t('title')}
               </h2>
               <p className='mx-auto mt-4 max-w-lg text-base leading-7 text-slate-300 lg:mx-0'>

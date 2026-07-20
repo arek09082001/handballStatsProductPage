@@ -10,7 +10,6 @@
       "demo": "Live-Demo",
       "features": "Alle Funktionen",
       "liveTicker": "Live-Ticker",
-      "how": "So funktioniert's",
       "ratgeber": "Ratgeber",
       "faq": "Häufige Fragen",
       "newsletter": "Newsletter",
@@ -575,7 +574,6 @@
       ]
     },
     "showcase": {
-      "eyebrow": "Produkt-Tour",
       "title": "So erfasst und analysierst du Handball-Statistiken mit Statix",
       "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung für die Kabine – ein Blick in die App. Alles davon kannst du in der Live-Demo ohne Account selbst ausprobieren.",
       "ctaLabel": "Alle Funktionen direkt in der Live-Demo ausprobieren",
@@ -613,51 +611,28 @@
       ]
     },
     "ai": {
-      "eyebrow": "KI-Analyse",
       "title": "KI-Analysen, die erklären warum – nicht nur was",
       "description": "Statix wertet deine erfassten Spiele mit KI aus – auf vier Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison, als Scouting-Profil für einzelne Spieler und für komplette Turniere. Das leistet kein Zettel und keine Excel-Tabelle.",
       "privacyNote": "Datenschutz eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – und Berichte entstehen im Hintergrund, während du weiterarbeitest.",
       "scopes": [
         {
           "title": "Einzelspiel",
-          "description": "Tiefenanalyse eines Spiels: Spielverlauf, Torläufe, Wendepunkte, taktische Muster und Verhalten unter Druck – mit klaren Trainer-Empfehlungen.",
-          "points": [
-            "Spielverlauf & kritische Phasen",
-            "Wurfzonen-Effizienz",
-            "Wende- & Schlüsselmomente",
-            "Timeout- & Wechsel-Wirkung"
-          ]
+          "description": "Tiefenanalyse eines Spiels: Spielverlauf, Torläufe, Wendepunkte, taktische Muster und Verhalten unter Druck – mit klaren Trainer-Empfehlungen."
         },
         {
           "title": "Ganzes Team",
-          "description": "Mehrere Spiele als ein System betrachtet: Trends, Stabilität, Offensivsystem und wiederkehrende Fehlermuster über die Saison.",
-          "points": [
-            "Trends über die Saison",
-            "Struktur & Rollen im Team",
-            "Wiederkehrende Fehlermuster"
-          ]
+          "description": "Mehrere Spiele als ein System betrachtet: Trends, Stabilität, Offensivsystem und wiederkehrende Fehlermuster über die Saison."
         },
         {
           "title": "Einzelspieler",
-          "description": "Ein Scouting-Profil pro Spieler über alle Spiele: Spielertyp, Wurfauswahl, Effizienz, Formkurve und in welchen Situationen er stark oder schwach ist.",
-          "points": [
-            "Spielertyp & tatsächliche Rolle",
-            "Wurfauswahl & Effizienz",
-            "Form & Verhalten unter Druck"
-          ]
+          "description": "Ein Scouting-Profil pro Spieler über alle Spiele: Spielertyp, Wurfauswahl, Effizienz, Formkurve und in welchen Situationen er stark oder schwach ist."
         },
         {
           "title": "Turnier",
-          "description": "Die KI betrachtet dein ganzes Turnier als Einheit: Verlauf über alle Spiele, auffällige Muster und was am Ende den Unterschied gemacht hat.",
-          "points": [
-            "Analyse über alle Turnierspiele",
-            "Muster über das ganze Turnier",
-            "Erkenntnisse für den nächsten Spieltag"
-          ]
+          "description": "Die KI betrachtet dein ganzes Turnier als Einheit: Verlauf über alle Spiele, auffällige Muster und was am Ende den Unterschied gemacht hat."
         }
       ],
       "showcase": {
-        "badge": "Einzelspiel-Analyse",
         "title": "Eine Analyse, die Zusammenhänge erklärt – nicht nur Zahlen zeigt",
         "description": "Interaktive Charts, Wurfzonen-Heatmaps und verständliche Insights statt nackter Zahlen. Die KI erkennt Torläufe, benennt Wendepunkte, deckt Schwachstellen unter Druck auf und liefert konkrete Trainings-Empfehlungen.",
         "imageOneLabel": "Spielverlauf & Wurfzonen-Effizienz",
@@ -665,7 +640,6 @@
       }
     },
     "tournament": {
-      "eyebrow": "Turniermodus",
       "title": "Turniere und Ligen komplett im Griff",
       "description": "Lege ein Turnier mit mehreren Mannschaften an, starte Live-Spiele direkt daraus und behalte die Tabelle jederzeit im Blick.",
       "points": [
@@ -694,7 +668,6 @@
       "imageTwoLabel": "Spielplan & Ergebnisse"
     },
     "liveTicker": {
-      "eyebrow": "Neu · Live-Ticker",
       "title": "Die ganze Halle fiebert mit – live",
       "description": "Veröffentliche dein Spiel als öffentlichen Live-Ticker: Eltern, Fans und Vereinskollegen verfolgen Spielstand und Spielverlauf in Echtzeit im Browser – ganz ohne Account.",
       "points": [
@@ -746,7 +719,6 @@
       }
     },
     "collab": {
-      "eyebrow": "Zusammenarbeit",
       "title": "Statistik, die dein ganzes Team weiterbringt",
       "description": "Statix ist kein Einzelkämpfer-Tool: Teile Spiele mit Trainerkollegen, hol dein Trainerteam an Bord und binde deine Spieler aktiv ein.",
       "points": [
@@ -781,7 +753,6 @@
       }
     },
     "allFeatures": {
-      "eyebrow": "Alle Funktionen",
       "title": "Alles drin – vom Anwurf bis zur Analyse",
       "description": "Statix wächst mit jedem Spieltag. Das steckt heute schon alles in der App – Funktionen mit „Neu“ sind gerade erst dazugekommen.",
       "newBadge": "Neu",
@@ -968,27 +939,7 @@
         }
       ]
     },
-    "how": {
-      "eyebrow": "So einfach geht es",
-      "title": "In drei Schritten zur Spielanalyse",
-      "description": "Kein Schulungsaufwand, keine komplizierte Einrichtung. Du bist in wenigen Minuten startklar.",
-      "steps": [
-        {
-          "title": "Spiel anlegen",
-          "description": "Wähle dein Team, den Gegner und leg in Sekunden los – auch offline in der Halle."
-        },
-        {
-          "title": "Live erfassen",
-          "description": "Tippe jede Aktion während des Spiels. Statix berechnet alle Statistiken automatisch."
-        },
-        {
-          "title": "Analysieren & besser coachen",
-          "description": "Werte Wurfbilder und Spielertrends aus und triff datenbasierte Entscheidungen."
-        }
-      ]
-    },
     "pros": {
-      "eyebrow": "Warum Statix",
       "title": "Schluss mit Statistik auf dem Bierdeckel",
       "description": "Zeig deinem Trainer in zwei Minuten, was auf dem Zettel verloren geht: Öffne die Live-Demo in der Halle – echtes Spiel, echte Zahlen, fertige Auswertung.",
       "cta": "Demo öffnen & dem Trainer zeigen",
@@ -1007,7 +958,6 @@
       ]
     },
     "faq": {
-      "eyebrow": "FAQ",
       "title": "Häufige Fragen",
       "description": "Alles, was du vor dem Start wissen musst.",
       "items": [
@@ -1078,7 +1028,6 @@
       ]
     },
     "newsletter": {
-      "eyebrow": "Launch-Angebot",
       "title": "Sichere dir das Launch-Angebot für dein Team",
       "description": "Statix startet bald offiziell. Trag dich ein und bekomme das exklusive Launch-Angebot für Vereine, neue Funktionen zuerst und Praxis-Tipps zur Spielanalyse – direkt vom Entwickler.",
       "placeholder": "Deine E-Mail-Adresse",
@@ -1100,7 +1049,6 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "contact": {
-      "eyebrow": "Kontakt",
       "title": "Schreib uns – wir sind für dich da",
       "description": "Du hast Fragen zu Statix, möchtest dein Team oder deinen Verein anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
       "namePlaceholder": "Dein Name",
