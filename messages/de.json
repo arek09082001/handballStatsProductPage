@@ -759,6 +759,7 @@
       "groups": [
         {
           "title": "Live erfassen",
+          "tagline": "Alles, was in der Halle passiert, hältst du mit einem Tap fest.",
           "items": [
             {
               "name": "1-Tap-Erfassung",
@@ -804,6 +805,7 @@
         },
         {
           "title": "Auswerten & verstehen",
+          "tagline": "Aus deinen Taps werden Erkenntnisse fürs nächste Training.",
           "items": [
             {
               "name": "Spielerstatistiken live",
@@ -849,6 +851,7 @@
         },
         {
           "title": "KI-Analyse",
+          "tagline": "Wie ein Co-Trainer, der jede Zahl gelesen hat.",
           "items": [
             {
               "name": "Spielanalyse",
@@ -894,6 +897,7 @@
         },
         {
           "title": "Team & Organisation",
+          "tagline": "Statistik ist Teamsport – teile, organisiere, binde alle ein.",
           "items": [
             {
               "name": "Live-Ticker",
@@ -937,7 +941,8 @@
             }
           ]
         }
-      ]
+      ],
+      "countLabel": "{count} Funktionen"
     },
     "pros": {
       "title": "Schluss mit Statistik auf dem Bierdeckel",

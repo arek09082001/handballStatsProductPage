@@ -113,10 +113,12 @@ export default function ShowcaseSection() {
                 }}
                 className='grid items-center gap-8 lg:grid-cols-2 lg:gap-14'>
                 <div className={reversed ? 'lg:order-2' : ''}>
-                  <span className='inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary'>
-                    {item.badge}
-                  </span>
-                  <h3 className='mt-5 text-2xl font-bold tracking-tight text-foreground sm:text-3xl'>
+                  <p className='flex items-center gap-3 text-sm font-semibold tabular-nums text-primary'>
+                    {String(index + 1).padStart(2, '0')}
+                    <span aria-hidden className='h-px w-10 bg-primary/40' />
+                    <span className='font-medium text-muted-foreground'>{item.badge}</span>
+                  </p>
+                  <h3 className='mt-4 text-2xl font-bold tracking-tight text-foreground sm:text-3xl'>
                     {item.title}
                   </h3>
                   <p className='mt-4 text-base leading-7 text-muted-foreground'>

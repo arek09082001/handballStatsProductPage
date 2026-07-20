@@ -28,8 +28,8 @@ export default function ProductHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, ease: 'easeOut' }}
           className={`w-full shrink-0 text-center lg:w-[44%] lg:text-left ${heroFont.className}`}>
-          <div className='mx-auto inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary lg:mx-0'>
-            <span className='size-2 rounded-full bg-primary' />
+          <div className='mx-auto inline-flex items-center gap-2.5 text-sm font-medium text-muted-foreground lg:mx-0'>
+            <span className='size-1.5 rounded-full bg-primary' />
             <span>{t('badge')}</span>
           </div>
 

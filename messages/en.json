@@ -759,6 +759,7 @@
       "groups": [
         {
           "title": "Track live",
+          "tagline": "Everything that happens in the gym, captured with one tap.",
           "items": [
             {
               "name": "1-tap tracking",
@@ -804,6 +805,7 @@
         },
         {
           "title": "Analyse & understand",
+          "tagline": "Your taps become insights for the next training session.",
           "items": [
             {
               "name": "Live player stats",
@@ -849,6 +851,7 @@
         },
         {
           "title": "AI analysis",
+          "tagline": "Like an assistant coach who has read every number.",
           "items": [
             {
               "name": "Match analysis",
@@ -894,6 +897,7 @@
         },
         {
           "title": "Team & organisation",
+          "tagline": "Stats are a team sport – share, organise, involve everyone.",
           "items": [
             {
               "name": "Live ticker",
@@ -937,7 +941,8 @@
             }
           ]
         }
-      ]
+      ],
+      "countLabel": "{count} features"
     },
     "pros": {
       "title": "No more stats on a napkin",

@@ -1,42 +1,6 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import {
-  Activity,
-  BarChart3,
-  BookUser,
-  ClipboardList,
-  Crosshair,
-  FileDown,
-  FileText,
-  Gauge,
-  Hand,
-  Inbox,
-  Languages,
-  LayoutDashboard,
-  MonitorSmartphone,
-  MousePointerClick,
-  Medal,
-  PenLine,
-  PieChart,
-  Radio,
-  RefreshCw,
-  ShieldCheck,
-  Sparkles,
-  Swords,
-  Target,
-  Timer,
-  TrendingUp,
-  Trophy,
-  UserPlus,
-  UserSearch,
-  Users,
-  Wand2,
-  WifiOff,
-  Wind,
-  Zap,
-  type LucideIcon,
-} from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 
@@ -48,24 +12,15 @@ interface FeatureItem {
 
 interface FeatureGroup {
   title: string;
+  tagline: string;
   items: FeatureItem[];
 }
 
-/** Icons per group headline, in the order of `allFeatures.groups`. */
-const GROUP_ICONS: LucideIcon[] = [Zap, BarChart3, Sparkles, Users];
-
-/** Icons per feature card, matched by index to the translated group items. */
-const ITEM_ICONS: LucideIcon[][] = [
-  // Track live
-  [MousePointerClick, Zap, Crosshair, Timer, Wand2, PenLine, WifiOff, MonitorSmartphone],
-  // Analyse & understand
-  [BarChart3, Target, Hand, Wind, Gauge, Swords, TrendingUp, LayoutDashboard],
-  // AI analysis
-  [FileText, Users, UserSearch, Trophy, PieChart, Activity, RefreshCw, ShieldCheck],
-  // Team & organisation
-  [Radio, Inbox, UserPlus, ClipboardList, BookUser, Medal, FileDown, Languages],
-];
-
+/**
+ * The complete feature index, set like an editorial spec sheet: a sticky
+ * rail with a ghost numeral and group tagline on the left, hairline list
+ * rows on the right. Typography does the work – no icons, no card chrome.
+ */
 export default function FeatureGridSection() {
   const t = useTranslations('productPage.allFeatures');
   const groups = t.raw('groups') as FeatureGroup[];
@@ -78,8 +33,8 @@ export default function FeatureGridSection() {
     const ctx = gsap.context(() => {
       gsap.utils.toArray<HTMLElement>('[data-feature-group]').forEach((group) => {
         gsap.fromTo(
-          group.querySelectorAll('[data-feature-card]'),
-          { opacity: 0, y: 22 },
+          group.querySelectorAll('[data-feature-row]'),
+          { opacity: 0, y: 18 },
           {
             opacity: 1,
             y: 0,
@@ -88,7 +43,7 @@ export default function FeatureGridSection() {
             ease: 'power2.out',
             scrollTrigger: {
               trigger: group,
-              start: 'top 85%',
+              start: 'top 82%',
               once: true,
             },
           }
@@ -104,7 +59,7 @@ export default function FeatureGridSection() {
       id='all-features'
       ref={sectionRef}
       className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
-      <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
+      <div className='mx-auto w-full max-w-6xl px-6 sm:px-10'>
         <div className='mx-auto max-w-3xl text-center'>
           <h2 className='text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
             {t('title')}
@@ -114,50 +69,51 @@ export default function FeatureGridSection() {
           </p>
         </div>
 
-        <div className='mt-20 space-y-20'>
-          {groups.map((group, groupIndex) => {
-            const GroupIcon = GROUP_ICONS[groupIndex % GROUP_ICONS.length];
-            const itemIcons = ITEM_ICONS[groupIndex % ITEM_ICONS.length];
-
-            return (
-              <div key={group.title} data-feature-group>
-                <div className='flex items-center gap-3'>
-                  <GroupIcon className='size-5 text-primary' />
-                  <h3 className='text-xl font-bold tracking-tight text-foreground'>
-                    {group.title}
-                  </h3>
-                </div>
-
-                <div className='mt-8 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
-                  {group.items.map((item, itemIndex) => {
-                    const ItemIcon = itemIcons[itemIndex % itemIcons.length];
-
-                    return (
-                      <div
-                        key={item.name}
-                        data-feature-card
-                        className='flex items-start gap-3.5'>
-                        <ItemIcon className='mt-0.5 size-[18px] shrink-0 text-primary' />
-                        <div className='min-w-0'>
-                          <p className='text-sm font-bold leading-snug text-foreground'>
-                            {item.name}
-                            {item.isNew && (
-                              <span className='ml-2 inline-block align-middle rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary'>
-                                {t('newBadge')}
-                              </span>
-                            )}
-                          </p>
-                          <p className='mt-1.5 text-sm leading-6 text-muted-foreground'>
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
+        <div className='mt-20 space-y-24 md:mt-24 md:space-y-28'>
+          {groups.map((group, groupIndex) => (
+            <div
+              key={group.title}
+              data-feature-group
+              className='grid gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-20'>
+              <div className='lg:sticky lg:top-28 lg:self-start'>
+                <span
+                  aria-hidden
+                  className='block text-6xl font-extrabold leading-none tracking-tighter text-primary/15'>
+                  {String(groupIndex + 1).padStart(2, '0')}
+                </span>
+                <h3 className='mt-4 text-2xl font-bold tracking-tight text-foreground'>
+                  {group.title}
+                </h3>
+                <p className='mt-3 max-w-[36ch] text-sm leading-6 text-muted-foreground'>
+                  {group.tagline}
+                </p>
+                <p className='mt-5 text-xs font-medium tabular-nums text-muted-foreground/60'>
+                  {t('countLabel', { count: group.items.length })}
+                </p>
               </div>
-            );
-          })}
+
+              <div className='grid sm:grid-cols-2 sm:gap-x-14'>
+                {group.items.map((item) => (
+                  <div
+                    key={item.name}
+                    data-feature-row
+                    className='border-t border-foreground/10 py-5'>
+                    <p className='text-[15px] font-semibold text-foreground'>
+                      {item.name}
+                      {item.isNew && (
+                        <span className='ml-2 text-xs font-semibold text-primary'>
+                          {t('newBadge')}
+                        </span>
+                      )}
+                    </p>
+                    <p className='mt-1.5 text-sm leading-6 text-muted-foreground'>
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
