@@ -102,7 +102,7 @@ Variiere die Zusammensetzung der Gruppen von Woche zu Woche. So arbeitet jeder m
 
 Nichts schweißt ein Team so zusammen wie das Gefühl, gemeinsam voranzukommen. Wenn alle sehen, dass die Abwehr von Spiel zu Spiel stabiler steht oder die Tempogegenstöße endlich sitzen, wird aus vagen Vorsätzen ein spürbarer Fortschritt. Deshalb lohnt es sich, Ziele und Entwicklung sichtbar zu machen – nicht als Druckmittel, sondern als gemeinsamen Erfolg zum Feiern.
 
-Genau hier hilft eine Handball-Statistik-App wie Statix. Du hältst Leistungen und Fortschritte fest, machst die Entwicklung des Teams über die Saison sichtbar und gibst jedem Spieler das Gefühl, Teil des großen Ganzen zu sein. Wenn du es ausprobieren willst, findest du eine kostenlose Live-Demo ohne Account unter demo.handballwebseite.de.`,
+Genau hier hilft eine Handball-Statistik-App wie Statix. Du hältst Leistungen und Fortschritte fest, machst die Entwicklung des Teams über die Saison sichtbar und gibst jedem Spieler das Gefühl, Teil des großen Ganzen zu sein. Wenn du es ausprobieren willst, findest du eine kostenlose Live-Demo ohne Account unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was bringt Teambuilding im Handball?',

@@ -99,7 +99,7 @@ Führe die 3:2:1 nicht als kompliziertes Sondersystem ein, sondern als beweglich
 
 Ob die 3:2:1 aufgeht, entscheidet sich an den Zahlen: Sinken die Rückraumtore des Gegners? Steigen deine Ballgewinne und Tempogegenstöße? Oder kassierst du zu viele einfache Tore über Kreis und Durchbruch?
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Gegentore nach Wurfzone, Ballgewinne und Tempogegenstöße live per Tap. So siehst du direkt, ob die offensive Abwehr den Rückraum wirklich entschärft oder ob der Gegner die Räume nutzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Gegentore nach Wurfzone, Ballgewinne und Tempogegenstöße live per Tap. So siehst du direkt, ob die offensive Abwehr den Rückraum wirklich entschärft oder ob der Gegner die Räume nutzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist die 3:2:1-Abwehr im Handball?',

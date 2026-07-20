@@ -87,7 +87,7 @@ So wird aus abstrakter Schnelligkeit ein handballspezifischer Vorteil, den du im
 
 Schnelligkeit zeigt sich im Spiel dort, wo Tempo zählt: bei erfolgreichen Tempogegenstößen, gewonnenen Zweikämpfen und rechtzeitigem Zurückarbeiten in die Abwehr.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tempogegenstoß-Tore, technische Fehler und Ballgewinne live per Tap. So siehst du über die Saison, ob dein Athletiktraining auf dem Feld ankommt und dein Team schneller umschaltet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tempogegenstoß-Tore, technische Fehler und Ballgewinne live per Tap. So siehst du über die Saison, ob dein Athletiktraining auf dem Feld ankommt und dein Team schneller umschaltet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie wird man im Handball schneller?',

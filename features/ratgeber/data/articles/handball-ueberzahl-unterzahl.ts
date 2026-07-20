@@ -78,7 +78,7 @@ Eine moderne Variante ist der Wechsel auf einen siebten Feldspieler für den Tor
 
 ## Über- und Unterzahl auswerten
 
-Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore erzielt und kassiert ihr in Über- und Unterzahl? Mit **Statix**, der Handball-Statistik-App für Trainer, kannst du Spielphasen erfassen und sehen, ob eure Überzahl wirklich Tore bringt und eure Unterzahl standhält. Aus diesem Bild wird ein gezielter Trainingsschwerpunkt für genau die Minuten, die Spiele entscheiden. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore erzielt und kassiert ihr in Über- und Unterzahl? Mit **Statix**, der Handball-Statistik-App für Trainer, kannst du Spielphasen erfassen und sehen, ob eure Überzahl wirklich Tore bringt und eure Unterzahl standhält. Aus diesem Bild wird ein gezielter Trainingsschwerpunkt für genau die Minuten, die Spiele entscheiden. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie spielt man Überzahl im Handball richtig aus?',

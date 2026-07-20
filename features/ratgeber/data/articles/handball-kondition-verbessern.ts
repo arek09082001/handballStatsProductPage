@@ -119,7 +119,7 @@ Der Plan zeigt das Prinzip: intensive Reize früh in der Woche, mit genug Abstan
 
 Kondition entsteht nicht im Training, sondern in der Erholung danach. Wer ständig am Limit trainiert, wird nicht fitter, sondern müde und verletzungsanfällig. Plane Regeneration deshalb fest ein: ausreichend Schlaf, lockere Einheiten, freie Tage. Belastung und Erholung gehören zusammen wie Angriff und Abwehr.
 
-Damit das gelingt, hilft ein ehrlicher Blick auf die tatsächliche Belastung – und die verteilt sich selten gleichmäßig. Wer spielt wie viel, wer kommt kaum aus der Deckung, wessen Spielanteile steigen von Woche zu Woche? Mit einer Handball-Statistik-App wie **Statix** behältst du Belastung und Spielanteile live per Tap im Blick, direkt in der Halle und offline. So steuerst du mit Zahlen statt Bauchgefühl. Wenn du magst, probier die kostenlose Live-Demo ohne Account unter demo.handballwebseite.de aus.`,
+Damit das gelingt, hilft ein ehrlicher Blick auf die tatsächliche Belastung – und die verteilt sich selten gleichmäßig. Wer spielt wie viel, wer kommt kaum aus der Deckung, wessen Spielanteile steigen von Woche zu Woche? Mit einer Handball-Statistik-App wie **Statix** behältst du Belastung und Spielanteile live per Tap im Blick, direkt in der Halle und offline. So steuerst du mit Zahlen statt Bauchgefühl. Wenn du magst, probier die kostenlose Live-Demo ohne Account unter demo.statix-app.de aus.`,
   faqs: [
     {
       question: 'Wie oft sollte ich Kondition im Handball trainieren?',

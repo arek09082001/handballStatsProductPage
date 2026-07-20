@@ -81,7 +81,7 @@ Das Strafensystem ist nicht nur Regelkunde, sondern taktisch relevant. Eine Zeit
 
 ## Strafen und ihre Folgen im Blick
 
-Wie oft eure Mannschaft in Unterzahl gerät und wie viele Gegentore das kostet, ist eine wichtige Kennzahl. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Zeitstrafen und die Tore in Über- und Unterzahl live – so erkennst du, ob eure Disziplin ein Problem ist und wie viel euch fehlende Fairness auf dem Scoreboard kostet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Wie oft eure Mannschaft in Unterzahl gerät und wie viele Gegentore das kostet, ist eine wichtige Kennzahl. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Zeitstrafen und die Tore in Über- und Unterzahl live – so erkennst du, ob eure Disziplin ein Problem ist und wie viel euch fehlende Fairness auf dem Scoreboard kostet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist die progressive Bestrafung im Handball?',

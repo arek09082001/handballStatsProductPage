@@ -81,7 +81,7 @@ xG ist ein Werkzeug, kein Urteil. Es kennt nicht den taktischen Kontext jeder Sz
 
 ## Mit den richtigen Daten zur besseren Chancenqualität
 
-Der Aufwand steht und fällt mit der Erfassung. Mit **Statix**, der Handball-Statistik-App für Trainer, tippst du jeden Wurf live auf einer Torfläche ein – Position, Ausgang und Situation. Daraus entstehen automatisch Wurfbilder und Zonenauswertungen, aus denen sich Chancenqualität ablesen lässt. So diskutierst du nach dem Spiel nicht über Gefühl, sondern über erspielte Würfe. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Der Aufwand steht und fällt mit der Erfassung. Mit **Statix**, der Handball-Statistik-App für Trainer, tippst du jeden Wurf live auf einer Torfläche ein – Position, Ausgang und Situation. Daraus entstehen automatisch Wurfbilder und Zonenauswertungen, aus denen sich Chancenqualität ablesen lässt. So diskutierst du nach dem Spiel nicht über Gefühl, sondern über erspielte Würfe. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was sind Expected Goals (xG) im Handball?',

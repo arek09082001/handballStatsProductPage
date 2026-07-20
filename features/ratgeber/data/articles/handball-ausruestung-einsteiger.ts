@@ -86,7 +86,7 @@ Spare dir zu Beginn teure Extras: hochspezialisierte Torwartausrüstung (außer 
 
 ## Vom Ausprobieren zum ernsthaften Training
 
-Wenn aus dem Ausprobieren ernsthaftes Training wird, willst du irgendwann sehen, wie du dich entwickelst. Mit **Statix**, der Handball-Statistik-App für Trainer und Teams, lassen sich Würfe, Tore und Entwicklung über die Saison festhalten – so wird Fortschritt sichtbar und das Training zielgerichteter. Für den ersten Ballkontakt brauchst du das noch nicht, aber sobald du dranbleibst, lohnt sich der Blick. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Wenn aus dem Ausprobieren ernsthaftes Training wird, willst du irgendwann sehen, wie du dich entwickelst. Mit **Statix**, der Handball-Statistik-App für Trainer und Teams, lassen sich Würfe, Tore und Entwicklung über die Saison festhalten – so wird Fortschritt sichtbar und das Training zielgerichteter. Für den ersten Ballkontakt brauchst du das noch nicht, aber sobald du dranbleibst, lohnt sich der Blick. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Welche Schuhe braucht man für Handball?',

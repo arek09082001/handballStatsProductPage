@@ -108,7 +108,7 @@ Auch mit den besten Absichten passieren im Nachwuchs immer wieder dieselben Fehl
 
 Im Kinder- und Jugendhandball zählen Freude und Ausbildung mehr als jede Statistik – das bleibt der Maßstab. Trotzdem kann es schön sein, die Entwicklung über eine Saison hinweg festzuhalten: Wer traut sich inzwischen den Sprungwurf zu, wer hat im Tor Fortschritte gemacht, wie hat sich das Zusammenspiel entwickelt?
 
-Mit Augenmaß eingesetzt hilft dir eine Handball-Statistik-App wie **Statix**, solche Entwicklungen über Wochen und Monate sichtbar zu machen – nicht um Kinder zu bewerten, sondern um Fortschritte zu erkennen und jedem Kind zu zeigen, wie weit es gekommen ist. Wenn du reinschauen möchtest, gibt es unter demo.handballwebseite.de eine kostenlose Live-Demo ohne Account. Und egal, was die Zahlen sagen: Im Nachwuchs gewinnt am Ende immer die Mannschaft, die mit Freude dabei bleibt.`,
+Mit Augenmaß eingesetzt hilft dir eine Handball-Statistik-App wie **Statix**, solche Entwicklungen über Wochen und Monate sichtbar zu machen – nicht um Kinder zu bewerten, sondern um Fortschritte zu erkennen und jedem Kind zu zeigen, wie weit es gekommen ist. Wenn du reinschauen möchtest, gibt es unter demo.statix-app.de eine kostenlose Live-Demo ohne Account. Und egal, was die Zahlen sagen: Im Nachwuchs gewinnt am Ende immer die Mannschaft, die mit Freude dabei bleibt.`,
   faqs: [
     {
       question: 'Ab welchem Alter können Kinder Handball spielen?',

@@ -90,7 +90,7 @@ Auch Kraft hilft: Sprungkraft und Rumpfspannung machen den Block höher und stab
 
 Blocks sind die unsichtbaren Punkte der Abwehrspieler: Sie tauchen in keinem Spielbericht auf, gewinnen aber Spiele.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du neben Toren und Paraden auch Blocks und Ballgewinne live per Tap. So bekommt deine Abwehrarbeit endlich die Zahlen, die sie verdient – und du siehst, welche Blockspieler Rückraumwürfe wirklich entschärfen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du neben Toren und Paraden auch Blocks und Ballgewinne live per Tap. So bekommt deine Abwehrarbeit endlich die Zahlen, die sie verdient – und du siehst, welche Blockspieler Rückraumwürfe wirklich entschärfen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie blockt man richtig im Handball?',

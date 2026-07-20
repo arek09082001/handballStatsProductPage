@@ -83,7 +83,7 @@ Trainer-Tipp: Lass Spieler in Testspielen und Trainingsformen rotieren und beoba
 
 Das Bauchgefühl sagt viel, aber Zahlen machen die Entscheidung leichter: Wurfquoten nach Position, Tore aus dem Gegenstoß, technische Fehler, Zweikampfbilanz – oft zeigt die Statistik, dass ein Spieler auf einer Position deutlich effizienter ist als auf einer anderen.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Würfe und Fehler live per Tap und siehst pro Spieler, aus welchen Positionen und Situationen er erfolgreich ist. So wird aus „Ich glaube, er ist ein Außen" ein belegbares „Seine Quote von außen ist top". Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Würfe und Fehler live per Tap und siehst pro Spieler, aus welchen Positionen und Situationen er erfolgreich ist. So wird aus „Ich glaube, er ist ein Außen" ein belegbares „Seine Quote von außen ist top". Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Welche Handball-Position ist die richtige für mich?',

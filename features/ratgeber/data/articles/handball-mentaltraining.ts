@@ -90,7 +90,7 @@ Ein Team, das nach einem Rückstand ruhig bleibt und zusammensteht, dreht Spiele
 
 Mentale Entwicklung zeigt sich oft in Zahlen: Wie hält dein Team enge Schlussphasen? Bricht die Wurfquote unter Druck ein? Wie sicher sind die Siebenmeter im entscheidenden Moment?
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehler und Siebenmeterquoten live per Tap und siehst, wie stabil dein Team in engen Phasen bleibt. So machst du auch mentale Fortschritte an echten Zahlen sichtbar statt nur am Gefühl. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehler und Siebenmeterquoten live per Tap und siehst, wie stabil dein Team in engen Phasen bleibt. So machst du auch mentale Fortschritte an echten Zahlen sichtbar statt nur am Gefühl. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist Mentaltraining im Handball?',

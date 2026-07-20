@@ -88,7 +88,7 @@ Wichtig bei allen Übungen: Qualität vor Quantität. Ein sauber gefangener und 
 
 ## Passsicherheit messbar machen
 
-Ob dein Passspiel wirklich sicherer wird, siehst du am besten an den Zahlen. Wie viele Ballverluste und technischen Fehler leistet sich dein Team pro Spiel und in welchen Situationen? Genau das lässt sich erfassen. Eine Handball-Statistik-App wie Statix protokolliert Ballverluste und technische Fehler mit einem Tap, sodass du nach dem Spiel schwarz auf weiß siehst, wo die Pässe verloren gehen. So wird aus dem Bauchgefühl ein klarer Trainingsauftrag. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter demo.handballwebseite.de.`,
+Ob dein Passspiel wirklich sicherer wird, siehst du am besten an den Zahlen. Wie viele Ballverluste und technischen Fehler leistet sich dein Team pro Spiel und in welchen Situationen? Genau das lässt sich erfassen. Eine Handball-Statistik-App wie Statix protokolliert Ballverluste und technische Fehler mit einem Tap, sodass du nach dem Spiel schwarz auf weiß siehst, wo die Pässe verloren gehen. So wird aus dem Bauchgefühl ein klarer Trainingsauftrag. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Welche Passtechniken sind im Handball am wichtigsten?',

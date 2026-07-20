@@ -82,7 +82,7 @@ Das beste Alter für Koordination liegt in der Kindheit und frühen Jugend – h
 
 Koordination verbessert sich langsam und wird im Alltag leicht übersehen. Halte deshalb Meilensteine fest: Schafft der Spieler die Leiter jetzt sauber im Tempo? Landet die Reaktionsübung häufiger im Ziel? So bleibt die Motivation hoch. Wie sich koordinative Fortschritte langfristig in Spielleistung übersetzen, wird sichtbar, wenn du Trainingsschwerpunkte und Spielentwicklung zusammen betrachtest.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, dokumentierst du die Entwicklung deiner Spieler über die Saison – von technischen Fehlern bis zur Wurfausbeute. So erkennst du, ob sich die Arbeit an Beinarbeit und Ballkontrolle im Spiel auszahlt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, dokumentierst du die Entwicklung deiner Spieler über die Saison – von technischen Fehlern bis zur Wurfausbeute. So erkennst du, ob sich die Arbeit an Beinarbeit und Ballkontrolle im Spiel auszahlt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was gehört zum Koordinationstraining im Handball?',

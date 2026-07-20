@@ -89,7 +89,7 @@ Harz ersetzt keine Technik. Ein Spieler mit sauberer Wurfbewegung und gutem Ball
 
 Ob mit oder ohne Harz – am Ende zählt, was auf dem Feld passiert: sichere Anspiele, wenige technische Fehler, gute Wurfquoten.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehlwürfe und technische Fehler live per Tap und siehst sofort, wo dein Team den Ball verliert und aus welchen Positionen es effizient abschließt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehlwürfe und technische Fehler live per Tap und siehst sofort, wo dein Team den Ball verliert und aus welchen Positionen es effizient abschließt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Ist Harz im Handball erlaubt?',

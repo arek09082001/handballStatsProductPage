@@ -102,7 +102,7 @@ Ein Beispiel: Hält dein Torwart 12 Bälle und kassiert 20 Gegentore, liegt sein
 
 Noch aussagekräftiger wird die Zahl, wenn du sie nach Zonen aufschlüsselst: Aus welcher Ecke fängt dein Torwart viele Bälle, wo fliegen ihm die Würfe durch? Genau dort liegt der nächste Trainingsauftrag.
 
-Von Hand ist das kaum sauber mitzuschreiben – gerade wenn du nebenbei die Abwehr coachst. Eine Handball-Statistik-App wie **Statix** erfasst jede Parade und jedes Gegentor mit einem Tap, live in der Halle und komplett offline. So siehst du die Paradenquote und die gehaltenen Zonen deines Torwarts sofort und machst seine Entwicklung über die Saison sichtbar. Wenn du es ausprobieren möchtest, findest du eine kostenlose Live-Demo ohne Account unter demo.handballwebseite.de.`,
+Von Hand ist das kaum sauber mitzuschreiben – gerade wenn du nebenbei die Abwehr coachst. Eine Handball-Statistik-App wie **Statix** erfasst jede Parade und jedes Gegentor mit einem Tap, live in der Halle und komplett offline. So siehst du die Paradenquote und die gehaltenen Zonen deines Torwarts sofort und machst seine Entwicklung über die Saison sichtbar. Wenn du es ausprobieren möchtest, findest du eine kostenlose Live-Demo ohne Account unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie oft sollte ein Handball-Torwart trainieren?',

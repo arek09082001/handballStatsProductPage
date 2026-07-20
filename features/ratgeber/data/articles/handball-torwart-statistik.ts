@@ -84,7 +84,7 @@ So wird aus dem Gefühl „lief nicht" eine belastbare Entwicklung.
 
 ## Torwartleistung fair und sichtbar machen
 
-Um Torwartleistung nach Zonen und Ecken auszuwerten, brauchst du erfasste Würfe – und zwar mit Position und Ausgang. Mit **Statix**, der Handball-Statistik-App für Trainer, tippst du jeden Torwurf live auf einer Torfläche ein. Daraus entstehen automatisch Paradenquoten nach Wurfzone und Ecke – für Torwart und Feld getrennt. So siehst du auf einen Blick, wo dein Keeper wirklich stark ist und wo ihr im Training ansetzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Um Torwartleistung nach Zonen und Ecken auszuwerten, brauchst du erfasste Würfe – und zwar mit Position und Ausgang. Mit **Statix**, der Handball-Statistik-App für Trainer, tippst du jeden Torwurf live auf einer Torfläche ein. Daraus entstehen automatisch Paradenquoten nach Wurfzone und Ecke – für Torwart und Feld getrennt. So siehst du auf einen Blick, wo dein Keeper wirklich stark ist und wo ihr im Training ansetzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie berechnet man die Paradenquote eines Handball-Torwarts?',

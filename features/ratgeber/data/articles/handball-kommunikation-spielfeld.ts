@@ -81,7 +81,7 @@ Anfangs fühlt sich das erzwungen an. Nach einigen Wochen wird es zum Automatism
 
 ## Wirkung sichtbar machen
 
-Bessere Kommunikation zeigt sich in weniger Gegentoren durch Abstimmungsfehler und in einem flüssigeren, schnelleren Angriff. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Gegentore nach Situationen und technische Fehler live – so erkennst du, ob eure Mannschaft durch besseres Reden abgestimmter verteidigt und schneller umschaltet. Aus dem Gefühl „wir müssen lauter werden" wird ein messbarer Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Bessere Kommunikation zeigt sich in weniger Gegentoren durch Abstimmungsfehler und in einem flüssigeren, schnelleren Angriff. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Gegentore nach Situationen und technische Fehler live – so erkennst du, ob eure Mannschaft durch besseres Reden abgestimmter verteidigt und schneller umschaltet. Aus dem Gefühl „wir müssen lauter werden" wird ein messbarer Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Warum ist Kommunikation im Handball so wichtig?',

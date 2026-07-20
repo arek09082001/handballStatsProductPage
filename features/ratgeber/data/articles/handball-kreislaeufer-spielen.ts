@@ -95,7 +95,7 @@ Viele Kreisläufer sind damit in beiden Spielrichtungen im Zentrum zu Hause – 
 
 Die Leistung eines Kreisläufers zeigt sich nicht nur an eigenen Toren, sondern an seiner Wurfquote aus kurzer Distanz, seinen erzwungenen Freiwürfen und den Toren, die aus seinen Sperren entstehen.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten je Position und technische Aktionen live per Tap. So siehst du, wie stark dein Kreisläufer aus dem Nahbereich trifft und wie viel Gefahr über den Kreis entsteht – Zahlen, die ein Blick allein nicht liefert. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten je Position und technische Aktionen live per Tap. So siehst du, wie stark dein Kreisläufer aus dem Nahbereich trifft und wie viel Gefahr über den Kreis entsteht – Zahlen, die ein Blick allein nicht liefert. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was macht ein Kreisläufer im Handball?',

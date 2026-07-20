@@ -82,7 +82,7 @@ Rückraumspieler verteidigen meist im Innenblock oder auf den Halbpositionen –
 
 Ob du wirklich die Dreifach-Drohung bist, verrät dir die Statistik: Wurfquote aus der Distanz, Tore aus dem Durchbruch, Assists an Kreis und Außen, technische Fehler.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du all das live per Tap – inklusive Wurfpositionen auf der Shot Map. So siehst du, ob deine Würfe aus guten Räumen kommen und wie viel dein Spiel für die Mitspieler erzeugt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du all das live per Tap – inklusive Wurfpositionen auf der Shot Map. So siehst du, ob deine Würfe aus guten Räumen kommen und wie viel dein Spiel für die Mitspieler erzeugt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was macht einen guten Rückraumspieler aus?',

@@ -100,7 +100,7 @@ Steigere die Intensität, indem du Zeitvorgaben setzt oder die Zahl der Abwehrsp
 
 ## Tempospiel messbar machen
 
-Ob dein Tempospiel wirklich Tore bringt, siehst du erst mit Zahlen. Wie viele deiner Treffer fallen aus dem Gegenstoß, und wie hoch ist dein Tempospiel-Anteil über ein ganzes Spiel? Eine Handball-Statistik-App wie Statix erfasst Gegenstoßtore und den Anteil deines Tempospiels mit einem einzigen Tap – live in der Halle, komplett offline und ohne Zettelwirtschaft. So erkennst du sofort, ob sich dein Umschalt-Training auszahlt. Eine kostenlose Live-Demo ohne Account findest du unter demo.handballwebseite.de.`,
+Ob dein Tempospiel wirklich Tore bringt, siehst du erst mit Zahlen. Wie viele deiner Treffer fallen aus dem Gegenstoß, und wie hoch ist dein Tempospiel-Anteil über ein ganzes Spiel? Eine Handball-Statistik-App wie Statix erfasst Gegenstoßtore und den Anteil deines Tempospiels mit einem einzigen Tap – live in der Halle, komplett offline und ohne Zettelwirtschaft. So erkennst du sofort, ob sich dein Umschalt-Training auszahlt. Eine kostenlose Live-Demo ohne Account findest du unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist ein Tempogegenstoß im Handball?',

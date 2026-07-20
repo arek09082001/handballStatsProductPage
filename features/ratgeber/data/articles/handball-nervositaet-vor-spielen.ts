@@ -89,7 +89,7 @@ Gerade im Jugendbereich gilt: Ein Kind, das angstfrei spielt, entwickelt sich sc
 
 Nervosität verzerrt die Wahrnehmung: Nach einem verworfenen Ball fühlt sich das ganze Spiel misslungen an. Statistiken rücken das gerade – oft war die Leistung viel besser als das Gefühl.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, werden Tore, Würfe und Fehler live per Tap erfasst. So siehst du nach dem Spiel die echte Bilanz statt der gefühlten – und erkennst über die Saison, dass einzelne Fehler nie das Gesamtbild bestimmen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, werden Tore, Würfe und Fehler live per Tap erfasst. So siehst du nach dem Spiel die echte Bilanz statt der gefühlten – und erkennst über die Saison, dass einzelne Fehler nie das Gesamtbild bestimmen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was hilft gegen Nervosität vor einem Handballspiel?',

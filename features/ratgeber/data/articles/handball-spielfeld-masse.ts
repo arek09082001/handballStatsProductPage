@@ -74,7 +74,7 @@ Viele taktische Prinzipien ergeben sich direkt aus dem Feld: Warum die Abwehr am
 
 ## Positionen und Würfe auf dem Feld auswerten
 
-Weil das Feld überall gleich vermessen ist, lassen sich Wurfpositionen sauber vergleichen. Mit **Statix**, der Handball-Statistik-App für Trainer, ordnest du jeden Wurf einer Zone auf dem Feld zu und erkennst im Wurfbild, aus welchen Bereichen eure Tore fallen. So werden abstrakte Linien zu konkreten Erkenntnissen über euer Spiel. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Weil das Feld überall gleich vermessen ist, lassen sich Wurfpositionen sauber vergleichen. Mit **Statix**, der Handball-Statistik-App für Trainer, ordnest du jeden Wurf einer Zone auf dem Feld zu und erkennst im Wurfbild, aus welchen Bereichen eure Tore fallen. So werden abstrakte Linien zu konkreten Erkenntnissen über euer Spiel. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie groß ist ein Handballfeld?',

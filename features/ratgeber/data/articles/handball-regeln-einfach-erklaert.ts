@@ -108,7 +108,7 @@ Verlässt der Torwart seinen Torraum, darf er wie ein normaler Feldspieler mitsp
 
 Regeln sorgen im Handball nicht nur für Ordnung, sondern vor allem für Fairness. Wer die Basics kennt, spielt sicherer, diskutiert weniger mit dem Schiedsrichter und bringt mehr Ruhe ins eigene Team. Gerade im Jugendbereich lohnt es sich, Regeln früh und positiv zu vermitteln, statt sie nur über Pfiffe zu lernen.
 
-Wenn du als Trainer den Überblick behalten willst, hilft es, nicht nur Tore, sondern auch Strafen, Zeitstrafen und Fairness mitzuerfassen. Eine Handball-Statistik-App wie Statix macht das nebenbei mit einem Tap – so siehst du nach dem Spiel schwarz auf weiß, wo dein Team unnötige Zeitstrafen kassiert und Überzahl verschenkt. Du willst es ausprobieren? Unter demo.handballwebseite.de gibt es eine kostenlose Live-Demo ganz ohne Account.`,
+Wenn du als Trainer den Überblick behalten willst, hilft es, nicht nur Tore, sondern auch Strafen, Zeitstrafen und Fairness mitzuerfassen. Eine Handball-Statistik-App wie Statix macht das nebenbei mit einem Tap – so siehst du nach dem Spiel schwarz auf weiß, wo dein Team unnötige Zeitstrafen kassiert und Überzahl verschenkt. Du willst es ausprobieren? Unter demo.statix-app.de gibt es eine kostenlose Live-Demo ganz ohne Account.`,
   faqs: [
     {
       question: 'Wie viele Schritte darf man im Handball machen?',

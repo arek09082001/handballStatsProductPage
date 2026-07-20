@@ -87,7 +87,7 @@ Das größte Talent ist selten der Spieler mit den besten Zahlen von heute, sond
 
 ## Entwicklung sichtbar machen
 
-Von Hand bleibt so eine Auswertung meist liegen – zu viel Aufwand, zu wenig Zeit nach dem Spiel. Eine Handball-Statistik-App wie **Statix** erfasst die Aktionen jedes Spielers live per Tap und zeigt dir Entwicklungsverläufe über die ganze Saison automatisch: Wurfquoten, Ballgewinne, Spielanteile und Trends je Spieler auf einen Blick. So werden aus einem vagen Gefühl belastbare Fortschritte, die du im Feedbackgespräch nutzen kannst – ganz ohne Excel. Die Live-Demo lässt sich ohne Account unter demo.handballwebseite.de ausprobieren.`,
+Von Hand bleibt so eine Auswertung meist liegen – zu viel Aufwand, zu wenig Zeit nach dem Spiel. Eine Handball-Statistik-App wie **Statix** erfasst die Aktionen jedes Spielers live per Tap und zeigt dir Entwicklungsverläufe über die ganze Saison automatisch: Wurfquoten, Ballgewinne, Spielanteile und Trends je Spieler auf einen Blick. So werden aus einem vagen Gefühl belastbare Fortschritte, die du im Feedbackgespräch nutzen kannst – ganz ohne Excel. Die Live-Demo lässt sich ohne Account unter demo.statix-app.de ausprobieren.`,
   faqs: [
     {
       question: 'Wie messe ich die Entwicklung eines Handballspielers?',

@@ -102,7 +102,7 @@ Wichtiger als der perfekte Plan ist die Regelmäßigkeit: Lieber vier kurze Einh
 
 Selbsttraining lebt von Motivation – und nichts motiviert mehr als messbarer Fortschritt: mehr saubere Ballkontakte, bessere Wurfquoten, stabilere Leistungen im Spiel.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, sieht dein Trainer deine Spieldaten über die ganze Saison: Wurfquote, Tore, Fehler. So erkennst du, ob sich dein Extratraining in echten Spielen auszahlt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, sieht dein Trainer deine Spieldaten über die ganze Saison: Wurfquote, Tore, Fehler. So erkennst du, ob sich dein Extratraining in echten Spielen auszahlt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Kann man Handball alleine trainieren?',

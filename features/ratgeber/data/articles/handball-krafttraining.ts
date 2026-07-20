@@ -104,7 +104,7 @@ In der Saisonvorbereitung darf mehr Kraft trainiert werden, kurz vor dem Spiel w
 
 Krafttraining wirkt langsam, aber stetig. Halte einfache Werte fest: Gewicht und Wiederholungen der Grundübungen, dazu auf dem Feld die Entwicklung von Wurfhärte und Zweikampfquote. Wenn deine Spieler stärker werden, sollte sich das in stabileren Abschlüssen und gewonnenen Zweikämpfen zeigen.
 
-Genau hier hilft dir **Statix**, die Handball-Statistik-App für Trainer: Du erfasst Tore, Wurfquoten und technische Fehler live per Tap und siehst über die Saison, ob deine Athletikarbeit auf dem Feld ankommt. So verbindest du Kraftraum und Spielrealität mit echten Zahlen statt mit Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter demo.handballwebseite.de aus.`,
+Genau hier hilft dir **Statix**, die Handball-Statistik-App für Trainer: Du erfasst Tore, Wurfquoten und technische Fehler live per Tap und siehst über die Saison, ob deine Athletikarbeit auf dem Feld ankommt. So verbindest du Kraftraum und Spielrealität mit echten Zahlen statt mit Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter demo.statix-app.de aus.`,
   faqs: [
     {
       question: 'Wie oft sollte man im Handball Krafttraining machen?',

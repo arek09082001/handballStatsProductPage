@@ -96,7 +96,7 @@ Papier ist der klassische Einstieg, aber gerade Fehlwürfe und Ballverluste gehe
 
 ## So führst du Statistik ohne Stress im Halleneinsatz
 
-Genau dafür ist **Statix** gemacht: Du erfasst jede Aktion live mit einem einzigen Tap – Tor, Fehlwurf, Parade, Ballverlust – und die App berechnet Wurfquote, Paradenquote, Plus-Minus und mehr automatisch, ganz ohne Excel. Alles läuft offline in der Halle, WLAN brauchst du keins. Nach dem Abpfiff steht deine komplette Auswertung sofort bereit, statt erst am Küchentisch zu entstehen. Wenn du das ausprobieren willst, findest du unter demo.handballwebseite.de eine kostenlose Live-Demo – ohne Account und ohne Anmeldung. So wird aus dem Zettelchaos am Spielfeldrand eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Genau dafür ist **Statix** gemacht: Du erfasst jede Aktion live mit einem einzigen Tap – Tor, Fehlwurf, Parade, Ballverlust – und die App berechnet Wurfquote, Paradenquote, Plus-Minus und mehr automatisch, ganz ohne Excel. Alles läuft offline in der Halle, WLAN brauchst du keins. Nach dem Abpfiff steht deine komplette Auswertung sofort bereit, statt erst am Küchentisch zu entstehen. Wenn du das ausprobieren willst, findest du unter demo.statix-app.de eine kostenlose Live-Demo – ohne Account und ohne Anmeldung. So wird aus dem Zettelchaos am Spielfeldrand eine echte Entscheidungsgrundlage für dein nächstes Training.`,
   faqs: [
     {
       question: 'Welche Statistik sollte man im Handball erfassen?',

@@ -98,7 +98,7 @@ Für die passende Position zählen dann die individuellen Stärken. Ein großer,
 
 ## Leistung je Position auswerten
 
-Ob eine Position wirklich zum Spieler passt, zeigt sich am Ende auf dem Feld – und in den Zahlen. Genau hier hilft dir eine Handball-Statistik-App wie Statix: Du erfasst Tore, Würfe und Aktionen live per Tap, siehst Spielanteile und Wurfquoten nach Position und erkennst auf einen Blick, wer aus welcher Rolle wie effizient ist. Das läuft offline in der Halle, ganz ohne Zettelwirtschaft. Wenn du es ausprobieren willst, findest du unter demo.handballwebseite.de eine kostenlose Live-Demo ohne Account.`,
+Ob eine Position wirklich zum Spieler passt, zeigt sich am Ende auf dem Feld – und in den Zahlen. Genau hier hilft dir eine Handball-Statistik-App wie Statix: Du erfasst Tore, Würfe und Aktionen live per Tap, siehst Spielanteile und Wurfquoten nach Position und erkennst auf einen Blick, wer aus welcher Rolle wie effizient ist. Das läuft offline in der Halle, ganz ohne Zettelwirtschaft. Wenn du es ausprobieren willst, findest du unter demo.statix-app.de eine kostenlose Live-Demo ohne Account.`,
   faqs: [
     {
       question: 'Welche Positionen gibt es im Handball?',

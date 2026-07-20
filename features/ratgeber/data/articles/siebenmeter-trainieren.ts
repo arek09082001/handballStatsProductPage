@@ -98,7 +98,7 @@ Ob dein Siebenmetertraining wirkt, siehst du nur an der Quote. Gute Schützen li
 
 Behalte den Wert über mehrere Spiele im Blick und vergleiche deine Schützen untereinander – so triffst du die Reihenfolge der Schützenliste nicht aus dem Bauch, sondern mit Daten. Fällt die Quote eines Schützen über mehrere Spiele ab, ist das ein klarer Trainingsauftrag – oft steckt eine verratene Blickrichtung oder eine zu berechenbare Lieblingsecke dahinter.
 
-Genau dabei hilft dir **Statix**, die Handball-Statistik-App für Trainer: Du erfasst jeden Siebenmeter live per Tap, siehst die Quote jedes Schützen sofort und kannst sie offline in der Halle vergleichen. Wer wirklich der sicherste Schütze ist, verrät dir dann die Zahl statt das Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter demo.handballwebseite.de aus.`,
+Genau dabei hilft dir **Statix**, die Handball-Statistik-App für Trainer: Du erfasst jeden Siebenmeter live per Tap, siehst die Quote jedes Schützen sofort und kannst sie offline in der Halle vergleichen. Wer wirklich der sicherste Schütze ist, verrät dir dann die Zahl statt das Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter demo.statix-app.de aus.`,
   faqs: [
     {
       question: 'Wie viele Meter sind es beim Siebenmeter im Handball?',
