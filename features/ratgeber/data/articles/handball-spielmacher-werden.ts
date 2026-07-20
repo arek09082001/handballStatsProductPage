@@ -91,7 +91,7 @@ Als Spielmacher triffst du 50 Entscheidungen pro Spiel – einige werden falsch 
 
 Ob dein Angriffsspiel funktioniert, zeigen die Mannschaftszahlen: Abschlussquoten nach Angriffsart, technische Fehler, Tore pro Angriff.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Assists und Fehler live per Tap und siehst nach dem Spiel, welche Entscheidungen Abschlüsse erzeugt haben – und wo Angriffe verpuffen. So entwickelst du dein Spielverständnis mit echten Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Assists und Fehler live per Tap und siehst nach dem Spiel, welche Entscheidungen Abschlüsse erzeugt haben – und wo Angriffe verpuffen. So entwickelst du dein Spielverständnis mit echten Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was macht einen guten Spielmacher im Handball aus?',

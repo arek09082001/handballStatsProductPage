@@ -116,7 +116,7 @@ Steigere die Belastung schrittweise. Erst wenn die Bewegung sitzt, drehst du an 
 
 Woran erkennst du, ob dein Wurftraining wirklich wirkt? An den Zahlen und am Wurfbild. Wenn du Wurfquote und Wurfbilder auswertest, siehst du sofort, aus welchen Zonen deine Spieler treffen und wo es noch hakt – und kannst genau an dieser Stelle an der Technik arbeiten, statt im Nebel zu trainieren.
 
-Genau dafür ist **Statix** gemacht: die Handball-Statistik-App, mit der du jeden Wurf live per Tap erfasst – auch offline in der Halle. Wurfquoten und Wurfbilder entstehen automatisch und zeigen dir schwarz auf weiß, ob das Techniktraining ankommt. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter demo.handballwebseite.de.`,
+Genau dafür ist **Statix** gemacht: die Handball-Statistik-App, mit der du jeden Wurf live per Tap erfasst – auch offline in der Halle. Wurfquoten und Wurfbilder entstehen automatisch und zeigen dir schwarz auf weiß, ob das Techniktraining ankommt. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Von welchem Bein springt man beim Sprungwurf ab?',

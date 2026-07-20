@@ -108,7 +108,7 @@ Ein einfacher Test für deinen Plan: Kannst du in einem einzigen Satz sagen, was
 
 Gute Planung endet nicht mit dem Abpfiff. Wer festhält, welche Schwerpunkte er wann trainiert hat und wie sich einzelne Spieler entwickeln, plant die nächste Einheit deutlich gezielter. So erkennst du über die Wochen, ob dein Wurftraining wirklich die Quote hebt oder deine neu einstudierte Abwehr im Spiel hält – und musst dich nicht auf dein Bauchgefühl verlassen.
 
-Genau dabei hilft dir eine Handball-Statistik-App wie **Statix**: Du dokumentierst Spielentwicklung und Trainingsfortschritt live per Tap – offline in der Halle, ganz ohne Zettelwirtschaft. Über die Saison entsteht so ein klares Bild, das deine Trainingsplanung mit echten Zahlen füttert. Wenn du das einfach ausprobieren willst: Es gibt eine kostenlose Live-Demo ohne Account unter demo.handballwebseite.de.`,
+Genau dabei hilft dir eine Handball-Statistik-App wie **Statix**: Du dokumentierst Spielentwicklung und Trainingsfortschritt live per Tap – offline in der Halle, ganz ohne Zettelwirtschaft. Über die Saison entsteht so ein klares Bild, das deine Trainingsplanung mit echten Zahlen füttert. Wenn du das einfach ausprobieren willst: Es gibt eine kostenlose Live-Demo ohne Account unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie lange sollte eine Handball-Trainingseinheit dauern?',

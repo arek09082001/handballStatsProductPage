@@ -97,7 +97,7 @@ Prävention ist also nicht nur eine Übung, sondern eine Haltung im gesamten Tra
 
 Wer Verletzungen und Ausfälle im Team im Blick behält, erkennt Muster: häufen sich Probleme in bestimmten Phasen, nach besonders intensiven Wochen oder bei bestimmten Spielern? Ein einfaches Mitschreiben von Belastung und Ausfällen hilft, rechtzeitig gegenzusteuern.
 
-**Statix**, die Handball-Statistik-App für Trainer, hilft dir, Einsatzzeiten und Belastungen deiner Spieler über die Saison im Blick zu behalten. So siehst du, wer besonders viel auf dem Feld steht, und kannst Belastung und Regeneration bewusster steuern. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+**Statix**, die Handball-Statistik-App für Trainer, hilft dir, Einsatzzeiten und Belastungen deiner Spieler über die Saison im Blick zu behalten. So siehst du, wer besonders viel auf dem Feld steht, und kannst Belastung und Regeneration bewusster steuern. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Welche Verletzungen sind im Handball am häufigsten?',

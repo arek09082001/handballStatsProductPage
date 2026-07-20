@@ -94,7 +94,7 @@ Trainiere auch das schnelle Umstellen zwischen Deckungsformen – die Überrasch
 
 Ob deine Manndeckung wirkt, siehst du an den Zahlen: Erzwingt sie Ballgewinne und Zeitstrafen beim Gegner? Führt sie zu einfachen Kontertoren? Oder kassierst du zu viele einfache Durchbrüche?
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Ballgewinne, Gegentore und Tempogegenstöße live per Tap. So erkennst du sofort, ob sich der Wechsel zur Manndeckung gelohnt hat – und in welchen Phasen sie am besten funktioniert. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Ballgewinne, Gegentore und Tempogegenstöße live per Tap. So erkennst du sofort, ob sich der Wechsel zur Manndeckung gelohnt hat – und in welchen Phasen sie am besten funktioniert. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist Manndeckung im Handball?',

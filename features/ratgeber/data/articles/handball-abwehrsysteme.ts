@@ -123,7 +123,7 @@ Ein praktischer Tipp: Führe ein Grundsystem sauber ein, bevor du ein zweites er
 
 ## Abwehr analysieren und anpassen
 
-Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du weißt, wo und wann deine Gegentore fallen. Eine Handball-Statistik-App wie **Statix** hält jedes Gegentor live per Tap fest – nach Zone und Spielphase, direkt in der Halle und offline. So siehst du auf einen Blick, ob deine 6:0 wirklich nur am Kreis Tore kassiert oder ob der Rückraum durch die Naht trifft, und kannst dein System gezielt anpassen statt nach Bauchgefühl zu entscheiden. Probier es ohne Account in der kostenlosen Live-Demo unter demo.handballwebseite.de aus und schau dir an, wo deine Abwehr die meisten Lücken hat.`,
+Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du weißt, wo und wann deine Gegentore fallen. Eine Handball-Statistik-App wie **Statix** hält jedes Gegentor live per Tap fest – nach Zone und Spielphase, direkt in der Halle und offline. So siehst du auf einen Blick, ob deine 6:0 wirklich nur am Kreis Tore kassiert oder ob der Rückraum durch die Naht trifft, und kannst dein System gezielt anpassen statt nach Bauchgefühl zu entscheiden. Probier es ohne Account in der kostenlosen Live-Demo unter demo.statix-app.de aus und schau dir an, wo deine Abwehr die meisten Lücken hat.`,
   faqs: [
     {
       question: 'Welches Abwehrsystem ist das beste im Handball?',

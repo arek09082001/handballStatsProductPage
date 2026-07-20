@@ -28,9 +28,9 @@ export const CLUB_CONFIG = {
   // CONTACT INFORMATION
   // ============================================
   email: {
-    main: 'kontakt@handballwebseite.de',
-    info: 'kontakt@handballwebseite.de',
-    noreply: 'noreply@handballwebseite.de',
+    main: 'kontakt@statix-app.de',
+    info: 'kontakt@statix-app.de',
+    noreply: 'noreply@statix-app.de',
   },
 
   phone: {
@@ -87,9 +87,9 @@ export const CLUB_CONFIG = {
   // WEBSITE AND DOMAIN
   // ============================================
   website: {
-    domain: 'handballwebseite.de',
-    url: 'https://www.handballwebseite.de',
-    demoUrl: 'https://demo.handballwebseite.de',
+    domain: 'statix-app.de',
+    url: 'https://www.statix-app.de',
+    demoUrl: 'https://demo.statix-app.de',
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
     },
@@ -130,7 +130,7 @@ export const CLUB_CONFIG = {
     primary: {
       name: 'Statix Team',
       position: 'Support & Anfragen',
-      email: 'kontakt@handballwebseite.de',
+      email: 'kontakt@statix-app.de',
       phone: '+49-0179-2630093',
       image: '/arkadiusz_weiss.jpg',
     },

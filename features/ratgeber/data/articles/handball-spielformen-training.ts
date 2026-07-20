@@ -87,7 +87,7 @@ Ein guter Trainingsaufbau führt vom Kleinen ins Große: erst 1 gegen 1, dann 3 
 
 ## Erfolge aus Spielformen sichtbar machen
 
-Ob deine Spielformen im Spiel ankommen, zeigt sich am Wochenende. Werden die einstudierten Überzahlsituationen genutzt? Sinken die technischen Fehler unter Druck? Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du im Spiel genau diese Dinge live per Tap und siehst, ob sich die Arbeit an Spielformen in bessere Entscheidungen und mehr Tore übersetzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Ob deine Spielformen im Spiel ankommen, zeigt sich am Wochenende. Werden die einstudierten Überzahlsituationen genutzt? Sinken die technischen Fehler unter Druck? Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du im Spiel genau diese Dinge live per Tap und siehst, ob sich die Arbeit an Spielformen in bessere Entscheidungen und mehr Tore übersetzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was sind Spielformen im Handballtraining?',

@@ -93,7 +93,7 @@ Wichtig für Trainer: Kempa-Training ist auch Sprung- und Landetraining – Matt
 
 Ob sich spektakuläre Züge lohnen, verrät die Statistik: Wie oft führt der einstudierte Zug zum Tor, wie oft zum Ballverlust mit Gegenstoß?
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehlwürfe und technische Fehler live per Tap und siehst schwarz auf weiß, welche Spielzüge Ertrag bringen. So bleibt der Kempa das, was er sein soll: ein kalkuliertes Highlight. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehlwürfe und technische Fehler live per Tap und siehst schwarz auf weiß, welche Spielzüge Ertrag bringen. So bleibt der Kempa das, was er sein soll: ein kalkuliertes Highlight. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist der Kempa-Trick im Handball?',

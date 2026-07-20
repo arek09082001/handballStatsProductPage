@@ -93,7 +93,7 @@ Lass jeden Spieler ein bis zwei Finten finden, die zu ihm passen, und diese wirk
 
 Ob deine Spieler im Eins-gegen-eins erfolgreich sind, zeigt sich an Durchbrüchen, erzwungenen Siebenmetern und einfachen Abschlüssen aus der Nahdistanz.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten und erzwungene Strafwürfe live per Tap. So siehst du, welche Spieler im direkten Duell den Unterschied machen und wo dein Angriff über das Eins-gegen-eins gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten und erzwungene Strafwürfe live per Tap. So siehst du, welche Spieler im direkten Duell den Unterschied machen und wo dein Angriff über das Eins-gegen-eins gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist eine Finte im Handball?',

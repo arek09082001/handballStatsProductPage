@@ -83,7 +83,7 @@ Betone von Anfang an die **Kommunikation**: In der 6:0 muss ständig geredet wer
 
 ## Die Abwehr messbar machen
 
-Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du die Gegentore nach Wurfzonen und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du die Gegentore nach Wurfzonen und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was bedeutet 6:0-Abwehr im Handball?',

@@ -77,7 +77,7 @@ Nicht jede Mannschaft hat einen. Dann helfen zwei Wege: einen wurfstarken Rechts
 
 ## Stärken der rechten Seite messbar machen
 
-Ob eure rechte Angriffsseite wirklich gefährlich ist, verrät die Wurfverteilung. Mit **Statix**, der Handball-Statistik-App für Trainer, siehst du im Wurfbild, aus welchen Zonen eure Tore fallen und wie stark die rechte Seite im Vergleich zur linken ist. So erkennst du, ob ein Linkshänder seine Winkelvorteile ausspielt – oder wo die Mannschaft einseitig wird. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Ob eure rechte Angriffsseite wirklich gefährlich ist, verrät die Wurfverteilung. Mit **Statix**, der Handball-Statistik-App für Trainer, siehst du im Wurfbild, aus welchen Zonen eure Tore fallen und wie stark die rechte Seite im Vergleich zur linken ist. So erkennst du, ob ein Linkshänder seine Winkelvorteile ausspielt – oder wo die Mannschaft einseitig wird. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Warum sind Linkshänder im Handball so gefragt?',

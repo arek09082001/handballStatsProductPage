@@ -82,7 +82,7 @@ Beweglichkeit ist ein Baustein der Verletzungsprävention, aber nicht der einzig
 
 ## Belastung und Erholung im Blick behalten
 
-Beweglichkeit und Regeneration hängen eng mit der Gesamtbelastung zusammen. Wer Spiel- und Trainingsbelastung im Auge behält, dosiert auch die Mobility-Arbeit sinnvoller. Mit **Statix**, der Handball-Statistik-App für Trainer, behältst du Einsatzzeiten und Spielbelastung deiner Spieler über die Saison im Blick – eine gute Grundlage, um Training, Dehnen und Erholung aufeinander abzustimmen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Beweglichkeit und Regeneration hängen eng mit der Gesamtbelastung zusammen. Wer Spiel- und Trainingsbelastung im Auge behält, dosiert auch die Mobility-Arbeit sinnvoller. Mit **Statix**, der Handball-Statistik-App für Trainer, behältst du Einsatzzeiten und Spielbelastung deiner Spieler über die Saison im Blick – eine gute Grundlage, um Training, Dehnen und Erholung aufeinander abzustimmen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Sollte man sich vor dem Handballspiel dehnen?',

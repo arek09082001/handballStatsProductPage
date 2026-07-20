@@ -115,7 +115,7 @@ Viele Warm-ups verschenken Wirkung, weil immer wieder dieselben Fehler passieren
 - **Zu wenig handballspezifisch:** Nur Laufen und Dehnen bereitet nicht auf Würfe, Sprünge und Zweikämpfe vor. Ohne die spezifische Phase mit Ball fehlt die entscheidende Vorbereitung.
 - **Kein Ball:** Spätestens in der zweiten Hälfte des Aufwärmens gehört der Ball dazu. Er sorgt für Motivation und trainiert genau die Bewegungen, die im Spiel zählen.
 
-Wer diese Fehler vermeidet, hat schon viel gewonnen: Das Team ist ab der ersten Sekunde da – wach, beweglich und geschützt. Wenn du festhalten willst, wie einsatzbereit deine Mannschaft startet, kannst du Trainingsfleiß und Spieldaten mit der Handball-Statistik-App Statix dokumentieren – eine kostenlose Live-Demo ohne Account findest du unter demo.handballwebseite.de.`,
+Wer diese Fehler vermeidet, hat schon viel gewonnen: Das Team ist ab der ersten Sekunde da – wach, beweglich und geschützt. Wenn du festhalten willst, wie einsatzbereit deine Mannschaft startet, kannst du Trainingsfleiß und Spieldaten mit der Handball-Statistik-App Statix dokumentieren – eine kostenlose Live-Demo ohne Account findest du unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie lange sollte man sich im Handball aufwärmen?',

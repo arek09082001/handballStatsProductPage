@@ -95,7 +95,7 @@ Zwei kurze Sprungeinheiten pro Woche reichen. Höre auf den Körper: Schmerzen i
 
 Sprungkraft lässt sich einfach überprüfen – etwa mit einem Standhochsprung an der Wand alle paar Wochen. Auf dem Feld zählt aber, ob die höheren Sprünge zu besseren Abschlüssen führen.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Wurfquoten und Abschlüsse je Position live per Tap. So siehst du, ob deine Rückraum- und Außenspieler nach dem Sprungkrafttraining tatsächlich häufiger und sauberer treffen. Zahlen statt Bauchgefühl – teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Wurfquoten und Abschlüsse je Position live per Tap. So siehst du, ob deine Rückraum- und Außenspieler nach dem Sprungkrafttraining tatsächlich häufiger und sauberer treffen. Zahlen statt Bauchgefühl – teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie kann ich meine Sprungkraft für den Handball verbessern?',

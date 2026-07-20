@@ -84,7 +84,7 @@ Wie bei jeder Abwehr entscheidet die **Kommunikation**: Die Spitze und der Innen
 
 ## Wirkung der 5:1 überprüfen
 
-Ob die 5:1 den gegnerischen Rückraum wirklich entschärft, siehst du an der Wurfverteilung. Sinken die Distanztore und steigen die technischen Fehler des Gegners, wirkt das System. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Gegentore nach Zonen und provozierte Ballverluste live – so erkennst du sofort, ob sich der Systemwechsel auszahlt oder ob der Gegner die Lücken neben der Spitze findet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Ob die 5:1 den gegnerischen Rückraum wirklich entschärft, siehst du an der Wurfverteilung. Sinken die Distanztore und steigen die technischen Fehler des Gegners, wirkt das System. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Gegentore nach Zonen und provozierte Ballverluste live – so erkennst du sofort, ob sich der Systemwechsel auszahlt oder ob der Gegner die Lücken neben der Spitze findet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist die 5:1-Abwehr im Handball?',

@@ -94,7 +94,7 @@ So bleibt dein Team auch im letzten Spiel des Tages konzentriert und antrittssta
 
 Ob Ernährung und Regeneration passen, zeigt sich auf dem Feld: Bleibt dein Team in der Schlussphase konzentriert oder brechen Wurfquote und Tempo ein? Häufen sich technische Fehler gegen Ende der Spiele?
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten und Fehler live per Tap und siehst, wie sich die Leistung über die Spielzeit entwickelt. Ein deutlicher Leistungsabfall in der Schlussphase ist oft ein Hinweis auf Kondition, Ernährung oder Regeneration. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten und Fehler live per Tap und siehst, wie sich die Leistung über die Spielzeit entwickelt. Ein deutlicher Leistungsabfall in der Schlussphase ist oft ein Hinweis auf Kondition, Ernährung oder Regeneration. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was sollte man vor einem Handballspiel essen?',

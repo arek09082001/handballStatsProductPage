@@ -80,7 +80,7 @@ Coache dabei weniger den Ball und mehr die Bewegung: „Wo war der freie Raum? W
 
 ## Den Ertrag sichtbar machen
 
-Gutes Freilaufen zeigt sich in flüssigem Ballfluss, wenigen technischen Fehlern und hochwertigen Abschlüssen. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du technische Fehler und Wurfpositionen live und erkennst, ob euer Angriff durch besseres Bewegen ohne Ball flüssiger und gefährlicher wird. So wird aus einer schwer greifbaren Fähigkeit ein messbarer Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Gutes Freilaufen zeigt sich in flüssigem Ballfluss, wenigen technischen Fehlern und hochwertigen Abschlüssen. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du technische Fehler und Wurfpositionen live und erkennst, ob euer Angriff durch besseres Bewegen ohne Ball flüssiger und gefährlicher wird. So wird aus einer schwer greifbaren Fähigkeit ein messbarer Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was bedeutet Freilaufen im Handball?',

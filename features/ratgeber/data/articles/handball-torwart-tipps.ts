@@ -100,7 +100,7 @@ Schon zehn Minuten gezieltes Torwarttraining pro Einheit machen über eine Saiso
 
 Das ehrlichste Feedback für jeden Torhüter ist die Paradenquote – insgesamt, nach Wurfposition und in engen Spielphasen.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, wird jede Parade und jedes Gegentor live per Tap erfasst – inklusive Wurfposition. So siehst du, in welchen Ecken und aus welchen Zonen du stark bist und wo du gezielt trainieren solltest. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, wird jede Parade und jedes Gegentor live per Tap erfasst – inklusive Wurfposition. So siehst du, in welchen Ecken und aus welchen Zonen du stark bist und wo du gezielt trainieren solltest. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie werde ich ein besserer Handballtorwart?',

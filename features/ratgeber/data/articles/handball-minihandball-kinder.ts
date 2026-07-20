@@ -93,7 +93,7 @@ Ein Trainer, der Begeisterung ausstrahlt und geduldig bleibt, hält die Gruppe f
 
 Auch wenn Ergebnisse im Minihandball keine Rolle spielen, hilft es, die Entwicklung und Teilnahme der Kinder im Blick zu behalten: Wer kommt regelmäßig, wer entwickelt sich wie, wo braucht ein Kind mehr Unterstützung? Das ist keine Leistungsbewertung, sondern hilft dir, jedes Kind individuell zu fördern.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, kannst du Anwesenheit und die Entwicklung deiner Spieler über die Zeit festhalten – unaufgeregt und ohne Leistungsdruck. So behältst du auch bei der jüngsten Gruppe den Überblick und siehst, wie sich dein Nachwuchs Schritt für Schritt entwickelt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, kannst du Anwesenheit und die Entwicklung deiner Spieler über die Zeit festhalten – unaufgeregt und ohne Leistungsdruck. So behältst du auch bei der jüngsten Gruppe den Überblick und siehst, wie sich dein Nachwuchs Schritt für Schritt entwickelt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Ab welchem Alter können Kinder Handball spielen?',

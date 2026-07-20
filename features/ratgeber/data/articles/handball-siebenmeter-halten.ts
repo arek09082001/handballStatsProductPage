@@ -84,7 +84,7 @@ Ob gehalten oder nicht – entwickle eine feste Routine. Nach einem Gegentor: ku
 
 Wie gut du im Duell wirklich bist, zeigt nur die Statistik über viele Würfe – nicht das Gefühl nach einem Spiel.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, werden Siebenmeter, Paraden und Gegentore live per Tap erfasst. So siehst du deine Siebenmeterquote über die Saison, erkennst Muster und machst aus dem Strafwurf Schritt für Schritt ein faires Duell. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, werden Siebenmeter, Paraden und Gegentore live per Tap erfasst. So siehst du deine Siebenmeterquote über die Saison, erkennst Muster und machst aus dem Strafwurf Schritt für Schritt ein faires Duell. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie hält man einen Siebenmeter im Handball?',

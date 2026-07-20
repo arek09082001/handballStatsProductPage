@@ -83,7 +83,7 @@ Bei Kindern führt man den Dreierrhythmus früh und spielerisch ein – einmal f
 
 ## Wurfleistung sichtbar machen
 
-Ob sich die Arbeit am Anlauf auszahlt, zeigt sich an den Abschlüssen im Spiel. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Würfe und Trefferquoten deiner Rückraumspieler live und siehst, ob mehr Härte und Präzision auch mehr Tore bringen. So verbindest du Techniktraining mit messbarem Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Ob sich die Arbeit am Anlauf auszahlt, zeigt sich an den Abschlüssen im Spiel. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Würfe und Trefferquoten deiner Rückraumspieler live und siehst, ob mehr Härte und Präzision auch mehr Tore bringen. So verbindest du Techniktraining mit messbarem Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist der Dreierrhythmus im Handball?',

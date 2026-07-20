@@ -86,7 +86,7 @@ Nicht jede Situation ist ein gutes Duell. Stark im Eins-gegen-eins ist, wer erke
 
 Ob dein 1 gegen 1 wirklich besser wird, siehst du an harten Zahlen: Durchbrüche, erzwungene Siebenmeter, technische Fehler im Zweikampf und Tore aus der Nahdistanz.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfpositionen und erzwungene Strafwürfe live per Tap. So erkennst du, welche Spieler ihre Duelle gewinnen und wo der Angriff über das Eins-gegen-eins gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfpositionen und erzwungene Strafwürfe live per Tap. So erkennst du, welche Spieler ihre Duelle gewinnen und wo der Angriff über das Eins-gegen-eins gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie werde ich im Handball besser im 1 gegen 1?',

@@ -95,7 +95,7 @@ Setze im Nachwuchs zuerst auf saubere Technik und erst später auf Wurfhärte. E
 
 Ob deine Wurfarbeit wirkt, zeigt sich an der Wurfquote und daran, aus welchen Positionen dein Team erfolgreich abschließt.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Würfe, Tore und Quoten je Spieler und Position live per Tap. So siehst du, welche Schützen wie effizient abschließen und ob sich die technische Arbeit am Schlagwurf in besseren Quoten niederschlägt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Würfe, Tore und Quoten je Spieler und Position live per Tap. So siehst du, welche Schützen wie effizient abschließen und ob sich die technische Arbeit am Schlagwurf in besseren Quoten niederschlägt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist der Schlagwurf im Handball?',

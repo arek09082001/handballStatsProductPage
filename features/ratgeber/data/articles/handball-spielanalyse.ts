@@ -114,7 +114,7 @@ Womit du analysierst, entscheidet über den Aufwand und die Qualität deiner Aus
 | Excel-Tabelle | mittel | kaum praktikabel | flexibel, aber viel Handarbeit |
 | Statistik-App | gering im Spiel | ja, mit einem Tap | automatisch: Quoten, Wurfbilder, Phasen |
 
-Genau hier setzt eine Handball-Statistik-App wie **Statix** an. Du erfasst jeden Wurf, jedes Tor und jeden Ballverlust live mit einem Tap – und das offline, direkt in der Halle. Nach dem Schlusspfiff hast du Wurfbilder, Wurfquoten nach Position und eine Phasenanalyse in Zeitabschnitten, ohne eine einzige Zeile Excel. Eine KI-Analyse fasst die wichtigsten Muster für dich zusammen, sodass du dich auf die Entscheidungen konzentrieren kannst statt aufs Rechnen. Wenn du es ausprobieren willst: Unter demo.handballwebseite.de gibt es eine kostenlose Live-Demo, ganz ohne Account. So wird aus reiner Spielbeobachtung eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Genau hier setzt eine Handball-Statistik-App wie **Statix** an. Du erfasst jeden Wurf, jedes Tor und jeden Ballverlust live mit einem Tap – und das offline, direkt in der Halle. Nach dem Schlusspfiff hast du Wurfbilder, Wurfquoten nach Position und eine Phasenanalyse in Zeitabschnitten, ohne eine einzige Zeile Excel. Eine KI-Analyse fasst die wichtigsten Muster für dich zusammen, sodass du dich auf die Entscheidungen konzentrieren kannst statt aufs Rechnen. Wenn du es ausprobieren willst: Unter demo.statix-app.de gibt es eine kostenlose Live-Demo, ganz ohne Account. So wird aus reiner Spielbeobachtung eine echte Entscheidungsgrundlage für dein nächstes Training.`,
   faqs: [
     {
       question: 'Was gehört zu einer guten Handball-Spielanalyse?',

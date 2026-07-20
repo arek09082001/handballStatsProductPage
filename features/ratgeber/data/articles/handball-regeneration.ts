@@ -95,7 +95,7 @@ Regeneration beginnt im Trainingsplan, nicht erst danach:
 
 Müdigkeit zeigt sich in der Leistung, bevor sie jemand ausspricht: sinkende Wurfquoten in der zweiten Halbzeit, mehr technische Fehler in der Schlussphase, weniger Tore aus dem Gegenstoß.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehler und Wurfquoten live per Tap – auch im Zeitverlauf des Spiels. So erkennst du, ob dein Team am Ende einbricht und ob die Belastungssteuerung der Woche gepasst hat. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Fehler und Wurfquoten live per Tap – auch im Zeitverlauf des Spiels. So erkennst du, ob dein Team am Ende einbricht und ob die Belastungssteuerung der Woche gepasst hat. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Wie regeneriert man am schnellsten nach einem Handballspiel?',

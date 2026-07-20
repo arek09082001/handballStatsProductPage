@@ -77,7 +77,7 @@ Nicht jede Position stellt gleich hohe technische Anforderungen. Für Einsteiger
 
 ## Fortschritt sichtbar machen und dranbleiben
 
-Nichts motiviert mehr als der eigene Fortschritt. Wenn du deine Entwicklung festhältst – mehr geglückte Pässe, bessere Wurfquote, weniger Fehler – bleibt der Antrieb hoch. Mit **Statix**, der Handball-Statistik-App für Trainer und Teams, lassen sich diese Fortschritte über die Saison dokumentieren, sodass auch Späteinsteiger schwarz auf weiß sehen, wie sie besser werden. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Nichts motiviert mehr als der eigene Fortschritt. Wenn du deine Entwicklung festhältst – mehr geglückte Pässe, bessere Wurfquote, weniger Fehler – bleibt der Antrieb hoch. Mit **Statix**, der Handball-Statistik-App für Trainer und Teams, lassen sich diese Fortschritte über die Saison dokumentieren, sodass auch Späteinsteiger schwarz auf weiß sehen, wie sie besser werden. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Kann man als Erwachsener noch mit Handball anfangen?',

@@ -21,11 +21,11 @@ In Vercel → Project → Settings → Environment Variables:
 | Variable | Required | Value |
 | --- | --- | --- |
 | `BREVO_API_KEY` | yes | API key from Brevo → SMTP & API → API Keys |
-| `NEXT_PUBLIC_BASE_URL` | yes | e.g. `https://www.handballwebseite.de` (used to build the confirm link) |
+| `NEXT_PUBLIC_BASE_URL` | yes | e.g. `https://www.statix-app.de` (used to build the confirm link) |
 | `BREVO_NEWSLETTER_LIST_ID` | optional | contact list ID for confirmed subscribers (default `4`) |
 | `NEWSLETTER_CONFIRM_SECRET` | optional | HMAC secret for the token; falls back to `BREVO_API_KEY` |
 
-> The sender address (`noreply@handballwebseite.de`, from `lib/club-config.ts`)
+> The sender address (`noreply@statix-app.de`, from `lib/club-config.ts`)
 > must be a **verified** Brevo sender/domain, otherwise the confirmation email
 > won't be delivered.
 

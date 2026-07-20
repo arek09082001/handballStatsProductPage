@@ -91,7 +91,7 @@ Lege den Fokus zuerst auf das echte Binden des Gegenspielers – das ist der Ker
 
 Ob deine Angriffsbewegungen wirken, zeigt sich am Ergebnis: Entstehen daraus freie Würfe und Anspiele an den Kreis? Sinkt die Zahl der abgeblockten oder erzwungenen Fehlwürfe?
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten und technische Fehler live per Tap. So erkennst du, ob dein Team über gute Angriffsbewegungen zu einfachen Abschlüssen kommt oder ob der Angriff zu oft aus schlechten Positionen abschließt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.handballwebseite.de.`,
+Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten und technische Fehler live per Tap. So erkennst du, ob dein Team über gute Angriffsbewegungen zu einfachen Abschlüssen kommt oder ob der Angriff zu oft aus schlechten Positionen abschließt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
   faqs: [
     {
       question: 'Was ist eine Stoßbewegung im Handball?',

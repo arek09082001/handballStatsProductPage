@@ -77,7 +77,7 @@ Motivation lebt von einer Kultur, die du im Alltag prägst. Diese Bausteine helf
 | Anerkennung | Fortschritt und Einsatz sichtbar würdigen |
 | Zusammenhalt | Rituale, gemeinsame Erlebnisse, Erfolge feiern |
 
-Ein starker Motivator, den viele Trainer unterschätzen, ist sichtbarer Fortschritt. Wenn deine Spieler schwarz auf weiß sehen, dass ihre Wurfquote steigt oder die Ballverluste sinken, entsteht Stolz und neuer Antrieb. Eine Handball-Statistik-App wie Statix hält Entwicklung und Teamziele automatisch fest – live per Tap erfasst, sofort mit dem Team teilbar. So werden Fortschritte greifbar, und die kostenlose Live-Demo ohne Account unter demo.handballwebseite.de zeigt in wenigen Minuten, wie das aussieht.`,
+Ein starker Motivator, den viele Trainer unterschätzen, ist sichtbarer Fortschritt. Wenn deine Spieler schwarz auf weiß sehen, dass ihre Wurfquote steigt oder die Ballverluste sinken, entsteht Stolz und neuer Antrieb. Eine Handball-Statistik-App wie Statix hält Entwicklung und Teamziele automatisch fest – live per Tap erfasst, sofort mit dem Team teilbar. So werden Fortschritte greifbar, und die kostenlose Live-Demo ohne Account unter demo.statix-app.de zeigt in wenigen Minuten, wie das aussieht.`,
   faqs: [
     {
       question: 'Wie motiviere ich eine Handballmannschaft langfristig?',
