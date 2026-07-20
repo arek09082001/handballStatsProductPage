@@ -97,6 +97,7 @@ export default function StatsBarSection() {
       <div className='pointer-events-none absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-white/10 to-transparent' />
 
       <div className='relative z-10 mx-auto w-full max-w-6xl px-6 sm:px-10'>
+        <h2 className='sr-only'>{t('srTitle')}</h2>
         <div className='grid grid-cols-2 sm:grid-cols-4'>
           {items.map((item, i) => {
             const { prefix, number, suffix } = parseValue(item.value);

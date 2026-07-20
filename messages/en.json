@@ -554,6 +554,7 @@
       "trust3": "Works offline in the gym"
     },
     "stats": {
+      "srTitle": "Handball statistics at a glance",
       "items": [
         {
           "value": "1-tap",
@@ -611,7 +612,7 @@
       ]
     },
     "ai": {
-      "title": "AI analyses that explain why – not just what",
+      "title": "Handball statistics analyzed by AI – explaining why, not just what",
       "description": "Statix analyses your recorded games with AI on four levels: for every single game, for your whole team across the season, as a scouting profile for individual players, and for entire tournaments. No notepad or spreadsheet can do that.",
       "privacyNote": "Privacy built in: player names are pseudonymised before any data reaches an AI – and reports are generated in the background while you keep working.",
       "scopes": [
@@ -640,7 +641,7 @@
       }
     },
     "tournament": {
-      "title": "Tournaments and leagues fully under control",
+      "title": "Handball tournament statistics fully under control",
       "description": "Create a tournament with several teams, start live games right from it and keep the standings in view at all times.",
       "points": [
         {
@@ -719,7 +720,7 @@
       }
     },
     "collab": {
-      "title": "Stats that move your whole team forward",
+      "title": "Handball statistics that move your whole team forward",
       "description": "Statix is not a lone-wolf tool: share games with fellow coaches, bring your coaching staff on board and actively involve your players.",
       "points": [
         {
@@ -753,7 +754,7 @@
       }
     },
     "allFeatures": {
-      "title": "Everything included – from throw-off to analysis",
+      "title": "All handball statistics & features – from throw-off to analysis",
       "description": "Statix grows with every matchday. All of this is already in the app – features marked “New” have just landed.",
       "newBadge": "New",
       "groups": [
@@ -945,7 +946,7 @@
       "countLabel": "{count} features"
     },
     "pros": {
-      "title": "No more stats on a napkin",
+      "title": "Handball statistics instead of pen and napkin",
       "description": "Show your coach in two minutes what gets lost on a notepad: open the live demo in the gym – a real game, real numbers, a finished analysis.",
       "cta": "Open the demo & show your coach",
       "oldTitle": "Pen & paper",
@@ -963,8 +964,8 @@
       ]
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "description": "Everything you need to know before getting started.",
+      "title": "Frequently asked questions about handball statistics",
+      "description": "Everything you need to know about handball statistics before getting started.",
       "items": [
         {
           "question": "What is Statix?",
@@ -1073,7 +1074,7 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "finalCta": {
-      "title": "Try Statix now – with real game data",
+      "title": "Try handball statistics live now – with real game data",
       "description": "Click through a fully tracked game: live stats, shot maps, AI analysis. Right in your browser, no account needed.",
       "primaryCta": "Get the launch offer",
       "note": "Runs right in your browser – on a tablet at the sideline just as well as on a laptop for the debrief.",
