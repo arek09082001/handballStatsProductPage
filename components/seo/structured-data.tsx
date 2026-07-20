@@ -5,7 +5,6 @@ import {
   HOMEPAGE_FAQS,
   APP_FEATURES,
   APP_SCREENSHOTS,
-  HOWTO_STEPS,
   SEO_KEYWORDS,
   SUPPORTED_DEVICES,
   SITE_URL,
@@ -17,13 +16,6 @@ interface FaqItem {
   answer: string;
 }
 
-interface HowToStep {
-  name?: string;
-  title?: string;
-  text?: string;
-  description?: string;
-}
-
 /**
  * Renders the JSON-LD graph for the home page (WebPage, SoftwareApplication
  * and FAQPage). FAQ data is read from the same translations as the visible
@@ -33,7 +25,6 @@ interface HowToStep {
  */
 export default async function StructuredData() {
   let faqItems: FaqItem[] = [...HOMEPAGE_FAQS];
-  let howToSteps: HowToStep[] = [...HOWTO_STEPS];
   const featureList: string[] = APP_FEATURES.map((feature) => feature.name);
 
   try {
@@ -44,16 +35,6 @@ export default async function StructuredData() {
     }
   } catch {
     // keep fallback FAQ
-  }
-
-  try {
-    const tHow = await getTranslations('productPage.how');
-    const steps = tHow.raw('steps') as HowToStep[] | undefined;
-    if (Array.isArray(steps) && steps.length > 0) {
-      howToSteps = steps;
-    }
-  } catch {
-    // keep fallback steps
   }
 
   const structuredData = {
@@ -109,21 +90,6 @@ export default async function StructuredData() {
         publisher: {
           '@id': `${SITE_URL}/#organization`,
         },
-      },
-      {
-        '@type': 'HowTo',
-        '@id': `${SITE_URL}#howto`,
-        name: 'Handball-Statistiken mit Statix live erfassen',
-        description:
-          'In drei Schritten von der Aufstellung zur fertigen Spielanalyse – ganz ohne Schulung.',
-        inLanguage: 'de-DE',
-        totalTime: 'PT5M',
-        step: howToSteps.map((step, index) => ({
-          '@type': 'HowToStep',
-          position: index + 1,
-          name: step.name ?? step.title ?? `Schritt ${index + 1}`,
-          text: step.text ?? step.description ?? '',
-        })),
       },
       {
         '@type': 'FAQPage',

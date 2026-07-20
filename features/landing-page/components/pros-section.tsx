@@ -41,21 +41,18 @@ export default function ProsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className='w-full bg-background py-20 md:py-24'>
+    <section ref={sectionRef} className='w-full bg-background py-24 md:py-32'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div className='mx-auto max-w-3xl text-center'>
-          <p className='text-xs font-semibold uppercase tracking-[0.2em] text-primary'>
-            {t('eyebrow')}
-          </p>
-          <h2 className='mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
             {t('title')}
           </h2>
-          <p className='mt-4 text-base leading-7 text-muted-foreground'>
+          <p className='mt-5 text-base leading-7 text-muted-foreground'>
             {t('description')}
           </p>
         </div>
 
-        <div className='mt-14 grid gap-6 lg:grid-cols-2'>
+        <div className='mx-auto mt-16 grid max-w-5xl gap-8 lg:grid-cols-2'>
           <div
             ref={(el) => {
               if (el) cardsRef.current[0] = el;

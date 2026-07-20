@@ -65,6 +65,14 @@ export const SEO_KEYWORDS = Array.from(
         'handball statistik excel alternative',
         'handball ki analyse',
         'handball statistik software kostenlos',
+        // New feature intents
+        'handball live ticker',
+        'handball live ticker app',
+        'handball spiel live verfolgen',
+        'handball liveticker verein',
+        'handball team umfrage app',
+        'handball trainer zusammenarbeit app',
+        'handball gegner bilanz app',
     ]),
 );
 
@@ -121,6 +129,54 @@ export const APP_FEATURES = [
         description:
             'Verwalte Kader, Spiele und Saisons an einem Ort und teile Auswertungen mit dem ganzen Team.',
     },
+    {
+        slug: 'ai-analysis',
+        name: 'KI-Analyse',
+        description:
+            'KI-Auswertungen für einzelne Spiele, das ganze Team, einzelne Spieler und komplette Turniere – mit pseudonymisierten Spielernamen.',
+    },
+    {
+        slug: 'live-ticker',
+        name: 'Live-Ticker',
+        description:
+            'Veröffentliche Spiele als öffentlichen Live-Ticker mit Link und QR-Code – Eltern und Fans verfolgen Spielstand und Spielverlauf live im Browser.',
+    },
+    {
+        slug: 'tournaments',
+        name: 'Turniermodus',
+        description:
+            'Turniere mit mehreren Mannschaften, automatischer Tabelle, Spielplan und Spieltagskader-Auswahl.',
+    },
+    {
+        slug: 'coach-collaboration',
+        name: 'Trainer-Zusammenarbeit',
+        description:
+            'Teile Spiele mit Trainerkollegen in deren Posteingang und lade Co-Trainer fest in dein Team ein.',
+    },
+    {
+        slug: 'player-surveys',
+        name: 'Spieler-Umfragen',
+        description:
+            'Erstelle Umfragen zu Verfügbarkeit oder Feedback und teile einen Link – Spieler antworten ohne Account.',
+    },
+    {
+        slug: 'opponent-records',
+        name: 'Gegner-Bilanz',
+        description:
+            'Automatische Head-to-Head-Bilanz gegen jeden Gegner – Siege, Unentschieden, Niederlagen und Tore.',
+    },
+    {
+        slug: 'card-album',
+        name: 'Kader als Kartenalbum',
+        description:
+            'Spielerkarten mit Werten aus echten Spielen, Handball Performance Index, Stickern und Taktikboard.',
+    },
+    {
+        slug: 'offline-pwa',
+        name: 'Offline & App-Installation',
+        description:
+            'Erfasse Spiele offline in der Halle mit automatischer Synchronisation und installiere Statix als App auf dem Homescreen.',
+    },
 ] as const;
 
 /**
@@ -145,26 +201,6 @@ export const APP_SCREENSHOTS = [
     '/statsTableInGame.png',
     '/shotMaps.png',
     '/gameListOverview.png',
-] as const;
-
-/**
- * Fallback "how it works" steps for the HowTo structured data. Kept in sync
- * with `productPage.how.steps` in the message catalogues; the live schema
- * prefers the translated strings when available.
- */
-export const HOWTO_STEPS = [
-    {
-        name: 'Spiel anlegen',
-        text: 'Wähle dein Team, den Gegner und leg in Sekunden los – auch offline in der Halle.',
-    },
-    {
-        name: 'Live erfassen',
-        text: 'Tippe jede Aktion während des Spiels. Statix berechnet alle Statistiken automatisch.',
-    },
-    {
-        name: 'Analysieren & besser coachen',
-        text: 'Werte Wurfbilder und Spielertrends aus und triff datenbasierte Entscheidungen.',
-    },
 ] as const;
 
 /**

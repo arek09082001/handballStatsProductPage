@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ListChecks, PlayCircle, Table2, Users, Trophy } from 'lucide-react';
+import { ListChecks, PlayCircle, Table2, UserCheck, Users } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import AppScreenshot from './app-screenshot';
@@ -11,7 +11,7 @@ interface Point {
   description: string;
 }
 
-const POINT_ICONS = [Table2, PlayCircle, ListChecks, Users];
+const POINT_ICONS = [Table2, PlayCircle, ListChecks, Users, UserCheck];
 
 export default function TournamentSection() {
   const t = useTranslations('productPage.tournament');
@@ -50,22 +50,18 @@ export default function TournamentSection() {
     <section
       id='tournament'
       ref={sectionRef}
-      className='w-full scroll-mt-24 bg-background py-20 md:py-24'>
+      className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div className='mx-auto max-w-3xl text-center'>
-          <p className='inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary'>
-            <Trophy className='size-4' />
-            {t('eyebrow')}
-          </p>
-          <h2 className='mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
             {t('title')}
           </h2>
-          <p className='mt-4 text-base leading-7 text-muted-foreground'>
+          <p className='mt-5 text-base leading-7 text-muted-foreground'>
             {t('description')}
           </p>
         </div>
 
-        <div className='mt-14 grid items-center gap-10 lg:grid-cols-2 lg:gap-14'>
+        <div className='mt-16 grid items-center gap-12 lg:grid-cols-2 lg:gap-16'>
           <div ref={copyRef} className='space-y-6'>
             {points.map((point, index) => {
               const Icon = POINT_ICONS[index % POINT_ICONS.length];

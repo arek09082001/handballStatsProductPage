@@ -50,7 +50,7 @@ export default function FinalCTASection() {
     <section
       ref={sectionRef}
       id='demo'
-      className='w-full scroll-mt-24 bg-background py-20 md:py-24'>
+      className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
       <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <div
           ref={cardRef}
@@ -61,7 +61,7 @@ export default function FinalCTASection() {
           <div className='relative grid items-center gap-10 lg:grid-cols-2 lg:gap-14'>
             {/* Copy + actions */}
             <div className='text-center lg:text-left'>
-              <span className='inline-flex items-center gap-2 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white ring-1 ring-white/25 backdrop-blur-sm'>
+              <span className='inline-flex items-center gap-2.5 text-sm font-semibold text-white/95'>
                 <span className='relative flex size-2'>
                   <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-white/80' />
                   <span className='relative inline-flex size-2 rounded-full bg-white' />
@@ -69,7 +69,7 @@ export default function FinalCTASection() {
                 {t('badge')}
               </span>
 
-              <h2 className='mt-5 text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl'>
+              <h2 className='mt-4 text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl'>
                 {t('title')}
               </h2>
               <p className='mx-auto mt-4 max-w-xl text-base leading-7 text-white/90 sm:text-lg lg:mx-0'>

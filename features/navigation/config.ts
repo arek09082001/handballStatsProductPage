@@ -28,6 +28,12 @@ export const siteNavigationItems: NavigationItem[] = [
     sectionId: 'tournament',
   },
   {
+    ident: 9,
+    href: '/#liveticker',
+    labelKey: 'liveTicker',
+    sectionId: 'liveticker',
+  },
+  {
     ident: 3,
     href: '/#faq',
     labelKey: 'faq',
