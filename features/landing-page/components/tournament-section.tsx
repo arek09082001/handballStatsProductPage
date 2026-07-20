@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ListChecks, PlayCircle, Table2, Users, Trophy } from 'lucide-react';
+import { ListChecks, PlayCircle, Table2, UserCheck, Users, Trophy } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import AppScreenshot from './app-screenshot';
@@ -11,7 +11,7 @@ interface Point {
   description: string;
 }
 
-const POINT_ICONS = [Table2, PlayCircle, ListChecks, Users];
+const POINT_ICONS = [Table2, PlayCircle, ListChecks, Users, UserCheck];
 
 export default function TournamentSection() {
   const t = useTranslations('productPage.tournament');

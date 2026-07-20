@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Check, Sparkles, TrendingUp, User, Users } from 'lucide-react';
+import { Check, ShieldCheck, Sparkles, TrendingUp, Trophy, User, Users } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import AppScreenshot from './app-screenshot';
@@ -12,7 +12,7 @@ interface Scope {
   points: string[];
 }
 
-const SCOPE_ICONS = [TrendingUp, Users, User];
+const SCOPE_ICONS = [TrendingUp, Users, User, Trophy];
 
 export default function AiAnalyticsSection() {
   const t = useTranslations('productPage.ai');
@@ -84,8 +84,8 @@ export default function AiAnalyticsSection() {
           </p>
         </div>
 
-        {/* Three analysis scopes */}
-        <div className='mt-14 grid gap-6 md:grid-cols-3'>
+        {/* Four analysis scopes: match, team, player, tournament */}
+        <div className='mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
           {scopes.map((scope, index) => {
             const Icon = SCOPE_ICONS[index % SCOPE_ICONS.length];
 
@@ -119,6 +119,11 @@ export default function AiAnalyticsSection() {
             );
           })}
         </div>
+
+        <p className='mx-auto mt-8 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-slate-400'>
+          <ShieldCheck className='mt-0.5 size-4 shrink-0 text-emerald-400' />
+          <span>{t('privacyNote')}</span>
+        </p>
 
         {/* In-depth single-game analysis showcase */}
         <div ref={showcaseRef} className='mt-20'>

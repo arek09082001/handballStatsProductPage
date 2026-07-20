@@ -9,6 +9,7 @@
     "product": {
       "demo": "Live-Demo",
       "features": "Alle Funktionen",
+      "liveTicker": "Live-Ticker",
       "how": "So funktioniert's",
       "ratgeber": "Ratgeber",
       "faq": "Häufige Fragen",
@@ -222,6 +223,7 @@
       "howItWorks": "So funktioniert's",
       "ai": "KI-Analyse",
       "tournament": "Turnier",
+      "liveTicker": "Live-Ticker",
       "faq": "FAQ",
       "contact": "Kontakt",
       "impressum": "Impressum"
@@ -600,20 +602,21 @@
         },
         {
           "badge": "Team & Kader",
-          "title": "Team- & Kaderverwaltung",
-          "description": "Verwalte Spieler, Rückennummern und Positionen an einem Ort. Stelle den Spieltagskader zusammen und greife über alle Spiele auf dieselben Profile zu."
+          "title": "Dein Kader als Kartenalbum",
+          "description": "Verwalte Spieler, Rückennummern und Positionen als interaktives Kartenalbum: Spielerkarten mit Werten aus echten Spielen, Sticker für besondere Leistungen und ein Taktikboard zum Aufstellen deines Teams."
         },
         {
           "badge": "Export & Teilen",
           "title": "Auswertungen teilen – mit Team & Trainerstab",
-          "description": "Teile Statistiken und Berichte mit Trainerstab und Team oder exportiere sie für die Nachbesprechung – die fertige Auswertung ist nur einen Tap entfernt."
+          "description": "Teile Statistiken und KI-Berichte per Freigabelink oder PDF – oder direkt mit einem anderen Trainer, bei dem das Spiel im Posteingang landet. Die fertige Auswertung ist nur einen Tap entfernt."
         }
       ]
     },
     "ai": {
       "eyebrow": "KI-Analyse",
       "title": "KI-Analysen, die erklären warum – nicht nur was",
-      "description": "Statix wertet deine erfassten Spiele mit KI aus – auf drei Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison und als Scouting-Profil für einzelne Spieler. Das leistet kein Zettel und keine Excel-Tabelle.",
+      "description": "Statix wertet deine erfassten Spiele mit KI aus – auf vier Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison, als Scouting-Profil für einzelne Spieler und für komplette Turniere. Das leistet kein Zettel und keine Excel-Tabelle.",
+      "privacyNote": "Datenschutz eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – und Berichte entstehen im Hintergrund, während du weiterarbeitest.",
       "scopes": [
         {
           "title": "Einzelspiel",
@@ -621,7 +624,8 @@
           "points": [
             "Spielverlauf & kritische Phasen",
             "Wurfzonen-Effizienz",
-            "Wende- & Schlüsselmomente"
+            "Wende- & Schlüsselmomente",
+            "Timeout- & Wechsel-Wirkung"
           ]
         },
         {
@@ -640,6 +644,15 @@
             "Spielertyp & tatsächliche Rolle",
             "Wurfauswahl & Effizienz",
             "Form & Verhalten unter Druck"
+          ]
+        },
+        {
+          "title": "Turnier",
+          "description": "Die KI betrachtet dein ganzes Turnier als Einheit: Verlauf über alle Spiele, auffällige Muster und was am Ende den Unterschied gemacht hat.",
+          "points": [
+            "Analyse über alle Turnierspiele",
+            "Muster über das ganze Turnier",
+            "Erkenntnisse für den nächsten Spieltag"
           ]
         }
       ],
@@ -671,10 +684,289 @@
         {
           "title": "Mannschaften verwalten",
           "description": "Füge Teams hinzu, verwalte Gegner und behalte den Überblick über das ganze Turnier."
+        },
+        {
+          "title": "Spieltagskader wählen",
+          "description": "Wähle beim Start eines Turnierspiels, wer heute dabei ist – die Statistik zählt nur für den echten Kader."
         }
       ],
       "imageOneLabel": "Tabelle & Turniermodus",
       "imageTwoLabel": "Spielplan & Ergebnisse"
+    },
+    "liveTicker": {
+      "eyebrow": "Neu · Live-Ticker",
+      "title": "Die ganze Halle fiebert mit – live",
+      "description": "Veröffentliche dein Spiel als öffentlichen Live-Ticker: Eltern, Fans und Vereinskollegen verfolgen Spielstand und Spielverlauf in Echtzeit im Browser – ganz ohne Account.",
+      "points": [
+        {
+          "title": "Ein Link für alle",
+          "description": "Teile den Ticker-Link in der Insta-Story, im Vereinschat oder in der Familiengruppe – jeder mit dem Link ist live dabei."
+        },
+        {
+          "title": "QR-Code für die Halle",
+          "description": "Zeig den QR-Code am Halleneingang oder auf dem Beamer – Zuschauer scannen ihn und verfolgen das Spiel auf dem eigenen Handy."
+        },
+        {
+          "title": "Spielstand & Verlauf in Echtzeit",
+          "description": "Tore, Zeitstrafen und 7-Meter erscheinen im Ticker, während du sie an der Bank erfasst – inklusive Vereinslogos beider Teams."
+        },
+        {
+          "title": "Du behältst die Kontrolle",
+          "description": "Veröffentlichen und Beenden mit einem Tap. Beendest du den Ticker, ist der Link nicht mehr erreichbar."
+        }
+      ],
+      "mock": {
+        "liveBadge": "Live",
+        "minute": "43:12",
+        "homeTeam": "HSG Statix",
+        "awayTeam": "TV Musterstadt",
+        "homeScore": "24",
+        "awayScore": "21",
+        "feedTitle": "Spielverlauf",
+        "events": [
+          {
+            "minute": "43'",
+            "text": "Tor Nr. 7 – Rückraum Mitte"
+          },
+          {
+            "minute": "41'",
+            "text": "Parade! 7-Meter gehalten"
+          },
+          {
+            "minute": "39'",
+            "text": "2-Minuten-Strafe TV Musterstadt"
+          },
+          {
+            "minute": "38'",
+            "text": "Tempo-Gegenstoß – Tor Nr. 11"
+          }
+        ],
+        "qrLabel": "Scannen & live mitfiebern",
+        "footnote": "So sieht dein Live-Ticker aus – Beispieldaten"
+      }
+    },
+    "collab": {
+      "eyebrow": "Zusammenarbeit",
+      "title": "Statistik, die dein ganzes Team weiterbringt",
+      "description": "Statix ist kein Einzelkämpfer-Tool: Teile Spiele mit Trainerkollegen, hol dein Trainerteam an Bord und binde deine Spieler aktiv ein.",
+      "points": [
+        {
+          "title": "Spiele mit Trainern teilen",
+          "description": "Gib Trainerkollegen Nur-Lese-Zugriff auf Statistik und KI-Analyse eines Spiels – per Link oder E-Mail. Geteilte Spiele landen direkt im Posteingang des Empfängers."
+        },
+        {
+          "title": "Trainerteam einladen",
+          "description": "Lade Co-Trainer per Einladungslink in dein Team ein. Ihr erfasst und analysiert gemeinsam – und der Cheftrainer behält die Verwaltung."
+        },
+        {
+          "title": "Spieler-Umfragen",
+          "description": "Frag Verfügbarkeit, Feedback oder Saisonthemen ab: Umfrage erstellen, Link teilen, fertig. Deine Spieler antworten ohne Account – Ergebnisse siehst du pro Spieler oder pro Frage."
+        },
+        {
+          "title": "Export & Freigabelinks",
+          "description": "Exportiere Auswertungen als PDF oder erstelle Freigabelinks für Kabine und Vorstand – und widerrufe sie jederzeit wieder."
+        }
+      ],
+      "mock": {
+        "inboxTitle": "Posteingang",
+        "inboxUnread": "Neu",
+        "inboxGame": "SG Adler 05 – HSG Statix",
+        "inboxShared": "Geteilt von Coach Alex",
+        "inboxChipStats": "Statistik",
+        "inboxChipAi": "KI-Analyse",
+        "surveyTitle": "Umfrage · Verfügbarkeit Samstag",
+        "surveyAnswered": "9 von 14 Spielern haben geantwortet",
+        "surveyYes": "Ja: 7",
+        "surveyNo": "Nein: 2"
+      }
+    },
+    "allFeatures": {
+      "eyebrow": "Alle Funktionen",
+      "title": "Alles drin – vom Anwurf bis zur Analyse",
+      "description": "Statix wächst mit jedem Spieltag. Das steckt heute schon alles in der App – Funktionen mit „Neu“ sind gerade erst dazugekommen.",
+      "newBadge": "Neu",
+      "groups": [
+        {
+          "title": "Live erfassen",
+          "items": [
+            {
+              "name": "1-Tap-Erfassung",
+              "description": "Tore, Würfe, Paraden, technische Fehler, Strafen und Wechsel – jede Aktion ein Tap.",
+              "isNew": false
+            },
+            {
+              "name": "Schnellmodus",
+              "description": "Für hektische Phasen: Ein-Tap-Gegentor, automatische Wurfposition und Undo direkt aus dem Toast.",
+              "isNew": true
+            },
+            {
+              "name": "Wurfposition & 7-Meter",
+              "description": "Halte fest, von wo geworfen und wohin gezielt wurde – auch bei 7-Metern.",
+              "isNew": false
+            },
+            {
+              "name": "Zeitstrafen im Griff",
+              "description": "2-Minuten-Timer laufen mit und zeigen an, wann ein Spieler zurück aufs Feld darf.",
+              "isNew": true
+            },
+            {
+              "name": "Spiel-Assistent",
+              "description": "Neues Spiel in drei geführten Schritten anlegen – inklusive Spieltagskader-Auswahl.",
+              "isNew": true
+            },
+            {
+              "name": "Aktionen nachbearbeiten",
+              "description": "Korrigiere erfasste Aktionen nach dem Spiel – Schritt für Schritt im Editor.",
+              "isNew": true
+            },
+            {
+              "name": "Offline in der Halle",
+              "description": "Ohne Empfang erfassen – synchronisiert automatisch, sobald du wieder online bist.",
+              "isNew": false
+            },
+            {
+              "name": "Als App installieren",
+              "description": "Statix läuft im Browser und lässt sich als App auf dem Homescreen installieren.",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "title": "Auswerten & verstehen",
+          "items": [
+            {
+              "name": "Spielerstatistiken live",
+              "description": "Tore, Quoten, Assists, Ballgewinne, Blocks und Disziplin – während das Spiel läuft.",
+              "isNew": false
+            },
+            {
+              "name": "Wurfbilder & Heatmaps",
+              "description": "Jeder Wurf auf dem Feld visualisiert – pro Spieler oder fürs ganze Team.",
+              "isNew": false
+            },
+            {
+              "name": "Torwart-Auswertung",
+              "description": "Paradenquote, 7-Meter und Torzonen – für deinen und den gegnerischen Torwart.",
+              "isNew": false
+            },
+            {
+              "name": "Tempo-Auswertung",
+              "description": "Eigene Zahlen für Tempo-Gegenstöße – im Angriff und beim Torwart.",
+              "isNew": true
+            },
+            {
+              "name": "Handball Performance Index",
+              "description": "Eine faire Gesamtnote pro Spiel: Jeder startet bei 100 Punkten, jede Aktion zählt.",
+              "isNew": true
+            },
+            {
+              "name": "Gegner-Bilanz",
+              "description": "Automatische Head-to-Head-Bilanz gegen jeden Gegner – Siege, Tore und Verlauf.",
+              "isNew": true
+            },
+            {
+              "name": "Saison-Trends",
+              "description": "Entwicklungsverläufe über die Saison – für dein Team und jeden einzelnen Spieler.",
+              "isNew": false
+            },
+            {
+              "name": "Dashboard mit Top-Werten",
+              "description": "Top-Torschützen, beste Spieler des letzten Spiels und deine Kennzahlen auf einen Blick.",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "title": "KI-Analyse",
+          "items": [
+            {
+              "name": "Spielanalyse",
+              "description": "Torläufe, Wendepunkte, Druckphasen und konkrete Trainingsempfehlungen pro Spiel.",
+              "isNew": false
+            },
+            {
+              "name": "Team-Analyse",
+              "description": "Trends, Rollen und wiederkehrende Muster über mehrere Spiele hinweg.",
+              "isNew": false
+            },
+            {
+              "name": "Spieler-Scouting",
+              "description": "Ein Profil pro Spieler: Spielertyp, Wurfauswahl, Form und Verhalten unter Druck.",
+              "isNew": false
+            },
+            {
+              "name": "Turnier-Analyse",
+              "description": "Die KI wertet dein ganzes Turnier über alle Spiele hinweg aus.",
+              "isNew": true
+            },
+            {
+              "name": "Visuelle Dashboards",
+              "description": "Interaktive Charts, Verlaufsgrafiken und Wurfzonen direkt im KI-Bericht.",
+              "isNew": true
+            },
+            {
+              "name": "Timeout- & Wechsel-Wirkung",
+              "description": "Was haben Auszeiten und Wechsel wirklich gebracht? Die KI rechnet es nach.",
+              "isNew": true
+            },
+            {
+              "name": "Berichte im Hintergrund",
+              "description": "Analysen entstehen im Hintergrund mit Live-Fortschritt – du arbeitest einfach weiter.",
+              "isNew": true
+            },
+            {
+              "name": "Datenschutz eingebaut",
+              "description": "Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen.",
+              "isNew": true
+            }
+          ]
+        },
+        {
+          "title": "Team & Organisation",
+          "items": [
+            {
+              "name": "Live-Ticker",
+              "description": "Spiele als öffentlichen Live-Ticker teilen – mit Link und QR-Code für die Halle.",
+              "isNew": true
+            },
+            {
+              "name": "Posteingang",
+              "description": "Von anderen Trainern geteilte Spiele landen übersichtlich in deinem Posteingang.",
+              "isNew": true
+            },
+            {
+              "name": "Trainerteam",
+              "description": "Lade Co-Trainer ein und arbeitet gemeinsam am selben Team.",
+              "isNew": true
+            },
+            {
+              "name": "Spieler-Umfragen",
+              "description": "Verfügbarkeit oder Feedback abfragen – Spieler antworten per Link, ohne Account.",
+              "isNew": true
+            },
+            {
+              "name": "Kader als Kartenalbum",
+              "description": "Spielerkarten mit echten Werten, Sticker-Sammlung und Taktikboard zum Aufstellen.",
+              "isNew": true
+            },
+            {
+              "name": "Turniermodus",
+              "description": "Turniere mit mehreren Teams, automatischer Tabelle und Spielplan.",
+              "isNew": false
+            },
+            {
+              "name": "Teilen & PDF-Export",
+              "description": "Auswertungen als Freigabelink oder PDF – jederzeit widerrufbar.",
+              "isNew": false
+            },
+            {
+              "name": "Deutsch & Englisch",
+              "description": "Die ganze App auf Deutsch und Englisch – wechsle jederzeit die Sprache.",
+              "isNew": false
+            }
+          ]
+        }
+      ]
     },
     "how": {
       "eyebrow": "So einfach geht es",
@@ -758,6 +1050,22 @@
         {
           "question": "Kann ich Statistiken mit meinem Team teilen?",
           "answer": "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwicklungsverläufe – als Link oder PDF-Export."
+        },
+        {
+          "question": "Können Eltern und Fans ein Spiel live verfolgen?",
+          "answer": "Ja. Veröffentliche dein Spiel als öffentlichen Live-Ticker und teile den Link oder QR-Code – perfekt für den Vereinschat, die Insta-Story oder den Beamer in der Halle. Jeder mit dem Link verfolgt Spielstand und Spielverlauf live im Browser, ganz ohne Account. Nach dem Spiel beendest du den Ticker mit einem Tap, dann ist der Link nicht mehr erreichbar."
+        },
+        {
+          "question": "Kann ich Spiele mit anderen Trainern teilen?",
+          "answer": "Ja. Du gibst Trainerkollegen Nur-Lese-Zugriff auf Statistik und KI-Analyse eines Spiels – per Link oder E-Mail. Geteilte Spiele erscheinen direkt im Statix-Posteingang des Empfängers. Zusätzlich kannst du Co-Trainer fest in dein Team einladen, sodass ihr gemeinsam erfasst und analysiert."
+        },
+        {
+          "question": "Was kann ich mit den Spieler-Umfragen machen?",
+          "answer": "Frag Verfügbarkeit, Feedback oder Themen wie Trainingszeiten ab: Du erstellst die Umfrage in Statix und teilst einen Link. Deine Spieler wählen ihren Namen und antworten direkt im Browser – ohne Account. Die Ergebnisse siehst du übersichtlich pro Spieler oder pro Frage, inklusive Durchschnittswerten bei Skalen-Fragen."
+        },
+        {
+          "question": "Was passiert bei der KI-Analyse mit den Daten meiner Spieler?",
+          "answer": "Datenschutz ist eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – die Analyse arbeitet mit neutralen Kürzeln statt echten Namen. KI-Berichte kannst du jederzeit wieder löschen, und du entscheidest selbst, welche Auswertungen du teilst."
         },
         {
           "question": "Was kostet Statix?",

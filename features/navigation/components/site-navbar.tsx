@@ -77,7 +77,7 @@ export default function SiteNavbar({
             )}
           />
 
-          <div className='relative z-10 hidden min-w-0 flex-1 lg:block lg:w-60 lg:flex-none'>
+          <div className='relative z-10 hidden min-w-0 flex-1 lg:block lg:w-44 lg:flex-none xl:w-60'>
             <button
               type='button'
               onClick={handleBrandClick}
@@ -137,7 +137,9 @@ export default function SiteNavbar({
                     aria-current={active ? 'page' : undefined}
                     onMouseEnter={() => setHoveredIdent(item.ident)}
                     className={cn(
-                      'relative inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200',
+                      'relative inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
+                      // The logo already links home; keep the crowded lg row lean.
+                      item.labelKey === 'home' && 'hidden xl:inline-flex',
                       highlighted
                         ? 'text-slate-950'
                         : item.external

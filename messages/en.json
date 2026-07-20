@@ -9,6 +9,7 @@
     "product": {
       "demo": "Live demo",
       "features": "All features",
+      "liveTicker": "Live ticker",
       "how": "How it works",
       "ratgeber": "Guide",
       "faq": "Frequently asked questions",
@@ -222,6 +223,7 @@
       "howItWorks": "How it works",
       "ai": "AI analysis",
       "tournament": "Tournament",
+      "liveTicker": "Live ticker",
       "faq": "FAQ",
       "contact": "Contact",
       "impressum": "Legal"
@@ -600,20 +602,21 @@
         },
         {
           "badge": "Team & roster",
-          "title": "Team & roster management",
-          "description": "Manage players, jersey numbers and positions in one place. Build the matchday roster and reuse the same profiles across every game."
+          "title": "Your roster as a card album",
+          "description": "Manage players, jersey numbers and positions as an interactive card album: player cards with values from real games, stickers for standout performances and a tactics board to set up your team."
         },
         {
           "badge": "Export & share",
           "title": "Share your analysis – with team & coaching staff",
-          "description": "Share stats and reports with your coaching staff and team, or export them for the debrief – the finished analysis is just one tap away."
+          "description": "Share stats and AI reports via share link or PDF – or directly with another coach, whose inbox the game lands in. The finished analysis is just one tap away."
         }
       ]
     },
     "ai": {
       "eyebrow": "AI analysis",
       "title": "AI analyses that explain why – not just what",
-      "description": "Statix analyses your recorded games with AI on three levels: for every single game, for your whole team across the season, and as a scouting profile for individual players. No notepad or spreadsheet can do that.",
+      "description": "Statix analyses your recorded games with AI on four levels: for every single game, for your whole team across the season, as a scouting profile for individual players, and for entire tournaments. No notepad or spreadsheet can do that.",
+      "privacyNote": "Privacy built in: player names are pseudonymised before any data reaches an AI – and reports are generated in the background while you keep working.",
       "scopes": [
         {
           "title": "Single game",
@@ -621,7 +624,8 @@
           "points": [
             "Game flow & critical phases",
             "Shot-zone efficiency",
-            "Turning points & key moments"
+            "Turning points & key moments",
+            "Timeout & substitution impact"
           ]
         },
         {
@@ -640,6 +644,15 @@
             "Player type & actual role",
             "Shot selection & efficiency",
             "Form & behaviour under pressure"
+          ]
+        },
+        {
+          "title": "Tournament",
+          "description": "The AI looks at your whole tournament as one unit: the arc across all games, notable patterns and what made the difference in the end.",
+          "points": [
+            "Analysis across all tournament games",
+            "Patterns across the whole tournament",
+            "Takeaways for the next matchday"
           ]
         }
       ],
@@ -671,10 +684,289 @@
         {
           "title": "Manage teams",
           "description": "Add teams, manage opponents and keep an overview of the whole tournament."
+        },
+        {
+          "title": "Pick the matchday squad",
+          "description": "When starting a tournament game, choose who is actually there today – stats only count for the real squad."
         }
       ],
       "imageOneLabel": "Standings & tournament mode",
       "imageTwoLabel": "Fixtures & results"
+    },
+    "liveTicker": {
+      "eyebrow": "New · Live ticker",
+      "title": "The whole gym follows along – live",
+      "description": "Publish your game as a public live ticker: parents, fans and club mates follow the score and game flow in real time in their browser – no account needed.",
+      "points": [
+        {
+          "title": "One link for everyone",
+          "description": "Share the ticker link in your Insta story, the club chat or the family group – anyone with the link is right there with you."
+        },
+        {
+          "title": "QR code for the gym",
+          "description": "Show the QR code at the entrance or on the projector – spectators scan it and follow the game on their own phone."
+        },
+        {
+          "title": "Score & game flow in real time",
+          "description": "Goals, suspensions and 7-metre throws appear in the ticker as you record them on the bench – including both club logos."
+        },
+        {
+          "title": "You stay in control",
+          "description": "Publish and end with one tap. Once you end the ticker, the link is no longer reachable."
+        }
+      ],
+      "mock": {
+        "liveBadge": "Live",
+        "minute": "43:12",
+        "homeTeam": "HSG Statix",
+        "awayTeam": "TV Musterstadt",
+        "homeScore": "24",
+        "awayScore": "21",
+        "feedTitle": "Game flow",
+        "events": [
+          {
+            "minute": "43'",
+            "text": "Goal no. 7 – centre back court"
+          },
+          {
+            "minute": "41'",
+            "text": "Save! 7-metre stopped"
+          },
+          {
+            "minute": "39'",
+            "text": "2-minute suspension TV Musterstadt"
+          },
+          {
+            "minute": "38'",
+            "text": "Fast break – goal no. 11"
+          }
+        ],
+        "qrLabel": "Scan & follow live",
+        "footnote": "This is what your live ticker looks like – sample data"
+      }
+    },
+    "collab": {
+      "eyebrow": "Collaboration",
+      "title": "Stats that move your whole team forward",
+      "description": "Statix is not a lone-wolf tool: share games with fellow coaches, bring your coaching staff on board and actively involve your players.",
+      "points": [
+        {
+          "title": "Share games with coaches",
+          "description": "Give fellow coaches read-only access to a game's stats and AI analysis – via link or email. Shared games land right in the recipient's inbox."
+        },
+        {
+          "title": "Invite your coaching staff",
+          "description": "Invite assistant coaches to your team with an invite link. You record and analyse together – and the head coach stays in charge of management."
+        },
+        {
+          "title": "Player surveys",
+          "description": "Ask about availability, feedback or season topics: create a survey, share a link, done. Your players answer without an account – you see results per player or per question."
+        },
+        {
+          "title": "Export & share links",
+          "description": "Export analyses as PDF or create share links for the locker room and the board – and revoke them at any time."
+        }
+      ],
+      "mock": {
+        "inboxTitle": "Inbox",
+        "inboxUnread": "New",
+        "inboxGame": "SG Adler 05 – HSG Statix",
+        "inboxShared": "Shared by Coach Alex",
+        "inboxChipStats": "Stats",
+        "inboxChipAi": "AI analysis",
+        "surveyTitle": "Survey · Availability Saturday",
+        "surveyAnswered": "9 of 14 players have answered",
+        "surveyYes": "Yes: 7",
+        "surveyNo": "No: 2"
+      }
+    },
+    "allFeatures": {
+      "eyebrow": "All features",
+      "title": "Everything included – from throw-off to analysis",
+      "description": "Statix grows with every matchday. All of this is already in the app – features marked “New” have just landed.",
+      "newBadge": "New",
+      "groups": [
+        {
+          "title": "Track live",
+          "items": [
+            {
+              "name": "1-tap tracking",
+              "description": "Goals, shots, saves, technical errors, penalties and substitutions – every action is one tap.",
+              "isNew": false
+            },
+            {
+              "name": "Quick mode",
+              "description": "For hectic phases: one-tap opponent goal, automatic shot position and undo right from the toast.",
+              "isNew": true
+            },
+            {
+              "name": "Shot position & 7-metre",
+              "description": "Record where a shot was taken from and where it was aimed – including 7-metre throws.",
+              "isNew": false
+            },
+            {
+              "name": "Suspensions under control",
+              "description": "2-minute timers run along and show when a player may return to the court.",
+              "isNew": true
+            },
+            {
+              "name": "Game wizard",
+              "description": "Create a new game in three guided steps – including matchday squad selection.",
+              "isNew": true
+            },
+            {
+              "name": "Edit actions afterwards",
+              "description": "Correct recorded actions after the game – step by step in the editor.",
+              "isNew": true
+            },
+            {
+              "name": "Offline in the gym",
+              "description": "Track without reception – syncs automatically as soon as you are back online.",
+              "isNew": false
+            },
+            {
+              "name": "Install as an app",
+              "description": "Statix runs in the browser and installs as an app on your home screen.",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "title": "Analyse & understand",
+          "items": [
+            {
+              "name": "Live player stats",
+              "description": "Goals, percentages, assists, ball wins, blocks and discipline – while the game is running.",
+              "isNew": false
+            },
+            {
+              "name": "Shot maps & heatmaps",
+              "description": "Every shot visualised on the court – per player or for the whole team.",
+              "isNew": false
+            },
+            {
+              "name": "Goalkeeper analysis",
+              "description": "Save rate, 7-metre throws and goal zones – for your keeper and the opponent's.",
+              "isNew": false
+            },
+            {
+              "name": "Fast-break breakdown",
+              "description": "Dedicated numbers for fast breaks – in attack and for the goalkeeper.",
+              "isNew": true
+            },
+            {
+              "name": "Handball Performance Index",
+              "description": "One fair overall rating per game: everyone starts at 100 points, every action counts.",
+              "isNew": true
+            },
+            {
+              "name": "Opponent record",
+              "description": "Automatic head-to-head record against every opponent – wins, goals and history.",
+              "isNew": true
+            },
+            {
+              "name": "Season trends",
+              "description": "Progress over the season – for your team and every single player.",
+              "isNew": false
+            },
+            {
+              "name": "Dashboard with top stats",
+              "description": "Top scorers, best players of the last game and your key numbers at a glance.",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "title": "AI analysis",
+          "items": [
+            {
+              "name": "Match analysis",
+              "description": "Scoring runs, turning points, pressure phases and concrete training recommendations per game.",
+              "isNew": false
+            },
+            {
+              "name": "Team analysis",
+              "description": "Trends, roles and recurring patterns across several games.",
+              "isNew": false
+            },
+            {
+              "name": "Player scouting",
+              "description": "One profile per player: player type, shot selection, form and behaviour under pressure.",
+              "isNew": false
+            },
+            {
+              "name": "Tournament analysis",
+              "description": "The AI analyses your entire tournament across all its games.",
+              "isNew": true
+            },
+            {
+              "name": "Visual dashboards",
+              "description": "Interactive charts, trend graphics and shot zones right inside the AI report.",
+              "isNew": true
+            },
+            {
+              "name": "Timeout & substitution impact",
+              "description": "What did timeouts and substitutions really change? The AI does the maths.",
+              "isNew": true
+            },
+            {
+              "name": "Reports in the background",
+              "description": "Analyses are generated in the background with live progress – you just keep working.",
+              "isNew": true
+            },
+            {
+              "name": "Privacy built in",
+              "description": "Player names are pseudonymised before any data reaches an AI.",
+              "isNew": true
+            }
+          ]
+        },
+        {
+          "title": "Team & organisation",
+          "items": [
+            {
+              "name": "Live ticker",
+              "description": "Share games as a public live ticker – with a link and QR code for the gym.",
+              "isNew": true
+            },
+            {
+              "name": "Inbox",
+              "description": "Games shared by other coaches land neatly in your inbox.",
+              "isNew": true
+            },
+            {
+              "name": "Coaching staff",
+              "description": "Invite assistant coaches and work on the same team together.",
+              "isNew": true
+            },
+            {
+              "name": "Player surveys",
+              "description": "Ask about availability or feedback – players answer via link, no account needed.",
+              "isNew": true
+            },
+            {
+              "name": "Roster as a card album",
+              "description": "Player cards with real values, a sticker collection and a tactics board for your line-up.",
+              "isNew": true
+            },
+            {
+              "name": "Tournament mode",
+              "description": "Tournaments with several teams, automatic standings and fixtures.",
+              "isNew": false
+            },
+            {
+              "name": "Share & PDF export",
+              "description": "Analyses as a share link or PDF – revocable at any time.",
+              "isNew": false
+            },
+            {
+              "name": "German & English",
+              "description": "The whole app in German and English – switch languages at any time.",
+              "isNew": false
+            }
+          ]
+        }
+      ]
     },
     "how": {
       "eyebrow": "It's that simple",
@@ -758,6 +1050,22 @@
         {
           "question": "Can I share stats with my team?",
           "answer": "Absolutely. Players and assistant coaches get access to insights, shot maps and progress over time – as a link or PDF export."
+        },
+        {
+          "question": "Can parents and fans follow a game live?",
+          "answer": "Yes. Publish your game as a public live ticker and share the link or QR code – perfect for the club chat, your Insta story or the projector in the gym. Anyone with the link follows the score and game flow live in their browser, no account needed. After the game you end the ticker with one tap and the link stops working."
+        },
+        {
+          "question": "Can I share games with other coaches?",
+          "answer": "Yes. You give fellow coaches read-only access to a game's stats and AI analysis – via link or email. Shared games appear right in the recipient's Statix inbox. You can also invite assistant coaches to join your team permanently, so you record and analyse together."
+        },
+        {
+          "question": "What can I do with player surveys?",
+          "answer": "Ask about availability, feedback or topics like training times: you create the survey in Statix and share a link. Your players pick their name and answer right in the browser – no account needed. You see the results neatly per player or per question, including averages for scale questions."
+        },
+        {
+          "question": "What happens to my players' data in the AI analysis?",
+          "answer": "Privacy is built in: player names are pseudonymised before any data reaches an AI – the analysis works with neutral identifiers instead of real names. You can delete AI reports at any time, and you decide which analyses you share."
         },
         {
           "question": "How much does Statix cost?",
