@@ -259,7 +259,7 @@
         "title": "Preamble",
         "paragraph1": "With the following privacy policy, we would like to inform you about the types of your personal data, also referred to below simply as data, that we process, for what purposes and to what extent. This privacy policy applies to all processing of personal data carried out by us, both in the context of providing our services and especially on our websites, in mobile applications and within external online presences such as our social media profiles, collectively referred to below as the online offering.",
         "paragraph2": "The terms used are gender-neutral.",
-        "updatedAt": "Updated: April 01, 2026"
+        "updatedAt": "Last updated: July 21, 2026"
       },
       "responsibleParty": {
         "title": "Controller",
@@ -276,12 +276,15 @@
           "Content data",
           "Usage data",
           "Meta, communication and procedural data",
-          "Log data"
+          "Log data",
+          "Match and statistics data (e.g. match events, lineups, results)",
+          "Credentials (e.g. email address, password hash)"
         ],
         "affectedPeopleTitle": "Categories of data subjects",
         "affectedPeople": [
           "Communication partners",
-          "Users"
+          "Users (e.g. coaches)",
+          "Players entered by users"
         ],
         "purposesTitle": "Purposes of processing",
         "purposes": [
@@ -293,7 +296,9 @@
           "Feedback",
           "Provision of our online offering and user-friendliness",
           "Information technology infrastructure",
-          "Public relations"
+          "Public relations",
+          "AI-assisted analysis of match and statistics data",
+          "Provision of app features (match recording, statistics, live sharing)"
         ]
       },
       "legalBasis": {
@@ -417,6 +422,174 @@
           {
             "label": "Legal bases:",
             "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR). Performance of a contract and pre-contractual requests (Art. 6 para. 1 sentence 1 lit. b GDPR)."
+          }
+        ]
+      },
+      "appSections": {
+        "title": "Data Processing in the Statix App",
+        "intro": "The following sections describe the processing operations that take place when using the Statix app (web app and installable Progressive Web App).",
+        "sections": [
+          {
+            "title": "Registration and User Account",
+            "paragraphs": [
+              "A user account is required to use the app. During registration we process your name, email address and password; the password is stored exclusively as a cryptographic hash and is never visible to us in plain text. Voluntary answers from the onboarding survey (e.g. competition level, age group, goals) are used to improve our service.",
+              "Your email address is verified via a confirmation link before the first sign-in (double opt-in). To reset your password, we send a time-limited link by email on request. You can request deletion of your user account at any time via the email address stated in the “Controller” section."
+            ],
+            "items": [
+              {
+                "label": "Processed data types:",
+                "value": "Inventory data, contact data, credentials, content data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users (e.g. coaches)."
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Performance of a contract and pre-contractual inquiries (Art. 6 (1) (b) GDPR); for voluntary survey answers: consent (Art. 6 (1) (a) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Team, Player and Match Data",
+            "paragraphs": [
+              "The core function of the app is recording handball match statistics. Users enter data about their team: player names, jersey numbers, positions, as well as match events and statistics derived from them (e.g. goals, shots, saves, suspensions, playing time). Club details and a club logo can optionally be stored.",
+              "This data may also concern persons who do not use the app themselves (in particular players). The user entering the data, or their club, is responsible for informing the persons concerned – in the case of minors, their legal guardians – about the processing and, where required, obtaining their consent. The data is only visible to members of the respective team unless a match is explicitly shared publicly (see below)."
+            ],
+            "items": [
+              {
+                "label": "Processed data types:",
+                "value": "Inventory data, content data, match and statistics data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users; players entered by users."
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Database, File Storage and Error Logs (Supabase)",
+            "paragraphs": [
+              "All app data is stored in a PostgreSQL database operated by the service provider Supabase; club logos are stored in the same provider's object storage. To ensure stable operation we additionally store technical error logs (e.g. error message, affected feature, timestamp). Hosting takes place in the EU (region Frankfurt am Main, Germany)."
+            ],
+            "items": [
+              {
+                "label": "Service provider:",
+                "value": "Supabase, Inc. (USA); hosting region: Frankfurt am Main, Germany (EU)."
+              },
+              {
+                "label": "Privacy policy:",
+                "url": "https://supabase.com/privacy"
+              },
+              {
+                "label": "Data processing agreement incl. standard contractual clauses:",
+                "url": "https://supabase.com/legal/dpa"
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Legitimate interests (Art. 6 (1) (f) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Email Delivery (Brevo)",
+            "paragraphs": [
+              "Transactional emails – such as the registration confirmation, password reset links, team invitations and system notifications – as well as emails related to the contact form and the newsletter are sent via the service provider Brevo. The data processed includes email address, name and the respective message content."
+            ],
+            "items": [
+              {
+                "label": "Service provider:",
+                "value": "Brevo (Sendinblue GmbH), Köpenicker Straße 126, 10179 Berlin, Germany."
+              },
+              {
+                "label": "Privacy policy:",
+                "url": "https://www.brevo.com/legal/privacypolicy/"
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Newsletter",
+            "paragraphs": [
+              "When you subscribe to our newsletter, we process your email address in order to send you information about Statix. Subscription uses a double opt-in procedure: your address is only added to the mailing list after you confirm the link sent to you by email. Subscriptions and unsubscriptions are logged for verification purposes. You can unsubscribe at any time via the link contained in every newsletter or by contacting us."
+            ],
+            "items": [
+              {
+                "label": "Processed data types:",
+                "value": "Contact data, meta, communication and procedural data."
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Consent (Art. 6 (1) (a) GDPR); consent can be withdrawn at any time with effect for the future."
+              }
+            ]
+          },
+          {
+            "title": "AI-Assisted Analyses",
+            "paragraphs": [
+              "At the user's explicit request, the app generates AI-assisted analyses of matches, players and teams. For this purpose we transmit aggregated match and statistics data to the AI providers listed below. Player names are pseudonymized before transmission – they are replaced by neutral placeholders and only resolved again when the result is displayed in the app. The AI providers therefore never receive real names. According to the providers, data transmitted via the API is not used to train their AI models."
+            ],
+            "items": [
+              {
+                "label": "Service providers:",
+                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+              },
+              {
+                "label": "Anthropic privacy policy:",
+                "url": "https://www.anthropic.com/privacy"
+              },
+              {
+                "label": "OpenAI privacy policy:",
+                "url": "https://openai.com/policies/privacy-policy"
+              },
+              {
+                "label": "Basis for third-country transfers:",
+                "value": "EU-US Data Privacy Framework (DPF) and standard contractual clauses."
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Offline Mode and Local Storage on Your Device",
+            "paragraphs": [
+              "The app can be used as a Progressive Web App (PWA) even without an internet connection. For this purpose, match and team data as well as app resources are stored locally on your device (browser IndexedDB and service worker cache) and automatically synchronized with our servers once a connection is available. This local storage is technically required for the offline feature (Section 25 (2) no. 2 of the German TDDDG). The locally stored data remains on your device until you delete the app or browser data."
+            ],
+            "items": [
+              {
+                "label": "Legal basis:",
+                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); Section 25 (2) no. 2 TDDDG (technically required storage)."
+              }
+            ]
+          },
+          {
+            "title": "Public Live Match Sharing",
+            "paragraphs": [
+              "Users can optionally share a match as a public live ticker. The ticker is then accessible without login via a non-guessable link and shows team and player names, jersey numbers, match events and scores of the user's own team; data of opposing players is never published. Sharing is actively initiated by the user, who is responsible for ensuring that the players concerned agree to the publication. Sharing can be ended at any time, after which the ticker is no longer publicly accessible."
+            ],
+            "items": [
+              {
+                "label": "Processed data types:",
+                "value": "Content data, match and statistics data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Players entered by users."
+              },
+              {
+                "label": "Legal basis:",
+                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+              }
+            ]
           }
         ]
       },

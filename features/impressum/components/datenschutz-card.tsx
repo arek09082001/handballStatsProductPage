@@ -14,6 +14,7 @@ export default function DatenschutzCard() {
   const webHostingT = useTranslations('legalPage.privacy.webHosting');
   const cookiesT = useTranslations('legalPage.privacy.cookies');
   const contactRequestsT = useTranslations('legalPage.privacy.contactRequests');
+  const appSectionsT = useTranslations('legalPage.privacy.appSections');
   const dataSubjectRightsT = useTranslations('legalPage.privacy.dataSubjectRights');
   const socialMediaT = useTranslations('legalPage.privacy.socialMedia');
   const dataRetentionT = useTranslations('legalPage.privacy.dataRetention');
@@ -46,6 +47,11 @@ export default function DatenschutzCard() {
     label: string;
     value: string;
   }>;
+  const appSections = appSectionsT.raw('sections') as Array<{
+    title: string;
+    paragraphs: string[];
+    items?: Array<{ label: string; value?: string; url?: string }>;
+  }>;
   const dataSubjectRightsItems = dataSubjectRightsT.raw('items') as Array<{
     title: string;
     description: string;
@@ -69,7 +75,8 @@ export default function DatenschutzCard() {
 
   return (
     <div
-      className='flex w-full items-center justify-center bg-muted pb-12'
+      id='datenschutz'
+      className='flex w-full items-center justify-center bg-muted pb-12 scroll-mt-24'
       data-download-section='datenschutz'>
       <div className='w-full max-w-4xl px-6 sm:px-8'>
         <div className='flex flex-col gap-8 md:gap-6 md:overflow-hidden md:rounded-xl md:bg-background md:p-8 md:shadow-lg'>
@@ -281,6 +288,42 @@ export default function DatenschutzCard() {
                 </p>
               ))}
             </div>
+          </div>
+
+          {/* Datenverarbeitung in der Statix App */}
+          <div className={sectionClassName}>
+            <h2 className='mb-4 text-center text-xl font-semibold text-primary md:text-left'>{appSectionsT('title')}</h2>
+            <p className={`mb-4 ${contentClassName}`}>{appSectionsT('intro')}</p>
+            {appSections.map((section, index) => (
+              <div
+                key={section.title}
+                className={index === 0 ? undefined : 'mt-6 pt-6 border-t border-muted'}>
+                <h3 className='mb-3 text-lg font-semibold'>{section.title}</h3>
+                {section.paragraphs.map(paragraph => (
+                  <p key={paragraph} className={`mb-4 ${contentClassName}`}>{paragraph}</p>
+                ))}
+                {section.items && (
+                  <div className={`space-y-2 ${contentClassName}`}>
+                    {section.items.map(item => (
+                      <p key={item.label}>
+                        <strong>{item.label}</strong>{' '}
+                        {item.url ? (
+                          <a
+                            href={item.url}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className={linkClassName}>
+                            {item.url}
+                          </a>
+                        ) : (
+                          item.value
+                        )}
+                      </p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
 
           {/* Rechte der betroffenen Personen */}

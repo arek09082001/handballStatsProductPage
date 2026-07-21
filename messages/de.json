@@ -259,7 +259,7 @@
         "title": "Präambel",
         "paragraph1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als Daten bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie zum Beispiel unserer Social-Media-Profile (nachfolgend zusammenfassend als Onlineangebot bezeichnet).",
         "paragraph2": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
-        "updatedAt": "Stand: 01. April 2026"
+        "updatedAt": "Stand: 21. Juli 2026"
       },
       "responsibleParty": {
         "title": "Verantwortlicher",
@@ -276,12 +276,15 @@
           "Inhaltsdaten",
           "Nutzungsdaten",
           "Meta-, Kommunikations- und Verfahrensdaten",
-          "Protokolldaten"
+          "Protokolldaten",
+          "Spiel- und Statistikdaten (z. B. Spielereignisse, Aufstellungen, Ergebnisse)",
+          "Zugangsdaten (z. B. E-Mail-Adresse, Passwort-Hash)"
         ],
         "affectedPeopleTitle": "Kategorien betroffener Personen",
         "affectedPeople": [
           "Kommunikationspartner",
-          "Nutzer"
+          "Nutzer (z. B. Trainerinnen und Trainer)",
+          "Von Nutzern erfasste Spielerinnen und Spieler"
         ],
         "purposesTitle": "Zwecke der Verarbeitung",
         "purposes": [
@@ -293,7 +296,9 @@
           "Feedback",
           "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit",
           "Informationstechnische Infrastruktur",
-          "Öffentlichkeitsarbeit"
+          "Öffentlichkeitsarbeit",
+          "KI-gestützte Auswertung von Spiel- und Statistikdaten",
+          "Bereitstellung der App-Funktionen (Spielerfassung, Statistik, Live-Übertragung)"
         ]
       },
       "legalBasis": {
@@ -417,6 +422,174 @@
           {
             "label": "Rechtsgrundlagen:",
             "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+          }
+        ]
+      },
+      "appSections": {
+        "title": "Datenverarbeitung in der Statix App",
+        "intro": "Die folgenden Abschnitte beschreiben die Verarbeitungen, die bei der Nutzung der Statix App (Web-App und installierbare Progressive Web App) stattfinden.",
+        "sections": [
+          {
+            "title": "Registrierung und Nutzerkonto",
+            "paragraphs": [
+              "Für die Nutzung der App ist ein Nutzerkonto erforderlich. Bei der Registrierung verarbeiten wir Name, E-Mail-Adresse und Passwort; das Passwort wird ausschließlich als kryptografischer Hash gespeichert und ist für uns nicht im Klartext einsehbar. Freiwillige Angaben aus der Onboarding-Umfrage (z. B. Spielklasse, Altersklasse, Ziele) nutzen wir zur Verbesserung des Angebots.",
+              "Die E-Mail-Adresse wird vor der ersten Anmeldung über einen Bestätigungslink verifiziert (Double-Opt-In). Zum Zurücksetzen des Passworts versenden wir auf Anfrage einen zeitlich begrenzt gültigen Link per E-Mail. Die Löschung des Nutzerkontos ist jederzeit auf Anfrage über die im Abschnitt „Verantwortlicher“ genannte E-Mail-Adresse möglich."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Bestandsdaten, Kontaktdaten, Zugangsdaten, Inhaltsdaten."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer (z. B. Trainerinnen und Trainer)."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); für freiwillige Umfrageangaben: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Team-, Spieler- und Spieldaten",
+            "paragraphs": [
+              "Kernfunktion der App ist die Erfassung von Handball-Spielstatistiken. Nutzer legen dazu Daten ihrer Mannschaft an: Spielernamen, Trikotnummern, Positionen sowie Spielereignisse und daraus berechnete Statistiken (z. B. Tore, Würfe, Paraden, Zeitstrafen, Spielzeiten). Optional können Vereinsdaten und ein Vereinslogo hinterlegt werden.",
+              "Diese Daten können auch Personen betreffen, die die App nicht selbst nutzen (insbesondere Spielerinnen und Spieler). Der erfassende Nutzer bzw. dessen Verein ist dafür verantwortlich, die betroffenen Personen – bei Minderjährigen deren Erziehungsberechtigte – über die Verarbeitung zu informieren und, soweit erforderlich, deren Einwilligung einzuholen. Die Daten sind nur für die Mitglieder des jeweiligen Teams sichtbar, sofern ein Spiel nicht ausdrücklich öffentlich freigegeben wird (siehe unten)."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Bestandsdaten, Inhaltsdaten, Spiel- und Statistikdaten."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer; von Nutzern erfasste Spielerinnen und Spieler."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Datenbank, Dateispeicher und Fehlerprotokolle (Supabase)",
+            "paragraphs": [
+              "Sämtliche App-Daten werden in einer PostgreSQL-Datenbank des Dienstleisters Supabase gespeichert; Vereinslogos werden im Objektspeicher desselben Dienstleisters abgelegt. Zur Sicherstellung des stabilen Betriebs speichern wir außerdem technische Fehlerprotokolle (z. B. Fehlermeldung, betroffene Funktion, Zeitpunkt). Das Hosting erfolgt in der EU (Region Frankfurt am Main, Deutschland)."
+            ],
+            "items": [
+              {
+                "label": "Dienstanbieter:",
+                "value": "Supabase, Inc. (USA); Hosting-Region: Frankfurt am Main, Deutschland (EU)."
+              },
+              {
+                "label": "Datenschutzerklärung:",
+                "url": "https://supabase.com/privacy"
+              },
+              {
+                "label": "Auftragsverarbeitungsvertrag inkl. Standardvertragsklauseln:",
+                "url": "https://supabase.com/legal/dpa"
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "E-Mail-Versand (Brevo)",
+            "paragraphs": [
+              "Transaktionale E-Mails – etwa die Registrierungsbestätigung, Links zum Zurücksetzen des Passworts, Team-Einladungen und Systembenachrichtigungen – sowie E-Mails im Rahmen des Kontaktformulars und des Newsletters versenden wir über den Dienstleister Brevo. Verarbeitet werden dabei E-Mail-Adresse, Name und der jeweilige Nachrichteninhalt."
+            ],
+            "items": [
+              {
+                "label": "Dienstanbieter:",
+                "value": "Brevo (Sendinblue GmbH), Köpenicker Straße 126, 10179 Berlin, Deutschland."
+              },
+              {
+                "label": "Datenschutzerklärung:",
+                "url": "https://www.brevo.com/de/legal/privacypolicy/"
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Newsletter",
+            "paragraphs": [
+              "Bei Anmeldung zu unserem Newsletter verarbeiten wir Ihre E-Mail-Adresse, um Ihnen Informationen zu Statix zuzusenden. Die Anmeldung erfolgt im Double-Opt-In-Verfahren: Erst nach Bestätigung des per E-Mail zugesandten Links wird die Adresse in den Verteiler aufgenommen. An- und Abmeldungen werden zu Nachweiszwecken protokolliert. Sie können den Newsletter jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an uns abbestellen."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Kontaktdaten, Meta-, Kommunikations- und Verfahrensdaten."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO); der Widerruf ist jederzeit mit Wirkung für die Zukunft möglich."
+              }
+            ]
+          },
+          {
+            "title": "KI-gestützte Analysen",
+            "paragraphs": [
+              "Auf ausdrückliche Anforderung des Nutzers erstellt die App KI-gestützte Auswertungen zu Spielen, Spielern und Teams. Dazu übermitteln wir aggregierte Spiel- und Statistikdaten an die unten genannten KI-Anbieter. Spielernamen werden vor der Übermittlung pseudonymisiert – sie werden durch neutrale Platzhalter ersetzt und erst bei der Anzeige des Ergebnisses in der App wieder aufgelöst. Die KI-Anbieter erhalten somit keine Klarnamen. Nach Angaben der Anbieter werden über die API übermittelte Daten nicht zum Training der KI-Modelle verwendet."
+            ],
+            "items": [
+              {
+                "label": "Dienstanbieter:",
+                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+              },
+              {
+                "label": "Datenschutzerklärung Anthropic:",
+                "url": "https://www.anthropic.com/privacy"
+              },
+              {
+                "label": "Datenschutzerklärung OpenAI:",
+                "url": "https://openai.com/policies/privacy-policy"
+              },
+              {
+                "label": "Grundlage Drittlandtransfers:",
+                "value": "EU-US Data Privacy Framework (DPF) bzw. Standardvertragsklauseln."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Offline-Funktion und lokale Speicherung auf dem Endgerät",
+            "paragraphs": [
+              "Die App ist als Progressive Web App (PWA) auch ohne Internetverbindung nutzbar. Hierzu werden Spiel- und Teamdaten sowie App-Ressourcen lokal auf Ihrem Endgerät gespeichert (IndexedDB und Service-Worker-Cache des Browsers) und bei bestehender Verbindung automatisch mit unseren Servern synchronisiert. Diese lokale Speicherung ist für die Offline-Funktion technisch erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Die lokal gespeicherten Daten verbleiben auf Ihrem Gerät, bis Sie die App- bzw. Browserdaten löschen."
+            ],
+            "items": [
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); § 25 Abs. 2 Nr. 2 TDDDG (technisch erforderliche Speicherung)."
+              }
+            ]
+          },
+          {
+            "title": "Öffentliche Live-Spielübertragung",
+            "paragraphs": [
+              "Nutzer können ein Spiel optional als öffentlichen Live-Ticker freigeben. Der Ticker ist dann unter einem nicht erratbaren Link ohne Anmeldung abrufbar und zeigt Team- und Spielernamen, Trikotnummern, Spielereignisse und Spielstände des eigenen Teams; Daten gegnerischer Spieler werden nicht veröffentlicht. Die Freigabe erfolgt aktiv durch den Nutzer; dieser ist dafür verantwortlich, dass die betroffenen Spielerinnen und Spieler mit der Veröffentlichung einverstanden sind. Die Freigabe kann jederzeit beendet werden; der Ticker ist danach nicht mehr öffentlich abrufbar."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Inhaltsdaten, Spiel- und Statistikdaten."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Von Nutzern erfasste Spielerinnen und Spieler."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              }
+            ]
           }
         ]
       },
