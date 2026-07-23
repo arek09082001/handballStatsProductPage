@@ -45,24 +45,78 @@ export const BRAND_FACTS = [
   },
 ] as const;
 
+/**
+ * Visual product highlights for the brand page. Each entry pairs a real
+ * in-app screenshot (rendered in the faux-browser frame) with a short pitch,
+ * so the page shows the product instead of only describing it. Screenshot
+ * dimensions mirror the ones used by the landing-page showcase so Next.js can
+ * reserve the correct aspect ratio.
+ */
+export const BRAND_HIGHLIGHTS = [
+  {
+    icon: 'record',
+    badge: 'Live erfassen',
+    title: 'Das ganze Spiel per Tap – direkt von der Bank',
+    description:
+      'Tore, Würfe, Paraden, Strafen und Wechsel erfasst du in Echtzeit mit einem Tap. Kein Zettel, keine Strichliste – und trotzdem hast du nach dem Schlusspfiff jede Aktion sauber dokumentiert.',
+    src: '/recordStatsInGame.png',
+    width: 1916,
+    height: 879,
+  },
+  {
+    icon: 'stats',
+    badge: 'Automatisch auswerten',
+    title: 'Spieler- und Mannschaftsstatistiken in Sekunden',
+    description:
+      'Wurfquoten, Effizienz, Spielanteile und Entwicklungsverläufe berechnet Statix automatisch im Hintergrund – für jeden Spieler und das ganze Team, sofort teilbar als Link oder PDF.',
+    src: '/statsTableInGame.png',
+    width: 1896,
+    height: 874,
+  },
+  {
+    icon: 'shots',
+    badge: 'Wurfbilder',
+    title: 'Sieh, wo Tore fallen – und wo nicht',
+    description:
+      'Jeder Wurf landet visuell auf dem Spielfeld. So erkennst du Muster, Lieblingsecken und Schwächen, die in einer reinen Zahlentabelle untergehen.',
+    src: '/shotMaps.png',
+    width: 1900,
+    height: 874,
+  },
+  {
+    icon: 'ai',
+    badge: 'KI-Analyse',
+    title: 'KI-Auswertung für Spiele, Spieler und Turniere',
+    description:
+      'Statix fasst Spiele, Spieler und ganze Turniere in verständlichen Analysen zusammen – mit pseudonymisierten Spielernamen. Stärken, Schwächen und Ansatzpunkte fürs nächste Training auf einen Blick.',
+    src: '/aiAnalyze.png',
+    width: 1032,
+    height: 803,
+  },
+] as const;
+
 /** Who Statix is built for – rendered as audience cards. */
 export const BRAND_AUDIENCES = [
   {
+    icon: 'coach',
     title: 'Trainer & Co-Trainer',
     description:
       'Erfassen Spiele live per Tap von der Bank und treffen Entscheidungen auf Basis echter Zahlen statt Bauchgefühl.',
   },
   {
+    icon: 'club',
     title: 'Vereine',
     description:
       'Bündeln Statistiken, Kader und Saisons aller Mannschaften an einem Ort – vom Jugendbereich bis zur ersten Mannschaft.',
   },
   {
+    icon: 'player',
     title: 'Spielerinnen & Spieler',
     description:
       'Sehen ihre Wurfquoten, Entwicklungsverläufe und Spielerkarten und erkennen, woran sie arbeiten können.',
   },
   {
+    icon: 'fans',
     title: 'Eltern & Fans',
     description:
       'Verfolgen Spiele über den öffentlichen Live-Ticker mit Link oder QR-Code – direkt im Browser, ohne Account.',
