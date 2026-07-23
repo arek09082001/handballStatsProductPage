@@ -8,6 +8,12 @@ export default function WebsiteSchema() {
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
     name: CLUB_CONFIG.fullName,
+    alternateName: [
+      'Statix App',
+      'Statix Handball',
+      'Statix Handball-Statistik-App',
+      'statix-app.de',
+    ],
     url: SITE_URL,
     description: CLUB_CONFIG.seo.description,
     inLanguage: ['de-DE', 'en-GB'],

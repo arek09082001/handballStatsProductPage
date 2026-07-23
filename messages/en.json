@@ -9,6 +9,7 @@
     "product": {
       "demo": "Live demo",
       "features": "All features",
+      "aboutStatix": "What is Statix?",
       "liveTicker": "Live ticker",
       "ratgeber": "Guide",
       "faq": "Frequently asked questions",

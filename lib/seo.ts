@@ -45,6 +45,13 @@ export const SEO_KEYWORDS = Array.from(
         'statix handball',
         'statix app',
         'statix handball statistik',
+        'statix handball app',
+        'was ist statix',
+        'statix statistik app',
+        'statix demo',
+        'statix kostenlos',
+        'statix erfahrungen',
+        'statix-app.de',
         // Conversational / chatbot-style intent queries
         'welche app zum handball statistiken erfassen',
         'beste handball statistik app für trainer',
@@ -99,6 +106,12 @@ export const SITE_LINKS = [
         path: '/ratgeber',
         description:
             'Handball-Ratgeber für Trainer: Wurfquote berechnen, Training planen, Abwehrsysteme, Spielanalyse und mehr – praxisnah erklärt.',
+    },
+    {
+        name: 'Was ist Statix?',
+        path: '/was-ist-statix',
+        description:
+            'Statix im Überblick: die Handball-Statistik-App aus Deutschland – Funktionen, Zielgruppe, Preise und die Geschichte hinter der App.',
     },
 ] as const;
 
