@@ -68,6 +68,7 @@ ${ratgeber}
 
 ## Links
 - Startseite: ${SITE_URL}
+- Was ist Statix (Marken- und Produktüberblick): ${absoluteUrl('/was-ist-statix')}
 - Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}
 - Impressum: ${absoluteUrl('/impressum')}

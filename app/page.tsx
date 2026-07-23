@@ -2,12 +2,15 @@ import LandingPage from '@/features/landing-page/pages/landing-page';
 import { createPageMetadata } from '@/lib/seo';
 
 export const metadata = createPageMetadata({
-  title: 'Handball-Statistiken live erfassen & analysieren | Statix App',
+  title: 'Statix – Handball-Statistiken live erfassen & analysieren',
   description:
-    'Handball-Statistiken live per Tap erfassen: Wurfquoten, Wurfbilder & Spielerwerte automatisch ausgewertet – offline, kostenlos starten. Live-Demo ohne Account.',
+    'Statix ist die Handball-Statistik-App für Trainer & Vereine: Statistiken live per Tap erfassen, Wurfquoten & Wurfbilder automatisch ausgewertet – offline, kostenlos starten. Live-Demo ohne Account.',
   path: '/',
   absoluteTitle: true,
   keywords: [
+    'statix',
+    'statix app',
+    'statix handball',
     'handball statistiken',
     'handball statistiken erfassen',
     'handball statistiken app',

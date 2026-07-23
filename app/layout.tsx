@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'Handball-Statistik-App: Spiele live erfassen & analysieren | Statix',
+      'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
     template: `%s | ${CLUB_CONFIG.fullName}`,
   },
   description: CLUB_CONFIG.seo.description,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: SITE_URL,
-    title: 'Handball-Statistik-App: Spiele live erfassen & analysieren | Statix',
+    title: 'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
     description: CLUB_CONFIG.seo.description,
     siteName: CLUB_CONFIG.fullName,
     images: [
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Handball-Statistik-App: Spiele live erfassen & analysieren | Statix',
+    title: 'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
     description: CLUB_CONFIG.seo.description,
     images: [
       {

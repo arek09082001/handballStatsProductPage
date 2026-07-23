@@ -13,6 +13,7 @@ export default function Footer() {
   const productLinks: { href: string; label: string; external?: boolean }[] = [
     { href: CLUB_CONFIG.website.demoUrl, label: t('product.demo'), external: true },
     { href: '/#all-features', label: t('product.features') },
+    { href: '/was-ist-statix', label: t('product.aboutStatix') },
     { href: '/#liveticker', label: t('product.liveTicker') },
     { href: '/ratgeber', label: t('product.ratgeber') },
     { href: '/#faq', label: t('product.faq') },
