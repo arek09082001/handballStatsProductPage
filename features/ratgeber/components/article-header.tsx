@@ -1,4 +1,5 @@
-import { CalendarDays, Clock, Tag } from 'lucide-react';
+import { CalendarDays, Clock } from 'lucide-react';
+import { BoardKicker, CourtDiagram, Grain } from '@/features/landing-page/components/tactic';
 import ArticleBreadcrumbs, { type Breadcrumb } from './article-breadcrumbs';
 import type { Article } from '../types';
 
@@ -11,8 +12,10 @@ function formatGermanDate(iso: string): string {
 }
 
 /**
- * Dark hero header for a single article. Holds the page's single H1, the
- * category eyebrow, the excerpt lede and a publish-date / reading-time meta row.
+ * Court-ground header for a single article — a signature band of the
+ * Trainertafel world. The handball court is chalked behind the copy; the
+ * category is set as the coach's marker kicker, the H1 in Archivo. Static
+ * server component (no client JS), so the article stays fully crawlable.
  */
 export default function ArticleHeader({
   article,
@@ -24,34 +27,39 @@ export default function ArticleHeader({
   const eyebrow = article.heroEyebrow ?? article.category;
 
   return (
-    <header className='relative isolate w-full overflow-hidden border-b border-border/50 bg-slate-950 text-white'>
-      <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_12%_0%,rgba(249,115,22,0.22),transparent),radial-gradient(ellipse_40%_35%_at_92%_100%,rgba(59,130,246,0.16),transparent)]' />
+    <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
+      <CourtDiagram
+        variant='goal'
+        aria-hidden
+        className='pointer-events-none absolute -right-[14%] top-1/2 h-[130%] w-auto -translate-y-1/2 text-chalk/[0.09] sm:-right-[8%] lg:-right-[2%]'
+      />
+      <Grain tone='court' />
 
-      <div className='relative mx-auto max-w-3xl px-6 py-10 sm:px-8 sm:py-14 md:py-16'>
+      <div className='relative mx-auto max-w-3xl px-6 py-12 sm:px-8 sm:py-16 md:py-20'>
         <ArticleBreadcrumbs items={breadcrumbs} onDark />
 
-        <div className='mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/85'>
-          <Tag className='h-3.5 w-3.5' />
-          {eyebrow}
+        <div className='mt-7'>
+          <BoardKicker color='chalk'>{eyebrow}</BoardKicker>
         </div>
 
-        <h1 className='mt-5 text-3xl font-extrabold tracking-[-0.03em] text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]'>
+        <h1 className='mt-4 font-display text-[2rem] font-extrabold leading-[1.08] tracking-[-0.03em] text-chalk sm:text-[2.5rem] lg:text-[2.9rem] lg:leading-[1.05]'>
           {article.title}
         </h1>
 
-        <p className='mt-4 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg'>
+        <p className='mt-5 max-w-2xl text-base leading-8 text-chalk/75 sm:text-lg'>
           {article.excerpt}
         </p>
 
-        <div className='mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-300'>
+        <div className='mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-chalk/60'>
           <span className='inline-flex items-center gap-2'>
-            <CalendarDays className='h-4 w-4 text-slate-400' />
+            <CalendarDays className='h-4 w-4 text-primary' />
             <time dateTime={article.datePublished}>
               {formatGermanDate(article.datePublished)}
             </time>
           </span>
+          <span aria-hidden className='h-1 w-1 rounded-full bg-chalk/30' />
           <span className='inline-flex items-center gap-2'>
-            <Clock className='h-4 w-4 text-slate-400' />
+            <Clock className='h-4 w-4 text-primary' />
             {article.readingTimeMinutes} Min. Lesezeit
           </span>
         </div>

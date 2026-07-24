@@ -5,39 +5,141 @@
 @source '../node_modules/refine.ui/';
 
 /*
- * Ratgeber article prose – maps the @tailwindcss/typography plugin variables to
- * the Statix brand tokens. Scoped to `.article-prose` so it never leaks into
- * other future `prose` usage. Applied as `class="prose article-prose"`.
+ * Ratgeber article prose — the reading voice of the "Trainertafel" world.
+ * Warm ink on paper, Archivo display headings (matching the landing page), a
+ * marker swipe under each section heading, and the key‑takeaway blockquote
+ * restyled as a note pinned to the board. Scoped to `.article-prose` so it
+ * never leaks into other future `prose` usage. Applied as
+ * `class="prose article-prose"`. See DESIGN.md ("Ratgeber / Read surface").
  */
 .article-prose {
-  --tw-prose-body: hsl(var(--muted-foreground));
-  --tw-prose-headings: hsl(var(--foreground));
-  --tw-prose-lead: hsl(var(--muted-foreground));
+  --tw-prose-body: hsl(var(--ink) / 0.82);
+  --tw-prose-headings: hsl(var(--ink));
+  --tw-prose-lead: hsl(var(--ink) / 0.72);
   --tw-prose-links: hsl(var(--primary));
-  --tw-prose-bold: hsl(var(--foreground));
+  --tw-prose-bold: hsl(var(--ink));
   --tw-prose-counters: hsl(var(--primary));
-  --tw-prose-bullets: hsl(var(--primary) / 0.55);
-  --tw-prose-hr: hsl(var(--border));
-  --tw-prose-quotes: hsl(var(--foreground));
-  --tw-prose-quote-borders: hsl(var(--primary));
-  --tw-prose-captions: hsl(var(--muted-foreground));
-  --tw-prose-code: hsl(var(--foreground));
-  --tw-prose-th-borders: hsl(var(--border));
-  --tw-prose-td-borders: hsl(var(--border));
+  --tw-prose-bullets: hsl(var(--primary) / 0.6);
+  --tw-prose-hr: hsl(var(--ink) / 0.12);
+  --tw-prose-quotes: hsl(var(--ink));
+  --tw-prose-quote-borders: transparent;
+  --tw-prose-captions: hsl(var(--ink) / 0.6);
+  --tw-prose-code: hsl(var(--ink));
+  --tw-prose-th-borders: hsl(var(--ink) / 0.18);
+  --tw-prose-td-borders: hsl(var(--ink) / 0.1);
+  font-size: 1.0625rem;
+  line-height: 1.75;
 }
 
 .article-prose :is(h1, h2, h3, h4) {
-  font-family: var(--font-space-grotesk), Inter, system-ui, sans-serif;
-  letter-spacing: -0.02em;
+  font-family: var(--font-archivo), 'Archivo', Inter, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* Section headings carry a short marker swipe, drawn under the first line —
+ * the board's underline, not a tracked eyebrow or a colored left border. */
+.article-prose > h2 {
+  margin-top: 2.75em;
+  padding-bottom: 0.28em;
+  font-size: 1.6em;
+  line-height: 1.2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='11' viewBox='0 0 300 16' preserveAspectRatio='none'%3E%3Cpath d='M4 10 C 70 4, 150 13, 210 7 C 250 3, 276 9, 296 6' fill='none' stroke='%23f2751a' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 5.25rem 0.7rem;
+}
+
+.article-prose > h3 {
+  margin-top: 2em;
+  font-size: 1.25em;
 }
 
 .article-prose a {
   font-weight: 600;
   text-decoration: none;
+  box-shadow: inset 0 -0.32em 0 hsl(var(--primary) / 0.16);
+  transition: box-shadow 0.2s ease;
 }
 
 .article-prose a:hover {
-  text-decoration: underline;
+  box-shadow: inset 0 -0.62em 0 hsl(var(--primary) / 0.22);
+}
+
+/* Key takeaway (markdown `> …`) — a note taped to the board, not a bordered
+ * quote. Warm paper panel, a marker tick, ink text. */
+.article-prose blockquote {
+  position: relative;
+  margin: 1.9em 0;
+  padding: 1.1rem 1.35rem 1.1rem 2.4rem;
+  border-radius: 0.85rem;
+  background: hsl(var(--paper-2));
+  box-shadow:
+    0 1px 0 hsl(var(--ink) / 0.04),
+    0 14px 34px -26px hsl(var(--ink) / 0.4);
+  font-style: normal;
+  font-weight: 500;
+  color: hsl(var(--ink));
+}
+
+.article-prose blockquote::before {
+  content: '';
+  position: absolute;
+  left: 1.15rem;
+  top: 1.5rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 9999px;
+  background: radial-gradient(
+    120% 120% at 32% 28%,
+    hsl(0 0% 100% / 0.7),
+    hsl(var(--primary)) 60%,
+    hsl(22 90% 36%)
+  );
+  box-shadow: 0 2px 4px -1px hsl(var(--ink) / 0.4);
+}
+
+.article-prose blockquote p {
+  margin: 0;
+}
+
+.article-prose blockquote p::before,
+.article-prose blockquote p::after {
+  content: none;
+}
+
+/* Data tables read as a scoresheet: ink header rule, warm zebra rows,
+ * tabular figures. */
+.article-prose table {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95em;
+}
+
+.article-prose thead th {
+  font-family: var(--font-archivo), 'Archivo', Inter, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: hsl(var(--ink));
+}
+
+.article-prose tbody tr:nth-child(odd) {
+  background: hsl(var(--paper-2) / 0.6);
+}
+
+.article-prose tbody td {
+  padding-top: 0.55em;
+  padding-bottom: 0.55em;
+}
+
+/* List markers in the coach's marker colour. */
+.article-prose ul > li::marker {
+  color: hsl(var(--primary) / 0.65);
+}
+
+.article-prose ol > li::marker {
+  font-family: var(--font-archivo), 'Archivo', Inter, system-ui, sans-serif;
+  font-weight: 700;
+  color: hsl(var(--primary));
 }
 
 @theme {
