@@ -74,7 +74,7 @@ export default function ContactSection() {
   };
 
   const inputClassName =
-    'h-12 w-full rounded-xl border border-ink/15 bg-white pl-10 pr-3.5 text-sm text-ink outline-none transition-all duration-200 placeholder:text-ink/40 hover:border-ink/25 focus:border-primary focus:ring-2 focus:ring-primary/25';
+    'h-12 w-full rounded-xl border border-ink/15 bg-white pl-10 pr-3.5 text-sm text-ink outline-none transition-all duration-200 placeholder:text-ink/60 hover:border-ink/25 focus:border-primary focus:ring-2 focus:ring-primary/25';
 
   return (
     <section
@@ -165,7 +165,7 @@ export default function ContactSection() {
                   value={message}
                   onChange={(event) => setMessage(event.target.value)}
                   placeholder={t('messagePlaceholder')}
-                  className='w-full resize-none rounded-xl border border-ink/15 bg-white px-3.5 py-3 text-sm text-ink outline-none transition-all duration-200 placeholder:text-ink/40 hover:border-ink/25 focus:border-primary focus:ring-2 focus:ring-primary/25'
+                  className='w-full resize-none rounded-xl border border-ink/15 bg-white px-3.5 py-3 text-sm text-ink outline-none transition-all duration-200 placeholder:text-ink/60 hover:border-ink/25 focus:border-primary focus:ring-2 focus:ring-primary/25'
                 />
               </div>
 
@@ -203,7 +203,7 @@ export default function ContactSection() {
               <Button
                 type='submit'
                 disabled={contactMutation.isPending || !isFormValid}
-                className='inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 font-display text-sm font-bold text-white shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-paper active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60'>
+                className='inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 font-display text-sm font-bold text-white shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-paper active:scale-[0.98] disabled:pointer-events-none disabled:bg-ink/10 disabled:text-ink/40'>
                 <Send className='size-4' />
                 {contactMutation.isPending ? t('pending') : t('button')}
               </Button>

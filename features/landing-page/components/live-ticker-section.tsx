@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Activity, Link2, QrCode, ShieldCheck } from 'lucide-react';
+import { QrCode } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-import { BoardCard, Grain, SectionHeading } from './tactic';
+import { BoardCard, Grain, PlayerMagnet, SectionHeading } from './tactic';
 
 interface Point {
   title: string;
@@ -16,8 +16,6 @@ interface TickerEvent {
   minute: string;
   text: string;
 }
-
-const POINT_ICONS = [Link2, QrCode, Activity, ShieldCheck];
 
 /** Accent per mock feed row: goal (marker), save (whistle), penalty (pending). */
 const EVENT_DOTS = ['bg-primary', 'bg-success', 'bg-pending', 'bg-primary'];
@@ -79,24 +77,19 @@ export default function LiveTickerSection() {
               description={t('description')}
             />
             <div className='mt-10'>
-              {points.map((point, index) => {
-                const Icon = POINT_ICONS[index % POINT_ICONS.length];
-                return (
-                  <div
-                    key={point.title}
-                    className='flex items-start gap-4 border-t border-chalk/12 py-5'>
-                    <span className='flex size-10 shrink-0 items-center justify-center rounded-xl border border-chalk/15 bg-chalk/5 text-primary'>
-                      <Icon className='size-5' />
-                    </span>
-                    <div>
-                      <p className='font-display text-lg font-bold tracking-tight text-chalk'>
-                        {point.title}
-                      </p>
-                      <p className='mt-1 text-sm leading-7 text-chalk/70'>{point.description}</p>
-                    </div>
+              {points.map((point, index) => (
+                <div
+                  key={point.title}
+                  className='flex items-start gap-4 border-t border-chalk/12 py-5'>
+                  <PlayerMagnet number={index + 1} team='home' size='md' className='shrink-0' />
+                  <div>
+                    <p className='font-display text-lg font-bold tracking-tight text-chalk'>
+                      {point.title}
+                    </p>
+                    <p className='mt-1 text-sm leading-7 text-chalk/70'>{point.description}</p>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
 

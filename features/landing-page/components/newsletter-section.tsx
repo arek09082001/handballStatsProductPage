@@ -114,7 +114,7 @@ export default function NewsletterSection() {
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
                     placeholder={t('placeholder')}
-                    className='h-12 w-full rounded-xl border border-chalk/15 bg-court pl-10 pr-3.5 text-sm text-chalk outline-none transition-all duration-200 placeholder:text-chalk/40 hover:border-chalk/25 focus:border-primary focus:ring-2 focus:ring-primary/30'
+                    className='h-12 w-full rounded-xl border border-chalk/15 bg-court pl-10 pr-3.5 text-sm text-chalk outline-none transition-all duration-200 placeholder:text-chalk/60 hover:border-chalk/25 focus:border-primary focus:ring-2 focus:ring-primary/30'
                   />
                 </div>
 
@@ -152,7 +152,7 @@ export default function NewsletterSection() {
                 <Button
                   type='submit'
                   disabled={newsletterMutation.isPending || !isFormValid}
-                  className='mt-4 inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-4 font-display text-sm font-bold text-white shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60'>
+                  className='mt-4 inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-4 font-display text-sm font-bold text-white shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:scale-[0.98] disabled:pointer-events-none disabled:bg-chalk/15 disabled:text-chalk/45'>
                   {newsletterMutation.isPending ? t('pending') : t('button')}
                 </Button>
 

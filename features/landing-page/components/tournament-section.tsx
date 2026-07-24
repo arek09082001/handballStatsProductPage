@@ -1,17 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ListChecks, PlayCircle, Table2, UserCheck, Users } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
-import { BoardScreenshot, Grain, SectionHeading } from './tactic';
+import { BoardScreenshot, Grain, PlayerMagnet, SectionHeading } from './tactic';
 
 interface Point {
   title: string;
   description: string;
 }
-
-const POINT_ICONS = [Table2, PlayCircle, ListChecks, Users, UserCheck];
 
 export default function TournamentSection() {
   const t = useTranslations('productPage.tournament');
@@ -56,24 +53,19 @@ export default function TournamentSection() {
               description={t('description')}
             />
             <div className='mt-10'>
-              {points.map((point, index) => {
-                const Icon = POINT_ICONS[index % POINT_ICONS.length];
-                return (
-                  <div
-                    key={point.title}
-                    className='flex items-start gap-4 border-t border-ink/10 py-5'>
-                    <span className='flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary'>
-                      <Icon className='size-5' />
-                    </span>
-                    <div>
-                      <p className='font-display text-lg font-bold tracking-tight text-ink'>
-                        {point.title}
-                      </p>
-                      <p className='mt-1 text-sm leading-7 text-ink/70'>{point.description}</p>
-                    </div>
+              {points.map((point, index) => (
+                <div
+                  key={point.title}
+                  className='flex items-start gap-4 border-t border-ink/10 py-5'>
+                  <PlayerMagnet number={index + 1} team='home' size='md' className='shrink-0' />
+                  <div>
+                    <p className='font-display text-lg font-bold tracking-tight text-ink'>
+                      {point.title}
+                    </p>
+                    <p className='mt-1 text-sm leading-7 text-ink/70'>{point.description}</p>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
 

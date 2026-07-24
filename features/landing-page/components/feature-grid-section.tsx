@@ -74,7 +74,7 @@ export default function FeatureGridSection() {
                   {group.title}
                 </h3>
                 <p className='mt-3 max-w-[36ch] text-sm leading-6 text-ink/70'>{group.tagline}</p>
-                <p className='mt-5 font-hand text-lg text-ink/45'>
+                <p className='mt-5 font-hand text-lg text-ink/60'>
                   {t('countLabel', { count: group.items.length })}
                 </p>
               </div>

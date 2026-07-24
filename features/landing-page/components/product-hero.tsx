@@ -16,7 +16,6 @@ import {
   Grain,
   MarkerArrow,
   MarkerUnderline,
-  PlayerMagnet,
 } from './tactic';
 import { drawMarkers } from './tactic/draw';
 
@@ -46,16 +45,15 @@ export default function ProductHero() {
         aria-hidden
         className='pointer-events-none absolute inset-0 bg-[radial-gradient(120%_90%_at_15%_0%,hsl(200_42%_20%),transparent_60%)]'
       />
+      {/* A real setup chalked on the board: opponent 6:0 + keeper vs. your
+          attack with a pivot at the line — a play, not scattered magnets. */}
       <CourtDiagram
+        variant='goal'
+        formation
+        formationOpacity={0.32}
         aria-hidden
-        className='pointer-events-none absolute -left-24 bottom-[-14%] h-[135%] w-auto text-chalk/[0.16] sm:-left-10 lg:left-[-4%]'
+        className='pointer-events-none absolute -left-[22%] top-1/2 h-[86%] w-auto -translate-y-1/2 text-chalk/[0.13] sm:-left-[14%] lg:-left-[8%]'
       />
-      <div className='pointer-events-none absolute right-[7%] top-[22%] hidden lg:block'>
-        <PlayerMagnet number={7} team='home' size='lg' className='rotate-[-6deg]' />
-      </div>
-      <div className='pointer-events-none absolute bottom-[14%] left-[9%] hidden lg:block'>
-        <PlayerMagnet number={4} team='away' size='md' className='rotate-[8deg]' />
-      </div>
       <Grain tone='court' />
 
       <div className='relative mx-auto flex min-h-[calc(100svh-1rem)] max-w-7xl flex-col items-center gap-12 px-6 pb-16 pt-28 sm:px-10 lg:flex-row lg:items-center lg:gap-14 lg:pb-20 lg:pt-32'>

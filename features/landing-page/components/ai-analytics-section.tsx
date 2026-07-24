@@ -1,17 +1,15 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ShieldCheck, TrendingUp, Trophy, User, Users } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
-import { BoardScreenshot, CourtDiagram, Grain, SectionHeading } from './tactic';
+import { BoardScreenshot, CourtDiagram, Grain, PlayerMagnet, SectionHeading } from './tactic';
 
 interface Scope {
   title: string;
   description: string;
 }
-
-const SCOPE_ICONS = [TrendingUp, Users, User, Trophy];
 
 export default function AiAnalyticsSection() {
   const t = useTranslations('productPage.ai');
@@ -73,27 +71,22 @@ export default function AiAnalyticsSection() {
 
         {/* Four scopes as scouting entries — hairline‑ruled, no card chrome */}
         <div className='mx-auto mt-16 grid max-w-4xl gap-x-14 sm:grid-cols-2'>
-          {scopes.map((scope, index) => {
-            const Icon = SCOPE_ICONS[index % SCOPE_ICONS.length];
-            return (
-              <div
-                key={scope.title}
-                ref={(el) => {
-                  if (el) scopesRef.current[index] = el;
-                }}
-                className='flex items-start gap-4 border-t border-chalk/12 py-7'>
-                <span className='flex size-11 shrink-0 items-center justify-center rounded-xl border border-chalk/15 bg-chalk/5 text-primary'>
-                  <Icon className='size-5' />
-                </span>
-                <div>
-                  <p className='font-display text-lg font-bold tracking-tight text-chalk'>
-                    {scope.title}
-                  </p>
-                  <p className='mt-1.5 text-sm leading-7 text-chalk/70'>{scope.description}</p>
-                </div>
+          {scopes.map((scope, index) => (
+            <div
+              key={scope.title}
+              ref={(el) => {
+                if (el) scopesRef.current[index] = el;
+              }}
+              className='flex items-start gap-4 border-t border-chalk/12 py-7'>
+              <PlayerMagnet number={index + 1} team='home' size='md' className='shrink-0' />
+              <div>
+                <p className='font-display text-lg font-bold tracking-tight text-chalk'>
+                  {scope.title}
+                </p>
+                <p className='mt-1.5 text-sm leading-7 text-chalk/70'>{scope.description}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
         <p className='mx-auto mt-14 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-chalk/60'>

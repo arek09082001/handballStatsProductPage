@@ -8,7 +8,7 @@ import { trackDemoClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from './hero-action-button';
 import DemoPreview from './demo-preview';
-import { BoardKicker, CourtDiagram, Grain, MarkerArrow, PlayerMagnet } from './tactic';
+import { BoardKicker, CourtDiagram, Grain, MarkerArrow } from './tactic';
 import { drawMarkers } from './tactic/draw';
 
 function scrollToNewsletter() {
@@ -50,12 +50,12 @@ export default function FinalCTASection() {
       id='demo'
       className='relative w-full scroll-mt-24 overflow-hidden bg-court py-24 text-chalk md:py-32'>
       <CourtDiagram
+        variant='goal'
+        formation
+        formationOpacity={0.28}
         aria-hidden
-        className='pointer-events-none absolute -right-16 top-1/2 h-[130%] w-auto -translate-y-1/2 -scale-x-100 text-chalk/[0.08]'
+        className='pointer-events-none absolute -left-[16%] top-1/2 h-[104%] w-auto -translate-y-1/2 text-chalk/[0.1] sm:-left-[10%] lg:-left-[4%]'
       />
-      <div className='pointer-events-none absolute left-[8%] top-[18%] hidden lg:block'>
-        <PlayerMagnet number={9} team='home' size='md' className='rotate-[-8deg]' />
-      </div>
       <Grain tone='court' />
 
       <div
@@ -75,10 +75,10 @@ export default function FinalCTASection() {
 
           <div className='relative mt-9 flex flex-col items-center gap-3 sm:flex-row lg:justify-start'>
             <MarkerArrow
-              variant='hook'
+              variant='curve'
               color='marker'
               aria-hidden
-              className='absolute -top-12 left-1/2 hidden h-14 w-24 -translate-x-1/2 rotate-6 sm:left-32 lg:block'
+              className='absolute -top-11 left-6 hidden h-14 w-28 lg:block'
             />
             <HeroActionButton
               variant='primary'

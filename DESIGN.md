@@ -67,13 +67,16 @@ logic (orange = us, blue = them) is a system rule, not a palette accident.
 
 ## Signature primitives (`features/landing-page/components/tactic/`)
 
-- **CourtDiagram** — SVG handball court (6‑m goal‑area arc, 9‑m dashed free‑throw
-  line, centre line, goal). Chalk strokes on court, ink strokes on paper. The
-  recurring motif: hero canvas, band backgrounds, dividers, final CTA. Strokes
-  may draw on (dash‑offset) on scroll.
+- **CourtDiagram** — SVG handball court to real 40×20 m proportions (6‑m
+  goal‑area arc, 9‑m dashed free‑throw line trimmed to the sideline, centre line,
+  goal). Chalk on court, ink on paper. The recurring motif: hero canvas, band
+  backgrounds, dividers, final CTA. With `formation`, a real setup is chalked on
+  — the opponent's 6:0 defence + keeper (blue) vs. your attack with a pivot at
+  the line (orange) — as calm, organized board‑play, never scattered magnets.
 - **PlayerMagnet** — round token, jersey number in Archivo, team colour (orange
   us / blue them). Restrained magnet look: one soft radial + a thin rim + a real
-  offset shadow. Bullets, avatars, court decoration.
+  offset shadow. Numbered magnets are the point‑list bullet across the operate
+  bands (the coach's roster), replacing generic icon squares.
 - **MarkerArrow** — slightly rough hand‑drawn SVG arrow (orange/blue/chalk) with
   optional draw‑on. Connects steps, points at actions, shows flow.
 - **MarkerLabel / Kicker** — Caveat label, optional marker underline/circle. The
