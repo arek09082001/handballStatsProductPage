@@ -22,7 +22,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className='w-full bg-[#0b1220] text-white'>
+    <footer className='w-full bg-court text-white'>
       <div className='mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-10 lg:py-12'>
         <div className='grid gap-10 border-b border-white/10 pb-8 lg:grid-cols-[1.4fr_0.8fr_0.8fr_1.2fr] lg:gap-12'>
           <div className='space-y-5'>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className='mb-4 text-sm font-semibold text-white'>{t('headings.product')}</p>
+            <p className='mb-4 font-display text-sm font-bold text-white'>{t('headings.product')}</p>
             <div className='space-y-3'>
               {productLinks.map((item) => (
                 <Link
@@ -58,7 +58,7 @@ export default function Footer() {
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
                   onClick={item.external ? () => trackDemoClick('footer') : undefined}
-                  className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                  className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                   {item.label}
                 </Link>
               ))}
@@ -66,36 +66,36 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className='mb-4 text-sm font-semibold text-white'>{t('headings.legal')}</p>
+            <p className='mb-4 font-display text-sm font-bold text-white'>{t('headings.legal')}</p>
             <div className='space-y-3'>
               <Link
                 href='/impressum'
                 title={t('titles.impressum')}
-                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 {t('legal.impressumAndPrivacy')}
               </Link>
               <Link
                 href='/agb'
                 title={t('titles.agb')}
-                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 {t('legal.agb')}
               </Link>
               <Link
                 href='/newsletter/unsubscribe'
                 title={t('legal.newsletterUnsubscribe')}
-                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 {t('legal.newsletterUnsubscribe')}
               </Link>
             </div>
           </div>
 
           <div>
-            <p className='mb-4 text-sm font-semibold text-white'>{t('headings.contact')}</p>
+            <p className='mb-4 font-display text-sm font-bold text-white'>{t('headings.contact')}</p>
             <div className='space-y-4'>
               <Link
                 href={`mailto:${CLUB_CONFIG.email.main}`}
                 title={`${t('titles.email')} ${CLUB_CONFIG.email.main}`}
-                className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 <Mail className='mt-0.5 size-4 shrink-0' />
                 <span>
                   {t('titles.email')} {CLUB_CONFIG.email.main}
@@ -112,7 +112,7 @@ export default function Footer() {
                 target='_blank'
                 rel='noreferrer'
                 title={`${t('contact.instagram')} ${CLUB_CONFIG.social.instagram.handle}`}
-                className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'>
+                className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 <Instagram className='mt-0.5 size-4 shrink-0' />
                 <span>
                   {t('contact.instagram')} {CLUB_CONFIG.social.instagram.handle}

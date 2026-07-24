@@ -1,13 +1,15 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ArrowUpRight, Play } from 'lucide-react';
-import { gsap } from '@/lib/gsap-config';
+import { Play } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { gsap } from '@/lib/gsap-config';
 import { trackDemoClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from './hero-action-button';
 import DemoPreview from './demo-preview';
+import { BoardKicker, CourtDiagram, Grain, MarkerArrow } from './tactic';
+import { drawMarkers } from './tactic/draw';
 
 function scrollToNewsletter() {
   const target = document.getElementById('newsletter');
@@ -20,29 +22,25 @@ function scrollToNewsletter() {
 export default function FinalCTASection() {
   const t = useTranslations('productPage.finalCta');
   const sectionRef = useRef<HTMLElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!sectionRef.current) return;
-
+    const el = sectionRef.current;
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        cardRef.current,
+        contentRef.current,
         { opacity: 0, y: 26 },
         {
           opacity: 1,
           y: 0,
           duration: 0.7,
           ease: 'power3.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 82%',
-            once: true,
-          },
-        }
+          scrollTrigger: { trigger: el, start: 'top 82%', once: true },
+        },
       );
-    }, sectionRef);
-
+      drawMarkers(el, { trigger: el, start: 'top 75%' });
+    }, el);
     return () => ctx.revert();
   }, []);
 
@@ -50,62 +48,60 @@ export default function FinalCTASection() {
     <section
       ref={sectionRef}
       id='demo'
-      className='w-full scroll-mt-24 bg-background py-24 md:py-32'>
-      <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
-        <div
-          ref={cardRef}
-          className='relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#f97316] via-[#fb8c3c] to-[#ea580c] px-6 py-12 shadow-[0_28px_80px_-40px_rgba(249,115,22,0.7)] sm:px-10 md:px-14 md:py-16'>
-          <div className='absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(255,255,255,0.28),transparent_45%)]' />
-          <div className='absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.18)_1px,transparent_0)] bg-[length:18px_18px] opacity-30' />
+      className='relative w-full scroll-mt-24 overflow-hidden bg-court py-24 text-chalk md:py-32'>
+      <CourtDiagram
+        variant='goal'
+        formation
+        formationOpacity={0.28}
+        aria-hidden
+        className='pointer-events-none absolute -left-[16%] top-1/2 h-[104%] w-auto -translate-y-1/2 text-chalk/[0.1] sm:-left-[10%] lg:-left-[4%]'
+      />
+      <Grain tone='court' />
 
-          <div className='relative grid items-center gap-10 lg:grid-cols-2 lg:gap-14'>
-            {/* Copy + actions */}
-            <div className='text-center lg:text-left'>
-              <span className='inline-flex items-center gap-2.5 text-sm font-semibold text-white/95'>
-                <span className='relative flex size-2'>
-                  <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-white/80' />
-                  <span className='relative inline-flex size-2 rounded-full bg-white' />
-                </span>
-                {t('badge')}
-              </span>
+      <div
+        ref={contentRef}
+        className='relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:gap-16'>
+        <div className='text-center lg:text-left'>
+          <BoardKicker color='chalk' className='justify-center lg:justify-start'>
+            {t('badge')}
+          </BoardKicker>
 
-              <h2 className='mt-4 text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl'>
-                {t('title')}
-              </h2>
-              <p className='mx-auto mt-4 max-w-xl text-base leading-7 text-white/90 sm:text-lg lg:mx-0'>
-                {t('description')}
-              </p>
+          <h2 className='mt-4 font-display text-[2.2rem] font-extrabold leading-[1.05] tracking-[-0.03em] text-chalk sm:text-[2.75rem] md:text-[3.1rem]'>
+            {t('title')}
+          </h2>
+          <p className='mx-auto mt-4 max-w-xl text-base leading-7 text-chalk/75 sm:text-lg lg:mx-0'>
+            {t('description')}
+          </p>
 
-              <div className='mt-8 flex flex-col items-center gap-3 sm:flex-row lg:items-start lg:justify-start'>
-                <a
-                  href={CLUB_CONFIG.website.demoUrl}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  onClick={() => trackDemoClick('final_cta')}
-                  className='group inline-flex h-14 w-full max-w-[300px] items-center justify-center gap-2 rounded-full bg-white px-7 text-sm font-bold tracking-[-0.02em] text-slate-950 shadow-[0_18px_34px_-18px_rgba(15,23,42,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-50 hover:shadow-[0_22px_40px_-18px_rgba(15,23,42,0.5)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#ea580c] sm:w-auto sm:min-w-[240px]'>
-                  <Play className='size-4 fill-current' />
-                  <span>{t('demoCta')}</span>
-                  <ArrowUpRight className='size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5' />
-                </a>
-                <HeroActionButton
-                  variant='secondary'
-                  className='border-white/40 bg-white/10 text-white hover:border-white/60 hover:bg-white/20'
-                  onClick={scrollToNewsletter}>
-                  {t('primaryCta')}
-                </HeroActionButton>
-              </div>
-
-              <p className='mt-5 text-sm text-white/85'>{t('note')}</p>
-            </div>
-
-            {/* Live demo preview */}
-            <div className='relative'>
-              <DemoPreview
-                url={CLUB_CONFIG.website.demoUrlWithoutProtocol}
-                liveLabel={t('previewLabel')}
-              />
-            </div>
+          <div className='relative mt-9 flex flex-col items-center gap-3 sm:flex-row lg:justify-start'>
+            <MarkerArrow
+              variant='curve'
+              color='marker'
+              aria-hidden
+              className='absolute -top-11 left-6 hidden h-14 w-28 lg:block'
+            />
+            <HeroActionButton
+              variant='primary'
+              icon={<Play className='size-4 fill-current' />}
+              href={CLUB_CONFIG.website.demoUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => trackDemoClick('final_cta')}>
+              {t('demoCta')}
+            </HeroActionButton>
+            <HeroActionButton variant='secondary' onClick={scrollToNewsletter}>
+              {t('primaryCta')}
+            </HeroActionButton>
           </div>
+
+          <p className='mt-5 text-sm text-chalk/60'>{t('note')}</p>
+        </div>
+
+        <div className='relative'>
+          <DemoPreview
+            url={CLUB_CONFIG.website.demoUrlWithoutProtocol}
+            liveLabel={t('previewLabel')}
+          />
         </div>
       </div>
     </section>

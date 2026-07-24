@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
+import { Grain, SectionHeading } from './tactic';
 
 interface FaqItem {
   question: string;
@@ -16,36 +17,31 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id='faq' className='w-full scroll-mt-24 bg-muted/30 py-24 md:py-32'>
-      <div className='mx-auto w-full max-w-3xl px-6 sm:px-10'>
-        <div className='text-center'>
-          <h2 className='text-3xl font-bold tracking-tight text-foreground sm:text-4xl'>
-            {t('title')}
-          </h2>
-          <p className='mt-5 text-base leading-7 text-muted-foreground'>
-            {t('description')}
-          </p>
-        </div>
+    <section
+      id='faq'
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-24 md:py-32'>
+      <Grain tone='paper' />
+      <div className='relative mx-auto w-full max-w-3xl px-6 sm:px-10'>
+        <SectionHeading kicker={t('kicker')} title={t('title')} description={t('description')} />
 
-        <div className='mt-16 space-y-3'>
+        <div className='mt-14 border-t border-ink/12'>
           {items.map((item, index) => {
             const isOpen = openIndex === index;
-
             return (
-              <div
-                key={item.question}
-                className='overflow-hidden rounded-2xl border border-border bg-background'>
+              <div key={item.question} className='border-b border-ink/12'>
                 <h3 className='m-0'>
                   <button
                     type='button'
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     aria-expanded={isOpen}
-                    className='flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-base font-semibold text-foreground'>
+                    className='flex w-full items-center justify-between gap-4 py-5 text-left text-base font-semibold text-ink transition-colors hover:text-primary'>
                     <span>{item.question}</span>
                     <span
                       className={cn(
-                        'flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform duration-300',
-                        isOpen && 'rotate-45'
+                        'flex size-7 shrink-0 items-center justify-center rounded-full border transition-all duration-300',
+                        isOpen
+                          ? 'rotate-45 border-primary bg-primary text-white'
+                          : 'border-ink/20 text-ink/60',
                       )}>
                       <Plus className='size-4' />
                     </span>
@@ -54,10 +50,10 @@ export default function FaqSection() {
                 <div
                   className={cn(
                     'grid transition-all duration-300 ease-out',
-                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0',
                   )}>
                   <div className='overflow-hidden'>
-                    <p className='px-5 pb-5 text-sm leading-7 text-muted-foreground'>
+                    <p className='max-w-[68ch] pb-5 pr-10 text-sm leading-7 text-ink/70'>
                       {item.answer}
                     </p>
                   </div>

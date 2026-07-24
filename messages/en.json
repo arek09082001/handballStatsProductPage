@@ -749,6 +749,7 @@
       ]
     },
     "showcase": {
+      "kicker": "Live in the app",
       "title": "How you track and analyze handball statistics with Statix",
       "description": "From live tracking on the bench to the finished analysis for the locker room – a look inside the app. And you can try all of it yourself in the live demo, no account needed.",
       "ctaLabel": "Try every feature in the live demo",
@@ -786,6 +787,7 @@
       ]
     },
     "ai": {
+      "kicker": "AI analysis",
       "title": "Handball statistics analyzed by AI – explaining why, not just what",
       "description": "Statix analyses your recorded games with AI on four levels: for every single game, for your whole team across the season, as a scouting profile for individual players, and for entire tournaments. No notepad or spreadsheet can do that.",
       "privacyNote": "Privacy built in: player names are pseudonymised before any data reaches an AI – and reports are generated in the background while you keep working.",
@@ -815,6 +817,7 @@
       }
     },
     "tournament": {
+      "kicker": "Tournament mode",
       "title": "Handball tournament statistics fully under control",
       "description": "Create a tournament with several teams, start live games right from it and keep the standings in view at all times.",
       "points": [
@@ -843,6 +846,7 @@
       "imageTwoLabel": "Fixtures & results"
     },
     "liveTicker": {
+      "kicker": "Live ticker",
       "title": "The whole gym follows along – live",
       "description": "Publish your game as a public live ticker: parents, fans and club mates follow the score and game flow in real time in their browser – no account needed.",
       "points": [
@@ -894,6 +898,7 @@
       }
     },
     "collab": {
+      "kicker": "Teamwork",
       "title": "Handball statistics that move your whole team forward",
       "description": "Statix is not a lone-wolf tool: share games with fellow coaches, bring your coaching staff on board and actively involve your players.",
       "points": [
@@ -928,6 +933,7 @@
       }
     },
     "allFeatures": {
+      "kicker": "All on board",
       "title": "All handball statistics & features – from throw-off to analysis",
       "description": "Statix grows with every matchday. All of this is already in the app – features marked “New” have just landed.",
       "newBadge": "New",
@@ -1120,6 +1126,7 @@
       "countLabel": "{count} features"
     },
     "pros": {
+      "kicker": "Beyond the scoresheet",
       "title": "Handball statistics instead of pen and napkin",
       "description": "Show your coach in two minutes what gets lost on a notepad: open the live demo in the gym – a real game, real numbers, a finished analysis.",
       "cta": "Open the demo & show your coach",
@@ -1138,6 +1145,7 @@
       ]
     },
     "faq": {
+      "kicker": "Good to know",
       "title": "Frequently asked questions about handball statistics",
       "description": "Everything you need to know about handball statistics before getting started.",
       "items": [
@@ -1208,6 +1216,7 @@
       ]
     },
     "newsletter": {
+      "kicker": "Launch offer",
       "title": "Secure the launch offer for your team",
       "description": "Statix launches officially soon. Sign up to get the exclusive launch offer for clubs, new features first and practical tips on game analysis – straight from the developer.",
       "placeholder": "Your email address",
@@ -1229,6 +1238,7 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "contact": {
+      "kicker": "Say hello",
       "title": "Get in touch – we're here for you",
       "description": "Questions about Statix, want to sign up your team or club, or have feedback? Send us a message and we'll get back to you personally as soon as possible.",
       "namePlaceholder": "Your name",

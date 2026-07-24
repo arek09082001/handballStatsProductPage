@@ -14,6 +14,11 @@ type HeroActionButtonProps = HeroActionButtonBaseProps &
     | ({ href?: undefined } & ButtonHTMLAttributes<HTMLButtonElement>)
   );
 
+/**
+ * The board's action buttons. Primary is the coach's marker — a solid orange
+ * block with a real offset shadow (no glow halo). Secondary is a chalk ghost
+ * that sits on the dark court; callers on other grounds override via className.
+ */
 export default function HeroActionButton({
   children,
   className,
@@ -22,18 +27,20 @@ export default function HeroActionButton({
   ...props
 }: HeroActionButtonProps) {
   const classes = cn(
-    'inline-flex h-14 w-full max-w-[300px] items-center justify-center gap-2 rounded-full px-7 text-sm font-bold tracking-[-0.02em] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60 sm:w-auto sm:min-w-[260px] lg:min-w-[272px] xl:min-w-[300px]',
+    'group inline-flex h-13 w-full max-w-[320px] items-center justify-center gap-2 rounded-xl px-7 font-display text-[15px] font-bold tracking-tight transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 active:scale-[0.99] disabled:pointer-events-none disabled:opacity-60 sm:h-14 sm:w-auto sm:min-w-[240px]',
     variant === 'primary'
-      ? 'bg-linear-to-r from-[#f97316] to-[#ea580c] text-white shadow-[0_18px_30px_-18px_rgba(249,115,22,0.9)] hover:-translate-y-0.5 hover:shadow-[0_22px_36px_-18px_rgba(249,115,22,0.85)]'
-      : 'border border-slate-200 bg-white text-slate-950 shadow-[0_14px_26px_-22px_rgba(15,23,42,0.45)] hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50',
+      ? 'bg-primary text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] hover:-translate-y-0.5 hover:bg-[#ea580c] hover:shadow-[0_18px_30px_-14px_hsl(22_90%_45%/0.8)]'
+      : 'border border-chalk/30 bg-chalk/5 text-chalk hover:-translate-y-0.5 hover:border-chalk/50 hover:bg-chalk/10',
     className,
   );
 
   const content = (
     <>
+      {icon ?? null}
       <span>{children}</span>
-      {icon ??
-        (variant === 'secondary' ? <ArrowRight className='size-4' /> : null)}
+      {variant === 'secondary' && !icon ? (
+        <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
+      ) : null}
     </>
   );
 
