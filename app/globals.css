@@ -95,6 +95,19 @@
   --color-chart-4: hsl(var(--chart-4));
   --color-chart-5: hsl(var(--chart-5));
 
+  /* Trainertafel grounds — the two sides of the coach's board (see DESIGN.md) */
+  --color-paper: hsl(var(--paper));
+  --color-paper-2: hsl(var(--paper-2));
+  --color-ink: hsl(var(--ink));
+  --color-ink-soft: hsl(var(--ink) / 0.66);
+  --color-court: hsl(var(--court));
+  --color-court-2: hsl(var(--court-2));
+  --color-chalk: hsl(var(--chalk));
+
+  /* Type voices — Archivo (display/jersey), Caveat (marker hand) */
+  --font-display: var(--font-archivo), 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--font-caveat), 'Caveat', ui-rounded, system-ui, cursive;
+
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
@@ -163,6 +176,13 @@
   /* Statix brand: energetic orange primary + deep court-blue secondary */
   --primary: 22 92% 52%;
   --secondary: 221 83% 53%;
+  /* Trainertafel grounds — warm paper (bright hall) + deep court floor (board) */
+  --paper: 40 33% 96%;
+  --paper-2: 38 30% 91.5%;
+  --ink: 222 24% 13%;
+  --court: 199 46% 12%;
+  --court-2: 200 40% 17%;
+  --chalk: 0 0% 100%;
   --accent: 0 0% 89%;
   --notification: 351.1 100% 50%;
   --success: 118.1 63% 39.2%;
@@ -206,40 +226,28 @@ html[data-intro-pending] body::before {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   }
 
+  /* Shared card primitive (components/ui/card.tsx). Cleaned of the former
+   * glassmorphism (backdrop-blur + stacked primary halos) to a plain card with
+   * one real offset+blur shadow. See DESIGN.md. */
   .card-surface {
-    background: linear-gradient(
-      160deg,
-      hsl(var(--background) / 0.96) 0%,
-      hsl(var(--background) / 0.86) 100%
-    );
-    border: 1px solid hsl(var(--primary) / 0.14);
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 10px 30px -22px hsl(var(--ink) / 0.35);
+  }
+
+  /* A note/card pinned to the tactic board: one warm, real board shadow
+   * (offset + blur, never a zero-offset colored halo). */
+  .board-shadow {
     box-shadow:
-      0 24px 60px -38px hsl(var(--primary) / 0.28),
-      0 14px 34px -28px hsl(var(--foreground) / 0.3),
-      inset 0 1px 0 hsl(var(--background) / 0.74);
-    backdrop-filter: blur(2px);
+      0 1px 0 hsl(var(--ink) / 0.04),
+      0 18px 40px -26px hsl(var(--ink) / 0.35);
   }
 
-  .card-surface-dark {
-    background: linear-gradient(
-      160deg,
-      rgba(28, 41, 61, 0.94) 0%,
-      rgba(34, 54, 82, 0.86) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.12);
+  /* Same, seated on the dark court ground. */
+  .board-shadow-court {
     box-shadow:
-      0 28px 66px -38px rgba(30, 64, 175, 0.45),
-      0 18px 42px -32px rgba(15, 23, 42, 0.75),
-      inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(2px);
-  }
-
-  .ai-gradient {
-    @apply bg-linear-to-r from-violet-500 to-teal-300 border-none;
-  }
-
-  .ai-gradient-muted {
-    @apply bg-linear-to-r from-violet-500/15 to-teal-300/15 border-none;
+      0 1px 0 hsl(0 0% 100% / 0.06),
+      0 26px 60px -30px hsl(0 0% 0% / 0.7);
   }
 }
 
@@ -310,7 +318,8 @@ html[data-intro-pending] body::before {
   h4,
   h5,
   h6 {
-    font-family: var(--font-space-grotesk), Inter, Arial, Helvetica, sans-serif;
+    font-family: var(--font-display), var(--font-space-grotesk), Inter, Arial,
+      Helvetica, sans-serif;
   }
 
   /* Custom Scrollbar Styling - Modern, rounded rectangle style */

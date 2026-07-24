@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Inter, Space_Grotesk, Archivo, Caveat } from 'next/font/google';
 import './globals.css';
 import Providers from '@/app/providers';
 import LocaleProvider from '@/app/locale-provider';
@@ -19,6 +19,19 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['500', '600', '700'],
   variable: '--font-space-grotesk',
+});
+// Trainertafel display voice — an athletic grotesque for headings, jersey
+// numbers and the scoreboard (see DESIGN.md).
+const archivo = Archivo({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800', '900'],
+  variable: '--font-archivo',
+});
+// The coach's marker — kickers, arrow labels and margin notes only.
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-caveat',
 });
 
 export const revalidate = 60 * 60 * 24;
@@ -164,7 +177,8 @@ export default async function RootLayout({
         />
         <link rel='shortcut icon' href={CLUB_CONFIG.branding.favicons.shortcut} />
       </head>
-      <body className={`${inter.className} ${spaceGrotesk.variable} bg-muted text-foreground`}>
+      <body
+        className={`${inter.className} ${spaceGrotesk.variable} ${archivo.variable} ${caveat.variable} bg-muted text-foreground`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='light'

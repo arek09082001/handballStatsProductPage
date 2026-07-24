@@ -749,6 +749,7 @@
       ]
     },
     "showcase": {
+      "kicker": "Live in der App",
       "title": "So erfasst und analysierst du Handball-Statistiken mit Statix",
       "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung für die Kabine – ein Blick in die App. Alles davon kannst du in der Live-Demo ohne Account selbst ausprobieren.",
       "ctaLabel": "Alle Funktionen direkt in der Live-Demo ausprobieren",
@@ -786,6 +787,7 @@
       ]
     },
     "ai": {
+      "kicker": "KI-Analyse",
       "title": "Handball-Statistiken per KI ausgewertet – erklärt warum, nicht nur was",
       "description": "Statix wertet deine erfassten Spiele mit KI aus – auf vier Ebenen: für jedes einzelne Spiel, für dein ganzes Team über die Saison, als Scouting-Profil für einzelne Spieler und für komplette Turniere. Das leistet kein Zettel und keine Excel-Tabelle.",
       "privacyNote": "Datenschutz eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – und Berichte entstehen im Hintergrund, während du weiterarbeitest.",
@@ -815,6 +817,7 @@
       }
     },
     "tournament": {
+      "kicker": "Turniermodus",
       "title": "Turnier-Statistiken im Handball komplett im Griff",
       "description": "Lege ein Turnier mit mehreren Mannschaften an, starte Live-Spiele direkt daraus und behalte die Tabelle jederzeit im Blick.",
       "points": [
@@ -843,6 +846,7 @@
       "imageTwoLabel": "Spielplan & Ergebnisse"
     },
     "liveTicker": {
+      "kicker": "Live-Ticker",
       "title": "Die ganze Halle fiebert mit – live",
       "description": "Veröffentliche dein Spiel als öffentlichen Live-Ticker: Eltern, Fans und Vereinskollegen verfolgen Spielstand und Spielverlauf in Echtzeit im Browser – ganz ohne Account.",
       "points": [
@@ -894,6 +898,7 @@
       }
     },
     "collab": {
+      "kicker": "Zusammenarbeit",
       "title": "Handball-Statistiken, die dein ganzes Team weiterbringen",
       "description": "Statix ist kein Einzelkämpfer-Tool: Teile Spiele mit Trainerkollegen, hol dein Trainerteam an Bord und binde deine Spieler aktiv ein.",
       "points": [
@@ -928,6 +933,7 @@
       }
     },
     "allFeatures": {
+      "kicker": "Alles an Bord",
       "title": "Alle Handball-Statistiken & Funktionen – vom Anwurf bis zur Analyse",
       "description": "Statix wächst mit jedem Spieltag. Das steckt heute schon alles in der App – Funktionen mit „Neu“ sind gerade erst dazugekommen.",
       "newBadge": "Neu",
@@ -1120,6 +1126,7 @@
       "countLabel": "{count} Funktionen"
     },
     "pros": {
+      "kicker": "Zettel war gestern",
       "title": "Handball-Statistiken statt Zettel und Bierdeckel",
       "description": "Zeig deinem Trainer in zwei Minuten, was auf dem Zettel verloren geht: Öffne die Live-Demo in der Halle – echtes Spiel, echte Zahlen, fertige Auswertung.",
       "cta": "Demo öffnen & dem Trainer zeigen",
@@ -1138,6 +1145,7 @@
       ]
     },
     "faq": {
+      "kicker": "Gut zu wissen",
       "title": "Häufige Fragen zu Handball-Statistiken",
       "description": "Alles, was du vor dem Start mit Handball-Statistiken wissen musst.",
       "items": [
@@ -1208,6 +1216,7 @@
       ]
     },
     "newsletter": {
+      "kicker": "Launch-Angebot",
       "title": "Sichere dir das Launch-Angebot für dein Team",
       "description": "Statix startet bald offiziell. Trag dich ein und bekomme das exklusive Launch-Angebot für Vereine, neue Funktionen zuerst und Praxis-Tipps zur Spielanalyse – direkt vom Entwickler.",
       "placeholder": "Deine E-Mail-Adresse",
@@ -1229,6 +1238,7 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "contact": {
+      "kicker": "Sag Hallo",
       "title": "Schreib uns – wir sind für dich da",
       "description": "Du hast Fragen zu Statix, möchtest dein Team oder deinen Verein anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
       "namePlaceholder": "Dein Name",
