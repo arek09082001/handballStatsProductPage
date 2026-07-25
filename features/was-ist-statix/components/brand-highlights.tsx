@@ -1,47 +1,35 @@
-import {
-  Brain,
-  PlayCircle,
-  Target,
-  TrendingUp,
-  type LucideIcon,
-} from 'lucide-react';
 import { ArrowUpRight } from 'lucide-react';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { BRAND_HIGHLIGHTS } from '../data/brand-content';
-import AppScreenshot from '@/features/landing-page/components/app-screenshot';
+import {
+  BoardScreenshot,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import Reveal from './reveal';
-
-/** Icon per highlight, keyed by the `icon` field in {@link BRAND_HIGHLIGHTS}. */
-const HIGHLIGHT_ICONS: Record<string, LucideIcon> = {
-  record: PlayCircle,
-  stats: TrendingUp,
-  shots: Target,
-  ai: Brain,
-};
 
 /**
  * The core "show, don't tell" section of the brand page: alternating rows that
- * pair a real in-app screenshot with a short pitch, mirroring the landing-page
- * showcase so the two pages feel like one product.
+ * pair a real in-app screenshot pinned to the board with a short pitch,
+ * mirroring the landing-page showcase so the two pages read as one product.
  * @returns A JSX element rendering the alternating screenshot/copy highlight rows and a demo CTA.
  */
 export default function BrandHighlights() {
   return (
-    <section className='w-full bg-muted/30 py-20 md:py-28'>
-      <div className='mx-auto w-full max-w-7xl px-6 sm:px-10'>
-        <Reveal className='mx-auto max-w-3xl text-center'>
-          <h2 className='text-2xl font-bold tracking-tight text-foreground sm:text-3xl'>
-            So sieht Statix in der Halle aus
-          </h2>
-          <p className='mt-4 text-base leading-7 text-muted-foreground'>
-            Vom ersten Tap an der Bank bis zur fertigen Analyse – ein Blick auf
-            die vier Schritte, die Statix ausmachen.
-          </p>
+    <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-28'>
+      <Grain tone='paper' />
+      <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
+        <Reveal>
+          <SectionHeading
+            kicker='Show, don’t tell'
+            title='So sieht Statix in der Halle aus'
+            description='Vom ersten Tap an der Bank bis zur fertigen Analyse – die vier Schritte, die Statix ausmachen.'
+            tone='paper'
+          />
         </Reveal>
 
-        <div className='mt-16 flex flex-col gap-16 md:gap-24'>
+        <div className='mt-16 flex flex-col gap-16 md:mt-20 md:gap-24'>
           {BRAND_HIGHLIGHTS.map((item, index) => {
-            const Icon = HIGHLIGHT_ICONS[item.icon] ?? PlayCircle;
             const reversed = index % 2 === 1;
 
             return (
@@ -49,29 +37,32 @@ export default function BrandHighlights() {
                 key={item.title}
                 className='grid items-center gap-8 lg:grid-cols-2 lg:gap-14'>
                 <div className={reversed ? 'lg:order-2' : ''}>
-                  <p className='flex items-center gap-3 text-sm font-semibold tabular-nums text-primary'>
-                    {String(index + 1).padStart(2, '0')}
-                    <span aria-hidden className='h-px w-10 bg-primary/40' />
-                    <span className='inline-flex items-center gap-2 font-medium text-muted-foreground'>
-                      <Icon className='size-4' />
+                  <div className='flex items-baseline gap-3'>
+                    <span className='font-display text-5xl font-extrabold leading-none tracking-tighter text-primary/25 tabular-nums'>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <span className='inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary'>
+                      <span aria-hidden className='size-1.5 rounded-[3px] bg-primary' />
                       {item.badge}
                     </span>
-                  </p>
-                  <h3 className='mt-4 text-2xl font-bold tracking-tight text-foreground sm:text-3xl'>
+                  </div>
+                  <h3 className='mt-4 font-display text-2xl font-extrabold tracking-[-0.02em] text-ink sm:text-[1.75rem]'>
                     {item.title}
                   </h3>
-                  <p className='mt-4 text-base leading-7 text-muted-foreground'>
+                  <p className='mt-3.5 max-w-[52ch] text-base leading-7 text-ink/70'>
                     {item.description}
                   </p>
                 </div>
 
                 <div className={reversed ? 'lg:order-1' : ''}>
-                  <AppScreenshot
+                  <BoardScreenshot
                     src={item.src}
                     alt={item.title}
                     width={item.width}
                     height={item.height}
                     label={item.badge}
+                    tone='paper'
+                    pin={reversed ? 'magnet' : 'tape'}
                   />
                 </div>
               </Reveal>
@@ -84,7 +75,7 @@ export default function BrandHighlights() {
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'
             rel='noopener noreferrer'
-            className='inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10'>
+            className='inline-flex items-center gap-2 rounded-xl border border-ink/15 bg-paper px-6 py-3.5 font-display text-sm font-bold text-ink transition-colors hover:border-primary hover:text-primary'>
             Statix live in der Demo ausprobieren
             <ArrowUpRight className='size-4' />
           </a>

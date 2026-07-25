@@ -1,48 +1,72 @@
-import { HelpCircle } from 'lucide-react';
+'use client';
+
+import { useState } from 'react';
+import { Plus } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { BRAND_FAQS } from '../data/brand-content';
-import Reveal from './reveal';
+import { BoardKicker, Grain } from '@/features/landing-page/components/tactic';
 
 /**
- * Visible brand FAQ, rendered as hairline cards. The matching FAQPage JSON-LD
- * is emitted from the route (`app/was-ist-statix/page.tsx`) from the same data,
- * so markup and content always match – a Google requirement for FAQ structured
- * data.
- * @returns A JSX element rendering the brand FAQ as a two-column card grid.
+ * Visible brand FAQ on the paper ground — the same open/close grammar as the
+ * landing page and Ratgeber (ink hairline rule, marker-plus toggle), so the
+ * page reads as the same board. Renders every answer in the DOM so the on-page
+ * text matches the FAQPage JSON-LD emitted by the route (Google requires
+ * parity), whichever item is expanded.
+ * @returns A JSX element rendering the brand FAQ as an accordion on paper.
  */
 export default function BrandFaq() {
-  return (
-    <section className='w-full bg-background'>
-      <div className='mx-auto max-w-5xl px-6 py-16 sm:px-8 md:py-24'>
-        <Reveal className='mx-auto max-w-3xl text-center'>
-          <h2 className='text-2xl font-bold tracking-tight text-foreground sm:text-3xl'>
-            Häufige Fragen zu Statix
-          </h2>
-          <p className='mt-4 text-base leading-7 text-muted-foreground'>
-            Alles, was Leute wissen wollen, die zum ersten Mal von Statix hören.
-          </p>
-        </Reveal>
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-        <div className='mt-12 grid gap-4 sm:grid-cols-2'>
-          {BRAND_FAQS.map((faq, index) => (
-            <Reveal
-              key={faq.question}
-              delay={(index % 2) * 0.05}
-              className='h-full rounded-2xl border border-border/60 bg-card p-6'>
-              <div className='flex items-start gap-3'>
-                <span className='mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary'>
-                  <HelpCircle className='size-4' />
-                </span>
-                <div>
-                  <h3 className='text-base font-semibold text-foreground'>
-                    {faq.question}
-                  </h3>
-                  <p className='mt-2 text-sm leading-7 text-muted-foreground'>
-                    {faq.answer}
-                  </p>
+  return (
+    <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-28'>
+      <Grain tone='paper' />
+      <div className='relative mx-auto max-w-3xl px-6 sm:px-8'>
+        <BoardKicker>Nachgefragt</BoardKicker>
+        <h2 className='mt-3 font-display text-[1.9rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[2.25rem]'>
+          Häufige Fragen zu Statix
+        </h2>
+        <p className='mt-3 text-base leading-7 text-ink/70'>
+          Alles, was Leute wissen wollen, die zum ersten Mal von Statix hören.
+        </p>
+
+        <div className='mt-10 border-t border-ink/12'>
+          {BRAND_FAQS.map((faq, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div key={faq.question} className='border-b border-ink/12'>
+                <h3 className='m-0'>
+                  <button
+                    type='button'
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    className='flex w-full items-center justify-between gap-4 py-5 text-left text-base font-semibold text-ink transition-colors hover:text-primary'>
+                    <span>{faq.question}</span>
+                    <span
+                      className={cn(
+                        'flex size-7 shrink-0 items-center justify-center rounded-full border transition-all duration-300',
+                        isOpen
+                          ? 'rotate-45 border-primary bg-primary text-white'
+                          : 'border-ink/20 text-ink/60',
+                      )}>
+                      <Plus className='size-4' />
+                    </span>
+                  </button>
+                </h3>
+                <div
+                  className={cn(
+                    'grid transition-all duration-300 ease-out',
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0',
+                  )}>
+                  <div className='overflow-hidden'>
+                    <p className='max-w-[68ch] pb-5 pr-10 text-[15px] leading-7 text-ink/70'>
+                      {faq.answer}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </Reveal>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

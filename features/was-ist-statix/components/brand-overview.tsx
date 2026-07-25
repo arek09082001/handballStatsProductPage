@@ -1,9 +1,13 @@
-import { Check } from 'lucide-react';
 import { BRAND_FACTS } from '../data/brand-content';
-import AppScreenshot from '@/features/landing-page/components/app-screenshot';
+import {
+  BoardScreenshot,
+  Grain,
+  PlayerMagnet,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import Reveal from './reveal';
 
-/** Points condensed from the intro copy, shown as a scannable checklist. */
+/** Points condensed from the intro copy, read out like a coach's roster. */
 const OVERVIEW_POINTS = [
   'Jede Aktion ist im Spiel nur einen Tap entfernt',
   'Auswertung läuft automatisch im Hintergrund',
@@ -12,23 +16,27 @@ const OVERVIEW_POINTS = [
 ] as const;
 
 /**
- * "Statix in 30 Sekunden" – a compact definition paired with a real app
- * screenshot, plus a machine-readable quick-facts list. The definition list is
- * kept as label/value pairs so answer engines can extract the brand facts
- * directly.
- * @returns A JSX element rendering the brand definition, a product screenshot and a quick-facts grid.
+ * "Statix in 30 Sekunden" – a compact definition paired with a real in-app
+ * shot pinned to the board, plus a machine-readable quick-facts list set as a
+ * coach's scoresheet (label/value rows) so answer engines can extract the brand
+ * facts directly.
+ * @returns A JSX element rendering the brand definition, a product screenshot and a quick-facts scoresheet.
  */
 export default function BrandOverview() {
   return (
-    <section className='w-full bg-background'>
-      <div className='mx-auto w-full max-w-6xl px-6 py-16 sm:px-8 md:py-24'>
+    <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
+      <Grain tone='paper' />
+      <div className='relative mx-auto w-full max-w-6xl px-6 sm:px-8'>
         <div className='grid items-center gap-10 lg:grid-cols-2 lg:gap-16'>
           <Reveal>
-            <h2 className='text-2xl font-bold tracking-tight text-foreground sm:text-3xl'>
-              Statix in 30 Sekunden
-            </h2>
+            <SectionHeading
+              kicker='In 30 Sekunden'
+              title='Statix, kurz erklärt'
+              tone='paper'
+              align='left'
+            />
 
-            <div className='mt-5 space-y-4 text-base leading-8 text-muted-foreground'>
+            <div className='mt-6 space-y-4 text-base leading-8 text-ink/75'>
               <p>
                 Statix ersetzt Zettel, Strichlisten und Excel-Tabellen am
                 Spielfeldrand. Während des Spiels ist jede Aktion nur einen Tap
@@ -46,13 +54,11 @@ export default function BrandOverview() {
               </p>
             </div>
 
-            <ul className='mt-6 space-y-3'>
-              {OVERVIEW_POINTS.map((point) => (
-                <li key={point} className='flex items-start gap-3'>
-                  <span className='mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary'>
-                    <Check className='size-3.5' />
-                  </span>
-                  <span className='text-sm leading-6 text-foreground'>
+            <ul className='mt-7 space-y-3.5'>
+              {OVERVIEW_POINTS.map((point, index) => (
+                <li key={point} className='flex items-center gap-3.5'>
+                  <PlayerMagnet number={index + 1} team='home' size='sm' />
+                  <span className='text-[15px] leading-6 text-ink'>
                     {point}
                   </span>
                 </li>
@@ -61,26 +67,29 @@ export default function BrandOverview() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <AppScreenshot
+            <BoardScreenshot
               src='/gameListOverview.png'
               alt='Statix Spielübersicht: alle Spiele und Auswertungen auf einen Blick'
               width={1899}
               height={874}
               label='Statix – Spielübersicht'
+              tone='paper'
+              pin='magnet'
             />
           </Reveal>
         </div>
 
-        <Reveal>
-          <dl className='mt-14 grid gap-x-8 gap-y-6 rounded-2xl border border-border/60 bg-card p-6 sm:grid-cols-2 sm:p-8 lg:grid-cols-3'>
+        <Reveal className='mt-16'>
+          <p className='font-hand text-2xl text-ink/60'>Auf einen Blick</p>
+          <dl className='mt-4 grid gap-x-10 border-t border-ink/12 sm:grid-cols-2 lg:grid-cols-3'>
             {BRAND_FACTS.map((fact) => (
               <div
                 key={fact.label}
-                className='border-l-2 border-primary/30 pl-4'>
-                <dt className='text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground'>
+                className='border-b border-ink/12 py-4 sm:[&:nth-last-child(-n+1)]:border-b-0 lg:[&:nth-last-child(-n+1)]:border-b'>
+                <dt className='font-display text-xs font-bold uppercase tracking-[0.14em] text-primary'>
                   {fact.label}
                 </dt>
-                <dd className='mt-1 text-sm leading-6 text-foreground'>
+                <dd className='mt-1.5 text-[15px] leading-6 text-ink/80'>
                   {fact.value}
                 </dd>
               </div>

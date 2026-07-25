@@ -1,40 +1,66 @@
-import { ArrowUpRight } from 'lucide-react';
+import { Play } from 'lucide-react';
 import Link from 'next/link';
 import { CLUB_CONFIG } from '@/lib/club-config';
+import {
+  BoardKicker,
+  CourtDiagram,
+  Grain,
+  MarkerArrow,
+} from '@/features/landing-page/components/tactic';
 
 /**
- * Closing CTA. Server component with plain anchors – links to the no-account
- * live demo plus the two strongest internal targets (home, Ratgeber).
+ * Closing CTA — the landing page's final-CTA language: a court signature band
+ * with the court (and a chalked formation) behind, the coach's marker kicker,
+ * and one solid orange action to the no-account live demo, plus a chalk-ghost
+ * link into the Ratgeber. Static server component (plain anchors).
+ * @returns A JSX element rendering the brand-page closing CTA on the court ground.
  */
 export default function BrandCta() {
   return (
-    <section className='mx-auto w-full max-w-3xl px-6 pb-16 pt-4 sm:px-8'>
-      <div className='relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#f97316] to-[#ea580c] px-6 py-8 text-white shadow-lg sm:px-10 sm:py-10'>
-        <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_100%_0%,rgba(255,255,255,0.18),transparent)]' />
-        <div className='relative'>
-          <h2 className='text-xl font-bold tracking-tight sm:text-2xl'>
-            Statix selbst ausprobieren
-          </h2>
-          <p className='mt-2 max-w-xl text-sm leading-6 text-white/90 sm:text-base'>
-            Die Live-Demo ist eine voll ausgestattete Version von Statix mit
-            echten Spieldaten – direkt im Browser, ohne Account und ohne
-            Installation.
-          </p>
-          <div className='mt-6 flex flex-col items-start gap-3 sm:flex-row sm:items-center'>
-            <a
-              href={CLUB_CONFIG.website.demoUrl}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition-transform duration-300 hover:scale-105'>
-              Live-Demo starten
-              <ArrowUpRight className='size-4' />
-            </a>
-            <Link
-              href='/ratgeber'
-              className='inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white/20'>
-              Zum Handball-Ratgeber
-            </Link>
-          </div>
+    <section className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-28'>
+      <CourtDiagram
+        variant='goal'
+        formation
+        formationOpacity={0.24}
+        aria-hidden
+        className='pointer-events-none absolute -left-[16%] top-1/2 h-[116%] w-auto -translate-y-1/2 text-chalk/[0.1] sm:-left-[9%] lg:-left-[3%]'
+      />
+      <Grain tone='court' />
+
+      <div className='relative mx-auto max-w-3xl px-6 text-center sm:px-8'>
+        <BoardKicker color='chalk' className='justify-center'>
+          Live-Demo
+        </BoardKicker>
+
+        <h2 className='mx-auto mt-4 max-w-2xl font-display text-[1.9rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-chalk sm:text-[2.4rem]'>
+          Statix selbst ausprobieren
+        </h2>
+        <p className='mx-auto mt-4 max-w-xl text-base leading-7 text-chalk/75'>
+          Die Live-Demo ist eine voll ausgestattete Version von Statix mit
+          echten Spieldaten – direkt im Browser, ohne Account und ohne
+          Installation.
+        </p>
+
+        <div className='relative mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row'>
+          <MarkerArrow
+            variant='curve'
+            color='marker'
+            aria-hidden
+            className='absolute -right-14 -top-10 hidden h-12 w-24 sm:block'
+          />
+          <a
+            href={CLUB_CONFIG.website.demoUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='group inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-primary px-7 font-display text-[15px] font-bold tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] hover:shadow-[0_18px_30px_-14px_hsl(22_90%_45%/0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 sm:h-14'>
+            <Play className='size-4 fill-current' />
+            Live-Demo starten
+          </a>
+          <Link
+            href='/ratgeber'
+            className='inline-flex h-13 items-center justify-center gap-2 rounded-xl border border-chalk/30 bg-chalk/5 px-7 font-display text-[15px] font-bold tracking-tight text-chalk transition-colors duration-200 hover:border-chalk/50 hover:bg-chalk/10 sm:h-14'>
+            Zum Handball-Ratgeber
+          </Link>
         </div>
       </div>
     </section>
