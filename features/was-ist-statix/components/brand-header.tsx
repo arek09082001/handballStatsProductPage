@@ -1,32 +1,56 @@
-import { ArrowUpRight, MapPin, Sparkles } from 'lucide-react';
-import Link from 'next/link';
+import { Play } from 'lucide-react';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import AppScreenshot from '@/features/landing-page/components/app-screenshot';
+import HeroActionButton from '@/features/landing-page/components/hero-action-button';
+import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
+import {
+  BoardKicker,
+  BoardScreenshot,
+  CourtDiagram,
+  Grain,
+  MarkerArrow,
+  MarkerUnderline,
+} from '@/features/landing-page/components/tactic';
+
+/** Short, true promises under the hero CTAs — no claim beyond PRODUCT.md. */
+const TRUST = ['Made in Germany', 'Kostenlos starten', 'Offline in der Halle'];
 
 /**
- * Dark, two-column hero for the brand page. The H1 carries the primary brand
- * query ("Was ist Statix?") and the intro answers it in one paragraph so
- * search and answer engines can lift it as a direct answer, while a real
- * in-app screenshot on the right immediately shows what Statix is.
- * @returns A JSX element rendering the brand-page hero with copy, CTAs and a product screenshot.
+ * Court-ground hero for the brand page — the Trainertafel world's signature
+ * band. The handball court (with the 6:0 defence chalked on) sits behind the
+ * copy, the H1 carries the primary brand query ("Was ist Statix?") with the
+ * name swiped in the coach's marker, and the intro answers it in one paragraph
+ * so search and answer engines can lift it directly. A real in-app shot is
+ * pinned to the board on the right. Static server component (no client JS).
+ * @returns A JSX element rendering the court hero with copy, CTAs and a pinned product screenshot.
  */
 export default function BrandHeader() {
   return (
-    <section className='relative isolate w-full overflow-hidden border-b border-border/50 bg-slate-950 pb-16 pt-6 text-white md:py-16'>
-      <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_12%_0%,rgba(59,130,246,0.25),transparent),radial-gradient(ellipse_40%_35%_at_92%_100%,rgba(16,185,129,0.16),transparent)]' />
+    <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
+      <CourtDiagram
+        variant='goal'
+        formation
+        formationOpacity={0.3}
+        aria-hidden
+        className='pointer-events-none absolute -left-[22%] top-1/2 h-[92%] w-auto -translate-y-1/2 text-chalk/[0.12] sm:-left-[14%] lg:-left-[8%]'
+      />
+      <Grain tone='court' />
 
-      <div className='relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 sm:px-10 sm:py-16 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:py-20'>
-        <div className='text-center md:text-left'>
-          <div className='mx-auto inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/85 md:mx-0'>
-            <Sparkles className='h-4 w-4' />
+      <div className='relative mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 pb-16 pt-28 sm:px-10 lg:flex-row lg:items-center lg:gap-14 lg:pb-24 lg:pt-32'>
+        <div className='w-full shrink-0 text-center lg:w-[46%] lg:text-left'>
+          <BoardKicker color='chalk' className='justify-center lg:justify-start'>
             Statix im Überblick
-          </div>
+          </BoardKicker>
 
-          <h1 className='mt-6 text-3xl font-extrabold tracking-[-0.03em] text-white sm:text-4xl lg:text-5xl'>
-            Was ist Statix?
+          <h1 className='mt-5 font-display text-[2.7rem] font-extrabold leading-[1.02] tracking-[-0.035em] text-chalk sm:text-[3.4rem] lg:text-[3.75rem]'>
+            Was ist{' '}
+            <span className='relative inline-block text-primary'>
+              Statix
+              <MarkerUnderline color='marker' />
+            </span>
+            ?
           </h1>
 
-          <p className='mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg md:mx-0'>
+          <p className='mx-auto mt-6 max-w-[560px] text-base leading-7 text-chalk/75 sm:text-lg sm:leading-8 lg:mx-0'>
             Statix ist die Handball-Statistik-App für Trainer, Vereine und
             Teams: Spiele live per Tap erfassen – Tore, Würfe, Paraden, Strafen
             und Wechsel – und Wurfquoten, Wurfbilder, Spielerwerte und
@@ -34,41 +58,48 @@ export default function BrandHeader() {
             im Browser, offline-fähig in der Halle.
           </p>
 
-          <div className='mt-8 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center md:justify-start'>
-            <a
+          <div className='relative mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start'>
+            <HeroActionButton
+              variant='primary'
+              icon={<Play className='size-4 fill-current' />}
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
-              rel='noopener noreferrer'
-              className='inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition-transform duration-300 hover:scale-105'>
-              Live-Demo ohne Account starten
-              <ArrowUpRight className='size-4' />
-            </a>
-            <Link
-              href='/'
-              className='inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white/20'>
+              rel='noopener noreferrer'>
+              Live-Demo ohne Account
+            </HeroActionButton>
+            <HeroActionButton variant='secondary' href='/'>
               Alle Funktionen ansehen
-            </Link>
-            <div className='inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90'>
-              <MapPin className='h-4 w-4 text-emerald-300' />
-              Made in Germany
-            </div>
+            </HeroActionButton>
+          </div>
+
+          <div className='mt-7 flex flex-wrap items-center justify-center gap-2 lg:justify-start'>
+            {TRUST.map((item) => (
+              <HeroTrustBadge key={item} label={item} />
+            ))}
           </div>
         </div>
 
-        <div className='relative'>
-          <div className='pointer-events-none absolute -inset-8 rounded-[40px] bg-[radial-gradient(circle_at_30%_20%,rgba(249,115,22,0.28),transparent_60%),radial-gradient(circle_at_80%_90%,rgba(37,99,235,0.28),transparent_55%)] blur-2xl' />
-          <AppScreenshot
+        <div className='relative w-full lg:min-w-0 lg:flex-1'>
+          <MarkerArrow
+            variant='curve'
+            color='marker'
+            aria-hidden
+            className='absolute -left-8 -top-10 hidden h-16 w-28 -rotate-12 lg:block'
+          />
+          <BoardScreenshot
             src='/recordStatsInGame.png'
             alt='Statix Handball-App: Spielstatistiken live per Tap erfassen'
             width={1916}
             height={879}
             label='Statix – Live-Erfassung im Spiel'
+            tone='court'
+            pin='tape'
+            live
             priority
             sizes='(max-width: 1024px) 100vw, 52vw'
-            className='relative'
           />
         </div>
       </div>
-    </section>
+    </header>
   );
 }

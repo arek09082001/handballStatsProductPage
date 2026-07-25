@@ -47,10 +47,10 @@ export const BRAND_FACTS = [
 
 /**
  * Visual product highlights for the brand page. Each entry pairs a real
- * in-app screenshot (rendered in the faux-browser frame) with a short pitch,
- * so the page shows the product instead of only describing it. Screenshot
- * dimensions mirror the ones used by the landing-page showcase so Next.js can
- * reserve the correct aspect ratio.
+ * in-app screenshot (pinned to the board via BoardScreenshot) with a short
+ * pitch, so the page shows the product instead of only describing it.
+ * Screenshot dimensions mirror the ones used by the landing-page showcase so
+ * Next.js can reserve the correct aspect ratio.
  */
 export const BRAND_HIGHLIGHTS = [
   {
