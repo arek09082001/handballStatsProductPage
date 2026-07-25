@@ -1,40 +1,69 @@
 'use client';
 
-import { CalendarClock, FileCheck2, ShieldCheck } from 'lucide-react';
+import { CalendarClock, ShieldCheck } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { BoardKicker, CourtDiagram, Grain } from '@/features/landing-page/components/tactic';
 
+/**
+ * Court-ground header for the legal page — a signature band of the Trainertafel
+ * world, matching the Ratgeber Read register (see DESIGN.md). The handball court
+ * is chalked behind the copy, the register is set as the coach's marker kicker,
+ * and the H1 sits in Archivo chalk. Two anchor chips jump straight to the
+ * Impressum and Datenschutz blocks — a real navigation aid on a long legal page.
+ * Replaces the old slate-950 + radial-blob-glow hero (a banned generic look).
+ */
 export default function ImpressumHeader() {
   const t = useTranslations('legalPage.header');
+  const impressumT = useTranslations('legalPage.impressum');
+  const privacyT = useTranslations('legalPage.privacy');
 
   return (
-    <section className='relative isolate w-full overflow-hidden border-b border-border/50 bg-slate-950 pb-12 pt-6 text-white md:py-12'>
-      <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_12%_0%,rgba(59,130,246,0.25),transparent),radial-gradient(ellipse_40%_35%_at_92%_100%,rgba(16,185,129,0.16),transparent)]' />
+    <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
+      <CourtDiagram
+        variant='goal'
+        aria-hidden
+        className='pointer-events-none absolute -right-[16%] top-1/2 h-[135%] w-auto -translate-y-1/2 text-chalk/[0.09] sm:-right-[9%] lg:-right-[2%]'
+      />
+      <Grain tone='court' />
 
-      <div className='relative mx-auto max-w-7xl px-6 py-10 text-center sm:px-10 sm:py-16 md:text-left md:py-20'>
-        <div className='mx-auto inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/85 md:mx-0'>
-          <FileCheck2 className='h-4 w-4' />
-          {t('eyebrow')}
-        </div>
+      <div className='relative mx-auto max-w-3xl px-6 py-14 sm:px-8 sm:py-16 md:py-20'>
+        <BoardKicker color='chalk'>{t('eyebrow')}</BoardKicker>
 
-        <h1 className='mx-auto mt-6 max-w-3xl text-3xl font-extrabold tracking-[-0.03em] text-white sm:text-4xl lg:mx-0 lg:text-5xl'>
+        <h1 className='mt-4 max-w-2xl text-balance font-display text-[2rem] font-extrabold leading-[1.08] tracking-[-0.03em] text-chalk sm:text-[2.5rem] lg:text-[2.9rem] lg:leading-[1.05]'>
           {t('title')}
         </h1>
 
-        <p className='mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg md:mx-0'>
+        <p className='mt-5 max-w-2xl text-base leading-8 text-chalk/75 sm:text-lg'>
           {t('description')}
         </p>
 
-        <div className='mt-8 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:items-center md:justify-start'>
-          <div className='inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90'>
-            <ShieldCheck className='h-4 w-4 text-emerald-300' />
+        <div className='mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-chalk/60'>
+          <span className='inline-flex items-center gap-2'>
+            <ShieldCheck className='h-4 w-4 text-success' />
             {t('transparencyBadge')}
-          </div>
-          <div className='inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90'>
-            <CalendarClock className='h-4 w-4 text-sky-300' />
+          </span>
+          <span aria-hidden className='hidden h-1 w-1 rounded-full bg-chalk/30 sm:inline-block' />
+          <span className='inline-flex items-center gap-2'>
+            <CalendarClock className='h-4 w-4 text-primary' />
             {t('lastUpdated')}
-          </div>
+          </span>
         </div>
+
+        <nav
+          aria-label={t('title')}
+          className='mt-8 flex flex-wrap gap-2.5'>
+          <a
+            href='#impressum'
+            className='inline-flex items-center rounded-lg border border-chalk/15 bg-chalk/[0.06] px-3.5 py-2 text-sm font-semibold text-chalk/85 transition-colors hover:border-chalk/30 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+            {impressumT('title')}
+          </a>
+          <a
+            href='#datenschutz'
+            className='inline-flex items-center rounded-lg border border-chalk/15 bg-chalk/[0.06] px-3.5 py-2 text-sm font-semibold text-chalk/85 transition-colors hover:border-chalk/30 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+            {privacyT('shortTitle')}
+          </a>
+        </nav>
       </div>
-    </section>
+    </header>
   );
 }
