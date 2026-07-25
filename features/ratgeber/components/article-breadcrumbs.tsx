@@ -31,8 +31,8 @@ export default function ArticleBreadcrumbs({
                 <span
                   aria-current='page'
                   className={cn(
-                    'text-sm font-medium',
-                    onDark ? 'text-white/90' : 'text-foreground',
+                    'max-w-[16rem] truncate text-sm font-medium sm:max-w-none',
+                    onDark ? 'text-chalk/85' : 'text-ink',
                   )}>
                   {item.name}
                 </span>
@@ -41,17 +41,17 @@ export default function ArticleBreadcrumbs({
                   <Link
                     href={item.path}
                     className={cn(
-                      'text-sm transition-colors',
+                      'rounded-sm text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50',
                       onDark
-                        ? 'text-white/70 hover:text-white'
-                        : 'text-muted-foreground hover:text-primary',
+                        ? 'text-chalk/65 hover:text-chalk'
+                        : 'text-ink/60 hover:text-primary',
                     )}>
                     {item.name}
                   </Link>
                   <ChevronRight
                     className={cn(
                       'size-3.5 shrink-0',
-                      onDark ? 'text-white/40' : 'text-muted-foreground/50',
+                      onDark ? 'text-chalk/40' : 'text-ink/40',
                     )}
                   />
                 </>

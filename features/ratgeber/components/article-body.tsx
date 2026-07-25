@@ -1,6 +1,7 @@
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
+import { Grain } from '@/features/landing-page/components/tactic';
 
 /**
  * Wrap markdown tables so they scroll horizontally on narrow screens instead of
@@ -22,12 +23,15 @@ const markdownComponents: Components = {
  */
 export default function ArticleBody({ body }: { body: string }) {
   return (
-    <div className='article-prose prose mx-auto max-w-3xl px-6 py-12 sm:px-8 md:py-16'>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm, remarkBreaks]}
-        components={markdownComponents}>
-        {body}
-      </ReactMarkdown>
+    <div className='relative overflow-hidden bg-paper'>
+      <Grain tone='paper' />
+      <div className='article-prose prose relative mx-auto max-w-3xl px-6 py-14 sm:px-8 md:py-20'>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm, remarkBreaks]}
+          components={markdownComponents}>
+          {body}
+        </ReactMarkdown>
+      </div>
     </div>
   );
 }

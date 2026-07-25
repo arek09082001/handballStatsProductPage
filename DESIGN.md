@@ -6,8 +6,9 @@ with jersey numbers, marker arrows, quick hand‑written notes. Statix turns tha
 analog ritual into live data — so the marketing surface *is* the board.
 
 This file owns durable visual rules for the landing page and any surface that
-adopts the world. Product facts live in `PRODUCT.md`. Article/`ratgeber` prose
-keeps its own `.article-prose` type (Space Grotesk) and is out of scope here.
+adopts the world. Product facts live in `PRODUCT.md`. The `ratgeber` guide
+pages adopt this world in a **Read** register — see "Ratgeber (Read surface)"
+below.
 
 ## THESIS
 
@@ -87,6 +88,33 @@ logic (orange = us, blue = them) is a system rule, not a palette accident.
 - **BoardScreenshot** — frames a real app screenshot as a shot pinned to the
   board (flat frame + magnet/tape accent, thin chalk/ink border). **No**
   macOS traffic‑light chrome.
+
+## Ratgeber (Read surface)
+
+The guide pages (`/ratgeber` hub + `/ratgeber/[slug]` articles) are the world's
+**Read** register: the same two grounds and marker grammar as the landing page,
+tuned for long‑form comprehension and kept fully static / zero‑JS (only the FAQ
+accordion is client) so every article stays crawlable.
+
+- **Ground rhythm** mirrors the landing page: court signature bands for the
+  hero header and the foot CTA, paper for the reading body, FAQ and related
+  grid. Article: court hero → paper prose → paper FAQ → court CTA → paper
+  related. The hub: court hero → paper board of category groups.
+- **Heroes** are court bands with the `CourtDiagram` chalked behind (formation
+  on the hub + CTA, plain goal‑end on article headers), a `BoardKicker` for the
+  category, and the Archivo H1 in chalk — never the old `slate-950` +
+  radial‑blob glow.
+- **`.article-prose`** is the reading voice (`app/globals.css`): warm ink on
+  paper, **Archivo** headings (not Space Grotesk), a short marker swipe under
+  each `h2`, links with a soft marker highlight, the key‑takeaway blockquote
+  restyled as a magnet‑pinned note (no bordered quote), and data tables set as
+  a scoresheet (ink header rule, warm zebra, tabular figures).
+- **Article cards** are notes pinned to the board: a paper card, one real board
+  shadow, a single magnet dot. The category shows as a Caveat marker label only
+  where cards are ungrouped (related); on the hub the section heading already
+  names it.
+- The foot CTA reuses the landing page's final‑CTA language — a court band with
+  one solid orange action to the no‑account live demo.
 
 ## Motion — one language: "drawn on the board"
 
