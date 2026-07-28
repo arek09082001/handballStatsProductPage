@@ -97,7 +97,7 @@ export default function DatenschutzCard() {
         <h2 className='mt-3 font-display text-[1.9rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[2.2rem]'>
           <span className='relative inline-block'>
             {privacyT('title')}
-            <MarkerUnderline color='marker' />
+            <MarkerUnderline color='marker' strokeWidth={4} className='opacity-70' />
           </span>
         </h2>
 
@@ -437,10 +437,7 @@ function Section({
   return (
     <section className={first ? 'mt-12' : 'mt-12 border-t border-ink/10 pt-10'}>
       <h2 className='font-display text-[1.5rem] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink sm:text-[1.7rem]'>
-        <span className='relative inline-block max-w-full'>
-          {title}
-          <MarkerUnderline color='marker' strokeWidth={5} />
-        </span>
+        {title}
       </h2>
       <div className='mt-6'>{children}</div>
     </section>
