@@ -4,9 +4,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowUpRight, Menu, Play, X } from 'lucide-react';
+import { ArrowUpRight, Menu, UserPlus, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { trackDemoClick } from '@/lib/analytics';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
@@ -136,6 +136,8 @@ export default function SiteNavbar({
                     rel={item.external ? 'noopener noreferrer' : undefined}
                     aria-current={active ? 'page' : undefined}
                     onMouseEnter={() => setHoveredIdent(item.ident)}
+                    // The only external nav item is the live demo.
+                    onClick={item.external ? () => trackDemoClick('navbar') : undefined}
                     className={cn(
                       'relative inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
                       // The logo already links home; keep the crowded lg row lean.
@@ -177,14 +179,14 @@ export default function SiteNavbar({
           <div className='ml-auto hidden items-center justify-end gap-3 lg:flex lg:w-60'>
             <LanguageSwitcher />
             <Link
-              href={CLUB_CONFIG.website.demoUrl}
+              href={CLUB_CONFIG.website.appUrl}
               target='_blank'
               rel='noopener noreferrer'
-              title={t('demoCta')}
-              onClick={() => trackDemoClick('navbar')}
+              title={t('registerCta')}
+              onClick={() => trackRegisterClick('navbar')}
               className='inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#f97316] px-5 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] hover:shadow-[0_8px_22px_-4px_rgba(249,115,22,0.5)] active:translate-y-0 active:scale-95'>
-              <Play className='size-3.5 shrink-0' />
-              {t('demoCta')}
+              <UserPlus className='size-3.5 shrink-0' />
+              {t('registerCta')}
             </Link>
           </div>
 
@@ -263,7 +265,11 @@ export default function SiteNavbar({
                       key={item.ident}
                       href={item.href}
                       title={t(`items.${item.labelKey}`)}
-                      onClick={closeMenu}
+                      onClick={() => {
+                        // The only external nav item is the live demo.
+                        if (item.external) trackDemoClick('navbar');
+                        closeMenu();
+                      }}
                       target={item.external ? '_blank' : undefined}
                       rel={item.external ? 'noopener noreferrer' : undefined}
                       aria-current={active ? 'page' : undefined}
@@ -293,17 +299,17 @@ export default function SiteNavbar({
                 })}
 
                 <Link
-                  href={CLUB_CONFIG.website.demoUrl}
+                  href={CLUB_CONFIG.website.appUrl}
                   target='_blank'
                   rel='noopener noreferrer'
-                  title={t('demoCta')}
+                  title={t('registerCta')}
                   onClick={() => {
-                    trackDemoClick('navbar');
+                    trackRegisterClick('navbar');
                     closeMenu();
                   }}
                   className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#f97316] px-4 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
-                  <Play className='size-4 shrink-0' />
-                  {t('demoCta')}
+                  <UserPlus className='size-4 shrink-0' />
+                  {t('registerCta')}
                 </Link>
 
                 <div className='flex justify-center pt-2'>

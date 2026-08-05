@@ -89,9 +89,14 @@ export const CLUB_CONFIG = {
   website: {
     domain: 'statix-app.de',
     url: 'https://www.statix-app.de',
+    /** The live app – primary conversion target since launch. */
+    appUrl: 'https://app.statix-app.de',
     demoUrl: 'https://demo.statix-app.de',
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
+    },
+    get appUrlWithoutProtocol() {
+      return this.appUrl.replace('https://', '');
     },
     get demoUrlWithoutProtocol() {
       return this.demoUrl.replace('https://', '');
