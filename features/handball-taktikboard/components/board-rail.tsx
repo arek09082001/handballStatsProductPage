@@ -70,8 +70,8 @@ export default function BoardRail({
   return (
     <div
       className={cn(
-        'flex shrink-0 items-center gap-1 overflow-x-auto rounded-2xl border border-ink/10 bg-paper p-1.5',
-        'lg:w-auto lg:flex-col lg:items-stretch lg:overflow-visible',
+        'mx-auto flex w-fit max-w-full shrink-0 items-center gap-1 overflow-x-auto rounded-2xl border border-ink/10 bg-paper p-1.5',
+        'lg:mx-0 lg:w-auto lg:flex-col lg:items-stretch lg:overflow-visible',
       )}>
       <div className='flex gap-1 lg:flex-col' role='group' aria-label='Werkzeug'>
         {BOARD_MODE_OPTIONS.map((option) => {

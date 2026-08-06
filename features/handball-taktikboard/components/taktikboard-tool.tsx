@@ -151,12 +151,14 @@ export default function TaktikboardTool({
   const activeMode = BOARD_MODE_OPTIONS.find((option) => option.mode === mode);
 
   /**
-   * Room for the rail plus a board that still fits on screen. The half court is
-   * nearly square, so a board sized off the column width alone runs off the
-   * bottom of a laptop; the height is what binds, and 4.25rem is the rail and
-   * its gap.
+   * Room for a board that still fits on screen, plus the rail on one side and
+   * the spacer that balances it on the other. The half court is nearly square,
+   * so a board sized off the column width alone runs off the bottom of a
+   * laptop; the height is what binds. 8.5rem is the rail and its gap counted
+   * twice, so the court lands on the page's centre line instead of half a rail
+   * to the right of it.
    */
-  const containerMaxWidth = `min(100%, calc(82vh * ${COURT_VIEWS[board.view].aspectRatio} + 4.25rem), 1200px)`;
+  const containerMaxWidth = `min(100%, calc(82vh * ${COURT_VIEWS[board.view].aspectRatio} + 8.5rem), 1200px)`;
 
   const handleSelect = useCallback((next: BoardSelection) => {
     setSelection(next);
@@ -430,7 +432,7 @@ export default function TaktikboardTool({
           is only as wide as the rail plus a board that still fits the viewport
           height, so the court reads as the main object on the page instead of
           sitting inside a full-width card. */}
-      <div className='w-full' style={{ maxWidth: containerMaxWidth }}>
+      <div className='mx-auto w-full' style={{ maxWidth: containerMaxWidth }}>
         <div className='flex flex-col gap-3 lg:flex-row lg:items-start'>
           <BoardRail
             mode={mode}
@@ -476,6 +478,10 @@ export default function TaktikboardTool({
               {activeMode?.hint}
             </p>
           </div>
+
+          {/* Balances the rail so the court sits on the page's centre line and
+              not half a rail to the right of it. */}
+          <span aria-hidden='true' className='hidden w-14 shrink-0 lg:block' />
         </div>
 
         {notice ? (
