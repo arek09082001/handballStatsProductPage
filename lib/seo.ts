@@ -97,6 +97,12 @@ export const SITE_LINKS = [
             'Was die Handball-Statistik-App Statix kostet: aktuell kostenlos mit vollem Funktionsumfang, alle Grenzen im Detail und was ein geplantes Abo für Teams und Vereine ändern würde.',
     },
     {
+        name: 'Erfahrungen',
+        path: '/erfahrungen',
+        description:
+            'Erfahrungen mit Statix: wer die Handball-Statistik-App entwickelt, wie Feedback aus der Halle zu neuen Funktionen wird und wie du dir selbst ein Bild machst.',
+    },
+    {
         name: 'Für Vereine',
         path: '/fuer-vereine',
         description:

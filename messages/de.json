@@ -1144,6 +1144,12 @@
         "Offline-fähig und in wenigen Minuten startklar"
       ]
     },
+    "testimonials": {
+      "kicker": "Trainer sagen",
+      "title": "Stimmen aus der Halle",
+      "description": "Trainer, die Statix im Spielbetrieb einsetzen – mit Namen und Verein.",
+      "linkLabel": "Alle Erfahrungen ansehen"
+    },
     "faq": {
       "kicker": "Gut zu wissen",
       "title": "Häufige Fragen zu Handball-Statistiken",
