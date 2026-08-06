@@ -39,6 +39,17 @@ const DOUBLE_TAP_MS = 400;
 /** Hold this long without moving and the editor opens — the tablet gesture. */
 const LONG_PRESS_MS = 500;
 
+/**
+ * Optical centring for the jersey number, as a fraction of the magnet.
+ *
+ * Centring a line box is not the same as centring the digits inside it: a
+ * digit sits on the baseline with the font's descender space below it, so a
+ * perfectly centred line box leaves the number visibly high on the disc.
+ * Measured on the built page at 4× — the ink sat 2.5 % of the disc above its
+ * centre — and applied as top padding, which a centred grid splits in half.
+ */
+const NUMBER_OPTICAL_NUDGE = 0.05;
+
 interface DragContext {
   pointerId: number;
   rect: DOMRect;
@@ -84,6 +95,12 @@ interface BoardCanvasProps {
   onEditorChange: (id: string | null) => void;
   /** html2canvas renders exactly this node. */
   boardRef: React.RefObject<HTMLDivElement | null>;
+  /**
+   * Forces the board's pixel width instead of measuring it. Set only by the
+   * off-screen copy the PNG is rendered from, so an export looks the same
+   * whether the coach is on a phone or a beamer.
+   */
+  renderWidth?: number;
   /** Id of the hidden paragraph that explains the keyboard controls. */
   describedById: string;
 }
@@ -133,6 +150,7 @@ export default function BoardCanvas({
   editorId,
   onEditorChange,
   boardRef,
+  renderWidth,
   describedById,
 }: BoardCanvasProps) {
   const view: CourtView = COURT_VIEWS[state.view];
@@ -141,25 +159,33 @@ export default function BoardCanvas({
   const drawRef = useRef<DrawContext | null>(null);
   const lastTapRef = useRef<{ id: string; at: number }>({ id: '', at: 0 });
   const longPressRef = useRef<number | undefined>(undefined);
-  const [boardWidth, setBoardWidth] = useState(0);
+  const [measuredWidth, setMeasuredWidth] = useState(0);
   const [draft, setDraft] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(
     null,
   );
 
-  const drawing = mode !== 'move';
+  /**
+   * True for the off-screen copy the PNG is rendered from: a fixed width, no
+   * grab handles, nothing in the tab order. Everything else — geometry, colours,
+   * token sizing — runs through exactly the same code as the live board, which
+   * is what keeps the export honest.
+   */
+  const isStatic = renderWidth !== undefined;
+  const drawing = !isStatic && mode !== 'move';
+  const boardWidth = renderWidth ?? measuredWidth;
 
   // The magnet has to be a real pixel size, not a percentage: it carries the
   // 44 px touch floor on a phone and must not grow into a beer mat on a beamer.
   useEffect(() => {
     const node = boardRef.current;
-    if (!node) return;
+    if (!node || isStatic) return;
     const observer = new ResizeObserver((entries) => {
-      setBoardWidth(entries[0]?.contentRect.width ?? 0);
+      setMeasuredWidth(entries[0]?.contentRect.width ?? 0);
     });
     observer.observe(node);
-    setBoardWidth(node.getBoundingClientRect().width);
+    setMeasuredWidth(node.getBoundingClientRect().width);
     return () => observer.disconnect();
-  }, [boardRef]);
+  }, [boardRef, isStatic]);
 
   useEffect(() => () => window.clearTimeout(longPressRef.current), []);
 
@@ -487,8 +513,11 @@ export default function BoardCanvas({
     <div className='relative w-full'>
       <div
         ref={boardRef}
-        role='group'
-        aria-label='Taktikboard – Spielfeld mit Magneten'
+        // The off-screen export copy is not a second board as far as assistive
+        // technology is concerned: no group role, no name, and its wrapper is
+        // aria-hidden, so a screen reader hears one court and not two.
+        role={isStatic ? undefined : 'group'}
+        aria-label={isStatic ? undefined : 'Taktikboard – Spielfeld mit Magneten'}
         onPointerDown={(event) => {
           if (event.target === event.currentTarget) handleCourtPointerDown(event);
         }}
@@ -543,7 +572,7 @@ export default function BoardCanvas({
             fill='none'
             stroke={ground.line}
             strokeWidth={2}
-            strokeDasharray='6 7'
+            strokeDasharray='4 4.5'
             strokeLinecap='round'
           />
           <path
@@ -608,6 +637,7 @@ export default function BoardCanvas({
             <button
               key={label.id}
               type='button'
+              tabIndex={isStatic ? -1 : undefined}
               aria-label={`Notiz: ${label.text}`}
               aria-describedby={describedById}
               onContextMenu={(event) => {
@@ -690,6 +720,7 @@ export default function BoardCanvas({
             <button
               key={magnet.id}
               type='button'
+              tabIndex={isStatic ? -1 : undefined}
               aria-label={name}
               aria-describedby={describedById}
               onContextMenu={(event) => {
@@ -753,11 +784,14 @@ export default function BoardCanvas({
                   background: isBall ? 'transparent' : colors.surface,
                   border: isBall ? 'none' : `1px solid ${colors.rim}`,
                   boxShadow: selectionRing(isSelected, isBall ? undefined : MAGNET_SHADOW),
+                  paddingTop: isBall ? 0 : Math.round(magnetSize * NUMBER_OPTICAL_NUDGE),
                   color: colors.text,
                   fontSize: Math.round(magnetSize * 0.5),
                   fontWeight: 800,
                   fontVariantNumeric: 'tabular-nums',
-                  letterSpacing: '-0.03em',
+                  // No negative tracking: it shortens the advance after the last
+                  // digit, so a centred two-digit number ends up off to the right.
+                  letterSpacing: 'normal',
                   lineHeight: 1,
                 }}>
                 {isBall ? <BallToken size={Math.round(magnetSize * 0.78)} /> : magnet.number}
@@ -768,7 +802,7 @@ export default function BoardCanvas({
 
         {/* Arrow grab handles. Marked as chrome so the PNG shows the arrows
             alone, the way they would be drawn on a real board. */}
-        {state.arrows.map((arrow) => {
+        {(isStatic ? [] : state.arrows).map((arrow) => {
           const isSelected = selection?.type === 'arrow' && selection.id === arrow.id;
           const stroke = arrowStroke(arrow.color, state.ground);
           const handles: { handle: ArrowHandle; x: number; y: number; name: string }[] = [
@@ -967,20 +1001,16 @@ function ArrowPath({
         stroke={stroke}
         strokeWidth={width}
         strokeLinecap='round'
-        strokeDasharray={arrow.kind === 'pass' ? '7 6' : undefined}
+        strokeDasharray={arrow.kind === 'pass' ? '4.5 4' : undefined}
       />
       <g transform={`translate(${end.x} ${end.y}) rotate(${angle})`}>
-        {heavy ? (
-          <path d='M 0 0 L -10 -5.5 L -7 0 L -10 5.5 Z' fill={stroke} stroke='none' />
-        ) : (
-          <path
-            d='M 0 0 L -8 -4.8 M 0 0 L -8 4.8'
-            fill='none'
-            stroke={stroke}
-            strokeWidth={width}
-            strokeLinecap='round'
-          />
-        )}
+        <path
+          d={heavy ? 'M 0 0 L -12 -5 L -12 5 Z' : 'M 0 0 L -9 -3.7 L -9 3.7 Z'}
+          fill={stroke}
+          stroke={stroke}
+          strokeWidth={0.8}
+          strokeLinejoin='round'
+        />
       </g>
     </g>
   );

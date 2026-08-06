@@ -12,6 +12,7 @@ import {
 import {
   BOARD_CAPACITY,
   BOARD_MODE_OPTIONS,
+  EXPORT_BOARD_WIDTH,
   EXPORT_FILE_NAME,
   TAKTIKBOARD_PAGE_PATH,
 } from '../data/taktikboard-content';
@@ -29,6 +30,9 @@ import type {
   CourtViewId,
   MagnetKind,
 } from '../interfaces';
+
+/** The off-screen export board takes the same props but never acts on them. */
+function noop() {}
 
 function buildDefaultBoard(): BoardState {
   return {
@@ -52,11 +56,17 @@ function nextNumber(state: BoardState, kind: MagnetKind): number {
   return 99;
 }
 
-/** New magnets land in a tidy row at the far end, like a bench, not on top of each other. */
+/**
+ * New magnets land in a row along the far edge, like a bench.
+ *
+ * Kept in the top two rows on purpose: every ready-made formation leaves that
+ * strip empty, so an added player never appears underneath one that is already
+ * on the court.
+ */
 function spawnSpot(index: number): { x: number; y: number } {
   return {
-    x: clamp01(0.13 + (index % 6) * 0.15),
-    y: clamp01(0.1 + Math.floor(index / 6) * 0.11),
+    x: clamp01(0.1 + (index % 8) * 0.114),
+    y: clamp01(0.055 + (Math.floor(index / 8) % 2) * 0.075),
   };
 }
 
@@ -94,6 +104,7 @@ export default function TaktikboardTool({
   const [origin, setOrigin] = useState('');
 
   const boardRef = useRef<HTMLDivElement | null>(null);
+  const exportRef = useRef<HTMLDivElement | null>(null);
   const idRef = useRef(1);
   const announceTimer = useRef<number | undefined>(undefined);
   const hashTimer = useRef<number | undefined>(undefined);
@@ -378,16 +389,17 @@ export default function TaktikboardTool({
   }, [shareUrl]);
 
   const exportPng = useCallback(async () => {
-    const node = boardRef.current;
+    // The off-screen copy, never the live board: it is a fixed width, carries no
+    // selection ring and no grab handles, and the coach keeps whatever they had
+    // selected instead of the export quietly clearing it.
+    const node = exportRef.current;
     if (!node) return;
-    setSelection(null);
-    setEditorId(null);
     setNotice(null);
     setIsExporting(true);
     try {
-      // Let the cleared selection paint, and make sure the board's own fonts
-      // are decoded — html2canvas draws text with the page's fonts, so a
-      // pending web font would export the jersey numbers in a fallback face.
+      // Make sure the board's own fonts are decoded — html2canvas draws text
+      // with the page's fonts, so a pending web font would export the jersey
+      // numbers in a fallback face.
       await document.fonts?.ready;
       await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
       const { default: html2canvas } = await import('html2canvas');
@@ -492,6 +504,37 @@ export default function TaktikboardTool({
           </p>
         ) : null}
 
+      </div>
+
+      {/* The board the PNG is rendered from: off screen, a fixed width, and fed
+          the same state through the same component, so an export looks
+          identical whether the coach is on a phone or a beamer. */}
+      <div
+        aria-hidden='true'
+        className='pointer-events-none fixed left-[-99999px] top-0 -z-10'
+        style={{ width: EXPORT_BOARD_WIDTH }}>
+        <BoardCanvas
+          state={board}
+          mode='move'
+          arrowKind={arrowKind}
+          arrowColor={arrowColor}
+          selection={null}
+          onSelect={noop}
+          onMoveMagnet={noop}
+          onMoveArrow={noop}
+          onMoveLabel={noop}
+          onRemove={noop}
+          onCreateArrow={noop}
+          onCreateLabel={noop}
+          onChangeMagnet={noop}
+          onChangeArrow={noop}
+          onChangeLabel={noop}
+          editorId={null}
+          onEditorChange={noop}
+          boardRef={exportRef}
+          renderWidth={EXPORT_BOARD_WIDTH}
+          describedById='taktikboard-keyboard-hilfe'
+        />
       </div>
 
       {/* Outside the board-width wrapper on purpose: the board is capped by the

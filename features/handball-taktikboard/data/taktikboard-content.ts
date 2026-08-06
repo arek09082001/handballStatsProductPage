@@ -30,6 +30,19 @@ export const EXPORT_WATERMARK = 'statix-app.de';
 
 export const EXPORT_FILE_NAME = 'handball-taktikboard';
 
+/**
+ * Board width the PNG is rendered at, in CSS pixels, before the 2× scale.
+ *
+ * The export comes from an off-screen board of exactly this width rather than
+ * from the one on screen, because token sizes carry a minimum and a maximum:
+ * on a 325 px phone board a magnet is 8 % of the width, on an 860 px desktop
+ * board 5.6 %. Exporting the live board therefore produced a visibly chunkier
+ * picture on a small window. At 900 the proportions match a roomy desktop board
+ * and the file lands at 1800 × 1500 — big enough for a beamer, small enough for
+ * a chat app.
+ */
+export const EXPORT_BOARD_WIDTH = 900;
+
 export interface MagnetKindOption {
   kind: MagnetKind;
   label: string;
