@@ -22,7 +22,6 @@ import type {
   ArrowHandle,
   ArrowKind,
   BoardArrow,
-  BoardGround,
   BoardMagnet,
   BoardMode,
   BoardSelection,
@@ -345,7 +344,12 @@ export default function TaktikboardTool({
       const label = { id: nextId('l'), x: clamp01(x), y: clamp01(y), text: 'Sperre' };
       setBoard((current) => ({ ...current, labels: [...current.labels, label] }));
       setSelection({ type: 'label', id: label.id });
-      setAnnouncement('Notiz gesetzt. Doppeltippen ändert den Text.');
+      // Placing a note is never the whole intent — the text is. Open the editor
+      // on it straight away and hand the move tool back, so the coach types and
+      // is done instead of hunting for a second gesture.
+      setEditorId(label.id);
+      setMode('move');
+      setAnnouncement('Notiz gesetzt. Text eingeben und mit Fertig bestätigen.');
     },
     [board.labels.length, nextId],
   );
@@ -482,28 +486,27 @@ export default function TaktikboardTool({
           </p>
         ) : null}
 
-        <div className='mt-3'>
-          <BoardSettings
-            formationId={formationId}
-            view={board.view}
-            ground={board.ground}
-            shareUrl={shareUrl}
-            copied={copied}
-            isExporting={isExporting}
-            onFormationChange={applyFormation}
-            onViewChange={(view: CourtViewId) => {
-              setEditorId(null);
-              setBoard((current) => ({ ...current, view }));
-            }}
-            onGroundChange={(ground: BoardGround) =>
-              setBoard((current) => ({ ...current, ground }))
-            }
-            onExport={exportPng}
-            onCopyLink={copyLink}
-            onClear={clearBoard}
-          />
-        </div>
       </div>
+
+      {/* Outside the board-width wrapper on purpose: the board is capped by the
+          viewport height, and a select plus three buttons squeezed into that
+          same narrow column wrapped into a tall stack for no reason. */}
+      <BoardSettings
+        className='mt-4'
+        formationId={formationId}
+        view={board.view}
+        shareUrl={shareUrl}
+        copied={copied}
+        isExporting={isExporting}
+        onFormationChange={applyFormation}
+        onViewChange={(view: CourtViewId) => {
+          setEditorId(null);
+          setBoard((current) => ({ ...current, view }));
+        }}
+        onExport={exportPng}
+        onCopyLink={copyLink}
+        onClear={clearBoard}
+      />
     </div>
   );
 }
