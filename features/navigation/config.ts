@@ -16,6 +16,13 @@ export const siteNavigationItems: NavigationItem[] = [
     sectionId: 'features',
   },
   {
+    // Route link, not a section anchor: no sectionId, so the scroll-spy
+    // ignores it and the pill only highlights it via the pathname.
+    ident: 10,
+    href: '/preise',
+    labelKey: 'pricing',
+  },
+  {
     ident: 7,
     href: '/#ai',
     labelKey: 'ai',

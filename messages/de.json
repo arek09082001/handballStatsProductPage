@@ -4,7 +4,8 @@
     "headings": {
       "product": "Produkt",
       "legal": "Rechtliches",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "audience": "Für Trainer & Vereine"
     },
     "product": {
       "demo": "Live-Demo",
@@ -31,7 +32,16 @@
       "agb": "AGB",
       "newsletterUnsubscribe": "Newsletter abmelden"
     },
-    "copyright": "Copyright © {year}. Alle Rechte vorbehalten."
+    "copyright": "Copyright © {year}. Alle Rechte vorbehalten.",
+    "audience": {
+      "pricing": "Preise",
+      "free": "Kostenlos nutzen",
+      "excelTemplate": "Excel-Vorlage",
+      "calculator": "Wurfquoten-Rechner",
+      "clubs": "Für Vereine",
+      "youthCoaches": "Für Jugendtrainer",
+      "experiences": "Erfahrungen"
+    }
   },
   "agbPage": {
     "header": {
@@ -220,6 +230,7 @@
     "items": {
       "home": "Start",
       "features": "Funktionen",
+      "pricing": "Preise",
       "howItWorks": "So funktioniert's",
       "ai": "KI-Analyse",
       "tournament": "Turnier",

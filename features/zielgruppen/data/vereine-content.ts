@@ -45,22 +45,22 @@ export interface ClubObjection {
 /** The two sentences a board actually says – answered without dodging. */
 export const CLUB_OBJECTIONS: ClubObjection[] = [
   {
-    question: '„Wir haben kein Budget."',
+    question: '„Wir haben kein Budget.“',
     answer:
       'Dann kostet es auch nichts. Statix ist aktuell kostenlos nutzbar, es gibt keinen Bezahlvorgang in der App und keine Rechnung, die im Kassenbericht auftauchen würde. Kein Trainer muss einen Antrag stellen, kein Vorstand einen Beschluss fassen – wer anfangen will, fängt an. Später ist ein Abo für 3,99 € im Monat geplant; die Vereinskonditionen gebe ich vor dem Start bekannt, rechtzeitig genug für eure Haushaltsplanung.',
   },
   {
-    question: '„Unsere Trainer sind nicht technikaffin."',
+    question: '„Unsere Trainer sind nicht technikaffin.“',
     answer:
       'Das ist der Normalfall, nicht die Ausnahme. Statix ist für einen Trainer gebaut, der nebenbei coacht: Jede Aktion ist ein Tap, es gibt keine Schulung und keine Einrichtung, die jemand für den Verein übernehmen müsste. Wer will, fängt mit dem Nötigsten an – Tore und Würfe – und lässt alles andere liegen. Und wer erstmal nur zuschauen will, öffnet die Live-Demo ohne Account.',
   },
   {
-    question: '„Wir dürfen Spielerdaten nicht einfach irgendwo eingeben."',
+    question: '„Wir dürfen Spielerdaten nicht einfach irgendwo eingeben.“',
     answer:
       'Richtig, und deshalb ist das geregelt. Für Spielerdaten, die ihr eigenverantwortlich eingebt, ist Statix Auftragsverarbeiter nach Art. 28 DSGVO; einen Vertrag zur Auftragsverarbeitung (AVV) stellen wir auf Anforderung bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, geteilte Berichte lassen sich zurückziehen, und welche Dienstleister beteiligt sind, steht vollständig in den AGB und der Datenschutzerklärung.',
   },
   {
-    question: '„Und wenn wir nach einer Saison wieder aufhören?"',
+    question: '„Und wenn wir nach einer Saison wieder aufhören?“',
     answer:
       'Dann hört ihr auf. Es gibt keine Mindestlaufzeit und nichts zu kündigen. Auswertungen könnt ihr als PDF exportieren und behalten, geteilte Links wieder deaktivieren.',
   },

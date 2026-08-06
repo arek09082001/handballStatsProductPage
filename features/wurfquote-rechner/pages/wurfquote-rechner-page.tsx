@@ -34,8 +34,8 @@ export default function WurfquoteRechnerPage() {
         kicker='Statt Kopfrechnen'
         title='Quoten, die sich selbst ausrechnen'
         description='In Statix entsteht die Wurfquote beim Tippen – pro Spieler, pro Position, dazu das Wurfbild. In der Live-Demo siehst du es mit echten Spieldaten, ohne Account.'
-        secondaryHref='/handball-statistik-app-kostenlos'
-        secondaryLabel='Kostenlos erfassen'
+        secondaryHref='/#newsletter'
+        secondaryLabel='Launch-Angebot sichern'
       />
     </div>
   );

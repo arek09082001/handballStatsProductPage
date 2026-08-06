@@ -31,8 +31,8 @@ export default function ErfahrungenPage() {
         kicker='Eigenes Urteil'
         title='Die ehrlichste Erfahrung ist deine eigene'
         description='Zwei Minuten Live-Demo mit echten Spieldaten sagen dir mehr als jede fremde Bewertung – ohne Account, ohne Installation, direkt im Browser.'
-        secondaryHref='/was-ist-statix'
-        secondaryLabel='Was ist Statix?'
+        secondaryHref='/#newsletter'
+        secondaryLabel='Launch-Angebot sichern'
       />
     </div>
   );

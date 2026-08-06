@@ -35,7 +35,7 @@ export default function PricingStart() {
           align='left'
           kicker='Ohne Kleingedrucktes'
           title='Kostenlos starten – was heißt das genau?'
-          description='Nicht "14 Tage gratis, danach sehen wir weiter". Sondern: es gibt schlicht nichts zu bezahlen.'
+          description='Nicht „14 Tage gratis, danach sehen wir weiter“. Sondern: es gibt schlicht nichts zu bezahlen.'
         />
 
         <ol className='mt-12 flex flex-col gap-8'>

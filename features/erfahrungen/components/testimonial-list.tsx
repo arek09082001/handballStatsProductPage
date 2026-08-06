@@ -49,7 +49,7 @@ export default function TestimonialList() {
                   </p>
                 ) : null}
                 <blockquote className='mt-3 text-[15px] leading-7 text-ink/80'>
-                  „{testimonial.quote}"
+                  „{testimonial.quote}“
                 </blockquote>
                 <p className='mt-4 font-display text-sm font-bold text-ink'>{testimonial.name}</p>
                 <p className='text-sm text-ink/60'>
@@ -64,7 +64,7 @@ export default function TestimonialList() {
               Statix ist jung. Es gibt Trainer, die damit arbeiten, aber noch
               keine Zitate, die jemand mit Namen und Verein freigegeben hat – und
               genau deshalb steht hier auch keins. Erfundene Stimmen, ausgedachte
-              Sternebewertungen oder „ein Trainer aus Bayern" wirst du auf dieser
+              Sternebewertungen oder „ein Trainer aus Bayern“ wirst du auf dieser
               Seite nicht finden, weder im Text noch in den Auszeichnungen für
               Suchmaschinen.
             </p>

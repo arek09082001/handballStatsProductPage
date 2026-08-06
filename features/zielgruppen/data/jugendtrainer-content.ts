@@ -18,7 +18,7 @@ export const YOUTH_BENEFITS: YouthBenefit[] = [
   {
     number: 2,
     title: 'Vierzehnjährige sehen ihre eigene Entwicklung',
-    text: '„Du wirst besser" glaubt kein Jugendlicher. „Deine Wurfquote von außen ist von 41 auf 58 Prozent gestiegen" schon. Zahlen aus echten Spielen machen Fortschritt sichtbar – auch bei denen, die nicht die meisten Tore werfen.',
+    text: '„Du wirst besser“ glaubt kein Jugendlicher. „Deine Wurfquote von außen ist von 41 auf 58 Prozent gestiegen“ schon. Zahlen aus echten Spielen machen Fortschritt sichtbar – auch bei denen, die nicht die meisten Tore werfen.',
   },
   {
     number: 3,
@@ -49,22 +49,22 @@ export interface YouthObjection {
 
 export const YOUTH_OBJECTIONS: YouthObjection[] = [
   {
-    question: '„Ich habe während des Spiels keine Hand frei."',
+    question: '„Ich habe während des Spiels keine Hand frei.“',
     answer:
       'Das ist der Grund, warum die Erfassung so gebaut ist, wie sie ist: Eine Aktion ist ein Tap, ohne Menü und ohne Nachfrage. Und du musst nicht alles erfassen. Fang mit Toren und Fehlwürfen an – das ist schon mehr, als eine Strichliste am Ende hergibt. Wenn es hektisch wird, ergänzt du Aktionen nach dem Spiel.',
   },
   {
-    question: '„Für D-Jugend ist das doch Leistungsdenken."',
+    question: '„Für D-Jugend ist das doch Leistungsdenken.“',
     answer:
       'Kommt darauf an, was du mit den Zahlen machst. Wenn du sie nutzt, um zu ranken, ja. Wenn du sie nutzt, um einem Kind zu zeigen, dass sein Training etwas bringt, ist es das Gegenteil. Deshalb liegt der Fokus auf Entwicklung über eine Saison und nicht auf einer Bestenliste.',
   },
   {
-    question: '„Ich bin nicht der Typ für Software."',
+    question: '„Ich bin nicht der Typ für Software.“',
     answer:
       'Musst du auch nicht sein. Es gibt keine Einrichtung, keine Schulung und kein Handbuch: Kader anlegen, Spiel starten, tippen. Wer es vorher sehen will, öffnet die Live-Demo – ohne Account, direkt im Browser.',
   },
   {
-    question: '„Kostet das den Verein Geld?"',
+    question: '„Kostet das den Verein Geld?“',
     answer:
       'Aktuell nicht. Statix ist kostenlos nutzbar, ohne Kreditkarte und ohne Bezahlvorgang in der App. Du brauchst also niemanden zu fragen, um am Samstag anzufangen.',
   },
@@ -99,6 +99,6 @@ export const JUGENDTRAINER_FAQS: BoardFaqItem[] = [
   {
     question: 'Was mache ich mit den Zahlen im Training?',
     answer:
-      'Verbinde sie mit dem Wurfbild: Sinkt die Quote nur aus einer Zone, kennst du das Übungsziel. Und sprich Zahlen positiv an – „aus dem Rückraum bist du bei 58 Prozent, lass uns die Sprungwürfe schärfen" wirkt besser als reine Kritik.',
+      'Verbinde sie mit dem Wurfbild: Sinkt die Quote nur aus einer Zone, kennst du das Übungsziel. Und sprich Zahlen positiv an – „aus dem Rückraum bist du bei 58 Prozent, lass uns die Sprungwürfe schärfen“ wirkt besser als reine Kritik.',
   },
 ];

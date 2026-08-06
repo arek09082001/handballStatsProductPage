@@ -4,7 +4,8 @@
     "headings": {
       "product": "Product",
       "legal": "Legal",
-      "contact": "Contact"
+      "contact": "Contact",
+      "audience": "For coaches & clubs"
     },
     "product": {
       "demo": "Live demo",
@@ -31,7 +32,16 @@
       "agb": "Terms & Conditions",
       "newsletterUnsubscribe": "Unsubscribe from newsletter"
     },
-    "copyright": "Copyright © {year}. All rights reserved."
+    "copyright": "Copyright © {year}. All rights reserved.",
+    "audience": {
+      "pricing": "Pricing",
+      "free": "Use it for free",
+      "excelTemplate": "Excel template",
+      "calculator": "Shot quota calculator",
+      "clubs": "For clubs",
+      "youthCoaches": "For youth coaches",
+      "experiences": "Experiences"
+    }
   },
   "agbPage": {
     "header": {
@@ -220,6 +230,7 @@
     "items": {
       "home": "Home",
       "features": "Features",
+      "pricing": "Pricing",
       "howItWorks": "How it works",
       "ai": "AI analysis",
       "tournament": "Tournament",

@@ -52,7 +52,7 @@ export default async function TestimonialsSection() {
                 </p>
               ) : null}
               <blockquote className='mt-3 text-[15px] leading-7 text-ink/80'>
-                „{testimonial.quote}"
+                „{testimonial.quote}“
               </blockquote>
               <p className='mt-4 font-display text-sm font-bold text-ink'>{testimonial.name}</p>
               <p className='text-sm text-ink/60'>
