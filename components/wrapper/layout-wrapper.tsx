@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Footer from '@/components/custom-ui/footer';
-import { SiteNavbar } from '@/features/navigation';
+import { MAIN_CONTENT_ID, SiteNavbar, SkipLink } from '@/features/navigation';
 import PageTransition from './page-transition';
 import ScrollToTop from './scroll-to-top';
 import { AnimatePresence } from 'framer-motion';
@@ -25,12 +25,18 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
   return (
     <div className='relative bg-background h-full'>
       <ScrollToTop />
+      <SkipLink />
       <SiteNavbar />
-      <div className='overflow-hidden'>
+      {/* `tabIndex={-1}` so the skip link can move focus here; `scroll-mt-28`
+       * keeps the fixed navbar from covering the first heading. */}
+      <main
+        id={MAIN_CONTENT_ID}
+        tabIndex={-1}
+        className='overflow-hidden scroll-mt-28 focus:outline-none'>
         <AnimatePresence mode='wait' initial={false}>
           <PageTransition key={pathname}>{children}</PageTransition>
         </AnimatePresence>
-      </div>
+      </main>
       {!isAdminRoute && (
         <>
           <Footer />

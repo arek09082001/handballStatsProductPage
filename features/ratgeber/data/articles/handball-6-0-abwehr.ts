@@ -3,7 +3,7 @@ import type { Article } from '../../types';
 export const handball60Abwehr: Article = {
   slug: 'handball-6-0-abwehr',
   title: 'Die 6:0-Abwehr im Handball: kompakt stehen und den Kreis dichtmachen',
-  metaTitle: 'Die 6:0-Abwehr im Handball',
+  metaTitle: 'Die 6:0-Abwehr im Handball: Aufgaben, Übungen & Fehler',
   metaDescription:
     'Die 6:0-Abwehr im Handball erklärt: Grundordnung, Aufgaben der Innen- und Halbverteidiger, Verschieben, Vor- und Nachteile sowie Übungen für ein kompaktes Abwehrsystem.',
   keywords: [

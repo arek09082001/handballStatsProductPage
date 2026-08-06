@@ -32,12 +32,14 @@
     "titles": {
       "email": "Email to",
       "impressum": "To the legal notice and privacy policy",
-      "agb": "To the general terms and conditions"
+      "agb": "To the general terms and conditions",
+      "llmsTxt": "Machine-readable brief for AI assistants"
     },
     "legal": {
       "impressumAndPrivacy": "Legal & Privacy",
       "agb": "Terms & Conditions",
-      "newsletterUnsubscribe": "Unsubscribe from newsletter"
+      "newsletterUnsubscribe": "Unsubscribe from newsletter",
+      "llmsTxt": "llms.txt"
     },
     "copyright": "Copyright © {year}. All rights reserved."
   },
@@ -237,8 +239,17 @@
       "demo": "Live demo",
       "impressum": "Legal",
       "ratgeber": "Guide",
-      "aboutStatix": "What is Statix?"
+      "aboutStatix": "What is Statix?",
+      "forCoaches": "For coaches",
+      "forClubs": "For clubs",
+      "forYouthCoaches": "For youth coaches",
+      "shotQuotaCalculator": "Shot quota calculator"
     },
+    "groups": {
+      "audience": "Who it's for",
+      "tools": "Free tools"
+    },
+    "skipToContent": "Skip to content",
     "registerCta": "Register now",
     "languageSwitcher": {
       "label": "Switch language",

@@ -44,7 +44,7 @@ export default function BoardSettings({
   onClear,
   className,
 }: BoardSettingsProps) {
-  const labelClass = 'block text-[12px] font-semibold uppercase tracking-wide text-ink/55';
+  const labelClass = 'block text-[13px] font-semibold uppercase tracking-wide text-ink/55';
   const fieldClass =
     'h-11 w-full rounded-xl border border-ink/15 bg-paper px-3 text-sm text-ink outline-none transition-colors hover:border-ink/30 focus:border-primary focus:ring-2 focus:ring-primary/25';
   const chipClass =

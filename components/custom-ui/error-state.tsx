@@ -49,7 +49,7 @@ function ErrorState({
           )}
 
           {/* Help Text */}
-          <p className='text-xs text-slate-500 mt-4'>
+          <p className='text-[13px] text-slate-500 mt-4'>
             Wenn das Problem weiterhin besteht, kontaktieren Sie uns bitte.
           </p>
         </div>

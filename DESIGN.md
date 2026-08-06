@@ -65,6 +65,11 @@ logic (orange = us, blue = them) is a system rule, not a palette accident.
   body or primary headlines.
 - **Numerals:** always `tabular-nums`. Jersey/score numbers set in Archivo; data
   tables in Inter tabular.
+- **Size floor: 13px.** Nothing user‑facing goes below `text-[13px]` — not
+  captions, not chips, not uppercase micro‑labels, not the copyright line. The
+  reader is a coach glancing at a phone on a bright sideline, not a designer at
+  a 27″ display. Use weight, colour or `tracking` to make a label recede, never
+  size. (`text-xs` and the `text-[10/11/12px]` arbitraries are therefore out.)
 
 ## Signature primitives (`features/landing-page/components/tactic/`)
 

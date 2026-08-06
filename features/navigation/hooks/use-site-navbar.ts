@@ -127,10 +127,21 @@ export const useSiteNavbar = () => {
   /**
    * Whether a nav item is the currently active one. On the landing page this is
    * driven by the scroll-spy section; elsewhere it falls back to route matching.
-   * External links never count as active.
+   * A dropdown counts as active while any of its sub-links is the current
+   * route. External links never count as active.
    */
   const isItemActive = (item: NavigationItem) => {
     if (item.external) {
+      return false;
+    }
+
+    if (item.groups) {
+      return item.groups.some((group) =>
+        group.items.some((child) => isActive(child.href)),
+      );
+    }
+
+    if (!item.href) {
       return false;
     }
 

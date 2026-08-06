@@ -3,7 +3,7 @@ import type { Article } from '../../types';
 export const handball51Abwehr: Article = {
   slug: 'handball-5-1-abwehr',
   title: 'Die 5:1-Abwehr im Handball: den Rückraum stören mit dem vorgezogenen Spieler',
-  metaTitle: 'Die 5:1-Abwehr im Handball',
+  metaTitle: 'Die 5:1-Abwehr im Handball: Aufgaben, Stärken & Übungen',
   metaDescription:
     'Die 5:1-Abwehr im Handball erklärt: Aufgaben des vorgezogenen Spitzenspielers und der Fünferkette, Vor- und Nachteile, wann sie sich lohnt und passende Übungen.',
   keywords: [

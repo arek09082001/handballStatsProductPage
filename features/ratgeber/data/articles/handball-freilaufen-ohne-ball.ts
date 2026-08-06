@@ -3,7 +3,7 @@ import type { Article } from '../../types';
 export const handballFreilaufenOhneBall: Article = {
   slug: 'handball-freilaufen-ohne-ball',
   title: 'Freilaufen im Handball: das Spiel ohne Ball, das den Unterschied macht',
-  metaTitle: 'Freilaufen im Handball lernen',
+  metaTitle: 'Freilaufen im Handball lernen: Laufwege & Übungen',
   metaDescription:
     'Freilaufen im Handball: Warum das Spiel ohne Ball über Räume entscheidet, wie du Laufwege, Timing und Anbieten lernst und mit welchen Übungen du es trainierst.',
   keywords: [

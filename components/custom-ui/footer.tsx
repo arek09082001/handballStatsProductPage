@@ -157,8 +157,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='flex flex-col gap-4 pt-5 text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-center'>
+        <div className='flex flex-col items-center gap-2 pt-5 text-[13px] text-slate-400 sm:flex-row sm:justify-center sm:gap-4'>
           <p>{t('copyright', { year: new Date().getFullYear() })}</p>
+          {/* Plain anchor, not `Link`: /llms.txt is a route handler, not a page,
+           * so there is nothing for the client router to prefetch. The link
+           * exists so crawlers and answer engines find the file at all — it is
+           * otherwise only referenced from robots.txt. */}
+          <a
+            href='/llms.txt'
+            title={t('titles.llmsTxt')}
+            className='rounded-sm underline-offset-4 transition-colors duration-300 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+            {t('legal.llmsTxt')}
+          </a>
         </div>
       </div>
     </footer>

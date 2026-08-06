@@ -145,7 +145,7 @@ export default function BoardObjectEditor({
       style={{ left, top, width: CARD_WIDTH }}>
       {target.type === 'magnet' ? (
         <>
-          <p className='text-[12px] font-semibold uppercase tracking-wide text-ink/55'>
+          <p className='text-[13px] font-semibold uppercase tracking-wide text-ink/55'>
             Magnet
           </p>
           {/* Two by two rather than four across: at 268 px wide a four-column
@@ -178,7 +178,7 @@ export default function BoardObjectEditor({
           ) : (
             <div className='mt-3'>
               <label
-                className='block text-[12px] font-semibold uppercase tracking-wide text-ink/55'
+                className='block text-[13px] font-semibold uppercase tracking-wide text-ink/55'
                 htmlFor='taktikboard-editor-nummer'>
                 Rückennummer
               </label>
@@ -226,7 +226,7 @@ export default function BoardObjectEditor({
         </>
       ) : target.type === 'arrow' ? (
         <>
-          <p className='text-[12px] font-semibold uppercase tracking-wide text-ink/55'>
+          <p className='text-[13px] font-semibold uppercase tracking-wide text-ink/55'>
             Pfeil
           </p>
           <div className='mt-2 flex gap-1.5'>
@@ -258,7 +258,7 @@ export default function BoardObjectEditor({
       ) : (
         <>
           <label
-            className='block text-[12px] font-semibold uppercase tracking-wide text-ink/55'
+            className='block text-[13px] font-semibold uppercase tracking-wide text-ink/55'
             htmlFor='taktikboard-editor-notiz'>
             Notiz
           </label>
@@ -273,7 +273,7 @@ export default function BoardObjectEditor({
             onChange={(event) => onChangeLabel(target.object.id, event.target.value)}
             className='mt-1.5 h-11 w-full rounded-lg border border-ink/15 bg-paper px-3 text-base text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/25'
           />
-          <p className='mt-1.5 text-[12px] text-ink/55'>
+          <p className='mt-1.5 text-[13px] text-ink/55'>
             Höchstens {LABEL_MAX_CHARS} Zeichen – ein Wort, kein Satz.
           </p>
         </>
