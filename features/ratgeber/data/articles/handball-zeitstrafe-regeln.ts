@@ -22,8 +22,8 @@ export const handballZeitstrafeRegeln: Article = {
   excerpt:
     'Gelb, zwei Minuten, rot, blau: Das Strafensystem im Handball wirkt kompliziert, folgt aber einer klaren Logik. Hier sind alle Strafen verständlich erklärt.',
   heroEyebrow: 'Grundlagen & Regeln',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handball-Schiedsrichter zeigt die Zwei-Minuten-Zeitstrafe an',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Statix-Spielertabelle mit den Disziplin-Spalten für Zwei-Minuten-Strafen, Gelb und Rot',
   body: `Warum sitzt der Spieler jetzt auf der Bank? Warum gab es Gelb statt zwei Minuten? Und was bedeutet die blaue Karte? Das Strafensystem im Handball wirkt für Einsteiger unübersichtlich, folgt aber einer klaren Stufenlogik: Je gravierender oder wiederholter ein Vergehen, desto härter die Strafe. Wer diese Stufen kennt, versteht jede Entscheidung des Schiedsrichters.
 
 ## Der Grundgedanke: progressive Bestrafung

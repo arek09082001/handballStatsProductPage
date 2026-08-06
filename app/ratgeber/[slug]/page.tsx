@@ -4,7 +4,7 @@ import ArticlePage from '@/features/ratgeber/pages/article-page';
 import type { Breadcrumb } from '@/features/ratgeber/components/article-breadcrumbs';
 import ArticleSchema from '@/components/seo/article-schema';
 import { createPageMetadata } from '@/lib/seo';
-import { CLUB_CONFIG } from '@/lib/club-config';
+import { ARTICLE_AUTHOR } from '@/features/ratgeber/data/author';
 import {
   articlePath,
   getAllArticleSlugs,
@@ -47,7 +47,7 @@ export async function generateMetadata({
     article: {
       publishedTime: article.datePublished,
       modifiedTime: article.dateModified,
-      authors: [CLUB_CONFIG.legal.responsiblePerson],
+      authors: [ARTICLE_AUTHOR.name],
       section: article.category,
       tags: article.keywords,
     },

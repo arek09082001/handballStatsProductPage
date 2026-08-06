@@ -22,8 +22,8 @@ export const handballMinihandballKinder: Article = {
   excerpt:
     'Bei den Jüngsten zählt nicht Taktik, sondern Spaß, Bewegung und Ballgefühl. Hier bekommst du Praxistipps, wie du Kindern im Minihandball spielerisch die Freude am Sport vermittelst.',
   heroEyebrow: 'Jugend & Entwicklung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Kinder beim Minihandball-Training in der Halle',
+  imagePath: '/mannschaft-spielerwerte.jpg',
+  imageAlt: 'Spielerübersicht in Statix zur Dokumentation der Entwicklung junger Handballer',
   body: `Im Minihandball entscheidet sich, ob Kinder dem Handball treu bleiben – oder nach ein paar Wochen wieder verschwinden. Bei den Jüngsten geht es nicht um Taktik, Systeme oder Wurfquoten, sondern um Bewegungsfreude, Ballgefühl und vor allem Spaß. In diesem Ratgeber bekommst du Praxistipps, wie du Kindern zwischen etwa 5 und 8 Jahren spielerisch die Grundlagen und die Begeisterung fürs Handballspielen vermittelst.
 
 ## Was ist Minihandball?

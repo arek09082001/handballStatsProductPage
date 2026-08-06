@@ -22,8 +22,8 @@ export const handballVerletzungenVorbeugen: Article = {
   excerpt:
     'Knie, Schulter, Sprunggelenk: Handball ist hart zu Gelenken und Sehnen. Hier bekommst du konkrete Präventionsübungen und Routinen, mit denen dein Team gesünder durch die Saison kommt.',
   heroEyebrow: 'Training & Planung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballteam beim präventiven Aufwärmen vor dem Training',
+  imagePath: '/saison-uebersicht-kennzahlen.jpg',
+  imageAlt: 'Saisonbilanz in Statix als Grundlage, um Einsatzzeiten und Belastung zu steuern',
   body: `Handball ist schnell, körperbetont und voller Sprünge, Stopps und Richtungswechsel – und genau das macht ihn hart zu Gelenken und Sehnen. Die gute Nachricht: Ein großer Teil der typischen Handballverletzungen lässt sich mit gezielter Prävention deutlich reduzieren. In diesem Ratgeber erfährst du, welche Verletzungen im Handball besonders häufig sind und mit welchen Übungen und Routinen du ihnen vorbeugst.
 
 ## Die typischen Handballverletzungen

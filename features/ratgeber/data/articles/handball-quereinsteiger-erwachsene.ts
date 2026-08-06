@@ -22,8 +22,8 @@ export const handballQuereinsteigerErwachsene: Article = {
   excerpt:
     'Zu alt für Handball? Von wegen. Auch als Erwachsener ohne Vorerfahrung kannst du einsteigen – wenn du weißt, worauf es ankommt. So gelingt der Quereinstieg.',
   heroEyebrow: 'Jugend & Entwicklung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Erwachsene Handball-Anfänger beim Training in der Halle',
+  imagePath: '/mannschaft-spielerwerte.jpg',
+  imageAlt: 'Spielerprofile in Statix mit Position, Spielen und Wurfquote je Spieler',
   body: `„Dafür bin ich zu alt" – dieser Gedanke hält viele davon ab, mit Handball anzufangen. Dabei stimmt er nicht. Zwar lernen die meisten Handballer den Sport als Kind, aber ein Quereinstieg als Erwachsener ist absolut möglich – ob als früherer Fußballer oder Basketballer, als sportlicher Wiedereinsteiger oder als kompletter Neuling. Handball ist teamorientiert, sozial und macht in jedem Alter Spaß. Wichtig ist nur, mit den richtigen Erwartungen zu starten.
 
 ## Ist ein Quereinstieg wirklich möglich?

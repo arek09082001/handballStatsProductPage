@@ -1,6 +1,6 @@
 import JsonLdScript from './json-ld-script';
 import { absoluteUrl, SITE_URL } from '@/lib/seo';
-import { CLUB_CONFIG } from '@/lib/club-config';
+import { ARTICLE_AUTHOR } from '@/features/ratgeber/data/author';
 import type { Article } from '@/features/ratgeber/types';
 
 type BreadcrumbItem = {
@@ -46,10 +46,17 @@ export default function ArticleSchema({
       '@type': 'WebPage',
       '@id': url,
     },
+    // Mirrors the visible byline and author box — same record, so the markup
+    // can never claim an author the page does not show.
     author: {
       '@type': 'Person',
-      name: CLUB_CONFIG.legal.responsiblePerson,
-      url: SITE_URL,
+      name: ARTICLE_AUTHOR.name,
+      jobTitle: ARTICLE_AUTHOR.role,
+      description: ARTICLE_AUTHOR.bio,
+      url: absoluteUrl(ARTICLE_AUTHOR.profilePath),
+      ...(ARTICLE_AUTHOR.photoPath
+        ? { image: absoluteUrl(ARTICLE_AUTHOR.photoPath) }
+        : {}),
     },
     publisher: {
       '@id': `${SITE_URL}/#organization`,

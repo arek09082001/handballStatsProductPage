@@ -22,8 +22,8 @@ export const handballBeweglichkeitDehnen: Article = {
   excerpt:
     'Eine bewegliche Wurfschulter wirft härter, eine mobile Hüfte fintiert besser. So dehnst du richtig – dynamisch vor dem Spiel, ruhig danach – und beugst Verletzungen vor.',
   heroEyebrow: 'Training & Planung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballspieler bei einer Mobility-Übung für die Wurfschulter',
+  imagePath: '/saison-uebersicht-kennzahlen.jpg',
+  imageAlt: 'Übersicht aller Spiele einer Saison in Statix zur Einschätzung der Gesamtbelastung',
   body: `Beweglichkeit ist im Handball keine Kür, sondern Leistungsfaktor. Eine frei bewegliche Wurfschulter erzeugt mehr Vorspannung und damit mehr Wurfkraft. Eine mobile Hüfte macht Finten und Richtungswechsel flüssiger. Und ein gutes Bewegungsausmaß schützt genau die Gelenke, die im Handball am häufigsten leiden: Schulter, Knie und Sprunggelenk. Wer Beweglichkeit vernachlässigt, verschenkt Leistung und riskiert Verletzungen.
 
 ## Beweglichkeit ist nicht gleich Dehnen

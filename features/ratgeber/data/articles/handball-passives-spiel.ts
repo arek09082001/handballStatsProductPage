@@ -22,8 +22,8 @@ export const handballPassivesSpiel: Article = {
   excerpt:
     'Der Arm des Schiedsrichters geht nach oben – und plötzlich hat der Angriff nur noch wenige Pässe. Was passives Spiel bedeutet, wann es gepfiffen wird und wie du richtig reagierst.',
   heroEyebrow: 'Grundlagen & Regeln',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Schiedsrichter zeigt das Vorwarnzeichen für passives Spiel im Handball',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Live-Auswertung in Statix mit Wurfquote, Ballverlusten und Wurfbild',
   body: `Handball lebt vom Tempo und vom Torabschluss. Damit keine Mannschaft den Ball endlos hin- und herschiebt, ohne einen Angriff aufzubauen, gibt es die Regel zum passiven Spiel. Für Einsteiger ist sie oft rätselhaft: Warum hebt der Schiedsrichter plötzlich den Arm, und warum wird der Angriff auf einmal hektisch? Die Antwort ist eine klare, sinnvolle Regel.
 
 ## Was passives Spiel bedeutet
