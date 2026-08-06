@@ -17,7 +17,7 @@ export const handballExpectedGoalsXg: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Nicht jeder Wurf ist gleich gut. Expected Goals bewerten die Qualität einer Wurfchance – unabhängig davon, ob der Ball reingeht. So trennst du gute Entscheidungen von Glück und Pech.',
@@ -50,6 +50,8 @@ Profi-Ligen berechnen daraus mit großen Datenmengen exakte Modelle. Für den Am
 ## Warum die Kennzahl im Handball so wertvoll ist
 
 Handball ist ein Sport mit hohem Tempo und vielen Würfen. Einzelne Ergebnisse schwanken stark – ein heißer Torwart oder ein Pfostenpech verzerrt jede einfache Trefferquote – die du zum Vergleich mit dem [Wurfquoten-Rechner](/wurfquote-rechner) in Sekunden ermittelst. xG glättet dieses Rauschen und beantwortet die eigentlich wichtige Frage: **Spielt meine Mannschaft gute Chancen heraus?**
+
+Genau so ein Spiel haben wir verloren: Wir haben die klareren Chancen herausgespielt, ihr Torwart hat einen Sahnetag erwischt, und am Ende stand trotzdem eine Niederlage auf dem Papier. Ohne die Chancenqualität danebenzulegen, zieht man daraus die falsche Lehre – und arbeitet im Training am Angriff, der eigentlich funktioniert hat.
 
 Das trennt zwei Dinge, die sonst vermischt werden:
 

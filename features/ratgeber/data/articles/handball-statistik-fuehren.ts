@@ -18,7 +18,7 @@ export const handballStatistikFuehren: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-05-12',
-  dateModified: '2026-07-08',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Tore zählen kann jeder – aber welche Kennzahlen bringen dich wirklich weiter? Ein praktischer Überblick über die wichtigsten Werte, offensiv wie defensiv, und wie du stressfrei damit startest.',
@@ -72,6 +72,8 @@ Wenn du je zwei bis drei Werte pro Spielphase im Blick hast, bekommst du ein aus
 ## Wie viel Statistik ist sinnvoll?
 
 Der größte Anfängerfehler ist, alles auf einmal erfassen zu wollen. Wer am Spieltag zehn Kennzahlen parallel mitschreibt, macht Fehler, verpasst Szenen und gibt irgendwann entnervt wieder auf. Weniger, aber sauber ist immer besser als viel und lückenhaft.
+
+Bei mir war es die Zweikampfquote. Sie steht in jeder Kennzahlenliste, klingt sinnvoll – und ist am Spieltag schlicht nicht zu erfassen. Es passieren zu viele Zweikämpfe zu schnell hintereinander, und während du noch überlegst, ob das jetzt ein gewonnener war, läuft das Spiel weiter und du verpasst zwei Würfe. Nach ein paar Spielen habe ich sie wieder rausgenommen und seitdem nie vermisst.
 
 Fang mit drei bis fünf Kennzahlen an, die zu deinem aktuellen Trainingsziel passen. Ein sinnvoller Startsatz sieht zum Beispiel so aus:
 

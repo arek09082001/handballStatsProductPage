@@ -18,7 +18,7 @@ export const handballSpielerentwicklungMessen: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-06-21',
-  dateModified: '2026-07-11',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Entwicklung passiert oft unbemerkt. Wer sie misst, kann Spieler gezielt fördern – mit den richtigen Kennzahlen, klaren Zielen und einem Blick für den Verlauf über die Saison.',
@@ -76,6 +76,8 @@ Der eigentliche Wert entsteht über die Zeit. Ein einzelner Spielwert ist Zufall
 Zahlen sind ein hervorragender Gesprächseinstieg, weil sie sachlich sind und niemanden bloßstellen. Zeig dem Spieler seinen Verlauf und lass ihn selbst deuten: "Was fällt dir auf?" So entsteht ein Dialog statt einer Standpauke. Bleib dabei entwicklungsorientiert – es geht um das nächste Ziel, nicht um ein Urteil über die Person. Lob konkret ("Deine Ballverluste sind deutlich runter"), statt pauschal ("gut gemacht").
 
 ## Talente erkennen und fördern
+
+Der Spieler, der mich am meisten überrascht hat, hatte nie ein herausragendes Spiel. Kein Spiel mit acht Toren, keine Szene, über die nach dem Abpfiff geredet wurde – aber über die Saison ging seine Kurve gleichmäßig nach oben. Genau solche Entwicklungen bekommt das Gedächtnis nicht mit: Es erinnert sich an Höhepunkte, nicht an Steigungen.
 
 Das größte Talent ist selten der Spieler mit den besten Zahlen von heute, sondern der mit dem steilsten Verlauf. Achte auf Entwicklungsgeschwindigkeit statt nur auf den Momentwert. Fördere Vielseitigkeit, gib jungen Spielern verschiedene Positionen und habe Geduld – Entwicklung verläuft in Sprüngen und Plateaus, nicht linear.
 

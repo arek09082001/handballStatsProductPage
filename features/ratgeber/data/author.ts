@@ -5,10 +5,10 @@ import { CLUB_CONFIG } from '@/lib/club-config';
  * (`ArticleHeader`), the author box (`ArticleAuthorBox`) and the `author`
  * Person node in the BlogPosting schema, so the three can never drift apart.
  *
- * `bio` is currently the product truth from PRODUCT.md ("Made by a handballer,
- * in Germany ... built out of real sideline practice"). Replace it with a
- * first-person handball background — playing/coaching history, club, level —
- * which is what actually carries experience signals. Do not invent one.
+ * `bio` and `role` describe the author's real handball background, supplied by
+ * him: goalkeeper for over ten years, also coaching, at Kreis-/Bezirksliga
+ * level. Keep any edit to facts he has confirmed — an invented CV here is
+ * exactly the kind of thing a manual action punishes.
  *
  * `photoPath` is null until a real photo of the author is added to `public/`.
  * With no photo the box falls back to an initials monogram rather than showing
@@ -26,8 +26,8 @@ export interface ArticleAuthor {
 
 export const ARTICLE_AUTHOR: ArticleAuthor = {
   name: CLUB_CONFIG.legal.responsiblePerson,
-  role: 'Handballer und Gründer von Statix',
-  bio: 'Statix entsteht aus der Praxis am Spielfeldrand: Arkadiusz Weiss ist selbst Handballer und baut die App aus dem, was in der Halle wirklich gebraucht wird. Rückmeldungen von Trainerinnen und Trainern fließen direkt in das Produkt ein.',
+  role: 'Torwart, Trainer und Gründer von Statix',
+  bio: 'Arkadiusz Weiss steht seit über zehn Jahren im Handballtor und trainiert selbst eine Mannschaft in der Kreis- und Bezirksliga – genau der Alltag, für den diese Ratgeber geschrieben sind. Statix ist aus diesem Alltag entstanden: aus dem Zettel am Spielfeldrand, aus dem nach dem Abpfiff nie eine brauchbare Auswertung wurde.',
   photoPath: null,
   profilePath: '/was-ist-statix',
 };

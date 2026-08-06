@@ -17,7 +17,7 @@ export const handballBallbesitzTempo: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Wer mehr Angriffe hat, hat mehr Chancen – wenn er sie nutzt. Ballbesitz, Effektivität und Tempo erklären, warum Spiele so ausgehen, wie sie ausgehen. So misst und steuerst du sie.',
@@ -46,6 +46,8 @@ Die Kennzahl vereint zwei Dinge zu einer aussagekräftigen Größe:
 - **Wurfausbeute** (aus den verbleibenden Angriffen entstehen Würfe, die fallen oder nicht)
 
 Eine Mannschaft mit guter [Wurfquote](/ratgeber/wurfquote-berechnen), aber vielen Ballverlusten, kann trotzdem ineffektiv sein – weil sie gar nicht erst zum Wurf kommt.
+
+Genau das haben wir erlebt: gleich viele Angriffe wie der Gegner, am Ende trotzdem deutlich verloren. Nicht weil wir schlechter geworfen hätten, sondern weil zu viele Angriffe ohne Wurf endeten – Fehlpass, Schrittfehler, Stürmerfoul. Die Wurfquote sah in Ordnung aus, die Effektivität nicht.
 
 ## Tempo verstehen und messen
 

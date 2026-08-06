@@ -17,7 +17,7 @@ export const wurfquoteBerechnen: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-06-02',
-  dateModified: '2026-07-10',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 7,
   excerpt:
     'Die Wurfquote ist die wichtigste Basiskennzahl im Handball. Hier findest du die Formel, ein Rechenbeispiel, Richtwerte nach Position – und die Fallstricke, die du kennen solltest.',
@@ -76,6 +76,8 @@ Eine hohe Wurfquote ist nicht automatisch gut, eine niedrige nicht automatisch s
 - **Wurfanzahl:** 100 % aus einem Wurf ist weniger wert als 55 % aus zwanzig Würfen. Wer die Verantwortung übernimmt, hat oft die undankbarere Quote.
 - **Wurfposition und Chancenqualität:** Wer nur klare Konter abschließt, hat es leichter als ein Rückraumspieler, der gegen den Block ziehen muss. Eine Wurfquote nach Position (siehe oben) sagt mehr als ein einzelner Gesamtwert.
 - **Spielkontext:** In der Schlussphase unter Druck oder in Unterzahl sinken Quoten – das ist normal und kein Zeichen für nachlassende Leistung.
+
+Bei uns war der beste Torschütze über Wochen gleichzeitig der Spieler mit der schlechtesten Quote – er hat einfach am meisten geworfen. In der Torschützenliste stand er ganz oben, in der Effizienz ganz unten. Das ist kein Widerspruch, aber man sieht es erst, wenn man beide Werte nebeneinanderlegt.
 
 Deshalb betrachten erfahrene Trainer die Wurfquote nie isoliert, sondern zusammen mit Wurfbildern (wo wurde geworfen?) und der Anzahl der Abschlüsse.
 

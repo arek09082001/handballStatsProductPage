@@ -17,7 +17,7 @@ export const handballTorwartStatistik: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Die Paradenquote allein sagt wenig – ein Torwart hinter einer schwachen Abwehr sieht immer schlechter aus. So bewertest du Torwartleistung fair und findest, wo dein Keeper wirklich stark ist.',
@@ -54,6 +54,8 @@ Aussagekräftig wird die Torwartstatistik erst, wenn du die Quote nach Wurfzonen
 - **Tempogegenstöße:** Meist hochwertige Chancen; niedrige Quoten sind normal.
 
 Erst diese Aufschlüsselung trennt Torwart- von Abwehrleistung. Viele Gegentore aus dem Rückraum? Dann sollte der Keeper daran arbeiten. Viele Gegentore vom Kreis? Dann muss die Abwehr enger stehen.
+
+Das ist keine Theorie: Ich stehe selbst im Tor, und meine Gesamtquote sah lange schlechter aus, als sich die Spiele angefühlt haben. Erst aufgeschlüsselt nach Zonen war klar, woran es lag – die freien Nahwürfe vom Kreis und nach Durchbrüchen zogen den Wert nach unten. Das war kein Torwartproblem, sondern ein Abwehrproblem, das in meiner Statistik gelandet ist.
 
 ## Die Abwehr immer mitdenken
 

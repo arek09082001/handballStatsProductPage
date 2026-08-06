@@ -18,7 +18,7 @@ export const handballSpielanalyse: Article = {
   ],
   category: 'Spielanalyse',
   datePublished: '2026-06-25',
-  dateModified: '2026-07-12',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 9,
   excerpt:
     'Gute Spielanalyse macht aus dem Bauchgefühl belastbare Entscheidungen. Hier erfährst du, wie du vor, während und nach dem Spiel systematisch auswertest – von der Gegneranalyse über Wurfbilder bis zur Phasenanalyse.',
@@ -61,6 +61,8 @@ Im Spiel hast du keine Zeit für Romane. Beschränke dich auf wenige, klar defin
 - auffällige Muster beim Gegner, die im Scouting nicht aufgetaucht sind
 
 Aus diesen Daten werden konkrete Entscheidungen. Reißen kurz hintereinander drei Angriffe ab, ist das ein datenbasierter Anlass für eine Auszeit – nicht erst dann, wenn der Vorsprung schon weg ist. Trifft ein gegnerischer Rückraumspieler dreimal aus derselben Zone, weißt du genau, wo deine Abwehr nachjustieren muss.
+
+Die Entscheidung, die ich am häufigsten aus den Live-Zahlen treffe, ist die Umstellung der Abwehr. Wenn sich die Gegentore in einer Zone häufen – meistens Distanzwürfe über eine bestimmte Seite –, steht das schwarz auf weiß da, lange bevor man es als Muster im Kopf hat. Dann rücken wir aus der 6:0 offensiver auf genau diesen Werfer heraus, statt bis zur Halbzeitpause zu warten.
 
 Ein wichtiger Punkt ist das Momentum. Handball lebt von Läufen: Drei, vier Tore in Serie drehen ein ganzes Spiel. Wer live mitverfolgt, wann eine solche Phase kippt, kann früher eingreifen – mit einer Auszeit, einem Wechsel oder einer Systemumstellung – statt der Entwicklung hinterherzulaufen.
 
