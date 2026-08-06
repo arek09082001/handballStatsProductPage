@@ -137,13 +137,11 @@ export const BRAND_FAQS = [
   },
   {
     question: 'Ist Statix kostenlos?',
-    answer:
-      'Du startest kostenlos: Das erste Spiel erfasst du ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es zusätzlich faire, planbare Abos.',
+    answer: `Du startest kostenlos: Registriere dich unter ${CLUB_CONFIG.website.appUrlWithoutProtocol} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es zusätzlich faire, planbare Abos.`,
   },
   {
     question: 'Wie kann ich Statix testen?',
-    answer:
-      'Am schnellsten über die Live-Demo: eine voll ausgestattete Version von Statix mit echten Spieldaten, direkt im Browser und ganz ohne Account. So siehst du in zwei Minuten, wie Statix in der Halle funktioniert.',
+    answer: `Statix ist verfügbar: Du registrierst dich kostenlos unter ${CLUB_CONFIG.website.appUrlWithoutProtocol} und legst direkt mit deinem Team los. Wenn du erst schauen willst, öffnest du die Live-Demo – eine voll ausgestattete Version mit echten Spieldaten, direkt im Browser und ganz ohne Account.`,
   },
   {
     question: 'Auf welchen Geräten läuft Statix?',
@@ -157,6 +155,6 @@ export const BRAND_FAQS = [
   },
   {
     question: 'Wo finde ich Statix im Internet?',
-    answer: `Die offizielle Website von Statix ist ${CLUB_CONFIG.website.domain}. Dort findest du alle Funktionen, den Handball-Ratgeber und die Live-Demo ohne Account. Auf Instagram ist Statix als ${CLUB_CONFIG.social.instagram.handle} aktiv.`,
+    answer: `Die offizielle Website von Statix ist ${CLUB_CONFIG.website.domain}. Dort findest du alle Funktionen, den Handball-Ratgeber und die Live-Demo ohne Account. Die App selbst läuft unter ${CLUB_CONFIG.website.appUrlWithoutProtocol}. Auf Instagram ist Statix als ${CLUB_CONFIG.social.instagram.handle} aktiv.`,
   },
 ] as const;

@@ -16,7 +16,6 @@ export const metadata: Metadata = createPageMetadata({
     'handball taktik',
     'handball wissen für trainer',
   ],
-  imagePath: '/heroImage.png',
 });
 
 export default function Page() {

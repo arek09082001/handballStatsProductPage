@@ -72,6 +72,7 @@ export default async function StructuredData() {
         countriesSupported: 'DE, AT, CH',
         inLanguage: ['de-DE', 'en-GB'],
         url: SITE_URL,
+        installUrl: CLUB_CONFIG.website.appUrl,
         image: absoluteUrl('/heroImage.png'),
         screenshot: APP_SCREENSHOTS.map((path) => absoluteUrl(path)),
         keywords: SEO_KEYWORDS.join(', '),
@@ -84,7 +85,8 @@ export default async function StructuredData() {
           price: '0',
           priceCurrency: 'EUR',
           description:
-            'Kostenlos starten – Live-Demo ohne Account testen, erstes Spiel ohne Verpflichtung erfassen.',
+            'Kostenlos starten – registrieren und das erste Spiel ohne Verpflichtung erfassen; Live-Demo auch ohne Account testbar.',
+          url: CLUB_CONFIG.website.appUrl,
         },
         featureList,
         publisher: {

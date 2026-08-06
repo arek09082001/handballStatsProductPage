@@ -1,3 +1,4 @@
+import { CLUB_CONFIG } from '@/lib/club-config';
 import { NavigationItem } from './interfaces';
 
 export const SITE_NAVBAR_OFFSET = 96;
@@ -66,9 +67,9 @@ export const siteNavigationItems: NavigationItem[] = [
   },
   {
     ident: 4,
-    href: '/#contact',
-    labelKey: 'contact',
-    sectionId: 'contact',
+    href: CLUB_CONFIG.website.demoUrl,
+    labelKey: 'demo',
+    external: true,
   },
 ];
 

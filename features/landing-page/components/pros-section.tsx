@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { ArrowUpRight, Check, X } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
-import { trackDemoClick } from '@/lib/analytics';
+import { trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { BoardCard, Grain, SectionHeading } from './tactic';
 
@@ -114,10 +114,10 @@ export default function ProsSection() {
 
         <div className='mt-12 text-center'>
           <a
-            href={CLUB_CONFIG.website.demoUrl}
+            href={CLUB_CONFIG.website.appUrl}
             target='_blank'
             rel='noopener noreferrer'
-            onClick={() => trackDemoClick('pros')}
+            onClick={() => trackRegisterClick('pros')}
             className='inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 font-display text-sm font-bold text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all hover:-translate-y-0.5 hover:bg-[#ea580c]'>
             {t('cta')}
             <ArrowUpRight className='size-4' />

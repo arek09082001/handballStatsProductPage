@@ -10,9 +10,9 @@ import { CLUB_CONFIG } from '@/lib/club-config';
  * level. Keep any edit to facts he has confirmed — an invented CV here is
  * exactly the kind of thing a manual action punishes.
  *
- * `photoPath` is null until a real photo of the author is added to `public/`.
- * With no photo the box falls back to an initials monogram rather than showing
- * a broken image or a stand-in that is not a person.
+ * `photoPath` may be null; the author box then falls back to an initials
+ * monogram rather than showing a broken image or a stand-in that is not a
+ * person.
  */
 export interface ArticleAuthor {
   name: string;
@@ -28,7 +28,7 @@ export const ARTICLE_AUTHOR: ArticleAuthor = {
   name: CLUB_CONFIG.legal.responsiblePerson,
   role: 'Torwart, Trainer und Gründer von Statix',
   bio: 'Arkadiusz Weiss steht seit über zehn Jahren im Handballtor und trainiert selbst eine Mannschaft in der Kreis- und Bezirksliga – genau der Alltag, für den diese Ratgeber geschrieben sind. Statix ist aus diesem Alltag entstanden: aus dem Zettel am Spielfeldrand, aus dem nach dem Abpfiff nie eine brauchbare Auswertung wurde.',
-  photoPath: null,
+  photoPath: '/arkadiusz-weiss.jpg',
   profilePath: '/was-ist-statix',
 };
 

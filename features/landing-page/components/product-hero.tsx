@@ -2,10 +2,10 @@
 
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Play } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { gsap } from '@/lib/gsap-config';
-import { trackDemoClick } from '@/lib/analytics';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import AppMockup from './app-mockup';
 import HeroActionButton from './hero-action-button';
@@ -18,10 +18,6 @@ import {
   MarkerUnderline,
 } from './tactic';
 import { drawMarkers } from './tactic/draw';
-
-function scrollToId(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
 
 export default function ProductHero() {
   const t = useTranslations('productPage.hero');
@@ -83,14 +79,19 @@ export default function ProductHero() {
           <div className='relative mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start'>
             <HeroActionButton
               variant='primary'
-              icon={<Play className='size-4 fill-current' />}
+              icon={<UserPlus className='size-4' />}
+              href={CLUB_CONFIG.website.appUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => trackRegisterClick('hero')}>
+              {t('primaryCta')}
+            </HeroActionButton>
+            <HeroActionButton
+              variant='secondary'
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
               rel='noopener noreferrer'
               onClick={() => trackDemoClick('hero')}>
-              {t('primaryCta')}
-            </HeroActionButton>
-            <HeroActionButton variant='secondary' onClick={() => scrollToId('features')}>
               {t('secondaryCta')}
             </HeroActionButton>
           </div>
