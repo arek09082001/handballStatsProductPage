@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import BoardCanvas from './board-canvas';
-import BoardToolbar from './board-toolbar';
+import BoardRail from './board-rail';
 import BoardSettings from './board-settings';
 import {
   DEFAULT_FORMATION_ID,
@@ -11,16 +11,18 @@ import {
 } from '../data/formations';
 import {
   BOARD_CAPACITY,
+  BOARD_MODE_OPTIONS,
+  EXPORT_BOARD_WIDTH,
   EXPORT_FILE_NAME,
   TAKTIKBOARD_PAGE_PATH,
 } from '../data/taktikboard-content';
+import { COURT_VIEWS } from '../data/court-geometry';
 import { clamp01, decodeBoard, encodeBoard, sanitizeLabel } from '../lib/board-share';
 import type {
   ArrowColor,
   ArrowHandle,
   ArrowKind,
   BoardArrow,
-  BoardGround,
   BoardMagnet,
   BoardMode,
   BoardSelection,
@@ -28,6 +30,9 @@ import type {
   CourtViewId,
   MagnetKind,
 } from '../interfaces';
+
+/** The off-screen export board takes the same props but never acts on them. */
+function noop() {}
 
 function buildDefaultBoard(): BoardState {
   return {
@@ -51,11 +56,17 @@ function nextNumber(state: BoardState, kind: MagnetKind): number {
   return 99;
 }
 
-/** New magnets land in a tidy row at the far end, like a bench, not on top of each other. */
+/**
+ * New magnets land in a row along the far edge, like a bench.
+ *
+ * Kept in the top two rows on purpose: every ready-made formation leaves that
+ * strip empty, so an added player never appears underneath one that is already
+ * on the court.
+ */
 function spawnSpot(index: number): { x: number; y: number } {
   return {
-    x: clamp01(0.13 + (index % 6) * 0.15),
-    y: clamp01(0.1 + Math.floor(index / 6) * 0.11),
+    x: clamp01(0.1 + (index % 8) * 0.114),
+    y: clamp01(0.055 + (Math.floor(index / 8) % 2) * 0.075),
   };
 }
 
@@ -93,6 +104,7 @@ export default function TaktikboardTool({
   const [origin, setOrigin] = useState('');
 
   const boardRef = useRef<HTMLDivElement | null>(null);
+  const exportRef = useRef<HTMLDivElement | null>(null);
   const idRef = useRef(1);
   const announceTimer = useRef<number | undefined>(undefined);
   const hashTimer = useRef<number | undefined>(undefined);
@@ -146,6 +158,18 @@ export default function TaktikboardTool({
     () => `${origin}${TAKTIKBOARD_PAGE_PATH}#${encodeBoard(board)}`,
     [origin, board],
   );
+
+  const activeMode = BOARD_MODE_OPTIONS.find((option) => option.mode === mode);
+
+  /**
+   * Room for a board that still fits on screen, plus the rail on one side and
+   * the spacer that balances it on the other. The half court is nearly square,
+   * so a board sized off the column width alone runs off the bottom of a
+   * laptop; the height is what binds. 8.5rem is the rail and its gap counted
+   * twice, so the court lands on the page's centre line instead of half a rail
+   * to the right of it.
+   */
+  const containerMaxWidth = `min(100%, calc(82vh * ${COURT_VIEWS[board.view].aspectRatio} + 8.5rem), 1200px)`;
 
   const handleSelect = useCallback((next: BoardSelection) => {
     setSelection(next);
@@ -333,7 +357,12 @@ export default function TaktikboardTool({
       const label = { id: nextId('l'), x: clamp01(x), y: clamp01(y), text: 'Sperre' };
       setBoard((current) => ({ ...current, labels: [...current.labels, label] }));
       setSelection({ type: 'label', id: label.id });
-      setAnnouncement('Notiz gesetzt. Doppeltippen ändert den Text.');
+      // Placing a note is never the whole intent — the text is. Open the editor
+      // on it straight away and hand the move tool back, so the coach types and
+      // is done instead of hunting for a second gesture.
+      setEditorId(label.id);
+      setMode('move');
+      setAnnouncement('Notiz gesetzt. Text eingeben und mit Fertig bestätigen.');
     },
     [board.labels.length, nextId],
   );
@@ -360,16 +389,17 @@ export default function TaktikboardTool({
   }, [shareUrl]);
 
   const exportPng = useCallback(async () => {
-    const node = boardRef.current;
+    // The off-screen copy, never the live board: it is a fixed width, carries no
+    // selection ring and no grab handles, and the coach keeps whatever they had
+    // selected instead of the export quietly clearing it.
+    const node = exportRef.current;
     if (!node) return;
-    setSelection(null);
-    setEditorId(null);
     setNotice(null);
     setIsExporting(true);
     try {
-      // Let the cleared selection paint, and make sure the board's own fonts
-      // are decoded — html2canvas draws text with the page's fonts, so a
-      // pending web font would export the jersey numbers in a fallback face.
+      // Make sure the board's own fonts are decoded — html2canvas draws text
+      // with the page's fonts, so a pending web font would export the jersey
+      // numbers in a fallback face.
       await document.fonts?.ready;
       await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
       const { default: html2canvas } = await import('html2canvas');
@@ -410,71 +440,122 @@ export default function TaktikboardTool({
         {announcement}
       </p>
 
-      <BoardToolbar
-        mode={mode}
-        arrowKind={arrowKind}
-        arrowColor={arrowColor}
-        onModeChange={changeMode}
-        onArrowKindChange={setArrowKind}
-        onArrowColorChange={setArrowColor}
-        onAddMagnet={addMagnet}
-      />
+      {/* Rail beside the board from lg up, above it on a phone. The container
+          is only as wide as the rail plus a board that still fits the viewport
+          height, so the court reads as the main object on the page instead of
+          sitting inside a full-width card. */}
+      <div className='mx-auto w-full' style={{ maxWidth: containerMaxWidth }}>
+        <div className='flex flex-col gap-3 lg:flex-row lg:items-start'>
+          <BoardRail
+            mode={mode}
+            arrowKind={arrowKind}
+            arrowColor={arrowColor}
+            onModeChange={changeMode}
+            onArrowKindChange={setArrowKind}
+            onArrowColorChange={setArrowColor}
+            onAddMagnet={addMagnet}
+          />
 
-      {/* The board sits in a frame, the way a magnetic board hangs in a rail —
-          and so it stays visible when its own ground matches the band behind it. */}
-      <div className='mt-3 rounded-[1.25rem] border border-chalk/15 bg-court-2 p-2 shadow-[0_20px_46px_-28px_hsl(222_40%_4%/0.9)] sm:p-2.5'>
+          <div className='min-w-0 flex-1'>
+            {/* The board sits in a frame, the way a magnetic board hangs in a
+                rail — and so it stays visible when its own ground matches the
+                band behind it. */}
+            <div className='rounded-[1.25rem] border border-chalk/15 bg-court-2 p-2 shadow-[0_20px_46px_-28px_hsl(222_40%_4%/0.9)] sm:p-2.5'>
+              <BoardCanvas
+                state={board}
+                mode={mode}
+                arrowKind={arrowKind}
+                arrowColor={arrowColor}
+                selection={selection}
+                onSelect={handleSelect}
+                onMoveMagnet={moveMagnet}
+                onMoveArrow={moveArrow}
+                onMoveLabel={moveLabel}
+                onRemove={removeObject}
+                onCreateArrow={createArrow}
+                onCreateLabel={createLabel}
+                onChangeMagnet={changeMagnet}
+                onChangeArrow={changeArrow}
+                onChangeLabel={changeLabel}
+                editorId={editorId}
+                onEditorChange={setEditorId}
+                boardRef={boardRef}
+                describedById='taktikboard-keyboard-hilfe'
+              />
+            </div>
+
+            {/* The rail has no labels, so the active tool says out loud what a
+                drag will do. */}
+            <p aria-live='polite' className='mt-2 text-[12.5px] leading-5 text-chalk/60'>
+              {activeMode?.hint}
+            </p>
+          </div>
+
+          {/* Balances the rail so the court sits on the page's centre line and
+              not half a rail to the right of it. */}
+          <span aria-hidden='true' className='hidden w-14 shrink-0 lg:block' />
+        </div>
+
+        {notice ? (
+          <p
+            role='status'
+            className='mt-3 rounded-xl border border-secondary/30 bg-secondary/10 px-3.5 py-3 text-[14px] leading-6 text-ink'>
+            {notice}
+          </p>
+        ) : null}
+
+      </div>
+
+      {/* The board the PNG is rendered from: off screen, a fixed width, and fed
+          the same state through the same component, so an export looks
+          identical whether the coach is on a phone or a beamer. */}
+      <div
+        aria-hidden='true'
+        className='pointer-events-none fixed left-[-99999px] top-0 -z-10'
+        style={{ width: EXPORT_BOARD_WIDTH }}>
         <BoardCanvas
           state={board}
-          mode={mode}
+          mode='move'
           arrowKind={arrowKind}
           arrowColor={arrowColor}
-          selection={selection}
-          onSelect={handleSelect}
-          onMoveMagnet={moveMagnet}
-          onMoveArrow={moveArrow}
-          onMoveLabel={moveLabel}
-          onRemove={removeObject}
-          onCreateArrow={createArrow}
-          onCreateLabel={createLabel}
-          onChangeMagnet={changeMagnet}
-          onChangeArrow={changeArrow}
-          onChangeLabel={changeLabel}
-          editorId={editorId}
-          onEditorChange={setEditorId}
-          boardRef={boardRef}
+          selection={null}
+          onSelect={noop}
+          onMoveMagnet={noop}
+          onMoveArrow={noop}
+          onMoveLabel={noop}
+          onRemove={noop}
+          onCreateArrow={noop}
+          onCreateLabel={noop}
+          onChangeMagnet={noop}
+          onChangeArrow={noop}
+          onChangeLabel={noop}
+          editorId={null}
+          onEditorChange={noop}
+          boardRef={exportRef}
+          renderWidth={EXPORT_BOARD_WIDTH}
           describedById='taktikboard-keyboard-hilfe'
         />
       </div>
 
-      {notice ? (
-        <p
-          role='status'
-          className='mt-3 rounded-xl border border-secondary/30 bg-secondary/10 px-3.5 py-3 text-[14px] leading-6 text-ink'>
-          {notice}
-        </p>
-      ) : null}
-
-      <div className='mt-3'>
-        <BoardSettings
-          formationId={formationId}
-          view={board.view}
-          ground={board.ground}
-          shareUrl={shareUrl}
-          copied={copied}
-          isExporting={isExporting}
-          onFormationChange={applyFormation}
-          onViewChange={(view: CourtViewId) => {
-            setEditorId(null);
-            setBoard((current) => ({ ...current, view }));
-          }}
-          onGroundChange={(ground: BoardGround) =>
-            setBoard((current) => ({ ...current, ground }))
-          }
-          onExport={exportPng}
-          onCopyLink={copyLink}
-          onClear={clearBoard}
-        />
-      </div>
+      {/* Outside the board-width wrapper on purpose: the board is capped by the
+          viewport height, and a select plus three buttons squeezed into that
+          same narrow column wrapped into a tall stack for no reason. */}
+      <BoardSettings
+        className='mt-4'
+        formationId={formationId}
+        view={board.view}
+        shareUrl={shareUrl}
+        copied={copied}
+        isExporting={isExporting}
+        onFormationChange={applyFormation}
+        onViewChange={(view: CourtViewId) => {
+          setEditorId(null);
+          setBoard((current) => ({ ...current, view }));
+        }}
+        onExport={exportPng}
+        onCopyLink={copyLink}
+        onClear={clearBoard}
+      />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import {
 } from '../data/board-palette';
 import { EXPORT_WATERMARK, MAGNET_KIND_OPTIONS } from '../data/taktikboard-content';
 import BoardObjectEditor, { type EditorTarget } from './board-object-editor';
+import { DEFAULT_NUMBER_NUDGE, measureNumberNudge } from '../lib/number-centring';
 import type {
   ArrowColor,
   ArrowHandle,
@@ -84,6 +85,12 @@ interface BoardCanvasProps {
   onEditorChange: (id: string | null) => void;
   /** html2canvas renders exactly this node. */
   boardRef: React.RefObject<HTMLDivElement | null>;
+  /**
+   * Forces the board's pixel width instead of measuring it. Set only by the
+   * off-screen copy the PNG is rendered from, so an export looks the same
+   * whether the coach is on a phone or a beamer.
+   */
+  renderWidth?: number;
   /** Id of the hidden paragraph that explains the keyboard controls. */
   describedById: string;
 }
@@ -133,6 +140,7 @@ export default function BoardCanvas({
   editorId,
   onEditorChange,
   boardRef,
+  renderWidth,
   describedById,
 }: BoardCanvasProps) {
   const view: CourtView = COURT_VIEWS[state.view];
@@ -141,27 +149,50 @@ export default function BoardCanvas({
   const drawRef = useRef<DrawContext | null>(null);
   const lastTapRef = useRef<{ id: string; at: number }>({ id: '', at: 0 });
   const longPressRef = useRef<number | undefined>(undefined);
-  const [boardWidth, setBoardWidth] = useState(0);
+  const [measuredWidth, setMeasuredWidth] = useState(0);
   const [draft, setDraft] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(
     null,
   );
+  const [numberNudge, setNumberNudge] = useState(DEFAULT_NUMBER_NUDGE);
 
-  const drawing = mode !== 'move';
+  /**
+   * True for the off-screen copy the PNG is rendered from: a fixed width, no
+   * grab handles, nothing in the tab order. Everything else — geometry, colours,
+   * token sizing — runs through exactly the same code as the live board, which
+   * is what keeps the export honest.
+   */
+  const isStatic = renderWidth !== undefined;
+  const drawing = !isStatic && mode !== 'move';
+  const boardWidth = renderWidth ?? measuredWidth;
 
   // The magnet has to be a real pixel size, not a percentage: it carries the
   // 44 px touch floor on a phone and must not grow into a beer mat on a beamer.
   useEffect(() => {
     const node = boardRef.current;
-    if (!node) return;
+    if (!node || isStatic) return;
     const observer = new ResizeObserver((entries) => {
-      setBoardWidth(entries[0]?.contentRect.width ?? 0);
+      setMeasuredWidth(entries[0]?.contentRect.width ?? 0);
     });
     observer.observe(node);
-    setBoardWidth(node.getBoundingClientRect().width);
+    setMeasuredWidth(node.getBoundingClientRect().width);
     return () => observer.disconnect();
-  }, [boardRef]);
+  }, [boardRef, isStatic]);
 
   useEffect(() => () => window.clearTimeout(longPressRef.current), []);
+
+  // Optical centring for the jersey numbers, measured on the font that actually
+  // rendered. Waits for the web font, because calibrating against the fallback
+  // and then swapping in Archivo would leave the numbers off by the difference.
+  useEffect(() => {
+    let cancelled = false;
+    const apply = () => {
+      if (!cancelled) setNumberNudge(measureNumberNudge());
+    };
+    document.fonts?.ready.then(apply, apply) ?? apply();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // Tokens are sized off the board's *height*, which is the short side in both
   // views. Sizing off the width would put the same magnet on a 700 px tall half
@@ -482,17 +513,16 @@ export default function BoardCanvas({
   const objectPointerEvents = drawing ? ('none' as const) : ('auto' as const);
 
   return (
-    <div
-      className='relative mx-auto w-full'
-      // Height-capped, not width-capped: a half court is nearly square, so a
-      // board that fills a wide column runs off the bottom of a laptop screen.
-      // The cap keeps the whole court reachable without scrolling away from the
-      // tool strip above it.
-      style={{ maxWidth: `min(100%, calc(78vh * ${view.aspectRatio}), 1200px)` }}>
+    /* The width cap lives on the tool's container, which also has to fit the
+       rail beside the board; here the canvas fills the column it is given. */
+    <div className='relative w-full'>
       <div
         ref={boardRef}
-        role='group'
-        aria-label='Taktikboard – Spielfeld mit Magneten'
+        // The off-screen export copy is not a second board as far as assistive
+        // technology is concerned: no group role, no name, and its wrapper is
+        // aria-hidden, so a screen reader hears one court and not two.
+        role={isStatic ? undefined : 'group'}
+        aria-label={isStatic ? undefined : 'Taktikboard – Spielfeld mit Magneten'}
         onPointerDown={(event) => {
           if (event.target === event.currentTarget) handleCourtPointerDown(event);
         }}
@@ -547,7 +577,7 @@ export default function BoardCanvas({
             fill='none'
             stroke={ground.line}
             strokeWidth={2}
-            strokeDasharray='6 7'
+            strokeDasharray='4 4.5'
             strokeLinecap='round'
           />
           <path
@@ -612,6 +642,7 @@ export default function BoardCanvas({
             <button
               key={label.id}
               type='button'
+              tabIndex={isStatic ? -1 : undefined}
               aria-label={`Notiz: ${label.text}`}
               aria-describedby={describedById}
               onContextMenu={(event) => {
@@ -694,6 +725,7 @@ export default function BoardCanvas({
             <button
               key={magnet.id}
               type='button'
+              tabIndex={isStatic ? -1 : undefined}
               aria-label={name}
               aria-describedby={describedById}
               onContextMenu={(event) => {
@@ -757,11 +789,14 @@ export default function BoardCanvas({
                   background: isBall ? 'transparent' : colors.surface,
                   border: isBall ? 'none' : `1px solid ${colors.rim}`,
                   boxShadow: selectionRing(isSelected, isBall ? undefined : MAGNET_SHADOW),
+                  paddingTop: isBall ? 0 : magnetSize * numberNudge,
                   color: colors.text,
                   fontSize: Math.round(magnetSize * 0.5),
                   fontWeight: 800,
                   fontVariantNumeric: 'tabular-nums',
-                  letterSpacing: '-0.03em',
+                  // No negative tracking: it shortens the advance after the last
+                  // digit, so a centred two-digit number ends up off to the right.
+                  letterSpacing: 'normal',
                   lineHeight: 1,
                 }}>
                 {isBall ? <BallToken size={Math.round(magnetSize * 0.78)} /> : magnet.number}
@@ -772,7 +807,7 @@ export default function BoardCanvas({
 
         {/* Arrow grab handles. Marked as chrome so the PNG shows the arrows
             alone, the way they would be drawn on a real board. */}
-        {state.arrows.map((arrow) => {
+        {(isStatic ? [] : state.arrows).map((arrow) => {
           const isSelected = selection?.type === 'arrow' && selection.id === arrow.id;
           const stroke = arrowStroke(arrow.color, state.ground);
           const handles: { handle: ArrowHandle; x: number; y: number; name: string }[] = [
@@ -971,20 +1006,16 @@ function ArrowPath({
         stroke={stroke}
         strokeWidth={width}
         strokeLinecap='round'
-        strokeDasharray={arrow.kind === 'pass' ? '7 6' : undefined}
+        strokeDasharray={arrow.kind === 'pass' ? '4.5 4' : undefined}
       />
       <g transform={`translate(${end.x} ${end.y}) rotate(${angle})`}>
-        {heavy ? (
-          <path d='M 0 0 L -10 -5.5 L -7 0 L -10 5.5 Z' fill={stroke} stroke='none' />
-        ) : (
-          <path
-            d='M 0 0 L -8 -4.8 M 0 0 L -8 4.8'
-            fill='none'
-            stroke={stroke}
-            strokeWidth={width}
-            strokeLinecap='round'
-          />
-        )}
+        <path
+          d={heavy ? 'M 0 0 L -12 -5 L -12 5 Z' : 'M 0 0 L -9 -3.7 L -9 3.7 Z'}
+          fill={stroke}
+          stroke={stroke}
+          strokeWidth={0.8}
+          strokeLinejoin='round'
+        />
       </g>
     </g>
   );

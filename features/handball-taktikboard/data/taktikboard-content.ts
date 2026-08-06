@@ -30,6 +30,19 @@ export const EXPORT_WATERMARK = 'statix-app.de';
 
 export const EXPORT_FILE_NAME = 'handball-taktikboard';
 
+/**
+ * Board width the PNG is rendered at, in CSS pixels, before the 2× scale.
+ *
+ * The export comes from an off-screen board of exactly this width rather than
+ * from the one on screen, because token sizes carry a minimum and a maximum:
+ * on a 325 px phone board a magnet is 8 % of the width, on an 860 px desktop
+ * board 5.6 %. Exporting the live board therefore produced a visibly chunkier
+ * picture on a small window. At 900 the proportions match a roomy desktop board
+ * and the file lands at 1800 × 1500 — big enough for a beamer, small enough for
+ * a chat app.
+ */
+export const EXPORT_BOARD_WIDTH = 900;
+
 export interface MagnetKindOption {
   kind: MagnetKind;
   label: string;
@@ -46,11 +59,9 @@ export const MAGNET_KIND_OPTIONS: MagnetKindOption[] = [
 
 export interface BoardModeOption {
   mode: BoardMode;
-  /** Short enough that the three tools stay on one row at 375 px. */
-  label: string;
-  /** The full wording, used as the accessible name. */
+  /** Accessible name and hover title of the icon-only rail button. */
   action: string;
-  /** Shown under the switch, so it is clear what a drag will do next. */
+  /** Shown under the board, so it is clear what a drag will do next. */
   hint: string;
 }
 
@@ -61,19 +72,16 @@ export interface BoardModeOption {
 export const BOARD_MODE_OPTIONS: BoardModeOption[] = [
   {
     mode: 'move',
-    label: 'Verschieben',
     action: 'Werkzeug: Magnete verschieben',
     hint: 'Magnete ziehen. Doppeltippen oder lange drücken öffnet Nummer und Farbe.',
   },
   {
     mode: 'arrow',
-    label: 'Pfeil',
     action: 'Werkzeug: Pfeil zeichnen',
     hint: 'Auf dem Feld ziehen – von wo nach wo. Start auf einem Spieler hängt den Pfeil an ihn.',
   },
   {
     mode: 'note',
-    label: 'Notiz',
     action: 'Werkzeug: Notiz setzen',
     hint: 'Auf die Stelle tippen, an der die Notiz stehen soll.',
   },
@@ -158,7 +166,7 @@ export const BOARD_STEPS: BoardStep[] = [
   },
   {
     title: 'Wege direkt aufs Feld ziehen',
-    text: 'Stell oben auf „Pfeil zeichnen“ und zieh auf dem Feld von wo nach wo. Startest du auf einem Spieler, hängt der Pfeil an ihm. Ein einzelner Tipp setzt einen Pfeil in Standardlänge. Mit dem mittleren Griff biegst du ihn, mit „Notiz setzen“ legst du ein Stichwort daneben.',
+    text: 'In der Werkzeugleiste – neben dem Feld, auf dem Handy darüber – auf das Pfeil-Symbol tippen und dann auf dem Feld von wo nach wo ziehen. Startest du auf einem Spieler, hängt der Pfeil an ihm. Ein einzelner Tipp setzt einen Pfeil in Standardlänge. Mit dem mittleren Griff biegst du ihn, mit dem Notiz-Symbol legst du ein Stichwort daneben.',
   },
   {
     title: 'Teilen oder speichern',
@@ -239,7 +247,7 @@ export const TAKTIKBOARD_FAQS: BoardFaqItem[] = [
   {
     question: 'Wie erstelle ich eine Handball-Aufstellung online?',
     answer:
-      'Du wählst im Taktikboard eine fertige Aufstellung – zum Beispiel 6:0, 5:1 oder 3:2:1 – und ziehst die Magnete anschließend auf ihre Positionen. Für Laufwege, Pässe und Würfe stellst du auf „Pfeil zeichnen“ und ziehst direkt auf dem Feld von einem Punkt zum anderen. Danach lädst du das Bild als PNG herunter oder teilst den Link.',
+      'Du wählst im Taktikboard eine fertige Aufstellung – zum Beispiel 6:0, 5:1 oder 3:2:1 – und ziehst die Magnete anschließend auf ihre Positionen. Für Laufwege, Pässe und Würfe wählst du in der Werkzeugleiste den Pfeil und ziehst direkt auf dem Feld von einem Punkt zum anderen. Danach lädst du das Bild als PNG herunter oder teilst den Link.',
   },
   {
     question: 'Ist das Taktikboard kostenlos?',
@@ -259,7 +267,7 @@ export const TAKTIKBOARD_FAQS: BoardFaqItem[] = [
   {
     question: 'Funktioniert das Taktikboard auf dem Tablet in der Halle?',
     answer:
-      'Dafür ist es gebaut. Jeder Greifpunkt ist mindestens 44 Pixel groß, es gibt nichts, was nur mit einer Maus erreichbar wäre, und das Board läuft im Hoch- wie im Querformat. Nummer und Farbe öffnest du per Doppeltipp oder langem Drücken direkt am Magneten. Solange „Verschieben“ eingestellt ist, kannst du die Seite über dem Board ganz normal scrollen – erst beim Zeichnen übernimmt das Feld die Geste.',
+      'Dafür ist es gebaut. Jeder Greifpunkt ist mindestens 44 Pixel groß, es gibt nichts, was nur mit einer Maus erreichbar wäre, und das Board läuft im Hoch- wie im Querformat. Nummer und Farbe öffnest du per Doppeltipp oder langem Drücken direkt am Magneten. Solange das Verschieben-Werkzeug aktiv ist, kannst du die Seite über dem Board ganz normal scrollen – erst beim Zeichnen übernimmt das Feld die Geste.',
   },
   {
     question: 'Warum steht auf dem exportierten Bild „statix-app.de“?',

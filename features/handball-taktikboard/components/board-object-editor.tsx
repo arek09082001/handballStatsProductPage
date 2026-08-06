@@ -68,7 +68,12 @@ export default function BoardObjectEditor({
   const firstFieldRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    firstFieldRef.current?.focus();
+    const field = firstFieldRef.current;
+    field?.focus();
+    // A note opens on its text with the placeholder selected, because the card
+    // pops up the instant the note is placed — the coach should be able to type
+    // the word straight over it.
+    if (field instanceof HTMLInputElement) field.select();
   }, [target.object.id]);
 
   /**

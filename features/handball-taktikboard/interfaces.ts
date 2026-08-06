@@ -11,7 +11,12 @@
 /** Which court is drawn. Both are to scale – see `data/court-geometry.ts`. */
 export type CourtViewId = 'halbfeld' | 'ganzfeld';
 
-/** Board ground. `paper` exists so a printed board does not eat toner. */
+/**
+ * Board ground. Fixed to `court` — the switch was dropped because picking a
+ * floor colour is not a decision a coach wants to make. `paper` stays in the
+ * type and in the share format so links shared while the switch existed still
+ * open exactly as they were drawn.
+ */
 export type BoardGround = 'court' | 'paper';
 
 /**
