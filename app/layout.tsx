@@ -12,7 +12,12 @@ import WebsiteSchema from '@/components/seo/website-schema';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { DEFAULT_HTML_LANG } from '@/i18n/config';
-import { DEFAULT_OG_IMAGE, SEO_KEYWORDS, SITE_URL } from '@/lib/seo';
+import {
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_SIZE,
+  HOME_TITLE,
+  SITE_URL,
+} from '@/lib/seo';
 
 const inter = Inter({ subsets: ['latin'] });
 const spaceGrotesk = Space_Grotesk({
@@ -40,13 +45,11 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
+    default: HOME_TITLE,
     template: `%s | ${CLUB_CONFIG.fullName}`,
   },
   description: CLUB_CONFIG.seo.description,
   applicationName: CLUB_CONFIG.fullName,
-  keywords: SEO_KEYWORDS,
   authors: [{ name: CLUB_CONFIG.fullName }],
   creator: CLUB_CONFIG.fullName,
   publisher: CLUB_CONFIG.fullName,
@@ -84,14 +87,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: SITE_URL,
-    title: 'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
+    title: HOME_TITLE,
     description: CLUB_CONFIG.seo.description,
     siteName: CLUB_CONFIG.fullName,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
-        width: 1200,
-        height: 630,
+        ...DEFAULT_OG_IMAGE_SIZE,
         alt: `${CLUB_CONFIG.fullName} – Handball-Statistik-App`,
       },
     ],
@@ -99,13 +101,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
+    title: HOME_TITLE,
     description: CLUB_CONFIG.seo.description,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
-        width: 1200,
-        height: 630,
+        ...DEFAULT_OG_IMAGE_SIZE,
         alt: `${CLUB_CONFIG.fullName} – Handball-Statistik-App`,
       },
     ],
