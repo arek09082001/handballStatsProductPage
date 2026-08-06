@@ -22,8 +22,8 @@ export const handballZeitstrafeRegeln: Article = {
   excerpt:
     'Gelb, zwei Minuten, rot, blau: Das Strafensystem im Handball wirkt kompliziert, folgt aber einer klaren Logik. Hier sind alle Strafen verständlich erklärt.',
   heroEyebrow: 'Grundlagen & Regeln',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handball-Schiedsrichter zeigt die Zwei-Minuten-Zeitstrafe an',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Statix-Spielertabelle mit den Disziplin-Spalten für Zwei-Minuten-Strafen, Gelb und Rot',
   body: `Warum sitzt der Spieler jetzt auf der Bank? Warum gab es Gelb statt zwei Minuten? Und was bedeutet die blaue Karte? Das Strafensystem im Handball wirkt für Einsteiger unübersichtlich, folgt aber einer klaren Stufenlogik: Je gravierender oder wiederholter ein Vergehen, desto härter die Strafe. Wer diese Stufen kennt, versteht jede Entscheidung des Schiedsrichters.
 
 ## Der Grundgedanke: progressive Bestrafung
@@ -81,7 +81,7 @@ Das Strafensystem ist nicht nur Regelkunde, sondern taktisch relevant. Eine Zeit
 
 ## Strafen und ihre Folgen im Blick
 
-Wie oft eure Mannschaft in Unterzahl gerät und wie viele Gegentore das kostet, ist eine wichtige Kennzahl. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Zeitstrafen und die Tore in Über- und Unterzahl live – so erkennst du, ob eure Disziplin ein Problem ist und wie viel euch fehlende Fairness auf dem Scoreboard kostet. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Wie oft eure Mannschaft in Unterzahl gerät und wie viele Gegentore das kostet, ist eine wichtige Kennzahl. Wie ihr diese Phasen spielt, steht im Ratgeber zu [Über- und Unterzahl](/ratgeber/handball-ueberzahl-unterzahl). Mit **Statix**, der [Statistik-App für Trainer](/), erfasst du Zeitstrafen und die Tore in Über- und Unterzahl live – so erkennst du, ob eure Disziplin ein Problem ist und wie viel euch fehlende Fairness auf dem Scoreboard kostet. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was ist die progressive Bestrafung im Handball?',

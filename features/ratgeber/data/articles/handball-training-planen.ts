@@ -23,8 +23,8 @@ export const handballTrainingPlanen: Article = {
   excerpt:
     'Eine gute Trainingseinheit folgt einem klaren Aufbau: Aufwärmen, Hauptteil mit einem Schwerpunkt und Ausklang. Hier bekommst du die Grundstruktur, realistische Zeitanteile, eine fertige 90-Minuten-Einheit und die häufigsten Planungsfehler.',
   heroEyebrow: 'Training & Planung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Trainingsplanung und Spielerentwicklung in der Statix Handball-App',
+  imagePath: '/saison-uebersicht-kennzahlen.jpg',
+  imageAlt: 'Saisonübersicht in Statix mit Angriffserfolg, Paradenquote und Bilanz aller Spiele',
   body: `Gute Trainingsplanung ist die halbe Miete. Wenn du vor jeder Einheit weißt, was du warum trainierst, sparst du wertvolle Hallenzeit, hältst deine Mannschaft in Bewegung und siehst über die Wochen echten Fortschritt statt Zufall. Eine durchdachte Einheit folgt dabei immer demselben Muster – und genau dieses Muster bekommst du hier: mit klarer Grundstruktur, realistischen Zeitanteilen, einer fertigen Beispiel-Einheit über 90 Minuten und den häufigsten Planungsfehlern, die du mit wenig Aufwand vermeidest.
 
 ## Die Grundstruktur einer Trainingseinheit
@@ -108,7 +108,7 @@ Ein einfacher Test für deinen Plan: Kannst du in einem einzigen Satz sagen, was
 
 Gute Planung endet nicht mit dem Abpfiff. Wer festhält, welche Schwerpunkte er wann trainiert hat und wie sich einzelne Spieler entwickeln, plant die nächste Einheit deutlich gezielter. So erkennst du über die Wochen, ob dein Wurftraining wirklich die Quote hebt oder deine neu einstudierte Abwehr im Spiel hält – und musst dich nicht auf dein Bauchgefühl verlassen.
 
-Genau dabei hilft dir eine Handball-Statistik-App wie **Statix**: Du dokumentierst Spielentwicklung und Trainingsfortschritt live per Tap – offline in der Halle, ganz ohne Zettelwirtschaft. Über die Saison entsteht so ein klares Bild, das deine Trainingsplanung mit echten Zahlen füttert. Wenn du das einfach ausprobieren willst: Es gibt eine kostenlose Live-Demo ohne Account unter demo.statix-app.de.`,
+Genau dabei hilft dir eine [kostenlose Handball-Statistik-App](/handball-statistik-app-kostenlos) wie **Statix**: Du dokumentierst Spielentwicklung und Trainingsfortschritt live per Tap – offline in der Halle, ganz ohne Zettelwirtschaft. Über die Saison entsteht so ein klares Bild, das deine Trainingsplanung mit echten Zahlen füttert. Für den Nachwuchsbereich gibt es dafür eine eigene Übersicht: [Statix für Jugendtrainer](/fuer-jugendtrainer). Wenn du das einfach ausprobieren willst: Es gibt eine kostenlose Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie lange sollte eine Handball-Trainingseinheit dauern?',
@@ -134,6 +134,6 @@ Genau dabei hilft dir eine Handball-Statistik-App wie **Statix**: Du dokumentier
   relatedSlugs: [
     'handball-aufwaermen-uebungen',
     'handball-saisonvorbereitung',
-    'jugendhandball-trainieren',
+    'handball-koordinationstraining',
   ],
 };

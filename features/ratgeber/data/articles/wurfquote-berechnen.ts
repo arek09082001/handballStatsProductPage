@@ -17,7 +17,7 @@ export const wurfquoteBerechnen: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-06-02',
-  dateModified: '2026-07-10',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 7,
   excerpt:
     'Die Wurfquote ist die wichtigste Basiskennzahl im Handball. Hier findest du die Formel, ein Rechenbeispiel, Richtwerte nach Position – und die Fallstricke, die du kennen solltest.',
@@ -38,7 +38,7 @@ Die Berechnung ist denkbar einfach. Du teilst die Anzahl der Tore durch die Anza
 
 > **Wurfquote (%) = Tore ÷ Würfe × 100**
 
-Wichtig ist nur, dass du beide Werte sauber erfasst: jedes Tor und jeden Torabschluss. Genau hier passieren am Spielfeldrand die meisten Fehler, weil Fehlwürfe im Eifer des Gefechts schnell untergehen.
+Wichtig ist nur, dass du beide Werte sauber erfasst: jedes Tor und jeden Torabschluss. Genau hier passieren am Spielfeldrand die meisten Fehler, weil Fehlwürfe im Eifer des Gefechts schnell untergehen. Die Prozentzahl selbst musst du übrigens nicht im Kopf ausrechnen – trag Tore und Würfe in den [Wurfquoten-Rechner](/wurfquote-rechner) ein, dann steht sie sofort da.
 
 ## Beispiel: Wurfquote eines Spielers berechnen
 
@@ -77,6 +77,8 @@ Eine hohe Wurfquote ist nicht automatisch gut, eine niedrige nicht automatisch s
 - **Wurfposition und Chancenqualität:** Wer nur klare Konter abschließt, hat es leichter als ein Rückraumspieler, der gegen den Block ziehen muss. Eine Wurfquote nach Position (siehe oben) sagt mehr als ein einzelner Gesamtwert.
 - **Spielkontext:** In der Schlussphase unter Druck oder in Unterzahl sinken Quoten – das ist normal und kein Zeichen für nachlassende Leistung.
 
+Bei uns war der beste Torschütze über Wochen gleichzeitig der Spieler mit der schlechtesten Quote – er hat einfach am meisten geworfen. In der Torschützenliste stand er ganz oben, in der Effizienz ganz unten. Das ist kein Widerspruch, aber man sieht es erst, wenn man beide Werte nebeneinanderlegt.
+
 Deshalb betrachten erfahrene Trainer die Wurfquote nie isoliert, sondern zusammen mit Wurfbildern (wo wurde geworfen?) und der Anzahl der Abschlüsse.
 
 ## Wurfquote im Training nutzen
@@ -90,7 +92,7 @@ Richtig eingesetzt wird die Wurfquote zum Steuerungsinstrument statt zur bloßen
 
 ## Wurfquote automatisch erfassen
 
-Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe gehen am Spielfeldrand schnell unter. Eine Handball-Statistik-App wie **Statix** erfasst jeden Wurf mit einem Tap und berechnet Wurfquoten für jeden Spieler und jede Position automatisch, live und offline in der Halle. Am Ende siehst du nicht nur die Quote, sondern auch das passende Wurfbild – ohne eine einzige Zeile Excel. So wird aus der Zahl eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe gehen am Spielfeldrand schnell unter. Eine [Handball-Statistik-App wie Statix](/) erfasst jeden Wurf mit einem Tap und berechnet Wurfquoten für jeden Spieler und jede Position automatisch, live und offline in der Halle. Am Ende siehst du nicht nur die Quote, sondern auch das passende Wurfbild – ohne eine einzige Zeile Excel. Wer lieber mit einer Tabelle startet, nimmt die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage) als Zwischenschritt. So wird aus der Zahl eine echte Entscheidungsgrundlage für dein nächstes Training.`,
   faqs: [
     {
       question: 'Wie berechnet man die Wurfquote im Handball?',

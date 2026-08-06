@@ -1,6 +1,7 @@
-import { CalendarDays, Clock } from 'lucide-react';
+import { CalendarDays, Clock, PenLine } from 'lucide-react';
 import { BoardKicker, CourtDiagram, Grain } from '@/features/landing-page/components/tactic';
 import ArticleBreadcrumbs, { type Breadcrumb } from './article-breadcrumbs';
+import { ARTICLE_AUTHOR } from '../data/author';
 import type { Article } from '../types';
 
 function formatGermanDate(iso: string): string {
@@ -52,10 +53,29 @@ export default function ArticleHeader({
 
         <div className='mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-chalk/60'>
           <span className='inline-flex items-center gap-2'>
+            <PenLine className='h-4 w-4 text-primary' />
+            <span>
+              Von{' '}
+              <span className='font-semibold text-chalk/85'>
+                {ARTICLE_AUTHOR.name}
+              </span>
+              , {ARTICLE_AUTHOR.role}
+            </span>
+          </span>
+          <span aria-hidden className='h-1 w-1 rounded-full bg-chalk/30' />
+          <span className='inline-flex items-center gap-2'>
             <CalendarDays className='h-4 w-4 text-primary' />
             <time dateTime={article.datePublished}>
               {formatGermanDate(article.datePublished)}
             </time>
+            {article.dateModified !== article.datePublished ? (
+              <>
+                {' · aktualisiert '}
+                <time dateTime={article.dateModified}>
+                  {formatGermanDate(article.dateModified)}
+                </time>
+              </>
+            ) : null}
           </span>
           <span aria-hidden className='h-1 w-1 rounded-full bg-chalk/30' />
           <span className='inline-flex items-center gap-2'>

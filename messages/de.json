@@ -15,7 +15,12 @@
       "ratgeber": "Ratgeber",
       "faq": "Häufige Fragen",
       "newsletter": "Newsletter",
-      "contact": "Kontakt aufnehmen"
+      "contact": "Kontakt aufnehmen",
+      "pricing": "Preise",
+      "freeApp": "Kostenlos starten",
+      "forYouthCoaches": "Für Jugendtrainer",
+      "shotQuotaCalculator": "Wurfquoten-Rechner",
+      "excelTemplate": "Excel-Vorlage"
     },
     "contact": {
       "location": "Made in Germany",
@@ -227,7 +232,10 @@
       "liveTicker": "Live-Ticker",
       "faq": "FAQ",
       "demo": "Live-Demo",
-      "impressum": "Impressum"
+      "impressum": "Impressum",
+      "pricing": "Preise",
+      "ratgeber": "Ratgeber",
+      "aboutStatix": "Was ist Statix?"
     },
     "registerCta": "Jetzt registrieren",
     "languageSwitcher": {

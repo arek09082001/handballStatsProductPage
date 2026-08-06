@@ -17,13 +17,13 @@ export const handballBallbesitzTempo: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Wer mehr Angriffe hat, hat mehr Chancen – wenn er sie nutzt. Ballbesitz, Effektivität und Tempo erklären, warum Spiele so ausgehen, wie sie ausgehen. So misst und steuerst du sie.',
   heroEyebrow: 'Statistik & Kennzahlen',
-  imagePath: '/gameListOverview.png',
-  imageAlt: 'Spielübersicht mit Ballbesitz- und Effektivitätskennzahlen im Handball',
+  imagePath: '/saison-uebersicht-kennzahlen.jpg',
+  imageAlt: 'Angriffserfolg und Tordifferenz einer ganzen Saison in der Statix-Übersicht',
   body: `Zwei Mannschaften spielen 30:28 – die eine wirkt überlegen, die andere hat gefühlt „nur mitgehalten". Ein Blick auf Ballbesitz und Effektivität zeigt oft ein ganz anderes Bild als das Ergebnis. Denn Handball ist ein Spiel der Angriffe: Wer mehr Angriffe hat und sie besser nutzt, gewinnt. Diese beiden Größen lassen sich sauber messen – und daraus lässt sich Tempo gezielt steuern.
 
 ## Was ein Ballbesitz (Possession) ist
@@ -45,7 +45,9 @@ Die Kennzahl vereint zwei Dinge zu einer aussagekräftigen Größe:
 - **technische Fehler** (Fehlpässe, Schrittfehler, Stürmerfouls kosten einen Angriff ohne Wurf)
 - **Wurfausbeute** (aus den verbleibenden Angriffen entstehen Würfe, die fallen oder nicht)
 
-Eine Mannschaft mit guter Wurfquote, aber vielen Ballverlusten, kann trotzdem ineffektiv sein – weil sie gar nicht erst zum Wurf kommt.
+Eine Mannschaft mit guter [Wurfquote](/ratgeber/wurfquote-berechnen), aber vielen Ballverlusten, kann trotzdem ineffektiv sein – weil sie gar nicht erst zum Wurf kommt.
+
+Genau das haben wir erlebt: gleich viele Angriffe wie der Gegner, am Ende trotzdem deutlich verloren. Nicht weil wir schlechter geworfen hätten, sondern weil zu viele Angriffe ohne Wurf endeten – Fehlpass, Schrittfehler, Stürmerfoul. Die Wurfquote sah in Ordnung aus, die Effektivität nicht.
 
 ## Tempo verstehen und messen
 
@@ -82,7 +84,7 @@ Tempo ist eine taktische Entscheidung, keine Charakterfrage. Willst du beschleun
 
 ## Angriffe und Effektivität live im Blick
 
-Ballbesitz und Effektivität von Hand mitzuschreiben, ist im Spiel kaum machbar. Mit **Statix**, der Handball-Statistik-App für Trainer, werden Angriffe, Tore und technische Fehler live per Tap erfasst – Effektivität und Tempo entstehen daraus automatisch, in Echtzeit und pro Halbzeit. So triffst du deine Auszeit- und Tempo-Entscheidungen auf Basis von Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Ballbesitz und Effektivität von Hand mitzuschreiben, ist im Spiel kaum machbar. Mit **Statix**, der [Statistik-App für dein Handballteam](/), werden Angriffe, Tore und technische Fehler live per Tap erfasst – Effektivität und Tempo entstehen daraus automatisch, in Echtzeit und pro Halbzeit. So triffst du deine Auszeit- und Tempo-Entscheidungen auf Basis von Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was ist ein Ballbesitz (Possession) im Handball?',

@@ -125,7 +125,7 @@ export const CLUB_CONFIG = {
     position: 'Inhaber',
     chairman: 'Arkadiusz Weiss',
     chairmanTitle: 'Inhaber',
-    chairmanImage: '/arkadiusz_weiss.jpg',
+    chairmanImage: '/arkadiusz-weiss.jpg',
   },
 
   // ============================================
@@ -137,7 +137,7 @@ export const CLUB_CONFIG = {
       position: 'Support & Anfragen',
       email: 'kontakt@statix-app.de',
       phone: '+49-0179-2630093',
-      image: '/arkadiusz_weiss.jpg',
+      image: '/arkadiusz-weiss.jpg',
     },
   },
 

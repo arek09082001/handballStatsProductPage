@@ -22,8 +22,8 @@ export const handballVerletzungenVorbeugen: Article = {
   excerpt:
     'Knie, Schulter, Sprunggelenk: Handball ist hart zu Gelenken und Sehnen. Hier bekommst du konkrete Präventionsübungen und Routinen, mit denen dein Team gesünder durch die Saison kommt.',
   heroEyebrow: 'Training & Planung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballteam beim präventiven Aufwärmen vor dem Training',
+  imagePath: '/saison-uebersicht-kennzahlen.jpg',
+  imageAlt: 'Saisonbilanz in Statix als Grundlage, um Einsatzzeiten und Belastung zu steuern',
   body: `Handball ist schnell, körperbetont und voller Sprünge, Stopps und Richtungswechsel – und genau das macht ihn hart zu Gelenken und Sehnen. Die gute Nachricht: Ein großer Teil der typischen Handballverletzungen lässt sich mit gezielter Prävention deutlich reduzieren. In diesem Ratgeber erfährst du, welche Verletzungen im Handball besonders häufig sind und mit welchen Übungen und Routinen du ihnen vorbeugst.
 
 ## Die typischen Handballverletzungen
@@ -97,7 +97,7 @@ Prävention ist also nicht nur eine Übung, sondern eine Haltung im gesamten Tra
 
 Wer Verletzungen und Ausfälle im Team im Blick behält, erkennt Muster: häufen sich Probleme in bestimmten Phasen, nach besonders intensiven Wochen oder bei bestimmten Spielern? Ein einfaches Mitschreiben von Belastung und Ausfällen hilft, rechtzeitig gegenzusteuern.
 
-**Statix**, die Handball-Statistik-App für Trainer, hilft dir, Einsatzzeiten und Belastungen deiner Spieler über die Saison im Blick zu behalten. So siehst du, wer besonders viel auf dem Feld steht, und kannst Belastung und Regeneration bewusster steuern. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+**Statix**, die [Handball-Statistik-App zum kostenlosen Start](/handball-statistik-app-kostenlos), hilft dir, Einsatzzeiten und Belastungen deiner Spieler über die Saison im Blick zu behalten. So siehst du, wer besonders viel auf dem Feld steht, und kannst Belastung und Regeneration bewusster steuern. Konkrete Bausteine dafür liefert der Ratgeber zur [Regeneration](/ratgeber/handball-regeneration). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Welche Verletzungen sind im Handball am häufigsten?',

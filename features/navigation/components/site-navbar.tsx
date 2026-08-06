@@ -10,7 +10,7 @@ import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
-import { siteNavigationItems } from '../config';
+import { primaryNavigationItems, siteNavigationItems } from '../config';
 import { useSiteNavbar } from '../hooks/use-site-navbar';
 
 export default function SiteNavbar() {
@@ -31,7 +31,7 @@ export default function SiteNavbar() {
 
   // The highlight pill rests on the active (scroll-spy) item, but follows the
   // hovered item while the pointer is over the nav.
-  const activeItem = siteNavigationItems.find((item) => isItemActive(item));
+  const activeItem = primaryNavigationItems.find((item) => isItemActive(item));
   const highlightedIdent = hoveredIdent ?? activeItem?.ident ?? null;
 
   return (
@@ -109,7 +109,7 @@ export default function SiteNavbar() {
             <div
               className='flex items-center gap-1 rounded-full bg-slate-100/80 p-1'
               onMouseLeave={() => setHoveredIdent(null)}>
-              {siteNavigationItems.map((item) => {
+              {primaryNavigationItems.map((item) => {
                 const active = isItemActive(item);
                 const highlighted = item.ident === highlightedIdent;
 
@@ -126,8 +126,6 @@ export default function SiteNavbar() {
                     onClick={item.external ? () => trackDemoClick('navbar') : undefined}
                     className={cn(
                       'relative inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
-                      // The logo already links home; keep the crowded lg row lean.
-                      item.labelKey === 'home' && 'hidden xl:inline-flex',
                       highlighted
                         ? 'text-slate-950'
                         : item.external

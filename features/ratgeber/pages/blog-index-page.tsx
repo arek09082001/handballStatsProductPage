@@ -1,4 +1,5 @@
 import ArticleCard from '../components/article-card';
+import RatgeberTools from '../components/ratgeber-tools';
 import { getArticlesByCategory } from '../data/articles';
 import {
   BoardKicker,
@@ -60,6 +61,8 @@ export default function BlogIndexPage() {
       <div className='relative overflow-hidden'>
         <Grain tone='paper' />
         <div className='relative mx-auto max-w-6xl px-6 py-16 sm:px-8 md:py-24'>
+          <RatgeberTools />
+
           <div className='space-y-16 md:space-y-20'>
             {groups.map((group) => (
               <section key={group.category} aria-labelledby={categoryId(group.category)}>

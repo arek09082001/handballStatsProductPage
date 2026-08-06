@@ -22,8 +22,8 @@ export const handballQuereinsteigerErwachsene: Article = {
   excerpt:
     'Zu alt für Handball? Von wegen. Auch als Erwachsener ohne Vorerfahrung kannst du einsteigen – wenn du weißt, worauf es ankommt. So gelingt der Quereinstieg.',
   heroEyebrow: 'Jugend & Entwicklung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Erwachsene Handball-Anfänger beim Training in der Halle',
+  imagePath: '/mannschaft-spielerwerte.jpg',
+  imageAlt: 'Spielerprofile in Statix mit Position, Spielen und Wurfquote je Spieler',
   body: `„Dafür bin ich zu alt" – dieser Gedanke hält viele davon ab, mit Handball anzufangen. Dabei stimmt er nicht. Zwar lernen die meisten Handballer den Sport als Kind, aber ein Quereinstieg als Erwachsener ist absolut möglich – ob als früherer Fußballer oder Basketballer, als sportlicher Wiedereinsteiger oder als kompletter Neuling. Handball ist teamorientiert, sozial und macht in jedem Alter Spaß. Wichtig ist nur, mit den richtigen Erwartungen zu starten.
 
 ## Ist ein Quereinstieg wirklich möglich?
@@ -77,7 +77,7 @@ Nicht jede Position stellt gleich hohe technische Anforderungen. Für Einsteiger
 
 ## Fortschritt sichtbar machen und dranbleiben
 
-Nichts motiviert mehr als der eigene Fortschritt. Wenn du deine Entwicklung festhältst – mehr geglückte Pässe, bessere Wurfquote, weniger Fehler – bleibt der Antrieb hoch. Mit **Statix**, der Handball-Statistik-App für Trainer und Teams, lassen sich diese Fortschritte über die Saison dokumentieren, sodass auch Späteinsteiger schwarz auf weiß sehen, wie sie besser werden. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Nichts motiviert mehr als der eigene Fortschritt. Wenn du deine Entwicklung festhältst – mehr geglückte Pässe, bessere [Wurfquote](/ratgeber/wurfquote-berechnen), weniger Fehler – bleibt der Antrieb hoch. Mit **Statix**, der [Handball-Statistik-App für Trainer und Teams](/), lassen sich diese Fortschritte über die Saison dokumentieren, sodass auch Späteinsteiger schwarz auf weiß sehen, wie sie besser werden. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Kann man als Erwachsener noch mit Handball anfangen?',

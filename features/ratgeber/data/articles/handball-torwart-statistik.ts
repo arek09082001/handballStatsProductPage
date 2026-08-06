@@ -17,7 +17,7 @@ export const handballTorwartStatistik: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Die Paradenquote allein sagt wenig – ein Torwart hinter einer schwachen Abwehr sieht immer schlechter aus. So bewertest du Torwartleistung fair und findest, wo dein Keeper wirklich stark ist.',
@@ -55,6 +55,8 @@ Aussagekräftig wird die Torwartstatistik erst, wenn du die Quote nach Wurfzonen
 
 Erst diese Aufschlüsselung trennt Torwart- von Abwehrleistung. Viele Gegentore aus dem Rückraum? Dann sollte der Keeper daran arbeiten. Viele Gegentore vom Kreis? Dann muss die Abwehr enger stehen.
 
+Das ist keine Theorie: Ich stehe selbst im Tor, und meine Gesamtquote sah lange schlechter aus, als sich die Spiele angefühlt haben. Erst aufgeschlüsselt nach Zonen war klar, woran es lag – die freien Nahwürfe vom Kreis und nach Durchbrüchen zogen den Wert nach unten. Das war kein Torwartproblem, sondern ein Abwehrproblem, das in meiner Statistik gelandet ist.
+
 ## Die Abwehr immer mitdenken
 
 Torwart und Abwehr sind ein System. Eine gute Auswertung stellt deshalb neben die Torwartzahlen immer die Frage nach der Wurfqualität, die der Keeper abbekommt:
@@ -63,7 +65,7 @@ Torwart und Abwehr sind ein System. Eine gute Auswertung stellt deshalb neben di
 - Aus welchen Zonen kamen die Gegentore?
 - Wie oft hat der Torwart nach einem Block noch den Nachwurf gehalten?
 
-Ein Torwart, der eine mittlere Quote hinter einer schwachen Abwehr hält, kann besser gespielt haben als einer mit hoher Quote hinter einem starken Block.
+Ein Torwart, der eine mittlere Quote hinter einer schwachen Abwehr hält, kann besser gespielt haben als einer mit hoher Quote hinter einem starken Block. Das Gegenstück auf der Angriffsseite ist die [Wurfquote](/ratgeber/wurfquote-berechnen) – beide Werte gehören in dieselbe Auswertung.
 
 ## Weitere aussagekräftige Kennzahlen
 
@@ -80,11 +82,11 @@ Aus einer sauberen Torwartauswertung wird ein konkreter Plan:
 2. Diese Situation im Torwarttraining gezielt wiederholen.
 3. Nach einigen Spielen erneut messen und den Fortschritt überprüfen.
 
-So wird aus dem Gefühl „lief nicht" eine belastbare Entwicklung.
+So wird aus dem Gefühl „lief nicht" eine belastbare Entwicklung. Wie du dieselbe Systematik aufs ganze Spiel anwendest, steht im Ratgeber zur [Spielanalyse im Handball](/ratgeber/handball-spielanalyse).
 
 ## Torwartleistung fair und sichtbar machen
 
-Um Torwartleistung nach Zonen und Ecken auszuwerten, brauchst du erfasste Würfe – und zwar mit Position und Ausgang. Mit **Statix**, der Handball-Statistik-App für Trainer, tippst du jeden Torwurf live auf einer Torfläche ein. Daraus entstehen automatisch Paradenquoten nach Wurfzone und Ecke – für Torwart und Feld getrennt. So siehst du auf einen Blick, wo dein Keeper wirklich stark ist und wo ihr im Training ansetzt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Um Torwartleistung nach Zonen und Ecken auszuwerten, brauchst du erfasste Würfe – und zwar mit Position und Ausgang. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), tippst du jeden Torwurf live auf einer Torfläche ein. Daraus entstehen automatisch Paradenquoten nach Wurfzone und Ecke – für Torwart und Feld getrennt. So siehst du auf einen Blick, wo dein Keeper wirklich stark ist und wo ihr im Training ansetzt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie berechnet man die Paradenquote eines Handball-Torwarts?',

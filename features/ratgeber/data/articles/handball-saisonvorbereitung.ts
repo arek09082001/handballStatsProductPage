@@ -115,7 +115,7 @@ Eine Vorbereitung, in der die halbe Mannschaft angeschlagen in die Saison geht, 
 
 ## Fortschritt messbar machen
 
-Ob deine Vorbereitung wirkt, siehst du am klarsten in Zahlen. Wurfquoten, Ballverluste und Tempogegenstöße aus den Testspielen zeigen dir schwarz auf weiß, ob die Automatismen greifen und die Form steigt. Eine Handball-Statistik-App wie **Statix** erfasst diese Werte live per Tap – auch offline in der Halle – und macht den Formaufbau über mehrere Testspiele hinweg vergleichbar. So wird aus dem Bauchgefühl eine belastbare Grundlage für deine letzten Trainingsentscheidungen vor dem Saisonstart. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter demo.statix-app.de.`,
+Ob deine Vorbereitung wirkt, siehst du am klarsten in Zahlen. Wurfquoten, Ballverluste und Tempogegenstöße aus den Testspielen zeigen dir schwarz auf weiß, ob die Automatismen greifen und die Form steigt. Wie du die Entwicklung einzelner Spieler dabei festhältst, steht im Ratgeber [Spielerentwicklung messen](/ratgeber/handball-spielerentwicklung-messen). Eine [kostenlose Statistik-App für Handball](/handball-statistik-app-kostenlos) wie **Statix** erfasst diese Werte live per Tap – auch offline in der Halle – und macht den Formaufbau über mehrere Testspiele hinweg vergleichbar. So wird aus dem Bauchgefühl eine belastbare Grundlage für deine letzten Trainingsentscheidungen vor dem Saisonstart. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie lange dauert die Handball-Saisonvorbereitung?',
@@ -139,7 +139,7 @@ Ob deine Vorbereitung wirkt, siehst du am klarsten in Zahlen. Wurfquoten, Ballve
     },
   ],
   relatedSlugs: [
-    'handball-training-planen',
+    'handball-beweglichkeit-dehnen',
     'handball-aufwaermen-uebungen',
     'handball-torwarttraining',
   ],

@@ -18,13 +18,13 @@ export const handballSpielerentwicklungMessen: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-06-21',
-  dateModified: '2026-07-11',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Entwicklung passiert oft unbemerkt. Wer sie misst, kann Spieler gezielt fördern – mit den richtigen Kennzahlen, klaren Zielen und einem Blick für den Verlauf über die Saison.',
   heroEyebrow: 'Statistik & Kennzahlen',
-  imagePath: '/statsTableInGame.png',
-  imageAlt: 'Spielerstatistiken und Entwicklungsverlauf in der Statix Handball-App',
+  imagePath: '/mannschaft-spielerwerte.jpg',
+  imageAlt: 'Spielerwerte über die Saison in Statix: Spiele, Tore, Wurfquote und Paradenquote je Spieler',
   body: `Als Trainer willst du, dass deine Spieler besser werden. Aber woran erkennst du eigentlich, ob jemand Fortschritte macht? Das Bauchgefühl trügt oft: Ein lauter Spieler wirkt stärker als er ist, ein stiller entwickelt sich im Verborgenen. Wer Entwicklung messbar macht, fördert gezielter, entscheidet fairer und motiviert nebenbei das ganze Team. In diesem Ratgeber liest du, welche Kennzahlen wirklich etwas aussagen, wie du Ziele setzt und den Verlauf über die Saison sichtbar machst.
 
 ## Warum du Spielerentwicklung messen solltest
@@ -54,7 +54,7 @@ Entwicklung hat zwei Seiten: harte Zahlen und weiche Beobachtungen. Beide gehör
 
 Messen allein bringt nichts, wenn niemand weiß, wohin die Reise geht. Gute Entwicklungsziele sind individuell, konkret und erreichbar – und du vereinbarst sie gemeinsam mit dem Spieler, statt sie zu verordnen.
 
-Statt "Wirf besser" formulierst du: "Wir wollen deine Wurfquote aus dem Rückraum in den nächsten acht Wochen von 45 auf 52 Prozent steigern." Das ist überprüfbar, motiviert und gibt dem Training eine klare Richtung. Ein bis zwei Ziele pro Spieler reichen – zu viele Baustellen überfordern.
+Statt "Wirf besser" formulierst du: "Wir wollen deine Wurfquote aus dem Rückraum in den nächsten acht Wochen von 45 auf 52 Prozent steigern." Die Ausgangs- und Zielwerte dafür rechnest du am schnellsten mit dem [Wurfquoten-Rechner](/wurfquote-rechner) aus. Das ist überprüfbar, motiviert und gibt dem Training eine klare Richtung. Ein bis zwei Ziele pro Spieler reichen – zu viele Baustellen überfordern.
 
 ## Den Verlauf dokumentieren
 
@@ -77,6 +77,8 @@ Zahlen sind ein hervorragender Gesprächseinstieg, weil sie sachlich sind und ni
 
 ## Talente erkennen und fördern
 
+Der Spieler, der mich am meisten überrascht hat, hatte nie ein herausragendes Spiel. Kein Spiel mit acht Toren, keine Szene, über die nach dem Abpfiff geredet wurde – aber über die Saison ging seine Kurve gleichmäßig nach oben. Genau solche Entwicklungen bekommt das Gedächtnis nicht mit: Es erinnert sich an Höhepunkte, nicht an Steigungen.
+
 Das größte Talent ist selten der Spieler mit den besten Zahlen von heute, sondern der mit dem steilsten Verlauf. Achte auf Entwicklungsgeschwindigkeit statt nur auf den Momentwert. Fördere Vielseitigkeit, gib jungen Spielern verschiedene Positionen und habe Geduld – Entwicklung verläuft in Sprüngen und Plateaus, nicht linear.
 
 ## Fallstricke, die du vermeiden solltest
@@ -87,7 +89,7 @@ Das größte Talent ist selten der Spieler mit den besten Zahlen von heute, sond
 
 ## Entwicklung sichtbar machen
 
-Von Hand bleibt so eine Auswertung meist liegen – zu viel Aufwand, zu wenig Zeit nach dem Spiel. Eine Handball-Statistik-App wie **Statix** erfasst die Aktionen jedes Spielers live per Tap und zeigt dir Entwicklungsverläufe über die ganze Saison automatisch: Wurfquoten, Ballgewinne, Spielanteile und Trends je Spieler auf einen Blick. So werden aus einem vagen Gefühl belastbare Fortschritte, die du im Feedbackgespräch nutzen kannst – ganz ohne Excel. Die Live-Demo lässt sich ohne Account unter demo.statix-app.de ausprobieren.`,
+Von Hand bleibt so eine Auswertung meist liegen – zu viel Aufwand, zu wenig Zeit nach dem Spiel. Eine [Statistik-App für Handballtrainer](/) wie **Statix** erfasst die Aktionen jedes Spielers live per Tap und zeigt dir Entwicklungsverläufe über die ganze Saison automatisch: Wurfquoten, Ballgewinne, Spielanteile und Trends je Spieler auf einen Blick. So werden aus einem vagen Gefühl belastbare Fortschritte, die du im Feedbackgespräch nutzen kannst – ganz ohne Excel. Wer trotzdem lieber mit einer Tabelle anfängt, findet hier eine [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage). Die Live-Demo lässt sich ohne Account unter [demo.statix-app.de](https://demo.statix-app.de) ausprobieren.`,
   faqs: [
     {
       question: 'Wie messe ich die Entwicklung eines Handballspielers?',
@@ -112,7 +114,7 @@ Von Hand bleibt so eine Auswertung meist liegen – zu viel Aufwand, zu wenig Ze
   ],
   relatedSlugs: [
     'handball-statistik-fuehren',
-    'wurfquote-berechnen',
+    'handball-torwart-statistik',
     'handball-spielanalyse',
   ],
 };

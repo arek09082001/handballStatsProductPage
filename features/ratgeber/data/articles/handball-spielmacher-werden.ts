@@ -22,8 +22,8 @@ export const handballSpielmacherWerden: Article = {
   excerpt:
     'Der Spielmacher ist der verlängerte Arm des Trainers: Er liest die Abwehr, steuert das Tempo und bringt Mitspieler in Wurfposition. So entwickelst du dich zum Kopf deines Angriffs.',
   heroEyebrow: 'Taktik & Abwehr',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Spielmacher auf Rückraum Mitte dirigiert den Handballangriff',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Spielertabelle in Statix mit Toren, Assists und Ballverlusten je Spieler',
   body: `Auf Rückraum Mitte laufen alle Fäden zusammen: Der Spielmacher entscheidet, welcher Spielzug läuft, wann das Tempo steigt und wer den Abschluss bekommt. Es ist die Position mit den meisten Ballkontakten – und den meisten Entscheidungen. Gute Nachricht: Spielmachen ist keine Frage des Talents allein, sondern lernbar. Hier sind die Fähigkeiten, die zählen.
 
 ## Was ein Spielmacher wirklich tut
@@ -91,7 +91,7 @@ Als Spielmacher triffst du 50 Entscheidungen pro Spiel – einige werden falsch 
 
 Ob dein Angriffsspiel funktioniert, zeigen die Mannschaftszahlen: Abschlussquoten nach Angriffsart, technische Fehler, Tore pro Angriff.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Assists und Fehler live per Tap und siehst nach dem Spiel, welche Entscheidungen Abschlüsse erzeugt haben – und wo Angriffe verpuffen. So entwickelst du dein Spielverständnis mit echten Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Mit **Statix**, der [Statistik-App für Trainer und Vereine](/), erfasst du Tore, Assists und Fehler live per Tap und siehst nach dem Spiel, welche Entscheidungen Abschlüsse erzeugt haben – und wo Angriffe verpuffen. So entwickelst du dein Spielverständnis mit echten Zahlen statt Bauchgefühl. Den größeren Rahmen dazu liefert die [Spielanalyse Schritt für Schritt](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was macht einen guten Spielmacher im Handball aus?',

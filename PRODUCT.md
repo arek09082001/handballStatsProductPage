@@ -58,9 +58,17 @@ no account. Secondary action: the launch‑offer newsletter for clubs.
 ## Commercial truth (do not invent beyond this)
 
 - **Free to start**, no credit card; first game recorded without commitment.
-- Fair, planned subscriptions for whole teams and clubs are coming; the launch
-  offer is collected via the newsletter. Prices are not yet public — never
-  fabricate a number.
+- **Right now every feature is free.** Statix has not switched to subscription
+  mode yet, so nothing is behind a paywall today.
+- **Planned price: 3,99 € per month.** When subscription mode is switched on,
+  some features move behind the paywall at that price. Until then this is a
+  *planned* price and must always be worded as such — never imply a coach is
+  being charged today. It is the only price figure that may appear anywhere;
+  never fabricate another number, tier, or discount.
+- Before publishing the figure on a commercial page, confirm whether 3,99 € is
+  the gross end price (incl. USt.) — German price display rules require the
+  end price for consumers.
+- The launch offer for clubs is collected via the newsletter.
 - Live demo runs at the URL in `lib/club-config.ts` (`CLUB_CONFIG.website`).
 
 ## Brand commitments (preserved across any redesign)

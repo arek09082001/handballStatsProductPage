@@ -22,8 +22,8 @@ export const handball60Abwehr: Article = {
   excerpt:
     'Die 6:0 ist die meistgespielte Abwehr im Handball – eine kompakte Wand vor dem Kreis. Wie sie aufgebaut ist, wer welche Aufgabe hat und wie ihr sie zusammen zum Leben erweckt.',
   heroEyebrow: 'Taktik & Abwehr',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballmannschaft in kompakter 6:0-Abwehrformation vor dem Kreis',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Live-Statistik in Statix mit Blocks, Ballgewinnen und dem Wurfbild des Gegners',
   body: `Wenn Handballmannschaften an einer Abwehr feilen, ist es meistens die 6:0. Sie ist die Grundform der Verteidigung: sechs Spieler in einer Reihe am Kreis, eine kompakte Wand vor dem eigenen Tor. Sie ist leicht zu verstehen, schwer zu überwinden und die ideale Basis, von der aus Mannschaften später offensivere Systeme lernen. Wer die 6:0 wirklich beherrscht, hat das Fundament jeder guten Defensive.
 
 ## Die Grundordnung
@@ -83,7 +83,7 @@ Betone von Anfang an die **Kommunikation**: In der 6:0 muss ständig geredet wer
 
 ## Die Abwehr messbar machen
 
-Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du die Gegentore nach Wurfzonen und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix** kannst du die [Gegentore nach Zonen erfassen](/) und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt – wie du dabei methodisch vorgehst, zeigt der Ratgeber [Spiele strukturiert auswerten](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was bedeutet 6:0-Abwehr im Handball?',

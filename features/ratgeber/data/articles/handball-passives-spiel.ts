@@ -22,8 +22,8 @@ export const handballPassivesSpiel: Article = {
   excerpt:
     'Der Arm des Schiedsrichters geht nach oben – und plötzlich hat der Angriff nur noch wenige Pässe. Was passives Spiel bedeutet, wann es gepfiffen wird und wie du richtig reagierst.',
   heroEyebrow: 'Grundlagen & Regeln',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Schiedsrichter zeigt das Vorwarnzeichen für passives Spiel im Handball',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Live-Auswertung in Statix mit Wurfquote, Ballverlusten und Wurfbild',
   body: `Handball lebt vom Tempo und vom Torabschluss. Damit keine Mannschaft den Ball endlos hin- und herschiebt, ohne einen Angriff aufzubauen, gibt es die Regel zum passiven Spiel. Für Einsteiger ist sie oft rätselhaft: Warum hebt der Schiedsrichter plötzlich den Arm, und warum wird der Angriff auf einmal hektisch? Die Antwort ist eine klare, sinnvolle Regel.
 
 ## Was passives Spiel bedeutet
@@ -70,7 +70,7 @@ Ohne die Passive-Regel könnten Mannschaften eine Führung durch endloses Ballha
 
 ## Abschlussverhalten unter Druck auswerten
 
-Wie gut eure Mannschaft nach dem Vorwarnzeichen abschließt, ist eine aufschlussreiche Frage. Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du technische Fehler und Wurfausbeute live – so erkennst du, ob euer Angriff unter Zeitdruck gute Würfe erspielt oder in Hektik verfällt. Aus diesem Wissen wird ein gezieltes Training für genau diese Drucksituationen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Wie gut eure Mannschaft nach dem Vorwarnzeichen abschließt, ist eine aufschlussreiche Frage. Mit **Statix**, der [Handball-Statistik-App für die Halle](/), erfasst du technische Fehler und Wurfausbeute live – so erkennst du, ob euer Angriff unter Zeitdruck gute Würfe erspielt oder in Hektik verfällt. Welche Angriffsmittel dabei helfen, zeigt der Ratgeber zu den [Angriffssystemen](/ratgeber/handball-angriffssysteme-einsteiger). Aus diesem Wissen wird ein gezieltes Training für genau diese Drucksituationen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was ist passives Spiel im Handball?',
