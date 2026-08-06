@@ -11,6 +11,7 @@ import {
 } from '../data/board-palette';
 import { EXPORT_WATERMARK, MAGNET_KIND_OPTIONS } from '../data/taktikboard-content';
 import BoardObjectEditor, { type EditorTarget } from './board-object-editor';
+import { DEFAULT_NUMBER_NUDGE, measureNumberNudge } from '../lib/number-centring';
 import type {
   ArrowColor,
   ArrowHandle,
@@ -38,17 +39,6 @@ const DOUBLE_TAP_MS = 400;
 
 /** Hold this long without moving and the editor opens — the tablet gesture. */
 const LONG_PRESS_MS = 500;
-
-/**
- * Optical centring for the jersey number, as a fraction of the magnet.
- *
- * Centring a line box is not the same as centring the digits inside it: a
- * digit sits on the baseline with the font's descender space below it, so a
- * perfectly centred line box leaves the number visibly high on the disc.
- * Measured on the built page at 4× — the ink sat 2.5 % of the disc above its
- * centre — and applied as top padding, which a centred grid splits in half.
- */
-const NUMBER_OPTICAL_NUDGE = 0.05;
 
 interface DragContext {
   pointerId: number;
@@ -163,6 +153,7 @@ export default function BoardCanvas({
   const [draft, setDraft] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(
     null,
   );
+  const [numberNudge, setNumberNudge] = useState(DEFAULT_NUMBER_NUDGE);
 
   /**
    * True for the off-screen copy the PNG is rendered from: a fixed width, no
@@ -188,6 +179,20 @@ export default function BoardCanvas({
   }, [boardRef, isStatic]);
 
   useEffect(() => () => window.clearTimeout(longPressRef.current), []);
+
+  // Optical centring for the jersey numbers, measured on the font that actually
+  // rendered. Waits for the web font, because calibrating against the fallback
+  // and then swapping in Archivo would leave the numbers off by the difference.
+  useEffect(() => {
+    let cancelled = false;
+    const apply = () => {
+      if (!cancelled) setNumberNudge(measureNumberNudge());
+    };
+    document.fonts?.ready.then(apply, apply) ?? apply();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // Tokens are sized off the board's *height*, which is the short side in both
   // views. Sizing off the width would put the same magnet on a 700 px tall half
@@ -784,7 +789,7 @@ export default function BoardCanvas({
                   background: isBall ? 'transparent' : colors.surface,
                   border: isBall ? 'none' : `1px solid ${colors.rim}`,
                   boxShadow: selectionRing(isSelected, isBall ? undefined : MAGNET_SHADOW),
-                  paddingTop: isBall ? 0 : Math.round(magnetSize * NUMBER_OPTICAL_NUDGE),
+                  paddingTop: isBall ? 0 : magnetSize * numberNudge,
                   color: colors.text,
                   fontSize: Math.round(magnetSize * 0.5),
                   fontWeight: 800,
