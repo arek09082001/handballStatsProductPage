@@ -51,7 +51,7 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch
 - Regionen: ${SERVICE_AREAS.join(', ')}
-- Preis: Kostenlos starten, erstes Spiel ohne Verpflichtung und ohne Kreditkarte – faire Abos für Teams und Vereine
+- Preis: Aktuell kostenlos mit vollem Funktionsumfang, ohne Kreditkarte und ohne Bezahlvorgang in der App; geplant ist später ein Abo für 3,99 € im Monat (Details unter ${absoluteUrl('/preise')})
 - Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
 - Live-Demo (ohne Account): ${CLUB_CONFIG.website.demoUrl}
@@ -68,6 +68,8 @@ ${ratgeber}
 
 ## Links
 - Startseite: ${SITE_URL}
+- Preise (was Statix kostet, inklusive aller Grenzen des kostenlosen Zugangs): ${absoluteUrl('/preise')}
+- Handball-Statistik Excel-Vorlage (kostenloser XLSX-Download ohne Anmeldung, mit fertigen Formeln): ${absoluteUrl('/handball-statistik-excel-vorlage')}
 - Was ist Statix (Marken- und Produktüberblick): ${absoluteUrl('/was-ist-statix')}
 - Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}

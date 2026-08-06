@@ -91,6 +91,18 @@ export const SITE_LINKS = [
             'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams. Mit Live-Demo ohne Account.',
     },
     {
+        name: 'Preise',
+        path: '/preise',
+        description:
+            'Was die Handball-Statistik-App Statix kostet: aktuell kostenlos mit vollem Funktionsumfang, alle Grenzen im Detail und was ein geplantes Abo für Teams und Vereine ändern würde.',
+    },
+    {
+        name: 'Handball-Statistik Excel-Vorlage',
+        path: '/handball-statistik-excel-vorlage',
+        description:
+            'Kostenlose Excel-Vorlage für Handball-Statistiken: Kader, Spielprotokoll, Auswertung und Saison mit fertigen Formeln für Wurfquote und Paradenquote – Download ohne Anmeldung.',
+    },
+    {
         name: 'Impressum',
         path: '/impressum',
         description: 'Anbieterkennzeichnung und rechtliche Informationen.',
