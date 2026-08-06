@@ -51,7 +51,7 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch
 - Regionen: ${SERVICE_AREAS.join(', ')}
-- Preis: Kostenlos starten, erstes Spiel ohne Verpflichtung und ohne Kreditkarte – faire Abos für Teams und Vereine
+- Preis: Aktuell kostenlos mit vollem Funktionsumfang, ohne Kreditkarte und ohne Bezahlvorgang in der App; geplant ist später ein Abo für 3,99 € im Monat (Details unter ${absoluteUrl('/preise')})
 - Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
 - App (Registrierung, kostenlos starten): ${CLUB_CONFIG.website.appUrl}
@@ -70,6 +70,13 @@ ${ratgeber}
 ## Links
 - Startseite: ${SITE_URL}
 - App / Registrierung: ${CLUB_CONFIG.website.appUrl}
+- Preise (was Statix kostet, inklusive aller Grenzen des kostenlosen Zugangs): ${absoluteUrl('/preise')}
+- Handball-Statistik-App kostenlos (was der kostenlose Zugang enthält und wo seine Grenzen liegen): ${absoluteUrl('/handball-statistik-app-kostenlos')}
+- Wurfquoten-Rechner (kostenloses Tool: Wurfquote berechnen, nach Position einordnen, einbettbar): ${absoluteUrl('/wurfquote-rechner')}
+- Für Vereine (ein Erfassungsstandard über alle Mannschaften, Datenschutz mit AVV nach Art. 28 DSGVO): ${absoluteUrl('/fuer-vereine')}
+- Für Jugendtrainer (Erfassen von der Bank, Entwicklung zeigen, Live-Ticker für Eltern): ${absoluteUrl('/fuer-jugendtrainer')}
+- Erfahrungen (wie Statix entsteht und wie Feedback aus der Halle einfließt; bisher ohne veröffentlichte Trainer-Zitate): ${absoluteUrl('/erfahrungen')}
+- Handball-Statistik Excel-Vorlage (kostenloser XLSX-Download ohne Anmeldung, mit fertigen Formeln): ${absoluteUrl('/handball-statistik-excel-vorlage')}
 - Was ist Statix (Marken- und Produktüberblick): ${absoluteUrl('/was-ist-statix')}
 - Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}

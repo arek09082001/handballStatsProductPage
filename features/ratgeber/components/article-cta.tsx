@@ -41,28 +41,32 @@ export default function ArticleCta() {
           mit deinem Team selbst aus.
         </p>
 
-        <div className='relative mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row'>
-          <MarkerArrow
-            variant='curve'
-            color='marker'
-            aria-hidden
-            className='absolute -top-10 -right-14 hidden h-12 w-24 sm:block'
-          />
-          <a
-            href={CLUB_CONFIG.website.appUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='group inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-primary px-7 font-display text-[15px] font-bold tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] hover:shadow-[0_18px_30px_-14px_hsl(22_90%_45%/0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 sm:h-14'>
-            <UserPlus className='size-4' />
-            Jetzt kostenlos registrieren
-          </a>
-          <a
-            href={CLUB_CONFIG.website.demoUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='inline-flex h-13 items-center justify-center gap-2 rounded-xl border border-chalk/30 bg-chalk/5 px-7 font-display text-[15px] font-bold tracking-tight text-chalk transition-colors duration-200 hover:border-chalk/50 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-chalk/40 focus-visible:ring-offset-2 focus-visible:ring-offset-court sm:h-14'>
-            Live-Demo ansehen
-          </a>
+        {/* The row shrinks to the buttons, so the marker arrow can be placed
+            relative to the primary action instead of the text column. */}
+        <div className='mt-9 flex justify-center'>
+          <div className='relative flex flex-col items-center gap-3 sm:flex-row'>
+            <MarkerArrow
+              variant='curve'
+              color='marker'
+              aria-hidden
+              className='absolute -top-10 left-6 hidden h-14 w-28 sm:block'
+            />
+            <a
+              href={CLUB_CONFIG.website.appUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='group inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-primary px-7 font-display text-[15px] font-bold tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] hover:shadow-[0_18px_30px_-14px_hsl(22_90%_45%/0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 sm:h-14'>
+              <UserPlus className='size-4' />
+              Jetzt kostenlos registrieren
+            </a>
+            <a
+              href={CLUB_CONFIG.website.demoUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-flex h-13 items-center justify-center gap-2 rounded-xl border border-chalk/30 bg-chalk/5 px-7 font-display text-[15px] font-bold tracking-tight text-chalk transition-colors duration-200 hover:border-chalk/50 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-chalk/40 focus-visible:ring-offset-2 focus-visible:ring-offset-court sm:h-14'>
+              Live-Demo ansehen
+            </a>
+          </div>
         </div>
       </div>
     </section>

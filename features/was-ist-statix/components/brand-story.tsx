@@ -60,8 +60,8 @@ export default function BrandStory() {
             <div className='grid items-stretch lg:grid-cols-2'>
               <div className='relative min-h-64 lg:min-h-full'>
                 <Image
-                  src='/1000000918.jpg'
-                  alt='Handball in der Halle – Statix entsteht aus der Praxis am Spielfeldrand'
+                  src='/saison-uebersicht-kennzahlen.jpg'
+                  alt='Saisonübersicht in Statix mit Angriffserfolg, Paradequote, Bilanz und Tordifferenz'
                   fill
                   sizes='(max-width: 1024px) 100vw, 50vw'
                   className='object-cover'

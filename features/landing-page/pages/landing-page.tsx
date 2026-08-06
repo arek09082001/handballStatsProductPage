@@ -8,6 +8,7 @@ import LiveTickerSection from '../components/live-ticker-section';
 import CollaborationSection from '../components/collaboration-section';
 import FeatureGridSection from '../components/feature-grid-section';
 import ProsSection from '../components/pros-section';
+import TestimonialsSection from '../components/testimonials-section';
 import FaqSection from '../components/faq-section';
 import NewsletterSection from '../components/newsletter-section';
 import ContactSection from '../components/contact-section';
@@ -50,6 +51,7 @@ export default function LandingPage() {
         <CollaborationSection />
         <FeatureGridSection />
         <ProsSection />
+        <TestimonialsSection />
         <FaqSection />
         <NewsletterSection />
         <ContactSection />

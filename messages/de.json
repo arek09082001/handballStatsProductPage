@@ -19,8 +19,10 @@
       "pricing": "Preise",
       "freeApp": "Kostenlos starten",
       "forYouthCoaches": "Für Jugendtrainer",
+      "forClubs": "Für Vereine",
       "shotQuotaCalculator": "Wurfquoten-Rechner",
-      "excelTemplate": "Excel-Vorlage"
+      "excelTemplate": "Excel-Vorlage",
+      "experiences": "Erfahrungen"
     },
     "contact": {
       "location": "Made in Germany",
@@ -226,6 +228,7 @@
     "items": {
       "home": "Start",
       "features": "Funktionen",
+      "pricing": "Preise",
       "howItWorks": "So funktioniert's",
       "ai": "KI-Analyse",
       "tournament": "Turnier",
@@ -233,7 +236,6 @@
       "faq": "FAQ",
       "demo": "Live-Demo",
       "impressum": "Impressum",
-      "pricing": "Preise",
       "ratgeber": "Ratgeber",
       "aboutStatix": "Was ist Statix?"
     },
@@ -1152,6 +1154,12 @@
         "In Sekunden mit dem ganzen Team geteilt",
         "Offline-fähig und in wenigen Minuten startklar"
       ]
+    },
+    "testimonials": {
+      "kicker": "Trainer sagen",
+      "title": "Stimmen aus der Halle",
+      "description": "Trainer, die Statix im Spielbetrieb einsetzen – mit Namen und Verein.",
+      "linkLabel": "Alle Erfahrungen ansehen"
     },
     "faq": {
       "kicker": "Gut zu wissen",

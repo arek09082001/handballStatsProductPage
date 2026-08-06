@@ -111,6 +111,48 @@ export const SITE_LINKS = [
             'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams. Mit Live-Demo ohne Account.',
     },
     {
+        name: 'Preise',
+        path: '/preise',
+        description:
+            'Was die Handball-Statistik-App Statix kostet: aktuell kostenlos mit vollem Funktionsumfang, alle Grenzen im Detail und was ein geplantes Abo für Teams und Vereine ändern würde.',
+    },
+    {
+        name: 'Erfahrungen',
+        path: '/erfahrungen',
+        description:
+            'Erfahrungen mit Statix: wer die Handball-Statistik-App entwickelt, wie Feedback aus der Halle zu neuen Funktionen wird und wie du dir selbst ein Bild machst.',
+    },
+    {
+        name: 'Für Vereine',
+        path: '/fuer-vereine',
+        description:
+            'Handball-Statistik-App für Vereine: ein Erfassungsstandard über alle Mannschaften, geteilte Auswertungen im Trainerteam und geregelter Datenschutz mit AVV.',
+    },
+    {
+        name: 'Für Jugendtrainer',
+        path: '/fuer-jugendtrainer',
+        description:
+            'Handball-Statistik für Jugendtrainer: ein Tap pro Aktion von der Bank, Entwicklung über die Saison zeigen, Spielerkarten fürs Team und Live-Ticker für die Eltern.',
+    },
+    {
+        name: 'Wurfquoten-Rechner',
+        path: '/wurfquote-rechner',
+        description:
+            'Kostenloser Rechner für die Wurfquote im Handball: Tore und Würfe eintragen, Quote nach Position einordnen, Zielquote rückwärts rechnen – auch zum Einbinden.',
+    },
+    {
+        name: 'Handball-Statistik-App kostenlos',
+        path: '/handball-statistik-app-kostenlos',
+        description:
+            'Was bei Statix kostenlos ist und wo die Grenzen liegen: Spiele live erfassen, auswerten und teilen – ohne Kreditkarte, mit Live-Demo ohne Account.',
+    },
+    {
+        name: 'Handball-Statistik Excel-Vorlage',
+        path: '/handball-statistik-excel-vorlage',
+        description:
+            'Kostenlose Excel-Vorlage für Handball-Statistiken: Kader, Spielprotokoll, Auswertung und Saison mit fertigen Formeln für Wurfquote und Paradenquote – Download ohne Anmeldung.',
+    },
+    {
         name: 'Impressum',
         path: '/impressum',
         description: 'Anbieterkennzeichnung und rechtliche Informationen.',

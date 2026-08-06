@@ -19,8 +19,10 @@
       "pricing": "Pricing",
       "freeApp": "Start for free",
       "forYouthCoaches": "For youth coaches",
+      "forClubs": "For clubs",
       "shotQuotaCalculator": "Shot quota calculator",
-      "excelTemplate": "Excel template"
+      "excelTemplate": "Excel template",
+      "experiences": "Experiences"
     },
     "contact": {
       "location": "Made in Germany",
@@ -226,6 +228,7 @@
     "items": {
       "home": "Home",
       "features": "Features",
+      "pricing": "Pricing",
       "howItWorks": "How it works",
       "ai": "AI analysis",
       "tournament": "Tournament",
@@ -233,7 +236,6 @@
       "faq": "FAQ",
       "demo": "Live demo",
       "impressum": "Legal",
-      "pricing": "Pricing",
       "ratgeber": "Guide",
       "aboutStatix": "What is Statix?"
     },
@@ -1152,6 +1154,12 @@
         "Shared with the whole team in seconds",
         "Offline-ready and set up in minutes"
       ]
+    },
+    "testimonials": {
+      "kicker": "Coaches say",
+      "title": "Voices from the hall",
+      "description": "Coaches using Statix in real matches – with their name and club.",
+      "linkLabel": "See all experiences"
     },
     "faq": {
       "kicker": "Good to know",
