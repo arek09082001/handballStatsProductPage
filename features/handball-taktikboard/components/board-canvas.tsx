@@ -209,6 +209,7 @@ export default function BoardCanvas({
   // still aim at a disc you can see.
   const magnetSize = Math.round(Math.min(48, Math.max(26, shortSide * 0.072)));
   const magnetHit = Math.max(HANDLE_HIT, magnetSize);
+  const numberFontSize = Math.round(magnetSize * 0.5);
   const noteFontSize = Math.round(Math.min(22, Math.max(14, shortSide * 0.034)));
   const boardHeight = boardWidth / view.aspectRatio;
 
@@ -789,9 +790,9 @@ export default function BoardCanvas({
                   background: isBall ? 'transparent' : colors.surface,
                   border: isBall ? 'none' : `1px solid ${colors.rim}`,
                   boxShadow: selectionRing(isSelected, isBall ? undefined : MAGNET_SHADOW),
-                  paddingTop: isBall ? 0 : magnetSize * numberNudge,
+                  paddingTop: isBall ? 0 : numberFontSize * numberNudge,
                   color: colors.text,
-                  fontSize: Math.round(magnetSize * 0.5),
+                  fontSize: numberFontSize,
                   fontWeight: 800,
                   fontVariantNumeric: 'tabular-nums',
                   // No negative tracking: it shortens the advance after the last
