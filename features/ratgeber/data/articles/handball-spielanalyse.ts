@@ -85,7 +85,7 @@ Du musst nicht alles messen. Eine Handvoll Kennzahlen trägt die meiste Aussage:
 - **Siebenmeter-Ausbeute:** verwandelte gegen erhaltene Siebenmeter.
 - **Torwartquote:** Anteil der gehaltenen Bälle.
 
-Diese Kennzahlen sind dein Kompass, keine Abrechnung mit einzelnen Spielern. Tiefer steigen wir in den Ratgebern zu den wichtigsten Handball-Kennzahlen und zur Wurfquote ein – hier reicht es, die paar Werte zu kennen, die eine Entscheidung tatsächlich verändern.
+Diese Kennzahlen sind dein Kompass, keine Abrechnung mit einzelnen Spielern. Tiefer steigen wir in den Ratgebern zu den [wichtigsten Handball-Kennzahlen](/ratgeber/handball-statistik-fuehren) und zur [Wurfquote](/ratgeber/wurfquote-berechnen) ein – hier reicht es, die paar Werte zu kennen, die eine Entscheidung tatsächlich verändern.
 
 ## Videoanalyse sinnvoll kombinieren
 
@@ -114,7 +114,7 @@ Womit du analysierst, entscheidet über den Aufwand und die Qualität deiner Aus
 | Excel-Tabelle | mittel | kaum praktikabel | flexibel, aber viel Handarbeit |
 | Statistik-App | gering im Spiel | ja, mit einem Tap | automatisch: Quoten, Wurfbilder, Phasen |
 
-Genau hier setzt eine Handball-Statistik-App wie **Statix** an. Du erfasst jeden Wurf, jedes Tor und jeden Ballverlust live mit einem Tap – und das offline, direkt in der Halle. Nach dem Schlusspfiff hast du Wurfbilder, Wurfquoten nach Position und eine Phasenanalyse in Zeitabschnitten, ohne eine einzige Zeile Excel. Eine KI-Analyse fasst die wichtigsten Muster für dich zusammen, sodass du dich auf die Entscheidungen konzentrieren kannst statt aufs Rechnen. Wenn du es ausprobieren willst: Unter [demo.statix-app.de](https://demo.statix-app.de) gibt es eine kostenlose Live-Demo, ganz ohne Account. So wird aus reiner Spielbeobachtung eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Genau hier setzt eine [Handball-Statistik-App für Trainer](/) wie **Statix** an. Du erfasst jeden Wurf, jedes Tor und jeden Ballverlust live mit einem Tap – und das offline, direkt in der Halle. Nach dem Schlusspfiff hast du Wurfbilder, Wurfquoten nach Position und eine Phasenanalyse in Zeitabschnitten, ohne eine einzige Zeile Excel. Eine KI-Analyse fasst die wichtigsten Muster für dich zusammen, sodass du dich auf die Entscheidungen konzentrieren kannst statt aufs Rechnen. Wenn du es ausprobieren willst: Unter [demo.statix-app.de](https://demo.statix-app.de) gibt es eine kostenlose Live-Demo, ganz ohne Account. Was die Nutzung danach kostet, steht in der [Preisübersicht](/preise). So wird aus reiner Spielbeobachtung eine echte Entscheidungsgrundlage für dein nächstes Training.`,
   faqs: [
     {
       question: 'Was gehört zu einer guten Handball-Spielanalyse?',

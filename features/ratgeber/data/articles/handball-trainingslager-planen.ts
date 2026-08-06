@@ -89,7 +89,7 @@ Der menschliche Ertrag ist oft der wertvollste. Gemeinsames Essen, ein Spieleabe
 
 ## Auswertung: Was hat das Camp gebracht?
 
-Ein Trainingslager wirkt nur, wenn das Erarbeitete in der Saison ankommt. Halte deshalb fest, welche Systeme und Standards ihr eingeführt habt, und überprüfe in den ersten Pflichtspielen, ob sie greifen. Mit **Statix**, der Handball-Statistik-App für Trainer, dokumentierst du Testspiele und den Saisonstart mit denselben Kennzahlen – so siehst du schwarz auf weiß, ob die neue Abwehr hält und die einstudierten Angriffe Tore bringen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ein Trainingslager wirkt nur, wenn das Erarbeitete in der Saison ankommt. Wie es sich ins Gesamtbild der [Saisonvorbereitung](/ratgeber/handball-saisonvorbereitung) einfügt, liest du hier. Halte deshalb fest, welche Systeme und Standards ihr eingeführt habt, und überprüfe in den ersten Pflichtspielen, ob sie greifen. Mit **Statix**, der [gratis nutzbaren Handball-Statistik-App](/handball-statistik-app-kostenlos), dokumentierst du Testspiele und den Saisonstart mit denselben Kennzahlen – so siehst du schwarz auf weiß, ob die neue Abwehr hält und die einstudierten Angriffe Tore bringen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie lange sollte ein Handball-Trainingslager dauern?',

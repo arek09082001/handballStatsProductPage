@@ -45,7 +45,7 @@ Die Kennzahl vereint zwei Dinge zu einer aussagekräftigen Größe:
 - **technische Fehler** (Fehlpässe, Schrittfehler, Stürmerfouls kosten einen Angriff ohne Wurf)
 - **Wurfausbeute** (aus den verbleibenden Angriffen entstehen Würfe, die fallen oder nicht)
 
-Eine Mannschaft mit guter Wurfquote, aber vielen Ballverlusten, kann trotzdem ineffektiv sein – weil sie gar nicht erst zum Wurf kommt.
+Eine Mannschaft mit guter [Wurfquote](/ratgeber/wurfquote-berechnen), aber vielen Ballverlusten, kann trotzdem ineffektiv sein – weil sie gar nicht erst zum Wurf kommt.
 
 ## Tempo verstehen und messen
 
@@ -82,7 +82,7 @@ Tempo ist eine taktische Entscheidung, keine Charakterfrage. Willst du beschleun
 
 ## Angriffe und Effektivität live im Blick
 
-Ballbesitz und Effektivität von Hand mitzuschreiben, ist im Spiel kaum machbar. Mit **Statix**, der Handball-Statistik-App für Trainer, werden Angriffe, Tore und technische Fehler live per Tap erfasst – Effektivität und Tempo entstehen daraus automatisch, in Echtzeit und pro Halbzeit. So triffst du deine Auszeit- und Tempo-Entscheidungen auf Basis von Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ballbesitz und Effektivität von Hand mitzuschreiben, ist im Spiel kaum machbar. Mit **Statix**, der [Statistik-App für dein Handballteam](/), werden Angriffe, Tore und technische Fehler live per Tap erfasst – Effektivität und Tempo entstehen daraus automatisch, in Echtzeit und pro Halbzeit. So triffst du deine Auszeit- und Tempo-Entscheidungen auf Basis von Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was ist ein Ballbesitz (Possession) im Handball?',

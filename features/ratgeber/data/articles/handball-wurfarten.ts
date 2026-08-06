@@ -89,9 +89,9 @@ Positionsempfehlung: Außenspieler brauchen Heber und Dreher zuerst, Rückraumsp
 
 ## Welcher Wurf bringt dir Tore?
 
-Am Ende zählt nicht, wie viele Würfe du kennst, sondern welche du triffst. Genau das verrät dir die Statistik.
+Am Ende zählt nicht, wie viele Würfe du kennst, sondern welche du triffst. Genau das verrät dir die Statistik – pro Wurfart lässt sich die [Trefferquote berechnen](/wurfquote-rechner).
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du jeden Wurf mit Position und Ergebnis live per Tap. Auf der Shot Map siehst du, aus welchen Zonen und Situationen du effizient bist – und wo eine zusätzliche Wurfvariante die Quote heben würde. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du jeden Wurf mit Position und Ergebnis live per Tap. Auf der Shot Map siehst du, aus welchen Zonen und Situationen du effizient bist – und wo eine zusätzliche Wurfvariante die Quote heben würde. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Welche Wurfarten gibt es im Handball?',

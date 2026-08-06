@@ -38,7 +38,7 @@ Die Berechnung ist denkbar einfach. Du teilst die Anzahl der Tore durch die Anza
 
 > **Wurfquote (%) = Tore ÷ Würfe × 100**
 
-Wichtig ist nur, dass du beide Werte sauber erfasst: jedes Tor und jeden Torabschluss. Genau hier passieren am Spielfeldrand die meisten Fehler, weil Fehlwürfe im Eifer des Gefechts schnell untergehen.
+Wichtig ist nur, dass du beide Werte sauber erfasst: jedes Tor und jeden Torabschluss. Genau hier passieren am Spielfeldrand die meisten Fehler, weil Fehlwürfe im Eifer des Gefechts schnell untergehen. Die Prozentzahl selbst musst du übrigens nicht im Kopf ausrechnen – trag Tore und Würfe in den [Wurfquoten-Rechner](/wurfquote-rechner) ein, dann steht sie sofort da.
 
 ## Beispiel: Wurfquote eines Spielers berechnen
 
@@ -90,7 +90,7 @@ Richtig eingesetzt wird die Wurfquote zum Steuerungsinstrument statt zur bloßen
 
 ## Wurfquote automatisch erfassen
 
-Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe gehen am Spielfeldrand schnell unter. Eine Handball-Statistik-App wie **Statix** erfasst jeden Wurf mit einem Tap und berechnet Wurfquoten für jeden Spieler und jede Position automatisch, live und offline in der Halle. Am Ende siehst du nicht nur die Quote, sondern auch das passende Wurfbild – ohne eine einzige Zeile Excel. So wird aus der Zahl eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe gehen am Spielfeldrand schnell unter. Eine [Handball-Statistik-App wie Statix](/) erfasst jeden Wurf mit einem Tap und berechnet Wurfquoten für jeden Spieler und jede Position automatisch, live und offline in der Halle. Am Ende siehst du nicht nur die Quote, sondern auch das passende Wurfbild – ohne eine einzige Zeile Excel. Wer lieber mit einer Tabelle startet, nimmt die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage) als Zwischenschritt. So wird aus der Zahl eine echte Entscheidungsgrundlage für dein nächstes Training.`,
   faqs: [
     {
       question: 'Wie berechnet man die Wurfquote im Handball?',

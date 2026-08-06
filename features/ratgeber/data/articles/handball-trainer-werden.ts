@@ -93,7 +93,7 @@ Gerade das Festhalten von Leistungen hilft, Fortschritte sichtbar zu machen und 
 
 Ein neuer Trainer gewinnt schnell an Autorität, wenn er Entscheidungen nachvollziehbar begründen kann – mit Zahlen statt Bauchgefühl.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du Tore, Wurfquoten, Zeitstrafen und die Entwicklung jedes Spielers live per Tap. So behältst du von Anfang an den Überblick, erkennst Stärken und Baustellen deines Teams und kannst deine Ansprachen mit echten Daten untermauern. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Mit **Statix**, der [Statistik-App für Nachwuchstrainer](/fuer-jugendtrainer), erfasst du Tore, Wurfquoten, Zeitstrafen und die Entwicklung jedes Spielers live per Tap. Wie du deine erste Einheit aufbaust, zeigt der Ratgeber [Handballtraining planen](/ratgeber/handball-training-planen). So behältst du von Anfang an den Überblick, erkennst Stärken und Baustellen deines Teams und kannst deine Ansprachen mit echten Daten untermauern. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Braucht man eine Lizenz, um Handball zu trainieren?',
