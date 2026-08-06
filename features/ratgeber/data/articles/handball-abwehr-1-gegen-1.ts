@@ -93,7 +93,7 @@ Ein Verteidiger mit mittelmäßigem Zweikampf, aber großartiger Kommunikation i
 
 Abwehrspieler tauchen in klassischen Statistiken kaum auf – dabei entscheiden ihre Duelle Spiele. Blocks, Ballgewinne, erzwungene Fehlwürfe und Gegentore pro Abwehrphase erzählen die wahre Geschichte.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du neben Toren auch Ballgewinne, technische Fehler des Gegners und Gegentore live per Tap. So wird sichtbar, wie stabil deine Abwehr wirklich steht – und welche Zweikämpfe den Unterschied machen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Mit **Statix** kannst du die [Abwehrleistung mit Statistik bewerten](/): neben Toren auch Ballgewinne, technische Fehler des Gegners und Gegentore, live per Tap. Wie du daraus eine vollständige [Auswertung nach dem Spiel](/ratgeber/handball-spielanalyse) baust, steht im passenden Ratgeber. So wird sichtbar, wie stabil deine Abwehr wirklich steht – und welche Zweikämpfe den Unterschied machen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie verteidige ich im Handball besser im 1 gegen 1?',

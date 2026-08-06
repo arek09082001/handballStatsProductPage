@@ -44,7 +44,7 @@ export function GET() {
 
 > ${seo.description}
 
-${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, Co-Trainer, Vereine und Mannschaften erfassen Handball-Spiele live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und erhalten automatisch ausgewertete Spieler- und Mannschaftsstatistiken, Wurfbilder, KI-Analysen und Entwicklungsverläufe. ${name} läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop, funktioniert offline in der Halle und lässt sich in Sekunden mit dem Team teilen. Eine voll ausgestattete Live-Demo mit echten Spieldaten ist ohne Account unter ${CLUB_CONFIG.website.demoUrl} verfügbar. ${name} wird von Arkadiusz Weiss entwickelt – einem Handballer aus Deutschland (Made in Germany).
+${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, Co-Trainer, Vereine und Mannschaften erfassen Handball-Spiele live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und erhalten automatisch ausgewertete Spieler- und Mannschaftsstatistiken, Wurfbilder, KI-Analysen und Entwicklungsverläufe. ${name} läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop, funktioniert offline in der Halle und lässt sich in Sekunden mit dem Team teilen. Die App ist unter ${CLUB_CONFIG.website.appUrl} verfügbar – Registrierung kostenlos. Eine voll ausgestattete Live-Demo mit echten Spieldaten ist ohne Account unter ${CLUB_CONFIG.website.demoUrl} verfügbar. ${name} wird von Arkadiusz Weiss entwickelt – einem Handballer aus Deutschland (Made in Germany).
 
 - Kategorie: Handball-Statistik-App / Handball Scouting & Spielanalyse
 - Zielgruppe: ${business.audience}
@@ -54,6 +54,7 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Preis: Aktuell kostenlos mit vollem Funktionsumfang, ohne Kreditkarte und ohne Bezahlvorgang in der App; geplant ist später ein Abo für 3,99 € im Monat (Details unter ${absoluteUrl('/preise')})
 - Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
+- App (Registrierung, kostenlos starten): ${CLUB_CONFIG.website.appUrl}
 - Live-Demo (ohne Account): ${CLUB_CONFIG.website.demoUrl}
 
 ## Funktionen
@@ -68,6 +69,7 @@ ${ratgeber}
 
 ## Links
 - Startseite: ${SITE_URL}
+- App / Registrierung: ${CLUB_CONFIG.website.appUrl}
 - Preise (was Statix kostet, inklusive aller Grenzen des kostenlosen Zugangs): ${absoluteUrl('/preise')}
 - Handball-Statistik-App kostenlos (was der kostenlose Zugang enthält und wo seine Grenzen liegen): ${absoluteUrl('/handball-statistik-app-kostenlos')}
 - Wurfquoten-Rechner (kostenloses Tool: Wurfquote berechnen, nach Position einordnen, einbettbar): ${absoluteUrl('/wurfquote-rechner')}

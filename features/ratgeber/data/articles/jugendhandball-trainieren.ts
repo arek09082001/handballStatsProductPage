@@ -22,8 +22,8 @@ export const jugendhandballTrainieren: Article = {
   excerpt:
     'Im Nachwuchs formst du Handballer und junge Menschen zugleich. Diese Tipps helfen dir, Kinder und Jugendliche altersgerecht, motivierend und mit Freude am Spiel zu trainieren.',
   heroEyebrow: 'Jugend & Entwicklung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Nachwuchstrainer beim Jugendhandball-Training in der Halle',
+  imagePath: '/mannschaft-spielerwerte.jpg',
+  imageAlt: 'Mannschaftsliste in Statix mit Spielen, Toren und Wurfquote je Nachwuchsspieler',
   body: `Im Jugendhandball geht es um mehr als Tore. Du formst nicht nur Handballerinnen und Handballer, sondern junge Menschen – und legst den Grundstein dafür, ob sie dem Sport treu bleiben. Deshalb stehen Spaß und eine saubere Ausbildung immer vor dem Ergebnis am Wochenende. Dieser Ratgeber gibt dir praktische Tipps, wie du Nachwuchsmannschaften altersgerecht, motivierend und mit Augenmaß trainierst.
 
 ## Altersgerecht trainieren
@@ -108,7 +108,7 @@ Auch mit den besten Absichten passieren im Nachwuchs immer wieder dieselben Fehl
 
 Im Kinder- und Jugendhandball zählen Freude und Ausbildung mehr als jede Statistik – das bleibt der Maßstab. Trotzdem kann es schön sein, die Entwicklung über eine Saison hinweg festzuhalten: Wer traut sich inzwischen den Sprungwurf zu, wer hat im Tor Fortschritte gemacht, wie hat sich das Zusammenspiel entwickelt?
 
-Mit Augenmaß eingesetzt hilft dir eine Handball-Statistik-App wie **Statix**, solche Entwicklungen über Wochen und Monate sichtbar zu machen – nicht um Kinder zu bewerten, sondern um Fortschritte zu erkennen und jedem Kind zu zeigen, wie weit es gekommen ist. Wie das im Alltag eines Jugendtrainers aussieht – ein Tap pro Aktion, Live-Ticker für die Eltern, Spielerkarten fürs Team – steht auf der Seite [Handball-Statistik für Jugendtrainer](/fuer-jugendtrainer). Wenn du reinschauen möchtest, gibt es unter demo.statix-app.de eine kostenlose Live-Demo ohne Account. Und egal, was die Zahlen sagen: Im Nachwuchs gewinnt am Ende immer die Mannschaft, die mit Freude dabei bleibt.`,
+Mit Augenmaß eingesetzt hilft dir eine [Handball-Statistik-App für Jugendtrainer](/fuer-jugendtrainer) wie **Statix**, solche Entwicklungen über Wochen und Monate sichtbar zu machen – nicht um Kinder zu bewerten, sondern um Fortschritte zu erkennen und jedem Kind zu zeigen, wie weit es gekommen ist. Wie du das methodisch sauber machst, steht im Ratgeber [Spielerentwicklung messen](/ratgeber/handball-spielerentwicklung-messen). Wenn du reinschauen möchtest, gibt es unter [demo.statix-app.de](https://demo.statix-app.de) eine kostenlose Live-Demo ohne Account. Und egal, was die Zahlen sagen: Im Nachwuchs gewinnt am Ende immer die Mannschaft, die mit Freude dabei bleibt.`,
   faqs: [
     {
       question: 'Ab welchem Alter können Kinder Handball spielen?',
@@ -132,8 +132,8 @@ Mit Augenmaß eingesetzt hilft dir eine Handball-Statistik-App wie **Statix**, s
     },
   ],
   relatedSlugs: [
-    'handball-training-planen',
+    'handball-trainer-werden',
     'handball-aufwaermen-uebungen',
-    'handball-angriffssysteme-einsteiger',
+    'handball-quereinsteiger-erwachsene',
   ],
 };

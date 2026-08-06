@@ -123,10 +123,9 @@ accordion is client) so every article stays crawlable.
   an already‑visible default, exponential ease‑out — not an identical fade on
   every section.
 - Kept effects, re‑themed: the WebGL fluid ("SmokeCursor") stays on the dark
-  **stats scoreboard** band as chalk/marker dust in brand hues; the once‑per‑
-  session **kickoff** splash keeps the handball → orange‑wipe → wordmark but is
-  tuned to these tokens. Both respect `prefers-reduced-motion` and WebGL/GPU
-  guards.
+  **stats scoreboard** band as chalk/marker dust in brand hues, and respects
+  `prefers-reduced-motion` and WebGL/GPU guards. Nothing covers the page before
+  first paint — the hero is the first thing a visitor sees, always.
 - Reach past transform/opacity: blur, clip‑path/mask (marker reveal), shadow.
 
 ## Bans (this world's anti‑patterns; the brief still wins over any of these)

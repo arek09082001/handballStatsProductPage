@@ -22,8 +22,8 @@ export const handballBeweglichkeitDehnen: Article = {
   excerpt:
     'Eine bewegliche Wurfschulter wirft härter, eine mobile Hüfte fintiert besser. So dehnst du richtig – dynamisch vor dem Spiel, ruhig danach – und beugst Verletzungen vor.',
   heroEyebrow: 'Training & Planung',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballspieler bei einer Mobility-Übung für die Wurfschulter',
+  imagePath: '/saison-uebersicht-kennzahlen.jpg',
+  imageAlt: 'Übersicht aller Spiele einer Saison in Statix zur Einschätzung der Gesamtbelastung',
   body: `Beweglichkeit ist im Handball keine Kür, sondern Leistungsfaktor. Eine frei bewegliche Wurfschulter erzeugt mehr Vorspannung und damit mehr Wurfkraft. Eine mobile Hüfte macht Finten und Richtungswechsel flüssiger. Und ein gutes Bewegungsausmaß schützt genau die Gelenke, die im Handball am häufigsten leiden: Schulter, Knie und Sprunggelenk. Wer Beweglichkeit vernachlässigt, verschenkt Leistung und riskiert Verletzungen.
 
 ## Beweglichkeit ist nicht gleich Dehnen
@@ -82,7 +82,7 @@ Beweglichkeit ist ein Baustein der Verletzungsprävention, aber nicht der einzig
 
 ## Belastung und Erholung im Blick behalten
 
-Beweglichkeit und Regeneration hängen eng mit der Gesamtbelastung zusammen. Wer Spiel- und Trainingsbelastung im Auge behält, dosiert auch die Mobility-Arbeit sinnvoller. Mit **Statix**, der Handball-Statistik-App für Trainer, behältst du Einsatzzeiten und Spielbelastung deiner Spieler über die Saison im Blick – eine gute Grundlage, um Training, Dehnen und Erholung aufeinander abzustimmen. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Beweglichkeit und Regeneration hängen eng mit der Gesamtbelastung zusammen. Wie du daraus echte [Verletzungsprävention](/ratgeber/handball-verletzungen-vorbeugen) machst, steht hier. Wer Spiel- und Trainingsbelastung im Auge behält, dosiert auch die Mobility-Arbeit sinnvoller. Mit **Statix**, der [kostenlos nutzbaren Statistik-App für Handball](/handball-statistik-app-kostenlos), behältst du Einsatzzeiten und Spielbelastung deiner Spieler über die Saison im Blick – eine gute Grundlage, um Training, Dehnen und Erholung aufeinander abzustimmen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Sollte man sich vor dem Handballspiel dehnen?',

@@ -92,13 +92,13 @@ Wechsle die Übungen regelmäßig, aber behalte die 10er-Serie als festen Messwe
 
 ## Quote im Blick behalten
 
-Ob dein Siebenmetertraining wirkt, siehst du nur an der Quote. Gute Schützen liegen im Amateur- und ambitionierten Ligabereich bei rund 75 bis 85 Prozent. Die Rechnung dahinter ist simpel:
+Ob dein Siebenmetertraining wirkt, siehst du nur an der Quote. Gute Schützen liegen im Amateur- und ambitionierten Ligabereich bei rund 75 bis 85 Prozent. Die Rechnung dahinter ist simpel – oder du lässt sie dir vom [Wurfquoten-Rechner](/wurfquote-rechner) abnehmen:
 
 > **Siebenmeterquote (%) = verwandelte Siebenmeter ÷ geworfene Siebenmeter × 100**
 
 Behalte den Wert über mehrere Spiele im Blick und vergleiche deine Schützen untereinander – so triffst du die Reihenfolge der Schützenliste nicht aus dem Bauch, sondern mit Daten. Fällt die Quote eines Schützen über mehrere Spiele ab, ist das ein klarer Trainingsauftrag – oft steckt eine verratene Blickrichtung oder eine zu berechenbare Lieblingsecke dahinter.
 
-Genau dabei hilft dir **Statix**, die Handball-Statistik-App für Trainer: Du erfasst jeden Siebenmeter live per Tap, siehst die Quote jedes Schützen sofort und kannst sie offline in der Halle vergleichen. Wer wirklich der sicherste Schütze ist, verrät dir dann die Zahl statt das Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter demo.statix-app.de aus.`,
+Genau dabei hilft dir **Statix**, die [Handball-Statistik-App für Trainer](/): Du erfasst jeden Siebenmeter live per Tap, siehst die Quote jedes Schützen sofort und kannst sie offline in der Halle vergleichen. Wer wirklich der sicherste Schütze ist, verrät dir dann die Zahl statt das Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de) aus.`,
   faqs: [
     {
       question: 'Wie viele Meter sind es beim Siebenmeter im Handball?',
@@ -124,6 +124,6 @@ Genau dabei hilft dir **Statix**, die Handball-Statistik-App für Trainer: Du er
   relatedSlugs: [
     'handball-torwarttraining',
     'wurfquote-berechnen',
-    'handball-wurftraining-sprungwurf',
+    'handball-stemmschritt-dreierrhythmus',
   ],
 };

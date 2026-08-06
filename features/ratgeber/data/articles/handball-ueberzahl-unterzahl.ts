@@ -22,8 +22,8 @@ export const handballUeberzahlUnterzahl: Article = {
   excerpt:
     'Jede Zeitstrafe verschiebt das Kräfteverhältnis für zwei Minuten. Wer Über- und Unterzahl beherrscht, holt in diesen Phasen die Tore, die am Ende über Sieg oder Niederlage entscheiden.',
   heroEyebrow: 'Taktik & Abwehr',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballmannschaft im Überzahlangriff gegen eine dezimierte Abwehr',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Live-Statistik in Statix mit Spielstand, Zeitstrafen und den Werten aller Spieler',
   body: `Ein Spiel wird oft in wenigen Minuten entschieden – und diese Minuten sind häufig Über- oder Unterzahlphasen. Jede Zeitstrafe verschiebt das Kräfteverhältnis für zwei Minuten: Eine Mannschaft greift mit einem Spieler mehr an, die andere verteidigt mit einem weniger. Wer diese Phasen beherrscht, sammelt genau die zwei, drei Tore, die am Ende den Unterschied machen. Trotzdem wird Über- und Unterzahl im Training oft vernachlässigt.
 
 ## Warum diese Phasen so wichtig sind
@@ -78,7 +78,7 @@ Eine moderne Variante ist der Wechsel auf einen siebten Feldspieler für den Tor
 
 ## Über- und Unterzahl auswerten
 
-Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore erzielt und kassiert ihr in Über- und Unterzahl? Mit **Statix**, der Handball-Statistik-App für Trainer, kannst du Spielphasen erfassen und sehen, ob eure Überzahl wirklich Tore bringt und eure Unterzahl standhält. Aus diesem Bild wird ein gezielter Trainingsschwerpunkt für genau die Minuten, die Spiele entscheiden. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore erzielt und kassiert ihr in Über- und Unterzahl? Mit **Statix** lassen sich [Spielphasen statistisch auswerten](/) – du erfasst sie live und sehen, ob eure Überzahl wirklich Tore bringt und eure Unterzahl standhält. Aus diesem Bild wird ein gezielter Trainingsschwerpunkt für genau die Minuten, die Spiele entscheiden. Wie du Spiele insgesamt [systematisch auswertest](/ratgeber/handball-spielanalyse), steht im passenden Ratgeber. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie spielt man Überzahl im Handball richtig aus?',

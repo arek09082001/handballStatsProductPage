@@ -4,16 +4,43 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Mail, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { trackDemoClick } from '@/lib/analytics';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 
 export default function Footer() {
   const t = useTranslations('footerSection');
 
-  const productLinks: { href: string; label: string; external?: boolean }[] = [
-    { href: CLUB_CONFIG.website.demoUrl, label: t('product.demo'), external: true },
+  const productLinks: {
+    href: string;
+    label: string;
+    external?: boolean;
+    /** Which conversion event the external click reports. */
+    onExternalClick?: () => void;
+  }[] = [
+    {
+      href: CLUB_CONFIG.website.appUrl,
+      label: t('product.register'),
+      external: true,
+      onExternalClick: () => trackRegisterClick('footer'),
+    },
+    {
+      href: CLUB_CONFIG.website.demoUrl,
+      label: t('product.demo'),
+      external: true,
+      onExternalClick: () => trackDemoClick('footer'),
+    },
     { href: '/#all-features', label: t('product.features') },
+    { href: '/preise', label: t('product.pricing') },
+    { href: '/handball-statistik-app-kostenlos', label: t('product.freeApp') },
+    { href: '/fuer-jugendtrainer', label: t('product.forYouthCoaches') },
+    { href: '/fuer-vereine', label: t('product.forClubs') },
+    { href: '/wurfquote-rechner', label: t('product.shotQuotaCalculator') },
+    {
+      href: '/handball-statistik-excel-vorlage',
+      label: t('product.excelTemplate'),
+    },
     { href: '/was-ist-statix', label: t('product.aboutStatix') },
+    { href: '/erfahrungen', label: t('product.experiences') },
     { href: '/#liveticker', label: t('product.liveTicker') },
     { href: '/ratgeber', label: t('product.ratgeber') },
     { href: '/#faq', label: t('product.faq') },
@@ -21,22 +48,10 @@ export default function Footer() {
     { href: '/#contact', label: t('product.contact') },
   ];
 
-  // The commercial and audience pages, so every one of them is reachable from
-  // any page on the site rather than only from its siblings.
-  const audienceLinks: { href: string; label: string }[] = [
-    { href: '/preise', label: t('audience.pricing') },
-    { href: '/handball-statistik-app-kostenlos', label: t('audience.free') },
-    { href: '/handball-statistik-excel-vorlage', label: t('audience.excelTemplate') },
-    { href: '/wurfquote-rechner', label: t('audience.calculator') },
-    { href: '/fuer-vereine', label: t('audience.clubs') },
-    { href: '/fuer-jugendtrainer', label: t('audience.youthCoaches') },
-    { href: '/erfahrungen', label: t('audience.experiences') },
-  ];
-
   return (
     <footer className='w-full bg-court text-white'>
       <div className='mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-10 lg:py-12'>
-        <div className='grid gap-10 border-b border-white/10 pb-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.9fr_0.7fr_1fr] lg:gap-10'>
+        <div className='grid gap-10 border-b border-white/10 pb-8 lg:grid-cols-[1.4fr_0.8fr_0.8fr_1.2fr] lg:gap-12'>
           <div className='space-y-5'>
             <div className='flex items-center gap-3'>
               <span className='relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-xl'>
@@ -69,24 +84,7 @@ export default function Footer() {
                   title={item.label}
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
-                  onClick={item.external ? () => trackDemoClick('footer') : undefined}
-                  className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className='mb-4 font-display text-sm font-bold text-white'>
-              {t('headings.audience')}
-            </p>
-            <div className='space-y-3'>
-              {audienceLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  title={item.label}
+                  onClick={item.onExternalClick}
                   className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                   {item.label}
                 </Link>

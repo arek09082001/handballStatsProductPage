@@ -54,25 +54,38 @@ export default function StatsBarSection() {
       );
 
       // Count each numeric value up from zero when the scoreboard scrolls in.
+      // The markup already carries the final figure (see below), so we only
+      // reset to zero once we know JavaScript is running.
       items.forEach((item, i) => {
         const el = numberRefs.current[i];
         const { prefix, number, suffix } = parseValue(item.value);
         if (!el || number === null) return;
 
         const counter = { v: 0 };
+        const render = () => {
+          el.textContent = `${prefix}${Math.round(counter.v)}${suffix}`;
+        };
+        render();
+
         gsap.to(counter, {
           v: number,
           duration: 1.5,
           ease: 'power2.out',
           scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', once: true },
-          onUpdate: () => {
-            el.textContent = `${prefix}${Math.round(counter.v)}${suffix}`;
-          },
+          onUpdate: render,
         });
       });
     }, sectionRef);
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      // gsap.context() only reverts what GSAP itself set – put the real
+      // figures back so an unmount never leaves a zeroed scoreboard behind.
+      items.forEach((item, i) => {
+        const el = numberRefs.current[i];
+        if (el) el.textContent = item.value;
+      });
+    };
   }, [items]);
 
   return (
@@ -94,7 +107,6 @@ export default function StatsBarSection() {
         <h2 className='sr-only'>{t('srTitle')}</h2>
         <div className='grid grid-cols-2 sm:grid-cols-4'>
           {items.map((item, i) => {
-            const { prefix, number, suffix } = parseValue(item.value);
             return (
               <div
                 key={item.label}
@@ -108,7 +120,7 @@ export default function StatsBarSection() {
                     numberRefs.current[i] = el;
                   }}
                   className='block font-display text-[2.75rem] font-extrabold leading-none tracking-[-0.03em] text-chalk tabular-nums sm:text-6xl'>
-                  {number === null ? prefix : `${prefix}0${suffix}`}
+                  {item.value}
                 </span>
                 <span className='mt-3.5 flex max-w-[18ch] items-center gap-2 text-sm font-medium leading-6 text-chalk/60 sm:mt-4'>
                   <span aria-hidden className='size-1.5 shrink-0 rounded-[3px] bg-primary' />

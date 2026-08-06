@@ -27,7 +27,6 @@ export const metadata: Metadata = createPageMetadata({
     'statix kostenlos',
     'statix erfahrungen',
   ],
-  imagePath: '/heroImage.png',
 });
 
 export default function Page() {

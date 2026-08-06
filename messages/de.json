@@ -4,10 +4,10 @@
     "headings": {
       "product": "Produkt",
       "legal": "Rechtliches",
-      "contact": "Kontakt",
-      "audience": "Für Trainer & Vereine"
+      "contact": "Kontakt"
     },
     "product": {
+      "register": "Kostenlos registrieren",
       "demo": "Live-Demo",
       "features": "Alle Funktionen",
       "aboutStatix": "Was ist Statix?",
@@ -15,7 +15,14 @@
       "ratgeber": "Ratgeber",
       "faq": "Häufige Fragen",
       "newsletter": "Newsletter",
-      "contact": "Kontakt aufnehmen"
+      "contact": "Kontakt aufnehmen",
+      "pricing": "Preise",
+      "freeApp": "Kostenlos starten",
+      "forYouthCoaches": "Für Jugendtrainer",
+      "forClubs": "Für Vereine",
+      "shotQuotaCalculator": "Wurfquoten-Rechner",
+      "excelTemplate": "Excel-Vorlage",
+      "experiences": "Erfahrungen"
     },
     "contact": {
       "location": "Made in Germany",
@@ -32,16 +39,7 @@
       "agb": "AGB",
       "newsletterUnsubscribe": "Newsletter abmelden"
     },
-    "copyright": "Copyright © {year}. Alle Rechte vorbehalten.",
-    "audience": {
-      "pricing": "Preise",
-      "free": "Kostenlos nutzen",
-      "excelTemplate": "Excel-Vorlage",
-      "calculator": "Wurfquoten-Rechner",
-      "clubs": "Für Vereine",
-      "youthCoaches": "Für Jugendtrainer",
-      "experiences": "Erfahrungen"
-    }
+    "copyright": "Copyright © {year}. Alle Rechte vorbehalten."
   },
   "agbPage": {
     "header": {
@@ -236,10 +234,12 @@
       "tournament": "Turnier",
       "liveTicker": "Live-Ticker",
       "faq": "FAQ",
-      "contact": "Kontakt",
-      "impressum": "Impressum"
+      "demo": "Live-Demo",
+      "impressum": "Impressum",
+      "ratgeber": "Ratgeber",
+      "aboutStatix": "Was ist Statix?"
     },
-    "demoCta": "Demo starten",
+    "registerCta": "Jetzt registrieren",
     "languageSwitcher": {
       "label": "Sprache wechseln",
       "switchToGerman": "Auf Deutsch wechseln",
@@ -731,10 +731,10 @@
       "headlineLead": "Handball-Statistiken",
       "headlineHighlight": "live erfassen",
       "headlineTail": "– mit einem Tap, direkt von der Bank.",
-      "description": "Tore, Würfe, Paraden, Zeitstrafen – jede Aktion ein Tap. Statix macht daraus automatisch Wurfquoten, Wurfbilder und Spielerstatistiken, offline in der Halle. Schau dir zuerst die Live-Demo mit echten Spieldaten an – ohne Account.",
-      "primaryCta": "Live-Demo starten",
-      "secondaryCta": "Funktionen ansehen",
-      "trust1": "Demo mit echten Spieldaten",
+      "description": "Tore, Würfe, Paraden, Zeitstrafen – jede Aktion ein Tap. Statix macht daraus automatisch Wurfquoten, Wurfbilder und Spielerstatistiken, offline in der Halle. Statix ist jetzt verfügbar: registriere dich kostenlos und probier es mit deinem Team selbst aus.",
+      "primaryCta": "Jetzt registrieren",
+      "secondaryCta": "Live-Demo ansehen",
+      "trust1": "In wenigen Minuten startklar",
       "trust2": "Kostenlos starten – keine Kreditkarte",
       "trust3": "Offline in der Halle"
     },
@@ -1139,8 +1139,8 @@
     "pros": {
       "kicker": "Zettel war gestern",
       "title": "Handball-Statistiken statt Zettel und Bierdeckel",
-      "description": "Zeig deinem Trainer in zwei Minuten, was auf dem Zettel verloren geht: Öffne die Live-Demo in der Halle – echtes Spiel, echte Zahlen, fertige Auswertung.",
-      "cta": "Demo öffnen & dem Trainer zeigen",
+      "description": "Zeig deinem Trainer in zwei Minuten, was auf dem Zettel verloren geht: Registriere dich kostenlos und erfasse dein erstes Spiel – echtes Spiel, echte Zahlen, fertige Auswertung.",
+      "cta": "Registrieren & selbst ausprobieren",
       "oldTitle": "Zettel & Stift",
       "oldPoints": [
         "Zahlen, die nach dem Spiel niemand mehr auswertet",
@@ -1224,7 +1224,7 @@
         },
         {
           "question": "Was kostet Statix?",
-          "answer": "Du startest kostenlos: Probiere zuerst die Live-Demo ohne Account aus und erfasse dann dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das exklusive Launch-Angebot."
+          "answer": "Du startest kostenlos: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus. Für ganze Teams und Vereine gibt es faire, planbare Abos."
         },
         {
           "question": "Wer steckt hinter Statix?",
@@ -1233,15 +1233,15 @@
       ]
     },
     "newsletter": {
-      "kicker": "Launch-Angebot",
-      "title": "Sichere dir das Launch-Angebot für dein Team",
-      "description": "Statix startet bald offiziell. Trag dich ein und bekomme das exklusive Launch-Angebot für Vereine, neue Funktionen zuerst und Praxis-Tipps zur Spielanalyse – direkt vom Entwickler.",
+      "kicker": "Newsletter",
+      "title": "Bleib auf dem Laufenden – Neues aus der Halle",
+      "description": "Statix ist gestartet und wird laufend weiterentwickelt. Trag dich ein und bekomme neue Funktionen zuerst, Angebote für Vereine und Praxis-Tipps zur Spielanalyse – direkt vom Entwickler.",
       "placeholder": "Deine E-Mail-Adresse",
-      "button": "Launch-Angebot sichern",
+      "button": "Newsletter abonnieren",
       "pending": "Wird gesendet…",
       "benefits": [
-        "Exklusives Launch-Angebot für Vereine",
         "Neue Funktionen zuerst erfahren",
+        "Angebote für Teams und Vereine",
         "Praxis-Tipps zur Spielanalyse"
       ],
       "privacyPrefix": "Ich akzeptiere die",
@@ -1257,7 +1257,7 @@
     "contact": {
       "kicker": "Sag Hallo",
       "title": "Schreib uns – wir sind für dich da",
-      "description": "Du hast Fragen zu Statix, möchtest dein Team oder deinen Verein anmelden oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
+      "description": "Du hast Fragen zu Statix, brauchst Unterstützung beim Start mit deinem Team oder deinem Verein oder hast Feedback? Schreib uns eine Nachricht und wir melden uns zeitnah persönlich bei dir zurück.",
       "namePlaceholder": "Dein Name",
       "emailPlaceholder": "Deine E-Mail-Adresse",
       "topicPlaceholder": "Worum geht's?",
@@ -1275,12 +1275,12 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "finalCta": {
-      "title": "Handball-Statistiken jetzt live testen – mit echten Spieldaten",
-      "description": "Klick dich durch ein komplett erfasstes Spiel: Live-Statistiken, Wurfbilder, KI-Analyse. Direkt im Browser, ohne Account.",
-      "primaryCta": "Launch-Angebot sichern",
+      "title": "Jetzt registrieren und Statix selbst ausprobieren",
+      "description": "Statix ist da: Konto anlegen, Team eintragen und dein erstes Spiel live erfassen – Live-Statistiken, Wurfbilder und KI-Analyse inklusive. Direkt im Browser, kostenlos starten.",
+      "primaryCta": "Kostenlos registrieren",
       "note": "Läuft direkt im Browser – auf dem Tablet am Spielfeldrand genauso wie am Laptop zur Nachbereitung.",
-      "badge": "Live-Demo · keine Anmeldung nötig",
-      "demoCta": "Live-Demo öffnen",
+      "badge": "Statix ist live · kostenlos starten",
+      "demoCta": "Live-Demo ansehen",
       "previewLabel": "Live-Erfassung"
     }
   },

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
-import { CLUB_CONFIG } from '@/lib/club-config';
+import { ARTICLE_AUTHOR, authorInitials } from '@/features/ratgeber/data/author';
 
 /**
  * The founder's answer to "wo ist der Haken?" — one short paragraph in first
@@ -21,15 +21,21 @@ export default function FreeWhy() {
 
         <BoardCard pin='magnet' className='mt-10 p-6 sm:p-8'>
           <div className='flex flex-col gap-6 sm:flex-row sm:items-start'>
-            <span className='relative h-28 w-full shrink-0 overflow-hidden rounded-2xl ring-1 ring-ink/10 sm:size-28'>
+            {ARTICLE_AUTHOR.photoPath ? (
               <Image
-                src='/1000000918.jpg'
-                alt='Handball in der Halle – Statix entsteht aus der Praxis am Spielfeldrand'
-                fill
-                sizes='(max-width: 640px) 100vw, 112px'
-                className='object-cover'
+                src={ARTICLE_AUTHOR.photoPath}
+                alt={`${ARTICLE_AUTHOR.name}, ${ARTICLE_AUTHOR.role}`}
+                width={112}
+                height={112}
+                className='size-24 shrink-0 rounded-2xl object-cover ring-1 ring-ink/10 sm:size-28'
               />
-            </span>
+            ) : (
+              <span
+                aria-hidden='true'
+                className='flex size-24 shrink-0 items-center justify-center rounded-2xl bg-court font-display text-2xl font-extrabold text-chalk ring-1 ring-ink/10 sm:size-28'>
+                {authorInitials(ARTICLE_AUTHOR.name)}
+              </span>
+            )}
             <div>
               <p className='max-w-[64ch] text-[15px] leading-7 text-ink/80'>
                 Ich habe Statix gebaut, weil ich selbst an der Bank stand und
@@ -41,10 +47,8 @@ export default function FreeWhy() {
                 den Betrieb tragen, aber wer heute anfängt, zahlt heute nichts
                 und wird vorher informiert, wenn sich etwas ändert.
               </p>
-              <p className='mt-4 font-hand text-2xl text-primary'>
-                {CLUB_CONFIG.legal.responsiblePerson}
-              </p>
-              <p className='text-sm text-ink/60'>Handballer und Entwickler von Statix</p>
+              <p className='mt-4 font-hand text-2xl text-primary'>{ARTICLE_AUTHOR.name}</p>
+              <p className='text-sm text-ink/60'>{ARTICLE_AUTHOR.role}</p>
             </div>
           </div>
         </BoardCard>

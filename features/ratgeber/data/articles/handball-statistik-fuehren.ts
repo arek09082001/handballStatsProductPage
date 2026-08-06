@@ -18,7 +18,7 @@ export const handballStatistikFuehren: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-05-12',
-  dateModified: '2026-07-08',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Tore zählen kann jeder – aber welche Kennzahlen bringen dich wirklich weiter? Ein praktischer Überblick über die wichtigsten Werte, offensiv wie defensiv, und wie du stressfrei damit startest.',
@@ -39,7 +39,7 @@ Zahlen ersetzen keinen guten Trainer, aber sie machen dich zu einem besseren. We
 
 Die Auswahl an möglichen Werten ist riesig. Diese hier bringen im Amateur- und Ligabereich den größten Mehrwert – grob sortiert nach dem, was du am Spielfeldrand wirklich brauchst:
 
-- **Tore und Wurfquote:** Die Basiskennzahl schlechthin. Die Wurfquote setzt Tore ins Verhältnis zu allen Abschlüssen: **Wurfquote (%) = Tore ÷ Würfe × 100**. Sie zeigt, wie effizient abgeschlossen wird, nicht nur wie oft.
+- **Tore und Wurfquote:** Die Basiskennzahl schlechthin. Die Wurfquote setzt Tore ins Verhältnis zu allen Abschlüssen: **Wurfquote (%) = Tore ÷ Würfe × 100**. Sie zeigt, wie effizient abgeschlossen wird, nicht nur wie oft. Einzelne Werte kannst du dir mit dem Rechner [Wurfquote automatisch berechnen](/wurfquote-rechner) lassen.
 - **Assists und Vorlagen:** Der letzte Pass vor dem Tor. Vorlagen machen die Spieler sichtbar, die ein Spiel lenken, ohne selbst ständig zu werfen.
 - **Technische Fehler (Ballverluste):** Fehlpässe, Schrittfehler, Stürmerfouls. Kaum ein anderer Wert entscheidet enge Spiele so oft – jeder Ballverlust ist eine verschenkte Chance und oft ein Gegentor per Tempogegenstoß.
 - **Paradenquote (Torwart):** Die wichtigste Kennzahl für deinen Keeper. Sie misst den Anteil der gehaltenen Bälle: **Paradenquote (%) = Paraden ÷ (Paraden + Gegentore) × 100**. 30 bis 35 Prozent sind im Amateurbereich ein solider Wert.
@@ -73,6 +73,8 @@ Wenn du je zwei bis drei Werte pro Spielphase im Blick hast, bekommst du ein aus
 
 Der größte Anfängerfehler ist, alles auf einmal erfassen zu wollen. Wer am Spieltag zehn Kennzahlen parallel mitschreibt, macht Fehler, verpasst Szenen und gibt irgendwann entnervt wieder auf. Weniger, aber sauber ist immer besser als viel und lückenhaft.
 
+Bei mir war es die Zweikampfquote. Sie steht in jeder Kennzahlenliste, klingt sinnvoll – und ist am Spieltag schlicht nicht zu erfassen. Es passieren zu viele Zweikämpfe zu schnell hintereinander, und während du noch überlegst, ob das jetzt ein gewonnener war, läuft das Spiel weiter und du verpasst zwei Würfe. Nach ein paar Spielen habe ich sie wieder rausgenommen und seitdem nie vermisst.
+
 Fang mit drei bis fünf Kennzahlen an, die zu deinem aktuellen Trainingsziel passen. Ein sinnvoller Startsatz sieht zum Beispiel so aus:
 
 - Tore und Würfe (für die Wurfquote)
@@ -92,11 +94,11 @@ Womit du erfasst, entscheidet über die halbe Miete. Die drei gängigen Wege im 
 | Excel-Tabelle | flexibel, Formeln möglich | viel Nacharbeit, erst nach dem Spiel nutzbar |
 | Statistik-App | live, automatische Auswertung, kein Rechnen | kurze Einarbeitung von wenigen Minuten |
 
-Papier ist der klassische Einstieg, aber gerade Fehlwürfe und Ballverluste gehen im Eifer des Gefechts unter, und am Ende sitzt du Stunden am Übertragen. Excel nimmt dir das Rechnen ab, verlangt aber weiterhin die komplette Nacharbeit – die Zahlen stehen erst Tage später bereit, wenn der emotionale Bezug zum Spiel längst weg ist. Eine App erfasst live und wertet sofort aus: Du siehst Quoten und Trends schon in der Halbzeitpause statt erst am Küchentisch.
+Papier ist der klassische Einstieg, aber gerade Fehlwürfe und Ballverluste gehen im Eifer des Gefechts unter, und am Ende sitzt du Stunden am Übertragen. Eine fertige [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage) nimmt dir das Rechnen ab, verlangt aber weiterhin die komplette Nacharbeit – die Zahlen stehen erst Tage später bereit, wenn der emotionale Bezug zum Spiel längst weg ist. Eine App erfasst live und wertet sofort aus: Du siehst Quoten und Trends schon in der Halbzeitpause statt erst am Küchentisch.
 
 ## So führst du Statistik ohne Stress im Halleneinsatz
 
-Genau dafür ist **Statix** gemacht: Du erfasst jede Aktion live mit einem einzigen Tap – Tor, Fehlwurf, Parade, Ballverlust – und die App berechnet Wurfquote, Paradenquote, Plus-Minus und mehr automatisch, ganz ohne Excel. Alles läuft offline in der Halle, WLAN brauchst du keins. Nach dem Abpfiff steht deine komplette Auswertung sofort bereit, statt erst am Küchentisch zu entstehen. Wenn du das ausprobieren willst, findest du unter demo.statix-app.de eine kostenlose Live-Demo – ohne Account und ohne Anmeldung. So wird aus dem Zettelchaos am Spielfeldrand eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Genau dafür ist **Statix** gemacht, die [Handball-Statistik-App für Trainer](/): Du erfasst jede Aktion live mit einem einzigen Tap – Tor, Fehlwurf, Parade, Ballverlust – und die App berechnet Wurfquote, Paradenquote, Plus-Minus und mehr automatisch, ganz ohne Excel. Alles läuft offline in der Halle, WLAN brauchst du keins. Nach dem Abpfiff steht deine komplette Auswertung sofort bereit, statt erst am Küchentisch zu entstehen. Wenn du das ausprobieren willst, findest du unter [demo.statix-app.de](https://demo.statix-app.de) eine kostenlose Live-Demo – ohne Account und ohne Anmeldung. So wird aus dem Zettelchaos am Spielfeldrand eine echte Entscheidungsgrundlage für dein nächstes Training.`,
   faqs: [
     {
       question: 'Welche Statistik sollte man im Handball erfassen?',
@@ -120,8 +122,8 @@ Genau dafür ist **Statix** gemacht: Du erfasst jede Aktion live mit einem einzi
     },
   ],
   relatedSlugs: [
-    'wurfquote-berechnen',
+    'handball-ballbesitz-tempo',
     'handball-spielanalyse',
-    'handball-training-planen',
+    'handball-expected-goals-xg',
   ],
 };

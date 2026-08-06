@@ -97,7 +97,7 @@ So wird sicheres Ballhandling nicht zur Trockenübung, sondern zur selbstverstä
 
 Besseres Ballhandling zeigt sich vor allem an einer sinkenden Zahl technischer Fehler: weniger Fehlpässe, weniger Prell- und Schrittfehler, weniger verlorene Bälle.
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du technische Fehler und Ballverluste live per Tap und siehst über die Saison, ob dein Team sicherer mit dem Ball umgeht. Gerade im Nachwuchs ist die Entwicklung der Fehlerzahl ein guter Gradmesser für die technische Ausbildung. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du technische Fehler und Ballverluste live per Tap und siehst über die Saison, ob dein Team sicherer mit dem Ball umgeht. Gerade im Nachwuchs ist die Entwicklung der Fehlerzahl ein guter Gradmesser für die technische Ausbildung – wie du solche Fortschritte sauber festhältst, steht im Ratgeber [Spielerentwicklung messen](/ratgeber/handball-spielerentwicklung-messen). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Wie verbessere ich mein Ballhandling im Handball?',
@@ -122,7 +122,7 @@ Mit **Statix**, der Handball-Statistik-App für Trainer, erfasst du technische F
   ],
   relatedSlugs: [
     'handball-passtraining-uebungen',
-    'jugendhandball-trainieren',
+    'handball-linkshaender',
     'handball-finte-lernen',
   ],
 };

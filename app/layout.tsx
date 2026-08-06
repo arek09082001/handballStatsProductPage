@@ -12,7 +12,12 @@ import WebsiteSchema from '@/components/seo/website-schema';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { DEFAULT_HTML_LANG } from '@/i18n/config';
-import { DEFAULT_OG_IMAGE, SEO_KEYWORDS, SITE_URL } from '@/lib/seo';
+import {
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_SIZE,
+  HOME_TITLE,
+  SITE_URL,
+} from '@/lib/seo';
 
 const inter = Inter({ subsets: ['latin'] });
 const spaceGrotesk = Space_Grotesk({
@@ -40,13 +45,11 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
+    default: HOME_TITLE,
     template: `%s | ${CLUB_CONFIG.fullName}`,
   },
   description: CLUB_CONFIG.seo.description,
   applicationName: CLUB_CONFIG.fullName,
-  keywords: SEO_KEYWORDS,
   authors: [{ name: CLUB_CONFIG.fullName }],
   creator: CLUB_CONFIG.fullName,
   publisher: CLUB_CONFIG.fullName,
@@ -84,14 +87,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: SITE_URL,
-    title: 'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
+    title: HOME_TITLE,
     description: CLUB_CONFIG.seo.description,
     siteName: CLUB_CONFIG.fullName,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
-        width: 1200,
-        height: 630,
+        ...DEFAULT_OG_IMAGE_SIZE,
         alt: `${CLUB_CONFIG.fullName} – Handball-Statistik-App`,
       },
     ],
@@ -99,13 +101,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Statix – Handball-Statistik-App: Spiele live erfassen & analysieren',
+    title: HOME_TITLE,
     description: CLUB_CONFIG.seo.description,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
-        width: 1200,
-        height: 630,
+        ...DEFAULT_OG_IMAGE_SIZE,
         alt: `${CLUB_CONFIG.fullName} – Handball-Statistik-App`,
       },
     ],
@@ -142,18 +143,6 @@ export default async function RootLayout({
   return (
     <html lang={DEFAULT_HTML_LANG} suppressHydrationWarning>
       <head suppressHydrationWarning>
-        {/* Kickoff splash, no-flash guard: runs before first paint and, only
-            when the branded intro is about to play (home route, fresh tab
-            session, motion allowed), marks <html> so an opaque cover (see
-            globals.css) hides the page until the animated overlay takes over.
-            Conditions mirror ProductIntro; it only reads storage — ProductIntro
-            still owns the write — so the two never disagree. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{if(location.pathname!=='/')return;if(sessionStorage.getItem('statix-product-intro-shown')!==null)return;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;document.documentElement.setAttribute('data-intro-pending','');}catch(e){}})();",
-          }}
-        />
         <meta name='theme-color' content={CLUB_CONFIG.branding.themeColor} />
         <meta
           name='msapplication-TileColor'

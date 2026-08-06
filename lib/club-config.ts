@@ -89,9 +89,14 @@ export const CLUB_CONFIG = {
   website: {
     domain: 'statix-app.de',
     url: 'https://www.statix-app.de',
+    /** The live app – primary conversion target since launch. */
+    appUrl: 'https://app.statix-app.de',
     demoUrl: 'https://demo.statix-app.de',
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
+    },
+    get appUrlWithoutProtocol() {
+      return this.appUrl.replace('https://', '');
     },
     get demoUrlWithoutProtocol() {
       return this.demoUrl.replace('https://', '');
@@ -120,7 +125,7 @@ export const CLUB_CONFIG = {
     position: 'Inhaber',
     chairman: 'Arkadiusz Weiss',
     chairmanTitle: 'Inhaber',
-    chairmanImage: '/arkadiusz_weiss.jpg',
+    chairmanImage: '/arkadiusz-weiss.jpg',
   },
 
   // ============================================
@@ -132,7 +137,7 @@ export const CLUB_CONFIG = {
       position: 'Support & Anfragen',
       email: 'kontakt@statix-app.de',
       phone: '+49-0179-2630093',
-      image: '/arkadiusz_weiss.jpg',
+      image: '/arkadiusz-weiss.jpg',
     },
   },
 

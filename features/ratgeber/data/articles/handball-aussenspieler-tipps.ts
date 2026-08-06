@@ -86,9 +86,9 @@ Die größte Herausforderung auf Außen ist der Rhythmus: Du bekommst vielleicht
 
 ## Deine Quote kennt die Wahrheit
 
-Gerade auf Außen sagt das Gefühl oft wenig aus – bei fünf Würfen pro Spiel entscheiden Kleinigkeiten über eine 40- oder 80-Prozent-Quote.
+Gerade auf Außen sagt das Gefühl oft wenig aus – bei fünf Würfen pro Spiel entscheiden Kleinigkeiten über eine 40- oder 80-Prozent-Quote. Rechne sie dir nach jedem Spiel aus – zum Beispiel mit dem [Wurfquoten-Rechner](/wurfquote-rechner).
 
-Mit **Statix**, der Handball-Statistik-App für Trainer, wird jeder Wurf mit Position live per Tap erfasst. So siehst du deine Wurfquote von außen, aus dem Gegenstoß und vom Siebenmeterstrich über die ganze Saison – und erkennst genau, woran du arbeiten solltest. Teste es kostenlos und ohne Account in der Live-Demo unter demo.statix-app.de.`,
+Mit **Statix**, der [Statistik-App für Handballtrainer](/), wird jeder Wurf mit Position live per Tap erfasst. So siehst du deine Wurfquote von außen, aus dem Gegenstoß und vom Siebenmeterstrich über die ganze Saison – und erkennst genau, woran du arbeiten solltest. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
   faqs: [
     {
       question: 'Was macht einen guten Außenspieler im Handball aus?',
