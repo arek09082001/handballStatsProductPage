@@ -97,6 +97,18 @@ export const SITE_LINKS = [
             'Was die Handball-Statistik-App Statix kostet: aktuell kostenlos mit vollem Funktionsumfang, alle Grenzen im Detail und was ein geplantes Abo für Teams und Vereine ändern würde.',
     },
     {
+        name: 'Für Vereine',
+        path: '/fuer-vereine',
+        description:
+            'Handball-Statistik-App für Vereine: ein Erfassungsstandard über alle Mannschaften, geteilte Auswertungen im Trainerteam und geregelter Datenschutz mit AVV.',
+    },
+    {
+        name: 'Für Jugendtrainer',
+        path: '/fuer-jugendtrainer',
+        description:
+            'Handball-Statistik für Jugendtrainer: ein Tap pro Aktion von der Bank, Entwicklung über die Saison zeigen, Spielerkarten fürs Team und Live-Ticker für die Eltern.',
+    },
+    {
         name: 'Wurfquoten-Rechner',
         path: '/wurfquote-rechner',
         description:
