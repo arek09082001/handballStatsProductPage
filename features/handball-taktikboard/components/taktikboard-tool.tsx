@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import BoardCanvas from './board-canvas';
-import BoardToolbar from './board-toolbar';
+import BoardRail from './board-rail';
 import BoardSettings from './board-settings';
 import {
   DEFAULT_FORMATION_ID,
@@ -11,9 +11,11 @@ import {
 } from '../data/formations';
 import {
   BOARD_CAPACITY,
+  BOARD_MODE_OPTIONS,
   EXPORT_FILE_NAME,
   TAKTIKBOARD_PAGE_PATH,
 } from '../data/taktikboard-content';
+import { COURT_VIEWS } from '../data/court-geometry';
 import { clamp01, decodeBoard, encodeBoard, sanitizeLabel } from '../lib/board-share';
 import type {
   ArrowColor,
@@ -146,6 +148,16 @@ export default function TaktikboardTool({
     () => `${origin}${TAKTIKBOARD_PAGE_PATH}#${encodeBoard(board)}`,
     [origin, board],
   );
+
+  const activeMode = BOARD_MODE_OPTIONS.find((option) => option.mode === mode);
+
+  /**
+   * Room for the rail plus a board that still fits on screen. The half court is
+   * nearly square, so a board sized off the column width alone runs off the
+   * bottom of a laptop; the height is what binds, and 4.25rem is the rail and
+   * its gap.
+   */
+  const containerMaxWidth = `min(100%, calc(82vh * ${COURT_VIEWS[board.view].aspectRatio} + 4.25rem), 1200px)`;
 
   const handleSelect = useCallback((next: BoardSelection) => {
     setSelection(next);
@@ -410,70 +422,87 @@ export default function TaktikboardTool({
         {announcement}
       </p>
 
-      <BoardToolbar
-        mode={mode}
-        arrowKind={arrowKind}
-        arrowColor={arrowColor}
-        onModeChange={changeMode}
-        onArrowKindChange={setArrowKind}
-        onArrowColorChange={setArrowColor}
-        onAddMagnet={addMagnet}
-      />
+      {/* Rail beside the board from lg up, above it on a phone. The container
+          is only as wide as the rail plus a board that still fits the viewport
+          height, so the court reads as the main object on the page instead of
+          sitting inside a full-width card. */}
+      <div className='w-full' style={{ maxWidth: containerMaxWidth }}>
+        <div className='flex flex-col gap-3 lg:flex-row lg:items-start'>
+          <BoardRail
+            mode={mode}
+            arrowKind={arrowKind}
+            arrowColor={arrowColor}
+            onModeChange={changeMode}
+            onArrowKindChange={setArrowKind}
+            onArrowColorChange={setArrowColor}
+            onAddMagnet={addMagnet}
+          />
 
-      {/* The board sits in a frame, the way a magnetic board hangs in a rail —
-          and so it stays visible when its own ground matches the band behind it. */}
-      <div className='mt-3 rounded-[1.25rem] border border-chalk/15 bg-court-2 p-2 shadow-[0_20px_46px_-28px_hsl(222_40%_4%/0.9)] sm:p-2.5'>
-        <BoardCanvas
-          state={board}
-          mode={mode}
-          arrowKind={arrowKind}
-          arrowColor={arrowColor}
-          selection={selection}
-          onSelect={handleSelect}
-          onMoveMagnet={moveMagnet}
-          onMoveArrow={moveArrow}
-          onMoveLabel={moveLabel}
-          onRemove={removeObject}
-          onCreateArrow={createArrow}
-          onCreateLabel={createLabel}
-          onChangeMagnet={changeMagnet}
-          onChangeArrow={changeArrow}
-          onChangeLabel={changeLabel}
-          editorId={editorId}
-          onEditorChange={setEditorId}
-          boardRef={boardRef}
-          describedById='taktikboard-keyboard-hilfe'
-        />
-      </div>
+          <div className='min-w-0 flex-1'>
+            {/* The board sits in a frame, the way a magnetic board hangs in a
+                rail — and so it stays visible when its own ground matches the
+                band behind it. */}
+            <div className='rounded-[1.25rem] border border-chalk/15 bg-court-2 p-2 shadow-[0_20px_46px_-28px_hsl(222_40%_4%/0.9)] sm:p-2.5'>
+              <BoardCanvas
+                state={board}
+                mode={mode}
+                arrowKind={arrowKind}
+                arrowColor={arrowColor}
+                selection={selection}
+                onSelect={handleSelect}
+                onMoveMagnet={moveMagnet}
+                onMoveArrow={moveArrow}
+                onMoveLabel={moveLabel}
+                onRemove={removeObject}
+                onCreateArrow={createArrow}
+                onCreateLabel={createLabel}
+                onChangeMagnet={changeMagnet}
+                onChangeArrow={changeArrow}
+                onChangeLabel={changeLabel}
+                editorId={editorId}
+                onEditorChange={setEditorId}
+                boardRef={boardRef}
+                describedById='taktikboard-keyboard-hilfe'
+              />
+            </div>
 
-      {notice ? (
-        <p
-          role='status'
-          className='mt-3 rounded-xl border border-secondary/30 bg-secondary/10 px-3.5 py-3 text-[14px] leading-6 text-ink'>
-          {notice}
-        </p>
-      ) : null}
+            {/* The rail has no labels, so the active tool says out loud what a
+                drag will do. */}
+            <p aria-live='polite' className='mt-2 text-[12.5px] leading-5 text-chalk/60'>
+              {activeMode?.hint}
+            </p>
+          </div>
+        </div>
 
-      <div className='mt-3'>
-        <BoardSettings
-          formationId={formationId}
-          view={board.view}
-          ground={board.ground}
-          shareUrl={shareUrl}
-          copied={copied}
-          isExporting={isExporting}
-          onFormationChange={applyFormation}
-          onViewChange={(view: CourtViewId) => {
-            setEditorId(null);
-            setBoard((current) => ({ ...current, view }));
-          }}
-          onGroundChange={(ground: BoardGround) =>
-            setBoard((current) => ({ ...current, ground }))
-          }
-          onExport={exportPng}
-          onCopyLink={copyLink}
-          onClear={clearBoard}
-        />
+        {notice ? (
+          <p
+            role='status'
+            className='mt-3 rounded-xl border border-secondary/30 bg-secondary/10 px-3.5 py-3 text-[14px] leading-6 text-ink'>
+            {notice}
+          </p>
+        ) : null}
+
+        <div className='mt-3'>
+          <BoardSettings
+            formationId={formationId}
+            view={board.view}
+            ground={board.ground}
+            shareUrl={shareUrl}
+            copied={copied}
+            isExporting={isExporting}
+            onFormationChange={applyFormation}
+            onViewChange={(view: CourtViewId) => {
+              setEditorId(null);
+              setBoard((current) => ({ ...current, view }));
+            }}
+            onGroundChange={(ground: BoardGround) =>
+              setBoard((current) => ({ ...current, ground }))
+            }
+            onExport={exportPng}
+            onCopyLink={copyLink}
+            onClear={clearBoard}
+          />
+        </div>
       </div>
     </div>
   );

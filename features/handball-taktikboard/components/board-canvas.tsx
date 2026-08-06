@@ -482,13 +482,9 @@ export default function BoardCanvas({
   const objectPointerEvents = drawing ? ('none' as const) : ('auto' as const);
 
   return (
-    <div
-      className='relative mx-auto w-full'
-      // Height-capped, not width-capped: a half court is nearly square, so a
-      // board that fills a wide column runs off the bottom of a laptop screen.
-      // The cap keeps the whole court reachable without scrolling away from the
-      // tool strip above it.
-      style={{ maxWidth: `min(100%, calc(78vh * ${view.aspectRatio}), 1200px)` }}>
+    /* The width cap lives on the tool's container, which also has to fit the
+       rail beside the board; here the canvas fills the column it is given. */
+    <div className='relative w-full'>
       <div
         ref={boardRef}
         role='group'
