@@ -21,6 +21,12 @@ interface NavDropdownProperties {
 }
 
 /**
+ * Grace period before a pointer that left the dropdown closes it. Covers the
+ * diagonal shortcut off the trigger's corner towards a link further down.
+ */
+const HOVER_CLOSE_DELAY_MS = 160;
+
+/**
  * Desktop navigation entry that opens a panel of grouped sub-links.
  *
  * The panel is always present in the server-rendered HTML and only hidden with
@@ -42,9 +48,40 @@ export default function NavDropdown({
   const containerRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const shouldFocusFirstLink = useRef(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const cancelScheduledClose = () => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  };
+
+  const open = () => {
+    cancelScheduledClose();
+    setIsOpen(true);
+  };
+
+  const close = () => {
+    cancelScheduledClose();
+    setIsOpen(false);
+  };
+
+  /** Closes after the grace period, unless the pointer comes back first. */
+  const closeAfterGracePeriod = () => {
+    cancelScheduledClose();
+    closeTimer.current = setTimeout(() => {
+      closeTimer.current = null;
+      setIsOpen(false);
+    }, HOVER_CLOSE_DELAY_MS);
+  };
+
+  useEffect(() => cancelScheduledClose, []);
 
   useEffect(() => {
-    setIsOpen(false);
+    close();
+    // Route changes close the panel; `close` is stable enough for this.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const focusFirstLink = () => {
@@ -63,7 +100,7 @@ export default function NavDropdown({
   }, [isOpen]);
 
   const closeAndRestoreFocus = () => {
-    setIsOpen(false);
+    close();
     triggerRef.current?.focus();
   };
 
@@ -84,7 +121,7 @@ export default function NavDropdown({
     }
 
     shouldFocusFirstLink.current = true;
-    setIsOpen(true);
+    open();
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -97,7 +134,7 @@ export default function NavDropdown({
   // Tabbing (or clicking) past the last link closes the panel again.
   const handleBlur = (event: React.FocusEvent<HTMLDivElement>) => {
     if (!event.currentTarget.contains(event.relatedTarget)) {
-      setIsOpen(false);
+      close();
     }
   };
 
@@ -107,11 +144,11 @@ export default function NavDropdown({
       className='relative'
       onMouseEnter={() => {
         onHoverChange(item.ident);
-        setIsOpen(true);
+        open();
       }}
       onMouseLeave={() => {
         onHoverChange(null);
-        setIsOpen(false);
+        closeAfterGracePeriod();
       }}
       onKeyDown={handleKeyDown}
       onBlur={handleBlur}>
@@ -122,7 +159,7 @@ export default function NavDropdown({
         aria-controls={panelId}
         aria-current={active ? 'page' : undefined}
         title={t(`items.${item.labelKey}`)}
-        onClick={() => setIsOpen((currentValue) => !currentValue)}
+        onClick={() => (isOpen ? close() : open())}
         onKeyDown={handleTriggerKeyDown}
         className={cn(
           'relative inline-flex cursor-pointer items-center whitespace-nowrap rounded-full px-2 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316]/60 xl:px-3.5',
@@ -149,42 +186,49 @@ export default function NavDropdown({
         </span>
       </button>
 
+      {/* Starts flush at the trigger's bottom edge and pushes the panel down
+       * with padding instead of an offset. The padding is part of this
+       * element, so the pointer never leaves the dropdown on its way into the
+       * panel — a transparent gap here would close it mid-move. */}
       <div
-        id={panelId}
         aria-hidden={!isOpen}
         className={cn(
           // Only opacity and transform transition: a transitioned
           // `visibility` stays `hidden` for the first frame, and an element
           // that is still hidden cannot take focus on ArrowDown.
-          'absolute left-1/2 top-[calc(100%+0.85rem)] z-20 w-64 -translate-x-1/2 rounded-2xl border border-slate-200 bg-white p-2 shadow-[0_24px_48px_-28px_rgba(15,23,42,0.5)] transition-[opacity,transform] duration-200 ease-out',
+          'absolute left-1/2 top-full z-20 w-64 -translate-x-1/2 pt-3.5 transition-[opacity,transform] duration-200 ease-out',
           isOpen
             ? 'visible translate-y-0 opacity-100'
             : 'invisible -translate-y-1 opacity-0',
         )}>
-        {(item.groups ?? []).map((group) => (
-          <div key={group.labelKey} className='p-1 first:pt-1.5 last:pb-1.5'>
-            <p className='px-3 pb-1 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-slate-400'>
-              {t(`groups.${group.labelKey}`)}
-            </p>
-            {group.items.map((child) => (
-              <Link
-                key={child.ident}
-                href={child.href}
-                title={child.label ?? t(`items.${child.labelKey}`)}
-                tabIndex={isOpen ? undefined : -1}
-                aria-current={pathname === child.href ? 'page' : undefined}
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  'block rounded-xl px-3 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316]/60',
-                  pathname === child.href
-                    ? 'bg-slate-950 text-white'
-                    : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950',
-                )}>
-                {child.label ?? t(`items.${child.labelKey}`)}
-              </Link>
-            ))}
-          </div>
-        ))}
+        <div
+          id={panelId}
+          className='rounded-2xl border border-slate-200 bg-white p-2 shadow-[0_24px_48px_-28px_rgba(15,23,42,0.5)]'>
+          {(item.groups ?? []).map((group) => (
+            <div key={group.labelKey} className='p-1 first:pt-1.5 last:pb-1.5'>
+              <p className='px-3 pb-1 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-slate-400'>
+                {t(`groups.${group.labelKey}`)}
+              </p>
+              {group.items.map((child) => (
+                <Link
+                  key={child.ident}
+                  href={child.href}
+                  title={child.label ?? t(`items.${child.labelKey}`)}
+                  tabIndex={isOpen ? undefined : -1}
+                  aria-current={pathname === child.href ? 'page' : undefined}
+                  onClick={close}
+                  className={cn(
+                    'block rounded-xl px-3 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316]/60',
+                    pathname === child.href
+                      ? 'bg-slate-950 text-white'
+                      : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950',
+                  )}>
+                  {child.label ?? t(`items.${child.labelKey}`)}
+                </Link>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
