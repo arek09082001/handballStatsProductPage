@@ -18,7 +18,7 @@ export const handballAngriffssystemeEinsteiger: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-05-04',
-  dateModified: '2026-06-22',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 8,
   excerpt:
     'Ein einfaches Angriffssystem gibt deiner Mannschaft Struktur und jedem Spieler eine klare Aufgabe. Hier lernst du die Grundpositionen, die Systeme 3:3 und 4:2 und die wichtigsten Angriffsmittel – verständlich für Einsteiger.',
@@ -113,7 +113,7 @@ Zum Schluss die wichtigsten Grundsätze, damit dein Angriff im Training wirklich
 - **Halte es einfach.** Ein sauber gespieltes 3:3 ist mehr wert als drei halb verstandene Systeme.
 - **Lerne ein Mittel nach dem anderen.** Übe erst das Stoßen sauber ein, bevor du Kreuzen oder Sperren dazunimmst.
 - **Setze auf viele Wiederholungen.** Gleiche Abläufe erst ohne Abwehr, dann mit passivem und schließlich mit aktivem Gegenspieler.
-- **Gib klare Positionen und Aufgaben.** Jeder Spieler muss wissen, wo er steht und was sein Job im Spielzug ist.
+- **Gib klare Positionen und Aufgaben.** Jeder Spieler muss wissen, wo er steht und was sein Job im Spielzug ist. Am schnellsten geht das mit einem Bild: Im kostenlosen [Handball-Taktikboard](/handball-taktikboard) ziehst du 3:3 und 4:2 auf ein maßstabsgetreues Feld, zeichnest Laufwege und Sperren ein und schickst die Aufstellung als Link an die Mannschaft.
 - **Mach Erfolge sichtbar.** Schau nicht nur auf schöne Laufwege, sondern darauf, welches Angriffsmittel am Ende wirklich Tore bringt.
 
 Und genau beim letzten Punkt lohnt sich ein ehrlicher Blick auf die Zahlen: Woran erkennst du, ob euer Kreuzen im Rückraum wirklich Lücken öffnet oder ob der zweite Kreisläufer den Unterschied macht? An den Toren, die daraus entstehen – und an einer sauberen [Spielauswertung nach dem Abpfiff](/ratgeber/handball-spielanalyse). Eine [Statistik-App für Handballtrainer](/) wie **Statix** hilft dir dabei – du erfasst live in der Halle per Tap, aus welcher Situation eure Tore fallen, und wertest nach dem Spiel im Wurfbild aus, welche Zonen und Angriffsmittel erfolgreich waren, ganz ohne Excel und auch offline. So siehst du schwarz auf weiß, welches System deiner Mannschaft die besten Chancen bringt. Ausprobieren kannst du das ohne Account in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,

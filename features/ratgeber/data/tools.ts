@@ -16,6 +16,12 @@ export const RATGEBER_TOOLS: RatgeberTool[] = [
       'Tore und Würfe eintragen, Quote ablesen – für einzelne Spieler oder die ganze Mannschaft.',
   },
   {
+    href: '/handball-taktikboard',
+    title: 'Handball-Taktikboard',
+    description:
+      'Aufstellung auf ein maßstabsgetreues Feld ziehen, Laufwege einzeichnen und als Bild oder Link an die Mannschaft geben.',
+  },
+  {
     href: '/handball-statistik-excel-vorlage',
     title: 'Excel-Vorlage für die Handball-Statistik',
     description:

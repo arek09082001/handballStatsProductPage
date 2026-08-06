@@ -17,7 +17,7 @@ export const handballAbwehrsysteme: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-06-15',
-  dateModified: '2026-07-11',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 9,
   excerpt:
     'Die Abwehr gewinnt Spiele – aber welches System passt zu deiner Mannschaft? Wir vergleichen 6:0, 5:1 und 3:2:1 mit Stärken, Schwächen und klaren Empfehlungen.',
@@ -120,6 +120,8 @@ Im Erwachsenen- und Leistungsbereich zählt Variabilität. Starke Teams beherrsc
 Und schließlich entscheidet dein Personal. Eine 3:2:1 ohne lauffreudige, zweikampfstarke Spieler wird zur Einladung, eine 6:0 mit passivem Innenblock lädt jeden Fernwerfer ein. Wähle das System, das zu den Stärken deiner Spieler passt – nicht das, das im Lehrbuch am schönsten aussieht.
 
 Ein praktischer Tipp: Führe ein Grundsystem sauber ein, bevor du ein zweites ergänzt. Ein System, das die Mannschaft blind beherrscht, ist im Spiel mehr wert als drei halb verstandene Varianten. Sicherheit in der Grundordnung ist die Basis, auf der du später situativ wechseln kannst.
+
+Wie sich die drei Staffelungen unterscheiden, versteht eine Mannschaft schneller im Bild als in Worten. Im kostenlosen [Handball-Taktikboard](/handball-taktikboard) liegen 6:0, 5:1 und 3:2:1 als fertige Aufstellungen auf einem maßstabsgetreuen Feld – du schiebst die Magnete an eure Gegebenheiten und schickst das Board als Bild oder Link in die Mannschaftsgruppe.
 
 ## Abwehr analysieren und anpassen
 
