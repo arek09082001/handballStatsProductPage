@@ -1,18 +1,47 @@
+import Link from 'next/link';
 import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
 import { Grain } from '@/features/landing-page/components/tactic';
 
-/**
- * Wrap markdown tables so they scroll horizontally on narrow screens instead of
- * pushing the page wider than the viewport.
- */
 const markdownComponents: Components = {
+  /**
+   * Wrap markdown tables so they scroll horizontally on narrow screens instead
+   * of pushing the page wider than the viewport.
+   */
   table: ({ children }) => (
     <div className='overflow-x-auto'>
       <table className='w-full'>{children}</table>
     </div>
   ),
+  /**
+   * In-body links: site-internal targets route through `next/link` so the
+   * crawlable `<a href>` also gets client-side navigation, external ones open in
+   * a new tab. Anything else (mailto:, #anchors) renders untouched.
+   */
+  a: ({ href, children, ...rest }) => {
+    if (href?.startsWith('/')) {
+      return (
+        <Link href={href} {...rest}>
+          {children}
+        </Link>
+      );
+    }
+
+    if (href?.startsWith('http')) {
+      return (
+        <a href={href} target='_blank' rel='noopener noreferrer' {...rest}>
+          {children}
+        </a>
+      );
+    }
+
+    return (
+      <a href={href} {...rest}>
+        {children}
+      </a>
+    );
+  },
 };
 
 /**
