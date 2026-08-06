@@ -82,9 +82,9 @@ export default function VereinePage() {
       <BoardCta
         kicker='Ohne Beschluss'
         title='Eine Mannschaft reicht für den Anfang'
-        description='Ein Trainer, ein Spiel, kein Budgetantrag. Zeig die Live-Demo im nächsten Trainerabend – sie läuft im Browser, mit echten Spieldaten und ohne Account.'
-        secondaryHref='/preise'
-        secondaryLabel='Kosten für Vereine'
+        description='Ein Trainer, ein Spiel, kein Budgetantrag: Registrierung ist kostenlos, ein Beschluss nicht nötig. Für den nächsten Trainerabend gibt es die Live-Demo mit echten Spieldaten, ganz ohne Account.'
+        linkHref='/preise'
+        linkLabel='Kosten für Vereine'
       />
     </div>
   );

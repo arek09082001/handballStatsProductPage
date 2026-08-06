@@ -1,4 +1,4 @@
-import { Play } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -54,14 +54,18 @@ export default function FreeHeader() {
         <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center'>
           <HeroActionButton
             variant='primary'
-            icon={<Play className='size-4 fill-current' />}
+            icon={<UserPlus className='size-4' />}
+            href={CLUB_CONFIG.website.appUrl}
+            target='_blank'
+            rel='noopener noreferrer'>
+            Jetzt kostenlos registrieren
+          </HeroActionButton>
+          <HeroActionButton
+            variant='secondary'
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'
             rel='noopener noreferrer'>
             Live-Demo ohne Account
-          </HeroActionButton>
-          <HeroActionButton variant='secondary' href='/#newsletter'>
-            Launch-Angebot sichern
           </HeroActionButton>
         </div>
 

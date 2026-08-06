@@ -32,10 +32,10 @@ export default function KostenlosPage() {
       />
       <BoardCta
         kicker='Ohne Anmeldung'
-        title='Zwei Minuten, kein Konto'
-        description='Die Live-Demo läuft mit echten Spieldaten direkt im Browser. Danach weißt du, ob Statix zu deiner Mannschaft passt – ohne eine einzige Angabe von dir.'
-        secondaryHref='/preise'
-        secondaryLabel='Was Statix kostet'
+        title='Kostenlos anfangen, heute noch'
+        description='Für dein eigenes Team reicht eine E-Mail-Adresse – keine Kreditkarte, kein Bezahlvorgang. Und wenn du erst schauen willst: Die Live-Demo läuft mit echten Spieldaten ohne jede Angabe von dir.'
+        linkHref='/preise'
+        linkLabel='Was Statix kostet'
       />
     </div>
   );

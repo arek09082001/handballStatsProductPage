@@ -151,6 +151,6 @@ export const PRICING_FAQS: BoardFaqItem[] = [
   {
     question: 'Wie erfahre ich, wenn die Preise feststehen?',
     answer:
-      'Über den Newsletter. Wer dort eingetragen ist, bekommt die Konditionen vor dem Start – zusammen mit dem Launch-Angebot für Teams und Vereine.',
+      'Über den Newsletter. Wer dort eingetragen ist, erfährt die Konditionen für Teams und Vereine, bevor sie hier auf der Seite stehen.',
   },
 ];

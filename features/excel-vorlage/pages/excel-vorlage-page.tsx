@@ -31,9 +31,9 @@ export default function ExcelVorlagePage() {
       <BoardCta
         kicker='Ohne Abtippen'
         title='Dieselben Aktionen, nur getippt'
-        description='In der Live-Demo siehst du mit echten Spieldaten, wie sich das Erfassen anfühlt, wenn keine Zelle mehr getroffen werden muss – ohne Account, direkt im Browser.'
-        secondaryHref='/preise'
-        secondaryLabel='Was Statix kostet'
+        description='Registriere dich kostenlos und erfasse dein erstes Spiel, ohne abends etwas abzutippen. Oder sieh dir vorher in der Live-Demo an, wie sich das ohne Zellen anfühlt – ganz ohne Account.'
+        linkHref='/preise'
+        linkLabel='Was Statix kostet'
       />
     </div>
   );

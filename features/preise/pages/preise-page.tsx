@@ -35,8 +35,9 @@ export default function PreisePage() {
       <BoardCta
         kicker='Selbst ausprobieren'
         title='Erst schauen, dann entscheiden'
-        description='Die Live-Demo läuft mit echten Spieldaten direkt im Browser – ohne Account, ohne Installation und ohne dass du irgendwo Zahlungsdaten hinterlegst.'
-        secondaryLabel='Launch-Angebot sichern'
+        description='Registrieren kostet nichts und dauert eine Minute – es gibt kein Feld für Zahlungsdaten. Lieber erst schauen? Die Live-Demo läuft mit echten Spieldaten ganz ohne Account.'
+        linkHref='/#newsletter'
+        linkLabel='Newsletter abonnieren und Konditionen zuerst erfahren'
       />
     </div>
   );

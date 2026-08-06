@@ -82,10 +82,10 @@ export default function JugendtrainerPage() {
 
       <BoardCta
         kicker='Vor dem nächsten Spiel'
-        title='Zwei Minuten reichen zum Ausprobieren'
-        description='Die Live-Demo läuft mit echten Spieldaten im Browser – ohne Account, ohne Installation. Danach weißt du, ob du das am Samstag an der Bank bedienen kannst.'
-        secondaryHref='/handball-statistik-app-kostenlos'
-        secondaryLabel='Kostenlos starten'
+        title='Vor dem Samstag noch schnell einrichten'
+        description='Konto anlegen, Kader eintippen, fertig – das dauert weniger als eine Trainingsvorbereitung. Oder sieh dir vorher in der Live-Demo an, ob du das an der Bank bedienen kannst.'
+        linkHref='/handball-statistik-app-kostenlos'
+        linkLabel='Was kostenlos enthalten ist'
       />
     </div>
   );

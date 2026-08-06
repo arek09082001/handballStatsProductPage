@@ -78,7 +78,7 @@ export default function TemplateNewsletterOptin() {
 
   return (
     <form onSubmit={handleSubmit} className='text-left'>
-      <p className='text-sm font-semibold text-chalk'>Optional: Launch-Angebot per Mail</p>
+      <p className='text-sm font-semibold text-chalk'>Optional: Updates per Mail</p>
       <p className='mt-1 text-[13px] leading-6 text-chalk/65'>
         Kein Pflichtfeld für den Download – die Vorlage bekommst du ohne alles.
       </p>
@@ -118,7 +118,7 @@ export default function TemplateNewsletterOptin() {
           onChange={(event) => setWantsNewsletter(event.target.checked)}
           className='mt-1 size-4 rounded border-chalk/25 bg-transparent text-primary focus:ring-primary'
         />
-        <span>Ja, schick mir den Statix-Newsletter mit dem Launch-Angebot.</span>
+        <span>Ja, schick mir den Statix-Newsletter mit Neuigkeiten zur App.</span>
       </label>
 
       <label className='mt-2 flex items-start gap-3 text-[13px] leading-6 text-chalk/75'>

@@ -30,9 +30,9 @@ export default function ErfahrungenPage() {
       <BoardCta
         kicker='Eigenes Urteil'
         title='Die ehrlichste Erfahrung ist deine eigene'
-        description='Zwei Minuten Live-Demo mit echten Spieldaten sagen dir mehr als jede fremde Bewertung – ohne Account, ohne Installation, direkt im Browser.'
-        secondaryHref='/#newsletter'
-        secondaryLabel='Launch-Angebot sichern'
+        description='Zwei Minuten mit echten Spieldaten sagen dir mehr als jede fremde Bewertung: kostenlos registrieren und selbst erfassen – oder erst in der Live-Demo ohne Account reinschauen.'
+        linkHref='/was-ist-statix'
+        linkLabel='Was ist Statix?'
       />
     </div>
   );
