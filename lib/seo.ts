@@ -97,6 +97,18 @@ export const SITE_LINKS = [
             'Was die Handball-Statistik-App Statix kostet: aktuell kostenlos mit vollem Funktionsumfang, alle Grenzen im Detail und was ein geplantes Abo für Teams und Vereine ändern würde.',
     },
     {
+        name: 'Wurfquoten-Rechner',
+        path: '/wurfquote-rechner',
+        description:
+            'Kostenloser Rechner für die Wurfquote im Handball: Tore und Würfe eintragen, Quote nach Position einordnen, Zielquote rückwärts rechnen – auch zum Einbinden.',
+    },
+    {
+        name: 'Handball-Statistik-App kostenlos',
+        path: '/handball-statistik-app-kostenlos',
+        description:
+            'Was bei Statix kostenlos ist und wo die Grenzen liegen: Spiele live erfassen, auswerten und teilen – ohne Kreditkarte, mit Live-Demo ohne Account.',
+    },
+    {
         name: 'Handball-Statistik Excel-Vorlage',
         path: '/handball-statistik-excel-vorlage',
         description:

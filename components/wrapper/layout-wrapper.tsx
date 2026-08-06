@@ -17,11 +17,18 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
   const pathname = usePathname();
   const isAdminRoute = pathname?.startsWith('/admin');
   const isHome = pathname === '/';
+  // Embeddable widgets run inside a foreign page's iframe: no navbar, no
+  // footer, no page transition — just the tool.
+  const isEmbedRoute = pathname?.endsWith('/embed');
 
   // Kickoff splash: the wordmark docks into the navbar's brand slot, which the
   // navbar hides (but keeps measurable) while the splash plays.
   const brandRef = useRef<HTMLSpanElement>(null);
   const [introPlaying, setIntroPlaying] = useState(false);
+
+  if (isEmbedRoute) {
+    return <div className='relative h-full bg-background'>{children}</div>;
+  }
 
   return (
     <div className='relative bg-background h-full'>
