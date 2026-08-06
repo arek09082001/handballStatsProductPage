@@ -17,7 +17,7 @@ export const handballSpielfeldMasse: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-06',
   readingTimeMinutes: 6,
   excerpt:
     '40 mal 20 Meter, ein 6-Meter-Kreis, die gestrichelte 9-Meter-Linie: Jede Linie auf dem Handballfeld hat eine Funktion. Hier ist das Spielfeld mit allen Maßen verständlich erklärt.',
@@ -71,6 +71,8 @@ Das Handballtor ist **3 Meter breit und 2 Meter hoch**. Es ist in zwei Farben ma
 ## Warum die Maße für das Spielverständnis wichtig sind
 
 Viele taktische Prinzipien ergeben sich direkt aus dem Feld: Warum die Abwehr am 6-Meter-Kreis steht, warum Distanzwürfe von der 9-Meter-Linie kommen, warum Außenspieler aus so spitzen Winkeln werfen. Wer das Feld liest, versteht die Positionen und Systeme sofort besser.
+
+Wenn du eine Aufstellung mit genau diesen Maßen zeichnen willst, nutz das kostenlose [Handball-Taktikboard](/handball-taktikboard): Dort ist die Torraumlinie wie in der Halle aus zwei Viertelkreisen und einem geraden Stück gebaut, die Freiwurflinie liegt gestrichelt bei 9 Metern – Magnete draufziehen, Laufwege einzeichnen, als Bild oder Link weitergeben.
 
 ## Positionen und Würfe auf dem Feld auswerten
 

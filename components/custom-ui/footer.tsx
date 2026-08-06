@@ -6,6 +6,10 @@ import { Instagram, Mail, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
+import {
+  TAKTIKBOARD_NAV_LABEL,
+  TAKTIKBOARD_PAGE_PATH,
+} from '@/features/handball-taktikboard/data/taktikboard-content';
 
 export default function Footer() {
   const t = useTranslations('footerSection');
@@ -35,6 +39,10 @@ export default function Footer() {
     { href: '/fuer-jugendtrainer', label: t('product.forYouthCoaches') },
     { href: '/fuer-vereine', label: t('product.forClubs') },
     { href: '/wurfquote-rechner', label: t('product.shotQuotaCalculator') },
+    // Not a translation key on purpose: the tool's own copy lives in its data
+    // module so `messages/*.json` — already 155 KB on every page — does not grow
+    // for a name that reads the same in German and English.
+    { href: TAKTIKBOARD_PAGE_PATH, label: TAKTIKBOARD_NAV_LABEL },
     {
       href: '/handball-statistik-excel-vorlage',
       label: t('product.excelTemplate'),

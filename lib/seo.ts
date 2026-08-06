@@ -141,6 +141,12 @@ export const SITE_LINKS = [
             'Kostenloser Rechner für die Wurfquote im Handball: Tore und Würfe eintragen, Quote nach Position einordnen, Zielquote rückwärts rechnen – auch zum Einbinden.',
     },
     {
+        name: 'Handball-Taktikboard',
+        path: '/handball-taktikboard',
+        description:
+            'Kostenloses Handball-Taktikboard: Magnete auf ein maßstabsgetreues Feld ziehen, Laufwege und Pässe einzeichnen, fertige Aufstellungen laden und das Board als PNG oder Link teilen – ohne Anmeldung.',
+    },
+    {
         name: 'Handball-Statistik-App kostenlos',
         path: '/handball-statistik-app-kostenlos',
         description:
