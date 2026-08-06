@@ -140,7 +140,7 @@ Und genau beim letzten Punkt lohnt sich ein ehrlicher Blick auf die Zahlen: Wora
     },
   ],
   relatedSlugs: [
-    'handball-abwehrsysteme',
+    'handball-5-1-abwehr',
     'handball-training-planen',
     'jugendhandball-trainieren',
   ],

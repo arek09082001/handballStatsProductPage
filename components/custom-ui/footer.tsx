@@ -13,6 +13,14 @@ export default function Footer() {
   const productLinks: { href: string; label: string; external?: boolean }[] = [
     { href: CLUB_CONFIG.website.demoUrl, label: t('product.demo'), external: true },
     { href: '/#all-features', label: t('product.features') },
+    { href: '/preise', label: t('product.pricing') },
+    { href: '/handball-statistik-app-kostenlos', label: t('product.freeApp') },
+    { href: '/fuer-jugendtrainer', label: t('product.forYouthCoaches') },
+    { href: '/wurfquote-rechner', label: t('product.shotQuotaCalculator') },
+    {
+      href: '/handball-statistik-excel-vorlage',
+      label: t('product.excelTemplate'),
+    },
     { href: '/was-ist-statix', label: t('product.aboutStatix') },
     { href: '/#liveticker', label: t('product.liveTicker') },
     { href: '/ratgeber', label: t('product.ratgeber') },

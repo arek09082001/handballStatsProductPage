@@ -102,7 +102,7 @@ Ein starker Motivator, den viele Trainer unterschätzen, ist sichtbarer Fortschr
   ],
   relatedSlugs: [
     'handball-teambuilding-uebungen',
-    'jugendhandball-trainieren',
-    'handball-training-planen',
+    'handball-kommunikation-spielfeld',
+    'handball-nervositaet-vor-spielen',
   ],
 };

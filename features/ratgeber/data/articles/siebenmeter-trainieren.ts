@@ -124,6 +124,6 @@ Genau dabei hilft dir **Statix**, die [Handball-Statistik-App für Trainer](/): 
   relatedSlugs: [
     'handball-torwarttraining',
     'wurfquote-berechnen',
-    'handball-wurftraining-sprungwurf',
+    'handball-stemmschritt-dreierrhythmus',
   ],
 };

@@ -139,7 +139,7 @@ Ob deine Vorbereitung wirkt, siehst du am klarsten in Zahlen. Wurfquoten, Ballve
     },
   ],
   relatedSlugs: [
-    'handball-training-planen',
+    'handball-beweglichkeit-dehnen',
     'handball-aufwaermen-uebungen',
     'handball-torwarttraining',
   ],

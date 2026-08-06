@@ -134,6 +134,6 @@ Genau dabei hilft dir eine [kostenlose Handball-Statistik-App](/handball-statist
   relatedSlugs: [
     'handball-aufwaermen-uebungen',
     'handball-saisonvorbereitung',
-    'jugendhandball-trainieren',
+    'handball-koordinationstraining',
   ],
 };

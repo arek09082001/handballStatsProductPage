@@ -117,7 +117,7 @@ Mit **Statix**, der [Statistik-App für Nachwuchstrainer](/fuer-jugendtrainer), 
     },
   ],
   relatedSlugs: [
-    'handball-training-planen',
+    'handball-minihandball-kinder',
     'jugendhandball-trainieren',
     'handball-statistik-fuehren',
   ],

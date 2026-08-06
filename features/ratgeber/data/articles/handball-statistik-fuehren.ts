@@ -120,8 +120,8 @@ Genau dafür ist **Statix** gemacht, die [Handball-Statistik-App für Trainer](/
     },
   ],
   relatedSlugs: [
-    'wurfquote-berechnen',
+    'handball-ballbesitz-tempo',
     'handball-spielanalyse',
-    'handball-training-planen',
+    'handball-expected-goals-xg',
   ],
 };

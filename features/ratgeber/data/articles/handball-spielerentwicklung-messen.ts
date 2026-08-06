@@ -112,7 +112,7 @@ Von Hand bleibt so eine Auswertung meist liegen – zu viel Aufwand, zu wenig Ze
   ],
   relatedSlugs: [
     'handball-statistik-fuehren',
-    'wurfquote-berechnen',
+    'handball-torwart-statistik',
     'handball-spielanalyse',
   ],
 };

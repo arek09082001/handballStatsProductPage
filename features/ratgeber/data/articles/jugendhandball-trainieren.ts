@@ -132,8 +132,8 @@ Mit Augenmaß eingesetzt hilft dir eine [Handball-Statistik-App für Jugendtrain
     },
   ],
   relatedSlugs: [
-    'handball-training-planen',
+    'handball-trainer-werden',
     'handball-aufwaermen-uebungen',
-    'handball-angriffssysteme-einsteiger',
+    'handball-quereinsteiger-erwachsene',
   ],
 };

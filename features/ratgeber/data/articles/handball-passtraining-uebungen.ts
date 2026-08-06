@@ -112,7 +112,7 @@ Ob dein Passspiel wirklich sicherer wird, siehst du am besten an den Zahlen. Wie
     },
   ],
   relatedSlugs: [
-    'handball-angriffssysteme-einsteiger',
+    'handball-kempa-trick',
     'handball-training-planen',
     'handball-wurftraining-sprungwurf',
   ],

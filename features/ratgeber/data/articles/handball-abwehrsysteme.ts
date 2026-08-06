@@ -147,7 +147,7 @@ Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du
     },
   ],
   relatedSlugs: [
-    'handball-angriffssysteme-einsteiger',
+    'handball-freilaufen-ohne-ball',
     'handball-spielanalyse',
     'handball-training-planen',
   ],

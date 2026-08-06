@@ -122,7 +122,7 @@ Ob eine Position wirklich zum Spieler passt, zeigt sich am Ende auf dem Feld –
     },
   ],
   relatedSlugs: [
-    'handball-angriffssysteme-einsteiger',
+    'handball-spielfeld-masse',
     'handball-regeln-einfach-erklaert',
     'handball-abwehrsysteme',
   ],

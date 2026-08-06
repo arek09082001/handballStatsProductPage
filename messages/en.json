@@ -14,7 +14,12 @@
       "ratgeber": "Guide",
       "faq": "Frequently asked questions",
       "newsletter": "Newsletter",
-      "contact": "Get in touch"
+      "contact": "Get in touch",
+      "pricing": "Pricing",
+      "freeApp": "Start for free",
+      "forYouthCoaches": "For youth coaches",
+      "shotQuotaCalculator": "Shot quota calculator",
+      "excelTemplate": "Excel template"
     },
     "contact": {
       "location": "Made in Germany",
@@ -226,7 +231,10 @@
       "liveTicker": "Live ticker",
       "faq": "FAQ",
       "contact": "Contact",
-      "impressum": "Legal"
+      "impressum": "Legal",
+      "pricing": "Pricing",
+      "ratgeber": "Guide",
+      "aboutStatix": "What is Statix?"
     },
     "demoCta": "Try the demo",
     "languageSwitcher": {

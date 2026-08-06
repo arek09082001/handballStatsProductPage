@@ -139,8 +139,8 @@ Wer diese Fehler vermeidet, hat schon viel gewonnen: Das Team ist ab der ersten 
     },
   ],
   relatedSlugs: [
-    'handball-training-planen',
+    'handball-spielformen-training',
     'handball-saisonvorbereitung',
-    'jugendhandball-trainieren',
+    'handball-trainingslager-planen',
   ],
 };

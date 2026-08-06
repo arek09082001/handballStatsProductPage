@@ -128,6 +128,6 @@ Von Hand ist das kaum sauber mitzuschreiben – gerade wenn du nebenbei die Abwe
   relatedSlugs: [
     'wurfquote-berechnen',
     'handball-training-planen',
-    'handball-abwehrsysteme',
+    'handball-alleine-trainieren',
   ],
 };

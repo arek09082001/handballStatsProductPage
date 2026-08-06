@@ -122,7 +122,7 @@ Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du techni
   ],
   relatedSlugs: [
     'handball-passtraining-uebungen',
-    'jugendhandball-trainieren',
+    'handball-linkshaender',
     'handball-finte-lernen',
   ],
 };

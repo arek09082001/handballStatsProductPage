@@ -126,6 +126,6 @@ Ob dein Tempospiel wirklich Tore bringt, siehst du erst mit Zahlen. Wie du sie i
   relatedSlugs: [
     'handball-angriffssysteme-einsteiger',
     'handball-kondition-verbessern',
-    'handball-abwehrsysteme',
+    'handball-timeout-nutzen',
   ],
 };
