@@ -14,7 +14,7 @@ import { BoardCard, BoardKicker, Grain, MarkerUnderline } from '@/features/landi
 export default function ImpressumCard() {
   const t = useTranslations('legalPage.impressum');
   const wrap = 'min-w-0 break-words [overflow-wrap:anywhere]';
-  const fieldLabel = 'text-xs font-semibold uppercase tracking-[0.14em] text-ink/45';
+  const fieldLabel = 'text-[13px] font-semibold uppercase tracking-[0.14em] text-ink/45';
 
   return (
     <section

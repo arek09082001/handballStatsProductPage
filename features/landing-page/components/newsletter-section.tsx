@@ -168,7 +168,7 @@ export default function NewsletterSection() {
                   </div>
                 )}
 
-                <p className='mt-3 text-center text-xs leading-5 text-chalk/50'>{t('note')}</p>
+                <p className='mt-3 text-center text-[13px] leading-5 text-chalk/50'>{t('note')}</p>
               </div>
             </BoardCard>
           </form>

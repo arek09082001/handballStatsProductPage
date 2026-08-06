@@ -23,7 +23,7 @@ export default function DemoPreview({ url, liveLabel }: DemoPreviewProps) {
         pin='tape'
         sizes='(max-width: 1024px) 100vw, 520px'
       />
-      <div className='mt-3 flex items-center justify-center gap-2 text-xs font-medium text-chalk/60'>
+      <div className='mt-3 flex items-center justify-center gap-2 text-[13px] font-medium text-chalk/60'>
         <Lock className='size-3 shrink-0 text-success' />
         <span className='truncate'>{url}</span>
         <span className='inline-flex items-center gap-1.5 font-hand text-base text-primary'>

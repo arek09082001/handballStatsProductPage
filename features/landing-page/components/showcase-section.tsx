@@ -76,7 +76,7 @@ export default function ShowcaseSection() {
                     <span className='font-display text-5xl font-extrabold leading-none tracking-tighter text-primary/25 tabular-nums'>
                       {String(index + 1).padStart(2, '0')}
                     </span>
-                    <span className='inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary'>
+                    <span className='inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[13px] font-semibold text-primary'>
                       <span aria-hidden className='size-1.5 rounded-[3px] bg-primary' />
                       {item.badge}
                     </span>

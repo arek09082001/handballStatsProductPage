@@ -86,7 +86,7 @@ export default function BrandOverview() {
               <div
                 key={fact.label}
                 className='border-b border-ink/12 py-4 sm:[&:nth-last-child(-n+1)]:border-b-0 lg:[&:nth-last-child(-n+1)]:border-b'>
-                <dt className='font-display text-xs font-bold uppercase tracking-[0.14em] text-primary'>
+                <dt className='font-display text-[13px] font-bold uppercase tracking-[0.14em] text-primary'>
                   {fact.label}
                 </dt>
                 <dd className='mt-1.5 text-[15px] leading-6 text-ink/80'>

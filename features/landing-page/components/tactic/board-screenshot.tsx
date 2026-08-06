@@ -85,7 +85,7 @@ export default function BoardScreenshot({
             <div className='flex flex-col items-center gap-2 px-6 text-center'>
               <span className='font-hand text-2xl text-primary'>Screenshot folgt</span>
               {pendingHint ? (
-                <span className='rounded bg-chalk/10 px-2 py-1 font-mono text-xs text-chalk/50'>
+                <span className='rounded bg-chalk/10 px-2 py-1 font-mono text-[13px] text-chalk/50'>
                   {pendingHint}
                 </span>
               ) : null}

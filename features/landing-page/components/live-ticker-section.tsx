@@ -98,7 +98,7 @@ export default function LiveTickerSection() {
             <BoardCard tone='court' pin='magnet' pinColor='marker' className='overflow-hidden'>
               {/* Live badge + game clock */}
               <div className='flex items-center justify-between border-b border-chalk/10 px-5 py-3.5'>
-                <span className='inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-primary'>
+                <span className='inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-2.5 py-1 text-[13px] font-bold uppercase tracking-wider text-primary'>
                   <span className='size-1.5 animate-pulse rounded-full bg-primary' />
                   {t('mock.liveBadge')}
                 </span>
@@ -111,14 +111,14 @@ export default function LiveTickerSection() {
               <div className='grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-5 py-6'>
                 <div className='flex flex-col items-center gap-2'>
                   <span
-                    className='flex size-11 items-center justify-center rounded-xl font-display text-xs font-extrabold text-white'
+                    className='flex size-11 items-center justify-center rounded-xl font-display text-[13px] font-extrabold text-white'
                     style={{
                       background:
                         'radial-gradient(120% 120% at 32% 26%, hsl(22 96% 60%), hsl(22 92% 46%))',
                     }}>
                     {t('mock.homeTeam').slice(0, 3).toUpperCase()}
                   </span>
-                  <span className='text-center text-xs font-semibold leading-4 text-chalk/85'>
+                  <span className='text-center text-[13px] font-semibold leading-5 text-chalk/85'>
                     {t('mock.homeTeam')}
                   </span>
                 </div>
@@ -129,14 +129,14 @@ export default function LiveTickerSection() {
                 </div>
                 <div className='flex flex-col items-center gap-2'>
                   <span
-                    className='flex size-11 items-center justify-center rounded-xl font-display text-xs font-extrabold text-white'
+                    className='flex size-11 items-center justify-center rounded-xl font-display text-[13px] font-extrabold text-white'
                     style={{
                       background:
                         'radial-gradient(120% 120% at 32% 26%, hsl(221 90% 62%), hsl(221 83% 48%))',
                     }}>
                     {t('mock.awayTeam').slice(0, 2).toUpperCase()}
                   </span>
-                  <span className='text-center text-xs font-semibold leading-4 text-chalk/85'>
+                  <span className='text-center text-[13px] font-semibold leading-5 text-chalk/85'>
                     {t('mock.awayTeam')}
                   </span>
                 </div>
@@ -151,7 +151,7 @@ export default function LiveTickerSection() {
                       key={event.minute + event.text}
                       data-ticker-event
                       className='flex items-center gap-3'>
-                      <span className='w-9 shrink-0 rounded-md bg-chalk/8 px-1.5 py-0.5 text-center font-mono text-[11px] font-semibold tabular-nums text-chalk/75'>
+                      <span className='w-10 shrink-0 rounded-md bg-chalk/8 px-1.5 py-0.5 text-center font-mono text-[13px] font-semibold tabular-nums text-chalk/75'>
                         {event.minute}
                       </span>
                       <span

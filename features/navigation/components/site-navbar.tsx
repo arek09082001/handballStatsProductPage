@@ -10,6 +10,7 @@ import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
+import NavDropdown from './nav-dropdown';
 import { primaryNavigationItems, siteNavigationItems } from '../config';
 import { useSiteNavbar } from '../hooks/use-site-navbar';
 
@@ -21,6 +22,7 @@ export default function SiteNavbar() {
     isScrollingUp,
     toggleMenu,
     closeMenu,
+    isActive,
     isItemActive,
     handleBrandClick,
   } = useSiteNavbar();
@@ -43,7 +45,9 @@ export default function SiteNavbar() {
         )}>
         <div
           className={cn(
-            'relative isolate ml-auto flex h-auto w-auto items-center justify-end gap-2 overflow-visible border-0 bg-transparent px-0 shadow-none transition-all duration-500 ease-out sm:gap-3 sm:px-0 lg:mx-auto lg:h-16 lg:w-auto lg:max-w-7xl lg:justify-normal lg:overflow-hidden lg:rounded-[28px] lg:border lg:px-8',
+            // No `overflow-hidden` here: the "Für Trainer" dropdown panel hangs
+            // below the bar and would be clipped by it.
+            'relative isolate ml-auto flex h-auto w-auto items-center justify-end gap-2 overflow-visible border-0 bg-transparent px-0 shadow-none transition-all duration-500 ease-out sm:gap-3 sm:px-0 lg:mx-auto lg:h-16 lg:w-auto lg:max-w-7xl lg:justify-normal lg:rounded-[28px] lg:border lg:px-6 xl:px-8',
             'lg:scale-100 lg:border-slate-200/85 lg:bg-white lg:shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] lg:backdrop-blur-none lg:supports-[backdrop-filter]:bg-white',
             isNavInFocus
               ? 'lg:bg-white/94 lg:shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] lg:backdrop-blur-[2px] lg:supports-[backdrop-filter]:bg-white/78'
@@ -68,7 +72,7 @@ export default function SiteNavbar() {
             )}
           />
 
-          <div className='relative z-10 hidden min-w-0 flex-1 lg:block lg:w-44 lg:flex-none xl:w-60'>
+          <div className='relative z-10 hidden min-w-0 flex-1 lg:block lg:w-40 lg:flex-none xl:w-60'>
             <button
               type='button'
               onClick={handleBrandClick}
@@ -98,7 +102,9 @@ export default function SiteNavbar() {
                   />
                 </span>
 
-                <span className='mt-1 hidden text-left text-xs font-medium text-slate-500 sm:block'>
+                {/* Only from `xl`, where the brand column is wide enough for
+                 * one line — at `lg` it wrapped and spilled out of the bar. */}
+                <span className='mt-1 hidden text-left text-[13px] font-medium text-slate-500 xl:block'>
                   {CLUB_CONFIG.display.brandTagline}
                 </span>
               </span>
@@ -113,10 +119,23 @@ export default function SiteNavbar() {
                 const active = isItemActive(item);
                 const highlighted = item.ident === highlightedIdent;
 
+                if (item.groups) {
+                  return (
+                    <NavDropdown
+                      key={item.ident}
+                      item={item}
+                      active={active}
+                      highlighted={highlighted}
+                      onHoverChange={setHoveredIdent}
+                    />
+                  );
+                }
+
                 return (
                   <Link
                     key={item.ident}
-                    href={item.href}
+                    // Every item without `groups` carries an href (see config).
+                    href={item.href ?? '/'}
                     title={t(`items.${item.labelKey}`)}
                     target={item.external ? '_blank' : undefined}
                     rel={item.external ? 'noopener noreferrer' : undefined}
@@ -125,7 +144,7 @@ export default function SiteNavbar() {
                     // The only external nav item is the live demo.
                     onClick={item.external ? () => trackDemoClick('navbar') : undefined}
                     className={cn(
-                      'relative inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
+                      'relative inline-flex items-center whitespace-nowrap rounded-full px-2 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
                       highlighted
                         ? 'text-slate-950'
                         : item.external
@@ -235,7 +254,7 @@ export default function SiteNavbar() {
                     <span className='block truncate text-base font-semibold tracking-[-0.03em] text-slate-950'>
                       {CLUB_CONFIG.name}
                     </span>
-                    <span className='block truncate text-xs font-medium text-slate-500'>
+                    <span className='block truncate text-[13px] font-medium text-slate-500'>
                       {CLUB_CONFIG.display.brandTagline}
                     </span>
                   </span>
@@ -244,10 +263,52 @@ export default function SiteNavbar() {
                 {siteNavigationItems.map((item) => {
                   const active = isItemActive(item);
 
+                  // Dropdowns flatten into labelled sections here — a mobile
+                  // menu that is already a list needs no second layer.
+                  if (item.groups) {
+                    return (
+                      <div key={item.ident} className='space-y-2 pt-1'>
+                        {item.groups.map((group) => (
+                          <div key={group.labelKey} className='space-y-2'>
+                            <p className='px-4 pt-1 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-slate-400'>
+                              {t(`groups.${group.labelKey}`)}
+                            </p>
+                            {group.items.map((child) => {
+                              const childLabel =
+                                child.label ?? t(`items.${child.labelKey}`);
+                              const childActive = isActive(child.href);
+
+                              return (
+                                <Link
+                                  key={child.ident}
+                                  href={child.href}
+                                  title={childLabel}
+                                  onClick={closeMenu}
+                                  aria-current={childActive ? 'page' : undefined}
+                                  className={cn(
+                                    'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
+                                    childActive
+                                      ? 'bg-slate-950 text-white'
+                                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
+                                  )}>
+                                  <span>{childLabel}</span>
+                                  {childActive && (
+                                    <span className='size-2 rounded-full bg-white' />
+                                  )}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  }
+
                   return (
                     <Link
                       key={item.ident}
-                      href={item.href}
+                      // Every item without `groups` carries an href (see config).
+                      href={item.href ?? '/'}
                       title={t(`items.${item.labelKey}`)}
                       onClick={() => {
                         // The only external nav item is the live demo.

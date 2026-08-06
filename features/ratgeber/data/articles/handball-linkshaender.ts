@@ -3,7 +3,7 @@ import type { Article } from '../../types';
 export const handballLinkshaender: Article = {
   slug: 'handball-linkshaender',
   title: 'Linkshänder im Handball: warum sie so gefragt sind und wie sie brillieren',
-  metaTitle: 'Linkshänder im Handball',
+  metaTitle: 'Linkshänder im Handball: Vorteile, Positionen & Tipps',
   metaDescription:
     'Linkshänder im Handball: Warum Linkshänder auf Rechtsaußen und im rechten Rückraum so wertvoll sind, welche Vorteile der Wurfwinkel bringt und wie sie ihr Spiel entwickeln.',
   keywords: [

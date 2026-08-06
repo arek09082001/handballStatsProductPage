@@ -110,7 +110,7 @@ export default function NewsletterConfirm() {
               </div>
             )}
 
-            <p className='mt-4 text-xs leading-5 text-muted-foreground'>
+            <p className='mt-4 text-[13px] leading-5 text-muted-foreground'>
               {t('ignoreHint')}
             </p>
           </>

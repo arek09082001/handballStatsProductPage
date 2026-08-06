@@ -93,7 +93,7 @@ export default function Error({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}>
-              <p className='text-xs text-muted-foreground'>
+              <p className='text-[13px] text-muted-foreground'>
                 Fehler-ID: {error.digest}
               </p>
             </motion.div>

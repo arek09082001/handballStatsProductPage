@@ -208,7 +208,7 @@ export default function ContactSection() {
                 {contactMutation.isPending ? t('pending') : t('button')}
               </Button>
 
-              <p className='text-center text-xs leading-5 text-ink/50'>{t('note')}</p>
+              <p className='text-center text-[13px] leading-5 text-ink/50'>{t('note')}</p>
             </div>
           </BoardCard>
         </form>

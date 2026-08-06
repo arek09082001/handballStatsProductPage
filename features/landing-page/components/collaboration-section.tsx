@@ -78,13 +78,13 @@ export default function CollaborationSection() {
                   <Inbox className='size-4 text-primary' />
                   {t('mock.inboxTitle')}
                 </span>
-                <span className='rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary'>
+                <span className='rounded-full bg-primary/10 px-2 py-0.5 text-[13px] font-bold uppercase tracking-wide text-primary'>
                   {t('mock.inboxUnread')}
                 </span>
               </div>
               <div className='flex items-start gap-3.5 px-5 py-4'>
                 <span
-                  className='mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl font-display text-xs font-extrabold text-white'
+                  className='mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl font-display text-[13px] font-extrabold text-white'
                   style={{
                     background:
                       'radial-gradient(120% 120% at 32% 26%, hsl(221 90% 62%), hsl(221 83% 46%))',
@@ -93,12 +93,12 @@ export default function CollaborationSection() {
                 </span>
                 <div className='min-w-0'>
                   <p className='truncate text-sm font-bold text-ink'>{t('mock.inboxGame')}</p>
-                  <p className='mt-0.5 text-xs text-ink/60'>{t('mock.inboxShared')}</p>
+                  <p className='mt-0.5 text-[13px] text-ink/60'>{t('mock.inboxShared')}</p>
                   <div className='mt-2.5 flex flex-wrap gap-1.5'>
-                    <span className='rounded-full bg-paper-2 px-2.5 py-1 text-[11px] font-semibold text-ink/70'>
+                    <span className='rounded-full bg-paper-2 px-2.5 py-1 text-[13px] font-semibold text-ink/70'>
                       {t('mock.inboxChipStats')}
                     </span>
-                    <span className='inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary'>
+                    <span className='inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-[13px] font-semibold text-primary'>
                       <Sparkles className='size-3' />
                       {t('mock.inboxChipAi')}
                     </span>
@@ -114,15 +114,15 @@ export default function CollaborationSection() {
                   <ClipboardList className='size-4 text-primary' />
                   {t('mock.surveyTitle')}
                 </span>
-                <p className='mt-2 text-xs text-ink/60'>{t('mock.surveyAnswered')}</p>
+                <p className='mt-2 text-[13px] text-ink/60'>{t('mock.surveyAnswered')}</p>
                 <div className='mt-2.5 h-2 overflow-hidden rounded-full bg-paper-2'>
                   <div className='h-full w-[64%] rounded-full bg-primary' />
                 </div>
                 <div className='mt-3 flex gap-1.5'>
-                  <span className='rounded-full bg-success/12 px-2.5 py-1 text-[11px] font-semibold text-success'>
+                  <span className='rounded-full bg-success/12 px-2.5 py-1 text-[13px] font-semibold text-success'>
                     {t('mock.surveyYes')}
                   </span>
-                  <span className='rounded-full bg-ink/8 px-2.5 py-1 text-[11px] font-semibold text-ink/60'>
+                  <span className='rounded-full bg-ink/8 px-2.5 py-1 text-[13px] font-semibold text-ink/60'>
                     {t('mock.surveyNo')}
                   </span>
                 </div>

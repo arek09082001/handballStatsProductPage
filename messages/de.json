@@ -32,12 +32,14 @@
     "titles": {
       "email": "E-Mail an",
       "impressum": "Zum Impressum und Datenschutz",
-      "agb": "Zu den Allgemeinen Geschäftsbedingungen"
+      "agb": "Zu den Allgemeinen Geschäftsbedingungen",
+      "llmsTxt": "Maschinenlesbarer Steckbrief für KI-Assistenten"
     },
     "legal": {
       "impressumAndPrivacy": "Impressum & Datenschutz",
       "agb": "AGB",
-      "newsletterUnsubscribe": "Newsletter abmelden"
+      "newsletterUnsubscribe": "Newsletter abmelden",
+      "llmsTxt": "llms.txt"
     },
     "copyright": "Copyright © {year}. Alle Rechte vorbehalten."
   },
@@ -237,8 +239,17 @@
       "demo": "Live-Demo",
       "impressum": "Impressum",
       "ratgeber": "Ratgeber",
-      "aboutStatix": "Was ist Statix?"
+      "aboutStatix": "Was ist Statix?",
+      "forCoaches": "Für Trainer",
+      "forClubs": "Für Vereine",
+      "forYouthCoaches": "Für Jugendtrainer",
+      "shotQuotaCalculator": "Wurfquoten-Rechner"
     },
+    "groups": {
+      "audience": "Für wen",
+      "tools": "Kostenlose Tools"
+    },
+    "skipToContent": "Zum Inhalt springen",
     "registerCta": "Jetzt registrieren",
     "languageSwitcher": {
       "label": "Sprache wechseln",

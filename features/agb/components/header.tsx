@@ -11,7 +11,7 @@ export default function AgbHeader() {
       <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_12%_0%,rgba(59,130,246,0.25),transparent),radial-gradient(ellipse_40%_35%_at_92%_100%,rgba(16,185,129,0.16),transparent)]' />
 
       <div className='relative mx-auto max-w-7xl px-6 py-10 text-center sm:px-10 sm:py-16 md:text-left md:py-20'>
-        <div className='mx-auto inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/85 md:mx-0'>
+        <div className='mx-auto inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/85 md:mx-0'>
           <ScrollText className='h-4 w-4' />
           {t('eyebrow')}
         </div>

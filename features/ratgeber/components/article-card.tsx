@@ -54,7 +54,7 @@ export default function ArticleCard({
 
       <p className='mt-2.5 flex-1 text-sm leading-6 text-ink/70'>{article.excerpt}</p>
 
-      <div className='mt-5 flex items-center justify-between border-t border-ink/10 pt-3.5 text-xs text-ink/55'>
+      <div className='mt-5 flex items-center justify-between border-t border-ink/10 pt-3.5 text-[13px] text-ink/55'>
         <span className='inline-flex items-center gap-1.5'>
           <Clock className='size-3.5' />
           {article.readingTimeMinutes} Min.

@@ -88,7 +88,7 @@ export default function FeatureGridSection() {
                     <p className='flex items-center gap-2 text-[15px] font-semibold text-ink'>
                       {item.name}
                       {item.isNew && (
-                        <span className='inline-flex items-center rounded-full bg-primary/12 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary'>
+                        <span className='inline-flex items-center rounded-full bg-primary/12 px-2 py-0.5 text-[13px] font-bold uppercase tracking-wide text-primary'>
                           {t('newBadge')}
                         </span>
                       )}

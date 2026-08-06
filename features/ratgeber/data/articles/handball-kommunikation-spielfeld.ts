@@ -3,7 +3,7 @@ import type { Article } from '../../types';
 export const handballKommunikationSpielfeld: Article = {
   slug: 'handball-kommunikation-spielfeld',
   title: 'Kommunikation im Handball: reden gewinnt Spiele – auf dem Feld und daneben',
-  metaTitle: 'Kommunikation im Handball',
+  metaTitle: 'Kommunikation im Handball: Abwehr, Angriff & Übungen',
   metaDescription:
     'Kommunikation im Handball: Warum Reden in Abwehr und Angriff Spiele entscheidet, welche Kommandos und Zeichen es gibt und wie du eine kommunikative Mannschaft entwickelst.',
   keywords: [
