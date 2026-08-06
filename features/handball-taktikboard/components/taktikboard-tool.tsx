@@ -1,22 +1,17 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Check, Copy, Download, Link2, Trash2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import BoardCanvas from './board-canvas';
-import { COURT_VIEW_LIST } from '../data/court-geometry';
-import { BOARD_GROUNDS, MAGNET_COLORS } from '../data/board-palette';
+import BoardToolbar from './board-toolbar';
+import BoardSettings from './board-settings';
 import {
   DEFAULT_FORMATION_ID,
-  FORMATION_PRESETS,
   findFormation,
 } from '../data/formations';
 import {
-  ARROW_KIND_OPTIONS,
   BOARD_CAPACITY,
   EXPORT_FILE_NAME,
-  LABEL_MAX_CHARS,
-  MAGNET_KIND_OPTIONS,
   TAKTIKBOARD_PAGE_PATH,
 } from '../data/taktikboard-content';
 import { clamp01, decodeBoard, encodeBoard, sanitizeLabel } from '../lib/board-share';
@@ -24,23 +19,15 @@ import type {
   ArrowColor,
   ArrowHandle,
   ArrowKind,
+  BoardArrow,
   BoardGround,
+  BoardMagnet,
+  BoardMode,
   BoardSelection,
   BoardState,
   CourtViewId,
   MagnetKind,
 } from '../interfaces';
-
-const ARROW_COLOR_OPTIONS: { value: ArrowColor; label: string }[] = [
-  { value: 'marker', label: 'Orange (eigene)' },
-  { value: 'opponent', label: 'Blau (Gegner)' },
-  { value: 'neutral', label: 'Neutral' },
-];
-
-const GROUND_OPTIONS: { value: BoardGround; label: string }[] = [
-  { value: 'court', label: 'Hallenboden' },
-  { value: 'paper', label: 'Papier' },
-];
 
 function buildDefaultBoard(): BoardState {
   return {
@@ -73,13 +60,13 @@ function spawnSpot(index: number): { x: number; y: number } {
 }
 
 interface TaktikboardToolProps {
-  /** 'embed' drops the outer card chrome and never touches the address bar. */
+  /** 'embed' never touches the address bar. */
   variant?: 'page' | 'embed';
   className?: string;
 }
 
 /**
- * The Taktikboard: board, controls, PNG export and share link.
+ * The Taktikboard: tool strip, board, setup and the two ways out.
  *
  * All state lives in React and, when the coach asks for it, in the URL
  * fragment — nothing is posted anywhere, which is what makes the share link
@@ -95,7 +82,10 @@ export default function TaktikboardTool({
   const [board, setBoard] = useState<BoardState>(buildDefaultBoard);
   const [selection, setSelection] = useState<BoardSelection>(null);
   const [formationId, setFormationId] = useState(DEFAULT_FORMATION_ID);
+  const [mode, setMode] = useState<BoardMode>('move');
+  const [editorId, setEditorId] = useState<string | null>(null);
   const [arrowKind, setArrowKind] = useState<ArrowKind>('laufweg');
+  const [arrowColor, setArrowColor] = useState<ArrowColor>('marker');
   const [notice, setNotice] = useState<string | null>(null);
   const [announcement, setAnnouncement] = useState('');
   const [copied, setCopied] = useState(false);
@@ -157,27 +147,16 @@ export default function TaktikboardTool({
     [origin, board],
   );
 
-  const selectedMagnet =
-    selection?.type === 'magnet'
-      ? board.magnets.find((magnet) => magnet.id === selection.id)
-      : undefined;
-  const selectedArrow =
-    selection?.type === 'arrow'
-      ? board.arrows.find((arrow) => arrow.id === selection.id)
-      : undefined;
-  const selectedLabel =
-    selection?.type === 'label'
-      ? board.labels.find((label) => label.id === selection.id)
-      : undefined;
+  const handleSelect = useCallback((next: BoardSelection) => {
+    setSelection(next);
+    setNotice(null);
+  }, []);
 
-  const handleSelect = useCallback(
-    (next: BoardSelection) => {
-      setSelection(next);
-      setNotice(null);
-      if (!next) setAnnouncement('Auswahl aufgehoben.');
-    },
-    [],
-  );
+  /** Picking up a different tool always leaves the board in a known state. */
+  const changeMode = useCallback((next: BoardMode) => {
+    setMode(next);
+    setEditorId(null);
+  }, []);
 
   const moveMagnet = useCallback(
     (id: string, x: number, y: number) => {
@@ -229,8 +208,35 @@ export default function TaktikboardTool({
     [announceLater],
   );
 
+  const changeMagnet = useCallback((id: string, patch: Partial<BoardMagnet>) => {
+    setBoard((current) => ({
+      ...current,
+      magnets: current.magnets.map((magnet) =>
+        magnet.id === id ? { ...magnet, ...patch } : magnet,
+      ),
+    }));
+  }, []);
+
+  const changeArrow = useCallback((id: string, patch: Partial<BoardArrow>) => {
+    setBoard((current) => ({
+      ...current,
+      arrows: current.arrows.map((arrow) => (arrow.id === id ? { ...arrow, ...patch } : arrow)),
+    }));
+  }, []);
+
+  const changeLabel = useCallback((id: string, text: string) => {
+    const clean = sanitizeLabel(text);
+    setBoard((current) => ({
+      ...current,
+      labels: current.labels.map((label) =>
+        label.id === id ? { ...label, text: clean } : label,
+      ),
+    }));
+  }, []);
+
   const removeObject = useCallback((target: BoardSelection) => {
     if (!target) return;
+    setEditorId(null);
     setBoard((current) => ({
       ...current,
       magnets:
@@ -255,6 +261,7 @@ export default function TaktikboardTool({
     if (!preset) return;
     setFormationId(id);
     setSelection(null);
+    setEditorId(null);
     setNotice(null);
     setBoard((current) => ({
       ...current,
@@ -283,6 +290,7 @@ export default function TaktikboardTool({
       };
       setBoard((current) => ({ ...current, magnets: [...current.magnets, magnet] }));
       setSelection({ type: 'magnet', id: magnet.id });
+      setMode('move');
       setAnnouncement(
         kind === 'ball' ? 'Ball aufs Feld gelegt.' : `Magnet ${magnet.number} aufs Feld gesetzt.`,
       );
@@ -290,52 +298,49 @@ export default function TaktikboardTool({
     [board, nextId],
   );
 
-  const addArrow = useCallback(() => {
-    setNotice(null);
-    if (board.arrows.length >= BOARD_CAPACITY.arrows) {
-      setNotice(`Mehr als ${BOARD_CAPACITY.arrows} Pfeile werden unleserlich. Nimm erst einen weg.`);
-      return;
-    }
-    const shift = (board.arrows.length % 5) * 0.05;
-    const x1 = clamp01(0.3 + shift);
-    const y1 = clamp01(0.62 - shift);
-    const x2 = clamp01(0.58 + shift);
-    const y2 = clamp01(0.36 - shift);
-    const arrow = {
-      id: nextId('a'),
-      kind: arrowKind,
-      color: 'marker' as ArrowColor,
-      x1,
-      y1,
-      cx: (x1 + x2) / 2,
-      cy: (y1 + y2) / 2,
-      x2,
-      y2,
-    };
-    setBoard((current) => ({ ...current, arrows: [...current.arrows, arrow] }));
-    setSelection({ type: 'arrow', id: arrow.id });
-    setAnnouncement('Pfeil hinzugefügt. Anfang und Spitze lassen sich ziehen.');
-  }, [arrowKind, board, nextId]);
+  const createArrow = useCallback(
+    (x1: number, y1: number, x2: number, y2: number) => {
+      setNotice(null);
+      if (board.arrows.length >= BOARD_CAPACITY.arrows) {
+        setNotice(`Mehr als ${BOARD_CAPACITY.arrows} Pfeile werden unleserlich. Nimm erst einen weg.`);
+        return;
+      }
+      const arrow = {
+        id: nextId('a'),
+        kind: arrowKind,
+        color: arrowColor,
+        x1,
+        y1,
+        cx: (x1 + x2) / 2,
+        cy: (y1 + y2) / 2,
+        x2,
+        y2,
+      };
+      setBoard((current) => ({ ...current, arrows: [...current.arrows, arrow] }));
+      setSelection({ type: 'arrow', id: arrow.id });
+      setAnnouncement('Pfeil gezeichnet.');
+    },
+    [arrowColor, arrowKind, board.arrows.length, nextId],
+  );
 
-  const addLabel = useCallback(() => {
-    setNotice(null);
-    if (board.labels.length >= BOARD_CAPACITY.labels) {
-      setNotice(`Mehr als ${BOARD_CAPACITY.labels} Notizen passen nicht aufs Feld.`);
-      return;
-    }
-    const label = {
-      id: nextId('l'),
-      x: clamp01(0.5 + (board.labels.length % 3) * 0.08),
-      y: clamp01(0.18 + (board.labels.length % 4) * 0.09),
-      text: 'Sperre',
-    };
-    setBoard((current) => ({ ...current, labels: [...current.labels, label] }));
-    setSelection({ type: 'label', id: label.id });
-    setAnnouncement('Notiz hinzugefügt. Text im Feld darunter ändern.');
-  }, [board, nextId]);
+  const createLabel = useCallback(
+    (x: number, y: number) => {
+      setNotice(null);
+      if (board.labels.length >= BOARD_CAPACITY.labels) {
+        setNotice(`Mehr als ${BOARD_CAPACITY.labels} Notizen passen nicht aufs Feld.`);
+        return;
+      }
+      const label = { id: nextId('l'), x: clamp01(x), y: clamp01(y), text: 'Sperre' };
+      setBoard((current) => ({ ...current, labels: [...current.labels, label] }));
+      setSelection({ type: 'label', id: label.id });
+      setAnnouncement('Notiz gesetzt. Doppeltippen ändert den Text.');
+    },
+    [board.labels.length, nextId],
+  );
 
   const clearBoard = useCallback(() => {
     setSelection(null);
+    setEditorId(null);
     setFormationId('leer');
     setNotice(null);
     setBoard((current) => ({ ...current, magnets: [], arrows: [], labels: [] }));
@@ -358,6 +363,7 @@ export default function TaktikboardTool({
     const node = boardRef.current;
     if (!node) return;
     setSelection(null);
+    setEditorId(null);
     setNotice(null);
     setIsExporting(true);
     try {
@@ -392,355 +398,82 @@ export default function TaktikboardTool({
     }
   }, []);
 
-  const labelClass = 'block text-[13px] font-semibold uppercase tracking-wide text-ink/60';
-  const fieldClass =
-    'h-12 w-full rounded-xl border border-ink/15 bg-paper px-3.5 text-base text-ink outline-none transition-colors placeholder:text-ink/40 hover:border-ink/25 focus:border-primary focus:ring-2 focus:ring-primary/25';
-  const actionClass =
-    'inline-flex h-11 min-w-11 items-center justify-center gap-2 rounded-xl border border-ink/15 bg-paper px-3 text-sm font-semibold text-ink transition-colors hover:border-ink/30 hover:bg-paper-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-55';
-  const blockTitleClass = 'font-display text-[15px] font-bold tracking-tight text-ink';
-
   return (
     <div className={cn('w-full', className)}>
-      <div className='grid gap-5 lg:grid-cols-[minmax(0,1fr)_21rem] lg:items-start lg:gap-6'>
-        {/* The board sits in a frame, the way a magnetic board hangs in a rail —
-            and so it stays visible when its own ground matches the band behind it. */}
-        <div className='rounded-[1.25rem] border border-chalk/15 bg-court-2 p-2 shadow-[0_20px_46px_-28px_hsl(222_40%_4%/0.9)] sm:p-2.5'>
-          <BoardCanvas
-            state={board}
-            selection={selection}
-            onSelect={handleSelect}
-            onMoveMagnet={moveMagnet}
-            onMoveArrow={moveArrow}
-            onMoveLabel={moveLabel}
-            onRemove={removeObject}
-            boardRef={boardRef}
-            describedById='taktikboard-keyboard-hilfe'
-          />
-        </div>
+      <p id='taktikboard-keyboard-hilfe' className='sr-only'>
+        Mit Tab erreichst du jeden Magneten, jeden Pfeilgriff und jede Notiz. Die
+        Pfeiltasten verschieben das ausgewählte Objekt, mit gedrückter
+        Umschalttaste in größeren Schritten. Die Eingabetaste öffnet Nummer und
+        Farbe, die Entfernen-Taste nimmt das Objekt vom Feld.
+      </p>
+      <p aria-live='polite' className='sr-only'>
+        {announcement}
+      </p>
 
-        <div className='rounded-2xl border border-ink/10 bg-paper p-4 sm:p-5'>
-          <p id='taktikboard-keyboard-hilfe' className='sr-only'>
-            Mit Tab erreichst du jeden Magneten, jeden Pfeilgriff und jede Notiz.
-            Die Pfeiltasten verschieben das ausgewählte Objekt, mit gedrückter
-            Umschalttaste in größeren Schritten. Entfernen-Taste nimmt es vom
-            Feld.
-          </p>
-          <p aria-live='polite' className='sr-only'>
-            {announcement}
-          </p>
+      <BoardToolbar
+        mode={mode}
+        arrowKind={arrowKind}
+        arrowColor={arrowColor}
+        onModeChange={changeMode}
+        onArrowKindChange={setArrowKind}
+        onArrowColorChange={setArrowColor}
+        onAddMagnet={addMagnet}
+      />
 
-          <div>
-            <label className={labelClass} htmlFor='taktikboard-aufstellung'>
-              Fertige Aufstellung
-            </label>
-            <select
-              id='taktikboard-aufstellung'
-              value={formationId}
-              onChange={(event) => applyFormation(event.target.value)}
-              className={cn(fieldClass, 'mt-1.5 cursor-pointer font-semibold')}>
-              {formationId === '' ? (
-                <option value=''>Geteiltes Board</option>
-              ) : null}
-              {/* Grouped by court, so it is obvious which setup switches the
-                  view — a Tempogegenstoß cannot be shown on a half field. */}
-              {COURT_VIEW_LIST.map((courtView) => (
-                <optgroup key={courtView.id} label={courtView.label}>
-                  {FORMATION_PRESETS.filter((preset) => preset.view === courtView.id).map(
-                    (preset) => (
-                      <option key={preset.id} value={preset.id}>
-                        {preset.label}
-                      </option>
-                    ),
-                  )}
-                </optgroup>
-              ))}
-            </select>
-            <p className='mt-2 text-[13px] leading-6 text-ink/60'>
-              {findFormation(formationId)?.hint ??
-                'Dieses Board kommt aus einem geteilten Link. Wähl eine Aufstellung, wenn du neu anfangen willst.'}
-            </p>
-          </div>
+      {/* The board sits in a frame, the way a magnetic board hangs in a rail —
+          and so it stays visible when its own ground matches the band behind it. */}
+      <div className='mt-3 rounded-[1.25rem] border border-chalk/15 bg-court-2 p-2 shadow-[0_20px_46px_-28px_hsl(222_40%_4%/0.9)] sm:p-2.5'>
+        <BoardCanvas
+          state={board}
+          mode={mode}
+          arrowKind={arrowKind}
+          arrowColor={arrowColor}
+          selection={selection}
+          onSelect={handleSelect}
+          onMoveMagnet={moveMagnet}
+          onMoveArrow={moveArrow}
+          onMoveLabel={moveLabel}
+          onRemove={removeObject}
+          onCreateArrow={createArrow}
+          onCreateLabel={createLabel}
+          onChangeMagnet={changeMagnet}
+          onChangeArrow={changeArrow}
+          onChangeLabel={changeLabel}
+          editorId={editorId}
+          onEditorChange={setEditorId}
+          boardRef={boardRef}
+          describedById='taktikboard-keyboard-hilfe'
+        />
+      </div>
 
-          <div className='mt-5 border-t border-ink/10 pt-4'>
-            <p className={blockTitleClass}>Magnet aufs Feld</p>
-            <div className='mt-2.5 grid grid-cols-2 gap-2'>
-              {MAGNET_KIND_OPTIONS.map((option) => (
-                <button
-                  key={option.kind}
-                  type='button'
-                  onClick={() => addMagnet(option.kind)}
-                  aria-label={option.action}
-                  className={actionClass}>
-                  <span
-                    aria-hidden='true'
-                    className='size-3.5 shrink-0 rounded-full border border-ink/15'
-                    style={{ background: MAGNET_COLORS[option.kind].surface }}
-                  />
-                  {option.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {notice ? (
+        <p
+          role='status'
+          className='mt-3 rounded-xl border border-secondary/30 bg-secondary/10 px-3.5 py-3 text-[14px] leading-6 text-ink'>
+          {notice}
+        </p>
+      ) : null}
 
-          <div className='mt-5 border-t border-ink/10 pt-4'>
-            <p className={blockTitleClass}>Pfeile und Notizen</p>
-            <label className={cn(labelClass, 'mt-3')} htmlFor='taktikboard-pfeilart'>
-              Art des Pfeils
-            </label>
-            <select
-              id='taktikboard-pfeilart'
-              value={arrowKind}
-              onChange={(event) => setArrowKind(event.target.value as ArrowKind)}
-              className={cn(fieldClass, 'mt-1.5 cursor-pointer')}>
-              {ARROW_KIND_OPTIONS.map((option) => (
-                <option key={option.kind} value={option.kind}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-            <p className='mt-2 text-[13px] leading-6 text-ink/60'>
-              {ARROW_KIND_OPTIONS.find((option) => option.kind === arrowKind)?.hint}
-            </p>
-            <div className='mt-3 grid grid-cols-2 gap-2'>
-              <button type='button' onClick={addArrow} className={actionClass}>
-                Pfeil hinzufügen
-              </button>
-              <button type='button' onClick={addLabel} className={actionClass}>
-                Notiz hinzufügen
-              </button>
-            </div>
-          </div>
-
-          <div className='mt-5 border-t border-ink/10 pt-4'>
-            <p className={blockTitleClass}>Ausgewähltes Objekt</p>
-            {selectedMagnet ? (
-              <div className='mt-3'>
-                {selectedMagnet.kind === 'ball' ? (
-                  <p className='text-[15px] leading-7 text-ink/75'>
-                    Der Ball ist ausgewählt. Zieh ihn an seinen Platz.
-                  </p>
-                ) : (
-                  <>
-                    <label className={labelClass} htmlFor='taktikboard-nummer'>
-                      Rückennummer
-                    </label>
-                    <input
-                      id='taktikboard-nummer'
-                      type='number'
-                      inputMode='numeric'
-                      min={0}
-                      max={99}
-                      value={selectedMagnet.number}
-                      onChange={(event) => {
-                        const parsed = Number.parseInt(event.target.value, 10);
-                        const number = Number.isFinite(parsed)
-                          ? Math.min(99, Math.max(0, parsed))
-                          : 0;
-                        setBoard((current) => ({
-                          ...current,
-                          magnets: current.magnets.map((magnet) =>
-                            magnet.id === selectedMagnet.id ? { ...magnet, number } : magnet,
-                          ),
-                        }));
-                      }}
-                      className={cn(fieldClass, 'mt-1.5 w-28 font-semibold tabular-nums')}
-                    />
-                  </>
-                )}
-                <button
-                  type='button'
-                  onClick={() => removeObject(selection)}
-                  className={cn(actionClass, 'mt-3 w-full')}>
-                  <Trash2 className='size-4' aria-hidden='true' />
-                  Vom Feld nehmen
-                </button>
-              </div>
-            ) : selectedArrow ? (
-              <div className='mt-3 space-y-3'>
-                <div>
-                  <label className={labelClass} htmlFor='taktikboard-pfeilfarbe'>
-                    Farbe
-                  </label>
-                  <select
-                    id='taktikboard-pfeilfarbe'
-                    value={selectedArrow.color}
-                    onChange={(event) =>
-                      setBoard((current) => ({
-                        ...current,
-                        arrows: current.arrows.map((arrow) =>
-                          arrow.id === selectedArrow.id
-                            ? { ...arrow, color: event.target.value as ArrowColor }
-                            : arrow,
-                        ),
-                      }))
-                    }
-                    className={cn(fieldClass, 'mt-1.5 cursor-pointer')}>
-                    {ARROW_COLOR_OPTIONS.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <button
-                  type='button'
-                  onClick={() => removeObject(selection)}
-                  className={cn(actionClass, 'w-full')}>
-                  <Trash2 className='size-4' aria-hidden='true' />
-                  Pfeil löschen
-                </button>
-              </div>
-            ) : selectedLabel ? (
-              <div className='mt-3 space-y-3'>
-                <div>
-                  <label className={labelClass} htmlFor='taktikboard-notiz'>
-                    Text der Notiz
-                  </label>
-                  <input
-                    id='taktikboard-notiz'
-                    type='text'
-                    maxLength={LABEL_MAX_CHARS}
-                    value={selectedLabel.text}
-                    onChange={(event) => {
-                      const text = sanitizeLabel(event.target.value);
-                      setBoard((current) => ({
-                        ...current,
-                        labels: current.labels.map((label) =>
-                          label.id === selectedLabel.id ? { ...label, text } : label,
-                        ),
-                      }));
-                    }}
-                    className={cn(fieldClass, 'mt-1.5')}
-                  />
-                  <p className='mt-1.5 text-[13px] text-ink/55'>
-                    Höchstens {LABEL_MAX_CHARS} Zeichen – auf dem Board soll ein Wort stehen, kein Satz.
-                  </p>
-                </div>
-                <button
-                  type='button'
-                  onClick={() => removeObject(selection)}
-                  className={cn(actionClass, 'w-full')}>
-                  <Trash2 className='size-4' aria-hidden='true' />
-                  Notiz löschen
-                </button>
-              </div>
-            ) : (
-              <p className='mt-3 text-[15px] leading-7 text-ink/70'>
-                Tipp einen Magneten, einen Pfeilgriff oder eine Notiz an – dann
-                kannst du hier die Nummer, die Farbe oder den Text ändern.
-              </p>
-            )}
-          </div>
-
-          <div className='mt-5 border-t border-ink/10 pt-4'>
-            <p className={blockTitleClass}>Feld und Untergrund</p>
-            <div className='mt-2.5 grid grid-cols-2 gap-2'>
-              {COURT_VIEW_LIST.map((courtView) => (
-                <button
-                  key={courtView.id}
-                  type='button'
-                  aria-pressed={board.view === courtView.id}
-                  onClick={() =>
-                    setBoard((current) => ({ ...current, view: courtView.id as CourtViewId }))
-                  }
-                  className={cn(
-                    actionClass,
-                    board.view === courtView.id && 'border-primary bg-primary/10 text-primary',
-                  )}>
-                  {courtView.label}
-                </button>
-              ))}
-            </div>
-            <div className='mt-2 grid grid-cols-2 gap-2'>
-              {GROUND_OPTIONS.map((option) => (
-                <button
-                  key={option.value}
-                  type='button'
-                  aria-pressed={board.ground === option.value}
-                  onClick={() => setBoard((current) => ({ ...current, ground: option.value }))}
-                  className={cn(
-                    actionClass,
-                    board.ground === option.value && 'border-primary bg-primary/10 text-primary',
-                  )}>
-                  <span
-                    aria-hidden='true'
-                    className='size-3.5 shrink-0 rounded-full border border-ink/20'
-                    style={{ background: BOARD_GROUNDS[option.value].surface }}
-                  />
-                  {option.label}
-                </button>
-              ))}
-            </div>
-            <p className='mt-2 text-[13px] leading-6 text-ink/60'>
-              {COURT_VIEW_LIST.find((courtView) => courtView.id === board.view)?.hint}{' '}
-              Papier spart Druckertinte, wenn das Board an die Kabinenwand soll.
-            </p>
-          </div>
-
-          <div className='mt-5 border-t border-ink/10 pt-4'>
-            <p className={blockTitleClass}>Board weitergeben</p>
-            <div className='mt-2.5 grid gap-2 sm:grid-cols-2'>
-              <button
-                type='button'
-                onClick={exportPng}
-                disabled={isExporting}
-                className={cn(
-                  actionClass,
-                  'border-primary bg-primary text-white hover:border-primary hover:brightness-95',
-                )}>
-                <Download className='size-4' aria-hidden='true' />
-                {isExporting ? 'Wird erzeugt …' : 'PNG herunterladen'}
-              </button>
-              <button type='button' onClick={copyLink} className={actionClass}>
-                {copied ? (
-                  <Check className='size-4' aria-hidden='true' />
-                ) : (
-                  <Link2 className='size-4' aria-hidden='true' />
-                )}
-                {copied ? 'Link kopiert' : 'Link kopieren'}
-              </button>
-            </div>
-            <label className={cn(labelClass, 'mt-3')} htmlFor='taktikboard-link'>
-              Teilen-Link
-            </label>
-            <div className='mt-1.5 flex gap-2'>
-              <input
-                id='taktikboard-link'
-                type='text'
-                readOnly
-                value={shareUrl}
-                onFocus={(event) => event.currentTarget.select()}
-                className={cn(fieldClass, 'flex-1 text-[13px]')}
-              />
-              <button
-                type='button'
-                onClick={copyLink}
-                aria-label='Teilen-Link in die Zwischenablage kopieren'
-                className={cn(actionClass, 'shrink-0 px-3')}>
-                <Copy className='size-4' aria-hidden='true' />
-              </button>
-            </div>
-            <p className='mt-2 text-[13px] leading-6 text-ink/60'>
-              Im Link steckt das komplette Board. Nichts davon wird gespeichert –
-              der Teil hinter dem Rautezeichen verlässt deinen Browser nie.
-            </p>
-            <button
-              type='button'
-              onClick={clearBoard}
-              className={cn(actionClass, 'mt-3 w-full')}>
-              <Trash2 className='size-4' aria-hidden='true' />
-              Feld leeren
-            </button>
-          </div>
-
-          {notice ? (
-            <p
-              role='status'
-              className='mt-4 rounded-xl border border-secondary/30 bg-secondary/10 px-3.5 py-3 text-[14px] leading-6 text-ink'>
-              {notice}
-            </p>
-          ) : null}
-        </div>
+      <div className='mt-3'>
+        <BoardSettings
+          formationId={formationId}
+          view={board.view}
+          ground={board.ground}
+          shareUrl={shareUrl}
+          copied={copied}
+          isExporting={isExporting}
+          onFormationChange={applyFormation}
+          onViewChange={(view: CourtViewId) => {
+            setEditorId(null);
+            setBoard((current) => ({ ...current, view }));
+          }}
+          onGroundChange={(ground: BoardGround) =>
+            setBoard((current) => ({ ...current, ground }))
+          }
+          onExport={exportPng}
+          onCopyLink={copyLink}
+          onClear={clearBoard}
+        />
       </div>
     </div>
   );

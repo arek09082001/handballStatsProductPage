@@ -1,5 +1,5 @@
 import type { BoardFaqItem } from '@/components/custom-ui/board-faq';
-import type { ArrowKind, MagnetKind } from '../interfaces';
+import type { ArrowKind, BoardMode, MagnetKind } from '../interfaces';
 
 export const TAKTIKBOARD_PAGE_PATH = '/handball-taktikboard';
 export const TAKTIKBOARD_EMBED_PATH = '/handball-taktikboard/embed';
@@ -42,6 +42,41 @@ export const MAGNET_KIND_OPTIONS: MagnetKindOption[] = [
   { kind: 'away', label: 'Gegner', action: 'Gegenspieler aufs Feld setzen' },
   { kind: 'keeper', label: 'Torwart', action: 'Torwart aufs Feld setzen' },
   { kind: 'ball', label: 'Ball', action: 'Ball aufs Feld legen' },
+];
+
+export interface BoardModeOption {
+  mode: BoardMode;
+  /** Short enough that the three tools stay on one row at 375 px. */
+  label: string;
+  /** The full wording, used as the accessible name. */
+  action: string;
+  /** Shown under the switch, so it is clear what a drag will do next. */
+  hint: string;
+}
+
+/**
+ * What a drag on the court does. A switch and not a hidden gesture: on a tablet
+ * the board has to give scrolling back when the coach is not drawing.
+ */
+export const BOARD_MODE_OPTIONS: BoardModeOption[] = [
+  {
+    mode: 'move',
+    label: 'Verschieben',
+    action: 'Werkzeug: Magnete verschieben',
+    hint: 'Magnete ziehen. Doppeltippen oder lange drücken öffnet Nummer und Farbe.',
+  },
+  {
+    mode: 'arrow',
+    label: 'Pfeil',
+    action: 'Werkzeug: Pfeil zeichnen',
+    hint: 'Auf dem Feld ziehen – von wo nach wo. Start auf einem Spieler hängt den Pfeil an ihn.',
+  },
+  {
+    mode: 'note',
+    label: 'Notiz',
+    action: 'Werkzeug: Notiz setzen',
+    hint: 'Auf die Stelle tippen, an der die Notiz stehen soll.',
+  },
 ];
 
 export interface ArrowKindOption {
@@ -115,15 +150,15 @@ export interface BoardStep {
 export const BOARD_STEPS: BoardStep[] = [
   {
     title: 'Aufstellung wählen',
-    text: 'Oben im Board liegt schon eine 6:0 gegen einen 3:3-Angriff. Über die Auswahl holst du dir stattdessen 5:1, 3:2:1, den 4:2-Angriff oder ein leeres Feld.',
+    text: 'Auf dem Board liegt schon eine 6:0 gegen einen 3:3-Angriff. Unter dem Feld holst du dir stattdessen 5:1, 3:2:1, den 4:2-Angriff, den Tempogegenstoß oder ein leeres Feld.',
   },
   {
     title: 'Magnete ziehen',
-    text: 'Jeden Magneten mit dem Finger oder der Maus an seinen Platz schieben. Orange ist deine Mannschaft, blau der Gegner, türkis der Torwart. Die Rückennummer änderst du, sobald ein Magnet ausgewählt ist.',
+    text: 'Jeden Magneten mit dem Finger oder der Maus an seinen Platz schieben. Orange ist deine Mannschaft, blau der Gegner, türkis der Torwart. Doppeltippen oder lange draufdrücken öffnet Nummer, Farbe und Löschen direkt am Magneten – ohne den Blick vom Feld zu nehmen.',
   },
   {
-    title: 'Wege einzeichnen',
-    text: 'Pfeil hinzufügen, Anfang und Ende ziehen, mit dem mittleren Griff die Kurve biegen. Kurze Notizen legst du frei auf dem Feld ab.',
+    title: 'Wege direkt aufs Feld ziehen',
+    text: 'Stell oben auf „Pfeil zeichnen“ und zieh auf dem Feld von wo nach wo. Startest du auf einem Spieler, hängt der Pfeil an ihm. Ein einzelner Tipp setzt einen Pfeil in Standardlänge. Mit dem mittleren Griff biegst du ihn, mit „Notiz setzen“ legst du ein Stichwort daneben.',
   },
   {
     title: 'Teilen oder speichern',
@@ -204,7 +239,7 @@ export const TAKTIKBOARD_FAQS: BoardFaqItem[] = [
   {
     question: 'Wie erstelle ich eine Handball-Aufstellung online?',
     answer:
-      'Du wählst oben im Taktikboard eine fertige Aufstellung – zum Beispiel 6:0, 5:1 oder 3:2:1 – und ziehst die Magnete anschließend auf ihre Positionen. Laufwege, Pässe und Würfe zeichnest du als Pfeile ein, kurze Notizen legst du daneben. Danach lädst du das Bild als PNG herunter oder teilst den Link.',
+      'Du wählst im Taktikboard eine fertige Aufstellung – zum Beispiel 6:0, 5:1 oder 3:2:1 – und ziehst die Magnete anschließend auf ihre Positionen. Für Laufwege, Pässe und Würfe stellst du auf „Pfeil zeichnen“ und ziehst direkt auf dem Feld von einem Punkt zum anderen. Danach lädst du das Bild als PNG herunter oder teilst den Link.',
   },
   {
     question: 'Ist das Taktikboard kostenlos?',
@@ -224,7 +259,7 @@ export const TAKTIKBOARD_FAQS: BoardFaqItem[] = [
   {
     question: 'Funktioniert das Taktikboard auf dem Tablet in der Halle?',
     answer:
-      'Dafür ist es gebaut. Alle Magnete und Griffe sind mindestens 44 Pixel groß, es gibt nichts, was nur mit einer Maus erreichbar wäre, und das Board läuft im Hoch- wie im Querformat. Der Browser ist alles, was du brauchst.',
+      'Dafür ist es gebaut. Jeder Greifpunkt ist mindestens 44 Pixel groß, es gibt nichts, was nur mit einer Maus erreichbar wäre, und das Board läuft im Hoch- wie im Querformat. Nummer und Farbe öffnest du per Doppeltipp oder langem Drücken direkt am Magneten. Solange „Verschieben“ eingestellt ist, kannst du die Seite über dem Board ganz normal scrollen – erst beim Zeichnen übernimmt das Feld die Geste.',
   },
   {
     question: 'Warum steht auf dem exportierten Bild „statix-app.de“?',

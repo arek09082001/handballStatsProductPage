@@ -22,7 +22,7 @@ export default function TaktikboardHeader() {
       />
       <Grain tone='court' />
 
-      <div className='relative mx-auto w-full max-w-7xl px-4 pb-16 pt-24 sm:px-8 lg:pb-24 lg:pt-28'>
+      <div className='relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-8 lg:pb-24 lg:pt-24'>
         <div className='max-w-2xl'>
           <BoardKicker color='chalk'>Kostenloses Werkzeug</BoardKicker>
 
@@ -42,7 +42,7 @@ export default function TaktikboardHeader() {
           </p>
         </div>
 
-        <div className='mt-9 lg:mt-11'>
+        <div className='mt-6 lg:mt-10'>
           <TaktikboardTool />
         </div>
       </div>

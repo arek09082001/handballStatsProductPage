@@ -73,3 +73,13 @@ export type BoardSelection =
 
 /** Which grab handle of an arrow a pointer is dragging. */
 export type ArrowHandle = 'start' | 'control' | 'end';
+
+/**
+ * What a drag on the empty court does.
+ *
+ * A mode switch rather than a clever gesture, because the board has to behave
+ * the same under a finger and under a mouse: in `move` the court keeps its
+ * native scrolling so a phone can scroll past the board, in `arrow` and `note`
+ * it swallows the gesture and draws.
+ */
+export type BoardMode = 'move' | 'arrow' | 'note';
