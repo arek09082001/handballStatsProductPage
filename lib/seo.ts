@@ -297,7 +297,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Was kostet Statix?',
         answer:
-            'Du startest kostenlos: Probiere zuerst die Live-Demo ohne Account aus und erfasse dann dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es faire Abos – trag dich in den Newsletter ein und sichere dir das exklusive Launch-Angebot.',
+            'Du startest kostenlos: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus. Für ganze Teams und Vereine gibt es faire, planbare Abos.',
     },
     {
         question: 'Wer steckt hinter Statix?',

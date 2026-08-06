@@ -1,23 +1,15 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Play } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { gsap } from '@/lib/gsap-config';
-import { trackDemoClick } from '@/lib/analytics';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from './hero-action-button';
 import DemoPreview from './demo-preview';
 import { BoardKicker, CourtDiagram, Grain, MarkerArrow } from './tactic';
 import { drawMarkers } from './tactic/draw';
-
-function scrollToNewsletter() {
-  const target = document.getElementById('newsletter');
-  target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  window.setTimeout(() => {
-    document.getElementById('newsletter-email')?.focus();
-  }, 450);
-}
 
 export default function FinalCTASection() {
   const t = useTranslations('productPage.finalCta');
@@ -82,15 +74,20 @@ export default function FinalCTASection() {
             />
             <HeroActionButton
               variant='primary'
-              icon={<Play className='size-4 fill-current' />}
+              icon={<UserPlus className='size-4' />}
+              href={CLUB_CONFIG.website.appUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => trackRegisterClick('final_cta')}>
+              {t('primaryCta')}
+            </HeroActionButton>
+            <HeroActionButton
+              variant='secondary'
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
               rel='noopener noreferrer'
               onClick={() => trackDemoClick('final_cta')}>
               {t('demoCta')}
-            </HeroActionButton>
-            <HeroActionButton variant='secondary' onClick={scrollToNewsletter}>
-              {t('primaryCta')}
             </HeroActionButton>
           </div>
 
@@ -99,7 +96,7 @@ export default function FinalCTASection() {
 
         <div className='relative'>
           <DemoPreview
-            url={CLUB_CONFIG.website.demoUrlWithoutProtocol}
+            url={CLUB_CONFIG.website.appUrlWithoutProtocol}
             liveLabel={t('previewLabel')}
           />
         </div>

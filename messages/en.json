@@ -7,6 +7,7 @@
       "contact": "Contact"
     },
     "product": {
+      "register": "Register for free",
       "demo": "Live demo",
       "features": "All features",
       "aboutStatix": "What is Statix?",
@@ -225,10 +226,10 @@
       "tournament": "Tournament",
       "liveTicker": "Live ticker",
       "faq": "FAQ",
-      "contact": "Contact",
+      "demo": "Live demo",
       "impressum": "Legal"
     },
-    "demoCta": "Try the demo",
+    "registerCta": "Register now",
     "languageSwitcher": {
       "label": "Switch language",
       "switchToGerman": "Switch to German",
@@ -720,10 +721,10 @@
       "headlineLead": "Record handball stats",
       "headlineHighlight": "live",
       "headlineTail": "– one tap, right from the bench.",
-      "description": "Goals, shots, saves, suspensions – every action is one tap. Statix automatically turns it into shooting percentages, shot maps and player stats, offline in the gym. Start with the live demo full of real game data – no account needed.",
-      "primaryCta": "Try the live demo",
-      "secondaryCta": "Explore features",
-      "trust1": "Demo with real game data",
+      "description": "Goals, shots, saves, suspensions – every action is one tap. Statix automatically turns it into shooting percentages, shot maps and player stats, offline in the gym. Statix is live: register for free and try it with your own team.",
+      "primaryCta": "Register now",
+      "secondaryCta": "Watch the live demo",
+      "trust1": "Ready to go in minutes",
       "trust2": "Free to start – no credit card",
       "trust3": "Works offline in the gym"
     },
@@ -1128,8 +1129,8 @@
     "pros": {
       "kicker": "Beyond the scoresheet",
       "title": "Handball statistics instead of pen and napkin",
-      "description": "Show your coach in two minutes what gets lost on a notepad: open the live demo in the gym – a real game, real numbers, a finished analysis.",
-      "cta": "Open the demo & show your coach",
+      "description": "Show your coach in two minutes what gets lost on a notepad: register for free and track your first game – a real game, real numbers, a finished analysis.",
+      "cta": "Register & try it yourself",
       "oldTitle": "Pen & paper",
       "oldPoints": [
         "Numbers nobody analyses after the game",
@@ -1207,7 +1208,7 @@
         },
         {
           "question": "How much does Statix cost?",
-          "answer": "You start for free: try the live demo without an account first, then track your first game with no commitment and no credit card. Fair plans are available for full teams and clubs – join the newsletter to secure the exclusive launch offer."
+          "answer": "You start for free: register at app.statix-app.de and track your first game with no commitment and no credit card. Want to look around first? The live demo runs without an account. Fair, predictable plans are available for full teams and clubs."
         },
         {
           "question": "Who is behind Statix?",
@@ -1216,15 +1217,15 @@
       ]
     },
     "newsletter": {
-      "kicker": "Launch offer",
-      "title": "Secure the launch offer for your team",
-      "description": "Statix launches officially soon. Sign up to get the exclusive launch offer for clubs, new features first and practical tips on game analysis – straight from the developer.",
+      "kicker": "Newsletter",
+      "title": "Stay in the loop – news from the gym",
+      "description": "Statix has launched and keeps growing. Sign up to get new features first, offers for clubs and practical tips on game analysis – straight from the developer.",
       "placeholder": "Your email address",
-      "button": "Get the launch offer",
+      "button": "Subscribe to the newsletter",
       "pending": "Sending…",
       "benefits": [
-        "Exclusive launch offer for clubs",
         "New features first",
+        "Offers for teams and clubs",
         "Practical tips on game analysis"
       ],
       "privacyPrefix": "I accept the",
@@ -1240,7 +1241,7 @@
     "contact": {
       "kicker": "Say hello",
       "title": "Get in touch – we're here for you",
-      "description": "Questions about Statix, want to sign up your team or club, or have feedback? Send us a message and we'll get back to you personally as soon as possible.",
+      "description": "Questions about Statix, need a hand getting your team or club started, or have feedback? Send us a message and we'll get back to you personally as soon as possible.",
       "namePlaceholder": "Your name",
       "emailPlaceholder": "Your email address",
       "topicPlaceholder": "What's it about?",
@@ -1258,12 +1259,12 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "finalCta": {
-      "title": "Try handball statistics live now – with real game data",
-      "description": "Click through a fully tracked game: live stats, shot maps, AI analysis. Right in your browser, no account needed.",
-      "primaryCta": "Get the launch offer",
+      "title": "Register now and try Statix for yourself",
+      "description": "Statix is here: create your account, add your team and track your first game live – with live stats, shot maps and AI analysis. Right in your browser, free to start.",
+      "primaryCta": "Register for free",
       "note": "Runs right in your browser – on a tablet at the sideline just as well as on a laptop for the debrief.",
-      "badge": "Live demo · no sign-up required",
-      "demoCta": "Open live demo",
+      "badge": "Statix is live · free to start",
+      "demoCta": "Watch the live demo",
       "previewLabel": "Live tracking"
     }
   },

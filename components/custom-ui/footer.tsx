@@ -4,14 +4,31 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Mail, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { trackDemoClick } from '@/lib/analytics';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 
 export default function Footer() {
   const t = useTranslations('footerSection');
 
-  const productLinks: { href: string; label: string; external?: boolean }[] = [
-    { href: CLUB_CONFIG.website.demoUrl, label: t('product.demo'), external: true },
+  const productLinks: {
+    href: string;
+    label: string;
+    external?: boolean;
+    /** Which conversion event the external click reports. */
+    onExternalClick?: () => void;
+  }[] = [
+    {
+      href: CLUB_CONFIG.website.appUrl,
+      label: t('product.register'),
+      external: true,
+      onExternalClick: () => trackRegisterClick('footer'),
+    },
+    {
+      href: CLUB_CONFIG.website.demoUrl,
+      label: t('product.demo'),
+      external: true,
+      onExternalClick: () => trackDemoClick('footer'),
+    },
     { href: '/#all-features', label: t('product.features') },
     { href: '/was-ist-statix', label: t('product.aboutStatix') },
     { href: '/#liveticker', label: t('product.liveTicker') },
@@ -57,7 +74,7 @@ export default function Footer() {
                   title={item.label}
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
-                  onClick={item.external ? () => trackDemoClick('footer') : undefined}
+                  onClick={item.onExternalClick}
                   className='block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                   {item.label}
                 </Link>
