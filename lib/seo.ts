@@ -6,8 +6,28 @@ export const SITE_URL = (
 ).replace(/\/$/, '');
 
 export const SITE_NAME = CLUB_CONFIG.fullName;
+
+/** Purpose-built social card. Measured: 1200×630 PNG. */
 export const DEFAULT_OG_IMAGE = '/defaultOgImage.png';
 
+/** Real pixel size of `DEFAULT_OG_IMAGE` – keep in sync with the file. */
+export const DEFAULT_OG_IMAGE_SIZE = { width: 1200, height: 630 } as const;
+
+/**
+ * Home page title, keyword first and brand last: "Statix" means nothing to
+ * someone who has never heard of it, so the first 30 characters – the part a
+ * SERP actually shows – go to what the app is and who it is for. It already
+ * ends in the brand, so pages using it must pass `absoluteTitle: true` to keep
+ * the layout template from appending "| Statix" a second time. 58 characters.
+ */
+export const HOME_TITLE =
+    'Handball-Statistik-App für Trainer – live erfassen | Statix';
+
+/**
+ * Keyword sets kept for machine-readable surfaces only: the
+ * `SoftwareApplication` schema and `/llms.txt`. They are deliberately not
+ * rendered as a `<meta name="keywords">` tag – see `createPageMetadata`.
+ */
 export const SEO_KEYWORDS = Array.from(
     new Set([
         ...CLUB_CONFIG.seo.keywords,
@@ -300,6 +320,13 @@ type CreatePageMetadataArgs = {
     title: string;
     description: string;
     path?: string;
+    /**
+     * Documentation only – the search intents a page is written for. It is
+     * deliberately NOT emitted as a `<meta name="keywords">` tag: Google has
+     * ignored that tag since 2009 and a 2 KB list repeated on every page reads
+     * as spam to a human reviewer. Keep it filled in – it is the cheapest place
+     * to record what a page is supposed to rank for.
+     */
     keywords?: string[];
     imagePath?: string;
     noIndex?: boolean;
@@ -332,7 +359,6 @@ export function createPageMetadata({
     title,
     description,
     path = '/',
-    keywords = [],
     imagePath = DEFAULT_OG_IMAGE,
     noIndex = false,
     absoluteTitle = false,
@@ -341,14 +367,20 @@ export function createPageMetadata({
 }: CreatePageMetadataArgs): Metadata {
     const canonical = absoluteUrl(path);
     const imageUrl = absoluteUrl(imagePath);
-    const combinedKeywords = Array.from(new Set([...SEO_KEYWORDS, ...keywords]));
 
+    // Titles that already carry the brand (home page, "Was ist Statix?") must
+    // not get a second "| Statix" glued to the image alt.
+    const imageAlt = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+
+    // Only the purpose-built card has a measured size. For any other image we
+    // stay silent instead of declaring dimensions we have not verified –
+    // scrapers read the real file anyway, and a wrong `og:image:width` makes
+    // previews crop badly.
     const ogImages = [
         {
             url: imageUrl,
-            width: 1200,
-            height: 630,
-            alt: `${title} | ${SITE_NAME}`,
+            ...(imagePath === DEFAULT_OG_IMAGE ? DEFAULT_OG_IMAGE_SIZE : {}),
+            alt: imageAlt,
         },
     ];
 
@@ -381,7 +413,6 @@ export function createPageMetadata({
     return {
         title: absoluteTitle ? { absolute: title } : title,
         description,
-        keywords: combinedKeywords,
         alternates: {
             canonical,
         },
