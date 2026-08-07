@@ -16,13 +16,13 @@ export const handballTorwarttraining: Article = {
     'torwarttraining handball übungen',
     'handball torhüter training',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-06-09',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Ein starker Torwart ist der beste Rückhalt – und trotzdem wird das Torwarttraining oft vernachlässigt. Hier findest du Übungen für Grundtechnik, Reaktion und Wurfabwehr sowie die Formel für die Paradenquote.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Paraden- und Torwartstatistik in der Statix Handball-App',
   body: `Ein guter Torwart ist der beste Rückhalt, den eine Mannschaft haben kann – eine starke Parade zur richtigen Zeit ist oft mehr wert als ein schönes Tor. Trotzdem wird das Torwarttraining in vielen Vereinen stiefmütterlich behandelt: Während die Feldspieler Würfe und Spielzüge üben, steht der Torhüter allein im Kasten und fängt Bälle. Dieser Ratgeber zeigt dir, wie du das Torwarttraining im Handball strukturierst – von der Grundtechnik über die Reaktion bis zur Wurfabwehr nach Zonen.

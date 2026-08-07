@@ -15,13 +15,13 @@ export const handballWelchePositionPasstZuMir: Article = {
     'position wechseln handball',
     'handball rolle finden',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Taktik & Systeme',
+  archetype: 'entscheidung',
   datePublished: '2026-07-17',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Schnelle Beine, wurfstark, spielintelligent oder furchtlos im Getümmel? Jede Handball-Position belohnt einen anderen Spielertyp. Mit diesem Selbstcheck findest du die Rolle, die zu dir passt.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Handballteam in Aufstellung mit allen Spielpositionen',
   body: `„Wo soll ich eigentlich spielen?" – kaum eine Frage beschäftigt junge Handballer (und ihre Trainer) mehr. Die Wahrheit vorweg: Es gibt keinen Test, der dir die perfekte Position ausspuckt, und gerade in der Jugend solltest du möglichst viele Positionen ausprobieren. Aber es gibt klare Anforderungsprofile – und wer seine Stärken ehrlich einschätzt, erkennt schnell, welche Rollen ihm liegen.

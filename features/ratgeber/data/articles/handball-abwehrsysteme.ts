@@ -15,13 +15,13 @@ export const handballAbwehrsysteme: Article = {
     'welche abwehr handball',
     'abwehr handball systeme',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-06-15',
   dateModified: '2026-08-07',
   readingTimeMinutes: 6,
   excerpt:
     'Die Abwehr gewinnt Spiele – aber welches System passt zu deiner Mannschaft? Wir vergleichen 6:0, 5:1 und 3:2:1 mit Stärken, Schwächen und klaren Empfehlungen.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/shotMaps.png',
   imageAlt: 'Wurfbilder und Gegneranalyse in der Statix Handball-App',
   body: `Die Abwehr gewinnt Spiele. Dieser alte Handballsatz stimmt öfter, als es die Torschützenlisten vermuten lassen: Wer hinten kompakt steht, übersteht auch schwache Angriffsphasen und kommt über einfache Ballgewinne zu Tempogegenstößen. Die entscheidende Frage ist nur, welches Abwehrsystem zu deinem Gegner und zu deiner eigenen Mannschaft passt. In diesem Ratgeber vergleichen wir die drei wichtigsten Systeme – 6:0, 5:1 und 3:2:1 – und ordnen ein, wann sich welche Variante lohnt.

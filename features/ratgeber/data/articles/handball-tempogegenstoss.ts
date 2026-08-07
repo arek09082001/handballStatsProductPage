@@ -15,13 +15,13 @@ export const handballTempogegenstoss: Article = {
     'umschaltspiel handball',
     'tempogegenstoß trainieren',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-06-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Der Tempogegenstoß bringt die einfachsten Tore im Handball – mit einer Wurfquote von 85 bis 95 Prozent. Hier lernst du die drei Wellen, die schnelle Mitte und die besten Übungen fürs Umschalten.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Tempogegenstoß und Gegenstoßtore in der Statix Handball-App',
   body: `Kaum eine Situation im Handball bringt so einfache Tore wie der Tempogegenstoß. Wer nach einem Ballgewinn sofort umschaltet und den Gegner vor seiner geordneten Abwehr erwischt, wirft aus kurzer Distanz auf ein oft ungedecktes Tor – mit einer Quote, von der du im Positionsangriff nur träumst. Wer schnell umschaltet, gewinnt am Ende die engen Spiele. In diesem Ratgeber lernst du die drei Wellen und die schnelle Mitte kennen, verstehst, warum Tempospiel so effektiv ist, und bekommst konkrete Übungen für dein Training.

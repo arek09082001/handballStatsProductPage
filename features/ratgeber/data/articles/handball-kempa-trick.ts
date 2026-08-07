@@ -15,13 +15,13 @@ export const handballKempaTrick: Article = {
     'kempa trainieren',
     'spektakuläre handball tricks',
   ],
-  category: 'Technik & Wurf',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-17',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Anspiel in den Kreis, Fangen in der Luft, Abschluss vor der Landung: Der Kempa ist die Königsdisziplin des Handballs. So lernst du Anspiel, Timing und Abschluss Schritt für Schritt.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Handballspieler fängt ein Kempa-Anspiel in der Luft über dem Kreis',
   body: `Kein Spielzug bringt eine Halle so zum Beben wie ein verwandelter Kempa: Der Ball fliegt in den Kreis, ein Spieler steigt hoch, fängt ihn in der Luft und wirft, bevor er den Boden berührt. Benannt ist der Trick nach Bernhard Kempa, der ihn in den 1950er-Jahren berühmt machte. Der Kempa sieht nach Zauberei aus – ist aber ein trainierbarer Spielzug mit klaren Regeln und klarem Aufbau.

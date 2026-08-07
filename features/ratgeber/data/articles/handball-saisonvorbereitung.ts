@@ -16,13 +16,13 @@ export const handballSaisonvorbereitung: Article = {
     'handball vorbereitung phasen',
     'konditionstraining handball',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-05-28',
   dateModified: '2026-08-07',
   readingTimeMinutes: 5,
   excerpt:
     'Die Saisonvorbereitung legt das Fundament für die gesamte Spielzeit. Hier erfährst du, wie du sie in Phasen gliederst, die Kondition handballspezifisch aufbaust und mit einem klaren Wochenplan strukturiert arbeitest.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Spielübersicht und Saisonplanung in der Statix Handball-App',
   body: `Die Saison beginnt nicht mit dem ersten Anpfiff, sondern Wochen vorher – in der Vorbereitung. Was du und dein Team im Sommer an Kondition, Athletik und taktischer Ordnung aufbaut, trägt euch durch die gesamte Spielzeit. Eine planlose Vorbereitung rächt sich dagegen spätestens im Winter mit Formtiefs und Verletzungen. Dieser Ratgeber zeigt dir, wie du die Vorbereitung in Phasen gliederst, die Kondition handballspezifisch aufbaust und mit einem klaren Wochenplan strukturiert arbeitest.

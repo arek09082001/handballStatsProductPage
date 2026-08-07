@@ -15,13 +15,13 @@ export const handballWurfarten: Article = {
     'fallwurf handball',
     'wurfvarianten handball lernen',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-16',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Schlagwurf, Sprungwurf, Heber, Dreher, Hüftwurf, Fallwurf: Jede Wurfart hat ihren Moment. Hier lernst du alle wichtigen Würfe kennen – und wann du welchen einsetzen solltest.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Handballspieler setzt einen Heber gegen den herauslaufenden Torwart',
   body: `Torhüter lieben berechenbare Werfer: immer derselbe Wurf, immer dieselbe Ecke. Wer dagegen mehrere Wurfarten beherrscht, bleibt bis zum letzten Moment unlesbar – und macht aus halben Chancen Tore. Dieser Ratgeber gibt dir den Überblick über die wichtigsten Würfe im Handball, ihre Einsatzmomente und den Weg, sie zu lernen.

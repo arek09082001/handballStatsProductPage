@@ -15,13 +15,13 @@ export const handballAlleineTrainieren: Article = {
     'wurftraining wand',
     'handball heimtraining',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-17',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Zwei Mannschaftstrainings pro Woche reichen dir nicht? Mit Ball, Wand und ein paar Quadratmetern kannst du Ballgefühl, Wurf und Athletik alleine deutlich verbessern – so geht es.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/heroImage.png',
   imageAlt: 'Handballspieler trainiert Ballhandling alleine mit zwei Bällen',
   body: `Der Unterschied zwischen guten und sehr guten Handballern entsteht selten im Mannschaftstraining – dort bekommen alle dieselben Reize. Er entsteht in den Stunden dazwischen. Die gute Nachricht: Für viele der wichtigsten Fähigkeiten brauchst du weder Halle noch Mitspieler. Dieser Ratgeber zeigt dir, was du alleine trainieren kannst und wie du dein Heimtraining sinnvoll aufbaust.

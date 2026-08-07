@@ -17,13 +17,13 @@ export const handballRegelnEinfachErklaert: Article = {
     'handball torraum',
     'zeitstrafe handball',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Regelwissen',
+  archetype: 'referenz',
   datePublished: '2026-03-24',
   dateModified: '2026-08-07',
   readingTimeMinutes: 5,
   excerpt:
     'Ziel des Spiels, Spielzeit, Schritte, Torraum und Strafen: Hier bekommst du die wichtigsten Handball-Regeln einfach erklärt – kompakt genug, um jedes Spiel sofort zu verstehen.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/heroImage.png',
   imageAlt: 'Handball-Spielszene mit den wichtigsten Regeln im Überblick',
   body: `Handball wirkt auf den ersten Blick schnell und wuselig – doch die Grundregeln sind überschaubarer, als viele denken. Wenn du die wichtigsten Basics kennst, verstehst du jedes Spiel: als Einsteiger, als frischgebackener Trainer oder als Elternteil am Hallenrand. In diesem Ratgeber bekommst du die zentralen Handball-Regeln einfach erklärt – von Ziel und Spielfeld über Spielzeit, Ballführung und Torraum bis zu den Strafen. Danach kannst du dem Geschehen mühelos folgen.

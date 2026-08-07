@@ -15,13 +15,13 @@ export const handballTorwartTipps: Article = {
     'handball torwart mentaltraining',
     'torwart tricks handball',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-15',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Als Torwart kannst du ein Spiel im Alleingang entscheiden. Diese Tipps zu Stellungsspiel, Grundstellung, Antizipation und Mentalität helfen dir, konstant mehr Bälle zu halten.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballtorwart in Grundstellung kurz vor einer Parade',
   body: `Der Torwart ist die wichtigste Position im Handball: Eine Paradenquote von 30 statt 25 Prozent macht über ein Spiel schnell drei, vier Tore aus – oft genau der Unterschied zwischen Sieg und Niederlage. Die gute Nachricht: Torwartspiel ist lernbar. Hier sind die wichtigsten Tipps, mit denen du als Torhüter mehr Bälle hältst.

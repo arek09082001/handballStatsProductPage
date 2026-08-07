@@ -15,13 +15,13 @@ export const handballRegeneration: Article = {
     'schlaf leistung sport',
     'aktive erholung handball',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-17',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Besser wirst du nicht im Training, sondern in der Erholung danach. Wie Schlaf, Ernährung und aktive Regeneration deine Leistung sichern – und Verletzungen verhindern.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Handballspieler bei lockerem Auslaufen zur Regeneration',
   body: `Training setzt den Reiz – aber stärker wirst du erst in der Erholung danach. Wer Woche für Woche Training, Spiel und Alltag stapelt, ohne die Regeneration ernst zu nehmen, spielt irgendwann müde, wird langsamer statt schneller und landet häufiger im Verletzungsprotokoll. Dieser Ratgeber zeigt, wie Erholung im Handball funktioniert und welche Methoden wirklich etwas bringen.

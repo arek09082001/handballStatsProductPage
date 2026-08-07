@@ -16,13 +16,13 @@ export const handballStatistikFuehren: Article = {
     'paradenquote handball',
     'handball statistik app',
   ],
-  category: 'Statistik & Kennzahlen',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-05-12',
   dateModified: '2026-08-07',
   readingTimeMinutes: 5,
   excerpt:
     'Tore zählen kann jeder – aber welche Kennzahlen bringen dich wirklich weiter? Ein praktischer Überblick über die wichtigsten Werte, offensiv wie defensiv, und wie du stressfrei damit startest.',
-  heroEyebrow: 'Statistik & Kennzahlen',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Live-Erfassung von Handball-Kennzahlen per Tap in der Statix-App',
   body: `Viele Trainer zählen am Spielfeldrand Tore mit – und hören da schon wieder auf. Dabei ist eine saubere Handball-Statistik weit mehr als eine Strichliste: Sie zeigt dir, was auf dem Feld wirklich passiert, macht Entwicklung über die Saison sichtbar und nimmt dem reinen Bauchgefühl die wichtigen Entscheidungen ab. In diesem Ratgeber erfährst du, welche Kennzahlen wirklich zählen, wie du Offensive und Defensive gleichermaßen im Blick behältst und wie du mit drei bis fünf Werten stressfrei anfängst – ohne dich am Spieltag zu verzetteln.

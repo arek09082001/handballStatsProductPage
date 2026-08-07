@@ -15,13 +15,13 @@ export const handballKreuzenStossen: Article = {
     'lücke schaffen handball',
     'handball angriffsbewegungen',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-05',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Ohne Stoßbewegung und Kreuzung steht jeder Angriff still. Hier lernst du die beiden wichtigsten Grundbewegungen des Handballangriffs kennen – und wie du mit ihnen Lücken erzeugst.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/shotMaps.png',
   imageAlt: 'Rückraumspieler beim Kreuzen im Handballangriff',
   body: `Viele Angriffe scheitern nicht an fehlender Wurfkraft, sondern daran, dass der Rückraum die Abwehr nie wirklich in Bewegung bringt. Genau dafür gibt es zwei Grundbewegungen, die jeder Handballer beherrschen sollte: das Stoßen und das Kreuzen. Sie sind die Bausteine fast jedes Angriffssystems. In diesem Ratgeber lernst du beide Bewegungen kennen und erfährst, wie du mit ihnen gezielt Lücken erzeugst.

@@ -15,13 +15,13 @@ export const wurfquoteBerechnen: Article = {
     'wurfquote nach position handball',
     'torquote handball',
   ],
-  category: 'Statistik & Kennzahlen',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-06-02',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die Wurfquote ist die wichtigste Basiskennzahl im Handball. Hier findest du die Formel, ein Rechenbeispiel, Richtwerte nach Position – und die Fallstricke, die du kennen solltest.',
-  heroEyebrow: 'Statistik & Kennzahlen',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Wurfquoten und Spielerstatistiken in der Statix Handball-App',
   body: `Die Wurfquote ist die erste Zahl, auf die fast jeder Handballtrainer schaut. Sie sagt in einem einzigen Prozentwert, wie effizient ein Spieler oder eine Mannschaft abschließt. In diesem Ratgeber lernst du die Formel, rechnest ein Beispiel durch, bekommst Richtwerte nach Position – und erfährst, warum die reine Quote allein trügerisch sein kann.

@@ -17,13 +17,13 @@ export const handballKonditionVerbessern: Article = {
     'handballspezifische ausdauer',
     'kondition im handball',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-05-19',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Handball ist eine intermittierende Sportart – reine Ausdauer reicht nicht. Hier erfährst du, wie du Kondition, Schnelligkeit und Athletik handballspezifisch aufbaust, inklusive Beispiel-Wochenplan.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/heroImage.png',
   imageAlt: 'Athletik- und Konditionstraining im Handball',
   body: `Handball ist kein Dauerlauf. Ein Spiel besteht aus kurzen, intensiven Aktionen – Sprints, Sprüngen, Zweikämpfen – unterbrochen von kurzen Pausen. Genau darauf muss deine Kondition ausgerichtet sein. Wer nur lange, gleichmäßige Runden dreht, trainiert am Spiel vorbei. In diesem Ratgeber erfährst du, wie du Ausdauer, Schnelligkeit, Kraft und Athletik handballspezifisch aufbaust – mit klaren Schwerpunkten und einem Beispiel-Wochenplan.

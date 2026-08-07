@@ -15,13 +15,13 @@ export const handballSchnelligkeitVerbessern: Article = {
     'reaktionsschnelligkeit handball',
     'handball schneller werden',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-12',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Der erste Schritt entscheidet: Hier bekommst du gezielte Übungen für Antritt, Sprint, Reaktion und Wendigkeit – damit deine Spieler den Tempogegenstoß und den Zweikampf gewinnen.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballspieler beim explosiven Antritt zum Tempogegenstoß',
   body: `Im Handball entscheidet oft der erste Schritt: Wer schneller antritt, ist beim Tempogegenstoß vorn, setzt sich im Eins-gegen-eins durch und ist in der Abwehr rechtzeitig am Gegner. Schnelligkeit ist dabei mehr als reines Sprinten – sie besteht aus Antritt, Reaktion und Wendigkeit. In diesem Ratgeber erfährst du, wie du alle drei gezielt verbesserst.

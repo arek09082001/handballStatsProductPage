@@ -15,13 +15,13 @@ export const handballTrainingslagerPlanen: Article = {
     'trainingslager organisieren',
     'mannschaft trainingslager',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Ein Trainingslager kann eine Saison prägen – sportlich und menschlich. Von den Zielen über den Tagesablauf bis zur Belastungssteuerung: So planst du ein Camp, das wirklich etwas bringt.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/saison-uebersicht-kennzahlen.jpg',
   imageAlt: 'Spieleliste in Statix, mit der sich Testspiele und Saisonstart vergleichen lassen',
   body: `Ein Trainingslager ist mehr als ein paar Tage intensiver Sport. Es ist die seltene Gelegenheit, ungestört an großen Themen zu arbeiten, den Kader zusammenzuschweißen und mit einem gemeinsamen Erlebnis in die Saison zu starten. Genau deshalb entscheidet die Planung darüber, ob das Camp die Mannschaft nach vorne bringt oder nur müde macht.

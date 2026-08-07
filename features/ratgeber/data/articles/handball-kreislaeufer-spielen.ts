@@ -15,13 +15,13 @@ export const handballKreislaeuferSpielen: Article = {
     'handball kreis spielen',
     'kreisanspiel handball',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Taktik & Systeme',
+  archetype: 'referenz',
   datePublished: '2026-07-08',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Der Kreisläufer arbeitet im härtesten Bereich des Feldes. Hier erfährst du seine Aufgaben, die wichtigste Technik für Sperren und Anspiele und worauf es auf der Position wirklich ankommt.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/shotMaps.png',
   imageAlt: 'Kreisläufer setzt eine Sperre in der gegnerischen Abwehr',
   body: `Der Kreisläufer ist der Arbeiter im Zentrum: Er spielt mit dem Rücken zum Tor, mitten in der gegnerischen Abwehr, wird gestoßen und gehalten – und ist trotzdem oft der Schlüssel zum erfolgreichen Angriff. Wer diese Position verstehen und spielen will, braucht mehr als Kraft. In diesem Ratgeber erfährst du, welche Aufgaben der Kreisläufer hat, welche Technik er beherrschen muss und worauf es wirklich ankommt.

@@ -15,13 +15,13 @@ export const handballStemmschrittDreierrhythmus: Article = {
     'wurfrhythmus lernen',
     'stemmbein wurf',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Ein harter Wurf beginnt nicht im Arm, sondern in den Beinen. Der Dreierrhythmus mit sauberem Stemmschritt bringt Schwung in Kraft – so lernst und lehrst du den Anlauf richtig.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Handballspieler im Stemmschritt kurz vor dem Schlagwurf',
   body: `Viele glauben, Wurfkraft käme aus dem Arm. Tatsächlich entsteht ein harter Wurf in den Beinen und im Rumpf – der Arm überträgt nur, was der Körper vorher aufgebaut hat. Das Bindeglied ist der Anlauf: der Dreierrhythmus mit dem entscheidenden Stemmschritt. Wer ihn beherrscht, wirft härter, präziser und verletzungsärmer. Wer ihn vernachlässigt, bleibt beim reinen Armwurf stecken.

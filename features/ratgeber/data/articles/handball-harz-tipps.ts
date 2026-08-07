@@ -15,13 +15,13 @@ export const handballHarzTipps: Article = {
     'harz verbot halle',
     'backmittel handball',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Regelwissen',
+  archetype: 'referenz',
   datePublished: '2026-07-15',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Harz gehört für viele zum Handball wie der Sprungwurf – aber wie viel ist sinnvoll, was ist erlaubt und wie bekommt man das Zeug wieder ab? Alles Wichtige zum Umgang mit Handballharz.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/heroImage.png',
   imageAlt: 'Handball mit Harz auf den Fingerkuppen eines Spielers',
   body: `Wer zum ersten Mal mit Harz spielt, versteht sofort, warum so viele Handballer nicht mehr darauf verzichten wollen: Der Ball klebt an der Hand, Einhandfangen, Dreher und Anspiele an den Kreis werden plötzlich viel leichter. Gleichzeitig sorgt kaum ein Thema in Vereinen und Hallen für so viel Diskussion. In diesem Ratgeber erfährst du, wofür Harz gut ist, welche Regeln gelten und wie du richtig damit umgehst.

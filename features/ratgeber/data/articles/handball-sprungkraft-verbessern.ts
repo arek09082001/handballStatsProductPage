@@ -15,13 +15,13 @@ export const handballSprungkraftVerbessern: Article = {
     'sprungkraft übungen',
     'handball absprung trainieren',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-13',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Höhere Sprungwürfe, gefährlichere Abschlüsse: Hier bekommst du die wirksamsten Übungen für mehr Sprungkraft im Handball – von Plyometrie bis Technik, mit klarem Trainingsplan.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/shotMaps.png',
   imageAlt: 'Handballspieler beim hohen Sprungwurf über die Abwehr',
   body: `Ein hoher, kontrollierter Sprungwurf verschafft dir bessere Wurfwinkel, mehr Zeit in der Luft und schwerere Abschlüsse für den Torwart. Sprungkraft ist dabei kein reines Talent, sondern gezielt trainierbar. In diesem Ratgeber erfährst du, woraus Sprungkraft entsteht, welche Übungen wirklich wirken und wie du sie sicher in dein Handballtraining einbaust.

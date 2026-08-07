@@ -15,13 +15,13 @@ export const handballSchlagwurfTechnik: Article = {
     'schlagwurf bewegungsablauf',
     'handball werfen lernen',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-02',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Der Schlagwurf ist der wichtigste Grundwurf im Handball. Hier lernst du den kompletten Bewegungsablauf, die richtige Schrittfolge und die typischen Fehler – mit Übungen zum Nachtrainieren.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Handballspieler beim Schlagwurf mit Ausholbewegung',
   body: `Der Schlagwurf ist der Grundwurf des Handballs: Aus ihm entwickeln sich Sprungwurf, Kernwurf und viele weitere Varianten. Wer den Schlagwurf sauber beherrscht, wirft härter, präziser und verletzungsärmer. Gerade im Nachwuchs ist er die Basis jeder Wurfausbildung. In diesem Ratgeber lernst du den kompletten Bewegungsablauf, die richtige Schrittfolge und die häufigsten Fehler kennen.

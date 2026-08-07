@@ -15,13 +15,13 @@ export const handballLinkshaender: Article = {
     'linkshänder vorteil handball',
     'seltene linkshänder handball',
   ],
-  category: 'Technik & Wurf',
+  category: 'Taktik & Systeme',
+  archetype: 'entscheidung',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Linkshänder sind im Handball heiß begehrt – auf der rechten Seite verwandeln sie Winkel, die Rechtshänder nur mühsam erreichen. Warum das so ist und wie Linkshänder ihre Stärken ausbauen.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Linkshänder-Handballspieler wirft von der rechten Angriffsseite aufs Tor',
   body: `In kaum einer Sportart sind Linkshänder so gefragt wie im Handball. Jeder Trainer kennt das Problem: Die rechte Angriffsseite bleibt schwach besetzt, weil geeignete Linkshänder fehlen. Wer mit links wirft, hat auf dieser Seite einen natürlichen Vorteil, den kein noch so gut trainierter Rechtshänder ganz aufholt. Das macht Linkshänder auf dem Transfermarkt und im Jugendbereich zu gesuchten Spielern.

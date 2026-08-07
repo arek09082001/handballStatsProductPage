@@ -15,13 +15,13 @@ export const handballKrafttraining: Article = {
     'handball kraft übungen',
     'wurfkraft verbessern',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-14',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Mehr Wurfkraft, stabilere Zweikämpfe und weniger Verletzungen: Hier bekommst du die Grundlagen des Krafttrainings im Handball mit konkreten Übungen und einem einfachen Wochenplan.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballspieler im Athletik- und Krafttraining',
   body: `Wer im Handball härter wirft, Zweikämpfe gewinnt und die ganze Saison gesund bleibt, hat fast immer solide gearbeitet – im Kraftraum und auf der Matte. Krafttraining ist längst kein Bodybuilding mehr, sondern gezielte Athletikarbeit für Wurf, Sprung, Antritt und Stabilität. In diesem Ratgeber bekommst du die wichtigsten Grundlagen, konkrete Übungen für jede Körperregion und einen einfachen Wochenplan, den du direkt umsetzen kannst.

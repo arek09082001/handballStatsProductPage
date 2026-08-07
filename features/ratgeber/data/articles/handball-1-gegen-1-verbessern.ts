@@ -15,13 +15,13 @@ export const handball1Gegen1Verbessern: Article = {
     '1 gegen 1 verbessern handball',
     'handball offensiv zweikampf',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-15',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Das 1 gegen 1 entscheidet Spiele: Wer sich im direkten Duell durchsetzt, schafft Tore, Siebenmeter und freie Mitspieler. Hier erfährst du, woraus ein starkes Eins-gegen-eins besteht und wie du es Schritt für Schritt verbesserst.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Handballspieler im Eins-gegen-eins gegen einen Abwehrspieler',
   body: `Kaum eine Fähigkeit macht einen Handballer so wertvoll wie ein starkes 1 gegen 1. Wer seinen Gegenspieler schlagen kann, erzeugt Überzahl: Entweder ist der Weg zum Tor frei, oder ein zweiter Verteidiger muss aushelfen – und genau dann steht ein Mitspieler frei. In diesem Ratgeber schauen wir uns an, was ein gutes Eins-gegen-eins ausmacht und mit welchen Übungen du es gezielt verbesserst.

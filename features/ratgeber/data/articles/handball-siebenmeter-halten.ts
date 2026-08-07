@@ -15,13 +15,13 @@ export const handballSiebenmeterHalten: Article = {
     'strafwurf halten',
     'siebenmeterquote torwart',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-15',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Beim Siebenmeter scheint alles für den Werfer zu sprechen – doch gute Torhüter machen aus dem Strafwurf ein echtes Duell. So liest du Anlauf, Wurfarm und Muster und gewinnst das Nervenspiel.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Handballtorwart im Siebenmeter-Duell gegen einen Werfer',
   body: `Rein statistisch ist der Siebenmeter ein ungleiches Duell: Rund drei Viertel aller Strafwürfe landen im Tor. Aber genau deshalb ist jeder gehaltene Siebenmeter so wertvoll – er bringt nicht nur den verhinderten Gegentreffer, sondern einen spürbaren Momentum-Schub für die ganze Mannschaft. Und anders als es aussieht, ist das Halten von Siebenmetern kein Glücksspiel, sondern Handwerk.

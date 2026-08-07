@@ -15,13 +15,13 @@ export const handballManndeckung: Article = {
     'abwehr umstellen handball',
     'manndeckung schlussphase',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-07',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die Manndeckung ist die schärfste Waffe im Abwehrarsenal. Hier erfährst du, wann sie sich lohnt, welche Varianten es gibt und wie du sie mit deinem Team einstudierst.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Handball-Abwehr in offensiver Manndeckung',
   body: `Die Manndeckung ist die aggressivste Form der Abwehr: Jeder verteidigt seinen direkten Gegenspieler über das ganze Feld oder in der eigenen Hälfte. Sie ist riskant, aber in den richtigen Momenten spielentscheidend – etwa, wenn du einen Rückstand aufholen oder einen überragenden Gegenspieler aus dem Spiel nehmen musst. In diesem Ratgeber erfährst du, wann sich die Manndeckung lohnt, welche Varianten es gibt und wie du sie trainierst.

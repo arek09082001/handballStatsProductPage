@@ -15,13 +15,13 @@ export const handball60Abwehr: Article = {
     'handball defensive system',
     '6:0 verteidigen lernen',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die 6:0 ist die meistgespielte Abwehr im Handball – eine kompakte Wand vor dem Kreis. Wie sie aufgebaut ist, wer welche Aufgabe hat und wie ihr sie zusammen zum Leben erweckt.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/live-spielstatistik-spielertabelle.jpg',
   imageAlt: 'Live-Statistik in Statix mit Blocks, Ballgewinnen und dem Wurfbild des Gegners',
   body: `Wenn Handballmannschaften an einer Abwehr feilen, ist es meistens die 6:0. Sie ist die Grundform der Verteidigung: sechs Spieler in einer Reihe am Kreis, eine kompakte Wand vor dem eigenen Tor. Sie ist leicht zu verstehen, schwer zu überwinden und die ideale Basis, von der aus Mannschaften später offensivere Systeme lernen. Wer die 6:0 wirklich beherrscht, hat das Fundament jeder guten Defensive.

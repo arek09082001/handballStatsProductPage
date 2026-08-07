@@ -15,13 +15,13 @@ export const handballTeambuildingUebungen: Article = {
     'gruppendynamik handball',
     'zusammenhalt handball mannschaft',
   ],
-  category: 'Mannschaft & Mentales',
+  category: 'Team & Führung',
+  archetype: 'rezept',
   datePublished: '2026-06-04',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Enge Spiele entscheidet das bessere Wir. Hier findest du praxiserprobte Teambuilding-Übungen und Rituale, die Vertrauen, Kommunikation und Zusammenhalt in deiner Mannschaft stärken – in der Halle und daneben.',
-  heroEyebrow: 'Mannschaft & Mentales',
   imagePath: '/mannschaft-spielerwerte.jpg',
   imageAlt: 'Kaderübersicht in Statix mit den Saisonwerten aller Spielerinnen und Spieler',
   body: `Handball gewinnt man selten allein. Auch der beste Rückraumschütze braucht den Block, der ihm den Weg freiräumt, den Kreisläufer, der die Lücke reißt, und den Torwart, der hinten den Rücken freihält. In engen Spielen, in denen wenige Tore entscheiden, macht am Ende fast immer das bessere "Wir" den Unterschied. Genau dieses Wir kannst du gezielt formen. In diesem Ratgeber bekommst du praxiserprobte Teambuilding-Übungen, Rituale und Denkanstöße, mit denen du Zusammenhalt und Kommunikation in deiner Mannschaft Schritt für Schritt aufbaust.

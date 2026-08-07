@@ -16,13 +16,13 @@ export const handballAufwaermenUebungen: Article = {
     'handball warm up übungen',
     'aufwärmen handball training',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-04-06',
   dateModified: '2026-08-07',
   readingTimeMinutes: 5,
   excerpt:
     'Ein gutes Aufwärmen bringt Körper und Kopf auf Betriebstemperatur, steigert die Leistung und schützt vor Verletzungen. Hier findest du die besten Aufwärmübungen, den Ablauf in drei Phasen und ein fertiges 15-Minuten-Programm für Training und Spiel.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/heroImage.png',
   imageAlt: 'Handballteam beim Aufwärmen vor dem Spiel in der Halle',
   body: `Ob dein Team von der ersten Minute an präsent ist oder verhalten in die Partie stolpert, entscheidet sich oft schon vor dem Anpfiff – beim Aufwärmen. Ein gutes Warm-up bringt Puls, Muskulatur und Kopf auf Betriebstemperatur, verbessert die Leistungsbereitschaft und senkt das Verletzungsrisiko spürbar. In diesem Ratgeber bekommst du die wichtigsten Aufwärmübungen für Handball, den logischen Ablauf in drei Phasen und ein fertiges 15-Minuten-Programm zum Mitnehmen.

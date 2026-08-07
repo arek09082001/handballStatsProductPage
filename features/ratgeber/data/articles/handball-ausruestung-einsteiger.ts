@@ -15,13 +15,13 @@ export const handballAusruestungEinsteiger: Article = {
     'hallenschuhe handball',
     'was braucht man für handball',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Regelwissen',
+  archetype: 'referenz',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Für den Handball-Einstieg brauchst du weniger, als du denkst – aber das Richtige. Von Hallenschuhen über die passende Ballgröße bis zu sinnvollem Schutz: der Überblick für Anfänger.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/heroImage.png',
   imageAlt: 'Handball-Ausrüstung mit Hallenschuhen, Ball und Trikot',
   body: `Handball ist ein günstiger Einstiegssport: Ball, Hallenschuhe, Sportkleidung – viel mehr braucht es zu Beginn nicht. Trotzdem lohnt es sich, von Anfang an das Richtige zu wählen, vor allem bei den Schuhen und beim Ball. Die falsche Ballgröße oder rutschige Schuhe machen den Start unnötig schwer und erhöhen sogar das Verletzungsrisiko. Hier kommt der ehrliche Überblick für Einsteiger.

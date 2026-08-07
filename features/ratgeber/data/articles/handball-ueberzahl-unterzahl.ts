@@ -15,13 +15,13 @@ export const handballUeberzahlUnterzahl: Article = {
     '7 gegen 6 handball',
     'powerplay handball',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Jede Zeitstrafe verschiebt das Kräfteverhältnis für zwei Minuten. Wer Über- und Unterzahl beherrscht, holt in diesen Phasen die Tore, die am Ende über Sieg oder Niederlage entscheiden.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/live-spielstatistik-spielertabelle.jpg',
   imageAlt: 'Live-Statistik in Statix mit Spielstand, Zeitstrafen und den Werten aller Spieler',
   body: `Ein Spiel wird oft in wenigen Minuten entschieden – und diese Minuten sind häufig Über- oder Unterzahlphasen. Jede Zeitstrafe verschiebt das Kräfteverhältnis für zwei Minuten: Eine Mannschaft greift mit einem Spieler mehr an, die andere verteidigt mit einem weniger. Wer diese Phasen beherrscht, sammelt genau die zwei, drei Tore, die am Ende den Unterschied machen. Trotzdem wird Über- und Unterzahl im Training oft vernachlässigt.

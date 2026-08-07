@@ -16,13 +16,13 @@ export const handballAngriffssystemeEinsteiger: Article = {
     'angriffssystem handball einsteiger',
     'handball angriffsmittel',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-05-04',
   dateModified: '2026-08-07',
   readingTimeMinutes: 6,
   excerpt:
     'Ein einfaches Angriffssystem gibt deiner Mannschaft Struktur und jedem Spieler eine klare Aufgabe. Hier lernst du die Grundpositionen, die Systeme 3:3 und 4:2 und die wichtigsten Angriffsmittel – verständlich für Einsteiger.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/shotMaps.png',
   imageAlt: 'Angriffssysteme und Wurfzonen im Handball, visualisiert in der Statix Handball-App',
   body: `Wenn du als Trainer neu in die Angriffstaktik einsteigst, wirken die vielen Laufwege auf dem Feld schnell wie ein einziges Durcheinander. Dabei sorgt schon ein einfaches Angriffssystem für Ordnung: Es gibt deiner Mannschaft Struktur, jedem Spieler eine klare Aufgabe und dem Ball einen roten Faden. In diesem Ratgeber lernst du die Grundpositionen im Angriff, die beiden wichtigsten Systeme (3:3 und 4:2), die grundlegenden Angriffsmittel und bekommst konkrete Tipps für den Einstieg.

@@ -15,13 +15,13 @@ export const handballMentaltraining: Article = {
     'wettkampfpsychologie handball',
     'druck handball spiel',
   ],
-  category: 'Mannschaft & Mentales',
+  category: 'Team & Führung',
+  archetype: 'rezept',
   datePublished: '2026-07-09',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Enge Spiele werden im Kopf entschieden. Hier bekommst du praktische Methoden für Nervenstärke, Fokus und Selbstvertrauen – für einzelne Spieler und die ganze Mannschaft.',
-  heroEyebrow: 'Mannschaft & Mentales',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Handballteam konzentriert vor dem Spiel',
   body: `Zwei Teams sind technisch fast gleich stark – und trotzdem gewinnt am Ende immer eines die engen Spiele. Oft liegt der Unterschied nicht in den Beinen, sondern im Kopf. Nervenstärke, Fokus und Selbstvertrauen sind trainierbar, genau wie ein Sprungwurf. In diesem Ratgeber bekommst du praktische Methoden des Mentaltrainings, die du direkt mit deinem Team umsetzen kannst – ohne Psychologiestudium.

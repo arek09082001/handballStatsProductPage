@@ -15,13 +15,13 @@ export const handballTorwartStatistik: Article = {
     'wurfzonen torwart',
     'torwart auswerten',
   ],
-  category: 'Statistik & Kennzahlen',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die Paradenquote allein sagt wenig – ein Torwart hinter einer schwachen Abwehr sieht immer schlechter aus. So bewertest du Torwartleistung fair und findest, wo dein Keeper wirklich stark ist.',
-  heroEyebrow: 'Statistik & Kennzahlen',
   imagePath: '/shotMaps.png',
   imageAlt: 'Wurfbild mit Torwartparaden nach Ecken und Wurfzonen im Handball',
   body: `„Der Torwart hat heute schlecht gehalten" – dieser Satz fällt schnell, wenn viele Tore fallen. Aber die reine Zahl der Gegentore sagt fast nichts über die Leistung des Keepers aus. Ein Torwart hinter einer löchrigen Abwehr, der ständig freie Kreis- und Tempowürfe abbekommt, wird immer schlechter aussehen als einer hinter einem sortierten Block. Wer Torwartleistung fair bewerten will, muss genauer hinschauen.

@@ -15,13 +15,13 @@ export const handballTimeoutNutzen: Article = {
     'handball trainer auszeit',
     'timeout taktik handball',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Team & Führung',
+  archetype: 'entscheidung',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     '60 Sekunden können ein Spiel drehen – wenn du sie richtig nutzt. Wann du das Team-Timeout ziehst, was du ansprichst und welche Fehler du vermeidest.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Handballtrainer bespricht sich mit der Mannschaft während eines Team-Timeouts',
   body: `Der Gegner läuft, deine Mannschaft wackelt, das Spiel kippt – jetzt liegt es an einer Karte. Das Team-Timeout, die berühmte grüne Karte, gibt dir 60 Sekunden, um ein Spiel zu ordnen, zu beruhigen oder neu auszurichten. Richtig eingesetzt ist es eine der schärfsten Waffen des Trainers. Falsch oder zu spät gezogen, verpufft es wirkungslos.

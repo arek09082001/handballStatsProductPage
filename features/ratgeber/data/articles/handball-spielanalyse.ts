@@ -16,13 +16,13 @@ export const handballSpielanalyse: Article = {
     'spielauswertung handball',
     'gegneranalyse handball',
   ],
-  category: 'Spielanalyse',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-06-25',
   dateModified: '2026-08-07',
   readingTimeMinutes: 6,
   excerpt:
     'Gute Spielanalyse macht aus dem Bauchgefühl belastbare Entscheidungen. Hier erfährst du, wie du vor, während und nach dem Spiel systematisch auswertest – von der Gegneranalyse über Wurfbilder bis zur Phasenanalyse.',
-  heroEyebrow: 'Spielanalyse',
   imagePath: '/shotMaps.png',
   imageAlt: 'Wurfbilder und Spielanalyse in der Statix Handball-App',
   body: `Viele Trainerentscheidungen fallen aus dem Bauch heraus: Wer wirft den nächsten Siebenmeter, wann kommt die Auszeit, welche Abwehr stellst du auf? Spielanalyse ersetzt das Bauchgefühl nicht – sie macht es belastbar. Wer Spiele systematisch beobachtet und auswertet, trifft Entscheidungen auf Basis von Fakten statt auf Basis der Erinnerung. In diesem Ratgeber lernst du, wie du vor, während und nach dem Spiel richtig analysierst und aus den Erkenntnissen konkrete Trainingsinhalte machst.

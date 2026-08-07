@@ -15,13 +15,13 @@ export const handballKoordinationstraining: Article = {
     'handball koordination kinder',
     'agility handball',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Schnelle Füße, sichere Hände, der richtige Rhythmus im Anlauf: Koordination ist die Grundlage jeder Handballtechnik. Diese Übungen bringen Beinarbeit und Ballkontrolle zusammen.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/heroImage.png',
   imageAlt: 'Handballspieler bei Koordinationsübungen mit Leiter und Ball',
   body: `Ein sauberer Sprungwurf, eine gelungene Finte, das Fangen eines schlechten Passes im vollen Lauf – hinter all dem steckt Koordination. Sie ist die unsichtbare Grundlage jeder Technik: Wer seinen Körper und den Ball nicht kontrolliert, kann noch so kräftig oder schnell sein. Gerade im Nachwuchs, aber auch bei Erwachsenen, ist gezieltes Koordinationstraining eine der wirkungsvollsten Investitionen ins Spiel.

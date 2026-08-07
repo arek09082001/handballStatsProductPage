@@ -15,13 +15,13 @@ export const handballSpielformenTraining: Article = {
     'handball training spiele',
     'trainingsspiele handball',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Spieler lernen Handball am besten im Spiel. Spielformen packen Technik, Taktik und Entscheidung in eine motivierende Verpackung. So baust und steuerst du sie richtig.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballmannschaft in einer Überzahl-Spielform im Training',
   body: `Frage einen Spieler nach seinem liebsten Teil des Trainings – die Antwort ist fast immer das Abschlussspiel. Diese Begeisterung ist ein Werkzeug: Im Spiel lernen Spieler schneller, entscheiden eigenständiger und sind mit Kopf und Herz dabei. Spielformen nutzen genau das. Sie sind keine Belohnung am Ende, sondern eine der wirkungsvollsten Trainingsmethoden überhaupt.

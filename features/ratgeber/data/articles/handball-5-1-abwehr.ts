@@ -15,13 +15,13 @@ export const handball51Abwehr: Article = {
     'handball offensiv verteidigen',
     '5:1 verteidigen lernen',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die 5:1 schiebt einen Spieler nach vorne, um den Rückraum zu stören und den Spielmacher zu binden – ohne den Kreis aufzugeben. So funktioniert das beliebteste Zwischensystem.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/heroImage.png',
   imageAlt: 'Handballabwehr in 5:1-Formation mit vorgezogenem Spitzenspieler',
   body: `Zwischen der kompakten 6:0 und der offensiven 3:2:1 steht die 5:1 – für viele Mannschaften der ideale Kompromiss. Sie behält die Sicherheit einer geschlossenen Kette am Kreis, stört aber gleichzeitig den Rückraum, indem ein Spieler vorgezogen wird. Genau dieser vorgezogene Spieler macht die 5:1 so wirkungsvoll gegen wurfstarke Distanzschützen und einen dominanten Spielmacher.

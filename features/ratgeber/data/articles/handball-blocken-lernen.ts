@@ -15,13 +15,13 @@ export const handballBlockenLernen: Article = {
     'abwehr block torwart absprache',
     'handball wurf blocken',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-16',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Ein guter Block ist die halbe Parade: Er nimmt dem Rückraumschützen die Ecke und dem Torwart die Unsicherheit. So lernst du Timing, Handstellung und die Absprache im Blockspiel.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Abwehrspieler blockt einen Sprungwurf aus dem Rückraum',
   body: `Gegen wurfgewaltige Rückraumspieler hilft die beste Beinarbeit wenig, wenn am Ende doch der freie Sprungwurf aus neun Metern kommt. Hier kommt der Block ins Spiel: Er verkleinert den Wurfwinkel, nimmt dem Schützen die vereinbarte Ecke weg – und macht den Torwart erst richtig stark. Blocken ist Technik plus Absprache, und beides kannst du trainieren.

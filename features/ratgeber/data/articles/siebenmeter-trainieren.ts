@@ -15,13 +15,13 @@ export const siebenmeterTrainieren: Article = {
     'siebenmeter handball üben',
     'siebenmeterquote handball',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-06-11',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Siebenmeter entscheiden enge Spiele – und sie sind trainierbar. Hier bekommst du Technik, Wurfvarianten, mentale Routinen und konkrete Übungen für sichere Schützen.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Siebenmeterquote und Wurfstatistik in der Statix Handball-App',
   body: `Der Siebenmeter ist die klarste Torchance im Handball – und trotzdem geht er erstaunlich oft daneben. In engen Spielen entscheidet er über Sieg oder Niederlage, und genau dann zählt nicht nur die Technik, sondern vor allem der Kopf. Die gute Nachricht: Beides lässt sich trainieren. In diesem Ratgeber bekommst du die Regel kurz erklärt, die richtige Technik, die passenden Wurfvarianten, mentale Routinen und konkrete Übungen, mit denen deine Schützen sicherer werden.

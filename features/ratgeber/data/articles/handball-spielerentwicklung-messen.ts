@@ -16,13 +16,13 @@ export const handballSpielerentwicklungMessen: Article = {
     'handball spielerstatistik',
     'individuelle förderung handball',
   ],
-  category: 'Statistik & Kennzahlen',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-06-21',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Entwicklung passiert oft unbemerkt. Wer sie misst, kann Spieler gezielt fördern – mit den richtigen Kennzahlen, klaren Zielen und einem Blick für den Verlauf über die Saison.',
-  heroEyebrow: 'Statistik & Kennzahlen',
   imagePath: '/mannschaft-spielerwerte.jpg',
   imageAlt: 'Spielerwerte über die Saison in Statix: Spiele, Tore, Wurfquote und Paradenquote je Spieler',
   body: `Als Trainer willst du, dass deine Spieler besser werden. Aber woran erkennst du eigentlich, ob jemand Fortschritte macht? Das Bauchgefühl trügt oft: Ein lauter Spieler wirkt stärker als er ist, ein stiller entwickelt sich im Verborgenen. Wer Entwicklung messbar macht, fördert gezielter, entscheidet fairer und motiviert nebenbei das ganze Team. In diesem Ratgeber liest du, welche Kennzahlen wirklich etwas aussagen, wie du Ziele setzt und den Verlauf über die Saison sichtbar machst.

@@ -15,13 +15,13 @@ export const handballRueckraumspielerTipps: Article = {
     'rückraumschütze werden',
     'handball rückraum training',
   ],
-  category: 'Technik & Wurf',
+  category: 'Taktik & Systeme',
+  archetype: 'referenz',
   datePublished: '2026-07-16',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Im Rückraum laufen fast alle Angriffe zusammen: Distanzwurf, Durchbruch, Anspiel – du brauchst alle Werkzeuge. Diese Tipps machen dich zum kompletten Rückraumspieler.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Rückraumspieler beim Sprungwurf über den Abwehrblock',
   body: `Der Rückraum ist das Kraftzentrum jeder Handballmannschaft: Von hier kommen die Distanzwürfe, hier werden Durchbrüche eingeleitet, von hier aus wird der Kreis gefüttert. Wer auf Rückraum links, Mitte oder rechts spielt, braucht das breiteste Repertoire aller Feldspieler. Dieser Ratgeber zeigt dir, welche Fähigkeiten zählen und wie du sie entwickelst.

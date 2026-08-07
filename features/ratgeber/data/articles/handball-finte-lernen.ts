@@ -15,13 +15,13 @@ export const handballFinteLernen: Article = {
     'gegenspieler ausspielen handball',
     'handball täuschung',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-04',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Eine gute Finte lässt den Gegner aussteigen und öffnet den Weg zum Tor. Hier lernst du die wichtigsten Täuschungen im Handball und wie du sie Schritt für Schritt trainierst.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Handballspieler setzt eine Körpertäuschung im Eins-gegen-eins',
   body: `Der Durchbruch im Eins-gegen-eins ist eine der schönsten Aktionen im Handball – und fast immer beginnt er mit einer Finte. Wer den Gegenspieler mit einer Täuschung aussteigen lässt, schafft sich freie Wege zum Tor oder zieht einen zweiten Verteidiger, der wiederum an anderer Stelle eine Lücke reißt. In diesem Ratgeber lernst du die wichtigsten Finten kennen und erfährst, wie du sie systematisch trainierst.

@@ -16,13 +16,13 @@ export const handballMannschaftMotivieren: Article = {
     'handball mentaltraining',
     'motivation trainer handball',
   ],
-  category: 'Mannschaft & Mentales',
+  category: 'Team & Führung',
+  archetype: 'rezept',
   datePublished: '2026-05-22',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Technik lässt sich trainieren – doch enge Spiele entscheidet oft der Kopf. So stärkst du Motivation, Teamgeist und die mentale Stärke deiner Mannschaft.',
-  heroEyebrow: 'Mannschaft & Mentales',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Team- und Saisonübersicht in der Statix Handball-App',
   body: `Zwei Mannschaften mit ähnlichem Können treffen aufeinander – und am Ende gewinnt die, die williger läuft, ruhiger bleibt und in der Schlussphase zusammensteht. Motivation und mentale Stärke entscheiden im Handball oft mehr als die reine Technik. Die gute Nachricht: Als Trainer kannst du dieses Umfeld aktiv formen. Dieser Ratgeber zeigt dir, wie.

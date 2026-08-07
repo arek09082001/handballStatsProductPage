@@ -16,13 +16,13 @@ export const handballPositionenErklaert: Article = {
     'handball rückraum mitte',
     'außenspieler handball',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Taktik & Systeme',
+  archetype: 'referenz',
   datePublished: '2026-04-02',
   dateModified: '2026-08-07',
   readingTimeMinutes: 5,
   excerpt:
     'Jede der sieben Handball-Positionen hat ihre eigenen Aufgaben. Hier erfährst du, was Torwart, Außen, Kreisläufer und Rückraum ausmacht – und welcher Spielertyp wohin passt.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Spielübersicht und Positionen in der Statix Handball-App',
   body: `Handball ist ein Positionsspiel. Auf dem Feld steht pro Mannschaft ein Torwart und sechs Feldspieler, und jeder von ihnen hat eine klar umrissene Aufgabe. Wer versteht, warum der Kreisläufer am Sechsmeterkreis klebt und warum der Rückraum Mitte das Spiel ständig dirigiert, durchschaut das Geschehen auf dem Parkett viel schneller. Denn im Handball hat jede Rolle ihren festen Platz im Angriff, ihre eigene Wurfzone und ihre typischen Laufwege. In diesem Ratgeber gehen wir jede Position durch: was sie leistet, welcher Spielertyp dorthin passt und wie sich die Rollen zwischen Angriff und Abwehr verschieben.

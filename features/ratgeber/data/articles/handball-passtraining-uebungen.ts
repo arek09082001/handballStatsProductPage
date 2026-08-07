@@ -15,13 +15,13 @@ export const handballPasstrainingUebungen: Article = {
     'passspiel handball',
     'passtraining übungen handball',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-04-14',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Sichere Pässe sind die Basis für jeden erfolgreichen Angriff. Hier findest du die wichtigsten Passtechniken, typische Fehler und konkrete Passübungen, mit denen du Ballverluste reduzierst und dein Passspiel sicherer machst.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/heroImage.png',
   imageAlt: 'Handballspieler beim Passtraining in der Halle',
   body: `Ein Angriff im Handball ist immer nur so gut wie die Pässe, die ihn tragen. Jeder sichere Pass hält den Ball in Bewegung, bindet die Abwehr und schafft die Lücke für den Abschluss. Ein einziger unsauberer Pass dagegen kostet dich den Ball und im schlimmsten Fall den Gegenstoß, der daraus entsteht. Gutes Passspiel ist deshalb keine Kür, sondern die Grundlage für jeden erfolgreichen Angriff. In diesem Ratgeber bekommst du die wichtigsten Passtechniken, die häufigsten Fehler und konkrete Übungen für dein Training.

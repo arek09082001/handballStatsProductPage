@@ -15,13 +15,13 @@ export const handballErnaehrung: Article = {
     'trinken handball',
     'regeneration ernährung handball',
   ],
-  category: 'Training & Planung',
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
   datePublished: '2026-07-10',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Wer im Handball voll leisten will, muss richtig essen und trinken. Hier bekommst du praxisnahe Ernährungstipps für die Zeit vor, während und nach Training und Spiel.',
-  heroEyebrow: 'Training & Planung',
   imagePath: '/heroImage.png',
   imageAlt: 'Gesunde Sporternährung für Handballspieler',
   body: `Training, Taktik und Athletik bringen wenig, wenn im Tank nichts drin ist. Die richtige Ernährung entscheidet mit darüber, ob deine Spieler in der Schlussphase noch antreten können, wie schnell sie sich erholen und wie stabil sie durch die Saison kommen. In diesem Ratgeber bekommst du praxisnahe Grundlagen – bewusst ohne komplizierte Wissenschaft, dafür direkt umsetzbar für Amateur- und Jugendhandball.

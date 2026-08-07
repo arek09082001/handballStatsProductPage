@@ -15,13 +15,13 @@ export const handballKommunikationSpielfeld: Article = {
     'handball absprachen',
     'lautstärke mannschaft handball',
   ],
-  category: 'Mannschaft & Mentales',
+  category: 'Team & Führung',
+  archetype: 'rezept',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die beste Abwehr ist eine, die redet. Kommunikation koordiniert, warnt und motiviert – und ist trainierbar. So wird aus einer stummen Mannschaft ein lautes, abgestimmtes Team.',
-  heroEyebrow: 'Mannschaft & Mentales',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballspieler kommunizieren und stimmen sich in der Abwehr ab',
   body: `Zwei gleich starke Mannschaften treffen aufeinander – die eine verteidigt stumm, die andere redet ununterbrochen. In neun von zehn Fällen gewinnt die redende. Kommunikation ist im Handball kein Beiwerk, sondern ein echter Leistungsfaktor: Sie koordiniert die Abwehr, beschleunigt den Angriff und hält die Köpfe im Spiel. Und das Beste: Sie kostet nichts und lässt sich trainieren.

@@ -15,13 +15,13 @@ export const handballWurftrainingSprungwurf: Article = {
     'handball werfen lernen',
     'wurfgenauigkeit handball',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-05-07',
   dateModified: '2026-08-07',
   readingTimeMinutes: 5,
   excerpt:
     'Ein sauberer Sprungwurf entscheidet, ob dein Abschluss im Netz landet – und Technik schlägt dabei fast immer reine Kraft. Hier lernst du den Sprungwurf Schritt für Schritt, entwickelst echte Wurfkraft aus der kinetischen Kette und trainierst mehr Genauigkeit.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/shotMaps.png',
   imageAlt: 'Wurfbilder und Wurfstatistiken in der Statix Handball-App',
   body: `Am Ende jeder Angriffsaktion steht der Wurf – und genau hier entscheidet sich, ob die ganze Vorarbeit belohnt wird. Ein sauber getimter Sprungwurf bringt dich über den Block, an der abwehrenden Hand vorbei und in die freie Ecke. Das Beste daran: Ein guter Wurf ist kein reines Kraftpaket, sondern vor allem Technik.

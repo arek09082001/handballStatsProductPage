@@ -15,13 +15,13 @@ export const handball321Abwehr: Article = {
     'abwehr gegen starken rückraum',
     'handball deckungssystem',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-06',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die 3:2:1-Abwehr ist die Antwort auf einen starken, wurfgewaltigen Rückraum. Hier erfährst du Aufbau, Aufgaben der Positionen sowie Vor- und Nachteile dieses offensiven Systems.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Taktiktafel einer 3:2:1-Abwehr im Handball',
   body: `Wenn der Gegner einen wurfstarken Rückraum hat und aus der zweiten Reihe Tor um Tor wirft, hilft kein passives Abwarten am Sechsmeter. Die 3:2:1-Abwehr rückt dem Rückraum entgegen, stört Würfe früh und zwingt den Gegner zu anderen Lösungen. Sie ist anspruchsvoll, aber sehr wirkungsvoll. In diesem Ratgeber erfährst du, wie die 3:2:1 aufgebaut ist, welche Aufgaben die Positionen haben und wann sie sich lohnt.

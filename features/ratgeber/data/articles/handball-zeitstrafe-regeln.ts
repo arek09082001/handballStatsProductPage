@@ -15,13 +15,13 @@ export const handballZeitstrafeRegeln: Article = {
     'handball strafen regeln',
     'progressive bestrafung handball',
   ],
-  category: 'Grundlagen & Regeln',
+  category: 'Regelwissen',
+  archetype: 'referenz',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Gelb, zwei Minuten, rot, blau: Das Strafensystem im Handball wirkt kompliziert, folgt aber einer klaren Logik. Hier sind alle Strafen verständlich erklärt.',
-  heroEyebrow: 'Grundlagen & Regeln',
   imagePath: '/live-spielstatistik-spielertabelle.jpg',
   imageAlt: 'Statix-Spielertabelle mit den Disziplin-Spalten für Zwei-Minuten-Strafen, Gelb und Rot',
   body: `Warum sitzt der Spieler jetzt auf der Bank? Warum gab es Gelb statt zwei Minuten? Und was bedeutet die blaue Karte? Das Strafensystem im Handball wirkt für Einsteiger unübersichtlich, folgt aber einer klaren Stufenlogik: Je gravierender oder wiederholter ein Vergehen, desto härter die Strafe. Wer diese Stufen kennt, versteht jede Entscheidung des Schiedsrichters.

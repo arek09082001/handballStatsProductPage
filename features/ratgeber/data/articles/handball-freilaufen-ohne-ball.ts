@@ -15,13 +15,13 @@ export const handballFreilaufenOhneBall: Article = {
     'räume schaffen handball',
     'bewegung ohne ball',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Die meiste Zeit im Angriff hast du keinen Ball. Was du in dieser Zeit tust, entscheidet über Räume und Tore. So lernst du Laufwege, Timing und das richtige Anbieten.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballspieler löst sich vom Verteidiger und bietet sich zum Anspiel an',
   body: `Rechne einmal nach: In einem Angriff hat ein einzelner Feldspieler den Ball vielleicht ein paar Sekunden – den Rest der Zeit spielt er ohne Ball. Genau in diesen Sekunden ohne Ball entstehen die Räume, die Anspiele und am Ende die Tore. Trotzdem üben viele Spieler fast nur Würfe und Pässe und vergessen das Wichtigste: das kluge Bewegen ohne Ball, das Freilaufen.

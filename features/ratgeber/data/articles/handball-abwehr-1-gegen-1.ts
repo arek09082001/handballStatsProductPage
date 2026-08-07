@@ -15,13 +15,13 @@ export const handballAbwehr1Gegen1: Article = {
     'abwehrspieler tipps handball',
     'handball abwehr training',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-16',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Abwehr gewinnt Meisterschaften – und Abwehr beginnt im Zweikampf. So verbesserst du Beinarbeit, Körperposition und Timing, um Angreifer fair und effektiv zu stoppen.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Abwehrspieler im Zweikampf gegen einen angreifenden Rückraumspieler',
   body: `Jeder redet über Finten und Durchbrüche – aber auf der anderen Seite des Duells steht ein Verteidiger, der genau das verhindern soll. Ein starkes Abwehr-Eins-gegen-eins ist die Grundlage jedes Abwehrsystems: Die beste 6:0 bricht zusammen, wenn die einzelnen Zweikämpfe verloren gehen. Hier lernst du, wie du als Abwehrspieler mehr Duelle gewinnst – fair, ohne Zeitstrafen und mit System.

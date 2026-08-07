@@ -15,13 +15,13 @@ export const handballAussenspielerTipps: Article = {
     'linksaußen rechtsaußen handball',
     'handball außen werfen',
   ],
-  category: 'Technik & Wurf',
+  category: 'Taktik & Systeme',
+  archetype: 'referenz',
   datePublished: '2026-07-15',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Auf Außen bekommst du wenige Bälle – aber die musst du nutzen. Diese Tipps zu Sprungwurf, Winkelverbesserung, Tempospiel und Siebenmetern machen dich zum kompletten Flügelspieler.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Außenspieler beim Sprungwurf aus spitzem Winkel im Handball',
   body: `Außenspieler haben den undankbarsten und zugleich spektakulärsten Job im Angriff: Sie werfen aus den spitzesten Winkeln, laufen die meisten Meter im Tempogegenstoß – und werden an ihrer Wurfquote gemessen, obwohl sie oft nur wenige Bälle pro Spiel bekommen. Hier sind die Tipps, mit denen du als Linksaußen oder Rechtsaußen den Unterschied machst.

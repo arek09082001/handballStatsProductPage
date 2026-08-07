@@ -15,13 +15,13 @@ export const handballSpielmacherWerden: Article = {
     'mittelmann handball',
     'spielintelligenz handball',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'referenz',
   datePublished: '2026-07-16',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Der Spielmacher ist der verlängerte Arm des Trainers: Er liest die Abwehr, steuert das Tempo und bringt Mitspieler in Wurfposition. So entwickelst du dich zum Kopf deines Angriffs.',
-  heroEyebrow: 'Taktik & Abwehr',
   imagePath: '/live-spielstatistik-spielertabelle.jpg',
   imageAlt: 'Spielertabelle in Statix mit Toren, Assists und Ballverlusten je Spieler',
   body: `Auf Rückraum Mitte laufen alle Fäden zusammen: Der Spielmacher entscheidet, welcher Spielzug läuft, wann das Tempo steigt und wer den Abschluss bekommt. Es ist die Position mit den meisten Ballkontakten – und den meisten Entscheidungen. Gute Nachricht: Spielmachen ist keine Frage des Talents allein, sondern lernbar. Hier sind die Fähigkeiten, die zählen.

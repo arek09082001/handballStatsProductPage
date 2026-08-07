@@ -15,13 +15,13 @@ export const handballNervositaetVorSpielen: Article = {
     'ruhe vor dem spiel',
     'druck im handball',
   ],
-  category: 'Mannschaft & Mentales',
+  category: 'Team & Führung',
+  archetype: 'rezept',
   datePublished: '2026-07-17',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Zittrige Hände beim Aufwärmen, Fehlpässe in den ersten Minuten: Nervosität vor Spielen kennt jeder. So machst du aus Lampenfieber Spannung, die dich besser statt schlechter macht.',
-  heroEyebrow: 'Mannschaft & Mentales',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballspieler sammelt sich in der Kabine vor dem Spiel',
   body: `Der Magen kribbelt schon beim Frühstück, in der Kabine ist der Mund trocken, und die ersten zwei Pässe im Spiel landen beim Gegner: Nervosität vor Handballspielen ist völlig normal – sie trifft Jugendspieler genauso wie Profis. Der Unterschied liegt nicht darin, OB man nervös ist, sondern wie man damit umgeht. Dieser Ratgeber zeigt dir, wie du Anspannung in Leistung verwandelst.

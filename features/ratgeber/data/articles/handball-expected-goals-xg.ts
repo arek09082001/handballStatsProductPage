@@ -15,13 +15,13 @@ export const handballExpectedGoalsXg: Article = {
     'wurfposition auswerten',
     'handball datenanalyse',
   ],
-  category: 'Statistik & Kennzahlen',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Nicht jeder Wurf ist gleich gut. Expected Goals bewerten die Qualität einer Wurfchance – unabhängig davon, ob der Ball reingeht. So trennst du gute Entscheidungen von Glück und Pech.',
-  heroEyebrow: 'Statistik & Kennzahlen',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Statistiktabelle mit Wurfpositionen und erwartbaren Torwerten im Handball',
   body: `Ein Kreisläufer wirft aus zwei Metern frei aufs Tor – und der Torwart hält. Ein Rückraumspieler zieht aus neun Metern gegen zwei Verteidiger ab – und trifft ins Kreuzeck. War der erste Wurf schlecht und der zweite gut? Auf dem Papier steht ein Fehlwurf und ein Tor. Tatsächlich war die erste Chance die deutlich bessere. Genau diese Lücke zwischen Chancenqualität und Ergebnis schließt die Kennzahl Expected Goals, kurz xG.

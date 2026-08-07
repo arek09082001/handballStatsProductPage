@@ -15,13 +15,13 @@ export const handballBallhandlingVerbessern: Article = {
     'handball technik grundlagen',
     'ballkoordination handball',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-03',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Sicheres Ballhandling ist die Grundlage für alles andere im Handball. Hier bekommst du einfache Übungen für Ballgefühl, Fangen, Prellen und Passspiel – für jedes Leistungsniveau.',
-  heroEyebrow: 'Technik & Wurf',
   imagePath: '/recordStatsInGame.png',
   imageAlt: 'Handballspieler beim Ballhandling- und Fangtraining',
   body: `Kein Angriffssystem, keine Finte und kein Wurf funktioniert, wenn der Ball nicht sicher in der Hand liegt. Ballhandling – also Ballgefühl, Fangen, Prellen und Passen – ist die technische Grundlage des Handballs. Gerade im Nachwuchs und bei Wiedereinsteigern entscheidet sie über Selbstvertrauen und Spielfluss. In diesem Ratgeber bekommst du einfache, wirksame Übungen für jedes Niveau.

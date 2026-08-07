@@ -15,13 +15,13 @@ export const jugendhandballTrainieren: Article = {
     'handball trainer jugend tipps',
     'handball training altersgerecht',
   ],
-  category: 'Jugend & Entwicklung',
+  category: 'Jugend & Ausbildung',
+  archetype: 'rezept',
   datePublished: '2026-04-28',
   dateModified: '2026-08-07',
   readingTimeMinutes: 4,
   excerpt:
     'Im Nachwuchs formst du Handballer und junge Menschen zugleich. Diese Tipps helfen dir, Kinder und Jugendliche altersgerecht, motivierend und mit Freude am Spiel zu trainieren.',
-  heroEyebrow: 'Jugend & Entwicklung',
   imagePath: '/mannschaft-spielerwerte.jpg',
   imageAlt: 'Mannschaftsliste in Statix mit Spielen, Toren und Wurfquote je Nachwuchsspieler',
   body: `Im Jugendhandball geht es um mehr als Tore. Du formst nicht nur Handballerinnen und Handballer, sondern junge Menschen – und legst den Grundstein dafür, ob sie dem Sport treu bleiben. Deshalb stehen Spaß und eine saubere Ausbildung immer vor dem Ergebnis am Wochenende. Dieser Ratgeber gibt dir praktische Tipps, wie du Nachwuchsmannschaften altersgerecht, motivierend und mit Augenmaß trainierst.

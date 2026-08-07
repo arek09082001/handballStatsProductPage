@@ -15,13 +15,13 @@ export const handballTrainerWerden: Article = {
     'handballtrainer ausbildung',
     'handball trainer einstieg',
   ],
-  category: 'Jugend & Entwicklung',
+  category: 'Team & Führung',
+  archetype: 'referenz',
   datePublished: '2026-07-01',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Du willst ein Team übernehmen und fragst dich, welche Ausbildung du brauchst? Hier erfährst du, wie du Handballtrainer wirst, welche Lizenzen es gibt und wie du gut in die erste Saison startest.',
-  heroEyebrow: 'Jugend & Entwicklung',
   imagePath: '/gameListOverview.png',
   imageAlt: 'Handballtrainer leitet ein Training an der Seitenlinie',
   body: `Viele Trainer rutschen eher zufällig in die Rolle: Ein Team braucht Unterstützung, die eigenen Kinder spielen, oder aus der aktiven Laufbahn wird die Bank. Doch guter Handball auf jedem Niveau braucht gut ausgebildete Trainer. In diesem Ratgeber erfährst du, wie du Handballtrainer wirst, welche Lizenzen es gibt und wie du deinen Einstieg gut vorbereitest – bewusst als Orientierung, denn die genauen Details regeln die Landesverbände.

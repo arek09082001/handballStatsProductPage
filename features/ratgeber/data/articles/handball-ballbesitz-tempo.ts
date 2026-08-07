@@ -15,13 +15,13 @@ export const handballBallbesitzTempo: Article = {
     'effektivität berechnen',
     'handball kennzahlen',
   ],
-  category: 'Statistik & Kennzahlen',
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
   datePublished: '2026-07-18',
   dateModified: '2026-08-07',
   readingTimeMinutes: 3,
   excerpt:
     'Wer mehr Angriffe hat, hat mehr Chancen – wenn er sie nutzt. Ballbesitz, Effektivität und Tempo erklären, warum Spiele so ausgehen, wie sie ausgehen. So misst und steuerst du sie.',
-  heroEyebrow: 'Statistik & Kennzahlen',
   imagePath: '/saison-uebersicht-kennzahlen.jpg',
   imageAlt: 'Angriffserfolg und Tordifferenz einer ganzen Saison in der Statix-Übersicht',
   body: `Zwei Mannschaften spielen 30:28 – die eine wirkt überlegen, die andere hat gefühlt „nur mitgehalten". Ein Blick auf Ballbesitz und Effektivität zeigt oft ein ganz anderes Bild als das Ergebnis. Denn Handball ist ein Spiel der Angriffe: Wer mehr Angriffe hat und sie besser nutzt, gewinnt. Diese beiden Größen lassen sich sauber messen – und daraus lässt sich Tempo gezielt steuern.
