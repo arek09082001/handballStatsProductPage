@@ -5,7 +5,7 @@ export const handballBlockenLernen: Article = {
   title: 'Blocken trainieren: Timing, Absprache mit dem Torwart, Fehlerbilder',
   metaTitle: 'Blocken im Handball trainieren: Timing & Absprache',
   metaDescription:
-    'Blockspiel im Handball vermitteln: Übungen mit Coaching-Punkten, die Absprache zwischen Block und Torwart, typische Fehlerbilder und woran du die Wirkung im Spiel abliest.',
+    'Blockspiel im Handball vermitteln: vier Übungen mit Coaching-Punkten, die Absprache zwischen Block und Torwart und die typischen Fehlerbilder. Mit Zeitleiste.',
   keywords: [
     'blocken handball',
     'block handball training',

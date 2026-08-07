@@ -5,7 +5,7 @@ export const handballBelastungssteuerung: Article = {
   title: 'Belastungssteuerung rund um den Spieltag',
   metaTitle: 'Belastungssteuerung im Handball: die Woche planen',
   metaDescription:
-    'Belastung im Handball steuern: wie du die Trainingswoche um den Spieltag herum aufbaust, Ermüdung erkennst, Spitzen vermeidest und was du an die Spieler auslagerst.',
+    'Belastung im Handball steuern: wie du die Trainingswoche um den Spieltag aufbaust, Ermüdung früh erkennst und Belastungsspitzen vermeidest. Mit Wochenraster.',
   keywords: [
     'belastungssteuerung handball',
     'handball regeneration',

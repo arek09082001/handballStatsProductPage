@@ -5,7 +5,7 @@ export const handballJugendtrainerKennzahlenErstesJahr: Article = {
   title: 'Was du im ersten Jahr als Jugendtrainer messen solltest',
   metaTitle: 'Jugendtrainer: welche Kennzahlen im ersten Jahr zählen',
   metaDescription:
-    'Als neuer Jugendtrainer die richtigen Kennzahlen wählen: welche vier Werte im ersten Jahr wirklich helfen, welche schaden – mit Entscheidungsmatrix je Altersstufe.',
+    'Als neuer Jugendtrainer die richtigen Kennzahlen wählen: welche Werte im ersten Jahr helfen, welche schaden – mit Matrix je Altersstufe. Mit Matrix je Stufe.',
   keywords: [
     'jugendtrainer handball',
     'handball jugend kennzahlen',
@@ -22,8 +22,8 @@ export const handballJugendtrainerKennzahlenErstesJahr: Article = {
   readingTimeMinutes: 7,
   excerpt:
     'Im Jugendbereich misst die naheliegendste Zahl das Falscheste: Tore belohnen körperliche Frühentwicklung. Welche vier Werte im ersten Jahr wirklich helfen – und welche du bewusst weglässt.',
-  imagePath: '/mannschaft-spielerwerte.jpg',
-  imageAlt: 'Entwicklung einzelner Nachwuchsspieler über eine Saison in der Statix-App',
+  imagePath: '/aiAnalyze2.png',
+  imageAlt: 'Entwicklungsübersicht einzelner Nachwuchsspieler in der Statix-App',
   body: `Im ersten Jahr als Jugendtrainer ist die Versuchung groß, alles zu erfassen. Es gibt Vorlagen, es gibt Apps, es gibt Kollegen mit Meinungen. Das Ergebnis ist meistens eine halbvolle Tabelle nach fünf Spielen und das Gefühl, etwas falsch zu machen.
 
 Die schwierigere Erkenntnis: Im Jugendbereich misst die naheliegendste Zahl das Falscheste. Wer Tore zählt und danach aufstellt, fördert systematisch die körperlich früh entwickelten Kinder – und übersieht die, die drei Jahre später die besseren Spieler sind. Dieser Artikel hilft dir, die Werte auszuwählen, die in deiner Altersstufe tatsächlich etwas aussagen.

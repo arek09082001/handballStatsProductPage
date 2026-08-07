@@ -5,7 +5,7 @@ export const handballAbwehrsystemAuswaehlen: Article = {
   title: 'Welches Abwehrsystem passt zu meiner Mannschaft?',
   metaTitle: 'Abwehrsystem auswählen: 6:0, 5:1, 3:2:1 oder Mann',
   metaDescription:
-    'Abwehrsystem im Handball auswählen: Kriterien wie Alter, Größe, Beweglichkeit und Trainingsumfang, eine Entscheidungsmatrix und eine Empfehlung je Mannschaftstyp.',
+    'Abwehrsystem im Handball auswählen: Kriterien wie Trainingsumfang, Größe und Beweglichkeit, eine Matrix und eine Empfehlung je Mannschaftstyp. Mit Diagramm.',
   keywords: [
     'abwehrsystem handball auswählen',
     'welches abwehrsystem handball',
@@ -22,8 +22,8 @@ export const handballAbwehrsystemAuswaehlen: Article = {
   readingTimeMinutes: 8,
   excerpt:
     'Das beste Abwehrsystem ist das, das deine Mannschaft mit ihrem Trainingsumfang wirklich spielen kann. Vier Kriterien, eine Matrix und eine Empfehlung für fünf typische Mannschaftstypen.',
-  imagePath: '/live-spielstatistik-spielertabelle.jpg',
-  imageAlt: 'Abwehrformation einer Handballmannschaft auf dem Spielfeld',
+  imagePath: '/aiAnalyze.png',
+  imageAlt: 'Gegentore nach Zonen in der Analyseansicht der Statix-App',
   body: `Die Frage nach dem richtigen Abwehrsystem wird meistens falsch gestellt. Sie lautet nicht "Welches System ist das beste?", sondern "Welches System kann diese Mannschaft mit diesem Trainingsumfang so gut spielen, dass es besser ist als das, was wir jetzt haben?".
 
 Ein 3:2:1, das einmal pro Woche geübt wird, ist schlechter als eine 6:0, die sitzt. Das ist der Grund, warum die meisten Systemumstellungen im Amateurbereich nach vier Wochen zurückgedreht werden.

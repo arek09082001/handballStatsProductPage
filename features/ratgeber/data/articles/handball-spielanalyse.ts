@@ -5,7 +5,7 @@ export const handballSpielanalyse: Article = {
   title: 'Handball-Spielanalyse: vom Spielbericht zur Trainingsentscheidung',
   metaTitle: 'Handball-Spielanalyse: so wertest du ein Spiel aus',
   metaDescription:
-    'Handball-Spielanalyse für Trainer: welche Zahlen ein Spiel erklären, wie du es in Phasen zerlegst, welche Werte auffällig sind und wie daraus ein Trainingsplan wird.',
+    'Handball-Spielanalyse für Trainer: welche Zahlen ein Spiel erklären, wie du es in Phasen zerlegst und wie daraus ein Trainingsschwerpunkt wird. Mit Richtwerten.',
   keywords: [
     'handball spielanalyse',
     'handball spiel auswerten',

@@ -5,7 +5,7 @@ export const handballPasstrainingUebungen: Article = {
   title: 'Passtraining im Handball: Übungen, Fehlerbilder, Coaching-Punkte',
   metaTitle: 'Passtraining im Handball: Übungen & Coaching-Punkte',
   metaDescription:
-    'Passtraining im Handball planen: eine Einheit als Zeitleiste, fünf Übungskarten mit Coaching-Punkten und Fehlerbildern, Einordnung in die Trainingswoche und Messgrößen.',
+    'Passtraining im Handball planen: eine Einheit als Zeitleiste, fünf Übungskarten mit Coaching-Punkten und Fehlerbildern sowie passende Messgrößen. Mit Beispiel.',
   keywords: [
     'passtraining handball',
     'handball passübungen',

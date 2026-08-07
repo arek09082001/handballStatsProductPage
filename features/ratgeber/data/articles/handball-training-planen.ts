@@ -5,7 +5,7 @@ export const handballTrainingPlanen: Article = {
   title: 'Handballtraining planen: eine Einheit, die etwas verändert',
   metaTitle: 'Handballtraining planen: Aufbau, Zeiten, Schwerpunkte',
   metaDescription:
-    'Handballtraining planen: wie eine Einheit aufgebaut wird, wie viele Schwerpunkte sie verträgt, was du an die Spieler auslagerst und woran du siehst, ob es gewirkt hat.',
+    'Handballtraining planen: wie eine Einheit aufgebaut ist, wie viele Schwerpunkte sie verträgt und was du an die Spieler als Hausaufgabe auslagerst. Für Trainer.',
   keywords: [
     'handballtraining planen',
     'handball trainingseinheit aufbau',

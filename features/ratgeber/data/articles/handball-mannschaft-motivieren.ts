@@ -5,7 +5,7 @@ export const handballMannschaftMotivieren: Article = {
   title: 'Mannschaft motivieren: Werkzeuge statt Ansprachen',
   metaTitle: 'Handballmannschaft motivieren: Werkzeuge für Trainer',
   metaDescription:
-    'Eine Handballmannschaft dauerhaft motivieren: warum Ansprachen nicht tragen, fünf Werkzeuge mit Coaching-Punkten, Einordnung in die Saison und woran du Wirkung erkennst.',
+    'Eine Handballmannschaft dauerhaft motivieren: warum Ansprachen nicht tragen, fünf Werkzeuge für die Saison und woran du ihre Wirkung erkennst. Mit Zeitleiste.',
   keywords: [
     'mannschaft motivieren handball',
     'handball motivation trainer',

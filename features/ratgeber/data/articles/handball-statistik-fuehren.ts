@@ -5,7 +5,7 @@ export const handballStatistikFuehren: Article = {
   title: 'Handball-Statistik führen: welche Zahlen ein Trainer wirklich braucht',
   metaTitle: 'Handball-Statistik führen: die Zahlen, die zählen',
   metaDescription:
-    'Handball-Statistik führen, ohne das Spiel zu verpassen: welche vier Werte reichen, wie du sie rechnest, wie viel Erfassung deine Spielklasse verträgt und was scheitert.',
+    'Handball-Statistik führen, ohne das Spiel zu verpassen: welche vier Werte reichen, wie du sie rechnest und woran Statistikprojekte im Verein scheitern.',
   keywords: [
     'handball statistik führen',
     'handball statistik erfassen',
@@ -96,7 +96,7 @@ Eine Statistik funktioniert nicht, wenn die Tabelle voll ist, sondern wenn sie d
 - **Die Reihe hat keine Löcher.** Zehn erfasste Spiele in Folge sind mehr wert als dreißig mit Lücken.
 - **Deine Halbzeitansprache wird kürzer und konkreter.** Wer die Fehlerquote der ersten Halbzeit kennt, redet über einen Punkt statt über sieben.
 
-Ob du das auf Papier, in einer Tabelle oder in einer App machst, ist zweitrangig – wichtiger ist, dass ihr es durchhaltet. Für den Einstieg reicht die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage). Wenn das Mitschreiben am Spielfeldrand zu langsam wird, erfasst du dieselben Werte mit [Statix](/) per Tap, auch offline in der Halle, und bekommst Quoten und Wurfbilder ohne Nachrechnen. Welcher Weg zu deiner Situation passt, klärt der Vergleich [Zettel, Excel oder App](/ratgeber/handball-statistik-zettel-excel-app).`,
+Ob du das auf Papier, in einer Tabelle oder in einer App machst, ist zweitrangig – wichtiger ist, dass ihr es durchhaltet. Für den Einstieg reicht die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage); wenn das Mitschreiben am Spielfeldrand zu langsam wird, übernimmt eine App die Erfassung per Tap, auch offline in der Halle. Welcher Weg zu deiner Situation passt, klärt der Vergleich [Zettel, Excel oder App](/ratgeber/handball-statistik-zettel-excel-app).`,
   modules: [
     {
       kind: 'answerBox',

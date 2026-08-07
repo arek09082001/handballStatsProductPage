@@ -5,7 +5,7 @@ export const handballStatistikZettelExcelApp: Article = {
   title: 'Zettel, Excel oder App: wie Trainer Handball-Statistik führen',
   metaTitle: 'Handball-Statistik: Zettel, Excel oder App im Vergleich',
   metaDescription:
-    'Zettel, Excel oder App für die Handball-Statistik: Kriterien, Entscheidungsmatrix und eine Empfehlung je Ausgangslage – vom Einzelkämpfer bis zum Verein mit Betreuerteam.',
+    'Zettel, Excel oder App für die Handball-Statistik: Kriterien, Entscheidungsmatrix und eine Empfehlung für vier typische Lagen im Amateurverein. Mit Kriterien.',
   keywords: [
     'handball statistik app',
     'handball statistik excel',

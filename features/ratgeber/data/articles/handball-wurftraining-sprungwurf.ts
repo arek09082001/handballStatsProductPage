@@ -5,7 +5,7 @@ export const handballWurftrainingSprungwurf: Article = {
   title: 'Wurftraining planen: Wurfarten, Rhythmus, Fehlerbilder',
   metaTitle: 'Wurftraining im Handball planen: Übungen & Fehler',
   metaDescription:
-    'Wurftraining im Handball planen: welche Wurfarten wann drankommen, Stemmschritt und Dreierrhythmus vermitteln, sechs Übungskarten mit Fehlerbildern und Messgrößen.',
+    'Wurftraining im Handball planen: welche Wurfarten wann drankommen, wie du Stemmschritt und Dreierrhythmus vermittelst und was danach messbar ist. Mit Übungen.',
   keywords: [
     'wurftraining handball',
     'sprungwurf handball',

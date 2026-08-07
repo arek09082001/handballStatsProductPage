@@ -2,120 +2,142 @@ import type { Article } from '../../types';
 
 export const handballTempogegenstoss: Article = {
   slug: 'handball-tempogegenstoss',
-  title: 'Tempogegenstoß im Handball: die schnelle Mitte und Gegenstöße trainieren',
-  metaTitle: 'Tempogegenstoß im Handball: schnelle Mitte trainieren',
+  title: 'Tempogegenstoß: die drei Wellen und wie du sie einführst',
+  metaTitle: 'Tempogegenstoß im Handball: Wellen, Aufgaben, Aufbau',
   metaDescription:
-    'Tempogegenstoß im Handball trainieren: die drei Wellen und die schnelle Mitte erklärt, warum das Tempospiel so effektiv ist und wie du das Umschalten übst.',
+    'Tempogegenstoß im Handball: die drei Wellen erklärt, Aufgaben je Position, das Umschaltprinzip und der Aufbau über drei Trainingseinheiten. Mit Richtwerten.',
   keywords: [
     'tempogegenstoß handball',
     'gegenstoß handball',
-    'erste welle handball',
     'schnelle mitte handball',
-    'tempospiel handball',
-    'umschaltspiel handball',
-    'tempogegenstoß trainieren',
+    'handball umschalten',
+    'handball erste welle',
+    'handball tempospiel',
+    'handball konter trainieren',
   ],
   category: 'Taktik & Systeme',
   archetype: 'system',
-  datePublished: '2026-06-18',
+  datePublished: '2026-06-19',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 4,
+  readingTimeMinutes: 7,
   excerpt:
-    'Der Tempogegenstoß bringt die einfachsten Tore im Handball – mit einer Wurfquote von 85 bis 95 Prozent. Hier lernst du die drei Wellen, die schnelle Mitte und die besten Übungen fürs Umschalten.',
+    'Der billigste Weg zu Toren im Handball – und der am schlechtesten trainierte. Die drei Wellen, die Aufgaben je Position und wie du das Umschalten in drei Einheiten aufbaust.',
   imagePath: '/recordStatsInGame.png',
-  imageAlt: 'Tempogegenstoß und Gegenstoßtore in der Statix Handball-App',
-  body: `Kaum eine Situation im Handball bringt so einfache Tore wie der Tempogegenstoß. Wer nach einem Ballgewinn sofort umschaltet und den Gegner vor seiner geordneten Abwehr erwischt, wirft aus kurzer Distanz auf ein oft ungedecktes Tor – mit einer Quote, von der du im Positionsangriff nur träumst. Wer schnell umschaltet, gewinnt am Ende die engen Spiele. In diesem Ratgeber lernst du die drei Wellen und die schnelle Mitte kennen, verstehst, warum Tempospiel so effektiv ist, und bekommst konkrete Übungen für dein Training.
+  imageAlt: 'Erfassung von Gegenstoßtoren und Tempospiel in der Statix Handball-App',
+  body: `Ein Tor aus dem Tempogegenstoß ist das günstigste Tor im Handball: kein Positionsangriff, keine sortierte Abwehr, oft ein freier Abschluss gegen den Torwart. Trotzdem trainieren die meisten Amateurmannschaften den Gegenstoß nur als Laufform am Ende der Einheit – und wundern sich, dass im Spiel niemand losläuft.
 
-## Die drei Wellen und die schnelle Mitte kurz erklärt
+Der Grund ist fast immer derselbe: Umschalten ist keine Laufaufgabe, sondern eine Entscheidungsaufgabe. Wer erst hinschaut, ob der Ball erobert wurde, ist zu spät.
 
-Tempogegenstoß ist der Sammelbegriff für alle schnellen Angriffe direkt nach dem Ballgewinn. Klassisch teilt man ihn in drei Wellen ein, die zeitlich aufeinanderfolgen:
+## Die Grundordnung: drei Wellen
 
-| Welle | Was passiert | Ziel |
-| --- | --- | --- |
-| 1. Welle | Ein einzelner Spieler löst sich sofort nach dem Ballgewinn | Abschluss, bevor die Abwehr zurück ist |
-| 2. Welle | Nachrückende Spieler stoßen mit Tempo nach | Überzahl wie zwei gegen einen nutzen |
-| 3. Welle | Nahtloser Übergang in einen früh aufgezogenen Positionsangriff | Angreifen, bevor die Abwehr geschlossen steht |
+Ein Gegenstoß ist kein einzelner Sprint, sondern eine Staffelung in drei Wellen.
 
-Die schnelle Mitte ist ein Sonderfall und startet am Anwurfpunkt: Nach einem Gegentor bringst du den Ball sofort wieder ins Spiel, statt zu warten. Trabt der Gegner noch zurück oder wechselt er aus, überrascht ihn ein blitzschneller Anwurf mit einem freien Abschluss – vorausgesetzt, deine Mitspieler sind wach.
+**Die erste Welle** sind ein bis zwei Spieler, die bei Ballgewinn schon in Bewegung sind – meist die Außenspieler. Sie starten nicht nach dem Ballgewinn, sondern **während** der gegnerische Angreifer abschließt. Ziel ist ein freier Abschluss ohne jeden Gegenspieler.
 
-## Warum der Tempogegenstoß so effektiv ist
+**Die zweite Welle** sind zwei bis drei Rückraumspieler, die nachrücken, wenn die erste Welle nicht durchkommt. Sie treffen auf eine noch unsortierte Abwehr, in der Regel zwei bis vier Verteidiger, und spielen ein Überzahlspiel im Lauf.
 
-Der Tempogegenstoß ist die effizienteste Wurfsituation im ganzen Handball. Dafür gibt es drei Gründe:
+**Die dritte Welle** ist der schnell aufgebaute Positionsangriff gegen eine noch nicht komplett sortierte Abwehr. Der am häufigsten verschenkte Teil: Viele Mannschaften bremsen hier ab und bauen neu auf, statt den Vorteil zu nutzen, dass die gegnerische Zuordnung noch nicht steht.
 
-- **Sehr hohe Wurfquote:** Im Tempogegenstoß liegt die Trefferquote meist zwischen 85 und 95 Prozent. Der Werfer kommt frei oder im Eins-gegen-eins mit dem Torwart zum Abschluss – ohne Block, ohne Stellungsspiel dagegen.
-- **Unsortierte Abwehr:** Der Gegner ist nach dem eigenen Angriff noch im Rückweg, die Deckung steht nicht geschlossen. Genau in diesem Moment sind die Lücken am größten.
-- **Aufwand und Ertrag:** Ein Sprint über das Feld kostet Kraft, führt aber häufig direkt zum Tor. Im Verhältnis zum zähen Positionsangriff gegen einen stehenden Block ist das ein hervorragendes Geschäft.
+## Aufgaben je Position
 
-## Voraussetzungen für ein starkes Tempospiel
+**Der Torwart.** Er ist der wichtigste Spieler des Gegenstoßes, nicht der schnellste Außen. Nach der Parade sucht er sofort den Anspielpartner – der erste Blick geht nach vorn, nicht zum Ball. Ein Torwart, der den Ball erst beruhigt, kostet euch die erste Welle.
 
-Tempospiel fällt nicht vom Himmel. Es braucht Voraussetzungen, die du im Training gezielt aufbauen musst:
+**Die Außenspieler.** Sie starten früh und laufen die Außenbahn, nicht diagonal zur Mitte. Der lange Weg ist ihr Job – auch wenn sie in acht von zehn Fällen keinen Ball bekommen. Genau diese acht Läufe sind es, die den Gegner zwingt, seine Außen zurückzuziehen.
 
-- **Abwehr und Torwart als Auslöser:** Jeder Gegenstoß beginnt mit einem Ballgewinn – einer Parade, einem abgefangenen Pass oder einem sauberen Block. Der Torwart ist dabei der erste Angreifer und eröffnet mit seinem Abwurf.
-- **Laufbereitschaft:** Deine Außen und der ballferne Rückraum müssen sich lösen, während die Abwehr noch arbeitet. Ohne den Willen, sofort loszusprinten, entsteht keine erste Welle.
-- **Kondition:** Tempospiel über 60 Minuten kostet viel Kraft. Nur eine gut trainierte Mannschaft schaltet auch in der Schlussphase noch um.
-- **Klare Laufwege und Absprachen:** Jeder muss wissen, wohin er läuft und wer den ersten Pass bekommt. Feste Laufwege verhindern Chaos und Fehlpässe im Tempo.
+**Die Rückraumspieler.** Sie bilden die zweite Welle und müssen dabei zwei Dinge gleichzeitig: nachrücken und die Breite halten. Wer in der zweiten Welle zur Mitte zieht, nimmt sich selbst den Raum.
 
-## Die 1. und 2. Welle trainieren
+**Der Kreisläufer.** Er ist meist der letzte und sichert nach hinten ab. Bei Ballverlust in der zweiten Welle ist er der einzige, der den Konter des Gegners noch stören kann.
 
-So bringst du die ersten beiden Wellen systematisch ins Training:
+## Das Bewegungsprinzip: umschalten heißt entscheiden
 
-- Der Torwart übt den schnellen, präzisen Abwurf auf die startenden Außen. Ein guter Eröffnungspass ist die halbe Miete.
-- Die Außenspieler lösen sich früh entlang der Seitenlinie und laufen ihre Bahn mit vollem Tempo, noch bevor der Ball gefangen ist.
-- Trainiere den weiten Pass über die lange Distanz: präzise, gut zu fangen und in den Lauf gespielt, damit der Empfänger nicht abbremsen muss.
-- Der Abschluss erfolgt aus dem Lauf, meist im Eins-gegen-eins mit dem Torwart. Übe ruhige, sichere Würfe statt hektischer Kraftakte.
+Der Kernsatz lautet: **Der Startzeitpunkt der ersten Welle liegt vor dem Ballgewinn.**
 
-Für die zweite Welle lässt du zwei bis drei Spieler zeitversetzt nachstoßen. Wird die erste Welle gestoppt, spielt der Ballführende quer auf den nachrückenden Mitspieler – so entsteht oft eine glasklare Überzahl.
+Das ist die eine Sache, die im Amateurbereich fast überall fehlt. Der Außenspieler entscheidet beim Wurf des Gegners, ob er startet – nicht, nachdem er gesehen hat, dass der Torwart gehalten hat. Er nimmt damit in Kauf, gelegentlich umsonst zu laufen. Das ist der Preis, und er ist niedriger als der Ertrag.
 
-## Die schnelle Mitte
+Zwei weitere Prinzipien:
 
-Die schnelle Mitte ist die vielleicht am meisten unterschätzte Waffe im Amateurhandball. So funktioniert sie:
+**Die schnelle Mitte.** Nach einem Gegentor darf sofort angeworfen werden, sobald der Ball auf der Mittellinie ist und die eigene Mannschaft in der eigenen Hälfte steht. Das ist die günstigste Torgelegenheit im Handball, weil die gegnerische Abwehr noch feiert. Sie kostet nichts außer Aufmerksamkeit – und deshalb ist es reine Trainerarbeit, sie zur Gewohnheit zu machen.
 
-- Direkt nach dem Gegentor legt ein Spieler den Ball am Anwurfpunkt in der Mitte bereit und wirft sofort an, sobald ein Mitspieler anspielbar ist.
-- Beachte die Regeln: Der Werfer steht mit einem Fuß auf der Mittellinie, und alle Mitspieler befinden sich in der eigenen Hälfte. Erst dann ist der Anwurf gültig.
-- Der Überraschungseffekt zählt: Trabt der Gegner nur zurück oder wechselt er noch aus, entsteht sofort eine neue Überzahl oder ein freier Durchbruch.
+**Der erste Pass geht nach vorn.** Nicht zur Seite, nicht zurück. Ein Querpass nach Ballgewinn beendet fast jeden Gegenstoß, bevor er begonnen hat.
 
-Die schnelle Mitte lohnt sich besonders gegen Mannschaften, die sich nach eigenen Toren feiern lassen und langsam zurücklaufen. Ein einziger wacher Moment reicht für ein leichtes Tor.
+## Gegen welchen Gegner er greift
 
-## Umschalten trainieren
+Tempospiel wirkt am stärksten gegen Mannschaften, die **weit vorn verteidigen** – gegen eine [3:2:1](/ratgeber/handball-3-2-1-abwehr) oder Manndeckung ist der Rückweg der Verteidiger lang.
 
-Der Schlüssel zum Tempospiel ist das Umschalten von Abwehr auf Angriff. Genau dieser Moment – vom Ballgewinn zum ersten Pass – entscheidet, ob ein Gegenstoß überhaupt entsteht. Trainiere ihn gezielt:
+Es wirkt ebenfalls gegen Mannschaften mit **wenig Kadertiefe**: Wer über 60 Minuten mit sieben Feldspielern auskommen muss, verliert im Tempospiel zuerst.
 
-- **Überzahlformen:** Spiele bewusst zwei gegen einen und drei gegen zwei. Die Angreifer lernen, die Überzahl sauber auszuspielen, statt den Ball zu vertändeln.
-- **Entscheidung unter Tempo:** Der Ballführende muss in Sekunden lesen, ob er selbst abschließt oder abspielt. Solche Entscheidungen trainierst du nur mit echtem Gegnerdruck, nicht im Leerlauf.
-- **Kondition koppeln:** Verbinde Umschaltübungen mit konditionellen Reizen – zum Beispiel Sprint zurück in die Abwehr, sofortiger Ballgewinn, dann Gegenstoß. So trainierst du Tempo und Ausdauer zugleich.
+Es wirkt **nicht** gegen Mannschaften, die diszipliniert zurücklaufen und deren Torwart schnell abspielt. Dort brauchst du den Positionsangriff, und der Versuch, trotzdem Tempo zu machen, erzeugt vor allem technische Fehler.
 
-## Beispiel-Übungen für den Gegenstoß
+Der wichtigste Test ist aber der an der eigenen Mannschaft: Tempo bringt Tore und kostet Ballsicherheit. Wie diese Rechnung für euch aufgeht, klärt der Artikel zu [Ballbesitz und Tempo](/ratgeber/handball-ballbesitz-tempo).
 
-Diese Übungen lassen sich in fast jedes Training einbauen und decken die wichtigsten Bausteine ab:
+## Stärken und Schwächen
 
-| Übung | Ziel | Organisation |
-| --- | --- | --- |
-| Torwart-Abwurf auf Außen | Schnelle Eröffnung | Torwart wirft nach der Parade sofort auf die startende Außen, Abschluss im Lauf |
-| Weiter Pass in den Lauf | Präzision im Tempo | Zwei Reihen, langer Pass über das Feld, fangen ohne abzubremsen |
-| 2 gegen 1 auf ein Tor | Überzahl ausspielen | Zwei Angreifer, ein Abwehrspieler, Entscheidung Abschluss oder Pass |
-| 3 gegen 2 mit Rückweg | Umschalten unter Druck | Nach dem Abschluss sofort zurück in die Abwehr, dann neuer Angriff |
-| Schnelle Mitte | Anwurf-Automatismus | Nach Gegentor sofort anwerfen, feste Laufwege einstudieren |
+**Stärken:** die höchste Trefferwahrscheinlichkeit aller Abschlussarten, zermürbt den Gegner körperlich, zwingt ihn, die eigenen Außen zurückzuziehen, und erzeugt Zeitstrafen, weil Verteidiger im Rückwärtslaufen foulen müssen.
 
-Steigere die Intensität, indem du Zeitvorgaben setzt oder die Zahl der Abwehrspieler variierst. Wichtig ist, dass am Ende immer ein Abschluss steht – Tempospiel ohne Tor bleibt Theorie.
+**Schwächen:** erhöht die Zahl technischer Fehler, kostet Kraft, und ein misslungener Gegenstoß bringt den Gegner in genau die Situation, die ihr gesucht habt – nur andersherum.
 
-## Tempospiel messbar machen
+## Der Aufbau über drei Einheiten
 
-Ob dein Tempospiel wirklich Tore bringt, siehst du erst mit Zahlen. Wie du sie im Spiel und danach systematisch erhebst, zeigt der Ratgeber zur [Spielanalyse](/ratgeber/handball-spielanalyse). Wie viele deiner Treffer fallen aus dem Gegenstoß, und wie hoch ist dein Tempospiel-Anteil über ein ganzes Spiel? Eine [Handball-Statistik-App für Trainer](/) wie Statix erfasst Gegenstoßtore und den Anteil deines Tempospiels mit einem einzigen Tap – live in der Halle, komplett offline und ohne Zettelwirtschaft. So erkennst du sofort, ob sich dein Umschalt-Training auszahlt.`,
+**Einheit 1 – die Bahnen.** Ohne Gegner, mit Torwart. Die Außen laufen ihre Bahn, der Torwart übt den langen Pass. Zwanzig Wiederholungen je Seite. Das Ziel ist nicht Tempo, sondern der Laufweg: außen bleiben, nicht zur Mitte ziehen.
+
+**Einheit 2 – der Startzeitpunkt.** Jetzt mit Abschluss des Gegners. Der Trainer beurteilt ausschließlich, wann der Außenspieler startet – nicht, ob der Gegenstoß gelingt. Erst wenn er beim Wurf startet und nicht nach der Parade, kommt Einheit 3.
+
+**Einheit 3 – zweite und dritte Welle.** Vier gegen drei oder fünf gegen vier im Lauf, ohne Halt. Die Mannschaft muss entscheiden: sofort abschließen oder in die dritte Welle übergehen. Hier wird der häufigste Fehler sichtbar – das Abbremsen bei 4 gegen 3.
+
+## Kennzahlen zur Kontrolle
+
+Der Gegenstoß ist der am einfachsten zu bewertende Teil des Handballs, weil sein Ertrag direkt sichtbar ist:
+
+**Tore nach Gegenstoß, absolut und als Anteil.** Im Amateurbereich liegen 15 bis 25 % der eigenen Tore aus dem Tempospiel in einem üblichen Rahmen. Unter 10 % heißt: Ihr schaltet nicht um.
+
+**Wurfquote im Gegenstoß.** Sollte deutlich über eurer Gesamtquote liegen – 85 bis 95 % sind ein realistischer Bereich. Liegt sie darunter, schließt ihr aus dem Tempo zu hektisch ab.
+
+**Technische Fehler im Umschaltspiel.** Der Preis. Führe sie getrennt von den Fehlern im Positionsangriff, sonst siehst du nicht, ob euer Tempo teuer ist.
+
+**Gegentore nach eigenem Ballverlust.** Die Gegenrechnung. Wenn diese Zahl mit eurem Tempo steigt, verschenkt ihr am anderen Ende, was ihr vorn gewinnt.
+
+Die einfachste Auswertung: Tore nach Gegenstoß minus Gegentore nach eigenem Ballverlust im Umschaltspiel. Ist die Zahl positiv, lohnt sich euer Tempo.`,
+  modules: [
+    {
+      after: 'Kennzahlen zur Kontrolle',
+      kind: 'benchmarkTable',
+      caption: 'Richtwerte fürs Tempospiel',
+      columns: ['Kennzahl', 'Üblicher Bereich', 'Auffällig'],
+      rows: [
+        ['Anteil Tempotore an den eigenen Toren', '15–25 %', 'unter 10 %: kein Umschalten'],
+        ['Wurfquote im Gegenstoß', '85–95 %', 'unter 80 %: zu hektischer Abschluss'],
+        ['Technische Fehler im Umschaltspiel', '2–4 je Spiel', 'über 6: Tempo zu teuer'],
+        ['Gegentore nach eigenem Ballverlust', '3–6 je Spiel', 'über 8: Absicherung fehlt'],
+      ],
+      note: 'Erfahrungswerte aus dem Amateurbereich, keine erhobene Statistik. Ab acht eigenen erfassten Spielen ist euer Durchschnitt die bessere Referenz.',
+    },
+  ],
   faqs: [
     {
       question: 'Was ist ein Tempogegenstoß im Handball?',
       answer:
-        'Ein Tempogegenstoß ist ein schneller Angriff direkt nach dem Ballgewinn, bevor sich die gegnerische Abwehr ordnen kann. Man unterscheidet die erste Welle (ein einzelner Spieler), die zweite Welle (nachrückende Spieler) und die dritte Welle (ein früh aufgezogener Positionsangriff).',
+        'Der schnelle Angriff direkt nach Ballgewinn, bevor die gegnerische Abwehr sortiert steht. Er läuft in drei Wellen: ein bis zwei Außenspieler, die schon beim Abschluss des Gegners starten; zwei bis drei nachrückende Rückraumspieler gegen eine unsortierte Abwehr; und der schnell aufgebaute Positionsangriff als dritte Welle.',
+    },
+    {
+      question: 'Was ist die schnelle Mitte im Handball?',
+      answer:
+        'Der sofortige Anwurf nach einem Gegentor, sobald der Ball auf der Mittellinie liegt und die eigene Mannschaft in der eigenen Hälfte steht. Sie ist die günstigste Torgelegenheit im Handball, weil die gegnerische Abwehr in diesem Moment noch nicht zurück ist – und sie kostet nichts außer Aufmerksamkeit.',
+    },
+    {
+      question: 'Wie trainiert man das Umschalten von Abwehr auf Angriff?',
+      answer:
+        'Über den Startzeitpunkt, nicht über die Laufgeschwindigkeit. Der Außenspieler entscheidet beim Wurf des Gegners, ob er startet, nicht nachdem der Torwart gehalten hat. Coache in der entsprechenden Übung deshalb ausschließlich, wann jemand losläuft – ob der Gegenstoß gelingt, ist zunächst zweitrangig.',
     },
     {
       question: 'Wie hoch ist die Wurfquote im Tempogegenstoß?',
       answer:
-        'Sehr hoch. Im Tempogegenstoß liegt die Trefferquote meist zwischen 85 und 95 Prozent, weil der Werfer frei oder im Eins-gegen-eins mit dem Torwart zum Abschluss kommt. Das macht den Gegenstoß zur effizientesten Wurfsituation im Handball.',
+        'Sie sollte deutlich über eurer Gesamtquote liegen; 85 bis 95 % sind im Amateurbereich ein realistischer Bereich, weil der Abschluss meist frei gegen den Torwart erfolgt. Liegt eure Quote darunter, schließt ihr aus dem Tempo zu hektisch ab – dann lohnt sich die dritte Welle statt des sofortigen Wurfs.',
     },
   ],
   relatedSlugs: [
-    'handball-angriffssysteme-einsteiger',
+    'handball-ballbesitz-tempo',
     'handball-athletiktraining',
-    'handball-timeout-nutzen',
+    'handball-angriffssysteme-einsteiger',
+    'handball-torwarttraining',
   ],
 };

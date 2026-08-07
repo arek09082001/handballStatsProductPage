@@ -5,7 +5,7 @@ export const handballAusruestungEinsteiger: Article = {
   title: 'Ausrüstungs-Checkliste für Trainer und Eltern',
   metaTitle: 'Handball-Ausrüstung: Checkliste für Trainer & Eltern',
   metaDescription:
-    'Handball-Ausrüstung für Einsteiger: welche Ballgröße je Altersstufe gilt, worauf du bei Schuhen achtest, wann Harz sinnvoll ist und was der Verein stellen sollte.',
+    'Handball-Ausrüstung für Einsteiger: welche Ballgröße je Altersstufe gilt, worauf du bei Schuhen achtest und was der Verein stellen sollte. Mit Größentabelle.',
   keywords: [
     'handball ausrüstung',
     'handball ballgröße',
@@ -23,8 +23,8 @@ export const handballAusruestungEinsteiger: Article = {
   readingTimeMinutes: 6,
   excerpt:
     'Was ein Anfänger wirklich braucht, was der Verein stellen sollte und welche Ballgröße in welche Altersstufe gehört – eine Checkliste für die erste Elternmail der Saison.',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handbälle, Schuhe und Ausrüstung am Rand einer Handballhalle',
+  imagePath: '/exportShare.png',
+  imageAlt: 'Mannschaftsübersicht zum Teilen in der Statix Handball-App',
   body: `Die häufigste Frage nach dem ersten Schnuppertraining lautet: "Was müssen wir kaufen?" Die ehrliche Antwort ist: fast nichts. Für die ersten Wochen reichen Hallenschuhe und Sportkleidung – alles andere kann warten, bis klar ist, ob das Kind dabeibleibt.
 
 Diese Checkliste ist so aufgebaut, dass du sie als Trainer direkt an Eltern weitergeben oder in eine Mannschaftsmail kopieren kannst.

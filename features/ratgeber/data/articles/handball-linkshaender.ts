@@ -5,7 +5,7 @@ export const handballLinkshaender: Article = {
   title: 'Linkshänder im Kader richtig einsetzen',
   metaTitle: 'Linkshänder im Handball richtig einsetzen',
   metaDescription:
-    'Linkshänder im Handballkader einsetzen: welche Ausgangslage du hast, nach welchen Kriterien du entscheidest, eine Entscheidungsmatrix und was zu tun ist, wenn keiner da ist.',
+    'Linkshänder im Handballkader einsetzen: vier Ausgangslagen, die Kriterien für die Entscheidung, eine Matrix und was tun, wenn keiner da ist. Mit Kaderbeispiel.',
   keywords: [
     'linkshänder handball',
     'linkshänder position handball',

@@ -5,7 +5,7 @@ export const handballBallbesitzTempo: Article = {
   title: 'Ballbesitz und Tempo im Handball: die Zahl hinter dem Spielrhythmus',
   metaTitle: 'Ballbesitz & Tempo im Handball: Angriffe richtig zählen',
   metaDescription:
-    'Ballbesitze im Handball zählen und Tempo bewerten: die Formel für Angriffe, Angriffseffektivität und Tempoanteil, realistische Richtwerte und die typischen Fehlschlüsse.',
+    'Ballbesitze im Handball zählen und Tempo bewerten: die Formel für Angriffe, Angriffseffektivität und Tempoanteil sowie die typischen Fehlschlüsse. Mit Beispiel.',
   keywords: [
     'ballbesitz handball',
     'angriffe zählen handball',

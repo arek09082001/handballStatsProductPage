@@ -2,122 +2,242 @@ import type { Article } from '../../types';
 
 export const jugendhandballTrainieren: Article = {
   slug: 'jugendhandball-trainieren',
-  title: 'Jugendhandball trainieren: Tipps für Nachwuchstrainer',
-  metaTitle: 'Jugendhandball trainieren: Tipps für Nachwuchstrainer',
+  title: 'Jugendhandball trainieren: was in welcher Altersstufe drankommt',
+  metaTitle: 'Jugendhandball trainieren: Inhalte je Altersstufe',
   metaDescription:
-    'Jugendhandball trainieren: So förderst du Nachwuchsspieler altersgerecht. Praktische Tipps zu Ausbildung, Spaß, Technik, Abwehr und Elternarbeit für Trainer.',
+    'Jugendhandball trainieren: welche Inhalte in welche Altersstufe gehören, eine Einheit als Zeitleiste und fünf Bausteine mit Coaching-Punkten. Mit Altersraster.',
   keywords: [
     'jugendhandball trainieren',
-    'handball kinder training',
-    'nachwuchstraining handball',
-    'handball jugend übungen',
-    'handball ab welchem alter',
-    'handball trainer jugend tipps',
-    'handball training altersgerecht',
+    'handball jugendtraining',
+    'handball d jugend training',
+    'handball c jugend inhalte',
+    'jugendhandball übungen',
+    'handball nachwuchs ausbildung',
+    'handball altersstufen training',
   ],
   category: 'Jugend & Ausbildung',
   archetype: 'rezept',
-  datePublished: '2026-04-28',
+  datePublished: '2026-06-09',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 4,
+  readingTimeMinutes: 8,
   excerpt:
-    'Im Nachwuchs formst du Handballer und junge Menschen zugleich. Diese Tipps helfen dir, Kinder und Jugendliche altersgerecht, motivierend und mit Freude am Spiel zu trainieren.',
+    'Der häufigste Fehler im Jugendtraining ist nicht die falsche Übung, sondern die richtige Übung zur falschen Zeit. Was in welche Altersstufe gehört – und eine Einheit, die das umsetzt.',
   imagePath: '/mannschaft-spielerwerte.jpg',
-  imageAlt: 'Mannschaftsliste in Statix mit Spielen, Toren und Wurfquote je Nachwuchsspieler',
-  body: `Im Jugendhandball geht es um mehr als Tore. Du formst nicht nur Handballerinnen und Handballer, sondern junge Menschen – und legst den Grundstein dafür, ob sie dem Sport treu bleiben. Deshalb stehen Spaß und eine saubere Ausbildung immer vor dem Ergebnis am Wochenende. Dieser Ratgeber gibt dir praktische Tipps, wie du Nachwuchsmannschaften altersgerecht, motivierend und mit Augenmaß trainierst.
+  imageAlt: 'Jugendmannschaft im Handballtraining in der Halle',
+  body: `Im Jugendhandball entscheidet weniger, **was** du trainierst, als **wann**. Eine Kreuzbewegung, die in der B-Jugend ein Angriffsmittel ist, ist in der E-Jugend verschwendete Zeit – nicht weil die Kinder zu dumm wären, sondern weil ihnen die Grundlagen fehlen, auf denen sie aufbaut.
 
-## Altersgerecht trainieren
+Umgekehrt gilt genauso: Wer in der B-Jugend noch Ballgewöhnung macht, weil sie im Nachwuchs versäumt wurde, hat drei Jahre verloren. Das Zeitfenster für breite Bewegungsausbildung schließt sich, und danach lässt es sich nur mit sehr viel Aufwand teilweise nachholen.
 
-Kinder sind keine kleinen Erwachsenen. Was in der A-Jugend sinnvoll ist, überfordert einen Mini komplett – und umgekehrt langweilst du ältere Spieler mit reinen Fangspielen. Der wichtigste Grundsatz im Nachwuchs lautet deshalb: Trainiere das, was zur Entwicklungsstufe passt.
+## Was in welche Altersstufe gehört
 
-Grob kannst du dich an diesen Schwerpunkten orientieren:
+**Minis und F-Jugend (5–8 Jahre):** Bewegungsschule mit Ball. Werfen, fangen, springen, ausweichen, abstoppen, klettern. Keine Positionen, keine Systeme, keine Technikkorrektur. Details im Artikel zum [Minihandball](/ratgeber/handball-minihandball-kinder).
 
-| Altersstufe | Schwerpunkt |
-| --- | --- |
-| Minis (bis ca. 7 Jahre) | Freude an Bewegung, spielerischer Umgang mit dem Ball |
-| E- und D-Jugend (ca. 8–12) | Vielseitige Grundausbildung, Ballschule, Koordination, Manndeckung |
-| C- und B-Jugend (ca. 13–16) | Technik festigen, Positionsspiel, erste taktische Grundlagen |
-| A-Jugend (ca. 17–18) | Leistung, Spezialisierung, komplexe Abwehr- und Angriffssysteme |
+**E-Jugend (8–10 Jahre):** Ballgewöhnung und Grundtechniken. Schlagwurf, Fangen im Lauf, Prellen mit beiden Händen. Spielformen im kleinen Feld, jeder spielt jede Position einschließlich Tor.
 
-Die Übergänge sind fließend und jedes Kind entwickelt sich in seinem eigenen Tempo. Nutze die Tabelle als Orientierung, nicht als starren Lehrplan. Entscheidend ist, dass die Grundlagen sitzen, bevor du Komplexität draufsetzt.
+**D-Jugend (10–12 Jahre):** Das wichtigste Lernfenster. Koordination, Sprungwurf, Dreierrhythmus, erste offensive Abwehrformen. Hier wird ausgebildet, was später nicht mehr nachzuholen ist.
 
-## Grundausbildung vor Spezialisierung
+**C-Jugend (12–14 Jahre):** Ballsicherheit unter Gegnerdruck, Zweikampf, erste taktische Prinzipien wie Stoßen und Kreuzen. Beginn der körperlichen Wachstumsphase – Vorsicht bei Sprungvolumen und Wurfhärte.
 
-Im Kinderhandball geht Vielseitigkeit vor Spezialisierung. Bevor ein Kind ein guter Rückraumschütze oder eine starke Kreisläuferin wird, braucht es eine breite Bewegungsbasis: laufen, springen, werfen, fangen, prellen, rollen, balancieren. Diese koordinativen Grundlagen sind das Fundament für jede spätere Handballtechnik.
+**B-Jugend (14–16 Jahre):** Positionsspezifische Technik, Abwehrsysteme, Krafttraining mit Zusatzgewicht, Spezialisierung beginnt.
 
-Eine gute Ballschule ist dabei Gold wert. Lass die Kinder mit unterschiedlichen Bällen arbeiten, Wurf- und Fangvarianten ausprobieren und den Ball auf viele Arten kontrollieren. Wer früh ein sicheres Ballgefühl entwickelt, tut sich später mit jeder Technik leichter.
+**A-Jugend (16–18 Jahre):** Weitgehend wie Erwachsene, mit einem Unterschied: Der Vergleich bleibt der Spieler mit sich selbst, nicht mit der Mannschaft.
 
-Genauso wichtig: Lege Kinder nicht zu früh auf eine Position fest. Ein Zehnjähriger, der immer nur am Kreis steht, verpasst wertvolle Lernerfahrungen. Lass alle mal im Rückraum werfen, außen laufen, am Kreis arbeiten und – ganz wichtig – auch mal ins Tor gehen. Die Spezialisierung kommt früh genug.
+Die zwei Zeitfenster, die du nicht verpassen darfst: **Bewegungsvielfalt bis etwa 10** und **Koordination zwischen etwa 8 und 12**. Alles andere lässt sich später nachholen, diese beiden nur mit großem Aufwand.
 
-## Spaß und Motivation an erster Stelle
+## Woran du den Fehler in der Halle erkennst
 
-Kinder kommen zum Handball, weil es Spaß macht. Verlierst du den Spaß aus dem Blick, verlierst du irgendwann die Kinder. Das heißt nicht, dass alles Chaos ist – aber der Weg zum Lernen führt im Nachwuchs über das Spiel, nicht über den Drill-Marathon.
+- **Kinder stehen in Reihen.** Der Klassiker und der teuerste Fehler. Wenn mehr als ein Drittel wartet, änderst du die Organisation, nicht die Übung.
+- **Es wird korrigiert statt wiederholt.** In der E- und D-Jugend entsteht Technik aus Wiederholung, nicht aus Erklärung. Ein Kind, das dreißigmal wirft, lernt mehr als eines, dem dreimal die Technik erklärt wird.
+- **Die Mannschaft spielt 6 gegen 6 im großen Feld.** Zwei Kinder haben den Ball, zehn schauen zu. Auf zwei kleinen Feldern mit 3 gegen 3 hat jedes Kind ein Vielfaches an Aktionen.
+- **Immer dieselben Kinder werfen.** Ein Zeichen dafür, dass eure Spielform keine Beteiligung erzwingt. Regeln und Wertungen lösen das, Appelle nicht.
+- **Die Abwehr steht dauerhaft 6:0.** Bequem für den Trainer, teuer für die Ausbildung: In der 6:0 lernt kein Kind, einen Zweikampf zu führen.
 
-Setze deshalb auf Spielformen statt endloser Reihenübungen. Kleine Spiele, Staffeln und Turnierformen vermitteln Technik und Taktik nebenbei und halten die Motivation hoch. Ein paar Prinzipien helfen dir dabei:
+## Die Einheit im Ablauf
 
-- Sorge für **viele Ballkontakte** pro Kind – jeder soll den Ball oft in der Hand haben, nicht nur zuschauen.
-- Vermeide **langes Anstehen** in Schlangen. Bilde lieber kleine Gruppen mit mehreren Stationen, damit alle in Bewegung bleiben.
-- Baue **Erfolgserlebnisse** ein. Passe Tore, Distanzen und Regeln so an, dass Gelingen möglich ist.
-- Lobe **ehrlich und konkret**. Anerkennung motiviert stärker als jede Kritik.
+Ausgelegt für 75 Minuten in der D- oder C-Jugend. Der Anteil an Spielformen ist deutlich höher als bei Erwachsenen – das ist Absicht, nicht Nachlässigkeit.
 
-Bewegungszeit ist kostbar. Ein Kind, das 20 Minuten in der Warteschlange steht, lernt nichts – ein Kind mit dem Ball in der Hand lernt in jeder Sekunde.
+## Fünf Bausteine für eine Jugendeinheit
 
-## Technik altersgerecht vermitteln
+Der gemeinsame Nenner: hohe Wiederholungszahl, wenig Wartezeit, jede Übung hat eine Entscheidung.
 
-Technik lernen Kinder über Wiederholung und über gute Vorbilder. Zeig eine Bewegung ruhig und deutlich vor, statt sie lange zu erklären – Kinder ahmen nach, was sie sehen. Halte deine Sprache dabei einfach, bildhaft und kurz.
+## Wie die Trainingswoche einer Jugendmannschaft aussieht
 
-Diese Punkte haben sich bewährt:
+**Zwei Einheiten pro Woche** sind im Jugendbereich der Normalfall, drei sind gut, mehr ist selten sinnvoll – Schule, andere Sportarten und Erholung brauchen Platz.
 
-- Arbeite in **kleinen Gruppen**, damit jedes Kind viele Wiederholungen und individuelle Rückmeldung bekommt.
-- Reduziere auf das Wesentliche. **Ein bis zwei Korrekturhinweise** pro Übung reichen – zu viele Details überfordern.
-- Nutze **Bilder und Vergleiche**. "Wirf, als würdest du einen Stein über den See flitschen" bleibt besser hängen als eine biomechanische Erklärung.
-- Gib **Zeit**. Neue Bewegungen brauchen viele saubere Wiederholungen, bevor sie sitzen.
+Die Verteilung bei zwei Einheiten: Die erste hat den technischen Schwerpunkt, die zweite ist spielnah mit taktischem Anteil. Bei drei Einheiten kommt eine mit koordinativem und athletischem Schwerpunkt dazu – mit Körpergewicht, nicht mit Zusatzgewicht.
 
-Wichtig ist auch die Reihenfolge: erst die Grobform, dann die Feinheiten. Ein technisch perfekter Sprungwurf ist im Kinderhandball weniger wert als hundert freudige, halbwegs saubere Würfe.
+Zwei Regeln, die im Jugendbereich besonders wichtig sind:
 
-## Umgang mit Sieg und Niederlage
+**Kein Techniktraining nach hoher Belastung.** Ein müdes Kind lernt schlechte Technik ein.
 
-Ergebnisse gehören zum Sport – aber im Nachwuchs sind sie nicht der Maßstab. Ein Spiel kann verloren gehen und trotzdem ein voller Erfolg sein, wenn deine Mannschaft mutig gespielt und dazugelernt hat. Stelle die Entwicklung immer über das Ergebnis.
+**In Wachstumsphasen Volumen reduzieren, nicht Anspruch.** Zwischen etwa 12 und 15 Jahren sind Sehnenansätze empfindlicher und die Koordination bricht vorübergehend ein. Reduziere Sprünge und harte Würfe, halte an Technik und Bewegungsvielfalt fest. Das ist normal und geht vorbei – Details in der [Belastungssteuerung](/ratgeber/handball-belastungssteuerung).
 
-Ganz konkret heißt das: Setze jeden Spieler ein. Kinder sitzen nicht auf der Bank, damit du ein knappes Spiel gewinnst. Alle wollen und sollen spielen, auch die, die noch nicht so weit sind – gerade sie brauchen die Spielpraxis am meisten.
+Und der Punkt, der über den Kader entscheidet: **Jedes Kind spielt in jedem Spiel.** Eine Jugendmannschaft, in der drei Kinder pro Spiel fünf Minuten bekommen, verliert diese drei innerhalb einer Saison – unabhängig davon, wie gut das Training ist.
 
-Sprich nach Siegen wie nach Niederlagen über das Wie, nicht nur über das Ergebnis. Was hat gut geklappt? Woran arbeiten wir? So lernen Kinder, dass Fortschritt zählt und dass eine Niederlage kein Weltuntergang ist.
+## Was du beobachtest statt misst
 
-## Elternarbeit und Kommunikation
+Im Jugendbereich sind die naheliegenden Zahlen die falschen: Tore belohnen körperliche Frühentwicklung und sagen wenig über Potenzial. Was stattdessen taugt:
 
-Eltern sind im Jugendhandball deine wichtigsten Partner – und manchmal deine größte Herausforderung. Klare, frühzeitige Kommunikation nimmt dir viele Diskussionen ab. Erkläre zu Saisonbeginn deine Grundsätze: dass jedes Kind spielt, dass Entwicklung vor Ergebnis steht, dass Pünktlichkeit und Verlässlichkeit zählen.
+**Technische Fehler je Einsatzzeit.** Der beste Ausbildungsindikator dieser Stufe. Er reagiert schnell auf Trainingsarbeit und hängt kaum an Körpergröße.
 
-Ein paar Dinge erleichtern die Zusammenarbeit:
+**Anteil der Aktionen über die schwache Seite.** Der zuverlässigste Hinweis darauf, ob deine Ausbildung breit ist. Zähl ihn stichprobenartig in einer Übung.
 
-- Informiere **verlässlich** über Trainingszeiten, Spiele und Absagen.
-- Steuere **Erwartungen** aktiv. Nicht jedes Kind wird Bundesligaprofi, und das ist völlig in Ordnung.
-- Bitte Eltern, am Spielfeldrand **anzufeuern statt zu coachen** – die Anweisungen kommen von dir.
+**Vielfalt der genutzten Wurfarten.** Ein Spieler, der drei Wurfarten einsetzt, ist weiter als einer mit einer harten.
 
-Wenn Eltern verstehen, worum es dir geht, ziehen die meisten gern mit.
+**Anwesenheit.** Die ehrlichste Zahl der Jugendarbeit. Eine Gruppe, die über den Winter stabil bleibt, macht etwas richtig.
 
-## Typische Fehler von Nachwuchstrainern
-
-Auch mit den besten Absichten passieren im Nachwuchs immer wieder dieselben Fehler. Wenn du sie kennst, kannst du sie vermeiden:
-
-- **Zu früh Taktik:** Komplexe Abwehrsysteme wie 6:0 oder 3:2:1 gehören nicht in die E- oder D-Jugend. Viele Verbände schreiben in den jüngeren Altersklassen bewusst die Manndeckung oder eine offensive Abwehr vor – sie fördert Zweikampf, Laufarbeit und Eigenverantwortung weit besser als ein passives Abwehrbollwerk. Ausgefeilte Systeme kommen erst später dazu.
-- **Nur die Besten fördern:** Wer sich auf die Talente konzentriert, verliert den Rest der Mannschaft – und übersieht, dass Spätentwickler oft die größten Sprünge machen.
-- **Zu viel Kritik:** Ständiges Korrigieren nimmt Kindern die Freude. Betone, was gelingt, und dosiere deine Hinweise.
-- **Zu wenig Bewegung:** Lange Erklärungen und Wartezeiten sind Trainingsgift. Halte alle in Bewegung.`,
-  faqs: [
+Welche Kennzahlen sich in welcher Altersstufe lohnen und welche schaden, steht ausführlich unter [Kennzahlen im ersten Jahr als Jugendtrainer](/ratgeber/handball-jugendtrainer-kennzahlen-erstes-jahr).`,
+  modules: [
     {
-      question: 'Ab welchem Alter können Kinder Handball spielen?',
-      answer:
-        'Schon ab etwa vier bis sechs Jahren in Mini- oder Bambini-Gruppen, in denen spielerisch Bewegung, Fangen und Werfen im Vordergrund stehen. Der Einstieg ins Mannschaftsspiel mit ersten Regeln folgt meist ab der E-Jugend rund um acht Jahre.',
+      after: 'Die Einheit im Ablauf',
+      kind: 'sessionTimeline',
+      caption: '75 Minuten in der D- oder C-Jugend',
+      blocks: [
+        {
+          minutes: 10,
+          label: 'Aufwärmen als Fangspiel mit Ball',
+          note: 'Sofort Bewegung, hohe Ballkontaktzahl, kein Laufen im Kreis.',
+        },
+        {
+          minutes: 12,
+          label: 'Koordination mit Ball',
+          note: 'Frisches Nervensystem nutzen – der Block gehört nach vorn.',
+        },
+        {
+          minutes: 18,
+          label: 'Technischer Schwerpunkt',
+          note: 'Eine Sache, viele Wiederholungen, parallele Stationen ohne Wartezeit.',
+        },
+        {
+          minutes: 15,
+          label: 'Schwerpunkt mit Gegner',
+          note: 'Dieselbe Sache, jetzt halbaktiv bis aktiv.',
+        },
+        {
+          minutes: 18,
+          label: 'Spielformen auf kleinen Feldern',
+          note: 'Zwei bis drei Felder parallel, 3 gegen 3 oder 4 gegen 4.',
+        },
+        { minutes: 2, label: 'Abschluss', note: 'Kurz, im Stehen, mit einer Frage an die Gruppe.' },
+      ],
     },
+    {
+      after: 'Fünf Bausteine für eine Jugendeinheit',
+      kind: 'exercise',
+      name: '1 · Fangspiel mit Ball',
+      meta: '10 Min. · E- bis C-Jugend',
+      setup: 'Zwei bis drei Fänger ohne Ball, alle anderen prellen einen Ball.',
+      organisation:
+        'Wer gefangen wird, wird selbst Fänger. Alle zwei Minuten neu starten, damit die Rollen wechseln.',
+      coachingPoints: [
+        'Puls und Ballkontakte gleichzeitig – ein Aufwärmen ohne Ball verschenkt zehn Minuten.',
+        'Beide Hände von Anfang an, auf Zuruf wechseln.',
+        'Der Trainer spielt mit, das hebt die Intensität sofort.',
+      ],
+      commonError:
+        'Zwei Runden laufen und dann dehnen. Kein Ballkontakt, kein Richtungswechsel, und die Kinder kommen erst mit dem ersten Ball im Training an.',
+    },
+    {
+      after: 'Fünf Bausteine für eine Jugendeinheit',
+      kind: 'exercise',
+      name: '2 · Stationen statt Reihen',
+      meta: '18 Min. · D- bis C-Jugend',
+      setup:
+        'Vier Stationen zum selben technischen Schwerpunkt, jede mit eigener Aufgabe und genug Bällen.',
+      organisation:
+        'Kleingruppen zu drei bis vier, alle vier Minuten Stationswechsel. Der Trainer bleibt an einer Station und coacht dort.',
+      coachingPoints: [
+        'Vier Stationen bedeuten viermal so viele Wiederholungen wie eine Reihe.',
+        'Ein Coaching-Punkt pro Station, nicht drei.',
+        'Der Trainer wandert nicht – wer überall ein bisschen coacht, korrigiert niemanden vollständig.',
+      ],
+      commonError:
+        'Eine Übung, eine Reihe, zwölf Kinder. Jedes Kind bekommt in achtzehn Minuten vielleicht zwölf Wiederholungen.',
+      variation: 'Eine Station wird von einem älteren Spieler geleitet – Ausbildung in beide Richtungen.',
+    },
+    {
+      after: 'Fünf Bausteine für eine Jugendeinheit',
+      kind: 'exercise',
+      name: '3 · Beidseitigkeit erzwingen',
+      meta: '12 Min. · E- bis D-Jugend',
+      setup:
+        'Beliebige Grundübung – Prellen, Passen, Werfen –, aber die schwache Seite wird doppelt gewertet.',
+      organisation:
+        'Punktesystem: Aktionen über die schwache Seite zählen zwei, über die starke eine. Vier Minuten je Durchgang.',
+      coachingPoints: [
+        'Die Wertung erzwingt, was Appelle nicht schaffen.',
+        'Fehler über die schwache Seite werden nicht kommentiert.',
+        'Das Zeitfenster für Beidseitigkeit schließt sich mit etwa zwölf Jahren.',
+      ],
+      commonError:
+        'Der Trainer ruft "auch mal links". Ohne Regel oder Wertung passiert es nicht – Kinder wählen unter Druck immer die sichere Seite.',
+    },
+    {
+      after: 'Fünf Bausteine für eine Jugendeinheit',
+      kind: 'exercise',
+      name: '4 · Kleine Felder, viele Aktionen',
+      meta: '18 Min. · E- bis C-Jugend',
+      setup: 'Die Halle wird in zwei oder drei kleine Felder geteilt, 3 gegen 3 oder 4 gegen 4.',
+      organisation:
+        'Alle vier Minuten wechseln die Mannschaften ein Feld weiter, damit jeder gegen jeden spielt.',
+      coachingPoints: [
+        'Kleine Felder bedeuten mehr Ballkontakte, mehr Zweikämpfe und mehr Abschlüsse je Kind.',
+        'Positionen rotieren, niemand bleibt eine ganze Einheit auf derselben.',
+        'Ergebnisse werden nicht gezählt.',
+      ],
+      commonError:
+        '6 gegen 6 im großen Feld. Zwei Kinder haben den Ball, zehn schauen zu – und es sind immer dieselben zwei.',
+    },
+    {
+      after: 'Fünf Bausteine für eine Jugendeinheit',
+      kind: 'exercise',
+      name: '5 · Offensiv verteidigen lernen',
+      meta: '15 Min. · D- bis C-Jugend',
+      setup:
+        'Manndeckung oder offensive Abwehrform im kleinen Feld, 3 gegen 3 mit klarer Zuordnung.',
+      organisation:
+        'Jeder Verteidiger nimmt seinen Gegenspieler laut mit Namen auf. Nach jedem Angriff Rollentausch.',
+      coachingPoints: [
+        'Torseitige Position, kleine Schritte, kein Greifen nach dem Ball.',
+        'Der Blick liegt auf Hüfte und Standbein, nicht auf dem Ball.',
+        'Ergebnisse sind zweitrangig – es geht um das Bewegungsmuster.',
+      ],
+      commonError:
+        'Die Jugendmannschaft steht dauerhaft 6:0, weil sie damit mehr Spiele gewinnt. In der 6:0 lernt kein Kind, einen Zweikampf zu führen.',
+    },
+  ],
+  faqs: [
     {
       question: 'Wie oft sollten Kinder Handball trainieren?',
       answer:
-        'Im Grundlagenbereich reichen ein bis zwei Einheiten pro Woche völlig aus. Wichtiger als die Häufigkeit ist, dass das Training abwechslungsreich ist, viel Bewegung bietet und Spaß macht. Zusätzliche vielseitige Bewegung außerhalb des Handballs ist in diesem Alter sogar ausdrücklich erwünscht.',
+        'Zwei Einheiten pro Woche sind im Jugendbereich der Normalfall, drei sind gut, mehr ist selten sinnvoll – Schule, andere Sportarten und Erholung brauchen Platz. Wichtiger als die Häufigkeit ist die Regelmäßigkeit: Ein Jahr mit zwei verlässlichen Einheiten schlägt ein halbes Jahr mit vier.',
+    },
+    {
+      question: 'Was ist beim Handballtraining mit Kindern am wichtigsten?',
+      answer:
+        'Die Zahl der Aktionen je Kind. Reihen, Wartezeiten und 6 gegen 6 im großen Feld sind die teuersten Fehler – auf zwei kleinen Feldern mit 3 gegen 3 hat jedes Kind ein Vielfaches an Ballkontakten, Zweikämpfen und Abschlüssen. Technik entsteht in dieser Stufe aus Wiederholung, nicht aus Erklärung.',
+    },
+    {
+      question: 'Welche Abwehr sollte man im Jugendhandball spielen?',
+      answer:
+        'Offensive Formen und Manndeckung, unabhängig vom Ergebnis. In der 6:0 lernt kein Kind, einen Zweikampf zu führen – und Zweikampfverhalten, Beinarbeit und Antizipation sind die Grundlagen jedes späteren Raumsystems. Viele Landesverbände schreiben für untere Jugendklassen ohnehin offensive Formen vor.',
+    },
+    {
+      question: 'Welche Inhalte gehören in welche Altersstufe?',
+      answer:
+        'Bis zur F-Jugend Bewegungsschule mit Ball, in der E-Jugend Ballgewöhnung und Grundtechniken, in der D-Jugend Koordination und Sprungwurf, in der C-Jugend Ballsicherheit unter Druck und Zweikampf, ab der B-Jugend positionsspezifische Technik und Systeme. Die zwei Fenster, die du nicht verpassen darfst, sind Bewegungsvielfalt bis etwa zehn und Koordination zwischen etwa acht und zwölf.',
+    },
+    {
+      question: 'Wie gehe ich mit Wachstumsphasen im Jugendtraining um?',
+      answer:
+        'Volumen reduzieren, Anspruch behalten. Zwischen etwa 12 und 15 Jahren sind Sehnenansätze empfindlicher und die Koordination bricht vorübergehend ein – das ist normal. Reduziere Sprünge und harte Würfe und halte an Technik und Bewegungsvielfalt fest, statt gegen die Entwicklung anzutrainieren.',
     },
   ],
   relatedSlugs: [
-    'handball-trainer-werden',
-    'handball-aufwaermen-uebungen',
     'handball-minihandball-kinder',
+    'handball-jugendtrainer-kennzahlen-erstes-jahr',
+    'handball-koordinationstraining',
+    'handball-spielformen-training',
+    'handball-positionen-erklaert',
   ],
 };

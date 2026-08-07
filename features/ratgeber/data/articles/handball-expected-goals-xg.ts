@@ -5,7 +5,7 @@ export const handballExpectedGoalsXg: Article = {
   title: 'Expected Goals im Handball: Chancenqualität statt Trefferglück',
   metaTitle: 'Expected Goals (xG) im Handball einfach erklärt',
   metaDescription:
-    'Expected Goals im Handball: was xG misst, wie du Chancenqualität ohne Datenbank abschätzt, welche Zonenwerte realistisch sind und wo die Kennzahl an ihre Grenzen stößt.',
+    'Expected Goals im Handball: was xG misst, wie du Chancenqualität ohne Datenbank abschätzt und wo die Kennzahl im Amateurbereich an Grenzen stößt. Mit Beispiel.',
   keywords: [
     'expected goals handball',
     'xg handball',
@@ -22,8 +22,8 @@ export const handballExpectedGoalsXg: Article = {
   readingTimeMinutes: 7,
   excerpt:
     'Expected Goals beantworten die Frage, die die Wurfquote offenlässt: Waren die Chancen gut? Wie du Chancenqualität ohne Datenbank abschätzt – und wo die Kennzahl im Amateurbereich endet.',
-  imagePath: '/shotMaps.png',
-  imageAlt: 'Wurfbild mit Abschlusszonen einer Handballmannschaft in der Statix-App',
+  imagePath: '/aiAnalyze.png',
+  imageAlt: 'KI-gestützte Analyse der Abschlusszonen in der Statix-App',
   body: `Zwei Mannschaften werfen beide 30 Tore aus 50 Würfen. Die eine hat sich diese Abschlüsse am Kreis und im Tempogegenstoß erarbeitet, die andere hat 50-mal aus neun Metern gegen den Block geworfen und einen sehr guten Tag gehabt. Die Wurfquote ist identisch, die Leistung nicht. Expected Goals sind der Versuch, genau diesen Unterschied messbar zu machen – und im Amateurhandball ist das einfacher, als der Begriff klingt.
 
 ## Was Expected Goals im Handball beantworten

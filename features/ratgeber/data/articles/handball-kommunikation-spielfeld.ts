@@ -5,7 +5,7 @@ export const handballKommunikationSpielfeld: Article = {
   title: 'Kommunikation trainieren: Ansagen, die im Spiel ankommen',
   metaTitle: 'Kommunikation im Handball trainieren: Ansagen & Übungen',
   metaDescription:
-    'Kommunikation auf dem Handballfeld trainieren: welche Ansagen wirklich funktionieren, Übungen mit Coaching-Punkten, typische Fehlerbilder und woran du die Wirkung erkennst.',
+    'Kommunikation auf dem Handballfeld trainieren: welche vier Ansagen funktionieren, vier Übungen, die Reden erzwingen, und woran du Wirkung erkennst. Mit Übungen.',
   keywords: [
     'kommunikation handball',
     'handball ansagen abwehr',

@@ -5,7 +5,7 @@ export const siebenmeterTrainieren: Article = {
   title: 'Siebenmeter trainieren: Schützen aufbauen, Routine, Fehlerbilder',
   metaTitle: 'Siebenmeter trainieren: Schützen aufbauen & Routine',
   metaDescription:
-    'Siebenmeter im Handball trainieren: wie du Schützen auswählst und aufbaust, eine Einheit mit Übungskarten, Fehlerbilder unter Druck und welche Quote realistisch ist.',
+    'Siebenmeter im Handball trainieren: wie du Schützen auswählst und aufbaust, vier Übungen mit Druck und welche Quote im Amateurbereich realistisch ist.',
   keywords: [
     'siebenmeter trainieren',
     'siebenmeter handball',

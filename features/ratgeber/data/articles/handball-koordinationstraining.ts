@@ -5,7 +5,7 @@ export const handballKoordinationstraining: Article = {
   title: 'Koordination trainieren: handballspezifisch statt Leiterprogramm',
   metaTitle: 'Koordinationstraining im Handball: Übungen & Alter',
   metaDescription:
-    'Koordinationstraining im Handball planen: warum die Leiter allein nichts bringt, eine Einheit mit Übungskarten, das richtige Alter je Inhalt und woran du Fortschritt erkennst.',
+    'Koordinationstraining im Handball planen: warum die Leiter allein nichts bringt, vier Übungen mit Handballbezug und das richtige Alter je Inhalt. Mit Übungen.',
   keywords: [
     'koordinationstraining handball',
     'handball koordination übungen',
@@ -22,8 +22,8 @@ export const handballKoordinationstraining: Article = {
   readingTimeMinutes: 6,
   excerpt:
     'Die Koordinationsleiter ist das meistgenutzte und am wenigsten wirksame Gerät im Handballtraining. Wie du Koordination so ansetzt, dass sie im Spiel ankommt – mit Zeitleiste, Übungskarten und Altersfenstern.',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Jugendmannschaft beim Koordinationstraining in der Handballhalle',
+  imagePath: '/tournamentGameList.png',
+  imageAlt: 'Spielübersicht einer Jugendmannschaft in der Statix-App',
   body: `Fast jede Handballmannschaft macht Koordinationstraining, und fast jede macht dasselbe: zehn Minuten Leiter zu Beginn, immer dieselben sechs Muster, ohne Ball, ohne Gegner, ohne Entscheidung. Das ist besser als nichts, aber es ist nicht das, was im Spiel gebraucht wird.
 
 Koordination im Handball heißt: den Ball verarbeiten, während der Körper aus dem Gleichgewicht kommt und ein Gegner Kontakt sucht. Genau diese Kombination fehlt in fast jeder Leiterübung – und genau sie ist der Grund, warum ein Spieler in der Halle sauber aussieht und im Spiel stolpert.

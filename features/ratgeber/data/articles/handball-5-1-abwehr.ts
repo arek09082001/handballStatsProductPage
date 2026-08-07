@@ -2,109 +2,134 @@ import type { Article } from '../../types';
 
 export const handball51Abwehr: Article = {
   slug: 'handball-5-1-abwehr',
-  title: 'Die 5:1-Abwehr im Handball: den Rückraum stören mit dem vorgezogenen Spieler',
-  metaTitle: 'Die 5:1-Abwehr im Handball: Aufgaben, Stärken & Übungen',
+  title: 'Die 5:1-Abwehr: der vorgezogene Verteidiger und was er auslöst',
+  metaTitle: 'Die 5:1-Abwehr im Handball: Aufgaben und Aufbau',
   metaDescription:
-    'Die 5:1-Abwehr im Handball erklärt: Aufgaben des vorgezogenen Spitzenspielers und der Fünferkette, Vor- und Nachteile, wann sie sich lohnt und passende Übungen.',
+    'Die 5:1-Abwehr im Handball: Grundordnung mit Diagramm, die Rolle des Vorgezogenen, das Nachrücken der Kette und der Aufbau über drei Einheiten. Mit Diagramm.',
   keywords: [
     '5:1 abwehr handball',
-    '5-1 abwehr',
     'vorgezogener spieler handball',
-    'spitze abwehr handball',
-    'rückraum stören',
-    'handball offensiv verteidigen',
-    '5:1 verteidigen lernen',
+    'handball 5 1 verteidigen',
+    'handball abwehr offensiv',
+    '5:1 abwehr aufgaben',
+    'handball abwehrsystem 5 1',
+    'handball spitze abwehr',
   ],
   category: 'Taktik & Systeme',
   archetype: 'system',
-  datePublished: '2026-07-18',
+  datePublished: '2026-07-19',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 3,
+  readingTimeMinutes: 8,
   excerpt:
-    'Die 5:1 schiebt einen Spieler nach vorne, um den Rückraum zu stören und den Spielmacher zu binden – ohne den Kreis aufzugeben. So funktioniert das beliebteste Zwischensystem.',
+    'Ein einziger Spieler steht anders als in der 6:0 – und verändert alles. Was der Vorgezogene leisten muss, was die anderen fünf dafür tun, und wie du die Umstellung in drei Einheiten hinbekommst.',
   imagePath: '/heroImage.png',
-  imageAlt: 'Handballabwehr in 5:1-Formation mit vorgezogenem Spitzenspieler',
-  body: `Zwischen der kompakten 6:0 und der offensiven 3:2:1 steht die 5:1 – für viele Mannschaften der ideale Kompromiss. Sie behält die Sicherheit einer geschlossenen Kette am Kreis, stört aber gleichzeitig den Rückraum, indem ein Spieler vorgezogen wird. Genau dieser vorgezogene Spieler macht die 5:1 so wirkungsvoll gegen wurfstarke Distanzschützen und einen dominanten Spielmacher.
+  imageAlt: 'Abwehrformation mit vorgezogenem Spieler auf dem Handballfeld',
+  body: `Die 5:1 ist der einzige Systemwechsel, der im Amateurbereich zuverlässig funktioniert – und zwar aus einem einfachen Grund: Sie unterscheidet sich von der 6:0 nur in einer Position. Ein Innenverteidiger rückt heraus, die anderen fünf bleiben in einer vertrauten Ordnung.
+
+Genau darin liegt aber auch die häufigste Fehlvorstellung. Die 5:1 ist keine 6:0 mit einem zusätzlichen Störer. Sie ist ein System, in dem fünf Spieler ständig einen Raum abdecken müssen, den es in der 6:0 nicht gab.
 
 ## Die Grundordnung
 
-Die 5:1 besteht aus zwei Reihen:
+Fünf Verteidiger stehen am Torraumkreis: zwei Außenverteidiger, zwei Halbverteidiger und ein Innenverteidiger in der Mitte. Der sechste – der **Vorgezogene**, oft auch "die Spitze" – steht etwa auf Höhe der Neun-Meter-Linie, mittig vor dem Innenblock.
 
-- **Fünferkette** am Kreis: zwei Außen-, zwei Halb- und ein Innenverteidiger.
-- **Ein vorgezogener Spieler** (die „Spitze" oder der „Vorgezogene"), meist auf Höhe der Freiwurflinie im Zentrum.
+Die Abstände der hinteren Fünf sind größer als in der 6:0, weil dieselbe Breite mit einem Spieler weniger gedeckt werden muss. Das ist der strukturelle Preis des Systems und der Grund, warum die 5:1 mehr Beinarbeit verlangt.
 
-Die erste Zahl (5) steht für die hintere Kette, die zweite (1) für den vorgezogenen Spieler.
+## Aufgaben je Position
 
-## Die Aufgaben
+**Der Vorgezogene.** Die anspruchsvollste Abwehrposition im Handball. Er stört den Spielaufbau, verhindert Distanzwürfe aus der Mitte und unterbricht Anspiele an den Kreis. Er braucht Antizipation und Ausdauer – er läuft mehr als jeder andere Verteidiger – und vor allem Disziplin: Wer jedem Ball hinterherjagt, ist ständig aus der Position und nützt niemandem.
 
-| Position | Hauptaufgabe |
-| --- | --- |
-| Vorgezogener Spieler | Spielmacher stören, Passwege zumachen, Distanzwürfe aus der Mitte verhindern, Zweikämpfe provozieren |
-| Innenverteidiger | Kreisläufer decken, hinter der Spitze absichern |
-| Halbverteidiger | Rückraum halbrechts/halblinks stellen, mit der Spitze zusammenarbeiten |
-| Außenverteidiger | Außenangreifer decken, zur Mitte helfen |
+Seine wichtigste Fähigkeit ist die Entscheidung, **wann** er attackiert. Die Faustregel: Er geht auf den Ballführenden, wenn dieser in Wurfposition kommt oder wenn ein Anspiel an den Kreis droht. Sonst bleibt er zwischen den beiden Rückraumspielern und deckt die Passwege.
 
-Der vorgezogene Spieler ist der Schlüssel: Er braucht Antizipation, Laufbereitschaft und Kondition, denn er stört ständig, ohne den Ball direkt zu erobern. Häufig übernimmt diese Rolle ein spielintelligenter, beweglicher Verteidiger.
+**Der Innenverteidiger.** Er ist jetzt allein in der Mitte und muss beide Seiten des Kreisläufers abdecken. Das verlangt ständige Kommunikation mit den Halbverteidigern – und die Bereitschaft, Räume aufzugeben, wenn der Vorgezogene herausgeht.
 
-## Was die 5:1 bewirkt
+**Die Halbverteidiger.** Ihre Aufgabe wächst gegenüber der 6:0 erheblich. Sie verteidigen die Rückraumspieler und müssen gleichzeitig die Naht zur Mitte schließen, wenn der Vorgezogene auf ihre Seite arbeitet. Sie sind die Position, an der die 5:1 im Amateurbereich am häufigsten scheitert.
 
-Der vorgezogene Spieler erzeugt Druck genau dort, wo die 6:0 schwach ist – im zentralen Rückraum:
+**Die Außenverteidiger.** Wie in der 6:0, aber mit größerem Weg: Die breitere Grundordnung verlangt mehr Laufarbeit zur Mitte.
 
-- Er **nimmt dem Spielmacher Zeit und Raum**, sodass dessen Distanzwurf und Übersicht leiden.
-- Er **zwingt zu Umwegen:** Der Angriff muss um die Spitze herumspielen, was langsamer und berechenbarer wird.
-- Er **provoziert Fehler:** unter Zeitdruck steigen Fehlpässe und Stürmerfouls.
+## Das Bewegungsprinzip: die Fünf arbeiten für die Eins
 
-Gleichzeitig bleibt die Fünferkette dahinter kompakt genug, um den Kreis und die Nahwurfzone zu sichern.
+Der Kernsatz der 5:1 lautet: **Wenn der Vorgezogene attackiert, entsteht hinter ihm ein Loch, und jemand muss es schließen.**
 
-## Stärken der 5:1
+Konkret: Geht der Vorgezogene auf den linken Rückraumspieler heraus, rückt der linke Halbverteidiger einen Schritt zur Mitte, und der Innenverteidiger übernimmt dessen Raum mit. Die Kette schließt sich hinter dem Angriff. Diese Nachrückbewegung ist der eigentliche Trainingsinhalt der 5:1 – nicht das Attackieren.
 
-- **Gut gegen Distanzschützen:** Der Rückraum bekommt keinen freien Wurf aus der Mitte.
-- **Stört den Spielaufbau:** Ein dominanter Spielmacher wird gebunden.
-- **Flexibel:** leicht aus der 6:0 heraus zu wechseln und wieder dorthin zurückzukehren.
+Zwei Regeln, die den Unterschied machen:
 
-## Schwächen der 5:1
+**Der Vorgezogene kündigt an.** Ein kurzer Ruf, bevor er herausgeht. Ohne Ansage rückt niemand nach, und das Loch bleibt offen.
 
-- **Lücken neben der Spitze:** Der Raum links und rechts hinter dem vorgezogenen Spieler kann geöffnet werden.
-- **Anfällig für Kreuzen:** Ein gutes Kreuzen im Rückraum kann den Vorgezogenen aushebeln.
-- **Kondition:** Die Spitze läuft viel – bei Müdigkeit bricht die Störwirkung ein.
-- **Zwei Kreisläufer:** Spielt der Gegner mit zweitem Kreis, wird die Kette dünn.
+**Nach dem Attackieren geht er zurück in die Mitte, nicht mit dem Ball mit.** Der häufigste Fehler: Der Vorgezogene folgt dem Ball nach rechts, dann nach links, und ist irgendwann durchgehend außerhalb der Position.
 
-## Wann sich die 5:1 lohnt
+## Gegen welchen Gegner sie passt
 
-Die 5:1 ist ideal, wenn der Gegner seine Tore vor allem über den Rückraum und einen starken Spielmacher erzielt. Gegen ein Team, das über Tempo, Außen und Kreis kommt, ist sie riskanter. Viele Mannschaften nutzen sie deshalb **situativ**: als Wechselsystem, um den Rhythmus des Gegners zu brechen, oder gezielt in Phasen, in denen der gegnerische Rückraum heiß läuft.
+Die 5:1 ist stark gegen Mannschaften mit **einem dominanten Spielmacher** oder **starken Distanzschützen aus der Mitte**: Der Vorgezogene nimmt genau die Position aus dem Spiel, über die viele Amateurangriffe laufen.
 
-## Übungen für die 5:1
+Sie ist ebenfalls stark gegen Mannschaften, die den **Kreis über die Mitte anspielen** – der Vorgezogene sitzt genau im Passweg.
 
-1. **Zusammenspiel Spitze und Innen:** Der vorgezogene Spieler stört, der Innenverteidiger sichert den Raum dahinter ab – als festes Duo üben.
-2. **Herausrücken und Übergeben:** Wie wird der Rückraumspieler von Halb zu Spitze übergeben, ohne Lücke?
-3. **Gegen Kreuzen:** Angriff kreuzt bewusst, Abwehr übt die Übergabe und das Schließen der Lücke.
-4. **Wechsel 6:0 zu 5:1:** auf ein Kommando zwischen beiden Systemen umschalten.
+Sie ist schwach gegen Mannschaften, die über die **Halbpositionen und die Außen** angreifen: Wenn der Angriff die Mitte gar nicht braucht, läuft der Vorgezogene ins Leere und ihr verteidigt effektiv mit fünf Leuten. Ebenso schwach gegen Mannschaften mit **zwei Kreisläufern**, weil der einzelne Innenverteidiger beide nicht halten kann.
 
-Wie bei jeder Abwehr entscheidet die **Kommunikation**: Die Spitze und der Innenblock müssen ständig absprechen, wer übernimmt und wer absichert.
+## Stärken und Schwächen
 
-## Wirkung der 5:1 überprüfen
+**Stärken:** stört den Spielaufbau, nimmt den Distanzwurf aus der Mitte, unterbricht Kreisanspiele, erzeugt Ballgewinne und damit Gegenstöße, und sie ist von der 6:0 aus in wenigen Wochen erreichbar.
 
-Ob die 5:1 den gegnerischen Rückraum wirklich entschärft, siehst du an der Wurfverteilung – die Systematik dahinter beschreibt der Ratgeber zur [datenbasierten Spielanalyse](/ratgeber/handball-spielanalyse). Sinken die Distanztore und steigen die technischen Fehler des Gegners, wirkt das System. Mit **Statix** lässt sich die [Handball-Statistik per Tap](/) erfassen – Gegentore nach Zonen und provozierte Ballverluste live – so erkennst du sofort, ob sich der Systemwechsel auszahlt oder ob der Gegner die Lücken neben der Spitze findet.`,
+**Schwächen:** größere Abstände hinten, hoher Laufaufwand für den Vorgezogenen, anfällig gegen Angriffe über außen und gegen zwei Kreisläufer, und sie erzeugt mehr Zeitstrafen als die 6:0, weil mehr Zweikämpfe im offenen Raum stattfinden.
+
+Ein praktischer Hinweis zur Besetzung: Der Vorgezogene sollte nicht euer wichtigster Angriffsspieler sein. Die Position kostet so viel Kraft, dass sie den Angriff derselben Person messbar schwächt – ein Grund, warum die 5:1 Kadertiefe voraussetzt.
+
+## Der Aufbau über drei Einheiten
+
+**Einheit 1 – die Kette hinten.** Zuerst gar nicht die Spitze, sondern die fünf. Sie verschieben mit größeren Abständen als gewohnt, ohne Vorgezogenen. Wer das nicht sauber kann, braucht keinen Störer davor.
+
+**Einheit 2 – das Nachrücken.** Jetzt kommt der Vorgezogene dazu, aber ohne Abschluss: Er attackiert auf Zuruf, und die Kette übt ausschließlich das Schließen des entstehenden Raums. Der Trainer coacht nur das Nachrücken, nicht den Ballgewinn.
+
+**Einheit 3 – Entscheidung und Abschluss.** Der Vorgezogene entscheidet selbst, wann er herausgeht, und sagt es an. Jetzt mit Abschluss und mit Wertung: Punkte für Ballgewinne, aber Abzug für jeden Durchbruch durch die Mitte.
+
+## Kennzahlen zur Kontrolle
+
+Die 5:1 lässt sich präziser bewerten als jedes andere System, weil ihre Schwächen an bestimmten Orten auftreten:
+
+**Gegentore nach Durchbruch durch die Mitte.** Die direkteste Rückmeldung auf das Nachrücken. Steigt diese Zahl nach der Umstellung, funktioniert die Kette nicht.
+
+**Ballgewinne pro Spiel.** Der erwartete Ertrag. Wenn die 5:1 keine zusätzlichen Ballgewinne bringt, arbeitet der Vorgezogene nicht aktiv genug – oder ihr spielt sie gegen den falschen Gegner.
+
+**Gegentore von Außen.** Die typische Ausweichreaktion des Gegners. Steigt diese Zahl, verlagert er bewusst, und ihr müsst die Außenverteidiger entlasten.
+
+**Zeitstrafen des Vorgezogenen.** Führe sie getrennt. Mehr als eine pro Spiel bedeutet, dass er zu spät kommt und mit den Armen korrigiert – dann ist entweder die Position falsch besetzt oder der Laufweg zu lang.
+
+Vergleiche diese vier Zahlen mit denselben aus eurer 6:0-Zeit. Wenn die Gegentore insgesamt nicht sinken, aber die Ballgewinne steigen, ist die Umstellung trotzdem ein Gewinn – ihr habt dann Tempotore dazugewonnen.`,
+  modules: [
+    {
+      after: 'Die Grundordnung',
+      kind: 'formation',
+      system: '5-1',
+      caption:
+        'Die 5:1 (blau): fünf Verteidiger am Kreis mit größeren Abständen, der Vorgezogene auf Höhe der Neun-Meter-Linie vor dem Innenblock.',
+    },
+  ],
   faqs: [
     {
       question: 'Was ist die 5:1-Abwehr im Handball?',
       answer:
-        'Die 5:1 ist ein Abwehrsystem mit einer Fünferkette am Kreis und einem vorgezogenen Spieler im Zentrum. Die 5 steht für die hintere Kette, die 1 für den vorgezogenen Spieler, der den Rückraum stört. Sie ist ein Kompromiss zwischen der kompakten 6:0 und der offensiven 3:2:1.',
+        'Fünf Verteidiger stehen am Torraumkreis, ein sechster – der Vorgezogene – steht etwa auf Höhe der Neun-Meter-Linie mittig davor. Sie unterscheidet sich von der 6:0 nur in dieser einen Position, was sie zur einzigen Systemumstellung macht, die im Amateurbereich zuverlässig gelingt.',
     },
     {
       question: 'Welche Aufgabe hat der vorgezogene Spieler in der 5:1?',
       answer:
-        'Er stört den Spielmacher, macht Passwege zu, verhindert freie Distanzwürfe aus der Mitte und provoziert Zweikämpfe und Fehler. Er braucht viel Antizipation, Laufbereitschaft und Kondition, weil er ständig Druck ausübt, ohne den Ball direkt zu erobern. Oft übernimmt ein spielintelligenter, beweglicher Verteidiger diese Rolle.',
+        'Er stört den Spielaufbau, verhindert Distanzwürfe aus der Mitte und unterbricht Anspiele an den Kreis. Entscheidend ist nicht, wie oft er attackiert, sondern wann: Er geht auf den Ballführenden, wenn dieser in Wurfposition kommt oder ein Kreisanspiel droht – sonst bleibt er zwischen den Rückraumspielern und deckt die Passwege.',
     },
     {
       question: 'Wann sollte man die 5:1-Abwehr spielen?',
       answer:
-        'Vor allem gegen Mannschaften, die ihre Tore über einen starken Rückraum und einen dominanten Spielmacher erzielen. Gegen Teams, die über Tempo, Außen und Kreis kommen, ist sie riskanter. Viele Mannschaften nutzen die 5:1 situativ als Wechselsystem, um den Rhythmus des Gegners zu brechen.',
+        'Gegen Mannschaften mit einem dominanten Spielmacher oder starken Distanzschützen aus der Mitte und gegen Angriffe, die den Kreis über die Mitte anspielen. Ungeeignet ist sie gegen Gegner, die über die Halbpositionen und Außen angreifen, und gegen zwei Kreisläufer – dort läuft der Vorgezogene ins Leere.',
+    },
+    {
+      question: 'Was sind die Schwächen der 5:1-Abwehr?',
+      answer:
+        'Die hinteren fünf müssen dieselbe Breite mit einem Spieler weniger decken, also mit größeren Abständen. Dazu kommt der hohe Laufaufwand für den Vorgezogenen und eine höhere Zeitstrafenanfälligkeit, weil mehr Zweikämpfe im offenen Raum stattfinden. Der Vorgezogene sollte deshalb nicht euer wichtigster Angriffsspieler sein.',
     },
   ],
   relatedSlugs: [
-    'handball-abwehrsysteme',
-    'handball-3-2-1-abwehr',
     'handball-6-0-abwehr',
+    'handball-abwehrsystem-auswaehlen',
+    'handball-3-2-1-abwehr',
+    'handball-abwehrsysteme',
   ],
 };

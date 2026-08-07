@@ -5,7 +5,7 @@ export const handballAthletiktraining: Article = {
   title: 'Athletik und Kondition planen: was in eine Handballwoche passt',
   metaTitle: 'Athletiktraining im Handball: Wochenplanung & Übungen',
   metaDescription:
-    'Athletiktraining im Handball planen: Kraft, Sprungkraft, Schnelligkeit und Beweglichkeit in eine Trainingswoche einordnen – mit Zeitleiste, Übungskarten und Messgrößen.',
+    'Athletiktraining im Handball planen: Kraft, Sprungkraft und Schnelligkeit in eine Trainingswoche einordnen – mit Zeitleiste und Übungskarten. Mit Wochenraster.',
   keywords: [
     'athletiktraining handball',
     'handball kondition verbessern',
@@ -23,8 +23,8 @@ export const handballAthletiktraining: Article = {
   readingTimeMinutes: 11,
   excerpt:
     'Athletik scheitert im Amateurhandball fast nie am Wissen, sondern an der Zeit. Wie du Kraft, Sprungkraft, Schnelligkeit und Beweglichkeit in zwei bis drei Hallentermine bekommst – und was du an die Spieler auslagerst.',
-  imagePath: '/heroImage.png',
-  imageAlt: 'Handballmannschaft beim Athletikteil des Trainings in der Halle',
+  imagePath: '/turnier-spielplan-ergebnisse.jpg',
+  imageAlt: 'Spielplan und Belastungsverteilung einer Saison in der Statix-App',
   body: `Die meisten Amateurmannschaften haben zwei bis drei Trainingseinheiten pro Woche und eine Halle, in der sie nicht früher anfangen können. Wer in dieser Situation ein vollständiges Athletikprogramm unterbringen will, streicht Handball – und bekommt eine körperlich bessere Mannschaft, die schlechter spielt.
 
 Die eigentliche Trainerfrage lautet deshalb nicht "Welche Übungen?", sondern **"Was gehört in die Halle, was lagere ich aus, und was lasse ich weg?"**. Dieser Artikel beantwortet sie in dieser Reihenfolge.

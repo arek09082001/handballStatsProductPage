@@ -2,112 +2,138 @@ import type { Article } from '../../types';
 
 export const handballManndeckung: Article = {
   slug: 'handball-manndeckung',
-  title: 'Manndeckung im Handball: wann sie sich lohnt und wie du sie einsetzt',
-  metaTitle: 'Manndeckung im Handball: wann und wie einsetzen',
+  title: 'Manndeckung im Handball: Phasenmittel und Ausbildungssystem',
+  metaTitle: 'Manndeckung im Handball: Aufbau, Einsatz, Kennzahlen',
   metaDescription:
-    'Manndeckung im Handball richtig einsetzen: wann sie sich lohnt, wie du sie trainierst und welche Varianten es gibt. Praxistipps für offensive Abwehr und Schlussphasen.',
+    'Manndeckung im Handball: Grundordnung, Aufgaben je Verteidiger, Übergaben, wann sie sich lohnt, wie du sie aufbaust und woran du ihre Wirkung abliest.',
   keywords: [
     'manndeckung handball',
-    'manndeckung handball trainieren',
-    'offensive deckung handball',
-    'ein gegen ein abwehr handball',
-    'handball manndeckung wann',
-    'abwehr umstellen handball',
-    'manndeckung schlussphase',
+    'handball mann gegen mann',
+    'offensive einzeldeckung handball',
+    'handball manndeckung trainieren',
+    'handball 1:5 deckung',
+    'manndeckung jugend handball',
+    'handball abwehr schlussphase',
   ],
   category: 'Taktik & Systeme',
   archetype: 'system',
-  datePublished: '2026-07-07',
+  datePublished: '2026-07-17',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 3,
+  readingTimeMinutes: 7,
   excerpt:
-    'Die Manndeckung ist die schärfste Waffe im Abwehrarsenal. Hier erfährst du, wann sie sich lohnt, welche Varianten es gibt und wie du sie mit deinem Team einstudierst.',
+    'Als Dauerlösung zu teuer, als Phasenmittel unterschätzt und im Nachwuchs unverzichtbar. Wann Manndeckung sich lohnt, wie du sie aufbaust und woran du erkennst, ob sie greift.',
   imagePath: '/statsTableInGame.png',
-  imageAlt: 'Handball-Abwehr in offensiver Manndeckung',
-  body: `Die Manndeckung ist die aggressivste Form der Abwehr: Jeder verteidigt seinen direkten Gegenspieler über das ganze Feld oder in der eigenen Hälfte. Sie ist riskant, aber in den richtigen Momenten spielentscheidend – etwa, wenn du einen Rückstand aufholen oder einen überragenden Gegenspieler aus dem Spiel nehmen musst. In diesem Ratgeber erfährst du, wann sich die Manndeckung lohnt, welche Varianten es gibt und wie du sie trainierst.
+  imageAlt: 'Abwehrstatistik mit Ballgewinnen einer Handballmannschaft in der Statix-App',
+  body: `Manndeckung hat im Amateurhandball zwei Gesichter. Im Erwachsenenbereich ist sie ein Phasenmittel: ein Wechsel, mit dem du einen Rückstand angreifst oder einen Spielrhythmus zerstörst. Im Nachwuchs ist sie das wichtigste Ausbildungssystem überhaupt, weil sie jedem Kind beibringt, was ein Zweikampf ist.
 
-## Was ist Manndeckung?
+Was sie fast nie ist: eine Dauerlösung für eine Erwachsenenmannschaft über 60 Minuten. Der Laufaufwand ist zu hoch, und ein einziger überlaufener Verteidiger erzeugt eine freie Torgelegenheit.
 
-Bei der Manndeckung bekommt jeder Abwehrspieler einen festen Gegenspieler zugeteilt, den er eng verteidigt – im Gegensatz zur Raumdeckung, bei der jeder eine Zone sichert. Ziel ist, den Spielfluss des Gegners zu stören, Pässe zu erschweren und Ballgewinne zu erzwingen. Die Manndeckung kann über das ganze Feld oder erst ab der Mittellinie beginnen.
+## Die Grundordnung
 
-Sie ist laufintensiv und riskant: Gelingt einem Angreifer der Durchbruch, entsteht schnell eine freie Wurfchance. Deshalb ist sie kein Dauerzustand, sondern ein gezieltes Mittel.
+Jeder Verteidiger bekommt einen Gegenspieler zugeteilt und deckt ihn über das ganze Feld oder ab einer vereinbarten Linie – meistens ab der Mittellinie oder ab neun Metern. Es gibt keine Raumzuordnung; wo dein Gegenspieler hingeht, gehst du hin.
 
-## Wann sich Manndeckung lohnt
+Der Verteidiger positioniert sich **torseitig**: zwischen seinem Gegenspieler und dem eigenen Tor, mit leichtem Abstand, sodass er auf einen Antritt reagieren kann. Ein Verteidiger, der neben oder vor seinem Gegenspieler steht, ist beim ersten Tempowechsel geschlagen.
 
-Die Manndeckung ist ein Werkzeug für bestimmte Situationen, nicht für 60 Minuten. Typische Anlässe:
+Eine verbreitete Zwischenform ist die **offensive Einzeldeckung**, oft als 1:5 oder 2:4 bezeichnet: Ein oder zwei Verteidiger übernehmen den gefährlichsten Angreifer in Manndeckung, die übrigen bleiben in einer Raumordnung. Das ist im Amateurbereich die praktikablere Variante, weil sie nur eine Person voll belastet.
 
-- **Rückstand aufholen:** Du brauchst schnelle Ballgewinne und willst das Tempo erhöhen – die Manndeckung erzwingt Fehler und Konter.
-- **Zeit unter Druck setzen:** In der Schlussphase kann sie den Gegner zu hektischen Aktionen zwingen.
-- **Einen Schlüsselspieler ausschalten:** Ein überragender Rückraumschütze oder Spielmacher wird eng gedeckt, oft in einer Mischform.
-- **Gegen einen unsicheren Aufbau:** Teams, die Ballverluste unter Druck neigen, kannst du mit Manndeckung zermürben.
-- **Als Überraschung:** ein kurzer Wechsel zur Manndeckung bringt den Gegner aus dem Rhythmus.
+## Aufgaben je Verteidiger
 
-Wichtig ist der bewusste Einsatz: Wer die Manndeckung im richtigen Moment zieht, gewinnt Spiele – wer sie planlos einsetzt, verschenkt einfache Tore.
+**Der Zuständige.** Er kennt seinen Gegenspieler namentlich und übernimmt ihn ab der vereinbarten Linie. Seine Aufgabe ist nicht, den Ball zu erobern, sondern den Gegenspieler aus dem Spiel zu nehmen – ein Angreifer, der keinen Ball bekommt, ist genauso wirkungslos wie einer, der ihn verliert.
 
-## Die wichtigsten Varianten
+**Die Ballfernen.** Sie stehen nicht nur bei ihrem Mann, sondern schauen mit. Wenn ein Mitspieler überlaufen wird, muss jemand aushelfen – und wer aushilft, gibt seinen eigenen Gegenspieler kurzzeitig frei. Diese Absprache ist die schwierigste Aufgabe des Systems.
 
-Manndeckung gibt es nicht nur in einer Form. Die gängigsten Varianten:
+**Der Torwart.** Er wird in der Manndeckung deutlich wichtiger, weil es zwangsläufig mehr freie Abschlüsse gibt. Er sollte wissen, dass das so ist – sonst wirkt jedes Gegentor wie sein Fehler.
 
-| Variante | Beschreibung | Einsatz |
-| --- | --- | --- |
-| Ganzfeld-Manndeckung | jeder deckt seinen Gegner über das ganze Feld | großer Rückstand, hohes Risiko |
-| Halbfeld-Manndeckung | Manndeckung ab der Mittellinie | Druck ohne ganz so hohes Risiko |
-| Offensive Einzeldeckung (1:5) | ein Spieler deckt einen Gegner eng, der Rest Raum | einen Schlüsselspieler ausschalten |
-| Situative Manndeckung | kurzzeitig, z. B. in den letzten Angriffen | Spiel entscheiden |
+## Das Bewegungsprinzip: Übergabe statt Verfolgung
 
-Gerade die offensive Einzeldeckung, bei der ein Verteidiger den besten Gegenspieler herausnimmt und die anderen fünf im Raum bleiben, ist ein flexibles Mittel, das viele Teams unterschätzen.
+Der Kernsatz: **Wer stur folgt, wird ausgespielt; wer nie folgt, verliert seinen Mann.**
 
-## Worauf es individuell ankommt
+Sobald zwei Angreifer kreuzen, entsteht die Kernfrage der Manndeckung: durchgehen oder übergeben? Beides ist richtig, aber es muss vorher entschieden und laut gerufen werden.
 
-Manndeckung ist zuerst Eins-gegen-eins. Jeder Verteidiger braucht dafür:
+**Durchgehen** heißt, jeder bleibt bei seinem Gegenspieler und läuft mit. Sauber, aber anfällig gegen Sperren.
 
-- **Beinarbeit und Schnelligkeit,** um am Gegner zu bleiben,
-- **Antizipation,** um Pässe und Laufwege zu lesen,
-- **Zweikampfstärke,** ohne unnötige Fouls zu ziehen,
-- **Kondition,** denn Manndeckung ist extrem laufintensiv.
+**Übergeben** heißt, die beiden Verteidiger tauschen die Gegenspieler. Schneller, aber nur mit Ansage möglich – und wenn beide gleichzeitig übergeben, laufen zwei Verteidiger zum selben Angreifer.
 
-Wer seinen Gegner ständig anfoult, schwächt das Team durch Zeitstrafen. Ziel ist, den Gegner zu stören und vom Ball zu trennen – nicht, ihn umzurennen.
+Für den Amateurbereich lautet die praktikable Regel: **Bei Kreuzbewegungen wird übergeben, bei Sperren wird durchgegangen.** Eine feste Regel schlägt eine flexible, die im Spiel niemand anwendet.
 
-## Als Team verteidigen
+## Gegen welchen Gegner sie passt
 
-Auch in der Manndeckung verteidigt man nicht allein. Wichtig sind:
+Manndeckung lohnt sich in vier Situationen:
 
-- **Aushelfen und Übergeben:** bei Sperren und Kreuzungen die Gegenspieler sauber übernehmen, statt sich abschütteln zu lassen.
-- **Kommunikation:** ständig reden, wer wen hat und wer aushilft.
-- **Absicherung:** eine klare Absprache, wer bei einem Durchbruch das Tor sichert.
-- **Umschalten:** nach Ballgewinn sofort ins Tempospiel, denn genau dafür deckt man Mann.
+**Rückstand in der Schlussphase.** Ihr braucht Ballgewinne und akzeptiert dafür Gegentore. Das ist der klassische Einsatz und der einzige, den fast jede Mannschaft kennt.
 
-Ohne Kommunikation zerfällt die Manndeckung schnell in fünf Einzelduelle, die der Gegner mit einer Kreuzung aushebelt.
+**Gegen einen dominanten Einzelspieler.** Als offensive Einzeldeckung: Ein Verteidiger nimmt ihn aus dem Spiel, die anderen fünf stehen in der Raumordnung.
 
-## Manndeckung trainieren
+**Gegen eine Mannschaft, die nur einen Spielaufbau kennt.** Wenn der Gegner jeden Angriff über dieselbe Position startet, zerstört Manndeckung seinen Rhythmus.
 
-Damit die Manndeckung im Spiel funktioniert, muss sie eingeübt sein:
+**Im Nachwuchs, als Ausbildungssystem.** Hier geht es nicht um Ergebnisse. Kinder, die Manndeckung spielen, lernen Beinarbeit, Abstand und Antizipation – die Grundlagen für jedes spätere Raumsystem. Viele Landesverbände schreiben für untere Jugendklassen ohnehin offensive Formen vor.
 
-- **Eins-gegen-eins-Duelle** als Basis für Beinarbeit und Zweikampf.
-- **Übergeben bei Sperren** gezielt üben, damit keine Lücken entstehen.
-- **Umschaltübungen:** Ballgewinn und sofortiger Konter als belohntes Ziel.
-- **Spielformen mit Auslöser:** auf ein Kommando von Raum- auf Manndeckung wechseln.
+Sie lohnt sich **nicht** gegen körperlich überlegene Mannschaften und nicht, wenn eure Beinarbeit schwach ist: Dann produziert sie Durchbrüche und Zeitstrafen.
 
-Trainiere auch das schnelle Umstellen zwischen Deckungsformen – die Überraschung ist ein großer Teil der Wirkung.
+## Stärken und Schwächen
 
-## Wirkung messen
+**Stärken:** hoher Druck, viele Ballgewinne und Tempotore, zerstört den gegnerischen Rhythmus, überraschend als Phasenwechsel, unschlagbarer Ausbildungswert im Nachwuchs.
 
-Ob deine Manndeckung wirkt, siehst du an den Zahlen: Erzwingt sie Ballgewinne und Zeitstrafen beim Gegner? Führt sie zu einfachen Kontertoren? Oder kassierst du zu viele einfache Durchbrüche?`,
+**Schwächen:** sehr hoher Laufaufwand, jeder verlorene Zweikampf ist eine freie Torgelegenheit, hohe Zeitstrafenanfälligkeit, anfällig gegen Sperren des Kreisläufers, verlangt Kadertiefe für die Wechsel.
+
+Ein praktischer Punkt: Manndeckung über zehn Minuten kostet eine Amateurmannschaft mehr Kraft als 20 Minuten 6:0. Plan die Wechsel vorher, sonst hast du in der Schlussphase eine Abwehr, die nicht mehr laufen kann.
+
+## Der Aufbau über drei Einheiten
+
+**Einheit 1 – der Zweikampf.** Ohne System, nur Duelle: Beinarbeit, torseitige Position, Abstand halten. Wer den Zweikampf nicht kann, kann keine Manndeckung – dazu ausführlich im [Zweikampftraining](/ratgeber/handball-1-gegen-1-verbessern).
+
+**Einheit 2 – Übergaben.** Nur Kreuzbewegungen, immer dieselbe Regel: übergeben mit Ansage. Zwanzig Wiederholungen, bis der Ruf automatisch kommt. Danach Sperren, immer durchgehen.
+
+**Einheit 3 – Aushilfe.** Jetzt wird bewusst jemand überlaufen, und die Mannschaft muss aushelfen und den freigewordenen Angreifer wieder aufnehmen. Das ist die Situation, die im Spiel über das System entscheidet.
+
+## Kennzahlen zur Kontrolle
+
+Manndeckung wird fast immer nach Gefühl bewertet – "hat nichts gebracht" nach zwei Gegentoren. Zähl stattdessen die Phase getrennt aus:
+
+**Ballgewinne in der Manndeckungsphase.** Rechne sie auf Angriffe um, sonst vergleichst du unterschiedlich lange Phasen. Zwei Ballgewinne in fünf gegnerischen Angriffen sind ein sehr gutes Ergebnis.
+
+**Gegentore in der Phase, ebenfalls je Angriff.** Manndeckung kostet Gegentore – die Frage ist nur, ob sie mehr einbringt.
+
+**Tore nach Ballgewinn.** Der eigentliche Ertrag. Wenn ihr die Bälle erobert, aber nicht umschaltet, war der Aufwand umsonst.
+
+**Zeitstrafen in der Phase.** Über eine pro fünf Minuten Manndeckung ist zu viel, dann kommt ihr zu spät an die Gegenspieler.
+
+Die einfachste Auswertung: Notiere den Spielstand beim Umstellen und beim Zurückstellen. Über eine Saison siehst du daran, ob eure Manndeckung ein Werkzeug ist oder ein Verzweiflungsakt.`,
+  modules: [
+    {
+      after: 'Die Grundordnung',
+      kind: 'formation',
+      system: 'mann',
+      caption:
+        'Manndeckung (blau): jeder Verteidiger torseitig an seinem Gegenspieler, mit leichtem Abstand – keine Raumzuordnung, sondern sechs Einzelduelle.',
+    },
+  ],
   faqs: [
     {
       question: 'Was ist Manndeckung im Handball?',
       answer:
-        'Bei der Manndeckung verteidigt jeder Abwehrspieler einen fest zugeteilten Gegenspieler eng, statt eine Raumzone zu sichern. Ziel ist, den Spielfluss zu stören, Pässe zu erschweren und Ballgewinne zu erzwingen. Sie kann über das ganze Feld oder erst ab der Mittellinie gespielt werden.',
+        'Jeder Verteidiger bekommt einen Gegenspieler zugeteilt und deckt ihn ab einer vereinbarten Linie – meist ab der Mittellinie oder ab neun Metern. Es gibt keine Raumzuordnung. Der Verteidiger steht torseitig zwischen seinem Gegenspieler und dem eigenen Tor, mit genug Abstand, um auf einen Antritt reagieren zu können.',
     },
     {
       question: 'Wann setzt man Manndeckung im Handball ein?',
       answer:
-        'Vor allem situativ: um einen Rückstand mit schnellen Ballgewinnen aufzuholen, den Gegner in der Schlussphase unter Zeitdruck zu setzen, einen überragenden Schlüsselspieler auszuschalten oder als Überraschung, die den gegnerischen Rhythmus stört. Als Dauerlösung ist sie zu riskant und laufintensiv.',
+        'In vier Situationen: bei Rückstand in der Schlussphase, wenn ihr Ballgewinne braucht; gegen einen dominanten Einzelspieler als offensive Einzeldeckung; gegen eine Mannschaft, die jeden Angriff über dieselbe Position startet; und im Nachwuchs als Ausbildungssystem. Als Dauerlösung über 60 Minuten ist sie für Erwachsenenmannschaften zu teuer.',
+    },
+    {
+      question: 'Was ist eine offensive Einzeldeckung (1:5)?',
+      answer:
+        'Eine Mischform: Ein Verteidiger übernimmt den gefährlichsten Angreifer in Manndeckung, die übrigen fünf bleiben in einer Raumordnung. Im Amateurbereich ist das die praktikablere Variante, weil sie nur eine Person voll belastet und den Rest der Abwehr in der gewohnten Ordnung lässt.',
+    },
+    {
+      question: 'Übergeben oder durchgehen bei Kreuzbewegungen?',
+      answer:
+        'Für den Amateurbereich hat sich eine feste Regel bewährt: Bei Kreuzbewegungen wird übergeben, bei Sperren wird durchgegangen. Entscheidend ist die laute Ansage – wenn beide Verteidiger gleichzeitig übergeben, laufen zwei zum selben Angreifer. Eine feste Regel schlägt eine flexible, die im Spiel niemand anwendet.',
     },
   ],
   relatedSlugs: [
-    'handball-abwehrsysteme',
-    'handball-tempogegenstoss',
-    'handball-spielanalyse',
+    'handball-1-gegen-1-verbessern',
+    'handball-abwehrsystem-auswaehlen',
+    'handball-3-2-1-abwehr',
+    'handball-timeout-nutzen',
   ],
 };

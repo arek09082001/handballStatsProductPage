@@ -5,7 +5,7 @@ export const handballPositionenErklaert: Article = {
   title: 'Positionen und Anforderungsprofile: wen stellst du wohin?',
   metaTitle: 'Handball-Positionen: Anforderungsprofile für Trainer',
   metaDescription:
-    'Die sieben Handball-Positionen mit Anforderungsprofil: welche Aufgaben jede hat, worauf du bei der Besetzung achtest, ab wann du festlegst und was du je Position misst.',
+    'Die sieben Handball-Positionen mit Anforderungsprofil: welche Aufgaben jede hat, worauf du bei der Besetzung achtest und ab wann du festlegst. Mit Diagramm.',
   keywords: [
     'handball positionen',
     'handball anforderungsprofil',
@@ -23,8 +23,8 @@ export const handballPositionenErklaert: Article = {
   readingTimeMinutes: 8,
   excerpt:
     'Sieben Positionen, sieben Anforderungsprofile – und die Frage, ab wann du überhaupt festlegen solltest. Ein Nachschlagewerk für die Kaderplanung, nicht für die Selbstfindung.',
-  imagePath: '/gameListOverview.png',
-  imageAlt: 'Positionsübersicht und Spielerwerte einer Handballmannschaft in der Statix-App',
+  imagePath: '/teamManagement.png',
+  imageAlt: 'Kaderübersicht mit Positionen und Rollen in der Statix-App',
   body: `Eine Handballmannschaft besteht aus sieben Positionen mit sehr unterschiedlichen Anforderungen. Wer sie besetzt, trifft eine der folgenreichsten Trainerentscheidungen überhaupt – und trifft sie im Amateurbereich meistens nach Körpergröße und Verfügbarkeit.
 
 Dieser Artikel ist als Nachschlagewerk gedacht: Was verlangt jede Position, worauf achtest du bei der Besetzung, und was misst du, um zu prüfen, ob sie passt.

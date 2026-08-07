@@ -5,7 +5,7 @@ export const handballRegelnEinfachErklaert: Article = {
   title: 'Handballregeln einfach erklärt: das Nachschlagewerk für Trainer',
   metaTitle: 'Handballregeln einfach erklärt: Übersicht für Trainer',
   metaDescription:
-    'Die Handballregeln kompakt: Spielzeit, Schritte, Torraum, Fouls und Strafen in einer Tabelle, dazu Grenzfälle, Schiedsrichterzeichen und der Einstieg für Quereinsteiger.',
+    'Die Handballregeln kompakt: Spielzeit, Schritte, Torraum, Fouls und Strafen in einer Tabelle, dazu Grenzfälle und der Einstieg für Quereinsteiger. Mit Tabelle.',
   keywords: [
     'handballregeln',
     'handball regeln einfach erklärt',

@@ -5,7 +5,7 @@ export const handballTorwarttraining: Article = {
   title: 'Torwarttraining planen: Stellungsspiel, Ecken, Siebenmeter',
   metaTitle: 'Torwarttraining im Handball: Einheit, Übungen, Fehler',
   metaDescription:
-    'Torwarttraining im Handball planen, auch ohne Torwarttrainer: eine Einheit als Zeitleiste, sechs Übungskarten, Siebenmeter halten und woran du die Entwicklung abliest.',
+    'Torwarttraining im Handball planen, auch ohne Torwarttrainer: eine Einheit als Zeitleiste, sechs Übungskarten und wie ihr Siebenmeter angeht. Mit Fehlerbildern.',
   keywords: [
     'torwarttraining handball',
     'handball torwart übungen',

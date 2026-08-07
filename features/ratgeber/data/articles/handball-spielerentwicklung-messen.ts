@@ -5,7 +5,7 @@ export const handballSpielerentwicklungMessen: Article = {
   title: 'Spielerentwicklung messen: was sich zählen lässt und was nicht',
   metaTitle: 'Spielerentwicklung im Handball messen und belegen',
   metaDescription:
-    'Spielerentwicklung im Handball messen: welche Werte je Einsatzzeit vergleichbar sind, wie du eine Halbserie auswertest und welche Entwicklungsziele je Alter realistisch sind.',
+    'Spielerentwicklung im Handball messen: welche Werte je Einsatzzeit vergleichbar sind und welche Entwicklungsziele je Altersstufe realistisch sind. Mit Formel.',
   keywords: [
     'spielerentwicklung handball',
     'handball entwicklung messen',

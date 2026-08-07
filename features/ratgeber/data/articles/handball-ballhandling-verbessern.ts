@@ -5,7 +5,7 @@ export const handballBallhandlingVerbessern: Article = {
   title: 'Ballhandling trainieren: Übungen, Fehlerbilder, Coaching-Punkte',
   metaTitle: 'Ballhandling im Handball trainieren: Übungen & Fehler',
   metaDescription:
-    'Ballhandling im Handballtraining vermitteln: eine komplette Einheit als Zeitleiste, fünf Übungskarten mit Coaching-Punkten, die typischen Fehlerbilder und was du danach misst.',
+    'Ballhandling im Handballtraining vermitteln: eine Einheit als Zeitleiste, fünf Übungskarten mit Coaching-Punkten und die typischen Fehlerbilder. Mit Zeitleiste.',
   keywords: [
     'ballhandling handball',
     'ballgewöhnung handball',

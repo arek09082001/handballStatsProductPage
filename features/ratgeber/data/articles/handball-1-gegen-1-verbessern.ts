@@ -5,7 +5,7 @@ export const handball1Gegen1Verbessern: Article = {
   title: 'Zweikampf trainieren: Eins-gegen-eins in Angriff und Abwehr',
   metaTitle: 'Zweikampf im Handball trainieren: Angriff und Abwehr',
   metaDescription:
-    'Eins-gegen-eins im Handball trainieren: was der Zweikampf technisch verlangt, fünf Übungskarten mit Fehlerbildern, Progression von U12 bis Erwachsene und Bewertung.',
+    'Eins-gegen-eins im Handball trainieren: was der Zweikampf verlangt, fünf Übungskarten mit Fehlerbildern und die Progression von U12 bis Erwachsene. Mit Übungen.',
   keywords: [
     '1 gegen 1 handball',
     'zweikampf handball',

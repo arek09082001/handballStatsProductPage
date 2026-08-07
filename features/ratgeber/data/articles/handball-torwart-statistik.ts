@@ -5,7 +5,7 @@ export const handballTorwartStatistik: Article = {
   title: 'Torwartstatistik im Handball: Paradenquote fair auswerten',
   metaTitle: 'Torwartstatistik im Handball: Paradenquote richtig lesen',
   metaDescription:
-    'Paradenquote im Handball berechnen und fair bewerten: die Formel, Auswertung nach Wurfzonen, Richtwerte je Zone und die Fehler, die Torhüter zu Unrecht schlecht aussehen lassen.',
+    'Paradenquote im Handball berechnen und fair bewerten: die Formel, die Auswertung nach Wurfzonen und die Fehler, die Torhüter zu Unrecht abwerten. Mit Beispiel.',
   keywords: [
     'paradenquote handball',
     'torwartstatistik handball',

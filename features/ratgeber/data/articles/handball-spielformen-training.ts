@@ -5,7 +5,7 @@ export const handballSpielformenTraining: Article = {
   title: 'Spielformen im Training: lenken, coachen, auswerten',
   metaTitle: 'Spielformen im Handballtraining richtig einsetzen',
   metaDescription:
-    'Spielformen im Handballtraining gezielt einsetzen: wie du eine Spielform auf ein Ziel lenkst, fünf Formen mit Coaching-Punkten, Belastungseinordnung und Auswertung.',
+    'Spielformen im Handballtraining gezielt einsetzen: wie du eine Spielform auf ein Ziel lenkst, fünf Formen mit Coaching-Punkten und die Auswertung. Mit Formen.',
   keywords: [
     'spielformen handball',
     'handball spielformen training',

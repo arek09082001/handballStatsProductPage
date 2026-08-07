@@ -89,7 +89,7 @@ Wenn du an der Abschlussqualität gearbeitet hast, zeigt sich das nicht zuerst i
 - **Die Quote in den letzten zehn Minuten fällt weniger ab als früher.** Abschlussqualität unter Ermüdung ist der ehrlichste Test für eure Vorbereitung.
 - **Nach Zeitstrafen gegen euch bleibt die Quote stabil.** Wer in Unterzahl aus Verlegenheit wirft, sieht das sofort an einem Einbruch.
 
-Trag Tore und Würfe nach jedem Spiel in dieselbe Tabelle ein, getrennt nach Position und ohne Siebenmeter. Wenn dir das Mitschreiben am Spielfeldrand zu fehleranfällig ist – vor allem Fehlwürfe gehen im Eifer unter –, erfasst du dieselben Werte mit der [Handball-Statistik-App Statix](/) per Tap und bekommst Quote und Wurfbild direkt nebeneinander. Wer lieber mit einer Tabelle startet, nimmt die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage) als Zwischenschritt.`,
+Trag Tore und Würfe nach jedem Spiel in dieselbe Tabelle ein, getrennt nach Position und ohne Siebenmeter. Wenn dir das Mitschreiben am Spielfeldrand zu fehleranfällig ist – vor allem Fehlwürfe gehen im Eifer unter –, erfasst du dieselben Werte mit einer [Handball-Statistik-App](/) per Tap und bekommst Quote und Wurfbild direkt nebeneinander. Welcher Weg zu deiner Situation passt, klärt der Vergleich [Zettel, Excel oder App](/ratgeber/handball-statistik-zettel-excel-app).`,
   modules: [
     {
       kind: 'answerBox',

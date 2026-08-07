@@ -5,7 +5,7 @@ export const handballMinihandballKinder: Article = {
   title: 'Minihandball anleiten: eine Einheit, die 20 Kinder beschäftigt',
   metaTitle: 'Minihandball trainieren: Einheit, Übungen, Fehlerbilder',
   metaDescription:
-    'Minihandball mit Kindern anleiten: eine Einheit als Zeitleiste, fünf Spielformen mit Coaching-Punkten, typische Fehler in der Anleitung und was du beobachten solltest.',
+    'Minihandball mit Kindern anleiten: eine Einheit als Zeitleiste, fünf Spielformen mit Coaching-Punkten und die typischen Fehler in der Anleitung. Mit Ablaufplan.',
   keywords: [
     'minihandball',
     'handball kinder training',

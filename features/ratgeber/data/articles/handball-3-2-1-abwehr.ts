@@ -2,117 +2,138 @@ import type { Article } from '../../types';
 
 export const handball321Abwehr: Article = {
   slug: 'handball-3-2-1-abwehr',
-  title: 'Die 3:2:1-Abwehr im Handball: offensiv verteidigen und Rückraum stören',
-  metaTitle: 'Die 3:2:1-Abwehr im Handball erklärt',
+  title: 'Die 3:2:1-Abwehr: drei Reihen, hoher Ertrag, hoher Preis',
+  metaTitle: 'Die 3:2:1-Abwehr im Handball: Aufbau und Aufgaben',
   metaDescription:
-    'Die 3:2:1-Abwehr im Handball erklärt: Aufbau, Aufgaben, Vor- und Nachteile. So verteidigst du offensiv, störst den Rückraum und erzwingst Ballgewinne.',
+    'Die 3:2:1-Abwehr im Handball: Grundordnung in drei Reihen, Aufgaben je Position, das Prinzip des Herausarbeitens, gegen wen sie passt und wie du sie aufbaust.',
   keywords: [
-    '3 2 1 abwehr handball',
-    '3-2-1 deckung handball',
+    '3:2:1 abwehr handball',
     'offensive abwehr handball',
-    'handball abwehrsystem 3-2-1',
-    'rückraum stören handball',
-    'abwehr gegen starken rückraum',
-    'handball deckungssystem',
+    'handball 3 2 1 verteidigen',
+    'handball abwehr spitze',
+    'handball offensive deckung',
+    '3-2-1 abwehr aufgaben',
+    'handball abwehr umstellen',
   ],
   category: 'Taktik & Systeme',
   archetype: 'system',
-  datePublished: '2026-07-06',
+  datePublished: '2026-07-20',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 3,
+  readingTimeMinutes: 8,
   excerpt:
-    'Die 3:2:1-Abwehr ist die Antwort auf einen starken, wurfgewaltigen Rückraum. Hier erfährst du Aufbau, Aufgaben der Positionen sowie Vor- und Nachteile dieses offensiven Systems.',
-  imagePath: '/statsTableInGame.png',
-  imageAlt: 'Taktiktafel einer 3:2:1-Abwehr im Handball',
-  body: `Wenn der Gegner einen wurfstarken Rückraum hat und aus der zweiten Reihe Tor um Tor wirft, hilft kein passives Abwarten am Sechsmeter. Die 3:2:1-Abwehr rückt dem Rückraum entgegen, stört Würfe früh und zwingt den Gegner zu anderen Lösungen. Sie ist anspruchsvoll, aber sehr wirkungsvoll. In diesem Ratgeber erfährst du, wie die 3:2:1 aufgebaut ist, welche Aufgaben die Positionen haben und wann sie sich lohnt.
+    'Die offensivste der geordneten Abwehrformen: viel Druck, viele Ballgewinne – und ein Trainingsaufwand, den die meisten Amateurmannschaften unterschätzen.',
+  imagePath: '/aiAnalyze2.png',
+  imageAlt: 'Analyse der Gegentorverteilung einer Handballmannschaft in der Statix-App',
+  body: `Die 3:2:1 ist die Abwehr, die im Amateurbereich am häufigsten eingeführt und am häufigsten wieder abgeschafft wird. Der Grund ist selten, dass sie nicht funktioniert – sie funktioniert sehr gut. Der Grund ist, dass sie dauerhafte Trainingszeit verlangt, die die meisten Mannschaften nicht haben.
 
-## Was bedeutet 3:2:1?
+Wenn du sie einführst, dann als Projekt über eine Saison, nicht als Antwort auf drei verlorene Spiele.
 
-Die Zahlen beschreiben die Staffelung der sechs Abwehrspieler in drei Reihen – von der Torraumlinie nach vorn:
+## Die Grundordnung
 
-- **3** Spieler bilden die hinterste Reihe direkt am Sechsmeter (die beiden Außenverteidiger und ein Halbverteidiger auf der einen Seite),
-- **2** Spieler stehen davor als mittlere Reihe (die Halbverteidiger),
-- **1** Spieler steht ganz vorn als vorgezogene Spitze am Neunmeter.
+Drei Reihen, gestaffelt in die Tiefe:
 
-Das Ergebnis ist eine tiefe, gestaffelte Abwehr, die den Rückraum weit vor dem Tor unter Druck setzt. Sie ist damit deutlich offensiver als eine flache 6:0.
+**Die erste Reihe** besteht aus drei Innenverteidigern am Torraumkreis. Sie sichern den Kreisläufer und den Nahdistanzraum.
 
-## Die Aufgaben der Positionen
+**Die zweite Reihe** sind zwei Halbverteidiger, etwa auf Höhe der Sieben- bis Acht-Meter-Marke, seitlich versetzt.
 
-Jede Reihe hat eine klare Rolle. Nur wenn alle zusammenarbeiten, funktioniert das System.
+**Die dritte Reihe** ist ein einzelner Spieler, die Spitze, deutlich vorgezogen auf etwa zehn Meter.
 
-| Position | Aufgabe |
-| --- | --- |
-| Vorderster Spieler (die „1“) | den Spielmacher stören, Pässe abfangen, Wurf aus der Mitte verhindern |
-| Mittlere Reihe (die „2“) | die Halbpositionen früh angreifen, Rückraumwürfe blocken |
-| Hintere Reihe (die „3“) | Außen und Kreis sichern, absichern bei Durchbrüchen |
+Der Unterschied zur 5:1 ist mehr als eine Position: In der 5:1 arbeitet ein Spieler vorn und fünf hinten. In der 3:2:1 sind drei Spieler dauerhaft außerhalb der Kreislinie. Das erzeugt Druck auf den gesamten Angriffsaufbau – und einen deutlich größeren Raum, den die hinteren drei abdecken müssen.
 
-Der vorderste Spieler ist der Aktivposten: Er stört den Aufbau, muss aber auch schnell zurück, wenn der Ball an ihm vorbeigeht. Die mittlere Reihe attackiert die gefährlichen Rückraumschützen, die hintere Reihe hält das Zentrum und die Außen dicht.
+## Aufgaben je Position
 
-## Wann sich die 3:2:1 lohnt
+**Die Spitze.** Sie attackiert den Ballführenden in der Mitte, lenkt den Angriff auf eine Seite und verhindert schnelle Seitenwechsel. Sie braucht Ausdauer und Antizipation und darf sich nicht ausspielen lassen – ein überlaufener Spitzenspieler erzeugt eine Vier-gegen-Fünf-Situation.
 
-Die 3:2:1 ist kein Standard für jede Situation, sondern eine gezielte Antwort. Sie lohnt sich besonders:
+**Die zweite Reihe.** Die eigentlichen Arbeitspositionen. Diese beiden verteidigen die Rückraumspieler im Zweikampf, helfen zur Spitze aus und müssen gleichzeitig die Naht zur ersten Reihe schließen. Sie legen die meisten Meter zurück und entscheiden über Erfolg oder Misserfolg des Systems.
 
-- gegen einen **wurfstarken Rückraum**, der aus der Distanz trifft,
-- wenn du **Tempo erzeugen** und über Ballgewinne kontern willst,
-- gegen Teams mit **unsicherem Passspiel**, das du unter Druck setzen kannst,
-- als **Wechsel**, um einen eingespielten Angriff aus dem Rhythmus zu bringen.
+**Die erste Reihe.** Die drei Innenverteidiger sichern den Kreis und decken die Räume, die entstehen, wenn die zweite Reihe herausarbeitet. Sie brauchen Größe und Blockstärke – und sie müssen laut sein, weil sie als Einzige das ganze Bild sehen.
 
-Weniger geeignet ist sie gegen sehr laufstarke, kreisbetonte Teams, die die entstehenden Räume geschickt bespielen.
+## Das Bewegungsprinzip: herausarbeiten und schließen
 
-## Vor- und Nachteile
+Der Kern der 3:2:1 ist eine ständige Kettenreaktion: **Jedes Herausarbeiten eines Verteidigers erzeugt einen Raum, den ein anderer schließen muss.**
 
-Wie jedes offensive System hat die 3:2:1 zwei Seiten:
+Die Reihenfolge ist immer dieselbe. Die Spitze attackiert und lenkt den Ball auf eine Seite. Der ballnahe Spieler der zweiten Reihe nimmt den Rückraumspieler auf. Der ballnahe Innenverteidiger rückt zur Seite und schließt die Lücke, die dadurch entsteht. Die beiden ballfernen Innenverteidiger schieben mit, um den Kreisläufer nicht zu verlieren.
 
-**Vorteile:**
-- stört Rückraumwürfe früh und effektiv,
-- erzeugt Ballgewinne und Tempogegenstöße,
-- bringt den gegnerischen Aufbau aus dem Konzept.
+Das klingt kompliziert, weil es kompliziert ist. Genau deshalb braucht die 3:2:1 mehr Trainingszeit als jedes andere System – und genau deshalb funktioniert sie nur, wenn die Ansagen sitzen.
 
-**Nachteile:**
-- laufintensiv und konditionell fordernd,
-- anfällig für Lücken, wenn das Übergeben nicht klappt,
-- verwundbar über Kreis und Tempospiel, wenn ein Angreifer durchbricht.
+Die zweite Regel: **Rückwärts arbeiten ist Teil des Systems.** Ein Verteidiger, der herausgearbeitet hat, muss anschließend wieder zurück in die Ordnung. Wer vorn bleibt, weil er den Zweikampf gewonnen hat, fehlt bei der nächsten Aktion.
 
-Deshalb braucht die 3:2:1 gute Beinarbeit, Kommunikation und Kondition. Ein einzelner Fehler beim Herausrücken öffnet schnell eine große Lücke.
+## Gegen welchen Gegner sie passt
 
-## Die Schlüssel: Herausrücken und Absichern
+Die 3:2:1 ist stark gegen Mannschaften, die **von außerhalb der Neun-Meter-Linie leben**: starke Distanzschützen, ruhiger Positionsangriff, viele Seitenwechsel. Sie nimmt genau diesen Angriffsstil aus dem Spiel.
 
-Der Kern der 3:2:1 sind zwei Bewegungen, die sauber ineinandergreifen müssen:
+Sie ist ebenfalls stark, wenn du **Ballgewinne brauchst** – etwa gegen einen Gegner, der dir läuferisch unterlegen ist und den ihr über Tempo schlagen wollt.
 
-- **Herausrücken:** Ein Abwehrspieler geht aktiv auf den Ballführenden zu, um Wurf und Pass zu stören.
-- **Absichern:** Der Nebenmann rückt nach, um die entstehende Lücke zu schließen.
+Sie ist schwach gegen Mannschaften mit **schnellen Durchbruchspielern**: Jeder herausgearbeitete Verteidiger ist ein Einzelduell im offenen Raum, und wer diese Duelle regelmäßig verliert, verliert das Spiel.
 
-Wenn beide Bewegungen abgestimmt sind, wirkt die Abwehr wie ein bewegliches Netz. Fehlt die Absicherung, entstehen genau die Lücken, die der Gegner sucht. Deshalb ist ständiges Reden – wer rückt heraus, wer sichert – unverzichtbar.
+Sie ist ebenfalls schwach gegen **zwei Kreisläufer**. Die erste Reihe kann nicht gleichzeitig zwei Spieler an der Linie halten und die Räume schließen, die die zweite Reihe hinterlässt.
 
-## Die 3:2:1 trainieren
+## Stärken und Schwächen
 
-Um das System einzuführen, arbeitest du am besten in Schritten:
+**Stärken:** hoher Druck auf den Angriffsaufbau, viele Ballgewinne und damit Tempotore, verhindert Distanzwürfe fast vollständig, bildet im Nachwuchs Zweikampfverhalten und Antizipation aus wie kein anderes System.
 
-- **Bewegungsmuster ohne Gegner:** Herausrücken und Absichern im Trockenlauf einschleifen.
-- **Halbe Positionen:** einzelne Angreifer bespielen einzelne Bereiche, die Abwehr übt das Übergeben.
-- **Volles Spiel mit Auslöser:** aus der 6:0 auf Kommando in die 3:2:1 wechseln.
-- **Umschalten belohnen:** jeder Ballgewinn führt zum sofortigen Konter.
+**Schwächen:** sehr hoher Trainingsaufwand, anfällig gegen Durchbrüche und gegen zwei Kreisläufer, hohe Zeitstrafenanfälligkeit, hoher Laufaufwand über 60 Minuten, und sie verzeiht einen unbeweglichen Spieler in der zweiten Reihe nicht.
 
-Führe die 3:2:1 nicht als kompliziertes Sondersystem ein, sondern als bewegliche Erweiterung dessen, was dein Team schon kann.
+Für den Nachwuchs ist der Ausbildungswert das entscheidende Argument: Eine C-Jugend, die 3:2:1 spielt, lernt Zweikampf, Beinarbeit und Antizipation – auch wenn sie dabei Spiele verliert. Das ist in dieser Altersstufe der bessere Handel.
 
-## Wirkung im Blick behalten
+## Der Aufbau über drei Einheiten
 
-Ob die 3:2:1 aufgeht, entscheidet sich an den Zahlen: Sinken die Rückraumtore des Gegners? Steigen deine Ballgewinne und Tempogegenstöße? Oder kassierst du zu viele einfache Tore über Kreis und Durchbruch?`,
+Drei Einheiten reichen für die 3:2:1 nicht aus, um sie spielreif zu machen – sie reichen, um sie einzuführen. Plane danach mindestens acht Wochen mit einem Abwehrblock pro Woche.
+
+**Einheit 1 – die Staffelung.** Ohne Ball. Die drei Reihen werden aufgebaut, die Abstände in die Tiefe festgelegt, gemeinsam nach links und rechts verschoben. Die Spitze bleibt zunächst passiv.
+
+**Einheit 2 – eine Kettenreaktion.** Nur eine Bewegung: Die Spitze attackiert nach links, alle anderen führen ihre Folgebewegung aus. Zwanzig Wiederholungen derselben Sache, langsam, mit Ansagen. Dann dasselbe nach rechts.
+
+**Einheit 3 – Zweikampf im offenen Raum.** Jetzt die Realität: Die zweite Reihe verteidigt einzeln gegen Rückraumspieler, während die erste Reihe schließt. Wertung mit Punkten für Ballgewinne und Abzug für Durchbrüche – so wird sichtbar, dass beides zusammengehört.
+
+## Kennzahlen zur Kontrolle
+
+Die 3:2:1 lohnt sich nur, wenn ihr Ertrag ihren Preis übersteigt. Beides ist zählbar:
+
+**Ballgewinne pro Spiel.** Der Ertrag. Wenn die 3:2:1 nicht deutlich mehr Ballgewinne bringt als eure 6:0, arbeitet sie nicht offensiv genug – oder ihr spielt sie gegen den falschen Gegner.
+
+**Tore nach Ballgewinn.** Erst diese Zahl macht Ballgewinne wertvoll. Wenn ihr die Bälle erobert, aber nicht umschaltet, ist der ganze Aufwand umsonst.
+
+**Gegentore nach Durchbruch.** Der Preis. Vergleiche sie mit eurer 6:0-Zeit. Wenn sie um mehr steigt, als die Tempotore einbringen, ist das System für diesen Kader zu teuer.
+
+**Zeitstrafen.** Steigen sie über fünf pro Spiel, verliert ihr das System-Argument in der Unterzahl wieder.
+
+Rechne am Ende der Halbserie einmal grob gegen: zusätzliche Tempotore minus zusätzliche Gegentore nach Durchbruch. Ist die Bilanz negativ, kehr zur [6:0](/ratgeber/handball-6-0-abwehr) oder zur [5:1](/ratgeber/handball-5-1-abwehr) zurück – das ist keine Niederlage, sondern eine ehrliche Auswertung.`,
+  modules: [
+    {
+      after: 'Die Grundordnung',
+      kind: 'formation',
+      system: '3-2-1',
+      caption:
+        'Die 3:2:1 (blau) in drei gestaffelten Reihen: drei Innenverteidiger am Kreis, zwei Halbverteidiger davor, die Spitze auf etwa zehn Metern.',
+    },
+  ],
   faqs: [
     {
       question: 'Was ist die 3:2:1-Abwehr im Handball?',
       answer:
-        'Die 3:2:1 ist ein offensives, tief gestaffeltes Abwehrsystem: drei Spieler stehen am Sechsmeter, zwei davor und einer vorgezogen am Neunmeter. Diese Staffelung setzt den Rückraum früh unter Druck und stört Distanzwürfe, ist damit deutlich offensiver als eine flache 6:0.',
+        'Eine offensive Abwehr in drei gestaffelten Reihen: drei Innenverteidiger am Torraumkreis, zwei Halbverteidiger auf sieben bis acht Metern und ein vorgezogener Spieler – die Spitze – auf etwa zehn Metern. Anders als in der 5:1 arbeiten drei Spieler dauerhaft außerhalb der Kreislinie.',
     },
     {
       question: 'Wann spielt man die 3:2:1-Abwehr?',
       answer:
-        'Vor allem gegen einen wurfstarken Rückraum, den man früh stören will, sowie wenn man über Ballgewinne Tempo erzeugen oder ein unsicheres Passspiel unter Druck setzen möchte. Auch als Wechsel, um einen eingespielten Angriff aus dem Rhythmus zu bringen, ist sie geeignet.',
+        'Gegen Mannschaften, die von außerhalb der Neun-Meter-Linie leben – starke Distanzschützen, ruhiger Positionsangriff, viele Seitenwechsel – und wenn ihr Ballgewinne für euer Tempospiel braucht. Im Nachwuchs lohnt sie sich zusätzlich als Ausbildungssystem, weil sie Zweikampf und Antizipation schult wie kein anderes.',
+    },
+    {
+      question: 'Was sind die Nachteile der 3:2:1-Abwehr?',
+      answer:
+        'Der hohe Trainingsaufwand vor allem: Jedes Herausarbeiten erzeugt einen Raum, den ein anderer schließen muss, und diese Kettenreaktionen brauchen Monate. Dazu kommt die Anfälligkeit gegen schnelle Durchbruchspieler und gegen zwei Kreisläufer sowie eine deutlich höhere Zeitstrafenanfälligkeit.',
+    },
+    {
+      question: 'Wie lange dauert es, eine 3:2:1 einzuführen?',
+      answer:
+        'Drei Einheiten reichen, um sie einzuführen, nicht um sie spielreif zu machen. Plane danach mindestens acht Wochen mit einem Abwehrblock pro Woche. Wer sie als Antwort auf drei verlorene Spiele einführt, wird sie nach vier Wochen wieder abschaffen.',
     },
   ],
   relatedSlugs: [
-    'handball-abwehrsysteme',
+    'handball-abwehrsystem-auswaehlen',
+    'handball-5-1-abwehr',
     'handball-manndeckung',
-    'handball-tempogegenstoss',
+    'handball-1-gegen-1-verbessern',
   ],
 };

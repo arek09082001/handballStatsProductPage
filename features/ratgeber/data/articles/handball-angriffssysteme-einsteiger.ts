@@ -5,7 +5,7 @@ export const handballAngriffssystemeEinsteiger: Article = {
   title: 'Angriffssysteme für Einsteiger: 3:3, 4:2 und das Spiel ohne Ball',
   metaTitle: 'Handball-Angriffssysteme: 3:3, 4:2 und Laufwege',
   metaDescription:
-    'Angriffssysteme im Handball für Einsteiger: Grundordnung 3:3 und 4:2, Aufgaben je Position, Bewegungsprinzip, gegen welche Abwehr was passt und wie du umstellst.',
+    'Angriffssysteme im Handball für Einsteiger: Grundordnung 3:3 und 4:2, Aufgaben je Position, das Spiel ohne Ball und gegen welche Abwehr was passt. Mit Diagramm.',
   keywords: [
     'angriffssystem handball',
     'handball 3 3 angriff',
