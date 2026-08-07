@@ -1,33 +1,10 @@
 {
   "footerSection": {
     "description": "Statix turns every game into precise statistics – shooting percentages, shot maps and AI analysis that help coaches and teams keep improving.",
-    "headings": {
-      "product": "Product",
-      "legal": "Legal",
-      "contact": "Contact"
-    },
-    "product": {
-      "register": "Register for free",
-      "demo": "Live demo",
-      "features": "All features",
-      "aboutStatix": "What is Statix?",
-      "liveTicker": "Live ticker",
-      "ratgeber": "Guide",
-      "faq": "Frequently asked questions",
-      "newsletter": "Newsletter",
-      "contact": "Contact",
-      "pricing": "Pricing",
-      "freeApp": "Start for free",
-      "forYouthCoaches": "For youth coaches",
-      "forClubs": "For clubs",
-      "shotQuotaCalculator": "Shot quota calculator",
-      "excelTemplate": "Excel template",
-      "experiences": "Experiences"
-    },
+    "registerCta": "Register for free",
     "contact": {
       "location": "Made in Germany",
-      "instagram": "Instagram",
-      "support": "Support on request"
+      "instagram": "Instagram"
     },
     "titles": {
       "email": "Email to",
@@ -228,25 +205,29 @@
   },
   "navigationSection": {
     "items": {
-      "home": "Home",
       "features": "Features",
       "pricing": "Pricing",
-      "howItWorks": "How it works",
+      "freeApp": "Start for free",
       "ai": "AI analysis",
       "tournament": "Tournament & ticker",
-      "faq": "FAQ",
       "demo": "Live demo",
-      "impressum": "Legal",
-      "ratgeber": "Guide",
-      "aboutStatix": "What is Statix?",
       "forCoaches": "For coaches",
       "forClubs": "For clubs",
       "forYouthCoaches": "For youth coaches",
-      "shotQuotaCalculator": "Shot quota calculator"
+      "shotQuotaCalculator": "Shot quota calculator",
+      "excelTemplate": "Excel template",
+      "ratgeber": "Guide",
+      "aboutStatix": "What is Statix?",
+      "experiences": "Experiences",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "newsletter": "Newsletter"
     },
     "groups": {
+      "product": "Product",
       "audience": "Who it's for",
-      "tools": "Free tools"
+      "tools": "Free tools",
+      "resources": "Resources"
     },
     "skipToContent": "Skip to content",
     "registerCta": "Register now",

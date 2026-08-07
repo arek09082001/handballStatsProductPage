@@ -1,33 +1,10 @@
 {
   "footerSection": {
     "description": "Statix verwandelt jedes Spiel in präzise Statistiken – Wurfquoten, Wurfbilder und KI-Analysen, mit denen Trainer und Teams besser werden.",
-    "headings": {
-      "product": "Produkt",
-      "legal": "Rechtliches",
-      "contact": "Kontakt"
-    },
-    "product": {
-      "register": "Kostenlos registrieren",
-      "demo": "Live-Demo",
-      "features": "Alle Funktionen",
-      "aboutStatix": "Was ist Statix?",
-      "liveTicker": "Live-Ticker",
-      "ratgeber": "Ratgeber",
-      "faq": "Häufige Fragen",
-      "newsletter": "Newsletter",
-      "contact": "Kontakt",
-      "pricing": "Preise",
-      "freeApp": "Kostenlos starten",
-      "forYouthCoaches": "Für Jugendtrainer",
-      "forClubs": "Für Vereine",
-      "shotQuotaCalculator": "Wurfquoten-Rechner",
-      "excelTemplate": "Excel-Vorlage",
-      "experiences": "Erfahrungen"
-    },
+    "registerCta": "Kostenlos registrieren",
     "contact": {
       "location": "Made in Germany",
-      "instagram": "Instagram",
-      "support": "Support auf Anfrage"
+      "instagram": "Instagram"
     },
     "titles": {
       "email": "E-Mail an",
@@ -228,25 +205,29 @@
   },
   "navigationSection": {
     "items": {
-      "home": "Start",
       "features": "Funktionen",
       "pricing": "Preise",
-      "howItWorks": "So funktioniert's",
+      "freeApp": "Kostenlos starten",
       "ai": "KI-Analyse",
       "tournament": "Turnier & Ticker",
-      "faq": "FAQ",
       "demo": "Live-Demo",
-      "impressum": "Impressum",
-      "ratgeber": "Ratgeber",
-      "aboutStatix": "Was ist Statix?",
       "forCoaches": "Für Trainer",
       "forClubs": "Für Vereine",
       "forYouthCoaches": "Für Jugendtrainer",
-      "shotQuotaCalculator": "Wurfquoten-Rechner"
+      "shotQuotaCalculator": "Wurfquoten-Rechner",
+      "excelTemplate": "Excel-Vorlage",
+      "ratgeber": "Ratgeber",
+      "aboutStatix": "Was ist Statix?",
+      "experiences": "Erfahrungen",
+      "contact": "Kontakt",
+      "faq": "FAQ",
+      "newsletter": "Newsletter"
     },
     "groups": {
+      "product": "Produkt",
       "audience": "Für wen",
-      "tools": "Kostenlose Tools"
+      "tools": "Kostenlose Tools",
+      "resources": "Ressourcen"
     },
     "skipToContent": "Zum Inhalt springen",
     "registerCta": "Jetzt registrieren",

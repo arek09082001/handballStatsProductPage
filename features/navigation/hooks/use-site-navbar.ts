@@ -5,6 +5,15 @@ import { usePathname, useRouter } from 'next/navigation';
 import { SITE_NAVBAR_OFFSET, scrollSpySectionIds } from '../config';
 import { NavigationItem } from '../interfaces';
 
+/**
+ * The parts of a nav entry that decide whether it is the current one. Typed
+ * structurally so both header items and the taxonomy's plain links qualify.
+ */
+type ActivatableItem = Pick<
+  NavigationItem,
+  'href' | 'external' | 'sectionId' | 'groups'
+>;
+
 const SCROLL_OFFSET_THRESHOLD = 16;
 const SCROLL_DIRECTION_THRESHOLD = 6;
 const HOME_SECTION_ID = 'home';
@@ -130,7 +139,7 @@ export const useSiteNavbar = () => {
    * A dropdown counts as active while any of its sub-links is the current
    * route. External links never count as active.
    */
-  const isItemActive = (item: NavigationItem) => {
+  const isItemActive = (item: ActivatableItem) => {
     if (item.external) {
       return false;
     }

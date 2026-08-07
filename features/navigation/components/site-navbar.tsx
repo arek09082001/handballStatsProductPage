@@ -11,7 +11,7 @@ import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
 import NavDropdown from './nav-dropdown';
-import { primaryNavigationItems, siteNavigationItems } from '../config';
+import { primaryNavigationItems, siteLinkGroups } from '../config';
 import { useSiteNavbar } from '../hooks/use-site-navbar';
 
 export default function SiteNavbar() {
@@ -22,7 +22,6 @@ export default function SiteNavbar() {
     isScrollingUp,
     toggleMenu,
     closeMenu,
-    isActive,
     isItemActive,
     handleBrandClick,
   } = useSiteNavbar();
@@ -231,7 +230,7 @@ export default function SiteNavbar() {
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.2 }}
               className='fixed left-4 right-4 top-24 z-40 overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] sm:left-6 sm:right-6 lg:hidden max-h-[calc(100vh-112px)]'>
-              <div className='space-y-2 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
+              <div className='space-y-4 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
                 <button
                   type='button'
                   onClick={() => {
@@ -260,89 +259,8 @@ export default function SiteNavbar() {
                   </span>
                 </button>
 
-                {siteNavigationItems.map((item) => {
-                  const active = isItemActive(item);
-
-                  // Dropdowns flatten into labelled sections here — a mobile
-                  // menu that is already a list needs no second layer.
-                  if (item.groups) {
-                    return (
-                      <div key={item.ident} className='space-y-2 pt-1'>
-                        {item.groups.map((group) => (
-                          <div key={group.labelKey} className='space-y-2'>
-                            <p className='px-4 pt-1 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-slate-400'>
-                              {t(`groups.${group.labelKey}`)}
-                            </p>
-                            {group.items.map((child) => {
-                              const childLabel =
-                                child.label ?? t(`items.${child.labelKey}`);
-                              const childActive = isActive(child.href);
-
-                              return (
-                                <Link
-                                  key={child.ident}
-                                  href={child.href}
-                                  title={childLabel}
-                                  onClick={closeMenu}
-                                  aria-current={childActive ? 'page' : undefined}
-                                  className={cn(
-                                    'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
-                                    childActive
-                                      ? 'bg-slate-950 text-white'
-                                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
-                                  )}>
-                                  <span>{childLabel}</span>
-                                  {childActive && (
-                                    <span className='size-2 rounded-full bg-white' />
-                                  )}
-                                </Link>
-                              );
-                            })}
-                          </div>
-                        ))}
-                      </div>
-                    );
-                  }
-
-                  return (
-                    <Link
-                      key={item.ident}
-                      // Every item without `groups` carries an href (see config).
-                      href={item.href ?? '/'}
-                      title={t(`items.${item.labelKey}`)}
-                      onClick={() => {
-                        // The only external nav item is the live demo.
-                        if (item.external) trackDemoClick('navbar');
-                        closeMenu();
-                      }}
-                      target={item.external ? '_blank' : undefined}
-                      rel={item.external ? 'noopener noreferrer' : undefined}
-                      aria-current={active ? 'page' : undefined}
-                      className={cn(
-                        'flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors',
-                        item.external
-                          ? 'bg-orange-50 text-[#ea580c] hover:bg-orange-100'
-                          : active
-                            ? 'bg-slate-950 text-white'
-                            : 'bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-slate-950',
-                      )}>
-                      <span className='inline-flex items-center gap-2'>
-                        {item.external && (
-                          <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
-                        )}
-                        {t(`items.${item.labelKey}`)}
-                      </span>
-                      {item.external ? (
-                        <ArrowUpRight className='size-4' />
-                      ) : (
-                        active && (
-                          <span className='size-2 rounded-full bg-white' />
-                        )
-                      )}
-                    </Link>
-                  );
-                })}
-
+                {/* Above the groups, not below them: the panel now scrolls, and
+                 * the primary conversion should not be at the end of it. */}
                 <Link
                   href={CLUB_CONFIG.website.appUrl}
                   target='_blank'
@@ -357,7 +275,69 @@ export default function SiteNavbar() {
                   {t('registerCta')}
                 </Link>
 
-                <div className='flex justify-center pt-2'>
+                {/* Same taxonomy, same order and same labels as the footer
+                 * columns: one grouped list instead of the flat run of
+                 * seventeen pills the menu used to be. */}
+                <div className='space-y-5'>
+                  {siteLinkGroups.map((group) => (
+                    <div key={group.labelKey}>
+                      <p className='px-1 pb-2 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-slate-400'>
+                        {t(`groups.${group.labelKey}`)}
+                      </p>
+
+                      <div className='overflow-hidden rounded-2xl border border-slate-200 bg-slate-50'>
+                        {group.items.map((link) => {
+                          const label =
+                            link.label ?? t(`items.${link.labelKey}`);
+                          const active = isItemActive(link);
+
+                          return (
+                            <Link
+                              key={link.ident}
+                              href={link.href}
+                              title={label}
+                              target={link.external ? '_blank' : undefined}
+                              rel={
+                                link.external
+                                  ? 'noopener noreferrer'
+                                  : undefined
+                              }
+                              aria-current={active ? 'page' : undefined}
+                              onClick={() => {
+                                // The only external entry is the live demo.
+                                if (link.external) trackDemoClick('navbar');
+                                closeMenu();
+                              }}
+                              className={cn(
+                                'flex items-center justify-between gap-3 border-b border-slate-200/70 px-4 py-3 text-sm font-medium tracking-[-0.01em] transition-colors last:border-b-0',
+                                link.external
+                                  ? 'text-[#ea580c] hover:bg-orange-50'
+                                  : active
+                                    ? 'bg-slate-950 text-white'
+                                    : 'text-slate-700 hover:bg-slate-100 hover:text-slate-950',
+                              )}>
+                              <span className='inline-flex items-center gap-2'>
+                                {link.external && (
+                                  <span className='size-1.5 animate-pulse rounded-full bg-[#f97316]' />
+                                )}
+                                {label}
+                              </span>
+                              {link.external ? (
+                                <ArrowUpRight className='size-4 shrink-0' />
+                              ) : (
+                                active && (
+                                  <span className='size-2 shrink-0 rounded-full bg-white' />
+                                )
+                              )}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className='flex justify-center'>
                   <LanguageSwitcher onLocaleChange={closeMenu} />
                 </div>
               </div>
