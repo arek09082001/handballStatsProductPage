@@ -366,15 +366,56 @@ async function tapAria(page, name) {
   await page.waitForTimeout(2500);
 }
 
-/** Bring a section heading to the top of the frame, so the shot is about it. */
+/**
+ * Tap a player on the court so the quick-action popover opens — the single
+ * gesture the whole product is built around.
+ */
+async function tapPlayer(page, name) {
+  const card = page
+    .locator('button:visible, [role="button"]:visible')
+    .filter({ hasText: name })
+    .first();
+  await card.waitFor({ state: 'visible', timeout: 15000 });
+  await card.click();
+  await page.waitForTimeout(1200);
+}
+
+/**
+ * Bring a section heading to the top of the frame, so the shot is about it.
+ *
+ * The app shell keeps the window at a fixed height and scrolls an inner
+ * container, so `window.scrollTo` does nothing — the first version of this
+ * silently produced four byte-identical tournament screenshots. It now walks up
+ * from the heading to the ancestor that actually scrolls, and throws when the
+ * heading is missing rather than returning a shot of the wrong thing.
+ */
 async function scrollTo(page, headingText) {
-  await page.evaluate((text) => {
+  const moved = await page.evaluate((text) => {
     const el = [...document.querySelectorAll('h1,h2,h3,h4')].find((h) =>
       h.textContent.trim().startsWith(text),
     );
-    if (el) el.scrollIntoView({ block: 'start', behavior: 'instant' });
-    window.scrollBy(0, -24);
+    if (!el) return { found: false };
+
+    let node = el.parentElement;
+    while (node && node !== document.body) {
+      const style = getComputedStyle(node);
+      const scrolls = /(auto|scroll|overlay)/.test(style.overflowY);
+      if (scrolls && node.scrollHeight > node.clientHeight + 8) {
+        const top =
+          el.getBoundingClientRect().top - node.getBoundingClientRect().top;
+        node.scrollTop += top - 20;
+        return { found: true, via: 'container', to: node.scrollTop };
+      }
+      node = node.parentElement;
+    }
+
+    const y = el.getBoundingClientRect().top + window.scrollY - 20;
+    window.scrollTo(0, y);
+    return { found: true, via: 'window', to: y };
   }, headingText);
+
+  if (!moved.found) throw new Error(`heading not found: "${headingText}"`);
+  if (DEBUG) console.log(`  [scroll] "${headingText}" via ${moved.via} -> ${moved.to}`);
   await page.waitForTimeout(900);
 }
 
@@ -385,16 +426,22 @@ async function scrollTo(page, headingText) {
  */
 const SHOTS = [
   // ── The product page's own eleven ────────────────────────────────────────
+  // Both recording shots show the same moment on purpose: a player tapped and
+  // the quick-action popover open. That is the product's whole claim — one tap
+  // per action — and a bare court does not show it. The two files stay separate
+  // because the site references them in different places (OG images, guide
+  // articles, `/was-ist-statix`), not because the pictures differ.
   {
     group: 'core', file: 'heroImage.png', ...TABLET,
     route: () => `/games/${ID.live}`,
-    note: 'Live recording — the sideline tap, mid second half.',
+    prepare: (page) => tapPlayer(page, 'Erik L.'),
+    note: 'Live recording with the quick-action popover open.',
   },
   {
     group: 'core', file: 'recordStatsInGame.png', ...TABLET,
     route: () => `/games/${ID.live}`,
-    prepare: (page) => tap(page, '7-Meter-Wurf'),
-    note: 'Recording with the 7-metre panel open.',
+    prepare: (page) => tapPlayer(page, 'Erik L.'),
+    note: 'Same moment as heroImage — used by the showcase and the guides.',
   },
   {
     group: 'core', file: 'gameListOverview.png', ...TABLET_TALL,
@@ -431,18 +478,6 @@ const SHOTS = [
     note: 'Share a finished game by link or with another coach.',
   },
   {
-    group: 'core', file: 'tournamentTable.png', ...TABLET_TALL,
-    route: () => `/tournaments/${ID.tournament}`,
-    prepare: (page) => scrollTo(page, 'Tabelle'),
-    note: 'Auto-updating tournament standings.',
-  },
-  {
-    group: 'core', file: 'tournamentGameList.png', ...TABLET_TALL,
-    route: () => `/tournaments/${ID.tournament}`,
-    prepare: (page) => scrollTo(page, 'Spiele'),
-    note: 'Tournament schedule and results.',
-  },
-  {
     group: 'core', file: 'aiAnalyze.png', ...TABLET_TALL,
     route: () => `/games/${ID.game}`,
     // The AI tab lands on the report *list*; the charts live one click deeper.
@@ -467,14 +502,20 @@ const SHOTS = [
 
   // ── Tournament, for /fuer-vereine and the tournament guide ───────────────
   {
-    group: 'turnier', file: 'turnier-tabelle.png', ...TABLET_TALL,
+    group: 'turnier', file: 'turnier-uebersicht.png', ...TABLET_TALL,
     route: () => `/tournaments/${ID.tournament}`,
     prepare: (page) => scrollTo(page, 'Tabelle'),
+    note: 'Table and schedule together — the tournament at a glance.',
+  },
+  {
+    group: 'turnier', file: 'turnier-tabelle.png', ...TABLET_TALL,
+    route: () => `/tournaments/${ID.tournament}`,
+    section: 'Tabelle',
   },
   {
     group: 'turnier', file: 'turnier-spielplan.png', ...TABLET_TALL,
     route: () => `/tournaments/${ID.tournament}`,
-    prepare: (page) => scrollTo(page, 'Spiele'),
+    section: 'Spiele',
   },
   {
     group: 'turnier', file: 'turnier-mannschaften.png', ...TABLET,
@@ -492,17 +533,13 @@ const SHOTS = [
 
   // ── Kader and player profiles, for /fuer-jugendtrainer ───────────────────
   {
-    group: 'kader', file: 'kader-kartenalbum.png', ...TABLET_TALL,
-    route: () => '/players',
-  },
-  {
     group: 'kader', file: 'spielerprofil-verlauf.png', ...TABLET_TALL,
     route: () => `/players/${ID.player}`,
   },
   {
     group: 'kader', file: 'spielerprofil-ki.png', ...TABLET_TALL,
     route: () => `/players/${ID.player}`,
-    prepare: (page) => scrollTo(page, 'KI-Spieler-Intelligenz'),
+    section: 'KI-Spieler-Intelligenz',
   },
   {
     group: 'kader', file: 'aufstellung-feld.png', ...TABLET,
@@ -511,11 +548,6 @@ const SHOTS = [
   },
 
   // ── Sharing and the coaching staff ───────────────────────────────────────
-  {
-    group: 'teilen', file: 'spiel-teilen-freigabelink.png', ...TABLET,
-    route: () => `/games/${ID.game}`,
-    prepare: (page) => tap(page, 'Teilen'),
-  },
   {
     group: 'teilen', file: 'posteingang-geteilte-spiele.png', ...TABLET,
     route: () => '/inbox',
@@ -561,7 +593,11 @@ const SHOTS = [
 ];
 
 async function capture() {
-  const wanted = ONLY ? SHOTS.filter((s) => s.group === ONLY) : SHOTS;
+  // `--only` takes a group name ("kader") or a file-name fragment ("heroImage"),
+  // so a single shot can be re-taken without redoing the whole set.
+  const wanted = ONLY
+    ? SHOTS.filter((s) => s.group === ONLY || s.file.includes(ONLY))
+    : SHOTS;
   if (!wanted.length) {
     console.error(
       'No shots defined yet. Run `explore` first and fill in the SHOTS manifest.',
@@ -602,7 +638,33 @@ async function capture() {
       }
       if (shot.prepare) await shot.prepare(page);
       await settle(page, 800);
-      const target = shot.selector ? await page.$(shot.selector) : page;
+
+      // `section` crops to the block a heading belongs to. The tournament page
+      // puts the table and the schedule side by side, so a viewport shot of
+      // either is the same picture — cropping is what makes them two usable
+      // assets instead of one duplicated twice.
+      let target = page;
+      if (shot.section) {
+        const handle = await page.evaluateHandle((text) => {
+          const h = [...document.querySelectorAll('h1,h2,h3,h4')].find((el) =>
+            el.textContent.trim().startsWith(text),
+          );
+          if (!h) return null;
+          let node = h.parentElement;
+          // Climb until the block is big enough to be the section itself.
+          while (node && node.getBoundingClientRect().height < 220) {
+            node = node.parentElement;
+          }
+          return node;
+        }, shot.section);
+        const el = handle.asElement();
+        if (!el) throw new Error(`section not found: "${shot.section}"`);
+        await el.scrollIntoViewIfNeeded();
+        await page.waitForTimeout(500);
+        target = el;
+      } else if (shot.selector) {
+        target = await page.$(shot.selector);
+      }
       await target.screenshot({ path: path.join(PUBLIC_DIR, shot.file) });
       console.log(`✓ ${shot.file}`);
       done++;

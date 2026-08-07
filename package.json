@@ -15,7 +15,8 @@
     "release": "semantic-release",
     "release:dry-run": "semantic-release --dry-run",
     "release:local": "semantic-release --no-ci",
-    "screenshots": "node scripts/screenshots/capture.mjs"
+    "screenshots": "node scripts/screenshots/capture.mjs",
+    "check-images": "node scripts/screenshots/check-dimensions.mjs"
   },
   "dependencies": {
     "@getbrevo/brevo": "^3.0.1",
