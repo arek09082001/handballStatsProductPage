@@ -30,7 +30,14 @@ export default function MarkerUnderline({
       preserveAspectRatio='none'
       fill='none'
       aria-hidden='true'
-      className={cn('pointer-events-none absolute inset-x-0 -bottom-1 h-[0.5em] w-full', className)}>
+      // Offset in `em`, not px: the headlines this sits under run from 2.2rem
+      // to 4.15rem with leading as tight as 1.02, so a fixed `-bottom-1` put
+      // the stroke inside the glyph band at large sizes — a strikethrough, not
+      // an underline. In `em` it tracks the type at every size.
+      className={cn(
+        'pointer-events-none absolute inset-x-0 -bottom-[0.24em] h-[0.5em] w-full',
+        className,
+      )}>
       <path
         d='M4 10 C 70 4, 150 13, 210 7 C 250 3, 276 9, 296 6'
         stroke={s}

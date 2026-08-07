@@ -96,17 +96,14 @@ export const siteNavigationItems: NavigationItem[] = [
     labelKey: 'ai',
     sectionId: 'ai',
   },
+  // Tournament, live ticker and collaboration used to be three landing-page
+  // bands with an entry each. They are one band now (`#mehr`), so they get one
+  // entry — the tournament and ticker anchors still resolve inside it.
   {
     ident: 8,
-    href: '/#tournament',
+    href: '/#mehr',
     labelKey: 'tournament',
-    sectionId: 'tournament',
-  },
-  {
-    ident: 9,
-    href: '/#liveticker',
-    labelKey: 'liveTicker',
-    sectionId: 'liveticker',
+    sectionId: 'mehr',
   },
   {
     ident: 4,
@@ -131,8 +128,6 @@ export const scrollSpySectionIds = [
   'home',
   'features',
   'ai',
-  'tournament',
-  'liveticker',
+  'mehr',
   'faq',
-  'contact',
 ];

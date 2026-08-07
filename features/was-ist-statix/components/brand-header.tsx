@@ -89,8 +89,8 @@ export default function BrandHeader() {
           <BoardScreenshot
             src='/recordStatsInGame.png'
             alt='Statix Handball-App: Spielstatistiken live per Tap erfassen'
-            width={1916}
-            height={879}
+            width={2560}
+            height={1600}
             label='Statix – Live-Erfassung im Spiel'
             tone='court'
             pin='tape'

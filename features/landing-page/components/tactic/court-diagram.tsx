@@ -28,6 +28,13 @@ interface CourtDiagramProps {
   formationSystem?: FormationSystem;
   /** Opacity of the formation group, so it can sit behind copy. */
   formationOpacity?: number;
+  /**
+   * Classes on the formation group. The magnets carry saturated team colour
+   * rather than the parent's chalk tint, so on narrow screens — where copy runs
+   * the full width and there is nowhere for them to sit clear of it — callers
+   * hide them and keep only the chalk lines.
+   */
+  formationClassName?: string;
   title?: string;
 }
 
@@ -155,15 +162,17 @@ function Token({
 
 function Formation({
   opacity = 1,
+  className,
   system = '6-0',
 }: {
   opacity?: number;
+  className?: string;
   system?: FormationSystem;
 }) {
   const defence = DEFENCE_BY_SYSTEM[system] ?? DEFENCE;
 
   return (
-    <g opacity={opacity}>
+    <g opacity={opacity} className={className}>
       <Token x={KEEPER.x} y={KEEPER.y} n={KEEPER.n} team='keeper' />
       {defence.map((p) => (
         <Token key={`d${p.n}`} x={p.x} y={p.y} n={p.n} team='away' />
@@ -184,6 +193,7 @@ export default function CourtDiagram({
   formation = false,
   formationSystem = '6-0',
   formationOpacity = 1,
+  formationClassName,
   title,
 }: CourtDiagramProps) {
   const common = {
@@ -224,7 +234,11 @@ export default function CourtDiagram({
         <path {...common} d={FULL.goalL} strokeWidth={strokeWidth * 1.4} />
         <path {...common} d={FULL.goalR} strokeWidth={strokeWidth * 1.4} />
         {formation ? (
-        <Formation opacity={formationOpacity} system={formationSystem} />
+        <Formation
+          opacity={formationOpacity}
+          className={formationClassName}
+          system={formationSystem}
+        />
       ) : null}
       </svg>
     );
@@ -250,7 +264,11 @@ export default function CourtDiagram({
       <path {...common} d={GOAL_END.fourMetre} strokeWidth={strokeWidth * 1.2} />
       <path {...common} d={GOAL_END.goal} strokeWidth={strokeWidth * 1.4} />
       {formation ? (
-        <Formation opacity={formationOpacity} system={formationSystem} />
+        <Formation
+          opacity={formationOpacity}
+          className={formationClassName}
+          system={formationSystem}
+        />
       ) : null}
     </svg>
   );

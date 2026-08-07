@@ -22,7 +22,7 @@ export const handballKoordinationstraining: Article = {
   readingTimeMinutes: 6,
   excerpt:
     'Die Koordinationsleiter ist das meistgenutzte und am wenigsten wirksame Gerät im Handballtraining. Wie du Koordination so ansetzt, dass sie im Spiel ankommt – mit Zeitleiste, Übungskarten und Altersfenstern.',
-  imagePath: '/tournamentGameList.png',
+  imagePath: '/gameListOverview.png',
   imageAlt: 'Spielübersicht einer Jugendmannschaft in der Statix-App',
   body: `Fast jede Handballmannschaft macht Koordinationstraining, und fast jede macht dasselbe: zehn Minuten Leiter zu Beginn, immer dieselben sechs Muster, ohne Ball, ohne Gegner, ohne Entscheidung. Das ist besser als nichts, aber es ist nicht das, was im Spiel gebraucht wird.
 

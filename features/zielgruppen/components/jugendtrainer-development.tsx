@@ -55,8 +55,8 @@ export default function JugendtrainerDevelopment() {
         <BoardScreenshot
           src='/teamManagement.png'
           alt='Kader als Kartenalbum: Spielerkarten mit Werten aus echten Handballspielen'
-          width={1916}
-          height={879}
+          width={2560}
+          height={2000}
           label='Kader mit Spielerkarten und Werten'
           tone='paper'
           pin='magnet'

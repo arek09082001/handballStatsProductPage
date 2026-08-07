@@ -54,8 +54,8 @@ export default function FreeDemo() {
         <BoardScreenshot
           src='/recordStatsInGame.png'
           alt='Kostenlose Handball-Statistik-App: Spielaktionen live per Tap erfassen'
-          width={1916}
-          height={879}
+          width={2560}
+          height={1600}
           label='Live-Erfassung in der Demo'
           tone='court'
           pin='tape'

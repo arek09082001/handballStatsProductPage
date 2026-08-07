@@ -33,7 +33,7 @@ export default function Footer() {
       external: true,
       onExternalClick: () => trackDemoClick('footer'),
     },
-    { href: '/#all-features', label: t('product.features') },
+    { href: '/#features', label: t('product.features') },
     { href: '/preise', label: t('product.pricing') },
     { href: '/handball-statistik-app-kostenlos', label: t('product.freeApp') },
     { href: '/fuer-jugendtrainer', label: t('product.forYouthCoaches') },
@@ -49,11 +49,11 @@ export default function Footer() {
     },
     { href: '/was-ist-statix', label: t('product.aboutStatix') },
     { href: '/erfahrungen', label: t('product.experiences') },
-    { href: '/#liveticker', label: t('product.liveTicker') },
+    { href: '/#mehr', label: t('product.liveTicker') },
     { href: '/ratgeber', label: t('product.ratgeber') },
     { href: '/#faq', label: t('product.faq') },
     { href: '/#newsletter', label: t('product.newsletter') },
-    { href: '/#contact', label: t('product.contact') },
+    { href: '/kontakt', label: t('product.contact') },
   ];
 
   return (

@@ -55,8 +55,8 @@ export default function TemplateUpgrade() {
         <BoardScreenshot
           src='/statsTableInGame.png'
           alt='Spielerstatistiken und Wurfquoten in der Statix Handball-App statt in einer Excel-Tabelle'
-          width={1916}
-          height={879}
+          width={2560}
+          height={2000}
           label='Auswertung direkt nach dem Schlusspfiff'
           tone='paper'
           pin='magnet'

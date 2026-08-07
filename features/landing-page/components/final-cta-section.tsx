@@ -44,7 +44,8 @@ export default function FinalCTASection() {
       <CourtDiagram
         variant='goal'
         formation
-        formationOpacity={0.28}
+        formationOpacity={0.14}
+        formationClassName='hidden lg:block'
         aria-hidden
         className='pointer-events-none absolute -left-[16%] top-1/2 h-[104%] w-auto -translate-y-1/2 text-chalk/[0.1] sm:-left-[10%] lg:-left-[4%]'
       />

@@ -14,7 +14,9 @@
     "build:optimized": "npm run optimize-images && npm run build",
     "release": "semantic-release",
     "release:dry-run": "semantic-release --dry-run",
-    "release:local": "semantic-release --no-ci"
+    "release:local": "semantic-release --no-ci",
+    "screenshots": "node scripts/screenshots/capture.mjs",
+    "check-images": "node scripts/screenshots/check-dimensions.mjs"
   },
   "dependencies": {
     "@getbrevo/brevo": "^3.0.1",
@@ -101,6 +103,7 @@
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "eslint": "^9.38.0",
     "eslint-config-next": "16.0.7",
+    "playwright-core": "^1.62.1",
     "semantic-release": "^25.0.2",
     "tsx": "^4.20.5",
     "typescript": "^5"

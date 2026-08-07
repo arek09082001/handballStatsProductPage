@@ -46,7 +46,12 @@ export default function ProductHero() {
       <CourtDiagram
         variant='goal'
         formation
-        formationOpacity={0.32}
+        // The magnets carry team colour, not the chalk tint, so they read far
+        // stronger than the lines they sit on. Kept to roughly the weight of
+        // the chalk, and off entirely below `lg`, where the copy is centred
+        // across the full width and the tokens landed on top of the headline.
+        formationOpacity={0.14}
+        formationClassName='hidden lg:block'
         aria-hidden
         className='pointer-events-none absolute -left-[22%] top-1/2 h-[86%] w-auto -translate-y-1/2 text-chalk/[0.13] sm:-left-[14%] lg:-left-[8%]'
       />
