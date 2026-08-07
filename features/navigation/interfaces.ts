@@ -1,4 +1,4 @@
-export interface NavigationChild {
+export interface NavigationLink {
   ident: number;
   href: string;
   /** Key under `navigationSection.items`. Omit when `label` is set. */
@@ -8,12 +8,19 @@ export interface NavigationChild {
    * instead of `messages/*.json`. Wins over `labelKey` when both are set.
    */
   label?: string;
+  /** External links open in a new tab and skip active-route matching. */
+  external?: boolean;
+  /**
+   * Id of the in-page section this link points to, used for scroll-spy on the
+   * landing page. Omitted for external links and non-anchor routes.
+   */
+  sectionId?: string;
 }
 
 export interface NavigationGroup {
   /** Key under `navigationSection.groups`. */
   labelKey: string;
-  items: NavigationChild[];
+  items: NavigationLink[];
 }
 
 export interface NavigationItem {
@@ -21,12 +28,6 @@ export interface NavigationItem {
   /** Target route. Omitted for items that only open a dropdown. */
   href?: string;
   labelKey: string;
-  /**
-   * Shown in the desktop navigation row. The desktop row is deliberately kept
-   * short — five entries plus the demo button; everything else lives in the
-   * mobile menu and the footer.
-   */
-  primary?: boolean;
   /** External links open in a new tab and skip active-route matching. */
   external?: boolean;
   /**
