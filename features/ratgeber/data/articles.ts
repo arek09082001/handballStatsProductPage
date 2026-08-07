@@ -49,6 +49,9 @@ import { handballPassivesSpiel } from './articles/handball-passives-spiel';
 import { handballKommunikationSpielfeld } from './articles/handball-kommunikation-spielfeld';
 import { handballAthletiktraining } from './articles/handball-athletiktraining';
 import { handballBelastungssteuerung } from './articles/handball-belastungssteuerung';
+import { handballStatistikZettelExcelApp } from './articles/handball-statistik-zettel-excel-app';
+import { handballAbwehrsystemAuswaehlen } from './articles/handball-abwehrsystem-auswaehlen';
+import { handballJugendtrainerKennzahlenErstesJahr } from './articles/handball-jugendtrainer-kennzahlen-erstes-jahr';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -62,6 +65,12 @@ export function articlePath(slug: string): string {
  * All Ratgeber articles. Registering a new article = adding one data module
  * import here; it then flows automatically into the hub, sitemap, llms.txt and
  * cross-links.
+ *
+ * Deliberately NOT registered: `articles/handball-wurfquoten-studie.ts`. The
+ * data study exists as a finished scaffold – structure, methodology section and
+ * table layout – but every figure in it is still a `TODO(daten)` placeholder.
+ * It goes live only once the operator supplies the aggregated values; see the
+ * file header for the exact list.
  */
 export const ARTICLES: Article[] = [
   wurfquoteBerechnen,
@@ -112,6 +121,9 @@ export const ARTICLES: Article[] = [
   handballKommunikationSpielfeld,
   handballAthletiktraining,
   handballBelastungssteuerung,
+  handballStatistikZettelExcelApp,
+  handballAbwehrsystemAuswaehlen,
+  handballJugendtrainerKennzahlenErstesJahr,
 ];
 
 /** Articles sorted newest-first by publication date. */
