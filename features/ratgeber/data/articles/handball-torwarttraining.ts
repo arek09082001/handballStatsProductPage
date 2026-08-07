@@ -2,115 +2,270 @@ import type { Article } from '../../types';
 
 export const handballTorwarttraining: Article = {
   slug: 'handball-torwarttraining',
-  title: 'Handball-Torwarttraining: Übungen & Tipps für Trainer',
-  metaTitle: 'Handball-Torwarttraining: Übungen & Tipps',
+  title: 'Torwarttraining planen: Stellungsspiel, Ecken, Siebenmeter',
+  metaTitle: 'Torwarttraining im Handball: Einheit, Übungen, Fehler',
   metaDescription:
-    'Handball-Torwarttraining: Übungen für Grundtechnik, Reaktion und Wurfabwehr nach Zonen. Plus die Paradenquote berechnen und deinen Torwart gezielt verbessern.',
+    'Torwarttraining im Handball planen, auch ohne Torwarttrainer: eine Einheit als Zeitleiste, sechs Übungskarten, Siebenmeter halten und woran du die Entwicklung abliest.',
   keywords: [
-    'handball torwarttraining',
+    'torwarttraining handball',
     'handball torwart übungen',
-    'torwart handball training',
-    'paradenquote handball',
-    'handball torwart reaktion',
     'siebenmeter halten handball',
-    'torwarttraining handball übungen',
-    'handball torhüter training',
+    'handball torwart stellungsspiel',
+    'torwart training ohne torwarttrainer',
+    'handball torhüter ausbildung',
+    'handball torwart reaktion',
   ],
   category: 'Trainingsplanung',
   archetype: 'rezept',
-  datePublished: '2026-06-09',
+  datePublished: '2026-06-08',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 4,
+  readingTimeMinutes: 9,
   excerpt:
-    'Ein starker Torwart ist der beste Rückhalt – und trotzdem wird das Torwarttraining oft vernachlässigt. Hier findest du Übungen für Grundtechnik, Reaktion und Wurfabwehr sowie die Formel für die Paradenquote.',
+    'In den meisten Vereinen gibt es keinen Torwarttrainer – der Torwart wärmt sich auf und steht dann 80 Minuten im Tor. Wie du auch ohne Spezialisten eine Einheit planst, die den Torwart wirklich weiterbringt.',
   imagePath: '/statsTableInGame.png',
-  imageAlt: 'Paraden- und Torwartstatistik in der Statix Handball-App',
-  body: `Ein guter Torwart ist der beste Rückhalt, den eine Mannschaft haben kann – eine starke Parade zur richtigen Zeit ist oft mehr wert als ein schönes Tor. Trotzdem wird das Torwarttraining in vielen Vereinen stiefmütterlich behandelt: Während die Feldspieler Würfe und Spielzüge üben, steht der Torhüter allein im Kasten und fängt Bälle. Dieser Ratgeber zeigt dir, wie du das Torwarttraining im Handball strukturierst – von der Grundtechnik über die Reaktion bis zur Wurfabwehr nach Zonen.
+  imageAlt: 'Paradenquoten und Torwartwerte in der Statix Handball-App',
+  body: `Der Torwart ist die Position mit dem größten Einfluss auf das Ergebnis und der geringsten Trainingszuwendung. In den meisten Amateurmannschaften besteht sein Training aus dem Warmwerfen vor der Einheit und dem Abwehren von Würfen in den Abschlussformen – also aus Belastung ohne Anleitung.
 
-## Die Rolle des Torhüters
+Das lässt sich ändern, auch ohne Torwarttrainer und ohne dass du selbst im Tor gestanden hast. Du brauchst zwei Dinge: einen festen Block von 20 bis 25 Minuten und eine Vorstellung davon, was du beobachtest.
 
-Bevor du Übungen planst, lohnt sich ein Blick auf die Aufgaben, die ein Torwart im modernen Handball erfüllt. Er ist weit mehr als der letzte Mann vor dem Tor.
+## Was du entwickeln willst und ab wann
 
-- **Rückhalt der Mannschaft:** Der Torwart hält Bälle, die schon verloren schienen. Jede Parade gibt der Abwehr Sicherheit und nimmt dem Gegner den Rhythmus.
-- **Starter des Tempospiels:** Nach einer Parade beginnt der schnelle Gegenstoß beim Torwart. Ein präziser, weiter Abwurf ist der erste Pass des Konters.
-- **Kommunikator der Abwehr:** Der Torhüter hat das ganze Feld vor sich. Er dirigiert die Abwehr, warnt vor einlaufenden Kreisläufern und stellt die Deckung auf den Gegner ein.
+Vier Bereiche, in dieser Reihenfolge:
 
-Wer das Torwarttraining plant, sollte alle drei Rollen im Blick haben – reines Ballfangen greift zu kurz.
+**Grundstellung und Stellungsspiel** – die Basis. Ein Torwart, der falsch steht, kann nicht reagieren, egal wie schnell er ist. Ab D-Jugend und danach dauerhaft.
 
-## Grundtechnik im Torwarttraining
+**Beinarbeit auf der Linie** – der Weg zwischen den Positionen. Er entscheidet, ob der Torwart bei einem Seitenwechsel des Balls rechtzeitig steht. Ab C-Jugend.
 
-Jede Parade beginnt mit einer sauberen Grundstellung. Sie ist das Fundament, auf dem alle weiteren Techniken aufbauen. Die ideale Grundstellung ist leicht gebeugt: Knie und Hüfte sind angewinkelt, der Oberkörper zeigt leicht nach vorn. Die Hände sind oben und aktiv – etwa auf Kopfhöhe –, nicht schlaff neben dem Körper. Das Gewicht ruht auf den Fußballen, die Fersen sind kaum belastet. So bleibt der Torwart jederzeit sprungbereit.
+**Reaktion und Abwehrtechnik je Zone** – oben, unten, Nahdistanz, spitzer Winkel. Jede Zone hat ihre eigene Bewegung. Ab C-Jugend, mit Schwerpunktwechsel über die Saison.
 
-- **Grundstellung:** leicht gebeugt, Hände oben und aktiv, Gewicht auf den Fußballen – die Basis jeder Reaktion.
-- **Bein- und Fußarbeit:** Der Torwart bewegt sich mit kurzen Schritten im Tor, immer in Ballhöhe und im richtigen Winkel zum Werfer. Saubere Fußarbeit entscheidet, ob er rechtzeitig hinter dem Ball steht.
-- **Aktive Handlungsbereitschaft:** Ein guter Torwart wartet nicht passiv ab, sondern geht dem Ball entgegen. Er stellt sich früh auf den Werfer ein und zwingt ihn zu einer Entscheidung.
-- **Abwehr mit Armen und Beinen:** Hohe Bälle pariert er mit den Armen, flache mit dem Bein oder einem tiefen Ausfallschritt. Die Kunst ist, Ober- und Unterkörper unabhängig voneinander einzusetzen.
+**Antizipation und Siebenmeter** – das Lesen des Werfers. Ab B-Jugend, weil es Spielerfahrung voraussetzt.
 
-## Reaktion und Schnelligkeit trainieren
+Im Kinderbereich gibt es keine Torwartausbildung im engeren Sinn – dort rotieren alle Kinder ins Tor. Eine feste Torwartrolle vor der D-Jugend nimmt einem Kind die Feldspielerausbildung, die es später braucht.
 
-Handballwürfe erreichen im Spitzenbereich weit über 100 km/h – auf Amateurniveau bleibt dem Torwart oft nur der Bruchteil einer Sekunde. Genau diese Reaktionsschnelligkeit lässt sich gezielt trainieren.
+## Woran du den Fehler in der Halle erkennst
 
-- **Reaktionsübungen:** Der Trainer wirft oder passt aus kurzer Distanz unangekündigt in verschiedene Ecken. Der Torwart reagiert rein auf den Reiz, ohne zu wissen, wohin der Ball kommt.
-- **Mehrfachwürfe:** Zwei oder drei Werfer schießen in schneller Folge nacheinander. Der Torwart muss nach jeder Parade sofort zurück in die Grundstellung und sich neu ausrichten.
-- **Visuelle Reize:** Farbige Bälle, Kommandos oder Lichtsignale schulen die Wahrnehmung. Der Torwart lernt, den Wurfarm des Gegners früh zu lesen, statt dem Ball hinterherzuschauen.
+Diese fünf Bilder erkennst du auch ohne Torwarterfahrung:
 
-Wichtig ist die Belastungssteuerung: Reaktionstraining wirkt nur, wenn der Torwart frisch ist. Ermüdete Muskeln reagieren langsam – kurze, intensive Blöcke bringen mehr als endlose Wurfserien.
+- **Die Hände sind zu tief.** Grundstellung mit Händen unterhalb der Hüfte. Oben wird dann alles zu spät, und oben fallen die meisten Tore.
+- **Der Torwart steht zu weit im Tor.** Er deckt weniger Winkel ab und wirkt dadurch langsamer, als er ist. Besonders bei Würfen aus dem spitzen Winkel.
+- **Die Bewegung geht rückwärts statt seitlich.** Beim Seitenwechsel des Balls weicht der Torwart Richtung Linie aus, statt die Position auf dem Kreisbogen zu wechseln.
+- **Er spekuliert, bevor der Wurfarm kommt.** Frühes Festlegen auf eine Ecke. Erkennbar daran, dass gehaltene Bälle spektakulär aussehen und Gegentore harmlos.
+- **Nach einem Gegentor bleibt er beim Gegentor.** Der Blick geht zur Abwehr oder zur Bank, der nächste Angriff läuft schon. Die wichtigste mentale Fähigkeit auf dieser Position.
 
-## Wurfabwehr nach Zonen
+## Die Einheit im Ablauf
 
-Das Tor lässt sich in Zonen einteilen, die jeweils eine eigene Technik verlangen. Ein systematisches Torwarttraining übt diese Zonen einzeln, bevor es sie im Spielkontext kombiniert.
+Ein Torwartblock von 25 Minuten, der parallel zum Mannschaftstraining laufen kann – ein Feldspieler übernimmt das Anwerfen. Ideal ist die Zeit, in der die Mannschaft an einer Übung ohne Torabschluss arbeitet.
 
-### Hohe und halbhohe Bälle
+## Sechs Übungen für den Torwartblock
 
-Hohe Würfe in die obere Ecke pariert der Torwart mit gestreckten Armen und einem kraftvollen Abdruck aus den Beinen. Bei halbhohen Bällen auf Hüfthöhe ist das Timing besonders schwierig, weil Arm- und Beinabwehr ineinandergreifen müssen. Diese Höhe wird im Training oft vernachlässigt und ist deshalb eine echte Schwachstelle.
+Wichtig für alle: Die Wurfhärte ist zu Beginn reduziert. Ein Torwart, der Angst vor dem Ball hat, entwickelt Ausweichverhalten, das später schwer zu korrigieren ist.
 
-### Flache Bälle und die Ecken
+## Siebenmeter halten
 
-Flache Bälle verlangen einen tiefen Ausfallschritt oder ein weit gestrecktes Bein. Unterscheide dabei die kurze Ecke (die dem Werfer nähere Torseite) und die lange Ecke (die entfernte Seite). Bei der kurzen Ecke verkürzt der Torwart aktiv den Winkel, bei der langen Ecke muss er den weiten Weg des Balls antizipieren.
+Der Siebenmeter ist die einzige Situation, in der der Torwart mehr zu gewinnen als zu verlieren hat – statistisch ist der Schütze klar im Vorteil, jede Parade ist ein Bonus. Diese Haltung solltest du deinem Torwart vermitteln, bevor du an Technik arbeitest.
 
-### Eins gegen eins und Siebenmeter
+Drei Dinge, die tatsächlich funktionieren:
 
-Beim Tempogegenstoß entsteht ein Eins-gegen-eins. Hier gilt: Raum verkürzen. Der Torwart kommt dem Angreifer entgegen und geht heraus, um den Winkel zuzumachen – je näher er am Werfer ist, desto kleiner wird dessen Ziel. Beim Siebenmeter zählt dagegen das Duell der Nerven: Beobachte die Wurfhand, bleibe möglichst lange stehen und lege dich nicht zu früh auf eine Ecke fest.
+**Den Schützen lesen statt raten.** Blickrichtung, Schulterstellung, Standbeinausrichtung und die Ballhaltung im letzten Moment verraten bei den meisten Amateurschützen die Ecke. Der Torwart soll auf ein Merkmal achten, nicht auf alle vier.
 
-## Kopf und Psyche des Torwarts
+**Spät entscheiden.** Wer sich vor dem Anlauf festlegt, hält nur die Hälfte. Wer sich beim Ausholen entscheidet, hält deutlich häufiger.
 
-Kein Feldspieler steht so im Rampenlicht wie der Torwart. Ein gehaltener Ball wird gefeiert, ein Gegentor ist sofort für alle sichtbar. Deshalb ist die mentale Arbeit genauso wichtig wie die technische.
+**Position leicht vorgeschoben.** Ein Schritt aus dem Tor heraus verkleinert den Winkel spürbar. Die Regel erlaubt das, solange der Torwart die Vier-Meter-Linie nicht überschreitet.
 
-- **Selbstvertrauen:** Ein Torwart braucht das Gefühl, jeden Ball halten zu können. Bewusst leichtere Serien zwischendurch schaffen Erfolgserlebnisse und bauen dieses Vertrauen auf.
-- **Kurzes Gedächtnis:** Nach einem Gegentor muss der Torwart sofort abhaken. Wer dem letzten Ball nachtrauert, verpasst den nächsten. Ein kurzes Ritual – tief durchatmen, Handschuhe richten – hilft beim Zurücksetzen.
-- **Körpersprache:** Eine aufrechte, präsente Haltung wirkt auf Mitspieler und Gegner. Ein Torwart, der Sicherheit ausstrahlt, verunsichert den Werfer, noch bevor der Ball fliegt.
+Was **nicht** funktioniert: eine feste Reihenfolge von Ecken oder ein System, das der Schütze nach zwei Würfen durchschaut hat.
 
-## Beispiel-Übungen fürs Torwarttraining
+## Wo der Torwartblock in deiner Woche liegt
 
-Diese Übungen kannst du direkt in deine nächste Einheit einbauen. Sie decken Grundtechnik, Reaktion und Zonenabwehr ab.
+**Zwei Blöcke pro Woche, je 20 bis 25 Minuten.** Mehr braucht es im Amateurbereich nicht, weniger reicht nicht für sichtbare Entwicklung.
 
-| Übung | Ziel | Hinweis |
-| --- | --- | --- |
-| Ecken-Serie | Zonenabwehr | Werfer schießt der Reihe nach in alle vier Ecken, Torwart pariert bewusst |
-| Reaktionswürfe kurz | Reaktion | Aus 6–7 Metern unangekündigt werfen, kurze Distanz erzwingt schnelle Reaktion |
-| Mehrfachwurf | Schnelligkeit | Drei Werfer nacheinander, nach jeder Parade zurück in die Grundstellung |
-| Tempogegenstoß 1-gegen-1 | Winkel verkürzen | Torwart kommt heraus und macht den Winkel zu |
-| Siebenmeter-Duell | Psyche | Serie von Strafwürfen, Torwart übt langes Stehenbleiben und das Lesen der Wurfhand |`,
+**Immer vor dem Mannschaftsteil mit Abschluss.** Ein Torwart, der schon 60 Würfe gehalten hat, lernt in der Abschlussform nichts mehr.
+
+**Wurfvolumen im Blick behalten.** Ein Torwart bekommt im Training oft mehr Würfe als im Spiel. Das ist Belastung, vor allem für Hüfte und Schulter. Zähle grob mit und begrenze auf etwa 80 bis 100 Würfe pro Einheit.
+
+**Am Tag vor dem Spiel kurz und bekannt.** 15 Minuten mit vertrauten Formen, keine neuen Bewegungsaufgaben.
+
+Ein organisatorischer Hinweis, der viel bringt: Wenn ihr zwei Torhüter habt, trainieren sie gemeinsam und werfen sich gegenseitig an. Das halbiert deinen Betreuungsaufwand und verdoppelt die Qualität, weil beide dieselben Coaching-Punkte hören.
+
+## Was du an der Statistik abliest
+
+Torwartleistung ist die am schwersten zu bewertende Größe im Handball, weil sie von der Abwehr abhängt. Führe deshalb nie nur die Gesamtquote:
+
+**Paradenquote je Zone.** Fünf Kategorien reichen: Rückraum neun Meter, Außen, Nahdistanz, Tempogegenstoß, Siebenmeter. Erst diese Aufschlüsselung sagt dir, ob ein schwacher Wert am Torwart oder an den zugelassenen Würfen liegt.
+
+**Siebenmeterquote getrennt und über die Saison.** Erst ab etwa zwanzig Versuchen aussagekräftig.
+
+**Die Parade nach dem Gegentor.** Zähl, wie oft direkt nach einem Gegentreffer eine Parade folgt. Diese Zahl beschreibt die mentale Stabilität besser als jeder Eindruck.
+
+**Die Verteilung der zugelassenen Würfe.** Wenn dein Torwart plötzlich doppelt so viele Nahdistanzwürfe bekommt, fällt seine Quote, ohne dass er schlechter geworden ist. Prüfe immer zuerst die Verteilung, dann die Quote.
+
+Wie du diese Werte sauber erhebst und einordnest, steht ausführlich in der [Torwartstatistik](/ratgeber/handball-torwart-statistik).`,
+  modules: [
+    {
+      after: 'Die Einheit im Ablauf',
+      kind: 'sessionTimeline',
+      caption: '25-Minuten-Block parallel zum Mannschaftstraining',
+      blocks: [
+        {
+          minutes: 5,
+          label: 'Aufwärmen mit Ball',
+          note: 'Beinarbeit ohne Wurf, Hände früh nach oben.',
+        },
+        {
+          minutes: 5,
+          label: 'Übung 1 – Grundstellung und Position',
+          note: 'Stellungsspiel auf dem Kreisbogen, ohne Härte.',
+        },
+        {
+          minutes: 5,
+          label: 'Übung 2 und 3 – Zonen einzeln',
+          note: 'Ein Schwerpunkt je Einheit: oben, unten oder Nahdistanz.',
+        },
+        {
+          minutes: 5,
+          label: 'Übung 4 – Reaktion in Folge',
+          note: 'Mehrere Würfe hintereinander, kurze Wege dazwischen.',
+        },
+        {
+          minutes: 5,
+          label: 'Übung 5 und 6 – Spielnähe',
+          note: 'Wurf nach Abwehrsituation und Siebenmeter zum Abschluss.',
+        },
+      ],
+    },
+    {
+      after: 'Sechs Übungen für den Torwartblock',
+      kind: 'exercise',
+      name: '1 · Position auf dem Kreisbogen',
+      meta: '5 Min. · ab D-Jugend',
+      setup:
+        'Ein Anwerfer wandert langsam von halblinks über die Mitte nach halbrechts, ohne zu werfen. Der Torwart hält durchgehend die richtige Position.',
+      organisation:
+        'Drei Durchgänge ohne Wurf, danach drei mit unangekündigtem Wurf aus beliebiger Position.',
+      coachingPoints: [
+        'Die Position folgt dem Ball auf einem leichten Bogen, nicht auf der Torlinie.',
+        'Die Hände bleiben durchgehend über Hüfthöhe.',
+        'Die Bewegung erfolgt seitlich, nicht rückwärts.',
+      ],
+      commonError:
+        'Der Torwart weicht beim Seitenwechsel Richtung Linie aus. Er deckt dadurch weniger Winkel ab und wirkt langsamer, als er ist.',
+      variation: 'Der Anwerfer wechselt das Tempo – der Torwart muss die Position dennoch halten.',
+    },
+    {
+      after: 'Sechs Übungen für den Torwartblock',
+      kind: 'exercise',
+      name: '2 · Zone oben',
+      meta: '5 Min. · ab C-Jugend',
+      setup: 'Würfe ausschließlich in die oberen Ecken, aus neun Metern, mit reduzierter Härte.',
+      organisation: 'Je zehn Würfe, danach Wechsel des Anwerfers. Härte erst am Ende steigern.',
+      coachingPoints: [
+        'Die Hand geht zum Ball, nicht der ganze Körper.',
+        'Der Ellenbogen bleibt leicht gebeugt, sonst ist die Bewegung zu langsam.',
+        'Die Beine folgen der Hand, sie führen nicht.',
+      ],
+      commonError:
+        'Der Torwart springt zur Ecke, statt die Hand zu führen. Der Sprung ist langsamer als die Hand und macht ihn für Würfe in die andere Ecke unbeweglich.',
+    },
+    {
+      after: 'Sechs Übungen für den Torwartblock',
+      kind: 'exercise',
+      name: '3 · Zone unten und Nahdistanz',
+      meta: '5 Min. · ab C-Jugend',
+      setup:
+        'Würfe in die unteren Ecken aus neun Metern, danach Nahdistanzwürfe vom Kreis mit deutlich reduzierter Härte.',
+      organisation:
+        'Getrennte Durchgänge, nicht gemischt. Die Nahdistanz kommt zuletzt und mit langsamen Würfen.',
+      coachingPoints: [
+        'Unten führt das Bein, die Hand folgt – umgekehrt als oben.',
+        'Bei Nahdistanz wird die Fläche vergrößert, nicht die Ecke bedient: Arme und Beine breit.',
+        'Der Torwart geht bei Nahdistanz aktiv entgegen, statt zu warten.',
+      ],
+      commonError:
+        'Der Torwart bleibt bei Nahdistanzwürfen stehen und wartet. Ohne aktives Entgegengehen hat er bei zwei Metern Abstand keine Chance.',
+    },
+    {
+      after: 'Sechs Übungen für den Torwartblock',
+      kind: 'exercise',
+      name: '4 · Drei Würfe in Folge',
+      meta: '5 Min. · ab C-Jugend',
+      setup:
+        'Drei Anwerfer stehen auf halblinks, Mitte und halbrechts und werfen unmittelbar nacheinander.',
+      organisation:
+        'Vier Serien à drei Würfe, dazwischen 45 Sekunden Pause. Reihenfolge der Werfer wechselt.',
+      coachingPoints: [
+        'Nach jeder Parade sofort zurück in die Grundstellung.',
+        'Der Weg zwischen den Positionen erfolgt seitlich und kurz.',
+        'Der dritte Wurf ist der eigentliche Trainingsinhalt – dort zeigt sich die Beinarbeit.',
+      ],
+      commonError:
+        'Der Torwart bleibt nach der ersten Parade unten. Der zweite Wurf ist dann geschenkt.',
+      variation: 'Vier Würfe statt drei, sobald die Beinarbeit sauber bleibt.',
+    },
+    {
+      after: 'Sechs Übungen für den Torwartblock',
+      kind: 'exercise',
+      name: '5 · Wurf nach Abwehrsituation',
+      meta: '5 Min. · ab B-Jugend',
+      setup:
+        'Zwei Blockspieler vor dem Tor, der Werfer entscheidet zwischen Wurf über den Block und Anspiel an den Kreis.',
+      organisation:
+        'Der Block sagt seine Ecke laut an. Je acht Durchgänge, danach Rollenwechsel im Block.',
+      coachingPoints: [
+        'Der Torwart stellt sich erst nach der Ansage des Blocks.',
+        'Bei Anspiel an den Kreis sofort Position wechseln, nicht dem Ball nachsehen.',
+        'Die Absprache muss laut und eindeutig sein – sie ist Teil der Übung.',
+      ],
+      commonError:
+        'Der Torwart deckt dieselbe Ecke wie der Block. Beide arbeiten dann gegen dieselbe Hälfte des Tors, die andere steht offen.',
+    },
+    {
+      after: 'Sechs Übungen für den Torwartblock',
+      kind: 'exercise',
+      name: '6 · Siebenmeter lesen',
+      meta: '5 Min. · ab B-Jugend',
+      setup:
+        'Fünf Schützen werfen nacheinander. Nach jedem Wurf sagt der Torwart, woran er die Ecke erkannt hat.',
+      organisation:
+        'Zwei Durchgänge. Im zweiten achtet der Torwart nur noch auf ein einziges Merkmal seiner Wahl.',
+      coachingPoints: [
+        'Ein Merkmal, nicht vier – Blick, Schulter, Standbein oder Ballhaltung.',
+        'Die Entscheidung fällt beim Ausholen, nicht vor dem Anlauf.',
+        'Position leicht vorgeschoben, aber innerhalb der Vier-Meter-Linie.',
+      ],
+      commonError:
+        'Der Torwart legt sich vor dem Anlauf fest. Gehaltene Bälle sehen dann spektakulär aus, die Quote bleibt trotzdem schlecht.',
+    },
+  ],
   faqs: [
+    {
+      question: 'Wie trainiere ich einen Torwart ohne Torwarttrainer?',
+      answer:
+        'Mit einem festen Block von 20 bis 25 Minuten, in dem ein Feldspieler anwirft, und einer klaren Beobachtungsliste: Grundstellung mit Händen über Hüfthöhe, Position auf dem Kreisbogen statt auf der Linie, seitliche statt rückwärtige Bewegung, späte Entscheidung. Diese vier Punkte erkennst du auch ohne eigene Torwarterfahrung.',
+    },
     {
       question: 'Wie oft sollte ein Handball-Torwart trainieren?',
       answer:
-        'Idealerweise steht in jeder Einheit ein kurzer Torwartblock, dazu ein bis zwei spezielle Einheiten pro Woche mit Fokus auf Grundtechnik, Reaktion und Zonenabwehr. Wichtig ist Qualität vor Quantität – kurze, intensive Reaktionsblöcke im frischen Zustand bringen mehr als lange Wurfserien.',
-    },
-    {
-      question: 'Was ist eine gute Paradenquote im Handball?',
-      answer:
-        'Die Paradenquote berechnest du mit Paraden ÷ (Paraden + Gegentore) × 100. Eine Quote von rund 30 bis 40 % gilt im Amateur- und Ligabereich bereits als gut. Über eine ganze Saison sind konstante 35 % ein starker Wert.',
+        'Zwei spezifische Blöcke pro Woche zu je 20 bis 25 Minuten reichen im Amateurbereich für sichtbare Entwicklung. Wichtiger als die Dauer ist die Begrenzung des Wurfvolumens: Ein Torwart bekommt im Training oft mehr Würfe als im Spiel – etwa 80 bis 100 pro Einheit sind eine sinnvolle Obergrenze.',
     },
     {
       question: 'Wie hält man einen Siebenmeter im Handball?',
       answer:
-        'Beim Siebenmeter zählt die Nervenstärke. Beobachte die Wurfhand und die Körperhaltung des Schützen, bleibe möglichst lange in der Grundstellung stehen und lege dich nicht zu früh auf eine Ecke fest. Wer zu früh fällt, macht die andere Seite auf.',
+        'Durch spätes Entscheiden und das Lesen eines einzigen Merkmals – Blickrichtung, Schulterstellung, Standbein oder Ballhaltung. Wer sich vor dem Anlauf festlegt, hält deutlich seltener. Eine leicht vorgeschobene Position innerhalb der Vier-Meter-Linie verkleinert zusätzlich den Winkel.',
+    },
+    {
+      question: 'Soll ein Torwart bei Würfen in eine Ecke spekulieren?',
+      answer:
+        'Im Feldspiel nein, beim Siebenmeter nur eingeschränkt. Frühes Festlegen erzeugt spektakuläre Paraden und ebenso viele harmlos wirkende Gegentore – die Quote bleibt schlecht. Besser ist eine späte Entscheidung beim Ausholen des Werfers, orientiert an einem festen Merkmal.',
+    },
+    {
+      question: 'Ab welchem Alter sollte man Torhüter spezialisieren?',
+      answer:
+        'Nicht vor der D-Jugend. Im Kinderbereich rotieren alle Kinder ins Tor. Eine feste Torwartrolle vor der D-Jugend nimmt dem Kind die Feldspielerausbildung, die es für Beinarbeit, Ballgefühl und Spielverständnis später ohnehin braucht.',
     },
   ],
   relatedSlugs: [
-    'wurfquote-berechnen',
-    'handball-training-planen',
-    'handball-alleine-trainieren',
+    'handball-torwart-statistik',
+    'handball-blocken-lernen',
+    'siebenmeter-trainieren',
+    'handball-6-0-abwehr',
   ],
 };

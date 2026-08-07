@@ -118,6 +118,6 @@ Auch mit den besten Absichten passieren im Nachwuchs immer wieder dieselben Fehl
   relatedSlugs: [
     'handball-trainer-werden',
     'handball-aufwaermen-uebungen',
-    'handball-quereinsteiger-erwachsene',
+    'handball-minihandball-kinder',
   ],
 };

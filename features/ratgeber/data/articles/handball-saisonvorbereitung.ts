@@ -125,7 +125,7 @@ Eine Vorbereitung, in der die halbe Mannschaft angeschlagen in die Saison geht, 
     },
   ],
   relatedSlugs: [
-    'handball-beweglichkeit-dehnen',
+    'handball-athletiktraining',
     'handball-aufwaermen-uebungen',
     'handball-torwarttraining',
   ],

@@ -2,119 +2,188 @@ import type { Article } from '../../types';
 
 export const handballPositionenErklaert: Article = {
   slug: 'handball-positionen-erklaert',
-  title: 'Handball-Positionen erklärt: Aufgaben aller Spielpositionen',
-  metaTitle: 'Handball-Positionen erklärt: alle Aufgaben im Überblick',
+  title: 'Positionen und Anforderungsprofile: wen stellst du wohin?',
+  metaTitle: 'Handball-Positionen: Anforderungsprofile für Trainer',
   metaDescription:
-    'Handball-Positionen erklärt: Torwart, Außen, Kreisläufer und Rückraum – alle sieben Spielpositionen mit ihren Aufgaben und typischen Spielertypen im Überblick.',
+    'Die sieben Handball-Positionen mit Anforderungsprofil: welche Aufgaben jede hat, worauf du bei der Besetzung achtest, ab wann du festlegst und was du je Position misst.',
   keywords: [
     'handball positionen',
-    'handball positionen erklärt',
-    'handball spielpositionen',
-    'kreisläufer handball',
-    'rückraum handball',
-    'aufgaben positionen handball',
-    'handball rückraum mitte',
+    'handball anforderungsprofil',
+    'kreisläufer handball aufgaben',
+    'spielmacher handball',
     'außenspieler handball',
+    'handball position besetzen',
+    'welche position handball',
+    'handball rückraum aufgaben',
   ],
   category: 'Taktik & Systeme',
   archetype: 'referenz',
-  datePublished: '2026-04-02',
+  datePublished: '2026-06-12',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 5,
+  readingTimeMinutes: 8,
   excerpt:
-    'Jede der sieben Handball-Positionen hat ihre eigenen Aufgaben. Hier erfährst du, was Torwart, Außen, Kreisläufer und Rückraum ausmacht – und welcher Spielertyp wohin passt.',
+    'Sieben Positionen, sieben Anforderungsprofile – und die Frage, ab wann du überhaupt festlegen solltest. Ein Nachschlagewerk für die Kaderplanung, nicht für die Selbstfindung.',
   imagePath: '/gameListOverview.png',
-  imageAlt: 'Spielübersicht und Positionen in der Statix Handball-App',
-  body: `Handball ist ein Positionsspiel. Auf dem Feld steht pro Mannschaft ein Torwart und sechs Feldspieler, und jeder von ihnen hat eine klar umrissene Aufgabe. Wer versteht, warum der Kreisläufer am Sechsmeterkreis klebt und warum der Rückraum Mitte das Spiel ständig dirigiert, durchschaut das Geschehen auf dem Parkett viel schneller. Denn im Handball hat jede Rolle ihren festen Platz im Angriff, ihre eigene Wurfzone und ihre typischen Laufwege. In diesem Ratgeber gehen wir jede Position durch: was sie leistet, welcher Spielertyp dorthin passt und wie sich die Rollen zwischen Angriff und Abwehr verschieben.
+  imageAlt: 'Positionsübersicht und Spielerwerte einer Handballmannschaft in der Statix-App',
+  body: `Eine Handballmannschaft besteht aus sieben Positionen mit sehr unterschiedlichen Anforderungen. Wer sie besetzt, trifft eine der folgenreichsten Trainerentscheidungen überhaupt – und trifft sie im Amateurbereich meistens nach Körpergröße und Verfügbarkeit.
 
-## Überblick: die sieben Positionen
+Dieser Artikel ist als Nachschlagewerk gedacht: Was verlangt jede Position, worauf achtest du bei der Besetzung, und was misst du, um zu prüfen, ob sie passt.
 
-Im klassischen Angriff verteilen sich die sechs Feldspieler auf zwei Reihen: die beiden Außen ganz breit und der Kreisläufer vorne an der gegnerischen Abwehr, dahinter der Rückraum im Zentrum. Dazu kommt der Torwart als siebter Spieler. Das ergibt diese sieben Positionen:
+## Die sieben Positionen im Überblick
 
-- **Torwart (TW):** der letzte Mann, hält die Bälle und eröffnet das Tempospiel.
-- **Linksaußen (LA):** breite Position auf der linken Seite, meist mit spitzem Wurfwinkel.
-- **Rechtsaußen (RA):** das Gegenstück rechts, oft mit Linkshändern besetzt.
-- **Kreisläufer (KL):** arbeitet direkt am Sechsmeterkreis mitten in der gegnerischen Abwehr.
-- **Rückraum links (RL):** wurfstarke Position auf der linken Rückraumseite.
-- **Rückraum Mitte (RM):** der Spielmacher und Regisseur der Mannschaft.
-- **Rückraum rechts (RR):** wurfstarke rechte Seite, ideal für Linkshänder.
+Im Angriff stehen die Feldspieler in der Grundaufstellung 3:3 – drei Rückraumspieler, zwei Außen und ein Kreisläufer –, dazu der Torwart. In der Abwehr verschiebt sich die Zuordnung: Aus Außenspielern werden meist Außenverteidiger, aus Rückraumspielern Halb- oder Innenverteidiger.
 
-Die Kürzel LA, RA, KL, RL, RM und RR wirst du in jedem Spielbericht und in jeder Statistik wiederfinden. Es lohnt sich, sie zu kennen.
+Die Kurzfassung je Position, bevor es in die Details geht:
 
-## Der Torwart
-
-Der Torwart ist der Rückhalt jeder Mannschaft. Seine erste Aufgabe ist klar: Bälle halten. Ein Keeper in Topform kann ein ganzes Spiel drehen, denn jede Parade verhindert nicht nur ein Gegentor, sondern eröffnet gleichzeitig die Chance auf einen schnellen Gegenangriff.
-
-Genau darin liegt seine zweite, oft unterschätzte Aufgabe: Der Torwart ist der Starter des Tempospiels. Hält oder fängt er den Ball, sucht er sofort den langen Pass auf den startenden Außen oder Rückraumspieler. Ein guter Torwart denkt also nicht nur ans Halten, sondern ans schnelle Umschalten. Reaktionsschnelligkeit, Mut und ein gutes Auge für die Eröffnung machen ihn aus. Dazu kommt die Nervenstärke beim Siebenmeter, wo er im direkten Duell mit dem Schützen zum Matchwinner werden kann.
-
-## Die Außenspieler
-
-Links- und Rechtsaußen stehen am äußeren Rand des Angriffs und haben dadurch den denkbar schwierigsten Wurfwinkel: Sie schließen aus der Ecke ab, wo das Tor optisch fast zugestellt ist. Genau deshalb sind Außen Spezialisten für spitze Winkel und clevere Heber über den Torwart.
-
-Ihre große Stunde schlägt aber im Tempospiel. Wenn die Mannschaft umschaltet, sprinten die Außen die Linie entlang und sind die ersten am gegnerischen Tor – sie sind damit zentral für jeden schnellen Gegenstoß. Wer außen spielt, sollte also schnell, wendig und sprungstark sein. Auf Rechtsaußen sind zudem Linkshänder im Vorteil, weil sie aus dieser Position mit der Wurfhand einen besseren Winkel bekommen.
-
-## Der Kreisläufer
-
-Der Kreisläufer – kurz Kreis – ist der Arbeiter im Zentrum. Er spielt mitten in der gegnerischen Abwehr direkt am Sechsmeterkreis, mit dem Rücken zum Tor. Seine Aufgabe ist doppelt: Er stellt Sperren und Blocks, um den Rückraumspielern Lücken für den Wurf zu öffnen, und er lauert selbst auf Anspiele, um aus kürzester Distanz abzuschließen.
-
-Das ist eine körperbetonte Rolle. Am Kreis wird geschoben, gehalten und gerempelt – Robustheit und ein gutes Stellungsspiel sind Pflicht. Weil der Kreisläufer aus nächster Nähe wirft, gehören seine Abschlüsse zu den besten Wurfchancen im ganzen Angriff, entsprechend hoch ist seine typische Wurfquote. Ein starker Kreisläufer bindet außerdem Abwehrspieler und schafft mit seinen Sperren erst den Raum, aus dem die Rückraumspieler gefährlich werden.
-
-## Der Rückraum
-
-Der Rückraum ist die zweite Reihe hinter Kreis und Außen und besteht aus drei Positionen. Von hier kommen die wuchtigen Distanzwürfe – und die Spielintelligenz.
-
-Rückraum links und Rückraum rechts sind vor allem für die Wurfstärke zuständig. Sie ziehen von etwa neun Metern zum Sprungwurf, spielen Kreuzbewegungen mit dem Nebenmann und suchen die Lücke im Block. Große, wurfgewaltige Spieler sind hier typisch. Auf Rückraum rechts spielen wie auf Rechtsaußen bevorzugt Linkshänder, weil ihr Wurfarm dann innen liegt und den besseren Winkel zum Tor findet.
-
-Rückraum Mitte ist eine Sonderrolle: Das ist meist der Spielmacher oder Regisseur der Mannschaft. Er organisiert den Angriff, gibt das Tempo vor, verteilt die Bälle und entscheidet, welche Spielzüge laufen. Übersicht, Passsicherheit und ein Gespür fürs richtige Timing sind hier wichtiger als der härteste Wurf – auch wenn ein gefährlicher Abschluss die Rolle perfekt abrundet.
-
-## Positionen in der Abwehr
-
-In der Abwehr verschieben sich die Rollen. Aus den Angriffspositionen werden Abwehrpositionen, die man meist von außen nach innen durchnummeriert. Ein paar Begriffe solltest du kennen:
-
-- **Innenblock:** die beiden zentralen Abwehrspieler, die den Weg durch die Mitte dichtmachen – häufig der Kreisläufer und ein Rückraumspieler aus dem Angriff.
-- **Halbpositionen:** die Verteidiger links und rechts vom Innenblock, die die gegnerischen Rückraumschützen stören und Sperren umlaufen.
-- **Außen:** die äußeren Verteidiger, die den Weg zum Flügel decken und Bälle für den Tempogegenstoß erobern.
-- **Vorgezogener Spieler:** in offensiven Systemen wie der 3:2:1 ein Verteidiger, der dem gegnerischen Spielmacher weit entgegenrückt und ihn früh stört.
-
-Welche Formation dahintersteht – von der 6:0 bis zur 3:2:1 – ist ein eigenes Thema; hier geht es nur um die grundsätzlichen Rollen.
-
-## Überblickstabelle
-
-| Position | Hauptaufgabe | Typischer Spielertyp |
+| Position | Kernaufgabe im Angriff | Kernaufgabe in der Abwehr |
 | --- | --- | --- |
-| Torwart | Bälle halten, Tempospiel eröffnen | reaktionsschnell, mutig |
-| Linksaußen | Tempospiel, Abschluss aus spitzem Winkel | schnell, wendig, sprungstark |
-| Rechtsaußen | wie Linksaußen, oft Linkshänder | schnell, wendig, sprungstark |
-| Kreisläufer | Sperren stellen, Nahwürfe | robust, körperbetont |
-| Rückraum links | Distanzwürfe, Durchbrüche | groß, wurfstark |
-| Rückraum Mitte | Angriff lenken, Spielmacher | übersichtlich, passsicher |
-| Rückraum rechts | Distanzwürfe, oft Linkshänder | groß, wurfstark |
+| Torwart | Anspiel für den Gegenstoß | Tor halten, Abwehr organisieren |
+| Kreisläufer | Sperren stellen, aus Nahdistanz abschließen | Innenblock, härteste Abwehrposition |
+| Linksaußen | Tempogegenstoß, Abschluss aus spitzem Winkel | Außenverteidiger |
+| Rechtsaußen | wie links, meist mit linker Wurfhand | Außenverteidiger |
+| Rückraum links | Distanzabschluss, Durchbruch, Kreisanspiel | Halbverteidiger |
+| Rückraum Mitte | Spielaufbau, Tempo, Anspiele verteilen | Innenverteidiger |
+| Rückraum rechts | wie links, profitiert stark von linker Wurfhand | Halbverteidiger |
 
-## Die richtige Position finden
+## Anforderungsprofile im Detail
 
-Gerade im Nachwuchs gilt: Lass die Kinder erst einmal alle Positionen ausprobieren. Wer als Jugendlicher im Tor, am Kreis und im Rückraum gestanden hat, entwickelt ein viel besseres Spielverständnis und wird nicht zu früh auf eine Rolle festgelegt. Eine feste Spezialisierung ergibt erst später Sinn.
+### Kreisläufer
 
-Für die passende Position zählen dann die individuellen Stärken. Ein großer, wurfgewaltiger Spieler ist im Rückraum gut aufgehoben, ein schneller und wendiger Typ außen, ein robuster Zweikämpfer am Kreis und ein Kind mit Übersicht und Ruhe am Ball auf Rückraum Mitte. Linkshänder sind auf der rechten Seite fast schon Gold wert, weil dort händeringend Spieler gesucht werden. Wichtig ist am Ende vor allem, dass sich ein Spieler auf seiner Position wohlfühlt und seine Stärken voll einbringen kann.`,
+Die körperlich anspruchsvollste Feldposition. Der Kreisläufer arbeitet die gesamte Spielzeit im Kontakt, stellt Sperren, löst sich, bietet an – und bekommt dafür pro Spiel vielleicht sechs bis acht Bälle.
+
+**Worauf du achtest:** Kontaktbereitschaft und Rumpfstabilität vor allem anderen. Dazu Antizipation: Der Kreisläufer muss lesen, wohin die Abwehr verschiebt, bevor er sich löst. Wurfhärte ist unwichtig, Abschlussvielfalt aus zwei Metern dagegen entscheidend – Dreher, Heber, Wurf aus dem Fall.
+
+**Häufigster Besetzungsfehler:** die größte Person nehmen. Größe hilft beim Sperren, aber ein kleiner, beweglicher Kreisläufer mit gutem Timing ist wertvoller als ein großer, der immer zu spät kommt.
+
+### Außenspieler
+
+Die Position mit dem schwierigsten Wurfwinkel und der höchsten Laufleistung. Ein Außenspieler läuft jeden Gegenstoß mit, auch wenn er den Ball nicht bekommt.
+
+**Worauf du achtest:** Antritt und Sprungkraft zuerst, dann der Abschluss aus spitzem Winkel. In der Abwehr braucht der Außenverteidiger Beinarbeit und die Bereitschaft, den Ball nach vorn zu bringen.
+
+**Häufigster Besetzungsfehler:** Die Position als Ablage für Spieler zu nutzen, die im Rückraum nicht durchsetzungsfähig sind. Außen ist keine einfachere Position, sie ist eine andere.
+
+### Rückraum links und rechts
+
+Die Halbpositionen tragen den Distanzabschluss und den Zug zur Mitte. Rückraum rechts profitiert erheblich von einer linken Wurfhand – dazu gibt es eine eigene [Entscheidungshilfe für Linkshänder im Kader](/ratgeber/handball-linkshaender).
+
+**Worauf du achtest:** Wurfhärte aus neun Metern, Durchsetzungsfähigkeit im Zweikampf und die Fähigkeit, den Kreis anzuspielen. Der letzte Punkt wird bei der Besetzung fast immer vergessen und entscheidet, ob euer Angriff mehr als einen Weg hat.
+
+**Häufigster Besetzungsfehler:** nur nach Wurfhärte besetzen. Ein Halbspieler, der wirft, aber niemanden bedient, macht euren Angriff berechenbar.
+
+### Rückraum Mitte
+
+Die Position mit der größten Verantwortung für den Spielfluss. Der Mittelmann bestimmt das Tempo, entscheidet über Spielzüge und verteilt die Bälle.
+
+**Worauf du achtest:** Übersicht und Entscheidungsgeschwindigkeit vor Wurfhärte. Ein Spielmacher muss nicht der beste Werfer sein – er muss aber gefährlich genug sein, dass die Abwehr ihn ernst nimmt, sonst kann sie sich auf die Anspiele konzentrieren.
+
+Kommunikationsfähigkeit gehört hier zum Anforderungsprofil, nicht zu den weichen Faktoren. Der Mittelmann ist die einzige Feldposition, die alle anderen sieht.
+
+**Häufigster Besetzungsfehler:** den besten Werfer in die Mitte stellen. Er wirft dann von dort, statt zu verteilen, und ihr verliert beides.
+
+### Torwart
+
+Die Position mit dem größten Einzeleinfluss auf das Ergebnis. Anforderungen und Training stehen ausführlich im [Torwarttraining](/ratgeber/handball-torwarttraining).
+
+**Worauf du achtest:** Reaktionsfähigkeit und Stellungsspiel, dazu die Fähigkeit, nach einem Gegentor sofort wieder im Spiel zu sein. Der letzte Punkt unterscheidet gute von sehr guten Torhütern deutlicher als jede Technik.
+
+## Ab wann du festlegst
+
+Die häufigste Frage im Nachwuchs – und die wichtigste Antwort dieses Artikels: **so spät wie möglich.**
+
+Bis zur D-Jugend spielt jedes Kind auf jeder Position, einschließlich Tor. Wer mit zehn Jahren zum Kreisläufer erklärt wird, weil er gerade der Größte ist, bekommt drei Jahre später ein Problem, wenn die anderen nachwachsen.
+
+In der C-Jugend entstehen Schwerpunkte, aber jeder spielt weiterhin mindestens zwei Positionen. Ab der B-Jugend darf spezialisiert werden – und selbst dann gilt: Ein Rückraumspieler kann später auf Außen wechseln, umgekehrt fast nie. Im Zweifel bildest du im Rückraum aus.
+
+Bei Erwachsenen ist die Frage eine andere: Dort geht es nicht um Ausbildung, sondern um die beste Besetzung mit dem vorhandenen Kader. Zwei Spieler, die zwei Positionen spielen können, sind mehr wert als drei Spezialisten – Ausfälle sind im Amateurbereich der Normalfall.
+
+## Grenzfälle aus der Kaderplanung
+
+**Der Spieler will unbedingt auf eine bestimmte Position.** Nimm den Wunsch ernst, aber begründe deine Entscheidung mit dem Anforderungsprofil. Ein Spieler, der weiß, woran es liegt und was sich ändern muss, akzeptiert eine Position deutlich eher als einer, dem nur gesagt wird, wo er zu stehen hat.
+
+**Ihr habt drei gute Rückraumspieler und keinen Kreisläufer.** Der häufigste Kaderengpass im Amateurbereich. Der Kreis ist die Position, die sich am ehesten neu lernen lässt – vorausgesetzt, der Spieler bringt Kontaktbereitschaft mit. Wurftechnik am Kreis ist in wenigen Monaten aufbaubar, Kontaktbereitschaft nicht.
+
+**Der beste Spieler ist auch der beste Verteidiger.** Dann brauchst du eine Entscheidung über die Einsatzzeit, keine über die Position. Ein Spieler, der 60 Minuten Angriff und Abwehr spielt, ist in Minute 50 auf keiner von beiden gut.
+
+**Eine Position ist nur einfach besetzt.** Plane den Ersatzfall, bevor er eintritt. Der Spieler, der einspringt, sollte die Position mindestens einmal pro Woche trainiert haben – im Spiel zum ersten Mal dort zu stehen, funktioniert nicht.
+
+**Ein Spieler passt körperlich nicht ins Profil, macht aber Tore.** Vertrau dem Ergebnis. Anforderungsprofile sind Planungshilfen, keine Zulassungsregeln.
+
+## Was das für dich praktisch bedeutet
+
+Prüfe deine Besetzung mit drei Zahlen statt mit dem Bauchgefühl:
+
+**Abschlussverteilung je Position.** Wenn 70 % eurer Abschlüsse aus dem Rückraum kommen, ist entweder der Kreis nicht eingebunden oder die Außen bekommen keine Bälle. Beides ist ein Besetzungs- oder Systemthema, kein Abschlussthema.
+
+**Technische Fehler je Position.** Häufen sich Ballverluste beim Kreisanspiel, liegt das Problem oft beim Halbspieler, nicht beim Kreisläufer.
+
+**Wurfquote je Position gegen die Richtwerte.** Ein Außenspieler bei 40 % und ein Rückraumspieler bei 40 % sind zwei völlig verschiedene Befunde – zur Einordnung hilft der Artikel zur [Wurfquote](/ratgeber/wurfquote-berechnen).
+
+Nimm dir diese drei Auswertungen einmal pro Halbserie vor. Öfter braucht es nicht, seltener übersiehst du eine Fehlbesetzung eine ganze Saison lang.`,
+  modules: [
+    {
+      kind: 'answerBox',
+      text: 'Im Handball stehen sechs Feldspieler und ein Torwart auf dem Feld: Kreisläufer, Links- und Rechtsaußen sowie drei Rückraumpositionen. Für die Besetzung zählt das Anforderungsprofil, nicht die Körpergröße – und im Nachwuchs gilt: so spät wie möglich festlegen, bis zur D-Jugend spielt jedes Kind jede Position.',
+    },
+    {
+      after: 'Die sieben Positionen im Überblick',
+      kind: 'formation',
+      system: 'angriff',
+      caption:
+        'Die Grundaufstellung 3:3 im Angriff (orange) gegen eine 6:0-Abwehr (blau): drei Rückraumspieler, zwei Außen und der Kreisläufer an der Linie.',
+    },
+    {
+      after: 'Ab wann du festlegst',
+      kind: 'benchmarkTable',
+      caption: 'Wann was festgelegt wird',
+      columns: ['Altersstufe', 'Grad der Festlegung', 'Was du sicherstellst'],
+      rows: [
+        ['bis D-Jugend', 'keine', 'Jedes Kind spielt jede Position, auch im Tor.'],
+        ['C-Jugend', 'Schwerpunkte', 'Jeder spielt mindestens zwei Positionen regelmäßig.'],
+        ['B-Jugend', 'Spezialisierung beginnt', 'Im Zweifel im Rückraum ausbilden – der Weg nach außen bleibt offen.'],
+        ['A-Jugend', 'weitgehend festgelegt', 'Zweitposition für den Ersatzfall bleibt trainiert.'],
+        ['Erwachsene', 'nach Kaderlage', 'Jede Position ist doppelt besetzbar.'],
+      ],
+      note: 'Planungsraster für die Ausbildung, keine Vorschrift. Körperliche Entwicklung verläuft besonders zwischen 12 und 15 Jahren sehr unterschiedlich.',
+    },
+  ],
   faqs: [
     {
       question: 'Welche Positionen gibt es im Handball?',
       answer:
-        'Es gibt sieben Positionen: den Torwart sowie sechs Feldspieler – Linksaußen, Rechtsaußen, Kreisläufer und den dreigeteilten Rückraum mit Rückraum links, Rückraum Mitte und Rückraum rechts. Jede Position hat eigene Aufgaben im Angriff und in der Abwehr.',
+        'Sieben: Torwart, Kreisläufer, Linksaußen, Rechtsaußen sowie Rückraum links, Mitte und rechts. Im Angriff stehen die Feldspieler üblicherweise in einer 3:3-Grundaufstellung. In der Abwehr verschieben sich die Rollen – aus Außenspielern werden Außenverteidiger, aus Rückraumspielern Halb- oder Innenverteidiger.',
     },
     {
-      question: 'Was macht der Kreisläufer im Handball?',
+      question: 'Worauf achte ich bei der Besetzung des Kreisläufers?',
       answer:
-        'Der Kreisläufer spielt direkt am Sechsmeterkreis mitten in der gegnerischen Abwehr. Er stellt Sperren und Blocks, um dem Rückraum Wurflücken zu öffnen, und schließt selbst aus kürzester Distanz ab. Die Rolle ist sehr körperbetont und verlangt Robustheit und ein gutes Stellungsspiel.',
+        'Auf Kontaktbereitschaft und Rumpfstabilität, dazu Antizipation – der Kreisläufer muss lesen, wohin die Abwehr verschiebt, bevor er sich löst. Wurfhärte ist unwichtig, Abschlussvielfalt aus zwei Metern dagegen entscheidend. Die größte Person zu nehmen ist der häufigste Fehler: Timing schlägt Größe.',
     },
     {
-      question: 'Welche Position ist der Spielmacher im Handball?',
+      question: 'Ab welchem Alter sollten Kinder auf eine Position festgelegt werden?',
       answer:
-        'Der Spielmacher ist meist der Rückraum Mitte. Er lenkt den Angriff, gibt das Tempo vor, verteilt die Bälle und entscheidet über die Spielzüge. Übersicht, Passsicherheit und Timing sind für diese Position wichtiger als der härteste Wurf.',
+        'So spät wie möglich. Bis zur D-Jugend spielt jedes Kind jede Position, einschließlich Tor. In der C-Jugend entstehen Schwerpunkte, jeder spielt aber mindestens zwei Positionen. Spezialisierung ab der B-Jugend – und im Zweifel im Rückraum, weil der Weg nach außen später offen bleibt, umgekehrt aber fast nie.',
+    },
+    {
+      question: 'Was macht einen guten Spielmacher aus?',
+      answer:
+        'Übersicht und Entscheidungsgeschwindigkeit vor Wurfhärte. Er muss gefährlich genug abschließen, dass die Abwehr ihn ernst nimmt, aber seine Hauptaufgabe ist das Verteilen. Kommunikationsfähigkeit gehört bei dieser Position zum Anforderungsprofil – sie ist die einzige Feldposition, die alle anderen sieht.',
+    },
+    {
+      question: 'Warum spielen Linkshänder im rechten Rückraum?',
+      answer:
+        'Weil sie aus dem Winkel der rechten Angriffsseite deutlich mehr Tor sehen. Ein Rechtshänder muss dort über den Körper werfen und verliert Winkel wie Wurfhärte. Ob ein einzelner Linkshänder besser im Rückraum oder auf Rechtsaußen aufgehoben ist, hängt vor allem an seiner Wurfhärte aus neun Metern.',
+    },
+    {
+      question: 'Wir haben drei Rückraumspieler und keinen Kreisläufer – was tun?',
+      answer:
+        'Der Kreis ist die Position, die sich am ehesten neu lernen lässt, vorausgesetzt der Spieler bringt Kontaktbereitschaft mit. Wurftechnik aus zwei Metern lässt sich in wenigen Monaten aufbauen, Kontaktbereitschaft nicht. Wähle also nach Bereitschaft, nicht nach Statur.',
     },
   ],
   relatedSlugs: [
-    'handball-spielfeld-masse',
-    'handball-regeln-einfach-erklaert',
-    'handball-abwehrsysteme',
+    'handball-kreislaeufer-spielen',
+    'handball-rueckraumspieler-tipps',
+    'handball-linkshaender',
+    'handball-angriffssysteme-einsteiger',
+    'jugendhandball-trainieren',
   ],
 };

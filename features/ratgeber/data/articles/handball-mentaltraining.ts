@@ -48,6 +48,20 @@ Was du **nicht** bearbeiten solltest: private Belastung, Prüfungsstress, famili
 - **Der Spieler verschwindet in der Schlussphase.** Er fordert den Ball nicht mehr, läuft aber genauso viel. Das lässt sich zählen: Abschlüsse in den letzten zehn Minuten im Vergleich zum Rest.
 - **Auswärts ist er ein anderer.** Wenn die Werte zwischen Heim- und Auswärtsspielen deutlich auseinandergehen, ist das ein Aufmerksamkeitsthema, kein Formthema.
 
+## Nervosität vor dem Spiel richtig einordnen
+
+Nervosität ist kein Problem, sondern eine Vorbereitung des Körpers auf Belastung. Sie wird erst dann zum Thema, wenn sie die Handlung verändert – wenn ein Spieler seine Routine abkürzt, den Ball nicht mehr fordert oder in der Kabine still wird, obwohl er sonst redet.
+
+Als Trainer hast du drei Hebel, und alle drei liegen vor dem Anwurf:
+
+**Vorhersehbarkeit herstellen.** Ein immer gleicher Ablauf von der Ankunft bis zum Anwurf – gleiche Reihenfolge, gleiche Zeiten, gleiches Aufwärmen – reduziert die Zahl der Dinge, über die nachgedacht werden muss. Das wirkt bei nervösen Spielern stärker als jedes Gespräch.
+
+**Die Aufgabe verkleinern.** "Spiel dein Spiel" ist keine Aufgabe. "Du nimmst in der ersten Halbzeit jeden Zweikampf an, den du bekommst" ist eine. Wer weiß, worauf er achten soll, hat weniger Kapazität für Sorgen.
+
+**Nicht über Nervosität reden, sondern über den nächsten Schritt.** Die gut gemeinte Frage "Bist du nervös?" macht die Nervosität zum Thema und größer. Wirksamer ist eine sachliche Ansprache zur ersten Aktion.
+
+Ein Hinweis für den Jugendbereich: Nervosität vor dem ersten Spiel in einer neuen Mannschaft oder Altersstufe ist normal und geht meist von selbst zurück. Bleibt sie über Wochen bestehen, kommen Schlafprobleme oder Bauchschmerzen vor Spieltagen dazu oder meldet sich ein Kind wiederholt ab, ist das kein Trainingsthema mehr – dann suchst du das Gespräch mit den Eltern.
+
 ## Die Einheit im Ablauf
 
 Mentale Arbeit funktioniert nicht als Vortrag. Sie funktioniert als Bedingung in einer normalen Übung. Diese Zeitleiste zeigt einen 20-Minuten-Block, der sich gut in die zweite Hälfte einer Einheit legen lässt.

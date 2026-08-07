@@ -97,6 +97,6 @@ Rückraumspieler verteidigen meist im Innenblock oder auf den Halbpositionen –
   relatedSlugs: [
     'handball-1-gegen-1-verbessern',
     'handball-wurftraining-sprungwurf',
-    'handball-spielmacher-werden',
+    'handball-positionen-erklaert',
   ],
 };

@@ -2,106 +2,156 @@ import type { Article } from '../../types';
 
 export const handballAusruestungEinsteiger: Article = {
   slug: 'handball-ausruestung-einsteiger',
-  title: 'Handball-Ausrüstung für Einsteiger: Schuhe, Ball, Kleidung und Zubehör',
-  metaTitle: 'Handball-Ausrüstung für Einsteiger',
+  title: 'Ausrüstungs-Checkliste für Trainer und Eltern',
+  metaTitle: 'Handball-Ausrüstung: Checkliste für Trainer & Eltern',
   metaDescription:
-    'Handball-Ausrüstung für Einsteiger: die richtigen Hallenschuhe, die passende Ballgröße, Kleidung, Harz und sinnvolles Schutzzubehör – was du wirklich brauchst und was nicht.',
+    'Handball-Ausrüstung für Einsteiger: welche Ballgröße je Altersstufe gilt, worauf du bei Schuhen achtest, wann Harz sinnvoll ist und was der Verein stellen sollte.',
   keywords: [
     'handball ausrüstung',
-    'handballschuhe kaufen',
     'handball ballgröße',
-    'handball einsteiger ausrüstung',
-    'handball zubehör',
-    'hallenschuhe handball',
-    'was braucht man für handball',
+    'handballschuhe',
+    'handball harz',
+    'handball anfänger ausrüstung',
+    'handball kinder ausstattung',
+    'handball schutzausrüstung',
+    'handball ball größe kinder',
   ],
   category: 'Regelwissen',
   archetype: 'referenz',
-  datePublished: '2026-07-18',
+  datePublished: '2026-07-31',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 3,
+  readingTimeMinutes: 6,
   excerpt:
-    'Für den Handball-Einstieg brauchst du weniger, als du denkst – aber das Richtige. Von Hallenschuhen über die passende Ballgröße bis zu sinnvollem Schutz: der Überblick für Anfänger.',
+    'Was ein Anfänger wirklich braucht, was der Verein stellen sollte und welche Ballgröße in welche Altersstufe gehört – eine Checkliste für die erste Elternmail der Saison.',
   imagePath: '/heroImage.png',
-  imageAlt: 'Handball-Ausrüstung mit Hallenschuhen, Ball und Trikot',
-  body: `Handball ist ein günstiger Einstiegssport: Ball, Hallenschuhe, Sportkleidung – viel mehr braucht es zu Beginn nicht. Trotzdem lohnt es sich, von Anfang an das Richtige zu wählen, vor allem bei den Schuhen und beim Ball. Die falsche Ballgröße oder rutschige Schuhe machen den Start unnötig schwer und erhöhen sogar das Verletzungsrisiko. Hier kommt der ehrliche Überblick für Einsteiger.
+  imageAlt: 'Handbälle, Schuhe und Ausrüstung am Rand einer Handballhalle',
+  body: `Die häufigste Frage nach dem ersten Schnuppertraining lautet: "Was müssen wir kaufen?" Die ehrliche Antwort ist: fast nichts. Für die ersten Wochen reichen Hallenschuhe und Sportkleidung – alles andere kann warten, bis klar ist, ob das Kind dabeibleibt.
 
-## Die Hallenschuhe: die wichtigste Investition
+Diese Checkliste ist so aufgebaut, dass du sie als Trainer direkt an Eltern weitergeben oder in eine Mannschaftsmail kopieren kannst.
 
-Wenn du nur in eine Sache investierst, dann in gute Hallenschuhe. Handball ist ein Sport mit abrupten Stopps, Richtungswechseln und Sprüngen – der Schuh muss dabei sicheren Halt geben. Achte auf:
+## Die richtige Ballgröße
 
-- **Nicht abfärbende Gummisohle** (Hallensohle), die auf dem Hallenboden greift.
-- **Guten Seitenhalt**, weil es viele seitliche Bewegungen gibt.
-- **Dämpfung** für die vielen Sprünge und Landungen.
-- **Fester Sitz**, ohne zu drücken.
+Die Ballgröße ist der einzige Ausrüstungspunkt, bei dem eine falsche Wahl direkt schadet: Ein zu großer Ball verhindert eine saubere Wurftechnik und wird stattdessen mit beiden Händen oder aus dem Handgelenk geworfen. Die Zuordnung nach Altersstufe ist verbandsseitig geregelt und in den Durchführungsbestimmungen deines Landesverbandes nachlesbar – die folgende Tabelle gibt die übliche Zuordnung wieder.
 
-Normale Freizeit- oder Laufschuhe sind ungeeignet: Laufschuhe sind für die Geradeausbewegung gebaut und geben seitlich keinen Halt. Spezielle Handball- oder Hallenschuhe müssen nicht teuer sein, sollten aber gut passen.
+Für das Training gilt zusätzlich: Im Kinderbereich sind Weich- und Schaumstoffbälle keine Notlösung, sondern das passende Gerät. Ein Kind, das Angst vor dem Ball hat, lernt nichts.
 
-## Der Ball: die richtige Größe zählt
+## Schuhe: der einzige Punkt, an dem sich Geld lohnt
 
-Handbälle gibt es in verschiedenen Größen, abhängig von Alter und Geschlecht. Die richtige Größe ist wichtig, damit die Wurftechnik von Anfang an sauber gelernt wird:
+Handball wird auf Hallenboden mit abrupten Richtungswechseln gespielt. Das belastet Sprunggelenk und Knie stärker als die meisten anderen Hallensportarten.
 
-| Größe | Für wen |
-| --- | --- |
-| Größe 0 / 1 (Mini) | Kinder bis ca. 8 Jahre |
-| Größe 1 | weibliche und männliche Jugend (ca. 8–14) |
-| Größe 2 | Frauen und weibliche Jugend ab ca. 14 |
-| Größe 3 | Männer und männliche Jugend ab ca. 16 |
+Worauf du Eltern hinweisen solltest:
 
-Für Einsteiger im Erwachsenenbereich gilt also: Größe 2 für Frauen, Größe 3 für Männer. Anfänger greifen zunächst oft zu einem etwas griffigeren Trainingsball, der auch ohne Harz gut in der Hand liegt.
+**Nicht abfärbende Sohle.** Bedingung fast jeder Hallenordnung. Ein Paar Schuhe, das die Halle markiert, wird zum Vereinsproblem.
 
-## Die Kleidung
+**Seitliche Stabilität.** Laufschuhe sind für Handball ungeeignet – sie sind für Bewegung nach vorn gebaut, nicht zur Seite. Das ist der Punkt, an dem sich der Aufpreis für einen echten Hallenschuh tatsächlich lohnt.
 
-Bei der Kleidung reicht zu Beginn normale, atmungsaktive Sportbekleidung: ein T-Shirt oder Trikot, kurze Sporthose und Sportsocken. Im Verein bekommst du später ein Trikot mit Nummer. Praktisch sind zudem:
+**Passform vor Marke.** Bei Kindern lieber häufiger ein günstiges Paar in der richtigen Größe als ein teures, in das man hineinwachsen soll. Ein zu großer Schuh ist bei seitlichen Bewegungen ein Verletzungsrisiko.
 
-- **Wechselkleidung** fürs Training,
-- **Stutzen oder lange Socken** je nach Vorliebe,
-- eine **Trinkflasche** – Handball ist intensiv, ausreichend trinken ist wichtig.
+Bei Kindern in der Wachstumsphase lohnt es sich, alle paar Monate nachzufragen. Sie sagen von sich aus selten, dass die Schuhe zu klein sind.
 
-## Harz: nützlich, aber nicht sofort nötig
+## Harz: wann es dazugehört und wann nicht
 
-Harz sorgt für besseren Grip und ermöglicht viele Wurf- und Fangtechniken. Für den allerersten Einstieg brauchst du es aber nicht – lerne zunächst die Grundlagen mit einem griffigen Ball. Wichtig: In vielen Hallen ist Harz reglementiert oder verboten, oft ist nur wasserlösliches Harz erlaubt. Frag im Verein nach, was gilt, bevor du selbst welches mitbringst.
+Harz ist ein Haftmittel, das den Ball an der Hand hält und Wurf, Fang und Täuschung erleichtert. Es ist im Handball weit verbreitet, aber nicht überall erlaubt – **viele Hallen verbieten es ausdrücklich**, weil es Böden und Wände angreift. Das ist der erste Punkt, den du klären solltest, bevor die Diskussion überhaupt beginnt.
 
-## Sinnvoller Schutz
+Für die Praxis:
 
-Pflicht ist Schutzausrüstung im Handball meist nicht, aber einige Dinge sind sinnvoll:
+**Im Kinder- und unteren Jugendbereich braucht es kein Harz.** Der Ball ist klein genug, die Hände sind noch in der Entwicklung, und die Grundtechniken sollen ohne Haftmittel sitzen. Ein Kind, das nur mit Harz fangen kann, hat das Fangen nicht gelernt.
 
-- **Knieschoner:** besonders für Außen- und Kreisspieler, die sich oft fallen lassen.
-- **Mundschutz:** schützt die Zähne im engen Körperkontakt.
-- **Tapes und Bandagen:** bei bekannten Schwachstellen an Fingern, Sprunggelenk oder Knie.
+**Ab der B-Jugend ist es üblich**, wenn die Halle es erlaubt und die Liga es voraussetzt. Sprich das im Verein einmal ab, statt es jeder Mannschaft selbst zu überlassen.
 
-Brillenträger greifen idealerweise zu einer Sportbrille oder Kontaktlinsen.
+**Wenn Harz benutzt wird, dann sparsam und organisiert.** Eine gemeinsame Dose, ein fester Platz, ein Lappen zum Abwischen. Harz an Türklinken und Hallenwänden ist der schnellste Weg zu einem Hallenverbot.
 
-## Was du am Anfang NICHT brauchst
+**Entfernen:** Spezielle Reinigungsmittel gibt es im Sportfachhandel; für Kleidung ist frühes Waschen entscheidend. Die Regel, die den meisten Ärger spart: vor dem Verlassen der Halle Hände waschen, nicht danach.
 
-Spare dir zu Beginn teure Extras: hochspezialisierte Torwartausrüstung (außer du stehst im Tor), teure Zusatzgadgets oder mehrere Ballmarken. Das Wichtigste sind gut sitzende Schuhe, der richtige Ball und Freude am Spiel. Der Rest kommt mit der Zeit und den Erfahrungen im Verein.
+## Was der Verein stellen sollte
 
-## Eine kleine Einkaufsliste für den Start
+Diese Punkte gehören nicht auf die Elternliste, sondern in die Vereinsplanung:
 
-1. Hallenschuhe mit nicht abfärbender Sohle
-2. Handball in der passenden Größe
-3. atmungsaktive Sportkleidung und Sportsocken
-4. Trinkflasche
-5. optional: Knieschoner, Mundschutz, Tape
+**Bälle in ausreichender Zahl.** Faustregel: mindestens ein Ball je zwei Spieler, im Kinderbereich einer je Kind. Wenn acht Kinder auf einen Ball warten, ist es keine Ausrüstungs-, sondern eine Trainingsfrage – und sie kostet dich die halbe Einheit.
 
-## Vom Ausprobieren zum ernsthaften Training
+**Leibchen in zwei Farben.** Klingt trivial, entscheidet aber, wie schnell eine Spielform startet.
 
-Wenn aus dem Ausprobieren ernsthaftes Training wird, willst du irgendwann sehen, wie du dich entwickelst. Wie der Einstieg als Erwachsener gelingt, steht im Ratgeber für [Quereinsteiger](/ratgeber/handball-quereinsteiger-erwachsene). Mit **Statix**, der [Handball-Statistik-App für Einsteiger und Teams](/), lassen sich Würfe, Tore und Entwicklung über die Saison festhalten – so wird Fortschritt sichtbar und das Training zielgerichteter. Für den ersten Ballkontakt brauchst du das noch nicht, aber sobald du dranbleibst, lohnt sich der Blick.`,
+**Trikotsätze.** Werden vom Verein gestellt und nicht privat gekauft.
+
+**Erste-Hilfe-Ausstattung und Kühlmittel.** Gehört an den Spielfeldrand, in jede Einheit. Prüfe zu Saisonbeginn, ob der Inhalt vollständig und haltbar ist.
+
+**Torwartausrüstung.** Lange Hose und langes Trikot mindestens; Knieschützer sind bei Torhütern sinnvoll und sollten nicht von der Zahlungsbereitschaft der Eltern abhängen.
+
+## Grenzfälle, die im Verein regelmäßig auftauchen
+
+**Ein Kind hat keine passenden Schuhe und die Familie kann sie nicht bezahlen.** Fast jeder Verein hat einen Fundus oder Sponsoringmittel; viele Landesverbände und Stiftungen fördern Ausrüstung für Kinder. Kläre das intern, bevor du es zum Thema in der Gruppe machst.
+
+**Schmuck und lange Fingernägel.** Ringe, Ketten und Ohrringe müssen ab, das ist keine Vereinsregel, sondern Teil des Regelwerks. Bei kleinen Kindern gehört der Hinweis in die Elternmail vor dem ersten Training, sonst diskutierst du ihn jede Woche.
+
+**Brillenträger.** Sportbrillen mit weichem Rahmen und bruchsicheren Gläsern sind die übliche Lösung. Sprich das früh an – ein Kind, das ohne Brille schlecht sieht, wirkt im Training oft unmotiviert.
+
+**Schutzausrüstung.** Knieschützer sind bei Torhütern und Kreisläufern verbreitet, ein Mundschutz ist im Handball unüblich, aber möglich. Was medizinisch angezeigt ist, entscheidet nicht der Trainer – bei bekannten Vorschäden gehört die Frage in ärztliche Hände.
+
+## Was das für dich praktisch bedeutet
+
+Drei Dinge, mit denen du dir eine Saison lang Diskussionen sparst:
+
+**Eine Ausrüstungsmail vor dem ersten Training.** Ballgröße, Schuhe, Schmuck, Trinkflasche – vier Punkte, fünf Zeilen. Wer sie einmal schreibt, kann sie jedes Jahr wiederverwenden.
+
+**Die Harzfrage einmal im Verein klären, nicht je Mannschaft.** Es geht um die Halle, nicht um die Vorliebe der Trainer.
+
+**Einen Ausrüstungsfundus aufbauen.** Ein Karton mit gebrauchten Schuhen, Leibchen und Torwarthosen im Vereinsheim löst mehr Probleme, als jede Regelung es könnte – und sorgt dafür, dass ein Kind nicht wegen 60 Euro aufhört.`,
+  modules: [
+    {
+      kind: 'answerBox',
+      text: 'Für den Einstieg reichen Hallenschuhe mit nicht abfärbender Sohle und Sportkleidung. Der Ball wird nach Altersstufe gewählt – Größe 0 bis 1 im Kinderbereich, Größe 2 für weibliche Jugend und Frauen, Größe 3 für männliche Jugend ab B und Männer. Harz braucht im Kinder- und unteren Jugendbereich niemand.',
+    },
+    {
+      after: 'Die richtige Ballgröße',
+      kind: 'benchmarkTable',
+      caption: 'Ballgröße nach Altersstufe',
+      columns: ['Altersstufe', 'Ballgröße', 'Umfang', 'Hinweis'],
+      rows: [
+        ['Minis, F- und E-Jugend', 'Größe 0–1', 'ca. 46–50 cm', 'Weich- und Schaumstoffbälle sind hier das richtige Gerät.'],
+        ['D-Jugend', 'Größe 1', 'ca. 50–52 cm', 'einheitlich für männlich und weiblich'],
+        ['C-Jugend weiblich, B-/A-Jugend weiblich, Frauen', 'Größe 2', 'ca. 54–56 cm', '—'],
+        ['C-Jugend männlich', 'Größe 2', 'ca. 54–56 cm', 'Wechsel auf Größe 3 erst in der B-Jugend'],
+        ['B-/A-Jugend männlich, Männer', 'Größe 3', 'ca. 58–60 cm', '—'],
+      ],
+      note: 'Übliche Zuordnung. Verbindlich sind die Durchführungsbestimmungen deines Landesverbandes – prüfe sie vor Saisonbeginn, sie werden gelegentlich angepasst.',
+    },
+  ],
   faqs: [
+    {
+      question: 'Welche Ballgröße ist im Handball die richtige?',
+      answer:
+        'Sie richtet sich nach Altersstufe und Geschlecht: Größe 0 bis 1 im Kinderbereich bis zur D-Jugend, Größe 2 für weibliche Jugend ab C und Frauen sowie für die männliche C-Jugend, Größe 3 für männliche Jugend ab B und Männer. Verbindlich sind die Durchführungsbestimmungen des jeweiligen Landesverbandes.',
+    },
     {
       question: 'Welche Schuhe braucht man für Handball?',
       answer:
-        'Spezielle Hallenschuhe mit nicht abfärbender Gummisohle, gutem Seitenhalt und Dämpfung. Handball hat viele abrupte Stopps, Richtungswechsel und Sprünge, für die normale Lauf- oder Freizeitschuhe keinen sicheren Halt bieten. Die Schuhe müssen nicht teuer sein, sollten aber gut passen.',
+        'Hallenschuhe mit nicht abfärbender Sohle und guter seitlicher Stabilität. Laufschuhe sind ungeeignet, weil sie für Bewegung nach vorn gebaut sind und nicht zur Seite – genau die aber macht Handball aus. Bei Kindern gilt Passform vor Marke: Ein zu großer Schuh ist bei seitlichen Bewegungen ein Verletzungsrisiko.',
     },
     {
-      question: 'Welche Handball-Größe ist die richtige?',
+      question: 'Braucht man als Anfänger Harz?',
       answer:
-        'Die Ballgröße richtet sich nach Alter und Geschlecht: Mini-Bälle für kleine Kinder, Größe 1 für Jugendliche, Größe 2 für Frauen und weibliche Jugend ab etwa 14 Jahren und Größe 3 für Männer und männliche Jugend ab etwa 16 Jahren. Die richtige Größe ist wichtig, um die Wurftechnik sauber zu lernen.',
+        'Nein. Im Kinder- und unteren Jugendbereich sollen die Grundtechniken ohne Haftmittel sitzen – wer nur mit Harz fangen kann, hat das Fangen nicht gelernt. Ab der B-Jugend ist Harz üblich, sofern die Halle es erlaubt. Viele Hallen verbieten es ausdrücklich, deshalb sollte die Frage einmal im Verein geklärt werden.',
+    },
+    {
+      question: 'Wie bekommt man Handballharz wieder ab?',
+      answer:
+        'Für Hände und Bälle gibt es spezielle Reinigungsmittel im Sportfachhandel. Bei Kleidung ist frühes Waschen entscheidend – eingetrocknetes Harz geht deutlich schlechter heraus. Die Regel, die im Verein am meisten Ärger spart: Hände vor dem Verlassen der Halle waschen, nicht danach.',
+    },
+    {
+      question: 'Welche Schutzausrüstung ist im Handball sinnvoll?',
+      answer:
+        'Knieschützer sind bei Torhütern und Kreisläufern verbreitet, weil beide viel auf dem Boden arbeiten. Brillenträger brauchen eine Sportbrille mit weichem Rahmen und bruchsicheren Gläsern. Schmuck – Ringe, Ketten, Ohrringe – muss grundsätzlich abgelegt werden, das ist Teil des Regelwerks und keine Vereinsregel.',
+    },
+    {
+      question: 'Was sollte der Verein stellen und was die Familien?',
+      answer:
+        'Der Verein stellt Bälle in ausreichender Zahl, Leibchen, Trikotsätze, Erste-Hilfe-Ausstattung und die Torwartausrüstung. Familien besorgen Hallenschuhe, Sportkleidung und eine Trinkflasche. Ein Ausrüstungsfundus mit gebrauchten Schuhen und Torwarthosen im Vereinsheim verhindert, dass ein Kind aus Kostengründen aufhört.',
     },
   ],
   relatedSlugs: [
-    'handball-harz-tipps',
     'handball-regeln-einfach-erklaert',
-    'handball-verletzungen-vorbeugen',
+    'handball-minihandball-kinder',
+    'jugendhandball-trainieren',
+    'handball-spielfeld-masse',
   ],
 };

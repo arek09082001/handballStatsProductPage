@@ -125,7 +125,7 @@ Wie sich die drei Staffelungen unterscheiden, versteht eine Mannschaft schneller
 
 ## Abwehr analysieren und anpassen
 
-Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du weißt, wo und wann deine Gegentore fallen. Wie du so eine Auswertung systematisch aufziehst, steht im Ratgeber zur [Spielanalyse im Handball](/ratgeber/handball-spielanalyse). Eine [Handball-Statistik-App](/) wie **Statix** hält jedes Gegentor live per Tap fest – nach Zone und Spielphase, direkt in der Halle und offline. So siehst du auf einen Blick, ob deine 6:0 wirklich nur am Kreis Tore kassiert oder ob der Rückraum durch die Naht trifft, und kannst dein System gezielt anpassen statt nach Bauchgefühl zu entscheiden. Probier es ohne Account in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de) aus und schau dir an, wo deine Abwehr die meisten Lücken hat.`,
+Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du weißt, wo und wann deine Gegentore fallen. Wie du so eine Auswertung systematisch aufziehst, steht im Ratgeber zur [Spielanalyse im Handball](/ratgeber/handball-spielanalyse). Eine [Handball-Statistik-App](/) wie **Statix** hält jedes Gegentor live per Tap fest – nach Zone und Spielphase, direkt in der Halle und offline. So siehst du auf einen Blick, ob deine 6:0 wirklich nur am Kreis Tore kassiert oder ob der Rückraum durch die Naht trifft, und kannst dein System gezielt anpassen statt nach Bauchgefühl zu entscheiden.`,
   faqs: [
     {
       question: 'Welches Abwehrsystem ist das beste im Handball?',
@@ -144,7 +144,7 @@ Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du
     },
   ],
   relatedSlugs: [
-    'handball-freilaufen-ohne-ball',
+    'handball-angriffssysteme-einsteiger',
     'handball-spielanalyse',
     'handball-training-planen',
   ],
