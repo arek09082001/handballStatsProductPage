@@ -2,116 +2,255 @@ import type { Article } from '../../types';
 
 export const handball1Gegen1Verbessern: Article = {
   slug: 'handball-1-gegen-1-verbessern',
-  title: 'Besser im 1 gegen 1: So setzt du dich im Handball durch',
-  metaTitle: 'Besser im 1 gegen 1 im Handball werden',
+  title: 'Zweikampf trainieren: Eins-gegen-eins in Angriff und Abwehr',
+  metaTitle: 'Zweikampf im Handball trainieren: Angriff und Abwehr',
   metaDescription:
-    'Im Handball besser im 1 gegen 1 werden: Tempo, Finten, Körperposition und Timing gezielt trainieren. Mit Übungen und Tipps für mehr Durchbrüche im Angriff.',
+    'Eins-gegen-eins im Handball trainieren: was der Zweikampf verlangt, fünf Übungskarten mit Fehlerbildern und die Progression von U12 bis Erwachsene. Mit Übungen.',
   keywords: [
     '1 gegen 1 handball',
-    'eins gegen eins handball',
-    'handball durchsetzen',
+    'zweikampf handball',
+    'handball finte lernen',
+    'handball abwehr 1 gegen 1',
     'durchbruch handball',
-    'zweikampf handball angriff',
-    '1 gegen 1 verbessern handball',
-    'handball offensiv zweikampf',
+    'handball körpertäuschung',
+    'zweikampfverhalten handball',
+    'handball verteidigen lernen',
   ],
-  category: 'Technik & Wurf',
+  category: 'Technik vermitteln',
+  archetype: 'rezept',
   datePublished: '2026-07-15',
-  dateModified: '2026-07-15',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 10,
   excerpt:
-    'Das 1 gegen 1 entscheidet Spiele: Wer sich im direkten Duell durchsetzt, schafft Tore, Siebenmeter und freie Mitspieler. Hier erfährst du, woraus ein starkes Eins-gegen-eins besteht und wie du es Schritt für Schritt verbesserst.',
-  heroEyebrow: 'Technik & Wurf',
+    'Wenn euer Angriff nicht funktioniert, liegt es selten am Spielzug. Es liegt daran, dass niemand seinen Gegenspieler schlägt. Zweikampftraining für beide Seiten – mit Übungskarten, Progression und Bewertungsmaßstab.',
   imagePath: '/shotMaps.png',
-  imageAlt: 'Handballspieler im Eins-gegen-eins gegen einen Abwehrspieler',
-  body: `Kaum eine Fähigkeit macht einen Handballer so wertvoll wie ein starkes 1 gegen 1. Wer seinen Gegenspieler schlagen kann, erzeugt Überzahl: Entweder ist der Weg zum Tor frei, oder ein zweiter Verteidiger muss aushelfen – und genau dann steht ein Mitspieler frei. In diesem Ratgeber schauen wir uns an, was ein gutes Eins-gegen-eins ausmacht und mit welchen Übungen du es gezielt verbesserst.
+  imageAlt: 'Zweikampfsituation zwischen Angreifer und Abwehrspieler im Handball',
+  body: `Wenn ein Angriff nicht läuft, ist der Reflex, einen neuen Spielzug einzuführen. Meistens hilft er nicht – und der Grund ist einfach: Kein Spielzug erzeugt eine Lücke, wenn am Ende niemand seinen direkten Gegenspieler schlägt. Der Zweikampf ist die Voraussetzung, nicht die Alternative zum System.
 
-## Warum das 1 gegen 1 so wichtig ist
+Dasselbe gilt in der Abwehr. Eine 6:0 hält so lange, wie jeder Verteidiger seinen Gegenspieler alleine aufhalten kann. Sobald einer regelmäßig durchgeht, verschiebt die ganze Abwehr, und es entstehen die Lücken, die im Spielbericht als "wir haben die Absprache nicht hinbekommen" auftauchen.
 
-Moderne Abwehrreihen stehen kompakt und verschieben schnell. Spielzüge allein reichen oft nicht, um Lücken zu erzeugen – irgendwann braucht es einen Spieler, der das direkte Duell annimmt. Ein gewonnenes 1 gegen 1 führt fast immer zu einer der drei besten Situationen im Handball:
+Deshalb wird der Zweikampf hier von beiden Seiten behandelt. Wer ihn nur aus der Angriffsperspektive trainiert, bekommt Angreifer, die gegen halbherzige Verteidiger gut aussehen.
 
-- **Durchbruch** mit freiem Wurf aus der Nahdistanz
-- **Siebenmeter oder Zeitstrafe**, wenn der Verteidiger nur noch foulen kann
-- **Anspiel auf den freien Mitspieler**, weil die Abwehr aushelfen muss
+## Warum euer Angriff am 1-gegen-1 hängt
 
-Deshalb gilt: Wer sein Eins-gegen-eins verbessert, verbessert automatisch den gesamten Angriff seiner Mannschaft.
+Ein gewonnener Zweikampf führt fast immer zu einer der drei besten Situationen im Handball: Durchbruch mit Abschluss aus der Nahdistanz, Siebenmeter oder Zeitstrafe, oder ein freier Mitspieler, weil die Abwehr aushelfen muss. Alle drei sind wertvoller als jeder herausgespielte Distanzwurf.
 
-## Die Bausteine eines starken 1 gegen 1
+Das lässt sich prüfen. Zähl in einem Spiel mit, wie oft eure Angreifer überhaupt ins direkte Duell gehen. In vielen Amateurmannschaften liegt die Zahl bei unter zehn pro Spiel – bei rund 50 Angriffen. Wenn ihr das auf zwanzig bringt, verändert sich euer Angriffsspiel mehr als durch jeden neuen Spielzug.
 
-### 1. Tempo und Tempowechsel
+## Was der Zweikampf technisch verlangt
 
-Der wichtigste Faktor ist nicht maximale Geschwindigkeit, sondern der Wechsel: langsam andribbeln, den Verteidiger binden – und dann explosiv beschleunigen. Ein Verteidiger, der aus dem Stand auf einen plötzlichen Antritt reagieren muss, ist fast immer einen Schritt zu spät.
+Angreifer und Verteidiger lösen dasselbe Problem von zwei Seiten. Es lohnt sich, beides nebeneinanderzulegen – deine Spieler sind ohnehin beides:
 
-### 2. Der richtige Abstand
-
-Viele Angreifer täuschen zu früh an. Die Faustregel: Geh so nah an den Verteidiger heran, dass er dich attackieren muss – etwa eine Armlänge. Erst wenn er sein Gewicht verlagert oder einen Schritt macht, entsteht die Lücke, die du nutzen kannst.
-
-### 3. Glaubwürdige Finten
-
-Körpertäuschung, Wurffinte, Blicktäuschung: Eine Finte funktioniert nur, wenn der Gegner sie für die echte Aktion hält. Zwei sicher beherrschte Täuschungen sind dabei mehr wert als fünf halbgare – mehr dazu findest du in unserem Ratgeber zum Fintieren.
-
-### 4. Körperposition und Ballschutz
-
-Beim Vorbeiziehen gehört der Ball auf die vom Verteidiger abgewandte Seite, die Schulter senkt sich leicht in die Lücke. Wer den Ball vor dem Körper trägt, lädt die Abwehr zum Herausspielen ein.
-
-### 5. Beidhändigkeit und beide Seiten
-
-Wer nur über seine starke Seite zieht, ist berechenbar. Trainiere Durchbrüche bewusst über beide Seiten – selbst wenn die schwache Seite nur als Drohung dient, muss der Verteidiger sie respektieren.
-
-## Typische Fehler im 1 gegen 1
-
-| Fehler | Folge | Korrektur |
+| | Angreifer | Verteidiger |
 | --- | --- | --- |
-| Antäuschen ohne Tempo | Verteidiger reagiert gar nicht | erst Tempo aufnehmen, dann täuschen |
-| Zu großer Abstand | Verteidiger hat Zeit nachzurücken | bis auf Armlänge herangehen |
-| Zögern nach der Finte | Vorteil verpufft | Entscheidung vorher treffen, konsequent durchziehen |
-| Ball ungeschützt | Stürmerfoul oder Ballverlust | Ball auf die abgewandte Seite nehmen |
-| Immer dieselbe Seite | Abwehr stellt sich darauf ein | beide Richtungen trainieren |
+| **Abstand** | bis auf Armlänge herangehen, damit der Gegner reagieren muss | Abstand halten, bis der Angreifer sich festlegt |
+| **Tempo** | Tempowechsel statt Höchstgeschwindigkeit | nie stehen, immer in kleinen Schritten arbeiten |
+| **Blick** | zum Tor und zur Lücke, nicht auf die eigenen Füße | auf Hüfte und Standbein, nicht auf den Ball |
+| **Körper** | Ball auf die abgewandte Seite, Schulter in die Lücke | Körper zwischen Angreifer und Tor, Arme aktiv |
+| **Entscheidung** | vor der Finte getroffen, dann konsequent durchziehen | so spät wie möglich, aber dann vollständig |
+| **Fehlerbild** | Antäuschen ohne Tempo, Zögern nach der Finte | zu früh nach dem Ball greifen, Oberkörper voraus |
 
-## Übungen für ein besseres 1 gegen 1
+Die entscheidende Gemeinsamkeit: **Beide gewinnen über das Timing, nicht über Athletik.** Ein schneller Angreifer, der zu früh täuscht, verliert gegen einen langsameren Verteidiger, der geduldig bleibt – und umgekehrt.
 
-- **Schattenduell:** Zwei Spieler ohne Ball, der Angreifer versucht, den Verteidiger mit Tempowechseln abzuschütteln. Schult Antritt und Täuschung ohne Ballstress.
-- **1 gegen 1 mit passivem Verteidiger:** Der Verteidiger bewegt sich nur seitlich, greift aber nicht an. Der Angreifer übt Finte und Durchbruch in Spielnähe.
-- **Zonen-Duell:** Ein markierter Korridor (etwa drei Meter breit), der Angreifer muss den Verteidiger innerhalb der Zone schlagen. Erzwingt enge, realistische Duelle.
-- **1 gegen 1 mit Anspiel:** Der Angreifer erhält den Ball im Lauf und muss sofort ins Duell gehen. Das trainiert die wichtigste Spielsituation: das Eins-gegen-eins aus der Bewegung.
-- **Überzahl-Folgeaktion:** Nach dem Durchbruch hilft ein zweiter Verteidiger aus, der Angreifer entscheidet: selbst abschließen oder den frei werdenden Mitspieler bedienen.
+## Woran du den Fehler in der Halle erkennst
 
-Wichtig: Baue Eins-gegen-eins-Situationen in jedes Training ein – kurz, intensiv und mit vielen Wiederholungen. Zweikampfstärke entsteht nicht durch Erklären, sondern durch hunderte Duelle.
+- **Der Angreifer täuscht aus zu großem Abstand.** Der Verteidiger reagiert gar nicht, weil er nicht muss. Häufigster Fehler überhaupt.
+- **Nach der Finte kommt eine Pause.** Der Angreifer hat gewonnen und nutzt es nicht. Sichtbar an einem kurzen Zögern, bevor er zieht.
+- **Immer dieselbe Seite.** Die Abwehr stellt sich nach zwei Aktionen darauf ein. Zähl in einer Übung mit, wie oft über links und wie oft über rechts gezogen wird.
+- **Der Verteidiger greift nach dem Ball.** Der Oberkörper geht dabei nach vorn, das Gleichgewicht ist weg, der Angreifer geht vorbei. Der teuerste Abwehrfehler, weil er zusätzlich Zeitstrafen erzeugt.
+- **Der Verteidiger steht.** Wer nicht in kleinen Schritten arbeitet, kann nicht reagieren. Erkennbar daran, dass er beim Antritt des Angreifers einen großen Ausfallschritt macht.
 
-## Das 1 gegen 1 im Spiel lesen
+## Die Einheit im Ablauf
 
-Nicht jede Situation ist ein gutes Duell. Stark im Eins-gegen-eins ist, wer erkennt, **wann** es sich lohnt: gegen einen aufgerückten Verteidiger, nach einem Kreuzen mit kleinem Vorteil, gegen einen müden oder mit einer Zeitstrafe vorbelasteten Gegenspieler. Genauso wichtig ist der Mut, das Duell abzubrechen und weiterzuspielen, wenn die Lücke nicht aufgeht.
+Ausgelegt für 90 Minuten ab der C-Jugend. Zweikämpfe sind intensiv – die Pausen sind Teil der Planung, nicht Nachlässigkeit.
 
-## Fortschritt messbar machen
+## Fünf Übungen für beide Seiten
 
-Ob dein 1 gegen 1 wirklich besser wird, siehst du an harten Zahlen: Durchbrüche, erzwungene Siebenmeter, technische Fehler im Zweikampf und Tore aus der Nahdistanz.
+In allen Übungen wechseln die Rollen. Ein Spieler, der nur angreift, lernt die Hälfte.
 
-Mit **Statix**, der [Statistik-App für die Halle](/), erfasst du Tore, Wurfpositionen und erzwungene Strafwürfe live per Tap. Die zugehörige Abschlussquote rechnest du dir mit dem [Rechner für die Wurfquote](/wurfquote-rechner) aus. So erkennst du, welche Spieler ihre Duelle gewinnen und wo der Angriff über das Eins-gegen-eins gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+## Progression von U12 bis Erwachsene
+
+Der Zweikampf wird nicht schwieriger, indem der Verteidiger härter wird, sondern indem die **Bedingungen** enger werden. Diese Reihenfolge hat sich bewährt:
+
+**U12 (E-/D-Jugend):** Zweikampf ohne Ball als Fangspiel und Schattenlauf. Ziel ist die Bewegung, nicht die Technik. Der Verteidiger arbeitet ohne Kontakt.
+
+**U14 (C-Jugend):** Zweikampf mit Ball gegen halbaktiven Verteidiger, viel Platz, beide Seiten gleich häufig. Erste Körpertäuschung, konsequent beidseitig.
+
+**U16 (B-Jugend):** Enger Korridor, aktiver Verteidiger mit Kontakt, Zeitdruck. Jetzt kommen Wurffinte und die Entscheidung zwischen Abschluss und Anspiel dazu.
+
+**U18 und Erwachsene:** Zweikampf aus der Spielsituation – nach Kreuzen, nach Anspiel, gegen aushelfende Abwehr. Der Fokus verschiebt sich vom Duell selbst auf die **Auswahl** der Duelle: Wann lohnt es sich, wann spiele ich weiter?
+
+Der häufigste Planungsfehler ist, U16-Bedingungen bei U12 anzusetzen. Kinder, die früh gegen harten Kontakt spielen, entwickeln Ausweichverhalten statt Zweikampftechnik.
+
+## Wie du Zweikampfstärke bewertest
+
+Zweikampfstärke steht in keinem Spielbericht, lässt sich aber gut erfassen. Vier Größen, alle am Spielfeldrand zählbar:
+
+**Durchbrüche.** Wie oft geht ein Angreifer an seinem Gegenspieler vorbei und kommt zum Abschluss aus der Nahdistanz? Zähl je Spieler. Im Amateurbereich sind zwei bis drei pro Spiel für einen starken Zweikämpfer ein guter Wert.
+
+**Erzwungene Siebenmeter und Zeitstrafen.** Der zweite Ertrag des gewonnenen Zweikampfs. Beide stehen ohnehin im Spielbericht – du musst sie nur dem Angreifer zuordnen, nicht dem Gefoulten allgemein.
+
+**Angenommene Duelle.** Die wichtigste Zahl und die am seltensten erhobene: Wie oft geht euer Angriff überhaupt ins direkte Duell? Wenn diese Zahl steigt, arbeitet euer Zweikampftraining – auch wenn die Trefferquote zunächst gleich bleibt.
+
+**Gegentore nach Zonen für die Abwehrseite.** Häufen sich Gegentore nach Durchbruch über eine bestimmte Abwehrposition, hast du dort ein Zweikampfproblem – kein Systemproblem. Das ist die häufigste Fehldiagnose im Amateurhandball: Es wird das Abwehrsystem umgestellt, obwohl ein einzelner Zweikampf nicht gehalten wird.
+
+Für die Zuordnung reicht ein Blatt mit sechs Zeilen für die Abwehrpositionen. Wer Gegentore ohnehin mit Zone erfasst, etwa in einer [Handball-Statistik-App](/), sieht die schwache Position direkt im Wurfbild.`,
+  modules: [
+    {
+      after: 'Die Einheit im Ablauf',
+      kind: 'sessionTimeline',
+      caption: '90 Minuten mit Zweikampfschwerpunkt',
+      blocks: [
+        {
+          minutes: 12,
+          label: 'Aufwärmen mit Fangspielen',
+          note: 'Zweikampf ohne Ball, Richtungswechsel und Abstoppen.',
+        },
+        {
+          minutes: 15,
+          label: 'Übung 1 – Schattenduell',
+          note: 'Bewegung und Tempowechsel ohne Ballstress.',
+        },
+        {
+          minutes: 18,
+          label: 'Übung 2 und 3 – mit Ball, halbaktiv',
+          note: 'Körpertäuschung und Abstand, beide Seiten gleich häufig.',
+        },
+        {
+          minutes: 20,
+          label: 'Übung 4 – Korridor mit Kontakt',
+          note: 'Aktiver Verteidiger, enger Raum, kurze Serien mit voller Pause.',
+        },
+        {
+          minutes: 20,
+          label: 'Übung 5 – Duell aus der Spielsituation',
+          note: 'Entscheidung zwischen Durchbruch und Weiterspielen.',
+        },
+        { minutes: 5, label: 'Ausklang und Rückmeldung' },
+      ],
+    },
+    {
+      after: 'Fünf Übungen für beide Seiten',
+      kind: 'exercise',
+      name: '1 · Schattenduell ohne Ball',
+      meta: '15 Min. · ab E-Jugend',
+      setup:
+        'Zwei Spieler in einem markierten Feld von etwa 6 × 6 Metern. Der Angreifer versucht, eine der beiden hinteren Ecken zu erreichen, der Verteidiger hält ihn auf – ohne Kontakt.',
+      organisation:
+        'Serien von 20 Sekunden, danach Rollentausch. Zwischen den Serien 40 Sekunden Pause.',
+      coachingPoints: [
+        'Der Angreifer arbeitet mit Tempowechseln, nicht mit Höchstgeschwindigkeit.',
+        'Der Verteidiger bleibt in kleinen Schritten und geht nie in einen großen Ausfallschritt.',
+        'Beide Ecken müssen gleich häufig angegriffen werden.',
+      ],
+      commonError:
+        'Der Verteidiger stellt sich frontal und stemmt sich entgegen. Ohne Beinarbeit ist er beim ersten Tempowechsel geschlagen.',
+      variation: 'Der Angreifer bekommt eine Ecke vom Trainer vorgegeben – jetzt zählt nur die Finte.',
+    },
+    {
+      after: 'Fünf Übungen für beide Seiten',
+      kind: 'exercise',
+      name: '2 · Körpertäuschung auf Armlänge',
+      meta: '9 Min. · ab C-Jugend',
+      setup:
+        'Angreifer mit Ball, halbaktiver Verteidiger. Vorgabe: Die Täuschung darf erst auf Armlänge Abstand beginnen.',
+      organisation:
+        'Je acht Durchgänge, dann Rollentausch. Der Trainer beurteilt ausschließlich den Abstand, nicht das Ergebnis.',
+      coachingPoints: [
+        'Erst Tempo aufnehmen, dann täuschen – eine Finte im Stand wirkt nicht.',
+        'Der erste Schritt der Täuschung ist lang und tief, nicht angedeutet.',
+        'Nach der Täuschung ohne Pause durchziehen.',
+      ],
+      commonError:
+        'Die Täuschung beginnt aus drei Metern Abstand. Der Verteidiger muss gar nicht reagieren und steht beim Antritt noch richtig.',
+      variation: 'Der Verteidiger darf sich frei bewegen, aber die Arme nicht einsetzen.',
+    },
+    {
+      after: 'Fünf Übungen für beide Seiten',
+      kind: 'exercise',
+      name: '3 · Verteidigen ohne Arme',
+      meta: '9 Min. · ab C-Jugend',
+      setup:
+        'Wie Übung 2, aber der Verteidiger hält die Hände hinter dem Rücken und darf nur mit Beinarbeit und Körperposition arbeiten.',
+      organisation: 'Serien von 30 Sekunden, danach Rollentausch. Zwei Durchgänge je Paar.',
+      coachingPoints: [
+        'Der Körper steht zwischen Angreifer und Tor, nicht daneben.',
+        'Der Blick liegt auf Hüfte und Standbein des Angreifers, nicht auf dem Ball.',
+        'Kleine Schritte, Gewicht auf dem Fußballen.',
+      ],
+      commonError:
+        'Ohne Arme fühlt sich der Verteidiger wehrlos und weicht zurück. Genau daran arbeitet die Übung: Der erste Halt kommt aus der Position, nicht aus dem Zugriff.',
+      variation: 'Eine Hand darf eingesetzt werden, sobald die Beinarbeit steht.',
+    },
+    {
+      after: 'Fünf Übungen für beide Seiten',
+      kind: 'exercise',
+      name: '4 · Korridor mit Kontakt',
+      meta: '20 Min. · ab B-Jugend',
+      setup:
+        'Ein Korridor von etwa drei Metern Breite zwischen 9- und 6-Meter-Linie. Angreifer mit Ball, aktiver Verteidiger mit erlaubtem Körperkontakt, Torwart im Tor.',
+      organisation:
+        'Serien von drei Durchgängen, danach 90 Sekunden Pause und Rollentausch. Der Angreifer bekommt Punkte für Durchbruch, Siebenmeter und Abschluss aus der Nahdistanz.',
+      coachingPoints: [
+        'Der Ball geht auf die vom Verteidiger abgewandte Seite, sobald der Angreifer zieht.',
+        'Der Verteidiger arbeitet mit dem Unterarm an der Hüfte, nicht mit beiden Händen am Ball.',
+        'Nach dem Durchbruch entscheidet der Angreifer: eigener Abschluss oder Anspiel.',
+      ],
+      commonError:
+        'Der Verteidiger greift mit beiden Armen nach dem Ball. Oberkörper voraus, Gleichgewicht weg, im Spiel folgt daraus eine Zeitstrafe.',
+      variation:
+        'Der Korridor wird auf zwei Meter verengt – ab dort geht es fast nur noch über den Tempowechsel.',
+    },
+    {
+      after: 'Fünf Übungen für beide Seiten',
+      kind: 'exercise',
+      name: '5 · Duell aus der Spielsituation',
+      meta: '20 Min. · ab B-Jugend',
+      setup:
+        'Drei Angreifer gegen drei Verteidiger im halben Feld. Ein Kreuzen oder ein Anspiel muss vorausgehen, bevor das Duell gesucht werden darf.',
+      organisation:
+        'Vier Durchgänge à vier Minuten. Der Trainer zählt angenommene Duelle und Durchbrüche getrennt mit.',
+      coachingPoints: [
+        'Das Duell wird gesucht, wenn ein Vorteil da ist – nach Kreuzen, gegen aufgerückte Verteidiger, gegen verwarnte Gegenspieler.',
+        'Ist die Lücke nicht da, wird weitergespielt. Das ist eine gleichwertige Lösung.',
+        'Die Abwehr klärt laut, wer aushilft.',
+      ],
+      commonError:
+        'Der Angreifer geht in jedes Duell, auch ohne Vorteil. Zweikampfstärke ist zur Hälfte die Auswahl der Duelle.',
+    },
+  ],
   faqs: [
     {
-      question: 'Wie werde ich im Handball besser im 1 gegen 1?',
+      question: 'Wie trainiere ich das 1 gegen 1 im Handball?',
       answer:
-        'Durch viele Wiederholungen in Spielnähe: Tempowechsel und Antritt trainieren, ein bis zwei Finten sicher einschleifen, den richtigen Abstand zum Verteidiger lernen und Duelle regelmäßig im Training suchen – erst gegen passive, dann gegen aktive Verteidiger. Entscheidend sind Explosivität und konsequentes Durchziehen nach der Täuschung.',
+        'Über viele kurze, intensive Duelle mit voller Pause – und immer von beiden Seiten, sodass jeder Spieler angreift und verteidigt. Der Aufbau geht über die Bedingungen: erst ohne Ball und ohne Kontakt, dann mit Ball gegen halbaktiven Verteidiger, dann im engen Korridor mit Kontakt, zuletzt aus der Spielsituation heraus.',
     },
     {
-      question: 'Wann sollte ich das 1 gegen 1 suchen?',
+      question: 'Welche Finte sollte ein Spieler zuerst lernen?',
       answer:
-        'Wenn du einen Vorteil hast: gegen einen aufgerückten oder bereits verwarnten Verteidiger, nach einem Kreuzen mit Tempovorsprung oder wenn dein Gegenspieler müde ist. Geht die Lücke nicht auf, ist es stärker, das Duell abzubrechen und weiterzuspielen, statt einen Ballverlust zu riskieren.',
+        'Die Körpertäuschung als Grundfinte: eine glaubwürdige, lange und tiefe Bewegung in eine Richtung, dann explosiver Antritt in die andere. Als zweites Werkzeug lohnt sich die Wurffinte. Zwei sicher beherrschte Täuschungen, die über beide Seiten funktionieren, reichen für die meisten Duelle – fünf halbgare helfen nicht.',
     },
     {
-      question: 'Welche Finte ist die beste für das Eins-gegen-eins?',
+      question: 'Was ist der häufigste Fehler im Abwehr-Zweikampf?',
       answer:
-        'Die Körpertäuschung ist die wichtigste Grundfinte: eine glaubwürdige Bewegung in die eine Richtung, dann explosiver Antritt in die andere. Dazu lohnt sich eine Wurffinte als zweites Werkzeug. Zwei sicher beherrschte Finten, die du über beide Seiten spielen kannst, reichen für die meisten Duelle aus.',
+        'Das Greifen nach dem Ball. Der Oberkörper geht dabei nach vorn, das Gleichgewicht ist weg und der Angreifer geht vorbei – zusätzlich entstehen daraus die meisten Zeitstrafen. Die Alternative ist Arbeit über Beinarbeit und Körperposition: Körper zwischen Angreifer und Tor, Unterarm an der Hüfte statt zwei Hände am Ball.',
     },
     {
-      question: 'Warum verliere ich meine Zweikämpfe im Angriff?',
+      question: 'Wie erkenne ich, ob meine Mannschaft zweikampfstark ist?',
       answer:
-        'Meist wegen fehlendem Tempo, zu großem Abstand beim Antäuschen oder Zögern nach der Finte. Häufig kommt dazu, dass der Ball ungeschützt vor dem Körper getragen wird oder immer dieselbe Seite gewählt wird. Wer diese Punkte gezielt korrigiert, gewinnt schnell deutlich mehr Duelle.',
+        'An vier Zahlen, die du am Spielfeldrand zählen kannst: Durchbrüche je Spieler, erzwungene Siebenmeter und Zeitstrafen, angenommene Duelle insgesamt und – für die Abwehr – Gegentore nach Durchbruch je Abwehrposition. Die wichtigste ist die Zahl der angenommenen Duelle: In vielen Amateurmannschaften liegt sie bei unter zehn pro Spiel.',
+    },
+    {
+      question: 'Ab welchem Alter darf im Zweikampf Kontakt erlaubt sein?',
+      answer:
+        'Systematisch ab der B-Jugend. Bis zur D-Jugend arbeitet der Verteidiger ohne Kontakt, in der C-Jugend halbaktiv. Kinder, die früh gegen harten Kontakt spielen, entwickeln Ausweichverhalten statt Zweikampftechnik – und das ist später schwer zu korrigieren.',
     },
   ],
   relatedSlugs: [
-    'handball-finte-lernen',
-    'handball-abwehr-1-gegen-1',
-    'handball-schnelligkeit-verbessern',
+    'handball-abwehrsysteme',
+    'handball-wurftraining-sprungwurf',
+    'handball-6-0-abwehr',
+    'handball-kreuzen-stossen',
+    'handball-spielformen-training',
   ],
 };

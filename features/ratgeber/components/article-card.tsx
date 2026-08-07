@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { articlePath } from '../data/articles';
+import ArchetypeBadge from './archetype-badge';
 import type { Article } from '../types';
 
 /**
@@ -34,16 +35,21 @@ export default function ArticleCard({
         }}
       />
 
-      {showCategory ? (
-        <span className='font-hand text-lg font-semibold leading-none text-primary'>
-          {article.category}
-        </span>
+      {showCategory || article.archetype ? (
+        <div className='flex flex-wrap items-center gap-x-3 gap-y-2'>
+          {article.archetype ? <ArchetypeBadge archetype={article.archetype} /> : null}
+          {showCategory ? (
+            <span className='font-hand text-lg font-semibold leading-none text-primary'>
+              {article.category}
+            </span>
+          ) : null}
+        </div>
       ) : null}
 
       <h3
         className={cn(
           'font-display text-lg font-extrabold leading-snug tracking-[-0.02em] text-ink',
-          showCategory && 'mt-2.5',
+          (showCategory || article.archetype) && 'mt-3',
         )}>
         <Link
           href={href}

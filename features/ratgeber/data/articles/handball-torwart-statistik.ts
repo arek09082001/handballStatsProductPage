@@ -2,116 +2,147 @@ import type { Article } from '../../types';
 
 export const handballTorwartStatistik: Article = {
   slug: 'handball-torwart-statistik',
-  title: 'Torwartleistung im Handball mit Statistik bewerten: mehr als die Paradenquote',
-  metaTitle: 'Torwart-Statistik im Handball auswerten',
+  title: 'Torwartstatistik im Handball: Paradenquote fair auswerten',
+  metaTitle: 'Torwartstatistik im Handball: Paradenquote richtig lesen',
   metaDescription:
-    'Torwartleistung im Handball richtig bewerten: Paradenquote, Quote nach Wurfzonen, Siebenmeter und Tempogegenstöße – welche Kennzahlen zählen und wie du sie liest.',
+    'Paradenquote im Handball berechnen und fair bewerten: die Formel, die Auswertung nach Wurfzonen und die Fehler, die Torhüter zu Unrecht abwerten. Mit Beispiel.',
   keywords: [
-    'torwart statistik handball',
     'paradenquote handball',
-    'torwartquote berechnen',
-    'torhüter leistung messen',
-    'handball torwart kennzahlen',
-    'wurfzonen torwart',
-    'torwart auswerten',
+    'torwartstatistik handball',
+    'handball torwart quote',
+    'paradenquote berechnen',
+    'handball torwart auswerten',
+    'gute paradenquote handball',
+    'torhüter statistik handball',
   ],
-  category: 'Statistik & Kennzahlen',
-  datePublished: '2026-07-18',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  category: 'Kennzahlen & Analyse',
+  archetype: 'kennzahl',
+  datePublished: '2026-07-28',
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 7,
   excerpt:
-    'Die Paradenquote allein sagt wenig – ein Torwart hinter einer schwachen Abwehr sieht immer schlechter aus. So bewertest du Torwartleistung fair und findest, wo dein Keeper wirklich stark ist.',
-  heroEyebrow: 'Statistik & Kennzahlen',
-  imagePath: '/shotMaps.png',
-  imageAlt: 'Wurfbild mit Torwartparaden nach Ecken und Wurfzonen im Handball',
-  body: `„Der Torwart hat heute schlecht gehalten" – dieser Satz fällt schnell, wenn viele Tore fallen. Aber die reine Zahl der Gegentore sagt fast nichts über die Leistung des Keepers aus. Ein Torwart hinter einer löchrigen Abwehr, der ständig freie Kreis- und Tempowürfe abbekommt, wird immer schlechter aussehen als einer hinter einem sortierten Block. Wer Torwartleistung fair bewerten will, muss genauer hinschauen.
+    'Keine Kennzahl im Handball ist so abhängig von der Leistung anderer wie die Paradenquote. Wie du sie rechnest, nach Zonen aufschlüsselst und so bewertest, dass dein Torwart nicht für die Abwehr bezahlt.',
+  imagePath: '/live-spielstatistik-spielertabelle.jpg',
+  imageAlt: 'Torwartwerte und Paradenquoten in der Spielertabelle der Statix-App',
+  body: `Die Paradenquote ist die unfairste Zahl im Handball. Ein Torwart, dessen Abwehr freie Würfe von sieben Metern zulässt, steht am Ende mit 22 % da; ein Torwart hinter einer kompakten 6:0, die nur Würfe aus neun Metern gegen den Block erlaubt, kommt auf 40 % – bei identischer Leistung. Wenn du deinen Torwart mit einer nackten Gesamtquote bewertest, bewertest du in Wahrheit deine Abwehr. Dieser Artikel zeigt, wie du das trennst.
 
-## Die Paradenquote: nützlich, aber unvollständig
+## Was die Paradenquote misst – und was deine Abwehr misst
 
-Die bekannteste Kennzahl ist die Paradenquote:
+Die Paradenquote sagt, welcher Anteil der Würfe auf das Tor gehalten wurde. Sie misst damit die Leistung des Torwarts **und** die Qualität der zugelassenen Würfe in einer einzigen Zahl. Ohne Aufschlüsselung kannst du beides nicht auseinanderhalten.
 
-**Paradenquote = Paraden ÷ (Paraden + Gegentore) × 100**
+Die praktische Konsequenz für dich als Trainer: Die Gesamtquote taugt zum Vergleich desselben Torwarts über mehrere Spiele hinter derselben Abwehr. Sie taugt nicht zum Vergleich zweier Torhüter aus verschiedenen Mannschaften – und nur eingeschränkt zum Vergleich deiner beiden Torhüter, wenn sie gegen unterschiedliche Gegner gespielt haben.
 
-Ein Torwart mit 14 Paraden bei 30 Würfen aufs Tor kommt auf rund 47 Prozent – ein sehr guter Wert. Als grobe Orientierung gilt im Amateurbereich:
+## Die Formel und die zwei Zählregeln, die du festlegen musst
 
-| Paradenquote | Einordnung |
-| --- | --- |
-| unter 25 % | schwacher Tag oder schwierige Bedingungen |
-| 25 – 33 % | solide |
-| 33 – 40 % | stark |
-| über 40 % | herausragend |
+Zwei Punkte musst du für die ganze Saison festlegen, sonst sind deine Werte nicht vergleichbar:
 
-Das Problem: Diese eine Zahl vermischt Würfe aus zwei Metern mit Distanzwürfen aus neun Metern. Ein Keeper, der viele leichte Würfe halten muss, kommt automatisch höher heraus als einer, der ständig freie Nahwürfe abbekommt.
+**Siebenmeter getrennt führen.** Ein Siebenmeter hat eine völlig andere Trefferwahrscheinlichkeit als ein Feldwurf. Ein Torwart, der drei Siebenmeter hält, hebt seine Gesamtquote deutlich – gehalten hat er trotzdem nicht mehr Feldwürfe. Führe Feldquote und Siebenmeterquote nebeneinander.
 
-## Warum die Quote nach Wurfzonen entscheidend ist
+**Würfe neben das Tor zählen nicht.** Ein Fehlwurf über die Latte ist keine Parade. In die Paradenquote gehen nur Würfe ein, die im Tor gelandet wären oder gehalten wurden.
 
-Aussagekräftig wird die Torwartstatistik erst, wenn du die Quote nach Wurfzonen aufschlüsselst. Denn die Erwartung ist je nach Zone völlig unterschiedlich:
+## Ein Spiel nach Wurfzonen aufgeschlüsselt
 
-- **Distanzwürfe (Rückraum):** Hier soll der Torwart glänzen. Eine Quote von 40 Prozent und mehr ist erreichbar und das Ziel.
-- **Nahwürfe (Kreis, Durchbruch):** Hier ist selbst ein guter Keeper machtlos, wenn der Wurf frei kommt. Niedrige Quoten sind hier ein Abwehr-, kein Torwartproblem.
-- **Außenwürfe:** Der spitze Winkel spielt dem Torwart in die Karten – hier werden gute Quoten erwartet.
-- **Siebenmeter:** Eine eigene Disziplin mit eigener Quote.
-- **Tempogegenstöße:** Meist hochwertige Chancen; niedrige Quoten sind normal.
+Hier wird die Zahl brauchbar. Notiere zu jedem Gegentor und jeder Parade nur die Zone – fünf Kategorien reichen:
 
-Erst diese Aufschlüsselung trennt Torwart- von Abwehrleistung. Viele Gegentore aus dem Rückraum? Dann sollte der Keeper daran arbeiten. Viele Gegentore vom Kreis? Dann muss die Abwehr enger stehen.
+| Zone | Paraden | Gegentore | Paradenquote |
+| --- | --- | --- | --- |
+| Außen (spitzer Winkel) | 6 | 4 | 60,0 % |
+| Kreis / Nahdistanz | 2 | 7 | 22,2 % |
+| Rückraum 9 m | 9 | 8 | 52,9 % |
+| Tempogegenstoß | 1 | 5 | 16,7 % |
+| **Feld gesamt** | **18** | **24** | **42,9 %** |
+| Siebenmeter (getrennt) | 2 | 4 | 33,3 % |
 
-Das ist keine Theorie: Ich stehe selbst im Tor, und meine Gesamtquote sah lange schlechter aus, als sich die Spiele angefühlt haben. Erst aufgeschlüsselt nach Zonen war klar, woran es lag – die freien Nahwürfe vom Kreis und nach Durchbrüchen zogen den Wert nach unten. Das war kein Torwartproblem, sondern ein Abwehrproblem, das in meiner Statistik gelandet ist.
+Die Gesamtquote von 42,9 % ist ein guter Wert. Trotzdem stehen 24 Gegentore auf der Anzeige. Die Aufschlüsselung sagt dir sofort, warum: neun Gegentore aus Nahdistanz und Gegenstoß, also aus Situationen, in denen ein Torwart strukturell wenig ausrichten kann. Das ist kein Torwartthema, das ist ein Abwehr- und Rückzugsthema.
 
-## Die Abwehr immer mitdenken
+Umgekehrt: Wären die 52,9 % aus neun Metern auf 35 % gefallen, hättest du ein echtes Torwartthema – denn genau dort ist der Torwart der entscheidende Faktor.
 
-Torwart und Abwehr sind ein System. Eine gute Auswertung stellt deshalb neben die Torwartzahlen immer die Frage nach der Wurfqualität, die der Keeper abbekommt:
+## Richtwerte je Zone
 
-- Wie viele Würfe waren frei, wie viele geblockt oder gestört?
-- Aus welchen Zonen kamen die Gegentore?
-- Wie oft hat der Torwart nach einem Block noch den Nachwurf gehalten?
+Bewerte jede Zone gegen ihren eigenen Maßstab. Die folgenden Spannen sind Orientierungswerte aus dem Amateurbereich; sobald du acht Spiele deines eigenen Torwarts erfasst hast, ist sein Durchschnitt die bessere Referenz.
 
-Ein Torwart, der eine mittlere Quote hinter einer schwachen Abwehr hält, kann besser gespielt haben als einer mit hoher Quote hinter einem starken Block. Das Gegenstück auf der Angriffsseite ist die [Wurfquote](/ratgeber/wurfquote-berechnen) – beide Werte gehören in dieselbe Auswertung.
+Wichtig ist die Reihenfolge: Erst prüfst du, ob sich die **Verteilung** der Würfe verändert hat, dann die Quote. Wenn dein Torwart plötzlich doppelt so viele Nahdistanzwürfe bekommt, fällt seine Gesamtquote, ohne dass er schlechter geworden ist.
 
-## Weitere aussagekräftige Kennzahlen
+## Was Torhüter zu Unrecht schlecht aussehen lässt
 
-- **Siebenmeter-Quote:** getrennt führen, sie schwankt stark und ist eine eigene Fähigkeit.
-- **Quote nach Ecken:** Wo im Tor lässt der Keeper Bälle durch? Oben, unten, kurze oder lange Ecke? Daraus entsteht ein Trainingsplan.
-- **Anwurf-Beitrag:** Wie viele erste Wellen leitet der Torwart mit schnellen Abwürfen ein? Ein moderner Keeper ist der erste Angreifer.
-- **Leistung über die Spielzeit:** Bricht die Quote in der Schlussphase ein? Das kann an Konzentration oder Kondition liegen.
+**Die Gesamtquote als Urteil nehmen.** Sie ist ein Mischwert aus Torwartleistung und Abwehrqualität. Ohne Zonen ist sie nicht interpretierbar.
 
-## So nutzt du die Zahlen im Training
+**Siebenmeter einrechnen.** Sie verzerren in beide Richtungen und haben mit der Feldleistung nichts zu tun.
 
-Aus einer sauberen Torwartauswertung wird ein konkreter Plan:
+**Kleine Stichproben ernst nehmen.** Ein Torwart, der in zehn Minuten fünf Würfe bekommt und einen hält, hat keine 20-Prozent-Leistung gezeigt – er hatte fünf Würfe.
 
-1. Schwache Zone identifizieren (z. B. untere lange Ecke).
-2. Diese Situation im Torwarttraining gezielt wiederholen.
-3. Nach einigen Spielen erneut messen und den Fortschritt überprüfen.
+**Den Wechsel nach zwei Gegentoren.** Ein Torwartwechsel als Reaktion auf zwei Treffer ist fast immer eine Reaktion auf Zufall. Wenn du wechselst, dann mit einem Grund, der über zwei Würfe hinausgeht: eine Zone, die klar nicht funktioniert, oder ein Muster über mehrere Spiele.
 
-So wird aus dem Gefühl „lief nicht" eine belastbare Entwicklung. Wie du dieselbe Systematik aufs ganze Spiel anwendest, steht im Ratgeber zur [Spielanalyse im Handball](/ratgeber/handball-spielanalyse).
+**Die Quote vor der Mannschaft nennen.** Kein Wert im Handball wird so persönlich gelesen wie dieser. Besprich ihn unter vier Augen und immer zusammen mit der Zonenverteilung, damit dein Torwart sieht, welcher Teil überhaupt seiner war.
 
-## Torwartleistung fair und sichtbar machen
+## Woran du im Spiel siehst, ob es sitzt
 
-Um Torwartleistung nach Zonen und Ecken auszuwerten, brauchst du erfasste Würfe – und zwar mit Position und Ausgang. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), tippst du jeden Torwurf live auf einer Torfläche ein. Daraus entstehen automatisch Paradenquoten nach Wurfzone und Ecke – für Torwart und Feld getrennt. So siehst du auf einen Blick, wo dein Keeper wirklich stark ist und wo ihr im Training ansetzt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Wenn du mit deinem Torwart an einer Zone gearbeitet hast, prüfst du nicht die Gesamtquote, sondern:
+
+- **Die Quote in genau der trainierten Zone über drei Spiele.** Alles andere ist Rauschen.
+- **Die Zahl der Würfe aus Nahdistanz und nach Ballverlust.** Sinkt sie, arbeitet deine Abwehr für den Torwart – und die Gesamtquote steigt fast von allein.
+- **Der erste gehaltene Ball nach einem Gegentor.** Ein Torwart, der nach dem Gegentreffer sofort wieder im Spiel ist, ist der wertvollere. Das lässt sich zählen: Wie oft folgt auf ein Gegentor unmittelbar eine Parade?
+- **Die Siebenmeterquote über die Saison.** Sie schwankt stark, wird aber über zwanzig Versuche hinweg aussagekräftig.
+
+Zonen mitzuschreiben ist auf Papier mühsam, weil es schnell gehen muss. Wenn du Paraden und Gegentore direkt mit Zone erfassen willst, nimmst du dafür eine [Handball-Statistik-App](/) und bekommst Wurfbild und Quote je Zone ohne Nachrechnen.`,
+  modules: [
+    {
+      kind: 'answerBox',
+      text: 'Die Paradenquote misst Torwartleistung und Abwehrqualität in einer Zahl. Rechne sie als Paraden ÷ (Paraden + Gegentore) × 100, führe Siebenmeter getrennt und schlüssle nach Wurfzonen auf – erst dann siehst du, ob ein schwacher Wert am Torwart oder an den zugelassenen Würfen liegt.',
+    },
+    {
+      after: 'Die Formel und die zwei Zählregeln, die du festlegen musst',
+      kind: 'formula',
+      label: 'So rechnest du',
+      formula: 'Paradenquote (%) = Paraden ÷ (Paraden + Gegentore) × 100',
+      example: '18 Paraden bei 24 Gegentoren ergeben 18 ÷ 42 × 100 = 42,9 %.',
+    },
+    {
+      after: 'Richtwerte je Zone',
+      kind: 'benchmarkTable',
+      caption: 'Jede Zone hat ihren eigenen Maßstab',
+      columns: ['Wurfzone', 'Typische Paradenquote', 'Wer hier hauptsächlich gefordert ist'],
+      rows: [
+        ['Rückraum 9 m', '45–60 %', 'Torwart und Block gemeinsam'],
+        ['Außen, spitzer Winkel', '50–65 %', 'Torwart, Stellungsspiel'],
+        ['Kreis / Nahdistanz', '20–35 %', 'Abwehr – der Wurf sollte gar nicht entstehen'],
+        ['Tempogegenstoß', '15–30 %', 'Rückzugsverhalten der Mannschaft'],
+        ['Siebenmeter', '20–35 %', 'Torwart, getrennt führen'],
+      ],
+      note: 'Orientierungswerte aus dem Amateurbereich, keine erhobene Statistik. Ab acht erfassten Spielen ist der eigene Durchschnitt deines Torwarts die bessere Referenz.',
+    },
+  ],
   faqs: [
     {
       question: 'Wie berechnet man die Paradenquote eines Handball-Torwarts?',
       answer:
-        'Paradenquote = Paraden geteilt durch die Summe aus Paraden und Gegentoren, mal 100. 14 Paraden bei 30 Würfen aufs Tor ergeben rund 47 Prozent. Im Amateurbereich gelten Werte über 33 Prozent als stark, über 40 Prozent als herausragend.',
+        'Paraden geteilt durch die Summe aus Paraden und Gegentoren, mal 100. Bei 18 Paraden und 24 Gegentoren ergibt das 18 ÷ 42 × 100 = 42,9 %. Würfe, die neben oder über das Tor gehen, zählen nicht mit, Siebenmeter führst du getrennt.',
+    },
+    {
+      question: 'Was ist eine gute Paradenquote im Handball?',
+      answer:
+        'Über alle Zonen gelten im Amateurbereich 30–40 % als solider Bereich, deutlich über 40 % als stark. Aussagekräftiger ist die Aufschlüsselung: 45–60 % aus dem Rückraum, aber nur 20–35 % aus Nahdistanz sind normal, weil ein Kreisanspiel aus zwei Metern kaum zu halten ist.',
     },
     {
       question: 'Warum reicht die Paradenquote allein nicht aus?',
       answer:
-        'Weil sie leichte Nahwürfe mit schwierigen Distanzwürfen vermischt und die Abwehrleistung ausblendet. Ein Torwart hinter einer schwachen Abwehr bekommt mehr freie Würfe ab und sieht schlechter aus. Erst die Aufschlüsselung nach Wurfzonen macht die Bewertung fair.',
+        'Weil sie die Qualität der zugelassenen Würfe mitmisst. Ein Torwart hinter einer Abwehr, die freie Nahdistanzwürfe erlaubt, kommt bei identischer Leistung auf eine deutlich schlechtere Quote als einer hinter einer kompakten Abwehr. Ohne Zonenaufschlüsselung bewertest du die Abwehr und nennst es Torwartleistung.',
     },
     {
       question: 'Welche Wurfzonen sollte man beim Torwart getrennt auswerten?',
       answer:
-        'Sinnvoll ist die Trennung in Distanzwürfe aus dem Rückraum, Nahwürfe vom Kreis und Durchbruch, Außenwürfe, Siebenmeter und Tempogegenstöße. Bei Distanz- und Außenwürfen soll der Torwart glänzen, bei freien Nahwürfen ist er dagegen oft machtlos.',
+        'Fünf Kategorien reichen und sind am Spielfeldrand noch mitschreibbar: Rückraum aus neun Metern, Außen im spitzen Winkel, Kreis beziehungsweise Nahdistanz, Tempogegenstoß und Siebenmeter. Feinere Raster klingen besser, werden im Spiel aber nicht sauber erfasst.',
     },
     {
-      question: 'Wie nutzt man Torwartstatistik im Training?',
+      question: 'Wann ist ein Torwartwechsel statistisch begründet?',
       answer:
-        'Identifiziere die schwächste Zone oder Ecke aus den Daten, wiederhole diese Situation gezielt im Torwarttraining und miss nach einigen Spielen erneut. So wird aus einem diffusen Gefühl ein konkreter, überprüfbarer Trainingsschwerpunkt.',
+        'Nicht nach zwei Gegentoren – das ist Zufall. Begründet ist er, wenn eine bestimmte Zone über mehrere Spiele deutlich unter dem eigenen Schnitt liegt, oder wenn im laufenden Spiel eine klare Zonenschwäche sichtbar wird, die der zweite Torwart erfahrungsgemäß besser abdeckt.',
     },
   ],
   relatedSlugs: [
-    'handball-torwart-tipps',
-    'handball-siebenmeter-halten',
     'handball-torwarttraining',
+    'wurfquote-berechnen',
+    'handball-statistik-fuehren',
+    'handball-6-0-abwehr',
   ],
 };

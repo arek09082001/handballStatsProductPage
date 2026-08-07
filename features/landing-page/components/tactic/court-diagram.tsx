@@ -22,12 +22,20 @@ interface CourtDiagramProps {
   stroke?: string;
   strokeOpacity?: number;
   strokeWidth?: number;
-  /** Chalk a 6:0 defence + attack (with pivot) onto the attacking third. */
+  /** Chalk a defence + attack (with pivot) onto the attacking third. */
   formation?: boolean;
+  /** Which defensive setup to chalk on. Defaults to the 6:0. */
+  formationSystem?: FormationSystem;
   /** Opacity of the formation group, so it can sit behind copy. */
   formationOpacity?: number;
   title?: string;
 }
+
+/**
+ * The defensive setups the board can chalk on. `angriff` keeps the 6:0 behind
+ * and is used when the attack, not the defence, is the subject.
+ */
+export type FormationSystem = '6-0' | '5-1' | '3-2-1' | 'mann' | 'angriff';
 
 // Goal end, goal line on the left. 10 units = 1 m. Goal 3 m at y 85–115.
 // The 9 m arc is trimmed to the top/bottom sideline (x = 29.6 where r=90 meets y=0/200).
@@ -74,6 +82,40 @@ const ATTACK = [
   { x: 60, y: 100, n: 9 }, // pivot / Kreisläufer at the line
 ];
 
+/**
+ * One defensive arrangement per system, in the same goal-end court units.
+ * `6-0` is the historical default the landing page uses behind its bands.
+ * `mann` pairs each defender goal-side of the attacker they pick up.
+ */
+const DEFENCE_BY_SYSTEM: Record<FormationSystem, typeof DEFENCE> = {
+  '6-0': DEFENCE,
+  angriff: DEFENCE,
+  '5-1': [
+    { x: 55, y: 44, n: 4 }, // Außen links
+    { x: 66, y: 70, n: 3 }, // Halb links
+    { x: 72, y: 100, n: 6 }, // Innenblock
+    { x: 66, y: 130, n: 8 }, // Halb rechts
+    { x: 55, y: 156, n: 2 }, // Außen rechts
+    { x: 99, y: 100, n: 5 }, // Vorgezogener
+  ],
+  '3-2-1': [
+    { x: 58, y: 62, n: 4 }, // Innenblock links
+    { x: 62, y: 100, n: 6 }, // Innenblock Mitte
+    { x: 58, y: 138, n: 2 }, // Innenblock rechts
+    { x: 88, y: 72, n: 3 }, // Halb links, vorgezogen
+    { x: 88, y: 128, n: 8 }, // Halb rechts, vorgezogen
+    { x: 110, y: 100, n: 5 }, // Spitze
+  ],
+  mann: [
+    { x: 46, y: 27, n: 4 },
+    { x: 89, y: 59, n: 3 },
+    { x: 107, y: 100, n: 5 },
+    { x: 89, y: 141, n: 8 },
+    { x: 46, y: 173, n: 2 },
+    { x: 52, y: 100, n: 6 },
+  ],
+};
+
 const TOKEN = {
   home: { fill: 'hsl(22 92% 53%)', rim: 'hsl(22 90% 36%)' },
   away: { fill: 'hsl(221 83% 55%)', rim: 'hsl(221 80% 38%)' },
@@ -111,11 +153,19 @@ function Token({
   );
 }
 
-function Formation({ opacity = 1 }: { opacity?: number }) {
+function Formation({
+  opacity = 1,
+  system = '6-0',
+}: {
+  opacity?: number;
+  system?: FormationSystem;
+}) {
+  const defence = DEFENCE_BY_SYSTEM[system] ?? DEFENCE;
+
   return (
     <g opacity={opacity}>
       <Token x={KEEPER.x} y={KEEPER.y} n={KEEPER.n} team='keeper' />
-      {DEFENCE.map((p) => (
+      {defence.map((p) => (
         <Token key={`d${p.n}`} x={p.x} y={p.y} n={p.n} team='away' />
       ))}
       {ATTACK.map((p) => (
@@ -132,6 +182,7 @@ export default function CourtDiagram({
   strokeOpacity = 1,
   strokeWidth = 1.6,
   formation = false,
+  formationSystem = '6-0',
   formationOpacity = 1,
   title,
 }: CourtDiagramProps) {
@@ -172,7 +223,9 @@ export default function CourtDiagram({
         />
         <path {...common} d={FULL.goalL} strokeWidth={strokeWidth * 1.4} />
         <path {...common} d={FULL.goalR} strokeWidth={strokeWidth * 1.4} />
-        {formation ? <Formation opacity={formationOpacity} /> : null}
+        {formation ? (
+        <Formation opacity={formationOpacity} system={formationSystem} />
+      ) : null}
       </svg>
     );
   }
@@ -196,7 +249,9 @@ export default function CourtDiagram({
       <path {...common} d={GOAL_END.sevenMetre} strokeWidth={strokeWidth * 1.2} />
       <path {...common} d={GOAL_END.fourMetre} strokeWidth={strokeWidth * 1.2} />
       <path {...common} d={GOAL_END.goal} strokeWidth={strokeWidth * 1.4} />
-      {formation ? <Formation opacity={formationOpacity} /> : null}
+      {formation ? (
+        <Formation opacity={formationOpacity} system={formationSystem} />
+      ) : null}
     </svg>
   );
 }

@@ -2,113 +2,132 @@ import type { Article } from '../../types';
 
 export const handball60Abwehr: Article = {
   slug: 'handball-6-0-abwehr',
-  title: 'Die 6:0-Abwehr im Handball: kompakt stehen und den Kreis dichtmachen',
-  metaTitle: 'Die 6:0-Abwehr im Handball: Aufgaben, Übungen & Fehler',
+  title: 'Die 6:0-Abwehr: Grundordnung, Aufgaben, Umstellung',
+  metaTitle: 'Die 6:0-Abwehr im Handball: Aufgaben und Umstellung',
   metaDescription:
-    'Die 6:0-Abwehr im Handball erklärt: Grundordnung, Aufgaben der Innen- und Halbverteidiger, Verschieben, Vor- und Nachteile sowie Übungen für ein kompaktes Abwehrsystem.',
+    'Die 6:0-Abwehr im Handball: Grundordnung mit Diagramm, Aufgaben je Position, das Verschiebeprinzip und der Aufbau über drei Trainingseinheiten. Mit Kennzahlen.',
   keywords: [
     '6:0 abwehr handball',
     '6-0 abwehr',
     'handball abwehr kompakt',
     'innenblock handball',
-    'abwehr verschieben',
-    'handball defensive system',
+    'abwehr verschieben handball',
+    'handball 6 0 aufgaben',
     '6:0 verteidigen lernen',
   ],
-  category: 'Taktik & Abwehr',
+  category: 'Taktik & Systeme',
+  archetype: 'system',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
+  dateModified: '2026-08-07',
   readingTimeMinutes: 8,
   excerpt:
-    'Die 6:0 ist die meistgespielte Abwehr im Handball – eine kompakte Wand vor dem Kreis. Wie sie aufgebaut ist, wer welche Aufgabe hat und wie ihr sie zusammen zum Leben erweckt.',
-  heroEyebrow: 'Taktik & Abwehr',
+    'Die meistgespielte Abwehr im Handball und die am schnellsten zu vermittelnde. Grundordnung, Aufgaben je Position, das Verschiebeprinzip – und ein Aufbau über drei Einheiten.',
   imagePath: '/live-spielstatistik-spielertabelle.jpg',
-  imageAlt: 'Live-Statistik in Statix mit Blocks, Ballgewinnen und dem Wurfbild des Gegners',
-  body: `Wenn Handballmannschaften an einer Abwehr feilen, ist es meistens die 6:0. Sie ist die Grundform der Verteidigung: sechs Spieler in einer Reihe am Kreis, eine kompakte Wand vor dem eigenen Tor. Sie ist leicht zu verstehen, schwer zu überwinden und die ideale Basis, von der aus Mannschaften später offensivere Systeme lernen. Wer die 6:0 wirklich beherrscht, hat das Fundament jeder guten Defensive.
+  imageAlt: 'Gegentorverteilung und Abwehrwerte einer Handballmannschaft in der Statix-App',
+  body: `Die 6:0 ist die Abwehr, mit der fast jede Amateurmannschaft anfängt, und in vielen Fällen ist das genau richtig. Sie braucht wenige Wochen bis zur Funktionsfähigkeit, sie verzeiht individuelle Schwächen und sie schützt den Raum, in dem die gefährlichsten Würfe entstehen.
+
+Ihr Ruf als "passive" Abwehr ist irreführend. Eine gute 6:0 steht nicht, sie arbeitet – sie verschiebt, sie stört, sie greift heraus. Der Unterschied zwischen einer 6:0, die hält, und einer, die kassiert, liegt fast vollständig im Verschieben.
 
 ## Die Grundordnung
 
-In der 6:0 stehen alle sechs Feldspieler nebeneinander in einer Linie unmittelbar vor dem Sechsmeterraum. Von außen nach innen:
+Alle sechs Feldspieler stehen auf einer Linie am Torraumkreis. Von außen nach innen: zwei Außenverteidiger, zwei Halbverteidiger, zwei Innenverteidiger – der sogenannte Innenblock. Die Abstände zwischen den Spielern betragen etwa zwei Meter, sodass kein Angreifer zwischen zwei Verteidiger passt, ohne dass beide reagieren.
 
-- **Zwei Außenverteidiger** (Außen)
-- **Zwei Halbverteidiger** (Halb links/rechts)
-- **Zwei Innenverteidiger** (Innen, oft „Innenblock" genannt)
+Die entscheidende geometrische Eigenschaft: Die Abwehr steht auf einem Bogen, nicht auf einer Geraden. Wer sich in der Mitte zu weit vorzieht oder außen zu weit zurückfällt, öffnet eine Naht.
 
-Es gibt keinen vorgezogenen Spieler – daher die „0" im Namen. Alle verteidigen zunächst auf einer Höhe und rücken nur situativ heraus.
+## Aufgaben je Position
 
-## Die Aufgaben nach Position
+**Innenblock (die beiden mittleren Verteidiger).** Die härteste Aufgabe. Sie sichern den Kreisläufer, stellen den Block gegen Rückraumwürfe aus der Mitte und geben die Ansagen fürs Verschieben. Sie brauchen Körpergröße und Kontaktbereitschaft mehr als jede andere Abwehrposition – und sie sind es, die die Abwehr organisieren.
 
-| Position | Hauptaufgabe |
-| --- | --- |
-| Innenverteidiger | Kreisläufer decken, Innenblock stellen, Durchbrüche durch die Mitte verhindern |
-| Halbverteidiger | Rückraumschützen stellen, kontrolliert herausrücken, wieder zurückarbeiten |
-| Außenverteidiger | Außenangreifer decken, Anspiel zum Kreis stören, bei Bedarf zur Mitte helfen |
+**Halbverteidiger.** Die beweglichste Position. Sie verteidigen den Rückraumspieler im Zweikampf, helfen zur Mitte aus und übernehmen den Kreisläufer, wenn er auf ihre Seite läuft. Ein Halbverteidiger, der zu weit herausrückt, öffnet die Naht zum Innenblock – der häufigste Gegentorweg in der 6:0.
 
-Der Innenblock ist das Herz der 6:0: Zwei starke, kommunikative Innenverteidiger, die den Kreisläufer festmachen und Durchbrüche zumauern, machen dieses System stark.
+**Außenverteidiger.** Die am meisten unterschätzte Aufgabe. Sie verteidigen den Außenspieler, schieben zur Mitte, wenn der Ball dorthin geht, und leiten nach Ballgewinn den Gegenstoß ein. Ihre Beinarbeit entscheidet über die Breite der ganzen Abwehr.
 
-## Das Prinzip: verschieben, nicht laufen
+Die wichtigste Regel für alle sechs: **Jeder ist für einen Raum zuständig, nicht für einen Gegner.** Wer seinem Gegenspieler hinterherläuft, reißt die Kette auseinander.
 
-Die 6:0 lebt nicht vom wilden Herauslaufen, sondern vom **gemeinsamen Verschieben**. Wandert der Ball nach rechts, verschiebt die ganze Kette geschlossen mit – wie an einer Schnur. So bleibt der Block immer dort kompakt, wo der Ball ist, und öffnet keine Lücken.
+## Das Bewegungsprinzip: verschieben, nicht laufen
 
-Zwei Grundregeln:
+Der Kern der 6:0 lässt sich in einem Satz sagen: **Die Abwehr bewegt sich als Block, nicht als sechs Einzelspieler.**
 
-1. **Ballorientiert stehen:** immer Richtung Ball verschieben, die ballferne Seite darf etwas einrücken.
-2. **Herausrücken nur so weit nötig:** Der Halbverteidiger stört den Werfer, ohne sich überlaufen zu lassen, und arbeitet sofort zurück.
+Konkret: Geht der Ball nach links, verschieben alle sechs nach links – auch der rechte Außenverteidiger, der scheinbar nichts zu tun hat. Er hält damit die Abstände. Bleibt er stehen, entsteht auf seiner Seite eine Lücke, die zwei Pässe später genutzt wird.
 
-Ein häufiger Fehler ist das zu weite oder zu späte Herausrücken – dann reißt die Kette und der Rückraum spielt den Doppelpass in die Lücke.
+Das Verschieben passiert **mit dem Pass, nicht danach.** Wer wartet, bis der Ball angekommen ist, ist immer einen halben Schritt zu spät. Die Bewegung beginnt, wenn der Ball die Hand des Passgebers verlässt.
 
-## Stärken der 6:0
+Dazu kommen zwei aktive Elemente, ohne die eine 6:0 tatsächlich passiv wird:
 
-- **Kompaktheit:** Der Raum vor dem Kreis ist dicht, Nahwürfe und Durchbrüche werden erschwert.
-- **Einfachheit:** klar verständlich, ideal für junge oder neu zusammengestellte Teams.
-- **Wenig Anfälligkeit im Rücken:** Weil niemand vorgezogen ist, gibt es kaum Räume hinter der Abwehr.
-- **Kreisläufer gut kontrollierbar:** Der Innenblock hat den Kreis fest im Griff.
+**Herausrücken auf den Werfer.** Der ballnahe Verteidiger geht dem Rückraumspieler entgegen, sobald dieser in Wurfposition kommt – ein bis zwei Schritte, nicht mehr. Der Nachbar rückt nach und schließt den entstehenden Raum.
 
-## Schwächen der 6:0
+**Ansage beim Kreiswechsel.** Wenn der Kreisläufer die Seite wechselt, muss die Übergabe laut geklärt werden. Fast jedes Kreisgegentor in der 6:0 ist ein Übergabefehler, kein Positionsfehler.
 
-- **Distanzwürfe:** Weil die Abwehr tief steht, haben wurfstarke Rückraumspieler Platz und Zeit für den Distanzwurf.
-- **Passiver Charakter:** Sie erzeugt selbst wenig Druck und provoziert wenige Ballgewinne.
-- **Berechenbar:** Gegen eingespielte Angriffe kann sie zu statisch wirken.
+## Gegen welchen Gegner sie passt
 
-Deshalb wechseln viele Teams situativ – etwa gegen einen starken Distanzschützen kurz auf ein offensiveres 5:1 – und kehren dann in die 6:0 zurück.
+Die 6:0 ist stark gegen Mannschaften, die **aus der Nahdistanz und über den Kreis** angreifen: Sie macht den Raum vor dem Tor dicht und zwingt den Gegner nach außen und nach hinten.
 
-## Übungen für eine gute 6:0
+Sie ist schwach gegen Mannschaften mit **starken Distanzschützen**. Ein Rückraumspieler, der aus neun Metern konstant trifft, wird von einer 6:0 nicht ausreichend gestört – dann brauchst du entweder deutlich besseres Blockverhalten oder einen vorgezogenen Verteidiger, also die [5:1](/ratgeber/handball-5-1-abwehr).
 
-1. **Verschieben ohne Angreifer:** Der Trainer zeigt die Ballseite an, die Kette verschiebt geschlossen – der Fokus liegt auf gleichen Abständen.
-2. **1 gegen 1 mit Zurückarbeiten:** Herausrücken, stören, sofort zurück in die Kette.
-3. **Innenblock gegen Kreisläufer:** zwei Innenverteidiger gegen Kreis plus Anspieler.
-4. **6 gegen 6 mit Coaching-Stopps:** komplettes Angriff-gegen-Abwehr-Spiel mit kurzen Freezes zum Korrigieren der Abstände.
+Sie ist ebenfalls schwach gegen Mannschaften, die **sehr schnell den Ball laufen lassen**. Verschieben braucht Zeit; wer den Ball in zwei Sekunden von links nach rechts spielt, kommt gegen eine langsame 6:0 immer auf eine offene Seite.
 
-Betone von Anfang an die **Kommunikation**: In der 6:0 muss ständig geredet werden – wer übernimmt den Kreis, wer den einlaufenden Halben, wer die Sperre.
+## Stärken und Schwächen
 
-## Die Abwehr messbar machen
+**Stärken:** schnell zu vermitteln, deckt den gefährlichsten Raum vor dem Tor ab, verzeiht einzelne langsame Spieler, gute Ausgangsposition für den Gegenstoß, geringe Zeitstrafenanfälligkeit, weil weniger Zweikämpfe im offenen Raum stattfinden.
 
-Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix** kannst du die [Gegentore nach Zonen erfassen](/) und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt – wie du dabei methodisch vorgehst, zeigt der Ratgeber [Spiele strukturiert auswerten](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+**Schwächen:** wenig Druck auf Distanzschützen, anfällig gegen schnelles Ballverschieben, bildet im Nachwuchs kaum Zweikampfverhalten aus, kann bei fehlender Ansage am Kreis regelrecht auseinanderfallen.
+
+Der Nachwuchspunkt ist der wichtigste: Eine Jugendmannschaft, die dauerhaft 6:0 steht, gewinnt möglicherweise mehr Spiele und lernt weniger. Welches System zu welchem Kader passt, klärt die [Entscheidungshilfe zum Abwehrsystem](/ratgeber/handball-abwehrsystem-auswaehlen).
+
+## Der Aufbau über drei Einheiten
+
+**Einheit 1 – Stehen und Abstände.** Ohne Ball, ohne Gegner. Die sechs Positionen werden angelaufen, die Abstände eingehalten, der Bogen geformt. Der Trainer verschiebt die Abwehr per Zuruf nach links und rechts. Zwanzig Minuten, langweilig, unverzichtbar.
+
+**Einheit 2 – Verschieben mit Ball.** Sechs Angreifer spielen den Ball ohne Abschluss von außen nach außen, die Abwehr verschiebt mit. Danach dasselbe mit einem Kreisläufer, der die Seite wechselt – hier wird die Ansage eingeführt.
+
+**Einheit 3 – Herausrücken und Zweikampf.** Jetzt mit Abschluss. Der ballnahe Verteidiger rückt heraus, der Nachbar schließt. Die Abwehr bekommt Punkte für Ballgewinne und für Würfe, die sie nach außen gezwungen hat – nicht nur für verhinderte Tore.
+
+Wer mit Einheit 3 beginnt, bekommt eine Abwehr, die einzeln kämpft und als Block nicht funktioniert.
+
+## Kennzahlen zur Kontrolle
+
+Ob eure 6:0 arbeitet, siehst du an vier Zahlen. Notiere zu jedem Gegentor die Zone – mehr braucht es nicht:
+
+**Gegentore aus dem Rückraum, neun Meter.** Die Zahl, gegen die eine 6:0 strukturell schwach ist. Über sechs bis acht pro Spiel ist ein Blockthema, kein Systemthema.
+
+**Gegentore nach Kreisanspiel.** Fast immer ein Übergabefehler. Wenn diese Zahl hoch ist, arbeite an der Ansage, nicht an der Ordnung.
+
+**Gegentore nach Durchbruch je Abwehrposition.** Häufen sie sich auf einer Position, hast du dort ein Zweikampfproblem – auch das ist kein Systemthema.
+
+**Zeitstrafen.** Über vier pro Spiel bedeutet meist, dass eure Verteidiger zu spät am Gegenspieler sind und mit den Armen korrigieren.
+
+Diese vier Zahlen unterscheiden zuverlässig zwischen "das System passt nicht" und "das System wird nicht richtig gespielt" – und die zweite Diagnose ist im Amateurbereich die deutlich häufigere.`,
+  modules: [
+    {
+      after: 'Die Grundordnung',
+      kind: 'formation',
+      system: '6-0',
+      caption:
+        'Die 6:0 (blau) am Torraumkreis: zwei Außen-, zwei Halb- und zwei Innenverteidiger auf einem Bogen, gegen einen 3:3-Angriff mit Kreisläufer (orange).',
+    },
+  ],
   faqs: [
     {
       question: 'Was bedeutet 6:0-Abwehr im Handball?',
       answer:
-        'In der 6:0 stehen alle sechs Feldspieler nebeneinander in einer Linie direkt vor dem Sechsmeterraum. Die erste Zahl steht für die Verteidiger auf der hinteren Linie, die zweite für vorgezogene Spieler – bei der 6:0 ist niemand vorgezogen. Es ist die kompakteste und am häufigsten gespielte Abwehr.',
-    },
-    {
-      question: 'Was sind die Stärken der 6:0-Abwehr?',
-      answer:
-        'Sie ist sehr kompakt und macht den Raum vor dem Kreis dicht, erschwert Nahwürfe und Durchbrüche und bietet kaum Räume im Rücken der Abwehr. Außerdem ist sie einfach zu verstehen und daher ideal für junge oder neu zusammengestellte Mannschaften.',
-    },
-    {
-      question: 'Was ist die größte Schwäche der 6:0-Abwehr?',
-      answer:
-        'Der Distanzwurf. Weil die Abwehr tief am Kreis steht, haben wurfstarke Rückraumspieler Platz und Zeit für den Wurf aus neun Metern. Zudem erzeugt die 6:0 selbst wenig Druck und provoziert wenige Ballgewinne. Gegen starke Distanzschützen wechseln viele Teams situativ auf ein offensiveres System.',
+        'Alle sechs Feldspieler stehen auf einer Linie am Torraumkreis – null Spieler sind vorgezogen. Von außen nach innen: zwei Außenverteidiger, zwei Halbverteidiger und der Innenblock aus zwei Innenverteidigern. Die Abwehr verteidigt Räume, nicht einzelne Gegenspieler.',
     },
     {
       question: 'Wie verteidigt man in der 6:0 richtig?',
       answer:
-        'Über gemeinsames, ballorientiertes Verschieben statt wildem Herauslaufen. Die ganze Kette bewegt sich geschlossen zur Ballseite, wie an einer Schnur. Herausrücken sollte man nur so weit wie nötig, um den Werfer zu stören, und danach sofort zurückarbeiten. Entscheidend sind gleiche Abstände und ständige Kommunikation.',
+        'Als Block, nicht als sechs Einzelspieler: Geht der Ball zur Seite, verschieben alle sechs mit – auch der ballferne Außenverteidiger. Das Verschieben beginnt, wenn der Ball die Hand des Passgebers verlässt, nicht wenn er ankommt. Dazu kommen zwei aktive Elemente: Herausrücken auf den Werfer und laute Übergabe beim Seitenwechsel des Kreisläufers.',
+    },
+    {
+      question: 'Was ist die größte Schwäche der 6:0-Abwehr?',
+      answer:
+        'Der fehlende Druck auf Distanzschützen. Ein Rückraumspieler, der aus neun Metern konstant trifft, wird von einer 6:0 nicht ausreichend gestört. Die zweite Schwäche ist schnelles Ballverschieben des Gegners – Verschieben braucht Zeit, und wer den Ball in zwei Sekunden von links nach rechts spielt, findet immer eine offene Seite.',
     },
   ],
   relatedSlugs: [
+    'handball-abwehrsystem-auswaehlen',
+    'handball-5-1-abwehr',
+    'handball-blocken-lernen',
     'handball-abwehrsysteme',
-    'handball-3-2-1-abwehr',
-    'handball-manndeckung',
+    'handball-kommunikation-spielfeld',
   ],
 };
