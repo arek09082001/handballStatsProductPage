@@ -70,8 +70,8 @@ export default function BrandOverview() {
             <BoardScreenshot
               src='/gameListOverview.png'
               alt='Statix Spielübersicht: alle Spiele und Auswertungen auf einen Blick'
-              width={1899}
-              height={874}
+              width={2560}
+              height={2000}
               label='Statix – Spielübersicht'
               tone='paper'
               pin='magnet'

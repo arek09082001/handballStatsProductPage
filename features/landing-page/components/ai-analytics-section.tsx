@@ -102,8 +102,8 @@ export default function AiAnalyticsSection() {
             <BoardScreenshot
               src='/aiAnalyze.png'
               alt={t('showcase.imageOneLabel')}
-              width={1032}
-              height={803}
+              width={2560}
+              height={2000}
               label={t('showcase.imageOneLabel')}
               tone='court'
               pin='tape'
@@ -111,8 +111,8 @@ export default function AiAnalyticsSection() {
             <BoardScreenshot
               src='/aiAnalyze2.png'
               alt={t('showcase.imageTwoLabel')}
-              width={1027}
-              height={808}
+              width={2560}
+              height={2000}
               label={t('showcase.imageTwoLabel')}
               tone='court'
               pin='magnet'

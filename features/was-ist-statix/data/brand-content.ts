@@ -60,8 +60,8 @@ export const BRAND_HIGHLIGHTS = [
     description:
       'Tore, Würfe, Paraden, Strafen und Wechsel erfasst du in Echtzeit mit einem Tap. Kein Zettel, keine Strichliste – und trotzdem hast du nach dem Schlusspfiff jede Aktion sauber dokumentiert.',
     src: '/recordStatsInGame.png',
-    width: 1916,
-    height: 879,
+    width: 2560,
+    height: 1600,
   },
   {
     icon: 'stats',
@@ -70,8 +70,8 @@ export const BRAND_HIGHLIGHTS = [
     description:
       'Wurfquoten, Effizienz, Spielanteile und Entwicklungsverläufe berechnet Statix automatisch im Hintergrund – für jeden Spieler und das ganze Team, sofort teilbar als Link oder PDF.',
     src: '/statsTableInGame.png',
-    width: 1896,
-    height: 874,
+    width: 2560,
+    height: 2000,
   },
   {
     icon: 'shots',
@@ -80,8 +80,8 @@ export const BRAND_HIGHLIGHTS = [
     description:
       'Jeder Wurf landet visuell auf dem Spielfeld. So erkennst du Muster, Lieblingsecken und Schwächen, die in einer reinen Zahlentabelle untergehen.',
     src: '/shotMaps.png',
-    width: 1900,
-    height: 874,
+    width: 2560,
+    height: 2000,
   },
   {
     icon: 'ai',
@@ -90,8 +90,8 @@ export const BRAND_HIGHLIGHTS = [
     description:
       'Statix fasst Spiele, Spieler und ganze Turniere in verständlichen Analysen zusammen – mit pseudonymisierten Spielernamen. Stärken, Schwächen und Ansatzpunkte fürs nächste Training auf einen Blick.',
     src: '/aiAnalyze.png',
-    width: 1032,
-    height: 803,
+    width: 2560,
+    height: 2000,
   },
 ] as const;
 

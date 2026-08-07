@@ -21,9 +21,9 @@ interface ShowcaseItem {
  * live on `/was-ist-statix` and in the live demo instead.
  */
 const SHOTS = [
-  { src: '/recordStatsInGame.png', width: 1916, height: 879 },
-  { src: '/statsTableInGame.png', width: 1896, height: 874 },
-  { src: '/shotMaps.png', width: 1900, height: 874 },
+  { src: '/recordStatsInGame.png', width: 2560, height: 1600 },
+  { src: '/statsTableInGame.png', width: 2560, height: 2000 },
+  { src: '/shotMaps.png', width: 2560, height: 2000 },
 ] as const;
 
 export default function ShowcaseSection() {

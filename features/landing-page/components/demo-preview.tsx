@@ -17,8 +17,8 @@ export default function DemoPreview({ url, liveLabel }: DemoPreviewProps) {
       <BoardScreenshot
         src='/statsTableInGame.png'
         alt='Statix Live-Demo – Spielstatistiken und Auswertungen im Browser'
-        width={1896}
-        height={874}
+        width={2560}
+        height={2000}
         tone='court'
         pin='tape'
         sizes='(max-width: 1024px) 100vw, 520px'

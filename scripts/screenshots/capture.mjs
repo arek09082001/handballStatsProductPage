@@ -99,12 +99,19 @@ async function startBridge(upstreamUrl) {
       clientSocket.pipe(up);
     };
     up.on('data', onData);
+    // Both halves need a handler for the whole life of the tunnel, not just
+    // during the handshake: once the two sockets are piped together a reset on
+    // either side is an unhandled 'error' event, which takes down the process.
     up.on('error', (e) => {
       if (DEBUG) console.log(`[bridge] ${req.url} upstream error: ${e.message}`);
       clientSocket.destroy();
     });
     clientSocket.on('error', () => up.destroy());
+    up.on('close', () => clientSocket.destroy());
+    clientSocket.on('close', () => up.destroy());
   });
+
+  server.on('clientError', (_e, socket) => socket.destroy());
 
   await new Promise((res) => server.listen(0, '127.0.0.1', res));
   const { port } = server.address();
@@ -129,7 +136,10 @@ const CHROME_ARGS = [
 ];
 
 async function launch() {
-  const upstream = process.env.HTTPS_PROXY || process.env.https_proxy;
+  // A local target never needs the proxy — and starting a bridge for it only
+  // adds a process that can die mid-run.
+  const isLocal = /^https?:\/\/(localhost|127\.0\.0\.1)/.test(BASE);
+  const upstream = isLocal ? null : process.env.HTTPS_PROXY || process.env.https_proxy;
   const bridge = upstream ? await startBridge(upstream) : null;
   const browser = await chromium.launch({
     executablePath: CHROME,
@@ -139,6 +149,62 @@ async function launch() {
       : undefined,
   });
   return { browser, bridge };
+}
+
+/**
+ * Signs in when credentials are supplied. The public live demo needs none; a
+ * local instance seeded with `scripts/seed-demo.mjs` does. Set STATIX_EMAIL and
+ * STATIX_PASSWORD to enable.
+ */
+async function signIn(ctx, browser) {
+  const email = process.env.STATIX_EMAIL;
+  const password = process.env.STATIX_PASSWORD;
+  if (!email || !password) return null;
+
+  const page = await ctx.newPage();
+  await page.goto(BASE + '/login', { waitUntil: 'networkidle', timeout: 45000 });
+
+  const inputs = await page.$$eval('input', (els) =>
+    els.map((e) => ({ type: e.type, name: e.name, id: e.id, ph: e.placeholder })),
+  );
+  if (DEBUG) console.log('  [login] inputs:', JSON.stringify(inputs));
+
+  // The fields are rendered by a form library, so target them positionally
+  // rather than by a name attribute that may not exist.
+  const emailBox = page.locator('input[type="email"], input[name="email"]').first();
+  const passBox = page.locator('input[type="password"], input[name="password"]').first();
+  await emailBox.waitFor({ state: 'visible', timeout: 15000 });
+  await emailBox.click();
+  await emailBox.fill(email);
+  await passBox.click();
+  await passBox.fill(password);
+
+  const filled = await page.evaluate(() => {
+    const v = [...document.querySelectorAll('input')].map((i) => i.value);
+    return v;
+  });
+  if (DEBUG) console.log('  [login] values:', JSON.stringify(filled));
+
+  await page.click('button[type="submit"]');
+  await page
+    .waitForURL((u) => !u.pathname.startsWith('/login'), { timeout: 30000 })
+    .catch(() => {});
+
+  if (page.url().includes('/login')) {
+    const err = await page
+      .locator('[role="alert"], .text-destructive, [data-error]')
+      .first()
+      .textContent()
+      .catch(() => null);
+    await page.close();
+    // Hard failure. A soft warning here is how a run ends up writing the login
+    // screen into public/ as if it were the product.
+    throw new Error(`login failed${err ? `: ${err.trim()}` : ''}`);
+  }
+  console.log(`  [login] ${email} -> ${page.url()}`);
+  const state = await ctx.storageState();
+  await page.close();
+  return state;
 }
 
 /** Settle a page: fonts loaded, images decoded, entrance animations finished. */
@@ -159,6 +225,17 @@ async function settle(page, ms = 2200) {
   await page.waitForTimeout(ms);
 }
 
+/**
+ * Shot formats. A tablet in landscape — not a 1920 desktop — is the frame the
+ * app is shot in: at the same rendered width on the marketing page, every
+ * control, number and label comes out around 1.5× larger, which is what makes
+ * a screenshot readable once it is scaled down into a section. Captured at
+ * 2× density so it stays sharp on retina.
+ */
+const TABLET = { viewport: { width: 1280, height: 800 }, scale: 2 };
+const TABLET_TALL = { viewport: { width: 1280, height: 1000 }, scale: 2 };
+const PHONE = { viewport: { width: 390, height: 844 }, scale: 2, mobile: true };
+
 /* ────────────────────────────────────────────────────────────────── explore ── */
 
 const EXPLORE_ROUTES = [
@@ -170,17 +247,25 @@ const EXPLORE_ROUTES = [
   '/surveys',
   '/inbox',
   '/settings',
+  // Detail routes, when the seed's ids are handed in — these are where the
+  // screenshots that actually sell the product live (recording, stats, shot
+  // maps, AI reports).
+  ...(process.env.LIVE_GAME_ID ? [`/games/${process.env.LIVE_GAME_ID}`] : []),
+  ...(process.env.GAME_ID ? [`/games/${process.env.GAME_ID}`] : []),
+  ...(process.env.TOURNAMENT_ID ? [`/tournaments/${process.env.TOURNAMENT_ID}`] : []),
+  ...(process.env.PLAYER_ID ? [`/players/${process.env.PLAYER_ID}`] : []),
 ];
 
 async function explore() {
   const { browser, bridge } = await launch();
   await mkdir(EXPLORE_DIR, { recursive: true });
   const ctx = await browser.newContext({
-    viewport: { width: 1920, height: 1000 },
+    viewport: TABLET.viewport,
     deviceScaleFactor: 1,
     locale: 'de-DE',
     reducedMotion: 'reduce',
   });
+  await signIn(ctx).catch((e) => console.log(`  ${e.message}`));
   const page = await ctx.newPage();
   const report = [];
 
@@ -236,9 +321,244 @@ async function explore() {
 
 /* ────────────────────────────────────────────────────────────────── capture ── */
 
-// Filled in once `explore` has shown the real UI. Each shot names the file it
-// writes into public/, so the manifest doubles as the image inventory.
-const SHOTS = [];
+const ID = {
+  live: process.env.LIVE_GAME_ID,
+  game: process.env.GAME_ID,
+  tournament: process.env.TOURNAMENT_ID,
+  player: process.env.PLAYER_ID,
+};
+
+/** Click the first visible control whose trimmed text matches exactly. */
+async function tap(page, label) {
+  const hit = page
+    .locator(`button:visible, [role="tab"]:visible, a:visible`)
+    .filter({ hasText: new RegExp(`^\\s*${label}\\s*$`) })
+    .first();
+  await hit.waitFor({ state: 'visible', timeout: 15000 });
+  await hit.click();
+  await page.waitForTimeout(1400);
+}
+
+/**
+ * Click the first visible control that *contains* the label. Needed where the
+ * control's text carries a trailing icon glyph ("Bericht öffnen →"), which no
+ * exact match will ever hit.
+ */
+async function tapLoose(page, label) {
+  const hit = page
+    .locator('button:visible, a:visible')
+    .filter({ hasText: label })
+    .first();
+  await hit.waitFor({ state: 'visible', timeout: 15000 });
+  await hit.click();
+  await page.waitForTimeout(2000);
+}
+
+/**
+ * Click a control by its accessible name. The AI view is opened by the Statix
+ * mark in the recording header rather than a labelled tab, so there is no text
+ * to match on — only `aria-label`.
+ */
+async function tapAria(page, name) {
+  const hit = page.locator(`[aria-label="${name}"]:visible`).first();
+  await hit.waitFor({ state: 'visible', timeout: 15000 });
+  await hit.click();
+  await page.waitForTimeout(2500);
+}
+
+/** Bring a section heading to the top of the frame, so the shot is about it. */
+async function scrollTo(page, headingText) {
+  await page.evaluate((text) => {
+    const el = [...document.querySelectorAll('h1,h2,h3,h4')].find((h) =>
+      h.textContent.trim().startsWith(text),
+    );
+    if (el) el.scrollIntoView({ block: 'start', behavior: 'instant' });
+    window.scrollBy(0, -24);
+  }, headingText);
+  await page.waitForTimeout(900);
+}
+
+/**
+ * The shot manifest — also the inventory of every product image. `file` is the
+ * name written into public/; the first block keeps the names the product page
+ * already references, the rest are new and named for reuse elsewhere.
+ */
+const SHOTS = [
+  // ── The product page's own eleven ────────────────────────────────────────
+  {
+    group: 'core', file: 'heroImage.png', ...TABLET,
+    route: () => `/games/${ID.live}`,
+    note: 'Live recording — the sideline tap, mid second half.',
+  },
+  {
+    group: 'core', file: 'recordStatsInGame.png', ...TABLET,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => tap(page, '7-Meter-Wurf'),
+    note: 'Recording with the 7-metre panel open.',
+  },
+  {
+    group: 'core', file: 'gameListOverview.png', ...TABLET_TALL,
+    route: () => '/games',
+    note: 'Season dashboard: balance, form, shot and save quota, every game.',
+  },
+  {
+    group: 'core', file: 'statsTableInGame.png', ...TABLET_TALL,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tap(page, 'Statistik');
+      await scrollTo(page, 'Feldspieler');
+    },
+    note: 'Per-player table for a finished game.',
+  },
+  {
+    group: 'core', file: 'shotMaps.png', ...TABLET_TALL,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tap(page, 'Statistik');
+      await scrollTo(page, 'Wurfbild');
+    },
+    note: 'Shot map / heatmap on the court.',
+  },
+  {
+    group: 'core', file: 'teamManagement.png', ...TABLET_TALL,
+    route: () => '/players',
+    note: 'Roster as the card album.',
+  },
+  {
+    group: 'core', file: 'exportShare.png', ...TABLET,
+    route: () => `/games/${ID.game}`,
+    prepare: (page) => tap(page, 'Teilen'),
+    note: 'Share a finished game by link or with another coach.',
+  },
+  {
+    group: 'core', file: 'tournamentTable.png', ...TABLET_TALL,
+    route: () => `/tournaments/${ID.tournament}`,
+    prepare: (page) => scrollTo(page, 'Tabelle'),
+    note: 'Auto-updating tournament standings.',
+  },
+  {
+    group: 'core', file: 'tournamentGameList.png', ...TABLET_TALL,
+    route: () => `/tournaments/${ID.tournament}`,
+    prepare: (page) => scrollTo(page, 'Spiele'),
+    note: 'Tournament schedule and results.',
+  },
+  {
+    group: 'core', file: 'aiAnalyze.png', ...TABLET_TALL,
+    route: () => `/games/${ID.game}`,
+    // The AI tab lands on the report *list*; the charts live one click deeper.
+    prepare: async (page) => {
+      await tapAria(page, 'KI');
+      await tapLoose(page, 'Bericht öffnen');
+      await page.waitForTimeout(1800);
+    },
+    note: 'AI match report: game flow and shot-zone efficiency.',
+  },
+  {
+    group: 'core', file: 'aiAnalyze2.png', ...TABLET_TALL,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tapAria(page, 'KI');
+      await tapLoose(page, 'Bericht öffnen');
+      await page.waitForTimeout(1800);
+      await scrollTo(page, 'Wendepunkt');
+    },
+    note: 'AI match report: turning points, error spread, player performance.',
+  },
+
+  // ── Tournament, for /fuer-vereine and the tournament guide ───────────────
+  {
+    group: 'turnier', file: 'turnier-tabelle.png', ...TABLET_TALL,
+    route: () => `/tournaments/${ID.tournament}`,
+    prepare: (page) => scrollTo(page, 'Tabelle'),
+  },
+  {
+    group: 'turnier', file: 'turnier-spielplan.png', ...TABLET_TALL,
+    route: () => `/tournaments/${ID.tournament}`,
+    prepare: (page) => scrollTo(page, 'Spiele'),
+  },
+  {
+    group: 'turnier', file: 'turnier-mannschaften.png', ...TABLET,
+    route: () => `/tournaments/${ID.tournament}`,
+    prepare: (page) => scrollTo(page, 'Mannschaften'),
+  },
+  {
+    group: 'turnier', file: 'turnier-ki-analyse.png', ...TABLET_TALL,
+    route: () => `/tournaments/${ID.tournament}`,
+    prepare: async (page) => {
+      await tap(page, 'KI-Analyse');
+      await tapLoose(page, 'Bericht öffnen').catch(() => {});
+    },
+  },
+
+  // ── Kader and player profiles, for /fuer-jugendtrainer ───────────────────
+  {
+    group: 'kader', file: 'kader-kartenalbum.png', ...TABLET_TALL,
+    route: () => '/players',
+  },
+  {
+    group: 'kader', file: 'spielerprofil-verlauf.png', ...TABLET_TALL,
+    route: () => `/players/${ID.player}`,
+  },
+  {
+    group: 'kader', file: 'spielerprofil-ki.png', ...TABLET_TALL,
+    route: () => `/players/${ID.player}`,
+    prepare: (page) => scrollTo(page, 'KI-Spieler-Intelligenz'),
+  },
+  {
+    group: 'kader', file: 'aufstellung-feld.png', ...TABLET,
+    route: () => `/games/${ID.live}`,
+    note: 'The court with the current line-up — the tactic board in the app.',
+  },
+
+  // ── Sharing and the coaching staff ───────────────────────────────────────
+  {
+    group: 'teilen', file: 'spiel-teilen-freigabelink.png', ...TABLET,
+    route: () => `/games/${ID.game}`,
+    prepare: (page) => tap(page, 'Teilen'),
+  },
+  {
+    group: 'teilen', file: 'posteingang-geteilte-spiele.png', ...TABLET,
+    route: () => '/inbox',
+  },
+  {
+    group: 'teilen', file: 'gegner-uebersicht.png', ...TABLET,
+    route: () => '/opponents',
+  },
+  {
+    group: 'teilen', file: 'spielerumfragen.png', ...TABLET,
+    route: () => '/surveys',
+  },
+
+  // ── Phone: how a coach actually holds it on the bench ────────────────────
+  {
+    group: 'mobil', file: 'mobil-live-erfassung.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+  },
+  {
+    group: 'mobil', file: 'mobil-spielliste.png', ...PHONE,
+    route: () => '/games',
+  },
+  {
+    group: 'mobil', file: 'mobil-spielerstatistiken.png', ...PHONE,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tap(page, 'Statistik');
+      await scrollTo(page, 'Feldspieler');
+    },
+  },
+  {
+    group: 'mobil', file: 'mobil-wurfbild.png', ...PHONE,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tap(page, 'Statistik');
+      await scrollTo(page, 'Wurfbild');
+    },
+  },
+  {
+    group: 'mobil', file: 'mobil-kader.png', ...PHONE,
+    route: () => '/players',
+  },
+];
 
 async function capture() {
   const wanted = ONLY ? SHOTS.filter((s) => s.group === ONLY) : SHOTS;
@@ -250,27 +570,57 @@ async function capture() {
     return;
   }
   const { browser, bridge } = await launch();
+  let done = 0;
+  const failed = [];
+
+  // Sign in ONCE and reuse the session for every shot. Logging in per shot
+  // trips the app's own auth rate limit ("Zu viele Versuche") a few shots in,
+  // after which every remaining page is the login screen.
+  const authCtx = await browser.newContext({ locale: 'de-DE' });
+  const storageState = await signIn(authCtx, browser);
+  await authCtx.close();
+
   for (const shot of wanted) {
     const ctx = await browser.newContext({
-      viewport: shot.viewport ?? { width: 1920, height: 900 },
+      viewport: shot.viewport ?? TABLET.viewport,
       deviceScaleFactor: shot.scale ?? 1,
       locale: 'de-DE',
       isMobile: Boolean(shot.mobile),
       hasTouch: Boolean(shot.mobile),
       reducedMotion: 'reduce',
+      ...(storageState ? { storageState } : {}),
     });
-    const page = await ctx.newPage();
-    await page.goto(BASE + shot.route, { waitUntil: 'domcontentloaded', timeout: 45000 });
-    await settle(page);
-    if (shot.prepare) await shot.prepare(page);
-    await settle(page, 900);
-    const target = shot.selector ? await page.$(shot.selector) : page;
-    await target.screenshot({ path: path.join(PUBLIC_DIR, shot.file) });
-    console.log(`✓ public/${shot.file}`);
-    await ctx.close();
+    try {
+      const page = await ctx.newPage();
+      const route = typeof shot.route === 'function' ? shot.route() : shot.route;
+      await page.goto(BASE + route, { waitUntil: 'domcontentloaded', timeout: 45000 });
+      await settle(page);
+      // Never write a screenshot of the login or onboarding screen into
+      // public/ — that is a product image that silently lies.
+      if (/\/login|\/onboarding/.test(page.url())) {
+        throw new Error(`not signed in — landed on ${new URL(page.url()).pathname}`);
+      }
+      if (shot.prepare) await shot.prepare(page);
+      await settle(page, 800);
+      const target = shot.selector ? await page.$(shot.selector) : page;
+      await target.screenshot({ path: path.join(PUBLIC_DIR, shot.file) });
+      console.log(`✓ ${shot.file}`);
+      done++;
+    } catch (err) {
+      // One bad shot must not cost the whole run — record it and carry on, so
+      // the summary says exactly what is missing instead of silently shipping
+      // a short set.
+      console.log(`✗ ${shot.file} — ${err.message.split('\n')[0].slice(0, 90)}`);
+      failed.push(shot.file);
+    } finally {
+      await ctx.close();
+    }
   }
+
   await browser.close();
   bridge?.close();
+  console.log(`\n${done}/${wanted.length} written to public/`);
+  if (failed.length) console.log(`missing: ${failed.join(', ')}`);
 }
 
 /* ───────────────────────────────────────────────────────────────────── main ── */
