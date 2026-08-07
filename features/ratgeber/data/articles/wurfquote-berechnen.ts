@@ -2,10 +2,10 @@ import type { Article } from '../../types';
 
 export const wurfquoteBerechnen: Article = {
   slug: 'wurfquote-berechnen',
-  title: 'Wurfquote im Handball berechnen: Formel, Beispiele & Richtwerte',
+  title: 'Wurfquote berechnen: Formel, Richtwerte und die Fehldeutungen',
   metaTitle: 'Wurfquote im Handball berechnen: Formel & Richtwerte',
   metaDescription:
-    'Wurfquote im Handball berechnen: die Formel (Tore ÷ Würfe × 100), Rechenbeispiele und realistische Richtwerte nach Position – und wie du die Quote richtig deutest.',
+    'Wurfquote im Handball berechnen: die Formel, ein durchgerechnetes Spiel, Richtwerte nach Position und die fünf Fehldeutungen, die Trainer Entscheidungen kosten.',
   keywords: [
     'wurfquote handball',
     'wurfquote berechnen',
@@ -19,80 +19,110 @@ export const wurfquoteBerechnen: Article = {
   archetype: 'kennzahl',
   datePublished: '2026-06-02',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 3,
+  readingTimeMinutes: 8,
   excerpt:
-    'Die Wurfquote ist die wichtigste Basiskennzahl im Handball. Hier findest du die Formel, ein Rechenbeispiel, Richtwerte nach Position – und die Fallstricke, die du kennen solltest.',
+    'Die Wurfquote ist die erste Zahl, auf die du als Trainer schaust – und die am häufigsten falsch gelesene. Formel, Zählregeln, Richtwerte nach Position und die Fehldeutungen, die zu falschen Aufstellungen führen.',
   imagePath: '/statsTableInGame.png',
   imageAlt: 'Wurfquoten und Spielerstatistiken in der Statix Handball-App',
-  body: `Die Wurfquote ist die erste Zahl, auf die fast jeder Handballtrainer schaut. Sie sagt in einem einzigen Prozentwert, wie effizient ein Spieler oder eine Mannschaft abschließt. In diesem Ratgeber lernst du die Formel, rechnest ein Beispiel durch, bekommst Richtwerte nach Position – und erfährst, warum die reine Quote allein trügerisch sein kann.
+  body: `Die Wurfquote ist die Kennzahl, mit der fast jeder Trainer anfängt. Sie ist in zehn Sekunden gerechnet, sie steht in jedem Spielbericht, und sie klingt nach einer Antwort. Genau darin liegt ihr Risiko: Eine Quote ohne Kontext führt regelmäßig zu Entscheidungen, die dein Team schwächer machen – der Spieler mit der besten Quote wird gelobt, der mit der schlechtesten aus dem Rückraum genommen, obwohl er die schwierigsten Bälle geworfen hat. Dieser Artikel zeigt dir die Formel, die Zählregeln, realistische Richtwerte und vor allem die Stellen, an denen die Zahl kippt.
 
-## Was ist die Wurfquote im Handball?
+## Was die Wurfquote dir als Trainer beantwortet
 
-Die Wurfquote (auch Trefferquote oder Torquote) beschreibt das Verhältnis von erzielten Toren zu abgegebenen Würfen. Sie ist eine Prozentzahl zwischen 0 und 100 und beantwortet die einfache Frage: Wie viele meiner Torabschlüsse landen tatsächlich im Netz?
+Die Wurfquote – auch Trefferquote oder Torquote – beschreibt, welcher Anteil der abgegebenen Torabschlüsse im Netz landet. Sie beantwortet eine einzige Frage: Wie effizient schließt ein Spieler oder eine Mannschaft ab?
 
-Als "Würfe" zählen dabei alle echten Torabschlüsse eines Spielers – also Tore, vom Torwart gehaltene Bälle, klare Fehlwürfe sowie Treffer an Pfosten oder Latte. Ein technischer Fehler (zum Beispiel ein Schrittfehler oder ein vertändelter Ball) ist kein Wurf und fließt nicht in die Quote ein.
+Was sie nicht beantwortet: ob die Abschlüsse gut ausgewählt waren, ob der Spieler Verantwortung übernimmt, ob euer Angriff funktioniert. Diese Fragen brauchen zusätzliche Zahlen – die Anzahl der Abschlüsse, die Wurfposition, die Angriffe insgesamt. Die Wurfquote ist der Einstieg in die Auswertung, nicht ihr Ergebnis.
 
-## Wurfquote berechnen: die Formel
+Für dich als Trainer ist sie vor allem ein **Vergleichsinstrument über Zeit**: dieselbe Spielerin, dieselbe Position, mehrere Spiele hintereinander. In dieser Form ist sie belastbar. Als Rangliste quer über alle Positionen ist sie es nicht.
 
-Die Berechnung ist denkbar einfach. Du teilst die Anzahl der Tore durch die Anzahl der Würfe und multiplizierst mit 100:
+## Die Formel – und was überhaupt als Wurf zählt
 
-> **Wurfquote (%) = Tore ÷ Würfe × 100**
+Die Rechnung ist trivial, die Zählregel ist es nicht. Genau dort entstehen die Unterschiede zwischen zwei Statistikbögen desselben Spiels.
 
-Wichtig ist nur, dass du beide Werte sauber erfasst: jedes Tor und jeden Torabschluss. Genau hier passieren am Spielfeldrand die meisten Fehler, weil Fehlwürfe im Eifer des Gefechts schnell untergehen. Die Prozentzahl selbst musst du übrigens nicht im Kopf ausrechnen – trag Tore und Würfe in den [Wurfquoten-Rechner](/wurfquote-rechner) ein, dann steht sie sofort da.
+Als **Wurf** zählt jeder echte Torabschluss: das Tor, der vom Torwart gehaltene Ball, der klare Fehlwurf und der Treffer an Pfosten oder Latte. Ein technischer Fehler ohne Abschluss – Schrittfehler, Prellfehler, vertändelter Ball – ist **kein** Wurf und darf die Quote weder heben noch senken. Ein geblockter Ball, der das Tor nie erreicht hätte, wird in der Praxis unterschiedlich behandelt; entscheide dich für eine Regel und halte sie die ganze Saison durch, sonst vergleichst du am Ende Äpfel mit Birnen.
 
-## Beispiel: Wurfquote eines Spielers berechnen
+Der Siebenmeter ist der zweite Stolperstein. Zählst du ihn in die reguläre Wurfquote hinein, hebt eine sichere Schützin die Quote deiner ganzen Mannschaft an, ohne dass euer Angriff besser geworden wäre. Führe Siebenmeter deshalb **getrennt**.
 
-Nehmen wir eine Rückraumspielerin, die in einem Spiel 12 Torabschläge hat und davon 7 verwandelt. Ihre Wurfquote beträgt:
+## Ein Spiel durchgerechnet
 
-7 ÷ 12 × 100 = **58,3 %**
+Nehmen wir eine Halbzeit deiner Mannschaft. Du hast mitgeschrieben, wer wie oft abgeschlossen hat und was dabei herauskam:
 
-Für die ganze Mannschaft rechnest du genauso – nur mit den Summen aller Spielerinnen. Erzielt dein Team 28 Tore aus 45 Würfen, liegt die Team-Wurfquote bei 28 ÷ 45 × 100 = **62,2 %**.
-
-| Spielerin | Tore | Würfe | Wurfquote |
+| Position | Tore | Würfe | Wurfquote |
 | --- | --- | --- | --- |
 | Kreis | 5 | 6 | 83,3 % |
-| Außen | 6 | 9 | 66,7 % |
-| Rückraum | 7 | 12 | 58,3 % |
-| **Team** | **28** | **45** | **62,2 %** |
+| Außen links | 4 | 7 | 57,1 % |
+| Außen rechts | 2 | 2 | 100,0 % |
+| Rückraum Mitte | 7 | 12 | 58,3 % |
+| Rückraum links | 6 | 11 | 54,5 % |
+| Rückraum rechts | 4 | 7 | 57,1 % |
+| **Team (ohne Siebenmeter)** | **28** | **45** | **62,2 %** |
 
-## Wurfquote nach Position: Richtwerte
+Was springt dich an? Wahrscheinlich die 100 % des rechten Außen. Und genau das ist die Falle: Zwei Würfe sind keine Leistung, sondern ein Zufallsergebnis. Interessanter ist die Rückraummitte mit 58,3 % aus zwölf Würfen – das ist die Spielerin, die gegen den geschlossenen Block Verantwortung übernommen hat, und ihre Quote ist für diese Position gut.
 
-Eine gute Wurfquote hängt stark von der Wurfposition ab. Ein Kreisläufer wirft aus kürzester Distanz, ein Rückraumspieler oft von neun Metern gegen einen geschlossenen Block. Diese Richtwerte helfen dir, Quoten einzuordnen (Amateur- bis ambitionierter Ligabereich):
+Für die Mannschaft rechnest du mit den Summen: 28 ÷ 45 × 100 = 62,2 %. Diesen Wert notierst du nach jedem Spiel. Ein einzelner Wert sagt wenig, eine Reihe von acht Werten sagt dir, ob eure Abschlussqualität stabil ist.
 
-| Position / Situation | Typische Wurfquote |
-| --- | --- |
-| Tempogegenstoß / Konter | 85–95 % |
-| Siebenmeter | 75–85 % |
-| Kreis | 65–75 % |
-| Außen | 55–70 % |
-| Rückraum (9 Meter) | 45–55 % |
+## Richtwerte nach Position und Spielklasse
 
-Die Zahlen sind bewusst als Spannen angegeben. Alter, Spielklasse und Gegner verschieben sie deutlich – nutze sie als Orientierung, nicht als starres Soll.
+Eine "gute" Wurfquote gibt es nicht ohne die Position dazu. Ein Kreisläufer wirft aus zwei Metern gegen einen Torwart, eine Rückraumspielerin aus neun Metern gegen Block und Torwart. Wer beide in dieselbe Rangliste schreibt, bestraft die schwierigere Aufgabe.
 
-## Warum die reine Wurfquote nicht alles sagt
+Die folgenden Spannen sind Orientierungswerte aus der Trainingspraxis im Amateur- und ambitionierten Ligabereich – kein erhobener Datensatz. Nutze sie, um einzuordnen, nicht um zu bewerten.
 
-Eine hohe Wurfquote ist nicht automatisch gut, eine niedrige nicht automatisch schlecht. Drei Dinge solltest du immer mitdenken:
+Nach oben verschieben sich die Werte mit der Spielklasse, weil das Anspiel besser wird; nach unten verschieben sie sich im Jugendbereich, weil Torhüter dort früher als Feldspieler ihr Niveau finden. Vergleiche deine Mannschaft deshalb zuerst mit sich selbst und erst danach mit einer Tabelle.
 
-- **Wurfanzahl:** 100 % aus einem Wurf ist weniger wert als 55 % aus zwanzig Würfen. Wer die Verantwortung übernimmt, hat oft die undankbarere Quote.
-- **Wurfposition und Chancenqualität:** Wer nur klare Konter abschließt, hat es leichter als ein Rückraumspieler, der gegen den Block ziehen muss. Eine Wurfquote nach Position (siehe oben) sagt mehr als ein einzelner Gesamtwert.
-- **Spielkontext:** In der Schlussphase unter Druck oder in Unterzahl sinken Quoten – das ist normal und kein Zeichen für nachlassende Leistung.
+## Fünf Fehldeutungen, die dich Entscheidungen kosten
 
-Bei uns war der beste Torschütze über Wochen gleichzeitig der Spieler mit der schlechtesten Quote – er hat einfach am meisten geworfen. In der Torschützenliste stand er ganz oben, in der Effizienz ganz unten. Das ist kein Widerspruch, aber man sieht es erst, wenn man beide Werte nebeneinanderlegt.
+**Die Quote ohne die Wurfzahl lesen.** 100 % aus einem Wurf ist keine Information. Setze eine Schwelle, unter der du eine Quote gar nicht erst kommentierst – im Spiel etwa fünf Abschlüsse, über die Saison eher dreißig.
 
-Deshalb betrachten erfahrene Trainer die Wurfquote nie isoliert, sondern zusammen mit Wurfbildern (wo wurde geworfen?) und der Anzahl der Abschlüsse.
+**Positionen gegeneinander vergleichen.** Der Kreisläufer hat fast immer die beste Quote im Team. Das sagt nichts über seine Leistung, sondern über seinen Abstand zum Tor.
 
-## Wurfquote im Training nutzen
+**Den Torschützenkönig für den effizientesten Spieler halten.** Beides fällt selten zusammen. Wer am meisten wirft, wirft auch aus den schlechtesten Situationen – häufig, weil sonst niemand die Verantwortung nimmt. Ein Spieler kann gleichzeitig euer bester Torschütze und euer ineffizientester Werfer sein, und beides kann stimmen. Erst wenn du Torzahl und Quote nebeneinanderlegst, siehst du, ob du einen Vielwerfer oder einen Vollstrecker vor dir hast.
 
-Richtig eingesetzt wird die Wurfquote zum Steuerungsinstrument statt zur bloßen Statistik:
+**Einen Ausreißer für einen Trend halten.** Eine schlechte Quote gegen den Tabellenführer ist ein Spiel, kein Auftrag. Erst drei Spiele in dieselbe Richtung sind ein Trainingsthema.
 
-- Vergleiche Quoten **nach Position**, nicht Spieler gegen Spieler quer über alle Rollen.
-- Beobachte den **Verlauf über mehrere Spiele** – ein Ausreißer nach unten ist Zufall, ein Trend ist ein Trainingsauftrag.
-- Verbinde die Quote mit dem **Wurfbild**: Sinkt die Quote nur aus bestimmten Zonen, kennst du sofort das Übungsziel.
-- Sprich Zahlen **positiv** an. "Aus dem Rückraum bist du bei 58 % – lass uns die Sprungwürfe schärfen" motiviert mehr als reine Kritik.
+**Die Quote in der Kabine als Rangliste vorlesen.** Sobald Spieler wissen, dass die Quote öffentlich verglichen wird, hören die schwierigen Würfe auf. Du bekommst schönere Zahlen und weniger Tore. Sprich Quoten einzeln an, im Vergleich mit der eigenen Vorgeschichte des Spielers.
 
-## Wurfquote automatisch erfassen
+## Woran du im Spiel siehst, ob es sitzt
 
-Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe gehen am Spielfeldrand schnell unter. Eine [Handball-Statistik-App wie Statix](/) erfasst jeden Wurf mit einem Tap und berechnet Wurfquoten für jeden Spieler und jede Position automatisch, live und offline in der Halle. Am Ende siehst du nicht nur die Quote, sondern auch das passende Wurfbild – ohne eine einzige Zeile Excel. Wer lieber mit einer Tabelle startet, nimmt die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage) als Zwischenschritt. So wird aus der Zahl eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Wenn du an der Abschlussqualität gearbeitet hast, zeigt sich das nicht zuerst in der Gesamtquote, sondern hier:
+
+- **Die Quote aus neun Metern steigt, ohne dass die Wurfzahl von dort einbricht.** Wenn die Quote nur steigt, weil deine Rückraumspieler nicht mehr werfen, hast du nichts gewonnen – die Abschlüsse sind bloß woanders hingewandert.
+- **Der Abstand zwischen bester und schlechtester Positionsquote wird kleiner.** Das heißt, ihr erarbeitet euch die Abschlüsse aus mehr als einer Quelle und seid schwerer auszurechnen.
+- **Die Quote in den letzten zehn Minuten fällt weniger ab als früher.** Abschlussqualität unter Ermüdung ist der ehrlichste Test für eure Vorbereitung.
+- **Nach Zeitstrafen gegen euch bleibt die Quote stabil.** Wer in Unterzahl aus Verlegenheit wirft, sieht das sofort an einem Einbruch.
+
+Trag Tore und Würfe nach jedem Spiel in dieselbe Tabelle ein, getrennt nach Position und ohne Siebenmeter. Wenn dir das Mitschreiben am Spielfeldrand zu fehleranfällig ist – vor allem Fehlwürfe gehen im Eifer unter –, erfasst du dieselben Werte mit der [Handball-Statistik-App Statix](/) per Tap und bekommst Quote und Wurfbild direkt nebeneinander. Wer lieber mit einer Tabelle startet, nimmt die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage) als Zwischenschritt.`,
+  modules: [
+    {
+      kind: 'answerBox',
+      text: 'Die Wurfquote ist der Anteil der Torabschlüsse, die im Tor landen: Tore ÷ Würfe × 100. Als Wurf zählt jeder echte Abschluss inklusive Pfosten- und Lattentreffer, nicht aber ein technischer Fehler. Siebenmeter führst du getrennt, sonst schönt eine sichere Schützin die Quote der ganzen Mannschaft.',
+    },
+    {
+      after: 'Die Formel – und was überhaupt als Wurf zählt',
+      kind: 'formula',
+      label: 'So rechnest du',
+      formula: 'Wurfquote (%) = Tore ÷ Würfe × 100',
+      example: '7 Tore aus 12 Würfen ergeben 7 ÷ 12 × 100 = 58,3 %.',
+    },
+    {
+      after: 'Ein Spiel durchgerechnet',
+      kind: 'embed',
+      target: 'wurfquote-rechner',
+      caption: 'Deine Zahlen einsetzen',
+    },
+    {
+      after: 'Richtwerte nach Position und Spielklasse',
+      kind: 'benchmarkTable',
+      caption: 'Orientierung, kein Soll',
+      columns: ['Position / Situation', 'Typische Wurfquote', 'Ab wann du hinschaust'],
+      rows: [
+        ['Tempogegenstoß', '85–95 %', 'unter 80 % über mehrere Spiele'],
+        ['Siebenmeter', '75–85 %', 'unter 65 % bei mindestens 10 Versuchen'],
+        ['Kreis', '65–75 %', 'unter 60 % trotz freier Anspiele'],
+        ['Außen', '55–70 %', 'unter 50 % trotz guter Anspielsituationen'],
+        ['Rückraum, 9 Meter', '45–55 %', 'unter 40 % über drei Spiele'],
+      ],
+      note: 'Erfahrungswerte aus dem Amateur- und ambitionierten Ligabereich, keine erhobene Statistik. Alter, Spielklasse und Gegner verschieben die Spannen deutlich.',
+    },
+  ],
   faqs: [
     {
       question: 'Wie berechnet man die Wurfquote im Handball?',
@@ -102,7 +132,7 @@ Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe ge
     {
       question: 'Was ist eine gute Wurfquote im Handball?',
       answer:
-        'Das hängt von der Position ab. Am Kreis gelten 65–75 % als gut, aus dem Rückraum von neun Metern eher 45–55 %, beim Siebenmeter 75–85 % und beim Tempogegenstoß 85–95 %. Eine Team-Wurfquote über 60 % ist im Amateurbereich ein solider Wert.',
+        'Das hängt von der Position ab. Am Kreis gelten 65–75 % als guter Bereich, aus dem Rückraum von neun Metern eher 45–55 %, beim Siebenmeter 75–85 % und im Tempogegenstoß 85–95 %. Eine Team-Wurfquote über 60 % ist im Amateurbereich ein solider Wert. Es sind Orientierungswerte, keine Sollvorgaben.',
     },
     {
       question: 'Zählt ein Pfostentreffer als Fehlwurf?',
@@ -110,14 +140,26 @@ Von Hand mitzuschreiben ist mühsam und fehleranfällig – gerade Fehlwürfe ge
         'Ja. Ein Wurf an Pfosten oder Latte ist ein abgegebener Torabschluss ohne Tor und zählt damit als Wurf, aber nicht als Treffer – er senkt also die Wurfquote. Ein technischer Fehler ohne Torabschluss zählt dagegen gar nicht als Wurf.',
     },
     {
-      question: 'Warum sagt die Wurfquote allein nicht alles aus?',
+      question: 'Zählen Siebenmeter in die Wurfquote?',
       answer:
-        'Weil sie Wurfanzahl, Wurfposition und Chancenqualität ausblendet. 100 % aus einem Konter sind weniger wert als 55 % aus zwanzig schwierigen Rückraumwürfen. Betrachte die Quote deshalb immer zusammen mit der Anzahl der Abschlüsse und dem Wurfbild.',
+        'Rechnerisch kannst du sie mitzählen, für die Bewertung deines Angriffs solltest du es nicht. Siebenmeter haben eine deutlich höhere Trefferwahrscheinlichkeit als jeder Feldabschluss. Wer sie einrechnet, misst die Sicherheit der Schützin mit, nicht die Qualität der herausgespielten Chancen. Führe beide Quoten getrennt.',
+    },
+    {
+      question: 'Ab wie vielen Würfen ist eine Wurfquote aussagekräftig?',
+      answer:
+        'Für die Beurteilung eines einzelnen Spiels solltest du erst ab etwa fünf Abschlüssen überhaupt eine Quote nennen, für eine Aussage über die Saison eher ab dreißig. Darunter beschreibt die Zahl vor allem Zufall: 100 % aus zwei Würfen sagen nichts über die Abschlussstärke eines Spielers.',
+    },
+    {
+      question: 'Wie sprichst du eine schlechte Wurfquote im Team an?',
+      answer:
+        'Einzeln und im Vergleich mit der eigenen Vorgeschichte des Spielers, nicht als Rangliste vor der Mannschaft. Eine öffentlich verglichene Quote führt dazu, dass schwierige Würfe unterbleiben – die Zahlen werden schöner und ihr werft weniger Tore. Verknüpfe die Zahl mit einer konkreten Zone: "Aus dem linken Rückraum bist du bei 40 %, lass uns die Sprungwürfe über die kurze Ecke schärfen."',
     },
   ],
   relatedSlugs: [
     'handball-statistik-fuehren',
+    'handball-expected-goals-xg',
+    'handball-torwart-statistik',
     'handball-spielanalyse',
-    'handball-torwarttraining',
+    'handball-ballbesitz-tempo',
   ],
 };

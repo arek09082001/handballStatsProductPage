@@ -2,146 +2,146 @@ import type { Article } from '../../types';
 
 export const handballSpielanalyse: Article = {
   slug: 'handball-spielanalyse',
-  title: 'Spielanalyse im Handball: so wertest du Spiele richtig aus',
-  metaTitle: 'Spielanalyse im Handball: Spiele richtig auswerten',
+  title: 'Handball-Spielanalyse: vom Spielbericht zur Trainingsentscheidung',
+  metaTitle: 'Handball-Spielanalyse: so wertest du ein Spiel aus',
   metaDescription:
-    'Handball Spielanalyse: wie du Gegner analysierst, Spiele live beobachtest und danach strukturiert auswertest – mit Wurfbildern, Quoten und Phasenanalyse.',
+    'Handball-Spielanalyse für Trainer: welche Zahlen ein Spiel erklären, wie du es in Phasen zerlegst, welche Werte auffällig sind und wie daraus ein Trainingsplan wird.',
   keywords: [
     'handball spielanalyse',
-    'spielanalyse handball',
-    'handball gegneranalyse',
     'handball spiel auswerten',
-    'handball videoanalyse',
-    'handball scouting',
+    'handball gegneranalyse',
     'spielauswertung handball',
-    'gegneranalyse handball',
+    'handball phasenanalyse',
+    'handball analyse trainer',
+    'handball spielbericht auswerten',
   ],
   category: 'Kennzahlen & Analyse',
   archetype: 'kennzahl',
-  datePublished: '2026-06-25',
+  datePublished: '2026-06-10',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 6,
+  readingTimeMinutes: 8,
   excerpt:
-    'Gute Spielanalyse macht aus dem Bauchgefühl belastbare Entscheidungen. Hier erfährst du, wie du vor, während und nach dem Spiel systematisch auswertest – von der Gegneranalyse über Wurfbilder bis zur Phasenanalyse.',
-  imagePath: '/shotMaps.png',
-  imageAlt: 'Wurfbilder und Spielanalyse in der Statix Handball-App',
-  body: `Viele Trainerentscheidungen fallen aus dem Bauch heraus: Wer wirft den nächsten Siebenmeter, wann kommt die Auszeit, welche Abwehr stellst du auf? Spielanalyse ersetzt das Bauchgefühl nicht – sie macht es belastbar. Wer Spiele systematisch beobachtet und auswertet, trifft Entscheidungen auf Basis von Fakten statt auf Basis der Erinnerung. In diesem Ratgeber lernst du, wie du vor, während und nach dem Spiel richtig analysierst und aus den Erkenntnissen konkrete Trainingsinhalte machst.
+    'Ein Spiel zu analysieren heißt nicht, alles zu erfassen. Es heißt, die zwei Phasen zu finden, in denen das Spiel gekippt ist – und daraus eine Übung für Dienstag zu machen.',
+  imagePath: '/gameListOverview.png',
+  imageAlt: 'Spielübersicht mit Kennzahlen mehrerer Handballspiele in der Statix-App',
+  body: `Nach dem Abpfiff wissen alle, woran es lag. Der Torwart hat gehalten oder nicht, die Abwehr stand oder nicht, der Schiedsrichter war so oder so. Eine Spielanalyse hat genau eine Aufgabe: diese Erzählung zu prüfen. In den meisten Spielen war die entscheidende Phase kürzer und früher, als sie sich anfühlt – und die Zahl, die sie erklärt, steht nicht im Spielbericht.
 
-## Was ist Spielanalyse?
+## Was eine Spielanalyse leisten muss
 
-Spielanalyse ist die systematische Beobachtung eines Handballspiels, kombiniert mit der Erfassung von Daten. Statt dich hinterher an einzelne Szenen zu erinnern, sammelst du strukturiert Informationen – zu deiner eigenen Mannschaft und zum Gegner. Daraus entsteht ein objektives Bild von Stärken, Schwächen und Tendenzen.
+Eine Analyse ist keine Sammlung von Werten, sondern die Antwort auf drei Fragen:
 
-Dabei gliedert sich die Analyse in drei Phasen:
+1. **Wo ist das Spiel gekippt?** Fast jedes Handballspiel wird in zwei bis drei Abschnitten von je fünf bis acht Minuten entschieden. Diese Abschnitte zu finden, ist die halbe Arbeit.
+2. **Woran lag es in diesen Abschnitten?** Ballverluste, Abschlussqualität, Gegenstöße, Torhüterleistung – meist ist es genau eine Ursache, nicht fünf.
+3. **Was folgt daraus für die nächste Trainingswoche?** Eine Analyse ohne Übung am Dienstag ist ein Hobby.
 
-- **Vor dem Spiel:** Du bereitest dich auf den Gegner vor (Scouting) und legst einen Matchplan fest.
-- **Während des Spiels:** Du erfasst live, was passiert, und reagierst auf Entwicklungen.
-- **Nach dem Spiel:** Du wertest die Daten in Ruhe aus und ziehst Schlüsse fürs Training.
+Alles, was du erfasst, sollte auf eine dieser drei Fragen einzahlen. Werte, die keine der drei beantworten, kosten dich am Spielfeldrand Aufmerksamkeit und geben dir nichts zurück.
 
-Wichtig ist der Unterschied zwischen Beobachtung und Interpretation. Erst sammelst du neutrale Fakten (Tore, Würfe, Ballverluste, Positionen), dann deutest du sie. Wer beides vermischt, findet meist nur die Bestätigung für das, was er ohnehin schon vermutet hat.
+## Die Rechnung hinter dem Spielbericht
 
-## Vor dem Spiel: Gegneranalyse
+Der Spielbericht liefert dir Tore und Zeitstrafen. Was fehlt, ist die Bezugsgröße: Wie oft hattet ihr überhaupt den Ball? Ohne sie kannst du zwei Spiele nicht vergleichen, weil ein Spiel mit 60 Angriffen anders aussieht als eines mit 44.
 
-Die Gegneranalyse – auch Scouting genannt – beantwortet eine Frage: Worauf müssen wir uns einstellen? Es geht nicht darum, jede Einzelaktion des Gegners vorherzusagen, sondern seine Tendenzen zu erkennen. Diese Punkte solltest du dir vor dem Spiel ansehen:
+Angriffe zählst du nicht einzeln mit – du rechnest sie. Jeder Ballbesitz endet auf genau eine von drei Arten: mit einem Abschluss, mit einem technischen Fehler oder mit einem Siebenmeter. Die Summe ist die Zahl deiner Angriffe.
 
-- **Bevorzugte Angriffsmittel:** Läuft der Gegner viel über den Kreis, über Kreuzbewegungen im Rückraum oder über die Außenpositionen?
-- **Hauptschützen:** Wer wirft die meisten Tore, und aus welcher Position? Auf diese Spieler stellst du deine Abwehr besonders ein.
-- **Abwehrsystem:** Steht der Gegner offensiv (etwa 3:2:1) oder eher defensiv (6:0)? Danach richtest du deinen Angriff aus.
-- **Siebenmeterschützen:** Wer tritt an, und in welche Ecke geht der Ball meistens? Diese Info ist Gold wert für deinen Torwart.
-- **Tempospiel:** Sucht der Gegner den schnellen Gegenstoß, oder spielt er ein geduldiges Positionsspiel?
+Aus dieser einen Zahl folgen die drei Werte, die ein Spiel beschreiben: Angriffseffektivität (Tore ÷ Angriffe), Fehlerquote (technische Fehler ÷ Angriffe) und Tempoanteil (Tore nach Gegenstoß ÷ Tore gesamt).
 
-Entscheidend ist: Gegneranalyse fokussiert Tendenzen, keine Einzelaktionen. Ein einzelner Trickwurf sagt wenig aus, ein Muster über mehrere Spiele dagegen viel. Zwei, drei klare Erkenntnisse, die deine Mannschaft auch umsetzen kann, sind mehr wert als eine Materialschlacht an Details, die im Spiel niemand mehr abrufen kann.
+## Ein Spiel in vier Phasen zerlegt
 
-## Während des Spiels: live beobachten und reagieren
+Teile das Spiel in vier Viertel zu je 15 Minuten und schreibe nur die Tordifferenz je Viertel auf. Mehr braucht es für den ersten Durchgang nicht:
 
-Im Spiel hast du keine Zeit für Romane. Beschränke dich auf wenige, klar definierte Dinge, die du mitschreibst oder erfassen lässt:
+| Abschnitt | Tore wir | Tore Gegner | Differenz | Was auffiel |
+| --- | --- | --- | --- | --- |
+| 1.–15. | 8 | 7 | +1 | ausgeglichen, viele Abschlüsse aus dem Rückraum |
+| 16.–30. | 5 | 10 | **−5** | vier Ballverluste in Folge, drei Gegenstoßtore |
+| 31.–45. | 9 | 6 | +3 | nach Umstellung auf 5:1 stabiler |
+| 46.–60. | 6 | 7 | −1 | Kräfteverfall, zwei Zeitstrafen |
+| **Gesamt** | **28** | **30** | **−2** | |
 
-- Tore und Würfe je Spieler und Position – die Grundlage für Wurfquoten und Wurfbild
-- Ballverluste und ihre Ursachen (Fehlpass, Schrittfehler, Angriffsfoul)
-- Zeitstrafen und wer sie provoziert
-- auffällige Muster beim Gegner, die im Scouting nicht aufgetaucht sind
+Das Spiel wurde in einem einzigen Viertel verloren, und zwar nicht am Abschluss, sondern an vier Ballverlusten, aus denen der Gegner direkt Tempotore gemacht hat. Die Gesamtwurfquote von 62 % hätte dir das nie verraten – sie war in Viertel zwei fast genauso hoch wie in Viertel eins. Der Unterschied lag in der Zahl der Angriffe, die überhaupt bis zum Abschluss kamen.
 
-Aus diesen Daten werden konkrete Entscheidungen. Reißen kurz hintereinander drei Angriffe ab, ist das ein datenbasierter Anlass für eine Auszeit – nicht erst dann, wenn der Vorsprung schon weg ist. Trifft ein gegnerischer Rückraumspieler dreimal aus derselben Zone, weißt du genau, wo deine Abwehr nachjustieren muss.
+Genau das ist der Kern der Phasenanalyse: Ein Gesamtwert mittelt die entscheidende Phase weg. Erst die Zerlegung zeigt sie.
 
-Die Entscheidung, die ich am häufigsten aus den Live-Zahlen treffe, ist die Umstellung der Abwehr. Wenn sich die Gegentore in einer Zone häufen – meistens Distanzwürfe über eine bestimmte Seite –, steht das schwarz auf weiß da, lange bevor man es als Muster im Kopf hat. Dann rücken wir aus der 6:0 offensiver auf genau diesen Werfer heraus, statt bis zur Halbzeitpause zu warten.
+## Was normale Werte sind – und was auffällig ist
 
-Ein wichtiger Punkt ist das Momentum. Handball lebt von Läufen: Drei, vier Tore in Serie drehen ein ganzes Spiel. Wer live mitverfolgt, wann eine solche Phase kippt, kann früher eingreifen – mit einer Auszeit, einem Wechsel oder einer Systemumstellung – statt der Entwicklung hinterherzulaufen.
+Für den zweiten Durchgang brauchst du eine Vorstellung davon, welche Werte normal sind. Die folgenden Spannen sind Erfahrungswerte aus dem Amateurbereich und ersetzen nicht deine eigene Reihe: Sobald du acht eigene Spiele erfasst hast, ist dein Durchschnitt die bessere Referenz als jede fremde Tabelle.
 
-## Nach dem Spiel: strukturiert auswerten
+Vergleiche zuerst gegen dich selbst, dann gegen die Tabelle. Ein Wert, der für dein Team ungewöhnlich ist, ist ein Hinweis – auch wenn er im allgemeinen Rahmen liegt.
 
-Nach dem Schlusspfiff hast du Zeit, in die Tiefe zu gehen. Eine gute Auswertung ist strukturiert und immer gleich aufgebaut, damit du Spiele über die Saison hinweg vergleichen kannst. Diese Bausteine gehören dazu:
+## Wo Trainer sich beim Auswerten selbst täuschen
 
-- **Wurfbild:** die Verteilung aller Würfe und Tore auf dem Feld. Es zeigt auf einen Blick, aus welchen Zonen ihr erfolgreich abschließt und wo es hakt.
-- **Wurfquoten nach Position:** Kreis, Außen, Rückraum und Siebenmeter getrennt betrachtet – ein einzelner Gesamtwert verwischt zu viel.
-- **Ballverluste:** wie viele, und vor allem warum? Technische Fehler, Fehlpässe und Angriffsfouls verlangen unterschiedliche Trainingsantworten.
-- **Phasenanalyse:** das Spiel in Zeitabschnitten, zum Beispiel in 5-Minuten-Blöcken.
+**Die letzten fünf Minuten überbewerten.** Sie bleiben im Kopf, weil sie am Ende standen. Statistisch waren sie selten die Phase, in der das Spiel entschieden wurde.
 
-Gerade die Phasen- oder Abschnittsanalyse ist unterschätzt. Wenn du das Spiel in 5-Minuten-Blöcke zerlegst und Tore, Gegentore und Ballverluste je Block anschaust, werden Schwächephasen sichtbar. Vielleicht brichst du regelmäßig in den ersten fünf Minuten nach der Halbzeit ein oder verlierst in der Schlussphase die Struktur. Solche Muster erkennst du nur, wenn du den Spielverlauf in Abschnitten betrachtest – im nackten Endergebnis gehen sie unter.
+**Nur das eigene Team ansehen.** Ein Einbruch der eigenen Effektivität kann auch daran liegen, dass der Gegner umgestellt hat. Notiere Systemwechsel des Gegners mit Minutenangabe – das ist die billigste und wirksamste Ergänzung deiner Analyse.
 
-## Die wichtigsten Auswertungs-Kennzahlen
+**Den Torwart zur Erklärung machen.** Eine schwache Paradenquote ist häufig eine Folge, keine Ursache: Wenn die Abwehr freie Würfe aus sieben Metern zulässt, sieht jeder Torwart schlecht aus. Schau dir immer an, aus welchen Zonen geworfen wurde, bevor du die Torwartleistung bewertest.
 
-Du musst nicht alles messen. Eine Handvoll Kennzahlen trägt die meiste Aussage:
+**Aus einem Spiel eine Regel machen.** Ein Spiel ist eine Stichprobe von rund 50 Angriffen. Erst wenn dieselbe Auffälligkeit in drei Spielen auftaucht, ist sie ein Muster.
 
-- **Wurfquote (gesamt und nach Position):** Wie effizient schließt ihr ab?
-- **Ballverlustquote:** Anteil der Angriffe, die ohne Torabschluss enden.
-- **Tempogegenstoß-Tore:** Wie viel läuft über das erste und zweite Tempo?
-- **Siebenmeter-Ausbeute:** verwandelte gegen erhaltene Siebenmeter.
-- **Torwartquote:** Anteil der gehaltenen Bälle.
+**Alles auf einmal ändern wollen.** Wenn du nach der Analyse vier Trainingsschwerpunkte setzt, änderst du nichts. Nimm den größten Hebel aus der schwächsten Phase und arbeite zwei Wochen daran.
 
-Diese Kennzahlen sind dein Kompass, keine Abrechnung mit einzelnen Spielern. Tiefer steigen wir in den Ratgebern zu den [wichtigsten Handball-Kennzahlen](/ratgeber/handball-statistik-fuehren) und zur [Wurfquote](/ratgeber/wurfquote-berechnen) ein – hier reicht es, die paar Werte zu kennen, die eine Entscheidung tatsächlich verändern.
+## Woran du siehst, dass die Analyse ankommt
 
-## Videoanalyse sinnvoll kombinieren
+Eine Analyse wirkt nicht, wenn sie stimmt, sondern wenn sie sich im Spiel zeigt:
 
-Zahlen sagen dir, dass etwas passiert – Video zeigt dir, warum es passiert. Beides zusammen ist stark. Der typische Fehler: sich stundenlang vor die komplette Spielaufnahme zu setzen. Das kostet viel Zeit und bringt wenig.
+- **Die schwächste Phase des letzten Spiels ist im nächsten nicht mehr die schwächste.** Der direkteste Test, den es gibt.
+- **Die Differenz zwischen bestem und schlechtestem Viertel wird kleiner.** Konstanz ist im Amateurbereich der größere Hebel als Spitzenleistung.
+- **Deine Mannschaft erkennt die Phase selbst.** Wenn in der Auszeit jemand sagt "wir verlieren gerade drei Bälle hintereinander", hat die Analyse den Weg vom Zettel aufs Feld geschafft.
+- **Deine Ansprache am Dienstag dauert zwei Minuten.** Eine Zahl, eine Ursache, eine Übung – das ist das Format, das hängen bleibt.
 
-Besser ist der umgekehrte Weg. Erst schaust du in die Daten, dann suchst du gezielt die passenden Szenen im Video. Sinkt die Wurfquote aus dem linken Rückraum, schaust du dir genau diese Abschlüsse an – und siehst vielleicht, dass der Absprung stimmt, aber die Vorbereitung zu langsam läuft. So verbindest du Zahl und Bild, ohne dich in Material zu verlieren.
-
-## Von der Analyse ins Training
-
-Analyse ist nur so viel wert wie das, was du daraus machst. Der letzte und wichtigste Schritt: aus den Erkenntnissen konkrete Trainingsinhalte ableiten. Ein paar Beispiele, wie aus einer Zahl eine Übung wird:
-
-- Niedrige Wurfquote aus dem Rückraum → gezieltes Wurftraining gegen einen aktiven Block.
-- Viele Ballverluste im Positionsangriff → Fokus auf saubere Passwege und Timing.
-- Einbruch in der Schlussphase → Entscheidungstraining unter Ermüdung.
-- Gegner läuft viel über den Kreis → im Training die Abwehr-Kommunikation am Kreis schulen.
-
-Sprich die Erkenntnisse positiv und konkret an. "Aus dem Rückraum sind wir bei 42 Prozent, lass uns die Sprungwürfe schärfen" motiviert mehr als pauschale Kritik. So schließt sich der Kreis: Beobachtung, Auswertung, Training – und im nächsten Spiel prüfst du, ob die Maßnahme gewirkt hat.
-
-## Werkzeuge: Papier, Excel oder App
-
-Womit du analysierst, entscheidet über den Aufwand und die Qualität deiner Auswertung. Drei Wege sind üblich:
-
-| Methode | Aufwand | Live? | Auswertung |
-| --- | --- | --- | --- |
-| Papier / Zettel | niedrig | ja, aber unübersichtlich | mühsam von Hand |
-| Excel-Tabelle | mittel | kaum praktikabel | flexibel, aber viel Handarbeit |
-| Statistik-App | gering im Spiel | ja, mit einem Tap | automatisch: Quoten, Wurfbilder, Phasen |
-
-Genau hier setzt eine [Handball-Statistik-App für Trainer](/) wie **Statix** an. Du erfasst jeden Wurf, jedes Tor und jeden Ballverlust live mit einem Tap – und das offline, direkt in der Halle. Nach dem Schlusspfiff hast du Wurfbilder, Wurfquoten nach Position und eine Phasenanalyse in Zeitabschnitten, ohne eine einzige Zeile Excel. Eine KI-Analyse fasst die wichtigsten Muster für dich zusammen, sodass du dich auf die Entscheidungen konzentrieren kannst statt aufs Rechnen. Wenn du es ausprobieren willst: Unter [demo.statix-app.de](https://demo.statix-app.de) gibt es eine kostenlose Live-Demo, ganz ohne Account. Was die Nutzung danach kostet, steht in der [Preisübersicht](/preise). So wird aus reiner Spielbeobachtung eine echte Entscheidungsgrundlage für dein nächstes Training.`,
+Für den Anfang reicht ein Blatt Papier mit vier Zeilen für die Viertel. Wer die Phasen live sehen will, ohne nachzurechnen, erfasst die Ereignisse mit [Statix](/) per Tap und bekommt Torfolge, Effektivität und Wurfbilder direkt nebeneinander – auch offline in der Halle.`,
+  modules: [
+    {
+      kind: 'answerBox',
+      text: 'Eine Spielanalyse beantwortet drei Fragen: Wo ist das Spiel gekippt, woran lag es dort, und was folgt daraus fürs Training? Zerlege das Spiel dafür in vier Viertel und notiere je Viertel nur die Tordifferenz – die entscheidende Phase wird sofort sichtbar, während sie in jedem Gesamtwert verschwindet.',
+    },
+    {
+      after: 'Die Rechnung hinter dem Spielbericht',
+      kind: 'formula',
+      label: 'Die Bezugsgröße, die im Spielbericht fehlt',
+      formula: 'Angriffe = Abschlüsse + technische Fehler + Siebenmeter',
+      example:
+        '45 Abschlüsse, 12 technische Fehler und 5 Siebenmeter ergeben 62 Angriffe. Erst damit lassen sich zwei Spiele mit unterschiedlichem Tempo vergleichen.',
+    },
+    {
+      after: 'Was normale Werte sind – und was auffällig ist',
+      kind: 'benchmarkTable',
+      caption: 'Wann du genauer hinschaust',
+      columns: ['Kennzahl', 'Üblicher Bereich', 'Auffällig ab'],
+      rows: [
+        ['Angriffe je Spiel', '46–60', 'unter 44 oder über 64'],
+        ['Angriffseffektivität', '48–58 %', 'unter 45 %'],
+        ['Fehlerquote', '12–18 %', 'über 20 %'],
+        ['Tore nach Gegenstoß', '15–25 % der eigenen Tore', 'unter 10 %'],
+        ['Gegentore nach eigenem Ballverlust', '3–6 je Spiel', 'über 8'],
+      ],
+      note: 'Erfahrungswerte aus dem Amateurbereich, keine erhobene Statistik. Ab acht eigenen erfassten Spielen ist dein Mannschaftsdurchschnitt die bessere Referenz.',
+    },
+  ],
   faqs: [
     {
       question: 'Was gehört zu einer guten Handball-Spielanalyse?',
       answer:
-        'Eine gute Spielanalyse hat drei Phasen: die Gegneranalyse vor dem Spiel, das Live-Beobachten während des Spiels und die strukturierte Auswertung danach. Wichtig ist, erst neutrale Fakten wie Tore, Würfe und Ballverluste zu sammeln und sie dann zu deuten.',
-    },
-    {
-      question: 'Wie mache ich eine Gegneranalyse im Handball?',
-      answer:
-        'Schau dir die Tendenzen des Gegners an, nicht Einzelaktionen: bevorzugte Angriffsmittel, Hauptschützen und deren Wurfpositionen, das Abwehrsystem, die Siebenmeterschützen und das Tempospiel. Zwei bis drei klare Erkenntnisse, die dein Team umsetzen kann, sind mehr wert als endlose Details.',
+        'Drei Dinge: die Zerlegung des Spiels in Abschnitte, um die entscheidende Phase zu finden; eine Bezugsgröße für die Zahlen, also die Anzahl der Angriffe; und eine daraus abgeleitete Trainingsentscheidung. Eine Analyse ohne Konsequenz für die nächste Woche ist keine Analyse, sondern eine Statistik.',
     },
     {
       question: 'Was ist eine Phasenanalyse im Handball?',
       answer:
-        'Bei der Phasenanalyse zerlegst du das Spiel in Zeitabschnitte, zum Beispiel in 5-Minuten-Blöcke, und schaust dir Tore, Gegentore und Ballverluste je Block an. So werden Schwächephasen sichtbar, etwa ein regelmäßiger Einbruch direkt nach der Halbzeit, die im Endergebnis sonst untergehen.',
+        'Die Zerlegung eines Spiels in Abschnitte – üblicherweise vier Viertel zu 15 Minuten – mit getrennter Tordifferenz je Abschnitt. Weil fast jedes Spiel in zwei bis drei kurzen Phasen entschieden wird, macht erst diese Zerlegung sichtbar, wo etwas passiert ist. Gesamtwerte mitteln genau diese Phasen weg.',
     },
     {
-      question: 'Brauche ich eine App für die Spielanalyse oder reicht Papier?',
+      question: 'Wie mache ich eine Gegneranalyse im Handball?',
       answer:
-        'Papier und Excel funktionieren, kosten aber viel Handarbeit und liefern keine automatischen Wurfbilder oder Quoten. Eine Statistik-App wie Statix erfasst alles live mit einem Tap, rechnet Quoten und Wurfbilder automatisch aus und funktioniert offline in der Halle.',
+        'Beschränke dich auf drei Punkte: Welches Abwehrsystem spielt der Gegner und wann stellt er um, wer schließt bei ihm ab und aus welcher Zone, und wie schnell schaltet er nach Ballgewinn um. Diese drei Antworten passen auf eine halbe Seite und verändern deine Vorbereitung mehr als eine vollständige Erfassung.',
+    },
+    {
+      question: 'Brauche ich Video für eine Spielanalyse?',
+      answer:
+        'Nein. Video hilft beim Nachweisen, aber die entscheidende Arbeit ist das Finden der Phase – dafür reichen vier Zeilen auf Papier. Wenn Video vorhanden ist, nutze es gezielt für die eine identifizierte Phase, statt 60 Minuten durchzusehen.',
     },
   ],
   relatedSlugs: [
     'handball-statistik-fuehren',
+    'handball-ballbesitz-tempo',
     'wurfquote-berechnen',
-    'handball-abwehrsysteme',
+    'handball-timeout-nutzen',
   ],
 };

@@ -2,109 +2,225 @@ import type { Article } from '../../types';
 
 export const handballPasstrainingUebungen: Article = {
   slug: 'handball-passtraining-uebungen',
-  title: 'Passtraining im Handball: Übungen für sicheres Passspiel',
-  metaTitle: 'Passtraining Handball: Übungen für sicheres Passspiel',
+  title: 'Passtraining im Handball: Übungen, Fehlerbilder, Coaching-Punkte',
+  metaTitle: 'Passtraining im Handball: Übungen & Coaching-Punkte',
   metaDescription:
-    'Passtraining im Handball: die wichtigsten Passtechniken, typische Fehler und konkrete Passübungen für sicheres Passspiel, weniger Ballverluste und mehr Tempo.',
+    'Passtraining im Handball planen: eine Einheit als Zeitleiste, fünf Übungskarten mit Coaching-Punkten und Fehlerbildern, Einordnung in die Trainingswoche und Messgrößen.',
   keywords: [
     'passtraining handball',
-    'handball passen üben',
     'handball passübungen',
-    'handball passtechnik',
+    'handball passspiel verbessern',
     'sternpassen handball',
-    'passspiel handball',
-    'passtraining übungen handball',
+    'bodenpass handball',
+    'handball passtechnik',
+    'passübungen handballtraining',
   ],
   category: 'Technik vermitteln',
   archetype: 'rezept',
-  datePublished: '2026-04-14',
+  datePublished: '2026-06-16',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 4,
+  readingTimeMinutes: 7,
   excerpt:
-    'Sichere Pässe sind die Basis für jeden erfolgreichen Angriff. Hier findest du die wichtigsten Passtechniken, typische Fehler und konkrete Passübungen, mit denen du Ballverluste reduzierst und dein Passspiel sicherer machst.',
+    'Passübungen laufen in fast jeder Halle – aber meist als Beschäftigung, nicht als Ausbildung. Wie du eine Passeinheit so planst, dass sie im Spiel ankommt: Zeitleiste, fünf Übungskarten, Fehlerbilder, Messgrößen.',
   imagePath: '/heroImage.png',
-  imageAlt: 'Handballspieler beim Passtraining in der Halle',
-  body: `Ein Angriff im Handball ist immer nur so gut wie die Pässe, die ihn tragen. Jeder sichere Pass hält den Ball in Bewegung, bindet die Abwehr und schafft die Lücke für den Abschluss. Ein einziger unsauberer Pass dagegen kostet dich den Ball und im schlimmsten Fall den Gegenstoß, der daraus entsteht. Gutes Passspiel ist deshalb keine Kür, sondern die Grundlage für jeden erfolgreichen Angriff. In diesem Ratgeber bekommst du die wichtigsten Passtechniken, die häufigsten Fehler und konkrete Übungen für dein Training.
+  imageAlt: 'Handballmannschaft im Passtraining in der Halle',
+  body: `Passtraining hat ein Wahrnehmungsproblem: Es sieht immer gut aus. Zwölf Spieler, sechs Bälle, alles fliegt, niemand steht dumm herum. Ob dabei etwas gelernt wird, erkennst du erst im Spiel – und dort scheitert der Pass fast nie an der Technik, sondern an Timing, Blick und Anspielbereitschaft des Mitspielers.
 
-## Warum Passspiel so wichtig ist
+Deshalb ist die wichtigste Entscheidung beim Passtraining nicht, welche Übung du wählst, sondern **welche Bedingung** du hinzufügst. Ein Sternpassen ohne Gegner ist Aufwärmen. Dasselbe Sternpassen mit einem Störer in der Mitte ist Training.
 
-Der Ball ist im Handball immer schneller als jeder Spieler. Genau deshalb entscheidet das Passspiel über Tempo und Spielfluss. Wer sicher und schnell passt, verschiebt die Abwehr, bevor sie sich sortieren kann, und erspielt sich freie Wurfpositionen fast von allein.
+## Der Trainingsauftrag und ab welchem Alter er greift
 
-Sichere Pässe haben drei große Effekte:
+Vier Passarten reichen für den gesamten Amateurbereich: der Schlagwurfpass aus der Wurfauslage, der Druckpass aus dem Handgelenk, der Bodenpass und der Anspielpass an den Kreis. Alles Weitere – Rückhandpass, Nackenpass, Kempa-Anspiel – ist Kür und gehört frühestens in die B-Jugend, wenn die vier Grundformen unter Druck sitzen.
 
-- **Tempo:** Ein schneller Ball zwingt die Abwehr zum ständigen Verschieben. Kein Laufweg ist so schnell wie ein gut getimter Pass.
-- **Spielfluss:** Kommt der Ball fangbar und im richtigen Moment, bleibt der Angriff in Bewegung und der Rhythmus erhalten.
-- **Weniger Ballverluste:** Jeder technische Fehler beim Passen ist ein direkter Ballverlust und oft der Startschuss für den gegnerischen Gegenstoß.
+Die Altersstaffelung: In der E- und D-Jugend baust du die **Technik** auf, mit Partnerübungen und ohne Gegnerdruck. Ab der C-Jugend geht es um das **Timing** – wann kommt der Pass, nicht wie. Ab der B-Jugend passt du unter Gegnerdruck und mit Blickabwendung. Bei Erwachsenen ist der Schwerpunkt fast immer das Anspiel an den Kreis, weil dort die meisten Ballverluste entstehen.
 
-Gerade im Amateurbereich entscheidet nicht die spektakulärste Einzelaktion über Siege, sondern die Mannschaft, die den Ball sauber laufen lässt und sich wenige technische Fehler leistet.
+## Woran du den Fehler in der Halle erkennst
 
-## Die wichtigsten Passtechniken
+- **Der Pass kommt zu spät.** Der Mitspieler war frei und ist es beim Ankommen des Balls nicht mehr. Erkennbar daran, dass der Empfänger den Ball im Stand statt im Lauf bekommt.
+- **Der Pass kommt zu hoch.** Ein Ball über Kopfhöhe kostet den Empfänger eine Zehntelsekunde und macht jeden Direktabschluss unmöglich. Häufigste Ursache: Der Passgeber wirft aus dem Arm statt aus dem Handgelenk.
+- **Der Passgeber schaut sein Ziel an.** Für die Abwehr die einfachste Vorlage, die es gibt. Sichtbar daran, dass der Verteidiger den Weg des Balls antizipiert, bevor er geworfen wurde.
+- **Das Kreisanspiel geht auf die falsche Seite.** Der Kreisläufer bekommt den Ball auf der Seite, auf der sein Gegenspieler steht. Das ist kein Fangfehler, das ist ein Passfehler.
+- **Niemand bietet sich an.** Der Ballführende steht drei Sekunden mit erhobenem Arm. Ein Passproblem, das keine Passübung löst – hier brauchst du Spielformen.
 
-Es gibt nicht den einen richtigen Pass. Welche Technik passt, hängt von Distanz, Gegnerdruck und Spielsituation ab. Diese vier solltest du im Training abdecken:
+## Die Einheit im Ablauf
 
-- **Schlagwurfpass (Standardpass):** Der wichtigste Pass im Handball. Er läuft über dieselbe Bewegung wie der Schlagwurf: Ball hinter den Kopf, Ellbogen hoch, Abdruck aus dem Handgelenk. Der Ball erreicht den Mitspieler auf Brusthöhe und ist damit optimal fangbar. Einsatz: als sicherer Standard über kurze und mittlere Distanzen.
-- **Handgelenkspass:** Ein kurzer, schneller Pass fast nur aus dem Handgelenk, ohne große Ausholbewegung. Er ist für die Abwehr schwer zu lesen und ideal, um auf engem Raum blitzschnell abzuspielen. Einsatz: im schnellen Zusammenspiel, etwa mit dem Kreisläufer.
-- **Druckpass:** Der Ball wird mit einer kurzen Druckbewegung nach vorne gedrückt, ein- oder beidhändig, ohne Ausholen. Er ist präzise und schnell auf kurze Distanz. Einsatz: im engen Nahbereich, wenn keine Zeit zum Ausholen bleibt.
-- **Bodenpass (Aufsetzer):** Der Ball wird gezielt vor dem Mitspieler aufgesetzt und springt ihm in die Hände. Weil er unter den Armen der Abwehr durchgeht, ist er das Mittel gegen enge Deckung und der klassische Weg, den Kreisläufer zu bedienen. Einsatz: gegen tief stehende, dichte Abwehrreihen und bei Anspielen an den Kreis.
+Ausgelegt für 90 Minuten ab der C-Jugend. Der Anteil ohne Gegner nimmt nach hinten stetig ab – das ist das Prinzip, nicht die Reihenfolge der Übungen.
 
-## Typische Fehler beim Passen
+## Fünf Übungen, die im Spiel ankommen
 
-Die meisten Ballverluste haben immer dieselben Ursachen. Wenn du sie kennst, kannst du im Training gezielt gegensteuern:
+Die Übungen sind nach steigender Bedingung sortiert. Wähle zwei bis drei je Einheit und coache sie, statt alle fünf abzuarbeiten.
 
-- **Zu hart oder ungenau:** Ein Pass, der zu scharf oder neben den Mitspieler kommt, ist kaum zu fangen. Ziel ist immer ein fangbarer Ball auf Brusthöhe, nicht das maximale Tempo.
-- **Falsches Timing:** Der beste Pass nützt nichts, wenn er zu früh oder zu spät kommt. Pass und Laufweg des Mitspielers müssen zusammenpassen.
-- **Ball nicht führbar:** Wer den Ball zu weit vom Körper oder ohne Kontrolle führt, kann nicht schnell und variabel abspielen. Eine saubere Ballführung ist die Voraussetzung für jeden guten Pass.
-- **Der Blick verrät den Pass:** Wer sein Ziel fixiert, zeigt der Abwehr genau, wohin der Ball geht. Übe, den Raum mit dem peripheren Blick zu lesen und auch mal gegen die Blickrichtung zu passen.
+## Wo die Einheit in deiner Trainingswoche steht
 
-## Passübungen für das Training
+Passtraining ist energetisch günstig und lässt sich fast überall einbauen – die Frage ist eher, womit du es kombinierst. Drei Regeln:
 
-Passspiel lernt man nur durch Wiederholung, am besten unter steigendem Druck. Baue diese Übungen stufenweise auf, vom ruhigen Partnerpassen bis zum Passen gegen echten Gegnerdruck:
+**Passtechnik gehört an den Anfang.** Neue Bewegungsaufgaben brauchen einen frischen Kopf. Wenn du das Kreisanspiel neu aufbaust, dann in Minute 20, nicht in Minute 70.
 
-- **Partnerpassen:** Zwei Spieler, fester Abstand, saubere Technik. Hier geht es um die Grundform: fangbarer Ball auf Brusthöhe, richtige Wurf- und Fangbewegung. Steigere Distanz und Tempo langsam und wechsle bewusst die Passtechniken durch.
-- **Sternpassen:** Der Klassiker im Passtraining. Mehrere Spieler stehen im Stern oder Kreis, der Ball läuft nach einem festen Muster, der Passgeber folgt seinem Pass und wechselt die Position. Das schult Passgenauigkeit, Timing und Orientierung in der Bewegung. Erhöhe die Schwierigkeit mit einem zweiten Ball.
-- **Passen in der Bewegung:** Zwei bis drei Spieler laufen parallel über das Feld und passen sich im Laufen zu. So trainierst du den Pass auf den vorlaufenden Mitspieler, die Grundlage für jedes Tempospiel.
-- **Passen unter Gegnerdruck:** Setze einen passiven oder halbaktiven Verteidiger zwischen die Passpartner. Jetzt musst du Passwege finden, den Bodenpass einsetzen und Finten nutzen, um den Ball trotzdem sauber durchzubringen.
-- **Passen ins Tempospiel:** Kombiniere Passen mit dem Gegenstoß: langer erster Pass von Torwart oder Abwehrspieler, dann schnelles Zuspiel auf den durchlaufenden Mitspieler bis zum Abschluss. Hier zählt Präzision bei hohem Tempo.
+**Passen unter Druck gehört ans Ende.** Die Spielform mit Störer wirkt genau dann, wenn die Beine schwer sind – das ist die Situation, in der im Spiel die Fehler passieren.
 
-## Passen im Tempospiel und unter Druck
+**Ein Schwerpunkt pro Woche, nicht pro Einheit.** Wenn du drei Wochen am Kreisanspiel arbeitest, siehst du eine Veränderung. Wenn du jede Woche eine andere Passart in den Mittelpunkt stellst, siehst du gar nichts.
 
-Im ruhigen Training gelingt fast jeder Pass. Der Unterschied entsteht im Spiel, wenn Gegner, Tempo und Müdigkeit dazukommen. Entscheidend ist dann nicht nur die Technik, sondern die Entscheidungsschnelligkeit: Der Kopf muss schon vor dem Pass wissen, wohin der Ball geht.
+In der Vorbereitung kannst du zwei Einheiten pro Woche mit Passschwerpunkt fahren. In der Wettkampfphase reicht ein Block von 20 Minuten pro Woche plus tägliche zehn Minuten im Aufwärmen.
 
-Gute Passspieler lesen die Abwehr, bevor sie den Ball überhaupt bekommen. Sie erkennen früh, welcher Mitspieler frei wird, und spielen den Ball im richtigen Moment, nicht zu früh und nicht zu spät. Diese Entscheidungsschnelligkeit trainierst du am besten in Übungen mit echtem Gegnerdruck und mehreren Anspielstationen, nicht im isolierten Passen ohne Gegner.
+## Was du danach am Spiel abliest
 
-## Beispiel-Übungen
+Passfehler tauchen im Spielbericht nicht auf, deshalb musst du sie selbst zählen. Drei Kategorien reichen:
 
-Diese fünf Übungen decken die wichtigsten Stufen ab, von der Grundtechnik bis zum Pass unter Druck:
+**Fehlpass ohne Gegnereinwirkung.** Der reine Technik- und Timingfehler. Diese Zahl sollte als erstes fallen.
 
-| Übung | Ziel | Organisation |
-| --- | --- | --- |
-| Partnerpassen | Grundtechnik, fangbarer Ball | 2 Spieler, 3–5 m Abstand, feste Passtechnik |
-| Sternpassen | Genauigkeit und Timing in Bewegung | 5–6 Spieler im Stern, dem eigenen Pass folgen |
-| Parallelpassen | Pass auf den vorlaufenden Mitspieler | 2–3 Spieler laufen längs und passen im Tempo |
-| Pass gegen Verteidiger | Passwege finden, Bodenpass nutzen | 2 Angreifer, 1 halbaktiver Verteidiger dazwischen |
-| Tempogegenstoß | Präzision bei hohem Tempo | Langer Pass, dann Zuspiel auf durchlaufenden Spieler |
+**Ballverlust beim Kreisanspiel.** Führe sie getrennt, weil sie die schwierigste und wertvollste Passsituation abbildet. Im Amateurbereich ist ein bis zwei pro Spiel normal, vier und mehr sind ein klarer Trainingsauftrag.
 
-Wichtig bei allen Übungen: Qualität vor Quantität. Ein sauber gefangener und gut getimter Pass ist mehr wert als zehn hektische Bälle, die der Mitspieler kaum kontrollieren kann.`,
+**Angriffe ohne Abschluss.** Die Sammelgröße. Setze sie ins Verhältnis zu den Angriffen; über 20 % ist zu hoch, und Passfehler sind fast immer der größte Einzelposten darin.
+
+Der ehrlichste Test ist ein Vergleich innerhalb des Spiels: Wie viele Fehlpässe in der ersten, wie viele in der zweiten Halbzeit? Steigt die Zahl deutlich, hast du kein Technikproblem, sondern ein Konzentrations- oder Belastungsproblem – und die Lösung liegt dann nicht im Passtraining.`,
+  modules: [
+    {
+      after: 'Die Einheit im Ablauf',
+      kind: 'sessionTimeline',
+      caption: '90 Minuten mit Passschwerpunkt',
+      blocks: [
+        { minutes: 10, label: 'Einlaufen mit Ball', note: 'Paarweise, lockere Zuspiele in Bewegung.' },
+        {
+          minutes: 15,
+          label: 'Passtechnik ohne Gegner',
+          note: 'Übung 1 und 2 – Druckpass und Bodenpass sauber aufbauen.',
+        },
+        {
+          minutes: 20,
+          label: 'Timing in Bewegung',
+          note: 'Übung 3 – Passen in den Lauf, mit Coaching zum Abspielzeitpunkt.',
+        },
+        {
+          minutes: 20,
+          label: 'Kreisanspiel gegen Abwehr',
+          note: 'Übung 4, zuerst halbaktiv, dann aktiv.',
+        },
+        {
+          minutes: 20,
+          label: 'Spielform mit Störer',
+          note: 'Übung 5 – Passen unter Druck bei müden Beinen.',
+        },
+        { minutes: 5, label: 'Abschluss', note: 'Eine Rückmeldung zum Fehlerbild des Tages.' },
+      ],
+    },
+    {
+      after: 'Fünf Übungen, die im Spiel ankommen',
+      kind: 'exercise',
+      name: '1 · Druckpass auf kurze Distanz',
+      meta: '7 Min. · ab D-Jugend',
+      setup: 'Paare mit drei Metern Abstand, ein Ball, schnelle Zuspiele aus dem Handgelenk.',
+      organisation:
+        'Zwei Minuten beidhändig, zwei Minuten nur schwache Hand, zwei Minuten mit Ansage der Passseite durch den Trainer.',
+      coachingPoints: [
+        'Der Pass kommt aus dem Handgelenk, der Ellenbogen bleibt fast ruhig.',
+        'Ballhöhe zwischen Brust und Kinn des Empfängers – nie über Kopfhöhe.',
+        'Der Empfänger hat die Hände schon oben, bevor der Ball kommt.',
+      ],
+      commonError:
+        'Der Pass wird aus dem ganzen Arm geworfen. Er wird dadurch langsamer und für die Abwehr lesbar.',
+      variation: 'Ein dritter Spieler ruft während des Passens Zahlen, die genannt werden müssen.',
+    },
+    {
+      after: 'Fünf Übungen, die im Spiel ankommen',
+      kind: 'exercise',
+      name: '2 · Bodenpass am Verteidiger vorbei',
+      meta: '6 Min. · ab D-Jugend',
+      setup:
+        'Drei Spieler in einer Reihe, der mittlere steht als passiver Verteidiger mit erhobenen Armen. Der Ball muss per Bodenpass an ihm vorbei.',
+      organisation:
+        'Nach jeweils zehn Pässen rotiert der Verteidiger. Abstand allmählich verkürzen.',
+      coachingPoints: [
+        'Der Aufsetzpunkt liegt etwa zwei Drittel der Strecke beim Empfänger, nicht in der Mitte.',
+        'Der Ball wird flach und hart gespielt, kein hoher Bogen zum Boden.',
+        'Der Passgeber bleibt in der Wurfauslage – der Bodenpass darf nicht angekündigt werden.',
+      ],
+      commonError:
+        'Der Ball setzt zu früh auf und springt dem Empfänger in die Beine. Im Spiel ist das der Ballverlust am Kreis.',
+      variation: 'Der Verteidiger darf einen Schritt zur Seite machen und aktiv stören.',
+    },
+    {
+      after: 'Fünf Übungen, die im Spiel ankommen',
+      kind: 'exercise',
+      name: '3 · Passen in den freien Raum',
+      meta: '10 Min. · ab C-Jugend',
+      setup:
+        'Zwei Spieler laufen parallel, ein dritter startet aus der Tiefe. Der Ball wird nicht zum Spieler, sondern vor ihn gespielt.',
+      organisation:
+        'Gruppen zu drei, im Wechsel über die ganze Hallenbreite. Nach jedem Durchgang Positionswechsel.',
+      coachingPoints: [
+        'Der Pass geht dorthin, wo der Mitspieler sein wird – nicht dorthin, wo er ist.',
+        'Der Empfänger fängt im Lauf und behält den Rhythmus.',
+        'Der Passgeber entscheidet früh: Ein Pass, den er sich überlegt, kommt zu spät.',
+      ],
+      commonError:
+        'Der Pass wird auf den Spieler gespielt, der dann stehen bleibt. Der Tempovorteil, den der Lauf erzeugt hat, ist damit weg.',
+      variation:
+        'Der Trainer gibt per Zuruf vor, welcher der drei den Abschluss macht – erst nach dem zweiten Pass.',
+    },
+    {
+      after: 'Fünf Übungen, die im Spiel ankommen',
+      kind: 'exercise',
+      name: '4 · Kreisanspiel gegen halbaktive Abwehr',
+      meta: '15 Min. · ab C-Jugend',
+      setup:
+        'Drei Rückraumspieler, ein Kreisläufer, drei Innenverteidiger. Der Kreisläufer arbeitet an der Linie, das Anspiel muss auf die vom Gegenspieler abgewandte Seite kommen.',
+      organisation:
+        'Zunächst dürfen die Verteidiger nur die Arme einsetzen, nach fünf Minuten voller Körpereinsatz. Jedes gelungene Anspiel mit Abschluss zählt einen Punkt.',
+      coachingPoints: [
+        'Der Passgeber sieht, auf welcher Seite der Gegenspieler des Kreisläufers steht – die andere Seite ist das Ziel.',
+        'Der Kreisläufer zeigt die freie Hand, statt zu rufen.',
+        'Bodenpass ist die Standardlösung, wenn die Arme des Verteidigers oben sind.',
+      ],
+      commonError:
+        'Das Anspiel kommt, während der Kreisläufer noch in der Drehung ist. Der Ball ist technisch gut und trotzdem verloren – das Timing entscheidet, nicht die Technik.',
+      variation:
+        'Der Kreisläufer darf sich seine Anspielseite vorher nicht aussuchen, sondern reagiert auf das Verschieben der Abwehr.',
+    },
+    {
+      after: 'Fünf Übungen, die im Spiel ankommen',
+      kind: 'exercise',
+      name: '5 · Fünf gegen zwei im Quadrat',
+      meta: '12 Min. · ab C-Jugend',
+      setup:
+        'Quadrat von 10 × 10 Metern, fünf Angreifer außen, zwei Verteidiger innen. Prellen ist verboten.',
+      organisation:
+        'Nach jedem Ballgewinn wechselt der Verteidiger mit dem Spieler, der den Fehler gemacht hat. Zwei Durchgänge à fünf Minuten.',
+      coachingPoints: [
+        'Der Ballführende hat immer zwei Anspielstationen – wer keine hat, hat sich falsch gestellt.',
+        'Blick weg vom Ziel, bevor der Pass kommt.',
+        'Der erste Pass nach dem Fangen ist der beste – jede Verzögerung schließt die Lücke.',
+      ],
+      commonError:
+        'Die Spieler stehen still und warten. Ohne Bewegung ohne Ball gibt es keine Anspielstation, egal wie gut gepasst wird.',
+      variation: 'Ein dritter Verteidiger kommt dazu – ab da wird es ein echtes Entscheidungstraining.',
+    },
+  ],
   faqs: [
     {
       question: 'Welche Passtechniken sind im Handball am wichtigsten?',
       answer:
-        'Der wichtigste Pass ist der Schlagwurfpass (Standardpass), der über die Schlagwurfbewegung läuft und den Ball auf Brusthöhe fangbar macht. Dazu kommen der Handgelenkspass für schnelles Spiel auf engem Raum, der Druckpass im Nahbereich und der Bodenpass (Aufsetzer) gegen enge Deckung und für Anspiele an den Kreis.',
+        'Vier reichen für den gesamten Amateurbereich: der Schlagwurfpass aus der Wurfauslage, der Druckpass aus dem Handgelenk für kurze Distanzen, der Bodenpass als Standardlösung gegen erhobene Arme und das Anspiel an den Kreis. Rückhand- und Nackenpass sind Kür und gehören frühestens in die B-Jugend.',
     },
     {
-      question: 'Wie verbessere ich mein Passspiel im Handball?',
+      question: 'Wie baue ich eine Passeinheit sinnvoll auf?',
       answer:
-        'Durch regelmäßiges Üben unter steigendem Druck. Beginne mit Partner- und Sternpassen für die Technik, gehe dann zum Passen in der Bewegung und schließlich zum Passen gegen echten Gegnerdruck über. Wichtig ist immer ein fangbarer, gut getimter Ball auf Brusthöhe statt maximaler Wurfhärte.',
+        'Von wenig Bedingung zu viel: erst Technik ohne Gegner, dann Timing in Bewegung, dann Passen gegen halbaktive und schließlich gegen aktive Verteidiger. Die Übung mit dem höchsten Druck gehört ans Ende der Einheit, weil im Spiel die meisten Passfehler bei müden Beinen entstehen.',
     },
     {
       question: 'Wann setzt man den Bodenpass im Handball ein?',
       answer:
-        'Der Bodenpass (Aufsetzer) ist besonders nützlich gegen eine tief stehende, enge Deckung und beim Anspiel an den Kreisläufer. Weil der Ball vor dem Mitspieler aufspringt, geht er unter den Armen der Abwehr durch und ist schwer abzufangen.',
+        'Immer dann, wenn zwischen Passgeber und Empfänger erhobene Arme stehen – klassisch beim Anspiel an den Kreis und beim Pass durch eine offensive Abwehr. Der Aufsetzpunkt liegt bei etwa zwei Dritteln der Strecke, der Ball wird flach und hart gespielt und nicht angekündigt.',
+    },
+    {
+      question: 'Warum verliert meine Mannschaft trotz gutem Passtraining Bälle?',
+      answer:
+        'Weil Passfehler im Spiel selten Technikfehler sind. Die häufigeren Ursachen sind Timing (der Pass kommt, wenn der Mitspieler nicht mehr frei ist) und fehlende Anspielbereitschaft (niemand bietet sich an). Beides löst keine Partnerübung, sondern nur eine Spielform mit Gegnerdruck.',
     },
   ],
   relatedSlugs: [
-    'handball-kempa-trick',
-    'handball-training-planen',
-    'handball-wurftraining-sprungwurf',
+    'handball-ballhandling-verbessern',
+    'handball-spielformen-training',
+    'handball-kreislaeufer-spielen',
+    'handball-angriffssysteme-einsteiger',
   ],
 };

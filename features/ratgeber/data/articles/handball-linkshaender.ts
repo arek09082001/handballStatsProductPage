@@ -2,102 +2,146 @@ import type { Article } from '../../types';
 
 export const handballLinkshaender: Article = {
   slug: 'handball-linkshaender',
-  title: 'Linkshänder im Handball: warum sie so gefragt sind und wie sie brillieren',
-  metaTitle: 'Linkshänder im Handball: Vorteile, Positionen & Tipps',
+  title: 'Linkshänder im Kader richtig einsetzen',
+  metaTitle: 'Linkshänder im Handball richtig einsetzen',
   metaDescription:
-    'Linkshänder im Handball: Warum Linkshänder auf Rechtsaußen und im rechten Rückraum so wertvoll sind, welche Vorteile der Wurfwinkel bringt und wie sie ihr Spiel entwickeln.',
+    'Linkshänder im Handballkader einsetzen: welche Ausgangslage du hast, nach welchen Kriterien du entscheidest, eine Entscheidungsmatrix und was zu tun ist, wenn keiner da ist.',
   keywords: [
     'linkshänder handball',
+    'linkshänder position handball',
     'rechtsaußen linkshänder',
-    'rechter rückraum handball',
-    'linkshänder wurfwinkel',
-    'handball position linkshänder',
-    'linkshänder vorteil handball',
-    'seltene linkshänder handball',
+    'handball rückraum rechts',
+    'linkshänder ausbilden handball',
+    'kein linkshänder handball',
+    'handball kader planen',
   ],
   category: 'Taktik & Systeme',
   archetype: 'entscheidung',
-  datePublished: '2026-07-18',
+  datePublished: '2026-07-25',
   dateModified: '2026-08-07',
-  readingTimeMinutes: 3,
+  readingTimeMinutes: 7,
   excerpt:
-    'Linkshänder sind im Handball heiß begehrt – auf der rechten Seite verwandeln sie Winkel, die Rechtshänder nur mühsam erreichen. Warum das so ist und wie Linkshänder ihre Stärken ausbauen.',
-  imagePath: '/shotMaps.png',
-  imageAlt: 'Linkshänder-Handballspieler wirft von der rechten Angriffsseite aufs Tor',
-  body: `In kaum einer Sportart sind Linkshänder so gefragt wie im Handball. Jeder Trainer kennt das Problem: Die rechte Angriffsseite bleibt schwach besetzt, weil geeignete Linkshänder fehlen. Wer mit links wirft, hat auf dieser Seite einen natürlichen Vorteil, den kein noch so gut trainierter Rechtshänder ganz aufholt. Das macht Linkshänder auf dem Transfermarkt und im Jugendbereich zu gesuchten Spielern.
+    'Linkshänder sind selten und werden deshalb fast immer falsch eingesetzt – oft rechts außen, obwohl sie im Rückraum mehr wert wären. Kriterien, Matrix und Empfehlungen für vier typische Kaderlagen.',
+  imagePath: '/mannschaft-spielerwerte.jpg',
+  imageAlt: 'Kaderübersicht mit Positionen und Spielerwerten in der Statix-App',
+  body: `Etwa jeder zehnte Mensch ist Linkshänder, im Handball sind sie damit strukturell knapp: Zwei Positionen der rechten Angriffsseite – Rückraum rechts und Rechtsaußen – profitieren erheblich von einer linken Wurfhand, und beide müssen aus demselben kleinen Pool besetzt werden.
 
-## Warum die rechte Seite nach Linkshändern verlangt
+Die Folge ist ein Reflex, den fast jeder Trainer kennt: Der einzige Linkshänder im Kader wird auf Rechtsaußen gestellt, weil "da braucht man einen". Das ist in vielen Fällen die schlechtere Entscheidung – und sie fällt meist, ohne dass jemand die Alternative geprüft hätte.
 
-Der Grund ist der **Wurfwinkel**. Wer von rechtsaußen oder aus dem rechten Rückraum wirft, hat mit der linken Wurfhand ein deutlich offeneres Tor vor sich: Der Körper ist zum Tor hin geöffnet, der Arm holt frei aus, und der Ball läuft in einer natürlichen Linie aufs Tor.
+## Vier Ausgangslagen, in denen du entscheidest
 
-Ein Rechtshänder auf der rechten Seite muss dagegen entweder über den Körper werfen, den Winkel mit Sprüngen ins Feld hinein verbessern oder aus ungünstiger Position abschließen. Genau umgekehrt gilt: Linkshänder auf der linken Seite hätten dieselben Nachteile wie Rechtshänder rechts.
+**Lage A: kein Linkshänder im Kader.** Die häufigste Situation im Amateur- und Jugendbereich. Die rechte Angriffsseite wird von Rechtshändern besetzt, mit allen Nachteilen im Abschlusswinkel.
 
-| Position | Ideale Wurfhand | Warum |
-| --- | --- | --- |
-| Linksaußen | rechts | offener Winkel nach innen |
-| Rechtsaußen | links | offener Winkel nach innen |
-| Rechter Rückraum | links | freie Auslage, gute Wurfachse |
-| Linker Rückraum | rechts | freie Auslage, gute Wurfachse |
+**Lage B: genau ein Linkshänder.** Die schwierigste Lage, weil du eine echte Entscheidung treffen musst. Rückraum rechts oder Rechtsaußen – beides geht nicht.
 
-## Die typischen Positionen für Linkshänder
+**Lage C: zwei oder mehr Linkshänder.** Beide Positionen können besetzt werden. Jetzt geht es um die Frage, wer wohin passt – und ob du einen von beiden im Rückraum halten willst, auch wenn er dort als Rechtsaußen mehr Tore machen würde.
 
-Aus dieser Logik ergeben sich die klassischen Linkshänder-Positionen:
+**Lage D: ein Linkshänder in der Jugend, noch ohne feste Position.** Hier entscheidest du nicht über eine Saison, sondern über eine Ausbildungsrichtung. Diese Entscheidung wiegt am schwersten und wird am leichtesten getroffen.
 
-- **Rechtsaußen:** spitze Winkel, Tempogegenstöße, Eins-gegen-eins auf der rechten Außenbahn.
-- **Rechter Rückraum (Halbrechts):** Distanzwurf, Durchbruch und das Zusammenspiel mit Kreis und Außen auf der rechten Seite.
+## Die Kriterien und was sie wiegen
 
-Auf der Mitte oder am Kreis ist die Wurfhand weniger entscheidend, dort zählen andere Fähigkeiten. Aber die rechte Angriffsseite ist die natürliche Heimat des Linkshänders.
+Vier Kriterien reichen, aber sie wiegen nicht gleich viel:
 
-## Die Vorteile eines Linkshänders für die Mannschaft
+**Wurfkraft und Körpergröße (hohes Gewicht).** Rückraum rechts verlangt einen Abschluss von neun Metern gegen Block. Fehlt die Wurfhärte, wird die Position zur Sackgasse – dann ist Rechtsaußen die deutlich sinnvollere Wahl.
 
-- **Ausgewogener Angriff:** Erst mit einem Linkshänder rechts ist beide Seiten gleich gefährlich. Das zwingt die Abwehr, symmetrisch zu verteidigen.
-- **Bessere Anspielwinkel:** Der Linkshänder kann den Kreisläufer aus dem rechten Rückraum optimal bedienen.
-- **Überraschung:** Weil Gegner seltener gegen Linkshänder verteidigen, sind sie weniger auf deren Wurf- und Fintenbilder eingestellt.
+**Spielübersicht und Anspielqualität (hohes Gewicht).** Der rechte Rückraumspieler ist ein Anspielstation für Kreis und Außen, nicht nur ein Werfer. Wer nur abschließen kann, verschenkt auf dieser Position die Hälfte ihres Werts.
 
-## Herausforderungen für Linkshänder
+**Schnelligkeit und Sprungkraft (mittleres Gewicht).** Rechtsaußen lebt vom Tempogegenstoß und vom Abschluss aus spitzem Winkel. Beides ist ohne Antritt und Sprung schwer.
 
-So gefragt sie sind – ein Selbstläufer ist es nicht. Typische Herausforderungen:
+**Abwehrverwendbarkeit (mittleres Gewicht).** Ein Rückraumspieler, der auch innen verteidigen kann, hält deinen Kader zusammen. Ein reiner Außenspieler bindet einen Wechsel.
 
-1. **Wenige Vorbilder und Übungspartner:** Vieles muss man sich selbst erarbeiten, weil im Training Rechtshänder-Bewegungen dominieren.
-2. **Gespiegelte Erklärungen:** Trainerhinweise sind oft für Rechtshänder gedacht und müssen übertragen werden.
-3. **Erwartungsdruck:** Weil Linkshänder rar sind, landen sie früh auf der rechten Seite – auch wenn ihre Stärken woanders liegen.
+Was **kein** Kriterium sein sollte: dass gerade niemand anders für Rechtsaußen da ist. Diese Notlage ist ein Wechselproblem, keine Positionsfrage – und sie kostet dich unter Umständen die stärkste Angriffsposition, die du hättest haben können.
 
-Gute Trainer denken das mit: Sie erklären Bewegungen bewusst gespiegelt und geben Linkshändern eigene Anspielstationen im Training.
+## Die Optionen im Vergleich
 
-## Entwicklungstipps für Linkshänder
+Lies die Matrix von links nach rechts: Du suchst die Zeile, die zum Profil deines Spielers passt, nicht die mit den meisten Häkchen.
 
-- **Den Winkel bewusst nutzen:** aus dem rechten Rückraum den Sprungwurf ins lange Eck und den Durchbruch nach innen sauber trennen.
-- **Beidseitigkeit trainieren:** Auch ein Linkshänder profitiert davon, mit rechts prellen und passen zu können – das macht unberechenbar.
-- **Zusammenspiel üben:** feste Kombinationen mit Kreisläufer und Rechtsaußen einstudieren.
-- **Siebenmeter:** Linkshänder bringen oft eine ungewohnte Wurfrichtung mit – ein Vorteil vom Punkt.
+## Empfehlung je Ausgangslage
 
-## Und wenn kein Linkshänder da ist?
+**Lage A – kein Linkshänder:** Besetze Rechtsaußen mit deinem schnellsten Rechtshänder und trainiere gezielt den Abschluss aus dem spitzen Winkel über die kurze Ecke, weil die lange für ihn kaum erreichbar ist. Im Rückraum rechts stellst du einen Rechtshänder auf, der stark im Durchbruch ist – seine Stärke muss der Zug zur Mitte werden, nicht der Distanzwurf. Und akzeptiere, dass die rechte Seite eure schwächere bleibt: Verlagere Spielzüge bewusst nach links, statt gegen die Struktur zu arbeiten.
 
-Nicht jede Mannschaft hat einen. Dann helfen zwei Wege: einen wurfstarken Rechtshänder rechts einbauen, der den Winkel durch Sprünge ins Feld verbessert, oder das Angriffsspiel bewusst über die starke Seite lenken. Ideal bleibt aber der Linkshänder rechts – deshalb lohnt es sich, im Nachwuchs früh auf linkshändige Talente zu achten und sie zu fördern.
+**Lage B – genau ein Linkshänder:** Prüfe zuerst den Rückraum. Wenn Wurfkraft und Übersicht reichen, gehört er dorthin – dort verändert er euer Angriffsspiel, auf Außen erhöht er nur eure Abschlussquote in einer Zone. Nur wenn die Wurfhärte für neun Meter erkennbar nicht reicht, ist Rechtsaußen die richtige Wahl. In der Jugend gilt zusätzlich: Wurfkraft entwickelt sich noch, Übersicht auch – entscheide nicht mit zwölf, was mit siebzehn gilt.
 
-## Stärken der rechten Seite messbar machen
+**Lage C – zwei oder mehr:** Besetze beide Positionen und halte einen dritten Linkshänder bewusst im Rückraum, auch wenn er dort weniger Tore macht. Kadertiefe auf der rechten Seite ist der Vorteil, den fast keine Amateurmannschaft hat – ihn für ein paar Tore mehr aufzugeben, lohnt sich selten.
 
-Ob eure rechte Angriffsseite wirklich gefährlich ist, verrät die Wurfverteilung – und die Quote je Seite, die du dir [schnell ausrechnen](/wurfquote-rechner) kannst. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), siehst du im Wurfbild, aus welchen Zonen eure Tore fallen und wie stark die rechte Seite im Vergleich zur linken ist. So erkennst du, ob ein Linkshänder seine Winkelvorteile ausspielt – oder wo die Mannschaft einseitig wird.`,
+**Lage D – Jugend, offene Ausbildung:** Bilde bis zur B-Jugend beide Positionen aus, mit Schwerpunkt auf dem Rückraum. Ein Rückraumspieler kann später jederzeit auf Außen wechseln, umgekehrt fast nie – die Wurfausbildung aus der Distanz lässt sich mit siebzehn nicht mehr nachholen. Das ist die wichtigste Regel dieses Artikels.
+
+## Dein nächster Schritt
+
+Nimm dir deinen Kader vor und beantworte drei Fragen, bevor die nächste Saison beginnt:
+
+1. **Wer wirft links?** Auch die, die es nie gemacht haben – frag konkret nach, im Zweifel im Training testen. Beidhändige Spieler und solche mit einer starken linken Hand tauchen so öfter auf, als man denkt.
+2. **Wie viele Abschlüsse kommen bei euch von rechts?** Zähl es über drei Spiele. Wenn der Anteil deutlich unter dem der linken Seite liegt, ist eure rechte Seite kein Positions-, sondern ein Strukturproblem.
+3. **Was misst du in der Jugend?** Wenn du einen Linkshänder in der D-Jugend hast, notiere ab jetzt seinen Anteil an Rückraumabschlüssen. Diese Zahl entscheidet in vier Jahren darüber, ob ihr einen Rückraumspieler habt oder einen weiteren Außenspieler.
+
+Für die Auswertung reicht ein Blatt: Abschlüsse je Position über drei Spiele, getrennt nach links, Mitte und rechts. Wer die Zonen ohnehin in einer [Handball-Statistik-App](/) erfasst, sieht die Schieflage der Seiten direkt im Wurfbild.`,
+  modules: [
+    {
+      after: 'Die Optionen im Vergleich',
+      kind: 'decisionMatrix',
+      caption: 'Wohin mit dem Linkshänder?',
+      criteria: [
+        'Starker Distanzwurf',
+        'Gute Spielübersicht',
+        'Hoher Antritt, gute Sprungkraft',
+        'Wenig Wurfhärte',
+      ],
+      options: [
+        {
+          name: 'Rückraum rechts',
+          scores: ['gut', 'gut', 'geht', 'schlecht'],
+          verdict: 'Erste Wahl, wenn Wurfhärte und Übersicht reichen',
+        },
+        {
+          name: 'Rechtsaußen',
+          scores: ['geht', 'geht', 'gut', 'gut'],
+          verdict: 'Richtig, wenn die Distanz fehlt und der Antritt stimmt',
+        },
+        {
+          name: 'Beides im Wechsel',
+          scores: ['geht', 'geht', 'geht', 'geht'],
+          verdict: 'Nur in der Jugend sinnvoll, im Erwachsenenbereich halbherzig',
+        },
+      ],
+    },
+    {
+      after: 'Vier Ausgangslagen, in denen du entscheidest',
+      kind: 'formation',
+      system: 'angriff',
+      caption:
+        'Die rechte Angriffsseite: Rückraum rechts und Rechtsaußen werfen beide aus einem Winkel, der einem Linkshänder das Tor öffnet und einem Rechtshänder den Arm verschließt.',
+    },
+  ],
   faqs: [
     {
       question: 'Warum sind Linkshänder im Handball so gefragt?',
       answer:
-        'Weil sie auf der rechten Angriffsseite – Rechtsaußen und rechter Rückraum – einen natürlichen Wurfwinkelvorteil haben. Der Körper ist zum Tor geöffnet, der Arm holt frei aus. Rechtshänder müssen auf dieser Seite über den Körper werfen oder den Winkel mühsam verbessern. Geeignete Linkshänder sind selten und deshalb sehr begehrt.',
+        'Weil zwei Angriffspositionen – Rückraum rechts und Rechtsaußen – aus einem Winkel abschließen, in dem die linke Wurfhand deutlich mehr Tor sieht. Ein Rechtshänder muss dort über den Körper werfen und verliert Winkel und Wurfhärte. Da nur etwa jeder zehnte Mensch Linkshänder ist, sind beide Positionen strukturell schwer zu besetzen.',
     },
     {
-      question: 'Auf welchen Positionen spielen Linkshänder im Handball?',
+      question: 'Soll mein einziger Linkshänder auf Rechtsaußen oder in den Rückraum?',
       answer:
-        'Klassisch auf Rechtsaußen und im rechten Rückraum (Halbrechts). Dort nutzen sie den offenen Wurfwinkel optimal aus. Auf der Mitte oder am Kreis ist die Wurfhand weniger entscheidend, dort zählen andere Fähigkeiten stärker.',
+        'Prüfe zuerst den Rückraum. Dort verändert er euer Angriffsspiel, weil er als Anspielstation für Kreis und Außen wirkt und aus der Distanz abschließt. Auf Rechtsaußen erhöht er nur die Quote in einer Zone. Nur wenn die Wurfhärte für neun Meter erkennbar nicht reicht, ist Rechtsaußen die richtige Wahl.',
+    },
+    {
+      question: 'Was tun, wenn die Mannschaft keinen Linkshänder hat?',
+      answer:
+        'Rechtsaußen bekommt den schnellsten Rechtshänder, mit Schwerpunkt auf dem Abschluss über die kurze Ecke – die lange ist für ihn kaum erreichbar. Im Rückraum rechts stellst du einen durchbruchstarken Rechtshänder auf, dessen Stärke der Zug zur Mitte ist. Und verlagere Spielzüge bewusst nach links, statt gegen die Struktur zu arbeiten.',
+    },
+    {
+      question: 'Sollte man einen jungen Linkshänder früh auf eine Position festlegen?',
+      answer:
+        'Nein. Bilde bis zur B-Jugend beide Positionen aus, mit Schwerpunkt auf dem Rückraum. Ein Rückraumspieler kann später jederzeit auf Außen wechseln, umgekehrt fast nie – die Wurfausbildung aus der Distanz lässt sich mit siebzehn nicht mehr nachholen.',
     },
     {
       question: 'Welche Nachteile haben Linkshänder im Training?',
       answer:
-        'Sie haben oft wenige Vorbilder und Übungspartner, weil Rechtshänder-Bewegungen im Training dominieren. Trainerhinweise sind meist für Rechtshänder gedacht und müssen gespiegelt übertragen werden. Zudem landen sie durch ihre Seltenheit früh fest auf der rechten Seite, auch wenn ihre Stärken woanders lägen.',
+        'Fast alle Standardübungen sind für Rechtshänder gedacht: Anlaufwege, Kreuzbewegungen und Anspielrichtungen laufen spiegelverkehrt. Als Trainer solltest du Übungen bewusst gespiegelt aufbauen, statt den Linkshänder die Rechtshänder-Variante mitmachen zu lassen – sonst trainiert er in jeder Einheit die für ihn falsche Bewegung.',
     },
   ],
   relatedSlugs: [
-    'handball-aussenspieler-tipps',
-    'handball-rueckraumspieler-tipps',
     'handball-positionen-erklaert',
+    'handball-rueckraumspieler-tipps',
+    'handball-angriffssysteme-einsteiger',
   ],
 };
