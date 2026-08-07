@@ -1,6 +1,7 @@
 import { CalendarDays, Clock, PenLine } from 'lucide-react';
 import { BoardKicker, CourtDiagram, Grain } from '@/features/landing-page/components/tactic';
 import ArticleBreadcrumbs, { type Breadcrumb } from './article-breadcrumbs';
+import ArchetypeBadge from './archetype-badge';
 import { ARTICLE_AUTHOR } from '../data/author';
 import type { Article } from '../types';
 
@@ -39,8 +40,11 @@ export default function ArticleHeader({
       <div className='relative mx-auto max-w-3xl px-6 py-12 sm:px-8 sm:py-16 md:py-20'>
         <ArticleBreadcrumbs items={breadcrumbs} onDark />
 
-        <div className='mt-7'>
+        <div className='mt-7 flex flex-wrap items-center gap-x-4 gap-y-3'>
           <BoardKicker color='chalk'>{eyebrow}</BoardKicker>
+          {article.archetype ? (
+            <ArchetypeBadge archetype={article.archetype} onDark />
+          ) : null}
         </div>
 
         <h1 className='mt-4 font-display text-[2rem] font-extrabold leading-[1.08] tracking-[-0.03em] text-chalk sm:text-[2.5rem] lg:text-[2.9rem] lg:leading-[1.05]'>

@@ -2,155 +2,162 @@ import type { Article } from '../../types';
 
 export const handballAbwehrsysteme: Article = {
   slug: 'handball-abwehrsysteme',
-  title: 'Abwehrsysteme im Handball: 6:0, 5:1 und 3:2:1 im Vergleich',
-  metaTitle: 'Abwehrsysteme im Handball: 6:0, 5:1 & 3:2:1',
+  title: 'Abwehrsysteme im Handball: die Ordnungen im Überblick',
+  metaTitle: 'Abwehrsysteme im Handball: 6:0, 5:1, 3:2:1 im Überblick',
   metaDescription:
-    'Abwehrsysteme im Handball verständlich erklärt: 6:0, 5:1 und 3:2:1 im Vergleich – mit Stärken, Schwächen und Tipps, welche Abwehr zu deinem Team passt.',
+    'Abwehrsysteme im Handball erklärt: was die Zahlen bedeuten, wie die Ordnungen aufgebaut sind und wie du zwischen ihnen umstellst – 6:0, 5:1, 3:2:1, Mann.',
   keywords: [
-    'handball abwehrsysteme',
-    'handball abwehr 6:0',
-    'handball abwehr 5:1',
-    'handball abwehr 3:2:1',
-    'offensive abwehr handball',
-    'welche abwehr handball',
-    'abwehr handball systeme',
+    'abwehrsysteme handball',
+    'handball abwehr systeme',
+    'was bedeutet 6:0 handball',
+    'handball defensive überblick',
+    'handball abwehr erklärt',
+    'handball abwehrformation',
+    'abwehr umstellen handball',
   ],
-  category: 'Taktik & Abwehr',
-  datePublished: '2026-06-15',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 9,
+  category: 'Taktik & Systeme',
+  archetype: 'system',
+  datePublished: '2026-06-13',
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 8,
   excerpt:
-    'Die Abwehr gewinnt Spiele – aber welches System passt zu deiner Mannschaft? Wir vergleichen 6:0, 5:1 und 3:2:1 mit Stärken, Schwächen und klaren Empfehlungen.',
-  heroEyebrow: 'Taktik & Abwehr',
+    'Was die Zahlen bedeuten, welches Prinzip hinter jeder Ordnung steckt und wie sie zusammenhängen – der Überblick, bevor du dich für eines entscheidest.',
   imagePath: '/shotMaps.png',
-  imageAlt: 'Wurfbilder und Gegneranalyse in der Statix Handball-App',
-  body: `Die Abwehr gewinnt Spiele. Dieser alte Handballsatz stimmt öfter, als es die Torschützenlisten vermuten lassen: Wer hinten kompakt steht, übersteht auch schwache Angriffsphasen und kommt über einfache Ballgewinne zu Tempogegenstößen. Die entscheidende Frage ist nur, welches Abwehrsystem zu deinem Gegner und zu deiner eigenen Mannschaft passt. In diesem Ratgeber vergleichen wir die drei wichtigsten Systeme – 6:0, 5:1 und 3:2:1 – und ordnen ein, wann sich welche Variante lohnt.
+  imageAlt: 'Abwehrformation einer Handballmannschaft auf dem Spielfeld',
+  body: `Abwehrsysteme werden mit zwei oder drei Zahlen benannt, und die Logik dahinter ist einfach: Sie zählen die Spieler je Reihe, von hinten nach vorn. Eine 6:0 hat sechs Spieler am Kreis und keinen davor. Eine 5:1 hat fünf hinten und einen vorgezogen. Eine 3:2:1 hat drei Reihen mit drei, zwei und einem Spieler.
 
-## Was bedeuten die Zahlen?
+Je weiter vorn Spieler stehen, desto mehr Druck erzeugt das System – und desto mehr Raum entsteht dahinter. Das ist der einzige Grundsatz, den du brauchst, um jedes Abwehrsystem einzuordnen.
 
-Die Zahlenkombinationen wie 6:0 oder 3:2:1 beschreiben, wie deine Abwehrspieler zwischen Torraumlinie und Angriff gestaffelt sind. Gelesen wird von der Torraumlinie nach vorne: Die erste Zahl steht für die Spieler, die direkt am Kreis auf der 6-Meter-Linie verteidigen, jede weitere Zahl für eine vorgezogene Reihe Richtung Ballführenden.
+Dieser Artikel gibt den Überblick. Welches System zu deinem Kader passt, klärt die [Entscheidungshilfe zum Abwehrsystem](/ratgeber/handball-abwehrsystem-auswaehlen).
 
-Ein Beispiel: Bei der 6:0 stehen alle sechs Feldspieler auf einer Linie am Kreis, es gibt keine vorgezogene Reihe. Bei der 5:1 verteidigen fünf Spieler am Kreis und einer ist vorgezogen. Bei der 3:2:1 verteilen sich die sechs Spieler auf drei Reihen: drei hinten, zwei auf halber Distanz, einer als Spitze ganz vorne.
+## Die Grundordnungen im Überblick
 
-Je mehr Reihen ein System hat, desto offensiver ist es – und desto mehr Laufarbeit und Abstimmung verlangt es. Merke dir die Grundregel: Die Summe der Zahlen ergibt immer sechs, weil du mit sechs Feldspielern verteidigst.
+**6:0** – alle sechs am Torraumkreis, auf einem Bogen. Das Standardsystem im Amateurbereich, schnell zu vermitteln, kompakt vor dem Tor. Ausführlich unter [6:0-Abwehr](/ratgeber/handball-6-0-abwehr).
 
-Wichtig ist dabei: Die Zahlen beschreiben nur die Grundordnung, nicht die Qualität deiner Abwehr. Eine gut eingespielte 6:0 verteidigt besser als eine chaotische 3:2:1. Das System liefert den Rahmen – gefüllt wird er durch Zweikampfverhalten, Kommunikation und diszipliniertes Verschieben zur Ballseite.
+**5:1** – fünf am Kreis, einer auf neun bis zehn Metern. Die naheliegendste Weiterentwicklung der 6:0, weil sich nur eine Position ändert. Ausführlich unter [5:1-Abwehr](/ratgeber/handball-5-1-abwehr).
 
-## Die 6:0-Abwehr
+**4:2** – vier am Kreis, zwei vorgezogen. Stärkerer Druck auf beide Halbpositionen, dafür deutlich größere Räume hinten. Selten als Grundsystem, häufiger in Unterzahlsituationen oder gegen zwei starke Halbschützen.
 
-Die 6:0 ist das Fundament fast jeder Abwehrausbildung. Alle sechs Spieler stehen nebeneinander auf einer Linie direkt vor dem eigenen Torraum und verschieben gemeinsam zur Ballseite. Es gibt keinen vorgezogenen Spieler, die Abwehr bleibt bewusst tief und kompakt.
+**3:2:1** – drei gestaffelte Reihen. Die offensivste geordnete Form, hoher Ertrag und hoher Trainingsaufwand. Ausführlich unter [3:2:1-Abwehr](/ratgeber/handball-3-2-1-abwehr).
 
-**Stärken:**
+**Manndeckung** – keine Raumordnung, sondern sechs Einzelduelle. Phasenmittel im Erwachsenenbereich, Ausbildungssystem im Nachwuchs. Ausführlich unter [Manndeckung](/ratgeber/handball-manndeckung).
 
-- Sehr kompakt in der Mitte, der Weg zum Kreis ist zugestellt.
-- Stark gegen Kreisläufer, Durchbrüche und Nahwürfe.
-- Einfach zu lernen und zu organisieren – ideal für junge oder neu zusammengestellte Teams.
-- Wenig Räume hinter der Abwehr, weil niemand weit vorgezogen ist.
+## Aufgaben je Position – die drei Rollen
 
-**Schwächen:**
+Unabhängig vom System gibt es nur drei Abwehrrollen, und sie tauchen in jeder Ordnung auf:
 
-- Anfällig gegen einen wurfgewaltigen Rückraum aus neun Metern.
-- Wenig Druck auf den Ballführenden, gute Werfer bekommen Zeit und Raum.
-- Passive Grundhaltung: Du wartest eher ab, statt den Angriff aktiv zu stören.
+**Innenverteidiger.** Sichern den Kreisläufer, stellen den Block, geben die Ansagen. Sie brauchen Körpergröße und Kontaktbereitschaft. In der 6:0 sind es zwei, in der 5:1 einer, in der 3:2:1 drei – ihre Aufgabe bleibt dieselbe.
 
-**Wann nutzen:** Die 6:0 lohnt sich gegen Gegner mit gefährlichem Kreis- und Durchbruchspiel, gegen wurfschwache Rückraumreihen und immer dann, wenn deine Mannschaft eine stabile, einfache Grundordnung braucht.
+**Halbverteidiger.** Verteidigen die Rückraumspieler im Zweikampf und schließen die Naht zur Mitte. Die beweglichste Rolle und in jedem System die entscheidende: Ein Halbverteidiger, der zu weit herausrückt, öffnet die Naht zum Innenblock – der häufigste Gegentorweg überhaupt.
 
-## Die 5:1-Abwehr
+**Außenverteidiger.** Verteidigen den Außenspieler, schieben zur Mitte mit und leiten den Gegenstoß ein. Ihre Beinarbeit bestimmt die Breite der ganzen Abwehr.
 
-Bei der 5:1 ziehst du einen Abwehrspieler aus der Kette nach vorne – meist auf die Mitte, um den gegnerischen Spielmacher zu stören. Die restlichen fünf Spieler verteidigen weiter tief am Kreis. Der vorgezogene Abwehrspieler, die Spitze, attackiert den Rückraum-Mittespieler, unterbindet Anspiele und stört den Spielaufbau.
+Wer diese drei Rollen kennt, kann jedes System lesen: Verschiebt sich ein Spieler nach vorn, muss eine der drei Rollen seine Aufgabe mit übernehmen.
 
-**Stärken:**
+## Das gemeinsame Bewegungsprinzip
 
-- Nimmt den zentralen Rückraumspieler und damit oft den Kopf des Angriffs aus dem Spiel.
-- Stört den Spielfluss und das Timing des Aufbaus.
-- Guter Kompromiss zwischen kompakter 6:0 und offensiven Systemen.
+Alle Raumsysteme folgen derselben Logik, und sie lässt sich in drei Sätzen zusammenfassen:
 
-**Schwächen:**
+**Die Abwehr bewegt sich als Block.** Geht der Ball zur Seite, verschieben alle mit – auch der ballferne Außenverteidiger. Wer stehen bleibt, öffnet zwei Pässe später eine Lücke.
 
-- An den Nahtstellen neben der Spitze entstehen Räume, die gut trainierte Angreifer bespielen.
-- Verlangt einen lauf- und zweikampfstarken Spieler auf der vorgezogenen Position.
-- Wird die Spitze überspielt, steht die Abwehr kurzzeitig in Unterzahl.
+**Verschoben wird mit dem Pass, nicht danach.** Die Bewegung beginnt, wenn der Ball die Hand des Passgebers verlässt.
 
-**Wann nutzen:** Die 5:1 ist die richtige Wahl, wenn der Gegner über einen dominanten Rückraum-Mittespieler kommt oder wenn du den Aufbau frühzeitig stören willst, ohne die Abwehr komplett zu öffnen.
+**Jedes Herausrücken erzeugt einen Raum, den jemand schließen muss.** Je offensiver das System, desto häufiger passiert das – und desto mehr Ansagen sind nötig.
 
-## Die 3:2:1-Abwehr
+Der dritte Punkt erklärt, warum offensive Systeme so viel Trainingszeit brauchen: Nicht das Attackieren ist schwer, sondern das Nachrücken.
 
-Die 3:2:1 ist das offensivste der drei Standardsysteme. Drei Spieler verteidigen am Kreis, zwei stehen auf halber Distanz bei etwa sieben bis acht Metern, einer bildet als Spitze die vorderste Reihe. Ziel ist es, den wurfstarken Rückraum früh unter Druck zu setzen und Würfe schon vor dem Absprung zu verhindern.
+## Gegen welchen Gegner welches System
 
-**Stärken:**
+Die Systemwahl folgt dem Angriffsstil des Gegners – aber nur innerhalb dessen, was deine Mannschaft beherrscht.
 
-- Hoher Druck auf den Rückraum, Distanzwürfe werden früh gestört.
-- Provoziert Fehler und erzeugt Ballgewinne für schnelle Gegenstöße.
-- Zwingt den Gegner aus der Komfortzone und diktiert das Tempo.
+Gegen einen Gegner mit **starken Distanzschützen** brauchst du Druck von vorn: 5:1 oder 3:2:1.
 
-**Schwächen:**
+Gegen einen Gegner, der über den **Kreis und die Nahdistanz** kommt, brauchst du Kompaktheit: 6:0.
 
-- Läuferisch und konditionell anspruchsvoll, die Abstimmung muss sitzen.
-- Öffnet Räume am Kreis und in der Tiefe – ein cleverer Kreisläufer wird gefährlich.
-- Anfällig gegen schnelles Tempo- und Passspiel, das die vorgezogenen Spieler ausspielt.
+Gegen einen Gegner mit **zwei Kreisläufern** brauchst du drei Innenverteidiger: 6:0 oder 3:2:1, aber keine 5:1.
 
-**Wann nutzen:** Die 3:2:1 passt gegen wurfstarke, aber langsam aufbauende Gegner, in Phasen, in denen du einen Rückstand aufholen und Ballgewinne erzwingen musst – und wenn deine Spieler die nötige Lauf- und Abwehrqualität mitbringen.
+Gegen einen Gegner, der über die **Außen** angreift, hilft kein offensives System – dort geht es um die Beinarbeit deiner Außenverteidiger.
 
-## Weitere Systeme kurz
+## Stärken und Schwächen gegenübergestellt
 
-Neben den drei Klassikern gibt es Varianten, die situativ Sinn ergeben:
+Die Tabelle unten zeigt die Kernunterschiede. Wichtiger als jede Zeile darin ist aber ein Punkt, der oft untergeht: **Ein System, das sitzt, schlägt zwei, die halb sitzen.** Die meisten Amateurmannschaften verbessern ihre Abwehr stärker durch Blockarbeit und Ansagen im bestehenden System als durch eine Umstellung.
 
-- **3:3:** Zwei Reihen zu je drei Spielern, offensiver als die 6:0, aber stabiler als die 3:2:1 – ein guter Zwischenschritt.
-- **4:2:** Vier Spieler am Kreis, zwei vorgezogen. Setzt beide Rückraum-Außen unter Druck, öffnet dafür die Mitte.
-- **Offensive Abwehr und Manndeckung (1:5 oder komplett):** Ein oder mehrere Spieler decken einen Gegner eng über das ganze Feld. Sehr laufintensiv und anfällig für Tempogegenstöße, aber in der Schlussphase oder gegen einen überragenden Einzelspieler ein starkes Mittel.
+## Die Umstellung über drei Einheiten
 
-## Vergleich auf einen Blick
+Der Ablauf ist für jedes System derselbe:
 
-| System | Charakter | Stärke | Schwäche | Geeignet gegen |
-| --- | --- | --- | --- | --- |
-| 6:0 | defensiv, kompakt | Kreis & Nahwurf | starker Fernwurf | Kreis- und Durchbruchspiel |
-| 5:1 | ausgewogen | stört die Mitte | Nahtstellen neben der Spitze | dominante Rückraum-Mitte |
-| 3:2:1 | offensiv, aggressiv | Druck & Ballgewinne | Kreis, Tempospiel | wurfstarken, langsamen Rückraum |
-| 3:3 | leicht offensiv | flexibel | Abstimmung nötig | variable Angriffe |
-| Manndeckung | sehr offensiv | Einzelspieler stoppen | Tempogegenstoß | überragende Einzelspieler |
+**Einheit 1 – Stehen.** Die neue Ordnung ohne Ball und ohne Gegner. Positionen anlaufen, Abstände festlegen, gemeinsam verschieben. Wirkt langweilig, spart vier Wochen.
 
-## Welches System für welche Mannschaft?
+**Einheit 2 – Bewegen.** Mit Ball, ohne Abschluss. Die Angreifer spielen den Ball von außen nach außen, die Abwehr verschiebt. Danach mit Kreisläufer, der die Seite wechselt – hier werden die Ansagen eingeführt.
 
-Das beste Abwehrsystem gibt es nicht – es gibt nur das passende. Drei Leitplanken helfen dir bei der Wahl.
+**Einheit 3 – Entscheiden.** Mit Abschluss und Zweikampf. Erst hier wird gecoacht, was falsch entschieden wurde.
 
-Im Nachwuchs steht die Ausbildung vor dem Ergebnis. Viele Landesverbände schreiben in ihren Ausbildungskonzepten bewusst Manndeckung und offensive Abwehrformen vor, bevor Kinder eine tiefe 6:0 lernen. Der Grund: Offensiv zu verteidigen schult Beinarbeit, Zweikampf und Antizipation – Fähigkeiten, die später in jedem System gebraucht werden. Erst danach folgen die kompakte 6:0 und die formationsgebundenen Systeme.
+Der häufigste Fehler ist, mit Einheit 3 zu beginnen. Eine Abwehr, die die Ordnung nicht kennt, kämpft einzeln – und genau das sieht dann nach einem Systemproblem aus.
 
-Im Erwachsenen- und Leistungsbereich zählt Variabilität. Starke Teams beherrschen mehrere Systeme und wechseln situativ – etwa von der 6:0 in die 5:1, sobald ein Rückraumschütze heiß läuft. Wer nur ein System kann, ist für den Gegner leicht auszurechnen.
+## Kennzahlen zur Kontrolle
 
-Und schließlich entscheidet dein Personal. Eine 3:2:1 ohne lauffreudige, zweikampfstarke Spieler wird zur Einladung, eine 6:0 mit passivem Innenblock lädt jeden Fernwerfer ein. Wähle das System, das zu den Stärken deiner Spieler passt – nicht das, das im Lehrbuch am schönsten aussieht.
+Unabhängig vom System brauchst du dieselben vier Zahlen. Notiere zu jedem Gegentor die Zone:
 
-Ein praktischer Tipp: Führe ein Grundsystem sauber ein, bevor du ein zweites ergänzt. Ein System, das die Mannschaft blind beherrscht, ist im Spiel mehr wert als drei halb verstandene Varianten. Sicherheit in der Grundordnung ist die Basis, auf der du später situativ wechseln kannst.
+**Gegentore aus dem Rückraum.** Zu viele bedeuten fehlenden Druck oder schwachen Block – nicht zwingend das falsche System.
 
-Wie sich die drei Staffelungen unterscheiden, versteht eine Mannschaft schneller im Bild als in Worten. Im kostenlosen [Handball-Taktikboard](/handball-taktikboard) liegen 6:0, 5:1 und 3:2:1 als fertige Aufstellungen auf einem maßstabsgetreuen Feld – du schiebst die Magnete an eure Gegebenheiten und schickst das Board als Bild oder Link in die Mannschaftsgruppe.
+**Gegentore nach Kreisanspiel.** Fast immer ein Übergabefehler, also ein Ansageproblem.
 
-## Abwehr analysieren und anpassen
+**Gegentore nach Durchbruch, je Abwehrposition.** Häufen sie sich auf einer Position, ist es ein Zweikampfproblem dieser Person.
 
-Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du weißt, wo und wann deine Gegentore fallen. Wie du so eine Auswertung systematisch aufziehst, steht im Ratgeber zur [Spielanalyse im Handball](/ratgeber/handball-spielanalyse). Eine [Handball-Statistik-App](/) wie **Statix** hält jedes Gegentor live per Tap fest – nach Zone und Spielphase, direkt in der Halle und offline. So siehst du auf einen Blick, ob deine 6:0 wirklich nur am Kreis Tore kassiert oder ob der Rückraum durch die Naht trifft, und kannst dein System gezielt anpassen statt nach Bauchgefühl zu entscheiden. Probier es ohne Account in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de) aus und schau dir an, wo deine Abwehr die meisten Lücken hat.`,
-  faqs: [
+**Ballgewinne und Tore nach Ballgewinn.** Der Ertrag offensiver Systeme. Ohne Umschalten bringt jeder Ballgewinn nichts.
+
+Diese vier Zahlen trennen zuverlässig zwischen "falsches System" und "System wird falsch gespielt". Im Amateurbereich ist die zweite Diagnose deutlich häufiger – und deutlich billiger zu beheben.`,
+  modules: [
     {
-      question: 'Welches Abwehrsystem ist das beste im Handball?',
-      answer:
-        'Das beste Abwehrsystem gibt es nicht. Die 6:0 ist kompakt und einfach, die 5:1 stört die Rückraum-Mitte, die 3:2:1 setzt den Rückraum offensiv unter Druck. Welches System passt, hängt vom Gegner und von den Stärken deiner eigenen Mannschaft ab.',
+      after: 'Die Grundordnungen im Überblick',
+      kind: 'formation',
+      system: '6-0',
+      caption:
+        'Die 6:0 als Ausgangsordnung: Alle anderen Systeme entstehen daraus, indem ein oder mehrere Spieler nach vorn rücken – und jemand den Raum dahinter schließt.',
     },
+    {
+      after: 'Stärken und Schwächen gegenübergestellt',
+      kind: 'benchmarkTable',
+      caption: 'Die Systeme im Vergleich',
+      columns: ['System', 'Druck nach vorn', 'Raum dahinter', 'Trainingsaufwand', 'Typische Schwäche'],
+      rows: [
+        ['6:0', 'niedrig', 'gering', 'niedrig', 'Distanzwürfe'],
+        ['5:1', 'mittel', 'mittel', 'mittel', 'Angriffe über außen, zwei Kreisläufer'],
+        ['4:2', 'hoch', 'groß', 'hoch', 'Durchbrüche durch die Mitte'],
+        ['3:2:1', 'sehr hoch', 'groß', 'sehr hoch', 'Durchbrüche, zwei Kreisläufer'],
+        ['Manndeckung', 'sehr hoch', 'sehr groß', 'mittel', 'jeder verlorene Zweikampf'],
+      ],
+      note: 'Einordnung für die Systemwahl im Amateurbereich. Der Trainingsaufwand ist das am häufigsten unterschätzte Kriterium.',
+    },
+  ],
+  faqs: [
     {
       question: 'Was bedeuten die Zahlen bei Abwehrsystemen wie 6:0 oder 3:2:1?',
       answer:
-        'Die Zahlen geben die Staffelung der Abwehr von der Torraumlinie nach vorne an. Die erste Zahl sind die Spieler direkt am Kreis, jede weitere Zahl eine vorgezogene Reihe. Bei der 6:0 stehen alle sechs am Kreis, bei der 3:2:1 verteilen sie sich auf drei Reihen (drei, zwei, einer).',
+        'Sie zählen die Spieler je Reihe von hinten nach vorn. Eine 6:0 hat sechs Spieler am Torraumkreis und keinen davor, eine 5:1 fünf hinten und einen vorgezogen, eine 3:2:1 drei Reihen mit drei, zwei und einem Spieler. Je weiter vorn Spieler stehen, desto mehr Druck erzeugt das System – und desto mehr Raum entsteht dahinter.',
     },
     {
-      question: 'Wann spielt man eine 5:1-Abwehr?',
+      question: 'Welches Abwehrsystem ist das beste im Handball?',
       answer:
-        'Die 5:1 lohnt sich vor allem gegen Gegner mit einem starken, zentralen Rückraumspieler. Der vorgezogene Abwehrspieler stört den Spielmacher und nimmt die Mitte aus dem Spiel. Der Preis dafür sind Räume an den Nahtstellen neben der Spitze.',
+        'Das, welches deine Mannschaft mit ihrem Trainingsumfang wirklich beherrscht. Ein System, das sitzt, schlägt zwei, die halb sitzen. Die meisten Amateurmannschaften verbessern ihre Abwehr stärker durch Blockarbeit und Ansagen im bestehenden System als durch eine Umstellung.',
     },
     {
       question: 'Welches Abwehrsystem sollten Jugendmannschaften lernen?',
       answer:
-        'Im Nachwuchs wird bewusst zuerst offensiv verteidigt: Manndeckung und offensive Abwehrformen schulen Beinarbeit, Zweikampf und Antizipation. Viele Verbände schreiben das in ihren Ausbildungskonzepten vor. Die tiefe 6:0 und formationsgebundene Systeme folgen erst später.',
+        'Offensive Formen und Manndeckung. Sie bilden Zweikampfverhalten, Beinarbeit und Antizipation aus – die Grundlagen jedes späteren Raumsystems. Eine Jugendmannschaft, die dauerhaft 6:0 steht, gewinnt womöglich mehr Spiele und lernt weniger. Viele Landesverbände schreiben für untere Jugendklassen ohnehin offensive Formen vor.',
+    },
+    {
+      question: 'Wie viele Abwehrsysteme sollte eine Mannschaft beherrschen?',
+      answer:
+        'Im Amateurbereich zwei: ein Grundsystem und eine Variante, die sich möglichst wenig davon unterscheidet. Die Kombination 6:0 plus 5:1 ist deshalb die einzige, die zuverlässig funktioniert – sie unterscheidet sich nur in einer Position.',
     },
   ],
   relatedSlugs: [
-    'handball-freilaufen-ohne-ball',
+    'handball-abwehrsystem-auswaehlen',
+    'handball-6-0-abwehr',
+    'handball-5-1-abwehr',
+    'handball-3-2-1-abwehr',
+    'handball-manndeckung',
     'handball-spielanalyse',
-    'handball-training-planen',
   ],
 };

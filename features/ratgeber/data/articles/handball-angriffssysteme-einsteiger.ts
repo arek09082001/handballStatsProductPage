@@ -2,146 +2,168 @@ import type { Article } from '../../types';
 
 export const handballAngriffssystemeEinsteiger: Article = {
   slug: 'handball-angriffssysteme-einsteiger',
-  title: 'Angriffssysteme im Handball einfach erklärt (für Einsteiger)',
-  metaTitle: 'Angriffssysteme im Handball einfach erklärt',
+  title: 'Angriffssysteme für Einsteiger: 3:3, 4:2 und das Spiel ohne Ball',
+  metaTitle: 'Handball-Angriffssysteme: 3:3, 4:2 und Laufwege',
   metaDescription:
-    'Handball-Angriffssysteme einfach erklärt: die Grundpositionen, das 3:3- und 4:2-System und die wichtigsten Angriffsmittel – verständlich für Einsteiger-Trainer.',
+    'Angriffssysteme im Handball für Einsteiger: Grundordnung 3:3 und 4:2, Aufgaben je Position, das Spiel ohne Ball und gegen welche Abwehr was passt. Mit Diagramm.',
   keywords: [
-    'handball angriffssysteme',
-    'handball angriff 3:3',
-    'handball angriff 4:2',
-    'angriff handball erklärt',
-    'handball positionen angriff',
-    'handball taktik einsteiger',
-    'angriffssystem handball einsteiger',
-    'handball angriffsmittel',
+    'angriffssystem handball',
+    'handball 3 3 angriff',
+    'handball 4 2 angriff',
+    'handball freilaufen',
+    'handball spiel ohne ball',
+    'kempa trick handball',
+    'handball angriff einsteiger',
+    'handball laufwege angriff',
   ],
-  category: 'Taktik & Abwehr',
-  datePublished: '2026-05-04',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  category: 'Taktik & Systeme',
+  archetype: 'system',
+  datePublished: '2026-06-15',
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 9,
   excerpt:
-    'Ein einfaches Angriffssystem gibt deiner Mannschaft Struktur und jedem Spieler eine klare Aufgabe. Hier lernst du die Grundpositionen, die Systeme 3:3 und 4:2 und die wichtigsten Angriffsmittel – verständlich für Einsteiger.',
-  heroEyebrow: 'Taktik & Abwehr',
+    'Ein Angriffssystem ist keine Choreografie, sondern eine Ordnung, aus der Entscheidungen entstehen. Grundordnung, Aufgaben je Position, das Spiel ohne Ball – und wie du eine Umstellung über drei Einheiten hinbekommst.',
   imagePath: '/shotMaps.png',
-  imageAlt: 'Angriffssysteme und Wurfzonen im Handball, visualisiert in der Statix Handball-App',
-  body: `Wenn du als Trainer neu in die Angriffstaktik einsteigst, wirken die vielen Laufwege auf dem Feld schnell wie ein einziges Durcheinander. Dabei sorgt schon ein einfaches Angriffssystem für Ordnung: Es gibt deiner Mannschaft Struktur, jedem Spieler eine klare Aufgabe und dem Ball einen roten Faden. In diesem Ratgeber lernst du die Grundpositionen im Angriff, die beiden wichtigsten Systeme (3:3 und 4:2), die grundlegenden Angriffsmittel und bekommst konkrete Tipps für den Einstieg.
+  imageAlt: 'Angriffsformation einer Handballmannschaft auf dem Spielfeld',
+  body: `Viele Amateurmannschaften haben kein Angriffssystem, sondern eine Sammlung von Spielzügen. Der Unterschied zeigt sich, sobald der Gegner einen davon kennt: Ein System trägt weiter, ein Spielzug hört auf zu funktionieren.
 
-## Die Grundpositionen im Angriff
+Ein Angriffssystem beschreibt, **wo die Spieler stehen und wie sie sich bewegen**, wenn kein Spielzug läuft. Das ist der Zustand, in dem sich euer Angriff in etwa 80 % der Zeit befindet – und genau der wird im Amateurtraining am seltensten geübt.
 
-Bevor du über Systeme sprichst, muss jeder Spieler seine Position kennen. Im Angriff verteilen sich sechs Feldspieler auf zwei Reihen: den weiter vom Tor entfernten Rückraum und die vordere Linie direkt an der Abwehr. Das sind die sechs Grundpositionen:
+## Die Grundordnung 3:3
 
-- **Rückraum links (RL):** Zweite Reihe auf der linken Seite, meist ein wurfstarker Spieler mit gutem Sprungwurf.
-- **Rückraum Mitte (RM):** Der Spielmacher. Er organisiert den Angriff, verteilt die Bälle und gibt das Tempo vor.
-- **Rückraum rechts (RR):** Das Pendant zu RL auf der rechten Seite, bei Rechtshändern oft eine besonders anspruchsvolle Wurfposition.
-- **Außen links (LA):** Flügelspieler ganz außen an der linken Seitenlinie, schnell und wichtig für den Gegenstoß.
-- **Außen rechts (RA):** Das Gegenstück auf der rechten Seite, schließt oft aus spitzem Winkel ab.
-- **Kreisläufer (KL):** Spielt vorne am Kreis mitten in der Abwehr, stellt Sperren und lauert auf kurze Anspiele.
+Das Standardsystem im Handball: drei Rückraumspieler, zwei Außen, ein Kreisläufer. Es ist die Ordnung, aus der fast alles andere abgeleitet wird, und es hat einen entscheidenden Vorteil – die Breite. Sechs Spieler stehen über die gesamte Feldbreite verteilt, was die Abwehr zwingt, ebenfalls breit zu stehen.
 
-## Das 3:3-System als Standard
+Für Einsteiger und Jugendmannschaften ist 3:3 die richtige Wahl, und zwar nicht als Zwischenschritt, sondern dauerhaft: Es bildet alle Positionen aus, es ist gegen jede Abwehrform spielbar, und es lässt sich in wenigen Wochen zu einer funktionierenden Ordnung bringen.
 
-Das 3:3-System ist die klassische Grundaufstellung und der beste Startpunkt für jede Mannschaft. Der Name beschreibt die Verteilung auf die beiden Reihen: drei Spieler im Rückraum und drei Spieler in der vorderen Linie.
+Das Alternativsystem **4:2** – vier Rückraumspieler und zwei Kreisläufer – ist eine Antwort auf offensive Abwehrformen wie die 3:2:1 oder die 5:1. Zwei Kreisläufer binden den Innenblock und schaffen Räume für Durchbrüche. Es kostet dafür Breite und macht die Außenpositionen fast wirkungslos. Als Standardsystem für Einsteiger ist es ungeeignet, als situative Umstellung ab der B-Jugend sehr brauchbar.
 
-Konkret stehen im Rückraum die drei Spieler links, Mitte und rechts. In der vorderen Linie stehen die beiden Außen und ein Kreisläufer. Diese Aufstellung ist symmetrisch und damit besonders ausgewogen: Beide Seiten sind gleich besetzt, die Wege sind übersichtlich und jeder Spieler hat einen klaren Nachbarn zum Zusammenspiel.
+## Aufgaben je Position
 
-Für Einsteiger ist das 3:3 ideal, weil sich die grundlegenden Angriffsmittel – Stoßen, Kreuzen, Sperren – hier am einfachsten lernen und immer wieder gleich einüben lassen. Gegen eine tiefe Abwehr wie die 6:0 ist es außerdem das Standardsystem im Amateur- und Jugendbereich.
+**Rückraum Mitte** verteilt und bestimmt das Tempo. Er entscheidet, ob der Angriff über links oder rechts eingeleitet wird, und er ist die einzige Position, die alle anderen sieht. Seine wichtigste Aufgabe ist nicht der Abschluss, sondern das rechtzeitige Anspiel.
 
-## Das 4:2-System
+**Rückraum links und rechts** tragen den Distanzabschluss und den Zug zur Mitte. Beide müssen den Kreis bedienen können – ein Halbspieler, der nur wirft, halbiert die Möglichkeiten eures Angriffs.
 
-Beim 4:2-System ziehst du einen zweiten Spieler an den Kreis. Jetzt stehen vier Spieler in der zweiten Reihe und zwei Kreisläufer vorne an der Abwehr. In der Praxis rücken dafür die beiden Außen etwas ein und bilden zusammen mit den beiden mittleren Rückraumspielern eine breite hintere Reihe.
+**Die Außen** halten die Breite. Das ist ihre Hauptaufgabe, auch wenn sie den Ball selten bekommen: Ein Außenspieler, der zur Mitte einrückt, nimmt seinem Halbspieler den Raum und dem Gegner die Arbeit ab.
 
-Der große Vorteil: Zwei Kreisläufer binden mehr Abwehrspieler in der Mitte. Das schafft Räume und macht das System besonders stark gegen eine offensive, vorgezogene Abwehr – also gegen Formationen wie die 5:1 oder die 3:2:1, bei denen einzelne Verteidiger weit herauskommen. Die beiden Kreisläufer stellen dort viele Sperren und sorgen für ständige Gefahr aus kurzer Distanz.
+**Der Kreisläufer** stellt Sperren und löst sich. Er entscheidet über den Erfolg des Systems mehr als jeder andere, weil er die Abwehr bindet – und zwar auch dann, wenn er den Ball nie bekommt.
 
-Für ganz junge Teams ist das 4:2 etwas anspruchsvoller, weil die Abstimmung der beiden Kreisläufer Übung braucht. Als zweites System nach dem 3:3 ist es aber ein sehr wirkungsvoller Schritt.
+## Das Bewegungsprinzip: Spiel ohne Ball
 
-## Grundlegende Angriffsmittel einfach erklärt
+Hier liegt der eigentliche Hebel, und er ist im Amateurbereich fast überall ungenutzt. Ein Angriff mit sechs Spielern hat einen Ballführenden und fünf Spieler ohne Ball. Was diese fünf tun, entscheidet, ob eine Lücke entsteht.
 
-Ein System ist nur das Grundgerüst. Bewegung in den Angriff bringen die Angriffsmittel – einfache, wiederkehrende Aktionen, mit denen du die Abwehr in Bewegung bringst und Lücken öffnest. Diese fünf solltest du zuerst kennen:
+Drei Prinzipien reichen für den Einstieg:
 
-### Stoßbewegung
+**Anbieten heißt Bewegung, nicht Stehen mit erhobenem Arm.** Ein Spieler, der steht, ist keine Anspielstation, sondern ein Hindernis. Die Bewegung muss in den Raum gehen, den die Abwehr gerade verlässt.
 
-Die Grundbewegung schlechthin: Ein Rückraumspieler läuft mit Tempo und Ball gezielt auf die Lücke zwischen zwei Abwehrspielern zu. Das zwingt einen Verteidiger, herauszukommen, und bindet ihn. Entweder kommst du selbst zum Wurf oder du spielst den frei gewordenen Nebenmann an.
+**Das Timing bestimmt der Ballführende, nicht der Anbietende.** Wer sich zu früh löst, ist beim Anspiel schon wieder gedeckt. Die Bewegung beginnt, wenn der Ballführende sie sehen kann – nicht vorher.
 
-### Parallelstoß
+**Nach dem Pass geht die Bewegung weiter.** Der häufigste Fehler im Amateurangriff: passen und stehen bleiben. Wer nach dem Pass sofort weiterläuft, bindet seinen Verteidiger und erzeugt eine Lücke für den Nächsten.
 
-Zwei benachbarte Rückraumspieler stoßen nacheinander in dieselbe Richtung, also parallel. Der erste bindet seinen Gegenspieler und passt zum zweiten, der in dieselbe Lücke nachzieht. So ziehst du die Abwehr Stück für Stück zu einer Seite.
+Zwei konkrete Bewegungen, die den Einstieg tragen: das **Stoßen** – der Ballführende geht auf die Lücke zwischen zwei Verteidigern zu und zwingt einen von beiden, sich zu entscheiden – und das **Kreuzen**, bei dem zwei Rückraumspieler die Position tauschen und die Zuordnung der Abwehr auf die Probe stellen.
 
-### Kreuzen
+Ein Sonderfall, der eher selten als gedacht funktioniert, ist der **Kempa-Trick**: ein hoher Pass in den Torraum, den ein springender Mitspieler in der Luft fängt und abschließt. Er ist spektakulär, sehr trainingsintensiv und im Amateurbereich meist ein Ballverlust. Als Überraschungsmittel in Über- oder Unterzahl oder gegen eine sehr offensive Abwehr kann er sich lohnen – als regelmäßige Angriffsvariante fast nie. Wenn du ihn übst, dann mit einem festen Paar und höchstens einmal pro Spiel.
 
-Beim Kreuzen tauschen zwei Rückraumspieler laufend die Position: Der ballführende Spieler läuft dicht am Mitspieler vorbei und übergibt oder passt ihm den Ball. Dieser Positionswechsel verschiebt die Abwehr und öffnet oft genau in der Mitte eine Lücke.
+## Gegen welche Abwehr was passt
 
-### Sperre (Block) und Absetzen
+Die Systemwahl richtet sich nach der Abwehr, gegen die du spielst:
 
-Der Kreisläufer stellt sich einem Abwehrspieler bewusst in den Weg – das ist die Sperre oder der Block. Dahinter kommt der Rückraumspieler frei zum Wurf. Läuft die Sperre ins Leere, setzt sich der Kreisläufer ab, dreht sich also zur freien Seite weg und wird selbst anspielbar.
+Gegen eine **6:0** brauchst du Bewegung in die Tiefe und Kreisanspiele – die Abwehr steht kompakt, aber sie muss verschieben. 3:3 mit Stoßbewegungen ist die richtige Antwort.
 
-### Übergang und Auflösen
+Gegen eine **5:1** ist der vorgezogene Verteidiger das Ziel: Er ist allein, und wenn ihr ihn mit zwei Spielern beschäftigt, entsteht dahinter Raum. Kreuzen um den Vorgezogenen herum ist das Standardmittel.
 
-Beim Übergang wechselt ein Spieler seine Reihe – zum Beispiel geht ein Außen an den Kreis. Aus einem 3:3 wird so kurzzeitig ein 4:2. Dieses bewusste Auflösen der Grundaufstellung überrascht die Abwehr und schafft neue Räume.
+Gegen eine **3:2:1** oder offensive Formen hilft ein zweiter Kreisläufer, also die Umstellung auf 4:2. Die offensive Abwehr lebt vom Zugriff nach vorn – zwei Spieler an der Linie machen diesen Zugriff teuer.
 
-## Positionsangriff vs. Tempospiel
+Gegen **Manndeckung** brauchst du Raum, keine Ordnung: weite Aufstellung, Zug zum Tor, Zweikämpfe suchen. Systeme spielen hier eine untergeordnete Rolle.
 
-Grundsätzlich unterscheidest du zwei Angriffsarten. Der Positionsangriff läuft gegen eine bereits geordnete Abwehr: Deine Mannschaft baut in Ruhe auf und setzt die Systeme und Angriffsmittel von oben ein.
+## Stärken und Schwächen gegenübergestellt
 
-Das Tempospiel dagegen nutzt die Phase direkt nach dem Ballgewinn, wenn die gegnerische Abwehr noch nicht steht. Man unterscheidet drei Wellen:
+**3:3 – Stärken:** breite Aufstellung, bildet alle Positionen aus, gegen jede Abwehr spielbar, schnell zu vermitteln, jeder Spieler hat eine klare Rolle.
 
-- **1. Welle:** Ein einzelner Spieler löst sich sofort und läuft allein auf das Tor zu – der klassische Gegenstoß.
-- **2. Welle:** Kommt die erste Welle nicht durch, laufen weitere Spieler nach und suchen den schnellen Abschluss.
-- **3. Welle:** Ein schneller Positionsangriff gegen die noch unsortierte Abwehr, bevor sie komplett steht.
+**3:3 – Schwächen:** gegen sehr kompakte 6:0-Abwehren entstehen wenig Räume in der Mitte; wenn die Halbspieler den Kreis nicht bedienen, wird der Angriff eindimensional.
 
-Für Einsteiger gilt: Einfache Tore fallen am leichtesten im Tempospiel. Bringe deiner Mannschaft deshalb früh bei, nach jedem Ballgewinn sofort umzuschalten.
+**4:2 – Stärken:** bindet den Innenblock, erzeugt Durchbruchräume, sehr wirksam gegen offensive Abwehrformen und in Überzahl.
 
-## Angriff gegen verschiedene Abwehrformen
+**4:2 – Schwächen:** kostet Breite, macht die Außenpositionen fast wirkungslos, verlangt zwei ausgebildete Kreisläufer, und der Rückzug in die Abwehr ist schwieriger, weil vier Spieler weit vorn stehen.
 
-Welches System und welche Mittel sinnvoll sind, hängt immer von der gegnerischen Abwehr ab. Gegen eine tiefe 6:0, bei der alle sechs Verteidiger nah am Kreis stehen, brauchst du viele Stoßbewegungen und ein starkes Kreisspiel, um die dichte Reihe auseinanderzuziehen.
+## Die Umstellung über drei Einheiten
 
-Gegen eine offensive Abwehr wie die 3:2:1, bei der Verteidiger weit herauskommen, funktioniert das anders: Hier helfen schnelles Passspiel, gezieltes Kreuzen und oft ein zweiter Kreisläufer (4:2), um die vorgezogenen Verteidiger zu binden. Welche Abwehr dir gegenübersteht, erkennst du am besten, wenn du die Abwehrsysteme selbst kennst – mehr dazu in unserem Ratgeber zu den Abwehrsystemen im Handball.
+Wenn du das System wechseln oder erstmals ordnen willst, funktioniert das in drei Schritten – nicht in einem:
 
-## Systeme im Überblick
+**Einheit 1: Stehen.** Ohne Gegner, ohne Ball. Alle sechs Positionen werden angelaufen und gehalten, mehrfach, bis jeder weiß, wo er steht und wo die anderen stehen. Das wirkt langweilig und spart dir vier Wochen.
 
-Die folgende Tabelle fasst die wichtigsten Angriffsformen für den Einstieg zusammen:
+**Einheit 2: Bewegen.** Mit Ball, gegen halbaktive Abwehr. Der Schwerpunkt ist das Spiel ohne Ball: anbieten, weiterlaufen nach dem Pass, Timing. Noch kein Abschluss unter Druck.
 
-| System | Aufstellung | Stärke | Wann sinnvoll |
-| --- | --- | --- | --- |
-| 3:3 | Drei Rückraum, zwei Außen, ein Kreisläufer | Ausgewogen und leicht zu lernen | Grundsystem, gegen tiefe Abwehr (6:0) |
-| 4:2 | Vier in der zweiten Reihe, zwei Kreisläufer | Starke Präsenz und viele Sperren am Kreis | Gegen offensive Abwehr (5:1, 3:2:1) |
-| Tempospiel | Keine feste Aufstellung, schnelles Umschalten | Einfache Tore vor der geordneten Abwehr | Direkt nach jedem Ballgewinn |
+**Einheit 3: Entscheiden.** Gegen aktive Abwehr, mit Abschluss. Jetzt kommt die Entscheidung dazu – Durchbruch, Kreisanspiel oder Weiterspielen. Erst hier darf gecoacht werden, was falsch entschieden wurde.
 
-## Tipps für Einsteiger-Trainer
+Der häufigste Fehler ist, mit Einheit 3 anzufangen. Eine Mannschaft, die die Ordnung nicht kennt, trifft im Spiel keine besseren Entscheidungen, sie trifft nur schnellere.
 
-Zum Schluss die wichtigsten Grundsätze, damit dein Angriff im Training wirklich Fortschritte macht:
+## Kennzahlen zur Kontrolle
 
-- **Halte es einfach.** Ein sauber gespieltes 3:3 ist mehr wert als drei halb verstandene Systeme.
-- **Lerne ein Mittel nach dem anderen.** Übe erst das Stoßen sauber ein, bevor du Kreuzen oder Sperren dazunimmst.
-- **Setze auf viele Wiederholungen.** Gleiche Abläufe erst ohne Abwehr, dann mit passivem und schließlich mit aktivem Gegenspieler.
-- **Gib klare Positionen und Aufgaben.** Jeder Spieler muss wissen, wo er steht und was sein Job im Spielzug ist. Am schnellsten geht das mit einem Bild: Im kostenlosen [Handball-Taktikboard](/handball-taktikboard) ziehst du 3:3 und 4:2 auf ein maßstabsgetreues Feld, zeichnest Laufwege und Sperren ein und schickst die Aufstellung als Link an die Mannschaft.
-- **Mach Erfolge sichtbar.** Schau nicht nur auf schöne Laufwege, sondern darauf, welches Angriffsmittel am Ende wirklich Tore bringt.
+Ob euer Angriffssystem trägt, siehst du an vier Zahlen:
 
-Und genau beim letzten Punkt lohnt sich ein ehrlicher Blick auf die Zahlen: Woran erkennst du, ob euer Kreuzen im Rückraum wirklich Lücken öffnet oder ob der zweite Kreisläufer den Unterschied macht? An den Toren, die daraus entstehen – und an einer sauberen [Spielauswertung nach dem Abpfiff](/ratgeber/handball-spielanalyse). Eine [Statistik-App für Handballtrainer](/) wie **Statix** hilft dir dabei – du erfasst live in der Halle per Tap, aus welcher Situation eure Tore fallen, und wertest nach dem Spiel im Wurfbild aus, welche Zonen und Angriffsmittel erfolgreich waren, ganz ohne Excel und auch offline. So siehst du schwarz auf weiß, welches System deiner Mannschaft die besten Chancen bringt. Ausprobieren kannst du das ohne Account in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+**Verteilung der Abschlüsse.** Wenn mehr als 60 % aus dem Rückraum kommen, bindet euer Kreisläufer die Abwehr nicht oder die Halbspieler bedienen ihn nicht.
+
+**Kreisanspiele je Spiel.** Nicht die Tore – die Anspiele. Diese Zahl beschreibt, ob euer System überhaupt funktioniert. Unter fünf pro Spiel ist der Kreisläufer eine Dekoration.
+
+**Angriffe ohne Abschluss.** Technische Fehler geteilt durch Angriffe. Über 20 % ist zu hoch, und im Angriffssystem ist die häufigste Ursache das Timing beim Anspiel.
+
+**Abschlüsse gegen geschlossenen Block.** Je höher der Anteil, desto weniger erarbeitet ihr euch. Diese Zahl fällt, wenn das Spiel ohne Ball besser wird – oft bevor sich die Torzahl verändert.`,
+  modules: [
+    {
+      after: 'Die Grundordnung 3:3',
+      kind: 'formation',
+      system: 'angriff',
+      caption:
+        'Die 3:3-Grundordnung (orange) gegen eine 6:0-Abwehr: drei Rückraumspieler, zwei Außen für die Breite, der Kreisläufer an der Linie.',
+    },
+    {
+      after: 'Gegen welche Abwehr was passt',
+      kind: 'benchmarkTable',
+      caption: 'Systemwahl nach Gegner',
+      columns: ['Gegnerische Abwehr', 'Empfohlenes System', 'Hauptmittel'],
+      rows: [
+        ['6:0', '3:3', 'Stoßbewegungen und Kreisanspiele'],
+        ['5:1', '3:3', 'Kreuzen um den vorgezogenen Verteidiger'],
+        ['3:2:1 oder offensiv', '4:2', 'zweiter Kreisläufer bindet den Innenblock'],
+        ['Manndeckung', 'weite Aufstellung', 'Zweikämpfe suchen, Raum nutzen'],
+        ['Überzahl (Gegner in Unterzahl)', '4:2', 'Innenblock überladen, ruhig spielen'],
+      ],
+      note: 'Orientierung für die Vorbereitung, keine Regel. Entscheidend ist, welches System deine Mannschaft tatsächlich beherrscht.',
+    },
+  ],
   faqs: [
     {
       question: 'Was ist das beste Angriffssystem für Einsteiger?',
       answer:
-        'Für die meisten Mannschaften ist das 3:3-System der beste Start. Es ist symmetrisch, ausgewogen und leicht zu lernen: drei Rückraumspieler, zwei Außen und ein Kreisläufer. Erst wenn das sicher sitzt, lohnt sich ein zweites System wie das 4:2.',
-    },
-    {
-      question: 'Was bedeutet 3:3 im Handball-Angriff?',
-      answer:
-        'Die Zahlen 3:3 beschreiben die Verteilung der sechs Feldspieler auf zwei Reihen: Drei Spieler stehen im Rückraum (links, Mitte, rechts) und drei in der vorderen Linie (zwei Außen und ein Kreisläufer).',
+        'Die 3:3-Grundordnung mit drei Rückraumspielern, zwei Außen und einem Kreisläufer – und zwar dauerhaft, nicht als Zwischenschritt. Sie ist gegen jede Abwehrform spielbar, bildet alle Positionen aus und lässt sich in wenigen Wochen zu einer funktionierenden Ordnung bringen.',
     },
     {
       question: 'Wann spielt man das 4:2-System?',
       answer:
-        'Das 4:2 mit zwei Kreisläufern spielst du vor allem gegen offensive, vorgezogene Abwehrformationen wie die 5:1 oder die 3:2:1. Die beiden Kreisläufer binden viele Verteidiger in der Mitte und schaffen so Räume für den Rückraum.',
+        'Gegen offensive Abwehrformen wie die 3:2:1 und in Überzahl. Zwei Kreisläufer binden den Innenblock und machen den Zugriff nach vorn teuer. Der Preis ist Breite: Die Außenpositionen werden fast wirkungslos, und der Rückzug in die Abwehr wird schwieriger.',
     },
     {
-      question: 'Was ist der Unterschied zwischen Kreuzen und Parallelstoß?',
+      question: 'Was bedeutet Spiel ohne Ball im Handball?',
       answer:
-        'Beim Kreuzen tauschen zwei Rückraumspieler ihre Positionen und laufen aneinander vorbei, um die Abwehr zu verschieben. Beim Parallelstoß stoßen zwei Spieler nacheinander in dieselbe Richtung in dieselbe Lücke, ohne die Position zu tauschen.',
+        'Alles, was die fünf Spieler ohne Ball tun, während einer angreift – und genau das entscheidet, ob eine Lücke entsteht. Drei Prinzipien reichen: Anbieten heißt Bewegung in den Raum, den die Abwehr verlässt; das Timing bestimmt der Ballführende; und nach dem eigenen Pass geht die Bewegung weiter statt aufzuhören.',
+    },
+    {
+      question: 'Lohnt sich der Kempa-Trick im Amateurhandball?',
+      answer:
+        'Selten. Der hohe Pass in den Torraum ist trainingsintensiv und endet im Amateurbereich meistens als Ballverlust. Als Überraschungsmittel in Über- oder Unterzahl oder gegen eine sehr offensive Abwehr kann er sich lohnen – dann aber mit einem festen Paar und höchstens einmal pro Spiel.',
+    },
+    {
+      question: 'Wie stelle ich meine Mannschaft auf ein neues Angriffssystem um?',
+      answer:
+        'In drei Einheiten: erst die Ordnung ohne Ball und ohne Gegner stehen lassen, dann die Bewegung mit Ball gegen halbaktive Abwehr, zuletzt Entscheidungen gegen aktive Abwehr mit Abschluss. Der häufigste Fehler ist, direkt mit dem dritten Schritt anzufangen – eine Mannschaft, die die Ordnung nicht kennt, entscheidet nicht besser, nur schneller.',
     },
   ],
   relatedSlugs: [
-    'handball-5-1-abwehr',
-    'handball-training-planen',
-    'jugendhandball-trainieren',
+    'handball-kreuzen-stossen',
+    'handball-abwehrsysteme',
+    'handball-positionen-erklaert',
+    'handball-kreislaeufer-spielen',
+    'handball-ueberzahl-unterzahl',
+    'handball-1-gegen-1-verbessern',
   ],
 };

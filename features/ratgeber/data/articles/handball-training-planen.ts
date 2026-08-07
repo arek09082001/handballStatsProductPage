@@ -2,138 +2,248 @@ import type { Article } from '../../types';
 
 export const handballTrainingPlanen: Article = {
   slug: 'handball-training-planen',
-  title: 'Handballtraining planen: Aufbau einer effektiven Trainingseinheit',
-  metaTitle: 'Handballtraining planen: Aufbau einer Einheit',
+  title: 'Handballtraining planen: eine Einheit, die etwas verändert',
+  metaTitle: 'Handballtraining planen: Aufbau, Zeiten, Schwerpunkte',
   metaDescription:
-    'Handballtraining planen leicht gemacht: So baust du eine effektive Trainingseinheit auf – mit Grundstruktur, Zeitanteilen, Beispiel und häufigen Fehlern.',
+    'Handballtraining planen: wie eine Einheit aufgebaut ist, wie viele Schwerpunkte sie verträgt und was du an die Spieler als Hausaufgabe auslagerst. Für Trainer.',
   keywords: [
     'handballtraining planen',
     'handball trainingseinheit aufbau',
-    'handball training aufbau',
-    'handballtraining übungen',
-    'trainingsplan handball',
+    'handball trainingsplan',
     'handball training struktur',
-    'effektive trainingseinheit handball',
-    'handball training planen',
+    'handball trainingsschwerpunkt',
+    'handball hausaufgaben spieler',
+    'handball einheit 90 minuten',
   ],
-  category: 'Training & Planung',
-  datePublished: '2026-04-20',
-  dateModified: '2026-06-30',
-  readingTimeMinutes: 8,
+  category: 'Trainingsplanung',
+  archetype: 'rezept',
+  datePublished: '2026-06-06',
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 9,
   excerpt:
-    'Eine gute Trainingseinheit folgt einem klaren Aufbau: Aufwärmen, Hauptteil mit einem Schwerpunkt und Ausklang. Hier bekommst du die Grundstruktur, realistische Zeitanteile, eine fertige 90-Minuten-Einheit und die häufigsten Planungsfehler.',
-  heroEyebrow: 'Training & Planung',
+    'Die meisten Trainingseinheiten scheitern nicht an den Übungen, sondern an zu vielen Zielen. Wie du eine Einheit um genau einen Schwerpunkt baust – mit Zeitleiste, Bausteinen und einem Weg, den Ertrag zu prüfen.',
   imagePath: '/saison-uebersicht-kennzahlen.jpg',
-  imageAlt: 'Saisonübersicht in Statix mit Angriffserfolg, Paradenquote und Bilanz aller Spiele',
-  body: `Gute Trainingsplanung ist die halbe Miete. Wenn du vor jeder Einheit weißt, was du warum trainierst, sparst du wertvolle Hallenzeit, hältst deine Mannschaft in Bewegung und siehst über die Wochen echten Fortschritt statt Zufall. Eine durchdachte Einheit folgt dabei immer demselben Muster – und genau dieses Muster bekommst du hier: mit klarer Grundstruktur, realistischen Zeitanteilen, einer fertigen Beispiel-Einheit über 90 Minuten und den häufigsten Planungsfehlern, die du mit wenig Aufwand vermeidest.
+  imageAlt: 'Trainingsplanung und Saisonübersicht einer Handballmannschaft in der Statix-App',
+  body: `Die typische Amateur-Trainingseinheit hat vier Ziele: aufwärmen, Technik, Taktik, Abschlussspiel. Am Ende sind alle beschäftigt gewesen und niemand ist besser geworden. Der Grund ist nicht schlechte Übungsauswahl, sondern zu viele Schwerpunkte – und die Erwartung, dass eine Einheit alles abdecken muss.
 
-## Die Grundstruktur einer Trainingseinheit
+Eine Einheit, die etwas verändert, hat **einen** Schwerpunkt und ordnet alles andere unter. Das ist unbequem, weil es bedeutet, in dieser Einheit bewusst etwas nicht zu machen.
 
-Jede gute Handball-Trainingseinheit folgt demselben roten Faden: Sie beginnt ruhig, steigert die Belastung bis zum inhaltlichen Schwerpunkt und läuft am Ende kontrolliert aus. Egal ob deine Einheit 75 oder 120 Minuten dauert – dieser Dreiklang bleibt gleich, nur die Länge der einzelnen Phasen verschiebt sich. Die meisten Einheiten im Amateur- und Jugendbereich liegen zwischen 75 und 120 Minuten.
+## Ein Schwerpunkt pro Einheit – und ab wann das gilt
 
-Grob kannst du dich an diesen Zeitanteilen orientieren:
+Die Regel gilt für alle Altersstufen, aber der Schwerpunkt sieht unterschiedlich aus:
 
-- **Einstimmung und Aufwärmen (ca. 20 %):** Körper und Kopf auf Betrieb bringen.
-- **Hauptteil (ca. 55–65 %):** der inhaltliche Kern mit genau einem Schwerpunkt.
-- **Spielformen und Ausklang (ca. 15–25 %):** Anwendung unter Druck und kontrolliertes Herunterfahren.
+**Bis zur D-Jugend** ist der Schwerpunkt fast immer eine Bewegungsfähigkeit: Ballhandling, Koordination, Werfen. Taktik kommt nicht vor.
 
-Hinter dieser Struktur stehen drei einfache Prinzipien, die du dir merken solltest: vom Einfachen zum Komplexen, von langsam zu schnell und von ohne Druck zu mit Druck. Wer diese drei Linien einhält, baut fast jede Einheit automatisch sinnvoll auf – die Belastung steigt an, die Konzentration bleibt hoch und der Transfer ins Spiel gelingt.
+**C- und B-Jugend:** technischer Schwerpunkt in der Mehrzahl der Einheiten, taktischer in etwa jeder dritten.
 
-## Phase 1: Aufwärmen (10–20 Minuten)
+**A-Jugend und Erwachsene:** Der Schwerpunkt wechselt zwischen Technik, Taktik und Athletik, wobei der taktische Anteil steigt. Aber auch hier gilt: einer pro Einheit.
 
-Das Aufwärmen hat zwei Aufgaben: Es beugt Verletzungen vor und bereitet gezielt auf den Schwerpunkt des Tages vor. Teile es deshalb in zwei Blöcke:
+Ein Schwerpunkt bedeutet nicht, dass die ganze Einheit daraus besteht. Er bedeutet, dass er in mindestens drei Bausteinen vorkommt und dass du in der Einheit ausschließlich zu ihm coachst. Alles andere läuft, wird aber nicht korrigiert.
 
-- **Allgemeines Aufwärmen:** Puls hochfahren, Muskulatur und Gelenke mobilisieren – zum Beispiel lockeres Einlaufen mit Lauf-ABC, Fangspiele oder einfache Ballkoordination.
-- **Handballspezifisches Aufwärmen:** Bewegungen, die im Hauptteil vorkommen – Passen in Bewegung, Sprünge, erste Torwurf-Serien und kleine Reaktionsübungen.
+Wie du den Schwerpunkt findest: aus dem letzten Spiel. Eine Zahl, eine Ursache, eine Übung – mehr braucht es nicht, und drei Schwerpunkte gleichzeitig sind keiner.
 
-Faustregel: Je jünger und je unruhiger die Gruppe, desto spielerischer sollte das Aufwärmen sein. Mit einem Spiel im Kreis oder einer Fangvariante holst du die Köpfe schneller ab als mit stumpfem Rundenlaufen. Eine ausführliche Übungssammlung findest du in unserem [Ratgeber zum Aufwärmen im Handball](/ratgeber/handball-aufwaermen-uebungen).
+## Die Einheit im Ablauf
 
-## Phase 2: Hauptteil (40–60 Minuten)
+Der Aufbau folgt drei Regeln: Koordinatives und Explosives an den Anfang, Belastung in die Mitte, spielnahe Formen ans Ende. Diese Zeitleiste ist die Standardvariante für 90 Minuten.
 
-Der Hauptteil ist das Herzstück deiner Einheit – und genau hier passiert der häufigste Fehler: zu viel auf einmal.
+## Fünf Bausteine, aus denen jede Einheit besteht
 
-### Einen Schwerpunkt pro Einheit
+Jede Einheit lässt sich aus diesen fünf Bausteinen zusammensetzen. Was sich ändert, ist ihre Gewichtung – nicht ihre Reihenfolge.
 
-Setze pro Training genau einen Schwerpunkt und entscheide dich für eine Richtung:
+## Was du an die Spieler auslagerst
 
-- **Technik:** Passen, Fangen, Wurfvarianten, Prellen, Finten.
-- **Taktik:** Abwehr verschieben, Angriffszüge, Tempospiel, Über- und Unterzahl.
-- **Athletik:** Schnelligkeit, Sprungkraft, Stabilität, Grundlagenausdauer.
+Hallenzeit ist die knappste Ressource im Amateurhandball. Alles, was ohne Anleitung, ohne Gegner und ohne Sicherung funktioniert, gehört deshalb nicht in die Halle – sondern in die Hausaufgaben.
 
-Ein Thema pro Tag klingt nach wenig, ist aber genau richtig. Nur mit ausreichend Wiederholungen setzt sich eine Bewegung oder ein Laufweg wirklich fest.
+Was sich gut auslagern lässt:
 
-### Vom Einfachen zum Komplexen
+**Ballgewöhnung an der Wand.** Prellen, Fangen, Werfen gegen eine Wand mit beiden Händen. Zehn Minuten an trainingsfreien Tagen bringen über eine Saison mehr Ballkontakte als das gesamte Hallentraining.
 
-Innerhalb deines Schwerpunkts arbeitest du dich Schritt für Schritt vor:
+**Mobilität für Schulter und Hüfte.** Vier bis fünf feste Übungen, immer dieselben. Wirkt nur über Regelmäßigkeit.
 
-1. **Isoliert üben:** die Bewegung ohne Gegner, in ruhigem Tempo, mit vielen Wiederholungen.
-2. **Halbaktiv erschweren:** Gegnerdruck andeuten, Tempo erhöhen, erste Entscheidungen einbauen.
-3. **Anwenden:** die Technik oder Taktik in einer spielnahen Form gegen aktiven Gegner.
+**Rumpfstabilität.** Braucht keine Geräte, sobald die Ausführung einmal in der Halle korrigiert wurde.
 
-Steuere dabei bewusst die Belastung: Kurze, intensive Blöcke mit klaren Pausen bringen mehr als eine lange, zähe Dauerbelastung. Und plane genug Ballkontakte pro Spieler ein – wer die halbe Einheit in der Schlange steht, lernt wenig und kühlt aus.
+**Spielverständnis.** Ein Spiel der eigenen Mannschaft oder ein Profispiel mit einer konkreten Beobachtungsaufgabe ansehen: "Achte darauf, wann der Kreisläufer sich löst." Kostet dich nichts und verändert mehr als eine weitere Übung.
 
-## Phase 3: Spielformen und Ausklang
+Was du **nicht** auslagerst: alles mit Zusatzgewicht, intensive Sprungserien und jede Bewegung, die du nicht mindestens einmal korrigiert hast. Ein Spieler, der zu Hause eine falsche Technik einschleift, kommt mit einem Problem zurück.
 
-Am Ende des Hauptteils gehört der Transfer ins echte Spiel. Spielformen unter Druck – vom kleinen 3-gegen-3 über Über- und Unterzahl bis zum freien Spiel auf zwei Tore – zwingen deine Mannschaft, das Gelernte unter Zeit- und Gegnerdruck abzurufen. Genau hier zeigt sich, ob der Schwerpunkt wirklich sitzt oder nur im ruhigen Üben funktioniert hat.
+Damit Hausaufgaben funktionieren, brauchst du drei Dinge: eine sehr kurze Liste – maximal fünf Übungen –, eine feste Frequenz und eine Nachfrage im Training. Ohne Nachfrage macht es nach drei Wochen niemand mehr. Die Nachfrage muss dabei nicht kontrollierend sein; eine einfache Runde "Wer hat's diese Woche geschafft?" reicht.
 
-Danach folgt der Ausklang: Puls herunterfahren, lockeres Auslaufen, leichtes Dehnen und ein kurzes Feedback. Zwei, drei Sätze genügen – was lief heute gut und woran arbeiten wir nächste Woche weiter. Dieser bewusste Abschluss fährt die Belastung sauber herunter und bleibt der Mannschaft besser im Kopf als ein abruptes Trainingsende.
+## Wie die Einheiten über die Woche zusammenpassen
 
-## Beispiel-Trainingseinheit über 90 Minuten
+Eine einzelne gute Einheit hilft wenig, wenn die Woche nicht passt. Zwei Regeln:
 
-So sieht eine ausgewogene Einheit mit dem Schwerpunkt Angriff gegen eine 6-0-Abwehr aus:
+**Eine harte Einheit pro Woche.** Die zweite ist mittel, die dritte kurz und technisch. Drei mittelharte Einheiten erzeugen Müdigkeit ohne Anpassung – mehr dazu in der [Belastungssteuerung](/ratgeber/handball-belastungssteuerung).
 
-| Zeit | Inhalt | Ziel |
-| --- | --- | --- |
-| 0–10 min | Einlaufen, Lauf-ABC, Mobilisation | Puls hoch, Verletzungsschutz |
-| 10–20 min | Passen in Bewegung, Torwurf-Serien | handballspezifisch aufwärmen |
-| 20–40 min | Stoßbewegung und Kreuzen ohne Gegner | Technik isoliert festigen |
-| 40–60 min | Angriffszüge gegen halbaktive Abwehr | Tempo und Entscheidungen |
-| 60–75 min | Freies Spiel 6-gegen-6 auf zwei Tore | Anwendung unter Druck |
-| 75–90 min | Auslaufen, Dehnen, kurzes Feedback | Regeneration und Abschluss |
+**Ein Schwerpunkt pro Woche, nicht pro Einheit.** Wenn du drei Wochen am Kreisanspiel arbeitest, siehst du eine Veränderung. Wenn jede Einheit einen anderen Schwerpunkt hat, siehst du gar nichts. Der Wochenschwerpunkt taucht in allen Einheiten der Woche auf, nur mit unterschiedlicher Gewichtung.
 
-Passe die Zeiten an deine Trainingsdauer an. Bei nur 75 Minuten kürzt du vor allem den Hauptteil, bei 120 Minuten erweiterst du ihn um einen zweiten Übungsblock – Aufwärmen und Ausklang bleiben dagegen ungefähr gleich lang.
+Für die Wettkampfphase heißt das konkret: montags oder dienstags die harte Einheit mit dem Wochenschwerpunkt, donnerstags dieselbe Sache in spielnaher Form, freitags kurz und bekannt.
 
-## Häufige Fehler bei der Trainingsplanung
+## Was du danach prüfst
 
-Die meisten Einheiten scheitern nicht an den Übungen selbst, sondern an der Planung drumherum. Diese vier Fehler siehst du am häufigsten:
+Eine Einheit lässt sich auswerten, und zwar einfacher als ein Spiel:
 
-- **Zu viele Themen:** Wer Wurf, Abwehr und Kondition in eine Einheit presst, trainiert am Ende nichts richtig. Bleib bei einem Schwerpunkt.
-- **Zu viel Stehen und Reden:** Lange Erklärungen und endlose Warteschlangen killen jede Einheit. Erkläre kurz, lass viel spielen und korrigiere im Tun.
-- **Kein roter Faden:** Werden Übungen zusammenhanglos aneinandergereiht, fehlt der Lerneffekt. Jede Übung sollte auf den Tagesschwerpunkt einzahlen.
-- **Keine Anpassung:** Ein Plan ist ein Vorschlag, kein Gesetz. Läuft eine Übung nicht oder ist die Gruppe platt, ändere sie spontan.
+**Zähl das Zielverhalten in der Spielform.** Wenn der Schwerpunkt Kreisanspiele waren, zählst du Kreisanspiele im Abschlussspiel. Die Zahl ist deine Rückmeldung – an dich, nicht an die Mannschaft.
 
-Ein einfacher Test für deinen Plan: Kannst du in einem einzigen Satz sagen, was das Ziel der heutigen Einheit ist? Wenn nicht, ist die Planung noch nicht fertig.
+**Vergleiche dieselbe Spielform über mehrere Wochen.** Gleiche Form, gleiche Dauer, gleiche Zahl. Steigt sie, wirkt dein Schwerpunkt.
 
-## Fortschritt dokumentieren
+**Übertrage die Zahl aufs Spiel.** Erst der Vergleich zwischen Trainings- und Spielwert sagt dir, ob das Verhalten wirklich angekommen ist oder nur unter Trainingsbedingungen funktioniert.
 
-Gute Planung endet nicht mit dem Abpfiff. Wer festhält, welche Schwerpunkte er wann trainiert hat und wie sich einzelne Spieler entwickeln, plant die nächste Einheit deutlich gezielter. So erkennst du über die Wochen, ob dein Wurftraining wirklich die Quote hebt oder deine neu einstudierte Abwehr im Spiel hält – und musst dich nicht auf dein Bauchgefühl verlassen.
+**Prüfe die Trainingsbeteiligung.** Die unspektakulärste Kennzahl und eine der aussagekräftigsten: Wenn die Einheiten gut sind, kommen die Leute.
 
-Genau dabei hilft dir eine [kostenlose Handball-Statistik-App](/handball-statistik-app-kostenlos) wie **Statix**: Du dokumentierst Spielentwicklung und Trainingsfortschritt live per Tap – offline in der Halle, ganz ohne Zettelwirtschaft. Über die Saison entsteht so ein klares Bild, das deine Trainingsplanung mit echten Zahlen füttert. Für den Nachwuchsbereich gibt es dafür eine eigene Übersicht: [Statix für Jugendtrainer](/fuer-jugendtrainer). Wenn du das einfach ausprobieren willst: Es gibt eine kostenlose Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ein letzter Hinweis zur Planung selbst: Schreib deine Einheit auf, auch wenn du sie im Kopf hast. Eine notierte Einheit lässt sich nach dem Training in zwei Minuten kommentieren – was zu lange gedauert hat, was nicht funktioniert hat. Nach einer Halbserie hast du damit eine Übungssammlung, die zu deiner Mannschaft passt statt zu einer aus dem Internet.`,
+  modules: [
+    {
+      after: 'Die Einheit im Ablauf',
+      kind: 'sessionTimeline',
+      caption: '90 Minuten, Standardaufbau',
+      blocks: [
+        {
+          minutes: 12,
+          label: 'Aufwärmen mit Ball',
+          note: 'Puls hoch, Ballkontakte hoch. Kein Standlaufen, keine Reihen.',
+        },
+        {
+          minutes: 15,
+          label: 'Koordination oder Explosivität',
+          note: 'Frisches Nervensystem nutzen – nie später in der Einheit.',
+        },
+        {
+          minutes: 20,
+          label: 'Schwerpunkt technisch',
+          note: 'Die Kernübung des Tages, mit Coaching zu genau einem Punkt.',
+        },
+        {
+          minutes: 20,
+          label: 'Schwerpunkt unter Bedingung',
+          note: 'Dieselbe Sache mit Gegner, Zeitdruck oder Entscheidung.',
+        },
+        {
+          minutes: 18,
+          label: 'Spielform mit Zielverhalten',
+          note: 'Regel oder Wertung lenkt auf den Schwerpunkt. Hier wird gezählt.',
+        },
+        { minutes: 5, label: 'Ausklang und eine Rückmeldung' },
+      ],
+    },
+    {
+      after: 'Fünf Bausteine, aus denen jede Einheit besteht',
+      kind: 'exercise',
+      name: '1 · Aufwärmen mit Ball',
+      meta: '10–15 Min. · alle Stufen',
+      setup:
+        'Jeder Spieler ein Ball, freies Laufen über die ganze Halle mit wechselnden Aufgaben vom Trainer.',
+      organisation:
+        'Keine Reihen, kein Kreis, keine Wartezeit. Aufgaben alle 60 bis 90 Sekunden wechseln.',
+      coachingPoints: [
+        'Puls und Ballkontakte gleichzeitig – ein Aufwärmen ohne Ball verschenkt zehn Minuten.',
+        'Beidhändige Aufgaben von Anfang an.',
+        'Die Intensität steigt über den Block, sie startet nicht hoch.',
+      ],
+      commonError:
+        'Gedehnt wird statisch, bevor gelaufen wird. Danach fühlen sich alle locker und springen schlechter.',
+      variation: 'Als Fangspiel mit zwei Fängern – dieselbe Wirkung, höhere Beteiligung.',
+    },
+    {
+      after: 'Fünf Bausteine, aus denen jede Einheit besteht',
+      kind: 'exercise',
+      name: '2 · Der Explosivblock',
+      meta: '10–15 Min. · ab C-Jugend',
+      setup:
+        'Kurze Antritte, Sprünge oder Reaktionsformen mit vollständigen Pausen, direkt nach dem Aufwärmen.',
+      organisation:
+        'Sechs bis acht Wiederholungen je Spieler mit mindestens 45 Sekunden Pause. Kurze Pausen machen daraus Ausdauertraining.',
+      coachingPoints: [
+        'Qualität vor Menge – sobald das Tempo sichtbar sinkt, ist der Block zu Ende.',
+        'Immer vor der Belastung, nie nach dem Spielformblock.',
+        'Handballnahe Startpositionen wählen: nach Landung, nach Richtungswechsel.',
+      ],
+      commonError:
+        'Der Block wird ans Ende der Einheit gelegt, weil dort noch Zeit ist. Damit trainierst du Ermüdungsbewegungen.',
+    },
+    {
+      after: 'Fünf Bausteine, aus denen jede Einheit besteht',
+      kind: 'exercise',
+      name: '3 · Der technische Schwerpunkt',
+      meta: '15–20 Min. · alle Stufen',
+      setup:
+        'Die Kernübung des Tages, zunächst ohne Gegner, mit hoher Wiederholungszahl und einem einzigen Coaching-Punkt.',
+      organisation:
+        'Kleine Gruppen, mehrere parallele Stationen. Der Trainer bleibt bei einer Station und coacht, statt alle zu beaufsichtigen.',
+      coachingPoints: [
+        'Ein Coaching-Punkt pro Übung. Zwei sind schon zu viel.',
+        'Der Punkt wird zu Beginn genannt und am Ende überprüft.',
+        'Korrigiere über die Bedingung, nicht über den Zuruf, wo es geht.',
+      ],
+      commonError:
+        'Der Trainer wandert zwischen den Stationen und coacht überall ein bisschen. Am Ende hat niemand eine vollständige Korrektur bekommen.',
+    },
+    {
+      after: 'Fünf Bausteine, aus denen jede Einheit besteht',
+      kind: 'exercise',
+      name: '4 · Derselbe Schwerpunkt unter Bedingung',
+      meta: '15–20 Min. · ab C-Jugend',
+      setup:
+        'Die Kernübung wiederholt sich, jetzt mit Gegner, Zeitdruck oder Entscheidungszwang.',
+      organisation:
+        'Halbaktiver Gegner zuerst, aktiver danach. Der Wechsel erfolgt innerhalb des Blocks, nicht erst in der nächsten Woche.',
+      coachingPoints: [
+        'Die Bedingung ersetzt die Ansage – wenn du rufen musst, ist die Bedingung zu schwach.',
+        'Nur zum Schwerpunkt coachen, alles andere läuft.',
+        'Ein Freeze pro Durchgang reicht.',
+      ],
+      commonError:
+        'Der Schritt zur Bedingung wird ausgelassen, weil die Technik noch nicht perfekt ist. Sie wird ohne Gegner aber auch nicht besser.',
+    },
+    {
+      after: 'Fünf Bausteine, aus denen jede Einheit besteht',
+      kind: 'exercise',
+      name: '5 · Die Spielform mit Zielverhalten',
+      meta: '15–20 Min. · alle Stufen',
+      setup:
+        'Spielform mit einer Regel oder Wertung, die das Zielverhalten häufiger macht – etwa doppelte Punkte für Tore nach Kreisanspiel.',
+      organisation:
+        'Vier Durchgänge à vier Minuten. Der Trainer zählt das Zielverhalten mit und nennt die Zahl am Ende.',
+      coachingPoints: [
+        'Coaching zwischen den Durchgängen, nicht mittendrin.',
+        'Die Regel bleibt über die ganze Woche gleich, damit ein Vergleich möglich ist.',
+        'Die gezählte Zahl ist eine Rückmeldung an dich, keine Bewertung der Mannschaft.',
+      ],
+      commonError:
+        'Die Spielform läuft ohne Regel als "Abschlussspiel". Damit endet die Einheit mit dem Teil, der am wenigsten trainiert.',
+    },
+  ],
   faqs: [
     {
       question: 'Wie lange sollte eine Handball-Trainingseinheit dauern?',
       answer:
-        'Die meisten Einheiten dauern zwischen 75 und 120 Minuten. Rund 20 % entfallen auf das Aufwärmen, 55–65 % auf den Hauptteil und der Rest auf Spielformen und Ausklang. Bei kürzerer Trainingszeit kürzt du vor allem den Hauptteil.',
-    },
-    {
-      question: 'Wie baue ich eine Handball-Trainingseinheit auf?',
-      answer:
-        'In drei Phasen: Aufwärmen (allgemein und handballspezifisch), Hauptteil mit einem klaren Schwerpunkt und Ausklang mit Spielformen und Cool-down. Arbeite dich dabei vom Einfachen zum Komplexen, von langsam zu schnell und von ohne Druck zu mit Druck vor.',
+        'Im Erwachsenen- und älteren Jugendbereich sind 90 Minuten der Standard, in der Kinder- und unteren Jugendstufe 60 bis 75 Minuten. Entscheidender als die Dauer ist die Verteilung: Koordinatives und Explosives an den Anfang, Belastung in die Mitte, spielnahe Formen ans Ende.',
     },
     {
       question: 'Wie viele Schwerpunkte sollte eine Trainingseinheit haben?',
       answer:
-        'Genau einen. Wer Technik, Taktik und Athletik in eine Einheit packt, trainiert nichts richtig. Entscheide dich pro Training für ein Thema und baue alle Übungen darauf auf – so entsteht ein roter Faden und ein echter Lerneffekt.',
+        'Genau einen. Ein Schwerpunkt bedeutet, dass er in mindestens drei Bausteinen der Einheit vorkommt und dass ausschließlich zu ihm gecoacht wird – alles andere läuft, wird aber nicht korrigiert. Drei Schwerpunkte in einer Einheit sind keiner.',
+    },
+    {
+      question: 'Was kann ich meinen Spielern als Hausaufgabe mitgeben?',
+      answer:
+        'Alles, was ohne Anleitung, Gegner und Sicherung funktioniert: Ballgewöhnung an der Wand, Mobilität für Schulter und Hüfte, Rumpfstabilität und eine konkrete Beobachtungsaufgabe zu einem Spiel. Nicht auslagern solltest du Übungen mit Zusatzgewicht, intensive Sprungserien und alles, was du nicht mindestens einmal korrigiert hast.',
+    },
+    {
+      question: 'Wie sorge ich dafür, dass Hausaufgaben wirklich gemacht werden?',
+      answer:
+        'Mit einer sehr kurzen Liste von höchstens fünf Übungen, einer festen Frequenz und einer Nachfrage im Training. Ohne Nachfrage macht es nach drei Wochen niemand mehr. Die Nachfrage muss nicht kontrollierend sein – eine kurze Runde "Wer hat es diese Woche geschafft?" reicht.',
     },
     {
       question: 'Was sind die häufigsten Fehler bei der Trainingsplanung?',
       answer:
-        'Zu viele Themen auf einmal, zu viel Stehen und Reden, ein fehlender roter Faden und keine Anpassung an die Tagesform. Ein guter Test: Kannst du das Ziel der Einheit in einem Satz sagen? Wenn nicht, ist der Plan noch nicht fertig.',
+        'Zu viele Ziele in einer Einheit, Explosivblöcke am Ende statt am Anfang, wechselnde Schwerpunkte von Einheit zu Einheit und ein Abschlussspiel ohne jede Bedingung. Der vierte Punkt ist der teuerste: Die letzten 20 Minuten sind der spielnächste Teil des Trainings und werden am seltensten genutzt.',
     },
   ],
   relatedSlugs: [
-    'handball-aufwaermen-uebungen',
+    'handball-spielformen-training',
+    'handball-belastungssteuerung',
     'handball-saisonvorbereitung',
-    'handball-koordinationstraining',
+    'handball-athletiktraining',
+    'handball-aufwaermen-uebungen',
   ],
 };

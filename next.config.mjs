@@ -51,6 +51,59 @@ const baseConfig = {
   },
   output: 'standalone',
 
+  /**
+   * Ratgeber-Zusammenlegung 2026: 24 Artikel sind in umfassendere Ziele
+   * aufgegangen oder wurden ersatzlos entfernt. Ihre Inhalte stehen jeweils im
+   * Ziel, deshalb sind alle Weiterleitungen dauerhaft (301).
+   *
+   * Interne Links im Ratgeber zeigen bereits direkt auf die Ziele – diese
+   * Regeln fangen nur externe Links und den Index ab.
+   *
+   * `/ratgeber/handball-spielfeld-masse` bleibt unverändert bestehen und ist
+   * hier bewusst nicht enthalten.
+   */
+  async redirects() {
+    const merged = {
+      // Wurftraining planen
+      'handball-wurfarten': 'handball-wurftraining-sprungwurf',
+      'handball-schlagwurf-technik': 'handball-wurftraining-sprungwurf',
+      'handball-stemmschritt-dreierrhythmus': 'handball-wurftraining-sprungwurf',
+      // Athletik & Kondition planen
+      'handball-krafttraining': 'handball-athletiktraining',
+      'handball-sprungkraft-verbessern': 'handball-athletiktraining',
+      'handball-schnelligkeit-verbessern': 'handball-athletiktraining',
+      'handball-beweglichkeit-dehnen': 'handball-athletiktraining',
+      'handball-kondition-verbessern': 'handball-athletiktraining',
+      // Belastungssteuerung rund um den Spieltag
+      'handball-regeneration': 'handball-belastungssteuerung',
+      'handball-verletzungen-vorbeugen': 'handball-belastungssteuerung',
+      'handball-ernaehrung': 'handball-belastungssteuerung',
+      // Torwarttraining
+      'handball-torwart-tipps': 'handball-torwarttraining',
+      'handball-siebenmeter-halten': 'handball-torwarttraining',
+      // Zweikampf trainieren
+      'handball-finte-lernen': 'handball-1-gegen-1-verbessern',
+      'handball-abwehr-1-gegen-1': 'handball-1-gegen-1-verbessern',
+      // Positionen & Anforderungsprofile
+      'handball-aussenspieler-tipps': 'handball-positionen-erklaert',
+      'handball-spielmacher-werden': 'handball-positionen-erklaert',
+      'handball-welche-position-passt-zu-mir': 'handball-positionen-erklaert',
+      // ersatzlos entfernt, Inhalte im jeweiligen Ziel
+      'handball-quereinsteiger-erwachsene': 'handball-regeln-einfach-erklaert',
+      'handball-alleine-trainieren': 'handball-training-planen',
+      'handball-kempa-trick': 'handball-angriffssysteme-einsteiger',
+      'handball-freilaufen-ohne-ball': 'handball-angriffssysteme-einsteiger',
+      'handball-nervositaet-vor-spielen': 'handball-mentaltraining',
+      'handball-harz-tipps': 'handball-ausruestung-einsteiger',
+    };
+
+    return Object.entries(merged).map(([from, to]) => ({
+      source: `/ratgeber/${from}`,
+      destination: `/ratgeber/${to}`,
+      permanent: true,
+    }));
+  },
+
   async headers() {
     return [
       {
