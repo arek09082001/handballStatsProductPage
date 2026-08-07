@@ -17,8 +17,8 @@ export const handball51Abwehr: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Die 5:1 schiebt einen Spieler nach vorne, um den Rückraum zu stören und den Spielmacher zu binden – ohne den Kreis aufzugeben. So funktioniert das beliebteste Zwischensystem.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -84,7 +84,7 @@ Wie bei jeder Abwehr entscheidet die **Kommunikation**: Die Spitze und der Innen
 
 ## Wirkung der 5:1 überprüfen
 
-Ob die 5:1 den gegnerischen Rückraum wirklich entschärft, siehst du an der Wurfverteilung – die Systematik dahinter beschreibt der Ratgeber zur [datenbasierten Spielanalyse](/ratgeber/handball-spielanalyse). Sinken die Distanztore und steigen die technischen Fehler des Gegners, wirkt das System. Mit **Statix** lässt sich die [Handball-Statistik per Tap](/) erfassen – Gegentore nach Zonen und provozierte Ballverluste live – so erkennst du sofort, ob sich der Systemwechsel auszahlt oder ob der Gegner die Lücken neben der Spitze findet. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ob die 5:1 den gegnerischen Rückraum wirklich entschärft, siehst du an der Wurfverteilung – die Systematik dahinter beschreibt der Ratgeber zur [datenbasierten Spielanalyse](/ratgeber/handball-spielanalyse). Sinken die Distanztore und steigen die technischen Fehler des Gegners, wirkt das System. Mit **Statix** lässt sich die [Handball-Statistik per Tap](/) erfassen – Gegentore nach Zonen und provozierte Ballverluste live – so erkennst du sofort, ob sich der Systemwechsel auszahlt oder ob der Gegner die Lücken neben der Spitze findet.`,
   faqs: [
     {
       question: 'Was ist die 5:1-Abwehr im Handball?',
@@ -100,11 +100,6 @@ Ob die 5:1 den gegnerischen Rückraum wirklich entschärft, siehst du an der Wur
       question: 'Wann sollte man die 5:1-Abwehr spielen?',
       answer:
         'Vor allem gegen Mannschaften, die ihre Tore über einen starken Rückraum und einen dominanten Spielmacher erzielen. Gegen Teams, die über Tempo, Außen und Kreis kommen, ist sie riskanter. Viele Mannschaften nutzen die 5:1 situativ als Wechselsystem, um den Rhythmus des Gegners zu brechen.',
-    },
-    {
-      question: 'Was sind die Schwächen der 5:1-Abwehr?',
-      answer:
-        'Neben dem vorgezogenen Spieler können Lücken entstehen, und ein gutes Kreuzen im Rückraum kann die Spitze aushebeln. Außerdem läuft der Vorgezogene sehr viel, sodass bei Müdigkeit die Störwirkung nachlässt. Spielt der Gegner mit zwei Kreisläufern, wird die hintere Kette zusätzlich ausgedünnt.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballRueckraumspielerTipps: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-16',
-  dateModified: '2026-07-16',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Im Rückraum laufen fast alle Angriffe zusammen: Distanzwurf, Durchbruch, Anspiel – du brauchst alle Werkzeuge. Diese Tipps machen dich zum kompletten Rückraumspieler.',
   heroEyebrow: 'Technik & Wurf',
@@ -76,13 +76,7 @@ Rückraumspieler verteidigen meist im Innenblock oder auf den Halbpositionen –
 - **1-gegen-1-Duelle auf der Naht:** gegen versetzt stehende Verteidiger
 - **Entscheidungstraining:** 2 gegen 2 mit Kreisläufer – Wurf, Durchbruch oder Anspiel je nach Abwehrverhalten
 - **Sprungkraft und Rumpfstabilität:** die athletische Basis für den Wurf über den Block
-- **Videoanalyse:** eigene Wurfauswahl überprüfen – waren die vergebenen Würfe gute Würfe?
-
-## Deine Wirkung in Zahlen
-
-Ob du wirklich die Dreifach-Drohung bist, verrät dir die Statistik: Wurfquote aus der Distanz, Tore aus dem Durchbruch, Assists an Kreis und Außen, technische Fehler. Die Distanzquote kannst du dir direkt [ausrechnen lassen](/wurfquote-rechner).
-
-Mit **Statix**, der [Handball-Statistik-App für Trainer](/), erfasst du all das live per Tap – inklusive Wurfpositionen auf der Shot Map. So siehst du, ob deine Würfe aus guten Räumen kommen und wie viel dein Spiel für die Mitspieler erzeugt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- **Videoanalyse:** eigene Wurfauswahl überprüfen – waren die vergebenen Würfe gute Würfe?`,
   faqs: [
     {
       question: 'Was macht einen guten Rückraumspieler aus?',
@@ -98,11 +92,6 @@ Mit **Statix**, der [Handball-Statistik-App für Trainer](/), erfasst du all das
       question: 'Wo greift ein Halbspieler am besten an?',
       answer:
         'In die Naht – den Raum zwischen zwei Abwehrspielern – und meist diagonal Richtung Tormitte. Zwei Verteidiger, die sich absprechen müssen, machen mehr Fehler als einer. Hilft der zweite Verteidiger aus, entsteht automatisch Raum für den Kreisläufer oder den Außenspieler.',
-    },
-    {
-      question: 'Welche Position im Rückraum passt zu mir?',
-      answer:
-        'Rückraum Mitte ist die Spielmacherposition mit dem größten Fokus auf Übersicht und Anspiele. Die Halbpositionen leben stärker von Wurfgewalt und dem 1 gegen 1; auf Rückraum rechts sind Linkshänder wegen des Wurfwinkels besonders wertvoll. Große, wurfstarke Spieler passen oft auf halb, spielintelligente Verteiler auf die Mitte.',
     },
   ],
   relatedSlugs: [

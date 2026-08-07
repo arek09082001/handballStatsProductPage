@@ -17,8 +17,8 @@ export const handballKreislaeuferSpielen: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-08',
-  dateModified: '2026-07-08',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Der Kreisläufer arbeitet im härtesten Bereich des Feldes. Hier erfährst du seine Aufgaben, die wichtigste Technik für Sperren und Anspiele und worauf es auf der Position wirklich ankommt.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -89,13 +89,7 @@ Meist verteidigt der Angriffs-Kreisläufer im Zentrum der Abwehr, oft als Innenb
 - Kommunikation, um Sperren früh anzusagen und aufzulösen,
 - Robustheit, denn im Innenblock geht es körperlich am härtesten zu.
 
-Viele Kreisläufer sind damit in beiden Spielrichtungen im Zentrum zu Hause – der körperlich forderndste Bereich des Feldes.
-
-## Wirkung sichtbar machen
-
-Die Leistung eines Kreisläufers zeigt sich nicht nur an eigenen Toren, sondern an seiner Wurfquote aus kurzer Distanz, seinen erzwungenen Freiwürfen und den Toren, die aus seinen Sperren entstehen.
-
-Mit **Statix**, der [Handball-Statistik-App für Vereine](/), erfasst du Tore, Wurfquoten je Position und technische Aktionen live per Tap. Wie die Bewegungen davor entstehen, zeigt der Ratgeber zu [Kreuzen und Stoßen](/ratgeber/handball-kreuzen-stossen). So siehst du, wie stark dein Kreisläufer aus dem Nahbereich trifft und wie viel Gefahr über den Kreis entsteht – Zahlen, die ein Blick allein nicht liefert. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Viele Kreisläufer sind damit in beiden Spielrichtungen im Zentrum zu Hause – der körperlich forderndste Bereich des Feldes.`,
   faqs: [
     {
       question: 'Was macht ein Kreisläufer im Handball?',
@@ -111,11 +105,6 @@ Mit **Statix**, der [Handball-Statistik-App für Vereine](/), erfasst du Tore, W
       question: 'Welche Eigenschaften braucht ein guter Kreisläufer?',
       answer:
         'Wichtig sind körperliche Robustheit und Zweikampfstärke, aber ebenso Timing für die Sperren, gutes Lesen von Lücken, schnelle Ballannahme und Abschlusssicherheit aus engen Winkeln. Ein guter Kreisläufer wird oft mehr an seiner Sperrarbeit gemessen als an eigenen Toren.',
-    },
-    {
-      question: 'Welche Würfe nutzt ein Kreisläufer?',
-      answer:
-        'Typisch sind der Drehwurf nach Anspiel mit dem Rücken zum Tor, der Fallwurf weg vom Abwehrspieler, der schnelle Direktabschluss in die Lücke und der Nachwurf nach einem Fehlwurf. Da Zeit und Raum am Kreis knapp sind, zählen blitzschnelle Annahme und kompakte Wurfbewegung.',
     },
   ],
   relatedSlugs: [

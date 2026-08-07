@@ -17,8 +17,8 @@ export const handballMinihandballKinder: Article = {
   ],
   category: 'Jugend & Entwicklung',
   datePublished: '2026-06-30',
-  dateModified: '2026-06-30',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Bei den Jüngsten zählt nicht Taktik, sondern Spaß, Bewegung und Ballgefühl. Hier bekommst du Praxistipps, wie du Kindern im Minihandball spielerisch die Freude am Sport vermittelst.',
   heroEyebrow: 'Jugend & Entwicklung',
@@ -87,13 +87,7 @@ Kinder motivieren sich über Erfolgserlebnisse, Lob und Zugehörigkeit. Ein paar
 - **Klare Rituale:** feste Abläufe geben Kindern Sicherheit und Orientierung.
 - **Eltern einbeziehen:** kurz erklären, worum es geht – nämlich um Spaß und Entwicklung, nicht um Ergebnisse.
 
-Ein Trainer, der Begeisterung ausstrahlt und geduldig bleibt, hält die Gruppe fast von allein zusammen.
-
-## Die Entwicklung im Blick behalten
-
-Auch wenn Ergebnisse im Minihandball keine Rolle spielen, hilft es, die Entwicklung und Teilnahme der Kinder im Blick zu behalten: Wer kommt regelmäßig, wer entwickelt sich wie, wo braucht ein Kind mehr Unterstützung? Das ist keine Leistungsbewertung, sondern hilft dir, jedes Kind individuell zu fördern.
-
-Mit **Statix**, der [Handball-Statistik für den Nachwuchs](/fuer-jugendtrainer), kannst du Anwesenheit und die Entwicklung deiner Spieler über die Zeit festhalten – unaufgeregt und ohne Leistungsdruck. Wie sich das Training mit wachsendem Alter verändert, steht im Ratgeber [Jugendhandball trainieren](/ratgeber/jugendhandball-trainieren). So behältst du auch bei der jüngsten Gruppe den Überblick und siehst, wie sich dein Nachwuchs Schritt für Schritt entwickelt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ein Trainer, der Begeisterung ausstrahlt und geduldig bleibt, hält die Gruppe fast von allein zusammen.`,
   faqs: [
     {
       question: 'Ab welchem Alter können Kinder Handball spielen?',
@@ -104,16 +98,6 @@ Mit **Statix**, der [Handball-Statistik für den Nachwuchs](/fuer-jugendtrainer)
       question: 'Wie bringt man Kindern Handball bei?',
       answer:
         'Spielerisch und mit viel Bewegung: durch Ballgewöhnung, Fang- und Bewegungsspiele, vielseitiges Werfen und Fangen sowie kleine Spielformen wie 3 gegen 3. Wichtig sind viele Ballkontakte, kurze klare Ansagen, wenig Wartezeit und vor allem Spaß. Technik und Taktik stehen bei den Jüngsten noch nicht im Vordergrund.',
-    },
-    {
-      question: 'Wie baue ich ein Minihandball-Training auf?',
-      answer:
-        'Abwechslungsreich und mit rotem Faden: ein Lauf- oder Fangspiel zum Aufwärmen, danach Ballgewöhnung mit vielen Kontakten, ein Hauptteil aus kleinen Spielformen, Werfen und Parcours und zum Abschluss ein beliebtes Spiel als Höhepunkt. Ziel ist, dass die Kinder mit einem Erfolgserlebnis und Lust auf das nächste Mal gehen.',
-    },
-    {
-      question: 'Warum spielt man mit kleinen Kindern nicht gleich 6 gegen 6?',
-      answer:
-        'Weil das große Spiel kleine Kinder überfordert: zu viele Spieler, zu wenig Ballkontakte und zu komplexe Abläufe. Kleine Spielformen wie 3 gegen 3 oder 4 gegen 4 sorgen dafür, dass jedes Kind oft am Ball ist, viele Abschlüsse erlebt und dadurch mehr Erfolgserlebnisse und Freude hat.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballTimeoutNutzen: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 6,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     '60 Sekunden können ein Spiel drehen – wenn du sie richtig nutzt. Wann du das Team-Timeout ziehst, was du ansprichst und welche Fehler du vermeidest.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -74,7 +74,7 @@ In engen Schlussminuten wird das Timeout auch zum Werkzeug des Zeitmanagements: 
 
 ## Entscheidungen auf Datenbasis treffen
 
-Die Frage, wann ein Lauf gefährlich wird, lässt sich mit Zahlen schärfen. Mit **Statix** hast du die [Live-Statistik für die Bank](/) und siehst in Echtzeit, wie sich Effektivität und Torfolge entwickeln – so erkennst du einen Negativlauf früh und ziehst dein Timeout, bevor der Vorsprung schmilzt. Nach dem Spiel lässt sich sogar auswerten, wie eure Mannschaft nach Auszeiten agiert hat – eingebettet in eine vollständige [Spielanalyse für Trainer](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Die Frage, wann ein Lauf gefährlich wird, lässt sich mit Zahlen schärfen. Mit **Statix** hast du die [Live-Statistik für die Bank](/) und siehst in Echtzeit, wie sich Effektivität und Torfolge entwickeln – so erkennst du einen Negativlauf früh und ziehst dein Timeout, bevor der Vorsprung schmilzt. Nach dem Spiel lässt sich sogar auswerten, wie eure Mannschaft nach Auszeiten agiert hat – eingebettet in eine vollständige [Spielanalyse für Trainer](/ratgeber/handball-spielanalyse).`,
   faqs: [
     {
       question: 'Wie viele Team-Timeouts hat eine Mannschaft im Handball?',
@@ -90,11 +90,6 @@ Die Frage, wann ein Lauf gefährlich wird, lässt sich mit Zahlen schärfen. Mit
       question: 'Wann sollte ein Trainer das Timeout ziehen?',
       answer:
         'Am wirkungsvollsten, um einen gegnerischen Lauf zu stoppen – idealerweise nach dem zweiten oder dritten Gegentor in Folge, nicht erst, wenn der Vorsprung schon aufgebraucht ist. Weitere gute Momente sind hektische Phasen der eigenen Mannschaft und wichtige Schlusssituationen. Zu langes Zögern ist der teuerste Fehler.',
-    },
-    {
-      question: 'Was sollte man in einem Timeout ansprechen?',
-      answer:
-        'Wenig, aber klar: ein Satz zur Beruhigung oder zum Wachrütteln, dann ein bis zwei konkrete Anweisungen – nicht fünf. Formuliere positiv und sage, was zu tun ist, statt nur zu kritisieren. Ein einziger verständlicher Auftrag wirkt mehr als eine hektische Tafelvorlesung.',
     },
   ],
   relatedSlugs: [

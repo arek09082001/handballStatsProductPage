@@ -17,8 +17,8 @@ export const handballKempaTrick: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-17',
-  dateModified: '2026-07-17',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Anspiel in den Kreis, Fangen in der Luft, Abschluss vor der Landung: Der Kempa ist die Königsdisziplin des Handballs. So lernst du Anspiel, Timing und Abschluss Schritt für Schritt.',
   heroEyebrow: 'Technik & Wurf',
@@ -87,13 +87,7 @@ Wichtig für Trainer: Kempa-Training ist auch Sprung- und Landetraining – Matt
 
 - **Klassischer Kempa:** Anspiel vom Rückraum auf den einlaufenden Kreisläufer oder Außen
 - **Doppel-Kempa:** Der Flieger legt in der Luft noch einmal auf einen zweiten Springer ab – extrem selten, extrem spektakulär
-- **Kempa von außen:** Anspiel des Außenspielers auf den parallel einfliegenden Kreisläufer
-
-## Risiko und Ertrag im Blick behalten
-
-Ob sich spektakuläre Züge lohnen, verrät die Statistik: Wie oft führt der einstudierte Zug zum Tor, wie oft zum Ballverlust mit Gegenstoß? Die Abschlussquote dazu kannst du dir [in Sekunden ausrechnen](/wurfquote-rechner).
-
-Mit **Statix**, der [Statistik-App für Handball-Teams](/), erfasst du Tore, Fehlwürfe und technische Fehler live per Tap und siehst schwarz auf weiß, welche Spielzüge Ertrag bringen. So bleibt der Kempa das, was er sein soll: ein kalkuliertes Highlight. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- **Kempa von außen:** Anspiel des Außenspielers auf den parallel einfliegenden Kreisläufer`,
   faqs: [
     {
       question: 'Was ist der Kempa-Trick im Handball?',

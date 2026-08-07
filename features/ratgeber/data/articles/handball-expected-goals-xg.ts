@@ -17,8 +17,8 @@ export const handballExpectedGoalsXg: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Nicht jeder Wurf ist gleich gut. Expected Goals bewerten die Qualität einer Wurfchance – unabhängig davon, ob der Ball reingeht. So trennst du gute Entscheidungen von Glück und Pech.',
   heroEyebrow: 'Statistik & Kennzahlen',
@@ -83,7 +83,7 @@ xG ist ein Werkzeug, kein Urteil. Es kennt nicht den taktischen Kontext jeder Sz
 
 ## Mit den richtigen Daten zur besseren Chancenqualität
 
-Der Aufwand steht und fällt mit der Erfassung. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), tippst du jeden Wurf live auf einer Torfläche ein – Position, Ausgang und Situation. Daraus entstehen automatisch Wurfbilder und Zonenauswertungen, aus denen sich Chancenqualität ablesen lässt. So diskutierst du nach dem Spiel nicht über Gefühl, sondern über erspielte Würfe. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Der Aufwand steht und fällt mit der Erfassung. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), tippst du jeden Wurf live auf einer Torfläche ein – Position, Ausgang und Situation. Daraus entstehen automatisch Wurfbilder und Zonenauswertungen, aus denen sich Chancenqualität ablesen lässt. So diskutierst du nach dem Spiel nicht über Gefühl, sondern über erspielte Würfe.`,
   faqs: [
     {
       question: 'Was sind Expected Goals (xG) im Handball?',

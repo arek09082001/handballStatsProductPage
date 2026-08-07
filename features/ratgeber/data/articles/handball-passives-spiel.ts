@@ -17,8 +17,8 @@ export const handballPassivesSpiel: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 6,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Der Arm des Schiedsrichters geht nach oben – und plötzlich hat der Angriff nur noch wenige Pässe. Was passives Spiel bedeutet, wann es gepfiffen wird und wie du richtig reagierst.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -66,11 +66,7 @@ Für die verteidigende Mannschaft ist das Vorwarnzeichen ein Signal zum Standhal
 
 ## Warum die Regel dem Spiel guttut
 
-Ohne die Passive-Regel könnten Mannschaften eine Führung durch endloses Ballhalten verwalten – langweilig und dem Sport abträglich. Die Regel hält das Spiel schnell, torreich und attraktiv. Für Spieler heißt das: Wer unter Zeitdruck einen guten Abschluss herausspielen kann, hat einen echten Vorteil.
-
-## Abschlussverhalten unter Druck auswerten
-
-Wie gut eure Mannschaft nach dem Vorwarnzeichen abschließt, ist eine aufschlussreiche Frage. Mit **Statix**, der [Handball-Statistik-App für die Halle](/), erfasst du technische Fehler und Wurfausbeute live – so erkennst du, ob euer Angriff unter Zeitdruck gute Würfe erspielt oder in Hektik verfällt. Welche Angriffsmittel dabei helfen, zeigt der Ratgeber zu den [Angriffssystemen](/ratgeber/handball-angriffssysteme-einsteiger). Aus diesem Wissen wird ein gezieltes Training für genau diese Drucksituationen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ohne die Passive-Regel könnten Mannschaften eine Führung durch endloses Ballhalten verwalten – langweilig und dem Sport abträglich. Die Regel hält das Spiel schnell, torreich und attraktiv. Für Spieler heißt das: Wer unter Zeitdruck einen guten Abschluss herausspielen kann, hat einen echten Vorteil.`,
   faqs: [
     {
       question: 'Was ist passives Spiel im Handball?',
@@ -81,16 +77,6 @@ Wie gut eure Mannschaft nach dem Vorwarnzeichen abschließt, ist eine aufschluss
       question: 'Was bedeutet das Vorwarnzeichen beim passiven Spiel?',
       answer:
         'Wenn die Schiedsrichter einen Angriff für passiv halten, heben sie den Arm. Dieses Vorwarnzeichen bedeutet, dass die Mannschaft zielstrebiger werden muss. Bestraft wird sie noch nicht – sie bekommt die Gelegenheit, den Angriff zu beschleunigen und abzuschließen.',
-    },
-    {
-      question: 'Wie funktioniert die Sechs-Pässe-Regel?',
-      answer:
-        'Nach dem Heben des Arms hat die angreifende Mannschaft noch maximal sechs Pässe Zeit, um einen Torwurf zu machen. Erfolgt danach kein Wurf aufs Tor, wird auf passives Spiel entschieden und der Gegner erhält den Ball per Freiwurf.',
-    },
-    {
-      question: 'Wie sollte man auf das Vorwarnzeichen reagieren?',
-      answer:
-        'Der Angriff sollte ruhig, aber zielstrebig werden: eine einstudierte Auslösehandlung starten, in die Lücke oder zum Kreis stoßen und rechtzeitig einen guten Wurf nehmen, statt die Pässe verstreichen zu lassen. Die Abwehr sollte kompakt bleiben, um den Angriff in einen schlechten Abschluss zu zwingen.',
     },
   ],
   relatedSlugs: [

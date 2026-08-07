@@ -17,8 +17,8 @@ export const handballVerletzungenVorbeugen: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-11',
-  dateModified: '2026-07-11',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Knie, Schulter, Sprunggelenk: Handball ist hart zu Gelenken und Sehnen. Hier bekommst du konkrete Präventionsübungen und Routinen, mit denen dein Team gesünder durch die Saison kommt.',
   heroEyebrow: 'Training & Planung',
@@ -91,13 +91,7 @@ Viele Verletzungen sind Überlastungsfolgen. Deshalb ist kluge Belastungssteueru
 - **Auf Warnsignale hören:** anhaltende Schmerzen sind ein Stoppsignal, kein Zeichen von Härte.
 - **Nicht angeschlagen ins Spiel:** ein nicht ausgeheilter Infekt oder eine Blessur erhöhen das Risiko deutlich.
 
-Prävention ist also nicht nur eine Übung, sondern eine Haltung im gesamten Trainingsbetrieb.
-
-## Überblick behalten mit Daten
-
-Wer Verletzungen und Ausfälle im Team im Blick behält, erkennt Muster: häufen sich Probleme in bestimmten Phasen, nach besonders intensiven Wochen oder bei bestimmten Spielern? Ein einfaches Mitschreiben von Belastung und Ausfällen hilft, rechtzeitig gegenzusteuern.
-
-**Statix**, die [Handball-Statistik-App zum kostenlosen Start](/handball-statistik-app-kostenlos), hilft dir, Einsatzzeiten und Belastungen deiner Spieler über die Saison im Blick zu behalten. So siehst du, wer besonders viel auf dem Feld steht, und kannst Belastung und Regeneration bewusster steuern. Konkrete Bausteine dafür liefert der Ratgeber zur [Regeneration](/ratgeber/handball-regeneration). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Prävention ist also nicht nur eine Übung, sondern eine Haltung im gesamten Trainingsbetrieb.`,
   faqs: [
     {
       question: 'Welche Verletzungen sind im Handball am häufigsten?',

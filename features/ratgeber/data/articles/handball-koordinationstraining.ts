@@ -17,8 +17,8 @@ export const handballKoordinationstraining: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Schnelle Füße, sichere Hände, der richtige Rhythmus im Anlauf: Koordination ist die Grundlage jeder Handballtechnik. Diese Übungen bringen Beinarbeit und Ballkontrolle zusammen.',
   heroEyebrow: 'Training & Planung',
@@ -76,13 +76,7 @@ So wird aus reiner Bewegungsschulung anwendbares Können.
 
 ## Besonderheiten im Kinder- und Jugendtraining
 
-Das beste Alter für Koordination liegt in der Kindheit und frühen Jugend – hier lernt der Körper Bewegungen besonders schnell und dauerhaft. Halte die Übungen abwechslungsreich, spielerisch und mit vielen Wiederholungen, aber ohne Drill. Vielfalt schlägt Spezialisierung: Wer viele verschiedene Bewegungen beherrscht, lernt später jede Handballtechnik leichter.
-
-## Fortschritt sichtbar machen
-
-Koordination verbessert sich langsam und wird im Alltag leicht übersehen. Halte deshalb Meilensteine fest: Schafft der Spieler die Leiter jetzt sauber im Tempo? Landet die Reaktionsübung häufiger im Ziel? So bleibt die Motivation hoch. Wie sich koordinative Fortschritte langfristig in Spielleistung übersetzen, wird sichtbar, wenn du Trainingsschwerpunkte und Spielentwicklung zusammen betrachtest.
-
-Mit **Statix**, der [Statistik-App für Jugendtrainer](/fuer-jugendtrainer), dokumentierst du die Entwicklung deiner Spieler über die Saison – von technischen Fehlern bis zur Wurfausbeute. So erkennst du, ob sich die Arbeit an Beinarbeit und Ballkontrolle im Spiel auszahlt – der Einstieg ist [kostenlos möglich](/handball-statistik-app-kostenlos). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Das beste Alter für Koordination liegt in der Kindheit und frühen Jugend – hier lernt der Körper Bewegungen besonders schnell und dauerhaft. Halte die Übungen abwechslungsreich, spielerisch und mit vielen Wiederholungen, aber ohne Drill. Vielfalt schlägt Spezialisierung: Wer viele verschiedene Bewegungen beherrscht, lernt später jede Handballtechnik leichter.`,
   faqs: [
     {
       question: 'Was gehört zum Koordinationstraining im Handball?',
@@ -93,16 +87,6 @@ Mit **Statix**, der [Statistik-App für Jugendtrainer](/fuer-jugendtrainer), dok
       question: 'Wann sollte man Koordination im Training üben?',
       answer:
         'Am besten früh in der Einheit nach dem Aufwärmen, wenn die Spieler ausgeruht sind. Müdigkeit verschlechtert die Bewegungsqualität und damit den Lerneffekt. Zehn bis fünfzehn konzentrierte Minuten pro Einheit reichen, wichtiger als die Dauer ist die Regelmäßigkeit.',
-    },
-    {
-      question: 'In welchem Alter ist Koordinationstraining am wichtigsten?',
-      answer:
-        'In der Kindheit und frühen Jugend lernt der Körper Bewegungen besonders schnell und dauerhaft. Deshalb ist dieses Alter ideal. Die Übungen sollten abwechslungsreich, spielerisch und vielseitig sein – wer viele Bewegungen beherrscht, lernt später jede Handballtechnik leichter.',
-    },
-    {
-      question: 'Wie macht man Koordinationstraining handballspezifisch?',
-      answer:
-        'Indem man einen Spielbezug einbaut: Beinarbeit an der Leiter direkt gefolgt von einem Sprungwurf, eine Reaktionsübung, die in ein 1-gegen-1 mündet, oder ein Prellparcours, der mit einem Tempogegenstoß endet. So wird aus reiner Bewegungsschulung anwendbares Können.',
     },
   ],
   relatedSlugs: [

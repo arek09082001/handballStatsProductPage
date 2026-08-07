@@ -17,8 +17,8 @@ export const handballSchlagwurfTechnik: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-02',
-  dateModified: '2026-07-02',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Der Schlagwurf ist der wichtigste Grundwurf im Handball. Hier lernst du den kompletten Bewegungsablauf, die richtige Schrittfolge und die typischen Fehler – mit Übungen zum Nachtrainieren.',
   heroEyebrow: 'Technik & Wurf',
@@ -89,13 +89,7 @@ Der Schlagwurf lässt sich gut vom Einfachen zum Schweren aufbauen:
 - **Auf Ziele werfen:** Ecken markieren und die Präzision schulen.
 - **Gegen den Torwart:** unter realistischen Bedingungen abschließen.
 
-Setze im Nachwuchs zuerst auf saubere Technik und erst später auf Wurfhärte. Eine früh eingeschliffene, gute Technik trägt ein ganzes Handballerleben.
-
-## Fortschritt sichtbar machen
-
-Ob deine Wurfarbeit wirkt, zeigt sich an der Wurfquote und daran, aus welchen Positionen dein Team erfolgreich abschließt. Den Wert dazu kannst du dir mit dem Rechner [Wurfquote je Position berechnen](/wurfquote-rechner) ausgeben lassen.
-
-Mit **Statix**, der [Handball-Statistik-App](/), erfasst du Würfe, Tore und Quoten je Spieler und Position live per Tap. So siehst du, welche Schützen wie effizient abschließen und ob sich die technische Arbeit am Schlagwurf in besseren Quoten niederschlägt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Setze im Nachwuchs zuerst auf saubere Technik und erst später auf Wurfhärte. Eine früh eingeschliffene, gute Technik trägt ein ganzes Handballerleben.`,
   faqs: [
     {
       question: 'Was ist der Schlagwurf im Handball?',

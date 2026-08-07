@@ -17,8 +17,8 @@ export const handballSpielformenTraining: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Spieler lernen Handball am besten im Spiel. Spielformen packen Technik, Taktik und Entscheidung in eine motivierende Verpackung. So baust und steuerst du sie richtig.',
   heroEyebrow: 'Training & Planung',
@@ -83,33 +83,7 @@ So bleiben Tempo und Motivation hoch, und die Spieler denken selbst mit.
 
 ## Vom Kleinen ins Große
 
-Ein guter Trainingsaufbau führt vom Kleinen ins Große: erst 1 gegen 1, dann 3 gegen 3, dann 5 gegen 6 oder das komplette Spiel. So überträgt sich das im Kleinen Gelernte Stück für Stück auf die echte Spielsituation.
-
-## Erfolge aus Spielformen sichtbar machen
-
-Ob deine Spielformen im Spiel ankommen, zeigt sich am Wochenende. Werden die einstudierten [Überzahlsituationen](/ratgeber/handball-ueberzahl-unterzahl) genutzt? Sinken die technischen Fehler unter Druck? Mit **Statix**, der [Handball-Statistik-App mit kostenlosem Einstieg](/handball-statistik-app-kostenlos), erfasst du im Spiel genau diese Dinge live per Tap und siehst, ob sich die Arbeit an Spielformen in bessere Entscheidungen und mehr Tore übersetzt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
-  faqs: [
-    {
-      question: 'Was sind Spielformen im Handballtraining?',
-      answer:
-        'Spielformen sind kleine, angepasste Spiele wie 1 gegen 1, 3 gegen 3, Über- und Unterzahlspiele oder Kleinfeldspiele mit mehreren Toren. Sie trainieren Technik, Taktik und vor allem Entscheidungen unter echtem Druck – im Gegensatz zu isolierten Übungen, die feste Abläufe wiederholen.',
-    },
-    {
-      question: 'Warum sind Spielformen effektiver als isolierte Übungen?',
-      answer:
-        'Weil Handball aus Entscheidungen unter Druck besteht. Spielformen zwingen die Spieler, die Situation zu lesen statt nur eine Bewegung abzuspulen, bieten viele Ballkontakte auf wenig Raum und motivieren durch ihren Wettkampfcharakter. Isolierte Übungen bleiben wichtig für das Erlernen neuer Techniken.',
-    },
-    {
-      question: 'Wie lenkt man eine Spielform auf ein bestimmtes Ziel?',
-      answer:
-        'Über Zusatzregeln: Eine Kontaktbegrenzung erzwingt schnelles Passspiel, doppelt zählende Rückraumtore fördern den Distanzwurf, ein Zeitlimit schult Tempo und Belohnungen für offensives Herauslaufen trainieren aggressives Verteidigen. So wird aus einem freien Spiel eine gezielte Trainingsmaßnahme.',
-    },
-    {
-      question: 'Wie coacht man in einer Spielform richtig?',
-      answer:
-        'Zurückhaltend, um die Eigenständigkeit nicht zu zerstören. Beobachte die Form, nutze kurze Stopps für einen prägnanten Hinweis und stelle Fragen statt fertige Lösungen vorzugeben. So bleiben Tempo und Motivation hoch und die Spieler lernen, selbst zu denken.',
-    },
-  ],
+Ein guter Trainingsaufbau führt vom Kleinen ins Große: erst 1 gegen 1, dann 3 gegen 3, dann 5 gegen 6 oder das komplette Spiel. So überträgt sich das im Kleinen Gelernte Stück für Stück auf die echte Spielsituation.`,
   relatedSlugs: [
     'handball-training-planen',
     'handball-1-gegen-1-verbessern',

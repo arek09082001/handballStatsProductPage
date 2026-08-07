@@ -18,8 +18,8 @@ export const handballTrainingPlanen: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-04-20',
-  dateModified: '2026-06-30',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Eine gute Trainingseinheit folgt einem klaren Aufbau: Aufwärmen, Hauptteil mit einem Schwerpunkt und Ausklang. Hier bekommst du die Grundstruktur, realistische Zeitanteile, eine fertige 90-Minuten-Einheit und die häufigsten Planungsfehler.',
   heroEyebrow: 'Training & Planung',
@@ -102,13 +102,7 @@ Die meisten Einheiten scheitern nicht an den Übungen selbst, sondern an der Pla
 - **Kein roter Faden:** Werden Übungen zusammenhanglos aneinandergereiht, fehlt der Lerneffekt. Jede Übung sollte auf den Tagesschwerpunkt einzahlen.
 - **Keine Anpassung:** Ein Plan ist ein Vorschlag, kein Gesetz. Läuft eine Übung nicht oder ist die Gruppe platt, ändere sie spontan.
 
-Ein einfacher Test für deinen Plan: Kannst du in einem einzigen Satz sagen, was das Ziel der heutigen Einheit ist? Wenn nicht, ist die Planung noch nicht fertig.
-
-## Fortschritt dokumentieren
-
-Gute Planung endet nicht mit dem Abpfiff. Wer festhält, welche Schwerpunkte er wann trainiert hat und wie sich einzelne Spieler entwickeln, plant die nächste Einheit deutlich gezielter. So erkennst du über die Wochen, ob dein Wurftraining wirklich die Quote hebt oder deine neu einstudierte Abwehr im Spiel hält – und musst dich nicht auf dein Bauchgefühl verlassen.
-
-Genau dabei hilft dir eine [kostenlose Handball-Statistik-App](/handball-statistik-app-kostenlos) wie **Statix**: Du dokumentierst Spielentwicklung und Trainingsfortschritt live per Tap – offline in der Halle, ganz ohne Zettelwirtschaft. Über die Saison entsteht so ein klares Bild, das deine Trainingsplanung mit echten Zahlen füttert. Für den Nachwuchsbereich gibt es dafür eine eigene Übersicht: [Statix für Jugendtrainer](/fuer-jugendtrainer). Wenn du das einfach ausprobieren willst: Es gibt eine kostenlose Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ein einfacher Test für deinen Plan: Kannst du in einem einzigen Satz sagen, was das Ziel der heutigen Einheit ist? Wenn nicht, ist die Planung noch nicht fertig.`,
   faqs: [
     {
       question: 'Wie lange sollte eine Handball-Trainingseinheit dauern?',
@@ -124,11 +118,6 @@ Genau dabei hilft dir eine [kostenlose Handball-Statistik-App](/handball-statist
       question: 'Wie viele Schwerpunkte sollte eine Trainingseinheit haben?',
       answer:
         'Genau einen. Wer Technik, Taktik und Athletik in eine Einheit packt, trainiert nichts richtig. Entscheide dich pro Training für ein Thema und baue alle Übungen darauf auf – so entsteht ein roter Faden und ein echter Lerneffekt.',
-    },
-    {
-      question: 'Was sind die häufigsten Fehler bei der Trainingsplanung?',
-      answer:
-        'Zu viele Themen auf einmal, zu viel Stehen und Reden, ein fehlender roter Faden und keine Anpassung an die Tagesform. Ein guter Test: Kannst du das Ziel der Einheit in einem Satz sagen? Wenn nicht, ist der Plan noch nicht fertig.',
     },
   ],
   relatedSlugs: [

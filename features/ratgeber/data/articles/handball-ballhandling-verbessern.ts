@@ -17,8 +17,8 @@ export const handballBallhandlingVerbessern: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-03',
-  dateModified: '2026-07-03',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Sicheres Ballhandling ist die Grundlage für alles andere im Handball. Hier bekommst du einfache Übungen für Ballgefühl, Fangen, Prellen und Passspiel – für jedes Leistungsniveau.',
   heroEyebrow: 'Technik & Wurf',
@@ -91,13 +91,7 @@ Isolierte Übungen sind der Anfang, aber der Transfer entscheidet. Baue Ballhand
 - **kleine Spielformen** mit hoher Ballkontaktzahl,
 - **Zusatzaufgaben** wie „nur mit der schwächeren Hand“.
 
-So wird sicheres Ballhandling nicht zur Trockenübung, sondern zur selbstverständlichen Grundlage des Spiels.
-
-## Fortschritt sichtbar machen
-
-Besseres Ballhandling zeigt sich vor allem an einer sinkenden Zahl technischer Fehler: weniger Fehlpässe, weniger Prell- und Schrittfehler, weniger verlorene Bälle.
-
-Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du technische Fehler und Ballverluste live per Tap und siehst über die Saison, ob dein Team sicherer mit dem Ball umgeht. Gerade im Nachwuchs ist die Entwicklung der Fehlerzahl ein guter Gradmesser für die technische Ausbildung – wie du solche Fortschritte sauber festhältst, steht im Ratgeber [Spielerentwicklung messen](/ratgeber/handball-spielerentwicklung-messen). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+So wird sicheres Ballhandling nicht zur Trockenübung, sondern zur selbstverständlichen Grundlage des Spiels.`,
   faqs: [
     {
       question: 'Wie verbessere ich mein Ballhandling im Handball?',
@@ -113,11 +107,6 @@ Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du techni
       question: 'Wie oft darf man im Handball prellen?',
       answer:
         'Du darfst beliebig lange prellen, solange du den Ball dabei nicht zwischendurch fängst. Hast du ihn nach dem Prellen gefangen, darfst du nicht erneut prellen – das wäre ein Doppeldribbling. Ohne zu prellen sind höchstens drei Schritte mit dem Ball erlaubt.',
-    },
-    {
-      question: 'Warum ist Ballhandling gerade im Nachwuchs so wichtig?',
-      answer:
-        'Weil sicheres Ballhandling die Grundlage für alles andere ist: Wer den Ball beherrscht, kann sich auf Spielübersicht und Entscheidungen konzentrieren und macht weniger technische Fehler. Im Nachwuchs legt gutes Ballhandling das Fundament für Wurf, Finte und Zusammenspiel – deshalb sollte es fester Teil jedes Trainings sein.',
     },
   ],
   relatedSlugs: [

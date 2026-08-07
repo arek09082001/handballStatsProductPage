@@ -17,8 +17,8 @@ export const handballSpielmacherWerden: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-16',
-  dateModified: '2026-07-16',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Der Spielmacher ist der verlängerte Arm des Trainers: Er liest die Abwehr, steuert das Tempo und bringt Mitspieler in Wurfposition. So entwickelst du dich zum Kopf deines Angriffs.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -85,13 +85,7 @@ Als Spielmacher triffst du 50 Entscheidungen pro Spiel – einige werden falsch 
 - **Überzahl-/Unterzahlspiel:** schnelles Erkennen freier Mitspieler unter Druck
 - **Spielzüge gegen wechselnde Abwehrsysteme:** dieselbe Auftaktbewegung gegen 6:0, 5:1 und 3:2:1 lösen
 - **Videoanalyse eigener Spiele:** jede Angriffssequenz bewerten – war die Entscheidung richtig?
-- **Anspiel-Techniken:** Flugbälle an den Kreis, Weiterleitungen, Rückhandpässe – dein Werkzeugkasten
-
-## Entscheidungen mit Daten überprüfen
-
-Ob dein Angriffsspiel funktioniert, zeigen die Mannschaftszahlen: Abschlussquoten nach Angriffsart, technische Fehler, Tore pro Angriff.
-
-Mit **Statix**, der [Statistik-App für Trainer und Vereine](/), erfasst du Tore, Assists und Fehler live per Tap und siehst nach dem Spiel, welche Entscheidungen Abschlüsse erzeugt haben – und wo Angriffe verpuffen. So entwickelst du dein Spielverständnis mit echten Zahlen statt Bauchgefühl. Den größeren Rahmen dazu liefert die [Spielanalyse Schritt für Schritt](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- **Anspiel-Techniken:** Flugbälle an den Kreis, Weiterleitungen, Rückhandpässe – dein Werkzeugkasten`,
   faqs: [
     {
       question: 'Was macht einen guten Spielmacher im Handball aus?',

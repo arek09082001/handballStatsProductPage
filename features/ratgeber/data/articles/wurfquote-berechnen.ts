@@ -17,8 +17,8 @@ export const wurfquoteBerechnen: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-06-02',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Die Wurfquote ist die wichtigste Basiskennzahl im Handball. Hier findest du die Formel, ein Rechenbeispiel, Richtwerte nach Position – und die Fallstricke, die du kennen solltest.',
   heroEyebrow: 'Statistik & Kennzahlen',

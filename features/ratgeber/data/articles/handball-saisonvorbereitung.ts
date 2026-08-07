@@ -18,8 +18,8 @@ export const handballSaisonvorbereitung: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-05-28',
-  dateModified: '2026-07-05',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 5,
   excerpt:
     'Die Saisonvorbereitung legt das Fundament für die gesamte Spielzeit. Hier erfährst du, wie du sie in Phasen gliederst, die Kondition handballspezifisch aufbaust und mit einem klaren Wochenplan strukturiert arbeitest.',
   heroEyebrow: 'Training & Planung',
@@ -111,11 +111,7 @@ Die häufigsten Fehler in der Vorbereitung sind Überladung und fehlende Erholun
 - **Nicht alles auf einmal:** Ausdauer, Kraft und Spielhärte gleichzeitig auf Maximum zu bringen überfordert jeden. Setze Schwerpunkte.
 - **Höre auf dein Team:** Anhaltende Müdigkeit, Leistungseinbrüche und kleine Wehwehchen sind Warnsignale, keine Zeichen von Schwäche.
 
-Eine Vorbereitung, in der die halbe Mannschaft angeschlagen in die Saison geht, hat ihr Ziel verfehlt – egal wie hart trainiert wurde.
-
-## Fortschritt messbar machen
-
-Ob deine Vorbereitung wirkt, siehst du am klarsten in Zahlen. Wurfquoten, Ballverluste und Tempogegenstöße aus den Testspielen zeigen dir schwarz auf weiß, ob die Automatismen greifen und die Form steigt. Wie du die Entwicklung einzelner Spieler dabei festhältst, steht im Ratgeber [Spielerentwicklung messen](/ratgeber/handball-spielerentwicklung-messen). Eine [kostenlose Statistik-App für Handball](/handball-statistik-app-kostenlos) wie **Statix** erfasst diese Werte live per Tap – auch offline in der Halle – und macht den Formaufbau über mehrere Testspiele hinweg vergleichbar. So wird aus dem Bauchgefühl eine belastbare Grundlage für deine letzten Trainingsentscheidungen vor dem Saisonstart. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Eine Vorbereitung, in der die halbe Mannschaft angeschlagen in die Saison geht, hat ihr Ziel verfehlt – egal wie hart trainiert wurde.`,
   faqs: [
     {
       question: 'Wie lange dauert die Handball-Saisonvorbereitung?',
@@ -126,16 +122,6 @@ Ob deine Vorbereitung wirkt, siehst du am klarsten in Zahlen. Wurfquoten, Ballve
       question: 'Wie baue ich im Handball Kondition auf?',
       answer:
         'Handballspezifisch statt nur mit Dauerläufen. Beginne mit Grundlagenausdauer als Basis und gehe dann zu Intervallen, Antritten, Richtungswechseln sowie Kraft- und Stabilisationsarbeit über. Handball ist ein Intervallsport – dein Konditionstraining sollte kurze, explosive Belastungen abbilden.',
-    },
-    {
-      question: 'Wie sollte die Vorbereitung strukturiert sein?',
-      answer:
-        'Nach dem Prinzip der Periodisierung: von allgemein und umfangbetont zu spezifisch und intensitätsbetont. Zuerst Grundlagenausdauer und Athletik, dann handballspezifische Intensität und Spielhärte, zum Schluss Formaufbau mit Testspielen und Taktik.',
-    },
-    {
-      question: 'Wozu dienen Testspiele in der Vorbereitung?',
-      answer:
-        'Testspiele prüfen unter Wettkampfbedingungen, ob das Eingeübte funktioniert. Gib jedem Spiel ein Ziel, beobachte gezielt statt nur mitzufiebern und werte es hinterher aus. Nur ein ausgewertetes Testspiel liefert dir konkrete Trainingsinhalte für die nächste Woche.',
     },
   ],
   relatedSlugs: [

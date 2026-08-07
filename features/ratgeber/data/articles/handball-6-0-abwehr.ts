@@ -17,8 +17,8 @@ export const handball60Abwehr: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Die 6:0 ist die meistgespielte Abwehr im Handball – eine kompakte Wand vor dem Kreis. Wie sie aufgebaut ist, wer welche Aufgabe hat und wie ihr sie zusammen zum Leben erweckt.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -83,7 +83,7 @@ Betone von Anfang an die **Kommunikation**: In der 6:0 muss ständig geredet wer
 
 ## Die Abwehr messbar machen
 
-Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix** kannst du die [Gegentore nach Zonen erfassen](/) und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt – wie du dabei methodisch vorgehst, zeigt der Ratgeber [Spiele strukturiert auswerten](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen viele Tore aus der Distanz, steht ihr zu passiv; fallen sie vom Kreis, reißt der Innenblock. Mit **Statix** kannst du die [Gegentore nach Zonen erfassen](/) und erkennst so genau, wo eure Abwehr Lücken hat. Aus diesem Bild wird ein konkreter Trainingsschwerpunkt – wie du dabei methodisch vorgehst, zeigt der Ratgeber [Spiele strukturiert auswerten](/ratgeber/handball-spielanalyse).`,
   faqs: [
     {
       question: 'Was bedeutet 6:0-Abwehr im Handball?',
@@ -99,11 +99,6 @@ Eine gute 6:0 erkennst du daran, aus welchen Zonen der Gegner trifft. Fallen vie
       question: 'Was ist die größte Schwäche der 6:0-Abwehr?',
       answer:
         'Der Distanzwurf. Weil die Abwehr tief am Kreis steht, haben wurfstarke Rückraumspieler Platz und Zeit für den Wurf aus neun Metern. Zudem erzeugt die 6:0 selbst wenig Druck und provoziert wenige Ballgewinne. Gegen starke Distanzschützen wechseln viele Teams situativ auf ein offensiveres System.',
-    },
-    {
-      question: 'Wie verteidigt man in der 6:0 richtig?',
-      answer:
-        'Über gemeinsames, ballorientiertes Verschieben statt wildem Herauslaufen. Die ganze Kette bewegt sich geschlossen zur Ballseite, wie an einer Schnur. Herausrücken sollte man nur so weit wie nötig, um den Werfer zu stören, und danach sofort zurückarbeiten. Entscheidend sind gleiche Abstände und ständige Kommunikation.',
     },
   ],
   relatedSlugs: [

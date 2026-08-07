@@ -17,8 +17,8 @@ export const handballTempogegenstoss: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-06-18',
-  dateModified: '2026-07-08',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Der Tempogegenstoß bringt die einfachsten Tore im Handball – mit einer Wurfquote von 85 bis 95 Prozent. Hier lernst du die drei Wellen, die schnelle Mitte und die besten Übungen fürs Umschalten.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -111,16 +111,6 @@ Ob dein Tempospiel wirklich Tore bringt, siehst du erst mit Zahlen. Wie du sie i
       question: 'Wie hoch ist die Wurfquote im Tempogegenstoß?',
       answer:
         'Sehr hoch. Im Tempogegenstoß liegt die Trefferquote meist zwischen 85 und 95 Prozent, weil der Werfer frei oder im Eins-gegen-eins mit dem Torwart zum Abschluss kommt. Das macht den Gegenstoß zur effizientesten Wurfsituation im Handball.',
-    },
-    {
-      question: 'Was ist die schnelle Mitte im Handball?',
-      answer:
-        'Die schnelle Mitte bedeutet, den Ball nach einem Gegentor sofort am Anwurfpunkt wieder ins Spiel zu bringen, statt zu warten. Der Werfer steht mit einem Fuß auf der Mittellinie und alle Mitspieler in der eigenen Hälfte. So überrascht du einen langsam zurücklaufenden Gegner mit einem freien Abschluss.',
-    },
-    {
-      question: 'Wie trainiert man das Umschalten von Abwehr auf Angriff?',
-      answer:
-        'Am besten mit Überzahlformen wie zwei gegen einen und drei gegen zwei, kombiniert mit konditionellen Reizen. Der Ballführende lernt so, unter Tempo und Gegnerdruck schnell zu entscheiden, ob er selbst abschließt oder abspielt.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballSchnelligkeitVerbessern: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-12',
-  dateModified: '2026-07-12',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Der erste Schritt entscheidet: Hier bekommst du gezielte Übungen für Antritt, Sprint, Reaktion und Wendigkeit – damit deine Spieler den Tempogegenstoß und den Zweikampf gewinnen.',
   heroEyebrow: 'Training & Planung',
@@ -81,13 +81,7 @@ Der beste Transfer entsteht, wenn du Schnelligkeit direkt handballnah trainierst
 - **Eins-gegen-eins mit Antritt:** aus der Bewegung am Gegner vorbei.
 - **Umschaltübungen:** vom Angriff blitzschnell in die Abwehr und zurück.
 
-So wird aus abstrakter Schnelligkeit ein handballspezifischer Vorteil, den du im Spiel wirklich abrufst.
-
-## Fortschritt sichtbar machen
-
-Schnelligkeit zeigt sich im Spiel dort, wo Tempo zählt: bei erfolgreichen Tempogegenstößen, gewonnenen Zweikämpfen und rechtzeitigem Zurückarbeiten in die Abwehr.
-
-Mit **Statix**, der [kostenlos nutzbaren Handball-Statistik-App](/handball-statistik-app-kostenlos), erfasst du Tempogegenstoß-Tore, technische Fehler und Ballgewinne live per Tap. So siehst du über die Saison, ob dein Athletiktraining auf dem Feld ankommt und dein Team schneller umschaltet. Die taktische Seite dazu steht im Ratgeber zum [Tempogegenstoß](/ratgeber/handball-tempogegenstoss). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+So wird aus abstrakter Schnelligkeit ein handballspezifischer Vorteil, den du im Spiel wirklich abrufst.`,
   faqs: [
     {
       question: 'Wie wird man im Handball schneller?',

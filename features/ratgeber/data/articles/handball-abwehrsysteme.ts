@@ -17,8 +17,8 @@ export const handballAbwehrsysteme: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-06-15',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 6,
   excerpt:
     'Die Abwehr gewinnt Spiele – aber welches System passt zu deiner Mannschaft? Wir vergleichen 6:0, 5:1 und 3:2:1 mit Stärken, Schwächen und klaren Empfehlungen.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -141,11 +141,6 @@ Welches System du auch immer spielst: Seine Schwächen erkennst du erst, wenn du
       question: 'Wann spielt man eine 5:1-Abwehr?',
       answer:
         'Die 5:1 lohnt sich vor allem gegen Gegner mit einem starken, zentralen Rückraumspieler. Der vorgezogene Abwehrspieler stört den Spielmacher und nimmt die Mitte aus dem Spiel. Der Preis dafür sind Räume an den Nahtstellen neben der Spitze.',
-    },
-    {
-      question: 'Welches Abwehrsystem sollten Jugendmannschaften lernen?',
-      answer:
-        'Im Nachwuchs wird bewusst zuerst offensiv verteidigt: Manndeckung und offensive Abwehrformen schulen Beinarbeit, Zweikampf und Antizipation. Viele Verbände schreiben das in ihren Ausbildungskonzepten vor. Die tiefe 6:0 und formationsgebundene Systeme folgen erst später.',
     },
   ],
   relatedSlugs: [

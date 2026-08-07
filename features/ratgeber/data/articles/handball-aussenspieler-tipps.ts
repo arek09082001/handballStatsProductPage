@@ -17,8 +17,8 @@ export const handballAussenspielerTipps: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-15',
-  dateModified: '2026-07-15',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Auf Außen bekommst du wenige Bälle – aber die musst du nutzen. Diese Tipps zu Sprungwurf, Winkelverbesserung, Tempospiel und Siebenmetern machen dich zum kompletten Flügelspieler.',
   heroEyebrow: 'Technik & Wurf',
@@ -82,13 +82,7 @@ Die größte Herausforderung auf Außen ist der Rhythmus: Du bekommst vielleicht
 - **Sprungweiten-Training:** Absprung an der Freiwurflinie-Seite markieren und den Landepunkt Richtung Tormitte Schritt für Schritt vergrößern.
 - **Gegenstoß-Serien:** Parade des Torwarts → Sprint → langer Pass → Abschluss, mehrfach hintereinander mit Zeitdruck.
 - **1 gegen 1 mit Torwart:** verschiedene Torwart-Positionen vorgeben und die passende Antwort (Heber, Dreher, lange Ecke) trainieren.
-- **Einlaufen üben:** Einlaufen auf die Naht zwischen zwei Abwehrspielern, Anspiel vom Halben, Abschluss vom Kreis.
-
-## Deine Quote kennt die Wahrheit
-
-Gerade auf Außen sagt das Gefühl oft wenig aus – bei fünf Würfen pro Spiel entscheiden Kleinigkeiten über eine 40- oder 80-Prozent-Quote. Rechne sie dir nach jedem Spiel aus – zum Beispiel mit dem [Wurfquoten-Rechner](/wurfquote-rechner).
-
-Mit **Statix**, der [Statistik-App für Handballtrainer](/), wird jeder Wurf mit Position live per Tap erfasst. So siehst du deine Wurfquote von außen, aus dem Gegenstoß und vom Siebenmeterstrich über die ganze Saison – und erkennst genau, woran du arbeiten solltest. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- **Einlaufen üben:** Einlaufen auf die Naht zwischen zwei Abwehrspielern, Anspiel vom Halben, Abschluss vom Kreis.`,
   faqs: [
     {
       question: 'Was macht einen guten Außenspieler im Handball aus?',

@@ -17,8 +17,8 @@ export const handballKreuzenStossen: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-05',
-  dateModified: '2026-07-05',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Ohne Stoßbewegung und Kreuzung steht jeder Angriff still. Hier lernst du die beiden wichtigsten Grundbewegungen des Handballangriffs kennen – und wie du mit ihnen Lücken erzeugst.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -89,31 +89,7 @@ Lege den Fokus zuerst auf das echte Binden des Gegenspielers – das ist der Ker
 
 ## Wirkung sichtbar machen
 
-Ob deine Angriffsbewegungen wirken, zeigt sich am Ergebnis: Entstehen daraus freie Würfe und Anspiele an den Kreis? Sinkt die Zahl der abgeblockten oder erzwungenen Fehlwürfe?
-
-Mit **Statix** kannst du die [Angriffsstatistik live erfassen](/) – Tore, Wurfquoten und technische Fehler mit einem Tap. So erkennst du, ob dein Team über gute Angriffsbewegungen zu einfachen Abschlüssen kommt oder ob der Angriff zu oft aus schlechten Positionen abschließt. Wie du solche Muster nach dem Spiel sauber herausarbeitest, zeigt der Ratgeber [Spiele richtig auswerten](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
-  faqs: [
-    {
-      question: 'Was ist eine Stoßbewegung im Handball?',
-      answer:
-        'Beim Stoßen läuft ein Angreifer mit Ball und Tempo zielgerichtet auf die Abwehr zu, als wolle er durchbrechen. Damit zwingt er seinen Gegenspieler zu einer Entscheidung: Bleibt dieser stehen, kann der Angreifer werfen oder durchbrechen; rückt er heraus, öffnet sich dahinter eine Lücke für den Nebenmann.',
-    },
-    {
-      question: 'Was bedeutet Kreuzen im Handball?',
-      answer:
-        'Beim Kreuzen überkreuzen zwei Angreifer ihre Laufwege, meist mit einer Ballübergabe: Der erste stößt an und bindet seinen Gegenspieler, der zweite läuft hinter ihm durch und stößt in die entstehende Lücke. Ziel ist, die Zuordnung der Abwehr durcheinanderzubringen und sie zum Übergeben zu zwingen.',
-    },
-    {
-      question: 'Warum sind Stoßen und Kreuzen so wichtig?',
-      answer:
-        'Weil eine kompakte Abwehr nur dann Lücken öffnet, wenn sie in Bewegung gebracht wird. Stoßen bindet einzelne Verteidiger, Kreuzen erzeugt Unordnung in der Zuordnung. Zusammen sind sie die Grundbausteine fast jedes Rückraumangriffs und die Voraussetzung dafür, dass komplexere Angriffssysteme funktionieren.',
-    },
-    {
-      question: 'Was ist der häufigste Fehler beim Stoßen?',
-      answer:
-        'Der häufigste Fehler ist, den Ball zu früh abzuspielen oder mit zu wenig Tempo zu stoßen, sodass der Gegenspieler gar nicht wirklich gebunden wird. Ein Stoß wirkt nur, wenn er echt und torgefährlich ist – erst die Bewegung mit Tempo, dann das Abspiel, nicht umgekehrt.',
-    },
-  ],
+Ob deine Angriffsbewegungen wirken, zeigt sich am Ergebnis: Entstehen daraus freie Würfe und Anspiele an den Kreis? Sinkt die Zahl der abgeblockten oder erzwungenen Fehlwürfe?`,
   relatedSlugs: [
     'handball-angriffssysteme-einsteiger',
     'handball-positionen-erklaert',

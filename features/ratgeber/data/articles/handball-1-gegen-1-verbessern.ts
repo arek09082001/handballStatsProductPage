@@ -17,8 +17,8 @@ export const handball1Gegen1Verbessern: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-15',
-  dateModified: '2026-07-15',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Das 1 gegen 1 entscheidet Spiele: Wer sich im direkten Duell durchsetzt, schafft Tore, Siebenmeter und freie Mitspieler. Hier erfährst du, woraus ein starkes Eins-gegen-eins besteht und wie du es Schritt für Schritt verbesserst.',
   heroEyebrow: 'Technik & Wurf',
@@ -80,13 +80,7 @@ Wichtig: Baue Eins-gegen-eins-Situationen in jedes Training ein – kurz, intens
 
 ## Das 1 gegen 1 im Spiel lesen
 
-Nicht jede Situation ist ein gutes Duell. Stark im Eins-gegen-eins ist, wer erkennt, **wann** es sich lohnt: gegen einen aufgerückten Verteidiger, nach einem Kreuzen mit kleinem Vorteil, gegen einen müden oder mit einer Zeitstrafe vorbelasteten Gegenspieler. Genauso wichtig ist der Mut, das Duell abzubrechen und weiterzuspielen, wenn die Lücke nicht aufgeht.
-
-## Fortschritt messbar machen
-
-Ob dein 1 gegen 1 wirklich besser wird, siehst du an harten Zahlen: Durchbrüche, erzwungene Siebenmeter, technische Fehler im Zweikampf und Tore aus der Nahdistanz.
-
-Mit **Statix**, der [Statistik-App für die Halle](/), erfasst du Tore, Wurfpositionen und erzwungene Strafwürfe live per Tap. Die zugehörige Abschlussquote rechnest du dir mit dem [Rechner für die Wurfquote](/wurfquote-rechner) aus. So erkennst du, welche Spieler ihre Duelle gewinnen und wo der Angriff über das Eins-gegen-eins gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Nicht jede Situation ist ein gutes Duell. Stark im Eins-gegen-eins ist, wer erkennt, **wann** es sich lohnt: gegen einen aufgerückten Verteidiger, nach einem Kreuzen mit kleinem Vorteil, gegen einen müden oder mit einer Zeitstrafe vorbelasteten Gegenspieler. Genauso wichtig ist der Mut, das Duell abzubrechen und weiterzuspielen, wenn die Lücke nicht aufgeht.`,
   faqs: [
     {
       question: 'Wie werde ich im Handball besser im 1 gegen 1?',
@@ -102,11 +96,6 @@ Mit **Statix**, der [Statistik-App für die Halle](/), erfasst du Tore, Wurfposi
       question: 'Welche Finte ist die beste für das Eins-gegen-eins?',
       answer:
         'Die Körpertäuschung ist die wichtigste Grundfinte: eine glaubwürdige Bewegung in die eine Richtung, dann explosiver Antritt in die andere. Dazu lohnt sich eine Wurffinte als zweites Werkzeug. Zwei sicher beherrschte Finten, die du über beide Seiten spielen kannst, reichen für die meisten Duelle aus.',
-    },
-    {
-      question: 'Warum verliere ich meine Zweikämpfe im Angriff?',
-      answer:
-        'Meist wegen fehlendem Tempo, zu großem Abstand beim Antäuschen oder Zögern nach der Finte. Häufig kommt dazu, dass der Ball ungeschützt vor dem Körper getragen wird oder immer dieselbe Seite gewählt wird. Wer diese Punkte gezielt korrigiert, gewinnt schnell deutlich mehr Duelle.',
     },
   ],
   relatedSlugs: [

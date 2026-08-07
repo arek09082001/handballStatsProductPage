@@ -17,8 +17,8 @@ export const jugendhandballTrainieren: Article = {
   ],
   category: 'Jugend & Entwicklung',
   datePublished: '2026-04-28',
-  dateModified: '2026-06-27',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Im Nachwuchs formst du Handballer und junge Menschen zugleich. Diese Tipps helfen dir, Kinder und Jugendliche altersgerecht, motivierend und mit Freude am Spiel zu trainieren.',
   heroEyebrow: 'Jugend & Entwicklung',
@@ -102,13 +102,7 @@ Auch mit den besten Absichten passieren im Nachwuchs immer wieder dieselben Fehl
 - **Zu früh Taktik:** Komplexe Abwehrsysteme wie 6:0 oder 3:2:1 gehören nicht in die E- oder D-Jugend. Viele Verbände schreiben in den jüngeren Altersklassen bewusst die Manndeckung oder eine offensive Abwehr vor – sie fördert Zweikampf, Laufarbeit und Eigenverantwortung weit besser als ein passives Abwehrbollwerk. Ausgefeilte Systeme kommen erst später dazu.
 - **Nur die Besten fördern:** Wer sich auf die Talente konzentriert, verliert den Rest der Mannschaft – und übersieht, dass Spätentwickler oft die größten Sprünge machen.
 - **Zu viel Kritik:** Ständiges Korrigieren nimmt Kindern die Freude. Betone, was gelingt, und dosiere deine Hinweise.
-- **Zu wenig Bewegung:** Lange Erklärungen und Wartezeiten sind Trainingsgift. Halte alle in Bewegung.
-
-## Entwicklung sichtbar machen
-
-Im Kinder- und Jugendhandball zählen Freude und Ausbildung mehr als jede Statistik – das bleibt der Maßstab. Trotzdem kann es schön sein, die Entwicklung über eine Saison hinweg festzuhalten: Wer traut sich inzwischen den Sprungwurf zu, wer hat im Tor Fortschritte gemacht, wie hat sich das Zusammenspiel entwickelt?
-
-Mit Augenmaß eingesetzt hilft dir eine [Handball-Statistik-App für Jugendtrainer](/fuer-jugendtrainer) wie **Statix**, solche Entwicklungen über Wochen und Monate sichtbar zu machen – nicht um Kinder zu bewerten, sondern um Fortschritte zu erkennen und jedem Kind zu zeigen, wie weit es gekommen ist. Wie du das methodisch sauber machst, steht im Ratgeber [Spielerentwicklung messen](/ratgeber/handball-spielerentwicklung-messen). Wenn du reinschauen möchtest, gibt es unter [demo.statix-app.de](https://demo.statix-app.de) eine kostenlose Live-Demo ohne Account. Und egal, was die Zahlen sagen: Im Nachwuchs gewinnt am Ende immer die Mannschaft, die mit Freude dabei bleibt.`,
+- **Zu wenig Bewegung:** Lange Erklärungen und Wartezeiten sind Trainingsgift. Halte alle in Bewegung.`,
   faqs: [
     {
       question: 'Ab welchem Alter können Kinder Handball spielen?',
@@ -119,16 +113,6 @@ Mit Augenmaß eingesetzt hilft dir eine [Handball-Statistik-App für Jugendtrain
       question: 'Wie oft sollten Kinder Handball trainieren?',
       answer:
         'Im Grundlagenbereich reichen ein bis zwei Einheiten pro Woche völlig aus. Wichtiger als die Häufigkeit ist, dass das Training abwechslungsreich ist, viel Bewegung bietet und Spaß macht. Zusätzliche vielseitige Bewegung außerhalb des Handballs ist in diesem Alter sogar ausdrücklich erwünscht.',
-    },
-    {
-      question: 'Welche Abwehr sollte man im Jugendhandball spielen?',
-      answer:
-        'In den jüngeren Altersklassen die Manndeckung oder eine offensive Abwehr – viele Verbände schreiben sie im Nachwuchs sogar vor. Sie fördert Zweikampf, Laufarbeit und Eigenverantwortung. Komplexe Systeme wie 6:0 oder 3:2:1 kommen erst in den älteren Jahrgängen dazu.',
-    },
-    {
-      question: 'Was ist beim Handballtraining mit Kindern am wichtigsten?',
-      answer:
-        'Spaß und eine vielseitige Grundausbildung. Sorge für viele Ballkontakte und Bewegungszeit statt langem Anstehen, halte den Spielanteil hoch und stelle die Entwicklung jedes Kindes über das Ergebnis. Technik und Taktik kommen altersgerecht und Schritt für Schritt dazu.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballAusruestungEinsteiger: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Für den Handball-Einstieg brauchst du weniger, als du denkst – aber das Richtige. Von Hallenschuhen über die passende Ballgröße bis zu sinnvollem Schutz: der Überblick für Anfänger.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -86,7 +86,7 @@ Spare dir zu Beginn teure Extras: hochspezialisierte Torwartausrüstung (außer 
 
 ## Vom Ausprobieren zum ernsthaften Training
 
-Wenn aus dem Ausprobieren ernsthaftes Training wird, willst du irgendwann sehen, wie du dich entwickelst. Wie der Einstieg als Erwachsener gelingt, steht im Ratgeber für [Quereinsteiger](/ratgeber/handball-quereinsteiger-erwachsene). Mit **Statix**, der [Handball-Statistik-App für Einsteiger und Teams](/), lassen sich Würfe, Tore und Entwicklung über die Saison festhalten – so wird Fortschritt sichtbar und das Training zielgerichteter. Für den ersten Ballkontakt brauchst du das noch nicht, aber sobald du dranbleibst, lohnt sich der Blick. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Wenn aus dem Ausprobieren ernsthaftes Training wird, willst du irgendwann sehen, wie du dich entwickelst. Wie der Einstieg als Erwachsener gelingt, steht im Ratgeber für [Quereinsteiger](/ratgeber/handball-quereinsteiger-erwachsene). Mit **Statix**, der [Handball-Statistik-App für Einsteiger und Teams](/), lassen sich Würfe, Tore und Entwicklung über die Saison festhalten – so wird Fortschritt sichtbar und das Training zielgerichteter. Für den ersten Ballkontakt brauchst du das noch nicht, aber sobald du dranbleibst, lohnt sich der Blick.`,
   faqs: [
     {
       question: 'Welche Schuhe braucht man für Handball?',
@@ -97,16 +97,6 @@ Wenn aus dem Ausprobieren ernsthaftes Training wird, willst du irgendwann sehen,
       question: 'Welche Handball-Größe ist die richtige?',
       answer:
         'Die Ballgröße richtet sich nach Alter und Geschlecht: Mini-Bälle für kleine Kinder, Größe 1 für Jugendliche, Größe 2 für Frauen und weibliche Jugend ab etwa 14 Jahren und Größe 3 für Männer und männliche Jugend ab etwa 16 Jahren. Die richtige Größe ist wichtig, um die Wurftechnik sauber zu lernen.',
-    },
-    {
-      question: 'Braucht man als Anfänger Harz?',
-      answer:
-        'Nein, für den ersten Einstieg nicht. Lerne die Grundlagen zunächst mit einem griffigen Trainingsball. Beachte außerdem, dass Harz in vielen Hallen reglementiert oder verboten ist und oft nur wasserlösliches Harz erlaubt ist – frag im Verein nach, was gilt.',
-    },
-    {
-      question: 'Welche Schutzausrüstung ist im Handball sinnvoll?',
-      answer:
-        'Pflicht ist meist keine, aber sinnvoll sind Knieschoner für Außen- und Kreisspieler, ein Mundschutz für die Zähne und Tapes oder Bandagen bei bekannten Schwachstellen an Fingern, Sprunggelenk oder Knie. Brillenträger nutzen idealerweise eine Sportbrille oder Kontaktlinsen.',
     },
   ],
   relatedSlugs: [

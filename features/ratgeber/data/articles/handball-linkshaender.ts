@@ -17,8 +17,8 @@ export const handballLinkshaender: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Linkshänder sind im Handball heiß begehrt – auf der rechten Seite verwandeln sie Winkel, die Rechtshänder nur mühsam erreichen. Warum das so ist und wie Linkshänder ihre Stärken ausbauen.',
   heroEyebrow: 'Technik & Wurf',
@@ -77,7 +77,7 @@ Nicht jede Mannschaft hat einen. Dann helfen zwei Wege: einen wurfstarken Rechts
 
 ## Stärken der rechten Seite messbar machen
 
-Ob eure rechte Angriffsseite wirklich gefährlich ist, verrät die Wurfverteilung – und die Quote je Seite, die du dir [schnell ausrechnen](/wurfquote-rechner) kannst. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), siehst du im Wurfbild, aus welchen Zonen eure Tore fallen und wie stark die rechte Seite im Vergleich zur linken ist. So erkennst du, ob ein Linkshänder seine Winkelvorteile ausspielt – oder wo die Mannschaft einseitig wird. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ob eure rechte Angriffsseite wirklich gefährlich ist, verrät die Wurfverteilung – und die Quote je Seite, die du dir [schnell ausrechnen](/wurfquote-rechner) kannst. Mit **Statix**, der [Handball-Statistik-App für Trainer](/), siehst du im Wurfbild, aus welchen Zonen eure Tore fallen und wie stark die rechte Seite im Vergleich zur linken ist. So erkennst du, ob ein Linkshänder seine Winkelvorteile ausspielt – oder wo die Mannschaft einseitig wird.`,
   faqs: [
     {
       question: 'Warum sind Linkshänder im Handball so gefragt?',
@@ -93,11 +93,6 @@ Ob eure rechte Angriffsseite wirklich gefährlich ist, verrät die Wurfverteilun
       question: 'Welche Nachteile haben Linkshänder im Training?',
       answer:
         'Sie haben oft wenige Vorbilder und Übungspartner, weil Rechtshänder-Bewegungen im Training dominieren. Trainerhinweise sind meist für Rechtshänder gedacht und müssen gespiegelt übertragen werden. Zudem landen sie durch ihre Seltenheit früh fest auf der rechten Seite, auch wenn ihre Stärken woanders lägen.',
-    },
-    {
-      question: 'Was tun, wenn die Mannschaft keinen Linkshänder hat?',
-      answer:
-        'Man kann einen wurfstarken Rechtshänder rechts einsetzen, der den Winkel durch Sprünge ins Feld verbessert, oder das Angriffsspiel bewusst über die stärkere Seite lenken. Ideal bleibt der Linkshänder rechts, weshalb es sich lohnt, im Nachwuchs früh auf linkshändige Talente zu achten und sie zu fördern.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballMentaltraining: Article = {
   ],
   category: 'Mannschaft & Mentales',
   datePublished: '2026-07-09',
-  dateModified: '2026-07-09',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Enge Spiele werden im Kopf entschieden. Hier bekommst du praktische Methoden für Nervenstärke, Fokus und Selbstvertrauen – für einzelne Spieler und die ganze Mannschaft.',
   heroEyebrow: 'Mannschaft & Mentales',
@@ -84,13 +84,7 @@ Mentaltraining ist nicht nur Einzelsache. Ein stabiles Team fängt Nervosität g
 - gegenseitiger Zuspruch gerade nach Rückschlägen,
 - gemeinsame Rituale, die Zusammenhalt und Sicherheit geben.
 
-Ein Team, das nach einem Rückstand ruhig bleibt und zusammensteht, dreht Spiele, die ein nervöses Team verliert.
-
-## Fortschritt sichtbar machen
-
-Mentale Entwicklung zeigt sich oft in Zahlen: Wie hält dein Team enge Schlussphasen? Bricht die Wurfquote unter Druck ein? Wie sicher sind die Siebenmeter im entscheidenden Moment?
-
-Mit **Statix**, der [App für Handball-Statistik](/), erfasst du Tore, Fehler und Siebenmeterquoten live per Tap und siehst, wie stabil dein Team in engen Phasen bleibt. So machst du auch mentale Fortschritte an echten Zahlen sichtbar statt nur am Gefühl. Was am Spieltag selbst hilft, steht im Ratgeber zur [Nervosität vor Spielen](/ratgeber/handball-nervositaet-vor-spielen). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ein Team, das nach einem Rückstand ruhig bleibt und zusammensteht, dreht Spiele, die ein nervöses Team verliert.`,
   faqs: [
     {
       question: 'Was ist Mentaltraining im Handball?',
@@ -101,16 +95,6 @@ Mit **Statix**, der [App für Handball-Statistik](/), erfasst du Tore, Fehler un
       question: 'Wie gehe ich mit Nervosität vor einem Handballspiel um?',
       answer:
         'Hilfreich sind bewusstes, ruhiges Ausatmen zur Senkung des Pulses, das Umdeuten der Nervosität als Zeichen von Bereitschaft und der Fokus auf die nächste konkrete Aktion statt auf das Ergebnis. Eine feste Vorbereitungsroutine gibt zusätzlich Halt.',
-    },
-    {
-      question: 'Wie baue ich als Trainer das Selbstvertrauen meiner Spieler auf?',
-      answer:
-        'Indem du gelungene Aktionen bewusst anerkennst statt nur Fehler zu betonen, realistische und erreichbare Ziele setzt, sachlich statt abwertend korrigierst und eine Fehlerkultur schaffst, in der Fehler zum Spiel gehören. Visualisierung und positive Selbstgespräche stärken das Selbstvertrauen zusätzlich.',
-    },
-    {
-      question: 'Kann man mentale Stärke im Handball trainieren?',
-      answer:
-        'Ja. Nervenstärke, Fokus und Selbstvertrauen sind wie technische Fähigkeiten trainierbar – durch Atem- und Fokustechniken, feste Routinen, Visualisierung und eine gute Fehlerkultur im Team. Wichtig ist, diese Methoden regelmäßig im Training zu üben, damit sie im Spiel automatisch abrufbar sind.',
     },
   ],
   relatedSlugs: [

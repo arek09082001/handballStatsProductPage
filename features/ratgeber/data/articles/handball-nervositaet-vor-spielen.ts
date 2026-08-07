@@ -17,8 +17,8 @@ export const handballNervositaetVorSpielen: Article = {
   ],
   category: 'Mannschaft & Mentales',
   datePublished: '2026-07-17',
-  dateModified: '2026-07-17',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Zittrige Hände beim Aufwärmen, Fehlpässe in den ersten Minuten: Nervosität vor Spielen kennt jeder. So machst du aus Lampenfieber Spannung, die dich besser statt schlechter macht.',
   heroEyebrow: 'Mannschaft & Mentales',
@@ -83,13 +83,7 @@ Umfeld macht Nervosität – oder nimmt sie. Was hilft:
 - Fehler in den ersten Minuten kommentarlos hinnehmen – wer nach dem ersten Fehlpass ausgewechselt wird, spielt das ganze Jahr mit Angst
 - Nach dem Spiel zuerst nach dem Erlebnis fragen, nicht nach dem Ergebnis
 
-Gerade im Jugendbereich gilt: Ein Kind, das angstfrei spielt, entwickelt sich schneller als eines, das Fehler vermeidet.
-
-## Fortschritt entdramatisiert: Zahlen statt Gefühl
-
-Nervosität verzerrt die Wahrnehmung: Nach einem verworfenen Ball fühlt sich das ganze Spiel misslungen an. Statistiken rücken das gerade – oft war die Leistung viel besser als das Gefühl.
-
-Mit **Statix**, der [Handball-App für Trainer und Spieler](/), werden Tore, Würfe und Fehler live per Tap erfasst. So siehst du nach dem Spiel die echte Bilanz statt der gefühlten – und erkennst über die Saison, dass einzelne Fehler nie das Gesamtbild bestimmen. Die langfristige Arbeit daran beschreibt der Ratgeber zum [Mentaltraining](/ratgeber/handball-mentaltraining). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Gerade im Jugendbereich gilt: Ein Kind, das angstfrei spielt, entwickelt sich schneller als eines, das Fehler vermeidet.`,
   faqs: [
     {
       question: 'Was hilft gegen Nervosität vor einem Handballspiel?',

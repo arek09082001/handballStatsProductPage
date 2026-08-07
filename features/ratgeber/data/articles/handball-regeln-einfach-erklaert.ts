@@ -19,8 +19,8 @@ export const handballRegelnEinfachErklaert: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-03-24',
-  dateModified: '2026-06-12',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 5,
   excerpt:
     'Ziel des Spiels, Spielzeit, Schritte, Torraum und Strafen: Hier bekommst du die wichtigsten Handball-Regeln einfach erklärt – kompakt genug, um jedes Spiel sofort zu verstehen.',
   heroEyebrow: 'Grundlagen & Regeln',

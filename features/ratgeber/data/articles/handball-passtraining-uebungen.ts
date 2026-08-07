@@ -17,8 +17,8 @@ export const handballPasstrainingUebungen: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-04-14',
-  dateModified: '2026-06-20',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Sichere Pässe sind die Basis für jeden erfolgreichen Angriff. Hier findest du die wichtigsten Passtechniken, typische Fehler und konkrete Passübungen, mit denen du Ballverluste reduzierst und dein Passspiel sicherer machst.',
   heroEyebrow: 'Technik & Wurf',
@@ -84,11 +84,7 @@ Diese fünf Übungen decken die wichtigsten Stufen ab, von der Grundtechnik bis 
 | Pass gegen Verteidiger | Passwege finden, Bodenpass nutzen | 2 Angreifer, 1 halbaktiver Verteidiger dazwischen |
 | Tempogegenstoß | Präzision bei hohem Tempo | Langer Pass, dann Zuspiel auf durchlaufenden Spieler |
 
-Wichtig bei allen Übungen: Qualität vor Quantität. Ein sauber gefangener und gut getimter Pass ist mehr wert als zehn hektische Bälle, die der Mitspieler kaum kontrollieren kann.
-
-## Passsicherheit messbar machen
-
-Ob dein Passspiel wirklich sicherer wird, siehst du am besten an den Zahlen. Wie viele Ballverluste und technischen Fehler leistet sich dein Team pro Spiel und in welchen Situationen? Genau das lässt sich erfassen – und wie du die Ballsicherheit dahinter gezielt trainierst, steht im Ratgeber zum [Ballhandling im Handball](/ratgeber/handball-ballhandling-verbessern). Eine [App für Handball-Statistik](/) wie Statix protokolliert Ballverluste und technische Fehler mit einem Tap, sodass du nach dem Spiel schwarz auf weiß siehst, wo die Pässe verloren gehen. So wird aus dem Bauchgefühl ein klarer Trainingsauftrag. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Wichtig bei allen Übungen: Qualität vor Quantität. Ein sauber gefangener und gut getimter Pass ist mehr wert als zehn hektische Bälle, die der Mitspieler kaum kontrollieren kann.`,
   faqs: [
     {
       question: 'Welche Passtechniken sind im Handball am wichtigsten?',
@@ -104,11 +100,6 @@ Ob dein Passspiel wirklich sicherer wird, siehst du am besten an den Zahlen. Wie
       question: 'Wann setzt man den Bodenpass im Handball ein?',
       answer:
         'Der Bodenpass (Aufsetzer) ist besonders nützlich gegen eine tief stehende, enge Deckung und beim Anspiel an den Kreisläufer. Weil der Ball vor dem Mitspieler aufspringt, geht er unter den Armen der Abwehr durch und ist schwer abzufangen.',
-    },
-    {
-      question: 'Was ist Sternpassen und was bringt es?',
-      answer:
-        'Beim Sternpassen stehen mehrere Spieler in einem Stern oder Kreis und spielen den Ball nach einem festen Muster, wobei der Passgeber seinem eigenen Pass folgt und die Position wechselt. Die Übung schult Passgenauigkeit, Timing und Orientierung in der Bewegung und lässt sich mit einem zweiten Ball deutlich anspruchsvoller gestalten.',
     },
   ],
   relatedSlugs: [

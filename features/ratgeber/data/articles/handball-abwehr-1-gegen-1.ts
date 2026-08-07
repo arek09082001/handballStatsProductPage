@@ -17,8 +17,8 @@ export const handballAbwehr1Gegen1: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-16',
-  dateModified: '2026-07-16',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Abwehr gewinnt Meisterschaften – und Abwehr beginnt im Zweikampf. So verbesserst du Beinarbeit, Körperposition und Timing, um Angreifer fair und effektiv zu stoppen.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -87,13 +87,7 @@ Ein Verteidiger mit mittelmäßigem Zweikampf, aber großartiger Kommunikation i
 - **1 gegen 1 im Korridor:** Der Angreifer darf nur in einer markierten Gasse durchbrechen, der Verteidiger übt Position und Timing.
 - **Reaktionsstarts:** Aus der Abwehr-Grundstellung auf Signal explosiv herausrücken und wieder zurück.
 - **1 gegen 1 mit Wurfoption:** Der Angreifer darf werfen oder durchbrechen – der Verteidiger lernt, beides gleichzeitig zu verteidigen.
-- **2 gegen 2 mit Übergeben:** Kreuzende Angreifer, die Verteidiger üben Absprache und Übergabe.
-
-## Abwehrarbeit sichtbar machen
-
-Abwehrspieler tauchen in klassischen Statistiken kaum auf – dabei entscheiden ihre Duelle Spiele. Blocks, Ballgewinne, erzwungene Fehlwürfe und Gegentore pro Abwehrphase erzählen die wahre Geschichte.
-
-Mit **Statix** kannst du die [Abwehrleistung mit Statistik bewerten](/): neben Toren auch Ballgewinne, technische Fehler des Gegners und Gegentore, live per Tap. Wie du daraus eine vollständige [Auswertung nach dem Spiel](/ratgeber/handball-spielanalyse) baust, steht im passenden Ratgeber. So wird sichtbar, wie stabil deine Abwehr wirklich steht – und welche Zweikämpfe den Unterschied machen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- **2 gegen 2 mit Übergeben:** Kreuzende Angreifer, die Verteidiger üben Absprache und Übergabe.`,
   faqs: [
     {
       question: 'Wie verteidige ich im Handball besser im 1 gegen 1?',

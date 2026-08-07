@@ -17,8 +17,8 @@ export const siebenmeterTrainieren: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-06-11',
-  dateModified: '2026-07-06',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Siebenmeter entscheiden enge Spiele – und sie sind trainierbar. Hier bekommst du Technik, Wurfvarianten, mentale Routinen und konkrete Übungen für sichere Schützen.',
   heroEyebrow: 'Technik & Wurf',
@@ -88,17 +88,7 @@ Diese vier Übungen kannst du direkt in dein Training einbauen:
 | Schütze gegen Torwart, Sudden Death | Druck simulieren | Wer verliert, macht eine Zusatzaufgabe |
 | Siebenmeter nach Belastung | Nervenstärke bei Müdigkeit | Direkt nach einer Sprint- oder Konterserie werfen |
 
-Wechsle die Übungen regelmäßig, aber behalte die 10er-Serie als festen Messwert, damit du Fortschritt sichtbar machst.
-
-## Quote im Blick behalten
-
-Ob dein Siebenmetertraining wirkt, siehst du nur an der Quote. Gute Schützen liegen im Amateur- und ambitionierten Ligabereich bei rund 75 bis 85 Prozent. Die Rechnung dahinter ist simpel – oder du lässt sie dir vom [Wurfquoten-Rechner](/wurfquote-rechner) abnehmen:
-
-> **Siebenmeterquote (%) = verwandelte Siebenmeter ÷ geworfene Siebenmeter × 100**
-
-Behalte den Wert über mehrere Spiele im Blick und vergleiche deine Schützen untereinander – so triffst du die Reihenfolge der Schützenliste nicht aus dem Bauch, sondern mit Daten. Fällt die Quote eines Schützen über mehrere Spiele ab, ist das ein klarer Trainingsauftrag – oft steckt eine verratene Blickrichtung oder eine zu berechenbare Lieblingsecke dahinter.
-
-Genau dabei hilft dir **Statix**, die [Handball-Statistik-App für Trainer](/): Du erfasst jeden Siebenmeter live per Tap, siehst die Quote jedes Schützen sofort und kannst sie offline in der Halle vergleichen. Wer wirklich der sicherste Schütze ist, verrät dir dann die Zahl statt das Bauchgefühl. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de) aus.`,
+Wechsle die Übungen regelmäßig, aber behalte die 10er-Serie als festen Messwert, damit du Fortschritt sichtbar machst.`,
   faqs: [
     {
       question: 'Wie viele Meter sind es beim Siebenmeter im Handball?',
@@ -114,11 +104,6 @@ Genau dabei hilft dir **Statix**, die [Handball-Statistik-App für Trainer](/): 
       question: 'Wie trainiert man Siebenmeter am besten?',
       answer:
         'Möglichst wettkampfnah: in Serien gegen einen echten Torwart, mit systematisch angesteuerten Ecken und unter bewusst erzeugtem Druck, etwa am Ende eines anstrengenden Trainings oder mit einer Konsequenz für Fehlwürfe.',
-    },
-    {
-      question: 'Sollte man Siebenmeter hart oder platziert werfen?',
-      answer:
-        'Platziert. Ein sauber in den Winkel gesetzter Ball ist für den Torwart schwerer zu halten als ein harter Wurf in die Mitte. Wähle ein bis zwei Varianten, die du sicher beherrschst, und setze auf Genauigkeit statt reine Härte.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballTrainerWerden: Article = {
   ],
   category: 'Jugend & Entwicklung',
   datePublished: '2026-07-01',
-  dateModified: '2026-07-01',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Du willst ein Team übernehmen und fragst dich, welche Ausbildung du brauchst? Hier erfährst du, wie du Handballtrainer wirst, welche Lizenzen es gibt und wie du gut in die erste Saison startest.',
   heroEyebrow: 'Jugend & Entwicklung',
@@ -87,13 +87,7 @@ Bevor die erste Saison startet, lohnt sich etwas Grundordnung:
 - eine Struktur, um Anwesenheit, Leistung und Entwicklung festzuhalten,
 - realistische Ziele, die zum Team passen.
 
-Gerade das Festhalten von Leistungen hilft, Fortschritte sichtbar zu machen und Entscheidungen zu begründen – vom Aufstellungsgespräch bis zur Elterndiskussion.
-
-## Mit Daten souveräner auftreten
-
-Ein neuer Trainer gewinnt schnell an Autorität, wenn er Entscheidungen nachvollziehbar begründen kann – mit Zahlen statt Bauchgefühl.
-
-Mit **Statix**, der [Statistik-App für Nachwuchstrainer](/fuer-jugendtrainer), erfasst du Tore, Wurfquoten, Zeitstrafen und die Entwicklung jedes Spielers live per Tap. Wie du deine erste Einheit aufbaust, zeigt der Ratgeber [Handballtraining planen](/ratgeber/handball-training-planen). So behältst du von Anfang an den Überblick, erkennst Stärken und Baustellen deines Teams und kannst deine Ansprachen mit echten Daten untermauern. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Gerade das Festhalten von Leistungen hilft, Fortschritte sichtbar zu machen und Entscheidungen zu begründen – vom Aufstellungsgespräch bis zur Elterndiskussion.`,
   faqs: [
     {
       question: 'Braucht man eine Lizenz, um Handball zu trainieren?',
@@ -109,11 +103,6 @@ Mit **Statix**, der [Statistik-App für Nachwuchstrainer](/fuer-jugendtrainer), 
       question: 'Wie läuft die C-Lizenz-Ausbildung im Handball ab?',
       answer:
         'Die C-Lizenz umfasst meist mehrere Lehrgangstage oder -wochenenden mit Theorie und Praxis zu Trainingslehre, Technik, Taktik, altersgerechtem Training und Trainingsplanung. Am Ende stehen in der Regel eine Prüfung und eine praktische Lehrprobe. Die Lizenz muss regelmäßig durch Fortbildungen verlängert werden.',
-    },
-    {
-      question: 'Wie steige ich als Handballtrainer am besten ein?',
-      answer:
-        'Ein guter Weg ist, als Co-Trainer bei einem erfahrenen Trainer zu starten, im Nachwuchs zu beginnen, sich beim Landesverband über Einstiegsqualifikationen zu informieren und von Kollegen, Büchern und Videos zu lernen. Der wichtigste Schritt ist, ein Team zu übernehmen und ins Machen zu kommen – Erfahrung wächst mit der Praxis.',
     },
   ],
   relatedSlugs: [

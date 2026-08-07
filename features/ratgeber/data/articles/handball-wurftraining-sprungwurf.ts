@@ -17,8 +17,8 @@ export const handballWurftrainingSprungwurf: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-05-07',
-  dateModified: '2026-06-24',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 5,
   excerpt:
     'Ein sauberer Sprungwurf entscheidet, ob dein Abschluss im Netz landet – und Technik schlägt dabei fast immer reine Kraft. Hier lernst du den Sprungwurf Schritt für Schritt, entwickelst echte Wurfkraft aus der kinetischen Kette und trainierst mehr Genauigkeit.',
   heroEyebrow: 'Technik & Wurf',
@@ -110,13 +110,7 @@ Mit diesen Übungen deckst du Technik, Kraft und Genauigkeit in einer Einheit ab
 | Wurf gegen den Torwart | Wettkampfnähe | Deckung lesen, Ecke erst spät festlegen |
 | Wurfserie nach Sprint | Abschluss unter Ermüdung | Technik trotz Müdigkeit sauber halten |
 
-Steigere die Belastung schrittweise. Erst wenn die Bewegung sitzt, drehst du an Tempo und Druck – vorher zementierst du nur Fehler.
-
-## Wurfleistung sichtbar machen
-
-Woran erkennst du, ob dein Wurftraining wirklich wirkt? An den Zahlen und am Wurfbild. Was hinter der Kennzahl steckt, erklärt der Ratgeber [Wurfquote berechnen](/ratgeber/wurfquote-berechnen). Wenn du Wurfquote und Wurfbilder auswertest, siehst du sofort, aus welchen Zonen deine Spieler treffen und wo es noch hakt – und kannst genau an dieser Stelle an der Technik arbeiten, statt im Nebel zu trainieren. Die Quote selbst rechnest du mit dem [Wurfquoten-Rechner](/wurfquote-rechner) in Sekunden aus.
-
-Genau dafür ist **Statix** gemacht: die [Handball-Statistik-App für Trainer](/), mit der du jeden Wurf live per Tap erfasst – auch offline in der Halle. Wurfquoten und Wurfbilder entstehen automatisch und zeigen dir schwarz auf weiß, ob das Techniktraining ankommt. Ausprobieren kannst du das ohne Anmeldung in der kostenlosen Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Steigere die Belastung schrittweise. Erst wenn die Bewegung sitzt, drehst du an Tempo und Druck – vorher zementierst du nur Fehler.`,
   faqs: [
     {
       question: 'Von welchem Bein springt man beim Sprungwurf ab?',
@@ -132,11 +126,6 @@ Genau dafür ist **Statix** gemacht: die [Handball-Statistik-App für Trainer](/
       question: 'Was ist der Unterschied zwischen Schlagwurf und Sprungwurf?',
       answer:
         'Beim Schlagwurf hast du Bodenkontakt und wirfst aus Stand oder Anlauf – ideal, um die Technik zu lernen. Beim Sprungwurf springst du ab, gewinnst Höhe über den Block und mehr Zeit, um die Lücke zu lesen. Er ist der Standardabschluss aus dem Rückraum.',
-    },
-    {
-      question: 'Warum ist die Rumpfspannung beim Wurf so wichtig?',
-      answer:
-        'Weil die Kraft aus dem Rumpf kommt, nicht aus dem Arm. In der Luft spannst du den Oberkörper zur Bogenspannung vor – Schulter zurück, Hüfte nach vorn. Diese Vorspannung ist der eigentliche Motor des Wurfs und entscheidet über die Wurfhärte.',
     },
   ],
   relatedSlugs: [

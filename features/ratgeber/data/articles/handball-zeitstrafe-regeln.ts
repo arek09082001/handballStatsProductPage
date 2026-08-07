@@ -17,8 +17,8 @@ export const handballZeitstrafeRegeln: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Gelb, zwei Minuten, rot, blau: Das Strafensystem im Handball wirkt kompliziert, folgt aber einer klaren Logik. Hier sind alle Strafen verständlich erklärt.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -77,11 +77,7 @@ Strafen für den Spieler und der Siebenmeter für die Mannschaft sind zwei versc
 
 ## Warum das für Trainer und Spieler zählt
 
-Das Strafensystem ist nicht nur Regelkunde, sondern taktisch relevant. Eine Zeitstrafe zur falschen Zeit kann ein Spiel drehen, drei Zeitstrafen kosten dir einen Leistungsträger. Disziplin in der Abwehr – hart, aber regelkonform verteidigen – ist deshalb ein echter Wettbewerbsvorteil.
-
-## Strafen und ihre Folgen im Blick
-
-Wie oft eure Mannschaft in Unterzahl gerät und wie viele Gegentore das kostet, ist eine wichtige Kennzahl. Wie ihr diese Phasen spielt, steht im Ratgeber zu [Über- und Unterzahl](/ratgeber/handball-ueberzahl-unterzahl). Mit **Statix**, der [Statistik-App für Trainer](/), erfasst du Zeitstrafen und die Tore in Über- und Unterzahl live – so erkennst du, ob eure Disziplin ein Problem ist und wie viel euch fehlende Fairness auf dem Scoreboard kostet. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Das Strafensystem ist nicht nur Regelkunde, sondern taktisch relevant. Eine Zeitstrafe zur falschen Zeit kann ein Spiel drehen, drei Zeitstrafen kosten dir einen Leistungsträger. Disziplin in der Abwehr – hart, aber regelkonform verteidigen – ist deshalb ein echter Wettbewerbsvorteil.`,
   faqs: [
     {
       question: 'Was ist die progressive Bestrafung im Handball?',

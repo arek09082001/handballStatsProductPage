@@ -17,8 +17,8 @@ export const handballBallbesitzTempo: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-07-18',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Wer mehr Angriffe hat, hat mehr Chancen – wenn er sie nutzt. Ballbesitz, Effektivität und Tempo erklären, warum Spiele so ausgehen, wie sie ausgehen. So misst und steuerst du sie.',
   heroEyebrow: 'Statistik & Kennzahlen',
@@ -84,7 +84,7 @@ Tempo ist eine taktische Entscheidung, keine Charakterfrage. Willst du beschleun
 
 ## Angriffe und Effektivität live im Blick
 
-Ballbesitz und Effektivität von Hand mitzuschreiben, ist im Spiel kaum machbar. Mit **Statix**, der [Statistik-App für dein Handballteam](/), werden Angriffe, Tore und technische Fehler live per Tap erfasst – Effektivität und Tempo entstehen daraus automatisch, in Echtzeit und pro Halbzeit. So triffst du deine Auszeit- und Tempo-Entscheidungen auf Basis von Zahlen statt Bauchgefühl. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ballbesitz und Effektivität von Hand mitzuschreiben, ist im Spiel kaum machbar. Mit **Statix**, der [Statistik-App für dein Handballteam](/), werden Angriffe, Tore und technische Fehler live per Tap erfasst – Effektivität und Tempo entstehen daraus automatisch, in Echtzeit und pro Halbzeit. So triffst du deine Auszeit- und Tempo-Entscheidungen auf Basis von Zahlen statt Bauchgefühl.`,
   faqs: [
     {
       question: 'Was ist ein Ballbesitz (Possession) im Handball?',

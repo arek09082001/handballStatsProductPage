@@ -17,8 +17,8 @@ export const handballRegeneration: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-17',
-  dateModified: '2026-07-17',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Besser wirst du nicht im Training, sondern in der Erholung danach. Wie Schlaf, Ernährung und aktive Regeneration deine Leistung sichern – und Verletzungen verhindern.',
   heroEyebrow: 'Training & Planung',
@@ -89,13 +89,7 @@ Regeneration beginnt im Trainingsplan, nicht erst danach:
 - Nach Spieltagen mindestens einen lockeren oder freien Tag einplanen
 - Harte Einheiten nicht direkt stapeln – auf intensive Abwehr- und Athletikeinheiten folgt Technik oder Taktik
 - In englischen Wochen (zwei Spiele) Umfänge deutlich reduzieren: Frische schlägt Extra-Training
-- Individuell denken: Ein 18-Jähriger steckt Belastungen anders weg als ein 35-Jähriger; Vielspieler brauchen mehr Erholung als Bankspieler
-
-## Ermüdung in den Zahlen erkennen
-
-Müdigkeit zeigt sich in der Leistung, bevor sie jemand ausspricht: sinkende Wurfquoten in der zweiten Halbzeit, mehr technische Fehler in der Schlussphase, weniger Tore aus dem Gegenstoß.
-
-Mit **Statix**, der [kostenfrei nutzbaren Statistik-App](/handball-statistik-app-kostenlos), erfasst du Tore, Fehler und Wurfquoten live per Tap – auch im Zeitverlauf des Spiels. So erkennst du, ob dein Team am Ende einbricht und ob die Belastungssteuerung der Woche gepasst hat. Wie du die Belastung überhaupt aufbaust, steht im Ratgeber zur [Kondition im Handball](/ratgeber/handball-kondition-verbessern). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- Individuell denken: Ein 18-Jähriger steckt Belastungen anders weg als ein 35-Jähriger; Vielspieler brauchen mehr Erholung als Bankspieler`,
   faqs: [
     {
       question: 'Wie regeneriert man am schnellsten nach einem Handballspiel?',

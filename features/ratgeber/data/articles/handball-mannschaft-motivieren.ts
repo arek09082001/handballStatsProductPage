@@ -18,8 +18,8 @@ export const handballMannschaftMotivieren: Article = {
   ],
   category: 'Mannschaft & Mentales',
   datePublished: '2026-05-22',
-  dateModified: '2026-07-02',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Technik lässt sich trainieren – doch enge Spiele entscheidet oft der Kopf. So stärkst du Motivation, Teamgeist und die mentale Stärke deiner Mannschaft.',
   heroEyebrow: 'Mannschaft & Mentales',
@@ -88,16 +88,6 @@ Ein starker Motivator, den viele Trainer unterschätzen, ist sichtbarer Fortschr
       question: 'Wie gebe ich als Trainer richtig Feedback?',
       answer:
         'Konkret, zeitnah und mit mehr Lob als Kritik. Eine bewährte Regel lautet: Lob vor der Gruppe, Kritik unter vier Augen. So bleibt die Stimmung offen und die Spieler behalten ihr Selbstvertrauen.',
-    },
-    {
-      question: 'Wie sollte eine Kabinenansprache aufgebaut sein?',
-      answer:
-        'Kurz, klar und emotional passend zur Situation: ein bis zwei Botschaften, die hängen bleiben, verbunden mit einer konkreten Aufgabe. Lies die Stimmung der Mannschaft – mal braucht sie Feuer, mal Ruhe.',
-    },
-    {
-      question: 'Wie stärke ich die mentale Stärke meiner Spieler?',
-      answer:
-        'Durch feste Routinen, den Fokus auf das Kontrollierbare und Selbstvertrauen aus wiederholten Erfolgserlebnissen im Training. Wer eine Situation oft geübt hat, bleibt auch unter Druck im Spiel ruhig.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballTeambuildingUebungen: Article = {
   ],
   category: 'Mannschaft & Mentales',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-28',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Enge Spiele entscheidet das bessere Wir. Hier findest du praxiserprobte Teambuilding-Übungen und Rituale, die Vertrauen, Kommunikation und Zusammenhalt in deiner Mannschaft stärken – in der Halle und daneben.',
   heroEyebrow: 'Mannschaft & Mentales',
@@ -96,35 +96,7 @@ Damit du direkt loslegen kannst, findest du hier eine Auswahl bewährter Übunge
 | Jeder berührt | Verantwortung | Angriff zählt nur, wenn vor dem Abschluss jeder den Ball einmal hatte |
 | Abschlusskreis | Teamkultur | Nach dem Training kurz: Was lief gut, was nehmen wir mit ins nächste Mal |
 
-Variiere die Zusammensetzung der Gruppen von Woche zu Woche. So arbeitet jeder mit jedem zusammen, und feste Grüppchen lösen sich ganz nebenbei auf.
-
-## Gemeinsame Ziele sichtbar machen
-
-Nichts schweißt ein Team so zusammen wie das Gefühl, gemeinsam voranzukommen. Wenn alle sehen, dass die Abwehr von Spiel zu Spiel stabiler steht oder die Tempogegenstöße endlich sitzen, wird aus vagen Vorsätzen ein spürbarer Fortschritt. Deshalb lohnt es sich, Ziele und Entwicklung sichtbar zu machen – nicht als Druckmittel, sondern als gemeinsamen Erfolg zum Feiern.
-
-Genau hier hilft eine [Statistik-App für dein Handballteam](/) wie Statix. Du hältst Leistungen und Fortschritte fest, machst die Entwicklung des Teams über die Saison sichtbar und gibst jedem Spieler das Gefühl, Teil des großen Ganzen zu sein. Wie daraus dauerhafte Motivation wird, liest du im Ratgeber [Mannschaft motivieren](/ratgeber/handball-mannschaft-motivieren). Wenn du es ausprobieren willst, findest du eine kostenlose Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de).`,
-  faqs: [
-    {
-      question: 'Was bringt Teambuilding im Handball?',
-      answer:
-        'Teambuilding stärkt Vertrauen, Kommunikation und die Verantwortung füreinander. Genau diese Faktoren entscheiden enge Spiele: Ein eingespieltes Team hält zusammen, wenn es hinten liegt, statt auseinanderzufallen. Der Aufwand zahlt sich also direkt auf der Platte aus.',
-    },
-    {
-      question: 'Wie oft sollte man Teambuilding machen?',
-      answer:
-        'Am besten kontinuierlich. Teambuilding wirkt nicht als einmaliges Event vor der Saison, sondern als Daueraufgabe. Baue lieber regelmäßig kleine Übungen und Rituale ins normale Training ein und ergänze sie ein paar Mal im Jahr durch größere Aktionen wie eine Mannschaftsfahrt.',
-    },
-    {
-      question: 'Welche Teambuilding-Übungen eignen sich fürs Handballtraining?',
-      answer:
-        'Besonders gut wirken Aufgaben, die sich nur gemeinsam lösen lassen, denn sie erzwingen Kommunikation und Absprache. Dazu zählen Vertrauensübungen wie das blinde Führen per Stimme, Kooperationsparcours und Passspiele mit lautem Zuruf. Auch handballnahe Formen, bei denen jeder den Ball vor dem Abschluss berühren muss, funktionieren sehr gut.',
-    },
-    {
-      question: 'Wie stärkt man den Zusammenhalt bei Cliquenbildung?',
-      answer:
-        'Sprich das Thema früh und offen an, statt es auszusitzen. Wechsle in Übungen die Paare und Gruppen bewusst durch, damit jeder mit jedem zusammenarbeitet, und binde vor allem leise und neue Spieler aktiv ein. Gemeinsame Ziele und feste Rituale geben dem ganzen Team ein Wir-Gefühl, das Grüppchenbildung vorbeugt.',
-    },
-  ],
+Variiere die Zusammensetzung der Gruppen von Woche zu Woche. So arbeitet jeder mit jedem zusammen, und feste Grüppchen lösen sich ganz nebenbei auf.`,
   relatedSlugs: [
     'handball-mannschaft-motivieren',
     'jugendhandball-trainieren',

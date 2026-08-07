@@ -17,8 +17,8 @@ export const handballTrainingslagerPlanen: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Ein Trainingslager kann eine Saison prägen – sportlich und menschlich. Von den Zielen über den Tagesablauf bis zur Belastungssteuerung: So planst du ein Camp, das wirklich etwas bringt.',
   heroEyebrow: 'Training & Planung',
@@ -89,7 +89,7 @@ Der menschliche Ertrag ist oft der wertvollste. Gemeinsames Essen, ein Spieleabe
 
 ## Auswertung: Was hat das Camp gebracht?
 
-Ein Trainingslager wirkt nur, wenn das Erarbeitete in der Saison ankommt. Wie es sich ins Gesamtbild der [Saisonvorbereitung](/ratgeber/handball-saisonvorbereitung) einfügt, liest du hier. Halte deshalb fest, welche Systeme und Standards ihr eingeführt habt, und überprüfe in den ersten Pflichtspielen, ob sie greifen. Mit **Statix**, der [gratis nutzbaren Handball-Statistik-App](/handball-statistik-app-kostenlos), dokumentierst du Testspiele und den Saisonstart mit denselben Kennzahlen – so siehst du schwarz auf weiß, ob die neue Abwehr hält und die einstudierten Angriffe Tore bringen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ein Trainingslager wirkt nur, wenn das Erarbeitete in der Saison ankommt. Wie es sich ins Gesamtbild der [Saisonvorbereitung](/ratgeber/handball-saisonvorbereitung) einfügt, liest du hier. Halte deshalb fest, welche Systeme und Standards ihr eingeführt habt, und überprüfe in den ersten Pflichtspielen, ob sie greifen. Mit **Statix**, der [gratis nutzbaren Handball-Statistik-App](/handball-statistik-app-kostenlos), dokumentierst du Testspiele und den Saisonstart mit denselben Kennzahlen – so siehst du schwarz auf weiß, ob die neue Abwehr hält und die einstudierten Angriffe Tore bringen.`,
   faqs: [
     {
       question: 'Wie lange sollte ein Handball-Trainingslager dauern?',
@@ -100,16 +100,6 @@ Ein Trainingslager wirkt nur, wenn das Erarbeitete in der Saison ankommt. Wie es
       question: 'Wie sieht ein guter Tagesablauf im Trainingslager aus?',
       answer:
         'Bewährt sind zwei Einheiten pro Tag mit ausreichend Erholung dazwischen: vormittags die kräftigere athletische oder taktische Einheit, mittags Essen und echte Pause, nachmittags oder abends eine spielnahe Einheit, danach Teamzeit oder Videoanalyse. Die erste Einheit nach Anreise und die letzte vor Abreise sollten locker sein.',
-    },
-    {
-      question: 'Was ist der häufigste Fehler bei der Planung?',
-      answer:
-        'Überlastung. Zwei harte Einheiten täglich über mehrere Tage sind eine große Beanspruchung, die das gewohnte Vereinstraining so nicht kennt. Steigere die Intensität schrittweise, baue mindestens eine regenerative oder taktische Einheit ein und achte auf Schlaf, Trinken und Essen.',
-    },
-    {
-      question: 'Welche Inhalte lohnen sich im Trainingslager besonders?',
-      answer:
-        'Alles, was im normalen Training zu kurz kommt: neue Abwehr- und Angriffssysteme in Ruhe einführen, Standards wie Anwurf und Über-/Unterzahl einstudieren, gezieltes Individualtraining und möglichst ein Testspiel gegen einen fremden Gegner, um das Gelernte zu überprüfen. Dazu gehört bewusst eingeplantes Teambuilding.',
     },
   ],
   relatedSlugs: [

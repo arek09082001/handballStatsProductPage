@@ -17,8 +17,8 @@ export const handballAlleineTrainieren: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-17',
-  dateModified: '2026-07-17',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Zwei Mannschaftstrainings pro Woche reichen dir nicht? Mit Ball, Wand und ein paar Quadratmetern kannst du Ballgefühl, Wurf und Athletik alleine deutlich verbessern – so geht es.',
   heroEyebrow: 'Training & Planung',
@@ -96,13 +96,7 @@ So könnte eine Woche mit zwei Mannschaftstrainings plus Heimtraining aussehen:
 - **Samstag:** Spiel oder Videostudium
 - **Sonntag:** frei oder lockeres Ballhandling
 
-Wichtiger als der perfekte Plan ist die Regelmäßigkeit: Lieber vier kurze Einheiten pro Woche als eine lange alle zwei Wochen.
-
-## Fortschritt sichtbar machen
-
-Selbsttraining lebt von Motivation – und nichts motiviert mehr als messbarer Fortschritt: mehr saubere Ballkontakte, bessere Wurfquoten, stabilere Leistungen im Spiel.
-
-Mit **Statix**, der [kostenlos startenden Handball-Statistik-App](/handball-statistik-app-kostenlos), sieht dein Trainer deine Spieldaten über die ganze Saison: Wurfquote, Tore, Fehler. So erkennst du, ob sich dein Extratraining in echten Spielen auszahlt. Womit du zu Hause am besten anfängst, zeigt der Ratgeber zum [Ballhandling](/ratgeber/handball-ballhandling-verbessern). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Wichtiger als der perfekte Plan ist die Regelmäßigkeit: Lieber vier kurze Einheiten pro Woche als eine lange alle zwei Wochen.`,
   faqs: [
     {
       question: 'Kann man Handball alleine trainieren?',

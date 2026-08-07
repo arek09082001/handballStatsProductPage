@@ -17,8 +17,8 @@ export const handballStemmschrittDreierrhythmus: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Ein harter Wurf beginnt nicht im Arm, sondern in den Beinen. Der Dreierrhythmus mit sauberem Stemmschritt bringt Schwung in Kraft – so lernst und lehrst du den Anlauf richtig.',
   heroEyebrow: 'Technik & Wurf',
@@ -79,11 +79,7 @@ Reißt die Kette an einer Stelle – etwa weil der Stemmschritt fehlt oder der R
 4. **Mit Pass davor:** Anspiel fangen, Rhythmus, Wurf – so wie im Spiel.
 5. **Gegen Abwehr:** den Rhythmus auch unter Druck sauber halten.
 
-Bei Kindern führt man den Dreierrhythmus früh und spielerisch ein – einmal falsch eingeschliffen, ist er schwer zu korrigieren.
-
-## Wurfleistung sichtbar machen
-
-Ob sich die Arbeit am Anlauf auszahlt, zeigt sich an den Abschlüssen im Spiel – am schnellsten über die [Wurfquote deiner Rückraumspieler](/wurfquote-rechner). Mit **Statix**, der [Statistik-App für die Halle](/), erfasst du Würfe und Trefferquoten deiner Rückraumspieler live und siehst, ob mehr Härte und Präzision auch mehr Tore bringen. So verbindest du Techniktraining mit messbarem Fortschritt. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Bei Kindern führt man den Dreierrhythmus früh und spielerisch ein – einmal falsch eingeschliffen, ist er schwer zu korrigieren.`,
   faqs: [
     {
       question: 'Was ist der Dreierrhythmus im Handball?',

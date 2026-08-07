@@ -18,8 +18,8 @@ export const handballPositionenErklaert: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-04-02',
-  dateModified: '2026-06-15',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 5,
   excerpt:
     'Jede der sieben Handball-Positionen hat ihre eigenen Aufgaben. Hier erfährst du, was Torwart, Außen, Kreisläufer und Rückraum ausmacht – und welcher Spielertyp wohin passt.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -94,11 +94,7 @@ Welche Formation dahintersteht – von der 6:0 bis zur 3:2:1 – ist ein eigenes
 
 Gerade im Nachwuchs gilt: Lass die Kinder erst einmal alle Positionen ausprobieren. Wer als Jugendlicher im Tor, am Kreis und im Rückraum gestanden hat, entwickelt ein viel besseres Spielverständnis und wird nicht zu früh auf eine Rolle festgelegt. Eine feste Spezialisierung ergibt erst später Sinn.
 
-Für die passende Position zählen dann die individuellen Stärken. Ein großer, wurfgewaltiger Spieler ist im Rückraum gut aufgehoben, ein schneller und wendiger Typ außen, ein robuster Zweikämpfer am Kreis und ein Kind mit Übersicht und Ruhe am Ball auf Rückraum Mitte. Linkshänder sind auf der rechten Seite fast schon Gold wert, weil dort händeringend Spieler gesucht werden. Wichtig ist am Ende vor allem, dass sich ein Spieler auf seiner Position wohlfühlt und seine Stärken voll einbringen kann.
-
-## Leistung je Position auswerten
-
-Ob eine Position wirklich zum Spieler passt, zeigt sich am Ende auf dem Feld – und in den Zahlen. Beim Herantasten hilft der Selbstcheck [Welche Position passt zu mir?](/ratgeber/handball-welche-position-passt-zu-mir). Genau hier hilft dir eine [Handball-Statistik-App für Trainer](/) wie Statix: Du erfasst Tore, Würfe und Aktionen live per Tap, siehst Spielanteile und Wurfquoten nach Position und erkennst auf einen Blick, wer aus welcher Rolle wie effizient ist. Das läuft offline in der Halle, ganz ohne Zettelwirtschaft. Wenn du es ausprobieren willst, findest du unter [demo.statix-app.de](https://demo.statix-app.de) eine kostenlose Live-Demo ohne Account.`,
+Für die passende Position zählen dann die individuellen Stärken. Ein großer, wurfgewaltiger Spieler ist im Rückraum gut aufgehoben, ein schneller und wendiger Typ außen, ein robuster Zweikämpfer am Kreis und ein Kind mit Übersicht und Ruhe am Ball auf Rückraum Mitte. Linkshänder sind auf der rechten Seite fast schon Gold wert, weil dort händeringend Spieler gesucht werden. Wichtig ist am Ende vor allem, dass sich ein Spieler auf seiner Position wohlfühlt und seine Stärken voll einbringen kann.`,
   faqs: [
     {
       question: 'Welche Positionen gibt es im Handball?',
@@ -114,11 +110,6 @@ Ob eine Position wirklich zum Spieler passt, zeigt sich am Ende auf dem Feld –
       question: 'Welche Position ist der Spielmacher im Handball?',
       answer:
         'Der Spielmacher ist meist der Rückraum Mitte. Er lenkt den Angriff, gibt das Tempo vor, verteilt die Bälle und entscheidet über die Spielzüge. Übersicht, Passsicherheit und Timing sind für diese Position wichtiger als der härteste Wurf.',
-    },
-    {
-      question: 'Warum spielen Linkshänder im rechten Rückraum?',
-      answer:
-        'Weil ihr Wurfarm auf der rechten Seite innen liegt und sie so einen besseren Wurfwinkel zum Tor bekommen. Deshalb sind Linkshänder auf Rückraum rechts und Rechtsaußen besonders gefragt – dort werden sie oft händeringend gesucht.',
     },
   ],
   relatedSlugs: [

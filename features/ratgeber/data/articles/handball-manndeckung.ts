@@ -17,8 +17,8 @@ export const handballManndeckung: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-07',
-  dateModified: '2026-07-07',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Die Manndeckung ist die schärfste Waffe im Abwehrarsenal. Hier erfährst du, wann sie sich lohnt, welche Varianten es gibt und wie du sie mit deinem Team einstudierst.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -92,9 +92,7 @@ Trainiere auch das schnelle Umstellen zwischen Deckungsformen – die Überrasch
 
 ## Wirkung messen
 
-Ob deine Manndeckung wirkt, siehst du an den Zahlen: Erzwingt sie Ballgewinne und Zeitstrafen beim Gegner? Führt sie zu einfachen Kontertoren? Oder kassierst du zu viele einfache Durchbrüche?
-
-Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du Ballgewinne, Gegentore und Tempogegenstöße live per Tap. So erkennst du sofort, ob sich der Wechsel zur Manndeckung gelohnt hat – und in welchen Phasen sie am besten funktioniert. Den kompletten Ablauf einer [systematischen Spielauswertung](/ratgeber/handball-spielanalyse) findest du im passenden Ratgeber. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ob deine Manndeckung wirkt, siehst du an den Zahlen: Erzwingt sie Ballgewinne und Zeitstrafen beim Gegner? Führt sie zu einfachen Kontertoren? Oder kassierst du zu viele einfache Durchbrüche?`,
   faqs: [
     {
       question: 'Was ist Manndeckung im Handball?',
@@ -105,16 +103,6 @@ Mit **Statix**, der [Statistik-App für dein Handballteam](/), erfasst du Ballge
       question: 'Wann setzt man Manndeckung im Handball ein?',
       answer:
         'Vor allem situativ: um einen Rückstand mit schnellen Ballgewinnen aufzuholen, den Gegner in der Schlussphase unter Zeitdruck zu setzen, einen überragenden Schlüsselspieler auszuschalten oder als Überraschung, die den gegnerischen Rhythmus stört. Als Dauerlösung ist sie zu riskant und laufintensiv.',
-    },
-    {
-      question: 'Was ist eine offensive Einzeldeckung (1:5)?',
-      answer:
-        'Bei der offensiven Einzeldeckung deckt ein Verteidiger den besten gegnerischen Spieler eng über das Feld, während die anderen fünf im Raum verteidigen. So nimmt man einen Schlüsselspieler aus dem Spiel, ohne das volle Risiko einer kompletten Manndeckung einzugehen.',
-    },
-    {
-      question: 'Wie trainiert man Manndeckung im Handball?',
-      answer:
-        'Über Eins-gegen-eins-Duelle für Beinarbeit und Zweikampf, gezieltes Üben des Übergebens bei Sperren und Kreuzungen, Umschaltübungen mit Ballgewinn und sofortigem Konter sowie Spielformen, in denen das Team auf ein Kommando von Raum- auf Manndeckung wechselt. Kommunikation ist dabei entscheidend.',
     },
   ],
   relatedSlugs: [

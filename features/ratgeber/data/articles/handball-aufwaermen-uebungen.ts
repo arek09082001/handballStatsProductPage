@@ -18,8 +18,8 @@ export const handballAufwaermenUebungen: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-04-06',
-  dateModified: '2026-06-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 5,
   excerpt:
     'Ein gutes Aufwärmen bringt Körper und Kopf auf Betriebstemperatur, steigert die Leistung und schützt vor Verletzungen. Hier findest du die besten Aufwärmübungen, den Ablauf in drei Phasen und ein fertiges 15-Minuten-Programm für Training und Spiel.',
   heroEyebrow: 'Training & Planung',
@@ -126,16 +126,6 @@ Wer diese Fehler vermeidet, hat schon viel gewonnen: Das Team ist ab der ersten 
       question: 'Sollte man sich vor dem Handballspiel statisch dehnen?',
       answer:
         'Nein, langes statisches Dehnen gehört nicht vor die Belastung, weil es die Explosivkraft kurzfristig senken kann. Setze vorher auf dynamisches Dehnen und Mobilisation. Ausgiebiges statisches Dehnen hebst du dir fürs Cool-down nach der Belastung auf.',
-    },
-    {
-      question: 'Welche Aufwärmübungen sind im Handball am wichtigsten?',
-      answer:
-        'Wichtig ist die Mischung aus allgemeinem und spezifischem Aufwärmen: lockeres Einlaufen und Lauf-ABC für den Kreislauf, dynamische Mobilisation für die Gelenke, Stabilisation für Schulter, Sprunggelenk und Knie sowie handballspezifische Passformen und Torwurfreihen mit dem Ball.',
-    },
-    {
-      question: 'Wie beugt man mit dem Aufwärmen Verletzungen vor?',
-      answer:
-        'Indem du gezielt die kritischen Regionen vorbereitest: Ein kurzes Schulterprogramm schützt das Wurfgelenk, Einbeinstand und kontrollierte Landungen stabilisieren Sprunggelenk und Knie. Das Prinzip lautet stabilisieren vor belasten und lässt sich in wenigen Minuten einbauen.',
     },
   ],
   relatedSlugs: [

@@ -18,8 +18,8 @@ export const handballSpielanalyse: Article = {
   ],
   category: 'Spielanalyse',
   datePublished: '2026-06-25',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 6,
   excerpt:
     'Gute Spielanalyse macht aus dem Bauchgefühl belastbare Entscheidungen. Hier erfährst du, wie du vor, während und nach dem Spiel systematisch auswertest – von der Gegneranalyse über Wurfbilder bis zur Phasenanalyse.',
   heroEyebrow: 'Spielanalyse',

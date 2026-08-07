@@ -17,8 +17,8 @@ export const handballKrafttraining: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-14',
-  dateModified: '2026-07-14',
-  readingTimeMinutes: 9,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Mehr Wurfkraft, stabilere Zweikämpfe und weniger Verletzungen: Hier bekommst du die Grundlagen des Krafttrainings im Handball mit konkreten Übungen und einem einfachen Wochenplan.',
   heroEyebrow: 'Training & Planung',
@@ -98,13 +98,7 @@ In der Saison reichen für die meisten Amateur- und Jugendteams zwei Krafteinhei
 | Freitag | Krafttraining mit Schwerpunkt Rumpf und Schulterstabilität |
 | Wochenende | Spiel |
 
-In der Saisonvorbereitung darf mehr Kraft trainiert werden, kurz vor dem Spiel weniger. Achte immer auf ausreichend Regeneration – Kraft wächst in der Pause, nicht während der Belastung.
-
-## Fortschritt sichtbar machen
-
-Krafttraining wirkt langsam, aber stetig. Halte einfache Werte fest: Gewicht und Wiederholungen der Grundübungen, dazu auf dem Feld die Entwicklung von Wurfhärte und Zweikampfquote. Wenn deine Spieler stärker werden, sollte sich das in stabileren Abschlüssen und gewonnenen Zweikämpfen zeigen.
-
-Genau hier hilft dir **Statix**, die [Handball-Statistik-App, die kostenlos startet](/handball-statistik-app-kostenlos): Du erfasst Tore, Wurfquoten und technische Fehler live per Tap und siehst über die Saison, ob deine Athletikarbeit auf dem Feld ankommt. So verbindest du Kraftraum und Spielrealität mit echten Zahlen statt mit Bauchgefühl. Wie du daraus konkret mehr [Sprungkraft](/ratgeber/handball-sprungkraft-verbessern) machst, liest du hier. Probier es unverbindlich in der kostenlosen Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de) aus.`,
+In der Saisonvorbereitung darf mehr Kraft trainiert werden, kurz vor dem Spiel weniger. Achte immer auf ausreichend Regeneration – Kraft wächst in der Pause, nicht während der Belastung.`,
   faqs: [
     {
       question: 'Wie oft sollte man im Handball Krafttraining machen?',

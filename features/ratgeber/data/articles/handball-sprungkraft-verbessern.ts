@@ -17,8 +17,8 @@ export const handballSprungkraftVerbessern: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Höhere Sprungwürfe, gefährlichere Abschlüsse: Hier bekommst du die wirksamsten Übungen für mehr Sprungkraft im Handball – von Plyometrie bis Technik, mit klarem Trainingsplan.',
   heroEyebrow: 'Training & Planung',
@@ -89,13 +89,7 @@ Ein realistischer Weg für Amateur- und Jugendteams:
 - **Woche 4–6:** Plyometrie steigern (Kasten- und Hürdensprünge), Absprungtechnik schulen.
 - **Woche 7–8:** Sprünge mit Wurf kombinieren, Explosivität im Vordergrund, weniger Volumen.
 
-Zwei kurze Sprungeinheiten pro Woche reichen. Höre auf den Körper: Schmerzen in Knie oder Achillessehne sind ein Stoppsignal, kein Zeichen von Fleiß.
-
-## Fortschritt messen
-
-Sprungkraft lässt sich einfach überprüfen – etwa mit einem Standhochsprung an der Wand alle paar Wochen. Auf dem Feld zählt aber, ob die höheren Sprünge zu besseren Abschlüssen führen.
-
-Mit **Statix** kannst du [Handball-Statistik kostenlos führen](/handball-statistik-app-kostenlos) und Wurfquoten sowie Abschlüsse je Position live per Tap erfassen. So siehst du, ob deine Rückraum- und Außenspieler nach dem Sprungkrafttraining tatsächlich häufiger und sauberer treffen. Die Technik dazu vertieft der Ratgeber zum [Sprungwurf](/ratgeber/handball-wurftraining-sprungwurf). Zahlen statt Bauchgefühl – teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Zwei kurze Sprungeinheiten pro Woche reichen. Höre auf den Körper: Schmerzen in Knie oder Achillessehne sind ein Stoppsignal, kein Zeichen von Fleiß.`,
   faqs: [
     {
       question: 'Wie kann ich meine Sprungkraft für den Handball verbessern?',

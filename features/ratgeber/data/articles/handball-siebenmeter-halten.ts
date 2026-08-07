@@ -17,8 +17,8 @@ export const handballSiebenmeterHalten: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-15',
-  dateModified: '2026-07-15',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Beim Siebenmeter scheint alles für den Werfer zu sprechen – doch gute Torhüter machen aus dem Strafwurf ein echtes Duell. So liest du Anlauf, Wurfarm und Muster und gewinnst das Nervenspiel.',
   heroEyebrow: 'Technik & Wurf',
@@ -78,13 +78,7 @@ Ob gehalten oder nicht – entwickle eine feste Routine. Nach einem Gegentor: ku
 - **Serien mit echten Schützen:** Lass im Training verschiedene Werfer antreten und übe bewusst beide Strategien (spät reagieren, Ecke anbieten).
 - **Videostudium:** Analysiere die Stammschützen der kommenden Gegner.
 - **Wettkampfdruck simulieren:** Siebenmeterduelle am Ende des Trainings mit Konsequenz (z. B. Zusatzaufgabe für das Verliererteam) erzeugen echten Druck.
-- **Erfolg dokumentieren:** Notiere Quote und Ecken über die Saison.
-
-## Deine Siebenmeterquote im Blick
-
-Wie gut du im Duell wirklich bist, zeigt nur die Statistik über viele Würfe – nicht das Gefühl nach einem Spiel. Deine [Siebenmeterquote ausrechnen](/wurfquote-rechner) dauert dabei keine Minute.
-
-Mit **Statix**, der [App für Handball-Statistik](/), werden Siebenmeter, Paraden und Gegentore live per Tap erfasst. So siehst du deine Siebenmeterquote über die Saison, erkennst Muster und machst aus dem Strafwurf Schritt für Schritt ein faires Duell. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+- **Erfolg dokumentieren:** Notiere Quote und Ecken über die Saison.`,
   faqs: [
     {
       question: 'Wie hält man einen Siebenmeter im Handball?',

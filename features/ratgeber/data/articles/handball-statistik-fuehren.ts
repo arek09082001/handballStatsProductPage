@@ -18,8 +18,8 @@ export const handballStatistikFuehren: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-05-12',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 5,
   excerpt:
     'Tore zählen kann jeder – aber welche Kennzahlen bringen dich wirklich weiter? Ein praktischer Überblick über die wichtigsten Werte, offensiv wie defensiv, und wie du stressfrei damit startest.',
   heroEyebrow: 'Statistik & Kennzahlen',

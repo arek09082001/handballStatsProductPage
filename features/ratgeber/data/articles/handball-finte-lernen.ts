@@ -17,8 +17,8 @@ export const handballFinteLernen: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-04',
-  dateModified: '2026-07-04',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Eine gute Finte lässt den Gegner aussteigen und öffnet den Weg zum Tor. Hier lernst du die wichtigsten Täuschungen im Handball und wie du sie Schritt für Schritt trainierst.',
   heroEyebrow: 'Technik & Wurf',
@@ -87,13 +87,7 @@ Finten lernt man vom Einfachen zum Schweren:
 - **Gegen halbaktiven Verteidiger:** der Gegner darf reagieren, aber nicht voll zweikämpfen.
 - **Im Eins-gegen-eins:** unter echtem Druck anwenden und Varianten kombinieren.
 
-Lass jeden Spieler ein bis zwei Finten finden, die zu ihm passen, und diese wirklich sicher beherrschen. Zwei perfekt sitzende Finten sind mehr wert als zehn halbgare.
-
-## Wirkung sichtbar machen
-
-Ob deine Spieler im Eins-gegen-eins erfolgreich sind, zeigt sich an Durchbrüchen, erzwungenen Siebenmetern und einfachen Abschlüssen aus der Nahdistanz.
-
-Mit **Statix**, der [Statistik-App für Handballtrainer](/), erfasst du Tore, Wurfquoten und erzwungene Strafwürfe live per Tap. So siehst du, welche Spieler im direkten Duell den Unterschied machen und wo dein Angriff über das [Eins-gegen-eins](/ratgeber/handball-1-gegen-1-verbessern) gefährlich wird. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Lass jeden Spieler ein bis zwei Finten finden, die zu ihm passen, und diese wirklich sicher beherrschen. Zwei perfekt sitzende Finten sind mehr wert als zehn halbgare.`,
   faqs: [
     {
       question: 'Was ist eine Finte im Handball?',

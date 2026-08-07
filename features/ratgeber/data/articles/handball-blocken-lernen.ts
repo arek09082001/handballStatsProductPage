@@ -17,8 +17,8 @@ export const handballBlockenLernen: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-16',
-  dateModified: '2026-07-16',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Ein guter Block ist die halbe Parade: Er nimmt dem Rückraumschützen die Ecke und dem Torwart die Unsicherheit. So lernst du Timing, Handstellung und die Absprache im Blockspiel.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -84,13 +84,7 @@ Die Absprache muss **vor dem Spiel und während des Spiels** erfolgen: Viele Tea
 - **2 gegen 2 mit Blockpflicht:** Rückraumwürfe sind nur gegen Block erlaubt – so entsteht Spielnähe.
 - **Abpraller-Reaktion:** Nach jedem Block sofort zum Ball – Ballgewinn abschließen.
 
-Auch Kraft hilft: Sprungkraft und Rumpfspannung machen den Block höher und stabiler gegen Wurfhärte.
-
-## Blocks zählen – Abwehr sichtbar machen
-
-Blocks sind die unsichtbaren Punkte der Abwehrspieler: Sie tauchen in keinem Spielbericht auf, gewinnen aber Spiele.
-
-Mit **Statix**, der [Statistik-App, die auch Abwehraktionen zählt](/), erfasst du neben Toren und Paraden auch Blocks und Ballgewinne live per Tap. So bekommt deine Abwehrarbeit endlich die Zahlen, die sie verdient – und du siehst, welche Blockspieler Rückraumwürfe wirklich entschärfen. Wie sich das in eine komplette [Spielauswertung für Trainer](/ratgeber/handball-spielanalyse) einfügt, liest du hier. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Auch Kraft hilft: Sprungkraft und Rumpfspannung machen den Block höher und stabiler gegen Wurfhärte.`,
   faqs: [
     {
       question: 'Wie blockt man richtig im Handball?',
@@ -101,16 +95,6 @@ Mit **Statix**, der [Statistik-App, die auch Abwehraktionen zählt](/), erfasst 
       question: 'Wann springt man beim Block ab?',
       answer:
         'Erst wenn der Wurfarm des Schützen tatsächlich nach vorn beschleunigt – nicht auf die Ausholbewegung und nicht auf eine Wurffinte. Wer zu früh springt, wird unterlaufen oder überworfen. Geduld ist die wichtigste Eigenschaft eines guten Blockspielers.',
-    },
-    {
-      question: 'Wie funktioniert die Absprache zwischen Block und Torwart?',
-      answer:
-        'Block und Torwart teilen sich das Tor: Der Block nimmt eine vereinbarte Ecke weg, der Torwart konzentriert sich auf die verbleibende Seite. Die Vereinbarung wird vor dem Spiel getroffen und während des Spiels bestätigt. Entscheidend ist, dass der Block seine zugesagte Seite konsequent hält – ein Seitenwechsel in der Luft macht den Torwart chancenlos.',
-    },
-    {
-      question: 'Tut Blocken im Handball weh – wie schützt man die Hände?',
-      answer:
-        'Mit der richtigen Handstellung ist das Risiko gering: Finger gespreizt und aktiv angespannt, Handflächen zum Ball, Arme gestreckt. Gefährlich sind lockere Finger und verschränkte Daumen. Wer die Blocktechnik zunächst mit reduzierter Wurfkraft übt, baut Sicherheit und Vertrauen auf.',
     },
   ],
   relatedSlugs: [

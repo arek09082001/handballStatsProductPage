@@ -18,8 +18,8 @@ export const handballSpielerentwicklungMessen: Article = {
   ],
   category: 'Statistik & Kennzahlen',
   datePublished: '2026-06-21',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Entwicklung passiert oft unbemerkt. Wer sie misst, kann Spieler gezielt fördern – mit den richtigen Kennzahlen, klaren Zielen und einem Blick für den Verlauf über die Saison.',
   heroEyebrow: 'Statistik & Kennzahlen',

@@ -17,8 +17,8 @@ export const handballWelchePositionPasstZuMir: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-17',
-  dateModified: '2026-07-17',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Schnelle Beine, wurfstark, spielintelligent oder furchtlos im Getümmel? Jede Handball-Position belohnt einen anderen Spielertyp. Mit diesem Selbstcheck findest du die Rolle, die zu dir passt.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -77,13 +77,7 @@ Dann herzlichen Glückwunsch: Auf Rechtsaußen und Rückraum rechts sind Linksh�
 
 Bis ins Jugendalter gilt: **Vielseitigkeit schlägt Spezialisierung.** Wer verschiedene Positionen gespielt hat, versteht das Spiel besser, liest die Abwehr aus mehreren Blickwinkeln und bleibt flexibel, wenn sich der Körper entwickelt – der kleine Außen von heute ist manchmal der Rückraumschütze von übermorgen. Auch Erwachsene profitieren von Positionswechseln: Ein Halbspieler, der eine Saison Kreis gespielt hat, spielt danach bessere Anspiele an den Kreis.
 
-Trainer-Tipp: Lass Spieler in Testspielen und Trainingsformen rotieren und beobachte nicht nur, wo sie glänzen, sondern wo sie aufblühen.
-
-## Lass die Zahlen mitreden
-
-Das Bauchgefühl sagt viel, aber Zahlen machen die Entscheidung leichter: Wurfquoten nach Position, Tore aus dem Gegenstoß, technische Fehler, Zweikampfbilanz – oft zeigt die Statistik, dass ein Spieler auf einer Position deutlich effizienter ist als auf einer anderen.
-
-Mit **Statix**, der [Handball-Statistik-App für Trainer](/), erfasst du Tore, Würfe und Fehler live per Tap und siehst pro Spieler, aus welchen Positionen und Situationen er erfolgreich ist. So wird aus „Ich glaube, er ist ein Außen" ein belegbares „Seine Quote von außen ist top". Was die einzelnen Rollen genau ausmacht, erklärt der Ratgeber zu den [Handball-Positionen](/ratgeber/handball-positionen-erklaert). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Trainer-Tipp: Lass Spieler in Testspielen und Trainingsformen rotieren und beobachte nicht nur, wo sie glänzen, sondern wo sie aufblühen.`,
   faqs: [
     {
       question: 'Welche Handball-Position ist die richtige für mich?',

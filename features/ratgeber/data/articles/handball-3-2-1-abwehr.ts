@@ -17,8 +17,8 @@ export const handball321Abwehr: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Die 3:2:1-Abwehr ist die Antwort auf einen starken, wurfgewaltigen Rückraum. Hier erfährst du Aufbau, Aufgaben der Positionen sowie Vor- und Nachteile dieses offensiven Systems.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -97,9 +97,7 @@ Führe die 3:2:1 nicht als kompliziertes Sondersystem ein, sondern als beweglich
 
 ## Wirkung im Blick behalten
 
-Ob die 3:2:1 aufgeht, entscheidet sich an den Zahlen: Sinken die Rückraumtore des Gegners? Steigen deine Ballgewinne und Tempogegenstöße? Oder kassierst du zu viele einfache Tore über Kreis und Durchbruch?
-
-Mit **Statix**, der [Handball-App für Trainer](/), erfasst du Gegentore nach Wurfzone, Ballgewinne und Tempogegenstöße live per Tap. So siehst du direkt, ob die offensive Abwehr den Rückraum wirklich entschärft oder ob der Gegner die Räume nutzt. Wie daraus ein Trainingsplan wird, steht in der [Anleitung zur Spielanalyse](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ob die 3:2:1 aufgeht, entscheidet sich an den Zahlen: Sinken die Rückraumtore des Gegners? Steigen deine Ballgewinne und Tempogegenstöße? Oder kassierst du zu viele einfache Tore über Kreis und Durchbruch?`,
   faqs: [
     {
       question: 'Was ist die 3:2:1-Abwehr im Handball?',
@@ -110,16 +108,6 @@ Mit **Statix**, der [Handball-App für Trainer](/), erfasst du Gegentore nach Wu
       question: 'Wann spielt man die 3:2:1-Abwehr?',
       answer:
         'Vor allem gegen einen wurfstarken Rückraum, den man früh stören will, sowie wenn man über Ballgewinne Tempo erzeugen oder ein unsicheres Passspiel unter Druck setzen möchte. Auch als Wechsel, um einen eingespielten Angriff aus dem Rhythmus zu bringen, ist sie geeignet.',
-    },
-    {
-      question: 'Was sind die Nachteile der 3:2:1-Abwehr?',
-      answer:
-        'Sie ist laufintensiv und konditionell fordernd und wird anfällig, wenn das Herausrücken und Absichern nicht sauber abgestimmt sind. Bricht ein Angreifer durch oder wird der Kreis frei, entstehen schnell große Lücken. Gegen laufstarke, kreisbetonte Teams ist sie deshalb riskanter.',
-    },
-    {
-      question: 'Wie trainiert man die 3:2:1-Abwehr?',
-      answer:
-        'Am besten schrittweise: zuerst die Bewegungsmuster Herausrücken und Absichern ohne Gegner einschleifen, dann einzelne Positionen bespielen und das Übergeben üben, anschließend im vollen Spiel auf Kommando von der 6:0 in die 3:2:1 wechseln. Jeder Ballgewinn sollte mit einem sofortigen Konter belohnt werden.',
     },
   ],
   relatedSlugs: [

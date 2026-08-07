@@ -18,8 +18,8 @@ export const handballAngriffssystemeEinsteiger: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-05-04',
-  dateModified: '2026-08-06',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 6,
   excerpt:
     'Ein einfaches Angriffssystem gibt deiner Mannschaft Struktur und jedem Spieler eine klare Aufgabe. Hier lernst du die Grundpositionen, die Systeme 3:3 und 4:2 und die wichtigsten Angriffsmittel – verständlich für Einsteiger.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -132,11 +132,6 @@ Und genau beim letzten Punkt lohnt sich ein ehrlicher Blick auf die Zahlen: Wora
       question: 'Wann spielt man das 4:2-System?',
       answer:
         'Das 4:2 mit zwei Kreisläufern spielst du vor allem gegen offensive, vorgezogene Abwehrformationen wie die 5:1 oder die 3:2:1. Die beiden Kreisläufer binden viele Verteidiger in der Mitte und schaffen so Räume für den Rückraum.',
-    },
-    {
-      question: 'Was ist der Unterschied zwischen Kreuzen und Parallelstoß?',
-      answer:
-        'Beim Kreuzen tauschen zwei Rückraumspieler ihre Positionen und laufen aneinander vorbei, um die Abwehr zu verschieben. Beim Parallelstoß stoßen zwei Spieler nacheinander in dieselbe Richtung in dieselbe Lücke, ohne die Position zu tauschen.',
     },
   ],
   relatedSlugs: [

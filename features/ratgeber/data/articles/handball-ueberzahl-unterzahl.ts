@@ -17,8 +17,8 @@ export const handballUeberzahlUnterzahl: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Jede Zeitstrafe verschiebt das Kräfteverhältnis für zwei Minuten. Wer Über- und Unterzahl beherrscht, holt in diesen Phasen die Tore, die am Ende über Sieg oder Niederlage entscheiden.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -78,7 +78,7 @@ Eine moderne Variante ist der Wechsel auf einen siebten Feldspieler für den Tor
 
 ## Über- und Unterzahl auswerten
 
-Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore erzielt und kassiert ihr in Über- und Unterzahl? Mit **Statix** lassen sich [Spielphasen statistisch auswerten](/) – du erfasst sie live und sehen, ob eure Überzahl wirklich Tore bringt und eure Unterzahl standhält. Aus diesem Bild wird ein gezielter Trainingsschwerpunkt für genau die Minuten, die Spiele entscheiden. Wie du Spiele insgesamt [systematisch auswertest](/ratgeber/handball-spielanalyse), steht im passenden Ratgeber. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore erzielt und kassiert ihr in Über- und Unterzahl? Mit **Statix** lassen sich [Spielphasen statistisch auswerten](/) – du erfasst sie live und sehen, ob eure Überzahl wirklich Tore bringt und eure Unterzahl standhält. Aus diesem Bild wird ein gezielter Trainingsschwerpunkt für genau die Minuten, die Spiele entscheiden. Wie du Spiele insgesamt [systematisch auswertest](/ratgeber/handball-spielanalyse), steht im passenden Ratgeber.`,
   faqs: [
     {
       question: 'Wie spielt man Überzahl im Handball richtig aus?',
@@ -89,16 +89,6 @@ Ob eure Mannschaft diese Phasen gewinnt, lässt sich klar messen: Wie viele Tore
       question: 'Wie übersteht man eine Unterzahl im Handball?',
       answer:
         'Durch kompaktes, ballorientiertes Verteidigen: Die fünf Verteidiger rücken eng zusammen und verschieben geschlossen, schützen vor allem die Mitte und lassen eher schwierige Außen- oder Distanzwürfe zu. Im Angriff hält man den Ball sicher, nimmt Zeit von der Uhr und vermeidet unbedingt eine zweite Zeitstrafe.',
-    },
-    {
-      question: 'Was bringt der siebte Feldspieler in Über- und Unterzahl?',
-      answer:
-        'Der Wechsel auf einen siebten Feldspieler für den Torwart (7 gegen 6) stellt in eigener Unterzahl im Angriff Gleichzahl her oder macht die Überzahl noch dominanter. Er ist wirkungsvoll, aber riskant, weil ein Ballverlust den Wurf ins leere Tor bedeutet. Diese Variante braucht viel Übung und klare Absprachen.',
-    },
-    {
-      question: 'Warum sind Über- und Unterzahlphasen so entscheidend?',
-      answer:
-        'Weil sich Zeitstrafen über ein Spiel und eine Saison zu vielen Minuten summieren. Eine Mannschaft, die ihre Überzahl konsequent nutzt und ihre Unterzahl schadlos übersteht, sammelt genau die zwei bis drei Tore, die am Ende oft über Sieg oder Niederlage entscheiden – ohne besser werfen oder laufen zu müssen.',
     },
   ],
   relatedSlugs: [

@@ -17,8 +17,8 @@ export const handballFreilaufenOhneBall: Article = {
   ],
   category: 'Taktik & Abwehr',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Die meiste Zeit im Angriff hast du keinen Ball. Was du in dieser Zeit tust, entscheidet über Räume und Tore. So lernst du Laufwege, Timing und das richtige Anbieten.',
   heroEyebrow: 'Taktik & Abwehr',
@@ -76,11 +76,7 @@ Freilaufen ist nie nur individuell. Wenn ein Spieler einen Raum öffnet, muss ei
 3. **Stoßen und Ablegen:** in die Lücke stoßen, Verteidiger binden, zum Kreis ablegen.
 4. **Kleinfeldspiel mit Bonus:** Tore nach einem Anspiel in einen frei gelaufenen Raum zählen doppelt.
 
-Coache dabei weniger den Ball und mehr die Bewegung: „Wo war der freie Raum? Wer hat ihn geöffnet?"
-
-## Den Ertrag sichtbar machen
-
-Gutes Freilaufen zeigt sich in flüssigem Ballfluss, wenigen technischen Fehlern und hochwertigen Abschlüssen. Mit **Statix**, der [Statistik-App für Handball](/), erfasst du technische Fehler und Wurfpositionen live und erkennst, ob euer Angriff durch besseres Bewegen ohne Ball flüssiger und gefährlicher wird. So wird aus einer schwer greifbaren Fähigkeit ein messbarer Fortschritt. Den Rahmen dafür liefert die [Spielbeobachtung und Auswertung](/ratgeber/handball-spielanalyse). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Coache dabei weniger den Ball und mehr die Bewegung: „Wo war der freie Raum? Wer hat ihn geöffnet?"`,
   faqs: [
     {
       question: 'Was bedeutet Freilaufen im Handball?',

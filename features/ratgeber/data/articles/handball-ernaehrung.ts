@@ -17,8 +17,8 @@ export const handballErnaehrung: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-10',
-  dateModified: '2026-07-10',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Wer im Handball voll leisten will, muss richtig essen und trinken. Hier bekommst du praxisnahe Ernährungstipps für die Zeit vor, während und nach Training und Spiel.',
   heroEyebrow: 'Training & Planung',
@@ -88,13 +88,7 @@ An Turniertagen mit mehreren Spielen wird Ernährung zur Taktik. Ein paar Prinzi
 - Nichts Fettiges oder Ungewohntes essen, das im Magen liegt.
 - Nach dem letzten Spiel bewusst regenerieren, wenn am nächsten Tag weitergeht.
 
-So bleibt dein Team auch im letzten Spiel des Tages konzentriert und antrittsstark – oft genau dort, wo Turniere entschieden werden.
-
-## Leistung im Blick behalten
-
-Ob Ernährung und Regeneration passen, zeigt sich auf dem Feld: Bleibt dein Team in der Schlussphase konzentriert oder brechen Wurfquote und Tempo ein? Häufen sich technische Fehler gegen Ende der Spiele?
-
-Mit **Statix**, der [kostenlosen App für Handball-Statistik](/handball-statistik-app-kostenlos), erfasst du Tore, Wurfquoten und Fehler live per Tap und siehst, wie sich die Leistung über die Spielzeit entwickelt. Ein deutlicher Leistungsabfall in der Schlussphase ist oft ein Hinweis auf [Kondition](/ratgeber/handball-kondition-verbessern), Ernährung oder [Regeneration](/ratgeber/handball-regeneration). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+So bleibt dein Team auch im letzten Spiel des Tages konzentriert und antrittsstark – oft genau dort, wo Turniere entschieden werden.`,
   faqs: [
     {
       question: 'Was sollte man vor einem Handballspiel essen?',

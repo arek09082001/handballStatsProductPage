@@ -17,8 +17,8 @@ export const handballQuereinsteigerErwachsene: Article = {
   ],
   category: 'Jugend & Entwicklung',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Zu alt für Handball? Von wegen. Auch als Erwachsener ohne Vorerfahrung kannst du einsteigen – wenn du weißt, worauf es ankommt. So gelingt der Quereinstieg.',
   heroEyebrow: 'Jugend & Entwicklung',
@@ -73,11 +73,7 @@ Als Erwachsener startest du oft mit weniger vorbereiteten Sehnen und Gelenken al
 
 ## Die Position finden
 
-Nicht jede Position stellt gleich hohe technische Anforderungen. Für Einsteiger sind Abwehrpositionen und Rollen mit klaren Aufgaben oft ein guter Start, während der Rückraum mit anspruchsvollem Distanzwurf mehr Zeit braucht. Mit der Erfahrung findest du heraus, wo deine Stärken liegen.
-
-## Fortschritt sichtbar machen und dranbleiben
-
-Nichts motiviert mehr als der eigene Fortschritt. Wenn du deine Entwicklung festhältst – mehr geglückte Pässe, bessere [Wurfquote](/ratgeber/wurfquote-berechnen), weniger Fehler – bleibt der Antrieb hoch. Mit **Statix**, der [Handball-Statistik-App für Trainer und Teams](/), lassen sich diese Fortschritte über die Saison dokumentieren, sodass auch Späteinsteiger schwarz auf weiß sehen, wie sie besser werden. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Nicht jede Position stellt gleich hohe technische Anforderungen. Für Einsteiger sind Abwehrpositionen und Rollen mit klaren Aufgaben oft ein guter Start, während der Rückraum mit anspruchsvollem Distanzwurf mehr Zeit braucht. Mit der Erfahrung findest du heraus, wo deine Stärken liegen.`,
   faqs: [
     {
       question: 'Kann man als Erwachsener noch mit Handball anfangen?',

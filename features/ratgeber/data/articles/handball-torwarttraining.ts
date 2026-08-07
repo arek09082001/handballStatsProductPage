@@ -18,8 +18,8 @@ export const handballTorwarttraining: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-06-09',
-  dateModified: '2026-07-09',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Ein starker Torwart ist der beste Rückhalt – und trotzdem wird das Torwarttraining oft vernachlässigt. Hier findest du Übungen für Grundtechnik, Reaktion und Wurfabwehr sowie die Formel für die Paradenquote.',
   heroEyebrow: 'Training & Planung',
@@ -90,19 +90,7 @@ Diese Übungen kannst du direkt in deine nächste Einheit einbauen. Sie decken G
 | Reaktionswürfe kurz | Reaktion | Aus 6–7 Metern unangekündigt werfen, kurze Distanz erzwingt schnelle Reaktion |
 | Mehrfachwurf | Schnelligkeit | Drei Werfer nacheinander, nach jeder Parade zurück in die Grundstellung |
 | Tempogegenstoß 1-gegen-1 | Winkel verkürzen | Torwart kommt heraus und macht den Winkel zu |
-| Siebenmeter-Duell | Psyche | Serie von Strafwürfen, Torwart übt langes Stehenbleiben und das Lesen der Wurfhand |
-
-## Paradenquote messen und Entwicklung sehen
-
-Fortschritt im Tor lässt sich messen. Die zentrale Kennzahl ist die Paradenquote – der Anteil der gehaltenen Bälle an allen Torabschlüssen aufs Tor.
-
-> **Paradenquote (%) = Paraden ÷ (Paraden + Gegentore) × 100**
-
-Ein Beispiel: Hält dein Torwart 12 Bälle und kassiert 20 Gegentore, liegt seine Paradenquote bei 12 ÷ (12 + 20) × 100 = **37,5 %**. Als Richtwert gilt eine Quote von rund 30 bis 40 % im Amateur- und Ligabereich bereits als gut. Weltklasse-Torhüter erreichen in einzelnen Spielen mehr, aber über eine ganze Saison sind konstante 35 % ein starker Wert.
-
-Noch aussagekräftiger wird die Zahl, wenn du sie nach Zonen aufschlüsselst: Aus welcher Ecke fängt dein Torwart viele Bälle, wo fliegen ihm die Würfe durch? Genau dort liegt der nächste Trainingsauftrag.
-
-Von Hand ist das kaum sauber mitzuschreiben – gerade wenn du nebenbei die Abwehr coachst. Eine [Handball-Statistik-App mit kostenlosem Einstieg](/handball-statistik-app-kostenlos) wie **Statix** erfasst jede Parade und jedes Gegentor mit einem Tap, live in der Halle und komplett offline. So siehst du die Paradenquote und die gehaltenen Zonen deines Torwarts sofort und machst seine Entwicklung über die Saison sichtbar. Welche Kennzahlen dabei wirklich aussagekräftig sind, zeigt der Ratgeber zur [Torwartstatistik](/ratgeber/handball-torwart-statistik). Wenn du es ausprobieren möchtest, findest du eine kostenlose Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de).`,
+| Siebenmeter-Duell | Psyche | Serie von Strafwürfen, Torwart übt langes Stehenbleiben und das Lesen der Wurfhand |`,
   faqs: [
     {
       question: 'Wie oft sollte ein Handball-Torwart trainieren?',
@@ -118,11 +106,6 @@ Von Hand ist das kaum sauber mitzuschreiben – gerade wenn du nebenbei die Abwe
       question: 'Wie hält man einen Siebenmeter im Handball?',
       answer:
         'Beim Siebenmeter zählt die Nervenstärke. Beobachte die Wurfhand und die Körperhaltung des Schützen, bleibe möglichst lange in der Grundstellung stehen und lege dich nicht zu früh auf eine Ecke fest. Wer zu früh fällt, macht die andere Seite auf.',
-    },
-    {
-      question: 'Wie verbessert man die Reaktion eines Torwarts?',
-      answer:
-        'Mit gezielten Reaktionsübungen: unangekündigte Würfe aus kurzer Distanz, Mehrfachwürfe von mehreren Werfern und visuelle Reize wie farbige Bälle oder Kommandos. Entscheidend ist, dass der Torwart frisch ist, denn ermüdete Muskeln reagieren langsam.',
     },
   ],
   relatedSlugs: [

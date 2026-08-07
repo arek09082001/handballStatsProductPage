@@ -17,8 +17,8 @@ export const handballHarzTipps: Article = {
   ],
   category: 'Grundlagen & Regeln',
   datePublished: '2026-07-15',
-  dateModified: '2026-07-15',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Harz gehört für viele zum Handball wie der Sprungwurf – aber wie viel ist sinnvoll, was ist erlaubt und wie bekommt man das Zeug wieder ab? Alles Wichtige zum Umgang mit Handballharz.',
   heroEyebrow: 'Grundlagen & Regeln',
@@ -83,13 +83,7 @@ Wer ohne Harz sicher ist, wird mit Harz nur noch besser – umgekehrt gilt das n
 
 ## Fair bleiben: Harz ist Werkzeug, kein Wundermittel
 
-Harz ersetzt keine Technik. Ein Spieler mit sauberer Wurfbewegung und gutem Ballgefühl profitiert vom besseren Grip; wer technische Schwächen mit Kleber überdecken will, wird spätestens in harzfreien Hallen entzaubert. Behandle Harz wie jedes andere Hilfsmittel: bewusst, sparsam und mit Respekt vor Halle und Material.
-
-## Ballkontrolle sichtbar machen
-
-Ob mit oder ohne Harz – am Ende zählt, was auf dem Feld passiert: sichere Anspiele, wenige technische Fehler, gute Wurfquoten.
-
-Mit **Statix**, der [Statistik-App fürs Handballtraining](/), erfasst du Tore, Fehlwürfe und technische Fehler live per Tap und siehst sofort, wo dein Team den Ball verliert und aus welchen Positionen es effizient abschließt. Wie du die Ballkontrolle unabhängig vom Harz verbesserst, steht im Ratgeber zum [Ballhandling](/ratgeber/handball-ballhandling-verbessern). Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Harz ersetzt keine Technik. Ein Spieler mit sauberer Wurfbewegung und gutem Ballgefühl profitiert vom besseren Grip; wer technische Schwächen mit Kleber überdecken will, wird spätestens in harzfreien Hallen entzaubert. Behandle Harz wie jedes andere Hilfsmittel: bewusst, sparsam und mit Respekt vor Halle und Material.`,
   faqs: [
     {
       question: 'Ist Harz im Handball erlaubt?',

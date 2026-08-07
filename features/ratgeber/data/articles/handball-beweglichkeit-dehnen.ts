@@ -17,8 +17,8 @@ export const handballBeweglichkeitDehnen: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-07-18',
-  dateModified: '2026-07-18',
-  readingTimeMinutes: 7,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Eine bewegliche Wurfschulter wirft härter, eine mobile Hüfte fintiert besser. So dehnst du richtig – dynamisch vor dem Spiel, ruhig danach – und beugst Verletzungen vor.',
   heroEyebrow: 'Training & Planung',
@@ -78,11 +78,7 @@ Regelmäßigkeit schlägt Umfang: Kurz und täglich bringt mehr als einmal lang.
 
 ## Beweglichkeit und Verletzungsprävention
 
-Beweglichkeit ist ein Baustein der Verletzungsprävention, aber nicht der einzige. Erst zusammen mit Kraft, Stabilität und guter Technik entfaltet sie ihren Schutzwert. Ein bewegliches, aber instabiles Gelenk ist genauso gefährdet wie ein stabiles, aber steifes. Ziel ist immer die Kombination: großer, kontrollierbarer Bewegungsradius.
-
-## Belastung und Erholung im Blick behalten
-
-Beweglichkeit und Regeneration hängen eng mit der Gesamtbelastung zusammen. Wie du daraus echte [Verletzungsprävention](/ratgeber/handball-verletzungen-vorbeugen) machst, steht hier. Wer Spiel- und Trainingsbelastung im Auge behält, dosiert auch die Mobility-Arbeit sinnvoller. Mit **Statix**, der [kostenlos nutzbaren Statistik-App für Handball](/handball-statistik-app-kostenlos), behältst du Einsatzzeiten und Spielbelastung deiner Spieler über die Saison im Blick – eine gute Grundlage, um Training, Dehnen und Erholung aufeinander abzustimmen. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Beweglichkeit ist ein Baustein der Verletzungsprävention, aber nicht der einzige. Erst zusammen mit Kraft, Stabilität und guter Technik entfaltet sie ihren Schutzwert. Ein bewegliches, aber instabiles Gelenk ist genauso gefährdet wie ein stabiles, aber steifes. Ziel ist immer die Kombination: großer, kontrollierbarer Bewegungsradius.`,
   faqs: [
     {
       question: 'Sollte man sich vor dem Handballspiel dehnen?',
@@ -93,16 +89,6 @@ Beweglichkeit und Regeneration hängen eng mit der Gesamtbelastung zusammen. Wie
       question: 'Warum ist Schulterbeweglichkeit im Handball so wichtig?',
       answer:
         'Die Wurfschulter ist das am stärksten belastete Gelenk. Eine bewegliche Brustwirbelsäule und Schulter erzeugen mehr Vorspannung und damit mehr Wurfkraft. Gleichzeitig schützt ausreichende, stabil kontrollierte Beweglichkeit vor Überlastung. Wichtig ist, an der Schulter nie ruckartig oder in den Schmerz zu dehnen.',
-    },
-    {
-      question: 'Wie oft sollte man Mobility-Übungen machen?',
-      answer:
-        'Regelmäßigkeit ist wichtiger als Umfang. Eine kurze tägliche Routine von etwa acht Minuten mit Rotationen für die Brustwirbelsäule, Hüftöffnern, Beinpendeln und Schulterkreisen bringt mehr als eine lange Einheit einmal pro Woche.',
-    },
-    {
-      question: 'Beugt Beweglichkeit Verletzungen vor?',
-      answer:
-        'Beweglichkeit ist ein Baustein der Prävention, aber nicht allein entscheidend. Erst zusammen mit Kraft, Stabilität und sauberer Technik schützt sie die Gelenke. Ein bewegliches, aber instabiles Gelenk ist ebenso gefährdet wie ein stabiles, aber steifes – Ziel ist ein großer, kontrollierbarer Bewegungsradius.',
     },
   ],
   relatedSlugs: [

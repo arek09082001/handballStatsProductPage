@@ -19,8 +19,8 @@ export const handballKonditionVerbessern: Article = {
   ],
   category: 'Training & Planung',
   datePublished: '2026-05-19',
-  dateModified: '2026-06-29',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 4,
   excerpt:
     'Handball ist eine intermittierende Sportart – reine Ausdauer reicht nicht. Hier erfährst du, wie du Kondition, Schnelligkeit und Athletik handballspezifisch aufbaust, inklusive Beispiel-Wochenplan.',
   heroEyebrow: 'Training & Planung',
@@ -113,13 +113,7 @@ So könnte eine typische Trainingswoche in der Saison aussehen – für ein Team
 | Samstag | Spieltag | Wettkampf |
 | Sonntag | Ruhe | vollständige Erholung |
 
-Der Plan zeigt das Prinzip: intensive Reize früh in der Woche, mit genug Abstand zum Spieltag – und klar eingeplante Erholung.
-
-## Regeneration nicht vergessen
-
-Kondition entsteht nicht im Training, sondern in der Erholung danach. Wer ständig am Limit trainiert, wird nicht fitter, sondern müde und verletzungsanfällig. Plane Regeneration deshalb fest ein: ausreichend Schlaf, lockere Einheiten, freie Tage. Belastung und Erholung gehören zusammen wie Angriff und Abwehr.
-
-Damit das gelingt, hilft ein ehrlicher Blick auf die tatsächliche Belastung – und die verteilt sich selten gleichmäßig. Wer spielt wie viel, wer kommt kaum aus der Deckung, wessen Spielanteile steigen von Woche zu Woche? Mit einer [gratis Statistik-App für Handball](/handball-statistik-app-kostenlos) wie **Statix** behältst du Belastung und Spielanteile live per Tap im Blick, direkt in der Halle und offline. So steuerst du mit Zahlen statt Bauchgefühl. Wie du die Erholung dazu planst, steht im Ratgeber zur [Regeneration im Handball](/ratgeber/handball-regeneration). Wenn du magst, probier die kostenlose Live-Demo ohne Account unter [demo.statix-app.de](https://demo.statix-app.de) aus.`,
+Der Plan zeigt das Prinzip: intensive Reize früh in der Woche, mit genug Abstand zum Spieltag – und klar eingeplante Erholung.`,
   faqs: [
     {
       question: 'Wie oft sollte ich Kondition im Handball trainieren?',

@@ -17,8 +17,8 @@ export const handballTorwartTipps: Article = {
   ],
   category: 'Technik & Wurf',
   datePublished: '2026-07-15',
-  dateModified: '2026-07-15',
-  readingTimeMinutes: 8,
+  dateModified: '2026-08-07',
+  readingTimeMinutes: 3,
   excerpt:
     'Als Torwart kannst du ein Spiel im Alleingang entscheiden. Diese Tipps zu Stellungsspiel, Grundstellung, Antizipation und Mentalität helfen dir, konstant mehr Bälle zu halten.',
   heroEyebrow: 'Technik & Wurf',
@@ -94,13 +94,7 @@ Neben dem Mannschaftstraining brauchst du eigene Reize:
 - **Dehnfähigkeit:** Adduktoren und Schultern regelmäßig mobilisieren – Spreizschritte fordern den Körper extrem
 - **Abwurfpräzision:** lange Bälle auf laufende Mitspieler
 
-Schon zehn Minuten gezieltes Torwarttraining pro Einheit machen über eine Saison einen enormen Unterschied.
-
-## Deine Entwicklung in Zahlen
-
-Das ehrlichste Feedback für jeden Torhüter ist die Paradenquote – insgesamt, nach Wurfposition und in engen Spielphasen. Ausrechnen lässt sie sich mit dem [Quotenrechner](/wurfquote-rechner), tiefer einordnen im Ratgeber zur [Torwartstatistik](/ratgeber/handball-torwart-statistik).
-
-Mit **Statix**, der [Handball-Statistik-App für Trainer](/), wird jede Parade und jedes Gegentor live per Tap erfasst – inklusive Wurfposition. So siehst du, in welchen Ecken und aus welchen Zonen du stark bist und wo du gezielt trainieren solltest. Teste es kostenlos und ohne Account in der Live-Demo unter [demo.statix-app.de](https://demo.statix-app.de).`,
+Schon zehn Minuten gezieltes Torwarttraining pro Einheit machen über eine Saison einen enormen Unterschied.`,
   faqs: [
     {
       question: 'Wie werde ich ein besserer Handballtorwart?',
