@@ -26,11 +26,18 @@ export default function BoardKicker({
   return (
     <span
       className={cn(
-        'inline-flex items-center gap-2 font-hand text-xl font-semibold leading-none sm:text-2xl',
+        // `items-start` + the tick's own offset, not `items-center`: a kicker
+        // long enough to wrap would otherwise centre the marker stroke against
+        // the whole block, orphaning it beside the gap between the lines.
+        'inline-flex items-start gap-2 font-hand text-xl font-semibold leading-tight sm:text-2xl',
         COLOR[color],
         className,
       )}>
-      <svg viewBox='0 0 28 8' fill='none' aria-hidden='true' className='h-2 w-7 shrink-0'>
+      <svg
+        viewBox='0 0 28 8'
+        fill='none'
+        aria-hidden='true'
+        className='mt-[0.45em] h-2 w-7 shrink-0'>
         <path
           d='M2 5 C 9 2, 18 7, 26 3'
           stroke='currentColor'

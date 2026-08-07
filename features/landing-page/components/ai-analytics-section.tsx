@@ -53,7 +53,7 @@ export default function AiAnalyticsSection() {
     <section
       id='ai'
       ref={sectionRef}
-      className='relative w-full scroll-mt-24 overflow-hidden bg-court py-24 text-chalk md:py-32'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-court py-20 text-chalk md:py-28'>
       <CourtDiagram
         variant='full'
         aria-hidden
@@ -89,22 +89,16 @@ export default function AiAnalyticsSection() {
           ))}
         </div>
 
-        <p className='mx-auto mt-14 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-chalk/60'>
+        <p className='mx-auto mt-12 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-chalk/60'>
           <ShieldCheck className='mt-0.5 size-4 shrink-0 text-success' />
           <span>{t('privacyNote')}</span>
         </p>
 
-        {/* In‑depth single‑game analysis, pinned to the board */}
-        <div ref={showcaseRef} className='mt-24'>
-          <div className='mx-auto max-w-3xl text-center'>
-            <h3 className='text-balance font-display text-2xl font-extrabold tracking-[-0.02em] text-chalk sm:text-[1.75rem]'>
-              {t('showcase.title')}
-            </h3>
-            <p className='mx-auto mt-4 max-w-[54ch] text-base leading-7 text-chalk/70'>
-              {t('showcase.description')}
-            </p>
-          </div>
-          <div className='mt-12 grid gap-8 lg:grid-cols-2'>
+        {/* The real reports, pinned to the board. The sub-heading that used to
+            sit here restated the band's own standfirst, so the screenshots now
+            speak for themselves under their labels. */}
+        <div ref={showcaseRef} className='mt-16'>
+          <div className='grid gap-8 lg:grid-cols-2'>
             <BoardScreenshot
               src='/aiAnalyze.png'
               alt={t('showcase.imageOneLabel')}

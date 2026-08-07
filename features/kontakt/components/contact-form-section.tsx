@@ -7,11 +7,16 @@ import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 import { useContact } from '@/lib/hooks/use-contact';
 import { Button } from '@/components/ui/button';
-import { CLUB_CONFIG } from '@/lib/club-config';
-import { BoardCard, Grain, SectionHeading } from './tactic';
+import { BoardCard, Grain } from '@/features/landing-page/components/tactic';
 
-export default function ContactSection() {
-  const t = useTranslations('productPage.contact');
+/**
+ * The contact form, on its own route. It used to be the second-to-last band of
+ * the landing page, where a four-field form competed with the registration CTA
+ * for the visitor's last scroll. The page header above carries the heading and
+ * the direct e-mail address, so this renders the form alone.
+ */
+export default function ContactFormSection() {
+  const t = useTranslations('contactPage');
   const contactMutation = useContact();
 
   const [name, setName] = useState('');
@@ -79,24 +84,9 @@ export default function ContactSection() {
   return (
     <section
       id='contact'
-      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-24 md:py-32'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-16 md:py-24'>
       <Grain tone='paper' />
-      <div className='relative mx-auto grid w-full max-w-6xl gap-12 px-6 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center'>
-        <div>
-          <SectionHeading
-            align='left'
-            kicker={t('kicker')}
-            title={t('title')}
-            description={t('description')}
-          />
-          <Link
-            href={`mailto:${CLUB_CONFIG.email.main}`}
-            className='mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-[#ea580c]'>
-            <Mail className='size-4' />
-            {CLUB_CONFIG.email.main}
-          </Link>
-        </div>
-
+      <div className='relative mx-auto w-full max-w-2xl px-6 sm:px-10'>
         <form onSubmit={handleSubmit} className='w-full'>
           <BoardCard tone='paper' pin='tape'>
             <div className='space-y-4 p-5 sm:p-6'>

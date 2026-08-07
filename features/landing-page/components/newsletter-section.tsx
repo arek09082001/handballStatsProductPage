@@ -8,9 +8,14 @@ import { useNewsletter } from '@/lib/hooks/use-newsletter';
 import { Button } from '@/components/ui/button';
 import { BoardCard, CourtDiagram, Grain, SectionHeading } from './tactic';
 
+/**
+ * The launch-offer signup — the page's secondary conversion, for a coach who is
+ * not registering today. It used to be a full band with a three-item benefit
+ * list that repeated its own standfirst; it is now one compact row so the
+ * decisive registration CTA that follows keeps the weight.
+ */
 export default function NewsletterSection() {
   const t = useTranslations('productPage.newsletter');
-  const benefits = t.raw('benefits') as string[];
   const newsletterMutation = useNewsletter();
 
   const [email, setEmail] = useState('');
@@ -56,7 +61,7 @@ export default function NewsletterSection() {
   return (
     <section
       id='newsletter'
-      className='relative w-full scroll-mt-24 overflow-hidden bg-court py-24 text-chalk md:py-32'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-court py-16 text-chalk md:py-20'>
       <CourtDiagram
         variant='full'
         aria-hidden
@@ -64,7 +69,7 @@ export default function NewsletterSection() {
       />
       <Grain tone='court' />
 
-      <div className='relative mx-auto grid w-full max-w-6xl gap-12 px-6 sm:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center'>
+      <div className='relative mx-auto grid w-full max-w-6xl gap-8 px-6 sm:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-14'>
         <div>
           <SectionHeading
             tone='court'
@@ -72,17 +77,8 @@ export default function NewsletterSection() {
             kicker={t('kicker')}
             title={t('title')}
             description={t('description')}
+            titleClassName='text-[1.75rem] sm:text-[2rem]'
           />
-          <ul className='mt-8 flex flex-col gap-3'>
-            {benefits.map((benefit) => (
-              <li key={benefit} className='inline-flex items-center gap-2.5 text-sm text-chalk/85'>
-                <span className='flex size-5 items-center justify-center rounded-full bg-success/20 text-success'>
-                  <Check className='size-3' strokeWidth={3} />
-                </span>
-                {benefit}
-              </li>
-            ))}
-          </ul>
         </div>
 
         {newsletterMutation.isSuccess ? (

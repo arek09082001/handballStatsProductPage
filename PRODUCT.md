@@ -34,9 +34,26 @@ link or a QR code on the beamer.
 ## What this surface (the landing page `/`) must prove
 
 Persuade mode. A first‑time visitor must, within seconds, understand *what
-Statix is*, *why the sideline‑tap matters*, and *what to do next*. The decisive
-action is **"Live‑Demo starten"** — a fully populated demo with real game data,
-no account. Secondary action: the launch‑offer newsletter for clubs.
+Statix is*, *why the sideline‑tap matters*, and *what to do next*.
+
+The decisive action is **free registration** on the app domain — this is the
+primary conversion goal since launch, and it is what `register_click` in
+`lib/analytics.ts` measures. The **no‑account live demo** (a fully populated
+demo with real game data) sits directly beside it in every CTA pair as the
+zero‑friction way in for a visitor who will not create an account yet;
+`demo_click` measures it. Third action, for whoever does neither today: the
+launch‑offer newsletter for clubs.
+
+The page carries **no price figure**. It says free to start, no credit card,
+and links to `/preise` for the rest — the 3,99 € figure is *planned*, and the
+landing page is the wrong place to anchor on a number nobody is paying yet.
+
+Length is a conversion constraint on this surface, not a content budget. The
+page is deliberately about half the scroll it used to be: everything a coach
+needs to decide is on it, and everything they only need *after* deciding lives
+on its own route (`/was-ist-statix` for the full feature index, `/preise`,
+`/kontakt`, `/erfahrungen`). Adding a band here means arguing that a coach
+cannot decide without it.
 
 ## Feature scope (all real, shipping)
 

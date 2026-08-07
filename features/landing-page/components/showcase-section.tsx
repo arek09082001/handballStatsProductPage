@@ -14,13 +14,16 @@ interface ShowcaseItem {
   description: string;
 }
 
+/**
+ * The three beats of the product story, in order: the sideline tap, the payoff
+ * it computes, and the proof no scoresheet can show. The dashboard, roster and
+ * export shots that used to sit here made the band six screenshots long — they
+ * live on `/was-ist-statix` and in the live demo instead.
+ */
 const SHOTS = [
   { src: '/recordStatsInGame.png', width: 1916, height: 879 },
-  { src: '/gameListOverview.png', width: 1899, height: 874 },
   { src: '/statsTableInGame.png', width: 1896, height: 874 },
   { src: '/shotMaps.png', width: 1900, height: 874 },
-  { src: '/teamManagement.png', width: 1900, height: 874 },
-  { src: '/exportShare.png', width: 1900, height: 874 },
 ] as const;
 
 export default function ShowcaseSection() {
@@ -54,12 +57,12 @@ export default function ShowcaseSection() {
     <section
       id='features'
       ref={sectionRef}
-      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-24 md:py-32'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <SectionHeading kicker={t('kicker')} title={t('title')} description={t('description')} />
 
-        <div className='mt-20 flex flex-col gap-20 md:gap-28'>
+        <div className='mt-16 flex flex-col gap-16 md:gap-24'>
           {items.map((item, index) => {
             const shot = SHOTS[index];
             const reversed = index % 2 === 1;
@@ -106,7 +109,7 @@ export default function ShowcaseSection() {
           })}
         </div>
 
-        <div className='mt-20 text-center'>
+        <div className='mt-16 text-center'>
           <a
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'

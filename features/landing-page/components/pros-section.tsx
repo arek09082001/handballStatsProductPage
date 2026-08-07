@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ArrowUpRight, Check, X } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight, ArrowUpRight, Check, X } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import { BoardCard, Grain, SectionHeading } from './tactic';
+import { BoardCard, BoardKicker, Grain, SectionHeading } from './tactic';
 
 export default function ProsSection() {
   const t = useTranslations('productPage.pros');
@@ -38,7 +39,7 @@ export default function ProsSection() {
   return (
     <section
       ref={sectionRef}
-      className='relative w-full overflow-hidden bg-paper py-24 md:py-32'>
+      className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-6xl px-6 sm:px-10'>
         <SectionHeading kicker={t('kicker')} title={t('title')} description={t('description')} />
@@ -122,6 +123,25 @@ export default function ProsSection() {
             {t('cta')}
             <ArrowUpRight className='size-4' />
           </a>
+        </div>
+
+        {/* The maker's note. The testimonial band renders nothing while there
+            are no real coach quotes (see `features/erfahrungen/data`), so this
+            is the only trust signal at the moment of decision — and it is the
+            one thing that is true today: a handballer builds this in Germany
+            out of his own sideline practice. */}
+        <div className='mx-auto mt-20 max-w-2xl border-t border-ink/12 pt-8 text-center'>
+          <BoardKicker className='justify-center'>{t('founderKicker')}</BoardKicker>
+          <p className='mx-auto mt-4 max-w-[60ch] text-base leading-7 text-ink/75'>
+            {t('founderNote')}
+          </p>
+          <Link
+            href='/erfahrungen'
+            title='So entsteht Statix – Einblick in die Entwicklung'
+            className='group mt-5 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+            {t('founderLinkLabel')}
+            <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
+          </Link>
         </div>
       </div>
     </section>
