@@ -221,7 +221,8 @@
       "experiences": "Experiences",
       "contact": "Contact",
       "faq": "FAQ",
-      "newsletter": "Newsletter"
+      "newsletter": "Newsletter",
+      "feedback": "Feedback"
     },
     "groups": {
       "product": "Product",
@@ -1024,5 +1025,51 @@
     "errorTitle": "Sending failed",
     "errorDescription": "Please try again later.",
     "invalidEmail": "Please enter a valid email address."
+  },
+  "feedbackPage": {
+    "metaTitle": "Feedback",
+    "kicker": "Your opinion counts",
+    "title": "How well does Statix work for your team?",
+    "description": "Praise, bug or feature wish: tell us in a minute what works in Statix and what is missing. Your feedback goes straight to the team and shapes the next release.",
+    "ratingLabel": "How happy are you with Statix?",
+    "ratingHint": "Pick between 1 and 5 stars.",
+    "ratingLabels": {
+      "1": "Very unhappy",
+      "2": "Unhappy",
+      "3": "Neutral",
+      "4": "Happy",
+      "5": "Delighted"
+    },
+    "categoryLabel": "What is it about?",
+    "categories": {
+      "app": "Statix in general",
+      "recording": "Live recording",
+      "analysis": "Analytics",
+      "usability": "Usability & design",
+      "bug": "Bug",
+      "feature": "Feature request",
+      "other": "Something else"
+    },
+    "messageLabel": "Your feedback",
+    "messagePlaceholder": "What works well, what is missing, what should we change?",
+    "messageHint": "At least {min} characters – the more concrete, the better we can act on it.",
+    "contactLabel": "Name and email",
+    "optional": "(optional)",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email address",
+    "contactHint": "Only needed if you want a reply or are happy to answer follow-up questions. Leave it empty to stay anonymous.",
+    "button": "Send feedback",
+    "pending": "Sending…",
+    "privacyPrefix": "I accept the",
+    "privacyLink": "privacy terms",
+    "privacySuffix": "and agree to the processing of my data.",
+    "note": "We only use your details to evaluate your feedback.",
+    "successTitle": "Feedback sent!",
+    "successDescription": "Thank you – we read every piece of feedback personally.",
+    "errorTitle": "Sending failed",
+    "errorDescription": "Please try again later.",
+    "invalidEmail": "Please enter a valid email address.",
+    "missingRating": "Please pick a rating first.",
+    "missingCategory": "Please choose what your feedback is about."
   }
 }

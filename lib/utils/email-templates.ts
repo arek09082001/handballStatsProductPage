@@ -23,6 +23,22 @@ interface ContactNotificationData {
   message: string;
 }
 
+interface FeedbackSummaryData {
+  rating: number;
+  ratingLabel: string;
+  categoryLabel: string;
+  message: string;
+  /** Empty when the visitor sent the feedback anonymously. */
+  name: string;
+  /** Empty when the visitor sent the feedback anonymously. */
+  email: string;
+}
+
+interface FeedbackConfirmationData {
+  name: string;
+  categoryLabel: string;
+}
+
 interface RentalConfirmationData {
   name: string;
   eventType: string;
@@ -169,6 +185,114 @@ export function generateContactNotificationEmail(
       Antworten Sie direkt an
       <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${safeEmail}</a>,
       um dieser Person zu antworten.
+    </p>
+  `;
+
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
+}
+
+// ─── Feedback ────────────────────────────────────────────────────────────────
+
+/**
+ * Render the rating as filled and empty stars. Entities instead of the emoji
+ * characters, because a fair share of desktop mail clients render `★` from a
+ * fallback font and the row ends up ragged.
+ */
+function ratingStars(rating: number): string {
+  const filled = Math.max(0, Math.min(5, Math.round(rating)));
+
+  return `<span style="font-size:18px;letter-spacing:2px;color:${ACCENT};">${'&#9733;'.repeat(
+    filled
+  )}<span style="color:#cbd5e1;">${'&#9733;'.repeat(5 - filled)}</span></span>`;
+}
+
+/**
+ * Generate the feedback summary sent to the team — one card with the rating,
+ * the area the feedback is about and who sent it, followed by the verbatim
+ * message. This is the mail the feedback page exists for; everything else on
+ * the route is there to fill it in.
+ */
+export function generateFeedbackSummaryEmail(data: FeedbackSummaryData): {
+  subject: string;
+  htmlContent: string;
+} {
+  const safeCategory = escapeHtml(data.categoryLabel);
+  const safeRatingLabel = escapeHtml(data.ratingLabel);
+  const safeMessage = escapeHtml(data.message).replace(/\n/g, '<br />');
+  const hasSender = data.email.trim() !== '' || data.name.trim() !== '';
+  const safeName = escapeHtml(data.name.trim() || 'Anonym');
+  const safeEmail = escapeHtml(data.email.trim());
+
+  // The subject is plain text, not HTML — escaping it here would put a literal
+  // "&amp;" in the inbox. The category label is a server-side constant, so the
+  // raw value is safe to use.
+  const subject = `Neues Feedback (${data.rating}/5): ${data.categoryLabel}`;
+
+  const senderRow = hasSender
+    ? `<p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Von:</strong> ${safeName}${
+        safeEmail
+          ? ` &middot; <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;">${safeEmail}</a>`
+          : ''
+      }</p>`
+    : `<p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Von:</strong> Anonym (keine Kontaktdaten hinterlassen)</p>`;
+
+  const content = `
+    ${eyebrow('Neues Feedback')}
+    ${heading(safeCategory)}
+    ${infoCard(
+      `<p style="margin:4px 0 10px;font-size:14px;color:#374151;"><strong>Bewertung:</strong> ${ratingStars(
+        data.rating
+      )} <span style="color:#64748b;">${data.rating}/5 &middot; ${safeRatingLabel}</span></p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Bereich:</strong> ${safeCategory}</p>
+       ${senderRow}`
+    )}
+    <div style="border:1px solid #e2e8f0;border-radius:10px;padding:16px 18px;margin:0 0 20px;">
+      <h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Feedback</h3>
+      <p style="margin:0;font-size:15px;color:#374151;line-height:1.65;">${safeMessage}</p>
+    </div>
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      ${
+        safeEmail
+          ? `Antworten Sie direkt an <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${safeEmail}</a>.`
+          : 'Dieses Feedback wurde ohne Kontaktdaten abgegeben – eine Antwort ist nicht möglich.'
+      }
+    </p>
+  `;
+
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
+}
+
+/**
+ * Generate the acknowledgement sent back to a visitor who left an e-mail
+ * address with their feedback. Skipped entirely for anonymous submissions.
+ */
+export function generateFeedbackConfirmationEmail(
+  data: FeedbackConfirmationData
+): { subject: string; htmlContent: string } {
+  const safeName = escapeHtml(data.name.trim());
+  const safeCategory = escapeHtml(data.categoryLabel);
+  const subject = `Danke für dein Feedback – ${CLUB_CONFIG.name}`;
+
+  const content = `
+    ${eyebrow('Feedback erhalten')}
+    ${heading(safeName ? `Danke, ${safeName}!` : 'Danke für dein Feedback!')}
+    ${paragraph(`Dein Feedback zum Bereich <strong>${safeCategory}</strong> ist bei uns angekommen.`, 12)}
+    ${paragraph('Wir lesen jede Rückmeldung selbst und lassen sie direkt in die Weiterentwicklung von Statix einfließen. Wenn wir Rückfragen haben, melden wir uns persönlich bei dir.')}
+    ${infoCard(
+      `<h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Dein Feedback im Überblick</h3>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Bereich:</strong> ${safeCategory}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Status:</strong> Eingegangen</p>`
+    )}
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      <strong style="color:#374151;">Hinweis:</strong> Diese E-Mail wurde automatisch erstellt. Bitte antworte nicht direkt auf diese Nachricht.
+      Du erreichst uns unter
+      <a href="mailto:${CLUB_CONFIG.email.info}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${CLUB_CONFIG.email.info}</a>.
     </p>
   `;
 

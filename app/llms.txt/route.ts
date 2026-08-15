@@ -81,6 +81,7 @@ ${ratgeber}
 - Was ist Statix (Marken- und Produktüberblick): ${absoluteUrl('/was-ist-statix')}
 - Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}
+- Feedback (Bewertung, Fehlermeldung oder Feature-Wunsch abgeben, auch anonym): ${absoluteUrl('/feedback')}
 - Impressum: ${absoluteUrl('/impressum')}
 - Kontakt: ${CLUB_CONFIG.email.main}
 `;

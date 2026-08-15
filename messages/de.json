@@ -221,7 +221,8 @@
       "experiences": "Erfahrungen",
       "contact": "Kontakt",
       "faq": "FAQ",
-      "newsletter": "Newsletter"
+      "newsletter": "Newsletter",
+      "feedback": "Feedback"
     },
     "groups": {
       "product": "Produkt",
@@ -1024,5 +1025,51 @@
     "errorTitle": "Senden fehlgeschlagen",
     "errorDescription": "Bitte versuche es später erneut.",
     "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
+  },
+  "feedbackPage": {
+    "metaTitle": "Feedback",
+    "kicker": "Deine Meinung zählt",
+    "title": "Wie gut funktioniert Statix für dein Team?",
+    "description": "Ob Lob, Fehler oder Funktionswunsch: Sag uns in einer Minute, was in Statix gut läuft und was fehlt. Dein Feedback landet direkt beim Team und fließt in die nächste Version ein.",
+    "ratingLabel": "Wie zufrieden bist du mit Statix?",
+    "ratingHint": "Wähle zwischen 1 und 5 Sternen.",
+    "ratingLabels": {
+      "1": "Sehr unzufrieden",
+      "2": "Unzufrieden",
+      "3": "Neutral",
+      "4": "Zufrieden",
+      "5": "Begeistert"
+    },
+    "categoryLabel": "Worum geht es?",
+    "categories": {
+      "app": "Statix allgemein",
+      "recording": "Live-Erfassung",
+      "analysis": "Auswertungen",
+      "usability": "Bedienung & Design",
+      "bug": "Fehler / Bug",
+      "feature": "Feature-Wunsch",
+      "other": "Sonstiges"
+    },
+    "messageLabel": "Dein Feedback",
+    "messagePlaceholder": "Was läuft gut, was fehlt dir, was sollten wir ändern?",
+    "messageHint": "Mindestens {min} Zeichen – je konkreter, desto besser können wir es umsetzen.",
+    "contactLabel": "Name und E-Mail",
+    "optional": "(optional)",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "Deine E-Mail-Adresse",
+    "contactHint": "Nur nötig, wenn wir dir antworten oder Rückfragen stellen sollen. Ohne Angaben bleibt dein Feedback anonym.",
+    "button": "Feedback senden",
+    "pending": "Wird gesendet…",
+    "privacyPrefix": "Ich akzeptiere die",
+    "privacyLink": "Datenschutzhinweise",
+    "privacySuffix": "und bin mit der Verarbeitung meiner Daten einverstanden.",
+    "note": "Wir verwenden deine Angaben ausschließlich zur Auswertung deines Feedbacks.",
+    "successTitle": "Feedback gesendet!",
+    "successDescription": "Vielen Dank – wir lesen jede Rückmeldung persönlich.",
+    "errorTitle": "Senden fehlgeschlagen",
+    "errorDescription": "Bitte versuche es später erneut.",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "missingRating": "Bitte vergib zuerst eine Bewertung.",
+    "missingCategory": "Bitte wähle aus, worum es geht."
   }
 }
