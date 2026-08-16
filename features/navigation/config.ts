@@ -76,6 +76,7 @@ const resourcesGroup: NavigationGroup = {
     { ident: 12, href: '/was-ist-statix', labelKey: 'aboutStatix' },
     { ident: 20, href: '/erfahrungen', labelKey: 'experiences' },
     { ident: 22, href: '/kontakt', labelKey: 'contact' },
+    { ident: 23, href: '/feedback', labelKey: 'feedback' },
     { ident: 3, href: '/#faq', labelKey: 'faq', sectionId: 'faq' },
     { ident: 21, href: '/#newsletter', labelKey: 'newsletter' },
   ],
