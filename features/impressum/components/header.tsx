@@ -1,16 +1,19 @@
 'use client';
 
+import Link from 'next/link';
 import { CalendarClock, ShieldCheck } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { BoardKicker, CourtDiagram, Grain } from '@/features/landing-page/components/tactic';
 
 /**
- * Court-ground header for the legal page — a signature band of the Trainertafel
+ * Court-ground header for the Impressum — a signature band of the Trainertafel
  * world, matching the Ratgeber Read register (see DESIGN.md). The handball court
  * is chalked behind the copy, the register is set as the coach's marker kicker,
- * and the H1 sits in Archivo chalk. Two anchor chips jump straight to the
- * Impressum and Datenschutz blocks — a real navigation aid on a long legal page.
- * Replaces the old slate-950 + radial-blob-glow hero (a banned generic look).
+ * and the H1 sits in Archivo chalk.
+ *
+ * The page is the Anbieterkennzeichnung only since the Datenschutzerklärung
+ * moved to its own route, so the second chip is a real link out to
+ * `/datenschutz` rather than an in-page anchor.
  */
 export default function ImpressumHeader() {
   const t = useTranslations('legalPage.header');
@@ -54,14 +57,16 @@ export default function ImpressumHeader() {
           className='mt-8 flex flex-wrap gap-2.5'>
           <a
             href='#impressum'
+            title={impressumT('title')}
             className='inline-flex items-center rounded-lg border border-chalk/15 bg-chalk/[0.06] px-3.5 py-2 text-sm font-semibold text-chalk/85 transition-colors hover:border-chalk/30 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
             {impressumT('title')}
           </a>
-          <a
-            href='#datenschutz'
+          <Link
+            href='/datenschutz'
+            title={privacyT('title')}
             className='inline-flex items-center rounded-lg border border-chalk/15 bg-chalk/[0.06] px-3.5 py-2 text-sm font-semibold text-chalk/85 transition-colors hover:border-chalk/30 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
             {privacyT('shortTitle')}
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

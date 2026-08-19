@@ -12,7 +12,8 @@ interface PageTransitionProps {
 const navigationOrder: { [key: string]: number } = {
   '/': 0,
   '/impressum': 1,
-  '/agb': 2,
+  '/datenschutz': 2,
+  '/agb': 3,
 };
 
 // Get the base path from a pathname (e.g., /neuigkeiten/some-article -> /neuigkeiten)

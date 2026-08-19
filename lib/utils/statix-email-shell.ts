@@ -146,6 +146,8 @@ export function generateStatixEmailShell({
                     <span style="color:#334155;font-size:12px;">·</span>
                     <a href="${SITE_URL}/impressum" style="color:#94a3b8;text-decoration:none;font-size:12px;margin:0 7px;display:inline-block;">${t.imprint}</a>
                     <span style="color:#334155;font-size:12px;">·</span>
+                    <a href="${SITE_URL}/datenschutz" style="color:#94a3b8;text-decoration:none;font-size:12px;margin:0 7px;display:inline-block;">${t.privacy}</a>
+                    <span style="color:#334155;font-size:12px;">·</span>
                     <a href="${CLUB_CONFIG.social.instagram.url}" style="color:#94a3b8;text-decoration:none;font-size:12px;margin:0 7px;display:inline-block;">Instagram</a>
                   </td>
                 </tr>

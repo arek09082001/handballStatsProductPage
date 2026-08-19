@@ -83,6 +83,7 @@ ${ratgeber}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}
 - Feedback (Bewertung, Fehlermeldung oder Feature-Wunsch abgeben, auch anonym): ${absoluteUrl('/feedback')}
 - Impressum: ${absoluteUrl('/impressum')}
+- Datenschutzerklärung (was verarbeitet wird, Dienstleister, Speicherdauern; Spielernamen werden vor jeder KI-Analyse pseudonymisiert und verlassen die App nicht): ${absoluteUrl('/datenschutz')}
 - Kontakt: ${CLUB_CONFIG.email.main}
 `;
 

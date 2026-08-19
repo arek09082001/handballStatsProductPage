@@ -136,7 +136,7 @@ export default function AgbContent() {
                 {/* Verweis auf die Datenschutzerklärung in § 7 */}
                 {key === 'dataProtection' && (
                   <p className={`mt-4 ${contentClassName}`}>
-                    <Link href='/impressum' className={linkClassName}>
+                    <Link href='/datenschutz' className={linkClassName}>
                       {t('privacyLinkLabel')}
                     </Link>
                   </p>
