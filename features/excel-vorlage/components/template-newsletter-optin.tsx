@@ -131,8 +131,8 @@ export default function TemplateNewsletterOptin() {
         <span>
           Ich habe die{' '}
           <Link
-            href='/impressum'
-            title='Zum Impressum und den Datenschutzbestimmungen'
+            href='/datenschutz'
+            title='Zur Datenschutzerklärung'
             className='font-semibold text-primary underline underline-offset-2'>
             Datenschutzhinweise
           </Link>{' '}

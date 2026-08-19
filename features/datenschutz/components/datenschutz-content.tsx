@@ -2,17 +2,21 @@
 
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import { BoardKicker, Grain, MarkerUnderline } from '@/features/landing-page/components/tactic';
+import { Grain } from '@/features/landing-page/components/tactic';
 
 /**
- * The Datenschutzerklärung on the paper ground — the long-form Read register of
- * the Trainertafel world (see DESIGN.md). Warm ink on paper, Archivo section
- * headings each carrying a short marker swipe, orange list markers and links set
- * as a soft marker highlight rather than an underline. Structured i18n content,
- * every source string and outbound link preserved from the previous version.
+ * The body of the standalone Datenschutzerklärung at `/datenschutz`, on the
+ * paper ground — the long-form Read register of the Trainertafel world (see
+ * DESIGN.md). Warm ink on paper, Archivo section headings, orange list markers
+ * and links set as a soft marker highlight rather than an underline.
+ *
+ * It used to be the second half of the Impressum page, reachable only as
+ * `/impressum#datenschutz`. A privacy policy that lives behind a fragment on
+ * another page's document is legal but reads as an afterthought — and a Play
+ * Store review expects a URL whose whole subject is the policy. The page owns
+ * the H1 now, so this component starts straight at the first section.
  */
-export default function DatenschutzCard() {
-  const privacyT = useTranslations('legalPage.privacy');
+export default function DatenschutzContent() {
   const preambleT = useTranslations('legalPage.privacy.preamble');
   const responsiblePartyT = useTranslations('legalPage.privacy.responsibleParty');
   const processingOverviewT = useTranslations('legalPage.privacy.processingOverview');
@@ -88,24 +92,14 @@ export default function DatenschutzCard() {
     <section
       id='datenschutz'
       data-download-section='datenschutz'
-      className='relative w-full overflow-hidden bg-paper pb-16 scroll-mt-24 [&_strong]:font-semibold [&_strong]:text-ink'>
+      className='relative w-full overflow-hidden bg-paper pb-16 [&_strong]:font-semibold [&_strong]:text-ink'>
       <Grain tone='paper' />
 
-      <div className='relative mx-auto max-w-3xl px-6 pt-14 sm:px-8 md:pt-20'>
-        {/* Kopf */}
-        <BoardKicker color='marker'>{privacyT('shortTitle')}</BoardKicker>
-        <h2 className='mt-3 font-display text-[1.9rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[2.2rem]'>
-          <span className='relative inline-block'>
-            {privacyT('title')}
-            <MarkerUnderline color='marker' strokeWidth={4} className='opacity-70' />
-          </span>
-        </h2>
-
+      <div className='relative mx-auto max-w-3xl px-6 pt-4 sm:px-8 md:pt-8'>
         {/* Präambel */}
         <Section title={preambleT('title')} first>
           <p className={bodyText}>{preambleT('paragraph1')}</p>
           <p className={`mt-4 ${bodyText}`}>{preambleT('paragraph2')}</p>
-          <p className='mt-4 text-sm text-ink/50'>{preambleT('updatedAt')}</p>
         </Section>
 
         {/* Verantwortlicher */}
@@ -435,7 +429,7 @@ function Section({
   first?: boolean;
 }) {
   return (
-    <section className={first ? 'mt-12' : 'mt-12 border-t border-ink/10 pt-10'}>
+    <section className={first ? 'mt-10' : 'mt-12 border-t border-ink/10 pt-10'}>
       <h2 className='font-display text-[1.5rem] font-extrabold leading-[1.2] tracking-[-0.02em] text-ink sm:text-[1.7rem]'>
         {title}
       </h2>

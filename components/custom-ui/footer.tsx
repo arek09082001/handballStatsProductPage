@@ -13,7 +13,10 @@ import { siteLinkGroups } from '@/features/navigation';
  * the link's own label doubles as its title.
  */
 const legalLinks: { href: string; labelKey: string; titleKey?: string }[] = [
-  { href: '/impressum', labelKey: 'impressumAndPrivacy', titleKey: 'impressum' },
+  { href: '/impressum', labelKey: 'impressum', titleKey: 'impressum' },
+  // The privacy policy gets its own entry rather than sharing the imprint's:
+  // it is the link a visitor (and a Play Store review) looks for by name.
+  { href: '/datenschutz', labelKey: 'privacy', titleKey: 'privacy' },
   { href: '/agb', labelKey: 'agb', titleKey: 'agb' },
   { href: '/newsletter/unsubscribe', labelKey: 'newsletterUnsubscribe' },
 ];

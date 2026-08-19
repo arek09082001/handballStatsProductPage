@@ -76,7 +76,7 @@ export default function VereinePrivacy() {
           </Link>{' '}
           und in der{' '}
           <Link
-            href='/impressum'
+            href='/datenschutz'
             className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
             Datenschutzerklärung
           </Link>

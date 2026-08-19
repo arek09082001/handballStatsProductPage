@@ -164,6 +164,12 @@ export const SITE_LINKS = [
         description: 'Anbieterkennzeichnung und rechtliche Informationen.',
     },
     {
+        name: 'Datenschutzerklärung',
+        path: '/datenschutz',
+        description:
+            'Welche Daten Statix verarbeitet, welche Dienstleister beteiligt sind, wie lange gespeichert wird und wie die KI-Analyse mit pseudonymisierten Spielernamen arbeitet.',
+    },
+    {
         name: 'AGB',
         path: '/agb',
         description:

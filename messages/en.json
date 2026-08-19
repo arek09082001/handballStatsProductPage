@@ -8,12 +8,14 @@
     },
     "titles": {
       "email": "Email to",
-      "impressum": "To the legal notice and privacy policy",
+      "impressum": "To the legal notice",
+      "privacy": "To the privacy policy",
       "agb": "To the general terms and conditions",
       "llmsTxt": "Machine-readable brief for AI assistants"
     },
     "legal": {
-      "impressumAndPrivacy": "Legal & Privacy",
+      "impressum": "Legal notice",
+      "privacy": "Privacy",
       "agb": "Terms & Conditions",
       "newsletterUnsubscribe": "Unsubscribe from newsletter",
       "llmsTxt": "llms.txt"
@@ -243,8 +245,8 @@
   "legalPage": {
     "header": {
       "eyebrow": "Legal information",
-      "title": "Imprint & Privacy",
-      "description": "Mandatory information under Section 5 DDG and details on the processing of personal data in accordance with the GDPR.",
+      "title": "Imprint",
+      "description": "Mandatory provider details under § 5 DDG: who runs Statix, how to reach us and who is responsible for the content. The privacy policy lives on its own page.",
       "transparencyBadge": "Transparent and compliant",
       "lastUpdated": "Last updated: April 01, 2026"
     },
@@ -262,8 +264,7 @@
       "preamble": {
         "title": "Preamble",
         "paragraph1": "With the following privacy policy, we would like to inform you about the types of your personal data, also referred to below simply as data, that we process, for what purposes and to what extent. This privacy policy applies to all processing of personal data carried out by us, both in the context of providing our services and especially on our websites, in mobile applications and within external online presences such as our social media profiles, collectively referred to below as the online offering.",
-        "paragraph2": "The terms used are gender-neutral.",
-        "updatedAt": "Last updated: July 21, 2026"
+        "paragraph2": "The terms used are gender-neutral."
       },
       "responsibleParty": {
         "title": "Controller",
@@ -538,9 +539,23 @@
           {
             "title": "AI-Assisted Analyses",
             "paragraphs": [
-              "At the user's explicit request, the app generates AI-assisted analyses of matches, players and teams. For this purpose we transmit aggregated match and statistics data to the AI providers listed below. Player names are pseudonymized before transmission – they are replaced by neutral placeholders and only resolved again when the result is displayed in the app. The AI providers therefore never receive real names. According to the providers, data transmitted via the API is not used to train their AI models."
+              "At the user's explicit request, the app generates AI-assisted analyses of matches, players and teams. The analysis never runs automatically in the background: it is triggered solely by a deliberate click by the user.",
+              "All player names are pseudonymized before transmission. Every player is replaced by a meaningless token of the form [[P1]], [[P2]], …; the mapping from token to person stays exclusively in our own database. What reaches the AI providers is therefore only aggregated match and statistics values (e.g. goals, shots, saves, suspensions, playing times, scores, positions) plus club and opponent names. Players’ names, dates of birth, shirt numbers, email addresses and photos do not leave the app. The tokens are only resolved back to real names from the team’s own squad when the result is displayed in the browser.",
+              "According to the providers, data transmitted via their API is not used to train their AI models. We store the finished analyses in our database (hosting region Frankfurt am Main, Germany) so they can be opened again; they are deleted together with the associated match, team or user account. There is no automated decision-making producing legal effects within the meaning of Art. 22 GDPR — the analysis is an assessment for the coach."
             ],
             "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Match and statistics data in pseudonymized form (player names replaced by tokens); usage data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users; players recorded by users (pseudonymized only)."
+              },
+              {
+                "label": "Purposes of processing:",
+                "value": "Generating match, player and team analyses at the explicit request of the user."
+              },
               {
                 "label": "Service providers:",
                 "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
@@ -715,6 +730,11 @@
         "generatorLinkLabel": "Created with the free privacy policy generator from Datenschutz-Generator.de by Dr. Thomas Schwenke",
         "generatorLinkTitle": "Legal text by Dr. Schwenke - click for more information."
       }
+    },
+    "privacyPointer": {
+      "title": "Privacy policy",
+      "description": "Which data Statix processes, how team, player and match data are protected, how the AI analysis works with pseudonymized player names and which rights you have — all of it on a page of its own.",
+      "cta": "Read the privacy policy"
     }
   },
   "productPage": {
@@ -1071,5 +1091,17 @@
     "invalidEmail": "Please enter a valid email address.",
     "missingRating": "Please pick a rating first.",
     "missingCategory": "Please choose what your feedback is about."
+  },
+  "privacyPage": {
+    "header": {
+      "eyebrow": "Privacy",
+      "title": "Privacy policy",
+      "description": "How we process personal data on statix-app.de and in the Statix app — broken down by purpose, legal basis, service provider and retention period.",
+      "pseudonymBadge": "Player names never leave the app",
+      "lastUpdated": "Last updated: 19 August 2026",
+      "navLabel": "More legal information",
+      "imprintLink": "Imprint",
+      "termsLink": "Terms of service"
+    }
   }
 }

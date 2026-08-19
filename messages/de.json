@@ -8,12 +8,14 @@
     },
     "titles": {
       "email": "E-Mail an",
-      "impressum": "Zum Impressum und Datenschutz",
+      "impressum": "Zum Impressum",
+      "privacy": "Zur Datenschutzerklärung",
       "agb": "Zu den Allgemeinen Geschäftsbedingungen",
       "llmsTxt": "Maschinenlesbarer Steckbrief für KI-Assistenten"
     },
     "legal": {
-      "impressumAndPrivacy": "Impressum & Datenschutz",
+      "impressum": "Impressum",
+      "privacy": "Datenschutz",
       "agb": "AGB",
       "newsletterUnsubscribe": "Newsletter abmelden",
       "llmsTxt": "llms.txt"
@@ -243,8 +245,8 @@
   "legalPage": {
     "header": {
       "eyebrow": "Rechtliche Angaben",
-      "title": "Impressum & Datenschutz",
-      "description": "Pflichtangaben nach § 5 DDG und Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
+      "title": "Impressum",
+      "description": "Pflichtangaben nach § 5 DDG: wer Statix betreibt, wie Sie uns erreichen und wer für die Inhalte verantwortlich ist. Die Datenschutzerklärung finden Sie auf einer eigenen Seite.",
       "transparencyBadge": "Transparent und rechtssicher",
       "lastUpdated": "Letzte Aktualisierung: 01. April 2026"
     },
@@ -262,8 +264,7 @@
       "preamble": {
         "title": "Präambel",
         "paragraph1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als Daten bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie zum Beispiel unserer Social-Media-Profile (nachfolgend zusammenfassend als Onlineangebot bezeichnet).",
-        "paragraph2": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
-        "updatedAt": "Stand: 21. Juli 2026"
+        "paragraph2": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch."
       },
       "responsibleParty": {
         "title": "Verantwortlicher",
@@ -538,9 +539,23 @@
           {
             "title": "KI-gestützte Analysen",
             "paragraphs": [
-              "Auf ausdrückliche Anforderung des Nutzers erstellt die App KI-gestützte Auswertungen zu Spielen, Spielern und Teams. Dazu übermitteln wir aggregierte Spiel- und Statistikdaten an die unten genannten KI-Anbieter. Spielernamen werden vor der Übermittlung pseudonymisiert – sie werden durch neutrale Platzhalter ersetzt und erst bei der Anzeige des Ergebnisses in der App wieder aufgelöst. Die KI-Anbieter erhalten somit keine Klarnamen. Nach Angaben der Anbieter werden über die API übermittelte Daten nicht zum Training der KI-Modelle verwendet."
+              "Auf ausdrückliche Anforderung des Nutzers erstellt die App KI-gestützte Auswertungen zu Spielen, Spielerinnen und Spielern sowie Teams. Die Analyse läuft nie automatisch im Hintergrund: Sie wird ausschließlich durch einen bewussten Klick des Nutzers ausgelöst.",
+              "Vor der Übermittlung werden alle Spielernamen pseudonymisiert. Jede Spielerin und jeder Spieler wird durch ein bedeutungsloses Kürzel der Form [[P1]], [[P2]], … ersetzt; die Zuordnung von Kürzel zu Person bleibt ausschließlich in unserer Datenbank. An die KI-Anbieter gehen damit nur aggregierte Spiel- und Statistikwerte (z. B. Tore, Würfe, Paraden, Zeitstrafen, Spielzeiten, Spielstände, Positionen) sowie Vereins- und Gegnernamen. Namen, Geburtsdaten, Trikotnummern, E-Mail-Adressen oder Fotos von Spielerinnen und Spielern verlassen die App nicht. Erst bei der Anzeige im Browser werden die Kürzel wieder durch die echten Namen aus dem Kader des eigenen Teams ersetzt.",
+              "Nach Angaben der Anbieter werden über die Programmierschnittstelle (API) übermittelte Daten nicht zum Training ihrer KI-Modelle verwendet. Die fertigen Auswertungen speichern wir in unserer Datenbank (Hosting-Region Frankfurt am Main), damit sie erneut aufgerufen werden können; sie werden mit dem zugehörigen Spiel, Team oder Nutzerkonto gelöscht. Eine automatisierte Entscheidungsfindung mit rechtlicher Wirkung im Sinne des Art. 22 DSGVO findet nicht statt – die Auswertung ist eine Einschätzung für die Trainerin oder den Trainer."
             ],
             "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Spiel- und Statistikdaten in pseudonymisierter Form (Spielernamen ersetzt durch Kürzel); Nutzungsdaten."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer; von Nutzern erfasste Spielerinnen und Spieler (nur pseudonymisiert)."
+              },
+              {
+                "label": "Zwecke der Verarbeitung:",
+                "value": "Erstellung von Spiel-, Spieler- und Teamanalysen auf ausdrückliche Anforderung des Nutzers."
+              },
               {
                 "label": "Dienstanbieter:",
                 "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
@@ -715,6 +730,11 @@
         "generatorLinkLabel": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke",
         "generatorLinkTitle": "Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
       }
+    },
+    "privacyPointer": {
+      "title": "Datenschutzerklärung",
+      "description": "Welche Daten Statix verarbeitet, wie Team-, Spieler- und Spieldaten geschützt sind, wie die KI-Analyse mit pseudonymisierten Spielernamen arbeitet und welche Rechte Sie haben – das steht vollständig auf einer eigenen Seite.",
+      "cta": "Zur Datenschutzerklärung"
     }
   },
   "productPage": {
@@ -1071,5 +1091,17 @@
     "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
     "missingRating": "Bitte vergib zuerst eine Bewertung.",
     "missingCategory": "Bitte wähle aus, worum es geht."
+  },
+  "privacyPage": {
+    "header": {
+      "eyebrow": "Datenschutz",
+      "title": "Datenschutzerklärung",
+      "description": "Wie wir personenbezogene Daten auf statix-app.de und in der Statix App verarbeiten – verständlich aufgeschlüsselt nach Zweck, Rechtsgrundlage, Dienstleistern und Speicherdauer.",
+      "pseudonymBadge": "Spielernamen bleiben in der App",
+      "lastUpdated": "Stand: 19. August 2026",
+      "navLabel": "Weitere rechtliche Angaben",
+      "imprintLink": "Impressum",
+      "termsLink": "AGB"
+    }
   }
 }
