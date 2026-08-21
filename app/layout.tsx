@@ -141,7 +141,18 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang={DEFAULT_HTML_LANG} suppressHydrationWarning>
+    // The font variables belong on <html>, not on <body>. `--font-display` and
+    // `--font-hand` are declared in globals.css under `@theme`, which Tailwind
+    // emits on `:root` — and they resolve `var(--font-archivo)` /
+    // `var(--font-caveat)` there. With next/font's variable classes on <body>
+    // those two are undefined at `:root`, so both theme variables computed to
+    // the guaranteed-invalid value, inherited down as invalid, and every
+    // `font-display` / `font-hand` utility silently fell back to Inter — the
+    // whole Archivo/Caveat type system of DESIGN.md was dead on every page.
+    <html
+      lang={DEFAULT_HTML_LANG}
+      className={`${spaceGrotesk.variable} ${archivo.variable} ${caveat.variable}`}
+      suppressHydrationWarning>
       <head suppressHydrationWarning>
         <meta name='theme-color' content={CLUB_CONFIG.branding.themeColor} />
         <meta
@@ -166,8 +177,7 @@ export default async function RootLayout({
         />
         <link rel='shortcut icon' href={CLUB_CONFIG.branding.favicons.shortcut} />
       </head>
-      <body
-        className={`${inter.className} ${spaceGrotesk.variable} ${archivo.variable} ${caveat.variable} bg-muted text-foreground`}>
+      <body className={`${inter.className} bg-muted text-foreground`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='light'

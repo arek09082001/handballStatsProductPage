@@ -8,9 +8,18 @@ import { cn } from '@/lib/utils';
  */
 const TEAM = {
   home: {
-    bg: 'radial-gradient(120% 120% at 32% 26%, hsl(22 96% 62%), hsl(22 92% 48%) 62%, hsl(22 90% 40%))',
-    rim: 'hsl(22 90% 34% / 0.55)',
-    text: 'hsl(30 60% 98%)',
+    bg: 'radial-gradient(120% 120% at 32% 26%, hsl(22 96% 64%), hsl(22 92% 54%) 62%, hsl(22 90% 48%))',
+    rim: 'hsl(22 90% 34% / 0.6)',
+    // Inked, not printed white. The marker orange is a light-mid tone: a white
+    // numeral on it measures 2.4–3.3:1 and misses AA, while the same numeral in
+    // deep ink clears it across the whole radial (4.8–7.0:1) — and a dark
+    // number on a bright magnet is what a real board looks like anyway. The
+    // gradient's foot was lifted from 40 % to 48 % lightness for the same
+    // reason: the numeral's edge sits over it, and it was the one stop where
+    // ink still missed. The opponent magnet below keeps its chalk numeral, in
+    // reverse: its blue is dark enough that white is the contrasting choice
+    // (5.6:1) and ink would not be.
+    text: 'hsl(20 65% 12%)',
   },
   away: {
     bg: 'radial-gradient(120% 120% at 32% 26%, hsl(221 90% 64%), hsl(221 83% 50%) 62%, hsl(221 80% 40%))',
