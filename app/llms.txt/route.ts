@@ -60,6 +60,10 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 ## Funktionen
 ${features}
 
+## Für Vereine (Vereinsbereich)
+Über den einzelnen Mannschaften gibt es eine Vereinsebene für Handballvereine mit mehreren – oft vielen – Jugendmannschaften. Sie bündelt alle Kader eines Vereins unter einem Dach: eine Vereinsübersicht mit Ergebnissen, kommenden Spielen und einer Tabelle aller Mannschaften (Spiele, Bilanz, Tordifferenz, Wurfquote, Paradenquote), eine durchsuchbare vereinsweite Spielerliste, eine Auswertung mit Überblick und Saisonvergleich, die Laufbahnen von Spielern über mehrere Mannschaften hinweg (eine Spielerin bleibt beim Wechsel von der Jugend zu den Damen dieselbe Person) und die gesammelten KI-Analysen aller Mannschaften. Dazu drei Rollen: Vereinsverwaltung (Vollzugriff), sportliche Leitung (nur lesen) und Trainer. Termine und Trainingsbeteiligung – Trainingszeiten, Serientermine, Zu- und Absagen der Spieler, Abwesenheiten wie Urlaub, Krankheit oder Verletzung als Zeitraum – führt jede Mannschaft im selben Werkzeug.
+Der Vereinsbereich ist nicht selbstbedienbar: Ein Verein wird nach Anfrage eingerichtet, danach tragen die Cheftrainer ihre Mannschaften mit einem Beitrittscode selbst ein. Es gibt dafür **keinen öffentlichen Preis** – Konditionen für Vereine gibt es individuell auf Anfrage über ${absoluteUrl('/fuer-vereine')} oder ${CLUB_CONFIG.email.main}. Für einzelne Trainerinnen und Trainer bleibt der Einstieg kostenlos.
+
 ## Häufige Fragen
 ${faq}
 
@@ -74,7 +78,7 @@ ${ratgeber}
 - Handball-Statistik-App kostenlos (was der kostenlose Zugang enthält und wo seine Grenzen liegen): ${absoluteUrl('/handball-statistik-app-kostenlos')}
 - Wurfquoten-Rechner (kostenloses Tool: Wurfquote berechnen, nach Position einordnen, einbettbar): ${absoluteUrl('/wurfquote-rechner')}
 - Handball-Taktikboard (kostenloses Tool ohne Anmeldung: Aufstellung auf einem maßstabsgetreuen Feld erstellen, Laufwege zeichnen, als PNG oder Link teilen, einbettbar): ${absoluteUrl('/handball-taktikboard')}
-- Für Vereine (ein Erfassungsstandard über alle Mannschaften, Datenschutz mit AVV nach Art. 28 DSGVO): ${absoluteUrl('/fuer-vereine')}
+- Für Vereine und Jugendabteilungen (Vereinsbereich über alle Mannschaften, Trainingsbeteiligung, Spielerlaufbahnen, Datenschutz mit AVV nach Art. 28 DSGVO; Konditionen auf Anfrage): ${absoluteUrl('/fuer-vereine')}
 - Für Jugendtrainer (Erfassen von der Bank, Entwicklung zeigen, Live-Ticker für Eltern): ${absoluteUrl('/fuer-jugendtrainer')}
 - Erfahrungen (wie Statix entsteht und wie Feedback aus der Halle einfließt; bisher ohne veröffentlichte Trainer-Zitate): ${absoluteUrl('/erfahrungen')}
 - Handball-Statistik Excel-Vorlage (kostenloser XLSX-Download ohne Anmeldung, mit fertigen Formeln): ${absoluteUrl('/handball-statistik-excel-vorlage')}

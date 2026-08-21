@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/fuer-vereine`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${SITE_URL}/fuer-jugendtrainer`,

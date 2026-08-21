@@ -100,6 +100,17 @@ export const SEO_KEYWORDS = Array.from(
         'handball team umfrage app',
         'handball trainer zusammenarbeit app',
         'handball gegner bilanz app',
+        // Club / youth-department intent (the Vereinsbereich)
+        'handball statistik verein',
+        'handball vereinssoftware statistik',
+        'handball statistik mehrere mannschaften',
+        'handball jugendabteilung statistik',
+        'handball statistik jugendmannschaften einheitlich',
+        'handball trainingsbeteiligung erfassen',
+        'handball kader verwalten app',
+        'handball spielerentwicklung dokumentieren',
+        'handball statistik software jugendabteilung',
+        'statistik app für handballverein',
     ]),
 );
 
@@ -126,7 +137,7 @@ export const SITE_LINKS = [
         name: 'Für Vereine',
         path: '/fuer-vereine',
         description:
-            'Handball-Statistik-App für Vereine: ein Erfassungsstandard über alle Mannschaften, geteilte Auswertungen im Trainerteam und geregelter Datenschutz mit AVV.',
+            'Handball-Statistik-App für Vereine und Jugendabteilungen: ein Erfassungsstandard über alle Mannschaften, Kader und Trainingsbeteiligung an einem Ort, Spielerlaufbahnen über alle Jugenden und eine Auswertung für die Abteilungsleitung. Konditionen auf Anfrage.',
     },
     {
         name: 'Für Jugendtrainer',
@@ -257,6 +268,18 @@ export const APP_FEATURES = [
         name: 'Kader als Kartenalbum',
         description:
             'Spielerkarten mit Werten aus echten Spielen, Handball Performance Index, Stickern und Taktikboard.',
+    },
+    {
+        slug: 'club-level',
+        name: 'Vereinsbereich',
+        description:
+            'Eine Ebene über allen Mannschaften eines Vereins: Übersicht über alle Kader, vereinsweite Spielerliste, Auswertung mit Saisonvergleich und Spielerlaufbahnen über mehrere Jugendmannschaften. Wird für den Verein eingerichtet.',
+    },
+    {
+        slug: 'schedule-attendance',
+        name: 'Termine & Trainingsbeteiligung',
+        description:
+            'Trainings, Spiele und Serientermine im Mannschaftskalender: Spieler sagen selbst zu oder ab, tragen Urlaub, Krankheit oder Verletzung als Zeitraum ein, und der Trainerstab sieht die vollständige Teilnahmeliste.',
     },
     {
         slug: 'offline-pwa',

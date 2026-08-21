@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Mail, MessageSquare, Send, User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
@@ -9,23 +9,59 @@ import { useContact } from '@/lib/hooks/use-contact';
 import { Button } from '@/components/ui/button';
 import { BoardCard, Grain } from '@/features/landing-page/components/tactic';
 
+interface ContactFormSectionProps {
+  /**
+   * Anchor of the band. Defaults to `contact`, which is what the landing page
+   * and `/kontakt` link to; a page embedding a second copy passes its own so
+   * two forms never share one id.
+   */
+  anchorId?: string;
+  /**
+   * Subject line the form starts with. The club page passes one so an enquiry
+   * arrives labelled as a club enquiry instead of an empty field. Without it,
+   * a `?thema=` query parameter fills the field after mount — that is how the
+   * club CTAs elsewhere on the site hand their subject over, and reading it
+   * from `window` rather than `useSearchParams` keeps `/kontakt` statically
+   * rendered.
+   */
+  defaultTopic?: string;
+}
+
 /**
  * The contact form, on its own route. It used to be the second-to-last band of
  * the landing page, where a four-field form competed with the registration CTA
  * for the visitor's last scroll. The page header above carries the heading and
  * the direct e-mail address, so this renders the form alone.
  */
-export default function ContactFormSection() {
+export default function ContactFormSection({
+  anchorId = 'contact',
+  defaultTopic = '',
+}: ContactFormSectionProps = {}) {
   const t = useTranslations('contactPage');
   const contactMutation = useContact();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [topic, setTopic] = useState('');
+  const [topic, setTopic] = useState(defaultTopic);
   const [message, setMessage] = useState('');
   const [acceptPrivacy, setAcceptPrivacy] = useState(false);
   // Honeypot
   const [website, setWebsite] = useState('');
+
+  // A `?thema=` parameter fills the subject once, and only while the field is
+  // still untouched — a visitor arriving from the club page finds "Vereins-
+  // anfrage" prepared, and anyone who has started typing keeps what they typed.
+  useEffect(() => {
+    if (defaultTopic) {
+      return;
+    }
+
+    const fromQuery = new URLSearchParams(window.location.search).get('thema');
+
+    if (fromQuery) {
+      setTopic((current) => (current.trim() === '' ? fromQuery : current));
+    }
+  }, [defaultTopic]);
 
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
   const isFormValid =
@@ -64,7 +100,7 @@ export default function ContactFormSection() {
           });
           setName('');
           setEmail('');
-          setTopic('');
+          setTopic(defaultTopic);
           setMessage('');
           setAcceptPrivacy(false);
         },
@@ -78,12 +114,17 @@ export default function ContactFormSection() {
     );
   };
 
+  // Field ids are derived from the band's anchor: the component is embeddable
+  // now, and two copies on one page with the same `id` would point every label
+  // at the first form's inputs.
+  const fieldId = (field: string) => `${anchorId}-${field}`;
+
   const inputClassName =
     'h-12 w-full rounded-xl border border-ink/15 bg-white pl-10 pr-3.5 text-sm text-ink outline-none transition-all duration-200 placeholder:text-ink/60 hover:border-ink/25 focus:border-primary focus:ring-2 focus:ring-primary/25';
 
   return (
     <section
-      id='contact'
+      id={anchorId}
       className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-16 md:py-24'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-2xl px-6 sm:px-10'>
@@ -92,12 +133,12 @@ export default function ContactFormSection() {
             <div className='space-y-4 p-5 sm:p-6'>
               <div className='grid gap-4 sm:grid-cols-2'>
                 <div className='relative'>
-                  <label className='sr-only' htmlFor='contact-name'>
+                  <label className='sr-only' htmlFor={fieldId('name')}>
                     {t('namePlaceholder')}
                   </label>
                   <User className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink/40' />
                   <input
-                    id='contact-name'
+                    id={fieldId('name')}
                     name='name'
                     type='text'
                     required
@@ -109,12 +150,12 @@ export default function ContactFormSection() {
                 </div>
 
                 <div className='relative'>
-                  <label className='sr-only' htmlFor='contact-email'>
+                  <label className='sr-only' htmlFor={fieldId('email')}>
                     {t('emailPlaceholder')}
                   </label>
                   <Mail className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink/40' />
                   <input
-                    id='contact-email'
+                    id={fieldId('email')}
                     name='email'
                     type='email'
                     required
@@ -127,12 +168,12 @@ export default function ContactFormSection() {
               </div>
 
               <div className='relative'>
-                <label className='sr-only' htmlFor='contact-topic'>
+                <label className='sr-only' htmlFor={fieldId('topic')}>
                   {t('topicPlaceholder')}
                 </label>
                 <MessageSquare className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-ink/40' />
                 <input
-                  id='contact-topic'
+                  id={fieldId('topic')}
                   name='topic'
                   type='text'
                   required
@@ -144,11 +185,11 @@ export default function ContactFormSection() {
               </div>
 
               <div>
-                <label className='sr-only' htmlFor='contact-message'>
+                <label className='sr-only' htmlFor={fieldId('message')}>
                   {t('messagePlaceholder')}
                 </label>
                 <textarea
-                  id='contact-message'
+                  id={fieldId('message')}
                   name='message'
                   required
                   rows={5}
