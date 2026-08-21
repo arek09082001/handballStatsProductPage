@@ -37,13 +37,13 @@ export default function SegmentObjections({
           {items.map((item) => (
             <BoardCard key={item.question} pin='none' className='p-6 sm:p-7'>
               <h3 className='font-hand text-2xl text-ink'>{item.question}</h3>
-              <p className='mt-3 max-w-[68ch] text-[15px] leading-7 text-ink/75'>{item.answer}</p>
+              <p className='mt-3 max-w-[56ch] text-[15px] leading-7 text-ink/75'>{item.answer}</p>
             </BoardCard>
           ))}
         </div>
 
         {children ? (
-          <div className='mt-10 max-w-[70ch] text-base leading-7 text-ink/70'>{children}</div>
+          <div className='mt-10 max-w-[58ch] text-base leading-7 text-ink/70'>{children}</div>
         ) : null}
       </div>
     </section>

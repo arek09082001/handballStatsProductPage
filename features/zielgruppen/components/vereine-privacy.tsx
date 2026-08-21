@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ShieldCheck } from 'lucide-react';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
   BoardCard,
@@ -13,25 +12,31 @@ import {
  * rolls something out. Every statement here mirrors what already stands in the
  * AGB (§ 7, Auftragsverarbeitung nach Art. 28 DSGVO) and the privacy policy;
  * nothing is promised beyond that.
+ *
+ * One pinned note, not four cards. The four points are the answer to a single
+ * question, and giving each its own box with the same shield icon in the corner
+ * made a checklist look like a feature grid — four identical icons carry no
+ * information the headings do not. As one note with four hanging entries it
+ * reads the way the document it stands for reads.
  * @returns A JSX element rendering the data-protection band on the court ground.
  */
 export default function VereinePrivacy() {
   const points = [
     {
       title: 'Auftragsverarbeitung nach Art. 28 DSGVO',
-      text: 'Die Spielerdaten, die eure Trainer eingeben, verarbeitet Statix im Auftrag des Vereins. Einen Vertrag zur Auftragsverarbeitung (AVV) stellen wir auf Anforderung bereit – das ist genau das Dokument, nach dem ein Datenschutzbeauftragter fragt.',
+      text: 'Die Spielerdaten, die eure Trainer eingeben, verarbeitet Statix im Auftrag des Vereins. Einen Vertrag zur Auftragsverarbeitung stellen wir auf Anforderung bereit; das ist genau das Dokument, nach dem ein Datenschutzbeauftragter fragt.',
     },
     {
       title: 'Pseudonymisiert, bevor eine KI etwas sieht',
-      text: 'Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen. Die Analyse arbeitet mit neutralen Kürzeln statt mit echten Namen, und erstellte Berichte lassen sich jederzeit wieder löschen.',
+      text: 'Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen. Die Analyse arbeitet mit neutralen Kürzeln, und erstellte Berichte lassen sich jederzeit wieder löschen.',
     },
     {
       title: 'Geteilte Links bleiben widerrufbar',
-      text: 'Ein Spiel wird nur öffentlich, wenn ein Trainer es veröffentlicht – und die Freigabe lässt sich wieder zurücknehmen. Auswertungen könnt ihr als PDF exportieren, ohne dass jemand Zugriff auf euer Konto braucht.',
+      text: 'Ein Spiel wird nur öffentlich, wenn ein Trainer es veröffentlicht, und die Freigabe lässt sich zurücknehmen. Auf dem Live-Ticker stehen Spielernamen standardmäßig abgekürzt.',
     },
     {
       title: 'Offengelegte Dienstleister',
-      text: 'Welche Auftragsverarbeiter beteiligt sind – Hosting, Datenbank, E-Mail-Versand und die KI-Anbieter – steht namentlich in den AGB und der Datenschutzerklärung, inklusive der Hinweise zu Drittlandübermittlungen.',
+      text: 'Welche Auftragsverarbeiter beteiligt sind – Hosting, Datenbank, E-Mail-Versand und die KI-Anbieter – steht namentlich in den AGB und der Datenschutzerklärung, samt Hinweisen zu Drittlandübermittlungen.',
     },
   ];
 
@@ -44,7 +49,7 @@ export default function VereinePrivacy() {
       />
       <Grain tone='court' />
 
-      <div className='relative mx-auto max-w-5xl px-6 sm:px-10'>
+      <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           tone='court'
           align='left'
@@ -53,21 +58,22 @@ export default function VereinePrivacy() {
           description='Im Verein hängt die Einführung selten am Können der Trainer, sondern an dieser Frage. Deshalb hier die Antwort in vier Punkten.'
         />
 
-        <div className='mt-12 grid gap-5 md:grid-cols-2'>
-          {points.map((point) => (
-            <BoardCard key={point.title} tone='court' pin='none' className='p-6'>
-              <span className='flex size-10 items-center justify-center rounded-xl bg-success/15 text-success'>
-                <ShieldCheck className='size-5' />
-              </span>
-              <h3 className='mt-4 font-display text-lg font-bold tracking-tight text-chalk'>
-                {point.title}
-              </h3>
-              <p className='mt-2 text-[15px] leading-7 text-chalk/75'>{point.text}</p>
-            </BoardCard>
-          ))}
-        </div>
+        <BoardCard tone='court' pin='tape' className='mt-12 p-7 sm:p-9'>
+          <ul className='flex flex-col gap-7'>
+            {points.map((point) => (
+              <li key={point.title}>
+                <h3 className='font-display text-lg font-bold tracking-tight text-chalk'>
+                  {point.title}
+                </h3>
+                <p className='mt-1.5 max-w-[58ch] text-[15px] leading-7 text-chalk/70'>
+                  {point.text}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </BoardCard>
 
-        <p className='mt-10 max-w-[70ch] text-base leading-7 text-chalk/75'>
+        <p className='mt-10 max-w-[60ch] text-base leading-7 text-chalk/75'>
           Die vollständigen Regelungen stehen in den{' '}
           <Link
             href='/agb'

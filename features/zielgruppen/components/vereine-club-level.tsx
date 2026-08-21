@@ -1,15 +1,4 @@
 import {
-  BarChart3,
-  Building2,
-  CalendarRange,
-  KeyRound,
-  Layers,
-  Route,
-  Sparkles,
-  Users2,
-} from 'lucide-react';
-import {
-  BoardCard,
   BoardScreenshot,
   CourtDiagram,
   Grain,
@@ -19,26 +8,20 @@ import { CLUB_CAPABILITIES } from '../data/vereine-content';
 
 /**
  * The club area, screen by screen — the band that has to make "eine Ebene über
- * allen Mannschaften" concrete rather than aspirational. It sits on the court
- * ground because it is the page's signature claim; the two audience pages
- * otherwise alternate paper bands.
+ * allen Mannschaften" concrete rather than aspirational.
  *
- * Icons are ordered to match `CLUB_CAPABILITIES` and carry no meaning of their
- * own — they are the card's fastener, not a taxonomy. Copy lives in the data
- * module so the visible text and the schema stay one source.
+ * Written as the club's **team sheet**: a term column carrying the name the
+ * club's own navigation uses, a line beside it, a chalk hairline between rows.
+ * It replaced eight icon cards, which were wrong twice over — a grid of
+ * identical icon-plus-heading-plus-paragraph cards is the generic scaffold this
+ * world exists to refuse (DESIGN.md), and the icons carried no meaning that the
+ * headings did not already carry. A list of screens is what this is, so it is
+ * set as one, and it scans in the time a club actually gives a section.
+ *
+ * Semantically a description list: the term is the screen, the description is
+ * what stands on it.
  * @returns A JSX element rendering the club-area band on the court ground.
  */
-const ICONS = [
-  Building2,
-  Layers,
-  Users2,
-  BarChart3,
-  Route,
-  Sparkles,
-  KeyRound,
-  CalendarRange,
-] as const;
-
 export default function VereineClubLevel() {
   return (
     <section
@@ -57,26 +40,23 @@ export default function VereineClubLevel() {
           align='left'
           kicker='Der Vereinsbereich'
           title='Alle Mannschaften auf einer Seite'
-          description='Die Trainer arbeiten weiter in ihrer eigenen Mannschaft. Darüber liegt eine Ebene, die es ohne Verein nicht gibt — und die niemand von Hand pflegt.'
+          description='Die Trainer arbeiten weiter in ihrer eigenen Mannschaft. Darüber liegt eine Ebene, die es ohne Verein nicht gibt und die niemand von Hand pflegt.'
         />
 
-        <div className='mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
-          {CLUB_CAPABILITIES.map((item, index) => {
-            const Icon = ICONS[index % ICONS.length];
-
-            return (
-              <BoardCard key={item.title} tone='court' pin='none' className='p-6'>
-                <span className='flex size-10 items-center justify-center rounded-xl bg-primary/15 text-primary'>
-                  <Icon className='size-5' />
-                </span>
-                <h3 className='mt-4 font-display text-lg font-bold tracking-tight text-chalk'>
-                  {item.title}
-                </h3>
-                <p className='mt-2 text-[15px] leading-7 text-chalk/75'>{item.text}</p>
-              </BoardCard>
-            );
-          })}
-        </div>
+        <dl className='mt-12 border-b border-chalk/12'>
+          {CLUB_CAPABILITIES.map((item) => (
+            <div
+              key={item.term}
+              className='grid gap-1 border-t border-chalk/12 py-5 md:grid-cols-[minmax(0,11rem)_minmax(0,1fr)] md:gap-8 md:py-6'>
+              <dt className='font-display text-lg font-bold tracking-tight text-chalk'>
+                {item.term}
+              </dt>
+              <dd className='max-w-[52ch] text-[15px] leading-7 text-chalk/70'>
+                {item.text}
+              </dd>
+            </div>
+          ))}
+        </dl>
 
         <div className='mt-14 grid gap-8 lg:grid-cols-2'>
           <BoardScreenshot
@@ -84,7 +64,7 @@ export default function VereineClubLevel() {
             alt='Vereinsauswertung mit Kennzahlen aller Handball-Mannschaften eines Vereins'
             width={2560}
             height={2000}
-            label='Die Auswertung des Vereins: jede Saison, jede Mannschaft nebeneinander'
+            label='Jede Saison, jede Mannschaft nebeneinander'
             tone='court'
             pin='tape'
             sizes='(max-width: 1024px) 100vw, 45vw'
@@ -94,7 +74,7 @@ export default function VereineClubLevel() {
             alt='Vereinsweite Spielerliste aller Mannschaften eines Handballvereins'
             width={2560}
             height={2000}
-            label='Alle Spielerinnen und Spieler des Vereins, über alle Kader hinweg'
+            label='Alle Spieler des Vereins, über alle Kader hinweg'
             tone='court'
             pin='magnet'
             sizes='(max-width: 1024px) 100vw, 45vw'

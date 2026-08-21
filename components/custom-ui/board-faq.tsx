@@ -87,7 +87,7 @@ export default function BoardFaq({
                     isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0',
                   )}>
                   <div className='overflow-hidden'>
-                    <p className='max-w-[68ch] pb-5 pr-10 text-[15px] leading-7 text-ink/70'>
+                    <p className='max-w-[56ch] pb-5 pr-10 text-[15px] leading-7 text-ink/70'>
                       {faq.answer}
                     </p>
                   </div>
