@@ -6,7 +6,6 @@ import {
   PlayerMagnet,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { PLANNED_MONTHLY_PRICE } from '../data/pricing-content';
 
 /** What the planned subscription is meant to carry — stated as a plan, not a sale. */
 const PLAN_POINTS = [
@@ -55,15 +54,19 @@ export default function PricingPlan() {
 
         <div className='mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start lg:gap-12'>
           <BoardCard tone='court' pin='tape' className='p-7 sm:p-8'>
-            <p className='font-hand text-2xl text-primary'>Geplanter Preis</p>
+            <p className='font-hand text-2xl text-primary'>Heute</p>
             <p className='mt-2 font-display text-[3.2rem] font-extrabold leading-none tracking-[-0.04em] tabular-nums text-chalk'>
-              {PLANNED_MONTHLY_PRICE}
+              0 €
             </p>
-            <p className='mt-1 text-sm text-chalk/70'>im Monat</p>
+            <p className='mt-1 text-sm text-chalk/70'>voller Funktionsumfang</p>
             <p className='mt-5 text-[15px] leading-7 text-chalk/75'>
-              Diese Zahl ist eine Absicht, kein Angebot: In der App gibt es
-              aktuell weder einen Bezahlvorgang noch einen Abo-Bereich. Du kannst
-              Statix heute schlicht nicht bezahlen – und musst es auch nicht.
+              In der App gibt es weder einen Bezahlvorgang noch einen
+              Abo-Bereich. Du kannst Statix heute schlicht nicht bezahlen – und
+              musst es auch nicht.
+            </p>
+            <p className='mt-4 text-[15px] leading-7 text-chalk/75'>
+              Später wird es ein Abo geben. Was es kostet, steht noch nicht
+              fest; hier steht erst eine Zahl, wenn sie gilt.
             </p>
             <p className='mt-4 text-[15px] leading-7 text-chalk/75'>
               Die endgültigen Konditionen – auch für Vereine mit mehreren

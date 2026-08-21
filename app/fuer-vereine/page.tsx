@@ -13,9 +13,9 @@ import {
 } from '@/features/zielgruppen/data/vereine-content';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Handball-Statistik-App für Vereine & Jugendabteilungen',
+  title: 'Handball-Statistik-App für Vereine',
   description:
-    'Alle Mannschaften eines Vereins nach einem Schema: Spiele live erfassen, Kader und Trainingsbeteiligung an einem Ort, Spielerlaufbahnen über alle Jugenden, Auswertung für die Abteilungsleitung. AVV nach Art. 28 DSGVO — Konditionen auf Anfrage.',
+    'Statistik-App für Handballvereine: alle Mannschaften nach einem Schema, Kader und Termine an einem Ort, Spielerentwicklung über die ganze Jugendabteilung.',
   path: VEREINE_PAGE_PATH,
   keywords: [
     'handball statistik app für vereine',
@@ -32,7 +32,6 @@ export const metadata: Metadata = createPageMetadata({
     'handball nachwuchs statistik verein',
     'handball trainerteam software',
   ],
-  imagePath: '/verein-uebersicht.png',
 });
 
 /**
@@ -74,7 +73,7 @@ export default function Page() {
     <>
       <PageSchema
         id='fuer-vereine'
-        name='Handball-Statistik-App für Vereine & Jugendabteilungen'
+        name='Handball-Statistik-App für Vereine und Jugendabteilungen'
         description='Wie ein Handballverein mit Statix alle Mannschaften auf einen Standard bringt: gemeinsame Erfassung, Kader und Trainingsbeteiligung an einem Ort, Spielerlaufbahnen über alle Jugendmannschaften, eine Auswertung für die Abteilungsleitung und geregelter Datenschutz.'
         path={VEREINE_PAGE_PATH}
         imagePath='/verein-uebersicht.png'
@@ -90,7 +89,7 @@ export default function Page() {
           '@type': 'WebPage',
           '@id': `${pageUrl}#audience-page`,
           url: pageUrl,
-          name: 'Handball-Statistik-App für Vereine & Jugendabteilungen',
+          name: 'Handball-Statistik-App für Vereine und Jugendabteilungen',
           inLanguage: 'de-DE',
           isPartOf: { '@id': `${SITE_URL}/#website` },
           audience: {
@@ -160,7 +159,7 @@ export default function Page() {
           itemListElement: CLUB_CAPABILITIES.map((item, index) => ({
             '@type': 'ListItem',
             position: index + 1,
-            name: item.title,
+            name: item.term,
             description: item.text,
           })),
         }}

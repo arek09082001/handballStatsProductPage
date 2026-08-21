@@ -33,7 +33,7 @@ export const BRAND_FACTS = [
   {
     label: 'Preis',
     value:
-      'Kostenlos starten, erstes Spiel ohne Verpflichtung – faire Abos für Teams und Vereine',
+      'Aktuell komplett kostenlos – ein Abo kommt später, der Preis steht noch nicht fest',
   },
   {
     label: 'Entwickler',
@@ -137,7 +137,7 @@ export const BRAND_FAQS = [
   },
   {
     question: 'Ist Statix kostenlos?',
-    answer: `Du startest kostenlos: Registriere dich unter ${CLUB_CONFIG.website.appUrlWithoutProtocol} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es zusätzlich faire, planbare Abos.`,
+    answer: `Aktuell nichts: Registriere dich unter ${CLUB_CONFIG.website.appUrlWithoutProtocol} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Später wird es ein Abo geben; der Preis steht noch nicht fest und wird vorher bekannt gegeben.`,
   },
   {
     question: 'Wie kann ich Statix testen?',

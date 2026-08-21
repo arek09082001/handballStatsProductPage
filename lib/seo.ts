@@ -125,7 +125,7 @@ export const SITE_LINKS = [
         name: 'Preise',
         path: '/preise',
         description:
-            'Was die Handball-Statistik-App Statix kostet: aktuell kostenlos mit vollem Funktionsumfang, alle Grenzen im Detail und was ein geplantes Abo für Teams und Vereine ändern würde.',
+            'Was die Handball-Statistik-App Statix kostet: aktuell nichts, voller Funktionsumfang, alle Grenzen im Detail – und was ein späteres Abo für Teams und Vereine ändern würde.',
     },
     {
         name: 'Erfahrungen',
@@ -354,7 +354,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Gibt es eine kostenlose Handball-Statistik-App?',
         answer:
-            'Ja. Mit Statix startest du kostenlos und erfasst dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Für ganze Teams und Vereine gibt es zusätzlich faire, planbare Abos.',
+            'Ja. Statix ist aktuell mit vollem Funktionsumfang kostenlos – für einzelne Trainer wie für ganze Teams, ohne Kreditkarte und ohne Bezahlvorgang in der App. Später wird es ein Abo geben; der Preis steht noch nicht fest.',
     },
     {
         question: 'Brauche ich technisches Vorwissen?',
@@ -374,7 +374,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Was kostet Statix?',
         answer:
-            'Du startest kostenlos: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus. Für ganze Teams und Vereine gibt es faire, planbare Abos.',
+            'Aktuell nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus. Später wird es ein Abo geben; der Preis steht noch nicht fest.',
     },
     {
         question: 'Wer steckt hinter Statix?',

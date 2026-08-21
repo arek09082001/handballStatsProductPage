@@ -3,12 +3,15 @@ import type { BoardFaqItem } from '@/components/custom-ui/board-faq';
 export const PRICING_PAGE_PATH = '/preise';
 
 /**
- * The planned subscription price. Statix is currently free in full; there is no
- * checkout, no subscription tab and nothing to buy. This number is therefore
- * announced as a plan, never as an active offer — and it must NOT appear in an
- * `Offer` node until it is actually purchasable (see `app/preise/page.tsx`).
+ * There is deliberately NO price constant here any more.
+ *
+ * Statix is free in full: no checkout, no subscription tab, nothing to buy. A
+ * subscription is planned, but its price is not decided, and a number that is
+ * not decided has no business on a commercial page — it anchors an expectation
+ * the operator then has to either honour or walk back, and German price-display
+ * rules apply to a stated end price the moment it becomes buyable. The page
+ * says "a subscription will come" and names no figure until one exists.
  */
-export const PLANNED_MONTHLY_PRICE = '3,99 €';
 
 /** What a coach gets today, at no cost. Every entry is a shipping feature. */
 export const FREE_INCLUDED = [
@@ -43,7 +46,7 @@ export const FREE_LIMITS: LimitGroup[] = [
     title: 'KI-Analysen',
     note: 'Rollierende Zeitfenster: Eine Analyse zählt genau 24 Stunden bzw. 30 Tage nach ihrem Start nicht mehr mit – es gibt keinen festen Reset um Mitternacht. Einen Bericht zu löschen gibt das Kontingent nicht zurück.',
     rows: [
-      { label: 'Letzte 24 Stunden', value: '10 Analysen' },
+      { label: 'Letzte 24 Stunden', value: '3 Analysen' },
       { label: 'Letzte 30 Tage', value: '25 Analysen' },
       { label: 'Gleichzeitig laufend', value: '1 Analyse' },
     ],
@@ -126,7 +129,7 @@ export const PRICING_FAQS: BoardFaqItem[] = [
   {
     question: 'Was kostet Statix?',
     answer:
-      'Aktuell nichts. Statix ist mit dem vollen Funktionsumfang kostenlos nutzbar – es gibt derzeit keinen Bezahlvorgang und kein Abo in der App. Geplant ist später ein Abo für 3,99 € im Monat; einzelne Funktionen wandern dann in dieses Abo. Was genau im kostenlosen Zugang bleibt, gebe ich rechtzeitig vor dem Start bekannt.',
+      'Aktuell nichts. Statix ist mit dem vollen Funktionsumfang kostenlos nutzbar – es gibt derzeit keinen Bezahlvorgang und kein Abo in der App. Später wird es ein Abo geben; der Preis steht noch nicht fest, und was genau im kostenlosen Zugang bleibt, gebe ich rechtzeitig vor dem Start bekannt.',
   },
   {
     question: 'Brauche ich eine Kreditkarte, um Statix zu testen?',
@@ -146,11 +149,11 @@ export const PRICING_FAQS: BoardFaqItem[] = [
   {
     question: 'Welche Grenzen hat der kostenlose Zugang?',
     answer:
-      'In der App gelten echte Kontingente: 10 KI-Analysen in 24 Stunden und 25 in 30 Tagen (rollierend, eine gleichzeitig), 3 geteilte Berichte in 24 Stunden sowie pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen. Pro Konto führst du bis zu 3 Teams.',
+      'In der App gelten echte Kontingente: 3 KI-Analysen in 24 Stunden und 25 in 30 Tagen (rollierend, eine gleichzeitig), 3 geteilte Berichte in 24 Stunden sowie pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen. Pro Konto führst du bis zu 3 Teams.',
   },
   {
     question: 'Wie erfahre ich, wenn die Preise feststehen?',
     answer:
-      'Über den Newsletter. Wer dort eingetragen ist, erfährt die Konditionen für Teams und Vereine, bevor sie hier auf der Seite stehen.',
+      'Über den Newsletter. Wer dort eingetragen ist, erfährt die Konditionen für Teams und Vereine, bevor sie hier auf der Seite stehen. Bis dahin bleibt alles kostenlos.',
   },
 ];

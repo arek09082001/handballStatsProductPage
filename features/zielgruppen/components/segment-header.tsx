@@ -46,12 +46,14 @@ export default function SegmentHeader({
 }: SegmentHeaderProps) {
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
+      {/* Court lines only, no formation. The magnets sat behind the lede and
+          the trust badges, where a jersey number showing through a sentence
+          reads as noise rather than as board play — the same rule the Ratgeber
+          headers follow (DESIGN.md: plain goal-end behind an article header). */}
       <CourtDiagram
         variant='goal'
-        formation
-        formationOpacity={0.28}
         aria-hidden
-        className='pointer-events-none absolute -left-[22%] top-1/2 h-[92%] w-auto -translate-y-1/2 text-chalk/[0.12] sm:-left-[14%] lg:-left-[8%]'
+        className='pointer-events-none absolute -left-[22%] top-1/2 h-[92%] w-auto -translate-y-1/2 text-chalk/[0.14] sm:-left-[14%] lg:-left-[8%]'
       />
       <Grain tone='court' />
 

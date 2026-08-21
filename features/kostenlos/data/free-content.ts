@@ -27,7 +27,7 @@ export const FREE_SCOPE: FreeScopeRow[] = [
   { feature: 'Kader als Kartenalbum mit Spielerkarten', limit: 'ohne Grenze' },
   {
     feature: 'KI-Analysen (Spiel, Team, Spieler, Turnier)',
-    limit: '10 in 24 Stunden, 25 in 30 Tagen, 1 gleichzeitig',
+    limit: '3 in 24 Stunden, 25 in 30 Tagen, 1 gleichzeitig',
   },
   { feature: 'Berichte als PDF teilen', limit: '3 in 24 Stunden' },
   { feature: 'Live-Demo ohne Account', limit: 'ohne Grenze' },
@@ -81,12 +81,12 @@ export const FREE_FAQS: BoardFaqItem[] = [
   {
     question: 'Welche Grenzen hat der kostenlose Zugang?',
     answer:
-      'Pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen; pro Konto 3 Teams. Dazu 10 KI-Analysen in 24 Stunden und 25 in 30 Tagen (eine gleichzeitig) sowie 3 geteilte Berichte in 24 Stunden.',
+      'Pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen; pro Konto 3 Teams. Dazu 3 KI-Analysen in 24 Stunden und 25 in 30 Tagen (eine gleichzeitig) sowie 3 geteilte Berichte in 24 Stunden.',
   },
   {
     question: 'Bleibt Statix kostenlos?',
     answer:
-      'Ein kostenloser Zugang bleibt. Geplant ist zusätzlich ein Abo für 3,99 € im Monat; einzelne Funktionen wandern dann dorthin. Welche das sind, steht noch nicht fest – und es passiert nicht über Nacht: Der Newsletter geht vorher raus.',
+      'Ein kostenloser Zugang bleibt. Später wird es zusätzlich ein Abo geben, in das einzelne Funktionen wandern. Weder der Preis noch die Auswahl stehen fest – und es passiert nicht über Nacht: Der Newsletter geht vorher raus.',
   },
   {
     question: 'Ist eine kostenlose App für den Verein überhaupt sinnvoll?',

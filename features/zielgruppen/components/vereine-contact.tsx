@@ -49,9 +49,8 @@ export default function VereineContact() {
           <p className='mx-auto mt-4 max-w-[58ch] text-base leading-7 text-chalk/75'>
             Wie viele Mannschaften habt ihr, wie viele davon in der Jugend, und
             was soll am Ende an einer Stelle stehen? Drei Sätze reichen. Ihr
-            bekommt eine Einschätzung, ob und wie der Vereinsbereich zu euch
-            passt — und ein Angebot, das zu eurer Größe passt, statt einer Zahl
-            von der Stange.
+            bekommt eine Einschätzung dazu, ob der Vereinsbereich zu euch passt,
+            und ein Angebot in eurer Größe statt einer Zahl von der Stange.
           </p>
 
           <div className='mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row'>

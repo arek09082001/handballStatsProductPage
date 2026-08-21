@@ -44,9 +44,8 @@ zero‑friction way in for a visitor who will not create an account yet;
 `demo_click` measures it. Third action, for whoever does neither today: the
 launch‑offer newsletter for clubs.
 
-The page carries **no price figure**. It says free to start, no credit card,
-and links to `/preise` for the rest — the 3,99 € figure is *planned*, and the
-landing page is the wrong place to anchor on a number nobody is paying yet.
+The page carries **no price figure** — no page does. It says free, no credit
+card, and links to `/preise` for the rest.
 
 Length is a conversion constraint on this surface, not a content budget. The
 page is deliberately about half the scroll it used to be: everything a coach
@@ -77,14 +76,15 @@ cannot decide without it.
 - **Free to start**, no credit card; first game recorded without commitment.
 - **Right now every feature is free.** Statix has not switched to subscription
   mode yet, so nothing is behind a paywall today.
-- **Planned price: 3,99 € per month.** When subscription mode is switched on,
-  some features move behind the paywall at that price. Until then this is a
-  *planned* price and must always be worded as such — never imply a coach is
-  being charged today. It is the only price figure that may appear anywhere;
-  never fabricate another number, tier, or discount.
-- Before publishing the figure on a commercial page, confirm whether 3,99 € is
-  the gross end price (incl. USt.) — German price display rules require the
-  end price for consumers.
+- **A subscription is planned, and its price is not decided.** No figure may
+  appear anywhere on the site — not in copy, not in schema, not in `llms.txt`.
+  Word it as "später wird es ein Abo geben", never as a number, a tier or a
+  discount, and never imply a coach is being charged today. When a price is
+  finally set, check first whether it is the gross end price (incl. USt.):
+  German price-display rules require the end price for consumers.
+- **Club conditions are quoted, not listed.** A club enquires via
+  `/fuer-vereine`; what a club with twelve squads needs is not what a club with
+  two needs, so there is no club price on the site either.
 - The launch offer for clubs is collected via the newsletter.
 - Live demo runs at the URL in `lib/club-config.ts` (`CLUB_CONFIG.website`).
 

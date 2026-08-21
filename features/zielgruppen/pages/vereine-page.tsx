@@ -43,7 +43,7 @@ export default function VereinePage() {
         kicker='Für Vereine'
         titleLead='Handball-Statistik für den ganzen'
         titleHighlight='Verein'
-        lede='Zehn Jugendmannschaften, zehn Systeme: einer führt Excel, der nächste einen Zettel, der dritte gar nichts. Der Vereinsbereich von Statix legt eine Ebene über alle Mannschaften — alle erfassen nach demselben Schema, Kader und Trainingsbeteiligung liegen im selben Werkzeug, Spieler behalten ihre Laufbahn über die Jugenden hinweg, und die Abteilungsleitung sieht jede Mannschaft auf einer Seite. Was das für euren Verein heißt, klären wir im Gespräch.'
+        lede='Zehn Jugendmannschaften, zehn Systeme: einer führt Excel, der nächste einen Zettel, der dritte gar nichts. Der Vereinsbereich von Statix legt eine Ebene über alle Mannschaften. Alle erfassen nach demselben Schema, Kader und Termine liegen im selben Werkzeug, Spieler behalten ihre Laufbahn über die Jugenden hinweg. Was das für euren Verein heißt, klären wir im Gespräch.'
         trust={[
           'Persönlich eingerichtet',
           'AVV nach Art. 28 DSGVO',
@@ -80,7 +80,7 @@ export default function VereinePage() {
       <SegmentObjections
         kicker='Klartext'
         title='Was im Vorstand gesagt wird'
-        description='Die Sätze, an denen Einführungen scheitern — hier stehen sie mit Antwort.'
+        description='Die Sätze, an denen Einführungen scheitern. Hier stehen sie mit Antwort.'
         items={[...CLUB_OBJECTIONS]}>
         <>
           Was der Einstieg für eine einzelne Trainerin kostet und wo die Grenzen

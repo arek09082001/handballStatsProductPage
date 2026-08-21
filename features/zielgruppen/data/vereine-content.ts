@@ -27,86 +27,93 @@ export interface ClubBenefit {
 }
 
 /**
- * What changes for a club when every squad records the same way — written for
- * the club that has ten youth teams and ten different systems, because that is
- * the club this level exists for.
+ * What changes for a club when every squad records the same way.
+ *
+ * Each item earns its place by naming something a club cannot do today, and
+ * each one says it once: the hero already states the ten-systems problem, so
+ * no entry restates it, and no entry closes on a summary of itself. Three
+ * sentences is the ceiling.
  */
 export const CLUB_BENEFITS: ClubBenefit[] = [
   {
     number: 1,
     title: 'Zehn Jugendmannschaften, ein Schema',
-    text: 'Solange jeder Trainer sein eigenes System fährt – der eine Excel, der nächste einen Zettel, der dritte gar nichts –, hat der Verein am Ende nichts, was sich vergleichen lässt. Im Vereinsbereich erfassen alle Mannschaften dieselben Aktionen nach denselben Zählregeln. Die E-Jugend, die A-Jugend und die Damen stehen danach in einer Tabelle nebeneinander, ohne dass jemand etwas umrechnet.',
+    text: 'Alle Mannschaften erfassen dieselben Aktionen nach denselben Zählregeln, weil die App keine zweiten anbietet. E-Jugend, A-Jugend und Damen stehen danach in einer Tabelle nebeneinander, ohne dass jemand etwas umrechnet.',
   },
   {
     number: 2,
     title: 'Eine Spielerin, eine Laufbahn',
-    text: 'Wechselt eine Spielerin von der C- in die B-Jugend und später zu den Damen, ist sie in Statix dieselbe Person – mit allen Stationen untereinander. Ihre Entwicklung bleibt im Verein, statt im Ordner des alten Trainers zu enden. Das Vereinsdashboard listet auf, wer schon in mehr als einer Mannschaft gespielt hat.',
+    text: 'Wechselt eine Spielerin von der C- in die B-Jugend und später zu den Damen, ist sie in Statix dieselbe Person mit allen Stationen untereinander. Was drei Trainer über sie gelernt haben, bleibt im Verein.',
   },
   {
     number: 3,
     title: 'Spieler in mehreren Kadern',
-    text: 'Eine A-Jugendliche, die bei den Damen mittrainiert und aushilft, steht in beiden Kadern – mit eigener Rückennummer, eigenem Terminplan und eigenen Zahlen pro Mannschaft. Für den Spieltag stellt der Trainer aus dem Kader den Spieltagskader zusammen; wer nicht dabei ist, taucht in der Auswertung des Spiels auch nicht auf.',
+    text: 'Eine A-Jugendliche, die bei den Damen aushilft, steht in beiden Kadern: eigene Rückennummer, eigener Terminplan, eigene Zahlen. Für den Spieltag stellt der Trainer daraus seinen Spieltagskader zusammen.',
   },
   {
     number: 4,
-    title: 'Training und Zu-/Absagen im selben Werkzeug',
-    text: 'Termine, Trainingszeiten und Serientermine liegen dort, wo auch die Spiele liegen. Die Spieler sagen selbst zu oder ab – über einen Link, ohne Trainer-App –, tragen Urlaub, Krankheit oder Verletzung für mehrere Tage ein, und der Trainer sieht vor dem Training, wer kommt und von wem noch nichts kam. Keine zweite WhatsApp-Umfrage, keine dritte Liste.',
+    title: 'Termine im selben Werkzeug',
+    text: 'Trainingszeiten und Serientermine liegen dort, wo auch die Spiele liegen. Die Spieler sagen selbst zu oder ab und tragen längere Abwesenheiten als Zeitraum ein; der Trainer sieht vorher, wer kommt.',
   },
   {
     number: 5,
     title: 'Ihr seht früh, wo etwas fehlt',
-    text: 'Die Vereinsauswertung stellt Saison neben Saison und Mannschaft neben Mannschaft: Wurfquote, Paradenquote, Siebenmeter, Tempogegenstöße, technische Fehler, Zeitstrafen. Eine Jugend, die seit zwei Jahren dieselbe Wurfquote hat, fällt damit auf, bevor der Jahrgang durch ist – und eine, die Lehrjahre hat, ist trotz Tabellenplatz sichtbar besser geworden.',
+    text: 'Die Vereinsauswertung stellt Mannschaft neben Mannschaft und Saison neben Saison. Eine Jugend, deren Wurfquote seit zwei Jahren steht, fällt damit auf, bevor der Jahrgang durch ist; die Spielerentwicklung dahinter steht auf der Seite der Spielerin.',
   },
   {
     number: 6,
     title: 'Trainerwechsel kosten keine Daten',
-    text: 'Hört ein Trainer auf, bleiben Kader, Spiele, Termine und Auswertungen im Verein. Der Nachfolger übernimmt eine Mannschaft mit Vorgeschichte, statt bei null anzufangen – und niemand muss darauf hoffen, dass noch jemand einen alten Laptop herausrückt.',
+    text: 'Hört ein Trainer auf, bleiben Kader, Spiele, Termine und Auswertungen im Verein. Sein Nachfolger übernimmt eine Mannschaft mit Vorgeschichte statt einen leeren Ordner.',
   },
 ];
 
 export interface ClubCapability {
-  title: string;
+  /** The screen it is, named the way the club's own navigation names it. */
+  term: string;
   text: string;
 }
 
 /**
- * The club area itself, screen by screen. Every entry describes something that
- * exists in the app today — the club dashboard, the squads and players lists,
- * the Auswertung with its season comparison, the careers list, the roles and
- * the club's ticker sponsors.
+ * The club area, screen by screen — the eight rows of the club's team sheet.
+ *
+ * One line each, on purpose. The band used to carry a paragraph per item in a
+ * card grid, which is three sentences to say "die Auswertung vergleicht
+ * Mannschaften"; a club reading this is scanning for whether its own question
+ * is on the list, not reading prose. The paragraph belongs in the FAQ, where
+ * somebody has asked for it.
  */
 export const CLUB_CAPABILITIES: ClubCapability[] = [
   {
-    title: 'Vereinsübersicht: der Montagmorgen',
-    text: 'Was am Wochenende passiert ist, steht oben: alle Ergebnisse aller Mannschaften, danach die nächsten Spiele und die Tabelle aller Kader – Spiele, Siege, Unentschieden, Niederlagen, Tordifferenz, Wurfquote, Paradenquote. Darunter, als Fußnote, was noch offen ist: Mannschaften ohne Cheftrainer, offene Einladungen, Spieler ohne Personenzuordnung.',
+    term: 'Übersicht',
+    text: 'Die Ergebnisse aller Mannschaften vom Wochenende, die nächsten Spiele und die Tabelle aller Kader.',
   },
   {
-    title: 'Alle Mannschaften an einer Stelle',
-    text: 'Jede Mannschaft mit Kadergröße, Cheftrainer, Trainerstab, letztem und nächstem Spiel. Ein Klick führt in den Kader, ein zweiter in ein einzelnes Spiel – ohne dass die Abteilungsleitung sich in fremde Konten einloggen oder bei jemandem nachfragen muss.',
+    term: 'Mannschaften',
+    text: 'Jeder Kader mit Cheftrainer, Trainerstab, letztem und nächstem Spiel. Ein Klick führt hinein.',
   },
   {
-    title: 'Spieler über alle Kader hinweg',
-    text: 'Eine durchsuchbare Liste aller Spielerinnen und Spieler des Vereins, nach Name oder Mannschaft, mit Spielen, Toren, Vorlagen, Wurfquote und – für Torhüter – Paraden und Gegentoren. Von dort geht es direkt ins Spielerprofil mit Formkurve, Auszeichnungen und der vollständigen Laufbahn.',
+    term: 'Spieler',
+    text: 'Alle Spielerinnen und Spieler des Vereins in einer Liste, durchsuchbar nach Name oder Mannschaft.',
   },
   {
-    title: 'Auswertung: Überblick und Saisonvergleich',
-    text: 'Zwei Ansichten auf dieselben Spiele. Der Überblick beschreibt eine Auswahl – eine Mannschaft, eine Saison oder alles: Siegquote, enge Spiele, Heim und Auswärts, wie die Tore fallen, dazu Bestenlisten für Torschützen, Vorlagen und Torhüter. Der Saisonvergleich stellt die Saisons einer Mannschaft nebeneinander, weil „sind wir besser als letztes Jahr“ nur in der Differenz eine Antwort hat.',
+    term: 'Auswertung',
+    text: 'Wurfquote, Paradenquote und Siegquote je Mannschaft, dazu der Vergleich Saison gegen Saison.',
   },
   {
-    title: 'Laufbahnen im Verein',
-    text: 'Wer schon in mehr als einer Mannschaft gespielt hat, steht mit seinen Stationen im Vereinsdashboard. Der Nachwuchs, der den Sprung geschafft hat, ist damit belegbar – und nicht nur eine Erinnerung von jemandem, der lange genug dabei ist.',
+    term: 'Laufbahnen',
+    text: 'Wer schon in zwei Mannschaften des Vereins gespielt hat, steht mit seinen Stationen im Dashboard.',
   },
   {
-    title: 'KI-Analysen aller Mannschaften',
-    text: 'Die Analysen, die in den einzelnen Mannschaften entstehen – zu einem Spiel, einem Team, einem Spieler oder einem Turnier –, liegen in der Vereinsauswertung gesammelt. Spielernamen werden vor jeder Analyse pseudonymisiert; die KI arbeitet mit Kürzeln, nicht mit den Namen von Minderjährigen.',
+    term: 'KI-Analysen',
+    text: 'Die Berichte aller Mannschaften an einer Stelle. Spielernamen sind vorher pseudonymisiert.',
   },
   {
-    title: 'Rollen: wer was sehen darf',
-    text: 'Drei Rollen, mehr gibt es nicht. Die Vereinsverwaltung darf alles im Verein, die sportliche Leitung liest alles und ändert nichts, ein Trainer sieht die Mannschaften des Vereins und arbeitet ansonsten wie bisher in seiner eigenen. Eine Mannschaft kommt nur in den Verein, wenn ihr Cheftrainer sie selbst einträgt.',
+    term: 'Rollen',
+    text: 'Die Vereinsverwaltung darf alles, die sportliche Leitung liest mit, Trainer bleiben in ihrer Mannschaft.',
   },
   {
-    title: 'Vereinslogo und Sponsoren im Live-Ticker',
-    text: 'Jedes Spiel lässt sich als öffentlicher Live-Ticker veröffentlichen – Link oder QR-Code, im Browser, ohne App. Der Verein hinterlegt dafür einmal seine Sponsoren; jede Mannschaft, die keine eigenen hat, zeigt automatisch die des Vereins. Auf dem Ticker stehen Spielernamen standardmäßig abgekürzt.',
+    term: 'Sponsoren',
+    text: 'Vereinslogo und Sponsoren laufen auf dem Live-Ticker jeder Mannschaft, die keine eigenen hinterlegt hat.',
   },
 ];
 
@@ -131,7 +138,7 @@ export const ROLLOUT_STEPS: RolloutStep[] = [
   {
     number: 3,
     title: 'Die Trainer tragen ihre Mannschaft ein',
-    text: 'Jeder Cheftrainer legt sein Konto an – kostenlos, in zwei Minuten – und trägt den Beitrittscode in den Mannschaftseinstellungen ein. Damit gehört seine Mannschaft zum Verein. Kein Import, kein Stichtag, keine Schulung: ihr könnt mit zwei Mannschaften anfangen und im Winter die restlichen dazunehmen.',
+    text: 'Jeder Cheftrainer legt sein Konto an, kostenlos und in zwei Minuten, und trägt den Beitrittscode in den Mannschaftseinstellungen ein. Damit gehört seine Mannschaft zum Verein. Kein Import, kein Stichtag, keine Schulung.',
   },
   {
     number: 4,
@@ -155,7 +162,7 @@ export const CLUB_OBJECTIONS: ClubObjection[] = [
   {
     question: '„Unsere Trainer sind nicht technikaffin.“',
     answer:
-      'Das ist der Normalfall, nicht die Ausnahme. Statix ist für einen Trainer gebaut, der nebenbei coacht: Jede Aktion ist ein Tap, es gibt keine Schulung und keine Einrichtung, die jemand für den Verein übernehmen müsste. Wer will, fängt mit dem Nötigsten an – Tore und Würfe – und lässt alles andere liegen. Und wer erstmal nur zuschauen will, öffnet die Live-Demo ohne Account.',
+      'Statix ist für einen Trainer gebaut, der nebenbei coacht. Jede Aktion ist ein Tap, es gibt keine Schulung und keine Einrichtung, die jemand für den Verein übernehmen müsste. Wer will, fängt mit Toren und Würfen an und lässt alles andere liegen. Und wer sich das vorher ansehen möchte, öffnet die Live-Demo ohne Account.',
   },
   {
     question: '„Wir haben doch schon eine Vereinssoftware.“',
@@ -178,12 +185,12 @@ export const VEREINE_FAQS: BoardFaqItem[] = [
   {
     question: 'Was ist der Vereinsbereich von Statix?',
     answer:
-      'Eine Ebene über den einzelnen Mannschaften. Alle Kader eines Vereins hängen unter einem Dach: Es gibt eine Vereinsübersicht mit den Ergebnissen und der Tabelle aller Mannschaften, eine vereinsweite Spielerliste, eine Auswertung mit Saisonvergleich, die Laufbahnen der Spieler über mehrere Mannschaften und gesammelte KI-Analysen. Die einzelnen Trainer arbeiten dabei weiter in ihrer eigenen Mannschaft wie bisher.',
+      'Eine Ebene über den einzelnen Mannschaften. In der Handball-Statistik-App hängen alle Kader eines Vereins unter einem Dach: eine Vereinsübersicht mit den Ergebnissen und der Tabelle aller Mannschaften, eine vereinsweite Spielerliste, eine Auswertung mit Saisonvergleich, die Laufbahnen der Spieler über mehrere Mannschaften und gesammelte KI-Analysen. Die einzelnen Trainer arbeiten dabei weiter in ihrer eigenen Mannschaft wie bisher.',
   },
   {
     question: 'Für welche Vereine lohnt sich das?',
     answer:
-      'Vor allem für Vereine mit vielen Jugendmannschaften, die einheitlich Statistiken führen wollen – von der Minis-Mannschaft bis zur A-Jugend und weiter in den Seniorenbereich. Je mehr Mannschaften und je mehr Übergänge zwischen ihnen es gibt, desto mehr entsteht erst durch den gemeinsamen Standard: vergleichbare Zahlen, durchgehende Spielerlaufbahnen und eine Abteilungsleitung, die nicht bei acht Trainern einzeln nachfragen muss.',
+      'Vor allem für eine Jugendabteilung mit vielen Mannschaften, die einheitlich Statistiken führen will – von den Minis bis zur A-Jugend und weiter in den Seniorenbereich. Je mehr Mannschaften und je mehr Übergänge zwischen ihnen es gibt, desto mehr entsteht erst durch den gemeinsamen Standard: vergleichbare Zahlen, durchgehende Spielerlaufbahnen und eine Abteilungsleitung, die nicht bei acht Trainern einzeln nachfragen muss.',
   },
   {
     question: 'Was kostet Statix für einen Verein?',
@@ -223,7 +230,7 @@ export const VEREINE_FAQS: BoardFaqItem[] = [
   {
     question: 'Was passiert, wenn ein Trainer den Verein verlässt?',
     answer:
-      'Die Mannschaft und ihre Spiele bleiben bestehen. Über den Trainerstab oder die Vereinsverwaltung übernimmt ein Nachfolger, statt bei null anzufangen – und ihr seid nicht darauf angewiesen, dass jemand eine private Datei herausgibt.',
+      'Die Mannschaft und ihre Spiele bleiben bestehen. Über den Trainerstab oder die Vereinsverwaltung bekommt der Nachfolger Zugriff; ihr seid nicht darauf angewiesen, dass jemand eine private Datei herausgibt.',
   },
   {
     question: 'Brauchen unsere Trainer eine Schulung?',

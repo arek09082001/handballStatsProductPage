@@ -48,8 +48,8 @@ export default function PricingHeader() {
           Kurz und ehrlich: Statix kostet dich aktuell nichts. Der volle
           Funktionsumfang ist kostenlos nutzbar, es gibt keinen Bezahlvorgang und
           kein Abo in der App – also auch keine Kreditkarte und keine Testphase,
-          die irgendwann ausläuft. Geplant ist später ein Abo für 3,99 € im
-          Monat.
+          die irgendwann ausläuft. Später wird es ein Abo geben; der Preis steht
+          noch nicht fest.
         </p>
 
         <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center'>
