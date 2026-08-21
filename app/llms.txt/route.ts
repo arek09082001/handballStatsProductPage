@@ -51,7 +51,7 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch
 - Regionen: ${SERVICE_AREAS.join(', ')}
-- Preis: Aktuell kostenlos mit vollem Funktionsumfang, ohne Kreditkarte und ohne Bezahlvorgang in der App; geplant ist später ein Abo für 3,99 € im Monat (Details unter ${absoluteUrl('/preise')})
+- Preis: Aktuell kostenlos mit vollem Funktionsumfang, ohne Kreditkarte und ohne Bezahlvorgang in der App. Später wird es ein Abo geben; ein Preis steht noch nicht fest und wird vor dem Start bekannt gegeben (Details unter ${absoluteUrl('/preise')})
 - Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
 - App (Registrierung, kostenlos starten): ${CLUB_CONFIG.website.appUrl}

@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = createPageMetadata({
   title: 'Preise: Handball-Statistik-App für Trainer',
   description:
-    'Was kostet Statix? Aktuell nichts: voller Funktionsumfang kostenlos, ohne Kreditkarte und ohne Abo. Vereinspreise sind geplant – Live-Demo ohne Account testen.',
+    'Was kostet Statix? Aktuell nichts: voller Funktionsumfang kostenlos, ohne Kreditkarte und ohne Abo. Ein Abo kommt später – Live-Demo ohne Account testen.',
   path: PRICING_PAGE_PATH,
   keywords: [
     'handball statistik app preise',
@@ -36,9 +36,10 @@ export const metadata: Metadata = createPageMetadata({
  *
  * Schema note: Statix has no checkout, no subscription tab and nothing that can
  * currently be bought, so the `SoftwareApplication` node carries an `Offer` for
- * the free tier only. The planned 3,99 €/month price is stated in the visible
- * copy as a plan — it must not become an `Offer` before it is purchasable, and
- * no `aggregateRating` is emitted because there are no reviews yet.
+ * the free tier only. The planned subscription has no price yet and therefore
+ * appears nowhere as a number — not in the copy and not as an `Offer`, which it
+ * must not become before it is purchasable. No `aggregateRating` is emitted
+ * either, because there are no reviews yet.
  */
 export default function Page() {
   const pageUrl = absoluteUrl(PRICING_PAGE_PATH);
