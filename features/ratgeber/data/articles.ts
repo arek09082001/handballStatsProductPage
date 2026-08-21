@@ -52,6 +52,7 @@ import { handballBelastungssteuerung } from './articles/handball-belastungssteue
 import { handballStatistikZettelExcelApp } from './articles/handball-statistik-zettel-excel-app';
 import { handballAbwehrsystemAuswaehlen } from './articles/handball-abwehrsystem-auswaehlen';
 import { handballJugendtrainerKennzahlenErstesJahr } from './articles/handball-jugendtrainer-kennzahlen-erstes-jahr';
+import { handballStatistikVereinEinfuehren } from './articles/handball-statistik-verein-einfuehren';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -124,6 +125,7 @@ export const ARTICLES: Article[] = [
   handballStatistikZettelExcelApp,
   handballAbwehrsystemAuswaehlen,
   handballJugendtrainerKennzahlenErstesJahr,
+  handballStatistikVereinEinfuehren,
 ];
 
 /** Articles sorted newest-first by publication date. */

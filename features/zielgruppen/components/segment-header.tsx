@@ -1,4 +1,4 @@
-import { UserPlus } from 'lucide-react';
+import { Mail, UserPlus } from 'lucide-react';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -19,6 +19,13 @@ interface SegmentHeaderProps {
   lede: string;
   trust: string[];
   screenshot: { src: string; alt: string; label: string };
+  /**
+   * Replaces the default registration action. The club page needs it: a club
+   * cannot sign itself up — the club level is set up by hand — so its primary
+   * action is an enquiry, not a registration form. Internal href, rendered
+   * without `target` so it stays a same-tab navigation.
+   */
+  primaryAction?: { href: string; label: string };
 }
 
 /**
@@ -35,6 +42,7 @@ export default function SegmentHeader({
   lede,
   trust,
   screenshot,
+  primaryAction,
 }: SegmentHeaderProps) {
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
@@ -67,14 +75,23 @@ export default function SegmentHeader({
           </p>
 
           <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start'>
-            <HeroActionButton
-              variant='primary'
-              icon={<UserPlus className='size-4' />}
-              href={CLUB_CONFIG.website.appUrl}
-              target='_blank'
-              rel='noopener noreferrer'>
-              Jetzt kostenlos registrieren
-            </HeroActionButton>
+            {primaryAction ? (
+              <HeroActionButton
+                variant='primary'
+                icon={<Mail className='size-4' />}
+                href={primaryAction.href}>
+                {primaryAction.label}
+              </HeroActionButton>
+            ) : (
+              <HeroActionButton
+                variant='primary'
+                icon={<UserPlus className='size-4' />}
+                href={CLUB_CONFIG.website.appUrl}
+                target='_blank'
+                rel='noopener noreferrer'>
+                Jetzt kostenlos registrieren
+              </HeroActionButton>
+            )}
             <HeroActionButton
               variant='secondary'
               href={CLUB_CONFIG.website.demoUrl}

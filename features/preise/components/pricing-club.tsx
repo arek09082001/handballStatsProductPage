@@ -3,9 +3,14 @@ import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/compon
 
 /**
  * Answers the club-budget query head-on ("Was kostet Statix für einen
- * Verein?"). The H2 is the exact question a treasurer types into Google; the
- * answer stays inside product truth — free today, club conditions announced
- * before launch — and hands off to the club segment page.
+ * Verein?"). The H2 is the exact question a treasurer types into Google.
+ *
+ * The answer is deliberately split: the coach's own start stays free and is
+ * stated as such, while the club level — which is set up by hand and sized to
+ * the number of squads — carries no figure at all and hands over to an enquiry.
+ * Naming one number for a club with two squads and a club with twelve would be
+ * wrong for at least one of them, and a price nobody can pay yet is not a
+ * price. Everything commercial about clubs therefore lives on `/fuer-vereine`.
  * @returns A JSX element rendering the club-cost band on the paper ground.
  */
 export default function PricingClub() {
@@ -34,21 +39,29 @@ export default function PricingClub() {
 
           <BoardCard pin='magnet' pinColor='opponent' className='p-6 sm:p-7'>
             <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
-              Später: noch offen
+              Für den ganzen Verein: auf Anfrage
             </h3>
             <p className='mt-3 text-[15px] leading-7 text-ink/75'>
-              Ob ein Verein später pro Trainer, pro Mannschaft oder als Ganzes
-              bezahlt, ist nicht entschieden – und deshalb steht hier keine Zahl,
-              die ich in drei Monaten zurücknehmen müsste. Sobald die
-              Vereinskonditionen stehen, findest du sie auf dieser Seite.
+              Wer alle Mannschaften unter ein Dach holen will – eine
+              Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über
+              die Jugenden hinweg –, bekommt den Vereinsbereich. Der wird für
+              euch eingerichtet, und was er kostet, hängt daran, wie groß euer
+              Verein ist. Deshalb steht hier keine Zahl von der Stange, sondern
+              eine Einladung: schreibt kurz, wie viele Mannschaften ihr habt.
             </p>
+            <Link
+              href='/fuer-vereine#vereinsanfrage'
+              className='mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
+              Konditionen für Vereine anfragen
+            </Link>
           </BoardCard>
         </div>
 
         <p className='mt-8 max-w-[68ch] text-base leading-7 text-ink/70'>
           Was ein Verein davon hat, wenn alle Mannschaften nach demselben Schema
-          erfassen – ein Standard über alle Teams, Spiele zwischen Trainern
-          teilen, Datenschutz sauber geregelt – steht auf der Seite{' '}
+          erfassen – ein Standard über alle Teams, Kader und
+          Trainingsbeteiligung an einem Ort, Entwicklung über alle
+          Jugendmannschaften, Datenschutz sauber geregelt – steht auf der Seite{' '}
           <Link
             href='/fuer-vereine'
             className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>

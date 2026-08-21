@@ -136,7 +136,7 @@ export const PRICING_FAQS: BoardFaqItem[] = [
   {
     question: 'Was kostet Statix für einen Verein?',
     answer:
-      'Heute nichts. Jeder Trainer legt sein Konto an und führt bis zu drei Mannschaften; pro Team kannst du fünf Trainer inklusive offener Einladungen dazuholen. Vereinskonditionen für das geplante Abo stehen noch nicht fest und werden vor dem Start bekannt gegeben.',
+      'Für einen einzelnen Trainer heute nichts: Er legt sein Konto an und führt bis zu drei Mannschaften, pro Team kommen fünf Trainer inklusive offener Einladungen dazu. Wer den Verein als Ganzes einbinden will – alle Mannschaften unter einem Dach, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich, und der wird für den Verein eingerichtet. Dafür gibt es bewusst keinen Listenpreis: Was ein Verein mit zwölf Jugendmannschaften braucht, ist etwas anderes als bei zwei. Kurze Anfrage über die Seite für Vereine genügt, dann bekommt ihr ein passendes Angebot.',
   },
   {
     question: 'Gibt es versteckte Kosten oder eine Testphase, die ausläuft?',

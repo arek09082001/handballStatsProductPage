@@ -2,38 +2,141 @@ import type { BoardFaqItem } from '@/components/custom-ui/board-faq';
 
 export const VEREINE_PAGE_PATH = '/fuer-vereine';
 
+/**
+ * Where every club CTA on this page goes.
+ *
+ * Deliberately the contact route and not the app registration: the club level
+ * is not self-service. A club is set up by hand, its administrators are
+ * appointed by hand, and the join code is handed over personally — so the next
+ * step for a club is a conversation, not a sign-up form. The `thema` parameter
+ * pre-fills the subject line of the contact form (see the contact form
+ * section), so a club enquiry arrives labelled as one.
+ */
+export const VEREINE_CONTACT_TOPIC = 'Vereinsanfrage';
+export const VEREINE_CONTACT_HREF = `/kontakt?thema=${encodeURIComponent(
+  VEREINE_CONTACT_TOPIC,
+)}`;
+
+/** Anchor of the enquiry band at the foot of the page. */
+export const VEREINE_CONTACT_ANCHOR = 'vereinsanfrage';
+
 export interface ClubBenefit {
   number: number;
   title: string;
   text: string;
 }
 
-/** What changes for a club when every team records the same way. */
+/**
+ * What changes for a club when every squad records the same way — written for
+ * the club that has ten youth teams and ten different systems, because that is
+ * the club this level exists for.
+ */
 export const CLUB_BENEFITS: ClubBenefit[] = [
   {
     number: 1,
-    title: 'Ein Standard über alle Mannschaften',
-    text: 'Wenn A-Jugend, Damen und Herren dieselben Aktionen erfassen, sind ihre Zahlen zum ersten Mal vergleichbar. Wechselt eine Spielerin von der Jugend zu den Damen, kommt ihre Entwicklung mit – statt im Ordner des alten Trainers zu bleiben.',
+    title: 'Zehn Jugendmannschaften, ein Schema',
+    text: 'Solange jeder Trainer sein eigenes System fährt – der eine Excel, der nächste einen Zettel, der dritte gar nichts –, hat der Verein am Ende nichts, was sich vergleichen lässt. Im Vereinsbereich erfassen alle Mannschaften dieselben Aktionen nach denselben Zählregeln. Die E-Jugend, die A-Jugend und die Damen stehen danach in einer Tabelle nebeneinander, ohne dass jemand etwas umrechnet.',
   },
   {
     number: 2,
-    title: 'Trainer teilen Spiele untereinander',
-    text: 'Ein Spiel lässt sich per Link oder E-Mail an Trainerkollegen geben; es landet in deren Statix-Posteingang. Wer im Trainerteam fest zusammenarbeitet, lädt Co-Trainer direkt ins Team ein – bis zu fünf pro Mannschaft, offene Einladungen mitgezählt.',
+    title: 'Eine Spielerin, eine Laufbahn',
+    text: 'Wechselt eine Spielerin von der C- in die B-Jugend und später zu den Damen, ist sie in Statix dieselbe Person – mit allen Stationen untereinander. Ihre Entwicklung bleibt im Verein, statt im Ordner des alten Trainers zu enden. Das Vereinsdashboard listet auf, wer schon in mehr als einer Mannschaft gespielt hat.',
   },
   {
     number: 3,
-    title: 'Der Vorstand sieht Entwicklung statt Ergebnisse',
-    text: 'Tabellenplätze erzählen wenig über Arbeit. Wurfquoten, Spielanteile und Entwicklungsverläufe über eine Saison zeigen, ob im Training etwas passiert – auch bei einer Mannschaft, die gerade Lehrjahre hat.',
+    title: 'Spieler in mehreren Kadern',
+    text: 'Eine A-Jugendliche, die bei den Damen mittrainiert und aushilft, steht in beiden Kadern – mit eigener Rückennummer, eigenem Terminplan und eigenen Zahlen pro Mannschaft. Für den Spieltag stellt der Trainer aus dem Kader den Spieltagskader zusammen; wer nicht dabei ist, taucht in der Auswertung des Spiels auch nicht auf.',
   },
   {
     number: 4,
-    title: 'Eltern und Fans bleiben dran',
-    text: 'Jedes Spiel lässt sich als öffentlicher Live-Ticker veröffentlichen – Link oder QR-Code, im Browser verfolgbar. Wer sonntags nicht in die Halle kommt, sieht trotzdem, wie es steht.',
+    title: 'Training und Zu-/Absagen im selben Werkzeug',
+    text: 'Termine, Trainingszeiten und Serientermine liegen dort, wo auch die Spiele liegen. Die Spieler sagen selbst zu oder ab – über einen Link, ohne Trainer-App –, tragen Urlaub, Krankheit oder Verletzung für mehrere Tage ein, und der Trainer sieht vor dem Training, wer kommt und von wem noch nichts kam. Keine zweite WhatsApp-Umfrage, keine dritte Liste.',
   },
   {
     number: 5,
+    title: 'Ihr seht früh, wo etwas fehlt',
+    text: 'Die Vereinsauswertung stellt Saison neben Saison und Mannschaft neben Mannschaft: Wurfquote, Paradenquote, Siebenmeter, Tempogegenstöße, technische Fehler, Zeitstrafen. Eine Jugend, die seit zwei Jahren dieselbe Wurfquote hat, fällt damit auf, bevor der Jahrgang durch ist – und eine, die Lehrjahre hat, ist trotz Tabellenplatz sichtbar besser geworden.',
+  },
+  {
+    number: 6,
     title: 'Trainerwechsel kosten keine Daten',
-    text: 'Hört ein Trainer auf, bleiben Kader, Spiele und Auswertungen im Verein bestehen, statt mit einem privaten Laptop zu verschwinden. Der Nachfolger übernimmt eine Saison mit Vorgeschichte.',
+    text: 'Hört ein Trainer auf, bleiben Kader, Spiele, Termine und Auswertungen im Verein. Der Nachfolger übernimmt eine Mannschaft mit Vorgeschichte, statt bei null anzufangen – und niemand muss darauf hoffen, dass noch jemand einen alten Laptop herausrückt.',
+  },
+];
+
+export interface ClubCapability {
+  title: string;
+  text: string;
+}
+
+/**
+ * The club area itself, screen by screen. Every entry describes something that
+ * exists in the app today — the club dashboard, the squads and players lists,
+ * the Auswertung with its season comparison, the careers list, the roles and
+ * the club's ticker sponsors.
+ */
+export const CLUB_CAPABILITIES: ClubCapability[] = [
+  {
+    title: 'Vereinsübersicht: der Montagmorgen',
+    text: 'Was am Wochenende passiert ist, steht oben: alle Ergebnisse aller Mannschaften, danach die nächsten Spiele und die Tabelle aller Kader – Spiele, Siege, Unentschieden, Niederlagen, Tordifferenz, Wurfquote, Paradenquote. Darunter, als Fußnote, was noch offen ist: Mannschaften ohne Cheftrainer, offene Einladungen, Spieler ohne Personenzuordnung.',
+  },
+  {
+    title: 'Alle Mannschaften an einer Stelle',
+    text: 'Jede Mannschaft mit Kadergröße, Cheftrainer, Trainerstab, letztem und nächstem Spiel. Ein Klick führt in den Kader, ein zweiter in ein einzelnes Spiel – ohne dass die Abteilungsleitung sich in fremde Konten einloggen oder bei jemandem nachfragen muss.',
+  },
+  {
+    title: 'Spieler über alle Kader hinweg',
+    text: 'Eine durchsuchbare Liste aller Spielerinnen und Spieler des Vereins, nach Name oder Mannschaft, mit Spielen, Toren, Vorlagen, Wurfquote und – für Torhüter – Paraden und Gegentoren. Von dort geht es direkt ins Spielerprofil mit Formkurve, Auszeichnungen und der vollständigen Laufbahn.',
+  },
+  {
+    title: 'Auswertung: Überblick und Saisonvergleich',
+    text: 'Zwei Ansichten auf dieselben Spiele. Der Überblick beschreibt eine Auswahl – eine Mannschaft, eine Saison oder alles: Siegquote, enge Spiele, Heim und Auswärts, wie die Tore fallen, dazu Bestenlisten für Torschützen, Vorlagen und Torhüter. Der Saisonvergleich stellt die Saisons einer Mannschaft nebeneinander, weil „sind wir besser als letztes Jahr“ nur in der Differenz eine Antwort hat.',
+  },
+  {
+    title: 'Laufbahnen im Verein',
+    text: 'Wer schon in mehr als einer Mannschaft gespielt hat, steht mit seinen Stationen im Vereinsdashboard. Der Nachwuchs, der den Sprung geschafft hat, ist damit belegbar – und nicht nur eine Erinnerung von jemandem, der lange genug dabei ist.',
+  },
+  {
+    title: 'KI-Analysen aller Mannschaften',
+    text: 'Die Analysen, die in den einzelnen Mannschaften entstehen – zu einem Spiel, einem Team, einem Spieler oder einem Turnier –, liegen in der Vereinsauswertung gesammelt. Spielernamen werden vor jeder Analyse pseudonymisiert; die KI arbeitet mit Kürzeln, nicht mit den Namen von Minderjährigen.',
+  },
+  {
+    title: 'Rollen: wer was sehen darf',
+    text: 'Drei Rollen, mehr gibt es nicht. Die Vereinsverwaltung darf alles im Verein, die sportliche Leitung liest alles und ändert nichts, ein Trainer sieht die Mannschaften des Vereins und arbeitet ansonsten wie bisher in seiner eigenen. Eine Mannschaft kommt nur in den Verein, wenn ihr Cheftrainer sie selbst einträgt.',
+  },
+  {
+    title: 'Vereinslogo und Sponsoren im Live-Ticker',
+    text: 'Jedes Spiel lässt sich als öffentlicher Live-Ticker veröffentlichen – Link oder QR-Code, im Browser, ohne App. Der Verein hinterlegt dafür einmal seine Sponsoren; jede Mannschaft, die keine eigenen hat, zeigt automatisch die des Vereins. Auf dem Ticker stehen Spielernamen standardmäßig abgekürzt.',
+  },
+];
+
+export interface RolloutStep {
+  number: number;
+  title: string;
+  text: string;
+}
+
+/** How a club actually gets started. Four steps, none of them a project. */
+export const ROLLOUT_STEPS: RolloutStep[] = [
+  {
+    number: 1,
+    title: 'Ihr schreibt uns',
+    text: 'Vereinsname, ungefähre Zahl der Mannschaften und wer den Verein verwalten soll. Mehr brauchen wir nicht, um euch zu sagen, ob und wie das bei euch passt.',
+  },
+  {
+    number: 2,
+    title: 'Wir legen den Verein an',
+    text: 'Der Vereinsbereich wird von uns eingerichtet – inklusive der Personen, die ihn verwalten. Ihr bekommt den Beitrittscode, ein zehnstelliges Geheimnis, das ihr jederzeit neu erzeugen könnt.',
+  },
+  {
+    number: 3,
+    title: 'Die Trainer tragen ihre Mannschaft ein',
+    text: 'Jeder Cheftrainer legt sein Konto an – kostenlos, in zwei Minuten – und trägt den Beitrittscode in den Mannschaftseinstellungen ein. Damit gehört seine Mannschaft zum Verein. Kein Import, kein Stichtag, keine Schulung: ihr könnt mit zwei Mannschaften anfangen und im Winter die restlichen dazunehmen.',
+  },
+  {
+    number: 4,
+    title: 'Ab dem ersten Spiel steht die Übersicht',
+    text: 'Sobald eine Mannschaft ein Spiel beendet, füllt sich die Vereinsübersicht. Nichts muss nachgetragen werden, niemand pflegt eine zweite Tabelle – die Vereinsebene ist eine Sicht auf die Daten, die die Trainer ohnehin erfassen.',
   },
 ];
 
@@ -42,12 +145,12 @@ export interface ClubObjection {
   answer: string;
 }
 
-/** The two sentences a board actually says – answered without dodging. */
+/** The sentences that actually get said in a Vorstandssitzung – with answers. */
 export const CLUB_OBJECTIONS: ClubObjection[] = [
   {
-    question: '„Wir haben kein Budget.“',
+    question: '„Was kostet das denn?“',
     answer:
-      'Dann kostet es auch nichts. Statix ist aktuell kostenlos nutzbar, es gibt keinen Bezahlvorgang in der App und keine Rechnung, die im Kassenbericht auftauchen würde. Kein Trainer muss einen Antrag stellen, kein Vorstand einen Beschluss fassen – wer anfangen will, fängt an. Später ist ein Abo für 3,99 € im Monat geplant; die Vereinskonditionen gebe ich vor dem Start bekannt, rechtzeitig genug für eure Haushaltsplanung.',
+      'Auf dieser Seite steht bewusst kein Preisschild. Ein Verein mit zwölf Jugendmannschaften braucht etwas anderes als einer mit zwei, und eine Zahl, die für beide gilt, wäre für einen von beiden falsch. Schreibt uns, wie viele Mannschaften ihr einbinden wollt und was ihr damit vorhabt – dann bekommt ihr ein Angebot, das zu eurem Verein passt, rechtzeitig genug für eure Haushaltsplanung. Für den einzelnen Trainer bleibt der Einstieg unabhängig davon kostenlos.',
   },
   {
     question: '„Unsere Trainer sind nicht technikaffin.“',
@@ -55,46 +158,81 @@ export const CLUB_OBJECTIONS: ClubObjection[] = [
       'Das ist der Normalfall, nicht die Ausnahme. Statix ist für einen Trainer gebaut, der nebenbei coacht: Jede Aktion ist ein Tap, es gibt keine Schulung und keine Einrichtung, die jemand für den Verein übernehmen müsste. Wer will, fängt mit dem Nötigsten an – Tore und Würfe – und lässt alles andere liegen. Und wer erstmal nur zuschauen will, öffnet die Live-Demo ohne Account.',
   },
   {
+    question: '„Wir haben doch schon eine Vereinssoftware.“',
+    answer:
+      'Vermutlich eine für Mitglieder, Beiträge und Abteilungen – und die soll bleiben, wo sie ist. Statix macht das Gegenteil davon: was auf dem Feld und im Training passiert. Kader statt Mitgliederliste, Trainingsbeteiligung statt Beitragsstand, Wurfquote statt Rechnungslauf. Beides nebeneinander ist die Regel, nicht die Ausnahme.',
+  },
+  {
     question: '„Wir dürfen Spielerdaten nicht einfach irgendwo eingeben.“',
     answer:
-      'Richtig, und deshalb ist das geregelt. Für Spielerdaten, die ihr eigenverantwortlich eingebt, ist Statix Auftragsverarbeiter nach Art. 28 DSGVO; einen Vertrag zur Auftragsverarbeitung (AVV) stellen wir auf Anforderung bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, geteilte Berichte lassen sich zurückziehen, und welche Dienstleister beteiligt sind, steht vollständig in den AGB und der Datenschutzerklärung.',
+      'Richtig, und deshalb ist das geregelt. Für Spielerdaten, die ihr eigenverantwortlich eingebt, ist Statix Auftragsverarbeiter nach Art. 28 DSGVO; einen Vertrag zur Auftragsverarbeitung (AVV) stellen wir auf Anforderung bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, im öffentlichen Live-Ticker stehen sie standardmäßig abgekürzt, geteilte Berichte lassen sich zurückziehen, und welche Dienstleister beteiligt sind, steht vollständig in den AGB und der Datenschutzerklärung.',
   },
   {
     question: '„Und wenn wir nach einer Saison wieder aufhören?“',
     answer:
-      'Dann hört ihr auf. Es gibt keine Mindestlaufzeit und nichts zu kündigen. Auswertungen könnt ihr als PDF exportieren und behalten, geteilte Links wieder deaktivieren.',
+      'Dann hört ihr auf. Auswertungen könnt ihr als PDF exportieren und behalten, geteilte Links wieder deaktivieren, und die Mannschaften bleiben ihren Trainern erhalten – der Vereinsbereich ist eine Sicht darauf, kein Käfig darum.',
   },
 ];
 
 export const VEREINE_FAQS: BoardFaqItem[] = [
   {
-    question: 'Was kostet eine Handball-Statistik-App für einen Verein?',
+    question: 'Was ist der Vereinsbereich von Statix?',
     answer:
-      'Statix kostet aktuell nichts – es gibt keinen Bezahlvorgang in der App. Jeder Trainer legt sein Konto an und führt bis zu drei Mannschaften, pro Team kommen bis zu fünf Trainer inklusive offener Einladungen dazu. Geplant ist später ein Abo für 3,99 € im Monat; Vereinskonditionen werden vor dem Start bekannt gegeben.',
+      'Eine Ebene über den einzelnen Mannschaften. Alle Kader eines Vereins hängen unter einem Dach: Es gibt eine Vereinsübersicht mit den Ergebnissen und der Tabelle aller Mannschaften, eine vereinsweite Spielerliste, eine Auswertung mit Saisonvergleich, die Laufbahnen der Spieler über mehrere Mannschaften und gesammelte KI-Analysen. Die einzelnen Trainer arbeiten dabei weiter in ihrer eigenen Mannschaft wie bisher.',
   },
   {
-    question: 'Wie bekommen wir alle Mannschaften auf denselben Stand?',
+    question: 'Für welche Vereine lohnt sich das?',
     answer:
-      'Jeder Trainer legt sein eigenes Konto und seine Mannschaft an – es braucht keine zentrale Einrichtung durch den Verein. Weil alle dieselben Aktionen erfassen, sind die Auswertungen trotzdem vergleichbar. Spiele lassen sich zwischen Trainern teilen, ein Trainerteam kann fest zusammenarbeiten.',
+      'Vor allem für Vereine mit vielen Jugendmannschaften, die einheitlich Statistiken führen wollen – von der Minis-Mannschaft bis zur A-Jugend und weiter in den Seniorenbereich. Je mehr Mannschaften und je mehr Übergänge zwischen ihnen es gibt, desto mehr entsteht erst durch den gemeinsamen Standard: vergleichbare Zahlen, durchgehende Spielerlaufbahnen und eine Abteilungsleitung, die nicht bei acht Trainern einzeln nachfragen muss.',
+  },
+  {
+    question: 'Was kostet Statix für einen Verein?',
+    answer:
+      'Dafür gibt es kein Preisschild von der Stange. Was ein Verein braucht, hängt an der Zahl der Mannschaften und daran, was ihr damit vorhabt – deshalb machen wir euch nach einer kurzen Anfrage ein Angebot, statt hier eine Zahl zu nennen, die für die meisten Vereine falsch wäre. Für einzelne Trainerinnen und Trainer bleibt der Einstieg kostenlos, ohne Kreditkarte.',
+  },
+  {
+    question: 'Wie bekommen wir alle Mannschaften in den Verein?',
+    answer:
+      'Über einen Beitrittscode. Wir legen den Verein an und geben euch den Code; jeder Cheftrainer trägt ihn in den Einstellungen seiner Mannschaft ein und gehört damit dazu. Der Weg geht bewusst vom Trainer aus – die Mannschaft gehört ihm, also holt ihn niemand von außen hinein. Den Code könnt ihr jederzeit neu erzeugen.',
+  },
+  {
+    question: 'Können Spieler in mehreren Mannschaften stehen?',
+    answer:
+      'Ja. Eine A-Jugendliche, die bei den Damen aushilft, steht in beiden Kadern – jeweils mit eigener Rückennummer, eigenem Terminplan und eigenen Zahlen. Weil beide Kaderplätze zur selben Person gehören, laufen ihre Stationen trotzdem als eine Laufbahn zusammen, und beim Wechsel in die nächste Altersklasse geht nichts verloren.',
+  },
+  {
+    question: 'Wie behalten wir die Trainingsbeteiligung im Blick?',
+    answer:
+      'Jede Mannschaft führt ihre Termine in Statix: Training, Spiele und alles dazwischen, auch als Serie. Die Spieler sagen selbst zu oder ab – über einen Beitrittslink, ohne eigene Trainer-App – und tragen längere Abwesenheiten wie Urlaub, Krankheit oder Verletzung als Zeitraum ein, statt jeden einzelnen Termin abzusagen. Der Trainerstab sieht die vollständige Teilnahmeliste inklusive derer, von denen noch keine Rückmeldung kam; Absagegründe bleiben zwischen Spieler und Trainerteam.',
+  },
+  {
+    question: 'Wer im Verein darf welche Daten sehen?',
+    answer:
+      'Es gibt drei Rollen. Die Vereinsverwaltung hat Zugriff auf alle Mannschaften des Vereins, die sportliche Leitung liest alles und ändert nichts, und ein Trainer erreicht die Mannschaften des Vereins, arbeitet aber weiter in seiner eigenen. Wer keine dieser Rollen hat, sieht den Vereinsbereich nicht.',
   },
   {
     question: 'Wie ist der Datenschutz für Spielerdaten geregelt?',
     answer:
-      'Für die Spielerdaten, die ihr eingebt, handelt Statix als Auftragsverarbeiter im Sinne von Art. 28 DSGVO und stellt auf Anforderung einen AVV bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, sodass die Auswertung mit neutralen Kürzeln arbeitet. Eingesetzte Dienstleister und Drittlandübermittlungen sind in den AGB und der Datenschutzerklärung benannt.',
+      'Für die Spielerdaten, die ihr eingebt, handelt Statix als Auftragsverarbeiter im Sinne von Art. 28 DSGVO und stellt auf Anforderung einen AVV bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, sodass die Auswertung mit neutralen Kürzeln arbeitet. Im öffentlichen Live-Ticker erscheinen Namen standardmäßig abgekürzt – bei Jugendmannschaften sind es die Namen von Minderjährigen. Eingesetzte Dienstleister und Drittlandübermittlungen sind in den AGB und der Datenschutzerklärung benannt.',
   },
   {
-    question: 'Können mehrere Trainer gleichzeitig an einer Mannschaft arbeiten?',
+    question: 'Ersetzt Statix unsere Vereinsverwaltung?',
     answer:
-      'Ja. Du lädst Co-Trainer fest in dein Team ein – bis zu fünf pro Mannschaft, offene Einladungen zählen mit. Zusätzlich kannst du einzelne Spiele mit Trainerkollegen teilen, die dann nur dieses Spiel sehen.',
-  },
-  {
-    question: 'Brauchen unsere Trainer eine Schulung?',
-    answer:
-      'Nein. Die Erfassung ist ein Tap pro Aktion, ein Konto ist in zwei Minuten angelegt. Wer sich das vorher ansehen möchte, startet die Live-Demo ohne Account – die läuft mit echten Spieldaten im Browser.',
+      'Nein, und das soll es auch nicht. Mitgliederverwaltung, Beiträge und Abteilungsorganisation bleiben in eurer bestehenden Software. Statix deckt ab, was dort nicht vorkommt: Kader, Termine und Trainingsbeteiligung, die Live-Erfassung der Spiele und alle Auswertungen daraus.',
   },
   {
     question: 'Was passiert, wenn ein Trainer den Verein verlässt?',
     answer:
-      'Die Mannschaft und ihre Spiele bleiben in Statix bestehen. Über das Trainerteam kann ein Nachfolger übernehmen, statt bei null anzufangen – und ihr seid nicht darauf angewiesen, dass jemand einen alten Laptop herausrückt.',
+      'Die Mannschaft und ihre Spiele bleiben bestehen. Über den Trainerstab oder die Vereinsverwaltung übernimmt ein Nachfolger, statt bei null anzufangen – und ihr seid nicht darauf angewiesen, dass jemand eine private Datei herausgibt.',
+  },
+  {
+    question: 'Brauchen unsere Trainer eine Schulung?',
+    answer:
+      'Nein. Die Erfassung ist ein Tap pro Aktion, ein Konto ist in zwei Minuten angelegt, und der Beitritt zum Verein ist ein Code in einem Eingabefeld. Wer sich das vorher ansehen möchte, startet die Live-Demo ohne Account – die läuft mit echten Spieldaten im Browser.',
+  },
+  {
+    question: 'Funktioniert das auch in Hallen ohne Netz?',
+    answer:
+      'Ja. Spiele werden offline erfasst und synchronisieren sich, sobald das Gerät wieder online ist. Statix lässt sich außerdem als App auf dem Homescreen installieren, ohne den Umweg über einen App Store.',
   },
 ];
