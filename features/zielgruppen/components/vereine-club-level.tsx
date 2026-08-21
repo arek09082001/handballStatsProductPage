@@ -78,17 +78,28 @@ export default function VereineClubLevel() {
           })}
         </div>
 
-        <BoardScreenshot
-          src='/saison-uebersicht-kennzahlen.jpg'
-          alt='Saisonübersicht mit Kennzahlen einer Handball-Mannschaft in der Statix App'
-          width={2560}
-          height={1509}
-          label='Kennzahlen über eine ganze Saison — im Verein für jede Mannschaft, nebeneinander'
-          tone='court'
-          pin='tape'
-          className='mx-auto mt-14 max-w-4xl'
-          sizes='(max-width: 1024px) 100vw, 60vw'
-        />
+        <div className='mt-14 grid gap-8 lg:grid-cols-2'>
+          <BoardScreenshot
+            src='/verein-auswertung.png'
+            alt='Vereinsauswertung mit Kennzahlen aller Handball-Mannschaften eines Vereins'
+            width={2560}
+            height={2000}
+            label='Die Auswertung des Vereins: jede Saison, jede Mannschaft nebeneinander'
+            tone='court'
+            pin='tape'
+            sizes='(max-width: 1024px) 100vw, 45vw'
+          />
+          <BoardScreenshot
+            src='/verein-spieler.png'
+            alt='Vereinsweite Spielerliste aller Mannschaften eines Handballvereins'
+            width={2560}
+            height={2000}
+            label='Alle Spielerinnen und Spieler des Vereins, über alle Kader hinweg'
+            tone='court'
+            pin='magnet'
+            sizes='(max-width: 1024px) 100vw, 45vw'
+          />
+        </div>
       </div>
     </section>
   );

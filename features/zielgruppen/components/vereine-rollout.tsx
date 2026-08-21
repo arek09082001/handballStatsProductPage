@@ -1,6 +1,5 @@
 import {
   Grain,
-  MarkerArrow,
   PlayerMagnet,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
@@ -30,9 +29,13 @@ export default function VereineRollout() {
           description='Kein Projekt, kein Stichtag, kein Datenimport. Ihr könnt mit zwei Mannschaften anfangen und den Rest nachziehen, wenn es passt.'
         />
 
+        {/* No connecting arrow between the steps: in a two-column grid it can
+            only point from one step to its right-hand neighbour, which is the
+            wrong direction for half the sequence and reads as decoration. The
+            numbered magnets carry the order. */}
         <ol className='mt-12 grid gap-8 sm:grid-cols-2'>
-          {ROLLOUT_STEPS.map((step, index) => (
-            <li key={step.number} className='relative flex items-start gap-4'>
+          {ROLLOUT_STEPS.map((step) => (
+            <li key={step.number} className='flex items-start gap-4'>
               <PlayerMagnet number={step.number} size='md' className='mt-0.5 shrink-0' />
               <div>
                 <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
@@ -42,14 +45,6 @@ export default function VereineRollout() {
                   {step.text}
                 </p>
               </div>
-              {index === 0 ? (
-                <MarkerArrow
-                  variant='curve'
-                  color='marker'
-                  aria-hidden
-                  className='pointer-events-none absolute -right-6 top-2 hidden h-12 w-20 sm:block'
-                />
-              ) : null}
             </li>
           ))}
         </ol>

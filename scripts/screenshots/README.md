@@ -36,6 +36,35 @@ Woanders hin:
 STATIX_URL=http://localhost:3000 node scripts/screenshots/capture.mjs explore
 ```
 
+## Die Vereins-Screenshots (`--only verein`)
+
+Die Gruppe `verein` (`verein-uebersicht.png`, `verein-mannschaften.png`,
+`verein-spieler.png`, `verein-auswertung.png`, `verein-saisonvergleich.png`,
+`verein-laufbahnen.png`) lässt sich **nicht** gegen die Live-Demo aufnehmen:
+Der Vereinsbereich vergleicht Mannschaften miteinander, und die Demo hat genau
+eine. Dafür braucht es eine lokale Instanz mit mehreren Kadern unter einem
+Verein — im App-Repo:
+
+```bash
+npm run db:setup
+npm run db:seed                      # Trainer-Saison + ein Verein mit einer Mannschaft
+node scripts/seed-club-demo.mjs      # sieben weitere Kader, Laufbahnen, zwei Saisons
+npm run build && npm start           # Produktionsbuild: kein Dev-Overlay im Bild
+```
+
+Und hier:
+
+```bash
+STATIX_URL=http://localhost:3000 \
+STATIX_EMAIL=club-admin@statix-app.de \
+STATIX_PASSWORD='StatixDemo!2026' \
+node scripts/screenshots/capture.mjs capture --only verein
+```
+
+Wichtig ist die **Anmeldung als Vereinsverwaltung**: Ein Trainerkonto ohne
+Vereinsrolle wird auf `/games` umgeleitet, und die Aufnahme schriebe dann die
+falsche Seite nach `public/`.
+
 ## Ablauf
 
 `explore` ist der erste Schritt: es besucht die Hauptrouten, hält Überschriften,

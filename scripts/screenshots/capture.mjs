@@ -240,6 +240,13 @@ const PHONE = { viewport: { width: 390, height: 844 }, scale: 2, mobile: true };
 
 const EXPLORE_ROUTES = [
   '/games',
+  // The club area. Only reachable for an account with a club role — sign in as
+  // the club admin the app's seed creates (`club-admin@statix-app.de`), not as
+  // the coach, or every one of these answers with a redirect.
+  '/club',
+  '/club/teams',
+  '/club/players',
+  '/club/insights',
   '/players',
   '/team',
   '/tournaments',
@@ -559,6 +566,44 @@ const SHOTS = [
   {
     group: 'teilen', file: 'spielerumfragen.png', ...TABLET,
     route: () => '/surveys',
+  },
+
+  // ── The club area, for /fuer-vereine ─────────────────────────────────────
+  // Shot as the club admin (STATIX_EMAIL=club-admin@statix-app.de) against a
+  // local instance seeded with `npm run db:seed && node
+  // scripts/seed-club-demo.mjs` in the app repo — the club screens are about
+  // comparing squads, and the public demo has exactly one.
+  {
+    group: 'verein', file: 'verein-uebersicht.png', ...TABLET_TALL,
+    route: () => '/club',
+    note: 'The Monday overview: every squad\'s results, coming fixtures, table.',
+  },
+  {
+    group: 'verein', file: 'verein-mannschaften.png', ...TABLET_TALL,
+    route: () => '/club/teams',
+    note: 'Every squad of the club with roster size, staff and next fixture.',
+  },
+  {
+    group: 'verein', file: 'verein-spieler.png', ...TABLET_TALL,
+    route: () => '/club/players',
+    note: 'Club-wide player list across all squads, searchable.',
+  },
+  {
+    group: 'verein', file: 'verein-auswertung.png', ...TABLET_TALL,
+    route: () => '/club/insights',
+    note: 'Club Auswertung: record, rates, how the goals are made.',
+  },
+  {
+    group: 'verein', file: 'verein-saisonvergleich.png', ...TABLET_TALL,
+    route: () => '/club/insights',
+    prepare: (page) => tap(page, 'Saisonvergleich'),
+    note: 'The seasons of one squad side by side.',
+  },
+  {
+    group: 'verein', file: 'verein-laufbahnen.png', ...TABLET,
+    route: () => '/club',
+    section: 'Laufbahnen im Verein',
+    note: 'People who have played in more than one squad of the club.',
   },
 
   // ── Phone: how a coach actually holds it on the bench ────────────────────

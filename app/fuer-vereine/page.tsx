@@ -32,7 +32,7 @@ export const metadata: Metadata = createPageMetadata({
     'handball nachwuchs statistik verein',
     'handball trainerteam software',
   ],
-  imagePath: '/gameListOverview.png',
+  imagePath: '/verein-uebersicht.png',
 });
 
 /**
@@ -77,7 +77,7 @@ export default function Page() {
         name='Handball-Statistik-App für Vereine & Jugendabteilungen'
         description='Wie ein Handballverein mit Statix alle Mannschaften auf einen Standard bringt: gemeinsame Erfassung, Kader und Trainingsbeteiligung an einem Ort, Spielerlaufbahnen über alle Jugendmannschaften, eine Auswertung für die Abteilungsleitung und geregelter Datenschutz.'
         path={VEREINE_PAGE_PATH}
-        imagePath='/gameListOverview.png'
+        imagePath='/verein-uebersicht.png'
         breadcrumbs={[
           { name: 'Startseite', path: '/' },
           { name: 'Für Vereine', path: VEREINE_PAGE_PATH },

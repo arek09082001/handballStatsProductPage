@@ -77,6 +77,17 @@ export default function VereineYouth() {
           />
         </div>
 
+        <BoardScreenshot
+          src='/verein-laufbahnen.png'
+          alt='Liste der Spielerlaufbahnen über mehrere Mannschaften eines Handballvereins'
+          width={2048}
+          height={650}
+          label='Wer den Sprung schon gemacht hat — im Vereinsdashboard, ohne Zutun'
+          pin='magnet'
+          className='mt-12'
+          sizes='(max-width: 1024px) 100vw, 70vw'
+        />
+
         <p className='mt-10 max-w-[70ch] text-base leading-7 text-ink/70'>
           Wie das für die einzelne Trainerin an der Bank aussieht — ein Tap pro
           Aktion, Entwicklung zeigen, Live-Ticker für die Eltern — steht auf der

@@ -54,9 +54,9 @@ export default function VereinePage() {
           label: 'Verein anfragen',
         }}
         screenshot={{
-          src: '/gameListOverview.png',
-          alt: 'Spielübersicht mehrerer Handball-Mannschaften in der Statix App',
-          label: 'Alle Spiele einer Mannschaft auf einen Blick',
+          src: '/verein-uebersicht.png',
+          alt: 'Vereinsübersicht mit allen Handball-Mannschaften eines Vereins in der Statix App',
+          label: 'Acht Mannschaften, ein Wochenende, eine Seite',
         }}
       />
 
