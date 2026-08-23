@@ -854,6 +854,8 @@
       "kicker": "Gut zu wissen",
       "title": "Häufige Fragen zu Handball-Statistiken",
       "description": "Alles, was du vor dem Start mit Handball-Statistiken wissen musst.",
+      "linkLead": "Noch tiefer im Thema:",
+      "linkLabel": "Alle Handball-Statistiken im Überblick",
       "items": [
         {
           "question": "Was ist Statix?",

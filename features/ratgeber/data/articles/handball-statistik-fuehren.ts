@@ -96,7 +96,7 @@ Eine Statistik funktioniert nicht, wenn die Tabelle voll ist, sondern wenn sie d
 - **Die Reihe hat keine Löcher.** Zehn erfasste Spiele in Folge sind mehr wert als dreißig mit Lücken.
 - **Deine Halbzeitansprache wird kürzer und konkreter.** Wer die Fehlerquote der ersten Halbzeit kennt, redet über einen Punkt statt über sieben.
 
-Ob du das auf Papier, in einer Tabelle oder in einer App machst, ist zweitrangig – wichtiger ist, dass ihr es durchhaltet. Für den Einstieg reicht die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage); wenn das Mitschreiben am Spielfeldrand zu langsam wird, übernimmt eine App die Erfassung per Tap, auch offline in der Halle. Welcher Weg zu deiner Situation passt, klärt der Vergleich [Zettel, Excel oder App](/ratgeber/handball-statistik-zettel-excel-app).`,
+Ob du das auf Papier, in einer Tabelle oder in einer App machst, ist zweitrangig – wichtiger ist, dass ihr es durchhaltet. Für den Einstieg reicht die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage); wenn das Mitschreiben am Spielfeldrand zu langsam wird, übernimmt eine App die Erfassung per Tap, auch offline in der Halle. Welcher Weg zu deiner Situation passt, klärt der Vergleich [Zettel, Excel oder App](/ratgeber/handball-statistik-zettel-excel-app). Welche Kennzahlen es darüber hinaus gibt und wie sie gerechnet werden, steht gesammelt unter [Handball-Statistiken](/handball-statistiken).`,
   modules: [
     {
       kind: 'answerBox',

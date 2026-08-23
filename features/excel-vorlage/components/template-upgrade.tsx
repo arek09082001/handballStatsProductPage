@@ -30,6 +30,17 @@ export default function TemplateUpgrade() {
           </p>
 
           <p className='mt-4 max-w-[62ch] text-base leading-7 text-ink/75'>
+            Welche Kennzahlen überhaupt zusammengehören – und welcher Richtwert
+            im Amateurbereich normal ist – steht im Überblick{' '}
+            <Link
+              href='/handball-statistiken'
+              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
+              Handball-Statistiken
+            </Link>
+            .
+          </p>
+
+          <p className='mt-4 max-w-[62ch] text-base leading-7 text-ink/75'>
             Was das kostet, steht auf der Seite{' '}
             <Link
               href='/preise'

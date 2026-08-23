@@ -122,6 +122,12 @@ export const SITE_LINKS = [
             'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams. Mit Live-Demo ohne Account.',
     },
     {
+        name: 'Handball-Statistiken',
+        path: '/handball-statistiken',
+        description:
+            'Alle Handball-Statistiken im Überblick: welche Kennzahlen es gibt, wie Wurfquote, Angriffseffektivität, Paradenquote und Tempoanteil berechnet werden, welche Richtwerte im Amateurbereich gelten und wie du sie live erfasst.',
+    },
+    {
         name: 'Preise',
         path: '/preise',
         description:
