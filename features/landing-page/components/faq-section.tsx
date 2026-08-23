@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Plus } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { Grain, SectionHeading } from './tactic';
@@ -62,6 +63,19 @@ export default function FaqSection() {
             );
           })}
         </div>
+
+        {/* The FAQ answers the product questions; the topic page answers the
+            handball ones (which metrics exist, how they are calculated). It is
+            the one in-content link from the landing page into that hub. */}
+        <p className='mt-10 text-sm leading-7 text-ink/70'>
+          {t('linkLead')}{' '}
+          <Link
+            href='/handball-statistiken'
+            className='group inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+            {t('linkLabel')}
+            <ArrowRight className='size-3.5 transition-transform duration-200 group-hover:translate-x-0.5' />
+          </Link>
+        </p>
       </div>
     </section>
   );

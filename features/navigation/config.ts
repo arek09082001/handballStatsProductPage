@@ -3,6 +3,7 @@ import {
   TAKTIKBOARD_NAV_LABEL,
   TAKTIKBOARD_PAGE_PATH,
 } from '@/features/handball-taktikboard/data/taktikboard-content';
+import { STATS_PAGE_PATH } from '@/features/handball-statistiken/data/stats-content';
 import { NavigationGroup, NavigationItem } from './interfaces';
 
 export const SITE_NAVBAR_OFFSET = 96;
@@ -73,6 +74,14 @@ const resourcesGroup: NavigationGroup = {
   labelKey: 'resources',
   items: [
     { ident: 11, href: '/ratgeber', labelKey: 'ratgeber' },
+    // Literal label like the taktikboard entry: the page's copy lives in its
+    // own data module, and "Handball-Statistiken" reads the same in both
+    // locales — no reason to grow `messages/*.json` for it.
+    {
+      ident: 24,
+      href: STATS_PAGE_PATH,
+      label: 'Handball-Statistiken',
+    },
     { ident: 12, href: '/was-ist-statix', labelKey: 'aboutStatix' },
     { ident: 20, href: '/erfahrungen', labelKey: 'experiences' },
     { ident: 22, href: '/kontakt', labelKey: 'contact' },

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ArticleCard from '../components/article-card';
 import RatgeberTools from '../components/ratgeber-tools';
 import { getArticlesByCategory } from '../data/articles';
@@ -49,7 +50,14 @@ export default function BlogIndexPage() {
           <p className='mx-auto mt-6 max-w-2xl text-base leading-8 text-chalk/75 sm:text-lg'>
             Praxisnahe Artikel zu Statistik, Training, Taktik und Spielanalyse –
             damit du dein Team datenbasiert und mit einem klaren Plan
-            weiterentwickelst.
+            weiterentwickelst. Wenn du bei den Zahlen anfängst, nimm den
+            Überblick{' '}
+            <Link
+              href='/handball-statistiken'
+              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
+              Handball-Statistiken
+            </Link>{' '}
+            als Startpunkt.
           </p>
 
           <p className='mt-7 font-hand text-xl text-primary'>

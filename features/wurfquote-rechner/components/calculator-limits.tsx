@@ -62,7 +62,14 @@ export default function CalculatorLimits() {
         </div>
 
         <p className='mt-10 max-w-[70ch] text-base leading-7 text-chalk/75'>
-          Die ausführliche Version steht im Ratgeber:{' '}
+          Welche Kennzahlen es neben der Wurfquote gibt und wie sie
+          zusammenhängen, steht im Überblick{' '}
+          <Link
+            href='/handball-statistiken'
+            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
+            Handball-Statistiken: erfassen, berechnen, verstehen
+          </Link>
+          . Die ausführliche Version zur Wurfquote steht im Ratgeber:{' '}
           <Link
             href='/ratgeber/wurfquote-berechnen'
             className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>

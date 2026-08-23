@@ -71,7 +71,7 @@ Die Matrix bewertet, wie gut jede Option das jeweilige Kriterium bedient – nic
 Unabhängig davon, wofür du dich entscheidest, gilt dieselbe Reihenfolge:
 
 1. **Entscheide zuerst, welche Entscheidung du treffen willst.** Willst du wissen, wer aus welcher Zone trifft? Ob eure Fehlerquote sinkt? Wer in der Schlussphase noch abschließt? Aus der Frage folgt die Zahl, nicht umgekehrt.
-2. **Erfasse vier Werte, nicht zwanzig.** Tore, Würfe, technische Fehler und ungefähre Einsatzzeit reichen für den größten Teil aller Trainerentscheidungen – siehe [Handball-Statistik führen](/ratgeber/handball-statistik-fuehren).
+2. **Erfasse vier Werte, nicht zwanzig.** Tore, Würfe, technische Fehler und ungefähre Einsatzzeit reichen für den größten Teil aller Trainerentscheidungen – siehe [Handball-Statistik führen](/ratgeber/handball-statistik-fuehren) und den Überblick aller [Handball-Statistiken](/handball-statistiken) mit Formeln und Richtwerten.
 3. **Schreib eure Zählregeln auf eine halbe Seite.** Zählt ein geblockter Ball als Wurf? Werden Siebenmeter getrennt geführt? Diese Blatt entscheidet darüber, ob eure Saison vergleichbar ist.
 4. **Setz einen festen Auswertungstermin.** Zehn Minuten am Montag. Ohne Termin passiert es nicht.
 5. **Halte zehn Spiele durch, bevor du das Werkzeug wechselst.** Der häufigste Fehler ist nicht die falsche Wahl, sondern der Wechsel nach vier Spielen – und danach fängt niemand ein drittes Mal an.`,
