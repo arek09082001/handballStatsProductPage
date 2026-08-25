@@ -19,6 +19,7 @@ import { Grain } from '@/features/landing-page/components/tactic';
 export default function DatenschutzContent() {
   const preambleT = useTranslations('legalPage.privacy.preamble');
   const responsiblePartyT = useTranslations('legalPage.privacy.responsibleParty');
+  const controllerRolesT = useTranslations('legalPage.privacy.controllerRoles');
   const processingOverviewT = useTranslations('legalPage.privacy.processingOverview');
   const legalBasisT = useTranslations('legalPage.privacy.legalBasis');
   const securityMeasuresT = useTranslations('legalPage.privacy.securityMeasures');
@@ -26,6 +27,7 @@ export default function DatenschutzContent() {
   const cookiesT = useTranslations('legalPage.privacy.cookies');
   const contactRequestsT = useTranslations('legalPage.privacy.contactRequests');
   const appSectionsT = useTranslations('legalPage.privacy.appSections');
+  const childrenT = useTranslations('legalPage.privacy.childrenAndMinors');
   const dataSubjectRightsT = useTranslations('legalPage.privacy.dataSubjectRights');
   const socialMediaT = useTranslations('legalPage.privacy.socialMedia');
   const dataRetentionT = useTranslations('legalPage.privacy.dataRetention');
@@ -34,10 +36,15 @@ export default function DatenschutzContent() {
   const processedDataTypes = processingOverviewT.raw('processedDataTypes') as string[];
   const affectedPeople = processingOverviewT.raw('affectedPeople') as string[];
   const purposes = processingOverviewT.raw('purposes') as string[];
+  const controllerRoleItems = controllerRolesT.raw('items') as Array<{
+    title: string;
+    description: string;
+  }>;
   const legalBasisItems = legalBasisT.raw('items') as Array<{
     title: string;
     description: string;
   }>;
+  const securityMeasures = securityMeasuresT.raw('measures') as string[];
   const webHostingSummaryItems = webHostingT.raw('summaryItems') as Array<{
     label: string;
     value: string;
@@ -49,6 +56,10 @@ export default function DatenschutzContent() {
   const analyticsItems = webHostingT.raw('analyticsItems') as Array<{
     label: string;
     value?: string;
+  }>;
+  const cookieTableItems = cookiesT.raw('tableItems') as Array<{
+    title: string;
+    description: string;
   }>;
   const cookieItems = cookiesT.raw('items') as Array<{
     title: string;
@@ -63,6 +74,10 @@ export default function DatenschutzContent() {
     paragraphs: string[];
     items?: Array<{ label: string; value?: string; url?: string }>;
   }>;
+  const childrenItems = childrenT.raw('items') as Array<{
+    title: string;
+    description: string;
+  }>;
   const dataSubjectRightsItems = dataSubjectRightsT.raw('items') as Array<{
     title: string;
     description: string;
@@ -70,6 +85,10 @@ export default function DatenschutzContent() {
   const socialMediaItems = socialMediaT.raw('instagramItems') as Array<{
     label: string;
     value?: string;
+  }>;
+  const dataRetentionTechnicalItems = dataRetentionT.raw('technicalItems') as Array<{
+    title: string;
+    description: string;
   }>;
   const dataRetentionItems = dataRetentionT.raw('items') as Array<{
     title: string;
@@ -126,7 +145,34 @@ export default function DatenschutzContent() {
                 {CLUB_CONFIG.email.main}
               </a>
             </p>
+            <p>
+              {responsiblePartyT('phoneLabel')}{' '}
+              <a href={`tel:${CLUB_CONFIG.phone.main}`} className={linkClass}>
+                {CLUB_CONFIG.phone.main}
+              </a>
+            </p>
           </div>
+          <p className={`mt-6 ${bodyText}`}>
+            <strong>{responsiblePartyT('dpoLabel')}</strong>{' '}
+            {responsiblePartyT('dpoText')}
+          </p>
+          <p className={`mt-4 ${bodyText}`}>
+            <strong>{responsiblePartyT('supervisoryLabel')}</strong>{' '}
+            {responsiblePartyT('supervisoryText')}
+          </p>
+        </Section>
+
+        {/* Wer ist wofür verantwortlich? — die Rollenteilung Verein/Anbieter,
+            ohne die der Rest der Erklärung nicht zu lesen ist. */}
+        <Section title={controllerRolesT('title')}>
+          <p className={bodyText}>{controllerRolesT('description')}</p>
+          <ul className={listClass}>
+            {controllerRoleItems.map(item => (
+              <li key={item.title} className={liClass}>
+                <strong>{item.title}</strong> - {item.description}
+              </li>
+            ))}
+          </ul>
         </Section>
 
         {/* Übersicht der Verarbeitungen */}
@@ -182,6 +228,14 @@ export default function DatenschutzContent() {
             <strong>{securityMeasuresT('connectionLabel')}</strong>{' '}
             {securityMeasuresT('connectionText')}
           </p>
+          <h3 className={h3Class}>{securityMeasuresT('measuresTitle')}</h3>
+          <ul className={listClass}>
+            {securityMeasures.map(measure => (
+              <li key={measure} className={liClass}>
+                {measure}
+              </li>
+            ))}
+          </ul>
         </Section>
 
         {/* Bereitstellung des Onlineangebots und Webhosting */}
@@ -209,31 +263,11 @@ export default function DatenschutzContent() {
               {webHostingT('vercelTitle')}
             </h3>
             <p className={`mt-4 ${bodyText}`}>{webHostingT('vercelDescription')}</p>
-            <div className={`mt-4 space-y-2 ${bodyText}`}>
-              <p>
-                <strong>{vercelItems[0].label}</strong> {vercelItems[0].value}
-              </p>
-              <p>
-                <strong>{vercelItems[1].label}</strong>{' '}
-                <a
-                  href='https://vercel.com/legal/dpa'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={linkClass}>
-                  https://vercel.com/legal/dpa
-                </a>
-              </p>
-              <p>
-                <strong>{vercelItems[2].label}</strong>{' '}
-                <a
-                  href='https://vercel.com/legal/dpa'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={linkClass}>
-                  https://vercel.com/legal/dpa
-                </a>
-              </p>
-            </div>
+            <LabelledList
+              items={vercelItems}
+              bodyText={bodyText}
+              linkClass={linkClass}
+            />
           </div>
 
           {/* Vercel Analytics & Speed Insights */}
@@ -242,37 +276,26 @@ export default function DatenschutzContent() {
               {webHostingT('analyticsTitle')}
             </h3>
             <p className={`mt-4 ${bodyText}`}>{webHostingT('analyticsDescription')}</p>
-            <div className={`mt-4 space-y-2 ${bodyText}`}>
-              <p>
-                <strong>{analyticsItems[0].label}</strong> {analyticsItems[0].value}
-              </p>
-              <p>
-                <strong>{analyticsItems[1].label}</strong> {analyticsItems[1].value}
-              </p>
-              <p>
-                <strong>{analyticsItems[2].label}</strong> {analyticsItems[2].value}
-              </p>
-              <p>
-                <strong>{analyticsItems[3].label}</strong>{' '}
-                <a
-                  href='https://vercel.com/legal/privacy-policy'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={linkClass}>
-                  https://vercel.com/legal/privacy-policy
-                </a>
-              </p>
-              <p>
-                <strong>{analyticsItems[4].label}</strong> {analyticsItems[4].value}
-              </p>
-            </div>
+            <LabelledList
+              items={analyticsItems}
+              bodyText={bodyText}
+              linkClass={linkClass}
+            />
           </div>
         </Section>
 
-        {/* Einsatz von Cookies */}
+        {/* Cookies und Speicherung auf dem Endgerät */}
         <Section title={cookiesT('title')}>
           <p className={bodyText}>{cookiesT('description')}</p>
-          <p className={`mt-4 ${bodyText}`}>
+          <h3 className={h3Class}>{cookiesT('tableTitle')}</h3>
+          <ul className={listClass}>
+            {cookieTableItems.map(item => (
+              <li key={item.title} className={liClass}>
+                <strong>{item.title}</strong> - {item.description}
+              </li>
+            ))}
+          </ul>
+          <p className={`mt-6 ${bodyText}`}>
             <strong>{cookiesT('storageDurationLabel')}</strong>{' '}
             {cookiesT('storageDurationText')}
           </p>
@@ -285,7 +308,7 @@ export default function DatenschutzContent() {
           </ul>
         </Section>
 
-        {/* Kontakt- und Anfrageverwaltung */}
+        {/* Kontakt-, Feedback- und Anfrageverwaltung */}
         <Section title={contactRequestsT('title')}>
           <p className={bodyText}>{contactRequestsT('description')}</p>
           <div className={`mt-4 space-y-2 ${bodyText}`}>
@@ -311,27 +334,27 @@ export default function DatenschutzContent() {
                 </p>
               ))}
               {section.items && (
-                <div className={`mt-4 space-y-2 ${bodyText}`}>
-                  {section.items.map(item => (
-                    <p key={item.label}>
-                      <strong>{item.label}</strong>{' '}
-                      {item.url ? (
-                        <a
-                          href={item.url}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={linkClass}>
-                          {item.url}
-                        </a>
-                      ) : (
-                        item.value
-                      )}
-                    </p>
-                  ))}
-                </div>
+                <LabelledList
+                  items={section.items}
+                  bodyText={bodyText}
+                  linkClass={linkClass}
+                />
               )}
             </div>
           ))}
+        </Section>
+
+        {/* Kinder und Jugendliche — Statix läuft in Jugendmannschaften, also
+            gehört das an eine eigene Überschrift und nicht in eine Fußnote. */}
+        <Section title={childrenT('title')}>
+          <p className={bodyText}>{childrenT('description')}</p>
+          <ul className={listClass}>
+            {childrenItems.map(item => (
+              <li key={item.title} className={liClass}>
+                <strong>{item.title}</strong> - {item.description}
+              </li>
+            ))}
+          </ul>
         </Section>
 
         {/* Rechte der betroffenen Personen */}
@@ -344,37 +367,44 @@ export default function DatenschutzContent() {
               </li>
             ))}
           </ul>
+          <p className={`mt-6 ${bodyText}`}>
+            <strong>{dataSubjectRightsT('howToLabel')}</strong>{' '}
+            {dataSubjectRightsT('howToText')}
+          </p>
+          <p className={`mt-4 ${bodyText}`}>
+            <strong>{dataSubjectRightsT('obligationLabel')}</strong>{' '}
+            {dataSubjectRightsT('obligationText')}
+          </p>
         </Section>
 
         {/* Präsenzen in sozialen Netzwerken */}
         <Section title={socialMediaT('title')}>
           <p className={bodyText}>{socialMediaT('description')}</p>
-          <p className={`mt-4 ${bodyText}`}>
-            <strong>{socialMediaItems[0].label}</strong> {socialMediaItems[0].value}{' '}
-            <strong>{socialMediaItems[1].label}</strong> {socialMediaItems[1].value}{' '}
-            <strong>{socialMediaItems[2].label}</strong>{' '}
-            <a
-              href='https://www.instagram.com'
-              target='_blank'
-              rel='noopener noreferrer'
-              className={linkClass}>
-              https://www.instagram.com
-            </a>
-            ;<strong> {socialMediaItems[3].label}</strong>{' '}
-            <a
-              href='https://privacycenter.instagram.com/policy/'
-              target='_blank'
-              rel='noopener noreferrer'
-              className={linkClass}>
-              https://privacycenter.instagram.com/policy/
-            </a>
-            . <strong>{socialMediaItems[4].label}</strong> {socialMediaItems[4].value}
-          </p>
+          <LabelledList
+            items={socialMediaItems}
+            bodyText={bodyText}
+            linkClass={linkClass}
+          />
         </Section>
 
-        {/* Allgemeine Informationen zur Datenspeicherung und Löschung */}
+        {/* Speicherdauer und Löschung */}
         <Section title={dataRetentionT('title')}>
           <p className={bodyText}>{dataRetentionT('description')}</p>
+          <p className={`mt-4 ${bodyText}`}>
+            <strong>{dataRetentionT('technicalLabel')}</strong>{' '}
+            {dataRetentionT('technicalText')}
+          </p>
+          <ul className={listClass}>
+            {dataRetentionTechnicalItems.map(item => (
+              <li key={item.title} className={liClass}>
+                <strong>{item.title}</strong> - {item.description}
+              </li>
+            ))}
+          </ul>
+          <p className={`mt-6 ${bodyText}`}>
+            <strong>{dataRetentionT('contentLabel')}</strong>{' '}
+            {dataRetentionT('contentText')}
+          </p>
           <p className={`mt-4 ${bodyText}`}>
             <strong>{dataRetentionT('retentionLabel')}</strong>{' '}
             {dataRetentionT('retentionText')}
@@ -411,6 +441,45 @@ export default function DatenschutzContent() {
         </Section>
       </div>
     </section>
+  );
+}
+
+/**
+ * The recurring "Label: value" block under a processing description. A row
+ * whose entry carries a `url` renders the URL itself as the link text, which is
+ * what a privacy policy wants — a reader must be able to copy the address out
+ * of a printout. Rendered from the array, never by index, so inserting a row
+ * (a new legal basis, a transfer basis) cannot silently shift a link onto the
+ * wrong label the way the previous hand-indexed markup did.
+ */
+function LabelledList({
+  items,
+  bodyText,
+  linkClass,
+}: {
+  items: Array<{ label: string; value?: string; url?: string }>;
+  bodyText: string;
+  linkClass: string;
+}) {
+  return (
+    <div className={`mt-4 space-y-2 ${bodyText}`}>
+      {items.map(item => (
+        <p key={item.label}>
+          <strong>{item.label}</strong>{' '}
+          {item.url ? (
+            <a
+              href={item.url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className={linkClass}>
+              {item.url}
+            </a>
+          ) : (
+            item.value
+          )}
+        </p>
+      ))}
+    </div>
   );
 }
 

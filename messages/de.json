@@ -28,177 +28,254 @@
       "title": "Allgemeine Geschäftsbedingungen (AGB)",
       "description": "Bedingungen für die Nutzung der Statix Handball-Statistik-App sowie der zugehörigen Webseiten und Dienste.",
       "transparencyBadge": "Fair und transparent",
-      "lastUpdated": "Letzte Aktualisierung: 10. Juli 2026"
+      "lastUpdated": "Letzte Aktualisierung: 25. August 2026"
     },
     "documentTitle": "Allgemeine Geschäftsbedingungen",
     "documentTitleShort": "AGB",
     "providerLabel": "Anbieter und Vertragspartner",
     "privacyLinkLabel": "Zur Datenschutzerklärung",
-    "odrLinkLabel": "https://ec.europa.eu/consumers/odr/",
+    "imprintLinkLabel": "Zum Impressum",
+    "withdrawalFormTitle": "Muster-Widerrufsformular",
+    "withdrawalFormHint": "(Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es zurück.)",
+    "withdrawalFormLines": [
+      "An: Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Deutschland – E-Mail: kontakt@statix-app.de",
+      "Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*): ______________________",
+      "Bestellt am (*) / erhalten am (*): ______________________",
+      "Name des/der Verbraucher(s): ______________________",
+      "Anschrift des/der Verbraucher(s): ______________________",
+      "Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier): ______________________",
+      "Datum: ______________________",
+      "(*) Unzutreffendes streichen."
+    ],
     "intro": {
       "title": "Präambel",
       "paragraph1": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB“) regeln das Vertragsverhältnis zwischen Ihnen als Nutzer (nachfolgend „Nutzer“ oder „Sie“) und dem Anbieter über die Nutzung der Handball-Statistik-App „Statix“ sowie der zugehörigen Webseiten, der Progressive Web App und der damit verbundenen Dienste (nachfolgend zusammen „Statix“ oder „Dienst“).",
       "paragraph2": "Die in diesen AGB verwendeten Begriffe und Bezeichnungen sind geschlechtsneutral zu verstehen.",
-      "updatedAt": "Stand: 10. Juli 2026"
+      "updatedAt": "Stand: 25. August 2026"
     },
     "sections": {
       "scope": {
         "title": "§ 1 Geltungsbereich und Anbieter",
         "paragraphs": [
           "Diese AGB gelten für die Nutzung von Statix in der zum Zeitpunkt des Vertragsschlusses jeweils gültigen Fassung. Abweichende Bedingungen des Nutzers werden nicht anerkannt, es sei denn, der Anbieter stimmt ihrer Geltung ausdrücklich in Textform zu.",
-          "Statix richtet sich an Trainerinnen und Trainer, Vereine sowie Handball-Teams und kann sowohl von Verbrauchern (§ 13 BGB) als auch von Unternehmern (§ 14 BGB) genutzt werden.",
-          "Anbieter und Vertragspartner ist der nachfolgend genannte Betreiber:"
+          "Statix richtet sich an Trainerinnen und Trainer, an Spielerinnen und Spieler, an Vereine sowie an Handball-Mannschaften und kann sowohl von Verbrauchern (§ 13 BGB) als auch von Unternehmern (§ 14 BGB) genutzt werden.",
+          "Anbieter und Vertragspartner ist der nachfolgend genannte Betreiber. Die vollständige Anbieterkennzeichnung nach § 5 DDG finden Sie im Impressum:"
         ],
         "items": []
       },
       "subject": {
         "title": "§ 2 Vertragsgegenstand und Leistungsbeschreibung",
         "paragraphs": [
-          "Statix ist eine browserbasierte Anwendung (Progressive Web App) zur Erfassung und Auswertung von Handball-Statistiken. Der Dienst umfasst insbesondere die folgenden Funktionen:"
+          "Statix ist eine browserbasierte Anwendung (Progressive Web App) zur Erfassung und Auswertung von Handball-Statistiken und zur Organisation des Mannschaftsalltags. Der Dienst umfasst insbesondere die folgenden Funktionen:"
         ],
         "items": [
           "Live-Erfassung von Spielereignissen (Tore, Würfe, Paraden, Strafen, Wechsel u. a.) in Echtzeit per Antippen – auch offline in der Halle, mit automatischer Synchronisation, sobald wieder eine Internetverbindung besteht.",
           "Automatische Berechnung von Spieler- und Mannschaftsstatistiken, Wurfquoten, Wurfbildern, Heatmaps und Entwicklungsverläufen.",
-          "Verwaltung von Teams, Kadern und Spielerinformationen sowie Einladung weiterer Trainer.",
-          "Anlegen von Turnieren mit mehreren Teams, automatischer Tabelle und Spielansetzungen.",
-          "Automatisierte, KI-gestützte Auswertung von Spielen, Teams und einzelnen Spielern.",
-          "Teilen von Auswertungen per Link sowie Export als PDF."
+          "Verwaltung von Mannschaften, Kadern und Spielerinformationen, Einladung weiterer Trainerinnen und Trainer sowie Beitritt von Spielerinnen und Spielern über einen Einladungslink.",
+          "Vereinsebene: Zusammenfassung mehrerer Mannschaften unter einem Verein, gemeinsame Verwaltung durch Vereinsadministratoren sowie mannschaftsübergreifende Laufbahnansicht einer Person.",
+          "Terminplanung: Trainings, Spiele und Mannschaftstermine mit Rückmeldungen (Zu-/Absagen), Erinnerungen, Abwesenheitsmeldungen (z. B. Urlaub, Krankheit, Verletzung) sowie ein abonnierbarer Kalender-Feed (iCalendar).",
+          "Push-Benachrichtigungen über den Browser für Termine und Erinnerungen, sofern der Nutzer sie ausdrücklich aktiviert.",
+          "Umfragen an den Kader über einen Link ohne Anmeldung.",
+          "Anlegen von Turnieren mit mehreren Mannschaften, automatischer Tabelle und Spielansetzungen.",
+          "Automatisierte, KI-gestützte Auswertung von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern.",
+          "Optionale öffentliche Live-Übertragung eines Spiels („Live-Ticker“) über einen nicht erratbaren Link, auf Wunsch mit Sponsorenlogos.",
+          "Teilen von Auswertungen per Link, Export des Spielberichts als PDF sowie Export einzelner Statistiktabellen als CSV."
         ],
         "paragraphsAfter": [
-          "Statix befindet sich in fortlaufender Entwicklung und in der Markteinführungsphase. Der konkrete Funktionsumfang ergibt sich aus der jeweils aktuellen Version des Dienstes sowie aus der Leistungsbeschreibung auf den Webseiten des Anbieters. Der Anbieter ist berechtigt, den Funktionsumfang weiterzuentwickeln, zu ändern oder einzelne Funktionen anzupassen, soweit dies für den Nutzer zumutbar ist."
+          "Statix befindet sich in fortlaufender Entwicklung und in der Markteinführungsphase. Der konkrete Funktionsumfang ergibt sich aus der jeweils aktuellen Version des Dienstes sowie aus der Leistungsbeschreibung auf den Webseiten des Anbieters. Der Anbieter ist berechtigt, den Funktionsumfang weiterzuentwickeln, zu ändern oder einzelne Funktionen anzupassen, soweit dies für den Nutzer zumutbar ist und der Kern der vertraglich geschuldeten Leistung erhalten bleibt.",
+          "Statix ist ein Werkzeug zur Dokumentation und Auswertung. Der Anbieter schuldet weder ein bestimmtes sportliches Ergebnis noch die Richtigkeit der vom Nutzer erfassten Daten."
         ]
       },
       "registration": {
         "title": "§ 3 Registrierung, Nutzerkonto und Nutzungsvoraussetzungen",
         "paragraphs": [
           "Die Nutzung des vollen Funktionsumfangs setzt die Registrierung eines Nutzerkontos mit einer gültigen E-Mail-Adresse und einem Passwort voraus. Eine unverbindliche Live-Demo einzelner Funktionen ist ohne Registrierung möglich.",
-          "Mit dem Absenden der Registrierung gibt der Nutzer ein Angebot auf Abschluss eines Nutzungsvertrags ab. Der Vertrag kommt mit der Freischaltung des Kontos durch den Anbieter zustande.",
+          "Mit dem Absenden der Registrierung gibt der Nutzer ein Angebot auf Abschluss eines Nutzungsvertrags ab. Der Vertrag kommt zustande, sobald der Nutzer seine E-Mail-Adresse über den zugesandten Bestätigungslink verifiziert und der Anbieter das Konto freigeschaltet hat.",
           "Der Nutzer ist verpflichtet, bei der Registrierung wahrheitsgemäße und vollständige Angaben zu machen und diese aktuell zu halten.",
-          "Die Registrierung ist natürlichen Personen gestattet, die das 16. Lebensjahr vollendet haben und unbeschränkt geschäftsfähig sind. Handelt der Nutzer für einen Verein oder eine Organisation, sichert er zu, zu deren Vertretung berechtigt zu sein.",
-          "Die Zugangsdaten sind geheim zu halten und vor dem Zugriff Dritter zu schützen. Der Nutzer informiert den Anbieter unverzüglich, sobald Anhaltspunkte für eine missbräuchliche Nutzung des Kontos bestehen."
+          "Die Registrierung ist natürlichen Personen gestattet, die das 16. Lebensjahr vollendet haben. Minderjährige zwischen 16 und 18 Jahren dürfen ein Konto nur mit Einwilligung ihrer Erziehungsberechtigten anlegen; mit der Registrierung bestätigt der minderjährige Nutzer, dass diese Einwilligung vorliegt. Für Personen unter 16 Jahren ist die Anlage eines eigenen Kontos nicht vorgesehen. Sie können als Kadermitglied von einer Trainerin oder einem Trainer erfasst werden, ohne selbst ein Konto zu besitzen; § 7 gilt insoweit entsprechend.",
+          "Handelt der Nutzer für einen Verein oder eine Organisation, sichert er zu, zu deren Vertretung berechtigt zu sein.",
+          "Die Zugangsdaten sind geheim zu halten und vor dem Zugriff Dritter zu schützen. Der Nutzer informiert den Anbieter unverzüglich, sobald Anhaltspunkte für eine missbräuchliche Nutzung des Kontos bestehen.",
+          "Ein Anspruch auf Registrierung besteht nicht. Der Anbieter kann die Freischaltung eines Kontos ohne Angabe von Gründen ablehnen."
         ],
         "items": []
       },
+      "roles": {
+        "title": "§ 4 Rollen: Trainer, Spielerinnen und Spieler, Verein",
+        "paragraphs": [
+          "Statix kennt unterschiedliche Rollen mit unterschiedlichen Rechten. Für die Rechte und Pflichten aus diesen AGB gilt:"
+        ],
+        "items": [
+          "Trainerinnen und Trainer legen Mannschaften an, erfassen Kader und Spiele und verwalten die Daten der Mannschaft. Sie entscheiden, welche Daten in Statix eingegeben und welche Inhalte öffentlich freigegeben werden.",
+          "Spielerinnen und Spieler können über einen Einladungslink ein eigenes Konto anlegen und ihre Kaderzeile beanspruchen. Sie sehen dann Termine, ihre eigenen Statistiken und Rückmeldungen und können eigene Angaben – etwa Abwesenheiten und die Anzeige ihres Namens auf öffentlichen Seiten – selbst steuern.",
+          "Vereinsadministratoren verwalten mehrere Mannschaften eines Vereins gemeinsam und können Daten über die Mannschaften hinweg einsehen, soweit die Mannschaften dem Verein zugeordnet sind."
+        ],
+        "paragraphsAfter": [
+          "Wird eine Mannschaft einem Verein zugeordnet, gehören die Daten der Mannschaft organisatorisch dem Verein und nicht dem einzelnen Trainerkonto. Schließt eine Trainerin oder ein Trainer das eigene Konto, bleibt eine Mannschaft mit weiteren Mitgliedern bestehen und wird an ein verbleibendes Mitglied übergeben (§ 12 Abs. 4).",
+          "Die Zuweisung einer Rolle begründet kein Recht des Anbieters, in das Innenverhältnis zwischen Verein, Trainern und Spielern einzugreifen. Streitigkeiten darüber, wer welche Daten einsehen oder ändern darf, sind zwischen den Beteiligten zu klären."
+        ]
+      },
       "availability": {
-        "title": "§ 4 Verfügbarkeit, Wartung und Änderungen des Dienstes",
+        "title": "§ 5 Verfügbarkeit, Wartung und Änderungen des Dienstes",
         "paragraphs": [
           "Der Anbieter bemüht sich um eine möglichst unterbrechungsfreie Verfügbarkeit des Dienstes, schuldet jedoch keine bestimmte Verfügbarkeit. Insbesondere können Wartungsarbeiten, technische Störungen, Kapazitätsgründe oder Umstände außerhalb des Einflussbereichs des Anbieters (z. B. höhere Gewalt oder Ausfälle von Drittanbietern) zu vorübergehenden Einschränkungen führen.",
-          "Statix ist offline-fähig. Während einer Offline-Nutzung erfasste Daten werden zunächst lokal auf dem Endgerät gespeichert und bei bestehender Internetverbindung mit den Servern des Anbieters synchronisiert. Für einen erfolgreichen Abgleich sind eine funktionsfähige Internetverbindung und ein kompatibles Endgerät erforderlich.",
+          "Statix ist offline-fähig. Während einer Offline-Nutzung erfasste Daten werden zunächst lokal auf dem Endgerät gespeichert und bei bestehender Internetverbindung mit den Servern des Anbieters synchronisiert. Für einen erfolgreichen Abgleich sind eine funktionsfähige Internetverbindung und ein kompatibles Endgerät erforderlich. Werden die Browserdaten des Endgeräts gelöscht, bevor eine Synchronisation stattgefunden hat, gehen noch nicht übertragene Daten verloren.",
           "Da sich der Anbieter in der Markteinführungsphase befindet, kann es zu Weiterentwicklungen, Anpassungen und einzelnen Funktionsänderungen kommen. Über wesentliche Änderungen wird der Anbieter den Nutzer in angemessener Weise informieren.",
-          "Der Anbieter ist berechtigt, den Betrieb des Dienstes ganz oder teilweise einzustellen. Bei einer dauerhaften Einstellung wird der Anbieter den Nutzer mit angemessener Frist vorab informieren und ihm die Möglichkeit geben, seine Daten zu exportieren."
+          "Der Anbieter ist berechtigt, den Betrieb des Dienstes ganz oder teilweise einzustellen. Bei einer dauerhaften Einstellung wird der Anbieter den Nutzer mit einer Frist von mindestens 30 Tagen vorab informieren und ihm die Möglichkeit geben, seine Daten zu exportieren.",
+          "Der Anbieter kann die Nutzung einzelner Funktionen mengenmäßig begrenzen (z. B. die Anzahl der KI-Auswertungen je Mannschaft und Zeitraum), um einen stabilen Betrieb und eine faire Verteilung der Kapazitäten sicherzustellen. Die jeweils geltenden Grenzen werden in der Anwendung angezeigt."
         ],
         "items": []
       },
       "pricing": {
-        "title": "§ 5 Kostenlose und kostenpflichtige Leistungen",
+        "title": "§ 6 Kostenlose und kostenpflichtige Leistungen",
         "paragraphs": [
           "Der Dienst wird derzeit kostenlos bereitgestellt. Für die Registrierung und die aktuell verfügbaren Funktionen fallen keine Gebühren an; eine Zahlungspflicht besteht ohne ausdrückliche, gesonderte Vereinbarung nicht.",
-          "Der Anbieter beabsichtigt, künftig kostenpflichtige Abonnements („Abos“) insbesondere für Teams und Vereine anzubieten. Umfang, Preise, Abrechnungszeiträume und Leistungsdetails eines kostenpflichtigen Abos ergeben sich aus der jeweils gültigen Leistungs- und Preisübersicht im Bestellprozess.",
-          "Ein kostenpflichtiger Vertrag kommt erst zustande, wenn der Nutzer eine kostenpflichtige Leistung ausdrücklich auswählt, die Preisangaben bestätigt und den Bestellvorgang abschließt. Vor Abschluss eines solchen Vertrags wird der Nutzer über alle wesentlichen Vertragsbestandteile, insbesondere den Gesamtpreis, informiert.",
-          "Sämtliche Preise verstehen sich inklusive der jeweils geltenden gesetzlichen Umsatzsteuer, sofern eine solche anfällt."
+          "Der Anbieter beabsichtigt, künftig kostenpflichtige Abonnements („Abos“) insbesondere für Mannschaften und Vereine anzubieten. Umfang, Preise, Abrechnungszeiträume und Leistungsdetails eines kostenpflichtigen Abos ergeben sich aus der jeweils gültigen Leistungs- und Preisübersicht im Bestellprozess.",
+          "Ein kostenpflichtiger Vertrag kommt erst zustande, wenn der Nutzer eine kostenpflichtige Leistung ausdrücklich auswählt, die Preisangaben bestätigt und den Bestellvorgang über eine ausdrücklich als zahlungspflichtig gekennzeichnete Schaltfläche (§ 312j Abs. 3 BGB) abschließt. Vor Abschluss eines solchen Vertrags wird der Nutzer über alle wesentlichen Vertragsbestandteile, insbesondere den Gesamtpreis, informiert.",
+          "Sämtliche Preise verstehen sich als Endpreise. Der Anbieter weist Umsatzsteuer nur aus, soweit er hierzu verpflichtet ist; findet die Kleinunternehmerregelung nach § 19 UStG Anwendung, wird keine Umsatzsteuer ausgewiesen und ein entsprechender Hinweis in die Rechnung aufgenommen.",
+          "Bereits bestehende kostenlose Konten werden durch die Einführung kostenpflichtiger Leistungen nicht automatisch zahlungspflichtig. Wird eine bislang kostenlose Funktion künftig nur noch kostenpflichtig angeboten, informiert der Anbieter darüber mit angemessener Frist vorab; § 16 bleibt unberührt."
         ],
         "items": []
       },
       "obligations": {
-        "title": "§ 6 Pflichten und Verantwortlichkeit des Nutzers",
+        "title": "§ 7 Pflichten und Verantwortlichkeit des Nutzers",
         "paragraphs": [
           "Der Nutzer verpflichtet sich, Statix nur im Rahmen der geltenden Gesetze und dieser AGB zu nutzen.",
-          "Der Nutzer ist für alle Inhalte und Daten, die er in Statix eingibt, speichert oder verarbeitet, selbst verantwortlich. Dies gilt insbesondere für personenbezogene Daten Dritter, etwa von Spielerinnen und Spielern (z. B. Namen, Rückennummern, Positionen und Leistungsdaten).",
-          "Der Nutzer sichert zu, dass er berechtigt ist, die von ihm eingegebenen personenbezogenen Daten Dritter zu verarbeiten, und dass er über eine hierfür erforderliche Rechtsgrundlage (z. B. eine Einwilligung) verfügt. Betreffen die Daten Minderjährige, hat der Nutzer die erforderlichen Einwilligungen der Erziehungsberechtigten einzuholen.",
+          "Der Nutzer ist für alle Inhalte und Daten, die er in Statix eingibt, speichert oder verarbeitet, selbst verantwortlich. Dies gilt insbesondere für personenbezogene Daten Dritter, etwa von Spielerinnen und Spielern (z. B. Namen, Geburtsjahr oder Geburtsdatum, Rückennummern, Positionen, Leistungsdaten, Anwesenheiten und Abwesenheiten).",
+          "Der Nutzer sichert zu, dass er berechtigt ist, die von ihm eingegebenen personenbezogenen Daten Dritter zu verarbeiten, und dass er über eine hierfür erforderliche Rechtsgrundlage (z. B. eine Einwilligung oder eine Regelung in der Vereinssatzung) verfügt. Betreffen die Daten Minderjährige, hat der Nutzer die erforderlichen Einwilligungen der Erziehungsberechtigten einzuholen.",
+          "Trägt der Nutzer Angaben ein, aus denen sich der Gesundheitszustand einer Person ergibt – insbesondere eine Abwesenheit wegen Krankheit oder Verletzung sowie zugehörige Notizen –, verarbeitet er besondere Kategorien personenbezogener Daten im Sinne des Art. 9 DSGVO. Für solche Angaben hat der Nutzer vorab die ausdrückliche Einwilligung der betroffenen Person, bei Minderjährigen der Erziehungsberechtigten, einzuholen. Der Anbieter empfiehlt, auf freie Notizen zu Krankheit und Verletzung zu verzichten, soweit sie für die Trainingsplanung nicht erforderlich sind.",
           "Der Nutzer stellt den Anbieter von sämtlichen Ansprüchen Dritter frei, die aufgrund einer rechtswidrigen Eingabe oder Verarbeitung von Daten durch den Nutzer gegen den Anbieter geltend gemacht werden, einschließlich angemessener Kosten der Rechtsverteidigung. Dies gilt nicht, soweit der Nutzer die Rechtsverletzung nicht zu vertreten hat.",
-          "Dem Nutzer ist es untersagt, rechtswidrige, beleidigende oder rechtsverletzende Inhalte einzustellen, den Dienst missbräuchlich zu nutzen, Sicherheitsmechanismen zu umgehen oder die Software zurückzuentwickeln (Reverse Engineering), soweit dies nicht gesetzlich zwingend erlaubt ist."
+          "Dem Nutzer ist es untersagt, rechtswidrige, beleidigende oder rechtsverletzende Inhalte einzustellen, den Dienst missbräuchlich zu nutzen, Sicherheitsmechanismen zu umgehen, den Dienst automatisiert in einem Umfang abzufragen, der über die bestimmungsgemäße Nutzung hinausgeht, oder die Software zurückzuentwickeln (Reverse Engineering), soweit dies nicht gesetzlich zwingend erlaubt ist.",
+          "Der Anbieter darf Inhalte sperren oder entfernen und den Zugang vorübergehend einschränken, wenn ein begründeter Verdacht auf einen erheblichen Verstoß gegen diese AGB oder auf eine Rechtsverletzung besteht. Der Anbieter wird den Nutzer hierüber informieren und ihm, soweit möglich und zumutbar, Gelegenheit zur Stellungnahme geben."
         ],
         "items": []
       },
       "dataProtection": {
-        "title": "§ 7 Datenschutz und Auftragsverarbeitung",
+        "title": "§ 8 Datenschutz und Auftragsverarbeitung",
         "paragraphs": [
           "Der Anbieter verarbeitet personenbezogene Daten im Rahmen der geltenden Datenschutzgesetze. Einzelheiten zur Verarbeitung personenbezogener Daten ergeben sich aus der Datenschutzerklärung.",
-          "Soweit der Anbieter im Auftrag des Nutzers personenbezogene Daten Dritter (insbesondere Spielerdaten) verarbeitet, die der Nutzer eigenverantwortlich eingibt, handelt der Anbieter insoweit als Auftragsverarbeiter im Sinne des Art. 28 DSGVO. Auf Anforderung stellt der Anbieter dem Nutzer einen Vertrag zur Auftragsverarbeitung (AVV) zur Verfügung.",
+          "Soweit der Anbieter im Auftrag des Nutzers personenbezogene Daten Dritter (insbesondere Spieler-, Termin-, Abwesenheits- und Umfragedaten) verarbeitet, die der Nutzer eigenverantwortlich eingibt, handelt der Anbieter insoweit als Auftragsverarbeiter im Sinne des Art. 28 DSGVO; Verantwortlicher ist der Nutzer bzw. dessen Verein. Für die Daten des Nutzerkontos selbst und für den technischen Betrieb des Dienstes ist der Anbieter eigener Verantwortlicher.",
+          "Der Anbieter stellt auf Anforderung an die im Impressum genannte Adresse einen Vertrag zur Auftragsverarbeitung (AVV) nach Art. 28 Abs. 3 DSGVO nebst Anlagen zu den technischen und organisatorischen Maßnahmen und zu den eingesetzten Unterauftragsverarbeitern zur Verfügung. Vereine, die Daten von Jugendmannschaften erfassen, sollten diesen Vertrag vor der ersten Eingabe abschließen.",
           "Zur Erbringung des Dienstes setzt der Anbieter sorgfältig ausgewählte Dienstleister als Auftragsverarbeiter ein. Hierzu zählen insbesondere:"
         ],
         "items": [
-          "Supabase – Datenbank- und Speicherdienste",
-          "Vercel – Hosting und Betrieb der Webseiten und der Anwendung",
-          "Brevo (Sendinblue) – Versand von E-Mails",
-          "Anthropic – KI-gestützte Analysen",
-          "OpenAI – KI-gestützte Analysen"
+          "Supabase – Datenbank- und Dateispeicherdienste (Hosting-Region Frankfurt am Main)",
+          "Vercel – Hosting und Betrieb der Webseiten und der Anwendung sowie anonymisierte Reichweitenmessung",
+          "Brevo – Versand von E-Mails (Registrierungsbestätigungen, Erinnerungen, Kontaktanfragen, Newsletter)",
+          "Anthropic und OpenAI – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
+          "Die Push-Dienste der Browser-Hersteller (u. a. Google, Mozilla, Apple) – Zustellung aktivierter Push-Benachrichtigungen"
         ],
         "paragraphsAfter": [
-          "Bei der Nutzung einzelner Dienstleister kann es zu einer Übermittlung von Daten in Drittländer (z. B. USA) kommen. Der Anbieter trifft die hierfür erforderlichen Maßnahmen (z. B. EU-Standardvertragsklauseln). Weitere Informationen enthält die Datenschutzerklärung."
+          "Bei der Nutzung einzelner Dienstleister kann es zu einer Übermittlung von Daten in Drittländer (insbesondere die USA) kommen. Der Anbieter stützt diese Übermittlungen auf einen Angemessenheitsbeschluss der Europäischen Kommission (EU-U.S. Data Privacy Framework), soweit der jeweilige Dienstleister zertifiziert ist, und im Übrigen auf Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO. Weitere Informationen enthält die Datenschutzerklärung.",
+          "Der Anbieter wird den Nutzer über die Hinzuziehung eines neuen Unterauftragsverarbeiters mindestens 30 Tage vorab in Textform informieren; der Nutzer kann der Änderung aus wichtigem datenschutzrechtlichem Grund widersprechen."
         ]
       },
       "ai": {
-        "title": "§ 8 KI-gestützte Analysen",
+        "title": "§ 9 KI-gestützte Analysen",
         "paragraphs": [
-          "Statix bietet automatisierte, KI-gestützte Analysen von Spielen, Teams und Spielern an. Diese Analysen werden mithilfe von Diensten Dritter (insbesondere Anthropic und OpenAI) erstellt.",
-          "KI-generierte Auswertungen beruhen auf statistischen Verfahren und den vom Nutzer erfassten Daten. Sie können unvollständig, ungenau oder fehlerhaft sein und dienen ausschließlich zu Informations- und Unterstützungszwecken.",
-          "Die Analysen stellen keine verbindliche Handlungsempfehlung dar und ersetzen nicht die eigene Bewertung und Entscheidung des Nutzers. Der Anbieter übernimmt keine Gewähr für die Richtigkeit, Vollständigkeit oder Eignung der KI-gestützten Ergebnisse für einen bestimmten Zweck."
+          "Statix bietet automatisierte, KI-gestützte Analysen von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern an. Diese Analysen werden mithilfe von Diensten Dritter (insbesondere Anthropic und OpenAI) erstellt. Eine Analyse wird nie automatisch im Hintergrund erzeugt, sondern ausschließlich durch eine bewusste Aktion des Nutzers ausgelöst.",
+          "Vor der Übermittlung an den KI-Anbieter werden die Namen der Spielerinnen und Spieler durch bedeutungslose Kürzel ersetzt (Pseudonymisierung). Die Zuordnung der Kürzel zu den Personen verlässt den Dienst nicht. Einzelheiten beschreibt die Datenschutzerklärung.",
+          "Die Ergebnisse sind KI-generierte Inhalte im Sinne der Verordnung (EU) 2024/1689 (KI-Verordnung). Sie werden in der Anwendung als solche gekennzeichnet. KI-generierte Auswertungen beruhen auf statistischen Verfahren und den vom Nutzer erfassten Daten. Sie können unvollständig, ungenau oder fehlerhaft sein und dienen ausschließlich zu Informations- und Unterstützungszwecken.",
+          "Die Analysen stellen keine verbindliche Handlungsempfehlung dar und ersetzen nicht die eigene Bewertung und Entscheidung des Nutzers. Der Anbieter übernimmt keine Gewähr für die Richtigkeit, Vollständigkeit oder Eignung der KI-gestützten Ergebnisse für einen bestimmten Zweck.",
+          "Es findet keine automatisierte Entscheidung im Einzelfall einschließlich Profiling im Sinne des Art. 22 DSGVO statt, die gegenüber einer betroffenen Person rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt. Ob eine Spielerin oder ein Spieler aufgestellt, gefördert oder ausgewechselt wird, entscheidet allein die Trainerin oder der Trainer.",
+          "Der Nutzer ist nicht verpflichtet, die KI-Funktion zu verwenden; der übrige Funktionsumfang steht auch ohne sie zur Verfügung. Auf Anforderung deaktiviert der Anbieter die KI-Auswertung für eine Mannschaft oder einen Verein."
+        ],
+        "items": []
+      },
+      "publicSharing": {
+        "title": "§ 10 Öffentliche Freigaben und geteilte Inhalte",
+        "paragraphs": [
+          "Der Nutzer kann einzelne Inhalte über einen nicht erratbaren Link öffentlich zugänglich machen – insbesondere einen laufenden Live-Ticker sowie fertige Spielberichte. Ohne eine solche ausdrückliche Freigabe sind die Daten einer Mannschaft nur ihren Mitgliedern zugänglich.",
+          "Wer einen Inhalt freigibt, veröffentlicht damit personenbezogene Daten Dritter und ist hierfür verantwortlich. Der Nutzer stellt vor der Freigabe sicher, dass die betroffenen Spielerinnen und Spieler – bei Minderjährigen deren Erziehungsberechtigte – hiermit einverstanden sind.",
+          "Spielerinnen und Spieler mit eigenem Konto können in ihren Einstellungen festlegen, dass ihr Name auf öffentlichen Seiten nicht angezeigt wird. Diese Entscheidung geht einer weiter gefassten Einstellung der Mannschaft stets vor und kann von einer Trainerin oder einem Trainer nicht überschrieben werden.",
+          "Eine Freigabe kann jederzeit beendet werden; der Link ist danach nicht mehr abrufbar. Der Anbieter hat keinen Einfluss darauf, ob Dritte einen zuvor öffentlichen Inhalt kopiert, gespeichert oder in Suchmaschinen zwischengespeichert haben.",
+          "Sponsorenlogos, die der Nutzer für den Live-Ticker hochlädt, müssen frei von Rechten Dritter sein oder es muss eine entsprechende Nutzungserlaubnis vorliegen. § 7 Abs. 5 gilt entsprechend."
         ],
         "items": []
       },
       "ipRights": {
-        "title": "§ 9 Nutzungsrechte und geistiges Eigentum",
+        "title": "§ 11 Nutzungsrechte und geistiges Eigentum",
         "paragraphs": [
           "Sämtliche Rechte an der Software, den Webseiten, dem Design, den Marken, Logos und sonstigen Inhalten von Statix stehen dem Anbieter bzw. seinen Lizenzgebern zu.",
           "Der Anbieter räumt dem Nutzer für die Dauer des Vertrags ein einfaches, nicht ausschließliches, nicht übertragbares und nicht unterlizenzierbares Recht ein, Statix im vertraglich vorgesehenen Umfang zu nutzen.",
-          "Der Nutzer behält sämtliche Rechte an den von ihm eingegebenen Inhalten und Daten. Er räumt dem Anbieter das zur Erbringung des Dienstes erforderliche, einfache Nutzungsrecht ein, insbesondere zur Speicherung, Verarbeitung, Auswertung und Anzeige dieser Inhalte im Rahmen des Dienstes."
+          "Der Nutzer behält sämtliche Rechte an den von ihm eingegebenen Inhalten und Daten. Er räumt dem Anbieter das zur Erbringung des Dienstes erforderliche, einfache Nutzungsrecht ein, insbesondere zur Speicherung, Verarbeitung, Auswertung und Anzeige dieser Inhalte im Rahmen des Dienstes. Das Nutzungsrecht endet mit der Löschung der jeweiligen Inhalte.",
+          "Der Anbieter darf Daten in aggregierter und anonymisierter Form, die keinen Rückschluss auf einzelne Personen, Mannschaften oder Vereine zulassen, zur Verbesserung und statistischen Auswertung des Dienstes verwenden.",
+          "Eine Verwendung der Inhalte des Nutzers zum Training von KI-Modellen des Anbieters oder Dritter findet nicht statt."
         ],
         "items": []
       },
       "dataExport": {
-        "title": "§ 10 Datenexport und Löschung",
+        "title": "§ 12 Datenexport, Löschung und Kontoschließung",
         "paragraphs": [
-          "Der Nutzer kann seine in Statix erfassten Auswertungen im Rahmen der bereitgestellten Funktionen teilen und als PDF exportieren.",
-          "Nach Beendigung des Vertrags werden das Nutzerkonto und die zugehörigen Daten nach Maßgabe der gesetzlichen Vorgaben und der Datenschutzerklärung gelöscht, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Der Nutzer ist selbst dafür verantwortlich, benötigte Daten vor Vertragsende zu exportieren."
+          "Der Nutzer kann seine in Statix erfassten Auswertungen im Rahmen der bereitgestellten Funktionen teilen, den Spielbericht als PDF und einzelne Statistiktabellen als CSV exportieren sowie den Terminkalender als iCalendar-Feed abonnieren.",
+          "Über die in der Anwendung verfügbaren Exportfunktionen hinaus stellt der Anbieter dem Nutzer auf Anforderung an die im Impressum genannte Adresse die zu seinem Konto und seinen Mannschaften gespeicherten Daten in einem strukturierten, gängigen und maschinenlesbaren Format zur Verfügung. Die Bearbeitung erfolgt unverzüglich, spätestens innerhalb von 30 Tagen.",
+          "Der Nutzer kann sein Konto jederzeit selbst löschen (Einstellungen → Konto). Wer sich nicht mehr anmelden kann, richtet die Löschungsanfrage an die im Impressum genannte E-Mail-Adresse. Die Löschung ist endgültig; es gibt keine Wiederherstellung und keine Karenzzeit.",
+          "Mit der Löschung des Kontos werden Mannschaften gelöscht, in denen der Nutzer das einzige Mitglied ist, einschließlich der zugehörigen Kader-, Spiel-, Termin- und Auswertungsdaten. Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden an das am längsten zugehörige verbleibende Mitglied übergeben; dasselbe gilt für Mannschaften, die einem Verein zugeordnet sind.",
+          "Der Nutzer ist selbst dafür verantwortlich, benötigte Daten vor der Löschung oder vor Vertragsende zu exportieren. Einzelheiten und Speicherfristen für technische Protokolle beschreibt die Datenschutzerklärung."
         ],
         "items": []
       },
       "liability": {
-        "title": "§ 11 Gewährleistung und Haftung",
+        "title": "§ 13 Gewährleistung und Haftung",
         "paragraphs": [
           "Wird der Dienst kostenlos bereitgestellt, haftet der Anbieter nur für Schäden, die auf Vorsatz oder grober Fahrlässigkeit beruhen, sowie nach den Vorschriften über die Schenkung.",
           "Im Übrigen haftet der Anbieter unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei der Verletzung von Leben, Körper oder Gesundheit.",
           "Bei leicht fahrlässiger Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht), deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung der Nutzer regelmäßig vertrauen darf, ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden begrenzt. Im Übrigen ist die Haftung für leichte Fahrlässigkeit ausgeschlossen.",
-          "Die Haftung nach dem Produkthaftungsgesetz sowie aus einer ausdrücklich übernommenen Garantie bleibt unberührt.",
-          "Der Nutzer ist für die regelmäßige Sicherung seiner Daten selbst verantwortlich. Für den Verlust von Daten haftet der Anbieter nur in dem Umfang, in dem der Verlust auch bei ordnungsgemäßer Datensicherung durch den Nutzer eingetreten wäre."
+          "Die Haftung nach dem Produkthaftungsgesetz sowie aus einer ausdrücklich übernommenen Garantie bleibt unberührt. Bei entgeltlichen Verträgen über digitale Produkte mit Verbrauchern bleiben die gesetzlichen Rechte bei Mängeln (§§ 327 ff. BGB) unberührt.",
+          "Der Nutzer ist für die regelmäßige Sicherung seiner Daten selbst verantwortlich. Für den Verlust von Daten haftet der Anbieter nur in dem Umfang, in dem der Verlust auch bei ordnungsgemäßer Datensicherung durch den Nutzer eingetreten wäre.",
+          "Der Anbieter haftet nicht für die Richtigkeit der vom Nutzer erfassten Spiel- und Statistikdaten und nicht für Entscheidungen, die der Nutzer auf Grundlage der Auswertungen trifft."
         ],
         "items": []
       },
       "term": {
-        "title": "§ 12 Vertragslaufzeit und Kündigung",
+        "title": "§ 14 Vertragslaufzeit und Kündigung",
         "paragraphs": [
           "Der Nutzungsvertrag über die kostenlose Nutzung wird auf unbestimmte Zeit geschlossen und kann von beiden Parteien jederzeit ohne Einhaltung einer Frist gekündigt werden, insbesondere durch Löschung des Nutzerkontos.",
-          "Laufzeit, Verlängerung und Kündigung eines etwaigen kostenpflichtigen Abonnements richten sich nach den im jeweiligen Bestellprozess angegebenen Bedingungen.",
+          "Laufzeit, Verlängerung und Kündigung eines etwaigen kostenpflichtigen Abonnements richten sich nach den im jeweiligen Bestellprozess angegebenen Bedingungen. Wird ein kostenpflichtiges Dauerschuldverhältnis mit Verbrauchern angeboten, stellt der Anbieter hierfür eine Kündigungsschaltfläche nach § 312k BGB bereit.",
           "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Parteien unberührt. Ein wichtiger Grund liegt für den Anbieter insbesondere bei einem erheblichen Verstoß des Nutzers gegen diese AGB vor.",
-          "Kündigungen bedürfen der Textform (z. B. per E-Mail)."
+          "Kündigungen bedürfen der Textform (z. B. per E-Mail); die Löschung des Kontos in der Anwendung genügt."
         ],
         "items": []
       },
       "withdrawal": {
-        "title": "§ 13 Widerrufsrecht für Verbraucher",
+        "title": "§ 15 Widerrufsrecht für Verbraucher",
         "paragraphs": [
-          "Verbrauchern steht bei kostenpflichtigen Verträgen über digitale Inhalte oder Dienstleistungen ein gesetzliches Widerrufsrecht zu. Für die derzeit kostenlose Nutzung besteht mangels entgeltlicher Leistung kein Widerrufsrecht.",
-          "Wird künftig ein kostenpflichtiger Vertrag geschlossen, gilt: Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses. Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer eindeutigen Erklärung (z. B. per E-Mail an die im Impressum genannte Adresse) über Ihren Entschluss, den Vertrag zu widerrufen, informieren.",
-          "Das Widerrufsrecht erlischt bei einem Vertrag über die Bereitstellung digitaler Inhalte, die nicht auf einem körperlichen Datenträger geliefert werden, vorzeitig, wenn Sie ausdrücklich zugestimmt haben, dass mit der Ausführung vor Ablauf der Widerrufsfrist begonnen wird, und Sie Ihre Kenntnis davon bestätigt haben, dass Sie durch diese Zustimmung Ihr Widerrufsrecht verlieren."
+          "Verbrauchern steht bei kostenpflichtigen Verträgen über digitale Inhalte oder digitale Dienstleistungen ein gesetzliches Widerrufsrecht zu. Für die derzeit kostenlose Nutzung besteht mangels entgeltlicher Leistung kein Widerrufsrecht.",
+          "Wird künftig ein kostenpflichtiger Vertrag geschlossen, gilt die folgende Widerrufsbelehrung:",
+          "Widerrufsrecht: Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.",
+          "Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Deutschland, E-Mail: kontakt@statix-app.de) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.",
+          "Folgen des Widerrufs: Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.",
+          "Vorzeitiges Erlöschen des Widerrufsrechts: Das Widerrufsrecht erlischt bei einem Vertrag über die Bereitstellung digitaler Inhalte, die nicht auf einem körperlichen Datenträger geliefert werden, vorzeitig, wenn wir mit der Vertragserfüllung begonnen haben, nachdem Sie ausdrücklich zugestimmt haben, dass wir mit der Vertragserfüllung vor Ablauf der Widerrufsfrist beginnen, und Sie Ihre Kenntnis davon bestätigt haben, dass Sie durch Ihre Zustimmung mit Beginn der Vertragserfüllung Ihr Widerrufsrecht verlieren, und wir Ihnen eine Bestätigung hierüber zur Verfügung gestellt haben.",
+          "Haben Sie verlangt, dass eine Dienstleistung während der Widerrufsfrist beginnen soll, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen entspricht."
+        ],
+        "items": [],
+        "paragraphsAfter": [
+          "Sobald über die Webseite des Anbieters widerrufliche kostenpflichtige Verträge geschlossen werden können, stellt der Anbieter zusätzlich die gesetzlich vorgeschriebene Widerrufsschaltfläche nach § 356a BGB bereit."
+        ]
+      },
+      "changes": {
+        "title": "§ 16 Änderungen dieser AGB",
+        "paragraphs": [
+          "Der Anbieter behält sich vor, diese AGB mit Wirkung für die Zukunft zu ändern, soweit dies zur Anpassung an geänderte rechtliche oder technische Rahmenbedingungen oder zur Erweiterung des Leistungsangebots erforderlich ist und der Nutzer hierdurch nicht unangemessen benachteiligt wird. Änderungen der Hauptleistungspflichten oder des Entgelts sind hiervon nicht erfasst; sie bedürfen einer gesonderten Vereinbarung.",
+          "Über Änderungen wird der Anbieter den Nutzer mindestens sechs Wochen vor ihrem Wirksamwerden in Textform (z. B. per E-Mail oder innerhalb des Dienstes) informieren. Die Änderungen gelten als genehmigt, wenn der Nutzer ihnen nicht bis zum vorgeschlagenen Zeitpunkt des Wirksamwerdens widerspricht. Auf diese Folge und auf das Widerspruchsrecht wird der Anbieter in der Mitteilung gesondert hinweisen. Widerspricht der Nutzer, sind beide Parteien berechtigt, den Vertrag zum Zeitpunkt des vorgesehenen Wirksamwerdens zu kündigen."
         ],
         "items": []
       },
-      "changes": {
-        "title": "§ 14 Änderungen dieser AGB",
+      "disputeResolution": {
+        "title": "§ 17 Streitbeilegung",
         "paragraphs": [
-          "Der Anbieter behält sich vor, diese AGB mit Wirkung für die Zukunft zu ändern, soweit dies zur Anpassung an geänderte rechtliche oder technische Rahmenbedingungen oder zur Erweiterung des Leistungsangebots erforderlich ist und der Nutzer hierdurch nicht unangemessen benachteiligt wird.",
-          "Über Änderungen wird der Anbieter den Nutzer in angemessener Weise (z. B. per E-Mail oder innerhalb des Dienstes) informieren. Die Änderungen gelten als genehmigt, wenn der Nutzer ihnen nicht innerhalb von sechs Wochen nach Zugang der Mitteilung widerspricht. Auf diese Folge wird der Anbieter in der Mitteilung gesondert hinweisen. Widerspricht der Nutzer, sind beide Parteien berechtigt, den Vertrag zu kündigen."
+          "Die von der Europäischen Kommission betriebene Plattform zur Online-Streitbeilegung (OS-Plattform) wurde zum 20. Juli 2025 eingestellt und steht nicht mehr zur Verfügung.",
+          "Der Anbieter ist zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit (§ 36 Abs. 1 Nr. 1 VSBG).",
+          "Beschwerden und Anliegen richten Sie bitte zunächst an die im Impressum genannte E-Mail-Adresse. Der Anbieter bemüht sich um eine zügige und einvernehmliche Klärung."
         ],
         "items": []
       },
       "final": {
-        "title": "§ 15 Schlussbestimmungen",
+        "title": "§ 18 Schlussbestimmungen",
         "paragraphs": [
           "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Bei Verbrauchern gilt diese Rechtswahl nur, soweit dem Verbraucher dadurch nicht der Schutz zwingender Bestimmungen des Rechts des Staates seines gewöhnlichen Aufenthalts entzogen wird.",
-          "Ist der Nutzer Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag der Sitz des Anbieters.",
-          "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter dem folgenden Link erreichen. Der Anbieter ist zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle nicht verpflichtet und nicht bereit.",
-          "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.",
+          "Ist der Nutzer Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag der Sitz des Anbieters. Für Verbraucher gelten die gesetzlichen Gerichtsstände.",
+          "Der Nutzer kann Rechte und Pflichten aus diesem Vertrag nur mit vorheriger Zustimmung des Anbieters in Textform auf einen Dritten übertragen.",
+          "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle der unwirksamen Bestimmung tritt die gesetzliche Regelung.",
           "Maßgeblich ist die deutsche Fassung dieser AGB. Übersetzungen dienen ausschließlich der besseren Verständlichkeit."
         ],
         "items": []
@@ -248,7 +325,7 @@
       "title": "Impressum",
       "description": "Pflichtangaben nach § 5 DDG: wer Statix betreibt, wie Sie uns erreichen und wer für die Inhalte verantwortlich ist. Die Datenschutzerklärung finden Sie auf einer eigenen Seite.",
       "transparencyBadge": "Transparent und rechtssicher",
-      "lastUpdated": "Letzte Aktualisierung: 01. April 2026"
+      "lastUpdated": "Letzte Aktualisierung: 25. August 2026"
     },
     "impressum": {
       "title": "Impressum",
@@ -263,47 +340,80 @@
       "shortTitle": "Datenschutz",
       "preamble": {
         "title": "Präambel",
-        "paragraph1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als Daten bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie zum Beispiel unserer Social-Media-Profile (nachfolgend zusammenfassend als Onlineangebot bezeichnet).",
-        "paragraph2": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch."
+        "paragraph1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als Daten bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in der Statix App sowie innerhalb externer Onlinepräsenzen, wie zum Beispiel unserer Social-Media-Profile (nachfolgend zusammenfassend als Onlineangebot bezeichnet).",
+        "paragraph2": "Statix wird ganz überwiegend von Trainerinnen und Trainern genutzt, die Daten anderer Menschen erfassen – oft von Jugendlichen. Diese Erklärung sagt deshalb an jeder Stelle mit, wer für welche Daten verantwortlich ist: wir für den Betrieb des Dienstes, der Verein bzw. die Trainerin oder der Trainer für die Inhalte, die sie eintragen. Die verwendeten Begriffe sind nicht geschlechtsspezifisch."
       },
       "responsibleParty": {
         "title": "Verantwortlicher",
         "representativesLabel": "Vertretungsberechtigte Personen:",
-        "emailLabel": "E-Mail-Adresse:"
+        "emailLabel": "E-Mail-Adresse:",
+        "phoneLabel": "Telefon:",
+        "dpoLabel": "Datenschutzbeauftragter:",
+        "dpoText": "Ein Datenschutzbeauftragter ist nicht bestellt; die Voraussetzungen des Art. 37 DSGVO und des § 38 BDSG liegen nicht vor. Für alle datenschutzrechtlichen Anliegen wenden Sie sich bitte an die oben genannte E-Mail-Adresse.",
+        "supervisoryLabel": "Zuständige Aufsichtsbehörde:",
+        "supervisoryText": "Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach, Deutschland."
+      },
+      "controllerRoles": {
+        "title": "Wer ist wofür verantwortlich?",
+        "description": "Statix wird von zwei Seiten mit Daten gefüllt. Wer im Sinne der DSGVO Verantwortlicher ist, hängt davon ab, um welche Daten es geht:",
+        "items": [
+          {
+            "title": "Wir als Anbieter sind Verantwortlicher",
+            "description": "für die Daten Ihres Nutzerkontos (Name, E-Mail-Adresse, Passwort-Hash, Anmeldezeitpunkte), für die Nutzung unserer Webseiten, für Kontaktanfragen und den Newsletter sowie für den technischen Betrieb einschließlich Fehlerprotokollen und Missbrauchsschutz."
+          },
+          {
+            "title": "Die Trainerin, der Trainer bzw. der Verein ist Verantwortlicher",
+            "description": "für alle Inhalte, die in der App über andere Menschen eingetragen werden: Kaderdaten, Spielereignisse, Termine, Rückmeldungen, Abwesenheiten, Umfrageantworten und Freigaben. Wir verarbeiten diese Daten ausschließlich weisungsgebunden als Auftragsverarbeiter nach Art. 28 DSGVO."
+          },
+          {
+            "title": "Auftragsverarbeitungsvertrag",
+            "description": "Vereine und Mannschaften, die Daten ihrer Mitglieder – insbesondere Minderjähriger – in Statix erfassen, erhalten auf Anforderung an unsere Kontaktadresse einen Vertrag zur Auftragsverarbeitung nach Art. 28 Abs. 3 DSGVO nebst Anlagen zu den technischen und organisatorischen Maßnahmen und zu den eingesetzten Unterauftragsverarbeitern."
+          },
+          {
+            "title": "Betroffenenrechte",
+            "description": "Spielerinnen und Spieler richten Auskunfts-, Berichtigungs- und Löschverlangen zu ihren Kaderdaten an ihren Verein bzw. ihre Trainerin oder ihren Trainer. Erreichen uns solche Anfragen direkt, leiten wir sie an die verantwortliche Stelle weiter und unterstützen sie bei der Erfüllung."
+          }
+        ]
       },
       "processingOverview": {
         "title": "Übersicht der Verarbeitungen",
         "description": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
         "processedDataTypesTitle": "Arten der verarbeiteten Daten",
         "processedDataTypes": [
-          "Bestandsdaten",
-          "Kontaktdaten",
-          "Inhaltsdaten",
-          "Nutzungsdaten",
-          "Meta-, Kommunikations- und Verfahrensdaten",
-          "Protokolldaten",
-          "Spiel- und Statistikdaten (z. B. Spielereignisse, Aufstellungen, Ergebnisse)",
-          "Zugangsdaten (z. B. E-Mail-Adresse, Passwort-Hash)"
+          "Bestandsdaten (z. B. Namen, Vereinszugehörigkeit)",
+          "Kontaktdaten (z. B. E-Mail-Adresse, Telefonnummer)",
+          "Zugangsdaten (z. B. E-Mail-Adresse, Passwort-Hash, Einladungs- und Freigabe-Token)",
+          "Inhaltsdaten (z. B. Notizen zu Terminen, Umfrageantworten, hochgeladene Logos)",
+          "Spiel- und Statistikdaten (z. B. Spielereignisse, Aufstellungen, Spielzeiten, Ergebnisse)",
+          "Stammdaten von Kadermitgliedern (z. B. Vor- und Nachname, Trikotnummer, Position, Geburtsjahr oder Geburtsdatum, Zeitraum der Zugehörigkeit)",
+          "Termin- und Anwesenheitsdaten (z. B. Zu- und Absagen, Kommentare zu Terminen, Abwesenheitszeiträume)",
+          "Gesundheitsbezogene Angaben (Art. 9 DSGVO) – ausschließlich, soweit eine Abwesenheit als Krankheit oder Verletzung eingetragen wird, samt einer optionalen Notiz",
+          "Nutzungsdaten (z. B. aufgerufene Funktionen, Zeitpunkt der letzten Nutzung)",
+          "Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Geräte- und Browserangaben)",
+          "Protokolldaten (z. B. technische Fehlerprotokolle)"
         ],
         "affectedPeopleTitle": "Kategorien betroffener Personen",
         "affectedPeople": [
-          "Kommunikationspartner",
-          "Nutzer (z. B. Trainerinnen und Trainer)",
-          "Von Nutzern erfasste Spielerinnen und Spieler"
+          "Kommunikationspartner (z. B. Personen, die uns schreiben)",
+          "Nutzer mit eigenem Konto (Trainerinnen und Trainer, Vereinsverantwortliche, Spielerinnen und Spieler)",
+          "Von Nutzern erfasste Spielerinnen und Spieler ohne eigenes Konto, einschließlich Minderjähriger",
+          "Besucherinnen und Besucher unserer Webseiten und öffentlicher Live-Ticker",
+          "Newsletter-Empfänger"
         ],
         "purposesTitle": "Zwecke der Verarbeitung",
         "purposes": [
           "Erbringung vertraglicher Leistungen und Erfüllung vertraglicher Pflichten",
-          "Kommunikation",
-          "Sicherheitsmaßnahmen",
-          "Büro- und Organisationsverfahren",
-          "Organisations- und Verwaltungsverfahren",
-          "Feedback",
+          "Bereitstellung der App-Funktionen (Spielerfassung, Statistik, Terminplanung, Live-Übertragung)",
+          "Organisation des Mannschaftsalltags (Termine, Rückmeldungen, Abwesenheiten, Umfragen)",
+          "KI-gestützte Auswertung pseudonymisierter Spiel- und Statistikdaten",
+          "Kommunikation und Beantwortung von Anfragen",
+          "Direktwerbung per Newsletter auf Grundlage einer Einwilligung",
+          "Sicherheitsmaßnahmen, Missbrauchs- und Spam-Abwehr",
           "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit",
-          "Informationstechnische Infrastruktur",
+          "Informationstechnische Infrastruktur und Fehleranalyse",
+          "Reichweitenmessung in anonymisierter Form",
           "Öffentlichkeitsarbeit",
-          "KI-gestützte Auswertung von Spiel- und Statistikdaten",
-          "Bereitstellung der App-Funktionen (Spielerfassung, Statistik, Live-Übertragung)"
+          "Feedback und Verbesserung des Angebots"
         ]
       },
       "legalBasis": {
@@ -313,15 +423,31 @@
         "items": [
           {
             "title": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)",
-            "description": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben."
+            "description": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben. Wir stützen hierauf insbesondere den Newsletter, freiwillige Angaben aus der Onboarding-Umfrage und Push-Benachrichtigungen."
+          },
+          {
+            "title": "Ausdrückliche Einwilligung bei besonderen Kategorien (Art. 9 Abs. 2 lit. a) DSGVO)",
+            "description": "Angaben, aus denen sich der Gesundheitszustand einer Person ergibt – bei uns ausschließlich eine als Krankheit oder Verletzung eingetragene Abwesenheit samt Notiz –, dürfen nur mit ausdrücklicher Einwilligung der betroffenen Person, bei Minderjährigen der Erziehungsberechtigten, verarbeitet werden. Diese Einwilligung einzuholen ist Sache des Vereins bzw. der erfassenden Trainerin oder des erfassenden Trainers."
+          },
+          {
+            "title": "Einwilligung Minderjähriger (Art. 8 DSGVO)",
+            "description": "Für Angebote der Informationsgesellschaft, die einem Kind unmittelbar angeboten werden, ist eine auf Einwilligung gestützte Verarbeitung in Deutschland erst ab dem vollendeten 16. Lebensjahr rechtmäßig; darunter bedarf es der Zustimmung der Träger der elterlichen Verantwortung."
           },
           {
             "title": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)",
             "description": "Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen."
           },
           {
+            "title": "Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO)",
+            "description": "Die Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung erforderlich, der wir unterliegen – etwa handels- und steuerrechtliche Aufbewahrungspflichten."
+          },
+          {
             "title": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)",
-            "description": "Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen."
+            "description": "Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen. Hierauf stützen wir insbesondere den sicheren und stabilen Betrieb, die Abwehr von Missbrauch und die anonymisierte Reichweitenmessung."
+          },
+          {
+            "title": "Speicherung und Auslesen auf dem Endgerät (§ 25 TDDDG)",
+            "description": "Das Speichern von Informationen auf Ihrem Endgerät und der Zugriff darauf sind ohne Einwilligung nur zulässig, wenn dies für die Bereitstellung eines ausdrücklich gewünschten Dienstes unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG). Wir nutzen ausschließlich solche unbedingt erforderlichen Speicherungen; ein Einwilligungsbanner ist deshalb nicht erforderlich."
           }
         ]
       },
@@ -329,7 +455,18 @@
         "title": "Sicherheitsmaßnahmen",
         "paragraph1": "Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.",
         "connectionLabel": "Sicherung von Online-Verbindungen durch TLS-/SSL-Verschlüsselungstechnologie (HTTPS):",
-        "connectionText": "Um die Daten der Nutzer, die über unsere Online-Dienste übertragen werden, vor unerlaubten Zugriffen zu schützen, setzen wir auf die TLS-/SSL-Verschlüsselungstechnologie. Diese Technologien verschlüsseln die Informationen, die zwischen der Website oder App und dem Browser des Nutzers übertragen werden, wodurch die Daten vor unbefugtem Zugriff geschützt sind."
+        "connectionText": "Um die Daten der Nutzer, die über unsere Online-Dienste übertragen werden, vor unerlaubten Zugriffen zu schützen, setzen wir auf die TLS-/SSL-Verschlüsselungstechnologie. Diese Technologien verschlüsseln die Informationen, die zwischen der Website oder App und dem Browser des Nutzers übertragen werden, wodurch die Daten vor unbefugtem Zugriff geschützt sind.",
+        "measuresTitle": "Weitere Maßnahmen im Überblick",
+        "measures": [
+          "Passwörter werden ausschließlich als kryptografischer Hash (bcrypt) gespeichert und sind für uns nicht im Klartext einsehbar.",
+          "Jeder Datenbankzugriff erfolgt serverseitig und ist auf die jeweilige Mannschaft bzw. den jeweiligen Verein begrenzt; einen Zugriff aus dem Browser auf die Datenbank gibt es nicht.",
+          "Alle Datenbanktabellen sind zusätzlich durch „Row Level Security“ ohne freigebende Regel gesperrt, sodass die öffentlichen Datenbankschlüssel keinerlei Daten lesen können.",
+          "Links für Passwort-Zurücksetzen und E-Mail-Bestätigung werden nur als Hash gespeichert, sind zeitlich begrenzt gültig und werden nach Ablauf gelöscht.",
+          "Anmelde-, Registrierungs- und Freigabe-Endpunkte sind gegen automatisierte Angriffe durch Zählgrenzen geschützt.",
+          "Öffentliche Freigaben (Live-Ticker, geteilte Berichte) erfolgen ausschließlich über zufällig erzeugte, nicht erratbare Adressen und lassen sich jederzeit widerrufen.",
+          "Vor jeder Übermittlung an einen KI-Anbieter werden Personennamen durch Kürzel ersetzt (Pseudonymisierung).",
+          "Nicht mehr benötigte technische Daten werden durch einen automatischen, täglich laufenden Datenbank-Job gelöscht (siehe „Speicherdauer und Löschung“)."
+        ]
       },
       "webHosting": {
         "title": "Bereitstellung des Onlineangebots und Webhosting",
@@ -349,27 +486,41 @@
           },
           {
             "label": "Rechtsgrundlagen:",
-            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+          },
+          {
+            "label": "Speicherdauer:",
+            "value": "Server-Protokolle des Hosting-Anbieters werden nach dessen Vorgaben kurzfristig gelöscht; von uns selbst gespeicherte Fehlerprotokolle nach 90 Tagen."
           }
         ],
         "processorSectionTitle": "Auftragsverarbeitung",
         "processorSectionText": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.",
         "vercelTitle": "Vercel",
-        "vercelDescription": "Leistungen auf dem Gebiet der Bereitstellung von informationstechnischer Infrastruktur und verbundenen Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten) sowie Entwicklungsumgebung.",
+        "vercelDescription": "Leistungen auf dem Gebiet der Bereitstellung von informationstechnischer Infrastruktur und verbundenen Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten) sowie Entwicklungsumgebung. Die Auslieferung statischer Inhalte erfolgt über das weltweite Content-Delivery-Netzwerk des Anbieters; dabei kann eine Übermittlung in die USA stattfinden.",
         "vercelItems": [
           {
+            "label": "Dienstanbieter:",
+            "value": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA"
+          },
+          {
             "label": "Rechtsgrundlagen:",
-            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
           },
           {
-            "label": "Standardvertragsklauseln:"
+            "label": "Grundlage Drittlandtransfers:",
+            "value": "Angemessenheitsbeschluss der Europäischen Kommission (EU-U.S. Data Privacy Framework), soweit der Anbieter zertifiziert ist, im Übrigen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
           },
           {
-            "label": "Auftragsverarbeitungsvertrag:"
+            "label": "Standardvertragsklauseln:",
+            "url": "https://vercel.com/legal/dpa"
+          },
+          {
+            "label": "Auftragsverarbeitungsvertrag:",
+            "url": "https://vercel.com/legal/dpa"
           }
         ],
         "analyticsTitle": "Vercel Analytics & Speed Insights",
-        "analyticsDescription": "Wir nutzen Vercel Analytics und Speed Insights zur Messung der technischen Performance und zur Optimierung der Nutzerfreundlichkeit unserer Website. Die erhobenen Daten werden ausschließlich anonymisiert und aggregiert ausgewertet. Eine Zuordnung zu einzelnen Personen ist nicht möglich. Diese Tools erfassen ausschließlich anonymisierte, aggregierte Daten wie Seitenaufrufe, Gerätetyp, Browserdetails und Web Vitals. Es erfolgt keine Speicherung von IP-Adressen oder anderen Daten, die eine Identifizierung natürlicher Personen ermöglichen. Die Tools verwenden keine Cookies oder sonstige lokale Speichertechnologien.",
+        "analyticsDescription": "Wir nutzen Vercel Analytics und Speed Insights zur Messung der Reichweite und der technischen Performance unserer Website. Die Auswertung erfolgt ohne Cookies und ohne sonstige Speicherung auf Ihrem Endgerät. Aus der IP-Adresse, dem User-Agent und weiteren technischen Merkmalen des Abrufs bildet der Anbieter einen täglich wechselnden, nicht umkehrbaren Hash-Wert, um wiederkehrende Aufrufe innerhalb eines Tages zu erkennen. Die IP-Adresse selbst wird nicht gespeichert, der Hash-Wert ist keiner Person zuordenbar und wird spätestens nach 24 Stunden unbrauchbar. Ausgewertet werden anschließend nur aggregierte Kennzahlen wie Seitenaufrufe, Herkunftsland, Gerätetyp, Browser und Ladezeiten (Web Vitals) sowie zwei von uns ausgelöste Ereignisse (Klick auf die Live-Demo und Klick auf die Registrierung).",
         "analyticsItems": [
           {
             "label": "Dienstanbieter:",
@@ -377,24 +528,52 @@
           },
           {
             "label": "Zweck der Verarbeitung:",
-            "value": "Analyse der Website-Performance, Optimierung der Ladezeiten und Verbesserung der Nutzerfreundlichkeit."
+            "value": "Reichweitenmessung, Analyse der Website-Performance, Optimierung der Ladezeiten und Verbesserung der Nutzerfreundlichkeit."
           },
           {
             "label": "Rechtsgrundlagen:",
-            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Unser berechtigtes Interesse liegt in der Optimierung und dem wirtschaftlichen Betrieb unseres Onlineangebotes."
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Unser berechtigtes Interesse liegt in der Optimierung und dem wirtschaftlichen Betrieb unseres Onlineangebotes. Da weder Cookies gesetzt noch Informationen aus Ihrem Endgerät ausgelesen werden, ist eine Einwilligung nach § 25 TDDDG nicht erforderlich."
           },
           {
-            "label": "Datenschutzerklärung:"
+            "label": "Widerspruch:",
+            "value": "Sie können der Reichweitenmessung jederzeit unter unserer Kontaktadresse widersprechen; da keine personenbezogene Kennung gespeichert wird, ist eine gerätegebundene Widerspruchsmöglichkeit technisch nicht erforderlich."
           },
           {
-            "label": "Datenübermittlung in Drittländer:",
-            "value": "Die Datenübertragung in die USA erfolgt auf Grundlage von Standardvertragsklauseln (Art. 46 DSGVO). Die Übertragung erfolgt verschlüsselt und es werden ausschließlich anonymisierte Daten übermittelt."
+            "label": "Datenschutzerklärung:",
+            "url": "https://vercel.com/legal/privacy-policy"
+          },
+          {
+            "label": "Grundlage Drittlandtransfers:",
+            "value": "Angemessenheitsbeschluss (EU-U.S. Data Privacy Framework), soweit der Anbieter zertifiziert ist, im Übrigen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
           }
         ]
       },
       "cookies": {
-        "title": "Einsatz von Cookies",
-        "description": "Unter dem Begriff Cookies werden Funktionen, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen, verstanden. Cookies können ferner in Bezug auf unterschiedliche Anliegen Einsatz finden, etwa zu Zwecken der Funktionsfähigkeit, der Sicherheit und des Komforts von Onlineangeboten sowie der Erstellung von Analysen der Besucherströme. Wir verwenden Cookies gemäß den gesetzlichen Vorschriften.",
+        "title": "Cookies und Speicherung auf dem Endgerät",
+        "description": "Unter dem Begriff Cookies werden Funktionen verstanden, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen. Wir setzen ausschließlich Cookies und Speichertechniken ein, die für den Betrieb des von Ihnen ausdrücklich gewünschten Dienstes unbedingt erforderlich sind oder eine von Ihnen selbst getroffene Einstellung festhalten. Weder Werbe- noch Tracking-Cookies kommen zum Einsatz. Ein Einwilligungsbanner ist deshalb nicht erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).",
+        "tableTitle": "Was konkret gespeichert wird",
+        "tableItems": [
+          {
+            "title": "Sitzungs-Cookie der Anmeldung",
+            "description": "Hält die Anmeldung in der App aufrecht. Verschlüsseltes Token, Laufzeit 7 Tage. Ohne dieses Cookie ist eine Anmeldung technisch nicht möglich."
+          },
+          {
+            "title": "Spracheinstellung",
+            "description": "Merkt sich die von Ihnen gewählte Anzeigesprache. Laufzeit 1 Jahr."
+          },
+          {
+            "title": "Ansichts-Kontext (Mannschaft oder Verein)",
+            "description": "Merkt sich, ob Sie zuletzt die Mannschafts- oder die Vereinsansicht geöffnet hatten. Laufzeit 1 Jahr."
+          },
+          {
+            "title": "Lokaler Speicher der App (IndexedDB, Service-Worker-Cache, Local Storage)",
+            "description": "Hält Spiel- und Kaderdaten sowie Programmdateien für die Offline-Nutzung vor und merkt sich Anzeigeeinstellungen wie das Farbschema oder die zuletzt gewählte Ansicht. Verbleibt auf Ihrem Gerät, bis Sie die App- bzw. Browserdaten löschen."
+          },
+          {
+            "title": "Kein Einsatz von Drittanbieter-Cookies",
+            "description": "Reichweitenmessung, Kartenlinks und eingebettete Inhalte kommen ohne Cookies aus. Erst wenn Sie einem externen Link folgen (z. B. zu Instagram oder in eine Karten-App), gelten die Bestimmungen des dortigen Anbieters."
+          }
+        ],
         "storageDurationLabel": "Speicherdauer:",
         "storageDurationText": "Im Hinblick auf die Speicherdauer werden die folgenden Arten von Cookies unterschieden:",
         "items": [
@@ -404,13 +583,13 @@
           },
           {
             "title": "Permanente Cookies:",
-            "description": "Permanente Cookies bleiben auch nach dem Schließen des Endgeräts gespeichert. Die Speicherdauer kann bis zu zwei Jahre betragen."
+            "description": "Permanente Cookies bleiben auch nach dem Schließen des Endgeräts gespeichert. Bei uns beträgt die längste Laufzeit ein Jahr; Sie können die Cookies jederzeit über die Einstellungen Ihres Browsers löschen."
           }
         ]
       },
       "contactRequests": {
-        "title": "Kontakt- und Anfrageverwaltung",
-        "description": "Bei der Kontaktaufnahme mit uns (z. B. per Post, Kontaktformular, E-Mail, Telefon oder via soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist.",
+        "title": "Kontakt-, Feedback- und Anfrageverwaltung",
+        "description": "Bei der Kontaktaufnahme mit uns (z. B. über das Kontakt- oder Feedback-Formular, per E-Mail, Telefon oder über soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist. Die Formulare übermitteln uns die von Ihnen eingegebenen Angaben per E-Mail; eine Speicherung der Formularinhalte in einer Datenbank findet nicht statt. Um automatisierte Massenanfragen abzuwehren, wird Ihre IP-Adresse für maximal eine Stunde in einem flüchtigen Zähler im Arbeitsspeicher gehalten und danach verworfen.",
         "items": [
           {
             "label": "Verarbeitete Datenarten:",
@@ -422,69 +601,208 @@
           },
           {
             "label": "Zwecke der Verarbeitung:",
-            "value": "Kommunikation; Organisations- und Verwaltungsverfahren; Feedback; Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit."
+            "value": "Kommunikation; Organisations- und Verwaltungsverfahren; Feedback; Sicherheitsmaßnahmen; Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit."
           },
           {
             "label": "Rechtsgrundlagen:",
-            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+            "value": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+          },
+          {
+            "label": "Speicherdauer:",
+            "value": "Anfragen werden gelöscht, sobald sie erledigt sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen; die Erledigung prüfen wir spätestens alle zwei Jahre."
           }
         ]
       },
       "appSections": {
         "title": "Datenverarbeitung in der Statix App",
-        "intro": "Die folgenden Abschnitte beschreiben die Verarbeitungen, die bei der Nutzung der Statix App (Web-App und installierbare Progressive Web App) stattfinden.",
+        "intro": "Die folgenden Abschnitte beschreiben die Verarbeitungen, die bei der Nutzung der Statix App (Web-App und installierbare Progressive Web App) stattfinden. Wo Inhalte betroffen sind, die eine Trainerin oder ein Trainer über andere Menschen einträgt, handeln wir als Auftragsverarbeiter für den Verein bzw. die Mannschaft (siehe „Wer ist wofür verantwortlich?“).",
         "sections": [
           {
             "title": "Registrierung und Nutzerkonto",
             "paragraphs": [
-              "Für die Nutzung der App ist ein Nutzerkonto erforderlich. Bei der Registrierung verarbeiten wir Name, E-Mail-Adresse und Passwort; das Passwort wird ausschließlich als kryptografischer Hash gespeichert und ist für uns nicht im Klartext einsehbar. Freiwillige Angaben aus der Onboarding-Umfrage (z. B. Spielklasse, Altersklasse, Ziele) nutzen wir zur Verbesserung des Angebots.",
-              "Die E-Mail-Adresse wird vor der ersten Anmeldung über einen Bestätigungslink verifiziert (Double-Opt-In). Zum Zurücksetzen des Passworts versenden wir auf Anfrage einen zeitlich begrenzt gültigen Link per E-Mail. Die Löschung des Nutzerkontos ist jederzeit auf Anfrage über die im Abschnitt „Verantwortlicher“ genannte E-Mail-Adresse möglich."
+              "Für die Nutzung der App ist ein Nutzerkonto erforderlich. Bei der Registrierung verarbeiten wir Name, E-Mail-Adresse und Passwort; das Passwort wird ausschließlich als kryptografischer Hash gespeichert und ist für uns nicht im Klartext einsehbar. Freiwillige Angaben aus der Onboarding-Umfrage (z. B. Spielklasse, Altersklasse, Ziele, größte Herausforderung) nutzen wir zur Verbesserung des Angebots.",
+              "Die E-Mail-Adresse wird vor der ersten Anmeldung über einen Bestätigungslink verifiziert (Double-Opt-In). Zum Zurücksetzen des Passworts versenden wir auf Anfrage einen zeitlich begrenzt gültigen Link per E-Mail. Beide Token werden ausschließlich als Hash gespeichert und spätestens sieben Tage nach Ablauf gelöscht.",
+              "Auch Spielerinnen und Spieler können ein eigenes Konto anlegen: Die Trainerin oder der Trainer teilt dazu einen Einladungslink (Beitrittslink der Mannschaft), über den die Spielerin selbst ihre Kaderzeile beansprucht. Der Link ist 14 Tage gültig und kann jederzeit erneuert werden, wodurch der alte Link ungültig wird. Wer welchen Kadereintrag beansprucht, entscheidet ausschließlich die Spielerin selbst; eine Zuordnung durch die Trainerin oder den Trainer ist nicht möglich.",
+              "Um aktive von verwaisten Konten unterscheiden zu können, speichern wir den Zeitpunkt der letzten authentifizierten Nutzung in einer Genauigkeit von fünf Minuten. Ein Bewegungs- oder Nutzungsprofil entsteht daraus nicht; frühere Zeitpunkte werden überschrieben.",
+              "Ihr Konto können Sie jederzeit selbst löschen (Einstellungen → Konto). Was dabei gelöscht wird und was bestehen bleibt, ist auf unserer Seite zur Kontolöschung beschrieben."
             ],
             "items": [
               {
                 "label": "Verarbeitete Datenarten:",
-                "value": "Bestandsdaten, Kontaktdaten, Zugangsdaten, Inhaltsdaten."
+                "value": "Bestandsdaten, Kontaktdaten, Zugangsdaten, Inhaltsdaten, Nutzungsdaten."
               },
               {
                 "label": "Betroffene Personen:",
-                "value": "Nutzer (z. B. Trainerinnen und Trainer)."
+                "value": "Nutzer mit eigenem Konto (Trainerinnen und Trainer, Vereinsverantwortliche, Spielerinnen und Spieler)."
               },
               {
                 "label": "Rechtsgrundlagen:",
-                "value": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); für freiwillige Umfrageangaben: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
+                "value": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); für freiwillige Umfrageangaben: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO); für die Aktivitätskennzeichnung: berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Löschung des Kontos; Token für Passwort-Zurücksetzen und E-Mail-Bestätigung spätestens sieben Tage nach Ablauf."
               }
             ]
           },
           {
-            "title": "Team-, Spieler- und Spieldaten",
+            "title": "Mannschaft, Kader und Spielerdaten",
             "paragraphs": [
-              "Kernfunktion der App ist die Erfassung von Handball-Spielstatistiken. Nutzer legen dazu Daten ihrer Mannschaft an: Spielernamen, Trikotnummern, Positionen sowie Spielereignisse und daraus berechnete Statistiken (z. B. Tore, Würfe, Paraden, Zeitstrafen, Spielzeiten). Optional können Vereinsdaten und ein Vereinslogo hinterlegt werden.",
-              "Diese Daten können auch Personen betreffen, die die App nicht selbst nutzen (insbesondere Spielerinnen und Spieler). Der erfassende Nutzer bzw. dessen Verein ist dafür verantwortlich, die betroffenen Personen – bei Minderjährigen deren Erziehungsberechtigte – über die Verarbeitung zu informieren und, soweit erforderlich, deren Einwilligung einzuholen. Die Daten sind nur für die Mitglieder des jeweiligen Teams sichtbar, sofern ein Spiel nicht ausdrücklich öffentlich freigegeben wird (siehe unten)."
+              "Kernfunktion der App ist die Erfassung von Handball-Spielstatistiken. Nutzer legen dazu Daten ihrer Mannschaft an: Vor- und Nachname, Trikotnummer, Position, Torwart-Kennzeichen, Zeitraum der Kaderzugehörigkeit und Art der Zugehörigkeit (Stammkader, Zweitkader, Aushilfe) sowie Spielereignisse und daraus berechnete Statistiken (z. B. Tore, Würfe, Paraden, Zeitstrafen, Spielzeiten, Wechsel). Optional können Vereinsdaten und ein Vereinslogo hinterlegt werden.",
+              "Zur Unterscheidung gleichnamiger Personen und zur Ermittlung der Altersklasse kann zusätzlich das Geburtsjahr und – nur wenn der Verein es einträgt – das vollständige Geburtsdatum gespeichert werden. Für die Altersklasse genügt das Geburtsjahr; wir empfehlen, auf das vollständige Geburtsdatum zu verzichten, wenn es nicht benötigt wird.",
+              "Diese Daten betreffen regelmäßig Personen, die die App nicht selbst nutzen, darunter Minderjährige. Der erfassende Nutzer bzw. dessen Verein ist Verantwortlicher: Er muss die betroffenen Personen – bei Minderjährigen deren Erziehungsberechtigte – über die Verarbeitung informieren und, soweit erforderlich, deren Einwilligung einholen. Wir verarbeiten diese Daten ausschließlich weisungsgebunden.",
+              "Die Daten sind nur für die Mitglieder der jeweiligen Mannschaft und – bei Zuordnung zu einem Verein – für dessen Verantwortliche sichtbar, sofern ein Spiel nicht ausdrücklich öffentlich freigegeben wird (siehe unten)."
             ],
             "items": [
               {
                 "label": "Verarbeitete Datenarten:",
-                "value": "Bestandsdaten, Inhaltsdaten, Spiel- und Statistikdaten."
+                "value": "Bestandsdaten, Stammdaten von Kadermitgliedern, Inhaltsdaten, Spiel- und Statistikdaten."
               },
               {
                 "label": "Betroffene Personen:",
-                "value": "Nutzer; von Nutzern erfasste Spielerinnen und Spieler."
+                "value": "Nutzer; von Nutzern erfasste Spielerinnen und Spieler, einschließlich Minderjähriger."
               },
               {
                 "label": "Rechtsgrundlagen:",
-                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+                "value": "Verantwortlich ist der Verein bzw. die erfassende Trainerin oder der erfassende Trainer; typischerweise Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO) oder berechtigte Interessen des Vereins (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO) auf Grundlage unseres Vertrags mit dem Nutzer (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Löschung durch den Verantwortlichen, längstens bis zur Löschung der Mannschaft bzw. des zugehörigen Kontos."
               }
             ]
           },
           {
-            "title": "Datenbank, Dateispeicher und Fehlerprotokolle (Supabase)",
+            "title": "Verein und mannschaftsübergreifende Laufbahn",
             "paragraphs": [
-              "Sämtliche App-Daten werden in einer PostgreSQL-Datenbank des Dienstleisters Supabase gespeichert; Vereinslogos werden im Objektspeicher desselben Dienstleisters abgelegt. Zur Sicherstellung des stabilen Betriebs speichern wir außerdem technische Fehlerprotokolle (z. B. Fehlermeldung, betroffene Funktion, Zeitpunkt). Das Hosting erfolgt in der EU (Region Frankfurt am Main, Deutschland)."
+              "Mehrere Mannschaften können unter einem Verein zusammengefasst werden. Vereinsadministratoren sehen dann die Kader und Auswertungen aller zugeordneten Mannschaften. Innerhalb eines Vereins können Kadereinträge derselben Person – etwa aus der A-Jugend und aus der Damenmannschaft – zu einer Person verknüpft werden, sodass eine mannschaftsübergreifende Laufbahn sichtbar wird.",
+              "Die Verknüpfung schlägt die App anhand von Namen, Geburtsjahr und Zugehörigkeitszeiträumen vor; bestätigt oder abgelehnt wird sie ausschließlich durch einen Menschen. Abgelehnte Vorschläge merken wir uns, damit dieselbe Person nicht wiederholt vorgeschlagen wird. Eine Verknüpfung über Vereinsgrenzen hinweg findet nicht statt.",
+              "Wird eine Mannschaft einem Verein zugeordnet, kann der Verein auf ihre Daten zugreifen. Der Verein ist ab diesem Zeitpunkt der datenschutzrechtlich Verantwortliche für diese Daten."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Bestandsdaten, Stammdaten von Kadermitgliedern (einschließlich Geburtsjahr), Spiel- und Statistikdaten."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Von Nutzern erfasste Spielerinnen und Spieler; Vereinsmitglieder mit eigenem Konto."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Verantwortlich ist der Verein; unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Termine, Rückmeldungen und Kalender-Feed",
+            "paragraphs": [
+              "Die App bildet den Terminkalender der Mannschaft ab: Trainings, Spiele, Mannschaftsabende und ähnliche Termine mit Ort, Treffzeit und Notiz. Kadermitglieder melden zu, ab oder „vielleicht“ und können dazu einen Kommentar hinterlassen. Kommentare sind nur für die Trainerin oder den Trainer und die schreibende Person sichtbar, nicht für die übrige Mannschaft. Auf Wunsch erinnert die App vor einem Termin per E-Mail oder Push-Nachricht.",
+              "Der Terminkalender kann als iCalendar-Feed in einer Kalender-App abonniert werden. Der Feed ist über eine zufällig erzeugte, nicht erratbare Adresse ohne Anmeldung abrufbar und enthält Titel, Zeit, Ort und Notiz der Termine – jedoch keine Rückmeldungen und keine Namen der Kadermitglieder. Wer die Adresse kennt, kann den Kalender lesen; geben Sie den Link deshalb nur an Personen weiter, die ihn kennen sollen. Der Link kann jederzeit erneuert werden, wodurch der alte Link ungültig wird.",
+              "Der Feed ist bewusst nur lesend: Rückmeldungen können darüber nicht abgegeben werden, und es werden keine Teilnehmerlisten in Kalender-Programme übertragen."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Termin- und Anwesenheitsdaten, Inhaltsdaten (Kommentare, Notizen), Zugangsdaten (Feed-Token)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Kadermitglieder; Nutzer mit eigenem Konto; Empfänger des Kalender-Feeds."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Verantwortlich ist der Verein bzw. die Mannschaft; unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO) auf Grundlage unseres Vertrags mit dem Nutzer (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Löschung des Termins, der Mannschaft oder des Kontos."
+              }
+            ]
+          },
+          {
+            "title": "Abwesenheiten und gesundheitsbezogene Angaben",
+            "paragraphs": [
+              "Kadermitglieder können längere Abwesenheiten eintragen, damit nicht jeder einzelne Termin abgesagt werden muss. Eine Abwesenheit besteht aus einem Zeitraum, einer Kategorie – Urlaub, Krankheit, Verletzung oder Sonstiges – und einer freiwilligen Notiz. Eintragen kann sie die betroffene Person selbst oder die Trainerin bzw. der Trainer für sie.",
+              "Wird als Kategorie Krankheit oder Verletzung gewählt oder enthält die Notiz Angaben zum Gesundheitszustand, handelt es sich um Gesundheitsdaten und damit um eine besondere Kategorie personenbezogener Daten nach Art. 9 DSGVO. Solche Angaben dürfen nur mit der ausdrücklichen Einwilligung der betroffenen Person – bei Minderjährigen der Erziehungsberechtigten – verarbeitet werden. Diese Einwilligung einzuholen und zu dokumentieren, ist Aufgabe des Vereins bzw. der Trainerin oder des Trainers; wir verarbeiten die Angaben ausschließlich weisungsgebunden.",
+              "Wir empfehlen ausdrücklich, entweder die Kategorie „Sonstiges“ zu verwenden oder auf freie Notizen zu verzichten, wenn die Trainingsplanung die genaue Ursache nicht erfordert. Die Notiz zu einer Abwesenheit wird den übrigen Kadermitgliedern nicht angezeigt; sichtbar ist ihnen nur, dass die Person in diesem Zeitraum nicht verfügbar ist. Eine Abwesenheit lässt sich jederzeit ändern oder löschen; die Kategorie kann nachträglich auf „Sonstiges“ geändert werden."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Termin- und Anwesenheitsdaten; gesundheitsbezogene Angaben (Art. 9 DSGVO), soweit eingetragen; Inhaltsdaten (Notiz)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Kadermitglieder, einschließlich Minderjähriger."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Ausdrückliche Einwilligung der betroffenen Person bzw. der Erziehungsberechtigten (Art. 9 Abs. 2 lit. a) DSGVO), einzuholen durch den verantwortlichen Verein; unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Löschung durch die betroffene Person oder den Verantwortlichen, längstens bis zur Löschung der Mannschaft bzw. des Kontos."
+              }
+            ]
+          },
+          {
+            "title": "Umfragen an den Kader",
+            "paragraphs": [
+              "Trainerinnen und Trainer können Umfragen an ihren Kader richten (z. B. Rückmeldungen zur Saison oder zur Trainingsplanung). Die Umfrage wird über eine zufällig erzeugte, nicht erratbare Adresse ohne Anmeldung geöffnet; die antwortende Person wählt ihren Namen aus der Kaderliste aus.",
+              "Antworten sind daher der jeweiligen Person zugeordnet und für die Trainerin oder den Trainer nicht anonym. Wer eine anonyme Rückmeldung wünscht, sollte darauf hingewiesen werden, dass die Zuordnung besteht. Die Umfrage kann geschlossen werden; bereits abgegebene Antworten bleiben dann erhalten, neue werden nicht mehr angenommen."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Inhaltsdaten (Antworten), Bestandsdaten (Zuordnung zum Kadereintrag), Zugangsdaten (Umfrage-Token)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Kadermitglieder."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Verantwortlich ist der Verein bzw. die Mannschaft; unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Push-Benachrichtigungen",
+            "paragraphs": [
+              "Wenn Sie Push-Benachrichtigungen für Termine und Erinnerungen aktivieren, erzeugt Ihr Browser ein Abonnement und übergibt uns dessen Adresse (Endpunkt) beim Push-Dienst Ihres Browser-Herstellers, zwei zugehörige Verschlüsselungsschlüssel sowie die Kennung Ihres Browsers (User-Agent). Ohne diese Angaben ist eine Zustellung technisch nicht möglich.",
+              "Die Zustellung übernimmt der Push-Dienst des jeweiligen Browser-Herstellers (u. a. Google, Mozilla, Apple). Der Inhalt der Nachricht wird vor der Übergabe für Ihr Gerät verschlüsselt und ist für den Push-Dienst nicht lesbar; dem Push-Dienst werden jedoch der Zeitpunkt der Zustellung und die Kennung Ihres Geräteabonnements bekannt. Je nach Hersteller kann dabei eine Übermittlung in Drittländer erfolgen.",
+              "Die Aktivierung ist freiwillig und jederzeit widerruflich: Sie können die Benachrichtigungen in den App-Einstellungen abschalten oder die Berechtigung im Browser entziehen. Abonnements, die vom Push-Dienst als ungültig gemeldet werden – etwa nach dem Löschen der Browserdaten oder dem Entfernen der App –, löschen wir automatisch."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Zugangsdaten (Endpunkt und Schlüssel des Abonnements), Meta- und Kommunikationsdaten (Browserkennung, Zeitpunkte)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer mit eigenem Konto, die Push-Benachrichtigungen aktiviert haben."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO; § 25 Abs. 1 TDDDG); der Widerruf ist jederzeit mit Wirkung für die Zukunft möglich."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Abmeldung, bis zum Ungültigwerden des Abonnements oder bis zur Löschung des Kontos."
+              }
+            ]
+          },
+          {
+            "title": "Datenbank und Dateispeicher (Supabase)",
+            "paragraphs": [
+              "Sämtliche App-Daten werden in einer PostgreSQL-Datenbank des Dienstleisters Supabase gespeichert; Vereins- und Sponsorenlogos werden im Objektspeicher desselben Dienstleisters abgelegt. Das Hosting erfolgt in der EU (Region Frankfurt am Main, Deutschland). Der Zugriff auf die Datenbank erfolgt ausschließlich serverseitig; aus dem Browser besteht keine Verbindung zur Datenbank. Alle Tabellen sind zusätzlich durch „Row Level Security“ ohne freigebende Regel gesperrt.",
+              "Der Mutterkonzern des Anbieters hat seinen Sitz in den USA, sodass ein Zugriff aus einem Drittland im Rahmen von Wartung und Support nicht vollständig ausgeschlossen werden kann. Hierfür bestehen die unten genannten Garantien."
             ],
             "items": [
               {
                 "label": "Dienstanbieter:",
-                "value": "Supabase, Inc. (USA); Hosting-Region: Frankfurt am Main, Deutschland (EU)."
+                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur bzw. San Francisco, USA; Hosting-Region: Frankfurt am Main, Deutschland (EU)."
               },
               {
                 "label": "Datenschutzerklärung:",
@@ -495,24 +813,8 @@
                 "url": "https://supabase.com/legal/dpa"
               },
               {
-                "label": "Rechtsgrundlagen:",
-                "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
-              }
-            ]
-          },
-          {
-            "title": "E-Mail-Versand (Brevo)",
-            "paragraphs": [
-              "Transaktionale E-Mails – etwa die Registrierungsbestätigung, Links zum Zurücksetzen des Passworts, Team-Einladungen und Systembenachrichtigungen – sowie E-Mails im Rahmen des Kontaktformulars und des Newsletters versenden wir über den Dienstleister Brevo. Verarbeitet werden dabei E-Mail-Adresse, Name und der jeweilige Nachrichteninhalt."
-            ],
-            "items": [
-              {
-                "label": "Dienstanbieter:",
-                "value": "Brevo (Sendinblue GmbH), Köpenicker Straße 126, 10179 Berlin, Deutschland."
-              },
-              {
-                "label": "Datenschutzerklärung:",
-                "url": "https://www.brevo.com/de/legal/privacypolicy/"
+                "label": "Grundlage Drittlandtransfers:",
+                "value": "Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
               },
               {
                 "label": "Rechtsgrundlagen:",
@@ -521,9 +823,55 @@
             ]
           },
           {
+            "title": "Fehlerprotokolle, Missbrauchsschutz und Betriebssicherheit",
+            "paragraphs": [
+              "Zur Sicherstellung eines stabilen Betriebs speichern wir technische Fehlerprotokolle. Ein Protokolleintrag enthält die Fehlermeldung samt technischem Aufrufpfad, die betroffene Adresse und Funktion, den Zeitpunkt, die Browserkennung (User-Agent), die Version der Anwendung sowie – soweit vorhanden – die Kennung des angemeldeten Kontos und der betroffenen Mannschaft. Fehlerprotokolle werden nach 90 Tagen automatisch gelöscht. Bei schwerwiegenden Fehlern versenden wir zusätzlich eine Benachrichtigung an unsere eigene Betriebsadresse.",
+              "Zum Schutz vor automatisierten Angriffen (etwa dem Durchprobieren von Passwörtern oder Freigabe-Links) zählen wir Zugriffe auf sicherheitsrelevante Endpunkte. Als Zählschlüssel dient dabei Ihre IP-Adresse; Freigabe- und Einladungs-Token gehen nur als nicht umkehrbarer Hash-Wert in den Schlüssel ein. Diese Zählerstände werden nach spätestens 24 Stunden automatisch gelöscht.",
+              "Für die Nutzung der KI-Auswertung führen wir außerdem ein Nutzungsverzeichnis, das je Auswertung die Mannschaft, den auslösenden Nutzer, die Art der Auswertung und den Zeitpunkt festhält. Es dient der Einhaltung der Nutzungsgrenzen und wird nach 400 Tagen automatisch gelöscht."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Protokolldaten, Meta-, Kommunikations- und Verfahrensdaten (einschließlich IP-Adresse), Nutzungsdaten."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer; Besucherinnen und Besucher unserer Onlineangebote."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Berechtigte Interessen an einem sicheren und stabilen Betrieb (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Fehlerprotokolle 90 Tage; Zählerstände des Missbrauchsschutzes 24 Stunden; Nutzungsverzeichnis der KI-Auswertung 400 Tage. Die Löschung erfolgt durch einen automatischen, täglich laufenden Datenbank-Job."
+              }
+            ]
+          },
+          {
+            "title": "E-Mail-Versand (Brevo)",
+            "paragraphs": [
+              "Transaktionale E-Mails – etwa die Registrierungsbestätigung, Links zum Zurücksetzen des Passworts, Mannschafts-Einladungen, Terminerinnerungen, geteilte Spielberichte und Systembenachrichtigungen – sowie E-Mails im Rahmen des Kontakt- und Feedback-Formulars und des Newsletters versenden wir über den Dienstleister Brevo. Verarbeitet werden dabei E-Mail-Adresse, Name und der jeweilige Nachrichteninhalt sowie technische Versandinformationen."
+            ],
+            "items": [
+              {
+                "label": "Dienstanbieter:",
+                "value": "Brevo GmbH, Köpenicker Straße 126, 10179 Berlin, Deutschland."
+              },
+              {
+                "label": "Datenschutzerklärung:",
+                "url": "https://www.brevo.com/de/legal/privacypolicy/"
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); für den Newsletter: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
+              }
+            ]
+          },
+          {
             "title": "Newsletter",
             "paragraphs": [
-              "Bei Anmeldung zu unserem Newsletter verarbeiten wir Ihre E-Mail-Adresse, um Ihnen Informationen zu Statix zuzusenden. Die Anmeldung erfolgt im Double-Opt-In-Verfahren: Erst nach Bestätigung des per E-Mail zugesandten Links wird die Adresse in den Verteiler aufgenommen. An- und Abmeldungen werden zu Nachweiszwecken protokolliert. Sie können den Newsletter jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an uns abbestellen."
+              "Bei Anmeldung zu unserem Newsletter verarbeiten wir Ihre E-Mail-Adresse, um Ihnen Informationen zu Statix zuzusenden. Die Anmeldung erfolgt im Double-Opt-In-Verfahren: Erst nach Bestätigung des per E-Mail zugesandten Links wird die Adresse in den Verteiler aufgenommen. An- und Abmeldungen werden zu Nachweiszwecken protokolliert. Sie können den Newsletter jederzeit über den Abmeldelink in jeder E-Mail oder per Nachricht an uns abbestellen; wir löschen Ihre Adresse dann aus dem Verteiler."
             ],
             "items": [
               {
@@ -531,17 +879,26 @@
                 "value": "Kontaktdaten, Meta-, Kommunikations- und Verfahrensdaten."
               },
               {
+                "label": "Betroffene Personen:",
+                "value": "Newsletter-Empfänger."
+              },
+              {
                 "label": "Rechtsgrundlagen:",
                 "value": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO); der Widerruf ist jederzeit mit Wirkung für die Zukunft möglich."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Abmeldung; der Nachweis der Einwilligung wird darüber hinaus zur Erfüllung der Rechenschaftspflicht (Art. 5 Abs. 2 DSGVO) aufbewahrt."
               }
             ]
           },
           {
             "title": "KI-gestützte Analysen",
             "paragraphs": [
-              "Auf ausdrückliche Anforderung des Nutzers erstellt die App KI-gestützte Auswertungen zu Spielen, Spielerinnen und Spielern sowie Teams. Die Analyse läuft nie automatisch im Hintergrund: Sie wird ausschließlich durch einen bewussten Klick des Nutzers ausgelöst.",
+              "Auf ausdrückliche Anforderung des Nutzers erstellt die App KI-gestützte Auswertungen zu Spielen, Spielerinnen und Spielern sowie Mannschaften. Die Analyse läuft nie automatisch im Hintergrund: Sie wird ausschließlich durch einen bewussten Klick des Nutzers ausgelöst.",
               "Vor der Übermittlung werden alle Spielernamen pseudonymisiert. Jede Spielerin und jeder Spieler wird durch ein bedeutungsloses Kürzel der Form [[P1]], [[P2]], … ersetzt; die Zuordnung von Kürzel zu Person bleibt ausschließlich in unserer Datenbank. An die KI-Anbieter gehen damit nur aggregierte Spiel- und Statistikwerte (z. B. Tore, Würfe, Paraden, Zeitstrafen, Spielzeiten, Spielstände, Positionen) sowie Vereins- und Gegnernamen. Namen, Geburtsdaten, Trikotnummern, E-Mail-Adressen oder Fotos von Spielerinnen und Spielern verlassen die App nicht. Erst bei der Anzeige im Browser werden die Kürzel wieder durch die echten Namen aus dem Kader des eigenen Teams ersetzt.",
-              "Nach Angaben der Anbieter werden über die Programmierschnittstelle (API) übermittelte Daten nicht zum Training ihrer KI-Modelle verwendet. Die fertigen Auswertungen speichern wir in unserer Datenbank (Hosting-Region Frankfurt am Main), damit sie erneut aufgerufen werden können; sie werden mit dem zugehörigen Spiel, Team oder Nutzerkonto gelöscht. Eine automatisierte Entscheidungsfindung mit rechtlicher Wirkung im Sinne des Art. 22 DSGVO findet nicht statt – die Auswertung ist eine Einschätzung für die Trainerin oder den Trainer."
+              "Nach Angaben der Anbieter werden über die Programmierschnittstelle (API) übermittelte Daten nicht zum Training ihrer KI-Modelle verwendet. Die fertigen Auswertungen speichern wir in unserer Datenbank (Hosting-Region Frankfurt am Main), damit sie erneut aufgerufen werden können; sie werden mit dem zugehörigen Spiel, der Mannschaft oder dem Nutzerkonto gelöscht.",
+              "Die Ergebnisse sind KI-generierte Inhalte und in der Anwendung als solche gekennzeichnet. Eine automatisierte Entscheidungsfindung mit rechtlicher Wirkung im Sinne des Art. 22 DSGVO findet nicht statt – die Auswertung ist eine Einschätzung für die Trainerin oder den Trainer, die sportliche Entscheidung trifft ein Mensch. Auf Anforderung deaktivieren wir die KI-Auswertung für eine Mannschaft oder einen Verein vollständig."
             ],
             "items": [
               {
@@ -554,7 +911,7 @@
               },
               {
                 "label": "Zwecke der Verarbeitung:",
-                "value": "Erstellung von Spiel-, Spieler- und Teamanalysen auf ausdrückliche Anforderung des Nutzers."
+                "value": "Erstellung von Spiel-, Spieler- und Mannschaftsanalysen auf ausdrückliche Anforderung des Nutzers."
               },
               {
                 "label": "Dienstanbieter:",
@@ -562,7 +919,7 @@
               },
               {
                 "label": "Datenschutzerklärung Anthropic:",
-                "url": "https://www.anthropic.com/privacy"
+                "url": "https://www.anthropic.com/legal/privacy"
               },
               {
                 "label": "Datenschutzerklärung OpenAI:",
@@ -570,18 +927,23 @@
               },
               {
                 "label": "Grundlage Drittlandtransfers:",
-                "value": "EU-US Data Privacy Framework (DPF) bzw. Standardvertragsklauseln."
+                "value": "Angemessenheitsbeschluss (EU-U.S. Data Privacy Framework), soweit der jeweilige Anbieter zertifiziert ist, im Übrigen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
               },
               {
                 "label": "Rechtsgrundlagen:",
                 "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Die Auswertung bleibt gespeichert, bis das zugehörige Spiel, die Mannschaft oder das Konto gelöscht wird; das Nutzungsverzeichnis wird nach 400 Tagen gelöscht."
               }
             ]
           },
           {
             "title": "Offline-Funktion und lokale Speicherung auf dem Endgerät",
             "paragraphs": [
-              "Die App ist als Progressive Web App (PWA) auch ohne Internetverbindung nutzbar. Hierzu werden Spiel- und Teamdaten sowie App-Ressourcen lokal auf Ihrem Endgerät gespeichert (IndexedDB und Service-Worker-Cache des Browsers) und bei bestehender Verbindung automatisch mit unseren Servern synchronisiert. Diese lokale Speicherung ist für die Offline-Funktion technisch erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Die lokal gespeicherten Daten verbleiben auf Ihrem Gerät, bis Sie die App- bzw. Browserdaten löschen."
+              "Die App ist als Progressive Web App (PWA) auch ohne Internetverbindung nutzbar. Hierzu werden Spiel- und Mannschaftsdaten sowie App-Ressourcen lokal auf Ihrem Endgerät gespeichert (IndexedDB und Service-Worker-Cache des Browsers) und bei bestehender Verbindung automatisch mit unseren Servern synchronisiert. Diese lokale Speicherung ist für die Offline-Funktion technisch erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).",
+              "Die lokal gespeicherten Daten verbleiben auf Ihrem Gerät, bis Sie die App- bzw. Browserdaten löschen. Bitte beachten Sie: Werden die Browserdaten gelöscht, bevor eine Synchronisation stattgefunden hat, gehen noch nicht übertragene Aufzeichnungen verloren. Auf einem geteilten Gerät sollten Sie sich nach der Nutzung abmelden, damit die lokal zwischengespeicherten Kaderdaten nicht für andere zugänglich bleiben."
             ],
             "items": [
               {
@@ -593,22 +955,93 @@
           {
             "title": "Öffentliche Live-Spielübertragung",
             "paragraphs": [
-              "Nutzer können ein Spiel optional als öffentlichen Live-Ticker freigeben. Der Ticker ist dann unter einem nicht erratbaren Link ohne Anmeldung abrufbar und zeigt Team- und Spielernamen, Trikotnummern, Spielereignisse und Spielstände des eigenen Teams; Daten gegnerischer Spieler werden nicht veröffentlicht. Die Freigabe erfolgt aktiv durch den Nutzer; dieser ist dafür verantwortlich, dass die betroffenen Spielerinnen und Spieler mit der Veröffentlichung einverstanden sind. Die Freigabe kann jederzeit beendet werden; der Ticker ist danach nicht mehr öffentlich abrufbar."
+              "Nutzer können ein Spiel optional als öffentlichen Live-Ticker freigeben. Der Ticker ist dann unter einem nicht erratbaren Link ohne Anmeldung abrufbar und zeigt Mannschafts- und Spielernamen, Trikotnummern, Spielereignisse und Spielstände des eigenen Teams; Daten gegnerischer Spieler werden nicht veröffentlicht. Optional werden Sponsorenlogos eingeblendet, die der Verein hochgeladen hat.",
+              "Die Freigabe erfolgt aktiv durch den Nutzer; dieser ist dafür verantwortlich, dass die betroffenen Spielerinnen und Spieler – bei Minderjährigen deren Erziehungsberechtigte – mit der Veröffentlichung einverstanden sind. Spielerinnen und Spieler mit eigenem Konto können in ihren Einstellungen festlegen, dass ihr Name auf öffentlichen Seiten nicht erscheint; angezeigt wird dann nur die Trikotnummer. Diese Entscheidung geht einer weiter gefassten Einstellung der Mannschaft stets vor und kann von einer Trainerin oder einem Trainer nicht überschrieben werden.",
+              "Zur Anzeige der aktuellen Zuschauerzahl und zur Begrenzung der Last speichern wir je Betrachter eine zufällige, dem Gerät zugeordnete Sitzungskennung ohne Personenbezug zusammen mit dem Zeitpunkt des letzten Abrufs. Diese Einträge werden mit dem Abschluss des Spiels, spätestens jedoch nach zwei Tagen gelöscht.",
+              "Die Freigabe kann jederzeit beendet werden; der Ticker ist danach nicht mehr öffentlich abrufbar. Auf Kopien oder Zwischenspeicherungen, die Dritte während der Freigabe angefertigt haben, haben wir keinen Einfluss."
             ],
             "items": [
               {
                 "label": "Verarbeitete Datenarten:",
-                "value": "Inhaltsdaten, Spiel- und Statistikdaten."
+                "value": "Inhaltsdaten, Spiel- und Statistikdaten, Stammdaten von Kadermitgliedern, technische Sitzungskennungen der Betrachter."
               },
               {
                 "label": "Betroffene Personen:",
-                "value": "Von Nutzern erfasste Spielerinnen und Spieler."
+                "value": "Von Nutzern erfasste Spielerinnen und Spieler; Besucherinnen und Besucher des Live-Tickers."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Für die Veröffentlichung: Einwilligung der betroffenen Personen (Art. 6 Abs. 1 S. 1 lit. a) DSGVO), einzuholen durch den verantwortlichen Verein; für die Zuschauerzählung: berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zum Ende der Freigabe; Zuschauer-Sitzungskennungen längstens zwei Tage."
+              }
+            ]
+          },
+          {
+            "title": "Geteilte Spielberichte und PDF-Export",
+            "paragraphs": [
+              "Ein fertiger Spielbericht kann mit einer anderen Trainerin oder einem anderen Trainer geteilt werden. Dazu erzeugt die App eine nicht erratbare Adresse; auf Wunsch versenden wir zusätzlich eine E-Mail an die vom Nutzer angegebene Empfängeradresse. Gespeichert werden dabei die Empfängeradresse, wer geteilt hat, welche Bestandteile freigegeben sind (Statistik und/oder KI-Auswertung), ein etwaiges Ablaufdatum und der Zeitpunkt des ersten Öffnens.",
+              "Der Bericht kann außerdem als PDF gespeichert und einzelne Statistiktabellen können als CSV-Datei exportiert werden. Für diese Exporte gilt: Sobald die Datei Ihr Gerät verlassen hat, liegt ihre weitere Verwendung außerhalb unseres Einflussbereichs.",
+              "Eine Freigabe kann jederzeit widerrufen werden; die Adresse ist danach nicht mehr abrufbar."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Kontaktdaten (Empfängeradresse), Zugangsdaten (Freigabe-Token), Spiel- und Statistikdaten, Nutzungsdaten (Zeitpunkt des Öffnens)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Empfänger geteilter Berichte; von Nutzern erfasste Spielerinnen und Spieler."
               },
               {
                 "label": "Rechtsgrundlagen:",
                 "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zum Widerruf der Freigabe, bis zum Ablauf des Freigabelinks oder bis zur Löschung des zugehörigen Spiels."
               }
             ]
+          },
+          {
+            "title": "Live-Demo ohne Anmeldung",
+            "paragraphs": [
+              "Auf einer eigenen Adresse stellen wir eine Demo-Version bereit, in der die Erfassung eines Spiels ohne Registrierung ausprobiert werden kann. Die Demo arbeitet mit erfundenen Beispieldaten. Geben Sie dort bitte keine echten personenbezogenen Daten ein – Eingaben in der Demo werden nicht als Vereinsdaten behandelt und können jederzeit zurückgesetzt werden."
+            ],
+            "items": [
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Berechtigte Interessen an der Darstellung unseres Angebots (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              }
+            ]
+          }
+        ]
+      },
+      "childrenAndMinors": {
+        "title": "Kinder und Jugendliche",
+        "description": "Statix wird in Jugendmannschaften eingesetzt. Deshalb gelten hier besondere Regeln:",
+        "items": [
+          {
+            "title": "Eigenes Konto erst ab 16 Jahren",
+            "description": "Ein eigenes Nutzerkonto ist Personen ab 16 Jahren vorbehalten. Zwischen 16 und 18 Jahren ist zusätzlich die Zustimmung der Erziehungsberechtigten erforderlich. Für Kinder unter 16 Jahren ist kein eigenes Konto vorgesehen."
+          },
+          {
+            "title": "Erfassung ohne eigenes Konto",
+            "description": "Minderjährige können als Kadermitglied von einer Trainerin oder einem Trainer erfasst werden, ohne selbst ein Konto zu haben. Verantwortlich für diese Daten ist der Verein, nicht das Kind und nicht wir."
+          },
+          {
+            "title": "Pflichten des Vereins",
+            "description": "Der Verein muss die Erziehungsberechtigten vor der ersten Eingabe nach Art. 13 DSGVO informieren und die erforderlichen Einwilligungen einholen – insbesondere für gesundheitsbezogene Abwesenheiten und für jede öffentliche Freigabe (Live-Ticker, geteilte Berichte). Ein Muster-Informationsblatt und einen Auftragsverarbeitungsvertrag stellen wir auf Anforderung zur Verfügung."
+          },
+          {
+            "title": "Datensparsamkeit",
+            "description": "Für die Altersklassenzuordnung genügt das Geburtsjahr. Auf das vollständige Geburtsdatum, auf Fotos und auf freie Notizen zum Gesundheitszustand sollte verzichtet werden, wenn sie für den Trainingsbetrieb nicht erforderlich sind."
+          },
+          {
+            "title": "Rechte ausüben",
+            "description": "Erziehungsberechtigte können Auskunft, Berichtigung und Löschung der Daten ihres Kindes verlangen. Richten Sie solche Anliegen bitte an den Verein bzw. an die Trainerin oder den Trainer; erreichen sie uns direkt, leiten wir sie unverzüglich weiter und unterstützen bei der Umsetzung."
           }
         ]
       },
@@ -618,11 +1051,11 @@
         "items": [
           {
             "title": "Widerspruchsrecht:",
-            "description": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten Widerspruch einzulegen."
+            "description": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e) oder f) DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling. Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung einzulegen."
           },
           {
             "title": "Widerrufsrecht bei Einwilligungen:",
-            "description": "Sie haben das Recht, erteilte Einwilligungen jederzeit zu widerrufen."
+            "description": "Sie haben das Recht, erteilte Einwilligungen jederzeit mit Wirkung für die Zukunft zu widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt."
           },
           {
             "title": "Auskunftsrecht:",
@@ -634,21 +1067,25 @@
           },
           {
             "title": "Recht auf Löschung und Einschränkung der Verarbeitung:",
-            "description": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen."
+            "description": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen. Ihr Nutzerkonto können Sie jederzeit selbst löschen (Einstellungen → Konto)."
           },
           {
             "title": "Recht auf Datenübertragbarkeit:",
-            "description": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern."
+            "description": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern. In der App können Sie Auswertungen als PDF und Statistiktabellen als CSV exportieren; darüber hinaus stellen wir Ihnen Ihre Daten auf Anfrage innerhalb von 30 Tagen in einem maschinenlesbaren Format bereit."
           },
           {
             "title": "Beschwerde bei Aufsichtsbehörde:",
-            "description": "Sie haben unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht auf Beschwerde bei einer Aufsichtsbehörde."
+            "description": "Sie haben unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat Ihres gewöhnlichen Aufenthaltsorts, Ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes. Für uns zuständig ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach."
           }
-        ]
+        ],
+        "howToLabel": "So üben Sie Ihre Rechte aus:",
+        "howToText": "Eine formlose Nachricht an unsere Kontaktadresse genügt; ein bestimmtes Formular ist nicht erforderlich. Wir antworten unverzüglich, spätestens innerhalb eines Monats. Betrifft Ihr Anliegen Kader-, Termin-, Abwesenheits- oder Umfragedaten, ist der Verein bzw. die Trainerin oder der Trainer verantwortlich; wir leiten Ihre Anfrage in diesem Fall dorthin weiter und unterstützen bei der Erfüllung.",
+        "obligationLabel": "Bereitstellungspflicht:",
+        "obligationText": "Die Bereitstellung Ihrer Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Für die Einrichtung eines Kontos benötigen wir jedoch Name, E-Mail-Adresse und Passwort; ohne diese Angaben kann kein Konto angelegt und die App nicht genutzt werden. Alle weiteren Angaben sind freiwillig."
       },
       "socialMedia": {
         "title": "Präsenzen in sozialen Netzwerken (Social Media)",
-        "description": "Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und verarbeiten in diesem Rahmen Nutzerdaten, um mit den dort aktiven Nutzern zu kommunizieren oder Informationen über uns anzubieten.",
+        "description": "Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und verarbeiten in diesem Rahmen Nutzerdaten, um mit den dort aktiven Nutzern zu kommunizieren oder Informationen über uns anzubieten. Wir weisen darauf hin, dass dabei Nutzerdaten außerhalb des Raumes der Europäischen Union verarbeitet werden können und dass die Netzwerke Nutzungsprofile auf Basis des Nutzungsverhaltens erstellen können. Auf unseren Webseiten sind keine Inhalte sozialer Netzwerke eingebettet; wir verlinken lediglich auf unser Profil. Ein Datenaustausch findet daher erst statt, wenn Sie dem Link folgen.",
         "instagramItems": [
           {
             "label": "Instagram:",
@@ -659,22 +1096,54 @@
             "value": "Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland;"
           },
           {
-            "label": "Website:"
+            "label": "Rechtsgrundlagen:",
+            "value": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
           },
           {
-            "label": "Datenschutzerklärung:"
+            "label": "Website:",
+            "url": "https://www.instagram.com"
+          },
+          {
+            "label": "Datenschutzerklärung:",
+            "url": "https://privacycenter.instagram.com/policy/"
           },
           {
             "label": "Grundlage Drittlandtransfers:",
-            "value": "Data Privacy Framework (DPF)."
+            "value": "Angemessenheitsbeschluss (EU-U.S. Data Privacy Framework)."
           }
         ]
       },
       "dataRetention": {
-        "title": "Allgemeine Informationen zur Datenspeicherung und Löschung",
-        "description": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden.",
-        "retentionLabel": "Aufbewahrung und Löschung von Daten:",
-        "retentionText": "Die folgenden allgemeinen Fristen gelten für die Aufbewahrung und Archivierung nach deutschem Recht:",
+        "title": "Speicherdauer und Löschung",
+        "description": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden. Vorrangig gelten die bei den einzelnen Verarbeitungen genannten Fristen.",
+        "technicalLabel": "Automatisch durchgesetzte technische Fristen:",
+        "technicalText": "Die folgenden Fristen setzt ein täglich laufender Datenbank-Job selbsttätig durch – ohne dass jemand daran denken muss:",
+        "technicalItems": [
+          {
+            "title": "24 Stunden",
+            "description": "Zählerstände des Missbrauchsschutzes (Schlüssel: IP-Adresse bzw. Hash-Wert eines Tokens)."
+          },
+          {
+            "title": "2 Tage",
+            "description": "Sitzungskennungen der Zuschauerzählung im öffentlichen Live-Ticker, soweit sie nicht schon mit dem Spielende gelöscht wurden."
+          },
+          {
+            "title": "7 Tage nach Ablauf",
+            "description": "Token für das Zurücksetzen des Passworts und für die Bestätigung der E-Mail-Adresse."
+          },
+          {
+            "title": "90 Tage",
+            "description": "Technische Fehlerprotokolle."
+          },
+          {
+            "title": "400 Tage",
+            "description": "Nutzungsverzeichnis der KI-Auswertungen (ohne Inhalt der Auswertung)."
+          }
+        ],
+        "contentLabel": "Inhaltsdaten der App:",
+        "contentText": "Kader-, Spiel-, Termin-, Abwesenheits- und Umfragedaten bleiben gespeichert, bis der Verantwortliche sie löscht, längstens bis zur Löschung der Mannschaft bzw. des zugehörigen Kontos. Löschen Sie Ihr Konto, werden Mannschaften, in denen Sie das einzige Mitglied sind, vollständig mitgelöscht; Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden übergeben. Die Löschung erfolgt sofort und ohne Karenzzeit.",
+        "retentionLabel": "Gesetzliche Aufbewahrung und Archivierung:",
+        "retentionText": "Soweit uns handels- oder steuerrechtliche Aufbewahrungspflichten treffen, gelten die folgenden allgemeinen Fristen nach deutschem Recht. Betroffen sind ausschließlich kaufmännische Unterlagen, nicht die Inhaltsdaten der App:",
         "items": [
           {
             "title": "10 Jahre",
@@ -703,12 +1172,24 @@
             "description": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z. B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann."
           },
           {
+            "title": "Besondere Kategorien personenbezogener Daten:",
+            "description": "Daten, die besonders schutzwürdig sind – etwa Gesundheitsdaten. In Statix entstehen solche Daten nur an einer Stelle: wenn eine Abwesenheit als Krankheit oder Verletzung eingetragen wird oder eine Notiz Angaben zum Gesundheitszustand enthält. Ihre Verarbeitung setzt eine ausdrückliche Einwilligung voraus (Art. 9 Abs. 2 lit. a) DSGVO)."
+          },
+          {
             "title": "Verarbeitung:",
             "description": "Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten, sei es das Erheben, das Auswerten, das Speichern, das Übermitteln oder das Löschen."
           },
           {
             "title": "Verantwortlicher:",
             "description": "Als Verantwortlicher wird die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle bezeichnet, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+          },
+          {
+            "title": "Auftragsverarbeiter:",
+            "description": "Wer personenbezogene Daten im Auftrag eines Verantwortlichen und nach dessen Weisung verarbeitet, ohne über Zweck und Mittel selbst zu entscheiden. Für die Kader-, Termin-, Abwesenheits- und Umfragedaten der Mannschaften sind wir Auftragsverarbeiter des jeweiligen Vereins."
+          },
+          {
+            "title": "Pseudonymisierung:",
+            "description": "Die Verarbeitung personenbezogener Daten in einer Weise, dass sie ohne Hinzuziehung zusätzlicher, gesondert aufbewahrter Informationen nicht mehr einer bestimmten Person zugeordnet werden können. Vor jeder KI-Auswertung ersetzen wir Personennamen durch bedeutungslose Kürzel; die Zuordnungstabelle verlässt unsere Datenbank nicht."
           },
           {
             "title": "Bestandsdaten:",
@@ -725,9 +1206,17 @@
           {
             "title": "Nutzungsdaten:",
             "description": "Nutzungsdaten beziehen sich auf Informationen, die erfassen, wie Nutzer mit digitalen Produkten, Dienstleistungen oder Plattformen interagieren."
+          },
+          {
+            "title": "Protokolldaten:",
+            "description": "Technische Aufzeichnungen über den Betrieb eines Systems – bei uns insbesondere Fehlerprotokolle mit Fehlermeldung, betroffener Funktion, Zeitpunkt, Browserkennung und Programmversion."
+          },
+          {
+            "title": "Spiel- und Statistikdaten:",
+            "description": "Alle im Zusammenhang mit einem Handballspiel erfassten Ereignisse und die daraus berechneten Kennzahlen – etwa Tore, Würfe, Paraden, Zeitstrafen, Wechsel, Spielzeiten und Wurfpositionen."
           }
         ],
-        "generatorLinkLabel": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke",
+        "generatorLinkLabel": "Teilweise erstellt mit dem kostenlosen Datenschutz-Generator.de von Dr. Thomas Schwenke",
         "generatorLinkTitle": "Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken."
       }
     },
@@ -1100,7 +1589,7 @@
       "title": "Datenschutzerklärung",
       "description": "Wie wir personenbezogene Daten auf statix-app.de und in der Statix App verarbeiten – verständlich aufgeschlüsselt nach Zweck, Rechtsgrundlage, Dienstleistern und Speicherdauer.",
       "pseudonymBadge": "Spielernamen bleiben in der App",
-      "lastUpdated": "Stand: 19. August 2026",
+      "lastUpdated": "Stand: 25. August 2026",
       "navLabel": "Weitere rechtliche Angaben",
       "imprintLink": "Impressum",
       "termsLink": "AGB"
