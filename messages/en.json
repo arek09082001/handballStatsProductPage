@@ -28,178 +28,255 @@
       "title": "General Terms and Conditions (GTC)",
       "description": "Terms governing the use of the Statix handball statistics app and the associated websites and services.",
       "transparencyBadge": "Fair and transparent",
-      "lastUpdated": "Last updated: July 10, 2026"
+      "lastUpdated": "Last updated: 25 August 2026"
     },
     "documentTitle": "General Terms and Conditions",
     "documentTitleShort": "GTC",
     "providerLabel": "Provider and contracting party",
     "privacyLinkLabel": "To the privacy policy",
-    "odrLinkLabel": "https://ec.europa.eu/consumers/odr/",
+    "imprintLinkLabel": "To the legal notice",
+    "withdrawalFormTitle": "Model withdrawal form",
+    "withdrawalFormHint": "(Complete and return this form only if you wish to withdraw from the contract.)",
+    "withdrawalFormLines": [
+      "To: Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Germany – email: kontakt@statix-app.de",
+      "I/We (*) hereby give notice that I/we (*) withdraw from my/our (*) contract for the provision of the following service (*): ______________________",
+      "Ordered on (*) / received on (*): ______________________",
+      "Name of consumer(s): ______________________",
+      "Address of consumer(s): ______________________",
+      "Signature of consumer(s) (only if this form is notified on paper): ______________________",
+      "Date: ______________________",
+      "(*) Delete as appropriate."
+    ],
     "intro": {
       "title": "Preamble",
-      "paragraph1": "These General Terms and Conditions (hereinafter \"GTC\") govern the contractual relationship between you as the user (hereinafter \"user\" or \"you\") and the provider regarding the use of the handball statistics app \"Statix\" as well as the associated websites, the progressive web app and the related services (hereinafter collectively \"Statix\" or the \"service\").",
-      "paragraph2": "The terms and designations used in these GTC are to be understood as gender-neutral.",
-      "updatedAt": "As of: July 10, 2026"
+      "paragraph1": "These General Terms and Conditions (the “GTC”) govern the contractual relationship between you as a user (the “User” or “you”) and the provider regarding the use of the handball statistics app “Statix” as well as the associated websites, the progressive web app and the related services (together, “Statix” or the “Service”).",
+      "paragraph2": "All terms and designations used in these GTC are to be understood as gender-neutral.",
+      "updatedAt": "Version: 25 August 2026"
     },
     "sections": {
       "scope": {
         "title": "§ 1 Scope and provider",
         "paragraphs": [
-          "These GTC apply to the use of Statix in the version valid at the time the contract is concluded. Deviating terms of the user are not recognised unless the provider expressly agrees to their application in text form.",
-          "Statix is aimed at coaches, clubs and handball teams and may be used both by consumers (Section 13 of the German Civil Code, BGB) and by entrepreneurs (Section 14 BGB).",
-          "The provider and contracting party is the operator named below:"
+          "These GTC apply to the use of Statix in the version valid at the time the contract is concluded. Deviating terms of the User are not recognised unless the provider expressly agrees to their applicability in text form.",
+          "Statix is aimed at coaches, players, clubs and handball teams and may be used both by consumers (section 13 German Civil Code) and by entrepreneurs (section 14 German Civil Code).",
+          "The provider and contracting party is the operator named below. The full provider identification pursuant to section 5 DDG can be found in the legal notice:"
         ],
         "items": []
       },
       "subject": {
-        "title": "§ 2 Subject matter of the contract and description of services",
+        "title": "§ 2 Subject matter and description of services",
         "paragraphs": [
-          "Statix is a browser-based application (progressive web app) for recording and analysing handball statistics. The service includes in particular the following functions:"
+          "Statix is a browser-based application (progressive web app) for recording and analysing handball statistics and for organising day-to-day team life. The Service comprises in particular the following functions:"
         ],
         "items": [
-          "Live recording of match events (goals, shots, saves, penalties, substitutions, etc.) in real time by tapping – including offline in the sports hall, with automatic synchronisation as soon as an internet connection is available again.",
-          "Automatic calculation of player and team statistics, shooting percentages, shot maps, heatmaps and development trends.",
-          "Management of teams, rosters and player information as well as invitation of additional coaches.",
-          "Creation of tournaments with multiple teams, an automatic standings table and match scheduling.",
+          "Live recording of match events (goals, shots, saves, penalties, substitutions and more) in real time by tapping – including offline in the sports hall, with automatic synchronisation as soon as an internet connection is available again.",
+          "Automatic calculation of player and team statistics, shooting percentages, shot charts, heatmaps and development trends.",
+          "Management of teams, squads and player information, invitation of further coaches and self-service onboarding of players via an invitation link.",
+          "Club level: grouping several teams under one club, joint administration by club administrators and a cross-team career view for a person.",
+          "Scheduling: trainings, matches and team events with responses (accept/decline), reminders, absence entries (e.g. holiday, illness, injury) and a subscribable calendar feed (iCalendar).",
+          "Browser push notifications for appointments and reminders, provided the User expressly enables them.",
+          "Surveys sent to the squad via a link without sign-in.",
+          "Creation of tournaments with several teams, automatic standings and fixtures.",
           "Automated, AI-assisted analysis of matches, teams and individual players.",
-          "Sharing of analyses via link and export as PDF."
+          "Optional public live coverage of a match (“live ticker”) via an unguessable link, optionally with sponsor logos.",
+          "Sharing analyses via link, exporting the match report as a PDF and exporting individual statistics tables as CSV."
         ],
         "paragraphsAfter": [
-          "Statix is under continuous development and in its market-launch phase. The specific scope of functions results from the respective current version of the service as well as from the description of services on the provider's websites. The provider is entitled to further develop, modify or adjust individual functions, insofar as this is reasonable for the user."
+          "Statix is under continuous development and in its market launch phase. The specific scope of functions follows from the current version of the Service and from the service description on the provider's websites. The provider is entitled to further develop, change or adapt individual functions to the extent this is reasonable for the User and the core of the contractually owed service is preserved.",
+          "Statix is a tool for documentation and analysis. The provider owes neither a particular sporting result nor the accuracy of the data entered by the User."
         ]
       },
       "registration": {
-        "title": "§ 3 Registration, user account and usage requirements",
+        "title": "§ 3 Registration, user account and requirements for use",
         "paragraphs": [
-          "Use of the full range of functions requires the registration of a user account with a valid email address and a password. A non-binding live demo of individual functions is possible without registration.",
-          "By submitting the registration, the user makes an offer to conclude a usage contract. The contract comes into effect once the provider activates the account.",
-          "The user is obliged to provide truthful and complete information during registration and to keep it up to date.",
-          "Registration is permitted to natural persons who have reached the age of 16 and have full legal capacity. If the user acts on behalf of a club or organisation, they warrant that they are authorised to represent it.",
-          "The access data must be kept secret and protected from access by third parties. The user shall inform the provider without undue delay as soon as there are indications of misuse of the account."
+          "Using the full range of functions requires registering a user account with a valid email address and a password. A non-binding live demo of individual functions is available without registration.",
+          "By submitting the registration the User makes an offer to conclude a usage contract. The contract is concluded once the User has verified their email address via the confirmation link sent to them and the provider has activated the account.",
+          "The User undertakes to provide truthful and complete information upon registration and to keep it up to date.",
+          "Registration is permitted to natural persons who have reached the age of 16. Minors between 16 and 18 may create an account only with the consent of their legal guardians; by registering, a minor User confirms that such consent exists. Persons under the age of 16 are not provided with their own account. They may be recorded as squad members by a coach without holding an account themselves; § 7 applies accordingly.",
+          "If the User acts on behalf of a club or an organisation, they warrant that they are authorised to represent it.",
+          "Access credentials must be kept secret and protected against third-party access. The User shall inform the provider without undue delay as soon as there are indications of misuse of the account.",
+          "There is no entitlement to registration. The provider may refuse to activate an account without giving reasons."
         ],
         "items": []
       },
-      "availability": {
-        "title": "§ 4 Availability, maintenance and changes to the service",
+      "roles": {
+        "title": "§ 4 Roles: coaches, players, club",
         "paragraphs": [
-          "The provider endeavours to keep the service available as uninterruptedly as possible but does not owe any specific level of availability. In particular, maintenance work, technical faults, capacity reasons or circumstances beyond the provider's control (e.g. force majeure or outages of third-party providers) may lead to temporary restrictions.",
-          "Statix is offline-capable. Data recorded during offline use is initially stored locally on the device and synchronised with the provider's servers once an internet connection exists. A functioning internet connection and a compatible device are required for a successful synchronisation.",
-          "As the provider is in its market-launch phase, further developments, adjustments and individual changes to functions may occur. The provider will inform the user of material changes in an appropriate manner.",
-          "The provider is entitled to discontinue the operation of the service in whole or in part. In the event of a permanent discontinuation, the provider will inform the user in advance within a reasonable period and give them the opportunity to export their data."
+          "Statix distinguishes several roles with different permissions. For the purposes of the rights and obligations under these GTC:"
+        ],
+        "items": [
+          "Coaches create teams, record squads and matches and administer the team's data. They decide which data is entered into Statix and which content is published.",
+          "Players can create their own account via an invitation link and claim their squad entry. They then see appointments, their own statistics and responses, and can control their own entries themselves – such as absences and whether their name is shown on public pages.",
+          "Club administrators manage several teams of a club jointly and can view data across those teams, provided the teams are assigned to the club."
+        ],
+        "paragraphsAfter": [
+          "If a team is assigned to a club, the team's data belongs organisationally to the club and not to an individual coach account. If a coach closes their own account, a team with further members continues to exist and is handed over to a remaining member (§ 12 para. 4).",
+          "The assignment of a role does not entitle the provider to intervene in the internal relationship between club, coaches and players. Disputes about who may view or change which data are to be resolved between the parties involved."
+        ]
+      },
+      "availability": {
+        "title": "§ 5 Availability, maintenance and changes to the Service",
+        "paragraphs": [
+          "The provider endeavours to keep the Service available without interruption but does not owe any particular level of availability. In particular, maintenance work, technical faults, capacity reasons or circumstances outside the provider's control (e.g. force majeure or outages at third-party providers) may lead to temporary restrictions.",
+          "Statix is offline-capable. Data recorded while offline is first stored locally on the device and synchronised with the provider's servers once an internet connection exists. A functioning internet connection and a compatible device are required for successful synchronisation. If the device's browser data is deleted before synchronisation has taken place, data not yet transferred is lost.",
+          "As the provider is in its market launch phase, further development, adjustments and individual functional changes may occur. The provider will inform the User of material changes in an appropriate manner.",
+          "The provider is entitled to discontinue operation of the Service in whole or in part. In the event of permanent discontinuation, the provider will inform the User at least 30 days in advance and give them the opportunity to export their data.",
+          "The provider may impose quantitative limits on individual functions (e.g. the number of AI analyses per team and period) in order to ensure stable operation and a fair distribution of capacity. The applicable limits are displayed in the application."
         ],
         "items": []
       },
       "pricing": {
-        "title": "§ 5 Free and paid services",
+        "title": "§ 6 Free and paid services",
         "paragraphs": [
-          "The service is currently provided free of charge. No fees are incurred for registration and the functions currently available; there is no obligation to pay without an express, separate agreement.",
-          "The provider intends to offer paid subscriptions (\"subscriptions\") in the future, in particular for teams and clubs. The scope, prices, billing periods and service details of a paid subscription result from the respective valid overview of services and prices in the ordering process.",
-          "A paid contract is only concluded once the user expressly selects a paid service, confirms the price details and completes the ordering process. Before concluding such a contract, the user will be informed of all material components of the contract, in particular the total price.",
-          "All prices are inclusive of any applicable statutory value-added tax, insofar as such tax applies."
+          "The Service is currently provided free of charge. No fees apply for registration or for the functions currently available; there is no payment obligation without an express, separate agreement.",
+          "The provider intends to offer paid subscriptions in the future, in particular for teams and clubs. The scope, prices, billing periods and service details of a paid subscription follow from the applicable service and price overview in the ordering process.",
+          "A paid contract is only concluded once the User expressly selects a paid service, confirms the price information and completes the ordering process via a button expressly labelled as entailing an obligation to pay (section 312j para. 3 German Civil Code). Before such a contract is concluded, the User is informed of all essential elements of the contract, in particular the total price.",
+          "All prices are final prices. The provider charges VAT only to the extent it is obliged to do so; where the small business rule under section 19 German VAT Act applies, no VAT is shown and a corresponding note is included on the invoice.",
+          "Existing free accounts do not automatically become subject to charges when paid services are introduced. If a function previously offered free of charge will in future only be available for a fee, the provider will give reasonable advance notice; § 16 remains unaffected."
         ],
         "items": []
       },
       "obligations": {
-        "title": "§ 6 User obligations and responsibility",
+        "title": "§ 7 User obligations and responsibility",
         "paragraphs": [
-          "The user undertakes to use Statix only within the framework of applicable law and these GTC.",
-          "The user is solely responsible for all content and data that they enter, store or process in Statix. This applies in particular to personal data of third parties, such as players (e.g. names, jersey numbers, positions and performance data).",
-          "The user warrants that they are entitled to process the personal data of third parties entered by them and that they have the necessary legal basis (e.g. consent) for doing so. If the data concerns minors, the user must obtain the necessary consent from the legal guardians.",
-          "The user shall indemnify the provider against any third-party claims asserted against the provider due to an unlawful entry or processing of data by the user, including reasonable costs of legal defence. This does not apply insofar as the user is not responsible for the infringement.",
-          "The user is prohibited from posting unlawful, offensive or infringing content, from using the service abusively, from circumventing security mechanisms or from reverse-engineering the software, unless this is mandatorily permitted by law."
+          "The User undertakes to use Statix only within the framework of applicable law and these GTC.",
+          "The User is themselves responsible for all content and data they enter, store or process in Statix. This applies in particular to personal data of third parties, such as players (e.g. names, year or date of birth, jersey numbers, positions, performance data, attendance and absences).",
+          "The User warrants that they are entitled to process the personal data of third parties they enter and that they have the necessary legal basis for doing so (e.g. consent or a provision in the club's statutes). Where the data concerns minors, the User must obtain the required consent of the legal guardians.",
+          "If the User enters information from which a person's state of health can be inferred – in particular an absence due to illness or injury and any associated notes – they are processing special categories of personal data within the meaning of Article 9 GDPR. For such entries the User must obtain the explicit consent of the data subject in advance, or of the legal guardians in the case of minors. The provider recommends refraining from free-text notes on illness and injury where they are not necessary for training planning.",
+          "The User shall indemnify the provider against all third-party claims asserted against the provider as a result of unlawful entry or processing of data by the User, including reasonable costs of legal defence. This does not apply where the User is not responsible for the infringement.",
+          "The User is prohibited from posting unlawful, offensive or infringing content, from misusing the Service, from circumventing security mechanisms, from querying the Service automatically to an extent that goes beyond intended use, or from reverse engineering the software, unless this is mandatorily permitted by law.",
+          "The provider may block or remove content and temporarily restrict access if there is reasonable suspicion of a material breach of these GTC or of an infringement of rights. The provider will inform the User of this and, where possible and reasonable, give them the opportunity to comment."
         ],
         "items": []
       },
       "dataProtection": {
-        "title": "§ 7 Data protection and order processing",
+        "title": "§ 8 Data protection and processing on behalf",
         "paragraphs": [
-          "The provider processes personal data within the framework of applicable data protection laws. Details on the processing of personal data can be found in the privacy policy.",
-          "Insofar as the provider processes personal data of third parties (in particular player data) on behalf of the user, which the user enters on their own responsibility, the provider acts in this respect as a processor within the meaning of Art. 28 GDPR. Upon request, the provider will provide the user with a data processing agreement (DPA).",
-          "To provide the service, the provider uses carefully selected service providers as processors. These include in particular:"
+          "The provider processes personal data within the framework of applicable data protection law. Details of the processing of personal data can be found in the privacy policy.",
+          "Insofar as the provider processes personal data of third parties on the User's instructions (in particular player, appointment, absence and survey data) which the User enters on their own responsibility, the provider acts as a processor within the meaning of Article 28 GDPR; the controller is the User or their club. For the user account data itself and for the technical operation of the Service, the provider is its own controller.",
+          "Upon request to the address stated in the legal notice, the provider provides a data processing agreement pursuant to Article 28(3) GDPR together with annexes on technical and organisational measures and on the sub-processors engaged. Clubs recording data of youth teams should conclude this agreement before entering any data.",
+          "To provide the Service the provider engages carefully selected service providers as processors. These include in particular:"
         ],
         "items": [
-          "Supabase – database and storage services",
-          "Vercel – hosting and operation of the websites and the application",
-          "Brevo (Sendinblue) – sending of emails",
-          "Anthropic – AI-assisted analyses",
-          "OpenAI – AI-assisted analyses"
+          "Supabase – database and file storage services (hosting region Frankfurt am Main)",
+          "Vercel – hosting and operation of the websites and the application as well as anonymised reach measurement",
+          "Brevo – sending emails (registration confirmations, reminders, contact requests, newsletter)",
+          "Anthropic and OpenAI – AI-assisted analyses based on pseudonymised data",
+          "The push services of the browser vendors (including Google, Mozilla, Apple) – delivery of push notifications that have been enabled"
         ],
         "paragraphsAfter": [
-          "When using individual service providers, data may be transferred to third countries (e.g. the USA). The provider takes the measures necessary for this (e.g. EU standard contractual clauses). Further information can be found in the privacy policy."
+          "When individual service providers are used, data may be transferred to third countries (in particular the USA). The provider bases such transfers on an adequacy decision of the European Commission (EU-U.S. Data Privacy Framework) where the respective service provider is certified, and otherwise on standard contractual clauses pursuant to Article 46(2)(c) GDPR. Further information is set out in the privacy policy.",
+          "The provider will inform the User in text form at least 30 days in advance of engaging a new sub-processor; the User may object to the change on important data protection grounds."
         ]
       },
       "ai": {
-        "title": "§ 8 AI-assisted analyses",
+        "title": "§ 9 AI-assisted analyses",
         "paragraphs": [
-          "Statix offers automated, AI-assisted analyses of matches, teams and players. These analyses are created using third-party services (in particular Anthropic and OpenAI).",
-          "AI-generated analyses are based on statistical methods and the data recorded by the user. They may be incomplete, inaccurate or erroneous and serve exclusively for information and support purposes.",
-          "The analyses do not constitute a binding recommendation for action and do not replace the user's own assessment and decision. The provider assumes no warranty for the correctness, completeness or suitability of the AI-assisted results for a specific purpose."
+          "Statix offers automated, AI-assisted analyses of matches, teams and individual players. These analyses are produced with the help of third-party services (in particular Anthropic and OpenAI). An analysis is never generated automatically in the background but is always triggered by a deliberate action of the User.",
+          "Before transmission to the AI provider, the names of players are replaced with meaningless identifiers (pseudonymisation). The mapping between identifiers and persons does not leave the Service. The privacy policy describes the details.",
+          "The results are AI-generated content within the meaning of Regulation (EU) 2024/1689 (AI Act). They are labelled as such in the application. AI-generated analyses are based on statistical methods and on the data recorded by the User. They may be incomplete, inaccurate or erroneous and serve exclusively for information and support purposes.",
+          "The analyses do not constitute a binding recommendation for action and do not replace the User's own assessment and decision. The provider gives no warranty as to the accuracy, completeness or suitability of the AI-assisted results for any particular purpose.",
+          "No automated decision-making in individual cases, including profiling, within the meaning of Article 22 GDPR takes place that produces legal effects concerning a data subject or similarly significantly affects them. Whether a player is selected, developed or substituted is decided solely by the coach.",
+          "The User is not obliged to use the AI function; the remaining scope of functions is available without it. Upon request the provider will deactivate AI analysis for a team or a club."
+        ],
+        "items": []
+      },
+      "publicSharing": {
+        "title": "§ 10 Public sharing and shared content",
+        "paragraphs": [
+          "The User may make individual content publicly accessible via an unguessable link – in particular a running live ticker and finished match reports. Without such express sharing, a team's data is accessible only to its members.",
+          "Anyone who shares content thereby publishes personal data of third parties and is responsible for doing so. Before sharing, the User must ensure that the players concerned – or their legal guardians in the case of minors – agree to it.",
+          "Players with their own account can specify in their settings that their name is not shown on public pages. This decision always takes precedence over a broader team-level setting and cannot be overridden by a coach.",
+          "Sharing can be ended at any time; the link is then no longer accessible. The provider has no influence over whether third parties have copied, saved or cached previously public content in search engines.",
+          "Sponsor logos uploaded by the User for the live ticker must be free of third-party rights or a corresponding permission to use them must exist. § 7 para. 5 applies accordingly."
         ],
         "items": []
       },
       "ipRights": {
-        "title": "§ 9 Rights of use and intellectual property",
+        "title": "§ 11 Rights of use and intellectual property",
         "paragraphs": [
-          "All rights to the software, the websites, the design, the trademarks, logos and other content of Statix belong to the provider or its licensors.",
-          "For the duration of the contract, the provider grants the user a simple, non-exclusive, non-transferable and non-sublicensable right to use Statix within the contractually intended scope.",
-          "The user retains all rights to the content and data entered by them. They grant the provider the simple right of use necessary for providing the service, in particular for storing, processing, analysing and displaying this content within the scope of the service."
+          "All rights to the software, the websites, the design, the trade marks, logos and other content of Statix belong to the provider or its licensors.",
+          "For the term of the contract, the provider grants the User a simple, non-exclusive, non-transferable and non-sublicensable right to use Statix within the contractually envisaged scope.",
+          "The User retains all rights to the content and data they enter. They grant the provider the simple right of use necessary to provide the Service, in particular to store, process, analyse and display such content within the Service. This right of use ends when the respective content is deleted.",
+          "The provider may use data in aggregated and anonymised form which does not permit any conclusions about individual persons, teams or clubs in order to improve and statistically evaluate the Service.",
+          "The User's content is not used to train AI models of the provider or of third parties."
         ],
         "items": []
       },
       "dataExport": {
-        "title": "§ 10 Data export and deletion",
+        "title": "§ 12 Data export, deletion and account closure",
         "paragraphs": [
-          "The user can share the analyses recorded in Statix within the scope of the functions provided and export them as PDF.",
-          "After the contract ends, the user account and the associated data are deleted in accordance with the statutory requirements and the privacy policy, insofar as no statutory retention obligations prevent this. The user is themselves responsible for exporting any required data before the contract ends."
+          "Within the functions provided, the User can share the analyses they have recorded in Statix, export the match report as a PDF and individual statistics tables as CSV, and subscribe to the appointment calendar as an iCalendar feed.",
+          "Beyond the export functions available in the application, the provider will, upon request to the address stated in the legal notice, provide the User with the data stored for their account and their teams in a structured, commonly used and machine-readable format. Requests are processed without undue delay and within 30 days at the latest.",
+          "The User can delete their account themselves at any time (Settings → Account). Anyone who can no longer sign in should send the deletion request to the email address stated in the legal notice. Deletion is final; there is no restoration and no grace period.",
+          "When the account is deleted, teams in which the User is the sole member are deleted, including the associated squad, match, appointment and analysis data. Teams with further members continue to exist and are handed over to the longest-serving remaining member; the same applies to teams assigned to a club.",
+          "The User is themselves responsible for exporting any data they need before deletion or before the end of the contract. The privacy policy describes the details and the storage periods for technical logs."
         ],
         "items": []
       },
       "liability": {
-        "title": "§ 11 Warranty and liability",
+        "title": "§ 13 Warranty and liability",
         "paragraphs": [
-          "Where the service is provided free of charge, the provider is only liable for damages based on intent or gross negligence, as well as in accordance with the provisions on gifts.",
-          "Otherwise, the provider is liable without limitation in the event of intent and gross negligence as well as for injury to life, body or health.",
-          "In the event of a slightly negligent breach of a material contractual obligation (cardinal obligation), the fulfilment of which is essential for the proper performance of the contract and on the observance of which the user may regularly rely, liability is limited to the foreseeable damage typical of the contract. Otherwise, liability for slight negligence is excluded.",
-          "Liability under the Product Liability Act and arising from an expressly assumed guarantee remains unaffected.",
-          "The user is themselves responsible for regularly backing up their data. The provider is only liable for the loss of data to the extent that the loss would have occurred even if the user had properly backed up the data."
+          "Where the Service is provided free of charge, the provider is liable only for damage based on intent or gross negligence, and in accordance with the provisions on gifts.",
+          "Otherwise the provider is liable without limitation in cases of intent and gross negligence as well as for injury to life, body or health.",
+          "In the event of slightly negligent breach of a material contractual obligation (cardinal obligation), the fulfilment of which is essential to the proper performance of the contract and on the observance of which the User may regularly rely, liability is limited to the damage typical for the contract and foreseeable. Otherwise liability for slight negligence is excluded.",
+          "Liability under the German Product Liability Act and arising from an expressly assumed guarantee remains unaffected. For contracts with consumers for digital products against payment, the statutory rights in the event of defects (sections 327 et seq. German Civil Code) remain unaffected.",
+          "The User is themselves responsible for regularly backing up their data. The provider is liable for the loss of data only to the extent that the loss would also have occurred had the User backed up the data properly.",
+          "The provider is not liable for the accuracy of the match and statistics data recorded by the User, nor for decisions the User takes on the basis of the analyses."
         ],
         "items": []
       },
       "term": {
-        "title": "§ 12 Contract term and termination",
+        "title": "§ 14 Contract term and termination",
         "paragraphs": [
           "The usage contract for free use is concluded for an indefinite period and may be terminated by either party at any time without notice, in particular by deleting the user account.",
-          "The term, renewal and termination of any paid subscription are governed by the conditions specified in the respective ordering process.",
-          "The right to extraordinary termination for good cause remains unaffected for both parties. Good cause exists for the provider in particular in the event of a significant breach of these GTC by the user.",
-          "Terminations must be made in text form (e.g. by email)."
+          "The term, renewal and termination of any paid subscription are governed by the conditions stated in the respective ordering process. Where a paid continuing obligation is offered to consumers, the provider will provide a termination button pursuant to section 312k German Civil Code.",
+          "The right to extraordinary termination for good cause remains unaffected for both parties. For the provider, good cause exists in particular in the event of a material breach of these GTC by the User.",
+          "Terminations require text form (e.g. by email); deleting the account within the application is sufficient."
         ],
         "items": []
       },
       "withdrawal": {
-        "title": "§ 13 Right of withdrawal for consumers",
+        "title": "§ 15 Right of withdrawal for consumers",
         "paragraphs": [
-          "Consumers have a statutory right of withdrawal for paid contracts on digital content or services. For the currently free use, there is no right of withdrawal in the absence of a paid service.",
-          "If a paid contract is concluded in the future, the following applies: You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day the contract is concluded. To exercise your right of withdrawal, you must inform us of your decision to withdraw from this contract by means of a clear statement (e.g. by email to the address given in the legal notice).",
-          "In the case of a contract for the supply of digital content not delivered on a physical medium, the right of withdrawal expires prematurely if you have expressly agreed that performance should begin before the withdrawal period expires and you have confirmed your knowledge that you thereby lose your right of withdrawal."
+          "Consumers have a statutory right of withdrawal in respect of paid contracts for digital content or digital services. For the currently free use there is no right of withdrawal, as there is no service against payment.",
+          "If a paid contract is concluded in future, the following withdrawal instructions apply:",
+          "Right of withdrawal: You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day of conclusion of the contract.",
+          "To exercise your right of withdrawal, you must inform us (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Germany, email: kontakt@statix-app.de) of your decision to withdraw from this contract by an unequivocal statement (e.g. a letter sent by post or an email). You may use the attached model withdrawal form, but it is not obligatory. To meet the withdrawal deadline it is sufficient for you to send your communication concerning your exercise of the right of withdrawal before the withdrawal period has expired.",
+          "Effects of withdrawal: If you withdraw from this contract, we shall reimburse to you all payments received from you without undue delay and in any event not later than fourteen days from the day on which we are informed about your decision to withdraw from this contract. We will carry out such reimbursement using the same means of payment as you used for the initial transaction, unless you have expressly agreed otherwise; in any event, you will not incur any fees as a result of such reimbursement.",
+          "Early expiry of the right of withdrawal: In the case of a contract for the supply of digital content not supplied on a tangible medium, the right of withdrawal expires early if we have begun performance of the contract after you have expressly consented to us beginning performance before the end of the withdrawal period, you have acknowledged that you thereby lose your right of withdrawal upon commencement of performance, and we have provided you with confirmation of this.",
+          "If you requested that a service should begin during the withdrawal period, you shall pay us an amount which is in proportion to what has been provided until you have communicated to us your exercise of the right of withdrawal in relation to this contract, in comparison with the full coverage of the contract."
+        ],
+        "items": [],
+        "paragraphsAfter": [
+          "As soon as paid contracts subject to withdrawal can be concluded via the provider's website, the provider will additionally provide the statutory withdrawal button pursuant to section 356a German Civil Code."
+        ]
+      },
+      "changes": {
+        "title": "§ 16 Amendments to these GTC",
+        "paragraphs": [
+          "The provider reserves the right to amend these GTC with effect for the future insofar as this is necessary to adapt to changed legal or technical conditions or to extend the range of services, and the User is not thereby unreasonably disadvantaged. Changes to the main contractual obligations or to the remuneration are not covered by this; they require a separate agreement.",
+          "The provider will inform the User of amendments in text form (e.g. by email or within the Service) at least six weeks before they take effect. The amendments are deemed approved if the User does not object to them by the proposed date on which they take effect. The provider will specifically point out this consequence and the right to object in the notification. If the User objects, both parties are entitled to terminate the contract with effect from the intended date on which the amendments would take effect."
         ],
         "items": []
       },
-      "changes": {
-        "title": "§ 14 Changes to these GTC",
+      "disputeResolution": {
+        "title": "§ 17 Dispute resolution",
         "paragraphs": [
-          "The provider reserves the right to amend these GTC with effect for the future, insofar as this is necessary to adapt to changed legal or technical conditions or to expand the range of services and the user is not thereby unreasonably disadvantaged.",
-          "The provider will inform the user of changes in an appropriate manner (e.g. by email or within the service). The changes are deemed approved if the user does not object to them within six weeks of receiving the notification. The provider will draw particular attention to this consequence in the notification. If the user objects, both parties are entitled to terminate the contract."
+          "The online dispute resolution platform (ODR platform) operated by the European Commission was discontinued on 20 July 2025 and is no longer available.",
+          "The provider is neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board (section 36(1) no. 1 German Consumer Dispute Resolution Act).",
+          "Please address complaints and concerns first to the email address stated in the legal notice. The provider endeavours to resolve them swiftly and amicably."
         ],
         "items": []
       },
       "final": {
-        "title": "§ 15 Final provisions",
+        "title": "§ 18 Final provisions",
         "paragraphs": [
-          "The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods. For consumers, this choice of law only applies insofar as the consumer is not thereby deprived of the protection of mandatory provisions of the law of the state of their habitual residence.",
-          "If the user is a merchant, a legal entity under public law or a special fund under public law, the exclusive place of jurisdiction for all disputes arising from this contract is the provider's registered office.",
-          "The European Commission provides a platform for online dispute resolution (ODR), which you can reach via the following link. The provider is neither obliged nor willing to participate in a dispute resolution procedure before a consumer arbitration board.",
-          "Should individual provisions of these GTC be or become wholly or partially invalid, the validity of the remaining provisions remains unaffected.",
-          "The German version of these GTC is authoritative. Translations serve exclusively for better comprehensibility."
+          "The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods. For consumers this choice of law applies only to the extent that it does not deprive the consumer of the protection of mandatory provisions of the law of the state of their habitual residence.",
+          "If the User is a merchant, a legal entity under public law or a special fund under public law, the exclusive place of jurisdiction for all disputes arising from this contract is the provider's registered office. For consumers the statutory places of jurisdiction apply.",
+          "The User may transfer rights and obligations under this contract to a third party only with the provider's prior consent in text form.",
+          "Should individual provisions of these GTC be or become wholly or partly invalid, the validity of the remaining provisions remains unaffected. The statutory provision takes the place of the invalid provision.",
+          "The German version of these GTC is authoritative. Translations serve solely to aid comprehension."
         ],
         "items": []
       }
@@ -248,7 +325,7 @@
       "title": "Imprint",
       "description": "Mandatory provider details under § 5 DDG: who runs Statix, how to reach us and who is responsible for the content. The privacy policy lives on its own page.",
       "transparencyBadge": "Transparent and compliant",
-      "lastUpdated": "Last updated: April 01, 2026"
+      "lastUpdated": "Last updated: 25 August 2026"
     },
     "impressum": {
       "title": "Imprint",
@@ -259,84 +336,144 @@
       "contentResponsibilityLabel": "Responsible for the content"
     },
     "privacy": {
-      "title": "Privacy policy",
+      "title": "Privacy Policy",
       "shortTitle": "Privacy",
       "preamble": {
         "title": "Preamble",
-        "paragraph1": "With the following privacy policy, we would like to inform you about the types of your personal data, also referred to below simply as data, that we process, for what purposes and to what extent. This privacy policy applies to all processing of personal data carried out by us, both in the context of providing our services and especially on our websites, in mobile applications and within external online presences such as our social media profiles, collectively referred to below as the online offering.",
-        "paragraph2": "The terms used are gender-neutral."
+        "paragraph1": "With the following privacy policy we would like to explain to you what types of your personal data (hereinafter also referred to simply as “data”) we process, for what purposes and to what extent. This privacy policy applies to all processing of personal data carried out by us, both in the provision of our services and in particular on our websites, in the Statix app and within external online presences such as our social media profiles (hereinafter collectively referred to as the “online offering”).",
+        "paragraph2": "Statix is used predominantly by coaches who record data about other people – often about young people. This policy therefore states at every point who is responsible for which data: we for the operation of the Service, the club or the coach for the content they enter. All terms used are gender-neutral."
       },
       "responsibleParty": {
         "title": "Controller",
-        "representativesLabel": "Authorized representatives:",
-        "emailLabel": "Email address:"
+        "representativesLabel": "Authorised representatives:",
+        "emailLabel": "Email address:",
+        "phoneLabel": "Telephone:",
+        "dpoLabel": "Data protection officer:",
+        "dpoText": "No data protection officer has been appointed; the conditions of Article 37 GDPR and section 38 German Federal Data Protection Act are not met. For all data protection matters please contact the email address above.",
+        "supervisoryLabel": "Competent supervisory authority:",
+        "supervisoryText": "Bavarian State Office for Data Protection Supervision (BayLDA), Promenade 18, 91522 Ansbach, Germany."
+      },
+      "controllerRoles": {
+        "title": "Who is responsible for what?",
+        "description": "Statix is filled with data from two sides. Who is the controller within the meaning of the GDPR depends on which data is concerned:",
+        "items": [
+          {
+            "title": "We as the provider are the controller",
+            "description": "for your user account data (name, email address, password hash, sign-in times), for the use of our websites, for contact requests and the newsletter, and for technical operation including error logs and abuse protection."
+          },
+          {
+            "title": "The coach or the club is the controller",
+            "description": "for all content entered in the app about other people: squad data, match events, appointments, responses, absences, survey answers and sharing. We process this data exclusively on instructions as a processor pursuant to Article 28 GDPR."
+          },
+          {
+            "title": "Data processing agreement",
+            "description": "Clubs and teams that record data of their members – in particular minors – can obtain a data processing agreement pursuant to Article 28(3) GDPR, together with annexes on technical and organisational measures and on the sub-processors engaged, by requesting it at our contact address."
+          },
+          {
+            "title": "Data subject rights",
+            "description": "Players should address requests for access, rectification and erasure concerning their squad data to their club or coach. If such requests reach us directly, we forward them to the responsible party and support them in fulfilling the request."
+          }
+        ]
       },
       "processingOverview": {
-        "title": "Overview of processing activities",
-        "description": "The following overview summarizes the types of data processed, the purposes of processing and the categories of data subjects concerned.",
+        "title": "Overview of processing operations",
+        "description": "The following overview summarises the types of data processed and the purposes of their processing and refers to the data subjects concerned.",
         "processedDataTypesTitle": "Types of data processed",
         "processedDataTypes": [
-          "Master data",
-          "Contact data",
-          "Content data",
-          "Usage data",
-          "Meta, communication and procedural data",
-          "Log data",
-          "Match and statistics data (e.g. match events, lineups, results)",
-          "Credentials (e.g. email address, password hash)"
+          "Master data (e.g. names, club affiliation)",
+          "Contact data (e.g. email address, telephone number)",
+          "Access data (e.g. email address, password hash, invitation and sharing tokens)",
+          "Content data (e.g. notes on appointments, survey answers, uploaded logos)",
+          "Match and statistics data (e.g. match events, line-ups, playing times, results)",
+          "Master data of squad members (e.g. first and last name, jersey number, position, year or date of birth, period of membership)",
+          "Appointment and attendance data (e.g. acceptances and declines, comments on appointments, absence periods)",
+          "Health-related information (Article 9 GDPR) – only where an absence is entered as illness or injury, together with an optional note",
+          "Usage data (e.g. functions accessed, time of last use)",
+          "Meta, communication and procedural data (e.g. IP addresses, device and browser information)",
+          "Log data (e.g. technical error logs)"
         ],
         "affectedPeopleTitle": "Categories of data subjects",
         "affectedPeople": [
-          "Communication partners",
-          "Users (e.g. coaches)",
-          "Players entered by users"
+          "Communication partners (e.g. people who write to us)",
+          "Users with their own account (coaches, club officials, players)",
+          "Players recorded by users without their own account, including minors",
+          "Visitors to our websites and to public live tickers",
+          "Newsletter recipients"
         ],
         "purposesTitle": "Purposes of processing",
         "purposes": [
-          "Provision of contractual services and fulfillment of contractual obligations",
-          "Communication",
-          "Security measures",
-          "Office and organizational procedures",
-          "Organizational and administrative procedures",
-          "Feedback",
+          "Provision of contractual services and fulfilment of contractual obligations",
+          "Provision of the app functions (match recording, statistics, scheduling, live coverage)",
+          "Organisation of day-to-day team life (appointments, responses, absences, surveys)",
+          "AI-assisted analysis of pseudonymised match and statistics data",
+          "Communication and responding to enquiries",
+          "Direct marketing by newsletter on the basis of consent",
+          "Security measures, protection against abuse and spam",
           "Provision of our online offering and user-friendliness",
-          "Information technology infrastructure",
+          "Information technology infrastructure and error analysis",
+          "Anonymised reach measurement",
           "Public relations",
-          "AI-assisted analysis of match and statistics data",
-          "Provision of app features (match recording, statistics, live sharing)"
+          "Feedback and improvement of the offering"
         ]
       },
       "legalBasis": {
         "title": "Relevant legal bases",
         "introLabel": "Relevant legal bases under the GDPR:",
-        "introText": "Below you will find an overview of the legal bases of the GDPR on which we process personal data. Please note that, in addition to the GDPR, national data protection rules may apply in your or our country of residence or establishment. If more specific legal bases are relevant in individual cases, we will inform you of them in this privacy policy.",
+        "introText": "Below you will find an overview of the legal bases of the GDPR on which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection requirements may apply in your or our country of residence or establishment. Should more specific legal bases be relevant in an individual case, we will inform you of these in this privacy policy.",
         "items": [
           {
-            "title": "Consent (Art. 6 para. 1 sentence 1 lit. a GDPR)",
-            "description": "The data subject has given consent to the processing of personal data concerning them for one or more specific purposes."
+            "title": "Consent (Article 6(1)(1)(a) GDPR)",
+            "description": "The data subject has given consent to the processing of their personal data for one or more specific purposes. We rely on this in particular for the newsletter, for voluntary information from the onboarding survey and for push notifications."
           },
           {
-            "title": "Performance of a contract and pre-contractual requests (Art. 6 para. 1 sentence 1 lit. b GDPR)",
-            "description": "Processing is necessary for the performance of a contract to which the data subject is party or to take steps at the request of the data subject prior to entering into a contract."
+            "title": "Explicit consent for special categories (Article 9(2)(a) GDPR)",
+            "description": "Information from which a person's state of health can be inferred – in our case exclusively an absence entered as illness or injury together with its note – may only be processed with the explicit consent of the data subject, or of the legal guardians in the case of minors. Obtaining this consent is the responsibility of the club or of the recording coach."
           },
           {
-            "title": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)",
-            "description": "Processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, unless such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data."
+            "title": "Consent of minors (Article 8 GDPR)",
+            "description": "For information society services offered directly to a child, processing based on consent is lawful in Germany only from the age of 16; below that age the authorisation of the holder of parental responsibility is required."
+          },
+          {
+            "title": "Performance of a contract and pre-contractual enquiries (Article 6(1)(1)(b) GDPR)",
+            "description": "Processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract."
+          },
+          {
+            "title": "Legal obligation (Article 6(1)(1)(c) GDPR)",
+            "description": "Processing is necessary for compliance with a legal obligation to which we are subject – such as commercial and tax law retention obligations."
+          },
+          {
+            "title": "Legitimate interests (Article 6(1)(1)(f) GDPR)",
+            "description": "Processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, provided that the interests, fundamental rights and freedoms of the data subject which require the protection of personal data do not override those interests. We rely on this in particular for secure and stable operation, for the prevention of abuse and for anonymised reach measurement."
+          },
+          {
+            "title": "Storage on and access to terminal equipment (section 25 TDDDG)",
+            "description": "Storing information on your terminal equipment and accessing it is permitted without consent only where this is strictly necessary to provide a service expressly requested by you (section 25(2) no. 2 TDDDG). We use only such strictly necessary storage; a consent banner is therefore not required."
           }
         ]
       },
       "securityMeasures": {
         "title": "Security measures",
-        "paragraph1": "In accordance with legal requirements, taking into account the state of the art, implementation costs and the nature, scope, context and purposes of processing as well as the differing likelihood and severity of the risks to the rights and freedoms of natural persons, we implement appropriate technical and organizational measures to ensure a level of protection appropriate to the risk.",
+        "paragraph1": "In accordance with statutory requirements and taking into account the state of the art, the costs of implementation and the nature, scope, circumstances and purposes of processing as well as the varying likelihood and severity of the risk to the rights and freedoms of natural persons, we implement appropriate technical and organisational measures to ensure a level of protection appropriate to the risk.",
         "connectionLabel": "Securing online connections using TLS/SSL encryption technology (HTTPS):",
-        "connectionText": "To protect the data of users transmitted via our online services from unauthorized access, we rely on TLS/SSL encryption technology. These technologies encrypt the information transmitted between the website or app and the user's browser, thereby protecting the data from unauthorized access."
+        "connectionText": "In order to protect the data of users transmitted via our online services against unauthorised access, we use TLS/SSL encryption technology. These technologies encrypt the information transmitted between the website or app and the user's browser, protecting the data against unauthorised access.",
+        "measuresTitle": "Further measures at a glance",
+        "measures": [
+          "Passwords are stored exclusively as a cryptographic hash (bcrypt) and are not visible to us in plain text.",
+          "Every database access takes place server-side and is limited to the respective team or club; there is no access to the database from the browser.",
+          "All database tables are additionally locked by “row level security” with no permitting rule, so that the public database keys can read no data whatsoever.",
+          "Links for password reset and email confirmation are stored only as a hash, are valid for a limited time and are deleted after expiry.",
+          "Sign-in, registration and sharing endpoints are protected against automated attacks by counting limits.",
+          "Public sharing (live ticker, shared reports) takes place exclusively via randomly generated, unguessable addresses and can be revoked at any time.",
+          "Before any transfer to an AI provider, personal names are replaced by identifiers (pseudonymisation).",
+          "Technical data that is no longer needed is deleted by an automatic database job that runs daily (see “Storage period and deletion”)."
+        ]
       },
       "webHosting": {
         "title": "Provision of the online offering and web hosting",
-        "description": "We process users' data in order to provide them with our online services. For this purpose, we process the user's IP address, which is necessary to transmit the content and functions of our online services to the user's browser or device.",
+        "description": "We process users' data in order to be able to provide them with our online services. For this purpose we process the user's IP address, which is necessary in order to transmit the content and functions of our online services to the user's browser or device.",
         "summaryItems": [
           {
-            "label": "Types of processed data:",
+            "label": "Types of data processed:",
             "value": "Usage data, meta, communication and procedural data, log data, content data."
           },
           {
@@ -349,27 +486,41 @@
           },
           {
             "label": "Legal bases:",
-            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)."
+            "value": "Legitimate interests (Article 6(1)(1)(f) GDPR); performance of a contract (Article 6(1)(1)(b) GDPR)."
+          },
+          {
+            "label": "Storage period:",
+            "value": "Server logs of the hosting provider are deleted at short notice in accordance with its specifications; error logs stored by us after 90 days."
           }
         ],
-        "processorSectionTitle": "Data processing agreement",
-        "processorSectionText": "We have concluded a data processing agreement for the use of the above-mentioned service. This is a contract required under data protection law which ensures that the service processes the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR.",
+        "processorSectionTitle": "Processing on behalf",
+        "processorSectionText": "We have concluded a data processing agreement for the use of the service named above. This is a contract required by data protection law which ensures that the provider processes the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR.",
         "vercelTitle": "Vercel",
-        "vercelDescription": "Services in the field of providing information technology infrastructure and related services, such as storage space and/or computing capacities, as well as development environments.",
+        "vercelDescription": "Services in the field of providing information technology infrastructure and related services (e.g. storage space and/or computing capacity) as well as a development environment. Static content is delivered via the provider's worldwide content delivery network; a transfer to the USA may take place in the process.",
         "vercelItems": [
           {
+            "label": "Service provider:",
+            "value": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA"
+          },
+          {
             "label": "Legal bases:",
-            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)."
+            "value": "Legitimate interests (Article 6(1)(1)(f) GDPR); performance of a contract (Article 6(1)(1)(b) GDPR)."
           },
           {
-            "label": "Standard contractual clauses:"
+            "label": "Basis for third-country transfers:",
+            "value": "Adequacy decision of the European Commission (EU-U.S. Data Privacy Framework) where the provider is certified, otherwise standard contractual clauses pursuant to Article 46(2)(c) GDPR."
           },
           {
-            "label": "Data processing agreement:"
+            "label": "Standard contractual clauses:",
+            "url": "https://vercel.com/legal/dpa"
+          },
+          {
+            "label": "Data processing agreement:",
+            "url": "https://vercel.com/legal/dpa"
           }
         ],
         "analyticsTitle": "Vercel Analytics & Speed Insights",
-        "analyticsDescription": "We use Vercel Analytics and Speed Insights to measure technical performance and optimize the usability of our website. The collected data is evaluated exclusively in anonymized and aggregated form. It is not possible to assign it to individual persons. These tools collect only anonymized, aggregated data such as page views, device types, browser details and web vitals. No IP addresses or other data that would allow the identification of natural persons are stored. The tools do not use cookies or other local storage technologies.",
+        "analyticsDescription": "We use Vercel Analytics and Speed Insights to measure the reach and the technical performance of our website. The analysis works without cookies and without any other storage on your device. From the IP address, the user agent and further technical characteristics of the request, the provider forms a hash value that changes daily and cannot be reversed, in order to recognise repeat visits within one day. The IP address itself is not stored, the hash value cannot be attributed to a person and becomes unusable after 24 hours at the latest. Only aggregated metrics are then evaluated, such as page views, country of origin, device type, browser and loading times (web vitals), as well as two events triggered by us (a click on the live demo and a click on registration).",
         "analyticsItems": [
           {
             "label": "Service provider:",
@@ -377,43 +528,71 @@
           },
           {
             "label": "Purpose of processing:",
-            "value": "Analysis of website performance, optimization of loading times and improvement of usability."
+            "value": "Reach measurement, analysis of website performance, optimisation of loading times and improvement of user-friendliness."
           },
           {
             "label": "Legal bases:",
-            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR). Our legitimate interest lies in the optimization and economic operation of our online offering."
+            "value": "Legitimate interests (Article 6(1)(1)(f) GDPR). Our legitimate interest lies in the optimisation and economic operation of our online offering. As neither cookies are set nor information is read from your device, consent under section 25 TDDDG is not required."
           },
           {
-            "label": "Privacy policy:"
+            "label": "Objection:",
+            "value": "You may object to reach measurement at any time at our contact address; as no personal identifier is stored, a device-bound opt-out is not technically necessary."
           },
           {
-            "label": "Transfer of data to third countries:",
-            "value": "Data transfer to the USA takes place on the basis of standard contractual clauses (Art. 46 GDPR). The transfer is encrypted and only anonymized data is transmitted."
+            "label": "Privacy policy:",
+            "url": "https://vercel.com/legal/privacy-policy"
+          },
+          {
+            "label": "Basis for third-country transfers:",
+            "value": "Adequacy decision (EU-U.S. Data Privacy Framework) where the provider is certified, otherwise standard contractual clauses pursuant to Article 46(2)(c) GDPR."
           }
         ]
       },
       "cookies": {
-        "title": "Use of cookies",
-        "description": "The term cookies refers to functions that store information on users' end devices and read it from them. Cookies may also be used for various purposes, for example to ensure functionality, security and convenience of online offerings and to create analyses of visitor flows. We use cookies in accordance with legal requirements.",
-        "storageDurationLabel": "Storage duration:",
-        "storageDurationText": "With regard to storage duration, the following types of cookies are distinguished:",
+        "title": "Cookies and storage on your device",
+        "description": "The term cookies refers to functions that store information on users' devices and read information from them. We use exclusively cookies and storage techniques that are strictly necessary for the operation of the service you have expressly requested or that record a setting you have chosen yourself. Neither advertising nor tracking cookies are used. A consent banner is therefore not required (section 25(2) no. 2 TDDDG).",
+        "tableTitle": "What is stored in concrete terms",
+        "tableItems": [
+          {
+            "title": "Sign-in session cookie",
+            "description": "Keeps you signed in to the app. Encrypted token, lifetime 7 days. Without this cookie signing in is technically impossible."
+          },
+          {
+            "title": "Language setting",
+            "description": "Remembers the display language you have chosen. Lifetime 1 year."
+          },
+          {
+            "title": "View context (team or club)",
+            "description": "Remembers whether you last had the team view or the club view open. Lifetime 1 year."
+          },
+          {
+            "title": "Local app storage (IndexedDB, service worker cache, local storage)",
+            "description": "Keeps match and squad data as well as program files available for offline use and remembers display settings such as the colour scheme or the view last selected. Remains on your device until you delete the app or browser data."
+          },
+          {
+            "title": "No third-party cookies",
+            "description": "Reach measurement, map links and embedded content work without cookies. Only once you follow an external link (e.g. to Instagram or into a maps app) do the provisions of the provider there apply."
+          }
+        ],
+        "storageDurationLabel": "Storage period:",
+        "storageDurationText": "With regard to the storage period, the following types of cookies are distinguished:",
         "items": [
           {
             "title": "Temporary cookies (also: session cookies):",
-            "description": "Temporary cookies are deleted at the latest after a user leaves an online offering and closes their end device."
+            "description": "Temporary cookies are deleted at the latest after a user has left an online offering and closed their device."
           },
           {
             "title": "Permanent cookies:",
-            "description": "Permanent cookies remain stored even after the end device is closed. The storage duration can be up to two years."
+            "description": "Permanent cookies remain stored even after the device has been closed. With us the longest lifetime is one year; you can delete the cookies at any time via your browser settings."
           }
         ]
       },
       "contactRequests": {
-        "title": "Contact and inquiry management",
-        "description": "When contacting us, for example by post, contact form, email, phone or via social media, as well as within the framework of existing user and business relationships, the data provided by the inquiring persons is processed insofar as this is necessary to answer the contact inquiries and any requested measures.",
+        "title": "Contact, feedback and enquiry management",
+        "description": "When you contact us (e.g. via the contact or feedback form, by email, telephone or via social media) and within the scope of existing user and business relationships, the information provided by the enquiring persons is processed to the extent necessary to respond to the contact request and any measures requested. The forms transmit the information you enter to us by email; the form content is not stored in a database. In order to fend off automated mass enquiries, your IP address is kept for a maximum of one hour in a volatile counter in memory and is then discarded.",
         "items": [
           {
-            "label": "Types of processed data:",
+            "label": "Types of data processed:",
             "value": "Master data, contact data, content data, usage data, meta, communication and procedural data."
           },
           {
@@ -422,69 +601,208 @@
           },
           {
             "label": "Purposes of processing:",
-            "value": "Communication; organizational and administrative procedures; feedback; provision of our online offering and user-friendliness."
+            "value": "Communication; organisational and administrative procedures; feedback; security measures; provision of our online offering and user-friendliness."
           },
           {
             "label": "Legal bases:",
-            "value": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR). Performance of a contract and pre-contractual requests (Art. 6 para. 1 sentence 1 lit. b GDPR)."
+            "value": "Performance of a contract and pre-contractual enquiries (Article 6(1)(1)(b) GDPR); legitimate interests (Article 6(1)(1)(f) GDPR)."
+          },
+          {
+            "label": "Storage period:",
+            "value": "Enquiries are deleted once they have been dealt with and no statutory retention obligations conflict; we review completion at least every two years."
           }
         ]
       },
       "appSections": {
-        "title": "Data Processing in the Statix App",
-        "intro": "The following sections describe the processing operations that take place when using the Statix app (web app and installable Progressive Web App).",
+        "title": "Data processing in the Statix app",
+        "intro": "The following sections describe the processing that takes place when the Statix app (web app and installable progressive web app) is used. Where content is concerned that a coach enters about other people, we act as a processor for the club or team (see “Who is responsible for what?”).",
         "sections": [
           {
-            "title": "Registration and User Account",
+            "title": "Registration and user account",
             "paragraphs": [
-              "A user account is required to use the app. During registration we process your name, email address and password; the password is stored exclusively as a cryptographic hash and is never visible to us in plain text. Voluntary answers from the onboarding survey (e.g. competition level, age group, goals) are used to improve our service.",
-              "Your email address is verified via a confirmation link before the first sign-in (double opt-in). To reset your password, we send a time-limited link by email on request. You can request deletion of your user account at any time via the email address stated in the “Controller” section."
+              "A user account is required to use the app. On registration we process name, email address and password; the password is stored exclusively as a cryptographic hash and is not visible to us in plain text. Voluntary information from the onboarding survey (e.g. league, age group, goals, biggest challenge) is used to improve the offering.",
+              "The email address is verified before the first sign-in via a confirmation link (double opt-in). To reset the password we send a link with limited validity by email on request. Both tokens are stored exclusively as a hash and are deleted at the latest seven days after expiry.",
+              "Players can also create their own account: the coach shares an invitation link (the team's join link) through which the player claims her own squad entry. The link is valid for 14 days and can be renewed at any time, which invalidates the old link. Who claims which squad entry is decided solely by the player herself; assignment by a coach is not possible.",
+              "In order to distinguish active from abandoned accounts, we store the time of the last authenticated use at a resolution of five minutes. This does not create a movement or usage profile; earlier times are overwritten.",
+              "You can delete your account yourself at any time (Settings → Account). What is deleted and what remains is described on our account deletion page."
             ],
             "items": [
               {
-                "label": "Processed data types:",
-                "value": "Inventory data, contact data, credentials, content data."
+                "label": "Types of data processed:",
+                "value": "Master data, contact data, access data, content data, usage data."
               },
               {
                 "label": "Data subjects:",
-                "value": "Users (e.g. coaches)."
+                "value": "Users with their own account (coaches, club officials, players)."
               },
               {
-                "label": "Legal basis:",
-                "value": "Performance of a contract and pre-contractual inquiries (Art. 6 (1) (b) GDPR); for voluntary survey answers: consent (Art. 6 (1) (a) GDPR)."
+                "label": "Legal bases:",
+                "value": "Performance of a contract and pre-contractual enquiries (Article 6(1)(1)(b) GDPR); for voluntary survey information: consent (Article 6(1)(1)(a) GDPR); for the activity marker: legitimate interests (Article 6(1)(1)(f) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until the account is deleted; tokens for password reset and email confirmation at the latest seven days after expiry."
               }
             ]
           },
           {
-            "title": "Team, Player and Match Data",
+            "title": "Team, squad and player data",
             "paragraphs": [
-              "The core function of the app is recording handball match statistics. Users enter data about their team: player names, jersey numbers, positions, as well as match events and statistics derived from them (e.g. goals, shots, saves, suspensions, playing time). Club details and a club logo can optionally be stored.",
-              "This data may also concern persons who do not use the app themselves (in particular players). The user entering the data, or their club, is responsible for informing the persons concerned – in the case of minors, their legal guardians – about the processing and, where required, obtaining their consent. The data is only visible to members of the respective team unless a match is explicitly shared publicly (see below)."
+              "The core function of the app is recording handball match statistics. To this end users create data for their team: first and last name, jersey number, position, goalkeeper flag, period of squad membership and type of membership (regular squad, second squad, guest) as well as match events and the statistics calculated from them (e.g. goals, shots, saves, suspensions, playing times, substitutions). Club details and a club logo can optionally be stored.",
+              "To distinguish people with the same name and to determine the age group, the year of birth and – only if the club enters it – the full date of birth can additionally be stored. The year of birth is sufficient for the age group; we recommend not entering the full date of birth where it is not needed.",
+              "This data regularly concerns people who do not use the app themselves, including minors. The recording user or their club is the controller: they must inform the data subjects – or their legal guardians in the case of minors – about the processing and, where necessary, obtain their consent. We process this data exclusively on instructions.",
+              "The data is visible only to the members of the respective team and – where the team is assigned to a club – to that club's officials, unless a match is expressly shared publicly (see below)."
             ],
             "items": [
               {
-                "label": "Processed data types:",
-                "value": "Inventory data, content data, match and statistics data."
+                "label": "Types of data processed:",
+                "value": "Master data, master data of squad members, content data, match and statistics data."
               },
               {
                 "label": "Data subjects:",
-                "value": "Users; players entered by users."
+                "value": "Users; players recorded by users, including minors."
               },
               {
-                "label": "Legal basis:",
-                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+                "label": "Legal bases:",
+                "value": "The controller is the club or the recording coach; typically consent (Article 6(1)(1)(a) GDPR) or the club's legitimate interests (Article 6(1)(1)(f) GDPR). Our processing takes place as processing on behalf (Article 28 GDPR) on the basis of our contract with the user (Article 6(1)(1)(b) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until deletion by the controller, at the longest until the team or the associated account is deleted."
               }
             ]
           },
           {
-            "title": "Database, File Storage and Error Logs (Supabase)",
+            "title": "Club and cross-team career view",
             "paragraphs": [
-              "All app data is stored in a PostgreSQL database operated by the service provider Supabase; club logos are stored in the same provider's object storage. To ensure stable operation we additionally store technical error logs (e.g. error message, affected feature, timestamp). Hosting takes place in the EU (region Frankfurt am Main, Germany)."
+              "Several teams can be grouped under one club. Club administrators then see the squads and analyses of all assigned teams. Within a club, squad entries of the same person – for example from the under-18 team and from the women's team – can be linked to one person so that a cross-team career becomes visible.",
+              "The app proposes such a link on the basis of names, year of birth and membership periods; it is confirmed or rejected exclusively by a human. Rejected proposals are remembered so that the same person is not proposed repeatedly. Linking across club boundaries does not take place.",
+              "If a team is assigned to a club, the club can access its data. From that point on, the club is the controller for that data under data protection law."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Master data, master data of squad members (including year of birth), match and statistics data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Players recorded by users; club members with their own account."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "The controller is the club; our processing takes place as processing on behalf (Article 28 GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Appointments, responses and calendar feed",
+            "paragraphs": [
+              "The app maps the team's calendar: trainings, matches, team evenings and similar appointments with location, meeting time and a note. Squad members accept, decline or answer “maybe” and can leave a comment. Comments are visible only to the coach and to the person writing them, not to the rest of the team. On request the app sends a reminder before an appointment by email or push notification.",
+              "The calendar can be subscribed to as an iCalendar feed in a calendar app. The feed is accessible without sign-in via a randomly generated, unguessable address and contains the title, time, location and note of the appointments – but no responses and no names of squad members. Anyone who knows the address can read the calendar; please therefore only pass the link on to people who should have it. The link can be renewed at any time, which invalidates the old link.",
+              "The feed is deliberately read-only: responses cannot be given through it, and no attendee lists are transferred into calendar programs."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Appointment and attendance data, content data (comments, notes), access data (feed token)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Squad members; users with their own account; recipients of the calendar feed."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "The controller is the club or the team; our processing takes place as processing on behalf (Article 28 GDPR) on the basis of our contract with the user (Article 6(1)(1)(b) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until the appointment, the team or the account is deleted."
+              }
+            ]
+          },
+          {
+            "title": "Absences and health-related information",
+            "paragraphs": [
+              "Squad members can enter longer absences so that not every single appointment has to be declined. An absence consists of a period, a category – holiday, illness, injury or other – and a voluntary note. It can be entered by the person concerned herself or by the coach on her behalf.",
+              "If illness or injury is chosen as the category, or if the note contains information about a person's state of health, this constitutes health data and therefore a special category of personal data under Article 9 GDPR. Such information may be processed only with the explicit consent of the data subject – or of the legal guardians in the case of minors. Obtaining and documenting this consent is the task of the club or the coach; we process the information exclusively on instructions.",
+              "We expressly recommend either using the category “other” or refraining from free-text notes where training planning does not require the exact cause. The note on an absence is not shown to the other squad members; all they see is that the person is unavailable during that period. An absence can be changed or deleted at any time; the category can subsequently be changed to “other”."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Appointment and attendance data; health-related information (Article 9 GDPR) where entered; content data (note)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Squad members, including minors."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Explicit consent of the data subject or of the legal guardians (Article 9(2)(a) GDPR), to be obtained by the responsible club; our processing takes place as processing on behalf (Article 28 GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until deletion by the data subject or the controller, at the longest until the team or the account is deleted."
+              }
+            ]
+          },
+          {
+            "title": "Surveys to the squad",
+            "paragraphs": [
+              "Coaches can send surveys to their squad (e.g. feedback on the season or on training planning). The survey is opened without sign-in via a randomly generated, unguessable address; the person answering selects their name from the squad list.",
+              "Answers are therefore attributed to the respective person and are not anonymous to the coach. Anyone who wants to give anonymous feedback should be informed that this attribution exists. A survey can be closed; answers already given are then retained, but no new ones are accepted."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Content data (answers), master data (attribution to the squad entry), access data (survey token)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Squad members."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "The controller is the club or the team; our processing takes place as processing on behalf (Article 28 GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Push notifications",
+            "paragraphs": [
+              "If you enable push notifications for appointments and reminders, your browser creates a subscription and passes us its address (endpoint) at your browser vendor's push service, two associated encryption keys and your browser's identifier (user agent). Without this information delivery is technically impossible.",
+              "Delivery is handled by the push service of the respective browser vendor (including Google, Mozilla, Apple). The content of the message is encrypted for your device before it is handed over and cannot be read by the push service; the push service does, however, learn the time of delivery and the identifier of your device subscription. Depending on the vendor, a transfer to third countries may take place.",
+              "Enabling notifications is voluntary and can be revoked at any time: you can switch them off in the app settings or withdraw the permission in your browser. Subscriptions reported as invalid by the push service – for example after browser data has been deleted or the app removed – are deleted by us automatically."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Access data (endpoint and keys of the subscription), meta and communication data (browser identifier, timestamps)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users with their own account who have enabled push notifications."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Consent (Article 6(1)(1)(a) GDPR; section 25(1) TDDDG); it may be withdrawn at any time with effect for the future."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until unsubscription, until the subscription becomes invalid, or until the account is deleted."
+              }
+            ]
+          },
+          {
+            "title": "Database and file storage (Supabase)",
+            "paragraphs": [
+              "All app data is stored in a PostgreSQL database of the service provider Supabase; club and sponsor logos are stored in the same provider's object storage. Hosting takes place in the EU (Frankfurt am Main region, Germany). Access to the database takes place exclusively server-side; there is no connection to the database from the browser. All tables are additionally locked by “row level security” with no permitting rule.",
+              "The provider's parent company is based in the USA, so access from a third country in the course of maintenance and support cannot be entirely ruled out. The guarantees named below are in place for this."
             ],
             "items": [
               {
                 "label": "Service provider:",
-                "value": "Supabase, Inc. (USA); hosting region: Frankfurt am Main, Germany (EU)."
+                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapore and San Francisco, USA; hosting region: Frankfurt am Main, Germany (EU)."
               },
               {
                 "label": "Privacy policy:",
@@ -495,240 +813,411 @@
                 "url": "https://supabase.com/legal/dpa"
               },
               {
-                "label": "Legal basis:",
-                "value": "Legitimate interests (Art. 6 (1) (f) GDPR)."
+                "label": "Basis for third-country transfers:",
+                "value": "Standard contractual clauses pursuant to Article 46(2)(c) GDPR."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Performance of a contract (Article 6(1)(1)(b) GDPR); legitimate interests (Article 6(1)(1)(f) GDPR)."
               }
             ]
           },
           {
-            "title": "Email Delivery (Brevo)",
+            "title": "Error logs, abuse protection and operational security",
             "paragraphs": [
-              "Transactional emails – such as the registration confirmation, password reset links, team invitations and system notifications – as well as emails related to the contact form and the newsletter are sent via the service provider Brevo. The data processed includes email address, name and the respective message content."
+              "To ensure stable operation we store technical error logs. A log entry contains the error message including the technical call path, the address and function affected, the time, the browser identifier (user agent), the version of the application and – where available – the identifier of the signed-in account and of the team concerned. Error logs are deleted automatically after 90 days. In the case of serious errors we additionally send a notification to our own operations address.",
+              "To protect against automated attacks (such as guessing passwords or sharing links), we count requests to security-relevant endpoints. Your IP address serves as the counting key; sharing and invitation tokens enter the key only as an irreversible hash value. These counters are deleted automatically after 24 hours at the latest.",
+              "For the use of the AI analysis we additionally keep a usage ledger which records, per analysis, the team, the user who triggered it, the type of analysis and the time. It serves to enforce usage limits and is deleted automatically after 400 days."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Log data, meta, communication and procedural data (including IP address), usage data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users; visitors to our online offerings."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Legitimate interests in secure and stable operation (Article 6(1)(1)(f) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Error logs 90 days; abuse protection counters 24 hours; AI usage ledger 400 days. Deletion is carried out by an automatic database job that runs daily."
+              }
+            ]
+          },
+          {
+            "title": "Sending emails (Brevo)",
+            "paragraphs": [
+              "Transactional emails – such as the registration confirmation, password reset links, team invitations, appointment reminders, shared match reports and system notifications – as well as emails within the scope of the contact and feedback form and the newsletter are sent via the service provider Brevo. Email address, name and the respective message content as well as technical dispatch information are processed in the course of this."
             ],
             "items": [
               {
                 "label": "Service provider:",
-                "value": "Brevo (Sendinblue GmbH), Köpenicker Straße 126, 10179 Berlin, Germany."
+                "value": "Brevo GmbH, Köpenicker Straße 126, 10179 Berlin, Germany."
               },
               {
                 "label": "Privacy policy:",
-                "url": "https://www.brevo.com/legal/privacypolicy/"
+                "url": "https://www.brevo.com/de/legal/privacypolicy/"
               },
               {
-                "label": "Legal basis:",
-                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+                "label": "Legal bases:",
+                "value": "Performance of a contract (Article 6(1)(1)(b) GDPR); legitimate interests (Article 6(1)(1)(f) GDPR); for the newsletter: consent (Article 6(1)(1)(a) GDPR)."
               }
             ]
           },
           {
             "title": "Newsletter",
             "paragraphs": [
-              "When you subscribe to our newsletter, we process your email address in order to send you information about Statix. Subscription uses a double opt-in procedure: your address is only added to the mailing list after you confirm the link sent to you by email. Subscriptions and unsubscriptions are logged for verification purposes. You can unsubscribe at any time via the link contained in every newsletter or by contacting us."
-            ],
-            "items": [
-              {
-                "label": "Processed data types:",
-                "value": "Contact data, meta, communication and procedural data."
-              },
-              {
-                "label": "Legal basis:",
-                "value": "Consent (Art. 6 (1) (a) GDPR); consent can be withdrawn at any time with effect for the future."
-              }
-            ]
-          },
-          {
-            "title": "AI-Assisted Analyses",
-            "paragraphs": [
-              "At the user's explicit request, the app generates AI-assisted analyses of matches, players and teams. The analysis never runs automatically in the background: it is triggered solely by a deliberate click by the user.",
-              "All player names are pseudonymized before transmission. Every player is replaced by a meaningless token of the form [[P1]], [[P2]], …; the mapping from token to person stays exclusively in our own database. What reaches the AI providers is therefore only aggregated match and statistics values (e.g. goals, shots, saves, suspensions, playing times, scores, positions) plus club and opponent names. Players’ names, dates of birth, shirt numbers, email addresses and photos do not leave the app. The tokens are only resolved back to real names from the team’s own squad when the result is displayed in the browser.",
-              "According to the providers, data transmitted via their API is not used to train their AI models. We store the finished analyses in our database (hosting region Frankfurt am Main, Germany) so they can be opened again; they are deleted together with the associated match, team or user account. There is no automated decision-making producing legal effects within the meaning of Art. 22 GDPR — the analysis is an assessment for the coach."
+              "When you sign up for our newsletter we process your email address in order to send you information about Statix. Sign-up takes place using the double opt-in procedure: the address is only added to the distribution list after the link sent by email has been confirmed. Sign-ups and sign-offs are logged for evidential purposes. You can unsubscribe from the newsletter at any time via the unsubscribe link in every email or by sending us a message; we then delete your address from the distribution list."
             ],
             "items": [
               {
                 "label": "Types of data processed:",
-                "value": "Match and statistics data in pseudonymized form (player names replaced by tokens); usage data."
+                "value": "Contact data, meta, communication and procedural data."
               },
               {
                 "label": "Data subjects:",
-                "value": "Users; players recorded by users (pseudonymized only)."
+                "value": "Newsletter recipients."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Consent (Article 6(1)(1)(a) GDPR); it may be withdrawn at any time with effect for the future."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until unsubscription; evidence of consent is retained beyond that in order to comply with the accountability obligation (Article 5(2) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "AI-assisted analyses",
+            "paragraphs": [
+              "At the express request of the user, the app produces AI-assisted analyses of matches, players and teams. The analysis never runs automatically in the background: it is triggered exclusively by a deliberate click of the user.",
+              "Before transmission, all player names are pseudonymised. Every player is replaced by a meaningless identifier of the form [[P1]], [[P2]], …; the mapping between identifier and person remains exclusively in our database. Only aggregated match and statistics values (e.g. goals, shots, saves, suspensions, playing times, scores, positions) as well as club and opponent names are therefore sent to the AI providers. Names, dates of birth, jersey numbers, email addresses or photos of players do not leave the app. Only when displayed in the browser are the identifiers replaced again by the real names from your own team's squad.",
+              "According to the providers, data transmitted via the programming interface (API) is not used to train their AI models. We store the finished analyses in our database (hosting region Frankfurt am Main) so that they can be called up again; they are deleted together with the associated match, team or user account.",
+              "The results are AI-generated content and are labelled as such in the application. No automated decision-making with legal effect within the meaning of Article 22 GDPR takes place – the analysis is an assessment for the coach, and the sporting decision is made by a human. On request we deactivate AI analysis entirely for a team or a club."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Match and statistics data in pseudonymised form (player names replaced by identifiers); usage data."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users; players recorded by users (only pseudonymised)."
               },
               {
                 "label": "Purposes of processing:",
-                "value": "Generating match, player and team analyses at the explicit request of the user."
+                "value": "Creation of match, player and team analyses at the express request of the user."
               },
               {
                 "label": "Service providers:",
                 "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
               },
               {
-                "label": "Anthropic privacy policy:",
-                "url": "https://www.anthropic.com/privacy"
+                "label": "Privacy policy Anthropic:",
+                "url": "https://www.anthropic.com/legal/privacy"
               },
               {
-                "label": "OpenAI privacy policy:",
+                "label": "Privacy policy OpenAI:",
                 "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Basis for third-country transfers:",
-                "value": "EU-US Data Privacy Framework (DPF) and standard contractual clauses."
+                "value": "Adequacy decision (EU-U.S. Data Privacy Framework) where the respective provider is certified, otherwise standard contractual clauses pursuant to Article 46(2)(c) GDPR."
               },
               {
-                "label": "Legal basis:",
-                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+                "label": "Legal bases:",
+                "value": "Performance of a contract (Article 6(1)(1)(b) GDPR); legitimate interests (Article 6(1)(1)(f) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "The analysis remains stored until the associated match, team or account is deleted; the usage ledger is deleted after 400 days."
               }
             ]
           },
           {
-            "title": "Offline Mode and Local Storage on Your Device",
+            "title": "Offline function and local storage on your device",
             "paragraphs": [
-              "The app can be used as a Progressive Web App (PWA) even without an internet connection. For this purpose, match and team data as well as app resources are stored locally on your device (browser IndexedDB and service worker cache) and automatically synchronized with our servers once a connection is available. This local storage is technically required for the offline feature (Section 25 (2) no. 2 of the German TDDDG). The locally stored data remains on your device until you delete the app or browser data."
+              "As a progressive web app (PWA), the app can also be used without an internet connection. For this purpose, match and team data as well as app resources are stored locally on your device (the browser's IndexedDB and service worker cache) and synchronised automatically with our servers when a connection is available. This local storage is technically necessary for the offline function (section 25(2) no. 2 TDDDG).",
+              "The locally stored data remains on your device until you delete the app or browser data. Please note: if the browser data is deleted before synchronisation has taken place, recordings not yet transferred are lost. On a shared device you should sign out after use so that the locally cached squad data does not remain accessible to others."
             ],
             "items": [
               {
-                "label": "Legal basis:",
-                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); Section 25 (2) no. 2 TDDDG (technically required storage)."
+                "label": "Legal bases:",
+                "value": "Performance of a contract (Article 6(1)(1)(b) GDPR); section 25(2) no. 2 TDDDG (technically necessary storage)."
               }
             ]
           },
           {
-            "title": "Public Live Match Sharing",
+            "title": "Public live match coverage",
             "paragraphs": [
-              "Users can optionally share a match as a public live ticker. The ticker is then accessible without login via a non-guessable link and shows team and player names, jersey numbers, match events and scores of the user's own team; data of opposing players is never published. Sharing is actively initiated by the user, who is responsible for ensuring that the players concerned agree to the publication. Sharing can be ended at any time, after which the ticker is no longer publicly accessible."
+              "Users can optionally share a match as a public live ticker. The ticker is then accessible without sign-in via an unguessable link and shows team and player names, jersey numbers, match events and scores of their own team; data of opposing players is not published. Sponsor logos uploaded by the club are optionally displayed.",
+              "Sharing is actively initiated by the user, who is responsible for ensuring that the players concerned – or their legal guardians in the case of minors – agree to publication. Players with their own account can specify in their settings that their name does not appear on public pages; only the jersey number is then shown. This decision always takes precedence over a broader team-level setting and cannot be overridden by a coach.",
+              "In order to display the current number of viewers and to limit load, we store per viewer a random session identifier assigned to the device, with no personal reference, together with the time of the last request. These entries are deleted when the match ends, and after two days at the latest.",
+              "Sharing can be ended at any time; the ticker is then no longer publicly accessible. We have no influence over copies or caches made by third parties while it was shared."
             ],
             "items": [
               {
-                "label": "Processed data types:",
-                "value": "Content data, match and statistics data."
+                "label": "Types of data processed:",
+                "value": "Content data, match and statistics data, master data of squad members, technical session identifiers of viewers."
               },
               {
                 "label": "Data subjects:",
-                "value": "Players entered by users."
+                "value": "Players recorded by users; visitors to the live ticker."
               },
               {
-                "label": "Legal basis:",
-                "value": "Performance of a contract (Art. 6 (1) (b) GDPR); legitimate interests (Art. 6 (1) (f) GDPR)."
+                "label": "Legal bases:",
+                "value": "For publication: consent of the data subjects (Article 6(1)(1)(a) GDPR), to be obtained by the responsible club; for viewer counting: legitimate interests (Article 6(1)(1)(f) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until sharing ends; viewer session identifiers for a maximum of two days."
               }
             ]
+          },
+          {
+            "title": "Shared match reports and PDF export",
+            "paragraphs": [
+              "A finished match report can be shared with another coach. To do so the app generates an unguessable address; on request we additionally send an email to the recipient address specified by the user. Stored in the process are the recipient address, who shared the report, which components are shared (statistics and/or AI analysis), any expiry date and the time it was first opened.",
+              "The report can also be saved as a PDF, and individual statistics tables can be exported as a CSV file. For these exports the following applies: once the file has left your device, its further use is beyond our control.",
+              "Sharing can be revoked at any time; the address is then no longer accessible."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Contact data (recipient address), access data (sharing token), match and statistics data, usage data (time of opening)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Recipients of shared reports; players recorded by users."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Performance of a contract (Article 6(1)(1)(b) GDPR); legitimate interests (Article 6(1)(1)(f) GDPR)."
+              },
+              {
+                "label": "Storage period:",
+                "value": "Until sharing is revoked, until the sharing link expires, or until the associated match is deleted."
+              }
+            ]
+          },
+          {
+            "title": "Live demo without sign-in",
+            "paragraphs": [
+              "At a separate address we provide a demo version in which recording a match can be tried out without registration. The demo works with fictitious sample data. Please do not enter any real personal data there – entries in the demo are not treated as club data and may be reset at any time."
+            ],
+            "items": [
+              {
+                "label": "Legal bases:",
+                "value": "Legitimate interests in presenting our offering (Article 6(1)(1)(f) GDPR)."
+              }
+            ]
+          }
+        ]
+      },
+      "childrenAndMinors": {
+        "title": "Children and young people",
+        "description": "Statix is used in youth teams. Special rules therefore apply here:",
+        "items": [
+          {
+            "title": "Own account only from the age of 16",
+            "description": "An own user account is reserved for people aged 16 and over. Between 16 and 18 the consent of the legal guardians is additionally required. No own account is provided for children under the age of 16."
+          },
+          {
+            "title": "Recording without an own account",
+            "description": "Minors can be recorded as squad members by a coach without having an account themselves. The controller for this data is the club – not the child and not us."
+          },
+          {
+            "title": "Obligations of the club",
+            "description": "Before the first entry, the club must inform the legal guardians pursuant to Article 13 GDPR and obtain the necessary consent – in particular for health-related absences and for any public sharing (live ticker, shared reports). We provide a model information sheet and a data processing agreement on request."
+          },
+          {
+            "title": "Data minimisation",
+            "description": "The year of birth is sufficient for assigning an age group. The full date of birth, photos and free-text notes on state of health should be avoided where they are not necessary for training operations."
+          },
+          {
+            "title": "Exercising rights",
+            "description": "Legal guardians can request access to, rectification and erasure of their child's data. Please address such requests to the club or the coach; if they reach us directly, we forward them without delay and support their implementation."
           }
         ]
       },
       "dataSubjectRights": {
         "title": "Rights of data subjects",
-        "description": "Rights of data subjects under the GDPR: As a data subject, you are entitled to various rights under the GDPR:",
+        "description": "Rights of data subjects under the GDPR: as a data subject you have various rights under the GDPR:",
         "items": [
           {
             "title": "Right to object:",
-            "description": "You have the right to object at any time, on grounds relating to your particular situation, to the processing of personal data concerning you."
+            "description": "You have the right, on grounds relating to your particular situation, to object at any time to the processing of personal data concerning you which is carried out on the basis of Article 6(1)(e) or (f) GDPR; this also applies to profiling based on those provisions. Where personal data concerning you is processed for direct marketing purposes, you have the right to object at any time to such processing."
           },
           {
             "title": "Right to withdraw consent:",
-            "description": "You have the right to withdraw consents granted at any time."
+            "description": "You have the right to withdraw consent given at any time with effect for the future. The lawfulness of processing carried out up to the withdrawal remains unaffected."
           },
           {
             "title": "Right of access:",
-            "description": "You have the right to request confirmation as to whether data concerning you is being processed and to obtain information about this data as well as further information and a copy of the data in accordance with legal requirements."
+            "description": "You have the right to request confirmation as to whether data concerning you is being processed and to obtain access to that data as well as further information and a copy of the data in accordance with statutory requirements."
           },
           {
             "title": "Right to rectification:",
-            "description": "In accordance with legal requirements, you have the right to request the completion of data concerning you or the correction of inaccurate data concerning you."
+            "description": "In accordance with statutory requirements, you have the right to request the completion of data concerning you or the rectification of inaccurate data concerning you."
           },
           {
             "title": "Right to erasure and restriction of processing:",
-            "description": "In accordance with legal requirements, you have the right to request that data concerning you be deleted without undue delay or, alternatively, to request restriction of the processing of the data."
+            "description": "In accordance with statutory requirements, you have the right to demand that data concerning you be erased without undue delay, or alternatively, in accordance with statutory requirements, to demand restriction of the processing of the data. You can delete your user account yourself at any time (Settings → Account)."
           },
           {
             "title": "Right to data portability:",
-            "description": "You have the right to receive the data concerning you that you have provided to us in a structured, commonly used and machine-readable format in accordance with legal requirements or to request its transfer to another controller."
+            "description": "You have the right to receive data concerning you which you have provided to us in a structured, commonly used and machine-readable format in accordance with statutory requirements, or to request its transmission to another controller. In the app you can export analyses as PDF and statistics tables as CSV; beyond that we will provide you with your data in a machine-readable format within 30 days of a request."
           },
           {
             "title": "Complaint to a supervisory authority:",
-            "description": "Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority."
+            "description": "Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or place of the alleged infringement. The authority competent for us is the Bavarian State Office for Data Protection Supervision (BayLDA), Promenade 18, 91522 Ansbach."
           }
-        ]
+        ],
+        "howToLabel": "How to exercise your rights:",
+        "howToText": "An informal message to our contact address is sufficient; no particular form is required. We respond without undue delay and within one month at the latest. If your request concerns squad, appointment, absence or survey data, the club or the coach is the controller; in that case we forward your request there and support its fulfilment.",
+        "obligationLabel": "Obligation to provide data:",
+        "obligationText": "Providing your data is neither required by law nor by contract. However, to set up an account we need your name, email address and password; without this information no account can be created and the app cannot be used. All other information is voluntary."
       },
       "socialMedia": {
-        "title": "Profiles on social networks (social media)",
-        "description": "We maintain online presences within social networks and process user data in this context in order to communicate with users active there or to provide information about us.",
+        "title": "Presences on social networks (social media)",
+        "description": "We maintain online presences within social networks and in this context process user data in order to communicate with users active there or to offer information about us. We point out that user data may be processed outside the European Union in the process and that the networks may create usage profiles based on usage behaviour. No social network content is embedded on our websites; we merely link to our profile. An exchange of data therefore only takes place once you follow the link.",
         "instagramItems": [
           {
             "label": "Instagram:",
-            "value": "Social network that enables sharing photos and videos, commenting on and liking posts, sending messages, and subscribing to profiles and pages;"
+            "value": "Social network, enables the sharing of photos and videos, commenting on and favouriting posts, sending messages, subscribing to profiles and pages;"
           },
           {
             "label": "Service provider:",
             "value": "Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Ireland;"
           },
           {
-            "label": "Website:"
+            "label": "Legal bases:",
+            "value": "Legitimate interests (Article 6(1)(1)(f) GDPR)."
           },
           {
-            "label": "Privacy policy:"
+            "label": "Website:",
+            "url": "https://www.instagram.com"
+          },
+          {
+            "label": "Privacy policy:",
+            "url": "https://privacycenter.instagram.com/policy/"
           },
           {
             "label": "Basis for third-country transfers:",
-            "value": "Data Privacy Framework (DPF)."
+            "value": "Adequacy decision (EU-U.S. Data Privacy Framework)."
           }
         ]
       },
       "dataRetention": {
-        "title": "General information on data storage and deletion",
-        "description": "We delete personal data that we process in accordance with legal provisions as soon as the underlying consents are withdrawn or no further legal bases for processing exist. This concerns cases in which the original processing purpose no longer applies or the data is no longer required.",
-        "retentionLabel": "Retention and deletion of data:",
-        "retentionText": "The following general retention periods apply for storage and archiving under German law:",
+        "title": "Storage period and deletion",
+        "description": "We delete the personal data we process in accordance with statutory provisions as soon as the underlying consent is withdrawn or there are no further legal bases for the processing. This concerns cases in which the original purpose of processing ceases to apply or the data is no longer needed. The periods stated for the individual processing operations take precedence.",
+        "technicalLabel": "Automatically enforced technical periods:",
+        "technicalText": "The following periods are enforced automatically by a database job that runs daily – without anyone having to remember them:",
+        "technicalItems": [
+          {
+            "title": "24 hours",
+            "description": "Counters of the abuse protection (key: IP address or the hash value of a token)."
+          },
+          {
+            "title": "2 days",
+            "description": "Session identifiers of viewer counting in the public live ticker, where they were not already deleted when the match ended."
+          },
+          {
+            "title": "7 days after expiry",
+            "description": "Tokens for password reset and for confirming the email address."
+          },
+          {
+            "title": "90 days",
+            "description": "Technical error logs."
+          },
+          {
+            "title": "400 days",
+            "description": "Usage ledger of the AI analyses (without the content of the analysis)."
+          }
+        ],
+        "contentLabel": "Content data of the app:",
+        "contentText": "Squad, match, appointment, absence and survey data remains stored until the controller deletes it, at the longest until the team or the associated account is deleted. If you delete your account, teams in which you are the sole member are deleted with it; teams with further members continue to exist and are handed over. Deletion takes effect immediately and without a grace period.",
+        "retentionLabel": "Statutory retention and archiving:",
+        "retentionText": "Insofar as we are subject to commercial or tax law retention obligations, the following general periods apply under German law. Only commercial documents are affected, not the content data of the app:",
         "items": [
           {
             "title": "10 years",
-            "description": "Retention period for books and records, annual financial statements, inventories, management reports, opening balance sheets as well as the work instructions and other organizational documents required for their understanding."
+            "description": "Retention period for books and records, annual financial statements, inventories, management reports, opening balance sheets and the working instructions and other organisational documents required to understand them."
           },
           {
             "title": "8 years",
-            "description": "Accounting records, such as invoices and expense receipts."
+            "description": "Accounting vouchers, such as invoices and expense receipts."
           },
           {
             "title": "6 years",
-            "description": "Other business documents: received commercial or business letters, reproductions of sent commercial or business letters, and other documents insofar as they are relevant for taxation."
+            "description": "Other business documents: incoming commercial or business letters, reproductions of outgoing commercial or business letters, other documents insofar as they are relevant for taxation."
           },
           {
             "title": "3 years",
-            "description": "Data required to consider potential warranty and damages claims or similar contractual claims and rights and to process related inquiries."
+            "description": "Data required to consider potential warranty and compensation claims or similar contractual claims and rights as well as to process related enquiries."
           }
         ]
       },
       "definitions": {
-        "title": "Definitions",
-        "description": "This section provides an overview of the terminology used in this privacy policy. Where the terms are legally defined, their legal definitions apply. The following explanations are primarily intended to aid understanding.",
+        "title": "Definitions of terms",
+        "description": "In this section you will find an overview of the terms used in this privacy policy. Where terms are defined by law, their statutory definitions apply. The following explanations are intended primarily to aid understanding.",
         "items": [
           {
             "title": "Personal data:",
-            "description": "Personal data means any information relating to an identified or identifiable natural person; a natural person is considered identifiable if they can be identified directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier such as a cookie, or one or more specific characteristics."
+            "description": "Personal data means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier (e.g. a cookie) or to one or more special characteristics."
+          },
+          {
+            "title": "Special categories of personal data:",
+            "description": "Data that is particularly worthy of protection – such as health data. In Statix such data arises in only one place: when an absence is entered as illness or injury, or when a note contains information about a state of health. Processing it requires explicit consent (Article 9(2)(a) GDPR)."
           },
           {
             "title": "Processing:",
-            "description": "Processing means any operation or set of operations performed on personal data, whether or not by automated means. The term is broad and covers practically any handling of data, including collection, evaluation, storage, transmission or deletion."
+            "description": "Processing means any operation or set of operations which is performed on personal data, whether or not by automated means. The term is broad and covers practically any handling of data, be it collection, analysis, storage, transmission or erasure."
           },
           {
             "title": "Controller:",
-            "description": "Controller means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data."
+            "description": "The controller is the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data."
+          },
+          {
+            "title": "Processor:",
+            "description": "A party who processes personal data on behalf of and on the instructions of a controller without determining the purposes and means themselves. For the squad, appointment, absence and survey data of the teams, we are the processor of the respective club."
+          },
+          {
+            "title": "Pseudonymisation:",
+            "description": "The processing of personal data in such a manner that it can no longer be attributed to a specific person without the use of additional information kept separately. Before every AI analysis we replace personal names with meaningless identifiers; the mapping table does not leave our database."
           },
           {
             "title": "Master data:",
-            "description": "Master data includes essential information necessary for the identification and administration of contractual partners, user accounts, profiles and similar assignments."
+            "description": "Master data comprises essential information necessary for the identification and administration of contractual partners, user accounts, profiles and similar assignments."
           },
           {
             "title": "Contact data:",
-            "description": "Contact data is essential information that enables communication with persons or organizations. It includes, among other things, telephone numbers, postal addresses and email addresses as well as means of communication such as social media handles."
+            "description": "Contact data is essential information that enables communication with persons or organisations. It includes, among other things, telephone numbers, postal addresses and email addresses as well as means of communication such as social media handles."
           },
           {
             "title": "Content data:",
-            "description": "Content data includes information generated during the creation, editing and publication of content of all kinds."
+            "description": "Content data comprises information generated in the course of creating, editing and publishing content of any kind."
           },
           {
             "title": "Usage data:",
-            "description": "Usage data refers to information that records how users interact with digital products, services or platforms."
+            "description": "Usage data relates to information that records how users interact with digital products, services or platforms."
+          },
+          {
+            "title": "Log data:",
+            "description": "Technical records about the operation of a system – for us in particular error logs with the error message, the function affected, the time, the browser identifier and the program version."
+          },
+          {
+            "title": "Match and statistics data:",
+            "description": "All events recorded in connection with a handball match and the metrics calculated from them – such as goals, shots, saves, suspensions, substitutions, playing times and shot positions."
           }
         ],
-        "generatorLinkLabel": "Created with the free privacy policy generator from Datenschutz-Generator.de by Dr. Thomas Schwenke",
-        "generatorLinkTitle": "Legal text by Dr. Schwenke - click for more information."
+        "generatorLinkLabel": "Partly created with the free Datenschutz-Generator.de by Dr. Thomas Schwenke",
+        "generatorLinkTitle": "Legal text by Dr. Schwenke - please click for more information."
       }
     },
     "privacyPointer": {
@@ -1100,7 +1589,7 @@
       "title": "Privacy policy",
       "description": "How we process personal data on statix-app.de and in the Statix app — broken down by purpose, legal basis, service provider and retention period.",
       "pseudonymBadge": "Player names never leave the app",
-      "lastUpdated": "Last updated: 19 August 2026",
+      "lastUpdated": "Version: 25 August 2026",
       "navLabel": "More legal information",
       "imprintLink": "Imprint",
       "termsLink": "Terms of service"

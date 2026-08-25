@@ -9,25 +9,34 @@ const SECTION_KEYS = [
   'scope',
   'subject',
   'registration',
+  'roles',
   'availability',
   'pricing',
   'obligations',
   'dataProtection',
   'ai',
+  'publicSharing',
   'ipRights',
   'dataExport',
   'liability',
   'term',
   'withdrawal',
   'changes',
+  'disputeResolution',
   'final',
 ] as const;
 
 // Sections that carry an additional block of paragraphs after their bullet list.
-const SECTIONS_WITH_AFTER = new Set(['subject', 'dataProtection']);
+const SECTIONS_WITH_AFTER = new Set([
+  'subject',
+  'roles',
+  'dataProtection',
+  'withdrawal',
+]);
 
 export default function AgbContent() {
   const t = useTranslations('agbPage');
+  const withdrawalFormLines = t.raw('withdrawalFormLines') as string[];
 
   const contentClassName = 'min-w-0 break-words [overflow-wrap:anywhere]';
   const linkClassName =
@@ -113,6 +122,11 @@ export default function AgbContent() {
                           {CLUB_CONFIG.phone.main}
                         </a>
                       </p>
+                      <p className='pt-2'>
+                        <Link href='/impressum' className={linkClassName}>
+                          {t('imprintLinkLabel')}
+                        </Link>
+                      </p>
                     </div>
                   </div>
                 )}
@@ -133,7 +147,7 @@ export default function AgbContent() {
                   </p>
                 ))}
 
-                {/* Verweis auf die Datenschutzerklärung in § 7 */}
+                {/* Verweis auf die Datenschutzerklärung in § 8 */}
                 {key === 'dataProtection' && (
                   <p className={`mt-4 ${contentClassName}`}>
                     <Link href='/datenschutz' className={linkClassName}>
@@ -142,17 +156,23 @@ export default function AgbContent() {
                   </p>
                 )}
 
-                {/* OS-Plattform-Link in § 15 */}
-                {key === 'final' && (
-                  <p className={`mt-2 ${contentClassName}`}>
-                    <a
-                      href='https://ec.europa.eu/consumers/odr/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className={linkClassName}>
-                      {t('odrLinkLabel')}
-                    </a>
-                  </p>
+                {/* Muster-Widerrufsformular nach Anlage 2 zu Art. 246a § 1
+                    Abs. 2 S. 1 Nr. 1 EGBGB — als eigener, abgesetzter Block,
+                    weil es zitierfähig bleiben muss. */}
+                {key === 'withdrawal' && (
+                  <div className='mt-6 rounded-xl border border-border/60 bg-muted/50 p-5'>
+                    <p className='text-sm font-medium text-muted-foreground'>
+                      {t('withdrawalFormTitle')}
+                    </p>
+                    <p className={`mt-1 text-sm text-muted-foreground ${contentClassName}`}>
+                      {t('withdrawalFormHint')}
+                    </p>
+                    <div className={`mt-3 space-y-3 ${contentClassName}`}>
+                      {withdrawalFormLines.map((line, index) => (
+                        <p key={index}>{line}</p>
+                      ))}
+                    </div>
+                  </div>
                 )}
               </div>
             );
