@@ -4,6 +4,10 @@ import {
   TAKTIKBOARD_PAGE_PATH,
 } from '@/features/handball-taktikboard/data/taktikboard-content';
 import { STATS_PAGE_PATH } from '@/features/handball-statistiken/data/stats-content';
+import {
+  FEATURES_PAGE_PATH,
+  featurePath,
+} from '@/features/funktionen/data/features';
 import { NavigationGroup, NavigationItem } from './interfaces';
 
 export const SITE_NAVBAR_OFFSET = 96;
@@ -25,7 +29,20 @@ export const MAIN_CONTENT_ID = 'main-content';
 const productGroup: NavigationGroup = {
   labelKey: 'product',
   items: [
-    { ident: 1, href: '/#features', labelKey: 'features', sectionId: 'features' },
+    // Points at the real index since it exists. It used to be the landing
+    // page's `#features` band, which is three screenshots and no way into the
+    // detail — a visitor looking for "kann das Trainingsbeteiligung" left the
+    // site at that anchor.
+    { ident: 1, href: FEATURES_PAGE_PATH, labelKey: 'features' },
+    // Literal labels like the taktikboard and statistics entries: the copy
+    // lives in the feature catalogue, and `messages/*.json` — already 155 KB on
+    // every page — should not grow a second copy of two feature names.
+    {
+      ident: 25,
+      href: featurePath('termine-und-teilnahme'),
+      label: 'Termine & Teilnahme',
+    },
+    { ident: 26, href: featurePath('video-tagging'), label: 'Video-Tagging' },
     { ident: 10, href: '/preise', labelKey: 'pricing' },
     {
       ident: 18,
@@ -111,9 +128,8 @@ export const siteLinkGroups: NavigationGroup[] = [
 export const primaryNavigationItems: NavigationItem[] = [
   {
     ident: 1,
-    href: '/#features',
+    href: FEATURES_PAGE_PATH,
     labelKey: 'features',
-    sectionId: 'features',
   },
   {
     ident: 10,
@@ -146,7 +162,9 @@ export const primaryNavigationItems: NavigationItem[] = [
  */
 export const scrollSpySectionIds = [
   'home',
-  'features',
+  // 'features' (the showcase band) is deliberately absent: the header's
+  // Funktionen entry is a route now, so no item can ever be highlighted for it
+  // and tracking it would only cost an observer.
   'ai',
   'mehr',
   'faq',

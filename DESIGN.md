@@ -6,9 +6,9 @@ with jersey numbers, marker arrows, quick hand‑written notes. Statix turns tha
 analog ritual into live data — so the marketing surface *is* the board.
 
 This file owns durable visual rules for the landing page and any surface that
-adopts the world. Product facts live in `PRODUCT.md`. The `ratgeber` guide
-pages adopt this world in a **Read** register — see "Ratgeber (Read surface)"
-below.
+adopts the world. Product facts live in `PRODUCT.md`. Two surfaces adopt the
+world in their own register: the `ratgeber` guides as **Read** and the
+`funktionen` pages as **Detail** — see the two sections below.
 
 ## THESIS
 
@@ -120,6 +120,43 @@ accordion is client) so every article stays crawlable.
   names it.
 - The foot CTA reuses the landing page's final‑CTA language — a court band with
   one solid orange action to the no‑account live demo.
+
+## Funktionen (Detail surface)
+
+`/funktionen` and its fifteen `/funktionen/<slug>` pages are the world's
+**Detail** register: the same two grounds and marker grammar, arranged for
+somebody who already knows what Statix is and wants to know whether it does the
+one thing they came for.
+
+- **Ground rhythm**, index: court hero → four alternating paper / paper‑panel
+  bands, one per feature group → a court band for what is still being built →
+  paper FAQ → court CTA. Feature page: court hero → paper (what it is) → court
+  (the screenshots) → paper (the steps) → paper panel (the limits, then the FAQ)
+  → paper (neighbours) → court CTA.
+- **The dark bands are the ones that carry pictures.** The app UI is dark, so a
+  screenshot pinned to the court is a print on the board; the same shot on paper
+  is a cut‑out. That is why the shot band is court and not paper.
+- **Screenshot layout follows the shape, not a grid.** Landscape app captures
+  get the full board width, one under the other — halved into two columns their
+  labels and table rows become texture. Phone captures group into their own row
+  at `max-w-[19rem]`, which is the only size at which a 780×1688 shot means
+  anything.
+- **Status is part of the card.** `live`, `beta` and `onRequest` render as one
+  badge component in three tones; `live` is a quiet ink/chalk chip on purpose,
+  because on a page where fourteen of fifteen entries are finished, the ones
+  that are not are the news.
+- **A drawn illustration says so.** `TaggingBenchMock` is the one non‑photograph
+  in this world, and its own standfirst names it as drawn. Where a real capture
+  exists it is used; the mock exists because the video stage resolves to object
+  storage the screenshot machine cannot reach, and painting a match into an
+  empty rectangle would be a fabricated product image.
+- **Below `sm`, the hero court drops its formation.** The magnets carry
+  saturated team colour rather than the group's chalk tint, and at phone width
+  the diagram no longer clears the text column — so the small‑screen variant
+  keeps the chalk lines and loses the magnets.
+
+Everything except the FAQ accordion is a server component, so a feature page
+ships essentially no JavaScript — the same rule the Ratgeber pages follow.
 
 ## Motion — one language: "drawn on the board"
 

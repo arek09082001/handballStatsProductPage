@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 import { CLUB_CONFIG } from '@/lib/club-config';
+import {
+    FEATURES,
+    featurePath,
+} from '@/features/funktionen/data/features';
 
 export const SITE_URL = (
     process.env.NEXT_PUBLIC_BASE_URL || CLUB_CONFIG.website.url
@@ -122,6 +126,12 @@ export const SITE_LINKS = [
             'Statix – die Statistik-App für Trainer, Vereine und Handball-Teams. Mit Live-Demo ohne Account.',
     },
     {
+        name: 'Funktionen',
+        path: '/funktionen',
+        description:
+            'Alle Funktionen von Statix mit einer eigenen Seite je Funktion: Live-Erfassung, Wurfbilder, KI-Analyse, Terminverwaltung mit Trainingsbeteiligung, Turniere, Live-Ticker, Vereinsbereich und das Video-Tagging im Aufbau.',
+    },
+    {
         name: 'Handball-Statistiken',
         path: '/handball-statistiken',
         description:
@@ -208,92 +218,24 @@ export const SITE_LINKS = [
 
 export const SERVICE_AREAS = Array.from(new Set([...CLUB_CONFIG.seo.focusRegions]));
 
-export const APP_FEATURES = [
-    {
-        slug: 'live-tracking',
-        name: 'Live-Erfassung',
-        description:
-            'Erfasse Tore, Würfe, Paraden, Strafen und Wechsel in Echtzeit – mit nur einem Tap, direkt von der Bank.',
-    },
-    {
-        slug: 'player-stats',
-        name: 'Spielerstatistiken',
-        description:
-            'Wurfquoten, Effizienz, Spielanteile und Entwicklungsverläufe für jeden Spieler auf einen Blick.',
-    },
-    {
-        slug: 'shot-maps',
-        name: 'Wurfbilder & Analyse',
-        description:
-            'Visualisiere Würfe und Tore auf dem Spielfeld und erkenne Muster, die Spiele entscheiden.',
-    },
-    {
-        slug: 'team-management',
-        name: 'Team-Management',
-        description:
-            'Verwalte Kader, Spiele und Saisons an einem Ort und teile Auswertungen mit dem ganzen Team.',
-    },
-    {
-        slug: 'ai-analysis',
-        name: 'KI-Analyse',
-        description:
-            'KI-Auswertungen für einzelne Spiele, das ganze Team, einzelne Spieler und komplette Turniere – mit pseudonymisierten Spielernamen.',
-    },
-    {
-        slug: 'live-ticker',
-        name: 'Live-Ticker',
-        description:
-            'Veröffentliche Spiele als öffentlichen Live-Ticker mit Link und QR-Code – Eltern und Fans verfolgen Spielstand und Spielverlauf live im Browser.',
-    },
-    {
-        slug: 'tournaments',
-        name: 'Turniermodus',
-        description:
-            'Turniere mit mehreren Mannschaften, automatischer Tabelle, Spielplan und Spieltagskader-Auswahl.',
-    },
-    {
-        slug: 'coach-collaboration',
-        name: 'Trainer-Zusammenarbeit',
-        description:
-            'Teile Spiele mit Trainerkollegen in deren Posteingang und lade Co-Trainer fest in dein Team ein.',
-    },
-    {
-        slug: 'player-surveys',
-        name: 'Spieler-Umfragen',
-        description:
-            'Erstelle Umfragen zu Verfügbarkeit oder Feedback und teile einen Link – Spieler antworten ohne Account.',
-    },
-    {
-        slug: 'opponent-records',
-        name: 'Gegner-Bilanz',
-        description:
-            'Automatische Head-to-Head-Bilanz gegen jeden Gegner – Siege, Unentschieden, Niederlagen und Tore.',
-    },
-    {
-        slug: 'card-album',
-        name: 'Kader als Kartenalbum',
-        description:
-            'Spielerkarten mit Werten aus echten Spielen, Handball Performance Index, Stickern und Taktikboard.',
-    },
-    {
-        slug: 'club-level',
-        name: 'Vereinsbereich',
-        description:
-            'Eine Ebene über allen Mannschaften eines Vereins: Übersicht über alle Kader, vereinsweite Spielerliste, Auswertung mit Saisonvergleich und Spielerlaufbahnen über mehrere Jugendmannschaften. Wird für den Verein eingerichtet.',
-    },
-    {
-        slug: 'schedule-attendance',
-        name: 'Termine & Trainingsbeteiligung',
-        description:
-            'Trainings, Spiele und Serientermine im Mannschaftskalender: Spieler sagen selbst zu oder ab, tragen Urlaub, Krankheit oder Verletzung als Zeitraum ein, und der Trainerstab sieht die vollständige Teilnahmeliste.',
-    },
-    {
-        slug: 'offline-pwa',
-        name: 'Offline & App-Installation',
-        description:
-            'Erfasse Spiele offline in der Halle mit automatischer Synchronisation und installiere Statix als App auf dem Homescreen.',
-    },
-] as const;
+/**
+ * The canonical feature list, in the shape the machine-readable surfaces need:
+ * the `SoftwareApplication` schema, `/llms.txt` and the ruled index on
+ * `/was-ist-statix`.
+ *
+ * Derived from the feature catalogue (`features/funktionen/data/features.ts`)
+ * rather than maintained here. It used to be its own hand-written array, and
+ * that is how "Termine & Trainingsbeteiligung" ended up in the schema while no
+ * page, screenshot or navigation entry on the site mentioned it.
+ */
+export const APP_FEATURES = FEATURES.map((feature) => ({
+    slug: feature.slug,
+    name: feature.name,
+    description: feature.summary,
+    /** Route of the feature's own page — used by llms.txt and the schema. */
+    path: featurePath(feature.slug),
+    status: feature.status,
+}));
 
 /**
  * Devices Statix runs on. Surfaced in SoftwareApplication schema so answer
