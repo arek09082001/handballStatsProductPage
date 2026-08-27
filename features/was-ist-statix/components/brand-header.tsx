@@ -67,7 +67,7 @@ export default function BrandHeader() {
               rel='noopener noreferrer'>
               Live-Demo ohne Account
             </HeroActionButton>
-            <HeroActionButton variant='secondary' href='/'>
+            <HeroActionButton variant='secondary' href='/funktionen'>
               Alle Funktionen ansehen
             </HeroActionButton>
           </div>

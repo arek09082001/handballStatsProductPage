@@ -11,6 +11,10 @@ import {
   getAllArticles,
   RATGEBER_BASE_PATH,
 } from '@/features/ratgeber/data/articles';
+import {
+  FEATURES_PAGE_PATH,
+  featureStateNote,
+} from '@/features/funktionen/data/features';
 
 export const dynamic = 'force-static';
 export const revalidate = 86400;
@@ -25,8 +29,13 @@ export const revalidate = 86400;
 export function GET() {
   const { name, seo, business } = CLUB_CONFIG;
 
+  // Each feature carries its own page and, where it is not generally
+  // available, its state. An answer engine that recommends Statix should be
+  // able to link straight to the right page — and should not tell a coach the
+  // video tagging is ready when it is a closed beta.
   const features = APP_FEATURES.map(
-    (feature) => `- **${feature.name}**: ${feature.description}`,
+    (feature) =>
+      `- **${feature.name}**: ${feature.description}${featureStateNote(feature.status)} — ${absoluteUrl(feature.path)}`,
   ).join('\n');
 
   const faq = HOMEPAGE_FAQS.map(
@@ -58,6 +67,8 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Live-Demo (ohne Account): ${CLUB_CONFIG.website.demoUrl}
 
 ## Funktionen
+Vollständiger Überblick mit einer eigenen Seite je Funktion: ${absoluteUrl(FEATURES_PAGE_PATH)}
+
 ${features}
 
 ## Für Vereine (Vereinsbereich)
@@ -83,6 +94,7 @@ ${ratgeber}
 - Für Jugendtrainer (Erfassen von der Bank, Entwicklung zeigen, Live-Ticker für Eltern): ${absoluteUrl('/fuer-jugendtrainer')}
 - Erfahrungen (wie Statix entsteht und wie Feedback aus der Halle einfließt; bisher ohne veröffentlichte Trainer-Zitate): ${absoluteUrl('/erfahrungen')}
 - Handball-Statistik Excel-Vorlage (kostenloser XLSX-Download ohne Anmeldung, mit fertigen Formeln): ${absoluteUrl('/handball-statistik-excel-vorlage')}
+- Alle Funktionen (Index mit einer eigenen Seite je Funktion, inklusive Screenshots, Ablauf und ausdrücklichen Grenzen): ${absoluteUrl(FEATURES_PAGE_PATH)}
 - Was ist Statix (Marken- und Produktüberblick): ${absoluteUrl('/was-ist-statix')}
 - Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}

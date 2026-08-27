@@ -106,7 +106,7 @@ export default function MoreSection() {
             </div>
 
             <Link
-              href='/was-ist-statix'
+              href='/funktionen'
               title='Alle Funktionen von Statix im Detail'
               className='group mt-8 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
               {t('linkLabel')}

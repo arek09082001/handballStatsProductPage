@@ -50,11 +50,30 @@ card, and links to `/preise` for the rest.
 Length is a conversion constraint on this surface, not a content budget. The
 page is deliberately about half the scroll it used to be: everything a coach
 needs to decide is on it, and everything they only need *after* deciding lives
-on its own route (`/was-ist-statix` for the full feature index, `/preise`,
-`/kontakt`, `/erfahrungen`). Adding a band here means arguing that a coach
-cannot decide without it.
+on its own route (`/funktionen` for the feature index and one page per feature,
+`/was-ist-statix` for the brand story, `/preise`, `/kontakt`, `/erfahrungen`).
+Adding a band here means arguing that a coach cannot decide without it.
 
-## Feature scope (all real, shipping)
+## Feature scope
+
+The catalogue is **one module**: `features/funktionen/data/features.ts`. It
+feeds the `/funktionen` index, one route per feature, `APP_FEATURES` in
+`lib/seo.ts` (and through it the `SoftwareApplication` schema and `llms.txt`),
+the ruled list on `/was‑ist‑statix`, and the sitemap. Add a feature there or it
+exists on none of them; add it twice and they drift, which is exactly how
+"Termine & Trainingsbeteiligung" once sat in the schema with no page, no
+screenshot and no navigation entry behind it.
+
+Every entry carries a `status`, and the site shows it:
+
+- **`live`** — finished, open to every account. Fourteen of the fifteen.
+- **`beta`** — being built, restricted to named accounts. Listed anyway, marked
+  "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
+  something a new account gets today. Currently: **Video‑Tagging**.
+- **`onRequest`** — finished, but set up for a club rather than self‑served.
+  Currently: **Vereinsbereich**.
+
+The scope itself:
 
 - **Live erfassen:** 1‑tap capture, quick mode, shot position & 7‑m, 2‑minute
   timers, guided game assistant, post‑game action editing, offline, PWA install.
@@ -63,6 +82,11 @@ cannot decide without it.
 - **KI‑Analyse:** four scopes — single game, whole team, single player (scouting
   profile), whole tournament. Player names are pseudonymised before any data
   reaches an AI; reports are deletable and generated in the background.
+- **Termine & Trainingsbeteiligung:** team calendar with weekly/fortnightly
+  training series, match appointments with meeting time and a venue address
+  book, player RSVPs with a reason, absences entered once as a date range
+  (holiday/illness/injury) that cover every appointment inside them, RSVP
+  deadlines with push reminders, and a read‑only ICS calendar subscription.
 - **Turniere:** multi‑team tournaments, auto‑updating table, start live games
   from the bracket, enter third‑party results, matchday squad selection.
 - **Live‑Ticker:** publish a game as a public live ticker; share by link or QR;
@@ -70,6 +94,12 @@ cannot decide without it.
 - **Zusammenarbeit:** share games with other coaches (read‑only, by link/email,
   lands in their Statix inbox), invite a coaching staff, player surveys
   (no‑account answers), PDF export & revocable share links.
+- **Video & Tagging — BETA, not generally available:** upload a recording, sync
+  it to the game clock, tag scenes (action + player + qualifiers such as phase,
+  defence, strength, shot origin), read them as lanes, save filters as
+  playlists, and send one player a compilation of only her scenes. Gated to an
+  allowlist while it is built. Anything the site says about it must say that
+  too.
 
 ## Commercial truth (do not invent beyond this)
 

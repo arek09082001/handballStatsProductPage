@@ -220,6 +220,13 @@ async function settle(page, ms = 2200) {
             i.onload = i.onerror = r;
           })),
       );
+      // Next.js paints a dev-only badge ("N 1 Issue") over the bottom-left
+      // corner of every page served by `next dev`. It is not product UI, and a
+      // local instance is the only way to reach the screens the public demo
+      // has not been redeployed with — so it is removed rather than shot.
+      document
+        .querySelectorAll('nextjs-portal, [data-nextjs-toast], #__next-build-watcher')
+        .forEach((el) => el.remove());
     })
     .catch(() => {});
   await page.waitForTimeout(ms);
@@ -333,6 +340,11 @@ const ID = {
   game: process.env.GAME_ID,
   tournament: process.env.TOURNAMENT_ID,
   player: process.env.PLAYER_ID,
+  // Printed by `scripts/seed-schedule.mjs` and `scripts/seed-video.mjs` in the
+  // app repo. Both screens only exist on an instance those seeds have run
+  // against — the public demo carries neither.
+  event: process.env.EVENT_ID,
+  video: process.env.VIDEO_ID,
 };
 
 /** Click the first visible control whose trimmed text matches exactly. */
@@ -635,6 +647,92 @@ const SHOTS = [
     group: 'mobil', file: 'mobil-kader.png', ...PHONE,
     route: () => '/players',
   },
+
+  // ── Termine, for /funktionen/termine-trainingsbeteiligung ────────────────
+  // Needs an instance `scripts/seed-schedule.mjs` has run against: the public
+  // demo has no appointments at all, and a calendar of empty states is worse
+  // than no picture.
+  {
+    group: 'termine', file: 'termine-liste.png', ...TABLET_TALL,
+    route: () => '/schedule',
+    note: 'The week list: series badge, meet/start/end rail, the RSVP tally.',
+  },
+  {
+    group: 'termine', file: 'termine-kalender.png', ...TABLET_TALL,
+    route: () => '/schedule',
+    prepare: (page) => tap(page, 'Kalender'),
+    note: 'The month at a glance — trainings, matches and who is away.',
+  },
+  {
+    group: 'termine', file: 'termine-detail.png', ...TABLET_TALL,
+    route: () => `/schedule/${ID.event}`,
+    note: 'One appointment: hall with navigation, notes, the full attendance list.',
+  },
+  {
+    group: 'termine', file: 'termine-teilnahme.png', ...TABLET,
+    route: () => `/schedule/${ID.event}`,
+    prepare: (page) => scrollTo(page, 'Wer kommt?'),
+    note: 'Who answered what, with the absence reason beside each declined name.',
+  },
+  {
+    group: 'termine', file: 'termine-abwesenheiten.png', ...TABLET,
+    route: () => '/schedule/absences',
+    note: 'Holiday, illness and injuries as ranges — entered once, not per training.',
+  },
+  {
+    group: 'termine', file: 'mobil-termine.png', ...PHONE,
+    route: () => '/schedule',
+    note: 'How a player actually answers: two taps on the phone.',
+  },
+
+  // ── Video-Tagging (beta), for /funktionen/video-tagging ──────────────────
+  // The stage stays empty on a local instance — playback is a presigned R2 URL
+  // and R2 is not something localhost has. So these two crop to the WORKBENCH,
+  // which is real and is the feature; the moving picture on the product page is
+  // a drawn mock, not a doctored screenshot.
+  {
+    group: 'video', file: 'video-tagging-spuren.png',
+    viewport: { width: 1800, height: 1300 }, scale: 2,
+    route: () => `/videos/${ID.video}/tagging`,
+    clip: (page) =>
+      page.evaluate(() => {
+        const grid = document.querySelector('main div.grid.flex-1');
+        const rail = grid?.children[0];
+        // The left column stacks stage → playlist bar → lanes. Dropping the
+        // first child drops the stage, which on a localhost instance is the
+        // "upload not finished" placeholder rather than a match.
+        const bar = rail?.children[1];
+        if (!rail || !bar) return null;
+        const r = rail.getBoundingClientRect();
+        const top = bar.getBoundingClientRect().top;
+        return { x: r.x, y: top, width: r.width, height: r.bottom - top };
+      }),
+    note: 'Lanes and playlists: every scene of the half, grouped by action.',
+  },
+  {
+    group: 'video', file: 'video-tagging-katalog.png',
+    viewport: { width: 1600, height: 1150 }, scale: 2,
+    route: () => `/videos/${ID.video}/tagging`,
+    clip: (page) =>
+      page.evaluate(() => {
+        const grid = document.querySelector('main div.grid.flex-1');
+        const panel = grid?.children[1];
+        if (!panel) return null;
+        const r = panel.getBoundingClientRect();
+        // The panel is a full-height column and the catalogue only fills the
+        // top of it; cropping to the column would ship a third of empty board.
+        const bottom = [...panel.querySelectorAll('button, [role="button"]')]
+          .map((el) => el.getBoundingClientRect().bottom)
+          .reduce((max, b) => Math.max(max, b), r.top);
+        return {
+          x: r.x,
+          y: r.y,
+          width: r.width,
+          height: Math.min(r.height, bottom - r.y + 8),
+        };
+      }),
+    note: 'The tagging catalogue: side, squad, action — one tap each.',
+  },
 ];
 
 async function capture() {
@@ -709,6 +807,21 @@ async function capture() {
         target = el;
       } else if (shot.selector) {
         target = await page.$(shot.selector);
+      }
+      // `clip` crops to a box the shot computes from the live layout. Needed
+      // where the interesting panel has no heading to climb from and no stable
+      // selector of its own — an app-side `data-shot` hook would be product
+      // code existing only for this pipeline.
+      if (shot.clip) {
+        const box = await shot.clip(page);
+        if (!box) throw new Error('clip returned no box');
+        await page.screenshot({
+          path: path.join(PUBLIC_DIR, shot.file),
+          clip: box,
+        });
+        console.log(`✓ ${shot.file}`);
+        done++;
+        continue;
       }
       await target.screenshot({ path: path.join(PUBLIC_DIR, shot.file) });
       console.log(`✓ ${shot.file}`);

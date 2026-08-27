@@ -5,6 +5,11 @@ import {
   getAllArticles,
   RATGEBER_BASE_PATH,
 } from '@/features/ratgeber/data/articles';
+import {
+  FEATURES,
+  FEATURES_PAGE_PATH,
+  featurePath,
+} from '@/features/funktionen/data/features';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -15,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1.0,
+    },
+    {
+      url: absoluteUrl(FEATURES_PAGE_PATH),
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: `${SITE_URL}/handball-statistiken`,
@@ -126,7 +137,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...ratgeberHub, ...articlePages];
+  // One entry per feature, generated from the catalogue so a new feature
+  // reaches the sitemap by existing rather than by somebody remembering.
+  const featurePages: MetadataRoute.Sitemap = FEATURES.map((feature) => ({
+    url: absoluteUrl(featurePath(feature.slug)),
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...featurePages, ...ratgeberHub, ...articlePages];
 }
 
 // Revalidate sitemap every hour
