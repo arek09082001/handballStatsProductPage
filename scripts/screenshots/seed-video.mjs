@@ -17,8 +17,9 @@
  * local instance has — so the stage stays on its pending state and every shot
  * taken here is of the WORKBENCH: the catalogue, the lanes, the filter, the
  * playlists. The moving picture on the product page is a drawn mock
- * (`features/videos-mock/`), which is the honest way to show a beta whose
- * storage tier the screenshot machine cannot reach.
+ * (`features/funktionen/components/tagging-bench-mock.tsx`) that says so itself
+ * — the honest way to show a beta whose storage tier the screenshot machine
+ * cannot reach.
  *
  * Everything here is invented demo data. Deterministic: a re-run replaces the
  * rows it wrote itself and produces the same bench again.
