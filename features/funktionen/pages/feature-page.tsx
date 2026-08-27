@@ -30,13 +30,19 @@ import TaggingBenchMock from '../components/tagging-bench-mock';
  * @returns A JSX element composing the ordered sections of one feature page.
  */
 export default function FeaturePage({ feature }: { feature: Feature }) {
+  // Three features carry exactly one screenshot: the hero pins it and the shot
+  // band renders nothing. Without a court in the middle the page would run five
+  // paper bands in a row, so the steps take the court there instead.
+  const bandShots = feature.mock ? feature.shots : feature.shots.slice(1);
+  const hasShotBand = bandShots.length > 0;
+
   return (
     <div className='flex w-full flex-col items-center bg-paper'>
       <FeatureHeader feature={feature} />
       <FeatureOverview feature={feature} />
       {feature.mock === 'tagging-bench' ? <TaggingBenchMock /> : null}
       <FeatureShots feature={feature} />
-      <FeatureSteps feature={feature} />
+      <FeatureSteps feature={feature} tone={hasShotBand ? 'paper' : 'court'} />
       <FeatureLimits feature={feature} />
       <BoardFaq
         id='faq'
