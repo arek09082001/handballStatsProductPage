@@ -20,6 +20,12 @@
       "newsletterUnsubscribe": "Unsubscribe from newsletter",
       "llmsTxt": "llms.txt"
     },
+    "preferredSource": {
+      "kicker": "Reading Statix regularly?",
+      "body": "Tell Google that Statix is a preferred source for you — the app then shows up higher on handball topics. One tap, no account needed.",
+      "cta": "Prefer on Google",
+      "title": "Add Statix as a preferred source on Google"
+    },
     "copyright": "Copyright © {year}. All rights reserved."
   },
   "agbPage": {

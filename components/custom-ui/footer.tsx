@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { siteLinkGroups } from '@/features/navigation';
+import PreferredSourceButton from './preferred-source-button';
 
 /**
  * Bottom-bar links. `titleKey` points at `footerSection.titles`; without one
@@ -148,6 +149,23 @@ export default function Footer() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Its own strip rather than a fourth block in the brand column or a
+         * third thing in the bottom bar: it is an ask of the reader, not a
+         * conversion action, so it neither competes with the orange register
+         * CTA above nor crowds the legal links below. */}
+        <div className='flex flex-col gap-4 border-b border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8'>
+          <div>
+            <p className='font-hand text-xl text-[#f97316]'>
+              {t('preferredSource.kicker')}
+            </p>
+            <p className='mt-1 max-w-[62ch] text-[13px] leading-6 text-slate-300'>
+              {t('preferredSource.body')}
+            </p>
+          </div>
+
+          <PreferredSourceButton />
         </div>
 
         <div className='flex flex-col items-center gap-4 pt-6 text-[13px] text-slate-400 sm:flex-row sm:justify-between'>
