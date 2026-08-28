@@ -20,6 +20,12 @@
       "newsletterUnsubscribe": "Newsletter abmelden",
       "llmsTxt": "llms.txt"
     },
+    "preferredSource": {
+      "kicker": "Liest du Statix öfter?",
+      "body": "Sag Google, dass Statix eine bevorzugte Quelle für dich ist — dann taucht die App bei Handball-Themen weiter oben auf. Ein Tipp, kein Konto nötig.",
+      "cta": "Bei Google bevorzugen",
+      "title": "Statix bei Google als bevorzugte Quelle hinzufügen"
+    },
     "copyright": "Copyright © {year}. Alle Rechte vorbehalten."
   },
   "agbPage": {

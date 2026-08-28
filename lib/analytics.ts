@@ -32,3 +32,13 @@ export function trackDemoClick(location: DemoClickLocation) {
 export function trackRegisterClick(location: RegisterClickLocation) {
   track('register_click', { location });
 }
+
+/**
+ * Google's preferred-sources button. Same reasoning as the two above: the
+ * click leaves this origin — either into Google's confirmation flow or, when
+ * their module did not load, straight to the deeplink — so nothing about it
+ * shows up in page views.
+ */
+export function trackPreferredSourceClick() {
+  track('preferred_source_click');
+}
