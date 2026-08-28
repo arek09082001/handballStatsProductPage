@@ -44,12 +44,16 @@ const READY_EVENT = 'statix:preferred-source-ready';
 const API_KEY = '__statixPreferredSource';
 
 /**
- * The deeplink, and the button's real `href`. `q` takes the domain Google
- * should treat as the source — the host the site canonicalises on, so it
- * matches what is in the index rather than a second spelling of it.
+ * The deeplink, and the button's real `href`.
+ *
+ * `q` takes the bare DOMAIN, not the canonical host: Google's own example is
+ * `q=example.com` and the docs say to pass "your publication's domain name".
+ * `www.` would be a subdomain-level source — narrower, and a second spelling of
+ * the site next to the one Google already resolves, since `statix-app.de`
+ * redirects to `www.statix-app.de` anyway.
  */
 const DEEPLINK = `https://www.google.com/preferences/source?q=${encodeURIComponent(
-  CLUB_CONFIG.website.urlWithoutProtocol,
+  CLUB_CONFIG.website.domain,
 )}`;
 
 interface PreferredSourceApi {
