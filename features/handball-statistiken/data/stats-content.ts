@@ -363,7 +363,7 @@ export const STATS_FAQS: BoardFaqItem[] = [
   {
     question: 'Kann ich Handball-Statistiken kostenlos erfassen?',
     answer:
-      'Ja. Statix ist aktuell mit vollem Funktionsumfang kostenlos, inklusive Live-Erfassung, Wurfquoten, Wurfbildern und Auswertung. Wer lieber auf Papier startet, nimmt die kostenlose Excel-Vorlage. Beides ohne Kreditkarte; die Live-Demo läuft sogar ohne Account.',
+      'Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos, inklusive Live-Erfassung, Wurfquoten und Auswertung; ab dem 1. Januar 2027 kommen bezahlte Stufen für die aufwendigeren Funktionen dazu. Wer lieber auf Papier startet, nimmt die kostenlose Excel-Vorlage. Beides ohne Kreditkarte; die Live-Demo läuft sogar ohne Account.',
   },
   {
     question: 'Brauche ich eine zweite Person am Spielfeldrand?',

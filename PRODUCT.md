@@ -104,17 +104,33 @@ The scope itself:
 ## Commercial truth (do not invent beyond this)
 
 - **Free to start**, no credit card; first game recorded without commitment.
-- **Right now every feature is free.** Statix has not switched to subscription
-  mode yet, so nothing is behind a paywall today.
-- **A subscription is planned, and its price is not decided.** No figure may
-  appear anywhere on the site — not in copy, not in schema, not in `llms.txt`.
-  Word it as "später wird es ein Abo geben", never as a number, a tier or a
-  discount, and never imply a coach is being charged today. When a price is
-  finally set, check first whether it is the gross end price (incl. USt.):
+- **Today nothing can be bought.** Statix has no checkout and no subscription
+  tab, so every feature is open to every account until 31.12.2026. No CTA may
+  read like a purchase — the action everywhere is registration.
+- **The paid plans start on 1.1.2027, and their figures are decided.** Basis
+  0 € (permanent), Trainer 79 € per season or 9,90 € per month, Pro 159 € per
+  season or 19,90 € per month; a season runs 1 July – 30 June, and somebody
+  joining in January pays the half season (39 € / 79 €). These are end prices
+  and carry **no VAT**: under the small-business rule (§ 19 UStG) none may be
+  stated, and stating it anyway would be owed under § 14c UStG. When the switch
+  to standard taxation comes, the gross figures have to be re-checked, because
   German price-display rules require the end price for consumers.
+- **The figures live in one module.** `features/preise/data/pricing-content.ts`
+  is the source; every other surface quotes it in prose. The tiers and their
+  limits come from the app repo's `docs/pricing.md`, the launch path from
+  `docs/monetarisierung-januar.md` — never round, pad or invent a limit.
+- **Grandfathering is a promise the site makes.** Any account created before
+  1.1.2027 keeps the Trainer plan at no cost until 30.6.2028. It costs nothing
+  to honour (the accounts already sit on `trainer`) and it is the reason this
+  page can announce a price without a single angry existing user — do not
+  weaken or quietly drop it.
+- **Recording is never gated.** In no tier is live capture limited, and a limit
+  is checked when a game is created, never during one. A paywall in the 58th
+  minute costs the match record, not the customer.
 - **Club conditions are quoted, not listed.** A club enquires via
   `/fuer-vereine`; what a club with twelve squads needs is not what a club with
-  two needs, so there is no club price on the site either.
+  two needs. The site names ~390 € per season for five squads as an order of
+  magnitude to budget against, never as a list price.
 - The launch offer for clubs is collected via the newsletter.
 - Live demo runs at the URL in `lib/club-config.ts` (`CLUB_CONFIG.website`).
 

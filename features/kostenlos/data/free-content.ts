@@ -9,9 +9,14 @@ export interface FreeScopeRow {
 }
 
 /**
- * The honest scope table. Every cap here is the value the app itself enforces –
- * the same product truth as `features/preise/data/pricing-content.ts`. If a
- * limit changes in the app, change it in both places.
+ * The honest scope table: what a free account gets **until 31.12.2026**. Every
+ * cap here is the value the app enforces today.
+ *
+ * From 1.1.2027 the free tier becomes "Basis" and its caps tighten (one squad,
+ * 20 players, 10 games); those numbers live in
+ * `features/preise/data/pricing-content.ts` and are stated on `/preise`. Two
+ * dates, two tables — do not merge them, and when a limit changes in the app,
+ * change it in whichever of the two actually moved.
  */
 export const FREE_SCOPE: FreeScopeRow[] = [
   { feature: 'Spiele live erfassen und auswerten', limit: '200 Spiele pro Team' },
@@ -56,7 +61,7 @@ export const FREE_ALTERNATIVES: FreeAlternative[] = [
   },
   {
     name: 'Statix',
-    cost: 'Aktuell kostenlos',
+    cost: 'Basis dauerhaft 0 €',
     good: 'Ein Tap pro Aktion, Auswertung fertig beim Schlusspfiff, offline nutzbar, teilbar per Link.',
     bad: 'Du brauchst ein Handy oder Tablet und ein Konto. Für die KI-Analysen und geteilte Berichte gelten Tageskontingente.',
   },
@@ -66,7 +71,7 @@ export const FREE_FAQS: BoardFaqItem[] = [
   {
     question: 'Gibt es eine wirklich kostenlose Handball-Statistik-App?',
     answer:
-      'Ja. Statix ist aktuell mit vollem Funktionsumfang kostenlos nutzbar: Spiele live erfassen, auswerten, Wurfbilder ansehen, Turniere führen und Berichte teilen. Es gibt keinen Bezahlvorgang in der App und keine Kreditkartenabfrage.',
+      'Ja. Bis zum 31. Dezember 2026 ist Statix mit vollem Funktionsumfang kostenlos nutzbar, und danach bleibt die Basis-Stufe dauerhaft kostenlos: Spiele live erfassen, auswerten, Termine planen, Kaderkarten, öffentlicher Live-Ticker. Es gibt keinen Bezahlvorgang in der App und keine Kreditkartenabfrage.',
   },
   {
     question: 'Muss ich für die kostenlose Nutzung Zahlungsdaten hinterlegen?',
@@ -81,12 +86,12 @@ export const FREE_FAQS: BoardFaqItem[] = [
   {
     question: 'Welche Grenzen hat der kostenlose Zugang?',
     answer:
-      'Pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen; pro Konto 3 Teams. Dazu 3 KI-Analysen in 24 Stunden und 25 in 30 Tagen (eine gleichzeitig) sowie 3 geteilte Berichte in 24 Stunden.',
+      'Bis zum 31. Dezember 2026: pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen; pro Konto 3 Teams. Dazu 3 KI-Analysen in 24 Stunden und 25 in 30 Tagen (eine gleichzeitig) sowie 3 geteilte Berichte in 24 Stunden. Ab dem 1. Januar 2027 gelten für neue Konten die Grenzen der Basis-Stufe: eine Mannschaft, 20 Spieler:innen, 10 Spiele, die letzten fünf davon in voller Tiefe, 3 Turniere sowie 4 KI-Analysen und 4 geteilte Berichte im Monat.',
   },
   {
     question: 'Bleibt Statix kostenlos?',
     answer:
-      'Ein kostenloser Zugang bleibt. Später wird es zusätzlich ein Abo geben, in das einzelne Funktionen wandern. Weder der Preis noch die Auswahl stehen fest – und es passiert nicht über Nacht: Der Newsletter geht vorher raus.',
+      'Ja. Ab dem 1. Januar 2027 heißt der kostenlose Zugang Basis und bleibt dauerhaft 0 €: die ganze Live-Erfassung, der komplette Terminplan, die Kaderkarten und der öffentliche Live-Ticker, für eine Mannschaft. Bezahlt wird ab dann, was echtes Geld kostet – KI-Analysen in größerer Zahl, Videoanalyse, geteilte Berichte und mehrere Mannschaften. Wer sich vor dem 1. Januar 2027 registriert, behält den Trainer-Plan kostenlos bis zum 30. Juni 2028.',
   },
   {
     question: 'Ist eine kostenlose App für den Verein überhaupt sinnvoll?',

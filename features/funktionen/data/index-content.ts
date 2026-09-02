@@ -10,7 +10,7 @@ export const FEATURES_INDEX_FAQS: FeatureFaqItem[] = [
   {
     question: 'Sind alle Funktionen im kostenlosen Zugang enthalten?',
     answer:
-      'Ja. Statix ist noch nicht auf ein Abo umgestellt, also steht im Moment jede fertige Funktion jedem Konto offen — es gibt heute nichts hinter einer Bezahlschranke. Später wird es ein Abo geben; wie es zugeschnitten ist, steht noch nicht fest.',
+      'Bis zum 31. Dezember 2026 ja: Statix ist noch nicht auf ein Abo umgestellt, also steht jede fertige Funktion jedem Konto offen. Ab dem 1. Januar 2027 gibt es drei Stufen — die Erfassung, der Terminplan und die Kaderkarten bleiben in jeder davon vollständig, die rechenintensiven Funktionen wandern in die bezahlten. Der Zuschnitt steht auf der Preisseite.',
   },
   {
     question: 'Was heißt „In Arbeit“ bei einer Funktion?',

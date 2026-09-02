@@ -354,6 +354,33 @@
   opacity: 0;
 }
 
+/* The one authored moment of `/preise`: the figure on the price board is
+ * re-keyed when the billing switch flips, and the new one drops in from the
+ * scoreboard's next slot. Exponential ease-out from an already-visible
+ * default — a reader who never touches the switch sees no animation at all. */
+@keyframes price-swap {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.price-swap {
+  animation: price-swap 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .price-swap {
+    animation: none;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

@@ -60,7 +60,7 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch
 - Regionen: ${SERVICE_AREAS.join(', ')}
-- Preis: Aktuell kostenlos mit vollem Funktionsumfang, ohne Kreditkarte und ohne Bezahlvorgang in der App. Später wird es ein Abo geben; ein Preis steht noch nicht fest und wird vor dem Start bekannt gegeben (Details unter ${absoluteUrl('/preise')})
+- Preis: Bis zum 31.12.2026 kostenlos ohne Kreditkarte und ohne Bezahlvorgang in der App. Ab dem 1.1.2027 drei Stufen: Basis 0 € (dauerhaft), Trainer 79 € je Saison bzw. 9,90 € im Monat, Pro 159 € je Saison bzw. 19,90 € im Monat; Endpreise, keine Umsatzsteuer nach § 19 UStG. Konten, die vor dem 1.1.2027 angelegt wurden, behalten den Trainer-Plan kostenlos bis zum 30.6.2028 (Details unter ${absoluteUrl('/preise')})
 - Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
 - App (Registrierung, kostenlos starten): ${CLUB_CONFIG.website.appUrl}
@@ -73,7 +73,7 @@ ${features}
 
 ## Für Vereine (Vereinsbereich)
 Über den einzelnen Mannschaften gibt es eine Vereinsebene für Handballvereine mit mehreren – oft vielen – Jugendmannschaften. Sie bündelt alle Kader eines Vereins unter einem Dach: eine Vereinsübersicht mit Ergebnissen, kommenden Spielen und einer Tabelle aller Mannschaften (Spiele, Bilanz, Tordifferenz, Wurfquote, Paradenquote), eine durchsuchbare vereinsweite Spielerliste, eine Auswertung mit Überblick und Saisonvergleich, die Laufbahnen von Spielern über mehrere Mannschaften hinweg (eine Spielerin bleibt beim Wechsel von der Jugend zu den Damen dieselbe Person) und die gesammelten KI-Analysen aller Mannschaften. Dazu drei Rollen: Vereinsverwaltung (Vollzugriff), sportliche Leitung (nur lesen) und Trainer. Termine und Trainingsbeteiligung – Trainingszeiten, Serientermine, Zu- und Absagen der Spieler, Abwesenheiten wie Urlaub, Krankheit oder Verletzung als Zeitraum – führt jede Mannschaft im selben Werkzeug.
-Der Vereinsbereich ist nicht selbstbedienbar: Ein Verein wird nach Anfrage eingerichtet, danach tragen die Cheftrainer ihre Mannschaften mit einem Beitrittscode selbst ein. Es gibt dafür **keinen öffentlichen Preis** – Konditionen für Vereine gibt es individuell auf Anfrage über ${absoluteUrl('/fuer-vereine')} oder ${CLUB_CONFIG.email.main}. Für einzelne Trainerinnen und Trainer bleibt der Einstieg kostenlos.
+Der Vereinsbereich ist nicht selbstbedienbar: Ein Verein wird nach Anfrage eingerichtet, danach tragen die Cheftrainer ihre Mannschaften mit einem Beitrittscode selbst ein. Es gibt dafür **keinen öffentlichen Preis** – Konditionen für Vereine gibt es individuell auf Anfrage über ${absoluteUrl('/fuer-vereine')} oder ${CLUB_CONFIG.email.main}. Für einzelne Trainerinnen und Trainer bleibt der Einstieg mit der Basis-Stufe dauerhaft kostenlos.
 
 ## Häufige Fragen
 ${faq}
