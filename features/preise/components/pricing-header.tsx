@@ -1,4 +1,4 @@
-import { UserPlus } from 'lucide-react';
+import { CalendarClock, UserPlus } from 'lucide-react';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -8,14 +8,26 @@ import {
   Grain,
   MarkerUnderline,
 } from '@/features/landing-page/components/tactic';
+import {
+  FOUNDER_DEADLINE_LABEL,
+  FOUNDER_FREE_UNTIL_LABEL,
+  LAUNCH_DATE_LABEL,
+} from '../data/pricing-content';
 
-/** Short, true promises under the CTAs — nothing beyond PRODUCT.md. */
-const TRUST = ['Aktuell 0 €', 'Keine Kreditkarte', 'Demo ohne Account'];
+/** Short, true promises under the CTAs — nothing beyond the plan documents. */
+const TRUST = [
+  'Basis bleibt dauerhaft 0 €',
+  'Keine Kreditkarte',
+  'Demo ohne Account',
+];
 
 /**
- * Court-ground hero for `/preise`. The H1 carries the commercial query
- * ("Preise" + "Handball-Statistik-App"), and the lede answers the cost question
- * in the first two sentences so search and answer engines can lift it directly.
+ * Court-ground hero for `/preise`. The H1 carries the commercial query, and the
+ * lede answers the two questions a coach arrives with in this order: what does
+ * it cost from January, and what happens to the account I already have.
+ *
+ * The deadline strip under the CTAs is the one thing on this page that expires,
+ * so it sits above the fold rather than in the founder band further down.
  * Static server component (no client JS).
  * @returns A JSX element rendering the pricing hero on the court ground.
  */
@@ -45,11 +57,11 @@ export default function PricingHeader() {
         </h1>
 
         <p className='mx-auto mt-6 max-w-[62ch] text-base leading-7 text-chalk/75 sm:text-lg sm:leading-8'>
-          Kurz und ehrlich: Statix kostet dich aktuell nichts. Der volle
-          Funktionsumfang ist kostenlos nutzbar, es gibt keinen Bezahlvorgang und
-          kein Abo in der App – also auch keine Kreditkarte und keine Testphase,
-          die irgendwann ausläuft. Später wird es ein Abo geben; der Preis steht
-          noch nicht fest.
+          Ab dem {LAUNCH_DATE_LABEL} bekommt Statix bezahlte Pläne: Basis bleibt
+          dauerhaft kostenlos, Trainer kostet 79 € je Saison, Pro 159 €. Die
+          Live-Erfassung ist in keinem Plan beschnitten – und wer sich vorher
+          registriert, behält den Trainer-Plan kostenlos bis zum{' '}
+          {FOUNDER_FREE_UNTIL_LABEL}.
         </p>
 
         <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center'>
@@ -70,7 +82,15 @@ export default function PricingHeader() {
           </HeroActionButton>
         </div>
 
-        <div className='mt-7 flex flex-wrap items-center justify-center gap-2'>
+        <p className='mx-auto mt-7 flex max-w-fit items-center gap-2.5 rounded-full border border-primary/45 bg-primary/12 px-4 py-2 text-[15px] font-semibold text-chalk'>
+          <CalendarClock className='size-4 shrink-0 text-primary' aria-hidden />
+          Stichtag {FOUNDER_DEADLINE_LABEL}
+          <span className='font-normal text-chalk/70'>
+            · danach zahlen nur Neuregistrierungen
+          </span>
+        </p>
+
+        <div className='mt-6 flex flex-wrap items-center justify-center gap-2'>
           {TRUST.map((item) => (
             <HeroTrustBadge key={item} label={item} />
           ))}
