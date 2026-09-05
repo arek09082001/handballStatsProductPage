@@ -1,0 +1,1604 @@
+{
+  "footerSection": {
+    "description": "Statix convierte cada partido en estadísticas precisas: porcentajes de acierto, mapas de lanzamiento y análisis con IA que ayudan a entrenadores y equipos a seguir mejorando.",
+    "registerCta": "Regístrate gratis",
+    "contact": {
+      "location": "Hecho en Alemania",
+      "instagram": "Instagram"
+    },
+    "titles": {
+      "email": "Escribir a",
+      "impressum": "Ir al aviso legal",
+      "privacy": "Ir a la política de privacidad",
+      "agb": "Ir a las condiciones generales",
+      "llmsTxt": "Resumen legible por máquinas para asistentes de IA"
+    },
+    "legal": {
+      "impressum": "Aviso legal",
+      "privacy": "Privacidad",
+      "agb": "Condiciones",
+      "newsletterUnsubscribe": "Darse de baja del boletín",
+      "llmsTxt": "llms.txt"
+    },
+    "preferredSource": {
+      "kicker": "¿Lees Statix a menudo?",
+      "body": "Dile a Google que Statix es una fuente preferida para ti: así aparecerá más arriba en temas de balonmano. Un toque, sin cuenta.",
+      "cta": "Preferir en Google",
+      "title": "Añadir Statix como fuente preferida en Google"
+    },
+    "copyright": "Copyright © {year}. Todos los derechos reservados."
+  },
+  "agbPage": {
+    "header": {
+      "eyebrow": "Información legal",
+      "title": "Condiciones Generales de Contratación (CGC)",
+      "description": "Condiciones que rigen el uso de la aplicación de estadísticas de balonmano Statix y de los sitios web y servicios asociados.",
+      "transparencyBadge": "Justas y transparentes",
+      "lastUpdated": "Última actualización: 25 de agosto de 2026"
+    },
+    "documentTitle": "Condiciones Generales de Contratación",
+    "documentTitleShort": "CGC",
+    "providerLabel": "Prestador y parte contratante",
+    "privacyLinkLabel": "Ir a la política de privacidad",
+    "imprintLinkLabel": "Ir al aviso legal",
+    "withdrawalFormTitle": "Modelo de formulario de desistimiento",
+    "withdrawalFormHint": "(Cumplimente y envíe este formulario únicamente si desea desistir del contrato.)",
+    "withdrawalFormLines": [
+      "A la atención de: Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Alemania – correo electrónico: kontakt@statix-app.de",
+      "Por la presente le comunico/comunicamos (*) que desisto de mi/desistimos de nuestro (*) contrato de prestación del siguiente servicio (*): ______________________",
+      "Pedido el (*) / recibido el (*): ______________________",
+      "Nombre del consumidor o consumidores: ______________________",
+      "Domicilio del consumidor o consumidores: ______________________",
+      "Firma del consumidor o consumidores (solo si el presente formulario se presenta en papel): ______________________",
+      "Fecha: ______________________",
+      "(*) Táchese lo que no proceda."
+    ],
+    "intro": {
+      "title": "Preámbulo",
+      "paragraph1": "Las presentes Condiciones Generales de Contratación (las «CGC») regulan la relación contractual entre usted, en calidad de usuario (el «Usuario» o «usted»), y el prestador, en lo relativo al uso de la aplicación de estadísticas de balonmano «Statix», así como de los sitios web asociados, la aplicación web progresiva y los servicios relacionados (conjuntamente, «Statix» o el «Servicio»).",
+      "paragraph2": "Todos los términos y denominaciones empleados en estas CGC deben entenderse en sentido neutro en cuanto al género.",
+      "updatedAt": "Versión: 25 de agosto de 2026"
+    },
+    "sections": {
+      "scope": {
+        "title": "§ 1 Ámbito de aplicación y prestador",
+        "paragraphs": [
+          "Estas CGC se aplican al uso de Statix en la versión vigente en el momento de la celebración del contrato. No se reconocen condiciones divergentes del Usuario, salvo que el prestador acepte expresamente su aplicación en forma de texto.",
+          "Statix se dirige a entrenadores, jugadores, clubes y equipos de balonmano y puede ser utilizado tanto por consumidores (§ 13 del Código Civil alemán, BGB) como por empresarios (§ 14 BGB).",
+          "El prestador y parte contratante es el operador indicado a continuación. La identificación completa del prestador conforme al § 5 de la Ley alemana de Servicios Digitales (DDG) figura en el aviso legal:"
+        ],
+        "items": []
+      },
+      "subject": {
+        "title": "§ 2 Objeto y descripción de los servicios",
+        "paragraphs": [
+          "Statix es una aplicación basada en navegador (aplicación web progresiva) para registrar y analizar estadísticas de balonmano y para organizar el día a día del equipo. El Servicio comprende, en particular, las siguientes funciones:"
+        ],
+        "items": [
+          "Registro en directo de las acciones del partido (goles, lanzamientos, paradas, sanciones, cambios y más) en tiempo real con un solo toque, también sin conexión en el pabellón, con sincronización automática en cuanto vuelve a haber conexión a internet.",
+          "Cálculo automático de estadísticas de jugadores y de equipo, porcentajes de acierto, mapas de lanzamiento, mapas de calor y tendencias de evolución.",
+          "Gestión de equipos, plantillas e información de los jugadores, invitación de otros entrenadores e incorporación autónoma de jugadores mediante un enlace de invitación.",
+          "Nivel de club: agrupación de varios equipos en un club, administración conjunta por parte de los administradores del club y vista de trayectoria de una persona a través de todos los equipos.",
+          "Calendario: entrenamientos, partidos y eventos de equipo con respuestas (asistiré/no asistiré), recordatorios, registro de ausencias (p. ej. vacaciones, enfermedad, lesión) y un canal de calendario suscribible (iCalendar).",
+          "Notificaciones push del navegador para citas y recordatorios, siempre que el Usuario las active expresamente.",
+          "Encuestas enviadas a la plantilla mediante un enlace y sin necesidad de iniciar sesión.",
+          "Creación de torneos con varios equipos, clasificaciones automáticas y calendario de encuentros.",
+          "Análisis automatizado, asistido por inteligencia artificial, de partidos, equipos y jugadores individuales.",
+          "Retransmisión pública opcional de un partido («ticker en directo») mediante un enlace no adivinable, opcionalmente con logotipos de patrocinadores.",
+          "Compartir análisis mediante enlace, exportar el acta del partido en PDF y exportar tablas estadísticas concretas en CSV."
+        ],
+        "paragraphsAfter": [
+          "Statix se desarrolla de forma continua y se encuentra en su fase de lanzamiento al mercado. El alcance concreto de las funciones se desprende de la versión actual del Servicio y de la descripción del servicio en los sitios web del prestador. El prestador está facultado para seguir desarrollando, modificar o adaptar funciones concretas siempre que ello resulte razonable para el Usuario y se preserve el núcleo de la prestación contractualmente debida.",
+          "Statix es una herramienta de documentación y análisis. El prestador no debe ni un determinado resultado deportivo ni la exactitud de los datos introducidos por el Usuario."
+        ]
+      },
+      "registration": {
+        "title": "§ 3 Registro, cuenta de usuario y requisitos de uso",
+        "paragraphs": [
+          "El uso de todas las funciones requiere registrar una cuenta de usuario con una dirección de correo electrónico válida y una contraseña. Sin registro está disponible una demostración en directo no vinculante de algunas funciones.",
+          "Con el envío del registro, el Usuario realiza una oferta de celebración de un contrato de uso. El contrato se perfecciona una vez que el Usuario ha verificado su dirección de correo electrónico mediante el enlace de confirmación que se le ha enviado y el prestador ha activado la cuenta.",
+          "El Usuario se compromete a facilitar información veraz y completa en el registro y a mantenerla actualizada.",
+          "El registro está permitido a las personas físicas que hayan cumplido 16 años. Los menores de entre 16 y 18 años solo pueden crear una cuenta con el consentimiento de sus representantes legales; al registrarse, el Usuario menor de edad confirma que dicho consentimiento existe. A las personas menores de 16 años no se les facilita una cuenta propia. Un entrenador puede registrarlas como integrantes de la plantilla sin que dispongan de cuenta; el § 7 se aplica en consecuencia.",
+          "Si el Usuario actúa por cuenta de un club o de una organización, garantiza estar autorizado para representarlo.",
+          "Las credenciales de acceso deben mantenerse en secreto y protegerse frente al acceso de terceros. El Usuario informará al prestador sin demora indebida en cuanto existan indicios de un uso indebido de la cuenta.",
+          "No existe derecho al registro. El prestador puede denegar la activación de una cuenta sin necesidad de motivación."
+        ],
+        "items": []
+      },
+      "roles": {
+        "title": "§ 4 Roles: entrenadores, jugadores, club",
+        "paragraphs": [
+          "Statix distingue varios roles con distintos permisos. A efectos de los derechos y obligaciones derivados de estas CGC:"
+        ],
+        "items": [
+          "Los entrenadores crean equipos, registran plantillas y partidos y administran los datos del equipo. Deciden qué datos se introducen en Statix y qué contenidos se publican.",
+          "Los jugadores pueden crear su propia cuenta mediante un enlace de invitación y reclamar su ficha en la plantilla. A partir de ese momento ven las citas, sus propias estadísticas y respuestas, y pueden gestionar por sí mismos sus propias entradas, como las ausencias o si su nombre se muestra en las páginas públicas.",
+          "Los administradores del club gestionan conjuntamente varios equipos de un club y pueden consultar datos de todos ellos, siempre que los equipos estén asignados al club."
+        ],
+        "paragraphsAfter": [
+          "Si un equipo está asignado a un club, los datos del equipo pertenecen desde el punto de vista organizativo al club y no a una cuenta individual de entrenador. Si un entrenador cierra su propia cuenta, un equipo con más integrantes sigue existiendo y se transfiere a uno de los miembros restantes (§ 12, apdo. 4).",
+          "La asignación de un rol no faculta al prestador para intervenir en la relación interna entre club, entrenadores y jugadores. Las controversias sobre quién puede consultar o modificar qué datos deben resolverse entre las partes implicadas."
+        ]
+      },
+      "availability": {
+        "title": "§ 5 Disponibilidad, mantenimiento y modificaciones del Servicio",
+        "paragraphs": [
+          "El prestador se esfuerza por mantener el Servicio disponible sin interrupciones, pero no debe ningún nivel concreto de disponibilidad. En particular, los trabajos de mantenimiento, las averías técnicas, motivos de capacidad o circunstancias ajenas al control del prestador (p. ej. fuerza mayor o caídas de proveedores externos) pueden dar lugar a restricciones temporales.",
+          "Statix funciona sin conexión. Los datos registrados sin conexión se almacenan primero localmente en el dispositivo y se sincronizan con los servidores del prestador en cuanto existe conexión a internet. Para que la sincronización se realice correctamente se requieren una conexión a internet operativa y un dispositivo compatible. Si se borran los datos del navegador del dispositivo antes de que se haya producido la sincronización, se pierden los datos aún no transferidos.",
+          "Dado que el prestador se encuentra en fase de lanzamiento al mercado, pueden producirse desarrollos adicionales, ajustes y cambios funcionales concretos. El prestador informará al Usuario de los cambios sustanciales de forma adecuada.",
+          "El prestador está facultado para cesar total o parcialmente la explotación del Servicio. En caso de cese definitivo, el prestador informará al Usuario con al menos 30 días de antelación y le dará la oportunidad de exportar sus datos.",
+          "El prestador puede establecer límites cuantitativos en funciones concretas (p. ej. el número de análisis de IA por equipo y periodo) con el fin de garantizar un funcionamiento estable y un reparto justo de la capacidad. Los límites aplicables se muestran en la aplicación."
+        ],
+        "items": []
+      },
+      "pricing": {
+        "title": "§ 6 Servicios gratuitos y de pago",
+        "paragraphs": [
+          "Actualmente el Servicio se presta de forma gratuita. Ni el registro ni las funciones disponibles en este momento generan coste alguno; no existe obligación de pago sin un acuerdo expreso e independiente.",
+          "El prestador tiene la intención de ofrecer en el futuro suscripciones de pago, en particular para equipos y clubes. El alcance, los precios, los periodos de facturación y los detalles del servicio de una suscripción de pago se desprenden del resumen de servicios y precios vigente en el proceso de pedido.",
+          "Un contrato de pago solo se perfecciona cuando el Usuario selecciona expresamente un servicio de pago, confirma la información sobre el precio y completa el proceso de pedido mediante un botón identificado expresamente como generador de obligación de pago (§ 312j, apdo. 3 BGB). Antes de la celebración de dicho contrato se informa al Usuario de todos los elementos esenciales del contrato, en particular del precio total.",
+          "Todos los precios son precios finales. El prestador repercute el IVA únicamente en la medida en que esté obligado a ello; cuando resulte de aplicación el régimen de pequeñas empresas del § 19 de la Ley alemana del IVA (UStG), no se indica el IVA y se incluye la correspondiente advertencia en la factura.",
+          "Las cuentas gratuitas existentes no pasan automáticamente a ser de pago cuando se introduzcan servicios de pago. Si una función ofrecida hasta ahora de forma gratuita solo va a estar disponible en el futuro mediante pago, el prestador lo comunicará con una antelación razonable; el § 16 no se ve afectado."
+        ],
+        "items": []
+      },
+      "obligations": {
+        "title": "§ 7 Obligaciones y responsabilidad del Usuario",
+        "paragraphs": [
+          "El Usuario se compromete a utilizar Statix únicamente en el marco de la legislación aplicable y de estas CGC.",
+          "El Usuario es responsable de todos los contenidos y datos que introduzca, almacene o trate en Statix. Esto se aplica en particular a los datos personales de terceros, como los jugadores (p. ej. nombres, año o fecha de nacimiento, dorsales, posiciones, datos de rendimiento, asistencias y ausencias).",
+          "El Usuario garantiza que está facultado para tratar los datos personales de terceros que introduce y que dispone de la base jurídica necesaria para ello (p. ej. el consentimiento o una disposición de los estatutos del club). Cuando los datos se refieran a menores de edad, el Usuario deberá recabar el consentimiento necesario de los representantes legales.",
+          "Si el Usuario introduce información de la que pueda deducirse el estado de salud de una persona —en particular una ausencia por enfermedad o lesión y las anotaciones relacionadas—, está tratando categorías especiales de datos personales en el sentido del artículo 9 del RGPD. Para tales entradas, el Usuario debe recabar previamente el consentimiento explícito del interesado o, en el caso de menores, de sus representantes legales. El prestador recomienda prescindir de anotaciones en texto libre sobre enfermedades y lesiones cuando no sean necesarias para la planificación del entrenamiento.",
+          "El Usuario mantendrá indemne al prestador frente a todas las reclamaciones de terceros que se dirijan contra el prestador como consecuencia de una introducción o un tratamiento ilícitos de datos por parte del Usuario, incluidos los costes razonables de defensa jurídica. Esto no se aplica cuando el Usuario no sea responsable de la infracción.",
+          "Queda prohibido al Usuario publicar contenidos ilícitos, ofensivos o lesivos de derechos, hacer un uso indebido del Servicio, eludir los mecanismos de seguridad, consultar el Servicio de forma automatizada en una medida que exceda del uso previsto o someter el software a ingeniería inversa, salvo que la ley lo permita imperativamente.",
+          "El prestador puede bloquear o eliminar contenidos y restringir temporalmente el acceso si existe una sospecha fundada de una infracción sustancial de estas CGC o de una vulneración de derechos. El prestador informará de ello al Usuario y, en la medida en que sea posible y razonable, le dará la oportunidad de pronunciarse."
+        ],
+        "items": []
+      },
+      "dataProtection": {
+        "title": "§ 8 Protección de datos y tratamiento por encargo",
+        "paragraphs": [
+          "El prestador trata los datos personales en el marco de la normativa de protección de datos aplicable. Los detalles sobre el tratamiento de datos personales figuran en la política de privacidad.",
+          "En la medida en que el prestador trate por encargo del Usuario datos personales de terceros (en particular datos de jugadores, citas, ausencias y encuestas) que el Usuario introduce bajo su propia responsabilidad, el prestador actúa como encargado del tratamiento en el sentido del artículo 28 del RGPD; el responsable es el Usuario o su club. Respecto de los propios datos de la cuenta de usuario y de la explotación técnica del Servicio, el prestador es responsable del tratamiento por derecho propio.",
+          "Previa solicitud a la dirección indicada en el aviso legal, el prestador facilita un contrato de encargo del tratamiento conforme al artículo 28, apartado 3, del RGPD, junto con los anexos relativos a las medidas técnicas y organizativas y a los subencargados contratados. Los clubes que registren datos de equipos juveniles deberían celebrar este contrato antes de introducir dato alguno.",
+          "Para prestar el Servicio, el prestador recurre a proveedores cuidadosamente seleccionados en calidad de encargados del tratamiento. Entre ellos se encuentran, en particular:"
+        ],
+        "items": [
+          "Supabase: servicios de base de datos y almacenamiento de archivos (región de alojamiento: Fráncfort del Meno)",
+          "Vercel: alojamiento y explotación de los sitios web y de la aplicación, así como medición anonimizada del alcance",
+          "Brevo: envío de correos electrónicos (confirmaciones de registro, recordatorios, solicitudes de contacto, boletín)",
+          "Anthropic y OpenAI: análisis asistidos por IA sobre la base de datos seudonimizados",
+          "Los servicios push de los fabricantes de navegadores (entre otros Google, Mozilla, Apple): entrega de las notificaciones push activadas"
+        ],
+        "paragraphsAfter": [
+          "Al recurrir a determinados proveedores pueden transferirse datos a terceros países (en particular a Estados Unidos). El prestador basa dichas transferencias en una decisión de adecuación de la Comisión Europea (Marco de Privacidad de Datos UE-EE. UU.) cuando el proveedor correspondiente esté certificado y, en caso contrario, en cláusulas contractuales tipo conforme al artículo 46, apartado 2, letra c), del RGPD. La política de privacidad contiene más información al respecto.",
+          "El prestador informará al Usuario en forma de texto con al menos 30 días de antelación antes de recurrir a un nuevo subencargado; el Usuario podrá oponerse al cambio por motivos relevantes de protección de datos."
+        ]
+      },
+      "ai": {
+        "title": "§ 9 Análisis asistidos por inteligencia artificial",
+        "paragraphs": [
+          "Statix ofrece análisis automatizados y asistidos por IA de partidos, equipos y jugadores individuales. Estos análisis se elaboran con ayuda de servicios de terceros (en particular Anthropic y OpenAI). Un análisis nunca se genera automáticamente en segundo plano, sino que siempre se activa mediante una acción deliberada del Usuario.",
+          "Antes de la transmisión al proveedor de IA, los nombres de los jugadores se sustituyen por identificadores sin significado (seudonimización). La correspondencia entre identificadores y personas no sale del Servicio. La política de privacidad describe los detalles.",
+          "Los resultados son contenidos generados por IA en el sentido del Reglamento (UE) 2024/1689 (Reglamento de Inteligencia Artificial). Se identifican como tales en la aplicación. Los análisis generados por IA se basan en métodos estadísticos y en los datos registrados por el Usuario. Pueden ser incompletos, imprecisos o erróneos y sirven exclusivamente a efectos de información y apoyo.",
+          "Los análisis no constituyen una recomendación vinculante de actuación ni sustituyen la valoración y la decisión propias del Usuario. El prestador no ofrece garantía alguna sobre la exactitud, la integridad o la idoneidad de los resultados asistidos por IA para una finalidad concreta.",
+          "No tiene lugar ninguna decisión individual automatizada, incluida la elaboración de perfiles, en el sentido del artículo 22 del RGPD, que produzca efectos jurídicos en un interesado o le afecte significativamente de modo similar. Que un jugador sea seleccionado, desarrollado o sustituido lo decide únicamente el entrenador.",
+          "El Usuario no está obligado a utilizar la función de IA; el resto de funciones está disponible sin ella. Previa solicitud, el prestador desactivará el análisis por IA para un equipo o un club."
+        ],
+        "items": []
+      },
+      "publicSharing": {
+        "title": "§ 10 Publicación y contenidos compartidos",
+        "paragraphs": [
+          "El Usuario puede hacer públicamente accesibles determinados contenidos mediante un enlace no adivinable, en particular un ticker en directo en curso y las actas de partido finalizadas. Sin esa publicación expresa, los datos de un equipo solo son accesibles para sus integrantes.",
+          "Quien comparte contenidos publica con ello datos personales de terceros y es responsable de hacerlo. Antes de compartir, el Usuario debe asegurarse de que los jugadores afectados —o sus representantes legales en el caso de menores— están de acuerdo.",
+          "Los jugadores con cuenta propia pueden indicar en sus ajustes que su nombre no se muestre en las páginas públicas. Esta decisión prevalece siempre sobre un ajuste más amplio a nivel de equipo y no puede ser anulada por un entrenador.",
+          "La publicación puede finalizarse en cualquier momento; a partir de ese momento el enlace deja de ser accesible. El prestador no tiene influencia alguna sobre si terceros han copiado, guardado o almacenado en la caché de motores de búsqueda contenidos anteriormente públicos.",
+          "Los logotipos de patrocinadores que el Usuario cargue para el ticker en directo deben estar libres de derechos de terceros o debe existir la correspondiente autorización de uso. El § 7, apdo. 5 se aplica en consecuencia."
+        ],
+        "items": []
+      },
+      "ipRights": {
+        "title": "§ 11 Derechos de uso y propiedad intelectual",
+        "paragraphs": [
+          "Todos los derechos sobre el software, los sitios web, el diseño, las marcas, los logotipos y demás contenidos de Statix corresponden al prestador o a sus licenciantes.",
+          "Durante la vigencia del contrato, el prestador concede al Usuario un derecho de uso simple, no exclusivo, intransferible y no sublicenciable sobre Statix dentro del alcance previsto contractualmente.",
+          "El Usuario conserva todos los derechos sobre los contenidos y datos que introduce. Concede al prestador el derecho de uso simple necesario para prestar el Servicio, en particular para almacenar, tratar, analizar y mostrar dichos contenidos dentro del Servicio. Este derecho de uso finaliza cuando se elimina el contenido correspondiente.",
+          "El prestador puede utilizar datos de forma agregada y anonimizada, que no permita extraer conclusiones sobre personas, equipos o clubes concretos, con el fin de mejorar y evaluar estadísticamente el Servicio.",
+          "Los contenidos del Usuario no se utilizan para entrenar modelos de IA del prestador ni de terceros."
+        ],
+        "items": []
+      },
+      "dataExport": {
+        "title": "§ 12 Exportación de datos, supresión y cierre de la cuenta",
+        "paragraphs": [
+          "Dentro de las funciones previstas, el Usuario puede compartir los análisis que ha registrado en Statix, exportar el acta del partido en PDF y determinadas tablas estadísticas en CSV, así como suscribirse al calendario de citas como canal iCalendar.",
+          "Más allá de las funciones de exportación disponibles en la aplicación, el prestador facilitará al Usuario, previa solicitud a la dirección indicada en el aviso legal, los datos almacenados para su cuenta y sus equipos en un formato estructurado, de uso común y de lectura mecánica. Las solicitudes se tramitan sin demora indebida y, a más tardar, en un plazo de 30 días.",
+          "El Usuario puede eliminar su cuenta por sí mismo en cualquier momento (Ajustes → Cuenta). Quien ya no pueda iniciar sesión deberá enviar la solicitud de supresión a la dirección de correo electrónico indicada en el aviso legal. La supresión es definitiva; no hay restauración ni periodo de gracia.",
+          "Al eliminar la cuenta se suprimen los equipos en los que el Usuario es el único integrante, incluidos los datos asociados de plantilla, partidos, citas y análisis. Los equipos con más integrantes siguen existiendo y se transfieren al miembro restante con más antigüedad; lo mismo se aplica a los equipos asignados a un club.",
+          "El Usuario es responsable de exportar por sí mismo los datos que necesite antes de la supresión o antes de la finalización del contrato. La política de privacidad describe los detalles y los plazos de conservación de los registros técnicos."
+        ],
+        "items": []
+      },
+      "liability": {
+        "title": "§ 13 Garantía y responsabilidad",
+        "paragraphs": [
+          "En la medida en que el Servicio se preste de forma gratuita, el prestador responde únicamente por los daños basados en dolo o negligencia grave, así como conforme a las disposiciones sobre la donación.",
+          "Por lo demás, el prestador responde sin limitación en los casos de dolo y negligencia grave, así como por lesiones a la vida, la integridad física o la salud.",
+          "En caso de infracción por negligencia leve de una obligación contractual esencial (obligación cardinal), cuyo cumplimiento resulta imprescindible para la correcta ejecución del contrato y en cuya observancia el Usuario puede confiar habitualmente, la responsabilidad se limita al daño típico del contrato y previsible. En lo demás queda excluida la responsabilidad por negligencia leve.",
+          "No se ve afectada la responsabilidad conforme a la Ley alemana de Responsabilidad por Productos ni la derivada de una garantía asumida expresamente. En los contratos con consumidores sobre productos digitales a título oneroso, no se ven afectados los derechos legales en caso de vicios (§§ 327 y ss. BGB).",
+          "El Usuario es responsable de realizar copias de seguridad periódicas de sus datos. El prestador responde por la pérdida de datos solo en la medida en que la pérdida se hubiera producido igualmente si el Usuario hubiera realizado copias de seguridad de forma adecuada.",
+          "El prestador no responde de la exactitud de los datos de partido y estadísticos registrados por el Usuario, ni de las decisiones que el Usuario adopte sobre la base de los análisis."
+        ],
+        "items": []
+      },
+      "term": {
+        "title": "§ 14 Duración del contrato y resolución",
+        "paragraphs": [
+          "El contrato de uso para el uso gratuito se celebra por tiempo indefinido y puede ser resuelto por cualquiera de las partes en todo momento sin preaviso, en particular mediante la eliminación de la cuenta de usuario.",
+          "La duración, la renovación y la resolución de una eventual suscripción de pago se rigen por las condiciones indicadas en el correspondiente proceso de pedido. Cuando se ofrezca a los consumidores una relación duradera de pago, el prestador pondrá a disposición un botón de cancelación conforme al § 312k BGB.",
+          "El derecho de resolución extraordinaria por causa justificada no se ve afectado para ninguna de las partes. Para el prestador existe causa justificada, en particular, en caso de infracción sustancial de estas CGC por parte del Usuario.",
+          "Las resoluciones requieren forma de texto (p. ej. por correo electrónico); basta con eliminar la cuenta dentro de la aplicación."
+        ],
+        "items": []
+      },
+      "withdrawal": {
+        "title": "§ 15 Derecho de desistimiento de los consumidores",
+        "paragraphs": [
+          "Los consumidores disponen de un derecho legal de desistimiento respecto de los contratos onerosos sobre contenidos o servicios digitales. Para el uso actualmente gratuito no existe derecho de desistimiento, ya que no hay prestación a título oneroso.",
+          "Si en el futuro se celebra un contrato de pago, se aplican las siguientes instrucciones de desistimiento:",
+          "Derecho de desistimiento: Tiene usted derecho a desistir del presente contrato en un plazo de catorce días sin necesidad de justificación. El plazo de desistimiento expirará a los catorce días del día de la celebración del contrato.",
+          "Para ejercer el derecho de desistimiento, deberá usted notificarnos (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Alemania, correo electrónico: kontakt@statix-app.de) su decisión de desistir del contrato a través de una declaración inequívoca (por ejemplo, una carta enviada por correo postal o un correo electrónico). Podrá utilizar el modelo de formulario de desistimiento que figura a continuación, aunque su uso no es obligatorio. Para cumplir el plazo de desistimiento basta con que la comunicación relativa al ejercicio por su parte de este derecho sea enviada antes de que venza el plazo correspondiente.",
+          "Consecuencias del desistimiento: En caso de que usted desista del presente contrato, le devolveremos todos los pagos recibidos de usted sin demora indebida y, en todo caso, a más tardar catorce días a partir de la fecha en la que se nos informe de su decisión de desistir del presente contrato. Procederemos a efectuar dicho reembolso utilizando el mismo medio de pago empleado por usted para la transacción inicial, a no ser que usted haya dispuesto expresamente lo contrario; en todo caso, no incurrirá usted en ningún gasto como consecuencia del reembolso.",
+          "Extinción anticipada del derecho de desistimiento: En el caso de un contrato para el suministro de contenidos digitales que no se presten en un soporte material, el derecho de desistimiento se extingue anticipadamente si hemos iniciado la ejecución del contrato después de que usted haya prestado su consentimiento expreso al inicio de la ejecución antes de que finalice el plazo de desistimiento, haya reconocido que con ello pierde su derecho de desistimiento al comenzar la ejecución y le hayamos facilitado confirmación de ello.",
+          "Si ha solicitado usted que la prestación de un servicio comience durante el plazo de desistimiento, deberá abonarnos un importe proporcional a lo ya prestado hasta el momento en que nos haya comunicado el ejercicio del derecho de desistimiento respecto del presente contrato, en relación con el objeto total del contrato."
+        ],
+        "items": [],
+        "paragraphsAfter": [
+          "En cuanto puedan celebrarse a través del sitio web del prestador contratos de pago sujetos a desistimiento, el prestador pondrá además a disposición el botón legal de desistimiento conforme al § 356a BGB."
+        ]
+      },
+      "changes": {
+        "title": "§ 16 Modificaciones de estas CGC",
+        "paragraphs": [
+          "El prestador se reserva el derecho a modificar estas CGC con efectos para el futuro, siempre que ello resulte necesario para adaptarlas a condiciones jurídicas o técnicas modificadas o para ampliar la oferta de servicios y el Usuario no se vea con ello perjudicado de forma irrazonable. Las modificaciones de las obligaciones contractuales principales o de la remuneración no quedan cubiertas por lo anterior; requieren un acuerdo independiente.",
+          "El prestador informará al Usuario de las modificaciones en forma de texto (p. ej. por correo electrónico o dentro del Servicio) con al menos seis semanas de antelación a su entrada en vigor. Las modificaciones se considerarán aceptadas si el Usuario no se opone a ellas antes de la fecha propuesta de entrada en vigor. El prestador señalará expresamente esta consecuencia y el derecho de oposición en la comunicación. Si el Usuario se opone, ambas partes tendrán derecho a resolver el contrato con efectos a la fecha prevista de entrada en vigor de las modificaciones."
+        ],
+        "items": []
+      },
+      "disputeResolution": {
+        "title": "§ 17 Resolución de litigios",
+        "paragraphs": [
+          "La plataforma de resolución de litigios en línea (plataforma ODR) gestionada por la Comisión Europea se suspendió el 20 de julio de 2025 y ya no está disponible.",
+          "El prestador no está obligado ni dispuesto a participar en procedimientos de resolución de litigios ante una junta arbitral de consumo (§ 36, apdo. 1, n.º 1 de la Ley alemana de Resolución de Litigios de Consumo, VSBG).",
+          "Le rogamos que dirija sus reclamaciones y consultas en primer lugar a la dirección de correo electrónico indicada en el aviso legal. El prestador se esfuerza por resolverlas con rapidez y de forma amistosa."
+        ],
+        "items": []
+      },
+      "final": {
+        "title": "§ 18 Disposiciones finales",
+        "paragraphs": [
+          "Se aplica el Derecho de la República Federal de Alemania, con exclusión de la Convención de las Naciones Unidas sobre los Contratos de Compraventa Internacional de Mercaderías. Para los consumidores, esta elección de ley solo se aplica en la medida en que no prive al consumidor de la protección que le otorgan las disposiciones imperativas del Derecho del Estado de su residencia habitual.",
+          "Si el Usuario es comerciante, persona jurídica de Derecho público o patrimonio especial de Derecho público, el fuero exclusivo para todos los litigios derivados de este contrato es el domicilio social del prestador. Para los consumidores rigen los fueros legales.",
+          "El Usuario solo puede transferir a un tercero los derechos y obligaciones derivados de este contrato con el consentimiento previo del prestador en forma de texto.",
+          "Si alguna de las disposiciones de estas CGC fuera o llegara a ser total o parcialmente inválida, la validez de las restantes disposiciones no se verá afectada. La disposición legal sustituirá a la disposición inválida.",
+          "La versión alemana de estas CGC es la vinculante. Las traducciones sirven exclusivamente para facilitar la comprensión."
+        ],
+        "items": []
+      }
+    }
+  },
+  "navigationSection": {
+    "items": {
+      "features": "Funciones",
+      "pricing": "Precios",
+      "freeApp": "Empezar gratis",
+      "ai": "Análisis con IA",
+      "tournament": "Torneo y directo",
+      "demo": "Demo en directo",
+      "forCoaches": "Para entrenadores",
+      "forClubs": "Para clubes",
+      "forYouthCoaches": "Para entrenadores de base",
+      "shotQuotaCalculator": "Calculadora de acierto",
+      "excelTemplate": "Plantilla de Excel",
+      "ratgeber": "Guía",
+      "aboutStatix": "¿Qué es Statix?",
+      "experiences": "Experiencias",
+      "contact": "Contacto",
+      "faq": "Preguntas frecuentes",
+      "newsletter": "Boletín",
+      "feedback": "Opiniones"
+    },
+    "groups": {
+      "product": "Producto",
+      "audience": "Para quién es",
+      "tools": "Herramientas gratuitas",
+      "resources": "Recursos"
+    },
+    "skipToContent": "Ir al contenido",
+    "registerCta": "Regístrate ahora",
+    "languageSwitcher": {
+      "label": "Cambiar de idioma"
+    }
+  },
+  "legalPage": {
+    "header": {
+      "eyebrow": "Información legal",
+      "title": "Aviso legal",
+      "description": "Datos obligatorios del prestador conforme al § 5 de la DDG: quién opera Statix, cómo contactar con nosotros y quién es responsable de los contenidos. La política de privacidad tiene su propia página.",
+      "transparencyBadge": "Transparente y conforme",
+      "lastUpdated": "Última actualización: 25 de agosto de 2026"
+    },
+    "impressum": {
+      "title": "Aviso legal",
+      "eyebrow": "Información obligatoria conforme al § 5 de la DDG",
+      "providerLabel": "Prestador",
+      "addressLabel": "Dirección de notificaciones",
+      "contactLabel": "Contacto y responsabilidad",
+      "contentResponsibilityLabel": "Responsable del contenido"
+    },
+    "privacyPointer": {
+      "title": "Política de privacidad",
+      "description": "Qué datos trata Statix, cómo se protegen los datos de equipos, jugadores y partidos, cómo funciona el análisis por IA con nombres de jugadores seudonimizados y qué derechos le asisten: todo ello en una página aparte.",
+      "cta": "Leer la política de privacidad"
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "shortTitle": "Privacidad",
+      "preamble": {
+        "title": "Preámbulo",
+        "paragraph1": "Con la siguiente política de privacidad queremos explicarle qué tipos de datos personales suyos (en adelante también, simplemente, «datos») tratamos, con qué fines y en qué medida. Esta política de privacidad se aplica a todos los tratamientos de datos personales que llevamos a cabo, tanto en la prestación de nuestros servicios como, en particular, en nuestros sitios web, en la aplicación Statix y en presencias en línea externas, como nuestros perfiles en redes sociales (en adelante, conjuntamente, la «oferta en línea»).",
+        "paragraph2": "Statix lo utilizan mayoritariamente entrenadores que registran datos sobre otras personas, a menudo sobre menores. Por ello, esta política indica en cada punto quién es responsable de qué datos: nosotros, del funcionamiento del Servicio; el club o el entrenador, de los contenidos que introducen. Todos los términos empleados son neutros en cuanto al género."
+      },
+      "responsibleParty": {
+        "title": "Responsable del tratamiento",
+        "representativesLabel": "Representantes autorizados:",
+        "emailLabel": "Dirección de correo electrónico:",
+        "phoneLabel": "Teléfono:",
+        "dpoLabel": "Delegado de protección de datos:",
+        "dpoText": "No se ha designado un delegado de protección de datos; no se cumplen los requisitos del artículo 37 del RGPD ni del § 38 de la Ley Federal alemana de Protección de Datos. Para cualquier asunto en materia de protección de datos, diríjase a la dirección de correo electrónico indicada arriba.",
+        "supervisoryLabel": "Autoridad de control competente:",
+        "supervisoryText": "Oficina Estatal de Baviera para la Supervisión de la Protección de Datos (BayLDA), Promenade 18, 91522 Ansbach, Alemania."
+      },
+      "controllerRoles": {
+        "title": "¿Quién es responsable de qué?",
+        "description": "Statix se alimenta de datos procedentes de dos partes. Quién es responsable del tratamiento en el sentido del RGPD depende de los datos de que se trate:",
+        "items": [
+          {
+            "title": "Nosotros, como prestador, somos responsables del tratamiento",
+            "description": "de los datos de su cuenta de usuario (nombre, dirección de correo electrónico, hash de la contraseña, horas de inicio de sesión), del uso de nuestros sitios web, de las solicitudes de contacto y del boletín, así como del funcionamiento técnico, incluidos los registros de errores y la protección frente a abusos."
+          },
+          {
+            "title": "El entrenador o el club es el responsable del tratamiento",
+            "description": "de todos los contenidos introducidos en la aplicación sobre otras personas: datos de plantilla, acciones de partido, citas, respuestas, ausencias, respuestas a encuestas y publicaciones. Tratamos estos datos exclusivamente siguiendo instrucciones, en calidad de encargado del tratamiento conforme al artículo 28 del RGPD."
+          },
+          {
+            "title": "Contrato de encargo del tratamiento",
+            "description": "Los clubes y equipos que registren datos de sus miembros —en particular de menores— pueden obtener un contrato de encargo del tratamiento conforme al artículo 28, apartado 3, del RGPD, junto con los anexos relativos a las medidas técnicas y organizativas y a los subencargados contratados, solicitándolo en nuestra dirección de contacto."
+          },
+          {
+            "title": "Derechos de los interesados",
+            "description": "Los jugadores deben dirigir a su club o entrenador las solicitudes de acceso, rectificación y supresión relativas a sus datos de plantilla. Si tales solicitudes nos llegan directamente, las remitimos al responsable y le ayudamos a atenderlas."
+          }
+        ]
+      },
+      "processingOverview": {
+        "title": "Resumen de los tratamientos",
+        "description": "El siguiente resumen recoge los tipos de datos tratados y los fines de su tratamiento y hace referencia a los interesados afectados.",
+        "processedDataTypesTitle": "Tipos de datos tratados",
+        "processedDataTypes": [
+          "Datos identificativos (p. ej. nombres, pertenencia a un club)",
+          "Datos de contacto (p. ej. dirección de correo electrónico, número de teléfono)",
+          "Datos de acceso (p. ej. dirección de correo electrónico, hash de la contraseña, tokens de invitación y de publicación)",
+          "Datos de contenido (p. ej. notas sobre citas, respuestas a encuestas, logotipos cargados)",
+          "Datos de partido y estadísticos (p. ej. acciones del partido, alineaciones, tiempos de juego, resultados)",
+          "Datos identificativos de los integrantes de la plantilla (p. ej. nombre y apellidos, dorsal, posición, año o fecha de nacimiento, periodo de pertenencia)",
+          "Datos de citas y asistencia (p. ej. confirmaciones y cancelaciones, comentarios sobre las citas, periodos de ausencia)",
+          "Información relativa a la salud (artículo 9 del RGPD): únicamente cuando una ausencia se registra como enfermedad o lesión, junto con una nota opcional",
+          "Datos de uso (p. ej. funciones utilizadas, momento del último uso)",
+          "Metadatos, datos de comunicación y de procedimiento (p. ej. direcciones IP, información sobre el dispositivo y el navegador)",
+          "Datos de registro (p. ej. registros técnicos de errores)"
+        ],
+        "affectedPeopleTitle": "Categorías de interesados",
+        "affectedPeople": [
+          "Interlocutores en la comunicación (p. ej. personas que nos escriben)",
+          "Usuarios con cuenta propia (entrenadores, responsables de club, jugadores)",
+          "Jugadores registrados por usuarios sin cuenta propia, incluidos menores de edad",
+          "Visitantes de nuestros sitios web y de los tickers en directo públicos",
+          "Suscriptores del boletín"
+        ],
+        "purposesTitle": "Fines del tratamiento",
+        "purposes": [
+          "Prestación de los servicios contractuales y cumplimiento de las obligaciones contractuales",
+          "Puesta a disposición de las funciones de la aplicación (registro de partidos, estadísticas, calendario, retransmisión en directo)",
+          "Organización del día a día del equipo (citas, respuestas, ausencias, encuestas)",
+          "Análisis asistido por IA de datos de partido y estadísticos seudonimizados",
+          "Comunicación y respuesta a consultas",
+          "Publicidad directa mediante boletín sobre la base del consentimiento",
+          "Medidas de seguridad, protección frente a abusos y spam",
+          "Puesta a disposición de nuestra oferta en línea y facilidad de uso",
+          "Infraestructura de tecnologías de la información y análisis de errores",
+          "Medición anonimizada del alcance",
+          "Relaciones públicas",
+          "Comentarios y mejora de la oferta"
+        ]
+      },
+      "legalBasis": {
+        "title": "Bases jurídicas aplicables",
+        "introLabel": "Bases jurídicas aplicables conforme al RGPD:",
+        "introText": "A continuación encontrará un resumen de las bases jurídicas del RGPD en virtud de las cuales tratamos datos personales. Tenga en cuenta que, además de las disposiciones del RGPD, pueden ser de aplicación normas nacionales de protección de datos de su país o del nuestro de residencia o establecimiento. Si en un caso concreto resultaran relevantes bases jurídicas más específicas, se lo indicaremos en esta política de privacidad.",
+        "items": [
+          {
+            "title": "Consentimiento (artículo 6, apdo. 1, párr. 1, letra a) del RGPD)",
+            "description": "El interesado ha dado su consentimiento para el tratamiento de sus datos personales para uno o varios fines específicos. Nos basamos en él, en particular, para el boletín, para la información facultativa de la encuesta de incorporación y para las notificaciones push."
+          },
+          {
+            "title": "Consentimiento explícito para categorías especiales (artículo 9, apdo. 2, letra a) del RGPD)",
+            "description": "La información de la que puede deducirse el estado de salud de una persona —en nuestro caso, exclusivamente una ausencia registrada como enfermedad o lesión junto con su nota— solo puede tratarse con el consentimiento explícito del interesado o, en el caso de menores, de sus representantes legales. La obtención de dicho consentimiento corresponde al club o al entrenador que realiza el registro."
+          },
+          {
+            "title": "Consentimiento de menores (artículo 8 del RGPD)",
+            "description": "En el caso de los servicios de la sociedad de la información ofrecidos directamente a un niño, el tratamiento basado en el consentimiento solo es lícito en Alemania a partir de los 16 años; por debajo de esa edad se requiere la autorización del titular de la patria potestad."
+          },
+          {
+            "title": "Ejecución de un contrato y consultas precontractuales (artículo 6, apdo. 1, párr. 1, letra b) del RGPD)",
+            "description": "El tratamiento es necesario para la ejecución de un contrato en el que el interesado es parte o para la aplicación a petición de este de medidas precontractuales."
+          },
+          {
+            "title": "Obligación legal (artículo 6, apdo. 1, párr. 1, letra c) del RGPD)",
+            "description": "El tratamiento es necesario para el cumplimiento de una obligación legal aplicable a nosotros, como las obligaciones de conservación derivadas del Derecho mercantil y fiscal."
+          },
+          {
+            "title": "Intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)",
+            "description": "El tratamiento es necesario para la satisfacción de intereses legítimos perseguidos por el responsable del tratamiento o por un tercero, siempre que sobre dichos intereses no prevalezcan los intereses o los derechos y libertades fundamentales del interesado que requieran la protección de datos personales. Nos basamos en ellos, en particular, para un funcionamiento seguro y estable, para la prevención de abusos y para la medición anonimizada del alcance."
+          },
+          {
+            "title": "Almacenamiento en equipos terminales y acceso a ellos (§ 25 de la TDDDG)",
+            "description": "El almacenamiento de información en su equipo terminal y el acceso a ella solo están permitidos sin consentimiento cuando resulten estrictamente necesarios para prestar un servicio expresamente solicitado por usted (§ 25, apdo. 2, n.º 2 de la TDDDG). Utilizamos únicamente ese almacenamiento estrictamente necesario; por ello no se requiere un banner de consentimiento."
+          }
+        ]
+      },
+      "securityMeasures": {
+        "title": "Medidas de seguridad",
+        "paragraph1": "Conforme a los requisitos legales y teniendo en cuenta el estado de la técnica, los costes de aplicación y la naturaleza, el alcance, el contexto y los fines del tratamiento, así como la probabilidad y la gravedad variables del riesgo para los derechos y libertades de las personas físicas, aplicamos medidas técnicas y organizativas adecuadas para garantizar un nivel de protección apropiado al riesgo.",
+        "connectionLabel": "Protección de las conexiones en línea mediante tecnología de cifrado TLS/SSL (HTTPS):",
+        "connectionText": "Para proteger frente a accesos no autorizados los datos de los usuarios transmitidos a través de nuestros servicios en línea, utilizamos tecnología de cifrado TLS/SSL. Estas tecnologías cifran la información transmitida entre el sitio web o la aplicación y el navegador del usuario, protegiendo los datos frente a accesos no autorizados.",
+        "measuresTitle": "Otras medidas de un vistazo",
+        "measures": [
+          "Las contraseñas se almacenan exclusivamente como hash criptográfico (bcrypt) y no son visibles para nosotros en texto claro.",
+          "Todo acceso a la base de datos se realiza del lado del servidor y se limita al equipo o club correspondiente; no existe acceso a la base de datos desde el navegador.",
+          "Todas las tablas de la base de datos están además bloqueadas mediante «row level security» sin ninguna regla permisiva, de modo que las claves públicas de la base de datos no pueden leer dato alguno.",
+          "Los enlaces para restablecer la contraseña y confirmar el correo electrónico se almacenan solo como hash, tienen una validez limitada en el tiempo y se eliminan una vez caducados.",
+          "Los puntos de acceso de inicio de sesión, registro y publicación están protegidos frente a ataques automatizados mediante límites de recuento.",
+          "La publicación (ticker en directo, informes compartidos) se realiza exclusivamente a través de direcciones generadas aleatoriamente e imposibles de adivinar y puede revocarse en cualquier momento.",
+          "Antes de cualquier transmisión a un proveedor de IA, los nombres de las personas se sustituyen por identificadores (seudonimización).",
+          "Los datos técnicos que ya no se necesitan se eliminan mediante una tarea automática de la base de datos que se ejecuta a diario (véase «Plazo de conservación y supresión»)."
+        ]
+      },
+      "webHosting": {
+        "title": "Puesta a disposición de la oferta en línea y alojamiento web",
+        "description": "Tratamos los datos de los usuarios para poder ofrecerles nuestros servicios en línea. A tal fin tratamos la dirección IP del usuario, necesaria para transmitir los contenidos y las funciones de nuestros servicios en línea al navegador o al dispositivo del usuario.",
+        "summaryItems": [
+          {
+            "label": "Tipos de datos tratados:",
+            "value": "Datos de uso, metadatos, datos de comunicación y de procedimiento, datos de registro, datos de contenido."
+          },
+          {
+            "label": "Interesados:",
+            "value": "Usuarios (p. ej. visitantes del sitio web, usuarios de servicios en línea)."
+          },
+          {
+            "label": "Fines del tratamiento:",
+            "value": "Puesta a disposición de nuestra oferta en línea y facilidad de uso; infraestructura de tecnologías de la información; medidas de seguridad."
+          },
+          {
+            "label": "Bases jurídicas:",
+            "value": "Intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD); ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD)."
+          },
+          {
+            "label": "Plazo de conservación:",
+            "value": "Los registros del servidor del proveedor de alojamiento se eliminan en breve plazo conforme a sus especificaciones; los registros de errores almacenados por nosotros, transcurridos 90 días."
+          }
+        ],
+        "processorSectionTitle": "Tratamiento por encargo",
+        "processorSectionText": "Hemos celebrado un contrato de encargo del tratamiento para el uso del servicio indicado. Se trata de un contrato exigido por la normativa de protección de datos que garantiza que el proveedor trate los datos personales de los visitantes de nuestro sitio web únicamente conforme a nuestras instrucciones y respetando el RGPD.",
+        "vercelTitle": "Vercel",
+        "vercelDescription": "Servicios en el ámbito de la puesta a disposición de infraestructura de tecnologías de la información y servicios relacionados (p. ej. espacio de almacenamiento o capacidad de cálculo), así como de un entorno de desarrollo. Los contenidos estáticos se entregan a través de la red mundial de distribución de contenidos del proveedor; en ese proceso puede producirse una transferencia a Estados Unidos.",
+        "vercelItems": [
+          {
+            "label": "Proveedor:",
+            "value": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, EE. UU."
+          },
+          {
+            "label": "Bases jurídicas:",
+            "value": "Intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD); ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD)."
+          },
+          {
+            "label": "Base para las transferencias a terceros países:",
+            "value": "Decisión de adecuación de la Comisión Europea (Marco de Privacidad de Datos UE-EE. UU.) cuando el proveedor está certificado y, en caso contrario, cláusulas contractuales tipo conforme al artículo 46, apartado 2, letra c), del RGPD."
+          },
+          {
+            "label": "Cláusulas contractuales tipo:",
+            "url": "https://vercel.com/legal/dpa"
+          },
+          {
+            "label": "Contrato de encargo del tratamiento:",
+            "url": "https://vercel.com/legal/dpa"
+          }
+        ],
+        "analyticsTitle": "Vercel Analytics y Speed Insights",
+        "analyticsDescription": "Utilizamos Vercel Analytics y Speed Insights para medir el alcance y el rendimiento técnico de nuestro sitio web. El análisis funciona sin cookies y sin ningún otro almacenamiento en su dispositivo. A partir de la dirección IP, del agente de usuario y de otras características técnicas de la solicitud, el proveedor forma un valor hash que cambia a diario y que no puede revertirse, con el fin de reconocer las visitas repetidas dentro de un mismo día. La dirección IP en sí no se almacena, el valor hash no puede atribuirse a una persona y queda inservible transcurridas 24 horas como máximo. Después solo se evalúan métricas agregadas, como páginas vistas, país de origen, tipo de dispositivo, navegador y tiempos de carga (web vitals), así como dos eventos activados por nosotros (un clic en la demostración en directo y un clic en el registro).",
+        "analyticsItems": [
+          {
+            "label": "Proveedor:",
+            "value": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, EE. UU."
+          },
+          {
+            "label": "Finalidad del tratamiento:",
+            "value": "Medición del alcance, análisis del rendimiento del sitio web, optimización de los tiempos de carga y mejora de la facilidad de uso."
+          },
+          {
+            "label": "Bases jurídicas:",
+            "value": "Intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD). Nuestro interés legítimo reside en la optimización y la explotación económica de nuestra oferta en línea. Dado que no se instalan cookies ni se lee información de su dispositivo, no se requiere el consentimiento previsto en el § 25 de la TDDDG."
+          },
+          {
+            "label": "Oposición:",
+            "value": "Puede oponerse en cualquier momento a la medición del alcance escribiendo a nuestra dirección de contacto; como no se almacena ningún identificador personal, técnicamente no es necesaria una exclusión vinculada al dispositivo."
+          },
+          {
+            "label": "Política de privacidad:",
+            "url": "https://vercel.com/legal/privacy-policy"
+          },
+          {
+            "label": "Base para las transferencias a terceros países:",
+            "value": "Decisión de adecuación (Marco de Privacidad de Datos UE-EE. UU.) cuando el proveedor está certificado y, en caso contrario, cláusulas contractuales tipo conforme al artículo 46, apartado 2, letra c), del RGPD."
+          }
+        ]
+      },
+      "cookies": {
+        "title": "Cookies y almacenamiento en su dispositivo",
+        "description": "El término cookies designa funciones que almacenan información en los dispositivos de los usuarios y leen información de ellos. Utilizamos exclusivamente cookies y técnicas de almacenamiento estrictamente necesarias para el funcionamiento del servicio que usted ha solicitado expresamente o que registran un ajuste elegido por usted mismo. No se emplean cookies publicitarias ni de seguimiento. Por ello no se requiere un banner de consentimiento (§ 25, apdo. 2, n.º 2 de la TDDDG).",
+        "tableTitle": "Qué se almacena concretamente",
+        "tableItems": [
+          {
+            "title": "Cookie de sesión de inicio de sesión",
+            "description": "Le mantiene con la sesión iniciada en la aplicación. Token cifrado, duración de 7 días. Sin esta cookie, iniciar sesión es técnicamente imposible."
+          },
+          {
+            "title": "Ajuste de idioma",
+            "description": "Recuerda el idioma de visualización que ha elegido. Duración: 1 año."
+          },
+          {
+            "title": "Contexto de vista (equipo o club)",
+            "description": "Recuerda si la última vista abierta fue la del equipo o la del club. Duración: 1 año."
+          },
+          {
+            "title": "Almacenamiento local de la aplicación (IndexedDB, caché del service worker, almacenamiento local)",
+            "description": "Mantiene disponibles sin conexión los datos de partidos y plantillas, así como los archivos del programa, y recuerda ajustes de visualización como el esquema de color o la última vista seleccionada. Permanece en su dispositivo hasta que elimine la aplicación o los datos del navegador."
+          },
+          {
+            "title": "Sin cookies de terceros",
+            "description": "La medición del alcance, los enlaces a mapas y los contenidos integrados funcionan sin cookies. Solo cuando sigue un enlace externo (p. ej. a Instagram o a una aplicación de mapas) se aplican las disposiciones del proveedor correspondiente."
+          }
+        ],
+        "storageDurationLabel": "Plazo de conservación:",
+        "storageDurationText": "En cuanto al plazo de conservación se distinguen los siguientes tipos de cookies:",
+        "items": [
+          {
+            "title": "Cookies temporales (también: cookies de sesión):",
+            "description": "Las cookies temporales se eliminan, a más tardar, cuando el usuario abandona una oferta en línea y cierra su dispositivo."
+          },
+          {
+            "title": "Cookies permanentes:",
+            "description": "Las cookies permanentes siguen almacenadas incluso después de cerrar el dispositivo. En nuestro caso la duración máxima es de un año; puede eliminar las cookies en cualquier momento desde los ajustes de su navegador."
+          }
+        ]
+      },
+      "contactRequests": {
+        "title": "Contacto, comentarios y gestión de consultas",
+        "description": "Cuando se pone en contacto con nosotros (p. ej. a través del formulario de contacto o de comentarios, por correo electrónico, por teléfono o mediante redes sociales) y en el marco de las relaciones de usuario y comerciales existentes, la información facilitada por las personas que consultan se trata en la medida necesaria para responder a la solicitud de contacto y a las eventuales medidas solicitadas. Los formularios nos transmiten por correo electrónico la información que usted introduce; el contenido del formulario no se almacena en una base de datos. Para hacer frente a consultas masivas automatizadas, su dirección IP se conserva un máximo de una hora en un contador volátil en memoria y a continuación se descarta.",
+        "items": [
+          {
+            "label": "Tipos de datos tratados:",
+            "value": "Datos identificativos, datos de contacto, datos de contenido, datos de uso, metadatos, datos de comunicación y de procedimiento."
+          },
+          {
+            "label": "Interesados:",
+            "value": "Interlocutores en la comunicación."
+          },
+          {
+            "label": "Fines del tratamiento:",
+            "value": "Comunicación; procedimientos organizativos y administrativos; comentarios; medidas de seguridad; puesta a disposición de nuestra oferta en línea y facilidad de uso."
+          },
+          {
+            "label": "Bases jurídicas:",
+            "value": "Ejecución de un contrato y consultas precontractuales (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+          },
+          {
+            "label": "Plazo de conservación:",
+            "value": "Las consultas se eliminan una vez atendidas, siempre que no se opongan obligaciones legales de conservación; revisamos su finalización al menos cada dos años."
+          }
+        ]
+      },
+      "appSections": {
+        "title": "Tratamiento de datos en la aplicación Statix",
+        "intro": "Los siguientes apartados describen los tratamientos que tienen lugar al utilizar la aplicación Statix (aplicación web y aplicación web progresiva instalable). Cuando se trata de contenidos que un entrenador introduce sobre otras personas, actuamos como encargado del tratamiento para el club o el equipo (véase «¿Quién es responsable de qué?»).",
+        "sections": [
+          {
+            "title": "Registro y cuenta de usuario",
+            "paragraphs": [
+              "Para utilizar la aplicación se necesita una cuenta de usuario. En el registro tratamos el nombre, la dirección de correo electrónico y la contraseña; la contraseña se almacena exclusivamente como hash criptográfico y no es visible para nosotros en texto claro. La información facultativa de la encuesta de incorporación (p. ej. liga, categoría de edad, objetivos, mayor reto) se utiliza para mejorar la oferta.",
+              "La dirección de correo electrónico se verifica antes del primer inicio de sesión mediante un enlace de confirmación (doble opt-in). Para restablecer la contraseña enviamos, previa solicitud, un enlace de validez limitada por correo electrónico. Ambos tokens se almacenan exclusivamente como hash y se eliminan, a más tardar, siete días después de su caducidad.",
+              "Los jugadores también pueden crear su propia cuenta: el entrenador comparte un enlace de invitación (el enlace de acceso del equipo) mediante el cual el jugador reclama su propia ficha en la plantilla. El enlace es válido durante 14 días y puede renovarse en cualquier momento, lo que invalida el enlace anterior. Quién reclama qué ficha de la plantilla lo decide exclusivamente el propio jugador; la asignación por parte de un entrenador no es posible.",
+              "Para distinguir las cuentas activas de las abandonadas, almacenamos el momento del último uso autenticado con una resolución de cinco minutos. Esto no crea un perfil de movimientos ni de uso; los momentos anteriores se sobrescriben.",
+              "Puede eliminar su cuenta usted mismo en cualquier momento (Ajustes → Cuenta). Qué se elimina y qué permanece se describe en nuestra página sobre la eliminación de la cuenta."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos identificativos, datos de contacto, datos de acceso, datos de contenido, datos de uso."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Usuarios con cuenta propia (entrenadores, responsables de club, jugadores)."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Ejecución de un contrato y consultas precontractuales (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); para la información facultativa de la encuesta: consentimiento (artículo 6, apdo. 1, párr. 1, letra a) del RGPD); para el indicador de actividad: intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta la eliminación de la cuenta; los tokens de restablecimiento de contraseña y de confirmación del correo electrónico, a más tardar siete días después de su caducidad."
+              }
+            ]
+          },
+          {
+            "title": "Datos de equipo, plantilla y jugadores",
+            "paragraphs": [
+              "La función principal de la aplicación es el registro de estadísticas de partidos de balonmano. Para ello los usuarios crean datos de su equipo: nombre y apellidos, dorsal, posición, indicador de portero, periodo de pertenencia a la plantilla y tipo de pertenencia (plantilla habitual, segundo equipo, invitado), así como acciones del partido y las estadísticas calculadas a partir de ellas (p. ej. goles, lanzamientos, paradas, exclusiones, tiempos de juego, cambios). Opcionalmente pueden guardarse los datos del club y un logotipo del club.",
+              "Para distinguir a personas con el mismo nombre y determinar la categoría de edad, puede almacenarse adicionalmente el año de nacimiento y —solo si el club lo introduce— la fecha completa de nacimiento. El año de nacimiento es suficiente para la categoría de edad; recomendamos no introducir la fecha completa de nacimiento cuando no sea necesaria.",
+              "Estos datos se refieren habitualmente a personas que no utilizan la aplicación, incluidos menores de edad. El usuario que los registra o su club es el responsable del tratamiento: debe informar a los interesados —o a sus representantes legales en el caso de menores— sobre el tratamiento y, cuando sea necesario, recabar su consentimiento. Nosotros tratamos estos datos exclusivamente siguiendo instrucciones.",
+              "Los datos solo son visibles para los integrantes del equipo correspondiente y —cuando el equipo está asignado a un club— para los responsables de ese club, salvo que un partido se publique expresamente (véase más abajo)."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos identificativos, datos identificativos de los integrantes de la plantilla, datos de contenido, datos de partido y estadísticos."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Usuarios; jugadores registrados por usuarios, incluidos menores de edad."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "El responsable del tratamiento es el club o el entrenador que realiza el registro; normalmente el consentimiento (artículo 6, apdo. 1, párr. 1, letra a) del RGPD) o los intereses legítimos del club (artículo 6, apdo. 1, párr. 1, letra f) del RGPD). Nuestro tratamiento se realiza como encargo del tratamiento (artículo 28 del RGPD) sobre la base de nuestro contrato con el usuario (artículo 6, apdo. 1, párr. 1, letra b) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta la supresión por el responsable del tratamiento y, como máximo, hasta la eliminación del equipo o de la cuenta asociada."
+              }
+            ]
+          },
+          {
+            "title": "Club y vista de trayectoria entre equipos",
+            "paragraphs": [
+              "Varios equipos pueden agruparse en un club. Los administradores del club ven entonces las plantillas y los análisis de todos los equipos asignados. Dentro de un club, las fichas de plantilla de una misma persona —por ejemplo, del equipo sub-18 y del equipo femenino— pueden vincularse a una sola persona, de modo que se haga visible una trayectoria a través de los equipos.",
+              "La aplicación propone dicha vinculación a partir de los nombres, el año de nacimiento y los periodos de pertenencia; la confirma o la rechaza exclusivamente una persona. Las propuestas rechazadas se recuerdan para no proponer repetidamente a la misma persona. No se produce vinculación entre clubes distintos.",
+              "Si un equipo se asigna a un club, el club puede acceder a sus datos. A partir de ese momento, el club es el responsable del tratamiento de esos datos conforme a la normativa de protección de datos."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos identificativos, datos identificativos de los integrantes de la plantilla (incluido el año de nacimiento), datos de partido y estadísticos."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Jugadores registrados por usuarios; miembros del club con cuenta propia."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "El responsable del tratamiento es el club; nuestro tratamiento se realiza como encargo del tratamiento (artículo 28 del RGPD)."
+              }
+            ]
+          },
+          {
+            "title": "Citas, respuestas y canal de calendario",
+            "paragraphs": [
+              "La aplicación refleja el calendario del equipo: entrenamientos, partidos, cenas de equipo y citas similares con lugar, hora de encuentro y una nota. Los integrantes de la plantilla confirman, cancelan o responden «quizá» y pueden dejar un comentario. Los comentarios solo son visibles para el entrenador y para quien los escribe, no para el resto del equipo. Si se solicita, la aplicación envía un recordatorio antes de una cita por correo electrónico o mediante notificación push.",
+              "El calendario puede suscribirse como canal iCalendar en una aplicación de calendario. El canal es accesible sin iniciar sesión mediante una dirección generada aleatoriamente e imposible de adivinar, y contiene el título, la hora, el lugar y la nota de las citas, pero no las respuestas ni los nombres de los integrantes de la plantilla. Cualquiera que conozca la dirección puede leer el calendario; por ello, transmita el enlace únicamente a las personas que deban tenerlo. El enlace puede renovarse en cualquier momento, lo que invalida el anterior.",
+              "El canal es deliberadamente de solo lectura: no permite responder a las citas y no se transfieren listas de asistentes a los programas de calendario."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de citas y asistencia, datos de contenido (comentarios, notas), datos de acceso (token del canal)."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Integrantes de la plantilla; usuarios con cuenta propia; destinatarios del canal de calendario."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "El responsable del tratamiento es el club o el equipo; nuestro tratamiento se realiza como encargo del tratamiento (artículo 28 del RGPD) sobre la base de nuestro contrato con el usuario (artículo 6, apdo. 1, párr. 1, letra b) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta la eliminación de la cita, del equipo o de la cuenta."
+              }
+            ]
+          },
+          {
+            "title": "Ausencias e información relativa a la salud",
+            "paragraphs": [
+              "Los integrantes de la plantilla pueden registrar ausencias prolongadas para no tener que cancelar cada cita por separado. Una ausencia consta de un periodo, una categoría —vacaciones, enfermedad, lesión u otra— y una nota facultativa. Puede registrarla la propia persona afectada o el entrenador en su nombre.",
+              "Si se elige como categoría enfermedad o lesión, o si la nota contiene información sobre el estado de salud de una persona, se trata de datos de salud y, por tanto, de una categoría especial de datos personales conforme al artículo 9 del RGPD. Dicha información solo puede tratarse con el consentimiento explícito del interesado o, en el caso de menores, de sus representantes legales. Recabar y documentar este consentimiento corresponde al club o al entrenador; nosotros tratamos la información exclusivamente siguiendo instrucciones.",
+              "Recomendamos expresamente utilizar la categoría «otra» o prescindir de notas en texto libre cuando la planificación del entrenamiento no requiera conocer la causa exacta. La nota de una ausencia no se muestra a los demás integrantes de la plantilla; estos solo ven que la persona no está disponible durante ese periodo. Una ausencia puede modificarse o eliminarse en cualquier momento; la categoría puede cambiarse posteriormente a «otra»."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de citas y asistencia; información relativa a la salud (artículo 9 del RGPD) cuando se introduce; datos de contenido (nota)."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Integrantes de la plantilla, incluidos menores de edad."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Consentimiento explícito del interesado o de sus representantes legales (artículo 9, apdo. 2, letra a) del RGPD), que debe recabar el club responsable; nuestro tratamiento se realiza como encargo del tratamiento (artículo 28 del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta la supresión por el interesado o por el responsable del tratamiento y, como máximo, hasta la eliminación del equipo o de la cuenta."
+              }
+            ]
+          },
+          {
+            "title": "Encuestas a la plantilla",
+            "paragraphs": [
+              "Los entrenadores pueden enviar encuestas a su plantilla (p. ej. valoración de la temporada o de la planificación de los entrenamientos). La encuesta se abre sin iniciar sesión mediante una dirección generada aleatoriamente e imposible de adivinar; quien responde selecciona su nombre de la lista de la plantilla.",
+              "Por tanto, las respuestas se atribuyen a la persona correspondiente y no son anónimas para el entrenador. A quien desee dar su opinión de forma anónima se le debe informar de que existe esa atribución. Una encuesta puede cerrarse; las respuestas ya dadas se conservan, pero no se aceptan nuevas."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de contenido (respuestas), datos identificativos (atribución a la ficha de la plantilla), datos de acceso (token de la encuesta)."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Integrantes de la plantilla."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "El responsable del tratamiento es el club o el equipo; nuestro tratamiento se realiza como encargo del tratamiento (artículo 28 del RGPD)."
+              }
+            ]
+          },
+          {
+            "title": "Notificaciones push",
+            "paragraphs": [
+              "Si activa las notificaciones push para citas y recordatorios, su navegador crea una suscripción y nos transmite su dirección (endpoint) en el servicio push del fabricante de su navegador, dos claves de cifrado asociadas y el identificador de su navegador (agente de usuario). Sin esta información la entrega es técnicamente imposible.",
+              "La entrega la realiza el servicio push del fabricante del navegador correspondiente (entre otros Google, Mozilla, Apple). El contenido del mensaje se cifra para su dispositivo antes de la entrega y el servicio push no puede leerlo; el servicio push sí conoce, en cambio, el momento de la entrega y el identificador de la suscripción de su dispositivo. Según el fabricante, puede producirse una transferencia a terceros países.",
+              "La activación de las notificaciones es voluntaria y puede revocarse en cualquier momento: puede desactivarlas en los ajustes de la aplicación o retirar el permiso en su navegador. Las suscripciones que el servicio push comunica como no válidas —por ejemplo, tras eliminar los datos del navegador o desinstalar la aplicación— las eliminamos automáticamente."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de acceso (endpoint y claves de la suscripción), metadatos y datos de comunicación (identificador del navegador, marcas de tiempo)."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Usuarios con cuenta propia que han activado las notificaciones push."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Consentimiento (artículo 6, apdo. 1, párr. 1, letra a) del RGPD; § 25, apdo. 1 de la TDDDG); puede retirarse en cualquier momento con efectos para el futuro."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta la cancelación de la suscripción, hasta que la suscripción deje de ser válida o hasta la eliminación de la cuenta."
+              }
+            ]
+          },
+          {
+            "title": "Base de datos y almacenamiento de archivos (Supabase)",
+            "paragraphs": [
+              "Todos los datos de la aplicación se almacenan en una base de datos PostgreSQL del proveedor Supabase; los logotipos de clubes y patrocinadores se guardan en el almacenamiento de objetos del mismo proveedor. El alojamiento se realiza en la UE (región de Fráncfort del Meno, Alemania). El acceso a la base de datos se realiza exclusivamente del lado del servidor; no existe conexión con la base de datos desde el navegador. Todas las tablas están además bloqueadas mediante «row level security» sin ninguna regla permisiva.",
+              "La sociedad matriz del proveedor tiene su sede en Estados Unidos, por lo que no puede descartarse por completo un acceso desde un tercer país en el marco de tareas de mantenimiento y soporte. Para ello están previstas las garantías indicadas a continuación."
+            ],
+            "items": [
+              {
+                "label": "Proveedor:",
+                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur y San Francisco, EE. UU.; región de alojamiento: Fráncfort del Meno, Alemania (UE)."
+              },
+              {
+                "label": "Política de privacidad:",
+                "url": "https://supabase.com/privacy"
+              },
+              {
+                "label": "Contrato de encargo del tratamiento, incl. cláusulas contractuales tipo:",
+                "url": "https://supabase.com/legal/dpa"
+              },
+              {
+                "label": "Base para las transferencias a terceros países:",
+                "value": "Cláusulas contractuales tipo conforme al artículo 46, apartado 2, letra c), del RGPD."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              }
+            ]
+          },
+          {
+            "title": "Registros de errores, protección frente a abusos y seguridad operativa",
+            "paragraphs": [
+              "Para garantizar un funcionamiento estable almacenamos registros técnicos de errores. Una entrada de registro contiene el mensaje de error, incluida la ruta técnica de llamada, la dirección y la función afectadas, el momento, el identificador del navegador (agente de usuario), la versión de la aplicación y —cuando está disponible— el identificador de la cuenta con la sesión iniciada y del equipo afectado. Los registros de errores se eliminan automáticamente transcurridos 90 días. En caso de errores graves enviamos además una notificación a nuestra propia dirección de operaciones.",
+              "Para protegernos frente a ataques automatizados (como el intento de adivinar contraseñas o enlaces compartidos), contamos las solicitudes a los puntos de acceso relevantes para la seguridad. Su dirección IP sirve de clave de recuento; los tokens de publicación y de invitación entran en la clave únicamente como valor hash irreversible. Estos contadores se eliminan automáticamente transcurridas 24 horas como máximo.",
+              "Para el uso del análisis por IA llevamos además un registro de uso que anota, por análisis, el equipo, el usuario que lo ha activado, el tipo de análisis y el momento. Sirve para hacer cumplir los límites de uso y se elimina automáticamente transcurridos 400 días."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de registro, metadatos, datos de comunicación y de procedimiento (incluida la dirección IP), datos de uso."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Usuarios; visitantes de nuestras ofertas en línea."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Intereses legítimos en un funcionamiento seguro y estable (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Registros de errores, 90 días; contadores de protección frente a abusos, 24 horas; registro de uso de la IA, 400 días. La supresión la realiza una tarea automática de la base de datos que se ejecuta a diario."
+              }
+            ]
+          },
+          {
+            "title": "Envío de correos electrónicos (Brevo)",
+            "paragraphs": [
+              "Los correos electrónicos transaccionales —como la confirmación de registro, los enlaces para restablecer la contraseña, las invitaciones a equipos, los recordatorios de citas, las actas de partido compartidas y las notificaciones del sistema—, así como los correos electrónicos en el marco del formulario de contacto y de comentarios y del boletín, se envían a través del proveedor Brevo. En ese proceso se tratan la dirección de correo electrónico, el nombre y el contenido del mensaje correspondiente, así como información técnica de envío."
+            ],
+            "items": [
+              {
+                "label": "Proveedor:",
+                "value": "Brevo GmbH, Köpenicker Straße 126, 10179 Berlín, Alemania."
+              },
+              {
+                "label": "Política de privacidad:",
+                "url": "https://www.brevo.com/de/legal/privacypolicy/"
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD); para el boletín: consentimiento (artículo 6, apdo. 1, párr. 1, letra a) del RGPD)."
+              }
+            ]
+          },
+          {
+            "title": "Boletín",
+            "paragraphs": [
+              "Cuando se suscribe a nuestro boletín, tratamos su dirección de correo electrónico para enviarle información sobre Statix. La suscripción se realiza mediante el procedimiento de doble opt-in: la dirección solo se incorpora a la lista de distribución una vez confirmado el enlace enviado por correo electrónico. Las altas y las bajas se registran a efectos probatorios. Puede darse de baja del boletín en cualquier momento mediante el enlace de cancelación incluido en cada correo o enviándonos un mensaje; entonces eliminamos su dirección de la lista de distribución."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de contacto, metadatos, datos de comunicación y de procedimiento."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Suscriptores del boletín."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Consentimiento (artículo 6, apdo. 1, párr. 1, letra a) del RGPD); puede retirarse en cualquier momento con efectos para el futuro."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta la baja; las pruebas del consentimiento se conservan más allá de ese momento para cumplir la obligación de responsabilidad proactiva (artículo 5, apartado 2, del RGPD)."
+              }
+            ]
+          },
+          {
+            "title": "Análisis asistidos por IA",
+            "paragraphs": [
+              "A petición expresa del usuario, la aplicación elabora análisis asistidos por IA de partidos, jugadores y equipos. El análisis nunca se ejecuta automáticamente en segundo plano: se activa exclusivamente mediante un clic deliberado del usuario.",
+              "Antes de la transmisión se seudonimizan todos los nombres de los jugadores. Cada jugador se sustituye por un identificador sin significado con la forma [[P1]], [[P2]], …; la correspondencia entre identificador y persona permanece exclusivamente en nuestra base de datos. A los proveedores de IA solo se envían, por tanto, valores agregados de partido y estadísticos (p. ej. goles, lanzamientos, paradas, exclusiones, tiempos de juego, resultados, posiciones), así como los nombres del club y del rival. Los nombres, fechas de nacimiento, dorsales, direcciones de correo electrónico o fotografías de los jugadores no salen de la aplicación. Solo al mostrarse en el navegador se sustituyen de nuevo los identificadores por los nombres reales de la plantilla del propio equipo.",
+              "Según los proveedores, los datos transmitidos a través de la interfaz de programación (API) no se utilizan para entrenar sus modelos de IA. Los análisis terminados se almacenan en nuestra base de datos (región de alojamiento: Fráncfort del Meno) para poder consultarlos de nuevo; se eliminan junto con el partido, el equipo o la cuenta de usuario asociados.",
+              "Los resultados son contenidos generados por IA y se identifican como tales en la aplicación. No tiene lugar ninguna decisión automatizada con efectos jurídicos en el sentido del artículo 22 del RGPD: el análisis es una valoración destinada al entrenador y la decisión deportiva la toma una persona. Previa solicitud, desactivamos por completo el análisis por IA para un equipo o un club."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de partido y estadísticos en forma seudonimizada (nombres de jugadores sustituidos por identificadores); datos de uso."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Usuarios; jugadores registrados por usuarios (solo de forma seudonimizada)."
+              },
+              {
+                "label": "Fines del tratamiento:",
+                "value": "Elaboración de análisis de partidos, jugadores y equipos a petición expresa del usuario."
+              },
+              {
+                "label": "Proveedores:",
+                "value": "Anthropic PBC, San Francisco, EE. UU.; OpenAI, L.L.C., San Francisco, EE. UU."
+              },
+              {
+                "label": "Política de privacidad de Anthropic:",
+                "url": "https://www.anthropic.com/legal/privacy"
+              },
+              {
+                "label": "Política de privacidad de OpenAI:",
+                "url": "https://openai.com/policies/privacy-policy"
+              },
+              {
+                "label": "Base para las transferencias a terceros países:",
+                "value": "Decisión de adecuación (Marco de Privacidad de Datos UE-EE. UU.) cuando el proveedor correspondiente está certificado y, en caso contrario, cláusulas contractuales tipo conforme al artículo 46, apartado 2, letra c), del RGPD."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "El análisis permanece almacenado hasta la eliminación del partido, del equipo o de la cuenta asociados; el registro de uso se elimina transcurridos 400 días."
+              }
+            ]
+          },
+          {
+            "title": "Función sin conexión y almacenamiento local en su dispositivo",
+            "paragraphs": [
+              "Como aplicación web progresiva (PWA), la aplicación puede utilizarse también sin conexión a internet. A tal fin, los datos de partidos y equipos, así como los recursos de la aplicación, se almacenan localmente en su dispositivo (IndexedDB del navegador y caché del service worker) y se sincronizan automáticamente con nuestros servidores cuando hay conexión disponible. Este almacenamiento local es técnicamente necesario para la función sin conexión (§ 25, apdo. 2, n.º 2 de la TDDDG).",
+              "Los datos almacenados localmente permanecen en su dispositivo hasta que elimine la aplicación o los datos del navegador. Tenga en cuenta que, si los datos del navegador se eliminan antes de que se haya producido la sincronización, se perderán los registros aún no transferidos. En un dispositivo compartido, debe cerrar la sesión después de utilizarlo para que los datos de plantilla almacenados localmente no queden accesibles a otras personas."
+            ],
+            "items": [
+              {
+                "label": "Bases jurídicas:",
+                "value": "Ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); § 25, apdo. 2, n.º 2 de la TDDDG (almacenamiento técnicamente necesario)."
+              }
+            ]
+          },
+          {
+            "title": "Retransmisión pública de partidos en directo",
+            "paragraphs": [
+              "Los usuarios pueden compartir opcionalmente un partido como ticker en directo público. El ticker es entonces accesible sin iniciar sesión mediante un enlace imposible de adivinar y muestra los nombres del equipo y de los jugadores, los dorsales, las acciones del partido y los resultados del propio equipo; los datos de los jugadores rivales no se publican. Opcionalmente se muestran los logotipos de patrocinadores cargados por el club.",
+              "La publicación la inicia activamente el usuario, quien es responsable de asegurarse de que los jugadores afectados —o sus representantes legales en el caso de menores— estén de acuerdo con ella. Los jugadores con cuenta propia pueden indicar en sus ajustes que su nombre no aparezca en las páginas públicas; en tal caso solo se muestra el dorsal. Esta decisión prevalece siempre sobre un ajuste más amplio a nivel de equipo y no puede ser anulada por un entrenador.",
+              "Para mostrar el número actual de espectadores y limitar la carga, almacenamos por espectador un identificador de sesión aleatorio asignado al dispositivo, sin referencia personal, junto con el momento de la última solicitud. Estas entradas se eliminan al finalizar el partido y, a más tardar, transcurridos dos días.",
+              "La publicación puede finalizarse en cualquier momento; el ticker deja entonces de ser accesible públicamente. No tenemos influencia sobre las copias o cachés realizadas por terceros mientras estuvo publicado."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de contenido, datos de partido y estadísticos, datos identificativos de los integrantes de la plantilla, identificadores técnicos de sesión de los espectadores."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Jugadores registrados por usuarios; visitantes del ticker en directo."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Para la publicación: consentimiento de los interesados (artículo 6, apdo. 1, párr. 1, letra a) del RGPD), que debe recabar el club responsable; para el recuento de espectadores: intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta que finalice la publicación; los identificadores de sesión de los espectadores, un máximo de dos días."
+              }
+            ]
+          },
+          {
+            "title": "Actas de partido compartidas y exportación en PDF",
+            "paragraphs": [
+              "Un acta de partido terminada puede compartirse con otro entrenador. Para ello, la aplicación genera una dirección imposible de adivinar; si se solicita, enviamos además un correo electrónico a la dirección de destinatario indicada por el usuario. En ese proceso se almacenan la dirección del destinatario, quién ha compartido el acta, qué componentes se comparten (estadísticas o análisis por IA), una eventual fecha de caducidad y el momento de la primera apertura.",
+              "El acta también puede guardarse como PDF, y determinadas tablas estadísticas pueden exportarse como archivo CSV. Para estas exportaciones rige lo siguiente: una vez que el archivo ha salido de su dispositivo, su uso posterior queda fuera de nuestro control.",
+              "La publicación puede revocarse en cualquier momento; la dirección deja entonces de ser accesible."
+            ],
+            "items": [
+              {
+                "label": "Tipos de datos tratados:",
+                "value": "Datos de contacto (dirección del destinatario), datos de acceso (token de publicación), datos de partido y estadísticos, datos de uso (momento de apertura)."
+              },
+              {
+                "label": "Interesados:",
+                "value": "Destinatarios de actas compartidas; jugadores registrados por usuarios."
+              },
+              {
+                "label": "Bases jurídicas:",
+                "value": "Ejecución de un contrato (artículo 6, apdo. 1, párr. 1, letra b) del RGPD); intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              },
+              {
+                "label": "Plazo de conservación:",
+                "value": "Hasta que se revoque la publicación, hasta que caduque el enlace compartido o hasta que se elimine el partido asociado."
+              }
+            ]
+          },
+          {
+            "title": "Demostración en directo sin inicio de sesión",
+            "paragraphs": [
+              "En una dirección aparte ofrecemos una versión de demostración en la que puede probarse el registro de un partido sin necesidad de registrarse. La demostración funciona con datos de ejemplo ficticios. Le rogamos que no introduzca en ella datos personales reales: las entradas de la demostración no se tratan como datos de un club y pueden restablecerse en cualquier momento."
+            ],
+            "items": [
+              {
+                "label": "Bases jurídicas:",
+                "value": "Intereses legítimos en la presentación de nuestra oferta (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+              }
+            ]
+          }
+        ]
+      },
+      "childrenAndMinors": {
+        "title": "Niños y jóvenes",
+        "description": "Statix se utiliza en equipos juveniles. Por ello se aplican aquí reglas especiales:",
+        "items": [
+          {
+            "title": "Cuenta propia solo a partir de los 16 años",
+            "description": "La cuenta de usuario propia está reservada a las personas de 16 años en adelante. Entre los 16 y los 18 se requiere además el consentimiento de los representantes legales. Para los niños menores de 16 años no se facilita una cuenta propia."
+          },
+          {
+            "title": "Registro sin cuenta propia",
+            "description": "Los menores pueden ser registrados por un entrenador como integrantes de la plantilla sin disponer ellos mismos de una cuenta. El responsable del tratamiento de estos datos es el club, no el niño y tampoco nosotros."
+          },
+          {
+            "title": "Obligaciones del club",
+            "description": "Antes de la primera introducción de datos, el club debe informar a los representantes legales conforme al artículo 13 del RGPD y recabar el consentimiento necesario, en particular para las ausencias relacionadas con la salud y para cualquier publicación (ticker en directo, actas compartidas). Previa solicitud facilitamos una hoja informativa modelo y un contrato de encargo del tratamiento."
+          },
+          {
+            "title": "Minimización de datos",
+            "description": "El año de nacimiento basta para asignar una categoría de edad. La fecha completa de nacimiento, las fotografías y las notas en texto libre sobre el estado de salud deben evitarse cuando no sean necesarias para la actividad de entrenamiento."
+          },
+          {
+            "title": "Ejercicio de derechos",
+            "description": "Los representantes legales pueden solicitar el acceso, la rectificación y la supresión de los datos de su hijo. Le rogamos que dirija tales solicitudes al club o al entrenador; si nos llegan directamente, las remitimos sin demora y apoyamos su cumplimiento."
+          }
+        ]
+      },
+      "dataSubjectRights": {
+        "title": "Derechos de los interesados",
+        "description": "Derechos de los interesados conforme al RGPD: como interesado, el RGPD le reconoce diversos derechos:",
+        "items": [
+          {
+            "title": "Derecho de oposición:",
+            "description": "Tiene derecho a oponerse en cualquier momento, por motivos relacionados con su situación particular, al tratamiento de los datos personales que le conciernan realizado sobre la base del artículo 6, apartado 1, letras e) o f), del RGPD; esto se aplica también a la elaboración de perfiles basada en dichas disposiciones. Cuando los datos personales que le conciernan se traten con fines de mercadotecnia directa, tiene derecho a oponerse en cualquier momento a dicho tratamiento."
+          },
+          {
+            "title": "Derecho a retirar el consentimiento:",
+            "description": "Tiene derecho a retirar en cualquier momento, con efectos para el futuro, el consentimiento prestado. La licitud del tratamiento realizado hasta la retirada no se ve afectada."
+          },
+          {
+            "title": "Derecho de acceso:",
+            "description": "Tiene derecho a solicitar confirmación de si se están tratando datos que le conciernen y a obtener acceso a dichos datos, así como a información adicional y a una copia de los datos, conforme a los requisitos legales."
+          },
+          {
+            "title": "Derecho de rectificación:",
+            "description": "Conforme a los requisitos legales, tiene derecho a solicitar que se completen los datos que le conciernen o que se rectifiquen los datos inexactos que le conciernen."
+          },
+          {
+            "title": "Derecho de supresión y de limitación del tratamiento:",
+            "description": "Conforme a los requisitos legales, tiene derecho a exigir que los datos que le conciernen se supriman sin demora indebida o, alternativamente y conforme a los requisitos legales, a exigir la limitación del tratamiento de los datos. Puede eliminar usted mismo su cuenta de usuario en cualquier momento (Ajustes → Cuenta)."
+          },
+          {
+            "title": "Derecho a la portabilidad de los datos:",
+            "description": "Tiene derecho a recibir los datos que le conciernen y que nos haya facilitado en un formato estructurado, de uso común y de lectura mecánica, conforme a los requisitos legales, o a solicitar su transmisión a otro responsable del tratamiento. En la aplicación puede exportar los análisis en PDF y las tablas estadísticas en CSV; más allá de eso, le facilitaremos sus datos en un formato de lectura mecánica en un plazo de 30 días desde su solicitud."
+          },
+          {
+            "title": "Reclamación ante una autoridad de control:",
+            "description": "Sin perjuicio de cualquier otro recurso administrativo o judicial, tiene derecho a presentar una reclamación ante una autoridad de control, en particular en el Estado miembro de su residencia habitual, lugar de trabajo o lugar de la supuesta infracción. La autoridad competente para nosotros es la Oficina Estatal de Baviera para la Supervisión de la Protección de Datos (BayLDA), Promenade 18, 91522 Ansbach."
+          }
+        ],
+        "howToLabel": "Cómo ejercer sus derechos:",
+        "howToText": "Basta con un mensaje informal a nuestra dirección de contacto; no se requiere una forma determinada. Respondemos sin demora indebida y, a más tardar, en el plazo de un mes. Si su solicitud se refiere a datos de plantilla, citas, ausencias o encuestas, el responsable del tratamiento es el club o el entrenador; en ese caso remitimos allí su solicitud y apoyamos su cumplimiento.",
+        "obligationLabel": "Obligación de facilitar datos:",
+        "obligationText": "Facilitar sus datos no es una obligación legal ni contractual. No obstante, para crear una cuenta necesitamos su nombre, su dirección de correo electrónico y una contraseña; sin esta información no puede crearse ninguna cuenta ni utilizarse la aplicación. Toda la demás información es facultativa."
+      },
+      "socialMedia": {
+        "title": "Presencia en redes sociales (social media)",
+        "description": "Mantenemos presencias en línea en redes sociales y tratamos en ese contexto datos de los usuarios para comunicarnos con quienes están activos allí o para ofrecer información sobre nosotros. Señalamos que en ese proceso pueden tratarse datos de usuarios fuera de la Unión Europea y que las redes pueden crear perfiles de uso a partir del comportamiento de navegación. En nuestros sitios web no se integra contenido de ninguna red social; únicamente enlazamos a nuestro perfil. Por tanto, solo se produce un intercambio de datos cuando usted sigue el enlace.",
+        "instagramItems": [
+          {
+            "label": "Instagram:",
+            "value": "Red social que permite compartir fotografías y vídeos, comentar y marcar como favoritas las publicaciones, enviar mensajes y suscribirse a perfiles y páginas;"
+          },
+          {
+            "label": "Proveedor:",
+            "value": "Meta Platforms Ireland Limited, Merrion Road, Dublín 4, D04 X2K5, Irlanda;"
+          },
+          {
+            "label": "Bases jurídicas:",
+            "value": "Intereses legítimos (artículo 6, apdo. 1, párr. 1, letra f) del RGPD)."
+          },
+          {
+            "label": "Sitio web:",
+            "url": "https://www.instagram.com"
+          },
+          {
+            "label": "Política de privacidad:",
+            "url": "https://privacycenter.instagram.com/policy/"
+          },
+          {
+            "label": "Base para las transferencias a terceros países:",
+            "value": "Decisión de adecuación (Marco de Privacidad de Datos UE-EE. UU.)."
+          }
+        ]
+      },
+      "dataRetention": {
+        "title": "Plazo de conservación y supresión",
+        "description": "Suprimimos los datos personales que tratamos conforme a las disposiciones legales tan pronto como se retira el consentimiento en el que se basaban o dejan de existir otras bases jurídicas para el tratamiento. Esto afecta a los casos en los que decae la finalidad original del tratamiento o los datos dejan de ser necesarios. Los plazos indicados para cada tratamiento concreto tienen prioridad.",
+        "technicalLabel": "Plazos técnicos aplicados automáticamente:",
+        "technicalText": "Los siguientes plazos se aplican automáticamente mediante una tarea de la base de datos que se ejecuta a diario, sin que nadie tenga que recordarlos:",
+        "technicalItems": [
+          {
+            "title": "24 horas",
+            "description": "Contadores de la protección frente a abusos (clave: dirección IP o valor hash de un token)."
+          },
+          {
+            "title": "2 días",
+            "description": "Identificadores de sesión del recuento de espectadores en el ticker en directo público, cuando no se hayan eliminado ya al finalizar el partido."
+          },
+          {
+            "title": "7 días tras la caducidad",
+            "description": "Tokens para restablecer la contraseña y para confirmar la dirección de correo electrónico."
+          },
+          {
+            "title": "90 días",
+            "description": "Registros técnicos de errores."
+          },
+          {
+            "title": "400 días",
+            "description": "Registro de uso de los análisis por IA (sin el contenido del análisis)."
+          }
+        ],
+        "contentLabel": "Datos de contenido de la aplicación:",
+        "contentText": "Los datos de plantilla, partidos, citas, ausencias y encuestas permanecen almacenados hasta que el responsable del tratamiento los suprime y, como máximo, hasta la eliminación del equipo o de la cuenta asociada. Si elimina su cuenta, se eliminan con ella los equipos en los que usted es el único integrante; los equipos con más integrantes siguen existiendo y se transfieren. La supresión surte efecto de inmediato y sin periodo de gracia.",
+        "retentionLabel": "Conservación y archivo legales:",
+        "retentionText": "En la medida en que estemos sujetos a obligaciones de conservación derivadas del Derecho mercantil o fiscal, se aplican los siguientes plazos generales del Derecho alemán. Solo afectan a los documentos mercantiles, no a los datos de contenido de la aplicación:",
+        "items": [
+          {
+            "title": "10 años",
+            "description": "Plazo de conservación de los libros y registros, las cuentas anuales, los inventarios, los informes de gestión, los balances de apertura y las instrucciones de trabajo y demás documentos organizativos necesarios para comprenderlos."
+          },
+          {
+            "title": "8 años",
+            "description": "Justificantes contables, como facturas y comprobantes de gastos."
+          },
+          {
+            "title": "6 años",
+            "description": "Otros documentos empresariales: cartas comerciales o de negocios recibidas, reproducciones de cartas comerciales o de negocios enviadas y otros documentos en la medida en que sean relevantes a efectos fiscales."
+          },
+          {
+            "title": "3 años",
+            "description": "Datos necesarios para valorar posibles pretensiones de garantía y de indemnización o pretensiones y derechos contractuales similares, así como para tramitar las consultas relacionadas."
+          }
+        ]
+      },
+      "definitions": {
+        "title": "Definiciones de términos",
+        "description": "En este apartado encontrará un resumen de los términos utilizados en esta política de privacidad. Cuando los términos están definidos por ley, rigen sus definiciones legales. Las explicaciones siguientes tienen sobre todo una finalidad aclaratoria.",
+        "items": [
+          {
+            "title": "Datos personales:",
+            "description": "Se entiende por datos personales toda información sobre una persona física identificada o identificable; se considerará persona física identificable toda persona cuya identidad pueda determinarse, directa o indirectamente, en particular mediante un identificador como un nombre, un número de identificación, datos de localización, un identificador en línea (p. ej. una cookie) o uno o varios elementos característicos."
+          },
+          {
+            "title": "Categorías especiales de datos personales:",
+            "description": "Datos especialmente dignos de protección, como los datos de salud. En Statix estos datos surgen en un único lugar: cuando una ausencia se registra como enfermedad o lesión, o cuando una nota contiene información sobre un estado de salud. Su tratamiento requiere el consentimiento explícito (artículo 9, apdo. 2, letra a) del RGPD)."
+          },
+          {
+            "title": "Tratamiento:",
+            "description": "Se entiende por tratamiento cualquier operación o conjunto de operaciones realizadas sobre datos personales, ya sea por procedimientos automatizados o no. El término es amplio y abarca prácticamente cualquier manejo de datos, ya sea su recogida, análisis, conservación, transmisión o supresión."
+          },
+          {
+            "title": "Responsable del tratamiento:",
+            "description": "El responsable del tratamiento es la persona física o jurídica, autoridad pública, servicio u otro organismo que, solo o junto con otros, determina los fines y medios del tratamiento de datos personales."
+          },
+          {
+            "title": "Encargado del tratamiento:",
+            "description": "Parte que trata datos personales por cuenta y siguiendo instrucciones de un responsable, sin determinar por sí misma los fines y medios. Respecto de los datos de plantilla, citas, ausencias y encuestas de los equipos, nosotros somos el encargado del tratamiento del club correspondiente."
+          },
+          {
+            "title": "Seudonimización:",
+            "description": "El tratamiento de datos personales de manera tal que ya no puedan atribuirse a una persona concreta sin utilizar información adicional conservada por separado. Antes de cada análisis por IA sustituimos los nombres de las personas por identificadores sin significado; la tabla de correspondencias no sale de nuestra base de datos."
+          },
+          {
+            "title": "Datos identificativos:",
+            "description": "Los datos identificativos comprenden la información esencial necesaria para identificar y administrar a las partes contractuales, las cuentas de usuario, los perfiles y asignaciones similares."
+          },
+          {
+            "title": "Datos de contacto:",
+            "description": "Los datos de contacto son información esencial que permite la comunicación con personas u organizaciones. Incluyen, entre otros, números de teléfono, direcciones postales y direcciones de correo electrónico, así como medios de comunicación como los nombres de usuario en redes sociales."
+          },
+          {
+            "title": "Datos de contenido:",
+            "description": "Los datos de contenido comprenden la información generada en el marco de la creación, edición y publicación de contenidos de cualquier tipo."
+          },
+          {
+            "title": "Datos de uso:",
+            "description": "Los datos de uso se refieren a la información que registra cómo interactúan los usuarios con productos, servicios o plataformas digitales."
+          },
+          {
+            "title": "Datos de registro:",
+            "description": "Anotaciones técnicas sobre el funcionamiento de un sistema; en nuestro caso, en particular, registros de errores con el mensaje de error, la función afectada, el momento, el identificador del navegador y la versión del programa."
+          },
+          {
+            "title": "Datos de partido y estadísticos:",
+            "description": "Todas las acciones registradas en relación con un partido de balonmano y las métricas calculadas a partir de ellas, como goles, lanzamientos, paradas, exclusiones, cambios, tiempos de juego y posiciones de lanzamiento."
+          }
+        ],
+        "generatorLinkLabel": "Elaborado en parte con el generador gratuito Datenschutz-Generator.de del Dr. Thomas Schwenke",
+        "generatorLinkTitle": "Texto jurídico del Dr. Schwenke: haga clic para más información."
+      }
+    }
+  },
+  "productPage": {
+    "hero": {
+      "badge": "De un jugador de balonmano · Hecho en Alemania",
+      "headlineLead": "Registra estadísticas de balonmano",
+      "headlineHighlight": "en directo",
+      "headlineTail": "— un toque, desde el banquillo.",
+      "description": "Goles, lanzamientos, paradas, exclusiones: cada acción es un toque. Statix lo convierte solo en porcentajes de acierto, mapas de lanzamiento y estadísticas de jugador, mientras el partido sigue en marcha.",
+      "primaryCta": "Regístrate gratis",
+      "secondaryCta": "Demo en directo, sin cuenta",
+      "trust1": "Listo en minutos",
+      "trust2": "Empezar es gratis, sin tarjeta",
+      "trust3": "Funciona sin conexión en el pabellón"
+    },
+    "stats": {
+      "srTitle": "Las estadísticas de balonmano de un vistazo",
+      "items": [
+        {
+          "value": "1 toque",
+          "label": "por acción, registrada en directo"
+        },
+        {
+          "value": "+20",
+          "label": "estadísticas automáticas"
+        },
+        {
+          "value": "100%",
+          "label": "sin conexión en el pabellón"
+        },
+        {
+          "value": "0 €",
+          "label": "para empezar"
+        }
+      ]
+    },
+    "showcase": {
+      "kicker": "En directo en la app",
+      "title": "Así registras y analizas estadísticas de balonmano con Statix",
+      "description": "Del registro en directo en el banquillo al análisis terminado para el vestuario: un vistazo por dentro de la app.",
+      "ctaLabel": "Pruébalo tú mismo en la demo en directo",
+      "items": [
+        {
+          "badge": "Registro en directo",
+          "title": "Cada acción con un solo toque",
+          "description": "Toca directamente sobre la pista: gol, gol de contraataque, robo, blocaje, 7 metros, exclusión o lanzamiento fallado. Banquillo, alineación y marcador siempre a la vista, sin apartar la mirada del partido."
+        },
+        {
+          "badge": "Calculado al instante",
+          "title": "Estadísticas de jugador en tiempo real",
+          "description": "Goles, lanzamientos, porcentaje, asistencias, robos, blocajes y disciplina: se calculan solos para cada jugador mientras el partido sigue en marcha."
+        },
+        {
+          "badge": "Mapas de lanzamiento y mapas de calor",
+          "title": "Lanzamientos y goles sobre la pista",
+          "description": "Visualiza cada lanzamiento y cada gol sobre la pista. Detecta mapas de calor, zonas fuertes y los patrones que deciden los partidos, por jugador o de todo el equipo."
+        }
+      ]
+    },
+    "ai": {
+      "kicker": "Análisis con IA",
+      "title": "Estadísticas de balonmano analizadas por IA: te explica el porqué, no solo el qué",
+      "description": "Statix analiza vuestros partidos con IA: un partido concreto, todo el equipo, jugadores individuales y torneos enteros. Eso no lo hace ninguna libreta ni ninguna hoja de cálculo.",
+      "privacyNote": "Privacidad de serie: los nombres de los jugadores se seudonimizan antes de que ningún dato llegue a una IA, y los informes se generan en segundo plano mientras tú sigues trabajando.",
+      "scopes": [
+        {
+          "title": "Un partido",
+          "description": "Análisis a fondo de un encuentro: ritmo, parciales, momentos clave, patrones tácticos y comportamiento bajo presión, con recomendaciones claras para el entrenador."
+        },
+        {
+          "title": "Todo el equipo",
+          "description": "Varios partidos vistos como un sistema: tendencias, estabilidad, estructura ofensiva y patrones de error recurrentes a lo largo de la temporada."
+        },
+        {
+          "title": "Un jugador",
+          "description": "Un perfil de scouting por jugador a lo largo de todos los partidos: tipo de jugador, selección de lanzamiento, eficacia, curva de forma y las situaciones en las que brilla o sufre."
+        },
+        {
+          "title": "Torneo",
+          "description": "La IA mira todo el torneo como una unidad: el recorrido a lo largo de los partidos, los patrones llamativos y lo que marcó la diferencia al final."
+        }
+      ],
+      "showcase": {
+        "imageOneLabel": "Ritmo del partido y eficacia por zonas de lanzamiento",
+        "imageTwoLabel": "Momentos clave, reparto de errores y rendimiento de los jugadores"
+      }
+    },
+    "pros": {
+      "kicker": "Más allá del acta",
+      "title": "Estadísticas de balonmano en lugar de boli y servilleta",
+      "description": "Enséñale a otro entrenador en dos minutos lo que se pierde en una libreta: un partido de verdad, números de verdad, un análisis terminado.",
+      "cta": "Regístrate y pruébalo",
+      "oldTitle": "Boli y papel",
+      "oldPoints": [
+        "Números que nadie analiza después del partido",
+        "Repasarlos es lento y propenso a errores",
+        "Sin mapas de lanzamiento, sin tendencias, sin comparaciones"
+      ],
+      "newTitle": "Con Statix",
+      "newPoints": [
+        "Todas las estadísticas calculadas en directo y de forma automática",
+        "Mapas de lanzamiento, mapas de calor y evolución de los jugadores de un vistazo",
+        "Compartido con todo el equipo en segundos",
+        "Listo para trabajar sin conexión y configurado en minutos"
+      ],
+      "founderKicker": "Quién está detrás",
+      "founderNote": "Statix nace de la práctica real: lo construye Arkadiusz Weiss, jugador de balonmano, en Alemania. Lo que falta en el banquillo se convierte en una función; lo que se comenta en el pabellón entra directo en el producto.",
+      "founderLinkLabel": "Cómo se hace Statix"
+    },
+    "testimonials": {
+      "kicker": "Dicen los entrenadores",
+      "title": "Voces del pabellón",
+      "description": "Entrenadores que usan Statix en partidos de verdad, con su nombre y su club.",
+      "linkLabel": "Ver todas las experiencias"
+    },
+    "faq": {
+      "kicker": "Bueno saberlo",
+      "title": "Preguntas frecuentes sobre estadísticas de balonmano",
+      "description": "Todo lo que necesitas saber sobre estadísticas de balonmano antes de empezar.",
+      "linkLead": "Para profundizar:",
+      "linkLabel": "Todas las estadísticas de balonmano de un vistazo",
+      "items": [
+        {
+          "question": "¿Qué es Statix?",
+          "answer": "Statix es una app de estadísticas de balonmano para entrenadores, clubes y equipos. Registras un partido en directo con un solo toque —goles, lanzamientos, paradas, penaltis y cambios— y Statix calcula automáticamente los porcentajes de acierto, las estadísticas de jugador y de equipo, los mapas de lanzamiento y la evolución en el tiempo. Todo se puede compartir con el equipo al instante."
+        },
+        {
+          "question": "¿Puedo probar Statix sin registrarme?",
+          "answer": "Sí. La demo en directo es una versión completa de Statix con datos reales de partido: estadísticas en vivo, mapas de lanzamiento y análisis con IA en tu navegador, sin cuenta. En dos minutos ves cómo funciona Statix en el pabellón."
+        },
+        {
+          "question": "¿Qué app es la mejor para registrar estadísticas de balonmano en directo?",
+          "answer": "Statix es una app de estadísticas de balonmano pensada específicamente para el registro en directo desde el banquillo. Cada acción está a un toque, el análisis se hace solo y la app funciona sin conexión en el pabellón. Está hecha para entrenadores, segundos entrenadores, clubes y equipos de nivel amateur, base y competición."
+        },
+        {
+          "question": "¿Para quién es Statix?",
+          "answer": "Statix está hecha para entrenadores de balonmano, segundos entrenadores, clubes y equipos de todas las categorías, desde la base y el balonmano amateur hasta la competición. No hacen falta conocimientos técnicos: en unos minutos estás listo."
+        },
+        {
+          "question": "¿En qué dispositivos funciona Statix?",
+          "answer": "Statix funciona directamente en el navegador de móvil, tableta (iPad y Android) y portátil, tanto a pie de pista como para repasar el partido en casa. No hace falta instalar nada desde una tienda de aplicaciones."
+        },
+        {
+          "question": "¿Qué estadísticas de balonmano puedo registrar con Statix?",
+          "answer": "Registras goles, lanzamientos y porcentajes de acierto, paradas, contraataques, errores técnicos, sanciones (2 minutos, amarilla, roja) y cambios. Con eso Statix construye automáticamente las estadísticas de jugador y de equipo, los mapas de lanzamiento, los mapas de calor y la evolución a lo largo de toda la temporada."
+        },
+        {
+          "question": "¿Hay alguna app gratuita de estadísticas de balonmano?",
+          "answer": "Sí. Statix es ahora mismo gratuita con todas sus funciones, tanto para un entrenador solo como para un equipo entero, sin tarjeta y sin proceso de pago dentro de la app. Más adelante llegará una suscripción; su precio todavía no está decidido."
+        },
+        {
+          "question": "¿Necesito conocimientos técnicos?",
+          "answer": "No. Statix está pensada para que puedas registrar tu primer partido en directo en cuestión de minutos. Cada acción está a un solo toque: no hace falta formación."
+        },
+        {
+          "question": "¿La app funciona sin conexión en el pabellón?",
+          "answer": "Sí. Puedes registrar partidos completamente sin conexión. En cuanto vuelvas a tener red, los datos se sincronizan solos."
+        },
+        {
+          "question": "¿Puedo compartir las estadísticas con mi equipo?",
+          "answer": "Por supuesto. Jugadores y segundos entrenadores acceden a las conclusiones, los mapas de lanzamiento y la evolución en el tiempo, como enlace o exportado en PDF."
+        },
+        {
+          "question": "¿Pueden padres y aficionados seguir un partido en directo?",
+          "answer": "Sí. Publica el partido como marcador público en directo y comparte el enlace o el código QR: perfecto para el chat del club, tu historia de Insta o el proyector del pabellón. Cualquiera con el enlace sigue el marcador y el desarrollo del partido en su navegador, sin cuenta. Al terminar cierras el directo con un toque y el enlace deja de funcionar."
+        },
+        {
+          "question": "¿Puedo compartir partidos con otros entrenadores?",
+          "answer": "Sí. Das a otros entrenadores acceso de solo lectura a las estadísticas y al análisis con IA de un partido, por enlace o correo. Los partidos compartidos aparecen directamente en la bandeja de entrada de Statix del destinatario. También puedes invitar a segundos entrenadores a tu equipo de forma permanente, para registrar y analizar juntos."
+        },
+        {
+          "question": "¿Qué puedo hacer con las encuestas a jugadores?",
+          "answer": "Pregunta por la disponibilidad, pide opiniones o plantea temas como los horarios de entrenamiento: creas la encuesta en Statix y compartes un enlace. Tus jugadores eligen su nombre y responden en el navegador, sin cuenta. Ves los resultados ordenados por jugador o por pregunta, con medias en las preguntas de escala."
+        },
+        {
+          "question": "¿Qué pasa con los datos de mis jugadores en el análisis con IA?",
+          "answer": "La privacidad viene de serie: los nombres de los jugadores se seudonimizan antes de que ningún dato llegue a una IA; el análisis trabaja con identificadores neutros en lugar de nombres reales. Puedes borrar los informes de IA cuando quieras y tú decides qué análisis compartes."
+        },
+        {
+          "question": "¿Cuánto cuesta Statix?",
+          "answer": "Ahora mismo nada: regístrate en app.statix-app.de y registra tu primer partido sin compromiso y sin tarjeta. ¿Prefieres echar un vistazo antes? La demo en directo funciona sin cuenta. Más adelante llegará una suscripción; su precio todavía no está decidido."
+        },
+        {
+          "question": "¿Quién está detrás de Statix?",
+          "answer": "Statix la desarrolla Arkadiusz Weiss, un jugador de balonmano alemán que construye la app desde su propia experiencia en el banquillo. No es una herramienta anónima: lo que se comenta en el pabellón entra directo en el desarrollo."
+        }
+      ]
+    },
+    "newsletter": {
+      "kicker": "Boletín",
+      "title": "Mantente al día: novedades desde el pabellón",
+      "description": "Las funciones nuevas antes que nadie, ofertas para equipos y clubes y consejos prácticos de análisis de partido, directamente del desarrollador.",
+      "placeholder": "Tu dirección de correo",
+      "button": "Suscribirme al boletín",
+      "pending": "Enviando…",
+      "privacyPrefix": "Acepto la",
+      "privacyLink": "política de privacidad",
+      "privacySuffix": "y quiero recibir el boletín.",
+      "note": "Sin spam. Puedes darte de baja con un clic cuando quieras.",
+      "successTitle": "¡Ya casi!",
+      "successDescription": "Confirma la suscripción con el enlace que te hemos enviado por correo.",
+      "errorTitle": "No se ha podido completar la suscripción",
+      "errorDescription": "Inténtalo más tarde.",
+      "invalidEmail": "Introduce una dirección de correo válida."
+    },
+    "finalCta": {
+      "title": "Regístrate y prueba Statix tú mismo",
+      "description": "Crea tu cuenta, añade a tu equipo y registra tu primer partido en directo, con estadísticas en vivo, mapas de lanzamiento y análisis con IA. En tu navegador y gratis para empezar.",
+      "primaryCta": "Regístrate gratis",
+      "note": "Funciona en el navegador: igual de bien en una tableta a pie de pista que en un portátil para el repaso.",
+      "badge": "Statix está en marcha · empezar es gratis",
+      "demoCta": "Demo en directo, sin cuenta",
+      "previewLabel": "Registro en directo"
+    },
+    "more": {
+      "kicker": "Y además",
+      "title": "Torneos, marcador en directo y tu cuerpo técnico",
+      "description": "Todo lo que va más allá del partido suelto, sin cambiar de herramienta para ello.",
+      "linkLabel": "Todas las funciones en detalle",
+      "points": [
+        {
+          "title": "Torneos",
+          "description": "Monta un torneo con varios equipos y arranca partidos en directo desde el propio calendario: la clasificación se actualiza sola tras cada resultado."
+        },
+        {
+          "title": "Marcador en directo",
+          "description": "Publica el partido como marcador público. Familias, aficionados y compañeros del club siguen el marcador y el desarrollo por enlace o código QR, sin cuenta."
+        },
+        {
+          "title": "Cuerpo técnico y plantilla",
+          "description": "Comparte partidos con otros entrenadores, invita a segundos entrenadores, implica a los jugadores con encuestas y exporta los análisis en PDF o como enlace."
+        }
+      ],
+      "mock": {
+        "liveBadge": "En directo",
+        "minute": "43:12",
+        "homeTeam": "HSG Statix",
+        "awayTeam": "TV Musterstadt",
+        "homeScore": "24",
+        "awayScore": "21",
+        "feedTitle": "Desarrollo del partido",
+        "events": [
+          {
+            "minute": "43'",
+            "text": "Gol del 7 — central"
+          },
+          {
+            "minute": "41'",
+            "text": "¡Parada! 7 metros detenido"
+          },
+          {
+            "minute": "39'",
+            "text": "2 minutos para TV Musterstadt"
+          },
+          {
+            "minute": "38'",
+            "text": "Contraataque — gol del 11"
+          }
+        ],
+        "qrLabel": "Escanea y sigue en directo",
+        "footnote": "Así se ve tu marcador en directo — datos de ejemplo"
+      }
+    }
+  },
+  "newsletterConfirm": {
+    "title": "Confirma tu suscripción",
+    "description": "Pulsa el botón para completar tu suscripción al boletín de Statix.",
+    "confirmButton": "Confirmar suscripción",
+    "pending": "Confirmando…",
+    "ignoreHint": "¿No te has suscrito tú? Cierra esta página sin más: sin confirmación no pasa nada.",
+    "successTitle": "¡Suscripción confirmada!",
+    "successDescription": "Gracias: ya estás suscrito al boletín de Statix.",
+    "backHome": "Volver al inicio",
+    "invalidTitle": "Enlace no válido",
+    "invalidDescription": "Este enlace de confirmación no es válido o ha caducado. Vuelve a suscribirte.",
+    "backToForm": "Volver al formulario",
+    "errorDescription": "La confirmación ha fallado. Inténtalo más tarde."
+  },
+  "newsletterUnsubscribe": {
+    "title": "Darse de baja del boletín",
+    "description": "Pulsa el botón para darte de baja del boletín de Statix. No volverás a recibir correos nuestros.",
+    "descriptionManual": "Escribe tu dirección de correo para darte de baja del boletín de Statix.",
+    "emailLabel": "Dirección de correo",
+    "emailPlaceholder": "tu@correo.com",
+    "unsubscribeButton": "Darse de baja",
+    "pending": "Dándote de baja…",
+    "successTitle": "Baja completada",
+    "successDescription": "No volverás a recibir correos del boletín de Statix. ¡Sentimos que te vayas!",
+    "backHome": "Volver al inicio",
+    "resubscribeHint": "¿Has cambiado de idea? Puedes volver a suscribirte cuando quieras.",
+    "errorDescription": "La baja ha fallado. Inténtalo más tarde."
+  },
+  "contactPage": {
+    "metaTitle": "Contacto",
+    "kicker": "Salúdanos",
+    "title": "Escríbenos: estamos para ayudarte",
+    "description": "¿Dudas sobre Statix, necesitas una mano para poner en marcha tu equipo o tu club, o quieres darnos tu opinión? Mándanos un mensaje y te responderemos personalmente lo antes posible.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu dirección de correo",
+    "topicPlaceholder": "¿De qué se trata?",
+    "messagePlaceholder": "Tu mensaje para nosotros…",
+    "button": "Enviar mensaje",
+    "pending": "Enviando…",
+    "privacyPrefix": "Acepto las",
+    "privacyLink": "condiciones de privacidad",
+    "privacySuffix": "y consiento el tratamiento de mis datos.",
+    "note": "Solo usamos tus datos para atender tu consulta.",
+    "successTitle": "¡Mensaje enviado!",
+    "successDescription": "Gracias por escribirnos. Te responderemos lo antes posible.",
+    "errorTitle": "No se ha podido enviar",
+    "errorDescription": "Inténtalo más tarde.",
+    "invalidEmail": "Introduce una dirección de correo válida."
+  },
+  "feedbackPage": {
+    "metaTitle": "Opiniones",
+    "kicker": "Tu opinión cuenta",
+    "title": "¿Qué tal le funciona Statix a tu equipo?",
+    "description": "Elogios, fallos o ideas: cuéntanos en un minuto qué funciona en Statix y qué falta. Tu opinión llega directa al equipo y da forma a la próxima versión.",
+    "ratingLabel": "¿Qué tal de contento estás con Statix?",
+    "ratingHint": "Elige entre 1 y 5 estrellas.",
+    "ratingLabels": {
+      "1": "Muy descontento",
+      "2": "Descontento",
+      "3": "Neutral",
+      "4": "Contento",
+      "5": "Encantado"
+    },
+    "categoryLabel": "¿Sobre qué es?",
+    "categories": {
+      "app": "Statix en general",
+      "recording": "Registro en directo",
+      "analysis": "Análisis",
+      "usability": "Usabilidad y diseño",
+      "bug": "Fallo",
+      "feature": "Propuesta de función",
+      "other": "Otra cosa"
+    },
+    "messageLabel": "Tu opinión",
+    "messagePlaceholder": "¿Qué funciona bien, qué falta, qué deberíamos cambiar?",
+    "messageHint": "Al menos {min} caracteres: cuanto más concreto, mejor podremos actuar.",
+    "contactLabel": "Nombre y correo",
+    "optional": "(opcional)",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu dirección de correo",
+    "contactHint": "Solo hace falta si quieres respuesta o no te importa contestar alguna pregunta más. Déjalo vacío para mantenerte en el anonimato.",
+    "button": "Enviar opinión",
+    "pending": "Enviando…",
+    "privacyPrefix": "Acepto las",
+    "privacyLink": "condiciones de privacidad",
+    "privacySuffix": "y consiento el tratamiento de mis datos.",
+    "note": "Solo usamos tus datos para valorar tu opinión.",
+    "successTitle": "¡Opinión enviada!",
+    "successDescription": "Gracias: leemos personalmente cada mensaje.",
+    "errorTitle": "No se ha podido enviar",
+    "errorDescription": "Inténtalo más tarde.",
+    "invalidEmail": "Introduce una dirección de correo válida.",
+    "missingRating": "Elige primero una valoración.",
+    "missingCategory": "Elige sobre qué es tu opinión."
+  },
+  "privacyPage": {
+    "header": {
+      "eyebrow": "Privacidad",
+      "title": "Política de privacidad",
+      "description": "Cómo tratamos los datos personales en statix-app.de y en la app de Statix, desglosado por finalidad, base jurídica, proveedor de servicios y plazo de conservación.",
+      "pseudonymBadge": "Los nombres de los jugadores nunca salen de la app",
+      "lastUpdated": "Versión: 25 de agosto de 2026",
+      "navLabel": "Más información legal",
+      "imprintLink": "Aviso legal",
+      "termsLink": "Condiciones del servicio"
+    }
+  },
+  "legalTranslationNotice": {
+    "title": "Versión vinculante",
+    "body": "La versión alemana de este documento es la vinculante. Esta traducción se ofrece para facilitar la comprensión y no tiene carácter jurídicamente vinculante."
+  }
+}

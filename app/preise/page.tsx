@@ -13,6 +13,7 @@ import {
   PRICING_FAQS,
   PRICING_PAGE_PATH,
 } from '@/features/preise/data/pricing-content';
+import { SITE_CONTENT_LANGUAGES } from '@/i18n/config';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Preise: Handball-Statistik-App für Trainer',
@@ -74,7 +75,7 @@ export default function Page() {
           operatingSystem: 'iOS, Android, Web',
           availableOnDevice: [...SUPPORTED_DEVICES],
           countriesSupported: 'DE, AT, CH',
-          inLanguage: ['de-DE', 'en-GB'],
+          inLanguage: [...SITE_CONTENT_LANGUAGES],
           url: pageUrl,
           image: absoluteUrl('/statsTableInGame.png'),
           audience: {
