@@ -1,21 +1,37 @@
 'use client';
 
+import { Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Flag from 'react-world-flags';
-import { APP_LOCALES, type AppLocale } from '@/i18n/config';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import {
+  APP_LOCALES,
+  APP_LOCALE_ENDONYMS,
+  type AppLocale,
+} from '@/i18n/config';
 import { useAppLocale } from '@/app/locale-provider';
 import { cn } from '@/lib/utils';
+import LocaleFlag from './locale-flag';
 
 type LanguageSwitcherProps = {
   className?: string;
   onLocaleChange?: () => void;
 };
 
-const LOCALE_FLAG_CODES: Record<AppLocale, string> = {
-  de: 'DE',
-  en: 'GB',
-};
-
+/**
+ * Language picker for the site header and the mobile menu.
+ *
+ * A menu rather than the row of buttons it used to be: five 40 px buttons are
+ * 200 px of navbar spent on a control most visitors never touch. The flags stay
+ * — they are what people actually scan for — and each one is paired with the
+ * language named in itself ("Polski", not "Polnisch"), because the person who
+ * needs this control is the one who cannot read the language currently on
+ * screen. The flag finds the row, the endonym confirms it.
+ */
 export default function LanguageSwitcher({
   className,
   onLocaleChange,
@@ -33,53 +49,44 @@ export default function LanguageSwitcher({
   };
 
   return (
-    <div
-      className={cn(
-        'inline-flex items-center gap-1 rounded-2xl border border-slate-200/90 bg-white/90 p-1 shadow-[0_12px_28px_-20px_rgba(15,23,42,0.45)] backdrop-blur',
-        className,
-      )}
-      aria-label={t('label')}
-      role='group'>
-      {APP_LOCALES.map((supportedLocale) => {
-        const isActive = supportedLocale === activeLocale;
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        aria-label={t('label')}
+        title={APP_LOCALE_ENDONYMS[activeLocale]}
+        className={cn(
+          'inline-flex items-center gap-2 rounded-2xl border border-slate-200/90 bg-white/90 px-3 py-2 text-sm font-semibold text-slate-700 shadow-[0_12px_28px_-20px_rgba(15,23,42,0.45)] backdrop-blur transition-colors',
+          'hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60',
+          className,
+        )}>
+        <LocaleFlag locale={activeLocale} />
+        <span className='uppercase tracking-wide'>{activeLocale}</span>
+      </DropdownMenuTrigger>
 
-        return (
-          <button
-            key={supportedLocale}
-            type='button'
-            onClick={() => handleLocaleChange(supportedLocale)}
-            className={cn(
-              'inline-flex h-9 w-10 items-center justify-center rounded-xl border transition-all duration-150',
-              isActive
-                ? 'border-slate-200 bg-slate-950/4 shadow-sm'
-                : 'border-transparent bg-transparent hover:border-slate-200 hover:bg-slate-50/80',
-            )}
-            aria-pressed={isActive}
-            aria-label={
-              supportedLocale === 'de'
-                ? t('switchToGerman')
-                : t('switchToEnglish')
-            }
-            disabled={isActive}>
-            <span
-              className={cn(
-                'overflow-hidden rounded-[7px] ring-1 ring-black/10 transition-transform duration-150',
-                isActive ? 'scale-105' : 'scale-100',
-              )}>
-              <Flag
-                code={LOCALE_FLAG_CODES[supportedLocale]}
-                alt={
-                  supportedLocale === 'de'
-                    ? t('germanFlagAlt')
-                    : t('englishFlagAlt')
-                }
-                width='22'
-                height='16'
+      <DropdownMenuContent align='end' className='min-w-48'>
+        {APP_LOCALES.map((supportedLocale) => {
+          const isActive = supportedLocale === activeLocale;
+
+          return (
+            <DropdownMenuItem
+              key={supportedLocale}
+              onSelect={() => handleLocaleChange(supportedLocale)}
+              aria-current={isActive ? 'true' : undefined}
+              className={cn('gap-2.5', isActive && 'font-semibold')}>
+              <LocaleFlag locale={supportedLocale} />
+              <span className='flex-1'>
+                {APP_LOCALE_ENDONYMS[supportedLocale]}
+              </span>
+              <span className='text-xs uppercase tracking-wide text-muted-foreground'>
+                {supportedLocale}
+              </span>
+              <Check
+                className={cn('h-4 w-4', !isActive && 'opacity-0')}
+                aria-hidden
               />
-            </span>
-          </button>
-        );
-      })}
-    </div>
+            </DropdownMenuItem>
+          );
+        })}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

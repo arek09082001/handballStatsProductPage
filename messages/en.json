@@ -318,11 +318,7 @@
     "skipToContent": "Skip to content",
     "registerCta": "Register now",
     "languageSwitcher": {
-      "label": "Switch language",
-      "switchToGerman": "Switch to German",
-      "switchToEnglish": "Switch to English",
-      "germanFlagAlt": "German flag",
-      "englishFlagAlt": "British flag"
+      "label": "Switch language"
     }
   },
   "legalPage": {
@@ -1600,5 +1596,9 @@
       "imprintLink": "Imprint",
       "termsLink": "Terms of service"
     }
+  },
+  "legalTranslationNotice": {
+    "title": "Authoritative version",
+    "body": "The German version of this document is the authoritative one. This translation is provided for convenience and is not legally binding."
   }
 }

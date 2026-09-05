@@ -1,6 +1,7 @@
 import JsonLdScript from './json-ld-script';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { absoluteUrl, SITE_LINKS, SITE_URL } from '@/lib/seo';
+import { SITE_CONTENT_LANGUAGES } from '@/i18n/config';
 
 export default function WebsiteSchema() {
   const websiteSchema = {
@@ -16,7 +17,7 @@ export default function WebsiteSchema() {
     ],
     url: SITE_URL,
     description: CLUB_CONFIG.seo.description,
-    inLanguage: ['de-DE', 'en-GB'],
+    inLanguage: [...SITE_CONTENT_LANGUAGES],
     publisher: {
       '@id': `${SITE_URL}/#organization`,
     },

@@ -10,6 +10,7 @@ import {
   SITE_URL,
   absoluteUrl,
 } from '@/lib/seo';
+import { SITE_CONTENT_LANGUAGES } from '@/i18n/config';
 
 interface FaqItem {
   question: string;
@@ -70,7 +71,7 @@ export default async function StructuredData() {
         browserRequirements: 'Requires JavaScript. Läuft in jedem modernen Browser.',
         availableOnDevice: [...SUPPORTED_DEVICES],
         countriesSupported: 'DE, AT, CH',
-        inLanguage: ['de-DE', 'en-GB'],
+        inLanguage: [...SITE_CONTENT_LANGUAGES],
         url: SITE_URL,
         installUrl: CLUB_CONFIG.website.appUrl,
         image: absoluteUrl('/heroImage.png'),

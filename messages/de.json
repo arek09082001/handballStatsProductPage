@@ -318,11 +318,7 @@
     "skipToContent": "Zum Inhalt springen",
     "registerCta": "Jetzt registrieren",
     "languageSwitcher": {
-      "label": "Sprache wechseln",
-      "switchToGerman": "Auf Deutsch wechseln",
-      "switchToEnglish": "Auf Englisch wechseln",
-      "germanFlagAlt": "Deutsche Flagge",
-      "englishFlagAlt": "Britische Flagge"
+      "label": "Sprache wechseln"
     }
   },
   "legalPage": {
@@ -1600,5 +1596,9 @@
       "imprintLink": "Impressum",
       "termsLink": "AGB"
     }
+  },
+  "legalTranslationNotice": {
+    "title": "Maßgebliche Fassung",
+    "body": "Maßgeblich ist die deutsche Fassung dieses Dokuments. Übersetzungen dienen ausschließlich dem Verständnis und sind rechtlich nicht bindend."
   }
 }

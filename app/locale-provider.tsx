@@ -4,6 +4,9 @@ import { createContext, startTransition, useCallback, useContext, useEffect, use
 import { NextIntlClientProvider } from 'next-intl';
 import deMessages from '@/messages/de.json';
 import enMessages from '@/messages/en.json';
+import esMessages from '@/messages/es.json';
+import frMessages from '@/messages/fr.json';
+import plMessages from '@/messages/pl.json';
 import { DEFAULT_LOCALE, getHtmlLang, type AppLocale } from '@/i18n/config';
 
 type LocaleContextValue = {
@@ -13,10 +16,18 @@ type LocaleContextValue = {
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
-const messagesByLocale = {
+/**
+ * Typed as a total map over `AppLocale`: a language added to the list without
+ * a bundle here would otherwise be offered by the switcher and then render
+ * nothing.
+ */
+const messagesByLocale: Record<AppLocale, typeof deMessages> = {
     de: deMessages,
     en: enMessages,
-} as const;
+    es: esMessages,
+    fr: frMessages,
+    pl: plMessages,
+};
 
 export function useAppLocale() {
     const context = useContext(LocaleContext);

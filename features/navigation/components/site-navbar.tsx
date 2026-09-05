@@ -231,33 +231,47 @@ export default function SiteNavbar() {
               transition={{ duration: 0.2 }}
               className='fixed left-4 right-4 top-24 z-40 overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] sm:left-6 sm:right-6 lg:hidden max-h-[calc(100vh-112px)]'>
               <div className='space-y-4 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
-                <button
-                  type='button'
-                  onClick={() => {
-                    handleBrandClick();
-                    closeMenu();
-                  }}
-                  className='flex w-full min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
-                  <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
-                    <Image
-                      src={CLUB_CONFIG.branding.logo.path}
-                      alt={CLUB_CONFIG.display.logoAlt}
-                      title={CLUB_CONFIG.display.logoAlt}
-                      fill
-                      sizes='44px'
-                      className='object-contain p-1.5'
-                    />
-                  </span>
+                {/* The language picker rides in the top row, not at the foot of
+                 * the panel. Below the groups it was two screens down a list
+                 * that scrolls — invisible unless you went looking for it — and
+                 * once you got there it sat on the very bottom edge, which is
+                 * where phone browsers park their own floating controls and the
+                 * gesture bar. Up here it is on screen the moment the menu
+                 * opens. */}
+                <div className='flex items-stretch gap-2'>
+                  <button
+                    type='button'
+                    onClick={() => {
+                      handleBrandClick();
+                      closeMenu();
+                    }}
+                    className='flex min-w-0 flex-1 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left transition-colors hover:bg-slate-100'>
+                    <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
+                      <Image
+                        src={CLUB_CONFIG.branding.logo.path}
+                        alt={CLUB_CONFIG.display.logoAlt}
+                        title={CLUB_CONFIG.display.logoAlt}
+                        fill
+                        sizes='44px'
+                        className='object-contain p-1.5'
+                      />
+                    </span>
 
-                  <span className='min-w-0'>
-                    <span className='block truncate text-base font-semibold tracking-[-0.03em] text-slate-950'>
-                      {CLUB_CONFIG.name}
+                    <span className='min-w-0'>
+                      <span className='block truncate text-base font-semibold tracking-[-0.03em] text-slate-950'>
+                        {CLUB_CONFIG.name}
+                      </span>
+                      <span className='block truncate text-[13px] font-medium text-slate-500'>
+                        {CLUB_CONFIG.display.brandTagline}
+                      </span>
                     </span>
-                    <span className='block truncate text-[13px] font-medium text-slate-500'>
-                      {CLUB_CONFIG.display.brandTagline}
-                    </span>
-                  </span>
-                </button>
+                  </button>
+
+                  <LanguageSwitcher
+                    onLocaleChange={closeMenu}
+                    className='shrink-0 rounded-2xl'
+                  />
+                </div>
 
                 {/* Above the groups, not below them: the panel now scrolls, and
                  * the primary conversion should not be at the end of it. */}
@@ -335,10 +349,6 @@ export default function SiteNavbar() {
                       </div>
                     </div>
                   ))}
-                </div>
-
-                <div className='flex justify-center'>
-                  <LanguageSwitcher onLocaleChange={closeMenu} />
                 </div>
               </div>
             </motion.div>
