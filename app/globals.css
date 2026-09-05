@@ -304,6 +304,26 @@
   --todo-foreground: 24 100% 30%;
   --note: 227 100% 89%;
   --note-foreground: 235 59% 45%;
+
+  /* The @theme block above maps --color-card, --color-popover, --color-border,
+   * --color-input and --color-ring, but the values they read were never
+   * defined. Each resolved to an invalid `hsl()`, so the declaration was
+   * dropped and `bg-popover` painted nothing at all, while `border-border` —
+   * applied to every element by the `*` rule below — left borders falling back
+   * to currentColor.
+   *
+   * It stayed invisible for as long as every surface sat on a white page: a
+   * transparent white card on white is still white, and most borders here set
+   * their own colour anyway. It showed the moment a dropdown opened over the
+   * dark court section, with no background under its text. */
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 22 92% 52%;
+  --foreground-muted: 0 0% 45.1%;
 }
 }
 

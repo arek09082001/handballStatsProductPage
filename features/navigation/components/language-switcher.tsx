@@ -1,6 +1,6 @@
 'use client';
 
-import { Check, Languages } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import {
   DropdownMenu,
@@ -15,6 +15,7 @@ import {
 } from '@/i18n/config';
 import { useAppLocale } from '@/app/locale-provider';
 import { cn } from '@/lib/utils';
+import LocaleFlag from './locale-flag';
 
 type LanguageSwitcherProps = {
   className?: string;
@@ -24,15 +25,12 @@ type LanguageSwitcherProps = {
 /**
  * Language picker for the site header and the mobile menu.
  *
- * A menu rather than the row of flag buttons it used to be. Five 40 px buttons
- * are 200 px of navbar spent on a control most visitors never touch, and the
- * flags were wrong in the first place: they came from `react-world-flags`,
- * which embeds every country flag on earth as a data URI to draw two 22×16
- * rectangles, and they answered the wrong question — Spanish is not Spain, and
- * English was flying a British flag at readers anywhere but Britain.
- *
- * The names are endonyms, so the one person who needs this control — the one
- * who cannot read the language currently on screen — can find their own.
+ * A menu rather than the row of buttons it used to be: five 40 px buttons are
+ * 200 px of navbar spent on a control most visitors never touch. The flags stay
+ * — they are what people actually scan for — and each one is paired with the
+ * language named in itself ("Polski", not "Polnisch"), because the person who
+ * needs this control is the one who cannot read the language currently on
+ * screen. The flag finds the row, the endonym confirms it.
  */
 export default function LanguageSwitcher({
   className,
@@ -60,11 +58,11 @@ export default function LanguageSwitcher({
           'hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60',
           className,
         )}>
-        <Languages className='h-4 w-4 text-slate-500' aria-hidden />
+        <LocaleFlag locale={activeLocale} />
         <span className='uppercase tracking-wide'>{activeLocale}</span>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align='end' className='min-w-44'>
+      <DropdownMenuContent align='end' className='min-w-48'>
         {APP_LOCALES.map((supportedLocale) => {
           const isActive = supportedLocale === activeLocale;
 
@@ -73,17 +71,18 @@ export default function LanguageSwitcher({
               key={supportedLocale}
               onSelect={() => handleLocaleChange(supportedLocale)}
               aria-current={isActive ? 'true' : undefined}
-              className={cn('gap-2', isActive && 'font-semibold')}>
+              className={cn('gap-2.5', isActive && 'font-semibold')}>
+              <LocaleFlag locale={supportedLocale} />
+              <span className='flex-1'>
+                {APP_LOCALE_ENDONYMS[supportedLocale]}
+              </span>
+              <span className='text-xs uppercase tracking-wide text-muted-foreground'>
+                {supportedLocale}
+              </span>
               <Check
                 className={cn('h-4 w-4', !isActive && 'opacity-0')}
                 aria-hidden
               />
-              <span className='flex-1'>
-                {APP_LOCALE_ENDONYMS[supportedLocale]}
-              </span>
-              <span className='text-xs uppercase tracking-wide text-slate-400'>
-                {supportedLocale}
-              </span>
             </DropdownMenuItem>
           );
         })}
