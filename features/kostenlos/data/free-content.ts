@@ -91,7 +91,7 @@ export const FREE_FAQS: BoardFaqItem[] = [
   {
     question: 'Bleibt Statix kostenlos?',
     answer:
-      'Ja. Ab dem 1. Januar 2027 heißt der kostenlose Zugang Basis und bleibt dauerhaft 0 €: die ganze Live-Erfassung, der komplette Terminplan, die Kaderkarten und der öffentliche Live-Ticker, für eine Mannschaft. Bezahlt wird ab dann, was echtes Geld kostet – KI-Analysen in größerer Zahl, Videoanalyse, geteilte Berichte und mehrere Mannschaften. Wer sich vor dem 1. Januar 2027 registriert, behält den Trainer-Plan kostenlos bis zum 30. Juni 2028.',
+      'Ja. Ab dem 1. Januar 2027 heißt der kostenlose Zugang Basis und bleibt dauerhaft 0 €: die ganze Live-Erfassung, der komplette Terminplan, die Kaderkarten und der öffentliche Live-Ticker, für eine Mannschaft. Bezahlt wird ab dann, was echtes Geld kostet – KI-Analysen in größerer Zahl, Videoanalyse, geteilte Berichte und mehrere Mannschaften. Wer sich vor dem 1. Januar 2027 registriert, behält den Trainer-Plan bis zum Ende der Saison 26/27 am 30. Juni 2027 kostenlos.',
   },
   {
     question: 'Ist eine kostenlose App für den Verein überhaupt sinnvoll?',

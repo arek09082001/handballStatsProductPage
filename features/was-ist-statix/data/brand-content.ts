@@ -137,7 +137,7 @@ export const BRAND_FAQS = [
   },
   {
     question: 'Ist Statix kostenlos?',
-    answer: `Bis zum 31. Dezember 2026 nichts: Registriere dich unter ${CLUB_CONFIG.website.appUrlWithoutProtocol} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 gibt es drei Stufen – Basis bleibt 0 €, Trainer kostet 79 € je Saison, Pro 159 €. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum 30. Juni 2028.`,
+    answer: `Bis zum 31. Dezember 2026 nichts: Registriere dich unter ${CLUB_CONFIG.website.appUrlWithoutProtocol} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 gibt es drei Stufen – Basis bleibt 0 €, Trainer kostet 79 € je Saison, Pro 159 €. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027.`,
   },
   {
     question: 'Wie kann ich Statix testen?',

@@ -141,7 +141,7 @@ export const SITE_LINKS = [
         name: 'Preise',
         path: '/preise',
         description:
-            'Was die Handball-Statistik-App Statix kostet: Basis dauerhaft 0 €, Trainer 79 € und Pro 159 € je Saison ab dem 1. Januar 2027 – mit allen Funktionen und Grenzen je Plan im Vergleich. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis 30. Juni 2028.',
+            'Was die Handball-Statistik-App Statix kostet: Basis dauerhaft 0 €, Trainer 79 € und Pro 159 € je Saison ab dem 1. Januar 2027 – mit allen Funktionen und Grenzen je Plan im Vergleich. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis 30. Juni 2027.',
     },
     {
         name: 'Erfahrungen',
@@ -302,7 +302,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Gibt es eine kostenlose Handball-Statistik-App?',
         answer:
-            'Ja. Die Basis-Stufe bleibt dauerhaft kostenlos – ohne Kreditkarte und ohne Bezahlvorgang. Ab dem 1. Januar 2027 kommen zwei bezahlte Stufen dazu: Trainer für 79 € je Saison und Pro für 159 €. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum 30. Juni 2028.',
+            'Ja. Die Basis-Stufe bleibt dauerhaft kostenlos – ohne Kreditkarte und ohne Bezahlvorgang. Ab dem 1. Januar 2027 kommen zwei bezahlte Stufen dazu: Trainer für 79 € je Saison und Pro für 159 €. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027.',
     },
     {
         question: 'Brauche ich technisches Vorwissen?',
@@ -322,7 +322,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Was kostet Statix?',
         answer:
-            'Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte – wer bis dahin ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum 30. Juni 2028. Ab dem 1. Januar 2027 gilt für Neuregistrierungen: Basis 0 €, Trainer 79 € je Saison, Pro 159 €.',
+            'Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte – wer bis dahin ein Konto anlegt, behält den Trainer-Plan bis zum Ende der Saison 26/27 am 30. Juni 2027 kostenlos. Ab dem 1. Januar 2027 gilt für Neuregistrierungen: Basis 0 €, Trainer 79 € je Saison, Pro 159 €.',
     },
     {
         question: 'Wer steckt hinter Statix?',
