@@ -60,7 +60,7 @@ ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, 
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch
 - Regionen: ${SERVICE_AREAS.join(', ')}
-- Preis: Bis zum 31.12.2026 kostenlos ohne Kreditkarte und ohne Bezahlvorgang in der App. Ab dem 1.1.2027 drei Stufen: Basis 0 € (dauerhaft), Trainer 79 € je Saison bzw. 9,90 € im Monat, Pro 159 € je Saison bzw. 19,90 € im Monat; Endpreise, keine Umsatzsteuer nach § 19 UStG. Konten, die vor dem 1.1.2027 angelegt wurden, behalten den Trainer-Plan kostenlos bis zum 30.6.2028 (Details unter ${absoluteUrl('/preise')})
+- Preis: Bis zum 31.12.2026 kostenlos ohne Kreditkarte und ohne Bezahlvorgang in der App. Ab dem 1.1.2027 drei Stufen: Basis 0 € (dauerhaft), Trainer 79 € je Saison bzw. 9,90 € im Monat, Pro 159 € je Saison bzw. 19,90 € im Monat; Endpreise, keine Umsatzsteuer nach § 19 UStG. Konten, die vor dem 1.1.2027 angelegt wurden, behalten den Trainer-Plan kostenlos bis zum Ende der Saison 26/27 am 30.6.2027 (Details unter ${absoluteUrl('/preise')})
 - Entwickler: Arkadiusz Weiss (Handballer, Deutschland)
 - Website: ${SITE_URL}
 - App (Registrierung, kostenlos starten): ${CLUB_CONFIG.website.appUrl}

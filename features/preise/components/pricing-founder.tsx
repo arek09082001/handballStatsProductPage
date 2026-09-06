@@ -33,7 +33,7 @@ export default function PricingFounder() {
         <SectionHeading
           align='left'
           kicker='Für alle, die schon dabei sind'
-          title='Wer jetzt registriert, zahlt bis Sommer 2028 nichts'
+          title='Wer jetzt registriert, zahlt die Saison 26/27 nichts'
           description={`Ab dem ${LAUNCH_DATE_LABEL} zahlen ausschließlich Neuregistrierungen. Jedes Konto, das vorher existiert, behält den Trainer-Plan – kostenlos, ohne Antrag und ohne Zahlungsdaten.`}
         />
 

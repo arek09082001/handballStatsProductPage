@@ -18,7 +18,7 @@ import { SITE_CONTENT_LANGUAGES } from '@/i18n/config';
 export const metadata: Metadata = createPageMetadata({
   title: 'Preise: Handball-Statistik-App für Trainer',
   description:
-    'Was kostet Statix? Basis 0 €, Trainer 79 € und Pro 159 € je Saison – ab 1.1.2027. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis 30.6.2028.',
+    'Was kostet Statix? Basis 0 €, Trainer 79 € und Pro 159 € je Saison – ab 1.1.2027. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis 30.6.2027.',
   path: PRICING_PAGE_PATH,
   keywords: [
     'handball statistik app preise',

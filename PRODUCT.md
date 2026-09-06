@@ -120,7 +120,8 @@ The scope itself:
   limits come from the app repo's `docs/pricing.md`, the launch path from
   `docs/monetarisierung-januar.md` — never round, pad or invent a limit.
 - **Grandfathering is a promise the site makes.** Any account created before
-  1.1.2027 keeps the Trainer plan at no cost until 30.6.2028. It costs nothing
+  1.1.2027 keeps the Trainer plan at no cost until 30.6.2027 — the end of
+  the 26/27 season, and not a day of the season after it. It costs nothing
   to honour (the accounts already sit on `trainer`) and it is the reason this
   page can announce a price without a single angry existing user — do not
   weaken or quietly drop it.

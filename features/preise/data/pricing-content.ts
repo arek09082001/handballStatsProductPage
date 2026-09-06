@@ -28,8 +28,11 @@ export const LAUNCH_DATE_LABEL = '1. Januar 2027';
 /** Last day a registration still earns the founder guarantee. */
 export const FOUNDER_DEADLINE_LABEL = '31. Dezember 2026';
 
-/** How long a founder account keeps the Trainer plan at no cost. */
-export const FOUNDER_FREE_UNTIL_LABEL = '30. Juni 2028';
+/**
+ * How long a founder account keeps the Trainer plan at no cost — to the end of
+ * the current season 26/27, not a day of the season after it.
+ */
+export const FOUNDER_FREE_UNTIL_LABEL = '30. Juni 2027';
 
 /** Coaches using Statix today — the reason the hosting bill stopped being small. */
 export const COACH_COUNT_LABEL = 'über 50 Trainer';
@@ -431,7 +434,7 @@ export const FOUNDER_STEPS = [
   {
     number: 3,
     title: `Kostenlos bis zum ${FOUNDER_FREE_UNTIL_LABEL}`,
-    text: 'Die laufende Saison zu Ende und die komplette Saison 27/28 obendrauf. Danach entscheidest du, ob du bleibst – ohne dass vorher etwas abgebucht wird.',
+    text: 'Die laufende Saison 26/27 komplett zu Ende, Rückrunde inklusive. Danach entscheidest du, ob du bleibst – ohne dass vorher etwas abgebucht wird.',
   },
 ] as const;
 
@@ -492,7 +495,7 @@ export const PRICING_FAQS: BoardFaqItem[] = [
   },
   {
     question: 'Ich nutze Statix schon – muss ich ab Januar zahlen?',
-    answer: `Nein. Jedes Konto, das vor dem ${LAUNCH_DATE_LABEL} angelegt wurde, behält den Trainer-Plan kostenlos bis zum ${FOUNDER_FREE_UNTIL_LABEL} – also die laufende Saison zu Ende und die komplette Saison 27/28 dazu. Du musst dafür nichts tun, nichts anklicken und keine Zahlungsdaten hinterlegen. Wer mitten in der Saison in eine Paywall läuft, verliert sein Spielprotokoll, und das wäre der schlechteste denkbare Start.`,
+    answer: `Nein. Jedes Konto, das vor dem ${LAUNCH_DATE_LABEL} angelegt wurde, behält den Trainer-Plan kostenlos bis zum ${FOUNDER_FREE_UNTIL_LABEL} – also die laufende Saison 26/27 komplett zu Ende. Du musst dafür nichts tun, nichts anklicken und keine Zahlungsdaten hinterlegen. Wer mitten in der Saison in eine Paywall läuft, verliert sein Spielprotokoll, und das wäre der schlechteste denkbare Start.`,
   },
   {
     question: 'Warum wird Statix überhaupt kostenpflichtig?',
