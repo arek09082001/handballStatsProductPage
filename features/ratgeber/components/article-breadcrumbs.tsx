@@ -1,16 +1,27 @@
+'use client';
+
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 
 export type Breadcrumb = {
+  /** German label — what the BreadcrumbList node carries. */
   name: string;
   path: string;
+  /**
+   * Key under `guidePage.breadcrumb` for the visible label. Set on the two
+   * fixed crumbs ahead of the article; the article's own crumb is its German
+   * title and has none, because the article is German.
+   */
+  labelKey?: 'home' | 'guide';
 };
 
 /**
  * Visible breadcrumb navigation. Mirrors the BreadcrumbList JSON-LD emitted by
- * ArticleSchema / PageSchema so the on-page trail and the structured data match.
- * `onDark` styles it for the dark article/hub header.
+ * ArticleSchema / PageSchema, which stays German because the server renders it
+ * — the visible trail speaks the reader's language wherever a crumb is chrome
+ * rather than an article title. `onDark` styles it for the dark header.
  */
 export default function ArticleBreadcrumbs({
   items,
@@ -19,8 +30,12 @@ export default function ArticleBreadcrumbs({
   items: Breadcrumb[];
   onDark?: boolean;
 }) {
+  const t = useTranslations('guidePage.breadcrumb');
+  const label = (item: Breadcrumb) =>
+    item.labelKey ? t(item.labelKey) : item.name;
+
   return (
-    <nav aria-label='Brotkrumen'>
+    <nav aria-label={t('label')}>
       <ol className='flex flex-wrap items-center gap-x-1.5 gap-y-1'>
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
@@ -34,7 +49,7 @@ export default function ArticleBreadcrumbs({
                     'max-w-[16rem] truncate text-sm font-medium sm:max-w-none',
                     onDark ? 'text-chalk/85' : 'text-ink',
                   )}>
-                  {item.name}
+                  {label(item)}
                 </span>
               ) : (
                 <>
@@ -46,7 +61,7 @@ export default function ArticleBreadcrumbs({
                         ? 'text-chalk/65 hover:text-chalk'
                         : 'text-ink/60 hover:text-primary',
                     )}>
-                    {item.name}
+                    {label(item)}
                   </Link>
                   <ChevronRight
                     className={cn(

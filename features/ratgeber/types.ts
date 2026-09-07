@@ -54,15 +54,6 @@ export type ArticleArchetype =
   | 'referenz'
   | 'entscheidung';
 
-/** Short badge label per archetype, shown on cards and in the article header. */
-export const ARCHETYPE_LABELS: Record<ArticleArchetype, string> = {
-  kennzahl: 'Kennzahl',
-  system: 'System',
-  rezept: 'Trainingsrezept',
-  referenz: 'Nachschlagen',
-  entscheidung: 'Entscheidungshilfe',
-};
-
 /** Rating used in a decision matrix cell. */
 export type DecisionScore = 'gut' | 'geht' | 'schlecht';
 

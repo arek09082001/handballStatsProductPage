@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { Grain } from '@/features/landing-page/components/tactic';
 import { ARTICLE_AUTHOR, authorInitials } from '../data/author';
 
@@ -13,7 +16,11 @@ import { ARTICLE_AUTHOR, authorInitials } from '../data/author';
  * never renders a broken image or a logo standing in for a person.
  */
 export default function ArticleAuthorBox() {
-  const { name, role, bio, photoPath, profilePath } = ARTICLE_AUTHOR;
+  const t = useTranslations('guidePage.article');
+  const tAuthor = useTranslations('author');
+  const { name, photoPath, profilePath } = ARTICLE_AUTHOR;
+  const role = tAuthor('role');
+  const bio = tAuthor('bio');
 
   return (
     <section
@@ -51,7 +58,7 @@ export default function ArticleAuthorBox() {
 
           <div className='min-w-0'>
             <p className='font-hand text-lg leading-none text-primary'>
-              Über den Autor
+              {t('authorKicker')}
             </p>
             <h2
               id='artikel-autor'
@@ -64,7 +71,7 @@ export default function ArticleAuthorBox() {
             <Link
               href={profilePath}
               className='mt-4 inline-flex items-center gap-1 rounded-sm font-display text-[13px] font-bold text-primary transition-transform duration-300 hover:translate-x-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40'>
-              Mehr über Statix
+              {t('authorLink')}
               <ArrowRight className='size-3.5' />
             </Link>
           </div>
