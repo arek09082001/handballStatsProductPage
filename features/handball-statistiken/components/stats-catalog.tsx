@@ -1,9 +1,12 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   BoardCard,
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { STAT_GROUPS } from '../data/stats-content';
+import type { StatGroup } from '../data/stats-content';
 
 /**
  * The catalogue band: every handball statistic worth keeping, grouped by the
@@ -12,6 +15,9 @@ import { STAT_GROUPS } from '../data/stats-content';
  * @returns A JSX element rendering the grouped metric catalogue on paper.
  */
 export default function StatsCatalog() {
+  const t = useTranslations('statsPage.catalog');
+  const groups = t.raw('groups') as StatGroup[];
+
   return (
     <section
       id='kennzahlen'
@@ -20,13 +26,13 @@ export default function StatsCatalog() {
       <div className='relative mx-auto max-w-6xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Der Überblick'
-          title='Welche Handball-Statistiken es gibt'
-          description='Fünf Gruppen, und jede beantwortet eine andere Frage. Wer alles auf einmal erfasst, hört nach vier Spieltagen auf – such dir eine Gruppe aus und bau von dort aus weiter.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-12 grid gap-6 md:grid-cols-2'>
-          {STAT_GROUPS.map((group, index) => (
+          {groups.map((group, index) => (
             <BoardCard
               key={group.name}
               pin='magnet'

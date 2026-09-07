@@ -1,7 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { BoardScreenshot, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardScreenshot,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
 
 /**
@@ -30,7 +34,9 @@ export default function TemplateUpgrade() {
           </p>
 
           <p className='mt-4 max-w-[62ch] text-base leading-7 text-ink/75'>
-            {t.rich('statsLink', { stats: inlineLink('/handball-statistiken') })}
+            {t.rich('statsLink', {
+              stats: inlineLink('/handball-statistiken'),
+            })}
           </p>
 
           <p className='mt-4 max-w-[62ch] text-base leading-7 text-ink/75'>

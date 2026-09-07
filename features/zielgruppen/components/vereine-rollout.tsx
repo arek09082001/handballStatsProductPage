@@ -42,7 +42,11 @@ export default function VereineRollout() {
         <ol className='mt-12 grid gap-8 sm:grid-cols-2'>
           {steps.map((step) => (
             <li key={step.number} className='flex items-start gap-4'>
-              <PlayerMagnet number={step.number} size='md' className='mt-0.5 shrink-0' />
+              <PlayerMagnet
+                number={step.number}
+                size='md'
+                className='mt-0.5 shrink-0'
+              />
               <div>
                 <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
                   {step.title}

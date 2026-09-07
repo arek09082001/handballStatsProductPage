@@ -3111,5 +3111,521 @@
       "description": "Zarejestruj się bezpłatnie i zarejestruj pierwszy mecz, bez wieczornego przepisywania. Albo zobacz najpierw w demo na żywo, jak to działa bez komórek – całkiem bez konta.",
       "linkLabel": "Ile kosztuje Statix"
     }
+  },
+  "statsPage": {
+    "hero": {
+      "kicker": "Wskaźniki w piłce ręcznej",
+      "titleHighlight": "Statystyki piłki ręcznej",
+      "titleTail": "rejestrować, liczyć, rozumieć",
+      "lede": "Statystyki piłki ręcznej to policzone akcje meczu – rzuty, bramki, obrony, błędy techniczne, kary – i wskaźniki, które z nich powstają. Ta strona pokazuje, jakie wskaźniki istnieją, jak je liczyć, jakie wartości są realistyczne w amatorskiej piłce ręcznej i jak je rejestrować bez wieczornego przepisywania.",
+      "ctaPrimary": "Rejestruj statystyki za darmo",
+      "trust": [
+        "Wzory i wartości odniesienia",
+        "Rejestrowanie na żywo zamiast przepisywania",
+        "Zacznij za darmo"
+      ]
+    },
+    "catalog": {
+      "kicker": "Przegląd",
+      "title": "Jakie statystyki piłki ręcznej istnieją",
+      "description": "Pięć grup, a każda odpowiada na inne pytanie. Kto rejestruje wszystko naraz, kończy po czterech kolejkach – wybierz jedną grupę i buduj od niej dalej.",
+      "groups": [
+        {
+          "name": "Atak",
+          "intro": "Liczby, które mówią, co dzieje się z waszymi posiadaniami piłki – i dlaczego atak kończy się bez rzutu.",
+          "stats": [
+            {
+              "term": "Bramki",
+              "definition": "Skuteczne wykończenia na zawodnika i drużynę, podstawa każdego dalszego rachunku."
+            },
+            {
+              "term": "Rzuty",
+              "definition": "Wszystkie rzeczywiste próby na bramkę – bramka, obrona, rzut niecelny i słupek liczą się, błąd techniczny nie."
+            },
+            {
+              "term": "Skuteczność rzutów",
+              "definition": "Udział rzutów, które kończą się w bramce. Pierwsza liczba, na którą patrzą trenerzy, i najczęściej źle odczytywana."
+            },
+            {
+              "term": "Ataki (posiadania)",
+              "definition": "Wykończenia plus błędy techniczne plus siedem metrów – odniesienie, bez którego żaden wskaźnik nie jest porównywalny."
+            },
+            {
+              "term": "Efektywność ataku",
+              "definition": "Bramki na atak. W odróżnieniu od skuteczności rzutów karze też za stracone piłki."
+            },
+            {
+              "term": "Błędy techniczne i wskaźnik błędów",
+              "definition": "Kroki, podwójne kozłowanie i złe podania na atak – liczba, która pokazuje, ile ataków oddajecie."
+            },
+            {
+              "term": "Skuteczność z siedmiu metrów",
+              "definition": "Trafione na wykonany rzut z siedmiu metrów, prowadzone osobno od skuteczności ogólnej."
+            },
+            {
+              "term": "Pozycje rzutów i mapa rzutów",
+              "definition": "Skąd padały rzuty i co z nich wyszło – jako mapa, a nie lista, wraz z mapą ciepła."
+            }
+          ]
+        },
+        {
+          "name": "Obrona i bramkarz",
+          "intro": "Co dzieje się przy własnej bramce – rozbite na tyle, by nie mylić obrony z bramkarzem.",
+          "stats": [
+            {
+              "term": "Obrony",
+              "definition": "Obronione piłki, podstawa każdej oceny bramkarza."
+            },
+            {
+              "term": "Skuteczność obron",
+              "definition": "Obrony w stosunku do wszystkich rzutów celnych. Rzuty niecelne się nie liczą."
+            },
+            {
+              "term": "Skuteczność obron według strefy",
+              "definition": "Ten sam wskaźnik według strefy – dopiero on oddziela pracę bramkarza od pracy obrony."
+            },
+            {
+              "term": "Bramki stracone",
+              "definition": "Bramki stracone łącznie, według części meczu i sytuacji boiskowej."
+            },
+            {
+              "term": "Bloki i przechwyty",
+              "definition": "Zablokowane rzuty i odebrane piłki – akcje obronne, których nie pokazuje żaden protokół."
+            },
+            {
+              "term": "Różnica bramek",
+              "definition": "Bramki minus bramki stracone, w meczu i w sezonie – najprostsza krzywa postępu."
+            }
+          ]
+        },
+        {
+          "name": "Tempo i rytm gry",
+          "intro": "Wskaźniki, które tłumaczą, dlaczego dwa mecze z identycznym wynikiem były zupełnie różne.",
+          "stats": [
+            {
+              "term": "Kontrataki",
+              "definition": "Wykończenia z pierwszej i drugiej fali, liczone osobno od ataku pozycyjnego."
+            },
+            {
+              "term": "Udział kontrataku w bramkach",
+              "definition": "Ile z waszego dorobku pochodzi z szybkiej gry – i ile naprawdę dźwiga atak pozycyjny."
+            },
+            {
+              "term": "Ataki na mecz",
+              "definition": "Tempo spotkania. Powyżej 60 ataków to mecz otwarty, poniżej 48 – ciężki."
+            },
+            {
+              "term": "Przebieg według fragmentów",
+              "definition": "Bramki i bramki stracone w oknach pięcio- lub dziesięciominutowych, żeby widać było załamania."
+            }
+          ]
+        },
+        {
+          "name": "Dyscyplina i sytuacje szczególne",
+          "intro": "Liczby, które są w protokole meczowym, ale rzadko bywają analizowane.",
+          "stats": [
+            {
+              "term": "Kary dwuminutowe",
+              "definition": "Wykluczenia na dwie minuty na zawodnika i drużynę, z momentem w meczu."
+            },
+            {
+              "term": "Ostrzeżenia i dyskwalifikacje",
+              "definition": "Żółte kartki, czerwone i niebieskie – stopnie, które wymuszają rotację."
+            },
+            {
+              "term": "Bilans w przewadze i osłabieniu",
+              "definition": "Bramki i bramki stracone w trakcie wykluczenia – często decydujące cztery minuty meczu."
+            },
+            {
+              "term": "Wymuszone rzuty karne",
+              "definition": "Kto wywalcza wasze rzuty z siedmiu metrów, a kto je zawinia."
+            }
+          ]
+        },
+        {
+          "name": "Sezon i rozwój",
+          "intro": "Wszystko, co nabiera sensu dopiero na przestrzeni wielu meczów.",
+          "stats": [
+            {
+              "term": "Przebieg skuteczności zawodnika",
+              "definition": "Ten sam wskaźnik przez osiem, dwanaście, dwadzieścia meczów – jedyne uczciwe porównanie to porównanie z własną wcześniejszą wartością."
+            },
+            {
+              "term": "Udział w grze i występy",
+              "definition": "Kto ile zagrał, żeby liczby bezwzględne nie odwzorowywały samego czasu gry."
+            },
+            {
+              "term": "Rozkład strzelców",
+              "definition": "Na ile barków rozkładają się wasze bramki – wczesny sygnał przewidywalności."
+            },
+            {
+              "term": "Bilans z rywalami",
+              "definition": "Bezpośrednie starcia z każdym rywalem: zwycięstwa, remisy, porażki i bramki."
+            },
+            {
+              "term": "Frekwencja treningowa",
+              "definition": "Potwierdzenia i odmowy na zawodnika – liczba, która uspokaja dyskusję o czasie gry."
+            }
+          ]
+        }
+      ]
+    },
+    "formulas": {
+      "kicker": "Przeliczmy",
+      "title": "Wzory – i co jest normalną wartością",
+      "description": "Wszystkie rachunki potrzebne do rzetelnej analizy. Wartości odniesienia to doświadczenia z poziomu amatorskiego, a nie normy do spełnienia.",
+      "caption": "Wzory i wartości odniesienia najważniejszych wskaźników w piłce ręcznej",
+      "colMetric": "Wskaźnik",
+      "colFormula": "Wzór",
+      "colBenchmark": "Odniesienie na poziomie amatorskim",
+      "rows": [
+        {
+          "metric": "Skuteczność rzutów",
+          "formula": "bramki ÷ rzuty × 100",
+          "benchmark": "drużyna powyżej 60 %, obrotowy 65–75 %, druga linia 45–55 %"
+        },
+        {
+          "metric": "Ataki (posiadania)",
+          "formula": "wykończenia + błędy techniczne + siedem metrów",
+          "benchmark": "46–60 na drużynę i mecz"
+        },
+        {
+          "metric": "Efektywność ataku",
+          "formula": "bramki ÷ ataki × 100",
+          "benchmark": "48–58 %"
+        },
+        {
+          "metric": "Wskaźnik błędów",
+          "formula": "błędy techniczne ÷ ataki × 100",
+          "benchmark": "12–18 %"
+        },
+        {
+          "metric": "Skuteczność obron",
+          "formula": "obrony ÷ (obrony + bramki stracone) × 100",
+          "benchmark": "30–40 % we wszystkich strefach"
+        },
+        {
+          "metric": "Skuteczność z siedmiu metrów",
+          "formula": "trafione ÷ wykonane rzuty z 7 m × 100",
+          "benchmark": "75–85 %"
+        },
+        {
+          "metric": "Udział kontrataku",
+          "formula": "bramki z kontrataku ÷ bramki × 100",
+          "benchmark": "15–25 %"
+        },
+        {
+          "metric": "Różnica bramek",
+          "formula": "bramki − bramki stracone",
+          "benchmark": "czytać jako przebieg w sezonie"
+        }
+      ],
+      "closing": "Przedziały przesuwają się wraz z klasą rozgrywkową i kategorią wiekową, dlatego własna wcześniejsza wartość jest zawsze lepszym punktem odniesienia niż tabela. Jeśli chcesz tylko szybko policzyć pojedynczy wskaźnik, weź <calculator>kalkulator skuteczności rzutów</calculator> – wpisujesz bramki i rzuty, odczytujesz wynik, bez rejestracji."
+    },
+    "ways": {
+      "kicker": "Trzy drogi",
+      "title": "Czym trenerzy prowadzą statystyki piłki ręcznej",
+      "description": "Kartka, arkusz albo aplikacja – wszystkie trzy działają. Różnią się tym, co z nich zostaje w poniedziałek.",
+      "items": [
+        {
+          "name": "Kartka i kreski",
+          "effort": "Zero przygotowań",
+          "good": "Nigdy nie zawodzi, nie potrzebuje baterii, każdy w sztabie poradzi sobie od razu.",
+          "bad": "Kto prowadzi mecz, ten nie notuje. Stos rzadko bywa przeliczony – a mapa rzutów nigdy z niego nie powstanie.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Szablon Excel",
+          "effort": "Raz skonfigurować",
+          "good": "Sam liczy wskaźniki, należy do ciebie, można go dowolnie rozbudować.",
+          "bad": "W hali nie do obsługi, więc przepisujesz wieczorem. Bez przebiegu dla zawodnika, a asystent ma złą wersję.",
+          "linkLabel": "Pobierz bezpłatny szablon Excel"
+        },
+        {
+          "name": "Aplikacja statystyczna",
+          "effort": "Jedno dotknięcie na akcję",
+          "good": "Rejestrowanie i analiza są tym samym: po ostatnim gwizdku wskaźniki, mapa rzutów i wartości zawodników są gotowe – także offline w hali.",
+          "bad": "Potrzebujesz telefonu albo tabletu i konta. Pierwsze dziesięć minut gry wydaje się nietypowe.",
+          "linkLabel": "Co obejmuje bezpłatny dostęp"
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "W pięciu krokach",
+      "title": "Tak prowadzisz statystykę, która coś zmienia",
+      "description": "Celem nie jest więcej liczb, tylko jedna decyzja na mecz, której bez nich byś nie podjął.",
+      "steps": [
+        {
+          "title": "Zdecyduj, co naprawdę analizujesz",
+          "text": "Zacznij od trzech wartości: bramki, rzuty i błędy techniczne na zawodnika. Skuteczność, ataki i efektywność ataku wychodzą z nich same. Reszta dochodzi, gdy te trzy siedzą – nie wcześniej."
+        },
+        {
+          "title": "Zapisz swoje zasady liczenia",
+          "text": "Słupek liczy się jako rzut, błąd techniczny nie, siedem metrów idzie osobno, a zablokowane piłki traktujesz tak samo przez cały sezon. Bez spisanej zasady asystent w trzeciej kolejce zarejestruje coś innego niż ty."
+        },
+        {
+          "title": "Rejestruj w trakcie meczu, nie po nim",
+          "text": "Z pamięci giną przede wszystkim rzuty niecelne i błędy techniczne – czyli dokładnie te akcje, które czynią wskaźniki uczciwymi. Kto rejestruje na żywo, po ostatnim gwizdku ma komplet danych."
+        },
+        {
+          "title": "Policz wskaźniki i osadź je",
+          "text": "Porównuj najpierw z własną wcześniejszą wartością, a dopiero potem z tabelą odniesienia. Poniżej pięciu wykończeń w meczu i trzydziestu w sezonie w ogóle nie komentuj wskaźnika."
+        },
+        {
+          "title": "Wyciągnij dokładnie jedną decyzję",
+          "text": "Jeden wskaźnik, jeden akcent treningowy, jedna rozmowa. Trzy mecze w tym samym kierunku to temat, pojedynczy wyskok – nie. Potem zaczynasz znów od kroku trzeciego."
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Poziom niżej",
+      "title": "Każdy wskaźnik szczegółowo",
+      "description": "Wzór, zasady liczenia, wartości odniesienia i typowe nadinterpretacje – do każdej liczby z tej strony jest artykuł, który doprowadza ją do końca.",
+      "allLink": "Wszystkie artykuły w poradniku piłki ręcznej"
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o statystyki piłki ręcznej",
+      "description": "Co trenerzy chcą wiedzieć, zanim zapiszą pierwszy mecz.",
+      "items": [
+        {
+          "question": "Jakie statystyki istnieją w piłce ręcznej?",
+          "answer": "W ataku: bramki, rzuty, skuteczność, ataki, efektywność ataku, błędy techniczne, siedem metrów i pozycje rzutów. W obronie: obrony, skuteczność obron, bramki stracone, bloki i przechwyty. Do tego kontrataki i ich udział, kary dwuminutowe z bilansem przewagi i osłabienia, a w skali sezonu przebiegi wskaźników, udział w grze i bilans z rywalami."
+        },
+        {
+          "question": "Jakie wskaźniki trener powinien rejestrować minimalnie?",
+          "answer": "Bramki, rzuty i błędy techniczne na zawodnika. Z tych trzech wartości wynikają skuteczność rzutów, ataki i efektywność ataku – to już wystarczy, by zdecydować, czy waszym problemem jest wykończenie, czy utrzymanie piłki. Obrony na bramkarza to kolejny sensowny krok."
+        },
+        {
+          "question": "Jak liczy się skuteczność rzutów w piłce ręcznej?",
+          "answer": "Bramki podzielone przez rzuty, razy 100. Siedem bramek z dwunastu rzutów daje 58,3 %. Jako rzut liczy się każda rzeczywista próba na bramkę, wraz ze słupkiem i poprzeczką; błąd techniczny bez rzutu nie. Siedem metrów prowadzisz osobno, inaczej pewna wykonawczyni upiększa wskaźnik całej drużyny."
+        },
+        {
+          "question": "Jaka skuteczność rzutów jest dobra?",
+          "answer": "To zależy od pozycji: na obrotowym 65–75 %, z drugiej linii z dziewięciu metrów 45–55 %, przy siedmiu metrach 75–85 %, a przy kontrataku 85–95 %. Skuteczność drużyny powyżej 60 % to na poziomie amatorskim solidna wartość. To wartości orientacyjne z praktyki, a nie zebrana statystyka."
+        },
+        {
+          "question": "Jak rejestrować statystyki w trakcie meczu?",
+          "answer": "Albo kreskami na przygotowanym arkuszu z jednym wierszem na zawodnika, albo aplikacją jednym dotknięciem na akcję. Kluczowe jest, żeby rejestrowanie odbywało się na żywo: z pamięci giną przede wszystkim rzuty niecelne i błędy techniczne, przez co wskaźniki systematycznie wychodzą za dobre."
+        },
+        {
+          "question": "Czy mogę rejestrować statystyki za darmo?",
+          "answer": "Tak. Poziom Baza w Statix pozostaje bezpłatny na zawsze, wraz z rejestrowaniem na żywo, skutecznością i analizą; od 1 stycznia 2027 dochodzą poziomy płatne za funkcje bardziej kosztowne. Kto woli zacząć na papierze, bierze bezpłatny szablon Excel. Jedno i drugie bez karty kredytowej; demo na żywo działa nawet bez konta."
+        },
+        {
+          "question": "Czy potrzebuję drugiej osoby przy linii bocznej?",
+          "answer": "Do bramek, rzutów i błędów technicznych wystarczy jedna osoba, która przy okazji prowadzi mecz. Gdy dochodzą strefy rzutów, bloki i przechwyty, we dwoje wychodzi znacznie czyściej – zwykle rejestruje wtedy asystent albo kontuzjowany zawodnik."
+        },
+        {
+          "question": "Od kiedy liczby są miarodajne?",
+          "answer": "Pojedyncze wskaźniki z jednego meczu to szum. Z grubsza: co najmniej pięć wykończeń dla wskaźnika meczowego, około trzydziestu w sezonie, a u bramkarza jakieś osiem zarejestrowanych meczów, zanim jego własna średnia nadaje się na punkt odniesienia."
+        },
+        {
+          "question": "Czy są tu statystyki Bundesligi piłki ręcznej?",
+          "answer": "Nie. Ta strona objaśnia statystyki piłki ręcznej, a Statix rejestruje dane twojej własnej drużyny. Tabele i wartości z Bundesligi czy lig okręgowych znajdziesz u samych lig i związków."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Zamiast listy z kreskami",
+      "title": "Twoje liczby powstają w meczu, a nie po nim",
+      "description": "Rejestruj każdą akcję jednym dotknięciem – skuteczność, mapa rzutów i wartości zawodników są gotowe po ostatnim gwizdku. Rejestracja bezpłatna albo najpierw zobacz demo na żywo z prawdziwymi danymi meczowymi.",
+      "linkLabel": "Co obejmuje bezpłatny dostęp"
+    }
+  },
+  "calculatorPage": {
+    "hero": {
+      "kicker": "Bezpłatny kalkulator",
+      "titleLead": "Obliczyć",
+      "titleHighlight": "skuteczność rzutów",
+      "lede": "Bramki przez rzuty razy 100 – to cały wzór. Kalkulator zdejmuje z ciebie liczenie w pamięci i mówi dodatkowo, jak ocenić wynik dla danej pozycji. Bez rejestracji, także na stronę własnego klubu."
+    },
+    "positions": [
+      {
+        "id": "tempo",
+        "label": "Kontratak",
+        "hint": "Wolne piłki na pustą albo częściowo osłoniętą bramkę – tu oczekiwania są najwyższe."
+      },
+      {
+        "id": "siebenmeter",
+        "label": "Siedem metrów",
+        "hint": "Osobna dyscyplina. Prowadź ją oddzielnie, inaczej zaburzy skuteczność z gry."
+      },
+      {
+        "id": "kreis",
+        "label": "Obrotowy",
+        "hint": "Najkrótszy dystans, ale często w padzie i przy kontakcie."
+      },
+      {
+        "id": "aussen",
+        "label": "Skrzydło",
+        "hint": "Ostry kąt, ale zwykle bez bloku przed sobą."
+      },
+      {
+        "id": "rueckraum",
+        "label": "Druga linia (9 metrów)",
+        "hint": "Największy dystans, zwarty blok, dobrze ustawiony bramkarz."
+      },
+      {
+        "id": "team",
+        "label": "Cała drużyna",
+        "hint": "Powyżej 60 procent to na poziomie amatorskim solidna wartość."
+      }
+    ],
+    "calculator": {
+      "goalsLabel": "Bramki",
+      "shotsLabel": "Rzuty (wszystkie próby na bramkę)",
+      "positionLabel": "Oceń jako",
+      "rangeOver": "powyżej {min} %",
+      "rangeBetween": "{min}–{max} %",
+      "resultKicker": "Skuteczność rzutów",
+      "resultSummary": "{goals} z {shots} rzutów w bramce",
+      "empty": "Wpisz bramki i rzuty – wskaźnik pojawi się od razu.",
+      "errorNegative": "W piłce ręcznej nie ma wartości ujemnych.",
+      "errorNoShots": "Bez rzutów nie ma wskaźnika – wpisz najpierw próby na bramkę.",
+      "errorMoreGoals": "Więcej bramek niż rzutów? Każda bramka to też rzut – sprawdź obie liczby.",
+      "thinWarning": "Uwaga: poniżej dziesięciu rzutów wskaźnik to przede wszystkim przypadek. Zsumuj kilka meczów, zanim zrobisz z tego zadanie treningowe.",
+      "belowHeadline": "poniżej wartości odniesienia",
+      "belowText": "Dla pozycji {label} typowy zakres to {range}. Warto spojrzeć na mapę rzutów: czy niecelne padają z jednej strefy albo w jeden róg?",
+      "aboveHeadline": "powyżej wartości odniesienia",
+      "aboveText": "Mocno: {range} dla pozycji {label} uchodzi już za dobry wynik. Sprawdź mimo to liczbę rzutów – przy niewielu próbach wskaźnik szybko rośnie.",
+      "insideHeadline": "w oczekiwanym zakresie",
+      "insideText": "{range} to typowy korytarz dla pozycji {label}. {hint}",
+      "reverseTitle": "Licząc odwrotnie",
+      "targetLabel": "Docelowy wskaźnik (%)",
+      "targetInvalid": "Wpisz wyżej poprawne wartości, a policzę potrzebne bramki.",
+      "targetLead": "Aby osiągnąć {goal} % przy {shots} rzutach, potrzebujesz",
+      "targetGoals": "{needed} bramek",
+      "targetMissing": "Brakuje ci {missing}.",
+      "targetStreak": "Bez zmiany dotychczasowych rzutów: kolejne {streak} prób musiałoby wpaść.",
+      "targetReached": "To już osiągnąłeś.",
+      "embedTitle": "Obliczanie skuteczności rzutów",
+      "embedAttributionLink": "Kalkulator skuteczności rzutów od Statix",
+      "embedAttributionSuffix": "– aplikacji do statystyk piłki ręcznej dla trenerów"
+    },
+    "formula": {
+      "kicker": "Liczenie w pamięci",
+      "title": "Wzór",
+      "description": "Jedna linijka, którą każdy trener powinien mieć w głowie.",
+      "expression": "skuteczność (%) = bramki ÷ rzuty × 100",
+      "shotTitle": "Co liczy się jako rzut",
+      "shotText": "Każde rzeczywiste wykończenie: bramka, obroniona piłka, słupek lub poprzeczka i wyraźnie niecelny rzut. Błąd techniczny bez rzutu się nie liczy – inaczej niesłusznie obniżałby wskaźnik.",
+      "saveTitle": "Skuteczność obron obok",
+      "saveText": "Dla bramkarza: skuteczność obron (%) = obrony ÷ (obrony + bramki stracone) × 100. Powyżej 33 procent to na poziomie amatorskim mocny wynik, powyżej 40 procent – wybitny."
+    },
+    "example": {
+      "kicker": "Raz do końca",
+      "title": "Przykład obliczenia",
+      "description": "Rozgrywająca oddaje 12 rzutów i trafia siedem razy.",
+      "expression": "7 ÷ 12 × 100 = 58,3 %",
+      "teamText": "Dla całej drużyny liczysz tak samo, tylko z sumami wszystkich zawodników. 28 bramek z 45 rzutów daje drużynową skuteczność 62,2 procent.",
+      "colPosition": "Pozycja",
+      "colGoals": "Bramki",
+      "colShots": "Rzuty",
+      "colQuota": "Skuteczność",
+      "teamRow": "Drużyna",
+      "rows": [
+        {
+          "player": "Obrotowy",
+          "goals": "5",
+          "shots": "6",
+          "quota": "83,3 %"
+        },
+        {
+          "player": "Skrzydło",
+          "goals": "6",
+          "shots": "9",
+          "quota": "66,7 %"
+        },
+        {
+          "player": "Druga linia",
+          "goals": "7",
+          "shots": "12",
+          "quota": "58,3 %"
+        }
+      ],
+      "teamGoals": "28",
+      "teamShots": "45",
+      "teamQuota": "62,2 %"
+    },
+    "benchmarks": {
+      "kicker": "Ocenić, a nie zgadywać",
+      "title": "Wartości odniesienia według pozycji",
+      "description": "Dobra skuteczność zależy od tego, z jakiej sytuacji pada rzut. Te przedziały obowiązują od poziomu amatorskiego po ambitne ligi.",
+      "colPosition": "Pozycja / sytuacja",
+      "colRange": "Typowa skuteczność",
+      "colWhy": "Dlaczego",
+      "closing": "Liczby są świadomie przedziałami. Wiek, klasa rozgrywkowa i rywal przesuwają je wyraźnie – traktuj je jako orientację, a nie sztywną normę."
+    },
+    "limits": {
+      "kicker": "Umieć czytać liczby",
+      "title": "Czego skuteczność rzutów nie pokazuje",
+      "description": "Wysoki wskaźnik nie jest automatycznie dobry, a niski automatycznie zły. Trzeba mieć na uwadze cztery rzeczy.",
+      "items": [
+        {
+          "title": "Liczba rzutów",
+          "text": "Sto procent z jednego rzutu jest warte mniej niż 55 procent z dwudziestu. Kto bierze odpowiedzialność, ma często mniej wdzięczny wskaźnik."
+        },
+        {
+          "title": "Jakość sytuacji",
+          "text": "Kto kończy tylko wolne kontrataki, ma łatwiej niż rozgrywający przeciwko zwartemu blokowi. Bez pozycji rzutu wskaźnik to tylko połowa prawdy."
+        },
+        {
+          "title": "Kontekst meczu",
+          "text": "W końcówce, w osłabieniu albo przeciwko liderowi wskaźniki spadają. To normalne i nie świadczy o spadku formy."
+        },
+        {
+          "title": "Rozwój",
+          "text": "Wartość z jednego meczu to migawka. Dopiero przebieg przez kilka meczów pokazuje, czy coś się zmienia – w górę albo w dół."
+        }
+      ],
+      "closing": "Jakie wskaźniki istnieją obok skuteczności rzutów i jak się łączą, opisuje przegląd <stats>statystyki piłki ręcznej: rejestrować, liczyć, rozumieć</stats>. Obszerną wersję o skuteczności rzutów znajdziesz w poradniku: <rate>obliczanie skuteczności rzutów w piłce ręcznej – wzór, przykłady i wartości odniesienia</rate>. Jak sprawiedliwie ocenić bramkarza, opisuje <keeper>ocena pracy bramkarza na podstawie statystyk</keeper>. A jeśli nie chcesz już ręcznie zestawiać wskaźnika i mapy rzutów: Statix rejestruje jedno i drugie na żywo jednym dotknięciem – <free>bezpłatnie, z demo na żywo bez konta</free>."
+    },
+    "embed": {
+      "kicker": "Na waszą stronę",
+      "title": "Osadź kalkulator na stronie klubu",
+      "description": "Skopiuj kod, wstaw go na swoją stronę – gotowe. Bezpłatnie, bez rejestracji i bez skryptu śledzącego.",
+      "snippetLabel": "kod iframe",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano",
+      "closing": "Osadzony kalkulator robi dokładnie to samo co tutaj: liczy skuteczność, ocenia ją według pozycji i liczy wstecz docelowy wskaźnik. Pod kalkulatorem widnieje informacja „Kalkulator skuteczności rzutów od Statix” z linkiem do tej strony – to jedyny warunek. Jeśli wysokość nie pasuje do waszego układu, po prostu zmieńcie wartość height w kodzie."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o skuteczność rzutów",
+      "description": "Krótkie odpowiedzi na pytania, które pojawiają się przy liczeniu.",
+      "items": [
+        {
+          "question": "Jak liczy się skuteczność rzutów w piłce ręcznej?",
+          "answer": "Dzielisz bramki przez rzuty i mnożysz przez 100: skuteczność (%) = bramki ÷ rzuty × 100. Przykład: 7 bramek z 12 rzutów daje 58,3 procent."
+        },
+        {
+          "question": "Co liczy się jako rzut?",
+          "answer": "Każde rzeczywiste wykończenie: bramka, obroniona piłka, trafienie w słupek lub poprzeczkę i wyraźnie niecelny rzut. Błąd techniczny bez rzutu – na przykład kroki – nie jest rzutem i nie wchodzi do wskaźnika."
+        },
+        {
+          "question": "Jaka skuteczność rzutów jest dobra?",
+          "answer": "To zależy od pozycji. Na obrotowym za dobre uchodzi 65–75 procent, z drugiej linii 45–55, przy siedmiu metrach 75–85, a przy kontrataku 85–95. Drużynowa skuteczność powyżej 60 procent to na poziomie amatorskim solidny wynik."
+        },
+        {
+          "question": "Jak obliczyć skuteczność obron bramkarza?",
+          "answer": "Skuteczność obron = obrony ÷ (obrony + bramki stracone) × 100. 14 obron przy 30 rzutach celnych daje około 47 procent. Na poziomie amatorskim wartości powyżej 33 procent uchodzą za mocne, a powyżej 40 procent za wybitne."
+        },
+        {
+          "question": "Od ilu rzutów wskaźnik jest miarodajny?",
+          "answer": "Z grubsza: poniżej dziesięciu rzutów wskaźnik to przede wszystkim przypadek. Sto procent z jednego rzutu mówi mniej niż 55 procent z dwudziestu. Dlatego zawsze patrz obok na liczbę prób."
+        },
+        {
+          "question": "Czy mogę osadzić kalkulator na stronie naszego klubu?",
+          "answer": "Tak, chętnie. Skopiuj kod iframe z tej strony i wstaw go na swoją witrynę. Kalkulator będzie działał w waszym układzie, bezpłatnie i bez rejestracji."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Zamiast liczyć w pamięci",
+      "title": "Wskaźniki, które liczą się same",
+      "description": "W Statix skuteczność rzutów powstaje w trakcie dotykania ekranu – na zawodnika, na pozycję, a obok mapa rzutów. Zarejestruj się bezpłatnie i rejestruj sam albo zajrzyj najpierw do demo na żywo bez konta.",
+      "linkLabel": "Korzystaj ze Statix za darmo"
+    }
   }
 }

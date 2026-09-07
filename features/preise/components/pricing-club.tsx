@@ -3,7 +3,11 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { inlineLink } from '@/components/custom-ui/rich-text';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 
 /**
  * Answers the club-budget query head-on ("Was kostet Statix für einen

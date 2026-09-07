@@ -2,8 +2,15 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
-import { ARTICLE_AUTHOR, authorInitials } from '@/features/ratgeber/data/author';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import {
+  ARTICLE_AUTHOR,
+  authorInitials,
+} from '@/features/ratgeber/data/author';
 
 /**
  * The founder's answer to "wo ist der Haken?" — one short paragraph in first
@@ -19,11 +26,7 @@ export default function FreeWhy() {
     <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
-        <SectionHeading
-          align='left'
-          kicker={t('kicker')}
-          title={t('title')}
-        />
+        <SectionHeading align='left' kicker={t('kicker')} title={t('title')} />
 
         <BoardCard pin='magnet' className='mt-10 p-6 sm:p-8'>
           <div className='flex flex-col gap-6 sm:flex-row sm:items-start'>
@@ -46,7 +49,9 @@ export default function FreeWhy() {
               <p className='max-w-[64ch] text-[15px] leading-7 text-ink/80'>
                 {t('paragraph')}
               </p>
-              <p className='mt-4 font-hand text-2xl text-primary'>{ARTICLE_AUTHOR.name}</p>
+              <p className='mt-4 font-hand text-2xl text-primary'>
+                {ARTICLE_AUTHOR.name}
+              </p>
               <p className='text-sm text-ink/60'>{role}</p>
             </div>
           </div>

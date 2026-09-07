@@ -39,11 +39,17 @@ export default function TemplateLimits() {
 
         <div className='mt-12 grid gap-5 md:grid-cols-2'>
           {limits.map((limit) => (
-            <BoardCard key={limit.title} tone='court' pin='none' className='p-6'>
+            <BoardCard
+              key={limit.title}
+              tone='court'
+              pin='none'
+              className='p-6'>
               <h3 className='font-display text-lg font-bold tracking-tight text-chalk'>
                 {limit.title}
               </h3>
-              <p className='mt-2 text-[15px] leading-7 text-chalk/75'>{limit.text}</p>
+              <p className='mt-2 text-[15px] leading-7 text-chalk/75'>
+                {limit.text}
+              </p>
             </BoardCard>
           ))}
         </div>

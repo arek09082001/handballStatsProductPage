@@ -48,15 +48,15 @@ export default function VereineTraining() {
         />
 
         <div className='mt-12 grid gap-x-12 gap-y-8 md:grid-cols-2'>
-          {(['paragraph1', 'paragraph2', 'paragraph3', 'paragraph4'] as const).map(
-            (key) => (
-              <p
-                key={key}
-                className='max-w-[54ch] text-[15px] leading-7 text-ink/75'>
-                {t.rich(key, { lead })}
-              </p>
-            ),
-          )}
+          {(
+            ['paragraph1', 'paragraph2', 'paragraph3', 'paragraph4'] as const
+          ).map((key) => (
+            <p
+              key={key}
+              className='max-w-[54ch] text-[15px] leading-7 text-ink/75'>
+              {t.rich(key, { lead })}
+            </p>
+          ))}
         </div>
 
         <p className='mt-12 max-w-[60ch] text-base leading-7 text-ink/70'>

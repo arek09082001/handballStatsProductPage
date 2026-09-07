@@ -3111,5 +3111,521 @@
       "description": "Inscrivez-vous gratuitement et saisissez votre premier match sans rien ressaisir le soir. Ou regardez d’abord dans la démo en direct ce que cela donne sans cellules – sans aucun compte.",
       "linkLabel": "Ce que coûte Statix"
     }
+  },
+  "statsPage": {
+    "hero": {
+      "kicker": "Les indicateurs au handball",
+      "titleHighlight": "Statistiques de handball",
+      "titleTail": "saisir, calculer, comprendre",
+      "lede": "Les statistiques de handball, ce sont les actions comptées d’un match – tirs, buts, arrêts, pertes de balle, exclusions – et les pourcentages qui en découlent. Cette page montre quels indicateurs existent, comment les calculer, quelles valeurs sont réalistes chez les amateurs et comment les saisir sans rien ressaisir le soir.",
+      "ctaPrimary": "Saisir des statistiques gratuitement",
+      "trust": [
+        "Formules et repères",
+        "Saisir en direct plutôt que ressaisir",
+        "Démarrer gratuitement"
+      ]
+    },
+    "catalog": {
+      "kicker": "La vue d’ensemble",
+      "title": "Quelles statistiques de handball existent",
+      "description": "Cinq groupes, et chacun répond à une question différente. Qui saisit tout d’un coup arrête après quatre journées – choisissez un groupe et construisez à partir de là.",
+      "groups": [
+        {
+          "name": "Attaque",
+          "intro": "Les chiffres qui disent ce que deviennent vos possessions – et pourquoi une attaque se termine sans tir.",
+          "stats": [
+            {
+              "term": "Buts",
+              "definition": "Tirs réussis par joueur et par équipe, la base de tout calcul ultérieur."
+            },
+            {
+              "term": "Tirs",
+              "definition": "Toute vraie tentative au but – but, arrêt, tir manqué et poteau comptent, une perte de balle non."
+            },
+            {
+              "term": "Pourcentage de tir",
+              "definition": "Part des tirs qui finissent au fond. Le premier chiffre que regardent les entraîneurs, et le plus souvent mal lu."
+            },
+            {
+              "term": "Attaques (possessions)",
+              "definition": "Tentatives plus pertes de balle plus sept mètres – la référence sans laquelle aucun pourcentage n’est comparable."
+            },
+            {
+              "term": "Efficacité offensive",
+              "definition": "Buts par attaque. Contrairement au pourcentage de tir, elle sanctionne aussi les ballons perdus."
+            },
+            {
+              "term": "Pertes de balle et taux d’erreur",
+              "definition": "Marchers, reprises de dribble et passes ratées par attaque – le chiffre qui montre combien d’attaques vous offrez."
+            },
+            {
+              "term": "Taux à sept mètres",
+              "definition": "Réussis par sept mètres tiré, tenu séparément du pourcentage de tir."
+            },
+            {
+              "term": "Positions de tir et carte de tirs",
+              "definition": "D’où l’on a tiré et ce que cela a donné – sous forme de carte plutôt que de liste, carte de chaleur comprise."
+            }
+          ]
+        },
+        {
+          "name": "Défense et gardien",
+          "intro": "Ce qui se passe devant son propre but – suffisamment détaillé pour ne pas confondre défense et gardien.",
+          "stats": [
+            {
+              "term": "Arrêts",
+              "definition": "Ballons arrêtés, la base de toute analyse du gardien."
+            },
+            {
+              "term": "Pourcentage d’arrêts",
+              "definition": "Arrêts rapportés à tous les tirs cadrés. Les tirs à côté ne comptent pas."
+            },
+            {
+              "term": "Pourcentage d’arrêts par zone",
+              "definition": "Le même pourcentage par zone – seul lui sépare la performance du gardien de celle de la défense."
+            },
+            {
+              "term": "Buts encaissés",
+              "definition": "Buts encaissés au total, par période du match et par situation de jeu."
+            },
+            {
+              "term": "Contres et ballons récupérés",
+              "definition": "Tirs contrés et ballons récupérés – les actions défensives qu’aucune feuille de match ne relève."
+            },
+            {
+              "term": "Différence de buts",
+              "definition": "Buts moins buts encaissés, sur le match et sur la saison – la courbe de progression la plus simple."
+            }
+          ]
+        },
+        {
+          "name": "Rythme de jeu",
+          "intro": "Les indicateurs qui expliquent pourquoi deux matchs au score identique étaient totalement différents.",
+          "stats": [
+            {
+              "term": "Contre-attaques",
+              "definition": "Tirs issus de la première et de la deuxième vague, comptés séparément de l’attaque placée."
+            },
+            {
+              "term": "Part des buts en contre-attaque",
+              "definition": "Quelle part de votre rendement vient du jeu rapide – et ce que porte réellement l’attaque placée."
+            },
+            {
+              "term": "Attaques par match",
+              "definition": "Le rythme de la rencontre. Plus de 60 attaques signifie un match ouvert, moins de 48 un match verrouillé."
+            },
+            {
+              "term": "Évolution par période",
+              "definition": "Buts et buts encaissés par fenêtres de cinq ou dix minutes, pour rendre les passages à vide visibles."
+            }
+          ]
+        },
+        {
+          "name": "Discipline et situations particulières",
+          "intro": "Les chiffres qui figurent sur la feuille de match mais sont rarement exploités.",
+          "stats": [
+            {
+              "term": "Exclusions",
+              "definition": "Exclusions de deux minutes par joueur et par équipe, avec le moment du match."
+            },
+            {
+              "term": "Avertissements et disqualifications",
+              "definition": "Cartons jaunes, rouges et bleus – les paliers qui obligent à faire tourner."
+            },
+            {
+              "term": "Bilan en supériorité et en infériorité",
+              "definition": "Buts et buts encaissés pendant une exclusion – souvent les quatre minutes décisives d’un match."
+            },
+            {
+              "term": "Sept mètres provoqués",
+              "definition": "Qui obtient vos jets de sept mètres et qui les concède."
+            }
+          ]
+        },
+        {
+          "name": "Saison et progression",
+          "intro": "Tout ce qui ne prend sens que sur plusieurs matchs.",
+          "stats": [
+            {
+              "term": "Évolution du pourcentage par joueur",
+              "definition": "Le même indicateur sur huit, douze, vingt matchs – la seule comparaison juste est celle avec sa propre valeur précédente."
+            },
+            {
+              "term": "Temps de jeu et apparitions",
+              "definition": "Qui a joué combien, pour que les chiffres bruts ne reflètent pas seulement le temps de jeu."
+            },
+            {
+              "term": "Répartition des buteurs",
+              "definition": "Sur combien d’épaules vos buts se répartissent – un signal précoce de prévisibilité."
+            },
+            {
+              "term": "Bilan face aux adversaires",
+              "definition": "Face-à-face avec chaque adversaire : victoires, nuls, défaites et buts."
+            },
+            {
+              "term": "Participation aux entraînements",
+              "definition": "Réponses positives et négatives par joueur – le chiffre qui dépassionne la discussion sur le temps de jeu."
+            }
+          ]
+        }
+      ]
+    },
+    "formulas": {
+      "kicker": "Refaire le calcul",
+      "title": "Les formules – et ce qu’est une valeur normale",
+      "description": "Tous les calculs nécessaires à une analyse solide. Les repères sont des valeurs d’expérience du secteur amateur, pas des objectifs.",
+      "caption": "Formules et repères des principaux indicateurs de handball",
+      "colMetric": "Indicateur",
+      "colFormula": "Formule",
+      "colBenchmark": "Repère chez les amateurs",
+      "rows": [
+        {
+          "metric": "Pourcentage de tir",
+          "formula": "buts ÷ tirs × 100",
+          "benchmark": "équipe au-dessus de 60 %, pivot 65–75 %, arrière 45–55 %"
+        },
+        {
+          "metric": "Attaques (possessions)",
+          "formula": "tentatives + pertes de balle + sept mètres",
+          "benchmark": "46–60 par équipe et par match"
+        },
+        {
+          "metric": "Efficacité offensive",
+          "formula": "buts ÷ attaques × 100",
+          "benchmark": "48–58 %"
+        },
+        {
+          "metric": "Taux d’erreur",
+          "formula": "pertes de balle ÷ attaques × 100",
+          "benchmark": "12–18 %"
+        },
+        {
+          "metric": "Pourcentage d’arrêts",
+          "formula": "arrêts ÷ (arrêts + buts encaissés) × 100",
+          "benchmark": "30–40 % toutes zones confondues"
+        },
+        {
+          "metric": "Taux à sept mètres",
+          "formula": "réussis ÷ sept mètres tirés × 100",
+          "benchmark": "75–85 %"
+        },
+        {
+          "metric": "Part de contre-attaque",
+          "formula": "buts en contre-attaque ÷ buts × 100",
+          "benchmark": "15–25 %"
+        },
+        {
+          "metric": "Différence de buts",
+          "formula": "buts − buts encaissés",
+          "benchmark": "à lire comme une évolution sur la saison"
+        }
+      ],
+      "closing": "Les fourchettes bougent avec le niveau et la catégorie d’âge, c’est pourquoi votre propre valeur précédente est toujours une meilleure référence qu’un tableau. Si vous voulez seulement calculer vite un pourcentage, prenez le <calculator>calculateur de pourcentage de tir</calculator> – saisissez buts et tirs, lisez le pourcentage, sans inscription."
+    },
+    "ways": {
+      "kicker": "Trois voies",
+      "title": "Avec quoi les entraîneurs tiennent leurs statistiques",
+      "description": "Papier, tableur ou application – les trois fonctionnent. Ils diffèrent par ce qu’il en reste le lundi.",
+      "items": [
+        {
+          "name": "Papier et bâtons",
+          "effort": "Aucune préparation",
+          "good": "Ne tombe jamais en panne, ne demande pas de batterie, tout le staff sait s’en servir tout de suite.",
+          "bad": "Qui coache ne note pas. La pile est rarement exploitée – et il n’en sort jamais une carte de tirs.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Modèle Excel",
+          "effort": "Installer une fois",
+          "good": "Calcule les pourcentages tout seul, vous appartient, s’étend à volonté.",
+          "bad": "Inutilisable dans la salle, vous ressaisissez donc le soir. Pas de courbe par joueur, et l’adjoint a la mauvaise version.",
+          "linkLabel": "Télécharger le modèle Excel gratuit"
+        },
+        {
+          "name": "Application de statistiques",
+          "effort": "Un geste par action",
+          "good": "Saisie et analyse ne font qu’un : au coup de sifflet final, pourcentages, carte de tirs et valeurs de joueurs sont prêts – y compris hors ligne dans la salle.",
+          "bad": "Il vous faut un téléphone ou une tablette et un compte. Les dix premières minutes de jeu semblent inhabituelles.",
+          "linkLabel": "Ce que comprend l’accès gratuit"
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "En cinq étapes",
+      "title": "Comment tenir une statistique de handball qui change quelque chose",
+      "description": "L’objectif n’est pas d’avoir plus de chiffres, mais une décision par match que vous n’auriez pas prise sans eux.",
+      "steps": [
+        {
+          "title": "Décidez ce que vous exploitez vraiment",
+          "text": "Commencez par trois valeurs : buts, tirs et pertes de balle par joueur. Le pourcentage de tir, les attaques et l’efficacité offensive en découlent d’eux-mêmes. Tout le reste vient quand ces trois-là tiennent – pas avant."
+        },
+        {
+          "title": "Écrivez vos règles de comptage",
+          "text": "Le poteau compte comme un tir, la perte de balle non, les sept mètres sont tenus à part, et vous traitez les ballons contrés de la même façon toute la saison. Sans règle écrite, l’adjoint saisira à la troisième journée autre chose que vous."
+        },
+        {
+          "title": "Saisissez pendant le match, pas après",
+          "text": "De mémoire, ce sont surtout les tirs manqués et les pertes de balle qui disparaissent – précisément les actions qui rendent vos pourcentages honnêtes. Saisir en direct, c’est disposer d’un jeu de données complet au coup de sifflet final."
+        },
+        {
+          "title": "Calculez les pourcentages et situez-les",
+          "text": "Comparez d’abord avec votre propre valeur précédente, ensuite seulement avec un tableau de repères. En dessous de cinq tentatives dans un match et de trente sur la saison, on ne commente pas un pourcentage."
+        },
+        {
+          "title": "Tirez exactement une décision",
+          "text": "Un indicateur, un axe d’entraînement, une conversation. Trois matchs dans le même sens font un sujet, un écart isolé non. Ensuite, vous repartez à l’étape trois."
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Un niveau plus bas",
+      "title": "Chaque indicateur en détail",
+      "description": "Formule, règles de comptage, repères et contresens – pour chaque chiffre de cette page, un article le déroule jusqu’au bout.",
+      "allLink": "Tous les articles du guide handball"
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Questions fréquentes sur les statistiques de handball",
+      "description": "Ce que les entraîneurs veulent savoir avant de noter leur premier match.",
+      "items": [
+        {
+          "question": "Quelles statistiques existent au handball ?",
+          "answer": "En attaque : buts, tirs, pourcentage de tir, attaques, efficacité offensive, pertes de balle, sept mètres et positions de tir. En défense : arrêts, pourcentage d’arrêts, buts encaissés, contres et ballons récupérés. S’y ajoutent les contre-attaques et leur part, les exclusions avec le bilan en supériorité et en infériorité, et sur la saison les évolutions de pourcentages, les temps de jeu et le bilan face aux adversaires."
+        },
+        {
+          "question": "Quels indicateurs un entraîneur doit-il saisir au minimum ?",
+          "answer": "Buts, tirs et pertes de balle par joueur. De ces trois valeurs découlent le pourcentage de tir, les attaques et l’efficacité offensive – de quoi décider déjà si votre problème est la finition ou la conservation du ballon. Les arrêts par gardien sont l’étape suivante la plus sensée."
+        },
+        {
+          "question": "Comment calcule-t-on le pourcentage de tir au handball ?",
+          "answer": "Buts divisés par tirs, fois 100. Sept buts sur douze tirs donnent 58,3 %. Compte comme tir toute vraie tentative au but, poteau et barre compris ; une perte de balle sans tentative non. Les sept mètres se tiennent à part, sinon une tireuse fiable embellit le pourcentage de toute l’équipe."
+        },
+        {
+          "question": "Qu’est-ce qu’un bon pourcentage de tir au handball ?",
+          "answer": "Cela dépend du poste : au pivot 65–75 %, de l’arrière à neuf mètres 45–55 %, aux sept mètres 75–85 % et en contre-attaque 85–95 %. Un pourcentage d’équipe supérieur à 60 % est une valeur solide chez les amateurs. Ce sont des repères issus de la pratique, pas une statistique mesurée."
+        },
+        {
+          "question": "Comment saisir des statistiques pendant le match ?",
+          "answer": "Soit avec des bâtons sur une feuille préparée, une ligne par joueur, soit avec une application, un geste par action. L’essentiel est que la saisie se fasse en direct : de mémoire, ce sont surtout les tirs manqués et les pertes de balle qui manquent, et les pourcentages ressortent systématiquement trop bons."
+        },
+        {
+          "question": "Puis-je saisir des statistiques de handball gratuitement ?",
+          "answer": "Oui. Le niveau Base de Statix reste gratuit pour toujours, saisie en direct, pourcentages de tir et analyse compris ; à partir du 1er janvier 2027 s’y ajoutent des niveaux payants pour les fonctions les plus lourdes. Qui préfère démarrer sur papier prend le modèle Excel gratuit. Les deux sans carte bancaire ; la démo en direct tourne même sans compte."
+        },
+        {
+          "question": "Ai-je besoin d’une deuxième personne au bord du terrain ?",
+          "answer": "Pour les buts, les tirs et les pertes de balle, une seule personne qui coache en même temps suffit. Dès que s’ajoutent les zones de tir, les contres et les ballons récupérés, c’est nettement plus propre à deux – d’ordinaire, un adjoint ou un joueur blessé s’en charge."
+        },
+        {
+          "question": "À partir de quand les chiffres sont-ils significatifs ?",
+          "answer": "Les pourcentages isolés d’un match sont du bruit. En règle générale : au moins cinq tentatives pour un pourcentage de match, une trentaine sur la saison, et pour le gardien environ huit matchs saisis avant que sa propre moyenne serve de référence."
+        },
+        {
+          "question": "Trouve-t-on ici les statistiques de la Bundesliga de handball ?",
+          "answer": "Non. Cette page explique les statistiques de handball et Statix saisit les données de votre propre équipe. Les classements et valeurs de la Bundesliga ou des ligues régionales se trouvent auprès des ligues et fédérations elles-mêmes."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Plutôt que des bâtons",
+      "title": "Vos chiffres naissent pendant le match, pas après",
+      "description": "Saisissez chaque action d’un geste – pourcentages de tir, carte de tirs et valeurs de joueurs sont prêts au coup de sifflet final. Inscription gratuite, ou regardez d’abord la démo en direct avec de vraies données de match.",
+      "linkLabel": "Ce que comprend l’accès gratuit"
+    }
+  },
+  "calculatorPage": {
+    "hero": {
+      "kicker": "Calculateur gratuit",
+      "titleLead": "Calculer le",
+      "titleHighlight": "pourcentage de tir",
+      "lede": "Buts divisés par tirs, fois 100 – voilà toute la formule. Le calculateur vous épargne le calcul mental et vous dit en plus comment situer la valeur pour le poste concerné. Sans inscription, et utilisable sur le site de votre club."
+    },
+    "positions": [
+      {
+        "id": "tempo",
+        "label": "Contre-attaque",
+        "hint": "Ballons libres sur un but vide ou à moitié couvert – c’est ici que l’attente est la plus forte."
+      },
+      {
+        "id": "siebenmeter",
+        "label": "Sept mètres",
+        "hint": "Une discipline à part. À tenir séparément, sinon elle fausse le pourcentage du jeu."
+      },
+      {
+        "id": "kreis",
+        "label": "Pivot",
+        "hint": "La plus courte distance, mais souvent en chute et au contact."
+      },
+      {
+        "id": "aussen",
+        "label": "Aile",
+        "hint": "Un angle fermé, mais en général sans contre devant soi."
+      },
+      {
+        "id": "rueckraum",
+        "label": "Arrière (9 mètres)",
+        "hint": "La plus grande distance, un bloc fermé, un gardien bien placé."
+      },
+      {
+        "id": "team",
+        "label": "Équipe entière",
+        "hint": "Au-dessus de 60 pour cent, c’est une valeur solide chez les amateurs."
+      }
+    ],
+    "calculator": {
+      "goalsLabel": "Buts",
+      "shotsLabel": "Tirs (toutes les tentatives au but)",
+      "positionLabel": "Situer comme",
+      "rangeOver": "plus de {min} %",
+      "rangeBetween": "{min}–{max} %",
+      "resultKicker": "Pourcentage de tir",
+      "resultSummary": "{goals} tirs sur {shots} au fond",
+      "empty": "Saisissez buts et tirs – le pourcentage s’affiche aussitôt.",
+      "errorNegative": "Les valeurs négatives n’existent pas au handball.",
+      "errorNoShots": "Sans tirs, pas de pourcentage – saisissez d’abord les tentatives au but.",
+      "errorMoreGoals": "Plus de buts que de tirs ? Chaque but est aussi un tir – vérifiez les deux chiffres.",
+      "thinWarning": "Attention : en dessous de dix tirs, le pourcentage relève surtout du hasard. Cumulez plusieurs matchs avant d’en faire une consigne d’entraînement.",
+      "belowHeadline": "en dessous du repère",
+      "belowText": "Pour {label}, la fourchette habituelle est de {range}. Un coup d’œil à la carte de tirs s’impose : les manqués viennent-ils d’une zone ou d’un coin ?",
+      "aboveHeadline": "au-dessus du repère",
+      "aboveText": "Solide : {range} passe déjà pour bon à {label}. Vérifiez tout de même le nombre de tirs – peu de tentatives font vite grimper un pourcentage.",
+      "insideHeadline": "dans la fourchette attendue",
+      "insideText": "{range} est le couloir habituel pour {label}. {hint}",
+      "reverseTitle": "Calcul inversé",
+      "targetLabel": "Pourcentage visé (%)",
+      "targetInvalid": "Saisissez des valeurs valides ci-dessus et je calcule les buts nécessaires.",
+      "targetLead": "Pour {goal} % sur {shots} tirs, il vous faut",
+      "targetGoals": "{needed} buts",
+      "targetMissing": "Il vous en manque {missing}.",
+      "targetStreak": "Sans toucher aux tirs déjà effectués : les {streak} prochaines tentatives devraient toutes rentrer.",
+      "targetReached": "C’est déjà atteint.",
+      "embedTitle": "Calculer le pourcentage de tir",
+      "embedAttributionLink": "Calculateur de pourcentage de tir de Statix",
+      "embedAttributionSuffix": "– l’application de statistiques de handball pour entraîneurs"
+    },
+    "formula": {
+      "kicker": "Calcul mental",
+      "title": "La formule",
+      "description": "Une ligne que tout entraîneur devrait avoir en tête.",
+      "expression": "pourcentage de tir (%) = buts ÷ tirs × 100",
+      "shotTitle": "Ce qui compte comme tir",
+      "shotText": "Toute vraie tentative au but : but, ballon arrêté, poteau ou barre et tir clairement manqué. Une perte de balle sans tentative ne compte pas – elle ferait autrement baisser le pourcentage à tort.",
+      "saveTitle": "Le pourcentage d’arrêts à côté",
+      "saveText": "Pour le gardien : pourcentage d’arrêts (%) = arrêts ÷ (arrêts + buts encaissés) × 100. Au-dessus de 33 pour cent, c’est fort chez les amateurs ; au-dessus de 40 pour cent, remarquable."
+    },
+    "example": {
+      "kicker": "Une fois de bout en bout",
+      "title": "Exemple de calcul",
+      "description": "Une arrière prend 12 tirs au but et marque sept fois.",
+      "expression": "7 ÷ 12 × 100 = 58,3 %",
+      "teamText": "Pour toute l’équipe, le calcul est le même, avec les totaux de tous les joueurs. 28 buts sur 45 tirs donnent un pourcentage d’équipe de 62,2 pour cent.",
+      "colPosition": "Poste",
+      "colGoals": "Buts",
+      "colShots": "Tirs",
+      "colQuota": "Pourcentage de tir",
+      "teamRow": "Équipe",
+      "rows": [
+        {
+          "player": "Pivot",
+          "goals": "5",
+          "shots": "6",
+          "quota": "83,3 %"
+        },
+        {
+          "player": "Aile",
+          "goals": "6",
+          "shots": "9",
+          "quota": "66,7 %"
+        },
+        {
+          "player": "Arrière",
+          "goals": "7",
+          "shots": "12",
+          "quota": "58,3 %"
+        }
+      ],
+      "teamGoals": "28",
+      "teamShots": "45",
+      "teamQuota": "62,2 %"
+    },
+    "benchmarks": {
+      "kicker": "Situer plutôt que deviner",
+      "title": "Repères par poste",
+      "description": "Un bon pourcentage de tir dépend de la situation depuis laquelle on tire. Ces fourchettes valent du niveau amateur au niveau régional ambitieux.",
+      "colPosition": "Poste / situation",
+      "colRange": "Pourcentage de tir habituel",
+      "colWhy": "Pourquoi",
+      "closing": "Ce sont volontairement des fourchettes. L’âge, le niveau et l’adversaire les déplacent nettement – servez-vous-en comme repère, pas comme objectif rigide."
+    },
+    "limits": {
+      "kicker": "Savoir lire les chiffres",
+      "title": "Ce que le pourcentage de tir ne montre pas",
+      "description": "Un pourcentage élevé n’est pas automatiquement bon, un pourcentage faible pas automatiquement mauvais. Quatre choses à garder en tête.",
+      "items": [
+        {
+          "title": "Le nombre de tirs",
+          "text": "100 pour cent sur un tir valent moins que 55 pour cent sur vingt. Qui prend ses responsabilités a souvent le pourcentage le plus ingrat."
+        },
+        {
+          "title": "La qualité des occasions",
+          "text": "Qui ne conclut que des contres libres a la tâche plus facile qu’un arrière face à un bloc fermé. Sans la position de tir, le pourcentage n’est qu’une demi-vérité."
+        },
+        {
+          "title": "Le contexte du match",
+          "text": "En fin de match, en infériorité ou face au leader, les pourcentages baissent. C’est normal et ce n’est pas un signe de baisse de niveau."
+        },
+        {
+          "title": "L’évolution",
+          "text": "Une valeur issue d’un match est un instantané. Seule la courbe sur plusieurs matchs montre si quelque chose change – vers le haut comme vers le bas."
+        }
+      ],
+      "closing": "Quels indicateurs existent à côté du pourcentage de tir et comment ils s’articulent se trouve dans l’aperçu <stats>statistiques de handball : saisir, calculer, comprendre</stats>. La version détaillée sur le pourcentage de tir est dans le guide : <rate>calculer le pourcentage de tir au handball – formule, exemples et repères</rate>. Comment juger équitablement un gardien se trouve dans <keeper>évaluer la performance du gardien avec des statistiques</keeper>. Et si vous ne voulez plus rassembler à la main pourcentage et carte de tirs : Statix saisit les deux en direct d’un geste – <free>gratuitement, avec une démo en direct sans compte</free>."
+    },
+    "embed": {
+      "kicker": "Pour votre site",
+      "title": "Intégrer le calculateur au site du club",
+      "description": "Copiez le code, placez-le sur votre page – c’est tout. Gratuit, sans inscription, sans script de suivi.",
+      "snippetLabel": "code iframe",
+      "copy": "Copier",
+      "copied": "Copié",
+      "closing": "Le calculateur intégré fait exactement ce qu’il fait ici : calculer le pourcentage de tir, le situer par poste et calculer à rebours le pourcentage visé. Sous le calculateur figure la mention « Calculateur de pourcentage de tir de Statix » avec un lien vers cette page – c’est la seule condition. Si la hauteur ne convient pas à votre mise en page, modifiez simplement la valeur height dans le code."
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Questions fréquentes sur le pourcentage de tir",
+      "description": "Réponses courtes aux questions qui surgissent pendant le calcul.",
+      "items": [
+        {
+          "question": "Comment calcule-t-on le pourcentage de tir au handball ?",
+          "answer": "Vous divisez les buts par les tirs et multipliez par 100 : pourcentage de tir (%) = buts ÷ tirs × 100. Exemple : 7 buts sur 12 tirs donnent 58,3 pour cent."
+        },
+        {
+          "question": "Qu’est-ce qui compte comme tir ?",
+          "answer": "Toute vraie tentative au but : but, ballon arrêté, poteau ou barre et tir clairement manqué. Une perte de balle sans tentative – un marcher, par exemple – n’est pas un tir et n’entre pas dans le pourcentage."
+        },
+        {
+          "question": "Qu’est-ce qu’un bon pourcentage de tir ?",
+          "answer": "Cela dépend du poste. Au pivot, 65 à 75 pour cent passent pour bons, à l’arrière 45 à 55, aux sept mètres 75 à 85 et en contre-attaque 85 à 95. Un pourcentage d’équipe supérieur à 60 pour cent est solide chez les amateurs."
+        },
+        {
+          "question": "Comment calculer le pourcentage d’arrêts du gardien ?",
+          "answer": "Pourcentage d’arrêts = arrêts ÷ (arrêts + buts encaissés) × 100. 14 arrêts sur 30 tirs cadrés donnent environ 47 pour cent. Chez les amateurs, au-dessus de 33 pour cent c’est fort, au-dessus de 40 pour cent remarquable."
+        },
+        {
+          "question": "À partir de combien de tirs le pourcentage est-il significatif ?",
+          "answer": "En règle générale : en dessous de dix tirs, le pourcentage relève surtout du hasard. 100 pour cent sur un tir disent moins que 55 pour cent sur vingt. Regardez donc toujours le nombre de tentatives à côté."
+        },
+        {
+          "question": "Puis-je intégrer le calculateur sur le site de notre club ?",
+          "answer": "Oui, volontiers. Copiez le code iframe de cette page et placez-le sur votre site. Le calculateur tournera alors dans votre mise en page, gratuitement et sans inscription."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Plutôt que du calcul mental",
+      "title": "Des pourcentages qui se calculent tout seuls",
+      "description": "Dans Statix, le pourcentage de tir naît au moment de la saisie – par joueur, par poste, avec la carte de tirs à côté. Inscrivez-vous gratuitement et saisissez vous-même, ou jetez d’abord un œil à la démo en direct sans compte.",
+      "linkLabel": "Utiliser Statix gratuitement"
+    }
   }
 }

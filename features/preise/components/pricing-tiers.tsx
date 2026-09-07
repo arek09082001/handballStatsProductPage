@@ -82,7 +82,9 @@ function BillingSwitch({
               <span
                 className={cn(
                   'rounded-full px-2 py-0.5 text-[13px] font-semibold tabular-nums',
-                  active ? 'bg-white/20 text-white' : 'bg-success/20 text-success',
+                  active
+                    ? 'bg-white/20 text-white'
+                    : 'bg-success/20 text-success',
                 )}>
                 {option.badge}
               </span>

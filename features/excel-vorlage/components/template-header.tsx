@@ -32,7 +32,9 @@ export default function TemplateHeader() {
 
       <div className='relative mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 pb-16 pt-28 sm:px-10 lg:flex-row lg:items-start lg:gap-14 lg:pb-24 lg:pt-32'>
         <div className='w-full shrink-0 text-center lg:w-[52%] lg:text-left'>
-          <BoardKicker color='chalk' className='justify-center lg:justify-start'>
+          <BoardKicker
+            color='chalk'
+            className='justify-center lg:justify-start'>
             {t('kicker')}
           </BoardKicker>
 

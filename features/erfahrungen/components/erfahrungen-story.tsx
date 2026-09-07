@@ -2,9 +2,16 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { BoardCard, BoardKicker, Grain } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  BoardKicker,
+  Grain,
+} from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
-import { ARTICLE_AUTHOR, authorInitials } from '@/features/ratgeber/data/author';
+import {
+  ARTICLE_AUTHOR,
+  authorInitials,
+} from '@/features/ratgeber/data/author';
 
 /**
  * The founder story — the honest substitute for reviews a young product does

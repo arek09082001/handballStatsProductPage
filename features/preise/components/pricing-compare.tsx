@@ -3,7 +3,10 @@
 import { Check, Minus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-import { Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import type { CompareGroup, CompareValue } from '../data/pricing-content';
 import { usePricingLabels } from '../data/use-pricing-labels';
 
@@ -178,7 +181,9 @@ export default function PricingCompare() {
                 </colgroup>
                 <thead>
                   <tr className='border-b-2 border-ink/25'>
-                    <th scope='col' className='py-2.5 pr-3 text-left font-normal'>
+                    <th
+                      scope='col'
+                      className='py-2.5 pr-3 text-left font-normal'>
                       <span className='sr-only'>{t('rowHeaderSr')}</span>
                     </th>
                     {tierColumns.map((tier) => (

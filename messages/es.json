@@ -3111,5 +3111,521 @@
       "description": "Regístrate gratis y registra tu primer partido sin transcribir nada por la noche. O mira antes en la demo en directo cómo se siente sin celdas, sin cuenta alguna.",
       "linkLabel": "Cuánto cuesta Statix"
     }
+  },
+  "statsPage": {
+    "hero": {
+      "kicker": "Indicadores en balonmano",
+      "titleHighlight": "Estadísticas de balonmano",
+      "titleTail": "registrar, calcular, entender",
+      "lede": "Las estadísticas de balonmano son las acciones contadas de un partido —tiros, goles, paradas, errores técnicos, exclusiones— y los porcentajes que salen de ahí. Esta página muestra qué indicadores existen, cómo se calculan, qué valores son realistas en el balonmano amateur y cómo registrarlos sin tener que transcribir nada por la noche.",
+      "ctaPrimary": "Registrar estadísticas gratis",
+      "trust": [
+        "Fórmulas y valores de referencia",
+        "Registrar en directo, no transcribir",
+        "Empezar gratis"
+      ]
+    },
+    "catalog": {
+      "kicker": "El panorama",
+      "title": "Qué estadísticas de balonmano existen",
+      "description": "Cinco grupos, y cada uno responde a una pregunta distinta. Quien lo registra todo de golpe lo deja tras cuatro jornadas: elige un grupo y crece desde ahí.",
+      "groups": [
+        {
+          "name": "Ataque",
+          "intro": "Los números que responden qué pasa con vuestras posesiones y por qué un ataque acaba sin lanzamiento.",
+          "stats": [
+            {
+              "term": "Goles",
+              "definition": "Lanzamientos convertidos por jugador y equipo, la base de todo cálculo posterior."
+            },
+            {
+              "term": "Tiros",
+              "definition": "Todo lanzamiento real a portería: gol, parada, fallo y palo cuentan; un error técnico no."
+            },
+            {
+              "term": "Efectividad de tiro",
+              "definition": "Proporción de tiros que acaban en gol. El primer número que miran los entrenadores y el que más se malinterpreta."
+            },
+            {
+              "term": "Ataques (posesiones)",
+              "definition": "Lanzamientos más errores técnicos más siete metros: la referencia sin la cual ningún porcentaje es comparable."
+            },
+            {
+              "term": "Eficacia ofensiva",
+              "definition": "Goles por ataque. A diferencia de la efectividad de tiro, también penaliza los balones perdidos."
+            },
+            {
+              "term": "Errores técnicos y tasa de error",
+              "definition": "Pasos, dobles y pases fallados por ataque: el número que muestra cuántos ataques regaláis."
+            },
+            {
+              "term": "Porcentaje de siete metros",
+              "definition": "Convertidos por lanzamiento de siete metros ejecutado, llevado aparte de la efectividad general."
+            },
+            {
+              "term": "Posiciones de tiro y mapa de tiro",
+              "definition": "Desde dónde se lanzó y qué salió de ahí: en forma de mapa y no de lista, con mapa de calor incluido."
+            }
+          ]
+        },
+        {
+          "name": "Defensa y portería",
+          "intro": "Lo que pasa en la propia portería, desglosado lo suficiente para no confundir defensa con portería.",
+          "stats": [
+            {
+              "term": "Paradas",
+              "definition": "Balones detenidos, la base de todo análisis del portero."
+            },
+            {
+              "term": "Porcentaje de paradas",
+              "definition": "Paradas en relación con todos los tiros a portería. Los tiros fuera no cuentan."
+            },
+            {
+              "term": "Porcentaje de paradas por zona",
+              "definition": "El mismo porcentaje por zona: solo así se separa el rendimiento del portero del de la defensa."
+            },
+            {
+              "term": "Goles encajados",
+              "definition": "Goles encajados en total, por periodo del partido y por situación de juego."
+            },
+            {
+              "term": "Blocajes y recuperaciones",
+              "definition": "Tiros blocados y balones robados: las acciones defensivas que ningún acta refleja."
+            },
+            {
+              "term": "Diferencia de goles",
+              "definition": "Goles menos goles encajados, en el partido y en la temporada: la curva de progreso más sencilla."
+            }
+          ]
+        },
+        {
+          "name": "Ritmo de juego",
+          "intro": "Los indicadores que explican por qué dos partidos con el mismo resultado fueron completamente distintos.",
+          "stats": [
+            {
+              "term": "Contraataques",
+              "definition": "Lanzamientos de primera y segunda oleada, contados aparte del ataque posicional."
+            },
+            {
+              "term": "Proporción de goles al contraataque",
+              "definition": "Cuánto de vuestro balance viene del juego rápido y cuánto sostiene realmente el ataque posicional."
+            },
+            {
+              "term": "Ataques por partido",
+              "definition": "El ritmo del encuentro. Más de 60 ataques significa partido abierto; menos de 48, uno trabado."
+            },
+            {
+              "term": "Evolución por periodos",
+              "definition": "Goles y goles encajados en ventanas de cinco o diez minutos, para que los bajones se vean."
+            }
+          ]
+        },
+        {
+          "name": "Disciplina y situaciones especiales",
+          "intro": "Los números que están en el acta pero rara vez se analizan.",
+          "stats": [
+            {
+              "term": "Exclusiones",
+              "definition": "Exclusiones de dos minutos por jugador y equipo, con el momento del partido."
+            },
+            {
+              "term": "Amonestaciones y descalificaciones",
+              "definition": "Tarjetas amarillas, rojas y azules: los niveles de escalada que obligan a rotar."
+            },
+            {
+              "term": "Balance en superioridad e inferioridad",
+              "definition": "Goles y goles encajados durante una exclusión: a menudo los cuatro minutos decisivos de un partido."
+            },
+            {
+              "term": "Siete metros provocados",
+              "definition": "Quién consigue vuestros penaltis y quién los comete."
+            }
+          ]
+        },
+        {
+          "name": "Temporada y desarrollo",
+          "intro": "Todo lo que solo cobra sentido a lo largo de varios partidos.",
+          "stats": [
+            {
+              "term": "Evolución del porcentaje por jugador",
+              "definition": "El mismo indicador a lo largo de ocho, doce o veinte partidos: la única comparación justa es con el propio valor anterior."
+            },
+            {
+              "term": "Participación y presencias",
+              "definition": "Quién ha jugado cuánto, para que las cifras absolutas no reflejen solo minutos."
+            },
+            {
+              "term": "Reparto de goleadores",
+              "definition": "Entre cuántos hombros se reparten vuestros goles: un aviso temprano de previsibilidad."
+            },
+            {
+              "term": "Balance ante rivales",
+              "definition": "Cara a cara con cada rival: victorias, empates, derrotas y goles."
+            },
+            {
+              "term": "Asistencia a entrenamientos",
+              "definition": "Confirmaciones y bajas por jugador: el número que serena la discusión sobre minutos."
+            }
+          ]
+        }
+      ]
+    },
+    "formulas": {
+      "kicker": "Echar cuentas",
+      "title": "Las fórmulas y qué es un valor normal",
+      "description": "Todos los cálculos que necesitas para un análisis sólido. Los valores de referencia son experiencias del ámbito amateur, no objetivos.",
+      "caption": "Fórmulas y valores de referencia de los principales indicadores de balonmano",
+      "colMetric": "Indicador",
+      "colFormula": "Fórmula",
+      "colBenchmark": "Referencia en el ámbito amateur",
+      "rows": [
+        {
+          "metric": "Efectividad de tiro",
+          "formula": "goles ÷ tiros × 100",
+          "benchmark": "equipo por encima del 60 %, pivote 65–75 %, primera línea 45–55 %"
+        },
+        {
+          "metric": "Ataques (posesiones)",
+          "formula": "lanzamientos + errores técnicos + siete metros",
+          "benchmark": "46–60 por equipo y partido"
+        },
+        {
+          "metric": "Eficacia ofensiva",
+          "formula": "goles ÷ ataques × 100",
+          "benchmark": "48–58 %"
+        },
+        {
+          "metric": "Tasa de error",
+          "formula": "errores técnicos ÷ ataques × 100",
+          "benchmark": "12–18 %"
+        },
+        {
+          "metric": "Porcentaje de paradas",
+          "formula": "paradas ÷ (paradas + goles encajados) × 100",
+          "benchmark": "30–40 % en todas las zonas"
+        },
+        {
+          "metric": "Porcentaje de siete metros",
+          "formula": "convertidos ÷ siete metros ejecutados × 100",
+          "benchmark": "75–85 %"
+        },
+        {
+          "metric": "Proporción de contraataque",
+          "formula": "goles de contraataque ÷ goles × 100",
+          "benchmark": "15–25 %"
+        },
+        {
+          "metric": "Diferencia de goles",
+          "formula": "goles − goles encajados",
+          "benchmark": "leerla como evolución a lo largo de la temporada"
+        }
+      ],
+      "closing": "Los rangos se desplazan según la categoría y la edad, por eso el propio valor anterior siempre es mejor referencia que una tabla. Si solo quieres calcular rápido un porcentaje, usa la <calculator>calculadora de efectividad de tiro</calculator>: introduces goles y tiros, lees el porcentaje, sin registro."
+    },
+    "ways": {
+      "kicker": "Tres caminos",
+      "title": "Con qué llevan los entrenadores las estadísticas de balonmano",
+      "description": "Papel, hoja de cálculo o app: los tres funcionan. Se diferencian en lo que queda de ellos el lunes.",
+      "items": [
+        {
+          "name": "Papel y palotes",
+          "effort": "Cero preparación",
+          "good": "Nunca falla, no necesita batería y cualquiera del cuerpo técnico puede usarlo enseguida.",
+          "bad": "Quien entrena no toma notas. El montón rara vez se calcula, y de ahí no sale nunca un mapa de tiro.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Plantilla de Excel",
+          "effort": "Configurar una vez",
+          "good": "Calcula sola los porcentajes, es tuya y se puede ampliar a voluntad.",
+          "bad": "Inmanejable en el pabellón, así que la transcribes por la noche. Sin evolución por jugador, y el segundo entrenador tiene la versión equivocada.",
+          "linkLabel": "Descargar la plantilla de Excel gratuita"
+        },
+        {
+          "name": "App de estadísticas",
+          "effort": "Un toque por acción",
+          "good": "Registrar y analizar coinciden: al pitido final están listos los porcentajes, el mapa de tiro y los valores de jugador, también sin conexión en el pabellón.",
+          "bad": "Necesitas un móvil o una tableta y una cuenta. Los primeros diez minutos de juego resultan poco familiares.",
+          "linkLabel": "Qué incluye el acceso gratuito"
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "En cinco pasos",
+      "title": "Así llevas una estadística de balonmano que cambia algo",
+      "description": "El objetivo no son más números, sino una decisión por partido que no habrías tomado sin ellos.",
+      "steps": [
+        {
+          "title": "Decide qué analizas de verdad",
+          "text": "Empieza con tres valores: goles, tiros y errores técnicos por jugador. De ahí salen solos la efectividad, los ataques y la eficacia ofensiva. Todo lo demás llega cuando esos tres estén asentados, no antes."
+        },
+        {
+          "title": "Anota tus reglas de conteo",
+          "text": "El palo cuenta como tiro, el error técnico no, los siete metros van aparte y los balones blocados los tratas igual toda la temporada. Sin una regla escrita, en la tercera jornada el segundo entrenador registra algo distinto que tú."
+        },
+        {
+          "title": "Registra durante el partido, no después",
+          "text": "De memoria se pierden sobre todo los tiros fallados y los errores técnicos, justo las acciones que hacen honestos tus porcentajes. Quien registra en directo tiene un conjunto de datos completo al pitido final."
+        },
+        {
+          "title": "Calcula los porcentajes y sitúalos",
+          "text": "Compara primero con tu propio valor anterior y solo después con una tabla de referencia. Por debajo de cinco lanzamientos en un partido y treinta en la temporada, ni comentes un porcentaje."
+        },
+        {
+          "title": "Saca exactamente una decisión",
+          "text": "Un indicador, un foco de entrenamiento, una conversación. Tres partidos en la misma dirección son un tema; un dato aislado, no. Después vuelves al paso tres."
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Un nivel más abajo",
+      "title": "Cada indicador en detalle",
+      "description": "Fórmula, reglas de conteo, valores de referencia y las malas interpretaciones: para cada número de esta página hay un artículo que lo desarrolla hasta el final.",
+      "allLink": "Todos los artículos de la guía de balonmano"
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre estadísticas de balonmano",
+      "description": "Lo que los entrenadores quieren saber antes de anotar su primer partido.",
+      "items": [
+        {
+          "question": "¿Qué estadísticas existen en balonmano?",
+          "answer": "En ataque: goles, tiros, efectividad, ataques, eficacia ofensiva, errores técnicos, siete metros y posiciones de tiro. En defensa: paradas, porcentaje de paradas, goles encajados, blocajes y recuperaciones. Además, contraataques y su proporción, exclusiones con balance en superioridad e inferioridad y, a lo largo de la temporada, la evolución de porcentajes, la participación y el balance ante rivales."
+        },
+        {
+          "question": "¿Qué indicadores debería registrar como mínimo un entrenador?",
+          "answer": "Goles, tiros y errores técnicos por jugador. De esos tres valores salen la efectividad, los ataques y la eficacia ofensiva, y con eso ya se puede decidir si vuestro problema es la definición o la seguridad con el balón. Las paradas por portero son el siguiente paso razonable."
+        },
+        {
+          "question": "¿Cómo se calcula la efectividad de tiro en balonmano?",
+          "answer": "Goles divididos entre tiros, por 100. Siete goles de doce tiros dan un 58,3 %. Cuenta como tiro cualquier lanzamiento real a portería, incluidos palo y travesaño; un error técnico sin lanzamiento, no. Los siete metros se llevan aparte, porque si no una lanzadora fiable maquilla el porcentaje de todo el equipo."
+        },
+        {
+          "question": "¿Qué es una buena efectividad de tiro en balonmano?",
+          "answer": "Depende de la posición: en el pivote 65–75 %, desde primera línea a nueve metros 45–55 %, en los siete metros 75–85 % y al contraataque 85–95 %. Una efectividad de equipo por encima del 60 % es un valor sólido en el ámbito amateur. Son valores orientativos de la práctica, no una estadística medida."
+        },
+        {
+          "question": "¿Cómo registro estadísticas durante el partido?",
+          "answer": "O con palotes en una hoja preparada con una fila por jugador, o con una app a un toque por acción. Lo decisivo es que el registro sea en directo: de memoria se pierden sobre todo los tiros fallados y los errores técnicos, y así los porcentajes salen sistemáticamente demasiado buenos."
+        },
+        {
+          "question": "¿Puedo registrar estadísticas de balonmano gratis?",
+          "answer": "Sí. El nivel Básico de Statix sigue siendo gratuito para siempre, con registro en directo, efectividades y análisis; a partir del 1 de enero de 2027 se añaden niveles de pago para las funciones más exigentes. Quien prefiera empezar en papel usa la plantilla de Excel gratuita. Ambas cosas sin tarjeta de crédito; la demo en directo funciona incluso sin cuenta."
+        },
+        {
+          "question": "¿Necesito una segunda persona a pie de pista?",
+          "answer": "Para goles, tiros y errores técnicos basta con una persona que además entrene. En cuanto entran zonas de tiro, blocajes y recuperaciones, entre dos sale bastante más limpio; normalmente registra un segundo entrenador o un jugador lesionado."
+        },
+        {
+          "question": "¿A partir de cuándo son significativos los números?",
+          "answer": "Los porcentajes sueltos de un partido son ruido. Como regla general: al menos cinco lanzamientos para un porcentaje de partido, unos treinta a lo largo de la temporada y, para el portero, unos ocho partidos registrados antes de que su propia media sirva de referencia."
+        },
+        {
+          "question": "¿Hay aquí estadísticas de la Bundesliga de balonmano?",
+          "answer": "No. Esta página explica las estadísticas de balonmano y Statix registra los datos de tu propio equipo. Las tablas y los valores de la Bundesliga o de las ligas regionales los encontrarás en las propias ligas y federaciones."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "En lugar de palotes",
+      "title": "Tus números nacen en el partido, no después",
+      "description": "Registra cada acción con un toque: la efectividad, el mapa de tiro y los valores de jugador están listos al pitido final. El registro es gratuito, o mira antes la demo en directo con datos reales de partido.",
+      "linkLabel": "Qué incluye el acceso gratuito"
+    }
+  },
+  "calculatorPage": {
+    "hero": {
+      "kicker": "Calculadora gratuita",
+      "titleLead": "Calcular la",
+      "titleHighlight": "efectividad de tiro",
+      "lede": "Goles entre tiros, por 100: esa es toda la fórmula. La calculadora te ahorra el cálculo mental y además te dice cómo situar el valor según la posición. Sin registro y también para tu propia web del club."
+    },
+    "positions": [
+      {
+        "id": "tempo",
+        "label": "Contraataque",
+        "hint": "Balones libres a portería vacía o a medio cubrir: aquí la exigencia es máxima."
+      },
+      {
+        "id": "siebenmeter",
+        "label": "Siete metros",
+        "hint": "Disciplina aparte. Llévala separada o distorsionará la efectividad en juego."
+      },
+      {
+        "id": "kreis",
+        "label": "Pivote",
+        "hint": "La distancia más corta, pero a menudo en caída y con contacto."
+      },
+      {
+        "id": "aussen",
+        "label": "Extremo",
+        "hint": "Ángulo cerrado, pero normalmente sin blocaje delante."
+      },
+      {
+        "id": "rueckraum",
+        "label": "Primera línea (9 metros)",
+        "hint": "La mayor distancia, blocaje cerrado y portero bien colocado."
+      },
+      {
+        "id": "team",
+        "label": "Equipo completo",
+        "hint": "Por encima del 60 por ciento se considera un valor sólido en el ámbito amateur."
+      }
+    ],
+    "calculator": {
+      "goalsLabel": "Goles",
+      "shotsLabel": "Tiros (todos los lanzamientos a portería)",
+      "positionLabel": "Situar como",
+      "rangeOver": "más de {min} %",
+      "rangeBetween": "{min}–{max} %",
+      "resultKicker": "Efectividad de tiro",
+      "resultSummary": "{goals} de {shots} tiros dentro",
+      "empty": "Introduce goles y tiros: el porcentaje aparece al instante.",
+      "errorNegative": "En balonmano no hay valores negativos.",
+      "errorNoShots": "Sin tiros no hay porcentaje: introduce primero los lanzamientos.",
+      "errorMoreGoals": "¿Más goles que tiros? Cada gol es también un tiro: revisa las dos cifras.",
+      "thinWarning": "Atención: por debajo de diez tiros el porcentaje es sobre todo azar. Junta varios partidos antes de convertirlo en un objetivo de entrenamiento.",
+      "belowHeadline": "por debajo de la referencia",
+      "belowText": "Para {label} el rango habitual está en {range}. Merece la pena mirar el mapa de tiro: ¿los fallos vienen de una zona o de una esquina?",
+      "aboveHeadline": "por encima de la referencia",
+      "aboveText": "Muy bien: {range} ya se considera bueno para {label}. Aun así, comprueba el número de tiros: con pocos lanzamientos el porcentaje sube rápido.",
+      "insideHeadline": "dentro del rango esperado",
+      "insideText": "{range} es el corredor habitual para {label}. {hint}",
+      "reverseTitle": "Al revés",
+      "targetLabel": "Porcentaje objetivo (%)",
+      "targetInvalid": "Introduce arriba valores válidos y te calculo los goles necesarios.",
+      "targetLead": "Para un {goal} % con {shots} tiros necesitas",
+      "targetGoals": "{needed} goles",
+      "targetMissing": "Te faltan {missing}.",
+      "targetStreak": "Sin cambiar los tiros anteriores: los próximos {streak} lanzamientos tendrían que entrar todos.",
+      "targetReached": "Eso ya lo has conseguido.",
+      "embedTitle": "Calcular la efectividad de tiro",
+      "embedAttributionLink": "Calculadora de efectividad de tiro de Statix",
+      "embedAttributionSuffix": "– la app de estadísticas de balonmano para entrenadores"
+    },
+    "formula": {
+      "kicker": "Cálculo mental",
+      "title": "La fórmula",
+      "description": "Una línea que todo entrenador debería tener en la cabeza.",
+      "expression": "efectividad (%) = goles ÷ tiros × 100",
+      "shotTitle": "Qué cuenta como tiro",
+      "shotText": "Cualquier lanzamiento real a portería: gol, balón parado, palo o travesaño y fallo claro. Un error técnico sin lanzamiento no cuenta; si no, bajaría el porcentaje injustamente.",
+      "saveTitle": "El porcentaje de paradas al lado",
+      "saveText": "Para el portero: porcentaje de paradas (%) = paradas ÷ (paradas + goles encajados) × 100. Por encima del 33 por ciento es fuerte en el ámbito amateur; por encima del 40 por ciento, sobresaliente."
+    },
+    "example": {
+      "kicker": "Calculado paso a paso",
+      "title": "Ejemplo de cálculo",
+      "description": "Una jugadora de primera línea hace 12 lanzamientos y marca siete.",
+      "expression": "7 ÷ 12 × 100 = 58,3 %",
+      "teamText": "Para todo el equipo se calcula igual, solo que con las sumas de todos los jugadores. 28 goles de 45 tiros dan una efectividad de equipo del 62,2 por ciento.",
+      "colPosition": "Posición",
+      "colGoals": "Goles",
+      "colShots": "Tiros",
+      "colQuota": "Efectividad",
+      "teamRow": "Equipo",
+      "rows": [
+        {
+          "player": "Pivote",
+          "goals": "5",
+          "shots": "6",
+          "quota": "83,3 %"
+        },
+        {
+          "player": "Extremo",
+          "goals": "6",
+          "shots": "9",
+          "quota": "66,7 %"
+        },
+        {
+          "player": "Primera línea",
+          "goals": "7",
+          "shots": "12",
+          "quota": "58,3 %"
+        }
+      ],
+      "teamGoals": "28",
+      "teamShots": "45",
+      "teamQuota": "62,2 %"
+    },
+    "benchmarks": {
+      "kicker": "Situar en lugar de adivinar",
+      "title": "Valores de referencia por posición",
+      "description": "Una buena efectividad depende de la situación desde la que se lanza. Estos rangos valen desde el ámbito amateur hasta el de ligas ambiciosas.",
+      "colPosition": "Posición / situación",
+      "colRange": "Efectividad habitual",
+      "colWhy": "Por qué",
+      "closing": "Las cifras son rangos a propósito. La edad, la categoría y el rival los desplazan bastante: úsalos como orientación, no como objetivo rígido."
+    },
+    "limits": {
+      "kicker": "Saber leer los números",
+      "title": "Lo que la efectividad no muestra",
+      "description": "Un porcentaje alto no es automáticamente bueno ni uno bajo automáticamente malo. Hay cuatro cosas que debes tener en cuenta.",
+      "items": [
+        {
+          "title": "El número de tiros",
+          "text": "El 100 por cien de un solo tiro vale menos que el 55 por ciento de veinte. Quien asume la responsabilidad suele tener el porcentaje más ingrato."
+        },
+        {
+          "title": "La calidad de las ocasiones",
+          "text": "Quien solo finaliza contraataques libres lo tiene más fácil que un jugador de primera línea contra un blocaje cerrado. Sin la posición de tiro, el porcentaje es solo media verdad."
+        },
+        {
+          "title": "El contexto del partido",
+          "text": "En los minutos finales, en inferioridad o contra el líder, los porcentajes bajan. Es normal y no indica una caída de rendimiento."
+        },
+        {
+          "title": "La evolución",
+          "text": "Un valor de un partido es una instantánea. Solo la trayectoria a lo largo de varios partidos muestra si algo cambia, hacia arriba o hacia abajo."
+        }
+      ],
+      "closing": "Qué indicadores existen además de la efectividad y cómo se relacionan está en el resumen <stats>estadísticas de balonmano: registrar, calcular, entender</stats>. La versión completa sobre la efectividad está en la guía: <rate>calcular la efectividad de tiro en balonmano: fórmula, ejemplos y referencias</rate>. Cómo valorar con justicia al portero está en <keeper>evaluar el rendimiento del portero con estadísticas</keeper>. Y si ya no quieres juntar a mano porcentaje y mapa de tiro: Statix registra ambos en directo con un toque, <free>gratis y con demo en directo sin cuenta</free>."
+    },
+    "embed": {
+      "kicker": "Para vuestra web",
+      "title": "Integrar la calculadora en la web del club",
+      "description": "Copia el código, ponlo en vuestra página y listo. Gratis, sin registro y sin script de seguimiento.",
+      "snippetLabel": "código iframe",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "closing": "La calculadora integrada hace exactamente lo mismo que aquí: calcular la efectividad, situarla por posición y calcular hacia atrás el porcentaje objetivo. Debajo aparece un aviso «Calculadora de efectividad de tiro de Statix» con enlace a esta página: esa es la única condición. Si la altura no encaja con vuestro diseño, cambiad sin más el valor height del código."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre la efectividad de tiro",
+      "description": "Respuestas breves a las dudas que surgen al calcular.",
+      "items": [
+        {
+          "question": "¿Cómo se calcula la efectividad de tiro en balonmano?",
+          "answer": "Divides los goles entre los tiros y multiplicas por 100: efectividad (%) = goles ÷ tiros × 100. Ejemplo: 7 goles de 12 tiros dan un 58,3 por ciento."
+        },
+        {
+          "question": "¿Qué cuenta como tiro?",
+          "answer": "Cualquier lanzamiento real a portería: gol, balón parado, palo o travesaño y fallo claro. Un error técnico sin lanzamiento —unos pasos, por ejemplo— no es un tiro y no entra en el porcentaje."
+        },
+        {
+          "question": "¿Qué es una buena efectividad de tiro?",
+          "answer": "Depende de la posición. En el pivote se considera buena entre el 65 y el 75 por ciento, en primera línea entre el 45 y el 55, en siete metros entre el 75 y el 85 y al contraataque entre el 85 y el 95. Una efectividad de equipo por encima del 60 por ciento es sólida en el ámbito amateur."
+        },
+        {
+          "question": "¿Cómo calculo el porcentaje de paradas del portero?",
+          "answer": "Porcentaje de paradas = paradas ÷ (paradas + goles encajados) × 100. 14 paradas en 30 tiros a portería dan alrededor del 47 por ciento. En el ámbito amateur, por encima del 33 por ciento se considera fuerte y por encima del 40, sobresaliente."
+        },
+        {
+          "question": "¿A partir de cuántos tiros es significativo el porcentaje?",
+          "answer": "Como regla general: por debajo de diez tiros el porcentaje es sobre todo azar. El 100 por cien de un tiro dice menos que el 55 por ciento de veinte. Mira siempre el número de lanzamientos al lado."
+        },
+        {
+          "question": "¿Puedo integrar la calculadora en la web de nuestro club?",
+          "answer": "Sí, encantado. Copia el código iframe de esta página y ponlo en vuestra web. La calculadora funcionará dentro de vuestro diseño, gratis y sin registro."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "En lugar de calcular a mano",
+      "title": "Porcentajes que se calculan solos",
+      "description": "En Statix la efectividad nace al tocar la pantalla: por jugador, por posición y con el mapa de tiro al lado. Regístrate gratis y registra tú mismo, o asómate antes a la demo en directo sin cuenta.",
+      "linkLabel": "Usar Statix gratis"
+    }
   }
 }

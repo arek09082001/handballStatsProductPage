@@ -3111,5 +3111,521 @@
       "description": "Register free and record your first match without typing anything up in the evening. Or take a look in the live demo first at how it feels without cells – with no account at all.",
       "linkLabel": "What Statix costs"
     }
+  },
+  "statsPage": {
+    "hero": {
+      "kicker": "Handball metrics",
+      "titleHighlight": "Handball statistics",
+      "titleTail": "recorded, calculated, understood",
+      "lede": "Handball statistics are the counted actions of a match – shots, goals, saves, turnovers, suspensions – and the percentages that come out of them. This page shows which metrics exist, how to calculate them, which values are realistic in amateur handball and how to record them without typing anything up in the evening.",
+      "ctaPrimary": "Record statistics for free",
+      "trust": [
+        "Formulas and benchmarks",
+        "Record live instead of typing up",
+        "Start for free"
+      ]
+    },
+    "catalog": {
+      "kicker": "The overview",
+      "title": "Which handball statistics there are",
+      "description": "Five groups, and each answers a different question. Record everything at once and you stop after four match days – pick one group and build out from there.",
+      "groups": [
+        {
+          "name": "Attack",
+          "intro": "The numbers that answer what becomes of your possessions – and why an attack ends without a shot.",
+          "stats": [
+            {
+              "term": "Goals",
+              "definition": "Successful attempts per player and team, the basis of every further calculation."
+            },
+            {
+              "term": "Shots",
+              "definition": "Every genuine attempt on goal – goal, save, miss and post all count, a turnover does not."
+            },
+            {
+              "term": "Shooting percentage",
+              "definition": "The share of shots that end up in the goal. The first number coaches look at, and the most often misread."
+            },
+            {
+              "term": "Attacks (possessions)",
+              "definition": "Attempts plus turnovers plus seven-metre throws – the reference without which no percentage is comparable."
+            },
+            {
+              "term": "Attacking efficiency",
+              "definition": "Goals per attack. Unlike the shooting percentage, it also penalises lost balls."
+            },
+            {
+              "term": "Turnovers and turnover rate",
+              "definition": "Steps, double dribble and bad passes per attack – the number that shows how many attacks you give away."
+            },
+            {
+              "term": "Seven-metre rate",
+              "definition": "Scored per seven-metre throw taken, kept separate from the shooting percentage."
+            },
+            {
+              "term": "Shot positions and shot map",
+              "definition": "Where the shots came from and what came of them – as a map instead of a list, heatmap included."
+            }
+          ]
+        },
+        {
+          "name": "Defence and goalkeeper",
+          "intro": "What happens at your own goal – broken down enough not to confuse defence with goalkeeping.",
+          "stats": [
+            {
+              "term": "Saves",
+              "definition": "Balls stopped, the basis of every goalkeeper analysis."
+            },
+            {
+              "term": "Save percentage",
+              "definition": "Saves in relation to all shots on target. Shots wide do not count."
+            },
+            {
+              "term": "Save percentage by shot zone",
+              "definition": "The same percentage per zone – only this separates the goalkeeper's performance from the defence's."
+            },
+            {
+              "term": "Goals conceded",
+              "definition": "Goals conceded in total, by period of the match and by match situation."
+            },
+            {
+              "term": "Blocks and steals",
+              "definition": "Blocked shots and balls won – the defensive actions no match report records."
+            },
+            {
+              "term": "Goal difference",
+              "definition": "Goals minus goals conceded, across the match and across the season – the simplest progress curve."
+            }
+          ]
+        },
+        {
+          "name": "Pace and rhythm",
+          "intro": "The metrics that explain why two matches with the same final score were completely different.",
+          "stats": [
+            {
+              "term": "Fast breaks",
+              "definition": "Attempts from the first and second wave, counted separately from set attack."
+            },
+            {
+              "term": "Fast-break share of goals",
+              "definition": "How much of your output comes from the fast game – and how much the set attack really carries."
+            },
+            {
+              "term": "Attacks per match",
+              "definition": "The pace of the game. Over 60 attacks means an open match, under 48 a grinding one."
+            },
+            {
+              "term": "Flow by period",
+              "definition": "Goals and goals conceded in five- or ten-minute windows, so slumps become visible."
+            }
+          ]
+        },
+        {
+          "name": "Discipline and special situations",
+          "intro": "The numbers that appear in the match report but are rarely analysed.",
+          "stats": [
+            {
+              "term": "Suspensions",
+              "definition": "Two-minute suspensions per player and team, with the moment in the match."
+            },
+            {
+              "term": "Warnings and disqualifications",
+              "definition": "Yellow cards, red and blue – the escalation levels that force a rotation."
+            },
+            {
+              "term": "Power play and short-handed record",
+              "definition": "Goals and goals conceded during a suspension – often the decisive four minutes of a match."
+            },
+            {
+              "term": "Seven-metre throws caused",
+              "definition": "Who wins your penalty throws and who gives them away."
+            }
+          ]
+        },
+        {
+          "name": "Season and development",
+          "intro": "Everything that only becomes meaningful across several matches.",
+          "stats": [
+            {
+              "term": "Percentage trend per player",
+              "definition": "The same metric across eight, twelve, twenty matches – the only fair comparison is with the player's own previous value."
+            },
+            {
+              "term": "Playing shares and appearances",
+              "definition": "Who played how much, so that absolute numbers do not simply reflect playing time."
+            },
+            {
+              "term": "Distribution of scorers",
+              "definition": "How many shoulders your goals are spread across – an early warning for being easy to read."
+            },
+            {
+              "term": "Head-to-head record",
+              "definition": "Head-to-head against every opponent: wins, draws, defeats and goals."
+            },
+            {
+              "term": "Training attendance",
+              "definition": "Acceptances and refusals per player – the number that takes the emotion out of the playing-time discussion."
+            }
+          ]
+        }
+      ]
+    },
+    "formulas": {
+      "kicker": "Do the maths",
+      "title": "The formulas – and what a normal value is",
+      "description": "Every calculation you need for a robust analysis. The benchmarks are experience values from the amateur game, not targets.",
+      "caption": "Formulas and benchmarks of the most important handball metrics",
+      "colMetric": "Metric",
+      "colFormula": "Formula",
+      "colBenchmark": "Benchmark in amateur handball",
+      "rows": [
+        {
+          "metric": "Shooting percentage",
+          "formula": "goals ÷ shots × 100",
+          "benchmark": "team over 60 %, pivot 65–75 %, back court 45–55 %"
+        },
+        {
+          "metric": "Attacks (possessions)",
+          "formula": "attempts + turnovers + seven-metre throws",
+          "benchmark": "46–60 per team and match"
+        },
+        {
+          "metric": "Attacking efficiency",
+          "formula": "goals ÷ attacks × 100",
+          "benchmark": "48–58 %"
+        },
+        {
+          "metric": "Turnover rate",
+          "formula": "turnovers ÷ attacks × 100",
+          "benchmark": "12–18 %"
+        },
+        {
+          "metric": "Save percentage",
+          "formula": "saves ÷ (saves + goals conceded) × 100",
+          "benchmark": "30–40 % across all zones"
+        },
+        {
+          "metric": "Seven-metre rate",
+          "formula": "scored ÷ seven-metre throws taken × 100",
+          "benchmark": "75–85 %"
+        },
+        {
+          "metric": "Fast-break share",
+          "formula": "fast-break goals ÷ goals × 100",
+          "benchmark": "15–25 %"
+        },
+        {
+          "metric": "Goal difference",
+          "formula": "goals − goals conceded",
+          "benchmark": "read as a trend across the season"
+        }
+      ],
+      "closing": "The ranges shift with league and age group, which is why your own previous value is always the better reference than a table. If you only want to work out a single percentage quickly, take the <calculator>shooting percentage calculator</calculator> – enter goals and shots, read the percentage, no sign-up."
+    },
+    "ways": {
+      "kicker": "Three ways",
+      "title": "How coaches actually keep handball statistics",
+      "description": "Paper, spreadsheet or app – all three work. They differ in what is left of them on Monday.",
+      "items": [
+        {
+          "name": "Paper and tally sheet",
+          "effort": "No preparation",
+          "good": "Never fails, needs no battery, anyone in the coaching staff can do it straight away.",
+          "bad": "Whoever coaches does not take notes. The pile is rarely worked out – and a shot map never comes out of it.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Excel template",
+          "effort": "Set up once",
+          "good": "Works out the percentages itself, belongs to you, can be extended at will.",
+          "bad": "Unusable in the hall, so you type it up in the evening. No trend per player, and the assistant coach has the wrong version.",
+          "linkLabel": "Download the free Excel template"
+        },
+        {
+          "name": "Statistics app",
+          "effort": "One tap per action",
+          "good": "Recording and analysis fall together: at the final whistle the percentages, shot map and player values are already there – offline in the hall too.",
+          "bad": "You need a phone or tablet and an account. The first ten minutes of playing time feel unfamiliar.",
+          "linkLabel": "What free access includes"
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "In five steps",
+      "title": "How to keep a handball statistic that changes something",
+      "description": "The aim is not more numbers but one decision per match you would not have taken without them.",
+      "steps": [
+        {
+          "title": "Decide what you really analyse",
+          "text": "Start with three values: goals, shots and turnovers per player. Shooting percentage, attacks and attacking efficiency fall out of those by themselves. Everything else comes once those three are solid – not before."
+        },
+        {
+          "title": "Write your counting rules down",
+          "text": "The post counts as a shot, a turnover does not, seven-metre throws run separately, and you treat blocked balls the same way all season. Without a written rule the assistant coach records something different from you on the third match day."
+        },
+        {
+          "title": "Record during the match, not afterwards",
+          "text": "From memory it is above all missed shots and turnovers that go missing – exactly the actions that make your percentages honest. Record live and you have a complete data set at the final whistle."
+        },
+        {
+          "title": "Work out the percentages and place them",
+          "text": "Compare with your own previous value first, only then with a benchmark table. Under five attempts in a match and thirty across the season you do not comment on a percentage at all."
+        },
+        {
+          "title": "Derive exactly one decision",
+          "text": "One metric, one training focus, one conversation. Three matches in the same direction are a topic, an outlier is not. After that you start again at step three."
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "One level deeper",
+      "title": "Every metric in detail",
+      "description": "Formula, counting rules, benchmarks and the misreadings – for every number on this page there is an article that works it out in full.",
+      "allLink": "All articles in the handball guide"
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about handball statistics",
+      "description": "What coaches want to know before recording their first match.",
+      "items": [
+        {
+          "question": "Which statistics are there in handball?",
+          "answer": "In attack: goals, shots, shooting percentage, attacks, attacking efficiency, turnovers, seven-metre throws and shot positions. In defence: saves, save percentage, goals conceded, blocks and steals. Plus fast breaks and fast-break share, suspensions with the power-play and short-handed record, and across the season the percentage trends, playing shares and the head-to-head record."
+        },
+        {
+          "question": "Which metrics should a coach record as a minimum?",
+          "answer": "Goals, shots and turnovers per player. From those three values come the shooting percentage, attacks and attacking efficiency – enough to decide whether your problem is finishing or keeping the ball. Saves per goalkeeper are the next sensible step."
+        },
+        {
+          "question": "How do you calculate the shooting percentage in handball?",
+          "answer": "Goals divided by shots, times 100. Seven goals from twelve shots make 58.3 %. Every genuine attempt on goal counts as a shot, including hitting the post or the bar; a turnover without an attempt does not. You keep seven-metre throws separate, otherwise a reliable penalty taker flatters the whole team's percentage."
+        },
+        {
+          "question": "What is a good shooting percentage in handball?",
+          "answer": "It depends on the position: at the pivot 65–75 %, from the back court at nine metres 45–55 %, from seven metres 75–85 % and on the fast break 85–95 %. A team shooting percentage above 60 % is a solid value in amateur handball. These are orientation values from practice, not a measured data set."
+        },
+        {
+          "question": "How do I record handball statistics during a match?",
+          "answer": "Either with a tally on a prepared sheet with one row per player, or with an app at one tap per action. What matters is that recording happens live: from memory it is above all missed shots and turnovers that go missing, and the percentages come out systematically too good."
+        },
+        {
+          "question": "Can I record handball statistics for free?",
+          "answer": "Yes. The Basic tier of Statix stays free forever, including live recording, shooting percentages and analysis; from 1 January 2027 paid tiers are added for the more demanding features. Anyone who would rather start on paper takes the free Excel template. Both without a credit card; the live demo even runs without an account."
+        },
+        {
+          "question": "Do I need a second person on the sideline?",
+          "answer": "For goals, shots and turnovers one person who is also coaching is enough. As soon as shot zones, blocks and steals come into it, two people make it considerably cleaner – usually an assistant coach or an injured player does the recording."
+        },
+        {
+          "question": "From when are the numbers meaningful?",
+          "answer": "Individual percentages from one match are noise. As a rule of thumb: at least five attempts for a match percentage, around thirty across the season, and for the goalkeeper about eight recorded matches before their own average is worth using as a reference."
+        },
+        {
+          "question": "Are there Handball-Bundesliga statistics here?",
+          "answer": "No. This page explains handball statistics and Statix records the data of your own team. Tables and values from the Bundesliga or regional leagues you will find at the leagues and associations themselves."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Instead of a tally sheet",
+      "title": "Your numbers come about during the match, not after it",
+      "description": "Record every action with a tap – shooting percentages, shot map and player values are ready at the final whistle. Registration is free, or take a look at the live demo with real match data first.",
+      "linkLabel": "What free access includes"
+    }
+  },
+  "calculatorPage": {
+    "hero": {
+      "kicker": "Free calculator",
+      "titleLead": "Calculate the",
+      "titleHighlight": "shooting percentage",
+      "lede": "Goals divided by shots, times 100 – that is the whole formula. The calculator does the arithmetic for you and tells you how the value ranks for the position in question. No sign-up, and usable on your own club site."
+    },
+    "positions": [
+      {
+        "id": "tempo",
+        "label": "Fast break / counter",
+        "hint": "Free balls at an empty or half-covered goal – expectations are highest here."
+      },
+      {
+        "id": "siebenmeter",
+        "label": "Seven metres",
+        "hint": "A discipline of its own. Keep it separate, otherwise it distorts the field percentage."
+      },
+      {
+        "id": "kreis",
+        "label": "Pivot",
+        "hint": "The shortest distance, but often while falling and under contact."
+      },
+      {
+        "id": "aussen",
+        "label": "Wing",
+        "hint": "A tight angle, but usually no block in front of you."
+      },
+      {
+        "id": "rueckraum",
+        "label": "Back court (9 metres)",
+        "hint": "The longest distance, a closed block, the keeper well prepared."
+      },
+      {
+        "id": "team",
+        "label": "Team overall",
+        "hint": "Above 60 per cent counts as a solid value in amateur handball."
+      }
+    ],
+    "calculator": {
+      "goalsLabel": "Goals",
+      "shotsLabel": "Shots (all attempts on goal)",
+      "positionLabel": "Rank as",
+      "rangeOver": "over {min} %",
+      "rangeBetween": "{min}–{max} %",
+      "resultKicker": "Shooting percentage",
+      "resultSummary": "{goals} of {shots} shots in the goal",
+      "empty": "Enter goals and shots – the percentage appears at once.",
+      "errorNegative": "Negative values do not exist in handball.",
+      "errorNoShots": "Without shots there is no percentage – enter the attempts on goal first.",
+      "errorMoreGoals": "More goals than shots? Every goal is a shot too – check the two numbers.",
+      "thinWarning": "Careful: under ten shots the percentage is mostly chance. Take several matches together before you turn it into a training instruction.",
+      "belowHeadline": "below the benchmark",
+      "belowText": "For {label} the usual range is {range}. Worth a look at the shot map: are the misses coming from one zone or one corner?",
+      "aboveHeadline": "above the benchmark",
+      "aboveText": "Strong: {range} already counts as good for {label}. Check the number of shots all the same – few attempts lift a percentage quickly.",
+      "insideHeadline": "within the expected range",
+      "insideText": "{range} is the usual corridor for {label}. {hint}",
+      "reverseTitle": "Worked backwards",
+      "targetLabel": "Target percentage (%)",
+      "targetInvalid": "Enter valid values above and I will work out the goals you need.",
+      "targetLead": "For {goal} % from {shots} shots you need",
+      "targetGoals": "{needed} goals",
+      "targetMissing": "You are {missing} short.",
+      "targetStreak": "Without changing the shots so far: the next {streak} attempts would all have to go in.",
+      "targetReached": "You have already reached that.",
+      "embedTitle": "Calculate the shooting percentage",
+      "embedAttributionLink": "Shooting percentage calculator by Statix",
+      "embedAttributionSuffix": "– the handball statistics app for coaches"
+    },
+    "formula": {
+      "kicker": "Mental arithmetic",
+      "title": "The formula",
+      "description": "One line every coach should have in their head.",
+      "expression": "shooting percentage (%) = goals ÷ shots × 100",
+      "shotTitle": "What counts as a shot",
+      "shotText": "Every genuine attempt on goal: a goal, a saved ball, the post or the bar and a clear miss. A turnover without an attempt does not count – it would otherwise lower the percentage unfairly.",
+      "saveTitle": "The save percentage alongside",
+      "saveText": "For the goalkeeper: save percentage (%) = saves ÷ (saves + goals conceded) × 100. Above 33 per cent is strong in amateur handball, above 40 per cent outstanding."
+    },
+    "example": {
+      "kicker": "Worked through once",
+      "title": "Worked example",
+      "description": "A back-court player takes 12 attempts on goal and scores seven times.",
+      "expression": "7 ÷ 12 × 100 = 58.3 %",
+      "teamText": "For the whole team you calculate the same way, just with the totals of every player. 28 goals from 45 shots make a team shooting percentage of 62.2 per cent.",
+      "colPosition": "Position",
+      "colGoals": "Goals",
+      "colShots": "Shots",
+      "colQuota": "Shooting percentage",
+      "teamRow": "Team",
+      "rows": [
+        {
+          "player": "Pivot",
+          "goals": "5",
+          "shots": "6",
+          "quota": "83.3 %"
+        },
+        {
+          "player": "Wing",
+          "goals": "6",
+          "shots": "9",
+          "quota": "66.7 %"
+        },
+        {
+          "player": "Back court",
+          "goals": "7",
+          "shots": "12",
+          "quota": "58.3 %"
+        }
+      ],
+      "teamGoals": "28",
+      "teamShots": "45",
+      "teamQuota": "62.2 %"
+    },
+    "benchmarks": {
+      "kicker": "Rank it, do not guess",
+      "title": "Benchmarks by position",
+      "description": "A good shooting percentage depends on the situation the shot comes from. These ranges hold from amateur level up to ambitious league handball.",
+      "colPosition": "Position / situation",
+      "colRange": "Typical shooting percentage",
+      "colWhy": "Why",
+      "closing": "The numbers are deliberately ranges. Age, league and opponent shift them considerably – use them for orientation, not as a rigid target."
+    },
+    "limits": {
+      "kicker": "Reading numbers",
+      "title": "What the shooting percentage does not show",
+      "description": "A high percentage is not automatically good, a low one not automatically bad. Four things you have to think along with.",
+      "items": [
+        {
+          "title": "The number of shots",
+          "text": "100 per cent from one shot is worth less than 55 per cent from twenty. Whoever takes on the responsibility often has the more thankless percentage."
+        },
+        {
+          "title": "The quality of the chances",
+          "text": "Someone who only finishes free counters has it easier than a back-court player against a closed block. Without the shot position, the percentage is only half the truth."
+        },
+        {
+          "title": "The match context",
+          "text": "In the closing stages, short-handed or against the league leaders, percentages drop. That is normal and no sign of declining performance."
+        },
+        {
+          "title": "The development",
+          "text": "A value from one match is a snapshot. Only the trend across several matches shows whether something is changing – upwards as well as downwards."
+        }
+      ],
+      "closing": "Which metrics exist besides the shooting percentage and how they fit together is in the overview <stats>handball statistics: recorded, calculated, understood</stats>. The full version on the shooting percentage is in the guide: <rate>calculating the shooting percentage in handball – formula, examples and benchmarks</rate>. How to judge goalkeeping fairly is in <keeper>assessing goalkeeper performance with statistics</keeper>. And if you no longer want to piece percentage and shot map together by hand: Statix records both live with a tap – <free>free, with a live demo and no account</free>."
+    },
+    "embed": {
+      "kicker": "For your homepage",
+      "title": "Embed the calculator on your club site",
+      "description": "Copy the code, put it on your page – done. Free, no sign-up, no tracking script.",
+      "snippetLabel": "iframe code",
+      "copy": "Copy",
+      "copied": "Copied",
+      "closing": "The embedded calculator does exactly what it does here: work out the shooting percentage, rank it by position and work the target percentage backwards. Below the calculator there is a note “Shooting percentage calculator by Statix” linking to this page – that is the only condition. If the height does not suit your layout, simply change the height value in the code."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about the shooting percentage",
+      "description": "Short answers to the questions that come up while calculating.",
+      "items": [
+        {
+          "question": "How do you calculate the shooting percentage in handball?",
+          "answer": "You divide the goals by the shots and multiply by 100: shooting percentage (%) = goals ÷ shots × 100. Example: 7 goals from 12 shots make 58.3 per cent."
+        },
+        {
+          "question": "What counts as a shot?",
+          "answer": "Every genuine attempt on goal: a goal, a saved ball, hitting the post or the bar and a clear miss. A turnover without an attempt – a travelling call, for instance – is not a shot and does not go into the percentage."
+        },
+        {
+          "question": "What is a good shooting percentage?",
+          "answer": "It depends on the position. At the pivot 65–75 per cent counts as good, from the back court 45–55 per cent, from seven metres 75–85 per cent and on the fast break 85–95 per cent. A team shooting percentage above 60 per cent is solid in amateur handball."
+        },
+        {
+          "question": "How do I calculate the goalkeeper's save percentage?",
+          "answer": "Save percentage = saves ÷ (saves + goals conceded) × 100. 14 saves from 30 shots on target make around 47 per cent. In amateur handball, values above 33 per cent count as strong and above 40 per cent as outstanding."
+        },
+        {
+          "question": "From how many shots is the percentage meaningful?",
+          "answer": "As a rule of thumb: under ten shots the percentage is mostly chance. 100 per cent from one shot says less than 55 per cent from twenty. So always look at the number of attempts alongside it."
+        },
+        {
+          "question": "May I embed the calculator on our club site?",
+          "answer": "Yes, gladly. Copy the iframe code from this page and put it on your homepage. The calculator then runs in your layout, free and without signing up."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Instead of mental arithmetic",
+      "title": "Percentages that work themselves out",
+      "description": "In Statix the shooting percentage comes about as you tap – per player, per position, with the shot map alongside. Register free and record for yourself, or look into the live demo without an account first.",
+      "linkLabel": "Use Statix for free"
+    }
   }
 }

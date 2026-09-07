@@ -2,7 +2,11 @@
 
 import { Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import type { MetricGroup } from '../data/template-content';
 
 /**
@@ -35,7 +39,9 @@ export default function TemplateMetrics() {
               <h3 className='font-display text-xl font-bold tracking-tight text-ink'>
                 {group.sheet}
               </h3>
-              <p className='mt-2 text-[15px] leading-7 text-ink/70'>{group.description}</p>
+              <p className='mt-2 text-[15px] leading-7 text-ink/70'>
+                {group.description}
+              </p>
               <ul className='mt-4 flex flex-col gap-2'>
                 {group.metrics.map((metric) => (
                   <li

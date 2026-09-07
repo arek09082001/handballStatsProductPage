@@ -1,7 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
 import type { FreeScopeRow } from '../data/free-content';
 
@@ -31,21 +34,31 @@ export default function FreeScope() {
             <caption className='sr-only'>{t('caption')}</caption>
             <thead>
               <tr className='border-b-2 border-ink/25'>
-                <th scope='col' className='py-3 pr-4 font-display text-sm font-bold text-ink'>
+                <th
+                  scope='col'
+                  className='py-3 pr-4 font-display text-sm font-bold text-ink'>
                   {t('colFeature')}
                 </th>
-                <th scope='col' className='py-3 font-display text-sm font-bold text-ink'>
+                <th
+                  scope='col'
+                  className='py-3 font-display text-sm font-bold text-ink'>
                   {t('colLimit')}
                 </th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row, index) => (
-                <tr key={row.feature} className={index % 2 === 1 ? 'bg-paper-2/60' : undefined}>
-                  <th scope='row' className='py-3 pr-4 align-top font-medium text-ink'>
+                <tr
+                  key={row.feature}
+                  className={index % 2 === 1 ? 'bg-paper-2/60' : undefined}>
+                  <th
+                    scope='row'
+                    className='py-3 pr-4 align-top font-medium text-ink'>
                     {row.feature}
                   </th>
-                  <td className='py-3 align-top tabular-nums text-ink/70'>{row.limit}</td>
+                  <td className='py-3 align-top tabular-nums text-ink/70'>
+                    {row.limit}
+                  </td>
                 </tr>
               ))}
             </tbody>

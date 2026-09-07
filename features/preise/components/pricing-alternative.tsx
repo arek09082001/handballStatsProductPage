@@ -2,7 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import { inlineLink } from '@/components/custom-ui/rich-text';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import type { ComparisonRow } from '../data/pricing-content';
 
 /**
@@ -30,16 +34,24 @@ export default function PricingAlternative() {
           <table className='w-full min-w-[640px] border-collapse text-left text-[15px]'>
             <thead>
               <tr className='border-b-2 border-ink/25'>
-                <th scope='col' className='py-3 pr-4 font-display text-sm font-bold text-ink'>
+                <th
+                  scope='col'
+                  className='py-3 pr-4 font-display text-sm font-bold text-ink'>
                   {t('colAspect')}
                 </th>
-                <th scope='col' className='py-3 pr-4 font-display text-sm font-bold text-ink'>
+                <th
+                  scope='col'
+                  className='py-3 pr-4 font-display text-sm font-bold text-ink'>
                   {t('colPaper')}
                 </th>
-                <th scope='col' className='py-3 pr-4 font-display text-sm font-bold text-ink'>
+                <th
+                  scope='col'
+                  className='py-3 pr-4 font-display text-sm font-bold text-ink'>
                   {t('colExcel')}
                 </th>
-                <th scope='col' className='py-3 font-display text-sm font-bold text-primary'>
+                <th
+                  scope='col'
+                  className='py-3 font-display text-sm font-bold text-primary'>
                   {t('colStatix')}
                 </th>
               </tr>
@@ -54,9 +66,15 @@ export default function PricingAlternative() {
                     className='py-3 pr-4 align-top font-semibold text-ink'>
                     {row.aspect}
                   </th>
-                  <td className='py-3 pr-4 align-top text-ink/70'>{row.paper}</td>
-                  <td className='py-3 pr-4 align-top text-ink/70'>{row.excel}</td>
-                  <td className='py-3 align-top font-medium text-ink'>{row.statix}</td>
+                  <td className='py-3 pr-4 align-top text-ink/70'>
+                    {row.paper}
+                  </td>
+                  <td className='py-3 pr-4 align-top text-ink/70'>
+                    {row.excel}
+                  </td>
+                  <td className='py-3 align-top font-medium text-ink'>
+                    {row.statix}
+                  </td>
                 </tr>
               ))}
             </tbody>

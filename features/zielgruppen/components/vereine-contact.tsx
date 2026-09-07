@@ -72,7 +72,10 @@ export default function VereineContact() {
         </div>
       </div>
 
-      <ContactFormSection anchorId='vereinsformular' defaultTopic={VEREINE_CONTACT_TOPIC} />
+      <ContactFormSection
+        anchorId='vereinsformular'
+        defaultTopic={VEREINE_CONTACT_TOPIC}
+      />
     </section>
   );
 }

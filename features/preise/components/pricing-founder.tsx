@@ -41,9 +41,7 @@ export default function PricingFounder() {
         />
 
         <div className='mt-10 grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-12'>
-          <BoardCard
-            pin='tape'
-            className='rotate-[-0.7deg] p-7 sm:p-8'>
+          <BoardCard pin='tape' className='rotate-[-0.7deg] p-7 sm:p-8'>
             <p className='font-hand text-2xl text-primary'>{t('cardTitle')}</p>
 
             <p className='mt-4 text-[15px] leading-7 text-ink/75'>
@@ -104,7 +102,11 @@ export default function PricingFounder() {
           <ol className='flex flex-col gap-7'>
             {steps.map((step, index) => (
               <li key={step.number} className='flex items-start gap-4 sm:gap-5'>
-                <PlayerMagnet number={step.number} size='lg' className='shrink-0' />
+                <PlayerMagnet
+                  number={step.number}
+                  size='lg'
+                  className='shrink-0'
+                />
                 <div>
                   <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
                     {t(`steps.${index}.title`, labels)}

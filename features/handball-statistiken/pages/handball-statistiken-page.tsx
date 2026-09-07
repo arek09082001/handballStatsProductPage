@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardCta from '@/components/custom-ui/board-cta';
 import BoardFaq from '@/components/custom-ui/board-faq';
 import StatsHeader from '../components/stats-header';
@@ -6,7 +9,6 @@ import StatsFormulas from '../components/stats-formulas';
 import StatsWays from '../components/stats-ways';
 import StatsHowTo from '../components/stats-howto';
 import StatsGuides from '../components/stats-guides';
-import { STATS_FAQS } from '../data/stats-content';
 
 /**
  * Pillar page `/handball-statistiken` — the topic hub for the head term. It
@@ -17,6 +19,8 @@ import { STATS_FAQS } from '../data/stats-content';
  * @returns A JSX element composing the ordered pillar-page sections.
  */
 export default function HandballStatistikenPage() {
+  const t = useTranslations('statsPage');
+
   return (
     <div className='flex w-full flex-col items-center justify-center bg-paper'>
       <StatsHeader />
@@ -27,17 +31,17 @@ export default function HandballStatistikenPage() {
       <StatsGuides />
       <BoardFaq
         id='faq'
-        kicker='Nachgefragt'
-        title='Häufige Fragen zu Handball-Statistiken'
-        description='Was Trainer wissen wollen, bevor sie das erste Spiel mitschreiben.'
-        items={STATS_FAQS}
+        kicker={t('faq.kicker')}
+        title={t('faq.title')}
+        description={t('faq.description')}
+        items={t.raw('faq.items') as { question: string; answer: string }[]}
       />
       <BoardCta
-        kicker='Statt Strichliste'
-        title='Deine Zahlen entstehen im Spiel, nicht danach'
-        description='Erfasse jede Aktion mit einem Tap – Wurfquoten, Wurfbild und Spielerwerte stehen beim Schlusspfiff fertig da. Registrierung kostenlos, oder erst einmal die Live-Demo mit echten Spieldaten ansehen.'
+        kicker={t('cta.kicker')}
+        title={t('cta.title')}
+        description={t('cta.description')}
         linkHref='/handball-statistik-app-kostenlos'
-        linkLabel='Was der kostenlose Zugang enthält'
+        linkLabel={t('cta.linkLabel')}
       />
     </div>
   );

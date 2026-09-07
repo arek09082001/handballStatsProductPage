@@ -1,7 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { usePricingLabels } from '../data/use-pricing-labels';
 

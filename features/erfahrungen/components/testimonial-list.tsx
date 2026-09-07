@@ -3,7 +3,11 @@
 import { Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import { externalLink, inlineLink } from '@/components/custom-ui/rich-text';
 import { BEST_RATING, TESTIMONIALS } from '../data/testimonials';
 import { ERFAHRUNGEN_MAIL_ARGS } from '../data/erfahrungen-content';
@@ -35,7 +39,10 @@ export default function TestimonialList() {
         {hasQuotes ? (
           <div className='mt-12 grid gap-6 md:grid-cols-2'>
             {TESTIMONIALS.map((testimonial) => (
-              <BoardCard key={`${testimonial.name}-${testimonial.date}`} pin='magnet' className='p-6'>
+              <BoardCard
+                key={`${testimonial.name}-${testimonial.date}`}
+                pin='magnet'
+                className='p-6'>
                 {typeof testimonial.ratingValue === 'number' ? (
                   <p
                     className='flex items-center gap-1 text-primary'
@@ -59,7 +66,9 @@ export default function TestimonialList() {
                 <blockquote className='mt-3 text-[15px] leading-7 text-ink/80'>
                   „{testimonial.quote}“
                 </blockquote>
-                <p className='mt-4 font-display text-sm font-bold text-ink'>{testimonial.name}</p>
+                <p className='mt-4 font-display text-sm font-bold text-ink'>
+                  {testimonial.name}
+                </p>
                 <p className='text-sm text-ink/60'>
                   {testimonial.role} · {testimonial.club}
                 </p>

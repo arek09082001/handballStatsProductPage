@@ -3111,5 +3111,521 @@
       "description": "Registriere dich kostenlos und erfasse dein erstes Spiel, ohne abends etwas abzutippen. Oder sieh dir vorher in der Live-Demo an, wie sich das ohne Zellen anfühlt – ganz ohne Account.",
       "linkLabel": "Was Statix kostet"
     }
+  },
+  "statsPage": {
+    "hero": {
+      "kicker": "Kennzahlen im Handball",
+      "titleHighlight": "Handball-Statistiken",
+      "titleTail": "erfassen, berechnen, verstehen",
+      "lede": "Handball-Statistiken sind die gezählten Aktionen eines Spiels – Würfe, Tore, Paraden, technische Fehler, Zeitstrafen – und die Quoten, die daraus entstehen. Diese Seite zeigt, welche Kennzahlen es gibt, wie du sie berechnest, welche Werte im Amateurhandball realistisch sind und wie du sie erfasst, ohne abends etwas abzutippen.",
+      "ctaPrimary": "Statistiken kostenlos erfassen",
+      "trust": [
+        "Formeln und Richtwerte",
+        "Live erfassen statt abtippen",
+        "Kostenlos starten"
+      ]
+    },
+    "catalog": {
+      "kicker": "Der Überblick",
+      "title": "Welche Handball-Statistiken es gibt",
+      "description": "Fünf Gruppen, und jede beantwortet eine andere Frage. Wer alles auf einmal erfasst, hört nach vier Spieltagen auf – such dir eine Gruppe aus und bau von dort aus weiter.",
+      "groups": [
+        {
+          "name": "Angriff",
+          "intro": "Die Zahlen, die beantworten, was aus euren Ballbesitzen wird – und warum ein Angriff ohne Abschluss endet.",
+          "stats": [
+            {
+              "term": "Tore",
+              "definition": "Erfolgreiche Abschlüsse je Spieler und Mannschaft, die Basis jeder weiteren Rechnung."
+            },
+            {
+              "term": "Würfe",
+              "definition": "Alle echten Torabschlüsse – Tor, Parade, Fehlwurf und Pfostentreffer zählen mit, ein technischer Fehler nicht."
+            },
+            {
+              "term": "Wurfquote",
+              "definition": "Anteil der Würfe, die im Tor landen. Die erste Zahl, auf die Trainer schauen, und die am häufigsten falsch gelesene."
+            },
+            {
+              "term": "Angriffe (Ballbesitze)",
+              "definition": "Abschlüsse plus technische Fehler plus Siebenmeter – die Bezugsgröße, ohne die keine Quote vergleichbar ist."
+            },
+            {
+              "term": "Angriffseffektivität",
+              "definition": "Tore je Angriff. Anders als die Wurfquote bestraft sie verlorene Bälle mit."
+            },
+            {
+              "term": "Technische Fehler & Fehlerquote",
+              "definition": "Schritt-, Prell- und Passfehler pro Angriff – die Zahl, die zeigt, wie viele Angriffe ihr verschenkt."
+            },
+            {
+              "term": "Siebenmeter-Quote",
+              "definition": "Getroffene je ausgeführtem Siebenmeter, getrennt von der Wurfquote geführt."
+            },
+            {
+              "term": "Wurfpositionen & Wurfbild",
+              "definition": "Wo geworfen wurde und was dabei herauskam – als Karte statt als Liste, inklusive Heatmap."
+            }
+          ]
+        },
+        {
+          "name": "Abwehr & Torwart",
+          "intro": "Was am eigenen Tor passiert – aufgeschlüsselt genug, um Abwehr und Torwart nicht zu verwechseln.",
+          "stats": [
+            {
+              "term": "Paraden",
+              "definition": "Gehaltene Bälle, die Grundlage jeder Torwartauswertung."
+            },
+            {
+              "term": "Paradenquote",
+              "definition": "Paraden im Verhältnis zu allen Würfen aufs Tor. Vorbeiwürfe zählen nicht mit."
+            },
+            {
+              "term": "Paradenquote nach Wurfzone",
+              "definition": "Dieselbe Quote je Zone – erst sie trennt die Torwartleistung von der Abwehrleistung."
+            },
+            {
+              "term": "Gegentore",
+              "definition": "Gegentore insgesamt, nach Spielabschnitt und nach Spielsituation."
+            },
+            {
+              "term": "Blocks & Ballgewinne",
+              "definition": "Geblockte Würfe und eroberte Bälle – die Abwehraktionen, die kein Spielbericht ausweist."
+            },
+            {
+              "term": "Tordifferenz",
+              "definition": "Tore minus Gegentore, über das Spiel und über die Saison – die einfachste Fortschrittskurve."
+            }
+          ]
+        },
+        {
+          "name": "Tempo & Spielrhythmus",
+          "intro": "Die Kennzahlen, die erklären, warum zwei Spiele mit identischem Endstand völlig verschieden waren.",
+          "stats": [
+            {
+              "term": "Tempogegenstöße",
+              "definition": "Abschlüsse aus der ersten und zweiten Welle, getrennt vom Positionsangriff gezählt."
+            },
+            {
+              "term": "Tempoanteil an den Toren",
+              "definition": "Wie viel eurer Ausbeute aus dem Tempospiel kommt – und wie viel der Positionsangriff wirklich trägt."
+            },
+            {
+              "term": "Angriffe je Spiel",
+              "definition": "Das Tempo der Partie. Über 60 Angriffe heißt offenes Spiel, unter 48 ein zähes."
+            },
+            {
+              "term": "Verlauf je Spielabschnitt",
+              "definition": "Tore und Gegentore in Fünf- oder Zehn-Minuten-Fenstern, damit Einbrüche sichtbar werden."
+            }
+          ]
+        },
+        {
+          "name": "Disziplin & Sondersituationen",
+          "intro": "Die Zahlen, die im Spielbericht stehen, aber selten ausgewertet werden.",
+          "stats": [
+            {
+              "term": "Zeitstrafen",
+              "definition": "Zwei-Minuten-Strafen je Spieler und Mannschaft, mit Zeitpunkt im Spiel."
+            },
+            {
+              "term": "Verwarnungen und Disqualifikationen",
+              "definition": "Gelbe Karten, Rot und Blau – die Eskalationsstufen, die eine Rotation erzwingen."
+            },
+            {
+              "term": "Über- und Unterzahlbilanz",
+              "definition": "Tore und Gegentore während einer Hinausstellung – oft die entscheidenden vier Minuten einer Partie."
+            },
+            {
+              "term": "Verursachte Siebenmeter",
+              "definition": "Wer eure Strafwürfe herausholt und wer sie verschuldet."
+            }
+          ]
+        },
+        {
+          "name": "Saison & Entwicklung",
+          "intro": "Alles, was erst über mehrere Spiele hinweg zur Aussage wird.",
+          "stats": [
+            {
+              "term": "Quotenverlauf je Spieler",
+              "definition": "Dieselbe Kennzahl über acht, zwölf, zwanzig Spiele – der einzige faire Vergleich ist der mit dem eigenen Vorwert."
+            },
+            {
+              "term": "Spielanteile und Einsätze",
+              "definition": "Wer wie viel gespielt hat, damit Absolutzahlen nicht die Einsatzzeit abbilden."
+            },
+            {
+              "term": "Torschützenverteilung",
+              "definition": "Auf wie viele Schultern sich eure Tore verteilen – ein Frühwarnwert für Ausrechenbarkeit."
+            },
+            {
+              "term": "Gegner-Bilanz",
+              "definition": "Head-to-Head gegen jeden Gegner: Siege, Unentschieden, Niederlagen und Tore."
+            },
+            {
+              "term": "Trainingsbeteiligung",
+              "definition": "Zu- und Absagen je Spieler – die Zahl, die die Spielzeitdiskussion versachlicht."
+            }
+          ]
+        }
+      ]
+    },
+    "formulas": {
+      "kicker": "Nachrechnen",
+      "title": "Die Formeln – und was ein normaler Wert ist",
+      "description": "Alle Rechnungen, die du für eine belastbare Auswertung brauchst. Die Richtwerte sind Erfahrungswerte aus dem Amateurbereich, keine Sollvorgaben.",
+      "caption": "Formeln und Richtwerte der wichtigsten Handball-Kennzahlen",
+      "colMetric": "Kennzahl",
+      "colFormula": "Formel",
+      "colBenchmark": "Richtwert im Amateurbereich",
+      "rows": [
+        {
+          "metric": "Wurfquote",
+          "formula": "Tore ÷ Würfe × 100",
+          "benchmark": "Team über 60 %, Kreis 65–75 %, Rückraum 45–55 %"
+        },
+        {
+          "metric": "Angriffe (Ballbesitze)",
+          "formula": "Abschlüsse + technische Fehler + Siebenmeter",
+          "benchmark": "46–60 je Mannschaft und Spiel"
+        },
+        {
+          "metric": "Angriffseffektivität",
+          "formula": "Tore ÷ Angriffe × 100",
+          "benchmark": "48–58 %"
+        },
+        {
+          "metric": "Fehlerquote",
+          "formula": "Technische Fehler ÷ Angriffe × 100",
+          "benchmark": "12–18 %"
+        },
+        {
+          "metric": "Paradenquote",
+          "formula": "Paraden ÷ (Paraden + Gegentore) × 100",
+          "benchmark": "30–40 % über alle Zonen"
+        },
+        {
+          "metric": "Siebenmeter-Quote",
+          "formula": "Getroffene ÷ ausgeführte Siebenmeter × 100",
+          "benchmark": "75–85 %"
+        },
+        {
+          "metric": "Tempoanteil",
+          "formula": "Tore aus Tempogegenstoß ÷ Tore × 100",
+          "benchmark": "15–25 %"
+        },
+        {
+          "metric": "Tordifferenz",
+          "formula": "Tore − Gegentore",
+          "benchmark": "als Verlauf über die Saison lesen"
+        }
+      ],
+      "closing": "Die Spannen verschieben sich mit Spielklasse und Altersstufe, deshalb ist der eigene Vorwert immer die bessere Referenz als eine Tabelle. Wenn du eine einzelne Quote nur schnell ausrechnen willst, nimm den <calculator>Wurfquoten-Rechner</calculator> – Tore und Würfe eintragen, Quote ablesen, ohne Anmeldung."
+    },
+    "ways": {
+      "kicker": "Drei Wege",
+      "title": "Womit Trainer Handball-Statistiken führen",
+      "description": "Zettel, Tabelle oder App – alle drei funktionieren. Sie unterscheiden sich darin, was am Montag noch übrig ist.",
+      "items": [
+        {
+          "name": "Zettel und Strichliste",
+          "effort": "Null Vorbereitung",
+          "good": "Fällt nie aus, braucht keinen Akku, jeder im Trainerteam kann es sofort.",
+          "bad": "Wer coacht, schreibt nicht mit. Ausgerechnet wird der Stapel selten – und ein Wurfbild entsteht daraus nie.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Excel-Vorlage",
+          "effort": "Einmal einrichten",
+          "good": "Rechnet Quoten selbst aus, gehört dir, lässt sich beliebig erweitern.",
+          "bad": "In der Halle unbedienbar, also tippst du abends ab. Kein Verlauf pro Spieler, und der Co-Trainer hat die falsche Version.",
+          "linkLabel": "Kostenlose Excel-Vorlage laden"
+        },
+        {
+          "name": "Statistik-App",
+          "effort": "Ein Tap pro Aktion",
+          "good": "Erfassen und Auswerten fallen zusammen: Beim Schlusspfiff stehen Quoten, Wurfbild und Spielerwerte fertig da – auch offline in der Halle.",
+          "bad": "Du brauchst ein Handy oder Tablet und ein Konto. Die ersten zehn Minuten Spielzeit fühlen sich ungewohnt an.",
+          "linkLabel": "Was der kostenlose Zugang enthält"
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "In fünf Schritten",
+      "title": "So führst du eine Handball-Statistik, die etwas ändert",
+      "description": "Nicht mehr Zahlen sind das Ziel, sondern eine Entscheidung pro Spiel, die du ohne die Zahlen nicht getroffen hättest.",
+      "steps": [
+        {
+          "title": "Entscheide, was du wirklich auswertest",
+          "text": "Fang mit drei Werten an: Tore, Würfe und technische Fehler je Spieler. Daraus fallen Wurfquote, Angriffe und Angriffseffektivität von selbst ab. Alles Weitere kommt dazu, wenn die drei sitzen – nicht vorher."
+        },
+        {
+          "title": "Schreib deine Zählregeln auf",
+          "text": "Pfosten zählt als Wurf, technischer Fehler nicht, Siebenmeter laufen getrennt, geblockte Bälle behandelst du die ganze Saison gleich. Ohne notierte Regel erfasst der Co-Trainer am dritten Spieltag etwas anderes als du."
+        },
+        {
+          "title": "Erfasse während des Spiels, nicht danach",
+          "text": "Aus der Erinnerung fehlen vor allem Fehlwürfe und technische Fehler – also genau die Aktionen, die deine Quoten ehrlich machen. Wer live erfasst, hat beim Schlusspfiff einen vollständigen Datensatz."
+        },
+        {
+          "title": "Rechne die Quoten und ordne sie ein",
+          "text": "Vergleiche zuerst mit dem eigenen Vorwert, erst danach mit einer Richtwerttabelle. Unter fünf Abschlüssen im Spiel und dreißig über die Saison kommentierst du eine Quote gar nicht erst."
+        },
+        {
+          "title": "Leite genau eine Entscheidung ab",
+          "text": "Eine Kennzahl, ein Trainingsschwerpunkt, ein Gespräch. Drei Spiele in dieselbe Richtung sind ein Thema, ein Ausreißer ist keins. Danach fängst du wieder bei Schritt drei an."
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Eine Ebene tiefer",
+      "title": "Jede Kennzahl im Detail",
+      "description": "Formel, Zählregeln, Richtwerte und die Fehldeutungen – für jede Zahl von dieser Seite gibt es einen Artikel, der sie zu Ende rechnet.",
+      "allLink": "Alle Artikel im Handball-Ratgeber"
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zu Handball-Statistiken",
+      "description": "Was Trainer wissen wollen, bevor sie das erste Spiel mitschreiben.",
+      "items": [
+        {
+          "question": "Welche Statistiken gibt es im Handball?",
+          "answer": "Im Angriff: Tore, Würfe, Wurfquote, Angriffe, Angriffseffektivität, technische Fehler, Siebenmeter und Wurfpositionen. In der Abwehr: Paraden, Paradenquote, Gegentore, Blocks und Ballgewinne. Dazu Tempogegenstöße und Tempoanteil, Zeitstrafen mit Über- und Unterzahlbilanz sowie über die Saison Quotenverläufe, Spielanteile und die Gegner-Bilanz."
+        },
+        {
+          "question": "Welche Kennzahlen sollte ein Trainer mindestens erfassen?",
+          "answer": "Tore, Würfe und technische Fehler je Spieler. Aus diesen drei Werten ergeben sich Wurfquote, Angriffe und Angriffseffektivität – damit lässt sich bereits entscheiden, ob euer Problem der Abschluss oder die Ballsicherheit ist. Paraden je Torwart sind der nächste sinnvolle Schritt."
+        },
+        {
+          "question": "Wie berechnet man die Wurfquote im Handball?",
+          "answer": "Tore geteilt durch Würfe, mal 100. Sieben Tore aus zwölf Würfen ergeben 58,3 %. Als Wurf zählt jeder echte Torabschluss inklusive Pfosten- und Lattentreffer, ein technischer Fehler ohne Abschluss dagegen nicht. Siebenmeter führst du getrennt, sonst schönt eine sichere Schützin die Quote der ganzen Mannschaft."
+        },
+        {
+          "question": "Was ist eine gute Wurfquote im Handball?",
+          "answer": "Das hängt von der Position ab: am Kreis 65–75 %, aus dem Rückraum von neun Metern 45–55 %, beim Siebenmeter 75–85 % und im Tempogegenstoß 85–95 %. Eine Team-Wurfquote über 60 % ist im Amateurbereich ein solider Wert. Es sind Orientierungswerte aus der Praxis, keine erhobene Statistik."
+        },
+        {
+          "question": "Wie erfasse ich Handball-Statistiken während des Spiels?",
+          "answer": "Entweder per Strichliste auf einem vorbereiteten Bogen mit einer Zeile je Spieler, oder per App mit einem Tap pro Aktion. Entscheidend ist, dass die Erfassung live passiert: Aus der Erinnerung fehlen vor allem Fehlwürfe und technische Fehler, und damit werden die Quoten systematisch zu gut."
+        },
+        {
+          "question": "Kann ich Handball-Statistiken kostenlos erfassen?",
+          "answer": "Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos, inklusive Live-Erfassung, Wurfquoten und Auswertung; ab dem 1. Januar 2027 kommen bezahlte Stufen für die aufwendigeren Funktionen dazu. Wer lieber auf Papier startet, nimmt die kostenlose Excel-Vorlage. Beides ohne Kreditkarte; die Live-Demo läuft sogar ohne Account."
+        },
+        {
+          "question": "Brauche ich eine zweite Person am Spielfeldrand?",
+          "answer": "Für Tore, Würfe und technische Fehler reicht eine Person, die auch coacht. Sobald Wurfzonen, Blocks und Ballgewinne dazukommen, wird es zu zweit deutlich sauberer – üblicherweise erfasst dann ein Co-Trainer oder ein verletzter Spieler."
+        },
+        {
+          "question": "Ab wann sind die Zahlen aussagekräftig?",
+          "answer": "Einzelne Quoten aus einem Spiel sind Rauschen. Als Faustregel: mindestens fünf Abschlüsse für eine Spielquote, rund dreißig über die Saison, und für den Torwart etwa acht erfasste Spiele, bevor sein eigener Durchschnitt zur Referenz taugt."
+        },
+        {
+          "question": "Gibt es hier Statistiken der Handball-Bundesliga?",
+          "answer": "Nein. Diese Seite erklärt Handball-Statistiken und Statix erfasst die Daten deiner eigenen Mannschaft. Tabellen und Werte aus Bundesliga oder Verbandsligen findest du bei den Ligen und Landesverbänden selbst."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Statt Strichliste",
+      "title": "Deine Zahlen entstehen im Spiel, nicht danach",
+      "description": "Erfasse jede Aktion mit einem Tap – Wurfquoten, Wurfbild und Spielerwerte stehen beim Schlusspfiff fertig da. Registrierung kostenlos, oder erst einmal die Live-Demo mit echten Spieldaten ansehen.",
+      "linkLabel": "Was der kostenlose Zugang enthält"
+    }
+  },
+  "calculatorPage": {
+    "hero": {
+      "kicker": "Kostenloser Rechner",
+      "titleLead": "Wurfquote",
+      "titleHighlight": "berechnen",
+      "lede": "Tore durch Würfe, mal 100 – das ist die ganze Formel. Der Rechner nimmt dir das Kopfrechnen ab und sagt dir dazu, wie der Wert für die jeweilige Position einzuordnen ist. Ohne Anmeldung, auch für die eigene Vereinsseite."
+    },
+    "positions": [
+      {
+        "id": "tempo",
+        "label": "Tempogegenstoß / Konter",
+        "hint": "Freie Bälle aufs leere oder halb besetzte Tor – hier ist die Erwartung am höchsten."
+      },
+      {
+        "id": "siebenmeter",
+        "label": "Siebenmeter",
+        "hint": "Eigene Disziplin. Getrennt führen, sonst verzerrt sie die Feldquote."
+      },
+      {
+        "id": "kreis",
+        "label": "Kreis",
+        "hint": "Kürzeste Distanz, dafür oft im Fallen und mit Körperkontakt."
+      },
+      {
+        "id": "aussen",
+        "label": "Außen",
+        "hint": "Spitzer Winkel, dafür meist ohne Block vor sich."
+      },
+      {
+        "id": "rueckraum",
+        "label": "Rückraum (9 Meter)",
+        "hint": "Größte Distanz, geschlossener Block, Torwart gut vorbereitet."
+      },
+      {
+        "id": "team",
+        "label": "Mannschaft gesamt",
+        "hint": "Über 60 Prozent gilt im Amateurbereich als solider Wert."
+      }
+    ],
+    "calculator": {
+      "goalsLabel": "Tore",
+      "shotsLabel": "Würfe (alle Torabschlüsse)",
+      "positionLabel": "Einordnen als",
+      "rangeOver": "über {min} %",
+      "rangeBetween": "{min}–{max} %",
+      "resultKicker": "Wurfquote",
+      "resultSummary": "{goals} von {shots} Würfen im Tor",
+      "empty": "Trag Tore und Würfe ein – die Quote steht sofort da.",
+      "errorNegative": "Negative Werte gibt es im Handball nicht.",
+      "errorNoShots": "Ohne Würfe gibt es keine Quote – trag erst die Torabschlüsse ein.",
+      "errorMoreGoals": "Mehr Tore als Würfe? Jedes Tor ist auch ein Wurf – prüf die beiden Zahlen.",
+      "thinWarning": "Achtung: Unter zehn Würfen ist die Quote vor allem Zufall. Nimm mehrere Spiele zusammen, bevor du daraus einen Trainingsauftrag machst.",
+      "belowHeadline": "unter dem Richtwert",
+      "belowText": "Für {label} liegt der übliche Bereich bei {range}. Lohnt sich ein Blick aufs Wurfbild: Kommen die Fehlwürfe aus einer Zone oder aus einer Ecke?",
+      "aboveHeadline": "über dem Richtwert",
+      "aboveText": "Stark: {range} gilt für {label} schon als gut. Prüf trotzdem die Wurfanzahl – wenige Abschlüsse heben die Quote schnell.",
+      "insideHeadline": "im erwarteten Bereich",
+      "insideText": "{range} ist für {label} der übliche Korridor. {hint}",
+      "reverseTitle": "Umgekehrt gerechnet",
+      "targetLabel": "Zielquote (%)",
+      "targetInvalid": "Trag oben gültige Werte ein, dann rechne ich dir die nötigen Tore aus.",
+      "targetLead": "Für {goal} % brauchst du bei {shots} Würfen",
+      "targetGoals": "{needed} Tore",
+      "targetMissing": "Dir fehlen {missing}.",
+      "targetStreak": "Ohne die bisherigen Würfe zu ändern: die nächsten {streak} Abschlüsse müssten alle sitzen.",
+      "targetReached": "Das hast du schon erreicht.",
+      "embedTitle": "Wurfquote berechnen",
+      "embedAttributionLink": "Wurfquoten-Rechner von Statix",
+      "embedAttributionSuffix": "– der Handball-Statistik-App für Trainer"
+    },
+    "formula": {
+      "kicker": "Kopfrechnen",
+      "title": "Die Formel",
+      "description": "Eine Zeile, die jeder Trainer im Kopf haben sollte.",
+      "expression": "Wurfquote (%) = Tore ÷ Würfe × 100",
+      "shotTitle": "Was als Wurf zählt",
+      "shotText": "Jeder echte Torabschluss: Tor, gehaltener Ball, Pfosten oder Latte und klarer Fehlwurf. Ein technischer Fehler ohne Abschluss zählt nicht mit – der senkt die Quote sonst zu Unrecht.",
+      "saveTitle": "Die Paradenquote daneben",
+      "saveText": "Für den Torwart gilt: Paradenquote (%) = Paraden ÷ (Paraden + Gegentore) × 100. Über 33 Prozent sind im Amateurbereich stark, über 40 Prozent herausragend."
+    },
+    "example": {
+      "kicker": "Einmal durchgerechnet",
+      "title": "Rechenbeispiel",
+      "description": "Eine Rückraumspielerin hat 12 Torabschlüsse und trifft siebenmal.",
+      "expression": "7 ÷ 12 × 100 = 58,3 %",
+      "teamText": "Für die ganze Mannschaft rechnest du genauso, nur mit den Summen aller Spieler. 28 Tore aus 45 Würfen ergeben eine Team-Wurfquote von 62,2 Prozent.",
+      "colPosition": "Position",
+      "colGoals": "Tore",
+      "colShots": "Würfe",
+      "colQuota": "Wurfquote",
+      "teamRow": "Team",
+      "rows": [
+        {
+          "player": "Kreis",
+          "goals": "5",
+          "shots": "6",
+          "quota": "83,3 %"
+        },
+        {
+          "player": "Außen",
+          "goals": "6",
+          "shots": "9",
+          "quota": "66,7 %"
+        },
+        {
+          "player": "Rückraum",
+          "goals": "7",
+          "shots": "12",
+          "quota": "58,3 %"
+        }
+      ],
+      "teamGoals": "28",
+      "teamShots": "45",
+      "teamQuota": "62,2 %"
+    },
+    "benchmarks": {
+      "kicker": "Einordnen statt raten",
+      "title": "Richtwerte nach Position",
+      "description": "Eine gute Wurfquote hängt davon ab, aus welcher Situation geworfen wird. Diese Spannen gelten vom Amateur- bis in den ambitionierten Ligabereich.",
+      "colPosition": "Position / Situation",
+      "colRange": "Typische Wurfquote",
+      "colWhy": "Warum",
+      "closing": "Die Zahlen sind bewusst Spannen. Alter, Spielklasse und Gegner verschieben sie deutlich – nutze sie als Orientierung, nicht als starres Soll."
+    },
+    "limits": {
+      "kicker": "Zahlen lesen können",
+      "title": "Was die Wurfquote nicht zeigt",
+      "description": "Eine hohe Quote ist nicht automatisch gut, eine niedrige nicht automatisch schlecht. Vier Dinge musst du mitdenken.",
+      "items": [
+        {
+          "title": "Die Wurfanzahl",
+          "text": "100 Prozent aus einem Wurf sind weniger wert als 55 Prozent aus zwanzig. Wer die Verantwortung übernimmt, hat oft die undankbarere Quote."
+        },
+        {
+          "title": "Die Chancenqualität",
+          "text": "Wer nur freie Konter abschließt, hat es leichter als ein Rückraumspieler gegen den geschlossenen Block. Ohne Wurfposition ist die Quote nur die halbe Wahrheit."
+        },
+        {
+          "title": "Der Spielkontext",
+          "text": "In der Schlussphase, in Unterzahl oder gegen den Spitzenreiter sinken Quoten. Das ist normal und kein Zeichen für nachlassende Leistung."
+        },
+        {
+          "title": "Die Entwicklung",
+          "text": "Ein Wert aus einem Spiel ist eine Momentaufnahme. Erst der Verlauf über mehrere Spiele zeigt, ob sich etwas verändert – nach oben wie nach unten."
+        }
+      ],
+      "closing": "Welche Kennzahlen es neben der Wurfquote gibt und wie sie zusammenhängen, steht im Überblick <stats>Handball-Statistiken: erfassen, berechnen, verstehen</stats>. Die ausführliche Version zur Wurfquote steht im Ratgeber: <rate>Wurfquote im Handball berechnen – Formel, Beispiele und Richtwerte</rate>. Wie du Torwartleistung fair bewertest, steht in <keeper>Torwartleistung mit Statistik bewerten</keeper>. Und wenn du Quote und Wurfbild nicht mehr von Hand zusammensuchen willst: Statix erfasst beides live per Tap – <free>kostenlos, mit Live-Demo ohne Account</free>."
+    },
+    "embed": {
+      "kicker": "Für eure Homepage",
+      "title": "Rechner auf der Vereinsseite einbinden",
+      "description": "Kopier den Code, setz ihn auf eure Seite – fertig. Kostenlos, ohne Anmeldung, ohne Tracking-Skript.",
+      "snippetLabel": "iframe-Code",
+      "copy": "Kopieren",
+      "copied": "Kopiert",
+      "closing": "Der eingebettete Rechner kann genau das, was er hier kann: Wurfquote ausrechnen, nach Position einordnen und die Zielquote rückwärts rechnen. Unter dem Rechner steht ein Hinweis „Wurfquoten-Rechner von Statix“ mit Link auf diese Seite – das ist die einzige Bedingung. Passt die Höhe nicht zu eurem Layout, ändert einfach den height-Wert im Code."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zur Wurfquote",
+      "description": "Kurze Antworten auf die Fragen, die beim Rechnen aufkommen.",
+      "items": [
+        {
+          "question": "Wie berechnet man die Wurfquote im Handball?",
+          "answer": "Du teilst die Tore durch die Würfe und multiplizierst mit 100: Wurfquote (%) = Tore ÷ Würfe × 100. Beispiel: 7 Tore aus 12 Würfen ergeben 58,3 Prozent."
+        },
+        {
+          "question": "Was zählt als Wurf?",
+          "answer": "Jeder echte Torabschluss: Tor, gehaltener Ball, Pfosten- oder Lattentreffer und klarer Fehlwurf. Ein technischer Fehler ohne Abschluss – etwa ein Schrittfehler – ist kein Wurf und fließt nicht in die Quote ein."
+        },
+        {
+          "question": "Was ist eine gute Wurfquote?",
+          "answer": "Das hängt von der Position ab. Am Kreis gelten 65–75 Prozent als gut, aus dem Rückraum 45–55 Prozent, beim Siebenmeter 75–85 Prozent und beim Tempogegenstoß 85–95 Prozent. Eine Team-Wurfquote über 60 Prozent ist im Amateurbereich solide."
+        },
+        {
+          "question": "Wie berechne ich die Paradenquote des Torwarts?",
+          "answer": "Paradenquote = Paraden ÷ (Paraden + Gegentore) × 100. 14 Paraden bei 30 Würfen aufs Tor ergeben rund 47 Prozent. Im Amateurbereich gelten Werte über 33 Prozent als stark, über 40 Prozent als herausragend."
+        },
+        {
+          "question": "Ab wie vielen Würfen ist die Quote aussagekräftig?",
+          "answer": "Als Faustregel: unter zehn Würfen ist die Quote vor allem Zufall. 100 Prozent aus einem Wurf sagen weniger als 55 Prozent aus zwanzig. Schau deshalb immer auf die Anzahl der Abschlüsse daneben."
+        },
+        {
+          "question": "Darf ich den Rechner auf unserer Vereinsseite einbinden?",
+          "answer": "Ja, gerne. Kopier dir den iframe-Code von dieser Seite und setz ihn auf eure Homepage. Der Rechner läuft dann in eurem Layout, kostenlos und ohne Anmeldung."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Statt Kopfrechnen",
+      "title": "Quoten, die sich selbst ausrechnen",
+      "description": "In Statix entsteht die Wurfquote beim Tippen – pro Spieler, pro Position, dazu das Wurfbild. Kostenlos registrieren und selbst erfassen, oder vorher in der Live-Demo ohne Account reinschauen.",
+      "linkLabel": "Statix kostenlos nutzen"
+    }
   }
 }

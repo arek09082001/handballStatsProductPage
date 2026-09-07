@@ -42,7 +42,11 @@ export default function VereineYouth() {
           <ul className='flex flex-col gap-8'>
             {points.map((point) => (
               <li key={point.number} className='flex items-start gap-4'>
-                <PlayerMagnet number={point.number} size='md' className='mt-0.5 shrink-0' />
+                <PlayerMagnet
+                  number={point.number}
+                  size='md'
+                  className='mt-0.5 shrink-0'
+                />
                 <div>
                   <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
                     {point.title}

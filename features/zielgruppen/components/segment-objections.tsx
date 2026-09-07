@@ -1,4 +1,8 @@
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 
 interface SegmentObjectionsProps {
   kicker: string;
@@ -31,19 +35,28 @@ export default function SegmentObjections({
       }`}>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
-        <SectionHeading align='left' kicker={kicker} title={title} description={description} />
+        <SectionHeading
+          align='left'
+          kicker={kicker}
+          title={title}
+          description={description}
+        />
 
         <div className='mt-10 flex flex-col gap-5'>
           {items.map((item) => (
             <BoardCard key={item.question} pin='none' className='p-6 sm:p-7'>
               <h3 className='font-hand text-2xl text-ink'>{item.question}</h3>
-              <p className='mt-3 max-w-[56ch] text-[15px] leading-7 text-ink/75'>{item.answer}</p>
+              <p className='mt-3 max-w-[56ch] text-[15px] leading-7 text-ink/75'>
+                {item.answer}
+              </p>
             </BoardCard>
           ))}
         </div>
 
         {children ? (
-          <div className='mt-10 max-w-[58ch] text-base leading-7 text-ink/70'>{children}</div>
+          <div className='mt-10 max-w-[58ch] text-base leading-7 text-ink/70'>
+            {children}
+          </div>
         ) : null}
       </div>
     </section>

@@ -1,7 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
 import type { FreeAlternative } from '../data/free-content';
 
@@ -36,7 +40,9 @@ export default function FreeAlternatives() {
               <h3 className='font-display text-xl font-bold tracking-tight text-ink'>
                 {option.name}
               </h3>
-              <p className='mt-1 font-hand text-xl text-primary'>{option.cost}</p>
+              <p className='mt-1 font-hand text-xl text-primary'>
+                {option.cost}
+              </p>
               <p className='mt-4 text-[15px] leading-7 text-ink/75'>
                 <span className='font-semibold text-ink'>{t('goodLabel')}</span>
                 {option.good}

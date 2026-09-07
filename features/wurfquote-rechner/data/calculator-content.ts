@@ -1,70 +1,49 @@
 import type { BoardFaqItem } from '@/components/custom-ui/board-faq';
+import { DE_MESSAGES } from '@/lib/messages';
 
 export const CALCULATOR_PAGE_PATH = '/wurfquote-rechner';
 export const CALCULATOR_EMBED_PATH = '/wurfquote-rechner/embed';
 
-export interface PositionBenchmark {
+export interface BenchmarkRange {
   id: string;
-  label: string;
   /** Lower end of the typical range in percent. */
   min: number;
   /** Upper end; omitted where only a floor is meaningful (team quota). */
   max?: number;
+}
+
+/** Label and one-line reason for a benchmark, in the reader's language. */
+export interface BenchmarkCopy {
+  id: string;
+  label: string;
   hint: string;
 }
 
+/** A benchmark ready to render: the range plus the copy that belongs to it. */
+export type PositionBenchmark = BenchmarkRange & BenchmarkCopy;
+
 /**
- * Richtwerte aus dem Ratgeber-Artikel `wurfquote-berechnen` – Amateur- bis
- * ambitionierter Ligabereich. Bewusst dieselben Zahlen wie im Artikel: zwei
- * Quellen mit unterschiedlichen Spannen wären für Trainer wertlos.
+ * The ranges from the Ratgeber article `wurfquote-berechnen` — amateur up to
+ * ambitious league level. Deliberately the same numbers as the article: two
+ * sources with different ranges would be worthless to a coach.
+ *
+ * The figures live here rather than in the bundles because they are the same in
+ * every language, and a percentage that drifted between two translations would
+ * be a different claim, not a different wording. Only the labels and the reason
+ * behind each range are translated.
  */
-export const POSITION_BENCHMARKS: PositionBenchmark[] = [
-  {
-    id: 'tempo',
-    label: 'Tempogegenstoß / Konter',
-    min: 85,
-    max: 95,
-    hint: 'Freie Bälle aufs leere oder halb besetzte Tor – hier ist die Erwartung am höchsten.',
-  },
-  {
-    id: 'siebenmeter',
-    label: 'Siebenmeter',
-    min: 75,
-    max: 85,
-    hint: 'Eigene Disziplin. Getrennt führen, sonst verzerrt sie die Feldquote.',
-  },
-  {
-    id: 'kreis',
-    label: 'Kreis',
-    min: 65,
-    max: 75,
-    hint: 'Kürzeste Distanz, dafür oft im Fallen und mit Körperkontakt.',
-  },
-  {
-    id: 'aussen',
-    label: 'Außen',
-    min: 55,
-    max: 70,
-    hint: 'Spitzer Winkel, dafür meist ohne Block vor sich.',
-  },
-  {
-    id: 'rueckraum',
-    label: 'Rückraum (9 Meter)',
-    min: 45,
-    max: 55,
-    hint: 'Größte Distanz, geschlossener Block, Torwart gut vorbereitet.',
-  },
-  {
-    id: 'team',
-    label: 'Mannschaft gesamt',
-    min: 60,
-    hint: 'Über 60 Prozent gilt im Amateurbereich als solider Wert.',
-  },
+export const BENCHMARK_RANGES: readonly BenchmarkRange[] = [
+  { id: 'tempo', min: 85, max: 95 },
+  { id: 'siebenmeter', min: 75, max: 85 },
+  { id: 'kreis', min: 65, max: 75 },
+  { id: 'aussen', min: 55, max: 70 },
+  { id: 'rueckraum', min: 45, max: 55 },
+  { id: 'team', min: 60 },
 ];
 
 export const DEFAULT_BENCHMARK_ID = 'rueckraum';
 
-/** Snippet für Vereinsseiten – dieselbe Höhe wie das Embed-Layout. */
+/** Snippet for club sites – the same height as the embed layout. */
 export const EMBED_SNIPPET = `<iframe
   src="https://www.statix-app.de/wurfquote-rechner/embed"
   title="Wurfquoten-Rechner von Statix"
@@ -74,35 +53,6 @@ export const EMBED_SNIPPET = `<iframe
   style="border:0;max-width:640px"
 ></iframe>`;
 
-export const CALCULATOR_FAQS: BoardFaqItem[] = [
-  {
-    question: 'Wie berechnet man die Wurfquote im Handball?',
-    answer:
-      'Du teilst die Tore durch die Würfe und multiplizierst mit 100: Wurfquote (%) = Tore ÷ Würfe × 100. Beispiel: 7 Tore aus 12 Würfen ergeben 58,3 Prozent.',
-  },
-  {
-    question: 'Was zählt als Wurf?',
-    answer:
-      'Jeder echte Torabschluss: Tor, gehaltener Ball, Pfosten- oder Lattentreffer und klarer Fehlwurf. Ein technischer Fehler ohne Abschluss – etwa ein Schrittfehler – ist kein Wurf und fließt nicht in die Quote ein.',
-  },
-  {
-    question: 'Was ist eine gute Wurfquote?',
-    answer:
-      'Das hängt von der Position ab. Am Kreis gelten 65–75 Prozent als gut, aus dem Rückraum 45–55 Prozent, beim Siebenmeter 75–85 Prozent und beim Tempogegenstoß 85–95 Prozent. Eine Team-Wurfquote über 60 Prozent ist im Amateurbereich solide.',
-  },
-  {
-    question: 'Wie berechne ich die Paradenquote des Torwarts?',
-    answer:
-      'Paradenquote = Paraden ÷ (Paraden + Gegentore) × 100. 14 Paraden bei 30 Würfen aufs Tor ergeben rund 47 Prozent. Im Amateurbereich gelten Werte über 33 Prozent als stark, über 40 Prozent als herausragend.',
-  },
-  {
-    question: 'Ab wie vielen Würfen ist die Quote aussagekräftig?',
-    answer:
-      'Als Faustregel: unter zehn Würfen ist die Quote vor allem Zufall. 100 Prozent aus einem Wurf sagen weniger als 55 Prozent aus zwanzig. Schau deshalb immer auf die Anzahl der Abschlüsse daneben.',
-  },
-  {
-    question: 'Darf ich den Rechner auf unserer Vereinsseite einbinden?',
-    answer:
-      'Ja, gerne. Kopier dir den iframe-Code von dieser Seite und setz ihn auf eure Homepage. Der Rechner läuft dann in eurem Layout, kostenlos und ohne Anmeldung.',
-  },
-];
+/** The visible FAQ in German, for the route's `FAQPage` node. */
+export const CALCULATOR_FAQS: BoardFaqItem[] =
+  DE_MESSAGES.calculatorPage.faq.items;

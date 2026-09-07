@@ -1,7 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Grain, PlayerMagnet, SectionHeading } from '@/features/landing-page/components/tactic';
+import {
+  Grain,
+  PlayerMagnet,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
 import type { HowToStep } from '../data/template-content';
 
@@ -37,7 +41,9 @@ export default function TemplateHowTo() {
                 <h3 className='font-display text-xl font-bold tracking-tight text-ink'>
                   {step.name}
                 </h3>
-                <p className='mt-2 max-w-[64ch] text-[15px] leading-7 text-ink/75'>{step.text}</p>
+                <p className='mt-2 max-w-[64ch] text-[15px] leading-7 text-ink/75'>
+                  {step.text}
+                </p>
               </div>
             </li>
           ))}
