@@ -2667,5 +2667,449 @@
       "description": "Crear la cuenta, escribir la plantilla y listo: lleva menos que preparar un entrenamiento. O mira antes en la demo en directo si puedes manejarlo desde el banquillo.",
       "linkLabel": "Qué se incluye gratis"
     }
+  },
+  "author": {
+    "role": "Portero, entrenador y fundador de Statix",
+    "bio": "Arkadiusz Weiss lleva más de diez años bajo los palos de balonmano y entrena él mismo a un equipo de categoría regional, exactamente el día a día para el que están escritas estas guías. Statix nació de ese día a día: de la hoja de papel a pie de pista que después del pitido final nunca se convertía en un análisis aprovechable."
+  },
+  "experiencesPage": {
+    "hero": {
+      "kicker": "Experiencias",
+      "titleBrand": "Statix",
+      "titleHighlight": "experiencias",
+      "titleTail": ": así trabajan los entrenadores con la app",
+      "ledeWithQuotes": "Lo que cuentan los entrenadores que usan Statix en competición, con nombre y club y sin citas maquilladas. Además: cómo las respuestas desde el pabellón se convierten en funciones nuevas.",
+      "ledeEmpty": "Por delante y con honestidad: aquí todavía no hay citas publicadas de entrenadores, porque nadie ha autorizado ninguna. En su lugar encontrarás quién desarrolla Statix, cómo llegan a la app las opiniones desde el pabellón y cómo hacerte tu propia idea en dos minutos."
+    },
+    "testimonials": {
+      "kicker": "Dicen los entrenadores",
+      "title": "Voces desde el pabellón",
+      "descriptionWithQuotes": "Entrenadores que usan Statix en competición, con nombre y club.",
+      "descriptionEmpty": "Aquí solo aparecen citas que existen de verdad. Ahora mismo no hay ninguna.",
+      "ratingLabel": "Valoración: {value} de {best}",
+      "emptyParagraph1": "Statix es joven. Hay entrenadores que trabajan con la app, pero todavía no hay citas que alguien haya autorizado con nombre y club, y justo por eso aquí no hay ninguna. Voces inventadas, valoraciones con estrellas imaginarias o «un entrenador de Baviera» no los encontrarás en esta página, ni en el texto ni en el marcado para buscadores.",
+      "emptyParagraph2": "Si quieres saber si Statix encaja con tu equipo, la demo en directo te ayuda más que cualquier opinión ajena: datos reales de partido, en el navegador y sin cuenta. Y si ya trabajas con ella, escríbeme a <mail>{email}</mail>: tu testimonio aparecerá aquí.",
+      "emptyParagraph3": "Lo que puede la app está en <brand>¿qué es Statix?</brand> y lo que cuesta en <pricing>precios</pricing>."
+    },
+    "story": {
+      "kicker": "Desarrollado por un jugador de balonmano",
+      "title": "Quién está detrás de Statix",
+      "paragraph": "Por eso Statix no es una herramienta salida de un plan de producto, sino de un pabellón. Las opiniones de entrenadoras y entrenadores pasan directamente al desarrollo, y las funciones nuevas nacen donde hacen falta: en el banquillo, en el entrenamiento y en el análisis posterior.",
+      "moreLink": "Más sobre la app: <brand>¿qué es Statix?</brand>"
+    },
+    "feedbackLoop": {
+      "kicker": "El camino corto",
+      "title": "Cómo llega a la app lo que se ve en el pabellón",
+      "description": "Entre tu mensaje y la persona que escribe el código no hay nadie.",
+      "mailCta": "Enviar comentarios por correo",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Se detecta en el pabellón",
+          "text": "Casi todo lo que hay en Statix nació en un día de partido: un botón demasiado pequeño, un análisis que nadie podía abrir en el autobús, una acción que en pleno lío pedía dos toques de más."
+        },
+        {
+          "number": 2,
+          "title": "Llega por correo o Instagram",
+          "text": "Los entrenadores me escriben directamente, casi siempre sin formulario y muchas veces un domingo por la noche. Leo todos los mensajes yo mismo; no hay un equipo de soporte en medio."
+        },
+        {
+          "number": 3,
+          "title": "Se construye cuando hace falta a más de uno",
+          "text": "Lo que llega varias veces sube al principio de la lista. El modo torneo, el marcador en directo y las encuestas a jugadores nacieron justo así: no de un plan de mercado, sino porque los entrenadores lo pidieron."
+        },
+        {
+          "number": 4,
+          "title": "Vuelve al pabellón",
+          "text": "Las funciones nuevas se estrenan donde hicieron falta. Si sobreviven a un día de partido, se quedan; si no, salen otra vez."
+        }
+      ],
+      "closing": "Si quieres saber cómo trabajan con Statix los entrenadores en un club o en la base, lo encuentras en las páginas <clubs>Statix para clubes</clubs> y <youth>Statix para entrenadores de base</youth>. Conocimiento práctico sin la app hay en la <guide>guía de balonmano</guide>."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre las experiencias con Statix",
+      "description": "Por qué aquí no hay valoraciones con estrellas y cómo formarte igualmente una opinión.",
+      "items": [
+        {
+          "question": "¿Hay testimonios de entrenadores sobre Statix?",
+          "answer": "Todavía no públicamente. Statix es joven y solo publico voces cuando entrenadores reales las han autorizado con nombre y club. Citas inventadas o anonimizadas no las encontrarás aquí."
+        },
+        {
+          "question": "¿Cómo puedo probar Statix sin depender de las valoraciones?",
+          "answer": "Con la demo en directo. Funciona con datos reales de partido en el navegador, sin cuenta y sin instalación, así que ves tú mismo cómo se siente el registro en lugar de apoyarte en experiencias ajenas."
+        },
+        {
+          "question": "¿Quién desarrolla Statix?",
+          "answer": "Arkadiusz Weiss, un jugador de balonmano de Alemania que construyó la app a partir de su propia experiencia a pie de pista. Ni una gran empresa ni un equipo anónimo: las opiniones desde el pabellón pasan directamente al desarrollo."
+        },
+        {
+          "question": "¿Cómo envío comentarios o aviso de un fallo?",
+          "answer": "Lo más sencillo es por correo a {email} o por Instagram. Cuéntame en concreto en qué situación echaste algo en falta: en el día de partido, en el entrenamiento o al analizar después."
+        },
+        {
+          "question": "¿Puedo aportar una cita como entrenador?",
+          "answer": "Con mucho gusto. Escríbeme cómo trabajas con Statix y qué te ayuda en concreto. Si te parece bien que aparezcan tu nombre, tu función y tu club, tu testimonio irá a esta página."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Tu propio criterio",
+      "title": "La experiencia más honesta es la tuya",
+      "description": "Dos minutos con datos reales de partido te dicen más que cualquier valoración ajena: regístrate gratis y registra tú mismo, o asómate antes a la demo en directo sin cuenta.",
+      "linkLabel": "¿Qué es Statix?"
+    }
+  },
+  "freePage": {
+    "hero": {
+      "kicker": "Registrar gratis",
+      "titleLead": "Usar la app de estadísticas de balonmano",
+      "titleHighlight": "gratis",
+      "titleTail": "",
+      "lede": "Sí, Statix es una app de estadísticas de balonmano gratuita. Registras los partidos en directo con un toque, obtienes automáticamente porcentajes de tiro, mapas de tiro y valores de jugador, y los compartes con el equipo. Sin tarjeta de crédito y sin periodo de prueba con fecha de caducidad. La demo en directo funciona incluso sin cuenta, en el navegador.",
+      "trust": [
+        "Sin tarjeta de crédito",
+        "Demo sin cuenta",
+        "Sin conexión en el pabellón"
+      ]
+    },
+    "scope": {
+      "kicker": "Negro sobre blanco",
+      "title": "Qué incluye el acceso gratuito",
+      "description": "A la izquierda, lo que obtienes. A la derecha, dónde termina: ambas cosas forman parte de una respuesta honesta.",
+      "caption": "Funciones del acceso gratuito a Statix y sus límites",
+      "colFeature": "Función",
+      "colLimit": "Límite en el acceso gratuito",
+      "noLimit": "sin límite",
+      "rows": [
+        {
+          "feature": "Registrar y analizar partidos en directo",
+          "limit": "200 partidos por equipo"
+        },
+        {
+          "feature": "Mantener la plantilla",
+          "limit": "25 jugadores por equipo"
+        },
+        {
+          "feature": "Equipos en tu cuenta",
+          "limit": "3 equipos"
+        },
+        {
+          "feature": "Invitar al cuerpo técnico",
+          "limit": "5 entrenadores por equipo, invitaciones pendientes incluidas"
+        },
+        {
+          "feature": "Porcentajes de tiro, valores de jugador, mapas de tiro",
+          "limit": "sin límite"
+        },
+        {
+          "feature": "Torneos con clasificación y calendario",
+          "limit": "10 torneos por equipo"
+        },
+        {
+          "feature": "Balance ante rivales (cara a cara)",
+          "limit": "60 rivales por equipo"
+        },
+        {
+          "feature": "Encuestas a jugadores",
+          "limit": "20 encuestas por equipo"
+        },
+        {
+          "feature": "Marcador público en directo",
+          "limit": "sin límite"
+        },
+        {
+          "feature": "Registrar sin conexión y sincronizar después",
+          "limit": "sin límite"
+        },
+        {
+          "feature": "Plantilla como álbum con fichas de jugador",
+          "limit": "sin límite"
+        },
+        {
+          "feature": "Análisis con IA (partido, equipo, jugador, torneo)",
+          "limit": "3 en 24 horas, 25 en 30 días, 1 simultáneo"
+        },
+        {
+          "feature": "Compartir informes en PDF",
+          "limit": "3 en 24 horas"
+        },
+        {
+          "feature": "Demo en directo sin cuenta",
+          "limit": "sin límite"
+        }
+      ],
+      "closing": "Los cupos de análisis con IA e informes compartidos van en ventanas móviles: un análisis deja de contar exactamente 24 horas o 30 días después de haber empezado; no hay un reinicio fijo a medianoche. Los informes borrados no devuelven el cupo; los jugadores, partidos o torneos borrados sí liberan su plaza. Lo que una suscripción cambiaría más adelante está en la página <pricing>precios de la app de estadísticas de balonmano</pricing>."
+    },
+    "demo": {
+      "kicker": "Cero esfuerzo",
+      "title": "Demo en directo sin cuenta",
+      "description": "Sin formulario, sin dirección de correo, sin contraseña: un clic y estás dentro.",
+      "paragraph": "La demo no es un recorrido de clics con textos de relleno, sino una versión completa de Statix con datos reales de partido. Ves el registro en directo, los mapas de tiro, los valores de jugador y un análisis con IA terminado, tal y como se ve el sábado en el pabellón. Si te gusta, después creas tu propio equipo. Si no, no has dejado nada.",
+      "cta": "Iniciar la demo en directo",
+      "screenshotAlt": "App gratuita de estadísticas de balonmano: registrar acciones del partido en directo con un toque",
+      "screenshotLabel": "Registro en directo en la demo"
+    },
+    "why": {
+      "kicker": "Sin truco",
+      "title": "Por qué hay una versión gratuita",
+      "paragraph": "Construí Statix porque yo mismo estaba en el banquillo y me faltaban los números. Una app que hay que comprar antes de saber si funciona en el pabellón no la habría probado nunca, y tú probablemente tampoco. Así que es gratuita mientras crece: necesito entrenadores que la usen de verdad y me digan qué falta. Más adelante una suscripción sostendrá el funcionamiento, pero quien empieza hoy no paga nada hoy y será avisado antes si algo cambia."
+    },
+    "alternatives": {
+      "kicker": "Comparado con honestidad",
+      "title": "Alternativas gratuitas comparadas",
+      "description": "Statix no es la única forma de tener estadísticas de balonmano sin gastar dinero. Aquí están las tres, una junto a otra.",
+      "goodLabel": "Bueno para: ",
+      "badLabel": "El inconveniente: ",
+      "items": [
+        {
+          "name": "Papel y bolígrafo",
+          "cost": "No cuesta nada",
+          "good": "Nunca falla, no necesita batería y cualquiera puede usarlo enseguida.",
+          "bad": "Quien entrena no toma notas. Y lo que se anota no lo calcula nadie: como muy tarde en diciembre el montón sigue sin analizar en la bolsa de deporte."
+        },
+        {
+          "name": "Plantilla de Excel",
+          "cost": "No cuesta nada",
+          "good": "Calcula sola los porcentajes de tiro, se puede adaptar y es tuya.",
+          "bad": "Inmanejable en el pabellón, así que la pasas a limpio por la noche. Sin mapa de tiro, sin evolución por jugador, y el segundo entrenador siempre tiene la versión equivocada."
+        },
+        {
+          "name": "Statix",
+          "cost": "Básico 0 € para siempre",
+          "good": "Un toque por acción, análisis listo al pitido final, uso sin conexión y compartir por enlace.",
+          "bad": "Necesitas un móvil o una tableta y una cuenta. Para los análisis con IA y los informes compartidos rigen cupos diarios."
+        }
+      ],
+      "closing": "Si quieres seguir con la hoja de cálculo, usa una que ya calcule: nuestra <template>plantilla de Excel gratuita para estadísticas de balonmano</template> incluye plantilla, acta de partido, análisis y hoja de temporada con fórmulas ya hechas, y se descarga sin registro. Para un porcentaje suelto basta la <calculator>calculadora de efectividad de tiro</calculator>, y en la guía se explica cómo <guide>llevar bien una estadística de balonmano</guide>."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre el uso gratuito",
+      "description": "Lo que quieren saber los entrenadores antes de registrar su primer partido.",
+      "items": [
+        {
+          "question": "¿Existe una app de estadísticas de balonmano realmente gratuita?",
+          "answer": "Sí. Hasta el 31 de diciembre de 2026 Statix se puede usar gratis con todas sus funciones, y después el nivel Básico sigue siendo gratuito para siempre: registrar partidos en directo, analizarlos, planificar citas, fichas de plantilla y marcador público en directo. No hay ningún proceso de pago en la app ni petición de tarjeta de crédito."
+        },
+        {
+          "question": "¿Tengo que dar datos de pago para el uso gratuito?",
+          "answer": "No. En la app no hay proceso de pago ni campo para datos de tarjeta o bancarios. Para un equipo propio solo necesitas una dirección de correo; para la demo en directo, ni siquiera eso."
+        },
+        {
+          "question": "¿Qué puedo probar sin cuenta?",
+          "answer": "La demo en directo. Es una versión completa de Statix con datos reales de partido: estadísticas en vivo, mapas de tiro y análisis con IA directamente en el navegador, sin registro y sin instalación."
+        },
+        {
+          "question": "¿Qué límites tiene el acceso gratuito?",
+          "answer": "Hasta el 31 de diciembre de 2026: por equipo 25 jugadores, 200 partidos, 10 torneos, 60 rivales, 20 encuestas y 5 entrenadores incluidas las invitaciones pendientes; por cuenta 3 equipos. Además, 3 análisis con IA en 24 horas y 25 en 30 días (uno simultáneo) y 3 informes compartidos en 24 horas. A partir del 1 de enero de 2027 rigen para las cuentas nuevas los límites del nivel Básico: un equipo, 20 jugadores, 10 partidos, los últimos cinco con toda la profundidad, 3 torneos y 4 análisis con IA y 4 informes compartidos al mes."
+        },
+        {
+          "question": "¿Statix seguirá siendo gratuito?",
+          "answer": "Sí. A partir del 1 de enero de 2027 el acceso gratuito se llama Básico y se queda en 0 € para siempre: todo el registro en directo, el calendario completo, las fichas de plantilla y el marcador público en directo, para un equipo. Desde entonces se paga lo que cuesta dinero de verdad: análisis con IA en mayor número, análisis de vídeo, informes compartidos y varios equipos. Quien se registre antes del 1 de enero de 2027 conserva el plan Entrenador gratis hasta el final de la temporada 26/27, el 30 de junio de 2027."
+        },
+        {
+          "question": "¿Tiene sentido una app gratuita para un club?",
+          "answer": "Para empezar, sí. Cualquier entrenador puede ponerse en marcha de inmediato sin que nadie tome un acuerdo ni libere dinero. Si varios equipos deben registrar con el mismo esquema, después merece la pena mirar la página para clubes."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Sin registro",
+      "title": "Empezar gratis, hoy mismo",
+      "description": "Para tu propio equipo basta una dirección de correo: sin tarjeta de crédito y sin proceso de pago. Y si prefieres mirar primero, la demo en directo funciona con datos reales de partido sin ningún dato tuyo.",
+      "linkLabel": "Cuánto cuesta Statix"
+    }
+  },
+  "templatePage": {
+    "hero": {
+      "kicker": "Descarga gratuita",
+      "titleLead": "Plantilla de Excel para",
+      "titleHighlight": "estadísticas de balonmano",
+      "titleTail": "gratis",
+      "lede": "Cuatro hojas, fórmulas ya hechas y encabezados de columna en alemán: Kader (plantilla), Spielprotokoll (acta del partido), Auswertung (análisis) y Saison (temporada). La efectividad de tiro, el porcentaje de siete metros y el de paradas se calculan solos; tú solo anotas lo que pasa en la pista. Sin registro y sin dirección de correo.",
+      "squadSlots": "{count} plazas de plantilla",
+      "actionRows": "{count} filas de acciones",
+      "games": "{count} partidos por temporada",
+      "printReady": "listo para imprimir",
+      "cardTitle": "Descargar la plantilla",
+      "downloadCta": "Descargar la plantilla de Excel gratis",
+      "downloadNote": "Descarga inmediata. Sin registro y sin boletín obligatorio."
+    },
+    "optin": {
+      "title": "Opcional: novedades por correo",
+      "note": "No es obligatorio para la descarga: la plantilla la consigues sin nada de esto.",
+      "emailLabel": "Dirección de correo",
+      "emailPlaceholder": "tu@correo.com",
+      "newsletterCheckbox": "Sí, envíame el boletín de Statix con novedades sobre la app.",
+      "privacyPrefix": "He leído la",
+      "privacyLink": "información de privacidad",
+      "privacyLinkTitle": "Ir a la política de privacidad",
+      "privacySuffix": ". Puedo darme de baja en cualquier momento.",
+      "submit": "Suscribirme",
+      "pending": "Enviando …",
+      "success": "Casi está: te he enviado un correo de confirmación. Solo quedas inscrito al pulsar el enlace que contiene.",
+      "genericError": "Por desgracia no ha funcionado.",
+      "invalidEmail": "Introduce una dirección de correo válida.",
+      "missingConsent": "Para el boletín necesito las dos casillas. La plantilla la consigues igualmente sin ellas."
+    },
+    "metrics": {
+      "kicker": "Cuatro hojas",
+      "title": "Qué recoge la plantilla",
+      "description": "Nada de esto tienes que montarlo tú: las fórmulas ya están dentro y calculan en cuanto escribes la primera fila.",
+      "groups": [
+        {
+          "sheet": "Kader (plantilla)",
+          "description": "Tu equipo con dorsal, nombre, posición y año de nacimiento. El dorsal es la clave: todas las demás hojas toman el nombre de ahí automáticamente.",
+          "metrics": [
+            "Dorsal",
+            "Nombre",
+            "Posición (lista desplegable)",
+            "Año de nacimiento",
+            "Nota"
+          ]
+        },
+        {
+          "sheet": "Spielprotokoll (acta del partido)",
+          "description": "Una fila por acción, tal y como ocurre de verdad a pie de pista. La acción y la zona de tiro se eligen de una lista; el nombre no hay que escribirlo nunca.",
+          "metrics": [
+            "Gol y tiro fallado",
+            "Siete metros (gol / fallo)",
+            "Parada y gol encajado",
+            "Asistencia",
+            "Error técnico",
+            "2 minutos, amarilla, roja",
+            "Zona de tiro: extremo, pivote, primera línea, penetración, contraataque, siete metros"
+          ]
+        },
+        {
+          "sheet": "Auswertung (análisis)",
+          "description": "Un partido, todos los jugadores, ya calculado. Arriba escribes la denominación del partido; el resto ya está.",
+          "metrics": [
+            "Tiros y goles por jugador",
+            "Efectividad de tiro en porcentaje",
+            "Porcentaje de siete metros",
+            "Asistencias, errores técnicos, exclusiones",
+            "± (goles incl. 7 m menos tiros fallados menos errores técnicos)",
+            "Paradas, goles encajados y porcentaje de paradas del portero",
+            "Fila de equipo con todas las sumas y porcentajes"
+          ]
+        },
+        {
+          "sheet": "Saison (temporada)",
+          "description": "La lista de partidos de la temporada y, debajo, los valores acumulados de cada jugador en todos los encuentros registrados.",
+          "metrics": [
+            "Goles propios y encajados por partido",
+            "Número de partidos por jugador",
+            "Tiros, goles y efectividad a lo largo de la temporada",
+            "Balance de siete metros",
+            "Errores técnicos y exclusiones",
+            "Porcentaje de paradas a lo largo de la temporada"
+          ]
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "En cinco pasos",
+      "title": "Así rellenas la plantilla durante el partido",
+      "description": "Configurarla una vez y luego una fila por acción. No es más que eso.",
+      "steps": [
+        {
+          "name": "Introducir la plantilla una vez",
+          "text": "En la hoja «Kader» anota dorsal, nombre y posición de tus jugadores. Eso se hace una vez por temporada. Las cuatro filas de ejemplo en gris se sobrescriben sin más."
+        },
+        {
+          "name": "Nombrar el partido",
+          "text": "Dale al partido una denominación corta en la hoja «Saison», por ejemplo Sp1, junto con la fecha y el rival. Esa misma denominación la usarás enseguida en el acta."
+        },
+        {
+          "name": "Registrar cada acción como una fila",
+          "text": "En la hoja «Spielprotokoll» anotas una fila por acción: partido, minuto, dorsal, acción y zona de tiro. El nombre aparece solo. La acción y la zona se eligen de la lista: un clic en lugar de escribir."
+        },
+        {
+          "name": "Aprovechar el descanso",
+          "text": "En la pausa echa un vistazo rápido a la hoja «Auswertung». Las efectividades de tiro y de paradas ya están calculadas: suficiente para una charla basada en números y no en sensaciones."
+        },
+        {
+          "name": "Analizar después del partido",
+          "text": "Escribe arriba en el análisis la denominación del partido e imprime la hoja o compártela. La hoja de temporada se actualiza sola con cada partido registrado."
+        }
+      ],
+      "closing": "Si al registrar dudas sobre qué cuenta como tiro y qué no: en la guía se explica <guide>cómo llevar bien una estadística de balonmano</guide> y cómo <rate>calcular la efectividad de tiro e interpretarla correctamente</rate>. Para valores sueltos está la <calculator>calculadora de efectividad de tiro</calculator>."
+    },
+    "limits": {
+      "kicker": "Ser honestos",
+      "title": "Dónde se queda Excel en la tercera jornada",
+      "description": "La plantilla de arriba es buena. Aun así, no conozco casi a ningún entrenador que aguante con ella toda una temporada, por cinco razones muy concretas.",
+      "items": [
+        {
+          "title": "En el banquillo no se escribe en celdas",
+          "text": "De pie y con una tableta no aciertas una celda mientras el rival contraataca. En la práctica eso lleva a anotar lo que aún recuerdas, y al cuarto de hora eso ya no es mucho."
+        },
+        {
+          "title": "Pasarlo a limpio te cuesta el domingo",
+          "text": "Quien transcribe la hoja por la noche hace el trabajo dos veces. Y cada transcripción genera errores: un tiro fallado que se pierde al copiar sube la efectividad y acabas dirigiendo el entrenamiento con un número que nunca existió."
+        },
+        {
+          "title": "Sin mapa de tiro",
+          "text": "Una tabla te dice que el 40 por ciento de los tiros de primera línea entraron. No te dice que todos los fallos vinieron de la misma esquina. Dónde se tiró solo se ve sobre una pista, no en una celda."
+        },
+        {
+          "title": "Sin evolución por jugador",
+          "text": "La hoja de temporada suma, pero no dibuja una curva. Si una jugadora de primera línea mejora a lo largo de seis partidos o solo tuvo uno bueno, en las sumas no se lee."
+        },
+        {
+          "title": "En la tercera jornada ya no la abre nadie",
+          "text": "Ese es el problema de verdad. El archivo está en un portátil que el segundo entrenador no tiene, en una versión que nadie conoce. Después de la tercera jornada es un archivo muerto, no una herramienta."
+        }
+      ]
+    },
+    "upgrade": {
+      "kicker": "El siguiente paso",
+      "title": "Cuando la plantilla ya no basta",
+      "description": "Las mismas acciones, tocadas en lugar de escritas, y el análisis listo cuando suena la bocina.",
+      "paragraph": "En el fondo, Statix es la misma idea que esta plantilla: una fila por acción. Solo que la fila es un toque en el móvil, que la posición del tiro viene incluida y se convierte en un mapa de tiro, y que después del partido nadie transcribe nada. Sin conexión en el pabellón también funciona: los datos suben en cuanto vuelve la cobertura.",
+      "statsLink": "Qué indicadores encajan entre sí, y qué valor de referencia es normal en el ámbito amateur, está en el resumen <stats>estadísticas de balonmano</stats>.",
+      "costLink": "Lo que cuesta está en la página <pricing>precios de la app de estadísticas de balonmano</pricing>: en resumen, ahora mismo nada. Hasta dónde llegas <free>gratis</free> se detalla allí. Y si primero quieres saber qué hace la app: <brand>¿qué es Statix?</brand>",
+      "screenshotAlt": "Estadísticas de jugadores y efectividad de tiro en la app Statix en lugar de en una tabla de Excel",
+      "screenshotLabel": "Análisis justo tras el pitido final"
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre la plantilla de Excel",
+      "description": "Todo lo que los entrenadores quieren saber antes de descargarla.",
+      "items": [
+        {
+          "question": "¿La plantilla de Excel es realmente gratuita?",
+          "answer": "Sí. La descarga empieza al instante, sin registro, sin dirección de correo y sin boletín. Puedes quedarte el archivo, adaptarlo y pasarlo dentro del club."
+        },
+        {
+          "question": "¿Con qué programas puedo abrir la plantilla?",
+          "answer": "Con Microsoft Excel, LibreOffice Calc y Hojas de cálculo de Google. Las fórmulas se han mantenido deliberadamente sencillas (COUNTIFS, INDEX/MATCH, SUMPRODUCT) para que calculen en todas partes. En Apple Numbers los cálculos también funcionan, aunque alguna lista desplegable puede perderse al importar."
+        },
+        {
+          "question": "¿Qué indicadores calcula la plantilla automáticamente?",
+          "answer": "Tiros, goles y efectividad por jugador, el porcentaje de siete metros, asistencias, errores técnicos y exclusiones, un ± por jugador y también paradas, goles encajados y porcentaje de paradas del portero. Además, sumas de equipo por partido y valores acumulados de temporada."
+        },
+        {
+          "question": "¿Qué cuenta como tiro?",
+          "answer": "Cualquier lanzamiento a portería: gol, balón parado, poste y fallo claro. Un error técnico sin lanzamiento no es un tiro y no entra en la efectividad. Los siete metros se llevan aparte, porque si no distorsionarían la efectividad en juego."
+        },
+        {
+          "question": "¿Basta la plantilla para toda una temporada?",
+          "answer": "Está pensada para 400 acciones registradas, 30 partidos y 20 plazas de plantilla. Para una temporada de base o amateur suele bastar; quien necesite más solo tiene que arrastrar las fórmulas hacia abajo."
+        },
+        {
+          "question": "¿Tengo que suscribirme al boletín para conseguir el archivo?",
+          "answer": "No. La descarga es independiente de todo lo demás. El boletín es una oferta voluntaria al lado: la casilla no está marcada de antemano y sin marcarla consigues la plantilla igual."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Sin transcribir",
+      "title": "Las mismas acciones, solo que tocadas",
+      "description": "Regístrate gratis y registra tu primer partido sin transcribir nada por la noche. O mira antes en la demo en directo cómo se siente sin celdas, sin cuenta alguna.",
+      "linkLabel": "Cuánto cuesta Statix"
+    }
   }
 }

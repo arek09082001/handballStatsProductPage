@@ -2667,5 +2667,449 @@
       "description": "Create an account, type in the squad, done – that takes less time than preparing a training session. Or check in the live demo first whether you can operate it from the bench.",
       "linkLabel": "What is included for free"
     }
+  },
+  "author": {
+    "role": "Goalkeeper, coach and founder of Statix",
+    "bio": "Arkadiusz Weiss has been in the handball goal for over ten years and coaches a team at regional league level himself – exactly the everyday work these guides are written for. Statix came out of that everyday work: out of the sheet of paper on the sideline that never turned into a usable analysis after the final whistle."
+  },
+  "experiencesPage": {
+    "hero": {
+      "kicker": "Experiences",
+      "titleBrand": "Statix",
+      "titleHighlight": "experiences",
+      "titleTail": ": how coaches work with the app",
+      "ledeWithQuotes": "What coaches report who use Statix in competitive play – with name and club, with no polished quotes. Plus: how feedback from the hall turns into new features.",
+      "ledeEmpty": "Honestly, up front: there are no published coach quotes here yet, because nobody has released one. Instead this page says who develops Statix, how feedback from the hall makes its way into the app – and how you can form your own picture in two minutes."
+    },
+    "testimonials": {
+      "kicker": "Coaches say",
+      "title": "Voices from the hall",
+      "descriptionWithQuotes": "Coaches who use Statix in competitive play – with name and club.",
+      "descriptionEmpty": "Only quotes that really exist appear here. At the moment there are none.",
+      "ratingLabel": "Rating: {value} out of {best}",
+      "emptyParagraph1": "Statix is young. There are coaches working with it, but no quotes anyone has released with name and club – which is exactly why none stands here. Invented voices, made-up star ratings or “a coach from Bavaria” you will not find on this page, neither in the text nor in the markup for search engines.",
+      "emptyParagraph2": "If you want to know whether Statix suits your team, the live demo helps you more than anyone else's opinion: real match data, straight in the browser, without an account. And if you work with it yourself, do write to me at <mail>{email}</mail> – your account will then stand here.",
+      "emptyParagraph3": "What the app can do is on <brand>what is Statix?</brand>, what it costs under <pricing>pricing</pricing>."
+    },
+    "story": {
+      "kicker": "Built by a handball player",
+      "title": "Who is behind Statix",
+      "paragraph": "Statix is therefore not a tool out of a product plan but out of a sports hall. Feedback from coaches goes straight into development, and new features come about where they are needed – on the bench, in training and in the follow-up.",
+      "moreLink": "More about the app: <brand>what is Statix?</brand>"
+    },
+    "feedbackLoop": {
+      "kicker": "The short route",
+      "title": "How feedback from the hall reaches the app",
+      "description": "Between your message and the person writing the code there is nobody.",
+      "mailCta": "Feedback by email",
+      "steps": [
+        {
+          "number": 1,
+          "title": "It comes up in the hall",
+          "text": "Almost everything in Statix came about on a match day: a button that was too small, an analysis nobody could open on the bus, an action that took two taps too many in the middle of things."
+        },
+        {
+          "number": 2,
+          "title": "It arrives by email or Instagram",
+          "text": "Coaches write to me directly – mostly without a form, often on a Sunday evening. I read every message myself; there is no support team in between."
+        },
+        {
+          "number": 3,
+          "title": "It gets built when more than one person needs it",
+          "text": "What comes up repeatedly lands at the top of the list. Tournament mode, the live ticker and the player surveys came about exactly that way – not out of a market plan but because coaches asked for them."
+        },
+        {
+          "number": 4,
+          "title": "It goes back into the hall",
+          "text": "New features run first where they were needed. If they survive a match day, they stay – and if not, they go out again."
+        }
+      ],
+      "closing": "If you want to know how coaches work with Statix in a club or in youth handball, you will find that on the pages <clubs>Statix for clubs</clubs> and <youth>Statix for youth coaches</youth>. Practical knowledge without the app is in the <guide>handball guide</guide>."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about experiences with Statix",
+      "description": "Why there are no star ratings here – and how you can still form a judgement.",
+      "items": [
+        {
+          "question": "Are there coach testimonials about Statix?",
+          "answer": "Not publicly yet. Statix is young, and I only publish voices once real coaches have released them with name and club. You will not find invented or anonymised quotes here."
+        },
+        {
+          "question": "How can I try Statix myself without relying on reviews?",
+          "answer": "Through the live demo. It runs on real match data in the browser, without an account and without installing anything – so you see for yourself how recording feels instead of leaning on other people's experiences."
+        },
+        {
+          "question": "Who develops Statix?",
+          "answer": "Arkadiusz Weiss, a handball player from Germany who built the app out of his own practice on the sideline. No corporation, no anonymous team – feedback from the hall goes straight into development."
+        },
+        {
+          "question": "How do I give feedback or report a bug?",
+          "answer": "Most easily by email to {email} or through Instagram. Do be specific about the situation in which something was missing – on match day, in training or in the follow-up."
+        },
+        {
+          "question": "Can I contribute a quote as a coach?",
+          "answer": "Very gladly. Write to me about how you work with Statix and what specifically helps you. If you are happy for your name, role and club to appear alongside it, your account goes on this page."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Your own judgement",
+      "title": "The most honest experience is your own",
+      "description": "Two minutes with real match data tell you more than anyone else's review: register free and record for yourself – or look into the live demo first, without an account.",
+      "linkLabel": "What is Statix?"
+    }
+  },
+  "freePage": {
+    "hero": {
+      "kicker": "Record for free",
+      "titleLead": "Use the handball statistics app",
+      "titleHighlight": "for free",
+      "titleTail": "",
+      "lede": "Yes – Statix is a free handball statistics app. You record matches live with a tap, get shooting percentages, shot maps and player values automatically, and share them with the team. No credit card, no trial with an expiry date. The live demo even runs in the browser without an account at all.",
+      "trust": [
+        "No credit card",
+        "Demo without an account",
+        "Offline in the hall"
+      ]
+    },
+    "scope": {
+      "kicker": "In black and white",
+      "title": "What free access includes",
+      "description": "On the left is what you get. On the right is where it stops – both belong to an honest answer.",
+      "caption": "Features of free access to Statix and their limits",
+      "colFeature": "Feature",
+      "colLimit": "Limit on free access",
+      "noLimit": "no limit",
+      "rows": [
+        {
+          "feature": "Record and analyse matches live",
+          "limit": "200 matches per team"
+        },
+        {
+          "feature": "Maintain the squad",
+          "limit": "25 players per team"
+        },
+        {
+          "feature": "Teams on your account",
+          "limit": "3 teams"
+        },
+        {
+          "feature": "Invite the coaching staff",
+          "limit": "5 coaches per team, open invitations counted"
+        },
+        {
+          "feature": "Shooting percentages, player values, shot maps",
+          "limit": "no limit"
+        },
+        {
+          "feature": "Tournaments with table and fixture list",
+          "limit": "10 tournaments per team"
+        },
+        {
+          "feature": "Head-to-head record",
+          "limit": "60 opponents per team"
+        },
+        {
+          "feature": "Player surveys",
+          "limit": "20 surveys per team"
+        },
+        {
+          "feature": "Public live ticker",
+          "limit": "no limit"
+        },
+        {
+          "feature": "Record offline and sync later",
+          "limit": "no limit"
+        },
+        {
+          "feature": "Squad as a card album with player cards",
+          "limit": "no limit"
+        },
+        {
+          "feature": "AI analyses (match, team, player, tournament)",
+          "limit": "3 in 24 hours, 25 in 30 days, 1 at a time"
+        },
+        {
+          "feature": "Share reports as PDF",
+          "limit": "3 in 24 hours"
+        },
+        {
+          "feature": "Live demo without an account",
+          "limit": "no limit"
+        }
+      ],
+      "closing": "The quotas for AI analyses and shared reports run in rolling windows: an analysis stops counting exactly 24 hours or 30 days after it started – there is no fixed reset at midnight. Deleted reports do not give the quota back; deleted players, matches or tournaments do free their slot again. What a subscription would later change about this is on the page <pricing>pricing for the handball statistics app</pricing>."
+    },
+    "demo": {
+      "kicker": "Zero effort",
+      "title": "Live demo without an account",
+      "description": "No form, no email address, no password – one click and you are in.",
+      "paragraph": "The demo is not a click-through with placeholders but a fully populated version of Statix with real match data. You see the live recording, the shot maps, the player values and a finished AI analysis – exactly as it looks in the hall on a Saturday. If you like it, you create your own team afterwards. If not, you have left nothing behind.",
+      "cta": "Start the live demo",
+      "screenshotAlt": "Free handball statistics app: recording match actions live with a tap",
+      "screenshotLabel": "Live recording in the demo"
+    },
+    "why": {
+      "kicker": "No catch",
+      "title": "Why there is a free version",
+      "paragraph": "I built Statix because I stood on the bench myself and the numbers were missing. An app you have to buy before you know whether it works in the hall is one I would never have tried – and probably neither would you. So it is free while it grows: I need coaches who really use it and tell me what is missing. Later a subscription will carry the running costs, but anyone starting today pays nothing today and will be told in advance if something changes."
+    },
+    "alternatives": {
+      "kicker": "Fairly compared",
+      "title": "Free alternatives compared",
+      "description": "Statix is not the only way to get handball statistics without spending money. Here all three stand side by side.",
+      "goodLabel": "Good for: ",
+      "badLabel": "The catch: ",
+      "items": [
+        {
+          "name": "Paper and pen",
+          "cost": "Costs nothing",
+          "good": "Never fails, needs no battery, anyone can do it straight away.",
+          "bad": "Whoever coaches does not take notes. And what is noted, nobody works out – by December at the latest the pile is sitting unanalysed in the sports bag."
+        },
+        {
+          "name": "Excel template",
+          "cost": "Costs nothing",
+          "good": "Works out shooting percentages itself, can be adapted, belongs to you.",
+          "bad": "Unusable in the hall, so you type it up in the evening. No shot map, no trend per player, and the assistant coach always has the wrong version."
+        },
+        {
+          "name": "Statix",
+          "cost": "Basic €0 forever",
+          "good": "One tap per action, analysis done at the final whistle, usable offline, shareable by link.",
+          "bad": "You need a phone or tablet and an account. Daily quotas apply to AI analyses and shared reports."
+        }
+      ],
+      "closing": "If you want to stay with a spreadsheet, take one that already does the arithmetic: our <template>free handball statistics Excel template</template> comes with squad, match sheet, analysis and season sheet with finished formulas – download without signing up. For a single percentage in between, the <calculator>shooting percentage calculator</calculator> is enough, and the guide explains how to <guide>keep handball statistics properly</guide>."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about free use",
+      "description": "What coaches want to know before recording their first match.",
+      "items": [
+        {
+          "question": "Is there a genuinely free handball statistics app?",
+          "answer": "Yes. Until 31 December 2026 Statix is free to use with its full feature set, and after that the Basic tier stays free forever: record matches live, analyse them, plan fixtures, squad cards, public live ticker. There is no payment process in the app and no credit card prompt."
+        },
+        {
+          "question": "Do I have to store payment details for free use?",
+          "answer": "No. There is no payment process in the app and no field for card or bank details. For your own team you only need an email address; for the live demo not even that."
+        },
+        {
+          "question": "What can I try without an account?",
+          "answer": "The live demo. It is a fully populated version of Statix with real match data – live statistics, shot maps and AI analysis straight in the browser, without signing up and without installing anything."
+        },
+        {
+          "question": "What are the limits of free access?",
+          "answer": "Until 31 December 2026: per team 25 players, 200 matches, 10 tournaments, 60 opponents, 20 surveys and 5 coaches including open invitations; per account 3 teams. Plus 3 AI analyses in 24 hours and 25 in 30 days (one at a time) and 3 shared reports in 24 hours. From 1 January 2027 the Basic tier limits apply to new accounts: one team, 20 players, 10 matches, the last five of them in full depth, 3 tournaments plus 4 AI analyses and 4 shared reports per month."
+        },
+        {
+          "question": "Will Statix stay free?",
+          "answer": "Yes. From 1 January 2027 free access is called Basic and stays at €0 forever: all live recording, the complete schedule, the squad cards and the public live ticker, for one team. From then you pay for what costs real money – AI analyses in larger numbers, video analysis, shared reports and several teams. Anyone who registers before 1 January 2027 keeps the Coach plan free until the 26/27 season ends on 30 June 2027."
+        },
+        {
+          "question": "Does a free app make sense for a club at all?",
+          "answer": "For getting started, yes. Every coach can begin at once without anyone passing a resolution or releasing money. If several teams are to record to the same scheme, it is then worth looking at the club page."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Without signing up",
+      "title": "Start for free, today",
+      "description": "For your own team an email address is enough – no credit card, no payment process. And if you would rather look first: the live demo runs on real match data without a single detail from you.",
+      "linkLabel": "What Statix costs"
+    }
+  },
+  "templatePage": {
+    "hero": {
+      "kicker": "Free download",
+      "titleLead": "Handball statistics",
+      "titleHighlight": "Excel template",
+      "titleTail": "for free",
+      "lede": "Four sheets, finished formulas, German column headers: Kader (squad), Spielprotokoll (match log), Auswertung (analysis) and Saison (season). Shooting percentage, seven-metre rate and save percentage work themselves out – you only enter what happens on court. No sign-up, no email address.",
+      "squadSlots": "{count} squad slots",
+      "actionRows": "{count} action rows",
+      "games": "{count} matches per season",
+      "printReady": "set up ready to print",
+      "cardTitle": "Download the template",
+      "downloadCta": "Download the Excel template free",
+      "downloadNote": "Immediate download. No sign-up, no newsletter obligation."
+    },
+    "optin": {
+      "title": "Optional: updates by email",
+      "note": "Not required for the download – you get the template without any of this.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@mail.com",
+      "newsletterCheckbox": "Yes, send me the Statix newsletter with news about the app.",
+      "privacyPrefix": "I have read the",
+      "privacyLink": "privacy notice",
+      "privacyLinkTitle": "To the privacy policy",
+      "privacySuffix": ". Unsubscribing is possible at any time.",
+      "submit": "Sign up",
+      "pending": "Sending …",
+      "success": "Almost there: I have sent you a confirmation email. You are only signed up once you click the link in it.",
+      "genericError": "Unfortunately that did not work.",
+      "invalidEmail": "Please enter a valid email address.",
+      "missingConsent": "For the newsletter I need both boxes ticked. You get the template without them too."
+    },
+    "metrics": {
+      "kicker": "Four sheets",
+      "title": "What the template records",
+      "description": "None of this you have to build yourself – the formulas are in there and calculate as soon as you enter the first row.",
+      "groups": [
+        {
+          "sheet": "Kader (squad)",
+          "description": "Your team with shirt number, name, position and year of birth. The number is the key: every other sheet pulls the name from it automatically.",
+          "metrics": [
+            "Shirt number",
+            "Name",
+            "Position (drop-down)",
+            "Year of birth",
+            "Note"
+          ]
+        },
+        {
+          "sheet": "Spielprotokoll (match log)",
+          "description": "One row per action – the way it actually happens on the sideline. You pick the action and the shot zone from a list; you never have to type a name.",
+          "metrics": [
+            "Goal and missed shot",
+            "Seven metres (goal / miss)",
+            "Save and goal conceded",
+            "Assist",
+            "Turnover",
+            "2 minutes, yellow, red",
+            "Shot zone: wing, pivot, back court, breakthrough, fast break, seven metres"
+          ]
+        },
+        {
+          "sheet": "Auswertung (analysis)",
+          "description": "One match, every player, worked out. You enter the match label at the top – the rest is already there.",
+          "metrics": [
+            "Shots and goals per player",
+            "Shooting percentage",
+            "Seven-metre rate",
+            "Assists, turnovers, suspensions",
+            "± (goals incl. 7 m minus missed shots minus turnovers)",
+            "Saves, goals conceded and the goalkeeper's save percentage",
+            "Team row with all totals and percentages"
+          ]
+        },
+        {
+          "sheet": "Saison (season)",
+          "description": "The season's fixture list and, below it, the rolling values of every player across all recorded matches.",
+          "metrics": [
+            "Own goals and goals conceded per match",
+            "Number of matches per player",
+            "Shots, goals and shooting percentage across the season",
+            "Seven-metre record",
+            "Turnovers and suspensions",
+            "Save percentage across the season"
+          ]
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "In five steps",
+      "title": "How to fill the template in during a match",
+      "description": "Set it up once, then one row per action. That is all it is.",
+      "steps": [
+        {
+          "name": "Enter the squad once",
+          "text": "In the “Kader” sheet, enter your players' shirt numbers, names and positions. You do that once a season. The four grey example rows you simply overwrite."
+        },
+        {
+          "name": "Name the match",
+          "text": "Give the match a short label in the “Saison” sheet, for example Sp1, plus date and opponent. You use exactly that label in the log in a moment."
+        },
+        {
+          "name": "Record every action as a row",
+          "text": "In the “Spielprotokoll” sheet you enter one row per action: match, minute, shirt number, action and shot zone. The name appears automatically. Action and zone you pick from the list – one click instead of typing."
+        },
+        {
+          "name": "Use half time",
+          "text": "In the break, take a quick look at the “Auswertung” sheet. Shooting and save percentages are already worked out there – enough for a team talk based on numbers rather than on feeling."
+        },
+        {
+          "name": "Analyse after the match",
+          "text": "Enter the match label at the top of the analysis sheet and print it or share it. The season sheet updates itself with every recorded match."
+        }
+      ],
+      "closing": "If you are unsure what counts as a shot and what does not while recording: the guide explains <guide>how to keep handball statistics properly</guide> – and how to <rate>work out the shooting percentage and read it correctly</rate>. For individual figures in between there is the <calculator>shooting percentage calculator</calculator>."
+    },
+    "limits": {
+      "kicker": "Staying honest",
+      "title": "Where Excel stops on the third match day",
+      "description": "The template above is good. Even so, I know hardly any coach who keeps it up for a whole season – for five very concrete reasons.",
+      "items": [
+        {
+          "title": "On the bench you do not type into cells",
+          "text": "On a tablet, standing up, you do not hit a cell while the opposition counter-attacks. In practice that means you write down what you still have in your head – and after a quarter of an hour that is not much."
+        },
+        {
+          "title": "Typing it up costs you your Sunday",
+          "text": "Transferring the sheet in the evening means doing the work twice. And every transfer produces errors: a missed shot that gets lost in the typing raises the shooting percentage, and you steer your training by a number that never existed."
+        },
+        {
+          "title": "No shot map",
+          "text": "A table tells you that 40 per cent of the back-court shots went in. It does not tell you that every miss came from the same corner. Where shots were taken you only see on a court – not in a cell."
+        },
+        {
+          "title": "No trend per player",
+          "text": "The season sheet adds up, but it shows no curve. Whether a back-court player is improving across six matches or just had one good match, you cannot read out of totals."
+        },
+        {
+          "title": "By the third match day nobody opens it any more",
+          "text": "That is the real problem. The file sits on a laptop the assistant coach does not have, in a version nobody knows. After the third match day it is an archive, not a tool."
+        }
+      ]
+    },
+    "upgrade": {
+      "kicker": "The next step",
+      "title": "When the template is no longer enough",
+      "description": "The same actions, tapped instead of written – and the analysis is there when the buzzer goes.",
+      "paragraph": "At its core, Statix is the same idea as this template: one row per action. Except that the row is a tap on a phone, that the shot position comes along and turns into a shot map, and that nobody types anything up after the match. It works offline in the hall too – the data goes up as soon as there is a signal again.",
+      "statsLink": "Which figures actually belong together – and what counts as a normal benchmark in amateur handball – is in the overview <stats>handball statistics</stats>.",
+      "costLink": "What that costs is on the page <pricing>pricing for the handball statistics app</pricing> – in short: currently nothing. How far you get <free>for free</free> is set out there in detail. And if you first want to know what the app actually does: <brand>what is Statix?</brand>",
+      "screenshotAlt": "Player statistics and shooting percentages in the Statix handball app instead of an Excel spreadsheet",
+      "screenshotLabel": "Analysis straight after the final whistle"
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about the Excel template",
+      "description": "Everything coaches want to know before downloading.",
+      "items": [
+        {
+          "question": "Is the Excel template really free?",
+          "answer": "Yes. The download starts at once, without signing up, without an email address and without a newsletter. You can keep the file, adapt it and pass it on within the club."
+        },
+        {
+          "question": "Which programs can I open the template with?",
+          "answer": "With Microsoft Excel, LibreOffice Calc and Google Sheets. The formulas are deliberately kept simple (COUNTIFS, INDEX/MATCH, SUMPRODUCT) so they calculate everywhere. In Apple Numbers the calculations work too, though individual drop-down lists can be lost on import."
+        },
+        {
+          "question": "Which figures does the template work out automatically?",
+          "answer": "Shots, goals and shooting percentage per player, the seven-metre rate, assists, turnovers and suspensions, a ± per player as well as saves, goals conceded and the goalkeeper's save percentage. Plus team totals per match and rolling season values."
+        },
+        {
+          "question": "What counts as a shot?",
+          "answer": "Every attempt on goal: a goal, a saved ball, the post and a clear miss. A turnover without an attempt is not a shot and does not go into the shooting percentage. The template keeps seven-metre throws separate, because they would otherwise distort the field percentage."
+        },
+        {
+          "question": "Is the template enough for a whole season?",
+          "answer": "It is laid out for 400 recorded actions, 30 matches and 20 squad slots. For a youth or amateur season that is usually enough; anyone needing more simply drags the formulas further down."
+        },
+        {
+          "question": "Do I have to subscribe to the newsletter to get the file?",
+          "answer": "No. The download is independent of everything else. The newsletter is a voluntary offer alongside it – the box is not pre-ticked, and without the tick you get the template just the same."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Without typing it up",
+      "title": "The same actions, just tapped",
+      "description": "Register free and record your first match without typing anything up in the evening. Or take a look in the live demo first at how it feels without cells – with no account at all.",
+      "linkLabel": "What Statix costs"
+    }
   }
 }

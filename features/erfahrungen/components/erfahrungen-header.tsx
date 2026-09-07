@@ -1,4 +1,7 @@
+'use client';
+
 import { UserPlus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import {
@@ -16,6 +19,8 @@ import { TESTIMONIALS } from '../data/testimonials';
  * @returns A JSX element rendering the experiences hero on the court ground.
  */
 export default function ErfahrungenHeader() {
+  const t = useTranslations('experiencesPage.hero');
+  const tCommon = useTranslations('common');
   const hasQuotes = TESTIMONIALS.length > 0;
 
   return (
@@ -31,22 +36,20 @@ export default function ErfahrungenHeader() {
 
       <div className='relative mx-auto w-full max-w-4xl px-6 pb-16 pt-28 text-center sm:px-10 lg:pb-24 lg:pt-32'>
         <BoardKicker color='chalk' className='justify-center'>
-          Erfahrungen
+          {t('kicker')}
         </BoardKicker>
 
         <h1 className='mt-5 font-display text-[2.4rem] font-extrabold leading-[1.04] tracking-[-0.035em] text-chalk sm:text-[3.1rem]'>
-          Statix{' '}
+          {t('titleBrand')}{' '}
           <span className='relative inline-block text-primary'>
-            Erfahrungen
+            {t('titleHighlight')}
             <MarkerUnderline color='marker' />
           </span>
-          : So arbeiten Trainer mit der App
+          {t('titleTail')}
         </h1>
 
         <p className='mx-auto mt-6 max-w-[62ch] text-base leading-7 text-chalk/75 sm:text-lg sm:leading-8'>
-          {hasQuotes
-            ? 'Was Trainer berichten, die Statix im Spielbetrieb einsetzen – mit Namen und Verein, ohne geschönte Zitate. Dazu: wie aus Rückmeldungen aus der Halle neue Funktionen werden.'
-            : 'Ehrlich vorweg: Es gibt hier noch keine veröffentlichten Trainer-Zitate, weil noch niemand eines freigegeben hat. Stattdessen steht hier, wer Statix entwickelt, wie Rückmeldungen aus der Halle in die App wandern – und wie du dir in zwei Minuten selbst ein Bild machst.'}
+          {hasQuotes ? t('ledeWithQuotes') : t('ledeEmpty')}
         </p>
 
         <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center'>
@@ -56,14 +59,14 @@ export default function ErfahrungenHeader() {
             href={CLUB_CONFIG.website.appUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Jetzt kostenlos registrieren
+            {tCommon('ctaRegister')}
           </HeroActionButton>
           <HeroActionButton
             variant='secondary'
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Live-Demo ohne Account
+            {tCommon('ctaDemoNoAccount')}
           </HeroActionButton>
         </div>
       </div>

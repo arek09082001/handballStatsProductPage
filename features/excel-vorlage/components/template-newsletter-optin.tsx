@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { AlertCircle, Check, Mail } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useNewsletter } from '@/lib/hooks/use-newsletter';
 
 /**
@@ -16,6 +17,7 @@ import { useNewsletter } from '@/lib/hooks/use-newsletter';
  * @returns A JSX element rendering the optional newsletter form.
  */
 export default function TemplateNewsletterOptin() {
+  const t = useTranslations('templatePage.optin');
   const newsletterMutation = useNewsletter();
 
   const [email, setEmail] = useState('');
@@ -31,7 +33,7 @@ export default function TemplateNewsletterOptin() {
   const errorMessage = validationError
     ? validationError
     : newsletterMutation.isError
-      ? newsletterMutation.error?.message || 'Das hat leider nicht geklappt.'
+      ? newsletterMutation.error?.message || t('genericError')
       : null;
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -39,14 +41,12 @@ export default function TemplateNewsletterOptin() {
     setValidationError(null);
 
     if (!isValidEmail) {
-      setValidationError('Bitte gib eine gültige E-Mail-Adresse ein.');
+      setValidationError(t('invalidEmail'));
       return;
     }
 
     if (!wantsNewsletter || !acceptPrivacy) {
-      setValidationError(
-        'Für den Newsletter brauche ich beide Häkchen. Die Vorlage bekommst du auch ohne.',
-      );
+      setValidationError(t('missingConsent'));
       return;
     }
 
@@ -68,23 +68,18 @@ export default function TemplateNewsletterOptin() {
         <span className='mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-success/20 text-success'>
           <Check className='size-3' strokeWidth={3} />
         </span>
-        <p className='text-sm leading-6 text-chalk/85'>
-          Fast geschafft: Ich habe dir eine Bestätigungs-E-Mail geschickt. Erst
-          mit dem Klick darin bist du eingetragen.
-        </p>
+        <p className='text-sm leading-6 text-chalk/85'>{t('success')}</p>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} className='text-left'>
-      <p className='text-sm font-semibold text-chalk'>Optional: Updates per Mail</p>
-      <p className='mt-1 text-[13px] leading-6 text-chalk/65'>
-        Kein Pflichtfeld für den Download – die Vorlage bekommst du ohne alles.
-      </p>
+      <p className='text-sm font-semibold text-chalk'>{t('title')}</p>
+      <p className='mt-1 text-[13px] leading-6 text-chalk/65'>{t('note')}</p>
 
       <label className='sr-only' htmlFor='template-newsletter-email'>
-        E-Mail-Adresse
+        {t('emailLabel')}
       </label>
       <div className='relative mt-3'>
         <Mail className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-chalk/40' />
@@ -94,7 +89,7 @@ export default function TemplateNewsletterOptin() {
           type='email'
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          placeholder='deine@mail.de'
+          placeholder={t('emailPlaceholder')}
           className='h-11 w-full rounded-xl border border-chalk/15 bg-court pl-10 pr-3.5 text-sm text-chalk outline-none transition-all duration-200 placeholder:text-chalk/50 hover:border-chalk/25 focus:border-primary focus:ring-2 focus:ring-primary/30'
         />
       </div>
@@ -118,7 +113,7 @@ export default function TemplateNewsletterOptin() {
           onChange={(event) => setWantsNewsletter(event.target.checked)}
           className='mt-1 size-4 rounded border-chalk/25 bg-transparent text-primary focus:ring-primary'
         />
-        <span>Ja, schick mir den Statix-Newsletter mit Neuigkeiten zur App.</span>
+        <span>{t('newsletterCheckbox')}</span>
       </label>
 
       <label className='mt-2 flex items-start gap-3 text-[13px] leading-6 text-chalk/75'>
@@ -129,14 +124,14 @@ export default function TemplateNewsletterOptin() {
           className='mt-1 size-4 rounded border-chalk/25 bg-transparent text-primary focus:ring-primary'
         />
         <span>
-          Ich habe die{' '}
+          {t('privacyPrefix')}{' '}
           <Link
             href='/datenschutz'
-            title='Zur Datenschutzerklärung'
+            title={t('privacyLinkTitle')}
             className='font-semibold text-primary underline underline-offset-2'>
-            Datenschutzhinweise
-          </Link>{' '}
-          gelesen. Abmeldung jederzeit möglich.
+            {t('privacyLink')}
+          </Link>
+          {t('privacySuffix')}
         </span>
       </label>
 
@@ -144,7 +139,7 @@ export default function TemplateNewsletterOptin() {
         type='submit'
         disabled={newsletterMutation.isPending || !isFormValid}
         className='mt-4 inline-flex h-11 w-full items-center justify-center rounded-xl border border-chalk/30 bg-chalk/5 px-4 font-display text-sm font-bold text-chalk transition-all duration-200 hover:border-chalk/50 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court disabled:pointer-events-none disabled:border-chalk/10 disabled:text-chalk/40'>
-        {newsletterMutation.isPending ? 'Wird gesendet …' : 'Eintragen'}
+        {newsletterMutation.isPending ? t('pending') : t('submit')}
       </button>
 
       {errorMessage && (

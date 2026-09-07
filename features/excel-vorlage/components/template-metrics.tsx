@@ -1,6 +1,9 @@
+'use client';
+
 import { Check } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
-import { TEMPLATE_METRICS } from '../data/template-content';
+import type { MetricGroup } from '../data/template-content';
 
 /**
  * "Welche Kennzahlen die Vorlage erfasst" — one card per sheet, so a coach can
@@ -8,19 +11,22 @@ import { TEMPLATE_METRICS } from '../data/template-content';
  * @returns A JSX element listing the tracked metrics per sheet.
  */
 export default function TemplateMetrics() {
+  const t = useTranslations('templatePage.metrics');
+  const groups = t.raw('groups') as MetricGroup[];
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-6xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Vier Blätter'
-          title='Welche Kennzahlen die Vorlage erfasst'
-          description='Nichts davon musst du selbst zusammenbauen – die Formeln sind drin und rechnen, sobald du die erste Zeile einträgst.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-12 grid gap-6 md:grid-cols-2'>
-          {TEMPLATE_METRICS.map((group, index) => (
+          {groups.map((group, index) => (
             <BoardCard
               key={group.sheet}
               pin='magnet'

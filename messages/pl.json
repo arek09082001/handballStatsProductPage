@@ -2667,5 +2667,449 @@
       "description": "Założyć konto, wpisać kadrę i gotowe – to trwa krócej niż przygotowanie treningu. Albo sprawdź najpierw w demo na żywo, czy dasz radę obsłużyć to przy ławce.",
       "linkLabel": "Co jest w pakiecie bezpłatnym"
     }
+  },
+  "author": {
+    "role": "Bramkarz, trener i twórca Statix",
+    "bio": "Arkadiusz Weiss od ponad dziesięciu lat stoi w bramce i sam prowadzi drużynę na poziomie ligi okręgowej – dokładnie tę codzienność opisują te poradniki. Statix wyrósł właśnie z niej: z kartki przy linii bocznej, z której po ostatnim gwizdku nigdy nie powstawała użyteczna analiza."
+  },
+  "experiencesPage": {
+    "hero": {
+      "kicker": "Opinie",
+      "titleBrand": "Statix",
+      "titleHighlight": "opinie",
+      "titleTail": ": tak trenerzy pracują z aplikacją",
+      "ledeWithQuotes": "Co mówią trenerzy, którzy używają Statix w rozgrywkach – z nazwiskiem i klubem, bez upiększonych cytatów. Do tego: jak z uwag z hali powstają nowe funkcje.",
+      "ledeEmpty": "Uczciwie na wstępie: nie ma tu jeszcze opublikowanych wypowiedzi trenerów, bo nikt żadnej nie zatwierdził. Zamiast tego znajdziesz tu, kto rozwija Statix, jak uwagi z hali trafiają do aplikacji – i jak w dwie minuty wyrobić sobie własne zdanie."
+    },
+    "testimonials": {
+      "kicker": "Trenerzy mówią",
+      "title": "Głosy z hali",
+      "descriptionWithQuotes": "Trenerzy, którzy używają Statix w rozgrywkach – z nazwiskiem i klubem.",
+      "descriptionEmpty": "Stoją tu tylko cytaty, które naprawdę istnieją. Obecnie nie ma żadnego.",
+      "ratingLabel": "Ocena: {value} z {best}",
+      "emptyParagraph1": "Statix jest młody. Są trenerzy, którzy z niego korzystają, ale nie ma jeszcze cytatów zatwierdzonych z nazwiskiem i klubem – i właśnie dlatego nie ma tu żadnego. Wymyślonych głosów, zmyślonych ocen w gwiazdkach ani „trenera z Bawarii” na tej stronie nie znajdziesz, ani w tekście, ani w znacznikach dla wyszukiwarek.",
+      "emptyParagraph2": "Jeśli chcesz wiedzieć, czy Statix pasuje do twojej drużyny, demo na żywo pomoże ci bardziej niż cudza opinia: prawdziwe dane meczowe, wprost w przeglądarce, bez konta. A jeśli sam z niego korzystasz, napisz do mnie na <mail>{email}</mail> – twoja relacja stanie właśnie tutaj.",
+      "emptyParagraph3": "Co potrafi aplikacja, opisuje <brand>czym jest Statix?</brand>, a ile kosztuje – <pricing>ceny</pricing>."
+    },
+    "story": {
+      "kicker": "Tworzone przez zawodnika piłki ręcznej",
+      "title": "Kto stoi za Statix",
+      "paragraph": "Dlatego Statix nie jest narzędziem z planu produktowego, tylko z hali sportowej. Opinie trenerek i trenerów trafiają wprost do rozwoju produktu, a nowe funkcje powstają tam, gdzie są potrzebne – na ławce, na treningu i przy analizie po meczu.",
+      "moreLink": "Więcej o aplikacji: <brand>czym jest Statix?</brand>"
+    },
+    "feedbackLoop": {
+      "kicker": "Krótka droga",
+      "title": "Jak uwagi z hali trafiają do aplikacji",
+      "description": "Między twoją wiadomością a osobą, która pisze kod, nie stoi nikt.",
+      "mailCta": "Wyślij uwagi mailem",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Rzuca się w oczy w hali",
+          "text": "Niemal wszystko, co jest w Statix, powstało w dniu meczowym: przycisk, który był za mały, analiza, której nikt nie mógł otworzyć w autokarze, akcja, która w zamieszaniu wymagała dwóch dotknięć za dużo."
+        },
+        {
+          "number": 2,
+          "title": "Przychodzi mailem albo przez Instagram",
+          "text": "Trenerzy piszą do mnie bezpośrednio – najczęściej bez formularza, często w niedzielny wieczór. Każdą wiadomość czytam sam; nie ma między nami zespołu wsparcia."
+        },
+        {
+          "number": 3,
+          "title": "Powstaje, gdy potrzebuje tego więcej niż jedna osoba",
+          "text": "To, co wraca wielokrotnie, ląduje na górze listy. Tryb turniejowy, relacja na żywo i ankiety dla zawodników powstały dokładnie w ten sposób – nie z planu rynkowego, tylko dlatego, że trenerzy o nie poprosili."
+        },
+        {
+          "number": 4,
+          "title": "Wraca do hali",
+          "text": "Nowe funkcje najpierw działają tam, gdzie były potrzebne. Jeśli przetrwają dzień meczowy, zostają – a jeśli nie, wylatują."
+        }
+      ],
+      "closing": "Jeśli chcesz wiedzieć, jak trenerzy pracują ze Statix w klubie albo w pionie młodzieżowym, znajdziesz to na stronach <clubs>Statix dla klubów</clubs> i <youth>Statix dla trenerów młodzieżowych</youth>. Wiedza praktyczna bez aplikacji jest w <guide>poradniku piłki ręcznej</guide>."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o doświadczenia ze Statix",
+      "description": "Dlaczego nie ma tu ocen w gwiazdkach – i jak mimo to wyrobić sobie zdanie.",
+      "items": [
+        {
+          "question": "Czy są relacje trenerów o Statix?",
+          "answer": "Jeszcze nie publicznie. Statix jest młody, a wypowiedzi publikuję dopiero wtedy, gdy prawdziwi trenerzy zatwierdzą je z nazwiskiem i klubem. Wymyślonych ani anonimizowanych cytatów tu nie znajdziesz."
+        },
+        {
+          "question": "Jak wypróbować Statix bez opierania się na ocenach?",
+          "answer": "Przez demo na żywo. Działa na prawdziwych danych meczowych w przeglądarce, bez konta i bez instalacji – sam zobaczysz, jak działa rejestrowanie, zamiast opierać się na cudzych doświadczeniach."
+        },
+        {
+          "question": "Kto rozwija Statix?",
+          "answer": "Arkadiusz Weiss, zawodnik piłki ręcznej z Niemiec, który zbudował aplikację na bazie własnej praktyki przy linii bocznej. Żadnego koncernu, żadnego anonimowego zespołu – opinie z hali trafiają wprost do rozwoju produktu."
+        },
+        {
+          "question": "Jak przekazać uwagi albo zgłosić błąd?",
+          "answer": "Najprościej mailem na {email} albo przez Instagram. Napisz konkretnie, w jakiej sytuacji czegoś ci zabrakło – w dniu meczowym, na treningu czy przy analizie."
+        },
+        {
+          "question": "Czy jako trener mogę dodać swoją wypowiedź?",
+          "answer": "Bardzo chętnie. Napisz, jak pracujesz ze Statix i co konkretnie ci pomaga. Jeśli zgodzisz się, żeby obok stały nazwisko, funkcja i klub, twoja relacja trafi na tę stronę."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Własne zdanie",
+      "title": "Najuczciwsze doświadczenie to twoje własne",
+      "description": "Dwie minuty z prawdziwymi danymi meczowymi powiedzą ci więcej niż cudza ocena: zarejestruj się bezpłatnie i zarejestruj mecz sam – albo najpierw zajrzyj do demo na żywo, bez konta.",
+      "linkLabel": "Czym jest Statix?"
+    }
+  },
+  "freePage": {
+    "hero": {
+      "kicker": "Rejestrowanie za darmo",
+      "titleLead": "Korzystaj z aplikacji do statystyk piłki ręcznej",
+      "titleHighlight": "za darmo",
+      "titleTail": "",
+      "lede": "Tak – Statix to bezpłatna aplikacja do statystyk piłki ręcznej. Rejestrujesz mecze na żywo jednym dotknięciem, dostajesz automatycznie skuteczność rzutów, mapy rzutów i wartości zawodników i udostępniasz je drużynie. Bez karty kredytowej, bez okresu próbnego z datą wygaśnięcia. Demo na żywo działa nawet całkiem bez konta, w przeglądarce.",
+      "trust": [
+        "Bez karty kredytowej",
+        "Demo bez konta",
+        "Offline w hali"
+      ]
+    },
+    "scope": {
+      "kicker": "Czarno na białym",
+      "title": "Co obejmuje bezpłatny dostęp",
+      "description": "Po lewej to, co dostajesz. Po prawej to, gdzie się kończy – jedno i drugie należy do uczciwej odpowiedzi.",
+      "caption": "Funkcje bezpłatnego dostępu do Statix i ich limity",
+      "colFeature": "Funkcja",
+      "colLimit": "Limit w bezpłatnym dostępie",
+      "noLimit": "bez limitu",
+      "rows": [
+        {
+          "feature": "Rejestrowanie i analiza meczów na żywo",
+          "limit": "200 meczów na drużynę"
+        },
+        {
+          "feature": "Prowadzenie kadry",
+          "limit": "25 zawodników na drużynę"
+        },
+        {
+          "feature": "Drużyny na twoim koncie",
+          "limit": "3 drużyny"
+        },
+        {
+          "feature": "Zapraszanie sztabu",
+          "limit": "5 trenerów na drużynę, wliczając otwarte zaproszenia"
+        },
+        {
+          "feature": "Skuteczność rzutów, wartości zawodników, mapy rzutów",
+          "limit": "bez limitu"
+        },
+        {
+          "feature": "Turnieje z tabelą i terminarzem",
+          "limit": "10 turniejów na drużynę"
+        },
+        {
+          "feature": "Bilans z rywalami (head-to-head)",
+          "limit": "60 rywali na drużynę"
+        },
+        {
+          "feature": "Ankiety dla zawodników",
+          "limit": "20 ankiet na drużynę"
+        },
+        {
+          "feature": "Publiczna relacja na żywo",
+          "limit": "bez limitu"
+        },
+        {
+          "feature": "Rejestrowanie offline i późniejsza synchronizacja",
+          "limit": "bez limitu"
+        },
+        {
+          "feature": "Kadra jako album z kartami zawodników",
+          "limit": "bez limitu"
+        },
+        {
+          "feature": "Analizy AI (mecz, drużyna, zawodnik, turniej)",
+          "limit": "3 w 24 godziny, 25 w 30 dni, 1 jednocześnie"
+        },
+        {
+          "feature": "Udostępnianie raportów w PDF",
+          "limit": "3 w 24 godziny"
+        },
+        {
+          "feature": "Demo na żywo bez konta",
+          "limit": "bez limitu"
+        }
+      ],
+      "closing": "Limity analiz AI i udostępnionych raportów działają w oknach ruchomych: analiza przestaje się liczyć dokładnie 24 godziny albo 30 dni po jej rozpoczęciu – nie ma stałego zerowania o północy. Usunięte raporty nie zwracają limitu; usunięci zawodnicy, mecze czy turnieje zwalniają natomiast swoje miejsce. Co zmieniłby w tym później abonament, opisuje strona <pricing>ceny aplikacji do statystyk piłki ręcznej</pricing>."
+    },
+    "demo": {
+      "kicker": "Zero wysiłku",
+      "title": "Demo na żywo bez konta",
+      "description": "Bez formularza, bez adresu e-mail, bez hasła – jedno kliknięcie i jesteś w środku.",
+      "paragraph": "Demo to nie klikana prezentacja z wypełniaczami, tylko w pełni wypełniona wersja Statix z prawdziwymi danymi meczowymi. Widzisz rejestrowanie na żywo, mapy rzutów, wartości zawodników i gotową analizę AI – dokładnie tak, jak to wygląda w sobotę w hali. Jeśli ci się spodoba, założysz potem własną drużynę. Jeśli nie, niczego po sobie nie zostawiasz.",
+      "cta": "Uruchom demo na żywo",
+      "screenshotAlt": "Bezpłatna aplikacja do statystyk piłki ręcznej: rejestrowanie akcji meczowych na żywo jednym dotknięciem",
+      "screenshotLabel": "Rejestrowanie na żywo w demo"
+    },
+    "why": {
+      "kicker": "Bez haczyka",
+      "title": "Dlaczego istnieje wersja bezpłatna",
+      "paragraph": "Zbudowałem Statix, bo sam stałem przy ławce i brakowało mi liczb. Aplikacji, którą trzeba kupić, zanim wiadomo, czy sprawdza się w hali, nigdy bym nie wypróbował – i ty pewnie też nie. Dlatego jest bezpłatna, dopóki rośnie: potrzebuję trenerów, którzy naprawdę z niej korzystają i mówią mi, czego brakuje. Później abonament utrzyma jej działanie, ale kto zaczyna dziś, dziś nic nie płaci i zostanie wcześniej poinformowany, jeśli coś się zmieni."
+    },
+    "alternatives": {
+      "kicker": "Uczciwe porównanie",
+      "title": "Bezpłatne alternatywy w porównaniu",
+      "description": "Statix nie jest jedynym sposobem na statystyki piłki ręcznej bez wydawania pieniędzy. Tu stoją wszystkie trzy obok siebie.",
+      "goodLabel": "Dobre w tym: ",
+      "badLabel": "Haczyk: ",
+      "items": [
+        {
+          "name": "Kartka i długopis",
+          "cost": "Nic nie kosztuje",
+          "good": "Nigdy nie zawodzi, nie potrzebuje baterii, każdy poradzi sobie od razu.",
+          "bad": "Kto prowadzi mecz, ten nie notuje. A tego, co zanotowane, nikt nie przelicza – najpóźniej w grudniu stos leży nieprzeanalizowany w torbie sportowej."
+        },
+        {
+          "name": "Szablon Excel",
+          "cost": "Nic nie kosztuje",
+          "good": "Sam liczy skuteczność rzutów, da się dostosować, należy do ciebie.",
+          "bad": "W hali nie do obsługi, więc przepisujesz wieczorem. Bez mapy rzutów, bez przebiegu dla zawodnika, a asystent zawsze ma złą wersję."
+        },
+        {
+          "name": "Statix",
+          "cost": "Baza 0 € na zawsze",
+          "good": "Jedno dotknięcie na akcję, analiza gotowa po ostatnim gwizdku, działa offline, udostępniasz linkiem.",
+          "bad": "Potrzebujesz telefonu albo tabletu i konta. Dla analiz AI i udostępnianych raportów obowiązują limity dzienne."
+        }
+      ],
+      "closing": "Jeśli chcesz zostać przy arkuszu, weź taki, który już liczy: nasz <template>bezpłatny szablon Excel do statystyk piłki ręcznej</template> zawiera kadrę, protokół meczu, analizę i arkusz sezonu z gotowymi formułami – pobranie bez rejestracji. Do pojedynczego wskaźnika wystarczy <calculator>kalkulator skuteczności rzutów</calculator>, a w poradniku opisujemy, jak <guide>porządnie prowadzić statystykę piłki ręcznej</guide>."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o bezpłatne korzystanie",
+      "description": "Co trenerzy chcą wiedzieć, zanim zarejestrują pierwszy mecz.",
+      "items": [
+        {
+          "question": "Czy istnieje naprawdę bezpłatna aplikacja do statystyk piłki ręcznej?",
+          "answer": "Tak. Do 31 grudnia 2026 Statix można używać bezpłatnie w pełnym zakresie, a potem poziom Baza pozostaje bezpłatny na zawsze: rejestrowanie meczów na żywo, analiza, planowanie terminów, karty kadry, publiczna relacja na żywo. W aplikacji nie ma żadnej płatności ani pytania o kartę kredytową."
+        },
+        {
+          "question": "Czy do bezpłatnego korzystania muszę podać dane do płatności?",
+          "answer": "Nie. W aplikacji nie ma płatności ani pola na dane karty czy konta. Do własnej drużyny potrzebny jest tylko adres e-mail, a do demo na żywo nawet on nie."
+        },
+        {
+          "question": "Co mogę wypróbować bez konta?",
+          "answer": "Demo na żywo. To w pełni wypełniona wersja Statix z prawdziwymi danymi meczowymi – statystyki na żywo, mapy rzutów i analiza AI wprost w przeglądarce, bez rejestracji i bez instalacji."
+        },
+        {
+          "question": "Jakie limity ma bezpłatny dostęp?",
+          "answer": "Do 31 grudnia 2026: na drużynę 25 zawodników, 200 meczów, 10 turniejów, 60 rywali, 20 ankiet i 5 trenerów wraz z otwartymi zaproszeniami; na konto 3 drużyny. Do tego 3 analizy AI w 24 godziny i 25 w 30 dni (jedna jednocześnie) oraz 3 udostępnione raporty w 24 godziny. Od 1 stycznia 2027 dla nowych kont obowiązują limity poziomu Baza: jedna drużyna, 20 zawodników, 10 meczów, z tego pięć ostatnich w pełnej głębi, 3 turnieje oraz 4 analizy AI i 4 udostępnione raporty miesięcznie."
+        },
+        {
+          "question": "Czy Statix pozostanie bezpłatny?",
+          "answer": "Tak. Od 1 stycznia 2027 bezpłatny dostęp nazywa się Baza i zostaje na 0 € na zawsze: całe rejestrowanie na żywo, kompletny terminarz, karty kadry i publiczna relacja na żywo, dla jednej drużyny. Od tego momentu płaci się za to, co kosztuje prawdziwe pieniądze – analizy AI w większej liczbie, analizę wideo, udostępniane raporty i kilka drużyn. Kto zarejestruje się przed 1 stycznia 2027, zachowa plan Trener bezpłatnie do końca sezonu 26/27, czyli do 30 czerwca 2027."
+        },
+        {
+          "question": "Czy bezpłatna aplikacja ma w ogóle sens dla klubu?",
+          "answer": "Na start jak najbardziej. Każdy trener może ruszyć od razu, bez uchwały i bez uwalniania pieniędzy. Jeśli kilka drużyn ma rejestrować według tego samego schematu, warto potem zajrzeć na stronę dla klubów."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Bez rejestracji",
+      "title": "Zacznij za darmo, jeszcze dziś",
+      "description": "Do własnej drużyny wystarczy adres e-mail – bez karty kredytowej i bez płatności. A jeśli wolisz najpierw się rozejrzeć: demo na żywo działa na prawdziwych danych meczowych, bez żadnych danych od ciebie.",
+      "linkLabel": "Ile kosztuje Statix"
+    }
+  },
+  "templatePage": {
+    "hero": {
+      "kicker": "Bezpłatne pobranie",
+      "titleLead": "Szablon Excel do",
+      "titleHighlight": "statystyk piłki ręcznej",
+      "titleTail": "za darmo",
+      "lede": "Cztery arkusze, gotowe formuły, niemieckie nagłówki kolumn: Kader (kadra), Spielprotokoll (protokół meczu), Auswertung (analiza) i Saison (sezon). Skuteczność rzutów, skuteczność siedmiu metrów i skuteczność obron liczą się same – ty wpisujesz tylko to, co dzieje się na boisku. Bez rejestracji i bez adresu e-mail.",
+      "squadSlots": "{count} miejsc w kadrze",
+      "actionRows": "{count} wierszy akcji",
+      "games": "{count} meczów na sezon",
+      "printReady": "gotowe do druku",
+      "cardTitle": "Pobierz szablon",
+      "downloadCta": "Pobierz szablon Excel za darmo",
+      "downloadNote": "Natychmiastowe pobranie. Bez rejestracji i bez przymusu newslettera."
+    },
+    "optin": {
+      "title": "Opcjonalnie: nowości mailem",
+      "note": "Nie jest wymagane do pobrania – szablon dostaniesz bez tego wszystkiego.",
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "twoj@mail.pl",
+      "newsletterCheckbox": "Tak, wyślijcie mi newsletter Statix z nowościami o aplikacji.",
+      "privacyPrefix": "Przeczytałem",
+      "privacyLink": "informacje o ochronie danych",
+      "privacyLinkTitle": "Do polityki prywatności",
+      "privacySuffix": ". Wypisanie się możliwe w każdej chwili.",
+      "submit": "Zapisz mnie",
+      "pending": "Wysyłanie …",
+      "success": "Prawie gotowe: wysłałem ci e-mail potwierdzający. Dopiero po kliknięciu w niego jesteś zapisany.",
+      "genericError": "Niestety nie zadziałało.",
+      "invalidEmail": "Podaj prawidłowy adres e-mail.",
+      "missingConsent": "Do newslettera potrzebuję obu zaznaczeń. Szablon dostaniesz też bez nich."
+    },
+    "metrics": {
+      "kicker": "Cztery arkusze",
+      "title": "Co rejestruje szablon",
+      "description": "Niczego z tego nie musisz budować sam – formuły są w środku i liczą, gdy tylko wpiszesz pierwszy wiersz.",
+      "groups": [
+        {
+          "sheet": "Kader (kadra)",
+          "description": "Twoja drużyna z numerem, nazwiskiem, pozycją i rocznikiem. Numer jest kluczem: wszystkie inne arkusze automatycznie pobierają z niego nazwisko.",
+          "metrics": [
+            "Numer",
+            "Nazwisko",
+            "Pozycja (lista wyboru)",
+            "Rocznik",
+            "Notatka"
+          ]
+        },
+        {
+          "sheet": "Spielprotokoll (protokół meczu)",
+          "description": "Jeden wiersz na akcję – dokładnie tak, jak dzieje się to przy linii bocznej. Akcję i strefę rzutu wybierasz z listy, nazwiska nigdy nie musisz pisać.",
+          "metrics": [
+            "Bramka i rzut niecelny",
+            "Siedem metrów (bramka / niecelny)",
+            "Obrona i bramka stracona",
+            "Asysta",
+            "Błąd techniczny",
+            "2 minuty, żółta, czerwona",
+            "Strefa rzutu: skrzydło, obrotowy, druga linia, przedarcie, kontratak, siedem metrów"
+          ]
+        },
+        {
+          "sheet": "Auswertung (analiza)",
+          "description": "Jeden mecz, wszyscy zawodnicy, wszystko policzone. U góry wpisujesz oznaczenie meczu – reszta już tam jest.",
+          "metrics": [
+            "Rzuty i bramki na zawodnika",
+            "Skuteczność rzutów w procentach",
+            "Skuteczność z siedmiu metrów",
+            "Asysty, błędy techniczne, kary",
+            "± (bramki wraz z 7 m minus rzuty niecelne minus błędy techniczne)",
+            "Obrony, bramki stracone i skuteczność bramkarza",
+            "Wiersz drużyny ze wszystkimi sumami i wskaźnikami"
+          ]
+        },
+        {
+          "sheet": "Saison (sezon)",
+          "description": "Lista meczów sezonu, a poniżej narastające wartości każdego zawodnika ze wszystkich zarejestrowanych spotkań.",
+          "metrics": [
+            "Bramki własne i stracone w meczu",
+            "Liczba meczów na zawodnika",
+            "Rzuty, bramki i skuteczność w sezonie",
+            "Bilans siedmiu metrów",
+            "Błędy techniczne i kary",
+            "Skuteczność obron w sezonie"
+          ]
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "W pięciu krokach",
+      "title": "Tak wypełniasz szablon w trakcie meczu",
+      "description": "Raz skonfigurować, potem jeden wiersz na akcję. Nic więcej.",
+      "steps": [
+        {
+          "name": "Raz wpisać kadrę",
+          "text": "W arkuszu „Kader” wpisz numery, nazwiska i pozycje swoich zawodników. Robisz to raz na sezon. Cztery szare wiersze przykładowe po prostu nadpisujesz."
+        },
+        {
+          "name": "Nazwać mecz",
+          "text": "Nadaj meczowi krótkie oznaczenie w arkuszu „Saison”, na przykład Sp1, do tego datę i rywala. Dokładnie tego oznaczenia użyjesz zaraz w protokole."
+        },
+        {
+          "name": "Każdą akcję jako wiersz",
+          "text": "W arkuszu „Spielprotokoll” wpisujesz jeden wiersz na akcję: mecz, minuta, numer, akcja i strefa rzutu. Nazwisko pojawia się samo. Akcję i strefę wybierasz z listy – jedno kliknięcie zamiast pisania."
+        },
+        {
+          "name": "Wykorzystać przerwę",
+          "text": "W przerwie zajrzyj krótko do arkusza „Auswertung”. Skuteczność rzutów i obron jest już policzona – to wystarczy na odprawę opartą na liczbach, a nie na przeczuciu."
+        },
+        {
+          "name": "Analiza po meczu",
+          "text": "Wpisz u góry analizy oznaczenie meczu i wydrukuj arkusz albo go udostępnij. Arkusz sezonu aktualizuje się sam z każdym zarejestrowanym meczem."
+        }
+      ],
+      "closing": "Jeśli przy rejestrowaniu nie masz pewności, co liczy się jako rzut, a co nie: w poradniku opisujemy, <guide>jak porządnie prowadzić statystykę piłki ręcznej</guide> – oraz jak <rate>obliczyć skuteczność rzutów i dobrze ją odczytać</rate>. Do pojedynczych wartości jest <calculator>kalkulator skuteczności rzutów</calculator>."
+    },
+    "limits": {
+      "kicker": "Uczciwie",
+      "title": "Gdzie Excel kończy się w trzeciej kolejce",
+      "description": "Szablon powyżej jest dobry. Mimo to nie znam prawie żadnego trenera, który wytrzymuje z nim cały sezon – z pięciu bardzo konkretnych powodów.",
+      "items": [
+        {
+          "title": "Przy ławce nie wpisuje się do komórek",
+          "text": "Stojąc z tabletem nie trafisz w komórkę, gdy rywal kontratakuje. W praktyce prowadzi to do tego, że zapisujesz to, co jeszcze pamiętasz – a po kwadransie nie jest tego wiele."
+        },
+        {
+          "title": "Przepisywanie kosztuje cię niedzielę",
+          "text": "Kto wieczorem przenosi kartkę, wykonuje pracę dwa razy. A każde przeniesienie tworzy błędy: rzut niecelny, który ginie przy przepisywaniu, podnosi skuteczność, a ty sterujesz treningiem według liczby, której nigdy nie było."
+        },
+        {
+          "title": "Brak mapy rzutów",
+          "text": "Tabela powie ci, że 40 procent rzutów z drugiej linii wpadło. Nie powie, że wszystkie niecelne szły w ten sam róg. Gdzie padały rzuty, widać tylko na boisku – nie w komórce."
+        },
+        {
+          "title": "Brak przebiegu dla zawodnika",
+          "text": "Arkusz sezonu sumuje, ale nie pokazuje krzywej. Czy rozgrywająca poprawia się przez sześć meczów, czy miała tylko jeden dobry, z sum nie wyczytasz."
+        },
+        {
+          "title": "W trzeciej kolejce nikt go już nie otwiera",
+          "text": "To jest właściwy problem. Plik leży na laptopie, którego asystent nie ma, w wersji, której nikt nie zna. Po trzeciej kolejce jest archiwum, a nie narzędziem."
+        }
+      ]
+    },
+    "upgrade": {
+      "kicker": "Następny krok",
+      "title": "Kiedy szablon już nie wystarcza",
+      "description": "Te same akcje, tylko dotknięte zamiast zapisane – a analiza jest gotowa, gdy zabrzmi syrena.",
+      "paragraph": "W istocie Statix to ten sam pomysł co ten szablon: jeden wiersz na akcję. Tyle że wiersz jest dotknięciem na telefonie, że dochodzi pozycja rzutu i powstaje z niej mapa rzutów, i że po meczu nikt już niczego nie przepisuje. Offline w hali też działa – dane trafiają na serwer, gdy tylko wróci zasięg.",
+      "statsLink": "Które wskaźniki w ogóle do siebie pasują – i jaka wartość jest normalna na poziomie amatorskim – opisuje przegląd <stats>statystyki piłki ręcznej</stats>.",
+      "costLink": "Ile to kosztuje, opisuje strona <pricing>ceny aplikacji do statystyk piłki ręcznej</pricing> – w skrócie: obecnie nic. Jak daleko dojdziesz <free>za darmo</free>, opisano tam szczegółowo. A jeśli najpierw chcesz wiedzieć, co aplikacja w ogóle robi: <brand>czym jest Statix?</brand>",
+      "screenshotAlt": "Statystyki zawodników i skuteczność rzutów w aplikacji Statix zamiast w arkuszu Excela",
+      "screenshotLabel": "Analiza od razu po ostatnim gwizdku"
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o szablon Excel",
+      "description": "Wszystko, co trenerzy chcą wiedzieć przed pobraniem.",
+      "items": [
+        {
+          "question": "Czy szablon Excel jest naprawdę bezpłatny?",
+          "answer": "Tak. Pobieranie rusza od razu, bez rejestracji, bez adresu e-mail i bez newslettera. Plik możesz zatrzymać, dostosować i przekazać dalej w klubie."
+        },
+        {
+          "question": "W jakich programach otworzę szablon?",
+          "answer": "W Microsoft Excel, LibreOffice Calc i Arkuszach Google. Formuły celowo utrzymano prosto (COUNTIFS, INDEX/MATCH, SUMPRODUCT), żeby liczyły wszędzie. W Apple Numbers obliczenia również działają, choć pojedyncze listy wyboru mogą zginąć przy imporcie."
+        },
+        {
+          "question": "Które wskaźniki szablon liczy automatycznie?",
+          "answer": "Rzuty, bramki i skuteczność na zawodnika, skuteczność z siedmiu metrów, asysty, błędy techniczne i kary, wskaźnik ± dla zawodnika oraz obrony, bramki stracone i skuteczność bramkarza. Do tego sumy drużynowe na mecz i narastające wartości sezonowe."
+        },
+        {
+          "question": "Co liczy się jako rzut?",
+          "answer": "Każde wykończenie akcji: bramka, obroniona piłka, słupek i wyraźnie niecelny rzut. Błąd techniczny bez rzutu nie jest rzutem i nie wchodzi do skuteczności. Siedem metrów szablon prowadzi osobno, bo inaczej zaburzałyby skuteczność z gry."
+        },
+        {
+          "question": "Czy szablon wystarczy na cały sezon?",
+          "answer": "Jest przygotowany na 400 zarejestrowanych akcji, 30 meczów i 20 miejsc w kadrze. Na sezon młodzieżowy lub amatorski z reguły wystarcza; kto potrzebuje więcej, po prostu przeciąga formuły niżej."
+        },
+        {
+          "question": "Czy muszę zapisać się do newslettera, żeby dostać plik?",
+          "answer": "Nie. Pobieranie jest niezależne od wszystkiego innego. Newsletter to dobrowolna propozycja obok – pole nie jest zaznaczone z góry, a bez zaznaczenia dostajesz szablon tak samo."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Bez przepisywania",
+      "title": "Te same akcje, tylko dotknięte",
+      "description": "Zarejestruj się bezpłatnie i zarejestruj pierwszy mecz, bez wieczornego przepisywania. Albo zobacz najpierw w demo na żywo, jak to działa bez komórek – całkiem bez konta.",
+      "linkLabel": "Ile kosztuje Statix"
+    }
   }
 }

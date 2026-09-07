@@ -2667,5 +2667,449 @@
       "description": "Konto anlegen, Kader eintippen, fertig – das dauert weniger als eine Trainingsvorbereitung. Oder sieh dir vorher in der Live-Demo an, ob du das an der Bank bedienen kannst.",
       "linkLabel": "Was kostenlos enthalten ist"
     }
+  },
+  "author": {
+    "role": "Torwart, Trainer und Gründer von Statix",
+    "bio": "Arkadiusz Weiss steht seit über zehn Jahren im Handballtor und trainiert selbst eine Mannschaft in der Kreis- und Bezirksliga – genau der Alltag, für den diese Ratgeber geschrieben sind. Statix ist aus diesem Alltag entstanden: aus dem Zettel am Spielfeldrand, aus dem nach dem Abpfiff nie eine brauchbare Auswertung wurde."
+  },
+  "experiencesPage": {
+    "hero": {
+      "kicker": "Erfahrungen",
+      "titleBrand": "Statix",
+      "titleHighlight": "Erfahrungen",
+      "titleTail": ": So arbeiten Trainer mit der App",
+      "ledeWithQuotes": "Was Trainer berichten, die Statix im Spielbetrieb einsetzen – mit Namen und Verein, ohne geschönte Zitate. Dazu: wie aus Rückmeldungen aus der Halle neue Funktionen werden.",
+      "ledeEmpty": "Ehrlich vorweg: Es gibt hier noch keine veröffentlichten Trainer-Zitate, weil noch niemand eines freigegeben hat. Stattdessen steht hier, wer Statix entwickelt, wie Rückmeldungen aus der Halle in die App wandern – und wie du dir in zwei Minuten selbst ein Bild machst."
+    },
+    "testimonials": {
+      "kicker": "Trainer sagen",
+      "title": "Stimmen aus der Halle",
+      "descriptionWithQuotes": "Trainer, die Statix im Spielbetrieb einsetzen – mit Namen und Verein.",
+      "descriptionEmpty": "Hier stehen nur Zitate, die es wirklich gibt. Aktuell sind das keine.",
+      "ratingLabel": "Bewertung: {value} von {best}",
+      "emptyParagraph1": "Statix ist jung. Es gibt Trainer, die damit arbeiten, aber noch keine Zitate, die jemand mit Namen und Verein freigegeben hat – und genau deshalb steht hier auch keins. Erfundene Stimmen, ausgedachte Sternebewertungen oder „ein Trainer aus Bayern“ wirst du auf dieser Seite nicht finden, weder im Text noch in den Auszeichnungen für Suchmaschinen.",
+      "emptyParagraph2": "Wenn du wissen willst, ob Statix zu deiner Mannschaft passt, hilft dir die Live-Demo mehr als jede fremde Meinung: echte Spieldaten, direkt im Browser, ohne Account. Und wenn du selbst damit arbeitest, schreib mir gern an <mail>{email}</mail> – dein Bericht steht dann hier.",
+      "emptyParagraph3": "Was die App kann, steht auf <brand>Was ist Statix?</brand>, was sie kostet unter <pricing>Preise</pricing>."
+    },
+    "story": {
+      "kicker": "Von einem Handballer entwickelt",
+      "title": "Wer hinter Statix steht",
+      "paragraph": "Statix ist deshalb kein Tool aus einem Produktplan, sondern aus einer Sporthalle. Feedback von Trainerinnen und Trainern fließt direkt in die Entwicklung ein, und neue Funktionen entstehen dort, wo sie gebraucht werden – auf der Bank, im Training und in der Nachbereitung.",
+      "moreLink": "Mehr über die App: <brand>Was ist Statix?</brand>"
+    },
+    "feedbackLoop": {
+      "kicker": "Der kurze Weg",
+      "title": "Wie Feedback aus der Halle in die App kommt",
+      "description": "Zwischen deiner Nachricht und der Person, die den Code schreibt, steht niemand.",
+      "mailCta": "Feedback per Mail",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Es fällt in der Halle auf",
+          "text": "Fast alles, was in Statix steckt, ist an einem Spieltag entstanden: ein Knopf, der zu klein war, eine Auswertung, die im Bus keiner öffnen konnte, eine Aktion, die im Getümmel zwei Taps zu viel gebraucht hat."
+        },
+        {
+          "number": 2,
+          "title": "Es kommt per Mail oder Instagram an",
+          "text": "Trainer schreiben mir direkt – meistens ohne Formular, oft am Sonntagabend. Ich lese jede Nachricht selbst; es gibt kein Support-Team, das dazwischensteht."
+        },
+        {
+          "number": 3,
+          "title": "Es wird gebaut, wenn es mehr als einer braucht",
+          "text": "Was mehrfach kommt, landet oben auf der Liste. Turniermodus, Live-Ticker und die Spieler-Umfragen sind genau so entstanden – nicht aus einem Marktplan, sondern weil Trainer danach gefragt haben."
+        },
+        {
+          "number": 4,
+          "title": "Es geht zurück in die Halle",
+          "text": "Neue Funktionen laufen zuerst dort, wo sie gebraucht wurden. Wenn sie einen Spieltag überstehen, bleiben sie – und wenn nicht, fliegen sie wieder raus."
+        }
+      ],
+      "closing": "Wenn du wissen willst, wie Trainer im Verein oder im Nachwuchs mit Statix arbeiten, findest du das auf den Seiten <clubs>Statix für Vereine</clubs> und <youth>Statix für Jugendtrainer</youth>. Praxiswissen ohne App gibt es im <guide>Handball-Ratgeber</guide>."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zu Erfahrungen mit Statix",
+      "description": "Warum hier keine Sternebewertungen stehen – und wie du dir trotzdem ein Urteil bildest.",
+      "items": [
+        {
+          "question": "Gibt es Erfahrungsberichte von Trainern zu Statix?",
+          "answer": "Noch nicht öffentlich. Statix ist jung, und ich veröffentliche erst dann Stimmen, wenn echte Trainer sie mit Namen und Verein freigegeben haben. Erfundene oder anonymisierte Zitate wirst du hier nicht finden."
+        },
+        {
+          "question": "Wie kann ich Statix selbst testen, ohne mich auf Bewertungen zu verlassen?",
+          "answer": "Über die Live-Demo. Sie läuft mit echten Spieldaten im Browser, ohne Account und ohne Installation – du siehst also selbst, wie sich die Erfassung anfühlt, statt dich auf fremde Erfahrungen zu stützen."
+        },
+        {
+          "question": "Wer entwickelt Statix?",
+          "answer": "Arkadiusz Weiss, ein Handballer aus Deutschland, der die App aus der eigenen Praxis am Spielfeldrand heraus gebaut hat. Kein Konzern, kein anonymes Team – Feedback aus der Halle fließt direkt in die Entwicklung ein."
+        },
+        {
+          "question": "Wie gebe ich Feedback oder melde einen Fehler?",
+          "answer": "Am einfachsten per Mail an {email} oder über Instagram. Schreib gern konkret, in welcher Situation dir etwas gefehlt hat – am Spieltag, im Training oder bei der Nachbereitung."
+        },
+        {
+          "question": "Kann ich als Trainer ein Zitat beisteuern?",
+          "answer": "Sehr gern. Schreib mir, wie du mit Statix arbeitest und was dir konkret hilft. Wenn du damit einverstanden bist, dass Name, Rolle und Verein dabeistehen, kommt dein Bericht auf diese Seite."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Eigenes Urteil",
+      "title": "Die ehrlichste Erfahrung ist deine eigene",
+      "description": "Zwei Minuten mit echten Spieldaten sagen dir mehr als jede fremde Bewertung: kostenlos registrieren und selbst erfassen – oder erst in der Live-Demo ohne Account reinschauen.",
+      "linkLabel": "Was ist Statix?"
+    }
+  },
+  "freePage": {
+    "hero": {
+      "kicker": "Kostenlos erfassen",
+      "titleLead": "Handball-Statistik-App",
+      "titleHighlight": "kostenlos",
+      "titleTail": "nutzen",
+      "lede": "Ja – Statix ist eine kostenlose Handball-Statistik-App. Du erfasst Spiele live per Tap, bekommst Wurfquoten, Wurfbilder und Spielerwerte automatisch und teilst sie mit dem Team. Ohne Kreditkarte, ohne Testphase mit Ablaufdatum. Die Live-Demo läuft sogar ganz ohne Account im Browser.",
+      "trust": [
+        "Ohne Kreditkarte",
+        "Demo ohne Account",
+        "Offline in der Halle"
+      ]
+    },
+    "scope": {
+      "kicker": "Schwarz auf weiß",
+      "title": "Was ist im kostenlosen Zugang enthalten",
+      "description": "Links steht, was du bekommst. Rechts steht, wo es aufhört – beides gehört zu einer ehrlichen Antwort.",
+      "caption": "Funktionen im kostenlosen Zugang von Statix und ihre Grenzen",
+      "colFeature": "Funktion",
+      "colLimit": "Grenze im kostenlosen Zugang",
+      "noLimit": "ohne Grenze",
+      "rows": [
+        {
+          "feature": "Spiele live erfassen und auswerten",
+          "limit": "200 Spiele pro Team"
+        },
+        {
+          "feature": "Kader pflegen",
+          "limit": "25 Spieler pro Team"
+        },
+        {
+          "feature": "Mannschaften auf deinem Konto",
+          "limit": "3 Teams"
+        },
+        {
+          "feature": "Trainerteam einladen",
+          "limit": "5 Trainer pro Team, offene Einladungen mitgezählt"
+        },
+        {
+          "feature": "Wurfquoten, Spielerwerte, Wurfbilder",
+          "limit": "ohne Grenze"
+        },
+        {
+          "feature": "Turniere mit Tabelle und Spielplan",
+          "limit": "10 Turniere pro Team"
+        },
+        {
+          "feature": "Gegner-Bilanz (Head-to-Head)",
+          "limit": "60 Gegner pro Team"
+        },
+        {
+          "feature": "Spieler-Umfragen",
+          "limit": "20 Umfragen pro Team"
+        },
+        {
+          "feature": "Öffentlicher Live-Ticker",
+          "limit": "ohne Grenze"
+        },
+        {
+          "feature": "Offline erfassen und später synchronisieren",
+          "limit": "ohne Grenze"
+        },
+        {
+          "feature": "Kader als Kartenalbum mit Spielerkarten",
+          "limit": "ohne Grenze"
+        },
+        {
+          "feature": "KI-Analysen (Spiel, Team, Spieler, Turnier)",
+          "limit": "3 in 24 Stunden, 25 in 30 Tagen, 1 gleichzeitig"
+        },
+        {
+          "feature": "Berichte als PDF teilen",
+          "limit": "3 in 24 Stunden"
+        },
+        {
+          "feature": "Live-Demo ohne Account",
+          "limit": "ohne Grenze"
+        }
+      ],
+      "closing": "Die Kontingente für KI-Analysen und geteilte Berichte laufen in rollierenden Zeitfenstern: Eine Analyse zählt genau 24 Stunden beziehungsweise 30 Tage nach ihrem Start nicht mehr mit – es gibt keinen festen Reset um Mitternacht. Gelöschte Berichte geben das Kontingent nicht zurück; gelöschte Spieler, Spiele oder Turniere geben ihren Platz dagegen wieder frei. Was ein Abo daran später ändern würde, steht auf der Seite <pricing>Preise für die Handball-Statistik-App</pricing>."
+    },
+    "demo": {
+      "kicker": "Null Aufwand",
+      "title": "Live-Demo ohne Account",
+      "description": "Kein Formular, keine E-Mail-Adresse, kein Passwort – ein Klick und du bist drin.",
+      "paragraph": "Die Demo ist keine Klickstrecke mit Platzhaltern, sondern eine voll gefüllte Statix-Version mit echten Spieldaten. Du siehst die Live-Erfassung, die Wurfbilder, die Spielerwerte und eine fertige KI-Analyse – genau so, wie es am Samstag in der Halle aussieht. Wenn dir das gefällt, legst du danach dein eigenes Team an. Wenn nicht, hast du nichts hinterlassen.",
+      "cta": "Live-Demo starten",
+      "screenshotAlt": "Kostenlose Handball-Statistik-App: Spielaktionen live per Tap erfassen",
+      "screenshotLabel": "Live-Erfassung in der Demo"
+    },
+    "why": {
+      "kicker": "Kein Haken",
+      "title": "Warum es eine kostenlose Version gibt",
+      "paragraph": "Ich habe Statix gebaut, weil ich selbst an der Bank stand und mir die Zahlen gefehlt haben. Eine App, die man erst kaufen muss, bevor man weiß, ob sie in der Halle funktioniert, hätte ich nie ausprobiert – und du vermutlich auch nicht. Also ist sie kostenlos, solange sie wächst: Ich brauche Trainer, die sie wirklich benutzen und mir sagen, was fehlt. Später wird ein Abo den Betrieb tragen, aber wer heute anfängt, zahlt heute nichts und wird vorher informiert, wenn sich etwas ändert."
+    },
+    "alternatives": {
+      "kicker": "Fair verglichen",
+      "title": "Kostenlose Alternativen im Vergleich",
+      "description": "Statix ist nicht die einzige Möglichkeit, ohne Geld an Handball-Statistiken zu kommen. Hier stehen alle drei nebeneinander.",
+      "goodLabel": "Dafür gut: ",
+      "badLabel": "Der Haken: ",
+      "items": [
+        {
+          "name": "Zettel und Stift",
+          "cost": "Kostet nichts",
+          "good": "Fällt nie aus, braucht keinen Akku, jeder kann es sofort.",
+          "bad": "Wer coacht, schreibt nicht mit. Und was mitgeschrieben ist, rechnet niemand aus – spätestens im Dezember liegt der Stapel unausgewertet in der Sporttasche."
+        },
+        {
+          "name": "Excel-Vorlage",
+          "cost": "Kostet nichts",
+          "good": "Rechnet Wurfquoten selbst aus, lässt sich anpassen, gehört dir.",
+          "bad": "In der Halle unbedienbar, also tippst du abends ab. Kein Wurfbild, kein Verlauf pro Spieler, und der Co-Trainer hat immer die falsche Version."
+        },
+        {
+          "name": "Statix",
+          "cost": "Basis dauerhaft 0 €",
+          "good": "Ein Tap pro Aktion, Auswertung fertig beim Schlusspfiff, offline nutzbar, teilbar per Link.",
+          "bad": "Du brauchst ein Handy oder Tablet und ein Konto. Für die KI-Analysen und geteilte Berichte gelten Tageskontingente."
+        }
+      ],
+      "closing": "Wenn du bei der Tabelle bleiben willst, nimm eine, die schon rechnet: Unsere <template>kostenlose Handball-Statistik Excel-Vorlage</template> bringt Kader, Spielprotokoll, Auswertung und Saisonblatt mit fertigen Formeln mit – Download ohne Anmeldung. Für eine einzelne Quote zwischendurch reicht der <calculator>Wurfquoten-Rechner</calculator>, und im Ratgeber steht, wie du <guide>eine Handball-Statistik sauber führst</guide>."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zur kostenlosen Nutzung",
+      "description": "Was Trainer wissen wollen, bevor sie ihr erstes Spiel erfassen.",
+      "items": [
+        {
+          "question": "Gibt es eine wirklich kostenlose Handball-Statistik-App?",
+          "answer": "Ja. Bis zum 31. Dezember 2026 ist Statix mit vollem Funktionsumfang kostenlos nutzbar, und danach bleibt die Basis-Stufe dauerhaft kostenlos: Spiele live erfassen, auswerten, Termine planen, Kaderkarten, öffentlicher Live-Ticker. Es gibt keinen Bezahlvorgang in der App und keine Kreditkartenabfrage."
+        },
+        {
+          "question": "Muss ich für die kostenlose Nutzung Zahlungsdaten hinterlegen?",
+          "answer": "Nein. Es gibt in der App keinen Bezahlvorgang und kein Feld für Karten- oder Bankdaten. Für ein eigenes Team brauchst du nur eine E-Mail-Adresse, für die Live-Demo nicht einmal die."
+        },
+        {
+          "question": "Was kann ich ohne Account ausprobieren?",
+          "answer": "Die Live-Demo. Sie ist eine voll gefüllte Statix-Version mit echten Spieldaten – Live-Statistiken, Wurfbilder und KI-Analyse direkt im Browser, ohne Anmeldung und ohne Installation."
+        },
+        {
+          "question": "Welche Grenzen hat der kostenlose Zugang?",
+          "answer": "Bis zum 31. Dezember 2026: pro Team 25 Spieler, 200 Spiele, 10 Turniere, 60 Gegner, 20 Umfragen und 5 Trainer inklusive offener Einladungen; pro Konto 3 Teams. Dazu 3 KI-Analysen in 24 Stunden und 25 in 30 Tagen (eine gleichzeitig) sowie 3 geteilte Berichte in 24 Stunden. Ab dem 1. Januar 2027 gelten für neue Konten die Grenzen der Basis-Stufe: eine Mannschaft, 20 Spieler:innen, 10 Spiele, die letzten fünf davon in voller Tiefe, 3 Turniere sowie 4 KI-Analysen und 4 geteilte Berichte im Monat."
+        },
+        {
+          "question": "Bleibt Statix kostenlos?",
+          "answer": "Ja. Ab dem 1. Januar 2027 heißt der kostenlose Zugang Basis und bleibt dauerhaft 0 €: die ganze Live-Erfassung, der komplette Terminplan, die Kaderkarten und der öffentliche Live-Ticker, für eine Mannschaft. Bezahlt wird ab dann, was echtes Geld kostet – KI-Analysen in größerer Zahl, Videoanalyse, geteilte Berichte und mehrere Mannschaften. Wer sich vor dem 1. Januar 2027 registriert, behält den Trainer-Plan bis zum Ende der Saison 26/27 am 30. Juni 2027 kostenlos."
+        },
+        {
+          "question": "Ist eine kostenlose App für den Verein überhaupt sinnvoll?",
+          "answer": "Für den Einstieg schon. Jeder Trainer kann sofort loslegen, ohne dass jemand einen Beschluss fasst oder Geld freigibt. Wenn mehrere Mannschaften nach demselben Schema erfassen sollen, lohnt danach der Blick auf die Vereinsseite."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Ohne Anmeldung",
+      "title": "Kostenlos anfangen, heute noch",
+      "description": "Für dein eigenes Team reicht eine E-Mail-Adresse – keine Kreditkarte, kein Bezahlvorgang. Und wenn du erst schauen willst: Die Live-Demo läuft mit echten Spieldaten ohne jede Angabe von dir.",
+      "linkLabel": "Was Statix kostet"
+    }
+  },
+  "templatePage": {
+    "hero": {
+      "kicker": "Kostenloser Download",
+      "titleLead": "Handball-Statistik",
+      "titleHighlight": "Excel-Vorlage",
+      "titleTail": "kostenlos",
+      "lede": "Vier Blätter, fertige Formeln, deutsche Spaltenköpfe: Kader, Spielprotokoll, Auswertung und Saison. Wurfquote, Siebenmeter-Quote und Paradenquote rechnen sich selbst – du trägst nur ein, was auf dem Feld passiert. Ohne Anmeldung, ohne E-Mail-Adresse.",
+      "squadSlots": "{count} Kaderplätze",
+      "actionRows": "{count} Aktionszeilen",
+      "games": "{count} Spiele pro Saison",
+      "printReady": "druckfertig eingerichtet",
+      "cardTitle": "Vorlage herunterladen",
+      "downloadCta": "Excel-Vorlage kostenlos laden",
+      "downloadNote": "Sofortiger Download. Keine Anmeldung, kein Newsletter-Zwang."
+    },
+    "optin": {
+      "title": "Optional: Updates per Mail",
+      "note": "Kein Pflichtfeld für den Download – die Vorlage bekommst du ohne alles.",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "deine@mail.de",
+      "newsletterCheckbox": "Ja, schick mir den Statix-Newsletter mit Neuigkeiten zur App.",
+      "privacyPrefix": "Ich habe die",
+      "privacyLink": "Datenschutzhinweise",
+      "privacyLinkTitle": "Zur Datenschutzerklärung",
+      "privacySuffix": "gelesen. Abmeldung jederzeit möglich.",
+      "submit": "Eintragen",
+      "pending": "Wird gesendet …",
+      "success": "Fast geschafft: Ich habe dir eine Bestätigungs-E-Mail geschickt. Erst mit dem Klick darin bist du eingetragen.",
+      "genericError": "Das hat leider nicht geklappt.",
+      "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "missingConsent": "Für den Newsletter brauche ich beide Häkchen. Die Vorlage bekommst du auch ohne."
+    },
+    "metrics": {
+      "kicker": "Vier Blätter",
+      "title": "Welche Kennzahlen die Vorlage erfasst",
+      "description": "Nichts davon musst du selbst zusammenbauen – die Formeln sind drin und rechnen, sobald du die erste Zeile einträgst.",
+      "groups": [
+        {
+          "sheet": "Kader",
+          "description": "Deine Mannschaft mit Rückennummer, Name, Position und Jahrgang. Die Nummer ist der Schlüssel: Alle anderen Blätter ziehen sich den Namen automatisch daraus.",
+          "metrics": [
+            "Rückennummer",
+            "Name",
+            "Position (Auswahlliste)",
+            "Jahrgang",
+            "Notiz"
+          ]
+        },
+        {
+          "sheet": "Spielprotokoll",
+          "description": "Eine Zeile pro Aktion – so, wie es am Spielfeldrand tatsächlich passiert. Aktion und Wurfzone wählst du aus einer Liste, den Namen musst du nie tippen.",
+          "metrics": [
+            "Tor und Fehlwurf",
+            "Siebenmeter (Tor / Fehlwurf)",
+            "Parade und Gegentor",
+            "Assist",
+            "Technischer Fehler",
+            "2 Minuten, Gelb, Rot",
+            "Wurfzone: Außen, Kreis, Rückraum, Durchbruch, Tempogegenstoß, Siebenmeter"
+          ]
+        },
+        {
+          "sheet": "Auswertung",
+          "description": "Ein Spiel, alle Spieler, fertig gerechnet. Du trägst oben die Spielbezeichnung ein – der Rest steht da.",
+          "metrics": [
+            "Würfe und Tore pro Spieler",
+            "Wurfquote in Prozent",
+            "Siebenmeter-Quote",
+            "Assists, technische Fehler, Zeitstrafen",
+            "± (Tore inkl. 7 m minus Fehlwürfe minus technische Fehler)",
+            "Paraden, Gegentore und Paradenquote des Torwarts",
+            "Mannschaftszeile mit allen Summen und Quoten"
+          ]
+        },
+        {
+          "sheet": "Saison",
+          "description": "Die Spieleliste der Saison und darunter die rollierenden Werte jedes Spielers über alle erfassten Partien.",
+          "metrics": [
+            "Eigene Tore und Gegentore pro Spiel",
+            "Anzahl Spiele pro Spieler",
+            "Würfe, Tore und Wurfquote über die Saison",
+            "Siebenmeter-Bilanz",
+            "Technische Fehler und Zeitstrafen",
+            "Paradenquote über die Saison"
+          ]
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "In fünf Schritten",
+      "title": "So füllst du die Vorlage im Spiel aus",
+      "description": "Einmal einrichten, dann pro Aktion eine Zeile. Mehr ist es nicht.",
+      "steps": [
+        {
+          "name": "Kader einmal eintragen",
+          "text": "Trag im Blatt „Kader“ Rückennummer, Name und Position deiner Spieler ein. Das machst du einmal pro Saison. Die vier grau hinterlegten Beispielzeilen überschreibst du einfach."
+        },
+        {
+          "name": "Spiel benennen",
+          "text": "Gib dem Spiel im Blatt „Saison“ eine kurze Bezeichnung, zum Beispiel Sp1, dazu Datum und Gegner. Genau diese Bezeichnung nutzt du gleich im Protokoll."
+        },
+        {
+          "name": "Jede Aktion als Zeile erfassen",
+          "text": "Im Blatt „Spielprotokoll“ trägst du pro Aktion eine Zeile ein: Spiel, Minute, Rückennummer, Aktion und Wurfzone. Der Name erscheint automatisch. Aktion und Zone wählst du aus der Liste – ein Klick statt tippen."
+        },
+        {
+          "name": "Halbzeit nutzen",
+          "text": "Sieh in der Pause kurz ins Blatt „Auswertung“. Wurfquoten und Paradenquote stehen dort fertig – das reicht für eine Ansage, die auf Zahlen statt auf Gefühl beruht."
+        },
+        {
+          "name": "Nach dem Spiel auswerten",
+          "text": "Trag oben in der Auswertung die Spielbezeichnung ein und drucke das Blatt aus oder teile es. Das Saisonblatt aktualisiert sich mit jedem erfassten Spiel von selbst."
+        }
+      ],
+      "closing": "Wenn du beim Erfassen unsicher bist, was als Wurf zählt und was nicht: Im Ratgeber steht, <guide>wie du eine Handball-Statistik sauber führst</guide> – und wie du <rate>die Wurfquote berechnest und richtig deutest</rate>. Für einzelne Werte zwischendurch gibt es den <calculator>Wurfquoten-Rechner</calculator>."
+    },
+    "limits": {
+      "kicker": "Ehrlich bleiben",
+      "title": "Wo Excel am dritten Spieltag aufhört",
+      "description": "Die Vorlage oben ist gut. Trotzdem kenne ich kaum einen Trainer, der sie eine ganze Saison durchhält – aus fünf sehr konkreten Gründen.",
+      "items": [
+        {
+          "title": "Auf der Bank tippst du nicht in Zellen",
+          "text": "Am Tablet triffst du im Stehen keine Zelle, während der Gegner kontert. In der Praxis führt das dazu, dass du mitschreibst, was du noch im Kopf hast – und das ist nach einer Viertelstunde nicht mehr viel."
+        },
+        {
+          "title": "Abtippen kostet dich den Sonntag",
+          "text": "Wer den Zettel abends überträgt, macht die Arbeit zweimal. Und jede Übertragung erzeugt Fehler: Ein Fehlwurf, der beim Abtippen untergeht, hebt die Wurfquote und du steuerst dein Training nach einer Zahl, die es nie gab."
+        },
+        {
+          "title": "Kein Wurfbild",
+          "text": "Eine Tabelle sagt dir, dass 40 Prozent der Rückraumwürfe drin waren. Sie sagt dir nicht, dass alle Fehlwürfe aus derselben Ecke kamen. Wo geworfen wurde, sieht man nur auf einem Feld – nicht in einer Zelle."
+        },
+        {
+          "title": "Kein Verlauf pro Spieler",
+          "text": "Das Saisonblatt summiert, aber es zeigt keine Kurve. Ob eine Rückraumspielerin über sechs Spiele besser wird oder nur ein gutes Spiel hatte, liest du aus Summen nicht heraus."
+        },
+        {
+          "title": "Am dritten Spieltag öffnet sie keiner mehr",
+          "text": "Das ist das eigentliche Problem. Die Datei liegt auf einem Laptop, den Co-Trainer nicht hat, in einer Version, die niemand kennt. Nach dem dritten Spieltag ist sie ein Archiv, kein Werkzeug."
+        }
+      ]
+    },
+    "upgrade": {
+      "kicker": "Der nächste Schritt",
+      "title": "Wenn die Vorlage nicht mehr reicht",
+      "description": "Dieselben Aktionen, nur getippt statt geschrieben – und die Auswertung steht, wenn die Sirene geht.",
+      "paragraph": "Statix ist im Kern dieselbe Idee wie diese Vorlage: eine Zeile pro Aktion. Nur dass die Zeile ein Tap auf dem Handy ist, dass die Wurfposition mitkommt und daraus ein Wurfbild entsteht, und dass nach dem Spiel niemand mehr etwas abtippt. Offline in der Halle funktioniert es auch – die Daten wandern hoch, sobald wieder Netz da ist.",
+      "statsLink": "Welche Kennzahlen überhaupt zusammengehören – und welcher Richtwert im Amateurbereich normal ist – steht im Überblick <stats>Handball-Statistiken</stats>.",
+      "costLink": "Was das kostet, steht auf der Seite <pricing>Preise für die Handball-Statistik-App</pricing> – kurz gesagt: aktuell nichts. Wie weit du damit <free>kostenlos kommst</free>, steht dort im Detail. Und wenn du erst wissen willst, was die App überhaupt macht: <brand>Was ist Statix?</brand>",
+      "screenshotAlt": "Spielerstatistiken und Wurfquoten in der Statix Handball-App statt in einer Excel-Tabelle",
+      "screenshotLabel": "Auswertung direkt nach dem Schlusspfiff"
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zur Excel-Vorlage",
+      "description": "Alles, was Trainer vor dem Download wissen wollen.",
+      "items": [
+        {
+          "question": "Ist die Excel-Vorlage wirklich kostenlos?",
+          "answer": "Ja. Der Download startet sofort, ohne Anmeldung, ohne E-Mail-Adresse und ohne Newsletter. Du kannst die Datei behalten, anpassen und im Verein weitergeben."
+        },
+        {
+          "question": "Mit welchen Programmen kann ich die Vorlage öffnen?",
+          "answer": "Mit Microsoft Excel, LibreOffice Calc und Google Tabellen. Die Formeln sind bewusst schlicht gehalten (COUNTIFS, INDEX/MATCH, SUMPRODUCT), damit sie überall rechnen. In Apple Numbers funktionieren die Berechnungen ebenfalls, einzelne Auswahllisten können beim Import verloren gehen."
+        },
+        {
+          "question": "Welche Kennzahlen rechnet die Vorlage automatisch aus?",
+          "answer": "Würfe, Tore und Wurfquote pro Spieler, die Siebenmeter-Quote, Assists, technische Fehler und Zeitstrafen, ein ± je Spieler sowie Paraden, Gegentore und Paradenquote des Torwarts. Dazu Mannschaftssummen pro Spiel und rollierende Saisonwerte."
+        },
+        {
+          "question": "Was zählt als Wurf?",
+          "answer": "Jeder Torabschluss: Tor, gehaltener Ball, Pfosten und klarer Fehlwurf. Ein technischer Fehler ohne Abschluss ist kein Wurf und fließt nicht in die Wurfquote ein. Siebenmeter führt die Vorlage getrennt, weil sie die Feldquote sonst verzerren."
+        },
+        {
+          "question": "Reicht die Vorlage für eine ganze Saison?",
+          "answer": "Sie ist auf 400 erfasste Aktionen, 30 Spiele und 20 Kaderplätze ausgelegt. Für eine Jugend- oder Amateursaison reicht das in der Regel; wer mehr braucht, zieht die Formeln einfach weiter nach unten."
+        },
+        {
+          "question": "Muss ich den Newsletter abonnieren, um die Datei zu bekommen?",
+          "answer": "Nein. Der Download ist von allem anderen unabhängig. Der Newsletter ist ein freiwilliges Angebot daneben – das Häkchen ist nicht vorausgewählt, und ohne Häkchen bekommst du die Vorlage genauso."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Ohne Abtippen",
+      "title": "Dieselben Aktionen, nur getippt",
+      "description": "Registriere dich kostenlos und erfasse dein erstes Spiel, ohne abends etwas abzutippen. Oder sieh dir vorher in der Live-Demo an, wie sich das ohne Zellen anfühlt – ganz ohne Account.",
+      "linkLabel": "Was Statix kostet"
+    }
   }
 }

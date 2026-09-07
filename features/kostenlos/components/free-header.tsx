@@ -1,4 +1,7 @@
+'use client';
+
 import { UserPlus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -9,8 +12,6 @@ import {
   MarkerUnderline,
 } from '@/features/landing-page/components/tactic';
 
-const TRUST = ['Ohne Kreditkarte', 'Demo ohne Account', 'Offline in der Halle'];
-
 /**
  * Court hero for `/handball-statistik-app-kostenlos`. The lede answers the
  * search query in its first sentence ("Ja – Statix …") and stays under 60
@@ -18,6 +19,10 @@ const TRUST = ['Ohne Kreditkarte', 'Demo ohne Account', 'Offline in der Halle'];
  * @returns A JSX element rendering the hero on the court ground.
  */
 export default function FreeHeader() {
+  const t = useTranslations('freePage.hero');
+  const tCommon = useTranslations('common');
+  const trust = t.raw('trust') as string[];
+
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
       <CourtDiagram
@@ -31,24 +36,20 @@ export default function FreeHeader() {
 
       <div className='relative mx-auto w-full max-w-4xl px-6 pb-16 pt-28 text-center sm:px-10 lg:pb-24 lg:pt-32'>
         <BoardKicker color='chalk' className='justify-center'>
-          Kostenlos erfassen
+          {t('kicker')}
         </BoardKicker>
 
         <h1 className='mt-5 font-display text-[2.5rem] font-extrabold leading-[1.04] tracking-[-0.035em] text-chalk sm:text-[3.2rem]'>
-          Handball-Statistik-App{' '}
+          {t('titleLead')}{' '}
           <span className='relative inline-block text-primary'>
-            kostenlos
+            {t('titleHighlight')}
             <MarkerUnderline color='marker' />
-          </span>{' '}
-          nutzen
+          </span>
+          {t('titleTail') ? ` ${t('titleTail')}` : null}
         </h1>
 
         <p className='mx-auto mt-6 max-w-[62ch] text-base leading-7 text-chalk/80 sm:text-lg sm:leading-8'>
-          Ja – Statix ist eine kostenlose Handball-Statistik-App. Du erfasst
-          Spiele live per Tap, bekommst Wurfquoten, Wurfbilder und
-          Spielerwerte automatisch und teilst sie mit dem Team. Ohne
-          Kreditkarte, ohne Testphase mit Ablaufdatum. Die Live-Demo läuft sogar
-          ganz ohne Account im Browser.
+          {t('lede')}
         </p>
 
         <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center'>
@@ -58,19 +59,19 @@ export default function FreeHeader() {
             href={CLUB_CONFIG.website.appUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Jetzt kostenlos registrieren
+            {tCommon('ctaRegister')}
           </HeroActionButton>
           <HeroActionButton
             variant='secondary'
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Live-Demo ohne Account
+            {tCommon('ctaDemoNoAccount')}
           </HeroActionButton>
         </div>
 
         <div className='mt-7 flex flex-wrap items-center justify-center gap-2'>
-          {TRUST.map((item) => (
+          {trust.map((item) => (
             <HeroTrustBadge key={item} label={item} />
           ))}
         </div>

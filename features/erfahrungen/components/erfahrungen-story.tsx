@@ -1,17 +1,24 @@
+'use client';
+
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { BoardCard, BoardKicker, Grain } from '@/features/landing-page/components/tactic';
+import { inlineLink } from '@/components/custom-ui/rich-text';
 import { ARTICLE_AUTHOR, authorInitials } from '@/features/ratgeber/data/author';
 
 /**
  * The founder story — the honest substitute for reviews a young product does
- * not have yet. Name, role, photo and background come from `ARTICLE_AUTHOR`,
- * the same confirmed profile the Ratgeber byline uses, so the two can never
- * tell different stories about the same person.
+ * not have yet. Name and photo come from `ARTICLE_AUTHOR`, the same confirmed
+ * profile the Ratgeber byline uses; role and background come from the shared
+ * `author` namespace, so the two pages can never tell different stories about
+ * the same person in any language.
  * @returns A JSX element rendering the founder story on the paper panel ground.
  */
 export default function ErfahrungenStory() {
-  const { name, role, bio, photoPath } = ARTICLE_AUTHOR;
+  const t = useTranslations('experiencesPage.story');
+  const tAuthor = useTranslations('author');
+  const { name, photoPath } = ARTICLE_AUTHOR;
+  const role = tAuthor('role');
 
   return (
     <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-28'>
@@ -36,30 +43,19 @@ export default function ErfahrungenStory() {
             )}
 
             <div className='min-w-0'>
-              <BoardKicker>Von einem Handballer entwickelt</BoardKicker>
+              <BoardKicker>{t('kicker')}</BoardKicker>
               <h2 className='mt-3 font-display text-[1.75rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[2.1rem]'>
-                Wer hinter Statix steht
+                {t('title')}
               </h2>
               <p className='mt-1 text-sm text-ink/60'>
                 {name} · {role}
               </p>
 
               <div className='mt-5 space-y-4 text-base leading-8 text-ink/75'>
-                <p>{bio}</p>
-                <p>
-                  Statix ist deshalb kein Tool aus einem Produktplan, sondern
-                  aus einer Sporthalle. Feedback von Trainerinnen und Trainern
-                  fließt direkt in die Entwicklung ein, und neue Funktionen
-                  entstehen dort, wo sie gebraucht werden – auf der Bank, im
-                  Training und in der Nachbereitung.
-                </p>
+                <p>{tAuthor('bio')}</p>
+                <p>{t('paragraph')}</p>
                 <p className='text-[15px]'>
-                  Mehr über die App:{' '}
-                  <Link
-                    href='/was-ist-statix'
-                    className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-                    Was ist Statix?
-                  </Link>
+                  {t.rich('moreLink', { brand: inlineLink('/was-ist-statix') })}
                 </p>
               </div>
             </div>

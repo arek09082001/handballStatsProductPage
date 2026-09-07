@@ -2667,5 +2667,449 @@
       "description": "Créer un compte, saisir l’effectif, terminé – cela prend moins de temps qu’une préparation d’entraînement. Ou regardez d’abord dans la démo en direct si vous pouvez l’utiliser depuis le banc.",
       "linkLabel": "Ce qui est inclus gratuitement"
     }
+  },
+  "author": {
+    "role": "Gardien, entraîneur et fondateur de Statix",
+    "bio": "Arkadiusz Weiss garde les buts au handball depuis plus de dix ans et entraîne lui-même une équipe au niveau régional – exactement le quotidien pour lequel ces guides sont écrits. Statix est né de ce quotidien : de la feuille de papier au bord du terrain dont ne sortait jamais, après le coup de sifflet final, une analyse exploitable."
+  },
+  "experiencesPage": {
+    "hero": {
+      "kicker": "Retours d’expérience",
+      "titleBrand": "Statix",
+      "titleHighlight": "retours d’expérience",
+      "titleTail": " : comment les entraîneurs travaillent avec l’application",
+      "ledeWithQuotes": "Ce que rapportent les entraîneurs qui utilisent Statix en compétition – avec nom et club, sans citations retouchées. Et aussi : comment les retours venus de la salle deviennent de nouvelles fonctions.",
+      "ledeEmpty": "Honnêtement, d’emblée : il n’y a pas encore ici de citations d’entraîneurs publiées, parce que personne n’en a validé. À la place, vous trouverez qui développe Statix, comment les retours de la salle arrivent dans l’application – et comment vous faire votre propre idée en deux minutes."
+    },
+    "testimonials": {
+      "kicker": "Les entraîneurs disent",
+      "title": "Voix de la salle",
+      "descriptionWithQuotes": "Des entraîneurs qui utilisent Statix en compétition – avec nom et club.",
+      "descriptionEmpty": "Ici ne figurent que des citations qui existent vraiment. Pour l’instant, il n’y en a aucune.",
+      "ratingLabel": "Note : {value} sur {best}",
+      "emptyParagraph1": "Statix est jeune. Des entraîneurs travaillent avec, mais aucune citation n’a encore été validée avec nom et club – et c’est précisément pour cela qu’il n’y en a aucune ici. Des voix inventées, des étoiles imaginaires ou « un entraîneur de Bavière », vous n’en trouverez pas sur cette page, ni dans le texte ni dans le balisage destiné aux moteurs de recherche.",
+      "emptyParagraph2": "Si vous voulez savoir si Statix convient à votre équipe, la démo en direct vous aide plus que n’importe quel avis extérieur : de vraies données de match, dans le navigateur, sans compte. Et si vous l’utilisez déjà, écrivez-moi à <mail>{email}</mail> – votre témoignage figurera alors ici.",
+      "emptyParagraph3": "Ce que sait faire l’application est sur <brand>qu’est-ce que Statix ?</brand>, ce qu’elle coûte sous <pricing>tarifs</pricing>."
+    },
+    "story": {
+      "kicker": "Développé par un handballeur",
+      "title": "Qui se trouve derrière Statix",
+      "paragraph": "Statix n’est donc pas un outil sorti d’un plan produit, mais d’une salle de sport. Les retours des entraîneuses et entraîneurs passent directement dans le développement, et les nouvelles fonctions naissent là où on en a besoin – sur le banc, à l’entraînement et dans l’analyse d’après-match.",
+      "moreLink": "En savoir plus sur l’application : <brand>qu’est-ce que Statix ?</brand>"
+    },
+    "feedbackLoop": {
+      "kicker": "Le chemin court",
+      "title": "Comment les retours de la salle arrivent dans l’application",
+      "description": "Entre votre message et la personne qui écrit le code, il n’y a personne.",
+      "mailCta": "Envoyer un retour par e-mail",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Cela se remarque dans la salle",
+          "text": "Presque tout ce que contient Statix est né un jour de match : un bouton trop petit, une analyse que personne ne pouvait ouvrir dans le bus, une action qui demandait deux gestes de trop en pleine agitation."
+        },
+        {
+          "number": 2,
+          "title": "Cela arrive par e-mail ou par Instagram",
+          "text": "Les entraîneurs m’écrivent directement – le plus souvent sans formulaire, souvent le dimanche soir. Je lis moi-même chaque message ; aucune équipe support ne s’interpose."
+        },
+        {
+          "number": 3,
+          "title": "C’est construit dès que plus d’un en a besoin",
+          "text": "Ce qui revient plusieurs fois passe en haut de la liste. Le mode tournoi, le direct et les sondages joueurs sont nés exactement ainsi – non d’un plan marketing, mais parce que des entraîneurs l’ont demandé."
+        },
+        {
+          "number": 4,
+          "title": "Cela repart dans la salle",
+          "text": "Les nouvelles fonctions tournent d’abord là où on en avait besoin. Si elles survivent à un jour de match, elles restent – sinon, elles repartent."
+        }
+      ],
+      "closing": "Si vous voulez savoir comment les entraîneurs travaillent avec Statix en club ou chez les jeunes, vous le trouverez sur les pages <clubs>Statix pour les clubs</clubs> et <youth>Statix pour les entraîneurs de jeunes</youth>. Des connaissances de terrain sans application, c’est dans le <guide>guide handball</guide>."
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Questions fréquentes sur les retours d’expérience avec Statix",
+      "description": "Pourquoi il n’y a pas d’étoiles ici – et comment vous forger malgré tout un jugement.",
+      "items": [
+        {
+          "question": "Existe-t-il des témoignages d’entraîneurs sur Statix ?",
+          "answer": "Pas encore publiquement. Statix est jeune, et je ne publie des voix que lorsque de vrais entraîneurs les ont validées avec nom et club. Vous ne trouverez pas ici de citations inventées ou anonymisées."
+        },
+        {
+          "question": "Comment essayer Statix sans dépendre des avis ?",
+          "answer": "Via la démo en direct. Elle tourne avec de vraies données de match dans le navigateur, sans compte et sans installation – vous voyez donc vous-même ce que donne la saisie plutôt que de vous appuyer sur l’expérience des autres."
+        },
+        {
+          "question": "Qui développe Statix ?",
+          "answer": "Arkadiusz Weiss, un handballeur allemand qui a construit l’application à partir de sa propre pratique au bord du terrain. Pas de groupe, pas d’équipe anonyme – les retours de la salle passent directement dans le développement."
+        },
+        {
+          "question": "Comment donner un retour ou signaler une erreur ?",
+          "answer": "Le plus simple est un e-mail à {email} ou un message sur Instagram. N’hésitez pas à préciser dans quelle situation quelque chose vous a manqué – le jour du match, à l’entraînement ou lors de l’analyse."
+        },
+        {
+          "question": "Puis-je proposer une citation en tant qu’entraîneur ?",
+          "answer": "Très volontiers. Écrivez-moi comment vous travaillez avec Statix et ce qui vous aide concrètement. Si vous acceptez que votre nom, votre rôle et votre club figurent à côté, votre témoignage rejoindra cette page."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Votre propre jugement",
+      "title": "Le retour le plus honnête est le vôtre",
+      "description": "Deux minutes avec de vraies données de match vous en disent plus que n’importe quel avis extérieur : inscrivez-vous gratuitement et saisissez vous-même – ou jetez d’abord un œil à la démo en direct, sans compte.",
+      "linkLabel": "Qu’est-ce que Statix ?"
+    }
+  },
+  "freePage": {
+    "hero": {
+      "kicker": "Saisir gratuitement",
+      "titleLead": "Utiliser l’application de statistiques de handball",
+      "titleHighlight": "gratuitement",
+      "titleTail": "",
+      "lede": "Oui – Statix est une application de statistiques de handball gratuite. Vous saisissez les matchs en direct d’un geste, obtenez automatiquement pourcentages de tir, cartes de tirs et valeurs de joueurs, et les partagez avec l’équipe. Sans carte bancaire, sans période d’essai avec date d’expiration. La démo en direct tourne même totalement sans compte, dans le navigateur.",
+      "trust": [
+        "Sans carte bancaire",
+        "Démo sans compte",
+        "Hors ligne dans la salle"
+      ]
+    },
+    "scope": {
+      "kicker": "Noir sur blanc",
+      "title": "Ce que comprend l’accès gratuit",
+      "description": "À gauche, ce que vous obtenez. À droite, où cela s’arrête – les deux font partie d’une réponse honnête.",
+      "caption": "Fonctions de l’accès gratuit à Statix et leurs limites",
+      "colFeature": "Fonction",
+      "colLimit": "Limite dans l’accès gratuit",
+      "noLimit": "sans limite",
+      "rows": [
+        {
+          "feature": "Saisir et analyser les matchs en direct",
+          "limit": "200 matchs par équipe"
+        },
+        {
+          "feature": "Gérer l’effectif",
+          "limit": "25 joueurs par équipe"
+        },
+        {
+          "feature": "Équipes sur votre compte",
+          "limit": "3 équipes"
+        },
+        {
+          "feature": "Inviter le staff",
+          "limit": "5 entraîneurs par équipe, invitations en attente comprises"
+        },
+        {
+          "feature": "Pourcentages de tir, valeurs de joueurs, cartes de tirs",
+          "limit": "sans limite"
+        },
+        {
+          "feature": "Tournois avec classement et calendrier",
+          "limit": "10 tournois par équipe"
+        },
+        {
+          "feature": "Bilan face aux adversaires",
+          "limit": "60 adversaires par équipe"
+        },
+        {
+          "feature": "Sondages joueurs",
+          "limit": "20 sondages par équipe"
+        },
+        {
+          "feature": "Direct public",
+          "limit": "sans limite"
+        },
+        {
+          "feature": "Saisir hors ligne et synchroniser ensuite",
+          "limit": "sans limite"
+        },
+        {
+          "feature": "Effectif en album de cartes de joueurs",
+          "limit": "sans limite"
+        },
+        {
+          "feature": "Analyses IA (match, équipe, joueur, tournoi)",
+          "limit": "3 en 24 heures, 25 en 30 jours, 1 à la fois"
+        },
+        {
+          "feature": "Partager des rapports en PDF",
+          "limit": "3 en 24 heures"
+        },
+        {
+          "feature": "Démo en direct sans compte",
+          "limit": "sans limite"
+        }
+      ],
+      "closing": "Les quotas d’analyses IA et de rapports partagés fonctionnent en fenêtres glissantes : une analyse cesse de compter exactement 24 heures ou 30 jours après son lancement – il n’y a pas de remise à zéro fixe à minuit. Les rapports supprimés ne rendent pas le quota ; les joueurs, matchs ou tournois supprimés libèrent en revanche leur place. Ce qu’un abonnement changerait plus tard à cela se trouve sur la page <pricing>tarifs de l’application de statistiques de handball</pricing>."
+    },
+    "demo": {
+      "kicker": "Zéro effort",
+      "title": "Démo en direct sans compte",
+      "description": "Pas de formulaire, pas d’adresse e-mail, pas de mot de passe – un clic et vous y êtes.",
+      "paragraph": "La démo n’est pas un parcours de clics avec des textes fictifs, mais une version complète de Statix avec de vraies données de match. Vous voyez la saisie en direct, les cartes de tirs, les valeurs de joueurs et une analyse IA terminée – exactement comme cela se présente le samedi dans la salle. Si cela vous plaît, vous créez ensuite votre propre équipe. Sinon, vous n’avez rien laissé derrière vous.",
+      "cta": "Lancer la démo en direct",
+      "screenshotAlt": "Application gratuite de statistiques de handball : saisir les actions du match en direct d’un geste",
+      "screenshotLabel": "Saisie en direct dans la démo"
+    },
+    "why": {
+      "kicker": "Pas de piège",
+      "title": "Pourquoi il existe une version gratuite",
+      "paragraph": "J’ai construit Statix parce que j’étais moi-même sur le banc et qu’il me manquait les chiffres. Une application qu’il faut acheter avant de savoir si elle fonctionne dans la salle, je ne l’aurais jamais essayée – et vous non plus, probablement. Elle est donc gratuite tant qu’elle grandit : j’ai besoin d’entraîneurs qui l’utilisent vraiment et me disent ce qui manque. Plus tard, un abonnement portera l’exploitation, mais qui commence aujourd’hui ne paie rien aujourd’hui et sera prévenu à l’avance si quelque chose change."
+    },
+    "alternatives": {
+      "kicker": "Comparaison honnête",
+      "title": "Les alternatives gratuites comparées",
+      "description": "Statix n’est pas la seule façon d’obtenir des statistiques de handball sans dépenser d’argent. Les trois sont ici côte à côte.",
+      "goodLabel": "Bon pour : ",
+      "badLabel": "Le hic : ",
+      "items": [
+        {
+          "name": "Papier et stylo",
+          "cost": "Ne coûte rien",
+          "good": "Ne tombe jamais en panne, ne demande pas de batterie, tout le monde sait s’en servir tout de suite.",
+          "bad": "Qui coache ne note pas. Et ce qui est noté, personne ne le calcule – en décembre au plus tard, la pile dort dans le sac de sport sans avoir été exploitée."
+        },
+        {
+          "name": "Modèle Excel",
+          "cost": "Ne coûte rien",
+          "good": "Calcule tout seul les pourcentages de tir, s’adapte, vous appartient.",
+          "bad": "Inutilisable dans la salle, vous ressaisissez donc le soir. Pas de carte de tirs, pas de courbe par joueur, et l’adjoint a toujours la mauvaise version."
+        },
+        {
+          "name": "Statix",
+          "cost": "Base 0 € pour toujours",
+          "good": "Un geste par action, analyse prête au coup de sifflet final, utilisable hors ligne, partageable par lien.",
+          "bad": "Il vous faut un téléphone ou une tablette et un compte. Des quotas journaliers s’appliquent aux analyses IA et aux rapports partagés."
+        }
+      ],
+      "closing": "Si vous voulez rester au tableur, prenez-en un qui calcule déjà : notre <template>modèle Excel gratuit de statistiques de handball</template> contient effectif, feuille de match, analyse et feuille de saison avec des formules toutes faites – téléchargement sans inscription. Pour un pourcentage isolé, le <calculator>calculateur de pourcentage de tir</calculator> suffit, et le guide explique comment <guide>tenir proprement une statistique de handball</guide>."
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Questions fréquentes sur l’utilisation gratuite",
+      "description": "Ce que les entraîneurs veulent savoir avant de saisir leur premier match.",
+      "items": [
+        {
+          "question": "Existe-t-il une application de statistiques de handball vraiment gratuite ?",
+          "answer": "Oui. Jusqu’au 31 décembre 2026, Statix est utilisable gratuitement avec toutes ses fonctions, et ensuite le niveau Base reste gratuit pour toujours : saisir les matchs en direct, les analyser, planifier les rendez-vous, fiches d’effectif, direct public. Il n’y a aucun paiement dans l’application et aucune demande de carte bancaire."
+        },
+        {
+          "question": "Dois-je enregistrer des données de paiement pour l’utilisation gratuite ?",
+          "answer": "Non. Il n’y a dans l’application ni paiement ni champ pour des données bancaires. Pour votre propre équipe, une adresse e-mail suffit ; pour la démo en direct, même pas."
+        },
+        {
+          "question": "Que puis-je essayer sans compte ?",
+          "answer": "La démo en direct. C’est une version complète de Statix avec de vraies données de match – statistiques en direct, cartes de tirs et analyse IA directement dans le navigateur, sans inscription et sans installation."
+        },
+        {
+          "question": "Quelles sont les limites de l’accès gratuit ?",
+          "answer": "Jusqu’au 31 décembre 2026 : par équipe 25 joueurs, 200 matchs, 10 tournois, 60 adversaires, 20 sondages et 5 entraîneurs, invitations en attente comprises ; par compte 3 équipes. Plus 3 analyses IA en 24 heures et 25 en 30 jours (une à la fois) ainsi que 3 rapports partagés en 24 heures. À partir du 1er janvier 2027, les limites du niveau Base s’appliquent aux nouveaux comptes : une équipe, 20 joueurs, 10 matchs dont les cinq derniers en profondeur complète, 3 tournois ainsi que 4 analyses IA et 4 rapports partagés par mois."
+        },
+        {
+          "question": "Statix restera-t-il gratuit ?",
+          "answer": "Oui. À partir du 1er janvier 2027, l’accès gratuit s’appelle Base et reste à 0 € pour toujours : toute la saisie en direct, le calendrier complet, les fiches d’effectif et le direct public, pour une équipe. À partir de là, on paie ce qui coûte vraiment de l’argent – les analyses IA en plus grand nombre, l’analyse vidéo, les rapports partagés et plusieurs équipes. Qui s’inscrit avant le 1er janvier 2027 conserve la formule Entraîneur gratuitement jusqu’à la fin de la saison 26/27, le 30 juin 2027."
+        },
+        {
+          "question": "Une application gratuite a-t-elle un sens pour un club ?",
+          "answer": "Pour démarrer, oui. Chaque entraîneur peut s’y mettre immédiatement sans que personne ne prenne de décision ni ne débloque de budget. Si plusieurs équipes doivent saisir selon le même schéma, il vaut ensuite la peine de regarder la page clubs."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Sans inscription",
+      "title": "Commencer gratuitement, dès aujourd’hui",
+      "description": "Pour votre propre équipe, une adresse e-mail suffit – pas de carte bancaire, pas de paiement. Et si vous préférez d’abord regarder : la démo en direct tourne avec de vraies données de match sans la moindre information de votre part.",
+      "linkLabel": "Ce que coûte Statix"
+    }
+  },
+  "templatePage": {
+    "hero": {
+      "kicker": "Téléchargement gratuit",
+      "titleLead": "Modèle Excel de",
+      "titleHighlight": "statistiques de handball",
+      "titleTail": "gratuit",
+      "lede": "Quatre feuilles, des formules prêtes, des en-têtes de colonnes en allemand : Kader (effectif), Spielprotokoll (feuille de match), Auswertung (analyse) et Saison (saison). Pourcentage de tir, taux à sept mètres et pourcentage d’arrêts se calculent tout seuls – vous ne saisissez que ce qui se passe sur le terrain. Sans inscription, sans adresse e-mail.",
+      "squadSlots": "{count} places d’effectif",
+      "actionRows": "{count} lignes d’actions",
+      "games": "{count} matchs par saison",
+      "printReady": "prêt à imprimer",
+      "cardTitle": "Télécharger le modèle",
+      "downloadCta": "Télécharger le modèle Excel gratuitement",
+      "downloadNote": "Téléchargement immédiat. Sans inscription, sans newsletter obligatoire."
+    },
+    "optin": {
+      "title": "Facultatif : les nouveautés par e-mail",
+      "note": "Pas obligatoire pour le téléchargement – vous obtenez le modèle sans rien de tout cela.",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "votre@mail.fr",
+      "newsletterCheckbox": "Oui, envoyez-moi la newsletter Statix avec les nouveautés de l’application.",
+      "privacyPrefix": "J’ai lu les",
+      "privacyLink": "informations sur la protection des données",
+      "privacyLinkTitle": "Vers la politique de confidentialité",
+      "privacySuffix": ". Désinscription possible à tout moment.",
+      "submit": "S’inscrire",
+      "pending": "Envoi en cours …",
+      "success": "Presque terminé : je vous ai envoyé un e-mail de confirmation. Vous n’êtes inscrit qu’après avoir cliqué sur le lien qu’il contient.",
+      "genericError": "Cela n’a malheureusement pas fonctionné.",
+      "invalidEmail": "Merci d’indiquer une adresse e-mail valide.",
+      "missingConsent": "Pour la newsletter, j’ai besoin des deux cases. Le modèle, vous l’obtenez aussi sans."
+    },
+    "metrics": {
+      "kicker": "Quatre feuilles",
+      "title": "Ce que le modèle enregistre",
+      "description": "Rien de tout cela n’est à construire vous-même – les formules sont dedans et calculent dès que vous saisissez la première ligne.",
+      "groups": [
+        {
+          "sheet": "Kader (effectif)",
+          "description": "Votre équipe avec numéro, nom, poste et année de naissance. Le numéro est la clé : toutes les autres feuilles en tirent automatiquement le nom.",
+          "metrics": [
+            "Numéro",
+            "Nom",
+            "Poste (liste déroulante)",
+            "Année de naissance",
+            "Note"
+          ]
+        },
+        {
+          "sheet": "Spielprotokoll (feuille de match)",
+          "description": "Une ligne par action – comme cela se passe réellement au bord du terrain. L’action et la zone de tir se choisissent dans une liste ; le nom, vous n’avez jamais à le taper.",
+          "metrics": [
+            "But et tir manqué",
+            "Sept mètres (but / manqué)",
+            "Arrêt et but encaissé",
+            "Passe décisive",
+            "Perte de balle",
+            "2 minutes, jaune, rouge",
+            "Zone de tir : aile, pivot, arrière, pénétration, contre-attaque, sept mètres"
+          ]
+        },
+        {
+          "sheet": "Auswertung (analyse)",
+          "description": "Un match, tous les joueurs, déjà calculé. Vous saisissez en haut le libellé du match – le reste est là.",
+          "metrics": [
+            "Tirs et buts par joueur",
+            "Pourcentage de tir",
+            "Taux à sept mètres",
+            "Passes décisives, pertes de balle, exclusions",
+            "± (buts y compris 7 m moins tirs manqués moins pertes de balle)",
+            "Arrêts, buts encaissés et pourcentage d’arrêts du gardien",
+            "Ligne d’équipe avec tous les totaux et pourcentages"
+          ]
+        },
+        {
+          "sheet": "Saison (saison)",
+          "description": "La liste des matchs de la saison et, en dessous, les valeurs cumulées de chaque joueur sur toutes les rencontres saisies.",
+          "metrics": [
+            "Buts marqués et encaissés par match",
+            "Nombre de matchs par joueur",
+            "Tirs, buts et pourcentage de tir sur la saison",
+            "Bilan aux sept mètres",
+            "Pertes de balle et exclusions",
+            "Pourcentage d’arrêts sur la saison"
+          ]
+        }
+      ]
+    },
+    "howTo": {
+      "kicker": "En cinq étapes",
+      "title": "Comment remplir le modèle pendant le match",
+      "description": "On l’installe une fois, puis une ligne par action. Ce n’est pas plus que cela.",
+      "steps": [
+        {
+          "name": "Saisir l’effectif une fois",
+          "text": "Dans la feuille « Kader », saisissez numéro, nom et poste de vos joueurs. Cela se fait une fois par saison. Les quatre lignes d’exemple grisées, vous les écrasez simplement."
+        },
+        {
+          "name": "Nommer le match",
+          "text": "Donnez au match un libellé court dans la feuille « Saison », par exemple Sp1, avec la date et l’adversaire. C’est exactement ce libellé que vous utiliserez ensuite dans la feuille de match."
+        },
+        {
+          "name": "Saisir chaque action comme une ligne",
+          "text": "Dans la feuille « Spielprotokoll », vous saisissez une ligne par action : match, minute, numéro, action et zone de tir. Le nom apparaît automatiquement. L’action et la zone se choisissent dans la liste – un clic plutôt que de taper."
+        },
+        {
+          "name": "Profiter de la mi-temps",
+          "text": "Pendant la pause, jetez un œil à la feuille « Auswertung ». Les pourcentages de tir et d’arrêts y sont déjà calculés – de quoi faire une causerie fondée sur des chiffres plutôt que sur une impression."
+        },
+        {
+          "name": "Analyser après le match",
+          "text": "Saisissez en haut de l’analyse le libellé du match, puis imprimez la feuille ou partagez-la. La feuille de saison se met à jour d’elle-même à chaque match saisi."
+        }
+      ],
+      "closing": "Si vous hésitez sur ce qui compte comme tir et ce qui n’en est pas : le guide explique <guide>comment tenir proprement une statistique de handball</guide> – et comment <rate>calculer le pourcentage de tir et l’interpréter correctement</rate>. Pour une valeur isolée, il y a le <calculator>calculateur de pourcentage de tir</calculator>."
+    },
+    "limits": {
+      "kicker": "Rester honnête",
+      "title": "Là où Excel s’arrête à la troisième journée",
+      "description": "Le modèle ci-dessus est bon. Malgré tout, je connais peu d’entraîneurs qui le tiennent une saison entière – pour cinq raisons très concrètes.",
+      "items": [
+        {
+          "title": "Sur le banc, on ne tape pas dans des cellules",
+          "text": "Debout, sur une tablette, vous n’atteignez pas une cellule pendant que l’adversaire contre-attaque. En pratique, cela conduit à noter ce qu’on a encore en tête – et au bout d’un quart d’heure, ce n’est plus grand-chose."
+        },
+        {
+          "title": "La ressaisie vous coûte votre dimanche",
+          "text": "Reporter la feuille le soir, c’est faire le travail deux fois. Et chaque report génère des erreurs : un tir manqué qui saute à la ressaisie fait monter le pourcentage de tir, et vous pilotez votre entraînement avec un chiffre qui n’a jamais existé."
+        },
+        {
+          "title": "Pas de carte de tirs",
+          "text": "Un tableau vous dit que 40 pour cent des tirs de l’arrière sont rentrés. Il ne vous dit pas que tous les manqués venaient du même coin. Où l’on a tiré ne se voit que sur un terrain – pas dans une cellule."
+        },
+        {
+          "title": "Pas de courbe par joueur",
+          "text": "La feuille de saison additionne, mais ne montre pas de courbe. Savoir si une arrière progresse sur six matchs ou n’a eu qu’un bon match ne se lit pas dans des totaux."
+        },
+        {
+          "title": "À la troisième journée, plus personne ne l’ouvre",
+          "text": "C’est le vrai problème. Le fichier est sur un ordinateur que l’adjoint n’a pas, dans une version que personne ne connaît. Après la troisième journée, c’est une archive, pas un outil."
+        }
+      ]
+    },
+    "upgrade": {
+      "kicker": "L’étape suivante",
+      "title": "Quand le modèle ne suffit plus",
+      "description": "Les mêmes actions, saisies d’un geste plutôt qu’écrites – et l’analyse est prête quand la sirène retentit.",
+      "paragraph": "Au fond, Statix, c’est la même idée que ce modèle : une ligne par action. Sauf que la ligne est un geste sur le téléphone, que la position du tir suit et se transforme en carte de tirs, et qu’après le match plus personne ne ressaisit quoi que ce soit. Hors ligne dans la salle, cela fonctionne aussi – les données remontent dès qu’il y a du réseau.",
+      "statsLink": "Quels indicateurs vont ensemble – et quelle valeur de référence est normale chez les amateurs – se trouve dans l’aperçu <stats>statistiques de handball</stats>.",
+      "costLink": "Ce que cela coûte est sur la page <pricing>tarifs de l’application de statistiques de handball</pricing> – en bref : actuellement rien. Jusqu’où vous allez <free>gratuitement</free> y est détaillé. Et si vous voulez d’abord savoir ce que fait l’application : <brand>qu’est-ce que Statix ?</brand>",
+      "screenshotAlt": "Statistiques de joueurs et pourcentages de tir dans l’application Statix plutôt que dans un tableur Excel",
+      "screenshotLabel": "L’analyse dès le coup de sifflet final"
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Questions fréquentes sur le modèle Excel",
+      "description": "Tout ce que les entraîneurs veulent savoir avant de télécharger.",
+      "items": [
+        {
+          "question": "Le modèle Excel est-il vraiment gratuit ?",
+          "answer": "Oui. Le téléchargement démarre immédiatement, sans inscription, sans adresse e-mail et sans newsletter. Vous pouvez garder le fichier, l’adapter et le transmettre au sein du club."
+        },
+        {
+          "question": "Avec quels logiciels puis-je ouvrir le modèle ?",
+          "answer": "Avec Microsoft Excel, LibreOffice Calc et Google Sheets. Les formules sont volontairement simples (COUNTIFS, INDEX/MATCH, SUMPRODUCT) pour calculer partout. Dans Apple Numbers, les calculs fonctionnent également, même si certaines listes déroulantes peuvent se perdre à l’import."
+        },
+        {
+          "question": "Quels indicateurs le modèle calcule-t-il automatiquement ?",
+          "answer": "Tirs, buts et pourcentage de tir par joueur, le taux à sept mètres, les passes décisives, les pertes de balle et les exclusions, un ± par joueur ainsi que les arrêts, les buts encaissés et le pourcentage d’arrêts du gardien. Plus les totaux d’équipe par match et les valeurs cumulées de la saison."
+        },
+        {
+          "question": "Qu’est-ce qui compte comme tir ?",
+          "answer": "Toute tentative au but : but, ballon arrêté, poteau et tir clairement manqué. Une perte de balle sans tentative n’est pas un tir et n’entre pas dans le pourcentage. Le modèle traite les sept mètres à part, car ils fausseraient sinon le pourcentage du jeu."
+        },
+        {
+          "question": "Le modèle suffit-il pour une saison entière ?",
+          "answer": "Il est prévu pour 400 actions saisies, 30 matchs et 20 places d’effectif. Pour une saison chez les jeunes ou en amateur, cela suffit en règle générale ; qui a besoin de plus étire simplement les formules vers le bas."
+        },
+        {
+          "question": "Dois-je m’abonner à la newsletter pour obtenir le fichier ?",
+          "answer": "Non. Le téléchargement est indépendant de tout le reste. La newsletter est une proposition facultative à côté – la case n’est pas cochée d’avance, et sans la cocher vous obtenez le modèle de la même façon."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Sans ressaisie",
+      "title": "Les mêmes actions, simplement saisies d’un geste",
+      "description": "Inscrivez-vous gratuitement et saisissez votre premier match sans rien ressaisir le soir. Ou regardez d’abord dans la démo en direct ce que cela donne sans cellules – sans aucun compte.",
+      "linkLabel": "Ce que coûte Statix"
+    }
   }
 }

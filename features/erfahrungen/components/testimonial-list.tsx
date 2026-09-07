@@ -1,8 +1,12 @@
-import Link from 'next/link';
+'use client';
+
 import { Star } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import { externalLink, inlineLink } from '@/components/custom-ui/rich-text';
 import { BEST_RATING, TESTIMONIALS } from '../data/testimonials';
+import { ERFAHRUNGEN_MAIL_ARGS } from '../data/erfahrungen-content';
 
 /**
  * Trainer-Stimmen band. Renders the real quotes when there are any and an
@@ -12,29 +16,33 @@ import { BEST_RATING, TESTIMONIALS } from '../data/testimonials';
  * @returns A JSX element rendering the testimonial list or the honest empty state.
  */
 export default function TestimonialList() {
+  const t = useTranslations('experiencesPage.testimonials');
+  const hasQuotes = TESTIMONIALS.length > 0;
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-5xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Trainer sagen'
-          title='Stimmen aus der Halle'
+          kicker={t('kicker')}
+          title={t('title')}
           description={
-            TESTIMONIALS.length > 0
-              ? 'Trainer, die Statix im Spielbetrieb einsetzen – mit Namen und Verein.'
-              : 'Hier stehen nur Zitate, die es wirklich gibt. Aktuell sind das keine.'
+            hasQuotes ? t('descriptionWithQuotes') : t('descriptionEmpty')
           }
         />
 
-        {TESTIMONIALS.length > 0 ? (
+        {hasQuotes ? (
           <div className='mt-12 grid gap-6 md:grid-cols-2'>
             {TESTIMONIALS.map((testimonial) => (
               <BoardCard key={`${testimonial.name}-${testimonial.date}`} pin='magnet' className='p-6'>
                 {typeof testimonial.ratingValue === 'number' ? (
                   <p
                     className='flex items-center gap-1 text-primary'
-                    aria-label={`Bewertung: ${testimonial.ratingValue} von ${BEST_RATING}`}>
+                    aria-label={t('ratingLabel', {
+                      value: testimonial.ratingValue,
+                      best: BEST_RATING,
+                    })}>
                     {Array.from({ length: BEST_RATING }, (_, index) => (
                       <Star
                         key={index}
@@ -61,39 +69,19 @@ export default function TestimonialList() {
         ) : (
           <BoardCard pin='tape' className='mt-12 p-6 sm:p-8'>
             <p className='max-w-[68ch] text-[15px] leading-7 text-ink/80'>
-              Statix ist jung. Es gibt Trainer, die damit arbeiten, aber noch
-              keine Zitate, die jemand mit Namen und Verein freigegeben hat – und
-              genau deshalb steht hier auch keins. Erfundene Stimmen, ausgedachte
-              Sternebewertungen oder „ein Trainer aus Bayern“ wirst du auf dieser
-              Seite nicht finden, weder im Text noch in den Auszeichnungen für
-              Suchmaschinen.
+              {t('emptyParagraph1')}
             </p>
             <p className='mt-4 max-w-[68ch] text-[15px] leading-7 text-ink/80'>
-              Wenn du wissen willst, ob Statix zu deiner Mannschaft passt, hilft
-              dir die Live-Demo mehr als jede fremde Meinung: echte Spieldaten,
-              direkt im Browser, ohne Account. Und wenn du selbst damit
-              arbeitest, schreib mir gern an{' '}
-              <a
-                href={`mailto:${CLUB_CONFIG.email.main}`}
-                className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-                {CLUB_CONFIG.email.main}
-              </a>{' '}
-              – dein Bericht steht dann hier.
+              {t.rich('emptyParagraph2', {
+                ...ERFAHRUNGEN_MAIL_ARGS,
+                mail: externalLink(`mailto:${CLUB_CONFIG.email.main}`),
+              })}
             </p>
             <p className='mt-4 max-w-[68ch] text-[15px] leading-7 text-ink/70'>
-              Was die App kann, steht auf{' '}
-              <Link
-                href='/was-ist-statix'
-                className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-                Was ist Statix?
-              </Link>
-              , was sie kostet unter{' '}
-              <Link
-                href='/preise'
-                className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-                Preise
-              </Link>
-              .
+              {t.rich('emptyParagraph3', {
+                brand: inlineLink('/was-ist-statix'),
+                pricing: inlineLink('/preise'),
+              })}
             </p>
           </BoardCard>
         )}
