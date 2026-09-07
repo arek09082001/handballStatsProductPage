@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   CourtDiagram,
   Grain,
@@ -26,6 +29,7 @@ export default function FeatureSteps({
   feature: Feature;
   tone?: 'paper' | 'court';
 }) {
+  const t = useTranslations('featuresPage.detail');
   const onPaper = tone === 'paper';
 
   return (
@@ -46,8 +50,8 @@ export default function FeatureSteps({
       <div className='relative mx-auto w-full max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Der Ablauf'
-          title='So läuft das in der Praxis'
+          kicker={t('stepsKicker')}
+          title={t('stepsTitle')}
           tone={tone}
         />
 

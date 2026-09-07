@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import {
   BoardCard,
   Grain,
@@ -9,9 +12,9 @@ import {
   FEATURES_PAGE_PATH,
   featureLabel,
   featurePath,
-  relatedFeatures,
   type Feature,
 } from '../data/features';
+import { useRelatedFeatures } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
 
 /**
@@ -22,7 +25,8 @@ import FeatureStatusBadge from './feature-status-badge';
  * @returns A JSX element rendering links to neighbouring features on the paper ground.
  */
 export default function FeatureRelated({ feature }: { feature: Feature }) {
-  const related = relatedFeatures(feature);
+  const t = useTranslations('featuresPage.detail');
+  const related = useRelatedFeatures(feature);
   if (related.length === 0) return null;
 
   return (
@@ -32,8 +36,8 @@ export default function FeatureRelated({ feature }: { feature: Feature }) {
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Passt dazu'
-          title='Und dann noch'
+          kicker={t('relatedKicker')}
+          title={t('relatedTitle')}
         />
 
         <div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
@@ -46,13 +50,18 @@ export default function FeatureRelated({ feature }: { feature: Feature }) {
               <Link
                 href={featurePath(entry.slug)}
                 className='flex h-full flex-col gap-3 p-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50'>
-                <FeatureStatusBadge status={entry.status} className='self-start' />
+                <FeatureStatusBadge
+                  status={entry.status}
+                  className='self-start'
+                />
                 <h3 className='font-display text-lg font-bold tracking-[-0.01em] text-ink'>
                   {featureLabel(entry)}
                 </h3>
-                <p className='text-[15px] leading-7 text-ink/70'>{entry.tagline}</p>
+                <p className='text-[15px] leading-7 text-ink/70'>
+                  {entry.tagline}
+                </p>
                 <span className='mt-auto inline-flex items-center gap-1.5 pt-2 font-display text-[15px] font-bold tracking-tight text-primary'>
-                  Ansehen
+                  {t('relatedCardCta')}
                   <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
                 </span>
               </Link>
@@ -63,7 +72,7 @@ export default function FeatureRelated({ feature }: { feature: Feature }) {
         <Link
           href={FEATURES_PAGE_PATH}
           className='group mt-9 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
-          Alle Funktionen im Überblick
+          {t('relatedAllCta')}
           <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
         </Link>
       </div>

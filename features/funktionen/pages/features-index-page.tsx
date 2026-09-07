@@ -1,9 +1,12 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import type { BoardFaqItem } from '@/components/custom-ui/board-faq';
 import BoardCta from '@/components/custom-ui/board-cta';
 import BoardFaq from '@/components/custom-ui/board-faq';
 import FeatureIndexHeader from '../components/index-header';
 import FeatureIndexGroups from '../components/index-groups';
 import FeatureIndexInProgress from '../components/index-in-progress';
-import { FEATURES_INDEX_FAQS } from '../data/index-content';
 
 /**
  * The feature index, `/funktionen`.
@@ -26,6 +29,8 @@ import { FEATURES_INDEX_FAQS } from '../data/index-content';
  * @returns A JSX element composing the ordered sections of the feature index.
  */
 export default function FeaturesIndexPage() {
+  const t = useTranslations('featuresPage.index');
+
   return (
     <div className='flex w-full flex-col items-center bg-paper'>
       <FeatureIndexHeader />
@@ -33,16 +38,16 @@ export default function FeaturesIndexPage() {
       <FeatureIndexInProgress />
       <BoardFaq
         id='faq'
-        kicker='Kurz gefragt'
-        title='Fragen zum Funktionsumfang'
-        items={FEATURES_INDEX_FAQS}
+        kicker={t('faqKicker')}
+        title={t('faqTitle')}
+        items={t.raw('faq') as BoardFaqItem[]}
       />
       <BoardCta
-        kicker='Nächster Schritt'
-        title='Der schnellste Weg ist ein echtes Spiel'
-        description='Die Live-Demo zeigt Statix mit echten Spieldaten, ohne Account. Wenn es passt, legst du in zwei Minuten dein Team an und erfasst dein erstes Spiel.'
+        kicker={t('ctaKicker')}
+        title={t('ctaTitle')}
+        description={t('ctaDescription')}
         linkHref='/was-ist-statix'
-        linkLabel='Was ist Statix?'
+        linkLabel={t('ctaLinkLabel')}
       />
     </div>
   );

@@ -1,9 +1,8 @@
+'use client';
+
 import { cn } from '@/lib/utils';
-import {
-  FEATURE_STATUS_HINT,
-  FEATURE_STATUS_LABEL,
-  type FeatureStatus,
-} from '../data/features';
+import type { FeatureStatus } from '../data/features';
+import { useFeatureStatusCopy } from '../data/use-features';
 
 /**
  * The one place the site says how far along a feature is.
@@ -56,6 +55,7 @@ export default function FeatureStatusBadge({
   className,
 }: FeatureStatusBadgeProps) {
   const style = TONE[status];
+  const { label, hint } = useFeatureStatusCopy();
 
   if (!withHint) {
     return (
@@ -65,9 +65,12 @@ export default function FeatureStatusBadge({
           style[tone],
           className,
         )}
-        title={FEATURE_STATUS_HINT[status]}>
-        <span aria-hidden='true' className={cn('size-1.5 rounded-full', style.dot)} />
-        {FEATURE_STATUS_LABEL[status]}
+        title={hint[status]}>
+        <span
+          aria-hidden='true'
+          className={cn('size-1.5 rounded-full', style.dot)}
+        />
+        {label[status]}
       </span>
     );
   }
@@ -80,10 +83,13 @@ export default function FeatureStatusBadge({
         className,
       )}>
       <span className='inline-flex items-center gap-2 whitespace-nowrap font-semibold'>
-        <span aria-hidden='true' className={cn('size-1.5 rounded-full', style.dot)} />
-        {FEATURE_STATUS_LABEL[status]}
+        <span
+          aria-hidden='true'
+          className={cn('size-1.5 rounded-full', style.dot)}
+        />
+        {label[status]}
       </span>
-      <span className='leading-6 opacity-80'>{FEATURE_STATUS_HINT[status]}</span>
+      <span className='leading-6 opacity-80'>{hint[status]}</span>
     </p>
   );
 }

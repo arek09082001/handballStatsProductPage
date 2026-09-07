@@ -1,6 +1,13 @@
+'use client';
+
 import { Minus } from 'lucide-react';
-import { Grain, SectionHeading } from '@/features/landing-page/components/tactic';
-import { FEATURE_STATUS_HINT, type Feature } from '../data/features';
+import { useTranslations } from 'next-intl';
+import {
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import type { Feature } from '../data/features';
+import { useFeatureStatusCopy } from '../data/use-features';
 
 /**
  * "Was Statix hier nicht macht".
@@ -16,10 +23,12 @@ import { FEATURE_STATUS_HINT, type Feature } from '../data/features';
  * @returns A JSX element rendering the feature's boundaries on the paper panel ground.
  */
 export default function FeatureLimits({ feature }: { feature: Feature }) {
-  const statusFirst = feature.status !== 'live';
-  const entries = statusFirst
-    ? [FEATURE_STATUS_HINT[feature.status], ...feature.limits]
-    : feature.limits;
+  const t = useTranslations('featuresPage.detail');
+  const { hint } = useFeatureStatusCopy();
+  const entries =
+    feature.status === 'live'
+      ? feature.limits
+      : [hint[feature.status], ...feature.limits];
 
   return (
     <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-24'>
@@ -28,9 +37,9 @@ export default function FeatureLimits({ feature }: { feature: Feature }) {
       <div className='relative mx-auto w-full max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Ehrlich gesagt'
-          title='Was Statix hier nicht macht'
-          description='Damit du es vorher weißt und nicht am Spieltag.'
+          kicker={t('limitsKicker')}
+          title={t('limitsTitle')}
+          description={t('limitsDescription')}
         />
 
         <ul className='mt-9 space-y-4'>

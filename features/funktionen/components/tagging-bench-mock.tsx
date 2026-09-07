@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   CourtDiagram,
   Grain,
@@ -23,6 +26,12 @@ import { cn } from '@/lib/utils';
  * and the scene list a coach ends up with. Every label below comes from the
  * app's real vocabulary (`lib/video/tags.ts`) — the drawing is stylised, the
  * words are not invented.
+ *
+ * Which is also why the labels inside the drawing stay German in every
+ * language: they are what the app puts on screen, and a translated mock would
+ * depict a screen that does not exist. The prose around it — the heading, the
+ * two explanations — is the page speaking to the reader and is translated; the
+ * description says outright that the labels are the app's own.
  */
 
 /** Scenes on the scrubber. `at` and `width` are percentages of the half. */
@@ -102,6 +111,8 @@ const CHIP_TONE = {
  * @returns A JSX element rendering the drawn tagging bench on the court ground.
  */
 export default function TaggingBenchMock() {
+  const t = useTranslations('featuresPage.taggingBench');
+
   return (
     <section className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-24'>
       <Grain tone='court' />
@@ -109,9 +120,9 @@ export default function TaggingBenchMock() {
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Wie eine Szene entsteht'
-          title='Eine Aufnahme, 281 Szenen, eine Frage'
-          description='Diese Darstellung ist gezeichnet, kein Screenshot — die echten Aufnahmen der Werkbank stehen darunter. Die Bezeichnungen sind die aus der App.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
           tone='court'
         />
 
@@ -197,7 +208,9 @@ export default function TaggingBenchMock() {
                       : 'border-chalk/15 bg-chalk/[0.04] text-chalk/65',
                   )}>
                   {playlist.name}
-                  <span className='tabular-nums opacity-70'>{playlist.count}</span>
+                  <span className='tabular-nums opacity-70'>
+                    {playlist.count}
+                  </span>
                 </span>
               ))}
             </div>
@@ -205,9 +218,11 @@ export default function TaggingBenchMock() {
 
           {/* ── The scene list a coach ends up with ───────────────────────── */}
           <div className='board-shadow-court rounded-2xl border border-chalk/12 bg-court-2 p-5 sm:p-6'>
-            <p className='font-hand text-2xl text-primary'>Was dabei herauskommt</p>
+            <p className='font-hand text-2xl text-primary'>
+              {t('resultTitle')}
+            </p>
             <p className='mt-1 text-[13px] leading-6 text-chalk/55'>
-              Aktion, Spielerin und Kontext — jede Zeile ein Intervall im Video.
+              {t('resultLead')}
             </p>
 
             <ul className='mt-5 space-y-3'>
@@ -247,8 +262,7 @@ export default function TaggingBenchMock() {
             </ul>
 
             <p className='mt-5 border-t border-chalk/12 pt-4 text-[13px] leading-6 text-chalk/55'>
-              Eine Playlist speichert diese Frage, nicht das Ergebnis. Wird eine
-              vergessene Szene nachgetaggt, fällt sie von selbst hinein.
+              {t('closing')}
             </p>
           </div>
         </div>

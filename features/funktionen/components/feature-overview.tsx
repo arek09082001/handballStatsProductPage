@@ -1,4 +1,11 @@
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 import type { Feature } from '../data/features';
 
 /**
@@ -11,6 +18,8 @@ import type { Feature } from '../data/features';
  * @returns A JSX element rendering the feature's overview on the paper ground.
  */
 export default function FeatureOverview({ feature }: { feature: Feature }) {
+  const t = useTranslations('featuresPage.detail');
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-24'>
       <Grain tone='paper' />
@@ -20,7 +29,7 @@ export default function FeatureOverview({ feature }: { feature: Feature }) {
           <div>
             <SectionHeading
               align='left'
-              kicker='Worum es geht'
+              kicker={t('overviewKicker')}
               title={feature.headline}
             />
 
@@ -36,7 +45,7 @@ export default function FeatureOverview({ feature }: { feature: Feature }) {
           </div>
 
           <BoardCard tone='paper' pin='magnet' className='h-fit p-6 sm:p-7'>
-            <p className='font-hand text-2xl text-primary'>Kurz gesagt</p>
+            <p className='font-hand text-2xl text-primary'>{t('factsTitle')}</p>
             <dl className='mt-5 border-t border-ink/12'>
               {feature.facts.map((fact) => (
                 <div

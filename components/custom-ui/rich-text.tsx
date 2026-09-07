@@ -12,6 +12,14 @@ export const INLINE_LINK_CLASS =
   'font-semibold text-primary underline underline-offset-4 hover:text-primary/80';
 
 /**
+ * The same link on the dark court ground, where orange on near-black is the
+ * one combination on this site that fails contrast at body size. Chalk carries
+ * the link and the orange moves to the hover.
+ */
+export const INLINE_LINK_COURT_CLASS =
+  'font-semibold text-chalk underline underline-offset-4 transition-colors hover:text-primary';
+
+/**
  * A next-intl rich-text tag that renders an internal link.
  *
  * Sentences with a link in them are written as one message with a tag around
@@ -22,12 +30,17 @@ export const INLINE_LINK_CLASS =
  * what it attaches to.
  *
  * @param href Internal route the tag should link to.
+ * @param tone Ground the sentence sits on; `court` is the dark one.
  * @returns A tag function for `t.rich`.
  */
-export function inlineLink(href: string) {
+export function inlineLink(href: string, tone: 'paper' | 'court' = 'paper') {
   return function renderInlineLink(chunks: ReactNode) {
     return (
-      <Link href={href} className={INLINE_LINK_CLASS}>
+      <Link
+        href={href}
+        className={
+          tone === 'court' ? INLINE_LINK_COURT_CLASS : INLINE_LINK_CLASS
+        }>
         {chunks}
       </Link>
     );

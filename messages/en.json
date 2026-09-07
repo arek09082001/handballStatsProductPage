@@ -323,7 +323,8 @@
     "registerCta": "Register now",
     "languageSwitcher": {
       "label": "Switch language"
-    }
+    },
+    "brandTagline": "Statistics app for handball"
   },
   "legalPage": {
     "header": {
@@ -1243,7 +1244,10 @@
       "secondaryCta": "Live demo – no account",
       "trust1": "Ready to go in minutes",
       "trust2": "Free to start – no credit card",
-      "trust3": "Works offline in the gym"
+      "trust3": "Works offline in the gym",
+      "mockupAlt": "Handball statistics live in the Statix app – recording goals, shots and saves in real time",
+      "mockupLabel": "Statix · Live recording",
+      "demoAlt": "Statix live demo – match statistics and analyses in the browser"
     },
     "stats": {
       "srTitle": "Handball statistics at a glance",
@@ -1337,13 +1341,15 @@
       ],
       "founderKicker": "Who is behind it",
       "founderNote": "Statix comes out of real coaching practice: built by Arkadiusz Weiss, a handball player himself, in Germany. What is missing on the bench becomes a feature – feedback from the gym goes straight into the product.",
-      "founderLinkLabel": "How Statix is made"
+      "founderLinkLabel": "How Statix is made",
+      "founderLinkTitle": "How Statix is being built – a look at the development"
     },
     "testimonials": {
       "kicker": "Coaches say",
       "title": "Voices from the hall",
       "description": "Coaches using Statix in real matches – with their name and club.",
-      "linkLabel": "See all experiences"
+      "linkLabel": "See all experiences",
+      "ratingAria": "Rating: {value} out of {max}"
     },
     "faq": {
       "kicker": "Good to know",
@@ -1491,7 +1497,8 @@
         ],
         "qrLabel": "Scan & follow live",
         "footnote": "This is what your live ticker looks like – sample data"
-      }
+      },
+      "linkTitle": "Every feature of Statix in detail"
     }
   },
   "newsletterConfirm": {
@@ -2114,7 +2121,20 @@
     "ctaDemo": "Watch the live demo",
     "ctaDemoNoAccount": "Live demo, no account",
     "included": "included",
-    "notIncluded": "not included"
+    "notIncluded": "not included",
+    "privacyLinkTitle": "To the privacy policy",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "apiErrors": {
+      "spam": "The submission was classified as spam.",
+      "rateLimited": "Too many requests. Please try again in {minutes, plural, one {one minute} other {# minutes}}.",
+      "unavailable": "The form is not available right now. Please try again later.",
+      "invalidInput": "Please check what you entered.",
+      "sendFailed": "Sending did not work. Please try again.",
+      "unknown": "Something went wrong. Please try again.",
+      "invalidEmail": "Please enter a valid e-mail address.",
+      "invalidLink": "This link is invalid or has expired."
+    }
   },
   "brandPage": {
     "hero": {
@@ -4030,6 +4050,1474 @@
         "arrowColorGroup": "Colour of the arrow",
         "magnetGroup": "Put a magnet on the court"
       }
+    }
+  },
+  "featureCatalog": {
+    "groups": [
+      {
+        "id": "erfassen",
+        "name": "Recording",
+        "intro": "What happens in the hall while the match is running — with one thumb, without a signal, and visible to everyone who is not there."
+      },
+      {
+        "id": "auswerten",
+        "name": "Analysis",
+        "intro": "What becomes of the recorded actions: percentages, shot maps, trends, AI reports and the scenes on the video."
+      },
+      {
+        "id": "organisieren",
+        "name": "Organising",
+        "intro": "Everything around the one match: squad, fixtures, tournaments and the level above every team of a club."
+      },
+      {
+        "id": "teilen",
+        "name": "Sharing",
+        "intro": "What leaves the team — to fellow coaches, to the players, to parents."
+      }
+    ],
+    "statusLabel": {
+      "live": "Available",
+      "beta": "In progress",
+      "onRequest": "On request"
+    },
+    "statusHint": {
+      "live": "Finished and enabled for every account.",
+      "beta": "Being built right now. Already usable for selected teams, not yet visible to everyone else.",
+      "onRequest": "Finished, but set up for you rather than created yourself."
+    },
+    "stateNote": {
+      "beta": "In progress — being built and not yet enabled for every account.",
+      "onRequest": "Set up for the club rather than created yourself."
+    },
+    "items": [
+      {
+        "slug": "live-erfassung",
+        "name": "Live recording",
+        "short": "Record live",
+        "headline": "The sheet of paper that does the maths",
+        "summary": "Record goals, shots, saves, suspensions and substitutions in real time – with a single tap, straight from the bench.",
+        "tagline": "One tap per action. At the end of the match the statistic is finished, not the typing up.",
+        "intro": [
+          "Live recording is the core of Statix. On screen your squad stands on the court, as on a tactics board. You tap the player who has just shot and pick the action — goal, saved, wide, blocked, post, seven metres, turnover, suspension. That was the whole procedure.",
+          "The app works out everything else: shooting percentage, attacking efficiency, save percentage, playing shares, goal difference, the flow of the match. You see them in the same second you need them — not on Sunday evening, when the sheet of paper has already vanished into the sports bag.",
+          "Because a match is faster than any input form, there is a quick mode for everything you have to tap without looking, and a guided mode for assistant coaches recording for the first time. Shot position and goal zone are two extra taps on a court graphic — not compulsory, but the precondition for the shot map."
+        ],
+        "facts": [
+          {
+            "term": "Effort per action",
+            "value": "One tap, two with the shot position"
+          },
+          {
+            "term": "Runs on",
+            "value": "Phone, tablet, iPad, laptop"
+          },
+          {
+            "term": "Without a signal",
+            "value": "Yes — a sports hall rarely has Wi-Fi"
+          },
+          {
+            "term": "Correctable afterwards",
+            "value": "Every action, after the final whistle too"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Put the squad on the court",
+            "body": "The line-up comes from the saved squad. A substitution is a swap of two cards, suspensions run as their own timer and report in when the two minutes are up."
+          },
+          {
+            "title": "Tap the action while the ball is running",
+            "body": "Tap the player, pick the action. The scorer list, the percentages and the flow of the match update at once — with the same tap that records the action."
+          },
+          {
+            "title": "Set the shot position when there is time",
+            "body": "One tap on the court graphic fixes where the shot came from, a second one which corner of the goal. Both are optional: without the position only the shot map is missing, not a number."
+          },
+          {
+            "title": "Straighten it out after the match",
+            "body": "Caught the wrong player, missed a save? Every recorded action can be changed or deleted afterwards, and all derived values recalculate."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Live recording in Statix: the squad on the court, with the action picker open for a tapped player",
+            "label": "Tap the player — the actions sit right underneath"
+          },
+          {
+            "alt": "The current line-up on the court, as on a tactics board",
+            "label": "The line-up is the court, not a list"
+          },
+          {
+            "alt": "Live recording on a phone during the match",
+            "label": "How a coach holds the phone on the bench"
+          }
+        ],
+        "limits": [
+          "Statix records your team. The opposition's actions are only written down as far as they describe your match — goals conceded, opposition suspensions, balls won.",
+          "One match is recorded by one person. Two devices on the same match at once are not provided for, because two recordings inevitably drift apart.",
+          "There is no automatic detection from video. Every action comes from a person who saw it."
+        ],
+        "faq": [
+          {
+            "question": "How many taps is a match?",
+            "answer": "Roughly as many as the actions you want to record. Depending on the level, a handball match has 100 to 160 actions that move a statistic. Record only goals and shots and you tap correspondingly less — the percentages work with whatever is there."
+          },
+          {
+            "question": "Can an assistant coach record who does not know the app?",
+            "answer": "Yes. The guided mode asks step by step instead of offering everything at once. That is enough for a first outing; after two matches almost everyone taps in quick mode."
+          },
+          {
+            "question": "What happens if I mistap?",
+            "answer": "The last action can be undone immediately, any older one edited or deleted in the match log. All percentages and the shot map recalculate afterwards — there is no state that is “already saved” and therefore stays wrong."
+          },
+          {
+            "question": "Do I need a tablet?",
+            "answer": "No. Statix runs on a phone just as it does on a tablet, iPad or laptop. A tablet is more comfortable because more of the squad is visible at once — necessary it is not."
+          }
+        ]
+      },
+      {
+        "slug": "offline-und-app",
+        "name": "Offline & app installation",
+        "short": "Offline & PWA",
+        "headline": "Built for halls with no signal",
+        "summary": "Record matches offline in the hall with automatic synchronisation, and install Statix as an app on your home screen.",
+        "tagline": "The hall has no signal. That is not a special case but the condition Statix was built under.",
+        "intro": [
+          "Statix records a match entirely on the device. Every tap lands first in the browser's local storage and only afterwards — at some point, when there is a signal again — on the server. To you both look the same: the numbers are there at once, whether the bar at the top right shows a signal or not.",
+          "The way back is the actual point. When synchronising, the collected actions are played one after another against endpoints that recognise and discard an action sent twice. A signal that comes and goes three times therefore does not produce three goals.",
+          "Statix is installed as a PWA: “Add to Home Screen” on the iPhone, “Install app” in the Chrome menu. After that the app starts full screen without a browser bar, has an icon of its own and works in flight mode exactly as with a signal. No app store download is needed."
+        ],
+        "facts": [
+          {
+            "term": "Recordable without a signal",
+            "value": "A whole match, substitutions and clock included"
+          },
+          {
+            "term": "Synchronisation",
+            "value": "Automatic as soon as there is a signal again"
+          },
+          {
+            "term": "Duplicate entries",
+            "value": "Ruled out — every action counts once"
+          },
+          {
+            "term": "Installation",
+            "value": "Straight from the browser, without an app store"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Load it once before the match",
+            "body": "Open the squad and the match once with a signal. After that everything the recording needs sits on the device."
+          },
+          {
+            "title": "In the hall, just record",
+            "body": "No waiting, no error message, no greyed-out button. Offline looks like online in Statix."
+          },
+          {
+            "title": "Outside it syncs itself",
+            "body": "As soon as the phone has a signal again, the collected actions are transferred — even if you have already closed the app."
+          },
+          {
+            "title": "As an app on the home screen",
+            "body": "Install once and Statix starts full screen with its own icon. On the iPhone that goes through the share menu, on Android through “Install app”."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Statix as an installed app on a phone during live recording",
+            "label": "Installed, full screen, without a browser bar"
+          },
+          {
+            "alt": "Match list in the installed Statix app on a phone",
+            "label": "The match list, readable without a signal too"
+          }
+        ],
+        "limits": [
+          "A match cannot be created offline — it has to exist once with a signal before you tap on it in the hall.",
+          "AI analyses, the live ticker and shared reports need a connection. They are answers from the server, not calculations on the device.",
+          "Record the same match offline on two devices and you get two recordings. That is not an error synchronisation can heal."
+        ],
+        "faq": [
+          {
+            "question": "What happens if the phone crashes mid-match?",
+            "answer": "The recorded actions sit in the browser's storage, not in the page's memory. After a restart you open the match again and carry on — the state is there."
+          },
+          {
+            "question": "Is Statix in the App Store or on Google Play?",
+            "answer": "Statix is installed as a PWA straight from the browser. That is a two-tap procedure, and the app updates itself afterwards without anyone downloading an update."
+          },
+          {
+            "question": "Does that use a lot of storage on the phone?",
+            "answer": "No. What is stored are events, not videos — a whole match is a few dozen kilobytes."
+          }
+        ]
+      },
+      {
+        "slug": "live-ticker",
+        "name": "Live ticker",
+        "short": "Live ticker",
+        "headline": "The scoreboard for everyone outside",
+        "summary": "Publish matches as a public live ticker with a link and a QR code – parents and fans follow the score and the flow of the match live in their browser.",
+        "tagline": "Anyone who is not in the hall still reads along — no account, no app, and nothing extra for you to type.",
+        "intro": [
+          "The live ticker is the same recording, seen from outside. You release a match and get a link and a QR code. Whoever opens the link sees the score, the clock and the flow of the match in real time — every action appears there in the second you record it.",
+          "It is meant for the people who otherwise ask on WhatsApp: parents who are at work, the rest of the club, the second team playing at the same time. The QR code works on a sheet printed out and taped to the hall entrance just as well as on the projector at the club evening.",
+          "The ticker deliberately does not show everything. It shows what stands on a scoreboard — score, time, scorers, suspensions. The full statistic with percentages and shot map stays with you until you share it explicitly."
+        ],
+        "facts": [
+          {
+            "term": "Access for spectators",
+            "value": "Link or QR code, no account"
+          },
+          {
+            "term": "Delay",
+            "value": "Practically none — it is the same tap"
+          },
+          {
+            "term": "Extra effort",
+            "value": "None. Release it once, done"
+          },
+          {
+            "term": "Can be switched off",
+            "value": "At any time, even mid-match"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Release the match",
+            "body": "Tap Publish inside the match. Statix creates a link and a QR code for it."
+          },
+          {
+            "title": "Spread the link",
+            "body": "Send it to the team or parents group, hang the QR code on the hall door or put it on the projector."
+          },
+          {
+            "title": "Record as always",
+            "body": "The ticker hangs off the same recording. You do not tap a second time and you maintain nothing afterwards."
+          },
+          {
+            "title": "Stop it after the match",
+            "body": "One tap ends the publication. The link is dead afterwards — not merely inconspicuous, but really closed."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Match overview in Statix with running and finished matches",
+            "label": "A match is published straight from the match list"
+          }
+        ],
+        "limits": [
+          "The ticker shows the flow of the match, not the analysis. Shooting percentages, shot maps and AI reports belong to you and are shared through a release of their own.",
+          "There is no comment function and no written ticker with sentences of your own. What stands there comes from the recorded actions.",
+          "With no signal in the hall the recording carries on, but the ticker stands still until the connection is back."
+        ],
+        "faq": [
+          {
+            "question": "Do spectators see our players' names?",
+            "answer": "The ticker shows the flow of the match the way it is announced in the hall — with scorers. If you do not want that, do not publish the match; a half-open ticker deliberately does not exist."
+          },
+          {
+            "question": "How many people can watch at the same time?",
+            "answer": "The ticker is an ordinary web page. Whether two parents or half the hall are looking at it changes nothing for you."
+          },
+          {
+            "question": "Does the ticker stay online after the match?",
+            "answer": "Only for as long as you leave it released. End the publication and the link is invalid immediately — including the one somebody has already forwarded."
+          }
+        ]
+      },
+      {
+        "slug": "spielerstatistiken",
+        "name": "Player statistics",
+        "short": "Player values",
+        "headline": "A season you can read",
+        "summary": "Shooting percentages, efficiency, playing shares and development curves for every player at a glance.",
+        "tagline": "Every recorded action lands with a person. Out of that comes a season you can read.",
+        "intro": [
+          "Live recording leaves a complete account for every player: goals, shots, shooting percentage, seven-metre throws counted separately, assists, turnovers, steals, blocks, suspensions. For goalkeepers, saves, goals conceded and save percentage.",
+          "It only gets interesting over time. Statix lays the matches of a season on top of one another and shows the curve — which percentage is rising, which is tipping over, who is a different player after the winter break. That is the number a training decision can carry, not the one shooting percentage from the one match.",
+          "Every number stays expandable down to the single action. Anyone who wants to know why a percentage stands at 38 % reaches the list of shots it was calculated from in two taps."
+        ],
+        "facts": [
+          {
+            "term": "Per player",
+            "value": "Shot, goal, percentage, assist, turnover, suspensions"
+          },
+          {
+            "term": "Goalkeepers",
+            "value": "Their own values: saves, goals conceded, percentage"
+          },
+          {
+            "term": "Period",
+            "value": "Single match, season and curve"
+          },
+          {
+            "term": "Traceable",
+            "value": "Every percentage down to the single action"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Record",
+            "body": "Every tap carries the player who triggered it. No further assignment is needed."
+          },
+          {
+            "title": "Read after the match",
+            "body": "The player table stands right next to the final score: who had how many shots, what came of them, how long somebody was on court."
+          },
+          {
+            "title": "Compare across the season",
+            "body": "The player profile lays every match on top of the others and draws the curve. Outliers up and down stand there side by side instead of on their own."
+          },
+          {
+            "title": "Use it in conversation",
+            "body": "A profile can be opened up and shown. Talking about a number both of you can see is a different conversation from talking about an impression."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Player table of a finished match with shots, goals and percentages per player",
+            "label": "The player table of a finished match"
+          },
+          {
+            "alt": "Player profile with the development curve across the season",
+            "label": "A player profile read across the season"
+          },
+          {
+            "alt": "Player statistics on the phone",
+            "label": "The same values on the sofa on Sunday evening"
+          }
+        ],
+        "limits": [
+          "Statix calculates from what was recorded. Tap only goals and you get no shooting percentage — that is not a gap, that is arithmetic.",
+          "Statix does not measure running paths, distances or load. That needs sensors, not a thumb on the sideline.",
+          "There is no comparison with other clubs. The point of reference is your own season."
+        ],
+        "faq": [
+          {
+            "question": "From when do the numbers mean anything?",
+            "answer": "A few matches are enough for a shooting percentage; a development takes half a season. Statix therefore always shows the count a percentage was calculated from as well — 100 % out of two shots then looks like what it is."
+          },
+          {
+            "question": "Do the players see their own values?",
+            "answer": "Only if you show or share them. By default the analyses sit in the coaching area, and a player's profile is seen only by whoever is on the coaching team."
+          },
+          {
+            "question": "What about players who move between teams?",
+            "answer": "Within a club the career stays visible across the teams — see Club area. Without a club, a squad entry belongs to exactly one team."
+          }
+        ]
+      },
+      {
+        "slug": "wurfbilder",
+        "name": "Shot maps & shot analysis",
+        "short": "Shot maps",
+        "headline": "Not how many, but from where",
+        "summary": "Visualise shots and goals on the court and spot the patterns that decide matches.",
+        "tagline": "A table says how many. A shot map says from where — and that is the question a training session comes out of.",
+        "intro": [
+          "If you tap the shooting position along with the shot while recording, Statix draws the shot map from it: every shot a dot on the court, goal and miss distinguishable, condensed into a heat map. Next to it the second map, the goal zone — which corner was aimed at and what arrived there.",
+          "The use is not in the single dot, it is in the pattern. That you score from the left back position at nine metres and not from the right stands in no percentage; on the map you see it in two seconds. The same goes for the defensive side: where the opponent gets their shots away is a statement about your shifting.",
+          "There are shot maps for a single match, for one player across the season and for the team as a whole. The interesting comparison is usually the last one against the first."
+        ],
+        "facts": [
+          {
+            "term": "Shooting positions",
+            "value": "Eight zones plus seven metres and long range"
+          },
+          {
+            "term": "Goal zones",
+            "value": "Nine areas in the goal"
+          },
+          {
+            "term": "Display",
+            "value": "Single shots and heat map"
+          },
+          {
+            "term": "Scope",
+            "value": "Match, player or whole season"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Record the position as well",
+            "body": "One extra tap on the court graphic for each shot. Miss it once and you lose only that one dot on the map."
+          },
+          {
+            "title": "Read the picture",
+            "body": "Green scored, red missed, a dense patch means: this is where your game happens. The heat map smooths that into an area."
+          },
+          {
+            "title": "Cross it with the goal zone",
+            "body": "Where in the goal the balls land is the question for the opposing keeper — and for your own, when you look at the goals conceded."
+          },
+          {
+            "title": "Translate it into training",
+            "body": "An empty zone is either a weakness or a decision. The shot map does not say which of the two — but it asks the question."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Shot map of a handball match: shots and goals spread across the court, with the heat map",
+            "label": "The shot map of a match, goals and misses kept apart"
+          },
+          {
+            "alt": "Shot map on the phone",
+            "label": "Readable in the changing room on the phone too"
+          }
+        ],
+        "limits": [
+          "No recorded shooting position, no shot map. The numbers are still right — only the map stays empty.",
+          "The position is a zone, not a coordinate to the centimetre. For the question \"where do we shoot from\" that is enough; for ballistics it is not.",
+          "Statix does not calculate expected goals. The map shows what happened, not what should have happened."
+        ],
+        "faq": [
+          {
+            "question": "How long does recording with the shooting position take?",
+            "answer": "One extra tap per shot. In practice many coaches record the position for their own attacks and leave it out for the opponent — that too gives a usable map."
+          },
+          {
+            "question": "Can I show the team's shot map?",
+            "answer": "Yes. It stands in the match report, can be exported as a PDF and shared through a revocable link."
+          },
+          {
+            "question": "Are there shot maps for goalkeepers?",
+            "answer": "Yes — as the distribution of goals conceded and saves across the goal zones. That is the map that shows where a keeper is strong and where she is not."
+          }
+        ]
+      },
+      {
+        "slug": "ki-analyse",
+        "name": "AI analysis",
+        "short": "AI analysis",
+        "headline": "A second look at your numbers",
+        "summary": "AI analyses for single matches, the whole team, individual players and complete tournaments – with pseudonymised player names.",
+        "tagline": "The numbers are there anyway. The AI writes down what stands in them — and where they contradict each other.",
+        "intro": [
+          "Statix sends the recorded match data through an analysis in four cuts: a single match, the whole team across the season, one player as a scouting profile, and a complete tournament. What comes out is not flowing prose but a report made of blocks — turning points, distribution of errors, shooting-zone efficiency, player performance, concrete starting points.",
+          "Before the analysis the names are replaced. What the model sees are roles and numbers — \"left back, 14 shots, 5 goals\" — not people. The names are only added back when the report is displayed, on your device.",
+          "A report is created in the background and stays saved until you delete it. The history is deliberate: the interesting comparison is today's report next to the one from three months ago."
+        ],
+        "facts": [
+          {
+            "term": "Four cuts",
+            "value": "Match, team, player, tournament"
+          },
+          {
+            "term": "Names",
+            "value": "Pseudonymised before the analysis"
+          },
+          {
+            "term": "Duration",
+            "value": "One to two minutes, in the background"
+          },
+          {
+            "term": "Retention",
+            "value": "Stays in the history, deletable at any time"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Finish the match",
+            "body": "Match reports exist for finished matches. For a running match there is a live assessment instead."
+          },
+          {
+            "title": "Start the analysis",
+            "body": "One tap. Statix prepares the data, pseudonymises it and sends it off — you can use the rest of the page in the meantime."
+          },
+          {
+            "title": "Read the report",
+            "body": "Key figures, turning points, patterns and recommendations as separate blocks, each with the numbers it rests on."
+          },
+          {
+            "title": "Compare in the history",
+            "body": "Old reports stay where they are. Whether something has changed is answered by the comparison, not by the newest report alone."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "AI match report in Statix with the flow of the match and shooting-zone efficiency",
+            "label": "An AI match report: flow of the match and shooting-zone efficiency"
+          },
+          {
+            "alt": "AI match report with turning points, distribution of errors and player performance",
+            "label": "Turning points, distribution of errors, player performance"
+          },
+          {
+            "alt": "AI player intelligence in the player profile",
+            "label": "The same analysis, cut to one player"
+          }
+        ],
+        "limits": [
+          "The AI reads only what was recorded. A match without shooting positions gets no shooting-zone analysis.",
+          "A report is a reading, not a verdict. It knows neither the injury in the 20th minute nor the referee.",
+          "There is no video analysis by the AI. The model sees numbers, not pictures."
+        ],
+        "faq": [
+          {
+            "question": "Which data leaves Statix for this?",
+            "answer": "Aggregated match data with replaced names: positions, actions, times, numbers. Real names, e-mail addresses and account details are not part of it. The assignment happens again only when the report is displayed."
+          },
+          {
+            "question": "Can I delete a report?",
+            "answer": "Yes, any single one. Deleted means deleted — the report disappears from the history and is not kept anywhere else."
+          },
+          {
+            "question": "Why does an analysis take one to two minutes?",
+            "answer": "Because a report is built from several passes and is checked against a fixed schema at the end. If a block fails the check it is requested again rather than being displayed half filled in."
+          }
+        ]
+      },
+      {
+        "slug": "gegner-bilanz",
+        "name": "Opponent record & scouting",
+        "short": "Opponents",
+        "headline": "What you know about every opponent",
+        "summary": "An automatic head-to-head record against every opponent – wins, draws, defeats and goals.",
+        "tagline": "Every club you have ever played against, with the record, the recent form and the notes you made yourself.",
+        "intro": [
+          "As soon as you record a match against a club, Statix creates it and keeps the record: wins, draws, defeats, goals for and against, plus the form of the recent meetings. You maintain nothing for it — the list comes out of the matches that are there anyway.",
+          "Next to it stands room for what is not a number: scouting notes per club. Which defence they play, who feeds the pivot, where their keeper is weak. Notes can also be written before you play each other for the first time.",
+          "On match day this is the page you open two hours beforehand — record, recent results and your own notes in one place instead of in three chat threads."
+        ],
+        "facts": [
+          {
+            "term": "Creation",
+            "value": "Automatic, out of recorded matches"
+          },
+          {
+            "term": "Record",
+            "value": "W · D · L, goals, goal difference, form"
+          },
+          {
+            "term": "Notes",
+            "value": "Free text, per club, even before the first match"
+          },
+          {
+            "term": "Sorting",
+            "value": "Last played, name or best record"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Play",
+            "body": "A recorded match creates the club. From the second one on there is a record."
+          },
+          {
+            "title": "Collect notes",
+            "body": "Write three sentences after the match, while it is fresh. For the return fixture that is worth more than any statistic."
+          },
+          {
+            "title": "Look it up before match day",
+            "body": "Record, recent meetings and notes stand together — on the phone in the changing room too."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Opponent overview in Statix with the record and form per club",
+            "label": "Every club with record, form and a note marker"
+          }
+        ],
+        "limits": [
+          "The record knows only your own matches. How the opponent plays against others is something Statix does not know.",
+          "There is no import of league data or tables from federation portals.",
+          "Scouting notes are text. Video clips about an opponent belong in the video library, not here."
+        ],
+        "faq": [
+          {
+            "question": "Can I create a club we have never played against?",
+            "answer": "Yes. That is exactly what creating one by hand is for — so the scouting notes are already there when match day comes."
+          },
+          {
+            "question": "Do other coaches see my notes?",
+            "answer": "Only your own coaching team. Notes are not part of a match release."
+          }
+        ]
+      },
+      {
+        "slug": "video-tagging",
+        "name": "Video & tagging",
+        "short": "Video tagging",
+        "headline": "A recording turns into a question",
+        "summary": "Upload match recordings, tag scenes, filter by action and player, and send edits to individual players.",
+        "tagline": "The recording is on the phone anyway. Tagged, it becomes a question you can ask: \"every fast break against a 5-1\".",
+        "intro": [
+          "Video tagging is the workbench next to the statistic. You upload the recording of a match and lay scenes on top of it: shot, turnover, defensive action, save, suspension, game situation. Every scene is an interval in the video plus the note of what happened in it — and who.",
+          "Above the code lies a second layer: qualifiers. Out of which phase (positional attack, 1st/2nd/3rd wave, breakthrough), against which defence (6-0, 5-1, 3-2-1), with a player more or fewer, with which starting move, from which shooting position. That is why you can ask later: every wing shot against a 5-1 out of the second wave. The vocabulary is checked against the legend of an official IHF match report, not built from memory.",
+          "A playlist does not save a list of clips, it saves the question. Tag a forgotten scene later and it falls in by itself — nothing has to be put together a second time. The same mechanism carries the deliveries: a player receives exactly her scenes and does not see the rest of the match."
+        ],
+        "facts": [
+          {
+            "term": "Status",
+            "value": "Beta — being built, not yet for every account"
+          },
+          {
+            "term": "Scenes",
+            "value": "Interval + action + player + qualifiers"
+          },
+          {
+            "term": "Tracks",
+            "value": "Grouped by action or by player"
+          },
+          {
+            "term": "Playlists",
+            "value": "Saved filters, not clip folders"
+          },
+          {
+            "term": "Deliveries",
+            "value": "A player sees only her own scenes"
+          },
+          {
+            "term": "Usable without a match",
+            "value": "Yes — training recordings too"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Upload the recording",
+            "body": "MP4, MOV or WebM, preferably in 1080p rather than 4K. The upload carries on in the background and can be resumed if it breaks off. A video can belong to a match — but it does not have to."
+          },
+          {
+            "title": "Line the video up with the match clock",
+            "body": "Two numbers, once per video: the throw-off of each half. After that every action recorded live is a jump mark in the video — the statistic and the recording are talking about the same minute."
+          },
+          {
+            "title": "Tag the scenes",
+            "body": "Choose the side, tap the player, press the action — with keyboard shortcuts at the speed of the video. Context such as phase, defence and shooting position comes in a second step and stays set until the situation changes."
+          },
+          {
+            "title": "Filter, save the playlist, send",
+            "body": "The filter runs over tags and recorded events at the same time. What fits plays as an edit, can be saved as a playlist and sent to a player — who then sees exactly those scenes and not the match behind them."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "The tracks of the tagging workbench in Statix: every action a row, every scene a block on the timeline",
+            "label": "The tracks: one half, sorted by action"
+          },
+          {
+            "alt": "The tagging catalogue in Statix with side selection, squad and action buttons",
+            "label": "Side, squad, action — one tap each, every one with a shortcut"
+          }
+        ],
+        "limits": [
+          "The feature is being built. It is limited to selected accounts while that lasts — not as a sales tier, but because an unfinished upload path in front of every team produces real money and orphaned files.",
+          "A tag moves no number. The statistic comes from live recording; tagged scenes are a reading of the video and do not change the list of scorers.",
+          "Recorded events only become jump marks if the video has been lined up with the match clock.",
+          "Automatic recognition of actions in the video image does not exist and is not planned."
+        ],
+        "faq": [
+          {
+            "question": "Can I use video tagging today?",
+            "answer": "Only if your account is enabled for it. The function is being built right now and runs with a few teams who give feedback. Write to us if you want to be part of it — the waiting list is an e-mail."
+          },
+          {
+            "question": "What is the difference between a tag and a recorded action?",
+            "answer": "A recorded action is the record of the match and feeds every statistic. A tag is an interval on the video with a reading. That is why you can tag a scene without any percentage changing — and why the workbench shows both side by side."
+          },
+          {
+            "question": "Does a player see the whole match when I send her scenes?",
+            "answer": "No. A delivery serves only the pieces of the video her scenes cover. For everything else there is no address — not merely no button, but no reachable place."
+          },
+          {
+            "question": "How much storage does a match need?",
+            "answer": "In 1080p roughly two to three gigabytes per match. In 4K a multiple of that, without anything more being visible on the workbench — hence the recommendation to film in 1080p."
+          }
+        ]
+      },
+      {
+        "slug": "termine-und-teilnahme",
+        "name": "Fixtures & training attendance",
+        "short": "Fixtures",
+        "headline": "The calendar that takes the load off the group chat",
+        "summary": "Training sessions, matches and recurring dates in the team calendar: players accept or decline themselves, enter holiday, illness or injury as a period, and the coaching staff sees the full attendance list.",
+        "tagline": "The team calendar that gets the question \"so who is actually coming on Tuesday?\" out of the WhatsApp group.",
+        "intro": [
+          "Fixtures is your team's calendar: training as a series, matches with meeting time and throw-off, team evenings, athletics. Every date has a hall from the address book — entered once, from then on with navigation in Google Maps or Apple Maps.",
+          "The team accepts for itself. Every player sees her next dates and answers with two taps; whoever declines can say why in one sentence. You see the full list — accepted, maybe, declined, no answer — and can enter it for somebody who does not use the app.",
+          "The part that really changes everyday life is absences. Holiday, illness or an injury is entered once as a period and applies to every date inside it — including the one you only create tomorrow. Before, nobody declined nine training sessions one by one, so nobody declined at all.",
+          "On top come the small things everything otherwise hangs on: a deadline for answering with a reminder, push notifications when a date is added, moved or cancelled, and a calendar subscription that puts every date in your own phone calendar and keeps it current there."
+        ],
+        "facts": [
+          {
+            "term": "Types of date",
+            "value": "Training, match, other date"
+          },
+          {
+            "term": "Series",
+            "value": "Weekly or fortnightly, several weekdays"
+          },
+          {
+            "term": "Answers",
+            "value": "Accept, maybe, decline — with a reason"
+          },
+          {
+            "term": "Absences",
+            "value": "Holiday, ill, injured as a period"
+          },
+          {
+            "term": "Reminders",
+            "value": "Push before the deadline and on changes"
+          },
+          {
+            "term": "Calendar subscription",
+            "value": "One link for Apple, Google and Outlook"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Create training as a series",
+            "body": "Tuesday and Thursday at 19:30 are one series, not two. Individual dates out of it can still be moved, cancelled or given a note of their own."
+          },
+          {
+            "title": "Match dates with a meeting time",
+            "body": "Meeting, throw-off, end — plus home or away, the type of match and the hall with its address. What the team needs to know on match day stands on one card."
+          },
+          {
+            "title": "The team answers for itself",
+            "body": "Every player gets access through a join link and afterwards sees her own dates. Two taps for yes or no, one sentence as a reason if there is one."
+          },
+          {
+            "title": "Enter absences once",
+            "body": "Two weeks of holiday is one entry. Every date inside it counts as declined, and whoever does come after all accepts for that one date anyway."
+          },
+          {
+            "title": "Keep an eye on attendance",
+            "body": "The coaching staff sees the full attendance list per date, including those who have not answered at all — and in the calendar, how many are missing on which day."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "List of dates in Statix with training, matches, meeting-time bar and answers",
+            "label": "The weekly list: series, meeting–start–end, who is in"
+          },
+          {
+            "alt": "Monthly team calendar in Statix with training, matches and absences",
+            "label": "The month: training, matches — and how many are missing"
+          },
+          {
+            "alt": "A match date in Statix with hall, address, navigation, note and attendance list",
+            "label": "A match date with hall, navigation and note"
+          },
+          {
+            "alt": "Attendance list of a date with accepted and declined players and the reason for absence",
+            "label": "Who is coming — and for whom the reason is a period"
+          },
+          {
+            "alt": "Absences in Statix: holiday, illness and injury as periods",
+            "label": "Holiday, ill, injured — entered once as a period"
+          },
+          {
+            "alt": "List of dates on a player's phone",
+            "label": "How a player accepts: two taps on the phone"
+          }
+        ],
+        "limits": [
+          "Statix does not plan hall bookings and does not coordinate free slots with other teams. The calendar belongs to one team.",
+          "Series are weekly or fortnightly. \"Every third Tuesday\" does not exist, because nobody plans that way.",
+          "Push notifications need the app installed on the home screen on an iPhone — that is a rule of iOS, not of Statix.",
+          "The calendar subscription shows times and places, no names and no answers. Whoever has the link can read it."
+        ],
+        "faq": [
+          {
+            "question": "Do the players need an account of their own?",
+            "answer": "For accepting and declining themselves, yes — access comes through a join link from the coaching team and takes a minute. Whoever does not want an account is entered by the staff; the row is the same."
+          },
+          {
+            "question": "What happens if I move a date?",
+            "answer": "Everyone who has notifications switched on gets a message with the new date, and in the subscribed calendar the entry moves by itself. The answers already given stay as they are."
+          },
+          {
+            "question": "How exactly does the holiday entry work?",
+            "answer": "A period with a start and an end, both days included, plus a reason and optionally a note only the coaching staff sees. Every date inside it counts as declined — including those that do not even exist at the time of the entry. For a single date inside it you can still accept."
+          },
+          {
+            "question": "Do matches automatically become dates?",
+            "answer": "Yes. A created match appears in the calendar with date, opponent and place — and if you move the match, the date moves with it. There is no second place where the same date is maintained."
+          },
+          {
+            "question": "Do the players see why somebody has declined?",
+            "answer": "No. The reason and the note on an absence are between her and the coaching team. The team sees the number, not the sentence."
+          }
+        ]
+      },
+      {
+        "slug": "team-management",
+        "name": "Team management",
+        "short": "Team & season",
+        "headline": "Squad, season and coaching staff in one place",
+        "summary": "Manage squad, matches and seasons in one place and share the analyses with the whole team.",
+        "tagline": "Squad, fixture list, season and coaching staff in one place — instead of in a spreadsheet only one person has.",
+        "intro": [
+          "A team in Statix has a squad, a season and a coaching staff. The squad carries names, shirt numbers, positions and membership; whoever leaves the team is not deleted but marked as departed — otherwise half the season would disappear with them.",
+          "Matches are created with opponent, date, home or away and type of match, and then run through the states planned, running, finished. Changing season creates a new season without losing the old one: the previous season stays fully readable.",
+          "Assistant coaches get an invitation by e-mail and work in the same team afterwards — with the same matches and the same analysis, not with a copy."
+        ],
+        "facts": [
+          {
+            "term": "Squad",
+            "value": "Name, number, position, arrivals and departures"
+          },
+          {
+            "term": "Seasons",
+            "value": "Several; the old one stays fully readable"
+          },
+          {
+            "term": "Coaching staff",
+            "value": "Invitation by e-mail, shared team"
+          },
+          {
+            "term": "Matches",
+            "value": "Planned, running, finished — including the type"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Create the team",
+            "body": "Name, season, age group. After that the statistics catalogue is already there — you do not have to define any action types."
+          },
+          {
+            "title": "Enter the squad",
+            "body": "Once per season. Shirt number and position are what the recording needs later."
+          },
+          {
+            "title": "Invite the coaching staff",
+            "body": "Bring assistant coaches in by e-mail. They see the same matches and can record as well."
+          },
+          {
+            "title": "Change season",
+            "body": "Create the new season, carry the squad over and adjust it. The previous season stays there in full."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Squad overview in Statix with player cards",
+            "label": "The squad of one season"
+          },
+          {
+            "alt": "Season overview in Statix with record, form and every match",
+            "label": "The season: record, form, percentages, every match"
+          }
+        ],
+        "limits": [
+          "Statix does not do membership fees or member administration. That is club administration, not match statistics.",
+          "There is no import from federation portals — squad and fixture list are created, not taken over.",
+          "A squad row belongs to exactly one team. Whoever plays in two teams has two rows — in the club area they stand together as one career."
+        ],
+        "faq": [
+          {
+            "question": "How many teams can I manage?",
+            "answer": "As many as you need — you switch between them. If several teams belong to one club, the club area is the level above."
+          },
+          {
+            "question": "What happens to a player who leaves the club?",
+            "answer": "She is marked as departed, not deleted. Her matches, percentages and shot maps stay part of the season she played in."
+          },
+          {
+            "question": "Can two coaches work at the same time?",
+            "answer": "On the same team, yes — on the same running recording, no. One match is recorded by one person, because two parallel recordings inevitably drift apart."
+          }
+        ]
+      },
+      {
+        "slug": "kader-kartenalbum",
+        "name": "Squad as a card album",
+        "short": "Card album",
+        "headline": "The squad the team opens of its own accord",
+        "summary": "Player cards with values from real matches, a Handball Performance Index, stickers and a tactics board.",
+        "tagline": "The squad as a sticker album: every player a card whose values come from real matches.",
+        "intro": [
+          "Instead of a list of names, Statix shows the squad as a card album. Every card carries the number, the position and the values this player has produced in real matches — not estimated attributes, but calculated ones.",
+          "The card also carries the Handball Performance Index: a value that pulls together finishing, efficiency, errors and playing share, so that players in different roles can be laid side by side. It does not replace a coach's eye — it is a way into a conversation.",
+          "On top come stickers for the special moments, and the tactics board, on which the cards can be pushed into a line-up. That is the part youth teams like best — and the reason a squad sometimes gets opened voluntarily."
+        ],
+        "facts": [
+          {
+            "term": "Card content",
+            "value": "Number, position, calculated values"
+          },
+          {
+            "term": "Index",
+            "value": "Handball Performance Index across all roles"
+          },
+          {
+            "term": "Stickers",
+            "value": "For milestones and highlights of a season"
+          },
+          {
+            "term": "Tactics board",
+            "value": "Push the cards into a line-up"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Play and record",
+            "body": "The values on the card come out of recorded matches. Without matches a card stays a card."
+          },
+          {
+            "title": "Open the album",
+            "body": "The squad lies in front of you as an album. One tap on a card leads into the full player profile."
+          },
+          {
+            "title": "Push a line-up",
+            "body": "On the tactics board the cards can be arranged on the court — for the team talk or for planning."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Squad as a card album in Statix",
+            "label": "The squad as an album instead of a list"
+          },
+          {
+            "alt": "Squad cards on the phone",
+            "label": "Cards on the phone, shown in the changing room"
+          }
+        ],
+        "limits": [
+          "The index is a Statix value, not a federation standard. It compares within your team, not across clubs.",
+          "Cards cannot be printed or ordered as collectors' cards.",
+          "Without recorded matches a card has no values — entering attributes by hand deliberately does not exist."
+        ],
+        "faq": [
+          {
+            "question": "How is the Handball Performance Index calculated?",
+            "answer": "From finishing, efficiency, errors and playing share, weighted by position, so that a goalkeeper and a back-court player stand on the same scale. The components can be unfolded on the card — the value is not a black box."
+          },
+          {
+            "question": "Can the players see their card?",
+            "answer": "If you show it to them. In practice that is exactly the moment when young players start taking an interest in their own numbers."
+          }
+        ]
+      },
+      {
+        "slug": "turniere",
+        "name": "Tournament mode",
+        "short": "Tournaments",
+        "headline": "A tournament day without scraps of paper",
+        "summary": "Tournaments with several teams, an automatic table, a fixture list and a match-day squad selection.",
+        "tagline": "A tournament day with six teams, without anybody keeping the table on a scrap of paper.",
+        "intro": [
+          "In tournament mode you create the participating teams and the fixture list. Results either enter themselves — because you recorded the match in Statix — or by hand, for the matches you are not part of at all. The table recalculates after every result.",
+          "Your own tournament matches you start straight from the fixture list as a full live recording. Afterwards the result hangs in the table and the statistic in the match report — there is no second place where the same result is maintained.",
+          "For the day itself you pick the squad that is actually there. And when the tournament is over there is an AI analysis across the whole tournament instead of across a single match."
+        ],
+        "facts": [
+          {
+            "term": "Teams",
+            "value": "As many as you like, other clubs' teams too"
+          },
+          {
+            "term": "Table",
+            "value": "Recalculates after every result"
+          },
+          {
+            "term": "Your own matches",
+            "value": "Recorded live out of the fixture list"
+          },
+          {
+            "term": "Other results",
+            "value": "Can be entered by hand"
+          },
+          {
+            "term": "AI analysis",
+            "value": "Across the whole tournament"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Create the tournament",
+            "body": "Name, date, participating teams. The fixture list comes out of that."
+          },
+          {
+            "title": "Pick the match-day squad",
+            "body": "Whoever is there today is available. The rest of the season is untouched by it."
+          },
+          {
+            "title": "Start matches and enter results",
+            "body": "Record your own matches live, type in the other results. The table follows automatically."
+          },
+          {
+            "title": "Analyse the tournament",
+            "body": "Table, fixture list, statistics and an AI analysis across the whole day."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Tournament overview in Statix with table and fixture list",
+            "label": "Table and fixture list side by side"
+          },
+          {
+            "alt": "Tournament fixture list with the results entered",
+            "label": "The fixture list with the day's results"
+          },
+          {
+            "alt": "AI analysis of a whole tournament in Statix",
+            "label": "The AI analysis across the whole tournament"
+          }
+        ],
+        "limits": [
+          "Statix does not generate a fixture list automatically from seedings or a knockout bracket. The matches are created.",
+          "For other teams there are no player statistics — only results. What gets recorded is always your own match.",
+          "It is not a tournament administration with registration, hall plan and scheduling for organisers."
+        ],
+        "faq": [
+          {
+            "question": "Can several coaches enter results in parallel?",
+            "answer": "Yes, if they are in the same team. Different matches at the same time are no problem — recording the same match at the same time is."
+          },
+          {
+            "question": "Does tournament mode work for a pre-season tournament too?",
+            "answer": "Yes. Whether it is a championship tournament, pre-season or an indoor tournament between Christmas and New Year changes nothing about the mechanics."
+          }
+        ]
+      },
+      {
+        "slug": "vereinsbereich",
+        "name": "Club area",
+        "short": "Club",
+        "headline": "The level above the teams",
+        "summary": "One level above every team of a club: an overview of all squads, a club-wide player list, an analysis with a season comparison and player careers across several youth teams.",
+        "tagline": "The level above the teams: every squad, every result, every career of a club in one place.",
+        "intro": [
+          "The club area is built for heads of department and youth coordinators. On Monday morning it shows what happened in every team at the weekend: results, upcoming matches, league positions — without anybody writing to twelve coaches.",
+          "Underneath it lie three things a single team cannot provide: a club-wide player list across every squad, an analysis with a season comparison per team, and careers — people who have played in more than one team, in the order of their stations.",
+          "That career is exactly the argument for youth departments: that a player from the under-16s through the under-18s into the under-19s stays visible as one person, with her development, instead of as three separate squad entries."
+        ],
+        "facts": [
+          {
+            "term": "Who for",
+            "value": "Heads of department, youth coordination"
+          },
+          {
+            "term": "Setup",
+            "value": "Set up for the club"
+          },
+          {
+            "term": "Joining",
+            "value": "Starts from the team, by code"
+          },
+          {
+            "term": "Analysis",
+            "value": "Every team, with a season comparison"
+          },
+          {
+            "term": "Careers",
+            "value": "Across several teams"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Have the club set up",
+            "body": "The club area is created for you — write to us through the club page and tell us what you need."
+          },
+          {
+            "title": "Let the teams join",
+            "body": "The join code goes to the head coaches. Joining starts from the team, not from the club — every team stays mistress of its data."
+          },
+          {
+            "title": "Read it on Monday morning",
+            "body": "The results of every team, the open points and the upcoming matches on one page."
+          },
+          {
+            "title": "Follow the careers",
+            "body": "Whoever goes through several teams over the years stands there as one person with her stations."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Club overview in Statix with every team and their results",
+            "label": "Monday morning: every team on one page"
+          },
+          {
+            "alt": "Club analysis in Statix with the key figures of every team",
+            "label": "An analysis across every team"
+          },
+          {
+            "alt": "Player careers across several teams of a club",
+            "label": "Careers: one person, several stations"
+          }
+        ],
+        "limits": [
+          "The club area is set up, not created by yourself — which is why it stands under \"On request\".",
+          "It does not replace club administration: no members, no fees, no player registrations.",
+          "A team joins of its own accord. A club cannot swallow a team that does not want it."
+        ],
+        "faq": [
+          {
+            "question": "How do we get the club area?",
+            "answer": "Get in touch through the club page — what a club with two teams needs is not what a club with twelve needs, which is why it is discussed and set up rather than clicked."
+          },
+          {
+            "question": "Do all coaches see everything?",
+            "answer": "No. The club level sees the analysis across the teams; the detailed work stays with each team and its coaching staff."
+          }
+        ]
+      },
+      {
+        "slug": "trainer-zusammenarbeit",
+        "name": "Coach collaboration & releases",
+        "short": "Sharing & team",
+        "headline": "Passing it on without giving it away",
+        "summary": "Share matches with fellow coaches straight into their inbox and invite assistant coaches permanently into your team.",
+        "tagline": "Pass a match on without sending it — and without the other person having to create an account.",
+        "intro": [
+          "There are two ways to let somebody read along. The first is a release: you choose what is shared — the statistic, the AI analysis or both — and get a link. Give an e-mail address that belongs to a Statix account and the match also lands in that account's inbox.",
+          "The second way is a permanent invitation into the coaching staff. Whoever is invited works in the same team from then on, with the same matches and the same analysis — not with a copy that is out of date in two weeks.",
+          "Every release can be revoked. And because a link gets forwarded too, the rule is: revoked means dead immediately, not merely hard to find. On top of that comes the PDF match report for everyone who needs something printed."
+        ],
+        "facts": [
+          {
+            "term": "Release",
+            "value": "Link or e-mail, scope of your choosing"
+          },
+          {
+            "term": "Recipient",
+            "value": "Needs no account for the link"
+          },
+          {
+            "term": "Inbox",
+            "value": "Shared matches land there together"
+          },
+          {
+            "term": "Revoking",
+            "value": "At any time, effective immediately"
+          },
+          {
+            "term": "PDF",
+            "value": "Match report for printing"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Choose the scope",
+            "body": "Statistic, AI analysis or both. What you do not select is not in the shared report either."
+          },
+          {
+            "title": "Create a link or enter an e-mail address",
+            "body": "The link works without an account. An e-mail address with a Statix account also gets the match in the inbox."
+          },
+          {
+            "title": "Invite assistant coaches permanently",
+            "body": "For people who are in it for the long run, the invitation into the team is the right way — not one release per match."
+          },
+          {
+            "title": "Tidy up",
+            "body": "Active releases stand in a list and can be revoked one by one."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Release dialogue in Statix: share a match with another coach by link or e-mail",
+            "label": "Sharing: choose the scope, create the link, revocable"
+          },
+          {
+            "alt": "Inbox in Statix with matches other coaches have shared",
+            "label": "The inbox: what others have shared with you"
+          }
+        ],
+        "limits": [
+          "A release is read-only. Whoever opens it can change nothing and record nothing.",
+          "What is shared is one match, not the whole season. Whoever should see everything belongs in the coaching staff.",
+          "Scouting notes on opponents are never part of a release."
+        ],
+        "faq": [
+          {
+            "question": "Does the recipient need a Statix account?",
+            "answer": "Not for the link. With an account it is more comfortable, because shared matches are collected in the inbox instead of in chat threads."
+          },
+          {
+            "question": "What happens after revoking?",
+            "answer": "The link stops answering immediately — including the one somebody has forwarded. A PDF already downloaded is naturally beyond anyone's reach."
+          },
+          {
+            "question": "Can I share a match anonymously?",
+            "answer": "A plain link does not say who created it. Whoever shares by e-mail appears at the recipient's end by name — that is the point of the inbox."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-umfragen",
+        "name": "Player surveys",
+        "short": "Surveys",
+        "headline": "A question that does not drown in the chat",
+        "summary": "Create surveys about availability or feedback and share a link – players answer without an account.",
+        "tagline": "A question to the team whose answers do not drown in forty chat messages.",
+        "intro": [
+          "Surveys are the way for everything that is not an answer to a fixture: shirt sizes, lifts to the away game, feedback after pre-season, preferred dates for the training camp. You build the questions — free text, single or multiple choice, scale, yes/no — and share a link.",
+          "Answering works without an account. Whoever opens the link picks themselves out of the squad and answers. That is the difference that decides whether a survey gets answered or not.",
+          "You can set whether somebody may answer once or several times — once for a sign-up, several times for a recurring question."
+        ],
+        "facts": [
+          {
+            "term": "Question types",
+            "value": "Free text, choice, scale, yes/no"
+          },
+          {
+            "term": "Answering",
+            "value": "Without an account, through a link"
+          },
+          {
+            "term": "Repeat answers",
+            "value": "Can be switched on or off"
+          },
+          {
+            "term": "Status",
+            "value": "Draft, active, closed"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Put the questions together",
+            "body": "Title, a short description, then the questions. Required fields and help texts per question."
+          },
+          {
+            "title": "Share the link",
+            "body": "Into the team group. Whoever opens it picks themselves out of the squad and answers."
+          },
+          {
+            "title": "Read the answers",
+            "body": "Collected and evaluated per question. Free text stays free text, choices are counted."
+          },
+          {
+            "title": "Close it",
+            "body": "A closed survey takes no more answers but stays readable."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Player surveys in Statix with status and numbers of answers",
+            "label": "Surveys with status and number of answers"
+          }
+        ],
+        "limits": [
+          "For accepting and declining training sessions and matches, the fixtures are the right place — there they hang off a date and off the attendance list.",
+          "Answers are not anonymous: whoever answers picks themselves out of the squad.",
+          "Surveys do not send reminders by themselves. The nudge stays with the coach."
+        ],
+        "faq": [
+          {
+            "question": "How does a survey differ from accepting a fixture?",
+            "answer": "Accepting a fixture belongs to a date and feeds the attendance list. A survey is a free question to the team — shirt sizes, car pools, feedback after pre-season."
+          },
+          {
+            "question": "Can parents answer?",
+            "answer": "Anyone with the link can answer and picks themselves out of the squad while doing so. In youth teams that is often exactly the parent holding the phone."
+          }
+        ]
+      }
+    ]
+  },
+  "featuresPage": {
+    "index": {
+      "kicker": "The full squad",
+      "titleLead": "Every",
+      "titleHighlight": "feature",
+      "titleTail": "of Statix",
+      "lede": "{count} features, each with a page of its own: what it does, how it feels in the hall, real captures from the app — and what it expressly cannot do. One of them is being built right now and is marked as such.",
+      "groupNavLabel": "Feature groups",
+      "priceCta": "What does it cost?",
+      "groupCounter": "{index} of {total}",
+      "cardCta": "To the feature",
+      "faqKicker": "Briefly asked",
+      "faqTitle": "Questions about the range of features",
+      "faq": [
+        {
+          "question": "Are all features included in the free access?",
+          "answer": "Until 31 December 2026, yes: Statix has not been switched to a subscription yet, so every finished feature is open to every account. From 1 January 2027 there are three tiers — recording, the calendar and the squad cards stay complete in each of them, the computation-heavy features move into the paid ones. The cut is set out on the pricing page."
+        },
+        {
+          "question": "What does \"In progress\" mean on a feature?",
+          "answer": "That it is being built and runs with a few teams who give feedback. A new account does not see it. We list it anyway, because it is visible in the app and because a feature list that keeps quiet about the state is caught out on the first click."
+        },
+        {
+          "question": "What does \"On request\" mean?",
+          "answer": "The feature is finished, but it is set up for you rather than created by you. That concerns the club area: what a club with two teams needs is not what a club with twelve needs."
+        },
+        {
+          "question": "Do I have to use all of it?",
+          "answer": "No. Most coaches start with live recording and take the rest when the question comes up. Fixtures, tournaments, video and the club area are ready without anybody having to switch them on."
+        },
+        {
+          "question": "Are the screenshots real?",
+          "answer": "Yes. Every capture on these pages comes from a running Statix instance and is taken again when the app changes. Where an illustration is drawn instead of photographed it says so expressly beside it — with video tagging, for example, whose recordings live in video storage and not on the screenshot machine."
+        },
+        {
+          "question": "Can I try Statix without creating an account?",
+          "answer": "Yes. The live demo is a fully filled Statix with real match data: live statistics, shot maps and AI analysis straight in the browser, without signing up."
+        }
+      ],
+      "ctaKicker": "Next step",
+      "ctaTitle": "The quickest way is a real match",
+      "ctaDescription": "The live demo shows Statix with real match data, without an account. If it fits, you create your team in two minutes and record your first match.",
+      "ctaLinkLabel": "What is Statix?"
+    },
+    "inProgress": {
+      "kicker": "On the workbench",
+      "title": "What is being built right now",
+      "description": "Statix grows out of what comes back from the hall. What is not finished yet still stands here — as what it is.",
+      "cardCta": "What works already, and what does not",
+      "contact": "Do you want to be in early on one of these features and give feedback? <contact>Write to us</contact> — the waiting list is an e-mail."
+    },
+    "detail": {
+      "breadcrumbLabel": "Breadcrumbs",
+      "breadcrumbHome": "Home",
+      "breadcrumbFeatures": "Features",
+      "groupFallback": "Feature",
+      "allFeaturesCta": "All features",
+      "overviewKicker": "What it is about",
+      "factsTitle": "In short",
+      "shotsKicker": "From the app",
+      "shotsTitle": "This is what it looks like",
+      "shotsDescription": "Real captures from Statix — no montage. When the app changes they are taken again.",
+      "stepsKicker": "The procedure",
+      "stepsTitle": "How it goes in practice",
+      "limitsKicker": "Honestly",
+      "limitsTitle": "What Statix does not do here",
+      "limitsDescription": "So that you know beforehand and not on match day.",
+      "faqKicker": "Briefly asked",
+      "faqTitle": "Questions about {feature}",
+      "relatedKicker": "Goes with it",
+      "relatedTitle": "And then there is",
+      "relatedCardCta": "Have a look",
+      "relatedAllCta": "Every feature at a glance",
+      "ctaKicker": "Next step",
+      "ctaTitle": "Try it out on a real match",
+      "ctaDescription": "The live demo is a fully equipped Statix with real match data — no account, straight in the browser. Or you create your team and record your first match.",
+      "ctaLinkLabel": "Every feature at a glance"
+    },
+    "taggingBench": {
+      "kicker": "How a scene comes about",
+      "title": "One recording, 281 scenes, one question",
+      "description": "This illustration is drawn, not a screenshot — the real captures of the workbench are below it. The labels are the app's own and therefore stay in German.",
+      "resultTitle": "What comes out of it",
+      "resultLead": "Action, player and context — every row an interval in the video.",
+      "closing": "A playlist saves this question, not the result. Tag a forgotten scene later and it falls in by itself."
+    }
+  },
+  "guidePage": {
+    "index": {
+      "kicker": "Handball guide",
+      "titleLead": "Knowledge for",
+      "titleHighlight": "handball coaches",
+      "lede": "Hands-on articles on statistics, training, tactics and match analysis – so you develop your team on data and with a clear plan. If you are starting with the numbers, take the overview <stats>handball statistics</stats> as your starting point.",
+      "articleCount": "{count} articles out of the hall",
+      "categoryCount": "{count} articles",
+      "languageNote": "The articles themselves are in German."
+    },
+    "tools": {
+      "kicker": "Tools",
+      "title": "To get started straight away",
+      "lede": "Before you read your way through the articles: {count} free helpers you can start recording your numbers with right now.",
+      "openCta": "Open",
+      "items": [
+        {
+          "href": "/wurfquote-rechner",
+          "title": "Shooting percentage calculator",
+          "description": "Enter goals and shots, read off the percentage – for a single player or the whole team."
+        },
+        {
+          "href": "/handball-taktikboard",
+          "title": "Handball tactics board",
+          "description": "Drag the line-up onto a court drawn to scale, draw the running paths and hand it to the team as an image or a link."
+        },
+        {
+          "href": "/handball-statistik-excel-vorlage",
+          "title": "Excel template for handball statistics",
+          "description": "A finished spreadsheet with the key figures, for when you want to start on paper and in Excel first."
+        }
+      ]
+    },
+    "card": {
+      "readingTime": "{minutes} min.",
+      "readCta": "Read"
+    },
+    "archetype": {
+      "kennzahl": "Metric",
+      "system": "System",
+      "rezept": "Training recipe",
+      "referenz": "Reference",
+      "entscheidung": "Decision aid"
+    },
+    "breadcrumb": {
+      "label": "Breadcrumbs",
+      "home": "Home",
+      "guide": "Guide"
+    },
+    "article": {
+      "byline": "By <strong>{name}</strong>, {role}",
+      "updatedLabel": "updated",
+      "readingTime": "{minutes} min. read",
+      "faqKicker": "Asked afterwards",
+      "faqTitle": "Frequently asked questions",
+      "authorKicker": "About the author",
+      "authorLink": "More about Statix",
+      "ctaKicker": "Available now",
+      "ctaTitle": "Handball statistics without scraps of paper",
+      "ctaDescription": "Record goals, shots and saves live with a tap and let Statix work out shooting percentages, shot maps and player trends automatically – offline in the hall. Register free of charge and try it out with your own team."
+    },
+    "related": {
+      "default": {
+        "kicker": "Read on",
+        "title": "More guides",
+        "lede": "Articles that take you further as a coach."
+      },
+      "kennzahl": {
+        "kicker": "Keep counting",
+        "title": "More metrics",
+        "lede": "Numbers that should stand beside this one when you judge your team."
+      },
+      "system": {
+        "kicker": "Stay at the board",
+        "title": "Matching systems and drills",
+        "lede": "What you round this system out with — and what it has to be measured against."
+      },
+      "rezept": {
+        "kicker": "Next session",
+        "title": "More training recipes",
+        "lede": "Sessions and drill series that build on this focus."
+      },
+      "referenz": {
+        "kicker": "Look it up",
+        "title": "Related basics",
+        "lede": "What a coach should have at hand in the same context."
+      },
+      "entscheidung": {
+        "kicker": "Decide afterwards",
+        "title": "Groundwork for the decision",
+        "lede": "The articles behind the options that were on the table here."
+      }
+    }
+  },
+  "statusPages": {
+    "notFound": {
+      "title": "This page does not exist",
+      "lede": "We could not find the page you asked for. Jump back to the home page and see how Statix makes your team better.",
+      "homeCta": "To the home page",
+      "newsletterCta": "Newsletter",
+      "newsletterTitle": "Sign up for the newsletter",
+      "popularTitle": "Popular destinations:",
+      "featuresLabel": "Features",
+      "featuresTitle": "Look at the features",
+      "faqLabel": "FAQ",
+      "faqTitle": "Frequently asked questions",
+      "imprintLabel": "Legal notice",
+      "imprintTitle": "To the legal notice",
+      "backCta": "Back to the previous page"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "lede": "We are sorry, but an error occurred. Please try again.",
+      "retryCta": "Try again",
+      "homeCta": "To the home page",
+      "digest": "Error ID: {id}"
+    },
+    "errorState": {
+      "title": "Something went wrong",
+      "message": "We could not load the data. Please try again later.",
+      "retryCta": "Try again",
+      "help": "If the problem persists, please write to us."
     }
   }
 }

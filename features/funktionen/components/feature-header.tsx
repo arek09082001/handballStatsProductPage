@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ChevronRight, Play } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import {
@@ -9,11 +12,8 @@ import {
   Grain,
   MarkerArrow,
 } from '@/features/landing-page/components/tactic';
-import {
-  FEATURE_GROUPS,
-  FEATURES_PAGE_PATH,
-  type Feature,
-} from '../data/features';
+import { FEATURES_PAGE_PATH, type Feature } from '../data/features';
+import { useFeatureGroups } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
 
 /**
@@ -29,7 +29,9 @@ import FeatureStatusBadge from './feature-status-badge';
  * @returns A JSX element rendering the feature hero on the court ground.
  */
 export default function FeatureHeader({ feature }: { feature: Feature }) {
-  const group = FEATURE_GROUPS.find((entry) => entry.id === feature.group);
+  const t = useTranslations('featuresPage.detail');
+  const tCommon = useTranslations('common');
+  const group = useFeatureGroups().find((entry) => entry.id === feature.group);
   const shot = feature.mock ? null : feature.shots[0];
 
   return (
@@ -53,14 +55,16 @@ export default function FeatureHeader({ feature }: { feature: Feature }) {
       />
       <Grain tone='court' />
 
-      <div
-        className={cnHero(Boolean(shot))}>
-        <div className={shot ? 'w-full shrink-0 lg:w-[46%]' : 'mx-auto w-full max-w-3xl'}>
-          <nav aria-label='Brotkrumen' className='mb-6'>
+      <div className={cnHero(Boolean(shot))}>
+        <div
+          className={
+            shot ? 'w-full shrink-0 lg:w-[46%]' : 'mx-auto w-full max-w-3xl'
+          }>
+          <nav aria-label={t('breadcrumbLabel')} className='mb-6'>
             <ol className='flex flex-wrap items-center gap-1 text-[13px] text-chalk/55'>
               <li>
                 <Link href='/' className='transition-colors hover:text-chalk'>
-                  Startseite
+                  {t('breadcrumbHome')}
                 </Link>
               </li>
               <ChevronRight aria-hidden className='size-3.5 text-chalk/35' />
@@ -68,17 +72,19 @@ export default function FeatureHeader({ feature }: { feature: Feature }) {
                 <Link
                   href={FEATURES_PAGE_PATH}
                   className='transition-colors hover:text-chalk'>
-                  Funktionen
+                  {t('breadcrumbFeatures')}
                 </Link>
               </li>
               <ChevronRight aria-hidden className='size-3.5 text-chalk/35' />
               <li aria-current='page' className='text-chalk/80'>
-                {feature.short ?? feature.name}
+                {feature.short || feature.name}
               </li>
             </ol>
           </nav>
 
-          <BoardKicker color='chalk'>{group?.name ?? 'Funktion'}</BoardKicker>
+          <BoardKicker color='chalk'>
+            {group?.name ?? t('groupFallback')}
+          </BoardKicker>
 
           <h1 className='mt-4 font-display text-[2.4rem] font-extrabold leading-[1.03] tracking-[-0.035em] text-chalk sm:text-[3.1rem]'>
             {feature.name}
@@ -99,10 +105,10 @@ export default function FeatureHeader({ feature }: { feature: Feature }) {
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
               rel='noopener noreferrer'>
-              Live-Demo ohne Account
+              {tCommon('ctaDemoNoAccount')}
             </HeroActionButton>
             <HeroActionButton variant='secondary' href={FEATURES_PAGE_PATH}>
-              Alle Funktionen
+              {t('allFeaturesCta')}
             </HeroActionButton>
           </div>
         </div>

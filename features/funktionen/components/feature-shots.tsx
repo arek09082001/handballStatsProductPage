@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   BoardScreenshot,
   CourtDiagram,
@@ -24,6 +27,7 @@ import type { Feature, FeatureShot } from '../data/features';
  * @returns A JSX element rendering the feature's screenshots on the court ground.
  */
 export default function FeatureShots({ feature }: { feature: Feature }) {
+  const t = useTranslations('featuresPage.detail');
   // The hero pins shot 0 unless the feature carries a drawn mock instead.
   const shots = feature.mock ? feature.shots : feature.shots.slice(1);
   if (shots.length === 0) return null;
@@ -44,9 +48,9 @@ export default function FeatureShots({ feature }: { feature: Feature }) {
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Aus der App'
-          title='So sieht das aus'
-          description='Echte Aufnahmen aus Statix — keine Montage. Wenn sich die App ändert, werden sie neu aufgenommen.'
+          kicker={t('shotsKicker')}
+          title={t('shotsTitle')}
+          description={t('shotsDescription')}
           tone='court'
         />
 

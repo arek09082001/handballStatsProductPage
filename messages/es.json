@@ -323,7 +323,8 @@
     "registerCta": "Regístrate ahora",
     "languageSwitcher": {
       "label": "Cambiar de idioma"
-    }
+    },
+    "brandTagline": "App de estadísticas para balonmano"
   },
   "legalPage": {
     "header": {
@@ -1243,7 +1244,10 @@
       "secondaryCta": "Demo en directo, sin cuenta",
       "trust1": "Listo en minutos",
       "trust2": "Empezar es gratis, sin tarjeta",
-      "trust3": "Funciona sin conexión en el pabellón"
+      "trust3": "Funciona sin conexión en el pabellón",
+      "mockupAlt": "Estadísticas de balonmano en directo en la app Statix: registrar goles, lanzamientos y paradas en tiempo real",
+      "mockupLabel": "Statix · Registro en directo",
+      "demoAlt": "Demo en directo de Statix: estadísticas de partido y análisis en el navegador"
     },
     "stats": {
       "srTitle": "Las estadísticas de balonmano de un vistazo",
@@ -1337,13 +1341,15 @@
       ],
       "founderKicker": "Quién está detrás",
       "founderNote": "Statix nace de la práctica real: lo construye Arkadiusz Weiss, jugador de balonmano, en Alemania. Lo que falta en el banquillo se convierte en una función; lo que se comenta en el pabellón entra directo en el producto.",
-      "founderLinkLabel": "Cómo se hace Statix"
+      "founderLinkLabel": "Cómo se hace Statix",
+      "founderLinkTitle": "Así nace Statix: una mirada al desarrollo"
     },
     "testimonials": {
       "kicker": "Dicen los entrenadores",
       "title": "Voces del pabellón",
       "description": "Entrenadores que usan Statix en partidos de verdad, con su nombre y su club.",
-      "linkLabel": "Ver todas las experiencias"
+      "linkLabel": "Ver todas las experiencias",
+      "ratingAria": "Valoración: {value} de {max}"
     },
     "faq": {
       "kicker": "Bueno saberlo",
@@ -1491,7 +1497,8 @@
         ],
         "qrLabel": "Escanea y sigue en directo",
         "footnote": "Así se ve tu marcador en directo — datos de ejemplo"
-      }
+      },
+      "linkTitle": "Todas las funciones de Statix en detalle"
     }
   },
   "newsletterConfirm": {
@@ -2114,7 +2121,20 @@
     "ctaDemo": "Ver la demo en directo",
     "ctaDemoNoAccount": "Demo en directo sin cuenta",
     "included": "incluido",
-    "notIncluded": "no incluido"
+    "notIncluded": "no incluido",
+    "privacyLinkTitle": "A la política de privacidad",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "apiErrors": {
+      "spam": "El envío se ha considerado spam.",
+      "rateLimited": "Demasiadas solicitudes. Inténtalo de nuevo dentro de {minutes, plural, one {un minuto} other {# minutos}}.",
+      "unavailable": "El formulario no está disponible ahora mismo. Inténtalo más tarde.",
+      "invalidInput": "Revisa los datos que has introducido.",
+      "sendFailed": "El envío no ha funcionado. Inténtalo de nuevo.",
+      "unknown": "Algo ha salido mal. Inténtalo de nuevo.",
+      "invalidEmail": "Introduce una dirección de correo válida.",
+      "invalidLink": "Este enlace no es válido o ha caducado."
+    }
   },
   "brandPage": {
     "hero": {
@@ -4030,6 +4050,1474 @@
         "arrowColorGroup": "Color de la flecha",
         "magnetGroup": "Poner un imán en la pista"
       }
+    }
+  },
+  "featureCatalog": {
+    "groups": [
+      {
+        "id": "erfassen",
+        "name": "Registrar",
+        "intro": "Lo que pasa en el pabellón mientras corre el partido: con un pulgar, sin cobertura y a la vista de todos los que no están allí."
+      },
+      {
+        "id": "auswerten",
+        "name": "Analizar",
+        "intro": "En qué se convierten las acciones registradas: porcentajes, mapas de tiro, evoluciones, informes de IA y las jugadas en el vídeo."
+      },
+      {
+        "id": "organisieren",
+        "name": "Organizar",
+        "intro": "Todo lo que rodea a ese único partido: plantilla, calendario, torneos y la capa por encima de todos los equipos de un club."
+      },
+      {
+        "id": "teilen",
+        "name": "Compartir",
+        "intro": "Lo que sale del equipo: a otros entrenadores, a las jugadoras y jugadores, a las familias."
+      }
+    ],
+    "statusLabel": {
+      "live": "Disponible",
+      "beta": "En desarrollo",
+      "onRequest": "Bajo consulta"
+    },
+    "statusHint": {
+      "live": "Terminado y activado para todas las cuentas.",
+      "beta": "Se está construyendo ahora. Ya utilizable para equipos seleccionados y todavía no visible para el resto.",
+      "onRequest": "Terminado, pero se configura para vosotros en lugar de crearlo vosotros mismos."
+    },
+    "stateNote": {
+      "beta": "En construcción: se está desarrollando y todavía no está habilitada para todas las cuentas.",
+      "onRequest": "Se configura para el club en vez de crearse por cuenta propia."
+    },
+    "items": [
+      {
+        "slug": "live-erfassung",
+        "name": "Registro en directo",
+        "short": "Registrar en directo",
+        "headline": "La hoja de papel que calcula sola",
+        "summary": "Registra goles, tiros, paradas, exclusiones y cambios en tiempo real, con un solo toque y desde el banquillo.",
+        "tagline": "Un toque por acción. Al final del partido lo que está terminado es la estadística, no la transcripción.",
+        "intro": [
+          "El registro en directo es el núcleo de Statix. En la pantalla tu plantilla está sobre la pista, como en una pizarra táctica. Tocas a la jugadora que acaba de lanzar y eliges la acción: gol, parada, fuera, blocado, palo, siete metros, error técnico, exclusión. Ese es todo el procedimiento.",
+          "Todo lo demás lo calcula la app: efectividad de tiro, eficacia ofensiva, porcentaje de paradas, participación, diferencia de goles, evolución del partido. Lo ves en el mismo segundo en que lo necesitas, y no el domingo por la noche, cuando la hoja ya ha desaparecido en la bolsa de deporte.",
+          "Como un partido va más rápido que cualquier formulario, hay un modo rápido para todo lo que hay que tocar sin mirar y un modo guiado para segundos entrenadores que registran por primera vez. La posición de tiro y la zona de portería son dos toques adicionales sobre un gráfico de la pista: no son obligatorios, pero son la condición para el mapa de tiro."
+        ],
+        "facts": [
+          {
+            "term": "Esfuerzo por acción",
+            "value": "Un toque; dos con la posición de tiro"
+          },
+          {
+            "term": "Funciona en",
+            "value": "Móvil, tableta, iPad, portátil"
+          },
+          {
+            "term": "Sin cobertura",
+            "value": "Sí, un pabellón rara vez tiene wifi"
+          },
+          {
+            "term": "Corregible después",
+            "value": "Cualquier acción, también tras el pitido final"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Poner la plantilla en la pista",
+            "body": "La alineación sale de la plantilla guardada. Un cambio es intercambiar dos fichas; las exclusiones corren como cronómetro propio y avisan cuando pasan los dos minutos."
+          },
+          {
+            "title": "Tocar la acción mientras corre el balón",
+            "body": "Tocas a la jugadora y eliges la acción. La lista de goleadoras, los porcentajes y el desarrollo del partido se actualizan al instante, con el mismo toque que registra la acción."
+          },
+          {
+            "title": "Marcar la posición de tiro cuando haya tiempo",
+            "body": "Un toque sobre el gráfico de la pista fija desde dónde se lanzó y un segundo a qué esquina. Ambos son opcionales: sin la posición solo falta el mapa de tiro, ninguna cifra."
+          },
+          {
+            "title": "Ajustar después del partido",
+            "body": "¿Has tocado a la jugadora equivocada o se te ha pasado una parada? Cualquier acción registrada se puede modificar o borrar después, y todos los valores derivados se recalculan."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Registro en directo en Statix: la plantilla sobre la pista y el selector de acciones abierto para una jugadora tocada",
+            "label": "Toca a la jugadora: las acciones están justo debajo"
+          },
+          {
+            "alt": "La alineación actual sobre la pista, como en una pizarra táctica",
+            "label": "La alineación es la pista, no una lista"
+          },
+          {
+            "alt": "Registro en directo en el móvil durante el partido",
+            "label": "Así sostiene el móvil un entrenador en el banquillo"
+          }
+        ],
+        "limits": [
+          "Statix registra tu equipo. Las acciones del rival solo se anotan en la medida en que describen vuestro partido: goles encajados, exclusiones del rival, recuperaciones.",
+          "Un partido lo registra una persona. Dos dispositivos a la vez en el mismo partido no están previstos, porque dos registros acaban divergiendo.",
+          "No hay reconocimiento automático a partir del vídeo. Cada acción viene de una persona que la ha visto."
+        ],
+        "faq": [
+          {
+            "question": "¿Cuántos toques son un partido?",
+            "answer": "Más o menos tantos como acciones quieras registrar. Según la categoría, un partido de balonmano tiene entre 100 y 160 acciones que mueven una estadística. Quien solo quiera registrar goles y tiros tocará bastante menos: los porcentajes se calculan con lo que haya."
+          },
+          {
+            "question": "¿Puede registrar un segundo entrenador que no conoce la app?",
+            "answer": "Sí. El modo guiado pregunta paso a paso en lugar de ofrecerlo todo a la vez. Para la primera vez basta; tras dos partidos casi todo el mundo usa el modo rápido."
+          },
+          {
+            "question": "¿Qué pasa si me equivoco al tocar?",
+            "answer": "La última acción se puede deshacer al instante y cualquier otra se edita o se borra en el acta. Los porcentajes y el mapa de tiro se recalculan después: no hay un estado que quede «ya guardado» y por tanto equivocado."
+          },
+          {
+            "question": "¿Necesito una tableta?",
+            "answer": "No. Statix funciona en el móvil igual que en tableta, iPad o portátil. Una tableta es más cómoda porque se ve más plantilla de golpe, pero no es necesaria."
+          }
+        ]
+      },
+      {
+        "slug": "offline-und-app",
+        "name": "Sin conexión e instalación de la app",
+        "short": "Sin conexión y PWA",
+        "headline": "Hecho para pabellones sin cobertura",
+        "summary": "Registra partidos sin conexión en el pabellón con sincronización automática e instala Statix como app en la pantalla de inicio.",
+        "tagline": "El pabellón no tiene cobertura. No es un caso especial, sino la condición bajo la que se construyó Statix.",
+        "intro": [
+          "Statix registra un partido íntegramente en el dispositivo. Cada toque va primero al almacenamiento local del navegador y solo después —en algún momento, cuando vuelva la cobertura— al servidor. Para ti ambas cosas se ven igual: los números están ahí al instante, muestre o no la barra superior una señal.",
+          "El camino de vuelta es lo importante. Al sincronizar, las acciones recogidas se envían una tras otra a puntos que reconocen y descartan una acción enviada dos veces. Una cobertura que aparece y desaparece tres veces no genera, por tanto, tres goles.",
+          "Statix se instala como PWA: «Añadir a pantalla de inicio» en el iPhone, «Instalar aplicación» en el menú de Chrome. Después la app arranca a pantalla completa sin barra del navegador, tiene su propio icono y funciona en modo avión igual que con cobertura. No hace falta descargar nada de una tienda de aplicaciones."
+        ],
+        "facts": [
+          {
+            "term": "Registrable sin cobertura",
+            "value": "Un partido entero, con cambios y cronómetro"
+          },
+          {
+            "term": "Sincronización",
+            "value": "Automática en cuanto vuelve la cobertura"
+          },
+          {
+            "term": "Entradas duplicadas",
+            "value": "Descartadas: cada acción cuenta una vez"
+          },
+          {
+            "term": "Instalación",
+            "value": "Directamente desde el navegador, sin tienda de apps"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Cargarlo una vez antes del partido",
+            "body": "Abre la plantilla y el partido una vez con cobertura. Después, todo lo que necesita el registro está en el dispositivo."
+          },
+          {
+            "title": "En el pabellón, simplemente registrar",
+            "body": "Sin esperas, sin mensajes de error, sin botones en gris. Sin conexión, en Statix se ve igual que con conexión."
+          },
+          {
+            "title": "Fuera se sincroniza solo",
+            "body": "En cuanto el móvil vuelve a tener cobertura, las acciones recogidas se transfieren, aunque ya hayas cerrado la app."
+          },
+          {
+            "title": "Como app en la pantalla de inicio",
+            "body": "Se instala una vez y después Statix arranca a pantalla completa con su propio icono. En el iPhone se hace desde el menú de compartir; en Android, con «Instalar aplicación»."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Statix como app instalada en el móvil durante el registro en directo",
+            "label": "Instalada, a pantalla completa y sin barra del navegador"
+          },
+          {
+            "alt": "Lista de partidos en la app Statix instalada en el móvil",
+            "label": "La lista de partidos, legible también sin cobertura"
+          }
+        ],
+        "limits": [
+          "Un partido no se puede crear sin conexión: tiene que existir una vez con cobertura antes de que lo toques en el pabellón.",
+          "Los análisis con IA, el marcador en directo y los informes compartidos necesitan conexión. Son respuestas del servidor, no cálculos en el dispositivo.",
+          "Quien registre el mismo partido sin conexión en dos dispositivos obtendrá dos registros. Eso no es un fallo que la sincronización pueda curar."
+        ],
+        "faq": [
+          {
+            "question": "¿Qué pasa si el móvil se bloquea en mitad del partido?",
+            "answer": "Las acciones registradas están en el almacenamiento del navegador, no en la memoria de la página. Tras reiniciar abres de nuevo el partido y sigues: el estado está ahí."
+          },
+          {
+            "question": "¿Está Statix en la App Store o en Google Play?",
+            "answer": "Statix se instala como PWA directamente desde el navegador. Es un proceso de dos toques, y después la app se actualiza sola sin que nadie descargue nada."
+          },
+          {
+            "question": "¿Consume mucho espacio en el móvil?",
+            "answer": "No. Se guardan eventos, no vídeos: un partido entero son unas pocas decenas de kilobytes."
+          }
+        ]
+      },
+      {
+        "slug": "live-ticker",
+        "name": "Marcador en directo",
+        "short": "En directo",
+        "headline": "El marcador para todos los que están fuera",
+        "summary": "Publica los partidos como marcador en directo con enlace y código QR: padres y aficionados siguen el marcador y el desarrollo del partido en el navegador.",
+        "tagline": "Quien no está en el pabellón lo sigue igualmente, sin cuenta, sin app y sin que tú escribas nada más.",
+        "intro": [
+          "El marcador en directo es el mismo registro visto desde fuera. Publicas un partido y recibes un enlace y un código QR. Quien abre el enlace ve el marcador, el tiempo y el desarrollo del partido en tiempo real: cada acción aparece allí en el mismo segundo en que la registras.",
+          "Está pensado para quienes si no preguntarían por WhatsApp: los padres que trabajan, el resto del club, el segundo equipo que juega en paralelo. El código QR funciona igual de bien impreso en una hoja pegada en la entrada del pabellón que proyectado en la noche del club.",
+          "El marcador no muestra todo, y es intencionado. Muestra lo que pone un marcador: tanteo, tiempo, goleadores, exclusiones. La estadística completa, con porcentajes y mapa de lanzamientos, se queda contigo hasta que la compartas expresamente."
+        ],
+        "facts": [
+          {
+            "term": "Acceso del público",
+            "value": "Enlace o código QR, sin cuenta"
+          },
+          {
+            "term": "Retardo",
+            "value": "Prácticamente ninguno: es el mismo toque"
+          },
+          {
+            "term": "Trabajo adicional",
+            "value": "Ninguno. Se publica una vez y listo"
+          },
+          {
+            "term": "Se puede apagar",
+            "value": "Cuando quieras, también a mitad de partido"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Publicar el partido",
+            "body": "Toca Publicar dentro del partido. Statix genera un enlace y un código QR."
+          },
+          {
+            "title": "Repartir el enlace",
+            "body": "Mándalo al grupo del equipo o de los padres, cuelga el código QR en la puerta del pabellón o ponlo en el proyector."
+          },
+          {
+            "title": "Registrar como siempre",
+            "body": "El marcador cuelga del mismo registro. No tocas nada por segunda vez ni tienes que repasarlo después."
+          },
+          {
+            "title": "Pararlo tras el partido",
+            "body": "Un toque termina la publicación. Después el enlace está muerto: no discreto, sino realmente cerrado."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Vista general de partidos en Statix con partidos en curso y finalizados",
+            "label": "El partido se publica desde la propia lista de partidos"
+          }
+        ],
+        "limits": [
+          "El marcador muestra el desarrollo del partido, no el análisis. Los porcentajes, los mapas de lanzamientos y los informes de IA son tuyos y se comparten con un permiso propio.",
+          "No hay comentarios ni una crónica escrita con frases propias. Lo que aparece sale de las acciones registradas.",
+          "Sin cobertura en el pabellón el registro sigue funcionando, pero el marcador se queda parado hasta que vuelve la conexión."
+        ],
+        "faq": [
+          {
+            "question": "¿El público ve los nombres de nuestras jugadoras?",
+            "answer": "El marcador muestra el desarrollo del partido tal y como se anuncia en el pabellón, con las goleadoras. Si no quieres eso, no publiques el partido: un marcador a medias no existe, y es a propósito."
+          },
+          {
+            "question": "¿Cuánta gente puede mirar a la vez?",
+            "answer": "El marcador es una página web normal. Que lo miren dos padres o medio pabellón no cambia nada para ti."
+          },
+          {
+            "question": "¿El marcador sigue en línea después del partido?",
+            "answer": "Solo mientras lo dejes publicado. En cuanto terminas la publicación el enlace deja de valer al instante, también el que alguien ya haya reenviado."
+          }
+        ]
+      },
+      {
+        "slug": "spielerstatistiken",
+        "name": "Estadísticas de jugadores",
+        "short": "Datos por jugador",
+        "headline": "Una temporada que se puede leer",
+        "summary": "Porcentajes de lanzamiento, eficiencia, minutos de juego y curvas de evolución de cada jugador de un vistazo.",
+        "tagline": "Cada acción registrada queda asociada a una persona. De ahí sale una temporada que se puede leer.",
+        "intro": [
+          "Del registro en directo sale una cuenta completa para cada jugadora: goles, lanzamientos, porcentaje de acierto, siete metros contados aparte, asistencias, pérdidas, robos, bloqueos, exclusiones. En las porteras, paradas, goles encajados y porcentaje de paradas.",
+          "Lo interesante llega con el tiempo. Statix superpone los partidos de una temporada y muestra la evolución: qué porcentaje sube, cuál se cae, quién es otro jugador después del parón de invierno. Ese es el dato que sostiene una decisión de entrenamiento, no el porcentaje de un único partido.",
+          "Cada cifra se puede desplegar hasta la acción concreta. Quien quiera saber por qué un porcentaje está en el 38 % llega en dos toques a la lista de lanzamientos con la que está calculado."
+        ],
+        "facts": [
+          {
+            "term": "Por jugadora",
+            "value": "Lanzamiento, gol, porcentaje, asistencia, pérdida, exclusiones"
+          },
+          {
+            "term": "Porteras",
+            "value": "Datos propios: paradas, goles encajados, porcentaje"
+          },
+          {
+            "term": "Periodo",
+            "value": "Partido, temporada y evolución"
+          },
+          {
+            "term": "Trazable",
+            "value": "Cada porcentaje hasta la acción concreta"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Registrar",
+            "body": "Cada toque lleva a la jugadora que provocó la acción. No hace falta asignar nada más."
+          },
+          {
+            "title": "Leer tras el partido",
+            "body": "La tabla de jugadoras está justo al lado del resultado final: quién tiró cuántas veces, en qué acabó y cuánto tiempo estuvo en pista."
+          },
+          {
+            "title": "Comparar a lo largo de la temporada",
+            "body": "El perfil de jugadora superpone todos los partidos y dibuja la evolución. Los picos hacia arriba y hacia abajo aparecen juntos en vez de sueltos."
+          },
+          {
+            "title": "Usarlo en la conversación",
+            "body": "Un perfil se puede abrir y enseñar. Hablar de una cifra que ven los dos es otra conversación que hablar de una impresión."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Tabla de jugadoras de un partido terminado con lanzamientos, goles y porcentajes",
+            "label": "La tabla de jugadoras de un partido terminado"
+          },
+          {
+            "alt": "Perfil de jugadora con la evolución a lo largo de la temporada",
+            "label": "Un perfil de jugadora leído a lo largo de la temporada"
+          },
+          {
+            "alt": "Estadísticas de jugadoras en el móvil",
+            "label": "Los mismos datos el domingo por la noche en el sofá"
+          }
+        ],
+        "limits": [
+          "Statix calcula con lo que se ha registrado. Quien solo toca los goles no obtiene porcentaje de acierto: no es una carencia, es aritmética.",
+          "Statix no mide desplazamientos, distancias ni carga. Para eso hacen falta sensores, no un pulgar en la banda.",
+          "No hay comparación con otros clubes. La referencia es vuestra propia temporada."
+        ],
+        "faq": [
+          {
+            "question": "¿A partir de cuándo dicen algo las cifras?",
+            "answer": "Para un porcentaje de lanzamiento bastan unos partidos; para una evolución hace falta media temporada. Por eso Statix muestra siempre el número de acciones con el que está calculado un porcentaje: un 100 % de dos lanzamientos se ve entonces por lo que es."
+          },
+          {
+            "question": "¿Las jugadoras ven sus propios datos?",
+            "answer": "Solo si se los enseñas o los compartes. Por defecto los análisis están en el área del cuerpo técnico, y el perfil de una jugadora solo lo ve quien forma parte de él."
+          },
+          {
+            "question": "¿Y las jugadoras que cambian de equipo?",
+            "answer": "Dentro de un club la trayectoria sigue visible entre equipos: véase Área de club. Sin club, una ficha de plantilla pertenece exactamente a un equipo."
+          }
+        ]
+      },
+      {
+        "slug": "wurfbilder",
+        "name": "Mapas de lanzamiento y análisis de tiro",
+        "short": "Mapas de tiro",
+        "headline": "No cuántos, sino desde dónde",
+        "summary": "Visualiza lanzamientos y goles sobre la pista y reconoce los patrones que deciden los partidos.",
+        "tagline": "Una tabla dice cuántos. Un mapa de lanzamientos dice desde dónde, y de esa pregunta sale un entrenamiento.",
+        "intro": [
+          "Si al registrar tocas también la posición del lanzamiento, Statix dibuja con ello el mapa de tiro: cada lanzamiento como un punto en la pista, gol y fallo distinguibles, condensados en un mapa de calor. Al lado, el segundo mapa, la zona de portería: a qué escuadra se lanzó y qué entró allí.",
+          "La utilidad no está en el punto suelto, sino en el patrón. Que marquéis desde el lateral izquierdo a nueve metros y desde la derecha no, no aparece en ningún porcentaje; en el mapa se ve en dos segundos. Lo mismo vale para la defensa: dónde llega el rival al lanzamiento dice algo sobre vuestros basculamientos.",
+          "Hay mapas de tiro de un partido concreto, de una jugadora a lo largo de la temporada y del equipo entero. La comparación interesante suele ser la del último contra el primero."
+        ],
+        "facts": [
+          {
+            "term": "Posiciones de lanzamiento",
+            "value": "Ocho zonas más siete metros y lanzamiento exterior"
+          },
+          {
+            "term": "Zonas de portería",
+            "value": "Nueve cuadros en la portería"
+          },
+          {
+            "term": "Representación",
+            "value": "Lanzamientos sueltos y mapa de calor"
+          },
+          {
+            "term": "Alcance",
+            "value": "Partido, jugadora o temporada completa"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Registrar también la posición",
+            "body": "Un toque más sobre el gráfico de la pista en cada lanzamiento. Si alguna vez no llegas, solo pierdes ese punto del mapa."
+          },
+          {
+            "title": "Leer la imagen",
+            "body": "Verde dentro, rojo fuera; una mancha densa significa que ahí ocurre vuestro juego. El mapa de calor lo suaviza hasta convertirlo en superficie."
+          },
+          {
+            "title": "Cruzarlo con la zona de portería",
+            "body": "Dónde acaban los balones dentro de la portería es la pregunta para la portera rival, y para la vuestra cuando miras los goles encajados."
+          },
+          {
+            "title": "Traducirlo al entrenamiento",
+            "body": "Una zona vacía es o una debilidad o una decisión. El mapa no dice cuál de las dos, pero plantea la pregunta."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Mapa de tiro de un partido de balonmano: lanzamientos y goles repartidos por la pista, con el mapa de calor",
+            "label": "El mapa de tiro de un partido, con goles y fallos separados"
+          },
+          {
+            "alt": "Mapa de tiro en el móvil",
+            "label": "Legible también en el móvil en el vestuario"
+          }
+        ],
+        "limits": [
+          "Sin posición de lanzamiento registrada no hay mapa de tiro. Las cifras siguen siendo correctas, solo el mapa se queda vacío.",
+          "La posición es una zona, no una coordenada al centímetro. Para la pregunta «desde dónde lanzamos» basta; para balística, no.",
+          "Statix no calcula goles esperados. El mapa muestra lo que pasó, no lo que debería haber pasado."
+        ],
+        "faq": [
+          {
+            "question": "¿Cuánto se tarda en registrar con la posición de lanzamiento?",
+            "answer": "Un toque más por lanzamiento. En la práctica, muchos entrenadores registran la posición en los ataques propios y la omiten en el rival: también así sale un mapa útil."
+          },
+          {
+            "question": "¿Puedo enseñarle el mapa de tiro al equipo?",
+            "answer": "Sí. Está en el informe del partido, se exporta como PDF y se comparte con un enlace revocable."
+          },
+          {
+            "question": "¿Hay mapas de tiro para porteras?",
+            "answer": "Sí, como reparto de goles encajados y paradas por zonas de portería. Es el mapa que muestra dónde una portera es fuerte y dónde no."
+          }
+        ]
+      },
+      {
+        "slug": "ki-analyse",
+        "name": "Análisis con IA",
+        "short": "Análisis IA",
+        "headline": "Una segunda mirada a vuestras cifras",
+        "summary": "Análisis con IA de partidos sueltos, del equipo entero, de jugadores concretos y de torneos completos, con los nombres seudonimizados.",
+        "tagline": "Las cifras están ahí de todos modos. La IA escribe lo que dicen y dónde se contradicen.",
+        "intro": [
+          "Statix pasa los datos registrados por un análisis en cuatro cortes: un partido concreto, el equipo entero a lo largo de la temporada, una jugadora como perfil de scouting y un torneo completo. Lo que sale no es un texto corrido, sino un informe hecho de bloques: puntos de inflexión, reparto de errores, eficiencia por zonas de lanzamiento, rendimiento de las jugadoras y puntos concretos por donde empezar.",
+          "Antes del análisis se sustituyen los nombres. Lo que ve el modelo son roles y cifras («lateral izquierdo, 14 lanzamientos, 5 goles»), no personas. Los nombres vuelven a aparecer al mostrar el informe, en tu dispositivo.",
+          "El informe se genera en segundo plano y se guarda hasta que lo borras. El historial es intencionado: la comparación interesante es el informe de hoy junto al de hace tres meses."
+        ],
+        "facts": [
+          {
+            "term": "Cuatro cortes",
+            "value": "Partido, equipo, jugadora, torneo"
+          },
+          {
+            "term": "Nombres",
+            "value": "Seudonimizados antes del análisis"
+          },
+          {
+            "term": "Duración",
+            "value": "Uno o dos minutos, en segundo plano"
+          },
+          {
+            "term": "Conservación",
+            "value": "Se queda en el historial, se borra cuando quieras"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Terminar el partido",
+            "body": "Los informes de partido existen para partidos terminados. Para uno en curso hay en su lugar una valoración en directo."
+          },
+          {
+            "title": "Lanzar el análisis",
+            "body": "Un toque. Statix prepara los datos, los seudonimiza y los envía; mientras tanto puedes seguir usando la página."
+          },
+          {
+            "title": "Leer el informe",
+            "body": "Indicadores, puntos de inflexión, patrones y recomendaciones en bloques propios, cada uno con las cifras en las que se apoya."
+          },
+          {
+            "title": "Comparar en el historial",
+            "body": "Los informes antiguos se quedan. Si algo ha cambiado lo responde la comparación, no el informe más reciente por sí solo."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Informe de partido con IA en Statix, con el desarrollo del partido y la eficiencia por zonas de lanzamiento",
+            "label": "Un informe de partido con IA: desarrollo y eficiencia por zonas"
+          },
+          {
+            "alt": "Informe de partido con IA con puntos de inflexión, reparto de errores y rendimiento de las jugadoras",
+            "label": "Puntos de inflexión, reparto de errores, rendimiento"
+          },
+          {
+            "alt": "Inteligencia de jugadora con IA dentro del perfil",
+            "label": "El mismo análisis, ajustado a una jugadora"
+          }
+        ],
+        "limits": [
+          "La IA solo lee lo que se ha registrado. Un partido sin posiciones de lanzamiento no obtiene análisis por zonas.",
+          "Un informe es una lectura, no un veredicto. No conoce ni la lesión del minuto 20 ni al árbitro.",
+          "No hay análisis de vídeo por IA. El modelo ve cifras, no imágenes."
+        ],
+        "faq": [
+          {
+            "question": "¿Qué datos salen de Statix para esto?",
+            "answer": "Datos de partido agregados con los nombres sustituidos: posiciones, acciones, tiempos, cifras. No van nombres reales, ni direcciones de correo, ni datos de cuenta. La asignación vuelve a producirse solo al mostrar el informe."
+          },
+          {
+            "question": "¿Puedo borrar un informe?",
+            "answer": "Sí, cualquiera de ellos. Borrado significa borrado: el informe desaparece del historial y no se guarda en ningún otro sitio."
+          },
+          {
+            "question": "¿Por qué un análisis tarda uno o dos minutos?",
+            "answer": "Porque un informe nace de varias pasadas y al final se comprueba contra un esquema fijo. Si un bloque no pasa la comprobación se vuelve a pedir, en lugar de mostrarse a medio rellenar."
+          }
+        ]
+      },
+      {
+        "slug": "gegner-bilanz",
+        "name": "Balance de rivales y scouting",
+        "short": "Rivales",
+        "headline": "Lo que sabéis de cada rival",
+        "summary": "Balance automático cara a cara contra cada rival: victorias, empates, derrotas y goles.",
+        "tagline": "Cada club contra el que habéis jugado alguna vez, con su balance, su forma y las notas que te has tomado.",
+        "intro": [
+          "En cuanto registras un partido contra un club, Statix lo crea y lleva el balance: victorias, empates, derrotas, goles a favor y en contra, y además la forma de los últimos enfrentamientos. Para eso no mantienes nada: la lista nace de los partidos que ya están ahí.",
+          "Al lado hay sitio para lo que no es una cifra: notas de scouting por club. Qué defensa juegan, quién juega con el pivote, dónde flojea su portera. Las notas también se pueden escribir antes de jugar por primera vez.",
+          "El día de partido esta es la página que abres dos horas antes: balance, últimos resultados y notas propias en un solo sitio en vez de en tres conversaciones de chat."
+        ],
+        "facts": [
+          {
+            "term": "Creación",
+            "value": "Automática, a partir de los partidos registrados"
+          },
+          {
+            "term": "Balance",
+            "value": "V · E · D, goles, diferencia, forma"
+          },
+          {
+            "term": "Notas",
+            "value": "Libres, por club, también antes del primer partido"
+          },
+          {
+            "term": "Orden",
+            "value": "Último jugado, nombre o mejor balance"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Jugar",
+            "body": "Un partido registrado crea el club. A partir del segundo ya hay balance."
+          },
+          {
+            "title": "Recoger notas",
+            "body": "Escribe tres frases después del partido, mientras está fresco. Para la vuelta eso vale más que cualquier estadística."
+          },
+          {
+            "title": "Consultar antes del partido",
+            "body": "Balance, últimos enfrentamientos y notas están juntos, también en el móvil en el vestuario."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Vista general de rivales en Statix con balance y forma por club",
+            "label": "Cada club con balance, forma y aviso de notas"
+          }
+        ],
+        "limits": [
+          "El balance solo conoce vuestros propios partidos. Cómo juega el rival contra otros, Statix no lo sabe.",
+          "No hay importación de datos de liga ni de clasificaciones de portales federativos.",
+          "Las notas de scouting son texto. Los clips de vídeo del rival van a la videoteca, no aquí."
+        ],
+        "faq": [
+          {
+            "question": "¿Puedo crear un club contra el que nunca hemos jugado?",
+            "answer": "Sí. Precisamente para eso existe la creación manual: para que las notas de scouting ya estén cuando llegue el día del partido."
+          },
+          {
+            "question": "¿Ven otros entrenadores mis notas?",
+            "answer": "Solo tu propio cuerpo técnico. Las notas no forman parte de la publicación de un partido."
+          }
+        ]
+      },
+      {
+        "slug": "video-tagging",
+        "name": "Vídeo y etiquetado",
+        "short": "Etiquetado de vídeo",
+        "headline": "Una grabación se convierte en una pregunta",
+        "summary": "Sube grabaciones de partidos, etiqueta escenas, filtra por acción y jugadora y envía montajes a jugadoras concretas.",
+        "tagline": "La grabación ya está en el móvil. Etiquetada se convierte en una pregunta que se puede hacer: «todos los contraataques contra 5:1».",
+        "intro": [
+          "El etiquetado de vídeo es el banco de trabajo que acompaña a la estadística. Subes la grabación de un partido y colocas escenas encima: lanzamiento, pérdida, acción defensiva, parada, exclusión, situación de juego. Cada escena es un intervalo del vídeo más la indicación de qué pasó en él, y de quién.",
+          "Sobre ese código hay una segunda capa: los calificadores. Desde qué fase (ataque posicional, 1.ª/2.ª/3.ª oleada, penetración), contra qué defensa (6:0, 5:1, 3:2:1), en superioridad o inferioridad, con qué movimiento inicial, desde qué posición de lanzamiento. Por eso después se puede preguntar: todos los lanzamientos de extremo contra 5:1 en segunda oleada. El vocabulario está contrastado con la leyenda de un acta oficial de la IHF, no construido de memoria.",
+          "Una lista de reproducción no guarda una lista de clips, sino la pregunta. Si etiquetas después una escena olvidada, cae dentro sola: no hay que volver a montar nada. La misma mecánica sostiene los envíos: una jugadora recibe exactamente sus escenas y no ve el resto del partido."
+        ],
+        "facts": [
+          {
+            "term": "Estado",
+            "value": "Beta: en construcción, todavía no para todas las cuentas"
+          },
+          {
+            "term": "Escenas",
+            "value": "Intervalo + acción + jugadora + calificadores"
+          },
+          {
+            "term": "Pistas",
+            "value": "Agrupadas por acción o por jugadora"
+          },
+          {
+            "term": "Listas",
+            "value": "Filtros guardados, no carpetas de clips"
+          },
+          {
+            "term": "Envíos",
+            "value": "Una jugadora solo ve sus escenas"
+          },
+          {
+            "term": "Usable sin partido",
+            "value": "Sí, también con grabaciones de entrenamiento"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Subir la grabación",
+            "body": "MP4, MOV o WebM, mejor en 1080p que en 4K. La subida sigue en segundo plano y se puede reanudar si se corta. Un vídeo puede pertenecer a un partido, pero no tiene por qué."
+          },
+          {
+            "title": "Sincronizar vídeo y reloj de partido",
+            "body": "Dos cifras, una vez por vídeo: el saque inicial de cada parte. A partir de ahí cada acción registrada en directo es un punto de salto en el vídeo: la estadística y la grabación hablan del mismo minuto."
+          },
+          {
+            "title": "Etiquetar escenas",
+            "body": "Elegir lado, tocar a la jugadora, pulsar la acción, con atajos de teclado al ritmo del vídeo. El contexto —fase, defensa, posición de lanzamiento— se añade en un segundo paso y se mantiene hasta que cambia la situación."
+          },
+          {
+            "title": "Filtrar, guardar la lista, enviar",
+            "body": "El filtro recorre a la vez las etiquetas y los eventos registrados. Lo que encaja se reproduce como montaje, se guarda como lista y se envía a una jugadora, que ve exactamente esas escenas y no el partido que hay detrás."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Las pistas del banco de etiquetado de Statix: cada acción una fila, cada escena un bloque en la línea de tiempo",
+            "label": "Las pistas: una parte, ordenada por acción"
+          },
+          {
+            "alt": "El catálogo de etiquetado de Statix con selección de lado, plantilla y botones de acción",
+            "label": "Lado, plantilla, acción: un toque cada uno, todos con atajo"
+          }
+        ],
+        "limits": [
+          "La función está en construcción. Mientras se construye está limitada a cuentas seleccionadas, no como escalón de venta, sino porque un camino de subida sin terminar delante de cada equipo produce dinero real y ficheros huérfanos.",
+          "Una etiqueta no mueve ninguna cifra. La estadística sale del registro en directo; las escenas etiquetadas son una lectura del vídeo y no cambian la lista de goleadoras.",
+          "Los eventos registrados solo se convierten en puntos de salto si el vídeo se ha sincronizado con el reloj de partido.",
+          "No existe reconocimiento automático de acciones en la imagen y no está previsto."
+        ],
+        "faq": [
+          {
+            "question": "¿Puedo usar ya el etiquetado de vídeo?",
+            "answer": "Solo si tu cuenta está habilitada. La función se está construyendo y funciona con unos pocos equipos que dan su opinión. Escríbenos si queréis participar: la lista de espera es un correo."
+          },
+          {
+            "question": "¿Qué diferencia hay entre una etiqueta y una acción registrada?",
+            "answer": "Una acción registrada es el acta del partido y alimenta toda la estadística. Una etiqueta es un intervalo del vídeo con una lectura. Por eso puedes etiquetar una escena sin que cambie ningún porcentaje, y por eso el banco de trabajo muestra ambas cosas juntas."
+          },
+          {
+            "question": "¿Ve la jugadora el partido entero si le envío escenas?",
+            "answer": "No. Un envío entrega solo los trozos de vídeo que cubren sus escenas. Para lo demás no hay dirección: no es que falte un botón, es que no hay ningún sitio al que llegar."
+          },
+          {
+            "question": "¿Cuánto espacio ocupa un partido?",
+            "answer": "En 1080p, entre dos y tres gigabytes por partido. En 4K, varias veces más sin que en el banco de trabajo se vea nada mejor; de ahí la recomendación de grabar en 1080p."
+          }
+        ]
+      },
+      {
+        "slug": "termine-und-teilnahme",
+        "name": "Convocatorias y asistencia",
+        "short": "Calendario",
+        "headline": "El calendario que descarga al grupo",
+        "summary": "Entrenamientos, partidos y citas periódicas en el calendario del equipo: los jugadores confirman o cancelan ellos mismos, registran vacaciones, enfermedad o lesión como periodo, y el cuerpo técnico ve la lista completa de asistencia.",
+        "tagline": "El calendario de equipo que saca del grupo de WhatsApp la pregunta «¿quién viene el martes?».",
+        "intro": [
+          "El calendario es la agenda de tu equipo: entrenamientos como serie, partidos con hora de quedada y saque inicial, cenas de equipo, sesiones de físico. Cada cita tiene un pabellón de la libreta de direcciones: se introduce una vez y luego lleva navegación en Google Maps o Apple Mapas.",
+          "Las confirmaciones las hace el equipo. Cada jugadora ve sus próximas citas y responde con dos toques; quien no puede, dice por qué en una frase. Tú ves la lista completa —confirmado, quizá, cancelado, sin respuesta— y puedes anotar por alguien que no usa la app.",
+          "La parte que de verdad cambia el día a día son las ausencias. Vacaciones, enfermedad o una lesión se registran una vez como periodo y valen para cada cita dentro de él, incluida la que crees mañana. Antes nadie cancelaba nueve entrenamientos uno a uno, así que nadie cancelaba.",
+          "A eso se suman los detalles de los que todo depende: un plazo de confirmación con recordatorio, avisos push cuando una cita se añade, se mueve o se cae, y una suscripción de calendario con la que todas las citas aparecen en el calendario del móvil y se mantienen al día."
+        ],
+        "facts": [
+          {
+            "term": "Tipos de cita",
+            "value": "Entrenamiento, partido, otra cita"
+          },
+          {
+            "term": "Series",
+            "value": "Semanal o quincenal, varios días de la semana"
+          },
+          {
+            "term": "Respuesta",
+            "value": "Confirmar, quizá, cancelar, con motivo"
+          },
+          {
+            "term": "Ausencias",
+            "value": "Vacaciones, enfermedad, lesión como periodo"
+          },
+          {
+            "term": "Recordatorios",
+            "value": "Push antes del cierre y ante cambios"
+          },
+          {
+            "term": "Suscripción de calendario",
+            "value": "Un enlace para Apple, Google y Outlook"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Crear los entrenamientos como serie",
+            "body": "Martes y jueves a las 19:30 son una serie, no dos. Aun así, las citas sueltas se pueden mover, cancelar o acompañar de una nota propia."
+          },
+          {
+            "title": "Partidos con hora de quedada",
+            "body": "Quedada, saque inicial, final, más local o visitante, el tipo de partido y el pabellón con dirección. Lo que el equipo necesita saber el día del partido cabe en una ficha."
+          },
+          {
+            "title": "El equipo responde solo",
+            "body": "Cada jugadora recibe el acceso con un enlace de incorporación y después ve sus propias citas. Dos toques para sí o no, una frase de motivo si la hay."
+          },
+          {
+            "title": "Registrar las ausencias una vez",
+            "body": "Dos semanas de vacaciones son una entrada. Cada cita dentro cuenta como cancelada, y quien al final viene confirma igualmente esa cita concreta."
+          },
+          {
+            "title": "Vigilar la participación",
+            "body": "El cuerpo técnico ve la lista completa de cada cita, incluidos los que no han respondido, y en el calendario, cuántos faltan cada día."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Lista de citas en Statix con entrenamientos, partidos, línea de tiempo de quedada y respuestas",
+            "label": "La semana: serie, quedada–inicio–final, quién viene"
+          },
+          {
+            "alt": "Calendario mensual del equipo en Statix con entrenamientos, partidos y ausencias",
+            "label": "El mes: entrenamientos, partidos y cuántos faltan"
+          },
+          {
+            "alt": "Una cita de partido en Statix con pabellón, dirección, navegación, nota y lista de asistencia",
+            "label": "Un partido con pabellón, navegación y nota"
+          },
+          {
+            "alt": "Lista de asistencia de una cita con jugadores confirmados y cancelados y el motivo de ausencia",
+            "label": "Quién viene y a quién le vale un periodo como motivo"
+          },
+          {
+            "alt": "Ausencias en Statix: vacaciones, enfermedad y lesión como periodos",
+            "label": "Vacaciones, enfermedad, lesión: una vez como periodo"
+          },
+          {
+            "alt": "Lista de citas en el móvil de una jugadora",
+            "label": "Así confirma una jugadora: dos toques en el móvil"
+          }
+        ],
+        "limits": [
+          "Statix no planifica el uso del pabellón ni se coordina con otros equipos por las horas libres. El calendario pertenece a un equipo.",
+          "Las series son semanales o quincenales. «Cada tercer martes» no existe, porque nadie planifica así.",
+          "En el iPhone, los avisos push necesitan la app instalada en la pantalla de inicio: es una regla de iOS, no de Statix.",
+          "La suscripción de calendario muestra horas y lugares, no nombres ni respuestas. Quien tenga el enlace puede leerla."
+        ],
+        "faq": [
+          {
+            "question": "¿Necesitan las jugadoras una cuenta propia?",
+            "answer": "Para confirmar o cancelar ellas mismas, sí: el acceso llega con un enlace de incorporación del cuerpo técnico y cuesta un minuto. Quien no quiera cuenta es anotado por el entrenador; la fila es la misma."
+          },
+          {
+            "question": "¿Qué pasa si muevo una cita?",
+            "answer": "Todos los que tengan las notificaciones activadas reciben un aviso con la nueva fecha, y en el calendario suscrito la entrada se desplaza sola. Las respuestas ya dadas se mantienen."
+          },
+          {
+            "question": "¿Cómo funciona exactamente la entrada de vacaciones?",
+            "answer": "Un periodo con inicio y fin, ambos días incluidos, más un motivo y, si quieres, una nota que solo ve el cuerpo técnico. Cada cita dentro cuenta como cancelada, incluidas las que aún no existen al hacer la entrada. Para una cita concreta dentro se puede confirmar igualmente."
+          },
+          {
+            "question": "¿Los partidos se convierten en citas automáticamente?",
+            "answer": "Sí. Un partido creado aparece en el calendario con fecha, rival y lugar, y si mueves el partido, la cita se mueve con él. No hay un segundo sitio donde mantener la misma fecha."
+          },
+          {
+            "question": "¿Ven las jugadoras por qué alguien ha cancelado?",
+            "answer": "No. El motivo y la nota de una ausencia quedan entre ella y el cuerpo técnico. El equipo ve la cifra, no la frase."
+          }
+        ]
+      },
+      {
+        "slug": "team-management",
+        "name": "Gestión de equipo",
+        "short": "Equipo y temporada",
+        "headline": "Plantilla, temporada y cuerpo técnico en un solo sitio",
+        "summary": "Gestiona plantilla, partidos y temporadas en un solo sitio y comparte los análisis con todo el equipo.",
+        "tagline": "Plantilla, calendario, temporada y cuerpo técnico en un solo sitio, en vez de en una hoja de cálculo que solo tiene uno.",
+        "intro": [
+          "Un equipo en Statix tiene una plantilla, una temporada y un cuerpo técnico. La plantilla lleva nombres, dorsales, posiciones y pertenencia; quien deja el equipo no se borra, sino que queda marcado como baja: si no, media temporada desaparecería con él.",
+          "Los partidos se crean con rival, fecha, local o visitante y tipo de partido, y luego pasan por los estados planificado, en curso y terminado. El cambio de temporada crea una nueva sin perder la anterior: la temporada pasada sigue siendo legible por completo.",
+          "Los segundos entrenadores reciben una invitación por correo y trabajan después en el mismo equipo, con los mismos partidos y el mismo análisis, no con una copia."
+        ],
+        "facts": [
+          {
+            "term": "Plantilla",
+            "value": "Nombre, dorsal, posición, altas y bajas"
+          },
+          {
+            "term": "Temporadas",
+            "value": "Varias; la antigua sigue legible por completo"
+          },
+          {
+            "term": "Cuerpo técnico",
+            "value": "Invitación por correo, equipo compartido"
+          },
+          {
+            "term": "Partidos",
+            "value": "Planificado, en curso, terminado, con tipo de partido"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Crear el equipo",
+            "body": "Nombre, temporada, categoría. Después el catálogo de estadísticas ya está listo: no tienes que definir tipos de acción."
+          },
+          {
+            "title": "Introducir la plantilla",
+            "body": "Una vez por temporada. El dorsal y la posición son lo que el registro necesitará después."
+          },
+          {
+            "title": "Invitar al cuerpo técnico",
+            "body": "Suma a los segundos entrenadores por correo. Ven los mismos partidos y pueden registrar también."
+          },
+          {
+            "title": "Cambiar de temporada",
+            "body": "Crea la nueva temporada, traspasa la plantilla y ajústala. La temporada anterior se queda entera."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Vista de plantilla en Statix con fichas de jugadoras",
+            "label": "La plantilla de una temporada"
+          },
+          {
+            "alt": "Vista de temporada en Statix con balance, forma y todos los partidos",
+            "label": "La temporada: balance, forma, porcentajes, cada partido"
+          }
+        ],
+        "limits": [
+          "Statix no lleva cuotas ni gestión de socios. Eso es administración del club, no estadística de partido.",
+          "No hay importación desde portales federativos: la plantilla y el calendario se crean, no se traen.",
+          "Una ficha de plantilla pertenece exactamente a un equipo. Quien juega en dos equipos tiene dos fichas; en el área de club aparecen juntas como una sola trayectoria."
+        ],
+        "faq": [
+          {
+            "question": "¿Cuántos equipos puedo gestionar?",
+            "answer": "Tantos como necesites: cambias entre ellos. Si varios equipos pertenecen a un club, el área de club es el nivel superior."
+          },
+          {
+            "question": "¿Qué pasa con una jugadora que deja el club?",
+            "answer": "Queda marcada como baja, no se borra. Sus partidos, porcentajes y mapas de tiro siguen formando parte de la temporada en la que jugó."
+          },
+          {
+            "question": "¿Pueden trabajar dos entrenadores a la vez?",
+            "answer": "En el mismo equipo sí; en el mismo registro en curso no. Un partido lo registra una persona, porque dos registros en paralelo acaban divergiendo sin remedio."
+          }
+        ]
+      },
+      {
+        "slug": "kader-kartenalbum",
+        "name": "Plantilla como álbum de cromos",
+        "short": "Álbum de cromos",
+        "headline": "La plantilla que el equipo abre por gusto",
+        "summary": "Cromos de jugadora con datos de partidos reales, Handball Performance Index, pegatinas y pizarra táctica.",
+        "tagline": "La plantilla como álbum de cromos: cada jugadora un cromo cuyos datos salen de partidos reales.",
+        "intro": [
+          "En vez de una lista de nombres, Statix muestra la plantilla como un álbum de cromos. Cada cromo lleva dorsal, posición y los valores que esa jugadora ha producido en partidos reales: no atributos estimados, sino calculados.",
+          "En el cromo aparece también el Handball Performance Index: un valor que resume finalización, eficiencia, errores y minutos de juego para poder poner una al lado de otra a jugadoras con papeles distintos. No sustituye al ojo del entrenador: es la entrada a una conversación.",
+          "A eso se suman pegatinas para lo especial y la pizarra táctica, en la que los cromos se pueden mover hasta formar una alineación. Es la parte que más gusta a los equipos de base, y la razón por la que a veces una plantilla se abre por gusto."
+        ],
+        "facts": [
+          {
+            "term": "Contenido del cromo",
+            "value": "Dorsal, posición, valores calculados"
+          },
+          {
+            "term": "Índice",
+            "value": "Handball Performance Index para todos los papeles"
+          },
+          {
+            "term": "Pegatinas",
+            "value": "Para hitos y momentos especiales de una temporada"
+          },
+          {
+            "term": "Pizarra táctica",
+            "value": "Mover los cromos hasta formar una alineación"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Jugar y registrar",
+            "body": "Los valores del cromo nacen de partidos registrados. Sin partidos, el cromo se queda en cromo."
+          },
+          {
+            "title": "Abrir el álbum",
+            "body": "La plantilla está delante de ti como un álbum. Un toque en un cromo lleva al perfil completo de la jugadora."
+          },
+          {
+            "title": "Mover la alineación",
+            "body": "En la pizarra táctica los cromos se colocan sobre la pista, para la charla o para planificar."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Plantilla como álbum de cromos en Statix",
+            "label": "La plantilla como álbum en vez de como lista"
+          },
+          {
+            "alt": "Cromos de plantilla en el móvil",
+            "label": "Cromos en el móvil, enseñados en el vestuario"
+          }
+        ],
+        "limits": [
+          "El índice es un valor de Statix, no una norma federativa. Compara dentro de vuestro equipo, no entre clubes.",
+          "Los cromos no se pueden imprimir ni encargar como cromos de colección.",
+          "Sin partidos registrados un cromo no tiene valores: introducir atributos a mano no existe, y es a propósito."
+        ],
+        "faq": [
+          {
+            "question": "¿Cómo se calcula el Handball Performance Index?",
+            "answer": "A partir de la finalización, la eficiencia, los errores y los minutos de juego, ponderados por posición para que una portera y una lateral estén en la misma escala. Los componentes se despliegan en el cromo: el valor no es una caja negra."
+          },
+          {
+            "question": "¿Pueden las jugadoras ver su cromo?",
+            "answer": "Si se lo enseñas. En la práctica ese es justo el momento en que las jóvenes empiezan a interesarse por sus propias cifras."
+          }
+        ]
+      },
+      {
+        "slug": "turniere",
+        "name": "Modo torneo",
+        "short": "Torneos",
+        "headline": "Un día de torneo sin papelitos",
+        "summary": "Torneos con varios equipos, clasificación automática, calendario y selección de convocatoria para la jornada.",
+        "tagline": "Un día de torneo con seis equipos sin que nadie lleve la clasificación en un papel.",
+        "intro": [
+          "En el modo torneo creas los equipos participantes y el calendario. Los resultados se introducen solos —porque habéis registrado el partido en Statix— o a mano, en los partidos en los que no estáis. La clasificación se recalcula con cada resultado.",
+          "Vuestros propios partidos del torneo se arrancan directamente desde el calendario como registro en directo completo. Después el resultado cuelga de la clasificación y la estadística del informe del partido: no hay un segundo sitio donde mantener el mismo resultado.",
+          "Para la jornada eliges la convocatoria de quien realmente está. Y cuando el torneo termina hay un análisis con IA de todo el torneo en vez de un partido suelto."
+        ],
+        "facts": [
+          {
+            "term": "Equipos",
+            "value": "Los que quieras, también ajenos"
+          },
+          {
+            "term": "Clasificación",
+            "value": "Se recalcula con cada resultado"
+          },
+          {
+            "term": "Partidos propios",
+            "value": "Registro en directo desde el calendario"
+          },
+          {
+            "term": "Resultados ajenos",
+            "value": "Se pueden introducir a mano"
+          },
+          {
+            "term": "Análisis con IA",
+            "value": "Sobre el torneo completo"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Crear el torneo",
+            "body": "Nombre, fecha, equipos participantes. El calendario sale de ahí."
+          },
+          {
+            "title": "Elegir la convocatoria",
+            "body": "Quien está hoy queda disponible. El resto de la temporada no se ve afectado."
+          },
+          {
+            "title": "Empezar partidos e introducir resultados",
+            "body": "Registra en directo los partidos propios y teclea los ajenos. La clasificación se ajusta sola."
+          },
+          {
+            "title": "Analizar el torneo",
+            "body": "Clasificación, calendario, estadísticas y un análisis con IA de todo el día."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Vista general de torneo en Statix con clasificación y calendario",
+            "label": "Clasificación y calendario, uno al lado del otro"
+          },
+          {
+            "alt": "Calendario de torneo con los resultados introducidos",
+            "label": "El calendario con los resultados del día"
+          },
+          {
+            "alt": "Análisis con IA de un torneo completo en Statix",
+            "label": "El análisis con IA de todo el torneo"
+          }
+        ],
+        "limits": [
+          "Statix no genera automáticamente un calendario por cabezas de serie ni un cuadro eliminatorio. Los partidos se crean.",
+          "De los equipos ajenos no hay estadística de jugadoras, solo resultados. Lo que se registra es siempre vuestro propio partido.",
+          "No es una gestión de torneos con inscripciones, plano de pabellón y horarios para organizadores."
+        ],
+        "faq": [
+          {
+            "question": "¿Pueden varios entrenadores introducir resultados en paralelo?",
+            "answer": "Sí, si están en el mismo equipo. Partidos distintos a la vez no son problema; registrar el mismo partido a la vez sí lo es."
+          },
+          {
+            "question": "¿Sirve el modo torneo también para un torneo de pretemporada?",
+            "answer": "Sí. Que sea un torneo de campeonato, de pretemporada o un torneo de pabellón entre año no cambia nada en la mecánica."
+          }
+        ]
+      },
+      {
+        "slug": "vereinsbereich",
+        "name": "Área de club",
+        "short": "Club",
+        "headline": "El nivel por encima de los equipos",
+        "summary": "Un nivel por encima de todos los equipos de un club: visión de todas las plantillas, lista de jugadores de todo el club, análisis con comparación entre temporadas y trayectorias por varios equipos de base.",
+        "tagline": "El nivel por encima de los equipos: todas las plantillas, todos los resultados y todas las trayectorias de un club en un solo sitio.",
+        "intro": [
+          "El área de club está pensada para responsables de sección y coordinadores de base. El lunes por la mañana muestra qué pasó el fin de semana en todos los equipos: resultados, próximos partidos, clasificaciones, sin que nadie tenga que escribir a doce entrenadores.",
+          "Por debajo hay tres cosas que un equipo suelto no puede dar: una lista de jugadores de todo el club por encima de las plantillas, un análisis con comparación entre temporadas por equipo, y trayectorias, es decir, personas que han jugado en más de un equipo, en el orden de sus etapas.",
+          "Justo esa trayectoria es el argumento para las secciones de base: que una jugadora que pasa de infantil a cadete y a juvenil siga siendo visible como una persona, con su evolución, en vez de como tres fichas separadas."
+        ],
+        "facts": [
+          {
+            "term": "Para quién",
+            "value": "Responsables de sección, coordinación de base"
+          },
+          {
+            "term": "Alta",
+            "value": "Se configura para el club"
+          },
+          {
+            "term": "Incorporación",
+            "value": "Parte del equipo, mediante un código"
+          },
+          {
+            "term": "Análisis",
+            "value": "Todos los equipos, con comparación entre temporadas"
+          },
+          {
+            "term": "Trayectorias",
+            "value": "A través de varios equipos"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Pedir que os configuren el club",
+            "body": "El área de club se crea para vosotros: escríbenos desde la página de clubes y cuéntanos qué necesitáis."
+          },
+          {
+            "title": "Que los equipos se incorporen",
+            "body": "El código de incorporación va a los primeros entrenadores. La incorporación parte del equipo, no del club: cada equipo sigue siendo dueño de sus datos."
+          },
+          {
+            "title": "Leer el lunes por la mañana",
+            "body": "Resultados de todos los equipos, puntos abiertos y próximos partidos en una sola página."
+          },
+          {
+            "title": "Seguir las trayectorias",
+            "body": "Quien pasa durante años por varios equipos aparece como una persona con sus etapas."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Vista general del club en Statix con todos los equipos y resultados",
+            "label": "El lunes por la mañana: todos los equipos en una página"
+          },
+          {
+            "alt": "Análisis de club en Statix con indicadores de todos los equipos",
+            "label": "Análisis sobre todos los equipos"
+          },
+          {
+            "alt": "Trayectorias de jugadoras por varios equipos de un club",
+            "label": "Trayectorias: una persona, varias etapas"
+          }
+        ],
+        "limits": [
+          "El área de club se configura, no se crea por cuenta propia; por eso está bajo «Bajo petición».",
+          "No sustituye a la administración del club: ni socios, ni cuotas, ni licencias.",
+          "Un equipo se incorpora por sí mismo. Un club no puede absorber a un equipo que no quiere."
+        ],
+        "faq": [
+          {
+            "question": "¿Cómo conseguimos el área de club?",
+            "answer": "Escribiendo desde la página de clubes: lo que necesita un club con dos equipos no es lo que necesita uno con doce, por eso se habla y se configura en vez de activarse con un clic."
+          },
+          {
+            "question": "¿Ven todos los entrenadores todo?",
+            "answer": "No. El nivel de club ve el análisis sobre los equipos; el trabajo de detalle se queda en cada equipo y su cuerpo técnico."
+          }
+        ]
+      },
+      {
+        "slug": "trainer-zusammenarbeit",
+        "name": "Trabajo con otros entrenadores y permisos",
+        "short": "Compartir y equipo",
+        "headline": "Pasar algo sin soltarlo de la mano",
+        "summary": "Comparte partidos con otros entrenadores directamente en su bandeja de entrada e invita a segundos entrenadores de forma fija a tu equipo.",
+        "tagline": "Pasar un partido sin enviarlo, y sin que el otro tenga que crearse una cuenta.",
+        "intro": [
+          "Hay dos maneras de dejar que alguien lea contigo. La primera es el permiso: eliges qué se comparte —estadística, análisis con IA o ambos— y recibes un enlace. Si indicas un correo que pertenece a una cuenta de Statix, el partido llega además a su bandeja de entrada.",
+          "La segunda vía es la invitación fija al cuerpo técnico. Quien está invitado trabaja de forma permanente en el mismo equipo, con los mismos partidos y el mismo análisis, no con una copia que en dos semanas está desfasada.",
+          "Cada permiso es revocable. Y como un enlace también se reenvía, vale la regla: revocado significa muerto al instante, no solo difícil de encontrar. A eso se suma el informe de partido en PDF para quien necesite algo impreso."
+        ],
+        "facts": [
+          {
+            "term": "Permiso",
+            "value": "Enlace o correo, con alcance a elegir"
+          },
+          {
+            "term": "Destinatario",
+            "value": "Para el enlace no necesita cuenta"
+          },
+          {
+            "term": "Bandeja de entrada",
+            "value": "Los partidos compartidos llegan ahí juntos"
+          },
+          {
+            "term": "Revocación",
+            "value": "Cuando quieras, con efecto inmediato"
+          },
+          {
+            "term": "PDF",
+            "value": "Informe de partido para imprimir"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Elegir el alcance",
+            "body": "Estadística, análisis con IA o ambos. Lo que no selecciones tampoco está en el informe compartido."
+          },
+          {
+            "title": "Crear un enlace o poner un correo",
+            "body": "El enlace funciona sin cuenta. Un correo con cuenta de Statix recibe además el partido en la bandeja de entrada."
+          },
+          {
+            "title": "Invitar de forma fija a un segundo entrenador",
+            "body": "Para quien está de forma permanente, la invitación al equipo es el camino correcto, no un permiso por partido."
+          },
+          {
+            "title": "Ordenar",
+            "body": "Los permisos activos están en una lista y se revocan uno a uno."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Diálogo de permisos en Statix: compartir un partido por enlace o correo con otro entrenador",
+            "label": "Compartir: elegir alcance, crear enlace, revocable"
+          },
+          {
+            "alt": "Bandeja de entrada en Statix con partidos que otros entrenadores han compartido",
+            "label": "La bandeja: lo que otros han compartido contigo"
+          }
+        ],
+        "limits": [
+          "Un permiso es de solo lectura. Quien lo abre no puede cambiar ni registrar nada.",
+          "Se comparte un partido, no la temporada entera. Quien deba verlo todo pertenece al cuerpo técnico.",
+          "Las notas de scouting sobre rivales nunca forman parte de un permiso."
+        ],
+        "faq": [
+          {
+            "question": "¿Necesita el destinatario una cuenta de Statix?",
+            "answer": "Para el enlace no. Con cuenta es más cómodo, porque los partidos compartidos se recogen en la bandeja de entrada en vez de en conversaciones de chat."
+          },
+          {
+            "question": "¿Qué pasa tras revocar?",
+            "answer": "El enlace deja de responder al instante, también el que alguien haya reenviado. Un PDF ya descargado, como es lógico, no lo recupera nadie."
+          },
+          {
+            "question": "¿Puedo compartir un partido de forma anónima?",
+            "answer": "Un enlace sin más no dice quién lo ha creado. Quien comparte por correo aparece con su nombre ante el destinatario: ese es el sentido de la bandeja de entrada."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-umfragen",
+        "name": "Encuestas a jugadores",
+        "short": "Encuestas",
+        "headline": "Una pregunta que no se pierde en el chat",
+        "summary": "Crea encuestas de disponibilidad o de opinión y comparte un enlace: los jugadores responden sin cuenta.",
+        "tagline": "Una pregunta al equipo cuyas respuestas no se pierden entre cuarenta mensajes de chat.",
+        "intro": [
+          "Las encuestas son el camino para todo lo que no es una respuesta a una convocatoria: tallas de camiseta, quién lleva coche, opiniones tras la pretemporada, fechas preferidas para el stage. Tú construyes las preguntas —texto libre, opción única o múltiple, escala, sí/no— y compartes un enlace.",
+          "Responder no requiere cuenta. Quien abre el enlace se elige a sí mismo de la plantilla y responde. Esa es la diferencia que decide si una encuesta se contesta o no.",
+          "Puedes fijar si alguien puede responder una vez o varias: una sola para una inscripción, varias para una consulta que se repite."
+        ],
+        "facts": [
+          {
+            "term": "Tipos de pregunta",
+            "value": "Texto libre, opción, escala, sí/no"
+          },
+          {
+            "term": "Respuestas",
+            "value": "Sin cuenta, mediante un enlace"
+          },
+          {
+            "term": "Respuestas múltiples",
+            "value": "Se pueden activar o desactivar"
+          },
+          {
+            "term": "Estado",
+            "value": "Borrador, activa, cerrada"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Componer las preguntas",
+            "body": "Título, descripción breve y luego las preguntas. Campos obligatorios y textos de ayuda en cada una."
+          },
+          {
+            "title": "Compartir el enlace",
+            "body": "Al grupo del equipo. Quien lo abre se elige de la plantilla y responde."
+          },
+          {
+            "title": "Leer las respuestas",
+            "body": "Recogidas y evaluadas por pregunta. El texto libre sigue siendo texto libre; las opciones se cuentan."
+          },
+          {
+            "title": "Cerrar",
+            "body": "Una encuesta cerrada ya no acepta respuestas, pero se puede seguir leyendo."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Encuestas a jugadores en Statix con estado y número de respuestas",
+            "label": "Encuestas con estado y número de respuestas"
+          }
+        ],
+        "limits": [
+          "Para confirmar o cancelar entrenamientos y partidos, el sitio correcto son las convocatorias: allí cuelgan de una fecha y de la lista de asistencia.",
+          "Las respuestas no son anónimas: quien responde se elige de la plantilla.",
+          "Las encuestas no recuerdan solas. El empujón sigue siendo cosa del entrenador."
+        ],
+        "faq": [
+          {
+            "question": "¿En qué se diferencia una encuesta de una confirmación de convocatoria?",
+            "answer": "Una confirmación pertenece a una fecha y alimenta la lista de asistencia. Una encuesta es una pregunta libre al equipo: tallas, coches compartidos, opiniones tras la pretemporada."
+          },
+          {
+            "question": "¿Pueden responder los padres?",
+            "answer": "Cualquiera con el enlace puede responder y al hacerlo se elige de la plantilla. En los equipos de base ese suele ser justamente el padre o la madre que tiene el móvil en la mano."
+          }
+        ]
+      }
+    ]
+  },
+  "featuresPage": {
+    "index": {
+      "kicker": "La plantilla al completo",
+      "titleLead": "Todas las",
+      "titleHighlight": "funciones",
+      "titleTail": "de Statix",
+      "lede": "{count} funciones, cada una con su propia página: qué hace, cómo se siente en el pabellón, capturas reales de la app y qué es lo que expresamente no puede hacer. Una de ellas se está construyendo ahora mismo y aparece marcada como tal.",
+      "groupNavLabel": "Grupos de funciones",
+      "priceCta": "¿Cuánto cuesta?",
+      "groupCounter": "{index} de {total}",
+      "cardCta": "Ver la función",
+      "faqKicker": "En corto",
+      "faqTitle": "Preguntas sobre el alcance de las funciones",
+      "faq": [
+        {
+          "question": "¿Están todas las funciones incluidas en el acceso gratuito?",
+          "answer": "Hasta el 31 de diciembre de 2026 sí: Statix todavía no ha pasado a suscripción, así que cada función terminada está abierta a cualquier cuenta. A partir del 1 de enero de 2027 habrá tres niveles: el registro, el calendario y los cromos de plantilla siguen completos en todos ellos, y las funciones que consumen cálculo pasan a los de pago. El reparto está en la página de precios."
+        },
+        {
+          "question": "¿Qué significa «En construcción» en una función?",
+          "answer": "Que se está construyendo y funciona con unos pocos equipos que dan su opinión. Una cuenta nueva no la ve. La listamos igualmente, porque es visible en la app y porque una lista de funciones que calla el estado se descubre al primer clic."
+        },
+        {
+          "question": "¿Qué significa «Bajo petición»?",
+          "answer": "La función está terminada, pero se configura para vosotros en vez de crearla vosotros. Afecta al área de club: lo que necesita un club con dos equipos no es lo que necesita uno con doce."
+        },
+        {
+          "question": "¿Tengo que usarlo todo?",
+          "answer": "No. La mayoría de entrenadores empiezan por el registro en directo y van cogiendo el resto cuando surge la pregunta. Convocatorias, torneos, vídeo y área de club están listos sin que nadie tenga que activarlos."
+        },
+        {
+          "question": "¿Las capturas son reales?",
+          "answer": "Sí. Cada imagen de estas páginas sale de una instancia de Statix en funcionamiento y se vuelve a tomar cuando la app cambia. Donde una representación está dibujada en lugar de fotografiada, se dice expresamente al lado, por ejemplo en el etiquetado de vídeo, cuyas grabaciones están en el almacenamiento de vídeo y no en la máquina de capturas."
+        },
+        {
+          "question": "¿Puedo probar Statix sin crear una cuenta?",
+          "answer": "Sí. La demo en directo es un Statix completamente lleno con datos reales de partido: estadísticas en directo, mapas de tiro y análisis con IA en el navegador, sin registro."
+        }
+      ],
+      "ctaKicker": "Siguiente paso",
+      "ctaTitle": "El camino más rápido es un partido de verdad",
+      "ctaDescription": "La demo en directo enseña Statix con datos reales de partido y sin cuenta. Si encaja, creas tu equipo en dos minutos y registras tu primer partido.",
+      "ctaLinkLabel": "¿Qué es Statix?"
+    },
+    "inProgress": {
+      "kicker": "En el banco de trabajo",
+      "title": "Lo que se está construyendo ahora",
+      "description": "Statix nace de lo que vuelve del pabellón. Lo que aún no está terminado aparece igualmente aquí, como lo que es.",
+      "cardCta": "Qué funciona ya y qué todavía no",
+      "contact": "¿Queréis estar pronto en una de estas funciones y dar vuestra opinión? <contact>Escríbenos</contact>: la lista de espera es un correo."
+    },
+    "detail": {
+      "breadcrumbLabel": "Ruta de navegación",
+      "breadcrumbHome": "Inicio",
+      "breadcrumbFeatures": "Funciones",
+      "groupFallback": "Función",
+      "allFeaturesCta": "Todas las funciones",
+      "overviewKicker": "De qué se trata",
+      "factsTitle": "En corto",
+      "shotsKicker": "Desde la app",
+      "shotsTitle": "Así se ve",
+      "shotsDescription": "Capturas reales de Statix, sin montaje. Cuando la app cambia, se vuelven a tomar.",
+      "stepsKicker": "El proceso",
+      "stepsTitle": "Así funciona en la práctica",
+      "limitsKicker": "Con franqueza",
+      "limitsTitle": "Lo que Statix no hace aquí",
+      "limitsDescription": "Para que lo sepas antes y no el día del partido.",
+      "faqKicker": "En corto",
+      "faqTitle": "Preguntas sobre {feature}",
+      "relatedKicker": "Va con esto",
+      "relatedTitle": "Y además",
+      "relatedCardCta": "Ver",
+      "relatedAllCta": "Todas las funciones de un vistazo",
+      "ctaKicker": "Siguiente paso",
+      "ctaTitle": "Pruébalo en un partido de verdad",
+      "ctaDescription": "La demo en directo es un Statix completo con datos reales de partido, sin cuenta y directamente en el navegador. O creas tu equipo y registras tu primer partido.",
+      "ctaLinkLabel": "Todas las funciones de un vistazo"
+    },
+    "taggingBench": {
+      "kicker": "Cómo nace una escena",
+      "title": "Una grabación, 281 escenas, una pregunta",
+      "description": "Esta representación está dibujada, no es una captura: las capturas reales del banco de trabajo están debajo. Las denominaciones son las de la app y por eso se quedan en alemán.",
+      "resultTitle": "Lo que sale de ahí",
+      "resultLead": "Acción, jugadora y contexto: cada fila es un intervalo del vídeo.",
+      "closing": "Una lista de reproducción guarda esta pregunta, no el resultado. Si etiquetas después una escena olvidada, cae dentro sola."
+    }
+  },
+  "guidePage": {
+    "index": {
+      "kicker": "Guía de balonmano",
+      "titleLead": "Conocimiento para",
+      "titleHighlight": "entrenadores de balonmano",
+      "lede": "Artículos prácticos sobre estadística, entrenamiento, táctica y análisis de partido, para que desarrolles a tu equipo con datos y un plan claro. Si empiezas por los números, toma el resumen <stats>estadísticas de balonmano</stats> como punto de partida.",
+      "articleCount": "{count} artículos salidos del pabellón",
+      "categoryCount": "{count} artículos",
+      "languageNote": "Los artículos en sí están en alemán."
+    },
+    "tools": {
+      "kicker": "Herramientas",
+      "title": "Para empezar ya mismo",
+      "lede": "Antes de leerte los artículos: {count} ayudas gratuitas con las que puedes empezar a registrar tus cifras ahora mismo.",
+      "openCta": "Abrir",
+      "items": [
+        {
+          "href": "/wurfquote-rechner",
+          "title": "Calculadora de acierto en lanzamiento",
+          "description": "Introduce goles y lanzamientos y lee el porcentaje, para una jugadora o para todo el equipo."
+        },
+        {
+          "href": "/handball-taktikboard",
+          "title": "Pizarra táctica de balonmano",
+          "description": "Arrastra la alineación sobre una pista a escala, dibuja los desplazamientos y pásaselo al equipo como imagen o enlace."
+        },
+        {
+          "href": "/handball-statistik-excel-vorlage",
+          "title": "Plantilla de Excel para la estadística de balonmano",
+          "description": "Una hoja lista con los indicadores más importantes, por si prefieres empezar con papel y Excel."
+        }
+      ]
+    },
+    "card": {
+      "readingTime": "{minutes} min.",
+      "readCta": "Leer"
+    },
+    "archetype": {
+      "kennzahl": "Indicador",
+      "system": "Sistema",
+      "rezept": "Receta de entrenamiento",
+      "referenz": "Consulta",
+      "entscheidung": "Ayuda para decidir"
+    },
+    "breadcrumb": {
+      "label": "Ruta de navegación",
+      "home": "Inicio",
+      "guide": "Guía"
+    },
+    "article": {
+      "byline": "Por <strong>{name}</strong>, {role}",
+      "updatedLabel": "actualizado",
+      "readingTime": "{minutes} min. de lectura",
+      "faqKicker": "Preguntado después",
+      "faqTitle": "Preguntas frecuentes",
+      "authorKicker": "Sobre el autor",
+      "authorLink": "Más sobre Statix",
+      "ctaKicker": "Ya disponible",
+      "ctaTitle": "Estadística de balonmano sin papelitos",
+      "ctaDescription": "Registra goles, lanzamientos y paradas en directo con un toque y deja que Statix calcule solo los porcentajes, los mapas de tiro y la evolución de las jugadoras, sin cobertura en el pabellón. Regístrate gratis y pruébalo con tu equipo."
+    },
+    "related": {
+      "default": {
+        "kicker": "Seguir leyendo",
+        "title": "Más guías",
+        "lede": "Artículos que te hacen avanzar como entrenador."
+      },
+      "kennzahl": {
+        "kicker": "Seguir contando",
+        "title": "Más indicadores",
+        "lede": "Cifras que deberían estar al lado de esta cuando valoras a tu equipo."
+      },
+      "system": {
+        "kicker": "Seguir en la pizarra",
+        "title": "Sistemas y ejercicios que encajan",
+        "lede": "Con qué completas este sistema y con qué hay que medirlo."
+      },
+      "rezept": {
+        "kicker": "Próxima sesión",
+        "title": "Más recetas de entrenamiento",
+        "lede": "Sesiones y series de ejercicios que se apoyan en este objetivo."
+      },
+      "referenz": {
+        "kicker": "Consultar",
+        "title": "Fundamentos relacionados",
+        "lede": "Lo que un entrenador debería tener a mano en este mismo contexto."
+      },
+      "entscheidung": {
+        "kicker": "Decidir después",
+        "title": "Fundamentos para la decisión",
+        "lede": "Los artículos que hay detrás de las opciones que estaban aquí en juego."
+      }
+    }
+  },
+  "statusPages": {
+    "notFound": {
+      "title": "Esta página no existe",
+      "lede": "No hemos podido encontrar la página que buscabas. Vuelve al inicio y descubre cómo Statix mejora a tu equipo.",
+      "homeCta": "Ir al inicio",
+      "newsletterCta": "Boletín",
+      "newsletterTitle": "Apuntarse al boletín",
+      "popularTitle": "Destinos habituales:",
+      "featuresLabel": "Funciones",
+      "featuresTitle": "Ver las funciones",
+      "faqLabel": "FAQ",
+      "faqTitle": "Preguntas frecuentes",
+      "imprintLabel": "Aviso legal",
+      "imprintTitle": "Ir al aviso legal",
+      "backCta": "Volver a la página anterior"
+    },
+    "error": {
+      "title": "Algo ha salido mal",
+      "lede": "Lo sentimos, se ha producido un error. Inténtalo de nuevo.",
+      "retryCta": "Intentar de nuevo",
+      "homeCta": "Ir al inicio",
+      "digest": "ID del error: {id}"
+    },
+    "errorState": {
+      "title": "Algo ha salido mal",
+      "message": "No hemos podido cargar los datos. Inténtalo más tarde.",
+      "retryCta": "Intentar de nuevo",
+      "help": "Si el problema continúa, escríbenos."
     }
   }
 }
