@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Home, RefreshCw } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function Error({
   error,
@@ -13,6 +14,8 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useTranslations('statusPages.error');
+
   useEffect(() => {
     // Log the error to an error reporting service
     console.error('Application error:', error);
@@ -53,11 +56,10 @@ export default function Error({
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}>
             <h2 className='text-3xl md:text-4xl font-bold text-foreground mb-4'>
-              Etwas ist schiefgelaufen
+              {t('title')}
             </h2>
             <p className='text-lg text-muted-foreground mb-8 max-w-md mx-auto'>
-              Es tut uns leid, aber es ist ein Fehler aufgetreten. Bitte
-              versuchen Sie es erneut.
+              {t('lede')}
             </p>
           </motion.div>
 
@@ -67,21 +69,21 @@ export default function Error({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}>
-            <Button
-              onClick={reset}
-              size='lg'
-              className='w-full sm:w-auto'>
+            <Button onClick={reset} size='lg' className='w-full sm:w-auto'>
               <RefreshCw className='size-5 mr-2' />
-              Erneut versuchen
+              {t('retryCta')}
             </Button>
             <Button
               asChild
               variant='outline'
               size='lg'
               className='w-full sm:w-auto'>
-              <Link href='/' title='Zur Startseite' className='flex items-center gap-2'>
+              <Link
+                href='/'
+                title={t('homeCta')}
+                className='flex items-center gap-2'>
                 <Home className='size-5' />
-                Zur Startseite
+                {t('homeCta')}
               </Link>
             </Button>
           </motion.div>
@@ -94,7 +96,7 @@ export default function Error({
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}>
               <p className='text-[13px] text-muted-foreground'>
-                Fehler-ID: {error.digest}
+                {t('digest', { id: error.digest })}
               </p>
             </motion.div>
           )}

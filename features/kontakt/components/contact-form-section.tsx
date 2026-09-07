@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Mail, MessageSquare, Send, User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
 import { toast } from 'sonner';
 import { useContact } from '@/lib/hooks/use-contact';
 import { Button } from '@/components/ui/button';
@@ -38,6 +39,8 @@ export default function ContactFormSection({
   defaultTopic = '',
 }: ContactFormSectionProps = {}) {
   const t = useTranslations('contactPage');
+  const tCommon = useTranslations('common');
+  const apiErrorMessage = useApiErrorMessage();
   const contactMutation = useContact();
 
   const [name, setName] = useState('');
@@ -106,7 +109,7 @@ export default function ContactFormSection({
         },
         onError: (error: Error) => {
           toast.error(t('errorTitle'), {
-            description: error.message || t('errorDescription'),
+            description: apiErrorMessage(error),
             duration: 6000,
           });
         },
@@ -223,7 +226,7 @@ export default function ContactFormSection({
                   {t('privacyPrefix')}{' '}
                   <Link
                     href='/datenschutz'
-                    title='Zur Datenschutzerklärung'
+                    title={tCommon('privacyLinkTitle')}
                     className='font-semibold text-primary underline underline-offset-2'>
                     {t('privacyLink')}
                   </Link>{' '}
@@ -239,7 +242,9 @@ export default function ContactFormSection({
                 {contactMutation.isPending ? t('pending') : t('button')}
               </Button>
 
-              <p className='text-center text-[13px] leading-5 text-ink/50'>{t('note')}</p>
+              <p className='text-center text-[13px] leading-5 text-ink/50'>
+                {t('note')}
+              </p>
             </div>
           </BoardCard>
         </form>

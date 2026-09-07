@@ -1,4 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
+import { apiErrorFrom } from '@/lib/api-errors';
 import type { FeedbackCategoryId } from '@/features/feedback/data/feedback-content';
 
 interface FeedbackData {
@@ -16,11 +17,13 @@ interface FeedbackData {
 interface FeedbackResponse {
   success: boolean;
   message?: string;
+  /** German sentence for the log; the browser renders `code` instead. */
   error?: string;
+  code?: string;
 }
 
 const submitFeedback = async (
-  data: FeedbackData
+  data: FeedbackData,
 ): Promise<FeedbackResponse> => {
   const response = await fetch('/api/feedback', {
     method: 'POST',
@@ -33,7 +36,7 @@ const submitFeedback = async (
   const result = await response.json();
 
   if (!response.ok) {
-    throw new Error(result.error || 'Fehler beim Senden des Feedbacks');
+    throw apiErrorFrom(result, 'Fehler beim Senden des Feedbacks');
   }
 
   return result;

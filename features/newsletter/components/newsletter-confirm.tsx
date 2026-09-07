@@ -5,12 +5,15 @@ import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 import { AlertCircle, Check, Loader2, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { apiErrorFrom } from '@/lib/api-errors';
+import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
 import { Button } from '@/components/ui/button';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
 export default function NewsletterConfirm() {
   const t = useTranslations('newsletterConfirm');
+  const apiErrorMessage = useApiErrorMessage();
   const searchParams = useSearchParams();
   const token = searchParams.get('token') ?? '';
 
@@ -31,7 +34,7 @@ export default function NewsletterConfirm() {
       const result = await response.json();
 
       if (!response.ok || !result.success) {
-        setErrorMessage(result.error || t('errorDescription'));
+        setErrorMessage(apiErrorMessage(apiErrorFrom(result, '')));
         setStatus('error');
         return;
       }
@@ -97,7 +100,9 @@ export default function NewsletterConfirm() {
               onClick={handleConfirm}
               disabled={status === 'loading'}
               className='mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#f97316] to-[#ea580c] px-4 text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5 disabled:pointer-events-none disabled:opacity-60'>
-              {status === 'loading' && <Loader2 className='size-4 animate-spin' />}
+              {status === 'loading' && (
+                <Loader2 className='size-4 animate-spin' />
+              )}
               {status === 'loading' ? t('pending') : t('confirmButton')}
             </Button>
 

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { AlertCircle, Check, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
 import { useNewsletter } from '@/lib/hooks/use-newsletter';
 import { Button } from '@/components/ui/button';
 import { BoardCard, CourtDiagram, Grain, SectionHeading } from './tactic';
@@ -16,6 +17,8 @@ import { BoardCard, CourtDiagram, Grain, SectionHeading } from './tactic';
  */
 export default function NewsletterSection() {
   const t = useTranslations('productPage.newsletter');
+  const tCommon = useTranslations('common');
+  const apiErrorMessage = useApiErrorMessage();
   const newsletterMutation = useNewsletter();
 
   const [email, setEmail] = useState('');
@@ -31,7 +34,7 @@ export default function NewsletterSection() {
   const errorMessage = validationError
     ? validationError
     : newsletterMutation.isError
-      ? newsletterMutation.error?.message || t('errorDescription')
+      ? apiErrorMessage(newsletterMutation.error)
       : null;
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -87,7 +90,9 @@ export default function NewsletterSection() {
               <span className='flex size-12 items-center justify-center rounded-full bg-success/20 text-success'>
                 <Check className='size-6' />
               </span>
-              <h3 className='mt-4 font-display text-lg font-bold text-chalk'>{t('successTitle')}</h3>
+              <h3 className='mt-4 font-display text-lg font-bold text-chalk'>
+                {t('successTitle')}
+              </h3>
               <p className='mt-2 max-w-sm text-sm leading-6 text-chalk/75'>
                 {t('successDescription')}
               </p>
@@ -137,7 +142,7 @@ export default function NewsletterSection() {
                     {t('privacyPrefix')}{' '}
                     <Link
                       href='/datenschutz'
-                      title='Zur Datenschutzerklärung'
+                      title={tCommon('privacyLinkTitle')}
                       className='font-semibold text-primary underline underline-offset-2'>
                       {t('privacyLink')}
                     </Link>{' '}
@@ -158,13 +163,17 @@ export default function NewsletterSection() {
                     className='mt-3 flex items-start gap-2 rounded-xl border border-destructive/40 bg-destructive/10 px-3.5 py-2.5 text-left text-sm leading-5 text-red-200'>
                     <AlertCircle className='mt-0.5 size-4 shrink-0' />
                     <span>
-                      <strong className='font-semibold'>{t('errorTitle')}:</strong>{' '}
+                      <strong className='font-semibold'>
+                        {t('errorTitle')}:
+                      </strong>{' '}
                       {errorMessage}
                     </span>
                   </div>
                 )}
 
-                <p className='mt-3 text-center text-[13px] leading-5 text-chalk/50'>{t('note')}</p>
+                <p className='mt-3 text-center text-[13px] leading-5 text-chalk/50'>
+                  {t('note')}
+                </p>
               </div>
             </BoardCard>
           </form>

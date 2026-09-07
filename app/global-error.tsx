@@ -2,6 +2,12 @@
 
 import { useEffect } from 'react';
 
+/**
+ * The last-resort boundary: it replaces the root layout, so the locale provider
+ * that carries this site's language is not mounted and there is no `t` to call.
+ * Its copy therefore stays German — the canonical language of the site — rather
+ * than reaching for a translation that cannot be loaded here.
+ */
 export default function GlobalError({
   error,
   reset,

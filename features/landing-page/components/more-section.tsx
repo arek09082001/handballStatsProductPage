@@ -107,7 +107,7 @@ export default function MoreSection() {
 
             <Link
               href='/funktionen'
-              title='Alle Funktionen von Statix im Detail'
+              title={t('linkTitle')}
               className='group mt-8 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
               {t('linkLabel')}
               <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />

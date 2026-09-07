@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight, Star } from 'lucide-react';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 import {
   BEST_RATING,
   TESTIMONIALS,
@@ -14,12 +16,12 @@ import { BoardCard, Grain, SectionHeading } from './tactic';
  * module exists to prevent.
  * @returns A JSX element with the testimonial band, or null while there are none.
  */
-export default async function TestimonialsSection() {
+export default function TestimonialsSection() {
+  const t = useTranslations('productPage.testimonials');
+
   if (TESTIMONIALS.length === 0) {
     return null;
   }
-
-  const t = await getTranslations('productPage.testimonials');
 
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
@@ -33,11 +35,17 @@ export default async function TestimonialsSection() {
 
         <div className='mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
           {TESTIMONIALS.slice(0, 3).map((testimonial) => (
-            <BoardCard key={`${testimonial.name}-${testimonial.date}`} pin='magnet' className='p-6'>
+            <BoardCard
+              key={`${testimonial.name}-${testimonial.date}`}
+              pin='magnet'
+              className='p-6'>
               {typeof testimonial.ratingValue === 'number' ? (
                 <p
                   className='flex items-center gap-1 text-primary'
-                  aria-label={`Bewertung: ${testimonial.ratingValue} von ${BEST_RATING}`}>
+                  aria-label={t('ratingAria', {
+                    value: testimonial.ratingValue,
+                    max: BEST_RATING,
+                  })}>
                   {Array.from({ length: BEST_RATING }, (_, index) => (
                     <Star
                       key={index}
@@ -54,7 +62,9 @@ export default async function TestimonialsSection() {
               <blockquote className='mt-3 text-[15px] leading-7 text-ink/80'>
                 „{testimonial.quote}“
               </blockquote>
-              <p className='mt-4 font-display text-sm font-bold text-ink'>{testimonial.name}</p>
+              <p className='mt-4 font-display text-sm font-bold text-ink'>
+                {testimonial.name}
+              </p>
               <p className='text-sm text-ink/60'>
                 {testimonial.role} · {testimonial.club}
               </p>

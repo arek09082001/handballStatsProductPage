@@ -1,4 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
+import { apiErrorFrom } from '@/lib/api-errors';
 
 interface NewsletterData {
   email: string;
@@ -9,11 +10,13 @@ interface NewsletterData {
 interface NewsletterResponse {
   success: boolean;
   message?: string;
+  /** German sentence for the log; the browser renders `code` instead. */
   error?: string;
+  code?: string;
 }
 
 const submitNewsletter = async (
-  data: NewsletterData
+  data: NewsletterData,
 ): Promise<NewsletterResponse> => {
   const response = await fetch('/api/newsletter', {
     method: 'POST',
@@ -26,7 +29,7 @@ const submitNewsletter = async (
   const result = await response.json();
 
   if (!response.ok) {
-    throw new Error(result.error || 'Fehler bei der Anmeldung');
+    throw apiErrorFrom(result, 'Fehler bei der Anmeldung');
   }
 
   return result;

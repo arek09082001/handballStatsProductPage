@@ -1,4 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
+import { apiErrorFrom } from '@/lib/api-errors';
 
 interface ContactData {
   name: string;
@@ -12,7 +13,9 @@ interface ContactData {
 interface ContactResponse {
   success: boolean;
   message?: string;
+  /** German sentence for the log; the browser renders `code` instead. */
   error?: string;
+  code?: string;
 }
 
 const submitContact = async (data: ContactData): Promise<ContactResponse> => {
@@ -27,7 +30,7 @@ const submitContact = async (data: ContactData): Promise<ContactResponse> => {
   const result = await response.json();
 
   if (!response.ok) {
-    throw new Error(result.error || 'Fehler beim Senden der Nachricht');
+    throw apiErrorFrom(result, 'Fehler beim Senden der Nachricht');
   }
 
   return result;

@@ -16,6 +16,7 @@ import { useSiteNavbar } from '../hooks/use-site-navbar';
 
 export default function SiteNavbar() {
   const t = useTranslations('navigationSection');
+  const tCommon = useTranslations('common');
   const {
     isOpen,
     isScrolled,
@@ -104,7 +105,7 @@ export default function SiteNavbar() {
                 {/* Only from `xl`, where the brand column is wide enough for
                  * one line — at `lg` it wrapped and spilled out of the bar. */}
                 <span className='mt-1 hidden text-left text-[13px] font-medium text-slate-500 xl:block'>
-                  {CLUB_CONFIG.display.brandTagline}
+                  {t('brandTagline')}
                 </span>
               </span>
             </button>
@@ -203,7 +204,7 @@ export default function SiteNavbar() {
                 ? 'border-slate-200 bg-white'
                 : 'border-white/50 bg-white/72 supports-[backdrop-filter]:bg-white/56',
             )}
-            aria-label={isOpen ? 'Menü schließen' : 'Menü öffnen'}
+            aria-label={isOpen ? tCommon('closeMenu') : tCommon('openMenu')}
             aria-expanded={isOpen}>
             {isOpen ? <X className='size-5' /> : <Menu className='size-5' />}
           </button>
@@ -264,7 +265,7 @@ export default function SiteNavbar() {
                         {CLUB_CONFIG.name}
                       </span>
                       <span className='block truncate text-[13px] font-medium text-slate-500'>
-                        {CLUB_CONFIG.display.brandTagline}
+                        {t('brandTagline')}
                       </span>
                     </span>
                   </button>

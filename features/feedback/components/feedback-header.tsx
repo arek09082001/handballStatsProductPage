@@ -1,5 +1,7 @@
+'use client';
+
 import { Mail } from 'lucide-react';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
   BoardKicker,
@@ -11,12 +13,13 @@ import {
  * Court-ground header for `/feedback` — the same Trainertafel band the contact
  * and legal routes use, so the page reads as part of the site rather than a
  * bolted-on survey. It carries the H1 and the direct e-mail address for anyone
- * who would rather write freely than fill in a rating. Static server component
- * (no client JS).
+ * who would rather write freely than fill in a rating. A client component
+ * because the language lives in client state on this site: rendered on the
+ * server the band would stay German while the form under it changed language.
  * @returns A JSX element rendering the feedback page header on the court ground.
  */
-export default async function FeedbackHeader() {
-  const t = await getTranslations('feedbackPage');
+export default function FeedbackHeader() {
+  const t = useTranslations('feedbackPage');
 
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>

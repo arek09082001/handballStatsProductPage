@@ -5,6 +5,8 @@ import { useSearchParams } from 'next/navigation';
 import { useState, type FormEvent } from 'react';
 import { AlertCircle, Check, Loader2, MailX } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { apiErrorFrom } from '@/lib/api-errors';
+import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -12,6 +14,7 @@ type Status = 'idle' | 'loading' | 'success' | 'error';
 
 export default function NewsletterUnsubscribe() {
   const t = useTranslations('newsletterUnsubscribe');
+  const apiErrorMessage = useApiErrorMessage();
   const searchParams = useSearchParams();
   const token = searchParams.get('token') ?? '';
 
@@ -38,7 +41,7 @@ export default function NewsletterUnsubscribe() {
       const result = await response.json();
 
       if (!response.ok || !result.success) {
-        setErrorMessage(result.error || t('errorDescription'));
+        setErrorMessage(apiErrorMessage(apiErrorFrom(result, '')));
         setStatus('error');
         // A failed token attempt → reveal the manual email form as a fallback.
         if (!manualMode) {
@@ -107,7 +110,9 @@ export default function NewsletterUnsubscribe() {
                   status === 'loading' || (manualMode && email.trim() === '')
                 }
                 className='inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#f97316] to-[#ea580c] px-4 text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5 disabled:pointer-events-none disabled:opacity-60'>
-                {status === 'loading' && <Loader2 className='size-4 animate-spin' />}
+                {status === 'loading' && (
+                  <Loader2 className='size-4 animate-spin' />
+                )}
                 {status === 'loading' ? t('pending') : t('unsubscribeButton')}
               </Button>
             </form>

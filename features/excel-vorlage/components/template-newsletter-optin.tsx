@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { AlertCircle, Check, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
 import { useNewsletter } from '@/lib/hooks/use-newsletter';
 
 /**
@@ -18,6 +19,7 @@ import { useNewsletter } from '@/lib/hooks/use-newsletter';
  */
 export default function TemplateNewsletterOptin() {
   const t = useTranslations('templatePage.optin');
+  const apiErrorMessage = useApiErrorMessage();
   const newsletterMutation = useNewsletter();
 
   const [email, setEmail] = useState('');
@@ -33,7 +35,7 @@ export default function TemplateNewsletterOptin() {
   const errorMessage = validationError
     ? validationError
     : newsletterMutation.isError
-      ? newsletterMutation.error?.message || t('genericError')
+      ? apiErrorMessage(newsletterMutation.error)
       : null;
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
