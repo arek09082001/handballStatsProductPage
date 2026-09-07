@@ -41,7 +41,9 @@ export const useSiteNavbar = () => {
       setIsScrolled(currentScrollY > SCROLL_OFFSET_THRESHOLD);
 
       if (Math.abs(scrollDelta) >= SCROLL_DIRECTION_THRESHOLD) {
-        setIsScrollingUp(scrollDelta < 0 || currentScrollY <= SCROLL_OFFSET_THRESHOLD);
+        setIsScrollingUp(
+          scrollDelta < 0 || currentScrollY <= SCROLL_OFFSET_THRESHOLD,
+        );
         lastScrollY = currentScrollY;
       } else if (currentScrollY <= SCROLL_OFFSET_THRESHOLD) {
         setIsScrollingUp(true);
@@ -77,7 +79,9 @@ export const useSiteNavbar = () => {
       return;
     }
 
-    const trackedIds = scrollSpySectionIds.filter((id) => id !== HOME_SECTION_ID);
+    const trackedIds = scrollSpySectionIds.filter(
+      (id) => id !== HOME_SECTION_ID,
+    );
     let frameId = 0;
 
     const resolveActiveSection = () => {
@@ -101,7 +105,9 @@ export const useSiteNavbar = () => {
         current = trackedIds[trackedIds.length - 1];
       }
 
-      setActiveSection((previous) => (previous === current ? previous : current));
+      setActiveSection((previous) =>
+        previous === current ? previous : current,
+      );
     };
 
     const handleScroll = () => {

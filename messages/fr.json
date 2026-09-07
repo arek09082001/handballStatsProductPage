@@ -307,7 +307,11 @@
       "contact": "Contact",
       "faq": "FAQ",
       "newsletter": "Newsletter",
-      "feedback": "Avis"
+      "feedback": "Avis",
+      "tacticsBoard": "Tableau tactique",
+      "handballStats": "Statistiques de handball",
+      "schedule": "Rendez-vous et présence",
+      "videoTagging": "Marquage vidéo"
     },
     "groups": {
       "product": "Produit",
@@ -3626,6 +3630,406 @@
       "title": "Des pourcentages qui se calculent tout seuls",
       "description": "Dans Statix, le pourcentage de tir naît au moment de la saisie – par joueur, par poste, avec la carte de tirs à côté. Inscrivez-vous gratuitement et saisissez vous-même, ou jetez d’abord un œil à la démo en direct sans compte.",
       "linkLabel": "Utiliser Statix gratuitement"
+    }
+  },
+  "boardPage": {
+    "hero": {
+      "kicker": "Outil gratuit",
+      "titleLead": "Tableau tactique de ",
+      "titleHighlight": "handball",
+      "lede": "Placez la formation, tracez les courses, c’est fait – sur un terrain à l’échelle avec les lignes de six et neuf mètres au bon endroit. À enregistrer en image ou à envoyer en lien dans le groupe de l’équipe, sans inscription."
+    },
+    "howTo": {
+      "kicker": "En quatre étapes",
+      "title": "Comment composer votre dispositif",
+      "description": "Le tableau ne démarre pas vide mais avec une défense 6:0 face à une attaque 3:3. À partir de là, tout se fait en glissant et en tapant.",
+      "steps": [
+        {
+          "title": "Choisir un dispositif",
+          "text": "Un 6:0 face à une attaque 3:3 est déjà en place. Sous le terrain, vous prenez à la place un 5:1, un 3:2:1, l’attaque 4:2, la contre-attaque ou un terrain vide."
+        },
+        {
+          "title": "Déplacer les aimants",
+          "text": "Poussez chaque aimant à sa place au doigt ou à la souris. L’orange est votre équipe, le bleu l’adversaire, le turquoise le gardien. Un double appui ou un appui long ouvre numéro, couleur et suppression directement sur l’aimant – sans quitter le terrain des yeux."
+        },
+        {
+          "title": "Tracer les courses sur le terrain",
+          "text": "Dans la barre d’outils – à côté du terrain, au-dessus sur téléphone – touchez l’icône de flèche puis glissez sur le terrain d’un point à l’autre. Si vous partez d’un joueur, la flèche lui reste accrochée. Un simple appui pose une flèche de longueur standard. La poignée centrale la courbe, l’icône de note pose un mot-clé à côté."
+        },
+        {
+          "title": "Partager ou enregistrer",
+          "text": "Le lien contient tout le tableau : celui qui l’ouvre voit exactement votre dispositif et peut continuer à le déplacer. Sinon, vous téléchargez un PNG, par exemple pour le groupe de l’équipe."
+        }
+      ],
+      "legendTitle": "Ce que signifient les couleurs et les traits",
+      "legendIntro": "Le langage graphique est celui de tous les tableaux tactiques accrochés dans les salles – pour qu’un tableau se lise même sans explication.",
+      "legendMagnets": {
+        "home": "Orange – votre équipe.",
+        "away": "Bleu – l’adversaire.",
+        "keeper": "Turquoise – le gardien, pour qu’il ne se perde pas dans le rideau.",
+        "ball": "Le ballon, plus petit qu’un joueur."
+      }
+    },
+    "court": {
+      "kicker": "À l’échelle",
+      "title": "Le terrain sous les aimants",
+      "description": "La plupart des outils de dessin en ligne prennent un rectangle et peignent un demi-cercle devant. Un terrain de handball est différent – et celui-ci est construit avec de vrais mètres.",
+      "caption": "Dimensions du terrain de handball et leur tracé sur le tableau tactique",
+      "colElement": "Élément",
+      "colMeasure": "Mesure",
+      "colOnBoard": "Sur le tableau",
+      "facts": [
+        {
+          "element": "Longueur",
+          "measure": "40 mètres",
+          "onBoard": "Entière sur le terrain complet, les 15 premiers mètres en demi-terrain."
+        },
+        {
+          "element": "Largeur",
+          "measure": "20 mètres",
+          "onBoard": "Toujours entière, dans les deux vues."
+        },
+        {
+          "element": "Ligne de surface de but (6 mètres)",
+          "measure": "6 mètres du but",
+          "onBoard": "Deux quarts de cercle aux poteaux plus une partie droite – pas un demi-cercle."
+        },
+        {
+          "element": "Ligne de jet franc (pointillés)",
+          "measure": "9 mètres du but",
+          "onBoard": "En pointillés et coupée exactement à la ligne de touche."
+        },
+        {
+          "element": "Ligne des sept mètres",
+          "measure": "7 mètres devant le centre du but",
+          "onBoard": "Une marque d’un mètre au milieu du terrain."
+        },
+        {
+          "element": "Ligne de limitation du gardien",
+          "measure": "4 mètres du but",
+          "onBoard": "Le petit trait entre le but et le point de sept mètres."
+        },
+        {
+          "element": "But (largeur × hauteur)",
+          "measure": "3 mètres × 2 mètres",
+          "onBoard": "Vu de dessus, seule la largeur est visible – comme un rectangle derrière la ligne de but."
+        }
+      ],
+      "closing": "Le plus important reste la ligne de surface de but : ce n’est pas un demi-cercle, mais deux quarts de cercle aux poteaux et une partie droite entre les deux. C’est exactement pour cela qu’un pivot au centre se tient plus loin du but qu’en position latérale – et exactement pour cela qu’un demi-cercle peint ne sert à rien pour parler de blocs. Pourquoi chaque ligne est là où elle est se trouve dans le guide : <court>terrain de handball : dimensions, lignes et marquages</court>."
+    },
+    "formations": {
+      "kicker": "Ne pas partir de zéro",
+      "title": "Les dispositifs prêts à l’emploi",
+      "description": "Cinq systèmes attendent dans le tableau. Vous en chargez un, poussez deux aimants selon vos réalités et c’est terminé – plutôt que de poser treize cercles à la main.",
+      "notes": [
+        {
+          "id": "6-0",
+          "title": "6:0 face à 3:3",
+          "text": "La situation standard chez les amateurs et les jeunes : six défenseurs sur une ligne à six mètres, en face trois arrières, deux ailiers et un pivot. Si vous voulez parler d’un bloc ou d’un croisé, vous commencez ici.",
+          "articleLabel": "La défense 6:0 au handball"
+        },
+        {
+          "id": "5-1",
+          "title": "5:1 avec l’avancé",
+          "text": "Rideau de cinq à la ligne, un joueur à hauteur de la ligne de jet franc. Sur le tableau, on voit tout de suite quel espace l’avancé ouvre – et par où l’attaque peut le contourner.",
+          "articleLabel": "La défense 5:1 au handball"
+        },
+        {
+          "id": "3-2-1",
+          "title": "3:2:1 sur trois lignes",
+          "text": "Trois joueurs à six mètres, deux devant, un avancé à neuf. L’étagement est tout l’intérêt de ce système, et l’étagement se raconte mal mais se montre bien.",
+          "articleLabel": "La défense 3:2:1 au handball"
+        },
+        {
+          "id": "4-2",
+          "title": "4:2 avec deux pivots",
+          "text": "Les ailiers rentrent, deux pivots travaillent contre la défense. Un moyen surtout face aux défenses avancées – et sur le tableau, la façon la plus rapide de montrer qui fixe qui.",
+          "articleLabel": "Les systèmes d’attaque au handball expliqués simplement"
+        },
+        {
+          "id": "tempogegenstoss",
+          "title": "Contre-attaque sur tout le terrain",
+          "text": "Le seul dispositif pour lequel le demi-terrain ne suffit pas. Première vague par les ailes, deuxième vague derrière, l’adversaire en repli – sur 40 mètres par 20.",
+          "articleLabel": "Travailler la contre-attaque au handball"
+        }
+      ],
+      "closing": "Le système qui convient à votre équipe, ce n’est pas le tableau qui le décide, c’est votre effectif. La comparaison des trois défenses les plus courantes est dans le guide : <systems>les systèmes défensifs au handball : 6:0, 5:1 et 3:2:1 comparés</systems>."
+    },
+    "limits": {
+      "kicker": "Rester honnête",
+      "title": "Ce qu’un tableau tactique ne peut pas faire",
+      "description": "Une combinaison dessinée est toujours belle – sur le tableau, personne ne défend. Quatre choses à garder en tête.",
+      "items": [
+        {
+          "title": "Un tableau est une image fixe",
+          "text": "Une combinaison est une séquence : bloc, décalage, passe. Une image en retient un instant. Dessinez plutôt deux ou trois tableaux à la suite que d’entasser toutes les flèches dans un seul."
+        },
+        {
+          "title": "L’adversaire ne reste pas immobile",
+          "text": "Les aimants bleus restent exactement où vous les avez posés. Une vraie défense glisse, aide et se transmet. Ce qui paraît libre sur le tableau ne l’est souvent qu’une demi-seconde dans la salle."
+        },
+        {
+          "title": "Le dispositif n’est pas l’exécution",
+          "text": "Les positions sont la partie facile. Le timing, le rythme et la lecture du pivot décident si la même combinaison finit en but ou en faute offensive – et cela ne figure sur aucun schéma."
+        },
+        {
+          "title": "Si cela a fonctionné, le tableau ne le dit pas",
+          "text": "Après le match reste la question de savoir si la combinaison a vraiment produit des tirs, et depuis quelles zones. Seule une analyse y répond, pas un dessin."
+        }
+      ],
+      "closing": "Comment lire dans un match si la combinaison a porté se trouve dans le guide : <analysis>l’analyse de match au handball : bien exploiter ses matchs</analysis>. Qui ne veut plus cocher les tirs sur une feuille les saisit en direct d’un geste – c’est à cela que sert <free>Statix, gratuitement et avec une démo en direct sans compte</free>. Pour dessiner, vous n’en avez pas besoin : ce tableau fonctionne entièrement sans inscription, et cela ne changera pas."
+    },
+    "embed": {
+      "kicker": "Le prix complet",
+      "title": "Ce que coûte le tableau",
+      "description": "Rien – et sans petites lignes. Deux choses méritent malgré tout d’être dites ouvertement.",
+      "watermarkStrong": "Chaque PNG exporté porte en petit « {watermark} » dans le coin.",
+      "watermarkText": "C’est la contrepartie d’un outil qui ne demande d’adresse e-mail à personne. Il n’existe pas de version payante où cette ligne disparaît, aucune limite au nombre d’exports, et aucun compteur qui finit par se vider.",
+      "noAccountStrong": "Il n’y a ni inscription ni espace de stockage.",
+      "noAccountText": "Votre tableau vit dans le navigateur et dans le lien de partage. Un terrain accueille {magnets} aimants, {arrows} flèches et {labels} notes – c’est la limite de la lisibilité et du lien, pas celle d’une offre gratuite.",
+      "embedTitle": "Intégrer le tableau au site du club",
+      "embedText": "Copiez le code, placez-le sur votre site – c’est tout. Gratuit, sans inscription, sans script de suivi. Sous le tableau intégré figure une mention avec un lien vers cette page ; c’est la seule condition. Si la hauteur ne convient pas à votre mise en page, modifiez simplement la valeur height.",
+      "snippetLabel": "code iframe",
+      "copy": "Copier",
+      "copied": "Copié",
+      "wideHint": "Vous avez plus de place sur votre page ? Mettez max-width à 1100px et height à 1450 – à partir de 1024 pixels de large, le tableau et les commandes se placent côte à côte et le cadre devient nettement plus plat."
+    },
+    "faq": {
+      "kicker": "Questions fréquentes",
+      "title": "Questions fréquentes sur le tableau tactique",
+      "description": "Réponses courtes à ce qui se pose au moment de dessiner et de partager.",
+      "items": [
+        {
+          "question": "Comment créer un dispositif de handball en ligne ?",
+          "answer": "Dans le tableau tactique, vous choisissez un dispositif prêt à l’emploi – 6:0, 5:1 ou 3:2:1 par exemple – puis vous déplacez les aimants à leur position. Pour les courses, les passes et les tirs, vous sélectionnez la flèche dans la barre d’outils et glissez directement sur le terrain d’un point à l’autre. Ensuite, vous téléchargez l’image en PNG ou vous partagez le lien."
+        },
+        {
+          "question": "Le tableau tactique est-il gratuit ?",
+          "answer": "Oui, entièrement. Pas d’inscription, pas de compte, pas de limite de durée ni de plafond sur le nombre de tableaux que vous enregistrez ou partagez. Le téléchargement PNG et le lien de partage fonctionnent également sans adresse e-mail."
+        },
+        {
+          "question": "Mes dispositifs sont-ils enregistrés ?",
+          "answer": "Non. Le tableau fonctionne entièrement dans votre navigateur. Quand vous touchez « copier le lien », tout le dispositif se trouve dans le lien lui-même – derrière le dièse. Les navigateurs n’envoient jamais cette partie d’une adresse à un serveur. Il n’existe donc aucune base de données contenant votre tactique."
+        },
+        {
+          "question": "Les dimensions du terrain sont-elles justes ?",
+          "answer": "Oui. Le terrain est dessiné à l’échelle : 40 mètres sur 20, la ligne de surface de but à 6 mètres du but, la ligne de jet franc en pointillés à 9 mètres, plus les lignes des sept mètres et de limitation du gardien. La ligne des 6 mètres est construite comme dans la salle, à partir de deux quarts de cercle aux poteaux et d’une partie droite, et non comme un demi-cercle."
+        },
+        {
+          "question": "Le tableau tactique fonctionne-t-il sur tablette dans la salle ?",
+          "answer": "C’est pour cela qu’il est fait. Chaque point de saisie mesure au moins 44 pixels, rien n’exige une souris, et le tableau fonctionne en portrait comme en paysage. Numéro et couleur s’ouvrent d’un double appui ou d’un appui long sur l’aimant. Tant que l’outil de déplacement est actif, vous pouvez faire défiler la page au-dessus du tableau normalement – ce n’est qu’au dessin que le terrain prend le geste."
+        },
+        {
+          "question": "Pourquoi l’image exportée porte-t-elle « statix-app.de » ?",
+          "answer": "C’est la petite ligne dans le coin du PNG – la seule contrepartie d’un outil sans inscription. Elle ne peut pas être supprimée contre paiement, puisqu’il n’existe pas de version payante. Le nombre d’exports n’est pas limité."
+        },
+        {
+          "question": "Puis-je intégrer le tableau tactique sur le site de notre club ?",
+          "answer": "Oui, volontiers. Copiez le code iframe de cette page sur votre site. Le tableau tournera dans votre mise en page avec les mêmes fonctions, gratuitement et sans inscription. Sous le tableau figure une mention avec un lien vers cette page."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Après le dessin",
+      "title": "Si la combinaison a marché, ce sont les chiffres qui le disent",
+      "description": "Dans Statix, vous saisissez chaque action en direct d’un geste et voyez après le match de quelles situations viennent vos buts – carte de tirs comprise. Inscrivez-vous gratuitement, ou jetez d’abord un œil à la démo en direct sans compte.",
+      "linkLabel": "Ou calculez d’abord le pourcentage de tir"
+    },
+    "tool": {
+      "embedTitle": "Tableau tactique de handball",
+      "embedAttributionLink": "Tableau tactique de handball de Statix",
+      "embedAttributionSuffix": "– l’application de statistiques de handball pour entraîneurs",
+      "magnetKinds": [
+        {
+          "kind": "home",
+          "label": "Mon équipe",
+          "action": "Placer un de vos joueurs sur le terrain"
+        },
+        {
+          "kind": "away",
+          "label": "Adversaire",
+          "action": "Placer un joueur adverse sur le terrain"
+        },
+        {
+          "kind": "keeper",
+          "label": "Gardien",
+          "action": "Placer le gardien sur le terrain"
+        },
+        {
+          "kind": "ball",
+          "label": "Ballon",
+          "action": "Poser le ballon sur le terrain"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "move",
+          "action": "Outil : déplacer les aimants",
+          "hint": "Faites glisser les aimants. Un double appui ou un appui long ouvre numéro et couleur."
+        },
+        {
+          "mode": "arrow",
+          "action": "Outil : tracer une flèche",
+          "hint": "Glissez sur le terrain – d’un point à l’autre. Partir d’un joueur accroche la flèche à lui."
+        },
+        {
+          "mode": "note",
+          "action": "Outil : poser une note",
+          "hint": "Touchez l’endroit où la note doit se placer."
+        }
+      ],
+      "arrowKinds": [
+        {
+          "kind": "laufweg",
+          "label": "Course",
+          "hint": "Trait plein – un joueur se déplace."
+        },
+        {
+          "kind": "pass",
+          "label": "Passe",
+          "hint": "Trait pointillé – le ballon change de mains."
+        },
+        {
+          "kind": "wurf",
+          "label": "Tir",
+          "hint": "Trait épais à pointe pleine – la finition."
+        }
+      ],
+      "arrowColors": [
+        {
+          "value": "marker",
+          "label": "Orange",
+          "longLabel": "Orange – votre équipe"
+        },
+        {
+          "value": "opponent",
+          "label": "Bleu",
+          "longLabel": "Bleu – adversaire"
+        },
+        {
+          "value": "neutral",
+          "label": "Neutre",
+          "longLabel": "Neutre"
+        }
+      ],
+      "arrowColorAria": "Couleur de flèche {label}",
+      "courtViews": [
+        {
+          "id": "halbfeld",
+          "label": "Demi-terrain",
+          "hint": "But en bas, 15 mètres de profondeur – pour la défense et l’attaque."
+        },
+        {
+          "id": "ganzfeld",
+          "label": "Terrain complet",
+          "hint": "40 × 20 mètres avec les deux buts – pour la contre-attaque et le repli."
+        }
+      ],
+      "formations": [
+        {
+          "id": "6-0",
+          "label": "Défense 6:0 contre attaque 3:3",
+          "hint": "La situation standard chez les amateurs et les jeunes."
+        },
+        {
+          "id": "5-1",
+          "label": "Défense 5:1 contre attaque 3:3",
+          "hint": "Rideau de cinq à la ligne, un avancé à hauteur de la ligne de jet franc."
+        },
+        {
+          "id": "3-2-1",
+          "label": "Défense 3:2:1 contre attaque 3:3",
+          "hint": "Trois à six mètres, deux devant, un avancé à neuf."
+        },
+        {
+          "id": "4-2",
+          "label": "Attaque 4:2 contre défense 6:0",
+          "hint": "Deux pivots fixent le centre, quatre restent en ligne arrière."
+        },
+        {
+          "id": "eigene-abwehr",
+          "label": "Seulement votre défense 6:0",
+          "hint": "Sans adversaire – pour la causerie défensive au vestiaire."
+        },
+        {
+          "id": "tempogegenstoss",
+          "label": "Contre-attaque sur tout le terrain",
+          "hint": "Première vague par les ailes, deuxième derrière, adversaire en repli."
+        },
+        {
+          "id": "leer",
+          "label": "Terrain vide",
+          "hint": "Juste le sol – vous placez tout vous-même."
+        }
+      ],
+      "settings": {
+        "formationLabel": "Dispositif prêt à l’emploi",
+        "sharedBoard": "Tableau partagé",
+        "courtLabel": "Terrain",
+        "exportBusy": "Génération …",
+        "export": "Télécharger le PNG",
+        "linkCopied": "Lien copié",
+        "copyLink": "Copier le lien",
+        "clear": "Vider le terrain",
+        "sharedHint": "Ce tableau vient d’un lien partagé. Choisissez un dispositif si vous voulez repartir de zéro.",
+        "shareLinkLabel": "Lien de partage",
+        "copyAria": "Copier le lien de partage dans le presse-papiers",
+        "shareNote": "Le lien contient tout le tableau. Rien n’en est enregistré – la partie située après le dièse ne quitte jamais votre navigateur."
+      },
+      "editor": {
+        "aria": "Modifier l’objet",
+        "magnet": "Aimant",
+        "ballNoNumber": "Le ballon ne porte pas de numéro.",
+        "numberLabel": "Numéro",
+        "decrement": "Un numéro de moins",
+        "increment": "Un numéro de plus",
+        "arrow": "Flèche",
+        "note": "Note",
+        "noteHint": "Au maximum {max} caractères – un mot, pas une phrase.",
+        "remove": "Retirer",
+        "done": "Terminé"
+      },
+      "canvas": {
+        "boardAria": "Tableau tactique – terrain avec aimants",
+        "keyboardHelp": "Avec Tab, vous atteignez chaque aimant, chaque poignée de flèche et chaque note. Les touches fléchées déplacent l’objet sélectionné, par pas plus grands avec la touche Maj enfoncée. Entrée ouvre numéro et couleur, Suppr retire l’objet du terrain.",
+        "magnetFallback": "Aimant",
+        "magnetName": "{kind} numéro {number}",
+        "ballName": "Ballon",
+        "noteAria": "Note : {text}",
+        "arrowHandleAria": "Déplacer {name} de la flèche",
+        "handleStart": "le départ",
+        "handleEnd": "la pointe",
+        "handleControl": "la courbure"
+      },
+      "announce": {
+        "moved": "Déplacé à {x} pour cent depuis la gauche, {y} pour cent depuis le haut.",
+        "arrowAdjusted": "Flèche ajustée.",
+        "noteMoved": "Note déplacée.",
+        "removed": "Retiré du terrain.",
+        "ballPlaced": "Ballon posé sur le terrain.",
+        "magnetPlaced": "Aimant {number} posé sur le terrain.",
+        "arrowDrawn": "Flèche tracée.",
+        "notePlaced": "Note posée. Saisissez le texte et validez avec Terminé.",
+        "cleared": "Terrain vidé.",
+        "linkCopied": "Lien copié.",
+        "pngDownloaded": "PNG téléchargé.",
+        "formationLoaded": "Dispositif chargé : {label}."
+      },
+      "notices": {
+        "brokenLink": "Le lien partagé n’a pas pu être lu – il a probablement été tronqué en cours de route. Vous démarrez avec le dispositif par défaut.",
+        "magnetLimit": "Plus de {max} aimants ne tiennent pas sur un tableau – cela fait déjà deux effectifs complets. Retirez-en un d’abord.",
+        "arrowLimit": "Au-delà de {max} flèches, cela devient illisible. Retirez-en une d’abord.",
+        "labelLimit": "Plus de {max} notes ne tiennent pas sur le terrain.",
+        "copyRejected": "Le navigateur a refusé la copie. Le lien se trouve dans le champ à côté – sélectionnez-le et copiez-le.",
+        "exportFailed": "L’image n’a pas pu être générée. Une capture d’écran du tableau fait tout aussi bien l’affaire – ou partagez le lien."
+      },
+      "defaultNoteText": "Bloc",
+      "rail": {
+        "toolGroup": "Outil",
+        "arrowKindGroup": "Type de flèche",
+        "arrowColorGroup": "Couleur de la flèche",
+        "magnetGroup": "Placer un aimant sur le terrain"
+      }
     }
   }
 }

@@ -307,7 +307,11 @@
       "contact": "Kontakt",
       "faq": "FAQ",
       "newsletter": "Newsletter",
-      "feedback": "Opinie i uwagi"
+      "feedback": "Opinie i uwagi",
+      "tacticsBoard": "Tablica taktyczna",
+      "handballStats": "Statystyki piłki ręcznej",
+      "schedule": "Terminy i frekwencja",
+      "videoTagging": "Tagowanie wideo"
     },
     "groups": {
       "product": "Produkt",
@@ -3626,6 +3630,406 @@
       "title": "Wskaźniki, które liczą się same",
       "description": "W Statix skuteczność rzutów powstaje w trakcie dotykania ekranu – na zawodnika, na pozycję, a obok mapa rzutów. Zarejestruj się bezpłatnie i rejestruj sam albo zajrzyj najpierw do demo na żywo bez konta.",
       "linkLabel": "Korzystaj ze Statix za darmo"
+    }
+  },
+  "boardPage": {
+    "hero": {
+      "kicker": "Bezpłatne narzędzie",
+      "titleLead": "Tablica taktyczna ",
+      "titleHighlight": "piłki ręcznej",
+      "lede": "Ustaw skład, narysuj drogi biegu i gotowe – na boisku w skali, z liniami sześciu i dziewięciu metrów we właściwym miejscu. Zapisz jako obraz albo wyślij linkiem na grupę drużyny, bez rejestracji."
+    },
+    "howTo": {
+      "kicker": "W czterech krokach",
+      "title": "Tak układasz wasze ustawienie",
+      "description": "Tablica nie startuje pusta, tylko z obroną 6:0 przeciwko atakowi 3:3. Od tego momentu wszystko polega na przeciąganiu i dotykaniu.",
+      "steps": [
+        {
+          "title": "Wybierz ustawienie",
+          "text": "Na tablicy leży już 6:0 przeciwko atakowi 3:3. Pod boiskiem możesz zamiast tego wziąć 5:1, 3:2:1, atak 4:2, kontratak albo puste boisko."
+        },
+        {
+          "title": "Przesuwaj magnesy",
+          "text": "Każdy magnes ustaw palcem albo myszą na swoim miejscu. Pomarańczowy to twoja drużyna, niebieski rywal, turkusowy bramkarz. Podwójne dotknięcie albo dłuższe przytrzymanie otwiera numer, kolor i usuwanie wprost na magnesie – bez odrywania wzroku od boiska."
+        },
+        {
+          "title": "Rysuj drogi wprost na boisku",
+          "text": "Na pasku narzędzi – obok boiska, na telefonie nad nim – dotknij ikony strzałki i przeciągnij po boisku od punktu do punktu. Jeśli zaczniesz na zawodniku, strzałka zostanie do niego przypięta. Pojedyncze dotknięcie stawia strzałkę o standardowej długości. Środkowym uchwytem ją wyginasz, ikoną notatki dokładasz obok słowo klucz."
+        },
+        {
+          "title": "Udostępnij albo zapisz",
+          "text": "Link zawiera całą tablicę – kto go otworzy, zobaczy dokładnie twoje ustawienie i będzie mógł je dalej przesuwać. Alternatywnie pobierasz PNG, na przykład na grupę drużyny."
+        }
+      ],
+      "legendTitle": "Co oznacza który kolor i która linia",
+      "legendIntro": "Język rysunku jest ten sam co na każdej tablicy taktycznej w hali – żeby tablicę dało się czytać także bez objaśnień.",
+      "legendMagnets": {
+        "home": "Pomarańczowy – wasza drużyna.",
+        "away": "Niebieski – rywal.",
+        "keeper": "Turkusowy – bramkarz, żeby nie zgubił się w linii.",
+        "ball": "Piłka, mniejsza niż zawodnik."
+      }
+    },
+    "court": {
+      "kicker": "W skali",
+      "title": "Boisko pod magnesami",
+      "description": "Większość narzędzi do rysowania w sieci bierze prostokąt i maluje przed nim półkole. Boisko do piłki ręcznej wygląda inaczej – a to zbudowano z prawdziwych metrów.",
+      "caption": "Wymiary boiska do piłki ręcznej i sposób ich narysowania na tablicy taktycznej",
+      "colElement": "Element",
+      "colMeasure": "Wymiar",
+      "colOnBoard": "Na tablicy",
+      "facts": [
+        {
+          "element": "Długość",
+          "measure": "40 metrów",
+          "onBoard": "Na całym boisku w całości, na połowie przednie 15 metrów."
+        },
+        {
+          "element": "Szerokość",
+          "measure": "20 metrów",
+          "onBoard": "Zawsze w całości, w obu widokach."
+        },
+        {
+          "element": "Linia pola bramkowego (6 metrów)",
+          "measure": "6 metrów od bramki",
+          "onBoard": "Dwie ćwiartki koła przy słupkach plus odcinek prosty – nie półkole."
+        },
+        {
+          "element": "Linia rzutu wolnego (przerywana)",
+          "measure": "9 metrów od bramki",
+          "onBoard": "Przerywana i ucięta dokładnie na linii bocznej."
+        },
+        {
+          "element": "Linia siedmiu metrów",
+          "measure": "7 metrów przed środkiem bramki",
+          "onBoard": "Metrowej długości oznaczenie na środku boiska."
+        },
+        {
+          "element": "Linia ograniczenia bramkarza",
+          "measure": "4 metry od bramki",
+          "onBoard": "Krótka kreska między bramką a punktem siedmiu metrów."
+        },
+        {
+          "element": "Bramka (szerokość × wysokość)",
+          "measure": "3 metry × 2 metry",
+          "onBoard": "Z góry widać tylko szerokość – jako prostokąt za linią bramkową."
+        }
+      ],
+      "closing": "Najważniejsza jest linia pola bramkowego: to nie półkole, tylko dwie ćwiartki koła przy słupkach i prosty odcinek pomiędzy nimi. Właśnie dlatego obrotowy na środku stoi dalej od bramki niż na pozycji bocznej – i właśnie dlatego namalowane półkole nie nadaje się do omawiania zasłon. Dlaczego każda linia leży tam, gdzie leży, opisuje poradnik: <court>boisko do piłki ręcznej: wymiary, linie i oznaczenia</court>."
+    },
+    "formations": {
+      "kicker": "Nie zaczynać od zera",
+      "title": "Gotowe ustawienia",
+      "description": "W tablicy czeka pięć systemów. Ładujesz jeden, przesuwasz dwa magnesy pod wasze realia i gotowe – zamiast stawiać trzynaście kółek ręcznie.",
+      "notes": [
+        {
+          "id": "6-0",
+          "title": "6:0 przeciwko 3:3",
+          "text": "Sytuacja standardowa w piłce amatorskiej i młodzieżowej: sześciu obrońców w jednej linii na sześciu metrach, naprzeciwko trzech rozgrywających, dwóch skrzydłowych i obrotowy. Jeśli chcesz omówić zasłonę albo krzyżowanie, zaczynasz właśnie tu.",
+          "articleLabel": "Obrona 6:0 w piłce ręcznej"
+        },
+        {
+          "id": "5-1",
+          "title": "5:1 z wysuniętym",
+          "text": "Piątka na linii, jeden zawodnik na wysokości linii rzutu wolnego. Na tablicy od razu widać, jaką przestrzeń otwiera wysunięty – i którędy atak może go obejść.",
+          "articleLabel": "Obrona 5:1 w piłce ręcznej"
+        },
+        {
+          "id": "3-2-1",
+          "title": "3:2:1 w trzech liniach",
+          "text": "Trzech na sześciu metrach, dwóch przed nimi, jeden wysunięty na dziewięciu. Uszeregowanie to cały sens tego systemu, a uszeregowanie źle się opowiada, za to dobrze pokazuje.",
+          "articleLabel": "Obrona 3:2:1 w piłce ręcznej"
+        },
+        {
+          "id": "4-2",
+          "title": "4:2 z dwoma obrotowymi",
+          "text": "Skrzydłowi wchodzą do środka, dwóch obrotowych pracuje przy obronie. Środek zwłaszcza przeciwko obronom wysuniętym – a na tablicy najszybszy sposób, żeby pokazać, kto kogo wiąże.",
+          "articleLabel": "Systemy ataku w piłce ręcznej wyjaśnione prosto"
+        },
+        {
+          "id": "tempogegenstoss",
+          "title": "Kontratak przez całe boisko",
+          "text": "Jedyne ustawienie, dla którego połowa boiska nie wystarcza. Pierwsza fala skrzydłami, druga fala za nią, rywal w powrocie – na 40 na 20 metrach.",
+          "articleLabel": "Trenowanie kontrataku w piłce ręcznej"
+        }
+      ],
+      "closing": "To, który system pasuje do waszej drużyny, decyduje nie tablica, tylko wasza kadra. Porównanie trzech najczęstszych ustawień obronnych jest w poradniku: <systems>systemy obrony w piłce ręcznej: 6:0, 5:1 i 3:2:1 w porównaniu</systems>."
+    },
+    "limits": {
+      "kicker": "Uczciwie",
+      "title": "Czego tablica taktyczna nie potrafi",
+      "description": "Narysowana akcja zawsze wygląda dobrze – na tablicy nikt się nie broni. Trzeba mieć na uwadze cztery rzeczy.",
+      "items": [
+        {
+          "title": "Tablica to nieruchomy obraz",
+          "text": "Akcja jest sekwencją: zasłona, odejście, podanie. Na obrazku zostaje z tego jedna chwila. Narysuj raczej dwie albo trzy tablice po kolei, niż wciskaj wszystkie strzałki w jedną."
+        },
+        {
+          "title": "Rywal nie stoi w miejscu",
+          "text": "Niebieskie magnesy stoją dokładnie tam, gdzie je przesunąłeś. Prawdziwa obrona przesuwa się, asekuruje i przekazuje. To, co na tablicy wygląda na wolne, w hali bywa wolne przez pół sekundy."
+        },
+        {
+          "title": "Ustawienie to nie wykonanie",
+          "text": "Pozycje są łatwą częścią. Timing, tempo i odczyt obrotowego decydują, czy ta sama akcja skończy się bramką, czy faulem w ataku – a tego nie ma na żadnej grafice."
+        },
+        {
+          "title": "Czy zadziałało, tablica nie powie",
+          "text": "Po meczu zostaje pytanie, czy z akcji rzeczywiście powstały rzuty i z jakich stref. Odpowiada na to tylko analiza, a nie rysunek."
+        }
+      ],
+      "closing": "Jak wyczytać z meczu, czy akcja się broniła, opisuje poradnik: <analysis>analiza meczu w piłce ręcznej: jak porządnie analizować mecze</analysis>. Kto nie chce już kreskować rzutów na kartce, rejestruje je na żywo jednym dotknięciem – po to jest <free>Statix, bezpłatnie i z demo na żywo bez konta</free>. Do rysowania nic z tego nie potrzebujesz: ta tablica działa całkowicie bez rejestracji i to się nie zmieni."
+    },
+    "embed": {
+      "kicker": "Cała cena",
+      "title": "Ile kosztuje tablica",
+      "description": "Nic – i to bez drobnego druku. Dwie rzeczy warto mimo to powiedzieć wprost.",
+      "watermarkStrong": "Na każdym wyeksportowanym PNG w rogu widnieje małe „{watermark}”.",
+      "watermarkText": "To rewanż za narzędzie, które nikogo nie pyta o adres e-mail. Nie ma wersji płatnej, w której ta linijka znika, nie ma limitu eksportów ani licznika, który kiedyś się wyczerpie.",
+      "noAccountStrong": "Nie ma rejestracji ani miejsca na zapis.",
+      "noAccountText": "Twoja tablica żyje w przeglądarce i w linku do udostępnienia. Na boisku mieści się {magnets} magnesów, {arrows} strzałek i {labels} notatek – to granica czytelności i długości linku, a nie granica darmowego planu.",
+      "embedTitle": "Osadź tablicę na stronie klubu",
+      "embedText": "Skopiuj kod, wstaw go na swoją stronę – gotowe. Bezpłatnie, bez rejestracji i bez skryptu śledzącego. Pod osadzoną tablicą widnieje informacja z linkiem do tej strony; to jedyny warunek. Jeśli wysokość nie pasuje do waszego układu, po prostu zmieńcie wartość height.",
+      "snippetLabel": "kod iframe",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano",
+      "wideHint": "Macie na stronie więcej miejsca? Ustawcie max-width na 1100px, a height na 1450 – od 1024 pikseli szerokości tablica i sterowanie leżą obok siebie, a ramka staje się wyraźnie niższa."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o tablicę taktyczną",
+      "description": "Krótkie odpowiedzi na to, co pojawia się przy rysowaniu i udostępnianiu.",
+      "items": [
+        {
+          "question": "Jak stworzyć ustawienie do piłki ręcznej online?",
+          "answer": "W tablicy taktycznej wybierasz gotowe ustawienie – na przykład 6:0, 5:1 albo 3:2:1 – a potem przeciągasz magnesy na swoje pozycje. Do dróg biegu, podań i rzutów wybierasz na pasku narzędzi strzałkę i ciągniesz wprost po boisku od punktu do punktu. Następnie pobierasz obraz jako PNG albo udostępniasz link."
+        },
+        {
+          "question": "Czy tablica taktyczna jest bezpłatna?",
+          "answer": "Tak, w pełni. Nie ma rejestracji, konta, limitu czasu ani ograniczenia, ile tablic zapiszesz czy udostępnisz. Pobieranie PNG i link do udostępnienia też działają bez adresu e-mail."
+        },
+        {
+          "question": "Czy moje ustawienia są zapisywane?",
+          "answer": "Nie. Tablica liczy wszystko w twojej przeglądarce. Kiedy dotkniesz „kopiuj link”, całe ustawienie tkwi w samym linku – za znakiem krzyżyka. Tej części adresu przeglądarki nigdy nie wysyłają na serwer. Nie ma więc żadnej bazy danych z waszą taktyką."
+        },
+        {
+          "question": "Czy wymiary boiska się zgadzają?",
+          "answer": "Tak. Boisko jest narysowane w skali: 40 na 20 metrów, linia pola bramkowego 6 metrów od bramki, przerywana linia rzutu wolnego 9 metrów, do tego linia siedmiu metrów i linia ograniczenia bramkarza. Linia 6 metrów jest zbudowana jak w hali, z dwóch ćwiartek koła przy słupkach i prostego odcinka, a nie jako półkole."
+        },
+        {
+          "question": "Czy tablica działa na tablecie w hali?",
+          "answer": "Po to powstała. Każdy punkt chwytu ma co najmniej 44 piksele, nic nie wymaga myszy, a tablica działa w pionie i w poziomie. Numer i kolor otwierasz podwójnym dotknięciem albo długim przytrzymaniem wprost na magnesie. Dopóki aktywne jest narzędzie przesuwania, stronę nad tablicą przewijasz normalnie – dopiero przy rysowaniu boisko przejmuje gest."
+        },
+        {
+          "question": "Dlaczego na wyeksportowanym obrazie widnieje „statix-app.de”?",
+          "answer": "To ta mała linijka w rogu PNG – jedyny rewanż za narzędzie bez rejestracji. Nie da się jej usunąć za opłatą, bo nie ma wersji płatnej. Liczba eksportów nie jest ograniczona."
+        },
+        {
+          "question": "Czy mogę osadzić tablicę na stronie naszego klubu?",
+          "answer": "Tak, chętnie. Skopiuj kod iframe z tej strony na swoją witrynę. Tablica będzie działać w waszym układzie, z tym samym zakresem funkcji, bezpłatnie i bez rejestracji. Pod tablicą widnieje informacja z linkiem do tej strony."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Po rysowaniu",
+      "title": "Czy akcja zadziałała, pokazują liczby",
+      "description": "W Statix rejestrujesz każdą akcję na żywo jednym dotknięciem i po meczu widzisz, z jakich sytuacji padają wasze bramki – razem z mapą rzutów. Zarejestruj się bezpłatnie albo zajrzyj najpierw do demo na żywo bez konta.",
+      "linkLabel": "Albo policz najpierw skuteczność rzutów"
+    },
+    "tool": {
+      "embedTitle": "Tablica taktyczna piłki ręcznej",
+      "embedAttributionLink": "Tablica taktyczna piłki ręcznej od Statix",
+      "embedAttributionSuffix": "– aplikacji do statystyk piłki ręcznej dla trenerów",
+      "magnetKinds": [
+        {
+          "kind": "home",
+          "label": "Nasi",
+          "action": "Postaw własnego zawodnika na boisku"
+        },
+        {
+          "kind": "away",
+          "label": "Rywal",
+          "action": "Postaw zawodnika rywala na boisku"
+        },
+        {
+          "kind": "keeper",
+          "label": "Bramkarz",
+          "action": "Postaw bramkarza na boisku"
+        },
+        {
+          "kind": "ball",
+          "label": "Piłka",
+          "action": "Połóż piłkę na boisku"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "move",
+          "action": "Narzędzie: przesuwanie magnesów",
+          "hint": "Przeciągaj magnesy. Podwójne dotknięcie albo długie przytrzymanie otwiera numer i kolor."
+        },
+        {
+          "mode": "arrow",
+          "action": "Narzędzie: rysowanie strzałki",
+          "hint": "Ciągnij po boisku – skąd dokąd. Start na zawodniku przypina strzałkę do niego."
+        },
+        {
+          "mode": "note",
+          "action": "Narzędzie: wstawianie notatki",
+          "hint": "Dotknij miejsca, w którym ma stanąć notatka."
+        }
+      ],
+      "arrowKinds": [
+        {
+          "kind": "laufweg",
+          "label": "Droga biegu",
+          "hint": "Linia ciągła – zawodnik się przemieszcza."
+        },
+        {
+          "kind": "pass",
+          "label": "Podanie",
+          "hint": "Linia przerywana – piłka zmienia właściciela."
+        },
+        {
+          "kind": "wurf",
+          "label": "Rzut",
+          "hint": "Gruba linia z pełnym grotem – wykończenie akcji."
+        }
+      ],
+      "arrowColors": [
+        {
+          "value": "marker",
+          "label": "Pomarańczowy",
+          "longLabel": "Pomarańczowy – własna drużyna"
+        },
+        {
+          "value": "opponent",
+          "label": "Niebieski",
+          "longLabel": "Niebieski – rywal"
+        },
+        {
+          "value": "neutral",
+          "label": "Neutralny",
+          "longLabel": "Neutralny"
+        }
+      ],
+      "arrowColorAria": "Kolor strzałki {label}",
+      "courtViews": [
+        {
+          "id": "halbfeld",
+          "label": "Połowa boiska",
+          "hint": "Bramka na dole, 15 metrów głębokości – do obrony i ataku."
+        },
+        {
+          "id": "ganzfeld",
+          "label": "Całe boisko",
+          "hint": "40 × 20 metrów z obiema bramkami – do kontrataku i powrotu."
+        }
+      ],
+      "formations": [
+        {
+          "id": "6-0",
+          "label": "Obrona 6:0 przeciwko atakowi 3:3",
+          "hint": "Sytuacja standardowa w piłce amatorskiej i młodzieżowej."
+        },
+        {
+          "id": "5-1",
+          "label": "Obrona 5:1 przeciwko atakowi 3:3",
+          "hint": "Piątka na linii, jeden wysunięty na wysokości linii rzutu wolnego."
+        },
+        {
+          "id": "3-2-1",
+          "label": "Obrona 3:2:1 przeciwko atakowi 3:3",
+          "hint": "Trzech na sześciu metrach, dwóch przed nimi, jeden wysunięty na dziewięciu."
+        },
+        {
+          "id": "4-2",
+          "label": "Atak 4:2 przeciwko obronie 6:0",
+          "hint": "Dwóch obrotowych wiąże środek, czterech stoi w drugiej linii."
+        },
+        {
+          "id": "eigene-abwehr",
+          "label": "Tylko własna obrona 6:0",
+          "hint": "Bez rywala – na omówienie obrony w szatni."
+        },
+        {
+          "id": "tempogegenstoss",
+          "label": "Kontratak przez całe boisko",
+          "hint": "Pierwsza fala skrzydłami, druga za nią, rywal w powrocie."
+        },
+        {
+          "id": "leer",
+          "label": "Puste boisko",
+          "hint": "Tylko podłoże – wszystko ustawiasz sam."
+        }
+      ],
+      "settings": {
+        "formationLabel": "Gotowe ustawienie",
+        "sharedBoard": "Udostępniona tablica",
+        "courtLabel": "Boisko",
+        "exportBusy": "Generowanie …",
+        "export": "Pobierz PNG",
+        "linkCopied": "Link skopiowany",
+        "copyLink": "Kopiuj link",
+        "clear": "Wyczyść boisko",
+        "sharedHint": "Ta tablica pochodzi z udostępnionego linku. Wybierz ustawienie, jeśli chcesz zacząć od nowa.",
+        "shareLinkLabel": "Link do udostępnienia",
+        "copyAria": "Skopiuj link do schowka",
+        "shareNote": "W linku mieści się cała tablica. Nic z tego nie jest zapisywane – część za znakiem krzyżyka nigdy nie opuszcza twojej przeglądarki."
+      },
+      "editor": {
+        "aria": "Edytuj obiekt",
+        "magnet": "Magnes",
+        "ballNoNumber": "Piłka nie ma numeru.",
+        "numberLabel": "Numer",
+        "decrement": "Numer o jeden mniejszy",
+        "increment": "Numer o jeden większy",
+        "arrow": "Strzałka",
+        "note": "Notatka",
+        "noteHint": "Najwyżej {max} znaków – jedno słowo, nie zdanie.",
+        "remove": "Usuń",
+        "done": "Gotowe"
+      },
+      "canvas": {
+        "boardAria": "Tablica taktyczna – boisko z magnesami",
+        "keyboardHelp": "Tabulatorem dojdziesz do każdego magnesu, każdego uchwytu strzałki i każdej notatki. Strzałki przesuwają zaznaczony obiekt, z wciśniętym Shiftem w większych krokach. Enter otwiera numer i kolor, Delete zdejmuje obiekt z boiska.",
+        "magnetFallback": "Magnes",
+        "magnetName": "{kind} numer {number}",
+        "ballName": "Piłka",
+        "noteAria": "Notatka: {text}",
+        "arrowHandleAria": "Przesuń {name} strzałki",
+        "handleStart": "początek",
+        "handleEnd": "grot",
+        "handleControl": "krzywiznę"
+      },
+      "announce": {
+        "moved": "Przesunięto na {x} procent od lewej i {y} procent od góry.",
+        "arrowAdjusted": "Strzałka dopasowana.",
+        "noteMoved": "Notatka przesunięta.",
+        "removed": "Zdjęto z boiska.",
+        "ballPlaced": "Piłka położona na boisku.",
+        "magnetPlaced": "Magnes {number} postawiony na boisku.",
+        "arrowDrawn": "Strzałka narysowana.",
+        "notePlaced": "Notatka wstawiona. Wpisz tekst i potwierdź przyciskiem Gotowe.",
+        "cleared": "Boisko wyczyszczone.",
+        "linkCopied": "Link skopiowany.",
+        "pngDownloaded": "PNG pobrany.",
+        "formationLoaded": "Wczytano ustawienie: {label}."
+      },
+      "notices": {
+        "brokenLink": "Nie udało się odczytać udostępnionego linku – prawdopodobnie został ucięty przy przesyłaniu dalej. Zaczynasz od ustawienia domyślnego.",
+        "magnetLimit": "Więcej niż {max} magnesów nie zmieści się na tablicy – to już dwie pełne kadry. Zdejmij najpierw jeden.",
+        "arrowLimit": "Powyżej {max} strzałek robi się nieczytelnie. Usuń najpierw jedną.",
+        "labelLimit": "Więcej niż {max} notatek nie zmieści się na boisku.",
+        "copyRejected": "Przeglądarka odmówiła kopiowania. Link stoi w polu obok – zaznacz go i skopiuj.",
+        "exportFailed": "Nie udało się wygenerować obrazu. Zrzut ekranu tablicy zadziała tak samo – albo udostępnij link."
+      },
+      "defaultNoteText": "Zasłona",
+      "rail": {
+        "toolGroup": "Narzędzie",
+        "arrowKindGroup": "Rodzaj strzałki",
+        "arrowColorGroup": "Kolor strzałki",
+        "magnetGroup": "Postaw magnes na boisku"
+      }
     }
   }
 }

@@ -307,7 +307,11 @@
       "contact": "Kontakt",
       "faq": "FAQ",
       "newsletter": "Newsletter",
-      "feedback": "Feedback"
+      "feedback": "Feedback",
+      "tacticsBoard": "Taktikboard",
+      "handballStats": "Handball-Statistiken",
+      "schedule": "Termine & Teilnahme",
+      "videoTagging": "Video-Tagging"
     },
     "groups": {
       "product": "Produkt",
@@ -3626,6 +3630,406 @@
       "title": "Quoten, die sich selbst ausrechnen",
       "description": "In Statix entsteht die Wurfquote beim Tippen – pro Spieler, pro Position, dazu das Wurfbild. Kostenlos registrieren und selbst erfassen, oder vorher in der Live-Demo ohne Account reinschauen.",
       "linkLabel": "Statix kostenlos nutzen"
+    }
+  },
+  "boardPage": {
+    "hero": {
+      "kicker": "Kostenloses Werkzeug",
+      "titleLead": "Handball-",
+      "titleHighlight": "Taktikboard",
+      "lede": "Aufstellung ziehen, Laufwege einzeichnen, fertig – auf einem maßstabsgetreuen Feld mit Sechs- und Neunmeterlinie an der richtigen Stelle. Als Bild speichern oder als Link in die Mannschafts-Gruppe, ohne Anmeldung."
+    },
+    "howTo": {
+      "kicker": "In vier Schritten",
+      "title": "So erstellst du eure Aufstellung",
+      "description": "Das Board startet nicht leer, sondern mit einer 6:0-Abwehr gegen einen 3:3-Angriff. Von da an ist alles Ziehen und Tippen.",
+      "steps": [
+        {
+          "title": "Aufstellung wählen",
+          "text": "Auf dem Board liegt schon eine 6:0 gegen einen 3:3-Angriff. Unter dem Feld holst du dir stattdessen 5:1, 3:2:1, den 4:2-Angriff, den Tempogegenstoß oder ein leeres Feld."
+        },
+        {
+          "title": "Magnete ziehen",
+          "text": "Jeden Magneten mit dem Finger oder der Maus an seinen Platz schieben. Orange ist deine Mannschaft, blau der Gegner, türkis der Torwart. Doppeltippen oder lange draufdrücken öffnet Nummer, Farbe und Löschen direkt am Magneten – ohne den Blick vom Feld zu nehmen."
+        },
+        {
+          "title": "Wege direkt aufs Feld ziehen",
+          "text": "In der Werkzeugleiste – neben dem Feld, auf dem Handy darüber – auf das Pfeil-Symbol tippen und dann auf dem Feld von wo nach wo ziehen. Startest du auf einem Spieler, hängt der Pfeil an ihm. Ein einzelner Tipp setzt einen Pfeil in Standardlänge. Mit dem mittleren Griff biegst du ihn, mit dem Notiz-Symbol legst du ein Stichwort daneben."
+        },
+        {
+          "title": "Teilen oder speichern",
+          "text": "Der Link enthält das komplette Board – wer ihn öffnet, sieht genau deine Aufstellung und kann sie weiterschieben. Alternativ lädst du ein PNG herunter, etwa für die Mannschafts-Gruppe."
+        }
+      ],
+      "legendTitle": "Was welche Farbe und welche Linie bedeutet",
+      "legendIntro": "Die Zeichensprache ist die, die auf jeder Taktiktafel in der Halle hängt – damit ein Board auch ohne Erklärung lesbar ist.",
+      "legendMagnets": {
+        "home": "Orange – eure Mannschaft.",
+        "away": "Blau – der Gegner.",
+        "keeper": "Türkis – der Torwart, damit er sich nicht in der Kette verliert.",
+        "ball": "Der Ball, kleiner als ein Spieler."
+      }
+    },
+    "court": {
+      "kicker": "Maßstabsgetreu",
+      "title": "Das Feld unter den Magneten",
+      "description": "Die meisten Zeichenwerkzeuge im Netz nehmen ein Rechteck und malen einen Halbkreis davor. Ein Handballfeld sieht anders aus – und dieses hier ist aus echten Metern gebaut.",
+      "caption": "Maße des Handballfelds und wie sie auf dem Taktikboard gezeichnet sind",
+      "colElement": "Element",
+      "colMeasure": "Maß",
+      "colOnBoard": "Auf dem Board",
+      "facts": [
+        {
+          "element": "Länge",
+          "measure": "40 Meter",
+          "onBoard": "Im Ganzfeld komplett, im Halbfeld die vorderen 15 Meter."
+        },
+        {
+          "element": "Breite",
+          "measure": "20 Meter",
+          "onBoard": "Immer vollständig, in beiden Ansichten."
+        },
+        {
+          "element": "Torraumlinie (6-Meter-Linie)",
+          "measure": "6 Meter vom Tor",
+          "onBoard": "Zwei Viertelkreise an den Pfosten plus gerades Stück – kein Halbkreis."
+        },
+        {
+          "element": "Freiwurflinie (gestrichelt)",
+          "measure": "9 Meter vom Tor",
+          "onBoard": "Gestrichelt und exakt an der Seitenlinie abgeschnitten."
+        },
+        {
+          "element": "Siebenmeterlinie",
+          "measure": "7 Meter vor Tormitte",
+          "onBoard": "Ein Meter lange Marke in der Feldmitte."
+        },
+        {
+          "element": "Torwart-Grenzlinie",
+          "measure": "4 Meter vom Tor",
+          "onBoard": "Der kurze Strich zwischen Tor und Siebenmeterpunkt."
+        },
+        {
+          "element": "Tor (Breite × Höhe)",
+          "measure": "3 Meter × 2 Meter",
+          "onBoard": "Von oben ist nur die Breite sichtbar – als Kasten hinter der Torlinie."
+        }
+      ],
+      "closing": "Wichtig ist vor allem die Torraumlinie: Sie ist kein Halbkreis, sondern besteht aus zwei Viertelkreisen an den Torpfosten und einem geraden Stück dazwischen. Genau deshalb steht ein Kreisläufer in der Mitte weiter vom Tor weg als in der Halbposition – und genau deshalb taugt ein aufgemalter Halbkreis nicht, um Sperren zu besprechen. Warum jede Linie so liegt, wie sie liegt, steht im Ratgeber: <court>Handballfeld: Maße, Linien und Markierungen</court>."
+    },
+    "formations": {
+      "kicker": "Nicht bei null anfangen",
+      "title": "Die fertigen Aufstellungen",
+      "description": "Fünf Systeme liegen im Board bereit. Du lädst eins, schiebst zwei Magnete an eure Gegebenheiten und bist fertig – statt dreizehn Kreise von Hand zu setzen.",
+      "notes": [
+        {
+          "id": "6-0",
+          "title": "6:0 gegen 3:3",
+          "text": "Die Standardsituation im Amateur- und Jugendbereich: sechs Abwehrspieler auf einer Linie am Sechsmeter, gegenüber drei Rückraumspieler, zwei Außen und ein Kreisläufer. Wenn du eine Sperre oder ein Kreuzen besprechen willst, fängst du hier an.",
+          "articleLabel": "Die 6:0-Abwehr im Handball"
+        },
+        {
+          "id": "5-1",
+          "title": "5:1 mit dem Vorgezogenen",
+          "text": "Fünferkette am Kreis, ein Spieler auf Höhe der Freiwurflinie. Auf dem Board sieht man sofort, welchen Raum der Vorgezogene aufmacht – und wo der Angriff ihn umspielen kann.",
+          "articleLabel": "Die 5:1-Abwehr im Handball"
+        },
+        {
+          "id": "3-2-1",
+          "title": "3:2:1 in drei Reihen",
+          "text": "Drei Spieler am Sechsmeter, zwei davor, einer vorgezogen am Neunmeter. Die Staffelung ist der ganze Punkt dieses Systems, und Staffelung lässt sich schlecht erzählen, aber gut zeigen.",
+          "articleLabel": "Die 3:2:1-Abwehr im Handball"
+        },
+        {
+          "id": "4-2",
+          "title": "4:2 mit zwei Kreisläufern",
+          "text": "Die Außen rücken ein, zwei Kreisläufer arbeiten an der Abwehr. Besonders gegen offensive Abwehrformationen ein Mittel – und auf dem Board die schnellste Art zu zeigen, wer wen bindet.",
+          "articleLabel": "Angriffssysteme im Handball einfach erklärt"
+        },
+        {
+          "id": "tempogegenstoss",
+          "title": "Tempogegenstoß über das ganze Feld",
+          "text": "Die einzige Aufstellung, für die das Halbfeld nicht reicht. Erste Welle über die Außen, zweite Welle hinterher, der Gegner im Rückzug – auf 40 mal 20 Metern.",
+          "articleLabel": "Tempogegenstoß im Handball trainieren"
+        }
+      ],
+      "closing": "Welches System zu eurer Mannschaft passt, entscheidet nicht das Board, sondern euer Kader. Der Vergleich der drei gängigen Abwehrformationen steht im Ratgeber: <systems>Abwehrsysteme im Handball: 6:0, 5:1 und 3:2:1 im Vergleich</systems>."
+    },
+    "limits": {
+      "kicker": "Ehrlich bleiben",
+      "title": "Was ein Taktikboard nicht kann",
+      "description": "Ein gezeichneter Zug sieht immer gut aus – auf dem Board wehrt sich niemand. Vier Dinge musst du mitdenken.",
+      "items": [
+        {
+          "title": "Ein Board ist ein Standbild",
+          "text": "Ein Spielzug ist eine Abfolge: Sperre, Absetzen, Anspiel. Auf einem Bild steht davon ein Moment. Zeichne lieber zwei oder drei Boards nacheinander, als alle Pfeile in eines zu quetschen."
+        },
+        {
+          "title": "Der Gegner bleibt nicht stehen",
+          "text": "Die blauen Magnete stehen genau da, wo du sie hingeschoben hast. Eine echte Abwehr verschiebt, hilft aus und übergibt. Was auf dem Board frei aussieht, ist in der Halle oft eine halbe Sekunde lang frei."
+        },
+        {
+          "title": "Aufstellung ist nicht Ausführung",
+          "text": "Die Positionen sind der einfache Teil. Timing, Tempo und der Blick des Kreisläufers entscheiden, ob derselbe Zug ein Tor oder ein Stürmerfoul wird – und das steht in keiner Grafik."
+        },
+        {
+          "title": "Ob es funktioniert hat, sagt das Board nicht",
+          "text": "Nach dem Spiel bleibt die Frage, ob aus dem Zug wirklich Abschlüsse entstanden sind und aus welchen Zonen. Das beantwortet nur eine Auswertung, keine Zeichnung."
+        }
+      ],
+      "closing": "Wie du aus einem Spiel herausliest, ob der Zug getragen hat, steht im Ratgeber: <analysis>Spielanalyse im Handball: Spiele richtig auswerten</analysis>. Wer die Abschlüsse nicht mehr auf einem Zettel mitstricheln will, erfasst sie live per Tap – dafür gibt es <free>Statix, kostenlos und mit Live-Demo ohne Account</free>. Fürs Zeichnen brauchst du davon nichts: Dieses Board funktioniert vollständig ohne Anmeldung, und daran ändert sich nichts."
+    },
+    "embed": {
+      "kicker": "Der ganze Preis",
+      "title": "Was das Board kostet",
+      "description": "Nichts – und zwar ohne Kleingedrucktes. Zwei Dinge gehören trotzdem offen auf den Tisch.",
+      "watermarkStrong": "Auf jedem exportierten PNG steht klein „{watermark}“ in der Ecke.",
+      "watermarkText": "Das ist die Gegenleistung dafür, dass hier niemand nach einer E-Mail-Adresse fragt. Es gibt keine Bezahlversion, in der die Zeile verschwindet, keine Begrenzung, wie oft du exportierst, und keinen Zähler, der irgendwann leer ist.",
+      "noAccountStrong": "Es gibt keine Anmeldung und keinen Speicherplatz.",
+      "noAccountText": "Dein Board lebt im Browser und im Teilen-Link. Auf ein Feld passen {magnets} Magnete, {arrows} Pfeile und {labels} Notizen – das ist die Grenze der Lesbarkeit und des Links, nicht die einer Gratisstufe.",
+      "embedTitle": "Board auf der Vereinsseite einbinden",
+      "embedText": "Kopier den Code, setz ihn auf eure Homepage – fertig. Kostenlos, ohne Anmeldung, ohne Tracking-Skript. Unter dem eingebetteten Board steht ein Hinweis mit Link auf diese Seite; das ist die einzige Bedingung. Passt die Höhe nicht zu eurem Layout, ändert einfach den height-Wert.",
+      "snippetLabel": "iframe-Code",
+      "copy": "Kopieren",
+      "copied": "Kopiert",
+      "wideHint": "Habt ihr auf eurer Seite mehr Platz? Dann setzt max-width auf 1100px und height auf 1450 – ab 1024 Pixel Breite liegen Board und Bedienung nebeneinander und der Rahmen wird deutlich flacher."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zum Taktikboard",
+      "description": "Kurze Antworten auf das, was beim Zeichnen und Teilen aufkommt.",
+      "items": [
+        {
+          "question": "Wie erstelle ich eine Handball-Aufstellung online?",
+          "answer": "Du wählst im Taktikboard eine fertige Aufstellung – zum Beispiel 6:0, 5:1 oder 3:2:1 – und ziehst die Magnete anschließend auf ihre Positionen. Für Laufwege, Pässe und Würfe wählst du in der Werkzeugleiste den Pfeil und ziehst direkt auf dem Feld von einem Punkt zum anderen. Danach lädst du das Bild als PNG herunter oder teilst den Link."
+        },
+        {
+          "question": "Ist das Taktikboard kostenlos?",
+          "answer": "Ja, vollständig. Es gibt keine Anmeldung, keinen Account, kein Zeitlimit und keine Begrenzung, wie viele Boards du speicherst oder teilst. Auch der PNG-Download und der Teilen-Link funktionieren ohne E-Mail-Adresse."
+        },
+        {
+          "question": "Werden meine Aufstellungen gespeichert?",
+          "answer": "Nein. Das Board rechnet komplett in deinem Browser. Wenn du auf „Link kopieren“ tippst, steckt die ganze Aufstellung im Link selbst – hinter dem Rautezeichen. Dieser Teil einer Adresse wird von Browsern nie an einen Server geschickt. Es gibt also keine Datenbank, in der deine Taktik liegt."
+        },
+        {
+          "question": "Stimmen die Maße des Spielfelds?",
+          "answer": "Ja. Das Feld ist maßstabsgetreu gezeichnet: 40 mal 20 Meter, die Torraumlinie 6 Meter vom Tor, die gestrichelte Freiwurflinie 9 Meter, dazu Siebenmeter- und Torwart-Grenzlinie. Der 6-Meter-Kreis ist wie in der Halle aus zwei Viertelkreisen an den Pfosten und einem geraden Stück gebaut, nicht als Halbkreis."
+        },
+        {
+          "question": "Funktioniert das Taktikboard auf dem Tablet in der Halle?",
+          "answer": "Dafür ist es gebaut. Jeder Greifpunkt ist mindestens 44 Pixel groß, es gibt nichts, was nur mit einer Maus erreichbar wäre, und das Board läuft im Hoch- wie im Querformat. Nummer und Farbe öffnest du per Doppeltipp oder langem Drücken direkt am Magneten. Solange das Verschieben-Werkzeug aktiv ist, kannst du die Seite über dem Board ganz normal scrollen – erst beim Zeichnen übernimmt das Feld die Geste."
+        },
+        {
+          "question": "Warum steht auf dem exportierten Bild „statix-app.de“?",
+          "answer": "Das ist die kleine Zeile in der Ecke des PNGs – die einzige Gegenleistung für ein Werkzeug ohne Anmeldung. Sie lässt sich nicht gegen Bezahlung entfernen, weil es dafür keine Bezahlversion gibt. Die Anzahl der Exporte ist nicht begrenzt."
+        },
+        {
+          "question": "Darf ich das Taktikboard auf unserer Vereinsseite einbinden?",
+          "answer": "Ja, gerne. Kopier dir den iframe-Code von dieser Seite auf eure Homepage. Das Board läuft dann in eurem Layout, mit demselben Funktionsumfang, kostenlos und ohne Anmeldung. Unter dem Board steht ein Hinweis mit Link auf diese Seite."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Nach dem Zeichnen",
+      "title": "Ob der Zug funktioniert hat, zeigen die Zahlen",
+      "description": "In Statix erfasst du jede Aktion live per Tap und siehst nach dem Spiel, aus welchen Situationen eure Tore fallen – inklusive Wurfbild. Kostenlos registrieren, oder vorher in der Live-Demo ohne Account reinschauen.",
+      "linkLabel": "Oder zuerst die Wurfquote ausrechnen"
+    },
+    "tool": {
+      "embedTitle": "Handball-Taktikboard",
+      "embedAttributionLink": "Handball-Taktikboard von Statix",
+      "embedAttributionSuffix": "– der Handball-Statistik-App für Trainer",
+      "magnetKinds": [
+        {
+          "kind": "home",
+          "label": "Eigene",
+          "action": "Eigenen Spieler aufs Feld setzen"
+        },
+        {
+          "kind": "away",
+          "label": "Gegner",
+          "action": "Gegenspieler aufs Feld setzen"
+        },
+        {
+          "kind": "keeper",
+          "label": "Torwart",
+          "action": "Torwart aufs Feld setzen"
+        },
+        {
+          "kind": "ball",
+          "label": "Ball",
+          "action": "Ball aufs Feld legen"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "move",
+          "action": "Werkzeug: Magnete verschieben",
+          "hint": "Magnete ziehen. Doppeltippen oder lange drücken öffnet Nummer und Farbe."
+        },
+        {
+          "mode": "arrow",
+          "action": "Werkzeug: Pfeil zeichnen",
+          "hint": "Auf dem Feld ziehen – von wo nach wo. Start auf einem Spieler hängt den Pfeil an ihn."
+        },
+        {
+          "mode": "note",
+          "action": "Werkzeug: Notiz setzen",
+          "hint": "Auf die Stelle tippen, an der die Notiz stehen soll."
+        }
+      ],
+      "arrowKinds": [
+        {
+          "kind": "laufweg",
+          "label": "Laufweg",
+          "hint": "Durchgezogene Linie – ein Spieler bewegt sich."
+        },
+        {
+          "kind": "pass",
+          "label": "Pass",
+          "hint": "Gestrichelte Linie – der Ball wechselt den Besitzer."
+        },
+        {
+          "kind": "wurf",
+          "label": "Wurf",
+          "hint": "Dicke Linie mit voller Spitze – der Abschluss."
+        }
+      ],
+      "arrowColors": [
+        {
+          "value": "marker",
+          "label": "Orange",
+          "longLabel": "Orange – eigene Mannschaft"
+        },
+        {
+          "value": "opponent",
+          "label": "Blau",
+          "longLabel": "Blau – Gegner"
+        },
+        {
+          "value": "neutral",
+          "label": "Neutral",
+          "longLabel": "Neutral"
+        }
+      ],
+      "arrowColorAria": "Pfeilfarbe {label}",
+      "courtViews": [
+        {
+          "id": "halbfeld",
+          "label": "Halbfeld",
+          "hint": "Tor unten, 15 Meter Feldtiefe – für Abwehr und Angriff."
+        },
+        {
+          "id": "ganzfeld",
+          "label": "Ganzes Feld",
+          "hint": "40 × 20 Meter mit beiden Toren – für Tempogegenstoß und Rückzug."
+        }
+      ],
+      "formations": [
+        {
+          "id": "6-0",
+          "label": "6:0-Abwehr gegen Angriff 3:3",
+          "hint": "Die Standardsituation im Amateur- und Jugendbereich."
+        },
+        {
+          "id": "5-1",
+          "label": "5:1-Abwehr gegen Angriff 3:3",
+          "hint": "Fünferkette am Kreis, ein Vorgezogener auf Höhe der Freiwurflinie."
+        },
+        {
+          "id": "3-2-1",
+          "label": "3:2:1-Abwehr gegen Angriff 3:3",
+          "hint": "Drei am Sechsmeter, zwei davor, einer vorgezogen am Neunmeter."
+        },
+        {
+          "id": "4-2",
+          "label": "Angriff 4:2 gegen 6:0-Abwehr",
+          "hint": "Zwei Kreisläufer binden die Mitte, vier stehen in der hinteren Reihe."
+        },
+        {
+          "id": "eigene-abwehr",
+          "label": "Nur eigene 6:0-Abwehr",
+          "hint": "Ohne Gegner – für die Abwehrbesprechung in der Kabine."
+        },
+        {
+          "id": "tempogegenstoss",
+          "label": "Tempogegenstoß über das ganze Feld",
+          "hint": "Erste Welle über die Außen, zweite Welle hinterher, Gegner im Rückzug."
+        },
+        {
+          "id": "leer",
+          "label": "Leeres Feld",
+          "hint": "Nur der Boden – du setzt alles selbst."
+        }
+      ],
+      "settings": {
+        "formationLabel": "Fertige Aufstellung",
+        "sharedBoard": "Geteiltes Board",
+        "courtLabel": "Feld",
+        "exportBusy": "Wird erzeugt …",
+        "export": "PNG herunterladen",
+        "linkCopied": "Link kopiert",
+        "copyLink": "Link kopieren",
+        "clear": "Feld leeren",
+        "sharedHint": "Dieses Board kommt aus einem geteilten Link. Wähl eine Aufstellung, wenn du neu anfangen willst.",
+        "shareLinkLabel": "Teilen-Link",
+        "copyAria": "Teilen-Link in die Zwischenablage kopieren",
+        "shareNote": "Im Link steckt das komplette Board. Nichts davon wird gespeichert – der Teil hinter dem Rautezeichen verlässt deinen Browser nie."
+      },
+      "editor": {
+        "aria": "Objekt bearbeiten",
+        "magnet": "Magnet",
+        "ballNoNumber": "Der Ball trägt keine Nummer.",
+        "numberLabel": "Rückennummer",
+        "decrement": "Nummer eins kleiner",
+        "increment": "Nummer eins größer",
+        "arrow": "Pfeil",
+        "note": "Notiz",
+        "noteHint": "Höchstens {max} Zeichen – ein Wort, kein Satz.",
+        "remove": "Entfernen",
+        "done": "Fertig"
+      },
+      "canvas": {
+        "boardAria": "Taktikboard – Spielfeld mit Magneten",
+        "keyboardHelp": "Mit Tab erreichst du jeden Magneten, jeden Pfeilgriff und jede Notiz. Die Pfeiltasten verschieben das ausgewählte Objekt, mit gedrückter Umschalttaste in größeren Schritten. Die Eingabetaste öffnet Nummer und Farbe, die Entfernen-Taste nimmt das Objekt vom Feld.",
+        "magnetFallback": "Magnet",
+        "magnetName": "{kind} Nummer {number}",
+        "ballName": "Ball",
+        "noteAria": "Notiz: {text}",
+        "arrowHandleAria": "Pfeil {name} verschieben",
+        "handleStart": "Anfang",
+        "handleEnd": "Spitze",
+        "handleControl": "Krümmung"
+      },
+      "announce": {
+        "moved": "Verschoben auf {x} Prozent von links, {y} Prozent von oben.",
+        "arrowAdjusted": "Pfeil angepasst.",
+        "noteMoved": "Notiz verschoben.",
+        "removed": "Vom Feld genommen.",
+        "ballPlaced": "Ball aufs Feld gelegt.",
+        "magnetPlaced": "Magnet {number} aufs Feld gesetzt.",
+        "arrowDrawn": "Pfeil gezeichnet.",
+        "notePlaced": "Notiz gesetzt. Text eingeben und mit Fertig bestätigen.",
+        "cleared": "Feld geleert.",
+        "linkCopied": "Link kopiert.",
+        "pngDownloaded": "PNG heruntergeladen.",
+        "formationLoaded": "Aufstellung geladen: {label}."
+      },
+      "notices": {
+        "brokenLink": "Der geteilte Link liess sich nicht lesen – vermutlich wurde er beim Weiterleiten abgeschnitten. Du startest mit der Standardaufstellung.",
+        "magnetLimit": "Mehr als {max} Magnete passen nicht auf ein Board – das sind schon zwei komplette Kader. Nimm erst einen herunter.",
+        "arrowLimit": "Mehr als {max} Pfeile werden unleserlich. Nimm erst einen weg.",
+        "labelLimit": "Mehr als {max} Notizen passen nicht aufs Feld.",
+        "copyRejected": "Kopieren hat der Browser abgelehnt. Der Link steht im Feld daneben – markieren und kopieren.",
+        "exportFailed": "Das Bild liess sich nicht erzeugen. Ein Screenshot vom Board tut es genauso – oder du teilst den Link."
+      },
+      "defaultNoteText": "Sperre",
+      "rail": {
+        "toolGroup": "Werkzeug",
+        "arrowKindGroup": "Art des Pfeils",
+        "arrowColorGroup": "Farbe des Pfeils",
+        "magnetGroup": "Magnet aufs Feld setzen"
+      }
     }
   }
 }

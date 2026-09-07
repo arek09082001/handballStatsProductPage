@@ -307,7 +307,11 @@
       "contact": "Contact",
       "faq": "FAQ",
       "newsletter": "Newsletter",
-      "feedback": "Feedback"
+      "feedback": "Feedback",
+      "tacticsBoard": "Tactics board",
+      "handballStats": "Handball statistics",
+      "schedule": "Fixtures & attendance",
+      "videoTagging": "Video tagging"
     },
     "groups": {
       "product": "Product",
@@ -3626,6 +3630,406 @@
       "title": "Percentages that work themselves out",
       "description": "In Statix the shooting percentage comes about as you tap – per player, per position, with the shot map alongside. Register free and record for yourself, or look into the live demo without an account first.",
       "linkLabel": "Use Statix for free"
+    }
+  },
+  "boardPage": {
+    "hero": {
+      "kicker": "Free tool",
+      "titleLead": "Handball ",
+      "titleHighlight": "tactics board",
+      "lede": "Drag a formation into place, draw the runs, done – on a to-scale court with the six- and nine-metre lines where they belong. Save it as an image or send it as a link to the team chat, without signing up."
+    },
+    "howTo": {
+      "kicker": "In four steps",
+      "title": "How to build your formation",
+      "description": "The board does not start empty but with a 6:0 defence against a 3:3 attack. From there it is all dragging and tapping.",
+      "steps": [
+        {
+          "title": "Choose a formation",
+          "text": "A 6:0 against a 3:3 attack is already on the board. Below the court you can pick 5:1, 3:2:1, the 4:2 attack, the fast break or an empty court instead."
+        },
+        {
+          "title": "Drag the magnets",
+          "text": "Push every magnet into place with a finger or the mouse. Orange is your team, blue the opposition, turquoise the goalkeeper. Double-tap or press and hold to open number, colour and delete right on the magnet – without taking your eyes off the court."
+        },
+        {
+          "title": "Draw the runs straight onto the court",
+          "text": "In the tool rail – beside the court, above it on a phone – tap the arrow icon and then drag on the court from where to where. Start on a player and the arrow attaches to them. A single tap places an arrow of standard length. The middle handle bends it, the note icon puts a keyword beside it."
+        },
+        {
+          "title": "Share or save",
+          "text": "The link contains the whole board – whoever opens it sees exactly your formation and can carry on moving it. Alternatively you download a PNG, for the team chat say."
+        }
+      ],
+      "legendTitle": "What each colour and each line means",
+      "legendIntro": "The drawing language is the one on every tactics board in every hall – so a board reads without an explanation.",
+      "legendMagnets": {
+        "home": "Orange – your team.",
+        "away": "Blue – the opposition.",
+        "keeper": "Turquoise – the goalkeeper, so he does not get lost in the line.",
+        "ball": "The ball, smaller than a player."
+      }
+    },
+    "court": {
+      "kicker": "To scale",
+      "title": "The court under the magnets",
+      "description": "Most drawing tools on the web take a rectangle and paint a semicircle in front of it. A handball court looks different – and this one is built out of real metres.",
+      "caption": "Dimensions of the handball court and how they are drawn on the tactics board",
+      "colElement": "Element",
+      "colMeasure": "Measurement",
+      "colOnBoard": "On the board",
+      "facts": [
+        {
+          "element": "Length",
+          "measure": "40 metres",
+          "onBoard": "Complete on the full court, the front 15 metres on the half court."
+        },
+        {
+          "element": "Width",
+          "measure": "20 metres",
+          "onBoard": "Always complete, in both views."
+        },
+        {
+          "element": "Goal-area line (6-metre line)",
+          "measure": "6 metres from the goal",
+          "onBoard": "Two quarter circles at the posts plus a straight section – not a semicircle."
+        },
+        {
+          "element": "Free-throw line (dashed)",
+          "measure": "9 metres from the goal",
+          "onBoard": "Dashed and cut off exactly at the sideline."
+        },
+        {
+          "element": "Seven-metre line",
+          "measure": "7 metres in front of the goal centre",
+          "onBoard": "A one-metre mark in the middle of the court."
+        },
+        {
+          "element": "Goalkeeper restraining line",
+          "measure": "4 metres from the goal",
+          "onBoard": "The short line between the goal and the seven-metre spot."
+        },
+        {
+          "element": "Goal (width × height)",
+          "measure": "3 metres × 2 metres",
+          "onBoard": "From above only the width is visible – as a box behind the goal line."
+        }
+      ],
+      "closing": "What matters most is the goal-area line: it is not a semicircle but consists of two quarter circles at the goalposts and a straight section between them. That is exactly why a pivot in the middle stands further from the goal than in the half position – and exactly why a painted semicircle is no use for discussing screens. Why every line sits where it sits is in the guide: <court>the handball court: dimensions, lines and markings</court>."
+    },
+    "formations": {
+      "kicker": "Not starting from nothing",
+      "title": "The ready-made formations",
+      "description": "Five systems are waiting in the board. You load one, push two magnets to match your own situation and you are done – instead of placing thirteen circles by hand.",
+      "notes": [
+        {
+          "id": "6-0",
+          "title": "6:0 against 3:3",
+          "text": "The standard situation in amateur and youth handball: six defenders in one line at six metres, facing three back-court players, two wings and a pivot. If you want to discuss a screen or a crossing move, this is where you start.",
+          "articleLabel": "The 6:0 defence in handball"
+        },
+        {
+          "id": "5-1",
+          "title": "5:1 with the advanced defender",
+          "text": "A five-man chain at the line, one player level with the free-throw line. On the board you see at once which space the advanced defender opens up – and where the attack can play around him.",
+          "articleLabel": "The 5:1 defence in handball"
+        },
+        {
+          "id": "3-2-1",
+          "title": "3:2:1 in three rows",
+          "text": "Three players at six metres, two in front of them, one advanced at nine. The staggering is the whole point of this system, and staggering is hard to tell but easy to show.",
+          "articleLabel": "The 3:2:1 defence in handball"
+        },
+        {
+          "id": "4-2",
+          "title": "4:2 with two pivots",
+          "text": "The wings move in, two pivots work against the defence. A tool especially against offensive defensive formations – and on the board the quickest way to show who ties up whom.",
+          "articleLabel": "Attacking systems in handball explained simply"
+        },
+        {
+          "id": "tempogegenstoss",
+          "title": "Fast break across the full court",
+          "text": "The one formation the half court is not enough for. First wave down the wings, second wave behind it, the opposition retreating – across 40 by 20 metres.",
+          "articleLabel": "Training the fast break in handball"
+        }
+      ],
+      "closing": "Which system suits your team is decided by your squad, not by the board. The comparison of the three common defensive formations is in the guide: <systems>defensive systems in handball: 6:0, 5:1 and 3:2:1 compared</systems>."
+    },
+    "limits": {
+      "kicker": "Staying honest",
+      "title": "What a tactics board cannot do",
+      "description": "A drawn move always looks good – on the board nobody defends. Four things you have to think along with.",
+      "items": [
+        {
+          "title": "A board is a still image",
+          "text": "A move is a sequence: screen, peel off, pass. A picture holds one moment of it. Draw two or three boards in sequence rather than squeezing every arrow into one."
+        },
+        {
+          "title": "The opposition does not stand still",
+          "text": "The blue magnets stay exactly where you pushed them. A real defence shifts, helps out and switches. What looks free on the board is often free for half a second in the hall."
+        },
+        {
+          "title": "Formation is not execution",
+          "text": "The positions are the easy part. Timing, pace and the pivot's read decide whether the same move ends as a goal or an offensive foul – and that is in no diagram."
+        },
+        {
+          "title": "Whether it worked, the board does not say",
+          "text": "After the match the question remains whether the move really produced attempts and from which zones. Only an analysis answers that, not a drawing."
+        }
+      ],
+      "closing": "How to read out of a match whether the move carried is in the guide: <analysis>match analysis in handball: analysing matches properly</analysis>. Anyone who no longer wants to tally the attempts on a sheet of paper records them live with a tap – that is what <free>Statix is for, free and with a live demo without an account</free>. For drawing you need none of it: this board works entirely without signing up, and that does not change."
+    },
+    "embed": {
+      "kicker": "The whole price",
+      "title": "What the board costs",
+      "description": "Nothing – and with no small print. Two things belong openly on the table all the same.",
+      "watermarkStrong": "Every exported PNG carries a small “{watermark}” in the corner.",
+      "watermarkText": "That is what you give back for a tool that asks nobody for an email address. There is no paid version in which the line disappears, no limit on how often you export, and no counter that eventually runs out.",
+      "noAccountStrong": "There is no sign-up and no storage.",
+      "noAccountText": "Your board lives in the browser and in the share link. One court holds {magnets} magnets, {arrows} arrows and {labels} notes – that is the limit of legibility and of the link, not the limit of a free tier.",
+      "embedTitle": "Embed the board on your club site",
+      "embedText": "Copy the code, put it on your homepage – done. Free, no sign-up, no tracking script. Below the embedded board there is a note linking to this page; that is the only condition. If the height does not suit your layout, simply change the height value.",
+      "snippetLabel": "iframe code",
+      "copy": "Copy",
+      "copied": "Copied",
+      "wideHint": "Do you have more room on your page? Then set max-width to 1100px and height to 1450 – from 1024 pixels wide, board and controls sit side by side and the frame gets considerably flatter."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about the tactics board",
+      "description": "Short answers to what comes up while drawing and sharing.",
+      "items": [
+        {
+          "question": "How do I create a handball formation online?",
+          "answer": "In the tactics board you choose a ready-made formation – 6:0, 5:1 or 3:2:1 for instance – and then drag the magnets into position. For runs, passes and shots you select the arrow in the tool rail and drag straight on the court from one point to another. After that you download the picture as a PNG or share the link."
+        },
+        {
+          "question": "Is the tactics board free?",
+          "answer": "Yes, entirely. There is no sign-up, no account, no time limit and no cap on how many boards you save or share. The PNG download and the share link work without an email address too."
+        },
+        {
+          "question": "Are my formations stored?",
+          "answer": "No. The board runs entirely in your browser. When you tap “copy link”, the whole formation sits in the link itself – behind the hash. Browsers never send that part of an address to a server. So there is no database holding your tactics."
+        },
+        {
+          "question": "Are the court dimensions correct?",
+          "answer": "Yes. The court is drawn to scale: 40 by 20 metres, the goal-area line 6 metres from the goal, the dashed free-throw line 9 metres, plus the seven-metre and goalkeeper restraining lines. The 6-metre line is built like the one in the hall, from two quarter circles at the posts and a straight section, not as a semicircle."
+        },
+        {
+          "question": "Does the tactics board work on a tablet in the hall?",
+          "answer": "That is what it is built for. Every grab point is at least 44 pixels, there is nothing that needs a mouse, and the board runs in portrait as well as landscape. You open number and colour with a double tap or a long press right on the magnet. As long as the move tool is active you can scroll the page over the board as normal – only when drawing does the court take the gesture."
+        },
+        {
+          "question": "Why does the exported picture say “statix-app.de”?",
+          "answer": "That is the small line in the corner of the PNG – the only thing given back for a tool that needs no sign-up. It cannot be removed by paying, because there is no paid version. The number of exports is not limited."
+        },
+        {
+          "question": "May I embed the tactics board on our club site?",
+          "answer": "Yes, gladly. Copy the iframe code from this page onto your homepage. The board then runs in your layout, with the same feature set, free and without signing up. Below the board there is a note linking to this page."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "After the drawing",
+      "title": "Whether the move worked is shown by the numbers",
+      "description": "In Statix you record every action live with a tap and see after the match which situations your goals come from – shot map included. Register free, or look into the live demo without an account first.",
+      "linkLabel": "Or work out the shooting percentage first"
+    },
+    "tool": {
+      "embedTitle": "Handball tactics board",
+      "embedAttributionLink": "Handball tactics board by Statix",
+      "embedAttributionSuffix": "– the handball statistics app for coaches",
+      "magnetKinds": [
+        {
+          "kind": "home",
+          "label": "Own",
+          "action": "Put one of your own players on the court"
+        },
+        {
+          "kind": "away",
+          "label": "Opponent",
+          "action": "Put an opposition player on the court"
+        },
+        {
+          "kind": "keeper",
+          "label": "Keeper",
+          "action": "Put the goalkeeper on the court"
+        },
+        {
+          "kind": "ball",
+          "label": "Ball",
+          "action": "Put the ball on the court"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "move",
+          "action": "Tool: move magnets",
+          "hint": "Drag the magnets. Double-tap or press and hold to open number and colour."
+        },
+        {
+          "mode": "arrow",
+          "action": "Tool: draw an arrow",
+          "hint": "Drag on the court – from where to where. Starting on a player attaches the arrow to them."
+        },
+        {
+          "mode": "note",
+          "action": "Tool: place a note",
+          "hint": "Tap the spot where the note should sit."
+        }
+      ],
+      "arrowKinds": [
+        {
+          "kind": "laufweg",
+          "label": "Run",
+          "hint": "Solid line – a player moves."
+        },
+        {
+          "kind": "pass",
+          "label": "Pass",
+          "hint": "Dashed line – the ball changes hands."
+        },
+        {
+          "kind": "wurf",
+          "label": "Shot",
+          "hint": "Thick line with a full head – the attempt on goal."
+        }
+      ],
+      "arrowColors": [
+        {
+          "value": "marker",
+          "label": "Orange",
+          "longLabel": "Orange – your own team"
+        },
+        {
+          "value": "opponent",
+          "label": "Blue",
+          "longLabel": "Blue – opposition"
+        },
+        {
+          "value": "neutral",
+          "label": "Neutral",
+          "longLabel": "Neutral"
+        }
+      ],
+      "arrowColorAria": "Arrow colour {label}",
+      "courtViews": [
+        {
+          "id": "halbfeld",
+          "label": "Half court",
+          "hint": "Goal at the bottom, 15 metres of depth – for defence and attack."
+        },
+        {
+          "id": "ganzfeld",
+          "label": "Full court",
+          "hint": "40 × 20 metres with both goals – for the fast break and the retreat."
+        }
+      ],
+      "formations": [
+        {
+          "id": "6-0",
+          "label": "6:0 defence against 3:3 attack",
+          "hint": "The standard situation in amateur and youth handball."
+        },
+        {
+          "id": "5-1",
+          "label": "5:1 defence against 3:3 attack",
+          "hint": "A five-man chain at the line, one advanced defender level with the free-throw line."
+        },
+        {
+          "id": "3-2-1",
+          "label": "3:2:1 defence against 3:3 attack",
+          "hint": "Three at six metres, two in front, one advanced at nine."
+        },
+        {
+          "id": "4-2",
+          "label": "4:2 attack against a 6:0 defence",
+          "hint": "Two pivots tie up the middle, four stand in the back row."
+        },
+        {
+          "id": "eigene-abwehr",
+          "label": "Own 6:0 defence only",
+          "hint": "Without opposition – for the defensive talk in the dressing room."
+        },
+        {
+          "id": "tempogegenstoss",
+          "label": "Fast break across the full court",
+          "hint": "First wave down the wings, second wave behind it, opposition retreating."
+        },
+        {
+          "id": "leer",
+          "label": "Empty court",
+          "hint": "Just the floor – you place everything yourself."
+        }
+      ],
+      "settings": {
+        "formationLabel": "Ready-made formation",
+        "sharedBoard": "Shared board",
+        "courtLabel": "Court",
+        "exportBusy": "Generating …",
+        "export": "Download PNG",
+        "linkCopied": "Link copied",
+        "copyLink": "Copy link",
+        "clear": "Clear the court",
+        "sharedHint": "This board comes from a shared link. Pick a formation if you want to start fresh.",
+        "shareLinkLabel": "Share link",
+        "copyAria": "Copy the share link to the clipboard",
+        "shareNote": "The link holds the whole board. None of it is stored – the part behind the hash never leaves your browser."
+      },
+      "editor": {
+        "aria": "Edit object",
+        "magnet": "Magnet",
+        "ballNoNumber": "The ball carries no number.",
+        "numberLabel": "Shirt number",
+        "decrement": "Number one lower",
+        "increment": "Number one higher",
+        "arrow": "Arrow",
+        "note": "Note",
+        "noteHint": "At most {max} characters – a word, not a sentence.",
+        "remove": "Remove",
+        "done": "Done"
+      },
+      "canvas": {
+        "boardAria": "Tactics board – court with magnets",
+        "keyboardHelp": "With Tab you reach every magnet, every arrow handle and every note. The arrow keys move the selected object, in larger steps with Shift held down. Enter opens number and colour, Delete takes the object off the court.",
+        "magnetFallback": "Magnet",
+        "magnetName": "{kind} number {number}",
+        "ballName": "Ball",
+        "noteAria": "Note: {text}",
+        "arrowHandleAria": "Move arrow {name}",
+        "handleStart": "start",
+        "handleEnd": "head",
+        "handleControl": "curve"
+      },
+      "announce": {
+        "moved": "Moved to {x} per cent from the left, {y} per cent from the top.",
+        "arrowAdjusted": "Arrow adjusted.",
+        "noteMoved": "Note moved.",
+        "removed": "Taken off the court.",
+        "ballPlaced": "Ball placed on the court.",
+        "magnetPlaced": "Magnet {number} placed on the court.",
+        "arrowDrawn": "Arrow drawn.",
+        "notePlaced": "Note placed. Enter the text and confirm with Done.",
+        "cleared": "Court cleared.",
+        "linkCopied": "Link copied.",
+        "pngDownloaded": "PNG downloaded.",
+        "formationLoaded": "Formation loaded: {label}."
+      },
+      "notices": {
+        "brokenLink": "The shared link could not be read – it was probably cut off when it was forwarded. You are starting with the default formation.",
+        "magnetLimit": "More than {max} magnets do not fit on one board – that is already two full squads. Take one off first.",
+        "arrowLimit": "More than {max} arrows become illegible. Remove one first.",
+        "labelLimit": "More than {max} notes do not fit on the court.",
+        "copyRejected": "The browser refused to copy. The link is in the field beside it – select it and copy it by hand.",
+        "exportFailed": "The image could not be generated. A screenshot of the board does the same job – or share the link."
+      },
+      "defaultNoteText": "Screen",
+      "rail": {
+        "toolGroup": "Tool",
+        "arrowKindGroup": "Type of arrow",
+        "arrowColorGroup": "Colour of the arrow",
+        "magnetGroup": "Put a magnet on the court"
+      }
     }
   }
 }

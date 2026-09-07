@@ -3,11 +3,8 @@
 import { MousePointer2, Spline, StickyNote } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { MAGNET_COLORS, arrowStroke } from '../data/board-palette';
-import {
-  ARROW_KIND_OPTIONS,
-  BOARD_MODE_OPTIONS,
-  MAGNET_KIND_OPTIONS,
-} from '../data/taktikboard-content';
+import { useTranslations } from 'next-intl';
+import { useBoardOptions } from '../data/use-board-options';
 import type {
   ArrowColor,
   ArrowKind,
@@ -26,12 +23,6 @@ const MODE_ICONS: Record<BoardMode, typeof MousePointer2> = {
   note: StickyNote,
 };
 
-const ARROW_COLOR_OPTIONS: { value: ArrowColor; label: string }[] = [
-  { value: 'marker', label: 'Orange – eigene Mannschaft' },
-  { value: 'opponent', label: 'Blau – Gegner' },
-  { value: 'neutral', label: 'Neutral' },
-];
-
 interface BoardRailProps {
   mode: BoardMode;
   arrowKind: ArrowKind;
@@ -48,8 +39,8 @@ interface BoardRailProps {
  *
  * Icons and no labels, because a labelled row of controls was 170 px tall and
  * made the court — the thing the page exists for — look like an afterthought.
- * Every button still carries its full German name as its accessible name and as
- * a hover title, and the strip under the board spells out what the active tool
+ * Every button still carries its full name as its accessible name and as a
+ * hover title, and the strip under the board spells out what the active tool
  * does, so nothing depends on guessing a glyph.
  * @returns A JSX element rendering the board's icon tool rail.
  */
@@ -62,9 +53,14 @@ export default function BoardRail({
   onArrowColorChange,
   onAddMagnet,
 }: BoardRailProps) {
+  const t = useTranslations('boardPage.tool.rail');
+  const tTool = useTranslations('boardPage.tool');
+  const { magnetKinds, modes, arrowKinds, arrowColors } = useBoardOptions();
+
   const buttonClass =
     'inline-grid size-11 shrink-0 place-items-center rounded-xl border border-transparent text-ink/70 transition-colors hover:border-ink/15 hover:bg-paper-2 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
-  const buttonActive = 'border-primary bg-primary/12 text-primary hover:bg-primary/12 hover:text-primary';
+  const buttonActive =
+    'border-primary bg-primary/12 text-primary hover:bg-primary/12 hover:text-primary';
   const dividerClass = 'h-8 w-px shrink-0 self-center bg-ink/12 lg:h-px lg:w-8';
 
   return (
@@ -73,8 +69,11 @@ export default function BoardRail({
         'mx-auto flex w-fit max-w-full shrink-0 items-center gap-1 overflow-x-auto rounded-2xl border border-ink/10 bg-paper p-1.5',
         'lg:mx-0 lg:w-auto lg:flex-col lg:items-stretch lg:overflow-visible',
       )}>
-      <div className='flex gap-1 lg:flex-col' role='group' aria-label='Werkzeug'>
-        {BOARD_MODE_OPTIONS.map((option) => {
+      <div
+        className='flex gap-1 lg:flex-col'
+        role='group'
+        aria-label={t('toolGroup')}>
+        {modes.map((option) => {
           const Icon = MODE_ICONS[option.mode];
           return (
             <button
@@ -94,8 +93,11 @@ export default function BoardRail({
       {mode === 'arrow' ? (
         <>
           <span aria-hidden='true' className={dividerClass} />
-          <div className='flex gap-1 lg:flex-col' role='group' aria-label='Art des Pfeils'>
-            {ARROW_KIND_OPTIONS.map((option) => (
+          <div
+            className='flex gap-1 lg:flex-col'
+            role='group'
+            aria-label={t('arrowKindGroup')}>
+            {arrowKinds.map((option) => (
               <button
                 key={option.kind}
                 type='button'
@@ -103,22 +105,33 @@ export default function BoardRail({
                 aria-label={`${option.label}: ${option.hint}`}
                 title={option.label}
                 onClick={() => onArrowKindChange(option.kind)}
-                className={cn(buttonClass, arrowKind === option.kind && buttonActive)}>
+                className={cn(
+                  buttonClass,
+                  arrowKind === option.kind && buttonActive,
+                )}>
                 <ArrowKindGlyph kind={option.kind} />
               </button>
             ))}
           </div>
           <span aria-hidden='true' className={dividerClass} />
-          <div className='flex gap-1 lg:flex-col' role='group' aria-label='Farbe des Pfeils'>
-            {ARROW_COLOR_OPTIONS.map((option) => (
+          <div
+            className='flex gap-1 lg:flex-col'
+            role='group'
+            aria-label={t('arrowColorGroup')}>
+            {arrowColors.map((option) => (
               <button
                 key={option.value}
                 type='button'
                 aria-pressed={arrowColor === option.value}
-                aria-label={`Pfeilfarbe ${option.label}`}
-                title={`Pfeilfarbe ${option.label}`}
+                aria-label={tTool('arrowColorAria', {
+                  label: option.longLabel,
+                })}
+                title={tTool('arrowColorAria', { label: option.longLabel })}
                 onClick={() => onArrowColorChange(option.value)}
-                className={cn(buttonClass, arrowColor === option.value && buttonActive)}>
+                className={cn(
+                  buttonClass,
+                  arrowColor === option.value && buttonActive,
+                )}>
                 <span
                   aria-hidden='true'
                   className='block size-4 rounded-full ring-1 ring-ink/20'
@@ -132,8 +145,11 @@ export default function BoardRail({
 
       <span aria-hidden='true' className={dividerClass} />
 
-      <div className='flex gap-1 lg:flex-col' role='group' aria-label='Magnet aufs Feld setzen'>
-        {MAGNET_KIND_OPTIONS.map((option) => (
+      <div
+        className='flex gap-1 lg:flex-col'
+        role='group'
+        aria-label={t('magnetGroup')}>
+        {magnetKinds.map((option) => (
           <button
             key={option.kind}
             type='button'

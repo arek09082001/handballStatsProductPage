@@ -74,7 +74,8 @@ export function measureNumberNudge(): number {
     document.body.appendChild(probe);
 
     const box = probe.getBoundingClientRect();
-    const baselineFromTop = baselineMarker.getBoundingClientRect().top - box.top;
+    const baselineFromTop =
+      baselineMarker.getBoundingClientRect().top - box.top;
     const lineBoxHeight = box.height;
 
     let inkCentreAboveBaseline = 0;
@@ -84,7 +85,8 @@ export function measureNumberNudge(): number {
       context.font = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
       const metrics = context.measureText('0123456789');
       inkCentreAboveBaseline =
-        (metrics.actualBoundingBoxAscent - metrics.actualBoundingBoxDescent) / 2;
+        (metrics.actualBoundingBoxAscent - metrics.actualBoundingBoxDescent) /
+        2;
     }
 
     probe.remove();

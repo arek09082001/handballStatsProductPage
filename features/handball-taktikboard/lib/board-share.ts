@@ -9,10 +9,7 @@ import type {
   CourtViewId,
   MagnetKind,
 } from '../interfaces';
-import {
-  BOARD_CAPACITY,
-  LABEL_MAX_CHARS,
-} from '../data/taktikboard-content';
+import { BOARD_CAPACITY, LABEL_MAX_CHARS } from '../data/taktikboard-content';
 
 /**
  * The share link.
@@ -35,7 +32,10 @@ import {
 
 const VERSION = 'tb1';
 
-const VIEW_CODES: Record<CourtViewId, string> = { halbfeld: 'h', ganzfeld: 'g' };
+const VIEW_CODES: Record<CourtViewId, string> = {
+  halbfeld: 'h',
+  ganzfeld: 'g',
+};
 const GROUND_CODES: Record<BoardGround, string> = { court: 'd', paper: 'l' };
 const MAGNET_CODES: Record<MagnetKind, string> = {
   home: 'h',
@@ -186,7 +186,8 @@ export function decodeBoard(raw: string): DecodedBoard | null {
   const magnetChunk = sections[2] ?? '';
   for (
     let index = 0;
-    index + MAGNET_RECORD <= magnetChunk.length && magnets.length < BOARD_CAPACITY.magnets;
+    index + MAGNET_RECORD <= magnetChunk.length &&
+    magnets.length < BOARD_CAPACITY.magnets;
     index += MAGNET_RECORD
   ) {
     const record = magnetChunk.slice(index, index + MAGNET_RECORD);
@@ -202,7 +203,8 @@ export function decodeBoard(raw: string): DecodedBoard | null {
   const arrowChunk = sections[3] ?? '';
   for (
     let index = 0;
-    index + ARROW_RECORD <= arrowChunk.length && arrows.length < BOARD_CAPACITY.arrows;
+    index + ARROW_RECORD <= arrowChunk.length &&
+    arrows.length < BOARD_CAPACITY.arrows;
     index += ARROW_RECORD
   ) {
     const record = arrowChunk.slice(index, index + ARROW_RECORD);
@@ -218,7 +220,17 @@ export function decodeBoard(raw: string): DecodedBoard | null {
     ];
     if (!kind || !color || points.some((point) => point === null)) continue;
     const [x1, y1, cx, cy, x2, y2] = points as number[];
-    arrows.push({ id: `t${arrows.length}`, kind, color, x1, y1, cx, cy, x2, y2 });
+    arrows.push({
+      id: `t${arrows.length}`,
+      kind,
+      color,
+      x1,
+      y1,
+      cx,
+      cy,
+      x2,
+      y2,
+    });
   }
 
   const labels: BoardLabel[] = [];
@@ -241,7 +253,8 @@ export function decodeBoard(raw: string): DecodedBoard | null {
     }
   }
 
-  const readAnything = magnets.length > 0 || arrows.length > 0 || labels.length > 0;
+  const readAnything =
+    magnets.length > 0 || arrows.length > 0 || labels.length > 0;
 
   return {
     state: { view, ground, magnets, arrows, labels },
@@ -252,5 +265,11 @@ export function decodeBoard(raw: string): DecodedBoard | null {
 }
 
 export function emptyBoard(): BoardState {
-  return { view: 'halbfeld', ground: 'court', magnets: [], arrows: [], labels: [] };
+  return {
+    view: 'halbfeld',
+    ground: 'court',
+    magnets: [],
+    arrows: [],
+    labels: [],
+  };
 }

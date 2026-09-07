@@ -141,7 +141,9 @@ export default function SiteNavbar() {
                     aria-current={active ? 'page' : undefined}
                     onMouseEnter={() => setHoveredIdent(item.ident)}
                     // The only external nav item is the live demo.
-                    onClick={item.external ? () => trackDemoClick('navbar') : undefined}
+                    onClick={
+                      item.external ? () => trackDemoClick('navbar') : undefined
+                    }
                     className={cn(
                       'relative inline-flex items-center whitespace-nowrap rounded-full px-2 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
                       highlighted
@@ -301,8 +303,7 @@ export default function SiteNavbar() {
 
                       <div className='overflow-hidden rounded-2xl border border-slate-200 bg-slate-50'>
                         {group.items.map((link) => {
-                          const label =
-                            link.label ?? t(`items.${link.labelKey}`);
+                          const label = t(`items.${link.labelKey}`);
                           const active = isItemActive(link);
 
                           return (

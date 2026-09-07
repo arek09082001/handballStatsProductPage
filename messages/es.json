@@ -307,7 +307,11 @@
       "contact": "Contacto",
       "faq": "Preguntas frecuentes",
       "newsletter": "Boletín",
-      "feedback": "Opiniones"
+      "feedback": "Opiniones",
+      "tacticsBoard": "Pizarra táctica",
+      "handballStats": "Estadísticas de balonmano",
+      "schedule": "Calendario y asistencia",
+      "videoTagging": "Etiquetado de vídeo"
     },
     "groups": {
       "product": "Producto",
@@ -3626,6 +3630,406 @@
       "title": "Porcentajes que se calculan solos",
       "description": "En Statix la efectividad nace al tocar la pantalla: por jugador, por posición y con el mapa de tiro al lado. Regístrate gratis y registra tú mismo, o asómate antes a la demo en directo sin cuenta.",
       "linkLabel": "Usar Statix gratis"
+    }
+  },
+  "boardPage": {
+    "hero": {
+      "kicker": "Herramienta gratuita",
+      "titleLead": "Pizarra táctica de ",
+      "titleHighlight": "balonmano",
+      "lede": "Colocas la formación, dibujas los desmarques y listo, sobre una pista a escala con las líneas de seis y nueve metros en su sitio. Guárdalo como imagen o envíalo como enlace al grupo del equipo, sin registro."
+    },
+    "howTo": {
+      "kicker": "En cuatro pasos",
+      "title": "Así montas vuestra formación",
+      "description": "La pizarra no empieza vacía, sino con una defensa 6:0 frente a un ataque 3:3. A partir de ahí todo es arrastrar y tocar.",
+      "steps": [
+        {
+          "title": "Elegir formación",
+          "text": "En la pizarra ya hay un 6:0 contra un ataque 3:3. Debajo de la pista puedes cambiar a 5:1, 3:2:1, al ataque 4:2, al contraataque o a una pista vacía."
+        },
+        {
+          "title": "Arrastrar los imanes",
+          "text": "Lleva cada imán a su sitio con el dedo o el ratón. Naranja es tu equipo, azul el rival y turquesa el portero. Con doble toque o pulsación larga se abren número, color y borrar en el propio imán, sin apartar la vista de la pista."
+        },
+        {
+          "title": "Dibujar los recorridos en la pista",
+          "text": "En la barra de herramientas —al lado de la pista, encima en el móvil— toca el icono de flecha y arrastra sobre la pista de un punto a otro. Si empiezas sobre un jugador, la flecha queda enganchada a él. Un toque suelto coloca una flecha de longitud estándar. Con el tirador central la curvas y con el icono de nota añades una palabra clave al lado."
+        },
+        {
+          "title": "Compartir o guardar",
+          "text": "El enlace contiene toda la pizarra: quien lo abra verá exactamente tu formación y podrá seguir moviéndola. Como alternativa, descargas un PNG, por ejemplo para el grupo del equipo."
+        }
+      ],
+      "legendTitle": "Qué significa cada color y cada línea",
+      "legendIntro": "El lenguaje de dibujo es el de cualquier pizarra táctica de pabellón, para que una pizarra se lea también sin explicación.",
+      "legendMagnets": {
+        "home": "Naranja: vuestro equipo.",
+        "away": "Azul: el rival.",
+        "keeper": "Turquesa: el portero, para que no se pierda en la línea.",
+        "ball": "El balón, más pequeño que un jugador."
+      }
+    },
+    "court": {
+      "kicker": "A escala",
+      "title": "La pista bajo los imanes",
+      "description": "La mayoría de herramientas de dibujo de internet cogen un rectángulo y pintan un semicírculo delante. Una pista de balonmano es distinta, y esta está construida con metros reales.",
+      "caption": "Medidas de la pista de balonmano y cómo están dibujadas en la pizarra táctica",
+      "colElement": "Elemento",
+      "colMeasure": "Medida",
+      "colOnBoard": "En la pizarra",
+      "facts": [
+        {
+          "element": "Longitud",
+          "measure": "40 metros",
+          "onBoard": "Completa en la pista entera; en media pista, los 15 metros delanteros."
+        },
+        {
+          "element": "Anchura",
+          "measure": "20 metros",
+          "onBoard": "Siempre completa, en las dos vistas."
+        },
+        {
+          "element": "Línea de área (6 metros)",
+          "measure": "6 metros desde la portería",
+          "onBoard": "Dos cuartos de círculo en los postes más un tramo recto, no un semicírculo."
+        },
+        {
+          "element": "Línea de golpe franco (discontinua)",
+          "measure": "9 metros desde la portería",
+          "onBoard": "Discontinua y cortada justo en la línea de banda."
+        },
+        {
+          "element": "Línea de siete metros",
+          "measure": "7 metros ante el centro de la portería",
+          "onBoard": "Una marca de un metro en el centro de la pista."
+        },
+        {
+          "element": "Línea de limitación del portero",
+          "measure": "4 metros desde la portería",
+          "onBoard": "El trazo corto entre la portería y el punto de siete metros."
+        },
+        {
+          "element": "Portería (ancho × alto)",
+          "measure": "3 metros × 2 metros",
+          "onBoard": "Desde arriba solo se ve el ancho, como un rectángulo tras la línea de gol."
+        }
+      ],
+      "closing": "Lo más importante es la línea de área: no es un semicírculo, sino dos cuartos de círculo en los postes y un tramo recto entre ellos. Justo por eso un pivote en el centro queda más lejos de la portería que en posición lateral, y justo por eso un semicírculo pintado no sirve para hablar de bloqueos. Por qué cada línea está donde está se explica en la guía: <court>pista de balonmano: medidas, líneas y marcas</court>."
+    },
+    "formations": {
+      "kicker": "No empezar de cero",
+      "title": "Las formaciones ya preparadas",
+      "description": "Cinco sistemas están listos en la pizarra. Cargas uno, mueves dos imanes según vuestra realidad y ya está, en lugar de colocar trece círculos a mano.",
+      "notes": [
+        {
+          "id": "6-0",
+          "title": "6:0 contra 3:3",
+          "text": "La situación estándar en el ámbito amateur y de base: seis defensores en línea a seis metros, enfrente tres jugadores de primera línea, dos extremos y un pivote. Si quieres hablar de un bloqueo o de un cruce, empiezas aquí.",
+          "articleLabel": "La defensa 6:0 en balonmano"
+        },
+        {
+          "id": "5-1",
+          "title": "5:1 con el adelantado",
+          "text": "Cadena de cinco en la línea y un jugador a la altura del golpe franco. En la pizarra se ve al instante qué espacio abre el adelantado y por dónde puede rodearlo el ataque.",
+          "articleLabel": "La defensa 5:1 en balonmano"
+        },
+        {
+          "id": "3-2-1",
+          "title": "3:2:1 en tres líneas",
+          "text": "Tres jugadores a seis metros, dos por delante y uno adelantado a nueve. El escalonamiento es todo el sentido de este sistema, y el escalonamiento se explica mal pero se enseña bien.",
+          "articleLabel": "La defensa 3:2:1 en balonmano"
+        },
+        {
+          "id": "4-2",
+          "title": "4:2 con dos pivotes",
+          "text": "Los extremos se cierran y dos pivotes trabajan contra la defensa. Un recurso sobre todo contra defensas adelantadas, y en la pizarra la forma más rápida de mostrar quién fija a quién.",
+          "articleLabel": "Sistemas de ataque en balonmano explicados de forma sencilla"
+        },
+        {
+          "id": "tempogegenstoss",
+          "title": "Contraataque en toda la pista",
+          "text": "La única formación para la que media pista no basta. Primera oleada por los extremos, segunda oleada detrás, el rival en repliegue, sobre 40 por 20 metros.",
+          "articleLabel": "Entrenar el contraataque en balonmano"
+        }
+      ],
+      "closing": "Qué sistema encaja con vuestro equipo no lo decide la pizarra, sino vuestra plantilla. La comparación de las tres defensas más habituales está en la guía: <systems>sistemas defensivos en balonmano: 6:0, 5:1 y 3:2:1 comparados</systems>."
+    },
+    "limits": {
+      "kicker": "Ser honestos",
+      "title": "Lo que una pizarra táctica no puede hacer",
+      "description": "Una jugada dibujada siempre queda bien: en la pizarra nadie defiende. Hay cuatro cosas que debes tener en cuenta.",
+      "items": [
+        {
+          "title": "Una pizarra es una imagen fija",
+          "text": "Una jugada es una secuencia: bloqueo, desmarque, pase. En una imagen queda un instante. Dibuja mejor dos o tres pizarras seguidas que meter todas las flechas en una."
+        },
+        {
+          "title": "El rival no se queda quieto",
+          "text": "Los imanes azules están justo donde los pusiste. Una defensa real se desplaza, ayuda y cambia. Lo que en la pizarra parece libre, en el pabellón suele estar libre medio segundo."
+        },
+        {
+          "title": "Formación no es ejecución",
+          "text": "Las posiciones son la parte fácil. El momento, el ritmo y la lectura del pivote deciden si la misma jugada acaba en gol o en falta en ataque, y eso no está en ningún gráfico."
+        },
+        {
+          "title": "Si funcionó, la pizarra no lo dice",
+          "text": "Tras el partido queda la pregunta de si de la jugada salieron lanzamientos y desde qué zonas. Eso solo lo responde un análisis, no un dibujo."
+        }
+      ],
+      "closing": "Cómo leer en un partido si la jugada funcionó está en la guía: <analysis>análisis de partido en balonmano: analizar los partidos como es debido</analysis>. Quien ya no quiera anotar los lanzamientos a mano en un papel los registra en directo con un toque: para eso está <free>Statix, gratis y con demo en directo sin cuenta</free>. Para dibujar no necesitas nada de eso: esta pizarra funciona sin registro alguno, y eso no va a cambiar."
+    },
+    "embed": {
+      "kicker": "El precio completo",
+      "title": "Lo que cuesta la pizarra",
+      "description": "Nada, y sin letra pequeña. Aun así, hay dos cosas que conviene decir abiertamente.",
+      "watermarkStrong": "En cada PNG exportado aparece en pequeño «{watermark}» en la esquina.",
+      "watermarkText": "Es la contrapartida por una herramienta que no pide a nadie una dirección de correo. No hay versión de pago en la que esa línea desaparezca, ni límite de exportaciones, ni un contador que se acabe algún día.",
+      "noAccountStrong": "No hay registro ni almacenamiento.",
+      "noAccountText": "Tu pizarra vive en el navegador y en el enlace para compartir. En una pista caben {magnets} imanes, {arrows} flechas y {labels} notas: ese es el límite de la legibilidad y del enlace, no el de un plan gratuito.",
+      "embedTitle": "Integrar la pizarra en la web del club",
+      "embedText": "Copia el código, ponlo en vuestra web y listo. Gratis, sin registro y sin script de seguimiento. Bajo la pizarra integrada aparece un aviso con enlace a esta página; esa es la única condición. Si la altura no encaja con vuestro diseño, cambiad sin más el valor height.",
+      "snippetLabel": "código iframe",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "wideHint": "¿Tenéis más espacio en vuestra página? Poned max-width en 1100px y height en 1450: a partir de 1024 píxeles de ancho, la pizarra y los controles quedan uno al lado del otro y el marco resulta bastante más plano."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre la pizarra táctica",
+      "description": "Respuestas breves a lo que surge al dibujar y compartir.",
+      "items": [
+        {
+          "question": "¿Cómo creo una formación de balonmano en línea?",
+          "answer": "En la pizarra táctica eliges una formación ya preparada —por ejemplo 6:0, 5:1 o 3:2:1— y después arrastras los imanes a sus posiciones. Para desmarques, pases y lanzamientos eliges la flecha en la barra de herramientas y arrastras sobre la pista de un punto a otro. Después descargas la imagen como PNG o compartes el enlace."
+        },
+        {
+          "question": "¿La pizarra táctica es gratuita?",
+          "answer": "Sí, del todo. No hay registro, ni cuenta, ni límite de tiempo, ni tope de cuántas pizarras guardas o compartes. La descarga en PNG y el enlace para compartir también funcionan sin dirección de correo."
+        },
+        {
+          "question": "¿Se guardan mis formaciones?",
+          "answer": "No. La pizarra funciona por completo en tu navegador. Cuando tocas «copiar enlace», toda la formación va dentro del propio enlace, detrás de la almohadilla. Los navegadores nunca envían esa parte de una dirección a un servidor. No hay, por tanto, ninguna base de datos con vuestra táctica."
+        },
+        {
+          "question": "¿Son correctas las medidas de la pista?",
+          "answer": "Sí. La pista está dibujada a escala: 40 por 20 metros, la línea de área a 6 metros de la portería, la línea discontinua de golpe franco a 9, más las líneas de siete metros y de limitación del portero. La línea de 6 metros está construida como en el pabellón, con dos cuartos de círculo en los postes y un tramo recto, no como un semicírculo."
+        },
+        {
+          "question": "¿Funciona la pizarra en una tableta en el pabellón?",
+          "answer": "Para eso está hecha. Cada punto de agarre mide al menos 44 píxeles, no hay nada que solo se alcance con ratón y la pizarra funciona en vertical y en horizontal. Número y color se abren con doble toque o pulsación larga sobre el propio imán. Mientras esté activa la herramienta de mover, puedes desplazar la página sobre la pizarra con normalidad; solo al dibujar la pista se queda con el gesto."
+        },
+        {
+          "question": "¿Por qué aparece «statix-app.de» en la imagen exportada?",
+          "answer": "Es la pequeña línea en la esquina del PNG, la única contrapartida por una herramienta sin registro. No se puede quitar pagando, porque no existe una versión de pago. El número de exportaciones no está limitado."
+        },
+        {
+          "question": "¿Puedo integrar la pizarra en la web de nuestro club?",
+          "answer": "Sí, encantado. Copia el código iframe de esta página en vuestra web. La pizarra funcionará en vuestro diseño con las mismas funciones, gratis y sin registro. Debajo aparece un aviso con enlace a esta página."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Después de dibujar",
+      "title": "Si la jugada funcionó lo dicen los números",
+      "description": "En Statix registras cada acción en directo con un toque y ves después del partido de qué situaciones salen vuestros goles, con mapa de tiro incluido. Regístrate gratis o asómate antes a la demo en directo sin cuenta.",
+      "linkLabel": "O calcula primero la efectividad de tiro"
+    },
+    "tool": {
+      "embedTitle": "Pizarra táctica de balonmano",
+      "embedAttributionLink": "Pizarra táctica de balonmano de Statix",
+      "embedAttributionSuffix": "– la app de estadísticas de balonmano para entrenadores",
+      "magnetKinds": [
+        {
+          "kind": "home",
+          "label": "Propio",
+          "action": "Poner a un jugador propio en la pista"
+        },
+        {
+          "kind": "away",
+          "label": "Rival",
+          "action": "Poner a un jugador rival en la pista"
+        },
+        {
+          "kind": "keeper",
+          "label": "Portero",
+          "action": "Poner al portero en la pista"
+        },
+        {
+          "kind": "ball",
+          "label": "Balón",
+          "action": "Poner el balón en la pista"
+        }
+      ],
+      "modes": [
+        {
+          "mode": "move",
+          "action": "Herramienta: mover imanes",
+          "hint": "Arrastra los imanes. Doble toque o pulsación larga abre número y color."
+        },
+        {
+          "mode": "arrow",
+          "action": "Herramienta: dibujar flecha",
+          "hint": "Arrastra sobre la pista, de un punto a otro. Empezar sobre un jugador engancha la flecha a él."
+        },
+        {
+          "mode": "note",
+          "action": "Herramienta: poner nota",
+          "hint": "Toca el punto donde debe ir la nota."
+        }
+      ],
+      "arrowKinds": [
+        {
+          "kind": "laufweg",
+          "label": "Desmarque",
+          "hint": "Línea continua: un jugador se mueve."
+        },
+        {
+          "kind": "pass",
+          "label": "Pase",
+          "hint": "Línea discontinua: el balón cambia de dueño."
+        },
+        {
+          "kind": "wurf",
+          "label": "Lanzamiento",
+          "hint": "Línea gruesa con punta llena: la finalización."
+        }
+      ],
+      "arrowColors": [
+        {
+          "value": "marker",
+          "label": "Naranja",
+          "longLabel": "Naranja: equipo propio"
+        },
+        {
+          "value": "opponent",
+          "label": "Azul",
+          "longLabel": "Azul: rival"
+        },
+        {
+          "value": "neutral",
+          "label": "Neutro",
+          "longLabel": "Neutro"
+        }
+      ],
+      "arrowColorAria": "Color de flecha {label}",
+      "courtViews": [
+        {
+          "id": "halbfeld",
+          "label": "Media pista",
+          "hint": "Portería abajo, 15 metros de profundidad: para defensa y ataque."
+        },
+        {
+          "id": "ganzfeld",
+          "label": "Pista entera",
+          "hint": "40 × 20 metros con las dos porterías: para contraataque y repliegue."
+        }
+      ],
+      "formations": [
+        {
+          "id": "6-0",
+          "label": "Defensa 6:0 contra ataque 3:3",
+          "hint": "La situación estándar en el ámbito amateur y de base."
+        },
+        {
+          "id": "5-1",
+          "label": "Defensa 5:1 contra ataque 3:3",
+          "hint": "Cadena de cinco en la línea y un adelantado a la altura del golpe franco."
+        },
+        {
+          "id": "3-2-1",
+          "label": "Defensa 3:2:1 contra ataque 3:3",
+          "hint": "Tres a seis metros, dos por delante y uno adelantado a nueve."
+        },
+        {
+          "id": "4-2",
+          "label": "Ataque 4:2 contra defensa 6:0",
+          "hint": "Dos pivotes fijan el centro y cuatro se quedan en la línea de atrás."
+        },
+        {
+          "id": "eigene-abwehr",
+          "label": "Solo la defensa 6:0 propia",
+          "hint": "Sin rival: para la charla defensiva en el vestuario."
+        },
+        {
+          "id": "tempogegenstoss",
+          "label": "Contraataque en toda la pista",
+          "hint": "Primera oleada por los extremos, segunda detrás, rival en repliegue."
+        },
+        {
+          "id": "leer",
+          "label": "Pista vacía",
+          "hint": "Solo el suelo: tú colocas todo."
+        }
+      ],
+      "settings": {
+        "formationLabel": "Formación preparada",
+        "sharedBoard": "Pizarra compartida",
+        "courtLabel": "Pista",
+        "exportBusy": "Generando …",
+        "export": "Descargar PNG",
+        "linkCopied": "Enlace copiado",
+        "copyLink": "Copiar enlace",
+        "clear": "Vaciar la pista",
+        "sharedHint": "Esta pizarra viene de un enlace compartido. Elige una formación si quieres empezar de nuevo.",
+        "shareLinkLabel": "Enlace para compartir",
+        "copyAria": "Copiar el enlace al portapapeles",
+        "shareNote": "En el enlace va toda la pizarra. Nada de eso se guarda: la parte que va tras la almohadilla nunca sale de tu navegador."
+      },
+      "editor": {
+        "aria": "Editar objeto",
+        "magnet": "Imán",
+        "ballNoNumber": "El balón no lleva número.",
+        "numberLabel": "Dorsal",
+        "decrement": "Un número menos",
+        "increment": "Un número más",
+        "arrow": "Flecha",
+        "note": "Nota",
+        "noteHint": "Como mucho {max} caracteres: una palabra, no una frase.",
+        "remove": "Quitar",
+        "done": "Listo"
+      },
+      "canvas": {
+        "boardAria": "Pizarra táctica: pista con imanes",
+        "keyboardHelp": "Con el tabulador llegas a cada imán, a cada tirador de flecha y a cada nota. Las teclas de flecha mueven el objeto seleccionado, en pasos mayores con la tecla Mayús pulsada. Intro abre número y color, y Suprimir retira el objeto de la pista.",
+        "magnetFallback": "Imán",
+        "magnetName": "{kind} número {number}",
+        "ballName": "Balón",
+        "noteAria": "Nota: {text}",
+        "arrowHandleAria": "Mover {name} de la flecha",
+        "handleStart": "el inicio",
+        "handleEnd": "la punta",
+        "handleControl": "la curvatura"
+      },
+      "announce": {
+        "moved": "Movido al {x} por ciento desde la izquierda y al {y} por ciento desde arriba.",
+        "arrowAdjusted": "Flecha ajustada.",
+        "noteMoved": "Nota movida.",
+        "removed": "Retirado de la pista.",
+        "ballPlaced": "Balón colocado en la pista.",
+        "magnetPlaced": "Imán {number} colocado en la pista.",
+        "arrowDrawn": "Flecha dibujada.",
+        "notePlaced": "Nota colocada. Escribe el texto y confirma con Listo.",
+        "cleared": "Pista vaciada.",
+        "linkCopied": "Enlace copiado.",
+        "pngDownloaded": "PNG descargado.",
+        "formationLoaded": "Formación cargada: {label}."
+      },
+      "notices": {
+        "brokenLink": "No se ha podido leer el enlace compartido; probablemente se cortó al reenviarlo. Empiezas con la formación por defecto.",
+        "magnetLimit": "Más de {max} imanes no caben en una pizarra: eso ya son dos plantillas completas. Quita uno primero.",
+        "arrowLimit": "Más de {max} flechas se vuelven ilegibles. Quita una primero.",
+        "labelLimit": "Más de {max} notas no caben en la pista.",
+        "copyRejected": "El navegador ha rechazado la copia. El enlace está en el campo de al lado: selecciónalo y cópialo.",
+        "exportFailed": "No se ha podido generar la imagen. Una captura de pantalla de la pizarra sirve igual, o comparte el enlace."
+      },
+      "defaultNoteText": "Bloqueo",
+      "rail": {
+        "toolGroup": "Herramienta",
+        "arrowKindGroup": "Tipo de flecha",
+        "arrowColorGroup": "Color de la flecha",
+        "magnetGroup": "Poner un imán en la pista"
+      }
     }
   }
 }
