@@ -1600,5 +1600,1072 @@
   "legalTranslationNotice": {
     "title": "Maßgebliche Fassung",
     "body": "Maßgeblich ist die deutsche Fassung dieses Dokuments. Übersetzungen dienen ausschließlich dem Verständnis und sind rechtlich nicht bindend."
+  },
+  "pricingPage": {
+    "launchDate": "1. Januar 2027",
+    "founderDeadline": "31. Dezember 2026",
+    "founderFreeUntil": "30. Juni 2027",
+    "coachCount": "über 50 Trainer",
+    "hero": {
+      "kicker": "Preise & Kosten",
+      "titleLead": "Preise für die Handball-Statistik-App",
+      "titleBrand": "Statix",
+      "lede": "Ab dem {launchDate} bekommt Statix bezahlte Pläne: Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison, Pro 159 €. Die Live-Erfassung ist in keinem Plan beschnitten – und wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}.",
+      "ctaPrimary": "Jetzt kostenlos registrieren",
+      "ctaSecondary": "Live-Demo ohne Account",
+      "deadline": "Stichtag {founderDeadline}",
+      "deadlineNote": "· danach zahlen nur Neuregistrierungen",
+      "trust": [
+        "Basis bleibt dauerhaft 0 €",
+        "Keine Kreditkarte",
+        "Demo ohne Account"
+      ]
+    },
+    "why": {
+      "kicker": "In eigener Sache",
+      "title": "Warum Statix ab Januar Geld kostet",
+      "description": "Ein Hobbyprojekt, das {coachCount} benutzen, ist kein Hobbyprojekt mehr – jedenfalls nicht auf der Rechnung.",
+      "paragraph1": "Statix ist entstanden, weil ich die Strichliste am Spielfeldrand satt hatte – für meine eigene Mannschaft, an Abenden nach dem Training. Inzwischen erfassen {coachCount} ihre Spiele damit, und darüber freue ich mich jedes Mal.",
+      "paragraph2": "Nur wächst mit jeder Mannschaft auch die Rechnung: Server und Datenbank laufen rund um die Uhr, jede KI-Analyse ist ein bezahlter Modellaufruf, jeder geteilte Bericht rendert ein PDF und verschickt eine E-Mail, jedes hochgeladene Spielvideo belegt dauerhaft Speicher. Das kann ich auf Dauer nicht privat tragen. Deshalb gibt es ab dem {launchDate} bezahlte Pläne.",
+      "paragraph3": "Was dabei nicht passiert: Statix wird nicht hinter einer Kasse verschwinden. Die Grundfunktionen bleiben kostenlos – begrenzt zwar, aber vollständig benutzbar, damit ein Jugendtrainer mit einer Mannschaft weiter damit arbeiten kann. Bezahlt wird das, was tatsächlich Rechenzeit, Speicher und Versand kostet. Und die Erfassung selbst ist in keinem Plan beschnitten: Eine Paywall in der 58. Minute kostet nicht den Kunden, sondern das Spielprotokoll.",
+      "signatureRole": "Entwickler von Statix, Handballtrainer"
+    },
+    "tiers": {
+      "kicker": "Die Preistafel",
+      "title": "Drei Pläne ab dem {launchDate}",
+      "description": "Bezahlt wird, was echtes Geld kostet: Rechenzeit, Speicher und Versand. Alles, was eine Gewohnheit trägt, bleibt in jedem Plan drin.",
+      "seasonNote": "Ein Jahr ist bei uns eine Saison: 1. Juli bis 30. Juni.",
+      "billingAriaLabel": "Abrechnungszeitraum",
+      "billingMonthly": "Monatlich",
+      "billingYearly": "Jährlich",
+      "billingYearlyBadge": "−33 %",
+      "recommendedLabel": "Empfohlen",
+      "vatNote": "Alle Preise sind Endpreise. Als Kleinunternehmer nach § 19 UStG weise ich keine Umsatzsteuer aus.",
+      "prorataLead": "Die Preise gelten ab dem {launchDate}. Wer im Januar einsteigt, zahlt nur die Rumpfsaison bis zum 30. Juni:",
+      "prorataTrainer": "39 € statt 79 €",
+      "prorataTrainerSuffix": "bei Trainer,",
+      "prorataPro": "79 € statt 159 €",
+      "prorataProSuffix": "bei Pro.",
+      "items": [
+        {
+          "id": "basis",
+          "name": "Basis",
+          "audience": "Für den Trainer einer Mannschaft",
+          "price": {
+            "monat": {
+              "amount": "0 €",
+              "unit": "dauerhaft",
+              "note": "Keine Karte, kein Ablaufdatum."
+            },
+            "jahr": {
+              "amount": "0 €",
+              "unit": "dauerhaft",
+              "note": "Keine Karte, kein Ablaufdatum."
+            }
+          },
+          "summary": "Eine Mannschaft, eine Saison, kein Konto bei irgendeinem Zahlungsdienst. Erfassen, auswerten, Termine planen – der Kern bleibt kostenlos, damit Statix für die Masse benutzbar bleibt.",
+          "highlights": [
+            "Live-Erfassung ohne jede Beschneidung",
+            "Terminplan und Kaderkarten vollständig",
+            "1 Mannschaft, 20 Spieler:innen, 10 Spiele",
+            "Die letzten 5 Spiele in voller Tiefe",
+            "4 KI-Analysen und 4 geteilte Berichte im Monat"
+          ],
+          "ctaLabel": "Kostenlos registrieren"
+        },
+        {
+          "id": "trainer",
+          "name": "Trainer",
+          "audience": "Für alle, die nach dem Spiel wirklich auswerten",
+          "price": {
+            "monat": {
+              "amount": "9,90 €",
+              "unit": "im Monat",
+              "note": "Monatlich kündbar."
+            },
+            "jahr": {
+              "amount": "79 €",
+              "unit": "je Saison",
+              "note": "Entspricht 6,58 € im Monat – 39,80 € gespart."
+            }
+          },
+          "summary": "Die Stufe, für die Statix gebaut wurde: die ganze Saison bleibt sichtbar, Wurfbilder und Formkurven inklusive, bis zu drei Mannschaften mit je zwei Co-Trainern.",
+          "highlights": [
+            "Jedes erfasste Spiel bleibt in voller Tiefe sichtbar",
+            "Wurfbilder, Heatmaps, Formkurve, Team-Rekorde",
+            "3 Mannschaften mit je 2 Co-Trainern",
+            "Gegner-Bilanz, Umfragen, PDF-Spielbericht",
+            "Sponsorenslots im öffentlichen Live-Ticker",
+            "20 KI-Analysen und 30 geteilte Berichte im Monat"
+          ],
+          "ctaLabel": "Registrieren und sichern",
+          "recommended": true
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "audience": "Für Videoanalyse als Wochenroutine",
+          "price": {
+            "monat": {
+              "amount": "19,90 €",
+              "unit": "im Monat",
+              "note": "Monatlich kündbar."
+            },
+            "jahr": {
+              "amount": "159 €",
+              "unit": "je Saison",
+              "note": "Entspricht 13,25 € im Monat – 79,80 € gespart."
+            }
+          },
+          "summary": "Alles aus Trainer, plus das Video: 100 GB Aufnahmen, die sich selbst mit der Spieluhr synchronisieren. Jedes erfasste Ereignis findet seine Stelle im Video, ohne dass jemand sucht.",
+          "highlights": [
+            "100 GB Video mit Tagging und Playlists",
+            "Video läuft automatisch synchron zur Spieluhr",
+            "Zusammenschnitte an einzelne Spielerinnen senden",
+            "5 Mannschaften, 5 Co-Trainer, 500 Spiele",
+            "Spieler-Accounts für den ganzen Kader",
+            "40 KI-Analysen und 60 geteilte Berichte im Monat"
+          ],
+          "ctaLabel": "Registrieren und sichern"
+        }
+      ]
+    },
+    "founder": {
+      "kicker": "Für alle, die schon dabei sind",
+      "title": "Wer jetzt registriert, zahlt die Saison 26/27 nichts",
+      "description": "Ab dem {launchDate} zahlen ausschließlich Neuregistrierungen. Jedes Konto, das vorher existiert, behält den Trainer-Plan – kostenlos, ohne Antrag und ohne Zahlungsdaten.",
+      "cardTitle": "Bestandsschutz",
+      "cardDeadlineLabel": "Registrierung bis zum",
+      "cardPlanLabel": "Dein Plan",
+      "cardPlanValue": "Trainer",
+      "cardFreeUntilLabel": "Kostenlos bis",
+      "cardDueLabel": "Zu zahlen bis dahin",
+      "cardNote": "Das ist keine Testphase: Es gibt kein Ablaufdatum, an dem eine Karte belastet wird, weil keine Karte hinterlegt ist.",
+      "cardCta": "Konto anlegen und sichern",
+      "closing": "Der Grund ist kein Werbetrick, sondern eine Rechnung: Die Trainer, die Statix eine ganze Saison lang benutzt haben, sind als Fürsprecher ein Vielfaches dessen wert, was sie als Erstzahler einbringen würden. Und niemand, der mitten in der Rückrunde steckt, soll seine Saison hinter einer Kasse wiederfinden.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Bis zum {founderDeadline} registrieren",
+          "text": "Eine E-Mail-Adresse genügt. Es gibt kein Feld für Zahlungsdaten, weil es bis Januar keinen Bezahlvorgang gibt."
+        },
+        {
+          "number": 2,
+          "title": "Dein Konto steht auf Trainer",
+          "text": "Nicht als Testphase, sondern als gesetzter Wert. Am 1. Januar wechselt nur die Voreinstellung für Neuregistrierungen – dein Konto behält, was es hat."
+        },
+        {
+          "number": 3,
+          "title": "Kostenlos bis zum {founderFreeUntil}",
+          "text": "Die laufende Saison 26/27 komplett zu Ende, Rückrunde inklusive. Danach entscheidest du, ob du bleibst – ohne dass vorher etwas abgebucht wird."
+        }
+      ]
+    },
+    "compare": {
+      "kicker": "Alles im Vergleich",
+      "title": "Was in welchem Plan drin ist",
+      "description": "Vollständig, ohne Sternchen: jede Funktion und jede Grenze, wie die App sie ab Januar tatsächlich anwendet.",
+      "included": "enthalten",
+      "notIncluded": "nicht enthalten",
+      "limitsNote": "Zahlen sind Obergrenzen, gültig ab dem {launchDate}.",
+      "rowHeaderSr": "Funktion oder Grenze",
+      "captionSuffix": "Funktionen und Grenzen je Plan",
+      "closing": "Die Grenzen greifen nie mitten im Spiel: Ob noch ein Spiel ins Kontingent passt, wird beim Anlegen geprüft, nicht in der Halbzeitpause. Eine begonnene Erfassung läuft immer zu Ende und wird immer gespeichert.",
+      "groups": [
+        {
+          "id": "erfassen",
+          "title": "Erfassen",
+          "note": "In keinem Plan beschnitten. Was während des Spiels passiert, ist nie eine Preisfrage.",
+          "rows": [
+            {
+              "label": "Spiel live per Tap erfassen",
+              "hint": "Tore, Würfe, Paraden, Fehler, 7 m, Zeitstrafen",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Wurfposition und Torzone auf dem Feld",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Spieluhr, Wechselbank, Spielassistent",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Offline in der Halle erfassen",
+              "hint": "Synchronisiert sich draußen von selbst",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Als App auf dem Startbildschirm",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Aktionen nach dem Spiel korrigieren",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "auswerten",
+          "title": "Auswerten",
+          "note": "Hier sitzt die Rechenzeit – und die Tiefe, mit der du auf deine Saison zurückschaust.",
+          "rows": [
+            {
+              "label": "Spielübersicht und Spielerwerte je Spiel",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Spiele in voller Tiefe sichtbar",
+              "hint": "Ältere bleiben gespeichert und werden unscharf angezeigt – gelöscht wird nichts",
+              "basis": "5",
+              "trainer": "alle",
+              "pro": "alle"
+            },
+            {
+              "label": "Wurfbilder und Heatmaps",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Saisonverlauf, Formkurve, Team-Rekorde",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Spieler:in des Spiels mit Award-Poster",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Gegner-Bilanz und Scouting-Formguide",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "KI-Analysen",
+              "hint": "im Monat, je Konto über alle Mannschaften zusammen",
+              "basis": "4",
+              "trainer": "20",
+              "pro": "40"
+            },
+            {
+              "label": "Videoanalyse mit Tagging und Playlists",
+              "hint": "100 GB sind rund 16 Spiele in 1080p",
+              "basis": false,
+              "trainer": false,
+              "pro": "100 GB"
+            },
+            {
+              "label": "Video läuft synchron zur Spieluhr",
+              "hint": "Jedes erfasste Ereignis findet seine Stelle im Video",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "organisieren",
+          "title": "Organisieren",
+          "note": "Der Terminplan ist die meistgenutzte Funktion der App. Er bleibt überall vollständig.",
+          "rows": [
+            {
+              "label": "Terminplan mit Serien und Zu-/Absagen",
+              "hint": "inklusive Push-Erinnerungen und Antwortfrist",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Abwesenheiten, Kalenderabo, Hallen, Gäste",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Kader als Kartenalbum",
+              "hint": "HPI und OVR, Tiers, Radar, Sticker",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Mannschaften",
+              "hint": "je Konto",
+              "basis": "1",
+              "trainer": "3",
+              "pro": "5"
+            },
+            {
+              "label": "Co-Trainer je Mannschaft",
+              "hint": "offene Einladungen zählen mit",
+              "basis": "0",
+              "trainer": "2",
+              "pro": "5"
+            },
+            {
+              "label": "Spieler:innen je Mannschaft",
+              "basis": "20",
+              "trainer": "30",
+              "pro": "40"
+            },
+            {
+              "label": "Gespeicherte Spiele je Mannschaft",
+              "basis": "10",
+              "trainer": "200",
+              "pro": "500"
+            },
+            {
+              "label": "Turniere je Mannschaft",
+              "basis": "3",
+              "trainer": "20",
+              "pro": "50"
+            },
+            {
+              "label": "Spieler-Accounts für den Kader",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "teilen",
+          "title": "Teilen",
+          "note": "Jedes Teilen rendert ein PDF und verschickt oft eine E-Mail – der zweite Posten, der echtes Geld kostet.",
+          "rows": [
+            {
+              "label": "Öffentlicher Live-Ticker per Link und QR",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Sponsorenslots im Live-Ticker",
+              "hint": "Ein Bandenpartner refinanziert das Abo im Verein",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "PDF-Spielbericht und Teilen-Links",
+              "hint": "im Monat, je Konto",
+              "basis": "4",
+              "trainer": "30",
+              "pro": "60"
+            },
+            {
+              "label": "Spiele mit anderen Trainern teilen",
+              "hint": "Landet in deren Statix-Postfach",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Spieler-Umfragen ohne Account",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Zusammenschnitte an Spielerinnen senden",
+              "hint": "Sie sehen ihre Szenen ohne eigenen Account",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        }
+      ]
+    },
+    "club": {
+      "kicker": "Für die Vereinskasse",
+      "title": "Was kostet Statix für einen Verein?",
+      "description": "Die Frage, die im Vorstand gestellt wird, bevor irgendjemand die App öffnet.",
+      "coachTitle": "Ein Trainer, mehrere Mannschaften",
+      "coachParagraph1": "Dafür braucht es keinen Vereinsvertrag. Ein Trainer-Konto trägt drei Mannschaften – A-Jugend, Damen, Herren, wie es bei euch zugeschnitten ist – mit je zwei Co-Trainern, für 79 € je Saison. Das ist weniger als eine Vereinslizenz der üblichen Organisations-Apps und bringt Statistik, Wurfbilder und KI mit.",
+      "coachParagraph2": "Refinanzieren lässt sich das im Verein oft komplett: Ab der Trainer-Stufe darf im öffentlichen Live-Ticker ein Sponsor stehen, und ein Bandenpartner trägt den Betrag in aller Regel allein.",
+      "clubTitle": "Der ganze Verein: auf Anfrage",
+      "clubParagraph1": "Wer alle Mannschaften unter ein Dach holen will – eine Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich. Als Anhaltspunkt für den Haushalt: rund 390 € je Saison für fünf Mannschaften, nach Größe gestaffelt.",
+      "clubParagraph2": "Einen Listenpreis gibt es bewusst nicht. Was ein Verein mit zwölf Jugendmannschaften braucht, ist etwas anderes als bei zweien – schreibt kurz, wie viele Mannschaften ihr habt, dann kommt ein passendes Angebot zurück.",
+      "clubLink": "Konditionen für Vereine anfragen",
+      "closing": "Was ein Verein davon hat, wenn alle Mannschaften nach demselben Schema erfassen – ein Standard über alle Teams, Kader und Trainingsbeteiligung an einem Ort, Entwicklung über alle Jugendmannschaften, Datenschutz sauber geregelt – steht auf der Seite <club>Handball-Statistik-App für Vereine</club>. Für Trainerteams im Jugendbereich lohnt eher der Blick auf <youth>Statix für Jugendtrainer</youth>."
+    },
+    "alternative": {
+      "kicker": "Die echte Alternative",
+      "title": "Zettel, Excel oder Statix?",
+      "description": "Kaum ein Trainer vergleicht zwei Statistik-Apps. Verglichen wird mit dem, was am Samstag auf dem Klemmbrett liegt.",
+      "colAspect": "Worum es geht",
+      "colPaper": "Zettel",
+      "colExcel": "Excel",
+      "colStatix": "Statix",
+      "rows": [
+        {
+          "aspect": "Kosten",
+          "paper": "Ein Block, ein Stift",
+          "excel": "Meist schon vorhanden",
+          "statix": "0 € oder 79 € je Saison"
+        },
+        {
+          "aspect": "Während des Spiels",
+          "paper": "Striche machen, während du coachst",
+          "excel": "Am Tablet in der Halle praktisch unbedienbar",
+          "statix": "Ein Tap pro Aktion, auch offline"
+        },
+        {
+          "aspect": "Auswertung",
+          "paper": "Abends abtippen – oder nie",
+          "excel": "Formeln pflegen, Fehler suchen",
+          "statix": "Fertig, sobald die Sirene geht"
+        },
+        {
+          "aspect": "Wurfbilder",
+          "paper": "Von Hand auf einen Feldausdruck",
+          "excel": "Nicht vorgesehen",
+          "statix": "Automatisch aus jedem erfassten Wurf"
+        },
+        {
+          "aspect": "Verlauf über die Saison",
+          "paper": "Ordner im Keller",
+          "excel": "Eine Datei pro Spiel, kein Trend",
+          "statix": "Entwicklung pro Spieler über alle Spiele"
+        },
+        {
+          "aspect": "Team einbinden",
+          "paper": "Gar nicht",
+          "excel": "Datei per Mail, Version unklar",
+          "statix": "Teilen-Link, PDF, Live-Ticker"
+        }
+      ],
+      "hiddenCostTitle": "Die Kosten, die in keiner Kasse stehen",
+      "hiddenCostParagraph": "Der Zettel ist nicht kostenlos – er kostet nur nichts, was man überweisen müsste. Bezahlt wird trotzdem: mit dem Spiel, das ihr nach zwei Wochen nicht mehr rekonstruieren könnt. Mit der Trainingswoche, die auf ein Bauchgefühl statt auf ein Wurfbild aufbaut. Mit den Strichlisten in der Sporttasche, die nie jemand zusammenrechnet. Wer eine Saison lang sammelt und nie auswertet, hat die Arbeit gemacht und den Ertrag liegen lassen.",
+      "template": "Wenn du beim Papier bleiben willst: Nimm wenigstens eine ordentliche Vorlage. Unsere <template>Handball-Statistik Excel-Vorlage</template> ist kostenlos, rechnet Wurfquoten selbst aus – und im Ratgeber steht, <guide>wie du eine Handball-Statistik sauber führst</guide>, ganz gleich womit."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zu den Preisen",
+      "description": "Was Trainer wissen wollen, bevor der 1. Januar kommt.",
+      "items": [
+        {
+          "question": "Was kostet Statix?",
+          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es drei Stufen: Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 159 € je Saison oder 19,90 € im Monat. Alle Preise sind Endpreise; als Kleinunternehmer nach § 19 UStG weise ich keine Umsatzsteuer aus."
+        },
+        {
+          "question": "Ich nutze Statix schon – muss ich ab Januar zahlen?",
+          "answer": "Nein. Jedes Konto, das vor dem {launchDate} angelegt wurde, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil} – also die laufende Saison 26/27 komplett zu Ende. Du musst dafür nichts tun, nichts anklicken und keine Zahlungsdaten hinterlegen. Wer mitten in der Saison in eine Paywall läuft, verliert sein Spielprotokoll, und das wäre der schlechteste denkbare Start."
+        },
+        {
+          "question": "Warum wird Statix überhaupt kostenpflichtig?",
+          "answer": "Statix ist als Hobbyprojekt für die eigene Mannschaft entstanden und wird inzwischen von {coachCount} benutzt. Server, Datenbank, KI-Analysen und Videospeicher kosten mit jeder Mannschaft mehr, und diese Rechnung kann ich auf Dauer nicht privat tragen. Die Alternative wäre, das Projekt einzustellen – die schlechtere Lösung für alle Beteiligten."
+        },
+        {
+          "question": "Was bleibt kostenlos?",
+          "answer": "Die ganze Live-Erfassung, der komplette Terminplan mit Zu- und Absagen, Abwesenheiten und Kalenderabo, die Kaderkarten mit HPI, Tiers und Stickern, der öffentliche Live-Ticker und die Auswertung deiner Spiele. Begrenzt sind in der Basis eine Mannschaft, 20 Spieler:innen, 10 gespeicherte Spiele, die letzten fünf Spiele in voller Tiefe sowie vier KI-Analysen und vier geteilte Berichte im Monat."
+        },
+        {
+          "question": "Monatlich oder jährlich – was ist der Unterschied?",
+          "answer": "Nur der Preis und der Rhythmus. Jährlich heißt bei uns eine Saison, vom 1. Juli bis zum 30. Juni, und kostet rund ein Drittel weniger: 79 € statt 118,80 € bei Trainer, 159 € statt 238,80 € bei Pro. Monatlich ist teurer, dafür jederzeit kündbar. Wer im Januar einsteigt, zahlt nur die Rumpfsaison bis zum 30. Juni: 39 € statt 79 € bei Trainer, 79 € statt 159 € bei Pro."
+        },
+        {
+          "question": "Verliere ich Daten, wenn ich in der Basis bleibe?",
+          "answer": "Nein. Gelöscht wird nichts. In der Basis siehst du die fünf zuletzt erfassten Spiele in voller Tiefe; ältere bleiben in der Liste und werden unscharf angezeigt, mit einem Hinweis, was sie wieder freischaltet. Und die Zehn-Spiele-Grenze wird beim Anlegen eines Spiels geprüft, nie während eines laufenden: Eine begonnene Erfassung läuft immer zu Ende und wird immer gespeichert."
+        },
+        {
+          "question": "Was kostet Statix für einen Verein?",
+          "answer": "Ein einzelner Trainer bleibt bei den Stufen oben. Wer den Verein als Ganzes einbinden will – alle Mannschaften unter einem Dach, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich, und der wird für den Verein eingerichtet. Als Anhaltspunkt liegt das bei rund 390 € je Saison für fünf Mannschaften, gestaffelt nach Größe. Einen Listenpreis gibt es bewusst nicht: Was ein Verein mit zwölf Jugendmannschaften braucht, ist etwas anderes als bei zweien."
+        },
+        {
+          "question": "Wie kann ich kündigen?",
+          "answer": "Jederzeit im Konto, mit einem Klick – ein Kündigungsbutton gehört ab dem ersten Tag der Bezahlung dazu. Ein monatliches Abo endet zum nächsten Monat, ein Saisonabo zum 30. Juni. Danach läuft dein Konto in der Basis weiter; deine Daten bleiben, wo sie sind."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Jetzt oder ab Januar",
+      "title": "Bis zum {founderDeadline} zählt jede Anmeldung",
+      "description": "Registrieren kostet nichts und dauert eine Minute – es gibt kein Feld für Zahlungsdaten. Wer heute ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}. Lieber erst schauen? Die Live-Demo läuft mit echten Spieldaten ganz ohne Account.",
+      "linkLabel": "Newsletter abonnieren und Änderungen zuerst erfahren"
+    }
+  },
+  "common": {
+    "ctaRegister": "Jetzt kostenlos registrieren",
+    "ctaDemo": "Live-Demo ansehen",
+    "ctaDemoNoAccount": "Live-Demo ohne Account",
+    "included": "enthalten",
+    "notIncluded": "nicht enthalten"
+  },
+  "brandPage": {
+    "hero": {
+      "kicker": "Statix im Überblick",
+      "titlePrefix": "Was ist",
+      "titleBrand": "Statix",
+      "titleSuffix": "?",
+      "lede": "Statix ist die Handball-Statistik-App für Trainer, Vereine und Teams: Spiele live per Tap erfassen – Tore, Würfe, Paraden, Strafen und Wechsel – und Wurfquoten, Wurfbilder, Spielerwerte und KI-Analysen automatisch auswerten. Entwickelt in Deutschland, direkt im Browser, offline-fähig in der Halle.",
+      "ctaFeatures": "Alle Funktionen ansehen",
+      "trust": [
+        "Made in Germany",
+        "Kostenlos starten",
+        "Offline in der Halle"
+      ],
+      "screenshotAlt": "Statix Handball-App: Spielstatistiken live per Tap erfassen",
+      "screenshotLabel": "Statix – Live-Erfassung im Spiel"
+    },
+    "overview": {
+      "kicker": "In 30 Sekunden",
+      "title": "Statix, kurz erklärt",
+      "paragraph1": "Statix ersetzt Zettel, Strichlisten und Excel-Tabellen am Spielfeldrand. Während des Spiels ist jede Aktion nur einen Tap entfernt; die komplette Auswertung passiert automatisch im Hintergrund. Nach dem Schlusspfiff stehen Spieler- und Mannschaftsstatistiken, Wurfquoten, Wurfbilder und Entwicklungsverläufe sofort bereit und lassen sich als Link oder PDF mit dem ganzen Team teilen.",
+      "paragraph2": "Dazu kommen ein öffentlicher Live-Ticker für Eltern und Fans, ein Turniermodus mit automatischer Tabelle, Spieler-Umfragen, Trainer-Zusammenarbeit und KI-Analysen für Spiele, Spieler und ganze Turniere.",
+      "points": [
+        "Jede Aktion ist im Spiel nur einen Tap entfernt",
+        "Auswertung läuft automatisch im Hintergrund",
+        "Statistiken, Wurfbilder & Verläufe direkt nach dem Schlusspfiff",
+        "Teilen per Link oder PDF mit dem ganzen Team"
+      ],
+      "screenshotAlt": "Statix Spielübersicht: alle Spiele und Auswertungen auf einen Blick",
+      "screenshotLabel": "Statix – Spielübersicht",
+      "factsKicker": "Auf einen Blick",
+      "facts": [
+        {
+          "label": "Produkt",
+          "value": "Statix – Handball-Statistik-App"
+        },
+        {
+          "label": "Kategorie",
+          "value": "Live-Statistik, Spielanalyse & Team-Management für Handball"
+        },
+        {
+          "label": "Zielgruppe",
+          "value": "Trainer, Co-Trainer, Vereine und Handball-Teams aller Spielklassen"
+        },
+        {
+          "label": "Plattform",
+          "value": "Web-App im Browser – Smartphone, Tablet/iPad und Laptop, offline-fähig"
+        },
+        {
+          "label": "Preis",
+          "value": "Basis dauerhaft kostenlos – bezahlte Stufen ab dem 1. Januar 2027, ab 79 € je Saison"
+        },
+        {
+          "label": "Entwickler",
+          "value": "Arkadiusz Weiss, Handballer aus Deutschland (Made in Germany)"
+        },
+        {
+          "label": "Website",
+          "value": "{domain}"
+        }
+      ]
+    },
+    "highlights": {
+      "kicker": "Show, don’t tell",
+      "title": "So sieht Statix in der Halle aus",
+      "description": "Vom ersten Tap an der Bank bis zur fertigen Analyse – die vier Schritte, die Statix ausmachen.",
+      "demoCta": "Statix live in der Demo ausprobieren",
+      "items": [
+        {
+          "badge": "Live erfassen",
+          "title": "Das ganze Spiel per Tap – direkt von der Bank",
+          "description": "Tore, Würfe, Paraden, Strafen und Wechsel erfasst du in Echtzeit mit einem Tap. Kein Zettel, keine Strichliste – und trotzdem hast du nach dem Schlusspfiff jede Aktion sauber dokumentiert."
+        },
+        {
+          "badge": "Automatisch auswerten",
+          "title": "Spieler- und Mannschaftsstatistiken in Sekunden",
+          "description": "Wurfquoten, Effizienz, Spielanteile und Entwicklungsverläufe berechnet Statix automatisch im Hintergrund – für jeden Spieler und das ganze Team, sofort teilbar als Link oder PDF."
+        },
+        {
+          "badge": "Wurfbilder",
+          "title": "Sieh, wo Tore fallen – und wo nicht",
+          "description": "Jeder Wurf landet visuell auf dem Spielfeld. So erkennst du Muster, Lieblingsecken und Schwächen, die in einer reinen Zahlentabelle untergehen."
+        },
+        {
+          "badge": "KI-Analyse",
+          "title": "KI-Auswertung für Spiele, Spieler und Turniere",
+          "description": "Statix fasst Spiele, Spieler und ganze Turniere in verständlichen Analysen zusammen – mit pseudonymisierten Spielernamen. Stärken, Schwächen und Ansatzpunkte fürs nächste Training auf einen Blick."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Der volle Kader",
+      "title": "Was kann Statix?",
+      "description": "Alle Funktionen der Statix App auf einen Blick – von der Live-Erfassung bis zur KI-Analyse. Jede Zeile führt auf ihre eigene Seite.",
+      "indexLink": "Zum Funktionsüberblick mit Screenshots"
+    },
+    "story": {
+      "kicker": "Für wen?",
+      "title": "Für wen ist Statix gemacht?",
+      "description": "Vom Trainer an der Bank bis zu den Fans auf der Tribüne – Statix bringt allen rund ums Team echte Zahlen.",
+      "audiences": [
+        {
+          "title": "Trainer & Co-Trainer",
+          "description": "Erfassen Spiele live per Tap von der Bank und treffen Entscheidungen auf Basis echter Zahlen statt Bauchgefühl."
+        },
+        {
+          "title": "Vereine",
+          "description": "Bündeln Statistiken, Kader und Saisons aller Mannschaften an einem Ort – vom Jugendbereich bis zur ersten Mannschaft."
+        },
+        {
+          "title": "Spielerinnen & Spieler",
+          "description": "Sehen ihre Wurfquoten, Entwicklungsverläufe und Spielerkarten und erkennen, woran sie arbeiten können."
+        },
+        {
+          "title": "Eltern & Fans",
+          "description": "Verfolgen Spiele über den öffentlichen Live-Ticker mit Link oder QR-Code – direkt im Browser, ohne Account."
+        }
+      ],
+      "photoAlt": "Saisonübersicht in Statix mit Angriffserfolg, Paradequote, Bilanz und Tordifferenz",
+      "founderKicker": "Der Kopf dahinter",
+      "founderTitle": "Wer steckt hinter Statix?",
+      "founderParagraph1": "Statix wird von Arkadiusz Weiss entwickelt – einem Handballer aus Deutschland, der die App aus der eigenen Praxis am Spielfeldrand heraus gebaut hat. Der Name steht für das, was die App im Kern tut: Statistiken, die im Handball wirklich weiterhelfen.",
+      "founderParagraph2": "Statix ist kein anonymes Tool eines großen Konzerns: Feedback von Trainerinnen und Trainern aus der Halle fließt direkt in die Entwicklung ein, und neue Funktionen entstehen dort, wo sie gebraucht werden – auf der Bank, im Training und in der Nachbereitung."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zu Statix",
+      "description": "Alles, was Leute wissen wollen, die zum ersten Mal von Statix hören.",
+      "items": [
+        {
+          "question": "Was ist Statix?",
+          "answer": "Statix ist eine Handball-Statistik-App aus Deutschland. Trainer, Vereine und Teams erfassen Spiele live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und Statix berechnet daraus automatisch Wurfquoten, Spieler- und Mannschaftsstatistiken, Wurfbilder und KI-Analysen."
+        },
+        {
+          "question": "Ist Statix kostenlos?",
+          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter {appUrl} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 gibt es drei Stufen – Basis bleibt 0 €, Trainer kostet 79 € je Saison, Pro 159 €. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027."
+        },
+        {
+          "question": "Wie kann ich Statix testen?",
+          "answer": "Statix ist verfügbar: Du registrierst dich kostenlos unter {appUrl} und legst direkt mit deinem Team los. Wenn du erst schauen willst, öffnest du die Live-Demo – eine voll ausgestattete Version mit echten Spieldaten, direkt im Browser und ganz ohne Account."
+        },
+        {
+          "question": "Auf welchen Geräten läuft Statix?",
+          "answer": "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop. Eine Installation aus dem App Store ist nicht nötig – die App lässt sich aber als PWA auf dem Homescreen installieren und funktioniert offline in der Halle."
+        },
+        {
+          "question": "Wer steckt hinter Statix?",
+          "answer": "Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Praxis am Spielfeldrand heraus entwickelt. Kein anonymes Tool: Feedback aus der Halle fließt direkt in die Entwicklung ein."
+        },
+        {
+          "question": "Wo finde ich Statix im Internet?",
+          "answer": "Die offizielle Website von Statix ist {domain}. Dort findest du alle Funktionen, den Handball-Ratgeber und die Live-Demo ohne Account. Die App selbst läuft unter {appUrl}. Auf Instagram ist Statix als {instagram} aktiv."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Jetzt verfügbar",
+      "title": "Statix selbst ausprobieren",
+      "description": "Statix ist live: Registriere dich kostenlos und erfasse dein erstes Spiel – direkt im Browser, ohne Installation. Lieber erst schauen? Die Live-Demo läuft mit echten Spieldaten und ganz ohne Account.",
+      "linkLabel": "Zum Handball-Ratgeber"
+    }
+  },
+  "clubsPage": {
+    "hero": {
+      "kicker": "Für Vereine",
+      "titleLead": "Handball-Statistik für den ganzen",
+      "titleHighlight": "Verein",
+      "lede": "Zehn Jugendmannschaften, zehn Systeme: einer führt Excel, der nächste einen Zettel, der dritte gar nichts. Der Vereinsbereich von Statix legt eine Ebene über alle Mannschaften. Alle erfassen nach demselben Schema, Kader und Termine liegen im selben Werkzeug, Spieler behalten ihre Laufbahn über die Jugenden hinweg. Was das für euren Verein heißt, klären wir im Gespräch.",
+      "trust": [
+        "Persönlich eingerichtet",
+        "AVV nach Art. 28 DSGVO",
+        "Alle Mannschaften auf einer Seite"
+      ],
+      "primaryAction": "Verein anfragen",
+      "screenshotAlt": "Vereinsübersicht mit allen Handball-Mannschaften eines Vereins in der Statix App",
+      "screenshotLabel": "Acht Mannschaften, ein Wochenende, eine Seite"
+    },
+    "benefits": {
+      "kicker": "Was sich ändert",
+      "title": "Ein Verein, ein Standard",
+      "description": "Sechs Dinge, die erst funktionieren, wenn nicht jede Mannschaft ihr eigenes System fährt.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Zehn Jugendmannschaften, ein Schema",
+          "text": "Alle Mannschaften erfassen dieselben Aktionen nach denselben Zählregeln, weil die App keine zweiten anbietet. E-Jugend, A-Jugend und Damen stehen danach in einer Tabelle nebeneinander, ohne dass jemand etwas umrechnet."
+        },
+        {
+          "number": 2,
+          "title": "Eine Spielerin, eine Laufbahn",
+          "text": "Wechselt eine Spielerin von der C- in die B-Jugend und später zu den Damen, ist sie in Statix dieselbe Person mit allen Stationen untereinander. Was drei Trainer über sie gelernt haben, bleibt im Verein."
+        },
+        {
+          "number": 3,
+          "title": "Spieler in mehreren Kadern",
+          "text": "Eine A-Jugendliche, die bei den Damen aushilft, steht in beiden Kadern: eigene Rückennummer, eigener Terminplan, eigene Zahlen. Für den Spieltag stellt der Trainer daraus seinen Spieltagskader zusammen."
+        },
+        {
+          "number": 4,
+          "title": "Termine im selben Werkzeug",
+          "text": "Trainingszeiten und Serientermine liegen dort, wo auch die Spiele liegen. Die Spieler sagen selbst zu oder ab und tragen längere Abwesenheiten als Zeitraum ein; der Trainer sieht vorher, wer kommt."
+        },
+        {
+          "number": 5,
+          "title": "Ihr seht früh, wo etwas fehlt",
+          "text": "Die Vereinsauswertung stellt Mannschaft neben Mannschaft und Saison neben Saison. Eine Jugend, deren Wurfquote seit zwei Jahren steht, fällt damit auf, bevor der Jahrgang durch ist; die Spielerentwicklung dahinter steht auf der Seite der Spielerin."
+        },
+        {
+          "number": 6,
+          "title": "Trainerwechsel kosten keine Daten",
+          "text": "Hört ein Trainer auf, bleiben Kader, Spiele, Termine und Auswertungen im Verein. Sein Nachfolger übernimmt eine Mannschaft mit Vorgeschichte statt einen leeren Ordner."
+        }
+      ]
+    },
+    "clubLevel": {
+      "kicker": "Der Vereinsbereich",
+      "title": "Alle Mannschaften auf einer Seite",
+      "description": "Die Trainer arbeiten weiter in ihrer eigenen Mannschaft. Darüber liegt eine Ebene, die es ohne Verein nicht gibt und die niemand von Hand pflegt.",
+      "capabilities": [
+        {
+          "term": "Übersicht",
+          "text": "Die Ergebnisse aller Mannschaften vom Wochenende, die nächsten Spiele und die Tabelle aller Kader."
+        },
+        {
+          "term": "Mannschaften",
+          "text": "Jeder Kader mit Cheftrainer, Trainerstab, letztem und nächstem Spiel. Ein Klick führt hinein."
+        },
+        {
+          "term": "Spieler",
+          "text": "Alle Spielerinnen und Spieler des Vereins in einer Liste, durchsuchbar nach Name oder Mannschaft."
+        },
+        {
+          "term": "Auswertung",
+          "text": "Wurfquote, Paradenquote und Siegquote je Mannschaft, dazu der Vergleich Saison gegen Saison."
+        },
+        {
+          "term": "Laufbahnen",
+          "text": "Wer schon in zwei Mannschaften des Vereins gespielt hat, steht mit seinen Stationen im Dashboard."
+        },
+        {
+          "term": "KI-Analysen",
+          "text": "Die Berichte aller Mannschaften an einer Stelle. Spielernamen sind vorher pseudonymisiert."
+        },
+        {
+          "term": "Rollen",
+          "text": "Die Vereinsverwaltung darf alles, die sportliche Leitung liest mit, Trainer bleiben in ihrer Mannschaft."
+        },
+        {
+          "term": "Sponsoren",
+          "text": "Vereinslogo und Sponsoren laufen auf dem Live-Ticker jeder Mannschaft, die keine eigenen hinterlegt hat."
+        }
+      ],
+      "analysisAlt": "Vereinsauswertung mit Kennzahlen aller Handball-Mannschaften eines Vereins",
+      "analysisLabel": "Jede Saison, jede Mannschaft nebeneinander",
+      "playersAlt": "Vereinsweite Spielerliste aller Mannschaften eines Handballvereins",
+      "playersLabel": "Alle Spieler des Vereins, über alle Kader hinweg"
+    },
+    "youth": {
+      "kicker": "Für die Jugendabteilung",
+      "title": "Viele Mannschaften, ein Nachwuchsweg",
+      "description": "Die Jugendabteilung, für die diese Ebene gebaut ist: acht, zehn, zwölf Mannschaften und bisher genauso viele Systeme, Statistiken zu führen.",
+      "points": [
+        {
+          "number": 1,
+          "title": "Von den Minis bis zur A-Jugend nach demselben Schema",
+          "text": "Die Wurfquote der D-Jugend ist dieselbe Größe wie die der A-Jugend, und die Fehlerzahl der B-Jugend lässt sich mit der von vor zwei Jahren vergleichen. Jahrgänge nebeneinander zu legen ist damit keine Rechenaufgabe mehr, sondern eine Auswahl im Filter."
+        },
+        {
+          "number": 2,
+          "title": "Der Übergang in die nächste Mannschaft",
+          "text": "Der Moment, in dem im Verein am meisten verloren geht: Ein Jahrgang rückt auf, der neue Trainer kennt niemanden, und drei Jahre Beobachtung stecken im Kopf des alten. Hier sieht er Spiele, Entwicklung und Position seiner neuen Mannschaft vom ersten Tag an, auch ohne das Übergabegespräch, das nie stattfindet."
+        },
+        {
+          "number": 3,
+          "title": "Spielerentwicklung sieht man an der Reihe, nicht am Spiel",
+          "text": "Ein einzelnes Jugendspiel sagt fast nichts. Zwölf hintereinander sagen, ob die Wurfquote aus dem Rückraum steigt, ob die Fehlerzahl sinkt, ob der Torhüter mehr hält als im Herbst. Genau das zeigt die Auswertung, pro Spielerin und über Saisons hinweg. Die Abteilungsleitung sieht daran, wo Ausbildung wirkt und wo eine Mannschaft Unterstützung braucht."
+        }
+      ],
+      "progressAlt": "Entwicklungsverlauf einer Handball-Spielerin über eine Saison in der Statix App",
+      "progressLabel": "Entwicklung einer Spielerin über die Saison",
+      "careersAlt": "Liste der Spielerlaufbahnen über mehrere Mannschaften eines Handballvereins",
+      "careersLabel": "Wer den Sprung schon gemacht hat, steht im Vereinsdashboard",
+      "closing": "Wie das für die einzelne Trainerin an der Bank aussieht, ein Tap pro Aktion und Live-Ticker für die Eltern, steht auf der Seite <youth>Handball-Statistik für Jugendtrainer</youth>."
+    },
+    "training": {
+      "kicker": "Training und Beteiligung",
+      "title": "Wer kommt, steht neben dem Spielplan",
+      "description": "Kader, Spiele, Termine und Rückmeldungen liegen an einer Stelle. Kein zweites Werkzeug für den Kalender, keine dritte Liste für die Anwesenheit.",
+      "paragraph1": "<lead>Training, Spiele und alles dazwischen</lead> liegen in einem Kalender, als Einzeltermin oder als Serie über die ganze Saison, mit Halle, Adresse und Treffzeit. Wer eine Serie verschiebt, verschiebt sie einmal statt achtzehnmal.",
+      "paragraph2": "<lead>Die Spielerinnen sagen selbst zu oder ab</lead>, über einen Beitrittslink der Mannschaft, ohne Trainer-App und ohne dass jemand ihre Zahlen sieht. Der Trainerstab sieht vor dem Training die vollständige Liste: wer kommt, wer absagt, wer vielleicht, und von wem noch gar nichts kam.",
+      "paragraph3": "<lead>Zwei Wochen Urlaub sind eine Eintragung</lead>, nicht vierzehn Absagen. Abwesenheiten gelten für einen Zeitraum und ziehen sich durch alle Termine darin; in der Teilnahmeliste steht dann der Grund statt „keine Rückmeldung“. Warum jemand fehlt, bleibt zwischen ihr und dem Trainerteam.",
+      "paragraph4": "<lead>Fällt ein Training aus</lead>, bekommt die Mannschaft eine Benachrichtigung aufs Handy, ohne dass jemand eine Telefonliste durchgeht. Statix lässt sich dafür als App auf dem Homescreen installieren, ohne App Store.",
+      "closing": "Den Terminplan führt jede Mannschaft selbst, so wie sie auch ihre Spiele erfasst. Der Verein sieht in seiner Übersicht die <mark>Spiele</mark> aller Mannschaften; die Trainingsbeteiligung bleibt beim Trainerteam der jeweiligen Mannschaft."
+    },
+    "privacy": {
+      "kicker": "Für den Datenschutzbeauftragten",
+      "title": "Spielerdaten sauber verarbeiten",
+      "description": "Im Verein hängt die Einführung selten am Können der Trainer, sondern an dieser Frage. Deshalb hier die Antwort in vier Punkten.",
+      "points": [
+        {
+          "title": "Auftragsverarbeitung nach Art. 28 DSGVO",
+          "text": "Die Spielerdaten, die eure Trainer eingeben, verarbeitet Statix im Auftrag des Vereins. Einen Vertrag zur Auftragsverarbeitung stellen wir auf Anforderung bereit; das ist genau das Dokument, nach dem ein Datenschutzbeauftragter fragt."
+        },
+        {
+          "title": "Pseudonymisiert, bevor eine KI etwas sieht",
+          "text": "Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen. Die Analyse arbeitet mit neutralen Kürzeln, und erstellte Berichte lassen sich jederzeit wieder löschen."
+        },
+        {
+          "title": "Geteilte Links bleiben widerrufbar",
+          "text": "Ein Spiel wird nur öffentlich, wenn ein Trainer es veröffentlicht, und die Freigabe lässt sich zurücknehmen. Auf dem Live-Ticker stehen Spielernamen standardmäßig abgekürzt."
+        },
+        {
+          "title": "Offengelegte Dienstleister",
+          "text": "Welche Auftragsverarbeiter beteiligt sind – Hosting, Datenbank, E-Mail-Versand und die KI-Anbieter – steht namentlich in den AGB und der Datenschutzerklärung, samt Hinweisen zu Drittlandübermittlungen."
+        }
+      ],
+      "closing": "Die vollständigen Regelungen stehen in den <terms>AGB (§ 7 Datenschutz und Auftragsverarbeitung)</terms> und in der <privacy>Datenschutzerklärung</privacy>. Für einen AVV genügt eine Mail an <mail>{email}</mail>."
+    },
+    "rollout": {
+      "kicker": "Einführung",
+      "title": "In vier Schritten im Verein",
+      "description": "Kein Projekt, kein Stichtag, kein Datenimport. Ihr könnt mit zwei Mannschaften anfangen und den Rest nachziehen, wenn es passt.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Ihr schreibt uns",
+          "text": "Vereinsname, ungefähre Zahl der Mannschaften und wer den Verein verwalten soll. Mehr brauchen wir nicht, um euch zu sagen, ob und wie das bei euch passt."
+        },
+        {
+          "number": 2,
+          "title": "Wir legen den Verein an",
+          "text": "Der Vereinsbereich wird von uns eingerichtet – inklusive der Personen, die ihn verwalten. Ihr bekommt den Beitrittscode, ein zehnstelliges Geheimnis, das ihr jederzeit neu erzeugen könnt."
+        },
+        {
+          "number": 3,
+          "title": "Die Trainer tragen ihre Mannschaft ein",
+          "text": "Jeder Cheftrainer legt sein Konto an, kostenlos und in zwei Minuten, und trägt den Beitrittscode in den Mannschaftseinstellungen ein. Damit gehört seine Mannschaft zum Verein. Kein Import, kein Stichtag, keine Schulung."
+        },
+        {
+          "number": 4,
+          "title": "Ab dem ersten Spiel steht die Übersicht",
+          "text": "Sobald eine Mannschaft ein Spiel beendet, füllt sich die Vereinsübersicht. Nichts muss nachgetragen werden, niemand pflegt eine zweite Tabelle – die Vereinsebene ist eine Sicht auf die Daten, die die Trainer ohnehin erfassen."
+        }
+      ]
+    },
+    "objections": {
+      "kicker": "Klartext",
+      "title": "Was im Vorstand gesagt wird",
+      "description": "Die Sätze, an denen Einführungen scheitern. Hier stehen sie mit Antwort.",
+      "items": [
+        {
+          "question": "„Was kostet das denn?“",
+          "answer": "Auf dieser Seite steht bewusst kein Preisschild. Ein Verein mit zwölf Jugendmannschaften braucht etwas anderes als einer mit zwei, und eine Zahl, die für beide gilt, wäre für einen von beiden falsch. Schreibt uns, wie viele Mannschaften ihr einbinden wollt und was ihr damit vorhabt – dann bekommt ihr ein Angebot, das zu eurem Verein passt, rechtzeitig genug für eure Haushaltsplanung. Für den einzelnen Trainer bleibt der Einstieg unabhängig davon kostenlos."
+        },
+        {
+          "question": "„Unsere Trainer sind nicht technikaffin.“",
+          "answer": "Statix ist für einen Trainer gebaut, der nebenbei coacht. Jede Aktion ist ein Tap, es gibt keine Schulung und keine Einrichtung, die jemand für den Verein übernehmen müsste. Wer will, fängt mit Toren und Würfen an und lässt alles andere liegen. Und wer sich das vorher ansehen möchte, öffnet die Live-Demo ohne Account."
+        },
+        {
+          "question": "„Wir haben doch schon eine Vereinssoftware.“",
+          "answer": "Vermutlich eine für Mitglieder, Beiträge und Abteilungen – und die soll bleiben, wo sie ist. Statix macht das Gegenteil davon: was auf dem Feld und im Training passiert. Kader statt Mitgliederliste, Trainingsbeteiligung statt Beitragsstand, Wurfquote statt Rechnungslauf. Beides nebeneinander ist die Regel, nicht die Ausnahme."
+        },
+        {
+          "question": "„Wir dürfen Spielerdaten nicht einfach irgendwo eingeben.“",
+          "answer": "Richtig, und deshalb ist das geregelt. Für Spielerdaten, die ihr eigenverantwortlich eingebt, ist Statix Auftragsverarbeiter nach Art. 28 DSGVO; einen Vertrag zur Auftragsverarbeitung (AVV) stellen wir auf Anforderung bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, im öffentlichen Live-Ticker stehen sie standardmäßig abgekürzt, geteilte Berichte lassen sich zurückziehen, und welche Dienstleister beteiligt sind, steht vollständig in den AGB und der Datenschutzerklärung."
+        },
+        {
+          "question": "„Und wenn wir nach einer Saison wieder aufhören?“",
+          "answer": "Dann hört ihr auf. Auswertungen könnt ihr als PDF exportieren und behalten, geteilte Links wieder deaktivieren, und die Mannschaften bleiben ihren Trainern erhalten – der Vereinsbereich ist eine Sicht darauf, kein Käfig darum."
+        }
+      ],
+      "links": "Was der Einstieg für eine einzelne Trainerin kostet und wo die Grenzen des kostenlosen Zugangs liegen, steht auf der Seite <pricing>Preise für die Handball-Statistik-App</pricing>; was ohne Bezahlung dauerhaft geht, unter <free>Handball-Statistik-App kostenlos</free>. Für die Trainerinnen und Trainer eurer Jugendmannschaften gibt es eine eigene Seite: <youth>Handball-Statistik für Jugendtrainer</youth>. Und wenn ihr erst noch klären wollt, worauf ihr euch im Verein einigen müsst, bevor jemand etwas erfasst: <guide>Statistiken im Verein einführen</guide>."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen von Vereinen",
+      "description": "Was Abteilungsleitungen und Vorstände wissen wollen, bevor sie Statix im Verein einführen.",
+      "items": [
+        {
+          "question": "Was ist der Vereinsbereich von Statix?",
+          "answer": "Eine Ebene über den einzelnen Mannschaften. In der Handball-Statistik-App hängen alle Kader eines Vereins unter einem Dach: eine Vereinsübersicht mit den Ergebnissen und der Tabelle aller Mannschaften, eine vereinsweite Spielerliste, eine Auswertung mit Saisonvergleich, die Laufbahnen der Spieler über mehrere Mannschaften und gesammelte KI-Analysen. Die einzelnen Trainer arbeiten dabei weiter in ihrer eigenen Mannschaft wie bisher."
+        },
+        {
+          "question": "Für welche Vereine lohnt sich das?",
+          "answer": "Vor allem für eine Jugendabteilung mit vielen Mannschaften, die einheitlich Statistiken führen will – von den Minis bis zur A-Jugend und weiter in den Seniorenbereich. Je mehr Mannschaften und je mehr Übergänge zwischen ihnen es gibt, desto mehr entsteht erst durch den gemeinsamen Standard: vergleichbare Zahlen, durchgehende Spielerlaufbahnen und eine Abteilungsleitung, die nicht bei acht Trainern einzeln nachfragen muss."
+        },
+        {
+          "question": "Was kostet Statix für einen Verein?",
+          "answer": "Dafür gibt es kein Preisschild von der Stange. Was ein Verein braucht, hängt an der Zahl der Mannschaften und daran, was ihr damit vorhabt – deshalb machen wir euch nach einer kurzen Anfrage ein Angebot, statt hier eine Zahl zu nennen, die für die meisten Vereine falsch wäre. Für einzelne Trainerinnen und Trainer bleibt der Einstieg kostenlos, ohne Kreditkarte."
+        },
+        {
+          "question": "Wie bekommen wir alle Mannschaften in den Verein?",
+          "answer": "Über einen Beitrittscode. Wir legen den Verein an und geben euch den Code; jeder Cheftrainer trägt ihn in den Einstellungen seiner Mannschaft ein und gehört damit dazu. Der Weg geht bewusst vom Trainer aus – die Mannschaft gehört ihm, also holt ihn niemand von außen hinein. Den Code könnt ihr jederzeit neu erzeugen."
+        },
+        {
+          "question": "Können Spieler in mehreren Mannschaften stehen?",
+          "answer": "Ja. Eine A-Jugendliche, die bei den Damen aushilft, steht in beiden Kadern – jeweils mit eigener Rückennummer, eigenem Terminplan und eigenen Zahlen. Weil beide Kaderplätze zur selben Person gehören, laufen ihre Stationen trotzdem als eine Laufbahn zusammen, und beim Wechsel in die nächste Altersklasse geht nichts verloren."
+        },
+        {
+          "question": "Wie behalten wir die Trainingsbeteiligung im Blick?",
+          "answer": "Jede Mannschaft führt ihre Termine in Statix: Training, Spiele und alles dazwischen, auch als Serie. Die Spieler sagen selbst zu oder ab – über einen Beitrittslink, ohne eigene Trainer-App – und tragen längere Abwesenheiten wie Urlaub, Krankheit oder Verletzung als Zeitraum ein, statt jeden einzelnen Termin abzusagen. Der Trainerstab sieht die vollständige Teilnahmeliste inklusive derer, von denen noch keine Rückmeldung kam; Absagegründe bleiben zwischen Spieler und Trainerteam."
+        },
+        {
+          "question": "Wer im Verein darf welche Daten sehen?",
+          "answer": "Es gibt drei Rollen. Die Vereinsverwaltung hat Zugriff auf alle Mannschaften des Vereins, die sportliche Leitung liest alles und ändert nichts, und ein Trainer erreicht die Mannschaften des Vereins, arbeitet aber weiter in seiner eigenen. Wer keine dieser Rollen hat, sieht den Vereinsbereich nicht."
+        },
+        {
+          "question": "Wie ist der Datenschutz für Spielerdaten geregelt?",
+          "answer": "Für die Spielerdaten, die ihr eingebt, handelt Statix als Auftragsverarbeiter im Sinne von Art. 28 DSGVO und stellt auf Anforderung einen AVV bereit. Vor KI-Analysen werden Spielernamen pseudonymisiert, sodass die Auswertung mit neutralen Kürzeln arbeitet. Im öffentlichen Live-Ticker erscheinen Namen standardmäßig abgekürzt – bei Jugendmannschaften sind es die Namen von Minderjährigen. Eingesetzte Dienstleister und Drittlandübermittlungen sind in den AGB und der Datenschutzerklärung benannt."
+        },
+        {
+          "question": "Ersetzt Statix unsere Vereinsverwaltung?",
+          "answer": "Nein, und das soll es auch nicht. Mitgliederverwaltung, Beiträge und Abteilungsorganisation bleiben in eurer bestehenden Software. Statix deckt ab, was dort nicht vorkommt: Kader, Termine und Trainingsbeteiligung, die Live-Erfassung der Spiele und alle Auswertungen daraus."
+        },
+        {
+          "question": "Was passiert, wenn ein Trainer den Verein verlässt?",
+          "answer": "Die Mannschaft und ihre Spiele bleiben bestehen. Über den Trainerstab oder die Vereinsverwaltung bekommt der Nachfolger Zugriff; ihr seid nicht darauf angewiesen, dass jemand eine private Datei herausgibt."
+        },
+        {
+          "question": "Brauchen unsere Trainer eine Schulung?",
+          "answer": "Nein. Die Erfassung ist ein Tap pro Aktion, ein Konto ist in zwei Minuten angelegt, und der Beitritt zum Verein ist ein Code in einem Eingabefeld. Wer sich das vorher ansehen möchte, startet die Live-Demo ohne Account – die läuft mit echten Spieldaten im Browser."
+        },
+        {
+          "question": "Funktioniert das auch in Hallen ohne Netz?",
+          "answer": "Ja. Spiele werden offline erfasst und synchronisieren sich, sobald das Gerät wieder online ist. Statix lässt sich außerdem als App auf dem Homescreen installieren, ohne den Umweg über einen App Store."
+        }
+      ]
+    },
+    "contact": {
+      "kicker": "Kein Preisschild, ein Gespräch",
+      "title": "Erzählt uns von eurem Verein",
+      "description": "Wie viele Mannschaften habt ihr, wie viele davon in der Jugend, und was soll am Ende an einer Stelle stehen? Drei Sätze reichen. Ihr bekommt eine Einschätzung dazu, ob der Vereinsbereich zu euch passt, und ein Angebot in eurer Größe statt einer Zahl von der Stange.",
+      "formHint": "oder direkt hier im Formular"
+    }
+  },
+  "youthCoachPage": {
+    "hero": {
+      "kicker": "Für Jugendtrainer",
+      "titleLead": "Handball-Statistik für",
+      "titleHighlight": "Jugendtrainer",
+      "lede": "Du coachst, wechselst und redest – und sollst nebenbei mitschreiben. Statix macht daraus einen Tap pro Aktion. Nach dem Spiel siehst du, wer sich entwickelt, deine Spieler sehen ihre eigenen Werte im Kartenalbum, und die Eltern verfolgen das Spiel im Live-Ticker. Kostet aktuell nichts.",
+      "trust": [
+        "Ein Tap pro Aktion",
+        "Aktuell 0 €",
+        "Ohne Schulung"
+      ],
+      "screenshotAlt": "Jugendtrainer erfasst Handball-Statistiken live per Tap von der Bank",
+      "screenshotLabel": "Erfassen, während du coachst"
+    },
+    "benefits": {
+      "kicker": "Aus der Halle",
+      "title": "Was du im Jugendbereich davon hast",
+      "description": "Sechs Dinge, die sich am Samstag und in der Woche danach wirklich ändern.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Ein Tap, während du eigentlich coachst",
+          "text": "Du stehst an der Bank, wechselst, redest, korrigierst – und sollst nebenbei mitschreiben. Deshalb ist jede Aktion genau ein Tap: Tor, Fehlwurf, Parade, Zeitstrafe. Kein Stift, kein Klemmbrett, kein Abtippen am Abend."
+        },
+        {
+          "number": 2,
+          "title": "Vierzehnjährige sehen ihre eigene Entwicklung",
+          "text": "„Du wirst besser“ glaubt kein Jugendlicher. „Deine Wurfquote von außen ist von 41 auf 58 Prozent gestiegen“ schon. Zahlen aus echten Spielen machen Fortschritt sichtbar – auch bei denen, die nicht die meisten Tore werfen."
+        },
+        {
+          "number": 3,
+          "title": "Der Kader als Kartenalbum",
+          "text": "Spielerkarten mit Werten aus echten Spielen, Sticker für besondere Leistungen und ein Taktikboard zum Aufstellen. Für die Jungs und Mädels ist es ein Sammelalbum – für dich ist es der Kader mit Zahlen dahinter."
+        },
+        {
+          "number": 4,
+          "title": "Eltern verfolgen das Spiel im Live-Ticker",
+          "text": "Ein Link oder ein QR-Code genügt, und wer auswärts nicht mitfahren konnte, sieht Spielstand und Verlauf live im Browser. Das nimmt dir die zwölf WhatsApp-Nachrichten in der Halbzeit ab."
+        },
+        {
+          "number": 5,
+          "title": "Spielzeit fair verteilen – und es belegen können",
+          "text": "Im Jugendbereich ist Einsatzzeit ein Dauerthema. Wer erfasst, wie oft wer geworfen hat und wie die Spielanteile liegen, kann in einem Elterngespräch etwas zeigen, statt sich zu rechtfertigen."
+        },
+        {
+          "number": 6,
+          "title": "Umfragen ohne Account der Spieler",
+          "text": "Wer kann Samstag? Du erstellst eine Umfrage und teilst einen Link – die Spieler antworten ohne Anmeldung. Niemand muss eine App installieren, nur weil du wissen willst, wer im Bus sitzt."
+        }
+      ]
+    },
+    "development": {
+      "kicker": "Über eine Saison",
+      "title": "Entwicklung sichtbar machen",
+      "description": "Ein einzelnes Spiel sagt wenig. Zwölf Spiele sagen, ob dein Training ankommt.",
+      "paragraph": "Im Jugendbereich schwankt Leistung von Woche zu Woche – das gehört dazu. Deshalb ist der Verlauf die eigentliche Information: Wie hat sich die Wurfquote von außen entwickelt, seit ihr im Training an den Winkeln arbeitet? Wer übernimmt inzwischen Abschlüsse, der vor drei Monaten nur abgespielt hat? Das sind die Sätze, die ein Kind weiterbringen – und die du im Elterngespräch belegen kannst.",
+      "readMore": "Praxisnah weiterlesen: <development>Spielerentwicklung im Handball messen</development>, <youth>Jugendhandball trainieren</youth> und für die Kleinsten <mini>Minihandball mit Kindern</mini>.",
+      "screenshotAlt": "Kader als Kartenalbum: Spielerkarten mit Werten aus echten Handballspielen",
+      "screenshotLabel": "Kader mit Spielerkarten und Werten"
+    },
+    "objections": {
+      "kicker": "Ehrlich gefragt",
+      "title": "Was Jugendtrainer zu Recht einwenden",
+      "description": "Vier Einwände, die ich selbst hatte – und wie ich sie beantworte.",
+      "items": [
+        {
+          "question": "„Ich habe während des Spiels keine Hand frei.“",
+          "answer": "Das ist der Grund, warum die Erfassung so gebaut ist, wie sie ist: Eine Aktion ist ein Tap, ohne Menü und ohne Nachfrage. Und du musst nicht alles erfassen. Fang mit Toren und Fehlwürfen an – das ist schon mehr, als eine Strichliste am Ende hergibt. Wenn es hektisch wird, ergänzt du Aktionen nach dem Spiel."
+        },
+        {
+          "question": "„Für D-Jugend ist das doch Leistungsdenken.“",
+          "answer": "Kommt darauf an, was du mit den Zahlen machst. Wenn du sie nutzt, um zu ranken, ja. Wenn du sie nutzt, um einem Kind zu zeigen, dass sein Training etwas bringt, ist es das Gegenteil. Deshalb liegt der Fokus auf Entwicklung über eine Saison und nicht auf einer Bestenliste."
+        },
+        {
+          "question": "„Ich bin nicht der Typ für Software.“",
+          "answer": "Musst du auch nicht sein. Es gibt keine Einrichtung, keine Schulung und kein Handbuch: Kader anlegen, Spiel starten, tippen. Wer es vorher sehen will, öffnet die Live-Demo – ohne Account, direkt im Browser."
+        },
+        {
+          "question": "„Kostet das den Verein Geld?“",
+          "answer": "Aktuell nicht. Statix ist kostenlos nutzbar, ohne Kreditkarte und ohne Bezahlvorgang in der App. Du brauchst also niemanden zu fragen, um am Samstag anzufangen."
+        }
+      ],
+      "links": "Was der kostenlose Zugang genau umfasst, steht unter <free>Handball-Statistik-App kostenlos</free>. Wenn ihr im Verein mehrere Mannschaften auf einen Stand bringen wollt, lies <clubs>Statix für Vereine</clubs>. Und wer erstmal auf Papier anfangen will, nimmt die <template>kostenlose Excel-Vorlage</template>."
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen von Jugendtrainern",
+      "description": "Von der Altersklasse bis zum Elterngespräch.",
+      "items": [
+        {
+          "question": "Ab welcher Altersklasse lohnen sich Statistiken im Jugendhandball?",
+          "answer": "Sinnvoll wird es dort, wo Kinder ihre eigene Entwicklung verstehen können – etwa ab der D-Jugend. In der E- und F-Jugend geht es um Ballgefühl und Spielfreude; da reicht es, wenn du für dich mitläufst, ohne die Zahlen zum Thema zu machen."
+        },
+        {
+          "question": "Wie erfasse ich Statistiken, wenn ich gleichzeitig coache?",
+          "answer": "Mit einem Tap pro Aktion. Erfasse zuerst nur Tore und Fehlwürfe – daraus entsteht schon die Wurfquote. Alles Weitere kannst du nach dem Spiel ergänzen, weil sich Aktionen nachträglich bearbeiten lassen."
+        },
+        {
+          "question": "Wie zeige ich einem Jugendlichen seine Entwicklung?",
+          "answer": "Über den Verlauf statt über ein einzelnes Spiel. In Statix siehst du Wurfquoten und Werte über mehrere Spiele hinweg, dazu die Spielerkarte im Kartenalbum. Ein Gespräch über eine Kurve, die nach oben zeigt, funktioniert deutlich besser als eines über ein schlechtes Spiel."
+        },
+        {
+          "question": "Können Eltern die Spiele verfolgen?",
+          "answer": "Ja, über den öffentlichen Live-Ticker. Du veröffentlichst das Spiel, teilst Link oder QR-Code, und Eltern sehen Spielstand und Spielverlauf live im Browser – ohne App und ohne Account."
+        },
+        {
+          "question": "Ist eine Handball-Statistik-App für Jugendtrainer kostenlos?",
+          "answer": "Ja, aktuell kostet Statix nichts: kein Bezahlvorgang, keine Kreditkarte, keine Testphase mit Ablaufdatum. Die Live-Demo läuft sogar ganz ohne Account."
+        },
+        {
+          "question": "Was mache ich mit den Zahlen im Training?",
+          "answer": "Verbinde sie mit dem Wurfbild: Sinkt die Quote nur aus einer Zone, kennst du das Übungsziel. Und sprich Zahlen positiv an – „aus dem Rückraum bist du bei 58 Prozent, lass uns die Sprungwürfe schärfen“ wirkt besser als reine Kritik."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Vor dem nächsten Spiel",
+      "title": "Vor dem Samstag noch schnell einrichten",
+      "description": "Konto anlegen, Kader eintippen, fertig – das dauert weniger als eine Trainingsvorbereitung. Oder sieh dir vorher in der Live-Demo an, ob du das an der Bank bedienen kannst.",
+      "linkLabel": "Was kostenlos enthalten ist"
+    }
   }
 }

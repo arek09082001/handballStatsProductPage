@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-import { BRAND_FAQS } from '../data/brand-content';
+import { BRAND_LINK_ARGS } from '../data/brand-content';
 import { BoardKicker, Grain } from '@/features/landing-page/components/tactic';
 
 /**
@@ -15,22 +16,30 @@ import { BoardKicker, Grain } from '@/features/landing-page/components/tactic';
  * @returns A JSX element rendering the brand FAQ as an accordion on paper.
  */
 export default function BrandFaq() {
+  const t = useTranslations('brandPage.faq');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  // The addresses are ICU arguments, so the accordion resolves them itself;
+  // `t.raw` would hand the reader a literal `{appUrl}`.
+  const faqs = (t.raw('items') as { question: string }[]).map((_, index) => ({
+    question: t(`items.${index}.question`, BRAND_LINK_ARGS),
+    answer: t(`items.${index}.answer`, BRAND_LINK_ARGS),
+  }));
 
   return (
     <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-3xl px-6 sm:px-8'>
-        <BoardKicker>Nachgefragt</BoardKicker>
+        <BoardKicker>{t('kicker')}</BoardKicker>
         <h2 className='mt-3 font-display text-[1.9rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[2.25rem]'>
-          Häufige Fragen zu Statix
+          {t('title')}
         </h2>
         <p className='mt-3 text-base leading-7 text-ink/70'>
-          Alles, was Leute wissen wollen, die zum ersten Mal von Statix hören.
+          {t('description')}
         </p>
 
         <div className='mt-10 border-t border-ink/12'>
-          {BRAND_FAQS.map((faq, index) => {
+          {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (

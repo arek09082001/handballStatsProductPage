@@ -1,5 +1,8 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardCta from '@/components/custom-ui/board-cta';
-import BoardFaq from '@/components/custom-ui/board-faq';
+import BoardFaq, { type BoardFaqItem } from '@/components/custom-ui/board-faq';
 import PricingHeader from '../components/pricing-header';
 import PricingWhy from '../components/pricing-why';
 import PricingTiers from '../components/pricing-tiers';
@@ -7,11 +10,7 @@ import PricingFounder from '../components/pricing-founder';
 import PricingCompare from '../components/pricing-compare';
 import PricingClub from '../components/pricing-club';
 import PricingAlternative from '../components/pricing-alternative';
-import {
-  FOUNDER_DEADLINE_LABEL,
-  FOUNDER_FREE_UNTIL_LABEL,
-  PRICING_FAQS,
-} from '../data/pricing-content';
+import { usePricingLabels } from '../data/use-pricing-labels';
 
 /**
  * Pricing page `/preise`. The section order follows the questions a coach
@@ -26,6 +25,16 @@ import {
  * @returns A JSX element composing the ordered pricing sections.
  */
 export default function PreisePage() {
+  const t = useTranslations('pricingPage');
+  const labels = usePricingLabels();
+
+  // The dates are ICU arguments rather than baked-in text, so the accordion has
+  // to resolve them itself; `t.raw` would hand the reader `{founderDeadline}`.
+  const faqItems = (t.raw('faq.items') as BoardFaqItem[]).map((_, index) => ({
+    question: t(`faq.items.${index}.question`, labels),
+    answer: t(`faq.items.${index}.answer`, labels),
+  }));
+
   return (
     <div className='flex w-full flex-col items-center justify-center bg-paper'>
       <PricingHeader />
@@ -37,17 +46,17 @@ export default function PreisePage() {
       <PricingAlternative />
       <BoardFaq
         id='faq'
-        kicker='Nachgefragt'
-        title='Häufige Fragen zu den Preisen'
-        description='Was Trainer wissen wollen, bevor der 1. Januar kommt.'
-        items={PRICING_FAQS}
+        kicker={t('faq.kicker')}
+        title={t('faq.title')}
+        description={t('faq.description')}
+        items={faqItems}
       />
       <BoardCta
-        kicker='Jetzt oder ab Januar'
-        title={`Bis zum ${FOUNDER_DEADLINE_LABEL} zählt jede Anmeldung`}
-        description={`Registrieren kostet nichts und dauert eine Minute – es gibt kein Feld für Zahlungsdaten. Wer heute ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum ${FOUNDER_FREE_UNTIL_LABEL}. Lieber erst schauen? Die Live-Demo läuft mit echten Spieldaten ganz ohne Account.`}
+        kicker={t('cta.kicker')}
+        title={t('cta.title', labels)}
+        description={t('cta.description', labels)}
         linkHref='/#newsletter'
-        linkLabel='Newsletter abonnieren und Änderungen zuerst erfahren'
+        linkLabel={t('cta.linkLabel')}
       />
     </div>
   );

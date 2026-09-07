@@ -1600,5 +1600,1072 @@
   "legalTranslationNotice": {
     "title": "Versión vinculante",
     "body": "La versión alemana de este documento es la vinculante. Esta traducción se ofrece para facilitar la comprensión y no tiene carácter jurídicamente vinculante."
+  },
+  "pricingPage": {
+    "launchDate": "1 de enero de 2027",
+    "founderDeadline": "31 de diciembre de 2026",
+    "founderFreeUntil": "30 de junio de 2027",
+    "coachCount": "más de 50 entrenadores",
+    "hero": {
+      "kicker": "Precios y costes",
+      "titleLead": "Precios de la app de estadísticas de balonmano",
+      "titleBrand": "Statix",
+      "lede": "A partir del {launchDate} Statix tendrá planes de pago: Básico sigue siendo gratuito para siempre, Entrenador cuesta 79 € por temporada y Pro 159 €. El registro en directo no está recortado en ningún plan, y quien se registre antes conserva el plan Entrenador gratis hasta el {founderFreeUntil}.",
+      "ctaPrimary": "Regístrate gratis ahora",
+      "ctaSecondary": "Demo en directo sin cuenta",
+      "deadline": "Fecha límite: {founderDeadline}",
+      "deadlineNote": "· después solo pagan los nuevos registros",
+      "trust": [
+        "Básico se queda en 0 € para siempre",
+        "Sin tarjeta de crédito",
+        "Demo sin cuenta"
+      ]
+    },
+    "why": {
+      "kicker": "Unas palabras personales",
+      "title": "Por qué Statix cuesta dinero a partir de enero",
+      "description": "Un proyecto personal que usan {coachCount} ya no es un proyecto personal, al menos no en la factura.",
+      "paragraph1": "Statix nació porque estaba harto de la hoja de conteo a pie de pista, para mi propio equipo, en las noches después del entrenamiento. Hoy {coachCount} registran sus partidos con la app, y eso me alegra cada vez.",
+      "paragraph2": "Pero la factura crece con cada equipo: el servidor y la base de datos funcionan las veinticuatro horas, cada análisis con IA es una llamada de pago a un modelo, cada informe compartido genera un PDF y envía un correo, y cada vídeo subido ocupa almacenamiento de forma permanente. No puedo asumirlo de forma privada a largo plazo. Por eso habrá planes de pago a partir del {launchDate}.",
+      "paragraph3": "Lo que no va a pasar: Statix no va a desaparecer detrás de una caja registradora. Las funciones básicas siguen siendo gratuitas —limitadas, sí, pero plenamente utilizables— para que un entrenador de base con un equipo pueda seguir trabajando con ellas. Se paga lo que realmente cuesta tiempo de cálculo, almacenamiento y envío. Y el registro en sí no está recortado en ningún plan: un muro de pago en el minuto 58 no te cuesta el cliente, te cuesta el acta del partido.",
+      "signatureRole": "Desarrollador de Statix, entrenador de balonmano"
+    },
+    "tiers": {
+      "kicker": "El marcador de precios",
+      "title": "Tres planes a partir del {launchDate}",
+      "description": "Se paga lo que cuesta dinero de verdad: tiempo de cálculo, almacenamiento y envío. Todo lo que crea un hábito sigue incluido en todos los planes.",
+      "seasonNote": "Aquí un año es una temporada: del 1 de julio al 30 de junio.",
+      "billingAriaLabel": "Periodo de facturación",
+      "billingMonthly": "Mensual",
+      "billingYearly": "Anual",
+      "billingYearlyBadge": "−33 %",
+      "recommendedLabel": "Recomendado",
+      "vatNote": "Todos los precios son precios finales. Como pequeño empresario según el § 19 de la ley alemana del IVA no repercuto impuesto sobre el valor añadido.",
+      "prorataLead": "Los precios rigen a partir del {launchDate}. Quien entre en enero paga solo la temporada parcial hasta el 30 de junio:",
+      "prorataTrainer": "39 € en lugar de 79 €",
+      "prorataTrainerSuffix": "en Entrenador,",
+      "prorataPro": "79 € en lugar de 159 €",
+      "prorataProSuffix": "en Pro.",
+      "items": [
+        {
+          "id": "basis",
+          "name": "Básico",
+          "audience": "Para el entrenador de un solo equipo",
+          "price": {
+            "monat": {
+              "amount": "0 €",
+              "unit": "para siempre",
+              "note": "Sin tarjeta, sin fecha de caducidad."
+            },
+            "jahr": {
+              "amount": "0 €",
+              "unit": "para siempre",
+              "note": "Sin tarjeta, sin fecha de caducidad."
+            }
+          },
+          "summary": "Un equipo, una temporada y ninguna cuenta en ninguna pasarela de pago. Registrar, analizar y planificar citas: el núcleo sigue siendo gratuito para que Statix siga siendo útil para todos.",
+          "highlights": [
+            "Registro en directo sin ningún recorte",
+            "Calendario y fichas de plantilla completos",
+            "1 equipo, 20 jugadores, 10 partidos",
+            "Los últimos 5 partidos con toda la profundidad",
+            "4 análisis con IA y 4 informes compartidos al mes"
+          ],
+          "ctaLabel": "Registrarse gratis"
+        },
+        {
+          "id": "trainer",
+          "name": "Entrenador",
+          "audience": "Para quien analiza de verdad después del partido",
+          "price": {
+            "monat": {
+              "amount": "9,90 €",
+              "unit": "al mes",
+              "note": "Cancelable cada mes."
+            },
+            "jahr": {
+              "amount": "79 €",
+              "unit": "por temporada",
+              "note": "Equivale a 6,58 € al mes: 39,80 € de ahorro."
+            }
+          },
+          "summary": "El nivel para el que se construyó Statix: toda la temporada permanece visible, con mapas de tiro y curvas de forma incluidos, hasta tres equipos con dos entrenadores asistentes cada uno.",
+          "highlights": [
+            "Cada partido registrado permanece visible con toda la profundidad",
+            "Mapas de tiro, mapas de calor, curva de forma, récords del equipo",
+            "3 equipos con 2 entrenadores asistentes cada uno",
+            "Balance ante rivales, encuestas, acta del partido en PDF",
+            "Espacios para patrocinadores en el marcador público en directo",
+            "20 análisis con IA y 30 informes compartidos al mes"
+          ],
+          "ctaLabel": "Registrarse y asegurarlo",
+          "recommended": true
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "audience": "Para el análisis de vídeo como rutina semanal",
+          "price": {
+            "monat": {
+              "amount": "19,90 €",
+              "unit": "al mes",
+              "note": "Cancelable cada mes."
+            },
+            "jahr": {
+              "amount": "159 €",
+              "unit": "por temporada",
+              "note": "Equivale a 13,25 € al mes: 79,80 € de ahorro."
+            }
+          },
+          "summary": "Todo lo de Entrenador, más el vídeo: 100 GB de grabaciones que se sincronizan solas con el cronómetro del partido. Cada acción registrada encuentra su punto en el vídeo sin que nadie tenga que buscarlo.",
+          "highlights": [
+            "100 GB de vídeo con etiquetado y listas de reproducción",
+            "El vídeo se sincroniza automáticamente con el cronómetro",
+            "Enviar resúmenes a jugadoras concretas",
+            "5 equipos, 5 entrenadores asistentes, 500 partidos",
+            "Cuentas de jugador para toda la plantilla",
+            "40 análisis con IA y 60 informes compartidos al mes"
+          ],
+          "ctaLabel": "Registrarse y asegurarlo"
+        }
+      ]
+    },
+    "founder": {
+      "kicker": "Para quienes ya están dentro",
+      "title": "Quien se registre ahora no paga nada en la temporada 26/27",
+      "description": "A partir del {launchDate} pagan únicamente los nuevos registros. Toda cuenta que exista antes conserva el plan Entrenador: gratis, sin solicitud y sin datos de pago.",
+      "cardTitle": "Derecho adquirido",
+      "cardDeadlineLabel": "Registro hasta el",
+      "cardPlanLabel": "Tu plan",
+      "cardPlanValue": "Entrenador",
+      "cardFreeUntilLabel": "Gratis hasta",
+      "cardDueLabel": "A pagar hasta entonces",
+      "cardNote": "Esto no es una fase de prueba: no hay ninguna fecha en la que se cargue una tarjeta, porque no hay ninguna tarjeta guardada.",
+      "cardCta": "Crear cuenta y asegurarlo",
+      "closing": "El motivo no es un truco publicitario, sino una cuenta: los entrenadores que han usado Statix durante toda una temporada valen como prescriptores mucho más de lo que aportarían como primeros pagadores. Y nadie que esté en plena segunda vuelta debería encontrarse su temporada detrás de una caja.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Registrarse antes del {founderDeadline}",
+          "text": "Basta con una dirección de correo. No hay ningún campo para datos de pago, porque hasta enero no hay ningún proceso de cobro."
+        },
+        {
+          "number": 2,
+          "title": "Tu cuenta queda en Entrenador",
+          "text": "No como fase de prueba, sino como valor fijado. El 1 de enero solo cambia el valor por defecto para los nuevos registros; tu cuenta conserva lo que tiene."
+        },
+        {
+          "number": 3,
+          "title": "Gratis hasta el {founderFreeUntil}",
+          "text": "La temporada 26/27 completa hasta el final, segunda vuelta incluida. Después decides si te quedas, sin que antes se cobre nada."
+        }
+      ]
+    },
+    "compare": {
+      "kicker": "Todo comparado",
+      "title": "Qué incluye cada plan",
+      "description": "Completo y sin asteriscos: cada función y cada límite tal y como los aplicará la app a partir de enero.",
+      "included": "incluido",
+      "notIncluded": "no incluido",
+      "limitsNote": "Las cifras son límites máximos, válidos a partir del {launchDate}.",
+      "rowHeaderSr": "Función o límite",
+      "captionSuffix": "funciones y límites por plan",
+      "closing": "Los límites nunca actúan en mitad del partido: si cabe otro partido en tu cupo se comprueba al crearlo, no en el descanso. Un registro ya iniciado siempre llega al final y siempre se guarda.",
+      "groups": [
+        {
+          "id": "erfassen",
+          "title": "Registrar",
+          "note": "Sin recortes en ningún plan. Lo que ocurre durante el partido nunca es una cuestión de precio.",
+          "rows": [
+            {
+              "label": "Registrar el partido en directo con un toque",
+              "hint": "Goles, tiros, paradas, pérdidas, 7 m, exclusiones",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Posición de tiro y zona de portería en la pista",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Cronómetro, banquillo, asistente de partido",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Registrar sin conexión en el pabellón",
+              "hint": "Se sincroniza solo al salir",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Como app en la pantalla de inicio",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Corregir acciones después del partido",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "auswerten",
+          "title": "Analizar",
+          "note": "Aquí está el tiempo de cálculo, y la profundidad con la que miras atrás en tu temporada.",
+          "rows": [
+            {
+              "label": "Resumen del partido y valores por jugador",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Partidos visibles con toda la profundidad",
+              "hint": "Los más antiguos se conservan y se muestran difuminados: no se borra nada",
+              "basis": "5",
+              "trainer": "todos",
+              "pro": "todos"
+            },
+            {
+              "label": "Mapas de tiro y mapas de calor",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Evolución de temporada, curva de forma, récords",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Jugador del partido con póster de premio",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Balance ante rivales y guía de forma para scouting",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Análisis con IA",
+              "hint": "al mes, por cuenta y sumando todos los equipos",
+              "basis": "4",
+              "trainer": "20",
+              "pro": "40"
+            },
+            {
+              "label": "Análisis de vídeo con etiquetado y listas",
+              "hint": "100 GB son unos 16 partidos en 1080p",
+              "basis": false,
+              "trainer": false,
+              "pro": "100 GB"
+            },
+            {
+              "label": "El vídeo va sincronizado con el cronómetro",
+              "hint": "Cada acción registrada encuentra su punto en el vídeo",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "organisieren",
+          "title": "Organizar",
+          "note": "El calendario es la función más usada de la app. Se mantiene completo en todas partes.",
+          "rows": [
+            {
+              "label": "Calendario con series y confirmaciones",
+              "hint": "incluidos recordatorios push y plazo de respuesta",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Ausencias, suscripción de calendario, pabellones, invitados",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Plantilla como álbum de cromos",
+              "hint": "HPI y OVR, niveles, radar, pegatinas",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Equipos",
+              "hint": "por cuenta",
+              "basis": "1",
+              "trainer": "3",
+              "pro": "5"
+            },
+            {
+              "label": "Entrenadores asistentes por equipo",
+              "hint": "las invitaciones pendientes cuentan",
+              "basis": "0",
+              "trainer": "2",
+              "pro": "5"
+            },
+            {
+              "label": "Jugadores por equipo",
+              "basis": "20",
+              "trainer": "30",
+              "pro": "40"
+            },
+            {
+              "label": "Partidos guardados por equipo",
+              "basis": "10",
+              "trainer": "200",
+              "pro": "500"
+            },
+            {
+              "label": "Torneos por equipo",
+              "basis": "3",
+              "trainer": "20",
+              "pro": "50"
+            },
+            {
+              "label": "Cuentas de jugador para la plantilla",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "teilen",
+          "title": "Compartir",
+          "note": "Cada vez que se comparte se genera un PDF y a menudo se envía un correo: la segunda partida que cuesta dinero de verdad.",
+          "rows": [
+            {
+              "label": "Marcador público en directo por enlace y QR",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Espacios de patrocinio en el marcador en directo",
+              "hint": "Un patrocinador de valla cubre la suscripción del club",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Acta del partido en PDF y enlaces para compartir",
+              "hint": "al mes, por cuenta",
+              "basis": "4",
+              "trainer": "30",
+              "pro": "60"
+            },
+            {
+              "label": "Compartir partidos con otros entrenadores",
+              "hint": "Llega a su buzón de Statix",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Encuestas a jugadores sin cuenta",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Enviar resúmenes a las jugadoras",
+              "hint": "Ven sus acciones sin cuenta propia",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        }
+      ]
+    },
+    "club": {
+      "kicker": "Para la caja del club",
+      "title": "¿Cuánto cuesta Statix para un club?",
+      "description": "La pregunta que se hace en la junta directiva antes de que nadie abra la app.",
+      "coachTitle": "Un entrenador, varios equipos",
+      "coachParagraph1": "Para eso no hace falta un contrato de club. Una cuenta Entrenador soporta tres equipos —juvenil, femenino, masculino, como esté organizado en vuestro club— con dos entrenadores asistentes cada uno, por 79 € por temporada. Es menos que una licencia de club de las apps de organización habituales, y además trae estadísticas, mapas de tiro e IA.",
+      "coachParagraph2": "En el club a menudo se puede financiar por completo: a partir del nivel Entrenador puede aparecer un patrocinador en el marcador público en directo, y un patrocinador de valla suele cubrir el importe él solo.",
+      "clubTitle": "Todo el club: bajo consulta",
+      "clubParagraph1": "Quien quiera reunir todos los equipos bajo un mismo techo —una vista general del club, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club. Como referencia para el presupuesto: unos 390 € por temporada para cinco equipos, escalonado según el tamaño.",
+      "clubParagraph2": "No hay una tarifa de lista, y es deliberado. Lo que necesita un club con doce equipos de base es distinto de lo que necesita uno con dos: escribid brevemente cuántos equipos tenéis y os llegará una oferta a medida.",
+      "clubLink": "Solicitar condiciones para clubes",
+      "closing": "Lo que gana un club cuando todos los equipos registran con el mismo esquema —un estándar para todos los equipos, plantillas y asistencia a los entrenamientos en un solo sitio, desarrollo a lo largo de todas las categorías de base, protección de datos bien resuelta— está en la página <club>app de estadísticas de balonmano para clubes</club>. Para los cuerpos técnicos de la base merece más la pena mirar <youth>Statix para entrenadores de base</youth>."
+    },
+    "alternative": {
+      "kicker": "La verdadera alternativa",
+      "title": "¿Papel, Excel o Statix?",
+      "description": "Casi ningún entrenador compara dos apps de estadísticas. La comparación es con lo que hay el sábado en la carpeta.",
+      "colAspect": "De qué se trata",
+      "colPaper": "Papel",
+      "colExcel": "Excel",
+      "colStatix": "Statix",
+      "rows": [
+        {
+          "aspect": "Coste",
+          "paper": "Un bloc y un bolígrafo",
+          "excel": "Normalmente ya lo tienes",
+          "statix": "0 € o 79 € por temporada"
+        },
+        {
+          "aspect": "Durante el partido",
+          "paper": "Hacer palotes mientras entrenas",
+          "excel": "Prácticamente inmanejable en una tableta en el pabellón",
+          "statix": "Un toque por acción, también sin conexión"
+        },
+        {
+          "aspect": "Análisis",
+          "paper": "Pasarlo a limpio por la noche, o nunca",
+          "excel": "Mantener fórmulas y buscar errores",
+          "statix": "Listo en cuanto suena la bocina"
+        },
+        {
+          "aspect": "Mapas de tiro",
+          "paper": "A mano sobre una pista impresa",
+          "excel": "No está previsto",
+          "statix": "Automáticos a partir de cada tiro registrado"
+        },
+        {
+          "aspect": "Evolución en la temporada",
+          "paper": "Una carpeta en el trastero",
+          "excel": "Un archivo por partido, sin tendencia",
+          "statix": "Evolución por jugador en todos los partidos"
+        },
+        {
+          "aspect": "Implicar al equipo",
+          "paper": "En absoluto",
+          "excel": "Archivo por correo, versión incierta",
+          "statix": "Enlace, PDF, marcador en directo"
+        }
+      ],
+      "hiddenCostTitle": "Los costes que no aparecen en ninguna caja",
+      "hiddenCostParagraph": "El papel no es gratis: solo no cuesta nada que haya que transferir. Se paga igualmente: con el partido que dos semanas después ya no podéis reconstruir. Con la semana de entrenamiento montada sobre una corazonada en lugar de sobre un mapa de tiro. Con las hojas de conteo en la bolsa de deporte que nadie suma nunca. Quien recoge datos toda una temporada y no los analiza ha hecho el trabajo y ha dejado el fruto por el camino.",
+      "template": "Si quieres seguir con el papel, al menos usa una plantilla decente. Nuestra <template>plantilla de Excel para estadísticas de balonmano</template> es gratuita y calcula sola los porcentajes de tiro; y en la guía se explica <guide>cómo llevar bien una estadística de balonmano</guide>, sea con lo que sea."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre los precios",
+      "description": "Lo que los entrenadores quieren saber antes de que llegue el 1 de enero.",
+      "items": [
+        {
+          "question": "¿Cuánto cuesta Statix?",
+          "answer": "Hasta el {founderDeadline}, nada. A partir del {launchDate} hay tres niveles: Básico sigue siendo gratuito para siempre, Entrenador cuesta 79 € por temporada o 9,90 € al mes, y Pro 159 € por temporada o 19,90 € al mes. Todos los precios son precios finales; como pequeño empresario según el § 19 de la ley alemana del IVA no repercuto impuesto sobre el valor añadido."
+        },
+        {
+          "question": "Ya uso Statix, ¿tengo que pagar a partir de enero?",
+          "answer": "No. Toda cuenta creada antes del {launchDate} conserva el plan Entrenador gratis hasta el {founderFreeUntil}, es decir, la temporada 26/27 completa hasta el final. No tienes que hacer nada, ni pulsar nada, ni guardar datos de pago. Quien se topa con un muro de pago a mitad de temporada pierde su acta de partido, y ese sería el peor comienzo imaginable."
+        },
+        {
+          "question": "¿Por qué Statix pasa a ser de pago?",
+          "answer": "Statix nació como proyecto personal para mi propio equipo y hoy lo usan {coachCount}. El servidor, la base de datos, los análisis con IA y el almacenamiento de vídeo cuestan más con cada equipo, y esa factura no puedo asumirla de forma privada a largo plazo. La alternativa sería cerrar el proyecto, la peor solución para todas las partes."
+        },
+        {
+          "question": "¿Qué sigue siendo gratuito?",
+          "answer": "Todo el registro en directo, el calendario completo con confirmaciones y ausencias y suscripción de calendario, las fichas de plantilla con HPI, niveles y pegatinas, el marcador público en directo y el análisis de tus partidos. En Básico están limitados: un equipo, 20 jugadores, 10 partidos guardados, los últimos cinco partidos con toda la profundidad y cuatro análisis con IA y cuatro informes compartidos al mes."
+        },
+        {
+          "question": "Mensual o anual, ¿cuál es la diferencia?",
+          "answer": "Solo el precio y el ritmo. Anual aquí significa una temporada, del 1 de julio al 30 de junio, y cuesta alrededor de un tercio menos: 79 € en lugar de 118,80 € en Entrenador y 159 € en lugar de 238,80 € en Pro. La opción mensual es más cara, pero se puede cancelar en cualquier momento. Quien entra en enero paga solo la temporada parcial hasta el 30 de junio: 39 € en lugar de 79 € en Entrenador y 79 € en lugar de 159 € en Pro."
+        },
+        {
+          "question": "¿Pierdo datos si me quedo en Básico?",
+          "answer": "No. No se borra nada. En Básico ves los cinco partidos registrados más recientes con toda la profundidad; los más antiguos siguen en la lista y se muestran difuminados, con un aviso de qué los vuelve a desbloquear. Y el límite de diez partidos se comprueba al crear un partido, nunca durante uno en curso: un registro iniciado siempre llega al final y siempre se guarda."
+        },
+        {
+          "question": "¿Cuánto cuesta Statix para un club?",
+          "answer": "Un entrenador individual se queda en los niveles de arriba. Quien quiera integrar al club como conjunto —todos los equipos bajo un mismo techo, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club, y esa se configura para el club. Como referencia son unos 390 € por temporada para cinco equipos, escalonado según el tamaño. No hay tarifa de lista de forma deliberada: lo que necesita un club con doce equipos de base es distinto de lo que necesita uno con dos."
+        },
+        {
+          "question": "¿Cómo puedo cancelar?",
+          "answer": "En cualquier momento desde tu cuenta, con un clic: un botón de cancelación forma parte del producto desde el primer día de pago. Una suscripción mensual termina con el mes siguiente y una de temporada el 30 de junio. Después tu cuenta continúa en Básico y tus datos se quedan donde están."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Ahora o a partir de enero",
+      "title": "Hasta el {founderDeadline} cuenta cada registro",
+      "description": "Registrarse no cuesta nada y lleva un minuto: no hay ningún campo para datos de pago. Quien crea hoy una cuenta conserva el plan Entrenador gratis hasta el {founderFreeUntil}. ¿Prefieres mirar primero? La demo en directo funciona con datos reales de partido y sin cuenta.",
+      "linkLabel": "Suscríbete al boletín y entérate antes de los cambios"
+    }
+  },
+  "common": {
+    "ctaRegister": "Regístrate gratis ahora",
+    "ctaDemo": "Ver la demo en directo",
+    "ctaDemoNoAccount": "Demo en directo sin cuenta",
+    "included": "incluido",
+    "notIncluded": "no incluido"
+  },
+  "brandPage": {
+    "hero": {
+      "kicker": "Statix de un vistazo",
+      "titlePrefix": "¿Qué es",
+      "titleBrand": "Statix",
+      "titleSuffix": "?",
+      "lede": "Statix es la app de estadísticas de balonmano para entrenadores, clubes y equipos: registra los partidos en directo con un toque —goles, tiros, paradas, exclusiones y cambios— y obtén automáticamente porcentajes de tiro, mapas de tiro, valores de jugador y análisis con IA. Desarrollada en Alemania, directamente en el navegador y con funcionamiento sin conexión en el pabellón.",
+      "ctaFeatures": "Ver todas las funciones",
+      "trust": [
+        "Hecho en Alemania",
+        "Empieza gratis",
+        "Sin conexión en el pabellón"
+      ],
+      "screenshotAlt": "App de balonmano Statix: registrar estadísticas del partido en directo con un toque",
+      "screenshotLabel": "Statix – registro en directo durante el partido"
+    },
+    "overview": {
+      "kicker": "En 30 segundos",
+      "title": "Statix, explicado en breve",
+      "paragraph1": "Statix sustituye a las hojas de papel, las listas de palotes y las tablas de Excel a pie de pista. Durante el partido cada acción está a un solo toque; todo el análisis se hace automáticamente en segundo plano. Tras el pitido final, las estadísticas de jugadores y del equipo, los porcentajes de tiro, los mapas de tiro y las curvas de evolución están listos al instante y se pueden compartir con todo el equipo como enlace o PDF.",
+      "paragraph2": "A eso se suman un marcador público en directo para familias y aficionados, un modo torneo con clasificación automática, encuestas a jugadores, colaboración entre entrenadores y análisis con IA de partidos, jugadores y torneos completos.",
+      "points": [
+        "Cada acción está a un solo toque durante el partido",
+        "El análisis se ejecuta solo en segundo plano",
+        "Estadísticas, mapas de tiro y evolución justo tras el pitido final",
+        "Compartir con todo el equipo por enlace o PDF"
+      ],
+      "screenshotAlt": "Vista general de partidos en Statix: todos los partidos y análisis de un vistazo",
+      "screenshotLabel": "Statix – vista general de partidos",
+      "factsKicker": "De un vistazo",
+      "facts": [
+        {
+          "label": "Producto",
+          "value": "Statix – app de estadísticas de balonmano"
+        },
+        {
+          "label": "Categoría",
+          "value": "Estadística en directo, análisis de partido y gestión de equipo para balonmano"
+        },
+        {
+          "label": "Público",
+          "value": "Entrenadores, entrenadores asistentes, clubes y equipos de balonmano de todas las categorías"
+        },
+        {
+          "label": "Plataforma",
+          "value": "App web en el navegador: móvil, tableta/iPad y portátil, con modo sin conexión"
+        },
+        {
+          "label": "Precio",
+          "value": "Básico gratuito para siempre; niveles de pago desde el 1 de enero de 2027, desde 79 € por temporada"
+        },
+        {
+          "label": "Desarrollador",
+          "value": "Arkadiusz Weiss, jugador de balonmano de Alemania (Made in Germany)"
+        },
+        {
+          "label": "Sitio web",
+          "value": "{domain}"
+        }
+      ]
+    },
+    "highlights": {
+      "kicker": "Mejor mostrarlo",
+      "title": "Así se ve Statix en el pabellón",
+      "description": "Del primer toque en el banquillo al análisis terminado: los cuatro pasos que definen Statix.",
+      "demoCta": "Probar Statix en directo en la demo",
+      "items": [
+        {
+          "badge": "Registro en directo",
+          "title": "Todo el partido con un toque, desde el banquillo",
+          "description": "Registras goles, tiros, paradas, exclusiones y cambios en tiempo real con un toque. Sin papel ni listas de palotes, y aun así, al pitido final tienes cada acción documentada con limpieza."
+        },
+        {
+          "badge": "Análisis automático",
+          "title": "Estadísticas de jugadores y equipo en segundos",
+          "description": "Statix calcula automáticamente en segundo plano porcentajes de tiro, eficiencia, minutos de participación y curvas de evolución, para cada jugador y para todo el equipo, y se comparten al instante como enlace o PDF."
+        },
+        {
+          "badge": "Mapas de tiro",
+          "title": "Ve dónde caen los goles, y dónde no",
+          "description": "Cada tiro queda representado en la pista. Así detectas patrones, esquinas favoritas y debilidades que una tabla de números deja escapar."
+        },
+        {
+          "badge": "Análisis con IA",
+          "title": "Análisis con IA de partidos, jugadores y torneos",
+          "description": "Statix resume partidos, jugadores y torneos enteros en análisis comprensibles, con nombres de jugadores seudonimizados. Fortalezas, debilidades y puntos de partida para el próximo entrenamiento de un vistazo."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "La plantilla al completo",
+      "title": "¿Qué puede hacer Statix?",
+      "description": "Todas las funciones de la app Statix de un vistazo, del registro en directo al análisis con IA. Cada línea lleva a su propia página.",
+      "indexLink": "Ir al resumen de funciones con capturas"
+    },
+    "story": {
+      "kicker": "¿Para quién?",
+      "title": "¿Para quién está hecho Statix?",
+      "description": "Del entrenador en el banquillo a la afición en la grada: Statix lleva números reales a todo el entorno del equipo.",
+      "audiences": [
+        {
+          "title": "Entrenadores y asistentes",
+          "description": "Registran los partidos en directo con un toque desde el banquillo y deciden con números reales en lugar de intuiciones."
+        },
+        {
+          "title": "Clubes",
+          "description": "Reúnen estadísticas, plantillas y temporadas de todos los equipos en un solo sitio, desde la base hasta el primer equipo."
+        },
+        {
+          "title": "Jugadoras y jugadores",
+          "description": "Ven sus porcentajes de tiro, sus curvas de evolución y sus fichas, y reconocen en qué pueden trabajar."
+        },
+        {
+          "title": "Familias y aficionados",
+          "description": "Siguen los partidos por el marcador público en directo con enlace o código QR, directamente en el navegador y sin cuenta."
+        }
+      ],
+      "photoAlt": "Vista de temporada en Statix con eficacia ofensiva, porcentaje de paradas, balance y diferencia de goles",
+      "founderKicker": "Quién está detrás",
+      "founderTitle": "¿Quién está detrás de Statix?",
+      "founderParagraph1": "Statix lo desarrolla Arkadiusz Weiss, un jugador de balonmano de Alemania que construyó la app a partir de su propia experiencia a pie de pista. El nombre resume lo que hace la app en esencia: estadísticas que de verdad ayudan en balonmano.",
+      "founderParagraph2": "Statix no es una herramienta anónima de una gran empresa: las opiniones de entrenadoras y entrenadores desde el pabellón pasan directamente al desarrollo, y las funciones nuevas nacen donde hacen falta: en el banquillo, en el entrenamiento y en el análisis posterior."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales sobre Statix",
+      "description": "Todo lo que quiere saber quien oye hablar de Statix por primera vez.",
+      "items": [
+        {
+          "question": "¿Qué es Statix?",
+          "answer": "Statix es una app de estadísticas de balonmano hecha en Alemania. Entrenadores, clubes y equipos registran los partidos en directo con un toque —goles, tiros, paradas, exclusiones y cambios— y con eso Statix calcula automáticamente porcentajes de tiro, estadísticas de jugadores y equipo, mapas de tiro y análisis con IA."
+        },
+        {
+          "question": "¿Statix es gratuito?",
+          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en {appUrl} y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027 hay tres niveles: Básico se queda en 0 €, Entrenador cuesta 79 € por temporada y Pro 159 €. Quien se registre antes conserva el plan Entrenador gratis durante toda la temporada 26/27, es decir, hasta el 30 de junio de 2027."
+        },
+        {
+          "question": "¿Cómo puedo probar Statix?",
+          "answer": "Statix está disponible: te registras gratis en {appUrl} y empiezas directamente con tu equipo. Si prefieres mirar primero, abre la demo en directo: una versión completa con datos reales de partido, en el navegador y sin cuenta."
+        },
+        {
+          "question": "¿En qué dispositivos funciona Statix?",
+          "answer": "Statix funciona directamente en el navegador en móvil, tableta (iPad y Android) y portátil. No hace falta instalar nada desde una tienda de aplicaciones, aunque la app se puede instalar como PWA en la pantalla de inicio y funciona sin conexión en el pabellón."
+        },
+        {
+          "question": "¿Quién está detrás de Statix?",
+          "answer": "Detrás de Statix está Arkadiusz Weiss, un jugador de balonmano de Alemania que desarrolla la app desde su propia experiencia a pie de pista. No es una herramienta anónima: las opiniones desde el pabellón pasan directamente al desarrollo."
+        },
+        {
+          "question": "¿Dónde encuentro Statix en internet?",
+          "answer": "La web oficial de Statix es {domain}. Allí encontrarás todas las funciones, la guía de balonmano y la demo en directo sin cuenta. La app funciona en {appUrl}. En Instagram, Statix está como {instagram}."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Ya disponible",
+      "title": "Prueba Statix tú mismo",
+      "description": "Statix ya está activo: regístrate gratis y registra tu primer partido, directamente en el navegador y sin instalar nada. ¿Prefieres mirar primero? La demo en directo funciona con datos reales de partido y sin cuenta.",
+      "linkLabel": "Ir a la guía de balonmano"
+    }
+  },
+  "clubsPage": {
+    "hero": {
+      "kicker": "Para clubes",
+      "titleLead": "Estadísticas de balonmano para todo el",
+      "titleHighlight": "club",
+      "lede": "Diez equipos de base, diez sistemas: uno lleva Excel, otro una hoja de papel y el tercero nada. El área de club de Statix pone una capa por encima de todos los equipos. Todos registran con el mismo esquema, las plantillas y los calendarios están en la misma herramienta y los jugadores conservan su trayectoria a través de las categorías. Lo que eso significa para vuestro club lo vemos en una conversación.",
+      "trust": [
+        "Configuración personal",
+        "Contrato de encargo según art. 28 RGPD",
+        "Todos los equipos en una página"
+      ],
+      "primaryAction": "Consultar para el club",
+      "screenshotAlt": "Vista general del club con todos los equipos de balonmano de un club en la app Statix",
+      "screenshotLabel": "Ocho equipos, un fin de semana, una página"
+    },
+    "benefits": {
+      "kicker": "Lo que cambia",
+      "title": "Un club, un estándar",
+      "description": "Seis cosas que solo funcionan cuando cada equipo deja de llevar su propio sistema.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Diez equipos de base, un esquema",
+          "text": "Todos los equipos registran las mismas acciones con las mismas reglas de conteo, porque la app no ofrece otras. Infantil, juvenil y el equipo femenino quedan después uno junto a otro en una misma tabla, sin que nadie convierta nada."
+        },
+        {
+          "number": 2,
+          "title": "Una jugadora, una trayectoria",
+          "text": "Si una jugadora pasa de infantil a cadete y más tarde al primer equipo femenino, en Statix sigue siendo la misma persona con todas sus etapas una debajo de otra. Lo que tres entrenadores aprendieron sobre ella se queda en el club."
+        },
+        {
+          "number": 3,
+          "title": "Jugadores en varias plantillas",
+          "text": "Una juvenil que ayuda en el equipo femenino aparece en ambas plantillas: dorsal propio, calendario propio, números propios. Para el día de partido el entrenador compone con eso su convocatoria."
+        },
+        {
+          "number": 4,
+          "title": "Los calendarios en la misma herramienta",
+          "text": "Los horarios de entrenamiento y las series de citas están donde están los partidos. Los jugadores confirman o cancelan ellos mismos y registran las ausencias largas como periodo; el entrenador ve de antemano quién viene."
+        },
+        {
+          "number": 5,
+          "title": "Veis pronto dónde falta algo",
+          "text": "El análisis del club pone equipo junto a equipo y temporada junto a temporada. Una categoría cuya efectividad de tiro lleva dos años estancada salta a la vista antes de que la generación termine; el desarrollo individual que hay detrás está en la página de la jugadora."
+        },
+        {
+          "number": 6,
+          "title": "Un cambio de entrenador no cuesta datos",
+          "text": "Si un entrenador lo deja, las plantillas, los partidos, los calendarios y los análisis se quedan en el club. Su sucesor recibe un equipo con historia en lugar de una carpeta vacía."
+        }
+      ]
+    },
+    "clubLevel": {
+      "kicker": "El área de club",
+      "title": "Todos los equipos en una página",
+      "description": "Los entrenadores siguen trabajando en su propio equipo. Por encima hay una capa que sin club no existe y que nadie mantiene a mano.",
+      "capabilities": [
+        {
+          "term": "Vista general",
+          "text": "Los resultados de todos los equipos del fin de semana, los próximos partidos y la tabla de todas las plantillas."
+        },
+        {
+          "term": "Equipos",
+          "text": "Cada plantilla con primer entrenador, cuerpo técnico, último y próximo partido. Un clic lleva dentro."
+        },
+        {
+          "term": "Jugadores",
+          "text": "Todas las jugadoras y jugadores del club en una lista, con búsqueda por nombre o equipo."
+        },
+        {
+          "term": "Análisis",
+          "text": "Efectividad de tiro, porcentaje de paradas y porcentaje de victorias por equipo, más la comparación entre temporadas."
+        },
+        {
+          "term": "Trayectorias",
+          "text": "Quien ya ha jugado en dos equipos del club aparece con sus etapas en el panel."
+        },
+        {
+          "term": "Análisis con IA",
+          "text": "Los informes de todos los equipos en un solo sitio. Los nombres de jugadores se seudonimizan antes."
+        },
+        {
+          "term": "Roles",
+          "text": "La administración del club puede todo, la dirección deportiva lee, los entrenadores siguen en su equipo."
+        },
+        {
+          "term": "Patrocinadores",
+          "text": "El escudo y los patrocinadores del club aparecen en el marcador en directo de cada equipo que no tenga los suyos."
+        }
+      ],
+      "analysisAlt": "Análisis del club con indicadores de todos los equipos de balonmano de un club",
+      "analysisLabel": "Cada temporada, cada equipo uno junto a otro",
+      "playersAlt": "Lista de jugadores de todo el club, de todos los equipos de un club de balonmano",
+      "playersLabel": "Todos los jugadores del club, en todas las plantillas"
+    },
+    "youth": {
+      "kicker": "Para la cantera",
+      "title": "Muchos equipos, un solo camino de cantera",
+      "description": "La cantera para la que se construyó esta capa: ocho, diez, doce equipos y hasta ahora otros tantos sistemas para llevar estadísticas.",
+      "points": [
+        {
+          "number": 1,
+          "title": "De los más pequeños al juvenil con el mismo esquema",
+          "text": "La efectividad de tiro del infantil es la misma magnitud que la del juvenil, y el número de errores del cadete se puede comparar con el de hace dos años. Poner generaciones una junto a otra deja de ser un cálculo y pasa a ser una selección en el filtro."
+        },
+        {
+          "number": 2,
+          "title": "El paso al siguiente equipo",
+          "text": "El momento en que más se pierde en un club: una generación asciende, el nuevo entrenador no conoce a nadie y tres años de observación están en la cabeza del anterior. Aquí ve partidos, evolución y posición de su nuevo equipo desde el primer día, incluso sin esa conversación de traspaso que nunca ocurre."
+        },
+        {
+          "number": 3,
+          "title": "El desarrollo se ve en la serie, no en un partido",
+          "text": "Un solo partido de base no dice casi nada. Doce seguidos dicen si la efectividad de tiro desde primera línea sube, si bajan los errores, si el portero para más que en otoño. Eso es exactamente lo que muestra el análisis, por jugadora y a lo largo de las temporadas. La dirección deportiva ve así dónde funciona la formación y dónde un equipo necesita apoyo."
+        }
+      ],
+      "progressAlt": "Curva de evolución de una jugadora de balonmano a lo largo de una temporada en la app Statix",
+      "progressLabel": "Evolución de una jugadora a lo largo de la temporada",
+      "careersAlt": "Lista de trayectorias de jugadores por varios equipos de un club de balonmano",
+      "careersLabel": "Quien ya ha dado el salto aparece en el panel del club",
+      "closing": "Cómo se ve esto para la entrenadora en el banquillo, un toque por acción y marcador en directo para las familias, está en la página <youth>estadísticas de balonmano para entrenadores de base</youth>."
+    },
+    "training": {
+      "kicker": "Entrenamiento y participación",
+      "title": "Quién viene está junto al calendario",
+      "description": "Plantilla, partidos, citas y respuestas están en un mismo sitio. Ninguna segunda herramienta para el calendario, ninguna tercera lista para la asistencia.",
+      "paragraph1": "<lead>Entrenamientos, partidos y todo lo que hay entre medias</lead> están en un calendario, como cita única o como serie para toda la temporada, con pabellón, dirección y hora de encuentro. Quien mueve una serie la mueve una vez y no dieciocho.",
+      "paragraph2": "<lead>Las jugadoras confirman o cancelan ellas mismas</lead>, mediante un enlace de acceso del equipo, sin app de entrenador y sin que nadie vea sus números. Antes del entrenamiento el cuerpo técnico ve la lista completa: quién viene, quién cancela, quién quizá y de quién no ha llegado nada.",
+      "paragraph3": "<lead>Dos semanas de vacaciones son una sola entrada</lead>, no catorce cancelaciones. Las ausencias valen para un periodo y se aplican a todas las citas incluidas; en la lista de asistencia aparece entonces el motivo en lugar de «sin respuesta». Por qué falta alguien queda entre esa persona y el cuerpo técnico.",
+      "paragraph4": "<lead>Si se cae un entrenamiento</lead>, el equipo recibe un aviso en el móvil sin que nadie repase una lista de teléfonos. Para eso Statix se puede instalar como app en la pantalla de inicio, sin tienda de aplicaciones.",
+      "closing": "Cada equipo lleva su propio calendario, igual que registra sus partidos. En su vista general el club ve los <mark>partidos</mark> de todos los equipos; la asistencia a los entrenamientos se queda en el cuerpo técnico de cada equipo."
+    },
+    "privacy": {
+      "kicker": "Para el responsable de protección de datos",
+      "title": "Tratar los datos de jugadores como es debido",
+      "description": "En un club la implantación rara vez depende de lo que sepan los entrenadores, sino de esta pregunta. Así que aquí está la respuesta en cuatro puntos.",
+      "points": [
+        {
+          "title": "Encargo del tratamiento según el art. 28 RGPD",
+          "text": "Los datos de jugadores que introducen vuestros entrenadores los trata Statix por encargo del club. Facilitamos un contrato de encargo del tratamiento a petición; es exactamente el documento que pide un responsable de protección de datos."
+        },
+        {
+          "title": "Seudonimizados antes de que una IA vea nada",
+          "text": "Los nombres de jugadores se seudonimizan antes de que los datos lleguen a una IA. El análisis trabaja con abreviaturas neutras y los informes generados se pueden borrar en cualquier momento."
+        },
+        {
+          "title": "Los enlaces compartidos siguen siendo revocables",
+          "text": "Un partido solo es público si un entrenador lo publica, y esa publicación se puede retirar. En el marcador en directo los nombres aparecen abreviados por defecto."
+        },
+        {
+          "title": "Proveedores declarados",
+          "text": "Qué encargados del tratamiento intervienen —alojamiento, base de datos, envío de correo y los proveedores de IA— consta con nombre en las condiciones generales y en la política de privacidad, junto con las indicaciones sobre transferencias a terceros países."
+        }
+      ],
+      "closing": "Las disposiciones completas están en las <terms>condiciones generales (§ 7, protección de datos y encargo del tratamiento)</terms> y en la <privacy>política de privacidad</privacy>. Para un contrato de encargo basta un correo a <mail>{email}</mail>."
+    },
+    "rollout": {
+      "kicker": "Implantación",
+      "title": "En el club en cuatro pasos",
+      "description": "Ni proyecto, ni fecha de corte, ni importación de datos. Podéis empezar con dos equipos e incorporar el resto cuando encaje.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Nos escribís",
+          "text": "Nombre del club, número aproximado de equipos y quién debe administrar el club. No necesitamos más para deciros si esto encaja con vosotros y cómo."
+        },
+        {
+          "number": 2,
+          "title": "Creamos el club",
+          "text": "El área de club la configuramos nosotros, incluidas las personas que la administran. Recibís el código de acceso, un secreto de diez caracteres que podéis regenerar cuando queráis."
+        },
+        {
+          "number": 3,
+          "title": "Los entrenadores incorporan su equipo",
+          "text": "Cada primer entrenador crea su cuenta, gratis y en dos minutos, e introduce el código de acceso en los ajustes del equipo. Con eso su equipo pertenece al club. Sin importación, sin fecha de corte, sin formación."
+        },
+        {
+          "number": 4,
+          "title": "Desde el primer partido la vista general está lista",
+          "text": "En cuanto un equipo termina un partido, la vista general del club se llena. No hay que introducir nada después, nadie mantiene una segunda tabla: el nivel de club es una vista sobre los datos que los entrenadores registran de todos modos."
+        }
+      ]
+    },
+    "objections": {
+      "kicker": "Hablando claro",
+      "title": "Lo que se dice en la junta directiva",
+      "description": "Las frases con las que fracasan las implantaciones. Aquí están, con respuesta.",
+      "items": [
+        {
+          "question": "«¿Y esto cuánto cuesta?»",
+          "answer": "En esta página no hay ninguna etiqueta de precio, y es deliberado. Un club con doce equipos de base necesita algo distinto de uno con dos, y una cifra válida para ambos sería falsa para uno de ellos. Escribidnos cuántos equipos queréis integrar y qué queréis hacer con ello: recibiréis una oferta adecuada para vuestro club, con tiempo suficiente para vuestra planificación presupuestaria. Para el entrenador individual la entrada sigue siendo gratuita en cualquier caso."
+        },
+        {
+          "question": "«Nuestros entrenadores no son de tecnología.»",
+          "answer": "Statix está hecho para un entrenador que entrena además de todo lo demás. Cada acción es un toque, no hay formación ni configuración que alguien tenga que asumir por el club. Quien quiera puede empezar por goles y tiros y dejar el resto. Y quien prefiera verlo antes, abre la demo en directo sin cuenta."
+        },
+        {
+          "question": "«Pero ya tenemos software de club.»",
+          "answer": "Probablemente uno para socios, cuotas y secciones, y ese debe quedarse donde está. Statix hace lo contrario: lo que pasa en la pista y en el entrenamiento. Plantilla en lugar de lista de socios, asistencia a entrenamientos en lugar de estado de cuota, efectividad de tiro en lugar de facturación. Los dos a la vez es la regla, no la excepción."
+        },
+        {
+          "question": "«No podemos meter datos de jugadores en cualquier sitio.»",
+          "answer": "Correcto, y por eso está regulado. Para los datos de jugadores que introducís bajo vuestra responsabilidad, Statix es encargado del tratamiento según el art. 28 RGPD; facilitamos el contrato de encargo a petición. Antes de los análisis con IA los nombres se seudonimizan, en el marcador público aparecen abreviados por defecto, los informes compartidos se pueden retirar y qué proveedores intervienen consta íntegramente en las condiciones generales y en la política de privacidad."
+        },
+        {
+          "question": "«¿Y si lo dejamos después de una temporada?»",
+          "answer": "Pues lo dejáis. Podéis exportar los análisis en PDF y conservarlos, desactivar de nuevo los enlaces compartidos, y los equipos siguen siendo de sus entrenadores: el área de club es una vista sobre ellos, no una jaula alrededor."
+        }
+      ],
+      "links": "Lo que cuesta la entrada para una entrenadora individual y dónde están los límites del acceso gratuito está en la página <pricing>precios de la app de estadísticas de balonmano</pricing>; lo que funciona de forma permanente sin pagar, en <free>app de estadísticas de balonmano gratis</free>. Para las entrenadoras y entrenadores de vuestros equipos de base hay una página propia: <youth>estadísticas de balonmano para entrenadores de base</youth>. Y si primero queréis aclarar en qué debéis poneros de acuerdo antes de que alguien registre nada: <guide>implantar estadísticas en un club</guide>."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales de los clubes",
+      "description": "Lo que quieren saber las direcciones deportivas y las juntas antes de implantar Statix en el club.",
+      "items": [
+        {
+          "question": "¿Qué es el área de club de Statix?",
+          "answer": "Una capa por encima de los equipos individuales. En la app de estadísticas de balonmano todas las plantillas de un club cuelgan de un mismo techo: una vista general del club con los resultados y la tabla de todos los equipos, una lista de jugadores de todo el club, un análisis con comparación entre temporadas, las trayectorias de los jugadores por varios equipos y los análisis con IA reunidos. Los entrenadores siguen trabajando en su propio equipo como hasta ahora."
+        },
+        {
+          "question": "¿Para qué clubes merece la pena?",
+          "answer": "Sobre todo para una cantera con muchos equipos que quiera llevar las estadísticas de forma uniforme, desde los más pequeños hasta el juvenil y de ahí al sénior. Cuantos más equipos y más pasos entre ellos haya, más aporta el estándar común: cifras comparables, trayectorias continuas y una dirección deportiva que no tiene que preguntar a ocho entrenadores por separado."
+        },
+        {
+          "question": "¿Cuánto cuesta Statix para un club?",
+          "answer": "Para eso no hay etiqueta de precio estándar. Lo que necesita un club depende del número de equipos y de qué queráis hacer con ello, así que tras una consulta breve os hacemos una oferta en lugar de dar aquí una cifra que sería falsa para la mayoría de los clubes. Para entrenadoras y entrenadores individuales la entrada sigue siendo gratuita, sin tarjeta de crédito."
+        },
+        {
+          "question": "¿Cómo metemos a todos los equipos en el club?",
+          "answer": "Con un código de acceso. Nosotros creamos el club y os damos el código; cada primer entrenador lo introduce en los ajustes de su equipo y con eso ya forma parte. El camino parte deliberadamente del entrenador: el equipo es suyo, así que nadie lo mete desde fuera. El código lo podéis regenerar cuando queráis."
+        },
+        {
+          "question": "¿Pueden estar los jugadores en varios equipos?",
+          "answer": "Sí. Una juvenil que ayuda en el equipo femenino aparece en ambas plantillas, cada una con su dorsal, su calendario y sus números. Como ambas fichas pertenecen a la misma persona, sus etapas se juntan igualmente en una sola trayectoria, y al pasar a la siguiente categoría no se pierde nada."
+        },
+        {
+          "question": "¿Cómo controlamos la asistencia a los entrenamientos?",
+          "answer": "Cada equipo lleva sus citas en Statix: entrenamiento, partidos y todo lo demás, también como serie. Los jugadores confirman o cancelan ellos mismos, mediante un enlace de acceso y sin app propia de entrenador, y registran ausencias largas como vacaciones, enfermedad o lesión como un periodo en lugar de cancelar cada cita. El cuerpo técnico ve la lista completa de asistencia, incluidos aquellos de quienes aún no hay respuesta; los motivos de cancelación quedan entre el jugador y el cuerpo técnico."
+        },
+        {
+          "question": "¿Quién en el club puede ver qué datos?",
+          "answer": "Hay tres roles. La administración del club tiene acceso a todos los equipos, la dirección deportiva lee todo y no modifica nada, y un entrenador alcanza los equipos del club pero sigue trabajando en el suyo. Quien no tiene ninguno de estos roles no ve el área de club."
+        },
+        {
+          "question": "¿Cómo está regulada la protección de los datos de jugadores?",
+          "answer": "Para los datos de jugadores que introducís, Statix actúa como encargado del tratamiento en el sentido del art. 28 RGPD y facilita un contrato de encargo a petición. Antes de los análisis con IA los nombres se seudonimizan, de modo que el análisis trabaja con abreviaturas neutras. En el marcador público los nombres aparecen abreviados por defecto; en los equipos de base son nombres de menores. Los proveedores utilizados y las transferencias a terceros países constan en las condiciones generales y en la política de privacidad."
+        },
+        {
+          "question": "¿Statix sustituye a nuestra gestión del club?",
+          "answer": "No, ni pretende hacerlo. La gestión de socios, las cuotas y la organización de secciones se quedan en vuestro software actual. Statix cubre lo que allí no aparece: plantillas, calendarios y asistencia a entrenamientos, el registro en directo de los partidos y todos los análisis que salen de ahí."
+        },
+        {
+          "question": "¿Qué pasa si un entrenador deja el club?",
+          "answer": "El equipo y sus partidos siguen ahí. A través del cuerpo técnico o de la administración del club, su sucesor obtiene acceso; no dependéis de que alguien entregue un archivo privado."
+        },
+        {
+          "question": "¿Nuestros entrenadores necesitan formación?",
+          "answer": "No. El registro es un toque por acción, una cuenta se crea en dos minutos y unirse al club es un código en un campo. Quien prefiera verlo antes, inicia la demo en directo sin cuenta: funciona con datos reales de partido en el navegador."
+        },
+        {
+          "question": "¿Funciona también en pabellones sin cobertura?",
+          "answer": "Sí. Los partidos se registran sin conexión y se sincronizan en cuanto el dispositivo vuelve a estar en línea. Además, Statix se puede instalar como app en la pantalla de inicio sin pasar por una tienda de aplicaciones."
+        }
+      ]
+    },
+    "contact": {
+      "kicker": "Sin etiqueta de precio, una conversación",
+      "title": "Contadnos cómo es vuestro club",
+      "description": "¿Cuántos equipos tenéis, cuántos de ellos en la base y qué debería acabar reunido en un solo sitio? Con tres frases basta. Recibiréis una valoración sobre si el área de club encaja con vosotros y una oferta a vuestra medida en lugar de una cifra estándar.",
+      "formHint": "o directamente aquí en el formulario"
+    }
+  },
+  "youthCoachPage": {
+    "hero": {
+      "kicker": "Para entrenadores de base",
+      "titleLead": "Estadísticas de balonmano para",
+      "titleHighlight": "entrenadores de base",
+      "lede": "Entrenas, cambias y hablas, y encima tienes que ir anotando. Statix convierte eso en un toque por acción. Después del partido ves quién progresa, tus jugadores ven sus propios valores en el álbum de cromos y las familias siguen el partido en el marcador en directo. Ahora mismo no cuesta nada.",
+      "trust": [
+        "Un toque por acción",
+        "Ahora mismo 0 €",
+        "Sin formación"
+      ],
+      "screenshotAlt": "Entrenador de base registrando estadísticas de balonmano en directo con un toque desde el banquillo",
+      "screenshotLabel": "Registrar mientras entrenas"
+    },
+    "benefits": {
+      "kicker": "Desde el pabellón",
+      "title": "Lo que ganas en la base",
+      "description": "Seis cosas que cambian de verdad el sábado y en la semana siguiente.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Un toque mientras en realidad estás entrenando",
+          "text": "Estás en el banquillo, cambias, hablas, corriges, y encima deberías ir anotando. Por eso cada acción es exactamente un toque: gol, tiro fallado, parada, exclusión. Sin bolígrafo, sin carpeta y sin pasarlo a limpio por la noche."
+        },
+        {
+          "number": 2,
+          "title": "Los de catorce años ven su propia evolución",
+          "text": "«Estás mejorando» no se lo cree ningún adolescente. «Tu efectividad desde el extremo ha pasado del 41 al 58 por ciento», sí. Los números de partidos reales hacen visible el progreso, también en quienes no marcan más goles."
+        },
+        {
+          "number": 3,
+          "title": "La plantilla como álbum de cromos",
+          "text": "Fichas de jugador con valores de partidos reales, pegatinas por actuaciones destacadas y una pizarra táctica para alinear. Para los chicos y chicas es un álbum; para ti es la plantilla con números detrás."
+        },
+        {
+          "number": 4,
+          "title": "Las familias siguen el partido en el marcador en directo",
+          "text": "Basta un enlace o un código QR y quien no ha podido ir al desplazamiento ve el marcador y el desarrollo en directo en el navegador. Eso te ahorra los doce mensajes de WhatsApp en el descanso."
+        },
+        {
+          "number": 5,
+          "title": "Repartir minutos con justicia, y poder demostrarlo",
+          "text": "En la base los minutos son un tema permanente. Quien registra cuántas veces ha tirado cada uno y cómo se reparte la participación puede enseñar algo en una charla con las familias en lugar de justificarse."
+        },
+        {
+          "number": 6,
+          "title": "Encuestas sin cuenta para los jugadores",
+          "text": "¿Quién puede el sábado? Creas una encuesta y compartes un enlace: los jugadores responden sin registrarse. Nadie tiene que instalar una app solo porque quieras saber quién va en el autobús."
+        }
+      ]
+    },
+    "development": {
+      "kicker": "A lo largo de una temporada",
+      "title": "Hacer visible la evolución",
+      "description": "Un solo partido dice poco. Doce partidos dicen si tu entrenamiento cala.",
+      "paragraph": "En la base el rendimiento oscila de semana en semana; forma parte del juego. Por eso la información real es la trayectoria: ¿cómo ha evolucionado la efectividad desde el extremo desde que trabajáis los ángulos en el entrenamiento? ¿Quién asume ya lanzamientos que hace tres meses solo pasaba? Esas son las frases que hacen avanzar a un chaval, y las que puedes sostener en una charla con las familias.",
+      "readMore": "Para seguir leyendo, en clave práctica: <development>medir el desarrollo del jugador en balonmano</development>, <youth>entrenar balonmano base</youth> y, para los más pequeños, <mini>minibalonmano con niños</mini>.",
+      "screenshotAlt": "Plantilla como álbum de cromos: fichas de jugador con valores de partidos reales de balonmano",
+      "screenshotLabel": "Plantilla con fichas de jugador y valores"
+    },
+    "objections": {
+      "kicker": "Preguntas honestas",
+      "title": "Lo que objetan con razón los entrenadores de base",
+      "description": "Cuatro objeciones que yo mismo tuve, y cómo las respondo.",
+      "items": [
+        {
+          "question": "«No tengo una mano libre durante el partido.»",
+          "answer": "Esa es justo la razón de que el registro esté hecho como está: una acción es un toque, sin menús y sin preguntas de confirmación. Y no tienes que registrarlo todo. Empieza por goles y tiros fallados: ya es más de lo que da una hoja de palotes al final. Si se pone frenético, completas acciones después del partido."
+        },
+        {
+          "question": "«Para infantiles eso es mentalidad de rendimiento.»",
+          "answer": "Depende de qué hagas con los números. Si los usas para hacer rankings, sí. Si los usas para enseñarle a un chaval que su entrenamiento sirve para algo, es justo lo contrario. Por eso el foco está en la evolución a lo largo de una temporada y no en una clasificación."
+        },
+        {
+          "question": "«No soy de software.»",
+          "answer": "No hace falta que lo seas. No hay configuración, ni formación, ni manual: creas la plantilla, empiezas el partido y tocas. Quien quiera verlo antes abre la demo en directo, sin cuenta y directamente en el navegador."
+        },
+        {
+          "question": "«¿Le cuesta dinero al club?»",
+          "answer": "Ahora mismo no. Statix se puede usar gratis, sin tarjeta de crédito y sin ningún proceso de pago en la app. Así que no necesitas preguntar a nadie para empezar el sábado."
+        }
+      ],
+      "links": "Lo que incluye exactamente el acceso gratuito está en <free>app de estadísticas de balonmano gratis</free>. Si en el club queréis poner varios equipos al mismo nivel, lee <clubs>Statix para clubes</clubs>. Y quien quiera empezar de momento en papel, que use la <template>plantilla de Excel gratuita</template>."
+    },
+    "faq": {
+      "kicker": "Preguntas frecuentes",
+      "title": "Preguntas habituales de los entrenadores de base",
+      "description": "De la categoría a la charla con las familias.",
+      "items": [
+        {
+          "question": "¿A partir de qué categoría merecen la pena las estadísticas en balonmano base?",
+          "answer": "Empiezan a tener sentido donde los niños pueden entender su propia evolución, más o menos a partir de infantil. En benjamín y alevín se trata del manejo del balón y de disfrutar del juego; ahí basta con que tú lleves el registro para ti, sin convertir los números en tema."
+        },
+        {
+          "question": "¿Cómo registro estadísticas si estoy entrenando a la vez?",
+          "answer": "Con un toque por acción. Registra primero solo goles y tiros fallados: de ahí ya sale la efectividad. Todo lo demás lo puedes completar después del partido, porque las acciones se pueden editar más tarde."
+        },
+        {
+          "question": "¿Cómo le enseño a un chaval su evolución?",
+          "answer": "Por la trayectoria y no por un partido suelto. En Statix ves efectividades y valores a lo largo de varios partidos, además de la ficha en el álbum. Una conversación sobre una curva que sube funciona bastante mejor que una sobre un mal partido."
+        },
+        {
+          "question": "¿Pueden las familias seguir los partidos?",
+          "answer": "Sí, con el marcador público en directo. Publicas el partido, compartes el enlace o el código QR y las familias ven el marcador y el desarrollo en directo en el navegador, sin app y sin cuenta."
+        },
+        {
+          "question": "¿Una app de estadísticas de balonmano es gratuita para entrenadores de base?",
+          "answer": "Sí, ahora mismo Statix no cuesta nada: sin proceso de pago, sin tarjeta de crédito y sin periodo de prueba con fecha de caducidad. La demo en directo funciona incluso sin cuenta."
+        },
+        {
+          "question": "¿Qué hago con los números en el entrenamiento?",
+          "answer": "Combínalos con el mapa de tiro: si la efectividad solo baja desde una zona, ya tienes el objetivo del ejercicio. Y plantea los números en positivo: «desde primera línea estás en el 58 por ciento, vamos a afinar los tiros en suspensión» funciona mejor que la crítica a secas."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Antes del próximo partido",
+      "title": "Prepararlo rápido antes del sábado",
+      "description": "Crear la cuenta, escribir la plantilla y listo: lleva menos que preparar un entrenamiento. O mira antes en la demo en directo si puedes manejarlo desde el banquillo.",
+      "linkLabel": "Qué se incluye gratis"
+    }
   }
 }

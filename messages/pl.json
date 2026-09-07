@@ -1600,5 +1600,1072 @@
   "legalTranslationNotice": {
     "title": "Wersja wiążąca",
     "body": "Wiążąca jest niemiecka wersja tego dokumentu. Niniejsze tłumaczenie ma charakter wyłącznie informacyjny i nie jest prawnie wiążące."
+  },
+  "pricingPage": {
+    "launchDate": "1 stycznia 2027",
+    "founderDeadline": "31 grudnia 2026",
+    "founderFreeUntil": "30 czerwca 2027",
+    "coachCount": "ponad 50 trenerów",
+    "hero": {
+      "kicker": "Ceny i koszty",
+      "titleLead": "Ceny aplikacji do statystyk piłki ręcznej",
+      "titleBrand": "Statix",
+      "lede": "Od {launchDate} Statix otrzyma plany płatne: Baza pozostaje bezpłatna na zawsze, Trener kosztuje 79 € za sezon, a Pro 159 €. Rejestrowanie na żywo nie jest okrojone w żadnym planie – a kto zarejestruje się wcześniej, zachowa plan Trener za darmo do {founderFreeUntil}.",
+      "ctaPrimary": "Zarejestruj się za darmo",
+      "ctaSecondary": "Demo na żywo bez konta",
+      "deadline": "Termin: {founderDeadline}",
+      "deadlineNote": "· potem płacą tylko nowe rejestracje",
+      "trust": [
+        "Baza zostaje na 0 € na zawsze",
+        "Bez karty kredytowej",
+        "Demo bez konta"
+      ]
+    },
+    "why": {
+      "kicker": "Słowo od autora",
+      "title": "Dlaczego Statix od stycznia kosztuje",
+      "description": "Projekt hobbystyczny, z którego korzysta {coachCount}, przestaje być projektem hobbystycznym – przynajmniej na rachunku.",
+      "paragraph1": "Statix powstał, bo miałem dość kreskowania na kartce przy linii bocznej – dla własnej drużyny, wieczorami po treningu. Dziś {coachCount} rejestruje w nim swoje mecze i za każdym razem mnie to cieszy.",
+      "paragraph2": "Tyle że z każdą drużyną rośnie też rachunek: serwer i baza danych pracują całą dobę, każda analiza AI to płatne wywołanie modelu, każdy udostępniony raport generuje PDF i wysyła e-mail, każde wgrane wideo z meczu trwale zajmuje miejsce. Na dłuższą metę nie mogę tego finansować prywatnie. Dlatego od {launchDate} pojawią się plany płatne.",
+      "paragraph3": "Czego nie będzie: Statix nie zniknie za kasą. Funkcje podstawowe pozostają bezpłatne – ograniczone, owszem, ale w pełni używalne, żeby trener młodzieżowy z jedną drużyną mógł dalej z nich korzystać. Płaci się za to, co naprawdę kosztuje czas obliczeniowy, pamięć i wysyłkę. A samo rejestrowanie nie jest okrojone w żadnym planie: mur płatności w 58. minucie nie kosztuje klienta, tylko protokół meczu.",
+      "signatureRole": "Twórca Statix, trener piłki ręcznej"
+    },
+    "tiers": {
+      "kicker": "Tablica cen",
+      "title": "Trzy plany od {launchDate}",
+      "description": "Płaci się za to, co kosztuje prawdziwe pieniądze: czas obliczeniowy, pamięć i wysyłkę. Wszystko, co buduje nawyk, zostaje w każdym planie.",
+      "seasonNote": "Rok oznacza u nas sezon: od 1 lipca do 30 czerwca.",
+      "billingAriaLabel": "Okres rozliczeniowy",
+      "billingMonthly": "Miesięcznie",
+      "billingYearly": "Rocznie",
+      "billingYearlyBadge": "−33 %",
+      "recommendedLabel": "Polecany",
+      "vatNote": "Wszystkie ceny są cenami końcowymi. Jako drobny przedsiębiorca w rozumieniu § 19 niemieckiej ustawy o VAT nie wykazuję podatku od towarów i usług.",
+      "prorataLead": "Ceny obowiązują od {launchDate}. Kto dołączy w styczniu, płaci tylko za niepełny sezon do 30 czerwca:",
+      "prorataTrainer": "39 € zamiast 79 €",
+      "prorataTrainerSuffix": "w planie Trener,",
+      "prorataPro": "79 € zamiast 159 €",
+      "prorataProSuffix": "w planie Pro.",
+      "items": [
+        {
+          "id": "basis",
+          "name": "Baza",
+          "audience": "Dla trenera jednej drużyny",
+          "price": {
+            "monat": {
+              "amount": "0 €",
+              "unit": "na zawsze",
+              "note": "Bez karty, bez daty wygaśnięcia."
+            },
+            "jahr": {
+              "amount": "0 €",
+              "unit": "na zawsze",
+              "note": "Bez karty, bez daty wygaśnięcia."
+            }
+          },
+          "summary": "Jedna drużyna, jeden sezon, żadnego konta u dostawcy płatności. Rejestrowanie, analiza, planowanie terminów – rdzeń pozostaje bezpłatny, żeby Statix był użyteczny dla wszystkich.",
+          "highlights": [
+            "Rejestrowanie na żywo bez żadnych ograniczeń",
+            "Pełny terminarz i karty kadry",
+            "1 drużyna, 20 zawodników, 10 meczów",
+            "Ostatnie 5 meczów w pełnej głębi",
+            "4 analizy AI i 4 udostępnione raporty miesięcznie"
+          ],
+          "ctaLabel": "Zarejestruj się za darmo"
+        },
+        {
+          "id": "trainer",
+          "name": "Trener",
+          "audience": "Dla wszystkich, którzy naprawdę analizują po meczu",
+          "price": {
+            "monat": {
+              "amount": "9,90 €",
+              "unit": "miesięcznie",
+              "note": "Można wypowiedzieć co miesiąc."
+            },
+            "jahr": {
+              "amount": "79 €",
+              "unit": "za sezon",
+              "note": "To 6,58 € miesięcznie – 39,80 € oszczędności."
+            }
+          },
+          "summary": "Poziom, dla którego zbudowano Statix: cały sezon pozostaje widoczny, mapy rzutów i krzywe formy w komplecie, do trzech drużyn po dwóch asystentów każda.",
+          "highlights": [
+            "Każdy zarejestrowany mecz pozostaje widoczny w pełnej głębi",
+            "Mapy rzutów, mapy ciepła, krzywa formy, rekordy drużyny",
+            "3 drużyny po 2 asystentów trenera",
+            "Bilans z rywalami, ankiety, raport meczowy PDF",
+            "Miejsca sponsorskie w publicznej relacji na żywo",
+            "20 analiz AI i 30 udostępnionych raportów miesięcznie"
+          ],
+          "ctaLabel": "Zarejestruj się i zachowaj plan",
+          "recommended": true
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "audience": "Dla analizy wideo jako cotygodniowej rutyny",
+          "price": {
+            "monat": {
+              "amount": "19,90 €",
+              "unit": "miesięcznie",
+              "note": "Można wypowiedzieć co miesiąc."
+            },
+            "jahr": {
+              "amount": "159 €",
+              "unit": "za sezon",
+              "note": "To 13,25 € miesięcznie – 79,80 € oszczędności."
+            }
+          },
+          "summary": "Wszystko z planu Trener plus wideo: 100 GB nagrań, które same synchronizują się z zegarem meczowym. Każde zarejestrowane zdarzenie odnajduje swoje miejsce w wideo i nikt nie musi go szukać.",
+          "highlights": [
+            "100 GB wideo z tagowaniem i playlistami",
+            "Wideo automatycznie zsynchronizowane z zegarem meczu",
+            "Wysyłanie skrótów pojedynczym zawodniczkom",
+            "5 drużyn, 5 asystentów, 500 meczów",
+            "Konta zawodników dla całej kadry",
+            "40 analiz AI i 60 udostępnionych raportów miesięcznie"
+          ],
+          "ctaLabel": "Zarejestruj się i zachowaj plan"
+        }
+      ]
+    },
+    "founder": {
+      "kicker": "Dla tych, którzy już są z nami",
+      "title": "Kto zarejestruje się teraz, za sezon 26/27 nie zapłaci nic",
+      "description": "Od {launchDate} płacą wyłącznie nowe rejestracje. Każde konto założone wcześniej zachowuje plan Trener – za darmo, bez wniosku i bez danych do płatności.",
+      "cardTitle": "Prawa nabyte",
+      "cardDeadlineLabel": "Rejestracja do",
+      "cardPlanLabel": "Twój plan",
+      "cardPlanValue": "Trener",
+      "cardFreeUntilLabel": "Bezpłatnie do",
+      "cardDueLabel": "Do zapłaty do tego czasu",
+      "cardNote": "To nie jest okres próbny: nie ma daty, w której obciążona zostanie karta, bo żadna karta nie jest zapisana.",
+      "cardCta": "Załóż konto i zachowaj plan",
+      "closing": "Powód to nie chwyt reklamowy, tylko rachunek: trenerzy, którzy korzystali ze Statix przez cały sezon, są jako ambasadorzy wielokrotnie więcej warci niż to, co wnieśliby jako pierwsi płacący. I nikt w środku rundy rewanżowej nie powinien zastać swojego sezonu za kasą.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Zarejestruj się do {founderDeadline}",
+          "text": "Wystarczy adres e-mail. Nie ma pola na dane do płatności, bo do stycznia nie ma żadnej płatności."
+        },
+        {
+          "number": 2,
+          "title": "Twoje konto stoi na planie Trener",
+          "text": "Nie jako okres próbny, tylko jako ustawiona wartość. 1 stycznia zmienia się wyłącznie ustawienie domyślne dla nowych rejestracji – Twoje konto zachowuje to, co ma."
+        },
+        {
+          "number": 3,
+          "title": "Bezpłatnie do {founderFreeUntil}",
+          "text": "Trwający sezon 26/27 w całości, z rundą rewanżową włącznie. Potem decydujesz, czy zostajesz – bez żadnego wcześniejszego obciążenia."
+        }
+      ]
+    },
+    "compare": {
+      "kicker": "Wszystko w porównaniu",
+      "title": "Co zawiera który plan",
+      "description": "Kompletnie, bez gwiazdek: każda funkcja i każdy limit dokładnie tak, jak aplikacja zastosuje je od stycznia.",
+      "included": "w pakiecie",
+      "notIncluded": "poza pakietem",
+      "limitsNote": "Liczby są górnymi limitami, obowiązują od {launchDate}.",
+      "rowHeaderSr": "Funkcja lub limit",
+      "captionSuffix": "funkcje i limity w każdym planie",
+      "closing": "Limity nigdy nie zadziałają w środku meczu: to, czy kolejny mecz mieści się w puli, sprawdzane jest przy jego tworzeniu, a nie w przerwie. Rozpoczęte rejestrowanie zawsze dobiega końca i zawsze zostaje zapisane.",
+      "groups": [
+        {
+          "id": "erfassen",
+          "title": "Rejestrowanie",
+          "note": "Nieokrojone w żadnym planie. To, co dzieje się w trakcie meczu, nigdy nie jest kwestią ceny.",
+          "rows": [
+            {
+              "label": "Rejestrowanie meczu na żywo jednym dotknięciem",
+              "hint": "Bramki, rzuty, obrony, błędy, 7 m, kary",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Pozycja rzutu i strefa bramki na boisku",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Zegar meczowy, ławka, asystent meczu",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Rejestrowanie offline w hali",
+              "hint": "Synchronizuje się samo po wyjściu",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Jako aplikacja na ekranie głównym",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Korekta akcji po meczu",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "auswerten",
+          "title": "Analiza",
+          "note": "Tu siedzi czas obliczeniowy – i głębia, z jaką patrzysz wstecz na swój sezon.",
+          "rows": [
+            {
+              "label": "Przegląd meczu i wartości zawodników",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Mecze widoczne w pełnej głębi",
+              "hint": "Starsze pozostają zapisane i wyświetlają się rozmyte – nic nie jest usuwane",
+              "basis": "5",
+              "trainer": "wszystkie",
+              "pro": "wszystkie"
+            },
+            {
+              "label": "Mapy rzutów i mapy ciepła",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Przebieg sezonu, krzywa formy, rekordy drużyny",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Zawodnik meczu z plakatem nagrody",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Bilans z rywalami i skautingowy przewodnik formy",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Analizy AI",
+              "hint": "miesięcznie, na konto łącznie dla wszystkich drużyn",
+              "basis": "4",
+              "trainer": "20",
+              "pro": "40"
+            },
+            {
+              "label": "Analiza wideo z tagowaniem i playlistami",
+              "hint": "100 GB to około 16 meczów w 1080p",
+              "basis": false,
+              "trainer": false,
+              "pro": "100 GB"
+            },
+            {
+              "label": "Wideo zsynchronizowane z zegarem meczowym",
+              "hint": "Każde zarejestrowane zdarzenie odnajduje swoje miejsce w wideo",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "organisieren",
+          "title": "Organizacja",
+          "note": "Terminarz to najczęściej używana funkcja aplikacji. Wszędzie pozostaje kompletny.",
+          "rows": [
+            {
+              "label": "Terminarz z seriami i potwierdzeniami obecności",
+              "hint": "wraz z przypomnieniami push i terminem odpowiedzi",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Nieobecności, subskrypcja kalendarza, hale, goście",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Kadra jako album z kartami",
+              "hint": "HPI i OVR, poziomy, radar, naklejki",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Drużyny",
+              "hint": "na konto",
+              "basis": "1",
+              "trainer": "3",
+              "pro": "5"
+            },
+            {
+              "label": "Asystenci trenera na drużynę",
+              "hint": "otwarte zaproszenia też się liczą",
+              "basis": "0",
+              "trainer": "2",
+              "pro": "5"
+            },
+            {
+              "label": "Zawodnicy na drużynę",
+              "basis": "20",
+              "trainer": "30",
+              "pro": "40"
+            },
+            {
+              "label": "Zapisane mecze na drużynę",
+              "basis": "10",
+              "trainer": "200",
+              "pro": "500"
+            },
+            {
+              "label": "Turnieje na drużynę",
+              "basis": "3",
+              "trainer": "20",
+              "pro": "50"
+            },
+            {
+              "label": "Konta zawodników dla kadry",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "teilen",
+          "title": "Udostępnianie",
+          "note": "Każde udostępnienie generuje PDF i często wysyła e-mail – druga pozycja, która kosztuje prawdziwe pieniądze.",
+          "rows": [
+            {
+              "label": "Publiczna relacja na żywo przez link i kod QR",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Miejsca sponsorskie w relacji na żywo",
+              "hint": "Jeden sponsor bandowy finansuje abonament w klubie",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Raport meczowy PDF i linki do udostępniania",
+              "hint": "miesięcznie, na konto",
+              "basis": "4",
+              "trainer": "30",
+              "pro": "60"
+            },
+            {
+              "label": "Udostępnianie meczów innym trenerom",
+              "hint": "Trafia do ich skrzynki w Statix",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Ankiety dla zawodników bez konta",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Wysyłanie skrótów zawodniczkom",
+              "hint": "Widzą swoje akcje bez własnego konta",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        }
+      ]
+    },
+    "club": {
+      "kicker": "Dla klubowej kasy",
+      "title": "Ile kosztuje Statix dla klubu?",
+      "description": "Pytanie, które pada w zarządzie, zanim ktokolwiek otworzy aplikację.",
+      "coachTitle": "Jeden trener, kilka drużyn",
+      "coachParagraph1": "Do tego nie potrzeba umowy klubowej. Konto Trener obsługuje trzy drużyny – juniorzy, kobiety, mężczyźni, jak to u was wygląda – po dwóch asystentów każda, za 79 € za sezon. To mniej niż licencja klubowa typowych aplikacji organizacyjnych, a w pakiecie są statystyki, mapy rzutów i AI.",
+      "coachParagraph2": "W klubie często da się to sfinansować w całości: od poziomu Trener w publicznej relacji na żywo może pojawić się sponsor, a partner bandowy z reguły pokrywa tę kwotę sam.",
+      "clubTitle": "Cały klub: na zapytanie",
+      "clubParagraph1": "Kto chce zebrać wszystkie drużyny pod jednym dachem – przegląd klubu, analiza dla całego klubu, ścieżki zawodników przez wszystkie roczniki – dostaje strefę klubową. Jako punkt odniesienia dla budżetu: około 390 € za sezon dla pięciu drużyn, stopniowane według wielkości.",
+      "clubParagraph2": "Cennika świadomie nie ma. To, czego potrzebuje klub z dwunastoma drużynami młodzieżowymi, to co innego niż klub z dwiema – napiszcie krótko, ile macie drużyn, a wróci do was dopasowana oferta.",
+      "clubLink": "Zapytaj o warunki dla klubów",
+      "closing": "Co zyskuje klub, gdy wszystkie drużyny rejestrują według tego samego schematu – jeden standard dla wszystkich zespołów, kadry i frekwencja treningowa w jednym miejscu, rozwój przez wszystkie roczniki, ochrona danych porządnie uregulowana – opisuje strona <club>aplikacja do statystyk piłki ręcznej dla klubów</club>. Dla sztabów w pionie młodzieżowym warto raczej zajrzeć na <youth>Statix dla trenerów młodzieżowych</youth>."
+    },
+    "alternative": {
+      "kicker": "Prawdziwa alternatywa",
+      "title": "Kartka, Excel czy Statix?",
+      "description": "Mało który trener porównuje dwie aplikacje statystyczne. Porównuje z tym, co w sobotę leży na podkładce.",
+      "colAspect": "O co chodzi",
+      "colPaper": "Kartka",
+      "colExcel": "Excel",
+      "colStatix": "Statix",
+      "rows": [
+        {
+          "aspect": "Koszt",
+          "paper": "Blok i długopis",
+          "excel": "Zwykle już jest",
+          "statix": "0 € albo 79 € za sezon"
+        },
+        {
+          "aspect": "W trakcie meczu",
+          "paper": "Stawianie kresek w trakcie coachingu",
+          "excel": "Na tablecie w hali praktycznie nie do obsługi",
+          "statix": "Jedno dotknięcie na akcję, także offline"
+        },
+        {
+          "aspect": "Analiza",
+          "paper": "Przepisywanie wieczorem – albo nigdy",
+          "excel": "Pilnowanie formuł, szukanie błędów",
+          "statix": "Gotowe, gdy zabrzmi syrena"
+        },
+        {
+          "aspect": "Mapy rzutów",
+          "paper": "Ręcznie na wydruku boiska",
+          "excel": "Nieprzewidziane",
+          "statix": "Automatycznie z każdego zarejestrowanego rzutu"
+        },
+        {
+          "aspect": "Przebieg sezonu",
+          "paper": "Segregator w piwnicy",
+          "excel": "Jeden plik na mecz, brak trendu",
+          "statix": "Rozwój zawodnika we wszystkich meczach"
+        },
+        {
+          "aspect": "Włączenie drużyny",
+          "paper": "Wcale",
+          "excel": "Plik mailem, wersja niejasna",
+          "statix": "Link, PDF, relacja na żywo"
+        }
+      ],
+      "hiddenCostTitle": "Koszty, których nie ma w żadnej kasie",
+      "hiddenCostParagraph": "Kartka nie jest darmowa – ona tylko nie kosztuje niczego, co trzeba przelać. Płaci się i tak: meczem, którego po dwóch tygodniach nie da się już odtworzyć. Tygodniem treningowym opartym na przeczuciu zamiast na mapie rzutów. Kartkami z kreskami w torbie sportowej, których nikt nigdy nie zsumuje. Kto zbiera dane przez cały sezon i nigdy ich nie analizuje, wykonał pracę i zostawił plon na boisku.",
+      "template": "Jeśli chcesz zostać przy papierze: weź przynajmniej porządny szablon. Nasz <template>szablon Excel do statystyk piłki ręcznej</template> jest bezpłatny i sam liczy skuteczność rzutów – a w poradniku opisujemy, <guide>jak porządnie prowadzić statystykę piłki ręcznej</guide>, niezależnie od narzędzia."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o ceny",
+      "description": "To, co trenerzy chcą wiedzieć, zanim nadejdzie 1 stycznia.",
+      "items": [
+        {
+          "question": "Ile kosztuje Statix?",
+          "answer": "Do {founderDeadline} nic. Od {launchDate} są trzy poziomy: Baza pozostaje bezpłatna na zawsze, Trener kosztuje 79 € za sezon albo 9,90 € miesięcznie, Pro 159 € za sezon albo 19,90 € miesięcznie. Wszystkie ceny są cenami końcowymi; jako drobny przedsiębiorca w rozumieniu § 19 niemieckiej ustawy o VAT nie wykazuję podatku od towarów i usług."
+        },
+        {
+          "question": "Już korzystam ze Statix – czy od stycznia muszę płacić?",
+          "answer": "Nie. Każde konto założone przed {launchDate} zachowuje plan Trener za darmo do {founderFreeUntil} – czyli przez cały trwający sezon 26/27. Nie musisz nic robić, nic klikać ani podawać danych do płatności. Kto w środku sezonu trafia na mur płatności, traci protokół meczu, a to byłby najgorszy możliwy start."
+        },
+        {
+          "question": "Dlaczego Statix w ogóle staje się płatny?",
+          "answer": "Statix powstał jako projekt hobbystyczny dla własnej drużyny, a dziś korzysta z niego {coachCount}. Serwer, baza danych, analizy AI i pamięć na wideo kosztują coraz więcej z każdą drużyną, a tego rachunku nie udźwignę prywatnie na dłuższą metę. Alternatywą byłoby zamknięcie projektu – gorsze rozwiązanie dla wszystkich."
+        },
+        {
+          "question": "Co pozostaje bezpłatne?",
+          "answer": "Całe rejestrowanie na żywo, kompletny terminarz z potwierdzeniami obecności, nieobecnościami i subskrypcją kalendarza, karty kadry z HPI, poziomami i naklejkami, publiczna relacja na żywo oraz analiza Twoich meczów. W planie Baza ograniczone są: jedna drużyna, 20 zawodników, 10 zapisanych meczów, ostatnie pięć meczów w pełnej głębi oraz cztery analizy AI i cztery udostępnione raporty miesięcznie."
+        },
+        {
+          "question": "Miesięcznie czy rocznie – jaka różnica?",
+          "answer": "Tylko cena i rytm. Rocznie oznacza u nas sezon, od 1 lipca do 30 czerwca, i kosztuje około jednej trzeciej mniej: 79 € zamiast 118,80 € w planie Trener, 159 € zamiast 238,80 € w Pro. Miesięcznie jest drożej, ale można wypowiedzieć w każdej chwili. Kto dołącza w styczniu, płaci tylko za niepełny sezon do 30 czerwca: 39 € zamiast 79 € w planie Trener i 79 € zamiast 159 € w Pro."
+        },
+        {
+          "question": "Czy stracę dane, jeśli zostanę w planie Baza?",
+          "answer": "Nie. Nic nie jest usuwane. W planie Baza widzisz pięć ostatnio zarejestrowanych meczów w pełnej głębi; starsze pozostają na liście i wyświetlają się rozmyte, z informacją, co je ponownie odblokowuje. A limit dziesięciu meczów sprawdzany jest przy tworzeniu meczu, nigdy w trakcie trwającego: rozpoczęte rejestrowanie zawsze dobiega końca i zawsze zostaje zapisane."
+        },
+        {
+          "question": "Ile kosztuje Statix dla klubu?",
+          "answer": "Pojedynczy trener zostaje przy poziomach powyżej. Kto chce włączyć klub jako całość – wszystkie drużyny pod jednym dachem, analiza dla całego klubu, ścieżki zawodników przez roczniki – dostaje strefę klubową, a ta jest konfigurowana pod klub. Orientacyjnie to około 390 € za sezon dla pięciu drużyn, stopniowane według wielkości. Cennika świadomie nie ma: to, czego potrzebuje klub z dwunastoma drużynami młodzieżowymi, to co innego niż klub z dwiema."
+        },
+        {
+          "question": "Jak mogę wypowiedzieć abonament?",
+          "answer": "W dowolnym momencie w koncie, jednym kliknięciem – przycisk wypowiedzenia jest częścią produktu od pierwszego dnia płatności. Abonament miesięczny kończy się z kolejnym miesiącem, sezonowy 30 czerwca. Potem konto działa dalej w planie Baza; Twoje dane zostają tam, gdzie są."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Teraz albo od stycznia",
+      "title": "Do {founderDeadline} liczy się każda rejestracja",
+      "description": "Rejestracja nic nie kosztuje i zajmuje minutę – nie ma pola na dane do płatności. Kto założy konto dziś, zachowa plan Trener za darmo do {founderFreeUntil}. Wolisz najpierw się rozejrzeć? Demo na żywo działa na prawdziwych danych meczowych, całkiem bez konta.",
+      "linkLabel": "Zapisz się do newslettera i dowiedz się o zmianach pierwszy"
+    }
+  },
+  "common": {
+    "ctaRegister": "Zarejestruj się za darmo",
+    "ctaDemo": "Zobacz demo na żywo",
+    "ctaDemoNoAccount": "Demo na żywo bez konta",
+    "included": "w pakiecie",
+    "notIncluded": "poza pakietem"
+  },
+  "brandPage": {
+    "hero": {
+      "kicker": "Statix w skrócie",
+      "titlePrefix": "Czym jest",
+      "titleBrand": "Statix",
+      "titleSuffix": "?",
+      "lede": "Statix to aplikacja do statystyk piłki ręcznej dla trenerów, klubów i drużyn: rejestruj mecze na żywo jednym dotknięciem – bramki, rzuty, obrony, kary i zmiany – a skuteczność rzutów, mapy rzutów, wartości zawodników i analizy AI powstaną automatycznie. Powstała w Niemczech, działa wprost w przeglądarce i offline w hali.",
+      "ctaFeatures": "Zobacz wszystkie funkcje",
+      "trust": [
+        "Made in Germany",
+        "Zacznij za darmo",
+        "Offline w hali"
+      ],
+      "screenshotAlt": "Aplikacja Statix: rejestrowanie statystyk meczu na żywo jednym dotknięciem",
+      "screenshotLabel": "Statix – rejestrowanie na żywo w trakcie meczu"
+    },
+    "overview": {
+      "kicker": "W 30 sekund",
+      "title": "Statix w skrócie",
+      "paragraph1": "Statix zastępuje kartki, listy z kreskami i arkusze Excela przy linii bocznej. W trakcie meczu każda akcja jest o jedno dotknięcie; cała analiza dzieje się automatycznie w tle. Po ostatnim gwizdku statystyki zawodników i drużyny, skuteczność rzutów, mapy rzutów i krzywe rozwoju są od razu gotowe i można je udostępnić całej drużynie linkiem albo w PDF.",
+      "paragraph2": "Do tego dochodzą publiczna relacja na żywo dla rodziców i kibiców, tryb turniejowy z automatyczną tabelą, ankiety dla zawodników, współpraca trenerów oraz analizy AI meczów, zawodników i całych turniejów.",
+      "points": [
+        "W meczu każda akcja jest o jedno dotknięcie",
+        "Analiza działa automatycznie w tle",
+        "Statystyki, mapy rzutów i przebiegi zaraz po ostatnim gwizdku",
+        "Udostępnianie całej drużynie linkiem lub w PDF"
+      ],
+      "screenshotAlt": "Przegląd meczów w Statix: wszystkie mecze i analizy w jednym miejscu",
+      "screenshotLabel": "Statix – przegląd meczów",
+      "factsKicker": "W skrócie",
+      "facts": [
+        {
+          "label": "Produkt",
+          "value": "Statix – aplikacja do statystyk piłki ręcznej"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Statystyki na żywo, analiza meczu i zarządzanie drużyną w piłce ręcznej"
+        },
+        {
+          "label": "Odbiorcy",
+          "value": "Trenerzy, asystenci, kluby i drużyny piłki ręcznej wszystkich klas rozgrywkowych"
+        },
+        {
+          "label": "Platforma",
+          "value": "Aplikacja webowa w przeglądarce – smartfon, tablet/iPad i laptop, działa offline"
+        },
+        {
+          "label": "Cena",
+          "value": "Baza bezpłatna na zawsze – plany płatne od 1 stycznia 2027, od 79 € za sezon"
+        },
+        {
+          "label": "Twórca",
+          "value": "Arkadiusz Weiss, zawodnik piłki ręcznej z Niemiec (Made in Germany)"
+        },
+        {
+          "label": "Strona",
+          "value": "{domain}"
+        }
+      ]
+    },
+    "highlights": {
+      "kicker": "Lepiej pokazać",
+      "title": "Tak wygląda Statix w hali",
+      "description": "Od pierwszego dotknięcia na ławce po gotową analizę – cztery kroki, które tworzą Statix.",
+      "demoCta": "Wypróbuj Statix na żywo w demo",
+      "items": [
+        {
+          "badge": "Rejestrowanie na żywo",
+          "title": "Cały mecz jednym dotknięciem – prosto z ławki",
+          "description": "Bramki, rzuty, obrony, kary i zmiany rejestrujesz w czasie rzeczywistym jednym dotknięciem. Bez kartki i bez kresek – a mimo to po ostatnim gwizdku każda akcja jest czysto udokumentowana."
+        },
+        {
+          "badge": "Automatyczna analiza",
+          "title": "Statystyki zawodników i drużyny w kilka sekund",
+          "description": "Skuteczność rzutów, efektywność, udział w grze i krzywe rozwoju Statix liczy automatycznie w tle – dla każdego zawodnika i całej drużyny, od razu do udostępnienia linkiem lub w PDF."
+        },
+        {
+          "badge": "Mapy rzutów",
+          "title": "Zobacz, skąd padają bramki – i skąd nie",
+          "description": "Każdy rzut trafia wizualnie na boisko. Dzięki temu widzisz wzorce, ulubione narożniki i słabości, które w samej tabeli liczb giną."
+        },
+        {
+          "badge": "Analiza AI",
+          "title": "Analiza AI meczów, zawodników i turniejów",
+          "description": "Statix streszcza mecze, zawodników i całe turnieje w zrozumiałych analizach – z pseudonimizowanymi nazwiskami. Mocne strony, słabe punkty i wskazówki na kolejny trening w jednym miejscu."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "Pełna kadra",
+      "title": "Co potrafi Statix?",
+      "description": "Wszystkie funkcje aplikacji Statix w jednym miejscu – od rejestrowania na żywo po analizę AI. Każdy wiersz prowadzi na własną stronę.",
+      "indexLink": "Przejdź do przeglądu funkcji ze zrzutami ekranu"
+    },
+    "story": {
+      "kicker": "Dla kogo?",
+      "title": "Dla kogo powstał Statix?",
+      "description": "Od trenera na ławce po kibiców na trybunie – Statix daje prawdziwe liczby wszystkim wokół drużyny.",
+      "audiences": [
+        {
+          "title": "Trenerzy i asystenci",
+          "description": "Rejestrują mecze na żywo jednym dotknięciem z ławki i decydują na podstawie prawdziwych liczb, a nie przeczucia."
+        },
+        {
+          "title": "Kluby",
+          "description": "Zbierają statystyki, kadry i sezony wszystkich drużyn w jednym miejscu – od młodzieży po pierwszy zespół."
+        },
+        {
+          "title": "Zawodniczki i zawodnicy",
+          "description": "Widzą swoją skuteczność rzutów, krzywe rozwoju i karty zawodnika oraz wiedzą, nad czym pracować."
+        },
+        {
+          "title": "Rodzice i kibice",
+          "description": "Śledzą mecze przez publiczną relację na żywo linkiem lub kodem QR – w przeglądarce, bez konta."
+        }
+      ],
+      "photoAlt": "Przegląd sezonu w Statix ze skutecznością ataku, skutecznością obron, bilansem i różnicą bramek",
+      "founderKicker": "Kto za tym stoi",
+      "founderTitle": "Kto stoi za Statix?",
+      "founderParagraph1": "Statix rozwija Arkadiusz Weiss – zawodnik piłki ręcznej z Niemiec, który zbudował aplikację na bazie własnej praktyki przy linii bocznej. Nazwa mówi, co aplikacja robi w istocie: statystyki, które w piłce ręcznej naprawdę pomagają.",
+      "founderParagraph2": "Statix nie jest anonimowym narzędziem wielkiej korporacji: opinie trenerek i trenerów z hali trafiają wprost do rozwoju produktu, a nowe funkcje powstają tam, gdzie są potrzebne – na ławce, na treningu i przy analizie po meczu."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania o Statix",
+      "description": "Wszystko, co chcą wiedzieć ci, którzy słyszą o Statix po raz pierwszy.",
+      "items": [
+        {
+          "question": "Czym jest Statix?",
+          "answer": "Statix to aplikacja do statystyk piłki ręcznej z Niemiec. Trenerzy, kluby i drużyny rejestrują mecze na żywo jednym dotknięciem – bramki, rzuty, obrony, kary i zmiany – a Statix wylicza z tego automatycznie skuteczność rzutów, statystyki zawodników i drużyny, mapy rzutów oraz analizy AI."
+        },
+        {
+          "question": "Czy Statix jest bezpłatny?",
+          "answer": "Do 31 grudnia 2026 nic nie kosztuje: zarejestruj się na {appUrl} i zarejestruj pierwszy mecz bez zobowiązań i bez karty kredytowej. Od 1 stycznia 2027 będą trzy poziomy – Baza zostaje na 0 €, Trener kosztuje 79 € za sezon, Pro 159 €. Kto zarejestruje się wcześniej, zachowa plan Trener za darmo przez cały sezon 26/27, czyli do 30 czerwca 2027."
+        },
+        {
+          "question": "Jak mogę wypróbować Statix?",
+          "answer": "Statix jest dostępny: rejestrujesz się bezpłatnie na {appUrl} i od razu ruszasz ze swoją drużyną. Jeśli wolisz najpierw się rozejrzeć, otwórz demo na żywo – w pełni wyposażoną wersję z prawdziwymi danymi meczowymi, w przeglądarce i całkiem bez konta."
+        },
+        {
+          "question": "Na jakich urządzeniach działa Statix?",
+          "answer": "Statix działa wprost w przeglądarce na smartfonie, tablecie (iPad i Android) oraz laptopie. Nie trzeba nic instalować ze sklepu z aplikacjami – aplikację można jednak zainstalować jako PWA na ekranie głównym i działa ona offline w hali."
+        },
+        {
+          "question": "Kto stoi za Statix?",
+          "answer": "Za Statix stoi Arkadiusz Weiss – zawodnik piłki ręcznej z Niemiec, który rozwija aplikację na bazie własnej praktyki przy linii bocznej. To nie jest anonimowe narzędzie: opinie z hali trafiają wprost do rozwoju produktu."
+        },
+        {
+          "question": "Gdzie znajdę Statix w internecie?",
+          "answer": "Oficjalna strona Statix to {domain}. Znajdziesz tam wszystkie funkcje, poradnik piłki ręcznej i demo na żywo bez konta. Sama aplikacja działa pod {appUrl}. Na Instagramie Statix jest jako {instagram}."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Już dostępne",
+      "title": "Wypróbuj Statix samodzielnie",
+      "description": "Statix działa: zarejestruj się bezpłatnie i zarejestruj swój pierwszy mecz – wprost w przeglądarce, bez instalacji. Wolisz najpierw się rozejrzeć? Demo na żywo działa na prawdziwych danych meczowych i całkiem bez konta.",
+      "linkLabel": "Przejdź do poradnika piłki ręcznej"
+    }
+  },
+  "clubsPage": {
+    "hero": {
+      "kicker": "Dla klubów",
+      "titleLead": "Statystyki piłki ręcznej dla całego",
+      "titleHighlight": "klubu",
+      "lede": "Dziesięć drużyn młodzieżowych, dziesięć systemów: jeden prowadzi Excela, drugi kartkę, trzeci nic. Strefa klubowa Statix kładzie jedną warstwę ponad wszystkimi drużynami. Wszyscy rejestrują według tego samego schematu, kadry i terminarze są w tym samym narzędziu, a zawodnicy zachowują swoją ścieżkę przez kolejne roczniki. Co to znaczy dla waszego klubu, ustalimy w rozmowie.",
+      "trust": [
+        "Konfiguracja osobista",
+        "Umowa powierzenia wg art. 28 RODO",
+        "Wszystkie drużyny na jednej stronie"
+      ],
+      "primaryAction": "Zapytaj o klub",
+      "screenshotAlt": "Przegląd klubu ze wszystkimi drużynami piłki ręcznej w aplikacji Statix",
+      "screenshotLabel": "Osiem drużyn, jeden weekend, jedna strona"
+    },
+    "benefits": {
+      "kicker": "Co się zmienia",
+      "title": "Jeden klub, jeden standard",
+      "description": "Sześć rzeczy, które działają dopiero wtedy, gdy każda drużyna przestaje mieć własny system.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Dziesięć drużyn młodzieżowych, jeden schemat",
+          "text": "Wszystkie drużyny rejestrują te same akcje według tych samych zasad liczenia, bo aplikacja nie oferuje innych. Młodziczki, juniorki i seniorki stoją potem obok siebie w jednej tabeli i nikt niczego nie przelicza."
+        },
+        {
+          "number": 2,
+          "title": "Jedna zawodniczka, jedna ścieżka",
+          "text": "Kiedy zawodniczka przechodzi z młodziczek do juniorek, a później do seniorek, w Statix pozostaje tą samą osobą, ze wszystkimi etapami jeden pod drugim. To, czego nauczyło się o niej trzech trenerów, zostaje w klubie."
+        },
+        {
+          "number": 3,
+          "title": "Zawodnicy w kilku kadrach",
+          "text": "Juniorka, która pomaga w drużynie seniorek, jest w obu kadrach: własny numer, własny terminarz, własne liczby. Na dzień meczowy trener układa z tego swoją kadrę meczową."
+        },
+        {
+          "number": 4,
+          "title": "Terminy w tym samym narzędziu",
+          "text": "Godziny treningów i serie terminów leżą tam, gdzie mecze. Zawodnicy sami potwierdzają lub odwołują obecność i wpisują dłuższe nieobecności jako okres; trener widzi z wyprzedzeniem, kto przyjdzie."
+        },
+        {
+          "number": 5,
+          "title": "Wcześnie widzicie, gdzie czegoś brakuje",
+          "text": "Analiza klubowa stawia drużynę obok drużyny i sezon obok sezonu. Rocznik, którego skuteczność rzutów stoi w miejscu od dwóch lat, rzuca się w oczy, zanim ten rocznik przeminie; rozwój pojedynczych zawodniczek stoi na ich własnych stronach."
+        },
+        {
+          "number": 6,
+          "title": "Zmiana trenera nie kosztuje danych",
+          "text": "Gdy trener kończy, kadra, mecze, terminy i analizy zostają w klubie. Jego następca przejmuje drużynę z historią, a nie pusty segregator."
+        }
+      ]
+    },
+    "clubLevel": {
+      "kicker": "Strefa klubowa",
+      "title": "Wszystkie drużyny na jednej stronie",
+      "description": "Trenerzy dalej pracują we własnej drużynie. Ponad tym leży warstwa, której bez klubu nie ma i której nikt nie utrzymuje ręcznie.",
+      "capabilities": [
+        {
+          "term": "Przegląd",
+          "text": "Weekendowe wyniki wszystkich drużyn, najbliższe mecze i tabela wszystkich kadr."
+        },
+        {
+          "term": "Drużyny",
+          "text": "Każda kadra z pierwszym trenerem, sztabem, ostatnim i następnym meczem. Jedno kliknięcie prowadzi do środka."
+        },
+        {
+          "term": "Zawodnicy",
+          "text": "Wszystkie zawodniczki i zawodnicy klubu na jednej liście, z wyszukiwaniem po nazwisku lub drużynie."
+        },
+        {
+          "term": "Analiza",
+          "text": "Skuteczność rzutów, skuteczność obron i procent zwycięstw na drużynę oraz porównanie sezon do sezonu."
+        },
+        {
+          "term": "Ścieżki",
+          "text": "Kto grał już w dwóch drużynach klubu, widnieje ze swoimi etapami w panelu."
+        },
+        {
+          "term": "Analizy AI",
+          "text": "Raporty wszystkich drużyn w jednym miejscu. Nazwiska zawodników są wcześniej pseudonimizowane."
+        },
+        {
+          "term": "Role",
+          "text": "Administracja klubu może wszystko, dyrektor sportowy czyta, trenerzy zostają przy swojej drużynie."
+        },
+        {
+          "term": "Sponsorzy",
+          "text": "Herb klubu i sponsorzy pojawiają się w relacji na żywo każdej drużyny, która nie ma własnych."
+        }
+      ],
+      "analysisAlt": "Analiza klubowa ze wskaźnikami wszystkich drużyn piłki ręcznej w klubie",
+      "analysisLabel": "Każdy sezon, każda drużyna obok siebie",
+      "playersAlt": "Lista zawodników całego klubu, ze wszystkich drużyn",
+      "playersLabel": "Wszyscy zawodnicy klubu, we wszystkich kadrach"
+    },
+    "youth": {
+      "kicker": "Dla pionu młodzieżowego",
+      "title": "Wiele drużyn, jedna ścieżka szkolenia",
+      "description": "Pion młodzieżowy, dla którego zbudowano tę warstwę: osiem, dziesięć, dwanaście drużyn i dotąd tyle samo sposobów prowadzenia statystyk.",
+      "points": [
+        {
+          "number": 1,
+          "title": "Od najmłodszych po juniorów według tego samego schematu",
+          "text": "Skuteczność rzutów młodzików to ta sama wielkość co juniorów, a liczbę błędów kadetów można porównać z tą sprzed dwóch lat. Zestawienie roczników obok siebie przestaje być rachunkiem, a staje się wyborem w filtrze."
+        },
+        {
+          "number": 2,
+          "title": "Przejście do kolejnej drużyny",
+          "text": "Moment, w którym klub traci najwięcej: rocznik awansuje, nowy trener nikogo nie zna, a trzy lata obserwacji siedzą w głowie poprzedniego. Tutaj od pierwszego dnia widzi mecze, rozwój i pozycje swojej nowej drużyny, także bez rozmowy przekazującej, która nigdy się nie odbywa."
+        },
+        {
+          "number": 3,
+          "title": "Rozwój widać w serii, a nie w jednym meczu",
+          "text": "Pojedynczy mecz młodzieżowy nie mówi prawie nic. Dwanaście z rzędu mówi, czy skuteczność rzutów z drugiej linii rośnie, czy spada liczba błędów, czy bramkarz broni więcej niż jesienią. Dokładnie to pokazuje analiza, dla każdej zawodniczki i przez kolejne sezony. Kierownictwo pionu widzi po tym, gdzie szkolenie działa, a gdzie drużyna potrzebuje wsparcia."
+        }
+      ],
+      "progressAlt": "Krzywa rozwoju zawodniczki piłki ręcznej w trakcie sezonu w aplikacji Statix",
+      "progressLabel": "Rozwój zawodniczki w trakcie sezonu",
+      "careersAlt": "Lista ścieżek zawodników przez kilka drużyn klubu piłki ręcznej",
+      "careersLabel": "Kto już zrobił ten krok, widnieje w panelu klubu",
+      "closing": "Jak to wygląda dla pojedynczej trenerki przy ławce, jedno dotknięcie na akcję i relacja na żywo dla rodziców, opisuje strona <youth>statystyki piłki ręcznej dla trenerów młodzieżowych</youth>."
+    },
+    "training": {
+      "kicker": "Trening i frekwencja",
+      "title": "Kto przyjdzie, stoi obok terminarza",
+      "description": "Kadra, mecze, terminy i odpowiedzi są w jednym miejscu. Żadnego drugiego narzędzia do kalendarza, żadnej trzeciej listy obecności.",
+      "paragraph1": "<lead>Treningi, mecze i wszystko pomiędzy</lead> leżą w jednym kalendarzu, jako pojedynczy termin albo seria na cały sezon, z halą, adresem i godziną zbiórki. Kto przesuwa serię, przesuwa ją raz, a nie osiemnaście razy.",
+      "paragraph2": "<lead>Zawodniczki same potwierdzają lub odwołują</lead> obecność, przez link dołączenia do drużyny, bez aplikacji trenerskiej i bez tego, by ktoś widział ich liczby. Przed treningiem sztab widzi pełną listę: kto przyjdzie, kto odwołał, kto może, a od kogo nic jeszcze nie przyszło.",
+      "paragraph3": "<lead>Dwa tygodnie urlopu to jeden wpis</lead>, a nie czternaście odmów. Nieobecności obowiązują dla okresu i obejmują wszystkie terminy w jego obrębie; na liście obecności widnieje wtedy powód zamiast „brak odpowiedzi”. Dlaczego kogoś nie ma, zostaje między nim a sztabem.",
+      "paragraph4": "<lead>Gdy trening wypada</lead>, drużyna dostaje powiadomienie na telefon i nikt nie obdzwania listy. Statix można w tym celu zainstalować jako aplikację na ekranie głównym, bez sklepu z aplikacjami.",
+      "closing": "Terminarz prowadzi każda drużyna sama, tak jak sama rejestruje swoje mecze. W swoim przeglądzie klub widzi <mark>mecze</mark> wszystkich drużyn; frekwencja treningowa zostaje przy sztabie danej drużyny."
+    },
+    "privacy": {
+      "kicker": "Dla inspektora ochrony danych",
+      "title": "Porządne przetwarzanie danych zawodników",
+      "description": "W klubie wdrożenie rzadko rozbija się o umiejętności trenerów – rozbija się o to pytanie. Dlatego odpowiedź w czterech punktach.",
+      "points": [
+        {
+          "title": "Powierzenie przetwarzania wg art. 28 RODO",
+          "text": "Dane zawodników wprowadzane przez waszych trenerów Statix przetwarza na zlecenie klubu. Umowę powierzenia przetwarzania udostępniamy na żądanie; to dokładnie ten dokument, o który pyta inspektor ochrony danych."
+        },
+        {
+          "title": "Pseudonimizacja, zanim AI cokolwiek zobaczy",
+          "text": "Nazwiska zawodników są pseudonimizowane, zanim dane trafią do AI. Analiza pracuje na neutralnych skrótach, a wygenerowane raporty można w każdej chwili usunąć."
+        },
+        {
+          "title": "Udostępnione linki pozostają odwoływalne",
+          "text": "Mecz staje się publiczny tylko wtedy, gdy trener go opublikuje, a udostępnienie da się cofnąć. W relacji na żywo nazwiska zawodników są domyślnie skracane."
+        },
+        {
+          "title": "Jawni podwykonawcy",
+          "text": "Którzy podmioty przetwarzające biorą udział – hosting, baza danych, wysyłka e-maili i dostawcy AI – jest wymienione z nazwy w regulaminie i polityce prywatności, wraz z informacjami o przekazywaniu do państw trzecich."
+        }
+      ],
+      "closing": "Pełne zapisy znajdują się w <terms>regulaminie (§ 7 ochrona danych i powierzenie przetwarzania)</terms> oraz w <privacy>polityce prywatności</privacy>. Do umowy powierzenia wystarczy e-mail na <mail>{email}</mail>."
+    },
+    "rollout": {
+      "kicker": "Wdrożenie",
+      "title": "W klubie w czterech krokach",
+      "description": "Bez projektu, bez daty granicznej, bez importu danych. Możecie zacząć od dwóch drużyn i dołączyć resztę, kiedy będzie pasować.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Piszecie do nas",
+          "text": "Nazwa klubu, orientacyjna liczba drużyn i kto ma administrować klubem. Więcej nie potrzebujemy, żeby powiedzieć wam, czy i jak to u was zadziała."
+        },
+        {
+          "number": 2,
+          "title": "Zakładamy klub",
+          "text": "Strefę klubową konfigurujemy my – łącznie z osobami, które nią zarządzają. Dostajecie kod dołączenia, dziesięcioznakowy sekret, który możecie w każdej chwili wygenerować na nowo."
+        },
+        {
+          "number": 3,
+          "title": "Trenerzy dopisują swoją drużynę",
+          "text": "Każdy pierwszy trener zakłada konto, bezpłatnie i w dwie minuty, i wpisuje kod dołączenia w ustawieniach drużyny. Tym samym jego drużyna należy do klubu. Bez importu, bez daty granicznej, bez szkolenia."
+        },
+        {
+          "number": 4,
+          "title": "Od pierwszego meczu przegląd jest gotowy",
+          "text": "Gdy tylko drużyna zakończy mecz, przegląd klubowy się wypełnia. Niczego nie trzeba uzupełniać, nikt nie prowadzi drugiej tabeli – poziom klubowy to widok na dane, które trenerzy i tak rejestrują."
+        }
+      ]
+    },
+    "objections": {
+      "kicker": "Bez owijania",
+      "title": "Co pada na zebraniu zarządu",
+      "description": "Zdania, na których wykładają się wdrożenia. Tutaj stoją razem z odpowiedzią.",
+      "items": [
+        {
+          "question": "„Ile to właściwie kosztuje?”",
+          "answer": "Na tej stronie świadomie nie ma metki z ceną. Klub z dwunastoma drużynami młodzieżowymi potrzebuje czegoś innego niż klub z dwiema, a liczba pasująca do obu byłaby dla jednego z nich fałszywa. Napiszcie, ile drużyn chcecie włączyć i co chcecie z tym zrobić – dostaniecie ofertę pasującą do waszego klubu, na tyle wcześnie, by zmieściła się w planie budżetu. Dla pojedynczego trenera wejście pozostaje bezpłatne niezależnie od tego."
+        },
+        {
+          "question": "„Nasi trenerzy nie są techniczni.”",
+          "answer": "Statix jest zbudowany dla trenera, który trenuje przy okazji. Każda akcja to jedno dotknięcie, nie ma szkolenia ani konfiguracji, którą ktoś musiałby przejąć za klub. Kto chce, zaczyna od bramek i rzutów, a resztę zostawia. A kto chce najpierw zobaczyć, otwiera demo na żywo bez konta."
+        },
+        {
+          "question": "„Przecież mamy już oprogramowanie klubowe.”",
+          "answer": "Prawdopodobnie do członków, składek i sekcji – i niech tam zostanie. Statix robi coś przeciwnego: to, co dzieje się na boisku i na treningu. Kadra zamiast listy członków, frekwencja treningowa zamiast stanu składek, skuteczność rzutów zamiast fakturowania. Jedno obok drugiego to reguła, nie wyjątek."
+        },
+        {
+          "question": "„Nie możemy wpisywać danych zawodników byle gdzie.”",
+          "answer": "Słusznie, i dlatego jest to uregulowane. Dla danych zawodników, które wprowadzacie na własną odpowiedzialność, Statix jest podmiotem przetwarzającym wg art. 28 RODO; umowę powierzenia udostępniamy na żądanie. Przed analizami AI nazwiska są pseudonimizowane, w publicznej relacji na żywo są domyślnie skracane, udostępnione raporty można wycofać, a którzy usługodawcy biorą udział, jest w całości opisane w regulaminie i polityce prywatności."
+        },
+        {
+          "question": "„A jeśli po sezonie zrezygnujemy?”",
+          "answer": "To rezygnujecie. Analizy możecie wyeksportować jako PDF i zachować, udostępnione linki znów dezaktywować, a drużyny zostają przy swoich trenerach – strefa klubowa to widok na nie, a nie klatka wokół nich."
+        }
+      ],
+      "links": "Ile kosztuje wejście dla pojedynczej trenerki i gdzie leżą granice bezpłatnego dostępu, opisuje strona <pricing>ceny aplikacji do statystyk piłki ręcznej</pricing>; co działa trwale bez płacenia – <free>aplikacja do statystyk piłki ręcznej za darmo</free>. Dla trenerek i trenerów waszych drużyn młodzieżowych jest osobna strona: <youth>statystyki piłki ręcznej dla trenerów młodzieżowych</youth>. A jeśli chcecie najpierw ustalić, co trzeba w klubie uzgodnić, zanim ktokolwiek cokolwiek zarejestruje: <guide>wprowadzanie statystyk w klubie</guide>."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania klubów",
+      "description": "Co chcą wiedzieć kierownictwa pionów i zarządy, zanim wprowadzą Statix w klubie.",
+      "items": [
+        {
+          "question": "Czym jest strefa klubowa Statix?",
+          "answer": "Warstwą ponad pojedynczymi drużynami. W aplikacji do statystyk piłki ręcznej wszystkie kadry klubu wiszą pod jednym dachem: przegląd klubu z wynikami i tabelą wszystkich drużyn, klubowa lista zawodników, analiza z porównaniem sezonów, ścieżki zawodników przez kilka drużyn i zebrane analizy AI. Poszczególni trenerzy pracują przy tym dalej we własnej drużynie jak dotychczas."
+        },
+        {
+          "question": "Dla jakich klubów to się opłaca?",
+          "answer": "Przede wszystkim dla pionu młodzieżowego z wieloma drużynami, który chce prowadzić statystyki jednolicie – od najmłodszych po juniorów i dalej w seniorach. Im więcej drużyn i im więcej przejść między nimi, tym więcej daje wspólny standard: porównywalne liczby, ciągłe ścieżki zawodników i kierownictwo, które nie musi pytać ośmiu trenerów po kolei."
+        },
+        {
+          "question": "Ile kosztuje Statix dla klubu?",
+          "answer": "Na to nie ma gotowej metki z ceną. To, czego klub potrzebuje, zależy od liczby drużyn i od tego, co chcecie z tym zrobić – dlatego po krótkim zapytaniu przygotowujemy ofertę, zamiast podawać tu liczbę, która dla większości klubów byłaby fałszywa. Dla pojedynczych trenerek i trenerów wejście pozostaje bezpłatne, bez karty kredytowej."
+        },
+        {
+          "question": "Jak wprowadzić wszystkie drużyny do klubu?",
+          "answer": "Przez kod dołączenia. Zakładamy klub i dajemy wam kod; każdy pierwszy trener wpisuje go w ustawieniach swojej drużyny i tym samym do niego należy. Droga świadomie wychodzi od trenera – drużyna należy do niego, więc nikt nie wciąga go z zewnątrz. Kod możecie w każdej chwili wygenerować na nowo."
+        },
+        {
+          "question": "Czy zawodnicy mogą być w kilku drużynach?",
+          "answer": "Tak. Juniorka, która pomaga w seniorkach, jest w obu kadrach – w każdej z własnym numerem, własnym terminarzem i własnymi liczbami. Ponieważ oba miejsca w kadrze należą do tej samej osoby, jej etapy i tak łączą się w jedną ścieżkę, a przy przejściu do kolejnej kategorii nic nie ginie."
+        },
+        {
+          "question": "Jak kontrolować frekwencję treningową?",
+          "answer": "Każda drużyna prowadzi swoje terminy w Statix: treningi, mecze i wszystko pomiędzy, także jako serie. Zawodnicy sami potwierdzają lub odwołują obecność – przez link dołączenia, bez własnej aplikacji trenerskiej – i wpisują dłuższe nieobecności, jak urlop, choroba czy kontuzja, jako okres, zamiast odwoływać każdy termin z osobna. Sztab widzi pełną listę obecności, także tych, od których nie było jeszcze odpowiedzi; powody odmowy zostają między zawodnikiem a sztabem."
+        },
+        {
+          "question": "Kto w klubie może widzieć jakie dane?",
+          "answer": "Są trzy role. Administracja klubu ma dostęp do wszystkich drużyn, dyrektor sportowy czyta wszystko i niczego nie zmienia, a trener sięga do drużyn klubu, ale pracuje dalej we własnej. Kto nie ma żadnej z tych ról, nie widzi strefy klubowej."
+        },
+        {
+          "question": "Jak uregulowana jest ochrona danych zawodników?",
+          "answer": "Dla danych zawodników, które wprowadzacie, Statix działa jako podmiot przetwarzający w rozumieniu art. 28 RODO i na żądanie udostępnia umowę powierzenia. Przed analizami AI nazwiska są pseudonimizowane, więc analiza pracuje na neutralnych skrótach. W publicznej relacji na żywo nazwiska są domyślnie skracane – w drużynach młodzieżowych to nazwiska osób niepełnoletnich. Wykorzystywani usługodawcy i przekazywanie do państw trzecich są wymienieni w regulaminie i polityce prywatności."
+        },
+        {
+          "question": "Czy Statix zastąpi naszą administrację klubową?",
+          "answer": "Nie i nie ma takiego celu. Zarządzanie członkami, składki i organizacja sekcji zostają w waszym dotychczasowym oprogramowaniu. Statix pokrywa to, czego tam nie ma: kadry, terminy i frekwencję treningową, rejestrowanie meczów na żywo i wszystkie wynikające z tego analizy."
+        },
+        {
+          "question": "Co się stanie, gdy trener odejdzie z klubu?",
+          "answer": "Drużyna i jej mecze zostają. Przez sztab albo administrację klubu następca dostaje dostęp; nie jesteście zdani na to, że ktoś wyda prywatny plik."
+        },
+        {
+          "question": "Czy nasi trenerzy potrzebują szkolenia?",
+          "answer": "Nie. Rejestrowanie to jedno dotknięcie na akcję, konto powstaje w dwie minuty, a dołączenie do klubu to kod w polu tekstowym. Kto chce najpierw zobaczyć, uruchamia demo na żywo bez konta – działa na prawdziwych danych meczowych w przeglądarce."
+        },
+        {
+          "question": "Czy działa to także w halach bez zasięgu?",
+          "answer": "Tak. Mecze rejestrowane są offline i synchronizują się, gdy tylko urządzenie znów będzie online. Statix można ponadto zainstalować jako aplikację na ekranie głównym, bez drogi przez sklep z aplikacjami."
+        }
+      ]
+    },
+    "contact": {
+      "kicker": "Bez metki z ceną, w rozmowie",
+      "title": "Opowiedzcie nam o swoim klubie",
+      "description": "Ile macie drużyn, ile z nich w pionie młodzieżowym i co ostatecznie ma znaleźć się w jednym miejscu? Trzy zdania wystarczą. Dostaniecie ocenę, czy strefa klubowa do was pasuje, i ofertę w waszym rozmiarze zamiast liczby z półki.",
+      "formHint": "albo bezpośrednio tutaj w formularzu"
+    }
+  },
+  "youthCoachPage": {
+    "hero": {
+      "kicker": "Dla trenerów młodzieżowych",
+      "titleLead": "Statystyki piłki ręcznej dla",
+      "titleHighlight": "trenerów młodzieżowych",
+      "lede": "Trenujesz, zmieniasz i mówisz – a przy okazji masz jeszcze notować. Statix zamienia to w jedno dotknięcie na akcję. Po meczu widzisz, kto się rozwija, twoi zawodnicy widzą własne wartości w albumie kart, a rodzice śledzą mecz w relacji na żywo. Obecnie nic nie kosztuje.",
+      "trust": [
+        "Jedno dotknięcie na akcję",
+        "Obecnie 0 €",
+        "Bez szkolenia"
+      ],
+      "screenshotAlt": "Trener młodzieżowy rejestruje statystyki piłki ręcznej na żywo jednym dotknięciem z ławki",
+      "screenshotLabel": "Rejestrowanie w trakcie coachingu"
+    },
+    "benefits": {
+      "kicker": "Prosto z hali",
+      "title": "Co masz z tego w pionie młodzieżowym",
+      "description": "Sześć rzeczy, które naprawdę zmieniają się w sobotę i w kolejnym tygodniu.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Jedno dotknięcie, gdy właściwie prowadzisz mecz",
+          "text": "Stoisz przy ławce, zmieniasz, mówisz, korygujesz – i masz przy okazji notować. Dlatego każda akcja to dokładnie jedno dotknięcie: bramka, rzut niecelny, obrona, kara. Bez długopisu, bez podkładki, bez przepisywania wieczorem."
+        },
+        {
+          "number": 2,
+          "title": "Czternastolatkowie widzą własny rozwój",
+          "text": "„Robisz postępy” nie przekona żadnego nastolatka. „Twoja skuteczność ze skrzydła wzrosła z 41 do 58 procent” już tak. Liczby z prawdziwych meczów pokazują postęp – także u tych, którzy nie rzucają najwięcej bramek."
+        },
+        {
+          "number": 3,
+          "title": "Kadra jako album z kartami",
+          "text": "Karty zawodników z wartościami z prawdziwych meczów, naklejki za szczególne osiągnięcia i tablica taktyczna do ustawiania składu. Dla dzieciaków to album, dla ciebie – kadra z liczbami w tle."
+        },
+        {
+          "number": 4,
+          "title": "Rodzice śledzą mecz w relacji na żywo",
+          "text": "Wystarczy link albo kod QR i kto nie mógł pojechać na wyjazd, widzi wynik i przebieg na żywo w przeglądarce. To oszczędza ci dwunastu wiadomości na WhatsAppie w przerwie."
+        },
+        {
+          "number": 5,
+          "title": "Sprawiedliwie dzielić minuty – i móc to udowodnić",
+          "text": "W pionie młodzieżowym czas gry to temat bez końca. Kto rejestruje, ile razy kto rzucał i jak rozkładają się udziały w grze, może w rozmowie z rodzicami coś pokazać zamiast się tłumaczyć."
+        },
+        {
+          "number": 6,
+          "title": "Ankiety bez kont dla zawodników",
+          "text": "Kto może w sobotę? Tworzysz ankietę i udostępniasz link – zawodnicy odpowiadają bez rejestracji. Nikt nie musi instalować aplikacji tylko dlatego, że chcesz wiedzieć, kto siedzi w autokarze."
+        }
+      ]
+    },
+    "development": {
+      "kicker": "Przez cały sezon",
+      "title": "Pokazać rozwój",
+      "description": "Pojedynczy mecz mówi niewiele. Dwanaście meczów mówi, czy twój trening trafia.",
+      "paragraph": "W pionie młodzieżowym forma waha się z tygodnia na tydzień – tak to działa. Dlatego prawdziwą informacją jest przebieg: jak zmieniła się skuteczność ze skrzydła, odkąd pracujecie na treningu nad kątami? Kto bierze dziś na siebie rzuty, a trzy miesiące temu tylko podawał? To są zdania, które popychają dziecko do przodu – i które możesz poprzeć w rozmowie z rodzicami.",
+      "readMore": "Praktyczna lektura dalej: <development>mierzenie rozwoju zawodnika w piłce ręcznej</development>, <youth>trenowanie młodzieżowej piłki ręcznej</youth> oraz dla najmłodszych <mini>minipiłka ręczna z dziećmi</mini>.",
+      "screenshotAlt": "Kadra jako album z kartami: karty zawodników z wartościami z prawdziwych meczów",
+      "screenshotLabel": "Kadra z kartami zawodników i wartościami"
+    },
+    "objections": {
+      "kicker": "Szczere pytania",
+      "title": "Co trenerzy młodzieżowi słusznie zarzucają",
+      "description": "Cztery zastrzeżenia, które sam miałem – i jak na nie odpowiadam.",
+      "items": [
+        {
+          "question": "„W trakcie meczu nie mam wolnej ręki.”",
+          "answer": "To właśnie dlatego rejestrowanie jest zbudowane tak, jak jest: jedna akcja to jedno dotknięcie, bez menu i bez pytań. I nie musisz rejestrować wszystkiego. Zacznij od bramek i rzutów niecelnych – to już więcej, niż daje na koniec lista z kreskami. Kiedy robi się nerwowo, uzupełniasz akcje po meczu."
+        },
+        {
+          "question": "„Dla młodzików to już myślenie wynikowe.”",
+          "answer": "Zależy, co robisz z liczbami. Jeśli używasz ich do rankingów, to tak. Jeśli używasz ich, żeby pokazać dziecku, że jego trening coś daje, jest odwrotnie. Dlatego nacisk leży na rozwoju w skali sezonu, a nie na tabeli najlepszych."
+        },
+        {
+          "question": "„Nie jestem typem od oprogramowania.”",
+          "answer": "I nie musisz być. Nie ma konfiguracji, szkolenia ani instrukcji: zakładasz kadrę, startujesz mecz, dotykasz. Kto chce najpierw zobaczyć, otwiera demo na żywo – bez konta, wprost w przeglądarce."
+        },
+        {
+          "question": "„Czy to kosztuje klub pieniądze?”",
+          "answer": "Obecnie nie. Ze Statix można korzystać bezpłatnie, bez karty kredytowej i bez żadnej płatności w aplikacji. Nie musisz więc nikogo pytać, żeby zacząć w sobotę."
+        }
+      ],
+      "links": "Co dokładnie obejmuje bezpłatny dostęp, opisuje <free>aplikacja do statystyk piłki ręcznej za darmo</free>. Jeśli w klubie chcecie ustawić kilka drużyn na jednym poziomie, przeczytaj <clubs>Statix dla klubów</clubs>. A kto chce na razie zacząć na papierze, bierze <template>bezpłatny szablon Excel</template>."
+    },
+    "faq": {
+      "kicker": "Pytania i odpowiedzi",
+      "title": "Częste pytania trenerów młodzieżowych",
+      "description": "Od kategorii wiekowej po rozmowę z rodzicami.",
+      "items": [
+        {
+          "question": "Od jakiej kategorii statystyki mają sens w młodzieżowej piłce ręcznej?",
+          "answer": "Sensowne stają się tam, gdzie dzieci potrafią zrozumieć własny rozwój – mniej więcej od młodzików. U najmłodszych chodzi o czucie piłki i radość z gry; tam wystarczy, że prowadzisz zapis dla siebie, nie robiąc z liczb tematu."
+        },
+        {
+          "question": "Jak rejestrować statystyki, gdy jednocześnie prowadzę mecz?",
+          "answer": "Jednym dotknięciem na akcję. Zacznij od samych bramek i rzutów niecelnych – z tego powstaje już skuteczność rzutów. Wszystko inne możesz uzupełnić po meczu, bo akcje da się później edytować."
+        },
+        {
+          "question": "Jak pokazać nastolatkowi jego rozwój?",
+          "answer": "Przez przebieg, a nie przez pojedynczy mecz. W Statix widzisz skuteczność i wartości na przestrzeni wielu meczów, a do tego kartę zawodnika w albumie. Rozmowa o krzywej, która idzie w górę, działa znacznie lepiej niż rozmowa o słabym meczu."
+        },
+        {
+          "question": "Czy rodzice mogą śledzić mecze?",
+          "answer": "Tak, przez publiczną relację na żywo. Publikujesz mecz, udostępniasz link albo kod QR, a rodzice widzą wynik i przebieg na żywo w przeglądarce – bez aplikacji i bez konta."
+        },
+        {
+          "question": "Czy aplikacja do statystyk piłki ręcznej jest bezpłatna dla trenerów młodzieżowych?",
+          "answer": "Tak, obecnie Statix nic nie kosztuje: żadnej płatności, żadnej karty kredytowej, żadnego okresu próbnego z datą wygaśnięcia. Demo na żywo działa nawet całkiem bez konta."
+        },
+        {
+          "question": "Co zrobić z liczbami na treningu?",
+          "answer": "Połącz je z mapą rzutów: jeśli skuteczność spada tylko z jednej strefy, znasz cel ćwiczenia. I mów o liczbach pozytywnie – „z drugiej linii jesteś na 58 procentach, doszlifujmy rzuty w wyskoku” działa lepiej niż sama krytyka."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Przed następnym meczem",
+      "title": "Przed sobotą szybko wszystko przygotować",
+      "description": "Założyć konto, wpisać kadrę i gotowe – to trwa krócej niż przygotowanie treningu. Albo sprawdź najpierw w demo na żywo, czy dasz radę obsłużyć to przy ławce.",
+      "linkLabel": "Co jest w pakiecie bezpłatnym"
+    }
   }
 }

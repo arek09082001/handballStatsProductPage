@@ -1,4 +1,7 @@
+'use client';
+
 import { Mail, UserPlus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -44,6 +47,8 @@ export default function SegmentHeader({
   screenshot,
   primaryAction,
 }: SegmentHeaderProps) {
+  const t = useTranslations('common');
+
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
       {/* Court lines only, no formation. The magnets sat behind the lede and
@@ -91,7 +96,7 @@ export default function SegmentHeader({
                 href={CLUB_CONFIG.website.appUrl}
                 target='_blank'
                 rel='noopener noreferrer'>
-                Jetzt kostenlos registrieren
+                {t('ctaRegister')}
               </HeroActionButton>
             )}
             <HeroActionButton
@@ -99,7 +104,7 @@ export default function SegmentHeader({
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
               rel='noopener noreferrer'>
-              Live-Demo ohne Account
+              {t('ctaDemoNoAccount')}
             </HeroActionButton>
           </div>
 

@@ -1600,5 +1600,1072 @@
   "legalTranslationNotice": {
     "title": "Authoritative version",
     "body": "The German version of this document is the authoritative one. This translation is provided for convenience and is not legally binding."
+  },
+  "pricingPage": {
+    "launchDate": "1 January 2027",
+    "founderDeadline": "31 December 2026",
+    "founderFreeUntil": "30 June 2027",
+    "coachCount": "over 50 coaches",
+    "hero": {
+      "kicker": "Pricing & costs",
+      "titleLead": "Pricing for the handball statistics app",
+      "titleBrand": "Statix",
+      "lede": "From {launchDate} Statix gets paid plans: Basic stays free forever, Coach costs €79 per season, Pro €159. Live recording is not cut back in any plan – and anyone who registers before then keeps the Coach plan free until {founderFreeUntil}.",
+      "ctaPrimary": "Register free now",
+      "ctaSecondary": "Live demo, no account",
+      "deadline": "Deadline {founderDeadline}",
+      "deadlineNote": "· after that only new registrations pay",
+      "trust": [
+        "Basic stays €0 forever",
+        "No credit card",
+        "Demo without an account"
+      ]
+    },
+    "why": {
+      "kicker": "A word from me",
+      "title": "Why Statix starts costing money in January",
+      "description": "A hobby project used by {coachCount} is no longer a hobby project – not on the invoice, at least.",
+      "paragraph1": "Statix came about because I was fed up with the tally sheet on the sideline – for my own team, on evenings after training. Today {coachCount} record their matches with it, and that still makes me happy every time.",
+      "paragraph2": "But the bill grows with every team: servers and database run around the clock, every AI analysis is a paid model call, every shared report renders a PDF and sends an email, every uploaded match video takes up storage permanently. I cannot carry that privately in the long run. That is why there are paid plans from {launchDate}.",
+      "paragraph3": "What will not happen: Statix disappearing behind a checkout. The core features stay free – limited, yes, but fully usable, so a youth coach with one team can keep working with it. What you pay for is what actually costs computing time, storage and delivery. And recording itself is not cut back in any plan: a paywall in the 58th minute does not cost you the customer, it costs you the match record.",
+      "signatureRole": "Developer of Statix, handball coach"
+    },
+    "tiers": {
+      "kicker": "The price board",
+      "title": "Three plans from {launchDate}",
+      "description": "You pay for what costs real money: computing time, storage and delivery. Everything that builds a habit stays in every plan.",
+      "seasonNote": "A year here means a season: 1 July to 30 June.",
+      "billingAriaLabel": "Billing period",
+      "billingMonthly": "Monthly",
+      "billingYearly": "Yearly",
+      "billingYearlyBadge": "−33 %",
+      "recommendedLabel": "Recommended",
+      "vatNote": "All prices are final prices. As a small business under § 19 of the German VAT Act I do not charge VAT.",
+      "prorataLead": "Prices apply from {launchDate}. Anyone joining in January only pays for the part-season up to 30 June:",
+      "prorataTrainer": "€39 instead of €79",
+      "prorataTrainerSuffix": "on Coach,",
+      "prorataPro": "€79 instead of €159",
+      "prorataProSuffix": "on Pro.",
+      "items": [
+        {
+          "id": "basis",
+          "name": "Basic",
+          "audience": "For the coach of a single team",
+          "price": {
+            "monat": {
+              "amount": "€0",
+              "unit": "forever",
+              "note": "No card, no expiry date."
+            },
+            "jahr": {
+              "amount": "€0",
+              "unit": "forever",
+              "note": "No card, no expiry date."
+            }
+          },
+          "summary": "One team, one season, no account with any payment provider. Record, analyse, plan fixtures – the core stays free so Statix remains usable for everyone.",
+          "highlights": [
+            "Live recording with nothing cut back",
+            "Full schedule and squad cards",
+            "1 team, 20 players, 10 matches",
+            "The last 5 matches in full depth",
+            "4 AI analyses and 4 shared reports per month"
+          ],
+          "ctaLabel": "Register for free"
+        },
+        {
+          "id": "trainer",
+          "name": "Coach",
+          "audience": "For everyone who really analyses after the match",
+          "price": {
+            "monat": {
+              "amount": "€9.90",
+              "unit": "per month",
+              "note": "Cancel monthly."
+            },
+            "jahr": {
+              "amount": "€79",
+              "unit": "per season",
+              "note": "That is €6.58 a month – €39.80 saved."
+            }
+          },
+          "summary": "The tier Statix was built for: the whole season stays visible, shot maps and form curves included, up to three teams with two assistant coaches each.",
+          "highlights": [
+            "Every recorded match stays visible in full depth",
+            "Shot maps, heatmaps, form curve, team records",
+            "3 teams with 2 assistant coaches each",
+            "Head-to-head record, polls, PDF match report",
+            "Sponsor slots in the public live ticker",
+            "20 AI analyses and 30 shared reports per month"
+          ],
+          "ctaLabel": "Register and secure it",
+          "recommended": true
+        },
+        {
+          "id": "pro",
+          "name": "Pro",
+          "audience": "For video analysis as a weekly routine",
+          "price": {
+            "monat": {
+              "amount": "€19.90",
+              "unit": "per month",
+              "note": "Cancel monthly."
+            },
+            "jahr": {
+              "amount": "€159",
+              "unit": "per season",
+              "note": "That is €13.25 a month – €79.80 saved."
+            }
+          },
+          "summary": "Everything from Coach, plus the video: 100 GB of footage that syncs itself to the match clock. Every recorded event finds its place in the video without anyone searching.",
+          "highlights": [
+            "100 GB of video with tagging and playlists",
+            "Video runs in sync with the match clock automatically",
+            "Send highlight clips to individual players",
+            "5 teams, 5 assistant coaches, 500 matches",
+            "Player accounts for the whole squad",
+            "40 AI analyses and 60 shared reports per month"
+          ],
+          "ctaLabel": "Register and secure it"
+        }
+      ]
+    },
+    "founder": {
+      "kicker": "For everyone already on board",
+      "title": "Register now and pay nothing for the 26/27 season",
+      "description": "From {launchDate} only new registrations pay. Every account that already exists keeps the Coach plan – free, without an application and without payment details.",
+      "cardTitle": "Grandfathering",
+      "cardDeadlineLabel": "Register by",
+      "cardPlanLabel": "Your plan",
+      "cardPlanValue": "Coach",
+      "cardFreeUntilLabel": "Free until",
+      "cardDueLabel": "Due until then",
+      "cardNote": "This is not a trial: there is no expiry date on which a card gets charged, because no card is stored.",
+      "cardCta": "Create an account and secure it",
+      "closing": "The reason is not a marketing trick but arithmetic: the coaches who have used Statix for a whole season are worth many times more as advocates than they would bring in as first payers. And nobody in the middle of the second half of the season should find their season behind a checkout.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Register by {founderDeadline}",
+          "text": "An email address is enough. There is no field for payment details, because there is no payment process until January."
+        },
+        {
+          "number": 2,
+          "title": "Your account is set to Coach",
+          "text": "Not as a trial, but as a fixed setting. On 1 January only the default for new registrations changes – your account keeps what it has."
+        },
+        {
+          "number": 3,
+          "title": "Free until {founderFreeUntil}",
+          "text": "The whole of the current 26/27 season, second half included. After that you decide whether to stay – without anything being charged beforehand."
+        }
+      ]
+    },
+    "compare": {
+      "kicker": "Everything compared",
+      "title": "What is in which plan",
+      "description": "Complete, no asterisks: every feature and every limit exactly as the app applies them from January.",
+      "included": "included",
+      "notIncluded": "not included",
+      "limitsNote": "Numbers are upper limits, valid from {launchDate}.",
+      "rowHeaderSr": "Feature or limit",
+      "captionSuffix": "features and limits per plan",
+      "closing": "The limits never bite mid-match: whether another match fits your quota is checked when you create it, not at half time. A recording that has started always runs to the end and is always saved.",
+      "groups": [
+        {
+          "id": "erfassen",
+          "title": "Recording",
+          "note": "Not cut back in any plan. What happens during the match is never a question of price.",
+          "rows": [
+            {
+              "label": "Record the match live with a tap",
+              "hint": "Goals, shots, saves, turnovers, 7 m, suspensions",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Shot position and goal zone on the court",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Match clock, bench, match assistant",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Record offline in the hall",
+              "hint": "Syncs itself once you are outside",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "As an app on your home screen",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Correct actions after the match",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "auswerten",
+          "title": "Analysis",
+          "note": "This is where the computing time sits – and the depth with which you look back on your season.",
+          "rows": [
+            {
+              "label": "Match overview and player values per match",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Matches visible in full depth",
+              "hint": "Older ones stay stored and are shown blurred – nothing is deleted",
+              "basis": "5",
+              "trainer": "all",
+              "pro": "all"
+            },
+            {
+              "label": "Shot maps and heatmaps",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Season progression, form curve, team records",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Player of the match with award poster",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Head-to-head record and scouting form guide",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "AI analyses",
+              "hint": "per month, per account across all teams together",
+              "basis": "4",
+              "trainer": "20",
+              "pro": "40"
+            },
+            {
+              "label": "Video analysis with tagging and playlists",
+              "hint": "100 GB is around 16 matches in 1080p",
+              "basis": false,
+              "trainer": false,
+              "pro": "100 GB"
+            },
+            {
+              "label": "Video runs in sync with the match clock",
+              "hint": "Every recorded event finds its place in the video",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "organisieren",
+          "title": "Organising",
+          "note": "The schedule is the most used feature in the app. It stays complete everywhere.",
+          "rows": [
+            {
+              "label": "Schedule with recurring dates and RSVPs",
+              "hint": "including push reminders and a response deadline",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Absences, calendar subscription, venues, guests",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Squad as a card album",
+              "hint": "HPI and OVR, tiers, radar, stickers",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Teams",
+              "hint": "per account",
+              "basis": "1",
+              "trainer": "3",
+              "pro": "5"
+            },
+            {
+              "label": "Assistant coaches per team",
+              "hint": "open invitations count too",
+              "basis": "0",
+              "trainer": "2",
+              "pro": "5"
+            },
+            {
+              "label": "Players per team",
+              "basis": "20",
+              "trainer": "30",
+              "pro": "40"
+            },
+            {
+              "label": "Saved matches per team",
+              "basis": "10",
+              "trainer": "200",
+              "pro": "500"
+            },
+            {
+              "label": "Tournaments per team",
+              "basis": "3",
+              "trainer": "20",
+              "pro": "50"
+            },
+            {
+              "label": "Player accounts for the squad",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        },
+        {
+          "id": "teilen",
+          "title": "Sharing",
+          "note": "Every share renders a PDF and often sends an email – the second item that costs real money.",
+          "rows": [
+            {
+              "label": "Public live ticker via link and QR code",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Sponsor slots in the live ticker",
+              "hint": "One perimeter-board partner pays for the club subscription",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "PDF match report and share links",
+              "hint": "per month, per account",
+              "basis": "4",
+              "trainer": "30",
+              "pro": "60"
+            },
+            {
+              "label": "Share matches with other coaches",
+              "hint": "Lands in their Statix inbox",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Player surveys without an account",
+              "basis": false,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Send highlight clips to players",
+              "hint": "They see their scenes without an account of their own",
+              "basis": false,
+              "trainer": false,
+              "pro": true
+            }
+          ]
+        }
+      ]
+    },
+    "club": {
+      "kicker": "For the club treasury",
+      "title": "What does Statix cost a club?",
+      "description": "The question the committee asks before anyone opens the app.",
+      "coachTitle": "One coach, several teams",
+      "coachParagraph1": "That needs no club contract. A Coach account carries three teams – under-18s, women, men, however it is cut at your club – with two assistant coaches each, for €79 per season. That is less than a club licence for the usual organisation apps, and it brings statistics, shot maps and AI along with it.",
+      "coachParagraph2": "In a club that can often be paid for entirely: from the Coach tier upwards a sponsor may appear in the public live ticker, and a perimeter-board partner usually covers the amount on their own.",
+      "clubTitle": "The whole club: on request",
+      "clubParagraph1": "If you want to bring every team under one roof – a club overview, club-wide analysis, player careers across the youth levels – you get the club area. As a guide for your budget: around €390 per season for five teams, staggered by size.",
+      "clubParagraph2": "There is deliberately no list price. What a club with twelve youth teams needs is something else than a club with two – write a short note about how many teams you have and a fitting offer comes back.",
+      "clubLink": "Request club terms",
+      "closing": "What a club gains when every team records to the same standard – one standard across all teams, squads and training attendance in one place, development across all youth teams, data protection properly handled – is on the page <club>handball statistics app for clubs</club>. For coaching teams in youth handball it is worth looking at <youth>Statix for youth coaches</youth>."
+    },
+    "alternative": {
+      "kicker": "The real alternative",
+      "title": "Paper, Excel or Statix?",
+      "description": "Hardly any coach compares two statistics apps. The comparison is with whatever is on the clipboard on Saturday.",
+      "colAspect": "What it is about",
+      "colPaper": "Paper",
+      "colExcel": "Excel",
+      "colStatix": "Statix",
+      "rows": [
+        {
+          "aspect": "Cost",
+          "paper": "A pad and a pen",
+          "excel": "Usually already there",
+          "statix": "€0 or €79 per season"
+        },
+        {
+          "aspect": "During the match",
+          "paper": "Making tally marks while you coach",
+          "excel": "Practically unusable on a tablet in the hall",
+          "statix": "One tap per action, offline too"
+        },
+        {
+          "aspect": "Analysis",
+          "paper": "Type it up in the evening – or never",
+          "excel": "Maintain formulas, hunt for errors",
+          "statix": "Done the moment the buzzer goes"
+        },
+        {
+          "aspect": "Shot maps",
+          "paper": "By hand on a printed court",
+          "excel": "Not provided for",
+          "statix": "Automatically from every recorded shot"
+        },
+        {
+          "aspect": "Progress across the season",
+          "paper": "A folder in the basement",
+          "excel": "One file per match, no trend",
+          "statix": "Development per player across all matches"
+        },
+        {
+          "aspect": "Involving the team",
+          "paper": "Not at all",
+          "excel": "File by email, unclear version",
+          "statix": "Share link, PDF, live ticker"
+        }
+      ],
+      "hiddenCostTitle": "The costs that appear in no budget",
+      "hiddenCostParagraph": "Paper is not free – it just costs nothing you have to transfer. You pay all the same: with the match you can no longer reconstruct two weeks later. With the training week built on a gut feeling instead of a shot map. With the tally sheets in the sports bag that nobody ever adds up. Collect for a whole season and never analyse it, and you have done the work and left the return lying there.",
+      "template": "If you want to stay on paper: at least take a proper template. Our <template>handball statistics Excel template</template> is free and works out shooting percentages by itself – and the guide explains <guide>how to keep handball statistics properly</guide>, whatever you use."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about pricing",
+      "description": "What coaches want to know before 1 January arrives.",
+      "items": [
+        {
+          "question": "What does Statix cost?",
+          "answer": "Nothing until {founderDeadline}. From {launchDate} there are three tiers: Basic stays free forever, Coach costs €79 per season or €9.90 a month, Pro €159 per season or €19.90 a month. All prices are final prices; as a small business under § 19 of the German VAT Act I do not charge VAT."
+        },
+        {
+          "question": "I already use Statix – do I have to pay from January?",
+          "answer": "No. Every account created before {launchDate} keeps the Coach plan free until {founderFreeUntil} – that is the whole of the current 26/27 season. You do not have to do anything, click anything or store payment details. Running into a paywall mid-season means losing your match record, and that would be the worst possible start."
+        },
+        {
+          "question": "Why is Statix becoming paid at all?",
+          "answer": "Statix began as a hobby project for my own team and is now used by {coachCount}. Servers, database, AI analyses and video storage cost more with every team, and I cannot carry that bill privately in the long run. The alternative would be to shut the project down – the worse solution for everyone involved."
+        },
+        {
+          "question": "What stays free?",
+          "answer": "All live recording, the complete schedule with RSVPs, absences and calendar subscription, the squad cards with HPI, tiers and stickers, the public live ticker and the analysis of your matches. What Basic limits: one team, 20 players, 10 saved matches, the last five matches in full depth plus four AI analyses and four shared reports per month."
+        },
+        {
+          "question": "Monthly or yearly – what is the difference?",
+          "answer": "Only the price and the rhythm. Yearly here means a season, from 1 July to 30 June, and costs about a third less: €79 instead of €118.80 on Coach, €159 instead of €238.80 on Pro. Monthly is more expensive but can be cancelled at any time. Joining in January means paying only the part-season up to 30 June: €39 instead of €79 on Coach, €79 instead of €159 on Pro."
+        },
+        {
+          "question": "Do I lose data if I stay on Basic?",
+          "answer": "No. Nothing is deleted. On Basic you see the five most recently recorded matches in full depth; older ones stay in the list and are shown blurred, with a note on what unlocks them again. And the ten-match limit is checked when you create a match, never during one: a recording that has started always runs to the end and is always saved."
+        },
+        {
+          "question": "What does Statix cost a club?",
+          "answer": "An individual coach stays on the tiers above. If you want to bring the club in as a whole – every team under one roof, club-wide analysis, player careers across the youth levels – you get the club area, and that is set up for the club. As a guide it is around €390 per season for five teams, staggered by size. There is deliberately no list price: what a club with twelve youth teams needs is something else than a club with two."
+        },
+        {
+          "question": "How can I cancel?",
+          "answer": "At any time in your account, with one click – a cancel button is part of the deal from the first day of payment. A monthly subscription ends with the next month, a season subscription on 30 June. After that your account continues on Basic; your data stays where it is."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Now or from January",
+      "title": "Every sign-up before {founderDeadline} counts",
+      "description": "Registering costs nothing and takes a minute – there is no field for payment details. Create an account today and you keep the Coach plan free until {founderFreeUntil}. Rather look around first? The live demo runs on real match data without an account.",
+      "linkLabel": "Subscribe to the newsletter and hear about changes first"
+    }
+  },
+  "common": {
+    "ctaRegister": "Register free now",
+    "ctaDemo": "Watch the live demo",
+    "ctaDemoNoAccount": "Live demo, no account",
+    "included": "included",
+    "notIncluded": "not included"
+  },
+  "brandPage": {
+    "hero": {
+      "kicker": "Statix at a glance",
+      "titlePrefix": "What is",
+      "titleBrand": "Statix",
+      "titleSuffix": "?",
+      "lede": "Statix is the handball statistics app for coaches, clubs and teams: record matches live with a tap – goals, shots, saves, suspensions and substitutions – and get shooting percentages, shot maps, player values and AI analyses worked out automatically. Built in Germany, straight in the browser, works offline in the hall.",
+      "ctaFeatures": "See all features",
+      "trust": [
+        "Made in Germany",
+        "Start for free",
+        "Offline in the hall"
+      ],
+      "screenshotAlt": "Statix handball app: recording match statistics live with a tap",
+      "screenshotLabel": "Statix – live recording during the match"
+    },
+    "overview": {
+      "kicker": "In 30 seconds",
+      "title": "Statix, briefly explained",
+      "paragraph1": "Statix replaces paper, tally sheets and Excel files on the sideline. During the match every action is one tap away; the whole analysis happens automatically in the background. When the final whistle goes, player and team statistics, shooting percentages, shot maps and development curves are ready at once and can be shared with the whole team as a link or a PDF.",
+      "paragraph2": "On top of that come a public live ticker for parents and fans, a tournament mode with an automatic table, player surveys, coach collaboration and AI analyses for matches, players and entire tournaments.",
+      "points": [
+        "Every action is one tap away during the match",
+        "Analysis runs automatically in the background",
+        "Statistics, shot maps and trends right after the final whistle",
+        "Share with the whole team by link or PDF"
+      ],
+      "screenshotAlt": "Statix match overview: all matches and analyses at a glance",
+      "screenshotLabel": "Statix – match overview",
+      "factsKicker": "At a glance",
+      "facts": [
+        {
+          "label": "Product",
+          "value": "Statix – handball statistics app"
+        },
+        {
+          "label": "Category",
+          "value": "Live statistics, match analysis and team management for handball"
+        },
+        {
+          "label": "Audience",
+          "value": "Coaches, assistant coaches, clubs and handball teams at every level"
+        },
+        {
+          "label": "Platform",
+          "value": "Web app in the browser – smartphone, tablet/iPad and laptop, works offline"
+        },
+        {
+          "label": "Price",
+          "value": "Basic free forever – paid tiers from 1 January 2027, from €79 per season"
+        },
+        {
+          "label": "Developer",
+          "value": "Arkadiusz Weiss, handball player from Germany (Made in Germany)"
+        },
+        {
+          "label": "Website",
+          "value": "{domain}"
+        }
+      ]
+    },
+    "highlights": {
+      "kicker": "Show, don’t tell",
+      "title": "This is what Statix looks like in the hall",
+      "description": "From the first tap on the bench to the finished analysis – the four steps that make up Statix.",
+      "demoCta": "Try Statix live in the demo",
+      "items": [
+        {
+          "badge": "Record live",
+          "title": "The whole match with a tap – straight from the bench",
+          "description": "You record goals, shots, saves, suspensions and substitutions in real time with a tap. No paper, no tally sheet – and still every action is properly documented when the final whistle goes."
+        },
+        {
+          "badge": "Analyse automatically",
+          "title": "Player and team statistics in seconds",
+          "description": "Statix works out shooting percentages, efficiency, playing shares and development curves automatically in the background – for every player and the whole team, shareable at once as a link or a PDF."
+        },
+        {
+          "badge": "Shot maps",
+          "title": "See where the goals come from – and where they do not",
+          "description": "Every shot lands visually on the court. That shows you patterns, favourite corners and weaknesses that a plain table of numbers hides."
+        },
+        {
+          "badge": "AI analysis",
+          "title": "AI analysis for matches, players and tournaments",
+          "description": "Statix sums up matches, players and whole tournaments in readable analyses – with pseudonymised player names. Strengths, weaknesses and starting points for the next session at a glance."
+        }
+      ]
+    },
+    "features": {
+      "kicker": "The full squad",
+      "title": "What can Statix do?",
+      "description": "Every feature of the Statix app at a glance – from live recording to AI analysis. Each row leads to its own page.",
+      "indexLink": "To the feature overview with screenshots"
+    },
+    "story": {
+      "kicker": "Who for?",
+      "title": "Who is Statix built for?",
+      "description": "From the coach on the bench to the fans in the stands – Statix brings real numbers to everyone around the team.",
+      "audiences": [
+        {
+          "title": "Coaches and assistant coaches",
+          "description": "Record matches live with a tap from the bench and decide on real numbers instead of gut feeling."
+        },
+        {
+          "title": "Clubs",
+          "description": "Bring statistics, squads and seasons of every team together in one place – from youth level to the first team."
+        },
+        {
+          "title": "Players",
+          "description": "See their shooting percentages, development curves and player cards, and recognise what to work on."
+        },
+        {
+          "title": "Parents and fans",
+          "description": "Follow matches through the public live ticker with a link or QR code – straight in the browser, without an account."
+        }
+      ],
+      "photoAlt": "Season overview in Statix with attacking efficiency, save percentage, record and goal difference",
+      "founderKicker": "The person behind it",
+      "founderTitle": "Who is behind Statix?",
+      "founderParagraph1": "Statix is developed by Arkadiusz Weiss – a handball player from Germany who built the app out of his own practice on the sideline. The name stands for what the app does at its core: statistics that genuinely help in handball.",
+      "founderParagraph2": "Statix is not an anonymous tool from a large corporation: feedback from coaches in the hall goes straight into development, and new features come about where they are needed – on the bench, in training and in the follow-up."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions about Statix",
+      "description": "Everything people want to know when they hear about Statix for the first time.",
+      "items": [
+        {
+          "question": "What is Statix?",
+          "answer": "Statix is a handball statistics app from Germany. Coaches, clubs and teams record matches live with a tap – goals, shots, saves, suspensions and substitutions – and from that Statix works out shooting percentages, player and team statistics, shot maps and AI analyses automatically."
+        },
+        {
+          "question": "Is Statix free?",
+          "answer": "Nothing until 31 December 2026: register at {appUrl} and record your first match with no obligation and no credit card. From 1 January 2027 there are three tiers – Basic stays at €0, Coach costs €79 per season, Pro €159. Anyone who registers before then keeps the Coach plan free for the whole 26/27 season, that is until 30 June 2027."
+        },
+        {
+          "question": "How can I try Statix?",
+          "answer": "Statix is available: you register free of charge at {appUrl} and start straight away with your team. If you would rather look around first, open the live demo – a fully equipped version with real match data, straight in the browser and without an account."
+        },
+        {
+          "question": "Which devices does Statix run on?",
+          "answer": "Statix runs straight in the browser on smartphone, tablet (iPad and Android) and laptop. There is no need to install anything from an app store – but the app can be installed on your home screen as a PWA and works offline in the hall."
+        },
+        {
+          "question": "Who is behind Statix?",
+          "answer": "Behind Statix is Arkadiusz Weiss – a handball player from Germany who develops the app out of his own practice on the sideline. Not an anonymous tool: feedback from the hall goes straight into development."
+        },
+        {
+          "question": "Where do I find Statix online?",
+          "answer": "The official Statix website is {domain}. There you will find every feature, the handball guide and the live demo without an account. The app itself runs at {appUrl}. On Instagram, Statix is active as {instagram}."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Available now",
+      "title": "Try Statix for yourself",
+      "description": "Statix is live: register free of charge and record your first match – straight in the browser, with no installation. Rather look around first? The live demo runs on real match data and needs no account.",
+      "linkLabel": "To the handball guide"
+    }
+  },
+  "clubsPage": {
+    "hero": {
+      "kicker": "For clubs",
+      "titleLead": "Handball statistics for the whole",
+      "titleHighlight": "club",
+      "lede": "Ten youth teams, ten systems: one keeps Excel, the next a sheet of paper, the third nothing at all. The club area of Statix lays one level over every team. Everyone records to the same scheme, squads and fixtures sit in the same tool, players keep their career across the age groups. What that means for your club, we work out in a conversation.",
+      "trust": [
+        "Set up personally",
+        "DPA under Art. 28 GDPR",
+        "Every team on one page"
+      ],
+      "primaryAction": "Enquire for your club",
+      "screenshotAlt": "Club overview with every handball team of a club in the Statix app",
+      "screenshotLabel": "Eight teams, one weekend, one page"
+    },
+    "benefits": {
+      "kicker": "What changes",
+      "title": "One club, one standard",
+      "description": "Six things that only work once each team stops running its own system.",
+      "items": [
+        {
+          "number": 1,
+          "title": "Ten youth teams, one scheme",
+          "text": "Every team records the same actions under the same counting rules, because the app offers no second set. Under-12s, under-18s and the women's team then stand side by side in one table, with nobody converting anything."
+        },
+        {
+          "number": 2,
+          "title": "One player, one career",
+          "text": "When a player moves from under-14s to under-16s and later to the women's team, she is the same person in Statix, with every stage listed under the next. What three coaches learned about her stays in the club."
+        },
+        {
+          "number": 3,
+          "title": "Players in several squads",
+          "text": "An under-18 player helping out with the women's team is in both squads: her own shirt number, her own schedule, her own numbers. For match day the coach picks a match-day squad out of that."
+        },
+        {
+          "number": 4,
+          "title": "Fixtures in the same tool",
+          "text": "Training times and recurring dates sit where the matches sit. Players accept or decline themselves and enter longer absences as a period; the coach sees in advance who is coming."
+        },
+        {
+          "number": 5,
+          "title": "You see early where something is missing",
+          "text": "The club analysis puts team next to team and season next to season. A youth team whose shooting percentage has been flat for two years stands out before the age group has moved on; the player development behind it is on the player's own page."
+        },
+        {
+          "number": 6,
+          "title": "A change of coach costs no data",
+          "text": "When a coach stops, squads, matches, fixtures and analyses stay with the club. The successor takes over a team with a history instead of an empty folder."
+        }
+      ]
+    },
+    "clubLevel": {
+      "kicker": "The club area",
+      "title": "Every team on one page",
+      "description": "Coaches carry on working in their own team. Above that sits a level that does not exist without a club and that nobody maintains by hand.",
+      "capabilities": [
+        {
+          "term": "Overview",
+          "text": "The weekend's results across every team, the next fixtures and the table of all squads."
+        },
+        {
+          "term": "Teams",
+          "text": "Every squad with head coach, coaching staff, last and next match. One click leads inside."
+        },
+        {
+          "term": "Players",
+          "text": "Every player in the club in one list, searchable by name or team."
+        },
+        {
+          "term": "Analysis",
+          "text": "Shooting percentage, save percentage and win rate per team, plus a season-against-season comparison."
+        },
+        {
+          "term": "Careers",
+          "text": "Anyone who has played in two of the club's teams appears in the dashboard with their stages."
+        },
+        {
+          "term": "AI analyses",
+          "text": "The reports of every team in one place. Player names are pseudonymised beforehand."
+        },
+        {
+          "term": "Roles",
+          "text": "Club administration may do everything, the sporting director reads along, coaches stay in their team."
+        },
+        {
+          "term": "Sponsors",
+          "text": "Club crest and sponsors run on the live ticker of every team that has not stored its own."
+        }
+      ],
+      "analysisAlt": "Club analysis with key figures of every handball team in a club",
+      "analysisLabel": "Every season, every team side by side",
+      "playersAlt": "Club-wide player list across every team of a handball club",
+      "playersLabel": "Every player in the club, across all squads"
+    },
+    "youth": {
+      "kicker": "For the youth department",
+      "title": "Many teams, one development path",
+      "description": "The youth department this level is built for: eight, ten, twelve teams and, until now, just as many systems for keeping statistics.",
+      "points": [
+        {
+          "number": 1,
+          "title": "From the minis to under-18s on the same scheme",
+          "text": "The under-14s' shooting percentage is the same quantity as the under-18s', and the under-16s' turnover count can be compared with the one from two years ago. Putting age groups side by side is no longer a calculation but a choice in a filter."
+        },
+        {
+          "number": 2,
+          "title": "The step up to the next team",
+          "text": "The moment a club loses most: an age group moves up, the new coach knows nobody, and three years of observation sit in the old coach's head. Here they see matches, development and position of their new team from day one, even without the handover conversation that never happens."
+        },
+        {
+          "number": 3,
+          "title": "Player development shows in the series, not in the match",
+          "text": "A single youth match says almost nothing. Twelve in a row say whether the shooting percentage from the back court is rising, whether turnovers are falling, whether the goalkeeper is saving more than in autumn. That is exactly what the analysis shows, per player and across seasons. The department sees from it where coaching is working and where a team needs support."
+        }
+      ],
+      "progressAlt": "Development curve of a handball player across a season in the Statix app",
+      "progressLabel": "One player's development across the season",
+      "careersAlt": "List of player careers across several teams of a handball club",
+      "careersLabel": "Anyone who has already made the step is in the club dashboard",
+      "closing": "What that looks like for the individual coach on the bench, one tap per action and a live ticker for the parents, is on the page <youth>handball statistics for youth coaches</youth>."
+    },
+    "training": {
+      "kicker": "Training and attendance",
+      "title": "Who turns up sits next to the fixture list",
+      "description": "Squads, matches, fixtures and replies sit in one place. No second tool for the calendar, no third list for attendance.",
+      "paragraph1": "<lead>Training, matches and everything in between</lead> sit in one calendar, as a single date or as a series across the whole season, with venue, address and meeting time. Move a series once and you have moved it, not eighteen times.",
+      "paragraph2": "<lead>Players accept or decline themselves</lead>, through the team's join link, without a coach app and without anyone seeing their numbers. Before training the coaching staff sees the full list: who is coming, who has declined, who might, and who has not replied at all.",
+      "paragraph3": "<lead>Two weeks of holiday is one entry</lead>, not fourteen refusals. Absences apply to a period and carry through every date inside it; the attendance list then shows the reason instead of “no reply”. Why somebody is missing stays between them and the coaching staff.",
+      "paragraph4": "<lead>If a session is cancelled</lead>, the team gets a notification on their phone without anyone working through a phone list. Statix can be installed on the home screen as an app for that, with no app store involved.",
+      "closing": "Each team runs its own schedule, the same way it records its own matches. In its overview the club sees the <mark>matches</mark> of every team; training attendance stays with each team's coaching staff."
+    },
+    "privacy": {
+      "kicker": "For the data protection officer",
+      "title": "Handling player data properly",
+      "description": "In a club, a rollout rarely fails on what the coaches can do — it fails on this question. So here is the answer in four points.",
+      "points": [
+        {
+          "title": "Processing on your behalf under Art. 28 GDPR",
+          "text": "The player data your coaches enter is processed by Statix on the club's behalf. A data processing agreement is provided on request; that is precisely the document a data protection officer asks for."
+        },
+        {
+          "title": "Pseudonymised before any AI sees it",
+          "text": "Player names are pseudonymised before data reaches an AI. The analysis works with neutral abbreviations, and reports that have been generated can be deleted again at any time."
+        },
+        {
+          "title": "Shared links stay revocable",
+          "text": "A match only becomes public when a coach publishes it, and the release can be withdrawn. On the live ticker, player names appear abbreviated by default."
+        },
+        {
+          "title": "Processors disclosed",
+          "text": "Which processors are involved – hosting, database, email delivery and the AI providers – is named in the GTC and the privacy policy, together with notes on transfers to third countries."
+        }
+      ],
+      "closing": "The full provisions are in the <terms>GTC (§ 7 data protection and processing)</terms> and in the <privacy>privacy policy</privacy>. For a data processing agreement an email to <mail>{email}</mail> is enough."
+    },
+    "rollout": {
+      "kicker": "Getting started",
+      "title": "Into the club in four steps",
+      "description": "No project, no cut-off date, no data import. You can start with two teams and bring the rest along when it fits.",
+      "steps": [
+        {
+          "number": 1,
+          "title": "You write to us",
+          "text": "Club name, roughly how many teams, and who should administer the club. We need no more than that to tell you whether and how this fits your club."
+        },
+        {
+          "number": 2,
+          "title": "We create the club",
+          "text": "The club area is set up by us – including the people who administer it. You get the join code, a ten-character secret you can regenerate at any time."
+        },
+        {
+          "number": 3,
+          "title": "Coaches add their team",
+          "text": "Each head coach creates an account, free and in two minutes, and enters the join code in the team settings. That makes their team part of the club. No import, no cut-off date, no training session."
+        },
+        {
+          "number": 4,
+          "title": "From the first match the overview is there",
+          "text": "As soon as a team finishes a match, the club overview fills up. Nothing has to be entered again, nobody maintains a second table – the club level is a view onto the data the coaches record anyway."
+        }
+      ]
+    },
+    "objections": {
+      "kicker": "Plain speaking",
+      "title": "What gets said on the committee",
+      "description": "The sentences rollouts fail on. Here they are, with an answer.",
+      "items": [
+        {
+          "question": "“So what does it cost?”",
+          "answer": "There is deliberately no price tag on this page. A club with twelve youth teams needs something else than a club with two, and a figure that applies to both would be wrong for one of them. Write to us saying how many teams you want to bring in and what you plan to do with it – then you get an offer that fits your club, early enough for your budget planning. For an individual coach, getting started stays free regardless."
+        },
+        {
+          "question": "“Our coaches are not technical.”",
+          "answer": "Statix is built for a coach who coaches on the side. Every action is a tap, there is no training session and no setup anyone would have to do for the club. Whoever wants to can start with goals and shots and leave everything else alone. And anyone who wants to look first opens the live demo without an account."
+        },
+        {
+          "question": "“But we already have club software.”",
+          "answer": "Probably one for members, fees and departments – and it should stay where it is. Statix does the opposite: what happens on court and in training. Squads instead of a member list, training attendance instead of payment status, shooting percentage instead of an invoice run. The two side by side is the rule, not the exception."
+        },
+        {
+          "question": "“We cannot just enter player data anywhere.”",
+          "answer": "Correct, and that is why it is regulated. For player data you enter on your own responsibility, Statix is a processor under Art. 28 GDPR; a data processing agreement is provided on request. Player names are pseudonymised before AI analyses, they appear abbreviated by default in the public live ticker, shared reports can be withdrawn, and which processors are involved is stated in full in the GTC and the privacy policy."
+        },
+        {
+          "question": "“And if we stop after one season?”",
+          "answer": "Then you stop. You can export analyses as PDFs and keep them, deactivate shared links again, and the teams stay with their coaches – the club area is a view onto them, not a cage around them."
+        }
+      ],
+      "links": "What getting started costs an individual coach and where the limits of free access lie is on the page <pricing>pricing for the handball statistics app</pricing>; what works permanently without paying is under <free>handball statistics app for free</free>. For the coaches of your youth teams there is a page of its own: <youth>handball statistics for youth coaches</youth>. And if you first want to settle what to agree on in the club before anyone records anything: <guide>introducing statistics in a club</guide>."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions from clubs",
+      "description": "What department heads and committees want to know before they roll Statix out in the club.",
+      "items": [
+        {
+          "question": "What is the Statix club area?",
+          "answer": "A level above the individual teams. In the handball statistics app every squad of a club hangs under one roof: a club overview with results and the table of all teams, a club-wide player list, an analysis with a season comparison, the careers of players across several teams and collected AI analyses. The individual coaches carry on working in their own team as before."
+        },
+        {
+          "question": "Which clubs is this worth it for?",
+          "answer": "Above all for a youth department with many teams that wants statistics kept consistently – from the minis to under-18s and on into the senior section. The more teams there are and the more transitions between them, the more the shared standard creates: comparable numbers, continuous player careers and a department head who does not have to ask eight coaches individually."
+        },
+        {
+          "question": "What does Statix cost a club?",
+          "answer": "There is no off-the-shelf price tag for that. What a club needs depends on the number of teams and on what you plan to do with it – so after a short enquiry we make you an offer, rather than naming a figure here that would be wrong for most clubs. For individual coaches, getting started stays free, with no credit card."
+        },
+        {
+          "question": "How do we get every team into the club?",
+          "answer": "Through a join code. We create the club and give you the code; each head coach enters it in their team settings and thereby belongs. The route deliberately starts from the coach – the team is theirs, so nobody pulls them in from outside. You can regenerate the code at any time."
+        },
+        {
+          "question": "Can players be in several teams?",
+          "answer": "Yes. An under-18 player helping out with the women's team is in both squads – each with her own shirt number, her own schedule and her own numbers. Because both squad places belong to the same person, her stages still come together as one career, and nothing is lost when she moves up an age group."
+        },
+        {
+          "question": "How do we keep an eye on training attendance?",
+          "answer": "Every team runs its fixtures in Statix: training, matches and everything in between, as a series too. Players accept or decline themselves – through a join link, without a coach app of their own – and enter longer absences such as holiday, illness or injury as a period instead of declining every single date. The coaching staff sees the full attendance list including those who have not replied yet; reasons for declining stay between the player and the coaching staff."
+        },
+        {
+          "question": "Who in the club may see which data?",
+          "answer": "There are three roles. Club administration has access to every team in the club, the sporting director reads everything and changes nothing, and a coach can reach the club's teams but carries on working in their own. Anyone without one of these roles does not see the club area."
+        },
+        {
+          "question": "How is data protection handled for player data?",
+          "answer": "For the player data you enter, Statix acts as a processor within the meaning of Art. 28 GDPR and provides a data processing agreement on request. Player names are pseudonymised before AI analyses, so the analysis works with neutral abbreviations. In the public live ticker, names appear abbreviated by default – in youth teams they are the names of minors. Processors used and transfers to third countries are named in the GTC and the privacy policy."
+        },
+        {
+          "question": "Does Statix replace our club administration software?",
+          "answer": "No, and it is not meant to. Member administration, fees and department organisation stay in your existing software. Statix covers what does not appear there: squads, fixtures and training attendance, live recording of matches and every analysis that comes out of it."
+        },
+        {
+          "question": "What happens when a coach leaves the club?",
+          "answer": "The team and its matches remain. The successor gets access through the coaching staff or the club administration; you do not depend on somebody handing over a private file."
+        },
+        {
+          "question": "Do our coaches need training?",
+          "answer": "No. Recording is one tap per action, an account is created in two minutes, and joining the club is a code in an input field. Anyone who wants to look first starts the live demo without an account – it runs on real match data in the browser."
+        },
+        {
+          "question": "Does it work in halls with no signal?",
+          "answer": "Yes. Matches are recorded offline and sync as soon as the device is online again. Statix can also be installed on the home screen as an app, without the detour through an app store."
+        }
+      ]
+    },
+    "contact": {
+      "kicker": "No price tag, a conversation",
+      "title": "Tell us about your club",
+      "description": "How many teams do you have, how many of them in youth handball, and what should end up in one place? Three sentences are enough. You get an assessment of whether the club area fits you, and an offer in your size instead of an off-the-shelf figure.",
+      "formHint": "or right here in the form"
+    }
+  },
+  "youthCoachPage": {
+    "hero": {
+      "kicker": "For youth coaches",
+      "titleLead": "Handball statistics for",
+      "titleHighlight": "youth coaches",
+      "lede": "You coach, you substitute, you talk – and you are supposed to take notes on the side. Statix turns that into one tap per action. After the match you see who is developing, your players see their own values in the card album, and the parents follow the match on the live ticker. Costs nothing at the moment.",
+      "trust": [
+        "One tap per action",
+        "Currently €0",
+        "No training needed"
+      ],
+      "screenshotAlt": "Youth coach recording handball statistics live with a tap from the bench",
+      "screenshotLabel": "Recording while you coach"
+    },
+    "benefits": {
+      "kicker": "From the hall",
+      "title": "What you get out of it in youth handball",
+      "description": "Six things that genuinely change on a Saturday and in the week that follows.",
+      "items": [
+        {
+          "number": 1,
+          "title": "One tap while you are actually coaching",
+          "text": "You are standing at the bench, substituting, talking, correcting – and you are supposed to write things down on the side. That is why every action is exactly one tap: goal, missed shot, save, suspension. No pen, no clipboard, no typing it up in the evening."
+        },
+        {
+          "number": 2,
+          "title": "Fourteen-year-olds see their own progress",
+          "text": "No teenager believes “you are getting better”. “Your shooting percentage from the wing has gone from 41 to 58 per cent” they do. Numbers from real matches make progress visible – including for those who do not score the most."
+        },
+        {
+          "number": 3,
+          "title": "The squad as a card album",
+          "text": "Player cards with values from real matches, stickers for special performances and a tactics board to set the team up. For the kids it is a sticker album – for you it is the squad with numbers behind it."
+        },
+        {
+          "number": 4,
+          "title": "Parents follow the match on the live ticker",
+          "text": "A link or a QR code is enough, and whoever could not travel to the away game sees the score and the flow live in the browser. That saves you the twelve WhatsApp messages at half time."
+        },
+        {
+          "number": 5,
+          "title": "Share playing time fairly – and be able to show it",
+          "text": "In youth handball, playing time is a permanent topic. If you record how often each player shot and how the playing shares fall, you can show something in a conversation with parents instead of defending yourself."
+        },
+        {
+          "number": 6,
+          "title": "Surveys with no player accounts",
+          "text": "Who can make Saturday? You create a survey and share a link – the players answer without signing up. Nobody has to install an app just because you want to know who is on the bus."
+        }
+      ]
+    },
+    "development": {
+      "kicker": "Across a season",
+      "title": "Making development visible",
+      "description": "A single match says little. Twelve matches say whether your training is landing.",
+      "paragraph": "In youth handball performance swings from week to week – that comes with it. Which is why the trend is the real information: how has the shooting percentage from the wing developed since you started working on the angles in training? Who is taking on shots now who only passed three months ago? Those are the sentences that move a child forward – and the ones you can back up in a conversation with parents.",
+      "readMore": "Practical further reading: <development>measuring player development in handball</development>, <youth>coaching youth handball</youth> and, for the youngest, <mini>mini handball with children</mini>.",
+      "screenshotAlt": "Squad as a card album: player cards with values from real handball matches",
+      "screenshotLabel": "Squad with player cards and values"
+    },
+    "objections": {
+      "kicker": "Honest questions",
+      "title": "What youth coaches rightly object",
+      "description": "Four objections I had myself – and how I answer them.",
+      "items": [
+        {
+          "question": "“I have no free hand during the match.”",
+          "answer": "That is exactly why recording is built the way it is: one action is one tap, with no menu and no follow-up question. And you do not have to record everything. Start with goals and missed shots – that is already more than a tally sheet gives you in the end. When it gets hectic, you add actions after the match."
+        },
+        {
+          "question": "“For under-14s that is performance thinking.”",
+          "answer": "Depends on what you do with the numbers. If you use them to rank, yes. If you use them to show a child that their training is paying off, it is the opposite. That is why the focus is on development across a season and not on a leaderboard."
+        },
+        {
+          "question": "“I am not a software person.”",
+          "answer": "You do not have to be. There is no setup, no training and no manual: create the squad, start the match, tap. Anyone who wants to see it first opens the live demo – without an account, straight in the browser."
+        },
+        {
+          "question": "“Does this cost the club money?”",
+          "answer": "Not at the moment. Statix is free to use, with no credit card and no payment process in the app. So you do not need to ask anyone in order to start on Saturday."
+        }
+      ],
+      "links": "What free access covers exactly is under <free>handball statistics app for free</free>. If you want to bring several teams in the club up to the same standard, read <clubs>Statix for clubs</clubs>. And whoever wants to start on paper first takes the <template>free Excel template</template>."
+    },
+    "faq": {
+      "kicker": "Frequently asked",
+      "title": "Common questions from youth coaches",
+      "description": "From the age group to the conversation with parents.",
+      "items": [
+        {
+          "question": "From which age group are statistics worth it in youth handball?",
+          "answer": "They become useful where children can understand their own development – from about under-14s. In under-10s and under-8s it is about ball feel and enjoying the game; there it is enough if you keep track for yourself without making the numbers a topic."
+        },
+        {
+          "question": "How do I record statistics while I am coaching?",
+          "answer": "With one tap per action. Start by recording only goals and missed shots – that alone gives you the shooting percentage. Everything else you can add after the match, because actions can be edited afterwards."
+        },
+        {
+          "question": "How do I show a teenager their development?",
+          "answer": "Through the trend rather than a single match. In Statix you see shooting percentages and values across several matches, plus the player card in the card album. A conversation about a curve pointing upwards works considerably better than one about a bad match."
+        },
+        {
+          "question": "Can parents follow the matches?",
+          "answer": "Yes, through the public live ticker. You publish the match, share a link or QR code, and parents see the score and the flow of the match live in the browser – without an app and without an account."
+        },
+        {
+          "question": "Is a handball statistics app free for youth coaches?",
+          "answer": "Yes, at the moment Statix costs nothing: no payment process, no credit card, no trial with an expiry date. The live demo even runs without an account at all."
+        },
+        {
+          "question": "What do I do with the numbers in training?",
+          "answer": "Connect them with the shot map: if the percentage only drops from one zone, you know what to practise. And raise numbers positively – “from the back court you are at 58 per cent, let us sharpen the jump shots” works better than criticism alone."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Before the next match",
+      "title": "Set it up quickly before Saturday",
+      "description": "Create an account, type in the squad, done – that takes less time than preparing a training session. Or check in the live demo first whether you can operate it from the bench.",
+      "linkLabel": "What is included for free"
+    }
   }
 }

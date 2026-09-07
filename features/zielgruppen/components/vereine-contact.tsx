@@ -1,4 +1,7 @@
+'use client';
+
 import { Mail, MessagesSquare } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import ContactFormSection from '@/features/kontakt/components/contact-form-section';
 import {
@@ -26,6 +29,8 @@ import {
  * @returns A JSX element rendering the enquiry band on the court ground.
  */
 export default function VereineContact() {
+  const t = useTranslations('clubsPage.contact');
+
   return (
     <section id={VEREINE_CONTACT_ANCHOR} className='w-full scroll-mt-24'>
       <div className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-24'>
@@ -40,17 +45,14 @@ export default function VereineContact() {
 
         <div className='relative mx-auto max-w-3xl px-6 text-center sm:px-8'>
           <BoardKicker color='chalk' className='justify-center'>
-            Kein Preisschild, ein Gespräch
+            {t('kicker')}
           </BoardKicker>
 
           <h2 className='mx-auto mt-4 max-w-2xl font-display text-[1.9rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-chalk sm:text-[2.4rem]'>
-            Erzählt uns von eurem Verein
+            {t('title')}
           </h2>
           <p className='mx-auto mt-4 max-w-[58ch] text-base leading-7 text-chalk/75'>
-            Wie viele Mannschaften habt ihr, wie viele davon in der Jugend, und
-            was soll am Ende an einer Stelle stehen? Drei Sätze reichen. Ihr
-            bekommt eine Einschätzung dazu, ob der Vereinsbereich zu euch passt,
-            und ein Angebot in eurer Größe statt einer Zahl von der Stange.
+            {t('description')}
           </p>
 
           <div className='mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row'>
@@ -64,7 +66,7 @@ export default function VereineContact() {
             </a>
             <span className='inline-flex items-center gap-2 text-sm text-chalk/60'>
               <MessagesSquare className='size-4' />
-              oder direkt hier im Formular
+              {t('formHint')}
             </span>
           </div>
         </div>

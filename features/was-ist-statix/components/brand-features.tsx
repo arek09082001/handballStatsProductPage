@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { APP_FEATURES } from '@/lib/seo';
 import { FEATURES_PAGE_PATH } from '@/features/funktionen/data/features';
 import FeatureStatusBadge from '@/features/funktionen/components/feature-status-badge';
@@ -22,6 +25,8 @@ import Reveal from './reveal';
  * @returns A JSX element rendering the full Statix feature index on the court ground.
  */
 export default function BrandFeatures() {
+  const t = useTranslations('brandPage.features');
+
   return (
     <section className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-28'>
       <CourtDiagram
@@ -34,9 +39,9 @@ export default function BrandFeatures() {
       <div className='relative mx-auto w-full max-w-6xl px-6 sm:px-10'>
         <Reveal>
           <SectionHeading
-            kicker='Der volle Kader'
-            title='Was kann Statix?'
-            description='Alle Funktionen der Statix App auf einen Blick – von der Live-Erfassung bis zur KI-Analyse. Jede Zeile führt auf ihre eigene Seite.'
+            kicker={t('kicker')}
+            title={t('title')}
+            description={t('description')}
             tone='court'
           />
         </Reveal>
@@ -75,7 +80,7 @@ export default function BrandFeatures() {
           <Link
             href={FEATURES_PAGE_PATH}
             className='group mt-10 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#fb923c]'>
-            Zum Funktionsüberblick mit Screenshots
+            {t('indexLink')}
             <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
           </Link>
         </Reveal>

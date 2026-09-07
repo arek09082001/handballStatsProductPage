@@ -1,10 +1,13 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   BoardScreenshot,
   CourtDiagram,
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { CLUB_CAPABILITIES } from '../data/vereine-content';
+import type { ClubCapability } from '../data/vereine-content';
 
 /**
  * The club area, screen by screen — the band that has to make "eine Ebene über
@@ -23,6 +26,9 @@ import { CLUB_CAPABILITIES } from '../data/vereine-content';
  * @returns A JSX element rendering the club-area band on the court ground.
  */
 export default function VereineClubLevel() {
+  const t = useTranslations('clubsPage.clubLevel');
+  const capabilities = t.raw('capabilities') as ClubCapability[];
+
   return (
     <section
       id='vereinsbereich'
@@ -38,13 +44,13 @@ export default function VereineClubLevel() {
         <SectionHeading
           tone='court'
           align='left'
-          kicker='Der Vereinsbereich'
-          title='Alle Mannschaften auf einer Seite'
-          description='Die Trainer arbeiten weiter in ihrer eigenen Mannschaft. Darüber liegt eine Ebene, die es ohne Verein nicht gibt und die niemand von Hand pflegt.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <dl className='mt-12 border-b border-chalk/12'>
-          {CLUB_CAPABILITIES.map((item) => (
+          {capabilities.map((item) => (
             <div
               key={item.term}
               className='grid gap-1 border-t border-chalk/12 py-5 md:grid-cols-[minmax(0,11rem)_minmax(0,1fr)] md:gap-8 md:py-6'>
@@ -61,20 +67,20 @@ export default function VereineClubLevel() {
         <div className='mt-14 grid gap-8 lg:grid-cols-2'>
           <BoardScreenshot
             src='/verein-auswertung.png'
-            alt='Vereinsauswertung mit Kennzahlen aller Handball-Mannschaften eines Vereins'
+            alt={t('analysisAlt')}
             width={2560}
             height={2000}
-            label='Jede Saison, jede Mannschaft nebeneinander'
+            label={t('analysisLabel')}
             tone='court'
             pin='tape'
             sizes='(max-width: 1024px) 100vw, 45vw'
           />
           <BoardScreenshot
             src='/verein-spieler.png'
-            alt='Vereinsweite Spielerliste aller Mannschaften eines Handballvereins'
+            alt={t('playersAlt')}
             width={2560}
             height={2000}
-            label='Alle Spieler des Vereins, über alle Kader hinweg'
+            label={t('playersLabel')}
             tone='court'
             pin='magnet'
             sizes='(max-width: 1024px) 100vw, 45vw'

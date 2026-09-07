@@ -1,5 +1,8 @@
+'use client';
+
 import { UserPlus } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
   BoardKicker,
@@ -12,7 +15,8 @@ interface BoardCtaProps {
   kicker: string;
   title: string;
   description: string;
-  /** Label of the solid orange action; always points at the app registration. */
+  /** Label of the solid orange action; always points at the app registration.
+   * Defaults to the shared registration wording of the current language. */
   primaryLabel?: string;
   /** Quiet third step under the buttons — a page-specific internal link. */
   linkHref?: string;
@@ -23,18 +27,21 @@ interface BoardCtaProps {
  * The closing CTA band shared by the commercial pages — the same language as
  * the landing page and the brand page since launch: one solid orange action
  * into the app registration, a chalk-ghost link to the no-account live demo,
- * and a quiet internal link as a third step. Static server component (plain
- * anchors), so these pages stay zero-JS.
+ * and a quiet internal link as a third step. A client component only because
+ * the two button labels come from the active language, which this site keeps
+ * in client state rather than in the URL.
  * @returns A JSX element rendering the closing CTA on the court ground.
  */
 export default function BoardCta({
   kicker,
   title,
   description,
-  primaryLabel = 'Jetzt kostenlos registrieren',
+  primaryLabel,
   linkHref,
   linkLabel,
 }: BoardCtaProps) {
+  const t = useTranslations('common');
+
   return (
     <section className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-28'>
       <CourtDiagram
@@ -74,14 +81,14 @@ export default function BoardCta({
               rel='noopener noreferrer'
               className='group inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-primary px-7 font-display text-[15px] font-bold tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] hover:shadow-[0_18px_30px_-14px_hsl(22_90%_45%/0.8)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 sm:h-14'>
               <UserPlus className='size-4' />
-              {primaryLabel}
+              {primaryLabel ?? t('ctaRegister')}
             </a>
             <a
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
               rel='noopener noreferrer'
               className='inline-flex h-13 items-center justify-center gap-2 rounded-xl border border-chalk/30 bg-chalk/5 px-7 font-display text-[15px] font-bold tracking-tight text-chalk transition-colors duration-200 hover:border-chalk/50 hover:bg-chalk/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-chalk/40 focus-visible:ring-offset-2 focus-visible:ring-offset-court sm:h-14'>
-              Live-Demo ansehen
+              {t('ctaDemo')}
             </a>
           </div>
         </div>
