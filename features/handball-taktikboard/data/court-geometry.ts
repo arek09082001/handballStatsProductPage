@@ -101,12 +101,15 @@ const GANZFELD = {
   ].join(' '),
 } as const;
 
+/**
+ * The geometry of one court view.
+ *
+ * The label and the helper text are **not** here — they live under
+ * `boardPage.tool.courtViews` in the bundles, joined on `id`, so the switch
+ * speaks the reader's language while the paths stay one source.
+ */
 export interface CourtView {
   id: CourtViewId;
-  /** Short label for the view switch. */
-  label: string;
-  /** Longer description, used as the switch's helper text. */
-  hint: string;
   viewBox: string;
   /** width ÷ height of the viewBox – drives the board's CSS aspect ratio. */
   aspectRatio: number;
@@ -127,8 +130,6 @@ function aspectOf(viewBox: string): number {
 export const COURT_VIEWS: Record<CourtViewId, CourtView> = {
   halbfeld: {
     id: 'halbfeld',
-    label: 'Halbfeld',
-    hint: 'Tor unten, 15 Meter Feldtiefe – für Abwehr und Angriff.',
     viewBox: HALBFELD.viewBox,
     aspectRatio: aspectOf(HALBFELD.viewBox),
     boundary: HALBFELD.boundary,
@@ -139,8 +140,6 @@ export const COURT_VIEWS: Record<CourtViewId, CourtView> = {
   },
   ganzfeld: {
     id: 'ganzfeld',
-    label: 'Ganzes Feld',
-    hint: '40 × 20 Meter mit beiden Toren – für Tempogegenstoß und Rückzug.',
     viewBox: GANZFELD.viewBox,
     aspectRatio: aspectOf(GANZFELD.viewBox),
     boundary: GANZFELD.boundary,

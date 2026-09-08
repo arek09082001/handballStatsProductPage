@@ -1,7 +1,11 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { COURT_VIEWS, toViewBoxPoint, type CourtView } from '../data/court-geometry';
+import {
+  COURT_VIEWS,
+  toViewBoxPoint,
+  type CourtView,
+} from '../data/court-geometry';
 import {
   BOARD_GROUNDS,
   MAGNET_COLORS,
@@ -9,9 +13,14 @@ import {
   NOTE_FONT_FAMILY,
   arrowStroke,
 } from '../data/board-palette';
-import { EXPORT_WATERMARK, MAGNET_KIND_OPTIONS } from '../data/taktikboard-content';
+import { useTranslations } from 'next-intl';
+import { EXPORT_WATERMARK } from '../data/taktikboard-content';
+import { useBoardOptions } from '../data/use-board-options';
 import BoardObjectEditor, { type EditorTarget } from './board-object-editor';
-import { DEFAULT_NUMBER_NUDGE, measureNumberNudge } from '../lib/number-centring';
+import {
+  DEFAULT_NUMBER_NUDGE,
+  measureNumberNudge,
+} from '../lib/number-centring';
 import type {
   ArrowColor,
   ArrowHandle,
@@ -99,10 +108,6 @@ function clampTo(value: number, inset: number): number {
   return Math.min(1 - inset, Math.max(inset, value));
 }
 
-function kindLabel(kind: string): string {
-  return MAGNET_KIND_OPTIONS.find((option) => option.kind === kind)?.label ?? 'Magnet';
-}
-
 /**
  * The board itself: a to-scale court with draggable magnets, arrows and notes
  * on top of it.
@@ -143,6 +148,12 @@ export default function BoardCanvas({
   renderWidth,
   describedById,
 }: BoardCanvasProps) {
+  const t = useTranslations('boardPage.tool.canvas');
+  const { magnetKinds } = useBoardOptions();
+  const kindLabel = (kind: string) =>
+    magnetKinds.find((option) => option.kind === kind)?.label ??
+    t('magnetFallback');
+
   const view: CourtView = COURT_VIEWS[state.view];
   const ground = BOARD_GROUNDS[state.ground];
   const dragRef = useRef<DragContext | null>(null);
@@ -150,9 +161,12 @@ export default function BoardCanvas({
   const lastTapRef = useRef<{ id: string; at: number }>({ id: '', at: 0 });
   const longPressRef = useRef<number | undefined>(undefined);
   const [measuredWidth, setMeasuredWidth] = useState(0);
-  const [draft, setDraft] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(
-    null,
-  );
+  const [draft, setDraft] = useState<{
+    x1: number;
+    y1: number;
+    x2: number;
+    y2: number;
+  } | null>(null);
   const [numberNudge, setNumberNudge] = useState(DEFAULT_NUMBER_NUDGE);
 
   /**
@@ -210,18 +224,23 @@ export default function BoardCanvas({
   const magnetSize = Math.round(Math.min(48, Math.max(26, shortSide * 0.072)));
   const magnetHit = Math.max(HANDLE_HIT, magnetSize);
   const numberFontSize = Math.round(magnetSize * 0.5);
-  const noteFontSize = Math.round(Math.min(22, Math.max(14, shortSide * 0.034)));
+  const noteFontSize = Math.round(
+    Math.min(22, Math.max(14, shortSide * 0.034)),
+  );
   const boardHeight = boardWidth / view.aspectRatio;
 
   /** Normalised radius of a magnet, used to snap an arrow end onto a player. */
   const snapRadius = boardWidth > 0 ? magnetSize / 1.6 / boardWidth : 0.05;
 
-  const toNormalised = useCallback((clientX: number, clientY: number, rect: DOMRect) => {
-    return {
-      x: Math.min(1, Math.max(0, (clientX - rect.left) / rect.width)),
-      y: Math.min(1, Math.max(0, (clientY - rect.top) / rect.height)),
-    };
-  }, []);
+  const toNormalised = useCallback(
+    (clientX: number, clientY: number, rect: DOMRect) => {
+      return {
+        x: Math.min(1, Math.max(0, (clientX - rect.left) / rect.width)),
+        y: Math.min(1, Math.max(0, (clientY - rect.top) / rect.height)),
+      };
+    },
+    [],
+  );
 
   /**
    * Snaps an arrow end to a nearby magnet, so "Laufweg von der Sieben" does not
@@ -268,8 +287,14 @@ export default function BoardCanvas({
 
       const push = magnetSize / 2 + 5;
       return {
-        x: Math.min(1, Math.max(0, point.x + ((dx / length) * push) / boardWidth)),
-        y: Math.min(1, Math.max(0, point.y + ((dy / length) * push) / boardHeight)),
+        x: Math.min(
+          1,
+          Math.max(0, point.x + ((dx / length) * push) / boardWidth),
+        ),
+        y: Math.min(
+          1,
+          Math.max(0, point.y + ((dy / length) * push) / boardHeight),
+        ),
       };
     },
     [state.magnets, boardWidth, boardHeight, magnetSize],
@@ -302,7 +327,8 @@ export default function BoardCanvas({
         startClientY: event.clientY,
       };
       node.setPointerCapture(event.pointerId);
-      if (mode === 'arrow') setDraft({ x1: start.x, y1: start.y, x2: start.x, y2: start.y });
+      if (mode === 'arrow')
+        setDraft({ x1: start.x, y1: start.y, x2: start.x, y2: start.y });
     },
     [drawing, mode, onSelect, onEditorChange, boardRef, snap, toNormalised],
   );
@@ -310,7 +336,8 @@ export default function BoardCanvas({
   const handleCourtPointerMove = useCallback(
     (event: React.PointerEvent<HTMLElement>) => {
       const draw = drawRef.current;
-      if (!draw || draw.pointerId !== event.pointerId || mode !== 'arrow') return;
+      if (!draw || draw.pointerId !== event.pointerId || mode !== 'arrow')
+        return;
       const end = toNormalised(event.clientX, event.clientY, draw.rect);
       const start = pushOutOfMagnet({ x: draw.x1, y: draw.y1 }, end);
       setDraft({ x1: start.x, y1: start.y, x2: end.x, y2: end.y });
@@ -352,7 +379,9 @@ export default function BoardCanvas({
         return;
       }
 
-      const rawEnd = snap(toNormalised(event.clientX, event.clientY, draw.rect));
+      const rawEnd = snap(
+        toNormalised(event.clientX, event.clientY, draw.rect),
+      );
       const start = pushOutOfMagnet({ x: draw.x1, y: draw.y1 }, rawEnd);
       const end = pushOutOfMagnet(rawEnd, start);
       onCreateArrow(start.x, start.y, end.x, end.y);
@@ -405,7 +434,10 @@ export default function BoardCanvas({
     const drag = dragRef.current;
     if (!drag || drag.pointerId !== event.pointerId) return null;
     if (
-      Math.hypot(event.clientX - drag.startClientX, event.clientY - drag.startClientY) > TAP_SLOP
+      Math.hypot(
+        event.clientX - drag.startClientX,
+        event.clientY - drag.startClientY,
+      ) > TAP_SLOP
     ) {
       drag.moved = true;
       window.clearTimeout(longPressRef.current);
@@ -523,9 +555,10 @@ export default function BoardCanvas({
         // technology is concerned: no group role, no name, and its wrapper is
         // aria-hidden, so a screen reader hears one court and not two.
         role={isStatic ? undefined : 'group'}
-        aria-label={isStatic ? undefined : 'Taktikboard – Spielfeld mit Magneten'}
+        aria-label={isStatic ? undefined : t('boardAria')}
         onPointerDown={(event) => {
-          if (event.target === event.currentTarget) handleCourtPointerDown(event);
+          if (event.target === event.currentTarget)
+            handleCourtPointerDown(event);
         }}
         onPointerMove={handleCourtPointerMove}
         onPointerUp={handleCourtPointerUp}
@@ -551,7 +584,13 @@ export default function BoardCanvas({
           // Explicit stacking: html2canvas orders positioned siblings by z-index,
           // and without one it painted the arrows over the magnets in the export
           // while the browser painted them underneath.
-          style={{ position: 'absolute', zIndex: 0, inset: 0, width: '100%', height: '100%' }}>
+          style={{
+            position: 'absolute',
+            zIndex: 0,
+            inset: 0,
+            width: '100%',
+            height: '100%',
+          }}>
           {/* Court markings. Every colour is an explicit attribute — a serialised
               SVG has no access to the page's CSS custom properties. */}
           <path
@@ -563,7 +602,12 @@ export default function BoardCanvas({
             strokeLinejoin='round'
           />
           {view.centre ? (
-            <path d={view.centre} fill='none' stroke={ground.lineSoft} strokeWidth={1.8} />
+            <path
+              d={view.centre}
+              fill='none'
+              stroke={ground.lineSoft}
+              strokeWidth={1.8}
+            />
           ) : null}
           <path
             d={view.goalArea}
@@ -598,7 +642,12 @@ export default function BoardCanvas({
           />
 
           {state.arrows.map((arrow) => (
-            <ArrowPath key={arrow.id} arrow={arrow} view={view} groundKey={state.ground} />
+            <ArrowPath
+              key={arrow.id}
+              arrow={arrow}
+              view={view}
+              groundKey={state.ground}
+            />
           ))}
 
           {draft ? (
@@ -624,27 +673,34 @@ export default function BoardCanvas({
 
         {/* Notes sit under the magnets so a magnet is never trapped behind text. */}
         {state.labels.map((label) => {
-          const isSelected = selection?.type === 'label' && selection.id === label.id;
+          const isSelected =
+            selection?.type === 'label' && selection.id === label.id;
           // Explicit width and height, centred with negative margins. Neither a
           // transform nor a zero-size flex wrapper survives html2canvas: it takes
           // an element's box from its own declared size, so an auto-width chip
           // exported as a 44 px stub with the text hanging outside it.
           const noteWidth = Math.round(
             Math.min(
-              Math.max(HANDLE_HIT, noteFontSize * (0.48 * label.text.length + 1.6)),
+              Math.max(
+                HANDLE_HIT,
+                noteFontSize * (0.48 * label.text.length + 1.6),
+              ),
               Math.max(HANDLE_HIT * 2, (boardWidth || 520) * 0.62),
             ),
           );
           // Roomier than the text strictly needs: html2canvas sets a baseline
           // slightly lower than the browser does, and Caveat has a deep
           // descender, so a tight chip clips the "p" in the exported PNG.
-          const noteHeight = Math.max(HANDLE_HIT, Math.round(noteFontSize * 2.5));
+          const noteHeight = Math.max(
+            HANDLE_HIT,
+            Math.round(noteFontSize * 2.5),
+          );
           return (
             <button
               key={label.id}
               type='button'
               tabIndex={isStatic ? -1 : undefined}
-              aria-label={`Notiz: ${label.text}`}
+              aria-label={t('noteAria', { text: label.text })}
               aria-describedby={describedById}
               onContextMenu={(event) => {
                 event.preventDefault();
@@ -654,7 +710,10 @@ export default function BoardCanvas({
               onPointerDown={(event) => {
                 event.stopPropagation();
                 onSelect({ type: 'label', id: label.id });
-                beginDrag(event, label, { width: HANDLE_HIT, height: HANDLE_HIT });
+                beginDrag(event, label, {
+                  width: HANDLE_HIT,
+                  height: HANDLE_HIT,
+                });
                 armGestures(event, label.id);
               }}
               onPointerMove={(event) => {
@@ -719,8 +778,14 @@ export default function BoardCanvas({
         {state.magnets.map((magnet) => {
           const colors = MAGNET_COLORS[magnet.kind];
           const isBall = magnet.kind === 'ball';
-          const isSelected = selection?.type === 'magnet' && selection.id === magnet.id;
-          const name = isBall ? 'Ball' : `${kindLabel(magnet.kind)} Nummer ${magnet.number}`;
+          const isSelected =
+            selection?.type === 'magnet' && selection.id === magnet.id;
+          const name = isBall
+            ? t('ballName')
+            : t('magnetName', {
+                kind: kindLabel(magnet.kind),
+                number: magnet.number,
+              });
 
           return (
             <button
@@ -737,7 +802,10 @@ export default function BoardCanvas({
               onPointerDown={(event) => {
                 event.stopPropagation();
                 onSelect({ type: 'magnet', id: magnet.id });
-                beginDrag(event, magnet, { width: magnetSize, height: magnetSize });
+                beginDrag(event, magnet, {
+                  width: magnetSize,
+                  height: magnetSize,
+                });
                 armGestures(event, magnet.id);
               }}
               onPointerMove={(event) => {
@@ -789,7 +857,10 @@ export default function BoardCanvas({
                   borderRadius: '9999px',
                   background: isBall ? 'transparent' : colors.surface,
                   border: isBall ? 'none' : `1px solid ${colors.rim}`,
-                  boxShadow: selectionRing(isSelected, isBall ? undefined : MAGNET_SHADOW),
+                  boxShadow: selectionRing(
+                    isSelected,
+                    isBall ? undefined : MAGNET_SHADOW,
+                  ),
                   paddingTop: isBall ? 0 : numberFontSize * numberNudge,
                   color: colors.text,
                   fontSize: numberFontSize,
@@ -800,7 +871,11 @@ export default function BoardCanvas({
                   letterSpacing: 'normal',
                   lineHeight: 1,
                 }}>
-                {isBall ? <BallToken size={Math.round(magnetSize * 0.78)} /> : magnet.number}
+                {isBall ? (
+                  <BallToken size={Math.round(magnetSize * 0.78)} />
+                ) : (
+                  magnet.number
+                )}
               </span>
             </button>
           );
@@ -809,14 +884,30 @@ export default function BoardCanvas({
         {/* Arrow grab handles. Marked as chrome so the PNG shows the arrows
             alone, the way they would be drawn on a real board. */}
         {(isStatic ? [] : state.arrows).map((arrow) => {
-          const isSelected = selection?.type === 'arrow' && selection.id === arrow.id;
+          const isSelected =
+            selection?.type === 'arrow' && selection.id === arrow.id;
           const stroke = arrowStroke(arrow.color, state.ground);
-          const handles: { handle: ArrowHandle; x: number; y: number; name: string }[] = [
-            { handle: 'start', x: arrow.x1, y: arrow.y1, name: 'Anfang' },
-            { handle: 'end', x: arrow.x2, y: arrow.y2, name: 'Spitze' },
+          const handles: {
+            handle: ArrowHandle;
+            x: number;
+            y: number;
+            name: string;
+          }[] = [
+            {
+              handle: 'start',
+              x: arrow.x1,
+              y: arrow.y1,
+              name: t('handleStart'),
+            },
+            { handle: 'end', x: arrow.x2, y: arrow.y2, name: t('handleEnd') },
           ];
           if (isSelected) {
-            handles.push({ handle: 'control', x: arrow.cx, y: arrow.cy, name: 'Krümmung' });
+            handles.push({
+              handle: 'control',
+              x: arrow.cx,
+              y: arrow.cy,
+              name: t('handleControl'),
+            });
           }
 
           return handles.map(({ handle, x, y, name }) => (
@@ -824,7 +915,7 @@ export default function BoardCanvas({
               key={`${arrow.id}-${handle}`}
               type='button'
               data-board-chrome
-              aria-label={`Pfeil ${name} verschieben`}
+              aria-label={t('arrowHandleAria', { name })}
               aria-describedby={describedById}
               onContextMenu={(event) => {
                 event.preventDefault();
@@ -883,7 +974,8 @@ export default function BoardCanvas({
                   width: handle === 'control' ? 12 : 13,
                   height: handle === 'control' ? 12 : 13,
                   borderRadius: '9999px',
-                  background: handle === 'control' ? ground.chipSurface : stroke,
+                  background:
+                    handle === 'control' ? ground.chipSurface : stroke,
                   // A ring in the floor colour so a handle stays findable when it
                   // lands on a magnet or on its own arrow.
                   border: `2px solid ${isSelected ? ground.selection : ground.surface}`,
@@ -905,7 +997,9 @@ export default function BoardCanvas({
             borderRadius: 8,
             background: ground.chipSurface,
             color: ground.chipText,
-            fontSize: Math.round(Math.min(13, Math.max(10, (boardWidth || 520) * 0.024))),
+            fontSize: Math.round(
+              Math.min(13, Math.max(10, (boardWidth || 520) * 0.024)),
+            ),
             fontWeight: 600,
             // Tracked on purpose: html2canvas draws this string glyph by glyph and
             // loses the "st" kern, so a mark set solid exports as "s tatix". A

@@ -1,4 +1,7 @@
+'use client';
+
 import { Play } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -11,19 +14,20 @@ import {
   MarkerUnderline,
 } from '@/features/landing-page/components/tactic';
 
-/** Short, true promises under the hero CTAs — no claim beyond PRODUCT.md. */
-const TRUST = ['Made in Germany', 'Kostenlos starten', 'Offline in der Halle'];
-
 /**
  * Court-ground hero for the brand page — the Trainertafel world's signature
  * band. The handball court (with the 6:0 defence chalked on) sits behind the
  * copy, the H1 carries the primary brand query ("Was ist Statix?") with the
  * name swiped in the coach's marker, and the intro answers it in one paragraph
  * so search and answer engines can lift it directly. A real in-app shot is
- * pinned to the board on the right. Static server component (no client JS).
+ * pinned to the board on the right.
  * @returns A JSX element rendering the court hero with copy, CTAs and a pinned product screenshot.
  */
 export default function BrandHeader() {
+  const t = useTranslations('brandPage.hero');
+  const tCommon = useTranslations('common');
+  const trust = t.raw('trust') as string[];
+
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
       <CourtDiagram
@@ -37,25 +41,23 @@ export default function BrandHeader() {
 
       <div className='relative mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 pb-16 pt-28 sm:px-10 lg:flex-row lg:items-center lg:gap-14 lg:pb-24 lg:pt-32'>
         <div className='w-full shrink-0 text-center lg:w-[46%] lg:text-left'>
-          <BoardKicker color='chalk' className='justify-center lg:justify-start'>
-            Statix im Überblick
+          <BoardKicker
+            color='chalk'
+            className='justify-center lg:justify-start'>
+            {t('kicker')}
           </BoardKicker>
 
           <h1 className='mt-5 font-display text-[2.7rem] font-extrabold leading-[1.02] tracking-[-0.035em] text-chalk sm:text-[3.4rem] lg:text-[3.75rem]'>
-            Was ist{' '}
+            {t('titlePrefix')}{' '}
             <span className='relative inline-block text-primary'>
-              Statix
+              {t('titleBrand')}
               <MarkerUnderline color='marker' />
             </span>
-            ?
+            {t('titleSuffix')}
           </h1>
 
           <p className='mx-auto mt-6 max-w-[560px] text-base leading-7 text-chalk/75 sm:text-lg sm:leading-8 lg:mx-0'>
-            Statix ist die Handball-Statistik-App für Trainer, Vereine und
-            Teams: Spiele live per Tap erfassen – Tore, Würfe, Paraden, Strafen
-            und Wechsel – und Wurfquoten, Wurfbilder, Spielerwerte und
-            KI-Analysen automatisch auswerten. Entwickelt in Deutschland, direkt
-            im Browser, offline-fähig in der Halle.
+            {t('lede')}
           </p>
 
           <div className='relative mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start'>
@@ -65,15 +67,15 @@ export default function BrandHeader() {
               href={CLUB_CONFIG.website.demoUrl}
               target='_blank'
               rel='noopener noreferrer'>
-              Live-Demo ohne Account
+              {tCommon('ctaDemoNoAccount')}
             </HeroActionButton>
             <HeroActionButton variant='secondary' href='/funktionen'>
-              Alle Funktionen ansehen
+              {t('ctaFeatures')}
             </HeroActionButton>
           </div>
 
           <div className='mt-7 flex flex-wrap items-center justify-center gap-2 lg:justify-start'>
-            {TRUST.map((item) => (
+            {trust.map((item) => (
               <HeroTrustBadge key={item} label={item} />
             ))}
           </div>
@@ -88,10 +90,10 @@ export default function BrandHeader() {
           />
           <BoardScreenshot
             src='/recordStatsInGame.png'
-            alt='Statix Handball-App: Spielstatistiken live per Tap erfassen'
+            alt={t('screenshotAlt')}
             width={2560}
             height={1600}
-            label='Statix – Live-Erfassung im Spiel'
+            label={t('screenshotLabel')}
             tone='court'
             pin='tape'
             live

@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardCta from '@/components/custom-ui/board-cta';
 import BoardFaq from '@/components/custom-ui/board-faq';
 import CalculatorHeader from '../components/calculator-header';
@@ -6,7 +9,6 @@ import CalculatorExample from '../components/calculator-example';
 import CalculatorBenchmarks from '../components/calculator-benchmarks';
 import CalculatorLimits from '../components/calculator-limits';
 import CalculatorEmbed from '../components/calculator-embed';
-import { CALCULATOR_FAQS } from '../data/calculator-content';
 
 /**
  * Calculator page `/wurfquote-rechner`. The tool sits above the fold; the
@@ -15,6 +17,8 @@ import { CALCULATOR_FAQS } from '../data/calculator-content';
  * @returns A JSX element composing the ordered calculator-page sections.
  */
 export default function WurfquoteRechnerPage() {
+  const t = useTranslations('calculatorPage');
+
   return (
     <div className='flex w-full flex-col items-center justify-center bg-paper'>
       <CalculatorHeader />
@@ -25,17 +29,17 @@ export default function WurfquoteRechnerPage() {
       <CalculatorEmbed />
       <BoardFaq
         id='faq'
-        kicker='Nachgefragt'
-        title='Häufige Fragen zur Wurfquote'
-        description='Kurze Antworten auf die Fragen, die beim Rechnen aufkommen.'
-        items={CALCULATOR_FAQS}
+        kicker={t('faq.kicker')}
+        title={t('faq.title')}
+        description={t('faq.description')}
+        items={t.raw('faq.items') as { question: string; answer: string }[]}
       />
       <BoardCta
-        kicker='Statt Kopfrechnen'
-        title='Quoten, die sich selbst ausrechnen'
-        description='In Statix entsteht die Wurfquote beim Tippen – pro Spieler, pro Position, dazu das Wurfbild. Kostenlos registrieren und selbst erfassen, oder vorher in der Live-Demo ohne Account reinschauen.'
+        kicker={t('cta.kicker')}
+        title={t('cta.title')}
+        description={t('cta.description')}
         linkHref='/handball-statistik-app-kostenlos'
-        linkLabel='Statix kostenlos nutzen'
+        linkLabel={t('cta.linkLabel')}
       />
     </div>
   );

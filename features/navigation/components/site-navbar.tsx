@@ -16,6 +16,7 @@ import { useSiteNavbar } from '../hooks/use-site-navbar';
 
 export default function SiteNavbar() {
   const t = useTranslations('navigationSection');
+  const tCommon = useTranslations('common');
   const {
     isOpen,
     isScrolled,
@@ -104,7 +105,7 @@ export default function SiteNavbar() {
                 {/* Only from `xl`, where the brand column is wide enough for
                  * one line — at `lg` it wrapped and spilled out of the bar. */}
                 <span className='mt-1 hidden text-left text-[13px] font-medium text-slate-500 xl:block'>
-                  {CLUB_CONFIG.display.brandTagline}
+                  {t('brandTagline')}
                 </span>
               </span>
             </button>
@@ -141,7 +142,9 @@ export default function SiteNavbar() {
                     aria-current={active ? 'page' : undefined}
                     onMouseEnter={() => setHoveredIdent(item.ident)}
                     // The only external nav item is the live demo.
-                    onClick={item.external ? () => trackDemoClick('navbar') : undefined}
+                    onClick={
+                      item.external ? () => trackDemoClick('navbar') : undefined
+                    }
                     className={cn(
                       'relative inline-flex items-center whitespace-nowrap rounded-full px-2 py-2 text-sm font-medium tracking-[-0.01em] transition-colors duration-200 xl:px-3.5',
                       highlighted
@@ -201,7 +204,7 @@ export default function SiteNavbar() {
                 ? 'border-slate-200 bg-white'
                 : 'border-white/50 bg-white/72 supports-[backdrop-filter]:bg-white/56',
             )}
-            aria-label={isOpen ? 'Menü schließen' : 'Menü öffnen'}
+            aria-label={isOpen ? tCommon('closeMenu') : tCommon('openMenu')}
             aria-expanded={isOpen}>
             {isOpen ? <X className='size-5' /> : <Menu className='size-5' />}
           </button>
@@ -262,7 +265,7 @@ export default function SiteNavbar() {
                         {CLUB_CONFIG.name}
                       </span>
                       <span className='block truncate text-[13px] font-medium text-slate-500'>
-                        {CLUB_CONFIG.display.brandTagline}
+                        {t('brandTagline')}
                       </span>
                     </span>
                   </button>
@@ -301,8 +304,7 @@ export default function SiteNavbar() {
 
                       <div className='overflow-hidden rounded-2xl border border-slate-200 bg-slate-50'>
                         {group.items.map((link) => {
-                          const label =
-                            link.label ?? t(`items.${link.labelKey}`);
+                          const label = t(`items.${link.labelKey}`);
                           const active = isItemActive(link);
 
                           return (

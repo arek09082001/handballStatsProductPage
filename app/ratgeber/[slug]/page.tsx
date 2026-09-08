@@ -66,9 +66,11 @@ export default async function Page({
     notFound();
   }
 
+  // The names are German because the `BreadcrumbList` node is built from the
+  // same array; `labelKey` is what the visible trail renders instead.
   const breadcrumbs: Breadcrumb[] = [
-    { name: 'Startseite', path: '/' },
-    { name: 'Ratgeber', path: RATGEBER_BASE_PATH },
+    { name: 'Startseite', path: '/', labelKey: 'home' },
+    { name: 'Ratgeber', path: RATGEBER_BASE_PATH, labelKey: 'guide' },
     { name: article.title, path: articlePath(article.slug) },
   ];
 

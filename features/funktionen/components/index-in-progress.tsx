@@ -1,11 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import {
   CourtDiagram,
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { FEATURES, featurePath } from '../data/features';
+import { inlineLink } from '@/components/custom-ui/rich-text';
+import { featurePath } from '../data/features';
+import { useFeatures } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
 
 /**
@@ -21,7 +26,8 @@ import FeatureStatusBadge from './feature-status-badge';
  * @returns A JSX element rendering the in-progress features, or null.
  */
 export default function FeatureIndexInProgress() {
-  const upcoming = FEATURES.filter((feature) => feature.status === 'beta');
+  const t = useTranslations('featuresPage.inProgress');
+  const upcoming = useFeatures().filter((feature) => feature.status === 'beta');
   if (upcoming.length === 0) return null;
 
   return (
@@ -36,9 +42,9 @@ export default function FeatureIndexInProgress() {
       <div className='relative mx-auto w-full max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Auf der Werkbank'
-          title='Was gerade gebaut wird'
-          description='Statix entsteht aus dem, was aus der Halle zurückkommt. Was noch nicht fertig ist, steht trotzdem hier — als das, was es ist.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
           tone='court'
         />
 
@@ -56,7 +62,7 @@ export default function FeatureIndexInProgress() {
                 {feature.tagline}
               </p>
               <span className='mt-4 inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary'>
-                Was schon geht, und was noch nicht
+                {t('cardCta')}
                 <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
               </span>
             </Link>
@@ -64,14 +70,9 @@ export default function FeatureIndexInProgress() {
         </div>
 
         <p className='mt-8 max-w-[62ch] text-[15px] leading-7 text-chalk/60'>
-          Ihr wollt bei einer dieser Funktionen früh dabei sein und Rückmeldung
-          geben?{' '}
-          <Link
-            href='/kontakt'
-            className='font-semibold text-chalk underline underline-offset-4 transition-colors hover:text-primary'>
-            Schreib uns
-          </Link>{' '}
-          — die Warteliste ist eine E-Mail.
+          {t.rich('contact', {
+            contact: inlineLink('/kontakt', 'court'),
+          })}
         </p>
       </div>
     </section>

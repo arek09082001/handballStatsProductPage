@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardCta from '@/components/custom-ui/board-cta';
 import BoardFaq from '@/components/custom-ui/board-faq';
 import FreeHeader from '../components/free-header';
@@ -5,7 +8,6 @@ import FreeScope from '../components/free-scope';
 import FreeDemo from '../components/free-demo';
 import FreeWhy from '../components/free-why';
 import FreeAlternatives from '../components/free-alternatives';
-import { FREE_FAQS } from '../data/free-content';
 
 /**
  * Free-tier page `/handball-statistik-app-kostenlos`. Answers "gibt es eine
@@ -16,6 +18,8 @@ import { FREE_FAQS } from '../data/free-content';
  * @returns A JSX element composing the ordered free-tier sections.
  */
 export default function KostenlosPage() {
+  const t = useTranslations('freePage');
+
   return (
     <div className='flex w-full flex-col items-center justify-center bg-paper'>
       <FreeHeader />
@@ -25,17 +29,17 @@ export default function KostenlosPage() {
       <FreeAlternatives />
       <BoardFaq
         id='faq'
-        kicker='Nachgefragt'
-        title='Häufige Fragen zur kostenlosen Nutzung'
-        description='Was Trainer wissen wollen, bevor sie ihr erstes Spiel erfassen.'
-        items={FREE_FAQS}
+        kicker={t('faq.kicker')}
+        title={t('faq.title')}
+        description={t('faq.description')}
+        items={t.raw('faq.items') as { question: string; answer: string }[]}
       />
       <BoardCta
-        kicker='Ohne Anmeldung'
-        title='Kostenlos anfangen, heute noch'
-        description='Für dein eigenes Team reicht eine E-Mail-Adresse – keine Kreditkarte, kein Bezahlvorgang. Und wenn du erst schauen willst: Die Live-Demo läuft mit echten Spieldaten ohne jede Angabe von dir.'
+        kicker={t('cta.kicker')}
+        title={t('cta.title')}
+        description={t('cta.description')}
         linkHref='/preise'
-        linkLabel='Was Statix kostet'
+        linkLabel={t('cta.linkLabel')}
       />
     </div>
   );

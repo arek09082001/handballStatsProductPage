@@ -28,7 +28,9 @@ export function generateStaticParams() {
 /** A slug outside the catalogue is a 404, not an empty feature page. */
 export const dynamicParams = false;
 
-export async function generateMetadata({ params }: RouteParams): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: RouteParams): Promise<Metadata> {
   const { slug } = await params;
   const feature = getFeature(slug);
   if (!feature) return {};
@@ -82,7 +84,7 @@ export default async function Page({ params }: RouteParams) {
         }}
       />
 
-      <FeaturePage feature={feature} />
+      <FeaturePage slug={feature.slug} />
     </>
   );
 }

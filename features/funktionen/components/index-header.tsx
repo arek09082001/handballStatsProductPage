@@ -1,4 +1,7 @@
+'use client';
+
 import { Play } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import {
@@ -7,7 +10,8 @@ import {
   Grain,
   MarkerUnderline,
 } from '@/features/landing-page/components/tactic';
-import { FEATURES, FEATURE_GROUPS } from '../data/features';
+import { FEATURE_RECORDS } from '../data/features';
+import { useFeatureGroups } from '../data/use-features';
 
 /**
  * Court hero of the feature index.
@@ -18,6 +22,10 @@ import { FEATURES, FEATURE_GROUPS } from '../data/features';
  * @returns A JSX element rendering the index hero on the court ground.
  */
 export default function FeatureIndexHeader() {
+  const t = useTranslations('featuresPage.index');
+  const tCommon = useTranslations('common');
+  const groups = useFeatureGroups();
+
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
       {/* See the note in `feature-header.tsx`: below `sm` the court keeps its
@@ -38,26 +46,25 @@ export default function FeatureIndexHeader() {
       <Grain tone='court' />
 
       <div className='relative mx-auto w-full max-w-5xl px-6 pb-16 pt-28 sm:px-10 lg:pb-20 lg:pt-32'>
-        <BoardKicker color='chalk'>Der volle Kader</BoardKicker>
+        <BoardKicker color='chalk'>{t('kicker')}</BoardKicker>
 
         <h1 className='mt-5 max-w-3xl font-display text-[2.6rem] font-extrabold leading-[1.02] tracking-[-0.035em] text-chalk sm:text-[3.4rem]'>
-          Alle{' '}
+          {t('titleLead')}{' '}
           <span className='relative inline-block text-primary'>
-            Funktionen
+            {t('titleHighlight')}
             <MarkerUnderline color='marker' />
           </span>{' '}
-          von Statix
+          {t('titleTail')}
         </h1>
 
         <p className='mt-6 max-w-[62ch] text-base leading-7 text-chalk/75 sm:text-lg sm:leading-8'>
-          {FEATURES.length} Funktionen, jede mit eigener Seite: was sie macht, wie
-          sie sich in der Halle anfühlt, echte Aufnahmen aus der App — und was sie
-          ausdrücklich nicht kann. Eine davon wird gerade gebaut und steht als
-          solche gekennzeichnet dabei.
+          {t('lede', { count: FEATURE_RECORDS.length })}
         </p>
 
-        <nav aria-label='Funktionsgruppen' className='mt-9 flex flex-wrap gap-2.5'>
-          {FEATURE_GROUPS.map((group) => (
+        <nav
+          aria-label={t('groupNavLabel')}
+          className='mt-9 flex flex-wrap gap-2.5'>
+          {groups.map((group) => (
             <a
               key={group.id}
               href={`#${group.id}`}
@@ -74,10 +81,10 @@ export default function FeatureIndexHeader() {
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Live-Demo ohne Account
+            {tCommon('ctaDemoNoAccount')}
           </HeroActionButton>
           <HeroActionButton variant='secondary' href='/preise'>
-            Was kostet das?
+            {t('priceCta')}
           </HeroActionButton>
         </div>
       </div>

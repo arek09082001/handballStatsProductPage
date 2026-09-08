@@ -21,7 +21,11 @@ interface RevealProps {
  * @param props.className - Optional class names forwarded to the wrapper element.
  * @returns A JSX element that fades and slides its children in when scrolled into view.
  */
-export default function Reveal({ children, delay = 0, className }: RevealProps) {
+export default function Reveal({
+  children,
+  delay = 0,
+  className,
+}: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

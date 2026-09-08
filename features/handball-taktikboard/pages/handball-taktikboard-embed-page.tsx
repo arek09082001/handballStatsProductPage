@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { SITE_URL } from '@/lib/seo';
 import { TAKTIKBOARD_PAGE_PATH } from '../data/taktikboard-content';
 import TaktikboardTool from '../components/taktikboard-tool';
@@ -13,11 +16,13 @@ import TaktikboardTool from '../components/taktikboard-tool';
  * @returns A JSX element rendering the embeddable tactic board.
  */
 export default function HandballTaktikboardEmbedPage() {
+  const t = useTranslations('boardPage.tool');
+
   return (
     <div className='min-h-screen bg-paper-2 px-3 py-4'>
       <div className='mx-auto flex w-full max-w-[740px] flex-col gap-3'>
         <h1 className='font-display text-lg font-bold tracking-tight text-ink'>
-          Handball-Taktikboard
+          {t('embedTitle')}
         </h1>
 
         <TaktikboardTool variant='embed' />
@@ -28,9 +33,9 @@ export default function HandballTaktikboardEmbedPage() {
             target='_blank'
             rel='noopener'
             className='font-semibold text-primary underline underline-offset-4'>
-            Handball-Taktikboard von Statix
+            {t('embedAttributionLink')}
           </a>{' '}
-          – der Handball-Statistik-App für Trainer
+          {t('embedAttributionSuffix')}
         </p>
       </div>
     </div>

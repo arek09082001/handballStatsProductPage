@@ -1,13 +1,8 @@
 export interface NavigationLink {
   ident: number;
   href: string;
-  /** Key under `navigationSection.items`. Omit when `label` is set. */
-  labelKey?: string;
-  /**
-   * Literal label for entries whose copy lives in a feature data module
-   * instead of `messages/*.json`. Wins over `labelKey` when both are set.
-   */
-  label?: string;
+  /** Key under `navigationSection.items`. */
+  labelKey: string;
   /** External links open in a new tab and skip active-route matching. */
   external?: boolean;
   /**

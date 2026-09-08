@@ -1,9 +1,9 @@
 'use client';
 
 import { Check, Copy, Download, Link2, Trash2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-import { COURT_VIEW_LIST } from '../data/court-geometry';
-import { FORMATION_PRESETS, findFormation } from '../data/formations';
+import { useBoardOptions } from '../data/use-board-options';
 import type { CourtViewId } from '../interfaces';
 
 interface BoardSettingsProps {
@@ -44,37 +44,51 @@ export default function BoardSettings({
   onClear,
   className,
 }: BoardSettingsProps) {
-  const labelClass = 'block text-[13px] font-semibold uppercase tracking-wide text-ink/55';
+  const t = useTranslations('boardPage.tool.settings');
+  const { courtViews, formations } = useBoardOptions();
+  const activeFormation = formations.find(
+    (preset) => preset.id === formationId,
+  );
+
+  const labelClass =
+    'block text-[13px] font-semibold uppercase tracking-wide text-ink/55';
   const fieldClass =
     'h-11 w-full rounded-xl border border-ink/15 bg-paper px-3 text-sm text-ink outline-none transition-colors hover:border-ink/30 focus:border-primary focus:ring-2 focus:ring-primary/25';
   const chipClass =
     'inline-flex h-11 min-w-11 items-center justify-center gap-2 rounded-xl border border-ink/15 bg-paper px-4 text-sm font-semibold text-ink transition-colors hover:border-ink/30 hover:bg-paper-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
-  const chipActive = 'border-primary bg-primary/12 text-primary hover:bg-primary/12';
+  const chipActive =
+    'border-primary bg-primary/12 text-primary hover:bg-primary/12';
 
   return (
-    <div className={cn('rounded-2xl border border-ink/10 bg-paper p-4 sm:p-5', className)}>
+    <div
+      className={cn(
+        'rounded-2xl border border-ink/10 bg-paper p-4 sm:p-5',
+        className,
+      )}>
       <div className='flex flex-wrap items-end gap-x-5 gap-y-4'>
         <div className='min-w-60 flex-1 sm:max-w-xs'>
           <label className={labelClass} htmlFor='taktikboard-aufstellung'>
-            Fertige Aufstellung
+            {t('formationLabel')}
           </label>
           <select
             id='taktikboard-aufstellung'
             value={formationId}
             onChange={(event) => onFormationChange(event.target.value)}
             className={cn(fieldClass, 'mt-1.5 cursor-pointer font-semibold')}>
-            {formationId === '' ? <option value=''>Geteiltes Board</option> : null}
+            {formationId === '' ? (
+              <option value=''>{t('sharedBoard')}</option>
+            ) : null}
             {/* Grouped by court, so it is obvious which setup switches the
                 view — a Tempogegenstoß cannot be shown on a half field. */}
-            {COURT_VIEW_LIST.map((courtView) => (
+            {courtViews.map((courtView) => (
               <optgroup key={courtView.id} label={courtView.label}>
-                {FORMATION_PRESETS.filter((preset) => preset.view === courtView.id).map(
-                  (preset) => (
+                {formations
+                  .filter((preset) => preset.view === courtView.id)
+                  .map((preset) => (
                     <option key={preset.id} value={preset.id}>
                       {preset.label}
                     </option>
-                  ),
-                )}
+                  ))}
               </optgroup>
             ))}
           </select>
@@ -82,13 +96,13 @@ export default function BoardSettings({
 
         <div>
           <span className={labelClass} id='taktikboard-feld-legende'>
-            Feld
+            {t('courtLabel')}
           </span>
           <div
             className='mt-1.5 flex gap-2'
             role='group'
             aria-labelledby='taktikboard-feld-legende'>
-            {COURT_VIEW_LIST.map((courtView) => (
+            {courtViews.map((courtView) => (
               <button
                 key={courtView.id}
                 type='button'
@@ -112,7 +126,7 @@ export default function BoardSettings({
               'border-primary bg-primary text-white hover:border-primary hover:bg-primary hover:brightness-95 disabled:cursor-not-allowed disabled:opacity-55',
             )}>
             <Download className='size-4' aria-hidden='true' />
-            {isExporting ? 'Wird erzeugt …' : 'PNG herunterladen'}
+            {isExporting ? t('exportBusy') : t('export')}
           </button>
           <button type='button' onClick={onCopyLink} className={chipClass}>
             {copied ? (
@@ -120,23 +134,22 @@ export default function BoardSettings({
             ) : (
               <Link2 className='size-4' aria-hidden='true' />
             )}
-            {copied ? 'Link kopiert' : 'Link kopieren'}
+            {copied ? t('linkCopied') : t('copyLink')}
           </button>
           <button type='button' onClick={onClear} className={chipClass}>
             <Trash2 className='size-4' aria-hidden='true' />
-            Feld leeren
+            {t('clear')}
           </button>
         </div>
       </div>
 
       <p className='mt-3 max-w-[80ch] text-[13px] leading-6 text-ink/60'>
-        {findFormation(formationId)?.hint ??
-          'Dieses Board kommt aus einem geteilten Link. Wähl eine Aufstellung, wenn du neu anfangen willst.'}
+        {activeFormation?.hint ?? t('sharedHint')}
       </p>
 
       <div className='mt-4 border-t border-ink/10 pt-4'>
         <label className={labelClass} htmlFor='taktikboard-link'>
-          Teilen-Link
+          {t('shareLinkLabel')}
         </label>
         <div className='mt-1.5 flex gap-2'>
           <input
@@ -150,14 +163,13 @@ export default function BoardSettings({
           <button
             type='button'
             onClick={onCopyLink}
-            aria-label='Teilen-Link in die Zwischenablage kopieren'
+            aria-label={t('copyAria')}
             className={cn(chipClass, 'w-11 shrink-0 px-0')}>
             <Copy className='size-4' aria-hidden='true' />
           </button>
         </div>
         <p className='mt-2 max-w-[80ch] text-[13px] leading-6 text-ink/60'>
-          Im Link steckt das komplette Board. Nichts davon wird gespeichert – der
-          Teil hinter dem Rautezeichen verlässt deinen Browser nie.
+          {t('shareNote')}
         </p>
       </div>
     </div>

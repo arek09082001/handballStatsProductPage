@@ -1,6 +1,10 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardCta from '@/components/custom-ui/board-cta';
 import BoardFaq from '@/components/custom-ui/board-faq';
-import { FEATURES_PAGE_PATH, type Feature } from '../data/features';
+import { FEATURES_PAGE_PATH } from '../data/features';
+import { useFeature } from '../data/use-features';
 import FeatureHeader from '../components/feature-header';
 import FeatureOverview from '../components/feature-overview';
 import FeatureShots from '../components/feature-shots';
@@ -24,12 +28,21 @@ import TaggingBenchMock from '../components/tagging-bench-mock';
  * (steps), where does it stop (limits), the two questions I still have (FAQ),
  * what else is there (related), fine (CTA).
  *
- * Everything is a server component except the FAQ accordion, so a feature page
- * ships essentially no JavaScript and stays fully crawlable — the same rule the
- * Ratgeber pages follow.
+ * The page takes the slug rather than the feature: the catalogue's copy comes
+ * from the bundle of the reader's language, which lives in client state, so the
+ * text has to be looked up here and not handed down from the route. The German
+ * catalogue still reaches the route file, which is what metadata and the
+ * `FAQPage` node are built from.
  * @returns A JSX element composing the ordered sections of one feature page.
  */
-export default function FeaturePage({ feature }: { feature: Feature }) {
+export default function FeaturePage({ slug }: { slug: string }) {
+  const t = useTranslations('featuresPage.detail');
+  const feature = useFeature(slug);
+
+  // Unreachable through the router — `dynamicParams` is off and every slug in
+  // `generateStaticParams` has an entry in every bundle.
+  if (!feature) return null;
+
   // Three features carry exactly one screenshot: the hero pins it and the shot
   // band renders nothing. Without a court in the middle the page would run five
   // paper bands in a row, so the steps take the court there instead.
@@ -46,17 +59,17 @@ export default function FeaturePage({ feature }: { feature: Feature }) {
       <FeatureLimits feature={feature} />
       <BoardFaq
         id='faq'
-        kicker='Kurz gefragt'
-        title={`Fragen zu ${feature.short ?? feature.name}`}
+        kicker={t('faqKicker')}
+        title={t('faqTitle', { feature: feature.short || feature.name })}
         items={feature.faq}
       />
       <FeatureRelated feature={feature} />
       <BoardCta
-        kicker='Nächster Schritt'
-        title='Probier es an einem echten Spiel aus'
-        description='Die Live-Demo ist ein voll ausgestattetes Statix mit echten Spieldaten — ohne Account, direkt im Browser. Oder du legst dein Team an und erfasst dein erstes Spiel.'
+        kicker={t('ctaKicker')}
+        title={t('ctaTitle')}
+        description={t('ctaDescription')}
         linkHref={FEATURES_PAGE_PATH}
-        linkLabel='Alle Funktionen im Überblick'
+        linkLabel={t('ctaLinkLabel')}
       />
     </div>
   );

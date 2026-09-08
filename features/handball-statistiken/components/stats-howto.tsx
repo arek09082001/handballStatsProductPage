@@ -1,9 +1,12 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   Grain,
   PlayerMagnet,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { STAT_STEPS } from '../data/stats-content';
+import type { StatStep } from '../data/stats-content';
 
 /**
  * The five steps from "ich zähle nichts" to a statistic that changes a
@@ -12,6 +15,9 @@ import { STAT_STEPS } from '../data/stats-content';
  * @returns A JSX element rendering the numbered how-to band on paper.
  */
 export default function StatsHowTo() {
+  const t = useTranslations('statsPage.howTo');
+  const steps = t.raw('steps') as StatStep[];
+
   return (
     <section
       id='anleitung'
@@ -20,13 +26,13 @@ export default function StatsHowTo() {
       <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='In fünf Schritten'
-          title='So führst du eine Handball-Statistik, die etwas ändert'
-          description='Nicht mehr Zahlen sind das Ziel, sondern eine Entscheidung pro Spiel, die du ohne die Zahlen nicht getroffen hättest.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <ol className='mt-12 flex flex-col'>
-          {STAT_STEPS.map((step, index) => (
+          {steps.map((step, index) => (
             <li
               key={step.title}
               className='flex items-start gap-4 border-t border-ink/10 py-6'>

@@ -1,6 +1,12 @@
+'use client';
+
 import { ArrowUpRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import { BRAND_HIGHLIGHTS } from '../data/brand-content';
+import {
+  BRAND_HIGHLIGHT_MEDIA,
+  type BrandHighlightCopy,
+} from '../data/brand-content';
 import {
   BoardScreenshot,
   Grain,
@@ -15,22 +21,26 @@ import Reveal from './reveal';
  * @returns A JSX element rendering the alternating screenshot/copy highlight rows and a demo CTA.
  */
 export default function BrandHighlights() {
+  const t = useTranslations('brandPage.highlights');
+  const items = t.raw('items') as BrandHighlightCopy[];
+
   return (
     <section className='relative w-full overflow-hidden bg-paper-2 py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <Reveal>
           <SectionHeading
-            kicker='Show, don’t tell'
-            title='So sieht Statix in der Halle aus'
-            description='Vom ersten Tap an der Bank bis zur fertigen Analyse – die vier Schritte, die Statix ausmachen.'
+            kicker={t('kicker')}
+            title={t('title')}
+            description={t('description')}
             tone='paper'
           />
         </Reveal>
 
         <div className='mt-16 flex flex-col gap-16 md:mt-20 md:gap-24'>
-          {BRAND_HIGHLIGHTS.map((item, index) => {
+          {items.map((item, index) => {
             const reversed = index % 2 === 1;
+            const media = BRAND_HIGHLIGHT_MEDIA[index];
 
             return (
               <Reveal
@@ -42,7 +52,10 @@ export default function BrandHighlights() {
                       {String(index + 1).padStart(2, '0')}
                     </span>
                     <span className='inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[13px] font-semibold text-primary'>
-                      <span aria-hidden className='size-1.5 rounded-[3px] bg-primary' />
+                      <span
+                        aria-hidden
+                        className='size-1.5 rounded-[3px] bg-primary'
+                      />
                       {item.badge}
                     </span>
                   </div>
@@ -56,10 +69,10 @@ export default function BrandHighlights() {
 
                 <div className={reversed ? 'lg:order-1' : ''}>
                   <BoardScreenshot
-                    src={item.src}
+                    src={media.src}
                     alt={item.title}
-                    width={item.width}
-                    height={item.height}
+                    width={media.width}
+                    height={media.height}
                     label={item.badge}
                     tone='paper'
                     pin={reversed ? 'magnet' : 'tape'}
@@ -76,7 +89,7 @@ export default function BrandHighlights() {
             target='_blank'
             rel='noopener noreferrer'
             className='inline-flex items-center gap-2 rounded-xl border border-ink/15 bg-paper px-6 py-3.5 font-display text-sm font-bold text-ink transition-colors hover:border-primary hover:text-primary'>
-            Statix live in der Demo ausprobieren
+            {t('demoCta')}
             <ArrowUpRight className='size-4' />
           </a>
         </Reveal>

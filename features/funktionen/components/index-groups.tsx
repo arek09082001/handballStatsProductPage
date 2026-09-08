@@ -1,17 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import {
   BoardCard,
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
 import { cn } from '@/lib/utils';
-import {
-  FEATURE_GROUPS,
-  featureLabel,
-  featurePath,
-  featuresOfGroup,
-} from '../data/features';
+import { featureLabel, featurePath } from '../data/features';
+import { useFeatureGroups, useFeatures } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
 
 /**
@@ -27,10 +26,16 @@ import FeatureStatusBadge from './feature-status-badge';
  * @returns A JSX element rendering every feature, grouped, on the paper grounds.
  */
 export default function FeatureIndexGroups() {
+  const t = useTranslations('featuresPage.index');
+  const groups = useFeatureGroups();
+  const features = useFeatures();
+
   return (
     <>
-      {FEATURE_GROUPS.map((group, index) => {
-        const features = featuresOfGroup(group.id);
+      {groups.map((group, index) => {
+        const inGroup = features.filter(
+          (feature) => feature.group === group.id,
+        );
         const onPanel = index % 2 === 1;
 
         return (
@@ -46,13 +51,16 @@ export default function FeatureIndexGroups() {
             <div className='relative mx-auto w-full max-w-7xl px-6 py-2 sm:px-10'>
               <SectionHeading
                 align='left'
-                kicker={`${index + 1} von ${FEATURE_GROUPS.length}`}
+                kicker={t('groupCounter', {
+                  index: index + 1,
+                  total: groups.length,
+                })}
                 title={group.name}
                 description={group.intro}
               />
 
               <div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-                {features.map((feature) => (
+                {inGroup.map((feature) => (
                   <BoardCard
                     key={feature.slug}
                     tone='paper'
@@ -73,7 +81,7 @@ export default function FeatureIndexGroups() {
                         {feature.summary}
                       </p>
                       <span className='mt-auto inline-flex items-center gap-1.5 pt-2 font-display text-[15px] font-bold tracking-tight text-primary'>
-                        Zur Funktion
+                        {t('cardCta')}
                         <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
                       </span>
                     </Link>

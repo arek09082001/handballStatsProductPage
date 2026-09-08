@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { Check } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
@@ -9,12 +10,14 @@ import {
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import {
-  BILLING_OPTIONS,
-  LAUNCH_DATE_LABEL,
-  TIERS,
-  type BillingPeriod,
-} from '../data/pricing-content';
+import type { BillingPeriod, Tier } from '../data/pricing-content';
+import { usePricingLabels } from '../data/use-pricing-labels';
+
+interface BillingOption {
+  id: BillingPeriod;
+  label: string;
+  badge?: string;
+}
 
 /**
  * The billing switch. A real radiogroup rather than two buttons that merely look
@@ -22,26 +25,30 @@ import {
  * the group labelled so a screen reader announces what is being switched.
  */
 function BillingSwitch({
+  options,
+  ariaLabel,
   value,
   onChange,
 }: {
+  options: readonly BillingOption[];
+  ariaLabel: string;
   value: BillingPeriod;
   onChange: (next: BillingPeriod) => void;
 }) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
 
   const move = (index: number, delta: number) => {
-    const next = (index + delta + BILLING_OPTIONS.length) % BILLING_OPTIONS.length;
-    onChange(BILLING_OPTIONS[next].id);
+    const next = (index + delta + options.length) % options.length;
+    onChange(options[next].id);
     refs.current[next]?.focus();
   };
 
   return (
     <div
       role='radiogroup'
-      aria-label='Abrechnungszeitraum'
+      aria-label={ariaLabel}
       className='inline-flex items-center gap-1 rounded-full border border-chalk/15 bg-chalk/[0.06] p-1'>
-      {BILLING_OPTIONS.map((option, index) => {
+      {options.map((option, index) => {
         const active = option.id === value;
         return (
           <button
@@ -75,7 +82,9 @@ function BillingSwitch({
               <span
                 className={cn(
                   'rounded-full px-2 py-0.5 text-[13px] font-semibold tabular-nums',
-                  active ? 'bg-white/20 text-white' : 'bg-success/20 text-success',
+                  active
+                    ? 'bg-white/20 text-white'
+                    : 'bg-success/20 text-success',
                 )}>
                 {option.badge}
               </span>
@@ -96,13 +105,22 @@ function BillingSwitch({
  * tape rather than by a bigger box, so the figures stay comparable across the
  * hairlines.
  *
- * Prices are pre-formatted strings in `pricing-content.ts`, so the server
- * render and the first client render are byte-identical and the switch cannot
- * cause a hydration mismatch.
+ * Prices are pre-formatted strings in the message bundles — per language, so
+ * "9,90 €" and "€9.90" are each written out rather than computed — which keeps
+ * the server render and the first client render byte-identical and stops the
+ * switch from causing a hydration mismatch.
  * @returns A JSX element rendering the tier board on the court ground.
  */
 export default function PricingTiers() {
+  const t = useTranslations('pricingPage.tiers');
+  const labels = usePricingLabels();
   const [period, setPeriod] = useState<BillingPeriod>('jahr');
+
+  const tiers = t.raw('items') as Tier[];
+  const billingOptions: readonly BillingOption[] = [
+    { id: 'monat', label: t('billingMonthly') },
+    { id: 'jahr', label: t('billingYearly'), badge: t('billingYearlyBadge') },
+  ];
 
   return (
     <section
@@ -118,20 +136,23 @@ export default function PricingTiers() {
       <div className='relative mx-auto max-w-6xl px-6 sm:px-10'>
         <SectionHeading
           tone='court'
-          kicker='Die Preistafel'
-          title={`Drei Pläne ab dem ${LAUNCH_DATE_LABEL}`}
-          description='Bezahlt wird, was echtes Geld kostet: Rechenzeit, Speicher und Versand. Alles, was eine Gewohnheit trägt, bleibt in jedem Plan drin.'
+          kicker={t('kicker')}
+          title={t('title', labels)}
+          description={t('description')}
         />
 
         <div className='mt-10 flex flex-col items-center gap-3'>
-          <BillingSwitch value={period} onChange={setPeriod} />
-          <p className='text-[13px] text-chalk/60'>
-            Ein Jahr ist bei uns eine Saison: 1. Juli bis 30. Juni.
-          </p>
+          <BillingSwitch
+            options={billingOptions}
+            ariaLabel={t('billingAriaLabel')}
+            value={period}
+            onChange={setPeriod}
+          />
+          <p className='text-[13px] text-chalk/60'>{t('seasonNote')}</p>
         </div>
 
         <div className='mt-12 overflow-hidden rounded-2xl border border-chalk/12 bg-court-2 board-shadow-court lg:grid lg:grid-cols-3 lg:grid-rows-[auto_auto_auto_auto_auto_auto_1fr]'>
-          {TIERS.map((tier) => {
+          {tiers.map((tier) => {
             const price = tier.price[period];
             const featured = tier.recommended === true;
 
@@ -157,7 +178,7 @@ export default function PricingTiers() {
                       className='absolute inset-x-0 top-0 h-[3px] bg-primary'
                     />
                     <span className='absolute right-5 top-0 rounded-b-lg bg-primary px-3.5 pb-2 pt-2 font-hand text-xl font-semibold leading-none text-white'>
-                      Empfohlen
+                      {t('recommendedLabel')}
                     </span>
                   </>
                 ) : null}
@@ -219,21 +240,17 @@ export default function PricingTiers() {
         </div>
 
         <div className='mt-8 flex flex-col gap-2 text-[13px] leading-6 text-chalk/60'>
+          <p>{t('vatNote')}</p>
           <p>
-            Alle Preise sind Endpreise. Als Kleinunternehmer nach § 19 UStG weise
-            ich keine Umsatzsteuer aus.
-          </p>
-          <p>
-            Die Preise gelten ab dem {LAUNCH_DATE_LABEL}. Wer im Januar
-            einsteigt, zahlt nur die Rumpfsaison bis zum 30. Juni:{' '}
+            {t('prorataLead', labels)}{' '}
             <span className='font-semibold text-chalk/80'>
-              39 € statt 79 €
+              {t('prorataTrainer')}
             </span>{' '}
-            bei Trainer,{' '}
+            {t('prorataTrainerSuffix')}{' '}
             <span className='font-semibold text-chalk/80'>
-              79 € statt 159 €
+              {t('prorataPro')}
             </span>{' '}
-            bei Pro.
+            {t('prorataProSuffix')}
           </p>
         </div>
       </div>

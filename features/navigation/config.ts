@@ -1,8 +1,5 @@
 import { CLUB_CONFIG } from '@/lib/club-config';
-import {
-  TAKTIKBOARD_NAV_LABEL,
-  TAKTIKBOARD_PAGE_PATH,
-} from '@/features/handball-taktikboard/data/taktikboard-content';
+import { TAKTIKBOARD_PAGE_PATH } from '@/features/handball-taktikboard/data/taktikboard-content';
 import { STATS_PAGE_PATH } from '@/features/handball-statistiken/data/stats-content';
 import {
   FEATURES_PAGE_PATH,
@@ -34,15 +31,12 @@ const productGroup: NavigationGroup = {
     // detail — a visitor looking for "kann das Trainingsbeteiligung" left the
     // site at that anchor.
     { ident: 1, href: FEATURES_PAGE_PATH, labelKey: 'features' },
-    // Literal labels like the taktikboard and statistics entries: the copy
-    // lives in the feature catalogue, and `messages/*.json` — already 155 KB on
-    // every page — should not grow a second copy of two feature names.
     {
       ident: 25,
       href: featurePath('termine-und-teilnahme'),
-      label: 'Termine & Teilnahme',
+      labelKey: 'schedule',
     },
-    { ident: 26, href: featurePath('video-tagging'), label: 'Video-Tagging' },
+    { ident: 26, href: featurePath('video-tagging'), labelKey: 'videoTagging' },
     { ident: 10, href: '/preise', labelKey: 'pricing' },
     {
       ident: 18,
@@ -75,10 +69,7 @@ const toolsGroup: NavigationGroup = {
   labelKey: 'tools',
   items: [
     { ident: 16, href: '/wurfquote-rechner', labelKey: 'shotQuotaCalculator' },
-    // Not a translation key on purpose: the tool's own copy lives in its data
-    // module so `messages/*.json` — already 155 KB on every page — does not
-    // grow for a name that reads the same in German and English.
-    { ident: 17, href: TAKTIKBOARD_PAGE_PATH, label: TAKTIKBOARD_NAV_LABEL },
+    { ident: 17, href: TAKTIKBOARD_PAGE_PATH, labelKey: 'tacticsBoard' },
     {
       ident: 19,
       href: '/handball-statistik-excel-vorlage',
@@ -91,13 +82,10 @@ const resourcesGroup: NavigationGroup = {
   labelKey: 'resources',
   items: [
     { ident: 11, href: '/ratgeber', labelKey: 'ratgeber' },
-    // Literal label like the taktikboard entry: the page's copy lives in its
-    // own data module, and "Handball-Statistiken" reads the same in both
-    // locales — no reason to grow `messages/*.json` for it.
     {
       ident: 24,
       href: STATS_PAGE_PATH,
-      label: 'Handball-Statistiken',
+      labelKey: 'handballStats',
     },
     { ident: 12, href: '/was-ist-statix', labelKey: 'aboutStatix' },
     { ident: 20, href: '/erfahrungen', labelKey: 'experiences' },

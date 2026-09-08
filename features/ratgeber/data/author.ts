@@ -1,4 +1,5 @@
 import { CLUB_CONFIG } from '@/lib/club-config';
+import { DE_MESSAGES } from '@/lib/messages';
 
 /**
  * The person behind the Ratgeber articles. Single source for the visible byline
@@ -8,7 +9,10 @@ import { CLUB_CONFIG } from '@/lib/club-config';
  * `bio` and `role` describe the author's real handball background, supplied by
  * him: goalkeeper for over ten years, also coaching, at Kreis-/Bezirksliga
  * level. Keep any edit to facts he has confirmed — an invented CV here is
- * exactly the kind of thing a manual action punishes.
+ * exactly the kind of thing a manual action punishes. Both come from the
+ * `author` namespace of the bundles: the byline is visible on every article
+ * and every other page that names him, so it speaks the reader's language,
+ * while this German read is what the `Person` node carries.
  *
  * `photoPath` may be null; the author box then falls back to an initials
  * monogram rather than showing a broken image or a stand-in that is not a
@@ -26,8 +30,8 @@ export interface ArticleAuthor {
 
 export const ARTICLE_AUTHOR: ArticleAuthor = {
   name: CLUB_CONFIG.legal.responsiblePerson,
-  role: 'Torwart, Trainer und Gründer von Statix',
-  bio: 'Arkadiusz Weiss steht seit über zehn Jahren im Handballtor und trainiert selbst eine Mannschaft in der Kreis- und Bezirksliga – genau der Alltag, für den diese Ratgeber geschrieben sind. Statix ist aus diesem Alltag entstanden: aus dem Zettel am Spielfeldrand, aus dem nach dem Abpfiff nie eine brauchbare Auswertung wurde.',
+  role: DE_MESSAGES.author.role,
+  bio: DE_MESSAGES.author.bio,
   photoPath: '/arkadiusz-weiss.jpg',
   profilePath: '/was-ist-statix',
 };

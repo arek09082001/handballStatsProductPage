@@ -1,5 +1,13 @@
+'use client';
+
 import Link from 'next/link';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+import { useTranslations } from 'next-intl';
+import { inlineLink } from '@/components/custom-ui/rich-text';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 
 /**
  * Answers the club-budget query head-on ("Was kostet Statix für einen
@@ -14,78 +22,55 @@ import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/compon
  * @returns A JSX element rendering the club-cost band on the paper ground.
  */
 export default function PricingClub() {
+  const t = useTranslations('pricingPage.club');
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-5xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Für die Vereinskasse'
-          title='Was kostet Statix für einen Verein?'
-          description='Die Frage, die im Vorstand gestellt wird, bevor irgendjemand die App öffnet.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-10 grid gap-6 md:grid-cols-2'>
           <BoardCard pin='magnet' className='p-6 sm:p-7'>
             <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
-              Ein Trainer, mehrere Mannschaften
+              {t('coachTitle')}
             </h3>
             <p className='mt-3 text-[15px] leading-7 text-ink/75'>
-              Dafür braucht es keinen Vereinsvertrag. Ein Trainer-Konto trägt
-              drei Mannschaften – A-Jugend, Damen, Herren, wie es bei euch
-              zugeschnitten ist – mit je zwei Co-Trainern, für 79 € je Saison.
-              Das ist weniger als eine Vereinslizenz der üblichen
-              Organisations-Apps und bringt Statistik, Wurfbilder und KI mit.
+              {t('coachParagraph1')}
             </p>
             <p className='mt-3 text-[15px] leading-7 text-ink/75'>
-              Refinanzieren lässt sich das im Verein oft komplett: Ab der
-              Trainer-Stufe darf im öffentlichen Live-Ticker ein Sponsor stehen,
-              und ein Bandenpartner trägt den Betrag in aller Regel allein.
+              {t('coachParagraph2')}
             </p>
           </BoardCard>
 
           <BoardCard pin='magnet' pinColor='opponent' className='p-6 sm:p-7'>
             <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
-              Der ganze Verein: auf Anfrage
+              {t('clubTitle')}
             </h3>
             <p className='mt-3 text-[15px] leading-7 text-ink/75'>
-              Wer alle Mannschaften unter ein Dach holen will – eine
-              Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über
-              die Jugenden hinweg –, bekommt den Vereinsbereich. Als
-              Anhaltspunkt für den Haushalt: rund 390 € je Saison für fünf
-              Mannschaften, nach Größe gestaffelt.
+              {t('clubParagraph1')}
             </p>
             <p className='mt-3 text-[15px] leading-7 text-ink/75'>
-              Einen Listenpreis gibt es bewusst nicht. Was ein Verein mit zwölf
-              Jugendmannschaften braucht, ist etwas anderes als bei zweien –
-              schreibt kurz, wie viele Mannschaften ihr habt, dann kommt ein
-              passendes Angebot zurück.
+              {t('clubParagraph2')}
             </p>
             <Link
               href='/fuer-vereine#vereinsanfrage'
               className='mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-              Konditionen für Vereine anfragen
+              {t('clubLink')}
             </Link>
           </BoardCard>
         </div>
 
         <p className='mt-8 max-w-[68ch] text-base leading-7 text-ink/70'>
-          Was ein Verein davon hat, wenn alle Mannschaften nach demselben Schema
-          erfassen – ein Standard über alle Teams, Kader und
-          Trainingsbeteiligung an einem Ort, Entwicklung über alle
-          Jugendmannschaften, Datenschutz sauber geregelt – steht auf der Seite{' '}
-          <Link
-            href='/fuer-vereine'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Handball-Statistik-App für Vereine
-          </Link>
-          . Für Trainerteams im Jugendbereich lohnt eher der Blick auf{' '}
-          <Link
-            href='/fuer-jugendtrainer'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Statix für Jugendtrainer
-          </Link>
-          .
+          {t.rich('closing', {
+            club: inlineLink('/fuer-vereine'),
+            youth: inlineLink('/fuer-jugendtrainer'),
+          })}
         </p>
       </div>
     </section>

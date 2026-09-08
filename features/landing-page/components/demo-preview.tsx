@@ -1,4 +1,7 @@
+'use client';
+
 import { Lock } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import BoardScreenshot from './tactic/board-screenshot';
 
 interface DemoPreviewProps {
@@ -12,11 +15,13 @@ interface DemoPreviewProps {
  * obvious before the click; the surrounding CTA links to the demo itself.
  */
 export default function DemoPreview({ url, liveLabel }: DemoPreviewProps) {
+  const t = useTranslations('productPage.hero');
+
   return (
     <div className='mx-auto w-full max-w-[520px]'>
       <BoardScreenshot
         src='/statsTableInGame.png'
-        alt='Statix Live-Demo – Spielstatistiken und Auswertungen im Browser'
+        alt={t('demoAlt')}
         width={2560}
         height={2000}
         tone='court'

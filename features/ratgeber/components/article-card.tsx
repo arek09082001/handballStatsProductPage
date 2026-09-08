@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ArrowRight, Clock } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { articlePath } from '../data/articles';
 import ArchetypeBadge from './archetype-badge';
@@ -21,6 +24,7 @@ export default function ArticleCard({
   article: Article;
   showCategory?: boolean;
 }) {
+  const t = useTranslations('guidePage.card');
   const href = articlePath(article.slug);
 
   return (
@@ -37,7 +41,9 @@ export default function ArticleCard({
 
       {showCategory || article.archetype ? (
         <div className='flex flex-wrap items-center gap-x-3 gap-y-2'>
-          {article.archetype ? <ArchetypeBadge archetype={article.archetype} /> : null}
+          {article.archetype ? (
+            <ArchetypeBadge archetype={article.archetype} />
+          ) : null}
           {showCategory ? (
             <span className='font-hand text-lg font-semibold leading-none text-primary'>
               {article.category}
@@ -58,15 +64,17 @@ export default function ArticleCard({
         </Link>
       </h3>
 
-      <p className='mt-2.5 flex-1 text-sm leading-6 text-ink/70'>{article.excerpt}</p>
+      <p className='mt-2.5 flex-1 text-sm leading-6 text-ink/70'>
+        {article.excerpt}
+      </p>
 
       <div className='mt-5 flex items-center justify-between border-t border-ink/10 pt-3.5 text-[13px] text-ink/55'>
         <span className='inline-flex items-center gap-1.5'>
           <Clock className='size-3.5' />
-          {article.readingTimeMinutes} Min.
+          {t('readingTime', { minutes: article.readingTimeMinutes })}
         </span>
         <span className='inline-flex items-center gap-1 font-display text-[13px] font-bold text-primary transition-transform duration-300 group-hover:translate-x-0.5'>
-          Lesen
+          {t('readCta')}
           <ArrowRight className='size-3.5' />
         </span>
       </div>

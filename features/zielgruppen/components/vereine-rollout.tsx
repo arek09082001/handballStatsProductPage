@@ -1,9 +1,12 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   Grain,
   PlayerMagnet,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { ROLLOUT_STEPS } from '../data/vereine-content';
+import type { RolloutStep } from '../data/vereine-content';
 
 /**
  * How a club actually starts. The band exists because the club level is the one
@@ -16,6 +19,9 @@ import { ROLLOUT_STEPS } from '../data/vereine-content';
  * @returns A JSX element rendering the rollout steps on the paper ground.
  */
 export default function VereineRollout() {
+  const t = useTranslations('clubsPage.rollout');
+  const steps = t.raw('steps') as RolloutStep[];
+
   return (
     <section
       id='einfuehrung'
@@ -24,9 +30,9 @@ export default function VereineRollout() {
       <div className='relative mx-auto max-w-5xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Einführung'
-          title='In vier Schritten im Verein'
-          description='Kein Projekt, kein Stichtag, kein Datenimport. Ihr könnt mit zwei Mannschaften anfangen und den Rest nachziehen, wenn es passt.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         {/* No connecting arrow between the steps: in a two-column grid it can
@@ -34,9 +40,13 @@ export default function VereineRollout() {
             wrong direction for half the sequence and reads as decoration. The
             numbered magnets carry the order. */}
         <ol className='mt-12 grid gap-8 sm:grid-cols-2'>
-          {ROLLOUT_STEPS.map((step) => (
+          {steps.map((step) => (
             <li key={step.number} className='flex items-start gap-4'>
-              <PlayerMagnet number={step.number} size='md' className='mt-0.5 shrink-0' />
+              <PlayerMagnet
+                number={step.number}
+                size='md'
+                className='mt-0.5 shrink-0'
+              />
               <div>
                 <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
                   {step.title}

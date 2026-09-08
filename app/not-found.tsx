@@ -4,8 +4,11 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Home, ArrowLeft, Rocket } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function NotFound() {
+  const t = useTranslations('statusPages.notFound');
+
   return (
     <div className='relative min-h-screen overflow-hidden bg-[#0b1220] px-4 py-16 text-white'>
       <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(249,115,22,0.28),transparent_45%),radial-gradient(circle_at_80%_15%,rgba(37,99,235,0.22),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(249,115,22,0.18),transparent_40%)]' />
@@ -30,11 +33,10 @@ export default function NotFound() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}>
             <h2 className='mb-4 text-3xl font-bold text-white md:text-4xl'>
-              Diese Seite existiert nicht
+              {t('title')}
             </h2>
             <p className='mx-auto mb-10 max-w-xl text-base leading-relaxed text-slate-200 md:text-lg'>
-              Die angeforderte Seite konnten wir nicht finden. Spring zurück zur
-              Startseite und entdecke, wie Statix dein Team besser macht.
+              {t('lede')}
             </p>
           </motion.div>
 
@@ -47,9 +49,12 @@ export default function NotFound() {
               asChild
               size='lg'
               className='w-full bg-[#f97316] text-white hover:bg-[#ea580c] sm:w-auto'>
-              <Link href='/' title='Zur Startseite' className='flex items-center gap-2'>
+              <Link
+                href='/'
+                title={t('homeCta')}
+                className='flex items-center gap-2'>
                 <Home className='size-5' />
-                Zur Startseite
+                {t('homeCta')}
               </Link>
             </Button>
             <Button
@@ -57,9 +62,12 @@ export default function NotFound() {
               variant='outline'
               size='lg'
               className='w-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto'>
-              <Link href='/#newsletter' title='In den Newsletter eintragen' className='flex items-center gap-2'>
+              <Link
+                href='/#newsletter'
+                title={t('newsletterTitle')}
+                className='flex items-center gap-2'>
                 <Rocket className='size-5' />
-                Newsletter
+                {t('newsletterCta')}
               </Link>
             </Button>
           </motion.div>
@@ -69,16 +77,34 @@ export default function NotFound() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}>
-            <p className='mb-4 text-sm text-slate-300'>Beliebte Ziele:</p>
+            <p className='mb-4 text-sm text-slate-300'>{t('popularTitle')}</p>
             <div className='flex flex-wrap justify-center gap-3'>
-              <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
-                <Link href='/#features' title='Funktionen ansehen'>Funktionen</Link>
+              <Button
+                asChild
+                variant='ghost'
+                size='sm'
+                className='text-slate-100 hover:bg-white/10 hover:text-white'>
+                <Link href='/funktionen' title={t('featuresTitle')}>
+                  {t('featuresLabel')}
+                </Link>
               </Button>
-              <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
-                <Link href='/#faq' title='Häufige Fragen'>FAQ</Link>
+              <Button
+                asChild
+                variant='ghost'
+                size='sm'
+                className='text-slate-100 hover:bg-white/10 hover:text-white'>
+                <Link href='/#faq' title={t('faqTitle')}>
+                  {t('faqLabel')}
+                </Link>
               </Button>
-              <Button asChild variant='ghost' size='sm' className='text-slate-100 hover:bg-white/10 hover:text-white'>
-                <Link href='/impressum' title='Zum Impressum'>Impressum</Link>
+              <Button
+                asChild
+                variant='ghost'
+                size='sm'
+                className='text-slate-100 hover:bg-white/10 hover:text-white'>
+                <Link href='/impressum' title={t('imprintTitle')}>
+                  {t('imprintLabel')}
+                </Link>
               </Button>
             </div>
           </motion.div>
@@ -94,7 +120,7 @@ export default function NotFound() {
               onClick={() => window.history.back()}
               className='text-slate-300 hover:bg-white/10 hover:text-white'>
               <ArrowLeft className='mr-2 size-4' />
-              Zurück zur vorherigen Seite
+              {t('backCta')}
             </Button>
           </motion.div>
         </motion.div>

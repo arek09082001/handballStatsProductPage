@@ -137,7 +137,7 @@ export default function ProsSection() {
           </p>
           <Link
             href='/erfahrungen'
-            title='So entsteht Statix – Einblick in die Entwicklung'
+            title={t('founderLinkTitle')}
             className='group mt-5 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
             {t('founderLinkLabel')}
             <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />

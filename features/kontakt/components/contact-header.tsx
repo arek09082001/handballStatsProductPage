@@ -1,5 +1,7 @@
+'use client';
+
 import { Mail } from 'lucide-react';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
   BoardKicker,
@@ -11,11 +13,13 @@ import {
  * Court-ground header for `/kontakt` — the Trainertafel signature band, in the
  * same register as the other route headers. It carries the H1 and the direct
  * e-mail address, so a coach who would rather write from their own client never
- * has to fill the form at all. Static server component (no client JS).
+ * has to fill the form at all. A client component because the language lives
+ * in client state on this site: rendered on the server the band would stay
+ * German while the form under it changed language.
  * @returns A JSX element rendering the contact page header on the court ground.
  */
-export default async function ContactHeader() {
-  const t = await getTranslations('contactPage');
+export default function ContactHeader() {
+  const t = useTranslations('contactPage');
 
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>

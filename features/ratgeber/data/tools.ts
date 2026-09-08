@@ -1,6 +1,13 @@
+import { DE_MESSAGES } from '@/lib/messages';
+
 /**
- * Free tools promoted above the article list on the Ratgeber hub. Static copy
- * lives here so the hub page stays a thin composition of components.
+ * Free tools promoted above the article list on the Ratgeber hub.
+ *
+ * Only the routes live here. Title and description come from the `guidePage`
+ * namespace of the bundles, because the hub's chrome speaks the reader's
+ * language even though the articles behind it are German. The routes are the
+ * join key, so a reordered bundle cannot label the tactics board with the
+ * calculator's description.
  */
 export interface RatgeberTool {
   href: string;
@@ -8,23 +15,12 @@ export interface RatgeberTool {
   description: string;
 }
 
-export const RATGEBER_TOOLS: RatgeberTool[] = [
-  {
-    href: '/wurfquote-rechner',
-    title: 'Wurfquoten-Rechner',
-    description:
-      'Tore und Würfe eintragen, Quote ablesen – für einzelne Spieler oder die ganze Mannschaft.',
-  },
-  {
-    href: '/handball-taktikboard',
-    title: 'Handball-Taktikboard',
-    description:
-      'Aufstellung auf ein maßstabsgetreues Feld ziehen, Laufwege einzeichnen und als Bild oder Link an die Mannschaft geben.',
-  },
-  {
-    href: '/handball-statistik-excel-vorlage',
-    title: 'Excel-Vorlage für die Handball-Statistik',
-    description:
-      'Fertige Tabelle mit den wichtigsten Kennzahlen, wenn du erst einmal auf Papier und Excel starten willst.',
-  },
-];
+/** The routes, in the order the hub shows them. */
+export const RATGEBER_TOOL_PATHS = [
+  '/wurfquote-rechner',
+  '/handball-taktikboard',
+  '/handball-statistik-excel-vorlage',
+] as const;
+
+/** The German wording, for anything rendered on the server. */
+export const RATGEBER_TOOLS: RatgeberTool[] = DE_MESSAGES.guidePage.tools.items;

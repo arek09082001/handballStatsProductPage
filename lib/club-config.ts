@@ -254,6 +254,12 @@ export const CLUB_CONFIG = {
     // For logos and headers
     logoAlt: 'Statix Logo',
 
+    /**
+     * German original of the strapline beside the wordmark. The navbar reads
+     * `navigationSection.brandTagline` instead, so a reader who switches the
+     * site sees it in their language; this stays for the transactional mail
+     * shell, which is German for everyone.
+     */
     brandTagline: 'Statistik-App für Handball',
 
     footerDescription:

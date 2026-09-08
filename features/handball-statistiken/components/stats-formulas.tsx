@@ -1,10 +1,13 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   CourtDiagram,
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { STAT_FORMULAS } from '../data/stats-content';
+import { inlineLink } from '@/components/custom-ui/rich-text';
+import type { StatFormula } from '../data/stats-content';
 
 /**
  * The formula band — every metric with its calculation and the range that
@@ -13,6 +16,9 @@ import { STAT_FORMULAS } from '../data/stats-content';
  * @returns A JSX element rendering the formula and benchmark table.
  */
 export default function StatsFormulas() {
+  const t = useTranslations('statsPage.formulas');
+  const rows = t.raw('rows') as StatFormula[];
+
   return (
     <section
       id='formeln'
@@ -28,37 +34,35 @@ export default function StatsFormulas() {
         <SectionHeading
           tone='court'
           align='left'
-          kicker='Nachrechnen'
-          title='Die Formeln – und was ein normaler Wert ist'
-          description='Alle Rechnungen, die du für eine belastbare Auswertung brauchst. Die Richtwerte sind Erfahrungswerte aus dem Amateurbereich, keine Sollvorgaben.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-10 overflow-x-auto'>
           <table className='w-full min-w-[640px] border-collapse text-left text-[15px]'>
-            <caption className='sr-only'>
-              Formeln und Richtwerte der wichtigsten Handball-Kennzahlen
-            </caption>
+            <caption className='sr-only'>{t('caption')}</caption>
             <thead>
               <tr className='border-b-2 border-chalk/25'>
                 <th
                   scope='col'
                   className='py-3 pr-4 font-display text-sm font-bold text-chalk'>
-                  Kennzahl
+                  {t('colMetric')}
                 </th>
                 <th
                   scope='col'
                   className='py-3 pr-4 font-display text-sm font-bold text-chalk'>
-                  Formel
+                  {t('colFormula')}
                 </th>
                 <th
                   scope='col'
                   className='py-3 font-display text-sm font-bold text-chalk'>
-                  Richtwert im Amateurbereich
+                  {t('colBenchmark')}
                 </th>
               </tr>
             </thead>
             <tbody>
-              {STAT_FORMULAS.map((row, index) => (
+              {rows.map((row, index) => (
                 <tr
                   key={row.metric}
                   className={index % 2 === 1 ? 'bg-chalk/[0.04]' : undefined}>
@@ -80,15 +84,7 @@ export default function StatsFormulas() {
         </div>
 
         <p className='mt-8 max-w-[68ch] text-base leading-7 text-chalk/70'>
-          Die Spannen verschieben sich mit Spielklasse und Altersstufe, deshalb
-          ist der eigene Vorwert immer die bessere Referenz als eine Tabelle.
-          Wenn du eine einzelne Quote nur schnell ausrechnen willst, nimm den{' '}
-          <Link
-            href='/wurfquote-rechner'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Wurfquoten-Rechner
-          </Link>
-          {' – '}Tore und Würfe eintragen, Quote ablesen, ohne Anmeldung.
+          {t.rich('closing', { calculator: inlineLink('/wurfquote-rechner') })}
         </p>
       </div>
     </section>

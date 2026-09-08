@@ -1,4 +1,7 @@
-import Link from 'next/link';
+'use client';
+
+import { useLocale, useTranslations } from 'next-intl';
+import { inlineLink } from '@/components/custom-ui/rich-text';
 import ArticleCard from '../components/article-card';
 import RatgeberTools from '../components/ratgeber-tools';
 import { getArticlesByCategory } from '../data/articles';
@@ -10,15 +13,23 @@ import {
 } from '@/features/landing-page/components/tactic';
 
 function categoryId(category: string): string {
-  return `kategorie-${category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+  return `kategorie-${category
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')}`;
 }
 
 /**
  * Ratgeber hub in the Trainertafel world: a court signature header with the
  * court chalked behind, then a paper board of category‑grouped article notes.
- * Fully static and zero‑JS, so every article is crawlable from here.
+ *
+ * The hub's own copy follows the reader's language; the article titles,
+ * excerpts and category names on the notes are the articles' own and stay
+ * German, which the hero says outright to anyone not reading it in German.
  */
 export default function BlogIndexPage() {
+  const t = useTranslations('guidePage.index');
+  const locale = useLocale();
   const groups = getArticlesByCategory();
   const total = groups.reduce((sum, group) => sum + group.articles.length, 0);
 
@@ -36,32 +47,34 @@ export default function BlogIndexPage() {
 
         <div className='relative mx-auto max-w-5xl px-6 py-16 text-center sm:px-8 md:py-24'>
           <BoardKicker color='chalk' className='justify-center'>
-            Handball-Ratgeber
+            {t('kicker')}
           </BoardKicker>
 
           <h1 className='mx-auto mt-5 max-w-3xl font-display text-[2.25rem] font-extrabold leading-[1.05] tracking-[-0.03em] text-chalk sm:text-[3rem] lg:text-[3.5rem]'>
-            Wissen für{' '}
+            {t('titleLead')}{' '}
             <span className='relative inline-block whitespace-nowrap'>
-              Handballtrainer
+              {t('titleHighlight')}
               <MarkerUnderline color='marker' />
             </span>
           </h1>
 
           <p className='mx-auto mt-6 max-w-2xl text-base leading-8 text-chalk/75 sm:text-lg'>
-            Praxisnahe Artikel zu Statistik, Training, Taktik und Spielanalyse –
-            damit du dein Team datenbasiert und mit einem klaren Plan
-            weiterentwickelst. Wenn du bei den Zahlen anfängst, nimm den
-            Überblick{' '}
-            <Link
-              href='/handball-statistiken'
-              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-              Handball-Statistiken
-            </Link>{' '}
-            als Startpunkt.
+            {t.rich('lede', {
+              stats: inlineLink('/handball-statistiken', 'court'),
+            })}
           </p>
 
+          {/* Said once, at the top, rather than on every card: the chrome is
+              translated, the fifty-three articles behind it are not. A German
+              reader does not need to be told. */}
+          {locale === 'de' ? null : (
+            <p className='mx-auto mt-4 max-w-2xl text-sm text-chalk/55'>
+              {t('languageNote')}
+            </p>
+          )}
+
           <p className='mt-7 font-hand text-xl text-primary'>
-            {total} Artikel aus der Halle
+            {t('articleCount', { count: total })}
           </p>
         </div>
       </header>
@@ -73,7 +86,9 @@ export default function BlogIndexPage() {
 
           <div className='space-y-16 md:space-y-20'>
             {groups.map((group) => (
-              <section key={group.category} aria-labelledby={categoryId(group.category)}>
+              <section
+                key={group.category}
+                aria-labelledby={categoryId(group.category)}>
                 <div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1'>
                   <h2
                     id={categoryId(group.category)}
@@ -82,12 +97,16 @@ export default function BlogIndexPage() {
                     <MarkerUnderline color='marker' strokeWidth={5} />
                   </h2>
                   <span className='font-hand text-lg text-ink/50'>
-                    {group.articles.length} Artikel
+                    {t('categoryCount', { count: group.articles.length })}
                   </span>
                 </div>
                 <div className='mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
                   {group.articles.map((article) => (
-                    <ArticleCard key={article.slug} article={article} showCategory={false} />
+                    <ArticleCard
+                      key={article.slug}
+                      article={article}
+                      showCategory={false}
+                    />
                   ))}
                 </div>
               </section>

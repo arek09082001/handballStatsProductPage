@@ -1,14 +1,16 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardCta from '@/components/custom-ui/board-cta';
 import BoardFaq from '@/components/custom-ui/board-faq';
+import { inlineLink } from '@/components/custom-ui/rich-text';
 import SegmentHeader from '../components/segment-header';
 import SegmentBenefits from '../components/segment-benefits';
 import SegmentObjections from '../components/segment-objections';
 import JugendtrainerDevelopment from '../components/jugendtrainer-development';
-import {
-  JUGENDTRAINER_FAQS,
-  YOUTH_BENEFITS,
-  YOUTH_OBJECTIONS,
+import type {
+  YouthBenefit,
+  YouthObjection,
 } from '../data/jugendtrainer-content';
 
 /**
@@ -18,74 +20,59 @@ import {
  * @returns A JSX element composing the ordered youth-coach sections.
  */
 export default function JugendtrainerPage() {
+  const t = useTranslations('youthCoachPage');
+
   return (
     <div className='flex w-full flex-col items-center justify-center bg-paper'>
       <SegmentHeader
-        kicker='Für Jugendtrainer'
-        titleLead='Handball-Statistik für'
-        titleHighlight='Jugendtrainer'
-        lede='Du coachst, wechselst und redest – und sollst nebenbei mitschreiben. Statix macht daraus einen Tap pro Aktion. Nach dem Spiel siehst du, wer sich entwickelt, deine Spieler sehen ihre eigenen Werte im Kartenalbum, und die Eltern verfolgen das Spiel im Live-Ticker. Kostet aktuell nichts.'
-        trust={['Ein Tap pro Aktion', 'Aktuell 0 €', 'Ohne Schulung']}
+        kicker={t('hero.kicker')}
+        titleLead={t('hero.titleLead')}
+        titleHighlight={t('hero.titleHighlight')}
+        lede={t('hero.lede')}
+        trust={t.raw('hero.trust') as string[]}
         screenshot={{
           src: '/recordStatsInGame.png',
-          alt: 'Jugendtrainer erfasst Handball-Statistiken live per Tap von der Bank',
-          label: 'Erfassen, während du coachst',
+          alt: t('hero.screenshotAlt'),
+          label: t('hero.screenshotLabel'),
         }}
       />
 
       <SegmentBenefits
-        kicker='Aus der Halle'
-        title='Was du im Jugendbereich davon hast'
-        description='Sechs Dinge, die sich am Samstag und in der Woche danach wirklich ändern.'
-        items={[...YOUTH_BENEFITS]}
+        kicker={t('benefits.kicker')}
+        title={t('benefits.title')}
+        description={t('benefits.description')}
+        items={t.raw('benefits.items') as YouthBenefit[]}
       />
 
       <JugendtrainerDevelopment />
 
       <SegmentObjections
-        kicker='Ehrlich gefragt'
-        title='Was Jugendtrainer zu Recht einwenden'
-        description='Vier Einwände, die ich selbst hatte – und wie ich sie beantworte.'
-        items={[...YOUTH_OBJECTIONS]}
+        kicker={t('objections.kicker')}
+        title={t('objections.title')}
+        description={t('objections.description')}
+        items={t.raw('objections.items') as YouthObjection[]}
         ground='paper'>
-        <>
-          Was der kostenlose Zugang genau umfasst, steht unter{' '}
-          <Link
-            href='/handball-statistik-app-kostenlos'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Handball-Statistik-App kostenlos
-          </Link>
-          . Wenn ihr im Verein mehrere Mannschaften auf einen Stand bringen
-          wollt, lies{' '}
-          <Link
-            href='/fuer-vereine'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Statix für Vereine
-          </Link>
-          . Und wer erstmal auf Papier anfangen will, nimmt die{' '}
-          <Link
-            href='/handball-statistik-excel-vorlage'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            kostenlose Excel-Vorlage
-          </Link>
-          .
-        </>
+        {t.rich('objections.links', {
+          free: inlineLink('/handball-statistik-app-kostenlos'),
+          clubs: inlineLink('/fuer-vereine'),
+          template: inlineLink('/handball-statistik-excel-vorlage'),
+        })}
       </SegmentObjections>
 
       <BoardFaq
         id='faq'
-        kicker='Nachgefragt'
-        title='Häufige Fragen von Jugendtrainern'
-        description='Von der Altersklasse bis zum Elterngespräch.'
-        items={JUGENDTRAINER_FAQS}
+        kicker={t('faq.kicker')}
+        title={t('faq.title')}
+        description={t('faq.description')}
+        items={t.raw('faq.items') as { question: string; answer: string }[]}
       />
 
       <BoardCta
-        kicker='Vor dem nächsten Spiel'
-        title='Vor dem Samstag noch schnell einrichten'
-        description='Konto anlegen, Kader eintippen, fertig – das dauert weniger als eine Trainingsvorbereitung. Oder sieh dir vorher in der Live-Demo an, ob du das an der Bank bedienen kannst.'
+        kicker={t('cta.kicker')}
+        title={t('cta.title')}
+        description={t('cta.description')}
         linkHref='/handball-statistik-app-kostenlos'
-        linkLabel='Was kostenlos enthalten ist'
+        linkLabel={t('cta.linkLabel')}
       />
     </div>
   );

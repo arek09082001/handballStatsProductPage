@@ -9,7 +9,13 @@ interface RateLimitInput {
 
 interface RateLimitCheckResult {
   allowed: boolean;
+  /** German sentence, for the log and the raw response. */
   reason?: string;
+  /**
+   * Whole minutes until the next attempt is allowed, at least one — the number
+   * the browser puts into the reader's own language.
+   */
+  retryMinutes?: number;
   resetTime?: string;
   remainingSubmissions: number;
 }
@@ -32,7 +38,10 @@ export function getClientIP(request: NextRequest): string {
 }
 
 export const ContactFormRateLimit = {
-  async checkRateLimit({ ipAddress, email }: RateLimitInput): Promise<RateLimitCheckResult> {
+  async checkRateLimit({
+    ipAddress,
+    email,
+  }: RateLimitInput): Promise<RateLimitCheckResult> {
     const ip = ipAddress || FALLBACK_IDENTIFIER;
     const emailIdentifier = email || `${ip}@no-email.local`;
     const result = checkCombinedRateLimit(ip, emailIdentifier);
@@ -40,6 +49,12 @@ export const ContactFormRateLimit = {
     return {
       allowed: result.success,
       reason: result.error,
+      retryMinutes: result.success
+        ? undefined
+        : Math.max(
+            1,
+            Math.ceil((result.resetAt.getTime() - Date.now()) / 60_000),
+          ),
       resetTime: result.resetAt.toISOString(),
       remainingSubmissions: result.remaining,
     };

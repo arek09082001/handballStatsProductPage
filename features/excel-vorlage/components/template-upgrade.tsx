@@ -1,5 +1,12 @@
-import Link from 'next/link';
-import { BoardScreenshot, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import {
+  BoardScreenshot,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import { inlineLink } from '@/components/custom-ui/rich-text';
 
 /**
  * The bridge from the spreadsheet to the app: what changes when the same
@@ -8,6 +15,8 @@ import { BoardScreenshot, Grain, SectionHeading } from '@/features/landing-page/
  * @returns A JSX element rendering the hand-off from template to app.
  */
 export default function TemplateUpgrade() {
+  const t = useTranslations('templatePage.upgrade');
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
@@ -15,60 +24,36 @@ export default function TemplateUpgrade() {
         <div>
           <SectionHeading
             align='left'
-            kicker='Der nächste Schritt'
-            title='Wenn die Vorlage nicht mehr reicht'
-            description='Dieselben Aktionen, nur getippt statt geschrieben – und die Auswertung steht, wenn die Sirene geht.'
+            kicker={t('kicker')}
+            title={t('title')}
+            description={t('description')}
           />
 
           <p className='mt-6 max-w-[62ch] text-base leading-7 text-ink/75'>
-            Statix ist im Kern dieselbe Idee wie diese Vorlage: eine Zeile pro
-            Aktion. Nur dass die Zeile ein Tap auf dem Handy ist, dass die
-            Wurfposition mitkommt und daraus ein Wurfbild entsteht, und dass
-            nach dem Spiel niemand mehr etwas abtippt. Offline in der Halle
-            funktioniert es auch – die Daten wandern hoch, sobald wieder Netz
-            da ist.
+            {t('paragraph')}
           </p>
 
           <p className='mt-4 max-w-[62ch] text-base leading-7 text-ink/75'>
-            Welche Kennzahlen überhaupt zusammengehören – und welcher Richtwert
-            im Amateurbereich normal ist – steht im Überblick{' '}
-            <Link
-              href='/handball-statistiken'
-              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-              Handball-Statistiken
-            </Link>
-            .
+            {t.rich('statsLink', {
+              stats: inlineLink('/handball-statistiken'),
+            })}
           </p>
 
           <p className='mt-4 max-w-[62ch] text-base leading-7 text-ink/75'>
-            Was das kostet, steht auf der Seite{' '}
-            <Link
-              href='/preise'
-              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-              Preise für die Handball-Statistik-App
-            </Link>{' '}
-            – kurz gesagt: aktuell nichts. Wie weit du damit{' '}
-            <Link
-              href='/handball-statistik-app-kostenlos'
-              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-              kostenlos kommst
-            </Link>
-            , steht dort im Detail. Und wenn du erst wissen willst, was die App
-            überhaupt macht:{' '}
-            <Link
-              href='/was-ist-statix'
-              className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-              Was ist Statix?
-            </Link>
+            {t.rich('costLink', {
+              pricing: inlineLink('/preise'),
+              free: inlineLink('/handball-statistik-app-kostenlos'),
+              brand: inlineLink('/was-ist-statix'),
+            })}
           </p>
         </div>
 
         <BoardScreenshot
           src='/statsTableInGame.png'
-          alt='Spielerstatistiken und Wurfquoten in der Statix Handball-App statt in einer Excel-Tabelle'
+          alt={t('screenshotAlt')}
           width={2560}
           height={2000}
-          label='Auswertung direkt nach dem Schlusspfiff'
+          label={t('screenshotLabel')}
           tone='paper'
           pin='magnet'
           sizes='(max-width: 1024px) 100vw, 48vw'

@@ -1,23 +1,26 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import BoardCanvas from './board-canvas';
 import BoardRail from './board-rail';
 import BoardSettings from './board-settings';
-import {
-  DEFAULT_FORMATION_ID,
-  findFormation,
-} from '../data/formations';
+import { DEFAULT_FORMATION_ID, findFormation } from '../data/formations';
 import {
   BOARD_CAPACITY,
-  BOARD_MODE_OPTIONS,
   EXPORT_BOARD_WIDTH,
   EXPORT_FILE_NAME,
   TAKTIKBOARD_PAGE_PATH,
 } from '../data/taktikboard-content';
+import { useBoardOptions } from '../data/use-board-options';
 import { COURT_VIEWS } from '../data/court-geometry';
-import { clamp01, decodeBoard, encodeBoard, sanitizeLabel } from '../lib/board-share';
+import {
+  clamp01,
+  decodeBoard,
+  encodeBoard,
+  sanitizeLabel,
+} from '../lib/board-share';
 import type {
   ArrowColor,
   ArrowHandle,
@@ -48,7 +51,9 @@ function buildDefaultBoard(): BoardState {
 function nextNumber(state: BoardState, kind: MagnetKind): number {
   if (kind === 'ball') return 0;
   const used = new Set(
-    state.magnets.filter((magnet) => magnet.kind === kind).map((magnet) => magnet.number),
+    state.magnets
+      .filter((magnet) => magnet.kind === kind)
+      .map((magnet) => magnet.number),
   );
   for (let candidate = 1; candidate <= 99; candidate += 1) {
     if (!used.has(candidate)) return candidate;
@@ -97,6 +102,9 @@ export default function TaktikboardTool({
   const [editorId, setEditorId] = useState<string | null>(null);
   const [arrowKind, setArrowKind] = useState<ArrowKind>('laufweg');
   const [arrowColor, setArrowColor] = useState<ArrowColor>('marker');
+  const t = useTranslations('boardPage.tool');
+  const { modes, formations } = useBoardOptions();
+
   const [notice, setNotice] = useState<string | null>(null);
   const [announcement, setAnnouncement] = useState('');
   const [copied, setCopied] = useState(false);
@@ -122,14 +130,12 @@ export default function TaktikboardTool({
     const decoded = decodeBoard(window.location.hash);
     if (!decoded) return;
     if (!decoded.ok) {
-      setNotice(
-        'Der geteilte Link liess sich nicht lesen – vermutlich wurde er beim Weiterleiten abgeschnitten. Du startest mit der Standardaufstellung.',
-      );
+      setNotice(t('notices.brokenLink'));
       return;
     }
     setBoard(decoded.state);
     setFormationId('');
-  }, []);
+  }, [t]);
 
   // Keep the address bar in step with the board, so the page is bookmarkable
   // and a coach can grab the link without hunting for a button. Debounced and
@@ -151,7 +157,10 @@ export default function TaktikboardTool({
 
   const announceLater = useCallback((message: string) => {
     window.clearTimeout(announceTimer.current);
-    announceTimer.current = window.setTimeout(() => setAnnouncement(message), 400);
+    announceTimer.current = window.setTimeout(
+      () => setAnnouncement(message),
+      400,
+    );
   }, []);
 
   const shareUrl = useMemo(
@@ -159,7 +168,7 @@ export default function TaktikboardTool({
     [origin, board],
   );
 
-  const activeMode = BOARD_MODE_OPTIONS.find((option) => option.mode === mode);
+  const activeMode = modes.find((option) => option.mode === mode);
 
   /**
    * Room for a board that still fits on screen, plus the rail on one side and
@@ -191,10 +200,13 @@ export default function TaktikboardTool({
         ),
       }));
       announceLater(
-        `Verschoben auf ${Math.round(x * 100)} Prozent von links, ${Math.round(y * 100)} Prozent von oben.`,
+        t('announce.moved', {
+          x: Math.round(x * 100),
+          y: Math.round(y * 100),
+        }),
       );
     },
-    [announceLater],
+    [announceLater, t],
   );
 
   const moveArrow = useCallback(
@@ -206,17 +218,29 @@ export default function TaktikboardTool({
           if (handle === 'start') {
             // Dragging an end drags the curve with it, so the arrow does not
             // suddenly snap into a shape nobody asked for.
-            return { ...arrow, x1: x, y1: y, cx: (x + arrow.x2) / 2, cy: (y + arrow.y2) / 2 };
+            return {
+              ...arrow,
+              x1: x,
+              y1: y,
+              cx: (x + arrow.x2) / 2,
+              cy: (y + arrow.y2) / 2,
+            };
           }
           if (handle === 'end') {
-            return { ...arrow, x2: x, y2: y, cx: (arrow.x1 + x) / 2, cy: (arrow.y1 + y) / 2 };
+            return {
+              ...arrow,
+              x2: x,
+              y2: y,
+              cx: (arrow.x1 + x) / 2,
+              cy: (arrow.y1 + y) / 2,
+            };
           }
           return { ...arrow, cx: x, cy: y };
         }),
       }));
-      announceLater('Pfeil angepasst.');
+      announceLater(t('announce.arrowAdjusted'));
     },
-    [announceLater],
+    [announceLater, t],
   );
 
   const moveLabel = useCallback(
@@ -227,24 +251,29 @@ export default function TaktikboardTool({
           label.id === id ? { ...label, x, y } : label,
         ),
       }));
-      announceLater('Notiz verschoben.');
+      announceLater(t('announce.noteMoved'));
     },
-    [announceLater],
+    [announceLater, t],
   );
 
-  const changeMagnet = useCallback((id: string, patch: Partial<BoardMagnet>) => {
-    setBoard((current) => ({
-      ...current,
-      magnets: current.magnets.map((magnet) =>
-        magnet.id === id ? { ...magnet, ...patch } : magnet,
-      ),
-    }));
-  }, []);
+  const changeMagnet = useCallback(
+    (id: string, patch: Partial<BoardMagnet>) => {
+      setBoard((current) => ({
+        ...current,
+        magnets: current.magnets.map((magnet) =>
+          magnet.id === id ? { ...magnet, ...patch } : magnet,
+        ),
+      }));
+    },
+    [],
+  );
 
   const changeArrow = useCallback((id: string, patch: Partial<BoardArrow>) => {
     setBoard((current) => ({
       ...current,
-      arrows: current.arrows.map((arrow) => (arrow.id === id ? { ...arrow, ...patch } : arrow)),
+      arrows: current.arrows.map((arrow) =>
+        arrow.id === id ? { ...arrow, ...patch } : arrow,
+      ),
     }));
   }, []);
 
@@ -277,31 +306,34 @@ export default function TaktikboardTool({
           : current.labels,
     }));
     setSelection(null);
-    setAnnouncement('Vom Feld genommen.');
+    setAnnouncement(t('announce.removed'));
   }, []);
 
-  const applyFormation = useCallback((id: string) => {
-    const preset = findFormation(id);
-    if (!preset) return;
-    setFormationId(id);
-    setSelection(null);
-    setEditorId(null);
-    setNotice(null);
-    setBoard((current) => ({
-      ...current,
-      view: preset.view,
-      magnets: preset.build(),
-    }));
-    setAnnouncement(`Aufstellung geladen: ${preset.label}.`);
-  }, []);
+  const applyFormation = useCallback(
+    (id: string) => {
+      // From the translated list, so the announcement names the formation in the
+      // reader's language rather than in German.
+      const preset = formations.find((entry) => entry.id === id);
+      if (!preset) return;
+      setFormationId(id);
+      setSelection(null);
+      setEditorId(null);
+      setNotice(null);
+      setBoard((current) => ({
+        ...current,
+        view: preset.view,
+        magnets: preset.build(),
+      }));
+      setAnnouncement(t('announce.formationLoaded', { label: preset.label }));
+    },
+    [formations, t],
+  );
 
   const addMagnet = useCallback(
     (kind: MagnetKind) => {
       setNotice(null);
       if (board.magnets.length >= BOARD_CAPACITY.magnets) {
-        setNotice(
-          `Mehr als ${BOARD_CAPACITY.magnets} Magnete passen nicht auf ein Board – das sind schon zwei komplette Kader. Nimm erst einen herunter.`,
-        );
+        setNotice(t('notices.magnetLimit', { max: BOARD_CAPACITY.magnets }));
         return;
       }
       const spot = spawnSpot(board.magnets.length);
@@ -312,11 +344,16 @@ export default function TaktikboardTool({
         x: spot.x,
         y: spot.y,
       };
-      setBoard((current) => ({ ...current, magnets: [...current.magnets, magnet] }));
+      setBoard((current) => ({
+        ...current,
+        magnets: [...current.magnets, magnet],
+      }));
       setSelection({ type: 'magnet', id: magnet.id });
       setMode('move');
       setAnnouncement(
-        kind === 'ball' ? 'Ball aufs Feld gelegt.' : `Magnet ${magnet.number} aufs Feld gesetzt.`,
+        kind === 'ball'
+          ? t('announce.ballPlaced')
+          : t('announce.magnetPlaced', { number: magnet.number }),
       );
     },
     [board, nextId],
@@ -326,7 +363,7 @@ export default function TaktikboardTool({
     (x1: number, y1: number, x2: number, y2: number) => {
       setNotice(null);
       if (board.arrows.length >= BOARD_CAPACITY.arrows) {
-        setNotice(`Mehr als ${BOARD_CAPACITY.arrows} Pfeile werden unleserlich. Nimm erst einen weg.`);
+        setNotice(t('notices.arrowLimit', { max: BOARD_CAPACITY.arrows }));
         return;
       }
       const arrow = {
@@ -340,9 +377,12 @@ export default function TaktikboardTool({
         x2,
         y2,
       };
-      setBoard((current) => ({ ...current, arrows: [...current.arrows, arrow] }));
+      setBoard((current) => ({
+        ...current,
+        arrows: [...current.arrows, arrow],
+      }));
       setSelection({ type: 'arrow', id: arrow.id });
-      setAnnouncement('Pfeil gezeichnet.');
+      setAnnouncement(t('announce.arrowDrawn'));
     },
     [arrowColor, arrowKind, board.arrows.length, nextId],
   );
@@ -351,18 +391,26 @@ export default function TaktikboardTool({
     (x: number, y: number) => {
       setNotice(null);
       if (board.labels.length >= BOARD_CAPACITY.labels) {
-        setNotice(`Mehr als ${BOARD_CAPACITY.labels} Notizen passen nicht aufs Feld.`);
+        setNotice(t('notices.labelLimit', { max: BOARD_CAPACITY.labels }));
         return;
       }
-      const label = { id: nextId('l'), x: clamp01(x), y: clamp01(y), text: 'Sperre' };
-      setBoard((current) => ({ ...current, labels: [...current.labels, label] }));
+      const label = {
+        id: nextId('l'),
+        x: clamp01(x),
+        y: clamp01(y),
+        text: t('defaultNoteText'),
+      };
+      setBoard((current) => ({
+        ...current,
+        labels: [...current.labels, label],
+      }));
       setSelection({ type: 'label', id: label.id });
       // Placing a note is never the whole intent — the text is. Open the editor
       // on it straight away and hand the move tool back, so the coach types and
       // is done instead of hunting for a second gesture.
       setEditorId(label.id);
       setMode('move');
-      setAnnouncement('Notiz gesetzt. Text eingeben und mit Fertig bestätigen.');
+      setAnnouncement(t('announce.notePlaced'));
     },
     [board.labels.length, nextId],
   );
@@ -372,19 +420,24 @@ export default function TaktikboardTool({
     setEditorId(null);
     setFormationId('leer');
     setNotice(null);
-    setBoard((current) => ({ ...current, magnets: [], arrows: [], labels: [] }));
-    setAnnouncement('Feld geleert.');
+    setBoard((current) => ({
+      ...current,
+      magnets: [],
+      arrows: [],
+      labels: [],
+    }));
+    setAnnouncement(t('announce.cleared'));
   }, []);
 
   const copyLink = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(shareUrl);
       setCopied(true);
-      setAnnouncement('Link kopiert.');
+      setAnnouncement(t('announce.linkCopied'));
       window.setTimeout(() => setCopied(false), 2500);
     } catch {
       setCopied(false);
-      setNotice('Kopieren hat der Browser abgelehnt. Der Link steht im Feld daneben – markieren und kopieren.');
+      setNotice(t('notices.copyRejected'));
     }
   }, [shareUrl]);
 
@@ -401,7 +454,9 @@ export default function TaktikboardTool({
       // with the page's fonts, so a pending web font would export the jersey
       // numbers in a fallback face.
       await document.fonts?.ready;
-      await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve)),
+      );
       const { default: html2canvas } = await import('html2canvas');
       const canvas = await html2canvas(node, {
         // The board paints its own ground; a transparent canvas keeps the
@@ -409,7 +464,8 @@ export default function TaktikboardTool({
         backgroundColor: null,
         scale: 2,
         logging: false,
-        ignoreElements: (element) => element.hasAttribute?.('data-board-chrome') ?? false,
+        ignoreElements: (element) =>
+          element.hasAttribute?.('data-board-chrome') ?? false,
       });
       const url = canvas.toDataURL('image/png');
       const link = document.createElement('a');
@@ -418,11 +474,9 @@ export default function TaktikboardTool({
       document.body.appendChild(link);
       link.click();
       link.remove();
-      setAnnouncement('PNG heruntergeladen.');
+      setAnnouncement(t('announce.pngDownloaded'));
     } catch {
-      setNotice(
-        'Das Bild liess sich nicht erzeugen. Ein Screenshot vom Board tut es genauso – oder du teilst den Link.',
-      );
+      setNotice(t('notices.exportFailed'));
     } finally {
       setIsExporting(false);
     }
@@ -431,10 +485,7 @@ export default function TaktikboardTool({
   return (
     <div className={cn('w-full', className)}>
       <p id='taktikboard-keyboard-hilfe' className='sr-only'>
-        Mit Tab erreichst du jeden Magneten, jeden Pfeilgriff und jede Notiz. Die
-        Pfeiltasten verschieben das ausgewählte Objekt, mit gedrückter
-        Umschalttaste in größeren Schritten. Die Eingabetaste öffnet Nummer und
-        Farbe, die Entfernen-Taste nimmt das Objekt vom Feld.
+        {t('canvas.keyboardHelp')}
       </p>
       <p aria-live='polite' className='sr-only'>
         {announcement}
@@ -486,7 +537,9 @@ export default function TaktikboardTool({
 
             {/* The rail has no labels, so the active tool says out loud what a
                 drag will do. */}
-            <p aria-live='polite' className='mt-2 text-[12.5px] leading-5 text-chalk/60'>
+            <p
+              aria-live='polite'
+              className='mt-2 text-[12.5px] leading-5 text-chalk/60'>
               {activeMode?.hint}
             </p>
           </div>
@@ -503,7 +556,6 @@ export default function TaktikboardTool({
             {notice}
           </p>
         ) : null}
-
       </div>
 
       {/* The board the PNG is rendered from: off screen, a fixed width, and fed

@@ -3,12 +3,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Check, Minus, Plus, Trash2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 import { MAGNET_COLORS } from '../data/board-palette';
-import {
-  ARROW_KIND_OPTIONS,
-  LABEL_MAX_CHARS,
-  MAGNET_KIND_OPTIONS,
-} from '../data/taktikboard-content';
+import { LABEL_MAX_CHARS } from '../data/taktikboard-content';
+import { useBoardOptions } from '../data/use-board-options';
 import type {
   ArrowColor,
   ArrowKind,
@@ -17,12 +15,6 @@ import type {
   BoardMagnet,
   MagnetKind,
 } from '../interfaces';
-
-const ARROW_COLOR_OPTIONS: { value: ArrowColor; label: string }[] = [
-  { value: 'marker', label: 'Orange' },
-  { value: 'opponent', label: 'Blau' },
-  { value: 'neutral', label: 'Neutral' },
-];
 
 export type EditorTarget =
   | { type: 'magnet'; object: BoardMagnet }
@@ -64,6 +56,8 @@ export default function BoardObjectEditor({
   onRemove,
   onClose,
 }: BoardObjectEditorProps) {
+  const t = useTranslations('boardPage.tool.editor');
+  const { magnetKinds, arrowKinds, arrowColors } = useBoardOptions();
   const cardRef = useRef<HTMLDivElement | null>(null);
   const firstFieldRef = useRef<HTMLElement | null>(null);
 
@@ -105,7 +99,10 @@ export default function BoardObjectEditor({
 
   const anchor =
     target.type === 'arrow'
-      ? { x: (target.object.x1 + target.object.x2) / 2, y: (target.object.y1 + target.object.y2) / 2 }
+      ? {
+          x: (target.object.x1 + target.object.x2) / 2,
+          y: (target.object.y1 + target.object.y2) / 2,
+        }
       : { x: target.object.x, y: target.object.y };
 
   // Below the object when there is room, above it otherwise, and always inside
@@ -124,12 +121,18 @@ export default function BoardObjectEditor({
 
   const anchorX = anchor.x * boardWidth;
   const anchorY = anchor.y * boardHeight;
-  const left = Math.max(4, Math.min(anchorX - CARD_WIDTH / 2, boardWidth - CARD_WIDTH - 4));
+  const left = Math.max(
+    4,
+    Math.min(anchorX - CARD_WIDTH / 2, boardWidth - CARD_WIDTH - 4),
+  );
   const below = anchorY + 46;
   const top =
     cardHeight === 0 || below + cardHeight <= boardHeight - 4
       ? below
-      : Math.max(4, Math.min(anchorY - 46 - cardHeight, boardHeight - cardHeight - 4));
+      : Math.max(
+          4,
+          Math.min(anchorY - 46 - cardHeight, boardHeight - cardHeight - 4),
+        );
 
   const chipClass =
     'inline-flex h-11 min-w-11 flex-1 items-center justify-center gap-1.5 rounded-lg border border-ink/15 bg-paper px-2 text-[13px] font-semibold text-ink transition-colors hover:border-ink/35 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
@@ -139,28 +142,39 @@ export default function BoardObjectEditor({
     <div
       ref={attachCard}
       role='dialog'
-      aria-label='Objekt bearbeiten'
+      aria-label={t('aria')}
       data-board-editor
       className='board-shadow absolute z-30 rounded-xl border border-ink/15 bg-paper p-3'
       style={{ left, top, width: CARD_WIDTH }}>
       {target.type === 'magnet' ? (
         <>
           <p className='text-[13px] font-semibold uppercase tracking-wide text-ink/55'>
-            Magnet
+            {t('magnet')}
           </p>
           {/* Two by two rather than four across: at 268 px wide a four-column
               row squeezes "Torwart" into 58 px and clips it. */}
           <div className='mt-2 grid grid-cols-2 gap-1.5'>
-            {MAGNET_KIND_OPTIONS.map((option, index) => (
+            {magnetKinds.map((option, index) => (
               <button
                 key={option.kind}
-                ref={index === 0 ? (node) => { firstFieldRef.current = node; } : undefined}
+                ref={
+                  index === 0
+                    ? (node) => {
+                        firstFieldRef.current = node;
+                      }
+                    : undefined
+                }
                 type='button'
                 aria-pressed={target.object.kind === option.kind}
                 onClick={() =>
-                  onChangeMagnet(target.object.id, { kind: option.kind as MagnetKind })
+                  onChangeMagnet(target.object.id, {
+                    kind: option.kind as MagnetKind,
+                  })
                 }
-                className={cn(chipClass, target.object.kind === option.kind && chipActive)}>
+                className={cn(
+                  chipClass,
+                  target.object.kind === option.kind && chipActive,
+                )}>
                 <span
                   aria-hidden='true'
                   className='size-3 shrink-0 rounded-full border border-ink/20'
@@ -173,19 +187,19 @@ export default function BoardObjectEditor({
 
           {target.object.kind === 'ball' ? (
             <p className='mt-3 text-[13px] leading-6 text-ink/65'>
-              Der Ball trägt keine Nummer.
+              {t('ballNoNumber')}
             </p>
           ) : (
             <div className='mt-3'>
               <label
                 className='block text-[13px] font-semibold uppercase tracking-wide text-ink/55'
                 htmlFor='taktikboard-editor-nummer'>
-                Rückennummer
+                {t('numberLabel')}
               </label>
               <div className='mt-1.5 flex items-center gap-1.5'>
                 <button
                   type='button'
-                  aria-label='Nummer eins kleiner'
+                  aria-label={t('decrement')}
                   onClick={() =>
                     onChangeMagnet(target.object.id, {
                       number: Math.max(0, target.object.number - 1),
@@ -204,14 +218,16 @@ export default function BoardObjectEditor({
                   onChange={(event) => {
                     const parsed = Number.parseInt(event.target.value, 10);
                     onChangeMagnet(target.object.id, {
-                      number: Number.isFinite(parsed) ? Math.min(99, Math.max(0, parsed)) : 0,
+                      number: Number.isFinite(parsed)
+                        ? Math.min(99, Math.max(0, parsed))
+                        : 0,
                     });
                   }}
                   className='h-11 w-full rounded-lg border border-ink/15 bg-paper px-2 text-center text-base font-bold tabular-nums text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/25'
                 />
                 <button
                   type='button'
-                  aria-label='Nummer eins größer'
+                  aria-label={t('increment')}
                   onClick={() =>
                     onChangeMagnet(target.object.id, {
                       number: Math.min(99, target.object.number + 1),
@@ -227,29 +243,47 @@ export default function BoardObjectEditor({
       ) : target.type === 'arrow' ? (
         <>
           <p className='text-[13px] font-semibold uppercase tracking-wide text-ink/55'>
-            Pfeil
+            {t('arrow')}
           </p>
           <div className='mt-2 flex gap-1.5'>
-            {ARROW_KIND_OPTIONS.map((option, index) => (
+            {arrowKinds.map((option, index) => (
               <button
                 key={option.kind}
-                ref={index === 0 ? (node) => { firstFieldRef.current = node; } : undefined}
+                ref={
+                  index === 0
+                    ? (node) => {
+                        firstFieldRef.current = node;
+                      }
+                    : undefined
+                }
                 type='button'
                 aria-pressed={target.object.kind === option.kind}
-                onClick={() => onChangeArrow(target.object.id, { kind: option.kind as ArrowKind })}
-                className={cn(chipClass, target.object.kind === option.kind && chipActive)}>
+                onClick={() =>
+                  onChangeArrow(target.object.id, {
+                    kind: option.kind as ArrowKind,
+                  })
+                }
+                className={cn(
+                  chipClass,
+                  target.object.kind === option.kind && chipActive,
+                )}>
                 {option.label}
               </button>
             ))}
           </div>
           <div className='mt-2 flex gap-1.5'>
-            {ARROW_COLOR_OPTIONS.map((option) => (
+            {arrowColors.map((option) => (
               <button
                 key={option.value}
                 type='button'
                 aria-pressed={target.object.color === option.value}
-                onClick={() => onChangeArrow(target.object.id, { color: option.value })}
-                className={cn(chipClass, target.object.color === option.value && chipActive)}>
+                onClick={() =>
+                  onChangeArrow(target.object.id, { color: option.value })
+                }
+                className={cn(
+                  chipClass,
+                  target.object.color === option.value && chipActive,
+                )}>
                 {option.label}
               </button>
             ))}
@@ -260,7 +294,7 @@ export default function BoardObjectEditor({
           <label
             className='block text-[13px] font-semibold uppercase tracking-wide text-ink/55'
             htmlFor='taktikboard-editor-notiz'>
-            Notiz
+            {t('note')}
           </label>
           <input
             id='taktikboard-editor-notiz'
@@ -270,11 +304,13 @@ export default function BoardObjectEditor({
             type='text'
             maxLength={LABEL_MAX_CHARS}
             value={target.object.text}
-            onChange={(event) => onChangeLabel(target.object.id, event.target.value)}
+            onChange={(event) =>
+              onChangeLabel(target.object.id, event.target.value)
+            }
             className='mt-1.5 h-11 w-full rounded-lg border border-ink/15 bg-paper px-3 text-base text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/25'
           />
           <p className='mt-1.5 text-[13px] text-ink/55'>
-            Höchstens {LABEL_MAX_CHARS} Zeichen – ein Wort, kein Satz.
+            {t('noteHint', { max: LABEL_MAX_CHARS })}
           </p>
         </>
       )}
@@ -283,16 +319,22 @@ export default function BoardObjectEditor({
         <button
           type='button'
           onClick={onRemove}
-          className={cn(chipClass, 'hover:border-secondary/50 hover:text-secondary')}>
+          className={cn(
+            chipClass,
+            'hover:border-secondary/50 hover:text-secondary',
+          )}>
           <Trash2 className='size-4' aria-hidden='true' />
-          Entfernen
+          {t('remove')}
         </button>
         <button
           type='button'
           onClick={onClose}
-          className={cn(chipClass, 'border-primary bg-primary text-white hover:brightness-95')}>
+          className={cn(
+            chipClass,
+            'border-primary bg-primary text-white hover:brightness-95',
+          )}>
           <Check className='size-4' aria-hidden='true' />
-          Fertig
+          {t('done')}
         </button>
       </div>
     </div>

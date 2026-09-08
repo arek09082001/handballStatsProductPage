@@ -13,7 +13,10 @@ const contactSchema = z
   .object({
     name: z.string().min(2, 'Name is too short').max(100, 'Name is too long'),
     email: z.string().email('Invalid email address'),
-    topic: z.string().min(2, 'Topic is too short').max(150, 'Topic is too long'),
+    topic: z
+      .string()
+      .min(2, 'Topic is too short')
+      .max(150, 'Topic is too long'),
     message: z
       .string()
       .min(10, 'Message is too short')
@@ -38,8 +41,8 @@ export async function POST(request: NextRequest) {
     // 1. Honeypot check
     if (website && website.trim() !== '') {
       return NextResponse.json(
-        { success: false, error: 'Spam erkannt' },
-        { status: 400 }
+        { success: false, code: 'spam', error: 'Spam erkannt' },
+        { status: 400 },
       );
     }
 
@@ -54,10 +57,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
+          code: 'rateLimited',
           error: rateLimitCheck.reason,
+          retryMinutes: rateLimitCheck.retryMinutes,
           resetTime: rateLimitCheck.resetTime,
         },
-        { status: 429 }
+        { status: 429 },
       );
     }
 
@@ -65,15 +70,19 @@ export async function POST(request: NextRequest) {
 
     if (!apiKey) {
       return NextResponse.json(
-        { success: false, error: 'Kontaktformular ist derzeit nicht verfügbar.' },
-        { status: 503 }
+        {
+          success: false,
+          code: 'unavailable',
+          error: 'Kontaktformular ist derzeit nicht verfügbar.',
+        },
+        { status: 503 },
       );
     }
 
     const transactionalApi = new brevo.TransactionalEmailsApi();
     transactionalApi.setApiKey(
       brevo.TransactionalEmailsApiApiKeys.apiKey,
-      apiKey
+      apiKey,
     );
 
     // All emails are sent from the noreply address.
@@ -122,7 +131,7 @@ export async function POST(request: NextRequest) {
         success: true,
         message: 'Nachricht erfolgreich gesendet',
       },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error('Contact form error:', error);
@@ -131,13 +140,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
+          code: 'invalidInput',
           error: 'Ungültige Eingabe',
           details: error.issues.map((issue) => ({
             field: issue.path.join('.'),
             message: issue.message,
           })),
         },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -147,24 +157,33 @@ export async function POST(request: NextRequest) {
         error.message.includes('Unauthorized')
       ) {
         return NextResponse.json(
-          { success: false, error: 'Brevo API-Schlüssel ungültig oder fehlt' },
-          { status: 401 }
+          {
+            success: false,
+            code: 'unavailable',
+            error: 'Brevo API-Schlüssel ungültig oder fehlt',
+          },
+          { status: 401 },
         );
       }
 
       return NextResponse.json(
         {
           success: false,
+          code: 'sendFailed',
           error: 'Fehler beim Senden der Nachricht',
           details: error.message,
         },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
     return NextResponse.json(
-      { success: false, error: 'Unbekannter Fehler beim Senden der Nachricht' },
-      { status: 500 }
+      {
+        success: false,
+        code: 'unknown',
+        error: 'Unbekannter Fehler beim Senden der Nachricht',
+      },
+      { status: 500 },
     );
   }
 }

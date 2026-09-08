@@ -98,12 +98,16 @@ const FULL_FASTBREAK_AWAY: Spot[] = [
   [265, 100, 5],
 ];
 
+/**
+ * A ready-made setup: which court it needs and where the magnets go.
+ *
+ * The name and the line under the picker are **not** here — they live under
+ * `boardPage.tool.formations` in the bundles, joined on `id`, so the picker
+ * speaks the reader's language while the geometry stays one source.
+ */
 export interface FormationPreset {
   id: string;
   view: CourtViewId;
-  label: string;
-  /** One line under the picker, so the choice is informed. */
-  hint: string;
   build: () => BoardMagnet[];
 }
 
@@ -130,7 +134,10 @@ function halbfeld(
   home: readonly Spot[],
   options: { awayKeeper?: boolean } = {},
 ): BoardMagnet[] {
-  const keeper = options.awayKeeper === false ? [] : place('halbfeld', 'keeper', [HALF_KEEPER], 0);
+  const keeper =
+    options.awayKeeper === false
+      ? []
+      : place('halbfeld', 'keeper', [HALF_KEEPER], 0);
   return [
     ...keeper,
     ...place('halbfeld', 'away', away, 10),
@@ -142,36 +149,26 @@ export const FORMATION_PRESETS: FormationPreset[] = [
   {
     id: '6-0',
     view: 'halbfeld',
-    label: '6:0-Abwehr gegen Angriff 3:3',
-    hint: 'Die Standardsituation im Amateur- und Jugendbereich.',
     build: () => halbfeld(HALF_DEFENCE_60, HALF_ATTACK_33),
   },
   {
     id: '5-1',
     view: 'halbfeld',
-    label: '5:1-Abwehr gegen Angriff 3:3',
-    hint: 'Fünferkette am Kreis, ein Vorgezogener auf Höhe der Freiwurflinie.',
     build: () => halbfeld(HALF_DEFENCE_51, HALF_ATTACK_33),
   },
   {
     id: '3-2-1',
     view: 'halbfeld',
-    label: '3:2:1-Abwehr gegen Angriff 3:3',
-    hint: 'Drei am Sechsmeter, zwei davor, einer vorgezogen am Neunmeter.',
     build: () => halbfeld(HALF_DEFENCE_321, HALF_ATTACK_33),
   },
   {
     id: '4-2',
     view: 'halbfeld',
-    label: 'Angriff 4:2 gegen 6:0-Abwehr',
-    hint: 'Zwei Kreisläufer binden die Mitte, vier stehen in der hinteren Reihe.',
     build: () => halbfeld(HALF_DEFENCE_60, HALF_ATTACK_42),
   },
   {
     id: 'eigene-abwehr',
     view: 'halbfeld',
-    label: 'Nur eigene 6:0-Abwehr',
-    hint: 'Ohne Gegner – für die Abwehrbesprechung in der Kabine.',
     build: () => [
       ...place('halbfeld', 'keeper', [HALF_KEEPER], 0),
       ...place('halbfeld', 'home', HALF_DEFENCE_60, 10),
@@ -180,8 +177,6 @@ export const FORMATION_PRESETS: FormationPreset[] = [
   {
     id: 'tempogegenstoss',
     view: 'ganzfeld',
-    label: 'Tempogegenstoß über das ganze Feld',
-    hint: 'Erste Welle über die Außen, zweite Welle hinterher, Gegner im Rückzug.',
     build: () => [
       ...place('ganzfeld', 'keeper', [FULL_OWN_KEEPER, FULL_AWAY_KEEPER], 0),
       ...place('ganzfeld', 'away', FULL_FASTBREAK_AWAY, 10),
@@ -191,8 +186,6 @@ export const FORMATION_PRESETS: FormationPreset[] = [
   {
     id: 'leer',
     view: 'halbfeld',
-    label: 'Leeres Feld',
-    hint: 'Nur der Boden – du setzt alles selbst.',
     build: () => [],
   },
 ];

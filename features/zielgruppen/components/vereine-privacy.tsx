@@ -1,4 +1,6 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import {
   BoardCard,
@@ -6,6 +8,11 @@ import {
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
+import { externalLink, inlineLink } from '@/components/custom-ui/rich-text';
+import {
+  VEREINE_MAIL_ARGS,
+  type ClubPrivacyPoint,
+} from '../data/vereine-content';
 
 /**
  * Data protection for a club board — the question that decides whether a club
@@ -21,24 +28,8 @@ import {
  * @returns A JSX element rendering the data-protection band on the court ground.
  */
 export default function VereinePrivacy() {
-  const points = [
-    {
-      title: 'Auftragsverarbeitung nach Art. 28 DSGVO',
-      text: 'Die Spielerdaten, die eure Trainer eingeben, verarbeitet Statix im Auftrag des Vereins. Einen Vertrag zur Auftragsverarbeitung stellen wir auf Anforderung bereit; das ist genau das Dokument, nach dem ein Datenschutzbeauftragter fragt.',
-    },
-    {
-      title: 'Pseudonymisiert, bevor eine KI etwas sieht',
-      text: 'Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen. Die Analyse arbeitet mit neutralen Kürzeln, und erstellte Berichte lassen sich jederzeit wieder löschen.',
-    },
-    {
-      title: 'Geteilte Links bleiben widerrufbar',
-      text: 'Ein Spiel wird nur öffentlich, wenn ein Trainer es veröffentlicht, und die Freigabe lässt sich zurücknehmen. Auf dem Live-Ticker stehen Spielernamen standardmäßig abgekürzt.',
-    },
-    {
-      title: 'Offengelegte Dienstleister',
-      text: 'Welche Auftragsverarbeiter beteiligt sind – Hosting, Datenbank, E-Mail-Versand und die KI-Anbieter – steht namentlich in den AGB und der Datenschutzerklärung, samt Hinweisen zu Drittlandübermittlungen.',
-    },
-  ];
+  const t = useTranslations('clubsPage.privacy');
+  const points = t.raw('points') as ClubPrivacyPoint[];
 
   return (
     <section className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-28'>
@@ -53,9 +44,9 @@ export default function VereinePrivacy() {
         <SectionHeading
           tone='court'
           align='left'
-          kicker='Für den Datenschutzbeauftragten'
-          title='Spielerdaten sauber verarbeiten'
-          description='Im Verein hängt die Einführung selten am Können der Trainer, sondern an dieser Frage. Deshalb hier die Antwort in vier Punkten.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <BoardCard tone='court' pin='tape' className='mt-12 p-7 sm:p-9'>
@@ -74,25 +65,12 @@ export default function VereinePrivacy() {
         </BoardCard>
 
         <p className='mt-10 max-w-[60ch] text-base leading-7 text-chalk/75'>
-          Die vollständigen Regelungen stehen in den{' '}
-          <Link
-            href='/agb'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            AGB (§ 7 Datenschutz und Auftragsverarbeitung)
-          </Link>{' '}
-          und in der{' '}
-          <Link
-            href='/datenschutz'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Datenschutzerklärung
-          </Link>
-          . Für einen AVV genügt eine Mail an{' '}
-          <a
-            href={`mailto:${CLUB_CONFIG.email.main}`}
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            {CLUB_CONFIG.email.main}
-          </a>
-          .
+          {t.rich('closing', {
+            ...VEREINE_MAIL_ARGS,
+            terms: inlineLink('/agb'),
+            privacy: inlineLink('/datenschutz'),
+            mail: externalLink(`mailto:${CLUB_CONFIG.email.main}`),
+          })}
         </p>
       </div>
     </section>

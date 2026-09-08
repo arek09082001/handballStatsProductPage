@@ -1,5 +1,8 @@
-import Link from 'next/link';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardFaq from '@/components/custom-ui/board-faq';
+import { inlineLink } from '@/components/custom-ui/rich-text';
 import SegmentHeader from '../components/segment-header';
 import SegmentBenefits from '../components/segment-benefits';
 import SegmentObjections from '../components/segment-objections';
@@ -10,10 +13,9 @@ import VereinePrivacy from '../components/vereine-privacy';
 import VereineRollout from '../components/vereine-rollout';
 import VereineContact from '../components/vereine-contact';
 import {
-  CLUB_BENEFITS,
-  CLUB_OBJECTIONS,
   VEREINE_CONTACT_ANCHOR,
-  VEREINE_FAQS,
+  type ClubBenefit,
+  type ClubObjection,
 } from '../data/vereine-content';
 
 /**
@@ -37,34 +39,32 @@ import {
  * @returns A JSX element composing the ordered club-page sections.
  */
 export default function VereinePage() {
+  const t = useTranslations('clubsPage');
+
   return (
     <div className='flex w-full flex-col items-center justify-center bg-paper'>
       <SegmentHeader
-        kicker='Für Vereine'
-        titleLead='Handball-Statistik für den ganzen'
-        titleHighlight='Verein'
-        lede='Zehn Jugendmannschaften, zehn Systeme: einer führt Excel, der nächste einen Zettel, der dritte gar nichts. Der Vereinsbereich von Statix legt eine Ebene über alle Mannschaften. Alle erfassen nach demselben Schema, Kader und Termine liegen im selben Werkzeug, Spieler behalten ihre Laufbahn über die Jugenden hinweg. Was das für euren Verein heißt, klären wir im Gespräch.'
-        trust={[
-          'Persönlich eingerichtet',
-          'AVV nach Art. 28 DSGVO',
-          'Alle Mannschaften auf einer Seite',
-        ]}
+        kicker={t('hero.kicker')}
+        titleLead={t('hero.titleLead')}
+        titleHighlight={t('hero.titleHighlight')}
+        lede={t('hero.lede')}
+        trust={t.raw('hero.trust') as string[]}
         primaryAction={{
           href: `#${VEREINE_CONTACT_ANCHOR}`,
-          label: 'Verein anfragen',
+          label: t('hero.primaryAction'),
         }}
         screenshot={{
           src: '/verein-uebersicht.png',
-          alt: 'Vereinsübersicht mit allen Handball-Mannschaften eines Vereins in der Statix App',
-          label: 'Acht Mannschaften, ein Wochenende, eine Seite',
+          alt: t('hero.screenshotAlt'),
+          label: t('hero.screenshotLabel'),
         }}
       />
 
       <SegmentBenefits
-        kicker='Was sich ändert'
-        title='Ein Verein, ein Standard'
-        description='Sechs Dinge, die erst funktionieren, wenn nicht jede Mannschaft ihr eigenes System fährt.'
-        items={[...CLUB_BENEFITS]}
+        kicker={t('benefits.kicker')}
+        title={t('benefits.title')}
+        description={t('benefits.description')}
+        items={t.raw('benefits.items') as ClubBenefit[]}
       />
 
       <VereineClubLevel />
@@ -78,48 +78,24 @@ export default function VereinePage() {
       <VereineRollout />
 
       <SegmentObjections
-        kicker='Klartext'
-        title='Was im Vorstand gesagt wird'
-        description='Die Sätze, an denen Einführungen scheitern. Hier stehen sie mit Antwort.'
-        items={[...CLUB_OBJECTIONS]}>
-        <>
-          Was der Einstieg für eine einzelne Trainerin kostet und wo die Grenzen
-          des kostenlosen Zugangs liegen, steht auf der Seite{' '}
-          <Link
-            href='/preise'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Preise für die Handball-Statistik-App
-          </Link>
-          ; was ohne Bezahlung dauerhaft geht, unter{' '}
-          <Link
-            href='/handball-statistik-app-kostenlos'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Handball-Statistik-App kostenlos
-          </Link>
-          . Für die Trainerinnen und Trainer eurer Jugendmannschaften gibt es
-          eine eigene Seite:{' '}
-          <Link
-            href='/fuer-jugendtrainer'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Handball-Statistik für Jugendtrainer
-          </Link>
-          . Und wenn ihr erst noch klären wollt, worauf ihr euch im Verein
-          einigen müsst, bevor jemand etwas erfasst:{' '}
-          <Link
-            href='/ratgeber/handball-statistik-verein-einfuehren'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Statistiken im Verein einführen
-          </Link>
-          .
-        </>
+        kicker={t('objections.kicker')}
+        title={t('objections.title')}
+        description={t('objections.description')}
+        items={t.raw('objections.items') as ClubObjection[]}>
+        {t.rich('objections.links', {
+          pricing: inlineLink('/preise'),
+          free: inlineLink('/handball-statistik-app-kostenlos'),
+          youth: inlineLink('/fuer-jugendtrainer'),
+          guide: inlineLink('/ratgeber/handball-statistik-verein-einfuehren'),
+        })}
       </SegmentObjections>
 
       <BoardFaq
         id='faq'
-        kicker='Nachgefragt'
-        title='Häufige Fragen von Vereinen'
-        description='Was Abteilungsleitungen und Vorstände wissen wollen, bevor sie Statix im Verein einführen.'
-        items={VEREINE_FAQS}
+        kicker={t('faq.kicker')}
+        title={t('faq.title')}
+        description={t('faq.description')}
+        items={t.raw('faq.items') as { question: string; answer: string }[]}
       />
 
       <VereineContact />

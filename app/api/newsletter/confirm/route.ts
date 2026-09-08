@@ -18,10 +18,11 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
+          code: 'invalidLink',
           error:
             'Dieser Bestätigungslink ist ungültig oder abgelaufen. Bitte melde dich erneut an.',
         },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -29,8 +30,12 @@ export async function POST(request: NextRequest) {
 
     if (!apiKey) {
       return NextResponse.json(
-        { success: false, error: 'Newsletter ist derzeit nicht verfügbar.' },
-        { status: 503 }
+        {
+          success: false,
+          code: 'unavailable',
+          error: 'Newsletter ist derzeit nicht verfügbar.',
+        },
+        { status: 503 },
       );
     }
 
@@ -53,8 +58,7 @@ export async function POST(request: NextRequest) {
     } catch (error) {
       // Brevo returns 400 "Contact already exist" when re-confirming – treat
       // that as success so the user is not confused.
-      const message =
-        error instanceof Error ? error.message.toLowerCase() : '';
+      const message = error instanceof Error ? error.message.toLowerCase() : '';
       const responseBody =
         // @ts-expect-error - Brevo errors carry an axios-style response body
         error?.response?.body?.message?.toLowerCase?.() || '';
@@ -72,15 +76,15 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json(
       { success: true, message: 'Anmeldung bestätigt' },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error('Newsletter confirmation error:', error);
 
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { success: false, error: 'Ungültige Eingabe' },
-        { status: 400 }
+        { success: false, code: 'invalidInput', error: 'Ungültige Eingabe' },
+        { status: 400 },
       );
     }
 
@@ -89,14 +93,22 @@ export async function POST(request: NextRequest) {
       (error.message.includes('401') || error.message.includes('Unauthorized'))
     ) {
       return NextResponse.json(
-        { success: false, error: 'Brevo API-Schlüssel ungültig oder fehlt' },
-        { status: 401 }
+        {
+          success: false,
+          code: 'unavailable',
+          error: 'Brevo API-Schlüssel ungültig oder fehlt',
+        },
+        { status: 401 },
       );
     }
 
     return NextResponse.json(
-      { success: false, error: 'Bestätigung fehlgeschlagen. Bitte versuche es später erneut.' },
-      { status: 500 }
+      {
+        success: false,
+        code: 'sendFailed',
+        error: 'Bestätigung fehlgeschlagen. Bitte versuche es später erneut.',
+      },
+      { status: 500 },
     );
   }
 }

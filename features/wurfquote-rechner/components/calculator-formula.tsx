@@ -1,4 +1,11 @@
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
 
 /**
  * "Die Formel" — stated as plain text (not an image, not a canvas) so search
@@ -7,42 +14,40 @@ import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/compon
  * @returns A JSX element rendering the formula band on the paper ground.
  */
 export default function CalculatorFormula() {
+  const t = useTranslations('calculatorPage.formula');
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Kopfrechnen'
-          title='Die Formel'
-          description='Eine Zeile, die jeder Trainer im Kopf haben sollte.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <BoardCard pin='magnet' className='mt-10 p-6 text-center sm:p-8'>
           <p className='font-display text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em] text-ink sm:text-[2rem]'>
-            Wurfquote (%) = Tore ÷ Würfe × 100
+            {t('expression')}
           </p>
         </BoardCard>
 
         <div className='mt-8 grid gap-4 sm:grid-cols-2'>
           <BoardCard pin='none' className='p-5'>
             <h3 className='font-display text-base font-bold tracking-tight text-ink'>
-              Was als Wurf zählt
+              {t('shotTitle')}
             </h3>
             <p className='mt-2 text-[15px] leading-7 text-ink/75'>
-              Jeder echte Torabschluss: Tor, gehaltener Ball, Pfosten oder Latte
-              und klarer Fehlwurf. Ein technischer Fehler ohne Abschluss zählt
-              nicht mit – der senkt die Quote sonst zu Unrecht.
+              {t('shotText')}
             </p>
           </BoardCard>
           <BoardCard pin='none' className='p-5'>
             <h3 className='font-display text-base font-bold tracking-tight text-ink'>
-              Die Paradenquote daneben
+              {t('saveTitle')}
             </h3>
             <p className='mt-2 text-[15px] leading-7 text-ink/75'>
-              Für den Torwart gilt: Paradenquote (%) = Paraden ÷ (Paraden +
-              Gegentore) × 100. Über 33 Prozent sind im Amateurbereich stark,
-              über 40 Prozent herausragend.
+              {t('saveText')}
             </p>
           </BoardCard>
         </div>

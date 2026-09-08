@@ -1,10 +1,13 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import {
   BoardCard,
   CourtDiagram,
   Grain,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
-import { EXCEL_LIMITS } from '../data/template-content';
+import type { ExcelLimit } from '../data/template-content';
 
 /**
  * The honest part: what breaks about a spreadsheet once the season is running.
@@ -13,6 +16,9 @@ import { EXCEL_LIMITS } from '../data/template-content';
  * @returns A JSX element rendering the limits of a spreadsheet on the court ground.
  */
 export default function TemplateLimits() {
+  const t = useTranslations('templatePage.limits');
+  const limits = t.raw('items') as ExcelLimit[];
+
   return (
     <section className='relative w-full overflow-hidden bg-court py-20 text-chalk md:py-28'>
       <CourtDiagram
@@ -26,18 +32,24 @@ export default function TemplateLimits() {
         <SectionHeading
           tone='court'
           align='left'
-          kicker='Ehrlich bleiben'
-          title='Wo Excel am dritten Spieltag aufhört'
-          description='Die Vorlage oben ist gut. Trotzdem kenne ich kaum einen Trainer, der sie eine ganze Saison durchhält – aus fünf sehr konkreten Gründen.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-12 grid gap-5 md:grid-cols-2'>
-          {EXCEL_LIMITS.map((limit) => (
-            <BoardCard key={limit.title} tone='court' pin='none' className='p-6'>
+          {limits.map((limit) => (
+            <BoardCard
+              key={limit.title}
+              tone='court'
+              pin='none'
+              className='p-6'>
               <h3 className='font-display text-lg font-bold tracking-tight text-chalk'>
                 {limit.title}
               </h3>
-              <p className='mt-2 text-[15px] leading-7 text-chalk/75'>{limit.text}</p>
+              <p className='mt-2 text-[15px] leading-7 text-chalk/75'>
+                {limit.text}
+              </p>
             </BoardCard>
           ))}
         </div>

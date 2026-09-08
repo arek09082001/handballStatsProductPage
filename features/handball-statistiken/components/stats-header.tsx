@@ -1,4 +1,7 @@
+'use client';
+
 import { UserPlus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
 import HeroTrustBadge from '@/features/landing-page/components/hero-trust-badge';
@@ -9,12 +12,6 @@ import {
   MarkerUnderline,
 } from '@/features/landing-page/components/tactic';
 
-const TRUST = [
-  'Formeln und Richtwerte',
-  'Live erfassen statt abtippen',
-  'Kostenlos starten',
-];
-
 /**
  * Court hero for `/handball-statistiken`. The lede defines the term in its
  * first sentence and stays under 60 words, so a featured snippet or an answer
@@ -22,6 +19,10 @@ const TRUST = [
  * @returns A JSX element rendering the pillar hero on the court ground.
  */
 export default function StatsHeader() {
+  const t = useTranslations('statsPage.hero');
+  const tCommon = useTranslations('common');
+  const trust = t.raw('trust') as string[];
+
   return (
     <header className='relative isolate w-full overflow-hidden bg-court text-chalk'>
       <CourtDiagram
@@ -35,23 +36,19 @@ export default function StatsHeader() {
 
       <div className='relative mx-auto w-full max-w-4xl px-6 pb-16 pt-28 text-center sm:px-10 lg:pb-24 lg:pt-32'>
         <BoardKicker color='chalk' className='justify-center'>
-          Kennzahlen im Handball
+          {t('kicker')}
         </BoardKicker>
 
         <h1 className='mt-5 font-display text-[2.5rem] font-extrabold leading-[1.04] tracking-[-0.035em] text-chalk sm:text-[3.2rem]'>
           <span className='relative inline-block text-primary'>
-            Handball-Statistiken
+            {t('titleHighlight')}
             <MarkerUnderline color='marker' />
           </span>{' '}
-          erfassen, berechnen, verstehen
+          {t('titleTail')}
         </h1>
 
         <p className='mx-auto mt-6 max-w-[62ch] text-base leading-7 text-chalk/80 sm:text-lg sm:leading-8'>
-          Handball-Statistiken sind die gezählten Aktionen eines Spiels – Würfe,
-          Tore, Paraden, technische Fehler, Zeitstrafen – und die Quoten, die
-          daraus entstehen. Diese Seite zeigt, welche Kennzahlen es gibt, wie du
-          sie berechnest, welche Werte im Amateurhandball realistisch sind und
-          wie du sie erfasst, ohne abends etwas abzutippen.
+          {t('lede')}
         </p>
 
         <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center'>
@@ -61,19 +58,19 @@ export default function StatsHeader() {
             href={CLUB_CONFIG.website.appUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Statistiken kostenlos erfassen
+            {t('ctaPrimary')}
           </HeroActionButton>
           <HeroActionButton
             variant='secondary'
             href={CLUB_CONFIG.website.demoUrl}
             target='_blank'
             rel='noopener noreferrer'>
-            Live-Demo ohne Account
+            {tCommon('ctaDemoNoAccount')}
           </HeroActionButton>
         </div>
 
         <div className='mt-7 flex flex-wrap items-center justify-center gap-2'>
-          {TRUST.map((item) => (
+          {trust.map((item) => (
             <HeroTrustBadge key={item} label={item} />
           ))}
         </div>

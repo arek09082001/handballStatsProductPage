@@ -1,11 +1,14 @@
+'use client';
+
 import { Check, Minus } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-import { Grain, SectionHeading } from '@/features/landing-page/components/tactic';
 import {
-  COMPARE_GROUPS,
-  LAUNCH_DATE_LABEL,
-  type CompareValue,
-} from '../data/pricing-content';
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import type { CompareGroup, CompareValue } from '../data/pricing-content';
+import { usePricingLabels } from '../data/use-pricing-labels';
 
 interface TierColumn {
   key: string;
@@ -32,18 +35,22 @@ const TICK_DISC = 'bg-success/20 text-[hsl(142_72%_20%)]';
  */
 const DASH = 'text-ink/55';
 
-const TIER_COLUMNS: readonly TierColumn[] = [
-  { key: 'basis', label: 'Basis', price: '0 €' },
-  { key: 'trainer', label: 'Trainer', price: '79 €', featured: true },
-  { key: 'pro', label: 'Pro', price: '159 €' },
-];
-
 /**
  * One cell. A tick and a dash are icons for sighted readers and words for
  * everybody else — a screen reader that meets a row of unlabelled `svg`s in a
  * comparison table learns nothing from it.
  */
-function Cell({ value, featured }: { value: CompareValue; featured?: boolean }) {
+function Cell({
+  value,
+  featured,
+  includedLabel,
+  notIncludedLabel,
+}: {
+  value: CompareValue;
+  featured?: boolean;
+  includedLabel: string;
+  notIncludedLabel: string;
+}) {
   return (
     <td
       className={cn(
@@ -59,12 +66,12 @@ function Cell({ value, featured }: { value: CompareValue; featured?: boolean }) 
             )}>
             <Check className='size-3.5' strokeWidth={3} aria-hidden />
           </span>
-          <span className='sr-only'>enthalten</span>
+          <span className='sr-only'>{includedLabel}</span>
         </>
       ) : value === false ? (
         <>
           <Minus className={cn('mx-auto size-4', DASH)} aria-hidden />
-          <span className='sr-only'>nicht enthalten</span>
+          <span className='sr-only'>{notIncludedLabel}</span>
         </>
       ) : (
         <span className='font-display text-[15px] font-bold tabular-nums text-ink'>
@@ -92,6 +99,33 @@ function Cell({ value, featured }: { value: CompareValue; featured?: boolean }) 
  * @returns A JSX element rendering the full plan comparison on the paper panel ground.
  */
 export default function PricingCompare() {
+  const t = useTranslations('pricingPage.compare');
+  const tTiers = useTranslations('pricingPage.tiers');
+  const labels = usePricingLabels();
+
+  const groups = t.raw('groups') as CompareGroup[];
+  const includedLabel = t('included');
+  const notIncludedLabel = t('notIncluded');
+
+  const tierColumns: readonly TierColumn[] = [
+    {
+      key: 'basis',
+      label: tTiers('items.0.name'),
+      price: tTiers('items.0.price.jahr.amount'),
+    },
+    {
+      key: 'trainer',
+      label: tTiers('items.1.name'),
+      price: tTiers('items.1.price.jahr.amount'),
+      featured: true,
+    },
+    {
+      key: 'pro',
+      label: tTiers('items.2.name'),
+      price: tTiers('items.2.price.jahr.amount'),
+    },
+  ];
+
   return (
     <section
       id='vergleich'
@@ -100,9 +134,9 @@ export default function PricingCompare() {
       <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Alles im Vergleich'
-          title='Was in welchem Plan drin ist'
-          description='Vollständig, ohne Sternchen: jede Funktion und jede Grenze, wie die App sie ab Januar tatsächlich anwendet.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] text-ink/70'>
@@ -114,17 +148,17 @@ export default function PricingCompare() {
               )}>
               <Check className='size-3' strokeWidth={3} aria-hidden />
             </span>
-            enthalten
+            {includedLabel}
           </span>
           <span className='inline-flex items-center gap-2'>
             <Minus className={cn('size-4', DASH)} aria-hidden />
-            nicht enthalten
+            {notIncludedLabel}
           </span>
-          <span>Zahlen sind Obergrenzen, gültig ab dem {LAUNCH_DATE_LABEL}.</span>
+          <span>{t('limitsNote', labels)}</span>
         </div>
 
         <div className='mt-12 flex flex-col gap-14'>
-          {COMPARE_GROUPS.map((group) => (
+          {groups.map((group) => (
             <section key={group.id} aria-labelledby={`vergleich-${group.id}`}>
               <h3
                 id={`vergleich-${group.id}`}
@@ -137,7 +171,7 @@ export default function PricingCompare() {
 
               <table className='mt-6 w-full table-fixed border-collapse text-left'>
                 <caption className='sr-only'>
-                  {group.title}: Funktionen und Grenzen je Plan
+                  {group.title}: {t('captionSuffix')}
                 </caption>
                 <colgroup>
                   <col />
@@ -147,10 +181,12 @@ export default function PricingCompare() {
                 </colgroup>
                 <thead>
                   <tr className='border-b-2 border-ink/25'>
-                    <th scope='col' className='py-2.5 pr-3 text-left font-normal'>
-                      <span className='sr-only'>Funktion oder Grenze</span>
+                    <th
+                      scope='col'
+                      className='py-2.5 pr-3 text-left font-normal'>
+                      <span className='sr-only'>{t('rowHeaderSr')}</span>
                     </th>
-                    {TIER_COLUMNS.map((tier) => (
+                    {tierColumns.map((tier) => (
                       <th
                         key={tier.key}
                         scope='col'
@@ -190,9 +226,22 @@ export default function PricingCompare() {
                           </span>
                         ) : null}
                       </th>
-                      <Cell value={row.basis} />
-                      <Cell value={row.trainer} featured />
-                      <Cell value={row.pro} />
+                      <Cell
+                        value={row.basis}
+                        includedLabel={includedLabel}
+                        notIncludedLabel={notIncludedLabel}
+                      />
+                      <Cell
+                        value={row.trainer}
+                        featured
+                        includedLabel={includedLabel}
+                        notIncludedLabel={notIncludedLabel}
+                      />
+                      <Cell
+                        value={row.pro}
+                        includedLabel={includedLabel}
+                        notIncludedLabel={notIncludedLabel}
+                      />
                     </tr>
                   ))}
                 </tbody>
@@ -202,9 +251,7 @@ export default function PricingCompare() {
         </div>
 
         <p className='mt-12 max-w-[68ch] text-[15px] leading-7 text-ink/70'>
-          Die Grenzen greifen nie mitten im Spiel: Ob noch ein Spiel ins
-          Kontingent passt, wird beim Anlegen geprüft, nicht in der Halbzeitpause.
-          Eine begonnene Erfassung läuft immer zu Ende und wird immer gespeichert.
+          {t('closing')}
         </p>
       </div>
     </section>

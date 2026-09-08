@@ -213,7 +213,7 @@ export default function NavDropdown({
                 <Link
                   key={child.ident}
                   href={child.href}
-                  title={child.label ?? t(`items.${child.labelKey}`)}
+                  title={t(`items.${child.labelKey}`)}
                   tabIndex={isOpen ? undefined : -1}
                   aria-current={pathname === child.href ? 'page' : undefined}
                   onClick={close}
@@ -223,7 +223,7 @@ export default function NavDropdown({
                       ? 'bg-slate-950 text-white'
                       : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950',
                   )}>
-                  {child.label ?? t(`items.${child.labelKey}`)}
+                  {t(`items.${child.labelKey}`)}
                 </Link>
               ))}
             </div>

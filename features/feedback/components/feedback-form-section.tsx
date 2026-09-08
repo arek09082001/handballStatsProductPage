@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Mail, Send, User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
 import { toast } from 'sonner';
 import { useFeedback } from '@/lib/hooks/use-feedback';
 import { Button } from '@/components/ui/button';
@@ -25,6 +26,8 @@ import FeedbackRating from './feedback-rating';
  */
 export default function FeedbackFormSection() {
   const t = useTranslations('feedbackPage');
+  const tCommon = useTranslations('common');
+  const apiErrorMessage = useApiErrorMessage();
   const feedbackMutation = useFeedback();
 
   const [rating, setRating] = useState(0);
@@ -94,7 +97,7 @@ export default function FeedbackFormSection() {
         },
         onError: (error: Error) => {
           toast.error(t('errorTitle'), {
-            description: error.message || t('errorDescription'),
+            description: apiErrorMessage(error),
             duration: 6000,
           });
         },
@@ -237,7 +240,7 @@ export default function FeedbackFormSection() {
                   {t('privacyPrefix')}{' '}
                   <Link
                     href='/datenschutz'
-                    title='Zur Datenschutzerklärung'
+                    title={tCommon('privacyLinkTitle')}
                     className='font-semibold text-primary underline underline-offset-2'>
                     {t('privacyLink')}
                   </Link>{' '}

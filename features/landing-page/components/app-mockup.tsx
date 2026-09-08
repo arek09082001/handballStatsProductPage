@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import BoardScreenshot from './tactic/board-screenshot';
 
 /**
@@ -5,13 +8,15 @@ import BoardScreenshot from './tactic/board-screenshot';
  * board the way a coach reviews it on the sideline. Kept at native aspect ratio.
  */
 export default function AppMockup() {
+  const t = useTranslations('productPage.hero');
+
   return (
     <BoardScreenshot
       src='/heroImage.png'
-      alt='Handball-Statistiken live in der Statix App – Tore, Würfe und Paraden in Echtzeit erfassen'
+      alt={t('mockupAlt')}
       width={2560}
       height={1600}
-      label='Statix · Live-Erfassung'
+      label={t('mockupLabel')}
       tone='court'
       pin='tape'
       live

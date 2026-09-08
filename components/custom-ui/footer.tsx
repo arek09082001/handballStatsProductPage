@@ -118,7 +118,7 @@ export default function Footer() {
 
                 <div className='space-y-3'>
                   {group.items.map((link) => {
-                    const label = link.label ?? tNav(`items.${link.labelKey}`);
+                    const label = tNav(`items.${link.labelKey}`);
 
                     return (
                       <Link

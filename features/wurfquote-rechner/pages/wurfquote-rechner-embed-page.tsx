@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { SITE_URL } from '@/lib/seo';
 import { CALCULATOR_PAGE_PATH } from '../data/calculator-content';
 import WurfquoteCalculator from '../components/wurfquote-calculator';
@@ -13,11 +16,13 @@ import WurfquoteCalculator from '../components/wurfquote-calculator';
  * @returns A JSX element rendering the embeddable calculator.
  */
 export default function WurfquoteRechnerEmbedPage() {
+  const t = useTranslations('calculatorPage.calculator');
+
   return (
     <div className='min-h-screen bg-paper-2 px-3 py-4'>
       <div className='mx-auto flex w-full max-w-[620px] flex-col gap-3'>
         <h1 className='font-display text-lg font-bold tracking-tight text-ink'>
-          Wurfquote berechnen
+          {t('embedTitle')}
         </h1>
 
         <WurfquoteCalculator variant='embed' className='border border-ink/10' />
@@ -28,9 +33,9 @@ export default function WurfquoteRechnerEmbedPage() {
             target='_blank'
             rel='noopener'
             className='font-semibold text-primary underline underline-offset-4'>
-            Wurfquoten-Rechner von Statix
+            {t('embedAttributionLink')}
           </a>{' '}
-          – der Handball-Statistik-App für Trainer
+          {t('embedAttributionSuffix')}
         </p>
       </div>
     </div>

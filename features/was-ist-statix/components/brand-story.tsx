@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
-import { BRAND_AUDIENCES } from '../data/brand-content';
+import { useTranslations } from 'next-intl';
+import type { BrandAudience } from '../data/brand-content';
 import {
   BoardKicker,
   Grain,
@@ -16,21 +19,24 @@ import Reveal from './reveal';
  * @returns A JSX element rendering the audience roster and the founder story with a photo.
  */
 export default function BrandStory() {
+  const t = useTranslations('brandPage.story');
+  const audiences = t.raw('audiences') as BrandAudience[];
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-6xl px-6 sm:px-8'>
         <Reveal>
           <SectionHeading
-            kicker='Für wen?'
-            title='Für wen ist Statix gemacht?'
-            description='Vom Trainer an der Bank bis zu den Fans auf der Tribüne – Statix bringt allen rund ums Team echte Zahlen.'
+            kicker={t('kicker')}
+            title={t('title')}
+            description={t('description')}
             tone='paper'
           />
         </Reveal>
 
         <Reveal className='mt-14 grid gap-x-12 gap-y-2 border-t border-ink/12 sm:grid-cols-2'>
-          {BRAND_AUDIENCES.map((audience, index) => (
+          {audiences.map((audience, index) => (
             <div
               key={audience.title}
               className='flex gap-4 border-b border-ink/12 py-6'>
@@ -61,7 +67,7 @@ export default function BrandStory() {
               <div className='relative min-h-64 lg:min-h-full'>
                 <Image
                   src='/saison-uebersicht-kennzahlen.jpg'
-                  alt='Saisonübersicht in Statix mit Angriffserfolg, Paradequote, Bilanz und Tordifferenz'
+                  alt={t('photoAlt')}
                   fill
                   sizes='(max-width: 1024px) 100vw, 50vw'
                   className='object-cover'
@@ -70,25 +76,13 @@ export default function BrandStory() {
               </div>
 
               <div className='p-8 sm:p-10'>
-                <BoardKicker>Der Kopf dahinter</BoardKicker>
+                <BoardKicker>{t('founderKicker')}</BoardKicker>
                 <h2 className='mt-3 font-display text-[1.75rem] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink sm:text-[2.1rem]'>
-                  Wer steckt hinter Statix?
+                  {t('founderTitle')}
                 </h2>
                 <div className='mt-5 space-y-4 text-base leading-8 text-ink/75'>
-                  <p>
-                    Statix wird von Arkadiusz Weiss entwickelt – einem
-                    Handballer aus Deutschland, der die App aus der eigenen
-                    Praxis am Spielfeldrand heraus gebaut hat. Der Name steht
-                    für das, was die App im Kern tut: Statistiken, die im
-                    Handball wirklich weiterhelfen.
-                  </p>
-                  <p>
-                    Statix ist kein anonymes Tool eines großen Konzerns:
-                    Feedback von Trainerinnen und Trainern aus der Halle fließt
-                    direkt in die Entwicklung ein, und neue Funktionen entstehen
-                    dort, wo sie gebraucht werden – auf der Bank, im Training und
-                    in der Nachbereitung.
-                  </p>
+                  <p>{t('founderParagraph1')}</p>
+                  <p>{t('founderParagraph2')}</p>
                 </div>
               </div>
             </div>

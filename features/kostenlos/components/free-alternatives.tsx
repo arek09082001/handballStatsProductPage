@@ -1,6 +1,13 @@
-import Link from 'next/link';
-import { BoardCard, Grain, SectionHeading } from '@/features/landing-page/components/tactic';
-import { FREE_ALTERNATIVES } from '../data/free-content';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import { inlineLink } from '@/components/custom-ui/rich-text';
+import type { FreeAlternative } from '../data/free-content';
 
 /**
  * The three genuinely free options a coach weighs — including the two that
@@ -9,19 +16,22 @@ import { FREE_ALTERNATIVES } from '../data/free-content';
  * @returns A JSX element rendering the free-alternatives comparison on paper.
  */
 export default function FreeAlternatives() {
+  const t = useTranslations('freePage.alternatives');
+  const options = t.raw('items') as FreeAlternative[];
+
   return (
     <section className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
       <div className='relative mx-auto max-w-6xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
-          kicker='Fair verglichen'
-          title='Kostenlose Alternativen im Vergleich'
-          description='Statix ist nicht die einzige Möglichkeit, ohne Geld an Handball-Statistiken zu kommen. Hier stehen alle drei nebeneinander.'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className='mt-12 grid gap-6 md:grid-cols-3'>
-          {FREE_ALTERNATIVES.map((option, index) => (
+          {options.map((option, index) => (
             <BoardCard
               key={option.name}
               pin='magnet'
@@ -30,13 +40,15 @@ export default function FreeAlternatives() {
               <h3 className='font-display text-xl font-bold tracking-tight text-ink'>
                 {option.name}
               </h3>
-              <p className='mt-1 font-hand text-xl text-primary'>{option.cost}</p>
+              <p className='mt-1 font-hand text-xl text-primary'>
+                {option.cost}
+              </p>
               <p className='mt-4 text-[15px] leading-7 text-ink/75'>
-                <span className='font-semibold text-ink'>Dafür gut: </span>
+                <span className='font-semibold text-ink'>{t('goodLabel')}</span>
                 {option.good}
               </p>
               <p className='mt-3 text-[15px] leading-7 text-ink/75'>
-                <span className='font-semibold text-ink'>Der Haken: </span>
+                <span className='font-semibold text-ink'>{t('badLabel')}</span>
                 {option.bad}
               </p>
             </BoardCard>
@@ -44,28 +56,11 @@ export default function FreeAlternatives() {
         </div>
 
         <p className='mt-10 max-w-[70ch] text-base leading-7 text-ink/70'>
-          Wenn du bei der Tabelle bleiben willst, nimm eine, die schon rechnet:
-          Unsere{' '}
-          <Link
-            href='/handball-statistik-excel-vorlage'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            kostenlose Handball-Statistik Excel-Vorlage
-          </Link>{' '}
-          bringt Kader, Spielprotokoll, Auswertung und Saisonblatt mit fertigen
-          Formeln mit – Download ohne Anmeldung. Für eine einzelne Quote
-          zwischendurch reicht der{' '}
-          <Link
-            href='/wurfquote-rechner'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            Wurfquoten-Rechner
-          </Link>
-          , und im Ratgeber steht, wie du{' '}
-          <Link
-            href='/ratgeber/handball-statistik-fuehren'
-            className='font-semibold text-primary underline underline-offset-4 hover:text-primary/80'>
-            eine Handball-Statistik sauber führst
-          </Link>
-          .
+          {t.rich('closing', {
+            template: inlineLink('/handball-statistik-excel-vorlage'),
+            calculator: inlineLink('/wurfquote-rechner'),
+            guide: inlineLink('/ratgeber/handball-statistik-fuehren'),
+          })}
         </p>
       </div>
     </section>
