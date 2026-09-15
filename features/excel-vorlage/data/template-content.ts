@@ -20,7 +20,7 @@ export const TEMPLATE_FILE = {
   actionRows: 400,
   games: 30,
   squadSlots: 20,
-  sheets: ['Kader', 'Spielprotokoll', 'Auswertung', 'Saison'],
+  sheets: ['Start', 'Kader', 'Spielprotokoll', 'Auswertung', 'Saison'],
 } as const;
 
 export interface MetricGroup {

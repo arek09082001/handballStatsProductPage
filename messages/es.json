@@ -2951,7 +2951,7 @@
       "titleLead": "Plantilla de Excel para",
       "titleHighlight": "estadísticas de balonmano",
       "titleTail": "gratis",
-      "lede": "Cuatro hojas, fórmulas ya hechas y encabezados de columna en alemán: Kader (plantilla), Spielprotokoll (acta del partido), Auswertung (análisis) y Saison (temporada). La efectividad de tiro, el porcentaje de siete metros y el de paradas se calculan solos; tú solo anotas lo que pasa en la pista. Sin registro y sin dirección de correo.",
+      "lede": "Cinco hojas, fórmulas ya hechas y encabezados de columna en alemán: Start (inicio), Kader (plantilla), Spielprotokoll (acta del partido), Auswertung (análisis) y Saison (temporada). La hoja de inicio explica en cuatro pasos qué va dónde; la efectividad de tiro, el porcentaje de siete metros y el de paradas se calculan solos. Sin registro y sin dirección de correo.",
       "squadSlots": "{count} plazas de plantilla",
       "actionRows": "{count} filas de acciones",
       "games": "{count} partidos por temporada",
@@ -2978,10 +2978,20 @@
       "missingConsent": "Para el boletín necesito las dos casillas. La plantilla la consigues igualmente sin ellas."
     },
     "metrics": {
-      "kicker": "Cuatro hojas",
+      "kicker": "Cinco hojas",
       "title": "Qué recoge la plantilla",
       "description": "Nada de esto tienes que montarlo tú: las fórmulas ya están dentro y calculan en cuanto escribes la primera fila.",
       "groups": [
+        {
+          "sheet": "Start (inicio)",
+          "description": "Las instrucciones están dentro del archivo: cuatro pasos, una leyenda de colores y dos campos para el nombre del equipo y la temporada, que luego aparecen arriba en cada hoja.",
+          "metrics": [
+            "Instrucciones en cuatro pasos",
+            "Nombre del equipo y temporada, una sola vez",
+            "Leyenda de colores: beis lo escribes tú, blanco se calcula",
+            "Resumen de todas las hojas"
+          ]
+        },
         {
           "sheet": "Kader (plantilla)",
           "description": "Tu equipo con dorsal, nombre, posición y año de nacimiento. El dorsal es la clave: todas las demás hojas toman el nombre de ahí automáticamente.",
@@ -2995,7 +3005,7 @@
         },
         {
           "sheet": "Spielprotokoll (acta del partido)",
-          "description": "Una fila por acción, tal y como ocurre de verdad a pie de pista. La acción y la zona de tiro se eligen de una lista; el nombre no hay que escribirlo nunca.",
+          "description": "Una fila por acción, tal como ocurre de verdad a pie de pista. Partido, acción y zona de tiro salen de listas desplegables y el nombre no lo escribes nunca. Solo tres columnas son obligatorias; minuto, zona y nota son opcionales.",
           "metrics": [
             "Gol y tiro fallado",
             "Siete metros (gol / fallo)",
@@ -3008,8 +3018,10 @@
         },
         {
           "sheet": "Auswertung (análisis)",
-          "description": "Un partido, todos los jugadores, ya calculado. Arriba escribes la denominación del partido; el resto ya está.",
+          "description": "Un partido, todos los jugadores, ya calculado. Eliges arriba el partido en la lista: fecha, rival, resultado y todos los porcentajes están ahí.",
           "metrics": [
+            "Fecha, rival y resultado del partido elegido",
+            "Porcentajes con color: flojo en rojo, bueno en verde",
             "Tiros y goles por jugador",
             "Efectividad de tiro en porcentaje",
             "Porcentaje de siete metros",
@@ -3040,23 +3052,23 @@
       "steps": [
         {
           "name": "Introducir la plantilla una vez",
-          "text": "En la hoja «Kader» anota dorsal, nombre y posición de tus jugadores. Eso se hace una vez por temporada. Las cuatro filas de ejemplo en gris se sobrescriben sin más."
+          "text": "Abre la hoja «Start»: ahí anotas equipo y temporada y ves la leyenda de colores. Después ve a «Kader»: dorsal, nombre y posición. Eso se hace una vez por temporada y las filas de ejemplo en beis se sobrescriben sin más."
         },
         {
           "name": "Nombrar el partido",
-          "text": "Dale al partido una denominación corta en la hoja «Saison», por ejemplo Sp1, junto con la fecha y el rival. Esa misma denominación la usarás enseguida en el acta."
+          "text": "Dale al partido una denominación corta en la hoja «Saison», por ejemplo Sp1, junto con la fecha y el rival. Esa denominación aparece luego en cada lista desplegable: no vuelves a escribirla."
         },
         {
           "name": "Registrar cada acción como una fila",
-          "text": "En la hoja «Spielprotokoll» anotas una fila por acción: partido, minuto, dorsal, acción y zona de tiro. El nombre aparece solo. La acción y la zona se eligen de la lista: un clic en lugar de escribir."
+          "text": "En la hoja «Spielprotokoll» anotas una fila por acción: con partido, dorsal y acción basta. Partido, acción y zona salen de listas y el nombre aparece solo. Un dorsal que no esté en la plantilla se marca en rojo."
         },
         {
           "name": "Aprovechar el descanso",
-          "text": "En la pausa echa un vistazo rápido a la hoja «Auswertung». Las efectividades de tiro y de paradas ya están calculadas: suficiente para una charla basada en números y no en sensaciones."
+          "text": "En el descanso echa un vistazo a la hoja «Auswertung». La efectividad de tiro y la de paradas están listas y con color: suficiente para una charla basada en números y no en sensaciones."
         },
         {
           "name": "Analizar después del partido",
-          "text": "Escribe arriba en el análisis la denominación del partido e imprime la hoja o compártela. La hoja de temporada se actualiza sola con cada partido registrado."
+          "text": "Elige arriba del análisis el partido en la lista: rival, fecha y resultado están al lado y cada jugador debajo. Imprime la hoja o compártela; la hoja de temporada se actualiza sola con cada partido registrado."
         }
       ],
       "closing": "Si al registrar dudas sobre qué cuenta como tiro y qué no: en la guía se explica <guide>cómo llevar bien una estadística de balonmano</guide> y cómo <rate>calcular la efectividad de tiro e interpretarla correctamente</rate>. Para valores sueltos está la <calculator>calculadora de efectividad de tiro</calculator>."

@@ -2951,7 +2951,7 @@
       "titleLead": "Handball statistics",
       "titleHighlight": "Excel template",
       "titleTail": "for free",
-      "lede": "Four sheets, finished formulas, German column headers: Kader (squad), Spielprotokoll (match log), Auswertung (analysis) and Saison (season). Shooting percentage, seven-metre rate and save percentage work themselves out – you only enter what happens on court. No sign-up, no email address.",
+      "lede": "Five sheets, finished formulas, German column headers: Start, Kader (squad), Spielprotokoll (match log), Auswertung (analysis) and Saison (season). The Start sheet explains in four steps what goes where – shooting percentage, seven-metre rate and save percentage work themselves out. No sign-up, no email address.",
       "squadSlots": "{count} squad slots",
       "actionRows": "{count} action rows",
       "games": "{count} matches per season",
@@ -2978,10 +2978,20 @@
       "missingConsent": "For the newsletter I need both boxes ticked. You get the template without them too."
     },
     "metrics": {
-      "kicker": "Four sheets",
+      "kicker": "Five sheets",
       "title": "What the template records",
       "description": "None of this you have to build yourself – the formulas are in there and calculate as soon as you enter the first row.",
       "groups": [
+        {
+          "sheet": "Start",
+          "description": "The instructions live inside the file: four steps, a colour legend and two fields for team name and season, which then appear at the top of every sheet.",
+          "metrics": [
+            "Instructions in four steps",
+            "Team name and season entered once",
+            "Colour legend: beige you fill in, white calculates",
+            "Overview of every sheet"
+          ]
+        },
         {
           "sheet": "Kader (squad)",
           "description": "Your team with shirt number, name, position and year of birth. The number is the key: every other sheet pulls the name from it automatically.",
@@ -2995,7 +3005,7 @@
         },
         {
           "sheet": "Spielprotokoll (match log)",
-          "description": "One row per action – the way it actually happens on the sideline. You pick the action and the shot zone from a list; you never have to type a name.",
+          "description": "One row per action – the way it actually happens at the side of the court. Match, action and shot zone come from drop-down lists, and you never type a name. Only three columns are required; minute, zone and note are optional.",
           "metrics": [
             "Goal and missed shot",
             "Seven metres (goal / miss)",
@@ -3008,8 +3018,10 @@
         },
         {
           "sheet": "Auswertung (analysis)",
-          "description": "One match, every player, worked out. You enter the match label at the top – the rest is already there.",
+          "description": "One match, every player, fully calculated. You pick the match from the list at the top – date, opponent, score and all percentages are right there.",
           "metrics": [
+            "Date, opponent and score of the selected match",
+            "Percentages colour-coded: weak red, strong green",
             "Shots and goals per player",
             "Shooting percentage",
             "Seven-metre rate",
@@ -3040,23 +3052,23 @@
       "steps": [
         {
           "name": "Enter the squad once",
-          "text": "In the “Kader” sheet, enter your players' shirt numbers, names and positions. You do that once a season. The four grey example rows you simply overwrite."
+          "text": "Open the “Start” sheet: enter your team and season there and see the colour legend. Then go to “Kader” – shirt number, name and position. You do that once a season, and the beige example rows you simply overwrite."
         },
         {
           "name": "Name the match",
-          "text": "Give the match a short label in the “Saison” sheet, for example Sp1, plus date and opponent. You use exactly that label in the log in a moment."
+          "text": "Give the match a short label in the “Saison” sheet, for example Sp1, plus date and opponent. That label then appears in every drop-down – you never have to type it again."
         },
         {
           "name": "Record every action as a row",
-          "text": "In the “Spielprotokoll” sheet you enter one row per action: match, minute, shirt number, action and shot zone. The name appears automatically. Action and zone you pick from the list – one click instead of typing."
+          "text": "In the “Spielprotokoll” sheet you enter one row per action: match, number and action are enough. Match, action and zone come from drop-downs, the name appears automatically. A number that is not in the squad turns red."
         },
         {
           "name": "Use half time",
-          "text": "In the break, take a quick look at the “Auswertung” sheet. Shooting and save percentages are already worked out there – enough for a team talk based on numbers rather than on feeling."
+          "text": "Take a quick look at the “Auswertung” sheet at half time. Shooting and save percentages are there, finished and colour-coded – enough for a team talk based on numbers rather than gut feeling."
         },
         {
           "name": "Analyse after the match",
-          "text": "Enter the match label at the top of the analysis sheet and print it or share it. The season sheet updates itself with every recorded match."
+          "text": "Pick the match from the list at the top of the analysis sheet: opponent, date and score sit next to it, every player below. Print the sheet or share it – the season sheet updates itself with every recorded match."
         }
       ],
       "closing": "If you are unsure what counts as a shot and what does not while recording: the guide explains <guide>how to keep handball statistics properly</guide> – and how to <rate>work out the shooting percentage and read it correctly</rate>. For individual figures in between there is the <calculator>shooting percentage calculator</calculator>."
