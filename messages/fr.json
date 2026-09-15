@@ -2951,7 +2951,7 @@
       "titleLead": "Modèle Excel de",
       "titleHighlight": "statistiques de handball",
       "titleTail": "gratuit",
-      "lede": "Quatre feuilles, des formules prêtes, des en-têtes de colonnes en allemand : Kader (effectif), Spielprotokoll (feuille de match), Auswertung (analyse) et Saison (saison). Pourcentage de tir, taux à sept mètres et pourcentage d’arrêts se calculent tout seuls – vous ne saisissez que ce qui se passe sur le terrain. Sans inscription, sans adresse e-mail.",
+      "lede": "Cinq feuilles, des formules prêtes, des en-têtes de colonnes en allemand : Start (accueil), Kader (effectif), Spielprotokoll (feuille de match), Auswertung (analyse) et Saison (saison). La feuille d’accueil explique en quatre étapes ce qui va où – pourcentage de tir, taux à sept mètres et pourcentage d’arrêts se calculent tout seuls. Sans inscription, sans adresse e-mail.",
       "squadSlots": "{count} places d’effectif",
       "actionRows": "{count} lignes d’actions",
       "games": "{count} matchs par saison",
@@ -2978,10 +2978,20 @@
       "missingConsent": "Pour la newsletter, j’ai besoin des deux cases. Le modèle, vous l’obtenez aussi sans."
     },
     "metrics": {
-      "kicker": "Quatre feuilles",
+      "kicker": "Cinq feuilles",
       "title": "Ce que le modèle enregistre",
       "description": "Rien de tout cela n’est à construire vous-même – les formules sont dedans et calculent dès que vous saisissez la première ligne.",
       "groups": [
+        {
+          "sheet": "Start (accueil)",
+          "description": "Le mode d’emploi est dans le fichier : quatre étapes, une légende de couleurs et deux champs pour le nom de l’équipe et la saison, qui apparaissent ensuite en haut de chaque feuille.",
+          "metrics": [
+            "Mode d’emploi en quatre étapes",
+            "Nom de l’équipe et saison saisis une fois",
+            "Légende : beige à remplir, blanc calculé",
+            "Vue d’ensemble des feuilles"
+          ]
+        },
         {
           "sheet": "Kader (effectif)",
           "description": "Votre équipe avec numéro, nom, poste et année de naissance. Le numéro est la clé : toutes les autres feuilles en tirent automatiquement le nom.",
@@ -2995,7 +3005,7 @@
         },
         {
           "sheet": "Spielprotokoll (feuille de match)",
-          "description": "Une ligne par action – comme cela se passe réellement au bord du terrain. L’action et la zone de tir se choisissent dans une liste ; le nom, vous n’avez jamais à le taper.",
+          "description": "Une ligne par action – comme cela se passe vraiment au bord du terrain. Match, action et zone de tir se choisissent dans des listes, et vous ne tapez jamais un nom. Trois colonnes seulement sont obligatoires ; minute, zone et note sont facultatives.",
           "metrics": [
             "But et tir manqué",
             "Sept mètres (but / manqué)",
@@ -3008,8 +3018,10 @@
         },
         {
           "sheet": "Auswertung (analyse)",
-          "description": "Un match, tous les joueurs, déjà calculé. Vous saisissez en haut le libellé du match – le reste est là.",
+          "description": "Un match, tous les joueurs, déjà calculé. Vous choisissez le match dans la liste en haut : date, adversaire, score et tous les pourcentages sont là.",
           "metrics": [
+            "Date, adversaire et score du match choisi",
+            "Pourcentages en couleur : faible en rouge, fort en vert",
             "Tirs et buts par joueur",
             "Pourcentage de tir",
             "Taux à sept mètres",
@@ -3040,23 +3052,23 @@
       "steps": [
         {
           "name": "Saisir l’effectif une fois",
-          "text": "Dans la feuille « Kader », saisissez numéro, nom et poste de vos joueurs. Cela se fait une fois par saison. Les quatre lignes d’exemple grisées, vous les écrasez simplement."
+          "text": "Ouvrez la feuille « Start » : vous y saisissez l’équipe et la saison et vous y voyez la légende des couleurs. Puis la feuille « Kader » – numéro, nom et poste. Cela se fait une fois par saison, et les lignes d’exemple beiges, vous les écrasez simplement."
         },
         {
           "name": "Nommer le match",
-          "text": "Donnez au match un libellé court dans la feuille « Saison », par exemple Sp1, avec la date et l’adversaire. C’est exactement ce libellé que vous utiliserez ensuite dans la feuille de match."
+          "text": "Donnez au match un libellé court dans la feuille « Saison », par exemple Sp1, avec la date et l’adversaire. Ce libellé apparaît ensuite dans chaque liste déroulante : vous ne le retaperez plus."
         },
         {
           "name": "Saisir chaque action comme une ligne",
-          "text": "Dans la feuille « Spielprotokoll », vous saisissez une ligne par action : match, minute, numéro, action et zone de tir. Le nom apparaît automatiquement. L’action et la zone se choisissent dans la liste – un clic plutôt que de taper."
+          "text": "Dans la feuille « Spielprotokoll », vous saisissez une ligne par action : match, numéro et action suffisent. Match, action et zone viennent de listes, le nom s’affiche tout seul. Un numéro absent de l’effectif passe en rouge."
         },
         {
           "name": "Profiter de la mi-temps",
-          "text": "Pendant la pause, jetez un œil à la feuille « Auswertung ». Les pourcentages de tir et d’arrêts y sont déjà calculés – de quoi faire une causerie fondée sur des chiffres plutôt que sur une impression."
+          "text": "À la mi-temps, jetez un œil à la feuille « Auswertung ». Pourcentages de tir et d’arrêts y sont déjà calculés et colorés – de quoi faire une causerie fondée sur des chiffres plutôt que sur une impression."
         },
         {
           "name": "Analyser après le match",
-          "text": "Saisissez en haut de l’analyse le libellé du match, puis imprimez la feuille ou partagez-la. La feuille de saison se met à jour d’elle-même à chaque match saisi."
+          "text": "Choisissez en haut de l’analyse le match dans la liste : adversaire, date et score sont à côté, chaque joueur en dessous. Imprimez la feuille ou partagez-la – la feuille de saison se met à jour d’elle-même à chaque match saisi."
         }
       ],
       "closing": "Si vous hésitez sur ce qui compte comme tir et ce qui n’en est pas : le guide explique <guide>comment tenir proprement une statistique de handball</guide> – et comment <rate>calculer le pourcentage de tir et l’interpréter correctement</rate>. Pour une valeur isolée, il y a le <calculator>calculateur de pourcentage de tir</calculator>."

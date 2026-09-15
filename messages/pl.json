@@ -2951,7 +2951,7 @@
       "titleLead": "Szablon Excel do",
       "titleHighlight": "statystyk piłki ręcznej",
       "titleTail": "za darmo",
-      "lede": "Cztery arkusze, gotowe formuły, niemieckie nagłówki kolumn: Kader (kadra), Spielprotokoll (protokół meczu), Auswertung (analiza) i Saison (sezon). Skuteczność rzutów, skuteczność siedmiu metrów i skuteczność obron liczą się same – ty wpisujesz tylko to, co dzieje się na boisku. Bez rejestracji i bez adresu e-mail.",
+      "lede": "Pięć arkuszy, gotowe formuły, niemieckie nagłówki kolumn: Start, Kader (kadra), Spielprotokoll (protokół meczu), Auswertung (analiza) i Saison (sezon). Arkusz startowy tłumaczy w czterech krokach, co gdzie wpisać – skuteczność rzutów, skuteczność siedmiu metrów i skuteczność obron liczą się same. Bez rejestracji i bez adresu e-mail.",
       "squadSlots": "{count} miejsc w kadrze",
       "actionRows": "{count} wierszy akcji",
       "games": "{count} meczów na sezon",
@@ -2978,10 +2978,20 @@
       "missingConsent": "Do newslettera potrzebuję obu zaznaczeń. Szablon dostaniesz też bez nich."
     },
     "metrics": {
-      "kicker": "Cztery arkusze",
+      "kicker": "Pięć arkuszy",
       "title": "Co rejestruje szablon",
       "description": "Niczego z tego nie musisz budować sam – formuły są w środku i liczą, gdy tylko wpiszesz pierwszy wiersz.",
       "groups": [
+        {
+          "sheet": "Start",
+          "description": "Instrukcja jest w samym pliku: cztery kroki, legenda kolorów i dwa pola na nazwę drużyny oraz sezon, które potem pojawiają się u góry każdego arkusza.",
+          "metrics": [
+            "Instrukcja w czterech krokach",
+            "Nazwa drużyny i sezon wpisywane raz",
+            "Legenda kolorów: beż wpisujesz, biel się liczy",
+            "Przegląd wszystkich arkuszy"
+          ]
+        },
         {
           "sheet": "Kader (kadra)",
           "description": "Twoja drużyna z numerem, nazwiskiem, pozycją i rocznikiem. Numer jest kluczem: wszystkie inne arkusze automatycznie pobierają z niego nazwisko.",
@@ -2995,7 +3005,7 @@
         },
         {
           "sheet": "Spielprotokoll (protokół meczu)",
-          "description": "Jeden wiersz na akcję – dokładnie tak, jak dzieje się to przy linii bocznej. Akcję i strefę rzutu wybierasz z listy, nazwiska nigdy nie musisz pisać.",
+          "description": "Jeden wiersz na akcję – dokładnie tak, jak to wygląda przy boisku. Mecz, akcję i strefę rzutu wybierasz z list, nazwiska nie wpisujesz nigdy. Obowiązkowe są tylko trzy kolumny; minuta, strefa i notatka są dobrowolne.",
           "metrics": [
             "Bramka i rzut niecelny",
             "Siedem metrów (bramka / niecelny)",
@@ -3008,8 +3018,10 @@
         },
         {
           "sheet": "Auswertung (analiza)",
-          "description": "Jeden mecz, wszyscy zawodnicy, wszystko policzone. U góry wpisujesz oznaczenie meczu – reszta już tam jest.",
+          "description": "Jeden mecz, wszyscy zawodnicy, wszystko policzone. U góry wybierasz mecz z listy – data, rywal, wynik i wszystkie skuteczności są na miejscu.",
           "metrics": [
+            "Data, rywal i wynik wybranego meczu",
+            "Skuteczności na kolorowo: słabe na czerwono, dobre na zielono",
             "Rzuty i bramki na zawodnika",
             "Skuteczność rzutów w procentach",
             "Skuteczność z siedmiu metrów",
@@ -3040,23 +3052,23 @@
       "steps": [
         {
           "name": "Raz wpisać kadrę",
-          "text": "W arkuszu „Kader” wpisz numery, nazwiska i pozycje swoich zawodników. Robisz to raz na sezon. Cztery szare wiersze przykładowe po prostu nadpisujesz."
+          "text": "Otwórz arkusz „Start”: wpisujesz tam drużynę i sezon oraz widzisz legendę kolorów. Potem przejdź do arkusza „Kader” – numer, nazwisko i pozycja. Robisz to raz na sezon, a beżowe wiersze przykładowe po prostu nadpisujesz."
         },
         {
           "name": "Nazwać mecz",
-          "text": "Nadaj meczowi krótkie oznaczenie w arkuszu „Saison”, na przykład Sp1, do tego datę i rywala. Dokładnie tego oznaczenia użyjesz zaraz w protokole."
+          "text": "Nadaj meczowi krótkie oznaczenie w arkuszu „Saison”, na przykład Sp1, do tego datę i rywala. To oznaczenie pojawia się potem w każdej liście wyboru – nie musisz go już nigdy wpisywać."
         },
         {
           "name": "Każdą akcję jako wiersz",
-          "text": "W arkuszu „Spielprotokoll” wpisujesz jeden wiersz na akcję: mecz, minuta, numer, akcja i strefa rzutu. Nazwisko pojawia się samo. Akcję i strefę wybierasz z listy – jedno kliknięcie zamiast pisania."
+          "text": "W arkuszu „Spielprotokoll” wpisujesz jeden wiersz na akcję: wystarczą mecz, numer i akcja. Mecz, akcja i strefa pochodzą z list, nazwisko pojawia się samo. Numer spoza kadry podświetla się na czerwono."
         },
         {
           "name": "Wykorzystać przerwę",
-          "text": "W przerwie zajrzyj krótko do arkusza „Auswertung”. Skuteczność rzutów i obron jest już policzona – to wystarczy na odprawę opartą na liczbach, a nie na przeczuciu."
+          "text": "W przerwie zajrzyj na chwilę do arkusza „Auswertung”. Skuteczność rzutów i obron jest tam gotowa i pokolorowana – to wystarczy na odprawę opartą na liczbach, a nie na wrażeniu."
         },
         {
           "name": "Analiza po meczu",
-          "text": "Wpisz u góry analizy oznaczenie meczu i wydrukuj arkusz albo go udostępnij. Arkusz sezonu aktualizuje się sam z każdym zarejestrowanym meczem."
+          "text": "U góry analizy wybierz mecz z listy: rywal, data i wynik są obok, każdy zawodnik poniżej. Wydrukuj arkusz albo go udostępnij – arkusz sezonu aktualizuje się sam z każdym zarejestrowanym meczem."
         }
       ],
       "closing": "Jeśli przy rejestrowaniu nie masz pewności, co liczy się jako rzut, a co nie: w poradniku opisujemy, <guide>jak porządnie prowadzić statystykę piłki ręcznej</guide> – oraz jak <rate>obliczyć skuteczność rzutów i dobrze ją odczytać</rate>. Do pojedynczych wartości jest <calculator>kalkulator skuteczności rzutów</calculator>."
