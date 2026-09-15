@@ -4108,6 +4108,10 @@
             "value": "Un geste, deux avec la position de tir"
           },
           {
+            "term": "Niveau de saisie",
+            "value": "Rapide, normal ou détaillé"
+          },
+          {
             "term": "Fonctionne sur",
             "value": "Téléphone, tablette, iPad, ordinateur portable"
           },
@@ -4272,6 +4276,10 @@
             "value": "Lien ou QR code, sans compte"
           },
           {
+            "term": "Sponsors",
+            "value": "Les logos du club peuvent être affichés"
+          },
+          {
             "term": "Décalage",
             "value": "Pratiquement aucun — c'est la même touche"
           },
@@ -4325,6 +4333,10 @@
           {
             "question": "Le live-score reste-t-il en ligne après le match ?",
             "answer": "Seulement tant que vous le laissez publié. Dès que vous mettez fin à la publication, le lien ne vaut plus rien — y compris celui que quelqu'un a déjà transféré."
+          },
+          {
+            "question": "Une joueuse peut-elle demander que son nom n’apparaisse pas dans le live ?",
+            "answer": "Oui. Celle qui a son propre accès décide dans les réglages que son nom n’apparaisse pas sur les pages publiques : seul le numéro est alors affiché. Cette décision prime sur le réglage de l’équipe et le staff ne peut pas la renverser."
           }
         ]
       },
@@ -4407,6 +4419,10 @@
           {
             "question": "Et les joueuses qui changent d'équipe ?",
             "answer": "Au sein d'un club, le parcours reste visible d'une équipe à l'autre — voir Espace club. Sans club, une fiche d'effectif appartient à exactement une équipe."
+          },
+          {
+            "question": "Les joueurs voient-ils leurs propres chiffres ?",
+            "answer": "Oui, s’ils ont leur propre accès. La joueuse voit alors son pourcentage de réussite, ses tirs par poste, son temps de jeu et sa présence aux entraînements — seulement les siens. Les chiffres des autres restent au staff."
           }
         ]
       },
@@ -4840,6 +4856,10 @@
           {
             "question": "Les joueuses voient-elles pourquoi quelqu'un a décliné ?",
             "answer": "Non. Le motif et la note d'une absence restent entre elle et le staff. L'équipe voit le chiffre, pas la phrase."
+          },
+          {
+            "question": "Statix rappelle-t-il les anniversaires ?",
+            "answer": "Oui. Si une date de naissance figure dans l’effectif, une carte annonce les 30 prochains jours et la vue mensuelle place un gâteau dans le jour. La carte peut être écartée si tu n’en as pas besoin."
           }
         ]
       },
@@ -4918,6 +4938,10 @@
           {
             "question": "Deux entraîneurs peuvent-ils travailler en même temps ?",
             "answer": "Sur la même équipe, oui — sur la même saisie en cours, non. Un match est saisi par une personne, parce que deux saisies parallèles finissent forcément par diverger."
+          },
+          {
+            "question": "Quelqu’un d’une autre équipe peut-il dépanner ?",
+            "answer": "Oui, au sein du même club. Si les deux équipes appartiennent à un club, une joueuse peut être ajoutée comme invitée pour une journée : elle reste dans l’effectif de son équipe et apparaît ici comme invitée."
           }
         ]
       },
@@ -5070,6 +5094,276 @@
           {
             "question": "Le mode tournoi fonctionne-t-il aussi pour un tournoi de préparation ?",
             "answer": "Oui. Tournoi de championnat, préparation ou tournoi en salle entre les fêtes : la mécanique ne change pas."
+          }
+        ]
+      },
+      {
+        "slug": "mannschaftskasse",
+        "name": "Amendes et caisse de l'équipe",
+        "short": "Amendes",
+        "headline": "Le papier du sac de l'entraîneur, que tout le monde peut lire",
+        "summary": "Un barème d'amendes, les amendes saisies et l'état de la caisse : en attente, payé, total. Chaque joueuse voit son propre compte.",
+        "tagline": "Ce que coûte quoi, qui doit quoi et ce qui est déjà payé : au même endroit, et plus sur un papier qu'une seule personne possède.",
+        "intro": [
+          "Presque chaque équipe a son barème d'amendes : cinq euros pour un retard, deux pour le téléphone au vestiaire, dix pour une absence non excusée. Et presque chaque équipe le tient sur un papier détenu par exactement une personne — papier qui, au moment où quelqu'un demande ce qu'il doit, est resté dans le sac de sport.",
+          "Dans Statix, tu écris le barème une fois. Ensuite, une amende, ce sont deux touches : tu touches la joueuse, tu choisis la ligne. La date et une note s'ajoutent dès que quelqu'un voudra s'y retrouver plus tard — « match à l'extérieur, vingt minutes de retard ». La caisse calcule au fur et à mesure : en attente, payé, total, par joueuse et pour toute l'équipe. Cocher une amende, c'est une touche.",
+          "La partie qui évite le plus de discussions, c'est la vue de l'autre côté : chaque joueuse ayant un accès voit dans « Mes amendes » son propre compte et le barème derrière. Personne n'a plus à demander, et personne n'apprend ce qu'il doit au moment où on le lui réclame. Et celle qui tient la caisse n'a pas besoin d'être dans le staff : une joueuse peut prendre en charge les amendes et reste joueuse."
+        ],
+        "facts": [
+          {
+            "term": "Barème",
+            "value": "Vos lignes, vos montants, votre ordre"
+          },
+          {
+            "term": "Saisie",
+            "value": "Deux touches : la joueuse, la ligne du barème"
+          },
+          {
+            "term": "La caisse",
+            "value": "En attente, payé, total — par joueuse"
+          },
+          {
+            "term": "Vue joueuse",
+            "value": "Chacune voit son propre compte"
+          },
+          {
+            "term": "Qui la tient",
+            "value": "Le staff — ou une joueuse chargée des amendes"
+          },
+          {
+            "term": "Montants",
+            "value": "Au centime, jamais arrondis"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Écrire le barème",
+            "body": "Ce que coûte un retard, un téléphone qui sonne, un maillot oublié. Fixé une fois, plus personne n'a besoin de s'en souvenir — ni d'en débattre."
+          },
+          {
+            "title": "Saisir une amende",
+            "body": "Joueuse, ligne, terminé. La date peut être antidatée, parce qu'une amende s'écrit régulièrement deux jours plus tard, et une note la rend reconnaissable des semaines après."
+          },
+          {
+            "title": "Cocher quand c'est payé",
+            "body": "Une touche transforme « en attente » en « payé ». Le montant en attente de la caisse est donc toujours celui qui reste réellement dû."
+          },
+          {
+            "title": "L'équipe lit en même temps",
+            "body": "Qui a un accès joueuse voit son propre compte et le barème. C'est la différence entre une caisse qui est tenue et une caisse qui est aussi acceptée."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Caisse de l'équipe dans Statix avec les amendes en attente et payées par joueuse",
+            "label": "La caisse : en attente, payé, total — et qui doit quoi"
+          },
+          {
+            "alt": "Saisir une amende dans Statix : choisir la ligne, puis la joueuse",
+            "label": "Saisir : le motif, puis la joueuse — c'est tout le geste"
+          },
+          {
+            "alt": "Barème d'amendes dans Statix avec les règles et les montants",
+            "label": "Le barème : ce que l'équipe a décidé pour chaque cas"
+          }
+        ],
+        "limits": [
+          "Statix n'encaisse pas d'argent. Ni paiement, ni prélèvement, ni relance : la caisse calcule, l'argent change de mains au vestiaire comme toujours.",
+          "Un changement de montant ne vaut que pour l'avenir. Si l'équipe décide en janvier qu'un retard coûte dix euros au lieu de cinq, les amendes d'octobre restent à cinq — sinon la somme annoncée à quelqu'un la semaine dernière ne serait plus la même cette semaine.",
+          "Cotisations, facturation et finances du club ne sont pas ici. C'est de l'administration de club, pas une caisse d'équipe."
+        ],
+        "faq": [
+          {
+            "question": "Qu'advient-il des anciennes amendes si nous changeons les montants ?",
+            "answer": "Rien. Une amende saisie retient le motif et le montant du jour où elle a été écrite ; le barème est le tarif d'aujourd'hui, l'amende la facture d'alors. C'est précisément pour cela qu'une décision de janvier ne réécrit pas quatre mois de comptes."
+          },
+          {
+            "question": "Une joueuse peut-elle tenir la caisse ?",
+            "answer": "Oui. La charge s'appelle simplement « Amendes » et tient à son compte dans cette équipe : elle saisit, coche et entretient le barème — et reste une joueuse avec ses convocations, ses chiffres et ses sondages. Elle ne devient pas entraîneuse."
+          },
+          {
+            "question": "Chaque joueuse voit-elle ce que doivent les autres ?",
+            "answer": "Non. « Mes amendes » montre son propre compte et le barème derrière. La vue d'ensemble de l'équipe est réservée au staff et à la joueuse qui tient la caisse."
+          },
+          {
+            "question": "Et si quelqu'un a une amende qui n'est pas justifiée ?",
+            "answer": "Chaque amende peut être modifiée ou supprimée, et une coche peut être retirée. Personne ne recompte une caisse sur papier si une faute de frappe ne peut jamais être corrigée."
+          }
+        ]
+      },
+      {
+        "slug": "trikotverwaltung",
+        "name": "Gestion des maillots",
+        "short": "Maillots",
+        "headline": "Qui a le 7, au fait ?",
+        "summary": "Des jeux de maillots avec couleurs, numéros et tailles, la distribution à l'équipe et l'historique de qui a eu quel maillot et quand.",
+        "tagline": "Jeu domicile, jeu extérieur, quel numéro est chez qui — et ce qui doit revenir en fin de saison.",
+        "intro": [
+          "Un jeu de maillots, c'est du matériel du club que quinze personnes emportent chez elles. En fin de saison il en manque deux, et plus personne ne sait si le 7 est chez la joueuse qui a arrêté l'hiver dernier ou dans la caisse du local à matériel.",
+          "Dans Statix, l'équipe a une armoire à maillots : un jeu domicile, un jeu extérieur, et un jeu spécial au besoin. Chaque jeu porte la couleur des joueuses de champ et celle de la gardienne — séparées, parce que c'est exactement là que tient la règle voulant que la gardienne se distingue des deux équipes. Puis les maillots eux-mêmes : numéro, taille, champ ou gardienne, et une note disant où le jeu est rangé.",
+          "La distribution se fait par glissement : le maillot sur la joueuse, avec une date. Chaque maillot retient qui l'avait avant, donc en fin de saison, qui a vu le 7 en dernier n'est pas une question — c'est écrit. Un maillot déchiré ou perdu est retiré du service plutôt que supprimé, pour que l'historique reste lisible."
+        ],
+        "facts": [
+          {
+            "term": "Jeux",
+            "value": "Domicile, extérieur et jeux spéciaux"
+          },
+          {
+            "term": "Couleurs",
+            "value": "Joueuses de champ et gardienne séparément"
+          },
+          {
+            "term": "Stock",
+            "value": "Numéro, taille, champ ou gardienne"
+          },
+          {
+            "term": "Création",
+            "value": "Par plage aussi : les numéros 2 à 15 d'un coup"
+          },
+          {
+            "term": "Distribution",
+            "value": "Par glissement sur la joueuse, avec la date"
+          },
+          {
+            "term": "Historique",
+            "value": "Qui avait le maillot avant"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Créer le jeu",
+            "body": "Nom, rôle et couleurs d'abord — « jeu domicile rouge », champ rouge, gardienne vert. La note dit où il est rangé et qui a la clé."
+          },
+          {
+            "title": "Saisir les maillots",
+            "body": "Les numéros 2 à 15 en une fois, les tailles avec, le maillot de gardienne comme type à part. Le numéro imprimé n'a rien à voir avec le numéro de l'effectif."
+          },
+          {
+            "title": "Distribuer",
+            "body": "Fais glisser un maillot sur une joueuse. Dès lors, l'armoire montre ce qui est dehors et ce qui reste dans la caisse."
+          },
+          {
+            "title": "Reprendre ou retirer",
+            "body": "Le retour clôt la distribution et laisse l'historique en place. Un maillot que plus personne ne peut porter est retiré du service — pas supprimé."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Armoire à maillots dans Statix avec le jeu domicile et extérieur et la distribution à l'équipe",
+            "label": "L'armoire : les deux jeux, qui porte quel numéro, ce qu'il reste"
+          }
+        ],
+        "limits": [
+          "Statix ne commande pas de maillots et ne connaît aucun prix. Il tient l'armoire que vous avez déjà.",
+          "Le numéro du maillot n'est pas le numéro de l'effectif. C'est voulu : un maillot peut aller à n'importe qui, et les numéros de l'effectif restent libres.",
+          "Il n'y a pas de photos des maillots, seulement des couleurs — ni de rappel indiquant à qui revient la lessive."
+        ],
+        "faq": [
+          {
+            "question": "Pourquoi le maillot a-t-il son propre numéro ?",
+            "answer": "Parce que c'est l'impression sur le tissu et non le numéro sous lequel quelqu'un joue. Distinguer les deux est tout l'intérêt : sinon un maillot ne pourrait aller qu'à la joueuse portant le même numéro."
+          },
+          {
+            "question": "Que se passe-t-il en fin de saison ?",
+            "answer": "Tu reprends les maillots, et toute distribution encore ouverte est la liste que tu envoies dans le groupe de l'équipe. L'historique reste lisible ensuite."
+          },
+          {
+            "question": "Pouvons-nous gérer plusieurs jeux ?",
+            "answer": "Oui. Il y a un jeu actif par rôle — un domicile et un extérieur — plus autant que vous voulez sans rôle fixe, par exemple l'ancien jeu gardé en réserve."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-zugang",
+        "name": "Accès joueurs",
+        "short": "App joueuse",
+        "headline": "L'équipe reçoit son propre accès",
+        "summary": "Un lien d'invitation pour toute l'équipe : les joueurs s'inscrivent eux-mêmes et voient ensuite leurs convocations, leurs propres chiffres, leurs sondages et leur compte d'amendes.",
+        "tagline": "Un lien, un QR code — ensuite chaque joueuse a son accès, et tu réponds à nettement moins de questions.",
+        "intro": [
+          "Statix n'est pas seulement un outil d'entraîneur. L'équipe reçoit son propre accès, et tu ne crées pas quinze comptes pour cela : il y a un lien pour tout l'effectif — en QR code à l'entraînement, par WhatsApp dans le groupe. Qui l'ouvre se retrouve elle-même dans l'effectif et choisit un mot de passe.",
+          "Elle voit ensuite son côté de l'application : les prochaines échéances avec réponse oui ou non, ses propres chiffres de tous les matchs terminés — pourcentage de réussite, tirs par poste, temps de jeu, présence aux entraînements —, les sondages ouverts et son compte d'amendes. Ce qu'elle ne voit pas : les chiffres des autres, les profils des autres joueuses, tes rapports d'IA.",
+          "Le contrôle reste au staff. Le lien expire, peut être régénéré ou désactivé, et la vue d'ensemble montre qui s'est inscrit et qui manque encore. Si quelqu'un quitte l'équipe, tu dissocies le compte — la ligne d'effectif et tout ce qui s'y rattache restent. À l'inverse, chaque joueuse décide elle-même si son nom apparaît sur les pages publiques comme le live ; cette décision prime sur le réglage de l'équipe."
+        ],
+        "facts": [
+          {
+            "term": "Invitation",
+            "value": "Un lien pour toutes — en QR code ou par WhatsApp"
+          },
+          {
+            "term": "Inscription",
+            "value": "Se choisir dans l'effectif, définir un mot de passe"
+          },
+          {
+            "term": "Elle voit",
+            "value": "Convocations, ses chiffres, sondages, amendes"
+          },
+          {
+            "term": "Elle ne voit pas",
+            "value": "Les statistiques des autres"
+          },
+          {
+            "term": "Vue d'ensemble",
+            "value": "Qui est déjà là, qui manque encore"
+          },
+          {
+            "term": "Révocation",
+            "value": "Désactiver le lien ou dissocier le compte"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Générer le lien",
+            "body": "Une fois, dans les réglages. Il vaut pour une durée limitée et peut être remplacé à tout moment — l'ancien cesse aussitôt de fonctionner."
+          },
+          {
+            "title": "Le donner à l'équipe",
+            "body": "Fais scanner le QR code à l'entraînement ou envoie le message tout prêt par WhatsApp. Les deux mènent au même endroit."
+          },
+          {
+            "title": "La joueuse s'inscrit elle-même",
+            "body": "Elle choisit sa place dans l'effectif, définit un mot de passe — terminé. Tu ne crées aucun compte et ne distribues aucun identifiant."
+          },
+          {
+            "title": "Suivre qui manque",
+            "body": "La vue d'ensemble indique à côté de chaque ligne si elle est liée à un compte. C'est la liste que tu traites au prochain entraînement."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Lien d'invitation pour les joueuses dans les réglages de Statix avec QR code et vue de l'effectif",
+            "label": "Un lien pour toute l'équipe — et qui est déjà inscrit"
+          },
+          {
+            "alt": "Statistiques personnelles d'une joueuse sur le téléphone",
+            "label": "Son côté : valeur de carte, courbe de forme et ses propres chiffres"
+          },
+          {
+            "alt": "Compte d'amendes d'une joueuse sur le téléphone",
+            "label": "Et son propre compte d'amendes, sans avoir à demander"
+          }
+        ],
+        "limits": [
+          "Les parents et les spectateurs n'ont pas d'accès. Pour tous ceux qui ne sont pas dans l'effectif, il y a le live public.",
+          "Un accès tient à une place dans l'effectif. Sans ligne d'effectif, pas de chiffres — qui change d'équipe est relié à nouveau par le staff.",
+          "Les joueurs ne modifient rien dans l'équipe : ils ne saisissent pas de match, ne créent pas d'échéance et ne voient aucun profil étranger."
+        ],
+        "faq": [
+          {
+            "question": "Dois-je créer un compte pour chaque joueuse ?",
+            "answer": "Non. Il y a un seul lien pour toute l'équipe ; chacune s'inscrit avec et se retrouve dans l'effectif. Tu ne distribues aucun mot de passe."
+          },
+          {
+            "question": "Ma joueuse voit-elle les chiffres des autres ?",
+            "answer": "Non. Elle voit les siens, issus des matchs que tu as saisis. L'effectif avec toutes ses valeurs, les profils et les rapports d'IA restent au staff."
+          },
+          {
+            "question": "Que se passe-t-il quand quelqu'un quitte l'équipe ?",
+            "answer": "Tu dissocies le compte. Il perd l'accès à l'équipe, la ligne d'effectif reste avec tous les matchs saisis — et quelqu'un d'autre pourra s'inscrire plus tard par le même lien."
+          },
+          {
+            "question": "Et les mineurs, et le nom dans le live ?",
+            "answer": "Chaque joueuse ayant un accès peut décider dans ses réglages que son nom n'apparaisse pas sur les pages publiques : seul le numéro s'affiche alors. Cette décision prime sur le réglage de l'équipe et le staff ne peut pas la renverser ; le consentement à la publication reste l'affaire du club et des représentants légaux."
           }
         ]
       },
@@ -5304,6 +5598,10 @@
           {
             "question": "Les parents peuvent-ils répondre ?",
             "answer": "Toute personne ayant le lien peut répondre et se choisit alors dans l'effectif. Chez les jeunes, c'est souvent justement le parent qui a le téléphone en main."
+          },
+          {
+            "question": "Et si l’équipe a déjà ses propres accès ?",
+            "answer": "Alors elle n’a pas besoin du lien : les sondages ouverts apparaissent dans l’application sous « Sondages » et s’y répondent directement. Le lien reste la voie pour tous ceux qui n’ont pas d’accès."
           }
         ]
       }

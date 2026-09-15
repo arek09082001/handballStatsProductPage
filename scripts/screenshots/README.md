@@ -93,6 +93,48 @@ EVENT_ID=<aus dem Seed> \
 node scripts/screenshots/capture.mjs capture --only termine
 ```
 
+## Kasse, Trikots, Spieler-Zugang (`--only organisation`, `--only spielerin`)
+
+Die Gruppen `organisation` (`strafen-kasse.png`, `strafen-erfassen.png`,
+`strafen-katalog.png`, `trikots-schrank.png`, `spieler-zugang.png`) und
+`spielerin` (`mobil-meine-statistik.png`, `mobil-meine-strafen.png`) brauchen
+eine lokale Instanz: die öffentliche Demo hat keine Strafen, keinen
+Trikotschrank und keine verknüpften Spielerkonten — und drei Leerzustände sind
+keine Feature-Seite.
+
+`scripts/screenshots/seed-team-organisation.mjs` legt beides an (Katalog mit
+acht Zeilen und rund zwanzig Strafen, zwei Trikotsätze mit Ausgabe und
+Historie, vier verknüpfte Spielerkonten samt Beitrittslink). **Die Datei gehört
+ins App-Repo**; dort:
+
+```bash
+cp <hier>/scripts/screenshots/seed-team-organisation.mjs scripts/seed-team-organisation.mjs
+node scripts/seed-demo.mjs && node scripts/seed-team-organisation.mjs
+```
+
+Wichtig: Die Instanz muss mit `NEXT_PUBLIC_APP_URL=https://app.statix-app.de`
+**gebaut** sein — der Einladungslink im Screenshot wird daraus erzeugt, und
+Next backt `NEXT_PUBLIC_*` beim Build ein. Mit der lokalen Adresse steht
+`http://localhost:3000/join/…` im Bild.
+
+Die Spielerinnen-Ansicht ist ein **zweiter Durchlauf mit einem anderen Konto**
+— das Trainerkonto hat keine Kaderzeile und bekäme unter `/my-stats` nur den
+Leerzustand:
+
+```bash
+STATIX_URL=http://localhost:3000 \
+STATIX_EMAIL=demo@statix-app.de STATIX_PASSWORD='StatixDemo!2026' \
+node scripts/screenshots/capture.mjs capture --only organisation
+
+STATIX_URL=http://localhost:3000 \
+STATIX_EMAIL=spielerin1@statix-app.de STATIX_PASSWORD='StatixDemo!2026' \
+node scripts/screenshots/capture.mjs capture --only spielerin
+```
+
+`--only` matcht auch Dateinamen-Fragmente: `--only strafen` nimmt deshalb
+`mobil-meine-strafen.png` mit — als Trainer aufgenommen ist das der
+Leerzustand. Die Gruppe `spielerin` danach noch einmal laufen lassen.
+
 ## Die Video-Screenshots (`--only video`)
 
 `video-tagging-spuren.png` und `video-tagging-katalog.png` sind **Ausschnitte**

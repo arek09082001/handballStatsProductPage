@@ -4108,6 +4108,10 @@
             "value": "One tap, two with the shot position"
           },
           {
+            "term": "Recording depth",
+            "value": "Quick, normal or detailed"
+          },
+          {
             "term": "Runs on",
             "value": "Phone, tablet, iPad, laptop"
           },
@@ -4272,6 +4276,10 @@
             "value": "Link or QR code, no account"
           },
           {
+            "term": "Sponsors",
+            "value": "Club logos can be shown"
+          },
+          {
             "term": "Delay",
             "value": "Practically none — it is the same tap"
           },
@@ -4325,6 +4333,10 @@
           {
             "question": "Does the ticker stay online after the match?",
             "answer": "Only for as long as you leave it released. End the publication and the link is invalid immediately — including the one somebody has already forwarded."
+          },
+          {
+            "question": "Can a player ask for her name to be kept out of the ticker?",
+            "answer": "Yes. Anyone with her own access decides in the settings that her name does not appear on public pages — only the number is shown then. That decision overrides the team setting and cannot be reversed by a coach."
           }
         ]
       },
@@ -4407,6 +4419,10 @@
           {
             "question": "What about players who move between teams?",
             "answer": "Within a club the career stays visible across the teams — see Club area. Without a club, a squad entry belongs to exactly one team."
+          },
+          {
+            "question": "Do the players see their own numbers?",
+            "answer": "Yes, if they have their own access. A player then sees her scoring rate, her shots by position, her minutes and her training attendance — only her own. Everyone else’s numbers stay with the coaching staff."
           }
         ]
       },
@@ -4840,6 +4856,10 @@
           {
             "question": "Do the players see why somebody has declined?",
             "answer": "No. The reason and the note on an absence are between her and the coaching team. The team sees the number, not the sentence."
+          },
+          {
+            "question": "Does Statix remind me of birthdays?",
+            "answer": "Yes. If a date of birth is in the roster, a card announces the next 30 days, and the month view puts a cake in the day. The card can be swiped away when you do not need it."
           }
         ]
       },
@@ -4918,6 +4938,10 @@
           {
             "question": "Can two coaches work at the same time?",
             "answer": "On the same team, yes — on the same running recording, no. One match is recorded by one person, because two parallel recordings inevitably drift apart."
+          },
+          {
+            "question": "Can somebody from another squad help out?",
+            "answer": "Yes, within the same club. If both squads belong to one club, a player can be added as a guest for one matchday — she stays in her own squad’s roster and shows up here as a guest."
           }
         ]
       },
@@ -5070,6 +5094,276 @@
           {
             "question": "Does tournament mode work for a pre-season tournament too?",
             "answer": "Yes. Whether it is a championship tournament, pre-season or an indoor tournament between Christmas and New Year changes nothing about the mechanics."
+          }
+        ]
+      },
+      {
+        "slug": "mannschaftskasse",
+        "name": "Fines & team kitty",
+        "short": "Fines",
+        "headline": "The note from the coach's bag that everyone can read",
+        "summary": "A fine catalogue, recorded fines and the state of the team kitty – open, paid, total. Every player sees her own account.",
+        "tagline": "What costs what, who owes what and what has been paid – in one place instead of on a note only one person has.",
+        "intro": [
+          "Almost every squad has a fine catalogue: five euros for being late, two for a phone in the dressing room, ten for missing training without notice. And almost every squad keeps it on a piece of paper exactly one person owns – which is usually in a sports bag when somebody asks what they actually owe.",
+          "In Statix you write the catalogue once. After that a fine is two taps: tap the player, pick the line. The date and a note belong to it whenever someone will want to follow it up later – \"away game, twenty minutes late\". The kitty adds up as you go: open, paid, total, per player and for the whole squad. Ticking one off is one tap.",
+          "The part that saves the most arguments is the view from the other side: every player with an account sees her own account and the catalogue behind it under \"My fines\". Nobody has to ask, and nobody finds out what they owe at the moment they are asked to pay it. And whoever runs the kitty does not have to be a coach: a player can take on the fines duty and stays a player."
+        ],
+        "facts": [
+          {
+            "term": "Catalogue",
+            "value": "Your own lines, prices and order"
+          },
+          {
+            "term": "Recording",
+            "value": "Two taps: player, catalogue line"
+          },
+          {
+            "term": "The kitty",
+            "value": "Open, paid, total – per player"
+          },
+          {
+            "term": "Player view",
+            "value": "Everyone sees her own account"
+          },
+          {
+            "term": "Who runs it",
+            "value": "The coaching staff – or a player with the duty"
+          },
+          {
+            "term": "Amounts",
+            "value": "To the cent, never rounded"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Write down the catalogue",
+            "body": "What being late costs, what a ringing phone costs, what a forgotten shirt costs. Agreed once, nobody has to remember it – or argue about it – again."
+          },
+          {
+            "title": "Record a fine",
+            "body": "Player, line, done. The date can be backdated, because a fine is regularly written up two days later, and a note makes it recognisable weeks afterwards."
+          },
+          {
+            "title": "Tick it off when it is paid",
+            "body": "One tap turns open into paid. The kitty's open balance is therefore always the amount that really is still outstanding."
+          },
+          {
+            "title": "The squad reads along",
+            "body": "Anyone with a player account sees her own account and the catalogue. That is the difference between a kitty that is kept and one that is also accepted."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Team kitty in Statix with open and paid fines per player",
+            "label": "The kitty: open, paid, total – and who owes what"
+          },
+          {
+            "alt": "Recording a fine in Statix: pick the line, pick the player",
+            "label": "Writing one up: pick the line, pick the player"
+          },
+          {
+            "alt": "Fine catalogue in Statix with rules and amounts",
+            "label": "The catalogue: what the squad agreed for which case"
+          }
+        ],
+        "limits": [
+          "Statix does not collect money. There is no payment, no direct debit and no reminder letter – the kitty does the arithmetic, the money changes hands in the dressing room as it always did.",
+          "A price change only works forwards. If the squad decides in January that lateness now costs ten euros instead of five, October's fines stay at five – otherwise the sum somebody was told last week would be a different one this week.",
+          "Membership fees, invoicing and club finances are not what this is. That is club administration, not a team kitty."
+        ],
+        "faq": [
+          {
+            "question": "What happens to old fines when we change the prices?",
+            "answer": "Nothing. A recorded fine remembers the reason and the amount from the day it was written; the catalogue is today's price list, the fine is the invoice from back then. That is exactly why a decision in January does not rewrite four months of accounts."
+          },
+          {
+            "question": "Can a player run the kitty?",
+            "answer": "Yes. The duty is simply called \"Fines\" and hangs on the account in this squad: she records, ticks off and maintains the catalogue – and stays a player with her own appointments, numbers and surveys. She does not become a coach."
+          },
+          {
+            "question": "Does every player see what the others owe?",
+            "answer": "No. \"My fines\" shows her own account and the catalogue behind it. The overview of the whole squad is for the coaching staff and the player who runs the kitty."
+          },
+          {
+            "question": "What if somebody is charged something that is wrong?",
+            "answer": "Every fine can be changed or deleted, and a tick can be taken back. Nobody checks a kitty on paper if a typo in it can never be corrected."
+          }
+        ]
+      },
+      {
+        "slug": "trikotverwaltung",
+        "name": "Shirt management",
+        "short": "Shirts",
+        "headline": "So who has number 7?",
+        "summary": "Shirt sets with colours, numbers and sizes, handing them out to the squad, and the history of who had which shirt when.",
+        "tagline": "Home set, away set, which number is with whom – and what has to come back at the end of the season.",
+        "intro": [
+          "A set of shirts is club property that fifteen people take home. At the end of the season two are missing, and nobody remembers whether number 7 is with the player who quit in the winter or in the box in the equipment room.",
+          "In Statix the squad has a shirt cupboard: a home set, an away set, a special set if you need one. Each set carries the colour of the field players and the colour of the goalkeeper – kept apart, because that is exactly where the rule sits that the goalkeeper has to differ from both teams. Then the shirts themselves: number, size, field or goalkeeper, and a note saying where the set lives.",
+          "Handing out is a drag: shirt onto the player, with a date. Every shirt remembers who had it before, so at the end of the season the question of who last saw number 7 is not a question – it is on the screen. A torn or lost shirt is retired rather than deleted, so the history stays readable."
+        ],
+        "facts": [
+          {
+            "term": "Sets",
+            "value": "Home, away and special sets"
+          },
+          {
+            "term": "Colours",
+            "value": "Field players and goalkeeper separately"
+          },
+          {
+            "term": "Stock",
+            "value": "Number, size, field or goalkeeper"
+          },
+          {
+            "term": "Adding",
+            "value": "As a range too: numbers 2 to 15 at once"
+          },
+          {
+            "term": "Handout",
+            "value": "Drag onto the player, with a date"
+          },
+          {
+            "term": "History",
+            "value": "Who had the shirt before"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Create the set",
+            "body": "Name, role and colours first – \"home set red\", field red, goalkeeper green. The note says where it lives and who has the key."
+          },
+          {
+            "title": "Enter the shirts",
+            "body": "Numbers 2 to 15 in one go, sizes with them, the goalkeeper shirt as its own kind. The number on the textile has nothing to do with the squad number."
+          },
+          {
+            "title": "Hand them out",
+            "body": "Drag a shirt onto a player. From then on the cupboard shows what is out there and what is still in the box."
+          },
+          {
+            "title": "Take back or retire",
+            "body": "A return closes the handout and leaves the history standing. A shirt nobody can wear any more is retired – not deleted."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Shirt cupboard in Statix with home and away set and the handout to the squad",
+            "label": "The cupboard: both sets, who wears which number, what is left"
+          }
+        ],
+        "limits": [
+          "Statix does not order shirts and knows no prices. It keeps the cupboard you already have.",
+          "The number on the shirt is not the squad number. That is deliberate: a shirt can go to anyone, and squad numbers stay free.",
+          "There are no photos of the shirts, only colours – and no reminder about whose turn it is to wash them."
+        ],
+        "faq": [
+          {
+            "question": "Why does the shirt have a number of its own?",
+            "answer": "Because it is the print on the fabric and not the number somebody plays under. Keeping the two apart is the whole point: otherwise a shirt could only go to the player with the same squad number."
+          },
+          {
+            "question": "What happens at the end of the season?",
+            "answer": "You take the shirts back, and whatever handout is still open is the list you post in the team chat. The history stays readable afterwards."
+          },
+          {
+            "question": "Can we keep more than one set?",
+            "answer": "Yes. There is one active set per role – a home set and an away set – plus as many as you like without a fixed role, such as the old set kept as a spare."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-zugang",
+        "name": "Player access",
+        "short": "Player app",
+        "headline": "The squad gets an account of its own",
+        "summary": "One invite link for the whole squad: players sign themselves up and then see their appointments, their own numbers, their surveys and their fine account.",
+        "tagline": "One link, one QR code – after that every player has her own access, and you answer far fewer questions.",
+        "intro": [
+          "Statix is not only a coach's tool. The squad gets access of its own, and you do not create fifteen accounts for it: there is one link for the whole team – as a QR code at training, over WhatsApp into the group. Whoever opens it picks herself out of the roster and sets a password.",
+          "After that she sees her side of the app: the next appointments with accept and decline, her own numbers from every finished game – scoring rate, shots by position, minutes played, training attendance –, open surveys and her fine account. What she does not see: the others' numbers, other players' profiles, your AI reports.",
+          "Control stays with the coaching staff. The link expires, can be regenerated or switched off, and the overview shows who has signed up and who has not. If somebody leaves the squad you unlink the account – the roster row and everything attached to it stays. The other way round, every player decides for herself whether her name appears on public pages such as the live ticker; that decision overrides the team's setting."
+        ],
+        "facts": [
+          {
+            "term": "Invitation",
+            "value": "One link for everyone – as a QR code or over WhatsApp"
+          },
+          {
+            "term": "Signing up",
+            "value": "Pick yourself in the roster, set a password"
+          },
+          {
+            "term": "She sees",
+            "value": "Appointments, her own numbers, surveys, fines"
+          },
+          {
+            "term": "She does not see",
+            "value": "The other players' statistics"
+          },
+          {
+            "term": "Overview",
+            "value": "Who is already in, who is still missing"
+          },
+          {
+            "term": "Revoking",
+            "value": "Switch off the link or unlink the account"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Create the link",
+            "body": "Once, in the settings. It is valid for a limited time and can be replaced at any moment – the old one stops working immediately."
+          },
+          {
+            "title": "Give it to the squad",
+            "body": "Have the QR code scanned at training or send the ready-made message over WhatsApp. Both lead to the same place."
+          },
+          {
+            "title": "The player signs herself up",
+            "body": "She picks her place in the roster, sets a password – done. You create no account and hand out no credentials."
+          },
+          {
+            "title": "Follow up who is missing",
+            "body": "The overview says next to every roster row whether it is linked to an account. That is the list you work through at the next training."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Player invite link in the Statix settings with QR code and roster overview",
+            "label": "One link for the whole squad – and who is already in"
+          },
+          {
+            "alt": "A player's own statistics on the phone",
+            "label": "Her side: card value, form curve and her own numbers"
+          },
+          {
+            "alt": "A player's fine account on the phone",
+            "label": "And her own fine account, without having to ask"
+          }
+        ],
+        "limits": [
+          "Parents and spectators get no access. For everyone outside the squad there is the public live ticker.",
+          "Access hangs on a place in the roster. Without a roster row there are no numbers – anyone changing squads is linked again by the coaching staff.",
+          "Players change nothing about the team: they record no games, create no appointments and see no other profiles."
+        ],
+        "faq": [
+          {
+            "question": "Do I have to create an account for every player?",
+            "answer": "No. There is a single link for the whole squad; everyone signs up with it and picks herself out of the roster. You hand out no passwords."
+          },
+          {
+            "question": "Does my player see the others' numbers?",
+            "answer": "No. She sees her own – from the games you recorded. The roster with all its values, the player profiles and the AI reports stay with the coaching staff."
+          },
+          {
+            "question": "What happens when somebody leaves the squad?",
+            "answer": "You unlink the account. It loses access to the team, the roster row stays with every recorded game on it – and somebody else can sign up later through the same link."
+          },
+          {
+            "question": "What about minors and names in the live ticker?",
+            "answer": "Every player with access can decide in her settings that her name is not shown on public pages – only the number appears then. That decision overrides the team's setting and cannot be reversed by a coach; consent for publishing itself remains a matter for the club and the parents."
           }
         ]
       },
@@ -5304,6 +5598,10 @@
           {
             "question": "Can parents answer?",
             "answer": "Anyone with the link can answer and picks themselves out of the squad while doing so. In youth teams that is often exactly the parent holding the phone."
+          },
+          {
+            "question": "And if the squad already has its own accounts?",
+            "answer": "Then it does not need the link: open surveys appear in the app under “Surveys” and are answered right there. The link stays the way in for everyone without an account."
           }
         ]
       }

@@ -66,7 +66,7 @@ screenshot and no navigation entry behind it.
 
 Every entry carries a `status`, and the site shows it:
 
-- **`live`** — finished, open to every account. Fourteen of the fifteen.
+- **`live`** — finished, open to every account. Sixteen of the eighteen.
 - **`beta`** — being built, restricted to named accounts. Listed anyway, marked
   "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
   something a new account gets today. Currently: **Video‑Tagging**.
@@ -89,6 +89,21 @@ The scope itself:
   deadlines with push reminders, and a read‑only ICS calendar subscription.
 - **Turniere:** multi‑team tournaments, auto‑updating table, start live games
   from the bracket, enter third‑party results, matchday squad selection.
+- **Strafen & Mannschaftskasse:** a squad's own fine catalogue, fines written
+  against a roster row in two taps with a backdatable day and a note, open/paid
+  totals per player and for the squad, and a player‑side account of her own.
+  Amounts are cents and frozen at the moment of writing — the catalogue is
+  today's price list, the fine the invoice from back then. The duty of running
+  the kitty can sit on a player (`manages_fines`) without making her a coach.
+- **Trikotverwaltung:** jersey sets with a home/away role and separate field and
+  goalkeeper colours, shirts with number, size and kind, handing them out to
+  players with a date, the per‑shirt history of who had it, and retirement
+  instead of deletion.
+- **Spieler‑Zugang:** one expiring join link per squad (QR code, WhatsApp
+  text), players pick their own roster row and set a password, and then reach
+  their own side of the app — schedule with RSVPs, their own stats, surveys,
+  fine account. A coach sees who is linked and can unlink; a player controls
+  whether her name shows on public pages, and that overrides the team setting.
 - **Live‑Ticker:** publish a game as a public live ticker; share by link or QR;
   score & timeline in real time; coach controls publish/stop.
 - **Zusammenarbeit:** share games with other coaches (read‑only, by link/email,

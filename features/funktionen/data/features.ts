@@ -367,7 +367,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/termine-abwesenheiten.png', width: 2560, height: 1600 },
       { src: '/mobil-termine.png', width: 780, height: 1688 },
     ],
-    related: ['team-management', 'spieler-umfragen', 'gegner-bilanz'],
+    related: ['team-management', 'spieler-zugang', 'spieler-umfragen'],
     ogImage: '/termine-kalender.png',
     meta: {
       title:
@@ -392,7 +392,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/teamManagement.png', width: 2560, height: 2000 },
       { src: '/gameListOverview.png', width: 2560, height: 2000 },
     ],
-    related: ['kader-kartenalbum', 'termine-und-teilnahme', 'vereinsbereich'],
+    related: ['kader-kartenalbum', 'trikotverwaltung', 'termine-und-teilnahme'],
     ogImage: '/teamManagement.png',
     meta: {
       title: 'Handball Team-Management: Kader, Spiele, Saisons & Trainerstab',
@@ -452,6 +452,73 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     },
   },
   {
+    slug: 'mannschaftskasse',
+    group: 'organisieren',
+    status: 'live',
+    shots: [
+      { src: '/strafen-kasse.png', width: 2560, height: 2000 },
+      { src: '/strafen-erfassen.png', width: 2560, height: 1600 },
+      { src: '/strafen-katalog.png', width: 2560, height: 1600 },
+    ],
+    related: ['spieler-zugang', 'team-management', 'termine-und-teilnahme'],
+    ogImage: '/strafen-kasse.png',
+    meta: {
+      title: 'Handball Mannschaftskasse & Strafenkatalog in der App',
+      description:
+        'Strafenkatalog mit eigenen Beträgen, Strafen in zwei Tipps eintragen, offene und bezahlte Beträge je Spielerin — und jede Spielerin sieht ihr eigenes Konto.',
+      keywords: [
+        'handball mannschaftskasse app',
+        'strafenkatalog mannschaft',
+        'mannschaftskasse verwalten app',
+        'handball strafen app',
+        'strafenkasse verein',
+      ],
+    },
+  },
+  {
+    slug: 'trikotverwaltung',
+    group: 'organisieren',
+    status: 'live',
+    shots: [{ src: '/trikots-schrank.png', width: 2560, height: 2000 }],
+    related: ['team-management', 'mannschaftskasse', 'spieler-zugang'],
+    ogImage: '/trikots-schrank.png',
+    meta: {
+      title: 'Handball Trikotverwaltung: Sätze, Nummern und Ausgabe',
+      description:
+        'Trikotsätze mit Farben für Feld und Tor, Bestand mit Nummern und Größen, Ausgabe an die Mannschaft und die Historie, wer welches Hemd wann hatte.',
+      keywords: [
+        'handball trikotverwaltung',
+        'trikotsätze verwalten verein',
+        'trikot ausgabe mannschaft app',
+        'handball trikots verwalten',
+      ],
+    },
+  },
+  {
+    slug: 'spieler-zugang',
+    group: 'organisieren',
+    status: 'live',
+    shots: [
+      { src: '/spieler-zugang.png', width: 1408, height: 2212 },
+      { src: '/mobil-meine-statistik.png', width: 780, height: 1688 },
+      { src: '/mobil-meine-strafen.png', width: 780, height: 1688 },
+    ],
+    related: ['termine-und-teilnahme', 'spieler-umfragen', 'mannschaftskasse'],
+    ogImage: '/spieler-zugang.png',
+    meta: {
+      title: 'Handball App für Spieler: eigener Zugang für die Mannschaft',
+      description:
+        'Ein Einladungslink für die ganze Mannschaft: Spieler melden sich selbst an und sehen danach Termine, ihre eigenen Zahlen, Umfragen und ihr Strafenkonto. Die Kontrolle bleibt beim Trainerteam.',
+      keywords: [
+        'handball app für spieler',
+        'handball team app spieler zugang',
+        'handball statistik für spieler',
+        'mannschaft app zugang einladen',
+        'handball spieler eigene statistik',
+      ],
+    },
+  },
+  {
     slug: 'vereinsbereich',
     group: 'organisieren',
     status: 'onRequest',
@@ -503,9 +570,9 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     status: 'live',
     shots: [{ src: '/spielerumfragen.png', width: 2560, height: 1600 }],
     related: [
+      'spieler-zugang',
       'termine-und-teilnahme',
       'trainer-zusammenarbeit',
-      'team-management',
     ],
     ogImage: '/spielerumfragen.png',
     meta: {

@@ -4108,6 +4108,10 @@
             "value": "Un toque; dos con la posición de tiro"
           },
           {
+            "term": "Nivel de detalle",
+            "value": "Rápido, normal o detallado"
+          },
+          {
             "term": "Funciona en",
             "value": "Móvil, tableta, iPad, portátil"
           },
@@ -4272,6 +4276,10 @@
             "value": "Enlace o código QR, sin cuenta"
           },
           {
+            "term": "Patrocinadores",
+            "value": "Se pueden mostrar los logos del club"
+          },
+          {
             "term": "Retardo",
             "value": "Prácticamente ninguno: es el mismo toque"
           },
@@ -4325,6 +4333,10 @@
           {
             "question": "¿El marcador sigue en línea después del partido?",
             "answer": "Solo mientras lo dejes publicado. En cuanto terminas la publicación el enlace deja de valer al instante, también el que alguien ya haya reenviado."
+          },
+          {
+            "question": "¿Puede una jugadora pedir que su nombre no salga en el directo?",
+            "answer": "Sí. Quien tiene acceso propio decide en los ajustes que su nombre no aparezca en las páginas públicas: entonces solo se ve el dorsal. Esa decisión prevalece sobre el ajuste del equipo y el cuerpo técnico no puede revertirla."
           }
         ]
       },
@@ -4407,6 +4419,10 @@
           {
             "question": "¿Y las jugadoras que cambian de equipo?",
             "answer": "Dentro de un club la trayectoria sigue visible entre equipos: véase Área de club. Sin club, una ficha de plantilla pertenece exactamente a un equipo."
+          },
+          {
+            "question": "¿Ven los jugadores sus propias cifras?",
+            "answer": "Sí, si tienen acceso propio. La jugadora ve entonces su acierto, sus lanzamientos por posición, sus minutos y su asistencia a los entrenamientos, solo los suyos. Las cifras de las demás se quedan en el cuerpo técnico."
           }
         ]
       },
@@ -4840,6 +4856,10 @@
           {
             "question": "¿Ven las jugadoras por qué alguien ha cancelado?",
             "answer": "No. El motivo y la nota de una ausencia quedan entre ella y el cuerpo técnico. El equipo ve la cifra, no la frase."
+          },
+          {
+            "question": "¿Statix avisa de los cumpleaños?",
+            "answer": "Sí. Si hay una fecha de nacimiento en la plantilla, una tarjeta anuncia los próximos 30 días y el calendario mensual pone una tarta en el día. La tarjeta se puede descartar si no la necesitas."
           }
         ]
       },
@@ -4918,6 +4938,10 @@
           {
             "question": "¿Pueden trabajar dos entrenadores a la vez?",
             "answer": "En el mismo equipo sí; en el mismo registro en curso no. Un partido lo registra una persona, porque dos registros en paralelo acaban divergiendo sin remedio."
+          },
+          {
+            "question": "¿Puede ayudar alguien de otro equipo?",
+            "answer": "Sí, dentro del mismo club. Si ambos equipos pertenecen a un club, una jugadora puede sumarse como invitada para una jornada: sigue en la plantilla de su equipo y aquí aparece como invitada."
           }
         ]
       },
@@ -5070,6 +5094,276 @@
           {
             "question": "¿Sirve el modo torneo también para un torneo de pretemporada?",
             "answer": "Sí. Que sea un torneo de campeonato, de pretemporada o un torneo de pabellón entre año no cambia nada en la mecánica."
+          }
+        ]
+      },
+      {
+        "slug": "mannschaftskasse",
+        "name": "Multas y caja del equipo",
+        "short": "Multas",
+        "headline": "El papel del bolso del entrenador, que ahora pueden leer todos",
+        "summary": "Catálogo de multas, multas registradas y el estado de la caja del equipo: pendiente, pagado, total. Cada jugadora ve su propia cuenta.",
+        "tagline": "Qué cuesta qué, quién debe qué y qué ya está pagado: en un solo sitio y no en un papel que tiene una sola persona.",
+        "intro": [
+          "Casi todos los equipos tienen un catálogo de multas: cinco euros por llegar tarde, dos por el móvil en el vestuario, diez por faltar sin avisar. Y casi todos lo llevan en un papel que tiene exactamente una persona, normalmente dentro de una bolsa de deporte justo cuando alguien pregunta cuánto debe.",
+          "En Statix escribes el catálogo una vez. A partir de ahí, una multa son dos toques: tocas a la jugadora y eliges la línea. La fecha y una nota se añaden cuando alguien vaya a querer entenderlo más tarde: «partido fuera, veinte minutos tarde». La caja va sumando: pendiente, pagado, total, por jugadora y para todo el equipo. Marcarla como pagada es un toque.",
+          "La parte que ahorra más discusiones es la vista desde el otro lado: cada jugadora con acceso ve en «Mis multas» su propia cuenta y el catálogo que hay detrás. Nadie tiene que preguntar y nadie se entera de lo que debe justo en el momento en que se lo reclaman. Y quien lleva la caja no tiene por qué ser del cuerpo técnico: una jugadora puede asumir la tarea de multas y sigue siendo jugadora."
+        ],
+        "facts": [
+          {
+            "term": "Catálogo",
+            "value": "Vuestras líneas, vuestros precios, vuestro orden"
+          },
+          {
+            "term": "Registrar",
+            "value": "Dos toques: jugadora y línea del catálogo"
+          },
+          {
+            "term": "La caja",
+            "value": "Pendiente, pagado, total, por jugadora"
+          },
+          {
+            "term": "Vista de la jugadora",
+            "value": "Cada una ve su propia cuenta"
+          },
+          {
+            "term": "Quién la lleva",
+            "value": "El cuerpo técnico o una jugadora con la tarea"
+          },
+          {
+            "term": "Importes",
+            "value": "Al céntimo, nunca redondeados"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Escribir el catálogo",
+            "body": "Cuánto cuesta llegar tarde, cuánto un móvil que suena, cuánto una camiseta olvidada. Acordado una vez, ya nadie tiene que recordarlo ni discutirlo."
+          },
+          {
+            "title": "Registrar una multa",
+            "body": "Jugadora, línea, listo. La fecha se puede retrasar, porque una multa se apunta con dos días de retraso muy a menudo, y una nota la hace reconocible semanas después."
+          },
+          {
+            "title": "Marcar cuando se paga",
+            "body": "Un toque convierte pendiente en pagado. Así el saldo pendiente de la caja es siempre el que de verdad queda por cobrar."
+          },
+          {
+            "title": "El equipo lee al mismo tiempo",
+            "body": "Quien tiene acceso de jugadora ve su propia cuenta y el catálogo. Esa es la diferencia entre una caja que se lleva y una caja que además se acepta."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Caja del equipo en Statix con multas pendientes y pagadas por jugadora",
+            "label": "La caja: pendiente, pagado, total, y quién debe qué"
+          },
+          {
+            "alt": "Registrar una multa en Statix: elegir la línea y después la jugadora",
+            "label": "Registrar: eliges el motivo, tocas a la jugadora, y ya está"
+          },
+          {
+            "alt": "Catálogo de multas en Statix con reglas e importes",
+            "label": "El catálogo: lo que el equipo acordó para cada caso"
+          }
+        ],
+        "limits": [
+          "Statix no cobra dinero. No hay pagos, ni domiciliaciones, ni avisos de impago: la caja hace las cuentas, el dinero cambia de manos en el vestuario como siempre.",
+          "Un cambio de precio solo vale hacia delante. Si el equipo decide en enero que llegar tarde cuesta diez euros en vez de cinco, las multas de octubre siguen en cinco; de lo contrario, la suma que alguien oyó la semana pasada sería otra esta semana.",
+          "Cuotas de socio, facturación y finanzas del club no entran aquí. Eso es administración del club, no la caja del equipo."
+        ],
+        "faq": [
+          {
+            "question": "¿Qué pasa con las multas antiguas si cambiamos los precios?",
+            "answer": "Nada. Una multa registrada guarda el motivo y el importe del día en que se escribió; el catálogo es la lista de precios de hoy y la multa es la factura de entonces. Por eso una decisión de enero no reescribe cuatro meses de cuentas."
+          },
+          {
+            "question": "¿Puede llevar la caja una jugadora?",
+            "answer": "Sí. La tarea se llama simplemente «Multas» y va ligada a su cuenta en este equipo: registra, marca lo pagado y mantiene el catálogo, y sigue siendo jugadora con sus propias convocatorias, cifras y encuestas. No pasa a ser entrenadora."
+          },
+          {
+            "question": "¿Ve cada jugadora lo que deben las demás?",
+            "answer": "No. En «Mis multas» está su propia cuenta y el catálogo que hay detrás. La visión de conjunto del equipo la tienen el cuerpo técnico y la jugadora que lleva la caja."
+          },
+          {
+            "question": "¿Y si alguien tiene apuntado algo que no es correcto?",
+            "answer": "Toda multa se puede modificar o borrar, y una marca de pago se puede deshacer. Nadie repasa una caja en papel si una errata no se puede corregir nunca."
+          }
+        ]
+      },
+      {
+        "slug": "trikotverwaltung",
+        "name": "Gestión de camisetas",
+        "short": "Camisetas",
+        "headline": "¿Quién tiene la 7?",
+        "summary": "Juegos de camisetas con colores, números y tallas, el reparto al equipo y el historial de quién tuvo qué camiseta y cuándo.",
+        "tagline": "Juego de casa, juego de fuera, qué número está en manos de quién, y qué tiene que volver al final de temporada.",
+        "intro": [
+          "Un juego de camisetas es propiedad del club que quince personas se llevan a casa. Al final de la temporada faltan dos y ya nadie recuerda si la 7 está con la jugadora que lo dejó en invierno o en la caja del almacén.",
+          "En Statix el equipo tiene un armario de camisetas: un juego de casa, uno de fuera y, si hace falta, uno especial. Cada juego lleva el color de las jugadoras de campo y el de la portera, separados, porque ahí está precisamente la regla de que la portera debe distinguirse de los dos equipos. Y luego las camisetas: número, talla, campo o portería, y una nota que dice dónde está el juego.",
+          "El reparto se hace arrastrando: la camiseta sobre la jugadora, con su fecha. Cada camiseta recuerda quién la tuvo antes, así que al final de la temporada quién vio por última vez la 7 no es una pregunta: está en la pantalla. Una camiseta rota o perdida se retira en lugar de borrarse, para que el historial siga siendo legible."
+        ],
+        "facts": [
+          {
+            "term": "Juegos",
+            "value": "De casa, de fuera y especiales"
+          },
+          {
+            "term": "Colores",
+            "value": "Jugadoras de campo y portera por separado"
+          },
+          {
+            "term": "Inventario",
+            "value": "Número, talla, campo o portería"
+          },
+          {
+            "term": "Alta",
+            "value": "También por rangos: del 2 al 15 de una vez"
+          },
+          {
+            "term": "Reparto",
+            "value": "Arrastrando sobre la jugadora, con fecha"
+          },
+          {
+            "term": "Historial",
+            "value": "Quién tuvo la camiseta antes"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Crear el juego",
+            "body": "Primero nombre, función y colores: «juego de casa rojo», campo rojo, portera verde. La nota dice dónde está y quién tiene la llave."
+          },
+          {
+            "title": "Dar de alta las camisetas",
+            "body": "Del 2 al 15 en una sola operación, con sus tallas, y la camiseta de portera como tipo propio. El número del tejido no tiene nada que ver con el dorsal del equipo."
+          },
+          {
+            "title": "Repartir",
+            "body": "Arrastra una camiseta sobre una jugadora. A partir de ahí, el armario muestra qué está fuera y qué sigue en la caja."
+          },
+          {
+            "title": "Recoger o retirar",
+            "body": "La devolución cierra el reparto y deja el historial en pie. Una camiseta que ya no se puede llevar se retira, no se borra."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Armario de camisetas en Statix con el juego de casa y el de fuera y el reparto al equipo",
+            "label": "El armario: los dos juegos, quién lleva qué número y qué queda"
+          }
+        ],
+        "limits": [
+          "Statix no encarga camisetas ni conoce precios. Lleva el armario que ya tenéis.",
+          "El número de la camiseta no es el dorsal del equipo. Es intencionado: una camiseta puede ir a cualquiera y los dorsales siguen siendo libres.",
+          "No hay fotos de las camisetas, solo colores, ni recordatorio de a quién le toca lavar."
+        ],
+        "faq": [
+          {
+            "question": "¿Por qué la camiseta tiene un número propio?",
+            "answer": "Porque es lo impreso en la tela y no el número con el que alguien juega. Separar ambas cosas es justo el objetivo: si no, una camiseta solo podría ir a la jugadora con el mismo dorsal."
+          },
+          {
+            "question": "¿Qué pasa al final de la temporada?",
+            "answer": "Recoges las camisetas, y todo reparto que siga abierto es la lista que mandas al grupo del equipo. El historial sigue siendo legible después."
+          },
+          {
+            "question": "¿Podemos llevar varios juegos?",
+            "answer": "Sí. Hay un juego activo por función —uno de casa y uno de fuera— y tantos como queráis sin función fija, por ejemplo el juego antiguo como reserva."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-zugang",
+        "name": "Acceso para jugadores",
+        "short": "App del jugador",
+        "headline": "El equipo recibe su propio acceso",
+        "summary": "Un enlace de invitación para todo el equipo: los jugadores se dan de alta solos y después ven sus convocatorias, sus propias cifras, sus encuestas y su cuenta de multas.",
+        "tagline": "Un enlace, un código QR, y a partir de ahí cada jugadora tiene su acceso y tú respondes muchas menos preguntas.",
+        "intro": [
+          "Statix no es solo una herramienta para el entrenador. El equipo recibe su propio acceso y tú no creas quince cuentas para ello: hay un enlace para toda la plantilla, como código QR en el entrenamiento o por WhatsApp al grupo. Quien lo abre se busca a sí misma en la plantilla y define una contraseña.",
+          "Después ve su lado de la app: las próximas citas con confirmación o baja, sus propias cifras de todos los partidos terminados —acierto, lanzamientos por posición, minutos, asistencia a los entrenamientos—, las encuestas abiertas y su cuenta de multas. Lo que no ve: las cifras de las demás, los perfiles de otras jugadoras, tus informes de IA.",
+          "El control sigue en el cuerpo técnico. El enlace caduca, se puede regenerar o desactivar, y en el resumen aparece quién se ha dado de alta y quién falta. Si alguien deja el equipo, deshaces el vínculo: la ficha de plantilla y todo lo que cuelga de ella se queda. Y al revés, cada jugadora decide por sí misma si su nombre aparece en las páginas públicas como el marcador en directo; esa decisión prevalece sobre el ajuste del equipo."
+        ],
+        "facts": [
+          {
+            "term": "Invitación",
+            "value": "Un enlace para todas, como QR o por WhatsApp"
+          },
+          {
+            "term": "Alta",
+            "value": "Elegirse en la plantilla y poner una contraseña"
+          },
+          {
+            "term": "Ella ve",
+            "value": "Convocatorias, sus cifras, encuestas, multas"
+          },
+          {
+            "term": "Ella no ve",
+            "value": "Las estadísticas de las demás"
+          },
+          {
+            "term": "Resumen",
+            "value": "Quién está ya dentro y quién falta"
+          },
+          {
+            "term": "Revocar",
+            "value": "Desactivar el enlace o deshacer el vínculo"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Generar el enlace",
+            "body": "Una vez, en los ajustes. Vale por tiempo limitado y se puede sustituir en cualquier momento: el anterior deja de funcionar al instante."
+          },
+          {
+            "title": "Pasarlo al equipo",
+            "body": "Haz escanear el QR en el entrenamiento o envía el mensaje ya preparado por WhatsApp. Ambos llevan al mismo sitio."
+          },
+          {
+            "title": "La jugadora se da de alta sola",
+            "body": "Elige su sitio en la plantilla, define una contraseña y listo. Tú no creas cuentas ni repartes credenciales."
+          },
+          {
+            "title": "Seguir quién falta",
+            "body": "El resumen indica junto a cada ficha si está vinculada a una cuenta. Esa es la lista que repasas en el siguiente entrenamiento."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Enlace de invitación para jugadoras en los ajustes de Statix con código QR y resumen de la plantilla",
+            "label": "Un enlace para todo el equipo, y quién está ya dentro"
+          },
+          {
+            "alt": "Estadística propia de una jugadora en el móvil",
+            "label": "Su lado: valor de la carta, curva de forma y sus propias cifras"
+          },
+          {
+            "alt": "Cuenta de multas de una jugadora en el móvil",
+            "label": "Y su propia cuenta de multas, sin tener que preguntar"
+          }
+        ],
+        "limits": [
+          "Padres y espectadores no reciben acceso. Para todos los que no están en la plantilla existe el marcador en directo público.",
+          "El acceso va ligado a una ficha de plantilla. Sin ficha no hay cifras: a quien cambia de equipo la vincula de nuevo el cuerpo técnico.",
+          "Los jugadores no cambian nada del equipo: no registran partidos, no crean convocatorias y no ven perfiles ajenos."
+        ],
+        "faq": [
+          {
+            "question": "¿Tengo que crear una cuenta para cada jugadora?",
+            "answer": "No. Hay un único enlace para todo el equipo; cada una se da de alta con él y se busca en la plantilla. Tú no repartes contraseñas."
+          },
+          {
+            "question": "¿Ve mi jugadora las cifras de las demás?",
+            "answer": "No. Ve las suyas, de los partidos que tú has registrado. La plantilla con todos los valores, los perfiles y los informes de IA se quedan en el cuerpo técnico."
+          },
+          {
+            "question": "¿Qué pasa cuando alguien deja el equipo?",
+            "answer": "Deshaces el vínculo. La cuenta pierde el acceso al equipo, la ficha se queda con todos los partidos registrados, y más adelante otra persona puede darse de alta con el mismo enlace."
+          },
+          {
+            "question": "¿Y los menores y el nombre en el marcador en directo?",
+            "answer": "Cada jugadora con acceso puede decidir en sus ajustes que su nombre no aparezca en las páginas públicas: entonces solo se muestra el dorsal. Esa decisión prevalece sobre el ajuste del equipo y el cuerpo técnico no puede revertirla; el consentimiento para publicar sigue siendo cosa del club y de los tutores."
           }
         ]
       },
@@ -5304,6 +5598,10 @@
           {
             "question": "¿Pueden responder los padres?",
             "answer": "Cualquiera con el enlace puede responder y al hacerlo se elige de la plantilla. En los equipos de base ese suele ser justamente el padre o la madre que tiene el móvil en la mano."
+          },
+          {
+            "question": "¿Y si el equipo ya tiene accesos propios?",
+            "answer": "Entonces no necesita el enlace: las encuestas abiertas aparecen en la app en «Encuestas» y se responden ahí mismo. El enlace sigue siendo el camino para quien no tiene acceso."
           }
         ]
       }
