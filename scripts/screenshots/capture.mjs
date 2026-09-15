@@ -709,6 +709,63 @@ const SHOTS = [
       }),
     note: 'Lanes and playlists: every scene of the half, grouped by action.',
   },
+  // ── Mannschaftskasse, Trikotschrank, Spieler-Zugang ─────────────────────
+  // All three need a local instance `scripts/seed-team-organisation.mjs` has
+  // run against: the public demo has no fines, no jerseys and no linked player
+  // accounts, and three empty states are not a feature page.
+  {
+    group: 'organisation', file: 'strafen-kasse.png', ...TABLET_TALL,
+    route: () => '/fines',
+    prepare: (page) => tap(page, 'Nach Spielerin'),
+    note: 'The Kasse: open beside paid, and who owes what.',
+  },
+  {
+    group: 'organisation', file: 'strafen-erfassen.png', ...TABLET,
+    route: () => '/fines',
+    note: 'Writing one up: pick the line, pick the player. That is the whole act.',
+  },
+  {
+    group: 'organisation', file: 'strafen-katalog.png', ...TABLET,
+    route: () => '/fines',
+    prepare: (page) => tap(page, 'Katalog'),
+    note: 'The agreed price list — what costs what, in the squad\'s own order.',
+  },
+  {
+    group: 'organisation', file: 'trikots-schrank.png', ...TABLET_TALL,
+    route: () => '/jerseys',
+    note: 'Both sets, who wears which number, what is still in the box.',
+  },
+  {
+    group: 'organisation', file: 'spieler-zugang.png',
+    // Taller than the other two so the whole panel — link, controls and the
+    // full roster — fits in one frame and the crop ends on a row rather than
+    // through one.
+    viewport: { width: 1280, height: 1300 }, scale: 2,
+    route: () => '/settings#playerAccess',
+    // Cropped to the panel: settings opens with the recording-mode block above
+    // it, and a shot of both is a picture about neither. The invite URL in it
+    // is only the real domain when the instance runs with
+    // NEXT_PUBLIC_APP_URL=https://app.statix-app.de — see the README.
+    section: 'Spielerinnen einladen',
+    note: 'One invite link for the squad, plus who has signed up already.',
+  },
+
+  // ── The player app, shot as a player ─────────────────────────────────────
+  // A different account, so these run in their own pass:
+  //   STATIX_EMAIL=spielerin1@statix-app.de … capture --only spielerin
+  // Shot on the phone on purpose: nobody checks her own shot quota on a
+  // laptop.
+  {
+    group: 'spielerin', file: 'mobil-meine-statistik.png', ...PHONE,
+    route: () => '/my-stats',
+    note: 'What a player sees of herself: quota, shots, minutes, attendance.',
+  },
+  {
+    group: 'spielerin', file: 'mobil-meine-strafen.png', ...PHONE,
+    route: () => '/my-fines',
+    note: 'Her own fine account — open, paid, and the catalogue behind it.',
+  },
+
   {
     group: 'video', file: 'video-tagging-katalog.png',
     viewport: { width: 1600, height: 1150 }, scale: 2,

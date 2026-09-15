@@ -108,19 +108,26 @@ export default function BoardScreenshot({
       {label ? (
         <figcaption
           className={cn(
-            'flex items-center gap-2 px-1 pt-2.5 text-[13px] font-medium',
+            'flex items-start gap-2 px-1 pt-2.5 text-[13px] font-medium',
             onPaper ? 'text-ink/70' : 'text-chalk/70',
           )}>
           <span
             aria-hidden='true'
             className={cn(
-              'size-2 shrink-0 rounded-[3px]',
+              'mt-[0.3125rem] size-2 shrink-0 rounded-[3px]',
               live ? 'bg-primary' : onPaper ? 'bg-ink/30' : 'bg-chalk/40',
             )}
           />
-          <span className='min-w-0 flex-1 truncate'>{label}</span>
+          {/*
+            Wraps rather than truncates. A caption is the one sentence that says
+            what the reader is looking at, and a phone-width shot cuts a normal
+            one in half — "Ihre Seite: Kartenwert, Formkurve und …" with no way
+            to read the rest, not even a tooltip on a touch screen. Two lines of
+            13px cost less than a sentence nobody can finish.
+          */}
+          <span className='min-w-0 flex-1 text-pretty'>{label}</span>
           {live ? (
-            <span className='inline-flex items-center gap-1.5 font-hand text-base text-primary'>
+            <span className='inline-flex shrink-0 items-center gap-1.5 font-hand text-base text-primary'>
               <span className='relative flex size-1.5'>
                 <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/70' />
                 <span className='relative inline-flex size-1.5 rounded-full bg-primary' />

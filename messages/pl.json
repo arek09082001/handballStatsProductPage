@@ -4120,6 +4120,10 @@
             "value": "Jedno dotknięcie, dwa z pozycją rzutu"
           },
           {
+            "term": "Głębokość rejestracji",
+            "value": "Szybka, normalna albo szczegółowa"
+          },
+          {
             "term": "Działa na",
             "value": "Telefon, tablet, iPad, laptop"
           },
@@ -4284,6 +4288,10 @@
             "value": "Link albo kod QR, bez konta"
           },
           {
+            "term": "Sponsorzy",
+            "value": "Można wyświetlać logotypy klubu"
+          },
+          {
             "term": "Opóźnienie",
             "value": "Praktycznie żadne — to to samo dotknięcie"
           },
@@ -4337,6 +4345,10 @@
           {
             "question": "Czy relacja zostaje online po meczu?",
             "answer": "Tylko tak długo, jak ją zostawisz udostępnioną. Gdy zakończysz publikację, link natychmiast przestaje działać — również ten, który ktoś już przesłał dalej."
+          },
+          {
+            "question": "Czy zawodniczka może zażądać, by jej nazwisko nie pojawiało się w relacji?",
+            "answer": "Tak. Kto ma własny dostęp, ustala w ustawieniach, że nazwisko nie pojawia się na stronach publicznych – widoczny jest wtedy tylko numer. Ta decyzja ma pierwszeństwo przed ustawieniem drużyny i sztab nie może jej cofnąć."
           }
         ]
       },
@@ -4419,6 +4431,10 @@
           {
             "question": "Co z zawodniczkami, które zmieniają drużynę?",
             "answer": "W obrębie klubu przebieg kariery pozostaje widoczny ponad drużynami — patrz Strefa klubu. Bez klubu wpis w kadrze należy dokładnie do jednej drużyny."
+          },
+          {
+            "question": "Czy zawodnicy widzą własne liczby?",
+            "answer": "Tak, jeśli mają własny dostęp. Zawodniczka widzi wtedy swoją skuteczność, rzuty według pozycji, czas gry i frekwencję na treningach – tylko własne. Liczby pozostałych zostają przy sztabie."
           }
         ]
       },
@@ -4852,6 +4868,10 @@
           {
             "question": "Czy zawodniczki widzą, dlaczego ktoś odwołał?",
             "answer": "Nie. Powód i notatka do nieobecności zostają między nią a sztabem. Drużyna widzi liczbę, a nie zdanie."
+          },
+          {
+            "question": "Czy Statix przypomina o urodzinach?",
+            "answer": "Tak. Jeśli w kadrze jest data urodzenia, karta zapowiada najbliższe 30 dni, a w widoku miesiąca w danym dniu pojawia się tort. Kartę można odsunąć, jeśli jej nie potrzebujesz."
           }
         ]
       },
@@ -4930,6 +4950,10 @@
           {
             "question": "Czy dwóch trenerów może pracować równocześnie?",
             "answer": "W tej samej drużynie tak — przy tym samym trwającym zapisie nie. Mecz zapisuje jedna osoba, bo dwa równoległe zapisy nieuchronnie się rozjeżdżają."
+          },
+          {
+            "question": "Czy ktoś z innej drużyny może pomóc?",
+            "answer": "Tak, w obrębie tego samego klubu. Jeśli obie drużyny należą do jednego klubu, zawodniczkę można dobrać na jeden dzień meczowy jako gościa – zostaje w kadrze swojej drużyny, a tutaj pojawia się jako gość."
           }
         ]
       },
@@ -5082,6 +5106,276 @@
           {
             "question": "Czy tryb turniejowy działa też przy turnieju przygotowawczym?",
             "answer": "Tak. To, czy jest to turniej mistrzowski, przygotowanie, czy turniej halowy między świętami, nie zmienia niczego w mechanice."
+          }
+        ]
+      },
+      {
+        "slug": "mannschaftskasse",
+        "name": "Kary i kasa drużyny",
+        "short": "Kary",
+        "headline": "Kartka z torby trenera, którą wreszcie widzą wszyscy",
+        "summary": "Taryfikator kar, wpisane kary i stan kasy drużyny – nieopłacone, opłacone, razem. Każda zawodniczka widzi własne konto.",
+        "tagline": "Co ile kosztuje, kto ile jest winien i co już zapłacone – w jednym miejscu zamiast na kartce, którą ma tylko jedna osoba.",
+        "intro": [
+          "Prawie każda drużyna ma swój taryfikator kar: pięć euro za spóźnienie, dwa za telefon w szatni, dziesięć za nieusprawiedliwioną nieobecność. I prawie każda prowadzi go na kartce, którą ma dokładnie jedna osoba – a ta kartka leży w torbie sportowej akurat wtedy, gdy ktoś pyta, ile właściwie jest winien.",
+          "W Statix taryfikator zapisujesz raz. Potem kara to dwa dotknięcia: dotykasz zawodniczki, wybierasz pozycję. Data i notatka dochodzą wtedy, gdy ktoś ma to później zrozumieć – „mecz wyjazdowy, dwadzieścia minut spóźnienia”. Kasa liczy na bieżąco: nieopłacone, opłacone, razem, na zawodniczkę i dla całej drużyny. Odhaczenie to jedno dotknięcie.",
+          "Częścią, która oszczędza najwięcej dyskusji, jest widok z drugiej strony: każda zawodniczka z dostępem widzi w „Moich karach” własne konto i taryfikator za nim. Nikt nie musi już pytać i nikt nie dowiaduje się o swoim stanie dopiero w chwili, gdy ma zapłacić. A kasę nie musi prowadzić ktoś ze sztabu: zawodniczka może przejąć obowiązek kar i pozostaje zawodniczką."
+        ],
+        "facts": [
+          {
+            "term": "Taryfikator",
+            "value": "Wasze pozycje, wasze kwoty, wasza kolejność"
+          },
+          {
+            "term": "Wpisanie",
+            "value": "Dwa dotknięcia: zawodniczka i pozycja"
+          },
+          {
+            "term": "Kasa",
+            "value": "Nieopłacone, opłacone, razem – na zawodniczkę"
+          },
+          {
+            "term": "Widok zawodniczki",
+            "value": "Każda widzi własne konto"
+          },
+          {
+            "term": "Kto ją prowadzi",
+            "value": "Sztab – albo zawodniczka z tym obowiązkiem"
+          },
+          {
+            "term": "Kwoty",
+            "value": "Co do centa, nigdy zaokrąglane"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Spisać taryfikator",
+            "body": "Ile kosztuje spóźnienie, ile dzwoniący telefon, ile zapomniana koszulka. Ustalone raz – nikt nie musi tego pamiętać ani się o to spierać."
+          },
+          {
+            "title": "Wpisać karę",
+            "body": "Zawodniczka, pozycja, gotowe. Datę można cofnąć, bo karę regularnie spisuje się dwa dni później, a notatka sprawia, że po tygodniach wiadomo, o co chodziło."
+          },
+          {
+            "title": "Odhaczyć po zapłacie",
+            "body": "Jedno dotknięcie zamienia nieopłacone w opłacone. Dzięki temu kwota nieopłacona w kasie zawsze jest tą, która naprawdę została do zapłaty."
+          },
+          {
+            "title": "Drużyna czyta razem z tobą",
+            "body": "Kto ma dostęp zawodniczki, widzi własne konto i taryfikator. To różnica między kasą, którą się prowadzi, a kasą, którą drużyna również akceptuje."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Kasa drużyny w Statix z nieopłaconymi i opłaconymi karami na zawodniczkę",
+            "label": "Kasa: nieopłacone, opłacone, razem – i kto za co"
+          },
+          {
+            "alt": "Wpisywanie kary w Statix: wybór pozycji, potem zawodniczki",
+            "label": "Wpisanie: wybierasz powód, dotykasz zawodniczki – to cała czynność"
+          },
+          {
+            "alt": "Taryfikator kar w Statix z regułami i kwotami",
+            "label": "Taryfikator: co drużyna ustaliła dla którego przypadku"
+          }
+        ],
+        "limits": [
+          "Statix nie pobiera pieniędzy. Nie ma płatności, polecenia zapłaty ani wezwań – kasa liczy, a pieniądze zmieniają właściciela w szatni jak zawsze.",
+          "Zmiana kwoty działa tylko w przód. Jeśli drużyna w styczniu ustali, że spóźnienie kosztuje dziesięć zamiast pięciu euro, kary z października zostają przy pięciu – inaczej suma podana komuś w zeszłym tygodniu byłaby w tym tygodniu inna.",
+          "Składek członkowskich, rozliczeń i finansów klubu Statix nie prowadzi. To administracja klubu, a nie kasa drużyny."
+        ],
+        "faq": [
+          {
+            "question": "Co dzieje się ze starymi karami, gdy zmienimy kwoty?",
+            "answer": "Nic. Wpisana kara zapamiętuje powód i kwotę z dnia wpisu; taryfikator to cennik na dziś, a kara to rachunek z tamtego dnia. Właśnie dlatego styczniowa uchwała nie przepisuje czterech miesięcy rozliczeń."
+          },
+          {
+            "question": "Czy kasę może prowadzić zawodniczka?",
+            "answer": "Tak. Obowiązek nazywa się po prostu „Kary” i jest powiązany z jej kontem w tej drużynie: wpisuje, odhacza i prowadzi taryfikator – i pozostaje zawodniczką z własnymi terminami, liczbami i ankietami. Nie staje się trenerką."
+          },
+          {
+            "question": "Czy każda zawodniczka widzi, ile są winne inne?",
+            "answer": "Nie. W „Moich karach” jest jej własne konto i taryfikator. Zestawienie całej drużyny widzą sztab i zawodniczka prowadząca kasę."
+          },
+          {
+            "question": "A jeśli komuś wpisano coś, co się nie zgadza?",
+            "answer": "Każdą karę można zmienić lub usunąć, a odhaczenie cofnąć. Nikt nie przelicza kasy na papierze, jeśli literówki nie da się już poprawić."
+          }
+        ]
+      },
+      {
+        "slug": "trikotverwaltung",
+        "name": "Zarządzanie koszulkami",
+        "short": "Koszulki",
+        "headline": "Kto właściwie ma siódemkę?",
+        "summary": "Komplety koszulek z kolorami, numerami i rozmiarami, wydawanie drużynie oraz historia, kto i kiedy miał którą koszulkę.",
+        "tagline": "Komplet domowy, wyjazdowy, który numer jest u kogo – i co musi wrócić na koniec sezonu.",
+        "intro": [
+          "Komplet koszulek to własność klubu, którą piętnaście osób zabiera do domu. Na koniec sezonu brakuje dwóch, a nikt już nie pamięta, czy siódemka jest u zawodniczki, która skończyła zimą, czy w skrzyni w magazynku.",
+          "W Statix drużyna ma szafę na koszulki: komplet domowy, wyjazdowy, a w razie potrzeby specjalny. Do każdego kompletu należą kolor zawodniczek z pola i kolor bramkarki – osobno, bo właśnie tam wisi zasada, że bramkarka musi różnić się od obu drużyn. Do tego same koszulki: numer, rozmiar, pole albo bramka, oraz notatka, gdzie komplet leży.",
+          "Wydaje się przeciągnięciem: koszulka na zawodniczkę, z datą. Każda koszulka pamięta, kto miał ją wcześniej, więc na koniec sezonu pytanie, kto ostatnio widział siódemkę, nie jest pytaniem – to jest zapisane. Zniszczoną albo zgubioną koszulkę wycofuje się zamiast usuwać, żeby historia pozostała czytelna."
+        ],
+        "facts": [
+          {
+            "term": "Komplety",
+            "value": "Domowy, wyjazdowy i komplety specjalne"
+          },
+          {
+            "term": "Kolory",
+            "value": "Zawodniczki z pola i bramkarka osobno"
+          },
+          {
+            "term": "Stan",
+            "value": "Numer, rozmiar, pole albo bramka"
+          },
+          {
+            "term": "Dodawanie",
+            "value": "Także zakresem: numery od 2 do 15 naraz"
+          },
+          {
+            "term": "Wydanie",
+            "value": "Przeciągnięciem na zawodniczkę, z datą"
+          },
+          {
+            "term": "Historia",
+            "value": "Kto miał koszulkę wcześniej"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Założyć komplet",
+            "body": "Najpierw nazwa, rola i kolory – „komplet domowy czerwony”, pole czerwone, bramkarka zielona. Notatka mówi, gdzie leży i kto ma klucz."
+          },
+          {
+            "title": "Wpisać koszulki",
+            "body": "Numery od 2 do 15 za jednym razem, rozmiary przy nich, koszulka bramkarska jako osobny typ. Numer na materiale nie ma nic wspólnego z numerem w kadrze."
+          },
+          {
+            "title": "Wydać",
+            "body": "Przeciągnij koszulkę na zawodniczkę. Od tej chwili szafa pokazuje, co jest na zewnątrz, a co wciąż leży w skrzyni."
+          },
+          {
+            "title": "Przyjąć z powrotem albo wycofać",
+            "body": "Zwrot zamyka wydanie i zostawia historię. Koszulkę, której nie da się już nosić, wycofuje się – nie usuwa."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Szafa na koszulki w Statix z kompletem domowym i wyjazdowym oraz wydaniem drużynie",
+            "label": "Szafa: oba komplety, kto nosi który numer, co zostało"
+          }
+        ],
+        "limits": [
+          "Statix nie zamawia koszulek i nie zna cen. Prowadzi szafę, którą już macie.",
+          "Numer na koszulce to nie numer w kadrze. To zamierzone: koszulka może trafić do każdej, a numery w kadrze pozostają dowolne.",
+          "Nie ma zdjęć koszulek, tylko kolory – ani przypomnienia, na kogo wypada pranie."
+        ],
+        "faq": [
+          {
+            "question": "Dlaczego koszulka ma własny numer?",
+            "answer": "Bo to nadruk na materiale, a nie numer, pod którym ktoś gra. Rozdzielenie obu jest tu całym sensem: inaczej koszulka mogłaby trafić tylko do zawodniczki z tym samym numerem w kadrze."
+          },
+          {
+            "question": "Co dzieje się na koniec sezonu?",
+            "answer": "Przyjmujesz koszulki z powrotem, a każde wydanie, które wtedy jeszcze jest otwarte, to lista, którą wysyłasz na grupę drużyny. Historia pozostaje potem czytelna."
+          },
+          {
+            "question": "Czy możemy prowadzić kilka kompletów?",
+            "answer": "Tak. Na rolę przypada jeden aktywny komplet – domowy i wyjazdowy – a obok dowolnie wiele bez stałej roli, na przykład stary komplet jako rezerwa."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-zugang",
+        "name": "Dostęp dla zawodników",
+        "short": "Aplikacja zawodniczki",
+        "headline": "Drużyna dostaje własny dostęp",
+        "summary": "Jeden link z zaproszeniem dla całej drużyny: zawodnicy rejestrują się sami, a potem widzą swoje terminy, własne liczby, ankiety i konto kar.",
+        "tagline": "Jeden link, jeden kod QR – potem każda zawodniczka ma własny dostęp, a ty odpowiadasz na znacznie mniej pytań.",
+        "intro": [
+          "Statix to nie tylko narzędzie trenera. Drużyna dostaje własny dostęp, a ty nie zakładasz na to piętnastu kont: jest jeden link dla całej kadry – jako kod QR na treningu, przez WhatsApp na grupę. Kto go otworzy, odnajduje siebie w kadrze i ustala hasło.",
+          "Potem widzi swoją stronę aplikacji: najbliższe terminy z potwierdzeniem albo odmową, własne liczby ze wszystkich zakończonych meczów – skuteczność, rzuty według pozycji, czas gry, frekwencja na treningach –, otwarte ankiety i konto kar. Czego nie widzi: liczb innych, cudzych profili, twoich raportów AI.",
+          "Kontrola zostaje przy sztabie. Link wygasa, można go wygenerować na nowo albo wyłączyć, a w zestawieniu widać, kto już się zarejestrował, a kogo brakuje. Gdy ktoś odchodzi z drużyny, rozłączasz powiązanie – miejsce w kadrze wraz ze wszystkim, co do niego należy, zostaje. Odwrotnie: każda zawodniczka sama decyduje, czy jej nazwisko pojawia się na stronach publicznych, jak relacja na żywo; ta decyzja ma pierwszeństwo przed ustawieniem drużyny."
+        ],
+        "facts": [
+          {
+            "term": "Zaproszenie",
+            "value": "Jeden link dla wszystkich – jako QR albo przez WhatsApp"
+          },
+          {
+            "term": "Rejestracja",
+            "value": "Wybrać siebie w kadrze, ustalić hasło"
+          },
+          {
+            "term": "Ona widzi",
+            "value": "Terminy, własne liczby, ankiety, kary"
+          },
+          {
+            "term": "Ona nie widzi",
+            "value": "Statystyk pozostałych"
+          },
+          {
+            "term": "Zestawienie",
+            "value": "Kto już jest, kogo jeszcze brakuje"
+          },
+          {
+            "term": "Cofnięcie",
+            "value": "Wyłączyć link albo rozłączyć powiązanie"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Wygenerować link",
+            "body": "Raz, w ustawieniach. Obowiązuje przez określony czas i w każdej chwili można go zastąpić – stary natychmiast przestaje działać."
+          },
+          {
+            "title": "Przekazać drużynie",
+            "body": "Każ zeskanować kod QR na treningu albo wyślij gotową wiadomość przez WhatsApp. Jedno i drugie prowadzi w to samo miejsce."
+          },
+          {
+            "title": "Zawodniczka rejestruje się sama",
+            "body": "Wybiera swoje miejsce w kadrze, ustala hasło – gotowe. Ty nie zakładasz konta i nie rozdajesz danych do logowania."
+          },
+          {
+            "title": "Pilnować, kogo brakuje",
+            "body": "W zestawieniu przy każdym miejscu w kadrze widać, czy jest powiązane z kontem. To lista, którą odhaczasz na najbliższym treningu."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Link z zaproszeniem dla zawodniczek w ustawieniach Statix z kodem QR i zestawieniem kadry",
+            "label": "Jeden link dla całej drużyny – i kto już jest"
+          },
+          {
+            "alt": "Własna statystyka zawodniczki na telefonie",
+            "label": "Jej strona: wartość karty, krzywa formy i własne liczby"
+          },
+          {
+            "alt": "Konto kar zawodniczki na telefonie",
+            "label": "I własne konto kar, bez dopytywania"
+          }
+        ],
+        "limits": [
+          "Rodzice i kibice nie dostają dostępu. Dla wszystkich spoza kadry jest publiczna relacja na żywo.",
+          "Dostęp wisi na miejscu w kadrze. Bez wiersza w kadrze nie ma liczb – kto zmienia drużynę, zostaje powiązany na nowo przez sztab.",
+          "Zawodnicy niczego w drużynie nie zmieniają: nie rejestrują meczów, nie tworzą terminów i nie widzą cudzych profili."
+        ],
+        "faq": [
+          {
+            "question": "Czy muszę zakładać konto każdej zawodniczce?",
+            "answer": "Nie. Jest jeden link dla całej drużyny; każda rejestruje się nim sama i odnajduje siebie w kadrze. Nie rozdajesz haseł."
+          },
+          {
+            "question": "Czy moja zawodniczka widzi liczby pozostałych?",
+            "answer": "Nie. Widzi własne – z meczów, które zarejestrowałeś. Kadra ze wszystkimi wartościami, profile zawodniczek i raporty AI zostają przy sztabie."
+          },
+          {
+            "question": "Co się dzieje, gdy ktoś odchodzi z drużyny?",
+            "answer": "Rozłączasz powiązanie. Konto traci dostęp do drużyny, miejsce w kadrze zostaje ze wszystkimi zarejestrowanymi meczami – a przez ten sam link może później zarejestrować się ktoś inny."
+          },
+          {
+            "question": "A co z osobami niepełnoletnimi i nazwiskiem w relacji na żywo?",
+            "answer": "Każda zawodniczka z dostępem może w swoich ustawieniach zdecydować, że jej nazwisko nie pojawia się na stronach publicznych – widoczny jest wtedy tylko numer. Ta decyzja ma pierwszeństwo przed ustawieniem drużyny i sztab nie może jej cofnąć; sama zgoda na publikację pozostaje sprawą klubu i opiekunów prawnych."
           }
         ]
       },
@@ -5316,6 +5610,10 @@
           {
             "question": "Czy rodzice mogą odpowiadać?",
             "answer": "Każdy, kto ma link, może odpowiedzieć i wybiera przy tym siebie z kadry. W drużynach młodzieżowych jest to często właśnie rodzic, który trzyma telefon w ręku."
+          },
+          {
+            "question": "A jeśli drużyna ma już własne dostępy?",
+            "answer": "Wtedy link nie jest potrzebny: otwarte ankiety są w aplikacji w sekcji „Ankiety” i tam się na nie odpowiada. Link pozostaje drogą dla wszystkich bez dostępu."
           }
         ]
       }

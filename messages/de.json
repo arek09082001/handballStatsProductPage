@@ -4120,6 +4120,10 @@
             "value": "Ein Tap, zwei mit Wurfposition"
           },
           {
+            "term": "Erfassungstiefe",
+            "value": "Schnell, Normal oder Detailliert"
+          },
+          {
             "term": "Läuft auf",
             "value": "Handy, Tablet, iPad, Laptop"
           },
@@ -4284,6 +4288,10 @@
             "value": "Link oder QR-Code, ohne Konto"
           },
           {
+            "term": "Sponsoren",
+            "value": "Vereinslogos lassen sich einblenden"
+          },
+          {
             "term": "Verzögerung",
             "value": "Praktisch keine — es ist derselbe Tap"
           },
@@ -4337,6 +4345,10 @@
           {
             "question": "Bleibt der Ticker nach dem Spiel online?",
             "answer": "Nur, solange du ihn freigeschaltet lässt. Beendest du die Veröffentlichung, ist der Link sofort ungültig — auch der, den schon jemand weitergeleitet hat."
+          },
+          {
+            "question": "Kann eine Spielerin verlangen, dass ihr Name nicht im Ticker steht?",
+            "answer": "Ja. Wer einen eigenen Zugang hat, legt in den Einstellungen fest, dass der Name auf öffentlichen Seiten nicht erscheint — dann steht dort nur die Nummer. Diese Entscheidung geht der Einstellung der Mannschaft vor und lässt sich vom Trainerteam nicht überschreiben."
           }
         ]
       },
@@ -4419,6 +4431,10 @@
           {
             "question": "Was ist mit Spielerinnen, die die Mannschaft wechseln?",
             "answer": "Innerhalb eines Vereins bleibt die Laufbahn über die Mannschaften hinweg sichtbar — siehe Vereinsbereich. Ohne Verein gehört ein Kadereintrag zu genau einer Mannschaft."
+          },
+          {
+            "question": "Sehen die Spieler ihre eigenen Zahlen?",
+            "answer": "Ja, wenn sie einen eigenen Zugang haben. Jede Spielerin sieht dann ihre Trefferquote, ihre Würfe nach Position, ihre Spielzeit und ihre Trainingsbeteiligung — nur die eigenen. Die Zahlen der anderen bleiben beim Trainerteam."
           }
         ]
       },
@@ -4852,6 +4868,10 @@
           {
             "question": "Sehen die Spielerinnen, warum jemand abgesagt hat?",
             "answer": "Nein. Der Grund und die Notiz zu einer Abwesenheit sind zwischen ihr und dem Trainerteam. Die Mannschaft sieht die Zahl, nicht den Satz."
+          },
+          {
+            "question": "Erinnert Statix an Geburtstage?",
+            "answer": "Ja. Steht ein Geburtsdatum im Kader, meldet sich eine Karte für die nächsten 30 Tage, und im Monatskalender steht eine Torte im Tag. Die Karte lässt sich wegwischen, wenn du sie nicht brauchst."
           }
         ]
       },
@@ -4930,6 +4950,10 @@
           {
             "question": "Können zwei Trainer gleichzeitig arbeiten?",
             "answer": "Am selben Team ja — an derselben laufenden Erfassung nicht. Ein Spiel erfasst eine Person, weil zwei parallele Erfassungen zwangsläufig auseinanderlaufen."
+          },
+          {
+            "question": "Kann jemand aus einer anderen Mannschaft aushelfen?",
+            "answer": "Ja, innerhalb desselben Vereins. Gehören beide Mannschaften zu einem Verein, lässt sich eine Spielerin für einen Spieltag als Aushilfe dazunehmen — sie bleibt im Kader ihrer eigenen Mannschaft und taucht hier als Gast auf."
           }
         ]
       },
@@ -5082,6 +5106,276 @@
           {
             "question": "Funktioniert der Turniermodus auch für ein Vorbereitungsturnier?",
             "answer": "Ja. Ob Meisterschaftsturnier, Vorbereitung oder Hallenturnier zwischen den Jahren ändert nichts an der Mechanik."
+          }
+        ]
+      },
+      {
+        "slug": "mannschaftskasse",
+        "name": "Strafen & Mannschaftskasse",
+        "short": "Strafen",
+        "headline": "Der Zettel aus der Trainertasche, den alle lesen können",
+        "summary": "Strafenkatalog, eingetragene Strafen und der Stand der Mannschaftskasse – offen, bezahlt, gesamt. Jede Spielerin sieht ihr eigenes Konto.",
+        "tagline": "Was was kostet, wer was schuldet und was schon bezahlt ist – an einer Stelle statt auf einem Zettel, den nur einer hat.",
+        "intro": [
+          "Fast jede Mannschaft hat einen Strafenkatalog: fünf Euro fürs Zuspätkommen, zwei fürs Handy in der Kabine, zehn fürs unentschuldigte Fehlen. Und fast jede führt ihn auf einem Zettel, den genau eine Person hat – und der im Zweifel in der Sporttasche liegt, wenn jemand fragt, was er eigentlich schuldet.",
+          "In Statix legst du den Katalog einmal an. Danach ist eine Strafe zwei Tipps: Spielerin antippen, Zeile auswählen. Datum und Notiz gehören dazu, wenn es später jemand nachvollziehen soll – „Auswärtsspiel in Werne, zwanzig Minuten zu spät“. Die Kasse rechnet mit: offen, bezahlt, gesamt, je Spielerin und für die ganze Mannschaft. Abgehakt wird mit einem Tipp.",
+          "Der Teil, der die meisten Diskussionen erspart, ist der Blick von der anderen Seite: Jede Spielerin mit Zugang sieht unter „Meine Strafen“ ihr eigenes Konto und den Katalog dahinter. Niemand muss mehr fragen, und niemand erfährt seinen Stand erst in dem Moment, in dem er bezahlen soll. Wer die Kasse führt, muss übrigens nicht im Trainerteam sein: Eine Spielerin kann die Pflicht „Strafen“ übernehmen und bleibt trotzdem Spielerin."
+        ],
+        "facts": [
+          {
+            "term": "Katalog",
+            "value": "Eigene Zeilen, eigene Preise, eigene Reihenfolge"
+          },
+          {
+            "term": "Eintragen",
+            "value": "Zwei Tipps: Spielerin, Katalogzeile"
+          },
+          {
+            "term": "Kasse",
+            "value": "Offen, bezahlt, gesamt – je Spielerin"
+          },
+          {
+            "term": "Spieleransicht",
+            "value": "Jede sieht ihr eigenes Konto"
+          },
+          {
+            "term": "Wer führt sie",
+            "value": "Trainerteam – oder eine Spielerin mit der Pflicht"
+          },
+          {
+            "term": "Beträge",
+            "value": "Auf den Cent, nie gerundet"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Katalog aufschreiben",
+            "body": "Was kostet Zuspätkommen, was ein klingelndes Handy, was ein vergessenes Trikot. Einmal festgelegt, muss sich das niemand mehr merken – und niemand mehr darüber streiten."
+          },
+          {
+            "title": "Strafe eintragen",
+            "body": "Spielerin, Zeile, fertig. Der Tag lässt sich zurückdatieren, weil eine Strafe regelmäßig zwei Tage später aufgeschrieben wird, und eine Notiz macht sie Wochen später wiedererkennbar."
+          },
+          {
+            "title": "Abhaken, wenn bezahlt wurde",
+            "body": "Ein Tipp macht aus offen bezahlt. Der offene Betrag der Mannschaftskasse ist damit immer der, der tatsächlich noch aussteht."
+          },
+          {
+            "title": "Die Mannschaft liest mit",
+            "body": "Wer einen Spieler-Zugang hat, sieht ihr eigenes Konto und den Katalog. Das ist der Unterschied zwischen einer Kasse, die geführt wird, und einer, die auch akzeptiert wird."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Mannschaftskasse in Statix mit offenen und bezahlten Strafen je Spielerin",
+            "label": "Die Kasse: offen, bezahlt, gesamt – und wer wofür dran ist"
+          },
+          {
+            "alt": "Strafe eintragen in Statix: Katalogzeile auswählen, dann die Spielerin",
+            "label": "Eintragen: Grund wählen, Spielerin antippen – das ist der ganze Vorgang"
+          },
+          {
+            "alt": "Strafenkatalog in Statix mit Regeln und Beträgen",
+            "label": "Der Katalog: was die Mannschaft für welchen Fall vereinbart hat"
+          }
+        ],
+        "limits": [
+          "Statix kassiert kein Geld. Es gibt keine Zahlung, kein Lastschriftverfahren und keine Mahnung – die Kasse rechnet, das Geld wechselt wie immer in der Kabine den Besitzer.",
+          "Eine Preisänderung wirkt nur nach vorn. Beschließt die Mannschaft im Januar, dass Zuspätkommen künftig zehn statt fünf Euro kostet, bleiben die Strafen aus dem Oktober bei fünf – sonst wäre die Summe, die jemand letzte Woche genannt bekam, diese Woche eine andere.",
+          "Mitgliedsbeiträge, Abrechnungen und Vereinsfinanzen macht Statix nicht. Das ist Vereinsverwaltung, keine Mannschaftskasse."
+        ],
+        "faq": [
+          {
+            "question": "Was passiert mit alten Strafen, wenn wir die Preise ändern?",
+            "answer": "Nichts. Eine eingetragene Strafe merkt sich Grund und Betrag vom Tag des Eintrags; der Katalog ist die Preisliste von heute, die Strafe die Rechnung von damals. Genau deshalb schreibt ein Beschluss im Januar keine vier Monate Buchhaltung um."
+          },
+          {
+            "question": "Kann eine Spielerin die Kasse führen?",
+            "answer": "Ja. Die Pflicht heißt schlicht „Strafen“ und hängt am Konto in dieser Mannschaft: Die Strafwartin trägt ein, hakt ab und pflegt den Katalog – und bleibt dabei Spielerin mit ihren eigenen Terminen, Zahlen und Umfragen. Sie wird nicht zur Trainerin."
+          },
+          {
+            "question": "Sieht jede Spielerin, was die anderen schulden?",
+            "answer": "Nein. Unter „Meine Strafen“ steht ihr eigenes Konto und der Katalog dahinter. Die Gesamtübersicht über die Mannschaft sehen das Trainerteam und die Strafwartin."
+          },
+          {
+            "question": "Was, wenn jemand etwas bezahlt, das gar nicht stimmt?",
+            "answer": "Jede Strafe lässt sich ändern oder löschen, und ein Häkchen lässt sich zurücknehmen. Eine Kasse, in der man einen Tippfehler nicht mehr korrigieren kann, rechnet niemand auf Papier nach."
+          }
+        ]
+      },
+      {
+        "slug": "trikotverwaltung",
+        "name": "Trikotverwaltung",
+        "short": "Trikots",
+        "headline": "Wer hat eigentlich die 7?",
+        "summary": "Trikotsätze mit Farben, Nummern und Größen, die Ausgabe an die Mannschaft und die Historie, wer welches Hemd wann hatte.",
+        "tagline": "Heimsatz, Auswärtssatz, welche Nummer bei wem liegt – und was am Saisonende zurückkommen muss.",
+        "intro": [
+          "Ein Trikotsatz ist Vereinseigentum, das fünfzehn Leute mit nach Hause nehmen. Am Saisonende fehlen zwei Hemden, und niemand weiß mehr, ob die 7 bei der Spielerin liegt, die im Winter aufgehört hat, oder in der Kiste im Geräteraum.",
+          "In Statix hat die Mannschaft einen Trikotschrank: ein Heimsatz, ein Auswärtssatz, bei Bedarf ein Sondersatz. Zu jedem Satz gehören die Farbe der Feldspieler und die der Torhüterin – getrennt, weil genau daran die Regel hängt, dass sich die Torhüterin von beiden Mannschaften unterscheiden muss. Dazu die Hemden selbst: Nummer, Größe, Feld oder Torwart, und eine Notiz, wo der Satz liegt.",
+          "Ausgegeben wird per Zug: Hemd auf die Spielerin, mit Datum. Jedes Trikot merkt sich, wer es vorher hatte, also steht am Saisonende nicht die Frage im Raum, wer die 7 zuletzt gesehen hat – es steht da. Ein kaputtes oder verschwundenes Hemd wird ausgemustert statt gelöscht, damit die Historie lesbar bleibt."
+        ],
+        "facts": [
+          {
+            "term": "Sätze",
+            "value": "Heim, Auswärts und Sondersätze"
+          },
+          {
+            "term": "Farben",
+            "value": "Feldspieler und Torhüterin getrennt"
+          },
+          {
+            "term": "Bestand",
+            "value": "Nummer, Größe, Feld oder Torwart"
+          },
+          {
+            "term": "Anlegen",
+            "value": "Auch als Bereich: Nummer 2 bis 15 auf einmal"
+          },
+          {
+            "term": "Ausgabe",
+            "value": "Per Zug auf die Spielerin, mit Datum"
+          },
+          {
+            "term": "Historie",
+            "value": "Wer das Hemd vorher hatte"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Satz anlegen",
+            "body": "Name, Rolle und Farben zuerst – „Heimsatz rot“, Feld rot, Torhüterin grün. Die Notiz sagt, wo er liegt und wer den Schlüssel hat."
+          },
+          {
+            "title": "Hemden eintragen",
+            "body": "Nummer 2 bis 15 in einem Vorgang, Größen dazu, das Torwarttrikot als eigener Typ. Die Nummer auf dem Textil hat mit der Rückennummer im Kader nichts zu tun."
+          },
+          {
+            "title": "Ausgeben",
+            "body": "Hemd auf die Spielerin ziehen. Ab dann steht im Schrank, was draußen ist und was noch in der Kiste liegt."
+          },
+          {
+            "title": "Zurücknehmen oder ausmustern",
+            "body": "Die Rückgabe schließt die Ausgabe und lässt die Historie stehen. Ein Hemd, das nicht mehr tragbar ist, wird ausgemustert – nicht gelöscht."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Trikotschrank in Statix mit Heim- und Auswärtssatz und der Ausgabe an die Mannschaft",
+            "label": "Der Schrank: beide Sätze, wer welche Nummer hat, was noch da ist"
+          }
+        ],
+        "limits": [
+          "Statix bestellt keine Trikots und kennt keine Preise. Es führt den Schrank, den ihr habt.",
+          "Die Nummer auf dem Hemd ist nicht die Rückennummer im Kader. Das ist Absicht: Ein Hemd kann an jede gehen, und die Nummernfreiheit im Kader bleibt bestehen.",
+          "Es gibt keine Fotos der Trikots, nur Farben – und keine Erinnerung, wer diese Woche waschen muss."
+        ],
+        "faq": [
+          {
+            "question": "Warum hat das Trikot eine eigene Nummer?",
+            "answer": "Weil es der Aufdruck auf dem Stoff ist und nicht die Nummer, unter der jemand spielt. Die beiden auseinanderzuhalten ist der ganze Punkt: Sonst könnte ein Hemd nur an die Spielerin mit derselben Rückennummer gehen."
+          },
+          {
+            "question": "Was passiert am Saisonende?",
+            "answer": "Du nimmst die Hemden zurück, und jede offene Ausgabe, die dann noch offen ist, ist die Liste, die du in die Mannschaftsgruppe schickst. Die Historie bleibt danach lesbar."
+          },
+          {
+            "question": "Können wir mehrere Sätze führen?",
+            "answer": "Ja. Je Rolle gibt es einen aktiven Satz – einen Heimsatz und einen Auswärtssatz –, daneben beliebig viele ohne feste Rolle, etwa den alten Satz als Reserve."
+          }
+        ]
+      },
+      {
+        "slug": "spieler-zugang",
+        "name": "Spieler-Zugang",
+        "short": "Spieler-App",
+        "headline": "Die Mannschaft bekommt ihren eigenen Zugang",
+        "summary": "Ein Einladungslink für die ganze Mannschaft: Spieler melden sich selbst an und sehen danach ihre Termine, ihre eigenen Zahlen, ihre Umfragen und ihr Strafenkonto.",
+        "tagline": "Ein Link, ein QR-Code – danach hat jede Spielerin ihren eigenen Zugang, und du beantwortest deutlich weniger Fragen.",
+        "intro": [
+          "Statix ist nicht nur ein Trainerwerkzeug. Die Mannschaft bekommt einen eigenen Zugang, und du legst dafür keine fünfzehn Konten an: Es gibt einen Link für die ganze Mannschaft – als QR-Code im Training, per WhatsApp in die Gruppe. Wer ihn öffnet, sucht sich im Kader selbst heraus und legt ein Passwort fest.",
+          "Danach sieht sie ihre Seite der App: die nächsten Termine mit Zu- und Absage, ihre eigenen Zahlen aus allen beendeten Spielen – Trefferquote, Würfe nach Position, Spielzeit, Trainingsbeteiligung –, offene Umfragen und ihr Strafenkonto. Nicht sieht sie: die Zahlen der anderen, fremde Spielerprofile, deine KI-Berichte.",
+          "Die Kontrolle bleibt beim Trainerteam. Der Link läuft ab, lässt sich neu erzeugen oder deaktivieren, und in der Übersicht steht, wer sich schon angemeldet hat und wer noch fehlt. Verlässt jemand die Mannschaft, löst du die Verknüpfung – der Kaderplatz mit allem, was dazugehört, bleibt. Umgekehrt entscheidet jede Spielerin selbst, ob ihr Name auf öffentlichen Seiten wie dem Live-Ticker erscheint; diese Entscheidung geht der Einstellung der Mannschaft vor."
+        ],
+        "facts": [
+          {
+            "term": "Einladung",
+            "value": "Ein Link für alle – als QR-Code oder per WhatsApp"
+          },
+          {
+            "term": "Anmeldung",
+            "value": "Selbst im Kader auswählen, Passwort festlegen"
+          },
+          {
+            "term": "Sie sieht",
+            "value": "Termine, eigene Zahlen, Umfragen, Strafen"
+          },
+          {
+            "term": "Sie sieht nicht",
+            "value": "Die Statistik der anderen"
+          },
+          {
+            "term": "Übersicht",
+            "value": "Wer ist schon dabei, wer fehlt noch"
+          },
+          {
+            "term": "Widerruf",
+            "value": "Link deaktivieren oder Verknüpfung lösen"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Link erzeugen",
+            "body": "Einmal in den Einstellungen. Der Link gilt befristet und lässt sich jederzeit ersetzen – der alte hört damit sofort auf zu funktionieren."
+          },
+          {
+            "title": "In die Mannschaft geben",
+            "body": "QR-Code im Training scannen lassen oder den fertigen Text per WhatsApp schicken. Beides führt an dieselbe Stelle."
+          },
+          {
+            "title": "Die Spielerin meldet sich selbst an",
+            "body": "Sie wählt ihren Platz im Kader, legt ein Passwort fest – fertig. Du legst kein Konto an und verteilst keine Zugangsdaten."
+          },
+          {
+            "title": "Nachhalten, wer fehlt",
+            "body": "In der Übersicht steht neben jedem Kaderplatz, ob er mit einem Konto verknüpft ist. Das ist die Liste, die du beim nächsten Training abarbeitest."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Einladungslink für Spielerinnen in den Statix-Einstellungen mit QR-Code und Kaderübersicht",
+            "label": "Ein Link für die ganze Mannschaft – und wer schon dabei ist"
+          },
+          {
+            "alt": "Eigene Statistik einer Spielerin auf dem Handy",
+            "label": "Ihre Seite: Kartenwert, Formkurve und die eigenen Zahlen"
+          },
+          {
+            "alt": "Strafenkonto einer Spielerin auf dem Handy",
+            "label": "Und ihr eigenes Strafenkonto, ohne nachzufragen"
+          }
+        ],
+        "limits": [
+          "Eltern und Zuschauer bekommen keinen Zugang. Für alle, die nicht im Kader stehen, gibt es den öffentlichen Live-Ticker.",
+          "Ein Zugang hängt an einem Platz im Kader. Ohne Kaderzeile gibt es keine Zahlen – wer die Mannschaft wechselt, wird vom Trainerteam neu verknüpft.",
+          "Spieler ändern nichts an der Mannschaft: Sie erfassen keine Spiele, legen keine Termine an und sehen keine fremden Profile."
+        ],
+        "faq": [
+          {
+            "question": "Muss ich für jede Spielerin ein Konto anlegen?",
+            "answer": "Nein. Es gibt einen einzigen Link für die ganze Mannschaft; jede meldet sich selbst damit an und sucht sich im Kader heraus. Du verteilst keine Passwörter."
+          },
+          {
+            "question": "Sieht meine Spielerin die Zahlen der anderen?",
+            "answer": "Nein. Sie sieht ihre eigenen – aus den Spielen, die du erfasst hast. Der Kader mit allen Werten, die Spielerprofile und die KI-Berichte bleiben beim Trainerteam."
+          },
+          {
+            "question": "Was passiert, wenn jemand die Mannschaft verlässt?",
+            "answer": "Du löst die Verknüpfung. Das Konto verliert den Zugang zur Mannschaft, der Kaderplatz bleibt mit allen erfassten Spielen bestehen – und über denselben Link kann sich später jemand anders anmelden."
+          },
+          {
+            "question": "Was ist mit Minderjährigen und dem Namen im Live-Ticker?",
+            "answer": "Jede Spielerin mit Zugang kann in ihren Einstellungen festlegen, dass ihr Name auf öffentlichen Seiten nicht erscheint – dann steht dort nur die Nummer. Diese Entscheidung geht der Einstellung der Mannschaft vor und lässt sich vom Trainerteam nicht überschreiben; für die Veröffentlichung selbst bleibt die Einwilligung der Erziehungsberechtigten Sache des Vereins."
           }
         ]
       },
@@ -5316,6 +5610,10 @@
           {
             "question": "Können Eltern antworten?",
             "answer": "Jeder mit dem Link kann antworten und wählt sich dabei aus dem Kader aus. Bei Jugendmannschaften ist genau das oft der Elternteil, der das Handy in der Hand hat."
+          },
+          {
+            "question": "Und wenn die Mannschaft schon eigene Zugänge hat?",
+            "answer": "Dann braucht sie den Link nicht: Offene Umfragen stehen in der App unter „Umfragen“ und werden dort direkt beantwortet. Der Link bleibt trotzdem der Weg für alle, die keinen Zugang haben."
           }
         ]
       }
