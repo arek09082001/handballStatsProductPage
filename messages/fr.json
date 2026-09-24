@@ -34,7 +34,7 @@
       "title": "Conditions générales d’utilisation (CGU)",
       "description": "Conditions régissant l’utilisation de l’application de statistiques de handball Statix ainsi que des sites web et services associés.",
       "transparencyBadge": "Équitables et transparentes",
-      "lastUpdated": "Dernière mise à jour : 25 août 2026"
+      "lastUpdated": "Dernière mise à jour : 24 septembre 2026"
     },
     "documentTitle": "Conditions générales d’utilisation",
     "documentTitleShort": "CGU",
@@ -57,7 +57,7 @@
       "title": "Préambule",
       "paragraph1": "Les présentes conditions générales d’utilisation (les « CGU ») régissent la relation contractuelle entre vous en qualité d’utilisateur (l’« Utilisateur » ou « vous ») et le fournisseur, concernant l’utilisation de l’application de statistiques de handball « Statix » ainsi que des sites web associés, de l’application web progressive et des services liés (ensemble, « Statix » ou le « Service »).",
       "paragraph2": "Tous les termes et désignations employés dans les présentes CGU s’entendent de manière neutre du point de vue du genre.",
-      "updatedAt": "Version : 25 août 2026"
+      "updatedAt": "Version : 24 septembre 2026"
     },
     "sections": {
       "scope": {
@@ -85,7 +85,11 @@
           "Création de tournois réunissant plusieurs équipes, avec classements et calendrier automatiques.",
           "Analyse automatisée, assistée par intelligence artificielle, des matchs, des équipes et des joueurs pris individuellement.",
           "Diffusion publique facultative d’un match (« live ticker ») via un lien impossible à deviner, le cas échéant avec des logos de sponsors.",
-          "Partage des analyses par lien, export de la feuille de match en PDF et export de tableaux statistiques en CSV."
+          "Partage des analyses par lien, export de la feuille de match en PDF et export de tableaux statistiques en CSV.",
+          "Fonction vidéo : téléversement d’enregistrements de matchs et d’entraînements, marquage de scènes, envoi de compilations à des joueuses et joueurs, et analyse automatique des trajets et des trajectoires du ballon (§ 10).",
+          "Caisse de l’équipe avec barème d’amendes, gestion des maillots et rappels d’anniversaires.",
+          "Corbeille : les matchs, membres de l’effectif, tournois et équipes supprimés peuvent être restaurés pendant 30 jours (§ 12).",
+          "Export des données : copie de toutes ses propres données ou – pour l’entraîneur principal – de toutes les données de l’équipe sous forme d’archive dans un format lisible par machine (§ 12)."
         ],
         "paragraphsAfter": [
           "Statix fait l’objet d’un développement continu et se trouve dans sa phase de lancement. L’étendue concrète des fonctions résulte de la version actuelle du Service et de la description des prestations sur les sites web du fournisseur. Le fournisseur est en droit de développer, de modifier ou d’adapter certaines fonctions, dans la mesure où cela reste raisonnable pour l’Utilisateur et où le cœur de la prestation contractuellement due est préservé.",
@@ -112,11 +116,11 @@
         ],
         "items": [
           "Les entraîneurs créent des équipes, saisissent les effectifs et les matchs et administrent les données de l’équipe. Ils décident quelles données sont saisies dans Statix et quels contenus sont publiés.",
-          "Les joueurs peuvent créer leur propre compte via un lien d’invitation et revendiquer leur fiche dans l’effectif. Ils voient alors les rendez-vous, leurs propres statistiques et réponses, et peuvent gérer eux-mêmes leurs propres saisies, comme les absences ou l’affichage de leur nom sur les pages publiques.",
+          "Les joueurs peuvent créer leur propre compte via un lien d’invitation et revendiquer leur fiche dans l’effectif. Ils voient alors les rendez-vous, leurs propres statistiques et réponses, et peuvent gérer eux-mêmes leurs propres saisies, comme les absences ou l’affichage de leur nom sur les pages publiques. Via la fonction d’export, ils obtiennent à tout moment une copie de leurs propres données.",
           "Les administrateurs de club gèrent conjointement plusieurs équipes d’un club et peuvent consulter les données de ces équipes, à condition que celles-ci soient rattachées au club."
         ],
         "paragraphsAfter": [
-          "Lorsqu’une équipe est rattachée à un club, les données de l’équipe appartiennent sur le plan organisationnel au club et non au compte individuel d’un entraîneur. Si un entraîneur supprime son propre compte, une équipe comptant d’autres membres continue d’exister et est confiée à un membre restant (§ 12, al. 4).",
+          "Lorsqu’une équipe est rattachée à un club, les données de l’équipe appartiennent sur le plan organisationnel au club et non au compte individuel d’un entraîneur. Si un entraîneur supprime son propre compte, une équipe comptant d’autres membres continue d’exister et est confiée à un membre restant (§ 12, al. 5).",
           "L’attribution d’un rôle n’autorise pas le fournisseur à intervenir dans la relation interne entre le club, les entraîneurs et les joueurs. Les différends portant sur les personnes autorisées à consulter ou à modifier telles ou telles données doivent être réglés entre les parties concernées."
         ]
       },
@@ -160,7 +164,7 @@
         "paragraphs": [
           "Le fournisseur traite les données à caractère personnel dans le cadre du droit applicable en matière de protection des données. Les détails du traitement des données à caractère personnel figurent dans la politique de confidentialité.",
           "Dans la mesure où le fournisseur traite, sur instruction de l’Utilisateur, des données à caractère personnel de tiers (en particulier les données relatives aux joueurs, aux rendez-vous, aux absences et aux sondages) que l’Utilisateur saisit sous sa propre responsabilité, le fournisseur agit en qualité de sous-traitant au sens de l’article 28 du RGPD ; le responsable du traitement est l’Utilisateur ou son club. Pour les données du compte utilisateur elles-mêmes et pour l’exploitation technique du Service, le fournisseur est responsable du traitement pour son propre compte.",
-          "Sur demande adressée à l’adresse indiquée dans les mentions légales, le fournisseur met à disposition un accord de sous-traitance conforme à l’article 28, paragraphe 3, du RGPD, assorti d’annexes relatives aux mesures techniques et organisationnelles et aux sous-traitants ultérieurs auxquels il est fait appel. Les clubs qui saisissent des données d’équipes de jeunes devraient conclure cet accord avant toute saisie de données.",
+          "Sur demande adressée à l’adresse indiquée dans les mentions légales, le fournisseur met à disposition un accord de sous-traitance conforme à l’article 28, paragraphe 3, du RGPD, assorti d’annexes relatives aux mesures techniques et organisationnelles et aux sous-traitants ultérieurs auxquels il est fait appel. Les clubs qui saisissent des données d’équipes de jeunes devraient conclure cet accord avant toute saisie de données. Le prestataire assure la restitution des données à la fin du contrat (art. 28, par. 3, point g) du RGPD) via la fonction d’export prévue au § 12, al. 2.",
           "Pour fournir le Service, le fournisseur fait appel à des prestataires soigneusement sélectionnés en qualité de sous-traitants. Il s’agit notamment de :"
         ],
         "items": [
@@ -168,7 +172,10 @@
           "Vercel – hébergement et exploitation des sites web et de l’application ainsi que mesure d’audience anonymisée",
           "Brevo – envoi d’e-mails (confirmations d’inscription, rappels, demandes de contact, newsletter)",
           "Anthropic et OpenAI – analyses assistées par IA sur la base de données pseudonymisées",
-          "Les services push des éditeurs de navigateurs (notamment Google, Mozilla, Apple) – distribution des notifications push activées"
+          "Les services push des éditeurs de navigateurs (notamment Google, Mozilla, Apple) – distribution des notifications push activées",
+          "Cloudflare – stockage d’objets (Cloudflare R2) pour les enregistrements vidéo, exclusivement dans des centres de données de l’Union européenne (uniquement en cas d’utilisation de la fonction vidéo)",
+          "Fly.io – préparation des enregistrements vidéo téléversés à Francfort-sur-le-Main (uniquement en cas d’utilisation de la fonction vidéo)",
+          "RunPod – traitement et analyse vidéo gourmands en calcul sur des processeurs graphiques dans des centres de données de l’Union européenne (uniquement en cas d’utilisation de la fonction vidéo)"
         ],
         "paragraphsAfter": [
           "Le recours à certains prestataires peut entraîner un transfert de données vers des pays tiers (en particulier les États-Unis). Le fournisseur fonde de tels transferts sur une décision d’adéquation de la Commission européenne (cadre de protection des données UE–États-Unis) lorsque le prestataire concerné est certifié et, à défaut, sur des clauses contractuelles types conformes à l’article 46, paragraphe 2, point c), du RGPD. La politique de confidentialité contient de plus amples informations.",
@@ -188,13 +195,16 @@
         "items": []
       },
       "publicSharing": {
-        "title": "§ 10 Publication et contenus partagés",
+        "title": "§ 10 Publication, contenus partagés et enregistrements vidéo",
         "paragraphs": [
           "L’Utilisateur peut rendre certains contenus accessibles au public au moyen d’un lien impossible à deviner, en particulier un live ticker en cours et les feuilles de match terminées. Sans un tel partage exprès, les données d’une équipe ne sont accessibles qu’à ses membres.",
           "Quiconque partage des contenus publie ce faisant des données à caractère personnel de tiers et en est responsable. Avant tout partage, l’Utilisateur doit s’assurer que les joueurs concernés — ou leurs représentants légaux s’il s’agit de mineurs — y consentent.",
           "Les joueurs disposant d’un compte peuvent indiquer dans leurs paramètres que leur nom ne doit pas apparaître sur les pages publiques. Cette décision prévaut toujours sur un réglage plus large au niveau de l’équipe et ne peut être écartée par un entraîneur.",
           "Le partage peut être interrompu à tout moment ; le lien n’est alors plus accessible. Le fournisseur n’a aucune influence sur le fait que des tiers aient copié, enregistré ou mis en cache dans des moteurs de recherche des contenus auparavant publics.",
-          "Les logos de sponsors téléversés par l’Utilisateur pour le live ticker doivent être libres de droits de tiers ou faire l’objet d’une autorisation d’utilisation correspondante. Le § 7, al. 5 s’applique en conséquence."
+          "Les logos de sponsors téléversés par l’Utilisateur pour le live ticker doivent être libres de droits de tiers ou faire l’objet d’une autorisation d’utilisation correspondante. Le § 7, al. 5 s’applique en conséquence.",
+          "Si l’utilisateur téléverse des enregistrements vidéo, il garantit que l’enregistrement a été réalisé licitement et qu’il peut l’utiliser aux fins visées au § 2. Avant le téléversement, il recueille les consentements nécessaires des joueuses et joueurs filmés – pour les mineurs ceux des titulaires de l’autorité parentale – et respecte les droits des autres personnes enregistrées (adversaires, arbitres, spectateurs) ainsi que les éventuelles prescriptions de l’exploitant de la salle et de la fédération. Le prestataire stocke et traite les enregistrements exclusivement pour le compte de l’utilisateur (§ 8).",
+          "Les compilations que l’utilisateur envoie à des joueuses et joueurs ne rendent accessibles que les scènes qu’elles contiennent. L’utilisateur décide des scènes qu’il envoie et en porte la responsabilité.",
+          "Les enregistrements vidéo ne sont soumis à aucun délai de suppression automatique ; ils restent stockés jusqu’à ce que l’utilisateur les supprime ou que l’équipe soit définitivement supprimée. L’utilisateur supprime les enregistrements dès que la finalité de l’analyse est atteinte. Le prestataire se réserve le droit d’introduire un quota de stockage ou une durée maximale de conservation pour les enregistrements vidéo ; il l’annoncera au moins 30 jours à l’avance sous forme de texte."
         ],
         "items": []
       },
@@ -212,11 +222,12 @@
       "dataExport": {
         "title": "§ 12 Export des données, suppression et clôture du compte",
         "paragraphs": [
-          "Dans le cadre des fonctions prévues, l’Utilisateur peut partager les analyses qu’il a établies dans Statix, exporter la feuille de match en PDF et certains tableaux statistiques en CSV, ainsi que s’abonner au calendrier des rendez-vous sous forme de flux iCalendar.",
-          "Au-delà des fonctions d’export disponibles dans l’application, le fournisseur met à la disposition de l’Utilisateur, sur demande adressée à l’adresse indiquée dans les mentions légales, les données enregistrées pour son compte et ses équipes dans un format structuré, couramment utilisé et lisible par machine. Les demandes sont traitées sans délai et au plus tard dans un délai de 30 jours.",
-          "L’Utilisateur peut supprimer lui-même son compte à tout moment (Paramètres → Compte). Toute personne qui ne parvient plus à se connecter adresse sa demande de suppression à l’adresse e-mail indiquée dans les mentions légales. La suppression est définitive ; il n’y a ni restauration ni délai de grâce.",
-          "Lors de la suppression du compte, les équipes dont l’Utilisateur est le seul membre sont supprimées, y compris les données d’effectif, de match, de rendez-vous et d’analyse associées. Les équipes comptant d’autres membres continuent d’exister et sont confiées au membre restant le plus ancien ; il en va de même pour les équipes rattachées à un club.",
-          "Il appartient à l’Utilisateur d’exporter lui-même les données dont il a besoin avant la suppression ou avant la fin du contrat. La politique de confidentialité décrit les détails et les durées de conservation des journaux techniques."
+          "L’utilisateur peut partager les analyses saisies dans Statix dans le cadre des fonctions proposées, exporter le rapport de match en PDF et des tableaux statistiques individuels en CSV, et s’abonner au calendrier sous forme de flux iCalendar.",
+          "Chaque utilisateur peut télécharger dans l’application (Réglages → Compte), à tout moment, une copie complète des données enregistrées pour son compte – y compris ses données en tant que membre de l’effectif – sous forme d’archive dans un format structuré, couramment utilisé et lisible par machine (JSON). L’entraîneur principal peut en outre exporter l’ensemble des données de l’équipe dans le même format (Réglages → Staff) ; les fichiers vidéo n’y figurent pas. Qui ne peut plus utiliser l’application reçoit les données, sur demande à l’adresse indiquée dans les mentions légales, dans un délai de 30 jours.",
+          "Les matchs, membres de l’effectif, tournois et équipes supprimés sont conservés 30 jours dans une corbeille et peuvent pendant cette période être restaurés ou supprimés définitivement de manière anticipée par le staff de l’équipe ; ensuite, ils sont supprimés automatiquement et définitivement. La corbeille est une fonction de confort ; il n’existe aucun droit à la restauration.",
+          "L’utilisateur peut supprimer lui-même son compte à tout moment (Réglages → Compte). Le compte est alors immédiatement verrouillé et définitivement supprimé après un délai de grâce de 30 jours ; pendant le délai de grâce, l’utilisateur peut retirer la suppression en se connectant. Qui ne peut plus se connecter ou souhaite une suppression immédiate sans délai de grâce adresse sa demande à l’adresse e-mail indiquée dans les mentions légales. Après l’expiration du délai de grâce, aucune restauration n’est possible.",
+          "Avec la suppression définitive du compte sont supprimées les équipes dont l’utilisateur est le seul membre du staff, y compris les données d’effectif, de matchs, de calendrier, de vidéo et d’analyse associées. Les équipes comptant d’autres membres subsistent et sont transmises au membre restant ayant la plus grande ancienneté ; il en va de même pour les équipes rattachées à un club.",
+          "L’utilisateur est lui-même responsable d’exporter les données dont il a besoin avant la suppression ou avant la fin du contrat. Les détails et les durées de conservation sont décrits dans la déclaration de confidentialité."
         ],
         "items": []
       },
@@ -235,7 +246,7 @@
       "term": {
         "title": "§ 14 Durée du contrat et résiliation",
         "paragraphs": [
-          "Le contrat d’utilisation pour l’usage gratuit est conclu pour une durée indéterminée et peut être résilié à tout moment par chacune des parties sans préavis, en particulier par la suppression du compte utilisateur.",
+          "Le contrat d’utilisation pour l’usage gratuit est conclu pour une durée indéterminée et peut être résilié par chacune des parties à tout moment sans préavis, notamment par la suppression du compte utilisateur. La résiliation par suppression du compte prend effet à l’expiration du délai de grâce prévu au § 12, al. 4 ; jusque-là, l’utilisateur peut la retirer en se connectant.",
           "La durée, la reconduction et la résiliation d’un éventuel abonnement payant sont régies par les conditions indiquées lors du processus de commande correspondant. Lorsqu’une obligation continue payante est proposée à des consommateurs, le fournisseur met à disposition un bouton de résiliation conformément au § 312k BGB.",
           "Le droit de résiliation extraordinaire pour motif grave demeure inchangé pour les deux parties. Pour le fournisseur, un motif grave existe notamment en cas de violation substantielle des présentes CGU par l’Utilisateur.",
           "Les résiliations requièrent la forme textuelle (p. ex. par e-mail) ; la suppression du compte dans l’application suffit."
@@ -379,11 +390,11 @@
           },
           {
             "title": "Accord de sous-traitance",
-            "description": "Les clubs et les équipes qui saisissent des données de leurs membres – en particulier de mineurs – peuvent obtenir un accord de sous-traitance conforme à l’article 28, paragraphe 3, du RGPD, assorti d’annexes relatives aux mesures techniques et organisationnelles et aux sous-traitants ultérieurs auxquels il est fait appel, en en faisant la demande à notre adresse de contact."
+            "description": "Les clubs et les équipes qui saisissent des données de leurs membres – en particulier de mineurs – peuvent obtenir un accord de sous-traitance conforme à l’article 28, paragraphe 3, du RGPD, assorti d’annexes relatives aux mesures techniques et organisationnelles et aux sous-traitants ultérieurs auxquels il est fait appel, en en faisant la demande à notre adresse de contact. La restitution des données à la fin du contrat s’effectue via l’export d’équipe dans l’application (voir « Export des données »)."
           },
           {
             "title": "Droits des personnes concernées",
-            "description": "Les joueurs doivent adresser à leur club ou à leur entraîneur les demandes d’accès, de rectification et d’effacement portant sur leurs données d’effectif. Si de telles demandes nous parviennent directement, nous les transmettons au responsable et l’assistons pour y donner suite."
+            "description": "Les joueurs doivent adresser à leur club ou à leur entraîneur les demandes d’accès, de rectification et d’effacement portant sur leurs données d’effectif. Si de telles demandes nous parviennent directement, nous les transmettons au responsable et l’assistons pour y donner suite. Les joueuses et joueurs disposant d’un compte obtiennent à tout moment eux-mêmes une copie de leurs données via la fonction d’export de l’application."
           }
         ]
       },
@@ -402,7 +413,9 @@
           "Informations relatives à la santé (article 9 du RGPD) – uniquement lorsqu’une absence est saisie comme maladie ou blessure, accompagnée d’une remarque facultative",
           "Données d’utilisation (p. ex. fonctions consultées, date de la dernière utilisation)",
           "Métadonnées, données de communication et de procédure (p. ex. adresses IP, informations sur l’appareil et le navigateur)",
-          "Données de journalisation (p. ex. journaux techniques d’erreurs)"
+          "Données de journalisation (p. ex. journaux techniques d’erreurs)",
+          "Données d’image et de vidéo (photos-portraits des membres de l’effectif et du staff ; en cas d’utilisation de la fonction vidéo, enregistrements de matchs et d’entraînements avec piste audio et données de mouvement qui en sont dérivées, comme les trajets, distances et trajectoires du ballon)",
+          "Données de la caisse de l’équipe (barème d’amendes, amendes infligées, montants, statut de paiement)"
         ],
         "affectedPeopleTitle": "Catégories de personnes concernées",
         "affectedPeople": [
@@ -410,7 +423,8 @@
           "Utilisateurs disposant d’un compte (entraîneurs, responsables de club, joueurs)",
           "Joueurs enregistrés par des utilisateurs sans compte propre, y compris des mineurs",
           "Visiteurs de nos sites web et des live tickers publics",
-          "Destinataires de la newsletter"
+          "Destinataires de la newsletter",
+          "Personnes visibles sur les enregistrements vidéo (adversaires, arbitres, spectateurs)"
         ],
         "purposesTitle": "Finalités du traitement",
         "purposes": [
@@ -425,7 +439,11 @@
           "Infrastructure informatique et analyse des erreurs",
           "Mesure d’audience anonymisée",
           "Relations publiques",
-          "Retours d’expérience et amélioration de l’offre"
+          "Retours d’expérience et amélioration de l’offre",
+          "Stockage, préparation et analyse d’enregistrements vidéo et envoi de scènes individuelles aux joueuses et joueurs (uniquement si la fonction vidéo est activée)",
+          "Tenue de la caisse de l’équipe, gestion des maillots et rappels d’anniversaires",
+          "Récupérabilité des données supprimées par erreur (corbeille) et fourniture de copies de données (accès et portabilité)",
+          "Communications contractuelles (p. ex. modifications de la présente déclaration ou des conditions générales)"
         ]
       },
       "legalBasis": {
@@ -435,7 +453,7 @@
         "items": [
           {
             "title": "Consentement (article 6, § 1, al. 1, point a) du RGPD)",
-            "description": "La personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques. Nous nous fondons sur ce consentement notamment pour la newsletter, pour les informations facultatives du questionnaire d’intégration et pour les notifications push."
+            "description": "La personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques. Nous nous fondons sur ce consentement notamment pour la newsletter, pour les informations facultatives du questionnaire d’intégration et pour les notifications push. Une photo-portrait personnelle téléversée volontairement repose de même sur le consentement."
           },
           {
             "title": "Consentement explicite pour les catégories particulières (article 9, § 2, point a) du RGPD)",
@@ -477,7 +495,9 @@
           "Les points d’accès de connexion, d’inscription et de partage sont protégés contre les attaques automatisées par des limites de comptage.",
           "Le partage public (live ticker, rapports partagés) s’effectue exclusivement via des adresses générées aléatoirement et impossibles à deviner, et peut être révoqué à tout moment.",
           "Avant toute transmission à un fournisseur d’IA, les noms des personnes sont remplacés par des identifiants (pseudonymisation).",
-          "Les données techniques devenues inutiles sont supprimées par une tâche automatique de la base de données exécutée quotidiennement (voir « Durée de conservation et suppression »)."
+          "Les données techniques devenues inutiles sont supprimées par une tâche automatique de la base de données exécutée quotidiennement (voir « Durée de conservation et suppression »).",
+          "Les photos-portraits et les enregistrements vidéo sont conservés dans des zones de stockage non publiques et ne sont délivrés qu’après vérification de l’autorisation ou via des adresses signées à durée limitée.",
+          "Les données supprimées restent 30 jours dans une corbeille verrouillée avant d’être définitivement effacées ; un compte est verrouillé dès la demande de suppression."
         ]
       },
       "webHosting": {
@@ -685,6 +705,58 @@
             ]
           },
           {
+            "title": "Photos-portraits",
+            "paragraphs": [
+              "Les membres de l’effectif disposant d’un compte ainsi que le staff peuvent téléverser volontairement une photo-portrait ; un entraîneur peut aussi ajouter une photo pour un membre de l’effectif sans compte. L’image est recadrée et réduite sur l’appareil avant l’envoi (au plus 512 × 512 pixels, environ 1 Mo) et sert exclusivement à la reconnaissance au sein de l’équipe, par exemple sur l’écran de terrain pendant la saisie en direct.",
+              "Les photos sont conservées dans une zone de stockage non publique de notre prestataire de base de données (Francfort-sur-le-Main) et ne sont délivrées qu’aux membres connectés de la même équipe ou du même club ; il n’existe pas d’adresse publique. Aucune photo n’apparaît sur les pages publiques (ticker en direct, rapports partagés), et aucune photo n’est transmise aux fournisseurs d’IA.",
+              "Une photo peut à tout moment être remplacée ou supprimée par la personne représentée ou par l’entraîneur. Pour les mineurs, le club recueille le consentement des titulaires de l’autorité parentale avant le téléversement ; il convient de renoncer aux photos lorsqu’elles ne sont pas nécessaires à l’entraînement."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Données d’image (photo-portrait), date du téléversement."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Utilisateurs disposant d’un compte ; joueuses et joueurs saisis par les utilisateurs, y compris des mineurs."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Pour sa propre photo : consentement (art. 6, par. 1, point a) du RGPD). Pour les photos des membres de l’effectif, le club ou l’entraîneur est responsable du traitement, généralement sur la base d’un consentement ; nous traitons en tant que sous-traitant (art. 28 du RGPD)."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "Jusqu’à la suppression de la photo, au plus tard jusqu’à la suppression définitive de la ligne d’effectif, de l’équipe ou du compte (voir « Corbeille, restauration et suppression du compte »)."
+              }
+            ]
+          },
+          {
+            "title": "Maillots, caisse de l’équipe et anniversaires",
+            "paragraphs": [
+              "Maillots : l’équipe peut gérer ses jeux de maillots et consigner quel maillot a été remis à quel membre de l’effectif et quand il a été rendu. Sont enregistrés le numéro, la taille, les dates de remise et de retour ainsi qu’une note facultative.",
+              "Caisse de l’équipe : l’équipe peut tenir un barème d’amendes (p. ex. « retard à l’entraînement ») et attribuer des amendes à des membres de l’effectif, avec motif, montant, date et mention du paiement. La caisse est visible par le staff et par le membre de l’effectif auquel l’équipe a confié cette tâche ; chaque joueuse ou joueur disposant d’un compte ne voit que ses propres entrées. Les paiements ne transitent pas par Statix : l’application est un registre, pas un service de paiement.",
+              "Anniversaires : si une date de naissance est enregistrée, l’application affiche aux membres de l’équipe les anniversaires à venir dans le calendrier. Cet affichage ne sert qu’à la vie de l’équipe ; la date de naissance est facultative, et l’année de naissance reste suffisante pour la catégorie d’âge."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Données de contenu (remises de maillots ; amendes avec motif, montant et statut de paiement), données de base des membres de l’effectif (date de naissance, si enregistrée)."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Membres de l’effectif ; utilisateurs disposant d’un compte."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Le club ou l’équipe est responsable du traitement ; nous traitons en tant que sous-traitant (art. 28 du RGPD) sur la base de notre contrat avec l’utilisateur (art. 6, par. 1, point b) du RGPD)."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "Jusqu’à la suppression de l’entrée par l’équipe, au plus tard jusqu’à la suppression définitive de la ligne d’effectif ou de l’équipe."
+              }
+            ]
+          },
+          {
             "title": "Club et vue de parcours à travers les équipes",
             "paragraphs": [
               "Plusieurs équipes peuvent être regroupées au sein d’un club. Les administrateurs du club voient alors les effectifs et les analyses de toutes les équipes rattachées. Au sein d’un club, les fiches d’effectif d’une même personne – par exemple celles de l’équipe des moins de 18 ans et de l’équipe féminine – peuvent être reliées à une seule personne, de sorte qu’un parcours à travers les équipes devienne visible.",
@@ -808,7 +880,7 @@
           {
             "title": "Base de données et stockage de fichiers (Supabase)",
             "paragraphs": [
-              "Toutes les données de l’application sont enregistrées dans une base de données PostgreSQL du prestataire Supabase ; les logos de clubs et de sponsors sont conservés dans le stockage objet du même prestataire. L’hébergement a lieu dans l’UE (région de Francfort-sur-le-Main, Allemagne). L’accès à la base de données s’effectue exclusivement côté serveur ; aucune connexion à la base de données n’a lieu depuis le navigateur. Toutes les tables sont en outre verrouillées par une « row level security » dépourvue de toute règle d’autorisation.",
+              "Toutes les données de l’application sont enregistrées dans une base de données PostgreSQL du prestataire Supabase ; les logos de clubs et de sponsors sont conservés dans le stockage objet du même prestataire. L’hébergement a lieu dans l’UE (région de Francfort-sur-le-Main, Allemagne). L’accès à la base de données s’effectue exclusivement côté serveur ; aucune connexion à la base de données n’a lieu depuis le navigateur. Toutes les tables sont en outre verrouillées par une « row level security » dépourvue de toute règle d’autorisation. Les photos-portraits et les images fixes servant à la calibration vidéo sont conservées dans des zones non publiques du même stockage d’objets et ne sont délivrées qu’après vérification de l’autorisation.",
               "La société mère du prestataire est établie aux États-Unis ; un accès depuis un pays tiers dans le cadre de la maintenance et de l’assistance ne peut donc pas être totalement exclu. Les garanties mentionnées ci-dessous s’appliquent à cet égard."
             ],
             "items": [
@@ -877,6 +949,31 @@
               {
                 "label": "Bases juridiques :",
                 "value": "Exécution d’un contrat (article 6, § 1, al. 1, point b) du RGPD) ; intérêts légitimes (article 6, § 1, al. 1, point f) du RGPD) ; pour la newsletter : consentement (article 6, § 1, al. 1, point a) du RGPD)."
+              }
+            ]
+          },
+          {
+            "title": "Communications contractuelles et message de suivi unique",
+            "paragraphs": [
+              "Nous informons tous les comptes par e-mail des modifications de la présente déclaration, des conditions générales ou des tarifs, ainsi que des avis d’exploitation importants. Ces communications font partie de la relation contractuelle et ne constituent pas de la publicité ; elles ne comportent donc pas de lien de désabonnement. Nous consignons par compte quelle communication a été envoyée quand et à quelle adresse, et si la remise a réussi, afin de pouvoir prouver que nous avons informé.",
+              "Vingt minutes après qu’un entraîneur nouvellement inscrit a saisi son premier match complet, nous envoyons un e-mail unique demandant si tout a fonctionné et renvoyant à l’analyse de ce match. Ce message est envoyé exactement une fois par compte ; il ne requiert aucun consentement publicitaire et n’est pas une newsletter."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Données de contact (adresse e-mail), données d’utilisation (date du premier match saisi), journal d’envoi (objet, date, statut de remise)."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Utilisateurs disposant d’un compte."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Exécution du contrat (art. 6, par. 1, point b) du RGPD) ; intérêts légitimes à prouver les communications contractuelles et à améliorer le service (art. 6, par. 1, point f) du RGPD)."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "Journaux d’envoi jusqu’à la suppression définitive du compte."
               }
             ]
           },
@@ -1018,6 +1115,114 @@
             ]
           },
           {
+            "title": "Enregistrements vidéo, analyse vidéo et envois",
+            "paragraphs": [
+              "Les équipes peuvent téléverser des enregistrements de leurs matchs et entraînements pour marquer des scènes, analyser des joueuses et joueurs et leur envoyer des compilations. La fonction vidéo est facultative ; sans enregistrement téléversé, aucun des traitements décrits ici n’a lieu.",
+              "Stockage : les enregistrements et les fichiers de segments qui en sont générés sont conservés dans un stockage d’objets non public du prestataire Cloudflare (Cloudflare R2). La zone de stockage est créée exclusivement pour des centres de données de l’Union européenne (désignation « jurisdiction: EU ») ; chaque consultation passe par une adresse signée à durée limitée que l’application ne génère qu’après vérification de l’autorisation. Les noms, les marqueurs et l’affectation à l’équipe et au match restent dans notre base de données ; le stockage vidéo ne les connaît pas.",
+              "Préparation : après le téléversement, l’enregistrement est découpé en segments courts et converti pour la lecture. Cette étape est assurée par une instance de calcul du prestataire Fly.io à Francfort-sur-le-Main, qui ne conserve le fichier en mémoire que pendant la durée du traitement et n’a aucun accès à notre base de données. Les étapes gourmandes en calcul – l’assemblage de deux perspectives de caméra en un panorama, la réduction d’enregistrements très volumineux et la détection automatique des trajets des joueuses et joueurs et du ballon – s’exécutent sur des processeurs graphiques du prestataire RunPod, exclusivement dans des centres de données de l’Union européenne et également sans stockage permanent ; l’instance est arrêtée après la tâche. Le résultat de l’analyse des trajets est constitué de trajectoires, de distances et de profils de vitesse que l’entraîneur attribue à une joueuse ou un joueur. Aucune reconnaissance faciale automatique n’a lieu.",
+              "Envois : un entraîneur peut envoyer à une joueuse ou un joueur disposant d’un compte une compilation de scènes sélectionnées. Le destinataire ne reçoit que les scènes contenues, pas l’enregistrement complet ; sont enregistrés le titre, la note ainsi que les dates d’envoi et de première ouverture.",
+              "Responsabilité : un enregistrement en salle montre régulièrement, outre sa propre équipe, des adversaires, des arbitres et des spectateurs. Le club, en tant que responsable du traitement, décide seul si et sur quelle base il est permis de filmer ; il recueille les consentements nécessaires – pour les mineurs ceux des titulaires de l’autorité parentale – et informe les personnes concernées. Nous ne traitons les enregistrements que sur instruction. Il n’existe actuellement aucun délai de suppression automatique pour les enregistrements vidéo : un enregistrement reste stocké jusqu’à ce que l’équipe le supprime ou que l’équipe elle-même soit définitivement supprimée. Nous recommandons de supprimer les enregistrements une fois l’analyse terminée."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Données d’image et de vidéo (enregistrements avec piste audio, images fixes pour la calibration), données de mouvement (trajets, distances, vitesses, trajectoires du ballon), données de contenu (scènes marquées, notes), données d’utilisation (dates de téléversement, d’envoi et d’ouverture)."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Joueuses et joueurs saisis par les utilisateurs, y compris des mineurs ; autres personnes visibles sur l’enregistrement (adversaires, arbitres, spectateurs) ; utilisateurs disposant d’un compte."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Le club est responsable du traitement ; pour l’enregistrement, généralement le consentement (art. 6, par. 1, point a) du RGPD) ou les intérêts légitimes du club (art. 6, par. 1, point f) du RGPD). Nous traitons en tant que sous-traitant (art. 28 du RGPD) sur la base de notre contrat avec l’utilisateur (art. 6, par. 1, point b) du RGPD)."
+              },
+              {
+                "label": "Prestataire, stockage vidéo :",
+                "value": "Cloudflare, Inc., San Francisco, États-Unis (pour l’EEE : Cloudflare Germany GmbH, Munich) ; stockage et traitement exclusivement dans l’UE."
+              },
+              {
+                "label": "Contrat de sous-traitance, Cloudflare :",
+                "url": "https://www.cloudflare.com/cloudflare-customer-dpa/"
+              },
+              {
+                "label": "Prestataire, préparation vidéo :",
+                "value": "Fly.io, Inc., Chicago, États-Unis ; traitement à Francfort-sur-le-Main, Allemagne."
+              },
+              {
+                "label": "Contrat de sous-traitance, Fly.io :",
+                "url": "https://fly.io/legal/dpa/"
+              },
+              {
+                "label": "Prestataire, analyse vidéo (processeurs graphiques) :",
+                "value": "RunPod, Inc., Mount Laurel, États-Unis ; traitement exclusivement dans des centres de données de l’Union européenne."
+              },
+              {
+                "label": "Politique de confidentialité, RunPod :",
+                "url": "https://www.runpod.io/legal/privacy-policy"
+              },
+              {
+                "label": "Base des transferts vers des pays tiers :",
+                "value": "Traitement dans l’UE ; pour un éventuel accès dans le cadre de l’exploitation et du support : cadre de protection des données UE-États-Unis (Data Privacy Framework) si le prestataire est certifié, sinon clauses contractuelles types selon l’art. 46, par. 2, point c) du RGPD."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "Enregistrements jusqu’à leur suppression par l’équipe ou avec l’équipe ; résultats intermédiaires de la préparation et de l’analyse uniquement pendant la durée du traitement."
+              }
+            ]
+          },
+          {
+            "title": "Corbeille, restauration et suppression du compte",
+            "paragraphs": [
+              "Les matchs, membres de l’effectif, tournois et équipes supprimés ne sont pas effacés définitivement tout de suite, mais conservés 30 jours dans une corbeille. Pendant cette période, les données sont verrouillées pour l’exploitation normale – elles n’apparaissent dans aucune liste, aucune statistique ni aucune analyse – et peuvent être restaurées par le staff de l’équipe (une équipe supprimée : par l’entraîneur principal ou un administrateur du club). Qui ne souhaite pas attendre peut supprimer définitivement une entrée de la corbeille à tout moment. À l’expiration du délai, une tâche de base de données exécutée toutes les heures supprime définitivement les entrées, photos associées comprises.",
+              "Un délai de grâce s’applique à son propre compte : qui supprime son compte le verrouille immédiatement – la connexion n’est plus possible que pour retirer la suppression – et reçoit la date de suppression par e-mail. Après 30 jours, le compte est définitivement supprimé ; les équipes dont la personne est le seul membre du staff sont supprimées avec lui, les équipes comptant d’autres membres subsistent et sont transmises. Qui souhaite une suppression immédiate, sans délai de grâce, nous écrit depuis l’adresse du compte ; nous supprimons alors de manière anticipée.",
+              "La corbeille protège contre les erreurs de manipulation, pas contre le droit à l’effacement : si une personne concernée demande la suppression de ses données, nous l’exécutons indépendamment du délai."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Les données de l’entrée supprimée sous forme figée ; date de la suppression et identifiant du compte ayant supprimé."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Utilisateurs disposant d’un compte ; joueuses et joueurs saisis par les utilisateurs."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Exécution du contrat (art. 6, par. 1, point b) du RGPD) ; intérêts légitimes à la récupérabilité des données supprimées par erreur (art. 6, par. 1, point f) du RGPD) ; limitation du traitement pendant le délai (art. 18 du RGPD)."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "30 jours à compter de la suppression, puis suppression définitive par une tâche de base de données exécutée toutes les heures."
+              }
+            ]
+          },
+          {
+            "title": "Export des données : accès et portabilité",
+            "paragraphs": [
+              "Chaque compte peut demander, sous Réglages → Compte → « Télécharger mes données », une copie complète de ses propres données. L’archive (ZIP) contient un aperçu lisible par un humain avec les informations visées à l’art. 15 du RGPD (finalités, destinataires, durée de conservation, origine, droits), toutes les données au format JSON – structuré, couramment utilisé et lisible par machine au sens de l’art. 20 du RGPD – ainsi que les photos-portraits enregistrées. Si la personne est également membre de l’effectif d’une ou plusieurs équipes, l’archive contient aussi ses données à cet endroit : matchs avec ses événements, absences, amendes, réponses aux sondages, réponses de présence, maillots, scènes vidéo marquées, envois reçus et trajets.",
+              "L’entraîneur principal peut exporter, sous Réglages → Staff → « Télécharger l’équipe », l’ensemble des données de l’équipe dans le même format. Il s’agit de la restitution des données au club en tant que responsable du traitement (art. 28, par. 3, point g) du RGPD). Les fichiers vidéo n’y figurent pas, mais toutes les informations les concernant si ; les secrets d’accès tels que les liens de partage ou de calendrier ne sont jamais exportés.",
+              "Un export lit toutes les données d’un compte ou d’une équipe et est donc limité à cinq opérations par heure et par compte. L’archive quitte notre sphère d’influence dès qu’elle est téléchargée ; elle contient des données personnelles et doit être conservée en conséquence. Nous ne conservons aucun export."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Toutes les données enregistrées pour le compte ou l’équipe ; date de la demande (limite de fréquence)."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Utilisateurs disposant d’un compte ; pour l’export d’équipe, tous les membres de l’effectif et le staff de l’équipe."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Obligation légale (art. 6, par. 1, point c) du RGPD en liaison avec les art. 15 et 20 du RGPD) ; pour l’export d’équipe, exécution du contrat (art. 6, par. 1, point b) du RGPD) en liaison avec l’art. 28, par. 3, point g) du RGPD."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "L’archive est uniquement générée et délivrée, pas conservée ; la limite de fréquence expire au bout d’une heure."
+              }
+            ]
+          },
+          {
             "title": "Démonstration en direct sans connexion",
             "paragraphs": [
               "À une adresse distincte, nous proposons une version de démonstration permettant d’essayer la saisie d’un match sans inscription. La démonstration fonctionne avec des données d’exemple fictives. Veuillez n’y saisir aucune donnée personnelle réelle : les saisies effectuées dans la démonstration ne sont pas traitées comme des données de club et peuvent être réinitialisées à tout moment."
@@ -1045,7 +1250,7 @@
           },
           {
             "title": "Obligations du club",
-            "description": "Avant la première saisie, le club doit informer les représentants légaux conformément à l’article 13 du RGPD et recueillir le consentement nécessaire – en particulier pour les absences liées à la santé et pour toute publication (live ticker, rapports partagés). Nous mettons à disposition, sur demande, une fiche d’information type et un accord de sous-traitance."
+            "description": "Avant la première saisie, le club doit informer les représentants légaux conformément à l’article 13 du RGPD et recueillir le consentement nécessaire – en particulier pour les absences liées à la santé et pour toute publication (live ticker, rapports partagés). Nous mettons à disposition, sur demande, une fiche d’information type et un accord de sous-traitance. Il en va de même pour les enregistrements vidéo et les photos-portraits."
           },
           {
             "title": "Minimisation des données",
@@ -1071,7 +1276,7 @@
           },
           {
             "title": "Droit d’accès :",
-            "description": "Vous avez le droit d’obtenir la confirmation que des données vous concernant sont ou ne sont pas traitées et d’accéder à ces données ainsi qu’à des informations complémentaires et à une copie des données, conformément aux exigences légales."
+            "description": "Vous avez le droit d’obtenir la confirmation que des données vous concernant sont ou ne sont pas traitées et, le cas échéant, l’accès à ces données ainsi qu’aux informations complémentaires et à une copie des données conformément aux dispositions légales. Vous pouvez obtenir vous-même à tout moment une copie complète des données de votre compte – y compris vos données en tant que membre de l’effectif – dans l’application, sous Réglages → Compte → « Télécharger mes données » (voir « Export des données »)."
           },
           {
             "title": "Droit de rectification :",
@@ -1079,11 +1284,11 @@
           },
           {
             "title": "Droit à l’effacement et à la limitation du traitement :",
-            "description": "Conformément aux exigences légales, vous avez le droit d’exiger que les données vous concernant soient effacées dans les meilleurs délais ou, à défaut, conformément aux exigences légales, d’exiger une limitation du traitement des données. Vous pouvez supprimer vous-même votre compte utilisateur à tout moment (Paramètres → Compte)."
+            "description": "Conformément aux dispositions légales, vous avez le droit d’exiger que les données vous concernant soient effacées sans délai ou, alternativement, d’exiger une limitation du traitement des données conformément aux dispositions légales. Vous pouvez supprimer vous-même votre compte utilisateur à tout moment (Réglages → Compte) ; il est immédiatement verrouillé et définitivement supprimé après 30 jours. Si vous souhaitez une suppression immédiate, un message à notre adresse de contact suffit."
           },
           {
             "title": "Droit à la portabilité des données :",
-            "description": "Vous avez le droit de recevoir les données vous concernant que vous nous avez fournies, dans un format structuré, couramment utilisé et lisible par machine, conformément aux exigences légales, ou d’en demander la transmission à un autre responsable du traitement. Dans l’application, vous pouvez exporter les analyses en PDF et les tableaux statistiques en CSV ; au-delà, nous vous fournirons vos données dans un format lisible par machine dans les 30 jours suivant votre demande."
+            "description": "Vous avez le droit de recevoir les données vous concernant que vous nous avez fournies, conformément aux dispositions légales, dans un format structuré, couramment utilisé et lisible par machine, ou d’en exiger la transmission à un autre responsable du traitement. Dans l’application, vous téléchargez à tout moment vos données sous forme d’archive de fichiers JSON (Réglages → Compte) ; les analyses peuvent en outre être exportées en PDF et les tableaux statistiques en CSV. Sur demande, nous mettons également vos données à disposition dans un délai de 30 jours."
           },
           {
             "title": "Réclamation auprès d’une autorité de contrôle :",
@@ -1091,7 +1296,7 @@
           }
         ],
         "howToLabel": "Comment exercer vos droits :",
-        "howToText": "Un message informel adressé à notre adresse de contact suffit ; aucune forme particulière n’est requise. Nous répondons sans délai et au plus tard dans un délai d’un mois. Si votre demande porte sur des données d’effectif, de rendez-vous, d’absence ou de sondage, le responsable du traitement est le club ou l’entraîneur ; nous transmettons alors votre demande et soutenons son traitement.",
+        "howToText": "Un message informel adressé à notre adresse de contact suffit ; aucune forme particulière n’est requise. Nous répondons sans délai et au plus tard dans un délai d’un mois. Si votre demande porte sur des données d’effectif, de rendez-vous, d’absence ou de sondage, le responsable du traitement est le club ou l’entraîneur ; nous transmettons alors votre demande et soutenons son traitement. Les joueuses et joueurs disposant d’un compte obtiennent à tout moment eux-mêmes une copie de leurs données d’effectif via la fonction d’export de l’application.",
         "obligationLabel": "Obligation de fournir des données :",
         "obligationText": "La communication de vos données n’est imposée ni par la loi ni par un contrat. Toutefois, pour créer un compte, nous avons besoin de votre nom, de votre adresse e-mail et d’un mot de passe ; sans ces informations, aucun compte ne peut être créé et l’application ne peut pas être utilisée. Toutes les autres informations sont facultatives."
       },
@@ -1129,7 +1334,7 @@
         "title": "Durée de conservation et suppression",
         "description": "Nous supprimons les données à caractère personnel que nous traitons conformément aux dispositions légales dès que le consentement sur lequel elles reposaient est retiré ou qu’il n’existe plus d’autres bases juridiques pour le traitement. Cela concerne les cas dans lesquels la finalité initiale du traitement disparaît ou les données ne sont plus nécessaires. Les durées indiquées pour chaque traitement priment.",
         "technicalLabel": "Durées techniques appliquées automatiquement :",
-        "technicalText": "Les durées suivantes sont appliquées automatiquement par une tâche de base de données exécutée quotidiennement – sans que quiconque ait à s’en souvenir :",
+        "technicalText": "Les durées suivantes sont appliquées automatiquement par des tâches de base de données – sans que personne n’ait à y penser :",
         "technicalItems": [
           {
             "title": "24 heures",
@@ -1150,10 +1355,18 @@
           {
             "title": "400 jours",
             "description": "Registre d’utilisation des analyses par IA (sans le contenu de l’analyse)."
+          },
+          {
+            "title": "30 jours",
+            "description": "Entrées de la corbeille (matchs, membres de l’effectif, tournois, équipes supprimés) et comptes marqués pour suppression à l’expiration du délai de grâce – vérifié toutes les heures."
+          },
+          {
+            "title": "1 heure",
+            "description": "Limite de fréquence des exports de données (cinq par heure et par compte)."
           }
         ],
         "contentLabel": "Données de contenu de l’application :",
-        "contentText": "Les données d’effectif, de match, de rendez-vous, d’absence et de sondage restent enregistrées jusqu’à leur suppression par le responsable du traitement, au plus tard jusqu’à la suppression de l’équipe ou du compte associé. Si vous supprimez votre compte, les équipes dont vous êtes le seul membre sont supprimées avec lui ; les équipes comptant d’autres membres continuent d’exister et sont transmises. La suppression prend effet immédiatement et sans délai de grâce.",
+        "contentText": "Les données d’effectif, de matchs, de calendrier, d’absences, de caisse, de maillots et de sondages ainsi que les enregistrements vidéo restent conservés jusqu’à ce que le responsable du traitement les supprime, au plus tard jusqu’à la suppression définitive de l’équipe ou du compte associé. Les matchs, membres de l’effectif, tournois et équipes supprimés restent 30 jours dans la corbeille, puis sont définitivement supprimés. Si vous supprimez votre compte, il est immédiatement verrouillé et définitivement supprimé après un délai de grâce de 30 jours ; les équipes dont vous êtes le seul membre du staff sont supprimées avec lui, les équipes comptant d’autres membres subsistent et sont transmises. Une suppression immédiate sans délai de grâce est possible sur demande.",
         "retentionLabel": "Conservation et archivage légaux :",
         "retentionText": "Dans la mesure où nous sommes soumis à des obligations de conservation relevant du droit commercial ou fiscal, les durées générales suivantes du droit allemand s’appliquent. Seuls les documents commerciaux sont concernés, et non les données de contenu de l’application :",
         "items": [
@@ -1602,7 +1815,7 @@
       "title": "Politique de confidentialité",
       "description": "Comment nous traitons les données personnelles sur statix-app.de et dans l’application Statix — par finalité, base légale, prestataire et durée de conservation.",
       "pseudonymBadge": "Les noms des joueurs ne quittent jamais l’application",
-      "lastUpdated": "Version : 25 août 2026",
+      "lastUpdated": "Version : 24 septembre 2026",
       "navLabel": "Autres informations légales",
       "imprintLink": "Mentions légales",
       "termsLink": "Conditions générales"
