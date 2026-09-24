@@ -34,7 +34,7 @@
       "title": "Allgemeine Geschäftsbedingungen (AGB)",
       "description": "Bedingungen für die Nutzung der Statix Handball-Statistik-App sowie der zugehörigen Webseiten und Dienste.",
       "transparencyBadge": "Fair und transparent",
-      "lastUpdated": "Letzte Aktualisierung: 25. August 2026"
+      "lastUpdated": "Letzte Aktualisierung: 24. September 2026"
     },
     "documentTitle": "Allgemeine Geschäftsbedingungen",
     "documentTitleShort": "AGB",
@@ -57,7 +57,7 @@
       "title": "Präambel",
       "paragraph1": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB“) regeln das Vertragsverhältnis zwischen Ihnen als Nutzer (nachfolgend „Nutzer“ oder „Sie“) und dem Anbieter über die Nutzung der Handball-Statistik-App „Statix“ sowie der zugehörigen Webseiten, der Progressive Web App und der damit verbundenen Dienste (nachfolgend zusammen „Statix“ oder „Dienst“).",
       "paragraph2": "Die in diesen AGB verwendeten Begriffe und Bezeichnungen sind geschlechtsneutral zu verstehen.",
-      "updatedAt": "Stand: 25. August 2026"
+      "updatedAt": "Stand: 24. September 2026"
     },
     "sections": {
       "scope": {
@@ -85,7 +85,11 @@
           "Anlegen von Turnieren mit mehreren Mannschaften, automatischer Tabelle und Spielansetzungen.",
           "Automatisierte, KI-gestützte Auswertung von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern.",
           "Optionale öffentliche Live-Übertragung eines Spiels („Live-Ticker“) über einen nicht erratbaren Link, auf Wunsch mit Sponsorenlogos.",
-          "Teilen von Auswertungen per Link, Export des Spielberichts als PDF sowie Export einzelner Statistiktabellen als CSV."
+          "Teilen von Auswertungen per Link, Export des Spielberichts als PDF sowie Export einzelner Statistiktabellen als CSV.",
+          "Videofunktion: Hochladen von Spiel- und Trainingsaufnahmen, Markieren von Szenen, Versand von Zusammenschnitten an einzelne Spielerinnen und Spieler sowie automatische Auswertung von Laufwegen und Ballbahnen (§ 10).",
+          "Mannschaftskasse mit Strafenkatalog, Trikotverwaltung und Geburtstagserinnerungen.",
+          "Papierkorb: Gelöschte Spiele, Kadermitglieder, Turniere und Mannschaften können 30 Tage lang wiederhergestellt werden (§ 12).",
+          "Datenexport: Kopie aller eigenen Daten bzw. – für die Cheftrainerin oder den Cheftrainer – aller Daten der Mannschaft als Archiv in einem maschinenlesbaren Format (§ 12)."
         ],
         "paragraphsAfter": [
           "Statix befindet sich in fortlaufender Entwicklung und in der Markteinführungsphase. Der konkrete Funktionsumfang ergibt sich aus der jeweils aktuellen Version des Dienstes sowie aus der Leistungsbeschreibung auf den Webseiten des Anbieters. Der Anbieter ist berechtigt, den Funktionsumfang weiterzuentwickeln, zu ändern oder einzelne Funktionen anzupassen, soweit dies für den Nutzer zumutbar ist und der Kern der vertraglich geschuldeten Leistung erhalten bleibt.",
@@ -112,11 +116,11 @@
         ],
         "items": [
           "Trainerinnen und Trainer legen Mannschaften an, erfassen Kader und Spiele und verwalten die Daten der Mannschaft. Sie entscheiden, welche Daten in Statix eingegeben und welche Inhalte öffentlich freigegeben werden.",
-          "Spielerinnen und Spieler können über einen Einladungslink ein eigenes Konto anlegen und ihre Kaderzeile beanspruchen. Sie sehen dann Termine, ihre eigenen Statistiken und Rückmeldungen und können eigene Angaben – etwa Abwesenheiten und die Anzeige ihres Namens auf öffentlichen Seiten – selbst steuern.",
+          "Spielerinnen und Spieler können über einen Einladungslink ein eigenes Konto anlegen und ihre Kaderzeile beanspruchen. Sie sehen dann Termine, ihre eigenen Statistiken und Rückmeldungen und können eigene Angaben – etwa Abwesenheiten und die Anzeige ihres Namens auf öffentlichen Seiten – selbst steuern. Über die Exportfunktion erhalten sie jederzeit eine Kopie ihrer eigenen Daten.",
           "Vereinsadministratoren verwalten mehrere Mannschaften eines Vereins gemeinsam und können Daten über die Mannschaften hinweg einsehen, soweit die Mannschaften dem Verein zugeordnet sind."
         ],
         "paragraphsAfter": [
-          "Wird eine Mannschaft einem Verein zugeordnet, gehören die Daten der Mannschaft organisatorisch dem Verein und nicht dem einzelnen Trainerkonto. Schließt eine Trainerin oder ein Trainer das eigene Konto, bleibt eine Mannschaft mit weiteren Mitgliedern bestehen und wird an ein verbleibendes Mitglied übergeben (§ 12 Abs. 4).",
+          "Wird eine Mannschaft einem Verein zugeordnet, gehören die Daten der Mannschaft organisatorisch dem Verein und nicht dem einzelnen Trainerkonto. Schließt eine Trainerin oder ein Trainer das eigene Konto, bleibt eine Mannschaft mit weiteren Mitgliedern bestehen und wird an ein verbleibendes Mitglied übergeben (§ 12 Abs. 5).",
           "Die Zuweisung einer Rolle begründet kein Recht des Anbieters, in das Innenverhältnis zwischen Verein, Trainern und Spielern einzugreifen. Streitigkeiten darüber, wer welche Daten einsehen oder ändern darf, sind zwischen den Beteiligten zu klären."
         ]
       },
@@ -160,7 +164,7 @@
         "paragraphs": [
           "Der Anbieter verarbeitet personenbezogene Daten im Rahmen der geltenden Datenschutzgesetze. Einzelheiten zur Verarbeitung personenbezogener Daten ergeben sich aus der Datenschutzerklärung.",
           "Soweit der Anbieter im Auftrag des Nutzers personenbezogene Daten Dritter (insbesondere Spieler-, Termin-, Abwesenheits- und Umfragedaten) verarbeitet, die der Nutzer eigenverantwortlich eingibt, handelt der Anbieter insoweit als Auftragsverarbeiter im Sinne des Art. 28 DSGVO; Verantwortlicher ist der Nutzer bzw. dessen Verein. Für die Daten des Nutzerkontos selbst und für den technischen Betrieb des Dienstes ist der Anbieter eigener Verantwortlicher.",
-          "Der Anbieter stellt auf Anforderung an die im Impressum genannte Adresse einen Vertrag zur Auftragsverarbeitung (AVV) nach Art. 28 Abs. 3 DSGVO nebst Anlagen zu den technischen und organisatorischen Maßnahmen und zu den eingesetzten Unterauftragsverarbeitern zur Verfügung. Vereine, die Daten von Jugendmannschaften erfassen, sollten diesen Vertrag vor der ersten Eingabe abschließen.",
+          "Der Anbieter stellt auf Anforderung an die im Impressum genannte Adresse einen Vertrag zur Auftragsverarbeitung (AVV) nach Art. 28 Abs. 3 DSGVO nebst Anlagen zu den technischen und organisatorischen Maßnahmen und zu den eingesetzten Unterauftragsverarbeitern zur Verfügung. Vereine, die Daten von Jugendmannschaften erfassen, sollten diesen Vertrag vor der ersten Eingabe abschließen. Die Rückgabe der Daten nach Vertragsende (Art. 28 Abs. 3 lit. g DSGVO) erfüllt der Anbieter über die Exportfunktion nach § 12 Abs. 2.",
           "Zur Erbringung des Dienstes setzt der Anbieter sorgfältig ausgewählte Dienstleister als Auftragsverarbeiter ein. Hierzu zählen insbesondere:"
         ],
         "items": [
@@ -168,7 +172,10 @@
           "Vercel – Hosting und Betrieb der Webseiten und der Anwendung sowie anonymisierte Reichweitenmessung",
           "Brevo – Versand von E-Mails (Registrierungsbestätigungen, Erinnerungen, Kontaktanfragen, Newsletter)",
           "Anthropic und OpenAI – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
-          "Die Push-Dienste der Browser-Hersteller (u. a. Google, Mozilla, Apple) – Zustellung aktivierter Push-Benachrichtigungen"
+          "Die Push-Dienste der Browser-Hersteller (u. a. Google, Mozilla, Apple) – Zustellung aktivierter Push-Benachrichtigungen",
+          "Cloudflare – Objektspeicher (Cloudflare R2) für Videoaufnahmen, ausschließlich in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)",
+          "Fly.io – Aufbereitung hochgeladener Videoaufnahmen in Frankfurt am Main (nur bei Nutzung der Videofunktion)",
+          "RunPod – rechenintensive Videoverarbeitung und -analyse auf Grafikprozessoren in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)"
         ],
         "paragraphsAfter": [
           "Bei der Nutzung einzelner Dienstleister kann es zu einer Übermittlung von Daten in Drittländer (insbesondere die USA) kommen. Der Anbieter stützt diese Übermittlungen auf einen Angemessenheitsbeschluss der Europäischen Kommission (EU-U.S. Data Privacy Framework), soweit der jeweilige Dienstleister zertifiziert ist, und im Übrigen auf Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO. Weitere Informationen enthält die Datenschutzerklärung.",
@@ -188,13 +195,16 @@
         "items": []
       },
       "publicSharing": {
-        "title": "§ 10 Öffentliche Freigaben und geteilte Inhalte",
+        "title": "§ 10 Öffentliche Freigaben, geteilte Inhalte und Videoaufnahmen",
         "paragraphs": [
           "Der Nutzer kann einzelne Inhalte über einen nicht erratbaren Link öffentlich zugänglich machen – insbesondere einen laufenden Live-Ticker sowie fertige Spielberichte. Ohne eine solche ausdrückliche Freigabe sind die Daten einer Mannschaft nur ihren Mitgliedern zugänglich.",
           "Wer einen Inhalt freigibt, veröffentlicht damit personenbezogene Daten Dritter und ist hierfür verantwortlich. Der Nutzer stellt vor der Freigabe sicher, dass die betroffenen Spielerinnen und Spieler – bei Minderjährigen deren Erziehungsberechtigte – hiermit einverstanden sind.",
           "Spielerinnen und Spieler mit eigenem Konto können in ihren Einstellungen festlegen, dass ihr Name auf öffentlichen Seiten nicht angezeigt wird. Diese Entscheidung geht einer weiter gefassten Einstellung der Mannschaft stets vor und kann von einer Trainerin oder einem Trainer nicht überschrieben werden.",
           "Eine Freigabe kann jederzeit beendet werden; der Link ist danach nicht mehr abrufbar. Der Anbieter hat keinen Einfluss darauf, ob Dritte einen zuvor öffentlichen Inhalt kopiert, gespeichert oder in Suchmaschinen zwischengespeichert haben.",
-          "Sponsorenlogos, die der Nutzer für den Live-Ticker hochlädt, müssen frei von Rechten Dritter sein oder es muss eine entsprechende Nutzungserlaubnis vorliegen. § 7 Abs. 5 gilt entsprechend."
+          "Sponsorenlogos, die der Nutzer für den Live-Ticker hochlädt, müssen frei von Rechten Dritter sein oder es muss eine entsprechende Nutzungserlaubnis vorliegen. § 7 Abs. 5 gilt entsprechend.",
+          "Lädt der Nutzer Videoaufnahmen hoch, sichert er zu, dass die Aufnahme rechtmäßig entstanden ist und er sie zu den in § 2 genannten Zwecken verwenden darf. Er holt vor dem Hochladen die erforderlichen Einwilligungen der gezeigten Spielerinnen und Spieler – bei Minderjährigen der Erziehungsberechtigten – ein und beachtet die Rechte weiterer aufgenommener Personen (Gegner, Schiedsrichter, Zuschauer) sowie etwaige Vorgaben des Hallenbetreibers und des Verbands. Der Anbieter speichert und verarbeitet Aufnahmen ausschließlich im Auftrag des Nutzers (§ 8).",
+          "Zusammenschnitte, die der Nutzer einzelnen Spielerinnen und Spielern schickt, machen ausschließlich die enthaltenen Szenen zugänglich. Der Nutzer entscheidet, welche Szenen er versendet, und trägt dafür die Verantwortung.",
+          "Videoaufnahmen unterliegen keiner automatischen Löschfrist; sie bleiben gespeichert, bis der Nutzer sie löscht oder die Mannschaft endgültig gelöscht wird. Der Nutzer löscht Aufnahmen, sobald der Zweck der Auswertung erreicht ist. Der Anbieter behält sich vor, für Videoaufnahmen ein Speicherkontingent oder eine Höchstspeicherdauer einzuführen; er kündigt dies mindestens 30 Tage vorher in Textform an."
         ],
         "items": []
       },
@@ -213,10 +223,11 @@
         "title": "§ 12 Datenexport, Löschung und Kontoschließung",
         "paragraphs": [
           "Der Nutzer kann seine in Statix erfassten Auswertungen im Rahmen der bereitgestellten Funktionen teilen, den Spielbericht als PDF und einzelne Statistiktabellen als CSV exportieren sowie den Terminkalender als iCalendar-Feed abonnieren.",
-          "Über die in der Anwendung verfügbaren Exportfunktionen hinaus stellt der Anbieter dem Nutzer auf Anforderung an die im Impressum genannte Adresse die zu seinem Konto und seinen Mannschaften gespeicherten Daten in einem strukturierten, gängigen und maschinenlesbaren Format zur Verfügung. Die Bearbeitung erfolgt unverzüglich, spätestens innerhalb von 30 Tagen.",
-          "Der Nutzer kann sein Konto jederzeit selbst löschen (Einstellungen → Konto). Wer sich nicht mehr anmelden kann, richtet die Löschungsanfrage an die im Impressum genannte E-Mail-Adresse. Die Löschung ist endgültig; es gibt keine Wiederherstellung und keine Karenzzeit.",
-          "Mit der Löschung des Kontos werden Mannschaften gelöscht, in denen der Nutzer das einzige Mitglied ist, einschließlich der zugehörigen Kader-, Spiel-, Termin- und Auswertungsdaten. Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden an das am längsten zugehörige verbleibende Mitglied übergeben; dasselbe gilt für Mannschaften, die einem Verein zugeordnet sind.",
-          "Der Nutzer ist selbst dafür verantwortlich, benötigte Daten vor der Löschung oder vor Vertragsende zu exportieren. Einzelheiten und Speicherfristen für technische Protokolle beschreibt die Datenschutzerklärung."
+          "Jeder Nutzer kann in der Anwendung (Einstellungen → Konto) jederzeit eine vollständige Kopie der zu seinem Konto gespeicherten Daten – einschließlich seiner Daten als Kadermitglied – als Archiv in einem strukturierten, gängigen und maschinenlesbaren Format (JSON) herunterladen. Die Cheftrainerin oder der Cheftrainer kann darüber hinaus sämtliche Daten der Mannschaft in demselben Format exportieren (Einstellungen → Trainerteam); Videodateien sind darin nicht enthalten. Wer die Anwendung nicht mehr nutzen kann, erhält die Daten auf Anforderung an die im Impressum genannte Adresse innerhalb von 30 Tagen.",
+          "Gelöschte Spiele, Kadermitglieder, Turniere und Mannschaften werden 30 Tage lang in einem Papierkorb aufbewahrt und können in dieser Zeit von den Trainerinnen und Trainern der Mannschaft wiederhergestellt oder vorzeitig endgültig gelöscht werden; danach werden sie automatisch und endgültig gelöscht. Der Papierkorb ist eine Komfortfunktion; ein Anspruch auf Wiederherstellung besteht nicht.",
+          "Der Nutzer kann sein Konto jederzeit selbst löschen (Einstellungen → Konto). Das Konto wird damit sofort gesperrt und nach einer Karenzzeit von 30 Tagen endgültig gelöscht; innerhalb der Karenzzeit kann der Nutzer die Löschung durch eine Anmeldung zurücknehmen. Wer sich nicht mehr anmelden kann oder eine sofortige Löschung ohne Karenzzeit wünscht, richtet die Anfrage an die im Impressum genannte E-Mail-Adresse. Nach Ablauf der Karenzzeit gibt es keine Wiederherstellung.",
+          "Mit der endgültigen Löschung des Kontos werden Mannschaften gelöscht, in denen der Nutzer das einzige Mitglied des Trainerteams ist, einschließlich der zugehörigen Kader-, Spiel-, Termin-, Video- und Auswertungsdaten. Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden an das am längsten zugehörige verbleibende Mitglied übergeben; dasselbe gilt für Mannschaften, die einem Verein zugeordnet sind.",
+          "Der Nutzer ist selbst dafür verantwortlich, benötigte Daten vor der Löschung oder vor Vertragsende zu exportieren. Einzelheiten und Speicherfristen beschreibt die Datenschutzerklärung."
         ],
         "items": []
       },
@@ -235,7 +246,7 @@
       "term": {
         "title": "§ 14 Vertragslaufzeit und Kündigung",
         "paragraphs": [
-          "Der Nutzungsvertrag über die kostenlose Nutzung wird auf unbestimmte Zeit geschlossen und kann von beiden Parteien jederzeit ohne Einhaltung einer Frist gekündigt werden, insbesondere durch Löschung des Nutzerkontos.",
+          "Der Nutzungsvertrag über die kostenlose Nutzung wird auf unbestimmte Zeit geschlossen und kann von beiden Parteien jederzeit ohne Einhaltung einer Frist gekündigt werden, insbesondere durch Löschung des Nutzerkontos. Die Kündigung durch Löschung des Kontos wird mit Ablauf der Karenzzeit nach § 12 Abs. 4 wirksam; bis dahin kann der Nutzer sie durch eine Anmeldung zurücknehmen.",
           "Laufzeit, Verlängerung und Kündigung eines etwaigen kostenpflichtigen Abonnements richten sich nach den im jeweiligen Bestellprozess angegebenen Bedingungen. Wird ein kostenpflichtiges Dauerschuldverhältnis mit Verbrauchern angeboten, stellt der Anbieter hierfür eine Kündigungsschaltfläche nach § 312k BGB bereit.",
           "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Parteien unberührt. Ein wichtiger Grund liegt für den Anbieter insbesondere bei einem erheblichen Verstoß des Nutzers gegen diese AGB vor.",
           "Kündigungen bedürfen der Textform (z. B. per E-Mail); die Löschung des Kontos in der Anwendung genügt."
@@ -374,11 +385,11 @@
           },
           {
             "title": "Auftragsverarbeitungsvertrag",
-            "description": "Vereine und Mannschaften, die Daten ihrer Mitglieder – insbesondere Minderjähriger – in Statix erfassen, erhalten auf Anforderung an unsere Kontaktadresse einen Vertrag zur Auftragsverarbeitung nach Art. 28 Abs. 3 DSGVO nebst Anlagen zu den technischen und organisatorischen Maßnahmen und zu den eingesetzten Unterauftragsverarbeitern."
+            "description": "Vereine und Mannschaften, die Daten ihrer Mitglieder – insbesondere Minderjähriger – in Statix erfassen, erhalten auf Anforderung an unsere Kontaktadresse einen Vertrag zur Auftragsverarbeitung nach Art. 28 Abs. 3 DSGVO nebst Anlagen zu den technischen und organisatorischen Maßnahmen und zu den eingesetzten Unterauftragsverarbeitern. Die Rückgabe der Daten nach Vertragsende erfolgt über den Mannschaftsexport in der App (siehe „Datenexport“)."
           },
           {
             "title": "Betroffenenrechte",
-            "description": "Spielerinnen und Spieler richten Auskunfts-, Berichtigungs- und Löschverlangen zu ihren Kaderdaten an ihren Verein bzw. ihre Trainerin oder ihren Trainer. Erreichen uns solche Anfragen direkt, leiten wir sie an die verantwortliche Stelle weiter und unterstützen sie bei der Erfüllung."
+            "description": "Spielerinnen und Spieler richten Auskunfts-, Berichtigungs- und Löschverlangen zu ihren Kaderdaten an ihren Verein bzw. ihre Trainerin oder ihren Trainer. Erreichen uns solche Anfragen direkt, leiten wir sie an die verantwortliche Stelle weiter und unterstützen sie bei der Erfüllung. Spielerinnen und Spieler mit eigenem Konto erhalten eine Kopie ihrer Daten jederzeit selbst über die Exportfunktion in der App."
           }
         ]
       },
@@ -397,7 +408,9 @@
           "Gesundheitsbezogene Angaben (Art. 9 DSGVO) – ausschließlich, soweit eine Abwesenheit als Krankheit oder Verletzung eingetragen wird, samt einer optionalen Notiz",
           "Nutzungsdaten (z. B. aufgerufene Funktionen, Zeitpunkt der letzten Nutzung)",
           "Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Geräte- und Browserangaben)",
-          "Protokolldaten (z. B. technische Fehlerprotokolle)"
+          "Protokolldaten (z. B. technische Fehlerprotokolle)",
+          "Bild- und Videodaten (Porträtfotos von Kadermitgliedern sowie Trainerinnen und Trainern; bei Nutzung der Videofunktion Aufnahmen von Spielen und Trainings samt Tonspur und daraus abgeleitete Bewegungsdaten wie Laufwege, Distanzen und Ballbahnen)",
+          "Angaben der Mannschaftskasse (Strafenkatalog, verhängte Strafen, Beträge, Zahlungsstatus)"
         ],
         "affectedPeopleTitle": "Kategorien betroffener Personen",
         "affectedPeople": [
@@ -405,7 +418,8 @@
           "Nutzer mit eigenem Konto (Trainerinnen und Trainer, Vereinsverantwortliche, Spielerinnen und Spieler)",
           "Von Nutzern erfasste Spielerinnen und Spieler ohne eigenes Konto, einschließlich Minderjähriger",
           "Besucherinnen und Besucher unserer Webseiten und öffentlicher Live-Ticker",
-          "Newsletter-Empfänger"
+          "Newsletter-Empfänger",
+          "Auf Videoaufnahmen sichtbare Personen (Gegnerinnen und Gegner, Schiedsrichter, Zuschauer)"
         ],
         "purposesTitle": "Zwecke der Verarbeitung",
         "purposes": [
@@ -420,7 +434,11 @@
           "Informationstechnische Infrastruktur und Fehleranalyse",
           "Reichweitenmessung in anonymisierter Form",
           "Öffentlichkeitsarbeit",
-          "Feedback und Verbesserung des Angebots"
+          "Feedback und Verbesserung des Angebots",
+          "Speicherung, Aufbereitung und Auswertung von Videoaufnahmen sowie Versand einzelner Szenen an Spielerinnen und Spieler (nur bei aktivierter Videofunktion)",
+          "Führung der Mannschaftskasse, Verwaltung von Trikots und Erinnerung an Geburtstage",
+          "Wiederherstellbarkeit versehentlich gelöschter Daten (Papierkorb) und Bereitstellung von Datenkopien (Auskunft und Datenübertragbarkeit)",
+          "Vertragsbezogene Mitteilungen (z. B. Änderungen dieser Erklärung oder der AGB)"
         ]
       },
       "legalBasis": {
@@ -430,7 +448,7 @@
         "items": [
           {
             "title": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)",
-            "description": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben. Wir stützen hierauf insbesondere den Newsletter, freiwillige Angaben aus der Onboarding-Umfrage und Push-Benachrichtigungen."
+            "description": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben. Wir stützen hierauf insbesondere den Newsletter, freiwillige Angaben aus der Onboarding-Umfrage und Push-Benachrichtigungen. Ebenso beruht ein freiwillig hochgeladenes eigenes Porträtfoto auf Einwilligung."
           },
           {
             "title": "Ausdrückliche Einwilligung bei besonderen Kategorien (Art. 9 Abs. 2 lit. a) DSGVO)",
@@ -472,7 +490,9 @@
           "Anmelde-, Registrierungs- und Freigabe-Endpunkte sind gegen automatisierte Angriffe durch Zählgrenzen geschützt.",
           "Öffentliche Freigaben (Live-Ticker, geteilte Berichte) erfolgen ausschließlich über zufällig erzeugte, nicht erratbare Adressen und lassen sich jederzeit widerrufen.",
           "Vor jeder Übermittlung an einen KI-Anbieter werden Personennamen durch Kürzel ersetzt (Pseudonymisierung).",
-          "Nicht mehr benötigte technische Daten werden durch einen automatischen, täglich laufenden Datenbank-Job gelöscht (siehe „Speicherdauer und Löschung“)."
+          "Nicht mehr benötigte technische Daten werden durch einen automatischen, täglich laufenden Datenbank-Job gelöscht (siehe „Speicherdauer und Löschung“).",
+          "Porträtfotos und Videoaufnahmen liegen in nicht öffentlichen Speicherbereichen und werden nur nach Prüfung der Berechtigung bzw. über zeitlich befristete, signierte Adressen ausgeliefert.",
+          "Gelöschte Daten liegen 30 Tage in einem gesperrten Papierkorb, bevor sie endgültig entfernt werden; ein Konto ist ab dem Löschantrag gesperrt."
         ]
       },
       "webHosting": {
@@ -680,6 +700,58 @@
             ]
           },
           {
+            "title": "Porträtfotos",
+            "paragraphs": [
+              "Kadermitglieder mit eigenem Konto sowie Trainerinnen und Trainer können freiwillig ein Porträtfoto hochladen; eine Trainerin oder ein Trainer kann ein Foto auch für ein Kadermitglied ohne Konto hinterlegen. Das Bild wird vor dem Hochladen auf dem Endgerät zugeschnitten und verkleinert (höchstens 512 × 512 Bildpunkte, etwa 1 MB) und dient ausschließlich der Wiedererkennung innerhalb der Mannschaft – etwa auf dem Spielfeld-Bildschirm während der Erfassung.",
+              "Die Fotos liegen in einem nicht öffentlichen Speicherbereich unseres Datenbankdienstleisters (Frankfurt am Main) und werden nur an angemeldete Mitglieder derselben Mannschaft bzw. desselben Vereins ausgeliefert; eine öffentliche Adresse gibt es nicht. Auf öffentlichen Seiten (Live-Ticker, geteilte Berichte) erscheinen keine Fotos, und an KI-Anbieter werden Fotos nicht übermittelt.",
+              "Ein Foto kann jederzeit von der abgebildeten Person bzw. der Trainerin oder dem Trainer ersetzt oder entfernt werden. Bei Minderjährigen holt der Verein vor dem Hochladen die Einwilligung der Erziehungsberechtigten ein; auf Fotos sollte verzichtet werden, wenn sie für den Trainingsbetrieb nicht erforderlich sind."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Bilddaten (Porträtfoto), Zeitpunkt des Hochladens."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer mit eigenem Konto; von Nutzern erfasste Spielerinnen und Spieler, einschließlich Minderjähriger."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Für das eigene Foto: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO). Für Fotos von Kadermitgliedern ist der Verein bzw. die Trainerin oder der Trainer verantwortlich, typischerweise auf Grundlage einer Einwilligung; unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zum Entfernen des Fotos, längstens bis zur endgültigen Löschung der Kaderzeile, der Mannschaft bzw. des Kontos (siehe „Papierkorb, Wiederherstellung und Löschung des Kontos“)."
+              }
+            ]
+          },
+          {
+            "title": "Trikots, Mannschaftskasse und Geburtstage",
+            "paragraphs": [
+              "Trikots: Die Mannschaft kann ihre Trikotsätze verwalten und festhalten, welches Trikot an welches Kadermitglied ausgegeben und wann es zurückgegeben wurde. Gespeichert werden Trikotnummer, Größe, Ausgabe- und Rückgabedatum sowie eine optionale Notiz.",
+              "Mannschaftskasse: Die Mannschaft kann einen Strafenkatalog führen (z. B. „zu spät zum Training“) und Strafen einzelnen Kadermitgliedern zuordnen – mit Grund, Betrag, Datum und dem Vermerk, ob bezahlt wurde. Die Kasse sehen die Trainerinnen und Trainer sowie das Kadermitglied, dem die Mannschaft diese Aufgabe übertragen hat; jede Spielerin und jeder Spieler mit eigenem Konto sieht ausschließlich die eigenen Einträge. Zahlungen werden nicht über Statix abgewickelt – die App ist ein Verzeichnis, kein Zahlungsdienst.",
+              "Geburtstage: Ist ein Geburtsdatum hinterlegt, zeigt die App den Mitgliedern der Mannschaft bevorstehende Geburtstage im Terminkalender an. Diese Anzeige dient allein dem Mannschaftsalltag; ein Geburtsdatum ist freiwillig, und für die Altersklasse genügt weiterhin das Geburtsjahr."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Inhaltsdaten (Trikotausgaben; Strafen mit Grund, Betrag und Zahlungsstatus), Stammdaten von Kadermitgliedern (Geburtsdatum, soweit hinterlegt)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Kadermitglieder; Nutzer mit eigenem Konto."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Verantwortlich ist der Verein bzw. die Mannschaft; unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO) auf Grundlage unseres Vertrags mit dem Nutzer (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Bis zur Löschung des Eintrags durch die Mannschaft, längstens bis zur endgültigen Löschung der Kaderzeile bzw. der Mannschaft."
+              }
+            ]
+          },
+          {
             "title": "Verein und mannschaftsübergreifende Laufbahn",
             "paragraphs": [
               "Mehrere Mannschaften können unter einem Verein zusammengefasst werden. Vereinsadministratoren sehen dann die Kader und Auswertungen aller zugeordneten Mannschaften. Innerhalb eines Vereins können Kadereinträge derselben Person – etwa aus der A-Jugend und aus der Damenmannschaft – zu einer Person verknüpft werden, sodass eine mannschaftsübergreifende Laufbahn sichtbar wird.",
@@ -803,7 +875,7 @@
           {
             "title": "Datenbank und Dateispeicher (Supabase)",
             "paragraphs": [
-              "Sämtliche App-Daten werden in einer PostgreSQL-Datenbank des Dienstleisters Supabase gespeichert; Vereins- und Sponsorenlogos werden im Objektspeicher desselben Dienstleisters abgelegt. Das Hosting erfolgt in der EU (Region Frankfurt am Main, Deutschland). Der Zugriff auf die Datenbank erfolgt ausschließlich serverseitig; aus dem Browser besteht keine Verbindung zur Datenbank. Alle Tabellen sind zusätzlich durch „Row Level Security“ ohne freigebende Regel gesperrt.",
+              "Sämtliche App-Daten werden in einer PostgreSQL-Datenbank des Dienstleisters Supabase gespeichert; Vereins- und Sponsorenlogos werden im Objektspeicher desselben Dienstleisters abgelegt. Das Hosting erfolgt in der EU (Region Frankfurt am Main, Deutschland). Der Zugriff auf die Datenbank erfolgt ausschließlich serverseitig; aus dem Browser besteht keine Verbindung zur Datenbank. Alle Tabellen sind zusätzlich durch „Row Level Security“ ohne freigebende Regel gesperrt. Porträtfotos und Standbilder zur Videokalibrierung liegen in nicht öffentlichen Bereichen desselben Objektspeichers und werden nur nach Prüfung der Berechtigung ausgeliefert.",
               "Der Mutterkonzern des Anbieters hat seinen Sitz in den USA, sodass ein Zugriff aus einem Drittland im Rahmen von Wartung und Support nicht vollständig ausgeschlossen werden kann. Hierfür bestehen die unten genannten Garantien."
             ],
             "items": [
@@ -872,6 +944,31 @@
               {
                 "label": "Rechtsgrundlagen:",
                 "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); für den Newsletter: Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
+              }
+            ]
+          },
+          {
+            "title": "Vertragsbezogene Mitteilungen und einmalige Rückmeldung",
+            "paragraphs": [
+              "Änderungen dieser Erklärung, der AGB oder der Preise sowie wichtige Betriebshinweise teilen wir allen Konten per E-Mail mit. Solche Mitteilungen sind Teil des Vertragsverhältnisses und keine Werbung; sie enthalten deshalb keinen Abmeldelink. Wir protokollieren je Konto, welche Mitteilung wann an welche Adresse ging und ob die Zustellung gelang, um nachweisen zu können, dass wir informiert haben.",
+              "Zwanzig Minuten nachdem eine neu registrierte Trainerin oder ein neu registrierter Trainer das erste vollständige Spiel erfasst hat, schicken wir einmalig eine E-Mail mit der Frage, ob alles geklappt hat, und einem Hinweis auf die Auswertung dieses Spiels. Diese Nachricht wird genau einmal je Konto versandt; eine Werbeeinwilligung ist dafür nicht erforderlich, und sie ist kein Newsletter."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Kontaktdaten (E-Mail-Adresse), Nutzungsdaten (Zeitpunkt des ersten erfassten Spiels), Versandprotokoll (Betreff, Zeitpunkt, Zustellstatus)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer mit eigenem Konto."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen an der Nachweisbarkeit von Vertragsmitteilungen und an der Verbesserung des Angebots (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Versandprotokolle bis zur endgültigen Löschung des Kontos."
               }
             ]
           },
@@ -1013,6 +1110,114 @@
             ]
           },
           {
+            "title": "Videoaufnahmen, Videoanalyse und Sendungen",
+            "paragraphs": [
+              "Mannschaften können Aufnahmen ihrer Spiele und Trainings hochladen, um Szenen zu markieren, einzelne Spielerinnen und Spieler zu analysieren und ihnen Zusammenschnitte zu schicken. Die Videofunktion ist freiwillig; ohne hochgeladene Aufnahme findet keine der hier beschriebenen Verarbeitungen statt.",
+              "Speicherung: Die Aufnahmen und die daraus erzeugten Segmentdateien liegen in einem nicht öffentlichen Objektspeicher des Dienstleisters Cloudflare (Cloudflare R2). Der Speicherbereich ist ausschließlich für Rechenzentren in der Europäischen Union angelegt (Kennzeichnung „jurisdiction: EU“); jeder Abruf erfolgt über eine zeitlich befristete, signierte Adresse, die die App erst nach Prüfung der Berechtigung erzeugt. Namen, Markierungen und die Zuordnung zu Mannschaft und Spiel bleiben in unserer Datenbank; der Videospeicher kennt sie nicht.",
+              "Aufbereitung: Nach dem Hochladen wird eine Aufnahme in kurze Segmente zerlegt und für die Wiedergabe umgerechnet. Das übernimmt eine Recheninstanz des Dienstleisters Fly.io in Frankfurt am Main, die die Datei nur für die Dauer der Verarbeitung im Arbeitsspeicher hält und keinen Zugang zu unserer Datenbank hat. Rechenintensive Schritte – das Zusammenfügen zweier Kameraperspektiven zu einem Panorama, das Verkleinern sehr großer Aufnahmen sowie die automatische Erkennung von Laufwegen der Spielerinnen und Spieler und des Balls – laufen auf Grafikprozessoren des Dienstleisters RunPod, ausschließlich in Rechenzentren in der Europäischen Union und ebenfalls ohne dauerhafte Speicherung; die Recheninstanz wird nach dem Auftrag beendet. Ergebnis der Laufweganalyse sind Bewegungsbahnen, Distanzen und Geschwindigkeitsprofile, die die Trainerin oder der Trainer einer Spielerin oder einem Spieler zuordnet. Eine automatische Gesichtserkennung findet nicht statt.",
+              "Sendungen: Eine Trainerin oder ein Trainer kann einer Spielerin oder einem Spieler mit eigenem Konto einen Zusammenschnitt ausgewählter Szenen schicken. Die Empfängerin bzw. der Empfänger erhält ausschließlich die enthaltenen Szenen, nicht die gesamte Aufnahme; gespeichert werden Titel, Notiz sowie die Zeitpunkte des Versands und des ersten Öffnens.",
+              "Verantwortung: Eine Hallenaufnahme zeigt neben der eigenen Mannschaft regelmäßig auch Gegnerinnen und Gegner, Schiedsrichter und Zuschauer. Ob und auf welcher Grundlage gefilmt werden darf, entscheidet allein der Verein als Verantwortlicher; er holt die erforderlichen Einwilligungen ein – bei Minderjährigen die der Erziehungsberechtigten – und informiert die betroffenen Personen. Wir verarbeiten Aufnahmen ausschließlich weisungsgebunden. Für Videoaufnahmen gibt es derzeit keine automatische Löschfrist: Eine Aufnahme bleibt gespeichert, bis die Mannschaft sie löscht oder die Mannschaft selbst endgültig gelöscht wird. Wir empfehlen, Aufnahmen nach Abschluss der Auswertung zu löschen."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Bild- und Videodaten (Aufnahmen samt Tonspur, Standbilder zur Kalibrierung), Bewegungsdaten (Laufwege, Distanzen, Geschwindigkeiten, Ballbahnen), Inhaltsdaten (markierte Szenen, Notizen), Nutzungsdaten (Zeitpunkte des Hochladens, Versendens und Öffnens)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Von Nutzern erfasste Spielerinnen und Spieler, einschließlich Minderjähriger; weitere auf der Aufnahme sichtbare Personen (Gegner, Schiedsrichter, Zuschauer); Nutzer mit eigenem Konto."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Verantwortlich ist der Verein; für die Aufnahme typischerweise Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO) bzw. berechtigte Interessen des Vereins (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Unsere Verarbeitung erfolgt als Auftragsverarbeitung (Art. 28 DSGVO) auf Grundlage unseres Vertrags mit dem Nutzer (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)."
+              },
+              {
+                "label": "Dienstanbieter Videospeicher:",
+                "value": "Cloudflare, Inc., San Francisco, USA (für den EWR: Cloudflare Germany GmbH, München); Speicherung und Verarbeitung ausschließlich in der EU."
+              },
+              {
+                "label": "Auftragsverarbeitungsvertrag Cloudflare:",
+                "url": "https://www.cloudflare.com/cloudflare-customer-dpa/"
+              },
+              {
+                "label": "Dienstanbieter Videoaufbereitung:",
+                "value": "Fly.io, Inc., Chicago, USA; Verarbeitung in Frankfurt am Main, Deutschland."
+              },
+              {
+                "label": "Auftragsverarbeitungsvertrag Fly.io:",
+                "url": "https://fly.io/legal/dpa/"
+              },
+              {
+                "label": "Dienstanbieter Videoanalyse (Grafikprozessoren):",
+                "value": "RunPod, Inc., Mount Laurel, USA; Verarbeitung ausschließlich in Rechenzentren in der Europäischen Union."
+              },
+              {
+                "label": "Datenschutzerklärung RunPod:",
+                "url": "https://www.runpod.io/legal/privacy-policy"
+              },
+              {
+                "label": "Grundlage Drittlandtransfers:",
+                "value": "Verarbeitung in der EU; für einen etwaigen Zugriff im Rahmen von Betrieb und Support: EU-U.S. Data Privacy Framework, soweit der Dienstleister zertifiziert ist, im Übrigen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Aufnahmen bis zur Löschung durch die Mannschaft oder mit der Mannschaft; Zwischenergebnisse der Aufbereitung und Analyse nur für die Dauer der Verarbeitung."
+              }
+            ]
+          },
+          {
+            "title": "Papierkorb, Wiederherstellung und Löschung des Kontos",
+            "paragraphs": [
+              "Gelöschte Spiele, Kadermitglieder, Turniere und Mannschaften werden nicht sofort endgültig entfernt, sondern 30 Tage lang in einem Papierkorb aufbewahrt. In dieser Zeit sind die Daten für den normalen Betrieb gesperrt – sie erscheinen in keiner Liste, keiner Statistik und keiner Auswertung – und können von den Trainerinnen und Trainern der Mannschaft (eine gelöschte Mannschaft: von der Cheftrainerin bzw. dem Cheftrainer oder einem Vereinsadministrator) wiederhergestellt werden. Wer nicht warten möchte, kann einen Eintrag im Papierkorb jederzeit endgültig löschen. Nach Ablauf der Frist löscht ein stündlich laufender Datenbank-Job die Einträge endgültig, einschließlich zugehöriger Fotos.",
+              "Für das eigene Konto gilt eine Karenzzeit: Wer sein Konto löscht, sperrt es damit sofort – eine Anmeldung ist nur noch möglich, um die Löschung zurückzunehmen – und erhält den Löschtermin per E-Mail bestätigt. Nach 30 Tagen wird das Konto endgültig gelöscht; Mannschaften, in denen die Person das einzige Mitglied des Trainerteams ist, werden dann mitgelöscht, Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden übergeben. Wer sein Konto sofort und ohne Karenzzeit gelöscht haben möchte, schreibt uns von der Kontoadresse aus; wir löschen dann vorzeitig.",
+              "Der Papierkorb schützt vor Fehlbedienung, nicht vor dem Löschungsrecht: Verlangt eine betroffene Person die Löschung ihrer Daten, führen wir sie unabhängig von der Frist durch."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Die Daten des gelöschten Eintrags in eingefrorener Form; Zeitpunkt der Löschung und Kennung des löschenden Kontos."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer mit eigenem Konto; von Nutzern erfasste Spielerinnen und Spieler."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); berechtigte Interessen an der Wiederherstellbarkeit versehentlich gelöschter Daten (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); während der Frist Einschränkung der Verarbeitung (Art. 18 DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "30 Tage ab der Löschung, danach endgültige Löschung durch einen stündlich laufenden Datenbank-Job."
+              }
+            ]
+          },
+          {
+            "title": "Datenexport: Auskunft und Datenübertragbarkeit",
+            "paragraphs": [
+              "Jedes Konto kann unter Einstellungen → Konto → „Meine Daten herunterladen“ eine vollständige Kopie der eigenen Daten anfordern. Das Archiv (ZIP) enthält eine für Menschen lesbare Übersicht mit den Informationen nach Art. 15 DSGVO (Zwecke, Empfänger, Speicherdauer, Herkunft, Rechte) sowie alle Daten im Format JSON – strukturiert, gängig und maschinenlesbar im Sinne des Art. 20 DSGVO – und die hinterlegten Porträtfotos. Ist die Person zugleich Kadermitglied einer oder mehrerer Mannschaften, enthält das Archiv auch ihre dortigen Daten: Spiele mit ihren Ereignissen, Abwesenheiten, Strafen, Umfrageantworten, Rückmeldungen, Trikots, markierte Videoszenen, erhaltene Sendungen und Laufwege.",
+              "Die Cheftrainerin bzw. der Cheftrainer kann unter Einstellungen → Trainerteam → „Mannschaft herunterladen“ sämtliche Daten der Mannschaft in demselben Format exportieren. Das ist die Rückgabe der Daten an den Verein als Verantwortlichen (Art. 28 Abs. 3 lit. g) DSGVO). Videodateien sind darin nicht enthalten, wohl aber alle Angaben zu ihnen; Zugangsgeheimnisse wie Freigabe- oder Kalender-Links werden nie exportiert.",
+              "Ein Export liest alle Daten eines Kontos bzw. einer Mannschaft und ist daher auf fünf Vorgänge je Stunde und Konto begrenzt. Das Archiv verlässt unseren Einflussbereich, sobald es heruntergeladen ist; es enthält personenbezogene Daten und ist entsprechend aufzubewahren. Bei uns wird ein Export nicht gespeichert."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Alle zum Konto bzw. zur Mannschaft gespeicherten Daten; Zeitpunkt der Anforderung (Zählgrenze)."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer mit eigenem Konto; beim Mannschaftsexport alle Kadermitglieder und das Trainerteam der Mannschaft."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO in Verbindung mit Art. 15 und Art. 20 DSGVO); beim Mannschaftsexport Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO) in Verbindung mit Art. 28 Abs. 3 lit. g) DSGVO."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Das Archiv wird nur erzeugt und ausgeliefert, nicht gespeichert; die Zählgrenze verfällt nach einer Stunde."
+              }
+            ]
+          },
+          {
             "title": "Live-Demo ohne Anmeldung",
             "paragraphs": [
               "Auf einer eigenen Adresse stellen wir eine Demo-Version bereit, in der die Erfassung eines Spiels ohne Registrierung ausprobiert werden kann. Die Demo arbeitet mit erfundenen Beispieldaten. Geben Sie dort bitte keine echten personenbezogenen Daten ein – Eingaben in der Demo werden nicht als Vereinsdaten behandelt und können jederzeit zurückgesetzt werden."
@@ -1040,7 +1245,7 @@
           },
           {
             "title": "Pflichten des Vereins",
-            "description": "Der Verein muss die Erziehungsberechtigten vor der ersten Eingabe nach Art. 13 DSGVO informieren und die erforderlichen Einwilligungen einholen – insbesondere für gesundheitsbezogene Abwesenheiten und für jede öffentliche Freigabe (Live-Ticker, geteilte Berichte). Ein Muster-Informationsblatt und einen Auftragsverarbeitungsvertrag stellen wir auf Anforderung zur Verfügung."
+            "description": "Der Verein muss die Erziehungsberechtigten vor der ersten Eingabe nach Art. 13 DSGVO informieren und die erforderlichen Einwilligungen einholen – insbesondere für gesundheitsbezogene Abwesenheiten und für jede öffentliche Freigabe (Live-Ticker, geteilte Berichte). Ein Muster-Informationsblatt und einen Auftragsverarbeitungsvertrag stellen wir auf Anforderung zur Verfügung. Dasselbe gilt für Videoaufnahmen und Porträtfotos."
           },
           {
             "title": "Datensparsamkeit",
@@ -1066,7 +1271,7 @@
           },
           {
             "title": "Auskunftsrecht:",
-            "description": "Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend den gesetzlichen Vorgaben."
+            "description": "Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend den gesetzlichen Vorgaben. Eine vollständige Kopie Ihrer Kontodaten – einschließlich Ihrer Daten als Kadermitglied – erhalten Sie jederzeit selbst in der App unter Einstellungen → Konto → „Meine Daten herunterladen“ (siehe „Datenexport“)."
           },
           {
             "title": "Recht auf Berichtigung:",
@@ -1074,11 +1279,11 @@
           },
           {
             "title": "Recht auf Löschung und Einschränkung der Verarbeitung:",
-            "description": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen. Ihr Nutzerkonto können Sie jederzeit selbst löschen (Einstellungen → Konto)."
+            "description": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen. Ihr Nutzerkonto können Sie jederzeit selbst löschen (Einstellungen → Konto); es wird sofort gesperrt und nach 30 Tagen endgültig gelöscht. Wünschen Sie eine sofortige Löschung, genügt eine Nachricht an unsere Kontaktadresse."
           },
           {
             "title": "Recht auf Datenübertragbarkeit:",
-            "description": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern. In der App können Sie Auswertungen als PDF und Statistiktabellen als CSV exportieren; darüber hinaus stellen wir Ihnen Ihre Daten auf Anfrage innerhalb von 30 Tagen in einem maschinenlesbaren Format bereit."
+            "description": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern. In der App laden Sie Ihre Daten jederzeit als Archiv mit JSON-Dateien herunter (Einstellungen → Konto); Auswertungen lassen sich zusätzlich als PDF und Statistiktabellen als CSV exportieren. Auf Anfrage stellen wir Ihnen Ihre Daten außerdem innerhalb von 30 Tagen bereit."
           },
           {
             "title": "Beschwerde bei Aufsichtsbehörde:",
@@ -1086,7 +1291,7 @@
           }
         ],
         "howToLabel": "So üben Sie Ihre Rechte aus:",
-        "howToText": "Eine formlose Nachricht an unsere Kontaktadresse genügt; ein bestimmtes Formular ist nicht erforderlich. Wir antworten unverzüglich, spätestens innerhalb eines Monats. Betrifft Ihr Anliegen Kader-, Termin-, Abwesenheits- oder Umfragedaten, ist der Verein bzw. die Trainerin oder der Trainer verantwortlich; wir leiten Ihre Anfrage in diesem Fall dorthin weiter und unterstützen bei der Erfüllung.",
+        "howToText": "Eine formlose Nachricht an unsere Kontaktadresse genügt; ein bestimmtes Formular ist nicht erforderlich. Wir antworten unverzüglich, spätestens innerhalb eines Monats. Betrifft Ihr Anliegen Kader-, Termin-, Abwesenheits- oder Umfragedaten, ist der Verein bzw. die Trainerin oder der Trainer verantwortlich; wir leiten Ihre Anfrage in diesem Fall dorthin weiter und unterstützen bei der Erfüllung. Spielerinnen und Spieler mit eigenem Konto erhalten eine Kopie ihrer Kaderdaten jederzeit selbst über die Exportfunktion in der App.",
         "obligationLabel": "Bereitstellungspflicht:",
         "obligationText": "Die Bereitstellung Ihrer Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Für die Einrichtung eines Kontos benötigen wir jedoch Name, E-Mail-Adresse und Passwort; ohne diese Angaben kann kein Konto angelegt und die App nicht genutzt werden. Alle weiteren Angaben sind freiwillig."
       },
@@ -1124,7 +1329,7 @@
         "title": "Speicherdauer und Löschung",
         "description": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden. Vorrangig gelten die bei den einzelnen Verarbeitungen genannten Fristen.",
         "technicalLabel": "Automatisch durchgesetzte technische Fristen:",
-        "technicalText": "Die folgenden Fristen setzt ein täglich laufender Datenbank-Job selbsttätig durch – ohne dass jemand daran denken muss:",
+        "technicalText": "Die folgenden Fristen setzen automatisch laufende Datenbank-Jobs selbsttätig durch – ohne dass jemand daran denken muss:",
         "technicalItems": [
           {
             "title": "24 Stunden",
@@ -1145,10 +1350,18 @@
           {
             "title": "400 Tage",
             "description": "Nutzungsverzeichnis der KI-Auswertungen (ohne Inhalt der Auswertung)."
+          },
+          {
+            "title": "30 Tage",
+            "description": "Einträge im Papierkorb (gelöschte Spiele, Kadermitglieder, Turniere, Mannschaften) sowie zur Löschung vorgemerkte Konten nach Ablauf der Karenzzeit – geprüft stündlich."
+          },
+          {
+            "title": "1 Stunde",
+            "description": "Zählgrenze für Datenexporte (fünf je Stunde und Konto)."
           }
         ],
         "contentLabel": "Inhaltsdaten der App:",
-        "contentText": "Kader-, Spiel-, Termin-, Abwesenheits- und Umfragedaten bleiben gespeichert, bis der Verantwortliche sie löscht, längstens bis zur Löschung der Mannschaft bzw. des zugehörigen Kontos. Löschen Sie Ihr Konto, werden Mannschaften, in denen Sie das einzige Mitglied sind, vollständig mitgelöscht; Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden übergeben. Die Löschung erfolgt sofort und ohne Karenzzeit.",
+        "contentText": "Kader-, Spiel-, Termin-, Abwesenheits-, Kassen-, Trikot- und Umfragedaten sowie Videoaufnahmen bleiben gespeichert, bis der Verantwortliche sie löscht, längstens bis zur endgültigen Löschung der Mannschaft bzw. des zugehörigen Kontos. Gelöschte Spiele, Kadermitglieder, Turniere und Mannschaften liegen 30 Tage im Papierkorb und werden danach endgültig gelöscht. Löschen Sie Ihr Konto, wird es sofort gesperrt und nach einer Karenzzeit von 30 Tagen endgültig gelöscht; Mannschaften, in denen Sie das einzige Mitglied des Trainerteams sind, werden dann mitgelöscht, Mannschaften mit weiteren Mitgliedern bleiben bestehen und werden übergeben. Eine sofortige Löschung ohne Karenzzeit erhalten Sie auf Anfrage.",
         "retentionLabel": "Gesetzliche Aufbewahrung und Archivierung:",
         "retentionText": "Soweit uns handels- oder steuerrechtliche Aufbewahrungspflichten treffen, gelten die folgenden allgemeinen Fristen nach deutschem Recht. Betroffen sind ausschließlich kaufmännische Unterlagen, nicht die Inhaltsdaten der App:",
         "items": [
@@ -1602,7 +1815,7 @@
       "title": "Datenschutzerklärung",
       "description": "Wie wir personenbezogene Daten auf statix-app.de und in der Statix App verarbeiten – verständlich aufgeschlüsselt nach Zweck, Rechtsgrundlage, Dienstleistern und Speicherdauer.",
       "pseudonymBadge": "Spielernamen bleiben in der App",
-      "lastUpdated": "Stand: 25. August 2026",
+      "lastUpdated": "Stand: 24. September 2026",
       "navLabel": "Weitere rechtliche Angaben",
       "imprintLink": "Impressum",
       "termsLink": "AGB"

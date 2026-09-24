@@ -34,7 +34,7 @@
       "title": "Ogólne warunki korzystania (OWK)",
       "description": "Warunki regulujące korzystanie z aplikacji do statystyk piłki ręcznej Statix oraz z powiązanych stron internetowych i usług.",
       "transparencyBadge": "Uczciwe i przejrzyste",
-      "lastUpdated": "Ostatnia aktualizacja: 25 sierpnia 2026"
+      "lastUpdated": "Ostatnia aktualizacja: 24 września 2026"
     },
     "documentTitle": "Ogólne warunki korzystania",
     "documentTitleShort": "OWK",
@@ -57,7 +57,7 @@
       "title": "Preambuła",
       "paragraph1": "Niniejsze ogólne warunki korzystania („OWK”) regulują stosunek umowny między Państwem jako użytkownikiem („Użytkownik” lub „Państwo”) a usługodawcą w zakresie korzystania z aplikacji do statystyk piłki ręcznej „Statix” oraz z powiązanych stron internetowych, progresywnej aplikacji internetowej i związanych z nimi usług (łącznie „Statix” lub „Usługa”).",
       "paragraph2": "Wszystkie pojęcia i określenia użyte w niniejszych OWK należy rozumieć w sposób neutralny płciowo.",
-      "updatedAt": "Wersja: 25 sierpnia 2026"
+      "updatedAt": "Wersja: 24 września 2026"
     },
     "sections": {
       "scope": {
@@ -85,7 +85,11 @@
           "Tworzenie turniejów z udziałem kilku drużyn, z automatyczną tabelą i terminarzem.",
           "Zautomatyzowana analiza meczów, drużyn i poszczególnych zawodników wspierana przez sztuczną inteligencję.",
           "Opcjonalna publiczna relacja z meczu („ticker na żywo”) za pomocą niemożliwego do odgadnięcia linku, opcjonalnie z logotypami sponsorów.",
-          "Udostępnianie analiz linkiem, eksport protokołu meczowego do PDF oraz eksport wybranych tabel statystycznych do CSV."
+          "Udostępnianie analiz linkiem, eksport protokołu meczowego do PDF oraz eksport wybranych tabel statystycznych do CSV.",
+          "Funkcja wideo: przesyłanie nagrań meczów i treningów, oznaczanie scen, wysyłanie zestawień poszczególnym zawodniczkom i zawodnikom oraz automatyczna analiza ścieżek i torów piłki (§ 10).",
+          "Kasa drużyny z katalogiem kar, zarządzanie koszulkami i przypomnienia o urodzinach.",
+          "Kosz: usunięte mecze, członkowie kadry, turnieje i drużyny mogą zostać przywrócone w ciągu 30 dni (§ 12).",
+          "Eksport danych: kopia wszystkich własnych danych lub – dla trenera głównego – wszystkich danych drużyny jako archiwum w formacie nadającym się do odczytu maszynowego (§ 12)."
         ],
         "paragraphsAfter": [
           "Statix jest stale rozwijany i znajduje się w fazie wprowadzania na rynek. Konkretny zakres funkcji wynika z aktualnej wersji Usługi oraz z opisu usług na stronach internetowych usługodawcy. Usługodawca jest uprawniony do dalszego rozwijania, zmieniania lub dostosowywania poszczególnych funkcji, o ile jest to dla Użytkownika rozsądne, a istota świadczenia należnego na podstawie umowy zostaje zachowana.",
@@ -112,11 +116,11 @@
         ],
         "items": [
           "Trenerzy tworzą drużyny, rejestrują kadrę i mecze oraz administrują danymi drużyny. Decydują, jakie dane są wprowadzane do Statix i jakie treści są publikowane.",
-          "Zawodnicy mogą założyć własne konto za pomocą linku z zaproszeniem i przejąć swój wpis w kadrze. Widzą wówczas terminy, własne statystyki i odpowiedzi oraz mogą samodzielnie zarządzać własnymi wpisami – takimi jak nieobecności czy to, czy ich nazwisko jest widoczne na stronach publicznych.",
+          "Zawodnicy mogą założyć własne konto za pomocą linku z zaproszeniem i przejąć swój wpis w kadrze. Widzą wówczas terminy, własne statystyki i odpowiedzi oraz mogą samodzielnie zarządzać własnymi wpisami – takimi jak nieobecności czy to, czy ich nazwisko jest widoczne na stronach publicznych. Za pomocą funkcji eksportu w każdej chwili uzyskują kopię swoich własnych danych.",
           "Administratorzy klubu zarządzają wspólnie kilkoma drużynami klubu i mogą przeglądać dane obejmujące te drużyny, o ile są one przypisane do klubu."
         ],
         "paragraphsAfter": [
-          "Jeżeli drużyna jest przypisana do klubu, dane drużyny należą organizacyjnie do klubu, a nie do indywidualnego konta trenera. Jeżeli trener usunie własne konto, drużyna mająca kolejnych członków istnieje nadal i zostaje przekazana pozostałemu członkowi (§ 12 ust. 4).",
+          "Jeżeli drużyna jest przypisana do klubu, dane drużyny należą organizacyjnie do klubu, a nie do indywidualnego konta trenera. Jeżeli trener usunie własne konto, drużyna mająca kolejnych członków istnieje nadal i zostaje przekazana pozostałemu członkowi (§ 12 ust. 5).",
           "Przypisanie roli nie uprawnia usługodawcy do ingerowania w wewnętrzne relacje między klubem, trenerami i zawodnikami. Spory o to, kto może przeglądać lub zmieniać określone dane, należy rozstrzygać między zainteresowanymi stronami."
         ]
       },
@@ -160,7 +164,7 @@
         "paragraphs": [
           "Usługodawca przetwarza dane osobowe zgodnie z obowiązującymi przepisami o ochronie danych. Szczegóły przetwarzania danych osobowych znajdują się w polityce prywatności.",
           "W zakresie, w jakim usługodawca przetwarza na polecenie Użytkownika dane osobowe osób trzecich (w szczególności dane zawodników, terminów, nieobecności i ankiet), które Użytkownik wprowadza na własną odpowiedzialność, usługodawca działa jako podmiot przetwarzający w rozumieniu art. 28 RODO; administratorem jest Użytkownik lub jego klub. W odniesieniu do samych danych konta użytkownika oraz do technicznego funkcjonowania Usługi usługodawca jest odrębnym administratorem.",
-          "Na wniosek skierowany na adres wskazany w informacji o wydawcy usługodawca udostępnia umowę powierzenia przetwarzania zgodną z art. 28 ust. 3 RODO wraz z załącznikami dotyczącymi środków technicznych i organizacyjnych oraz zaangażowanych podmiotów podprzetwarzających. Kluby rejestrujące dane drużyn młodzieżowych powinny zawrzeć tę umowę przed wprowadzeniem jakichkolwiek danych.",
+          "Na wniosek skierowany na adres wskazany w informacji o wydawcy usługodawca udostępnia umowę powierzenia przetwarzania zgodną z art. 28 ust. 3 RODO wraz z załącznikami dotyczącymi środków technicznych i organizacyjnych oraz zaangażowanych podmiotów podprzetwarzających. Kluby rejestrujące dane drużyn młodzieżowych powinny zawrzeć tę umowę przed wprowadzeniem jakichkolwiek danych. Zwrot danych po zakończeniu umowy (art. 28 ust. 3 lit. g) RODO) dostawca realizuje przez funkcję eksportu zgodnie z § 12 ust. 2.",
           "W celu świadczenia Usługi usługodawca korzysta ze starannie wybranych dostawców jako podmiotów przetwarzających. Należą do nich w szczególności:"
         ],
         "items": [
@@ -168,7 +172,10 @@
           "Vercel – hosting i prowadzenie stron internetowych oraz aplikacji, a także zanonimizowany pomiar zasięgu",
           "Brevo – wysyłka wiadomości e-mail (potwierdzenia rejestracji, przypomnienia, zapytania kontaktowe, newsletter)",
           "Anthropic i OpenAI – analizy wspierane przez AI na podstawie danych spseudonimizowanych",
-          "Usługi push producentów przeglądarek (m.in. Google, Mozilla, Apple) – dostarczanie włączonych powiadomień push"
+          "Usługi push producentów przeglądarek (m.in. Google, Mozilla, Apple) – dostarczanie włączonych powiadomień push",
+          "Cloudflare – magazyn obiektów (Cloudflare R2) dla nagrań wideo, wyłącznie w centrach danych w Unii Europejskiej (tylko przy korzystaniu z funkcji wideo)",
+          "Fly.io – przygotowanie przesłanych nagrań wideo we Frankfurcie nad Menem (tylko przy korzystaniu z funkcji wideo)",
+          "RunPod – wymagające dużej mocy obliczeniowej przetwarzanie i analiza wideo na procesorach graficznych w centrach danych w Unii Europejskiej (tylko przy korzystaniu z funkcji wideo)"
         ],
         "paragraphsAfter": [
           "W przypadku korzystania z poszczególnych dostawców dane mogą być przekazywane do państw trzecich (w szczególności do USA). Usługodawca opiera takie przekazywanie na decyzji Komisji Europejskiej stwierdzającej odpowiedni stopień ochrony (Ramy ochrony danych UE–USA), o ile dany dostawca posiada certyfikat, a w pozostałych przypadkach na standardowych klauzulach umownych zgodnie z art. 46 ust. 2 lit. c) RODO. Dalsze informacje zawiera polityka prywatności.",
@@ -188,13 +195,16 @@
         "items": []
       },
       "publicSharing": {
-        "title": "§ 10 Publiczne udostępnianie i udostępnione treści",
+        "title": "§ 10 Publiczne udostępnianie, udostępnione treści i nagrania wideo",
         "paragraphs": [
           "Użytkownik może udostępnić publicznie wybrane treści za pomocą niemożliwego do odgadnięcia linku – w szczególności trwający ticker na żywo oraz zakończone protokoły meczowe. Bez takiego wyraźnego udostępnienia dane drużyny są dostępne wyłącznie dla jej członków.",
           "Kto udostępnia treści, ten publikuje tym samym dane osobowe osób trzecich i ponosi za to odpowiedzialność. Przed udostępnieniem Użytkownik musi upewnić się, że zainteresowani zawodnicy – a w przypadku osób małoletnich ich przedstawiciele ustawowi – wyrażają na to zgodę.",
           "Zawodnicy posiadający własne konto mogą w swoich ustawieniach wskazać, że ich nazwisko nie ma być pokazywane na stronach publicznych. Decyzja ta ma zawsze pierwszeństwo przed szerszym ustawieniem na poziomie drużyny i nie może zostać zmieniona przez trenera.",
           "Udostępnianie można w każdej chwili zakończyć; link przestaje być wówczas dostępny. Usługodawca nie ma wpływu na to, czy osoby trzecie skopiowały, zapisały lub umieściły w pamięci podręcznej wyszukiwarek treści wcześniej publiczne.",
-          "Logotypy sponsorów przesłane przez Użytkownika na potrzeby tickera na żywo muszą być wolne od praw osób trzecich albo musi istnieć odpowiednie zezwolenie na ich wykorzystanie. § 7 ust. 5 stosuje się odpowiednio."
+          "Logotypy sponsorów przesłane przez Użytkownika na potrzeby tickera na żywo muszą być wolne od praw osób trzecich albo musi istnieć odpowiednie zezwolenie na ich wykorzystanie. § 7 ust. 5 stosuje się odpowiednio.",
+          "Jeśli użytkownik przesyła nagrania wideo, zapewnia, że nagranie powstało zgodnie z prawem i że może je wykorzystywać do celów wskazanych w § 2. Przed przesłaniem uzyskuje niezbędne zgody pokazanych zawodniczek i zawodników – w przypadku osób niepełnoletnich zgody opiekunów prawnych – i respektuje prawa innych nagranych osób (rywali, sędziów, widzów) oraz ewentualne wymogi operatora hali i związku. Dostawca przechowuje i przetwarza nagrania wyłącznie na zlecenie użytkownika (§ 8).",
+          "Zestawienia, które użytkownik wysyła poszczególnym zawodniczkom i zawodnikom, udostępniają wyłącznie zawarte w nich sceny. Użytkownik decyduje, które sceny wysyła, i ponosi za to odpowiedzialność.",
+          "Nagrania wideo nie podlegają automatycznemu terminowi usunięcia; pozostają zapisane, dopóki użytkownik ich nie usunie lub drużyna nie zostanie ostatecznie usunięta. Użytkownik usuwa nagrania, gdy tylko cel analizy zostanie osiągnięty. Dostawca zastrzega sobie prawo do wprowadzenia limitu pamięci lub maksymalnego okresu przechowywania nagrań wideo; zapowie to co najmniej 30 dni wcześniej w formie tekstowej."
         ],
         "items": []
       },
@@ -212,11 +222,12 @@
       "dataExport": {
         "title": "§ 12 Eksport danych, usunięcie i zamknięcie konta",
         "paragraphs": [
-          "W ramach przewidzianych funkcji Użytkownik może udostępniać analizy zarejestrowane w Statix, eksportować protokół meczowy do PDF oraz wybrane tabele statystyczne do CSV, a także subskrybować kalendarz terminów jako kanał iCalendar.",
-          "Poza funkcjami eksportu dostępnymi w aplikacji usługodawca udostępni Użytkownikowi – na wniosek skierowany na adres wskazany w informacji o wydawcy – dane zapisane dla jego konta i jego drużyn w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego. Wnioski są rozpatrywane niezwłocznie, najpóźniej w terminie 30 dni.",
-          "Użytkownik może w każdej chwili samodzielnie usunąć swoje konto (Ustawienia → Konto). Kto nie może się już zalogować, powinien przesłać wniosek o usunięcie na adres e-mail wskazany w informacji o wydawcy. Usunięcie jest ostateczne; nie ma możliwości przywrócenia ani okresu karencji.",
-          "Wraz z usunięciem konta usuwane są drużyny, w których Użytkownik jest jedynym członkiem, wraz z powiązanymi danymi kadry, meczów, terminów i analiz. Drużyny mające kolejnych członków istnieją nadal i zostają przekazane pozostałemu członkowi o najdłuższym stażu; to samo dotyczy drużyn przypisanych do klubu.",
-          "Za wyeksportowanie potrzebnych danych przed usunięciem konta lub przed zakończeniem umowy odpowiada sam Użytkownik. Polityka prywatności opisuje szczegóły oraz okresy przechowywania dzienników technicznych."
+          "Użytkownik może udostępniać analizy zarejestrowane w Statix w ramach dostępnych funkcji, eksportować raport meczowy jako PDF i poszczególne tabele statystyczne jako CSV oraz subskrybować terminarz jako kanał iCalendar.",
+          "Każdy użytkownik może w aplikacji (Ustawienia → Konto) w każdej chwili pobrać pełną kopię danych zapisanych dla swojego konta – w tym swoich danych jako członka kadry – jako archiwum w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego (JSON). Trener główny może ponadto wyeksportować wszystkie dane drużyny w tym samym formacie (Ustawienia → Sztab); pliki wideo nie są w nim zawarte. Kto nie może już korzystać z aplikacji, otrzymuje dane na żądanie skierowane na adres podany w nocie prawnej w ciągu 30 dni.",
+          "Usunięte mecze, członkowie kadry, turnieje i drużyny są przechowywane przez 30 dni w koszu i w tym czasie mogą zostać przywrócone lub przedterminowo ostatecznie usunięte przez trenerki i trenerów drużyny; następnie są usuwane automatycznie i ostatecznie. Kosz jest funkcją ułatwiającą; nie istnieje roszczenie o przywrócenie.",
+          "Użytkownik może w każdej chwili samodzielnie usunąć swoje konto (Ustawienia → Konto). Konto zostaje wówczas natychmiast zablokowane i po okresie karencji wynoszącym 30 dni ostatecznie usunięte; w okresie karencji użytkownik może wycofać usunięcie, logując się. Kto nie może się już zalogować lub życzy sobie natychmiastowego usunięcia bez okresu karencji, kieruje żądanie na adres e-mail podany w nocie prawnej. Po upływie okresu karencji przywrócenie nie jest możliwe.",
+          "Wraz z ostatecznym usunięciem konta usuwane są drużyny, w których użytkownik jest jedynym członkiem sztabu, wraz z powiązanymi danymi kadry, meczów, terminarza, wideo i analiz. Drużyny z innymi członkami pozostają i są przekazywane pozostałemu członkowi o najdłuższym stażu; to samo dotyczy drużyn przypisanych do klubu.",
+          "Użytkownik sam odpowiada za wyeksportowanie potrzebnych danych przed usunięciem lub przed zakończeniem umowy. Szczegóły i okresy przechowywania opisuje polityka prywatności."
         ],
         "items": []
       },
@@ -235,7 +246,7 @@
       "term": {
         "title": "§ 14 Czas trwania umowy i wypowiedzenie",
         "paragraphs": [
-          "Umowa o korzystanie w wersji bezpłatnej zostaje zawarta na czas nieokreślony i może zostać wypowiedziana przez każdą ze stron w każdej chwili bez zachowania okresu wypowiedzenia, w szczególności przez usunięcie konta użytkownika.",
+          "Umowa o korzystanie w wersji bezpłatnej zostaje zawarta na czas nieokreślony i może zostać wypowiedziana przez obie strony w każdej chwili bez zachowania terminu, w szczególności przez usunięcie konta użytkownika. Wypowiedzenie przez usunięcie konta staje się skuteczne z upływem okresu karencji zgodnie z § 12 ust. 4; do tego czasu użytkownik może je wycofać, logując się.",
           "Czas trwania, przedłużenie i wypowiedzenie ewentualnego płatnego abonamentu regulują warunki wskazane w danym procesie zamawiania. Jeżeli konsumentom oferowane jest odpłatne zobowiązanie ciągłe, usługodawca udostępni przycisk wypowiedzenia zgodnie z § 312k BGB.",
           "Prawo do nadzwyczajnego wypowiedzenia z ważnego powodu pozostaje nienaruszone dla obu stron. Po stronie usługodawcy ważny powód zachodzi w szczególności w przypadku istotnego naruszenia niniejszych OWK przez Użytkownika.",
           "Wypowiedzenie wymaga formy dokumentowej (np. wiadomości e-mail); wystarczające jest usunięcie konta w aplikacji."
@@ -379,11 +390,11 @@
           },
           {
             "title": "Umowa powierzenia przetwarzania",
-            "description": "Kluby i drużyny, które rejestrują dane swoich członków – w szczególności osób małoletnich – mogą otrzymać umowę powierzenia przetwarzania zgodną z art. 28 ust. 3 RODO wraz z załącznikami dotyczącymi środków technicznych i organizacyjnych oraz zaangażowanych podmiotów podprzetwarzających, zwracając się o nią na nasz adres kontaktowy."
+            "description": "Kluby i drużyny, które rejestrują dane swoich członków – w szczególności osób małoletnich – mogą otrzymać umowę powierzenia przetwarzania zgodną z art. 28 ust. 3 RODO wraz z załącznikami dotyczącymi środków technicznych i organizacyjnych oraz zaangażowanych podmiotów podprzetwarzających, zwracając się o nią na nasz adres kontaktowy. Zwrot danych po zakończeniu umowy odbywa się przez eksport drużyny w aplikacji (zob. „Eksport danych”)."
           },
           {
             "title": "Prawa osób, których dane dotyczą",
-            "description": "Zawodnicy powinni kierować wnioski o dostęp, sprostowanie i usunięcie danych kadrowych do swojego klubu lub trenera. Jeżeli takie wnioski trafią bezpośrednio do nas, przekazujemy je administratorowi i wspieramy go w ich realizacji."
+            "description": "Zawodnicy powinni kierować wnioski o dostęp, sprostowanie i usunięcie danych kadrowych do swojego klubu lub trenera. Jeżeli takie wnioski trafią bezpośrednio do nas, przekazujemy je administratorowi i wspieramy go w ich realizacji. Zawodniczki i zawodnicy z własnym kontem w każdej chwili samodzielnie uzyskują kopię swoich danych za pomocą funkcji eksportu w aplikacji."
           }
         ]
       },
@@ -402,7 +413,9 @@
           "Informacje dotyczące zdrowia (art. 9 RODO) – wyłącznie wtedy, gdy nieobecność zostaje wpisana jako choroba lub kontuzja, wraz z opcjonalną notatką",
           "Dane o korzystaniu (np. używane funkcje, moment ostatniego użycia)",
           "Metadane, dane komunikacyjne i proceduralne (np. adresy IP, informacje o urządzeniu i przeglądarce)",
-          "Dane dziennika (np. techniczne dzienniki błędów)"
+          "Dane dziennika (np. techniczne dzienniki błędów)",
+          "Dane obrazu i wideo (zdjęcia portretowe członków kadry i sztabu; przy korzystaniu z funkcji wideo nagrania meczów i treningów wraz ze ścieżką dźwiękową oraz wyprowadzone z nich dane o ruchu, takie jak ścieżki, dystanse i tory piłki)",
+          "Dane kasy drużyny (katalog kar, nałożone kary, kwoty, status płatności)"
         ],
         "affectedPeopleTitle": "Kategorie osób, których dane dotyczą",
         "affectedPeople": [
@@ -410,7 +423,8 @@
           "Użytkownicy posiadający własne konto (trenerzy, działacze klubowi, zawodnicy)",
           "Zawodnicy rejestrowani przez użytkowników bez własnego konta, w tym osoby małoletnie",
           "Odwiedzający nasze strony internetowe i publiczne tickery na żywo",
-          "Odbiorcy newslettera"
+          "Odbiorcy newslettera",
+          "Osoby widoczne na nagraniach wideo (rywale, sędziowie, widzowie)"
         ],
         "purposesTitle": "Cele przetwarzania",
         "purposes": [
@@ -425,7 +439,11 @@
           "Infrastruktura informatyczna i analiza błędów",
           "Zanonimizowany pomiar zasięgu",
           "Public relations",
-          "Opinie i ulepszanie oferty"
+          "Opinie i ulepszanie oferty",
+          "Przechowywanie, przygotowanie i analiza nagrań wideo oraz wysyłanie pojedynczych scen zawodniczkom i zawodnikom (tylko przy włączonej funkcji wideo)",
+          "Prowadzenie kasy drużyny, zarządzanie koszulkami i przypomnienia o urodzinach",
+          "Możliwość odzyskania przypadkowo usuniętych danych (kosz) oraz udostępnianie kopii danych (dostęp i przenoszenie danych)",
+          "Komunikaty związane z umową (np. zmiany niniejszej polityki lub regulaminu)"
         ]
       },
       "legalBasis": {
@@ -435,7 +453,7 @@
         "items": [
           {
             "title": "Zgoda (art. 6 ust. 1 zd. 1 lit. a RODO)",
-            "description": "Osoba, której dane dotyczą, wyraziła zgodę na przetwarzanie swoich danych osobowych w jednym lub większej liczbie określonych celów. Powołujemy się na nią w szczególności w przypadku newslettera, dobrowolnych informacji z ankiety powitalnej oraz powiadomień push."
+            "description": "Osoba, której dane dotyczą, wyraziła zgodę na przetwarzanie swoich danych osobowych w jednym lub większej liczbie określonych celów. Powołujemy się na nią w szczególności w przypadku newslettera, dobrowolnych informacji z ankiety powitalnej oraz powiadomień push. Dobrowolnie przesłane własne zdjęcie portretowe również opiera się na zgodzie."
           },
           {
             "title": "Wyraźna zgoda w przypadku szczególnych kategorii danych (art. 9 ust. 2 lit. a RODO)",
@@ -477,7 +495,9 @@
           "Punkty końcowe logowania, rejestracji i udostępniania są chronione przed zautomatyzowanymi atakami za pomocą limitów liczby żądań.",
           "Publiczne udostępnianie (ticker na żywo, udostępnione raporty) odbywa się wyłącznie za pośrednictwem losowo wygenerowanych, niemożliwych do odgadnięcia adresów i może zostać w każdej chwili cofnięte.",
           "Przed jakimkolwiek przekazaniem do dostawcy AI nazwiska osób są zastępowane identyfikatorami (pseudonimizacja).",
-          "Zbędne już dane techniczne są usuwane przez automatyczne zadanie bazy danych uruchamiane codziennie (zob. „Okres przechowywania i usuwanie”)."
+          "Zbędne już dane techniczne są usuwane przez automatyczne zadanie bazy danych uruchamiane codziennie (zob. „Okres przechowywania i usuwanie”).",
+          "Zdjęcia portretowe i nagrania wideo są przechowywane w niepublicznych obszarach magazynu i udostępniane wyłącznie po sprawdzeniu uprawnień lub przez ograniczone czasowo, podpisane adresy.",
+          "Usunięte dane pozostają 30 dni w zablokowanym koszu, zanim zostaną ostatecznie usunięte; konto jest zablokowane od chwili zgłoszenia usunięcia."
         ]
       },
       "webHosting": {
@@ -685,6 +705,58 @@
             ]
           },
           {
+            "title": "Zdjęcia portretowe",
+            "paragraphs": [
+              "Członkowie kadry z własnym kontem oraz trenerki i trenerzy mogą dobrowolnie przesłać zdjęcie portretowe; trener może również dodać zdjęcie członka kadry bez konta. Obraz jest przycinany i zmniejszany na urządzeniu przed przesłaniem (najwyżej 512 × 512 pikseli, ok. 1 MB) i służy wyłącznie rozpoznawaniu w obrębie drużyny – na przykład na ekranie boiska podczas rejestrowania na żywo.",
+              "Zdjęcia są przechowywane w niepublicznym obszarze magazynu naszego dostawcy bazy danych (Frankfurt nad Menem) i udostępniane wyłącznie zalogowanym członkom tej samej drużyny lub tego samego klubu; nie istnieje adres publiczny. Na stronach publicznych (relacja na żywo, udostępnione raporty) zdjęcia nie są wyświetlane, a dostawcom AI nie są przekazywane.",
+              "Zdjęcie może w każdej chwili zostać zastąpione lub usunięte przez osobę przedstawioną albo przez trenera. W przypadku osób niepełnoletnich klub uzyskuje zgodę opiekunów prawnych przed przesłaniem; ze zdjęć należy zrezygnować, gdy nie są potrzebne do treningów."
+            ],
+            "items": [
+              {
+                "label": "Przetwarzane rodzaje danych:",
+                "value": "Dane obrazu (zdjęcie portretowe), czas przesłania."
+              },
+              {
+                "label": "Osoby, których dane dotyczą:",
+                "value": "Użytkownicy z własnym kontem; zawodniczki i zawodnicy wprowadzeni przez użytkowników, w tym osoby niepełnoletnie."
+              },
+              {
+                "label": "Podstawy prawne:",
+                "value": "Dla własnego zdjęcia: zgoda (art. 6 ust. 1 lit. a) RODO). Za zdjęcia członków kadry odpowiada klub lub trener, zwykle na podstawie zgody; my przetwarzamy jako podmiot przetwarzający (art. 28 RODO)."
+              },
+              {
+                "label": "Okres przechowywania:",
+                "value": "Do usunięcia zdjęcia, najpóźniej do ostatecznego usunięcia wiersza kadry, drużyny lub konta (zob. „Kosz, przywracanie i usuwanie konta”)."
+              }
+            ]
+          },
+          {
+            "title": "Koszulki, kasa drużyny i urodziny",
+            "paragraphs": [
+              "Koszulki: drużyna może zarządzać zestawami koszulek i odnotowywać, która koszulka została wydana któremu członkowi kadry i kiedy została zwrócona. Zapisywane są numer, rozmiar, daty wydania i zwrotu oraz opcjonalna notatka.",
+              "Kasa drużyny: drużyna może prowadzić katalog kar (np. „spóźnienie na trening”) i przypisywać kary poszczególnym członkom kadry – z powodem, kwotą, datą i adnotacją, czy zapłacono. Kasę widzą trenerki i trenerzy oraz członek kadry, któremu drużyna powierzyła to zadanie; każda zawodniczka i każdy zawodnik z własnym kontem widzi wyłącznie własne wpisy. Płatności nie są realizowane przez Statix – aplikacja jest rejestrem, nie usługą płatniczą.",
+              "Urodziny: jeśli zapisano datę urodzenia, aplikacja pokazuje członkom drużyny nadchodzące urodziny w kalendarzu. Wyświetlanie to służy wyłącznie codziennemu życiu drużyny; data urodzenia jest dobrowolna, a do kategorii wiekowej nadal wystarcza rok urodzenia."
+            ],
+            "items": [
+              {
+                "label": "Przetwarzane rodzaje danych:",
+                "value": "Dane treści (wydania koszulek; kary z powodem, kwotą i statusem płatności), dane podstawowe członków kadry (data urodzenia, o ile zapisana)."
+              },
+              {
+                "label": "Osoby, których dane dotyczą:",
+                "value": "Członkowie kadry; użytkownicy z własnym kontem."
+              },
+              {
+                "label": "Podstawy prawne:",
+                "value": "Administratorem jest klub lub drużyna; my przetwarzamy jako podmiot przetwarzający (art. 28 RODO) na podstawie naszej umowy z użytkownikiem (art. 6 ust. 1 lit. b) RODO)."
+              },
+              {
+                "label": "Okres przechowywania:",
+                "value": "Do usunięcia wpisu przez drużynę, najpóźniej do ostatecznego usunięcia wiersza kadry lub drużyny."
+              }
+            ]
+          },
+          {
             "title": "Klub i widok kariery obejmujący wiele drużyn",
             "paragraphs": [
               "Kilka drużyn można połączyć w ramach jednego klubu. Administratorzy klubu widzą wówczas kadry i analizy wszystkich przypisanych drużyn. W obrębie klubu wpisy kadrowe tej samej osoby – na przykład z drużyny do lat 18 i z drużyny kobiet – można powiązać z jedną osobą, dzięki czemu widoczna staje się kariera obejmująca wiele drużyn.",
@@ -808,7 +880,7 @@
           {
             "title": "Baza danych i przechowywanie plików (Supabase)",
             "paragraphs": [
-              "Wszystkie dane aplikacji przechowywane są w bazie danych PostgreSQL dostawcy Supabase; logotypy klubów i sponsorów przechowywane są w pamięci obiektowej tego samego dostawcy. Hosting odbywa się w UE (region Frankfurt nad Menem, Niemcy). Dostęp do bazy danych odbywa się wyłącznie po stronie serwera; z przeglądarki nie ma połączenia z bazą danych. Wszystkie tabele są dodatkowo zablokowane mechanizmem „row level security” bez żadnej reguły zezwalającej.",
+              "Wszystkie dane aplikacji przechowywane są w bazie danych PostgreSQL dostawcy Supabase; logotypy klubów i sponsorów przechowywane są w pamięci obiektowej tego samego dostawcy. Hosting odbywa się w UE (region Frankfurt nad Menem, Niemcy). Dostęp do bazy danych odbywa się wyłącznie po stronie serwera; z przeglądarki nie ma połączenia z bazą danych. Wszystkie tabele są dodatkowo zablokowane mechanizmem „row level security” bez żadnej reguły zezwalającej. Zdjęcia portretowe i kadry służące do kalibracji wideo są przechowywane w niepublicznych obszarach tego samego magazynu obiektów i udostępniane wyłącznie po sprawdzeniu uprawnień.",
               "Spółka macierzysta dostawcy ma siedzibę w USA, dlatego nie można całkowicie wykluczyć dostępu z państwa trzeciego w ramach prac serwisowych i wsparcia. Obowiązują w tym zakresie wskazane poniżej gwarancje."
             ],
             "items": [
@@ -877,6 +949,31 @@
               {
                 "label": "Podstawy prawne:",
                 "value": "Wykonanie umowy (art. 6 ust. 1 zd. 1 lit. b RODO); prawnie uzasadnione interesy (art. 6 ust. 1 zd. 1 lit. f RODO); w przypadku newslettera: zgoda (art. 6 ust. 1 zd. 1 lit. a RODO)."
+              }
+            ]
+          },
+          {
+            "title": "Komunikaty związane z umową i jednorazowa wiadomość zwrotna",
+            "paragraphs": [
+              "O zmianach niniejszej polityki, regulaminu lub cen oraz o ważnych komunikatach operacyjnych informujemy wszystkie konta e-mailem. Takie komunikaty są częścią stosunku umownego i nie są reklamą; dlatego nie zawierają linku do rezygnacji. Dla każdego konta rejestrujemy, który komunikat, kiedy i na jaki adres został wysłany oraz czy doręczenie się powiodło, aby móc wykazać, że poinformowaliśmy.",
+              "Dwadzieścia minut po tym, jak nowo zarejestrowana trenerka lub trener zarejestruje swój pierwszy pełny mecz, wysyłamy jednorazowo e-mail z pytaniem, czy wszystko zadziałało, i wskazaniem analizy tego meczu. Ta wiadomość jest wysyłana dokładnie raz na konto; nie wymaga zgody marketingowej i nie jest newsletterem."
+            ],
+            "items": [
+              {
+                "label": "Przetwarzane rodzaje danych:",
+                "value": "Dane kontaktowe (adres e-mail), dane o użytkowaniu (czas pierwszego zarejestrowanego meczu), dziennik wysyłki (temat, czas, status doręczenia)."
+              },
+              {
+                "label": "Osoby, których dane dotyczą:",
+                "value": "Użytkownicy z własnym kontem."
+              },
+              {
+                "label": "Podstawy prawne:",
+                "value": "Wykonanie umowy (art. 6 ust. 1 lit. b) RODO); prawnie uzasadnione interesy w wykazaniu komunikatów umownych i w ulepszaniu usługi (art. 6 ust. 1 lit. f) RODO)."
+              },
+              {
+                "label": "Okres przechowywania:",
+                "value": "Dzienniki wysyłki do ostatecznego usunięcia konta."
               }
             ]
           },
@@ -1018,6 +1115,114 @@
             ]
           },
           {
+            "title": "Nagrania wideo, analiza wideo i wysyłki",
+            "paragraphs": [
+              "Drużyny mogą przesyłać nagrania swoich meczów i treningów, aby oznaczać sceny, analizować poszczególne zawodniczki i zawodników oraz wysyłać im zestawienia. Funkcja wideo jest dobrowolna; bez przesłanego nagrania nie odbywa się żadne z opisanych tu przetwarzań.",
+              "Przechowywanie: nagrania i wygenerowane z nich pliki segmentów są przechowywane w niepublicznym magazynie obiektów dostawcy Cloudflare (Cloudflare R2). Obszar magazynu jest utworzony wyłącznie dla centrów danych w Unii Europejskiej (oznaczenie „jurisdiction: EU”); każde pobranie odbywa się przez ograniczony czasowo, podpisany adres, który aplikacja generuje dopiero po sprawdzeniu uprawnień. Nazwiska, oznaczenia i przypisanie do drużyny i meczu pozostają w naszej bazie danych; magazyn wideo ich nie zna.",
+              "Przygotowanie: po przesłaniu nagranie jest dzielone na krótkie segmenty i konwertowane do odtwarzania. Zajmuje się tym instancja obliczeniowa dostawcy Fly.io we Frankfurcie nad Menem, która przechowuje plik w pamięci tylko na czas przetwarzania i nie ma dostępu do naszej bazy danych. Kroki wymagające dużej mocy obliczeniowej – łączenie dwóch perspektyw kamer w panoramę, zmniejszanie bardzo dużych nagrań oraz automatyczne wykrywanie ścieżek zawodniczek i zawodników oraz piłki – wykonywane są na procesorach graficznych dostawcy RunPod, wyłącznie w centrach danych w Unii Europejskiej i również bez trwałego przechowywania; instancja jest kończona po zadaniu. Wynikiem analizy ścieżek są tory ruchu, dystanse i profile prędkości, które trener przypisuje zawodniczce lub zawodnikowi. Automatyczne rozpoznawanie twarzy nie ma miejsca.",
+              "Wysyłki: trenerka lub trener może wysłać zawodniczce lub zawodnikowi z własnym kontem zestawienie wybranych scen. Odbiorca otrzymuje wyłącznie zawarte sceny, nie całe nagranie; zapisywane są tytuł, notatka oraz czas wysłania i pierwszego otwarcia.",
+              "Odpowiedzialność: nagranie w hali pokazuje oprócz własnej drużyny z reguły także rywali, sędziów i widzów. O tym, czy i na jakiej podstawie wolno filmować, decyduje wyłącznie klub jako administrator; uzyskuje on niezbędne zgody – w przypadku osób niepełnoletnich zgody opiekunów prawnych – i informuje osoby, których dane dotyczą. My przetwarzamy nagrania wyłącznie na polecenie. Dla nagrań wideo nie ma obecnie automatycznego terminu usunięcia: nagranie pozostaje zapisane, dopóki drużyna go nie usunie lub sama drużyna nie zostanie ostatecznie usunięta. Zalecamy usuwanie nagrań po zakończeniu analizy."
+            ],
+            "items": [
+              {
+                "label": "Przetwarzane rodzaje danych:",
+                "value": "Dane obrazu i wideo (nagrania ze ścieżką dźwiękową, kadry do kalibracji), dane o ruchu (ścieżki, dystanse, prędkości, tory piłki), dane treści (oznaczone sceny, notatki), dane o użytkowaniu (czas przesłania, wysłania i otwarcia)."
+              },
+              {
+                "label": "Osoby, których dane dotyczą:",
+                "value": "Zawodniczki i zawodnicy wprowadzeni przez użytkowników, w tym osoby niepełnoletnie; inne osoby widoczne na nagraniu (rywale, sędziowie, widzowie); użytkownicy z własnym kontem."
+              },
+              {
+                "label": "Podstawy prawne:",
+                "value": "Administratorem jest klub; dla nagrania zwykle zgoda (art. 6 ust. 1 lit. a) RODO) lub prawnie uzasadnione interesy klubu (art. 6 ust. 1 lit. f) RODO). My przetwarzamy jako podmiot przetwarzający (art. 28 RODO) na podstawie naszej umowy z użytkownikiem (art. 6 ust. 1 lit. b) RODO)."
+              },
+              {
+                "label": "Dostawca, magazyn wideo:",
+                "value": "Cloudflare, Inc., San Francisco, USA (dla EOG: Cloudflare Germany GmbH, Monachium); przechowywanie i przetwarzanie wyłącznie w UE."
+              },
+              {
+                "label": "Umowa powierzenia przetwarzania, Cloudflare:",
+                "url": "https://www.cloudflare.com/cloudflare-customer-dpa/"
+              },
+              {
+                "label": "Dostawca, przygotowanie wideo:",
+                "value": "Fly.io, Inc., Chicago, USA; przetwarzanie we Frankfurcie nad Menem, Niemcy."
+              },
+              {
+                "label": "Umowa powierzenia przetwarzania, Fly.io:",
+                "url": "https://fly.io/legal/dpa/"
+              },
+              {
+                "label": "Dostawca, analiza wideo (procesory graficzne):",
+                "value": "RunPod, Inc., Mount Laurel, USA; przetwarzanie wyłącznie w centrach danych w Unii Europejskiej."
+              },
+              {
+                "label": "Polityka prywatności, RunPod:",
+                "url": "https://www.runpod.io/legal/privacy-policy"
+              },
+              {
+                "label": "Podstawa przekazywania do państw trzecich:",
+                "value": "Przetwarzanie w UE; dla ewentualnego dostępu w ramach obsługi i wsparcia: ramy ochrony danych UE-USA (Data Privacy Framework), o ile dostawca jest certyfikowany, w pozostałym zakresie standardowe klauzule umowne zgodnie z art. 46 ust. 2 lit. c) RODO."
+              },
+              {
+                "label": "Okres przechowywania:",
+                "value": "Nagrania do usunięcia przez drużynę lub wraz z drużyną; wyniki pośrednie przygotowania i analizy tylko na czas przetwarzania."
+              }
+            ]
+          },
+          {
+            "title": "Kosz, przywracanie i usuwanie konta",
+            "paragraphs": [
+              "Usunięte mecze, członkowie kadry, turnieje i drużyny nie są od razu usuwane ostatecznie, lecz przechowywane przez 30 dni w koszu. W tym czasie dane są zablokowane dla normalnego działania – nie pojawiają się na żadnej liście, w żadnej statystyce ani analizie – i mogą zostać przywrócone przez trenerki i trenerów drużyny (usunięta drużyna: przez trenera głównego lub administratora klubu). Kto nie chce czekać, może w każdej chwili ostatecznie usunąć wpis z kosza. Po upływie terminu uruchamiane co godzinę zadanie bazy danych usuwa wpisy ostatecznie, wraz z powiązanymi zdjęciami.",
+              "Dla własnego konta obowiązuje okres karencji: kto usuwa swoje konto, natychmiast je blokuje – logowanie jest możliwe tylko po to, by wycofać usunięcie – i otrzymuje termin usunięcia e-mailem. Po 30 dniach konto jest ostatecznie usuwane; drużyny, w których dana osoba jest jedynym członkiem sztabu, są usuwane razem z nim, drużyny z innymi członkami pozostają i są przekazywane. Kto chce, by jego konto zostało usunięte natychmiast i bez okresu karencji, pisze do nas z adresu konta; wtedy usuwamy wcześniej.",
+              "Kosz chroni przed pomyłką, nie przed prawem do usunięcia: jeśli osoba, której dane dotyczą, zażąda usunięcia swoich danych, wykonujemy to niezależnie od terminu."
+            ],
+            "items": [
+              {
+                "label": "Przetwarzane rodzaje danych:",
+                "value": "Dane usuniętego wpisu w zamrożonej formie; czas usunięcia i identyfikator usuwającego konta."
+              },
+              {
+                "label": "Osoby, których dane dotyczą:",
+                "value": "Użytkownicy z własnym kontem; zawodniczki i zawodnicy wprowadzeni przez użytkowników."
+              },
+              {
+                "label": "Podstawy prawne:",
+                "value": "Wykonanie umowy (art. 6 ust. 1 lit. b) RODO); prawnie uzasadnione interesy w możliwości odzyskania przypadkowo usuniętych danych (art. 6 ust. 1 lit. f) RODO); w okresie karencji ograniczenie przetwarzania (art. 18 RODO)."
+              },
+              {
+                "label": "Okres przechowywania:",
+                "value": "30 dni od usunięcia, następnie ostateczne usunięcie przez uruchamiane co godzinę zadanie bazy danych."
+              }
+            ]
+          },
+          {
+            "title": "Eksport danych: dostęp i przenoszenie danych",
+            "paragraphs": [
+              "Każde konto może w Ustawienia → Konto → „Pobierz moje dane” zażądać pełnej kopii własnych danych. Archiwum (ZIP) zawiera czytelne dla człowieka zestawienie z informacjami zgodnie z art. 15 RODO (cele, odbiorcy, okres przechowywania, źródło, prawa), wszystkie dane w formacie JSON – ustrukturyzowanym, powszechnie używanym i nadającym się do odczytu maszynowego w rozumieniu art. 20 RODO – oraz zapisane zdjęcia portretowe. Jeśli dana osoba jest jednocześnie członkiem kadry jednej lub kilku drużyn, archiwum zawiera także jej tamtejsze dane: mecze ze zdarzeniami, nieobecności, kary, odpowiedzi w ankietach, potwierdzenia obecności, koszulki, oznaczone sceny wideo, otrzymane wysyłki i ścieżki.",
+              "Trener główny może w Ustawienia → Sztab → „Pobierz drużynę” wyeksportować wszystkie dane drużyny w tym samym formacie. Jest to zwrot danych klubowi jako administratorowi (art. 28 ust. 3 lit. g) RODO). Pliki wideo nie są w nim zawarte, ale wszystkie informacje o nich tak; sekrety dostępu, takie jak linki do udostępnień lub kalendarza, nigdy nie są eksportowane.",
+              "Eksport odczytuje wszystkie dane konta lub drużyny i dlatego jest ograniczony do pięciu operacji na godzinę i konto. Archiwum opuszcza naszą sferę wpływu z chwilą pobrania; zawiera dane osobowe i należy je odpowiednio przechowywać. Nie przechowujemy żadnego eksportu."
+            ],
+            "items": [
+              {
+                "label": "Przetwarzane rodzaje danych:",
+                "value": "Wszystkie dane zapisane dla konta lub drużyny; czas żądania (limit częstotliwości)."
+              },
+              {
+                "label": "Osoby, których dane dotyczą:",
+                "value": "Użytkownicy z własnym kontem; przy eksporcie drużyny wszyscy członkowie kadry i sztab drużyny."
+              },
+              {
+                "label": "Podstawy prawne:",
+                "value": "Obowiązek prawny (art. 6 ust. 1 lit. c) RODO w związku z art. 15 i art. 20 RODO); przy eksporcie drużyny wykonanie umowy (art. 6 ust. 1 lit. b) RODO) w związku z art. 28 ust. 3 lit. g) RODO."
+              },
+              {
+                "label": "Okres przechowywania:",
+                "value": "Archiwum jest tylko generowane i dostarczane, nie przechowywane; limit częstotliwości wygasa po godzinie."
+              }
+            ]
+          },
+          {
             "title": "Demonstracja na żywo bez logowania",
             "paragraphs": [
               "Pod osobnym adresem udostępniamy wersję demonstracyjną, w której można wypróbować rejestrowanie meczu bez rejestracji. Demonstracja działa na fikcyjnych danych przykładowych. Prosimy nie wprowadzać tam żadnych prawdziwych danych osobowych – wpisy w wersji demonstracyjnej nie są traktowane jako dane klubu i mogą zostać w każdej chwili zresetowane."
@@ -1045,7 +1250,7 @@
           },
           {
             "title": "Obowiązki klubu",
-            "description": "Przed pierwszym wprowadzeniem danych klub musi poinformować przedstawicieli ustawowych zgodnie z art. 13 RODO i uzyskać niezbędną zgodę – w szczególności w odniesieniu do nieobecności związanych ze zdrowiem oraz do wszelkich publikacji (ticker na żywo, udostępnione raporty). Na życzenie udostępniamy wzór informacji oraz umowę powierzenia przetwarzania."
+            "description": "Przed pierwszym wprowadzeniem danych klub musi poinformować przedstawicieli ustawowych zgodnie z art. 13 RODO i uzyskać niezbędną zgodę – w szczególności w odniesieniu do nieobecności związanych ze zdrowiem oraz do wszelkich publikacji (ticker na żywo, udostępnione raporty). Na życzenie udostępniamy wzór informacji oraz umowę powierzenia przetwarzania. To samo dotyczy nagrań wideo i zdjęć portretowych."
           },
           {
             "title": "Minimalizacja danych",
@@ -1071,7 +1276,7 @@
           },
           {
             "title": "Prawo dostępu:",
-            "description": "Mają Państwo prawo żądać potwierdzenia, czy przetwarzane są dotyczące Państwa dane, oraz uzyskać dostęp do tych danych, a także dalsze informacje i kopię danych zgodnie z wymogami ustawowymi."
+            "description": "Ma Pani/Pan prawo żądać potwierdzenia, czy przetwarzane są dane Pani/Pana dotyczące, oraz uzyskać informacje o tych danych, dalsze informacje i kopię danych zgodnie z przepisami prawa. Pełną kopię danych swojego konta – w tym danych jako członka kadry – może Pani/Pan w każdej chwili uzyskać samodzielnie w aplikacji w Ustawienia → Konto → „Pobierz moje dane” (zob. „Eksport danych”)."
           },
           {
             "title": "Prawo do sprostowania:",
@@ -1079,11 +1284,11 @@
           },
           {
             "title": "Prawo do usunięcia danych i ograniczenia przetwarzania:",
-            "description": "Zgodnie z wymogami ustawowymi mają Państwo prawo żądać niezwłocznego usunięcia dotyczących Państwa danych albo – alternatywnie i zgodnie z wymogami ustawowymi – żądać ograniczenia przetwarzania tych danych. Konto użytkownika mogą Państwo w każdej chwili usunąć samodzielnie (Ustawienia → Konto)."
+            "description": "Zgodnie z przepisami prawa ma Pani/Pan prawo żądać niezwłocznego usunięcia danych Pani/Pana dotyczących lub alternatywnie ograniczenia przetwarzania danych zgodnie z przepisami prawa. Konto użytkownika może Pani/Pan w każdej chwili usunąć samodzielnie (Ustawienia → Konto); zostaje ono natychmiast zablokowane i po 30 dniach ostatecznie usunięte. Jeśli życzy sobie Pani/Pan natychmiastowego usunięcia, wystarczy wiadomość na nasz adres kontaktowy."
           },
           {
             "title": "Prawo do przenoszenia danych:",
-            "description": "Mają Państwo prawo otrzymać dotyczące Państwa dane, które nam Państwo dostarczyli, w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego zgodnie z wymogami ustawowymi albo żądać ich przesłania innemu administratorowi. W aplikacji mogą Państwo eksportować analizy do PDF, a tabele statystyczne do CSV; poza tym udostępnimy Państwu dane w formacie nadającym się do odczytu maszynowego w ciągu 30 dni od zgłoszenia."
+            "description": "Ma Pani/Pan prawo otrzymać dotyczące Pani/Pana dane, które nam Pani/Pan dostarczył(a), zgodnie z przepisami prawa w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego lub żądać ich przekazania innemu administratorowi. W aplikacji może Pani/Pan w każdej chwili pobrać swoje dane jako archiwum z plikami JSON (Ustawienia → Konto); analizy można dodatkowo eksportować jako PDF, a tabele statystyczne jako CSV. Na żądanie udostępniamy również Pani/Pana dane w ciągu 30 dni."
           },
           {
             "title": "Skarga do organu nadzorczego:",
@@ -1091,7 +1296,7 @@
           }
         ],
         "howToLabel": "Jak skorzystać ze swoich praw:",
-        "howToText": "Wystarczy nieformalna wiadomość na nasz adres kontaktowy; nie jest wymagana żadna szczególna forma. Odpowiadamy niezwłocznie, najpóźniej w ciągu miesiąca. Jeżeli Państwa wniosek dotyczy danych kadrowych, terminów, nieobecności lub ankiet, administratorem jest klub lub trener; w takim przypadku przekazujemy Państwa wniosek do niego i wspieramy jego realizację.",
+        "howToText": "Wystarczy nieformalna wiadomość na nasz adres kontaktowy; nie jest wymagana żadna szczególna forma. Odpowiadamy niezwłocznie, najpóźniej w ciągu miesiąca. Jeżeli Państwa wniosek dotyczy danych kadrowych, terminów, nieobecności lub ankiet, administratorem jest klub lub trener; w takim przypadku przekazujemy Państwa wniosek do niego i wspieramy jego realizację. Zawodniczki i zawodnicy z własnym kontem w każdej chwili samodzielnie uzyskują kopię swoich danych kadrowych za pomocą funkcji eksportu w aplikacji.",
         "obligationLabel": "Obowiązek podania danych:",
         "obligationText": "Podanie danych nie jest wymagane ani ustawowo, ani umownie. Do założenia konta potrzebujemy jednak Państwa imienia i nazwiska, adresu e-mail oraz hasła; bez tych informacji nie można utworzyć konta ani korzystać z aplikacji. Wszystkie pozostałe informacje są dobrowolne."
       },
@@ -1129,7 +1334,7 @@
         "title": "Okres przechowywania i usuwanie",
         "description": "Przetwarzane przez nas dane osobowe usuwamy zgodnie z przepisami ustawowymi, gdy tylko zostanie wycofana zgoda stanowiąca ich podstawę albo gdy przestaną istnieć inne podstawy prawne przetwarzania. Dotyczy to przypadków, w których pierwotny cel przetwarzania odpada albo dane przestają być potrzebne. Pierwszeństwo mają okresy wskazane przy poszczególnych operacjach przetwarzania.",
         "technicalLabel": "Automatycznie egzekwowane okresy techniczne:",
-        "technicalText": "Poniższe okresy są egzekwowane automatycznie przez uruchamiane codziennie zadanie bazy danych – bez konieczności pamiętania o nich przez kogokolwiek:",
+        "technicalText": "Poniższe okresy są egzekwowane automatycznie przez zadania bazy danych – bez konieczności pamiętania o nich przez kogokolwiek:",
         "technicalItems": [
           {
             "title": "24 godziny",
@@ -1150,10 +1355,18 @@
           {
             "title": "400 dni",
             "description": "Rejestr użycia analiz AI (bez treści analizy)."
+          },
+          {
+            "title": "30 dni",
+            "description": "Wpisy w koszu (usunięte mecze, członkowie kadry, turnieje, drużyny) oraz konta oznaczone do usunięcia po upływie okresu karencji – sprawdzane co godzinę."
+          },
+          {
+            "title": "1 godzina",
+            "description": "Limit częstotliwości eksportów danych (pięć na godzinę i konto)."
           }
         ],
         "contentLabel": "Dane treści aplikacji:",
-        "contentText": "Dane kadrowe, meczowe, terminy, nieobecności i ankiety pozostają zapisane do momentu usunięcia ich przez administratora, najdłużej do usunięcia drużyny lub powiązanego konta. Jeżeli usuną Państwo swoje konto, wraz z nim usuwane są drużyny, w których są Państwo jedynym członkiem; drużyny mające kolejnych członków istnieją nadal i zostają przekazane. Usunięcie następuje natychmiast i bez okresu karencji.",
+        "contentText": "Dane kadry, meczów, terminarza, nieobecności, kasy, koszulek i ankiet oraz nagrania wideo pozostają zapisane, dopóki administrator ich nie usunie, najpóźniej do ostatecznego usunięcia drużyny lub powiązanego konta. Usunięte mecze, członkowie kadry, turnieje i drużyny pozostają 30 dni w koszu, a następnie są ostatecznie usuwane. Jeśli usunie Pani/Pan swoje konto, zostaje ono natychmiast zablokowane i po okresie karencji wynoszącym 30 dni ostatecznie usunięte; drużyny, w których jest Pani/Pan jedynym członkiem sztabu, są usuwane razem z nim, drużyny z innymi członkami pozostają i są przekazywane. Natychmiastowe usunięcie bez okresu karencji jest możliwe na żądanie.",
         "retentionLabel": "Ustawowe przechowywanie i archiwizacja:",
         "retentionText": "W zakresie, w jakim podlegamy obowiązkom przechowywania wynikającym z prawa handlowego lub podatkowego, obowiązują następujące ogólne okresy prawa niemieckiego. Dotyczą one wyłącznie dokumentów handlowych, a nie danych treści aplikacji:",
         "items": [
@@ -1602,7 +1815,7 @@
       "title": "Polityka prywatności",
       "description": "Jak przetwarzamy dane osobowe w serwisie statix-app.de i w aplikacji Statix — w podziale na cel, podstawę prawną, dostawcę usług i okres przechowywania.",
       "pseudonymBadge": "Nazwiska zawodników nigdy nie opuszczają aplikacji",
-      "lastUpdated": "Wersja: 25 sierpnia 2026",
+      "lastUpdated": "Wersja: 24 września 2026",
       "navLabel": "Więcej informacji prawnych",
       "imprintLink": "Nota prawna",
       "termsLink": "Regulamin"

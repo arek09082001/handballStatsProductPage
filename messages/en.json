@@ -34,7 +34,7 @@
       "title": "General Terms and Conditions (GTC)",
       "description": "Terms governing the use of the Statix handball statistics app and the associated websites and services.",
       "transparencyBadge": "Fair and transparent",
-      "lastUpdated": "Last updated: 25 August 2026"
+      "lastUpdated": "Last updated: 24 September 2026"
     },
     "documentTitle": "General Terms and Conditions",
     "documentTitleShort": "GTC",
@@ -57,7 +57,7 @@
       "title": "Preamble",
       "paragraph1": "These General Terms and Conditions (the “GTC”) govern the contractual relationship between you as a user (the “User” or “you”) and the provider regarding the use of the handball statistics app “Statix” as well as the associated websites, the progressive web app and the related services (together, “Statix” or the “Service”).",
       "paragraph2": "All terms and designations used in these GTC are to be understood as gender-neutral.",
-      "updatedAt": "Version: 25 August 2026"
+      "updatedAt": "Version: 24 September 2026"
     },
     "sections": {
       "scope": {
@@ -85,7 +85,11 @@
           "Creation of tournaments with several teams, automatic standings and fixtures.",
           "Automated, AI-assisted analysis of matches, teams and individual players.",
           "Optional public live coverage of a match (“live ticker”) via an unguessable link, optionally with sponsor logos.",
-          "Sharing analyses via link, exporting the match report as a PDF and exporting individual statistics tables as CSV."
+          "Sharing analyses via link, exporting the match report as a PDF and exporting individual statistics tables as CSV.",
+          "Video feature: uploading match and training recordings, marking scenes, sending compilations to individual players, and automatic analysis of running paths and ball trajectories (§ 10).",
+          "Team fund with fine catalogue, jersey management and birthday reminders.",
+          "Trash: deleted matches, squad members, tournaments and teams can be restored for 30 days (§ 12).",
+          "Data export: a copy of all of your own data or – for the head coach – of all data of the team as an archive in a machine-readable format (§ 12)."
         ],
         "paragraphsAfter": [
           "Statix is under continuous development and in its market launch phase. The specific scope of functions follows from the current version of the Service and from the service description on the provider's websites. The provider is entitled to further develop, change or adapt individual functions to the extent this is reasonable for the User and the core of the contractually owed service is preserved.",
@@ -112,11 +116,11 @@
         ],
         "items": [
           "Coaches create teams, record squads and matches and administer the team's data. They decide which data is entered into Statix and which content is published.",
-          "Players can create their own account via an invitation link and claim their squad entry. They then see appointments, their own statistics and responses, and can control their own entries themselves – such as absences and whether their name is shown on public pages.",
+          "Players can create their own account via an invitation link and claim their squad entry. They then see appointments, their own statistics and responses, and can control their own entries themselves – such as absences and whether their name is shown on public pages. Via the export function they can obtain a copy of their own data at any time.",
           "Club administrators manage several teams of a club jointly and can view data across those teams, provided the teams are assigned to the club."
         ],
         "paragraphsAfter": [
-          "If a team is assigned to a club, the team's data belongs organisationally to the club and not to an individual coach account. If a coach closes their own account, a team with further members continues to exist and is handed over to a remaining member (§ 12 para. 4).",
+          "If a team is assigned to a club, the team's data belongs organisationally to the club and not to an individual coach account. If a coach closes their own account, a team with further members continues to exist and is handed over to a remaining member (§ 12 para. 5).",
           "The assignment of a role does not entitle the provider to intervene in the internal relationship between club, coaches and players. Disputes about who may view or change which data are to be resolved between the parties involved."
         ]
       },
@@ -160,7 +164,7 @@
         "paragraphs": [
           "The provider processes personal data within the framework of applicable data protection law. Details of the processing of personal data can be found in the privacy policy.",
           "Insofar as the provider processes personal data of third parties on the User's instructions (in particular player, appointment, absence and survey data) which the User enters on their own responsibility, the provider acts as a processor within the meaning of Article 28 GDPR; the controller is the User or their club. For the user account data itself and for the technical operation of the Service, the provider is its own controller.",
-          "Upon request to the address stated in the legal notice, the provider provides a data processing agreement pursuant to Article 28(3) GDPR together with annexes on technical and organisational measures and on the sub-processors engaged. Clubs recording data of youth teams should conclude this agreement before entering any data.",
+          "Upon request to the address stated in the legal notice, the provider provides a data processing agreement pursuant to Article 28(3) GDPR together with annexes on technical and organisational measures and on the sub-processors engaged. Clubs recording data of youth teams should conclude this agreement before entering any data. The provider fulfils the return of the data at the end of the contract (Art. 28(3)(g) GDPR) via the export function under § 12 para. 2.",
           "To provide the Service the provider engages carefully selected service providers as processors. These include in particular:"
         ],
         "items": [
@@ -168,7 +172,10 @@
           "Vercel – hosting and operation of the websites and the application as well as anonymised reach measurement",
           "Brevo – sending emails (registration confirmations, reminders, contact requests, newsletter)",
           "Anthropic and OpenAI – AI-assisted analyses based on pseudonymised data",
-          "The push services of the browser vendors (including Google, Mozilla, Apple) – delivery of push notifications that have been enabled"
+          "The push services of the browser vendors (including Google, Mozilla, Apple) – delivery of push notifications that have been enabled",
+          "Cloudflare – object storage (Cloudflare R2) for video recordings, exclusively in data centres in the European Union (only where the video feature is used)",
+          "Fly.io – preparation of uploaded video recordings in Frankfurt am Main (only where the video feature is used)",
+          "RunPod – compute-intensive video processing and analysis on graphics processors in data centres in the European Union (only where the video feature is used)"
         ],
         "paragraphsAfter": [
           "When individual service providers are used, data may be transferred to third countries (in particular the USA). The provider bases such transfers on an adequacy decision of the European Commission (EU-U.S. Data Privacy Framework) where the respective service provider is certified, and otherwise on standard contractual clauses pursuant to Article 46(2)(c) GDPR. Further information is set out in the privacy policy.",
@@ -188,13 +195,16 @@
         "items": []
       },
       "publicSharing": {
-        "title": "§ 10 Public sharing and shared content",
+        "title": "§ 10 Public sharing, shared content and video recordings",
         "paragraphs": [
           "The User may make individual content publicly accessible via an unguessable link – in particular a running live ticker and finished match reports. Without such express sharing, a team's data is accessible only to its members.",
           "Anyone who shares content thereby publishes personal data of third parties and is responsible for doing so. Before sharing, the User must ensure that the players concerned – or their legal guardians in the case of minors – agree to it.",
           "Players with their own account can specify in their settings that their name is not shown on public pages. This decision always takes precedence over a broader team-level setting and cannot be overridden by a coach.",
           "Sharing can be ended at any time; the link is then no longer accessible. The provider has no influence over whether third parties have copied, saved or cached previously public content in search engines.",
-          "Sponsor logos uploaded by the User for the live ticker must be free of third-party rights or a corresponding permission to use them must exist. § 7 para. 5 applies accordingly."
+          "Sponsor logos uploaded by the User for the live ticker must be free of third-party rights or a corresponding permission to use them must exist. § 7 para. 5 applies accordingly.",
+          "If the user uploads video recordings, they warrant that the recording was made lawfully and that they may use it for the purposes set out in § 2. Before uploading, they obtain the necessary consents of the players shown – for minors those of the legal guardians – and respect the rights of other persons recorded (opponents, referees, spectators) as well as any requirements of the hall operator and the federation. The provider stores and processes recordings exclusively on the user’s behalf (§ 8).",
+          "Compilations that the user sends to individual players make only the scenes contained accessible. The user decides which scenes to send and bears the responsibility for it.",
+          "Video recordings are not subject to an automatic deletion period; they remain stored until the user deletes them or the team is finally deleted. The user deletes recordings as soon as the purpose of the analysis has been achieved. The provider reserves the right to introduce a storage quota or a maximum retention period for video recordings; it will announce this at least 30 days in advance in text form."
         ],
         "items": []
       },
@@ -212,11 +222,12 @@
       "dataExport": {
         "title": "§ 12 Data export, deletion and account closure",
         "paragraphs": [
-          "Within the functions provided, the User can share the analyses they have recorded in Statix, export the match report as a PDF and individual statistics tables as CSV, and subscribe to the appointment calendar as an iCalendar feed.",
-          "Beyond the export functions available in the application, the provider will, upon request to the address stated in the legal notice, provide the User with the data stored for their account and their teams in a structured, commonly used and machine-readable format. Requests are processed without undue delay and within 30 days at the latest.",
-          "The User can delete their account themselves at any time (Settings → Account). Anyone who can no longer sign in should send the deletion request to the email address stated in the legal notice. Deletion is final; there is no restoration and no grace period.",
-          "When the account is deleted, teams in which the User is the sole member are deleted, including the associated squad, match, appointment and analysis data. Teams with further members continue to exist and are handed over to the longest-serving remaining member; the same applies to teams assigned to a club.",
-          "The User is themselves responsible for exporting any data they need before deletion or before the end of the contract. The privacy policy describes the details and the storage periods for technical logs."
+          "The user may share the analyses recorded in Statix within the functions provided, export the match report as PDF and individual statistics tables as CSV, and subscribe to the schedule as an iCalendar feed.",
+          "Every user can download in the application (Settings → Account) at any time a complete copy of the data stored for their account – including their data as a squad member – as an archive in a structured, commonly used and machine-readable format (JSON). The head coach can in addition export all data of the team in the same format (Settings → Staff); video files are not included. Anyone who can no longer use the application receives the data on request to the address given in the imprint within 30 days.",
+          "Deleted matches, squad members, tournaments and teams are kept in a trash bin for 30 days and can during this time be restored or deleted permanently ahead of time by the team’s coaches; after that they are deleted automatically and for good. The trash is a convenience feature; there is no entitlement to restoration.",
+          "The user can delete their account themselves at any time (Settings → Account). The account is thereby locked immediately and finally deleted after a grace period of 30 days; within the grace period the user can withdraw the deletion by signing in. Anyone who can no longer sign in or wishes immediate deletion without a grace period directs the request to the email address given in the imprint. After the grace period has expired there is no restoration.",
+          "With the final deletion of the account, teams in which the user is the only member of the coaching staff are deleted, including the associated squad, match, schedule, video and analysis data. Teams with further members remain and are handed over to the longest-serving remaining member; the same applies to teams assigned to a club.",
+          "The user is responsible for exporting any data they need before deletion or before the end of the contract. Details and retention periods are described in the privacy policy."
         ],
         "items": []
       },
@@ -235,7 +246,7 @@
       "term": {
         "title": "§ 14 Contract term and termination",
         "paragraphs": [
-          "The usage contract for free use is concluded for an indefinite period and may be terminated by either party at any time without notice, in particular by deleting the user account.",
+          "The usage contract for free use is concluded for an indefinite period and may be terminated by either party at any time without notice, in particular by deleting the user account. Termination by deleting the account takes effect upon expiry of the grace period under § 12 para. 4; until then the user can withdraw it by signing in.",
           "The term, renewal and termination of any paid subscription are governed by the conditions stated in the respective ordering process. Where a paid continuing obligation is offered to consumers, the provider will provide a termination button pursuant to section 312k German Civil Code.",
           "The right to extraordinary termination for good cause remains unaffected for both parties. For the provider, good cause exists in particular in the event of a material breach of these GTC by the User.",
           "Terminations require text form (e.g. by email); deleting the account within the application is sufficient."
@@ -374,11 +385,11 @@
           },
           {
             "title": "Data processing agreement",
-            "description": "Clubs and teams that record data of their members – in particular minors – can obtain a data processing agreement pursuant to Article 28(3) GDPR, together with annexes on technical and organisational measures and on the sub-processors engaged, by requesting it at our contact address."
+            "description": "Clubs and teams that record data of their members – in particular minors – can obtain a data processing agreement pursuant to Article 28(3) GDPR, together with annexes on technical and organisational measures and on the sub-processors engaged, by requesting it at our contact address. The return of the data at the end of the contract takes place via the team export in the app (see “Data export”)."
           },
           {
             "title": "Data subject rights",
-            "description": "Players should address requests for access, rectification and erasure concerning their squad data to their club or coach. If such requests reach us directly, we forward them to the responsible party and support them in fulfilling the request."
+            "description": "Players should address requests for access, rectification and erasure concerning their squad data to their club or coach. If such requests reach us directly, we forward them to the responsible party and support them in fulfilling the request. Players with their own account can obtain a copy of their data themselves at any time via the export function in the app."
           }
         ]
       },
@@ -397,7 +408,9 @@
           "Health-related information (Article 9 GDPR) – only where an absence is entered as illness or injury, together with an optional note",
           "Usage data (e.g. functions accessed, time of last use)",
           "Meta, communication and procedural data (e.g. IP addresses, device and browser information)",
-          "Log data (e.g. technical error logs)"
+          "Log data (e.g. technical error logs)",
+          "Image and video data (portrait photos of squad members and coaches; where the video feature is used, recordings of matches and training sessions including the audio track, and movement data derived from them such as running paths, distances and ball trajectories)",
+          "Team fund details (fine catalogue, fines imposed, amounts, payment status)"
         ],
         "affectedPeopleTitle": "Categories of data subjects",
         "affectedPeople": [
@@ -405,7 +418,8 @@
           "Users with their own account (coaches, club officials, players)",
           "Players recorded by users without their own account, including minors",
           "Visitors to our websites and to public live tickers",
-          "Newsletter recipients"
+          "Newsletter recipients",
+          "Persons visible in video recordings (opponents, referees, spectators)"
         ],
         "purposesTitle": "Purposes of processing",
         "purposes": [
@@ -420,7 +434,11 @@
           "Information technology infrastructure and error analysis",
           "Anonymised reach measurement",
           "Public relations",
-          "Feedback and improvement of the offering"
+          "Feedback and improvement of the offering",
+          "Storage, processing and analysis of video recordings and sending individual scenes to players (only where the video feature is enabled)",
+          "Keeping the team fund, managing jerseys and birthday reminders",
+          "Recoverability of accidentally deleted data (trash) and provision of data copies (access and data portability)",
+          "Contract-related notices (e.g. changes to this policy or to the terms of service)"
         ]
       },
       "legalBasis": {
@@ -430,7 +448,7 @@
         "items": [
           {
             "title": "Consent (Article 6(1)(1)(a) GDPR)",
-            "description": "The data subject has given consent to the processing of their personal data for one or more specific purposes. We rely on this in particular for the newsletter, for voluntary information from the onboarding survey and for push notifications."
+            "description": "The data subject has given consent to the processing of their personal data for one or more specific purposes. We rely on this in particular for the newsletter, for voluntary information from the onboarding survey and for push notifications. A voluntarily uploaded portrait photo of your own likewise rests on consent."
           },
           {
             "title": "Explicit consent for special categories (Article 9(2)(a) GDPR)",
@@ -472,7 +490,9 @@
           "Sign-in, registration and sharing endpoints are protected against automated attacks by counting limits.",
           "Public sharing (live ticker, shared reports) takes place exclusively via randomly generated, unguessable addresses and can be revoked at any time.",
           "Before any transfer to an AI provider, personal names are replaced by identifiers (pseudonymisation).",
-          "Technical data that is no longer needed is deleted by an automatic database job that runs daily (see “Storage period and deletion”)."
+          "Technical data that is no longer needed is deleted by an automatic database job that runs daily (see “Storage period and deletion”).",
+          "Portrait photos and video recordings are kept in non-public storage areas and are delivered only after an authorisation check or via time-limited, signed addresses.",
+          "Deleted data sits in a locked trash bin for 30 days before it is removed for good; an account is locked from the moment deletion is requested."
         ]
       },
       "webHosting": {
@@ -680,6 +700,58 @@
             ]
           },
           {
+            "title": "Portrait photos",
+            "paragraphs": [
+              "Squad members with their own account as well as coaches may voluntarily upload a portrait photo; a coach may also add a photo for a squad member without an account. The image is cropped and downscaled on the device before upload (at most 512 × 512 pixels, roughly 1 MB) and serves solely for recognition within the team – for instance on the court screen during live recording.",
+              "The photos are kept in a non-public storage area of our database provider (Frankfurt am Main) and are delivered only to signed-in members of the same team or club; there is no public address. No photos appear on public pages (live ticker, shared reports), and no photos are transmitted to AI providers.",
+              "A photo can be replaced or removed at any time by the person depicted or by the coach. For minors, the club obtains the consent of the legal guardians before uploading; photos should be dispensed with where they are not needed for training."
+            ],
+            "items": [
+              {
+                "label": "Data types processed:",
+                "value": "Image data (portrait photo), time of upload."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users with their own account; players entered by users, including minors."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "For your own photo: consent (Art. 6(1)(a) GDPR). For photos of squad members the club or the coach is the controller, typically on the basis of consent; we process as a processor (Art. 28 GDPR)."
+              },
+              {
+                "label": "Retention period:",
+                "value": "Until the photo is removed, at the latest until the final deletion of the squad row, the team or the account (see “Trash, restoration and account deletion”)."
+              }
+            ]
+          },
+          {
+            "title": "Jerseys, team fund and birthdays",
+            "paragraphs": [
+              "Jerseys: The team can manage its jersey sets and record which jersey was issued to which squad member and when it was returned. Stored are jersey number, size, issue and return dates and an optional note.",
+              "Team fund: The team can keep a fine catalogue (e.g. “late for training”) and assign fines to individual squad members – with reason, amount, date and whether it has been paid. The fund is visible to the coaches and to the squad member the team has entrusted with this task; each player with their own account sees only their own entries. Payments are not processed through Statix – the app is a ledger, not a payment service.",
+              "Birthdays: Where a date of birth is stored, the app shows upcoming birthdays to the members of the team in the schedule calendar. This display serves team life only; a date of birth is voluntary, and the year of birth remains sufficient for the age group."
+            ],
+            "items": [
+              {
+                "label": "Data types processed:",
+                "value": "Content data (jersey issues; fines with reason, amount and payment status), master data of squad members (date of birth, where stored)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Squad members; users with their own account."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "The club or team is the controller; we process as a processor (Art. 28 GDPR) on the basis of our contract with the user (Art. 6(1)(b) GDPR)."
+              },
+              {
+                "label": "Retention period:",
+                "value": "Until the entry is deleted by the team, at the latest until the final deletion of the squad row or the team."
+              }
+            ]
+          },
+          {
             "title": "Club and cross-team career view",
             "paragraphs": [
               "Several teams can be grouped under one club. Club administrators then see the squads and analyses of all assigned teams. Within a club, squad entries of the same person – for example from the under-18 team and from the women's team – can be linked to one person so that a cross-team career becomes visible.",
@@ -803,7 +875,7 @@
           {
             "title": "Database and file storage (Supabase)",
             "paragraphs": [
-              "All app data is stored in a PostgreSQL database of the service provider Supabase; club and sponsor logos are stored in the same provider's object storage. Hosting takes place in the EU (Frankfurt am Main region, Germany). Access to the database takes place exclusively server-side; there is no connection to the database from the browser. All tables are additionally locked by “row level security” with no permitting rule.",
+              "All app data is stored in a PostgreSQL database of the service provider Supabase; club and sponsor logos are stored in the same provider's object storage. Hosting takes place in the EU (Frankfurt am Main region, Germany). Access to the database takes place exclusively server-side; there is no connection to the database from the browser. All tables are additionally locked by “row level security” with no permitting rule. Portrait photos and still images used for video calibration are kept in non-public areas of the same object storage and are only delivered after an authorisation check.",
               "The provider's parent company is based in the USA, so access from a third country in the course of maintenance and support cannot be entirely ruled out. The guarantees named below are in place for this."
             ],
             "items": [
@@ -872,6 +944,31 @@
               {
                 "label": "Legal bases:",
                 "value": "Performance of a contract (Article 6(1)(1)(b) GDPR); legitimate interests (Article 6(1)(1)(f) GDPR); for the newsletter: consent (Article 6(1)(1)(a) GDPR)."
+              }
+            ]
+          },
+          {
+            "title": "Contract-related notices and one-off follow-up",
+            "paragraphs": [
+              "We inform all accounts by email about changes to this policy, the terms of service or the prices, and about important operational notices. Such notices are part of the contractual relationship and are not advertising; they therefore carry no unsubscribe link. Per account we log which notice went to which address and when, and whether delivery succeeded, so that we can prove we informed you.",
+              "Twenty minutes after a newly registered coach has recorded their first complete match, we send a single email asking whether everything worked and pointing to the analysis of that match. This message is sent exactly once per account; no marketing consent is required for it, and it is not a newsletter."
+            ],
+            "items": [
+              {
+                "label": "Data types processed:",
+                "value": "Contact data (email address), usage data (time of the first recorded match), delivery log (subject, time, delivery status)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users with their own account."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Performance of contract (Art. 6(1)(b) GDPR); legitimate interests in proving contractual notices and in improving the service (Art. 6(1)(f) GDPR)."
+              },
+              {
+                "label": "Retention period:",
+                "value": "Delivery logs until the final deletion of the account."
               }
             ]
           },
@@ -1013,6 +1110,114 @@
             ]
           },
           {
+            "title": "Video recordings, video analysis and clip shares",
+            "paragraphs": [
+              "Teams can upload recordings of their matches and training sessions to mark scenes, analyse individual players and send them compilations. The video feature is voluntary; without an uploaded recording, none of the processing described here takes place.",
+              "Storage: The recordings and the segment files generated from them are kept in a non-public object storage of the provider Cloudflare (Cloudflare R2). The storage area is created exclusively for data centres in the European Union (designation “jurisdiction: EU”); every retrieval goes through a time-limited, signed address that the app generates only after checking authorisation. Names, markers and the assignment to team and match remain in our database; the video storage does not know them.",
+              "Preparation: After upload, a recording is split into short segments and converted for playback. This is done by a compute instance of the provider Fly.io in Frankfurt am Main, which holds the file in memory only for the duration of processing and has no access to our database. Compute-intensive steps – stitching two camera views into one panorama, shrinking very large recordings, and the automatic detection of players’ running paths and of the ball – run on graphics processors of the provider RunPod, exclusively in data centres in the European Union and likewise without permanent storage; the compute instance is terminated after the job. The result of the running-path analysis are movement tracks, distances and speed profiles that the coach assigns to a player. No automatic facial recognition takes place.",
+              "Clip shares: A coach can send a player with their own account a compilation of selected scenes. The recipient receives only the scenes contained, not the whole recording; stored are title, note and the times of sending and of first opening.",
+              "Responsibility: A recording in a sports hall regularly shows, besides the own team, opponents, referees and spectators. Whether and on what basis filming is permitted is decided solely by the club as controller; it obtains the necessary consents – for minors those of the legal guardians – and informs the persons concerned. We process recordings exclusively on instruction. There is currently no automatic deletion period for video recordings: a recording remains stored until the team deletes it or the team itself is finally deleted. We recommend deleting recordings once the analysis is complete."
+            ],
+            "items": [
+              {
+                "label": "Data types processed:",
+                "value": "Image and video data (recordings including audio track, still images for calibration), movement data (running paths, distances, speeds, ball trajectories), content data (marked scenes, notes), usage data (times of upload, sending and opening)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Players entered by users, including minors; other persons visible in the recording (opponents, referees, spectators); users with their own account."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "The club is the controller; for the recording typically consent (Art. 6(1)(a) GDPR) or the club’s legitimate interests (Art. 6(1)(f) GDPR). We process as a processor (Art. 28 GDPR) on the basis of our contract with the user (Art. 6(1)(b) GDPR)."
+              },
+              {
+                "label": "Provider, video storage:",
+                "value": "Cloudflare, Inc., San Francisco, USA (for the EEA: Cloudflare Germany GmbH, Munich); storage and processing exclusively in the EU."
+              },
+              {
+                "label": "Data processing agreement, Cloudflare:",
+                "url": "https://www.cloudflare.com/cloudflare-customer-dpa/"
+              },
+              {
+                "label": "Provider, video preparation:",
+                "value": "Fly.io, Inc., Chicago, USA; processing in Frankfurt am Main, Germany."
+              },
+              {
+                "label": "Data processing agreement, Fly.io:",
+                "url": "https://fly.io/legal/dpa/"
+              },
+              {
+                "label": "Provider, video analysis (graphics processors):",
+                "value": "RunPod, Inc., Mount Laurel, USA; processing exclusively in data centres in the European Union."
+              },
+              {
+                "label": "Privacy policy, RunPod:",
+                "url": "https://www.runpod.io/legal/privacy-policy"
+              },
+              {
+                "label": "Basis for third-country transfers:",
+                "value": "Processing in the EU; for any access in the course of operation and support: EU-U.S. Data Privacy Framework where the provider is certified, otherwise standard contractual clauses under Art. 46(2)(c) GDPR."
+              },
+              {
+                "label": "Retention period:",
+                "value": "Recordings until deleted by the team or together with the team; intermediate results of preparation and analysis only for the duration of processing."
+              }
+            ]
+          },
+          {
+            "title": "Trash, restoration and account deletion",
+            "paragraphs": [
+              "Deleted matches, squad members, tournaments and teams are not removed for good immediately but kept in a trash bin for 30 days. During this time the data is locked for normal operation – it appears in no list, no statistic and no analysis – and can be restored by the team’s coaches (a deleted team: by the head coach or a club administrator). Anyone who does not want to wait can permanently delete an entry in the trash at any time. Once the period has expired, an hourly database job deletes the entries for good, including associated photos.",
+              "A grace period applies to your own account: deleting your account locks it immediately – signing in is then only possible to withdraw the deletion – and you receive the deletion date by email. After 30 days the account is finally deleted; teams in which the person is the only member of the coaching staff are deleted with it, teams with further members remain and are handed over. If you want your account deleted immediately and without a grace period, write to us from the account’s address; we then delete early.",
+              "The trash protects against mistakes, not against the right to erasure: if a data subject requests the deletion of their data, we carry it out regardless of the period."
+            ],
+            "items": [
+              {
+                "label": "Data types processed:",
+                "value": "The data of the deleted entry in frozen form; time of deletion and identifier of the deleting account."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users with their own account; players entered by users."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Performance of contract (Art. 6(1)(b) GDPR); legitimate interests in the recoverability of accidentally deleted data (Art. 6(1)(f) GDPR); restriction of processing during the period (Art. 18 GDPR)."
+              },
+              {
+                "label": "Retention period:",
+                "value": "30 days from deletion, then final deletion by an hourly database job."
+              }
+            ]
+          },
+          {
+            "title": "Data export: access and data portability",
+            "paragraphs": [
+              "Every account can request a complete copy of its own data under Settings → Account → “Download my data”. The archive (ZIP) contains a human-readable overview with the information under Art. 15 GDPR (purposes, recipients, retention period, source, rights), all data in JSON format – structured, commonly used and machine-readable within the meaning of Art. 20 GDPR – and the stored portrait photos. If the person is also a squad member of one or more teams, the archive also contains their data there: matches with their events, absences, fines, survey answers, RSVPs, jerseys, marked video scenes, received clip shares and running paths.",
+              "The head coach can export all data of the team in the same format under Settings → Staff → “Download team”. This is the return of the data to the club as controller (Art. 28(3)(g) GDPR). Video files are not included, but all details about them are; access secrets such as share or calendar links are never exported.",
+              "An export reads all data of an account or a team and is therefore limited to five runs per hour and account. The archive leaves our sphere of influence once it has been downloaded; it contains personal data and must be kept accordingly. We do not store an export."
+            ],
+            "items": [
+              {
+                "label": "Data types processed:",
+                "value": "All data stored for the account or the team; time of the request (rate limit)."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users with their own account; for the team export all squad members and the coaching staff of the team."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Legal obligation (Art. 6(1)(c) GDPR in conjunction with Art. 15 and Art. 20 GDPR); for the team export performance of contract (Art. 6(1)(b) GDPR) in conjunction with Art. 28(3)(g) GDPR."
+              },
+              {
+                "label": "Retention period:",
+                "value": "The archive is only generated and delivered, not stored; the rate limit expires after one hour."
+              }
+            ]
+          },
+          {
             "title": "Live demo without sign-in",
             "paragraphs": [
               "At a separate address we provide a demo version in which recording a match can be tried out without registration. The demo works with fictitious sample data. Please do not enter any real personal data there – entries in the demo are not treated as club data and may be reset at any time."
@@ -1040,7 +1245,7 @@
           },
           {
             "title": "Obligations of the club",
-            "description": "Before the first entry, the club must inform the legal guardians pursuant to Article 13 GDPR and obtain the necessary consent – in particular for health-related absences and for any public sharing (live ticker, shared reports). We provide a model information sheet and a data processing agreement on request."
+            "description": "Before the first entry, the club must inform the legal guardians pursuant to Article 13 GDPR and obtain the necessary consent – in particular for health-related absences and for any public sharing (live ticker, shared reports). We provide a model information sheet and a data processing agreement on request. The same applies to video recordings and portrait photos."
           },
           {
             "title": "Data minimisation",
@@ -1066,7 +1271,7 @@
           },
           {
             "title": "Right of access:",
-            "description": "You have the right to request confirmation as to whether data concerning you is being processed and to obtain access to that data as well as further information and a copy of the data in accordance with statutory requirements."
+            "description": "You have the right to request confirmation as to whether data concerning you is being processed and to information about this data as well as to further information and a copy of the data in accordance with the legal requirements. You can obtain a complete copy of your account data – including your data as a squad member – yourself at any time in the app under Settings → Account → “Download my data” (see “Data export”)."
           },
           {
             "title": "Right to rectification:",
@@ -1074,11 +1279,11 @@
           },
           {
             "title": "Right to erasure and restriction of processing:",
-            "description": "In accordance with statutory requirements, you have the right to demand that data concerning you be erased without undue delay, or alternatively, in accordance with statutory requirements, to demand restriction of the processing of the data. You can delete your user account yourself at any time (Settings → Account)."
+            "description": "In accordance with the legal requirements, you have the right to demand that data concerning you be deleted without delay, or alternatively to demand a restriction of the processing of the data in accordance with the legal requirements. You can delete your user account yourself at any time (Settings → Account); it is locked immediately and finally deleted after 30 days. If you want immediate deletion, a message to our contact address suffices."
           },
           {
             "title": "Right to data portability:",
-            "description": "You have the right to receive data concerning you which you have provided to us in a structured, commonly used and machine-readable format in accordance with statutory requirements, or to request its transmission to another controller. In the app you can export analyses as PDF and statistics tables as CSV; beyond that we will provide you with your data in a machine-readable format within 30 days of a request."
+            "description": "You have the right to receive data concerning you that you have provided to us in a structured, commonly used and machine-readable format in accordance with the legal requirements, or to request its transmission to another controller. In the app you can download your data at any time as an archive of JSON files (Settings → Account); analyses can additionally be exported as PDF and statistics tables as CSV. On request we also provide your data within 30 days."
           },
           {
             "title": "Complaint to a supervisory authority:",
@@ -1086,7 +1291,7 @@
           }
         ],
         "howToLabel": "How to exercise your rights:",
-        "howToText": "An informal message to our contact address is sufficient; no particular form is required. We respond without undue delay and within one month at the latest. If your request concerns squad, appointment, absence or survey data, the club or the coach is the controller; in that case we forward your request there and support its fulfilment.",
+        "howToText": "An informal message to our contact address is sufficient; no particular form is required. We respond without undue delay and within one month at the latest. If your request concerns squad, appointment, absence or survey data, the club or the coach is the controller; in that case we forward your request there and support its fulfilment. Players with their own account can obtain a copy of their squad data themselves at any time via the export function in the app.",
         "obligationLabel": "Obligation to provide data:",
         "obligationText": "Providing your data is neither required by law nor by contract. However, to set up an account we need your name, email address and password; without this information no account can be created and the app cannot be used. All other information is voluntary."
       },
@@ -1124,7 +1329,7 @@
         "title": "Storage period and deletion",
         "description": "We delete the personal data we process in accordance with statutory provisions as soon as the underlying consent is withdrawn or there are no further legal bases for the processing. This concerns cases in which the original purpose of processing ceases to apply or the data is no longer needed. The periods stated for the individual processing operations take precedence.",
         "technicalLabel": "Automatically enforced technical periods:",
-        "technicalText": "The following periods are enforced automatically by a database job that runs daily – without anyone having to remember them:",
+        "technicalText": "The following periods are enforced automatically by database jobs – without anyone having to remember them:",
         "technicalItems": [
           {
             "title": "24 hours",
@@ -1145,10 +1350,18 @@
           {
             "title": "400 days",
             "description": "Usage ledger of the AI analyses (without the content of the analysis)."
+          },
+          {
+            "title": "30 days",
+            "description": "Entries in the trash (deleted matches, squad members, tournaments, teams) and accounts scheduled for deletion once the grace period has expired – checked hourly."
+          },
+          {
+            "title": "1 hour",
+            "description": "Rate limit for data exports (five per hour and account)."
           }
         ],
         "contentLabel": "Content data of the app:",
-        "contentText": "Squad, match, appointment, absence and survey data remains stored until the controller deletes it, at the longest until the team or the associated account is deleted. If you delete your account, teams in which you are the sole member are deleted with it; teams with further members continue to exist and are handed over. Deletion takes effect immediately and without a grace period.",
+        "contentText": "Squad, match, schedule, absence, team-fund, jersey and survey data as well as video recordings remain stored until the controller deletes them, at the latest until the final deletion of the team or the associated account. Deleted matches, squad members, tournaments and teams sit in the trash for 30 days and are then finally deleted. If you delete your account, it is locked immediately and finally deleted after a grace period of 30 days; teams in which you are the only member of the coaching staff are deleted with it, teams with further members remain and are handed over. Immediate deletion without a grace period is available on request.",
         "retentionLabel": "Statutory retention and archiving:",
         "retentionText": "Insofar as we are subject to commercial or tax law retention obligations, the following general periods apply under German law. Only commercial documents are affected, not the content data of the app:",
         "items": [
@@ -1602,7 +1815,7 @@
       "title": "Privacy policy",
       "description": "How we process personal data on statix-app.de and in the Statix app — broken down by purpose, legal basis, service provider and retention period.",
       "pseudonymBadge": "Player names never leave the app",
-      "lastUpdated": "Version: 25 August 2026",
+      "lastUpdated": "Version: 24 September 2026",
       "navLabel": "More legal information",
       "imprintLink": "Imprint",
       "termsLink": "Terms of service"
