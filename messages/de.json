@@ -5001,8 +5001,8 @@
             "value": "Gespeicherte Filter, keine Clipordner"
           },
           {
-            "term": "Sendungen",
-            "value": "Eine Spielerin sieht nur ihre Szenen"
+            "term": "Weitergeben",
+            "value": "Clips an Spielerin oder Trainerteam, Mediathek für die Mannschaft"
           },
           {
             "term": "Ohne Spiel nutzbar",
@@ -5027,21 +5027,160 @@
             "body": "Der Filter läuft über Tags und erfasste Ereignisse gleichzeitig. Was passt, spielt als Zusammenschnitt ab, lässt sich als Playlist sichern und an eine Spielerin schicken — die sieht dann genau diese Szenen und nicht das Spiel dahinter."
           }
         ],
+        "capabilities": {
+          "title": "Der Videobereich kann mehr als taggen",
+          "intro": "Das Taggen ist die Werkbank. Drumherum liegt alles, was eine Aufnahme vom Handy bis in die Kabine braucht — und was danach mit ihr passiert. Alles davon gehört zur selben Beta.",
+          "groups": [
+            {
+              "name": "Aufnehmen",
+              "intro": "Bevor die erste Szene getaggt ist.",
+              "items": [
+                {
+                  "name": "Hochladen in Blöcken",
+                  "body": "Ein Spiel in 30-Minuten-Teilen hochladen. Statix fügt sie zu einer Aufnahme zusammen, meist ohne neu zu codieren."
+                },
+                {
+                  "name": "Upload fortsetzen",
+                  "body": "Reißt die Verbindung ab, geht es dort weiter, wo sie gerissen ist — hochgeladen wird nur, was noch fehlt."
+                },
+                {
+                  "name": "Zuschneiden",
+                  "body": "Aufwärmen und Nachspiel abschneiden, bevor eine Sekunde davon hochgeladen wird."
+                },
+                {
+                  "name": "Gedrehte Aufnahmen",
+                  "body": "Steht ein Video auf dem Kopf, drehst du es in der Vorschau zurecht. Danach wird die Drehung einmal fest eingerechnet."
+                },
+                {
+                  "name": "Spiel oder Training",
+                  "body": "Eine Aufnahme gehört zu einem Spiel oder zu einem Termin. Beim Training legst du fest, wer darauf zu sehen ist."
+                }
+              ]
+            },
+            {
+              "name": "Taggen & finden",
+              "intro": "Was die Werkbank über Aktion, Spielerin und Kontext hinaus kann.",
+              "items": [
+                {
+                  "name": "Eigene Spielzüge",
+                  "body": "Das Spielzugbuch der Mannschaft: einmal benennen, am Video antippen und festhalten, ob der Zug aufgegangen ist."
+                },
+                {
+                  "name": "Eigene Tags",
+                  "body": "Was im Katalog fehlt — „Abwehrverhalten“, „Körpersprache“ — bekommt einen eigenen Knopf, eine eigene Spur und einen eigenen Filter."
+                },
+                {
+                  "name": "Über- und Unterzahl von selbst",
+                  "body": "Aus den Zeitstrafen im Protokoll abgeleitet: jede Phase als eine Szene und als Filter, ohne sie von Hand zu taggen."
+                },
+                {
+                  "name": "Filter mit Zahlen",
+                  "body": "Jeder Knopf sagt vorher, wie viele Szenen dahinterliegen. Wurf- und Torbild filtern nach Zone wie in der Statistik."
+                },
+                {
+                  "name": "Szenen über alle Spiele",
+                  "body": "Eine Frage an jedes Video der Saison statt an eines — gespeichert als Playlist der ganzen Mannschaft."
+                },
+                {
+                  "name": "Protokoll aus dem Video",
+                  "body": "Hat niemand live mitgeschrieben, entsteht die Statistik nachträglich vor dem Video. Nur an einem Spiel ohne Protokoll — so zählt nichts doppelt."
+                }
+              ]
+            },
+            {
+              "name": "Zeigen & teilen",
+              "intro": "Wie eine Szene zur Mannschaft kommt — in der Kabine oder aufs Handy.",
+              "items": [
+                {
+                  "name": "Spielstand-Einblendung",
+                  "body": "Stand, Spielminute und Trikotfarben über dem Bild wie bei einer Übertragung, dazu eine Karte bei Tor, Parade und Auszeit."
+                },
+                {
+                  "name": "Besprechungsmodus",
+                  "body": "Vollbild für die Kabine: anhalten, zeichnen, zoomen — und die Besprechung samt Stimme als eigenes Video aufnehmen."
+                },
+                {
+                  "name": "Vorlauf & Nachlauf",
+                  "body": "Wie viele Sekunden vor und nach einer Szene mitlaufen, stellst du einmal je Gerät ein."
+                },
+                {
+                  "name": "Sendungen",
+                  "body": "Szenen an eine Spielerin oder ans Trainerteam schicken, auf Wunsch das ganze Spiel und mit Download. Die Liste zeigt, wer geöffnet hat."
+                },
+                {
+                  "name": "Mediathek der Mannschaft",
+                  "body": "Ganze Videos für die Mannschaft freigeben, wahlweise zum Herunterladen. Spielerinnen finden sie in ihrem Posteingang."
+                },
+                {
+                  "name": "Herunterladen",
+                  "body": "Das ganze Video oder nur die Szenen einer Auswahl als MP4 — auf Wunsch mit eingebranntem Spielstand."
+                }
+              ]
+            },
+            {
+              "name": "Auswertung aus dem Bild",
+              "intro": "Der jüngste Teil, gerechnet auf einer gemieteten Grafikkarte in der EU. Was er findet, sind Vorschläge.",
+              "items": [
+                {
+                  "name": "Feldkalibrierung",
+                  "body": "Markante Punkte des Spielfelds im Standbild setzen — danach ist jeder Bildpunkt ein Ort in Feldmetern."
+                },
+                {
+                  "name": "Laufwege & Heatmaps",
+                  "body": "Jede Person im Bild wird verfolgt, mit Distanz, Tempo und Heatmap. Welche Spielerin es ist, schlägt Statix vor; du bestätigst."
+                },
+                {
+                  "name": "Ballflug & Trefferpunkt",
+                  "body": "Ballflüge werden erkannt und in Würfe und Pässe getrennt. Wo ein Wurf im Tor ankommt, wird als Zone vorgeschlagen."
+                },
+                {
+                  "name": "Panorama aus zwei Kameras",
+                  "body": "Zwei Kameras, je eine Hallenhälfte, werden zu einem Bild des ganzen Felds vernäht."
+                },
+                {
+                  "name": "Schwenk-Fassung",
+                  "body": "Aus dem Panorama wird ein mitschwenkender Ausschnitt wie im Fernsehen, geführt von den Laufwegen und vom Ball."
+                }
+              ]
+            }
+          ]
+        },
         "shots": [
           {
             "alt": "Die Spuren der Tagging-Werkbank in Statix: jede Aktion eine Zeile, jede Szene ein Block auf der Zeitachse",
             "label": "Die Spuren: eine Halbzeit, nach Aktion sortiert"
           },
           {
-            "alt": "Der Tagging-Katalog in Statix mit Seitenwahl, Kader und Aktionsknöpfen",
-            "label": "Seite, Kader, Aktion — je ein Tipp, jeder mit Kürzel"
+            "alt": "Das Filterblatt der Tagging-Werkbank in Statix: jede Aktion mit der Zahl ihrer Szenen, dazu Spielzüge, eigene Tags und Über- und Unterzahl",
+            "label": "Der Filter: an jedem Knopf die Zahl der Szenen dahinter"
+          },
+          {
+            "alt": "Die Videobibliothek in Statix als Liste mit Sichtbarkeit, Stand, Sendungen, Aufrufen und Szenen je Aufnahme",
+            "label": "Die Bibliothek: wer sieht was, und wie weit jedes Video ist"
+          },
+          {
+            "alt": "Die versendeten Clips in Statix mit Empfängerin, Datum und ob der Clip geöffnet wurde",
+            "label": "Versendet: jeder Clip, an wen, und ob er angesehen wurde"
+          },
+          {
+            "alt": "Der Tagging-Katalog in Statix mit Seitenwahl, Kader, eigenen Spielzügen, eigenen Tags und Aktionsknöpfen",
+            "label": "Seite, Kader, Spielzug, Aktion — je ein Tipp"
+          },
+          {
+            "alt": "Der Posteingang einer Spielerin in Statix auf dem Handy mit einem Clip vom Trainer und den Videos der Mannschaft",
+            "label": "Bei der Spielerin: der Clip im Posteingang"
+          },
+          {
+            "alt": "Die Videos der Mannschaft in Statix auf dem Handy einer Spielerin, zwei davon zum Herunterladen freigegeben",
+            "label": "Die Mediathek: was das Trainerteam freigegeben hat"
           }
         ],
         "limits": [
           "Das Feature ist im Aufbau. Es ist auf ausgewählte Konten begrenzt, solange es gebaut wird — nicht als Verkaufsstufe, sondern weil ein unfertiger Upload-Weg vor jedem Team echtes Geld und verwaiste Dateien produziert.",
-          "Ein Tag bewegt keine Zahl. Die Statistik kommt aus der Live-Erfassung; getaggte Szenen sind eine Lesart des Videos und ändern die Torschützenliste nicht.",
-          "Erfasste Ereignisse werden nur dann zu Sprungmarken, wenn das Video mit der Spieluhr abgeglichen wurde.",
-          "Automatische Erkennung von Aktionen im Videobild gibt es nicht und ist nicht geplant."
+          "Ein Tag bewegt keine Zahl. Die Statistik kommt aus der Live-Erfassung; getaggte Szenen sind eine Lesart des Videos. Einzige Ausnahme ist „Protokoll aus dem Video“ — und das lässt sich nur an einem Spiel einschalten, das noch kein Protokoll hat.",
+          "Sprungmarken aus der Live-Erfassung, die Spielstand-Einblendung und Über- und Unterzahl gibt es nur für ein Video, das mit der Spieluhr abgeglichen ist.",
+          "Getaggt wird von Hand. Die Auswertung aus dem Bild erkennt Personen und Ballflüge, macht daraus aber nur Vorschläge — eine Szene oder einen Eintrag in der Statistik legt sie nie von selbst an.",
+          "Die Auswertung aus dem Bild braucht eine Feldkalibrierung, der Trefferpunkt im Tor zusätzlich die beiden oberen Torecken."
         ],
         "faq": [
           {
@@ -5054,7 +5193,7 @@
           },
           {
             "question": "Sieht eine Spielerin das ganze Spiel, wenn ich ihr Szenen schicke?",
-            "answer": "Nein. Eine Sendung liefert nur die Stücke des Videos, die ihre Szenen abdecken. Für alles andere gibt es keine Adresse — nicht nur keinen Knopf, sondern keinen erreichbaren Ort."
+            "answer": "Nicht, wenn du ihr Szenen schickst: Eine Sendung liefert nur die Stücke des Videos, die diese Szenen abdecken. Für alles andere gibt es keine Adresse — nicht nur keinen Knopf, sondern keinen erreichbaren Ort. Das ganze Spiel sieht sie nur, wenn du es ihr ausdrücklich als ganzes Video schickst oder für die Mannschaft freigibst."
           },
           {
             "question": "Wie viel Speicher braucht ein Spiel?",
@@ -5988,6 +6127,7 @@
       "shotsKicker": "Aus der App",
       "shotsTitle": "So sieht das aus",
       "shotsDescription": "Echte Aufnahmen aus Statix — keine Montage. Wenn sich die App ändert, werden sie neu aufgenommen.",
+      "capabilitiesKicker": "Was noch dazugehört",
       "stepsKicker": "Der Ablauf",
       "stepsTitle": "So läuft das in der Praxis",
       "limitsKicker": "Ehrlich gesagt",

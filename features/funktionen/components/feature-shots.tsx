@@ -71,7 +71,7 @@ export default function FeatureShots({ feature }: { feature: Feature }) {
         </div>
 
         {phones.length > 0 ? (
-          <div className='mt-10 flex flex-wrap justify-center gap-8'>
+          <div className='mt-10 flex flex-wrap items-start justify-center gap-8'>
             {phones.map((shot) => (
               <BoardScreenshot
                 key={shot.src + shot.label}

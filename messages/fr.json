@@ -5001,8 +5001,8 @@
             "value": "Filtres enregistrés, pas des dossiers de clips"
           },
           {
-            "term": "Envois",
-            "value": "Une joueuse ne voit que ses scènes"
+            "term": "Transmettre",
+            "value": "Clips à une joueuse ou au staff, vidéothèque pour l'équipe"
           },
           {
             "term": "Utilisable sans match",
@@ -5027,21 +5027,160 @@
             "body": "Le filtre parcourt en même temps les tags et les événements saisis. Ce qui correspond se lit comme un montage, s'enregistre en playlist et s'envoie à une joueuse — qui voit alors exactement ces scènes et pas le match derrière."
           }
         ],
+        "capabilities": {
+          "title": "L'espace vidéo fait plus que taguer",
+          "intro": "Le tagging est l'établi. Autour, il y a tout ce dont un enregistrement a besoin entre le téléphone et le vestiaire — et ce qui lui arrive ensuite. Tout cela fait partie de la même bêta.",
+          "groups": [
+            {
+              "name": "Enregistrer",
+              "intro": "Avant que la première scène soit taguée.",
+              "items": [
+                {
+                  "name": "Envoi par blocs",
+                  "body": "Envoyer un match en parties de 30 minutes. Statix les assemble en un seul enregistrement, le plus souvent sans réencodage."
+                },
+                {
+                  "name": "Reprendre l'envoi",
+                  "body": "Si la connexion coupe, l'envoi reprend là où il s'est arrêté — seul ce qui manque encore est envoyé."
+                },
+                {
+                  "name": "Découper",
+                  "body": "Retirer l'échauffement et l'après-match avant d'en envoyer une seule seconde."
+                },
+                {
+                  "name": "Vidéos à l'envers",
+                  "body": "Si une vidéo est à l'envers, vous la remettez droite dans l'aperçu. La rotation est ensuite intégrée une fois pour toutes."
+                },
+                {
+                  "name": "Match ou entraînement",
+                  "body": "Un enregistrement appartient à un match ou à un rendez-vous. Pour un entraînement, vous choisissez qui y apparaît."
+                }
+              ]
+            },
+            {
+              "name": "Taguer et retrouver",
+              "intro": "Ce que l'établi fait au-delà de l'action, de la joueuse et du contexte.",
+              "items": [
+                {
+                  "name": "Combinaisons de l'équipe",
+                  "body": "Le cahier de combinaisons de l'équipe : nommer une fois, toucher sur la vidéo et noter si la combinaison a fonctionné."
+                },
+                {
+                  "name": "Tags personnels",
+                  "body": "Ce qui manque au catalogue — « comportement défensif », « langage corporel » — reçoit son propre bouton, sa propre piste et son propre filtre."
+                },
+                {
+                  "name": "Supériorité et infériorité, toutes seules",
+                  "body": "Déduites des exclusions de la feuille de match : chaque phase comme une scène et comme un filtre, sans la taguer à la main."
+                },
+                {
+                  "name": "Filtres chiffrés",
+                  "body": "Chaque bouton indique à l'avance combien de scènes se trouvent derrière. Les cartes de tirs et de but filtrent par zone, comme dans les statistiques."
+                },
+                {
+                  "name": "Scènes de tous les matchs",
+                  "body": "Une question posée à chaque vidéo de la saison plutôt qu'à une seule — enregistrée comme playlist de toute l'équipe."
+                },
+                {
+                  "name": "Feuille de match depuis la vidéo",
+                  "body": "Si personne n'a saisi en direct, la statistique se construit après coup devant la vidéo. Uniquement sur un match sans feuille — ainsi rien ne compte deux fois."
+                }
+              ]
+            },
+            {
+              "name": "Montrer et partager",
+              "intro": "Comment une scène arrive à l'équipe — au vestiaire ou sur le téléphone.",
+              "items": [
+                {
+                  "name": "Score incrusté",
+                  "body": "Score, minute de jeu et couleurs des maillots sur l'image comme à la télévision, avec une carte pour les buts, arrêts et temps morts."
+                },
+                {
+                  "name": "Mode causerie",
+                  "body": "Plein écran pour le vestiaire : mettre en pause, dessiner, zoomer — et enregistrer la causerie avec votre voix comme vidéo à part entière."
+                },
+                {
+                  "name": "Avant et après",
+                  "body": "Le nombre de secondes jouées avant et après une scène se règle une fois par appareil."
+                },
+                {
+                  "name": "Envois",
+                  "body": "Envoyer des scènes à une joueuse ou au staff, si besoin le match entier et avec téléchargement. La liste montre qui a ouvert."
+                },
+                {
+                  "name": "Vidéothèque de l'équipe",
+                  "body": "Mettre des vidéos entières à disposition de l'équipe, au choix avec téléchargement. Les joueuses les trouvent dans leur boîte de réception."
+                },
+                {
+                  "name": "Télécharger",
+                  "body": "La vidéo entière ou seulement les scènes d'une sélection en MP4 — avec le score incrusté si vous le souhaitez."
+                }
+              ]
+            },
+            {
+              "name": "Analyse de l'image",
+              "intro": "La partie la plus récente, calculée sur une carte graphique louée dans l'UE. Ce qu'elle trouve, ce sont des propositions.",
+              "items": [
+                {
+                  "name": "Calibrage du terrain",
+                  "body": "Placer des points marquants du terrain sur une image fixe — ensuite chaque pixel est un endroit en mètres de terrain."
+                },
+                {
+                  "name": "Déplacements et cartes de chaleur",
+                  "body": "Chaque personne à l'image est suivie, avec distance, vitesse et carte de chaleur. Statix propose de quelle joueuse il s'agit ; vous confirmez."
+                },
+                {
+                  "name": "Trajectoire du ballon et point d'impact",
+                  "body": "Les trajectoires du ballon sont détectées et séparées en tirs et en passes. L'endroit où un tir arrive dans le but est proposé comme zone."
+                },
+                {
+                  "name": "Panorama à deux caméras",
+                  "body": "Deux caméras, une par moitié de salle, sont assemblées en une image de tout le terrain."
+                },
+                {
+                  "name": "Version qui suit le jeu",
+                  "body": "Le panorama devient un cadre qui suit l'action comme à la télévision, guidé par les déplacements et le ballon."
+                }
+              ]
+            }
+          ]
+        },
         "shots": [
           {
-            "alt": "Les pistes de l'établi de tagging dans Statix : chaque action une ligne, chaque scène un bloc sur la frise",
+            "alt": "Les pistes de l'établi de tagging de Statix : chaque action une ligne, chaque scène un bloc sur la ligne de temps",
             "label": "Les pistes : une mi-temps, triée par action"
           },
           {
-            "alt": "Le catalogue de tagging dans Statix, avec choix du côté, effectif et boutons d'action",
-            "label": "Côté, effectif, action — une touche chacun, tous avec raccourci"
+            "alt": "Le panneau de filtres de l'établi de tagging de Statix : chaque action avec son nombre de scènes, plus les combinaisons, les tags personnels et la supériorité ou l'infériorité",
+            "label": "Le filtre : chaque bouton affiche le nombre de scènes derrière"
+          },
+          {
+            "alt": "La bibliothèque vidéo de Statix en liste avec visibilité, état, envois, vues et scènes par enregistrement",
+            "label": "La bibliothèque : qui voit quoi, et où en est chaque vidéo"
+          },
+          {
+            "alt": "Les clips envoyés dans Statix avec destinataire, date et si le clip a été ouvert",
+            "label": "Envoyés : chaque clip, à qui, et s'il a été regardé"
+          },
+          {
+            "alt": "Le catalogue de tagging de Statix avec choix du côté, effectif, combinaisons, tags personnels et boutons d'action",
+            "label": "Côté, effectif, combinaison, action — une touche chacun"
+          },
+          {
+            "alt": "La boîte de réception d'une joueuse dans Statix sur le téléphone, avec un clip de l'entraîneur et les vidéos de l'équipe",
+            "label": "Côté joueuse : le clip dans sa boîte de réception"
+          },
+          {
+            "alt": "Les vidéos de l'équipe dans Statix sur le téléphone d'une joueuse, dont deux disponibles en téléchargement",
+            "label": "La vidéothèque : ce que le staff a mis à disposition"
           }
         ],
         "limits": [
           "La fonction est en construction. Elle est limitée à des comptes sélectionnés le temps qu'elle se construise — non comme palier commercial, mais parce qu'un chemin d'import inachevé devant chaque équipe produit de l'argent réel et des fichiers orphelins.",
-          "Un tag ne bouge aucun chiffre. La statistique vient de la saisie en direct ; les scènes taguées sont une lecture de la vidéo et ne changent pas la liste des buteuses.",
-          "Les événements saisis ne deviennent des points de repère que si la vidéo a été calée sur le chronomètre.",
-          "La reconnaissance automatique des actions dans l'image n'existe pas et n'est pas prévue."
+          "Un tag ne bouge aucun chiffre. La statistique vient de la saisie en direct ; les scènes taguées sont une lecture de la vidéo. Seule exception : « feuille de match depuis la vidéo » — et elle ne peut être activée que sur un match qui n'a pas encore de feuille.",
+          "Les points de repère issus de la saisie en direct, le score incrusté et la supériorité ou l'infériorité n'existent que pour une vidéo calée sur le chronomètre.",
+          "Le tagging se fait à la main. L'analyse de l'image détecte les personnes et les trajectoires du ballon, mais n'en fait que des propositions — elle ne crée jamais d'elle-même une scène ou une entrée dans les statistiques.",
+          "L'analyse de l'image a besoin d'un calibrage du terrain ; le point d'impact dans le but a besoin en plus des deux coins supérieurs du but."
         ],
         "faq": [
           {
@@ -5054,7 +5193,7 @@
           },
           {
             "question": "Une joueuse voit-elle tout le match si je lui envoie des scènes ?",
-            "answer": "Non. Un envoi ne livre que les morceaux de vidéo que couvrent ses scènes. Pour tout le reste, il n'y a pas d'adresse — non pas seulement pas de bouton, mais aucun endroit accessible."
+            "answer": "Pas si vous lui envoyez des scènes : un envoi ne livre que les morceaux de vidéo que couvrent ces scènes. Pour tout le reste, il n'y a pas d'adresse — non pas seulement pas de bouton, mais aucun endroit accessible. Elle ne voit le match entier que si vous le lui envoyez expressément comme vidéo complète ou le mettez à disposition de l'équipe."
           },
           {
             "question": "Quelle place prend un match ?",
@@ -5988,6 +6127,7 @@
       "shotsKicker": "Depuis l'application",
       "shotsTitle": "Voilà à quoi cela ressemble",
       "shotsDescription": "De vraies captures de Statix — aucun montage. Quand l'application change, elles sont reprises.",
+      "capabilitiesKicker": "Ce qui va avec",
       "stepsKicker": "Le déroulé",
       "stepsTitle": "Comment cela se passe en pratique",
       "limitsKicker": "Franchement",

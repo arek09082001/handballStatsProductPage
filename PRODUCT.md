@@ -121,7 +121,18 @@ The scope itself:
   defence, strength, shot origin), read them as lanes, save filters as
   playlists, and send one player a compilation of only her scenes. Gated to an
   allowlist while it is built. Anything the site says about it must say that
-  too.
+  too. Around the bench the area has grown — and `/funktionen/video-tagging`
+  lists it in `capabilities`: uploads in blocks, resumable, trimmed and
+  rotated before upload; recordings of trainings; the team's own set plays and
+  custom tags; power play / short-handed derived from the log; scene search
+  across every video; building the match log from the video (only on a game
+  without one); a TV-style score overlay; a briefing mode with drawing and
+  recording; clips to players or the coaching staff with open tracking; a
+  squad library with optional download; MP4 download. The **analysis from the
+  picture** (court calibration, running paths & heatmaps, ball flight and
+  point of impact, two-camera panorama, follow-cam version) is the youngest
+  part: it runs on a rented GPU in the EU and only ever *suggests* — it never
+  creates a scene or a statistic entry by itself. Say so wherever it is named.
 
 ## Commercial truth (do not invent beyond this)
 

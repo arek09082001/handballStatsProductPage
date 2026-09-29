@@ -5001,8 +5001,8 @@
             "value": "Saved filters, not clip folders"
           },
           {
-            "term": "Deliveries",
-            "value": "A player sees only her own scenes"
+            "term": "Passing on",
+            "value": "Clips to a player or the coaching staff, a library for the squad"
           },
           {
             "term": "Usable without a match",
@@ -5027,21 +5027,160 @@
             "body": "The filter runs over tags and recorded events at the same time. What fits plays as an edit, can be saved as a playlist and sent to a player — who then sees exactly those scenes and not the match behind them."
           }
         ],
+        "capabilities": {
+          "title": "The video area does more than tagging",
+          "intro": "Tagging is the workbench. Around it sits everything a recording needs on its way from the phone to the changing room — and everything that happens to it afterwards. All of it is part of the same beta.",
+          "groups": [
+            {
+              "name": "Recording",
+              "intro": "Before the first scene is tagged.",
+              "items": [
+                {
+                  "name": "Upload in blocks",
+                  "body": "Upload a match in 30-minute parts. Statix joins them into one recording, usually without re-encoding."
+                },
+                {
+                  "name": "Resume an upload",
+                  "body": "If the connection drops, it carries on where it broke off — only what is still missing is uploaded."
+                },
+                {
+                  "name": "Trimming",
+                  "body": "Cut off the warm-up and the aftermath before a single second of it is uploaded."
+                },
+                {
+                  "name": "Rotated recordings",
+                  "body": "If a video is upside down, you turn it right in the preview. The rotation is then baked in once, for good."
+                },
+                {
+                  "name": "Match or training",
+                  "body": "A recording belongs to a match or to an appointment. For a training session you choose who can be seen in it."
+                }
+              ]
+            },
+            {
+              "name": "Tagging & finding",
+              "intro": "What the workbench does beyond action, player and context.",
+              "items": [
+                {
+                  "name": "Your own set plays",
+                  "body": "The team's playbook: name a play once, tap it on the video and note whether it worked."
+                },
+                {
+                  "name": "Your own tags",
+                  "body": "Whatever the catalogue lacks — \"defensive behaviour\", \"body language\" — gets its own button, its own track and its own filter."
+                },
+                {
+                  "name": "Power play and short-handed, automatically",
+                  "body": "Derived from the suspensions in the match log: every phase as one scene and as a filter, without tagging it by hand."
+                },
+                {
+                  "name": "Filters with numbers",
+                  "body": "Every button tells you beforehand how many scenes lie behind it. Shot and goal maps filter by zone, just like in the statistics."
+                },
+                {
+                  "name": "Scenes across all matches",
+                  "body": "One question put to every video of the season instead of one — saved as a playlist for the whole squad."
+                },
+                {
+                  "name": "Match log from the video",
+                  "body": "If nobody recorded live, the statistics are built afterwards in front of the video. Only on a match without a log — so nothing counts twice."
+                }
+              ]
+            },
+            {
+              "name": "Showing & sharing",
+              "intro": "How a scene reaches the squad — in the changing room or on their phones.",
+              "items": [
+                {
+                  "name": "Score overlay",
+                  "body": "Score, match minute and shirt colours over the picture like a broadcast, plus a card for goals, saves and time-outs."
+                },
+                {
+                  "name": "Briefing mode",
+                  "body": "Full screen for the changing room: pause, draw, zoom — and record the briefing with your voice as a video of its own."
+                },
+                {
+                  "name": "Pre-roll & post-roll",
+                  "body": "How many seconds run before and after a scene is set once per device."
+                },
+                {
+                  "name": "Deliveries",
+                  "body": "Send scenes to a player or the coaching staff, the whole match if you like and with download. The list shows who opened it."
+                },
+                {
+                  "name": "Squad library",
+                  "body": "Release whole videos to the squad, optionally for download. Players find them in their inbox."
+                },
+                {
+                  "name": "Download",
+                  "body": "The whole video or only the scenes of a selection as MP4 — with the score burned in, if you want."
+                }
+              ]
+            },
+            {
+              "name": "Analysis from the picture",
+              "intro": "The youngest part, computed on a rented graphics card in the EU. What it finds are suggestions.",
+              "items": [
+                {
+                  "name": "Court calibration",
+                  "body": "Set distinctive points of the court in a still frame — from then on every pixel is a place in court metres."
+                },
+                {
+                  "name": "Running paths & heatmaps",
+                  "body": "Every person in the picture is tracked, with distance, speed and heatmap. Statix suggests which player it is; you confirm."
+                },
+                {
+                  "name": "Ball flight & point of impact",
+                  "body": "Ball flights are detected and split into shots and passes. Where a shot arrives in the goal is suggested as a zone."
+                },
+                {
+                  "name": "Panorama from two cameras",
+                  "body": "Two cameras, one for each half of the hall, are stitched into one picture of the whole court."
+                },
+                {
+                  "name": "Follow-cam version",
+                  "body": "The panorama becomes a panning frame like on television, steered by the running paths and the ball."
+                }
+              ]
+            }
+          ]
+        },
         "shots": [
           {
-            "alt": "The tracks of the tagging workbench in Statix: every action a row, every scene a block on the timeline",
+            "alt": "The tracks of Statix's tagging workbench: every action a row, every scene a block on the timeline",
             "label": "The tracks: one half, sorted by action"
           },
           {
-            "alt": "The tagging catalogue in Statix with side selection, squad and action buttons",
-            "label": "Side, squad, action — one tap each, every one with a shortcut"
+            "alt": "The filter sheet of Statix's tagging workbench: every action with its number of scenes, plus set plays, own tags and power play or short-handed",
+            "label": "The filter: every button shows the number of scenes behind it"
+          },
+          {
+            "alt": "The Statix video library as a list with visibility, status, deliveries, views and scenes per recording",
+            "label": "The library: who sees what, and how far along each video is"
+          },
+          {
+            "alt": "The sent clips in Statix with recipient, date and whether the clip was opened",
+            "label": "Sent: every clip, to whom, and whether it was watched"
+          },
+          {
+            "alt": "The tagging catalogue in Statix with side selection, squad, own set plays, own tags and action buttons",
+            "label": "Side, squad, set play, action — one tap each"
+          },
+          {
+            "alt": "A player's inbox in Statix on the phone, with a clip from the coach and the squad's videos",
+            "label": "On the player's side: the clip in her inbox"
+          },
+          {
+            "alt": "The squad's videos in Statix on a player's phone, two of them released for download",
+            "label": "The squad library: what the coaching staff has released"
           }
         ],
         "limits": [
           "The feature is being built. It is limited to selected accounts while that lasts — not as a sales tier, but because an unfinished upload path in front of every team produces real money and orphaned files.",
-          "A tag moves no number. The statistic comes from live recording; tagged scenes are a reading of the video and do not change the list of scorers.",
-          "Recorded events only become jump marks if the video has been lined up with the match clock.",
-          "Automatic recognition of actions in the video image does not exist and is not planned."
+          "A tag moves no number. The statistic comes from live recording; tagged scenes are a reading of the video. The one exception is \"match log from the video\" — and that can only be switched on for a match that has no log yet.",
+          "Jump marks from live recording, the score overlay and power play or short-handed phases only exist for a video that has been lined up with the match clock.",
+          "Tagging is done by hand. The analysis from the picture detects people and ball flights but only turns them into suggestions — it never creates a scene or an entry in the statistics by itself.",
+          "The analysis from the picture needs a court calibration; the point of impact in the goal also needs the two upper goal corners."
         ],
         "faq": [
           {
@@ -5054,7 +5193,7 @@
           },
           {
             "question": "Does a player see the whole match when I send her scenes?",
-            "answer": "No. A delivery serves only the pieces of the video her scenes cover. For everything else there is no address — not merely no button, but no reachable place."
+            "answer": "Not when you send her scenes: a delivery serves only the pieces of the video those scenes cover. For everything else there is no address — not merely no button, but no reachable place. She only sees the whole match if you deliberately send it to her as the whole video or release it to the squad."
           },
           {
             "question": "How much storage does a match need?",
@@ -5988,6 +6127,7 @@
       "shotsKicker": "From the app",
       "shotsTitle": "This is what it looks like",
       "shotsDescription": "Real captures from Statix — no montage. When the app changes they are taken again.",
+      "capabilitiesKicker": "What else comes with it",
       "stepsKicker": "The procedure",
       "stepsTitle": "How it goes in practice",
       "limitsKicker": "Honestly",

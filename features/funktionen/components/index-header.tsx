@@ -74,7 +74,7 @@ export default function FeatureIndexHeader() {
           ))}
         </nav>
 
-        <div className='mt-9 flex flex-col items-start gap-3 sm:flex-row'>
+        <div className='mt-9 flex flex-col items-center gap-3 sm:flex-row sm:items-start'>
           <HeroActionButton
             variant='primary'
             icon={<Play className='size-4 fill-current' />}

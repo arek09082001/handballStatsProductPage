@@ -102,7 +102,7 @@ export default function FeatureHeader({ feature }: { feature: Feature }) {
             <FeatureStatusBadge status={feature.status} tone='court' withHint />
           </div>
 
-          <div className='relative mt-8 flex flex-col items-start gap-3 sm:flex-row'>
+          <div className='relative mt-8 flex flex-col items-center gap-3 sm:flex-row sm:items-start'>
             <HeroActionButton
               variant='primary'
               icon={<Play className='size-4 fill-current' />}
