@@ -206,7 +206,12 @@ export default function SiteNavbar() {
             </div>
           </div>
 
-          <div className='ml-auto hidden items-center justify-end gap-3 lg:flex lg:w-60'>
+          {/* At least the brand column's width, so the pill stays centred —
+           * but never less than its content. "Jetzt registrieren" makes the
+           * pair 263px wide against a fixed `w-60`, and right-aligned it
+           * spilled out to the left: invisible while nothing stood there,
+           * on top of the spotlight magnet once it did. */}
+          <div className='ml-auto hidden shrink-0 items-center justify-end gap-3 lg:flex lg:min-w-60'>
             <LanguageSwitcher />
             <Link
               href={CLUB_CONFIG.website.appUrl}
