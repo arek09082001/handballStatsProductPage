@@ -150,6 +150,12 @@ one thing they came for.
   exists it is used; the mock exists because the video stage resolves to object
   storage the screenshot machine cannot reach, and painting a match into an
   empty rectangle would be a fabricated product image.
+- **The rest of an area is a list, not a card grid.** `FeatureCapabilities`
+  (only `video-tagging`, from the copy's `capabilities`) sets two dozen
+  functions of very different weight as scoresheet columns — group name over a
+  heavy ink rule, one hairline row per function — on paper, between the drawn
+  bench and the screenshot band. A card each would make "Vorlauf & Nachlauf"
+  as big as the panorama stitch.
 - **A showcase is still photographs.** `HoldGestureShowcase` on
   `/funktionen/halten-und-wischen` is interactive — a pad laid out like the
   app's hold menu swaps between six real captures of the same moment — but

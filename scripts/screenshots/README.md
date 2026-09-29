@@ -158,28 +158,55 @@ LIVE_GAME_ID=<laufendes Spiel aus dem Seed> \
 node scripts/screenshots/capture.mjs capture --only halten
 ```
 
-## Die Video-Screenshots (`--only video`)
+## Die Video-Screenshots (`--only video`, `--only mediathek`)
 
-`video-tagging-spuren.png` und `video-tagging-katalog.png` sind **Ausschnitte**
-der Tagging-Werkbank, keine ganzen Seiten. Der Grund steht im Manifest: die
-Wiedergabe läuft über eine signierte R2-URL, und R2 hat eine lokale Instanz
-nicht — die Bühne bleibt also auf „Der Upload ist nicht abgeschlossen“ stehen.
-Aufgenommen wird deshalb nur, was echt ist (Spuren, Playlists, Katalog); das
-bewegte Bild auf der Produktseite ist eine **gezeichnete** Darstellung
+Alle Video-Aufnahmen sind Screens **ohne** das bewegte Bild: die Wiedergabe
+läuft über eine signierte R2-URL, und R2 hat eine lokale Instanz nicht — die
+Bühne bleibt also auf „Der Upload ist nicht abgeschlossen“ stehen. Aufgenommen
+wird deshalb nur, was echt ist; das bewegte Bild auf der Produktseite ist eine
+**gezeichnete** Darstellung
 (`features/funktionen/components/tagging-bench-mock.tsx`) und sagt das auch.
 
-`scripts/screenshots/seed-video.mjs` füllt die Werkbank (ein getaggtes Spiel mit
-rund 280 Szenen, vier Playlists, drei Marken) und druckt die `VIDEO_ID`. Ebenso
-ins App-Repo kopieren. Wichtig: die Videorouten hängen an einer Allowlist —
-ohne `VIDEO_BETA_EMAILS=demo@statix-app.de` in der `.env` antwortet jede von
-ihnen mit 403.
+- `video-tagging-spuren.png` und `video-tagging-katalog.png` sind
+  **Ausschnitte** der Tagging-Werkbank (Spuren bzw. rechte Spalte).
+- `video-filter.png` ist das offene Filterblatt der Werkbank.
+- `video-bibliothek.png` und `video-versendet.png` sind die Listen unter
+  `/videos` und `/videos/shares`, abgeschnitten nach der letzten Zeile.
+- `mobil-clip-posteingang.png` und `mobil-mediathek.png` zeigen die Seite der
+  Spielerin und brauchen deshalb einen **zweiten Durchlauf mit ihrem Konto**.
+
+Dafür braucht es drei Seeds im App-Repo, in dieser Reihenfolge:
+`seed-video.mjs` füllt die Werkbank (eine getaggte Halbzeit, vier Playlists,
+drei Marken), `seed-team-organisation.mjs` verknüpft vier Spielerkonten, und
+`scripts/screenshots/seed-video-extras.mjs` legt den Rest des Videobereichs an
+(vier weitere Aufnahmen in verschiedenen Ständen, Spielzugbuch, eigene Tags,
+sieben versendete Clips, Freigaben für die Mannschaft). Die beiden letzten
+liegen nur hier — ins App-Repo kopieren. Wichtig: die Videorouten hängen an
+einer Allowlist — ohne `VIDEO_BETA_EMAILS=demo@statix-app.de` in der `.env`
+antwortet jede von ihnen mit 403.
+
+```bash
+cp <hier>/scripts/screenshots/seed-team-organisation.mjs scripts/
+cp <hier>/scripts/screenshots/seed-video-extras.mjs scripts/
+node scripts/seed-demo.mjs && node scripts/seed-video.mjs \
+  && node scripts/seed-team-organisation.mjs && node scripts/seed-video-extras.mjs
+```
+
+`seed-video-extras.mjs` druckt am Ende die `VIDEO_ID`. Dann hier:
 
 ```bash
 VIDEO_ID=<aus dem Seed> \
 STATIX_URL=http://localhost:3000 \
 STATIX_EMAIL=demo@statix-app.de STATIX_PASSWORD='StatixDemo!2026' \
 node scripts/screenshots/capture.mjs capture --only video
+
+STATIX_URL=http://localhost:3000 \
+STATIX_EMAIL=spielerin2@statix-app.de STATIX_PASSWORD='StatixDemo!2026' \
+node scripts/screenshots/capture.mjs capture --only mediathek
 ```
+
+`spielerin2`, weil der Extras-Seed einen der Clips an ihre Kaderzeile (#2)
+adressiert — ihr Posteingang ist sonst leer.
 
 ## Ablauf
 

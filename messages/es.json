@@ -5001,8 +5001,8 @@
             "value": "Filtros guardados, no carpetas de clips"
           },
           {
-            "term": "Envíos",
-            "value": "Una jugadora solo ve sus escenas"
+            "term": "Compartir",
+            "value": "Clips a una jugadora o al cuerpo técnico, videoteca para el equipo"
           },
           {
             "term": "Usable sin partido",
@@ -5027,21 +5027,160 @@
             "body": "El filtro recorre a la vez las etiquetas y los eventos registrados. Lo que encaja se reproduce como montaje, se guarda como lista y se envía a una jugadora, que ve exactamente esas escenas y no el partido que hay detrás."
           }
         ],
+        "capabilities": {
+          "title": "El área de vídeo hace más que etiquetar",
+          "intro": "El etiquetado es el banco de trabajo. A su alrededor está todo lo que una grabación necesita desde el móvil hasta el vestuario, y lo que pasa con ella después. Todo forma parte de la misma beta.",
+          "groups": [
+            {
+              "name": "Grabar",
+              "intro": "Antes de etiquetar la primera escena.",
+              "items": [
+                {
+                  "name": "Subir por bloques",
+                  "body": "Sube un partido en partes de 30 minutos. Statix las une en una sola grabación, casi siempre sin recodificar."
+                },
+                {
+                  "name": "Reanudar la subida",
+                  "body": "Si se corta la conexión, sigue donde se cortó: solo se sube lo que todavía falta."
+                },
+                {
+                  "name": "Recortar",
+                  "body": "Quita el calentamiento y lo de después antes de subir un solo segundo."
+                },
+                {
+                  "name": "Grabaciones giradas",
+                  "body": "Si un vídeo está al revés, lo pones derecho en la vista previa. Después el giro se incorpora una vez y para siempre."
+                },
+                {
+                  "name": "Partido o entrenamiento",
+                  "body": "Una grabación pertenece a un partido o a una cita. En un entrenamiento eliges quién aparece en ella."
+                }
+              ]
+            },
+            {
+              "name": "Etiquetar y encontrar",
+              "intro": "Lo que el banco de trabajo hace más allá de acción, jugadora y contexto.",
+              "items": [
+                {
+                  "name": "Jugadas propias",
+                  "body": "El libro de jugadas del equipo: se nombra una vez, se marca en el vídeo y se anota si salió bien."
+                },
+                {
+                  "name": "Etiquetas propias",
+                  "body": "Lo que falta en el catálogo —«comportamiento defensivo», «lenguaje corporal»— recibe su propio botón, su propia pista y su propio filtro."
+                },
+                {
+                  "name": "Superioridad e inferioridad, solas",
+                  "body": "Derivadas de las exclusiones del acta: cada fase como una escena y como filtro, sin etiquetarla a mano."
+                },
+                {
+                  "name": "Filtros con cifras",
+                  "body": "Cada botón dice de antemano cuántas escenas hay detrás. Los mapas de lanzamiento y de portería filtran por zona, igual que en la estadística."
+                },
+                {
+                  "name": "Escenas de todos los partidos",
+                  "body": "Una pregunta a cada vídeo de la temporada en lugar de a uno, guardada como lista de reproducción de todo el equipo."
+                },
+                {
+                  "name": "Acta desde el vídeo",
+                  "body": "Si nadie registró en directo, la estadística se construye después delante del vídeo. Solo en un partido sin acta: así nada cuenta dos veces."
+                }
+              ]
+            },
+            {
+              "name": "Mostrar y compartir",
+              "intro": "Cómo llega una escena al equipo: en el vestuario o al móvil.",
+              "items": [
+                {
+                  "name": "Marcador sobreimpreso",
+                  "body": "Marcador, minuto y colores de camiseta sobre la imagen como en una retransmisión, con una tarjeta en goles, paradas y tiempos muertos."
+                },
+                {
+                  "name": "Modo charla",
+                  "body": "Pantalla completa para el vestuario: pausar, dibujar, ampliar, y grabar la charla con tu voz como vídeo propio."
+                },
+                {
+                  "name": "Antes y después",
+                  "body": "Cuántos segundos corren antes y después de una escena se ajusta una vez por dispositivo."
+                },
+                {
+                  "name": "Envíos",
+                  "body": "Envía escenas a una jugadora o al cuerpo técnico, si quieres el partido entero y con descarga. La lista muestra quién lo abrió."
+                },
+                {
+                  "name": "Videoteca del equipo",
+                  "body": "Libera vídeos completos para el equipo, con descarga si quieres. Las jugadoras los encuentran en su bandeja de entrada."
+                },
+                {
+                  "name": "Descargar",
+                  "body": "El vídeo entero o solo las escenas de una selección en MP4, con el marcador incrustado si lo deseas."
+                }
+              ]
+            },
+            {
+              "name": "Análisis de la imagen",
+              "intro": "La parte más reciente, calculada en una tarjeta gráfica alquilada en la UE. Lo que encuentra son propuestas.",
+              "items": [
+                {
+                  "name": "Calibración de la pista",
+                  "body": "Marca puntos reconocibles de la pista en un fotograma: a partir de ahí cada píxel es un lugar en metros de pista."
+                },
+                {
+                  "name": "Recorridos y mapas de calor",
+                  "body": "Se sigue a cada persona de la imagen, con distancia, velocidad y mapa de calor. Statix propone qué jugadora es; tú confirmas."
+                },
+                {
+                  "name": "Vuelo del balón y punto de impacto",
+                  "body": "Se detectan los vuelos del balón y se separan en lanzamientos y pases. Dónde llega un lanzamiento a la portería se propone como zona."
+                },
+                {
+                  "name": "Panorama con dos cámaras",
+                  "body": "Dos cámaras, una por cada mitad del pabellón, se cosen en una imagen de toda la pista."
+                },
+                {
+                  "name": "Versión con seguimiento",
+                  "body": "El panorama se convierte en un encuadre que sigue el juego como en televisión, guiado por los recorridos y el balón."
+                }
+              ]
+            }
+          ]
+        },
         "shots": [
           {
             "alt": "Las pistas del banco de etiquetado de Statix: cada acción una fila, cada escena un bloque en la línea de tiempo",
             "label": "Las pistas: una parte, ordenada por acción"
           },
           {
-            "alt": "El catálogo de etiquetado de Statix con selección de lado, plantilla y botones de acción",
-            "label": "Lado, plantilla, acción: un toque cada uno, todos con atajo"
+            "alt": "La hoja de filtros del banco de etiquetado de Statix: cada acción con su número de escenas, más jugadas, etiquetas propias y superioridad o inferioridad",
+            "label": "El filtro: cada botón muestra cuántas escenas hay detrás"
+          },
+          {
+            "alt": "La biblioteca de vídeos de Statix como lista con visibilidad, estado, envíos, visualizaciones y escenas por grabación",
+            "label": "La biblioteca: quién ve qué y en qué punto está cada vídeo"
+          },
+          {
+            "alt": "Los clips enviados en Statix con destinataria, fecha y si se abrió el clip",
+            "label": "Enviados: cada clip, a quién y si se vio"
+          },
+          {
+            "alt": "El catálogo de etiquetado de Statix con elección de lado, plantilla, jugadas propias, etiquetas propias y botones de acción",
+            "label": "Lado, plantilla, jugada, acción: un toque cada uno"
+          },
+          {
+            "alt": "La bandeja de entrada de una jugadora en Statix en el móvil, con un clip del entrenador y los vídeos del equipo",
+            "label": "En la jugadora: el clip en su bandeja de entrada"
+          },
+          {
+            "alt": "Los vídeos del equipo en Statix en el móvil de una jugadora, dos de ellos liberados para descargar",
+            "label": "La videoteca: lo que ha liberado el cuerpo técnico"
           }
         ],
         "limits": [
           "La función está en construcción. Mientras se construye está limitada a cuentas seleccionadas, no como escalón de venta, sino porque un camino de subida sin terminar delante de cada equipo produce dinero real y ficheros huérfanos.",
-          "Una etiqueta no mueve ninguna cifra. La estadística sale del registro en directo; las escenas etiquetadas son una lectura del vídeo y no cambian la lista de goleadoras.",
-          "Los eventos registrados solo se convierten en puntos de salto si el vídeo se ha sincronizado con el reloj de partido.",
-          "No existe reconocimiento automático de acciones en la imagen y no está previsto."
+          "Una etiqueta no mueve ninguna cifra. La estadística sale del registro en directo; las escenas etiquetadas son una lectura del vídeo. La única excepción es «acta desde el vídeo», y solo se puede activar en un partido que todavía no tiene acta.",
+          "Los puntos de salto del registro en directo, el marcador sobreimpreso y la superioridad o inferioridad solo existen para un vídeo sincronizado con el reloj de partido.",
+          "Se etiqueta a mano. El análisis de la imagen detecta personas y vuelos del balón, pero solo los convierte en propuestas: nunca crea por sí mismo una escena ni una entrada en la estadística.",
+          "El análisis de la imagen necesita una calibración de la pista; el punto de impacto en la portería necesita además las dos esquinas superiores de la portería."
         ],
         "faq": [
           {
@@ -5054,7 +5193,7 @@
           },
           {
             "question": "¿Ve la jugadora el partido entero si le envío escenas?",
-            "answer": "No. Un envío entrega solo los trozos de vídeo que cubren sus escenas. Para lo demás no hay dirección: no es que falte un botón, es que no hay ningún sitio al que llegar."
+            "answer": "No si le envías escenas: un envío entrega solo los trozos de vídeo que cubren esas escenas. Para lo demás no hay dirección: no es que falte un botón, es que no hay ningún sitio al que llegar. El partido entero solo lo ve si se lo envías expresamente como vídeo completo o lo liberas para el equipo."
           },
           {
             "question": "¿Cuánto espacio ocupa un partido?",
@@ -5988,6 +6127,7 @@
       "shotsKicker": "Desde la app",
       "shotsTitle": "Así se ve",
       "shotsDescription": "Capturas reales de Statix, sin montaje. Cuando la app cambia, se vuelven a tomar.",
+      "capabilitiesKicker": "Lo que también incluye",
       "stepsKicker": "El proceso",
       "stepsTitle": "Así funciona en la práctica",
       "limitsKicker": "Con franqueza",

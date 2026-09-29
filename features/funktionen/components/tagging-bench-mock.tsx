@@ -13,9 +13,10 @@ import { cn } from '@/lib/utils';
 /**
  * A DRAWN tagging bench — not a screenshot, and it does not pretend to be one.
  *
- * The two real captures on `/funktionen/video-tagging` show the workbench: the
- * lanes and the catalogue, both photographed from a running instance. What they
- * cannot show is the picture behind them. Playback resolves to a signed URL
+ * The real captures on `/funktionen/video-tagging` show the workbench and the
+ * area around it — lanes, filter, catalogue, library, sent clips, the player's
+ * side — all photographed from a running instance. What they cannot show is
+ * the picture behind them. Playback resolves to a signed URL
  * against object storage the screenshot machine has no access to, so a capture
  * of the stage is an empty rectangle — and painting a match into that rectangle
  * afterwards would be a fabricated product image, which is the one thing this

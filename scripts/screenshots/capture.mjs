@@ -347,6 +347,30 @@ const ID = {
   video: process.env.VIDEO_ID,
 };
 
+/**
+ * The page from its top down to the lowest piece of content in `<main>`, for
+ * list screens: cropping to the viewport ships a band of empty page under a
+ * short list, or cuts a long one through a row. Runs in the page.
+ */
+function contentBox() {
+  const main = document.querySelector('main');
+  if (!main) return null;
+  // Leaves only: the scroll containers around a list are as tall as the
+  // screen, and the page's decorative glow layer is too.
+  let bottom = 0;
+  for (const el of main.querySelectorAll('*')) {
+    if (el.childElementCount > 0 || el.closest('.pointer-events-none')) continue;
+    const r = el.getBoundingClientRect();
+    if (r.width > 0 && r.height > 0) bottom = Math.max(bottom, r.bottom);
+  }
+  return {
+    x: 0,
+    y: 0,
+    width: window.innerWidth,
+    height: Math.min(bottom + 32, window.innerHeight),
+  };
+}
+
 /** Click the first visible control whose trimmed text matches exactly. */
 async function tap(page, label) {
   const hit = page
@@ -897,6 +921,59 @@ const SHOTS = [
         };
       }),
     note: 'The tagging catalogue: side, squad, action — one tap each.',
+  },
+
+  // ── Der Rest des Videobereichs ───────────────────────────────────────────
+  // Everything here is a screen WITHOUT the moving picture, so it is real on a
+  // local instance too. Needs `seed-video.mjs` plus `seed-video-extras.mjs`
+  // (more tagged games, plays, custom tags, sent clips, squad releases) — see
+  // the README.
+  {
+    group: 'video', file: 'video-filter.png', ...TABLET_TALL,
+    route: () => `/videos/${ID.video}/tagging`,
+    prepare: (page) =>
+      page.locator('button[aria-label="Filter"]:visible').first().click(),
+    // The sheet covers the page from below the stage's top edge; the strip of
+    // bench above it is the page behind, not the filter.
+    clip: (page) =>
+      page.evaluate(() => {
+        const sheet = document.querySelector('[role="dialog"]');
+        if (!sheet) return null;
+        const r = sheet.getBoundingClientRect();
+        return { x: r.x, y: r.y, width: r.width, height: r.height };
+      }),
+    note: 'The filter: a number on every button, plays, own tags, power play.',
+  },
+  {
+    group: 'video', file: 'video-bibliothek.png',
+    viewport: { width: 1280, height: 1500 }, scale: 2,
+    route: () => '/videos',
+    // Down to the last row, not the viewport: the list ends where the videos
+    // end, and a band of empty page under it reads as a missing row.
+    clip: (page) => page.evaluate(contentBox),
+    note: 'The library as a list: who sees it, how far it is, what went out.',
+  },
+  {
+    group: 'video', file: 'video-versendet.png',
+    viewport: { width: 1280, height: 1300 }, scale: 2,
+    route: () => '/videos/shares',
+    clip: (page) => page.evaluate(contentBox),
+    note: 'Every clip that went out, to whom, and whether it was opened.',
+  },
+
+  // ── The player side of the video area, shot as a player ──────────────────
+  // Its own pass with a linked player account (seed-team-organisation.mjs):
+  //   STATIX_EMAIL=spielerin2@statix-app.de … capture --only mediathek
+  // spielerin2 because the extras seed addresses one of the clips to her row.
+  {
+    group: 'mediathek', file: 'mobil-clip-posteingang.png', ...PHONE,
+    route: () => '/inbox',
+    note: 'A clip from the coach lands in her inbox, next to the team library.',
+  },
+  {
+    group: 'mediathek', file: 'mobil-mediathek.png', ...PHONE,
+    route: () => '/team-videos',
+    note: 'What the coaching staff released to the squad, some with download.',
   },
 ];
 

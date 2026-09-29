@@ -88,6 +88,25 @@ export interface FeatureStep {
   body: string;
 }
 
+/** One entry of a capability list — a name and the one sentence behind it. */
+export interface FeatureCapability {
+  name: string;
+  body: string;
+}
+
+/**
+ * The rest of a feature's area, listed rather than pictured. Only
+ * `video-tagging` carries one: the video area grew a dozen functions around the
+ * tagging bench, and a page that shows only the bench undersells the area by
+ * the dozen — while a feature page for each would scatter one beta across the
+ * whole index.
+ */
+export interface FeatureCapabilities {
+  title: string;
+  intro: string;
+  groups: { name: string; intro: string; items: FeatureCapability[] }[];
+}
+
 /** One row of the "Kurz gesagt" panel — a fact a coach scans for. */
 export interface FeatureFact {
   term: string;
@@ -113,6 +132,7 @@ export interface FeatureCopy {
   intro: string[];
   facts: FeatureFact[];
   steps: FeatureStep[];
+  capabilities?: FeatureCapabilities;
   /** In the order of the record's `shots`; joined by position. */
   shots: { alt: string; label: string }[];
   limits: string[];
@@ -181,6 +201,8 @@ export interface Feature extends FeatureRecord {
   intro: string[];
   facts: FeatureFact[];
   steps: FeatureStep[];
+  /** What else the feature's area does, grouped. See {@link FeatureCapabilities}. */
+  capabilities?: FeatureCapabilities;
   shots: FeatureShot[];
   /**
    * What it deliberately does NOT do. Every feature has some — a page without
@@ -372,8 +394,13 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     group: 'auswerten',
     status: 'beta',
     shots: [
-      { src: '/video-tagging-spuren.png', width: 2500, height: 1132 },
-      { src: '/video-tagging-katalog.png', width: 768, height: 1560 },
+      { src: '/video-tagging-spuren.png', width: 2500, height: 1152 },
+      { src: '/video-filter.png', width: 2560, height: 1800 },
+      { src: '/video-bibliothek.png', width: 2560, height: 2156 },
+      { src: '/video-versendet.png', width: 2560, height: 1546 },
+      { src: '/video-tagging-katalog.png', width: 768, height: 2104 },
+      { src: '/mobil-clip-posteingang.png', width: 780, height: 1688 },
+      { src: '/mobil-mediathek.png', width: 780, height: 1688 },
     ],
     related: ['live-erfassung', 'wurfbilder', 'trainer-zusammenarbeit'],
     ogImage: '/video-tagging-spuren.png',
@@ -382,7 +409,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       title:
         'Handball Videoanalyse & Tagging (Beta) – Szenen, Spuren, Playlists',
       description:
-        'Spielaufnahmen hochladen, Szenen mit Aktion, Spielerin, Phase und Abwehr taggen, nach allem filtern und Zusammenschnitte an einzelne Spielerinnen schicken. Die Funktion ist im Aufbau und noch nicht für alle Konten freigeschaltet.',
+        'Spielaufnahmen hochladen, Szenen mit Aktion, Spielerin, Phase und Abwehr taggen, nach allem filtern, Zusammenschnitte an Spielerinnen schicken und Videos für die Mannschaft freigeben. Die Funktion ist im Aufbau und noch nicht für alle Konten freigeschaltet.',
       keywords: [
         'handball videoanalyse',
         'handball video tagging',
@@ -668,6 +695,7 @@ export function withCopy(record: FeatureRecord, copy: FeatureCopy): Feature {
     intro: copy.intro,
     facts: copy.facts,
     steps: copy.steps,
+    ...(copy.capabilities ? { capabilities: copy.capabilities } : {}),
     shots: record.shots.map((shot, index) => ({
       ...shot,
       alt: copy.shots[index]?.alt ?? '',

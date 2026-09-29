@@ -5001,8 +5001,8 @@
             "value": "Zapisane filtry, a nie foldery z klipami"
           },
           {
-            "term": "Wysyłki",
-            "value": "Zawodniczka widzi tylko swoje sceny"
+            "term": "Przekazywanie",
+            "value": "Klipy dla zawodniczki lub sztabu, mediateka dla drużyny"
           },
           {
             "term": "Działa bez meczu",
@@ -5027,21 +5027,160 @@
             "body": "Filtr przechodzi jednocześnie po tagach i zapisanych zdarzeniach. To, co pasuje, odtwarza się jako skrót, da się zapisać jako playlistę i wysłać zawodniczce — ta widzi wtedy dokładnie te sceny, a nie mecz za nimi."
           }
         ],
+        "capabilities": {
+          "title": "Dział wideo potrafi więcej niż tagowanie",
+          "intro": "Tagowanie to warsztat. Wokół niego jest wszystko, czego nagranie potrzebuje w drodze z telefonu do szatni — i to, co dzieje się z nim potem. Wszystko to należy do tej samej bety.",
+          "groups": [
+            {
+              "name": "Nagrywanie",
+              "intro": "Zanim otagujesz pierwszą scenę.",
+              "items": [
+                {
+                  "name": "Wysyłanie w blokach",
+                  "body": "Wyślij mecz w częściach po 30 minut. Statix łączy je w jedno nagranie, zwykle bez ponownego kodowania."
+                },
+                {
+                  "name": "Wznawianie wysyłki",
+                  "body": "Gdy połączenie się zerwie, wysyłka rusza tam, gdzie stanęła — wysyłane jest tylko to, czego jeszcze brakuje."
+                },
+                {
+                  "name": "Przycinanie",
+                  "body": "Odetnij rozgrzewkę i to, co po meczu, zanim wyślesz z tego choć sekundę."
+                },
+                {
+                  "name": "Obrócone nagrania",
+                  "body": "Jeśli wideo stoi do góry nogami, prostujesz je w podglądzie. Potem obrót zostaje raz na stałe wliczony."
+                },
+                {
+                  "name": "Mecz albo trening",
+                  "body": "Nagranie należy do meczu albo do terminu. Przy treningu ustalasz, kogo na nim widać."
+                }
+              ]
+            },
+            {
+              "name": "Tagowanie i szukanie",
+              "intro": "Co warsztat potrafi poza akcją, zawodniczką i kontekstem.",
+              "items": [
+                {
+                  "name": "Własne zagrywki",
+                  "body": "Zeszyt zagrywek drużyny: raz nazwać, dotknąć na wideo i zapisać, czy zagrywka wyszła."
+                },
+                {
+                  "name": "Własne tagi",
+                  "body": "To, czego brakuje w katalogu — „zachowanie w obronie”, „mowa ciała” — dostaje własny przycisk, własną ścieżkę i własny filtr."
+                },
+                {
+                  "name": "Przewaga i osłabienie same z siebie",
+                  "body": "Wyliczone z kar w protokole: każda faza jako jedna scena i jako filtr, bez tagowania ręcznie."
+                },
+                {
+                  "name": "Filtry z liczbami",
+                  "body": "Każdy przycisk mówi z góry, ile scen się za nim kryje. Mapy rzutów i bramki filtrują po strefie, tak jak w statystyce."
+                },
+                {
+                  "name": "Sceny ze wszystkich meczów",
+                  "body": "Jedno pytanie do każdego nagrania sezonu zamiast do jednego — zapisane jako playlista całej drużyny."
+                },
+                {
+                  "name": "Protokół z wideo",
+                  "body": "Jeśli nikt nie zapisywał na żywo, statystyka powstaje później przed nagraniem. Tylko przy meczu bez protokołu — dzięki temu nic nie liczy się podwójnie."
+                }
+              ]
+            },
+            {
+              "name": "Pokazywanie i udostępnianie",
+              "intro": "Jak scena trafia do drużyny — w szatni albo na telefon.",
+              "items": [
+                {
+                  "name": "Wynik na obrazie",
+                  "body": "Wynik, minuta meczu i kolory koszulek nad obrazem jak w transmisji, do tego karta przy bramce, obronie i czasie."
+                },
+                {
+                  "name": "Tryb odprawy",
+                  "body": "Pełny ekran do szatni: zatrzymać, rysować, powiększać — i nagrać odprawę razem z głosem jako osobne wideo."
+                },
+                {
+                  "name": "Przed i po scenie",
+                  "body": "Ile sekund leci przed sceną i po niej, ustawiasz raz na urządzenie."
+                },
+                {
+                  "name": "Wysyłki",
+                  "body": "Wysyłaj sceny zawodniczce albo sztabowi, w razie potrzeby cały mecz i z pobieraniem. Lista pokazuje, kto otworzył."
+                },
+                {
+                  "name": "Mediateka drużyny",
+                  "body": "Udostępniaj drużynie całe nagrania, do wyboru z pobieraniem. Zawodniczki znajdą je w skrzynce odbiorczej."
+                },
+                {
+                  "name": "Pobieranie",
+                  "body": "Całe nagranie albo tylko sceny z wyboru jako MP4 — na życzenie z wtopionym wynikiem."
+                }
+              ]
+            },
+            {
+              "name": "Analiza obrazu",
+              "intro": "Najmłodsza część, liczona na wynajętej karcie graficznej w UE. To, co znajdzie, to propozycje.",
+              "items": [
+                {
+                  "name": "Kalibracja boiska",
+                  "body": "Zaznacz charakterystyczne punkty boiska na stopklatce — od tej chwili każdy piksel to miejsce w metrach boiska."
+                },
+                {
+                  "name": "Drogi biegu i mapy ciepła",
+                  "body": "Każda osoba na obrazie jest śledzona, z dystansem, tempem i mapą ciepła. Statix proponuje, która to zawodniczka; ty potwierdzasz."
+                },
+                {
+                  "name": "Lot piłki i punkt trafienia",
+                  "body": "Loty piłki są rozpoznawane i dzielone na rzuty i podania. Miejsce, w którym rzut trafia w bramkę, jest proponowane jako strefa."
+                },
+                {
+                  "name": "Panorama z dwóch kamer",
+                  "body": "Dwie kamery, po jednej na połowę hali, zostają zszyte w jeden obraz całego boiska."
+                },
+                {
+                  "name": "Wersja z panoramowaniem",
+                  "body": "Z panoramy powstaje kadr, który podąża za grą jak w telewizji, prowadzony przez drogi biegu i piłkę."
+                }
+              ]
+            }
+          ]
+        },
         "shots": [
           {
             "alt": "Ścieżki warsztatu tagowania w Statix: każda akcja to wiersz, każda scena to blok na osi czasu",
             "label": "Ścieżki: jedna połowa, posortowana po akcji"
           },
           {
-            "alt": "Katalog tagowania w Statix z wyborem strony, kadrą i przyciskami akcji",
-            "label": "Strona, kadra, akcja — po jednym dotknięciu, każde ze skrótem"
+            "alt": "Panel filtrów warsztatu tagowania w Statix: każda akcja z liczbą scen, do tego zagrywki, własne tagi oraz przewaga i osłabienie",
+            "label": "Filtr: na każdym przycisku liczba scen, które się za nim kryją"
+          },
+          {
+            "alt": "Biblioteka wideo w Statix jako lista z widocznością, stanem, wysyłkami, wyświetleniami i scenami każdego nagrania",
+            "label": "Biblioteka: kto co widzi i na jakim etapie jest każde nagranie"
+          },
+          {
+            "alt": "Wysłane klipy w Statix z odbiorczynią, datą i informacją, czy klip został otwarty",
+            "label": "Wysłane: każdy klip, do kogo i czy został obejrzany"
+          },
+          {
+            "alt": "Katalog tagowania w Statix z wyborem strony, kadrą, własnymi zagrywkami, własnymi tagami i przyciskami akcji",
+            "label": "Strona, kadra, zagrywka, akcja — po jednym dotknięciu"
+          },
+          {
+            "alt": "Skrzynka odbiorcza zawodniczki w Statix na telefonie, z klipem od trenera i nagraniami drużyny",
+            "label": "U zawodniczki: klip w skrzynce odbiorczej"
+          },
+          {
+            "alt": "Nagrania drużyny w Statix na telefonie zawodniczki, dwa z nich udostępnione do pobrania",
+            "label": "Mediateka: to, co udostępnił sztab"
           }
         ],
         "limits": [
           "Funkcja jest w budowie. Dopóki powstaje, jest ograniczona do wybranych kont — nie jako próg sprzedażowy, tylko dlatego, że niedokończona droga wysyłania plików przed każdą drużyną produkuje prawdziwe pieniądze i osierocone pliki.",
-          "Tag nie rusza żadnej liczby. Statystyka pochodzi z zapisu na żywo; otagowane sceny są odczytaniem nagrania i nie zmieniają listy strzelczyń.",
-          "Zapisane zdarzenia stają się znacznikami tylko wtedy, gdy wideo zostało zgrane z zegarem meczu.",
-          "Automatycznego rozpoznawania akcji w obrazie nie ma i nie jest planowane."
+          "Tag nie rusza żadnej liczby. Statystyka pochodzi z zapisu na żywo; otagowane sceny są odczytaniem nagrania. Jedynym wyjątkiem jest „protokół z wideo” — a ten da się włączyć tylko przy meczu, który nie ma jeszcze protokołu.",
+          "Znaczniki z zapisu na żywo, wynik na obrazie oraz przewaga i osłabienie istnieją tylko dla nagrania zgranego z zegarem meczu.",
+          "Taguje się ręcznie. Analiza obrazu rozpoznaje osoby i loty piłki, ale robi z nich tylko propozycje — nigdy sama nie zakłada sceny ani wpisu w statystyce.",
+          "Analiza obrazu potrzebuje kalibracji boiska; punkt trafienia w bramce dodatkowo obu górnych narożników bramki."
         ],
         "faq": [
           {
@@ -5054,7 +5193,7 @@
           },
           {
             "question": "Czy zawodniczka widzi cały mecz, gdy wyślę jej sceny?",
-            "answer": "Nie. Wysyłka dostarcza tylko te kawałki nagrania, które pokrywają jej sceny. Do reszty nie ma adresu — nie tylko nie ma przycisku, ale nie ma osiągalnego miejsca."
+            "answer": "Nie, jeśli wysyłasz jej sceny: wysyłka dostarcza tylko te kawałki nagrania, które pokrywają te sceny. Do reszty nie ma adresu — nie tylko nie ma przycisku, ale nie ma osiągalnego miejsca. Cały mecz zobaczy tylko wtedy, gdy wyślesz go jej wprost jako całe nagranie albo udostępnisz drużynie."
           },
           {
             "question": "Ile miejsca zajmuje jeden mecz?",
@@ -5988,6 +6127,7 @@
       "shotsKicker": "Z aplikacji",
       "shotsTitle": "Tak to wygląda",
       "shotsDescription": "Prawdziwe zrzuty ze Statix — bez montażu. Gdy aplikacja się zmienia, robimy je od nowa.",
+      "capabilitiesKicker": "Co jeszcze do tego należy",
       "stepsKicker": "Przebieg",
       "stepsTitle": "Tak to działa w praktyce",
       "limitsKicker": "Szczerze mówiąc",

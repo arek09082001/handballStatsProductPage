@@ -8,6 +8,7 @@ import { useFeature } from '../data/use-features';
 import FeatureHeader from '../components/feature-header';
 import FeatureOverview from '../components/feature-overview';
 import FeatureShots from '../components/feature-shots';
+import FeatureCapabilities from '../components/feature-capabilities';
 import FeatureSteps from '../components/feature-steps';
 import FeatureLimits from '../components/feature-limits';
 import FeatureRelated from '../components/feature-related';
@@ -22,11 +23,14 @@ import HoldGestureShowcase from '../components/hold-gesture-showcase';
  * steps) → paper panel (the limits, then the FAQ) → paper (neighbours) → court
  * (the ask). The dark bands are the two that carry pictures of the app, which
  * is itself dark — a shot pinned to the court is a print on the board; the same
- * shot on paper is a cut-out.
+ * shot on paper is a cut-out. A feature with a list of the rest of its area
+ * (`capabilities`, only `video-tagging`) puts it on paper between its drawn
+ * bench and the screenshots, which also keeps those two court bands apart.
  *
  * ORDER — a coach decides in this sequence: is this the thing I mean (hero),
- * what is it exactly (overview), show me (shots), how does my Tuesday change
- * (steps), where does it stop (limits), the two questions I still have (FAQ),
+ * what is it exactly (overview), what else is in there (capabilities, where a
+ * feature has them), show me (shots), how does my Tuesday change (steps),
+ * where does it stop (limits), the two questions I still have (FAQ),
  * what else is there (related), fine (CTA).
  *
  * The page takes the slug rather than the feature: the catalogue's copy comes
@@ -57,6 +61,7 @@ export default function FeaturePage({ slug }: { slug: string }) {
       <FeatureOverview feature={feature} />
       {feature.mock === 'tagging-bench' ? <TaggingBenchMock /> : null}
       {feature.showcase === 'hold-gesture' ? <HoldGestureShowcase /> : null}
+      <FeatureCapabilities feature={feature} />
       <FeatureShots feature={feature} />
       <FeatureSteps feature={feature} tone={hasCourtBand ? 'paper' : 'court'} />
       <FeatureLimits feature={feature} />
