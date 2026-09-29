@@ -322,7 +322,14 @@
       "tacticsBoard": "Tableau tactique",
       "handballStats": "Statistiques de handball",
       "schedule": "Rendez-vous et présence",
-      "videoTagging": "Marquage vidéo"
+      "videoTagging": "Marquage vidéo",
+      "holdSwipe": "Maintenir et glisser"
+    },
+    "spotlight": {
+      "badge": "Nouveau",
+      "title": "Maintenir et glisser",
+      "description": "Quatre actions d’un seul pouce, directement sur le terrain – sans passer par le panneau.",
+      "ariaLabel": "Nouvelle fonction : voir Maintenir et glisser"
     },
     "groups": {
       "product": "Produit",
@@ -4314,6 +4321,7 @@
       "beta": "En cours — en construction et pas encore activée pour tous les comptes.",
       "onRequest": "Configuré pour le club plutôt que créé soi-même."
     },
+    "newLabel": "Nouveau",
     "items": [
       {
         "slug": "live-erfassung",
@@ -4402,6 +4410,92 @@
           {
             "question": "Ai-je besoin d’une tablette ?",
             "answer": "Non. Statix fonctionne sur téléphone comme sur tablette, iPad ou ordinateur portable. Une tablette est plus confortable parce qu’on voit plus d’effectif d’un coup — nécessaire, elle ne l’est pas."
+          }
+        ]
+      },
+      {
+        "slug": "halten-und-wischen",
+        "name": "Maintenir et glisser : quatre actions directement sur le terrain",
+        "short": "Maintenir et glisser",
+        "headline": "Un pouce, quatre directions, aucun menu",
+        "summary": "Maintenez une joueuse sur le terrain, glissez dans une direction, relâchez : duel perdu, 7 m concédé, 7 m obtenu ou 2 min obtenues – sans un seul bouton dans le panneau.",
+        "tagline": "Pour les actions qui n’ont pas de place dans le panneau au rythme du match : maintenir, glisser, relâcher – et le regard reste sur le jeu.",
+        "intro": [
+          "Certaines actions reviennent à chaque attaque et n’ont pourtant pas de bouton : le duel perdu, le jet de 7 m concédé par votre propre défense, le 7 m ou l’exclusion obtenus par une attaquante. Un bouton de plus dans le panneau aurait coûté, au rythme du match, exactement ce pour quoi Statix est conçu : le regard sur le terrain.",
+          "C’est pourquoi elles se trouvent sur la joueuse elle-même. Maintenez sa carte sur le terrain une demi-seconde : le terrain s’assombrit, elle reste exactement à sa place et quatre cibles apparaissent autour d’elle. En haut « Duel perdu », en bas « 7 m concédé », à gauche « 7 m obtenu », à droite « 2 min obtenues ». La cible sous votre pouce s’allume avant que vous ne relâchiez : vous lisez ce qui sera enregistré au lieu de le découvrir.",
+          "Relâcher enregistre, avec « Annuler » dans la notification en dessous. Revenir au centre puis relâcher n’enregistre rien. Un appui bref ouvre toujours la sélection rapide et un glissement remplace toujours une joueuse – le geste n’occupe que le moment qui ne servait à rien : maintenir sans glisser."
+        ],
+        "facts": [
+          {
+            "term": "Déclencher",
+            "value": "Maintenir une joueuse sur le terrain une demi-seconde"
+          },
+          {
+            "term": "En haut",
+            "value": "Duel perdu"
+          },
+          {
+            "term": "En bas",
+            "value": "7 m concédé"
+          },
+          {
+            "term": "Gauche / droite",
+            "value": "7 m obtenu / 2 min obtenues"
+          },
+          {
+            "term": "Annuler",
+            "value": "Revenir au centre, puis relâcher"
+          },
+          {
+            "term": "Corriger",
+            "value": "« Annuler » dans la notification, ou plus tard dans le déroulé du match"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Maintenir",
+            "body": "Le pouce sur la joueuse, immobile une demi-seconde. Une barre se remplit et le menu s’ouvre."
+          },
+          {
+            "title": "Glisser",
+            "body": "Vers l’action. La cible s’allume dès que votre pouce l’atteint, et la carte de la joueuse prend sa couleur."
+          },
+          {
+            "title": "Relâcher",
+            "body": "Enregistré, pour cette joueuse précise, au temps de jeu actuel. La notification en bas nomme l’action et la joueuse et propose « Annuler »."
+          },
+          {
+            "title": "Le retrouver dans les statistiques",
+            "body": "Dans le tableau des joueuses, ces actions ont leurs propres colonnes. Les trois colonnes des 7 m et des exclusions n’apparaissent que lorsqu’un match en contient une : une colonne pleine de zéros laisserait croire « jamais réussi » là où rien n’a été saisi. L’analyse de match par IA lit les quatre."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Menu de maintien de Statix sur une tablette : numéro 9 maintenu, glissé vers le bas, la cible « 7 m concédé » allumée en rouge",
+            "label": "Sur la tablette : maintenu, glissé vers le bas – « 7 m concédé » est choisi"
+          }
+        ],
+        "limits": [
+          "Uniquement pour les joueuses sur le terrain. Sur le banc, maintenir ne fait rien : une action appartient à quelqu’un qui joue.",
+          "La faute d’arrêt n’est pas sur le geste : elle a déjà son propre bouton dans le panneau – sur téléphone sous « Plus ». Le geste est pour les actions qui n’en ont pas.",
+          "Un 7 m obtenu ou concédé n’est ni un tir ni un but encaissé. Le jet de 7 m lui-même se saisit comme avant – sinon la même action compterait deux fois."
+        ],
+        "faq": [
+          {
+            "question": "Et si je glisse par erreur dans la mauvaise direction ?",
+            "answer": "Tant que le pouce reste posé, rien ne se passe : revenir au centre puis relâcher annule. Et si l’action a déjà été enregistrée, « Annuler » dans la notification la retire aussitôt – ou vous la corrigez plus tard dans le déroulé du match, où chaque action se modifie."
+          },
+          {
+            "question": "Puis-je toujours faire des changements en glissant ?",
+            "answer": "Oui, comme toujours : faites glisser la carte au lieu de la maintenir immobile et vous remplacez une joueuse ou échangez des postes. Le geste ne démarre que si le pouce reste immobile une demi-seconde ; un appui bref ouvre la sélection rapide."
+          },
+          {
+            "question": "Pourquoi la faute d’arrêt n’y est-elle pas ?",
+            "answer": "Parce qu’elle a déjà son propre bouton : sur tablette dans la colonne à côté du terrain, sur téléphone sous « Plus ». Le geste est pour les actions sans bouton – c’est pourquoi en bas se trouve « 7 m concédé », l’autre façon dont un duel défensif peut mal tourner."
+          },
+          {
+            "question": "Est-ce que ça marche hors ligne ?",
+            "answer": "Oui. Une action du geste est une action comme les autres : elle est enregistrée immédiatement sur l’appareil et synchronisée dès que le réseau revient."
           }
         ]
       },
@@ -5917,6 +6011,64 @@
       "resultTitle": "Ce que cela donne",
       "resultLead": "Action, joueuse et contexte — chaque ligne est un intervalle dans la vidéo.",
       "closing": "Une playlist enregistre cette question, pas le résultat. Taguez ensuite une scène oubliée et elle y tombe d'elle-même."
+    },
+    "holdGesture": {
+      "kicker": "À quoi ça ressemble dans l’app",
+      "title": "Maintenir, glisser, relâcher",
+      "description": "De vraies captures de l’app : la même joueuse, le même instant – seule la direction change. Choisissez une direction et voyez ce qui s’allume.",
+      "padLabel": "Directions du geste de maintien",
+      "autoplayPause": "Pause",
+      "autoplayPlay": "Lecture",
+      "frames": {
+        "hold": {
+          "button": "Maintenir",
+          "move": "Immobile une demi-seconde",
+          "title": "Le menu est ouvert",
+          "body": "Le terrain s’assombrit, la joueuse reste exactement à sa place et quatre cibles apparaissent autour d’elle. Rien n’est encore choisi – la ligne en haut indique comment annuler.",
+          "alt": "Statix sur téléphone : numéro 10 maintenu, le menu à quatre cibles est ouvert",
+          "caption": "Maintenu : quatre cibles, aucune choisie"
+        },
+        "up": {
+          "button": "Duel perdu",
+          "move": "Glisser vers le haut",
+          "title": "Duel perdu",
+          "body": "La défenseuse a été battue en duel. Cela figure dans le bilan défensif à côté des contres et des fautes d’arrêt – et montre où la ligne cède.",
+          "alt": "Menu de Statix glissé vers le haut : « Duel perdu » allumé en ambre",
+          "caption": "En haut : duel perdu"
+        },
+        "down": {
+          "button": "7 m concédé",
+          "move": "Glisser vers le bas",
+          "title": "7 m concédé",
+          "body": "Le duel s’est terminé par un jet de 7 m contre vous. Il a sa propre colonne dans les statistiques du match et n’est pas un but encaissé – le jet de 7 m lui-même se saisit comme d’habitude.",
+          "alt": "Menu de Statix glissé vers le bas : « 7 m concédé » allumé en rouge",
+          "caption": "En bas : 7 m concédé"
+        },
+        "left": {
+          "button": "7 m obtenu",
+          "move": "Glisser vers la gauche",
+          "title": "7 m obtenu",
+          "body": "L’attaquante a obtenu un jet de 7 m. Cela ne compte pas comme un tir – qui le tire et s’il est marqué se saisit ensuite comme toujours.",
+          "alt": "Menu de Statix glissé vers la gauche : « 7 m obtenu » allumé en vert",
+          "caption": "À gauche : 7 m obtenu"
+        },
+        "right": {
+          "button": "2 min obtenues",
+          "move": "Glisser vers la droite",
+          "title": "2 min obtenues",
+          "body": "L’attaquante a provoqué une exclusion de 2 minutes contre l’adversaire. La supériorité numérique découle toujours de la sanction que vous saisissez pour l’adversaire.",
+          "alt": "Menu de Statix glissé vers la droite : « 2 min obtenues » allumé en vert",
+          "caption": "À droite : 2 min obtenues"
+        },
+        "release": {
+          "button": "Relâcher",
+          "move": "Levez le pouce",
+          "title": "Enregistré – avec Annuler",
+          "body": "Relâcher enregistre l’action pour cette joueuse précise. La notification nomme les deux et propose « Annuler ». Revenir d’abord au centre, puis relâcher, n’enregistre rien.",
+          "alt": "Statix après avoir relâché : notification « 7 m concédé — David R. » avec le bouton Annuler",
+          "caption": "Relâché : enregistré, « Annuler » dans la notification"
+        }
+      }
     }
   },
   "guidePage": {

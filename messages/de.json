@@ -322,7 +322,14 @@
       "tacticsBoard": "Taktikboard",
       "handballStats": "Handball-Statistiken",
       "schedule": "Termine & Teilnahme",
-      "videoTagging": "Video-Tagging"
+      "videoTagging": "Video-Tagging",
+      "holdSwipe": "Halten & Wischen"
+    },
+    "spotlight": {
+      "badge": "Neu",
+      "title": "Halten & Wischen",
+      "description": "Vier Aktionen mit einem Daumen, direkt auf dem Spielfeld – ohne Umweg über das Panel.",
+      "ariaLabel": "Neue Funktion: Halten & Wischen ansehen"
     },
     "groups": {
       "product": "Produkt",
@@ -4314,6 +4321,7 @@
       "beta": "In Arbeit — wird gerade gebaut und ist noch nicht für alle Konten freigeschaltet.",
       "onRequest": "Wird für den Verein eingerichtet statt selbst angelegt."
     },
+    "newLabel": "Neu",
     "items": [
       {
         "slug": "live-erfassung",
@@ -4402,6 +4410,92 @@
           {
             "question": "Brauche ich ein Tablet?",
             "answer": "Nein. Statix läuft auf dem Handy genauso wie auf Tablet, iPad oder Laptop. Ein Tablet ist bequemer, weil mehr Kader auf einmal sichtbar ist — nötig ist es nicht."
+          }
+        ]
+      },
+      {
+        "slug": "halten-und-wischen",
+        "name": "Halten & Wischen: vier Aktionen direkt auf dem Spielfeld",
+        "short": "Halten & Wischen",
+        "headline": "Ein Daumen, vier Richtungen, kein Menü",
+        "summary": "Spielerin auf dem Spielfeld halten, in eine Richtung wischen, loslassen: 1gg1 verloren, 7m verursacht, 7m rausgeholt oder 2 Minuten rausgeholt – ohne einen einzigen Knopf im Panel.",
+        "tagline": "Für die Aktionen, die im Spieltempo keinen Platz im Panel haben: halten, wischen, loslassen – und der Blick bleibt auf dem Spiel.",
+        "intro": [
+          "Manche Aktionen passieren in jedem Angriff und haben trotzdem keinen Knopf: der verlorene Zweikampf, der Siebenmeter, den die eigene Abwehr verursacht, der Siebenmeter oder die Zeitstrafe, die eine Angreiferin herausholt. Ein weiterer Knopf im Panel hätte im Spieltempo genau das gekostet, wofür Statix gebaut ist – den Blick aufs Feld.",
+          "Deshalb liegen sie auf der Spielerin selbst. Halte ihre Karte auf dem Spielfeld eine halbe Sekunde fest: Das Feld dunkelt ab, sie bleibt stehen, wo sie steht, und um sie herum erscheinen vier Ziele. Nach oben „1gg1 verloren“, nach unten „7m verursacht“, nach links „7m rausgeholt“, nach rechts „2 Min. rausgeholt“. Das Ziel unter dem Daumen leuchtet auf, bevor du loslässt – du liest ab, was gespeichert wird, statt es auszuprobieren.",
+          "Loslassen speichert, mit „Rückgängig“ im Hinweis darunter. Zurück zur Mitte und loslassen speichert nichts. Kurz tippen öffnet wie immer die Schnellauswahl, Ziehen wechselt wie immer aus – die Geste nimmt nur den Moment, der vorher nichts bedeutet hat: festhalten, ohne zu ziehen."
+        ],
+        "facts": [
+          {
+            "term": "Auslösen",
+            "value": "Spielerin auf dem Feld eine halbe Sekunde halten"
+          },
+          {
+            "term": "Nach oben",
+            "value": "1gg1 verloren"
+          },
+          {
+            "term": "Nach unten",
+            "value": "7m verursacht"
+          },
+          {
+            "term": "Links / rechts",
+            "value": "7m rausgeholt / 2 Min. rausgeholt"
+          },
+          {
+            "term": "Abbrechen",
+            "value": "Zurück zur Mitte, dann loslassen"
+          },
+          {
+            "term": "Korrigieren",
+            "value": "„Rückgängig“ im Hinweis oder später im Spielverlauf"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Halten",
+            "body": "Daumen auf die Spielerin und eine halbe Sekunde ruhig lassen. Ein Balken läuft voll, das Menü ist offen."
+          },
+          {
+            "title": "Wischen",
+            "body": "In die Richtung der Aktion. Das Ziel leuchtet auf, sobald der Daumen dort ist, und die Karte der Spielerin nimmt seine Farbe an."
+          },
+          {
+            "title": "Loslassen",
+            "body": "Gespeichert, für genau diese Spielerin, zur aktuellen Spielzeit. Der Hinweis unten nennt Aktion und Namen und bietet „Rückgängig“ an."
+          },
+          {
+            "title": "In der Statistik nachlesen",
+            "body": "In der Spielertabelle stehen die Aktionen in eigenen Spalten. Die drei Spalten für Siebenmeter und Zeitstrafen erscheinen erst, wenn ein Spiel eine davon trägt – eine Spalte voller Nullen sähe aus wie „nie gelungen“, wo nur nichts erfasst wurde. Die KI-Spielanalyse liest alle vier mit."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Halte-Menü in Statix auf dem Tablet: Nummer 9 gehalten, nach unten gewischt, das Ziel „7m verursacht“ leuchtet rot",
+            "label": "Auf dem Tablet: gehalten, nach unten gewischt – „7m verursacht“ ist gewählt"
+          }
+        ],
+        "limits": [
+          "Nur für Spielerinnen auf dem Feld. Auf der Bank passiert beim Halten nichts – eine Aktion gehört zu jemandem, der gerade spielt.",
+          "Das Stoppfoul liegt nicht auf der Geste: Es hat schon seinen eigenen Knopf im Panel – auf dem Telefon unter „Mehr“. Die Geste ist für die Aktionen, die keinen haben.",
+          "Ein herausgeholter oder verursachter Siebenmeter ist weder Wurf noch Gegentor. Den Siebenmeter selbst erfasst du wie bisher – sonst stünde dieselbe Szene zweimal in der Statistik."
+        ],
+        "faq": [
+          {
+            "question": "Was, wenn ich aus Versehen in die falsche Richtung wische?",
+            "answer": "Solange der Daumen unten ist, passiert nichts: Zurück zur Mitte und loslassen bricht ab. Und wenn doch gespeichert wurde, nimmt „Rückgängig“ im Hinweis die Aktion sofort zurück – oder du korrigierst sie später im Spielverlauf, wo sich jede Aktion bearbeiten lässt."
+          },
+          {
+            "question": "Kann ich weiterhin per Ziehen auswechseln?",
+            "answer": "Ja, wie immer: Wer die Karte zieht, statt sie ruhig zu halten, wechselt aus oder tauscht Positionen. Die Geste beginnt erst, wenn der Daumen eine halbe Sekunde still liegt; kurzes Tippen öffnet die Schnellauswahl."
+          },
+          {
+            "question": "Warum ist das Stoppfoul nicht dabei?",
+            "answer": "Weil es schon einen eigenen Knopf hat: auf dem Tablet in der Spalte neben dem Feld, auf dem Telefon unter „Mehr“. Die Geste ist für die Aktionen ohne Knopf – nach unten liegt deshalb „7m verursacht“, die zweite Art, wie ein Zweikampf in der Abwehr schiefgehen kann."
+          },
+          {
+            "question": "Funktioniert das auch offline?",
+            "answer": "Ja. Eine Aktion aus der Geste ist eine Aktion wie jede andere: Sie landet sofort auf dem Gerät und wird übertragen, sobald wieder Netz da ist."
           }
         ]
       },
@@ -5917,6 +6011,64 @@
       "resultTitle": "Was dabei herauskommt",
       "resultLead": "Aktion, Spielerin und Kontext — jede Zeile ein Intervall im Video.",
       "closing": "Eine Playlist speichert diese Frage, nicht das Ergebnis. Wird eine vergessene Szene nachgetaggt, fällt sie von selbst hinein."
+    },
+    "holdGesture": {
+      "kicker": "So sieht es in der App aus",
+      "title": "Halten, wischen, loslassen",
+      "description": "Echte Aufnahmen aus der App: dieselbe Spielerin, derselbe Moment – nur die Richtung wechselt. Wähl eine Richtung und sieh, was aufleuchtet.",
+      "padLabel": "Richtungen der Halte-Geste",
+      "autoplayPause": "Anhalten",
+      "autoplayPlay": "Abspielen",
+      "frames": {
+        "hold": {
+          "button": "Halten",
+          "move": "Eine halbe Sekunde ruhig halten",
+          "title": "Das Menü ist offen",
+          "body": "Das Feld dunkelt ab, die Spielerin bleibt stehen, wo sie steht, und um sie herum erscheinen vier Ziele. Noch ist nichts gewählt – oben am Rand steht, wie du abbrichst.",
+          "alt": "Statix auf dem Telefon: Nummer 10 gehalten, das Halte-Menü mit vier Zielen ist offen",
+          "caption": "Gehalten: vier Ziele, noch keins gewählt"
+        },
+        "up": {
+          "button": "1gg1 verloren",
+          "move": "Nach oben wischen",
+          "title": "1gg1 verloren",
+          "body": "Die Abwehrspielerin wurde im Zweikampf ausgespielt. Das steht in der Abwehr-Bilanz neben Blocks und Stoppfouls – und zeigt, wo die Reihe bricht.",
+          "alt": "Halte-Menü in Statix, nach oben gewischt: „1gg1 verloren“ leuchtet gelb",
+          "caption": "Nach oben: 1gg1 verloren"
+        },
+        "down": {
+          "button": "7m verursacht",
+          "move": "Nach unten wischen",
+          "title": "7m verursacht",
+          "body": "Der Zweikampf endete mit einem Siebenmeter gegen euch. Er bekommt eine eigene Spalte in der Spielstatistik und ist kein Gegentor – den Siebenmeter selbst erfasst du wie gewohnt.",
+          "alt": "Halte-Menü in Statix, nach unten gewischt: „7m verursacht“ leuchtet rot",
+          "caption": "Nach unten: 7m verursacht"
+        },
+        "left": {
+          "button": "7m rausgeholt",
+          "move": "Nach links wischen",
+          "title": "7m rausgeholt",
+          "body": "Die Angreiferin hat einen Siebenmeter herausgeholt. Das zählt nicht als Wurf – wer ihn wirft und ob er sitzt, erfasst du danach wie immer.",
+          "alt": "Halte-Menü in Statix, nach links gewischt: „7m rausgeholt“ leuchtet grün",
+          "caption": "Nach links: 7m rausgeholt"
+        },
+        "right": {
+          "button": "2 Min. rausgeholt",
+          "move": "Nach rechts wischen",
+          "title": "2 Min. rausgeholt",
+          "body": "Die Angreiferin hat eine Zeitstrafe gegen den Gegner herausgeholt. Die Überzahl ergibt sich wie bisher aus der Strafe, die du beim Gegner einträgst.",
+          "alt": "Halte-Menü in Statix, nach rechts gewischt: „2 Min. rausgeholt“ leuchtet grün",
+          "caption": "Nach rechts: 2 Min. rausgeholt"
+        },
+        "release": {
+          "button": "Loslassen",
+          "move": "Daumen hoch",
+          "title": "Gespeichert – mit Rückgängig",
+          "body": "Loslassen speichert die Aktion für genau diese Spielerin. Der Hinweis nennt beides und bietet „Rückgängig“ an. Zurück zur Mitte und erst dann loslassen speichert nichts.",
+          "alt": "Statix nach dem Loslassen: Hinweis „7m verursacht — David R.“ mit der Schaltfläche Rückgängig",
+          "caption": "Losgelassen: gespeichert, „Rückgängig“ im Hinweis"
+        }
+      }
     }
   },
   "guidePage": {

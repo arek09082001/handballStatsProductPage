@@ -5,7 +5,11 @@ import {
   FEATURES_PAGE_PATH,
   featurePath,
 } from '@/features/funktionen/data/features';
-import { NavigationGroup, NavigationItem } from './interfaces';
+import {
+  NavigationGroup,
+  NavigationItem,
+  NavigationSpotlight,
+} from './interfaces';
 
 export const SITE_NAVBAR_OFFSET = 96;
 
@@ -31,6 +35,11 @@ const productGroup: NavigationGroup = {
     // detail — a visitor looking for "kann das Trainingsbeteiligung" left the
     // site at that anchor.
     { ident: 1, href: FEATURES_PAGE_PATH, labelKey: 'features' },
+    {
+      ident: 27,
+      href: featurePath('halten-und-wischen'),
+      labelKey: 'holdSwipe',
+    },
     {
       ident: 25,
       href: featurePath('termine-und-teilnahme'),
@@ -94,6 +103,21 @@ const resourcesGroup: NavigationGroup = {
     { ident: 3, href: '/#faq', labelKey: 'faq', sectionId: 'faq' },
     { ident: 21, href: '/#newsletter', labelKey: 'newsletter' },
   ],
+};
+
+/**
+ * The feature the header shows off on its own: a magnet with the gesture's
+ * four arrows and a "Neu" badge, beside the entries on desktop and beside the
+ * menu button on a phone, plus a card at the top of the mobile menu.
+ *
+ * Deliberately a separate slot and not a sixth header entry. The header row is
+ * kept to five words on purpose (see below), and a new feature is news for a
+ * few weeks, not a permanent section of the site — when it stops being new,
+ * this constant goes and the footer entry in `productGroup` stays.
+ */
+export const navigationSpotlight: NavigationSpotlight = {
+  href: featurePath('halten-und-wischen'),
+  labelKey: 'holdSwipe',
 };
 
 export const siteLinkGroups: NavigationGroup[] = [

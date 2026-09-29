@@ -12,6 +12,17 @@ export interface NavigationLink {
   sectionId?: string;
 }
 
+/**
+ * The one feature the header points at on its own, beside the regular entries
+ * — see `navigationSpotlight` in `config.ts`. Its copy lives under
+ * `navigationSection.spotlight`.
+ */
+export interface NavigationSpotlight {
+  href: string;
+  /** Key under `navigationSection.items`, for the footer and the menu list. */
+  labelKey: string;
+}
+
 export interface NavigationGroup {
   /** Key under `navigationSection.groups`. */
   labelKey: string;

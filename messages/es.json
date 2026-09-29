@@ -322,7 +322,14 @@
       "tacticsBoard": "Pizarra táctica",
       "handballStats": "Estadísticas de balonmano",
       "schedule": "Calendario y asistencia",
-      "videoTagging": "Etiquetado de vídeo"
+      "videoTagging": "Etiquetado de vídeo",
+      "holdSwipe": "Mantener y deslizar"
+    },
+    "spotlight": {
+      "badge": "Nuevo",
+      "title": "Mantener y deslizar",
+      "description": "Cuatro acciones con un pulgar, directamente en la pista, sin pasar por el panel.",
+      "ariaLabel": "Nueva función: ver Mantener y deslizar"
     },
     "groups": {
       "product": "Producto",
@@ -4314,6 +4321,7 @@
       "beta": "En construcción: se está desarrollando y todavía no está habilitada para todas las cuentas.",
       "onRequest": "Se configura para el club en vez de crearse por cuenta propia."
     },
+    "newLabel": "Nuevo",
     "items": [
       {
         "slug": "live-erfassung",
@@ -4402,6 +4410,92 @@
           {
             "question": "¿Necesito una tableta?",
             "answer": "No. Statix funciona en el móvil igual que en tableta, iPad o portátil. Una tableta es más cómoda porque se ve más plantilla de golpe, pero no es necesaria."
+          }
+        ]
+      },
+      {
+        "slug": "halten-und-wischen",
+        "name": "Mantener y deslizar: cuatro acciones directamente en la pista",
+        "short": "Mantener y deslizar",
+        "headline": "Un pulgar, cuatro direcciones, ningún menú",
+        "summary": "Mantén pulsada a una jugadora en la pista, desliza en una dirección y suelta: 1c1 perdido, 7 m cometido, 7 m provocado o 2 min provocados, sin un solo botón en el panel.",
+        "tagline": "Para las acciones que no caben en el panel a ritmo de partido: mantener, deslizar, soltar, y la vista sigue en el juego.",
+        "intro": [
+          "Algunas acciones ocurren en cada ataque y aun así no tienen botón: el duelo perdido, el 7 metros que comete tu propia defensa, el 7 metros o la exclusión que provoca una atacante. Un botón más en el panel habría costado, a ritmo de partido, justo aquello para lo que está hecho Statix: la vista en la pista.",
+          "Por eso están en la propia jugadora. Mantén su tarjeta en la pista medio segundo: la pista se oscurece, ella se queda exactamente donde está y aparecen cuatro objetivos a su alrededor. Arriba «1c1 perdido», abajo «7 m cometido», a la izquierda «7 m provocado», a la derecha «2 min provocados». El objetivo bajo tu pulgar se ilumina antes de soltar: lees lo que se va a guardar en lugar de averiguarlo.",
+          "Soltar guarda la acción, con «Deshacer» en el aviso de abajo. Volver al centro y soltar no guarda nada. Un toque corto sigue abriendo la selección rápida y arrastrar sigue haciendo cambios: el gesto solo ocupa el momento que antes no significaba nada, mantener sin arrastrar."
+        ],
+        "facts": [
+          {
+            "term": "Activar",
+            "value": "Mantener a una jugadora en la pista medio segundo"
+          },
+          {
+            "term": "Arriba",
+            "value": "1c1 perdido"
+          },
+          {
+            "term": "Abajo",
+            "value": "7 m cometido"
+          },
+          {
+            "term": "Izquierda / derecha",
+            "value": "7 m provocado / 2 min provocados"
+          },
+          {
+            "term": "Cancelar",
+            "value": "Volver al centro y luego soltar"
+          },
+          {
+            "term": "Corregir",
+            "value": "«Deshacer» en el aviso o después en el desarrollo del partido"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Mantener",
+            "body": "El pulgar sobre la jugadora, quieto medio segundo. Una barra se llena y el menú se abre."
+          },
+          {
+            "title": "Deslizar",
+            "body": "Hacia la acción. El objetivo se ilumina en cuanto llega tu pulgar y la tarjeta de la jugadora toma su color."
+          },
+          {
+            "title": "Soltar",
+            "body": "Guardado, para esta jugadora exacta y en el tiempo de juego actual. El aviso de abajo nombra la acción y la jugadora y ofrece «Deshacer»."
+          },
+          {
+            "title": "Consultarlo en la estadística",
+            "body": "En la tabla de jugadoras estas acciones tienen columnas propias. Las tres columnas de 7 metros y exclusiones solo aparecen cuando un partido tiene alguna: una columna llena de ceros parecería «nunca lo logró» donde simplemente no se registró nada. El análisis de partido con IA lee las cuatro."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Menú de mantener de Statix en una tableta: número 9 mantenido, deslizado hacia abajo, el objetivo «7 m cometido» iluminado en rojo",
+            "label": "En la tableta: mantenido, deslizado hacia abajo – «7 m cometido» está elegido"
+          }
+        ],
+        "limits": [
+          "Solo para jugadoras en la pista. En el banquillo, mantener pulsado no hace nada: una acción pertenece a alguien que está jugando.",
+          "La falta de freno no está en el gesto: ya tiene su propio botón en el panel; en el móvil, en «Más». El gesto es para las acciones que no tienen ninguno.",
+          "Un 7 metros provocado o cometido no es ni lanzamiento ni gol encajado. El lanzamiento de 7 metros en sí lo registras como siempre; si no, la misma jugada contaría dos veces."
+        ],
+        "faq": [
+          {
+            "question": "¿Y si deslizo por error en la dirección equivocada?",
+            "answer": "Mientras el pulgar siga abajo no pasa nada: volver al centro y soltar cancela. Y si ya se guardó, «Deshacer» en el aviso lo retira al instante, o lo corriges después en el desarrollo del partido, donde cada acción se puede editar."
+          },
+          {
+            "question": "¿Puedo seguir haciendo cambios arrastrando?",
+            "answer": "Sí, como siempre: si arrastras la tarjeta en vez de mantenerla quieta, haces un cambio o intercambias posiciones. El gesto solo empieza cuando el pulgar descansa medio segundo; un toque corto abre la selección rápida."
+          },
+          {
+            "question": "¿Por qué no está la falta de freno?",
+            "answer": "Porque ya tiene su propio botón: en la tableta, en la columna junto a la pista; en el móvil, en «Más». El gesto es para las acciones sin botón; por eso abajo está «7 m cometido», la otra forma en que un duelo defensivo puede salir mal."
+          },
+          {
+            "question": "¿Funciona sin conexión?",
+            "answer": "Sí. Una acción del gesto es una acción como cualquier otra: se guarda al instante en el dispositivo y se sincroniza en cuanto vuelve a haber cobertura."
           }
         ]
       },
@@ -5917,6 +6011,64 @@
       "resultTitle": "Lo que sale de ahí",
       "resultLead": "Acción, jugadora y contexto: cada fila es un intervalo del vídeo.",
       "closing": "Una lista de reproducción guarda esta pregunta, no el resultado. Si etiquetas después una escena olvidada, cae dentro sola."
+    },
+    "holdGesture": {
+      "kicker": "Así se ve en la app",
+      "title": "Mantener, deslizar, soltar",
+      "description": "Capturas reales de la app: la misma jugadora, el mismo momento; solo cambia la dirección. Elige una dirección y mira qué se ilumina.",
+      "padLabel": "Direcciones del gesto de mantener",
+      "autoplayPause": "Pausar",
+      "autoplayPlay": "Reproducir",
+      "frames": {
+        "hold": {
+          "button": "Mantener",
+          "move": "Quieto medio segundo",
+          "title": "El menú está abierto",
+          "body": "La pista se oscurece, la jugadora se queda exactamente donde está y aparecen cuatro objetivos a su alrededor. Todavía no hay nada elegido; arriba se indica cómo cancelar.",
+          "alt": "Statix en el móvil: número 10 mantenido, el menú con cuatro objetivos está abierto",
+          "caption": "Mantenido: cuatro objetivos, ninguno elegido"
+        },
+        "up": {
+          "button": "1c1 perdido",
+          "move": "Desliza hacia arriba",
+          "title": "1c1 perdido",
+          "body": "La defensora fue superada en el duelo. Figura en el balance defensivo junto a blocajes y faltas de freno, y muestra dónde se rompe la línea.",
+          "alt": "Menú de Statix deslizado hacia arriba: «1c1 perdido» iluminado en ámbar",
+          "caption": "Arriba: 1c1 perdido"
+        },
+        "down": {
+          "button": "7 m cometido",
+          "move": "Desliza hacia abajo",
+          "title": "7 m cometido",
+          "body": "El duelo terminó con un 7 metros en contra. Tiene su propia columna en la estadística del partido y no es un gol encajado; el lanzamiento de 7 metros en sí lo registras como siempre.",
+          "alt": "Menú de Statix deslizado hacia abajo: «7 m cometido» iluminado en rojo",
+          "caption": "Abajo: 7 m cometido"
+        },
+        "left": {
+          "button": "7 m provocado",
+          "move": "Desliza hacia la izquierda",
+          "title": "7 m provocado",
+          "body": "La atacante provocó un 7 metros. No cuenta como lanzamiento; quién lo tira y si entra lo registras después como siempre.",
+          "alt": "Menú de Statix deslizado hacia la izquierda: «7 m provocado» iluminado en verde",
+          "caption": "Izquierda: 7 m provocado"
+        },
+        "right": {
+          "button": "2 min provocados",
+          "move": "Desliza hacia la derecha",
+          "title": "2 min provocados",
+          "body": "La atacante provocó una exclusión de 2 minutos del rival. La superioridad en sí sigue saliendo de la exclusión que registras para el rival.",
+          "alt": "Menú de Statix deslizado hacia la derecha: «2 min provocados» iluminado en verde",
+          "caption": "Derecha: 2 min provocados"
+        },
+        "release": {
+          "button": "Soltar",
+          "move": "Levanta el pulgar",
+          "title": "Guardado, con Deshacer",
+          "body": "Soltar guarda la acción para esta jugadora exacta. El aviso nombra ambas cosas y ofrece «Deshacer». Volver primero al centro y luego soltar no guarda nada.",
+          "alt": "Statix tras soltar: aviso «7 m cometido — David R.» con el botón Deshacer",
+          "caption": "Soltado: guardado, «Deshacer» en el aviso"
+        }
+      }
     }
   },
   "guidePage": {

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Menu, UserPlus, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -11,7 +12,12 @@ import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from './language-switcher';
 import NavDropdown from './nav-dropdown';
-import { primaryNavigationItems, siteLinkGroups } from '../config';
+import NavSpotlight from './nav-spotlight';
+import {
+  navigationSpotlight,
+  primaryNavigationItems,
+  siteLinkGroups,
+} from '../config';
 import { useSiteNavbar } from '../hooks/use-site-navbar';
 
 export default function SiteNavbar() {
@@ -28,6 +34,7 @@ export default function SiteNavbar() {
   } = useSiteNavbar();
 
   const [hoveredIdent, setHoveredIdent] = useState<number | null>(null);
+  const spotlightActive = usePathname() === navigationSpotlight.href;
 
   const isNavInFocus = isOpen || isScrollingUp || !isScrolled;
 
@@ -181,7 +188,30 @@ export default function SiteNavbar() {
             </div>
           </div>
 
-          <div className='ml-auto hidden items-center justify-end gap-3 lg:flex lg:w-60'>
+          {/* The spotlight magnet, outside the pill on purpose: it is not a
+           * sixth section of the site but a pointer at something new — see
+           * `navigationSpotlight`.
+           *
+           * Its slot only takes what the row has left. The entries are long in
+           * French and Spanish ("Preguntas frecuentes"), and at 1024px the pill
+           * alone already fills the row there — a fixed-width magnet pushed the
+           * register button out of the bar. So the slot is a size container
+           * (its min-content is zero, the pill never gives way to it), it
+           * shrinks first, and the magnet shows only while the whole magnet
+           * fits. The negative margin cancels the row's gap, so a collapsed
+           * slot costs nothing either. */}
+          <div className='@container relative z-10 hidden min-w-0 shrink basis-[4.25rem] lg:-ml-3 lg:block'>
+            <div className='hidden justify-end pl-3 @min-[3.5rem]:flex'>
+              <NavSpotlight variant='bar' active={spotlightActive} />
+            </div>
+          </div>
+
+          {/* At least the brand column's width, so the pill stays centred —
+           * but never less than its content. "Jetzt registrieren" makes the
+           * pair 263px wide against a fixed `w-60`, and right-aligned it
+           * spilled out to the left: invisible while nothing stood there,
+           * on top of the spotlight magnet once it did. */}
+          <div className='ml-auto hidden shrink-0 items-center justify-end gap-3 lg:flex lg:min-w-60'>
             <LanguageSwitcher />
             <Link
               href={CLUB_CONFIG.website.appUrl}
@@ -193,6 +223,12 @@ export default function SiteNavbar() {
               <UserPlus className='size-3.5 shrink-0' />
               {t('registerCta')}
             </Link>
+          </div>
+
+          {/* On a phone the bar is only the menu button, so the magnet sits
+           * right beside it — the one thing a visitor sees before opening it. */}
+          <div className='lg:hidden'>
+            <NavSpotlight variant='button' active={spotlightActive} />
           </div>
 
           <button
@@ -291,6 +327,12 @@ export default function SiteNavbar() {
                   <UserPlus className='size-4 shrink-0' />
                   {t('registerCta')}
                 </Link>
+
+                <NavSpotlight
+                  variant='card'
+                  active={spotlightActive}
+                  onNavigate={closeMenu}
+                />
 
                 {/* Same taxonomy, same order and same labels as the footer
                  * columns: one grouped list instead of the flat run of

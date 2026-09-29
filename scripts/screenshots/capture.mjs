@@ -400,6 +400,60 @@ async function tapPlayer(page, name) {
 }
 
 /**
+ * Press and hold a court token, then swipe — the hold gesture of the recording
+ * screen (`features/games/recording/hold-menu.ts` in the app repo).
+ *
+ * The touches go through CDP rather than `page.touchscreen`, which can only
+ * tap: a hold-then-swipe needs start, moves and end kept apart in time, and the
+ * shot is taken WHILE the finger is still down — that is the only moment the
+ * menu and its highlighted target exist. So by default nothing is released:
+ * the context is closed after the shot and the gesture dies with it, which
+ * records nothing. With `release: true` the finger lifts and the call is
+ * written — that is the shot of the undo toast, and it does add one event to
+ * the instance it runs against.
+ *
+ * Scoped to `.court-area`: the bench squares carry the same classes and a
+ * bench token deliberately never arms the hold.
+ */
+async function holdAndSwipe(page, name, { dx = 0, dy = 0, release = false } = {}) {
+  const token = page.locator('.court-area button.touch-none', { hasText: name });
+  await token.waitFor({ state: 'visible', timeout: 15000 });
+  const box = await token.boundingBox();
+  if (!box) throw new Error(`court token "${name}" has no box`);
+  const cx = box.x + box.width / 2;
+  const cy = box.y + box.height / 2;
+  const at = (x, y) => [{ x, y, id: 1, force: 1 }];
+
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: at(cx, cy) });
+  // HOLD_ARM_MS is 500; the rest is room for the menu to render.
+  await page.waitForTimeout(900);
+  if (dx || dy) {
+    // In steps, like a real finger — one jump can skip the wedge the highlight
+    // is meant to cross into.
+    for (const f of [0.34, 0.67, 1]) {
+      await cdp.send('Input.dispatchTouchEvent', {
+        type: 'touchMove',
+        touchPoints: at(cx + dx * f, cy + dy * f),
+      });
+      await page.waitForTimeout(80);
+    }
+  }
+  if (release) {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await page
+      .locator('[data-sonner-toast]')
+      .first()
+      .waitFor({ state: 'visible', timeout: 8000 });
+    // Long enough for the outbox to hand the event over — otherwise the header
+    // shows a pending-sync "1" that has nothing to do with the gesture — and
+    // well inside the toast's own few seconds.
+    await page.waitForTimeout(1500);
+  }
+  await page.waitForTimeout(500);
+}
+
+/**
  * Bring a section heading to the top of the frame, so the shot is about it.
  *
  * The app shell keeps the window at a fixed height and scrolls an inner
@@ -766,6 +820,60 @@ const SHOTS = [
     note: 'Her own fine account — open, paid, and the catalogue behind it.',
   },
 
+  // ── Halten & Wischen ─────────────────────────────────────────────────────
+  // The hold gesture on the court: one token held, the menu open, and each
+  // direction lit in turn — the showcase on `/funktionen/halten-und-wischen`
+  // switches between these five, so they must show the same player at the same
+  // moment and differ in nothing but the highlighted target. Any instance with
+  // the app's seed and a live game will do (`LIVE_GAME_ID`); the stat types
+  // behind the four targets must be recordable there, or a chip is not drawn.
+  //
+  // David R. on the phone because he stands centred with room on both sides,
+  // so every chip sits beside the token instead of moving to a second row.
+  {
+    group: 'halten', file: 'halten-wischen-tablet.png', ...TABLET, touch: true,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => holdAndSwipe(page, 'Ben K.', { dy: 60 }),
+    note: 'Hold on the tablet, swiped down: "7m verursacht" lit.',
+  },
+  {
+    group: 'halten', file: 'halten-wischen-menue.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => holdAndSwipe(page, 'David R.'),
+    note: 'The menu just opened: four targets, none chosen yet.',
+  },
+  {
+    group: 'halten', file: 'halten-wischen-oben.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => holdAndSwipe(page, 'David R.', { dy: -60 }),
+    note: 'Up: 1gg1 verloren.',
+  },
+  {
+    group: 'halten', file: 'halten-wischen-unten.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => holdAndSwipe(page, 'David R.', { dy: 60 }),
+    note: 'Down: 7m verursacht.',
+  },
+  {
+    group: 'halten', file: 'halten-wischen-links.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => holdAndSwipe(page, 'David R.', { dx: -60 }),
+    note: 'Left: 7m rausgeholt.',
+  },
+  {
+    group: 'halten', file: 'halten-wischen-rechts.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+    prepare: (page) => holdAndSwipe(page, 'David R.', { dx: 60 }),
+    note: 'Right: 2 Min. rausgeholt.',
+  },
+  {
+    group: 'halten', file: 'halten-wischen-rueckgaengig.png', ...PHONE,
+    route: () => `/games/${ID.live}`,
+    // Released: this one writes a "7m verursacht" into the live game.
+    prepare: (page) => holdAndSwipe(page, 'David R.', { dy: 60, release: true }),
+    note: 'Released: the call is written and offers to undo itself.',
+  },
+
   {
     group: 'video', file: 'video-tagging-katalog.png',
     viewport: { width: 1600, height: 1150 }, scale: 2,
@@ -822,7 +930,9 @@ async function capture() {
       deviceScaleFactor: shot.scale ?? 1,
       locale: 'de-DE',
       isMobile: Boolean(shot.mobile),
-      hasTouch: Boolean(shot.mobile),
+      // `touch` gives a tablet shot a touchscreen without the phone's mobile
+      // viewport — the hold gesture only exists for a finger.
+      hasTouch: Boolean(shot.mobile || shot.touch),
       reducedMotion: 'reduce',
       ...(storageState ? { storageState } : {}),
     });
