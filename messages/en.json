@@ -322,7 +322,14 @@
       "tacticsBoard": "Tactics board",
       "handballStats": "Handball statistics",
       "schedule": "Fixtures & attendance",
-      "videoTagging": "Video tagging"
+      "videoTagging": "Video tagging",
+      "holdSwipe": "Hold & swipe"
+    },
+    "spotlight": {
+      "badge": "New",
+      "title": "Hold & swipe",
+      "description": "Four calls with one thumb, straight on the court – no detour through the panel.",
+      "ariaLabel": "New feature: see Hold & swipe"
     },
     "groups": {
       "product": "Product",
@@ -4314,6 +4321,7 @@
       "beta": "In progress — being built and not yet enabled for every account.",
       "onRequest": "Set up for the club rather than created yourself."
     },
+    "newLabel": "New",
     "items": [
       {
         "slug": "live-erfassung",
@@ -4402,6 +4410,92 @@
           {
             "question": "Do I need a tablet?",
             "answer": "No. Statix runs on a phone just as it does on a tablet, iPad or laptop. A tablet is more comfortable because more of the squad is visible at once — necessary it is not."
+          }
+        ]
+      },
+      {
+        "slug": "halten-und-wischen",
+        "name": "Hold & swipe: four calls straight on the court",
+        "short": "Hold & swipe",
+        "headline": "One thumb, four directions, no menu",
+        "summary": "Hold a player on the court, swipe in one direction, let go: 1v1 lost, 7m caused, 7m drawn or 2 min drawn – without a single button in the panel.",
+        "tagline": "For the calls that have no room in the panel at match pace: hold, swipe, let go – and your eyes stay on the game.",
+        "intro": [
+          "Some actions happen in every attack and still have no button: the lost duel, the 7-metre throw your own defence gives away, the 7-metre or the suspension an attacker wins. One more button in the panel would have cost exactly what Statix is built around at match pace – your eyes on the court.",
+          "So they live on the player herself. Hold her card on the court for half a second: the court dims, she stays exactly where she stands, and four targets appear around her. Up for “1v1 lost”, down for “7m caused”, left for “7m drawn”, right for “2 min drawn”. The target under your thumb lights up before you let go – you read what will be saved instead of finding out.",
+          "Letting go saves it, with “Undo” in the notice below. Sliding back to the centre and letting go saves nothing. A short tap still opens the quick picker and a drag still substitutes – the gesture only claims the moment that used to mean nothing: holding still without dragging."
+        ],
+        "facts": [
+          {
+            "term": "Trigger",
+            "value": "Hold a player on the court for half a second"
+          },
+          {
+            "term": "Up",
+            "value": "1v1 lost"
+          },
+          {
+            "term": "Down",
+            "value": "7m caused"
+          },
+          {
+            "term": "Left / right",
+            "value": "7m drawn / 2 min drawn"
+          },
+          {
+            "term": "Cancel",
+            "value": "Back to the centre, then let go"
+          },
+          {
+            "term": "Fix a mistake",
+            "value": "“Undo” in the notice, or later in the match flow"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Hold",
+            "body": "Thumb on the player and keep it still for half a second. A bar fills up and the menu opens."
+          },
+          {
+            "title": "Swipe",
+            "body": "Towards the call. The target lights up as soon as your thumb gets there, and the player's card takes on its colour."
+          },
+          {
+            "title": "Let go",
+            "body": "Saved, for exactly this player, at the current game time. The notice below names the call and the player and offers “Undo”."
+          },
+          {
+            "title": "Read it in the stats",
+            "body": "In the player table these calls get their own columns. The three columns for 7-metres and suspensions only appear once a game carries one of them – a column full of zeros would read as “never managed” where nothing was recorded. The AI match analysis reads all four."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Statix hold menu on a tablet: number 9 held, swiped down, the “7m caused” target lit in red",
+            "label": "On the tablet: held, swiped down – “7m caused” is chosen"
+          }
+        ],
+        "limits": [
+          "Only for players on the court. Holding a player on the bench does nothing – a call belongs to someone who is playing.",
+          "The stop foul is not on the gesture: it already has its own button in the panel – on a phone under “More”. The gesture is for the calls that have none.",
+          "A drawn or caused 7-metre is neither a shot nor a goal conceded. You record the 7-metre throw itself as before – otherwise the same moment would count twice."
+        ],
+        "faq": [
+          {
+            "question": "What if I swipe the wrong way by accident?",
+            "answer": "While your thumb is down nothing happens: back to the centre and let go cancels. And if something was saved, “Undo” in the notice takes it back at once – or you correct it later in the match flow, where every action can be edited."
+          },
+          {
+            "question": "Can I still substitute by dragging?",
+            "answer": "Yes, as always: drag the card instead of holding it still and you substitute or swap positions. The gesture only starts when your thumb rests for half a second; a short tap opens the quick picker."
+          },
+          {
+            "question": "Why isn't the stop foul on it?",
+            "answer": "Because it already has its own button: on a tablet in the column next to the court, on a phone under “More”. The gesture is for the calls without one – which is why down is “7m caused”, the other way a defensive duel can go wrong."
+          },
+          {
+            "question": "Does it work offline?",
+            "answer": "Yes. A call from the gesture is an action like any other: it lands on the device immediately and syncs as soon as there is signal again."
           }
         ]
       },
@@ -5917,6 +6011,64 @@
       "resultTitle": "What comes out of it",
       "resultLead": "Action, player and context — every row an interval in the video.",
       "closing": "A playlist saves this question, not the result. Tag a forgotten scene later and it falls in by itself."
+    },
+    "holdGesture": {
+      "kicker": "What it looks like in the app",
+      "title": "Hold, swipe, let go",
+      "description": "Real captures from the app: the same player, the same moment – only the direction changes. Pick a direction and see what lights up.",
+      "padLabel": "Directions of the hold gesture",
+      "autoplayPause": "Pause",
+      "autoplayPlay": "Play",
+      "frames": {
+        "hold": {
+          "button": "Hold",
+          "move": "Keep still for half a second",
+          "title": "The menu is open",
+          "body": "The court dims, the player stays exactly where she stands, and four targets appear around her. Nothing is chosen yet – the line at the top says how to cancel.",
+          "alt": "Statix on a phone: number 10 held, the hold menu with four targets is open",
+          "caption": "Held: four targets, none chosen yet"
+        },
+        "up": {
+          "button": "1v1 lost",
+          "move": "Swipe up",
+          "title": "1v1 lost",
+          "body": "The defender was beaten in the duel. It sits in the defensive record next to blocks and stop fouls – and shows where the line breaks.",
+          "alt": "Statix hold menu swiped up: “1v1 lost” lit in amber",
+          "caption": "Up: 1v1 lost"
+        },
+        "down": {
+          "button": "7m caused",
+          "move": "Swipe down",
+          "title": "7m caused",
+          "body": "The duel ended in a 7-metre throw against you. It gets its own column in the match stats and is not a goal conceded – you record the 7-metre throw itself as usual.",
+          "alt": "Statix hold menu swiped down: “7m caused” lit in red",
+          "caption": "Down: 7m caused"
+        },
+        "left": {
+          "button": "7m drawn",
+          "move": "Swipe left",
+          "title": "7m drawn",
+          "body": "The attacker won a 7-metre throw. It does not count as a shot – who takes it and whether it goes in, you record afterwards as always.",
+          "alt": "Statix hold menu swiped left: “7m drawn” lit in green",
+          "caption": "Left: 7m drawn"
+        },
+        "right": {
+          "button": "2 min drawn",
+          "move": "Swipe right",
+          "title": "2 min drawn",
+          "body": "The attacker drew a 2-minute suspension against the opponent. The power play itself still comes from the penalty you enter for the opponent.",
+          "alt": "Statix hold menu swiped right: “2 min drawn” lit in green",
+          "caption": "Right: 2 min drawn"
+        },
+        "release": {
+          "button": "Let go",
+          "move": "Lift your thumb",
+          "title": "Saved – with Undo",
+          "body": "Letting go saves the call for exactly this player. The notice names both and offers “Undo”. Back to the centre first, then let go, saves nothing.",
+          "alt": "Statix after letting go: notice “7m caused — David R.” with an Undo button",
+          "caption": "Let go: saved, “Undo” in the notice"
+        }
+      }
     }
   },
   "guidePage": {

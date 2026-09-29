@@ -66,7 +66,7 @@ screenshot and no navigation entry behind it.
 
 Every entry carries a `status`, and the site shows it:
 
-- **`live`** — finished, open to every account. Sixteen of the eighteen.
+- **`live`** — finished, open to every account. Seventeen of the nineteen.
 - **`beta`** — being built, restricted to named accounts. Listed anyway, marked
   "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
   something a new account gets today. Currently: **Video‑Tagging**.
@@ -77,6 +77,13 @@ The scope itself:
 
 - **Live erfassen:** 1‑tap capture, quick mode, shot position & 7‑m, 2‑minute
   timers, guided game assistant, post‑game action editing, offline, PWA install.
+- **Halten & Wischen** (new, marked `isNew` and spotlighted in the header):
+  hold a player on the court for half a second, swipe, let go — up 1gg1
+  verloren, down 7m verursacht, left 7m rausgeholt, right 2 Min. rausgeholt.
+  Cancel = back to the centre and release; every call comes with Undo. The
+  stop foul is deliberately NOT on the gesture — it has its own panel button.
+  The directions are the app's rule (`features/games/recording/hold-menu.ts`
+  in the app repo); change them there first.
 - **Auswerten:** live player & team stats, shot maps/heatmaps, dashboards
   (attack success, save quota, goal difference), season trends.
 - **KI‑Analyse:** four scopes — single game, whole team, single player (scouting

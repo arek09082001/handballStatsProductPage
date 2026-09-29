@@ -135,6 +135,29 @@ node scripts/screenshots/capture.mjs capture --only spielerin
 `mobil-meine-strafen.png` mit — als Trainer aufgenommen ist das der
 Leerzustand. Die Gruppe `spielerin` danach noch einmal laufen lassen.
 
+## Halten & Wischen (`--only halten`)
+
+Die Gruppe `halten` (`halten-wischen-tablet.png`, `halten-wischen-menue.png`,
+`-oben`, `-unten`, `-links`, `-rechts`, `-rueckgaengig`) zeigt die Halte-Geste
+der Live-Erfassung: eine Spielerin gehalten, das Menü offen, je Aufnahme eine
+andere Richtung hervorgehoben. Die Seite `/funktionen/halten-und-wischen`
+wechselt zwischen diesen Bildern — sie müssen also denselben Moment zeigen und
+dürfen sich nur im leuchtenden Ziel unterscheiden.
+
+Die Berührung läuft über CDP (`holdAndSwipe` in `capture.mjs`): halten, wischen,
+und aufgenommen wird, SOLANGE der Finger unten ist. Losgelassen wird nur für
+`-rueckgaengig` — diese Aufnahme schreibt deshalb ein „7m verursacht“ in das
+laufende Spiel der Instanz. Gebraucht wird eine lokale Instanz mit dem Seed der
+App und einem laufenden Spiel, auf der alle vier Codes erfassbar sind
+(`seven_m_caused` seit `db/2026-09-29_seven_m_caused_recordable.sql`):
+
+```bash
+STATIX_URL=http://localhost:3000 \
+STATIX_EMAIL=demo@statix-app.de STATIX_PASSWORD='StatixDemo!2026' \
+LIVE_GAME_ID=<laufendes Spiel aus dem Seed> \
+node scripts/screenshots/capture.mjs capture --only halten
+```
+
 ## Die Video-Screenshots (`--only video`)
 
 `video-tagging-spuren.png` und `video-tagging-katalog.png` sind **Ausschnitte**

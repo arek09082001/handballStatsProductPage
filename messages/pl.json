@@ -322,7 +322,14 @@
       "tacticsBoard": "Tablica taktyczna",
       "handballStats": "Statystyki piłki ręcznej",
       "schedule": "Terminy i frekwencja",
-      "videoTagging": "Tagowanie wideo"
+      "videoTagging": "Tagowanie wideo",
+      "holdSwipe": "Przytrzymaj i przesuń"
+    },
+    "spotlight": {
+      "badge": "Nowość",
+      "title": "Przytrzymaj i przesuń",
+      "description": "Cztery akcje jednym kciukiem, prosto na boisku – bez zaglądania do panelu.",
+      "ariaLabel": "Nowa funkcja: zobacz Przytrzymaj i przesuń"
     },
     "groups": {
       "product": "Produkt",
@@ -4314,6 +4321,7 @@
       "beta": "W budowie — powstaje i nie jest jeszcze odblokowana dla wszystkich kont.",
       "onRequest": "Konfigurowane dla klubu zamiast zakładane samodzielnie."
     },
+    "newLabel": "Nowość",
     "items": [
       {
         "slug": "live-erfassung",
@@ -4402,6 +4410,92 @@
           {
             "question": "Czy potrzebuję tabletu?",
             "answer": "Nie. Statix działa na telefonie tak samo jak na tablecie, iPadzie czy laptopie. Tablet jest wygodniejszy, bo widać naraz więcej kadry – ale konieczny nie jest."
+          }
+        ]
+      },
+      {
+        "slug": "halten-und-wischen",
+        "name": "Przytrzymaj i przesuń: cztery akcje prosto na boisku",
+        "short": "Przytrzymaj i przesuń",
+        "headline": "Jeden kciuk, cztery kierunki, żadnego menu",
+        "summary": "Przytrzymaj zawodniczkę na boisku, przesuń w jednym kierunku, puść: przegrany pojedynek, spowodowany 7 m, wywalczony 7 m albo wywalczone 2 min – bez ani jednego przycisku w panelu.",
+        "tagline": "Dla akcji, na które w tempie meczu nie ma miejsca w panelu: przytrzymaj, przesuń, puść – a wzrok zostaje na grze.",
+        "intro": [
+          "Niektóre akcje zdarzają się w każdym ataku, a mimo to nie mają przycisku: przegrany pojedynek, rzut karny spowodowany przez własną obronę, rzut karny albo kara dwóch minut wywalczone przez atakującą. Kolejny przycisk w panelu kosztowałby w tempie meczu dokładnie to, wokół czego zbudowano Statix – wzrok na boisku.",
+          "Dlatego są na samej zawodniczce. Przytrzymaj jej kartę na boisku przez pół sekundy: boisko się przyciemnia, ona zostaje dokładnie tam, gdzie stoi, a wokół niej pojawiają się cztery cele. W górę „Przegrany pojedynek”, w dół „Spowodowany 7 m”, w lewo „Wywalczony 7 m”, w prawo „Wywalczone 2 min”. Cel pod kciukiem podświetla się, zanim puścisz – odczytujesz, co zostanie zapisane, zamiast się tego domyślać.",
+          "Puszczenie zapisuje akcję, a w powiadomieniu poniżej jest „Cofnij”. Powrót do środka i puszczenie nie zapisuje niczego. Krótkie dotknięcie nadal otwiera szybki wybór, a przeciągnięcie nadal robi zmianę – gest zajmuje tylko moment, który wcześniej nic nie znaczył: przytrzymanie bez przeciągania."
+        ],
+        "facts": [
+          {
+            "term": "Uruchomienie",
+            "value": "Przytrzymaj zawodniczkę na boisku przez pół sekundy"
+          },
+          {
+            "term": "W górę",
+            "value": "Przegrany pojedynek"
+          },
+          {
+            "term": "W dół",
+            "value": "Spowodowany 7 m"
+          },
+          {
+            "term": "W lewo / w prawo",
+            "value": "Wywalczony 7 m / wywalczone 2 min"
+          },
+          {
+            "term": "Anulowanie",
+            "value": "Wróć do środka, potem puść"
+          },
+          {
+            "term": "Poprawianie",
+            "value": "„Cofnij” w powiadomieniu albo później w przebiegu meczu"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Przytrzymaj",
+            "body": "Kciuk na zawodniczce, bez ruchu przez pół sekundy. Pasek się wypełnia i menu się otwiera."
+          },
+          {
+            "title": "Przesuń",
+            "body": "W stronę akcji. Cel podświetla się, gdy tylko dotrze tam kciuk, a karta zawodniczki przybiera jego kolor."
+          },
+          {
+            "title": "Puść",
+            "body": "Zapisane, dla tej konkretnej zawodniczki, w bieżącym czasie gry. Powiadomienie na dole podaje akcję i nazwisko oraz oferuje „Cofnij”."
+          },
+          {
+            "title": "Sprawdź w statystykach",
+            "body": "W tabeli zawodniczek te akcje mają własne kolumny. Trzy kolumny rzutów karnych i kar pojawiają się dopiero, gdy mecz zawiera którąś z nich – kolumna pełna zer wyglądałaby jak „nigdy się nie udało” tam, gdzie po prostu nic nie zapisano. Analiza meczu przez AI uwzględnia wszystkie cztery."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Menu przytrzymania w Statix na tablecie: przytrzymany numer 9, przesunięty w dół, cel „Spowodowany 7 m” świeci na czerwono",
+            "label": "Na tablecie: przytrzymany, przesunięty w dół – wybrany „Spowodowany 7 m”"
+          }
+        ],
+        "limits": [
+          "Tylko dla zawodniczek na boisku. Na ławce przytrzymanie nic nie robi – akcja należy do kogoś, kto właśnie gra.",
+          "Faulu taktycznego nie ma w geście: ma już własny przycisk w panelu – na telefonie w „Więcej”. Gest jest dla akcji, które go nie mają.",
+          "Wywalczony lub spowodowany rzut karny nie jest ani rzutem, ani straconą bramką. Sam rzut karny zapisujesz jak dotąd – inaczej ta sama sytuacja liczyłaby się dwa razy."
+        ],
+        "faq": [
+          {
+            "question": "A jeśli przez pomyłkę przesunę w złą stronę?",
+            "answer": "Dopóki kciuk jest na ekranie, nic się nie dzieje: powrót do środka i puszczenie anuluje. A jeśli akcja została już zapisana, „Cofnij” w powiadomieniu od razu ją wycofuje – albo poprawiasz ją później w przebiegu meczu, gdzie każdą akcję można edytować."
+          },
+          {
+            "question": "Czy nadal mogę robić zmiany przeciąganiem?",
+            "answer": "Tak, jak zawsze: przeciągnij kartę zamiast trzymać ją nieruchomo, a zrobisz zmianę albo zamienisz pozycje. Gest zaczyna się dopiero, gdy kciuk spoczywa pół sekundy; krótkie dotknięcie otwiera szybki wybór."
+          },
+          {
+            "question": "Dlaczego nie ma tu faulu taktycznego?",
+            "answer": "Bo ma już własny przycisk: na tablecie w kolumnie obok boiska, na telefonie w „Więcej”. Gest jest dla akcji bez przycisku – dlatego w dół jest „Spowodowany 7 m”, drugi sposób, w jaki pojedynek w obronie może pójść źle."
+          },
+          {
+            "question": "Czy to działa offline?",
+            "answer": "Tak. Akcja z gestu jest akcją jak każda inna: od razu trafia na urządzenie i synchronizuje się, gdy tylko wróci zasięg."
           }
         ]
       },
@@ -5917,6 +6011,64 @@
       "resultTitle": "Co z tego wychodzi",
       "resultLead": "Akcja, zawodniczka i kontekst — każdy wiersz to przedział w nagraniu.",
       "closing": "Playlista zapisuje to pytanie, a nie wynik. Gdy dotagujesz zapomnianą scenę, wpada do niej sama."
+    },
+    "holdGesture": {
+      "kicker": "Tak to wygląda w aplikacji",
+      "title": "Przytrzymaj, przesuń, puść",
+      "description": "Prawdziwe zrzuty z aplikacji: ta sama zawodniczka, ten sam moment – zmienia się tylko kierunek. Wybierz kierunek i zobacz, co się podświetla.",
+      "padLabel": "Kierunki gestu przytrzymania",
+      "autoplayPause": "Wstrzymaj",
+      "autoplayPlay": "Odtwórz",
+      "frames": {
+        "hold": {
+          "button": "Przytrzymaj",
+          "move": "Pół sekundy bez ruchu",
+          "title": "Menu jest otwarte",
+          "body": "Boisko się przyciemnia, zawodniczka zostaje dokładnie tam, gdzie stoi, a wokół niej pojawiają się cztery cele. Nic nie jest jeszcze wybrane – u góry widać, jak anulować.",
+          "alt": "Statix na telefonie: przytrzymany numer 10, otwarte menu z czterema celami",
+          "caption": "Przytrzymane: cztery cele, żaden nie wybrany"
+        },
+        "up": {
+          "button": "Przegrany pojedynek",
+          "move": "Przesuń w górę",
+          "title": "Przegrany pojedynek",
+          "body": "Obrończyni została ograna w pojedynku. Trafia to do bilansu obrony obok bloków i fauli taktycznych – i pokazuje, gdzie pęka linia.",
+          "alt": "Menu Statix przesunięte w górę: „Przegrany pojedynek” świeci na bursztynowo",
+          "caption": "W górę: przegrany pojedynek"
+        },
+        "down": {
+          "button": "Spowodowany 7 m",
+          "move": "Przesuń w dół",
+          "title": "Spowodowany 7 m",
+          "body": "Pojedynek skończył się rzutem karnym przeciwko wam. Ma własną kolumnę w statystyce meczu i nie jest straconą bramką – sam rzut karny zapisujesz jak zwykle.",
+          "alt": "Menu Statix przesunięte w dół: „Spowodowany 7 m” świeci na czerwono",
+          "caption": "W dół: spowodowany 7 m"
+        },
+        "left": {
+          "button": "Wywalczony 7 m",
+          "move": "Przesuń w lewo",
+          "title": "Wywalczony 7 m",
+          "body": "Atakująca wywalczyła rzut karny. Nie liczy się jako rzut – kto go wykonuje i czy trafia, zapisujesz potem jak zawsze.",
+          "alt": "Menu Statix przesunięte w lewo: „Wywalczony 7 m” świeci na zielono",
+          "caption": "W lewo: wywalczony 7 m"
+        },
+        "right": {
+          "button": "Wywalczone 2 min",
+          "move": "Przesuń w prawo",
+          "title": "Wywalczone 2 min",
+          "body": "Atakująca wywalczyła karę dwóch minut dla rywala. Sama przewaga liczebna wynika jak dotąd z kary, którą zapisujesz rywalowi.",
+          "alt": "Menu Statix przesunięte w prawo: „Wywalczone 2 min” świeci na zielono",
+          "caption": "W prawo: wywalczone 2 min"
+        },
+        "release": {
+          "button": "Puść",
+          "move": "Podnieś kciuk",
+          "title": "Zapisane – z Cofnij",
+          "body": "Puszczenie zapisuje akcję dla tej konkretnej zawodniczki. Powiadomienie podaje jedno i drugie oraz oferuje „Cofnij”. Najpierw powrót do środka, a dopiero potem puszczenie – nic się nie zapisuje.",
+          "alt": "Statix po puszczeniu: powiadomienie „Spowodowany 7 m — David R.” z przyciskiem Cofnij",
+          "caption": "Puszczone: zapisane, „Cofnij” w powiadomieniu"
+        }
+      }
     }
   },
   "guidePage": {

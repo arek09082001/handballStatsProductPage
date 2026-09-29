@@ -15,6 +15,7 @@ import {
 import { FEATURES_PAGE_PATH, type Feature } from '../data/features';
 import { useFeatureGroups } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
+import FeatureNewBadge from './feature-new-badge';
 
 /**
  * Court hero of a single feature page.
@@ -82,9 +83,12 @@ export default function FeatureHeader({ feature }: { feature: Feature }) {
             </ol>
           </nav>
 
-          <BoardKicker color='chalk'>
-            {group?.name ?? t('groupFallback')}
-          </BoardKicker>
+          <div className='flex flex-wrap items-center gap-3'>
+            <BoardKicker color='chalk'>
+              {group?.name ?? t('groupFallback')}
+            </BoardKicker>
+            {feature.isNew ? <FeatureNewBadge /> : null}
+          </div>
 
           <h1 className='mt-4 font-display text-[2.4rem] font-extrabold leading-[1.03] tracking-[-0.035em] text-chalk sm:text-[3.1rem]'>
             {feature.name}

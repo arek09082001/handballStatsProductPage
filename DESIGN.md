@@ -150,6 +150,16 @@ one thing they came for.
   exists it is used; the mock exists because the video stage resolves to object
   storage the screenshot machine cannot reach, and painting a match into an
   empty rectangle would be a fabricated product image.
+- **A showcase is still photographs.** `HoldGestureShowcase` on
+  `/funktionen/halten-und-wischen` is interactive — a pad laid out like the
+  app's hold menu swaps between six real captures of the same moment — but
+  every frame is a capture, never a drawing. It walks through the frames on
+  its own only while on screen, never under reduced motion, and stops for good
+  at the first touch.
+- **New is a chip, and one place.** A feature marked `isNew` gets a solid
+  orange "Neu" chip on its card and in its hero, and the header carries one
+  spotlight magnet for it (`navigationSpotlight`). One at a time: two
+  spotlights are no spotlight.
 - **Below `sm`, the hero court drops its formation.** The magnets carry
   saturated team colour rather than the group's chalk tint, and at phone width
   the diagram no longer clears the text column — so the small‑screen variant

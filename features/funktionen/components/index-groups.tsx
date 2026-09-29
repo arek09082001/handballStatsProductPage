@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils';
 import { featureLabel, featurePath } from '../data/features';
 import { useFeatureGroups, useFeatures } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
+import FeatureNewBadge from './feature-new-badge';
 
 /**
  * The index itself: four groups, every feature a note pinned to the board.
@@ -70,10 +71,10 @@ export default function FeatureIndexGroups() {
                     <Link
                       href={featurePath(feature.slug)}
                       className='flex h-full flex-col gap-3 p-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50'>
-                      <FeatureStatusBadge
-                        status={feature.status}
-                        className='self-start'
-                      />
+                      <span className='flex flex-wrap items-center gap-2 self-start'>
+                        <FeatureStatusBadge status={feature.status} />
+                        {feature.isNew ? <FeatureNewBadge /> : null}
+                      </span>
                       <h3 className='font-display text-xl font-bold tracking-[-0.015em] text-ink'>
                         {featureLabel(feature)}
                       </h3>

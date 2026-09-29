@@ -12,6 +12,7 @@ import FeatureSteps from '../components/feature-steps';
 import FeatureLimits from '../components/feature-limits';
 import FeatureRelated from '../components/feature-related';
 import TaggingBenchMock from '../components/tagging-bench-mock';
+import HoldGestureShowcase from '../components/hold-gesture-showcase';
 
 /**
  * One feature page, `/funktionen/<slug>`.
@@ -45,17 +46,19 @@ export default function FeaturePage({ slug }: { slug: string }) {
 
   // Three features carry exactly one screenshot: the hero pins it and the shot
   // band renders nothing. Without a court in the middle the page would run five
-  // paper bands in a row, so the steps take the court there instead.
+  // paper bands in a row, so the steps take the court there instead — unless a
+  // showcase already brings a court band of its own.
   const bandShots = feature.mock ? feature.shots : feature.shots.slice(1);
-  const hasShotBand = bandShots.length > 0;
+  const hasCourtBand = bandShots.length > 0 || Boolean(feature.showcase);
 
   return (
     <div className='flex w-full flex-col items-center bg-paper'>
       <FeatureHeader feature={feature} />
       <FeatureOverview feature={feature} />
       {feature.mock === 'tagging-bench' ? <TaggingBenchMock /> : null}
+      {feature.showcase === 'hold-gesture' ? <HoldGestureShowcase /> : null}
       <FeatureShots feature={feature} />
-      <FeatureSteps feature={feature} tone={hasShotBand ? 'paper' : 'court'} />
+      <FeatureSteps feature={feature} tone={hasCourtBand ? 'paper' : 'court'} />
       <FeatureLimits feature={feature} />
       <BoardFaq
         id='faq'

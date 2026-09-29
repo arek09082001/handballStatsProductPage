@@ -137,6 +137,21 @@ export interface FeatureRecord {
    */
   mock?: 'tagging-bench';
   /**
+   * An interactive band of real captures between the overview and the steps.
+   * Set only for `halten-und-wischen`: the gesture has four outcomes that look
+   * identical except for which target lights up, and five near-identical
+   * phones in a row would read as a mistake — one frame that switches with the
+   * direction a reader picks reads as the gesture itself. The frames live in
+   * `data/hold-gesture.ts`.
+   */
+  showcase?: 'hold-gesture';
+  /**
+   * Marks a feature as news: a "Neu" chip on its card on the index and in its
+   * hero. News for a few weeks, not a property — remove it together with
+   * `navigationSpotlight` in `features/navigation/config.ts` once it has been.
+   */
+  isNew?: true;
+  /**
    * Title, description and keywords of the route — German, because the server
    * renders the head and the canonical URL is the German page.
    */
@@ -198,6 +213,29 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
         'handball spielstatistik erfassen',
         'handball live erfassung',
         'handball statistik tablet',
+      ],
+    },
+  },
+  {
+    slug: 'halten-und-wischen',
+    group: 'erfassen',
+    status: 'live',
+    shots: [{ src: '/halten-wischen-tablet.png', width: 2560, height: 1600 }],
+    related: ['live-erfassung', 'spielerstatistiken', 'ki-analyse'],
+    ogImage: '/halten-wischen-tablet.png',
+    showcase: 'hold-gesture',
+    isNew: true,
+    meta: {
+      title:
+        'Handball-Statistik per Geste: 7m und 1gg1 direkt auf dem Spielfeld',
+      description:
+        'Spielerin halten, wischen, loslassen: 1gg1 verloren, 7m verursacht, 7m rausgeholt und 2 Minuten rausgeholt live erfassen – ohne Umweg über das Panel, mit Rückgängig und offline.',
+      keywords: [
+        'handball 7m verursacht statistik',
+        'handball 7 meter herausgeholt erfassen',
+        'handball zweikampf statistik',
+        'handball statistik app geste',
+        'handball 2 minuten herausgeholt',
       ],
     },
   },
