@@ -262,13 +262,18 @@ export default function SiteNavbar() {
               onClick={closeMenu}
             />
 
+            {/* Capped by `dvh`, not `vh`: on a phone `100vh` is the height with
+             * the browser's toolbars retracted, so while they show, the foot
+             * of the panel — the last links of the list — sat underneath the
+             * address bar and could not be scrolled into view. `vh` stays only
+             * as the fallback for browsers without `dvh`. */}
             <motion.div
               key='mobile-menu-panel'
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.2 }}
-              className='fixed left-4 right-4 top-24 z-40 overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] sm:left-6 sm:right-6 lg:hidden max-h-[calc(100vh-112px)]'>
+              className='fixed left-4 right-4 top-24 z-40 max-h-[calc(100vh-112px)] overflow-y-auto overscroll-contain rounded-[28px] border border-slate-200 bg-white shadow-[0_24px_48px_-32px_rgba(15,23,42,0.45)] supports-[height:100dvh]:max-h-[calc(100dvh-112px)] sm:left-6 sm:right-6 lg:hidden'>
               <div className='space-y-4 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]'>
                 {/* The language picker rides in the top row, not at the foot of
                  * the panel. Below the groups it was two screens down a list
