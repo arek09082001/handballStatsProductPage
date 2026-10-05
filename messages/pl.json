@@ -57,7 +57,7 @@
       "title": "Preambuła",
       "paragraph1": "Niniejsze ogólne warunki korzystania („OWK”) regulują stosunek umowny między Państwem jako użytkownikiem („Użytkownik” lub „Państwo”) a usługodawcą w zakresie korzystania z aplikacji do statystyk piłki ręcznej „Statix” oraz z powiązanych stron internetowych, progresywnej aplikacji internetowej i związanych z nimi usług (łącznie „Statix” lub „Usługa”).",
       "paragraph2": "Wszystkie pojęcia i określenia użyte w niniejszych OWK należy rozumieć w sposób neutralny płciowo.",
-      "updatedAt": "Wersja: 24 września 2026"
+      "updatedAt": "Wersja: 5 października 2026"
     },
     "sections": {
       "scope": {
@@ -260,13 +260,14 @@
           "Jeżeli w przyszłości zostanie zawarta umowa odpłatna, zastosowanie będzie miało następujące pouczenie o odstąpieniu od umowy:",
           "Prawo odstąpienia od umowy: Mają Państwo prawo odstąpić od niniejszej umowy w terminie czternastu dni bez podania jakiejkolwiek przyczyny. Termin do odstąpienia od umowy wygasa po upływie czternastu dni od dnia zawarcia umowy.",
           "Aby skorzystać z prawa odstąpienia od umowy, muszą Państwo poinformować nas (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Niemcy, e-mail: kontakt@statix-app.de) o swojej decyzji o odstąpieniu od niniejszej umowy w drodze jednoznacznego oświadczenia (na przykład pismo wysłane pocztą lub pocztą elektroniczną). Mogą Państwo skorzystać z załączonego wzoru formularza odstąpienia od umowy, jednak nie jest to obowiązkowe. Aby zachować termin do odstąpienia od umowy, wystarczy, aby wysłali Państwo informację dotyczącą wykonania przysługującego Państwu prawa odstąpienia przed upływem terminu do odstąpienia od umowy.",
+          "Mogą Państwo również złożyć oświadczenie o odstąpieniu bezpośrednio w aplikacji: w Ustawieniach → Plan i płatności za pomocą przycisku „Odstąp od umowy”, a następnie „Potwierdź odstąpienie”. Otrzymanie oświadczenia potwierdzimy niezwłocznie e-mailem.",
           "Skutki odstąpienia od umowy: W przypadku odstąpienia od niniejszej umowy zwracamy Państwu wszystkie otrzymane od Państwa płatności niezwłocznie, a w każdym przypadku nie później niż czternaście dni od dnia, w którym zostaliśmy poinformowani o Państwa decyzji o wykonaniu prawa odstąpienia od niniejszej umowy. Zwrotu płatności dokonamy przy użyciu takich samych sposobów płatności, jakie zostały przez Państwa użyte w pierwotnej transakcji, chyba że wyraźnie zgodzili się Państwo na inne rozwiązanie; w każdym przypadku nie poniosą Państwo żadnych opłat w związku z tym zwrotem.",
           "Przedwczesne wygaśnięcie prawa odstąpienia: W przypadku umowy o dostarczanie treści cyfrowych, które nie są dostarczane na nośniku materialnym, prawo odstąpienia wygasa przedwcześnie, jeżeli rozpoczęliśmy wykonywanie umowy po tym, jak wyrazili Państwo wyraźną zgodę na rozpoczęcie wykonywania przed upływem terminu do odstąpienia od umowy, przyjęli Państwo do wiadomości, że tym samym tracą prawo odstąpienia z chwilą rozpoczęcia wykonywania, a my przekazaliśmy Państwu potwierdzenie tego faktu.",
           "Jeżeli zażądali Państwo rozpoczęcia świadczenia usługi w trakcie biegu terminu do odstąpienia od umowy, zapłacą nam Państwo kwotę proporcjonalną do zakresu świadczeń spełnionych do chwili, w której poinformowali nas Państwo o wykonaniu prawa odstąpienia od niniejszej umowy, w porównaniu z pełnym zakresem umowy."
         ],
         "items": [],
         "paragraphsAfter": [
-          "Gdy tylko za pośrednictwem strony internetowej usługodawcy będzie można zawierać odpłatne umowy objęte prawem odstąpienia, usługodawca udostępni dodatkowo ustawowy przycisk odstąpienia zgodnie z § 356a BGB."
+          "Funkcja odstąpienia zgodnie z § 356a niemieckiego kodeksu cywilnego (BGB) jest dostępna w aplikacji w Ustawieniach → Plan i płatności przez cały okres na odstąpienie. Przed zakupem wyraźnie żądają Państwo, zaznaczając osobne pole, abyśmy natychmiast rozpoczęli świadczenie usługi; tę zgodę oraz sposób odstąpienia podajemy dodatkowo na fakturze lub w potwierdzeniu subskrypcji."
         ]
       },
       "changes": {

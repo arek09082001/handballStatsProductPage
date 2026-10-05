@@ -57,7 +57,7 @@
       "title": "Preámbulo",
       "paragraph1": "Las presentes Condiciones Generales de Contratación (las «CGC») regulan la relación contractual entre usted, en calidad de usuario (el «Usuario» o «usted»), y el prestador, en lo relativo al uso de la aplicación de estadísticas de balonmano «Statix», así como de los sitios web asociados, la aplicación web progresiva y los servicios relacionados (conjuntamente, «Statix» o el «Servicio»).",
       "paragraph2": "Todos los términos y denominaciones empleados en estas CGC deben entenderse en sentido neutro en cuanto al género.",
-      "updatedAt": "Versión: 24 de septiembre de 2026"
+      "updatedAt": "Versión: 5 de octubre de 2026"
     },
     "sections": {
       "scope": {
@@ -260,13 +260,14 @@
           "Si en el futuro se celebra un contrato de pago, se aplican las siguientes instrucciones de desistimiento:",
           "Derecho de desistimiento: Tiene usted derecho a desistir del presente contrato en un plazo de catorce días sin necesidad de justificación. El plazo de desistimiento expirará a los catorce días del día de la celebración del contrato.",
           "Para ejercer el derecho de desistimiento, deberá usted notificarnos (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Alemania, correo electrónico: kontakt@statix-app.de) su decisión de desistir del contrato a través de una declaración inequívoca (por ejemplo, una carta enviada por correo postal o un correo electrónico). Podrá utilizar el modelo de formulario de desistimiento que figura a continuación, aunque su uso no es obligatorio. Para cumplir el plazo de desistimiento basta con que la comunicación relativa al ejercicio por su parte de este derecho sea enviada antes de que venza el plazo correspondiente.",
+          "También puede declarar su desistimiento directamente en la aplicación: en Ajustes → Plan y facturación, mediante el botón «Desistir del contrato» y después «Confirmar desistimiento». Le confirmaremos la recepción de su desistimiento por correo electrónico sin demora.",
           "Consecuencias del desistimiento: En caso de que usted desista del presente contrato, le devolveremos todos los pagos recibidos de usted sin demora indebida y, en todo caso, a más tardar catorce días a partir de la fecha en la que se nos informe de su decisión de desistir del presente contrato. Procederemos a efectuar dicho reembolso utilizando el mismo medio de pago empleado por usted para la transacción inicial, a no ser que usted haya dispuesto expresamente lo contrario; en todo caso, no incurrirá usted en ningún gasto como consecuencia del reembolso.",
           "Extinción anticipada del derecho de desistimiento: En el caso de un contrato para el suministro de contenidos digitales que no se presten en un soporte material, el derecho de desistimiento se extingue anticipadamente si hemos iniciado la ejecución del contrato después de que usted haya prestado su consentimiento expreso al inicio de la ejecución antes de que finalice el plazo de desistimiento, haya reconocido que con ello pierde su derecho de desistimiento al comenzar la ejecución y le hayamos facilitado confirmación de ello.",
           "Si ha solicitado usted que la prestación de un servicio comience durante el plazo de desistimiento, deberá abonarnos un importe proporcional a lo ya prestado hasta el momento en que nos haya comunicado el ejercicio del derecho de desistimiento respecto del presente contrato, en relación con el objeto total del contrato."
         ],
         "items": [],
         "paragraphsAfter": [
-          "En cuanto puedan celebrarse a través del sitio web del prestador contratos de pago sujetos a desistimiento, el prestador pondrá además a disposición el botón legal de desistimiento conforme al § 356a BGB."
+          "La función de desistimiento conforme al § 356a del Código Civil alemán (BGB) está disponible en la aplicación en Ajustes → Plan y facturación mientras dure el plazo de desistimiento. Antes de la compra, usted solicita expresamente, marcando una casilla aparte, que comencemos el servicio de inmediato; además indicamos este consentimiento y la forma de desistir en la factura o en la confirmación de la suscripción."
         ]
       },
       "changes": {

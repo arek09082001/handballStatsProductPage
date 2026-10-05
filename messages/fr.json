@@ -57,7 +57,7 @@
       "title": "Préambule",
       "paragraph1": "Les présentes conditions générales d’utilisation (les « CGU ») régissent la relation contractuelle entre vous en qualité d’utilisateur (l’« Utilisateur » ou « vous ») et le fournisseur, concernant l’utilisation de l’application de statistiques de handball « Statix » ainsi que des sites web associés, de l’application web progressive et des services liés (ensemble, « Statix » ou le « Service »).",
       "paragraph2": "Tous les termes et désignations employés dans les présentes CGU s’entendent de manière neutre du point de vue du genre.",
-      "updatedAt": "Version : 24 septembre 2026"
+      "updatedAt": "Version : 5 octobre 2026"
     },
     "sections": {
       "scope": {
@@ -260,13 +260,14 @@
           "Si un contrat payant venait à être conclu à l’avenir, les informations suivantes sur la rétractation s’appliqueraient :",
           "Droit de rétractation : Vous disposez du droit de vous rétracter du présent contrat dans un délai de quatorze jours sans avoir à motiver votre décision. Le délai de rétractation est de quatorze jours à compter du jour de la conclusion du contrat.",
           "Pour exercer votre droit de rétractation, vous devez nous notifier (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Allemagne, courriel : kontakt@statix-app.de) votre décision de vous rétracter du présent contrat au moyen d’une déclaration dénuée d’ambiguïté (par exemple, une lettre envoyée par la poste ou un courrier électronique). Vous pouvez utiliser le modèle de formulaire de rétractation joint, mais son usage n’est pas obligatoire. Pour que le délai de rétractation soit respecté, il suffit que vous transmettiez votre communication relative à l’exercice du droit de rétractation avant l’expiration du délai de rétractation.",
+          "Vous pouvez également exercer votre rétractation directement dans l’application : sous Réglages → Offre et facturation, au moyen du bouton « Se rétracter du contrat » puis « Confirmer la rétractation ». Nous vous confirmons sans délai la réception de votre rétractation par e-mail.",
           "Effets de la rétractation : En cas de rétractation de votre part du présent contrat, nous vous rembourserons tous les paiements reçus de vous sans retard excessif et, en tout état de cause, au plus tard quatorze jours à compter du jour où nous sommes informés de votre décision de rétractation du présent contrat. Nous procéderons au remboursement en utilisant le même moyen de paiement que celui que vous aurez utilisé pour la transaction initiale, sauf si vous convenez expressément d’un moyen différent ; en tout état de cause, ce remboursement n’occasionnera pas de frais pour vous.",
           "Extinction anticipée du droit de rétractation : Dans le cas d’un contrat portant sur la fourniture de contenus numériques non fournis sur un support matériel, le droit de rétractation s’éteint par anticipation si nous avons commencé l’exécution du contrat après que vous avez expressément consenti à ce que nous commencions l’exécution avant l’expiration du délai de rétractation, que vous avez reconnu perdre ainsi votre droit de rétractation au début de l’exécution et que nous vous en avons fourni la confirmation.",
           "Si vous avez demandé que l’exécution d’un service commence pendant le délai de rétractation, vous devrez nous payer un montant proportionnel à ce qui vous a été fourni jusqu’au moment où vous nous avez informés de l’exercice du droit de rétractation pour le présent contrat, par rapport à l’ensemble des prestations prévues par le contrat."
         ],
         "items": [],
         "paragraphsAfter": [
-          "Dès que des contrats payants soumis au droit de rétractation pourront être conclus via le site web du fournisseur, celui-ci mettra en outre à disposition le bouton de rétractation légal prévu au § 356a BGB."
+          "La fonction de rétractation prévue au § 356a du Code civil allemand (BGB) est disponible dans l’application sous Réglages → Offre et facturation pendant toute la durée du délai de rétractation. Avant l’achat, vous demandez expressément, en cochant une case distincte, que nous commencions la prestation immédiatement ; nous rappelons en outre ce consentement et la manière de se rétracter dans la facture ou la confirmation d’abonnement."
         ]
       },
       "changes": {

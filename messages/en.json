@@ -57,7 +57,7 @@
       "title": "Preamble",
       "paragraph1": "These General Terms and Conditions (the “GTC”) govern the contractual relationship between you as a user (the “User” or “you”) and the provider regarding the use of the handball statistics app “Statix” as well as the associated websites, the progressive web app and the related services (together, “Statix” or the “Service”).",
       "paragraph2": "All terms and designations used in these GTC are to be understood as gender-neutral.",
-      "updatedAt": "Version: 24 September 2026"
+      "updatedAt": "Version: 5 October 2026"
     },
     "sections": {
       "scope": {
@@ -260,13 +260,14 @@
           "If a paid contract is concluded in future, the following withdrawal instructions apply:",
           "Right of withdrawal: You have the right to withdraw from this contract within fourteen days without giving any reason. The withdrawal period is fourteen days from the day of conclusion of the contract.",
           "To exercise your right of withdrawal, you must inform us (Statix, Arkadiusz Weiss, c/o MDC#arkadiusz_weiss, Welserstraße 3, 87463 Dietmannsried, Germany, email: kontakt@statix-app.de) of your decision to withdraw from this contract by an unequivocal statement (e.g. a letter sent by post or an email). You may use the attached model withdrawal form, but it is not obligatory. To meet the withdrawal deadline it is sufficient for you to send your communication concerning your exercise of the right of withdrawal before the withdrawal period has expired.",
+          "You can also declare your withdrawal directly in the app: under Settings → Plan & billing, using the “Withdraw from contract” button and then “Confirm withdrawal”. We will confirm receipt of your withdrawal by email without delay.",
           "Effects of withdrawal: If you withdraw from this contract, we shall reimburse to you all payments received from you without undue delay and in any event not later than fourteen days from the day on which we are informed about your decision to withdraw from this contract. We will carry out such reimbursement using the same means of payment as you used for the initial transaction, unless you have expressly agreed otherwise; in any event, you will not incur any fees as a result of such reimbursement.",
           "Early expiry of the right of withdrawal: In the case of a contract for the supply of digital content not supplied on a tangible medium, the right of withdrawal expires early if we have begun performance of the contract after you have expressly consented to us beginning performance before the end of the withdrawal period, you have acknowledged that you thereby lose your right of withdrawal upon commencement of performance, and we have provided you with confirmation of this.",
           "If you requested that a service should begin during the withdrawal period, you shall pay us an amount which is in proportion to what has been provided until you have communicated to us your exercise of the right of withdrawal in relation to this contract, in comparison with the full coverage of the contract."
         ],
         "items": [],
         "paragraphsAfter": [
-          "As soon as paid contracts subject to withdrawal can be concluded via the provider's website, the provider will additionally provide the statutory withdrawal button pursuant to section 356a German Civil Code."
+          "The withdrawal function pursuant to section 356a German Civil Code (BGB) is available in the app under Settings → Plan & billing for as long as the withdrawal period runs. Before purchasing, you expressly request by ticking a separate checkbox that we begin the service immediately; we also state this consent and how to withdraw in the invoice or subscription confirmation."
         ]
       },
       "changes": {
