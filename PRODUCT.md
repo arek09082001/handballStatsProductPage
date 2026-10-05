@@ -44,8 +44,9 @@ zero‑friction way in for a visitor who will not create an account yet;
 `demo_click` measures it. Third action, for whoever does neither today: the
 launch‑offer newsletter for clubs.
 
-The page carries **no price figure** — no page does. It says free, no credit
-card, and links to `/preise` for the rest.
+The page carries **no price figure** — figures live on `/preise` (and in the
+structured data and `llms.txt` that quote it). It says free, no credit card,
+and links to `/preise` for the rest.
 
 Length is a conversion constraint on this surface, not a content budget. The
 page is deliberately about half the scroll it used to be: everything a coach
@@ -137,34 +138,70 @@ The scope itself:
 ## Commercial truth (do not invent beyond this)
 
 - **Free to start**, no credit card; first game recorded without commitment.
-- **Today nothing can be bought.** Statix has no checkout and no subscription
-  tab, so every feature is open to every account until 31.12.2026. No CTA may
-  read like a purchase — the action everywhere is registration.
-- **The paid plans start on 1.1.2027, and their figures are decided.** Basis
-  0 € (permanent), Trainer 79 € per season or 9,90 € per month, Pro 159 € per
-  season or 19,90 € per month; a season runs 1 July – 30 June, and somebody
-  joining in January pays the half season (39 € / 79 €). These are end prices
-  and carry **no VAT**: under the small-business rule (§ 19 UStG) none may be
-  stated, and stating it anyway would be owed under § 14c UStG. When the switch
-  to standard taxation comes, the gross figures have to be re-checked, because
-  German price-display rules require the end price for consumers.
-- **The figures live in one module.** `features/preise/data/pricing-content.ts`
-  is the source; every other surface quotes it in prose. The tiers and their
-  limits come from the app repo's `docs/pricing.md`, the launch path from
-  `docs/monetarisierung-januar.md` — never round, pad or invent a limit.
+- **Buyable from 1.1.2027, through the app.** Until then nothing can be bought:
+  every feature is open to every account until 31.12.2026. From the launch,
+  `/preise` is the start of the purchase — the visitor puts a plan together
+  there, and the buy button hands over to the app
+  (`${appUrl}/api/billing/intent?app=…&video=…&cadence=…`), which handles
+  login or registration and the Stripe checkout. This site never takes payment
+  details. The button opens by itself at the launch instant the app names
+  (`launchAt`); before that it reads "Buchbar ab 1. Januar 2027", next to the
+  registration that secures the founder terms. `?kasse=vorschau` makes it
+  clickable early — harmless, because the app refuses anybody not on its
+  internal preview list. Everywhere else the action stays registration.
+- **One product, two dials, and the figures are decided.** App tier: Basis 0 €
+  (permanent), Trainer 79 € per season or 9,90 € per month, Pro 149 € per
+  season or 14,90 € per month. Video tier, for EVERY team in which the buying
+  account is head coach (`team_members.role = 'head_coach'`) — those teams
+  share one pool of storage and credits; a team with several head coaches
+  gets the best tier among them; there is no team picker. Each tier includes
+  App Basis: Video Basis 149 € (14,90 €/month, 100 GB), Video Team 399 € (39,90 €,
+  300 GB, 40 compute credits per season / 3 per month, panorama, follow-cam,
+  score overlay, live stream), Video Analyse 849 € (84,90 €, 500 GB, 180
+  credits / 15 per month, court calibration, running paths, ball detection
+  (beta), retraining). Next to any video tier the app tier costs the PACKAGE
+  price on a season: Trainer 39 €, Pro 75 €. Monthly has no discount of any
+  kind. Credits top up from Video Team: 10 for 19 €, 30 for 49 € (a credit is
+  one GPU hour; trial runs free, failed runs refunded). Video is no longer part
+  of Pro.
+- **The season rule belongs to the app.** A season runs 1 July – 30 June and
+  renews every 1 July. Buying mid-season costs the rest by started months,
+  floored to whole euros; April–June only monthly is offered. The app sends the
+  rest pre-computed — this site adds `rest` values up and never re-derives the
+  rule. The old "Rumpfsaison 39 €/79 €" wording is gone.
+- **These are end prices and carry no VAT**: under the small-business rule
+  (§ 19 UStG) none may be stated, and stating it anyway would be owed under
+  § 14c UStG. When the switch to standard taxation comes, the gross figures
+  have to be re-checked, because German price-display rules require the end
+  price for consumers.
+- **The figures have one source.** The configurator, the compare headers and
+  the founder card read the app's public price list
+  (`GET ${appUrl}/api/public/billing/prices`, fetched on the server with
+  hourly revalidation in `features/preise/data/fetch-price-sheet.ts`), with a
+  static fallback of the same figures in `features/preise/data/price-sheet.ts`
+  that hides the "today" amount instead of guessing it. The prose in
+  `messages/*.json` (`pricingPage`), the JSON-LD offers, `lib/seo.ts` and
+  `llms.txt` quote the same figures in words and change with the app's
+  catalog (`lib/billing/catalog.ts` and `docs/zahlungsstart.md` in the app
+  repo) — never round, pad or invent a limit.
 - **Grandfathering is a promise the site makes.** Any account created before
   1.1.2027 keeps the Trainer plan at no cost until 30.6.2027 — the end of
-  the 26/27 season, and not a day of the season after it. It costs nothing
-  to honour (the accounts already sit on `trainer`) and it is the reason this
-  page can announce a price without a single angry existing user — do not
-  weaken or quietly drop it.
+  the 26/27 season, and not a day of the season after it. Nothing is charged
+  then, because no card is stored. After that, founders keep a **permanent
+  founder price** on a season subscription without video — Trainer 59 €
+  instead of 79 €, Pro 109 € instead of 149 € — for as long as it runs without
+  interruption; it can be taken until 30.9.2027. Do not weaken or quietly drop
+  either half.
 - **Recording is never gated.** In no tier is live capture limited, and a limit
   is checked when a game is created, never during one. A paywall in the 58th
   minute costs the match record, not the customer.
 - **Club conditions are quoted, not listed.** A club enquires via
   `/fuer-vereine`; what a club with twelve squads needs is not what a club with
   two needs. The site names ~390 € per season for five squads as an order of
-  magnitude to budget against, never as a list price.
+  magnitude to budget against, never as a list price; Video Verein starts at
+  1.490 € per season (1 TB, 300 credits shared), also on request — it is for
+  clubs whose teams have different head coaches, which one coach's video
+  tier does not cover.
 - The launch offer for clubs is collected via the newsletter.
 - Live demo runs at the URL in `lib/club-config.ts` (`CLUB_CONFIG.website`).
 

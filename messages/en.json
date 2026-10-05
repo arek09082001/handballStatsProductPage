@@ -1604,7 +1604,7 @@
         },
         {
           "question": "Is there a free handball statistics app?",
-          "answer": "Yes. Statix is currently free with its full feature set — for a single coach as much as for a whole team, with no credit card and no checkout in the app. A subscription will follow later; its price is not decided yet."
+          "answer": "Yes. Statix’s Basic tier stays free forever – live recording, schedule, squad cards and live ticker for one team, with no credit card. From 1 January 2027 paid app and video tiers are added; anyone who registers before then keeps the Coach plan free until 30 June 2027. What each tier costs is on the pricing page."
         },
         {
           "question": "Do I need any technical knowledge?",
@@ -1636,7 +1636,7 @@
         },
         {
           "question": "How much does Statix cost?",
-          "answer": "Nothing right now: register at app.statix-app.de and track your first game with no commitment and no credit card. Want to look around first? The live demo runs without an account. A subscription will follow later; its price is not decided yet."
+          "answer": "Nothing until 31 December 2026: register at app.statix-app.de and track your first game with no commitment and no credit card. From 1 January 2027 Basic stays free, and paid app tiers plus video tiers for every team you lead as head coach are added – the prices are on the pricing page. Create an account before then and you keep the Coach plan free until 30 June 2027. Want to look around first? The live demo runs without an account."
         },
         {
           "question": "Who is behind Statix?",
@@ -1836,19 +1836,21 @@
     "launchDate": "1 January 2027",
     "founderDeadline": "31 December 2026",
     "founderFreeUntil": "30 June 2027",
+    "founderRedeemUntil": "30 September 2027",
     "coachCount": "over 50 coaches",
     "hero": {
       "kicker": "Pricing & costs",
       "titleLead": "Pricing for the handball statistics app",
       "titleBrand": "Statix",
-      "lede": "From {launchDate} Statix gets paid plans: Basic stays free forever, Coach costs €79 per season, Pro €159. Live recording is not cut back in any plan – and anyone who registers before then keeps the Coach plan free until {founderFreeUntil}.",
+      "lede": "Statix is one product with two dials: the app tier – Basic stays free forever, Coach costs €79 and Pro €149 per season – and, if you film, a video tier for every team you lead as head coach. Bookable from {launchDate}. Register before then and you keep the Coach plan free until {founderFreeUntil}.",
       "ctaPrimary": "Register free now",
       "ctaSecondary": "Live demo, no account",
+      "configureLink": "Or put your plan together right away",
       "deadline": "Deadline {founderDeadline}",
       "deadlineNote": "· after that only new registrations pay",
       "trust": [
         "Basic stays €0 forever",
-        "No credit card",
+        "No credit card to start",
         "Demo without an account"
       ]
     },
@@ -1857,128 +1859,177 @@
       "title": "Why Statix starts costing money in January",
       "description": "A hobby project used by {coachCount} is no longer a hobby project – not on the invoice, at least.",
       "paragraph1": "Statix came about because I was fed up with the tally sheet on the sideline – for my own team, on evenings after training. Today {coachCount} record their matches with it, and that still makes me happy every time.",
-      "paragraph2": "But the bill grows with every team: servers and database run around the clock, every AI analysis is a paid model call, every shared report renders a PDF and sends an email, every uploaded match video takes up storage permanently. I cannot carry that privately in the long run. That is why there are paid plans from {launchDate}.",
+      "paragraph2": "But the bill grows with every team: servers and database run around the clock, every AI analysis is a paid model call, every shared report renders a PDF and sends an email, every match video takes up storage permanently, and every analysis from the picture costs an hour on a graphics card. I cannot carry that privately in the long run. That is why there are paid tiers from {launchDate} – and video, the most expensive part, as a tier of its own instead of hidden in the priciest plan.",
       "paragraph3": "What will not happen: Statix disappearing behind a checkout. The core features stay free – limited, yes, but fully usable, so a youth coach with one team can keep working with it. What you pay for is what actually costs computing time, storage and delivery. And recording itself is not cut back in any plan: a paywall in the 58th minute does not cost you the customer, it costs you the match record.",
       "signatureRole": "Developer of Statix, handball coach"
     },
-    "tiers": {
-      "kicker": "The price board",
-      "title": "Three plans from {launchDate}",
-      "description": "You pay for what costs real money: computing time, storage and delivery. Everything that builds a habit stays in every plan.",
-      "seasonNote": "A year here means a season: 1 July to 30 June.",
-      "billingAriaLabel": "Billing period",
-      "billingMonthly": "Monthly",
-      "billingYearly": "Yearly",
-      "billingYearlyBadge": "−33 %",
-      "recommendedLabel": "Recommended",
-      "vatNote": "All prices are final prices. As a small business under § 19 of the German VAT Act I do not charge VAT.",
-      "prorataLead": "Prices apply from {launchDate}. Anyone joining in January only pays for the part-season up to 30 June:",
-      "prorataTrainer": "€39 instead of €79",
-      "prorataTrainerSuffix": "on Coach,",
-      "prorataPro": "€79 instead of €159",
-      "prorataProSuffix": "on Pro.",
-      "items": [
-        {
-          "id": "basis",
-          "name": "Basic",
-          "audience": "For the coach of a single team",
-          "price": {
-            "monat": {
-              "amount": "€0",
-              "unit": "forever",
-              "note": "No card, no expiry date."
-            },
-            "jahr": {
-              "amount": "€0",
-              "unit": "forever",
-              "note": "No card, no expiry date."
-            }
+    "configurator": {
+      "kicker": "Your plan",
+      "title": "Put your plan together",
+      "description": "One product, two dials: the app tier for your account and every team in it – and, if you film, a video tier for every team you lead as head coach. Both run on the same cadence.",
+      "recommended": "Recommended",
+      "cadence": {
+        "title": "Billing",
+        "note": "Applies to app and video together.",
+        "season": "Season",
+        "seasonHint": "1 July – 30 June",
+        "month": "Monthly",
+        "monthHint": "cancel monthly",
+        "seasonClosed": "In the last three months of the season only the monthly subscription is available."
+      },
+      "price": {
+        "perSeason": "per season",
+        "perMonth": "per month",
+        "forever": "forever",
+        "packNote": "bundled – <strike>{instead}</strike> on its own"
+      },
+      "app": {
+        "title": "App tier",
+        "note": "For your account and every team in it. Live recording is not cut back in any tier.",
+        "items": [
+          {
+            "id": "basis",
+            "name": "Basic",
+            "audience": "For the coach of one team",
+            "highlights": [
+              "Live recording without any restriction",
+              "Schedule, squad cards and team kitty in full",
+              "1 team, 20 players, 10 matches",
+              "4 AI analyses and 4 shared reports per month"
+            ]
           },
-          "summary": "One team, one season, no account with any payment provider. Record, analyse, plan fixtures – the core stays free so Statix remains usable for everyone.",
+          {
+            "id": "trainer",
+            "name": "Coach",
+            "audience": "For everyone who really analyses after the match",
+            "highlights": [
+              "Every match stays visible in full depth",
+              "Heatmaps, xG, form curve, records",
+              "3 teams with 2 assistant coaches each",
+              "Opponent scouting, PDF report, sponsors in the ticker",
+              "20 AI analyses and 30 shared reports per month"
+            ],
+            "recommended": true
+          },
+          {
+            "id": "pro",
+            "name": "Pro",
+            "audience": "For coaches with several teams",
+            "highlights": [
+              "Everything in Coach",
+              "5 teams with 5 assistant coaches each",
+              "40 players, 500 matches, 50 tournaments",
+              "40 AI analyses and 60 shared reports per month"
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "Video tier",
+        "note": "Applies to every team you lead as head coach – they share storage and credits. Includes at least App Basic. Next to a video tier the app tier costs only the bundle price on a season.",
+        "none": {
+          "id": "none",
+          "name": "No video",
+          "audience": "Record and analyse, without recordings",
           "highlights": [
-            "Live recording with nothing cut back",
-            "Full schedule and squad cards",
-            "1 team, 20 players, 10 matches",
-            "The last 5 matches in full depth",
-            "4 AI analyses and 4 shared reports per month"
-          ],
-          "ctaLabel": "Register for free"
+            "Everything in the chosen app tier",
+            "Video can be added later"
+          ]
         },
-        {
-          "id": "trainer",
-          "name": "Coach",
-          "audience": "For everyone who really analyses after the match",
-          "price": {
-            "monat": {
-              "amount": "€9.90",
-              "unit": "per month",
-              "note": "Cancel monthly."
-            },
-            "jahr": {
-              "amount": "€79",
-              "unit": "per season",
-              "note": "That is €6.58 a month – €39.80 saved."
-            }
+        "noneNote": "No storage, no credits",
+        "items": [
+          {
+            "id": "basis",
+            "name": "Video Basic",
+            "audience": "For match video as a weekly routine",
+            "highlights": [
+              "Tagging bench, playlists, clips to players",
+              "Team library, briefing mode",
+              "Video runs in sync with the match log"
+            ]
           },
-          "summary": "The tier Statix was built for: the whole season stays visible, shot maps and form curves included, up to three teams with two assistant coaches each.",
-          "highlights": [
-            "Every recorded match stays visible in full depth",
-            "Shot maps, heatmaps, form curve, team records",
-            "3 teams with 2 assistant coaches each",
-            "Head-to-head record, polls, PDF match report",
-            "Sponsor slots in the public live ticker",
-            "20 AI analyses and 30 shared reports per month"
-          ],
-          "ctaLabel": "Register and secure it",
-          "recommended": true
-        },
-        {
-          "id": "pro",
-          "name": "Pro",
-          "audience": "For video analysis as a weekly routine",
-          "price": {
-            "monat": {
-              "amount": "€19.90",
-              "unit": "per month",
-              "note": "Cancel monthly."
-            },
-            "jahr": {
-              "amount": "€159",
-              "unit": "per season",
-              "note": "That is €13.25 a month – €79.80 saved."
-            }
+          {
+            "id": "team",
+            "name": "Video Team",
+            "audience": "For teams filming with two cameras",
+            "highlights": [
+              "Everything in Video Basic",
+              "Panorama from two cameras, follow-cam version",
+              "Score overlay and live stream"
+            ]
           },
-          "summary": "Everything from Coach, plus the video: 100 GB of footage that syncs itself to the match clock. Every recorded event finds its place in the video without anyone searching.",
-          "highlights": [
-            "100 GB of video with tagging and playlists",
-            "Video runs in sync with the match clock automatically",
-            "Send highlight clips to individual players",
-            "5 teams, 5 assistant coaches, 500 matches",
-            "Player accounts for the whole squad",
-            "40 AI analyses and 60 shared reports per month"
-          ],
-          "ctaLabel": "Register and secure it"
-        }
-      ]
+          {
+            "id": "analyse",
+            "name": "Video Analysis",
+            "audience": "For analysis from the picture",
+            "highlights": [
+              "Everything in Video Team",
+              "Court calibration, running paths, heatmaps, distances",
+              "Ball detection (beta), retraining the detection"
+            ]
+          }
+        ],
+        "storage": "{gb} GB",
+        "creditsSeason": "{credits} credits per season",
+        "creditsMonth": "{credits} credits per month",
+        "noCredits": "no credits",
+        "creditsTitle": "Compute credits",
+        "creditsText": "One credit is one hour on a graphics card in the EU – for panorama, follow-cam, running paths or ball detection. Trial runs cost nothing, and runs that finally fail are credited back.",
+        "creditPacks": "Top up from Video Team: {smallCredits} credits for {smallPrice}, {largeCredits} credits for {largePrice}.",
+        "betaNote": "Video is a closed beta until {launchDate}. The analysis from the picture only ever suggests – it never creates a scene or a statistics entry on its own."
+      },
+      "summary": {
+        "title": "Your selection",
+        "appLine": "App {name}",
+        "included": "included",
+        "packNote": "bundle price with video – <strike>{instead}</strike> on its own",
+        "videoNote": "Shared by every team you lead as head coach · {gb} GB · {credits}",
+        "todayLabel": "Today",
+        "todayNote": "Rest of the season until {seasonEnd}, by started months",
+        "renewLabel": "From {date}",
+        "recurringSeasonLabel": "Per season",
+        "recurringMonthLabel": "Per month",
+        "seasonTerms": "Renews every 1 July, cancellable to the end of the season.",
+        "monthTerms": "Renews every month, cancellable monthly. No discounts.",
+        "launchNoteSeason": "Bookable from {launchDate}. You then first pay only the rest of the running season by started months – half in January – and the full season price from 1 July.",
+        "launchNoteMonth": "Bookable from {launchDate}. The first month is due when you book.",
+        "fallbackNote": "The checkout shows you the amount for the rest of the running season.",
+        "freeText": "App Basic without video costs nothing – no card, no expiry date. You can add video or a higher app tier at any time.",
+        "founderNote": "Founder price: accounts registered by {founderDeadline} pay {founder} instead of {standard} for this season subscription, permanently.",
+        "vatNote": "End prices. As a small business under § 19 UStG I do not charge VAT.",
+        "buy": "Continue to checkout",
+        "buyHint": "Continues in the app: log in or register, payment is handled by Stripe. The amount in the checkout is binding.",
+        "buyLocked": "Bookable from {launchDate}",
+        "register": "Register for free",
+        "registerFounder": "Register free now and secure grandfathering",
+        "previewBadge": "Checkout preview",
+        "mobileToday": "today",
+        "jump": "Summary"
+      }
     },
     "founder": {
       "kicker": "For everyone already on board",
-      "title": "Register now and pay nothing for the 26/27 season",
-      "description": "From {launchDate} only new registrations pay. Every account that already exists keeps the Coach plan – free, without an application and without payment details.",
+      "title": "Register now and pay nothing for the 26/27 season – and less afterwards",
+      "description": "From {launchDate} only new registrations pay. Every account that already exists keeps the Coach plan until {founderFreeUntil} – free, without an application and without payment details. After that a permanent founder price applies.",
       "cardTitle": "Grandfathering",
       "cardDeadlineLabel": "Register by",
       "cardPlanLabel": "Your plan",
       "cardPlanValue": "Coach",
       "cardFreeUntilLabel": "Free until",
       "cardDueLabel": "Due until then",
-      "cardNote": "This is not a trial: there is no expiry date on which a card gets charged, because no card is stored.",
+      "cardFounderLabel": "Then per season",
+      "cardFounder": {
+        "trainer": "Coach {founder} <strike>{standard}</strike>",
+        "pro": "Pro {founder} <strike>{standard}</strike>"
+      },
+      "cardNote": "This is not a trial: nothing is charged on {founderFreeUntil}, because no card is stored. Without a subscription your account then carries on in Basic – nothing is deleted.",
       "cardCta": "Create an account and secure it",
       "closing": "The reason is not a marketing trick but arithmetic: the coaches who have used Statix for a whole season are worth many times more as advocates than they would bring in as first payers. And nobody in the middle of the second half of the season should find their season behind a checkout.",
       "steps": [
         {
           "number": 1,
           "title": "Register by {founderDeadline}",
-          "text": "An email address is enough. There is no field for payment details, because there is no payment process until January."
+          "text": "An email address is enough. There is no field for payment details, because nobody can buy anything before {launchDate}."
         },
         {
           "number": 2,
@@ -1989,19 +2040,27 @@
           "number": 3,
           "title": "Free until {founderFreeUntil}",
           "text": "The whole of the current 26/27 season, second half included. After that you decide whether to stay – without anything being charged beforehand."
+        },
+        {
+          "number": 4,
+          "title": "Then a founder price for good",
+          "text": "With a season subscription without video you pay €59 instead of €79 for Coach and €109 instead of €149 for Pro – for as long as the subscription runs without interruption. You can take it out until {founderRedeemUntil}. With video the cheaper bundle price applies anyway."
         }
       ]
     },
     "compare": {
       "kicker": "Everything compared",
-      "title": "What is in which plan",
-      "description": "Complete, no asterisks: every feature and every limit exactly as the app applies them from January.",
+      "title": "What is in which tier",
+      "description": "Complete, no asterisks: every feature and every limit exactly as the app applies them from the launch – first the app tiers, then the video tiers.",
       "included": "included",
       "notIncluded": "not included",
       "limitsNote": "Numbers are upper limits, valid from {launchDate}.",
       "rowHeaderSr": "Feature or limit",
       "captionSuffix": "features and limits per plan",
+      "appHeading": "App tiers",
+      "videoHeading": "Video tiers",
       "closing": "The limits never bite mid-match: whether another match fits your quota is checked when you create it, not at half time. A recording that has started always runs to the end and is always saved.",
+      "videoClosing": "With a video tier the app tier costs only the bundle price on a season: Coach €39 instead of €79, Pro €75 instead of €149. Monthly there are no discounts. Compute credits can be topped up from Video Team: 10 credits for €19, 30 credits for €49.",
       "groups": [
         {
           "id": "erfassen",
@@ -2067,7 +2126,7 @@
               "pro": "all"
             },
             {
-              "label": "Shot maps and heatmaps",
+              "label": "Shot maps, heatmaps and xG",
               "basis": false,
               "trainer": true,
               "pro": true
@@ -2096,20 +2155,6 @@
               "basis": "4",
               "trainer": "20",
               "pro": "40"
-            },
-            {
-              "label": "Video analysis with tagging and playlists",
-              "hint": "100 GB is around 16 matches in 1080p",
-              "basis": false,
-              "trainer": false,
-              "pro": "100 GB"
-            },
-            {
-              "label": "Video runs in sync with the match clock",
-              "hint": "Every recorded event finds its place in the video",
-              "basis": false,
-              "trainer": false,
-              "pro": true
             }
           ]
         },
@@ -2134,6 +2179,13 @@
             {
               "label": "Squad as a card album",
               "hint": "HPI and OVR, tiers, radar, stickers",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Fine catalogue and team kitty",
+              "hint": "including each player’s own account",
               "basis": true,
               "trainer": true,
               "pro": true
@@ -2171,9 +2223,10 @@
               "pro": "50"
             },
             {
-              "label": "Player accounts for the squad",
+              "label": "Players’ own statistics",
+              "hint": "They see their figures with their own access",
               "basis": false,
-              "trainer": false,
+              "trainer": true,
               "pro": true
             }
           ]
@@ -2215,27 +2268,119 @@
               "basis": false,
               "trainer": true,
               "pro": true
-            },
-            {
-              "label": "Send highlight clips to players",
-              "hint": "They see their scenes without an account of their own",
-              "basis": false,
-              "trainer": false,
-              "pro": true
             }
           ]
         }
-      ]
+      ],
+      "video": {
+        "id": "video",
+        "title": "Video",
+        "note": "Every video tier applies to every team you lead as head coach – they share storage and credits – and includes App Basic. The analysis from the picture runs on a rented graphics card in the EU and only ever suggests – it never creates a scene or a statistics entry on its own.",
+        "rows": [
+          {
+            "label": "Storage for recordings",
+            "hint": "Held at any time, shared by every team you lead as head coach",
+            "basis": "100 GB",
+            "team": "300 GB",
+            "analyse": "500 GB"
+          },
+          {
+            "label": "Compute credits per season",
+            "hint": "On a monthly plan 3 or 15 per month; one credit is one GPU hour",
+            "basis": false,
+            "team": "40",
+            "analyse": "180"
+          },
+          {
+            "label": "Top up credits",
+            "hint": "10 credits for €19, 30 credits for €49",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Tagging bench, playlists, clips to players",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Team library and briefing mode",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Video in sync with the match log",
+            "hint": "Every recorded event finds its place in the video",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Panorama from two cameras",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Follow-cam version",
+            "hint": "A panning crop from the panorama",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Score overlay",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Live stream",
+            "hint": "Live panorama costs credits",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Court calibration",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Running paths, heatmaps, distances",
+            "hint": "per player, from the picture",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Ball detection (beta)",
+            "hint": "Where in the goal the ball lands – as a suggestion",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Retrain the detection",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          }
+        ]
+      }
     },
     "club": {
       "kicker": "For the club treasury",
       "title": "What does Statix cost a club?",
       "description": "The question the committee asks before anyone opens the app.",
       "coachTitle": "One coach, several teams",
-      "coachParagraph1": "That needs no club contract. A Coach account carries three teams – under-18s, women, men, however it is cut at your club – with two assistant coaches each, for €79 per season. That is less than a club licence for the usual organisation apps, and it brings statistics, shot maps and AI along with it.",
+      "coachParagraph1": "That needs no club contract. A Coach account carries three teams – under-18s, women, men, however it is cut at your club – with two assistant coaches each, for €79 per season. That is less than a club licence for the usual organisation apps, and it brings statistics, shot maps and AI along with it. If you film, add a video tier – it covers all three teams, which share its storage and credits.",
       "coachParagraph2": "In a club that can often be paid for entirely: from the Coach tier upwards a sponsor may appear in the public live ticker, and a perimeter-board partner usually covers the amount on their own.",
       "clubTitle": "The whole club: on request",
-      "clubParagraph1": "If you want to bring every team under one roof – a club overview, club-wide analysis, player careers across the youth levels – you get the club area. As a guide for your budget: around €390 per season for five teams, staggered by size.",
+      "clubParagraph1": "If you want to bring every team under one roof – a club overview, club-wide analysis, player careers across the youth levels – you get the club area. As a guide for your budget: around €390 per season for five teams, staggered by size. Video for the whole club – when its teams have different head coaches – starts at €1,490 per season, with 1 TB of storage and 300 compute credits shared by all teams.",
       "clubParagraph2": "There is deliberately no list price. What a club with twelve youth teams needs is something else than a club with two – write a short note about how many teams you have and a fitting offer comes back.",
       "clubLink": "Request club terms",
       "closing": "What a club gains when every team records to the same standard – one standard across all teams, squads and training attendance in one place, development across all youth teams, data protection properly handled – is on the page <club>handball statistics app for clubs</club>. For coaching teams in youth handball it is worth looking at <youth>Statix for youth coaches</youth>."
@@ -2297,42 +2442,62 @@
       "items": [
         {
           "question": "What does Statix cost?",
-          "answer": "Nothing until {founderDeadline}. From {launchDate} there are three tiers: Basic stays free forever, Coach costs €79 per season or €9.90 a month, Pro €159 per season or €19.90 a month. All prices are final prices; as a small business under § 19 of the German VAT Act I do not charge VAT."
+          "answer": "Nothing until {founderDeadline}. From {launchDate} there are two dials: the app tier – Basic stays free forever, Coach costs €79 per season or €9.90 per month, Pro €149 per season or €14.90 per month – and, if you film, a video tier for every team you lead as head coach (they share storage and credits): Video Basic €149, Video Team €399, Video Analysis €849 per season (€14.90, €39.90 and €84.90 per month). Next to a video tier the app tier costs only the bundle price on a season: Coach €39, Pro €75. All prices are end prices."
         },
         {
           "question": "I already use Statix – do I have to pay from January?",
-          "answer": "No. Every account created before {launchDate} keeps the Coach plan free until {founderFreeUntil} – that is the whole of the current 26/27 season. You do not have to do anything, click anything or store payment details. Running into a paywall mid-season means losing your match record, and that would be the worst possible start."
+          "answer": "No. Every account created before {launchDate} keeps the Coach plan free until {founderFreeUntil} – the whole of the current 26/27 season. You do not have to do anything, click anything or store any payment details. After that a permanent founder price applies to you: €59 instead of €79 for Coach, €109 instead of €149 for Pro, as a season subscription without video."
         },
         {
-          "question": "Why is Statix becoming paid at all?",
-          "answer": "Statix began as a hobby project for my own team and is now used by {coachCount}. Servers, database, AI analyses and video storage cost more with every team, and I cannot carry that bill privately in the long run. The alternative would be to shut the project down – the worse solution for everyone involved."
+          "question": "What happens to my account on 30 June 2027?",
+          "answer": "The grandfathering ends, and nothing is charged – no card is stored, after all. Without a subscription your account carries on in Basic from 1 July: nothing is deleted, older matches stay saved and are shown blurred, and whatever goes beyond Basic’s limits stays readable. If you want to keep working with Coach or Pro, take out a season subscription at the founder price by {founderRedeemUntil} – it applies permanently as long as the subscription is not interrupted."
+        },
+        {
+          "question": "Why does Statix cost money at all?",
+          "answer": "Statix started as a hobby project for my own team and is now used by {coachCount}. Servers, database, AI analyses, video storage and graphics cards cost more with every team, and I cannot carry that bill privately in the long run. The alternative would be to shut the project down – the worse solution for everyone involved."
         },
         {
           "question": "What stays free?",
-          "answer": "All live recording, the complete schedule with RSVPs, absences and calendar subscription, the squad cards with HPI, tiers and stickers, the public live ticker and the analysis of your matches. What Basic limits: one team, 20 players, 10 saved matches, the last five matches in full depth plus four AI analyses and four shared reports per month."
+          "answer": "All of live recording, the complete schedule with RSVPs, absences and calendar subscription, the squad cards with HPI, tiers and stickers, the fine catalogue and team kitty, the public live ticker and the analysis of your matches. Basic is limited to one team, 20 players, 10 saved matches, the last five matches in full depth, 3 tournaments and four AI analyses and four shared reports per month."
         },
         {
-          "question": "Monthly or yearly – what is the difference?",
-          "answer": "Only the price and the rhythm. Yearly here means a season, from 1 July to 30 June, and costs about a third less: €79 instead of €118.80 on Coach, €159 instead of €238.80 on Pro. Monthly is more expensive but can be cancelled at any time. Joining in January means paying only the part-season up to 30 June: €39 instead of €79 on Coach, €79 instead of €159 on Pro."
+          "question": "Season or monthly – what is the difference?",
+          "answer": "A season runs from 1 July to 30 June, renews every 1 July and can be cancelled to the end of the season. It is cheaper – Coach €79 instead of €118.80, Pro €149 instead of €178.80 – and only on a season do you get the bundle price next to a video tier and the founder price. Monthly renews every month and can be cancelled monthly, but without any discount. App and video always run on the same cadence."
+        },
+        {
+          "question": "I am joining mid-season – what do I pay?",
+          "answer": "Today only the rest of the running season, by started months and rounded down to whole euros: in October that is nine months (Coach €59), in January half (Coach €39). From 1 July you then pay the full season price. In the last three months of the season – April to June – only the monthly subscription is available. The summary above shows you the exact amount, and the checkout makes it binding."
+        },
+        {
+          "question": "What do I need a video tier for, and what are compute credits?",
+          "answer": "For teams that film their matches. A video tier applies to every team you lead as head coach – they share storage and credits. Video Basic brings 100 GB of storage, tagging, playlists, clips to players and the team library, in sync with the match log. Video Team adds 300 GB, panorama from two cameras, the follow-cam version, the score overlay and live streaming; Video Analysis 500 GB, running paths, heatmaps and ball detection. The analysis from the picture runs on a graphics card; one credit is one hour of it. Video Team includes 40 credits per season and Video Analysis 180 (3 and 15 per month on a monthly plan); you can top up 10 for €19 or 30 for €49. Trial runs cost nothing, failed runs are credited back."
+        },
+        {
+          "question": "How do I buy a plan?",
+          "answer": "Put it together here on this page and click “Continue to checkout”. The button takes you into the app: you log in or register there, your selection waits until you have, and you then pay through Stripe. It can be booked from {launchDate}; until then, a free registration secures your grandfathering."
         },
         {
           "question": "Do I lose data if I stay on Basic?",
-          "answer": "No. Nothing is deleted. On Basic you see the five most recently recorded matches in full depth; older ones stay in the list and are shown blurred, with a note on what unlocks them again. And the ten-match limit is checked when you create a match, never during one: a recording that has started always runs to the end and is always saved."
+          "answer": "No. Nothing is deleted. On Basic you see the five most recently recorded matches in full depth; older ones stay in the list and are shown blurred, with a note on what unlocks them again. And the ten-match limit is checked when a match is created, never during one: a recording that has started always runs to the end and is always saved."
         },
         {
-          "question": "What does Statix cost a club?",
-          "answer": "An individual coach stays on the tiers above. If you want to bring the club in as a whole – every team under one roof, club-wide analysis, player careers across the youth levels – you get the club area, and that is set up for the club. As a guide it is around €390 per season for five teams, staggered by size. There is deliberately no list price: what a club with twelve youth teams needs is something else than a club with two."
+          "question": "What does Statix cost for a club?",
+          "answer": "A single coach stays with the tiers above. If you want to bring the whole club in – every team under one roof, club-wide analysis, player careers across the youth levels – you get the club area, and it is set up for the club. As a guide it comes to around €390 per season for five teams, staggered by size; video for the whole club starts at €1,490 per season with 1 TB of storage and 300 shared credits. Both on request – there is deliberately no list price."
         },
         {
-          "question": "How can I cancel?",
-          "answer": "At any time in your account, with one click – a cancel button is part of the deal from the first day of payment. A monthly subscription ends with the next month, a season subscription on 30 June. After that your account continues on Basic; your data stays where it is."
+          "question": "How do I cancel?",
+          "answer": "At any time in your account, with the cancellation button under § 312k BGB – no form, no email. A season subscription ends on 30 June, a monthly one at the end of the paid month. After that your account carries on in Basic; your data stays where it is."
+        },
+        {
+          "question": "Why is there no VAT on the invoice?",
+          "answer": "Because I am a small business under § 19 UStG. That means I may not charge VAT, and the prices here are end prices – you pay exactly the amount shown. Every invoice carries a note to that effect."
         }
       ]
     },
     "cta": {
       "kicker": "Now or from January",
       "title": "Every sign-up before {founderDeadline} counts",
-      "description": "Registering costs nothing and takes a minute – there is no field for payment details. Create an account today and you keep the Coach plan free until {founderFreeUntil}. Rather look around first? The live demo runs on real match data without an account.",
+      "description": "Registering costs nothing and takes a minute – there is no field for payment details. Create an account today and you keep the Coach plan free until {founderFreeUntil}, and the founder price after that. Rather look around first? The live demo runs on real match data without an account.",
       "linkLabel": "Subscribe to the newsletter and hear about changes first"
     }
   },
@@ -2490,7 +2655,7 @@
         },
         {
           "question": "Is Statix free?",
-          "answer": "Nothing until 31 December 2026: register at {appUrl} and record your first match with no obligation and no credit card. From 1 January 2027 there are three tiers – Basic stays at €0, Coach costs €79 per season, Pro €159. Anyone who registers before then keeps the Coach plan free for the whole 26/27 season, that is until 30 June 2027."
+          "answer": "Nothing until 31 December 2026: register at {appUrl} and record your first match with no obligation and no credit card. From 1 January 2027 Basic stays at €0, Coach costs €79 per season and Pro €149; if you film, you add a video tier from €149 per season – for every team you lead as head coach. Anyone who registers before then keeps the Coach plan free for the whole 26/27 season, that is until 30 June 2027, and a founder price after that."
         },
         {
           "question": "How can I try Statix?",
@@ -6081,7 +6246,7 @@
       "faq": [
         {
           "question": "Are all features included in the free access?",
-          "answer": "Until 31 December 2026, yes: Statix has not been switched to a subscription yet, so every finished feature is open to every account. From 1 January 2027 there are three tiers — recording, the calendar and the squad cards stay complete in each of them, the computation-heavy features move into the paid ones. The cut is set out on the pricing page."
+          "answer": "Until 31 December 2026, yes: Statix has not been switched to a subscription yet, so every finished feature is open to every account. From 1 January 2027 there are three app tiers and, for a team that films, three video tiers — recording, the calendar and the squad cards stay complete in every app tier, the computation-heavy features move into the paid ones. The cut is set out on the pricing page."
         },
         {
           "question": "What does \"In progress\" mean on a feature?",

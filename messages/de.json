@@ -1604,7 +1604,7 @@
         },
         {
           "question": "Gibt es eine kostenlose Handball-Statistik-App?",
-          "answer": "Ja. Statix ist aktuell mit vollem Funktionsumfang kostenlos – für einzelne Trainer wie für ganze Teams, ohne Kreditkarte und ohne Bezahlvorgang in der App. Später wird es ein Abo geben; der Preis steht noch nicht fest."
+          "answer": "Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos – Live-Erfassung, Terminplan, Kaderkarten und Live-Ticker für eine Mannschaft, ohne Kreditkarte. Ab dem 1. Januar 2027 kommen bezahlte App- und Video-Stufen dazu; wer sich vorher registriert, behält den Trainer-Plan bis zum 30. Juni 2027 kostenlos. Was welche Stufe kostet, steht auf der Preisseite."
         },
         {
           "question": "Brauche ich technisches Vorwissen?",
@@ -1636,7 +1636,7 @@
         },
         {
           "question": "Was kostet Statix?",
-          "answer": "Aktuell nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus. Später wird es ein Abo geben; der Preis steht noch nicht fest."
+          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt die Basis kostenlos, dazu kommen bezahlte App-Stufen und Video-Stufen für alle Mannschaften, in denen du Cheftrainer bist – die Preise stehen auf der Preisseite. Wer bis dahin ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum 30. Juni 2027. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus."
         },
         {
           "question": "Wer steckt hinter Statix?",
@@ -1836,19 +1836,21 @@
     "launchDate": "1. Januar 2027",
     "founderDeadline": "31. Dezember 2026",
     "founderFreeUntil": "30. Juni 2027",
+    "founderRedeemUntil": "30. September 2027",
     "coachCount": "über 50 Trainer",
     "hero": {
       "kicker": "Preise & Kosten",
       "titleLead": "Preise für die Handball-Statistik-App",
       "titleBrand": "Statix",
-      "lede": "Ab dem {launchDate} bekommt Statix bezahlte Pläne: Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison, Pro 159 €. Die Live-Erfassung ist in keinem Plan beschnitten – und wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}.",
+      "lede": "Statix ist ein Produkt mit zwei Reglern: der App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 €, Pro 149 € je Saison – und, wenn ihr filmt, einer Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist. Buchbar ab dem {launchDate}. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}.",
       "ctaPrimary": "Jetzt kostenlos registrieren",
       "ctaSecondary": "Live-Demo ohne Account",
+      "configureLink": "Oder gleich deinen Plan zusammenstellen",
       "deadline": "Stichtag {founderDeadline}",
       "deadlineNote": "· danach zahlen nur Neuregistrierungen",
       "trust": [
         "Basis bleibt dauerhaft 0 €",
-        "Keine Kreditkarte",
+        "Keine Kreditkarte zum Start",
         "Demo ohne Account"
       ]
     },
@@ -1857,128 +1859,177 @@
       "title": "Warum Statix ab Januar Geld kostet",
       "description": "Ein Hobbyprojekt, das {coachCount} benutzen, ist kein Hobbyprojekt mehr – jedenfalls nicht auf der Rechnung.",
       "paragraph1": "Statix ist entstanden, weil ich die Strichliste am Spielfeldrand satt hatte – für meine eigene Mannschaft, an Abenden nach dem Training. Inzwischen erfassen {coachCount} ihre Spiele damit, und darüber freue ich mich jedes Mal.",
-      "paragraph2": "Nur wächst mit jeder Mannschaft auch die Rechnung: Server und Datenbank laufen rund um die Uhr, jede KI-Analyse ist ein bezahlter Modellaufruf, jeder geteilte Bericht rendert ein PDF und verschickt eine E-Mail, jedes hochgeladene Spielvideo belegt dauerhaft Speicher. Das kann ich auf Dauer nicht privat tragen. Deshalb gibt es ab dem {launchDate} bezahlte Pläne.",
+      "paragraph2": "Nur wächst mit jeder Mannschaft auch die Rechnung: Server und Datenbank laufen rund um die Uhr, jede KI-Analyse ist ein bezahlter Modellaufruf, jeder geteilte Bericht rendert ein PDF und verschickt eine E-Mail, jedes Spielvideo belegt dauerhaft Speicher, und jede Analyse aus dem Bild kostet eine Stunde Grafikkarte. Das kann ich auf Dauer nicht privat tragen. Deshalb gibt es ab dem {launchDate} bezahlte Stufen – und das Video, das am meisten kostet, als eigene Stufe statt versteckt im teuersten Plan.",
       "paragraph3": "Was dabei nicht passiert: Statix wird nicht hinter einer Kasse verschwinden. Die Grundfunktionen bleiben kostenlos – begrenzt zwar, aber vollständig benutzbar, damit ein Jugendtrainer mit einer Mannschaft weiter damit arbeiten kann. Bezahlt wird das, was tatsächlich Rechenzeit, Speicher und Versand kostet. Und die Erfassung selbst ist in keinem Plan beschnitten: Eine Paywall in der 58. Minute kostet nicht den Kunden, sondern das Spielprotokoll.",
       "signatureRole": "Entwickler von Statix, Handballtrainer"
     },
-    "tiers": {
-      "kicker": "Die Preistafel",
-      "title": "Drei Pläne ab dem {launchDate}",
-      "description": "Bezahlt wird, was echtes Geld kostet: Rechenzeit, Speicher und Versand. Alles, was eine Gewohnheit trägt, bleibt in jedem Plan drin.",
-      "seasonNote": "Ein Jahr ist bei uns eine Saison: 1. Juli bis 30. Juni.",
-      "billingAriaLabel": "Abrechnungszeitraum",
-      "billingMonthly": "Monatlich",
-      "billingYearly": "Jährlich",
-      "billingYearlyBadge": "−33 %",
-      "recommendedLabel": "Empfohlen",
-      "vatNote": "Alle Preise sind Endpreise. Als Kleinunternehmer nach § 19 UStG weise ich keine Umsatzsteuer aus.",
-      "prorataLead": "Die Preise gelten ab dem {launchDate}. Wer im Januar einsteigt, zahlt nur die Rumpfsaison bis zum 30. Juni:",
-      "prorataTrainer": "39 € statt 79 €",
-      "prorataTrainerSuffix": "bei Trainer,",
-      "prorataPro": "79 € statt 159 €",
-      "prorataProSuffix": "bei Pro.",
-      "items": [
-        {
-          "id": "basis",
-          "name": "Basis",
-          "audience": "Für den Trainer einer Mannschaft",
-          "price": {
-            "monat": {
-              "amount": "0 €",
-              "unit": "dauerhaft",
-              "note": "Keine Karte, kein Ablaufdatum."
-            },
-            "jahr": {
-              "amount": "0 €",
-              "unit": "dauerhaft",
-              "note": "Keine Karte, kein Ablaufdatum."
-            }
+    "configurator": {
+      "kicker": "Dein Plan",
+      "title": "Stell deinen Plan zusammen",
+      "description": "Ein Produkt, zwei Regler: die App-Stufe für dein Konto und alle Mannschaften darin – und, wenn ihr filmt, eine Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist. Beide laufen im selben Rhythmus.",
+      "recommended": "Empfohlen",
+      "cadence": {
+        "title": "Abrechnung",
+        "note": "Gilt für App und Video gemeinsam.",
+        "season": "Saison",
+        "seasonHint": "1. Juli – 30. Juni",
+        "month": "Monatlich",
+        "monthHint": "monatlich kündbar",
+        "seasonClosed": "In den letzten drei Monaten der Saison gibt es nur das Monatsabo."
+      },
+      "price": {
+        "perSeason": "je Saison",
+        "perMonth": "im Monat",
+        "forever": "dauerhaft",
+        "packNote": "im Paket – <strike>{instead}</strike> einzeln"
+      },
+      "app": {
+        "title": "App-Stufe",
+        "note": "Für dein Konto und alle Mannschaften darin. Die Live-Erfassung ist in keiner Stufe beschnitten.",
+        "items": [
+          {
+            "id": "basis",
+            "name": "Basis",
+            "audience": "Für den Trainer einer Mannschaft",
+            "highlights": [
+              "Live-Erfassung ohne jede Beschneidung",
+              "Terminplan, Kaderkarten und Kasse vollständig",
+              "1 Mannschaft, 20 Spieler:innen, 10 Spiele",
+              "4 KI-Analysen und 4 geteilte Berichte im Monat"
+            ]
           },
-          "summary": "Eine Mannschaft, eine Saison, kein Konto bei irgendeinem Zahlungsdienst. Erfassen, auswerten, Termine planen – der Kern bleibt kostenlos, damit Statix für die Masse benutzbar bleibt.",
+          {
+            "id": "trainer",
+            "name": "Trainer",
+            "audience": "Für alle, die nach dem Spiel wirklich auswerten",
+            "highlights": [
+              "Jedes Spiel bleibt in voller Tiefe sichtbar",
+              "Heatmaps, xG, Formkurve, Rekorde",
+              "3 Mannschaften mit je 2 Co-Trainern",
+              "Gegner-Scouting, PDF-Bericht, Sponsoren im Ticker",
+              "20 KI-Analysen und 30 geteilte Berichte im Monat"
+            ],
+            "recommended": true
+          },
+          {
+            "id": "pro",
+            "name": "Pro",
+            "audience": "Für Trainer mit mehreren Mannschaften",
+            "highlights": [
+              "Alles aus Trainer",
+              "5 Mannschaften mit je 5 Co-Trainern",
+              "40 Spieler:innen, 500 Spiele, 50 Turniere",
+              "40 KI-Analysen und 60 geteilte Berichte im Monat"
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "Video-Stufe",
+        "note": "Gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich. Enthält mindestens App Basis. Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis.",
+        "none": {
+          "id": "none",
+          "name": "Ohne Video",
+          "audience": "Erfassen und auswerten, ohne Aufnahmen",
           "highlights": [
-            "Live-Erfassung ohne jede Beschneidung",
-            "Terminplan und Kaderkarten vollständig",
-            "1 Mannschaft, 20 Spieler:innen, 10 Spiele",
-            "Die letzten 5 Spiele in voller Tiefe",
-            "4 KI-Analysen und 4 geteilte Berichte im Monat"
-          ],
-          "ctaLabel": "Kostenlos registrieren"
+            "Alles aus der gewählten App-Stufe",
+            "Video lässt sich später dazubuchen"
+          ]
         },
-        {
-          "id": "trainer",
-          "name": "Trainer",
-          "audience": "Für alle, die nach dem Spiel wirklich auswerten",
-          "price": {
-            "monat": {
-              "amount": "9,90 €",
-              "unit": "im Monat",
-              "note": "Monatlich kündbar."
-            },
-            "jahr": {
-              "amount": "79 €",
-              "unit": "je Saison",
-              "note": "Entspricht 6,58 € im Monat – 39,80 € gespart."
-            }
+        "noneNote": "Kein Speicher, keine Credits",
+        "items": [
+          {
+            "id": "basis",
+            "name": "Video Basis",
+            "audience": "Für Spielvideos als Wochenroutine",
+            "highlights": [
+              "Tagging-Werkbank, Playlists, Sendungen",
+              "Mediathek für die Mannschaft, Besprechungsmodus",
+              "Video läuft synchron mit dem Protokoll"
+            ]
           },
-          "summary": "Die Stufe, für die Statix gebaut wurde: die ganze Saison bleibt sichtbar, Wurfbilder und Formkurven inklusive, bis zu drei Mannschaften mit je zwei Co-Trainern.",
-          "highlights": [
-            "Jedes erfasste Spiel bleibt in voller Tiefe sichtbar",
-            "Wurfbilder, Heatmaps, Formkurve, Team-Rekorde",
-            "3 Mannschaften mit je 2 Co-Trainern",
-            "Gegner-Bilanz, Umfragen, PDF-Spielbericht",
-            "Sponsorenslots im öffentlichen Live-Ticker",
-            "20 KI-Analysen und 30 geteilte Berichte im Monat"
-          ],
-          "ctaLabel": "Registrieren und sichern",
-          "recommended": true
-        },
-        {
-          "id": "pro",
-          "name": "Pro",
-          "audience": "Für Videoanalyse als Wochenroutine",
-          "price": {
-            "monat": {
-              "amount": "19,90 €",
-              "unit": "im Monat",
-              "note": "Monatlich kündbar."
-            },
-            "jahr": {
-              "amount": "159 €",
-              "unit": "je Saison",
-              "note": "Entspricht 13,25 € im Monat – 79,80 € gespart."
-            }
+          {
+            "id": "team",
+            "name": "Video Team",
+            "audience": "Für Mannschaften, die mit zwei Kameras filmen",
+            "highlights": [
+              "Alles aus Video Basis",
+              "Panorama aus zwei Kameras, Schwenk-Fassung",
+              "Spielstand-Einblendung und Livestream"
+            ]
           },
-          "summary": "Alles aus Trainer, plus das Video: 100 GB Aufnahmen, die sich selbst mit der Spieluhr synchronisieren. Jedes erfasste Ereignis findet seine Stelle im Video, ohne dass jemand sucht.",
-          "highlights": [
-            "100 GB Video mit Tagging und Playlists",
-            "Video läuft automatisch synchron zur Spieluhr",
-            "Zusammenschnitte an einzelne Spielerinnen senden",
-            "5 Mannschaften, 5 Co-Trainer, 500 Spiele",
-            "Spieler-Accounts für den ganzen Kader",
-            "40 KI-Analysen und 60 geteilte Berichte im Monat"
-          ],
-          "ctaLabel": "Registrieren und sichern"
-        }
-      ]
+          {
+            "id": "analyse",
+            "name": "Video Analyse",
+            "audience": "Für die Analyse aus dem Bild",
+            "highlights": [
+              "Alles aus Video Team",
+              "Feldkalibrierung, Laufwege, Heatmaps, Distanzen",
+              "Ballerkennung (Beta), Erkennung nachtrainieren"
+            ]
+          }
+        ],
+        "storage": "{gb} GB",
+        "creditsSeason": "{credits} Credits je Saison",
+        "creditsMonth": "{credits} Credits im Monat",
+        "noCredits": "ohne Credits",
+        "creditsTitle": "Rechen-Credits",
+        "creditsText": "Ein Credit ist eine Stunde auf einer Grafikkarte in der EU – für Panorama, Schwenk-Fassung, Laufwege oder Ballerkennung. Probeläufe kosten nichts, endgültig gescheiterte Läufe werden gutgeschrieben.",
+        "creditPacks": "Nachkaufen ab Video Team: {smallCredits} Credits für {smallPrice}, {largeCredits} Credits für {largePrice}.",
+        "betaNote": "Das Video ist bis zum {launchDate} eine geschlossene Beta. Die Analyse aus dem Bild schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an."
+      },
+      "summary": {
+        "title": "Deine Auswahl",
+        "appLine": "App {name}",
+        "included": "inklusive",
+        "packNote": "Paketpreis mit Video – <strike>{instead}</strike> einzeln",
+        "videoNote": "Geteilt von allen Mannschaften, in denen du Cheftrainer bist · {gb} GB · {credits}",
+        "todayLabel": "Heute",
+        "todayNote": "Rest der Saison bis zum {seasonEnd}, nach angefangenen Monaten",
+        "renewLabel": "Ab dem {date}",
+        "recurringSeasonLabel": "Je Saison",
+        "recurringMonthLabel": "Im Monat",
+        "seasonTerms": "Verlängert sich jeweils am 1. Juli, kündbar zum Saisonende.",
+        "monthTerms": "Verlängert sich jeden Monat, monatlich kündbar. Keine Rabatte.",
+        "launchNoteSeason": "Buchbar ab dem {launchDate}. Dann zahlst du zuerst nur den Rest der laufenden Saison nach angefangenen Monaten – im Januar die Hälfte – und ab dem 1. Juli den vollen Saisonpreis.",
+        "launchNoteMonth": "Buchbar ab dem {launchDate}. Der erste Monat wird beim Buchen fällig.",
+        "fallbackNote": "Den Betrag für den Rest der laufenden Saison zeigt dir der Checkout.",
+        "freeText": "App Basis ohne Video kostet nichts – keine Karte, kein Ablaufdatum. Video oder eine höhere App-Stufe kannst du jederzeit dazunehmen.",
+        "founderNote": "Gründerpreis: Wer bis zum {founderDeadline} registriert ist, zahlt für dieses Saisonabo dauerhaft {founder} statt {standard}.",
+        "vatNote": "Endpreise. Als Kleinunternehmer nach § 19 UStG weise ich keine Umsatzsteuer aus.",
+        "buy": "Weiter zur Kasse",
+        "buyHint": "Weiter in der App: anmelden oder registrieren, bezahlt wird bei Stripe. Verbindlich ist der Betrag im Checkout.",
+        "buyLocked": "Buchbar ab {launchDate}",
+        "register": "Kostenlos registrieren",
+        "registerFounder": "Jetzt kostenlos registrieren und Bestandsschutz sichern",
+        "previewBadge": "Vorschau der Kasse",
+        "mobileToday": "heute",
+        "jump": "Übersicht"
+      }
     },
     "founder": {
       "kicker": "Für alle, die schon dabei sind",
-      "title": "Wer jetzt registriert, zahlt die Saison 26/27 nichts",
-      "description": "Ab dem {launchDate} zahlen ausschließlich Neuregistrierungen. Jedes Konto, das vorher existiert, behält den Trainer-Plan – kostenlos, ohne Antrag und ohne Zahlungsdaten.",
+      "title": "Wer jetzt registriert, zahlt die Saison 26/27 nichts – und danach weniger",
+      "description": "Ab dem {launchDate} zahlen ausschließlich Neuregistrierungen. Jedes Konto, das vorher existiert, behält den Trainer-Plan bis zum {founderFreeUntil} – kostenlos, ohne Antrag und ohne Zahlungsdaten. Danach gilt dauerhaft ein Gründerpreis.",
       "cardTitle": "Bestandsschutz",
       "cardDeadlineLabel": "Registrierung bis zum",
       "cardPlanLabel": "Dein Plan",
       "cardPlanValue": "Trainer",
       "cardFreeUntilLabel": "Kostenlos bis",
       "cardDueLabel": "Zu zahlen bis dahin",
-      "cardNote": "Das ist keine Testphase: Es gibt kein Ablaufdatum, an dem eine Karte belastet wird, weil keine Karte hinterlegt ist.",
+      "cardFounderLabel": "Danach je Saison",
+      "cardFounder": {
+        "trainer": "Trainer {founder} <strike>{standard}</strike>",
+        "pro": "Pro {founder} <strike>{standard}</strike>"
+      },
+      "cardNote": "Das ist keine Testphase: Am {founderFreeUntil} wird nichts abgebucht, weil keine Karte hinterlegt ist. Ohne Abo läuft dein Konto danach in der Basis weiter – gelöscht wird nichts.",
       "cardCta": "Konto anlegen und sichern",
       "closing": "Der Grund ist kein Werbetrick, sondern eine Rechnung: Die Trainer, die Statix eine ganze Saison lang benutzt haben, sind als Fürsprecher ein Vielfaches dessen wert, was sie als Erstzahler einbringen würden. Und niemand, der mitten in der Rückrunde steckt, soll seine Saison hinter einer Kasse wiederfinden.",
       "steps": [
         {
           "number": 1,
           "title": "Bis zum {founderDeadline} registrieren",
-          "text": "Eine E-Mail-Adresse genügt. Es gibt kein Feld für Zahlungsdaten, weil es bis Januar keinen Bezahlvorgang gibt."
+          "text": "Eine E-Mail-Adresse genügt. Es gibt kein Feld für Zahlungsdaten, weil vor dem {launchDate} niemand etwas kaufen kann."
         },
         {
           "number": 2,
@@ -1989,19 +2040,27 @@
           "number": 3,
           "title": "Kostenlos bis zum {founderFreeUntil}",
           "text": "Die laufende Saison 26/27 komplett zu Ende, Rückrunde inklusive. Danach entscheidest du, ob du bleibst – ohne dass vorher etwas abgebucht wird."
+        },
+        {
+          "number": 4,
+          "title": "Danach dauerhaft zum Gründerpreis",
+          "text": "Mit einem Saisonabo ohne Video zahlst du für Trainer 59 € statt 79 € und für Pro 109 € statt 149 € – so lange, wie das Abo ohne Unterbrechung läuft. Abschließen kannst du es bis zum {founderRedeemUntil}. Mit Video gilt ohnehin der günstigere Paketpreis."
         }
       ]
     },
     "compare": {
       "kicker": "Alles im Vergleich",
-      "title": "Was in welchem Plan drin ist",
-      "description": "Vollständig, ohne Sternchen: jede Funktion und jede Grenze, wie die App sie ab Januar tatsächlich anwendet.",
+      "title": "Was in welcher Stufe drin ist",
+      "description": "Vollständig, ohne Sternchen: jede Funktion und jede Grenze, wie die App sie ab dem Start tatsächlich anwendet – erst die App-Stufen, dann die Video-Stufen.",
       "included": "enthalten",
       "notIncluded": "nicht enthalten",
       "limitsNote": "Zahlen sind Obergrenzen, gültig ab dem {launchDate}.",
       "rowHeaderSr": "Funktion oder Grenze",
       "captionSuffix": "Funktionen und Grenzen je Plan",
+      "appHeading": "App-Stufen",
+      "videoHeading": "Video-Stufen",
       "closing": "Die Grenzen greifen nie mitten im Spiel: Ob noch ein Spiel ins Kontingent passt, wird beim Anlegen geprüft, nicht in der Halbzeitpause. Eine begonnene Erfassung läuft immer zu Ende und wird immer gespeichert.",
+      "videoClosing": "Mit einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis: Trainer 39 € statt 79 €, Pro 75 € statt 149 €. Monatlich gibt es keine Rabatte. Rechen-Credits lassen sich ab Video Team nachkaufen: 10 Credits für 19 €, 30 Credits für 49 €.",
       "groups": [
         {
           "id": "erfassen",
@@ -2067,7 +2126,7 @@
               "pro": "alle"
             },
             {
-              "label": "Wurfbilder und Heatmaps",
+              "label": "Wurfbilder, Heatmaps und xG",
               "basis": false,
               "trainer": true,
               "pro": true
@@ -2096,20 +2155,6 @@
               "basis": "4",
               "trainer": "20",
               "pro": "40"
-            },
-            {
-              "label": "Videoanalyse mit Tagging und Playlists",
-              "hint": "100 GB sind rund 16 Spiele in 1080p",
-              "basis": false,
-              "trainer": false,
-              "pro": "100 GB"
-            },
-            {
-              "label": "Video läuft synchron zur Spieluhr",
-              "hint": "Jedes erfasste Ereignis findet seine Stelle im Video",
-              "basis": false,
-              "trainer": false,
-              "pro": true
             }
           ]
         },
@@ -2134,6 +2179,13 @@
             {
               "label": "Kader als Kartenalbum",
               "hint": "HPI und OVR, Tiers, Radar, Sticker",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Strafenkatalog und Mannschaftskasse",
+              "hint": "inklusive Konto jeder Spielerin",
               "basis": true,
               "trainer": true,
               "pro": true
@@ -2171,9 +2223,10 @@
               "pro": "50"
             },
             {
-              "label": "Spieler-Accounts für den Kader",
+              "label": "Eigene Statistik für Spielerinnen",
+              "hint": "Sie sehen ihre Werte mit eigenem Zugang",
               "basis": false,
-              "trainer": false,
+              "trainer": true,
               "pro": true
             }
           ]
@@ -2215,27 +2268,119 @@
               "basis": false,
               "trainer": true,
               "pro": true
-            },
-            {
-              "label": "Zusammenschnitte an Spielerinnen senden",
-              "hint": "Sie sehen ihre Szenen ohne eigenen Account",
-              "basis": false,
-              "trainer": false,
-              "pro": true
             }
           ]
         }
-      ]
+      ],
+      "video": {
+        "id": "video",
+        "title": "Video",
+        "note": "Jede Video-Stufe gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich – und enthält App Basis. Die Analyse aus dem Bild läuft auf einer gemieteten Grafikkarte in der EU und schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an.",
+        "rows": [
+          {
+            "label": "Speicher für Aufnahmen",
+            "hint": "Bestand, geteilt von allen Mannschaften, in denen du Cheftrainer bist",
+            "basis": "100 GB",
+            "team": "300 GB",
+            "analyse": "500 GB"
+          },
+          {
+            "label": "Rechen-Credits je Saison",
+            "hint": "Beim Monatsabo 3 bzw. 15 im Monat; ein Credit ist eine Stunde Grafikkarte",
+            "basis": false,
+            "team": "40",
+            "analyse": "180"
+          },
+          {
+            "label": "Credits nachkaufen",
+            "hint": "10 Credits für 19 €, 30 Credits für 49 €",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Tagging-Werkbank, Playlists, Sendungen",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Mediathek und Besprechungsmodus",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Video synchron mit dem Protokoll",
+            "hint": "Jedes erfasste Ereignis findet seine Stelle im Video",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Panorama aus zwei Kameras",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Schwenk-Fassung",
+            "hint": "Ein mitschwenkender Ausschnitt aus dem Panorama",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Spielstand-Einblendung",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Livestream",
+            "hint": "Panorama live kostet Credits",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Feldkalibrierung",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Laufwege, Heatmaps, Distanzen",
+            "hint": "je Spielerin, aus dem Bild",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Ballerkennung (Beta)",
+            "hint": "Wo im Tor der Ball landet – als Vorschlag",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Erkennung nachtrainieren",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          }
+        ]
+      }
     },
     "club": {
       "kicker": "Für die Vereinskasse",
       "title": "Was kostet Statix für einen Verein?",
       "description": "Die Frage, die im Vorstand gestellt wird, bevor irgendjemand die App öffnet.",
       "coachTitle": "Ein Trainer, mehrere Mannschaften",
-      "coachParagraph1": "Dafür braucht es keinen Vereinsvertrag. Ein Trainer-Konto trägt drei Mannschaften – A-Jugend, Damen, Herren, wie es bei euch zugeschnitten ist – mit je zwei Co-Trainern, für 79 € je Saison. Das ist weniger als eine Vereinslizenz der üblichen Organisations-Apps und bringt Statistik, Wurfbilder und KI mit.",
+      "coachParagraph1": "Dafür braucht es keinen Vereinsvertrag. Ein Trainer-Konto trägt drei Mannschaften – A-Jugend, Damen, Herren, wie es bei euch zugeschnitten ist – mit je zwei Co-Trainern, für 79 € je Saison. Das ist weniger als eine Vereinslizenz der üblichen Organisations-Apps und bringt Statistik, Wurfbilder und KI mit. Wer filmt, bucht eine Video-Stufe dazu – sie gilt für alle drei Mannschaften, Speicher und Credits teilen sie sich.",
       "coachParagraph2": "Refinanzieren lässt sich das im Verein oft komplett: Ab der Trainer-Stufe darf im öffentlichen Live-Ticker ein Sponsor stehen, und ein Bandenpartner trägt den Betrag in aller Regel allein.",
       "clubTitle": "Der ganze Verein: auf Anfrage",
-      "clubParagraph1": "Wer alle Mannschaften unter ein Dach holen will – eine Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich. Als Anhaltspunkt für den Haushalt: rund 390 € je Saison für fünf Mannschaften, nach Größe gestaffelt.",
+      "clubParagraph1": "Wer alle Mannschaften unter ein Dach holen will – eine Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich. Als Anhaltspunkt für den Haushalt: rund 390 € je Saison für fünf Mannschaften, nach Größe gestaffelt. Video für den ganzen Verein – wenn seine Mannschaften verschiedene Cheftrainer haben – gibt es ab 1.490 € je Saison, mit 1 TB Speicher und 300 Rechen-Credits für alle Mannschaften gemeinsam.",
       "clubParagraph2": "Einen Listenpreis gibt es bewusst nicht. Was ein Verein mit zwölf Jugendmannschaften braucht, ist etwas anderes als bei zweien – schreibt kurz, wie viele Mannschaften ihr habt, dann kommt ein passendes Angebot zurück.",
       "clubLink": "Konditionen für Vereine anfragen",
       "closing": "Was ein Verein davon hat, wenn alle Mannschaften nach demselben Schema erfassen – ein Standard über alle Teams, Kader und Trainingsbeteiligung an einem Ort, Entwicklung über alle Jugendmannschaften, Datenschutz sauber geregelt – steht auf der Seite <club>Handball-Statistik-App für Vereine</club>. Für Trainerteams im Jugendbereich lohnt eher der Blick auf <youth>Statix für Jugendtrainer</youth>."
@@ -2297,23 +2442,39 @@
       "items": [
         {
           "question": "Was kostet Statix?",
-          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es drei Stufen: Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 159 € je Saison oder 19,90 € im Monat. Alle Preise sind Endpreise; als Kleinunternehmer nach § 19 UStG weise ich keine Umsatzsteuer aus."
+          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es zwei Regler: die App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 149 € je Saison oder 14,90 € im Monat – und, wenn ihr filmt, eine Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist (Speicher und Credits teilen sie sich): Video Basis 149 €, Video Team 399 €, Video Analyse 849 € je Saison (14,90 €, 39,90 € bzw. 84,90 € im Monat). Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis: Trainer 39 €, Pro 75 €. Alle Preise sind Endpreise."
         },
         {
           "question": "Ich nutze Statix schon – muss ich ab Januar zahlen?",
-          "answer": "Nein. Jedes Konto, das vor dem {launchDate} angelegt wurde, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil} – also die laufende Saison 26/27 komplett zu Ende. Du musst dafür nichts tun, nichts anklicken und keine Zahlungsdaten hinterlegen. Wer mitten in der Saison in eine Paywall läuft, verliert sein Spielprotokoll, und das wäre der schlechteste denkbare Start."
+          "answer": "Nein. Jedes Konto, das vor dem {launchDate} angelegt wurde, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil} – also die laufende Saison 26/27 komplett zu Ende. Du musst dafür nichts tun, nichts anklicken und keine Zahlungsdaten hinterlegen. Danach gilt für dich dauerhaft ein Gründerpreis: 59 € statt 79 € für Trainer, 109 € statt 149 € für Pro, als Saisonabo ohne Video."
+        },
+        {
+          "question": "Was passiert am 30. Juni 2027 mit meinem Konto?",
+          "answer": "Der Bestandsschutz endet, und abgebucht wird nichts – es ist ja keine Karte hinterlegt. Ohne Abo läuft dein Konto ab dem 1. Juli in der Basis weiter: Gelöscht wird nichts, ältere Spiele bleiben gespeichert und werden unscharf angezeigt, und was über die Grenzen der Basis hinausgeht, bleibt lesbar. Willst du weiter mit Trainer oder Pro arbeiten, schließt du bis zum {founderRedeemUntil} ein Saisonabo zum Gründerpreis ab – der gilt dauerhaft, solange das Abo nicht unterbrochen wird."
         },
         {
           "question": "Warum wird Statix überhaupt kostenpflichtig?",
-          "answer": "Statix ist als Hobbyprojekt für die eigene Mannschaft entstanden und wird inzwischen von {coachCount} benutzt. Server, Datenbank, KI-Analysen und Videospeicher kosten mit jeder Mannschaft mehr, und diese Rechnung kann ich auf Dauer nicht privat tragen. Die Alternative wäre, das Projekt einzustellen – die schlechtere Lösung für alle Beteiligten."
+          "answer": "Statix ist als Hobbyprojekt für die eigene Mannschaft entstanden und wird inzwischen von {coachCount} benutzt. Server, Datenbank, KI-Analysen, Videospeicher und Grafikkarten kosten mit jeder Mannschaft mehr, und diese Rechnung kann ich auf Dauer nicht privat tragen. Die Alternative wäre, das Projekt einzustellen – die schlechtere Lösung für alle Beteiligten."
         },
         {
           "question": "Was bleibt kostenlos?",
-          "answer": "Die ganze Live-Erfassung, der komplette Terminplan mit Zu- und Absagen, Abwesenheiten und Kalenderabo, die Kaderkarten mit HPI, Tiers und Stickern, der öffentliche Live-Ticker und die Auswertung deiner Spiele. Begrenzt sind in der Basis eine Mannschaft, 20 Spieler:innen, 10 gespeicherte Spiele, die letzten fünf Spiele in voller Tiefe sowie vier KI-Analysen und vier geteilte Berichte im Monat."
+          "answer": "Die ganze Live-Erfassung, der komplette Terminplan mit Zu- und Absagen, Abwesenheiten und Kalenderabo, die Kaderkarten mit HPI, Tiers und Stickern, Strafenkatalog und Mannschaftskasse, der öffentliche Live-Ticker und die Auswertung deiner Spiele. Begrenzt sind in der Basis eine Mannschaft, 20 Spieler:innen, 10 gespeicherte Spiele, die letzten fünf Spiele in voller Tiefe, 3 Turniere sowie vier KI-Analysen und vier geteilte Berichte im Monat."
         },
         {
-          "question": "Monatlich oder jährlich – was ist der Unterschied?",
-          "answer": "Nur der Preis und der Rhythmus. Jährlich heißt bei uns eine Saison, vom 1. Juli bis zum 30. Juni, und kostet rund ein Drittel weniger: 79 € statt 118,80 € bei Trainer, 159 € statt 238,80 € bei Pro. Monatlich ist teurer, dafür jederzeit kündbar. Wer im Januar einsteigt, zahlt nur die Rumpfsaison bis zum 30. Juni: 39 € statt 79 € bei Trainer, 79 € statt 159 € bei Pro."
+          "question": "Saison oder monatlich – was ist der Unterschied?",
+          "answer": "Eine Saison läuft vom 1. Juli bis zum 30. Juni, verlängert sich jeweils am 1. Juli und ist zum Saisonende kündbar. Sie ist günstiger – Trainer 79 € statt 118,80 €, Pro 149 € statt 178,80 € –, und nur in der Saison gibt es den Paketpreis neben einer Video-Stufe und den Gründerpreis. Monatlich verlängert sich jeden Monat und ist monatlich kündbar, dafür ohne Rabatte. App und Video laufen immer im selben Rhythmus."
+        },
+        {
+          "question": "Ich steige mitten in der Saison ein – was zahle ich?",
+          "answer": "Heute nur den Rest der laufenden Saison, nach angefangenen Monaten und auf volle Euro abgerundet: Im Oktober sind das neun Monate (Trainer 59 €), im Januar die Hälfte (Trainer 39 €). Ab dem 1. Juli zahlst du dann den vollen Saisonpreis. In den letzten drei Monaten der Saison – April bis Juni – gibt es nur das Monatsabo. Den genauen Betrag zeigt dir die Übersicht oben und verbindlich der Checkout."
+        },
+        {
+          "question": "Wofür brauche ich eine Video-Stufe, und was sind Rechen-Credits?",
+          "answer": "Für Mannschaften, die ihre Spiele filmen. Eine Video-Stufe gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich. Video Basis bringt 100 GB Speicher, Tagging, Playlists, Sendungen und die Mediathek, synchron mit dem Protokoll. Video Team legt 300 GB, Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream dazu, Video Analyse 500 GB, Laufwege, Heatmaps und Ballerkennung. Die Auswertung aus dem Bild rechnet auf einer Grafikkarte; ein Credit ist eine Stunde davon. Enthalten sind 40 Credits je Saison bei Video Team und 180 bei Video Analyse (beim Monatsabo 3 bzw. 15 im Monat), nachkaufen kannst du 10 für 19 € oder 30 für 49 €. Probeläufe kosten nichts, gescheiterte Läufe werden gutgeschrieben."
+        },
+        {
+          "question": "Wie kaufe ich einen Plan?",
+          "answer": "Du stellst ihn hier auf der Seite zusammen und klickst auf „Weiter zur Kasse“. Der Knopf führt in die App: Dort meldest du dich an oder registrierst dich, deine Auswahl wartet so lange, und bezahlt wird anschließend bei Stripe. Buchbar ist das ab dem {launchDate}; vorher sicherst du dir mit einer kostenlosen Registrierung den Bestandsschutz."
         },
         {
           "question": "Verliere ich Daten, wenn ich in der Basis bleibe?",
@@ -2321,18 +2482,22 @@
         },
         {
           "question": "Was kostet Statix für einen Verein?",
-          "answer": "Ein einzelner Trainer bleibt bei den Stufen oben. Wer den Verein als Ganzes einbinden will – alle Mannschaften unter einem Dach, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich, und der wird für den Verein eingerichtet. Als Anhaltspunkt liegt das bei rund 390 € je Saison für fünf Mannschaften, gestaffelt nach Größe. Einen Listenpreis gibt es bewusst nicht: Was ein Verein mit zwölf Jugendmannschaften braucht, ist etwas anderes als bei zweien."
+          "answer": "Ein einzelner Trainer bleibt bei den Stufen oben. Wer den Verein als Ganzes einbinden will – alle Mannschaften unter einem Dach, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich, und der wird für den Verein eingerichtet. Als Anhaltspunkt liegt das bei rund 390 € je Saison für fünf Mannschaften, gestaffelt nach Größe; Video für den ganzen Verein gibt es ab 1.490 € je Saison mit 1 TB Speicher und 300 Credits gemeinsam. Beides auf Anfrage – einen Listenpreis gibt es bewusst nicht."
         },
         {
           "question": "Wie kann ich kündigen?",
-          "answer": "Jederzeit im Konto, mit einem Klick – ein Kündigungsbutton gehört ab dem ersten Tag der Bezahlung dazu. Ein monatliches Abo endet zum nächsten Monat, ein Saisonabo zum 30. Juni. Danach läuft dein Konto in der Basis weiter; deine Daten bleiben, wo sie sind."
+          "answer": "Jederzeit im Konto, über den Kündigungsbutton nach § 312k BGB – ohne Formular und ohne E-Mail. Ein Saisonabo endet zum 30. Juni, ein Monatsabo zum Ende des bezahlten Monats. Danach läuft dein Konto in der Basis weiter; deine Daten bleiben, wo sie sind."
+        },
+        {
+          "question": "Warum steht keine Umsatzsteuer auf der Rechnung?",
+          "answer": "Weil ich Kleinunternehmer nach § 19 UStG bin. Dann darf ich keine Umsatzsteuer ausweisen, und die Preise hier sind Endpreise – du zahlst genau den Betrag, der dasteht. Ein entsprechender Hinweis steht auf jeder Rechnung."
         }
       ]
     },
     "cta": {
       "kicker": "Jetzt oder ab Januar",
       "title": "Bis zum {founderDeadline} zählt jede Anmeldung",
-      "description": "Registrieren kostet nichts und dauert eine Minute – es gibt kein Feld für Zahlungsdaten. Wer heute ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}. Lieber erst schauen? Die Live-Demo läuft mit echten Spieldaten ganz ohne Account.",
+      "description": "Registrieren kostet nichts und dauert eine Minute – es gibt kein Feld für Zahlungsdaten. Wer heute ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil} und danach den Gründerpreis. Lieber erst schauen? Die Live-Demo läuft mit echten Spieldaten ganz ohne Account.",
       "linkLabel": "Newsletter abonnieren und Änderungen zuerst erfahren"
     }
   },
@@ -2490,7 +2655,7 @@
         },
         {
           "question": "Ist Statix kostenlos?",
-          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter {appUrl} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 gibt es drei Stufen – Basis bleibt 0 €, Trainer kostet 79 € je Saison, Pro 159 €. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027."
+          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter {appUrl} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt Basis bei 0 €, Trainer kostet 79 € je Saison und Pro 149 €; wer filmt, nimmt eine Video-Stufe ab 149 € je Saison dazu – für alle Mannschaften, in denen du Cheftrainer bist. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027, und danach einen Gründerpreis."
         },
         {
           "question": "Wie kann ich Statix testen?",
@@ -6081,7 +6246,7 @@
       "faq": [
         {
           "question": "Sind alle Funktionen im kostenlosen Zugang enthalten?",
-          "answer": "Bis zum 31. Dezember 2026 ja: Statix ist noch nicht auf ein Abo umgestellt, also steht jede fertige Funktion jedem Konto offen. Ab dem 1. Januar 2027 gibt es drei Stufen — die Erfassung, der Terminplan und die Kaderkarten bleiben in jeder davon vollständig, die rechenintensiven Funktionen wandern in die bezahlten. Der Zuschnitt steht auf der Preisseite."
+          "answer": "Bis zum 31. Dezember 2026 ja: Statix ist noch nicht auf ein Abo umgestellt, also steht jede fertige Funktion jedem Konto offen. Ab dem 1. Januar 2027 gibt es drei App-Stufen und, für eine filmende Mannschaft, drei Video-Stufen — die Erfassung, der Terminplan und die Kaderkarten bleiben in jeder App-Stufe vollständig, die rechenintensiven Funktionen wandern in die bezahlten. Der Zuschnitt steht auf der Preisseite."
         },
         {
           "question": "Was heißt „In Arbeit“ bei einer Funktion?",

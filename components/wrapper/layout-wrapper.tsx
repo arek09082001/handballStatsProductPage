@@ -28,11 +28,15 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
       <SkipLink />
       <SiteNavbar />
       {/* `tabIndex={-1}` so the skip link can move focus here; `scroll-mt-28`
-       * keeps the fixed navbar from covering the first heading. */}
+       * keeps the fixed navbar from covering the first heading. `clip`, not
+       * `hidden`, where the browser has it: both cut off the decorative court
+       * lines that bleed past the edge, but `hidden` also makes `main` a
+       * scroll container, and inside one `position: sticky` never sticks —
+       * which the price summary on `/preise` relies on. */}
       <main
         id={MAIN_CONTENT_ID}
         tabIndex={-1}
-        className='overflow-hidden scroll-mt-28 focus:outline-none'>
+        className='overflow-hidden supports-[overflow:clip]:overflow-clip scroll-mt-28 focus:outline-none'>
         <AnimatePresence mode='wait' initial={false}>
           <PageTransition key={pathname}>{children}</PageTransition>
         </AnimatePresence>
