@@ -59,7 +59,7 @@ export interface AppTierPrices {
 
 export interface VideoTierPrices extends SeasonPrice {
   month: number;
-  /** Storage held at any one time, for one team. */
+  /** Storage held at any one time, shared by every team the account head-coaches. */
   storageGb: number;
   /** Included compute credits per full season and per paid month. */
   credits: { season: number; month: number };

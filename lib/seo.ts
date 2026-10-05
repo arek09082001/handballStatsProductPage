@@ -141,7 +141,7 @@ export const SITE_LINKS = [
         name: 'Preise',
         path: '/preise',
         description:
-            'Was die Handball-Statistik-App Statix kostet: Basis dauerhaft 0 €, Trainer 79 € und Pro 149 € je Saison, Video-Stufen ab 149 € je Mannschaft – ab dem 1. Januar 2027, mit Plan-Konfigurator und allen Funktionen und Grenzen je Stufe im Vergleich. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis 30. Juni 2027.',
+            'Was die Handball-Statistik-App Statix kostet: Basis dauerhaft 0 €, Trainer 79 € und Pro 149 € je Saison, Video-Stufen ab 149 € für alle Mannschaften, in denen du Cheftrainer bist – ab dem 1. Januar 2027, mit Plan-Konfigurator und allen Funktionen und Grenzen je Stufe im Vergleich. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis 30. Juni 2027.',
     },
     {
         name: 'Erfahrungen',
@@ -322,7 +322,7 @@ export const HOMEPAGE_FAQS = [
     {
         question: 'Was kostet Statix?',
         answer:
-            'Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt die Basis kostenlos, dazu kommen bezahlte App-Stufen und Video-Stufen für einzelne Mannschaften – die Preise stehen auf der Preisseite. Wer bis dahin ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum 30. Juni 2027. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus.',
+            'Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt die Basis kostenlos, dazu kommen bezahlte App-Stufen und Video-Stufen für alle Mannschaften, in denen du Cheftrainer bist – die Preise stehen auf der Preisseite. Wer bis dahin ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum 30. Juni 2027. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus.',
     },
     {
         question: 'Wer steckt hinter Statix?',

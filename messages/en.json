@@ -1636,7 +1636,7 @@
         },
         {
           "question": "How much does Statix cost?",
-          "answer": "Nothing until 31 December 2026: register at app.statix-app.de and track your first game with no commitment and no credit card. From 1 January 2027 Basic stays free, and paid app tiers plus video tiers for single teams are added – the prices are on the pricing page. Create an account before then and you keep the Coach plan free until 30 June 2027. Want to look around first? The live demo runs without an account."
+          "answer": "Nothing until 31 December 2026: register at app.statix-app.de and track your first game with no commitment and no credit card. From 1 January 2027 Basic stays free, and paid app tiers plus video tiers for every team you lead as head coach are added – the prices are on the pricing page. Create an account before then and you keep the Coach plan free until 30 June 2027. Want to look around first? The live demo runs without an account."
         },
         {
           "question": "Who is behind Statix?",
@@ -1842,7 +1842,7 @@
       "kicker": "Pricing & costs",
       "titleLead": "Pricing for the handball statistics app",
       "titleBrand": "Statix",
-      "lede": "Statix is one product with two dials: the app tier – Basic stays free forever, Coach costs €79 and Pro €149 per season – and, if you film, a video tier for one team. Bookable from {launchDate}. Register before then and you keep the Coach plan free until {founderFreeUntil}.",
+      "lede": "Statix is one product with two dials: the app tier – Basic stays free forever, Coach costs €79 and Pro €149 per season – and, if you film, a video tier for every team you lead as head coach. Bookable from {launchDate}. Register before then and you keep the Coach plan free until {founderFreeUntil}.",
       "ctaPrimary": "Register free now",
       "ctaSecondary": "Live demo, no account",
       "configureLink": "Or put your plan together right away",
@@ -1866,7 +1866,7 @@
     "configurator": {
       "kicker": "Your plan",
       "title": "Put your plan together",
-      "description": "One product, two dials: the app tier for your account and every team in it – and, if you film, a video tier for one team. Both run on the same cadence.",
+      "description": "One product, two dials: the app tier for your account and every team in it – and, if you film, a video tier for every team you lead as head coach. Both run on the same cadence.",
       "recommended": "Recommended",
       "cadence": {
         "title": "Billing",
@@ -1926,7 +1926,7 @@
       },
       "video": {
         "title": "Video tier",
-        "note": "Applies to one team and includes at least App Basic. Next to a video tier the app tier costs only the bundle price on a season.",
+        "note": "Applies to every team you lead as head coach – they share storage and credits. Includes at least App Basic. Next to a video tier the app tier costs only the bundle price on a season.",
         "none": {
           "id": "none",
           "name": "No video",
@@ -1983,7 +1983,7 @@
         "appLine": "App {name}",
         "included": "included",
         "packNote": "bundle price with video – <strike>{instead}</strike> on its own",
-        "videoNote": "For one team · {gb} GB · {credits}",
+        "videoNote": "Shared by every team you lead as head coach · {gb} GB · {credits}",
         "todayLabel": "Today",
         "todayNote": "Rest of the season until {seasonEnd}, by started months",
         "renewLabel": "From {date}",
@@ -2275,11 +2275,11 @@
       "video": {
         "id": "video",
         "title": "Video",
-        "note": "Every video tier applies to one team and includes App Basic. The analysis from the picture runs on a rented graphics card in the EU and only ever suggests – it never creates a scene or a statistics entry on its own.",
+        "note": "Every video tier applies to every team you lead as head coach – they share storage and credits – and includes App Basic. The analysis from the picture runs on a rented graphics card in the EU and only ever suggests – it never creates a scene or a statistics entry on its own.",
         "rows": [
           {
             "label": "Storage for recordings",
-            "hint": "Held at any time, for one team",
+            "hint": "Held at any time, shared by every team you lead as head coach",
             "basis": "100 GB",
             "team": "300 GB",
             "analyse": "500 GB"
@@ -2377,10 +2377,10 @@
       "title": "What does Statix cost a club?",
       "description": "The question the committee asks before anyone opens the app.",
       "coachTitle": "One coach, several teams",
-      "coachParagraph1": "That needs no club contract. A Coach account carries three teams – under-18s, women, men, however it is cut at your club – with two assistant coaches each, for €79 per season. That is less than a club licence for the usual organisation apps, and it brings statistics, shot maps and AI along with it.",
+      "coachParagraph1": "That needs no club contract. A Coach account carries three teams – under-18s, women, men, however it is cut at your club – with two assistant coaches each, for €79 per season. That is less than a club licence for the usual organisation apps, and it brings statistics, shot maps and AI along with it. If you film, add a video tier – it covers all three teams, which share its storage and credits.",
       "coachParagraph2": "In a club that can often be paid for entirely: from the Coach tier upwards a sponsor may appear in the public live ticker, and a perimeter-board partner usually covers the amount on their own.",
       "clubTitle": "The whole club: on request",
-      "clubParagraph1": "If you want to bring every team under one roof – a club overview, club-wide analysis, player careers across the youth levels – you get the club area. As a guide for your budget: around €390 per season for five teams, staggered by size. Video for the whole club starts at €1,490 per season, with 1 TB of storage and 300 compute credits shared by all teams.",
+      "clubParagraph1": "If you want to bring every team under one roof – a club overview, club-wide analysis, player careers across the youth levels – you get the club area. As a guide for your budget: around €390 per season for five teams, staggered by size. Video for the whole club – when its teams have different head coaches – starts at €1,490 per season, with 1 TB of storage and 300 compute credits shared by all teams.",
       "clubParagraph2": "There is deliberately no list price. What a club with twelve youth teams needs is something else than a club with two – write a short note about how many teams you have and a fitting offer comes back.",
       "clubLink": "Request club terms",
       "closing": "What a club gains when every team records to the same standard – one standard across all teams, squads and training attendance in one place, development across all youth teams, data protection properly handled – is on the page <club>handball statistics app for clubs</club>. For coaching teams in youth handball it is worth looking at <youth>Statix for youth coaches</youth>."
@@ -2442,7 +2442,7 @@
       "items": [
         {
           "question": "What does Statix cost?",
-          "answer": "Nothing until {founderDeadline}. From {launchDate} there are two dials: the app tier – Basic stays free forever, Coach costs €79 per season or €9.90 per month, Pro €149 per season or €14.90 per month – and, if you film, a video tier for one team: Video Basic €149, Video Team €399, Video Analysis €849 per season (€14.90, €39.90 and €84.90 per month). Next to a video tier the app tier costs only the bundle price on a season: Coach €39, Pro €75. All prices are end prices."
+          "answer": "Nothing until {founderDeadline}. From {launchDate} there are two dials: the app tier – Basic stays free forever, Coach costs €79 per season or €9.90 per month, Pro €149 per season or €14.90 per month – and, if you film, a video tier for every team you lead as head coach (they share storage and credits): Video Basic €149, Video Team €399, Video Analysis €849 per season (€14.90, €39.90 and €84.90 per month). Next to a video tier the app tier costs only the bundle price on a season: Coach €39, Pro €75. All prices are end prices."
         },
         {
           "question": "I already use Statix – do I have to pay from January?",
@@ -2470,7 +2470,7 @@
         },
         {
           "question": "What do I need a video tier for, and what are compute credits?",
-          "answer": "For a team that films its matches. Video Basic brings 100 GB of storage, tagging, playlists, clips to players and the team library, in sync with the match log. Video Team adds 300 GB, panorama from two cameras, the follow-cam version, the score overlay and live streaming; Video Analysis 500 GB, running paths, heatmaps and ball detection. The analysis from the picture runs on a graphics card; one credit is one hour of it. Video Team includes 40 credits per season and Video Analysis 180 (3 and 15 per month on a monthly plan); you can top up 10 for €19 or 30 for €49. Trial runs cost nothing, failed runs are credited back."
+          "answer": "For teams that film their matches. A video tier applies to every team you lead as head coach – they share storage and credits. Video Basic brings 100 GB of storage, tagging, playlists, clips to players and the team library, in sync with the match log. Video Team adds 300 GB, panorama from two cameras, the follow-cam version, the score overlay and live streaming; Video Analysis 500 GB, running paths, heatmaps and ball detection. The analysis from the picture runs on a graphics card; one credit is one hour of it. Video Team includes 40 credits per season and Video Analysis 180 (3 and 15 per month on a monthly plan); you can top up 10 for €19 or 30 for €49. Trial runs cost nothing, failed runs are credited back."
         },
         {
           "question": "How do I buy a plan?",
@@ -2655,7 +2655,7 @@
         },
         {
           "question": "Is Statix free?",
-          "answer": "Nothing until 31 December 2026: register at {appUrl} and record your first match with no obligation and no credit card. From 1 January 2027 Basic stays at €0, Coach costs €79 per season and Pro €149; if you film, you add a video tier for one team from €149 per season. Anyone who registers before then keeps the Coach plan free for the whole 26/27 season, that is until 30 June 2027, and a founder price after that."
+          "answer": "Nothing until 31 December 2026: register at {appUrl} and record your first match with no obligation and no credit card. From 1 January 2027 Basic stays at €0, Coach costs €79 per season and Pro €149; if you film, you add a video tier from €149 per season – for every team you lead as head coach. Anyone who registers before then keeps the Coach plan free for the whole 26/27 season, that is until 30 June 2027, and a founder price after that."
         },
         {
           "question": "How can I try Statix?",

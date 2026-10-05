@@ -26,7 +26,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = createPageMetadata({
   title: 'Preise: Handball-Statistik-App für Trainer',
   description:
-    'Was kostet Statix? Basis 0 €, Trainer 79 €, Pro 149 € je Saison; Video ab 149 € je Mannschaft. Plan zusammenstellen, buchbar ab 1.1.2027. Wer vorher registriert, behält Trainer kostenlos bis 30.6.2027.',
+    'Was kostet Statix? Basis 0 €, Trainer 79 €, Pro 149 € je Saison; Video ab 149 € für alle deine Mannschaften. Plan zusammenstellen, buchbar ab 1.1.2027. Wer vorher registriert, behält Trainer kostenlos bis 30.6.2027.',
   path: PRICING_PAGE_PATH,
   keywords: [
     'handball statistik app preise',
@@ -67,7 +67,7 @@ export default async function Page() {
       <PageSchema
         id='preise'
         name='Preise für die Handball-Statistik-App Statix'
-        description='Was Statix kostet: Basis dauerhaft kostenlos, Trainer 79 € und Pro 149 € je Saison, dazu Video-Stufen ab 149 € je Mannschaft – ab dem 1. Januar 2027, mit allen Funktionen und Grenzen je Stufe im Vergleich.'
+        description='Was Statix kostet: Basis dauerhaft kostenlos, Trainer 79 € und Pro 149 € je Saison, dazu Video-Stufen ab 149 € für alle Mannschaften, in denen du Cheftrainer bist – ab dem 1. Januar 2027, mit allen Funktionen und Grenzen je Stufe im Vergleich.'
         path={PRICING_PAGE_PATH}
         imagePath='/statsTableInGame.png'
         breadcrumbs={[
@@ -84,7 +84,7 @@ export default async function Page() {
           name: CLUB_CONFIG.name,
           alternateName: 'Statix Handball-Statistik-App',
           description:
-            'Handball-Statistik-App für Trainer, Vereine und Teams: Spiele live per Tap erfassen und automatisch auswerten. Mit dauerhaft kostenloser Basis-Stufe, bezahlten App-Stufen und Video-Stufen je Mannschaft ab dem 1. Januar 2027.',
+            'Handball-Statistik-App für Trainer, Vereine und Teams: Spiele live per Tap erfassen und automatisch auswerten. Mit dauerhaft kostenloser Basis-Stufe, bezahlten App-Stufen und Video-Stufen für alle Mannschaften eines Cheftrainers ab dem 1. Januar 2027.',
           applicationCategory: 'SportsApplication',
           applicationSubCategory: 'Handball-Statistik-App',
           operatingSystem: 'iOS, Android, Web',
@@ -142,7 +142,7 @@ export default async function Page() {
               availability: 'https://schema.org/PreOrder',
               priceValidFrom,
               description:
-                'Video-Stufe für eine Mannschaft, inklusive App Basis: 100 GB Speicher, Tagging-Werkbank, Playlists, Sendungen, Mediathek und Besprechungsmodus, synchron mit dem Protokoll. 149 € je Saison oder 14,90 € im Monat, ab dem 1. Januar 2027.',
+                'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich –, inklusive App Basis: 100 GB Speicher, Tagging-Werkbank, Playlists, Sendungen, Mediathek und Besprechungsmodus, synchron mit dem Protokoll. 149 € je Saison oder 14,90 € im Monat, ab dem 1. Januar 2027.',
               url: pageUrl,
             },
             {
@@ -154,7 +154,7 @@ export default async function Page() {
               availability: 'https://schema.org/PreOrder',
               priceValidFrom,
               description:
-                'Video-Stufe für eine Mannschaft: alles aus Video Basis, 300 GB Speicher und 40 Rechen-Credits je Saison, dazu Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream. 399 € je Saison oder 39,90 € im Monat, ab dem 1. Januar 2027.',
+                'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich: alles aus Video Basis, 300 GB Speicher und 40 Rechen-Credits je Saison, dazu Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream. 399 € je Saison oder 39,90 € im Monat, ab dem 1. Januar 2027.',
               url: pageUrl,
             },
             {
@@ -166,7 +166,7 @@ export default async function Page() {
               availability: 'https://schema.org/PreOrder',
               priceValidFrom,
               description:
-                'Video-Stufe für eine Mannschaft: alles aus Video Team, 500 GB Speicher und 180 Rechen-Credits je Saison, dazu Feldkalibrierung, Laufwege, Heatmaps und Distanzen, Ballerkennung (Beta) und Erkennung nachtrainieren. 849 € je Saison oder 84,90 € im Monat, ab dem 1. Januar 2027.',
+                'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich: alles aus Video Team, 500 GB Speicher und 180 Rechen-Credits je Saison, dazu Feldkalibrierung, Laufwege, Heatmaps und Distanzen, Ballerkennung (Beta) und Erkennung nachtrainieren. 849 € je Saison oder 84,90 € im Monat, ab dem 1. Januar 2027.',
               url: pageUrl,
             },
           ],

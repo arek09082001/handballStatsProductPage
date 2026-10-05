@@ -1636,7 +1636,7 @@
         },
         {
           "question": "Was kostet Statix?",
-          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt die Basis kostenlos, dazu kommen bezahlte App-Stufen und Video-Stufen für einzelne Mannschaften – die Preise stehen auf der Preisseite. Wer bis dahin ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum 30. Juni 2027. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus."
+          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt die Basis kostenlos, dazu kommen bezahlte App-Stufen und Video-Stufen für alle Mannschaften, in denen du Cheftrainer bist – die Preise stehen auf der Preisseite. Wer bis dahin ein Konto anlegt, behält den Trainer-Plan kostenlos bis zum 30. Juni 2027. Wenn du erst schauen willst, probierst du die Live-Demo ganz ohne Account aus."
         },
         {
           "question": "Wer steckt hinter Statix?",
@@ -1842,7 +1842,7 @@
       "kicker": "Preise & Kosten",
       "titleLead": "Preise für die Handball-Statistik-App",
       "titleBrand": "Statix",
-      "lede": "Statix ist ein Produkt mit zwei Reglern: der App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 €, Pro 149 € je Saison – und, wenn ihr filmt, einer Video-Stufe für eine Mannschaft. Buchbar ab dem {launchDate}. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}.",
+      "lede": "Statix ist ein Produkt mit zwei Reglern: der App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 €, Pro 149 € je Saison – und, wenn ihr filmt, einer Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist. Buchbar ab dem {launchDate}. Wer sich vorher registriert, behält den Trainer-Plan kostenlos bis zum {founderFreeUntil}.",
       "ctaPrimary": "Jetzt kostenlos registrieren",
       "ctaSecondary": "Live-Demo ohne Account",
       "configureLink": "Oder gleich deinen Plan zusammenstellen",
@@ -1866,7 +1866,7 @@
     "configurator": {
       "kicker": "Dein Plan",
       "title": "Stell deinen Plan zusammen",
-      "description": "Ein Produkt, zwei Regler: die App-Stufe für dein Konto und alle Mannschaften darin – und, wenn ihr filmt, eine Video-Stufe für eine Mannschaft. Beide laufen im selben Rhythmus.",
+      "description": "Ein Produkt, zwei Regler: die App-Stufe für dein Konto und alle Mannschaften darin – und, wenn ihr filmt, eine Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist. Beide laufen im selben Rhythmus.",
       "recommended": "Empfohlen",
       "cadence": {
         "title": "Abrechnung",
@@ -1926,7 +1926,7 @@
       },
       "video": {
         "title": "Video-Stufe",
-        "note": "Gilt für eine Mannschaft und enthält mindestens App Basis. Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis.",
+        "note": "Gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich. Enthält mindestens App Basis. Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis.",
         "none": {
           "id": "none",
           "name": "Ohne Video",
@@ -1983,7 +1983,7 @@
         "appLine": "App {name}",
         "included": "inklusive",
         "packNote": "Paketpreis mit Video – <strike>{instead}</strike> einzeln",
-        "videoNote": "Für eine Mannschaft · {gb} GB · {credits}",
+        "videoNote": "Geteilt von allen Mannschaften, in denen du Cheftrainer bist · {gb} GB · {credits}",
         "todayLabel": "Heute",
         "todayNote": "Rest der Saison bis zum {seasonEnd}, nach angefangenen Monaten",
         "renewLabel": "Ab dem {date}",
@@ -2275,11 +2275,11 @@
       "video": {
         "id": "video",
         "title": "Video",
-        "note": "Jede Video-Stufe gilt für eine Mannschaft und enthält App Basis. Die Analyse aus dem Bild läuft auf einer gemieteten Grafikkarte in der EU und schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an.",
+        "note": "Jede Video-Stufe gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich – und enthält App Basis. Die Analyse aus dem Bild läuft auf einer gemieteten Grafikkarte in der EU und schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an.",
         "rows": [
           {
             "label": "Speicher für Aufnahmen",
-            "hint": "Bestand, für eine Mannschaft",
+            "hint": "Bestand, geteilt von allen Mannschaften, in denen du Cheftrainer bist",
             "basis": "100 GB",
             "team": "300 GB",
             "analyse": "500 GB"
@@ -2377,10 +2377,10 @@
       "title": "Was kostet Statix für einen Verein?",
       "description": "Die Frage, die im Vorstand gestellt wird, bevor irgendjemand die App öffnet.",
       "coachTitle": "Ein Trainer, mehrere Mannschaften",
-      "coachParagraph1": "Dafür braucht es keinen Vereinsvertrag. Ein Trainer-Konto trägt drei Mannschaften – A-Jugend, Damen, Herren, wie es bei euch zugeschnitten ist – mit je zwei Co-Trainern, für 79 € je Saison. Das ist weniger als eine Vereinslizenz der üblichen Organisations-Apps und bringt Statistik, Wurfbilder und KI mit.",
+      "coachParagraph1": "Dafür braucht es keinen Vereinsvertrag. Ein Trainer-Konto trägt drei Mannschaften – A-Jugend, Damen, Herren, wie es bei euch zugeschnitten ist – mit je zwei Co-Trainern, für 79 € je Saison. Das ist weniger als eine Vereinslizenz der üblichen Organisations-Apps und bringt Statistik, Wurfbilder und KI mit. Wer filmt, bucht eine Video-Stufe dazu – sie gilt für alle drei Mannschaften, Speicher und Credits teilen sie sich.",
       "coachParagraph2": "Refinanzieren lässt sich das im Verein oft komplett: Ab der Trainer-Stufe darf im öffentlichen Live-Ticker ein Sponsor stehen, und ein Bandenpartner trägt den Betrag in aller Regel allein.",
       "clubTitle": "Der ganze Verein: auf Anfrage",
-      "clubParagraph1": "Wer alle Mannschaften unter ein Dach holen will – eine Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich. Als Anhaltspunkt für den Haushalt: rund 390 € je Saison für fünf Mannschaften, nach Größe gestaffelt. Video für den ganzen Verein gibt es ab 1.490 € je Saison, mit 1 TB Speicher und 300 Rechen-Credits für alle Mannschaften gemeinsam.",
+      "clubParagraph1": "Wer alle Mannschaften unter ein Dach holen will – eine Vereinsübersicht, vereinsweite Auswertung, Spielerlaufbahnen über die Jugenden hinweg –, bekommt den Vereinsbereich. Als Anhaltspunkt für den Haushalt: rund 390 € je Saison für fünf Mannschaften, nach Größe gestaffelt. Video für den ganzen Verein – wenn seine Mannschaften verschiedene Cheftrainer haben – gibt es ab 1.490 € je Saison, mit 1 TB Speicher und 300 Rechen-Credits für alle Mannschaften gemeinsam.",
       "clubParagraph2": "Einen Listenpreis gibt es bewusst nicht. Was ein Verein mit zwölf Jugendmannschaften braucht, ist etwas anderes als bei zweien – schreibt kurz, wie viele Mannschaften ihr habt, dann kommt ein passendes Angebot zurück.",
       "clubLink": "Konditionen für Vereine anfragen",
       "closing": "Was ein Verein davon hat, wenn alle Mannschaften nach demselben Schema erfassen – ein Standard über alle Teams, Kader und Trainingsbeteiligung an einem Ort, Entwicklung über alle Jugendmannschaften, Datenschutz sauber geregelt – steht auf der Seite <club>Handball-Statistik-App für Vereine</club>. Für Trainerteams im Jugendbereich lohnt eher der Blick auf <youth>Statix für Jugendtrainer</youth>."
@@ -2442,7 +2442,7 @@
       "items": [
         {
           "question": "Was kostet Statix?",
-          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es zwei Regler: die App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 149 € je Saison oder 14,90 € im Monat – und, wenn ihr filmt, eine Video-Stufe für eine Mannschaft: Video Basis 149 €, Video Team 399 €, Video Analyse 849 € je Saison (14,90 €, 39,90 € bzw. 84,90 € im Monat). Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis: Trainer 39 €, Pro 75 €. Alle Preise sind Endpreise."
+          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es zwei Regler: die App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 149 € je Saison oder 14,90 € im Monat – und, wenn ihr filmt, eine Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist (Speicher und Credits teilen sie sich): Video Basis 149 €, Video Team 399 €, Video Analyse 849 € je Saison (14,90 €, 39,90 € bzw. 84,90 € im Monat). Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis: Trainer 39 €, Pro 75 €. Alle Preise sind Endpreise."
         },
         {
           "question": "Ich nutze Statix schon – muss ich ab Januar zahlen?",
@@ -2470,7 +2470,7 @@
         },
         {
           "question": "Wofür brauche ich eine Video-Stufe, und was sind Rechen-Credits?",
-          "answer": "Für eine Mannschaft, die ihre Spiele filmt. Video Basis bringt 100 GB Speicher, Tagging, Playlists, Sendungen und die Mediathek, synchron mit dem Protokoll. Video Team legt 300 GB, Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream dazu, Video Analyse 500 GB, Laufwege, Heatmaps und Ballerkennung. Die Auswertung aus dem Bild rechnet auf einer Grafikkarte; ein Credit ist eine Stunde davon. Enthalten sind 40 Credits je Saison bei Video Team und 180 bei Video Analyse (beim Monatsabo 3 bzw. 15 im Monat), nachkaufen kannst du 10 für 19 € oder 30 für 49 €. Probeläufe kosten nichts, gescheiterte Läufe werden gutgeschrieben."
+          "answer": "Für Mannschaften, die ihre Spiele filmen. Eine Video-Stufe gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich. Video Basis bringt 100 GB Speicher, Tagging, Playlists, Sendungen und die Mediathek, synchron mit dem Protokoll. Video Team legt 300 GB, Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream dazu, Video Analyse 500 GB, Laufwege, Heatmaps und Ballerkennung. Die Auswertung aus dem Bild rechnet auf einer Grafikkarte; ein Credit ist eine Stunde davon. Enthalten sind 40 Credits je Saison bei Video Team und 180 bei Video Analyse (beim Monatsabo 3 bzw. 15 im Monat), nachkaufen kannst du 10 für 19 € oder 30 für 49 €. Probeläufe kosten nichts, gescheiterte Läufe werden gutgeschrieben."
         },
         {
           "question": "Wie kaufe ich einen Plan?",
@@ -2655,7 +2655,7 @@
         },
         {
           "question": "Ist Statix kostenlos?",
-          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter {appUrl} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt Basis bei 0 €, Trainer kostet 79 € je Saison und Pro 149 €; wer filmt, nimmt für eine Mannschaft eine Video-Stufe ab 149 € je Saison dazu. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027, und danach einen Gründerpreis."
+          "answer": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter {appUrl} und erfasse dein erstes Spiel ohne Verpflichtung und ohne Kreditkarte. Ab dem 1. Januar 2027 bleibt Basis bei 0 €, Trainer kostet 79 € je Saison und Pro 149 €; wer filmt, nimmt eine Video-Stufe ab 149 € je Saison dazu – für alle Mannschaften, in denen du Cheftrainer bist. Wer sich vorher registriert, behält den Trainer-Plan die Saison 26/27 über kostenlos, also bis zum 30. Juni 2027, und danach einen Gründerpreis."
         },
         {
           "question": "Wie kann ich Statix testen?",

@@ -151,8 +151,11 @@ The scope itself:
   internal preview list. Everywhere else the action stays registration.
 - **One product, two dials, and the figures are decided.** App tier: Basis 0 €
   (permanent), Trainer 79 € per season or 9,90 € per month, Pro 149 € per
-  season or 14,90 € per month. Video tier, for ONE team, each including App
-  Basis: Video Basis 149 € (14,90 €/month, 100 GB), Video Team 399 € (39,90 €,
+  season or 14,90 € per month. Video tier, for EVERY team in which the buying
+  account is head coach (`team_members.role = 'head_coach'`) — those teams
+  share one pool of storage and credits; a team with several head coaches
+  gets the best tier among them; there is no team picker. Each tier includes
+  App Basis: Video Basis 149 € (14,90 €/month, 100 GB), Video Team 399 € (39,90 €,
   300 GB, 40 compute credits per season / 3 per month, panorama, follow-cam,
   score overlay, live stream), Video Analyse 849 € (84,90 €, 500 GB, 180
   credits / 15 per month, court calibration, running paths, ball detection
@@ -196,7 +199,9 @@ The scope itself:
   `/fuer-vereine`; what a club with twelve squads needs is not what a club with
   two needs. The site names ~390 € per season for five squads as an order of
   magnitude to budget against, never as a list price; Video Verein starts at
-  1.490 € per season (1 TB, 300 credits shared), also on request.
+  1.490 € per season (1 TB, 300 credits shared), also on request — it is for
+  clubs whose teams have different head coaches, which one coach's video
+  tier does not cover.
 - The launch offer for clubs is collected via the newsletter.
 - Live demo runs at the URL in `lib/club-config.ts` (`CLUB_CONFIG.website`).
 

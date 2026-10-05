@@ -1636,7 +1636,7 @@
         },
         {
           "question": "¿Cuánto cuesta Statix?",
-          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en app.statix-app.de y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027, Básico sigue siendo gratis y se añaden niveles de app de pago y niveles de vídeo para equipos concretos; los precios están en la página de precios. Quien cree una cuenta antes conserva el plan Entrenador gratis hasta el 30 de junio de 2027. Si prefieres mirar primero, prueba la demo en directo sin cuenta."
+          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en app.statix-app.de y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027, Básico sigue siendo gratis y se añaden niveles de app de pago y niveles de vídeo para todos los equipos en los que eres entrenador jefe; los precios están en la página de precios. Quien cree una cuenta antes conserva el plan Entrenador gratis hasta el 30 de junio de 2027. Si prefieres mirar primero, prueba la demo en directo sin cuenta."
         },
         {
           "question": "¿Quién está detrás de Statix?",
@@ -1842,7 +1842,7 @@
       "kicker": "Precios y costes",
       "titleLead": "Precios de la app de estadísticas de balonmano",
       "titleBrand": "Statix",
-      "lede": "Statix es un producto con dos reguladores: el nivel de app – Básico sigue siendo gratis para siempre, Entrenador cuesta 79 € y Pro 149 € por temporada – y, si grabáis, un nivel de vídeo para un equipo. Contratable a partir del {launchDate}. Quien se registre antes conserva el plan Entrenador gratis hasta el {founderFreeUntil}.",
+      "lede": "Statix es un producto con dos reguladores: el nivel de app – Básico sigue siendo gratis para siempre, Entrenador cuesta 79 € y Pro 149 € por temporada – y, si grabáis, un nivel de vídeo para todos los equipos en los que eres entrenador jefe. Contratable a partir del {launchDate}. Quien se registre antes conserva el plan Entrenador gratis hasta el {founderFreeUntil}.",
       "ctaPrimary": "Regístrate gratis ahora",
       "ctaSecondary": "Demo en directo sin cuenta",
       "configureLink": "O configura tu plan ahora mismo",
@@ -1866,7 +1866,7 @@
     "configurator": {
       "kicker": "Tu plan",
       "title": "Configura tu plan",
-      "description": "Un producto, dos reguladores: el nivel de app para tu cuenta y todos sus equipos y, si grabáis, un nivel de vídeo para un equipo. Ambos siguen el mismo ritmo de facturación.",
+      "description": "Un producto, dos reguladores: el nivel de app para tu cuenta y todos sus equipos y, si grabáis, un nivel de vídeo para todos los equipos en los que eres entrenador jefe. Ambos siguen el mismo ritmo de facturación.",
       "recommended": "Recomendado",
       "cadence": {
         "title": "Facturación",
@@ -1926,7 +1926,7 @@
       },
       "video": {
         "title": "Nivel de vídeo",
-        "note": "Se aplica a un equipo e incluye al menos App Básico. Junto a un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada.",
+        "note": "Se aplica a todos los equipos en los que eres entrenador jefe, que comparten almacenamiento y créditos, e incluye al menos App Básico. Junto a un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada.",
         "none": {
           "id": "none",
           "name": "Sin vídeo",
@@ -1983,7 +1983,7 @@
         "appLine": "App {name}",
         "included": "incluido",
         "packNote": "precio de paquete con vídeo – <strike>{instead}</strike> por separado",
-        "videoNote": "Para un equipo · {gb} GB · {credits}",
+        "videoNote": "Compartido por todos los equipos en los que eres entrenador jefe · {gb} GB · {credits}",
         "todayLabel": "Hoy",
         "todayNote": "Resto de la temporada hasta el {seasonEnd}, por meses iniciados",
         "renewLabel": "A partir del {date}",
@@ -2275,11 +2275,11 @@
       "video": {
         "id": "video",
         "title": "Vídeo",
-        "note": "Cada nivel de vídeo se aplica a un equipo e incluye App Básico. El análisis a partir de la imagen se ejecuta en una tarjeta gráfica alquilada en la UE y solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística.",
+        "note": "Cada nivel de vídeo se aplica a todos los equipos en los que eres entrenador jefe —comparten almacenamiento y créditos— e incluye App Básico. El análisis a partir de la imagen se ejecuta en una tarjeta gráfica alquilada en la UE y solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística.",
         "rows": [
           {
             "label": "Almacenamiento para grabaciones",
-            "hint": "Volumen guardado, para un equipo",
+            "hint": "Volumen guardado, compartido por todos los equipos en los que eres entrenador jefe",
             "basis": "100 GB",
             "team": "300 GB",
             "analyse": "500 GB"
@@ -2377,10 +2377,10 @@
       "title": "¿Cuánto cuesta Statix para un club?",
       "description": "La pregunta que se hace en la junta directiva antes de que nadie abra la app.",
       "coachTitle": "Un entrenador, varios equipos",
-      "coachParagraph1": "Para eso no hace falta un contrato de club. Una cuenta Entrenador soporta tres equipos —juvenil, femenino, masculino, como esté organizado en vuestro club— con dos entrenadores asistentes cada uno, por 79 € por temporada. Es menos que una licencia de club de las apps de organización habituales, y además trae estadísticas, mapas de tiro e IA.",
+      "coachParagraph1": "Para eso no hace falta un contrato de club. Una cuenta Entrenador soporta tres equipos —juvenil, femenino, masculino, como esté organizado en vuestro club— con dos entrenadores asistentes cada uno, por 79 € por temporada. Es menos que una licencia de club de las apps de organización habituales, y además trae estadísticas, mapas de tiro e IA. Si grabáis, se añade un nivel de vídeo, que vale para los tres equipos: comparten su almacenamiento y sus créditos.",
       "coachParagraph2": "En el club a menudo se puede financiar por completo: a partir del nivel Entrenador puede aparecer un patrocinador en el marcador público en directo, y un patrocinador de valla suele cubrir el importe él solo.",
       "clubTitle": "Todo el club: bajo consulta",
-      "clubParagraph1": "Quien quiera reunir todos los equipos bajo un mismo techo —una vista general del club, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club. Como referencia para el presupuesto: unos 390 € por temporada para cinco equipos, escalonado según el tamaño. El vídeo para todo el club empieza en 1.490 € por temporada, con 1 TB de almacenamiento y 300 créditos de cálculo compartidos por todos los equipos.",
+      "clubParagraph1": "Quien quiera reunir todos los equipos bajo un mismo techo —una vista general del club, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club. Como referencia para el presupuesto: unos 390 € por temporada para cinco equipos, escalonado según el tamaño. El vídeo para todo el club —cuando sus equipos tienen distintos entrenadores jefe— empieza en 1.490 € por temporada, con 1 TB de almacenamiento y 300 créditos de cálculo compartidos por todos los equipos.",
       "clubParagraph2": "No hay una tarifa de lista, y es deliberado. Lo que necesita un club con doce equipos de base es distinto de lo que necesita uno con dos: escribid brevemente cuántos equipos tenéis y os llegará una oferta a medida.",
       "clubLink": "Solicitar condiciones para clubes",
       "closing": "Lo que gana un club cuando todos los equipos registran con el mismo esquema —un estándar para todos los equipos, plantillas y asistencia a los entrenamientos en un solo sitio, desarrollo a lo largo de todas las categorías de base, protección de datos bien resuelta— está en la página <club>app de estadísticas de balonmano para clubes</club>. Para los cuerpos técnicos de la base merece más la pena mirar <youth>Statix para entrenadores de base</youth>."
@@ -2442,7 +2442,7 @@
       "items": [
         {
           "question": "¿Cuánto cuesta Statix?",
-          "answer": "Hasta el {founderDeadline}, nada. A partir del {launchDate} hay dos reguladores: el nivel de app – Básico sigue siendo gratis para siempre, Entrenador cuesta 79 € por temporada o 9,90 € al mes, Pro 149 € por temporada o 14,90 € al mes – y, si grabáis, un nivel de vídeo para un equipo: Vídeo Básico 149 €, Vídeo Equipo 399 €, Vídeo Análisis 849 € por temporada (14,90 €, 39,90 € y 84,90 € al mes). Junto a un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada: Entrenador 39 €, Pro 75 €. Todos los precios son precios finales."
+          "answer": "Hasta el {founderDeadline}, nada. A partir del {launchDate} hay dos reguladores: el nivel de app – Básico sigue siendo gratis para siempre, Entrenador cuesta 79 € por temporada o 9,90 € al mes, Pro 149 € por temporada o 14,90 € al mes – y, si grabáis, un nivel de vídeo para todos los equipos en los que eres entrenador jefe (comparten almacenamiento y créditos): Vídeo Básico 149 €, Vídeo Equipo 399 €, Vídeo Análisis 849 € por temporada (14,90 €, 39,90 € y 84,90 € al mes). Junto a un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada: Entrenador 39 €, Pro 75 €. Todos los precios son precios finales."
         },
         {
           "question": "Ya uso Statix, ¿tengo que pagar a partir de enero?",
@@ -2470,7 +2470,7 @@
         },
         {
           "question": "¿Para qué necesito un nivel de vídeo y qué son los créditos de cálculo?",
-          "answer": "Para un equipo que graba sus partidos. Vídeo Básico trae 100 GB de almacenamiento, etiquetado, listas, envíos y la videoteca, sincronizados con el acta. Vídeo Equipo añade 300 GB, panorámica de dos cámaras, versión con seguimiento, marcador sobreimpreso y retransmisión en directo; Vídeo Análisis, 500 GB, recorridos, mapas de calor y detección del balón. El análisis a partir de la imagen se calcula en una tarjeta gráfica; un crédito es una hora de ella. Vídeo Equipo incluye 40 créditos por temporada y Vídeo Análisis 180 (3 y 15 al mes con suscripción mensual); puedes recargar 10 por 19 € o 30 por 49 €. Las pruebas no cuestan nada y las ejecuciones fallidas se abonan."
+          "answer": "Para equipos que graban sus partidos. Un nivel de vídeo se aplica a todos los equipos en los que eres entrenador jefe, que comparten almacenamiento y créditos. Vídeo Básico trae 100 GB de almacenamiento, etiquetado, listas, envíos y la videoteca, sincronizados con el acta. Vídeo Equipo añade 300 GB, panorámica de dos cámaras, versión con seguimiento, marcador sobreimpreso y retransmisión en directo; Vídeo Análisis, 500 GB, recorridos, mapas de calor y detección del balón. El análisis a partir de la imagen se calcula en una tarjeta gráfica; un crédito es una hora de ella. Vídeo Equipo incluye 40 créditos por temporada y Vídeo Análisis 180 (3 y 15 al mes con suscripción mensual); puedes recargar 10 por 19 € o 30 por 49 €. Las pruebas no cuestan nada y las ejecuciones fallidas se abonan."
         },
         {
           "question": "¿Cómo contrato un plan?",
@@ -2655,7 +2655,7 @@
         },
         {
           "question": "¿Statix es gratuito?",
-          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en {appUrl} y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027, Básico se queda en 0 €, Entrenador cuesta 79 € por temporada y Pro 149 €; si grabáis, añadís un nivel de vídeo para un equipo desde 149 € por temporada. Quien se registre antes conserva el plan Entrenador gratis durante toda la temporada 26/27, es decir, hasta el 30 de junio de 2027, y después un precio de fundador."
+          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en {appUrl} y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027, Básico se queda en 0 €, Entrenador cuesta 79 € por temporada y Pro 149 €; si grabáis, añadís desde 149 € por temporada un nivel de vídeo para todos los equipos en los que eres entrenador jefe. Quien se registre antes conserva el plan Entrenador gratis durante toda la temporada 26/27, es decir, hasta el 30 de junio de 2027, y después un precio de fundador."
         },
         {
           "question": "¿Cómo puedo probar Statix?",

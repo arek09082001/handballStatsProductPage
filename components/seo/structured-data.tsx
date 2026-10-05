@@ -31,19 +31,19 @@ const PAID_OFFERS = [
     name: 'Video Basis',
     price: '149',
     description:
-      'Video-Stufe für eine Mannschaft mit 100 GB Speicher: 149 € je Saison oder 14,90 € im Monat, ab dem 1. Januar 2027.',
+      'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist, mit 100 GB Speicher (gemeinsam): 149 € je Saison oder 14,90 € im Monat, ab dem 1. Januar 2027.',
   },
   {
     name: 'Video Team',
     price: '399',
     description:
-      'Video-Stufe für eine Mannschaft mit 300 GB Speicher, Panorama und Livestream: 399 € je Saison oder 39,90 € im Monat, ab dem 1. Januar 2027.',
+      'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist, mit 300 GB Speicher (gemeinsam), Panorama und Livestream: 399 € je Saison oder 39,90 € im Monat, ab dem 1. Januar 2027.',
   },
   {
     name: 'Video Analyse',
     price: '849',
     description:
-      'Video-Stufe für eine Mannschaft mit 500 GB Speicher, Laufwegen und Ballerkennung: 849 € je Saison oder 84,90 € im Monat, ab dem 1. Januar 2027.',
+      'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist, mit 500 GB Speicher (gemeinsam), Laufwegen und Ballerkennung: 849 € je Saison oder 84,90 € im Monat, ab dem 1. Januar 2027.',
   },
 ] as const;
 
