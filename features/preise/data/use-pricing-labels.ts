@@ -8,7 +8,7 @@ import {
 } from './pricing-content';
 
 /**
- * The four recurring labels of `/preise` in the reader's language, ready to be
+ * The recurring labels of `/preise` in the reader's language, ready to be
  * handed to any `t(...)` call on the page as ICU arguments.
  *
  * Every band of this page names at least one of them, so without a shared

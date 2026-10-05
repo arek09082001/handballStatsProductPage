@@ -92,6 +92,22 @@ export const CLUB_CONFIG = {
     /** The live app – primary conversion target since launch. */
     appUrl: 'https://app.statix-app.de',
     demoUrl: 'https://demo.statix-app.de',
+    /**
+     * The app's public price list (`GET /api/public/billing/prices`): every
+     * amount in cents, the rest of the running season already computed. The
+     * pricing page reads it instead of keeping the season rule a second time.
+     */
+    get pricesApiUrl() {
+      return `${this.appUrl}/api/public/billing/prices`;
+    },
+    /**
+     * Where the buy button on `/preise` hands over. The app stores the choice
+     * as a cookie on its own domain, then sends the visitor through login or
+     * registration to its checkout and on to Stripe.
+     */
+    get checkoutIntentUrl() {
+      return `${this.appUrl}/api/billing/intent`;
+    },
     get urlWithoutProtocol() {
       return this.url.replace('https://', '');
     },

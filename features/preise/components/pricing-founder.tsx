@@ -9,6 +9,8 @@ import {
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
 import type { FounderStep } from '../data/pricing-content';
+import type { PriceSheet } from '../data/price-sheet';
+import { usePriceFormat } from '../data/use-price-format';
 import { usePricingLabels } from '../data/use-pricing-labels';
 
 /**
@@ -20,11 +22,18 @@ import { usePricingLabels } from '../data/use-pricing-labels';
  * tape and tilted a degree, because a guarantee handed over on the board is a
  * note, not a banner — and the date is circled in marker the way a coach circles
  * a date on the season plan.
+ *
+ * Since the new price list the promise has a second half: after the free
+ * season, founders keep a permanent founder price on a season subscription
+ * without video. Its figures come from the same price list as the
+ * configurator; the card names both tiers because the founder decides later
+ * which one he wants.
  * @returns A JSX element rendering the grandfathering promise on the paper ground.
  */
-export default function PricingFounder() {
+export default function PricingFounder({ sheet }: { sheet: PriceSheet }) {
   const t = useTranslations('pricingPage.founder');
   const labels = usePricingLabels();
+  const format = usePriceFormat();
   const steps = t.raw('steps') as FounderStep[];
 
   return (
@@ -32,11 +41,11 @@ export default function PricingFounder() {
       id='bestandsschutz'
       className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
-      <div className='relative mx-auto max-w-5xl px-6 sm:px-10'>
+      <div className='relative mx-auto max-w-5xl px-4 sm:px-10'>
         <SectionHeading
           align='left'
           kicker={t('kicker')}
-          title={t('title')}
+          title={t('title', labels)}
           description={t('description', labels)}
         />
 
@@ -81,13 +90,31 @@ export default function PricingFounder() {
               <div className='flex items-baseline justify-between gap-6 py-2.5 text-[15px]'>
                 <dt className='text-ink/70'>{t('cardDueLabel')}</dt>
                 <dd className='font-display font-bold tabular-nums text-primary'>
-                  0 €
+                  {format.euro(0)}
+                </dd>
+              </div>
+              <div className='flex items-baseline justify-between gap-6 py-2.5 text-[15px]'>
+                <dt className='text-ink/70'>{t('cardFounderLabel')}</dt>
+                <dd className='flex flex-col items-end text-right font-display font-bold tabular-nums text-ink'>
+                  {(['trainer', 'pro'] as const).map((tier) => (
+                    <span key={tier}>
+                      {t.rich(`cardFounder.${tier}`, {
+                        founder: format.euro(sheet.app[tier].founder.season),
+                        standard: format.euro(sheet.app[tier].standard.season),
+                        strike: (chunks) => (
+                          <s className='font-sans text-[13px] font-medium text-ink/55'>
+                            {chunks}
+                          </s>
+                        ),
+                      })}
+                    </span>
+                  ))}
                 </dd>
               </div>
             </dl>
 
             <p className='mt-5 text-[13px] leading-6 text-ink/70'>
-              {t('cardNote')}
+              {t('cardNote', labels)}
             </p>
 
             <a
@@ -112,7 +139,7 @@ export default function PricingFounder() {
                     {t(`steps.${index}.title`, labels)}
                   </h3>
                   <p className='mt-1.5 max-w-[58ch] text-[15px] leading-7 text-ink/75'>
-                    {step.text}
+                    {t(`steps.${index}.text`, labels)}
                   </p>
                 </div>
               </li>

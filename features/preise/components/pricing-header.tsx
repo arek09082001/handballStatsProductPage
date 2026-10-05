@@ -1,6 +1,6 @@
 'use client';
 
-import { CalendarClock, UserPlus } from 'lucide-react';
+import { ArrowDown, CalendarClock, UserPlus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
@@ -17,6 +17,10 @@ import { usePricingLabels } from '../data/use-pricing-labels';
  * Court-ground hero for `/preise`. The H1 carries the commercial query, and the
  * lede answers the two questions a coach arrives with in this order: what does
  * it cost from January, and what happens to the account I already have.
+ *
+ * The action pair stays registration + demo (the site-wide pair): until the
+ * launch, registering is what secures the founder terms. Under it a quiet link
+ * drops to the configurator for whoever came to put a plan together.
  *
  * The deadline strip under the CTAs is the one thing on this page that expires,
  * so it sits above the fold rather than in the founder band further down.
@@ -72,6 +76,13 @@ export default function PricingHeader() {
             {t('ctaSecondary')}
           </HeroActionButton>
         </div>
+
+        <a
+          href='#plaene'
+          className='mt-6 inline-flex items-center gap-1.5 text-[15px] font-semibold text-chalk/85 underline decoration-primary decoration-2 underline-offset-[6px] transition-colors hover:text-chalk focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+          {t('configureLink')}
+          <ArrowDown className='size-4 text-primary' aria-hidden />
+        </a>
 
         <p className='mx-auto mt-7 flex max-w-fit items-center gap-2.5 rounded-full border border-primary/45 bg-primary/12 px-4 py-2 text-[15px] font-semibold text-chalk'>
           <CalendarClock className='size-4 shrink-0 text-primary' aria-hidden />

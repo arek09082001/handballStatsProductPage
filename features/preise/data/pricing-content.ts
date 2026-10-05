@@ -13,19 +13,30 @@ export const PRICING_PAGE_PATH = '/preise';
  * components read the bundle back into, and the German text the server needs
  * for structured data.
  *
+ * The figures the configurator computes with are not in the bundle either:
+ * they come from the app's public price list (`price-sheet.ts`, read on the
+ * server in `fetch-price-sheet.ts`), with a static fallback of the same
+ * figures. The prose in the bundle quotes those figures in words ("79 € je
+ * Saison") and has to be changed with them.
+ *
  * Rules that survive the move (they belong to the bundle now, not to this file):
  *  - **Never round, pad or invent a number.** Every limit is a plan limit the
  *    app will enforce; every price is an end price.
- *  - **Nothing is buyable yet.** No CTA may read like a checkout — the action
- *    on this page is registration, and registration before the deadline is what
- *    the founder guarantee rewards.
+ *  - **Buyable from the launch, through the app.** The buy button opens on
+ *    1 January 2027 by itself, or earlier with `?kasse=vorschau` (the app
+ *    refuses anybody not on its preview list, so the flag is cosmetic). It
+ *    hands over to the app — login or registration, then Stripe — and never
+ *    takes payment details on this site. Before the launch the action is
+ *    registration, which is what the founder guarantee rewards.
+ *  - **The season rule lives in the app.** What a purchase mid-season costs is
+ *    sent pre-computed (`rest`); this site only adds those values up.
  *  - **No VAT is shown.** Under the small-business rule (§ 19 UStG) none may be
  *    stated; showing it anyway would be owed under § 14c UStG.
  */
 const PRICING = DE_MESSAGES.pricingPage;
 
 /**
- * The four labels that recur across the page's sentences, as ICU arguments.
+ * The labels that recur across the page's sentences, as ICU arguments.
  *
  * They are arguments rather than baked-in text for the same reason they used
  * to be constants: the launch date appears in nine sentences, and nine
@@ -35,6 +46,7 @@ export const PRICING_LABEL_KEYS = [
   'launchDate',
   'founderDeadline',
   'founderFreeUntil',
+  'founderRedeemUntil',
   'coachCount',
 ] as const;
 
@@ -45,57 +57,39 @@ export const DE_PRICING_LABELS: PricingLabels = {
   launchDate: PRICING.launchDate,
   founderDeadline: PRICING.founderDeadline,
   founderFreeUntil: PRICING.founderFreeUntil,
+  founderRedeemUntil: PRICING.founderRedeemUntil,
   coachCount: PRICING.coachCount,
 };
-
-/** The two ways to pay. A "year" is a season here: 1 July – 30 June. */
-export type BillingPeriod = 'monat' | 'jahr';
-
-export type TierId = 'basis' | 'trainer' | 'pro';
-
-export interface TierPrice {
-  /** The figure itself, pre-formatted per language so SSR and client agree. */
-  amount: string;
-  /** What the figure buys, e.g. "im Monat". */
-  unit: string;
-  /** One line under the price — the per-month equivalent or the commitment. */
-  note: string;
-}
-
-export interface Tier {
-  id: TierId;
-  name: string;
-  /** Who this is, in one line. */
-  audience: string;
-  price: Record<BillingPeriod, TierPrice>;
-  /** Two or three sentences on what the tier is for. */
-  summary: string;
-  /** The short list on the card — the differences, not the catalogue. */
-  highlights: readonly string[];
-  /** Label of the card's action. */
-  ctaLabel: string;
-  /** Marked as the one most coaches want. */
-  recommended?: boolean;
-}
 
 /** `true` = included, `false` = not included, string = the figure behind it. */
 export type CompareValue = boolean | string;
 
-export interface CompareRow {
+export interface CompareRowBase {
   label: string;
   /** Reads under the label — what a number counts, or what a limit really does. */
   hint?: string;
+}
+
+/** A row of the app-tier comparison: one value per app tier. */
+export interface AppCompareRow extends CompareRowBase {
   basis: CompareValue;
   trainer: CompareValue;
   pro: CompareValue;
 }
 
-export interface CompareGroup {
+/** A row of the video-tier comparison: one value per paid video tier. */
+export interface VideoCompareRow extends CompareRowBase {
+  basis: CompareValue;
+  team: CompareValue;
+  analyse: CompareValue;
+}
+
+export interface CompareGroup<Row extends CompareRowBase = AppCompareRow> {
   id: string;
   title: string;
   /** One sentence on why this block is cut the way it is. */
   note: string;
-  rows: readonly CompareRow[];
+  rows: readonly Row[];
 }
 
 export interface FounderStep {

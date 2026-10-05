@@ -12,6 +12,41 @@ import {
 } from '@/lib/seo';
 import { SITE_CONTENT_LANGUAGES } from '@/i18n/config';
 
+/** The paid tiers of both dials, at their season price (see `/preise`). */
+const PAID_OFFERS_VALID_FROM = '2027-01-01';
+const PAID_OFFERS = [
+  {
+    name: 'Trainer',
+    price: '79',
+    description:
+      'App-Stufe Trainer: 79 € je Saison oder 9,90 € im Monat, ab dem 1. Januar 2027.',
+  },
+  {
+    name: 'Pro',
+    price: '149',
+    description:
+      'App-Stufe Pro: 149 € je Saison oder 14,90 € im Monat, ab dem 1. Januar 2027.',
+  },
+  {
+    name: 'Video Basis',
+    price: '149',
+    description:
+      'Video-Stufe für eine Mannschaft mit 100 GB Speicher: 149 € je Saison oder 14,90 € im Monat, ab dem 1. Januar 2027.',
+  },
+  {
+    name: 'Video Team',
+    price: '399',
+    description:
+      'Video-Stufe für eine Mannschaft mit 300 GB Speicher, Panorama und Livestream: 399 € je Saison oder 39,90 € im Monat, ab dem 1. Januar 2027.',
+  },
+  {
+    name: 'Video Analyse',
+    price: '849',
+    description:
+      'Video-Stufe für eine Mannschaft mit 500 GB Speicher, Laufwegen und Ballerkennung: 849 € je Saison oder 84,90 € im Monat, ab dem 1. Januar 2027.',
+  },
+] as const;
+
 interface FaqItem {
   question: string;
   answer: string;
@@ -81,14 +116,32 @@ export default async function StructuredData() {
           '@type': 'Audience',
           audienceType: CLUB_CONFIG.business.audience,
         },
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'EUR',
-          description:
-            'Kostenlos starten – registrieren und das erste Spiel ohne Verpflichtung erfassen; Live-Demo auch ohne Account testbar.',
-          url: CLUB_CONFIG.website.appUrl,
-        },
+        // One offer per tier of both dials, at the season price. The paid ones
+        // are `PreOrder` until the payment start: nothing can be bought before
+        // it. Figures as on `/preise` (`app/preise/page.tsx` carries the same
+        // offers with descriptions).
+        offers: [
+          {
+            '@type': 'Offer',
+            name: 'Basis',
+            price: '0',
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            description:
+              'Kostenlos starten – registrieren und das erste Spiel ohne Verpflichtung erfassen; Live-Demo auch ohne Account testbar. Die Basis-Stufe bleibt dauerhaft kostenlos.',
+            url: CLUB_CONFIG.website.appUrl,
+          },
+          ...PAID_OFFERS.map((offer) => ({
+            '@type': 'Offer',
+            name: offer.name,
+            price: offer.price,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/PreOrder',
+            priceValidFrom: PAID_OFFERS_VALID_FROM,
+            description: offer.description,
+            url: absoluteUrl('/preise'),
+          })),
+        ],
         featureList,
         publisher: {
           '@id': `${SITE_URL}/#organization`,

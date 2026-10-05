@@ -1604,7 +1604,7 @@
         },
         {
           "question": "¿Hay alguna app gratuita de estadísticas de balonmano?",
-          "answer": "Sí. Statix es ahora mismo gratuita con todas sus funciones, tanto para un entrenador solo como para un equipo entero, sin tarjeta y sin proceso de pago dentro de la app. Más adelante llegará una suscripción; su precio todavía no está decidido."
+          "answer": "Sí. El nivel Básico de Statix sigue siendo gratis para siempre: registro en directo, calendario, cartas de plantilla y ticker en directo para un equipo, sin tarjeta de crédito. A partir del 1 de enero de 2027 se añaden niveles de pago de app y de vídeo; quien se registre antes conserva el plan Entrenador gratis hasta el 30 de junio de 2027. Lo que cuesta cada nivel está en la página de precios."
         },
         {
           "question": "¿Necesito conocimientos técnicos?",
@@ -1636,7 +1636,7 @@
         },
         {
           "question": "¿Cuánto cuesta Statix?",
-          "answer": "Ahora mismo nada: regístrate en app.statix-app.de y registra tu primer partido sin compromiso y sin tarjeta. ¿Prefieres echar un vistazo antes? La demo en directo funciona sin cuenta. Más adelante llegará una suscripción; su precio todavía no está decidido."
+          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en app.statix-app.de y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027, Básico sigue siendo gratis y se añaden niveles de app de pago y niveles de vídeo para equipos concretos; los precios están en la página de precios. Quien cree una cuenta antes conserva el plan Entrenador gratis hasta el 30 de junio de 2027. Si prefieres mirar primero, prueba la demo en directo sin cuenta."
         },
         {
           "question": "¿Quién está detrás de Statix?",
@@ -1836,19 +1836,21 @@
     "launchDate": "1 de enero de 2027",
     "founderDeadline": "31 de diciembre de 2026",
     "founderFreeUntil": "30 de junio de 2027",
+    "founderRedeemUntil": "30 de septiembre de 2027",
     "coachCount": "más de 50 entrenadores",
     "hero": {
       "kicker": "Precios y costes",
       "titleLead": "Precios de la app de estadísticas de balonmano",
       "titleBrand": "Statix",
-      "lede": "A partir del {launchDate} Statix tendrá planes de pago: Básico sigue siendo gratuito para siempre, Entrenador cuesta 79 € por temporada y Pro 159 €. El registro en directo no está recortado en ningún plan, y quien se registre antes conserva el plan Entrenador gratis hasta el {founderFreeUntil}.",
+      "lede": "Statix es un producto con dos reguladores: el nivel de app – Básico sigue siendo gratis para siempre, Entrenador cuesta 79 € y Pro 149 € por temporada – y, si grabáis, un nivel de vídeo para un equipo. Contratable a partir del {launchDate}. Quien se registre antes conserva el plan Entrenador gratis hasta el {founderFreeUntil}.",
       "ctaPrimary": "Regístrate gratis ahora",
       "ctaSecondary": "Demo en directo sin cuenta",
+      "configureLink": "O configura tu plan ahora mismo",
       "deadline": "Fecha límite: {founderDeadline}",
       "deadlineNote": "· después solo pagan los nuevos registros",
       "trust": [
         "Básico se queda en 0 € para siempre",
-        "Sin tarjeta de crédito",
+        "Sin tarjeta para empezar",
         "Demo sin cuenta"
       ]
     },
@@ -1857,128 +1859,177 @@
       "title": "Por qué Statix cuesta dinero a partir de enero",
       "description": "Un proyecto personal que usan {coachCount} ya no es un proyecto personal, al menos no en la factura.",
       "paragraph1": "Statix nació porque estaba harto de la hoja de conteo a pie de pista, para mi propio equipo, en las noches después del entrenamiento. Hoy {coachCount} registran sus partidos con la app, y eso me alegra cada vez.",
-      "paragraph2": "Pero la factura crece con cada equipo: el servidor y la base de datos funcionan las veinticuatro horas, cada análisis con IA es una llamada de pago a un modelo, cada informe compartido genera un PDF y envía un correo, y cada vídeo subido ocupa almacenamiento de forma permanente. No puedo asumirlo de forma privada a largo plazo. Por eso habrá planes de pago a partir del {launchDate}.",
+      "paragraph2": "Pero la factura crece con cada equipo: el servidor y la base de datos funcionan las veinticuatro horas, cada análisis con IA es una llamada de pago a un modelo, cada informe compartido genera un PDF y envía un correo, cada vídeo de partido ocupa almacenamiento de forma permanente y cada análisis a partir de la imagen cuesta una hora de tarjeta gráfica. No puedo asumirlo de forma privada a largo plazo. Por eso habrá niveles de pago a partir del {launchDate}, y el vídeo, lo que más cuesta, como nivel propio en lugar de escondido en el plan más caro.",
       "paragraph3": "Lo que no va a pasar: Statix no va a desaparecer detrás de una caja registradora. Las funciones básicas siguen siendo gratuitas —limitadas, sí, pero plenamente utilizables— para que un entrenador de base con un equipo pueda seguir trabajando con ellas. Se paga lo que realmente cuesta tiempo de cálculo, almacenamiento y envío. Y el registro en sí no está recortado en ningún plan: un muro de pago en el minuto 58 no te cuesta el cliente, te cuesta el acta del partido.",
       "signatureRole": "Desarrollador de Statix, entrenador de balonmano"
     },
-    "tiers": {
-      "kicker": "El marcador de precios",
-      "title": "Tres planes a partir del {launchDate}",
-      "description": "Se paga lo que cuesta dinero de verdad: tiempo de cálculo, almacenamiento y envío. Todo lo que crea un hábito sigue incluido en todos los planes.",
-      "seasonNote": "Aquí un año es una temporada: del 1 de julio al 30 de junio.",
-      "billingAriaLabel": "Periodo de facturación",
-      "billingMonthly": "Mensual",
-      "billingYearly": "Anual",
-      "billingYearlyBadge": "−33 %",
-      "recommendedLabel": "Recomendado",
-      "vatNote": "Todos los precios son precios finales. Como pequeño empresario según el § 19 de la ley alemana del IVA no repercuto impuesto sobre el valor añadido.",
-      "prorataLead": "Los precios rigen a partir del {launchDate}. Quien entre en enero paga solo la temporada parcial hasta el 30 de junio:",
-      "prorataTrainer": "39 € en lugar de 79 €",
-      "prorataTrainerSuffix": "en Entrenador,",
-      "prorataPro": "79 € en lugar de 159 €",
-      "prorataProSuffix": "en Pro.",
-      "items": [
-        {
-          "id": "basis",
-          "name": "Básico",
-          "audience": "Para el entrenador de un solo equipo",
-          "price": {
-            "monat": {
-              "amount": "0 €",
-              "unit": "para siempre",
-              "note": "Sin tarjeta, sin fecha de caducidad."
-            },
-            "jahr": {
-              "amount": "0 €",
-              "unit": "para siempre",
-              "note": "Sin tarjeta, sin fecha de caducidad."
-            }
+    "configurator": {
+      "kicker": "Tu plan",
+      "title": "Configura tu plan",
+      "description": "Un producto, dos reguladores: el nivel de app para tu cuenta y todos sus equipos y, si grabáis, un nivel de vídeo para un equipo. Ambos siguen el mismo ritmo de facturación.",
+      "recommended": "Recomendado",
+      "cadence": {
+        "title": "Facturación",
+        "note": "Se aplica a la app y al vídeo por igual.",
+        "season": "Temporada",
+        "seasonHint": "1 de julio – 30 de junio",
+        "month": "Mensual",
+        "monthHint": "cancelable cada mes",
+        "seasonClosed": "En los últimos tres meses de la temporada solo existe la suscripción mensual."
+      },
+      "price": {
+        "perSeason": "por temporada",
+        "perMonth": "al mes",
+        "forever": "para siempre",
+        "packNote": "en el paquete – <strike>{instead}</strike> por separado"
+      },
+      "app": {
+        "title": "Nivel de app",
+        "note": "Para tu cuenta y todos sus equipos. El registro en directo no está recortado en ningún nivel.",
+        "items": [
+          {
+            "id": "basis",
+            "name": "Básico",
+            "audience": "Para el entrenador de un equipo",
+            "highlights": [
+              "Registro en directo sin ninguna restricción",
+              "Calendario, cartas de plantilla y caja completos",
+              "1 equipo, 20 jugadoras/es, 10 partidos",
+              "4 análisis con IA y 4 informes compartidos al mes"
+            ]
           },
-          "summary": "Un equipo, una temporada y ninguna cuenta en ninguna pasarela de pago. Registrar, analizar y planificar citas: el núcleo sigue siendo gratuito para que Statix siga siendo útil para todos.",
+          {
+            "id": "trainer",
+            "name": "Entrenador",
+            "audience": "Para quien de verdad analiza después del partido",
+            "highlights": [
+              "Cada partido sigue visible con todo detalle",
+              "Mapas de calor, xG, curva de forma, récords",
+              "3 equipos con 2 asistentes cada uno",
+              "Scouting del rival, informe PDF, patrocinadores en el ticker",
+              "20 análisis con IA y 30 informes compartidos al mes"
+            ],
+            "recommended": true
+          },
+          {
+            "id": "pro",
+            "name": "Pro",
+            "audience": "Para entrenadores con varios equipos",
+            "highlights": [
+              "Todo lo de Entrenador",
+              "5 equipos con 5 asistentes cada uno",
+              "40 jugadoras/es, 500 partidos, 50 torneos",
+              "40 análisis con IA y 60 informes compartidos al mes"
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "Nivel de vídeo",
+        "note": "Se aplica a un equipo e incluye al menos App Básico. Junto a un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada.",
+        "none": {
+          "id": "none",
+          "name": "Sin vídeo",
+          "audience": "Registrar y analizar, sin grabaciones",
           "highlights": [
-            "Registro en directo sin ningún recorte",
-            "Calendario y fichas de plantilla completos",
-            "1 equipo, 20 jugadores, 10 partidos",
-            "Los últimos 5 partidos con toda la profundidad",
-            "4 análisis con IA y 4 informes compartidos al mes"
-          ],
-          "ctaLabel": "Registrarse gratis"
+            "Todo lo del nivel de app elegido",
+            "El vídeo se puede añadir más adelante"
+          ]
         },
-        {
-          "id": "trainer",
-          "name": "Entrenador",
-          "audience": "Para quien analiza de verdad después del partido",
-          "price": {
-            "monat": {
-              "amount": "9,90 €",
-              "unit": "al mes",
-              "note": "Cancelable cada mes."
-            },
-            "jahr": {
-              "amount": "79 €",
-              "unit": "por temporada",
-              "note": "Equivale a 6,58 € al mes: 39,80 € de ahorro."
-            }
+        "noneNote": "Sin almacenamiento ni créditos",
+        "items": [
+          {
+            "id": "basis",
+            "name": "Vídeo Básico",
+            "audience": "Para el vídeo de partido como rutina semanal",
+            "highlights": [
+              "Mesa de etiquetado, listas, envíos a jugadoras",
+              "Videoteca del equipo, modo de charla",
+              "El vídeo va sincronizado con el acta"
+            ]
           },
-          "summary": "El nivel para el que se construyó Statix: toda la temporada permanece visible, con mapas de tiro y curvas de forma incluidos, hasta tres equipos con dos entrenadores asistentes cada uno.",
-          "highlights": [
-            "Cada partido registrado permanece visible con toda la profundidad",
-            "Mapas de tiro, mapas de calor, curva de forma, récords del equipo",
-            "3 equipos con 2 entrenadores asistentes cada uno",
-            "Balance ante rivales, encuestas, acta del partido en PDF",
-            "Espacios para patrocinadores en el marcador público en directo",
-            "20 análisis con IA y 30 informes compartidos al mes"
-          ],
-          "ctaLabel": "Registrarse y asegurarlo",
-          "recommended": true
-        },
-        {
-          "id": "pro",
-          "name": "Pro",
-          "audience": "Para el análisis de vídeo como rutina semanal",
-          "price": {
-            "monat": {
-              "amount": "19,90 €",
-              "unit": "al mes",
-              "note": "Cancelable cada mes."
-            },
-            "jahr": {
-              "amount": "159 €",
-              "unit": "por temporada",
-              "note": "Equivale a 13,25 € al mes: 79,80 € de ahorro."
-            }
+          {
+            "id": "team",
+            "name": "Vídeo Equipo",
+            "audience": "Para equipos que graban con dos cámaras",
+            "highlights": [
+              "Todo lo de Vídeo Básico",
+              "Panorámica de dos cámaras, versión con seguimiento",
+              "Marcador sobreimpreso y retransmisión en directo"
+            ]
           },
-          "summary": "Todo lo de Entrenador, más el vídeo: 100 GB de grabaciones que se sincronizan solas con el cronómetro del partido. Cada acción registrada encuentra su punto en el vídeo sin que nadie tenga que buscarlo.",
-          "highlights": [
-            "100 GB de vídeo con etiquetado y listas de reproducción",
-            "El vídeo se sincroniza automáticamente con el cronómetro",
-            "Enviar resúmenes a jugadoras concretas",
-            "5 equipos, 5 entrenadores asistentes, 500 partidos",
-            "Cuentas de jugador para toda la plantilla",
-            "40 análisis con IA y 60 informes compartidos al mes"
-          ],
-          "ctaLabel": "Registrarse y asegurarlo"
-        }
-      ]
+          {
+            "id": "analyse",
+            "name": "Vídeo Análisis",
+            "audience": "Para el análisis a partir de la imagen",
+            "highlights": [
+              "Todo lo de Vídeo Equipo",
+              "Calibración de pista, recorridos, mapas de calor, distancias",
+              "Detección del balón (beta), reentrenar la detección"
+            ]
+          }
+        ],
+        "storage": "{gb} GB",
+        "creditsSeason": "{credits} créditos por temporada",
+        "creditsMonth": "{credits} créditos al mes",
+        "noCredits": "sin créditos",
+        "creditsTitle": "Créditos de cálculo",
+        "creditsText": "Un crédito es una hora en una tarjeta gráfica en la UE: para la panorámica, la versión con seguimiento, los recorridos o la detección del balón. Las pruebas no cuestan nada y las ejecuciones que fallan definitivamente se abonan.",
+        "creditPacks": "Recarga a partir de Vídeo Equipo: {smallCredits} créditos por {smallPrice}, {largeCredits} créditos por {largePrice}.",
+        "betaNote": "El vídeo es una beta cerrada hasta el {launchDate}. El análisis a partir de la imagen solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística."
+      },
+      "summary": {
+        "title": "Tu selección",
+        "appLine": "App {name}",
+        "included": "incluido",
+        "packNote": "precio de paquete con vídeo – <strike>{instead}</strike> por separado",
+        "videoNote": "Para un equipo · {gb} GB · {credits}",
+        "todayLabel": "Hoy",
+        "todayNote": "Resto de la temporada hasta el {seasonEnd}, por meses iniciados",
+        "renewLabel": "A partir del {date}",
+        "recurringSeasonLabel": "Por temporada",
+        "recurringMonthLabel": "Al mes",
+        "seasonTerms": "Se renueva cada 1 de julio y se puede cancelar para el final de la temporada.",
+        "monthTerms": "Se renueva cada mes y se puede cancelar mensualmente. Sin descuentos.",
+        "launchNoteSeason": "Contratable a partir del {launchDate}. Entonces pagas primero solo el resto de la temporada en curso por meses iniciados – en enero, la mitad – y a partir del 1 de julio el precio completo de temporada.",
+        "launchNoteMonth": "Contratable a partir del {launchDate}. El primer mes se cobra al contratar.",
+        "fallbackNote": "El importe para el resto de la temporada en curso te lo muestra el pago.",
+        "freeText": "App Básico sin vídeo no cuesta nada: sin tarjeta y sin fecha de caducidad. Puedes añadir vídeo o un nivel de app superior en cualquier momento.",
+        "founderNote": "Precio de fundador: quien esté registrado antes del {founderDeadline} paga por esta suscripción de temporada {founder} en lugar de {standard}, de forma permanente.",
+        "vatNote": "Precios finales. Como pequeño empresario según el § 19 UStG no repercuto IVA.",
+        "buy": "Continuar al pago",
+        "buyHint": "Continúa en la app: inicia sesión o regístrate; el pago se realiza a través de Stripe. El importe vinculante es el del pago.",
+        "buyLocked": "Contratable a partir del {launchDate}",
+        "register": "Registrarse gratis",
+        "registerFounder": "Regístrate gratis ahora y asegura tu derecho adquirido",
+        "previewBadge": "Vista previa del pago",
+        "mobileToday": "hoy",
+        "jump": "Resumen"
+      }
     },
     "founder": {
       "kicker": "Para quienes ya están dentro",
-      "title": "Quien se registre ahora no paga nada en la temporada 26/27",
-      "description": "A partir del {launchDate} pagan únicamente los nuevos registros. Toda cuenta que exista antes conserva el plan Entrenador: gratis, sin solicitud y sin datos de pago.",
+      "title": "Quien se registre ahora no paga nada en la temporada 26/27, y después paga menos",
+      "description": "A partir del {launchDate} pagan únicamente los nuevos registros. Toda cuenta que exista antes conserva el plan Entrenador hasta el {founderFreeUntil}: gratis, sin solicitud y sin datos de pago. Después se aplica un precio de fundador permanente.",
       "cardTitle": "Derecho adquirido",
       "cardDeadlineLabel": "Registro hasta el",
       "cardPlanLabel": "Tu plan",
       "cardPlanValue": "Entrenador",
       "cardFreeUntilLabel": "Gratis hasta",
       "cardDueLabel": "A pagar hasta entonces",
-      "cardNote": "Esto no es una fase de prueba: no hay ninguna fecha en la que se cargue una tarjeta, porque no hay ninguna tarjeta guardada.",
+      "cardFounderLabel": "Después, por temporada",
+      "cardFounder": {
+        "trainer": "Entrenador {founder} <strike>{standard}</strike>",
+        "pro": "Pro {founder} <strike>{standard}</strike>"
+      },
+      "cardNote": "Esto no es una fase de prueba: el {founderFreeUntil} no se cobra nada, porque no hay ninguna tarjeta guardada. Sin suscripción, tu cuenta sigue después en Básico; no se borra nada.",
       "cardCta": "Crear cuenta y asegurarlo",
       "closing": "El motivo no es un truco publicitario, sino una cuenta: los entrenadores que han usado Statix durante toda una temporada valen como prescriptores mucho más de lo que aportarían como primeros pagadores. Y nadie que esté en plena segunda vuelta debería encontrarse su temporada detrás de una caja.",
       "steps": [
         {
           "number": 1,
           "title": "Registrarse antes del {founderDeadline}",
-          "text": "Basta con una dirección de correo. No hay ningún campo para datos de pago, porque hasta enero no hay ningún proceso de cobro."
+          "text": "Basta con una dirección de correo. No hay ningún campo para datos de pago, porque antes del {launchDate} nadie puede comprar nada."
         },
         {
           "number": 2,
@@ -1989,19 +2040,27 @@
           "number": 3,
           "title": "Gratis hasta el {founderFreeUntil}",
           "text": "La temporada 26/27 completa hasta el final, segunda vuelta incluida. Después decides si te quedas, sin que antes se cobre nada."
+        },
+        {
+          "number": 4,
+          "title": "Después, precio de fundador para siempre",
+          "text": "Con una suscripción de temporada sin vídeo pagas 59 € en lugar de 79 € por Entrenador y 109 € en lugar de 149 € por Pro, mientras la suscripción siga sin interrupción. Puedes contratarla hasta el {founderRedeemUntil}. Con vídeo se aplica de todos modos el precio de paquete, más barato."
         }
       ]
     },
     "compare": {
       "kicker": "Todo comparado",
-      "title": "Qué incluye cada plan",
-      "description": "Completo y sin asteriscos: cada función y cada límite tal y como los aplicará la app a partir de enero.",
+      "title": "Qué incluye cada nivel",
+      "description": "Completo y sin asteriscos: cada función y cada límite tal y como los aplicará la app desde el lanzamiento, primero los niveles de app y después los de vídeo.",
       "included": "incluido",
       "notIncluded": "no incluido",
       "limitsNote": "Las cifras son límites máximos, válidos a partir del {launchDate}.",
       "rowHeaderSr": "Función o límite",
       "captionSuffix": "funciones y límites por plan",
+      "appHeading": "Niveles de app",
+      "videoHeading": "Niveles de vídeo",
       "closing": "Los límites nunca actúan en mitad del partido: si cabe otro partido en tu cupo se comprueba al crearlo, no en el descanso. Un registro ya iniciado siempre llega al final y siempre se guarda.",
+      "videoClosing": "Con un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada: Entrenador 39 € en lugar de 79 €, Pro 75 € en lugar de 149 €. En la modalidad mensual no hay descuentos. A partir de Vídeo Equipo se pueden recargar créditos: 10 créditos por 19 €, 30 créditos por 49 €.",
       "groups": [
         {
           "id": "erfassen",
@@ -2067,7 +2126,7 @@
               "pro": "todos"
             },
             {
-              "label": "Mapas de tiro y mapas de calor",
+              "label": "Mapas de tiro, mapas de calor y xG",
               "basis": false,
               "trainer": true,
               "pro": true
@@ -2096,20 +2155,6 @@
               "basis": "4",
               "trainer": "20",
               "pro": "40"
-            },
-            {
-              "label": "Análisis de vídeo con etiquetado y listas",
-              "hint": "100 GB son unos 16 partidos en 1080p",
-              "basis": false,
-              "trainer": false,
-              "pro": "100 GB"
-            },
-            {
-              "label": "El vídeo va sincronizado con el cronómetro",
-              "hint": "Cada acción registrada encuentra su punto en el vídeo",
-              "basis": false,
-              "trainer": false,
-              "pro": true
             }
           ]
         },
@@ -2134,6 +2179,13 @@
             {
               "label": "Plantilla como álbum de cromos",
               "hint": "HPI y OVR, niveles, radar, pegatinas",
+              "basis": true,
+              "trainer": true,
+              "pro": true
+            },
+            {
+              "label": "Catálogo de multas y caja del equipo",
+              "hint": "incluida la cuenta de cada jugadora",
               "basis": true,
               "trainer": true,
               "pro": true
@@ -2171,9 +2223,10 @@
               "pro": "50"
             },
             {
-              "label": "Cuentas de jugador para la plantilla",
+              "label": "Estadística propia para jugadoras",
+              "hint": "Ven sus valores con su propio acceso",
               "basis": false,
-              "trainer": false,
+              "trainer": true,
               "pro": true
             }
           ]
@@ -2215,17 +2268,109 @@
               "basis": false,
               "trainer": true,
               "pro": true
-            },
-            {
-              "label": "Enviar resúmenes a las jugadoras",
-              "hint": "Ven sus acciones sin cuenta propia",
-              "basis": false,
-              "trainer": false,
-              "pro": true
             }
           ]
         }
-      ]
+      ],
+      "video": {
+        "id": "video",
+        "title": "Vídeo",
+        "note": "Cada nivel de vídeo se aplica a un equipo e incluye App Básico. El análisis a partir de la imagen se ejecuta en una tarjeta gráfica alquilada en la UE y solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística.",
+        "rows": [
+          {
+            "label": "Almacenamiento para grabaciones",
+            "hint": "Volumen guardado, para un equipo",
+            "basis": "100 GB",
+            "team": "300 GB",
+            "analyse": "500 GB"
+          },
+          {
+            "label": "Créditos de cálculo por temporada",
+            "hint": "Con suscripción mensual, 3 o 15 al mes; un crédito es una hora de GPU",
+            "basis": false,
+            "team": "40",
+            "analyse": "180"
+          },
+          {
+            "label": "Recargar créditos",
+            "hint": "10 créditos por 19 €, 30 créditos por 49 €",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Mesa de etiquetado, listas, envíos",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Videoteca y modo de charla",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Vídeo sincronizado con el acta",
+            "hint": "Cada evento registrado encuentra su lugar en el vídeo",
+            "basis": true,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Panorámica de dos cámaras",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Versión con seguimiento",
+            "hint": "Un encuadre que sigue el juego dentro de la panorámica",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Marcador sobreimpreso",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Retransmisión en directo",
+            "hint": "La panorámica en directo cuesta créditos",
+            "basis": false,
+            "team": true,
+            "analyse": true
+          },
+          {
+            "label": "Calibración de pista",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Recorridos, mapas de calor, distancias",
+            "hint": "por jugadora, a partir de la imagen",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Detección del balón (beta)",
+            "hint": "Dónde entra el balón en la portería, como sugerencia",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          },
+          {
+            "label": "Reentrenar la detección",
+            "basis": false,
+            "team": false,
+            "analyse": true
+          }
+        ]
+      }
     },
     "club": {
       "kicker": "Para la caja del club",
@@ -2235,7 +2380,7 @@
       "coachParagraph1": "Para eso no hace falta un contrato de club. Una cuenta Entrenador soporta tres equipos —juvenil, femenino, masculino, como esté organizado en vuestro club— con dos entrenadores asistentes cada uno, por 79 € por temporada. Es menos que una licencia de club de las apps de organización habituales, y además trae estadísticas, mapas de tiro e IA.",
       "coachParagraph2": "En el club a menudo se puede financiar por completo: a partir del nivel Entrenador puede aparecer un patrocinador en el marcador público en directo, y un patrocinador de valla suele cubrir el importe él solo.",
       "clubTitle": "Todo el club: bajo consulta",
-      "clubParagraph1": "Quien quiera reunir todos los equipos bajo un mismo techo —una vista general del club, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club. Como referencia para el presupuesto: unos 390 € por temporada para cinco equipos, escalonado según el tamaño.",
+      "clubParagraph1": "Quien quiera reunir todos los equipos bajo un mismo techo —una vista general del club, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club. Como referencia para el presupuesto: unos 390 € por temporada para cinco equipos, escalonado según el tamaño. El vídeo para todo el club empieza en 1.490 € por temporada, con 1 TB de almacenamiento y 300 créditos de cálculo compartidos por todos los equipos.",
       "clubParagraph2": "No hay una tarifa de lista, y es deliberado. Lo que necesita un club con doce equipos de base es distinto de lo que necesita uno con dos: escribid brevemente cuántos equipos tenéis y os llegará una oferta a medida.",
       "clubLink": "Solicitar condiciones para clubes",
       "closing": "Lo que gana un club cuando todos los equipos registran con el mismo esquema —un estándar para todos los equipos, plantillas y asistencia a los entrenamientos en un solo sitio, desarrollo a lo largo de todas las categorías de base, protección de datos bien resuelta— está en la página <club>app de estadísticas de balonmano para clubes</club>. Para los cuerpos técnicos de la base merece más la pena mirar <youth>Statix para entrenadores de base</youth>."
@@ -2297,42 +2442,62 @@
       "items": [
         {
           "question": "¿Cuánto cuesta Statix?",
-          "answer": "Hasta el {founderDeadline}, nada. A partir del {launchDate} hay tres niveles: Básico sigue siendo gratuito para siempre, Entrenador cuesta 79 € por temporada o 9,90 € al mes, y Pro 159 € por temporada o 19,90 € al mes. Todos los precios son precios finales; como pequeño empresario según el § 19 de la ley alemana del IVA no repercuto impuesto sobre el valor añadido."
+          "answer": "Hasta el {founderDeadline}, nada. A partir del {launchDate} hay dos reguladores: el nivel de app – Básico sigue siendo gratis para siempre, Entrenador cuesta 79 € por temporada o 9,90 € al mes, Pro 149 € por temporada o 14,90 € al mes – y, si grabáis, un nivel de vídeo para un equipo: Vídeo Básico 149 €, Vídeo Equipo 399 €, Vídeo Análisis 849 € por temporada (14,90 €, 39,90 € y 84,90 € al mes). Junto a un nivel de vídeo, el nivel de app solo cuesta el precio de paquete en la temporada: Entrenador 39 €, Pro 75 €. Todos los precios son precios finales."
         },
         {
           "question": "Ya uso Statix, ¿tengo que pagar a partir de enero?",
-          "answer": "No. Toda cuenta creada antes del {launchDate} conserva el plan Entrenador gratis hasta el {founderFreeUntil}, es decir, la temporada 26/27 completa hasta el final. No tienes que hacer nada, ni pulsar nada, ni guardar datos de pago. Quien se topa con un muro de pago a mitad de temporada pierde su acta de partido, y ese sería el peor comienzo imaginable."
+          "answer": "No. Toda cuenta creada antes del {launchDate} conserva el plan Entrenador gratis hasta el {founderFreeUntil}, es decir, la temporada 26/27 completa. No tienes que hacer nada, ni pulsar nada, ni guardar datos de pago. Después se te aplica un precio de fundador permanente: 59 € en lugar de 79 € por Entrenador y 109 € en lugar de 149 € por Pro, como suscripción de temporada sin vídeo."
+        },
+        {
+          "question": "¿Qué pasa con mi cuenta el 30 de junio de 2027?",
+          "answer": "Termina el derecho adquirido y no se cobra nada, porque no hay ninguna tarjeta guardada. Sin suscripción, tu cuenta sigue en Básico a partir del 1 de julio: no se borra nada, los partidos antiguos siguen guardados y se muestran difuminados, y lo que supere los límites de Básico sigue siendo legible. Si quieres seguir con Entrenador o Pro, contrata hasta el {founderRedeemUntil} una suscripción de temporada al precio de fundador; se mantiene mientras la suscripción no se interrumpa."
         },
         {
           "question": "¿Por qué Statix pasa a ser de pago?",
-          "answer": "Statix nació como proyecto personal para mi propio equipo y hoy lo usan {coachCount}. El servidor, la base de datos, los análisis con IA y el almacenamiento de vídeo cuestan más con cada equipo, y esa factura no puedo asumirla de forma privada a largo plazo. La alternativa sería cerrar el proyecto, la peor solución para todas las partes."
+          "answer": "Statix nació como un proyecto personal para mi propio equipo y hoy lo usan {coachCount}. El servidor, la base de datos, los análisis con IA, el almacenamiento de vídeo y las tarjetas gráficas cuestan más con cada equipo, y no puedo asumir esa factura de forma privada a largo plazo. La alternativa sería cerrar el proyecto, la peor solución para todos."
         },
         {
-          "question": "¿Qué sigue siendo gratuito?",
-          "answer": "Todo el registro en directo, el calendario completo con confirmaciones y ausencias y suscripción de calendario, las fichas de plantilla con HPI, niveles y pegatinas, el marcador público en directo y el análisis de tus partidos. En Básico están limitados: un equipo, 20 jugadores, 10 partidos guardados, los últimos cinco partidos con toda la profundidad y cuatro análisis con IA y cuatro informes compartidos al mes."
+          "question": "¿Qué sigue siendo gratis?",
+          "answer": "Todo el registro en directo, el calendario completo con confirmaciones y ausencias, la suscripción de calendario, las cartas de plantilla con HPI, tiers y pegatinas, el catálogo de multas y la caja del equipo, el ticker público en directo y el análisis de tus partidos. En Básico están limitados un equipo, 20 jugadoras/es, 10 partidos guardados, los últimos cinco partidos con todo detalle, 3 torneos y cuatro análisis con IA y cuatro informes compartidos al mes."
         },
         {
-          "question": "Mensual o anual, ¿cuál es la diferencia?",
-          "answer": "Solo el precio y el ritmo. Anual aquí significa una temporada, del 1 de julio al 30 de junio, y cuesta alrededor de un tercio menos: 79 € en lugar de 118,80 € en Entrenador y 159 € en lugar de 238,80 € en Pro. La opción mensual es más cara, pero se puede cancelar en cualquier momento. Quien entra en enero paga solo la temporada parcial hasta el 30 de junio: 39 € en lugar de 79 € en Entrenador y 79 € en lugar de 159 € en Pro."
+          "question": "Temporada o mensual: ¿cuál es la diferencia?",
+          "answer": "Una temporada va del 1 de julio al 30 de junio, se renueva cada 1 de julio y se puede cancelar para el final de la temporada. Es más barata – Entrenador 79 € en lugar de 118,80 €, Pro 149 € en lugar de 178,80 € – y solo en la temporada existen el precio de paquete junto a un nivel de vídeo y el precio de fundador. La mensual se renueva cada mes y se puede cancelar mensualmente, pero sin descuentos. App y vídeo siguen siempre el mismo ritmo."
+        },
+        {
+          "question": "Empiezo a mitad de temporada, ¿qué pago?",
+          "answer": "Hoy solo el resto de la temporada en curso, por meses iniciados y redondeado a euros enteros hacia abajo: en octubre son nueve meses (Entrenador 59 €), en enero la mitad (Entrenador 39 €). A partir del 1 de julio pagas el precio completo de temporada. En los últimos tres meses de la temporada, de abril a junio, solo existe la suscripción mensual. El importe exacto te lo muestra el resumen de arriba, y el pago lo hace vinculante."
+        },
+        {
+          "question": "¿Para qué necesito un nivel de vídeo y qué son los créditos de cálculo?",
+          "answer": "Para un equipo que graba sus partidos. Vídeo Básico trae 100 GB de almacenamiento, etiquetado, listas, envíos y la videoteca, sincronizados con el acta. Vídeo Equipo añade 300 GB, panorámica de dos cámaras, versión con seguimiento, marcador sobreimpreso y retransmisión en directo; Vídeo Análisis, 500 GB, recorridos, mapas de calor y detección del balón. El análisis a partir de la imagen se calcula en una tarjeta gráfica; un crédito es una hora de ella. Vídeo Equipo incluye 40 créditos por temporada y Vídeo Análisis 180 (3 y 15 al mes con suscripción mensual); puedes recargar 10 por 19 € o 30 por 49 €. Las pruebas no cuestan nada y las ejecuciones fallidas se abonan."
+        },
+        {
+          "question": "¿Cómo contrato un plan?",
+          "answer": "Lo configuras aquí en la página y pulsas «Continuar al pago». El botón te lleva a la app: allí inicias sesión o te registras, tu selección te espera mientras tanto y después pagas a través de Stripe. Se puede contratar a partir del {launchDate}; hasta entonces, un registro gratuito te asegura el derecho adquirido."
         },
         {
           "question": "¿Pierdo datos si me quedo en Básico?",
-          "answer": "No. No se borra nada. En Básico ves los cinco partidos registrados más recientes con toda la profundidad; los más antiguos siguen en la lista y se muestran difuminados, con un aviso de qué los vuelve a desbloquear. Y el límite de diez partidos se comprueba al crear un partido, nunca durante uno en curso: un registro iniciado siempre llega al final y siempre se guarda."
+          "answer": "No. No se borra nada. En Básico ves con todo detalle los cinco últimos partidos registrados; los anteriores siguen en la lista y se muestran difuminados, con una indicación de qué los vuelve a desbloquear. Y el límite de diez partidos se comprueba al crear un partido, nunca durante uno en curso: un registro ya iniciado siempre llega al final y siempre se guarda."
         },
         {
           "question": "¿Cuánto cuesta Statix para un club?",
-          "answer": "Un entrenador individual se queda en los niveles de arriba. Quien quiera integrar al club como conjunto —todos los equipos bajo un mismo techo, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club, y esa se configura para el club. Como referencia son unos 390 € por temporada para cinco equipos, escalonado según el tamaño. No hay tarifa de lista de forma deliberada: lo que necesita un club con doce equipos de base es distinto de lo que necesita uno con dos."
+          "answer": "Un entrenador individual se queda con los niveles de arriba. Quien quiera integrar el club entero —todos los equipos bajo un mismo techo, análisis para todo el club, trayectorias de jugadores a través de las categorías— obtiene el área de club, que se configura para el club. Como referencia, ronda los 390 € por temporada para cinco equipos, escalonado según el tamaño; el vídeo para todo el club empieza en 1.490 € por temporada con 1 TB de almacenamiento y 300 créditos compartidos. Ambos bajo petición: no hay tarifa de lista, y es deliberado."
         },
         {
           "question": "¿Cómo puedo cancelar?",
-          "answer": "En cualquier momento desde tu cuenta, con un clic: un botón de cancelación forma parte del producto desde el primer día de pago. Una suscripción mensual termina con el mes siguiente y una de temporada el 30 de junio. Después tu cuenta continúa en Básico y tus datos se quedan donde están."
+          "answer": "En cualquier momento desde tu cuenta, con el botón de cancelación según el § 312k BGB, sin formulario ni correo. Una suscripción de temporada termina el 30 de junio; una mensual, al final del mes pagado. Después tu cuenta sigue en Básico y tus datos se quedan donde están."
+        },
+        {
+          "question": "¿Por qué no aparece IVA en la factura?",
+          "answer": "Porque soy pequeño empresario según el § 19 UStG. Eso significa que no puedo repercutir IVA, y los precios de aquí son precios finales: pagas exactamente el importe indicado. Cada factura lleva una nota al respecto."
         }
       ]
     },
     "cta": {
       "kicker": "Ahora o a partir de enero",
       "title": "Hasta el {founderDeadline} cuenta cada registro",
-      "description": "Registrarse no cuesta nada y lleva un minuto: no hay ningún campo para datos de pago. Quien crea hoy una cuenta conserva el plan Entrenador gratis hasta el {founderFreeUntil}. ¿Prefieres mirar primero? La demo en directo funciona con datos reales de partido y sin cuenta.",
+      "description": "Registrarse no cuesta nada y lleva un minuto: no hay ningún campo para datos de pago. Quien crea hoy una cuenta conserva el plan Entrenador gratis hasta el {founderFreeUntil} y después el precio de fundador. ¿Prefieres mirar primero? La demo en directo funciona con datos reales de partido y sin cuenta.",
       "linkLabel": "Suscríbete al boletín y entérate antes de los cambios"
     }
   },
@@ -2490,7 +2655,7 @@
         },
         {
           "question": "¿Statix es gratuito?",
-          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en {appUrl} y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027 hay tres niveles: Básico se queda en 0 €, Entrenador cuesta 79 € por temporada y Pro 159 €. Quien se registre antes conserva el plan Entrenador gratis durante toda la temporada 26/27, es decir, hasta el 30 de junio de 2027."
+          "answer": "Hasta el 31 de diciembre de 2026, nada: regístrate en {appUrl} y registra tu primer partido sin compromiso y sin tarjeta de crédito. A partir del 1 de enero de 2027, Básico se queda en 0 €, Entrenador cuesta 79 € por temporada y Pro 149 €; si grabáis, añadís un nivel de vídeo para un equipo desde 149 € por temporada. Quien se registre antes conserva el plan Entrenador gratis durante toda la temporada 26/27, es decir, hasta el 30 de junio de 2027, y después un precio de fundador."
         },
         {
           "question": "¿Cómo puedo probar Statix?",
@@ -6081,7 +6246,7 @@
       "faq": [
         {
           "question": "¿Están todas las funciones incluidas en el acceso gratuito?",
-          "answer": "Hasta el 31 de diciembre de 2026 sí: Statix todavía no ha pasado a suscripción, así que cada función terminada está abierta a cualquier cuenta. A partir del 1 de enero de 2027 habrá tres niveles: el registro, el calendario y los cromos de plantilla siguen completos en todos ellos, y las funciones que consumen cálculo pasan a los de pago. El reparto está en la página de precios."
+          "answer": "Hasta el 31 de diciembre de 2026, sí: Statix aún no ha pasado a un modelo de suscripción, así que cada función terminada está abierta a todas las cuentas. A partir del 1 de enero de 2027 hay tres niveles de app y, para un equipo que graba, tres niveles de vídeo: el registro, el calendario y las cartas de plantilla siguen completos en cada nivel de app, y las funciones que más cálculo requieren pasan a los de pago. El reparto está en la página de precios."
         },
         {
           "question": "¿Qué significa «En construcción» en una función?",

@@ -13,7 +13,8 @@ export type RegisterClickLocation =
   | 'navbar'
   | 'pros'
   | 'final_cta'
-  | 'footer';
+  | 'footer'
+  | 'pricing';
 
 /**
  * The live demo is the secondary conversion goal, but it lives on an external
@@ -31,6 +32,19 @@ export function trackDemoClick(location: DemoClickLocation) {
  */
 export function trackRegisterClick(location: RegisterClickLocation) {
   track('register_click', { location });
+}
+
+/**
+ * The buy button on `/preise`. It hands over to the app's checkout on another
+ * domain, so — like registration — the click is invisible unless reported.
+ * The selection travels along to show which combinations people actually pick.
+ */
+export function trackCheckoutClick(selection: {
+  app: string;
+  video: string;
+  cadence: string;
+}) {
+  track('checkout_click', selection);
 }
 
 /**
