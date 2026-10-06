@@ -62,7 +62,7 @@ function snapshot(state) {
     fingerprint: `f-${state}`,
     serverNow: iso(now),
     game: {
-      slug: state, teamName: 'VfL Brambauer', teamLogoUrl: null, opponentName: 'TuS Westfalia', opponentLogoUrl: null,
+      slug: state, teamName: 'HSG Muster', teamLogoUrl: null, opponentName: 'SV Beispiel', opponentLogoUrl: null,
       location: 'home', status: { scheduled: 'scheduled', live: 'live', ended: 'finished' }[state], type: 'league',
       scheduledAt: iso(scheduled ? now + (1 * 3600 + 12 * 60 + 41) * 1000 : now - 30 * 60_000),
       halves: 2, halfSeconds: 1800,
@@ -70,7 +70,7 @@ function snapshot(state) {
       opponentScore: played ? (state === 'ended' ? 23 : goals('them')) : 0,
       clock: { clockSeconds: played ? (state === 'ended' ? 3600 : CLOCK0 + 60) : 0, isRunning: state === 'live', period: state === 'ended' ? 2 : 1, clockUpdatedAt: iso(now) },
       ourShirtColor: 'orange', opponentShirtColor: 'blue',
-      venue: { name: 'Sporthalle Brambauer', address: 'Wittekindstraße 12, 44536 Lünen' },
+      venue: { name: 'Sporthalle Nord', address: 'Hallenweg 1, 12345 Musterstadt' },
     },
     roster,
     events: played ? EVENTS : [],

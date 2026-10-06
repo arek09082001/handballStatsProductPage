@@ -5010,8 +5010,8 @@
             "label": "Parowanie: zeskanuj kod QR i gotowe"
           },
           {
-            "alt": "Ustawianie panoramy w Statix: dwie połowy hali zszyte w jeden obraz, z linią szwu i komunikatem, że szew pasuje",
-            "label": "Szew w panoramie – tutaj w hali testowej z etapu rozwoju"
+            "alt": "Ustawianie panoramy w Statix: dwie połowy hali zszyte w jeden obraz całego boiska, z komunikatem, że szew pasuje",
+            "label": "Dwa telefony, jeden obraz: szew pasuje (hala narysowana)"
           },
           {
             "alt": "Transmisja Statix na telefonie widza: obraz z grafiką wyniku i kartą bramki, pod nim przebieg meczu",

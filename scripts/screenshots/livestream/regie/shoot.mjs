@@ -30,4 +30,14 @@ if (!which || which === 'setup') await shot('setup', 'regie-setup', async (p) =>
   await p.waitForTimeout(2500);
 });
 if (!which || which === 'live') await shot('live', 'regie-live');
+if (!which || which === 'panorama') await shot('panorama', 'regie-panorama', async (p) => {
+  // The hall is rendered in the page before it mounts — give it time.
+  await p.getByRole('button', { name: 'Naht anpassen' }).first().click({ timeout: 120_000 });
+  // Opening the dialog runs the app's own seam search once; wait it out.
+  await p.waitForTimeout(3000);
+  await p.waitForFunction(() => !document.body.innerText.includes('Die Naht wird gesucht'), null, { timeout: 240_000 });
+
+  await p.waitForTimeout(2500);
+  console.log('fit', await p.evaluate(() => window.__fit), await p.evaluate(() => document.body.innerText.match(/(Die Naht[^\n]*|Naht gefunden[^\n]*|überlappen[^\n]*)/g)));
+});
 await browser.close(); server.close();

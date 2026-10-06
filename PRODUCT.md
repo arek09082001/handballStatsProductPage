@@ -130,8 +130,10 @@ The scope itself:
   phone, 10–20 s more for the stitched panorama. The rules live in the app
   repo (`docs/live-uebertragung.md`, `lib/live/`, viewer in liveStatixMatches).
   Its viewer screenshots are real captures of the viewer page with a DRAWN
-  court as the picture (no real match footage in the pipeline) — the captions
-  say so; see `scripts/screenshots/livestream/`.
+  court as the picture (no real match footage in the pipeline), and the
+  panorama shot is the real dialog stitching the app's synthetic test hall,
+  rendered in colour — the captions say so; see `scripts/screenshots/livestream/`.
+  Teams and hall in those shots are placeholders, never a real club.
 - **Live‑Ticker:** publish a game as a public live ticker; share by link or QR;
   score & timeline in real time; coach controls publish/stop.
 - **Zusammenarbeit:** share games with other coaches (read‑only, by link/email,

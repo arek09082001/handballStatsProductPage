@@ -325,6 +325,20 @@ CROP=1 W=1280 H=1000 CLICKS='Kameras koppeln' node $D/regie/shoot.mjs '' setup  
 CROP=1 W=1280 H=1100 node $D/regie/shoot.mjs '' live                              # → livestream-regie-live.png
 ```
 
-`livestream-panorama-naht.jpg` ist ein Ausschnitt aus
-`docs/bilder/live-panorama-einrichten.jpg` im App-Repo (echte Aufnahme des
-Dialogs „Panorama einrichten“ an der künstlichen Testhalle der Entwicklung).
+`livestream-panorama-naht.jpg` ist der echte Dialog „Panorama einrichten“
+(`#panorama`): beide Handys gekoppelt, Kalibrierbilder aufgenommen. Die
+Bilder sind die künstliche Testhalle der App (`lib/testing/synthetic-hall.ts`:
+dieselbe Halle, dasselbe Stativ, dasselbe Fischauge, das die Naht annimmt) —
+in FARBE, `regie/colour-hall.ts` malt Feld, Linien, Banden, Tribüne und
+Lampen. Die Naht findet `fitSeam` wie in den Tests der App
+(`stitch-autofit.test.ts`): gerechnet auf 320 × 180, die Linse danach auf
+1280 × 720 hochgerechnet (nur `left_uniforms`/`right_uniforms` sind in
+Pixeln). Der Dialog sucht beim Öffnen selbst noch einmal und meldet „Passt“.
+
+```bash
+W=1280 H=1000 node $D/regie/shoot.mjs '' panorama      # ~1 min, dann zuschneiden:
+python3 -c "from PIL import Image; Image.open('.screenshots-livestream/regie/out/regie-panorama.png').convert('RGB').crop((116,920,2424,2770)).save('public/livestream-panorama-naht.jpg', quality=88)"
+```
+
+Mannschaften, Halle und Link sind Platzhalter („HSG Muster“ gegen „SV
+Beispiel“, „Sporthalle Nord“) — auf der Produktseite steht kein echter Verein.

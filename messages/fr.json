@@ -5010,8 +5010,8 @@
             "label": "Coupler : scanner le QR code, c'est tout"
           },
           {
-            "alt": "Réglage du panorama dans Statix : deux moitiés de terrain assemblées en une image, avec la ligne de jointure et le message indiquant que la jointure est bonne",
-            "label": "La jointure du panorama – ici dans la salle de test utilisée pour le développement"
+            "alt": "Réglage du panorama dans Statix : deux moitiés de la salle assemblées en une image de tout le terrain, avec le message indiquant que la jointure est bonne",
+            "label": "Deux téléphones, une image : la jointure est bonne (salle dessinée)"
           },
           {
             "alt": "Le livestream Statix sur le téléphone d'un spectateur : image avec incrustation du score et carte de but, en dessous le fil du match",

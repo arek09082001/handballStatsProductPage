@@ -313,7 +313,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/livestream-auszeit-quoten.png', width: 2880, height: 1620 },
       { src: '/livestream-regie-live.png', width: 2560, height: 2200 },
       { src: '/livestream-kameras-koppeln.png', width: 2560, height: 2000 },
-      { src: '/livestream-panorama-naht.jpg', width: 1024, height: 665 },
+      { src: '/livestream-panorama-naht.jpg', width: 2308, height: 1850 },
       { src: '/mobil-livestream.png', width: 780, height: 1688 },
       { src: '/mobil-livestream-aufzeichnung.png', width: 780, height: 1688 },
     ],
