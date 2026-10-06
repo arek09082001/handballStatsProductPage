@@ -50,9 +50,9 @@ const EVENTS = [
   G(96, 'p13'),
 ];
 function snapshot(slug) {
-  // `ticker` and `sponsorlive` are the sponsor shots: the same match as a ticker
+  // `sponsorticker` and `sponsorstream` are the sponsor shots: the same match as a ticker
   // and as a stream, both with the invented sponsors of `../sponsoren/logos.mjs`.
-  const state = slug === 'ticker' || slug === 'sponsorlive' ? 'live' : slug;
+  const state = slug === 'sponsorticker' || slug === 'sponsorstream' ? 'live' : slug;
   const now = Date.now();
   const scheduled = state === 'scheduled';
   const played = state === 'live' || state === 'ended';
@@ -79,8 +79,8 @@ function snapshot(slug) {
     roster,
     events: played ? EVENTS : [],
     substitutions: [],
-    format: slug === 'ticker' ? 'ticker' : 'stream',
-    stream: slug === 'ticker' ? undefined : stream,
+    format: slug === 'sponsorticker' ? 'ticker' : 'stream',
+    stream: slug === 'sponsorticker' ? undefined : stream,
     clockLog: played ? [{ at: iso(BASE_DATE - 400_000), s: CLOCK0 - 400, run: true }] : undefined,
   };
 }
@@ -93,8 +93,8 @@ function playlist(vod) {
   if (vod) lines.push('#EXT-X-ENDLIST');
   return lines.join('\n') + '\n';
 }
-const STATES = ['scheduled', 'live', 'ended', 'ticker', 'sponsorlive'];
-const WITH_SPONSORS = new Set(['ticker', 'sponsorlive']);
+const STATES = ['scheduled', 'live', 'ended', 'sponsorticker', 'sponsorstream'];
+const WITH_SPONSORS = new Set(['sponsorticker', 'sponsorstream']);
 http.createServer((req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
   const send = (status, body, type) => { res.writeHead(status, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'content-type', 'Cache-Control': 'no-store', 'Content-Type': type }); res.end(body); };

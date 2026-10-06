@@ -6632,8 +6632,8 @@
             "label": "Miejsca w relacji: baner, bramka, czas (time-out)"
           },
           {
-            "alt": "Ustawienia sponsora transmisji w livestreamie z podglądem meczu u siebie i na wyjeździe",
-            "label": "Sponsor transmisji z podglądem, zanim ktokolwiek go zobaczy"
+            "alt": "Ustawienia sponsora transmisji w livestreamie: osobne miejsce, oddzielone od relacji na żywo, po stronie przeciwnika",
+            "label": "Sponsor transmisji: osobne miejsce w obrazie"
           },
           {
             "alt": "Relacja na żywo Statix na telefonie z wynikiem, przebiegiem meczu i paskiem sponsorów „prezentuje” u dołu ekranu",

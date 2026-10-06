@@ -6632,8 +6632,8 @@
             "label": "The spots in the ticker: banner, goal, time-out"
           },
           {
-            "alt": "The settings for the presenting sponsor in the livestream with a preview for home and away matches",
-            "label": "The presenting sponsor with a preview, before anyone sees it"
+            "alt": "The settings for the presenting sponsor in the livestream: a slot of its own, separate from the ticker, on the opponent’s side",
+            "label": "The presenting sponsor: a slot of its own in the picture"
           },
           {
             "alt": "The Statix live ticker on a phone with score, match flow and the “presented by” sponsor bar at the bottom edge",

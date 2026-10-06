@@ -35,9 +35,9 @@ const jobs = {
   'across-goal': () => liveAt('across', 8.4, 'across-goal'),
   'phone-scheduled': async () => { const { page, context } = await open('phone', 'scheduled'); await page.waitForTimeout(3000); await page.screenshot({ path: `${OUT}/phone-scheduled.png` }); await context.close(); },
   'desktop-scheduled': async () => { const { page, context } = await open('desktop', 'scheduled'); await page.waitForTimeout(3000); await page.screenshot({ path: `${OUT}/desktop-scheduled.png` }); await context.close(); },
-  'sponsor-stream': () => liveAt('desktop', 8.4, 'sponsor-stream', 'sponsorlive'),
-  'sponsor-ticker-desktop': async () => { const { page, context } = await open('desktop', 'ticker'); await page.waitForTimeout(4000); await page.screenshot({ path: `${OUT}/sponsor-ticker-desktop.png`, fullPage: true }); await context.close(); },
-  'sponsor-ticker-phone': async () => { const { page, context } = await open('phone', 'ticker'); await page.waitForTimeout(4000); await page.screenshot({ path: `${OUT}/sponsor-ticker-phone.png` }); await context.close(); },
+  'sponsor-stream': () => liveAt('desktop', 8.4, 'sponsor-stream', 'sponsorstream'),
+  'sponsor-ticker-desktop': async () => { const { page, context } = await open('desktop', 'sponsorticker'); await page.waitForTimeout(4000); await page.screenshot({ path: `${OUT}/sponsor-ticker-desktop.png`, fullPage: true }); await context.close(); },
+  'sponsor-ticker-phone': async () => { const { page, context } = await open('phone', 'sponsorticker'); await page.waitForTimeout(4000); await page.screenshot({ path: `${OUT}/sponsor-ticker-phone.png` }); await context.close(); },
   'phone-ended': async () => { const { page, context } = await open('phone', 'ended'); await page.waitForTimeout(3000); await page.screenshot({ path: `${OUT}/phone-ended.png` }); await context.close(); },
 };
 for (const [k, fn] of Object.entries(jobs)) { if (only && !k.includes(only)) continue; try { await fn(); console.log('ok', k); } catch (e) { console.log('FAIL', k, e.message); } }

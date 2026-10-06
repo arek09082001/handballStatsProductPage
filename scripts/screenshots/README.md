@@ -371,10 +371,12 @@ als SVG gezeichnet). Drei Quellen:
 - Einstellungen der App: `sponsoren/harness.tsx` mountet die echte
   `SponsorsSection` (`node …/regie/build.mjs scripts/screenshots/sponsoren/harness.tsx sponsoren`),
   aufgenommen bei 928 px Breite und in `sponsoren-ticker-einstellungen.png`
-  (oben) und `sponsoren-stream-einstellungen.png` (Livestream mit Vorschau)
-  geteilt.
+  (oben, y 0–1275) und `sponsoren-stream-einstellungen.png` (Livestream-Platz,
+  y 1300–1850) geteilt. Die Vorschau darunter bleibt bewusst draussen: sie
+  zeichnet ein schlichtes Platzhalter-Feld, die Platzierung zeigt
+  `sponsoren-livestream.png` am echten Bild.
 - Livestream und Ticker: der Stand-in `livestream/viewer-api.mjs` liefert
-  für `sponsorlive` und `ticker` dieselbe Partie mit diesen Sponsoren;
+  für `sponsorstream` und `sponsorticker` dieselbe Partie mit diesen Sponsoren;
   `node scripts/screenshots/livestream/viewer-shots.mjs '' sponsor` →
   `sponsor-stream` (`sponsoren-livestream.png`) und `sponsor-ticker-phone`
   (`mobil-sponsoren-ticker.png`).

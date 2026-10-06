@@ -722,7 +722,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     shots: [
       { src: '/sponsoren-livestream.png', width: 2880, height: 1620 },
       { src: '/sponsoren-ticker-einstellungen.png', width: 1856, height: 1275 },
-      { src: '/sponsoren-stream-einstellungen.png', width: 1856, height: 1595 },
+      { src: '/sponsoren-stream-einstellungen.png', width: 1856, height: 550 },
       { src: '/mobil-sponsoren-ticker.png', width: 780, height: 1688 },
     ],
     related: ['live-ticker', 'handball-livestream', 'vereinsbereich'],

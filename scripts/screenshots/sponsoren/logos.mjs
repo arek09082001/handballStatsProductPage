@@ -27,9 +27,9 @@ export const LOGOS = {
   ),
   sport: svg(
     `<rect width="240" height="80" rx="10" fill="#ea580c"/>` +
-      `<circle cx="40" cy="40" r="22" fill="#fff"/><path d="M18 40 h44 M40 18 q-12 22 0 44 M40 18 q12 22 0 44" stroke="#ea580c" stroke-width="3" fill="none"/>` +
-      `<text x="74" y="50" ${font} font-size="26" font-weight="800" fill="#fff">SPORT MUSTER</text>`,
-    300,
+      `<circle cx="40" cy="40" r="24" fill="#fff"/><path d="M16 40 h48 M40 16 q-13 24 0 48 M40 16 q13 24 0 48" stroke="#ea580c" stroke-width="3" fill="none"/>` +
+      `<text x="78" y="38" ${font} font-size="20" font-weight="800" fill="#fff">SPORT</text>` +
+      `<text x="78" y="61" ${font} font-size="18" fill="#ffe1cc">Muster</text>`,
   ),
   stadtwerke: svg(
     `<rect width="260" height="80" rx="10" fill="#0f766e"/>` +

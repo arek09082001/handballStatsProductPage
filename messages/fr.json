@@ -6632,8 +6632,8 @@
             "label": "Les emplacements du live-score : bannière, but, temps mort"
           },
           {
-            "alt": "Les paramètres du sponsor présentateur dans le livestream, avec aperçu pour le match à domicile et à l'extérieur",
-            "label": "Le sponsor présentateur avec aperçu, avant que quiconque ne le voie"
+            "alt": "Les réglages du sponsor présentateur dans le livestream : un emplacement à part, séparé du live-score, du côté de l’adversaire",
+            "label": "Le sponsor présentateur : un emplacement à lui dans l’image"
           },
           {
             "alt": "Le live-score Statix sur téléphone avec le score, le déroulé du match et le bandeau des sponsors « présenté par » en bas",
