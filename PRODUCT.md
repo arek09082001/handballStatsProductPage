@@ -67,7 +67,7 @@ screenshot and no navigation entry behind it.
 
 Every entry carries a `status`, and the site shows it:
 
-- **`live`** — finished, open to every account. Seventeen of the twenty.
+- **`live`** — finished, open to every account. Twenty of the twenty-three.
 - **`beta`** — being built, restricted to named accounts. Listed anyway, marked
   "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
   something a new account gets today. Currently: **Video‑Tagging** and
@@ -89,6 +89,19 @@ The scope itself:
   in the app repo); change them there first.
 - **Auswerten:** live player & team stats, shot maps/heatmaps, dashboards
   (attack success, save quota, goal difference), season trends.
+- **Expected Goals & Expected Saves** (`/funktionen/expected-goals`, `isNew`):
+  a fixed probability per shot zone (wing 0.62/0.63, 9 m centre 0.43, 7 m 0.75,
+  fast break from the back court 0.81–0.87; app `lib/games/expected-goals.ts`),
+  summed into xG per player, team and season and compared with the goals;
+  xS is the same table conditioned on shots on target, for the keepers. A shot
+  without a zone has no value and is counted apart, never as zero. Never say
+  Statix does not compute xG — it did not when `wurfbilder` was written.
+- **Aufstellungs-Analyse** (`/funktionen/aufstellungs-analyse`, `isNew`): the
+  lineup at every second from the logged substitutions; per lineup of six,
+  per back-court trio and per pair: goals, shots, minutes together, goals
+  conceded, plus/minus; per game and per season on the team page, and in the
+  AI analysis. A game without a substitution with game minute does not count
+  (app `lib/games/lineup-combos.ts`).
 - **KI‑Analyse:** four scopes — single game, whole team, single player (scouting
   profile), whole tournament. Player names are pseudonymised before any data
   reaches an AI; reports are deletable and generated in the background.
@@ -136,6 +149,13 @@ The scope itself:
   Teams and hall in those shots are placeholders, never a real club.
 - **Live‑Ticker:** publish a game as a public live ticker; share by link or QR;
   score & timeline in real time; coach controls publish/stop.
+- **Sponsoren** (`/funktionen/sponsoren`, `isNew`): banner rotation, "Tor
+  präsentiert von …", a time-out sponsor and the presenting sponsor in the
+  livestream picture (opponent side, 5–10 % of the height, label "präsentiert
+  von"/"Sponsor"/"Anzeige"); club sponsors fill every slot a squad left
+  empty. The club keeps 100 % of the money — Statix brokers nothing and takes
+  no cut. Sponsors show only on public games. Its shots carry invented
+  "Muster"/"Beispiel" sponsors (`scripts/screenshots/sponsoren/logos.mjs`).
 - **Zusammenarbeit:** share games with other coaches (read‑only, by link/email,
   lands in their Statix inbox), invite a coaching staff, player surveys
   (no‑account answers), PDF export & revocable share links.

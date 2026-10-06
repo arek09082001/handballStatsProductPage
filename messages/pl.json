@@ -5199,7 +5199,7 @@
         "limits": [
           "Bez zapisanej pozycji rzutu nie ma mapy rzutów. Liczby i tak się zgadzają — tylko mapa zostaje pusta.",
           "Pozycja to strefa, a nie współrzędna co do centymetra. Na pytanie „skąd rzucamy” to wystarczy; na balistykę nie.",
-          "Statix nie liczy expected goals. Mapa pokazuje, co się wydarzyło, a nie co miało się wydarzyć."
+          "Expected Goals Statix liczy na osobnej stronie, z tej samej pozycji rzutu. Mapa tutaj pokazuje, co się wydarzyło; czy to było więcej, czy mniej, niż można było oczekiwać, mówi xG."
         ],
         "faq": [
           {
@@ -5361,6 +5361,190 @@
           {
             "question": "Czy inni trenerzy widzą moje notatki?",
             "answer": "Tylko twój własny sztab. Notatki nie są częścią udostępnienia meczu."
+          }
+        ]
+      },
+      {
+        "slug": "expected-goals",
+        "name": "Expected Goals i Expected Saves",
+        "short": "Expected Goals (xG)",
+        "headline": "Nie każda skuteczność jest tyle samo warta",
+        "summary": "Expected Goals i Expected Saves: ile były warte rzuty zawodniczki i ile piłek bramkarka obroniła ponad to, czego można było się spodziewać.",
+        "tagline": "Skrzydłowa z 60% i rozgrywająca z drugiej linii z 45% – która była lepsza? Expected Goals uwzględniają pozycję rzutu. A Expected Saves mówią, czy bramkarka była dobra, czy obrona dopuszczała tylko trudne rzuty.",
+        "intro": [
+          "Skuteczność rzutów to najuczciwsza liczba w piłce ręcznej – i najbardziej niesprawiedliwa. Kto rzuca tylko ze skrzydła i z kontry, ma wysoką skuteczność, choć nic to nie mówi o samym wykończeniu. Kto z dziewięciu metrów bierze na siebie trudne rzuty, ma niską. Expected Goals (xG), czyli oczekiwane bramki, to wyrównują: każda pozycja rzutu ma stałe prawdopodobieństwo trafienia – lewe skrzydło 0,62, środek z dziewięciu metrów 0,43, rzut karny (7 m) 0,75, rzut z drugiej linii w kontrze wyraźnie więcej. Zsumowane dają liczbę bramek, na jaką zasługiwały sytuacje.",
+          "Właściwą informacją jest porównanie. Więcej bramek niż xG oznacza: sytuacje zostały wykorzystane ponad przeciętną. Mniej oznacza: sytuacje były, zabrakło skuteczności. W tabeli meczu widać to przy każdej zawodniczce jako xG i xG +/−, z płomieniem przy tych, które są w gazie.",
+          "Expected Saves (xS), czyli oczekiwane obrony, to to samo pytanie z drugiej strony: ile piłek obroniłaby przeciętna bramkarka przy dokładnie tych rzutach? Liczą się tylko rzuty w światło bramki, a wartości pochodzą z tej samej tabeli co Expected Goals, nie z drugiej. Bramkarka za obroną, która dopuszcza tylko rzuty z dziesięciu metrów, ma wysoką skuteczność obron, a mimo to xS +/− równe zeru."
+        ],
+        "facts": [
+          {
+            "term": "Podstawa",
+            "value": "Pozycja rzutu, którą i tak zapisujesz na żywo"
+          },
+          {
+            "term": "Dla zawodniczek z pola",
+            "value": "xG i xG +/− w każdym meczu i w całym sezonie"
+          },
+          {
+            "term": "Dla bramkarek",
+            "value": "xS i xS +/− – tylko rzuty w światło bramki"
+          },
+          {
+            "term": "Kontra i rzut karny (7 m)",
+            "value": "Osobne wartości, bo rzut na nieustawioną obronę jest wart więcej"
+          },
+          {
+            "term": "Kiedy",
+            "value": "Na żywo w trakcie meczu, po nim i wstecz dla starszych meczów"
+          },
+          {
+            "term": "Także w",
+            "value": "Profilu zawodniczki i raporcie PDF"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Zapisz pozycję rzutu",
+            "body": "Przy każdym rzucie stukasz strefę, z której padł rzut – tak jak dotąd na potrzeby mapy rzutów. Niczego więcej xG nie potrzebuje."
+          },
+          {
+            "title": "Odczytaj bilans",
+            "body": "Bilans xG pokazuje bramki wobec oczekiwanych bramek, bilans obron – obrony wobec oczekiwanych obron. Zdanie pod spodem mówi, co oznacza różnica."
+          },
+          {
+            "title": "Porównaj zawodniczki",
+            "body": "W tabeli sortujesz według xG +/−. Która jest daleko nad zerem, robi więcej ze swoich rzutów; która jest poniżej, dostaje dobre sytuacje i je marnuje."
+          },
+          {
+            "title": "Śledź w sezonie",
+            "body": "W profilu zawodniczki sumuje się to ze wszystkich meczów. Jeden mecz to migawka; dziesięć meczów to już konkretny wniosek."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Bilans xG i bilans obron w statystykach meczu w Statix: 29 bramek przy 23,4 Expected Goals, 19 obron przy 14,9 Expected Saves",
+            "label": "Bramki wobec xG, obrony wobec xS – z jednym zdaniem, co to znaczy"
+          },
+          {
+            "alt": "Tabela zawodniczek z pola w Statix z czasem gry, bramkami, rzutami, skutecznością, xG i xG +/− dla każdej zawodniczki",
+            "label": "Dla każdej zawodniczki: xG i xG +/−, te w gazie z płomieniem"
+          },
+          {
+            "alt": "Tabela bramkarek w Statix z obronami, straconymi bramkami, skutecznością obron, xS i xS +/−",
+            "label": "Bramkarki: Expected Saves zamiast samej skuteczności"
+          }
+        ],
+        "limits": [
+          "Wartości to stała tabela dla każdej strefy rzutu, a nie model, który uczy się na waszych meczach. Nie zna kąta rzutu, presji obrony ani rodzaju rzutu – ocenia, skąd rzucano, a nie jak.",
+          "Rzut bez zapisanej pozycji nie ma wartości. Jest liczony osobno i wypada z porównania, zamiast dostać zero i sprawić, że wykończenie wygląda gorzej, niż było.",
+          "Pojedynczy mecz to mała próba. xG +/− na poziomie +1,5 po sześciu rzutach to wskazówka, a nie ocena zawodniczki."
+        ],
+        "faq": [
+          {
+            "question": "Czym są Expected Goals w piłce ręcznej?",
+            "answer": "Expected Goals (xG) mówią, ile bramek były warte rzuty zawodniczki lub drużyny. Każda pozycja rzutu ma prawdopodobieństwo trafienia – skrzydło ok. 0,62, środek z dziewięciu metrów 0,43, rzut karny (7 m) 0,75. Suma ze wszystkich rzutów to wartość oczekiwana; porównanie z prawdziwymi bramkami pokazuje, czy sytuacje zostały dobrze wykorzystane."
+          },
+          {
+            "question": "Czym są Expected Saves?",
+            "answer": "Expected Saves (xS) to liczba obron, jaką przeciętna bramkarka zanotowałaby przy tych samych rzutach w światło bramki. Jeśli bramkarka obroni więcej, jej xS +/− jest dodatnie – niezależnie od tego, jak łatwe czy trudne rzuty dopuściła jej obrona."
+          },
+          {
+            "question": "Czy muszę zapisywać więcej?",
+            "answer": "Nie. xG i xS liczą się z pozycji rzutu, którą i tak stukasz na potrzeby mapy rzutów. Mecze z zapisaną pozycją rzutu dostają te wartości także wstecz."
+          },
+          {
+            "question": "Skąd się biorą wartości dla każdej strefy rzutu?",
+            "answer": "Ze stałej tabeli z opublikowanymi skutecznościami dla każdej strefy, dla ataku pozycyjnego i osobno dla kontry. Jest taka sama dla wszystkich drużyn, żeby liczby dało się porównywać. Więcej o metodzie znajdziesz w poradniku o Expected Goals."
+          }
+        ]
+      },
+      {
+        "slug": "aufstellungs-analyse",
+        "name": "Analiza ustawień",
+        "short": "Ustawienia",
+        "headline": "Która siódemka rzuca bramki?",
+        "summary": "Które ustawienie rzuca bramki, które trio drugiej linii działa i z kim zawodniczka trafia lepiej – z plus-minus, dla każdego meczu i w całym sezonie.",
+        "tagline": "Każda zmiana, którą zapisujesz, to informacja: kto akurat był razem na boisku. Statix wylicza z tego, które ustawienie rzuca bramki, które trio drugiej linii ciągnie grę i z kim zawodniczka trafia lepiej.",
+        "intro": [
+          "To pytanie każdy trener zadaje sobie w każdej kolejce: jaką siódemką zaczynam, kogo wpuszczam, kiedy nie idzie? Odpowiedź tkwi w danych, które już masz. Ponieważ zmiany zapisujesz na żywo, Statix w każdej sekundzie wie, kto był na boisku – i może przypisać każdej bramce i każdej straconej bramce ustawienie, które wtedy grało.",
+          "Obok siebie stoją trzy perspektywy. Ustawienia: sześć zawodniczek z pola, posortowanych według zdobytych bramek, z rzutami, skutecznością, minutami razem, straconymi bramkami i plus-minus. Druga linia: tylko tria z lewej rozgrywającej, środkowej i prawej rozgrywającej, bo tam powstaje najwięcej kombinacji. Współpraca: dla wybranej zawodniczki – jak często trafia, gdy na boisku jest konkretna koleżanka, i ile bramek ta jej wypracowała.",
+          "Masz to dla pojedynczego meczu w statystykach meczu i dla całego sezonu na stronie drużyny. Analiza AI czyta te same liczby i potrafi powiedzieć, która formacja ciągnęła grę w ostatnich meczach."
+        ],
+        "facts": [
+          {
+            "term": "Podstawa",
+            "value": "Zmiany, które zapisujesz na żywo – z minutą meczu"
+          },
+          {
+            "term": "Ustawienia",
+            "value": "Bramki, rzuty, skuteczność, minuty, stracone bramki, plus-minus"
+          },
+          {
+            "term": "Rozegranie",
+            "value": "Tria z LR, ŚR i PR"
+          },
+          {
+            "term": "Współpraca",
+            "value": "Bramki przy każdej koleżance na boisku, do tego asysty"
+          },
+          {
+            "term": "Zakres",
+            "value": "Dla każdego meczu i w całym sezonie"
+          },
+          {
+            "term": "Pozycja",
+            "value": "Zaplanowane miejsce w ataku, w przeciwnym razie pozycja podstawowa"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Zapisuj zmiany",
+            "body": "Jak w każdym meczu: zawodniczka schodzi, zawodniczka wchodzi – zamieniasz dwie karty. Dzięki temu Statix zna ustawienie w każdej sekundzie."
+          },
+          {
+            "title": "Porównaj ustawienia",
+            "body": "Po meczu karta „Składy i współpraca” pokazuje, która siódemka jak długo grała razem i co z tego wyszło – z przodu bramki, z tyłu stracone bramki, w sumie plus-minus."
+          },
+          {
+            "title": "Odczytaj drugą linię i pary",
+            "body": "Zakładka Rozegranie pokazuje tylko tria, Współpraca – pary: wybierz zawodniczkę, a zobaczysz, z kim trafia i kto wystawia jej piłki."
+          },
+          {
+            "title": "Decyduj na podstawie sezonu",
+            "body": "Na stronie drużyny sumuje się to ze wszystkich meczów. Jeden mecz to przypadek; dziesięć meczów pokazuje, które trio naprawdę ciągnie grę."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Analiza ustawień w Statix: sześć zawodniczek z pola każdego ustawienia z bramkami, rzutami, skutecznością, minutami razem, straconymi bramkami i plus-minus",
+            "label": "Ustawienia: która siódemka jak długo grała i co z tego wyszło"
+          },
+          {
+            "alt": "Zakładka Rozegranie w Statix z triami z lewej rozgrywającej, środkowej i prawej rozgrywającej oraz ich bramkami",
+            "label": "Rozegranie: które trio ciągnie grę"
+          },
+          {
+            "alt": "Zakładka Współpraca w Statix: bramki i rzuty zawodniczki przy każdej koleżance na boisku, z minutami, skutecznością i asystami",
+            "label": "Współpraca: z kim trafia i kto jej wystawia"
+          }
+        ],
+        "limits": [
+          "Bez zmian z minutą meczu nie ma ustawień. Mecz, w którym nigdy nie zmieniano albo zmieniano bez zegara, się nie liczy – ustawienie, którego nikt nie zna, byłoby gorsze niż żadne.",
+          "Razem na boisku nie znaczy, że to przyczyna. Trio z +4 mogło grać przeciw słabszej obronie. Dlatego obok zawsze stoją minuty.",
+          "Ustawienia liczą także rzuty karne (7 m), współpraca – tylko rzuty z gry. Rzut karny nie ma koleżanki, która by go przygotowała."
+        ],
+        "faq": [
+          {
+            "question": "Skąd Statix wie, kto był na boisku?",
+            "answer": "Ze zmian, które zapisujesz w trakcie meczu. Każda zmiana ma minutę meczu, z tego powstaje ustawienie dla każdej sekundy. Nic więcej nie musisz robić."
+          },
+          {
+            "question": "Co oznacza plus-minus przy ustawieniu?",
+            "answer": "Bramki, które drużyna zdobyła, gdy dokładnie te zawodniczki były razem na boisku, minus bramki stracone w tym samym czasie. Ustawienie z +3 zdobyło w swoich minutach o trzy bramki więcej, niż straciło."
+          },
+          {
+            "question": "Która pozycja się liczy, gdy zawodniczka może grać na kilku?",
+            "answer": "Miejsce w ataku zaplanowane na ten mecz. Jeśli go nie ma – miejsce na boisku w trakcie meczu, a w przeciwnym razie pozycja podstawowa z kadry."
           }
         ]
       },
@@ -6379,6 +6563,105 @@
           {
             "question": "Czy mogę udostępnić mecz anonimowo?",
             "answer": "Sam link nie mówi, kto go utworzył. Kto udostępnia przez e-mail, pojawia się u odbiorcy z nazwiskiem — na tym polega skrzynka odbiorcza."
+          }
+        ]
+      },
+      {
+        "slug": "sponsoren",
+        "name": "Sponsorzy w relacji na żywo i w livestreamie",
+        "short": "Sponsorzy",
+        "headline": "Powierzchnia reklamowa, którą klub już ma",
+        "summary": "Pokaż sponsorów w relacji na żywo i w livestreamie: baner, „Bramkę prezentuje …”, logo przy każdym czasie (time-out) i sponsor transmisji w obrazie.",
+        "tagline": "Każdą relację na żywo i każdy livestream otwierają rodzice, kibice i byłe zawodniczki – przy każdym meczu. Statix zamienia to w powierzchnie reklamowe dla waszych sponsorów. Klub zatrzymuje 100% pieniędzy od sponsorów.",
+        "intro": [
+          "Klub ma sponsorów, którzy chcą czegoś więcej niż reklamy na bandzie, której na meczu wyjazdowym nikt nie widzi. Statix daje im miejsca tam, gdzie widzowie i tak patrzą: w publicznej relacji na żywo i w livestreamie. Baner wyświetla się przez cały czas, kilka logotypów zmienia się po kolei. Przy każdej bramce na chwilę pojawia się „Bramkę prezentuje …”, przy każdym czasie (time-out) drużyny – osobny sponsor.",
+          "W livestreamie jest osobne miejsce: sponsor transmisji w obrazie wideo. Jego logo stoi zawsze po stronie przeciwnika, żeby nie zasłaniało kart własnej drużyny, i jest raczej płaskie niż szerokie, żeby nigdy nie wchodziło na tablicę wyniku. Ustawiasz, czy widać je przez cały czas, czy na chwilę co pięć minut, i czy podpis brzmi „prezentuje”, „Sponsor” czy „Reklama”. Na początku, w przerwie i na końcu transmisja dodatkowo pokazuje je w dużym formacie.",
+          "Sponsorów możesz dodać dla jednej drużyny albo dla całego klubu. To, co wpisze klub, wypełnia w każdej drużynie każde miejsce, którego ona sama nie zajęła – najważniejszy sponsor klubu po jednym wgraniu logo jest w relacjach wszystkich drużyn. Statix nie pośredniczy w pozyskiwaniu sponsorów i niczego nie zatrzymuje: umowa i faktura pozostają między klubem a sponsorem."
+        ],
+        "facts": [
+          {
+            "term": "Baner",
+            "value": "Na stałe w relacji, kilka logotypów na zmianę"
+          },
+          {
+            "term": "Bramka",
+            "value": "„Bramkę prezentuje …” przy każdej bramce"
+          },
+          {
+            "term": "Czas (time-out)",
+            "value": "Osobny sponsor przy każdym czasie drużyny"
+          },
+          {
+            "term": "Livestream",
+            "value": "Sponsor transmisji w obrazie, po stronie przeciwnika"
+          },
+          {
+            "term": "Dla klubu",
+            "value": "Dodany raz, we wszystkich drużynach"
+          },
+          {
+            "term": "Przychody",
+            "value": "100% dla klubu – Statix na tym nie zarabia"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Dodaj logotypy",
+            "body": "W ustawieniach, w sekcji Sponsorzy, wgrywasz logo, podajesz nazwę i opcjonalnie link, a potem wybierasz miejsce: baner, bramka, czas (time-out) albo livestream."
+          },
+          {
+            "title": "Umieść w transmisji",
+            "body": "Dla sponsora transmisji ustawiasz rozmiar, rytm wyświetlania i podpis. Podgląd pokazuje mecz u siebie i na wyjeździe, na komputerze i na telefonie, zanim zobaczy to jakikolwiek widz."
+          },
+          {
+            "title": "Opublikuj mecz",
+            "body": "Gdy mecz jest publiczny jako relacja na żywo albo livestream, sponsorzy wyświetlają się sami – w trakcie meczu nie musisz nic robić."
+          },
+          {
+            "title": "Pokaż sponsorom",
+            "body": "Link do relacji i strona drużyny ze wszystkimi publicznymi meczami to coś, co możesz wysłać sponsorowi jako dowód."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Livestream w Statix ze sponsorem transmisji w prawym górnym rogu, sponsorem bramki pod kartą bramki i przewijanym paskiem logotypów sponsorów pod obrazem",
+            "label": "W transmisji: sponsor transmisji, sponsor bramki i pasek logotypów (boisko narysowane, sponsorzy zmyśleni)"
+          },
+          {
+            "alt": "Ustawienia sponsorów w Statix: trzech sponsorów banerowych, sponsor bramki i sponsor czasu (time-out), a nad nimi informacja, że klub zatrzymuje 100% pieniędzy od sponsorów",
+            "label": "Miejsca w relacji: baner, bramka, czas (time-out)"
+          },
+          {
+            "alt": "Ustawienia sponsora transmisji w livestreamie: osobne miejsce, oddzielone od relacji na żywo, po stronie przeciwnika",
+            "label": "Sponsor transmisji: osobne miejsce w obrazie"
+          },
+          {
+            "alt": "Relacja na żywo Statix na telefonie z wynikiem, przebiegiem meczu i paskiem sponsorów „prezentuje” u dołu ekranu",
+            "label": "W relacji na telefonie: pasek u dołu ekranu"
+          }
+        ],
+        "limits": [
+          "Sponsorzy pojawiają się tylko tam, gdzie mecz jest publiczny – w relacji na żywo albo w livestreamie. Prywatny mecz nie pokazuje reklam.",
+          "Miejsce w obrazie livestreamu istnieje tylko razem z livestreamem, a ten jest jeszcze w becie.",
+          "Za logotypy odpowiadacie wy: muszą być wolne od praw osób trzecich, bez reklamy hazardu, alkoholu czy tytoniu. Oznaczenie takie jak „prezentuje” jest wyświetlane zawsze.",
+          "Statix nie pośredniczy w pozyskiwaniu sponsorów i nie prowadzi rozliczeń. Ile kosztuje miejsce, ustalacie ze sponsorem."
+        ],
+        "faq": [
+          {
+            "question": "Gdzie widzowie widzą sponsorów?",
+            "answer": "W publicznej relacji na żywo jako baner u dołu ekranu, na chwilę przy każdej bramce i przy każdym czasie (time-out) drużyny. W livestreamie dodatkowo jako sponsor transmisji w obrazie wideo, jako wiersz pod kartą bramki i jako pasek logotypów pod obrazem."
+          },
+          {
+            "question": "Czy Statix zarabia na pieniądzach od sponsorów?",
+            "answer": "Nie. Klub zatrzymuje 100% pieniędzy od sponsorów. Statix udostępnia miejsca, ale nie pośredniczy w pozyskiwaniu sponsorów i niczego nie zatrzymuje dla siebie."
+          },
+          {
+            "question": "Czy klub może dodać sponsorów dla wszystkich drużyn?",
+            "answer": "Tak. To, co dodano w sekcji klubu, wypełnia w każdej drużynie każde miejsce, którego ona sama nie zajęła. Drużyna z własnym sponsorem na danym miejscu zachowuje go i nie traci sponsorów klubu na pozostałych."
+          },
+          {
+            "question": "Czy muszę oznaczać to jako reklamę?",
+            "answer": "Logo z dopiskiem „prezentuje” to informacja o sponsorze. Jeśli grafika pokazuje produkty, ceny albo zachętę do zakupu, jest reklamą – wtedy w livestreamie wybierasz podpis „Reklama”."
           }
         ]
       },

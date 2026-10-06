@@ -5199,7 +5199,7 @@
         "limits": [
           "Sans position de tir saisie, pas de carte des tirs. Les chiffres restent justes — seule la carte reste vide.",
           "La position est une zone, pas une coordonnée au centimètre. Pour la question « d'où tirons-nous », cela suffit ; pour de la balistique, non.",
-          "Statix ne calcule pas les buts attendus. La carte montre ce qui s'est passé, pas ce qui aurait dû se passer."
+          "Statix calcule les Expected Goals sur une page dédiée, à partir de la même position de tir. La carte ici montre ce qui s'est passé ; si c'était plus ou moins que prévu, ce sont les xG qui le disent."
         ],
         "faq": [
           {
@@ -5361,6 +5361,190 @@
           {
             "question": "D'autres entraîneurs voient-ils mes notes ?",
             "answer": "Seulement votre propre staff. Les notes ne font pas partie d'une publication de match."
+          }
+        ]
+      },
+      {
+        "slug": "expected-goals",
+        "name": "Expected Goals & Expected Saves",
+        "short": "Expected Goals (xG)",
+        "headline": "Tous les pourcentages ne se valent pas",
+        "summary": "Expected Goals et Expected Saves : ce que valaient les tirs d'une joueuse, et combien de ballons une gardienne a arrêtés de plus que prévu.",
+        "tagline": "Une ailière à 60 % et une joueuse de base arrière à 45 % — laquelle a été la meilleure ? Les Expected Goals tiennent compte de la position de tir. Et les Expected Saves disent si la gardienne a été bonne ou si la défense n'a laissé passer que des tirs difficiles.",
+        "intro": [
+          "Le pourcentage de tir est le chiffre le plus honnête du handball — et le plus injuste. Celle qui ne tire que de l'aile et en contre-attaque a un pourcentage élevé, sans que cela dise quoi que ce soit de sa finition. Celle qui prend les tirs difficiles à neuf mètres a un pourcentage bas. Les Expected Goals (xG, « buts attendus ») corrigent cela : chaque position de tir a une probabilité de réussite fixe, aile gauche 0,62, neuf mètres axe 0,43, jet de 7 mètres 0,75, contre-attaque depuis la base arrière nettement plus. Additionné, cela donne le nombre de buts que valaient les occasions.",
+          "C'est la comparaison qui compte. Plus de buts que d'xG veut dire : les occasions ont été mieux exploitées que la moyenne. Moins veut dire : les occasions étaient là, la réussite manquait. Dans le tableau du match, cela apparaît pour chaque joueuse en xG et xG +/−, avec une flamme pour celles qui sont en feu.",
+          "Les Expected Saves (xS, « arrêts attendus ») posent la même question de l'autre côté : combien de ballons une gardienne moyenne aurait-elle arrêtés sur exactement ces tirs ? Seuls les tirs cadrés comptent, et les valeurs viennent du même tableau que les Expected Goals, pas d'un second. Une gardienne derrière une défense qui ne laisse que des tirs à dix mètres a un pourcentage d'arrêts élevé et pourtant un xS +/− de zéro."
+        ],
+        "facts": [
+          {
+            "term": "Base",
+            "value": "La position de tir, que tu saisis de toute façon en direct"
+          },
+          {
+            "term": "Pour les joueuses de champ",
+            "value": "xG et xG +/− par match et sur la saison"
+          },
+          {
+            "term": "Pour les gardiennes",
+            "value": "xS et xS +/− — uniquement les tirs cadrés"
+          },
+          {
+            "term": "Contre-attaque & 7 m",
+            "value": "Des valeurs propres, parce qu'une défense ouverte vaut plus"
+          },
+          {
+            "term": "Quand",
+            "value": "En direct pendant le match, après, et rétroactivement pour les anciens matchs"
+          },
+          {
+            "term": "Aussi dans",
+            "value": "Le profil de la joueuse et le rapport PDF"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Saisir la position de tir",
+            "body": "À chaque tir, tu touches la zone d'où il est parti — comme jusqu'ici pour la carte des tirs. Les xG n'ont besoin de rien de plus."
+          },
+          {
+            "title": "Lire le bilan",
+            "body": "Le bilan xG montre les buts face aux buts attendus, le bilan des arrêts les arrêts face aux arrêts attendus. Une phrase en dessous dit ce que signifie l'écart."
+          },
+          {
+            "title": "Comparer les joueuses",
+            "body": "Dans le tableau, tu tries par xG +/−. Celle qui est nettement au-dessus de zéro tire davantage de ses tirs ; celle qui est en dessous obtient de bonnes occasions et les manque."
+          },
+          {
+            "title": "Suivre sur la saison",
+            "body": "Dans le profil de la joueuse, tout s'additionne sur l'ensemble des matchs. Un match est un instantané ; dix matchs sont un constat."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Le bilan xG et le bilan des arrêts dans les statistiques du match de Statix : 29 buts pour 23,4 Expected Goals, 19 arrêts pour 14,9 Expected Saves",
+            "label": "Buts face aux xG, arrêts face aux xS — avec une phrase sur ce que cela veut dire"
+          },
+          {
+            "alt": "Le tableau des joueuses de champ dans Statix avec temps de jeu, buts, tirs, pourcentage, xG et xG +/− par joueuse",
+            "label": "Par joueuse : xG et xG +/−, celles en feu avec une flamme"
+          },
+          {
+            "alt": "Le tableau des gardiennes dans Statix avec arrêts, buts encaissés, pourcentage d'arrêts, xS et xS +/−",
+            "label": "Gardiennes : des Expected Saves plutôt qu'un simple pourcentage"
+          }
+        ],
+        "limits": [
+          "Les valeurs forment un tableau fixe par zone de tir, pas un modèle qui apprend de vos matchs. Il ne connaît ni l'angle de tir, ni la pression, ni le type de tir — il évalue d'où l'on a tiré, pas comment.",
+          "Un tir sans position saisie n'a pas de valeur. Il est compté à part et sort de la comparaison, plutôt que d'être évalué à zéro et de faire paraître la finition moins bonne qu'elle ne l'a été.",
+          "Un seul match est un petit échantillon. Un xG +/− de +1,5 après six tirs est un indice, pas un jugement sur une joueuse."
+        ],
+        "faq": [
+          {
+            "question": "Que sont les Expected Goals au handball ?",
+            "answer": "Les Expected Goals (xG) indiquent combien de buts valaient les tirs d'une joueuse ou d'une équipe. Chaque position de tir a une probabilité de réussite — l'aile environ 0,62, neuf mètres axe 0,43, le jet de 7 mètres 0,75. La somme sur tous les tirs donne la valeur attendue ; la comparaison avec les vrais buts montre si les occasions ont été bien exploitées."
+          },
+          {
+            "question": "Que sont les Expected Saves ?",
+            "answer": "Les Expected Saves (xS) sont le nombre d'arrêts qu'une gardienne moyenne aurait réalisés sur les mêmes tirs cadrés. Si une gardienne en arrête davantage, son xS +/− est positif — quelle que soit la facilité ou la difficulté des tirs que sa défense a laissé passer."
+          },
+          {
+            "question": "Dois-je saisir davantage pour cela ?",
+            "answer": "Non. Les xG et xS se calculent à partir de la position de tir que tu touches de toute façon pour la carte des tirs. Les matchs où tu as saisi la position reçoivent aussi les valeurs rétroactivement."
+          },
+          {
+            "question": "D'où viennent les valeurs par zone de tir ?",
+            "answer": "D'un tableau fixe de pourcentages de réussite publiés par zone, pour l'attaque placée et séparément pour la contre-attaque. Il est le même pour toutes les équipes, afin que les chiffres restent comparables. Plus de détails sur la méthode dans le guide consacré aux Expected Goals."
+          }
+        ]
+      },
+      {
+        "slug": "aufstellungs-analyse",
+        "name": "Analyse des compositions",
+        "short": "Compositions",
+        "headline": "Quel sept marque les buts ?",
+        "summary": "Quelle composition marque les buts, quel trio de base arrière fonctionne et avec qui une joueuse marque le mieux — avec le plus-minus, par match et sur la saison.",
+        "tagline": "Chaque changement que tu saisis est une information : qui était sur le terrain en même temps. Statix en déduit quelle composition marque les buts, quel trio de base arrière porte l'équipe et avec qui une joueuse marque le mieux.",
+        "intro": [
+          "Chaque entraîneur se pose la question à chaque journée : avec quel sept je commence, qui je fais entrer quand ça ne tourne pas ? La réponse se trouve dans des données que tu as déjà. Comme tu fais les changements en direct, Statix sait à chaque seconde qui était sur le terrain — et peut attribuer à chaque but marqué et à chaque but encaissé la composition qui l'a vécu.",
+          "Trois angles de vue côte à côte. Compositions : les six joueuses de champ, triées par buts marqués, avec tirs, pourcentage, minutes ensemble, buts encaissés et plus-minus. Base arrière : uniquement les trios arrière gauche, demi-centre et arrière droite, parce que c'est là que naissent le plus de combinaisons. Associations : pour une joueuse, combien de fois elle marque pendant qu'une coéquipière donnée est sur le terrain, et combien de buts celle-ci lui a servis.",
+          "C'est disponible pour un match dans les statistiques du match, et sur toute la saison sur la page de l'équipe. L'analyse IA lit les mêmes chiffres et peut dire quelle formation a porté l'équipe lors des derniers matchs."
+        ],
+        "facts": [
+          {
+            "term": "Base",
+            "value": "Les changements que tu saisis en direct — avec la minute de jeu"
+          },
+          {
+            "term": "Compositions",
+            "value": "Buts, tirs, pourcentage, minutes, buts encaissés, plus-minus"
+          },
+          {
+            "term": "Base arrière",
+            "value": "Les trios ARG, DC et ARD"
+          },
+          {
+            "term": "Associations",
+            "value": "Buts par coéquipière sur le terrain, plus les passes décisives"
+          },
+          {
+            "term": "Période",
+            "value": "Par match et sur la saison"
+          },
+          {
+            "term": "Poste",
+            "value": "Le poste prévu en attaque, sinon le poste habituel"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Saisir les changements",
+            "body": "Comme à chaque match : une joueuse sort, une joueuse entre — on échange deux cartes. Statix connaît ainsi la composition à chaque seconde."
+          },
+          {
+            "title": "Comparer les compositions",
+            "body": "Après le match, le bloc « Compositions et associations » montre quel sept est resté combien de temps ensemble et ce que cela a donné — devant les buts marqués, derrière les buts encaissés, au bout du compte le plus-minus."
+          },
+          {
+            "title": "Lire la base arrière et les duos",
+            "body": "L'onglet Base arrière ne montre que les trios, Associations les duos : choisis une joueuse, et tu vois avec qui elle marque et qui lui sert les ballons."
+          },
+          {
+            "title": "Décider sur la saison",
+            "body": "Sur la page de l'équipe, tout s'additionne sur l'ensemble des matchs. Un match, c'est le hasard ; dix matchs montrent quel trio porte vraiment l'équipe."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "L'analyse des compositions dans Statix : les six joueuses de champ de chaque composition avec buts, tirs, pourcentage, minutes ensemble, buts encaissés et plus-minus",
+            "label": "Compositions : quel sept est resté combien de temps, et ce que cela a donné"
+          },
+          {
+            "alt": "L'onglet Base arrière dans Statix avec les trios arrière gauche, demi-centre et arrière droite et leurs buts",
+            "label": "Base arrière : quel trio porte l'équipe"
+          },
+          {
+            "alt": "L'onglet Associations dans Statix : buts et tirs d'une joueuse par coéquipière sur le terrain, avec minutes, pourcentage et passes décisives",
+            "label": "Associations : avec qui elle marque, et qui lui sert les ballons"
+          }
+        ],
+        "limits": [
+          "Sans changements avec minute de jeu, pas de composition. Un match où l'on n'a jamais changé, ou changé sans chrono, ne compte pas — une composition que personne ne connaît serait pire qu'aucune.",
+          "Être ensemble sur le terrain ne veut pas dire en être la cause. Un trio à +4 a peut-être joué contre la défense la plus faible. C'est pourquoi les minutes sont toujours affichées à côté.",
+          "Les compositions comptent les jets de 7 mètres, les associations uniquement les tirs dans le jeu — un jet de 7 mètres n'a pas de coéquipière qui le prépare."
+        ],
+        "faq": [
+          {
+            "question": "Comment Statix sait-il qui était sur le terrain ?",
+            "answer": "Grâce aux changements que tu saisis pendant le match. Chaque changement porte la minute de jeu, ce qui donne la composition à chaque seconde. Tu n'as rien d'autre à faire."
+          },
+          {
+            "question": "Que signifie le plus-minus d'une composition ?",
+            "answer": "Les buts marqués par l'équipe pendant que précisément ces joueuses étaient ensemble sur le terrain, moins les buts encaissés dans le même temps. Une composition à +3 a marqué trois buts de plus qu'elle n'en a encaissé pendant ses minutes."
+          },
+          {
+            "question": "Quel poste compte quand une joueuse peut en jouer plusieurs ?",
+            "answer": "Le poste en attaque que tu as prévu pour le match. S'il n'y en a pas, la place sur le terrain pendant le match, sinon le poste habituel de l'effectif."
           }
         ]
       },
@@ -6379,6 +6563,105 @@
           {
             "question": "Puis-je partager un match anonymement ?",
             "answer": "Un simple lien ne dit pas qui l'a créé. Qui partage par e-mail apparaît nommément chez le destinataire — c'est tout l'intérêt de la boîte de réception."
+          }
+        ]
+      },
+      {
+        "slug": "sponsoren",
+        "name": "Sponsors dans le live-score & le livestream",
+        "short": "Sponsors",
+        "headline": "Un espace publicitaire que le club a déjà",
+        "summary": "Mettre en avant les sponsors dans le live-score et le livestream : bannière, « But présenté par … », un logo à chaque temps mort et un sponsor présentateur à l'image.",
+        "tagline": "Chaque live-score et chaque livestream est ouvert par des parents, des supporters et d'anciennes joueuses — à chaque match. Statix en fait des espaces publicitaires pour vos sponsors. Le club garde 100 % de l'argent des sponsors.",
+        "intro": [
+          "Un club a des sponsors qui veulent plus qu'un panneau en bord de terrain que personne ne voit lors des matchs à l'extérieur. Statix leur donne des emplacements là où le public regarde de toute façon : dans le live-score public et dans le livestream. Une bannière reste affichée en permanence, plusieurs logos se relaient. À chaque but, on lit brièvement « But présenté par … », et à chaque temps mort de l'équipe apparaît un sponsor dédié.",
+          "Le livestream a son propre emplacement : le sponsor présentateur dans l'image vidéo. Son logo est toujours placé du côté de l'adversaire, pour ne rien cacher des cartes de ta propre équipe, et plutôt plat que large, pour ne jamais empiéter sur le tableau de score. Tu règles s'il est visible en permanence ou brièvement toutes les cinq minutes, et s'il est présenté comme « présenté par », « Sponsor » ou « Publicité ». Au début, à la mi-temps et à la fin, le stream l'affiche en plus en grand.",
+          "Les sponsors peuvent être enregistrés pour une équipe ou pour tout le club. Ce que le club enregistre remplit, dans chaque équipe, chaque emplacement qu'elle n'a pas occupé elle-même — un sponsor majeur apparaît ainsi, avec un seul envoi, dans le live-score de toutes les équipes. Statix ne démarche pas de sponsors et ne prélève rien : contrat et facture restent entre le club et le sponsor."
+        ],
+        "facts": [
+          {
+            "term": "Bannière",
+            "value": "En permanence dans le live-score, plusieurs logos en alternance"
+          },
+          {
+            "term": "But",
+            "value": "« But présenté par … » à chaque but"
+          },
+          {
+            "term": "Temps mort",
+            "value": "Un sponsor dédié à chaque temps mort de l'équipe"
+          },
+          {
+            "term": "Livestream",
+            "value": "Sponsor présentateur à l'image, du côté de l'adversaire"
+          },
+          {
+            "term": "Pour le club",
+            "value": "Enregistré une fois, dans toutes les équipes"
+          },
+          {
+            "term": "Recettes",
+            "value": "100 % pour le club — Statix ne touche rien"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Enregistrer les logos",
+            "body": "Dans les paramètres, sous Sponsors, tu télécharges un logo, indiques le nom et, si tu veux, un lien, puis choisis l'emplacement : bannière, but, temps mort ou livestream."
+          },
+          {
+            "title": "Placer dans le stream",
+            "body": "Pour le sponsor présentateur, tu règles la taille, la fréquence et la mention. L'aperçu montre le match à domicile et à l'extérieur, sur ordinateur et sur téléphone, avant qu'un spectateur ne le voie."
+          },
+          {
+            "title": "Publier le match",
+            "body": "Dès qu'un match est public en live-score ou en livestream, les sponsors s'affichent — sans que tu aies quoi que ce soit à faire pendant le match."
+          },
+          {
+            "title": "Montrer aux sponsors",
+            "body": "Le lien vers le live-score et la page de l'équipe avec tous les matchs publics sont ce que tu peux envoyer à un sponsor comme justificatif."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Un livestream Statix avec le sponsor présentateur en haut à droite, un sponsor de but sous la carte du but et un bandeau défilant de logos de sponsors sous l'image",
+            "label": "Dans le stream : sponsor présentateur, sponsor de but et bandeau de logos (terrain dessiné, sponsors fictifs)"
+          },
+          {
+            "alt": "Les paramètres des sponsors dans Statix : trois sponsors en bannière, un sponsor de but et un sponsor de temps mort, avec au-dessus la mention que le club garde 100 % de l'argent des sponsors",
+            "label": "Les emplacements du live-score : bannière, but, temps mort"
+          },
+          {
+            "alt": "Les réglages du sponsor présentateur dans le livestream : un emplacement à part, séparé du live-score, du côté de l’adversaire",
+            "label": "Le sponsor présentateur : un emplacement à lui dans l’image"
+          },
+          {
+            "alt": "Le live-score Statix sur téléphone avec le score, le déroulé du match et le bandeau des sponsors « présenté par » en bas",
+            "label": "Dans le live-score sur téléphone : le bandeau en bas de l'écran"
+          }
+        ],
+        "limits": [
+          "Les sponsors n'apparaissent que là où un match est public — dans le live-score ou dans le livestream. Un match privé n'affiche aucune publicité.",
+          "L'emplacement dans l'image du livestream n'existe qu'avec le livestream, qui est encore en bêta.",
+          "Vous êtes responsables des logos : libres de droits de tiers, pas de publicité pour les jeux d'argent, l'alcool ou le tabac. Une mention comme « présenté par » est toujours affichée.",
+          "Statix ne démarche pas de sponsors et ne gère aucune facturation. Le prix d'un emplacement, vous le convenez avec le sponsor."
+        ],
+        "faq": [
+          {
+            "question": "Où les spectateurs voient-ils les sponsors ?",
+            "answer": "Dans le live-score public, en bannière en bas de l'écran, et brièvement à chaque but et à chaque temps mort de l'équipe. Dans le livestream, en plus comme sponsor présentateur dans l'image vidéo, comme ligne sous la carte du but et comme bandeau de logos sous l'image."
+          },
+          {
+            "question": "Statix touche-t-il une part de l'argent des sponsors ?",
+            "answer": "Non. Le club garde 100 % de l'argent des sponsors. Statix met les emplacements à disposition, mais ne démarche pas de sponsors et ne prélève rien."
+          },
+          {
+            "question": "Le club peut-il enregistrer des sponsors pour toutes les équipes ?",
+            "answer": "Oui. Ce qui est enregistré dans l'espace du club remplit, dans chaque équipe, chaque emplacement qu'elle n'a pas occupé elle-même. Une équipe qui a son propre sponsor sur un emplacement le garde, sans perdre les sponsors du club sur les autres."
+          },
+          {
+            "question": "Dois-je signaler qu'il s'agit de publicité ?",
+            "answer": "Un logo avec « présenté par » est une mention de sponsor. Si le visuel montre des produits, des prix ou un appel à l'achat, c'est de la publicité — tu choisis alors pour le livestream la mention « Publicité »."
           }
         ]
       },

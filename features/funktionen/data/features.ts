@@ -291,7 +291,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     group: 'erfassen',
     status: 'live',
     shots: [{ src: '/gameListOverview.png', width: 2560, height: 2000 }],
-    related: ['handball-livestream', 'live-erfassung', 'turniere'],
+    related: ['handball-livestream', 'sponsoren', 'live-erfassung'],
     meta: {
       title: 'Handball Live-Ticker: Spiel per Link & QR-Code live übertragen',
       description:
@@ -346,7 +346,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/spielerprofil-verlauf.png', width: 2560, height: 2000 },
       { src: '/mobil-spielerstatistiken.png', width: 780, height: 1688 },
     ],
-    related: ['wurfbilder', 'ki-analyse', 'kader-kartenalbum'],
+    related: ['expected-goals', 'aufstellungs-analyse', 'wurfbilder'],
     ogImage: '/statsTableInGame.png',
     meta: {
       title: 'Handball Spielerstatistiken: Wurfquote, Effizienz & Verlauf',
@@ -368,7 +368,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/shotMaps.png', width: 2560, height: 2000 },
       { src: '/mobil-wurfbild.png', width: 780, height: 1688 },
     ],
-    related: ['spielerstatistiken', 'ki-analyse', 'video-tagging'],
+    related: ['expected-goals', 'spielerstatistiken', 'ki-analyse'],
     ogImage: '/shotMaps.png',
     meta: {
       title: 'Handball Wurfbild & Heatmap: Würfe auf dem Feld auswerten',
@@ -420,6 +420,58 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
         'handball scouting app',
         'handball gegneranalyse',
         'handball head to head',
+      ],
+    },
+  },
+  {
+    slug: 'expected-goals',
+    group: 'auswerten',
+    status: 'live',
+    shots: [
+      { src: '/statistik-xg-uebersicht.png', width: 2512, height: 1192 },
+      { src: '/statistik-xg-spieler.png', width: 2512, height: 1332 },
+      { src: '/statistik-xs-torhueter.png', width: 2512, height: 512 },
+    ],
+    related: ['wurfbilder', 'spielerstatistiken', 'aufstellungs-analyse'],
+    ogImage: '/statistik-xg-uebersicht.png',
+    isNew: true,
+    meta: {
+      title: 'Expected Goals (xG) im Handball: Chancen & Paraden fair bewertet',
+      description:
+        'Expected Goals und Expected Saves für Handball: Was jede Wurfposition wert war, wer mehr aus ihren Chancen macht und welche Torhüterin mehr hält, als zu erwarten war – live aus der Erfassung, je Spiel und Saison.',
+      keywords: [
+        'handball expected goals',
+        'handball xg',
+        'expected saves handball',
+        'handball torwart statistik xs',
+        'handball wurfqualität',
+        'handball chancenverwertung',
+      ],
+    },
+  },
+  {
+    slug: 'aufstellungs-analyse',
+    group: 'auswerten',
+    status: 'live',
+    shots: [
+      { src: '/aufstellungen-tore.png', width: 2512, height: 1402 },
+      { src: '/aufstellungen-rueckraum.png', width: 2512, height: 918 },
+      { src: '/aufstellungen-zusammenspiel.png', width: 2512, height: 1086 },
+    ],
+    related: ['spielerstatistiken', 'expected-goals', 'ki-analyse'],
+    ogImage: '/aufstellungen-tore.png',
+    isNew: true,
+    meta: {
+      title: 'Handball-Aufstellungen auswerten: Welche Sieben trifft am besten?',
+      description:
+        'Welche Aufstellung die Tore wirft, welches Rückraum-Trio funktioniert und mit wem eine Spielerin besser trifft – gerechnet aus den Wechseln, je Spiel und über die ganze Saison, mit Plus-Minus.',
+      keywords: [
+        'handball aufstellung analyse',
+        'handball rückraum kombination',
+        'handball plus minus statistik',
+        'handball statistik aufstellung',
+        'handball zusammenspiel statistik',
+        'handball beste aufstellung finden',
       ],
     },
   },
@@ -626,7 +678,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/verein-auswertung.png', width: 2560, height: 2000 },
       { src: '/verein-laufbahnen.png', width: 2048, height: 650 },
     ],
-    related: ['team-management', 'spielerstatistiken', 'termine-und-teilnahme'],
+    related: ['team-management', 'sponsoren', 'spielerstatistiken'],
     ogImage: '/verein-uebersicht.png',
     meta: {
       title: 'Handball Vereinsbereich: alle Mannschaften einer Abteilung',
@@ -660,6 +712,33 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
         'handball spielbericht teilen',
         'handball statistik teilen',
         'handball spielbericht pdf',
+      ],
+    },
+  },
+  {
+    slug: 'sponsoren',
+    group: 'teilen',
+    status: 'live',
+    shots: [
+      { src: '/sponsoren-livestream.png', width: 2880, height: 1620 },
+      { src: '/sponsoren-ticker-einstellungen.png', width: 1856, height: 1275 },
+      { src: '/sponsoren-stream-einstellungen.png', width: 1856, height: 550 },
+      { src: '/mobil-sponsoren-ticker.png', width: 780, height: 1688 },
+    ],
+    related: ['live-ticker', 'handball-livestream', 'vereinsbereich'],
+    ogImage: '/sponsoren-livestream.png',
+    isNew: true,
+    meta: {
+      title: 'Sponsoren im Handball-Live-Ticker & Livestream präsentieren',
+      description:
+        'Sponsoren digital präsentieren: Banner im Live-Ticker, „Tor präsentiert von …“, ein Logo bei jeder Auszeit und ein Präsentations-Sponsor im Livestream-Bild. Der Verein behält 100 % der Sponsorengelder.',
+      keywords: [
+        'handball sponsoren präsentieren',
+        'handball live ticker sponsor',
+        'sponsoren handballverein digital',
+        'handball livestream sponsor',
+        'tor präsentiert von sponsor',
+        'sponsorenpaket handballverein',
       ],
     },
   },
