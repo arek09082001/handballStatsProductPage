@@ -95,11 +95,13 @@ export interface FeatureCapability {
 }
 
 /**
- * The rest of a feature's area, listed rather than pictured. Only
- * `video-tagging` carries one: the video area grew a dozen functions around the
- * tagging bench, and a page that shows only the bench undersells the area by
- * the dozen — while a feature page for each would scatter one beta across the
- * whole index.
+ * The rest of a feature's area, listed rather than pictured. `video-tagging`
+ * carries one: the video area grew a dozen functions around the tagging bench,
+ * and a page that shows only the bench undersells the area by the dozen — while
+ * a feature page for each would scatter one beta across the whole index.
+ * `handball-livestream` carries one for the same reason: sound switch, second
+ * quality, sponsor in the picture and the recording afterwards are each a line,
+ * not a page.
  */
 export interface FeatureCapabilities {
   title: string;
@@ -289,7 +291,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     group: 'erfassen',
     status: 'live',
     shots: [{ src: '/gameListOverview.png', width: 2560, height: 2000 }],
-    related: ['live-erfassung', 'trainer-zusammenarbeit', 'turniere'],
+    related: ['handball-livestream', 'live-erfassung', 'turniere'],
     meta: {
       title: 'Handball Live-Ticker: Spiel per Link & QR-Code live übertragen',
       description:
@@ -299,6 +301,38 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
         'handball live ticker app',
         'handball spiel live verfolgen',
         'handball liveticker verein',
+      ],
+    },
+  },
+  {
+    slug: 'handball-livestream',
+    group: 'erfassen',
+    status: 'beta',
+    shots: [
+      { src: '/livestream-einblendung-tor.png', width: 2880, height: 1620 },
+      { src: '/livestream-auszeit-quoten.png', width: 2880, height: 1620 },
+      { src: '/livestream-regie-live.png', width: 2560, height: 2200 },
+      { src: '/livestream-kameras-koppeln.png', width: 2560, height: 2000 },
+      { src: '/livestream-panorama-naht.jpg', width: 1024, height: 665 },
+      { src: '/mobil-livestream.png', width: 780, height: 1688 },
+      { src: '/mobil-livestream-aufzeichnung.png', width: 780, height: 1688 },
+    ],
+    related: ['live-ticker', 'video-tagging', 'live-erfassung'],
+    ogImage: '/livestream-einblendung-tor.png',
+    isNew: true,
+    meta: {
+      title: 'Handballspiele livestreamen mit Spielstand & Statistik im Bild',
+      description:
+        'Handballspiele mit dem Handy live übertragen: Panorama aus zwei Handys mit automatischem Schwenk, Spielstand-Einblendung mit Live-Statistik und eine Aufzeichnung, die danach synchron zur Statistik ist. Beta.',
+      keywords: [
+        'handballspiele livestreamen',
+        'handball livestream',
+        'handball spiel live übertragen',
+        'handball livestream handy',
+        'handball livestream app',
+        'handball spielstand einblendung',
+        'handball stream mit statistik',
+        'handball panorama kamera',
       ],
     },
   },
@@ -402,7 +436,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-clip-posteingang.png', width: 780, height: 1688 },
       { src: '/mobil-mediathek.png', width: 780, height: 1688 },
     ],
-    related: ['live-erfassung', 'wurfbilder', 'trainer-zusammenarbeit'],
+    related: ['handball-livestream', 'live-erfassung', 'wurfbilder'],
     ogImage: '/video-tagging-spuren.png',
     mock: 'tagging-bench',
     meta: {

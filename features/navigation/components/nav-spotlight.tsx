@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { navigationSpotlight } from '../config';
-import HoldSwipeIcon from './hold-swipe-icon';
+import LiveStreamIcon from './live-stream-icon';
 
 /**
  * The header's pointer at a new feature — see `navigationSpotlight`.
@@ -19,7 +19,7 @@ import HoldSwipeIcon from './hold-swipe-icon';
  * menu, where there is room to say what it is.
  *
  * The magnet is the board's home magnet — orange, inked glyph — with the
- * gesture drawn on it, and a pulsing ring that stops under reduced motion. The
+ * feature's mark drawn on it (the livestream's broadcast dot today), and a pulsing ring that stops under reduced motion. The
  * register button next to it is orange too, which is why the magnet is round
  * and small and the badge carries the word: the two must not read as two
  * calls to action.
@@ -94,7 +94,7 @@ export default function NavSpotlight({
   );
 }
 
-/** The home magnet of the board with the gesture drawn on it. */
+/** The home magnet of the board with the spotlighted feature's mark on it. */
 function Magnet({
   size,
   pulse = false,
@@ -126,7 +126,7 @@ function Magnet({
           style={{ animationIterationCount: 5 }}
         />
       ) : null}
-      <HoldSwipeIcon
+      <LiveStreamIcon
         className={cn('relative', size === 'lg' ? 'size-6' : 'size-5')}
       />
     </span>

@@ -324,13 +324,14 @@
       "handballStats": "Statistiques de handball",
       "schedule": "Rendez-vous et présence",
       "videoTagging": "Marquage vidéo",
-      "holdSwipe": "Maintenir et glisser"
+      "holdSwipe": "Maintenir et glisser",
+      "livestream": "Livestream"
     },
     "spotlight": {
       "badge": "Nouveau",
-      "title": "Maintenir et glisser",
-      "description": "Quatre actions d’un seul pouce, directement sur le terrain – sans passer par le panneau.",
-      "ariaLabel": "Nouvelle fonction : voir Maintenir et glisser"
+      "title": "Livestream",
+      "description": "Diffuse tes matchs de handball en direct avec un téléphone – score et stats dans l’image.",
+      "ariaLabel": "Nouvelle fonction : voir le livestream"
     },
     "groups": {
       "product": "Produit",
@@ -4822,6 +4823,232 @@
           {
             "question": "Une joueuse peut-elle demander que son nom n’apparaisse pas dans le live ?",
             "answer": "Oui. Celle qui a son propre accès décide dans les réglages que son nom n’apparaisse pas sur les pages publiques : seul le numéro est alors affiché. Cette décision prime sur le réglage de l’équipe et le staff ne peut pas la renverser."
+          }
+        ]
+      },
+      {
+        "slug": "handball-livestream",
+        "name": "Diffuser des matchs de handball en direct",
+        "short": "Livestream",
+        "headline": "Deux téléphones, un trépied – et les stats s'affichent à l'image",
+        "summary": "Diffuse tes matchs de handball en direct avec un ou deux téléphones – score, chrono, exclusions de 2 minutes et stats live incrustés à l'image.",
+        "tagline": "Place deux téléphones à la ligne médiane, saisis le match comme d'habitude – et les parents, les supporters et tous ceux qui ne peuvent pas venir à la salle suivent le match en direct, avec le score et les stats à l'image. Après le coup de sifflet final, l'enregistrement est dans la vidéothèque, déjà calé sur les stats.",
+        "intro": [
+          "Un livestream dans Statix ne demande ni matériel de caméra ni logiciel de streaming. Les téléphones ouvrent une page caméra dans le navigateur, et on les couple par QR code depuis la régie live sur la tablette. Avec un seul téléphone, quelqu'un filme et suit l'action à la main. Avec deux téléphones sur un trépied à la ligne médiane, chacun filme une moitié de terrain : Statix assemble les deux en un panorama de tout le terrain et en tire un cadrage qui suit le jeu automatiquement – comme une caméra de télé, sauf que personne ne la manie.",
+          "Par-dessus l'image, la même incrustation que lors d'une retransmission : score, mi-temps et temps de jeu, un chrono pour chaque exclusion de 2 minutes, une carte à chaque but, arrêt et tir manqué avec numéro de maillot et nom – et quand le moment s'y prête, la série ou le pourcentage en plus : « 3 buts d'affilée · 4/5 ». Pendant un temps mort, un compte à rebours s'ouvre sous le chrono, puis au bout de quelques secondes le pourcentage de réussite au tir et le taux d'arrêts de l'équipe. Tout cela vient de la saisie live que tu fais de toute façon : tu tapes sur la tablette, et les spectateurs le voient à l'image.",
+          "L'incrustation se cale sur le temps de l'image, pas sur l'horloge au mur. Une carte apparaît dans le stream à l'endroit où tu as saisi l'action – et celui qui revient en arrière la retrouve au même endroit. Et comme les téléphones enregistrent en même temps, le livestream devient après le coup de sifflet final une vidéo de match dans la vidéothèque, déjà synchronisée avec le chrono du match : chaque action saisie est un repère pour sauter directement, l'incrustation du score suit, et les séquences peuvent être taguées, découpées et envoyées aux joueuses."
+        ],
+        "facts": [
+          {
+            "term": "État",
+            "value": "Bêta – en construction, pas encore pour tous les comptes"
+          },
+          {
+            "term": "Caméras",
+            "value": "1 téléphone (suivi à la main) ou 2 téléphones en panorama avec cadrage automatique"
+          },
+          {
+            "term": "Incrustation",
+            "value": "Score, temps de jeu, exclusions de 2 minutes, temps mort et cartes à chaque but, arrêt et tir manqué avec pourcentages"
+          },
+          {
+            "term": "Spectateurs",
+            "value": "Lien ou QR code, dans le navigateur, sans compte et sans appli"
+          },
+          {
+            "term": "Image",
+            "value": "Jusqu'en Full HD, plus, si tu veux, une version légère pour les connexions faibles"
+          },
+          {
+            "term": "Après le match",
+            "value": "Enregistrement dans la vidéothèque, synchronisé avec les stats"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Choisir le livestream et coupler les téléphones",
+            "body": "Dans la régie live, tu choisis « Livestream » et un ou deux téléphones. Chaque caméra affiche un QR code – tu le scannes avec le téléphone, c'est tout. La caméra tourne dans le navigateur, sans appli, et remonte batterie, upload et image à la régie."
+          },
+          {
+            "title": "Régler le panorama",
+            "body": "Avec deux téléphones, les deux prennent une image de calibrage au même signal. Statix place la jointure, un voyant te dit si elle est bonne, et le réglage peut être mémorisé pour la salle – au prochain match à domicile, il est déjà prêt. Un essai avant l'engagement montre si la connexion et les téléphones tiennent le coup."
+          },
+          {
+            "title": "Passer en direct et saisir comme d'habitude",
+            "body": "Un bouton, et les spectateurs voient l'image. Tu saisis sur la tablette comme à chaque match – buts, arrêts, exclusions de 2 minutes, temps morts –, et tout apparaît en incrustation dans le stream. La régie affiche l'état, le nombre de spectateurs et chaque téléphone d'un coup d'œil."
+          },
+          {
+            "title": "Après le coup de sifflet final : le match en vidéo",
+            "body": "Les téléphones envoient le reste, l'enregistrement arrive comme vidéo de match dans la vidéothèque – en panorama, avec en plus l'image cadrée automatiquement. Elle est déjà calée sur les stats : repères, incrustation du score, tagging des séquences et envoi de clips sont disponibles tout de suite."
+          }
+        ],
+        "capabilities": {
+          "title": "Ce qui va avec le livestream",
+          "intro": "L'incrustation et le panorama, c'est ce qu'on voit. Autour, il y a tout ce qui fait tenir une journée de match à la salle – le tout dans la même bêta.",
+          "groups": [
+            {
+              "name": "Filmer & diffuser",
+              "intro": "Ce que font les téléphones dans la salle.",
+              "items": [
+                {
+                  "name": "Caméra dans le navigateur",
+                  "body": "Pas de store : le téléphone ouvre la page caméra via le QR code et reste couplé, même s'il recharge la page."
+                },
+                {
+                  "name": "Panorama à partir de deux téléphones",
+                  "body": "Les deux moitiés de terrain sont assemblées en direct en une image de tout le terrain – calculée sur une carte graphique dans l'UE."
+                },
+                {
+                  "name": "Cadrage automatique",
+                  "body": "Le panorama devient un cadrage qui suit le jeu. Si la jointure ne suit pas à un moment, c'est la caméra de gauche qui est diffusée en attendant."
+                },
+                {
+                  "name": "Continuer à filmer sans réseau",
+                  "body": "Si la connexion coupe, le téléphone continue d'enregistrer et envoie le reste dès qu'il retrouve du réseau."
+                },
+                {
+                  "name": "Figer l'image",
+                  "body": "Exposition, mise au point et balance des blancs bloquées au démarrage, pour que l'image ne pompe pas quand quelqu'un passe devant la caméra."
+                },
+                {
+                  "name": "Normal ou grand-angle",
+                  "body": "Au choix pour chaque téléphone, quand l'appareil le propose – plus de terrain à l'image sans toucher au trépied."
+                }
+              ]
+            },
+            {
+              "name": "Pour les spectateurs",
+              "intro": "Ce qui arrive sur le téléphone des parents.",
+              "items": [
+                {
+                  "name": "Incrustation du score",
+                  "body": "Score, temps de jeu et couleurs de maillot comme à la télé, plus un chrono par exclusion de 2 minutes."
+                },
+                {
+                  "name": "Cartes avec stats",
+                  "body": "But, arrêt ou tir manqué avec numéro et nom – avec le pourcentage lors d'une série ou à partir du cinquième tir."
+                },
+                {
+                  "name": "Temps mort en chiffres",
+                  "body": "Le compte à rebours du temps mort et, en dessous, le pourcentage au tir et le taux d'arrêts de l'équipe."
+                },
+                {
+                  "name": "Revenir en arrière",
+                  "body": "Celui qui a raté quelque chose revient en arrière – l'incrustation recule avec l'image, et un tap le ramène au direct."
+                },
+                {
+                  "name": "Deux qualités",
+                  "body": "En plus du Full HD, si tu veux, une version légère pour que ça reste fluide même avec une connexion faible en tribune."
+                },
+                {
+                  "name": "Sponsor à l'image",
+                  "body": "Un sponsor principal en logo dans le stream, signalé comme tel et placé du côté de l'adversaire pour ne rien masquer."
+                }
+              ]
+            },
+            {
+              "name": "Dans la régie",
+              "intro": "Ce que le coach pilote sur la tablette.",
+              "items": [
+                {
+                  "name": "Privé ou public",
+                  "body": "Un interrupteur décide qui regarde. En public, tous ceux qui ont le lien voient d'abord la page d'attente, puis l'image dès « Passer en direct »."
+                },
+                {
+                  "name": "Réglage du son",
+                  "body": "Son complet, ambiance seulement ou coupé – contre la musique de la salle et les conversations sur le banc. Vaut pour le stream et l'enregistrement."
+                },
+                {
+                  "name": "Essai",
+                  "body": "Cinq minutes d'essai avec un rapport sur le réseau, l'image et les téléphones – sans qu'aucun spectateur ne voie quoi que ce soit."
+                },
+                {
+                  "name": "Reprendre le direct",
+                  "body": "Arrêté par erreur ? Jusqu'à 30 minutes après, la même retransmission repart, et les téléphones restent couplés."
+                }
+              ]
+            },
+            {
+              "name": "Après le coup de sifflet final",
+              "intro": "Ce que devient la retransmission.",
+              "items": [
+                {
+                  "name": "Vidéo de match dans la vidéothèque",
+                  "body": "Chaque caméra et le panorama cadré arrivent comme vidéos rattachées au match – sans import séparé."
+                },
+                {
+                  "name": "Synchronisé avec les stats",
+                  "body": "La synchronisation avec le chrono du match est déjà calculée : chaque action saisie est un repère dans la vidéo."
+                },
+                {
+                  "name": "Téléchargement avec le score",
+                  "body": "Télécharge le match en MP4 – si tu veux, avec l'incrustation du score gravée dans l'image."
+                },
+                {
+                  "name": "Séquences pour les joueuses",
+                  "body": "Tague des séquences, envoie-les en montage à des joueuses précises ou partage-les avec l'équipe."
+                }
+              ]
+            }
+          ]
+        },
+        "shots": [
+          {
+            "alt": "Un livestream de handball dans Statix avec l'incrustation du score et une carte de but : Anna Becker, 3 buts d'affilée, 4 tirs sur 5",
+            "label": "But – avec série et pourcentage, pile à l'image (le terrain en dessous est dessiné)"
+          },
+          {
+            "alt": "Le temps mort dans le livestream Statix : compte à rebours sous le chrono du match, en dessous le pourcentage au tir et le taux d'arrêts de l'équipe, et le chrono d'une exclusion de 2 minutes en cours",
+            "label": "Temps mort : compte à rebours et pourcentages de l'équipe (terrain dessiné)"
+          },
+          {
+            "alt": "La régie live de Statix pendant une retransmission : statut en direct, 143 spectateurs, deux téléphones couplés avec aperçu, et le pod live pour la jointure et le cadrage",
+            "label": "La régie sur la tablette : tout sous les yeux, un seul bouton"
+          },
+          {
+            "alt": "La régie live de Statix pendant la mise en place : le téléphone de gauche est couplé, un QR code attend celui de droite, à côté la checklist de préparation",
+            "label": "Coupler : scanner le QR code, c'est tout"
+          },
+          {
+            "alt": "Réglage du panorama dans Statix : deux moitiés de terrain assemblées en une image, avec la ligne de jointure et le message indiquant que la jointure est bonne",
+            "label": "La jointure du panorama – ici dans la salle de test utilisée pour le développement"
+          },
+          {
+            "alt": "Le livestream Statix sur le téléphone d'un spectateur : image avec incrustation du score et carte de but, en dessous le fil du match",
+            "label": "Chez le spectateur : l'image en haut, le fil du match en dessous (terrain dessiné)"
+          },
+          {
+            "alt": "La page du livestream après le coup de sifflet final sur le téléphone : score final 27:23 et le bouton « Voir l'enregistrement »",
+            "label": "Après le coup de sifflet final : score final et enregistrement"
+          }
+        ],
+        "limits": [
+          "Le livestream est en construction et limité à des comptes sélectionnés le temps qu'il se construise. Si tu ne le vois pas encore, tu peux continuer à publier le live-score pour le même match – pour chaque match, c'est soit le ticker, soit le livestream.",
+          "Direct ne veut pas dire simultané : avec un téléphone, l'image a quelques secondes de retard sur la salle, et le panorama assemblé encore 10 à 20 secondes de plus, parce qu'il est d'abord calculé sur une carte graphique.",
+          "Les téléphones ont besoin d'upload, en Wi-Fi ou en réseau mobile. S'il ne suffit pas, c'est d'abord la résolution qui baisse, puis la fréquence d'images – et sans réseau, le téléphone continue d'enregistrer et envoie le reste plus tard. Sur tout un match, prévois une prise ou une batterie externe.",
+          "L'incrustation et les pourcentages viennent de la saisie live. Si personne ne saisit, l'image tourne, mais rien de ce qui n'a pas été tapé n'apparaît à l'image.",
+          "C'est à vous de vérifier si un match peut être diffusé : fédération et adversaire, les parents pour les équipes de jeunes, et la musique dans la salle. Le réglage du son réduit le risque lié à la musique, mais ne le supprime pas."
+        ],
+        "faq": [
+          {
+            "question": "Comment diffuser un match de handball en direct ?",
+            "answer": "Avec Statix, il te faut un ou deux téléphones, un trépied et du réseau dans la salle. Dans la régie live, tu choisis « Livestream », tu scannes avec chaque téléphone son QR code, avec deux téléphones tu règles une fois le panorama, et tu appuies sur « Passer en direct ». Les spectateurs ouvrent le lien ou le QR code dans leur navigateur – sans compte et sans appli."
+          },
+          {
+            "question": "Les spectateurs ont-ils besoin d'une appli ou d'un compte ?",
+            "answer": "Non. Le livestream tourne dans le navigateur, sur téléphone comme sur ordinateur. Tu peux partager le lien, un QR code pour le vidéoprojecteur de la salle ou la page de ton équipe, où figurent tous les matchs publiés."
+          },
+          {
+            "question": "Comment les stats arrivent-elles à l'image ?",
+            "answer": "Par la saisie live que tu fais de toute façon. Chaque action que tu tapes sur la tablette part en quelques secondes vers le serveur et apparaît en incrustation dans le stream – au moment de l'image où elle s'est produite. Les pourcentages et les séries sont calculés, pas tapés."
+          },
+          {
+            "question": "Que devient l'enregistrement après le match ?",
+            "answer": "Il arrive comme vidéo de match dans la vidéothèque, déjà synchronisé avec le chrono du match. Tu peux tout de suite sauter à chaque action saisie, regarder ou télécharger le match avec l'incrustation du score, taguer des séquences et envoyer des clips aux joueuses."
+          },
+          {
+            "question": "Est-ce que je peux déjà utiliser le livestream aujourd'hui ?",
+            "answer": "Seulement si ton compte a accès à la bêta vidéo. Le livestream est en cours de construction et de test avec quelques équipes. Écris-nous si vous voulez en être – la liste d'attente, c'est un e-mail."
           }
         ]
       },
