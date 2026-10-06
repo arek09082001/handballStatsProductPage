@@ -324,13 +324,14 @@
       "handballStats": "Estadísticas de balonmano",
       "schedule": "Calendario y asistencia",
       "videoTagging": "Etiquetado de vídeo",
-      "holdSwipe": "Mantener y deslizar"
+      "holdSwipe": "Mantener y deslizar",
+      "livestream": "Directo"
     },
     "spotlight": {
       "badge": "Nuevo",
-      "title": "Mantener y deslizar",
-      "description": "Cuatro acciones con un pulgar, directamente en la pista, sin pasar por el panel.",
-      "ariaLabel": "Nueva función: ver Mantener y deslizar"
+      "title": "Directo",
+      "description": "Retransmite partidos de balonmano con el móvil: marcador y estadísticas dentro de la imagen.",
+      "ariaLabel": "Nueva función: ver Directo"
     },
     "groups": {
       "product": "Producto",
@@ -4822,6 +4823,232 @@
           {
             "question": "¿Puede una jugadora pedir que su nombre no salga en el directo?",
             "answer": "Sí. Quien tiene acceso propio decide en los ajustes que su nombre no aparezca en las páginas públicas: entonces solo se ve el dorsal. Esa decisión prevalece sobre el ajuste del equipo y el cuerpo técnico no puede revertirla."
+          }
+        ]
+      },
+      {
+        "slug": "handball-livestream",
+        "name": "Retransmitir partidos de balonmano en directo",
+        "short": "Directo",
+        "headline": "Dos móviles, un trípode y la estadística en la imagen",
+        "summary": "Retransmite partidos de balonmano en directo con uno o dos móviles, con marcador, reloj, exclusiones de 2 minutos y estadística en directo sobreimpresionados en la imagen.",
+        "tagline": "Pon dos móviles en la línea central, registra como siempre y los padres, la afición y todos los que no pueden ir al pabellón ven el partido en directo con marcador y estadística en la imagen. Tras el pitido final, la grabación está en la videoteca, ya sincronizada con la estadística.",
+        "intro": [
+          "Una retransmisión en directo en Statix no necesita equipo de cámara ni software de streaming. Los móviles abren una página de cámara en el navegador y se emparejan con un código QR desde la sala de control en directo en la tableta. Con un móvil, alguien graba y sigue la jugada a mano. Con dos móviles en un trípode en la línea central, cada uno graba una mitad del pabellón, Statix une ambas en un panorama de todo el campo y recorta de él un encuadre que sigue el juego automáticamente: como una cámara de televisión, solo que nadie la maneja.",
+          "Sobre la imagen va el mismo grafismo que en una retransmisión: marcador, parte y tiempo de juego, un reloj por cada exclusión de 2 minutos, una tarjeta en cada gol, parada y lanzamiento fallado con dorsal y nombre y, cuando el momento lo merece, la racha o el porcentaje: «3 goles seguidos · 4/5». En un tiempo muerto se despliega una cuenta atrás bajo el reloj y, a los pocos segundos, el porcentaje de lanzamiento y de paradas del equipo. Todo sale del registro en directo que haces de todos modos: tú tocas en la tableta y el público lo ve en la imagen.",
+          "El grafismo se rige por el tiempo de la imagen, no por el reloj de la pared. Una tarjeta aparece en el directo en el momento en que registraste la acción, y quien rebobina la vuelve a ver ahí. Y como los móviles graban a la vez, tras el pitido final la retransmisión se convierte en un vídeo del partido en la videoteca, ya sincronizado con el reloj de juego: cada acción registrada es un marcador de salto, el marcador sobreimpresionado sigue el vídeo y las escenas se pueden etiquetar, cortar y enviar a las jugadoras."
+        ],
+        "facts": [
+          {
+            "term": "Estado",
+            "value": "Beta: en construcción, todavía no para todas las cuentas"
+          },
+          {
+            "term": "Cámaras",
+            "value": "1 móvil (movido a mano) o 2 móviles en panorama con seguimiento automático"
+          },
+          {
+            "term": "Grafismo",
+            "value": "Marcador, tiempo de juego, exclusiones de 2 minutos, tiempo muerto y tarjetas en goles, paradas y lanzamientos fallados con porcentajes"
+          },
+          {
+            "term": "Público",
+            "value": "Enlace o código QR, en el navegador, sin cuenta y sin app"
+          },
+          {
+            "term": "Imagen",
+            "value": "Hasta Full HD y, si quieres, una calidad reducida para redes lentas"
+          },
+          {
+            "term": "Después del partido",
+            "value": "Grabación en la videoteca, sincronizada con la estadística"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Elegir directo y emparejar los móviles",
+            "body": "En la sala de control en directo eliges «Retransmisión en directo» y uno o dos móviles. Cada cámara muestra un código QR: lo escaneas con el móvil y listo. La cámara funciona en el navegador, sin app, y envía a la sala de control el estado de la batería, la subida y la imagen."
+          },
+          {
+            "title": "Configurar el panorama",
+            "body": "Con dos móviles, ambos toman a la vez, a una señal, una imagen de calibración. Statix coloca la costura, un semáforo te dice si encaja y el ajuste se puede guardar para el pabellón: en el próximo partido en casa ya está listo. Una prueba antes del inicio muestra si la red y los móviles aguantan."
+          },
+          {
+            "title": "Salir en directo y registrar como siempre",
+            "body": "Un botón y el público ve la imagen. Registras en la tableta como en cualquier partido (goles, paradas, exclusiones de 2 minutos, tiempos muertos) y todo aparece sobreimpresionado en el directo. La sala de control te muestra el estado, el número de espectadores y cada móvil."
+          },
+          {
+            "title": "Tras el pitido final: el partido en vídeo",
+            "body": "Los móviles suben lo que falta y la grabación llega a la videoteca como vídeo del partido; con panorama, además, la imagen con seguimiento. Ya está sincronizada con la estadística: marcadores de salto, marcador sobreimpresionado, etiquetado de escenas y envío de clips funcionan al momento."
+          }
+        ],
+        "capabilities": {
+          "title": "Qué más incluye el directo",
+          "intro": "El grafismo y el panorama son lo que se ve. Alrededor está lo que sostiene una jornada en el pabellón, todo parte de la misma beta.",
+          "groups": [
+            {
+              "name": "Grabar y emitir",
+              "intro": "Lo que hacen los móviles en el pabellón.",
+              "items": [
+                {
+                  "name": "Cámara en el navegador",
+                  "body": "Sin tienda de apps: el móvil abre la página de cámara con el código QR y sigue emparejado aunque se recargue."
+                },
+                {
+                  "name": "Panorama con dos móviles",
+                  "body": "Las dos mitades del pabellón se unen en directo en una imagen de todo el campo, calculada en una tarjeta gráfica en la UE."
+                },
+                {
+                  "name": "Seguimiento automático",
+                  "body": "Del panorama sale un encuadre que sigue el juego. Si la costura falla en algún momento, mientras tanto se emite la cámara izquierda."
+                },
+                {
+                  "name": "Seguir grabando sin red",
+                  "body": "Si se corta la conexión, el móvil sigue grabando y sube lo pendiente en cuanto vuelve a tener red."
+                },
+                {
+                  "name": "Fijar la imagen",
+                  "body": "Congela exposición, enfoque y balance de blancos al empezar, para que la imagen no bombee cuando alguien pasa por delante de la cámara."
+                },
+                {
+                  "name": "Normal o gran angular",
+                  "body": "Se elige por móvil, si el dispositivo lo ofrece: más campo en la imagen sin tocar el trípode."
+                }
+              ]
+            },
+            {
+              "name": "Para el público",
+              "intro": "Lo que llega al móvil de los padres.",
+              "items": [
+                {
+                  "name": "Marcador sobreimpresionado",
+                  "body": "Resultado, tiempo de juego y colores de las camisetas como en la tele, más un reloj por cada exclusión de 2 minutos."
+                },
+                {
+                  "name": "Tarjetas con estadística",
+                  "body": "Gol, parada o lanzamiento fallado con dorsal y nombre; con porcentaje si hay racha o a partir del quinto lanzamiento."
+                },
+                {
+                  "name": "Tiempo muerto con datos",
+                  "body": "La cuenta atrás del tiempo muerto y, debajo, el porcentaje de lanzamiento y de paradas del equipo."
+                },
+                {
+                  "name": "Rebobinar",
+                  "body": "Quien se ha perdido algo, rebobina: el grafismo retrocede con la imagen y un toque lo devuelve al directo."
+                },
+                {
+                  "name": "Dos calidades",
+                  "body": "Además de Full HD, si quieres, una calidad reducida para que también con poca cobertura en la grada se vea fluido."
+                },
+                {
+                  "name": "Patrocinador en la imagen",
+                  "body": "Un patrocinador principal como logotipo en el directo, identificado como publicidad y en el lado del rival, para que no tape nada."
+                }
+              ]
+            },
+            {
+              "name": "En la sala de control",
+              "intro": "Lo que el entrenador controla en la tableta.",
+              "items": [
+                {
+                  "name": "Privado o público",
+                  "body": "Un interruptor decide quién lo ve. En público, todos los que tienen el enlace ven primero la página de espera y, a partir de «Salir en directo», la imagen."
+                },
+                {
+                  "name": "Interruptor de sonido",
+                  "body": "Sonido completo, solo ambiente o apagado: contra la música del pabellón y las conversaciones en el banquillo. Vale para el directo y la grabación."
+                },
+                {
+                  "name": "Prueba",
+                  "body": "Cinco minutos de prueba con un informe sobre red, imagen y móviles, sin que ningún espectador vea nada."
+                },
+                {
+                  "name": "Reanudar el directo",
+                  "body": "¿Lo terminaste sin querer? Hasta 30 minutos después la misma retransmisión continúa y los móviles siguen emparejados."
+                }
+              ]
+            },
+            {
+              "name": "Tras el pitido final",
+              "intro": "En qué se convierte la retransmisión.",
+              "items": [
+                {
+                  "name": "Vídeo del partido en la videoteca",
+                  "body": "Cada cámara y el panorama con seguimiento llegan al partido como vídeo, sin subirlos tú."
+                },
+                {
+                  "name": "Sincronizado con la estadística",
+                  "body": "La sincronización con el reloj de juego ya está calculada: cada acción registrada es un marcador de salto en el vídeo."
+                },
+                {
+                  "name": "Descarga con marcador",
+                  "body": "Descarga el partido en MP4, si quieres con el marcador sobreimpresionado incrustado."
+                },
+                {
+                  "name": "Escenas para las jugadoras",
+                  "body": "Etiqueta escenas, envíalas como montaje a jugadoras concretas o compártelas con el equipo."
+                }
+              ]
+            }
+          ]
+        },
+        "shots": [
+          {
+            "alt": "Una retransmisión de balonmano en directo en Statix con marcador sobreimpresionado y una tarjeta de gol: Anna Becker, 3 goles seguidos, 4 de 5 lanzamientos",
+            "label": "Gol: con racha y porcentaje, justo en la imagen (el campo de debajo está dibujado)"
+          },
+          {
+            "alt": "El tiempo muerto en el directo de Statix: cuenta atrás bajo el reloj de juego, debajo el porcentaje de lanzamiento y de paradas del equipo y el reloj de una exclusión de 2 minutos en curso",
+            "label": "Tiempo muerto: cuenta atrás y porcentajes del equipo (campo dibujado)"
+          },
+          {
+            "alt": "La sala de control en directo de Statix durante una retransmisión: estado en directo, 143 espectadores, dos móviles emparejados con vista previa y el pod en directo para costura y seguimiento",
+            "label": "La sala de control en la tableta: todo a la vista, un botón"
+          },
+          {
+            "alt": "La sala de control en directo de Statix durante la preparación: el móvil izquierdo está emparejado, para el derecho hay un código QR listo y al lado la lista de comprobación",
+            "label": "Emparejar: escanear el código QR y listo"
+          },
+          {
+            "alt": "Configurar el panorama en Statix: dos mitades del pabellón unidas en una imagen de toda la pista, con el aviso de que la costura encaja",
+            "label": "Dos móviles, una imagen: la costura encaja (pabellón dibujado)"
+          },
+          {
+            "alt": "El directo de Statix en el móvil de un espectador: imagen con marcador sobreimpresionado y tarjeta de gol, debajo el desarrollo del partido",
+            "label": "En el móvil del espectador: imagen arriba, desarrollo del partido debajo (campo dibujado)"
+          },
+          {
+            "alt": "La página del directo tras el pitido final en el móvil: resultado final 27:23 y el botón «Ver grabación»",
+            "label": "Tras el pitido final: resultado final y grabación"
+          }
+        ],
+        "limits": [
+          "La retransmisión en directo está en construcción y, mientras se construye, limitada a cuentas seleccionadas. Si todavía no la ves, puedes seguir publicando el marcador en directo del mismo partido: en cada partido hay o marcador en directo o retransmisión.",
+          "En directo no significa simultáneo: con un móvil, la imagen va unos segundos por detrás del pabellón; el panorama unido, otros 10 a 20 segundos más, porque primero se genera en una tarjeta gráfica.",
+          "Los móviles necesitan subida, por wifi o datos móviles. Si no basta, primero baja la resolución y luego la frecuencia de imagen, y sin red el móvil sigue grabando y sube lo pendiente después. Para un partido entero hace falta un enchufe o una batería externa.",
+          "El grafismo y los porcentajes salen del registro en directo. Si nadie registra, la imagen se emite, pero en ella no aparece nada que no se haya tocado.",
+          "Si un partido se puede retransmitir lo aclaráis vosotros: con la federación y el rival, en categorías base con los padres, y la música del pabellón. El interruptor de sonido reduce el riesgo por la música, pero no lo elimina."
+        ],
+        "faq": [
+          {
+            "question": "¿Cómo puedo retransmitir un partido de balonmano en directo?",
+            "answer": "Con Statix necesitas uno o dos móviles, un trípode y red en el pabellón. En la sala de control en directo eliges «Retransmisión en directo», escaneas con cada móvil su código QR, con dos móviles configuras una vez el panorama y pulsas «Salir en directo». El público abre el enlace o el código QR en el navegador, sin cuenta y sin app."
+          },
+          {
+            "question": "¿El público necesita una app o una cuenta?",
+            "answer": "No. La retransmisión funciona en el navegador, tanto en el móvil como en el ordenador. Puedes compartir el enlace, un código QR para el proyector del pabellón o la página de tu equipo, donde están todos los partidos publicados."
+          },
+          {
+            "question": "¿Cómo llega la estadística a la imagen?",
+            "answer": "A través del registro en directo que haces de todos modos. Cada acción que tocas en la tableta llega al servidor en segundos y aparece sobreimpresionada en el directo, en el punto de la imagen en que ocurrió. Los porcentajes y las rachas se calculan, no se teclean."
+          },
+          {
+            "question": "¿Qué pasa con la grabación después del partido?",
+            "answer": "Llega a la videoteca como vídeo del partido, ya sincronizada con el reloj de juego. Puedes saltar al momento a cualquier acción registrada, ver o descargar el partido con el marcador sobreimpresionado, etiquetar escenas y enviar clips a las jugadoras."
+          },
+          {
+            "question": "¿Puedo usar la retransmisión en directo ya hoy?",
+            "answer": "Solo si tu cuenta tiene activada la beta de vídeo. La retransmisión en directo se está construyendo y probando con algunos equipos. Escríbenos si queréis participar: la lista de espera es un correo electrónico."
           }
         ]
       },

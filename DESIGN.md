@@ -145,6 +145,12 @@ one thing they came for.
   badge component in three tones; `live` is a quiet ink/chalk chip on purpose,
   because on a page where fourteen of fifteen entries are finished, the ones
   that are not are the news.
+- **A drawn picture inside a real capture says so too.** The livestream shots
+  (`/funktionen/handball-livestream`) are real captures of the viewer page and
+  the live control room, but the picture they carry is the board's own court,
+  drawn in perspective (`scripts/screenshots/livestream/court.mjs`) — there is
+  no match footage in the pipeline, and a stock clip under our overlay would be
+  a fabricated broadcast. The labels under those shots name it as drawn.
 - **A drawn illustration says so.** `TaggingBenchMock` is the one non‑photograph
   in this world, and its own standfirst names it as drawn. Where a real capture
   exists it is used; the mock exists because the video stage resolves to object

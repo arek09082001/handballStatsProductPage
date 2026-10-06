@@ -260,3 +260,85 @@ Stand heute bleibt die Aufnahme gegen die Live-Demo aus der Sandbox heraus an
 Chromiums TLS-Handshake hängen. Aus der Sandbox funktioniert nur `localhost`
 (dafür braucht es eine lokal laufende App mit Daten); von außerhalb funktioniert
 alles.
+
+## Livestream (`scripts/screenshots/livestream/`)
+
+Die Seite `/funktionen/handball-livestream` zeigt zwei Oberflächen, die
+`capture.mjs` nicht erreicht: die **Zuschauerseite** (Repo liveStatixMatches)
+und die **Live-Regie** der App. Beide werden mit ECHTEN Komponenten
+aufgenommen, die Daten kommen von einem Stand-in.
+
+Das Bild unter der Einblendung ist **gezeichnet** (`court.mjs`: das Spielfeld
+der Trainertafel in Perspektive, Magnete als Spielerinnen) — echte
+Spielaufnahmen gibt es in dieser Pipeline nicht, und ein fremdes Video unter
+unserer Einblendung wäre eine erfundene Übertragung. Die Bildunterschriften
+sagen das. Alles andere im Bild ist echt.
+
+Alle Zwischenstände landen in `.screenshots-livestream/` (gitignored).
+
+```bash
+WD=.screenshots-livestream; mkdir -p $WD/media/main
+D=scripts/screenshots/livestream
+# 1. Das gezeichnete Bild: TV-Ausschnitt in 1080p, dazu die beiden Hälften
+node $D/court.mjs $WD/tv1080.svg tv 1920 1080
+node $D/court.mjs $WD/left.svg left && node $D/court.mjs $WD/right.svg right
+W=1920 H=1080 node $D/render.mjs $WD/tv1080.svg:$WD/tv1080.png   # W/H = Viewport
+node $D/render.mjs $WD/left.svg:$WD/left.png $WD/right.svg:$WD/right.png
+# 2. Als HLS in 2-s-Stücken (VP9: Playwrights Chromium hat kein H.264)
+ffmpeg -loop 1 -framerate 30 -i $WD/tv1080.png -f lavfi -i anullsrc=r=48000:cl=stereo -t 120 \
+  -vf format=yuv420p -c:v libvpx-vp9 -b:v 4000k -deadline realtime -cpu-used 8 -g 60 \
+  -c:a libopus -f hls -hls_time 2 -hls_segment_type fmp4 -hls_playlist_type vod \
+  -hls_fmp4_init_filename init.mp4 -hls_segment_filename "$WD/media/main/%d.m4s" $WD/media/main/index.m3u8
+```
+
+**Zuschauerseite.** `viewer-api.mjs` ist ein Stand-in der öffentlichen
+Live-API (nach `scripts/stream-bench/states.mjs` in liveStatixMatches): ein
+Spiel 13:11 mit Kader, Toren, Fehlwürfen, Paraden, einer Zeitstrafe und einer
+Auszeit — so gesetzt, dass Becker ihr drittes Tor in Folge wirft (Karte mit
+Serie und Quote) und die Auszeit Wurf- und Paradenquote zeigt. `/__reset?start=N`
+legt die Live-Kante fest, damit der Spieler genau am gewünschten Moment steht
+(ein Sprung per `currentTime` wird vom Live-Spieler überstimmt).
+
+```bash
+node $D/viewer-api.mjs &                                   # :4000
+# im Repo liveStatixMatches:
+NEXT_PUBLIC_STATS_API_URL=http://localhost:4000 STATS_API_URL=http://localhost:4000 npx next dev -p 3001 &
+node $D/viewer-shots.mjs                                   # → .screenshots-livestream/out
+```
+
+`desktop-goal` → `livestream-einblendung-tor.png`, `desktop-timeout` →
+`livestream-auszeit-quoten.png`, `phone-goal` → `mobil-livestream.png`,
+`phone-ended` → `mobil-livestream-aufzeichnung.png`.
+
+**Live-Regie.** `regie/harness.tsx` mountet die echte `LiveDirectorPage` der
+App; die Antworten der API baut der echte `serializeLiveSession` aus
+Datenbankzeilen, die der Harness von Hand füllt (`#setup`: links gekoppelt,
+rechts wartet mit QR-Code; `#live`: beide senden, Pod liefert, 143
+Zuschauer). Gebaut wird gegen das App-Repo daneben (`STATIX_APP_DIR`, Vorgabe
+`../handballStats`, dort `npm ci`). Ausgeliefert unter
+`https://app.statix-app.de` (per Playwright-Route), damit der QR-Code und der
+Link im Bild die echte Adresse tragen.
+
+```bash
+node $D/regie/build.mjs
+CROP=1 W=1280 H=1000 CLICKS='Kameras koppeln' node $D/regie/shoot.mjs '' setup   # → livestream-kameras-koppeln.png
+CROP=1 W=1280 H=1100 node $D/regie/shoot.mjs '' live                              # → livestream-regie-live.png
+```
+
+`livestream-panorama-naht.jpg` ist der echte Dialog „Panorama einrichten“
+(`#panorama`): beide Handys gekoppelt, Kalibrierbilder aufgenommen. Die
+Bilder sind die künstliche Testhalle der App (`lib/testing/synthetic-hall.ts`:
+dieselbe Halle, dasselbe Stativ, dasselbe Fischauge, das die Naht annimmt) —
+in FARBE, `regie/colour-hall.ts` malt Feld, Linien, Banden, Tribüne und
+Lampen. Die Naht findet `fitSeam` wie in den Tests der App
+(`stitch-autofit.test.ts`): gerechnet auf 320 × 180, die Linse danach auf
+1280 × 720 hochgerechnet (nur `left_uniforms`/`right_uniforms` sind in
+Pixeln). Der Dialog sucht beim Öffnen selbst noch einmal und meldet „Passt“.
+
+```bash
+W=1280 H=1000 node $D/regie/shoot.mjs '' panorama      # ~1 min, dann zuschneiden:
+python3 -c "from PIL import Image; Image.open('.screenshots-livestream/regie/out/regie-panorama.png').convert('RGB').crop((116,920,2424,2770)).save('public/livestream-panorama-naht.jpg', quality=88)"
+```
+
+Mannschaften, Halle und Link sind Platzhalter („HSG Muster“ gegen „SV
+Beispiel“, „Sporthalle Nord“) — auf der Produktseite steht kein echter Verein.

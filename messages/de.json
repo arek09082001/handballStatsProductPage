@@ -324,13 +324,14 @@
       "handballStats": "Handball-Statistiken",
       "schedule": "Termine & Teilnahme",
       "videoTagging": "Video-Tagging",
-      "holdSwipe": "Halten & Wischen"
+      "holdSwipe": "Halten & Wischen",
+      "livestream": "Livestream"
     },
     "spotlight": {
       "badge": "Neu",
-      "title": "Halten & Wischen",
-      "description": "Vier Aktionen mit einem Daumen, direkt auf dem Spielfeld – ohne Umweg über das Panel.",
-      "ariaLabel": "Neue Funktion: Halten & Wischen ansehen"
+      "title": "Livestream",
+      "description": "Handballspiele mit dem Handy live übertragen – Spielstand und Statistik laufen im Bild mit.",
+      "ariaLabel": "Neue Funktion: Livestream ansehen"
     },
     "groups": {
       "product": "Produkt",
@@ -4822,6 +4823,232 @@
           {
             "question": "Kann eine Spielerin verlangen, dass ihr Name nicht im Ticker steht?",
             "answer": "Ja. Wer einen eigenen Zugang hat, legt in den Einstellungen fest, dass der Name auf öffentlichen Seiten nicht erscheint — dann steht dort nur die Nummer. Diese Entscheidung geht der Einstellung der Mannschaft vor und lässt sich vom Trainerteam nicht überschreiben."
+          }
+        ]
+      },
+      {
+        "slug": "handball-livestream",
+        "name": "Handballspiele livestreamen",
+        "short": "Livestream",
+        "headline": "Zwei Handys, ein Stativ – und die Statistik läuft im Bild mit",
+        "summary": "Handballspiele mit einem oder zwei Handys live übertragen – mit Spielstand, Uhr, Zeitstrafen und Live-Statistik als Einblendung im Bild.",
+        "tagline": "Stell zwei Handys an die Mittellinie, erfasse wie gewohnt – und Eltern, Fans und alle, die nicht in die Halle kommen, sehen das Spiel live mit Spielstand und Statistik im Bild. Nach dem Abpfiff liegt die Aufzeichnung in der Videobibliothek, schon passend zur Statistik.",
+        "intro": [
+          "Ein Livestream in Statix braucht keine Kamera-Ausrüstung und keine Streaming-Software. Die Handys öffnen eine Kamera-Seite im Browser, gekoppelt wird per QR-Code aus der Live-Regie auf dem Tablet. Mit einem Handy filmt jemand und schwenkt von Hand mit. Mit zwei Handys auf einem Stativ an der Mittellinie nimmt jedes eine Hallenhälfte auf, Statix näht beide zu einem Panorama des ganzen Felds und schneidet daraus einen Ausschnitt, der dem Spiel automatisch folgt – wie eine Fernsehkamera, nur dass niemand sie bedient.",
+          "Über dem Bild liegt dieselbe Einblendung wie bei einer Übertragung: Spielstand, Halbzeit und Spielzeit, eine Uhr für jede Zeitstrafe, eine Karte bei Tor, Parade und Fehlwurf mit Rückennummer und Name – und wenn der Moment es hergibt, die Serie oder die Quote dazu: „3 Tore in Folge · 4/5“. Bei einer Auszeit klappt unter der Uhr ein Countdown auf, nach ein paar Sekunden mit Wurf- und Paradenquote der Mannschaft. Das alles kommt aus der Live-Erfassung, die du ohnehin machst: Du tippst auf dem Tablet, und die Zuschauer sehen es im Bild.",
+          "Die Einblendung richtet sich nach der Bildzeit, nicht nach der Uhr an der Wand. Eine Karte erscheint im Stream an der Stelle, an der du die Aktion erfasst hast – auch wer zurückspult, sieht sie dort wieder. Und weil die Handys gleichzeitig aufzeichnen, wird aus dem Livestream nach dem Abpfiff ein Spielvideo in der Bibliothek, das schon mit der Spieluhr abgeglichen ist: Jede erfasste Aktion ist eine Sprungmarke, die Spielstand-Einblendung läuft mit, Szenen lassen sich taggen, schneiden und an Spielerinnen schicken."
+        ],
+        "facts": [
+          {
+            "term": "Stand",
+            "value": "Beta – im Aufbau, noch nicht für alle Konten"
+          },
+          {
+            "term": "Kameras",
+            "value": "1 Handy (von Hand geschwenkt) oder 2 Handys als Panorama mit automatischem Schwenk"
+          },
+          {
+            "term": "Einblendung",
+            "value": "Spielstand, Spielzeit, Zeitstrafen, Auszeit und Karten bei Tor, Parade und Fehlwurf mit Quoten"
+          },
+          {
+            "term": "Zuschauer",
+            "value": "Link oder QR-Code, im Browser, ohne Konto und ohne App"
+          },
+          {
+            "term": "Bild",
+            "value": "Bis Full HD, dazu auf Wunsch eine kleine Stufe für schwaches Netz"
+          },
+          {
+            "term": "Nach dem Spiel",
+            "value": "Aufzeichnung in der Videobibliothek, synchron zur Statistik"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Livestream wählen und Handys koppeln",
+            "body": "In der Live-Regie wählst du „Livestream“ und ein oder zwei Handys. Jede Kamera zeigt einen QR-Code – mit dem Handy scannen, fertig. Die Kamera läuft im Browser, ohne App, und meldet Akku, Upload und Bild an die Regie."
+          },
+          {
+            "title": "Panorama einrichten",
+            "body": "Bei zwei Handys nehmen beide auf ein Zeichen gleichzeitig ein Kalibrierbild auf. Statix legt die Naht, eine Ampel sagt, ob sie passt, und die Einstellung lässt sich für die Halle merken – beim nächsten Heimspiel steht sie schon. Ein Probelauf vor dem Anwurf zeigt, ob Netz und Handys durchhalten."
+          },
+          {
+            "title": "Live gehen und erfassen wie immer",
+            "body": "Ein Knopf, und die Zuschauer sehen das Bild. Du erfasst auf dem Tablet wie bei jedem Spiel – Tore, Paraden, Zeitstrafen, Auszeiten –, und alles erscheint als Einblendung im Stream. Die Regie zeigt Zustand, Zuschauerzahl und jedes Handy im Blick."
+          },
+          {
+            "title": "Nach dem Abpfiff: das Spiel als Video",
+            "body": "Die Handys laden den Rest hoch, die Aufzeichnung landet als Spielvideo in der Bibliothek – im Panorama zusätzlich das geschwenkte Bild. Es ist schon mit der Statistik abgeglichen: Sprungmarken, Spielstand-Einblendung, Szenen taggen und Clips verschicken gehen sofort."
+          }
+        ],
+        "capabilities": {
+          "title": "Was zum Livestream noch dazugehört",
+          "intro": "Die Einblendung und das Panorama sind das, was man sieht. Drumherum steckt, was einen Spieltag in der Halle trägt – alles Teil derselben Beta.",
+          "groups": [
+            {
+              "name": "Aufnehmen & senden",
+              "intro": "Was die Handys in der Halle tun.",
+              "items": [
+                {
+                  "name": "Kamera im Browser",
+                  "body": "Kein App-Store: Das Handy öffnet die Kamera-Seite über den QR-Code und bleibt gekoppelt, auch wenn es neu lädt."
+                },
+                {
+                  "name": "Panorama aus zwei Handys",
+                  "body": "Zwei Hallenhälften werden live zu einem Bild des ganzen Felds genäht – gerechnet auf einer Grafikkarte in der EU."
+                },
+                {
+                  "name": "Automatischer Schwenk",
+                  "body": "Aus dem Panorama wird ein Ausschnitt, der dem Spiel folgt. Liefert die Naht einmal nicht, geht so lange die linke Kamera hinaus."
+                },
+                {
+                  "name": "Ohne Netz weiter aufnehmen",
+                  "body": "Reißt die Verbindung ab, nimmt das Handy weiter auf und lädt nach, sobald es wieder Netz hat."
+                },
+                {
+                  "name": "Bild festhalten",
+                  "body": "Belichtung, Fokus und Weißabgleich beim Start einfrieren, damit das Bild nicht pumpt, wenn jemand vor der Kamera vorbeiläuft."
+                },
+                {
+                  "name": "Normal oder Weitwinkel",
+                  "body": "Je Handy wählbar, wo das Gerät es anbietet – mehr Feld im Bild ohne Umbau am Stativ."
+                }
+              ]
+            },
+            {
+              "name": "Für die Zuschauer",
+              "intro": "Was auf dem Handy der Eltern ankommt.",
+              "items": [
+                {
+                  "name": "Spielstand-Einblendung",
+                  "body": "Stand, Spielzeit und Trikotfarben wie im Fernsehen, dazu eine Uhr je Zeitstrafe."
+                },
+                {
+                  "name": "Karten mit Statistik",
+                  "body": "Tor, Parade oder Fehlwurf mit Nummer und Name – bei einer Serie oder ab dem fünften Wurf mit Quote."
+                },
+                {
+                  "name": "Auszeit mit Zahlen",
+                  "body": "Der Countdown der Auszeit und darunter die Wurf- und Paradenquote der Mannschaft."
+                },
+                {
+                  "name": "Zurückspulen",
+                  "body": "Wer etwas verpasst hat, spult zurück – die Einblendung läuft mit dem Bild zurück, und ein Tipp bringt ihn wieder live."
+                },
+                {
+                  "name": "Zwei Qualitäten",
+                  "body": "Neben Full HD auf Wunsch eine kleine Stufe, damit auch schwaches Netz auf der Tribüne flüssig bleibt."
+                },
+                {
+                  "name": "Sponsor im Bild",
+                  "body": "Ein Präsentations-Sponsor als Logo im Stream, gekennzeichnet und auf der Seite des Gegners, damit er nichts verdeckt."
+                }
+              ]
+            },
+            {
+              "name": "In der Regie",
+              "intro": "Was der Trainer auf dem Tablet steuert.",
+              "items": [
+                {
+                  "name": "Privat oder öffentlich",
+                  "body": "Ein Schalter entscheidet, wer zusieht. Öffentlich sehen alle mit dem Link zuerst die Warteseite und ab „Live gehen“ das Bild."
+                },
+                {
+                  "name": "Ton-Schalter",
+                  "body": "Voller Ton, nur Atmosphäre oder aus – gegen Hallenmusik und Gespräche auf der Bank. Gilt für Stream und Aufzeichnung."
+                },
+                {
+                  "name": "Probelauf",
+                  "body": "Fünf Minuten zur Probe mit Bericht über Netz, Bild und Handys – ohne dass ein Zuschauer etwas sieht."
+                },
+                {
+                  "name": "Live fortsetzen",
+                  "body": "Aus Versehen beendet? Bis zu 30 Minuten danach geht dieselbe Übertragung weiter, die Handys bleiben gekoppelt."
+                }
+              ]
+            },
+            {
+              "name": "Nach dem Abpfiff",
+              "intro": "Was aus der Übertragung wird.",
+              "items": [
+                {
+                  "name": "Spielvideo in der Bibliothek",
+                  "body": "Jede Kamera und das geschwenkte Panorama landen als Video beim Spiel – ohne eigenen Upload."
+                },
+                {
+                  "name": "Synchron zur Statistik",
+                  "body": "Der Abgleich mit der Spieluhr ist schon gerechnet: Jede erfasste Aktion ist eine Sprungmarke im Video."
+                },
+                {
+                  "name": "Download mit Spielstand",
+                  "body": "Das Spiel als MP4 herunterladen – auf Wunsch mit eingebrannter Spielstand-Einblendung."
+                },
+                {
+                  "name": "Szenen an Spielerinnen",
+                  "body": "Szenen taggen, als Zusammenschnitt an einzelne Spielerinnen schicken oder für die Mannschaft freigeben."
+                }
+              ]
+            }
+          ]
+        },
+        "shots": [
+          {
+            "alt": "Ein Handball-Livestream in Statix mit Spielstand-Einblendung und einer Torkarte: Anna Becker, 3 Tore in Folge, 4 von 5 Würfen",
+            "label": "Tor – mit Serie und Quote, genau im Bild (das Spielfeld darunter ist gezeichnet)"
+          },
+          {
+            "alt": "Die Auszeit im Statix-Livestream: Countdown unter der Spieluhr, darunter Wurf- und Paradenquote der Mannschaft und die Uhr einer laufenden Zeitstrafe",
+            "label": "Auszeit: Countdown und Quoten der Mannschaft (Spielfeld gezeichnet)"
+          },
+          {
+            "alt": "Die Live-Regie in Statix während einer Übertragung: Live-Status, 143 Zuschauer, zwei gekoppelte Handys mit Vorschaubild und der Live-Pod für Naht und Schwenk",
+            "label": "Die Regie auf dem Tablet: alles im Blick, ein Knopf"
+          },
+          {
+            "alt": "Die Live-Regie in Statix beim Einrichten: das linke Handy ist gekoppelt, für das rechte steht ein QR-Code bereit, daneben die Checkliste zur Vorbereitung",
+            "label": "Koppeln: QR-Code scannen, fertig"
+          },
+          {
+            "alt": "Panorama einrichten in Statix: zwei Hallenhälften zu einem Bild des ganzen Felds genäht, mit der Meldung, dass die Naht sitzt",
+            "label": "Zwei Handys, ein Bild: die Naht sitzt (Halle gezeichnet)"
+          },
+          {
+            "alt": "Der Statix-Livestream auf dem Handy eines Zuschauers: Bild mit Spielstand-Einblendung und Torkarte, darunter der Spielverlauf",
+            "label": "Beim Zuschauer: Bild oben, Spielverlauf darunter (Spielfeld gezeichnet)"
+          },
+          {
+            "alt": "Die Livestream-Seite nach dem Abpfiff auf dem Handy: Endstand 27:23 und der Knopf „Aufzeichnung ansehen“",
+            "label": "Nach dem Abpfiff: Endstand und Aufzeichnung"
+          }
+        ],
+        "limits": [
+          "Der Livestream ist im Aufbau und auf ausgewählte Konten begrenzt, solange er gebaut wird. Wer ihn noch nicht sieht, kann für dasselbe Spiel weiter den Live-Ticker veröffentlichen – je Spiel gibt es entweder Ticker oder Livestream.",
+          "Live heißt nicht gleichzeitig: Mit einem Handy liegt das Bild einige Sekunden hinter der Halle, das genähte Panorama noch einmal 10 bis 20 Sekunden mehr, weil es erst auf einer Grafikkarte entsteht.",
+          "Die Handys brauchen Upload, über WLAN oder Mobilfunk. Reicht er nicht, sinkt erst die Auflösung, dann die Bildrate – und ohne Netz nimmt das Handy weiter auf und lädt nach. Eine Steckdose oder Powerbank gehört über ein ganzes Spiel dazu.",
+          "Einblendung und Quoten kommen aus der Live-Erfassung. Erfasst niemand mit, läuft das Bild, aber im Bild steht dann auch nichts, was nicht getippt wurde.",
+          "Ob ein Spiel übertragen werden darf, klärt ihr: Verband und Gegner, bei Jugendmannschaften die Eltern, und die Musik in der Halle. Der Ton-Schalter mindert das Musik-Risiko, beseitigt es aber nicht."
+        ],
+        "faq": [
+          {
+            "question": "Wie kann ich ein Handballspiel livestreamen?",
+            "answer": "Mit Statix brauchst du ein oder zwei Handys, ein Stativ und Netz in der Halle. In der Live-Regie wählst du „Livestream“, scannst mit jedem Handy seinen QR-Code, richtest bei zwei Handys einmal das Panorama ein und drückst „Live gehen“. Die Zuschauer öffnen den Link oder QR-Code im Browser – ohne Konto und ohne App."
+          },
+          {
+            "question": "Brauchen die Zuschauer eine App oder ein Konto?",
+            "answer": "Nein. Der Livestream läuft im Browser, auf dem Handy wie am Rechner. Teilen kannst du den Link, einen QR-Code für den Hallen-Beamer oder die Seite deiner Mannschaft, auf der alle veröffentlichten Spiele stehen."
+          },
+          {
+            "question": "Wie kommt die Statistik ins Bild?",
+            "answer": "Über die Live-Erfassung, die du sowieso machst. Jede Aktion, die du auf dem Tablet tippst, geht in Sekunden an den Server und erscheint als Einblendung im Stream – an der Stelle im Bild, an der sie passiert ist. Quoten und Serien werden dabei gerechnet, nicht getippt."
+          },
+          {
+            "question": "Was passiert mit der Aufzeichnung nach dem Spiel?",
+            "answer": "Sie landet als Spielvideo in der Videobibliothek, schon mit der Spieluhr abgeglichen. Du kannst sofort zu jeder erfassten Aktion springen, das Spiel mit Spielstand-Einblendung ansehen oder herunterladen, Szenen taggen und Clips an Spielerinnen schicken."
+          },
+          {
+            "question": "Kann ich den Livestream heute schon nutzen?",
+            "answer": "Nur, wenn dein Konto für die Video-Beta freigeschaltet ist. Der Livestream wird gerade mit einigen Teams gebaut und getestet. Schreib uns, wenn ihr dabei sein wollt – die Warteliste ist eine E-Mail."
           }
         ]
       },

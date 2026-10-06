@@ -36,6 +36,11 @@ const productGroup: NavigationGroup = {
     // site at that anchor.
     { ident: 1, href: FEATURES_PAGE_PATH, labelKey: 'features' },
     {
+      ident: 28,
+      href: featurePath('handball-livestream'),
+      labelKey: 'livestream',
+    },
+    {
       ident: 27,
       href: featurePath('halten-und-wischen'),
       labelKey: 'holdSwipe',
@@ -106,9 +111,10 @@ const resourcesGroup: NavigationGroup = {
 };
 
 /**
- * The feature the header shows off on its own: a magnet with the gesture's
- * four arrows and a "Neu" badge, beside the entries on desktop and beside the
- * menu button on a phone, plus a card at the top of the mobile menu.
+ * The feature the header shows off on its own: a magnet with the feature's
+ * mark (the livestream's broadcast dot) and a "Neu" badge, beside the
+ * entries on desktop and beside the menu button on a phone, plus a card at
+ * the top of the mobile menu.
  *
  * Deliberately a separate slot and not a sixth header entry. The header row is
  * kept to five words on purpose (see below), and a new feature is news for a
@@ -116,8 +122,8 @@ const resourcesGroup: NavigationGroup = {
  * this constant goes and the footer entry in `productGroup` stays.
  */
 export const navigationSpotlight: NavigationSpotlight = {
-  href: featurePath('halten-und-wischen'),
-  labelKey: 'holdSwipe',
+  href: featurePath('handball-livestream'),
+  labelKey: 'livestream',
 };
 
 export const siteLinkGroups: NavigationGroup[] = [

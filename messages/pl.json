@@ -324,13 +324,14 @@
       "handballStats": "Statystyki piłki ręcznej",
       "schedule": "Terminy i frekwencja",
       "videoTagging": "Tagowanie wideo",
-      "holdSwipe": "Przytrzymaj i przesuń"
+      "holdSwipe": "Przytrzymaj i przesuń",
+      "livestream": "Transmisja"
     },
     "spotlight": {
       "badge": "Nowość",
-      "title": "Przytrzymaj i przesuń",
-      "description": "Cztery akcje jednym kciukiem, prosto na boisku – bez zaglądania do panelu.",
-      "ariaLabel": "Nowa funkcja: zobacz Przytrzymaj i przesuń"
+      "title": "Transmisja na żywo",
+      "description": "Transmituj mecze piłki ręcznej telefonem – wynik i statystyki widać na obrazie.",
+      "ariaLabel": "Nowa funkcja: zobacz transmisję na żywo"
     },
     "groups": {
       "product": "Produkt",
@@ -4822,6 +4823,232 @@
           {
             "question": "Czy zawodniczka może zażądać, by jej nazwisko nie pojawiało się w relacji?",
             "answer": "Tak. Kto ma własny dostęp, ustala w ustawieniach, że nazwisko nie pojawia się na stronach publicznych – widoczny jest wtedy tylko numer. Ta decyzja ma pierwszeństwo przed ustawieniem drużyny i sztab nie może jej cofnąć."
+          }
+        ]
+      },
+      {
+        "slug": "handball-livestream",
+        "name": "Transmisja meczów piłki ręcznej na żywo",
+        "short": "Transmisja",
+        "headline": "Dwa telefony, jeden statyw – a statystyki lecą na obrazie",
+        "summary": "Transmituj mecze piłki ręcznej na żywo z jednego lub dwóch telefonów – z wynikiem, zegarem, karami 2 minut i statystykami na żywo nałożonymi na obraz.",
+        "tagline": "Postaw dwa telefony przy linii środkowej, rejestruj jak zwykle – a rodzice, kibice i wszyscy, którzy nie dotrą na halę, oglądają mecz na żywo z wynikiem i statystykami na obrazie. Po końcowym gwizdku nagranie leży w bibliotece wideo, od razu zgrane ze statystykami.",
+        "intro": [
+          "Transmisja na żywo w Statix nie wymaga sprzętu kamerowego ani oprogramowania do streamingu. Telefony otwierają stronę kamery w przeglądarce, a parujesz je kodem QR z reżyserki na żywo na tablecie. Z jednym telefonem ktoś filmuje i sam prowadzi kamerę za akcją. Z dwoma telefonami na statywie przy linii środkowej każdy nagrywa jedną połowę hali, Statix zszywa oba obrazy w panoramę całego boiska i wycina z niej kadr, który automatycznie podąża za grą – jak kamera telewizyjna, tylko że nikt nie musi jej obsługiwać.",
+          "Na obrazie leży ta sama grafika co w transmisji telewizyjnej: wynik, połowa i czas gry, zegar dla każdej kary 2 minut, karta przy bramce, obronie i niecelnym rzucie z numerem na koszulce i nazwiskiem – a gdy chwila na to pozwala, także seria albo skuteczność: „3 bramki z rzędu · 4/5”. Przy czasie (time-out) pod zegarem rozwija się odliczanie, a po kilku sekundach skuteczność rzutów i obron drużyny. Wszystko to pochodzi z rejestracji na żywo, którą i tak prowadzisz: ty stukasz na tablecie, a widzowie widzą to na obrazie.",
+          "Grafika trzyma się czasu obrazu, a nie zegara na ścianie. Karta pojawia się w transmisji dokładnie w miejscu, w którym zarejestrowałeś akcję – kto przewinie wstecz, zobaczy ją tam ponownie. A ponieważ telefony jednocześnie nagrywają, po końcowym gwizdku z transmisji powstaje wideo meczu w bibliotece, już zgrane z zegarem meczu: każda zarejestrowana akcja jest znacznikiem, do którego można przeskoczyć, grafika z wynikiem idzie razem z obrazem, a sceny możesz tagować, przycinać i wysyłać zawodniczkom."
+        ],
+        "facts": [
+          {
+            "term": "Status",
+            "value": "Beta – w budowie, jeszcze nie dla wszystkich kont"
+          },
+          {
+            "term": "Kamery",
+            "value": "1 telefon (prowadzony ręcznie) albo 2 telefony jako panorama z automatycznym prowadzeniem kadru"
+          },
+          {
+            "term": "Grafika",
+            "value": "Wynik, czas gry, kary 2 minut, czas (time-out) i karty przy bramce, obronie i niecelnym rzucie ze skutecznością"
+          },
+          {
+            "term": "Widzowie",
+            "value": "Link lub kod QR, w przeglądarce, bez konta i bez aplikacji"
+          },
+          {
+            "term": "Obraz",
+            "value": "Do Full HD, a na życzenie dodatkowo niższa jakość na słabą sieć"
+          },
+          {
+            "term": "Po meczu",
+            "value": "Nagranie w bibliotece wideo, zsynchronizowane ze statystykami"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Wybierz transmisję i sparuj telefony",
+            "body": "W reżyserce na żywo wybierasz „Transmisja na żywo” i jeden lub dwa telefony. Każda kamera pokazuje kod QR – zeskanuj go telefonem i gotowe. Kamera działa w przeglądarce, bez aplikacji, i zgłasza do reżyserki baterię, wysyłanie i obraz."
+          },
+          {
+            "title": "Ustaw panoramę",
+            "body": "Przy dwóch telefonach oba na sygnał jednocześnie robią zdjęcie kalibracyjne. Statix wyznacza szew, sygnalizator mówi, czy pasuje, a ustawienie możesz zapamiętać dla hali – przy następnym meczu u siebie będzie już gotowe. Próba przed rozpoczęciem meczu pokaże, czy sieć i telefony wytrzymają."
+          },
+          {
+            "title": "Nadawaj na żywo i rejestruj jak zawsze",
+            "body": "Jeden przycisk i widzowie widzą obraz. Rejestrujesz na tablecie jak przy każdym meczu – bramki, obrony, kary 2 minut, czasy (time-outy) – i wszystko pojawia się jako grafika w transmisji. Reżyserka pokazuje stan, liczbę widzów i każdy telefon, więc masz wszystko na oku."
+          },
+          {
+            "title": "Po końcowym gwizdku: mecz jako wideo",
+            "body": "Telefony wysyłają resztę, a nagranie trafia jako wideo meczu do biblioteki – przy panoramie dodatkowo obraz z prowadzonym kadrem. Jest już zgrane ze statystykami: znaczniki, grafika z wynikiem, tagowanie scen i wysyłanie klipów działają od razu."
+          }
+        ],
+        "capabilities": {
+          "title": "Co jeszcze wchodzi w skład transmisji",
+          "intro": "Grafika i panorama to to, co widać. Wokół nich jest wszystko, co niesie dzień meczowy na hali – całość w ramach tej samej bety.",
+          "groups": [
+            {
+              "name": "Nagrywanie i nadawanie",
+              "intro": "Co robią telefony na hali.",
+              "items": [
+                {
+                  "name": "Kamera w przeglądarce",
+                  "body": "Bez sklepu z aplikacjami: telefon otwiera stronę kamery przez kod QR i pozostaje sparowany, nawet gdy strona się przeładuje."
+                },
+                {
+                  "name": "Panorama z dwóch telefonów",
+                  "body": "Dwie połowy hali są na żywo zszywane w jeden obraz całego boiska – liczony na karcie graficznej w UE."
+                },
+                {
+                  "name": "Automatyczne prowadzenie kadru",
+                  "body": "Z panoramy powstaje kadr, który podąża za grą. Jeśli szew na chwilę zawiedzie, w tym czasie idzie obraz z lewej kamery."
+                },
+                {
+                  "name": "Nagrywanie bez sieci",
+                  "body": "Gdy połączenie się zerwie, telefon nagrywa dalej i dosyła materiał, gdy tylko znów ma sieć."
+                },
+                {
+                  "name": "Zablokuj obraz",
+                  "body": "Ekspozycja, ostrość i balans bieli zamrożone na starcie, żeby obraz nie pulsował, gdy ktoś przejdzie przed kamerą."
+                },
+                {
+                  "name": "Zwykły czy szeroki kąt",
+                  "body": "Do wyboru dla każdego telefonu, jeśli urządzenie to oferuje – więcej boiska w kadrze bez przestawiania statywu."
+                }
+              ]
+            },
+            {
+              "name": "Dla widzów",
+              "intro": "Co trafia na telefony rodziców.",
+              "items": [
+                {
+                  "name": "Grafika z wynikiem",
+                  "body": "Wynik, czas gry i kolory strojów jak w telewizji, do tego zegar dla każdej kary 2 minut."
+                },
+                {
+                  "name": "Karty ze statystykami",
+                  "body": "Bramka, obrona lub niecelny rzut z numerem i nazwiskiem – przy serii albo od piątego rzutu ze skutecznością."
+                },
+                {
+                  "name": "Czas (time-out) z liczbami",
+                  "body": "Odliczanie czasu (time-outu), a pod nim skuteczność rzutów i obron drużyny."
+                },
+                {
+                  "name": "Przewijanie wstecz",
+                  "body": "Kto coś przegapił, przewija wstecz – grafika cofa się razem z obrazem, a jedno stuknięcie wraca na żywo."
+                },
+                {
+                  "name": "Dwie jakości",
+                  "body": "Obok Full HD na życzenie niższa jakość, żeby także przy słabej sieci na trybunach obraz szedł płynnie."
+                },
+                {
+                  "name": "Sponsor na obrazie",
+                  "body": "Sponsor prezentujący jako logo w transmisji, oznaczony i umieszczony po stronie rywala, żeby niczego nie zasłaniał."
+                }
+              ]
+            },
+            {
+              "name": "W reżyserce",
+              "intro": "Czym trener steruje na tablecie.",
+              "items": [
+                {
+                  "name": "Prywatnie czy publicznie",
+                  "body": "Jeden przełącznik decyduje, kto ogląda. Przy publicznej transmisji wszyscy z linkiem widzą najpierw stronę oczekiwania, a od „Nadawaj na żywo” obraz."
+                },
+                {
+                  "name": "Przełącznik dźwięku",
+                  "body": "Pełny dźwięk, tylko atmosfera albo wyłączony – na muzykę w hali i rozmowy na ławce. Działa dla transmisji i nagrania."
+                },
+                {
+                  "name": "Próba",
+                  "body": "Pięć minut na próbę z raportem o sieci, obrazie i telefonach – bez tego, żeby jakikolwiek widz cokolwiek zobaczył."
+                },
+                {
+                  "name": "Wznów transmisję",
+                  "body": "Zakończona przez pomyłkę? Do 30 minut później ta sama transmisja idzie dalej, a telefony pozostają sparowane."
+                }
+              ]
+            },
+            {
+              "name": "Po końcowym gwizdku",
+              "intro": "Co zostaje z transmisji.",
+              "items": [
+                {
+                  "name": "Wideo meczu w bibliotece",
+                  "body": "Każda kamera i panorama z prowadzonym kadrem trafiają jako wideo do meczu – bez osobnego wysyłania."
+                },
+                {
+                  "name": "Zsynchronizowane ze statystykami",
+                  "body": "Zgranie z zegarem meczu jest już policzone: każda zarejestrowana akcja jest znacznikiem w wideo."
+                },
+                {
+                  "name": "Pobieranie z wynikiem",
+                  "body": "Pobierz mecz jako MP4 – na życzenie z wtopioną grafiką z wynikiem."
+                },
+                {
+                  "name": "Sceny dla zawodniczek",
+                  "body": "Taguj sceny, wysyłaj je jako skrót pojedynczym zawodniczkom albo udostępniaj całej drużynie."
+                }
+              ]
+            }
+          ]
+        },
+        "shots": [
+          {
+            "alt": "Transmisja meczu piłki ręcznej na żywo w Statix z grafiką wyniku i kartą bramki: Anna Becker, 3 bramki z rzędu, 4 z 5 rzutów",
+            "label": "Bramka – z serią i skutecznością, dokładnie w kadrze (boisko pod spodem jest narysowane)"
+          },
+          {
+            "alt": "Czas (time-out) w transmisji Statix: odliczanie pod zegarem meczu, pod nim skuteczność rzutów i obron drużyny oraz zegar trwającej kary 2 minut",
+            "label": "Czas (time-out): odliczanie i skuteczność drużyny (boisko narysowane)"
+          },
+          {
+            "alt": "Reżyserka na żywo w Statix podczas transmisji: status na żywo, 143 widzów, dwa sparowane telefony z podglądem i pod na żywo do szwu i prowadzenia kadru",
+            "label": "Reżyserka na tablecie: wszystko na oku, jeden przycisk"
+          },
+          {
+            "alt": "Reżyserka na żywo w Statix podczas konfiguracji: lewy telefon jest sparowany, dla prawego czeka kod QR, obok lista kontrolna przygotowań",
+            "label": "Parowanie: zeskanuj kod QR i gotowe"
+          },
+          {
+            "alt": "Ustawianie panoramy w Statix: dwie połowy hali zszyte w jeden obraz całego boiska, z komunikatem, że szew pasuje",
+            "label": "Dwa telefony, jeden obraz: szew pasuje (hala narysowana)"
+          },
+          {
+            "alt": "Transmisja Statix na telefonie widza: obraz z grafiką wyniku i kartą bramki, pod nim przebieg meczu",
+            "label": "U widza: obraz na górze, przebieg meczu pod spodem (boisko narysowane)"
+          },
+          {
+            "alt": "Strona transmisji po końcowym gwizdku na telefonie: wynik końcowy 27:23 i przycisk „Obejrzyj nagranie”",
+            "label": "Po końcowym gwizdku: wynik końcowy i nagranie"
+          }
+        ],
+        "limits": [
+          "Transmisja na żywo jest w budowie i dopóki powstaje, jest ograniczona do wybranych kont. Kto jej jeszcze nie widzi, może dla tego samego meczu dalej publikować relację na żywo – w każdym meczu jest albo relacja, albo transmisja.",
+          "Na żywo nie znaczy jednocześnie: z jednym telefonem obraz jest kilka sekund za tym, co dzieje się na hali, a zszyta panorama jeszcze o 10 do 20 sekund więcej, bo najpierw powstaje na karcie graficznej.",
+          "Telefony potrzebują wysyłania, przez Wi-Fi albo sieć komórkową. Jeśli nie wystarcza, najpierw spada rozdzielczość, potem liczba klatek – a bez sieci telefon nagrywa dalej i dosyła materiał później. Na cały mecz potrzebne jest gniazdko albo powerbank.",
+          "Grafika i skuteczność pochodzą z rejestracji na żywo. Jeśli nikt nie rejestruje, obraz idzie, ale na obrazie nie pojawi się nic, czego nikt nie wstukał.",
+          "Czy mecz można transmitować, ustalacie sami: ze związkiem i rywalem, przy drużynach młodzieżowych z rodzicami, i jeszcze kwestia muzyki w hali. Przełącznik dźwięku zmniejsza ryzyko związane z muzyką, ale go nie usuwa."
+        ],
+        "faq": [
+          {
+            "question": "Jak transmitować mecz piłki ręcznej na żywo?",
+            "answer": "Ze Statix potrzebujesz jednego lub dwóch telefonów, statywu i sieci na hali. W reżyserce na żywo wybierasz „Transmisja na żywo”, skanujesz każdym telefonem jego kod QR, przy dwóch telefonach raz ustawiasz panoramę i naciskasz „Nadawaj na żywo”. Widzowie otwierają link lub kod QR w przeglądarce – bez konta i bez aplikacji."
+          },
+          {
+            "question": "Czy widzowie potrzebują aplikacji albo konta?",
+            "answer": "Nie. Transmisja działa w przeglądarce, na telefonie tak samo jak na komputerze. Udostępnić możesz link, kod QR na rzutnik w hali albo stronę swojej drużyny, na której są wszystkie opublikowane mecze."
+          },
+          {
+            "question": "Jak statystyki trafiają na obraz?",
+            "answer": "Przez rejestrację na żywo, którą i tak prowadzisz. Każda akcja, którą wstukasz na tablecie, w kilka sekund trafia na serwer i pojawia się jako grafika w transmisji – w tym miejscu obrazu, w którym się wydarzyła. Skuteczność i serie są przy tym liczone, a nie wpisywane."
+          },
+          {
+            "question": "Co dzieje się z nagraniem po meczu?",
+            "answer": "Trafia jako wideo meczu do biblioteki wideo, już zgrane z zegarem meczu. Od razu możesz przeskoczyć do każdej zarejestrowanej akcji, obejrzeć albo pobrać mecz z grafiką wyniku, tagować sceny i wysyłać klipy zawodniczkom."
+          },
+          {
+            "question": "Czy mogę już dziś korzystać z transmisji?",
+            "answer": "Tylko jeśli twoje konto ma odblokowaną betę wideo. Transmisja na żywo jest właśnie budowana i testowana z kilkoma drużynami. Napisz do nas, jeśli chcecie dołączyć – lista oczekujących to jeden e-mail."
           }
         ]
       },

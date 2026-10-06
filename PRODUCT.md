@@ -67,10 +67,11 @@ screenshot and no navigation entry behind it.
 
 Every entry carries a `status`, and the site shows it:
 
-- **`live`** — finished, open to every account. Seventeen of the nineteen.
+- **`live`** — finished, open to every account. Seventeen of the twenty.
 - **`beta`** — being built, restricted to named accounts. Listed anyway, marked
   "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
-  something a new account gets today. Currently: **Video‑Tagging**.
+  something a new account gets today. Currently: **Video‑Tagging** and
+  **Livestream**.
 - **`onRequest`** — finished, but set up for a club rather than self‑served.
   Currently: **Vereinsbereich**.
 
@@ -78,7 +79,8 @@ The scope itself:
 
 - **Live erfassen:** 1‑tap capture, quick mode, shot position & 7‑m, 2‑minute
   timers, guided game assistant, post‑game action editing, offline, PWA install.
-- **Halten & Wischen** (new, marked `isNew` and spotlighted in the header):
+- **Halten & Wischen** (new, marked `isNew`; the header spotlight moved on to
+  the livestream on 2026‑10‑06):
   hold a player on the court for half a second, swipe, let go — up 1gg1
   verloren, down 7m verursacht, left 7m rausgeholt, right 2 Min. rausgeholt.
   Cancel = back to the centre and release; every call comes with Undo. The
@@ -112,6 +114,26 @@ The scope itself:
   their own side of the app — schedule with RSVPs, their own stats, surveys,
   fine account. A coach sees who is linked and can unlink; a player controls
   whether her name shows on public pages, and that overrides the team setting.
+- **Livestream — BETA, not generally available** (`/funktionen/handball-livestream`,
+  marked `isNew` and spotlighted in the header): stream a game from one phone
+  (panned by hand) or two phones on a tripod at the centre line, stitched live
+  into a panorama on a rented EU GPU with an automatic follow‑cam crop. Over
+  the picture runs the broadcast overlay fed by the live capture — score bar,
+  half and clock, one clock per suspension, a card for goal/save/miss with
+  number and name and, when the moment tells one, the streak or rate; the
+  time‑out countdown with the team's shooting and save rates. It follows the
+  picture's frame time, so it survives rewinding. Viewers need a link or QR
+  code, no account, no app. After the final whistle the recording lands in the
+  video library already synced to the game clock (jump marks, overlay,
+  download with burned‑in score). Same allowlist as Video‑Tagging; per game
+  either ticker or livestream. Say the delay honestly: a few seconds with one
+  phone, 10–20 s more for the stitched panorama. The rules live in the app
+  repo (`docs/live-uebertragung.md`, `lib/live/`, viewer in liveStatixMatches).
+  Its viewer screenshots are real captures of the viewer page with a DRAWN
+  court as the picture (no real match footage in the pipeline), and the
+  panorama shot is the real dialog stitching the app's synthetic test hall,
+  rendered in colour — the captions say so; see `scripts/screenshots/livestream/`.
+  Teams and hall in those shots are placeholders, never a real club.
 - **Live‑Ticker:** publish a game as a public live ticker; share by link or QR;
   score & timeline in real time; coach controls publish/stop.
 - **Zusammenarbeit:** share games with other coaches (read‑only, by link/email,

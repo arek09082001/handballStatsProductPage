@@ -324,13 +324,14 @@
       "handballStats": "Handball statistics",
       "schedule": "Fixtures & attendance",
       "videoTagging": "Video tagging",
-      "holdSwipe": "Hold & swipe"
+      "holdSwipe": "Hold & swipe",
+      "livestream": "Livestream"
     },
     "spotlight": {
       "badge": "New",
-      "title": "Hold & swipe",
-      "description": "Four calls with one thumb, straight on the court – no detour through the panel.",
-      "ariaLabel": "New feature: see Hold & swipe"
+      "title": "Livestream",
+      "description": "Stream handball games live from your phone – score and stats run in the picture.",
+      "ariaLabel": "New feature: see Livestream"
     },
     "groups": {
       "product": "Product",
@@ -4822,6 +4823,232 @@
           {
             "question": "Can a player ask for her name to be kept out of the ticker?",
             "answer": "Yes. Anyone with her own access decides in the settings that her name does not appear on public pages — only the number is shown then. That decision overrides the team setting and cannot be reversed by a coach."
+          }
+        ]
+      },
+      {
+        "slug": "handball-livestream",
+        "name": "Livestream handball games",
+        "short": "Livestream",
+        "headline": "Two phones, one tripod — and the stats run right in the picture",
+        "summary": "Stream handball games live with one or two phones — with score, clock, 2-minute suspensions and live stats as an overlay in the picture.",
+        "tagline": "Put two phones at the halfway line, record the match as usual — and parents, fans and everyone who can't make it to the hall watch the game live with score and stats in the picture. After the final whistle the recording is in the video library, already matched to the stats.",
+        "intro": [
+          "A livestream in Statix needs no camera gear and no streaming software. The phones open a camera page in the browser and pair via QR code from the live control room on the tablet. With one phone, someone films and pans by hand. With two phones on a tripod at the halfway line, each records one half of the court, Statix stitches both into a panorama of the whole court and cuts a frame from it that follows the play automatically — like a TV camera, except nobody has to operate it.",
+          "On top of the picture sits the same overlay you know from a broadcast: score, half and game time, a clock for every 2-minute suspension, a card for each goal, save and miss with shirt number and name — and when the moment calls for it, the streak or the rate as well: \"3 goals in a row · 4/5\". During a time-out a countdown opens below the clock, and after a few seconds it shows the team's shooting and save rates. All of it comes from the live recording you're doing anyway: you tap on the tablet, and the viewers see it in the picture.",
+          "The overlay follows the video time, not the clock on the wall. A card appears in the stream at the point where you recorded the action — and anyone who rewinds sees it there again. And because the phones record at the same time, the livestream turns into a match video in the library after the final whistle, already synced to the game clock: every recorded action is a jump mark, the score overlay runs along, and scenes can be tagged, cut and sent to players."
+        ],
+        "facts": [
+          {
+            "term": "Status",
+            "value": "Beta — being built, not yet for every account"
+          },
+          {
+            "term": "Cameras",
+            "value": "1 phone (panned by hand) or 2 phones as a panorama with automatic panning"
+          },
+          {
+            "term": "Overlay",
+            "value": "Score, game time, 2-minute suspensions, time-outs and cards for goals, saves and misses with rates"
+          },
+          {
+            "term": "Viewers",
+            "value": "Link or QR code, in the browser, no account and no app"
+          },
+          {
+            "term": "Picture",
+            "value": "Up to Full HD, plus an optional low-quality version for weak connections"
+          },
+          {
+            "term": "After the game",
+            "value": "Recording in the video library, in sync with the stats"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Choose livestream and pair the phones",
+            "body": "In the live control room you pick \"Live stream\" and one or two phones. Each camera shows a QR code — scan it with the phone, done. The camera runs in the browser, no app, and reports battery, upload and picture back to the control room."
+          },
+          {
+            "title": "Set up the panorama",
+            "body": "With two phones, both take a calibration image at the same time on a signal. Statix places the seam, a traffic light tells you whether it fits, and the setting can be saved for the hall — at the next home game it's already there. A trial run before throw-off shows whether the network and the phones hold up."
+          },
+          {
+            "title": "Go live and record as always",
+            "body": "One button, and the viewers see the picture. You record on the tablet like at every game — goals, saves, 2-minute suspensions, time-outs — and everything appears as an overlay in the stream. The control room keeps the status, the viewer count and every phone in view."
+          },
+          {
+            "title": "After the final whistle: the game as a video",
+            "body": "The phones upload the rest, and the recording lands in the library as a match video — with a panorama, the panned picture as well. It's already matched to the stats: jump marks, score overlay, tagging scenes and sending clips work right away."
+          }
+        ],
+        "capabilities": {
+          "title": "What else comes with the livestream",
+          "intro": "The overlay and the panorama are what people see. Around them is everything that carries a match day in the hall — all part of the same beta.",
+          "groups": [
+            {
+              "name": "Record & send",
+              "intro": "What the phones do in the hall.",
+              "items": [
+                {
+                  "name": "Camera in the browser",
+                  "body": "No app store: the phone opens the camera page via the QR code and stays paired, even when it reloads."
+                },
+                {
+                  "name": "Panorama from two phones",
+                  "body": "Two halves of the court are stitched live into one picture of the whole court — computed on a GPU in the EU."
+                },
+                {
+                  "name": "Automatic panning",
+                  "body": "The panorama becomes a frame that follows the play. If the stitching ever fails to deliver, the left camera goes out in the meantime."
+                },
+                {
+                  "name": "Keep recording without a connection",
+                  "body": "If the connection drops, the phone keeps recording and uploads the rest as soon as it's back online."
+                },
+                {
+                  "name": "Lock the picture",
+                  "body": "Freeze exposure, focus and white balance at the start so the picture doesn't pump when someone walks past the camera."
+                },
+                {
+                  "name": "Normal or wide angle",
+                  "body": "Selectable per phone, where the device offers it — more court in the picture without rebuilding the tripod."
+                }
+              ]
+            },
+            {
+              "name": "For the viewers",
+              "intro": "What arrives on the parents' phones.",
+              "items": [
+                {
+                  "name": "Score overlay",
+                  "body": "Score, game time and shirt colours like on TV, plus a clock for each 2-minute suspension."
+                },
+                {
+                  "name": "Cards with stats",
+                  "body": "Goal, save or miss with number and name — with a rate on a streak or from the fifth shot on."
+                },
+                {
+                  "name": "Time-out with numbers",
+                  "body": "The time-out countdown, and below it the team's shooting and save rates."
+                },
+                {
+                  "name": "Rewind",
+                  "body": "Anyone who missed something rewinds — the overlay goes back with the picture, and one tap brings them back to live."
+                },
+                {
+                  "name": "Two qualities",
+                  "body": "Besides Full HD, an optional low-quality version so the stream stays smooth even on a weak connection in the stands."
+                },
+                {
+                  "name": "Sponsor in the picture",
+                  "body": "A presenting sponsor as a logo in the stream, labelled and placed on the opponent's side so it doesn't cover anything."
+                }
+              ]
+            },
+            {
+              "name": "In the control room",
+              "intro": "What the coach controls on the tablet.",
+              "items": [
+                {
+                  "name": "Private or public",
+                  "body": "One switch decides who watches. When public, everyone with the link first sees the waiting page and, from \"Go live\", the picture."
+                },
+                {
+                  "name": "Sound switch",
+                  "body": "Full sound, ambience only or off — against hall music and conversations on the bench. Applies to the stream and the recording."
+                },
+                {
+                  "name": "Trial run",
+                  "body": "Five minutes as a test with a report on network, picture and phones — without any viewer seeing anything."
+                },
+                {
+                  "name": "Resume live",
+                  "body": "Ended it by mistake? Up to 30 minutes later the same broadcast continues, and the phones stay paired."
+                }
+              ]
+            },
+            {
+              "name": "After the final whistle",
+              "intro": "What the broadcast turns into.",
+              "items": [
+                {
+                  "name": "Match video in the library",
+                  "body": "Every camera and the panned panorama land as videos with the game — no separate upload."
+                },
+                {
+                  "name": "In sync with the stats",
+                  "body": "The sync with the game clock is already computed: every recorded action is a jump mark in the video."
+                },
+                {
+                  "name": "Download with score",
+                  "body": "Download the game as an MP4 — optionally with the score overlay burned in."
+                },
+                {
+                  "name": "Scenes for players",
+                  "body": "Tag scenes, send them as a compilation to individual players or release them to the team."
+                }
+              ]
+            }
+          ]
+        },
+        "shots": [
+          {
+            "alt": "A handball livestream in Statix with score overlay and a goal card: Anna Becker, 3 goals in a row, 4 of 5 shots",
+            "label": "Goal — with streak and rate, right in the picture (the court underneath is drawn)"
+          },
+          {
+            "alt": "The time-out in the Statix livestream: countdown below the game clock, below it the team's shooting and save rates and the clock of a running 2-minute suspension",
+            "label": "Time-out: countdown and the team's rates (court drawn)"
+          },
+          {
+            "alt": "The live control room in Statix during a broadcast: live status, 143 viewers, two paired phones with preview images and the live pod for stitching and panning",
+            "label": "The control room on the tablet: everything in view, one button"
+          },
+          {
+            "alt": "The live control room in Statix during setup: the left phone is paired, a QR code is ready for the right one, next to it the preparation checklist",
+            "label": "Pairing: scan the QR code, done"
+          },
+          {
+            "alt": "Setting up the panorama in Statix: two halves of the hall stitched into one picture of the whole court, with the message that the seam fits",
+            "label": "Two phones, one picture: the seam fits (hall drawn)"
+          },
+          {
+            "alt": "The Statix livestream on a viewer's phone: picture with score overlay and goal card, below it the match flow",
+            "label": "For the viewer: picture on top, match flow below (court drawn)"
+          },
+          {
+            "alt": "The livestream page on a phone after the final whistle: final score 27:23 and the \"Watch recording\" button",
+            "label": "After the final whistle: final score and recording"
+          }
+        ],
+        "limits": [
+          "The livestream is being built and is limited to selected accounts while that lasts. If you don't see it yet, you can keep publishing the live ticker for the same game — each game has either a ticker or a livestream.",
+          "Live doesn't mean simultaneous: with one phone the picture runs a few seconds behind the hall, and the stitched panorama another 10 to 20 seconds on top, because it's first built on a GPU.",
+          "The phones need upload bandwidth, via Wi-Fi or mobile data. If it isn't enough, the resolution drops first, then the frame rate — and without a connection the phone keeps recording and uploads later. Over a whole game, a power socket or power bank is part of the setup.",
+          "Overlay and rates come from the live recording. If nobody records, the picture still runs, but nothing shows up in it that wasn't tapped.",
+          "Whether a game may be broadcast is up to you to clarify: with the federation and the opponent, with the parents for youth teams, and for the music in the hall. The sound switch reduces the music risk, but doesn't eliminate it."
+        ],
+        "faq": [
+          {
+            "question": "How can I livestream a handball game?",
+            "answer": "With Statix you need one or two phones, a tripod and a connection in the hall. In the live control room you pick \"Live stream\", scan each phone's QR code with it, set up the panorama once if you use two phones, and press \"Go live\". Viewers open the link or QR code in the browser — no account and no app."
+          },
+          {
+            "question": "Do viewers need an app or an account?",
+            "answer": "No. The livestream runs in the browser, on a phone as well as on a computer. You can share the link, a QR code for the hall projector, or your team's page, where all published games are listed."
+          },
+          {
+            "question": "How do the stats get into the picture?",
+            "answer": "Through the live recording you're doing anyway. Every action you tap on the tablet reaches the server within seconds and appears as an overlay in the stream — at the point in the picture where it happened. Rates and streaks are computed, not typed in."
+          },
+          {
+            "question": "What happens to the recording after the game?",
+            "answer": "It lands in the video library as a match video, already synced to the game clock. You can jump straight to any recorded action, watch or download the game with the score overlay, tag scenes and send clips to players."
+          },
+          {
+            "question": "Can I use the livestream today?",
+            "answer": "Only if your account has been enabled for the video beta. The livestream is currently being built and tested with a few teams. Write to us if you want to take part — the waiting list is one email."
           }
         ]
       },
