@@ -5199,7 +5199,7 @@
         "limits": [
           "No recorded shooting position, no shot map. The numbers are still right — only the map stays empty.",
           "The position is a zone, not a coordinate to the centimetre. For the question \"where do we shoot from\" that is enough; for ballistics it is not.",
-          "Statix does not calculate expected goals. The map shows what happened, not what should have happened."
+          "Statix calculates Expected Goals from the same shot position – described on a page of its own. The map here shows what happened; whether that was more or less than could be expected is what xG tells you."
         ],
         "faq": [
           {
@@ -5361,6 +5361,190 @@
           {
             "question": "Do other coaches see my notes?",
             "answer": "Only your own coaching team. Notes are not part of a match release."
+          }
+        ]
+      },
+      {
+        "slug": "expected-goals",
+        "name": "Expected Goals & Expected Saves",
+        "short": "Expected Goals (xG)",
+        "headline": "Not every percentage is worth the same",
+        "summary": "Expected Goals and Expected Saves: what a player's shots were worth, and how many more balls a goalkeeper stopped than could be expected.",
+        "tagline": "A wing at 60 % and a back-court player at 45 % – who was better? Expected Goals take the shot position into account. And Expected Saves tell you whether the goalkeeper was good or the defence only allowed difficult shots.",
+        "intro": [
+          "Shooting percentage is the most honest number in handball – and the most unfair. A player who only shoots from the wing and on the fast break has a high percentage, and it says nothing about her finishing. A player who takes the difficult shots from nine metres has a low one. Expected Goals (xG) even this out: every shot position has a fixed probability of scoring, left wing 0.62, nine metres centre 0.43, 7-metre throw 0.75, a fast break from the back court considerably more. Added up, that tells you how many goals the chances were worth.",
+          "The comparison is the real point. More goals than xG means the chances were used better than average. Fewer means the chances were there, the return was not. In the match table this appears per player as xG and xG +/−, with a flame for the ones who are hot.",
+          "Expected Saves (xS) are the same question from the other side: how many balls would an average goalkeeper have stopped from exactly these shots? Only shots on target count, and the values come from the same table as the Expected Goals, not from a second one. A goalkeeper behind a defence that only allows shots from ten metres has a high save percentage and still an xS +/− of zero."
+        ],
+        "facts": [
+          {
+            "term": "Basis",
+            "value": "The shot position you already record live"
+          },
+          {
+            "term": "For court players",
+            "value": "xG and xG +/− per match and over the season"
+          },
+          {
+            "term": "For goalkeepers",
+            "value": "xS and xS +/− – shots on target only"
+          },
+          {
+            "term": "Fast break & 7m",
+            "value": "Their own values, because an open defence is worth more"
+          },
+          {
+            "term": "When",
+            "value": "Live during the match, afterwards, and retroactively for old matches"
+          },
+          {
+            "term": "Also in",
+            "value": "The player profile and the PDF report"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Record the shot position",
+            "body": "For every shot you tap the zone it was taken from – just as before for the shot map. That is all xG needs."
+          },
+          {
+            "title": "Read the balance",
+            "body": "The xG balance shows goals against expected goals, the saves balance shows saves against expected saves. A sentence below says what the difference means."
+          },
+          {
+            "title": "Compare players",
+            "body": "In the table you sort by xG +/−. A player well above zero makes more of her shots; a player below it gets good chances and misses them."
+          },
+          {
+            "title": "Follow it over the season",
+            "body": "In the player profile it adds up over all matches. One match is a snapshot; ten matches are a statement."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "The xG balance and the saves balance in the Statix match statistics: 29 goals from 23.4 Expected Goals, 19 saves from 14.9 Expected Saves",
+            "label": "Goals against xG, saves against xS – with one sentence on what it means"
+          },
+          {
+            "alt": "The court players table in Statix with playing time, goals, shots, percentage, xG and xG +/− per player",
+            "label": "Per player: xG and xG +/−, the hot ones with a flame"
+          },
+          {
+            "alt": "The goalkeepers table in Statix with saves, goals conceded, save percentage, xS and xS +/−",
+            "label": "Goalkeepers: Expected Saves, not just a percentage"
+          }
+        ],
+        "limits": [
+          "The values are a fixed table per shot zone, not a model that learns from your matches. It knows nothing about shooting angle, pressure or type of shot – it rates where the shot came from, not how it was taken.",
+          "A shot without a recorded position has no value. It is counted separately and drops out of the comparison, instead of being rated as zero and making the finishing look worse than it was.",
+          "A single match is a small sample. An xG +/− of +1.5 after six shots is a hint, not a verdict on a player."
+        ],
+        "faq": [
+          {
+            "question": "What are Expected Goals in handball?",
+            "answer": "Expected Goals (xG) state how many goals the shots of a player or team were worth. Every shot position has a probability of scoring – wing about 0.62, nine metres centre 0.43, 7-metre throw 0.75. The sum over all shots is the expected value; comparing it with the actual goals shows whether the chances were used well."
+          },
+          {
+            "question": "What are Expected Saves?",
+            "answer": "Expected Saves (xS) are the number of saves an average goalkeeper would have made from the same shots on target. If a goalkeeper stops more, her xS +/− is positive – regardless of how easy or difficult the shots were that her defence allowed."
+          },
+          {
+            "question": "Do I have to record more for this?",
+            "answer": "No. xG and xS work with the shot position you already tap for the shot map. Matches in which you recorded the position get the values retroactively too."
+          },
+          {
+            "question": "Where do the values per shot zone come from?",
+            "answer": "From a fixed table of published scoring rates per zone, for the set attack and separately for the fast break. It is the same for all teams, so the numbers stay comparable. More on the method is in the guide to Expected Goals."
+          }
+        ]
+      },
+      {
+        "slug": "aufstellungs-analyse",
+        "name": "Lineup analysis",
+        "short": "Lineups",
+        "headline": "Which seven scores the goals?",
+        "summary": "Which lineup scores the goals, which back-court trio works and who a player scores better with – with plus-minus, per match and over the season.",
+        "tagline": "Every substitution you record is a piece of information: who was on the court together at that moment. From it Statix works out which lineup scores the goals, which back-court trio carries the team and who a player scores better with.",
+        "intro": [
+          "Every coach faces the question on every matchday: which seven do I start with, and who do I bring on when it is not working? The answer is in data you already have. Because you substitute live, Statix knows at every second who was on the court – and can assign every goal and every goal conceded to the lineup that was out there for it.",
+          "Three angles sit side by side. Lineups: the six court players, sorted by goals scored, with shots, percentage, minutes together, goals conceded and plus-minus. Back court: only the trios of left back, centre back and right back, because that is where most of the combinations arise. Partnerships: for one player, how often she scores while a particular teammate is on the court, and how many goals that teammate set up for her.",
+          "You get this for a single match in the match statistics and for the whole season on the team page. The AI analysis reads the same numbers and can tell you which formation carried the team in recent matches."
+        ],
+        "facts": [
+          {
+            "term": "Basis",
+            "value": "The substitutions you record live – with the match minute"
+          },
+          {
+            "term": "Lineups",
+            "value": "Goals, shots, percentage, minutes, goals conceded, plus-minus"
+          },
+          {
+            "term": "Back court",
+            "value": "The trios of LB, CB and RB"
+          },
+          {
+            "term": "Partnerships",
+            "value": "Goals per teammate on the court, plus assists"
+          },
+          {
+            "term": "Period",
+            "value": "Per match and over the season"
+          },
+          {
+            "term": "Position",
+            "value": "Planned attacking position, otherwise regular position"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Record substitutions",
+            "body": "As in every match: one player off, one player on – swap two cards. From that Statix knows the lineup at every second."
+          },
+          {
+            "title": "Compare lineups",
+            "body": "After the match the card “Lineups & combinations” shows which seven were on the court together, for how long, and what came of it – goals at one end, goals conceded at the other, plus-minus as the bottom line."
+          },
+          {
+            "title": "Read back court and pairs",
+            "body": "The Back court tab shows only the trios, Partnerships shows the pairs: pick a player and you see who she scores with and who sets her up."
+          },
+          {
+            "title": "Decide over the season",
+            "body": "On the team page it adds up over all matches. One match is chance; ten matches show which trio really carries the team."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "The lineup analysis in Statix: the six court players of each lineup with goals, shots, percentage, minutes together, goals conceded and plus-minus",
+            "label": "Lineups: which seven played, for how long, and what came of it"
+          },
+          {
+            "alt": "The Back court tab in Statix with the trios of left back, centre back and right back and their goals",
+            "label": "Back court: which trio carries the team"
+          },
+          {
+            "alt": "The Partnerships tab in Statix: a player's goals and shots per teammate on the court, with minutes, percentage and assists",
+            "label": "Partnerships: who she scores with, and who sets her up"
+          }
+        ],
+        "limits": [
+          "No substitutions with a match minute, no lineup. A match in which nobody was substituted, or substitutions were made without the clock, does not count – a lineup nobody knows would be worse than none.",
+          "On the court together does not mean cause and effect. A trio at +4 may have played against the weaker defence. That is why the minutes are always shown alongside.",
+          "Lineups include 7-metre throws, combinations only count shots from open play – a 7-metre throw has no teammate who sets it up."
+        ],
+        "faq": [
+          {
+            "question": "How does Statix know who was on the court?",
+            "answer": "From the substitutions you record during the match. Every substitution carries the match minute, and from that comes the lineup for every second. You do not have to do anything more."
+          },
+          {
+            "question": "What does plus-minus mean for a lineup?",
+            "answer": "The goals the team scored while exactly these players were on the court together, minus the goals conceded in the same time. A lineup at +3 scored three goals more than it conceded in its minutes."
+          },
+          {
+            "question": "Which position counts if a player can play several?",
+            "answer": "The attacking position you planned for the match. If there is none, her position on the court during the match, otherwise her regular position from the squad."
           }
         ]
       },
@@ -6379,6 +6563,105 @@
           {
             "question": "Can I share a match anonymously?",
             "answer": "A plain link does not say who created it. Whoever shares by e-mail appears at the recipient's end by name — that is the point of the inbox."
+          }
+        ]
+      },
+      {
+        "slug": "sponsoren",
+        "name": "Sponsors in the live ticker & livestream",
+        "short": "Sponsors",
+        "headline": "Advertising space your club already has",
+        "summary": "Present sponsors in the live ticker and the livestream: banners, “Goal presented by …”, a logo at every time-out and a presenting sponsor in the picture.",
+        "tagline": "Every live ticker and every livestream is opened by parents, fans and former players – at every match. Statix turns that into advertising space for your sponsors. The club keeps 100 % of the sponsorship money.",
+        "intro": [
+          "A club has sponsors who want more than perimeter advertising that nobody sees at away matches. Statix gives them spots where spectators are looking anyway: in the public live ticker and in the livestream. A banner runs throughout, several logos take turns. At every goal it briefly says “Goal presented by …”, and at every team time-out a sponsor of its own appears.",
+          "The livestream has a spot of its own: the presenting sponsor in the video picture. Its logo always sits on the opponent's side, so it covers nothing of your own team's cards, and it is flatter rather than wider, so it never reaches into the scoreboard. You set whether it is visible throughout or briefly every five minutes, and whether it is labelled “presented by”, “Sponsor” or “Ad”. At the start, at half-time and at the end the stream also shows it large.",
+          "Sponsors can be set up for one team or for the whole club. What the club enters fills every spot in every team that the team has not filled itself – one upload puts a main sponsor in every ticker of all teams. Statix does not broker sponsors and takes no cut: contract and invoice stay between the club and the sponsor."
+        ],
+        "facts": [
+          {
+            "term": "Banner",
+            "value": "Throughout the ticker, several logos taking turns"
+          },
+          {
+            "term": "Goal",
+            "value": "“Goal presented by …” at every goal"
+          },
+          {
+            "term": "Time-out",
+            "value": "A sponsor of its own at every team time-out"
+          },
+          {
+            "term": "Livestream",
+            "value": "Presenting sponsor in the picture, on the opponent's side"
+          },
+          {
+            "term": "For the club",
+            "value": "Set up once, in all teams"
+          },
+          {
+            "term": "Revenue",
+            "value": "100 % stays with the club – Statix earns nothing from it"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Add logos",
+            "body": "In the settings under Sponsors you upload a logo, enter the name and a link if you want one, and choose the spot: banner, goal, time-out or livestream."
+          },
+          {
+            "title": "Place it in the stream",
+            "body": "For the presenting sponsor you set size, rhythm and label. The preview shows home and away matches, on a computer and on a phone, before any spectator sees it."
+          },
+          {
+            "title": "Publish the match",
+            "body": "As soon as a match is public as a live ticker or livestream, the sponsors run along with it – without you having to do anything during the match."
+          },
+          {
+            "title": "Show your sponsors",
+            "body": "The link to the ticker and the team page with all public matches are what you can send a sponsor as proof."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "A Statix livestream with the presenting sponsor top right, a goal sponsor below the goal card and a scrolling bar of sponsor logos below the picture",
+            "label": "In the stream: presenting sponsor, goal sponsor and logo bar (court drawn, sponsors made up)"
+          },
+          {
+            "alt": "The sponsor settings in Statix: three banner sponsors, one goal sponsor and one time-out sponsor, above them the note that the club keeps 100 % of the sponsorship money",
+            "label": "The spots in the ticker: banner, goal, time-out"
+          },
+          {
+            "alt": "The settings for the presenting sponsor in the livestream with a preview for home and away matches",
+            "label": "The presenting sponsor with a preview, before anyone sees it"
+          },
+          {
+            "alt": "The Statix live ticker on a phone with score, match flow and the “presented by” sponsor bar at the bottom edge",
+            "label": "In the ticker on a phone: the bar at the bottom edge"
+          }
+        ],
+        "limits": [
+          "Sponsors only appear where a match is public – in the live ticker or in the livestream. A private match shows no advertising.",
+          "The spot in the livestream picture only exists with the livestream, and that is still in beta.",
+          "You are responsible for the logos: free of third-party rights, no advertising for gambling, alcohol or tobacco. A label such as “presented by” is always shown.",
+          "Statix does not broker sponsors and does no billing. What a spot costs is something you agree with the sponsor."
+        ],
+        "faq": [
+          {
+            "question": "Where do spectators see the sponsors?",
+            "answer": "In the public live ticker as a banner at the bottom edge, and briefly at every goal and every team time-out. In the livestream also as the presenting sponsor in the video picture, as a line below the goal card and as a logo bar below the picture."
+          },
+          {
+            "question": "Does Statix earn anything from the sponsorship money?",
+            "answer": "No. The club keeps 100 % of the sponsorship money. Statix provides the spots, but does not broker sponsors and takes no cut."
+          },
+          {
+            "question": "Can the club set up sponsors for all teams?",
+            "answer": "Yes. What is entered in the club area fills every spot in every team that the team has not filled itself. A team with its own sponsor in one spot keeps it, without losing the club sponsors in the other spots."
+          },
+          {
+            "question": "Do I have to label it as advertising?",
+            "answer": "A logo with “presented by” is a sponsorship notice. If the image shows products, prices or a call to buy, it is advertising – then you choose the label “Ad” for the livestream."
           }
         ]
       },

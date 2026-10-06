@@ -5199,7 +5199,7 @@
         "limits": [
           "Ohne erfasste Wurfposition kein Wurfbild. Die Zahlen stimmen trotzdem — nur die Karte bleibt leer.",
           "Die Position ist eine Zone, keine Koordinate auf den Zentimeter. Für die Frage „woher werfen wir“ reicht das; für Ballistik nicht.",
-          "Expected Goals rechnet Statix nicht. Die Karte zeigt, was passiert ist, nicht was hätte passieren sollen."
+          "Expected Goals rechnet Statix aus derselben Wurfposition – auf einer eigenen Seite beschrieben. Die Karte hier zeigt, was passiert ist; ob das mehr oder weniger war als zu erwarten, sagt xG."
         ],
         "faq": [
           {
@@ -5361,6 +5361,190 @@
           {
             "question": "Sehen andere Trainer meine Notizen?",
             "answer": "Nur dein eigenes Trainerteam. Notizen sind nicht Teil einer Spielfreigabe."
+          }
+        ]
+      },
+      {
+        "slug": "expected-goals",
+        "name": "Expected Goals & Expected Saves",
+        "short": "Expected Goals (xG)",
+        "headline": "Nicht jede Quote ist gleich viel wert",
+        "summary": "Expected Goals und Expected Saves: was die Würfe einer Spielerin wert waren und wie viele Bälle eine Torhüterin mehr gehalten hat, als zu erwarten war.",
+        "tagline": "Eine Außenspielerin mit 60 % und eine Rückraumspielerin mit 45 % – wer war besser? Expected Goals rechnen die Wurfposition mit ein. Und Expected Saves sagen, ob die Torhüterin gut war oder die Abwehr nur schwere Würfe zugelassen hat.",
+        "intro": [
+          "Die Wurfquote ist die ehrlichste Zahl im Handball – und die ungerechteste. Wer nur von Außen und aus dem Tempogegenstoß wirft, hat eine hohe Quote, ohne dass das etwas über den Abschluss sagt. Wer aus neun Metern die schweren Würfe nimmt, hat eine niedrige. Expected Goals (xG) gleichen das aus: Jede Wurfposition hat eine feste Trefferwahrscheinlichkeit, Linksaußen 0,62, Neun Meter Mitte 0,43, Siebenmeter 0,75, Gegenstoß aus dem Rückraum deutlich mehr. Zusammengezählt ergibt das, wie viele Tore die Chancen wert waren.",
+          "Der Vergleich ist die eigentliche Aussage. Mehr Tore als xG heißt: Die Chancen wurden überdurchschnittlich genutzt. Weniger heißt: Die Chancen waren da, die Ausbeute fehlte. In der Spieltabelle steht das je Spielerin als xG und xG +/−, mit einer Flamme für die, die heiß sind.",
+          "Expected Saves (xS) sind dieselbe Frage von der anderen Seite: Wie viele Bälle hätte eine durchschnittliche Torhüterin aus genau diesen Würfen gehalten? Gezählt werden nur Würfe aufs Tor, und die Werte kommen aus derselben Tabelle wie die Expected Goals, nicht aus einer zweiten. Eine Torhüterin hinter einer Abwehr, die nur Würfe aus zehn Metern zulässt, hat eine hohe Paradenquote und trotzdem ein xS +/− von null."
+        ],
+        "facts": [
+          {
+            "term": "Grundlage",
+            "value": "Die Wurfposition, die du live ohnehin erfasst"
+          },
+          {
+            "term": "Für Feldspielerinnen",
+            "value": "xG und xG +/− je Spiel und über die Saison"
+          },
+          {
+            "term": "Für Torhüterinnen",
+            "value": "xS und xS +/− – nur Würfe aufs Tor"
+          },
+          {
+            "term": "Gegenstoß & 7m",
+            "value": "Eigene Werte, weil eine offene Abwehr mehr wert ist"
+          },
+          {
+            "term": "Wann",
+            "value": "Live während des Spiels, danach und rückwirkend für alte Spiele"
+          },
+          {
+            "term": "Auch im",
+            "value": "Spielerprofil und im PDF-Bericht"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Wurfposition erfassen",
+            "body": "Bei jedem Wurf tippst du die Zone an, aus der geworfen wurde – wie bisher für das Wurfbild. Mehr braucht xG nicht."
+          },
+          {
+            "title": "Bilanz lesen",
+            "body": "Die xG-Bilanz zeigt Tore gegen erwartete Tore, die Paraden-Bilanz Paraden gegen erwartete Paraden. Ein Satz darunter sagt, was der Unterschied bedeutet."
+          },
+          {
+            "title": "Spielerinnen vergleichen",
+            "body": "In der Tabelle sortierst du nach xG +/−. Wer weit über null liegt, macht mehr aus ihren Würfen; wer darunter liegt, bekommt gute Chancen und vergibt sie."
+          },
+          {
+            "title": "Über die Saison verfolgen",
+            "body": "Im Spielerprofil summiert sich das über alle Spiele. Ein Spiel ist eine Momentaufnahme; zehn Spiele sind eine Aussage."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Die xG-Bilanz und die Paraden-Bilanz in der Spielstatistik von Statix: 29 Tore bei 23,4 Expected Goals, 19 Paraden bei 14,9 Expected Saves",
+            "label": "Tore gegen xG, Paraden gegen xS – mit einem Satz, was es heißt"
+          },
+          {
+            "alt": "Die Feldspielertabelle in Statix mit Spielzeit, Toren, Würfen, Quote, xG und xG +/− je Spielerin",
+            "label": "Je Spielerin: xG und xG +/−, die Heißen mit Flamme"
+          },
+          {
+            "alt": "Die Torhütertabelle in Statix mit Paraden, Gegentoren, Paradenquote, xS und xS +/−",
+            "label": "Torhüterinnen: Expected Saves statt nur Quote"
+          }
+        ],
+        "limits": [
+          "Die Werte sind eine feste Tabelle je Wurfzone, kein Modell, das aus euren Spielen lernt. Wurfwinkel, Bedrängnis oder Wurfart kennt sie nicht – sie bewertet, woher geworfen wurde, nicht wie.",
+          "Ein Wurf ohne erfasste Position hat keinen Wert. Er wird getrennt gezählt und fällt aus dem Vergleich heraus, statt ihn mit null zu bewerten und den Abschluss schlechter aussehen zu lassen, als er war.",
+          "Ein einzelnes Spiel ist eine kleine Stichprobe. Ein xG +/− von +1,5 nach sechs Würfen ist ein Hinweis, keine Bewertung einer Spielerin."
+        ],
+        "faq": [
+          {
+            "question": "Was sind Expected Goals im Handball?",
+            "answer": "Expected Goals (xG) geben an, wie viele Tore die Würfe einer Spielerin oder Mannschaft wert waren. Jede Wurfposition hat eine Trefferwahrscheinlichkeit – Außen etwa 0,62, Neun Meter Mitte 0,43, Siebenmeter 0,75. Die Summe über alle Würfe ist der erwartete Wert; der Vergleich mit den echten Toren zeigt, ob die Chancen gut genutzt wurden."
+          },
+          {
+            "question": "Was sind Expected Saves?",
+            "answer": "Expected Saves (xS) sind die Zahl der Paraden, die eine durchschnittliche Torhüterin aus denselben Würfen aufs Tor gehalten hätte. Hält eine Torhüterin mehr, ist ihr xS +/− positiv – unabhängig davon, wie leicht oder schwer die Würfe waren, die ihre Abwehr zugelassen hat."
+          },
+          {
+            "question": "Muss ich dafür mehr erfassen?",
+            "answer": "Nein. xG und xS rechnen mit der Wurfposition, die du für das Wurfbild ohnehin antippst. Spiele, in denen du die Position erfasst hast, bekommen die Werte auch rückwirkend."
+          },
+          {
+            "question": "Woher kommen die Werte je Wurfzone?",
+            "answer": "Aus einer festen Tabelle mit veröffentlichten Trefferquoten je Zone, für den Positionsangriff und getrennt für den Gegenstoß. Sie ist für alle Mannschaften gleich, damit die Zahlen vergleichbar bleiben. Mehr zur Methode steht im Ratgeber zu Expected Goals."
+          }
+        ]
+      },
+      {
+        "slug": "aufstellungs-analyse",
+        "name": "Aufstellungs-Analyse",
+        "short": "Aufstellungen",
+        "headline": "Welche Sieben wirft die Tore?",
+        "summary": "Welche Aufstellung die Tore wirft, welches Rückraum-Trio funktioniert und mit wem eine Spielerin besser trifft – mit Plus-Minus, je Spiel und über die Saison.",
+        "tagline": "Jeder Wechsel, den du erfasst, ist eine Information: wer gerade zusammen auf dem Feld stand. Statix rechnet daraus, welche Aufstellung die Tore wirft, welches Rückraum-Trio trägt und mit wem eine Spielerin besser trifft.",
+        "intro": [
+          "Die Frage stellt sich jeder Trainer an jedem Spieltag: Mit welcher Sieben fange ich an, wen bringe ich, wenn es nicht läuft? Die Antwort steckt in Daten, die du schon hast. Weil du live wechselst, weiß Statix zu jeder Sekunde, wer auf dem Feld stand – und kann jedem Tor und jedem Gegentor die Aufstellung zuordnen, die es erlebt hat.",
+          "Drei Blickwinkel stehen nebeneinander. Aufstellungen: die sechs Feldspielerinnen, sortiert nach geworfenen Toren, mit Würfen, Quote, Minuten zusammen, Gegentoren und Plus-Minus. Rückraum: nur die Trios aus Rückraum links, Mitte und rechts, weil dort die meisten Kombinationen entstehen. Zusammenspiel: für eine Spielerin, wie oft sie trifft, während eine bestimmte Mitspielerin auf dem Feld steht, und wie viele Tore die ihr aufgelegt hat.",
+          "Das gibt es für das einzelne Spiel in der Spielstatistik und über die ganze Saison auf der Mannschaftsseite. Die KI-Analyse liest dieselben Zahlen mit und kann sagen, welche Formation in den letzten Spielen getragen hat."
+        ],
+        "facts": [
+          {
+            "term": "Grundlage",
+            "value": "Die Wechsel, die du live erfasst – mit Spielminute"
+          },
+          {
+            "term": "Aufstellungen",
+            "value": "Tore, Würfe, Quote, Minuten, Gegentore, Plus-Minus"
+          },
+          {
+            "term": "Rückraum",
+            "value": "Die Trios aus RL, RM und RR"
+          },
+          {
+            "term": "Zusammenspiel",
+            "value": "Tore je Mitspielerin auf dem Feld, dazu Assists"
+          },
+          {
+            "term": "Zeitraum",
+            "value": "Je Spiel und über die Saison"
+          },
+          {
+            "term": "Position",
+            "value": "Geplanter Angriffsplatz, sonst Stammposition"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Wechsel erfassen",
+            "body": "Wie bei jedem Spiel: Spielerin vom Feld, Spielerin aufs Feld – zwei Karten tauschen. Daraus kennt Statix die Aufstellung zu jeder Sekunde."
+          },
+          {
+            "title": "Aufstellungen vergleichen",
+            "body": "Nach dem Spiel zeigt die Karte „Aufstellungen & Zusammenspiel“, welche Sieben wie lange zusammen stand und was dabei herauskam – vorne Tore, hinten Gegentore, unterm Strich Plus-Minus."
+          },
+          {
+            "title": "Rückraum und Paare lesen",
+            "body": "Der Reiter Rückraum zeigt nur die Trios, Zusammenspiel die Paare: Wähle eine Spielerin, und du siehst, mit wem sie trifft und wer ihr die Bälle auflegt."
+          },
+          {
+            "title": "Über die Saison entscheiden",
+            "body": "Auf der Mannschaftsseite summiert sich das über alle Spiele. Ein Spiel ist Zufall; zehn Spiele zeigen, welches Trio wirklich trägt."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Die Aufstellungs-Analyse in Statix: die sechs Feldspielerinnen jeder Aufstellung mit Toren, Würfen, Quote, Minuten zusammen, Gegentoren und Plus-Minus",
+            "label": "Aufstellungen: welche Sieben wie lange stand und was dabei herauskam"
+          },
+          {
+            "alt": "Der Reiter Rückraum in Statix mit den Trios aus Rückraum links, Mitte und rechts und ihren Toren",
+            "label": "Rückraum: welches Trio trägt"
+          },
+          {
+            "alt": "Der Reiter Zusammenspiel in Statix: Tore und Würfe einer Spielerin je Mitspielerin auf dem Feld, mit Minuten, Quote und Assists",
+            "label": "Zusammenspiel: mit wem sie trifft, und wer auflegt"
+          }
+        ],
+        "limits": [
+          "Ohne Wechsel mit Spielminute keine Aufstellung. Ein Spiel, in dem nie gewechselt oder ohne Uhr gewechselt wurde, zählt nicht mit – eine Aufstellung, die niemand kennt, wäre schlimmer als keine.",
+          "Zusammen auf dem Feld heißt nicht ursächlich. Ein Trio mit +4 kann gegen die schwächere Abwehr gespielt haben. Die Minuten stehen deshalb immer daneben.",
+          "Die Aufstellungen zählen Siebenmeter mit, das Zusammenspiel nur Feldwürfe – ein Siebenmeter hat keine Mitspielerin, die ihn vorbereitet."
+        ],
+        "faq": [
+          {
+            "question": "Woher weiß Statix, wer auf dem Feld stand?",
+            "answer": "Aus den Wechseln, die du während des Spiels erfasst. Jeder Wechsel trägt die Spielminute, daraus entsteht die Aufstellung für jede Sekunde. Mehr musst du dafür nicht tun."
+          },
+          {
+            "question": "Was bedeutet Plus-Minus bei einer Aufstellung?",
+            "answer": "Die Tore, die die Mannschaft geworfen hat, während genau diese Spielerinnen zusammen auf dem Feld standen, minus die Gegentore in derselben Zeit. Eine Aufstellung mit +3 hat in ihren Minuten drei Tore mehr geworfen als kassiert."
+          },
+          {
+            "question": "Welche Position zählt, wenn eine Spielerin mehrere spielen kann?",
+            "answer": "Der Angriffsplatz, den du für das Spiel geplant hast. Gibt es keinen, der Platz auf dem Feld während des Spiels, sonst die Stammposition aus dem Kader."
           }
         ]
       },
@@ -6379,6 +6563,105 @@
           {
             "question": "Kann ich ein Spiel anonym teilen?",
             "answer": "Ein reiner Link nennt nicht, wer ihn erstellt hat. Wer über die E-Mail teilt, erscheint beim Empfänger namentlich — das ist der Punkt des Posteingangs."
+          }
+        ]
+      },
+      {
+        "slug": "sponsoren",
+        "name": "Sponsoren im Live-Ticker & Livestream",
+        "short": "Sponsoren",
+        "headline": "Werbefläche, die der Verein schon hat",
+        "summary": "Sponsoren im Live-Ticker und im Livestream präsentieren: Banner, „Tor präsentiert von …“, ein Logo bei jeder Auszeit und ein Präsentations-Sponsor im Bild.",
+        "tagline": "Jeder Live-Ticker und jeder Livestream wird von Eltern, Fans und Ehemaligen geöffnet – bei jedem Spiel. Statix macht daraus Werbeflächen für eure Sponsoren. Der Verein behält 100 % der Sponsorengelder.",
+        "intro": [
+          "Ein Verein hat Sponsoren, die mehr wollen als eine Bandenwerbung, die beim Auswärtsspiel niemand sieht. Statix gibt ihnen Plätze dort, wo Zuschauer ohnehin hinschauen: im öffentlichen Live-Ticker und im Livestream. Ein Banner läuft dauerhaft mit, mehrere Logos wechseln sich ab. Bei jedem Tor heißt es kurz „Tor präsentiert von …“, bei jeder Auszeit der Mannschaft erscheint ein eigener Sponsor.",
+          "Im Livestream gibt es einen eigenen Platz: den Präsentations-Sponsor im Videobild. Sein Logo steht immer auf der Seite des Gegners, damit die Karten der eigenen Mannschaft nichts verdecken, und flacher statt breiter, damit es nie in die Spielstand-Tafel ragt. Ob es dauerhaft zu sehen ist oder alle fünf Minuten kurz, und ob es „präsentiert von“, „Sponsor“ oder „Anzeige“ heißt, stellst du ein. Zu Beginn, zur Halbzeit und am Ende zeigt der Stream es zusätzlich groß.",
+          "Sponsoren lassen sich für eine Mannschaft hinterlegen oder für den ganzen Verein. Was der Verein einträgt, füllt bei jeder Mannschaft jeden Platz, den sie nicht selbst belegt hat – ein Hauptsponsor ist so mit einem Upload in jedem Ticker aller Teams. Statix vermittelt keine Sponsoren und behält nichts ein: Vertrag und Rechnung bleiben zwischen Verein und Sponsor."
+        ],
+        "facts": [
+          {
+            "term": "Banner",
+            "value": "Dauerhaft im Ticker, mehrere Logos im Wechsel"
+          },
+          {
+            "term": "Tor",
+            "value": "„Tor präsentiert von …“ bei jedem Tor"
+          },
+          {
+            "term": "Auszeit",
+            "value": "Ein eigener Sponsor bei jeder Auszeit der Mannschaft"
+          },
+          {
+            "term": "Livestream",
+            "value": "Präsentations-Sponsor im Bild, auf der Seite des Gegners"
+          },
+          {
+            "term": "Für den Verein",
+            "value": "Einmal hinterlegt, in allen Mannschaften"
+          },
+          {
+            "term": "Einnahmen",
+            "value": "100 % beim Verein – Statix verdient nicht mit"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Logos hinterlegen",
+            "body": "In den Einstellungen unter Sponsoren lädst du ein Logo hoch, gibst den Namen und auf Wunsch einen Link an und wählst den Platz: Banner, Tor, Auszeit oder Livestream."
+          },
+          {
+            "title": "Im Stream platzieren",
+            "body": "Für den Präsentations-Sponsor stellst du Größe, Takt und Beschriftung ein. Die Vorschau zeigt Heim- und Auswärtsspiel, am Rechner und auf dem Handy, bevor ein Zuschauer es sieht."
+          },
+          {
+            "title": "Spiel veröffentlichen",
+            "body": "Sobald ein Spiel als Live-Ticker oder Livestream öffentlich ist, laufen die Sponsoren mit – ohne dass du während des Spiels etwas tun musst."
+          },
+          {
+            "title": "Den Sponsoren zeigen",
+            "body": "Der Link zum Ticker und die Mannschaftsseite mit allen öffentlichen Spielen sind das, was du einem Sponsor als Nachweis schicken kannst."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Ein Statix-Livestream mit Präsentations-Sponsor oben rechts, einem Tor-Sponsor unter der Torkarte und einer Laufleiste mit Sponsorenlogos unter dem Bild",
+            "label": "Im Stream: Präsentations-Sponsor, Tor-Sponsor und Logo-Leiste (Spielfeld gezeichnet, Sponsoren erfunden)"
+          },
+          {
+            "alt": "Die Sponsoren-Einstellungen in Statix: drei Banner-Sponsoren, ein Tor-Sponsor und ein Auszeit-Sponsor, darüber der Hinweis, dass der Verein 100 % der Sponsorengelder behält",
+            "label": "Die Plätze im Ticker: Banner, Tor, Auszeit"
+          },
+          {
+            "alt": "Die Einstellungen für den Präsentations-Sponsor im Livestream mit Vorschau für Heim- und Auswärtsspiel",
+            "label": "Der Präsentations-Sponsor mit Vorschau, bevor ihn jemand sieht"
+          },
+          {
+            "alt": "Der Statix-Live-Ticker auf dem Handy mit Spielstand, Spielverlauf und der Sponsorenleiste „präsentiert von“ am unteren Rand",
+            "label": "Im Ticker auf dem Handy: die Leiste am unteren Rand"
+          }
+        ],
+        "limits": [
+          "Sponsoren erscheinen nur, wo ein Spiel öffentlich ist – im Live-Ticker oder im Livestream. Ein privates Spiel zeigt keine Werbung.",
+          "Den Platz im Livestream-Bild gibt es nur mit dem Livestream, und der ist noch in der Beta.",
+          "Ihr verantwortet die Logos: frei von Rechten Dritter, keine Werbung für Glücksspiel, Alkohol oder Tabak. Eine Kennzeichnung wie „präsentiert von“ wird immer angezeigt.",
+          "Statix vermittelt keine Sponsoren und führt keine Abrechnung. Wie viel ein Platz kostet, vereinbart ihr mit dem Sponsor."
+        ],
+        "faq": [
+          {
+            "question": "Wo sehen Zuschauer die Sponsoren?",
+            "answer": "Im öffentlichen Live-Ticker als Banner am unteren Rand, kurz bei jedem Tor und bei jeder Auszeit der Mannschaft. Im Livestream zusätzlich als Präsentations-Sponsor im Videobild, als Zeile unter der Torkarte und als Logoleiste unter dem Bild."
+          },
+          {
+            "question": "Verdient Statix an den Sponsorengeldern mit?",
+            "answer": "Nein. Der Verein behält 100 % der Sponsorengelder. Statix stellt die Plätze zur Verfügung, vermittelt aber keine Sponsoren und behält nichts ein."
+          },
+          {
+            "question": "Kann der Verein Sponsoren für alle Mannschaften hinterlegen?",
+            "answer": "Ja. Was im Vereinsbereich hinterlegt ist, füllt bei jeder Mannschaft jeden Platz, den sie nicht selbst belegt hat. Eine Mannschaft mit eigenem Sponsor auf einem Platz behält ihn, ohne die Vereinssponsoren auf den anderen zu verlieren."
+          },
+          {
+            "question": "Muss ich als Werbung kennzeichnen?",
+            "answer": "Ein Logo mit „präsentiert von“ ist ein Sponsorhinweis. Zeigt das Motiv Produkte, Preise oder einen Kaufaufruf, ist es Werbung – dann wählst du für den Livestream die Beschriftung „Anzeige“."
           }
         ]
       },

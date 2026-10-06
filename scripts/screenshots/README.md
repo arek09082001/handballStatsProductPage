@@ -342,3 +342,39 @@ python3 -c "from PIL import Image; Image.open('.screenshots-livestream/regie/out
 
 Mannschaften, Halle und Link sind Platzhalter („HSG Muster“ gegen „SV
 Beispiel“, „Sporthalle Nord“) — auf der Produktseite steht kein echter Verein.
+
+## Statistik: Expected Goals & Aufstellungen (`scripts/screenshots/statistik/`)
+
+`statistik/harness.tsx` mountet die echte Spielstatistik der App
+(`StatsView`) über ein ERFUNDENES, beendetes Spiel: Kader mit Platzhalter-
+namen, Wechsel mit Spielminute, Würfe mit Wurfzone und Torziel, Assists als
+eigene Ereignisse, Paraden und Gegentore mit Zone. Das Spiel kommt aus einem
+Zufallsgenerator mit festem Startwert (`#seed=…` wählt einen anderen; die
+Bilder der Seite nehmen 17 = 29:23). xG/xS, Tabellen und die
+Aufstellungs-Analyse rechnet die App selbst.
+
+```bash
+node scripts/screenshots/livestream/regie/build.mjs scripts/screenshots/statistik/harness.tsx statistik
+node scripts/screenshots/statistik/shoot.mjs        # → .screenshots-livestream/statistik/out
+```
+
+`xg-uebersicht` → `statistik-xg-uebersicht.png` (Kacheln + beide Bilanzen), `xg-tabelle` → `statistik-xg-spieler.png`,
+`xs-torhueter` → `statistik-xs-torhueter.png`, `lineup-aufstellungen|rueckraum|zusammenspiel`
+→ `aufstellungen-tore|rueckraum|zusammenspiel.png`.
+
+## Sponsoren (`scripts/screenshots/sponsoren/`)
+
+Die Sponsoren sind ERFUNDEN (`logos.mjs`: „Autohaus Muster“, „Bäckerei
+Beispiel“, „Sport Muster“, „Stadtwerke Musterstadt“, „Physio am Musterpark“,
+als SVG gezeichnet). Drei Quellen:
+
+- Einstellungen der App: `sponsoren/harness.tsx` mountet die echte
+  `SponsorsSection` (`node …/regie/build.mjs scripts/screenshots/sponsoren/harness.tsx sponsoren`),
+  aufgenommen bei 928 px Breite und in `sponsoren-ticker-einstellungen.png`
+  (oben) und `sponsoren-stream-einstellungen.png` (Livestream mit Vorschau)
+  geteilt.
+- Livestream und Ticker: der Stand-in `livestream/viewer-api.mjs` liefert
+  für `sponsorlive` und `ticker` dieselbe Partie mit diesen Sponsoren;
+  `node scripts/screenshots/livestream/viewer-shots.mjs '' sponsor` →
+  `sponsor-stream` (`sponsoren-livestream.png`) und `sponsor-ticker-phone`
+  (`mobil-sponsoren-ticker.png`).

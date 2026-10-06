@@ -12,7 +12,13 @@ const compat = new FlatCompat({
 const eslintConfig = [
   // Built against the app repo (its `@/` and node_modules), not this one —
   // see scripts/screenshots/README.md, "Livestream".
-  { ignores: ["scripts/screenshots/livestream/regie/**"] },
+  {
+    ignores: [
+      "scripts/screenshots/livestream/regie/**",
+      "scripts/screenshots/statistik/harness.tsx",
+      "scripts/screenshots/sponsoren/harness.tsx",
+    ],
+  },
   ...compat.config({
     extends: ["next/core-web-vitals", "next/typescript"],
   }),

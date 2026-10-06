@@ -3,6 +3,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import { PUBLIC_SPONSORS } from '../sponsoren/logos.mjs';
 const PORT = Number(process.env.PORT || 4000);
 const MEDIA = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../../../.screenshots-livestream/media');
 export const BASE_DATE = Date.UTC(2026, 9, 3, 18, 40, 0);
@@ -48,7 +49,10 @@ const EVENTS = [
   ev(56, 'team_timeout'),
   G(96, 'p13'),
 ];
-function snapshot(state) {
+function snapshot(slug) {
+  // `ticker` and `sponsorlive` are the sponsor shots: the same match as a ticker
+  // and as a stream, both with the invented sponsors of `../sponsoren/logos.mjs`.
+  const state = slug === 'ticker' || slug === 'sponsorlive' ? 'live' : slug;
   const now = Date.now();
   const scheduled = state === 'scheduled';
   const played = state === 'live' || state === 'ended';
@@ -59,10 +63,10 @@ function snapshot(state) {
   }[state];
   const goals = (side) => EVENTS.filter((e) => (side === 'us' ? e.counts.goal : e.counts.goalConceded)).length;
   return {
-    fingerprint: `f-${state}`,
+    fingerprint: `f-${slug}`,
     serverNow: iso(now),
     game: {
-      slug: state, teamName: 'HSG Muster', teamLogoUrl: null, opponentName: 'SV Beispiel', opponentLogoUrl: null,
+      slug, teamName: 'HSG Muster', teamLogoUrl: null, opponentName: 'SV Beispiel', opponentLogoUrl: null,
       location: 'home', status: { scheduled: 'scheduled', live: 'live', ended: 'finished' }[state], type: 'league',
       scheduledAt: iso(scheduled ? now + (1 * 3600 + 12 * 60 + 41) * 1000 : now - 30 * 60_000),
       halves: 2, halfSeconds: 1800,
@@ -75,8 +79,8 @@ function snapshot(state) {
     roster,
     events: played ? EVENTS : [],
     substitutions: [],
-    format: 'stream',
-    stream,
+    format: slug === 'ticker' ? 'ticker' : 'stream',
+    stream: slug === 'ticker' ? undefined : stream,
     clockLog: played ? [{ at: iso(BASE_DATE - 400_000), s: CLOCK0 - 400, run: true }] : undefined,
   };
 }
@@ -89,7 +93,8 @@ function playlist(vod) {
   if (vod) lines.push('#EXT-X-ENDLIST');
   return lines.join('\n') + '\n';
 }
-const STATES = ['scheduled', 'live', 'ended'];
+const STATES = ['scheduled', 'live', 'ended', 'ticker', 'sponsorlive'];
+const WITH_SPONSORS = new Set(['ticker', 'sponsorlive']);
 http.createServer((req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
   const send = (status, body, type) => { res.writeHead(status, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'content-type', 'Cache-Control': 'no-store', 'Content-Type': type }); res.end(body); };
@@ -97,7 +102,8 @@ http.createServer((req, res) => {
   const p = url.pathname;
   const snap = /^\/api\/public\/live\/([a-z]+)$/.exec(p);
   if (snap && STATES.includes(snap[1])) return send(200, JSON.stringify(snapshot(snap[1])), 'application/json');
-  if (/^\/api\/public\/live\/[a-z]+\/sponsors$/.test(p)) return send(200, '{}', 'application/json');
+  const spons = /^\/api\/public\/live\/([a-z]+)\/sponsors$/.exec(p);
+  if (spons) return send(200, WITH_SPONSORS.has(spons[1]) ? JSON.stringify(PUBLIC_SPONSORS) : '{}', 'application/json');
   if (/^\/api\/public\/live\/[a-z]+\/heartbeat$/.test(p)) return send(204, '', 'text/plain');
   if (p === '/__reset') { t0 = Date.now(); startChunks = Number(url.searchParams.get('start') || 50); return send(204, '', 'text/plain'); }
   if (p === '/media.m3u8') return send(200, playlist(url.searchParams.has('vod')), 'application/vnd.apple.mpegurl');

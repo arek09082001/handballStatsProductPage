@@ -5199,7 +5199,7 @@
         "limits": [
           "Sin posición de lanzamiento registrada no hay mapa de tiro. Las cifras siguen siendo correctas, solo el mapa se queda vacío.",
           "La posición es una zona, no una coordenada al centímetro. Para la pregunta «desde dónde lanzamos» basta; para balística, no.",
-          "Statix no calcula goles esperados. El mapa muestra lo que pasó, no lo que debería haber pasado."
+          "Statix calcula los Expected Goals en una página propia a partir de la misma posición de lanzamiento. El mapa de aquí muestra lo que pasó; si eso fue más o menos de lo esperado, te lo dice xG."
         ],
         "faq": [
           {
@@ -5361,6 +5361,190 @@
           {
             "question": "¿Ven otros entrenadores mis notas?",
             "answer": "Solo tu propio cuerpo técnico. Las notas no forman parte de la publicación de un partido."
+          }
+        ]
+      },
+      {
+        "slug": "expected-goals",
+        "name": "Expected Goals y Expected Saves",
+        "short": "Expected Goals (xG)",
+        "headline": "No todos los porcentajes valen lo mismo",
+        "summary": "Expected Goals (goles esperados) y Expected Saves (paradas esperadas): lo que valían los lanzamientos de una jugadora y cuántos balones paró una portera por encima de lo esperado.",
+        "tagline": "Una extremo con un 60 % y una jugadora de primera línea con un 45 %: ¿quién lo hizo mejor? Los Expected Goals tienen en cuenta la posición de lanzamiento. Y los Expected Saves te dicen si la portera estuvo bien o si la defensa solo permitió lanzamientos difíciles.",
+        "intro": [
+          "El porcentaje de acierto es la cifra más honesta del balonmano, y la más injusta. Quien solo lanza desde el extremo y al contraataque tiene un porcentaje alto sin que eso diga nada de su finalización. Quien asume los lanzamientos difíciles desde nueve metros tiene uno bajo. Los Expected Goals (xG, goles esperados) lo compensan: cada posición de lanzamiento tiene una probabilidad de gol fija, extremo izquierdo 0,62, nueve metros centro 0,43, siete metros 0,75, contraataque desde primera línea bastante más. Sumado, da cuántos goles valían las ocasiones.",
+          "Lo que de verdad dice algo es la comparación. Más goles que xG significa que las ocasiones se aprovecharon por encima de la media. Menos significa que las ocasiones estaban, pero faltó acierto. En la tabla del partido aparece por jugadora como xG y xG +/−, con una llama para las que están en racha.",
+          "Los Expected Saves (xS, paradas esperadas) son la misma pregunta desde el otro lado: ¿cuántos balones habría parado una portera media ante exactamente esos lanzamientos? Solo cuentan los lanzamientos a portería, y los valores salen de la misma tabla que los Expected Goals, no de una segunda. Una portera detrás de una defensa que solo permite lanzamientos desde diez metros tiene un porcentaje de paradas alto y, aun así, un xS +/− de cero."
+        ],
+        "facts": [
+          {
+            "term": "Base",
+            "value": "La posición de lanzamiento, que ya registras en directo"
+          },
+          {
+            "term": "Para jugadoras de campo",
+            "value": "xG y xG +/− por partido y a lo largo de la temporada"
+          },
+          {
+            "term": "Para porteras",
+            "value": "xS y xS +/−: solo lanzamientos a portería"
+          },
+          {
+            "term": "Contraataque y 7 m",
+            "value": "Valores propios, porque una defensa abierta vale más"
+          },
+          {
+            "term": "Cuándo",
+            "value": "En directo durante el partido, después y con efecto retroactivo para partidos antiguos"
+          },
+          {
+            "term": "También en",
+            "value": "El perfil de la jugadora y el informe en PDF"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Registrar la posición de lanzamiento",
+            "body": "En cada lanzamiento tocas la zona desde la que se lanzó, igual que hasta ahora para el mapa de tiro. xG no necesita nada más."
+          },
+          {
+            "title": "Leer el balance",
+            "body": "El balance de xG muestra goles frente a goles esperados; el de paradas, paradas frente a paradas esperadas. Debajo, una frase explica qué significa la diferencia."
+          },
+          {
+            "title": "Comparar jugadoras",
+            "body": "En la tabla ordenas por xG +/−. Quien está muy por encima de cero saca más de sus lanzamientos; quien está por debajo tiene buenas ocasiones y las falla."
+          },
+          {
+            "title": "Seguirlo a lo largo de la temporada",
+            "body": "En el perfil de la jugadora se suma todo a lo largo de los partidos. Un partido es una foto fija; diez partidos son una conclusión."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "El balance de xG y el balance de paradas en las estadísticas del partido de Statix: 29 goles con 23,4 Expected Goals, 19 paradas con 14,9 Expected Saves",
+            "label": "Goles frente a xG, paradas frente a xS, con una frase que dice qué significa"
+          },
+          {
+            "alt": "La tabla de jugadoras de campo en Statix con tiempo de juego, goles, lanzamientos, porcentaje, xG y xG +/− por jugadora",
+            "label": "Por jugadora: xG y xG +/−, las que están en racha con una llama"
+          },
+          {
+            "alt": "La tabla de porteras en Statix con paradas, goles encajados, porcentaje de paradas, xS y xS +/−",
+            "label": "Porteras: Expected Saves en lugar de solo el porcentaje"
+          }
+        ],
+        "limits": [
+          "Los valores son una tabla fija por zona de lanzamiento, no un modelo que aprenda de vuestros partidos. No conoce el ángulo, la presión defensiva ni el tipo de lanzamiento: valora desde dónde se lanzó, no cómo.",
+          "Un lanzamiento sin posición registrada no tiene valor. Se cuenta aparte y queda fuera de la comparación, en lugar de valorarlo con cero y hacer que la finalización parezca peor de lo que fue.",
+          "Un solo partido es una muestra pequeña. Un xG +/− de +1,5 tras seis lanzamientos es un indicio, no una valoración de una jugadora."
+        ],
+        "faq": [
+          {
+            "question": "¿Qué son los Expected Goals en balonmano?",
+            "answer": "Los Expected Goals (xG, goles esperados) indican cuántos goles valían los lanzamientos de una jugadora o de un equipo. Cada posición de lanzamiento tiene una probabilidad de gol: extremo, unos 0,62; nueve metros centro, 0,43; siete metros, 0,75. La suma de todos los lanzamientos es el valor esperado; la comparación con los goles reales muestra si las ocasiones se aprovecharon bien."
+          },
+          {
+            "question": "¿Qué son los Expected Saves?",
+            "answer": "Los Expected Saves (xS, paradas esperadas) son el número de paradas que una portera media habría hecho ante los mismos lanzamientos a portería. Si una portera para más, su xS +/− es positivo, independientemente de lo fáciles o difíciles que fueran los lanzamientos que permitió su defensa."
+          },
+          {
+            "question": "¿Tengo que registrar más cosas?",
+            "answer": "No. xG y xS se calculan con la posición de lanzamiento que ya tocas para el mapa de tiro. Los partidos en los que registraste la posición también reciben los valores con efecto retroactivo."
+          },
+          {
+            "question": "¿De dónde salen los valores de cada zona de lanzamiento?",
+            "answer": "De una tabla fija con porcentajes de acierto publicados por zona, para el ataque posicional y, por separado, para el contraataque. Es igual para todos los equipos, para que las cifras sigan siendo comparables. Encontrarás más sobre el método en la guía sobre Expected Goals."
+          }
+        ]
+      },
+      {
+        "slug": "aufstellungs-analyse",
+        "name": "Análisis de alineaciones",
+        "short": "Alineaciones",
+        "headline": "¿Qué siete marcan los goles?",
+        "summary": "Qué alineación marca los goles, qué trío de primera línea funciona y con quién acierta más una jugadora, con más/menos, por partido y a lo largo de la temporada.",
+        "tagline": "Cada cambio que registras es información: quién estaba en la pista a la vez. Con eso, Statix calcula qué alineación marca los goles, qué trío de primera línea sostiene al equipo y con quién acierta más una jugadora.",
+        "intro": [
+          "Es la pregunta que se hace cualquier entrenador en cada jornada: ¿con qué siete salgo y a quién meto cuando las cosas no salen? La respuesta está en datos que ya tienes. Como registras los cambios en directo, Statix sabe en cada segundo quién estaba en la pista y puede asignar a cada gol y a cada gol encajado la alineación que lo vivió.",
+          "Hay tres enfoques, uno al lado del otro. Alineaciones: las seis jugadoras de campo, ordenadas por goles marcados, con lanzamientos, porcentaje, minutos juntas, goles encajados y más/menos. Primera línea: solo los tríos de lateral izquierdo, central y lateral derecho, porque ahí es donde surgen más combinaciones. Juego conjunto: para una jugadora, cuántas veces acierta mientras una compañera concreta está en la pista y cuántos goles le ha asistido esa compañera.",
+          "Lo tienes para cada partido en las estadísticas del partido y para toda la temporada en la página del equipo. El análisis con IA lee las mismas cifras y puede decirte qué formación ha sostenido al equipo en los últimos partidos."
+        ],
+        "facts": [
+          {
+            "term": "Base",
+            "value": "Los cambios que registras en directo, con minuto de juego"
+          },
+          {
+            "term": "Alineaciones",
+            "value": "Goles, lanzamientos, porcentaje, minutos, goles encajados, más/menos"
+          },
+          {
+            "term": "Primera línea",
+            "value": "Los tríos de LI, CE y LD"
+          },
+          {
+            "term": "Juego conjunto",
+            "value": "Goles por compañera en la pista, además de asistencias"
+          },
+          {
+            "term": "Periodo",
+            "value": "Por partido y a lo largo de la temporada"
+          },
+          {
+            "term": "Posición",
+            "value": "Puesto de ataque planificado; si no lo hay, posición habitual"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Registrar los cambios",
+            "body": "Como en cualquier partido: una jugadora sale de la pista, otra entra; intercambias dos tarjetas. Con eso, Statix conoce la alineación en cada segundo."
+          },
+          {
+            "title": "Comparar alineaciones",
+            "body": "Después del partido, la tarjeta «Alineaciones y combinaciones» muestra qué siete estuvieron juntas cuánto tiempo y qué salió de ello: delante los goles, detrás los goles encajados y, al final, el más/menos."
+          },
+          {
+            "title": "Leer la primera línea y las parejas",
+            "body": "La pestaña Primera línea muestra solo los tríos; Juego conjunto, las parejas: eliges una jugadora y ves con quién acierta y quién le da los pases de gol."
+          },
+          {
+            "title": "Decidir con la temporada entera",
+            "body": "En la página del equipo se suma todo a lo largo de los partidos. Un partido es casualidad; diez partidos muestran qué trío sostiene de verdad al equipo."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "El análisis de alineaciones en Statix: las seis jugadoras de campo de cada alineación con goles, lanzamientos, porcentaje, minutos juntas, goles encajados y más/menos",
+            "label": "Alineaciones: qué siete estuvieron juntas cuánto tiempo y qué salió de ello"
+          },
+          {
+            "alt": "La pestaña Primera línea en Statix con los tríos de lateral izquierdo, central y lateral derecho y sus goles",
+            "label": "Primera línea: qué trío sostiene al equipo"
+          },
+          {
+            "alt": "La pestaña Juego conjunto en Statix: goles y lanzamientos de una jugadora por compañera en la pista, con minutos, porcentaje y asistencias",
+            "label": "Juego conjunto: con quién acierta y quién le asiste"
+          }
+        ],
+        "limits": [
+          "Sin cambios con minuto de juego no hay alineación. Un partido en el que nunca se cambió, o se cambió sin reloj, no cuenta: una alineación que nadie conoce sería peor que ninguna.",
+          "Estar juntas en la pista no significa ser la causa. Un trío con +4 puede haber jugado contra la defensa más débil. Por eso los minutos aparecen siempre al lado.",
+          "Las alineaciones cuentan los siete metros; el juego conjunto, solo los lanzamientos de campo: un siete metros no tiene una compañera que lo prepare."
+        ],
+        "faq": [
+          {
+            "question": "¿Cómo sabe Statix quién estaba en la pista?",
+            "answer": "Por los cambios que registras durante el partido. Cada cambio lleva el minuto de juego, y de ahí sale la alineación de cada segundo. No tienes que hacer nada más."
+          },
+          {
+            "question": "¿Qué significa el más/menos de una alineación?",
+            "answer": "Los goles que marcó el equipo mientras exactamente esas jugadoras estaban juntas en la pista, menos los goles encajados en ese mismo tiempo. Una alineación con +3 marcó en sus minutos tres goles más de los que encajó."
+          },
+          {
+            "question": "¿Qué posición cuenta si una jugadora puede jugar en varias?",
+            "answer": "El puesto de ataque que planificaste para el partido. Si no hay ninguno, el puesto en la pista durante el partido y, si tampoco, la posición habitual de la plantilla."
           }
         ]
       },
@@ -6379,6 +6563,105 @@
           {
             "question": "¿Puedo compartir un partido de forma anónima?",
             "answer": "Un enlace sin más no dice quién lo ha creado. Quien comparte por correo aparece con su nombre ante el destinatario: ese es el sentido de la bandeja de entrada."
+          }
+        ]
+      },
+      {
+        "slug": "sponsoren",
+        "name": "Patrocinadores en el marcador en directo y la retransmisión",
+        "short": "Patrocinadores",
+        "headline": "Espacio publicitario que el club ya tiene",
+        "summary": "Presentar a los patrocinadores en el marcador en directo y en la retransmisión en directo: banner, «Gol presentado por…», un logo en cada tiempo muerto y un patrocinador principal en la imagen.",
+        "tagline": "Cada marcador en directo y cada retransmisión los abren familias, aficionados y antiguas jugadoras, en cada partido. Statix los convierte en espacios publicitarios para vuestros patrocinadores. El club se queda con el 100 % del dinero de los patrocinios.",
+        "intro": [
+          "Un club tiene patrocinadores que quieren algo más que una valla publicitaria que nadie ve en los partidos fuera de casa. Statix les da espacios donde el público ya está mirando: en el marcador en directo público y en la retransmisión en directo. Un banner se muestra de forma permanente y varios logos se van alternando. Con cada gol aparece brevemente «Gol presentado por…», y en cada tiempo muerto del equipo aparece un patrocinador propio.",
+          "La retransmisión tiene un espacio propio: el patrocinador principal en la imagen de vídeo. Su logo está siempre en el lado del rival, para que no tape los rótulos de tu equipo, y es más bajo que ancho, para que nunca invada el rótulo del marcador. Tú decides si se ve de forma permanente o brevemente cada cinco minutos, y si lleva el texto «presentado por», «Patrocinador» o «Anuncio». Al inicio, en el descanso y al final, la retransmisión lo muestra además en grande.",
+          "Los patrocinadores se pueden añadir para un equipo o para todo el club. Lo que añade el club ocupa, en cada equipo, todos los espacios que ese equipo no ha ocupado por su cuenta: así, un patrocinador principal está con una sola subida en cada marcador de todos los equipos. Statix no busca patrocinadores ni se queda con nada: el contrato y la factura quedan entre el club y el patrocinador."
+        ],
+        "facts": [
+          {
+            "term": "Banner",
+            "value": "Permanente en el marcador, varios logos alternándose"
+          },
+          {
+            "term": "Gol",
+            "value": "«Gol presentado por…» en cada gol"
+          },
+          {
+            "term": "Tiempo muerto",
+            "value": "Un patrocinador propio en cada tiempo muerto del equipo"
+          },
+          {
+            "term": "Retransmisión",
+            "value": "Patrocinador principal en la imagen, en el lado del rival"
+          },
+          {
+            "term": "Para el club",
+            "value": "Se añade una vez y está en todos los equipos"
+          },
+          {
+            "term": "Ingresos",
+            "value": "El 100 % para el club: Statix no se lleva nada"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Añadir los logos",
+            "body": "En los ajustes, en Patrocinadores, subes un logo, indicas el nombre y, si quieres, un enlace, y eliges el espacio: banner, gol, tiempo muerto o retransmisión."
+          },
+          {
+            "title": "Colocarlo en la retransmisión",
+            "body": "Para el patrocinador principal ajustas el tamaño, la frecuencia y el texto. La vista previa muestra el partido en casa y fuera, en el ordenador y en el móvil, antes de que lo vea ningún espectador."
+          },
+          {
+            "title": "Publicar el partido",
+            "body": "En cuanto un partido es público como marcador en directo o retransmisión, los patrocinadores aparecen, sin que tengas que hacer nada durante el partido."
+          },
+          {
+            "title": "Enseñárselo a los patrocinadores",
+            "body": "El enlace al marcador y la página del equipo con todos los partidos públicos son lo que puedes enviar a un patrocinador como prueba."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Una retransmisión de Statix con el patrocinador principal arriba a la derecha, un patrocinador de gol bajo el rótulo del gol y una cinta de logos de patrocinadores bajo la imagen",
+            "label": "En la retransmisión: patrocinador principal, patrocinador de gol y franja de logos (pista dibujada, patrocinadores inventados)"
+          },
+          {
+            "alt": "Los ajustes de patrocinadores en Statix: tres patrocinadores de banner, un patrocinador de gol y uno de tiempo muerto, y encima el aviso de que el club se queda con el 100 % del dinero de los patrocinios",
+            "label": "Los espacios del marcador: banner, gol, tiempo muerto"
+          },
+          {
+            "alt": "Los ajustes del patrocinador principal en la retransmisión, con vista previa para el partido en casa y fuera",
+            "label": "El patrocinador principal con vista previa, antes de que nadie lo vea"
+          },
+          {
+            "alt": "El marcador en directo de Statix en el móvil con el resultado, el desarrollo del partido y la franja de patrocinadores «presentado por» en la parte inferior",
+            "label": "En el marcador en el móvil: la franja en la parte inferior"
+          }
+        ],
+        "limits": [
+          "Los patrocinadores solo aparecen donde un partido es público: en el marcador en directo o en la retransmisión. Un partido privado no muestra publicidad.",
+          "El espacio en la imagen de la retransmisión solo existe con la retransmisión en directo, y esta todavía está en beta.",
+          "Los logos son responsabilidad vuestra: libres de derechos de terceros, sin publicidad de apuestas, alcohol ni tabaco. Siempre se muestra una indicación como «presentado por».",
+          "Statix no busca patrocinadores ni gestiona la facturación. Cuánto cuesta un espacio lo acordáis vosotros con el patrocinador."
+        ],
+        "faq": [
+          {
+            "question": "¿Dónde ve el público a los patrocinadores?",
+            "answer": "En el marcador en directo público, como banner en la parte inferior y brevemente en cada gol y en cada tiempo muerto del equipo. En la retransmisión, además, como patrocinador principal en la imagen de vídeo, como línea bajo el rótulo del gol y como franja de logos bajo la imagen."
+          },
+          {
+            "question": "¿Se lleva Statix una parte del dinero de los patrocinios?",
+            "answer": "No. El club se queda con el 100 % del dinero de los patrocinios. Statix pone los espacios a disposición, pero no busca patrocinadores ni se queda con nada."
+          },
+          {
+            "question": "¿Puede el club añadir patrocinadores para todos los equipos?",
+            "answer": "Sí. Lo que se añade en el área del club ocupa, en cada equipo, todos los espacios que ese equipo no ha ocupado por su cuenta. Un equipo con su propio patrocinador en un espacio lo mantiene, sin perder los patrocinadores del club en los demás."
+          },
+          {
+            "question": "¿Tengo que marcarlo como publicidad?",
+            "answer": "Un logo con «presentado por» es una mención de patrocinio. Si la imagen muestra productos, precios o una invitación a comprar, es publicidad: entonces eliges para la retransmisión el texto «Anuncio»."
           }
         ]
       },

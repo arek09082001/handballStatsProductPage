@@ -18,7 +18,7 @@ export const handballExpectedGoalsXg: Article = {
   category: 'Kennzahlen & Analyse',
   archetype: 'kennzahl',
   datePublished: '2026-07-26',
-  dateModified: '2026-08-07',
+  dateModified: '2026-10-06',
   readingTimeMinutes: 7,
   excerpt:
     'Expected Goals beantworten die Frage, die die Wurfquote offenlässt: Waren die Chancen gut? Wie du Chancenqualität ohne Datenbank abschätzt – und wo die Kennzahl im Amateurbereich endet.',
@@ -88,7 +88,7 @@ Wenn du an der Chancenqualität gearbeitet hast, zeigt sich das zuerst in der Ve
 - **Der xG-Wert je Angriff steigt, auch wenn die Torzahl gleich bleibt.** Über mehrere Spiele folgen die Tore der Chancenqualität.
 - **Die Wurfquote bleibt stabil, obwohl ihr mehr abschließt.** Dann habt ihr Tempo gewonnen, ohne Qualität zu verlieren.
 
-Die Zonen mitzuschreiben ist der ganze Aufwand. Wenn du Abschlüsse ohnehin mit Position erfasst, etwa über das Wurfbild in einer [Handball-Statistik-App](/), fällt die Zonenverteilung als Nebenprodukt ab und du musst nur noch die Wahrscheinlichkeiten dranschreiben.`,
+Die Zonen mitzuschreiben ist der ganze Aufwand. Wenn du Abschlüsse ohnehin mit Position erfasst, etwa über das Wurfbild in einer [Handball-Statistik-App](/), fällt die Zonenverteilung als Nebenprodukt ab und du musst nur noch die Wahrscheinlichkeiten dranschreiben. Statix nimmt dir auch das ab: Aus der erfassten Wurfposition rechnet es [Expected Goals und Expected Saves](/funktionen/expected-goals) je Spielerin, je Torhüterin und über die Saison – mit einer festen Tabelle je Zone, gleich für alle Mannschaften.`,
   modules: [
     {
       kind: 'answerBox',
