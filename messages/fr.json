@@ -320,6 +320,7 @@
       "faq": "FAQ",
       "newsletter": "Newsletter",
       "feedback": "Avis",
+      "videoRequest": "Accès vidéo",
       "tacticsBoard": "Tableau tactique",
       "handballStats": "Statistiques de handball",
       "schedule": "Rendez-vous et présence",
@@ -630,7 +631,7 @@
       },
       "contactRequests": {
         "title": "Contact, retours et gestion des demandes",
-        "description": "Lorsque vous nous contactez (p. ex. via le formulaire de contact ou de retour, par e-mail, par téléphone ou via les réseaux sociaux) et dans le cadre des relations d’utilisation et d’affaires existantes, les informations fournies par les personnes qui nous sollicitent sont traitées dans la mesure nécessaire pour répondre à la demande de contact et aux éventuelles mesures sollicitées. Les formulaires nous transmettent par e-mail les informations que vous saisissez ; le contenu du formulaire n’est pas enregistré dans une base de données. Afin de contrer les demandes de masse automatisées, votre adresse IP est conservée au maximum une heure dans un compteur volatil en mémoire, puis écartée.",
+        "description": "Lorsque vous nous contactez (p. ex. via le formulaire de contact, de retour ou de demande vidéo, par e-mail, par téléphone ou via les réseaux sociaux) et dans le cadre des relations d’utilisation et d’affaires existantes, les informations fournies par les personnes qui nous sollicitent sont traitées dans la mesure nécessaire pour répondre à la demande de contact et aux éventuelles mesures sollicitées. Les formulaires nous transmettent par e-mail les informations que vous saisissez ; le contenu du formulaire n’est pas enregistré dans une base de données. Afin de contrer les demandes de masse automatisées, votre adresse IP est conservée au maximum une heure dans un compteur volatil en mémoire, puis écartée.",
         "items": [
           {
             "label": "Types de données traitées :",
@@ -944,7 +945,7 @@
           {
             "title": "Envoi d’e-mails (Brevo)",
             "paragraphs": [
-              "Les e-mails transactionnels – tels que la confirmation d’inscription, les liens de réinitialisation du mot de passe, les invitations d’équipe, les rappels de rendez-vous, les feuilles de match partagées et les notifications système – ainsi que les e-mails envoyés dans le cadre du formulaire de contact et de retour et de la newsletter sont expédiés via le prestataire Brevo. L’adresse e-mail, le nom et le contenu du message concerné ainsi que des informations techniques d’envoi sont traités à cette occasion."
+              "Les e-mails transactionnels – tels que la confirmation d’inscription, les liens de réinitialisation du mot de passe, les invitations d’équipe, les rappels de rendez-vous, les feuilles de match partagées et les notifications système – ainsi que les e-mails envoyés dans le cadre du formulaire de contact, de retour et de demande vidéo et de la newsletter sont expédiés via le prestataire Brevo. L’adresse e-mail, le nom et le contenu du message concerné ainsi que des informations techniques d’envoi sont traités à cette occasion."
             ],
             "items": [
               {
@@ -1818,6 +1819,60 @@
     "missingRating": "Choisissez d’abord une note.",
     "missingCategory": "Indiquez sur quoi porte votre avis."
   },
+  "videoRequestPage": {
+    "metaTitle": "Demander l’accès à la vidéo",
+    "kicker": "Bêta vidéo",
+    "title": "Faire activer la vidéo pour ton compte",
+    "description": "Le tagging vidéo, le livestream et l’analyse à partir de l’image sont assez aboutis pour travailler avec – et tournent jusqu’au lancement en bêta fermée, activée à la main compte par compte. Une demande, une minute, et nous te répondons personnellement.",
+    "mailSubject": "Accès vidéo pour mon compte Statix",
+    "contactLabel": "Qui fait la demande ?",
+    "namePlaceholder": "Ton nom",
+    "emailPlaceholder": "E-mail de ton compte Statix",
+    "emailHint": "Nous activons le compte enregistré exactement sous cette adresse. Pas encore de compte ? Inscris-toi gratuitement sur {app} d’abord – avec la même adresse.",
+    "teamLabel": "Équipe et club",
+    "teamPlaceholder": "p. ex. Seniors F 1, VfL Musterstadt",
+    "tierLabel": "Quel niveau vidéo as-tu en vue ?",
+    "tiers": {
+      "basis": "Vidéo Base",
+      "team": "Vidéo Équipe",
+      "analyse": "Vidéo Analyse",
+      "unsure": "Pas encore sûr"
+    },
+    "tierHint": "Une orientation, pas une commande – ce qui distingue les niveaux est sur la <pricing>page des tarifs</pricing>. Pendant la bêta, la vidéo ne coûte rien.",
+    "messageLabel": "Comment filmez-vous, que prévoyez-vous ?",
+    "messagePlaceholder": "Un téléphone à la ligne médiane ou deux ? Des vidéos de match pour le débrief, un livestream pour les parents, des trajectoires à partir de l’image ? Tout ce qui nous aide à cerner vos besoins.",
+    "optional": "(facultatif)",
+    "button": "Demander l’accès",
+    "pending": "Envoi en cours…",
+    "privacyPrefix": "J’accepte la",
+    "privacyLink": "politique de confidentialité",
+    "privacySuffix": "et consens au traitement de mes données.",
+    "note": "Nous utilisons tes informations uniquement pour traiter ta demande.",
+    "successTitle": "Demande envoyée !",
+    "successDescription": "Merci – une confirmation est en route. Nous lisons chaque demande nous-mêmes et te recontactons dès que ton compte est activé.",
+    "errorTitle": "Échec de l’envoi",
+    "invalidEmail": "Merci d’indiquer une adresse e-mail valide.",
+    "next": {
+      "kicker": "Et ensuite",
+      "title": "Ce qui se passe après l’envoi",
+      "steps": {
+        "read": {
+          "title": "Une personne lit la demande",
+          "body": "Pas de file d’attente, pas d’automate : nous lisons qui vous êtes et comment vous filmez, et vous contactons directement en cas de question."
+        },
+        "enable": {
+          "title": "Ton compte est activé",
+          "body": "Dès qu’une place se libère dans la bêta, nous activons la vidéo pour le compte sous ton adresse – pour toutes les équipes dont tu es l’entraîneur principal."
+        },
+        "feedback": {
+          "title": "Vous donnez votre retour",
+          "body": "La bêta vit de ce qui revient de la salle. Ce qui coince, vous nous le dites – et ça atterrit dans la version suivante."
+        }
+      },
+      "taggingLink": "Ce que le tagging vidéo sait faire aujourd’hui",
+      "livestreamLink": "Ce que le livestream sait faire aujourd’hui"
+    }
+  },
   "privacyPage": {
     "header": {
       "eyebrow": "Confidentialité",
@@ -1978,7 +2033,9 @@
         "creditsTitle": "Crédits de calcul",
         "creditsText": "Un crédit correspond à une heure sur une carte graphique dans l’UE – pour le panorama, la version suivie, les déplacements ou la détection du ballon. Les essais ne coûtent rien, et les traitements définitivement échoués sont recrédités.",
         "creditPacks": "Recharge à partir de Vidéo Équipe : {smallCredits} crédits pour {smallPrice}, {largeCredits} crédits pour {largePrice}.",
-        "betaNote": "La vidéo est une bêta fermée jusqu’au {launchDate}. L’analyse à partir de l’image ne fait que proposer – elle ne crée jamais d’elle-même une scène ou une entrée statistique."
+        "betaNote": "La vidéo est une bêta fermée jusqu’au {launchDate}. L’analyse à partir de l’image ne fait que proposer – elle ne crée jamais d’elle-même une scène ou une entrée statistique.",
+        "requestCta": "Demander l’accès à la vidéo",
+        "requestHint": "Tu veux utiliser la vidéo avant le lancement ? Demande l’activation pour ton compte – pendant la bêta, elle ne coûte rien."
       },
       "summary": {
         "title": "Votre sélection",
@@ -2004,6 +2061,8 @@
         "buyLocked": "Réservable à partir du {launchDate}",
         "register": "S’inscrire gratuitement",
         "registerFounder": "S’inscrire gratuitement et garder ses droits acquis",
+        "requestVideo": "Demander l’accès à la vidéo",
+        "requestVideoHint": "Jusqu’au lancement, la vidéo tourne en bêta fermée : activation compte par compte, sur demande et gratuite.",
         "previewBadge": "Aperçu du paiement",
         "mobileToday": "aujourd’hui",
         "jump": "Récapitulatif"
@@ -5048,7 +5107,7 @@
           },
           {
             "question": "Est-ce que je peux déjà utiliser le livestream aujourd'hui ?",
-            "answer": "Seulement si ton compte a accès à la bêta vidéo. Le livestream est en cours de construction et de test avec quelques équipes. Écris-nous si vous voulez en être – la liste d'attente, c'est un e-mail."
+            "answer": "Seulement si ton compte a accès à la bêta vidéo. Le livestream est en cours de construction et de test avec quelques équipes. Si vous voulez en être, demandez l’activation sur la page « Demander l’accès à la vidéo » – un court formulaire, et nous vous répondons personnellement."
           }
         ]
       },
@@ -5762,7 +5821,7 @@
         "faq": [
           {
             "question": "Puis-je déjà utiliser le tagging vidéo ?",
-            "answer": "Seulement si votre compte y a accès. La fonction est en cours de construction et tourne avec quelques équipes qui donnent leur retour. Écrivez-nous si vous voulez en faire partie — la liste d'attente est un e-mail."
+            "answer": "Seulement si votre compte y a accès. La fonction est en cours de construction et tourne avec quelques équipes qui donnent leur retour. Si vous voulez en faire partie, demandez l’activation sur la page « Demander l’accès à la vidéo » – un court formulaire, et nous vous répondons personnellement."
           },
           {
             "question": "Quelle différence entre un tag et une action saisie ?",
@@ -6790,7 +6849,8 @@
       "title": "Ce qui est en construction",
       "description": "Statix naît de ce qui remonte de la salle. Ce qui n'est pas encore terminé figure quand même ici — pour ce que c'est.",
       "cardCta": "Ce qui marche déjà, et ce qui ne marche pas encore",
-      "contact": "Vous voulez être parmi les premiers sur l'une de ces fonctions et donner votre retour ? <contact>Écrivez-nous</contact> — la liste d'attente est un e-mail."
+      "contact": "Vous voulez être parmi les premiers sur l’une de ces fonctions et donner votre retour ? La liste d’attente est un court formulaire – <request>demander l’accès</request>.",
+      "requestCta": "Demander l’accès à la vidéo"
     },
     "detail": {
       "breadcrumbLabel": "Fil d'Ariane",
@@ -6798,6 +6858,7 @@
       "breadcrumbFeatures": "Fonctions",
       "groupFallback": "Fonction",
       "allFeaturesCta": "Toutes les fonctions",
+      "requestCta": "Demander l’accès",
       "overviewKicker": "De quoi il s'agit",
       "factsTitle": "En bref",
       "shotsKicker": "Depuis l'application",

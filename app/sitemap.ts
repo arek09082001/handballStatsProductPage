@@ -10,6 +10,7 @@ import {
   FEATURES_PAGE_PATH,
   featurePath,
 } from '@/features/funktionen/data/features';
+import { VIDEO_REQUEST_PAGE_PATH } from '@/features/video-anfrage/data/video-request-content';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -98,6 +99,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'yearly',
       priority: 0.4,
+    },
+    {
+      url: absoluteUrl(VIDEO_REQUEST_PAGE_PATH),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.5,
     },
     {
       url: `${SITE_URL}/impressum`,

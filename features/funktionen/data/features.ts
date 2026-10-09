@@ -1,4 +1,5 @@
 import { DE_MESSAGES } from '@/lib/messages';
+import { VIDEO_REQUEST_PAGE_PATH } from '@/features/video-anfrage/data/video-request-content';
 
 /**
  * The Statix feature catalogue — the single source of truth for every surface
@@ -174,6 +175,14 @@ export interface FeatureRecord {
    */
   isNew?: true;
   /**
+   * Where a reader asks to have a `beta` feature enabled for their account.
+   * Set on the two video features: the hero shows the request button beside
+   * the "In Arbeit" badge, so the page that says "not for everyone yet" also
+   * says how to get in. A beta without a route here still wears the badge,
+   * just without the button.
+   */
+  requestPath?: string;
+  /**
    * Title, description and keywords of the route — German, because the server
    * renders the head and the canonical URL is the German page.
    */
@@ -308,6 +317,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     slug: 'handball-livestream',
     group: 'erfassen',
     status: 'beta',
+    requestPath: `${VIDEO_REQUEST_PAGE_PATH}?von=livestream`,
     shots: [
       { src: '/livestream-einblendung-tor.png', width: 2880, height: 1620 },
       { src: '/livestream-auszeit-quoten.png', width: 2880, height: 1620 },
@@ -479,6 +489,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
     slug: 'video-tagging',
     group: 'auswerten',
     status: 'beta',
+    requestPath: `${VIDEO_REQUEST_PAGE_PATH}?von=video-tagging`,
     shots: [
       { src: '/video-tagging-spuren.png', width: 2500, height: 1152 },
       { src: '/video-filter.png', width: 2560, height: 1800 },

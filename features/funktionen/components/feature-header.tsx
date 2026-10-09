@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, Play } from 'lucide-react';
+import { ChevronRight, KeyRound, Play } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from '@/features/landing-page/components/hero-action-button';
@@ -98,8 +98,18 @@ export default function FeatureHeader({ feature }: { feature: Feature }) {
             {feature.tagline}
           </p>
 
-          <div className='mt-6'>
+          <div className='mt-6 flex flex-col items-start gap-3'>
             <FeatureStatusBadge status={feature.status} tone='court' withHint />
+            {/* A beta that can be asked for says so right under the badge that
+                says "not for everyone yet" — the two are one statement. */}
+            {feature.requestPath ? (
+              <Link
+                href={feature.requestPath}
+                className='inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary/50 bg-primary/15 px-4 font-display text-[15px] font-bold tracking-tight text-chalk transition-colors duration-200 hover:border-primary hover:bg-primary/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+                <KeyRound className='size-4 text-primary' aria-hidden />
+                {t('requestCta')}
+              </Link>
+            ) : null}
           </div>
 
           <div className='relative mt-8 flex flex-col items-center gap-3 sm:flex-row sm:items-start'>

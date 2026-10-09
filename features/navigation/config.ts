@@ -5,6 +5,7 @@ import {
   FEATURES_PAGE_PATH,
   featurePath,
 } from '@/features/funktionen/data/features';
+import { VIDEO_REQUEST_PAGE_PATH } from '@/features/video-anfrage/data/video-request-content';
 import {
   NavigationGroup,
   NavigationItem,
@@ -105,6 +106,7 @@ const resourcesGroup: NavigationGroup = {
     { ident: 20, href: '/erfahrungen', labelKey: 'experiences' },
     { ident: 22, href: '/kontakt', labelKey: 'contact' },
     { ident: 23, href: '/feedback', labelKey: 'feedback' },
+    { ident: 29, href: VIDEO_REQUEST_PAGE_PATH, labelKey: 'videoRequest' },
     { ident: 3, href: '/#faq', labelKey: 'faq', sectionId: 'faq' },
     { ident: 21, href: '/#newsletter', labelKey: 'newsletter' },
   ],

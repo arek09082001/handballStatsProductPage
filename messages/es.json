@@ -320,6 +320,7 @@
       "faq": "Preguntas frecuentes",
       "newsletter": "Boletín",
       "feedback": "Opiniones",
+      "videoRequest": "Acceso al vídeo",
       "tacticsBoard": "Pizarra táctica",
       "handballStats": "Estadísticas de balonmano",
       "schedule": "Calendario y asistencia",
@@ -630,7 +631,7 @@
       },
       "contactRequests": {
         "title": "Contacto, comentarios y gestión de consultas",
-        "description": "Cuando se pone en contacto con nosotros (p. ej. a través del formulario de contacto o de comentarios, por correo electrónico, por teléfono o mediante redes sociales) y en el marco de las relaciones de usuario y comerciales existentes, la información facilitada por las personas que consultan se trata en la medida necesaria para responder a la solicitud de contacto y a las eventuales medidas solicitadas. Los formularios nos transmiten por correo electrónico la información que usted introduce; el contenido del formulario no se almacena en una base de datos. Para hacer frente a consultas masivas automatizadas, su dirección IP se conserva un máximo de una hora en un contador volátil en memoria y a continuación se descarta.",
+        "description": "Cuando se pone en contacto con nosotros (p. ej. a través del formulario de contacto, de comentarios o de solicitud de vídeo, por correo electrónico, por teléfono o mediante redes sociales) y en el marco de las relaciones de usuario y comerciales existentes, la información facilitada por las personas que consultan se trata en la medida necesaria para responder a la solicitud de contacto y a las eventuales medidas solicitadas. Los formularios nos transmiten por correo electrónico la información que usted introduce; el contenido del formulario no se almacena en una base de datos. Para hacer frente a consultas masivas automatizadas, su dirección IP se conserva un máximo de una hora en un contador volátil en memoria y a continuación se descarta.",
         "items": [
           {
             "label": "Tipos de datos tratados:",
@@ -944,7 +945,7 @@
           {
             "title": "Envío de correos electrónicos (Brevo)",
             "paragraphs": [
-              "Los correos electrónicos transaccionales —como la confirmación de registro, los enlaces para restablecer la contraseña, las invitaciones a equipos, los recordatorios de citas, las actas de partido compartidas y las notificaciones del sistema—, así como los correos electrónicos en el marco del formulario de contacto y de comentarios y del boletín, se envían a través del proveedor Brevo. En ese proceso se tratan la dirección de correo electrónico, el nombre y el contenido del mensaje correspondiente, así como información técnica de envío."
+              "Los correos electrónicos transaccionales —como la confirmación de registro, los enlaces para restablecer la contraseña, las invitaciones a equipos, los recordatorios de citas, las actas de partido compartidas y las notificaciones del sistema—, así como los correos electrónicos en el marco del formulario de contacto, de comentarios y de solicitud de vídeo y del boletín, se envían a través del proveedor Brevo. En ese proceso se tratan la dirección de correo electrónico, el nombre y el contenido del mensaje correspondiente, así como información técnica de envío."
             ],
             "items": [
               {
@@ -1818,6 +1819,60 @@
     "missingRating": "Elige primero una valoración.",
     "missingCategory": "Elige sobre qué es tu opinión."
   },
+  "videoRequestPage": {
+    "metaTitle": "Solicitar acceso al vídeo",
+    "kicker": "Beta de vídeo",
+    "title": "Activar el vídeo para tu cuenta",
+    "description": "El etiquetado de vídeo, la retransmisión en directo y el análisis a partir de la imagen están lo bastante terminados para trabajar con ellos, y hasta el lanzamiento funcionan como beta cerrada que activamos a mano cuenta por cuenta. Una solicitud, un minuto, y te respondemos personalmente.",
+    "mailSubject": "Acceso al vídeo para mi cuenta de Statix",
+    "contactLabel": "¿Quién lo solicita?",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Correo de tu cuenta Statix",
+    "emailHint": "Activamos la cuenta registrada exactamente con esta dirección. ¿Aún no tienes cuenta? Regístrate gratis antes en {app}, con la misma dirección.",
+    "teamLabel": "Equipo y club",
+    "teamPlaceholder": "p. ej. Femenino 1, VfL Musterstadt",
+    "tierLabel": "¿Qué nivel de vídeo tienes en mente?",
+    "tiers": {
+      "basis": "Vídeo Básico",
+      "team": "Vídeo Equipo",
+      "analyse": "Vídeo Análisis",
+      "unsure": "Aún no lo sé"
+    },
+    "tierHint": "Solo una orientación, no un pedido: lo que diferencia a los niveles está en la <pricing>página de precios</pricing>. Durante la beta el vídeo no cuesta nada.",
+    "messageLabel": "¿Cómo grabáis y qué tenéis previsto?",
+    "messagePlaceholder": "¿Un móvil en la línea central o dos? ¿Vídeos de partido para analizar, retransmisión para las familias, trayectorias a partir de la imagen? Todo lo que nos ayude a entender lo que necesitáis.",
+    "optional": "(opcional)",
+    "button": "Solicitar acceso",
+    "pending": "Enviando…",
+    "privacyPrefix": "Acepto la",
+    "privacyLink": "política de privacidad",
+    "privacySuffix": "y consiento el tratamiento de mis datos.",
+    "note": "Usamos tus datos únicamente para tramitar tu solicitud.",
+    "successTitle": "¡Solicitud enviada!",
+    "successDescription": "Gracias: la confirmación está en camino. Leemos cada solicitud personalmente y te avisamos en cuanto tu cuenta esté activada.",
+    "errorTitle": "Error al enviar",
+    "invalidEmail": "Introduce una dirección de correo electrónico válida.",
+    "next": {
+      "kicker": "Y después",
+      "title": "Qué pasa tras el envío",
+      "steps": {
+        "read": {
+          "title": "Una persona lee la solicitud",
+          "body": "Sin cola ni autómata: leemos quiénes sois y cómo grabáis, y os contactamos directamente si hay dudas."
+        },
+        "enable": {
+          "title": "Se activa tu cuenta",
+          "body": "En cuanto haya sitio en la beta, activamos el vídeo para la cuenta con tu dirección, en todos los equipos en los que seas primer entrenador."
+        },
+        "feedback": {
+          "title": "Nos dais vuestra opinión",
+          "body": "La beta vive de lo que vuelve del pabellón. Lo que falle, nos lo contáis, y acaba en la siguiente versión."
+        }
+      },
+      "taggingLink": "Qué puede hacer hoy el etiquetado de vídeo",
+      "livestreamLink": "Qué puede hacer hoy la retransmisión en directo"
+    }
+  },
   "privacyPage": {
     "header": {
       "eyebrow": "Privacidad",
@@ -1978,7 +2033,9 @@
         "creditsTitle": "Créditos de cálculo",
         "creditsText": "Un crédito es una hora en una tarjeta gráfica en la UE: para la panorámica, la versión con seguimiento, los recorridos o la detección del balón. Las pruebas no cuestan nada y las ejecuciones que fallan definitivamente se abonan.",
         "creditPacks": "Recarga a partir de Vídeo Equipo: {smallCredits} créditos por {smallPrice}, {largeCredits} créditos por {largePrice}.",
-        "betaNote": "El vídeo es una beta cerrada hasta el {launchDate}. El análisis a partir de la imagen solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística."
+        "betaNote": "El vídeo es una beta cerrada hasta el {launchDate}. El análisis a partir de la imagen solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística.",
+        "requestCta": "Solicitar acceso al vídeo",
+        "requestHint": "¿Quieres usar el vídeo antes del lanzamiento? Solicita la activación para tu cuenta: durante la beta no cuesta nada."
       },
       "summary": {
         "title": "Tu selección",
@@ -2004,6 +2061,8 @@
         "buyLocked": "Contratable a partir del {launchDate}",
         "register": "Registrarse gratis",
         "registerFounder": "Regístrate gratis ahora y asegura tu derecho adquirido",
+        "requestVideo": "Solicitar acceso al vídeo",
+        "requestVideoHint": "Hasta el lanzamiento, el vídeo funciona como beta cerrada: se activa cuenta por cuenta, bajo solicitud y sin coste.",
         "previewBadge": "Vista previa del pago",
         "mobileToday": "hoy",
         "jump": "Resumen"
@@ -5048,7 +5107,7 @@
           },
           {
             "question": "¿Puedo usar la retransmisión en directo ya hoy?",
-            "answer": "Solo si tu cuenta tiene activada la beta de vídeo. La retransmisión en directo se está construyendo y probando con algunos equipos. Escríbenos si queréis participar: la lista de espera es un correo electrónico."
+            "answer": "Solo si tu cuenta tiene activada la beta de vídeo. La retransmisión en directo se está construyendo y probando con algunos equipos. Si queréis participar, solicitad la activación en la página «Solicitar acceso al vídeo»: un formulario breve, y os respondemos personalmente."
           }
         ]
       },
@@ -5762,7 +5821,7 @@
         "faq": [
           {
             "question": "¿Puedo usar ya el etiquetado de vídeo?",
-            "answer": "Solo si tu cuenta está habilitada. La función se está construyendo y funciona con unos pocos equipos que dan su opinión. Escríbenos si queréis participar: la lista de espera es un correo."
+            "answer": "Solo si tu cuenta está habilitada. La función se está construyendo y funciona con unos pocos equipos que dan su opinión. Si queréis participar, solicitad la activación en la página «Solicitar acceso al vídeo»: un formulario breve, y os respondemos personalmente."
           },
           {
             "question": "¿Qué diferencia hay entre una etiqueta y una acción registrada?",
@@ -6790,7 +6849,8 @@
       "title": "Lo que se está construyendo ahora",
       "description": "Statix nace de lo que vuelve del pabellón. Lo que aún no está terminado aparece igualmente aquí, como lo que es.",
       "cardCta": "Qué funciona ya y qué todavía no",
-      "contact": "¿Queréis estar pronto en una de estas funciones y dar vuestra opinión? <contact>Escríbenos</contact>: la lista de espera es un correo."
+      "contact": "¿Queréis estar pronto en una de estas funciones y dar vuestra opinión? La lista de espera es un formulario breve: <request>solicitar acceso</request>.",
+      "requestCta": "Solicitar acceso al vídeo"
     },
     "detail": {
       "breadcrumbLabel": "Ruta de navegación",
@@ -6798,6 +6858,7 @@
       "breadcrumbFeatures": "Funciones",
       "groupFallback": "Función",
       "allFeaturesCta": "Todas las funciones",
+      "requestCta": "Solicitar acceso",
       "overviewKicker": "De qué se trata",
       "factsTitle": "En corto",
       "shotsKicker": "Desde la app",

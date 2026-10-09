@@ -39,6 +39,24 @@ interface FeedbackConfirmationData {
   categoryLabel: string;
 }
 
+interface VideoRequestNotificationData {
+  name: string;
+  email: string;
+  /** Empty when the visitor left the field blank. */
+  team: string;
+  /** German label of the tier the visitor has in mind. */
+  tierLabel: string;
+  /** German label of the page the request came from; empty when unknown. */
+  sourceLabel: string;
+  /** Empty when the visitor left the field blank. */
+  message: string;
+}
+
+interface VideoRequestConfirmationData {
+  name: string;
+  tierLabel: string;
+}
+
 interface RentalConfirmationData {
   name: string;
   eventType: string;
@@ -289,6 +307,98 @@ export function generateFeedbackConfirmationEmail(
        <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Bereich:</strong> ${safeCategory}</p>
        <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Status:</strong> Eingegangen</p>`
     )}
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      <strong style="color:#374151;">Hinweis:</strong> Diese E-Mail wurde automatisch erstellt. Bitte antworte nicht direkt auf diese Nachricht.
+      Du erreichst uns unter
+      <a href="mailto:${CLUB_CONFIG.email.info}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${CLUB_CONFIG.email.info}</a>.
+    </p>
+  `;
+
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
+}
+
+// ─── Video access request ────────────────────────────────────────────────────
+
+/**
+ * Generate the notification sent to the team when somebody asks to have the
+ * video beta enabled for their account. One card with who is asking, the
+ * address the account runs on (the allowlist is keyed by it), the squad and
+ * the tier they have in mind, then the free text — so the request can be
+ * acted on from the inbox without a reply first.
+ */
+export function generateVideoRequestNotificationEmail(
+  data: VideoRequestNotificationData
+): { subject: string; htmlContent: string } {
+  const safeName = escapeHtml(data.name);
+  const safeEmail = escapeHtml(data.email);
+  const safeTeam = escapeHtml(data.team.trim());
+  const safeTier = escapeHtml(data.tierLabel);
+  const safeSource = escapeHtml(data.sourceLabel);
+  const safeMessage = escapeHtml(data.message.trim()).replace(/\n/g, '<br />');
+  // Plain text, not HTML — see the feedback summary for why it is not escaped.
+  const subject = `Video-Freischaltung angefragt: ${data.name}`;
+
+  const content = `
+    ${eyebrow('Video-Freischaltung')}
+    ${heading(`${safeName} möchte die Video-Beta nutzen`)}
+    ${infoCard(
+      `<p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Name:</strong> ${safeName}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>E-Mail (Konto):</strong> <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;">${safeEmail}</a></p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Mannschaft / Verein:</strong> ${safeTeam || '<span style="color:#9ca3af;">keine Angabe</span>'}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Gewünschte Stufe:</strong> ${safeTier}</p>
+       ${
+         safeSource
+           ? `<p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Angefragt über:</strong> ${safeSource}</p>`
+           : ''
+       }`
+    )}
+    <div style="border:1px solid #e2e8f0;border-radius:10px;padding:16px 18px;margin:0 0 20px;">
+      <h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Nachricht</h3>
+      <p style="margin:0;font-size:15px;color:#374151;line-height:1.65;">${
+        safeMessage || '<span style="color:#9ca3af;">Keine Nachricht hinterlassen.</span>'
+      }</p>
+    </div>
+    <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
+      Freischalten: das Konto zu dieser Adresse in der App auf die Video-Allowlist setzen.
+      Rückfragen direkt an
+      <a href="mailto:${safeEmail}" style="color:${ACCENT};text-decoration:none;font-weight:600;">${safeEmail}</a>.
+    </p>
+  `;
+
+  return {
+    subject,
+    htmlContent: generateStatixEmailShell({ content, preheader: subject }),
+  };
+}
+
+/**
+ * Generate the acknowledgement sent to the visitor who asked for video access.
+ * It says what happens next — the request is read by a person, the account is
+ * enabled by hand — and reminds them that the account has to exist under the
+ * address they gave, because that is the one thing a request fails on.
+ */
+export function generateVideoRequestConfirmationEmail(
+  data: VideoRequestConfirmationData
+): { subject: string; htmlContent: string } {
+  const safeName = escapeHtml(data.name);
+  const safeTier = escapeHtml(data.tierLabel);
+  const appUrl = CLUB_CONFIG.website.appUrl;
+  const subject = `Deine Anfrage zur Video-Freischaltung ist eingegangen – ${CLUB_CONFIG.name}`;
+
+  const content = `
+    ${eyebrow('Video-Freischaltung')}
+    ${heading(`Danke, ${safeName}!`)}
+    ${paragraph('Deine Anfrage, die Video-Funktionen von <strong>Statix</strong> für dein Konto freizuschalten, ist bei uns angekommen.', 12)}
+    ${paragraph('Das Video läuft noch als geschlossene Beta und wird von Hand freigeschaltet. Wir lesen jede Anfrage selbst und melden uns persönlich bei dir, sobald dein Konto an der Reihe ist.')}
+    ${infoCard(
+      `<h3 style="margin:0 0 10px;font-size:15px;color:#1e293b;">Deine Anfrage im Überblick</h3>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Gewünschte Stufe:</strong> ${safeTier}</p>
+       <p style="margin:4px 0;font-size:14px;color:#374151;"><strong>Status:</strong> Eingegangen</p>`
+    )}
+    ${paragraph(`Wichtig: Freigeschaltet wird das Statix-Konto mit genau der E-Mail-Adresse, an die diese Nachricht geht. Falls du noch kein Konto hast, <a href="${appUrl}" style="color:${ACCENT};text-decoration:underline;font-weight:600;">registriere dich kostenlos</a> mit dieser Adresse – dann können wir das Video direkt dort einschalten.`, 20)}
     <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
       <strong style="color:#374151;">Hinweis:</strong> Diese E-Mail wurde automatisch erstellt. Bitte antworte nicht direkt auf diese Nachricht.
       Du erreichst uns unter

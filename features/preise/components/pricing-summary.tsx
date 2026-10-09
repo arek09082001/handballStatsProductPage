@@ -1,11 +1,13 @@
 'use client';
 
-import { Lock, UserPlus } from 'lucide-react';
+import Link from 'next/link';
+import { KeyRound, Lock, UserPlus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { cn } from '@/lib/utils';
 import { trackCheckoutClick, trackRegisterClick } from '@/lib/analytics';
 import { BoardCard } from '@/features/landing-page/components/tactic';
+import { videoRequestHref } from '@/features/video-anfrage/data/video-request-content';
 import type { PriceSheet } from '../data/price-sheet';
 import {
   checkoutHref,
@@ -20,6 +22,9 @@ export const SUMMARY_ID = 'deine-auswahl';
 
 const PRIMARY_ACTION =
   'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-center font-display text-[15px] font-bold leading-5 tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-paper active:scale-[0.99]';
+
+const SECONDARY_ACTION =
+  'inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-primary/50 bg-primary/10 px-5 py-3 text-center font-display text-[15px] font-bold leading-5 tracking-tight text-ink transition-colors duration-200 hover:border-primary hover:bg-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-paper';
 
 interface PricingSummaryProps {
   selection: PlanSelection;
@@ -44,7 +49,9 @@ interface PricingSummaryProps {
  *  - **checkout open** (launched, or `?kasse=vorschau`): a plain link to the
  *    app's intent route, which handles login, registration and Stripe;
  *  - **before the launch**: a disabled button that names the date, and next
- *    to it the registration that secures the founder terms.
+ *    to it the registration that secures the founder terms — and, with a
+ *    video tier selected, the request for the closed video beta, because
+ *    that is the one thing about this selection a visitor can do today.
  * @returns A JSX element rendering the selection summary and its action.
  */
 export default function PricingSummary({
@@ -62,6 +69,7 @@ export default function PricingSummary({
   const unit = season ? t('price.perSeason') : t('price.perMonth');
   const showToday = gate.open && season && quote.today !== null && !quote.free;
   const nextSeasonStart = sheet.season.nextSeasonStart;
+  const withVideo = selection.video !== 'none';
 
   const creditsLabel = (tier: keyof PriceSheet['video']) => {
     const credits = sheet.video[tier].credits[selection.cadence];
@@ -266,6 +274,25 @@ export default function PricingSummary({
                 <UserPlus className='size-4 shrink-0' aria-hidden />
                 {t('summary.registerFounder')}
               </a>
+              {withVideo ? (
+                <>
+                  <Link
+                    href={videoRequestHref({
+                      tier: selection.video,
+                      source: 'preise',
+                    })}
+                    className={SECONDARY_ACTION}>
+                    <KeyRound
+                      className='size-4 shrink-0 text-primary'
+                      aria-hidden
+                    />
+                    {t('summary.requestVideo')}
+                  </Link>
+                  <p className='text-[13px] leading-5 text-ink/70'>
+                    {t('summary.requestVideoHint')}
+                  </p>
+                </>
+              ) : null}
             </>
           )}
         </div>
