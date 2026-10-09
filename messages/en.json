@@ -325,6 +325,7 @@
       "handballStats": "Handball statistics",
       "schedule": "Fixtures & attendance",
       "videoTagging": "Video tagging",
+      "videoBriefing": "Video briefing",
       "holdSwipe": "Hold & swipe",
       "livestream": "Livestream"
     },
@@ -5838,6 +5839,107 @@
         ]
       },
       {
+        "slug": "video-besprechung",
+        "name": "Video briefing",
+        "short": "Briefing mode",
+        "headline": "Pause, draw, play on",
+        "summary": "Show tagged scenes full screen, draw and zoom on the paused picture – and save the briefing, voice included, as a video with the match.",
+        "tagline": "Eight to twenty scenes on one theme, big on the projector in the changing room or in a video call: pause, put the player in the spotlight, draw the run – and move on, without thirty people watching somebody hunt for the pause button.",
+        "intro": [
+          "Briefing mode is what comes after tagging. Whatever the bench’s filter is showing – “Attack against 6:0”, all of one player’s turnovers, a tag of your own – plays as a compilation in full screen, clip by clip. The top line says which scene is playing and whose it is, with the list of all clips beside it. At the end of a clip the next one starts by itself, or it loops while you talk.",
+          "You draw on the paused picture: pen, arrow, run path, circle, zone and spotlight, in four colours that stay readable on a hall floor and a projector. Pick a tool, touch the picture, and the video stops – no separate reach for pause before every arrow. When it plays on, the drawing is gone, because it belonged to that still. With the zoom tool, the mouse wheel or two fingers you zoom onto the back court; the picture keeps playing, and a drawing stays on the player because it is anchored in the picture, not on the screen.",
+          "And when not everybody is in the room: “Record” records the picture, not the screen – video, zoom, drawings and the clip’s name, plus your voice through the microphone. Afterwards the briefing is a video of its own, stored with the match, and can be sent like any other."
+        ],
+        "facts": [
+          {
+            "term": "Status",
+            "value": "Beta — being built, not yet for every account"
+          },
+          {
+            "term": "Way in",
+            "value": "“Present” in the tagging bench, with the current selection"
+          },
+          {
+            "term": "Tools",
+            "value": "Pen, arrow, run path, circle, zone, spotlight, zoom"
+          },
+          {
+            "term": "Controls",
+            "value": "Mouse, finger, stylus, keyboard and presentation clicker"
+          },
+          {
+            "term": "Lead-in & run-out",
+            "value": "0 to 15 seconds around the moment of the action, per device"
+          },
+          {
+            "term": "Recording",
+            "value": "Picture, drawings and voice as a video with the match"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Pick the clips on one theme",
+            "body": "Filter in the bench until the scenes for one question are left, or open a saved playlist. “Present” starts with exactly that selection."
+          },
+          {
+            "title": "Pause and draw",
+            "body": "Choose a tool from the rail – or 1 to 6 on the keyboard – and touch the picture: the video stops. A spotlight round the player, an arrow for the pass, a dashed line for the run."
+          },
+          {
+            "title": "Play on",
+            "body": "Space bar, a tap or the clicker, and the clip runs on clean. At its end the next one starts, or it repeats for as long as you are talking about it."
+          },
+          {
+            "title": "Record and send",
+            "body": "Whoever was not in the changing room gets the briefing as a video: record, name it, upload. Once it is processed, send it to players from its page or share it with the team."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Briefing mode in Statix: a paused picture with a spotlight round number 3, a yellow arrow for the pass and a dashed run, the tool rail on the left, a list of nine clips on the right",
+            "label": "Spotlight, pass, run – the hall underneath is drawn"
+          },
+          {
+            "alt": "Briefing mode in Statix zoomed 2.7 times onto the middle of a 6:0 defence, a gap marked as a zone and a run into it",
+            "label": "Zoomed onto the gap in the middle of the block"
+          },
+          {
+            "alt": "The “Save briefing” window in Statix after a recording: title, length, size and the buttons Discard, Save as file and Upload",
+            "label": "Recorded: name it, upload it or keep it as a file"
+          },
+          {
+            "alt": "The “Lead-in & run-out” setting in Statix briefing mode: 3 seconds before and 2 seconds after the moment of the action",
+            "label": "How much plays before and after the action – once per device"
+          }
+        ],
+        "limits": [
+          "Briefing mode is part of the video beta and limited to selected accounts while the video area is being built.",
+          "Drawings are not saved. They belong to the still and disappear as soon as the video plays on or the clip changes – a prepared briefing is drawn again in front of the team.",
+          "A clip you send arrives without drawings. To pass the drawings on, record the briefing.",
+          "The picture is recorded, not the screen – a slide or a second window does not come along. Until it is uploaded the recording lives in the browser’s memory; close the tab before that and it is gone.",
+          "A recorded briefing can only be sent once it is processed. That takes a few minutes.",
+          "Presenting happens on one screen. There is no presenter view with a separate picture for the projector."
+        ],
+        "faq": [
+          {
+            "question": "Do I need special equipment?",
+            "answer": "No. A laptop on a projector, a tablet in the changing room or a screen share in a video call is enough. You draw with a mouse, a finger or a stylus; a presentation clicker steps through the clips with its buttons."
+          },
+          {
+            "question": "Are the drawings saved?",
+            "answer": "No. A drawing belongs to the still it was made on and disappears as soon as the video plays on. To keep it, record the briefing – then it is in the video."
+          },
+          {
+            "question": "How does the briefing reach players who were not there?",
+            "answer": "Through “Record”: picture, drawings and your voice become a video stored with the match. Once it is processed, send it to individual players from its page or share it with the team."
+          },
+          {
+            "question": "Can I use briefing mode today?",
+            "answer": "Only if your account is enabled for the video beta. The video area is being built with a few teams right now. Request access on the “Request video access” page – a short form, and we get back to you personally."
+          }
+        ]
+      },
+      {
         "slug": "termine-und-teilnahme",
         "name": "Fixtures & training attendance",
         "short": "Fixtures",
@@ -6806,7 +6908,7 @@
       "titleLead": "Every",
       "titleHighlight": "feature",
       "titleTail": "of Statix",
-      "lede": "{count} features, each with a page of its own: what it does, how it feels in the hall, real captures from the app — and what it expressly cannot do. One of them is being built right now and is marked as such.",
+      "lede": "{count} features, each with a page of its own: what it does, how it feels in the hall, real captures from the app — and what it expressly cannot do. A few of them are being built right now and are marked as such.",
       "groupNavLabel": "Feature groups",
       "priceCta": "What does it cost?",
       "groupCounter": "{index} of {total}",

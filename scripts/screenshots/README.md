@@ -380,3 +380,37 @@ als SVG gezeichnet). Drei Quellen:
   `node scripts/screenshots/livestream/viewer-shots.mjs '' sponsor` →
   `sponsor-stream` (`sponsoren-livestream.png`) und `sponsor-ticker-phone`
   (`mobil-sponsoren-ticker.png`).
+
+## Besprechungsmodus (`scripts/screenshots/besprechung/`)
+
+Die Seite `/funktionen/video-besprechung` zeigt den Besprechungsmodus der
+App. `besprechung/harness.tsx` mountet die ECHTE `PresentationMode` (und für
+die Aufnahme darüber das echte `BriefingSavePanel`), gebaut gegen das
+App-Repo daneben (`STATIX_APP_DIR`, dort `npm ci`). Das Bild darunter ist
+das GEZEICHNETE Hallenbild aus `livestream/court.mjs` als Video — echte
+Spielaufnahmen gibt es in dieser Pipeline nicht, und die erste
+Bildunterschrift sagt das. Die Clips sind eine Zusammenstellung „Angriff
+gegen 6:0“ mit Platzhalternamen, deren Nummern zu den orangen Magneten im
+Bild passen.
+
+Gezeichnet wird wie in der Halle: Werkzeug über die Tasten 1–7 der App,
+Farbe aus der Leiste, ein echter Zeiger-Zug über das Bild. Die Positionen
+stehen in Pixeln des Hallenbilds und werden auf die Lage des Bildes
+umgerechnet, auch gezoomt.
+
+```bash
+WD=.screenshots-livestream/besprechung; mkdir -p $WD
+D=scripts/screenshots/livestream
+node $D/court.mjs $WD/court.svg tv 1920 1080
+W=1920 H=1080 node $D/render.mjs $WD/court.svg:$WD/court.png
+ffmpeg -y -loop 1 -framerate 30 -i $WD/court.png -t 70 -vf format=yuv420p \
+  -c:v libvpx-vp9 -b:v 2500k -deadline realtime -cpu-used 8 -g 30 $WD/clip.webm
+STATIX_APP_DIR=../handballStats node $D/regie/build.mjs scripts/screenshots/besprechung/harness.tsx besprechung
+node scripts/screenshots/besprechung/shoot.mjs          # → .screenshots-livestream/besprechung/out
+cp $WD/out/besprechung-{zeichnen,lupe,aufnahme,vorlauf}.png public/
+```
+
+`besprechung-zeichnen` (Scheinwerfer, Pass, Laufweg, Clipliste daneben),
+`besprechung-lupe` (Lupe auf die Mitte der 6:0, Zone und Laufweg),
+`besprechung-aufnahme` (das Fenster nach „Aufnahme beenden“, 3:41 Min.),
+`besprechung-vorlauf` (Ausschnitt um „Vorlauf & Nachlauf“, 3 s / 2 s).

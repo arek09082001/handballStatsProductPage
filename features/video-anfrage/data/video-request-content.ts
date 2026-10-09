@@ -41,6 +41,7 @@ export const DEFAULT_VIDEO_REQUEST_TIER: VideoRequestTierId = 'unsure';
 export const VIDEO_REQUEST_SOURCE_IDS = [
   'preise',
   'video-tagging',
+  'video-besprechung',
   'livestream',
   'funktionen',
 ] as const;
@@ -120,6 +121,7 @@ export const VIDEO_REQUEST_SOURCE_EMAIL_LABELS: Record<
 > = {
   preise: 'Preisseite (Konfigurator)',
   'video-tagging': 'Funktionsseite Video & Tagging',
+  'video-besprechung': 'Funktionsseite Video-Besprechung',
   livestream: 'Funktionsseite Livestream',
   funktionen: 'Funktionsübersicht',
 };

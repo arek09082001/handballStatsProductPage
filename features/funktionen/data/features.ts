@@ -499,7 +499,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-clip-posteingang.png', width: 780, height: 1688 },
       { src: '/mobil-mediathek.png', width: 780, height: 1688 },
     ],
-    related: ['handball-livestream', 'live-erfassung', 'wurfbilder'],
+    related: ['video-besprechung', 'handball-livestream', 'live-erfassung'],
     ogImage: '/video-tagging-spuren.png',
     mock: 'tagging-bench',
     meta: {
@@ -513,6 +513,40 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
         'handball szenen taggen',
         'handball videoanalyse software',
         'handball spielanalyse video',
+      ],
+    },
+  },
+  {
+    // The end of the tagging bench, with a page of its own because it is what
+    // a coach does in front of the team, not at the desk. Its shots are the
+    // app's real `PresentationMode` over the DRAWN hall of the livestream
+    // pipeline (`scripts/screenshots/besprechung/`) — no match footage exists
+    // on the screenshot machine, and the first caption says so.
+    slug: 'video-besprechung',
+    group: 'auswerten',
+    status: 'beta',
+    requestPath: `${VIDEO_REQUEST_PAGE_PATH}?von=video-besprechung`,
+    shots: [
+      { src: '/besprechung-zeichnen.png', width: 2880, height: 1800 },
+      { src: '/besprechung-lupe.png', width: 2880, height: 1800 },
+      { src: '/besprechung-aufnahme.png', width: 2880, height: 1800 },
+      { src: '/besprechung-vorlauf.png', width: 1640, height: 836 },
+    ],
+    related: ['video-tagging', 'handball-livestream', 'spieler-zugang'],
+    ogImage: '/besprechung-zeichnen.png',
+    isNew: true,
+    meta: {
+      title:
+        'Handball Videobesprechung (Beta) – Szenen zeigen, zeichnen, aufnehmen',
+      description:
+        'Getaggte Szenen im Vollbild für Kabine, Beamer oder Videokonferenz: anhalten, mit Pfeil, Laufweg und Scheinwerfer zeichnen, zoomen und die Besprechung samt Stimme als Video zum Spiel speichern. Die Funktion ist im Aufbau und noch nicht für alle Konten freigeschaltet.',
+      keywords: [
+        'handball videobesprechung',
+        'handball video zeichnen',
+        'handball telestrator',
+        'handball spielbesprechung video',
+        'videoanalyse handball kabine',
+        'handball taktik video zeichnen',
       ],
     },
   },

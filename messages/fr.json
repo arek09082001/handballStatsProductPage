@@ -325,6 +325,7 @@
       "handballStats": "Statistiques de handball",
       "schedule": "Rendez-vous et présence",
       "videoTagging": "Marquage vidéo",
+      "videoBriefing": "Causerie vidéo",
       "holdSwipe": "Maintenir et glisser",
       "livestream": "Livestream"
     },
@@ -5838,6 +5839,107 @@
         ]
       },
       {
+        "slug": "video-besprechung",
+        "name": "Causerie vidéo",
+        "short": "Mode causerie",
+        "headline": "Arrêter, dessiner, reprendre",
+        "summary": "Montrer les scènes taguées en plein écran, dessiner et zoomer sur l’image arrêtée – et enregistrer la causerie, voix comprise, comme vidéo du match.",
+        "tagline": "Huit à vingt scènes sur un thème, en grand au vidéoprojecteur du vestiaire ou en visioconférence : arrêter, mettre la joueuse sous le projecteur, dessiner la course – et continuer, sans que trente personnes regardent quelqu’un chercher le bouton pause.",
+        "intro": [
+          "Le mode causerie, c’est ce qui vient après le tagging. Ce que le filtre de l’établi affiche à ce moment – « Attaque contre 6:0 », toutes les pertes de balle d’une joueuse, un tag à vous – passe en compilation plein écran, clip après clip. En haut s’affiche la scène en cours et la joueuse concernée, à côté la liste de tous les clips. À la fin d’un clip, le suivant démarre tout seul, ou il tourne en boucle tant que vous parlez.",
+          "On dessine sur l’image arrêtée : stylo, flèche, course, cercle, zone et projecteur, en quatre couleurs lisibles sur le parquet comme au vidéoprojecteur. Un outil choisi, un toucher sur l’image, et la vidéo s’arrête – pas besoin de chercher la pause avant chaque flèche. Quand elle repart, le dessin disparaît, car il appartenait à cette image fixe. Avec la loupe, la molette ou deux doigts, vous zoomez sur la base arrière ; l’image continue de défiler, et un dessin reste sur la joueuse parce qu’il est ancré dans l’image, pas sur l’écran.",
+          "Et quand tout le monde n’est pas dans la salle : « Enregistrer » enregistre l’image, pas l’écran – vidéo, zoom, dessins et nom du clip, plus votre voix au micro. Ensuite la causerie est une vidéo à part entière, rangée avec le match, et s’envoie comme n’importe quelle autre."
+        ],
+        "facts": [
+          {
+            "term": "État",
+            "value": "Bêta — en construction, pas encore pour tous les comptes"
+          },
+          {
+            "term": "Accès",
+            "value": "« Présenter » dans l’établi de tagging, avec la sélection en cours"
+          },
+          {
+            "term": "Outils",
+            "value": "Stylo, flèche, course, cercle, zone, projecteur, loupe"
+          },
+          {
+            "term": "Commandes",
+            "value": "Souris, doigt, stylet, clavier et télécommande de présentation"
+          },
+          {
+            "term": "Avant et après",
+            "value": "0 à 15 secondes autour du moment de l’action, par appareil"
+          },
+          {
+            "term": "Enregistrement",
+            "value": "Image, dessins et voix en vidéo du match"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Choisir les clips d’un thème",
+            "body": "Filtrer dans l’établi jusqu’à ne garder que les scènes d’une question, ou ouvrir une playlist enregistrée. « Présenter » démarre avec exactement cette sélection."
+          },
+          {
+            "title": "Arrêter et dessiner",
+            "body": "Choisir un outil dans la barre – ou 1 à 6 au clavier – et toucher l’image : la vidéo s’arrête. Projecteur sur la joueuse, flèche pour la passe, pointillés pour la course."
+          },
+          {
+            "title": "Reprendre",
+            "body": "Barre d’espace, un toucher ou la télécommande, et le clip repart proprement. À la fin vient le suivant, ou il se répète tant qu’on en parle."
+          },
+          {
+            "title": "Enregistrer et envoyer",
+            "body": "Qui n’était pas au vestiaire reçoit la causerie en vidéo : enregistrer, nommer, téléverser. Une fois traitée, vous l’envoyez depuis sa page à des joueuses ou la partagez avec l’équipe."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Le mode causerie de Statix : une image arrêtée avec un projecteur sur le numéro 3, une flèche jaune pour la passe et une course en pointillés, la barre d’outils à gauche, une liste de neuf clips à droite",
+            "label": "Projecteur, passe, course – la salle en dessous est dessinée"
+          },
+          {
+            "alt": "Le mode causerie de Statix zoomé 2,7 fois sur le centre d’une défense 6:0, un intervalle marqué comme zone et une course dedans",
+            "label": "À la loupe sur l’intervalle au centre du bloc"
+          },
+          {
+            "alt": "La fenêtre « Sauvegarder la séance » de Statix après un enregistrement : titre, durée, taille et les boutons Supprimer, Enregistrer le fichier et Envoyer",
+            "label": "Enregistrée : la nommer, la téléverser ou la garder en fichier"
+          },
+          {
+            "alt": "Le réglage « Avant et après » du mode causerie de Statix : 3 secondes avant et 2 secondes après le moment de l’action",
+            "label": "Ce qui défile avant et après l’action – une fois par appareil"
+          }
+        ],
+        "limits": [
+          "Le mode causerie fait partie de la bêta vidéo et reste limité à des comptes sélectionnés tant que l’espace vidéo se construit.",
+          "Les dessins ne sont pas sauvegardés. Ils appartiennent à l’image fixe et disparaissent dès que la vidéo repart ou que le clip change – une causerie préparée se redessine devant l’équipe.",
+          "Un clip envoyé arrive sans dessin. Pour transmettre les dessins, enregistrez la causerie.",
+          "C’est l’image qui est enregistrée, pas l’écran – une diapositive ou une deuxième fenêtre n’y figurent pas. Jusqu’au téléversement, l’enregistrement reste dans la mémoire du navigateur ; si l’onglet est fermé avant, il est perdu.",
+          "Une causerie enregistrée ne peut être envoyée qu’une fois traitée. Cela prend quelques minutes.",
+          "On présente sur un seul écran. Il n’y a pas de vue présentateur avec une image séparée pour le vidéoprojecteur."
+        ],
+        "faq": [
+          {
+            "question": "Faut-il un équipement particulier ?",
+            "answer": "Non. Un ordinateur portable branché au vidéoprojecteur, une tablette au vestiaire ou un partage d’écran en visioconférence suffisent. On dessine à la souris, au doigt ou au stylet ; une télécommande de présentation fait défiler les clips avec ses touches."
+          },
+          {
+            "question": "Les dessins sont-ils sauvegardés ?",
+            "answer": "Non. Un dessin appartient à l’image fixe sur laquelle il a été fait et disparaît dès que la vidéo repart. Pour le garder, enregistrez la causerie – il sera alors dans la vidéo."
+          },
+          {
+            "question": "Comment la causerie arrive-t-elle aux joueuses absentes ?",
+            "answer": "Par « Enregistrer » : l’image, les dessins et votre voix deviennent une vidéo rangée avec le match. Une fois traitée, vous l’envoyez depuis sa page à des joueuses précises ou la partagez avec l’équipe."
+          },
+          {
+            "question": "Puis-je utiliser le mode causerie dès aujourd’hui ?",
+            "answer": "Seulement si votre compte a accès à la bêta vidéo. L’espace vidéo est en construction avec quelques équipes. Demandez l’activation sur la page « Demander l’accès à la vidéo » – un court formulaire, et nous vous répondons personnellement."
+          }
+        ]
+      },
+      {
         "slug": "termine-und-teilnahme",
         "name": "Convocations & présence",
         "short": "Agenda",
@@ -6806,7 +6908,7 @@
       "titleLead": "Toutes les",
       "titleHighlight": "fonctions",
       "titleTail": "de Statix",
-      "lede": "{count} fonctions, chacune avec sa propre page : ce qu'elle fait, ce qu'elle donne dans la salle, de vraies captures de l'application — et ce qu'elle ne sait expressément pas faire. L'une d'elles est en construction et est signalée comme telle.",
+      "lede": "{count} fonctions, chacune avec sa propre page : ce qu'elle fait, ce qu'elle donne dans la salle, de vraies captures de l'application — et ce qu'elle ne sait expressément pas faire. Certaines sont en construction et sont signalées comme telles.",
       "groupNavLabel": "Groupes de fonctions",
       "priceCta": "Combien ça coûte ?",
       "groupCounter": "{index} sur {total}",
