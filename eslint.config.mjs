@@ -17,6 +17,7 @@ const eslintConfig = [
       "scripts/screenshots/livestream/regie/**",
       "scripts/screenshots/statistik/harness.tsx",
       "scripts/screenshots/sponsoren/harness.tsx",
+      "scripts/screenshots/besprechung/harness.tsx",
     ],
   },
   ...compat.config({

@@ -325,6 +325,7 @@
       "handballStats": "Estadísticas de balonmano",
       "schedule": "Calendario y asistencia",
       "videoTagging": "Etiquetado de vídeo",
+      "videoBriefing": "Charla con vídeo",
       "holdSwipe": "Mantener y deslizar",
       "livestream": "Directo"
     },
@@ -5838,6 +5839,107 @@
         ]
       },
       {
+        "slug": "video-besprechung",
+        "name": "Charla con vídeo",
+        "short": "Modo charla",
+        "headline": "Pausar, dibujar, seguir",
+        "summary": "Mostrar escenas etiquetadas a pantalla completa, dibujar y ampliar sobre la imagen en pausa y guardar la charla, con tu voz, como vídeo del partido.",
+        "tagline": "De ocho a veinte escenas sobre un tema, en grande en el proyector del vestuario o en una videollamada: pausar, poner a la jugadora bajo el foco, dibujar el recorrido y seguir, sin que treinta personas miren cómo alguien busca el botón de pausa.",
+        "intro": [
+          "El modo charla es lo que viene después de etiquetar. Lo que muestra en ese momento el filtro del banco de trabajo – «Ataque contra 6:0», todas las pérdidas de una jugadora, una etiqueta propia – se reproduce como recopilación a pantalla completa, clip a clip. Arriba aparece qué escena se está viendo y de quién es, y al lado la lista de todos los clips. Al final de un clip pasa solo al siguiente, o se repite en bucle mientras hablas.",
+          "Se dibuja sobre la imagen en pausa: lápiz, flecha, recorrido, círculo, zona y foco, en cuatro colores que se leen bien sobre el suelo del pabellón y en el proyector. Si eliges una herramienta y tocas la imagen, el vídeo se detiene: no hace falta buscar la pausa antes de cada flecha. Cuando sigue, el dibujo desaparece, porque pertenecía a esa imagen fija. Con la lupa, la rueda del ratón o dos dedos amplías la primera línea; la imagen sigue corriendo, y un dibujo se queda sobre la jugadora porque está anclado en la imagen y no en la pantalla.",
+          "Y si no están todas en la sala: «Grabar» graba la imagen, no la pantalla – vídeo, zoom, dibujos y el nombre del clip, además de tu voz por el micrófono. Después la charla queda como vídeo propio junto al partido y se envía como cualquier otro."
+        ],
+        "facts": [
+          {
+            "term": "Estado",
+            "value": "Beta: en construcción, todavía no para todas las cuentas"
+          },
+          {
+            "term": "Acceso",
+            "value": "«Presentar» en el banco de etiquetado, con la selección actual"
+          },
+          {
+            "term": "Herramientas",
+            "value": "Lápiz, flecha, recorrido, círculo, zona, foco, lupa"
+          },
+          {
+            "term": "Manejo",
+            "value": "Ratón, dedo, lápiz óptico, teclado y mando de presentaciones"
+          },
+          {
+            "term": "Antes y después",
+            "value": "De 0 a 15 segundos alrededor del momento de la acción, por dispositivo"
+          },
+          {
+            "term": "Grabación",
+            "value": "Imagen, dibujos y voz como vídeo del partido"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Elegir los clips de un tema",
+            "body": "Filtra en el banco de trabajo hasta que queden las escenas de una pregunta, o abre una lista guardada. «Presentar» empieza exactamente con esa selección."
+          },
+          {
+            "title": "Pausar y dibujar",
+            "body": "Elige una herramienta de la barra – o del 1 al 6 en el teclado – y toca la imagen: el vídeo se detiene. Foco sobre la jugadora, flecha para el pase, línea discontinua para el recorrido."
+          },
+          {
+            "title": "Seguir",
+            "body": "Barra espaciadora, un toque o el mando, y el clip sigue limpio. Al final llega el siguiente, o se repite mientras se comenta."
+          },
+          {
+            "title": "Grabar y enviar",
+            "body": "Quien no estuvo en el vestuario recibe la charla como vídeo: grabar, ponerle nombre, subir. Cuando está procesada, la envías desde su página a jugadoras concretas o la compartes con el equipo."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "El modo charla de Statix: una imagen en pausa con un foco sobre el número 3, una flecha amarilla para el pase y un recorrido discontinuo, la barra de herramientas a la izquierda y una lista de nueve clips a la derecha",
+            "label": "Foco, pase, recorrido: el pabellón de fondo está dibujado"
+          },
+          {
+            "alt": "El modo charla de Statix ampliado 2,7 veces sobre el centro de una defensa 6:0, con un hueco marcado como zona y un recorrido hacia él",
+            "label": "Con la lupa sobre el hueco en el centro del bloque"
+          },
+          {
+            "alt": "La ventana «Guardar charla» de Statix tras una grabación: título, duración, tamaño y los botones Descartar, Guardar archivo y Subir",
+            "label": "Grabada: ponerle nombre, subirla o guardarla como archivo"
+          },
+          {
+            "alt": "El ajuste «Antes y después» del modo charla de Statix: 3 segundos antes y 2 segundos después del momento de la acción",
+            "label": "Cuánto se ve antes y después de la acción, una vez por dispositivo"
+          }
+        ],
+        "limits": [
+          "El modo charla forma parte de la beta de vídeo y está limitado a cuentas seleccionadas mientras se construye el área de vídeo.",
+          "Los dibujos no se guardan. Pertenecen a la imagen fija y desaparecen en cuanto el vídeo sigue o cambia el clip: una charla preparada se vuelve a dibujar delante del equipo.",
+          "Un clip enviado llega sin dibujos. Para hacer llegar los dibujos, graba la charla.",
+          "Se graba la imagen, no la pantalla: una diapositiva o una segunda ventana no entran. Hasta que se sube, la grabación está en la memoria del navegador; si se cierra la pestaña antes, se pierde.",
+          "Una charla grabada solo se puede enviar cuando está procesada. Eso tarda unos minutos.",
+          "Se presenta en una sola pantalla. No hay vista de presentador con una imagen propia para el proyector."
+        ],
+        "faq": [
+          {
+            "question": "¿Necesito algún equipo especial?",
+            "answer": "No. Basta con un portátil conectado al proyector, una tableta en el vestuario o compartir pantalla en una videollamada. Se dibuja con ratón, dedo o lápiz óptico; un mando de presentaciones pasa los clips con sus botones."
+          },
+          {
+            "question": "¿Se guardan los dibujos?",
+            "answer": "No. Un dibujo pertenece a la imagen fija en la que se hizo y desaparece en cuanto el vídeo sigue. Para conservarlo, graba la charla: entonces queda en el vídeo."
+          },
+          {
+            "question": "¿Cómo llega la charla a las jugadoras que no estaban?",
+            "answer": "Con «Grabar»: imagen, dibujos y tu voz se convierten en un vídeo que se guarda junto al partido. Cuando está procesado, lo envías desde su página a jugadoras concretas o lo compartes con el equipo."
+          },
+          {
+            "question": "¿Puedo usar ya el modo charla?",
+            "answer": "Solo si tu cuenta tiene activada la beta de vídeo. El área de vídeo se está construyendo ahora con algunos equipos. Solicita la activación en la página «Solicitar acceso al vídeo»: un formulario breve, y te respondemos personalmente."
+          }
+        ]
+      },
+      {
         "slug": "termine-und-teilnahme",
         "name": "Convocatorias y asistencia",
         "short": "Calendario",
@@ -6806,7 +6908,7 @@
       "titleLead": "Todas las",
       "titleHighlight": "funciones",
       "titleTail": "de Statix",
-      "lede": "{count} funciones, cada una con su propia página: qué hace, cómo se siente en el pabellón, capturas reales de la app y qué es lo que expresamente no puede hacer. Una de ellas se está construyendo ahora mismo y aparece marcada como tal.",
+      "lede": "{count} funciones, cada una con su propia página: qué hace, cómo se siente en el pabellón, capturas reales de la app y qué es lo que expresamente no puede hacer. Algunas se están construyendo ahora mismo y aparecen marcadas como tales.",
       "groupNavLabel": "Grupos de funciones",
       "priceCta": "¿Cuánto cuesta?",
       "groupCounter": "{index} de {total}",

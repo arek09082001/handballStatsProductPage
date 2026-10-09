@@ -70,12 +70,12 @@ Every entry carries a `status`, and the site shows it:
 - **`live`** — finished, open to every account. Twenty of the twenty-three.
 - **`beta`** — being built, restricted to named accounts. Listed anyway, marked
   "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
-  something a new account gets today. Currently: **Video‑Tagging** and
-  **Livestream**. Both carry a `requestPath` to **`/video-anfrage`**, the one
-  form for asking to have the video beta enabled for an account (name, the
+  something a new account gets today. Currently: **Video‑Tagging**,
+  **Video‑Besprechung** and **Livestream**. All three carry a `requestPath`
+  to **`/video-anfrage`**, the one form for asking to have the video beta enabled for an account (name, the
   account's e‑mail, squad, the tier in mind, a free line); the request mails
   the team and a receipt to the visitor, nothing is stored. The pricing
-  configurator, the two feature heroes and the "Was gerade gebaut wird" band
+  configurator, the three video feature heroes and the "Was gerade gebaut wird" band
   all link there — wherever the site says "closed beta" it also says how to
   get in.
 - **`onRequest`** — finished, but set up for a club rather than self‑served.
@@ -182,6 +182,18 @@ The scope itself:
   point of impact, two-camera panorama, follow-cam version) is the youngest
   part: it runs on a rented GPU in the EU and only ever *suggests* — it never
   creates a scene or a statistic entry by itself. Say so wherever it is named.
+- **Video‑Besprechung — BETA, same allowlist** (`/funktionen/video-besprechung`,
+  `isNew`): the briefing mode at the end of the bench. The current selection
+  plays full screen, clip by clip (auto-next or loop), with the clip list
+  beside it. Drawing on the paused picture — pen, arrow, run, circle, zone,
+  spotlight, four colours; a tool plus a touch pauses, playing on clears.
+  Zoom by lupe, wheel or two fingers, which does NOT pause. Lead-in/run-out
+  0–15 s per device. Mouse, finger, stylus, keyboard, clicker (PageUp/Down).
+  Recording takes the PICTURE (video, zoom, drawings, clip name) plus the
+  microphone, never the screen, and lands as a briefing video at the game,
+  sendable once processed. Not true, so never claimed: saved drawings,
+  drawings in sent clips, a presenter view for a second screen. Its shots
+  are the real component over the drawn hall (`scripts/screenshots/besprechung/`).
 
 ## Commercial truth (do not invent beyond this)
 

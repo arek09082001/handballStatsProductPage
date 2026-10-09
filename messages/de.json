@@ -325,6 +325,7 @@
       "handballStats": "Handball-Statistiken",
       "schedule": "Termine & Teilnahme",
       "videoTagging": "Video-Tagging",
+      "videoBriefing": "Video-Besprechung",
       "holdSwipe": "Halten & Wischen",
       "livestream": "Livestream"
     },
@@ -5838,6 +5839,107 @@
         ]
       },
       {
+        "slug": "video-besprechung",
+        "name": "Video-Besprechung",
+        "short": "Besprechungsmodus",
+        "headline": "Anhalten, zeichnen, weiterspielen",
+        "summary": "Getaggte Szenen im Vollbild zeigen, auf dem angehaltenen Bild zeichnen und zoomen – und die Besprechung samt Stimme als Video zum Spiel speichern.",
+        "tagline": "Acht bis zwanzig Szenen zu einem Thema, groß am Beamer in der Kabine oder in der Videokonferenz: anhalten, die Spielerin ins Licht stellen, den Laufweg einzeichnen – und weiter, ohne dass dreißig Leute zusehen, wie jemand den Pause-Knopf sucht.",
+        "intro": [
+          "Der Besprechungsmodus ist das, was nach dem Taggen kommt. Was der Filter der Werkbank gerade zeigt – „Angriff gegen 6:0“, alle Ballverluste einer Spielerin, ein eigener Tag –, läuft als Zusammenstellung im Vollbild, Clip für Clip. Oben steht, welche Szene läuft und von wem, daneben die Liste aller Clips. Am Ende eines Clips geht es von selbst weiter, oder er läuft in Schleife, solange du redest.",
+          "Gezeichnet wird auf dem angehaltenen Bild: Stift, Pfeil, Laufweg, Kreis, Zone und Scheinwerfer, in vier Farben, die auf Hallenboden und Beamer lesbar bleiben. Wer ein Werkzeug gewählt hat und aufs Bild tippt, hält das Video an – kein eigener Griff zur Pause vor jedem Pfeil. Läuft es weiter, ist die Zeichnung weg, denn sie gehörte zu diesem Standbild. Mit der Lupe, dem Mausrad oder zwei Fingern zoomst du auf den Rückraum; das Bild läuft dabei weiter, und eine Zeichnung bleibt an der Spielerin, weil sie im Bild verankert ist und nicht auf dem Bildschirm.",
+          "Und wenn nicht alle im Raum sind: „Aufnehmen“ nimmt das Bild auf, nicht den Bildschirm – Video, Zoom, Zeichnungen und den Namen des Clips, dazu deine Stimme über das Mikrofon. Danach liegt die Besprechung als eigenes Video beim Spiel und lässt sich verschicken wie jedes andere."
+        ],
+        "facts": [
+          {
+            "term": "Stand",
+            "value": "Beta — im Aufbau, noch nicht für alle Konten"
+          },
+          {
+            "term": "Einstieg",
+            "value": "„Präsentieren“ in der Tagging-Werkbank, mit der aktuellen Auswahl"
+          },
+          {
+            "term": "Werkzeuge",
+            "value": "Stift, Pfeil, Laufweg, Kreis, Zone, Scheinwerfer, Lupe"
+          },
+          {
+            "term": "Bedienung",
+            "value": "Maus, Finger, Stift, Tastatur und Präsentations-Clicker"
+          },
+          {
+            "term": "Vorlauf & Nachlauf",
+            "value": "0 bis 15 Sekunden um den Moment der Aktion, je Gerät"
+          },
+          {
+            "term": "Aufnahme",
+            "value": "Bild, Zeichnungen und Stimme als Video zum Spiel"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Clips zu einem Thema auswählen",
+            "body": "In der Werkbank filtern, bis die Szenen zu einer Frage übrig sind, oder eine gespeicherte Playlist öffnen. „Präsentieren“ startet mit genau dieser Auswahl."
+          },
+          {
+            "title": "Anhalten und zeichnen",
+            "body": "Ein Werkzeug aus der Leiste wählen – oder 1 bis 6 auf der Tastatur – und aufs Bild tippen: Das Video steht. Scheinwerfer um die Spielerin, Pfeil für den Pass, gestrichelt der Laufweg."
+          },
+          {
+            "title": "Weiterspielen",
+            "body": "Leertaste, Tippen oder der Clicker, und der Clip läuft sauber weiter. Am Ende kommt der nächste, oder er wiederholt sich, solange besprochen wird."
+          },
+          {
+            "title": "Aufnehmen und verschicken",
+            "body": "Wer nicht in der Kabine war, bekommt die Besprechung als Video: aufnehmen, benennen, hochladen. Ist sie verarbeitet, schickst du sie von ihrer Seite aus an Spielerinnen oder gibst sie für die Mannschaft frei."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Der Besprechungsmodus in Statix: ein angehaltenes Bild mit Scheinwerfer um die Nummer 3, gelbem Pfeil für den Pass und gestricheltem Laufweg, links die Werkzeugleiste, rechts die Liste von neun Clips",
+            "label": "Scheinwerfer, Pass, Laufweg – das Hallenbild darunter ist gezeichnet"
+          },
+          {
+            "alt": "Der Besprechungsmodus in Statix, mit der Lupe 2,7-fach auf die Mitte einer 6:0-Abwehr gezoomt, eine Lücke als Zone markiert und ein Laufweg hinein",
+            "label": "Mit der Lupe auf die Lücke im Mittelblock"
+          },
+          {
+            "alt": "Das Fenster „Besprechung speichern“ in Statix nach einer Aufnahme: Titel, Dauer, Größe und die Knöpfe Verwerfen, Als Datei und Hochladen",
+            "label": "Aufgenommen: benennen, hochladen oder als Datei behalten"
+          },
+          {
+            "alt": "Die Einstellung „Vorlauf & Nachlauf“ im Besprechungsmodus von Statix: 3 Sekunden vor und 2 Sekunden nach dem Moment der Aktion",
+            "label": "Wie viel vor und nach der Aktion mitläuft – einmal je Gerät"
+          }
+        ],
+        "limits": [
+          "Der Besprechungsmodus gehört zur Video-Beta und ist auf ausgewählte Konten begrenzt, solange der Videobereich gebaut wird.",
+          "Zeichnungen werden nicht gespeichert. Sie gehören zum Standbild und verschwinden, sobald das Video weiterläuft oder der Clip wechselt – eine vorbereitete Besprechung zeichnest du vor der Mannschaft neu.",
+          "Ein verschickter Clip kommt ohne Zeichnung an. Wer die Zeichnungen weitergeben will, nimmt die Besprechung auf.",
+          "Aufgenommen wird das Bild, nicht der Bildschirm – eine Folie oder ein zweites Fenster kommt nicht mit. Bis zum Hochladen liegt die Aufnahme im Speicher des Browsers; wird der Tab vorher geschlossen, ist sie weg.",
+          "Eine aufgenommene Besprechung lässt sich erst verschicken, wenn sie verarbeitet ist. Das dauert ein paar Minuten.",
+          "Präsentiert wird auf einem Bildschirm. Eine Referentenansicht mit eigenem Bild für den Beamer gibt es nicht."
+        ],
+        "faq": [
+          {
+            "question": "Brauche ich dafür besondere Technik?",
+            "answer": "Nein. Ein Laptop am Beamer, ein Tablet in der Kabine oder eine Bildschirmfreigabe in der Videokonferenz reichen. Gezeichnet wird mit Maus, Finger oder Stift; ein Präsentations-Clicker blättert mit seinen Tasten durch die Clips."
+          },
+          {
+            "question": "Bleiben die Zeichnungen gespeichert?",
+            "answer": "Nein. Eine Zeichnung gehört zu dem Standbild, auf dem sie entstanden ist, und verschwindet, sobald das Video weiterläuft. Wer sie festhalten will, nimmt die Besprechung auf – dann stehen sie im Video."
+          },
+          {
+            "question": "Wie kommt die Besprechung zu Spielerinnen, die nicht da waren?",
+            "answer": "Über „Aufnehmen“: Bild, Zeichnungen und deine Stimme werden zu einem Video, das beim Spiel gespeichert wird. Ist es verarbeitet, schickst du es von seiner Seite aus an einzelne Spielerinnen oder gibst es für die Mannschaft frei."
+          },
+          {
+            "question": "Kann ich den Besprechungsmodus heute schon nutzen?",
+            "answer": "Nur, wenn dein Konto für die Video-Beta freigeschaltet ist. Der Videobereich wird gerade mit einigen Teams gebaut. Frag die Freischaltung über die Seite „Video-Freischaltung anfragen“ an – ein kurzes Formular, wir melden uns persönlich."
+          }
+        ]
+      },
+      {
         "slug": "termine-und-teilnahme",
         "name": "Termine & Trainingsbeteiligung",
         "short": "Termine",
@@ -6806,7 +6908,7 @@
       "titleLead": "Alle",
       "titleHighlight": "Funktionen",
       "titleTail": "von Statix",
-      "lede": "{count} Funktionen, jede mit eigener Seite: was sie macht, wie sie sich in der Halle anfühlt, echte Aufnahmen aus der App — und was sie ausdrücklich nicht kann. Eine davon wird gerade gebaut und steht als solche gekennzeichnet dabei.",
+      "lede": "{count} Funktionen, jede mit eigener Seite: was sie macht, wie sie sich in der Halle anfühlt, echte Aufnahmen aus der App — und was sie ausdrücklich nicht kann. Einige davon werden gerade gebaut und stehen als solche gekennzeichnet dabei.",
       "groupNavLabel": "Funktionsgruppen",
       "priceCta": "Was kostet das?",
       "groupCounter": "{index} von {total}",

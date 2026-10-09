@@ -52,6 +52,11 @@ const productGroup: NavigationGroup = {
       labelKey: 'schedule',
     },
     { ident: 26, href: featurePath('video-tagging'), labelKey: 'videoTagging' },
+    {
+      ident: 30,
+      href: featurePath('video-besprechung'),
+      labelKey: 'videoBriefing',
+    },
     { ident: 10, href: '/preise', labelKey: 'pricing' },
     {
       ident: 18,

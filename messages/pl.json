@@ -325,6 +325,7 @@
       "handballStats": "Statystyki piłki ręcznej",
       "schedule": "Terminy i frekwencja",
       "videoTagging": "Tagowanie wideo",
+      "videoBriefing": "Odprawa wideo",
       "holdSwipe": "Przytrzymaj i przesuń",
       "livestream": "Transmisja"
     },
@@ -5838,6 +5839,107 @@
         ]
       },
       {
+        "slug": "video-besprechung",
+        "name": "Odprawa wideo",
+        "short": "Tryb odprawy",
+        "headline": "Zatrzymać, narysować, grać dalej",
+        "summary": "Pokazywać otagowane sceny na pełnym ekranie, rysować i powiększać na zatrzymanym obrazie – i zapisać odprawę razem z głosem jako wideo do meczu.",
+        "tagline": "Od ośmiu do dwudziestu scen na jeden temat, w dużym formacie na rzutniku w szatni albo na wideokonferencji: zatrzymać, postawić zawodniczkę w świetle reflektora, narysować bieg – i dalej, bez trzydziestu osób patrzących, jak ktoś szuka przycisku pauzy.",
+        "intro": [
+          "Tryb odprawy to to, co przychodzi po tagowaniu. To, co w danej chwili pokazuje filtr warsztatu – „Atak przeciw 6:0”, wszystkie straty jednej zawodniczki, własny tag – leci jako składanka na pełnym ekranie, klip po klipie. U góry widać, która scena leci i kogo dotyczy, obok lista wszystkich klipów. Na końcu klipu sam włącza się następny albo klip leci w pętli, dopóki mówisz.",
+          "Rysuje się na zatrzymanym obrazie: pisak, strzałka, bieg, okrąg, strefa i reflektor, w czterech kolorach czytelnych na parkiecie i na rzutniku. Kto wybrał narzędzie i dotknie obrazu, zatrzymuje wideo – bez osobnego sięgania po pauzę przed każdą strzałką. Gdy wideo rusza dalej, rysunek znika, bo należał do tej klatki. Lupą, kółkiem myszy albo dwoma palcami powiększasz drugą linię; obraz leci dalej, a rysunek zostaje przy zawodniczce, bo jest zakotwiczony w obrazie, a nie na ekranie.",
+          "A gdy nie wszyscy są w pomieszczeniu: „Nagrywaj” nagrywa obraz, nie ekran – wideo, powiększenie, rysunki i nazwę klipu, do tego twój głos z mikrofonu. Potem odprawa leży jako osobne wideo przy meczu i da się ją wysłać jak każde inne."
+        ],
+        "facts": [
+          {
+            "term": "Status",
+            "value": "Beta — w budowie, jeszcze nie dla wszystkich kont"
+          },
+          {
+            "term": "Wejście",
+            "value": "„Prezentuj” w warsztacie tagowania, z bieżącym wyborem"
+          },
+          {
+            "term": "Narzędzia",
+            "value": "Pisak, strzałka, bieg, okrąg, strefa, reflektor, lupa"
+          },
+          {
+            "term": "Obsługa",
+            "value": "Mysz, palec, rysik, klawiatura i pilot do prezentacji"
+          },
+          {
+            "term": "Przed i po",
+            "value": "Od 0 do 15 sekund wokół momentu akcji, na urządzenie"
+          },
+          {
+            "term": "Nagranie",
+            "value": "Obraz, rysunki i głos jako wideo do meczu"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Wybrać klipy na jeden temat",
+            "body": "Filtrować w warsztacie, aż zostaną sceny do jednego pytania, albo otworzyć zapisaną playlistę. „Prezentuj” startuje dokładnie z tym wyborem."
+          },
+          {
+            "title": "Zatrzymać i rysować",
+            "body": "Wybrać narzędzie z paska – albo od 1 do 6 na klawiaturze – i dotknąć obrazu: wideo staje. Reflektor na zawodniczkę, strzałka dla podania, przerywana linia dla biegu."
+          },
+          {
+            "title": "Grać dalej",
+            "body": "Spacja, dotknięcie albo pilot – i klip leci dalej czysty. Na końcu przychodzi następny albo powtarza się, dopóki trwa omawianie."
+          },
+          {
+            "title": "Nagrać i wysłać",
+            "body": "Kto nie był w szatni, dostaje odprawę jako wideo: nagrać, nazwać, wgrać. Gdy jest przetworzona, wysyłasz ją z jej strony do zawodniczek albo udostępniasz drużynie."
+          }
+        ],
+        "shots": [
+          {
+            "alt": "Tryb odprawy w Statix: zatrzymany obraz z reflektorem na numerze 3, żółtą strzałką podania i przerywanym biegiem, po lewej pasek narzędzi, po prawej lista dziewięciu klipów",
+            "label": "Reflektor, podanie, bieg – hala pod spodem jest narysowana"
+          },
+          {
+            "alt": "Tryb odprawy w Statix powiększony 2,7 raza na środek obrony 6:0, luka zaznaczona jako strefa i bieg w nią",
+            "label": "Lupą na lukę w środku bloku"
+          },
+          {
+            "alt": "Okno „Zapisz omówienie” w Statix po nagraniu: tytuł, długość, rozmiar i przyciski Odrzuć, Zapisz plik i Wyślij",
+            "label": "Nagrane: nazwać, wgrać albo zachować jako plik"
+          },
+          {
+            "alt": "Ustawienie „Przed i po” w trybie odprawy Statix: 3 sekundy przed i 2 sekundy po momencie akcji",
+            "label": "Ile leci przed i po akcji – raz na urządzenie"
+          }
+        ],
+        "limits": [
+          "Tryb odprawy należy do bety wideo i jest ograniczony do wybranych kont, dopóki powstaje część wideo.",
+          "Rysunki nie są zapisywane. Należą do klatki i znikają, gdy wideo rusza dalej albo zmienia się klip – przygotowaną odprawę rysujesz przed drużyną od nowa.",
+          "Wysłany klip dociera bez rysunków. Kto chce przekazać rysunki, nagrywa odprawę.",
+          "Nagrywany jest obraz, nie ekran – slajd czy drugie okno się nie załapią. Do wgrania nagranie leży w pamięci przeglądarki; jeśli karta zostanie wcześniej zamknięta, nagranie przepada.",
+          "Nagraną odprawę można wysłać dopiero po przetworzeniu. To trwa kilka minut.",
+          "Prezentuje się na jednym ekranie. Nie ma widoku prowadzącego z osobnym obrazem dla rzutnika."
+        ],
+        "faq": [
+          {
+            "question": "Czy potrzebuję specjalnego sprzętu?",
+            "answer": "Nie. Wystarczy laptop podłączony do rzutnika, tablet w szatni albo udostępnienie ekranu na wideokonferencji. Rysuje się myszą, palcem albo rysikiem; pilot do prezentacji przełącza klipy swoimi przyciskami."
+          },
+          {
+            "question": "Czy rysunki są zapisywane?",
+            "answer": "Nie. Rysunek należy do klatki, na której powstał, i znika, gdy wideo rusza dalej. Kto chce go zachować, nagrywa odprawę – wtedy jest w wideo."
+          },
+          {
+            "question": "Jak odprawa trafia do zawodniczek, których nie było?",
+            "answer": "Przez „Nagrywaj”: obraz, rysunki i twój głos stają się wideo zapisanym przy meczu. Gdy jest przetworzone, wysyłasz je z jego strony do wybranych zawodniczek albo udostępniasz drużynie."
+          },
+          {
+            "question": "Czy mogę już korzystać z trybu odprawy?",
+            "answer": "Tylko jeśli twoje konto ma odblokowaną betę wideo. Część wideo powstaje teraz z kilkoma drużynami. Poproś o odblokowanie na stronie „Poproś o dostęp do wideo” – krótki formularz, odzywamy się osobiście."
+          }
+        ]
+      },
+      {
         "slug": "termine-und-teilnahme",
         "name": "Terminy i frekwencja",
         "short": "Terminy",
@@ -6806,7 +6908,7 @@
       "titleLead": "Wszystkie",
       "titleHighlight": "funkcje",
       "titleTail": "Statix",
-      "lede": "{count} funkcji, każda z własną stroną: co robi, jak działa w hali, prawdziwe zrzuty z aplikacji — i czego wyraźnie nie potrafi. Jedna z nich właśnie powstaje i jest tak oznaczona.",
+      "lede": "{count} funkcji, każda z własną stroną: co robi, jak działa w hali, prawdziwe zrzuty z aplikacji — i czego wyraźnie nie potrafi. Kilka z nich właśnie powstaje i są tak oznaczone.",
       "groupNavLabel": "Grupy funkcji",
       "priceCta": "Ile to kosztuje?",
       "groupCounter": "{index} z {total}",
