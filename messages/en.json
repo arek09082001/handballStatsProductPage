@@ -320,6 +320,7 @@
       "faq": "FAQ",
       "newsletter": "Newsletter",
       "feedback": "Feedback",
+      "videoRequest": "Video access",
       "tacticsBoard": "Tactics board",
       "handballStats": "Handball statistics",
       "schedule": "Fixtures & attendance",
@@ -625,7 +626,7 @@
       },
       "contactRequests": {
         "title": "Contact, feedback and enquiry management",
-        "description": "When you contact us (e.g. via the contact or feedback form, by email, telephone or via social media) and within the scope of existing user and business relationships, the information provided by the enquiring persons is processed to the extent necessary to respond to the contact request and any measures requested. The forms transmit the information you enter to us by email; the form content is not stored in a database. In order to fend off automated mass enquiries, your IP address is kept for a maximum of one hour in a volatile counter in memory and is then discarded.",
+        "description": "When you contact us (e.g. via the contact, feedback or video request form, by email, telephone or via social media) and within the scope of existing user and business relationships, the information provided by the enquiring persons is processed to the extent necessary to respond to the contact request and any measures requested. The forms transmit the information you enter to us by email; the form content is not stored in a database. In order to fend off automated mass enquiries, your IP address is kept for a maximum of one hour in a volatile counter in memory and is then discarded.",
         "items": [
           {
             "label": "Types of data processed:",
@@ -939,7 +940,7 @@
           {
             "title": "Sending emails (Brevo)",
             "paragraphs": [
-              "Transactional emails – such as the registration confirmation, password reset links, team invitations, appointment reminders, shared match reports and system notifications – as well as emails within the scope of the contact and feedback form and the newsletter are sent via the service provider Brevo. Email address, name and the respective message content as well as technical dispatch information are processed in the course of this."
+              "Transactional emails – such as the registration confirmation, password reset links, team invitations, appointment reminders, shared match reports and system notifications – as well as emails within the scope of the contact, feedback and video request form and the newsletter are sent via the service provider Brevo. Email address, name and the respective message content as well as technical dispatch information are processed in the course of this."
             ],
             "items": [
               {
@@ -1818,6 +1819,60 @@
     "missingRating": "Please pick a rating first.",
     "missingCategory": "Please choose what your feedback is about."
   },
+  "videoRequestPage": {
+    "metaTitle": "Request video access",
+    "kicker": "Video beta",
+    "title": "Have video enabled for your account",
+    "description": "Video tagging, the livestream and the analysis from the picture are finished enough to work with – and run as a closed beta until the launch, enabled by hand per account. One request, one minute, and we get back to you personally.",
+    "mailSubject": "Video access for my Statix account",
+    "contactLabel": "Who is asking?",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "E-mail of your Statix account",
+    "emailHint": "The account under exactly this address is the one we enable. No account yet? Register free at {app} first – with the same address.",
+    "teamLabel": "Team and club",
+    "teamPlaceholder": "e.g. Women 1, VfL Musterstadt",
+    "tierLabel": "Which video tier do you have in mind?",
+    "tiers": {
+      "basis": "Video Basic",
+      "team": "Video Team",
+      "analyse": "Video Analysis",
+      "unsure": "Not sure yet"
+    },
+    "tierHint": "A direction, not an order – what sets the tiers apart is on the <pricing>pricing page</pricing>. During the beta the video costs nothing.",
+    "messageLabel": "How do you film, what are you planning?",
+    "messagePlaceholder": "One phone at the centre line or two? Match videos for the review, a livestream for the parents, running paths from the picture? Anything that helps us judge what you need.",
+    "optional": "(optional)",
+    "button": "Request access",
+    "pending": "Sending…",
+    "privacyPrefix": "I accept the",
+    "privacyLink": "privacy policy",
+    "privacySuffix": "and agree to the processing of my data.",
+    "note": "We use your details solely to handle your request.",
+    "successTitle": "Request sent!",
+    "successDescription": "Thank you – a confirmation is on its way. We read every request ourselves and get back to you as soon as your account is enabled.",
+    "errorTitle": "Sending failed",
+    "invalidEmail": "Please enter a valid e-mail address.",
+    "next": {
+      "kicker": "And then",
+      "title": "What happens after you send it",
+      "steps": {
+        "read": {
+          "title": "A person reads the request",
+          "body": "No queue, no robot: we read who you are and how you film, and get in touch directly if anything is unclear."
+        },
+        "enable": {
+          "title": "Your account is enabled",
+          "body": "As soon as there is room in the beta, we switch video on for the account under your address – for every team in which you are head coach."
+        },
+        "feedback": {
+          "title": "You give feedback",
+          "body": "The beta lives on what comes back from the hall. Tell us what gets in the way – it ends up in the next version."
+        }
+      },
+      "taggingLink": "What video tagging can do today",
+      "livestreamLink": "What the livestream can do today"
+    }
+  },
   "privacyPage": {
     "header": {
       "eyebrow": "Privacy",
@@ -1978,7 +2033,9 @@
         "creditsTitle": "Compute credits",
         "creditsText": "One credit is one hour on a graphics card in the EU – for panorama, follow-cam, running paths or ball detection. Trial runs cost nothing, and runs that finally fail are credited back.",
         "creditPacks": "Top up from Video Team: {smallCredits} credits for {smallPrice}, {largeCredits} credits for {largePrice}.",
-        "betaNote": "Video is a closed beta until {launchDate}. The analysis from the picture only ever suggests – it never creates a scene or a statistics entry on its own."
+        "betaNote": "Video is a closed beta until {launchDate}. The analysis from the picture only ever suggests – it never creates a scene or a statistics entry on its own.",
+        "requestCta": "Request video access",
+        "requestHint": "Want to use the video before the launch? Request access for your account – during the beta it costs nothing."
       },
       "summary": {
         "title": "Your selection",
@@ -2004,6 +2061,8 @@
         "buyLocked": "Bookable from {launchDate}",
         "register": "Register for free",
         "registerFounder": "Register free now and secure grandfathering",
+        "requestVideo": "Request video access",
+        "requestVideoHint": "Until the launch the video runs as a closed beta: enabled per account, on request and free of charge.",
         "previewBadge": "Checkout preview",
         "mobileToday": "today",
         "jump": "Summary"
@@ -5048,7 +5107,7 @@
           },
           {
             "question": "Can I use the livestream today?",
-            "answer": "Only if your account has been enabled for the video beta. The livestream is currently being built and tested with a few teams. Write to us if you want to take part — the waiting list is one email."
+            "answer": "Only if your account has been enabled for the video beta. The livestream is currently being built and tested with a few teams. If you want to take part, request access on the “Request video access” page – a short form, and we get back to you personally."
           }
         ]
       },
@@ -5762,7 +5821,7 @@
         "faq": [
           {
             "question": "Can I use video tagging today?",
-            "answer": "Only if your account is enabled for it. The function is being built right now and runs with a few teams who give feedback. Write to us if you want to be part of it — the waiting list is an e-mail."
+            "answer": "Only if your account is enabled for it. The function is being built right now and runs with a few teams who give feedback. If you want to be part of it, request access on the “Request video access” page – a short form, and we get back to you personally."
           },
           {
             "question": "What is the difference between a tag and a recorded action?",
@@ -6790,7 +6849,8 @@
       "title": "What is being built right now",
       "description": "Statix grows out of what comes back from the hall. What is not finished yet still stands here — as what it is.",
       "cardCta": "What works already, and what does not",
-      "contact": "Do you want to be in early on one of these features and give feedback? <contact>Write to us</contact> — the waiting list is an e-mail."
+      "contact": "Do you want to be in early on one of these features and give feedback? The waiting list is a short form – <request>request access</request>.",
+      "requestCta": "Request video access"
     },
     "detail": {
       "breadcrumbLabel": "Breadcrumbs",
@@ -6798,6 +6858,7 @@
       "breadcrumbFeatures": "Features",
       "groupFallback": "Feature",
       "allFeaturesCta": "All features",
+      "requestCta": "Request access",
       "overviewKicker": "What it is about",
       "factsTitle": "In short",
       "shotsKicker": "From the app",

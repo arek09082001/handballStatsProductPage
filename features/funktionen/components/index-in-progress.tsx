@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, KeyRound } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import {
   CourtDiagram,
@@ -9,6 +9,7 @@ import {
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
+import { videoRequestHref } from '@/features/video-anfrage/data/video-request-content';
 import { featurePath } from '../data/features';
 import { useFeatures } from '../data/use-features';
 import FeatureStatusBadge from './feature-status-badge';
@@ -71,9 +72,18 @@ export default function FeatureIndexInProgress() {
 
         <p className='mt-8 max-w-[62ch] text-[15px] leading-7 text-chalk/60'>
           {t.rich('contact', {
-            contact: inlineLink('/kontakt', 'court'),
+            request: inlineLink(
+              videoRequestHref({ source: 'funktionen' }),
+              'court',
+            ),
           })}
         </p>
+        <Link
+          href={videoRequestHref({ source: 'funktionen' })}
+          className='mt-5 inline-flex min-h-12 items-center gap-2 rounded-xl bg-primary px-6 font-display text-[15px] font-bold tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+          <KeyRound className='size-4' aria-hidden />
+          {t('requestCta')}
+        </Link>
       </div>
     </section>
   );

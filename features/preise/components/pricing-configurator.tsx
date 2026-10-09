@@ -1,9 +1,11 @@
 'use client';
 
 import { useCallback, useMemo, useState, type ReactNode } from 'react';
-import { ArrowDown, Cpu } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowDown, Cpu, KeyRound } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
+import { videoRequestHref } from '@/features/video-anfrage/data/video-request-content';
 import {
   CourtDiagram,
   Grain,
@@ -345,6 +347,24 @@ export default function PricingConfigurator({ sheet }: { sheet: PriceSheet }) {
                     {t('video.betaNote', labels)}
                   </p>
                 </div>
+              </div>
+
+              {/* The way into the closed beta. Before this button the page
+                  said "geschlossene Beta" and stopped there; the tier the
+                  visitor has just picked travels along as the preselection. */}
+              <div className='mt-4 flex flex-col gap-3 rounded-2xl border border-primary/30 bg-primary/10 p-5 sm:flex-row sm:items-center sm:justify-between'>
+                <p className='max-w-[52ch] text-[14px] leading-6 text-chalk/80'>
+                  {t('video.requestHint')}
+                </p>
+                <Link
+                  href={videoRequestHref({
+                    tier: selection.video,
+                    source: 'preise',
+                  })}
+                  className='inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-5 font-display text-[15px] font-bold tracking-tight text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-chalk/70 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+                  <KeyRound className='size-4' aria-hidden />
+                  {t('video.requestCta')}
+                </Link>
               </div>
             </ConfiguratorStep>
 

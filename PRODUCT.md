@@ -71,7 +71,13 @@ Every entry carries a `status`, and the site shows it:
 - **`beta`** — being built, restricted to named accounts. Listed anyway, marked
   "In Arbeit" on the card, in the hero and in `llms.txt`. Never described as
   something a new account gets today. Currently: **Video‑Tagging** and
-  **Livestream**.
+  **Livestream**. Both carry a `requestPath` to **`/video-anfrage`**, the one
+  form for asking to have the video beta enabled for an account (name, the
+  account's e‑mail, squad, the tier in mind, a free line); the request mails
+  the team and a receipt to the visitor, nothing is stored. The pricing
+  configurator, the two feature heroes and the "Was gerade gebaut wird" band
+  all link there — wherever the site says "closed beta" it also says how to
+  get in.
 - **`onRequest`** — finished, but set up for a club rather than self‑served.
   Currently: **Vereinsbereich**.
 

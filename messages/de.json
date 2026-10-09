@@ -320,6 +320,7 @@
       "faq": "FAQ",
       "newsletter": "Newsletter",
       "feedback": "Feedback",
+      "videoRequest": "Video-Freischaltung",
       "tacticsBoard": "Taktikboard",
       "handballStats": "Handball-Statistiken",
       "schedule": "Termine & Teilnahme",
@@ -625,7 +626,7 @@
       },
       "contactRequests": {
         "title": "Kontakt-, Feedback- und Anfrageverwaltung",
-        "description": "Bei der Kontaktaufnahme mit uns (z. B. über das Kontakt- oder Feedback-Formular, per E-Mail, Telefon oder über soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist. Die Formulare übermitteln uns die von Ihnen eingegebenen Angaben per E-Mail; eine Speicherung der Formularinhalte in einer Datenbank findet nicht statt. Um automatisierte Massenanfragen abzuwehren, wird Ihre IP-Adresse für maximal eine Stunde in einem flüchtigen Zähler im Arbeitsspeicher gehalten und danach verworfen.",
+        "description": "Bei der Kontaktaufnahme mit uns (z. B. über das Kontakt-, Feedback- oder Video-Anfrage-Formular, per E-Mail, Telefon oder über soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet, soweit dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist. Die Formulare übermitteln uns die von Ihnen eingegebenen Angaben per E-Mail; eine Speicherung der Formularinhalte in einer Datenbank findet nicht statt. Um automatisierte Massenanfragen abzuwehren, wird Ihre IP-Adresse für maximal eine Stunde in einem flüchtigen Zähler im Arbeitsspeicher gehalten und danach verworfen.",
         "items": [
           {
             "label": "Verarbeitete Datenarten:",
@@ -939,7 +940,7 @@
           {
             "title": "E-Mail-Versand (Brevo)",
             "paragraphs": [
-              "Transaktionale E-Mails – etwa die Registrierungsbestätigung, Links zum Zurücksetzen des Passworts, Mannschafts-Einladungen, Terminerinnerungen, geteilte Spielberichte und Systembenachrichtigungen – sowie E-Mails im Rahmen des Kontakt- und Feedback-Formulars und des Newsletters versenden wir über den Dienstleister Brevo. Verarbeitet werden dabei E-Mail-Adresse, Name und der jeweilige Nachrichteninhalt sowie technische Versandinformationen."
+              "Transaktionale E-Mails – etwa die Registrierungsbestätigung, Links zum Zurücksetzen des Passworts, Mannschafts-Einladungen, Terminerinnerungen, geteilte Spielberichte und Systembenachrichtigungen – sowie E-Mails im Rahmen des Kontakt-, Feedback- und Video-Anfrage-Formulars und des Newsletters versenden wir über den Dienstleister Brevo. Verarbeitet werden dabei E-Mail-Adresse, Name und der jeweilige Nachrichteninhalt sowie technische Versandinformationen."
             ],
             "items": [
               {
@@ -1818,6 +1819,60 @@
     "missingRating": "Bitte vergib zuerst eine Bewertung.",
     "missingCategory": "Bitte wähle aus, worum es geht."
   },
+  "videoRequestPage": {
+    "metaTitle": "Video-Freischaltung anfragen",
+    "kicker": "Video-Beta",
+    "title": "Video für dein Konto freischalten lassen",
+    "description": "Video-Tagging, Livestream und die Analyse aus dem Bild sind fertig genug, um damit zu arbeiten – und laufen bis zum Start als geschlossene Beta, die wir je Konto von Hand freischalten. Eine Anfrage, eine Minute, und wir melden uns persönlich.",
+    "mailSubject": "Video-Freischaltung für mein Statix-Konto",
+    "contactLabel": "Wer fragt an?",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "E-Mail deines Statix-Kontos",
+    "emailHint": "Freigeschaltet wird das Konto mit genau dieser Adresse. Noch kein Konto? Registriere dich vorher kostenlos unter {app} – mit derselben Adresse.",
+    "teamLabel": "Mannschaft und Verein",
+    "teamPlaceholder": "z. B. Damen 1, VfL Musterstadt",
+    "tierLabel": "Welche Video-Stufe hast du im Blick?",
+    "tiers": {
+      "basis": "Video Basis",
+      "team": "Video Team",
+      "analyse": "Video Analyse",
+      "unsure": "Noch unklar"
+    },
+    "tierHint": "Nur eine Richtung, keine Bestellung – was die Stufen unterscheidet, steht auf der <pricing>Preisseite</pricing>. In der Beta kostet das Video nichts.",
+    "messageLabel": "Wie filmt ihr, was habt ihr vor?",
+    "messagePlaceholder": "Ein Handy an der Mittellinie oder zwei? Spielvideos zum Nachbereiten, Livestream für die Eltern, Laufwege aus dem Bild? Alles, was uns hilft, euch richtig einzuschätzen.",
+    "optional": "(optional)",
+    "button": "Freischaltung anfragen",
+    "pending": "Wird gesendet…",
+    "privacyPrefix": "Ich akzeptiere die",
+    "privacyLink": "Datenschutzhinweise",
+    "privacySuffix": "und bin mit der Verarbeitung meiner Daten einverstanden.",
+    "note": "Wir verwenden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage.",
+    "successTitle": "Anfrage gesendet!",
+    "successDescription": "Danke – eine Bestätigung ist unterwegs. Wir prüfen die Anfrage persönlich und melden uns, sobald dein Konto freigeschaltet ist.",
+    "errorTitle": "Senden fehlgeschlagen",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "next": {
+      "kicker": "Und dann",
+      "title": "So geht es nach dem Absenden weiter",
+      "steps": {
+        "read": {
+          "title": "Ein Mensch liest die Anfrage",
+          "body": "Keine Warteschlange, kein Automat: Wir lesen, wer ihr seid und wie ihr filmt, und melden uns bei Rückfragen direkt."
+        },
+        "enable": {
+          "title": "Dein Konto wird freigeschaltet",
+          "body": "Sobald ein Platz in der Beta frei ist, schalten wir das Video für das Konto mit deiner Adresse ein – für alle Mannschaften, in denen du Cheftrainer bist."
+        },
+        "feedback": {
+          "title": "Ihr gebt Rückmeldung",
+          "body": "Die Beta lebt davon, was aus der Halle zurückkommt. Was hakt, sagt ihr uns – und es landet in der nächsten Version."
+        }
+      },
+      "taggingLink": "Was Video-Tagging heute kann",
+      "livestreamLink": "Was der Livestream heute kann"
+    }
+  },
   "privacyPage": {
     "header": {
       "eyebrow": "Datenschutz",
@@ -1978,7 +2033,9 @@
         "creditsTitle": "Rechen-Credits",
         "creditsText": "Ein Credit ist eine Stunde auf einer Grafikkarte in der EU – für Panorama, Schwenk-Fassung, Laufwege oder Ballerkennung. Probeläufe kosten nichts, endgültig gescheiterte Läufe werden gutgeschrieben.",
         "creditPacks": "Nachkaufen ab Video Team: {smallCredits} Credits für {smallPrice}, {largeCredits} Credits für {largePrice}.",
-        "betaNote": "Das Video ist bis zum {launchDate} eine geschlossene Beta. Die Analyse aus dem Bild schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an."
+        "betaNote": "Das Video ist bis zum {launchDate} eine geschlossene Beta. Die Analyse aus dem Bild schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an.",
+        "requestCta": "Video-Freischaltung anfragen",
+        "requestHint": "Du willst das Video schon vor dem Start nutzen? Frag die Freischaltung für dein Konto an – in der Beta kostet es nichts."
       },
       "summary": {
         "title": "Deine Auswahl",
@@ -2004,6 +2061,8 @@
         "buyLocked": "Buchbar ab {launchDate}",
         "register": "Kostenlos registrieren",
         "registerFounder": "Jetzt kostenlos registrieren und Bestandsschutz sichern",
+        "requestVideo": "Video-Freischaltung anfragen",
+        "requestVideoHint": "Bis zum Start läuft das Video als geschlossene Beta: Freischaltung je Konto, auf Anfrage und kostenlos.",
         "previewBadge": "Vorschau der Kasse",
         "mobileToday": "heute",
         "jump": "Übersicht"
@@ -5048,7 +5107,7 @@
           },
           {
             "question": "Kann ich den Livestream heute schon nutzen?",
-            "answer": "Nur, wenn dein Konto für die Video-Beta freigeschaltet ist. Der Livestream wird gerade mit einigen Teams gebaut und getestet. Schreib uns, wenn ihr dabei sein wollt – die Warteliste ist eine E-Mail."
+            "answer": "Nur, wenn dein Konto für die Video-Beta freigeschaltet ist. Der Livestream wird gerade mit einigen Teams gebaut und getestet. Wenn ihr dabei sein wollt, frag die Freischaltung über die Seite „Video-Freischaltung anfragen“ an – ein kurzes Formular, wir melden uns persönlich."
           }
         ]
       },
@@ -5762,7 +5821,7 @@
         "faq": [
           {
             "question": "Kann ich Video-Tagging heute schon nutzen?",
-            "answer": "Nur, wenn dein Konto dafür freigeschaltet ist. Die Funktion wird gerade gebaut und läuft mit wenigen Teams, die Rückmeldung geben. Schreib uns, wenn ihr dabei sein wollt — die Warteliste ist eine E-Mail."
+            "answer": "Nur, wenn dein Konto dafür freigeschaltet ist. Die Funktion wird gerade gebaut und läuft mit wenigen Teams, die Rückmeldung geben. Wenn ihr dabei sein wollt, frag die Freischaltung über die Seite „Video-Freischaltung anfragen“ an – ein kurzes Formular, wir melden uns persönlich."
           },
           {
             "question": "Was ist der Unterschied zwischen einem Tag und einer erfassten Aktion?",
@@ -6790,7 +6849,8 @@
       "title": "Was gerade gebaut wird",
       "description": "Statix entsteht aus dem, was aus der Halle zurückkommt. Was noch nicht fertig ist, steht trotzdem hier — als das, was es ist.",
       "cardCta": "Was schon geht, und was noch nicht",
-      "contact": "Ihr wollt bei einer dieser Funktionen früh dabei sein und Rückmeldung geben? <contact>Schreib uns</contact> — die Warteliste ist eine E-Mail."
+      "contact": "Ihr wollt bei einer dieser Funktionen früh dabei sein und Rückmeldung geben? Die Warteliste ist ein kurzes Formular – <request>Freischaltung anfragen</request>.",
+      "requestCta": "Video-Freischaltung anfragen"
     },
     "detail": {
       "breadcrumbLabel": "Brotkrumen",
@@ -6798,6 +6858,7 @@
       "breadcrumbFeatures": "Funktionen",
       "groupFallback": "Funktion",
       "allFeaturesCta": "Alle Funktionen",
+      "requestCta": "Freischaltung anfragen",
       "overviewKicker": "Worum es geht",
       "factsTitle": "Kurz gesagt",
       "shotsKicker": "Aus der App",

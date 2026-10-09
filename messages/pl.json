@@ -320,6 +320,7 @@
       "faq": "FAQ",
       "newsletter": "Newsletter",
       "feedback": "Opinie i uwagi",
+      "videoRequest": "Dostęp do wideo",
       "tacticsBoard": "Tablica taktyczna",
       "handballStats": "Statystyki piłki ręcznej",
       "schedule": "Terminy i frekwencja",
@@ -630,7 +631,7 @@
       },
       "contactRequests": {
         "title": "Kontakt, opinie i obsługa zapytań",
-        "description": "Gdy kontaktują się Państwo z nami (np. przez formularz kontaktowy lub formularz opinii, pocztą elektroniczną, telefonicznie lub za pośrednictwem mediów społecznościowych) oraz w ramach istniejących relacji z użytkownikami i relacji biznesowych, informacje podane przez osoby zgłaszające się przetwarzane są w zakresie niezbędnym do udzielenia odpowiedzi na zapytanie i podjęcia ewentualnych wnioskowanych działań. Formularze przekazują nam wprowadzone przez Państwa informacje pocztą elektroniczną; treść formularza nie jest zapisywana w bazie danych. Aby przeciwdziałać zautomatyzowanym zapytaniom masowym, Państwa adres IP jest przechowywany maksymalnie przez godzinę w ulotnym liczniku w pamięci, a następnie odrzucany.",
+        "description": "Gdy kontaktują się Państwo z nami (np. przez formularz kontaktowy, formularz opinii lub formularz prośby o wideo, pocztą elektroniczną, telefonicznie lub za pośrednictwem mediów społecznościowych) oraz w ramach istniejących relacji z użytkownikami i relacji biznesowych, informacje podane przez osoby zgłaszające się przetwarzane są w zakresie niezbędnym do udzielenia odpowiedzi na zapytanie i podjęcia ewentualnych wnioskowanych działań. Formularze przekazują nam wprowadzone przez Państwa informacje pocztą elektroniczną; treść formularza nie jest zapisywana w bazie danych. Aby przeciwdziałać zautomatyzowanym zapytaniom masowym, Państwa adres IP jest przechowywany maksymalnie przez godzinę w ulotnym liczniku w pamięci, a następnie odrzucany.",
         "items": [
           {
             "label": "Rodzaje przetwarzanych danych:",
@@ -944,7 +945,7 @@
           {
             "title": "Wysyłka wiadomości e-mail (Brevo)",
             "paragraphs": [
-              "Wiadomości transakcyjne – takie jak potwierdzenie rejestracji, linki do resetowania hasła, zaproszenia do drużyny, przypomnienia o terminach, udostępnione protokoły meczowe i powiadomienia systemowe – a także wiadomości e-mail w ramach formularza kontaktowego i formularza opinii oraz newslettera wysyłane są za pośrednictwem dostawcy Brevo. Przetwarzane są przy tym adres e-mail, imię i nazwisko oraz treść danej wiadomości, a także techniczne informacje o wysyłce."
+              "Wiadomości transakcyjne – takie jak potwierdzenie rejestracji, linki do resetowania hasła, zaproszenia do drużyny, przypomnienia o terminach, udostępnione protokoły meczowe i powiadomienia systemowe – a także wiadomości e-mail w ramach formularza kontaktowego, formularza opinii i formularza prośby o wideo oraz newslettera wysyłane są za pośrednictwem dostawcy Brevo. Przetwarzane są przy tym adres e-mail, imię i nazwisko oraz treść danej wiadomości, a także techniczne informacje o wysyłce."
             ],
             "items": [
               {
@@ -1818,6 +1819,60 @@
     "missingRating": "Najpierw wybierz ocenę.",
     "missingCategory": "Wskaż, czego dotyczy Twoja opinia."
   },
+  "videoRequestPage": {
+    "metaTitle": "Poproś o dostęp do wideo",
+    "kicker": "Beta wideo",
+    "title": "Odblokuj wideo dla swojego konta",
+    "description": "Tagowanie wideo, transmisja na żywo i analiza z obrazu są na tyle gotowe, że można z nimi pracować – a do startu działają jako zamknięta beta, którą odblokowujemy ręcznie konto po koncie. Jedna prośba, jedna minuta, a my odzywamy się osobiście.",
+    "mailSubject": "Dostęp do wideo dla mojego konta Statix",
+    "contactLabel": "Kto pyta?",
+    "namePlaceholder": "Twoje imię i nazwisko",
+    "emailPlaceholder": "E-mail twojego konta Statix",
+    "emailHint": "Odblokowujemy konto założone dokładnie na ten adres. Nie masz jeszcze konta? Zarejestruj się najpierw za darmo na {app} – na ten sam adres.",
+    "teamLabel": "Drużyna i klub",
+    "teamPlaceholder": "np. Kobiety I, VfL Musterstadt",
+    "tierLabel": "Który poziom wideo masz na myśli?",
+    "tiers": {
+      "basis": "Wideo Baza",
+      "team": "Wideo Drużyna",
+      "analyse": "Wideo Analiza",
+      "unsure": "Jeszcze nie wiem"
+    },
+    "tierHint": "To tylko kierunek, nie zamówienie – czym różnią się poziomy, opisuje <pricing>strona z cenami</pricing>. W becie wideo nic nie kosztuje.",
+    "messageLabel": "Jak filmujecie i co planujecie?",
+    "messagePlaceholder": "Jeden telefon przy linii środkowej czy dwa? Nagrania meczów do analizy, transmisja dla rodziców, trasy biegowe z obrazu? Wszystko, co pomoże nam was dobrze ocenić.",
+    "optional": "(opcjonalnie)",
+    "button": "Poproś o dostęp",
+    "pending": "Wysyłanie…",
+    "privacyPrefix": "Akceptuję",
+    "privacyLink": "politykę prywatności",
+    "privacySuffix": "i zgadzam się na przetwarzanie moich danych.",
+    "note": "Twoje dane wykorzystujemy wyłącznie do obsługi twojej prośby.",
+    "successTitle": "Prośba wysłana!",
+    "successDescription": "Dziękujemy – potwierdzenie jest w drodze. Każdą prośbę czytamy osobiście i odzywamy się, gdy tylko twoje konto zostanie odblokowane.",
+    "errorTitle": "Wysyłanie nie powiodło się",
+    "invalidEmail": "Podaj prawidłowy adres e-mail.",
+    "next": {
+      "kicker": "A potem",
+      "title": "Co dzieje się po wysłaniu",
+      "steps": {
+        "read": {
+          "title": "Prośbę czyta człowiek",
+          "body": "Bez kolejki, bez automatu: czytamy, kim jesteście i jak filmujecie, a przy pytaniach odzywamy się bezpośrednio."
+        },
+        "enable": {
+          "title": "Twoje konto zostaje odblokowane",
+          "body": "Gdy tylko zwolni się miejsce w becie, włączamy wideo dla konta na twój adres – dla wszystkich drużyn, w których jesteś pierwszym trenerem."
+        },
+        "feedback": {
+          "title": "Dajecie nam informację zwrotną",
+          "body": "Beta żyje tym, co wraca z hali. Co nie gra, mówicie nam – i trafia to do następnej wersji."
+        }
+      },
+      "taggingLink": "Co dziś potrafi tagowanie wideo",
+      "livestreamLink": "Co dziś potrafi transmisja na żywo"
+    }
+  },
   "privacyPage": {
     "header": {
       "eyebrow": "Prywatność",
@@ -1978,7 +2033,9 @@
         "creditsTitle": "Kredyty obliczeniowe",
         "creditsText": "Jeden kredyt to godzina pracy karty graficznej w UE – na panoramę, wersję z prowadzeniem kamery, trasy biegu lub wykrywanie piłki. Przebiegi próbne nic nie kosztują, a ostatecznie nieudane przebiegi są zwracane.",
         "creditPacks": "Dokupienie od Wideo Drużyna: {smallCredits} kredytów za {smallPrice}, {largeCredits} kredytów za {largePrice}.",
-        "betaNote": "Do {launchDate} wideo jest zamkniętą betą. Analiza z obrazu tylko podpowiada – nigdy sama nie tworzy sceny ani wpisu w statystyce."
+        "betaNote": "Do {launchDate} wideo jest zamkniętą betą. Analiza z obrazu tylko podpowiada – nigdy sama nie tworzy sceny ani wpisu w statystyce.",
+        "requestCta": "Poproś o dostęp do wideo",
+        "requestHint": "Chcesz używać wideo jeszcze przed startem? Poproś o odblokowanie dla swojego konta – w becie nic to nie kosztuje."
       },
       "summary": {
         "title": "Twój wybór",
@@ -2004,6 +2061,8 @@
         "buyLocked": "Do wykupienia od {launchDate}",
         "register": "Zarejestruj się za darmo",
         "registerFounder": "Zarejestruj się za darmo i zachowaj prawa nabyte",
+        "requestVideo": "Poproś o dostęp do wideo",
+        "requestVideoHint": "Do startu wideo działa jako zamknięta beta: odblokowanie konto po koncie, na prośbę i bezpłatnie.",
         "previewBadge": "Podgląd płatności",
         "mobileToday": "dziś",
         "jump": "Podsumowanie"
@@ -5048,7 +5107,7 @@
           },
           {
             "question": "Czy mogę już dziś korzystać z transmisji?",
-            "answer": "Tylko jeśli twoje konto ma odblokowaną betę wideo. Transmisja na żywo jest właśnie budowana i testowana z kilkoma drużynami. Napisz do nas, jeśli chcecie dołączyć – lista oczekujących to jeden e-mail."
+            "answer": "Tylko jeśli twoje konto ma odblokowaną betę wideo. Transmisja na żywo jest właśnie budowana i testowana z kilkoma drużynami. Jeśli chcecie dołączyć, poproście o odblokowanie na stronie „Poproś o dostęp do wideo” – krótki formularz, odzywamy się osobiście."
           }
         ]
       },
@@ -5762,7 +5821,7 @@
         "faq": [
           {
             "question": "Czy mogę już dziś korzystać z tagowania wideo?",
-            "answer": "Tylko wtedy, gdy twoje konto jest do tego odblokowane. Funkcja właśnie powstaje i działa z kilkoma drużynami, które dają nam informację zwrotną. Napisz do nas, jeśli chcecie być wśród nich — lista oczekujących to jeden e-mail."
+            "answer": "Tylko wtedy, gdy twoje konto jest do tego odblokowane. Funkcja właśnie powstaje i działa z kilkoma drużynami, które dają nam informację zwrotną. Jeśli chcecie być wśród nich, poproście o odblokowanie na stronie „Poproś o dostęp do wideo” – krótki formularz, odzywamy się osobiście."
           },
           {
             "question": "Czym różni się tag od zapisanej akcji?",
@@ -6790,7 +6849,8 @@
       "title": "Co właśnie powstaje",
       "description": "Statix powstaje z tego, co wraca z hali. To, co nie jest jeszcze gotowe, i tak stoi tutaj — jako to, czym jest.",
       "cardCta": "Co już działa, a co jeszcze nie",
-      "contact": "Chcecie być wcześnie przy jednej z tych funkcji i dawać nam informację zwrotną? <contact>Napisz do nas</contact> — lista oczekujących to jeden e-mail."
+      "contact": "Chcecie być wcześnie przy jednej z tych funkcji i dawać nam informację zwrotną? Lista oczekujących to krótki formularz – <request>poproś o dostęp</request>.",
+      "requestCta": "Poproś o dostęp do wideo"
     },
     "detail": {
       "breadcrumbLabel": "Ścieżka nawigacji",
@@ -6798,6 +6858,7 @@
       "breadcrumbFeatures": "Funkcje",
       "groupFallback": "Funkcja",
       "allFeaturesCta": "Wszystkie funkcje",
+      "requestCta": "Poproś o dostęp",
       "overviewKicker": "O co chodzi",
       "factsTitle": "Krótko mówiąc",
       "shotsKicker": "Z aplikacji",

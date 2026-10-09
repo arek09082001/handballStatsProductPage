@@ -15,6 +15,7 @@ import {
   FEATURES_PAGE_PATH,
   featureStateNote,
 } from '@/features/funktionen/data/features';
+import { VIDEO_REQUEST_PAGE_PATH } from '@/features/video-anfrage/data/video-request-content';
 
 export const dynamic = 'force-static';
 export const revalidate = 86400;
@@ -99,6 +100,7 @@ ${ratgeber}
 - Ratgeber: ${absoluteUrl(RATGEBER_BASE_PATH)}
 - Live-Demo: ${CLUB_CONFIG.website.demoUrl}
 - Feedback (Bewertung, Fehlermeldung oder Feature-Wunsch abgeben, auch anonym): ${absoluteUrl('/feedback')}
+- Video-Freischaltung anfragen (Video-Tagging, Livestream und Analyse aus dem Bild laufen als geschlossene Beta; Freischaltung je Konto auf Anfrage über dieses Formular): ${absoluteUrl(VIDEO_REQUEST_PAGE_PATH)}
 - Impressum: ${absoluteUrl('/impressum')}
 - Datenschutzerklärung (was verarbeitet wird, Dienstleister, Speicherdauern; Spielernamen werden vor jeder KI-Analyse pseudonymisiert und verlassen die App nicht): ${absoluteUrl('/datenschutz')}
 - Kontakt: ${CLUB_CONFIG.email.main}
