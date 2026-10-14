@@ -1510,17 +1510,20 @@
         {
           "badge": "Track live",
           "title": "Every action with a single tap",
-          "description": "Tap right on the court: goal, fast-break goal, ball win, block, 7m, suspension or missed shot. Bench, line-up and score always in view – without taking your eyes off the game."
+          "description": "Tap right on the court: goal, fast-break goal, ball win, block, 7m, suspension or missed shot. Bench, line-up and score always in view – without taking your eyes off the game.",
+          "linkLabel": "Live recording in detail"
         },
         {
           "badge": "Instantly calculated",
           "title": "Player stats in real time",
-          "description": "Goals, shots, percentage, assists, ball wins, blocks and discipline – calculated automatically for every player, while the game is still running."
+          "description": "Goals, shots, percentage, assists, ball wins, blocks and discipline – calculated automatically for every player, while the game is still running.",
+          "linkLabel": "All handball statistics explained"
         },
         {
           "badge": "Shot maps & heatmaps",
           "title": "Shots & goals on the court",
-          "description": "Visualize every shot and goal right on the court. Spot heatmaps, strong zones and the patterns that decide games – per player or for the whole team."
+          "description": "Visualize every shot and goal right on the court. Spot heatmaps, strong zones and the patterns that decide games – per player or for the whole team.",
+          "linkLabel": "More on handball shot maps"
         }
       ]
     },
@@ -1573,7 +1576,8 @@
       "founderKicker": "Who is behind it",
       "founderNote": "Statix comes out of real coaching practice: built by Arkadiusz Weiss, a handball player himself, in Germany. What is missing on the bench becomes a feature – feedback from the gym goes straight into the product.",
       "founderLinkLabel": "How Statix is made",
-      "founderLinkTitle": "How Statix is being built – a look at the development"
+      "founderLinkTitle": "How Statix is being built – a look at the development",
+      "templateLink": "Not ready for the app yet? The <template>free handball statistics Excel template with shot map</template> already works out rates and shooting zones itself."
     },
     "testimonials": {
       "kicker": "Coaches say",
@@ -3359,7 +3363,7 @@
           "bad": "You need a phone or tablet and an account. Daily quotas apply to AI analyses and shared reports."
         }
       ],
-      "closing": "If you want to stay with a spreadsheet, take one that already does the arithmetic: our <template>free handball statistics Excel template</template> comes with squad, match sheet, analysis and season sheet with finished formulas – download without signing up. For a single percentage in between, the <calculator>shooting percentage calculator</calculator> is enough, and the guide explains how to <guide>keep handball statistics properly</guide>."
+      "closing": "If you want to stay with a spreadsheet, take one that already does the arithmetic: our <template>free handball statistics Excel template</template> comes with squad, match sheet, analysis, shot map and season sheet with finished formulas – download without signing up. For a single percentage in between, the <calculator>shooting percentage calculator</calculator> is enough, and the guide explains how to <guide>keep handball statistics properly</guide>."
     },
     "faq": {
       "kicker": "Frequently asked",
@@ -3405,14 +3409,18 @@
       "titleLead": "Handball statistics",
       "titleHighlight": "Excel template",
       "titleTail": "for free",
-      "lede": "Five sheets, finished formulas, German column headers: Start, Kader (squad), Spielprotokoll (match log), Auswertung (analysis) and Saison (season). The Start sheet explains in four steps what goes where – shooting percentage, seven-metre rate and save percentage work themselves out. No sign-up, no email address.",
+      "lede": "Six sheets, finished formulas, German column headers: Start, Kader (squad), Spielprotokoll (match log), Auswertung (analysis), Wurfbild (shot map) and Saison (season). The Start sheet explains in four steps what goes where – shooting percentage, seven-metre rate, save percentage and the shot map per zone work themselves out. No sign-up, no email address.",
       "squadSlots": "{count} squad slots",
       "actionRows": "{count} action rows",
       "games": "{count} matches per season",
       "printReady": "set up ready to print",
       "cardTitle": "Download the template",
       "downloadCta": "Download the Excel template free",
-      "downloadNote": "Immediate download. No sign-up, no newsletter obligation."
+      "downloadNote": "Immediate download. No sign-up, no newsletter obligation.",
+      "appTitle": "Rather skip the typing?",
+      "appText": "The same statistics by tap on your phone – with a <shots>shot map from the real shooting position</shots>, done at the final whistle.",
+      "appCta": "Start for free",
+      "appDemo": "View the live demo"
     },
     "optin": {
       "title": "Optional: updates by email",
@@ -3432,7 +3440,7 @@
       "missingConsent": "For the newsletter I need both boxes ticked. You get the template without them too."
     },
     "metrics": {
-      "kicker": "Five sheets",
+      "kicker": "Six sheets",
       "title": "What the template records",
       "description": "None of this you have to build yourself – the formulas are in there and calculate as soon as you enter the first row.",
       "groups": [
@@ -3483,6 +3491,18 @@
             "± (goals incl. 7 m minus missed shots minus turnovers)",
             "Saves, goals conceded and the goalkeeper's save percentage",
             "Team row with all totals and percentages"
+          ]
+        },
+        {
+          "sheet": "Wurfbild (shot map)",
+          "description": "Where your team scores – and where it does not. The sheet counts every shot with a zone from the match log, as a court with coloured zones, as a table and per player. Pick the match and the shirt number at the top; empty means the whole season or the whole team.",
+          "metrics": [
+            "Shots, goals and rate per shooting zone",
+            "Court with coloured zones: red weak, green strong",
+            "Share of each zone in all shots",
+            "Shots without a zone counted separately",
+            "Goals/shots and rate per player and zone",
+            "One match or the whole season"
           ]
         },
         {
@@ -3541,8 +3561,8 @@
           "text": "Transferring the sheet in the evening means doing the work twice. And every transfer produces errors: a missed shot that gets lost in the typing raises the shooting percentage, and you steer your training by a number that never existed."
         },
         {
-          "title": "No shot map",
-          "text": "A table tells you that 40 per cent of the back-court shots went in. It does not tell you that every miss came from the same corner. Where shots were taken you only see on a court – not in a cell."
+          "title": "Only a rough shot map",
+          "text": "The template counts shots per zone – six zones, without left and right side and without the corner of the goal. That every miss came from the right half or went into the near corner you only see on a court with the real shooting position and goal zone, not in a cell."
         },
         {
           "title": "No trend per player",
@@ -3579,7 +3599,15 @@
         },
         {
           "question": "Which figures does the template work out automatically?",
-          "answer": "Shots, goals and shooting percentage per player, the seven-metre rate, assists, turnovers and suspensions, a ± per player as well as saves, goals conceded and the goalkeeper's save percentage. Plus team totals per match and rolling season values."
+          "answer": "Shots, goals and shooting percentage per player, the seven-metre rate, assists, turnovers and suspensions, a ± per player as well as saves, goals conceded and the goalkeeper's save percentage. Plus team totals per match and rolling season values. Plus the shot map: shots, goals and rate per shooting zone, for one match or the season."
+        },
+        {
+          "question": "Can I make a shot map with the template?",
+          "answer": "Yes. If you enter the zone for each shot in the match log, the “Wurfbild” sheet shows shots, goals and rate per zone – as a court with coloured zones, as a table and for each player. At the top you pick a match or leave the field empty for the whole season."
+        },
+        {
+          "question": "Does the template work as a match analysis template?",
+          "answer": "For the numbers behind it, yes: result, rates per player, goalkeeper figures, errors and the shot map per zone are ready after the match on the “Auswertung” and “Wurfbild” sheets. What a spreadsheet cannot do is the course of the game over time – when a run came, when it turned. For that you need the minute of every action or an app that records it."
         },
         {
           "question": "What counts as a shot?",
@@ -3810,7 +3838,7 @@
           "benchmark": "read as a trend across the season"
         }
       ],
-      "closing": "The ranges shift with league and age group, which is why your own previous value is always the better reference than a table. If you only want to work out a single percentage quickly, take the <calculator>shooting percentage calculator</calculator> – enter goals and shots, read the percentage, no sign-up."
+      "closing": "The ranges shift with league and age group, which is why your own previous value is always the better reference than a table. If you only want to work out a single percentage quickly, take the <calculator>shooting percentage calculator</calculator> – enter goals and shots, read the percentage, no sign-up. And where the shots come from no rate tells you – only a <shots>handball shot map</shots> shows that."
     },
     "ways": {
       "kicker": "Three ways",
@@ -3827,9 +3855,9 @@
         {
           "name": "Excel template",
           "effort": "Set up once",
-          "good": "Works out the percentages itself, belongs to you, can be extended at will.",
+          "good": "Works out rates and the shot map per zone by itself, belongs to you, can be extended at will.",
           "bad": "Unusable in the hall, so you type it up in the evening. No trend per player, and the assistant coach has the wrong version.",
-          "linkLabel": "Download the free Excel template"
+          "linkLabel": "Download the free Excel template with shot map"
         },
         {
           "name": "Statistics app",
@@ -5280,6 +5308,10 @@
           {
             "question": "Are there shot maps for goalkeepers?",
             "answer": "Yes — as the distribution of goals conceded and saves across the goal zones. That is the map that shows where a keeper is strong and where she is not."
+          },
+          {
+            "question": "Can I make a shot map without the app?",
+            "answer": "Yes, in rough form: our free handball statistics Excel template has a “Wurfbild” sheet that counts shots, goals and rate per zone – wing, pivot, back court, breakthrough, fast break and seven metres, for one match or the whole season. The exact position on the court, left and right side and the goal zone are beyond a spreadsheet; that is what the shot map in Statix does."
           }
         ]
       },
@@ -6988,7 +7020,34 @@
       "ctaKicker": "Next step",
       "ctaTitle": "Try it out on a real match",
       "ctaDescription": "The live demo is a fully equipped Statix with real match data — no account, straight in the browser. Or you create your team and record your first match.",
-      "ctaLinkLabel": "Every feature at a glance"
+      "ctaLinkLabel": "Every feature at a glance",
+      "resourcesTitle": "Free alongside – no account",
+      "resources": {
+        "excelTemplate": {
+          "title": "Excel template with shot map",
+          "text": "Match log, analysis and a shot map per zone – download without signing up."
+        },
+        "statsGuide": {
+          "title": "Handball statistics explained",
+          "text": "Which figures exist, how they are calculated and which benchmarks are normal."
+        },
+        "shotQuotaCalculator": {
+          "title": "Shooting percentage calculator",
+          "text": "Enter goals and shots, place the rate by position."
+        },
+        "tacticsBoard": {
+          "title": "Handball tactics board",
+          "text": "Lay out line-ups and runs on a court to scale and share them."
+        },
+        "xgGuide": {
+          "title": "Expected goals in handball",
+          "text": "What xG means, how it is calculated and when it helps."
+        },
+        "recordingComparison": {
+          "title": "Paper, Excel or app?",
+          "text": "The three ways to keep handball statistics, compared honestly."
+        }
+      }
     },
     "taggingBench": {
       "kicker": "How a scene comes about",

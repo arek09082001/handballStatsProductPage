@@ -11,9 +11,14 @@ import {
 } from '@/features/handball-statistiken/data/stats-content';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Handball-Statistiken: erfassen, berechnen, auswerten',
+  // Search Console (Oct 2026): ~1,000 impressions at position 5–6 and a 2 %
+  // click rate; "handballstatistiken" alone brought 542 of them at 0.9 %.
+  // The old title promised three verbs and no content. This one names what
+  // the page actually holds — the figures, their formulas and benchmarks —
+  // and the description the two free tools, which are what a click buys.
+  title: 'Handball-Statistiken: Kennzahlen, Formeln, Richtwerte',
   description:
-    'Alle Handball-Statistiken im Überblick: Wurfquote, Angriffseffektivität, Paradenquote und Tempoanteil – mit Formeln, Richtwerten und einer Anleitung zum Live-Erfassen.',
+    'Handballstatistiken verständlich erklärt: Wurfquote, Paradenquote, Angriffseffektivität, Tempoanteil – mit Formeln, Richtwerten und kostenloser Excel-Vorlage.',
   path: STATS_PAGE_PATH,
   keywords: [
     'handball statistiken',
@@ -26,6 +31,7 @@ export const metadata: Metadata = createPageMetadata({
     'handball statistik auswerten',
     'handball statistik formeln',
     'handball statistik richtwerte',
+    'handballstatistiken',
   ],
   imagePath: '/statsTableInGame.png',
 });

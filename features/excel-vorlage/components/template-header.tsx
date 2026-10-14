@@ -1,6 +1,6 @@
 'use client';
 
-import { Download, FileSpreadsheet } from 'lucide-react';
+import { ArrowRight, Download, FileSpreadsheet } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import {
   BoardCard,
@@ -9,6 +9,8 @@ import {
   Grain,
   MarkerUnderline,
 } from '@/features/landing-page/components/tactic';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
+import { CLUB_CONFIG } from '@/lib/club-config';
 import { TEMPLATE_FILE } from '../data/template-content';
 import TemplateNewsletterOptin from './template-newsletter-optin';
 
@@ -95,6 +97,46 @@ export default function TemplateHeader() {
             <p className='mt-3 text-center text-[13px] leading-6 text-chalk/60'>
               {t('downloadNote')}
             </p>
+
+            {/* The page with the most clicks after the home page (Search
+                Console, Oct 2026) — and its visitors already keep statistics.
+                The way into the app sits here, under the download, not
+                instead of it: the file comes first, always. */}
+            <div className='mt-6 rounded-xl border border-primary/30 bg-primary/10 p-4'>
+              <p className='font-display text-[15px] font-bold tracking-tight text-chalk'>
+                {t('appTitle')}
+              </p>
+              <p className='mt-1 text-[14px] leading-6 text-chalk/75'>
+                {t.rich('appText', {
+                  shots: (chunks) => (
+                    <a
+                      href='/funktionen/wurfbilder'
+                      className='font-semibold text-chalk underline underline-offset-4 hover:text-primary'>
+                      {chunks}
+                    </a>
+                  ),
+                })}
+              </p>
+              <div className='mt-3 flex flex-wrap items-center gap-x-4 gap-y-2'>
+                <a
+                  href={CLUB_CONFIG.website.appUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => trackRegisterClick('template')}
+                  className='group inline-flex h-10 items-center gap-1.5 rounded-lg bg-chalk px-4 font-display text-[14px] font-bold tracking-tight text-court transition-colors hover:bg-chalk/90'>
+                  {t('appCta')}
+                  <ArrowRight className='size-4 transition-transform group-hover:translate-x-0.5' />
+                </a>
+                <a
+                  href={CLUB_CONFIG.website.demoUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => trackDemoClick('template')}
+                  className='font-display text-[14px] font-bold tracking-tight text-chalk underline underline-offset-4 hover:text-primary'>
+                  {t('appDemo')}
+                </a>
+              </div>
+            </div>
 
             <div className='mt-6 border-t border-chalk/12 pt-5'>
               <TemplateNewsletterOptin />

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Gift } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { FALLBACK_PRICE_SHEET } from '@/features/preise/data/price-sheet';
+import { FOUNDER_REGISTERED_BEFORE } from '@/features/preise/data/founder-dates';
 import { cn } from '@/lib/utils';
 
 /**
@@ -22,7 +22,7 @@ import { cn } from '@/lib/utils';
  * week later. Once the deadline has passed, the note renders nothing — an
  * expired countdown is worse than none.
  */
-const DEADLINE = Date.parse(FALLBACK_PRICE_SHEET.founder.registeredBefore);
+const DEADLINE = Date.parse(FOUNDER_REGISTERED_BEFORE);
 const DAY = 24 * 60 * 60 * 1000;
 
 export default function FounderCountdown({

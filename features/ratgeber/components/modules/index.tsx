@@ -7,6 +7,7 @@ import SessionTimeline from './session-timeline';
 import FormationDiagram from './formation-diagram';
 import DecisionMatrix from './decision-matrix';
 import ArticleEmbed from './article-embed';
+import AppBridge from './app-bridge';
 
 /**
  * Dispatches an article module to its renderer. Every branch is a server
@@ -52,6 +53,15 @@ export default function ArticleModuleBlock({ module }: { module: ArticleModule }
           caption={module.caption}
           criteria={module.criteria}
           options={module.options}
+        />
+      );
+    case 'appBridge':
+      return (
+        <AppBridge
+          title={module.title}
+          text={module.text}
+          feature={module.feature}
+          featureLabel={module.featureLabel}
         />
       );
     case 'embed':

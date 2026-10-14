@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, X } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
+import { inlineLink } from '@/components/custom-ui/rich-text';
 import { trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { BoardCard, BoardKicker, Grain, SectionHeading } from './tactic';
@@ -124,6 +125,12 @@ export default function ProsSection() {
             <ArrowUpRight className='size-4' />
           </a>
         </div>
+
+        {/* For whoever is not ready to swap the scoresheet today: the free
+            template ranks first for its terms and is the softest next step. */}
+        <p className='mx-auto mt-5 max-w-xl text-center text-[15px] leading-7 text-ink/70'>
+          {t.rich('templateLink', { template: inlineLink('/handball-statistik-excel-vorlage') })}
+        </p>
 
         {/* The maker's note. The testimonial band renders nothing while there
             are no real coach quotes (see `features/erfahrungen/data`), so this

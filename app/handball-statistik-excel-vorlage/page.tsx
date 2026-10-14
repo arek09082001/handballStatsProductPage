@@ -11,9 +11,16 @@ import {
 } from '@/features/excel-vorlage/data/template-content';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Handball-Statistik Excel-Vorlage kostenlos',
+  // The page ranks first for "handball statistik excel" and keeps that term
+  // up front; "mit Wurfbild" is for the shot-map searches (Search Console,
+  // Oct 2026: "wurfbilder handball" ~270 impressions at position 4–5 with no
+  // free answer on the site), and the description names the analysis use
+  // ("handball spielanalyse vorlage", position 4.8). Absolute, because with
+  // the "| Statix" suffix the title would run past what a result shows.
+  title: 'Handball-Statistik Excel-Vorlage kostenlos – mit Wurfbild',
+  absoluteTitle: true,
   description:
-    'Kostenlose Excel-Vorlage für Handball-Statistiken: Kader, Spielprotokoll, Auswertung und Saison mit Formeln für Wurfquote und Paradenquote – ohne Anmeldung.',
+    'Kostenlose Excel-Vorlage für Handball-Statistik & Spielanalyse: Spielprotokoll, Auswertung, Wurfbild je Zone und Saisonwerte mit Formeln – ohne Anmeldung.',
   path: TEMPLATE_PAGE_PATH,
   keywords: [
     'handball statistik excel vorlage',
@@ -23,6 +30,9 @@ export const metadata: Metadata = createPageMetadata({
     'handball spielprotokoll vorlage',
     'handball statistik vorlage download',
     'handball wurfquote excel',
+    'handball spielanalyse vorlage',
+    'handball wurfbild vorlage',
+    'handball wurfbild excel',
   ],
   imagePath: '/statsTableInGame.png',
 });
@@ -41,7 +51,7 @@ export default function Page() {
       <PageSchema
         id='handball-statistik-excel-vorlage'
         name='Handball-Statistik Excel-Vorlage kostenlos herunterladen'
-        description='Kostenlose Excel-Vorlage für Handball-Statistiken mit Kader, Spielprotokoll, Auswertung und Saisonblatt – inklusive fertiger Formeln für Wurfquote, Siebenmeter-Quote und Paradenquote.'
+        description='Kostenlose Excel-Vorlage für Handball-Statistiken mit Kader, Spielprotokoll, Auswertung, Wurfbild und Saisonblatt – inklusive fertiger Formeln für Wurfquote, Siebenmeter-Quote, Paradenquote und Quote je Wurfzone.'
         path={TEMPLATE_PAGE_PATH}
         imagePath='/statsTableInGame.png'
         breadcrumbs={[
@@ -56,7 +66,7 @@ export default function Page() {
           '@type': 'DigitalDocument',
           '@id': `${pageUrl}#vorlage`,
           name: 'Handball-Statistik Excel-Vorlage',
-          description: `Excel-Vorlage für Handball-Statistiken mit den Blättern ${TEMPLATE_FILE.sheets.join(', ')} – Wurfquote, Siebenmeter-Quote und Paradenquote rechnen sich per Formel.`,
+          description: `Excel-Vorlage für Handball-Statistiken mit den Blättern ${TEMPLATE_FILE.sheets.join(', ')} – Wurfquote, Siebenmeter-Quote, Paradenquote und das Wurfbild je Zone rechnen sich per Formel.`,
           url: pageUrl,
           encodingFormat:
             'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',

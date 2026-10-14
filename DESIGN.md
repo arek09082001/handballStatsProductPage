@@ -135,6 +135,11 @@ accordion is client) so every article stays crawlable.
   shadow, a single magnet dot. The category shows as a Caveat marker label only
   where cards are ungrouped (related); on the hub the section heading already
   names it.
+- **App bridge** (`appBridge` module): where an article turns to measuring
+  ("Kennzahlen zur Kontrolle"), a light marker‑tinted note — "Mit Statix
+  gemessen", one sentence on what the app counts there, the registration and
+  the one feature page that does it. Server‑rendered like every module. Only on
+  articles that carry search traffic; it is a bridge, not an ad on every page.
 - The foot CTA reuses the landing page's final‑CTA language — a court band with
   one solid orange action to the no‑account live demo.
 

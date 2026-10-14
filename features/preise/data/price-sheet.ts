@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { CLUB_CONFIG } from '@/lib/club-config';
+import { FOUNDER_REGISTERED_BEFORE } from './founder-dates';
 
 /**
  * The app's price list, as the pricing page reads it.
@@ -161,7 +162,7 @@ export const FALLBACK_PRICE_SHEET: PriceSheet = {
     large: { credits: 30, price: 4900 },
   },
   founder: {
-    registeredBefore: '2026-12-31T23:00:00.000Z',
+    registeredBefore: FOUNDER_REGISTERED_BEFORE,
     freeUntil: '2027-06-30T22:00:00.000Z',
     priceRedeemableUntil: '2027-09-30T22:00:00.000Z',
   },

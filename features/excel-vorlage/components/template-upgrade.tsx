@@ -7,6 +7,7 @@ import {
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
 import { inlineLink } from '@/components/custom-ui/rich-text';
+import FounderCountdown from '@/features/landing-page/components/founder-countdown';
 
 /**
  * The bridge from the spreadsheet to the app: what changes when the same
@@ -46,6 +47,10 @@ export default function TemplateUpgrade() {
               brand: inlineLink('/was-ist-statix'),
             })}
           </p>
+
+          {/* The founder deadline where the template hands over to the app —
+              this page gets more clicks than any but the home page. */}
+          <FounderCountdown tone='paper' className='mt-7' />
         </div>
 
         <BoardScreenshot

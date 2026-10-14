@@ -22,10 +22,13 @@ export const DEFAULT_OG_IMAGE_SIZE = { width: 1200, height: 630 } as const;
  * someone who has never heard of it, so the first 30 characters – the part a
  * SERP actually shows – go to what the app is and who it is for. It already
  * ends in the brand, so pages using it must pass `absoluteTitle: true` to keep
- * the layout template from appending "| Statix" a second time. 58 characters.
+ * the layout template from appending "| Statix" a second time. 57 characters.
+ * "kostenlos" since Oct 2026: the page sat at position 4–5 for "handball
+ * statistik app" with a 10 % click rate, and free is the first thing a coach
+ * wants to know — true, because recording is never gated (PRODUCT.md).
  */
 export const HOME_TITLE =
-    'Handball-Statistik-App für Trainer – live erfassen | Statix';
+    'Handball-Statistik-App – kostenlos live erfassen | Statix';
 
 /**
  * Keyword sets kept for machine-readable surfaces only: the
@@ -183,7 +186,7 @@ export const SITE_LINKS = [
         name: 'Handball-Statistik Excel-Vorlage',
         path: '/handball-statistik-excel-vorlage',
         description:
-            'Kostenlose Excel-Vorlage für Handball-Statistiken: Kader, Spielprotokoll, Auswertung und Saison mit fertigen Formeln für Wurfquote und Paradenquote – Download ohne Anmeldung.',
+            'Kostenlose Excel-Vorlage für Handball-Statistiken und Spielanalyse: Kader, Spielprotokoll, Auswertung, Wurfbild je Zone und Saison mit fertigen Formeln für Wurfquote und Paradenquote – Download ohne Anmeldung.',
     },
     {
         name: 'Impressum',

@@ -1510,17 +1510,20 @@
         {
           "badge": "Saisie en direct",
           "title": "Chaque action en un seul geste",
-          "description": "Touchez directement sur le terrain : but, but en contre-attaque, récupération, contre, 7 mètres, exclusion ou tir manqué. Banc, composition et score toujours visibles, sans quitter le match des yeux."
+          "description": "Touchez directement sur le terrain : but, but en contre-attaque, récupération, contre, 7 mètres, exclusion ou tir manqué. Banc, composition et score toujours visibles, sans quitter le match des yeux.",
+          "linkLabel": "La saisie en direct en détail"
         },
         {
           "badge": "Calculé aussitôt",
           "title": "Statistiques individuelles en temps réel",
-          "description": "Buts, tirs, pourcentage, passes décisives, récupérations, contres et discipline : calculés automatiquement pour chaque joueur, pendant que le match se joue encore."
+          "description": "Buts, tirs, pourcentage, passes décisives, récupérations, contres et discipline : calculés automatiquement pour chaque joueur, pendant que le match se joue encore.",
+          "linkLabel": "Toutes les statistiques de handball expliquées"
         },
         {
           "badge": "Cartes de tirs et cartes de chaleur",
           "title": "Tirs et buts sur le terrain",
-          "description": "Visualisez chaque tir et chaque but directement sur le terrain. Repérez les cartes de chaleur, les zones fortes et les schémas qui font basculer les matchs, par joueur ou pour toute l’équipe."
+          "description": "Visualisez chaque tir et chaque but directement sur le terrain. Repérez les cartes de chaleur, les zones fortes et les schémas qui font basculer les matchs, par joueur ou pour toute l’équipe.",
+          "linkLabel": "En savoir plus sur les cartes de tirs"
         }
       ]
     },
@@ -1573,7 +1576,8 @@
       "founderKicker": "Qui est derrière",
       "founderNote": "Statix vient de la pratique : l’application est développée en Allemagne par Arkadiusz Weiss, lui-même handballeur. Ce qui manque sur le banc devient une fonctionnalité, et les retours de la salle entrent directement dans le produit.",
       "founderLinkLabel": "Comment Statix est fabriqué",
-      "founderLinkTitle": "Comment naît Statix – un aperçu du développement"
+      "founderLinkTitle": "Comment naît Statix – un aperçu du développement",
+      "templateLink": "Pas encore prêt pour l’application ? Le <template>modèle Excel gratuit de statistiques de handball avec carte de tirs</template> calcule déjà seul pourcentages et zones de tir."
     },
     "testimonials": {
       "kicker": "Les entraîneurs en parlent",
@@ -3359,7 +3363,7 @@
           "bad": "Il vous faut un téléphone ou une tablette et un compte. Des quotas journaliers s’appliquent aux analyses IA et aux rapports partagés."
         }
       ],
-      "closing": "Si vous voulez rester au tableur, prenez-en un qui calcule déjà : notre <template>modèle Excel gratuit de statistiques de handball</template> contient effectif, feuille de match, analyse et feuille de saison avec des formules toutes faites – téléchargement sans inscription. Pour un pourcentage isolé, le <calculator>calculateur de pourcentage de tir</calculator> suffit, et le guide explique comment <guide>tenir proprement une statistique de handball</guide>."
+      "closing": "Si vous voulez rester au tableur, prenez-en un qui calcule déjà : notre <template>modèle Excel gratuit de statistiques de handball</template> contient effectif, feuille de match, analyse, carte de tirs et feuille de saison avec des formules toutes faites – téléchargement sans inscription. Pour un pourcentage isolé, le <calculator>calculateur de pourcentage de tir</calculator> suffit, et le guide explique comment <guide>tenir proprement une statistique de handball</guide>."
     },
     "faq": {
       "kicker": "Questions fréquentes",
@@ -3405,14 +3409,18 @@
       "titleLead": "Modèle Excel de",
       "titleHighlight": "statistiques de handball",
       "titleTail": "gratuit",
-      "lede": "Cinq feuilles, des formules prêtes, des en-têtes de colonnes en allemand : Start (accueil), Kader (effectif), Spielprotokoll (feuille de match), Auswertung (analyse) et Saison (saison). La feuille d’accueil explique en quatre étapes ce qui va où – pourcentage de tir, taux à sept mètres et pourcentage d’arrêts se calculent tout seuls. Sans inscription, sans adresse e-mail.",
+      "lede": "Six feuilles, des formules prêtes, des en-têtes de colonnes en allemand : Start (accueil), Kader (effectif), Spielprotokoll (feuille de match), Auswertung (analyse), Wurfbild (carte de tirs) et Saison (saison). La feuille d’accueil explique en quatre étapes ce qui va où – pourcentage de tir, taux à sept mètres, pourcentage d’arrêts et carte de tirs par zone se calculent tout seuls. Sans inscription, sans adresse e-mail.",
       "squadSlots": "{count} places d’effectif",
       "actionRows": "{count} lignes d’actions",
       "games": "{count} matchs par saison",
       "printReady": "prêt à imprimer",
       "cardTitle": "Télécharger le modèle",
       "downloadCta": "Télécharger le modèle Excel gratuitement",
-      "downloadNote": "Téléchargement immédiat. Sans inscription, sans newsletter obligatoire."
+      "downloadNote": "Téléchargement immédiat. Sans inscription, sans newsletter obligatoire.",
+      "appTitle": "Plutôt sans recopier ?",
+      "appText": "Les mêmes statistiques d’un geste sur le téléphone – avec une <shots>carte de tirs selon la vraie position</shots>, prête au coup de sifflet final.",
+      "appCta": "Commencer gratuitement",
+      "appDemo": "Voir la démo en direct"
     },
     "optin": {
       "title": "Facultatif : les nouveautés par e-mail",
@@ -3432,7 +3440,7 @@
       "missingConsent": "Pour la newsletter, j’ai besoin des deux cases. Le modèle, vous l’obtenez aussi sans."
     },
     "metrics": {
-      "kicker": "Cinq feuilles",
+      "kicker": "Six feuilles",
       "title": "Ce que le modèle enregistre",
       "description": "Rien de tout cela n’est à construire vous-même – les formules sont dedans et calculent dès que vous saisissez la première ligne.",
       "groups": [
@@ -3483,6 +3491,18 @@
             "± (buts y compris 7 m moins tirs manqués moins pertes de balle)",
             "Arrêts, buts encaissés et pourcentage d’arrêts du gardien",
             "Ligne d’équipe avec tous les totaux et pourcentages"
+          ]
+        },
+        {
+          "sheet": "Wurfbild (carte de tirs)",
+          "description": "Où votre équipe marque – et où elle ne marque pas. La feuille compte chaque tir avec zone de la feuille de match, sous forme de terrain à zones colorées, de tableau et par joueur. En haut, vous choisissez le match et le numéro ; vide signifie toute la saison ou toute l’équipe.",
+          "metrics": [
+            "Tirs, buts et pourcentage par zone de tir",
+            "Terrain à zones colorées : rouge faible, vert fort",
+            "Part de chaque zone dans l’ensemble des tirs",
+            "Tirs sans zone comptés à part",
+            "Buts/tirs et pourcentage par joueur et par zone",
+            "Un match ou toute la saison"
           ]
         },
         {
@@ -3541,8 +3561,8 @@
           "text": "Reporter la feuille le soir, c’est faire le travail deux fois. Et chaque report génère des erreurs : un tir manqué qui saute à la ressaisie fait monter le pourcentage de tir, et vous pilotez votre entraînement avec un chiffre qui n’a jamais existé."
         },
         {
-          "title": "Pas de carte de tirs",
-          "text": "Un tableau vous dit que 40 pour cent des tirs de l’arrière sont rentrés. Il ne vous dit pas que tous les manqués venaient du même coin. Où l’on a tiré ne se voit que sur un terrain – pas dans une cellule."
+          "title": "Seulement une carte de tirs grossière",
+          "text": "Le modèle compte les tirs par zone – six zones, sans côté gauche ou droit et sans coin du but. Que tous les tirs manqués venaient de l’arrière droit ou partaient au premier poteau ne se voit que sur un terrain avec la vraie position de tir et la zone du but, pas dans une cellule."
         },
         {
           "title": "Pas de courbe par joueur",
@@ -3579,7 +3599,15 @@
         },
         {
           "question": "Quels indicateurs le modèle calcule-t-il automatiquement ?",
-          "answer": "Tirs, buts et pourcentage de tir par joueur, le taux à sept mètres, les passes décisives, les pertes de balle et les exclusions, un ± par joueur ainsi que les arrêts, les buts encaissés et le pourcentage d’arrêts du gardien. Plus les totaux d’équipe par match et les valeurs cumulées de la saison."
+          "answer": "Tirs, buts et pourcentage de tir par joueur, le taux à sept mètres, les passes décisives, les pertes de balle et les exclusions, un ± par joueur ainsi que les arrêts, les buts encaissés et le pourcentage d’arrêts du gardien. Plus les totaux d’équipe par match et les valeurs cumulées de la saison. Plus la carte de tirs : tirs, buts et pourcentage par zone de tir, pour un match ou la saison."
+        },
+        {
+          "question": "Puis-je faire une carte de tirs avec le modèle ?",
+          "answer": "Oui. Si vous saisissez la zone de chaque tir dans la feuille de match, la feuille « Wurfbild » montre tirs, buts et pourcentage par zone – sous forme de terrain à zones colorées, de tableau et pour chaque joueur. En haut, vous choisissez un match ou laissez le champ vide pour toute la saison."
+        },
+        {
+          "question": "Le modèle convient-il pour l’analyse de match ?",
+          "answer": "Pour les chiffres, oui : résultat, pourcentages par joueur, valeurs du gardien, erreurs et carte de tirs par zone sont prêts après le match dans les feuilles « Auswertung » et « Wurfbild ». Ce qu’un tableur ne montre pas, c’est le déroulé du match dans le temps – quand une série est venue, quand le match a basculé. Pour cela, il faut la minute de chaque action ou une application qui l’enregistre."
         },
         {
           "question": "Qu’est-ce qui compte comme tir ?",
@@ -3810,7 +3838,7 @@
           "benchmark": "à lire comme une évolution sur la saison"
         }
       ],
-      "closing": "Les fourchettes bougent avec le niveau et la catégorie d’âge, c’est pourquoi votre propre valeur précédente est toujours une meilleure référence qu’un tableau. Si vous voulez seulement calculer vite un pourcentage, prenez le <calculator>calculateur de pourcentage de tir</calculator> – saisissez buts et tirs, lisez le pourcentage, sans inscription."
+      "closing": "Les fourchettes bougent avec le niveau et la catégorie d’âge, c’est pourquoi votre propre valeur précédente est toujours une meilleure référence qu’un tableau. Si vous voulez seulement calculer vite un pourcentage, prenez le <calculator>calculateur de pourcentage de tir</calculator> – saisissez buts et tirs, lisez le pourcentage, sans inscription. Et d’où viennent les tirs, aucun pourcentage ne le dit – seule une <shots>carte de tirs au handball</shots> le montre."
     },
     "ways": {
       "kicker": "Trois voies",
@@ -3827,9 +3855,9 @@
         {
           "name": "Modèle Excel",
           "effort": "Installer une fois",
-          "good": "Calcule les pourcentages tout seul, vous appartient, s’étend à volonté.",
+          "good": "Calcule seul les pourcentages et la carte de tirs par zone, vous appartient, s’étend à volonté.",
           "bad": "Inutilisable dans la salle, vous ressaisissez donc le soir. Pas de courbe par joueur, et l’adjoint a la mauvaise version.",
-          "linkLabel": "Télécharger le modèle Excel gratuit"
+          "linkLabel": "Télécharger le modèle Excel gratuit avec carte de tirs"
         },
         {
           "name": "Application de statistiques",
@@ -5280,6 +5308,10 @@
           {
             "question": "Y a-t-il des cartes de tirs pour les gardiennes ?",
             "answer": "Oui — sous forme de répartition des buts encaissés et des arrêts par zone de but. C'est la carte qui montre où une gardienne est forte et où elle ne l'est pas."
+          },
+          {
+            "question": "Puis-je faire une carte de tirs sans l’application ?",
+            "answer": "Oui, de façon grossière : notre modèle Excel gratuit de statistiques de handball contient une feuille « Wurfbild » qui compte tirs, buts et pourcentage par zone – aile, pivot, arrière, percée, contre-attaque et sept mètres, pour un match ou toute la saison. La position exacte sur le terrain, le côté gauche ou droit et la zone du but dépassent un tableur ; c’est ce que fait la carte de tirs de Statix."
           }
         ]
       },
@@ -6988,7 +7020,34 @@
       "ctaKicker": "Prochaine étape",
       "ctaTitle": "Essayez-le sur un vrai match",
       "ctaDescription": "La démo en direct est un Statix entièrement équipé avec de vraies données de match — sans compte, directement dans le navigateur. Ou vous créez votre équipe et saisissez votre premier match.",
-      "ctaLinkLabel": "Toutes les fonctions en un coup d'œil"
+      "ctaLinkLabel": "Toutes les fonctions en un coup d'œil",
+      "resourcesTitle": "Gratuit en plus – sans compte",
+      "resources": {
+        "excelTemplate": {
+          "title": "Modèle Excel avec carte de tirs",
+          "text": "Feuille de match, analyse et carte de tirs par zone – à télécharger sans inscription."
+        },
+        "statsGuide": {
+          "title": "Les statistiques de handball expliquées",
+          "text": "Quels indicateurs existent, comment ils se calculent et quels repères sont normaux."
+        },
+        "shotQuotaCalculator": {
+          "title": "Calculateur de pourcentage de tir",
+          "text": "Saisir buts et tirs, situer le pourcentage selon le poste."
+        },
+        "tacticsBoard": {
+          "title": "Tableau tactique de handball",
+          "text": "Placer systèmes et courses sur un terrain à l’échelle et les partager."
+        },
+        "xgGuide": {
+          "title": "Les expected goals au handball",
+          "text": "Ce que signifie le xG, comment il se calcule et quand il aide."
+        },
+        "recordingComparison": {
+          "title": "Papier, Excel ou application ?",
+          "text": "Les trois façons de tenir une statistique de handball, comparées honnêtement."
+        }
+      }
     },
     "taggingBench": {
       "kicker": "Comment naît une scène",
