@@ -6,6 +6,8 @@ interface HeroActionButtonBaseProps {
   children: ReactNode;
   variant?: 'primary' | 'secondary';
   icon?: ReactNode;
+  /** After the label — the primary action's forward arrow. */
+  trailing?: ReactNode;
 }
 
 type HeroActionButtonProps = HeroActionButtonBaseProps &
@@ -24,10 +26,11 @@ export default function HeroActionButton({
   className,
   variant = 'primary',
   icon,
+  trailing,
   ...props
 }: HeroActionButtonProps) {
   const classes = cn(
-    'group inline-flex h-13 w-full max-w-[320px] items-center justify-center gap-2 rounded-xl px-7 font-display text-[15px] font-bold tracking-tight transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 active:scale-[0.99] disabled:pointer-events-none disabled:opacity-60 sm:h-14 sm:w-auto sm:min-w-[240px]',
+    'group inline-flex h-13 w-full max-w-[320px] items-center whitespace-nowrap justify-center gap-2 rounded-xl px-7 font-display text-[15px] font-bold tracking-tight transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 active:scale-[0.99] disabled:pointer-events-none disabled:opacity-60 sm:h-14 sm:w-auto sm:min-w-[240px]',
     variant === 'primary'
       ? 'bg-primary text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] hover:-translate-y-0.5 hover:bg-[#ea580c] hover:shadow-[0_18px_30px_-14px_hsl(22_90%_45%/0.8)]'
       : 'border border-chalk/30 bg-chalk/5 text-chalk hover:-translate-y-0.5 hover:border-chalk/50 hover:bg-chalk/10',
@@ -38,7 +41,8 @@ export default function HeroActionButton({
     <>
       {icon ?? null}
       <span>{children}</span>
-      {variant === 'secondary' && !icon ? (
+      {trailing ?? null}
+      {variant === 'secondary' && !icon && !trailing ? (
         <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
       ) : null}
     </>

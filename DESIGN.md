@@ -94,6 +94,23 @@ logic (orange = us, blue = them) is a system rule, not a palette accident.
   board (flat frame + magnet/tape accent, thin chalk/ink border). **No**
   macOS traffic‑light chrome.
 
+## Hero devices
+
+The landing hero shows the product as two devices on the court — a tablet
+(game flow) and a phone (quota rings), real demo captures from the `geraete`
+group of `scripts/screenshots/capture.mjs`. Plain dark frames, no notch, one
+real offset shadow, a faint sheen on the glass; no coloured halo. They fly in
+once (tablet from the right at an angle, phone from below in front), float a
+few pixels and lean a couple of degrees toward a fine pointer; reduced motion
+shows the rest pose at once. The marker notes point at something IN the
+picture — the tablet note's arrow drops into the chart onto a marker circle
+round the turn of the game, never at the app's chrome. The same choreography
+is the `HeroDevices` composition in remotion-statix, with the same rest poses.
+
+The one urgency device on the page is the founder deadline
+(`founder-countdown.tsx`): a magnet with the days left, the dated line on the
+server, gone once the date has passed. No price figure in it.
+
 ## Ratgeber (Read surface)
 
 The guide pages (`/ratgeber` hub + `/ratgeber/[slug]` articles) are the world's

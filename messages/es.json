@@ -342,7 +342,7 @@
       "resources": "Recursos"
     },
     "skipToContent": "Ir al contenido",
-    "registerCta": "Regístrate ahora",
+    "registerCta": "Empieza gratis",
     "languageSwitcher": {
       "label": "Cambiar de idioma"
     },
@@ -1459,19 +1459,26 @@
   },
   "productPage": {
     "hero": {
-      "badge": "De un jugador de balonmano · Hecho en Alemania",
-      "headlineLead": "Registra estadísticas de balonmano",
-      "headlineHighlight": "en directo",
-      "headlineTail": "— un toque, desde el banquillo.",
-      "description": "Goles, lanzamientos, paradas, exclusiones: cada acción es un toque. Statix lo convierte solo en porcentajes de acierto, mapas de lanzamiento y estadísticas de jugador, mientras el partido sigue en marcha.",
-      "primaryCta": "Regístrate gratis",
+      "badge": "App de estadísticas de balonmano · de un jugador",
+      "headlineLead": "Un toque por acción.",
+      "headlineHighlight": "Estadísticas de balonmano",
+      "headlineTail": "que muestran dónde cambió tu partido.",
+      "description": "Registras goles, lanzamientos, paradas y exclusiones desde el banquillo: Statix dibuja el desarrollo del partido, calcula los porcentajes de acierto y de paradas y muestra quién marcó y quién no. Mientras el partido sigue en marcha.",
+      "primaryCta": "Empieza gratis",
       "secondaryCta": "Demo en directo, sin cuenta",
       "trust1": "Listo en minutos",
       "trust2": "Empezar es gratis, sin tarjeta",
       "trust3": "Funciona sin conexión en el pabellón",
-      "mockupAlt": "Estadísticas de balonmano en directo en la app Statix: registrar goles, lanzamientos y paradas en tiempo real",
-      "mockupLabel": "Statix · Registro en directo",
-      "demoAlt": "Demo en directo de Statix: estadísticas de partido y análisis en el navegador"
+      "demoAlt": "Demo en directo de Statix: estadísticas de partido y análisis en el navegador",
+      "tabletAlt": "Desarrollo de un partido de balonmano en Statix en una tableta: la diferencia de goles durante 60 minutos con fases de superioridad e inferioridad, la mayor ventaja y las rachas del rival",
+      "phoneAlt": "Estadísticas del partido en Statix en el móvil: porcentaje de acierto y de paradas como anillos, además de goles, lanzamientos, xG, asistencias y paradas",
+      "noteTablet": "Dónde cambió el partido",
+      "notePhone": "Porcentajes al instante"
+    },
+    "founderOffer": {
+      "titleDated": "Oferta fundador hasta el 31 de diciembre de 2026",
+      "titleCountdown": "{days, plural, one {Queda # día} other {Quedan # días}} de oferta fundador",
+      "text": "Regístrate ahora: el plan Trainer gratis hasta el 30 de junio de 2027 y después un precio de fundador permanente."
     },
     "stats": {
       "srTitle": "Las estadísticas de balonmano de un vistazo",
@@ -1666,9 +1673,9 @@
       "invalidEmail": "Introduce una dirección de correo válida."
     },
     "finalCta": {
-      "title": "Regístrate y prueba Statix tú mismo",
+      "title": "Haz que tu próximo partido sea el primero con datos reales.",
       "description": "Crea tu cuenta, añade a tu equipo y registra tu primer partido en directo, con estadísticas en vivo, mapas de lanzamiento y análisis con IA. En tu navegador y gratis para empezar.",
-      "primaryCta": "Regístrate gratis",
+      "primaryCta": "Empieza gratis",
       "note": "Funciona en el navegador: igual de bien en una tableta a pie de pista que en un portátil para el repaso.",
       "badge": "Statix está en marcha · empezar es gratis",
       "demoCta": "Demo en directo, sin cuenta",
