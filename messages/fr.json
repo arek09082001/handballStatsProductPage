@@ -342,7 +342,7 @@
       "resources": "Ressources"
     },
     "skipToContent": "Aller au contenu",
-    "registerCta": "S’inscrire",
+    "registerCta": "Commencer",
     "languageSwitcher": {
       "label": "Changer de langue"
     },
@@ -1459,19 +1459,26 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Par un handballeur · Conçu en Allemagne",
-      "headlineLead": "Saisissez les statistiques de handball",
-      "headlineHighlight": "en direct",
-      "headlineTail": "— un geste, depuis le banc.",
-      "description": "Buts, tirs, arrêts, exclusions : chaque action tient en un geste. Statix en tire automatiquement des pourcentages de réussite, des cartes de tirs et des statistiques individuelles, pendant que le match se joue encore.",
-      "primaryCta": "Inscription gratuite",
+      "badge": "App de statistiques de handball · par un handballeur",
+      "headlineLead": "Un geste par action.",
+      "headlineHighlight": "Des statistiques de handball",
+      "headlineTail": "qui montrent où votre match a basculé.",
+      "description": "Vous saisissez buts, tirs, arrêts et exclusions depuis le banc : Statix trace le déroulé du match, calcule les pourcentages de réussite et d’arrêts et montre qui a marqué et qui non. Pendant que le match se joue encore.",
+      "primaryCta": "Commencer gratuitement",
       "secondaryCta": "Démo en direct, sans compte",
       "trust1": "Opérationnel en quelques minutes",
       "trust2": "Démarrage gratuit, sans carte bancaire",
       "trust3": "Fonctionne hors ligne dans la salle",
-      "mockupAlt": "Statistiques de handball en direct dans l'application Statix – saisir buts, tirs et arrêts en temps réel",
-      "mockupLabel": "Statix · Saisie en direct",
-      "demoAlt": "Démo en direct de Statix – statistiques de match et analyses dans le navigateur"
+      "demoAlt": "Démo en direct de Statix – statistiques de match et analyses dans le navigateur",
+      "tabletAlt": "Déroulé d’un match de handball dans Statix sur tablette : l’écart au score sur 60 minutes avec les phases de supériorité et d’infériorité, la plus grande avance et les séries de l’adversaire",
+      "phoneAlt": "Statistiques du match dans Statix sur téléphone : pourcentage de réussite et d’arrêts en anneaux, avec buts, tirs, xG, passes décisives et arrêts",
+      "noteTablet": "Là où le match a basculé",
+      "notePhone": "Pourcentages immédiats"
+    },
+    "founderOffer": {
+      "titleDated": "Offre fondateur jusqu’au 31 décembre 2026",
+      "titleCountdown": "Offre fondateur : encore {days, plural, one {# jour} other {# jours}}",
+      "text": "Inscrivez-vous maintenant : le plan Trainer gratuit jusqu’au 30 juin 2027, puis un prix fondateur permanent."
     },
     "stats": {
       "srTitle": "Les statistiques de handball en un coup d’œil",
@@ -1666,9 +1673,9 @@
       "invalidEmail": "Saisissez une adresse e-mail valide."
     },
     "finalCta": {
-      "title": "Inscrivez-vous et essayez Statix par vous-même",
+      "title": "Faites de votre prochain match le premier avec de vrais chiffres.",
       "description": "Créez votre compte, ajoutez votre équipe et saisissez votre premier match en direct — statistiques en direct, cartes de tirs et analyse par IA. Directement dans votre navigateur, gratuit pour commencer.",
-      "primaryCta": "Inscription gratuite",
+      "primaryCta": "Commencer gratuitement",
       "note": "Fonctionne dans le navigateur — sur une tablette au bord du terrain comme sur un portable pour le débriefing.",
       "badge": "Statix est en ligne · démarrage gratuit",
       "demoCta": "Démo en direct, sans compte",

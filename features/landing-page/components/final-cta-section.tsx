@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { UserPlus } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { gsap } from '@/lib/gsap-config';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from './hero-action-button';
 import DemoPreview from './demo-preview';
+import FounderCountdown from './founder-countdown';
 import { BoardKicker, CourtDiagram, Grain, MarkerArrow } from './tactic';
 import { drawMarkers } from './tactic/draw';
 
@@ -75,10 +76,12 @@ export default function FinalCTASection() {
             />
             <HeroActionButton
               variant='primary'
-              icon={<UserPlus className='size-4' />}
               href={CLUB_CONFIG.website.appUrl}
               target='_blank'
               rel='noopener noreferrer'
+              trailing={
+                <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
+              }
               onClick={() => trackRegisterClick('final_cta')}>
               {t('primaryCta')}
             </HeroActionButton>
@@ -93,6 +96,12 @@ export default function FinalCTASection() {
           </div>
 
           <p className='mt-5 text-sm text-chalk/60'>{t('note')}</p>
+
+          {/* The deadline again at the last ask — whoever scrolled this far
+              is deciding now, and the founder terms are the reason to. */}
+          <div className='mt-7 flex justify-center lg:justify-start'>
+            <FounderCountdown tone='court' />
+          </div>
         </div>
 
         <div className='relative'>

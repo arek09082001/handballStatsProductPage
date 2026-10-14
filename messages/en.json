@@ -342,7 +342,7 @@
       "resources": "Resources"
     },
     "skipToContent": "Skip to content",
-    "registerCta": "Register now",
+    "registerCta": "Start for free",
     "languageSwitcher": {
       "label": "Switch language"
     },
@@ -1459,19 +1459,26 @@
   },
   "productPage": {
     "hero": {
-      "badge": "By a handball player – Made in Germany",
-      "headlineLead": "Record handball stats",
-      "headlineHighlight": "live",
-      "headlineTail": "– one tap, right from the bench.",
-      "description": "Goals, shots, saves, suspensions – every action is one tap. Statix turns it into shooting percentages, shot maps and player stats automatically, while the game is still running.",
-      "primaryCta": "Register for free",
+      "badge": "Handball stats app · built by a handball player",
+      "headlineLead": "One tap per action.",
+      "headlineHighlight": "Handball stats",
+      "headlineTail": "that show where your game turned.",
+      "description": "Tap goals, shots, saves and suspensions from the bench – Statix draws the flow of the game, works out shooting and save percentages and shows who scored and who didn't. While the game is still running.",
+      "primaryCta": "Start for free",
       "secondaryCta": "Live demo – no account",
       "trust1": "Ready to go in minutes",
       "trust2": "Free to start – no credit card",
       "trust3": "Works offline in the gym",
-      "mockupAlt": "Handball statistics live in the Statix app – recording goals, shots and saves in real time",
-      "mockupLabel": "Statix · Live recording",
-      "demoAlt": "Statix live demo – match statistics and analyses in the browser"
+      "demoAlt": "Statix live demo – match statistics and analyses in the browser",
+      "tabletAlt": "Game flow of a handball match in Statix on a tablet – the goal difference over 60 minutes with power-play and short-handed phases, the biggest lead and the opponent's runs",
+      "phoneAlt": "Game statistics in Statix on a phone – shooting and save percentage as rings, plus goals, shots, xG, assists and saves",
+      "noteTablet": "Where the game turned",
+      "notePhone": "Rates instantly"
+    },
+    "founderOffer": {
+      "titleDated": "Founder offer until 31 December 2026",
+      "titleCountdown": "{days, plural, one {# day} other {# days}} left on the founder offer",
+      "text": "Register now: the Trainer plan free until 30 June 2027, then a permanent founder price."
     },
     "stats": {
       "srTitle": "Handball statistics at a glance",
@@ -1666,9 +1673,9 @@
       "invalidEmail": "Please enter a valid email address."
     },
     "finalCta": {
-      "title": "Register now and try Statix for yourself",
+      "title": "Make your next game the first one with real numbers.",
       "description": "Create your account, add your team and track your first game live – with live stats, shot maps and AI analysis. Right in your browser, free to start.",
-      "primaryCta": "Register for free",
+      "primaryCta": "Start for free",
       "note": "Runs right in your browser – on a tablet at the sideline just as well as on a laptop for the debrief.",
       "badge": "Statix is live · free to start",
       "demoCta": "Live demo – no account",

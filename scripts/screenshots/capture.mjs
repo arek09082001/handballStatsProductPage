@@ -207,9 +207,26 @@ async function signIn(ctx, browser) {
   return state;
 }
 
+/**
+ * The demo greets every fresh session with a guided tour ("1 von 7 …
+ * Überspringen") and, on the recording screen, the help dialog behind it
+ * ("Verstanden"). Both sit over the very screen a shot wants and swallow the
+ * clicks `prepare` makes, so they are closed before anything else happens.
+ */
+async function dismissOverlays(page) {
+  for (const name of ['Überspringen', 'Verstanden']) {
+    const button = page.getByRole('button', { name, exact: true }).first();
+    if (await button.isVisible().catch(() => false)) {
+      await button.click({ timeout: 3000 }).catch(() => {});
+      await page.waitForTimeout(400);
+    }
+  }
+}
+
 /** Settle a page: fonts loaded, images decoded, entrance animations finished. */
 async function settle(page, ms = 2200) {
   await page.waitForLoadState('networkidle').catch(() => {});
+  await dismissOverlays(page);
   await page
     .evaluate(async () => {
       await document.fonts?.ready;
@@ -230,6 +247,8 @@ async function settle(page, ms = 2200) {
     })
     .catch(() => {});
   await page.waitForTimeout(ms);
+  // The tour mounts after a delay, so a second look once the page has settled.
+  await dismissOverlays(page);
 }
 
 /**
@@ -407,6 +426,24 @@ async function tapAria(page, name) {
   await hit.waitFor({ state: 'visible', timeout: 15000 });
   await hit.click();
   await page.waitForTimeout(2500);
+}
+
+/**
+ * The demo games stand at 60:00 with the clock stopped, so the recording
+ * header carries the hint "Die Uhr steht auf 60:00 — …" for whoever would tap
+ * on. It is advice to a coach mid-game, not part of the statistics a hero shot
+ * shows, and at phone width it takes three lines above them.
+ */
+async function hideClockHint(page) {
+  await page.evaluate(() => {
+    const hint = [...document.querySelectorAll('p, div, span')].find(
+      (el) =>
+        el.children.length === 0 &&
+        el.textContent.trim().startsWith('Die Uhr steht auf'),
+    );
+    hint?.remove();
+  });
+  await page.waitForTimeout(300);
 }
 
 /**
@@ -595,6 +632,34 @@ const SHOTS = [
       await scrollTo(page, 'Wendepunkt');
     },
     note: 'AI match report: turning points, error spread, player performance.',
+  },
+
+  // ── The landing page's hero devices ──────────────────────────────────────
+  // The hero shows what the tap TURNS INTO, not the tap itself: a tablet with
+  // the shape of a game (goal difference over the clock) and a phone with the
+  // quota rings — numbers that read as a picture once they are shrunk into a
+  // device frame. Both feed the device stage
+  // (`features/landing-page/components/hero-devices.tsx`) and the composition
+  // `HeroDevices` in the remotion-statix repo. A finished demo game:
+  //   GAME_ID=demo-game-f1 … capture --only geraete
+  {
+    group: 'geraete', file: 'hero-tablet-verlauf.png', ...TABLET,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tap(page, 'Statistik');
+      await hideClockHint(page);
+      await scrollTo(page, 'Spielverlauf');
+    },
+    note: 'The shape of a game: goal difference over the clock, with its key figures.',
+  },
+  {
+    group: 'geraete', file: 'hero-mobil-statistik.png', ...PHONE,
+    route: () => `/games/${ID.game}`,
+    prepare: async (page) => {
+      await tap(page, 'Statistik');
+      await hideClockHint(page);
+    },
+    note: 'Shot and save quota as rings, the game in tiles — on the phone.',
   },
 
   // ── Tournament, for /fuer-vereine and the tournament guide ───────────────
@@ -1075,6 +1140,12 @@ async function capture() {
       // the summary says exactly what is missing instead of silently shipping
       // a short set.
       console.log(`✗ ${shot.file} — ${err.message.split('\n')[0].slice(0, 90)}`);
+      if (DEBUG) {
+        const open = ctx.pages()[0];
+        await open
+          ?.screenshot({ path: path.join(EXPLORE_DIR, `failed-${shot.file}`) })
+          .catch(() => {});
+      }
       failed.push(shot.file);
     } finally {
       await ctx.close();

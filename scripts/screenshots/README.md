@@ -36,6 +36,25 @@ Woanders hin:
 STATIX_URL=http://localhost:3000 node scripts/screenshots/capture.mjs explore
 ```
 
+## Die Geräte im Hero (`--only geraete`)
+
+`hero-tablet-verlauf.png` (Tablet, Spielverlauf mit Kennzahlen) und
+`hero-mobil-statistik.png` (Handy, Quoten-Ringe) sind die beiden Bilder, die
+im Hero der Startseite als Tablet und Handy hereinfliegen — und dieselben
+Dateien in `public/screenshots/` von remotion-statix (`HeroDevices`). Gegen die
+öffentliche Demo, mit einem beendeten Spiel:
+
+```bash
+GAME_ID=demo-game-f1 node scripts/screenshots/capture.mjs capture --only geraete
+```
+
+Die Demo öffnet jede frische Sitzung mit einer Tour und dem Hilfedialog der
+Erfassung; die Pipeline schließt beide selbst (`dismissOverlays`). Den Hinweis
+„Die Uhr steht auf 60:00 …“ nimmt `hideClockHint` aus dem Bild — er ist ein
+Rat an einen Trainer mitten im Spiel, keine Statistik. Nach einer neuen
+Aufnahme den Markerkreis im Hero (`TurnMark` in `hero-devices.tsx`) prüfen:
+er steht in Anteilen des Bildes auf der Wende des Graphen.
+
 ## Die Vereins-Screenshots (`--only verein`)
 
 Die Gruppe `verein` (`verein-uebersicht.png`, `verein-mannschaften.png`,

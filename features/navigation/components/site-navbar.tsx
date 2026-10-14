@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowUpRight, Menu, UserPlus, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
@@ -54,7 +54,11 @@ export default function SiteNavbar() {
           className={cn(
             // No `overflow-hidden` here: the "Für Trainer" dropdown panel hangs
             // below the bar and would be clipped by it.
-            'relative isolate ml-auto flex h-auto w-auto items-center justify-end gap-2 overflow-visible border-0 bg-transparent px-0 shadow-none transition-all duration-500 ease-out sm:gap-3 sm:px-0 lg:mx-auto lg:h-16 lg:w-auto lg:max-w-7xl lg:justify-normal lg:rounded-[28px] lg:border lg:px-6 xl:px-8',
+            // On a phone the bar is a full pill too — logo, the register
+            // action and the menu. It used to be the menu button alone,
+            // floating at the right edge: no brand on the first screen and
+            // the primary conversion two taps deep.
+            'relative isolate flex h-14 w-full items-center gap-2 overflow-visible rounded-[22px] border border-slate-200/90 bg-white/95 pl-2.5 pr-1.5 shadow-[0_14px_36px_-24px_rgba(15,23,42,0.55)] transition-all duration-500 ease-out supports-[backdrop-filter]:bg-white/90 supports-[backdrop-filter]:backdrop-blur-[2px] sm:gap-3 lg:mx-auto lg:h-16 lg:w-auto lg:max-w-7xl lg:justify-normal lg:rounded-[28px] lg:pl-6 lg:pr-6 xl:px-8',
             'lg:scale-100 lg:border-slate-200/85 lg:bg-white lg:shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] lg:backdrop-blur-none lg:supports-[backdrop-filter]:bg-white',
             isNavInFocus
               ? 'lg:bg-white/94 lg:shadow-[0_18px_45px_-28px_rgba(15,23,42,0.45)] lg:backdrop-blur-[2px] lg:supports-[backdrop-filter]:bg-white/78'
@@ -79,12 +83,12 @@ export default function SiteNavbar() {
             )}
           />
 
-          <div className='relative z-10 hidden min-w-0 flex-1 lg:block lg:w-40 lg:flex-none xl:w-60'>
+          <div className='relative z-10 min-w-0 flex-1 lg:w-40 lg:flex-none xl:w-60'>
             <button
               type='button'
               onClick={handleBrandClick}
-              className='flex max-w-[calc(100vw-7.5rem)] min-w-0 items-center gap-3 text-left transition-opacity hover:opacity-85'>
-              <span className='relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl'>
+              className='flex min-w-0 items-center gap-2 text-left transition-opacity hover:opacity-85 lg:gap-3'>
+              <span className='relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-2xl lg:size-11'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
                   alt={CLUB_CONFIG.display.logoAlt}
@@ -97,7 +101,9 @@ export default function SiteNavbar() {
               </span>
 
               <span className='flex min-w-0 flex-col items-start leading-none'>
-                <span className='relative h-7 w-28 sm:w-32'>
+                {/* Below 360px the icon carries the brand alone, so the
+                 * register action keeps its full label. */}
+                <span className='relative hidden h-6 w-24 min-[360px]:block lg:h-7 lg:w-32'>
                   <Image
                     src={CLUB_CONFIG.branding.logoName.path}
                     alt={CLUB_CONFIG.display.logoAlt}
@@ -219,26 +225,32 @@ export default function SiteNavbar() {
               rel='noopener noreferrer'
               title={t('registerCta')}
               onClick={() => trackRegisterClick('navbar')}
-              className='inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#f97316] px-5 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] hover:shadow-[0_8px_22px_-4px_rgba(249,115,22,0.5)] active:translate-y-0 active:scale-95'>
-              <UserPlus className='size-3.5 shrink-0' />
+              className='group inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-primary px-5 font-display text-sm font-bold tracking-tight text-white shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] active:translate-y-0 active:scale-95'>
               {t('registerCta')}
+              <ArrowRight className='size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5' />
             </Link>
           </div>
 
-          {/* On a phone the bar is only the menu button, so the magnet sits
-           * right beside it — the one thing a visitor sees before opening it. */}
-          <div className='lg:hidden'>
-            <NavSpotlight variant='button' active={spotlightActive} />
-          </div>
+          {/* The phone's register action, beside the menu button. The
+           * spotlight magnet that used to sit here moved into the menu (its
+           * card opens the panel) — two orange round things side by side read
+           * as two calls to action, and this one is the conversion. */}
+          <Link
+            href={CLUB_CONFIG.website.appUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            title={t('registerCta')}
+            onClick={() => trackRegisterClick('navbar')}
+            className='relative z-10 inline-flex h-10 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-primary px-3.5 font-display text-[13px] font-bold tracking-tight text-white shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-transform active:scale-95 sm:px-4 sm:text-sm lg:hidden'>
+            {t('registerCta')}
+            <ArrowRight className='size-3.5 shrink-0' />
+          </Link>
 
           <button
             type='button'
             onClick={toggleMenu}
             className={cn(
-              'relative z-10 ml-auto inline-flex size-11 shrink-0 items-center justify-center rounded-full border text-slate-700 transition-colors duration-300 hover:bg-slate-50 lg:hidden',
-              isNavInFocus
-                ? 'border-slate-200 bg-white'
-                : 'border-white/50 bg-white/72 supports-[backdrop-filter]:bg-white/56',
+              'relative z-10 inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition-colors duration-300 hover:bg-slate-50 lg:hidden',
             )}
             aria-label={isOpen ? tCommon('closeMenu') : tCommon('openMenu')}
             aria-expanded={isOpen}>
@@ -328,9 +340,9 @@ export default function SiteNavbar() {
                     trackRegisterClick('navbar');
                     closeMenu();
                   }}
-                  className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#f97316] px-4 py-3 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
-                  <UserPlus className='size-4 shrink-0' />
+                  className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 font-display text-sm font-bold tracking-tight text-white shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
                   {t('registerCta')}
+                  <ArrowRight className='size-4 shrink-0' />
                 </Link>
 
                 <NavSpotlight

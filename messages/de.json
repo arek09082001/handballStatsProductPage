@@ -342,7 +342,7 @@
       "resources": "Ressourcen"
     },
     "skipToContent": "Zum Inhalt springen",
-    "registerCta": "Jetzt registrieren",
+    "registerCta": "Kostenlos starten",
     "languageSwitcher": {
       "label": "Sprache wechseln"
     },
@@ -1459,19 +1459,26 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Von einem Handballer – Made in Germany",
-      "headlineLead": "Handball-Statistiken",
-      "headlineHighlight": "live erfassen",
-      "headlineTail": "– mit einem Tap, direkt von der Bank.",
-      "description": "Tore, Würfe, Paraden, Zeitstrafen – jede Aktion ein Tap. Statix rechnet daraus automatisch Wurfquoten, Wurfbilder und Spielerstatistiken, schon während das Spiel läuft.",
-      "primaryCta": "Kostenlos registrieren",
+      "badge": "Handball-Statistik-App · von einem Handballer",
+      "headlineLead": "Ein Tap pro Aktion.",
+      "headlineHighlight": "Handball-Statistiken,",
+      "headlineTail": "die zeigen, wo dein Spiel kippt.",
+      "description": "Du tippst Tore, Würfe, Paraden und Zeitstrafen von der Bank – Statix zeichnet daraus den Spielverlauf, rechnet Wurf- und Paradenquote und zeigt, wer getroffen hat und wer nicht. Noch während das Spiel läuft.",
+      "primaryCta": "Kostenlos starten",
       "secondaryCta": "Live-Demo – ohne Account",
       "trust1": "In wenigen Minuten startklar",
       "trust2": "Kostenlos starten – keine Kreditkarte",
       "trust3": "Offline in der Halle",
-      "mockupAlt": "Handball-Statistiken live in der Statix App – Tore, Würfe und Paraden in Echtzeit erfassen",
-      "mockupLabel": "Statix · Live-Erfassung",
-      "demoAlt": "Statix Live-Demo – Spielstatistiken und Auswertungen im Browser"
+      "demoAlt": "Statix Live-Demo – Spielstatistiken und Auswertungen im Browser",
+      "tabletAlt": "Spielverlauf eines Handballspiels in Statix auf dem Tablet – die Tordifferenz über 60 Minuten mit Über- und Unterzahlphasen, höchster Führung und Läufen des Gegners",
+      "phoneAlt": "Spielstatistik in Statix auf dem Handy – Wurfquote und Paradenquote als Ringe, dazu Tore, Würfe, xG, Assists und Paraden",
+      "noteTablet": "Wo das Spiel gekippt ist",
+      "notePhone": "Quoten sofort"
+    },
+    "founderOffer": {
+      "titleDated": "Gründerangebot bis 31. Dezember 2026",
+      "titleCountdown": "{days, plural, one {Noch # Tag} other {Noch # Tage}} Gründerangebot",
+      "text": "Jetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis."
     },
     "stats": {
       "srTitle": "Handball-Statistiken auf einen Blick",
@@ -1666,9 +1673,9 @@
       "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein."
     },
     "finalCta": {
-      "title": "Jetzt registrieren und Statix selbst ausprobieren",
+      "title": "Dein nächstes Spiel kann das erste mit echten Zahlen sein.",
       "description": "Konto anlegen, Team eintragen, erstes Spiel live erfassen – Live-Statistiken, Wurfbilder und KI-Analyse inklusive. Direkt im Browser, kostenlos starten.",
-      "primaryCta": "Kostenlos registrieren",
+      "primaryCta": "Kostenlos starten",
       "note": "Läuft direkt im Browser – auf dem Tablet am Spielfeldrand genauso wie am Laptop zur Nachbereitung.",
       "badge": "Statix ist live · kostenlos starten",
       "demoCta": "Live-Demo – ohne Account",

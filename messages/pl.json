@@ -342,7 +342,7 @@
       "resources": "Materiały"
     },
     "skipToContent": "Przejdź do treści",
-    "registerCta": "Zarejestruj się",
+    "registerCta": "Zacznij za darmo",
     "languageSwitcher": {
       "label": "Zmień język"
     },
@@ -1459,19 +1459,26 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Od zawodnika piłki ręcznej · Made in Germany",
-      "headlineLead": "Zapisuj statystyki piłki ręcznej",
-      "headlineHighlight": "na żywo",
-      "headlineTail": "— jedno dotknięcie, prosto z ławki.",
-      "description": "Bramki, rzuty, obrony, wykluczenia — każda akcja to jedno dotknięcie. Statix sam zamienia to w skuteczność rzutów, mapy rzutów i statystyki zawodników, jeszcze w trakcie meczu.",
-      "primaryCta": "Zarejestruj się za darmo",
+      "badge": "Aplikacja statystyk piłki ręcznej · od zawodnika",
+      "headlineLead": "Jedno dotknięcie na akcję.",
+      "headlineHighlight": "Statystyki piłki ręcznej,",
+      "headlineTail": "które pokazują, gdzie mecz się odwrócił.",
+      "description": "Zapisujesz z ławki bramki, rzuty, obrony i wykluczenia — Statix rysuje przebieg meczu, liczy skuteczność rzutów i obron i pokazuje, kto trafiał, a kto nie. Jeszcze w trakcie meczu.",
+      "primaryCta": "Zacznij za darmo",
       "secondaryCta": "Demo na żywo, bez konta",
       "trust1": "Gotowe w kilka minut",
       "trust2": "Start za darmo, bez karty",
       "trust3": "Działa offline w hali",
-      "mockupAlt": "Statystyki piłki ręcznej na żywo w aplikacji Statix – zapisywanie bramek, rzutów i obron w czasie rzeczywistym",
-      "mockupLabel": "Statix · Zapis na żywo",
-      "demoAlt": "Demo Statix na żywo – statystyki meczowe i analizy w przeglądarce"
+      "demoAlt": "Demo Statix na żywo – statystyki meczowe i analizy w przeglądarce",
+      "tabletAlt": "Przebieg meczu piłki ręcznej w Statix na tablecie – różnica bramek przez 60 minut z fazami przewagi i osłabienia, najwyższym prowadzeniem i seriami rywala",
+      "phoneAlt": "Statystyki meczu w Statix na telefonie – skuteczność rzutów i obron jako pierścienie, do tego bramki, rzuty, xG, asysty i obrony",
+      "noteTablet": "Gdzie mecz się odwrócił",
+      "notePhone": "Skuteczność od razu"
+    },
+    "founderOffer": {
+      "titleDated": "Oferta założycielska do 31 grudnia 2026",
+      "titleCountdown": "{days, plural, one {Został # dzień} few {Zostały # dni} many {Zostało # dni} other {Zostało # dni}} oferty założycielskiej",
+      "text": "Zarejestruj się teraz: plan Trainer za darmo do 30 czerwca 2027, potem stała cena założycielska."
     },
     "stats": {
       "srTitle": "Statystyki piłki ręcznej w skrócie",
@@ -1666,9 +1673,9 @@
       "invalidEmail": "Podaj prawidłowy adres e-mail."
     },
     "finalCta": {
-      "title": "Zarejestruj się i przekonaj się sam",
+      "title": "Niech następny mecz będzie pierwszym z prawdziwymi liczbami.",
       "description": "Załóż konto, dodaj drużynę i zapisz pierwszy mecz na żywo — ze statystykami na bieżąco, mapami rzutów i analizą AI. Wprost w przeglądarce, start za darmo.",
-      "primaryCta": "Zarejestruj się za darmo",
+      "primaryCta": "Zacznij za darmo",
       "note": "Działa w przeglądarce — na tablecie przy linii bocznej tak samo dobrze jak na laptopie przy omówieniu.",
       "badge": "Statix działa · start za darmo",
       "demoCta": "Demo na żywo, bez konta",
