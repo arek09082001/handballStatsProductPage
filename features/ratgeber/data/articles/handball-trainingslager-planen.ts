@@ -3,7 +3,7 @@ import type { Article } from '../../types';
 export const handballTrainingslagerPlanen: Article = {
   slug: 'handball-trainingslager-planen',
   title: 'Trainingslager planen: Tagesablauf, Belastung, Ertrag',
-  metaTitle: 'Handball-Trainingslager planen: Ablauf und Inhalte',
+  metaTitle: 'Handball-Trainingslager planen: Tagesablauf & Inhalte',
   metaDescription:
     'Handball-Trainingslager planen: Tagesablauf als Zeitleiste, welche Inhalte sich lohnen und wie du Belastung und Ertrag im Blick behältst. Mit Tagesablaufplan.',
   keywords: [
@@ -179,6 +179,15 @@ Und die Frage, die du dir vor der Planung stellen solltest: **Was soll nach dem 
       ],
       commonError:
         'Der Abend wird mit Videoanalyse gefüllt. Nach zwei Einheiten ist die Aufnahmefähigkeit weg, und der wertvollste Teil des Camps fällt aus.',
+    },
+    {
+      after: 'Was du hinterher auswertest',
+      kind: 'appBridge',
+      title: 'Wer war wann da – ohne Liste',
+      text:
+        'Mit den Terminen in Statix sagen Spielerinnen selbst zu oder ab, auf Wunsch mit Grund. Die Trainingsbeteiligung je Person und Zeitraum steht danach fertig da – vor, während und nach dem Camp.',
+      feature: 'termine-und-teilnahme',
+      featureLabel: 'Termine & Trainingsbeteiligung ansehen',
     },
   ],
   faqs: [

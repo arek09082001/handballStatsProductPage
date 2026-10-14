@@ -3,9 +3,9 @@ import type { Article } from '../../types';
 export const handballTempogegenstoss: Article = {
   slug: 'handball-tempogegenstoss',
   title: 'Tempogegenstoß: die drei Wellen und wie du sie einführst',
-  metaTitle: 'Tempogegenstoß im Handball: Wellen, Aufgaben, Aufbau',
+  metaTitle: 'Tempogegenstoß trainieren: die 3 Wellen im Handball',
   metaDescription:
-    'Tempogegenstoß im Handball: die drei Wellen erklärt, Aufgaben je Position, das Umschaltprinzip und der Aufbau über drei Trainingseinheiten. Mit Richtwerten.',
+    'Tempogegenstoß im Handball: die drei Wellen, wer wohin läuft, warum Umschalten eine Entscheidung ist und der Aufbau in drei Einheiten – mit Richtwerten.',
   keywords: [
     'tempogegenstoß handball',
     'gegenstoß handball',
@@ -110,6 +110,15 @@ Die einfachste Auswertung: Tore nach Gegenstoß minus Gegentore nach eigenem Bal
         ['Gegentore nach eigenem Ballverlust', '3–6 je Spiel', 'über 8: Absicherung fehlt'],
       ],
       note: 'Erfahrungswerte aus dem Amateurbereich, keine erhobene Statistik. Ab acht eigenen erfassten Spielen ist euer Durchschnitt die bessere Referenz.',
+    },
+    {
+      after: 'Kennzahlen zur Kontrolle',
+      kind: 'appBridge',
+      title: 'Tempotore und Tempoanteil zählen sich selbst',
+      text:
+        'Wer in Statix beim Wurf die Wurfzone mit antippt, hat nach jedem Spiel Tempotore, Tempowürfe und ihren Anteil an allen Toren fertig – je Spielerin und über die Saison, ohne Strichliste am Rand.',
+      feature: 'live-erfassung',
+      featureLabel: 'Live-Erfassung ansehen',
     },
   ],
   faqs: [

@@ -1510,17 +1510,20 @@
         {
           "badge": "Registro en directo",
           "title": "Cada acción con un solo toque",
-          "description": "Toca directamente sobre la pista: gol, gol de contraataque, robo, blocaje, 7 metros, exclusión o lanzamiento fallado. Banquillo, alineación y marcador siempre a la vista, sin apartar la mirada del partido."
+          "description": "Toca directamente sobre la pista: gol, gol de contraataque, robo, blocaje, 7 metros, exclusión o lanzamiento fallado. Banquillo, alineación y marcador siempre a la vista, sin apartar la mirada del partido.",
+          "linkLabel": "El registro en directo en detalle"
         },
         {
           "badge": "Calculado al instante",
           "title": "Estadísticas de jugador en tiempo real",
-          "description": "Goles, lanzamientos, porcentaje, asistencias, robos, blocajes y disciplina: se calculan solos para cada jugador mientras el partido sigue en marcha."
+          "description": "Goles, lanzamientos, porcentaje, asistencias, robos, blocajes y disciplina: se calculan solos para cada jugador mientras el partido sigue en marcha.",
+          "linkLabel": "Todas las estadísticas de balonmano explicadas"
         },
         {
           "badge": "Mapas de lanzamiento y mapas de calor",
           "title": "Lanzamientos y goles sobre la pista",
-          "description": "Visualiza cada lanzamiento y cada gol sobre la pista. Detecta mapas de calor, zonas fuertes y los patrones que deciden los partidos, por jugador o de todo el equipo."
+          "description": "Visualiza cada lanzamiento y cada gol sobre la pista. Detecta mapas de calor, zonas fuertes y los patrones que deciden los partidos, por jugador o de todo el equipo.",
+          "linkLabel": "Más sobre mapas de tiro en balonmano"
         }
       ]
     },
@@ -1573,7 +1576,8 @@
       "founderKicker": "Quién está detrás",
       "founderNote": "Statix nace de la práctica real: lo construye Arkadiusz Weiss, jugador de balonmano, en Alemania. Lo que falta en el banquillo se convierte en una función; lo que se comenta en el pabellón entra directo en el producto.",
       "founderLinkLabel": "Cómo se hace Statix",
-      "founderLinkTitle": "Así nace Statix: una mirada al desarrollo"
+      "founderLinkTitle": "Así nace Statix: una mirada al desarrollo",
+      "templateLink": "¿Aún no estás listo para la app? La <template>plantilla de Excel gratuita para estadísticas de balonmano con mapa de tiro</template> ya calcula sola porcentajes y zonas de tiro."
     },
     "testimonials": {
       "kicker": "Dicen los entrenadores",
@@ -3359,7 +3363,7 @@
           "bad": "Necesitas un móvil o una tableta y una cuenta. Para los análisis con IA y los informes compartidos rigen cupos diarios."
         }
       ],
-      "closing": "Si quieres seguir con la hoja de cálculo, usa una que ya calcule: nuestra <template>plantilla de Excel gratuita para estadísticas de balonmano</template> incluye plantilla, acta de partido, análisis y hoja de temporada con fórmulas ya hechas, y se descarga sin registro. Para un porcentaje suelto basta la <calculator>calculadora de efectividad de tiro</calculator>, y en la guía se explica cómo <guide>llevar bien una estadística de balonmano</guide>."
+      "closing": "Si quieres seguir con la hoja de cálculo, usa una que ya calcule: nuestra <template>plantilla de Excel gratuita para estadísticas de balonmano</template> incluye plantilla, acta de partido, análisis, mapa de tiro y hoja de temporada con fórmulas ya hechas, y se descarga sin registro. Para un porcentaje suelto basta la <calculator>calculadora de efectividad de tiro</calculator>, y en la guía se explica cómo <guide>llevar bien una estadística de balonmano</guide>."
     },
     "faq": {
       "kicker": "Preguntas frecuentes",
@@ -3405,14 +3409,18 @@
       "titleLead": "Plantilla de Excel para",
       "titleHighlight": "estadísticas de balonmano",
       "titleTail": "gratis",
-      "lede": "Cinco hojas, fórmulas ya hechas y encabezados de columna en alemán: Start (inicio), Kader (plantilla), Spielprotokoll (acta del partido), Auswertung (análisis) y Saison (temporada). La hoja de inicio explica en cuatro pasos qué va dónde; la efectividad de tiro, el porcentaje de siete metros y el de paradas se calculan solos. Sin registro y sin dirección de correo.",
+      "lede": "Seis hojas, fórmulas ya hechas y encabezados de columna en alemán: Start (inicio), Kader (plantilla), Spielprotokoll (acta del partido), Auswertung (análisis), Wurfbild (mapa de tiro) y Saison (temporada). La hoja de inicio explica en cuatro pasos qué va dónde; la efectividad de tiro, el porcentaje de siete metros, el de paradas y el mapa de tiro por zona se calculan solos. Sin registro y sin dirección de correo.",
       "squadSlots": "{count} plazas de plantilla",
       "actionRows": "{count} filas de acciones",
       "games": "{count} partidos por temporada",
       "printReady": "listo para imprimir",
       "cardTitle": "Descargar la plantilla",
       "downloadCta": "Descargar la plantilla de Excel gratis",
-      "downloadNote": "Descarga inmediata. Sin registro y sin boletín obligatorio."
+      "downloadNote": "Descarga inmediata. Sin registro y sin boletín obligatorio.",
+      "appTitle": "¿Prefieres no pasar datos a mano?",
+      "appText": "La misma estadística con un toque en el móvil, con <shots>mapa de tiro según la posición real</shots>, lista al pitido final.",
+      "appCta": "Empieza gratis",
+      "appDemo": "Ver la demo en directo"
     },
     "optin": {
       "title": "Opcional: novedades por correo",
@@ -3432,7 +3440,7 @@
       "missingConsent": "Para el boletín necesito las dos casillas. La plantilla la consigues igualmente sin ellas."
     },
     "metrics": {
-      "kicker": "Cinco hojas",
+      "kicker": "Seis hojas",
       "title": "Qué recoge la plantilla",
       "description": "Nada de esto tienes que montarlo tú: las fórmulas ya están dentro y calculan en cuanto escribes la primera fila.",
       "groups": [
@@ -3483,6 +3491,18 @@
             "± (goles incl. 7 m menos tiros fallados menos errores técnicos)",
             "Paradas, goles encajados y porcentaje de paradas del portero",
             "Fila de equipo con todas las sumas y porcentajes"
+          ]
+        },
+        {
+          "sheet": "Wurfbild (mapa de tiro)",
+          "description": "Dónde marca tu equipo y dónde no. La hoja cuenta cada tiro con zona del acta del partido, como pista con zonas de colores, como tabla y por jugador. Arriba eliges partido y dorsal; vacío significa toda la temporada o todo el equipo.",
+          "metrics": [
+            "Tiros, goles y porcentaje por zona de tiro",
+            "Pista con zonas de colores: rojo flojo, verde fuerte",
+            "Peso de cada zona sobre el total de tiros",
+            "Los tiros sin zona se cuentan aparte",
+            "Goles/tiros y porcentaje por jugador y zona",
+            "Un partido o toda la temporada"
           ]
         },
         {
@@ -3541,8 +3561,8 @@
           "text": "Quien transcribe la hoja por la noche hace el trabajo dos veces. Y cada transcripción genera errores: un tiro fallado que se pierde al copiar sube la efectividad y acabas dirigiendo el entrenamiento con un número que nunca existió."
         },
         {
-          "title": "Sin mapa de tiro",
-          "text": "Una tabla te dice que el 40 por ciento de los tiros de primera línea entraron. No te dice que todos los fallos vinieron de la misma esquina. Dónde se tiró solo se ve sobre una pista, no en una celda."
+          "title": "Solo un mapa de tiro aproximado",
+          "text": "La plantilla cuenta los tiros por zona: seis zonas, sin lado izquierdo ni derecho y sin esquina de la portería. Que todos los fallos llegaran desde el lateral derecho o fueran al palo corto solo se ve en una pista con la posición real de tiro y la zona de la portería, no en una celda."
         },
         {
           "title": "Sin evolución por jugador",
@@ -3579,7 +3599,15 @@
         },
         {
           "question": "¿Qué indicadores calcula la plantilla automáticamente?",
-          "answer": "Tiros, goles y efectividad por jugador, el porcentaje de siete metros, asistencias, errores técnicos y exclusiones, un ± por jugador y también paradas, goles encajados y porcentaje de paradas del portero. Además, sumas de equipo por partido y valores acumulados de temporada."
+          "answer": "Tiros, goles y efectividad por jugador, el porcentaje de siete metros, asistencias, errores técnicos y exclusiones, un ± por jugador y también paradas, goles encajados y porcentaje de paradas del portero. Además, sumas de equipo por partido y valores acumulados de temporada. Además, el mapa de tiro: tiros, goles y porcentaje por zona de tiro, para un partido o la temporada."
+        },
+        {
+          "question": "¿Puedo hacer un mapa de tiro con la plantilla?",
+          "answer": "Sí. Si en el acta del partido anotas la zona de cada tiro, la hoja «Wurfbild» muestra tiros, goles y porcentaje por zona: como pista con zonas de colores, como tabla y para cada jugador. Arriba eliges un partido o dejas el campo vacío para toda la temporada."
+        },
+        {
+          "question": "¿Sirve la plantilla para el análisis de partidos?",
+          "answer": "Para los números, sí: resultado, porcentajes por jugador, valores del portero, errores y el mapa de tiro por zona quedan listos tras el partido en las hojas «Auswertung» y «Wurfbild». Lo que una hoja de cálculo no puede mostrar es el desarrollo del partido en el tiempo: cuándo llegó una racha, cuándo cambió. Para eso necesitas el minuto de cada acción o una app que lo registre."
         },
         {
           "question": "¿Qué cuenta como tiro?",
@@ -3810,7 +3838,7 @@
           "benchmark": "leerla como evolución a lo largo de la temporada"
         }
       ],
-      "closing": "Los rangos se desplazan según la categoría y la edad, por eso el propio valor anterior siempre es mejor referencia que una tabla. Si solo quieres calcular rápido un porcentaje, usa la <calculator>calculadora de efectividad de tiro</calculator>: introduces goles y tiros, lees el porcentaje, sin registro."
+      "closing": "Los rangos se desplazan según la categoría y la edad, por eso el propio valor anterior siempre es mejor referencia que una tabla. Si solo quieres calcular rápido un porcentaje, usa la <calculator>calculadora de efectividad de tiro</calculator>: introduces goles y tiros, lees el porcentaje, sin registro. Y de dónde vienen los tiros no lo dice ningún porcentaje: eso solo lo muestra un <shots>mapa de tiro de balonmano</shots>."
     },
     "ways": {
       "kicker": "Tres caminos",
@@ -3827,9 +3855,9 @@
         {
           "name": "Plantilla de Excel",
           "effort": "Configurar una vez",
-          "good": "Calcula sola los porcentajes, es tuya y se puede ampliar a voluntad.",
+          "good": "Calcula sola los porcentajes y el mapa de tiro por zona, es tuya y se puede ampliar a voluntad.",
           "bad": "Inmanejable en el pabellón, así que la transcribes por la noche. Sin evolución por jugador, y el segundo entrenador tiene la versión equivocada.",
-          "linkLabel": "Descargar la plantilla de Excel gratuita"
+          "linkLabel": "Descargar la plantilla de Excel gratuita con mapa de tiro"
         },
         {
           "name": "App de estadísticas",
@@ -5280,6 +5308,10 @@
           {
             "question": "¿Hay mapas de tiro para porteras?",
             "answer": "Sí, como reparto de goles encajados y paradas por zonas de portería. Es el mapa que muestra dónde una portera es fuerte y dónde no."
+          },
+          {
+            "question": "¿Puedo hacer un mapa de tiro sin la app?",
+            "answer": "Sí, de forma aproximada: nuestra plantilla de Excel gratuita para estadísticas de balonmano tiene una hoja «Wurfbild» que cuenta tiros, goles y porcentaje por zona (extremo, pivote, primera línea, penetración, contraataque y siete metros), para un partido o toda la temporada. La posición exacta en la pista, el lado izquierdo o derecho y la zona de la portería quedan fuera de una hoja de cálculo; eso lo hace el mapa de tiro de Statix."
           }
         ]
       },
@@ -6988,7 +7020,34 @@
       "ctaKicker": "Siguiente paso",
       "ctaTitle": "Pruébalo en un partido de verdad",
       "ctaDescription": "La demo en directo es un Statix completo con datos reales de partido, sin cuenta y directamente en el navegador. O creas tu equipo y registras tu primer partido.",
-      "ctaLinkLabel": "Todas las funciones de un vistazo"
+      "ctaLinkLabel": "Todas las funciones de un vistazo",
+      "resourcesTitle": "Gratis, sin cuenta",
+      "resources": {
+        "excelTemplate": {
+          "title": "Plantilla de Excel con mapa de tiro",
+          "text": "Acta del partido, análisis y mapa de tiro por zona, para descargar sin registro."
+        },
+        "statsGuide": {
+          "title": "Estadísticas de balonmano explicadas",
+          "text": "Qué indicadores existen, cómo se calculan y qué valores de referencia son normales."
+        },
+        "shotQuotaCalculator": {
+          "title": "Calculadora de efectividad de tiro",
+          "text": "Introduce goles y tiros y sitúa el porcentaje según la posición."
+        },
+        "tacticsBoard": {
+          "title": "Pizarra táctica de balonmano",
+          "text": "Coloca sistemas y desplazamientos en una pista a escala y compártelos."
+        },
+        "xgGuide": {
+          "title": "Goles esperados en balonmano",
+          "text": "Qué significa xG, cómo se calcula y cuándo ayuda."
+        },
+        "recordingComparison": {
+          "title": "¿Papel, Excel o app?",
+          "text": "Las tres formas de llevar una estadística de balonmano, comparadas con honestidad."
+        }
+      }
     },
     "taggingBench": {
       "kicker": "Cómo nace una escena",

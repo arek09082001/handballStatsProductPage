@@ -1510,17 +1510,20 @@
         {
           "badge": "Live erfassen",
           "title": "Jede Aktion mit einem Tap",
-          "description": "Tippe direkt auf das Spielfeld: Tor, Tempo-Gegenstoß, Ballgewinn, Block, 7-Meter, Zeitstrafe oder Fehlwurf. Bank, Aufstellung und Spielstand immer im Blick – ohne den Blick vom Spiel zu nehmen."
+          "description": "Tippe direkt auf das Spielfeld: Tor, Tempo-Gegenstoß, Ballgewinn, Block, 7-Meter, Zeitstrafe oder Fehlwurf. Bank, Aufstellung und Spielstand immer im Blick – ohne den Blick vom Spiel zu nehmen.",
+          "linkLabel": "Live-Erfassung im Detail"
         },
         {
           "badge": "Sofort ausgewertet",
           "title": "Spielerstatistiken in Echtzeit",
-          "description": "Tore, Würfe, Quote, Assists, Ballgewinne, Blocks und Disziplin – für jeden Spieler automatisch berechnet, schon während das Spiel läuft."
+          "description": "Tore, Würfe, Quote, Assists, Ballgewinne, Blocks und Disziplin – für jeden Spieler automatisch berechnet, schon während das Spiel läuft.",
+          "linkLabel": "Alle Handball-Statistiken erklärt"
         },
         {
           "badge": "Wurfbilder & Heatmaps",
           "title": "Würfe & Tore auf dem Spielfeld",
-          "description": "Visualisiere jeden Wurf und jedes Tor direkt auf dem Feld. Erkenne Heatmaps, starke Zonen und Muster, die Spiele entscheiden – pro Spieler oder fürs ganze Team."
+          "description": "Visualisiere jeden Wurf und jedes Tor direkt auf dem Feld. Erkenne Heatmaps, starke Zonen und Muster, die Spiele entscheiden – pro Spieler oder fürs ganze Team.",
+          "linkLabel": "Mehr zu Wurfbildern im Handball"
         }
       ]
     },
@@ -1573,7 +1576,8 @@
       "founderKicker": "Wer dahintersteckt",
       "founderNote": "Statix entsteht aus echter Trainerpraxis: gebaut von Arkadiusz Weiss, selbst Handballer, in Deutschland. Was an der Bank fehlt, wird zur Funktion – Feedback aus der Halle geht direkt ins Produkt.",
       "founderLinkLabel": "So entsteht Statix",
-      "founderLinkTitle": "So entsteht Statix – Einblick in die Entwicklung"
+      "founderLinkTitle": "So entsteht Statix – Einblick in die Entwicklung",
+      "templateLink": "Noch nicht bereit für die App? Die <template>kostenlose Handball-Statistik Excel-Vorlage mit Wurfbild</template> rechnet Quoten und Wurfzonen schon selbst."
     },
     "testimonials": {
       "kicker": "Trainer sagen",
@@ -3359,7 +3363,7 @@
           "bad": "Du brauchst ein Handy oder Tablet und ein Konto. Für die KI-Analysen und geteilte Berichte gelten Tageskontingente."
         }
       ],
-      "closing": "Wenn du bei der Tabelle bleiben willst, nimm eine, die schon rechnet: Unsere <template>kostenlose Handball-Statistik Excel-Vorlage</template> bringt Kader, Spielprotokoll, Auswertung und Saisonblatt mit fertigen Formeln mit – Download ohne Anmeldung. Für eine einzelne Quote zwischendurch reicht der <calculator>Wurfquoten-Rechner</calculator>, und im Ratgeber steht, wie du <guide>eine Handball-Statistik sauber führst</guide>."
+      "closing": "Wenn du bei der Tabelle bleiben willst, nimm eine, die schon rechnet: Unsere <template>kostenlose Handball-Statistik Excel-Vorlage</template> bringt Kader, Spielprotokoll, Auswertung, Wurfbild und Saisonblatt mit fertigen Formeln mit – Download ohne Anmeldung. Für eine einzelne Quote zwischendurch reicht der <calculator>Wurfquoten-Rechner</calculator>, und im Ratgeber steht, wie du <guide>eine Handball-Statistik sauber führst</guide>."
     },
     "faq": {
       "kicker": "Nachgefragt",
@@ -3405,14 +3409,18 @@
       "titleLead": "Handball-Statistik",
       "titleHighlight": "Excel-Vorlage",
       "titleTail": "kostenlos",
-      "lede": "Fünf Blätter, fertige Formeln, deutsche Spaltenköpfe: Start, Kader, Spielprotokoll, Auswertung und Saison. Das Startblatt erklärt in vier Schritten, was wohin gehört – Wurfquote, Siebenmeter-Quote und Paradenquote rechnen sich selbst. Ohne Anmeldung, ohne E-Mail-Adresse.",
+      "lede": "Sechs Blätter, fertige Formeln, deutsche Spaltenköpfe: Start, Kader, Spielprotokoll, Auswertung, Wurfbild und Saison. Das Startblatt erklärt in vier Schritten, was wohin gehört – Wurfquote, Siebenmeter-Quote, Paradenquote und das Wurfbild je Zone rechnen sich selbst. Ohne Anmeldung, ohne E-Mail-Adresse.",
       "squadSlots": "{count} Kaderplätze",
       "actionRows": "{count} Aktionszeilen",
       "games": "{count} Spiele pro Saison",
       "printReady": "druckfertig eingerichtet",
       "cardTitle": "Vorlage herunterladen",
       "downloadCta": "Excel-Vorlage kostenlos laden",
-      "downloadNote": "Sofortiger Download. Keine Anmeldung, kein Newsletter-Zwang."
+      "downloadNote": "Sofortiger Download. Keine Anmeldung, kein Newsletter-Zwang.",
+      "appTitle": "Lieber ohne Abtippen?",
+      "appText": "Dieselbe Statistik per Tap am Handy – mit <shots>Wurfbild nach echter Wurfposition</shots>, fertig beim Schlusspfiff.",
+      "appCta": "Kostenlos starten",
+      "appDemo": "Live-Demo ansehen"
     },
     "optin": {
       "title": "Optional: Updates per Mail",
@@ -3432,7 +3440,7 @@
       "missingConsent": "Für den Newsletter brauche ich beide Häkchen. Die Vorlage bekommst du auch ohne."
     },
     "metrics": {
-      "kicker": "Fünf Blätter",
+      "kicker": "Sechs Blätter",
       "title": "Welche Kennzahlen die Vorlage erfasst",
       "description": "Nichts davon musst du selbst zusammenbauen – die Formeln sind drin und rechnen, sobald du die erste Zeile einträgst.",
       "groups": [
@@ -3483,6 +3491,18 @@
             "± (Tore inkl. 7 m minus Fehlwürfe minus technische Fehler)",
             "Paraden, Gegentore und Paradenquote des Torwarts",
             "Mannschaftszeile mit allen Summen und Quoten"
+          ]
+        },
+        {
+          "sheet": "Wurfbild",
+          "description": "Wo deine Mannschaft trifft – und wo nicht. Das Blatt zählt jeden Wurf mit Zone aus dem Spielprotokoll, als Feld mit farbigen Zonen, als Tabelle und je Spieler. Spiel und Rückennummer wählst du oben, leer heißt ganze Saison bzw. ganze Mannschaft.",
+          "metrics": [
+            "Würfe, Tore und Quote je Wurfzone",
+            "Feld mit farbigen Zonen: rot schwach, grün stark",
+            "Anteil jeder Zone an allen Würfen",
+            "Würfe ohne Zone werden extra gezählt",
+            "Tore/Würfe und Quote je Spieler und Zone",
+            "Ein Spiel oder die ganze Saison"
           ]
         },
         {
@@ -3541,8 +3561,8 @@
           "text": "Wer den Zettel abends überträgt, macht die Arbeit zweimal. Und jede Übertragung erzeugt Fehler: Ein Fehlwurf, der beim Abtippen untergeht, hebt die Wurfquote und du steuerst dein Training nach einer Zahl, die es nie gab."
         },
         {
-          "title": "Kein Wurfbild",
-          "text": "Eine Tabelle sagt dir, dass 40 Prozent der Rückraumwürfe drin waren. Sie sagt dir nicht, dass alle Fehlwürfe aus derselben Ecke kamen. Wo geworfen wurde, sieht man nur auf einem Feld – nicht in einer Zelle."
+          "title": "Nur ein grobes Wurfbild",
+          "text": "Die Vorlage zählt Würfe je Zone – sechs Zonen, ohne linke und rechte Seite und ohne Torecke. Dass alle Fehlwürfe von halbrechts kamen oder alle ins kurze Eck gingen, siehst du nur auf einem Feld mit echter Wurfposition und Torzone, nicht in einer Zelle."
         },
         {
           "title": "Kein Verlauf pro Spieler",
@@ -3579,7 +3599,15 @@
         },
         {
           "question": "Welche Kennzahlen rechnet die Vorlage automatisch aus?",
-          "answer": "Würfe, Tore und Wurfquote pro Spieler, die Siebenmeter-Quote, Assists, technische Fehler und Zeitstrafen, ein ± je Spieler sowie Paraden, Gegentore und Paradenquote des Torwarts. Dazu Mannschaftssummen pro Spiel und rollierende Saisonwerte."
+          "answer": "Würfe, Tore und Wurfquote pro Spieler, die Siebenmeter-Quote, Assists, technische Fehler und Zeitstrafen, ein ± je Spieler sowie Paraden, Gegentore und Paradenquote des Torwarts. Dazu Mannschaftssummen pro Spiel und rollierende Saisonwerte. Dazu das Wurfbild: Würfe, Tore und Quote je Wurfzone, für ein Spiel oder die Saison."
+        },
+        {
+          "question": "Kann ich mit der Vorlage ein Wurfbild erstellen?",
+          "answer": "Ja. Trägst du im Spielprotokoll zu jedem Wurf die Zone ein, zeigt das Blatt „Wurfbild“ Würfe, Tore und Quote je Zone – als Feld mit farbigen Zonen, als Tabelle und für jeden Spieler einzeln. Oben wählst du ein Spiel oder lässt das Feld leer für die ganze Saison."
+        },
+        {
+          "question": "Taugt die Vorlage als Vorlage für die Spielanalyse?",
+          "answer": "Für die Zahlen dahinter ja: Ergebnis, Quoten je Spieler, Torwartwerte, Fehler und das Wurfbild je Zone stehen nach dem Spiel fertig im Blatt „Auswertung“ bzw. „Wurfbild“. Was eine Tabelle nicht kann, ist der Spielverlauf über die Zeit – wann ein Lauf kam, wann es gekippt ist. Dafür brauchst du die Minute zu jeder Aktion oder eine App, die sie mitschreibt."
         },
         {
           "question": "Was zählt als Wurf?",
@@ -3810,7 +3838,7 @@
           "benchmark": "als Verlauf über die Saison lesen"
         }
       ],
-      "closing": "Die Spannen verschieben sich mit Spielklasse und Altersstufe, deshalb ist der eigene Vorwert immer die bessere Referenz als eine Tabelle. Wenn du eine einzelne Quote nur schnell ausrechnen willst, nimm den <calculator>Wurfquoten-Rechner</calculator> – Tore und Würfe eintragen, Quote ablesen, ohne Anmeldung."
+      "closing": "Die Spannen verschieben sich mit Spielklasse und Altersstufe, deshalb ist der eigene Vorwert immer die bessere Referenz als eine Tabelle. Wenn du eine einzelne Quote nur schnell ausrechnen willst, nimm den <calculator>Wurfquoten-Rechner</calculator> – Tore und Würfe eintragen, Quote ablesen, ohne Anmeldung. Und woher die Würfe kommen, sagt keine Quote – das zeigt erst ein <shots>Wurfbild im Handball</shots>."
     },
     "ways": {
       "kicker": "Drei Wege",
@@ -3827,9 +3855,9 @@
         {
           "name": "Excel-Vorlage",
           "effort": "Einmal einrichten",
-          "good": "Rechnet Quoten selbst aus, gehört dir, lässt sich beliebig erweitern.",
+          "good": "Rechnet Quoten und das Wurfbild je Zone selbst aus, gehört dir, lässt sich beliebig erweitern.",
           "bad": "In der Halle unbedienbar, also tippst du abends ab. Kein Verlauf pro Spieler, und der Co-Trainer hat die falsche Version.",
-          "linkLabel": "Kostenlose Excel-Vorlage laden"
+          "linkLabel": "Kostenlose Excel-Vorlage mit Wurfbild laden"
         },
         {
           "name": "Statistik-App",
@@ -5280,6 +5308,10 @@
           {
             "question": "Gibt es Wurfbilder für Torhüterinnen?",
             "answer": "Ja — als Gegentor- und Paradenverteilung über die Torzonen. Das ist die Karte, die zeigt, wo eine Torhüterin stark ist und wo nicht."
+          },
+          {
+            "question": "Kann ich ein Wurfbild auch ohne App erstellen?",
+            "answer": "Ja, in grober Form: Unsere kostenlose Handball-Statistik Excel-Vorlage hat ein Blatt „Wurfbild“, das Würfe, Tore und Quote je Zone zählt – Außen, Kreis, Rückraum, Durchbruch, Tempogegenstoß und Siebenmeter, für ein Spiel oder die ganze Saison. Die genaue Position auf dem Feld, linke und rechte Seite und die Torzone kann eine Tabelle nicht abbilden; das macht das Wurfbild in Statix."
           }
         ]
       },
@@ -6988,7 +7020,34 @@
       "ctaKicker": "Nächster Schritt",
       "ctaTitle": "Probier es an einem echten Spiel aus",
       "ctaDescription": "Die Live-Demo ist ein voll ausgestattetes Statix mit echten Spieldaten — ohne Account, direkt im Browser. Oder du legst dein Team an und erfasst dein erstes Spiel.",
-      "ctaLinkLabel": "Alle Funktionen im Überblick"
+      "ctaLinkLabel": "Alle Funktionen im Überblick",
+      "resourcesTitle": "Kostenlos dazu – ohne Konto",
+      "resources": {
+        "excelTemplate": {
+          "title": "Excel-Vorlage mit Wurfbild",
+          "text": "Spielprotokoll, Auswertung und Wurfbild je Zone – zum Herunterladen, ohne Anmeldung."
+        },
+        "statsGuide": {
+          "title": "Handball-Statistiken erklärt",
+          "text": "Welche Kennzahlen es gibt, wie sie berechnet werden und welche Richtwerte normal sind."
+        },
+        "shotQuotaCalculator": {
+          "title": "Wurfquoten-Rechner",
+          "text": "Tore und Würfe eintragen, Quote nach Position einordnen."
+        },
+        "tacticsBoard": {
+          "title": "Handball-Taktikboard",
+          "text": "Aufstellungen und Laufwege auf ein maßstabsgetreues Feld legen und teilen."
+        },
+        "xgGuide": {
+          "title": "Expected Goals im Handball",
+          "text": "Was xG bedeutet, wie es gerechnet wird und wann es hilft."
+        },
+        "recordingComparison": {
+          "title": "Zettel, Excel oder App?",
+          "text": "Die drei Wege, eine Handball-Statistik zu führen, ehrlich verglichen."
+        }
+      }
     },
     "taggingBench": {
       "kicker": "Wie eine Szene entsteht",

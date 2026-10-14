@@ -118,6 +118,18 @@ export type ArticleModule = { after?: string } & (
       options: { name: string; scores: DecisionScore[]; verdict?: string }[];
     }
   | {
+      /**
+       * The bridge to the app at the point the article turns to measuring:
+       * one sentence on what Statix counts here, the feature page that does
+       * it (`feature` is its slug) and the registration.
+       */
+      kind: 'appBridge';
+      title: string;
+      text: string;
+      feature: string;
+      featureLabel: string;
+    }
+  | {
       /** One of the existing noindex tool routes, embedded in the article. */
       kind: 'embed';
       target: 'wurfquote-rechner' | 'handball-taktikboard';

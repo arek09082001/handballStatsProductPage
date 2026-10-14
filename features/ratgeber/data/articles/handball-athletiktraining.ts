@@ -13,13 +13,14 @@ export const handballAthletiktraining: Article = {
     'sprungkraft handball',
     'schnelligkeit handball',
     'beweglichkeit handball',
+    'handball dehnen',
     'handball athletik trainingswoche',
     'handball kraftausdauer',
   ],
   category: 'Trainingsplanung',
   archetype: 'rezept',
   datePublished: '2026-08-07',
-  dateModified: '2026-08-07',
+  dateModified: '2026-10-14',
   readingTimeMinutes: 11,
   excerpt:
     'Athletik scheitert im Amateurhandball fast nie am Wissen, sondern an der Zeit. Wie du Kraft, Sprungkraft, Schnelligkeit und Beweglichkeit in zwei bis drei Hallentermine bekommst – und was du an die Spieler auslagerst.',
@@ -260,6 +261,15 @@ Zwei Hinweise zur Auswertung: Erstens vergleichst du jeden Spieler mit sich selb
       ],
       note: 'Planungsraster für den Amateurbereich, keine Trainingsvorschrift. Zwischen zwei intensiven Blöcken derselben Art sollten mindestens 48 Stunden liegen.',
     },
+    {
+      after: 'Was du danach messen kannst',
+      kind: 'appBridge',
+      title: 'Spielminuten je Spieler, ohne Stoppuhr',
+      text:
+        'Wer in Statix die Wechsel mit erfasst, hat die Spielminuten jeder Spielerin pro Spiel und über die Saison – die einfachste Belastungszahl, die es im Amateurbereich gibt, und die Grundlage dafür, wer im Athletikblock wie viel verträgt.',
+      feature: 'spielerstatistiken',
+      featureLabel: 'Spielerstatistiken ansehen',
+    },
   ],
   faqs: [
     {
@@ -286,6 +296,11 @@ Zwei Hinweise zur Auswertung: Erstens vergleichst du jeden Spieler mit sich selb
       question: 'Wie messe ich, ob das Athletiktraining wirkt?',
       answer:
         'Mit vier Tests, die in 20 Minuten in der Halle machbar sind: Antritt über zehn Meter, Sprunghöhe aus Stand und Anlauf, ein Rumpfhaltetest und ein Wiederholungssprint, bei dem der Abfall vom ersten zum letzten Sprint verglichen wird. Vergleiche jeden Spieler mit sich selbst, nicht mit der Mannschaft.',
+    },
+    {
+      question: 'Wann und wie sollten Handballer dehnen?',
+      answer:
+        'Vor dem Training dynamisch, nicht statisch: Ausfallschritte mit Rumpfdrehung, Armkreisen, Beinpendeln – fünf bis acht Minuten als Teil des Aufwärmens. Statisches Dehnen, bei dem eine Position 20 bis 30 Sekunden gehalten wird, gehört an trainingsfreie Tage oder ans Ende der Einheit, weil es direkt vorher die Sprungkraft senkt. Für Beweglichkeit in Schulter, Brustwirbelsäule und Hüfte wirkt nur Regelmäßigkeit: fünf bis zehn Minuten, mehrmals pro Woche, immer dieselben Übungen.',
     },
     {
       question: 'Wie gehe ich mit Wachstumsphasen im Jugendbereich um?',

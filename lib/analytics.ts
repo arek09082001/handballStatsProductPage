@@ -6,7 +6,8 @@ export type DemoClickLocation =
   | 'showcase'
   | 'pros'
   | 'final_cta'
-  | 'footer';
+  | 'footer'
+  | 'template';
 
 export type RegisterClickLocation =
   | 'hero'
@@ -14,7 +15,8 @@ export type RegisterClickLocation =
   | 'pros'
   | 'final_cta'
   | 'footer'
-  | 'pricing';
+  | 'pricing'
+  | 'template';
 
 /**
  * The live demo is the secondary conversion goal, but it lives on an external

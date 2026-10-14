@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick } from '@/lib/analytics';
@@ -12,6 +13,8 @@ interface ShowcaseItem {
   badge: string;
   title: string;
   description: string;
+  /** Anchor text of the deeper page — the term that page ranks for. */
+  linkLabel: string;
 }
 
 /**
@@ -21,9 +24,9 @@ interface ShowcaseItem {
  * live on `/was-ist-statix` and in the live demo instead.
  */
 const SHOTS = [
-  { src: '/recordStatsInGame.png', width: 2560, height: 1600 },
-  { src: '/statsTableInGame.png', width: 2560, height: 2000 },
-  { src: '/shotMaps.png', width: 2560, height: 2000 },
+  { src: '/recordStatsInGame.png', width: 2560, height: 1600, href: '/funktionen/live-erfassung' },
+  { src: '/statsTableInGame.png', width: 2560, height: 2000, href: '/handball-statistiken' },
+  { src: '/shotMaps.png', width: 2560, height: 2000, href: '/funktionen/wurfbilder' },
 ] as const;
 
 export default function ShowcaseSection() {
@@ -90,6 +93,15 @@ export default function ShowcaseSection() {
                   <p className='mt-3.5 max-w-[52ch] text-base leading-7 text-ink/70'>
                     {item.description}
                   </p>
+                  {/* Each beat links the page that ranks for it, with that
+                      page's search term as the anchor — the home page has the
+                      most clicks and passes them on. */}
+                  <Link
+                    href={shot.href}
+                    className='group mt-4 inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+                    {item.linkLabel}
+                    <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
+                  </Link>
                 </div>
 
                 <div className={reversed ? 'lg:order-1' : ''}>

@@ -84,7 +84,10 @@ export default function StatsFormulas() {
         </div>
 
         <p className='mt-8 max-w-[68ch] text-base leading-7 text-chalk/70'>
-          {t.rich('closing', { calculator: inlineLink('/wurfquote-rechner') })}
+          {t.rich('closing', {
+            calculator: inlineLink('/wurfquote-rechner'),
+            shots: inlineLink('/funktionen/wurfbilder'),
+          })}
         </p>
       </div>
     </section>

@@ -1510,17 +1510,20 @@
         {
           "badge": "Zapis na żywo",
           "title": "Każda akcja jednym dotknięciem",
-          "description": "Dotykaj wprost na boisku: bramka, bramka z kontry, odbiór, blok, siódemka, wykluczenie albo niecelny rzut. Ławka, skład i wynik zawsze na oku — bez odrywania wzroku od meczu."
+          "description": "Dotykaj wprost na boisku: bramka, bramka z kontry, odbiór, blok, siódemka, wykluczenie albo niecelny rzut. Ławka, skład i wynik zawsze na oku — bez odrywania wzroku od meczu.",
+          "linkLabel": "Zapis na żywo w szczegółach"
         },
         {
           "badge": "Liczone od razu",
           "title": "Statystyki zawodników w czasie rzeczywistym",
-          "description": "Bramki, rzuty, skuteczność, asysty, odbiory, bloki i dyscyplina — liczone automatycznie dla każdego zawodnika, jeszcze w trakcie meczu."
+          "description": "Bramki, rzuty, skuteczność, asysty, odbiory, bloki i dyscyplina — liczone automatycznie dla każdego zawodnika, jeszcze w trakcie meczu.",
+          "linkLabel": "Wszystkie statystyki piłki ręcznej wyjaśnione"
         },
         {
           "badge": "Mapy rzutów i mapy ciepła",
           "title": "Rzuty i bramki na boisku",
-          "description": "Zobacz każdy rzut i każdą bramkę wprost na boisku. Wyłap mapy ciepła, mocne strefy i schematy, które rozstrzygają mecze — dla zawodnika albo całej drużyny."
+          "description": "Zobacz każdy rzut i każdą bramkę wprost na boisku. Wyłap mapy ciepła, mocne strefy i schematy, które rozstrzygają mecze — dla zawodnika albo całej drużyny.",
+          "linkLabel": "Więcej o mapach rzutów"
         }
       ]
     },
@@ -1573,7 +1576,8 @@
       "founderKicker": "Kto za tym stoi",
       "founderNote": "Statix wyrasta z realnej praktyki trenerskiej: aplikację tworzy w Niemczech Arkadiusz Weiss, sam zawodnik piłki ręcznej. To, czego brakuje przy ławce, staje się funkcją — uwagi z hali trafiają prosto do produktu.",
       "founderLinkLabel": "Jak powstaje Statix",
-      "founderLinkTitle": "Tak powstaje Statix – wgląd w rozwój"
+      "founderLinkTitle": "Tak powstaje Statix – wgląd w rozwój",
+      "templateLink": "Jeszcze nie czas na aplikację? <template>Bezpłatny szablon Excel do statystyk piłki ręcznej z mapą rzutów</template> sam liczy skuteczność i strefy rzutów."
     },
     "testimonials": {
       "kicker": "Mówią trenerzy",
@@ -3359,7 +3363,7 @@
           "bad": "Potrzebujesz telefonu albo tabletu i konta. Dla analiz AI i udostępnianych raportów obowiązują limity dzienne."
         }
       ],
-      "closing": "Jeśli chcesz zostać przy arkuszu, weź taki, który już liczy: nasz <template>bezpłatny szablon Excel do statystyk piłki ręcznej</template> zawiera kadrę, protokół meczu, analizę i arkusz sezonu z gotowymi formułami – pobranie bez rejestracji. Do pojedynczego wskaźnika wystarczy <calculator>kalkulator skuteczności rzutów</calculator>, a w poradniku opisujemy, jak <guide>porządnie prowadzić statystykę piłki ręcznej</guide>."
+      "closing": "Jeśli chcesz zostać przy arkuszu, weź taki, który już liczy: nasz <template>bezpłatny szablon Excel do statystyk piłki ręcznej</template> zawiera kadrę, protokół meczu, analizę, mapę rzutów i arkusz sezonu z gotowymi formułami – pobranie bez rejestracji. Do pojedynczego wskaźnika wystarczy <calculator>kalkulator skuteczności rzutów</calculator>, a w poradniku opisujemy, jak <guide>porządnie prowadzić statystykę piłki ręcznej</guide>."
     },
     "faq": {
       "kicker": "Pytania i odpowiedzi",
@@ -3405,14 +3409,18 @@
       "titleLead": "Szablon Excel do",
       "titleHighlight": "statystyk piłki ręcznej",
       "titleTail": "za darmo",
-      "lede": "Pięć arkuszy, gotowe formuły, niemieckie nagłówki kolumn: Start, Kader (kadra), Spielprotokoll (protokół meczu), Auswertung (analiza) i Saison (sezon). Arkusz startowy tłumaczy w czterech krokach, co gdzie wpisać – skuteczność rzutów, skuteczność siedmiu metrów i skuteczność obron liczą się same. Bez rejestracji i bez adresu e-mail.",
+      "lede": "Sześć arkuszy, gotowe formuły, niemieckie nagłówki kolumn: Start, Kader (kadra), Spielprotokoll (protokół meczu), Auswertung (analiza), Wurfbild (mapa rzutów) i Saison (sezon). Arkusz startowy tłumaczy w czterech krokach, co gdzie wpisać – skuteczność rzutów, skuteczność siedmiu metrów, skuteczność obron i mapa rzutów według stref liczą się same. Bez rejestracji i bez adresu e-mail.",
       "squadSlots": "{count} miejsc w kadrze",
       "actionRows": "{count} wierszy akcji",
       "games": "{count} meczów na sezon",
       "printReady": "gotowe do druku",
       "cardTitle": "Pobierz szablon",
       "downloadCta": "Pobierz szablon Excel za darmo",
-      "downloadNote": "Natychmiastowe pobranie. Bez rejestracji i bez przymusu newslettera."
+      "downloadNote": "Natychmiastowe pobranie. Bez rejestracji i bez przymusu newslettera.",
+      "appTitle": "Wolisz bez przepisywania?",
+      "appText": "Te same statystyki jednym dotknięciem na telefonie – z <shots>mapą rzutów według prawdziwej pozycji</shots>, gotowe po końcowym gwizdku.",
+      "appCta": "Zacznij za darmo",
+      "appDemo": "Zobacz demo na żywo"
     },
     "optin": {
       "title": "Opcjonalnie: nowości mailem",
@@ -3432,7 +3440,7 @@
       "missingConsent": "Do newslettera potrzebuję obu zaznaczeń. Szablon dostaniesz też bez nich."
     },
     "metrics": {
-      "kicker": "Pięć arkuszy",
+      "kicker": "Sześć arkuszy",
       "title": "Co rejestruje szablon",
       "description": "Niczego z tego nie musisz budować sam – formuły są w środku i liczą, gdy tylko wpiszesz pierwszy wiersz.",
       "groups": [
@@ -3483,6 +3491,18 @@
             "± (bramki wraz z 7 m minus rzuty niecelne minus błędy techniczne)",
             "Obrony, bramki stracone i skuteczność bramkarza",
             "Wiersz drużyny ze wszystkimi sumami i wskaźnikami"
+          ]
+        },
+        {
+          "sheet": "Wurfbild (mapa rzutów)",
+          "description": "Gdzie twoja drużyna trafia – a gdzie nie. Arkusz liczy każdy rzut ze strefą z protokołu meczu: jako boisko z kolorowymi strefami, jako tabelę i dla każdego zawodnika. Mecz i numer wybierasz na górze; puste pole oznacza cały sezon lub całą drużynę.",
+          "metrics": [
+            "Rzuty, bramki i skuteczność według strefy",
+            "Boisko z kolorowymi strefami: czerwony słabo, zielony mocno",
+            "Udział każdej strefy we wszystkich rzutach",
+            "Rzuty bez strefy liczone osobno",
+            "Bramki/rzuty i skuteczność na zawodnika i strefę",
+            "Jeden mecz lub cały sezon"
           ]
         },
         {
@@ -3541,8 +3561,8 @@
           "text": "Kto wieczorem przenosi kartkę, wykonuje pracę dwa razy. A każde przeniesienie tworzy błędy: rzut niecelny, który ginie przy przepisywaniu, podnosi skuteczność, a ty sterujesz treningiem według liczby, której nigdy nie było."
         },
         {
-          "title": "Brak mapy rzutów",
-          "text": "Tabela powie ci, że 40 procent rzutów z drugiej linii wpadło. Nie powie, że wszystkie niecelne szły w ten sam róg. Gdzie padały rzuty, widać tylko na boisku – nie w komórce."
+          "title": "Tylko przybliżona mapa rzutów",
+          "text": "Szablon liczy rzuty według stref – sześć stref, bez lewej i prawej strony i bez narożnika bramki. To, że wszystkie niecelne rzuty szły z prawego rozegrania albo w krótki róg, zobaczysz tylko na boisku z prawdziwą pozycją rzutu i strefą bramki, nie w komórce."
         },
         {
           "title": "Brak przebiegu dla zawodnika",
@@ -3579,7 +3599,15 @@
         },
         {
           "question": "Które wskaźniki szablon liczy automatycznie?",
-          "answer": "Rzuty, bramki i skuteczność na zawodnika, skuteczność z siedmiu metrów, asysty, błędy techniczne i kary, wskaźnik ± dla zawodnika oraz obrony, bramki stracone i skuteczność bramkarza. Do tego sumy drużynowe na mecz i narastające wartości sezonowe."
+          "answer": "Rzuty, bramki i skuteczność na zawodnika, skuteczność z siedmiu metrów, asysty, błędy techniczne i kary, wskaźnik ± dla zawodnika oraz obrony, bramki stracone i skuteczność bramkarza. Do tego sumy drużynowe na mecz i narastające wartości sezonowe. Do tego mapa rzutów: rzuty, bramki i skuteczność według stref, dla jednego meczu lub sezonu."
+        },
+        {
+          "question": "Czy w szablonie zrobię mapę rzutów?",
+          "answer": "Tak. Jeśli w protokole meczu wpiszesz strefę każdego rzutu, arkusz „Wurfbild” pokaże rzuty, bramki i skuteczność według stref – jako boisko z kolorowymi strefami, jako tabelę i dla każdego zawodnika. Na górze wybierasz mecz albo zostawiasz pole puste dla całego sezonu."
+        },
+        {
+          "question": "Czy szablon nadaje się do analizy meczu?",
+          "answer": "Do liczb – tak: wynik, skuteczność zawodników, wartości bramkarza, błędy i mapa rzutów według stref są gotowe po meczu w arkuszach „Auswertung” i „Wurfbild”. Czego arkusz nie pokaże, to przebiegu meczu w czasie – kiedy przyszła seria, kiedy mecz się odwrócił. Do tego potrzebujesz minuty każdej akcji albo aplikacji, która ją zapisuje."
         },
         {
           "question": "Co liczy się jako rzut?",
@@ -3810,7 +3838,7 @@
           "benchmark": "czytać jako przebieg w sezonie"
         }
       ],
-      "closing": "Przedziały przesuwają się wraz z klasą rozgrywkową i kategorią wiekową, dlatego własna wcześniejsza wartość jest zawsze lepszym punktem odniesienia niż tabela. Jeśli chcesz tylko szybko policzyć pojedynczy wskaźnik, weź <calculator>kalkulator skuteczności rzutów</calculator> – wpisujesz bramki i rzuty, odczytujesz wynik, bez rejestracji."
+      "closing": "Przedziały przesuwają się wraz z klasą rozgrywkową i kategorią wiekową, dlatego własna wcześniejsza wartość jest zawsze lepszym punktem odniesienia niż tabela. Jeśli chcesz tylko szybko policzyć pojedynczy wskaźnik, weź <calculator>kalkulator skuteczności rzutów</calculator> – wpisujesz bramki i rzuty, odczytujesz wynik, bez rejestracji. A skąd padają rzuty, nie powie żaden wskaźnik – pokaże to dopiero <shots>mapa rzutów w piłce ręcznej</shots>."
     },
     "ways": {
       "kicker": "Trzy drogi",
@@ -3827,9 +3855,9 @@
         {
           "name": "Szablon Excel",
           "effort": "Raz skonfigurować",
-          "good": "Sam liczy wskaźniki, należy do ciebie, można go dowolnie rozbudować.",
+          "good": "Sam liczy skuteczność i mapę rzutów według stref, należy do ciebie, można go dowolnie rozbudować.",
           "bad": "W hali nie do obsługi, więc przepisujesz wieczorem. Bez przebiegu dla zawodnika, a asystent ma złą wersję.",
-          "linkLabel": "Pobierz bezpłatny szablon Excel"
+          "linkLabel": "Pobierz bezpłatny szablon Excel z mapą rzutów"
         },
         {
           "name": "Aplikacja statystyczna",
@@ -5280,6 +5308,10 @@
           {
             "question": "Czy są mapy rzutów dla bramkarek?",
             "answer": "Tak — jako rozkład straconych bramek i obron po strefach bramki. To ta mapa, która pokazuje, gdzie bramkarka jest mocna, a gdzie nie."
+          },
+          {
+            "question": "Czy mogę zrobić mapę rzutów bez aplikacji?",
+            "answer": "Tak, w uproszczonej formie: nasz bezpłatny szablon Excel do statystyk piłki ręcznej ma arkusz „Wurfbild”, który liczy rzuty, bramki i skuteczność według stref – skrzydło, koło, druga linia, przebicie, kontra i siedem metrów, dla jednego meczu lub całego sezonu. Dokładnej pozycji na boisku, strony lewej i prawej ani strefy bramki arkusz nie pokaże; to robi mapa rzutów w Statix."
           }
         ]
       },
@@ -6988,7 +7020,34 @@
       "ctaKicker": "Następny krok",
       "ctaTitle": "Wypróbuj to na prawdziwym meczu",
       "ctaDescription": "Demo na żywo to w pełni wyposażony Statix z prawdziwymi danymi meczowymi — bez konta, prosto w przeglądarce. Albo zakładasz drużynę i zapisujesz swój pierwszy mecz.",
-      "ctaLinkLabel": "Wszystkie funkcje w przeglądzie"
+      "ctaLinkLabel": "Wszystkie funkcje w przeglądzie",
+      "resourcesTitle": "Za darmo obok – bez konta",
+      "resources": {
+        "excelTemplate": {
+          "title": "Szablon Excel z mapą rzutów",
+          "text": "Protokół meczu, analiza i mapa rzutów według stref – do pobrania bez rejestracji."
+        },
+        "statsGuide": {
+          "title": "Statystyki piłki ręcznej wyjaśnione",
+          "text": "Jakie są wskaźniki, jak się je liczy i jakie wartości są normalne."
+        },
+        "shotQuotaCalculator": {
+          "title": "Kalkulator skuteczności rzutów",
+          "text": "Wpisz bramki i rzuty, porównaj skuteczność według pozycji."
+        },
+        "tacticsBoard": {
+          "title": "Tablica taktyczna do piłki ręcznej",
+          "text": "Ustawienia i ruch zawodników na boisku w skali – do udostępnienia."
+        },
+        "xgGuide": {
+          "title": "Expected goals w piłce ręcznej",
+          "text": "Co oznacza xG, jak się je liczy i kiedy pomaga."
+        },
+        "recordingComparison": {
+          "title": "Kartka, Excel czy aplikacja?",
+          "text": "Trzy sposoby prowadzenia statystyk piłki ręcznej, uczciwie porównane."
+        }
+      }
     },
     "taggingBench": {
       "kicker": "Jak powstaje scena",

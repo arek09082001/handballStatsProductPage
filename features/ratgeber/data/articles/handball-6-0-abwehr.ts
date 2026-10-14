@@ -3,9 +3,9 @@ import type { Article } from '../../types';
 export const handball60Abwehr: Article = {
   slug: 'handball-6-0-abwehr',
   title: 'Die 6:0-Abwehr: Grundordnung, Aufgaben, Umstellung',
-  metaTitle: 'Die 6:0-Abwehr im Handball: Aufgaben und Umstellung',
+  metaTitle: '6:0-Abwehr im Handball: Aufgaben je Position',
   metaDescription:
-    'Die 6:0-Abwehr im Handball: Grundordnung mit Diagramm, Aufgaben je Position, das Verschiebeprinzip und der Aufbau über drei Trainingseinheiten. Mit Kennzahlen.',
+    '6:0-Abwehr im Handball: Grundordnung als Diagramm, Aufgaben je Position vom Außen bis zum Innenblock, richtig verschieben und in drei Einheiten einführen.',
   keywords: [
     '6:0 abwehr handball',
     '6-0 abwehr',
@@ -104,6 +104,15 @@ Diese vier Zahlen unterscheiden zuverlässig zwischen "das System passt nicht" u
       system: '6-0',
       caption:
         'Die 6:0 (blau) am Torraumkreis: zwei Außen-, zwei Halb- und zwei Innenverteidiger auf einem Bogen, gegen einen 3:3-Angriff mit Kreisläufer (orange).',
+    },
+    {
+      after: 'Kennzahlen zur Kontrolle',
+      kind: 'appBridge',
+      title: 'Wo die Gegentore fallen, zeigt das Wurfbild',
+      text:
+        'Im Modus „Detailliert“ erfasst Statix auch die Wurfzone des Gegners. Daraus entsteht ein Wurfbild der Gegentore: ob eure 6:0 auf halblinks aufgeht oder der Kreis frei steht, siehst du nach dem Spiel auf einen Blick.',
+      feature: 'wurfbilder',
+      featureLabel: 'Wurfbilder ansehen',
     },
   ],
   faqs: [

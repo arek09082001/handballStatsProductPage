@@ -105,6 +105,15 @@ Unabhängig davon, wofür du dich entscheidest, gilt dieselbe Reihenfolge:
         },
       ],
     },
+    {
+      after: 'Dein nächster Schritt',
+      kind: 'appBridge',
+      title: 'Den App-Weg an einem Spiel ausprobieren',
+      text:
+        'Ein Tap pro Aktion statt einer Zeile pro Aktion: Auswertung und Wurfbild stehen beim Schlusspfiff, offline in der Halle. Das erste Spiel erfasst du kostenlos – oder du siehst dir vorher die Live-Demo an.',
+      feature: 'live-erfassung',
+      featureLabel: 'Live-Erfassung ansehen',
+    },
   ],
   faqs: [
     {

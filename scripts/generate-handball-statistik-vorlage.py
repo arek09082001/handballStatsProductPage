@@ -3,12 +3,13 @@
 
 Ausgabe: public/downloads/handball-statistik-vorlage.xlsx
 
-Die Vorlage besteht aus fünf Blättern:
+Die Vorlage besteht aus sechs Blättern:
 
   Start           – Anleitung, Farblegende und die beiden Einstellungen
   Kader           – Mannschaftsliste (Eingabe)
   Spielprotokoll  – eine Zeile pro Aktion (Eingabe)
   Auswertung      – Werte pro Spieler für EIN Spiel (Formeln)
+  Wurfbild        – Würfe, Tore und Quote je Wurfzone, als Feld und je Spieler (Formeln)
   Saison          – Spielliste und rollierende Saisonwerte (Formeln)
 
 Leitgedanke: Es gibt genau zwei Blätter, in die getippt wird (Kader und
@@ -19,7 +20,7 @@ Legende steht auf dem Startblatt.
 
 Mannschaftsname und Saison trägt man einmal auf dem Startblatt ein; die
 Kopfzeilen aller Blätter ziehen sich beides per Formel daraus. So lässt sich
-die Vorlage auf den eigenen Verein umschreiben, ohne fünf Überschriften
+die Vorlage auf den eigenen Verein umschreiben, ohne sechs Überschriften
 einzeln zu suchen.
 
 Alle Kennzahlen werden per Formel aus dem Spielprotokoll berechnet – es gibt
@@ -89,6 +90,7 @@ LAST_ROW = 403
 P_SPIEL = f"Spielprotokoll!$A${FIRST_ROW}:$A${LAST_ROW}"
 P_NR = f"Spielprotokoll!$C${FIRST_ROW}:$C${LAST_ROW}"
 P_AKTION = f"Spielprotokoll!$E${FIRST_ROW}:$E${LAST_ROW}"
+P_ZONE = f"Spielprotokoll!$F${FIRST_ROW}:$F${LAST_ROW}"
 
 KADER_FIRST = 4
 KADER_LAST = 23  # 20 Kaderplätze
@@ -152,6 +154,8 @@ BEISPIEL_PROTOKOLL = [
     ("Sp1", 28, 7, "2 Minuten", "", ""),
     ("Sp1", 31, 1, "Gegentor", "", ""),
     ("Sp1", 35, 9, "Tor", "Kreis", ""),
+    ("Sp1", 38, 11, "Tor", "Tempogegenstoß", ""),
+    ("Sp1", 41, 7, "Fehlwurf", "Durchbruch", ""),
 ]
 
 BEISPIEL_HINWEIS = "Beispiel – überschreiben"
@@ -247,7 +251,7 @@ SCHRITTE = [
     (
         "4. Ansehen und ausdrucken",
         "Blatt „Auswertung“ oben das Spiel auswählen: Quoten, Torwartwerte und das Ergebnis stehen da. "
-        "Das Blatt „Saison“ zeigt dieselben Werte über alle Spiele.",
+        "„Wurfbild“ zeigt, aus welcher Zone getroffen wird, „Saison“ alle Werte über alle Spiele.",
     ),
 ]
 
@@ -255,6 +259,7 @@ BLAETTER = [
     ("Kader", "Deine Mannschaft", "Du trägst ein – einmal pro Saison"),
     ("Spielprotokoll", "Jede Aktion eine Zeile", "Du trägst ein – während des Spiels"),
     ("Auswertung", "Ein Spiel, alle Spieler", "Rechnet automatisch – nur Spiel auswählen"),
+    ("Wurfbild", "Wo getroffen wird – je Wurfzone", "Rechnet automatisch – Spiel und Spieler wählbar"),
     ("Saison", "Spieleliste und Saisonwerte", "Spiele einträgst du, der Rest rechnet"),
 ]
 
@@ -733,6 +738,282 @@ def build_auswertung(ws, first_game: int, last_game: int) -> None:
     print_setup(ws, landscape=True, repeat_row="5:6")
 
 
+# --- Wurfbild ---------------------------------------------------------------
+# Würfe aus dem Feld UND vom Siebenmeterpunkt, getrennt nach der Zone, die im
+# Protokoll steht. Das Blatt ist die Excel-Fassung dessen, was die App als
+# Wurfbild zeigt – nur mit sechs Zonen statt einer Position auf dem Feld.
+WURF_AKTIONEN = ["Tor", "Fehlwurf", "7m Tor", "7m Fehlwurf"]
+TOR_AKTIONEN = ["Tor", "7m Tor"]
+
+# Das Feld als Kacheln: vorne am Tor die Nahwürfe, nach hinten die weiten.
+# (Zone, erste Zeile, erste Spalte, letzte Spalte) – jede Kachel ist drei
+# Zeilen hoch: Name, Tore/Würfe, Quote.
+FELD_KACHELN = [
+    ("Außen", 7, 2, 3),
+    ("Kreis", 7, 4, 5),
+    ("Siebenmeter", 7, 6, 7),
+    ("Durchbruch", 10, 2, 7),
+    ("Rückraum", 13, 2, 7),
+    ("Tempogegenstoß", 16, 2, 7),
+]
+
+
+def zone_count(zone_ref: str, actions: list[str], spiel: str, nr: str) -> str:
+    """Summe der COUNTIFS über mehrere Aktionen in einer Zone.
+
+    `spiel` und `nr` sind Zellbezüge; leer heißt „alle“. Dafür steht als
+    Kriterium "<>" (nicht leer), das in Excel, LibreOffice und Numbers gleich
+    gelesen wird – ein "*" träfe die Rückennummern nicht, weil sie Zahlen sind.
+    """
+    spiel_crit = f'IF({spiel}="","<>",{spiel})'
+    nr_crit = f'IF({nr}="","<>",{nr})'
+    return "+".join(
+        f'COUNTIFS({P_SPIEL},{spiel_crit},{P_NR},{nr_crit},{P_ZONE},{zone_ref},{P_AKTION},"{action}")'
+        for action in actions
+    )
+
+
+def build_wurfbild(ws) -> None:
+    title_block(
+        ws,
+        "Wurfbild",
+        "Wo deine Mannschaft trifft – und wo nicht. Zählt jeden Wurf aus dem Spielprotokoll, der eine "
+        "Zone trägt (Feldwürfe und Siebenmeter). Spiel leer lassen = ganze Saison, Nr. leer lassen = "
+        "ganze Mannschaft. Hier trägst du außer diesen beiden Feldern nichts ein.",
+        14,
+    )
+
+    # --- Auswahl: Spiel und Spieler ------------------------------------------
+    for label_cell, value_cell, label, value in (
+        ("A3", "B3", "Spiel:", None),
+        ("E3", "F3", "Nr.:", None),
+    ):
+        ws[label_cell] = label
+        ws[label_cell].font = BOLD_FONT
+        ws[label_cell].alignment = Alignment(horizontal="right", vertical="center")
+        cell = ws[value_cell]
+        cell.value = value
+        cell.font = MARKER_FONT
+        cell.fill = INPUT_FILL
+        cell.border = BORDER
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws["C3"] = '=IF($B$3="","ganze Saison","")'
+    ws["C3"].font = NOTE_FONT
+    ws["G3"] = (
+        '=IF($F$3="","ganze Mannschaft",'
+        f'IFERROR(INDEX(Kader!$B${KADER_FIRST}:$B${KADER_LAST},'
+        f'MATCH($F$3,Kader!$A${KADER_FIRST}:$A${KADER_LAST},0)),"Nr. nicht im Kader"))'
+    )
+    ws["G3"].font = BODY_FONT
+    ws.merge_cells("G3:J3")
+    ws.row_dimensions[3].height = 22
+    dropdown(ws, "=Spiele", "B3")
+
+    # --- Tabelle je Zone (rechts) --------------------------------------------
+    table_header = 5
+    for column, title in enumerate(["Zone", "Würfe", "Tore", "Quote", "Anteil"], start=10):
+        cell = ws.cell(row=table_header, column=column, value=title)
+        cell.font = HEAD_FONT
+        cell.fill = HEAD_FILL
+        cell.border = BORDER
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[table_header].height = 22
+
+    zone_rows: dict[str, int] = {}
+    first_zone = table_header + 1
+    for offset, zone in enumerate(ZONEN):
+        row = first_zone + offset
+        zone_rows[zone] = row
+        ws.cell(row=row, column=10, value=zone)
+    no_zone_row = first_zone + len(ZONEN)
+    total_row = no_zone_row + 1
+    ws.cell(row=no_zone_row, column=10, value="ohne Zone")
+    ws.cell(row=total_row, column=10, value="Gesamt")
+
+    for row in range(first_zone, no_zone_row + 1):
+        zone_ref = '""' if row == no_zone_row else f"$J{row}"
+        ws.cell(row=row, column=11, value=f"={zone_count(zone_ref, WURF_AKTIONEN, '$B$3', '$F$3')}")
+        ws.cell(row=row, column=12, value=f"={zone_count(zone_ref, TOR_AKTIONEN, '$B$3', '$F$3')}")
+        ws.cell(row=row, column=13, value=f'=IFERROR($L{row}/$K{row},"")')
+        ws.cell(row=row, column=14, value=f'=IFERROR($K{row}/$K${total_row},"")')
+    ws.cell(row=total_row, column=11, value=f"=SUM(K{first_zone}:K{no_zone_row})")
+    ws.cell(row=total_row, column=12, value=f"=SUM(L{first_zone}:L{no_zone_row})")
+    ws.cell(row=total_row, column=13, value=f'=IFERROR($L{total_row}/$K{total_row},"")')
+    ws.cell(row=total_row, column=14, value=f'=IF($K{total_row}=0,"",1)')
+
+    for row in range(first_zone, total_row + 1):
+        for column in range(10, 15):
+            cell = ws.cell(row=row, column=column)
+            is_total = row == total_row
+            cell.font = BOLD_FONT if is_total or column == 10 else BODY_FONT
+            cell.fill = TOTAL_FILL if is_total else CALC_FILL
+            cell.border = BORDER
+            cell.alignment = Alignment(horizontal="left" if column == 10 else "center")
+            if column == 13:
+                # Leer heißt hier schon „kein Wurf“ – eine echte 0 % soll
+                # als 0 % stehen und nicht als Strich.
+                cell.number_format = "0.0%"
+            elif column == 14:
+                cell.number_format = PERCENT
+            elif column in (11, 12):
+                cell.number_format = COUNT
+        ws.row_dimensions[row].height = 18
+
+    ws.cell(
+        row=total_row + 1,
+        column=10,
+        value="„ohne Zone“ = Würfe, bei denen im Protokoll keine Zone steht. "
+        "Je weniger davon, desto aussagekräftiger das Bild links.",
+    ).font = NOTE_FONT
+
+    # --- Das Feld (links): Tor oben, Kacheln je Zone -------------------------
+    ws.merge_cells("B6:G6")
+    goal = ws["B6"]
+    goal.value = "T O R"
+    goal.font = HEAD_FONT
+    goal.fill = HEAD_FILL
+    goal.alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[6].height = 18
+
+    quota_cells: list[str] = []
+    for zone, top, first_col, last_col in FELD_KACHELN:
+        source = zone_rows[zone]
+        first_letter = get_column_letter(first_col)
+        last_letter = get_column_letter(last_col)
+        rows = [
+            (top, f"={get_column_letter(10)}{source}", SECTION_FONT, None),
+            (
+                top + 1,
+                f'=IF($K{source}=0,"keine Würfe","Tore / Würfe: "&$L{source}&" / "&$K{source})',
+                BODY_FONT,
+                None,
+            ),
+            (top + 2, f'=IF($K{source}=0,"",$M{source})', MARKER_FONT, "0.0%"),
+        ]
+        for row, formula, font, number_format in rows:
+            ws.merge_cells(f"{first_letter}{row}:{last_letter}{row}")
+            cell = ws[f"{first_letter}{row}"]
+            cell.value = formula
+            cell.font = font
+            cell.alignment = Alignment(horizontal="center", vertical="center")
+            if number_format:
+                cell.number_format = number_format
+            ws.row_dimensions[row].height = 20 if row == top + 2 else 17
+        quota_cells.append(f"{first_letter}{top + 2}")
+
+        # Rahmen um die ganze Kachel, damit das Feld wie Zonen auf einer
+        # Tafel aussieht und nicht wie eine Tabelle.
+        for row in range(top, top + 3):
+            for column in range(first_col, last_col + 1):
+                ws.cell(row=row, column=column).border = Border(
+                    left=THIN if column == first_col else None,
+                    right=THIN if column == last_col else None,
+                    top=THIN if row == top else None,
+                    bottom=THIN if row == top + 2 else None,
+                )
+                ws.cell(row=row, column=column).fill = PANEL_FILL
+
+    # Die Quote färbt die Kachel: rot unter 40 %, grün ab 70 % – dieselbe
+    # Skala wie im Blatt „Auswertung“.
+    for cell_ref in quota_cells:
+        ws.conditional_formatting.add(
+            cell_ref,
+            ColorScaleRule(
+                start_type="num", start_value=0.2, start_color="F8B4B4",
+                mid_type="num", mid_value=0.45, mid_color="FDE68A",
+                end_type="num", end_value=0.75, end_color="A7D8A0",
+            ),
+        )
+    ws.conditional_formatting.add(
+        f"M{first_zone}:M{no_zone_row - 1}",
+        ColorScaleRule(
+            start_type="num", start_value=0.2, start_color="F8B4B4",
+            mid_type="num", mid_value=0.45, mid_color="FDE68A",
+            end_type="num", end_value=0.75, end_color="A7D8A0",
+        ),
+    )
+    ws.conditional_formatting.add(
+        f"K{first_zone}:K{no_zone_row - 1}",
+        DataBarRule(start_type="num", start_value=0, end_type="max", color=MARKER, showValue=True),
+    )
+
+    # --- Je Spieler: Tore/Würfe und Quote in jeder Zone ----------------------
+    player_title = 21
+    ws.cell(row=player_title, column=1, value="Wurfbild je Spieler").font = SECTION_FONT
+    ws.cell(
+        row=player_title + 1,
+        column=1,
+        value="Tore/Würfe und Quote je Zone – für das oben gewählte Spiel (leer = ganze Saison). "
+        "Die Nr. oben gilt hier nicht: die Liste zeigt immer den ganzen Kader.",
+    ).font = NOTE_FONT
+
+    group_row = player_title + 2
+    header_row = group_row + 1
+    groups = [("Spieler", 1, 2)]
+    headers = ["Nr.", "Name"]
+    for index, zone in enumerate(ZONEN):
+        first_col = 3 + index * 2
+        groups.append((zone, first_col, first_col + 1))
+        headers += ["T / W", "Quote"]
+    style_group_row(ws, group_row, groups)
+    style_header(ws, header_row, headers)
+
+    first = header_row + 1
+    last = first + (KADER_LAST - KADER_FIRST)
+    for offset, row in enumerate(range(first, last + 1)):
+        kader_row = KADER_FIRST + offset
+        ws.cell(row=row, column=1, value=f'=IF(Kader!$A{kader_row}="","",Kader!$A{kader_row})')
+        ws.cell(row=row, column=2, value=f'=IF(Kader!$B{kader_row}="","",Kader!$B{kader_row})')
+        for index, zone in enumerate(ZONEN):
+            column = 3 + index * 2
+            zone_ref = f'"{zone}"'
+            shots = zone_count(zone_ref, WURF_AKTIONEN, "$B$3", f"$A{row}")
+            goals = zone_count(zone_ref, TOR_AKTIONEN, "$B$3", f"$A{row}")
+            ws.cell(
+                row=row,
+                column=column,
+                value=f'=IF($A{row}="","",IF(({shots})=0,"",({goals})&" / "&({shots})))',
+            )
+            ws.cell(
+                row=row,
+                column=column + 1,
+                value=f'=IF($A{row}="","",IFERROR(({goals})/({shots}),""))',
+            )
+        for column in range(1, 15):
+            cell = ws.cell(row=row, column=column)
+            cell.font = BODY_FONT
+            cell.border = BORDER
+            cell.fill = CALC_FILL
+            cell.alignment = Alignment(horizontal="left" if column == 2 else "center")
+            if column >= 4 and column % 2 == 0:
+                cell.number_format = "0.0%"
+        ws.row_dimensions[row].height = 18
+
+    for index in range(len(ZONEN)):
+        letter = get_column_letter(4 + index * 2)
+        ws.conditional_formatting.add(
+            f"{letter}{first}:{letter}{last}",
+            ColorScaleRule(
+                start_type="num", start_value=0.2, start_color="F8B4B4",
+                mid_type="num", mid_value=0.45, mid_color="FDE68A",
+                end_type="num", end_value=0.75, end_color="A7D8A0",
+            ),
+        )
+
+    widths = {"A": 6, "B": 22}
+    for index in range(len(ZONEN)):
+        widths[get_column_letter(3 + index * 2)] = 9
+        widths[get_column_letter(4 + index * 2)] = 9
+    # Die Zonentabelle oben rechts teilt sich die Spalten J–N mit der
+    # Spielerliste; „Zone“ braucht dort etwas mehr Platz.
+    widths["J"] = 15
+    set_widths(ws, widths)
+    print_setup(ws, landscape=True)
+    # Feld, Zonentabelle und Kader passen auf eine Querseite – sonst bricht
+    # die Spielerliste mit drei leeren Zeilen auf eine zweite Seite um.
+    ws.page_setup.fitToHeight = 1
+
+
 def build_saison(ws) -> tuple[int, int]:
     title_block(
         ws,
@@ -956,6 +1237,7 @@ TAB_COLORS = {
     "Kader": COURT,
     "Spielprotokoll": COURT,
     "Auswertung": COURT_SOFT,
+    "Wurfbild": MARKER,
     "Saison": COURT_SOFT,
 }
 
@@ -968,6 +1250,7 @@ def main() -> None:
     kader = workbook.create_sheet("Kader")
     protokoll = workbook.create_sheet("Spielprotokoll")
     auswertung = workbook.create_sheet("Auswertung")
+    wurfbild = workbook.create_sheet("Wurfbild")
     saison = workbook.create_sheet("Saison")
 
     build_start(start)
@@ -975,6 +1258,7 @@ def main() -> None:
     build_protokoll(protokoll)
     first_game, last_game = build_saison(saison)
     build_auswertung(auswertung, first_game, last_game)
+    build_wurfbild(wurfbild)
 
     # Benannter Bereich für die Spiel-Auswahllisten (Protokoll + Auswertung).
     workbook.defined_names["Spiele"] = DefinedName(

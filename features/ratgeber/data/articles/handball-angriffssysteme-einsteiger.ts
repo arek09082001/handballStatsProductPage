@@ -5,12 +5,13 @@ export const handballAngriffssystemeEinsteiger: Article = {
   title: 'Angriffssysteme für Einsteiger: 3:3, 4:2 und das Spiel ohne Ball',
   metaTitle: 'Handball-Angriffssysteme: 3:3, 4:2 und Laufwege',
   metaDescription:
-    'Angriffssysteme im Handball für Einsteiger: Grundordnung 3:3 und 4:2, Aufgaben je Position, das Spiel ohne Ball und gegen welche Abwehr was passt. Mit Diagramm.',
+    'Angriffssysteme im Handball für Einsteiger: 3:3 und 4:2, Aufgaben je Position, Freilaufen und Spiel ohne Ball, gegen welche Abwehr was passt. Mit Diagramm.',
   keywords: [
     'angriffssystem handball',
     'handball 3 3 angriff',
     'handball 4 2 angriff',
     'handball freilaufen',
+    'handball freilaufen ohne ball',
     'handball spiel ohne ball',
     'kempa trick handball',
     'handball angriff einsteiger',
@@ -19,7 +20,7 @@ export const handballAngriffssystemeEinsteiger: Article = {
   category: 'Taktik & Systeme',
   archetype: 'system',
   datePublished: '2026-06-15',
-  dateModified: '2026-08-07',
+  dateModified: '2026-10-14',
   readingTimeMinutes: 9,
   excerpt:
     'Ein Angriffssystem ist keine Choreografie, sondern eine Ordnung, aus der Entscheidungen entstehen. Grundordnung, Aufgaben je Position, das Spiel ohne Ball – und wie du eine Umstellung über drei Einheiten hinbekommst.',
@@ -47,7 +48,7 @@ Das Alternativsystem **4:2** – vier Rückraumspieler und zwei Kreisläufer –
 
 **Der Kreisläufer** stellt Sperren und löst sich. Er entscheidet über den Erfolg des Systems mehr als jeder andere, weil er die Abwehr bindet – und zwar auch dann, wenn er den Ball nie bekommt.
 
-## Das Bewegungsprinzip: Spiel ohne Ball
+## Das Bewegungsprinzip: Spiel ohne Ball und Freilaufen
 
 Hier liegt der eigentliche Hebel, und er ist im Amateurbereich fast überall ungenutzt. Ein Angriff mit sechs Spielern hat einen Ballführenden und fünf Spieler ohne Ball. Was diese fünf tun, entscheidet, ob eine Lücke entsteht.
 
@@ -58,6 +59,8 @@ Drei Prinzipien reichen für den Einstieg:
 **Das Timing bestimmt der Ballführende, nicht der Anbietende.** Wer sich zu früh löst, ist beim Anspiel schon wieder gedeckt. Die Bewegung beginnt, wenn der Ballführende sie sehen kann – nicht vorher.
 
 **Nach dem Pass geht die Bewegung weiter.** Der häufigste Fehler im Amateurangriff: passen und stehen bleiben. Wer nach dem Pass sofort weiterläuft, bindet seinen Verteidiger und erzeugt eine Lücke für den Nächsten.
+
+Freilaufen selbst ist dabei weniger Tempo als Richtungswechsel: zwei, drei Schritte weg vom Ball, um den Verteidiger mitzunehmen, dann der Antritt in die Gegenrichtung – in den Rücken des Verteidigers oder in die Lücke, die er gerade verlassen hat. Wer nur geradeaus zum Ball läuft, bringt seinen Gegenspieler mit. Für Einsteiger reicht eine Regel: erst weg, dann entgegen, und die Hände zeigen, wohin der Pass soll.
 
 Zwei konkrete Bewegungen, die den Einstieg tragen: das **Stoßen** – der Ballführende geht auf die Lücke zwischen zwei Verteidigern zu und zwingt einen von beiden, sich zu entscheiden – und das **Kreuzen**, bei dem zwei Rückraumspieler die Position tauschen und die Zuordnung der Abwehr auf die Probe stellen.
 
@@ -130,6 +133,15 @@ Ob euer Angriffssystem trägt, siehst du an vier Zahlen:
       ],
       note: 'Orientierung für die Vorbereitung, keine Regel. Entscheidend ist, welches System deine Mannschaft tatsächlich beherrscht.',
     },
+    {
+      after: 'Kennzahlen zur Kontrolle',
+      kind: 'appBridge',
+      title: 'Welche Besetzung trifft, rechnet die App aus',
+      text:
+        'Aus den erfassten Wechseln rechnet Statix mit, welche Aufstellung und welches Rückraum-Trio wie viele Tore geworfen hat – pro Spiel und über die Saison. So siehst du, ob die Umstellung trägt und wer zusammen trifft.',
+      feature: 'aufstellungs-analyse',
+      featureLabel: 'Aufstellungs-Analyse ansehen',
+    },
   ],
   faqs: [
     {
@@ -146,6 +158,11 @@ Ob euer Angriffssystem trägt, siehst du an vier Zahlen:
       question: 'Was bedeutet Spiel ohne Ball im Handball?',
       answer:
         'Alles, was die fünf Spieler ohne Ball tun, während einer angreift – und genau das entscheidet, ob eine Lücke entsteht. Drei Prinzipien reichen: Anbieten heißt Bewegung in den Raum, den die Abwehr verlässt; das Timing bestimmt der Ballführende; und nach dem eigenen Pass geht die Bewegung weiter statt aufzuhören.',
+    },
+    {
+      question: 'Wie lernen Spieler, sich ohne Ball freizulaufen?',
+      answer:
+        'Über den Richtungswechsel, nicht über Tempo: zwei, drei Schritte weg vom Ball, um den Verteidiger mitzunehmen, dann der Antritt in die Gegenrichtung – in seinen Rücken oder in die Lücke, die er verlassen hat. Trainiert wird das zuerst ohne Gegner im 3:3 mit festen Laufwegen, dann gegen halbaktive Abwehr. Die Regel für Einsteiger: erst weg, dann entgegen, und mit den Händen zeigen, wohin der Pass soll.',
     },
     {
       question: 'Lohnt sich der Kempa-Trick im Amateurhandball?',

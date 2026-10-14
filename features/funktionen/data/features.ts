@@ -52,6 +52,29 @@ export function featurePath(slug: string): string {
 }
 
 /**
+ * The free things on this site a feature page points at under "Kostenlos
+ * dazu": the Excel template, the statistics guide, the two tools and two
+ * guides. They are the pages search sends people to (the Excel template ranks
+ * first for its terms, the statistics hub and the shot pictures get the
+ * impressions), and a feature page that links them hands that reach on —
+ * and gives somebody who is not ready for an account a next step that is not
+ * the back button. Titles and lines live in `featuresPage.detail.resources`.
+ *
+ * Plain strings rather than the routes' own constants: this module is pure
+ * data imported by `lib/seo.ts`, and the tool modules are not.
+ */
+export const FEATURE_RESOURCES = {
+  excelTemplate: '/handball-statistik-excel-vorlage',
+  statsGuide: '/handball-statistiken',
+  shotQuotaCalculator: '/wurfquote-rechner',
+  tacticsBoard: '/handball-taktikboard',
+  xgGuide: '/ratgeber/handball-expected-goals-xg',
+  recordingComparison: '/ratgeber/handball-statistik-zettel-excel-app',
+} as const;
+
+export type FeatureResourceId = keyof typeof FEATURE_RESOURCES;
+
+/**
  * How far along a feature is.
  *
  * `live` is the default and the only one that needs no explanation. The other
@@ -150,6 +173,8 @@ export interface FeatureRecord {
   shots: { src: string; width: number; height: number }[];
   /** Slugs of the features that answer the next question. Two or three. */
   related: string[];
+  /** Free tools and guides shown under "Kostenlos dazu". See {@link FEATURE_RESOURCES}. */
+  resources?: FeatureResourceId[];
   /** Social card for the route. Falls back to the site default. */
   ogImage?: string;
   /**
@@ -235,6 +260,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-live-erfassung.png', width: 780, height: 1688 },
     ],
     related: ['offline-und-app', 'wurfbilder', 'spielerstatistiken'],
+    resources: ['recordingComparison', 'excelTemplate', 'statsGuide'],
     ogImage: '/recordStatsInGame.png',
     meta: {
       title: 'Handball live erfassen: Statistik per Tap von der Bank',
@@ -357,6 +383,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-spielerstatistiken.png', width: 780, height: 1688 },
     ],
     related: ['expected-goals', 'aufstellungs-analyse', 'wurfbilder'],
+    resources: ['statsGuide', 'shotQuotaCalculator', 'excelTemplate'],
     ogImage: '/statsTableInGame.png',
     meta: {
       title: 'Handball Spielerstatistiken: Wurfquote, Effizienz & Verlauf',
@@ -379,12 +406,19 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-wurfbild.png', width: 780, height: 1688 },
     ],
     related: ['expected-goals', 'spielerstatistiken', 'ki-analyse'],
+    resources: ['excelTemplate', 'shotQuotaCalculator', 'statsGuide'],
     ogImage: '/shotMaps.png',
     meta: {
-      title: 'Handball Wurfbild & Heatmap: Würfe auf dem Feld auswerten',
+      // Searched in the plural ("wurfbilder handball", "handball wurfbilder":
+      // ~270 impressions, position 4–5, Search Console Oct 2026), so the
+      // title leads with it. The description names the free template, which
+      // is the answer for whoever searches before having an app.
+      title: 'Wurfbilder im Handball: Wurfbild & Heatmap',
       description:
-        'Wurfbilder und Heatmaps aus der Live-Erfassung: acht Wurfzonen, neun Torzonen, Tore und Fehlwürfe getrennt — für ein Spiel, eine Spielerin oder die ganze Saison.',
+        'Handball-Wurfbilder aus der Live-Erfassung: acht Wurfzonen, neun Torzonen, Tore und Fehlwürfe getrennt – je Spiel oder Saison. Ohne App: Excel-Vorlage mit Wurfbild.',
       keywords: [
+        'wurfbilder handball',
+        'handball wurfbilder',
         'handball wurfbild',
         'handball heatmap',
         'handball wurfbilder erstellen',
@@ -402,6 +436,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/spielerprofil-ki.png', width: 1360, height: 562 },
     ],
     related: ['spielerstatistiken', 'turniere', 'wurfbilder'],
+    resources: ['statsGuide', 'excelTemplate'],
     ogImage: '/aiAnalyze.png',
     meta: {
       title: 'KI-Analyse für Handball: Spiel, Team, Spieler und Turnier',
@@ -443,6 +478,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/statistik-xs-torhueter.png', width: 2512, height: 512 },
     ],
     related: ['wurfbilder', 'spielerstatistiken', 'aufstellungs-analyse'],
+    resources: ['xgGuide', 'statsGuide', 'shotQuotaCalculator'],
     ogImage: '/statistik-xg-uebersicht.png',
     isNew: true,
     meta: {
@@ -469,6 +505,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/aufstellungen-zusammenspiel.png', width: 2512, height: 1086 },
     ],
     related: ['spielerstatistiken', 'expected-goals', 'ki-analyse'],
+    resources: ['tacticsBoard', 'statsGuide'],
     ogImage: '/aufstellungen-tore.png',
     isNew: true,
     meta: {

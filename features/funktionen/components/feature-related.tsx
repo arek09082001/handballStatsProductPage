@@ -9,6 +9,7 @@ import {
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
 import {
+  FEATURE_RESOURCES,
   FEATURES_PAGE_PATH,
   featureLabel,
   featurePath,
@@ -68,6 +69,31 @@ export default function FeatureRelated({ feature }: { feature: Feature }) {
             </BoardCard>
           ))}
         </div>
+
+        {/* Free tools and guides beside the features — the pages search
+            sends people to, linked from the feature they belong to. */}
+        {feature.resources?.length ? (
+          <div className='mt-12 border-t border-ink/10 pt-8'>
+            <h3 className='font-hand text-2xl font-semibold text-primary'>
+              {t('resourcesTitle')}
+            </h3>
+            <ul className='mt-4 grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-3'>
+              {feature.resources.map((id) => (
+                <li key={id}>
+                  <Link
+                    href={FEATURE_RESOURCES[id]}
+                    className='group inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-ink transition-colors hover:text-primary'>
+                    {t(`resources.${id}.title`)}
+                    <ArrowRight className='size-4 text-primary transition-transform duration-200 group-hover:translate-x-0.5' />
+                  </Link>
+                  <p className='mt-1 text-[15px] leading-6 text-ink/70'>
+                    {t(`resources.${id}.text`)}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
         <Link
           href={FEATURES_PAGE_PATH}
