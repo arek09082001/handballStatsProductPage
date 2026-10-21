@@ -12,6 +12,7 @@ export type DemoClickLocation =
 export type RegisterClickLocation =
   | 'hero'
   | 'navbar'
+  | 'showcase'
   | 'pros'
   | 'final_cta'
   | 'footer'

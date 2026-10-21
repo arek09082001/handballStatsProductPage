@@ -1512,30 +1512,53 @@
       }
     },
     "showcase": {
-      "kicker": "Live in der App",
-      "title": "So erfasst und analysierst du Handball-Statistiken mit Statix",
-      "description": "Von der Live-Erfassung am Spielfeldrand bis zur fertigen Auswertung für die Kabine – ein Blick in die App.",
-      "ctaLabel": "In der Live-Demo selbst ausprobieren",
+      "kicker": "Eine Spielminute in der App",
+      "titleLead": "Getippt in Minute 46.",
+      "titleHighlight": "Ausgewertet in Minute 46.",
+      "description": "Du erfasst an der Bank, Statix rechnet mit – nicht nach dem Abpfiff, sondern während der Angriff noch läuft. So sieht das auf dem Tablet aus, Tipp für Tipp.",
       "items": [
         {
-          "badge": "Live erfassen",
-          "title": "Jede Aktion mit einem Tap",
-          "description": "Tippe direkt auf das Spielfeld: Tor, Tempo-Gegenstoß, Ballgewinn, Block, 7-Meter, Zeitstrafe oder Fehlwurf. Bank, Aufstellung und Spielstand immer im Blick – ohne den Blick vom Spiel zu nehmen.",
-          "linkLabel": "Live-Erfassung im Detail"
+          "clock": "46:27",
+          "moment": "Erik trifft aus dem Rückraum",
+          "title": "Ein Tor in vier Tipps.",
+          "description": "Spieler, „Tor“, Wurfposition, Torecke – und wer den Pass gespielt hat. Ein paar Sekunden, dann ist dein Blick wieder auf dem Feld.",
+          "facts": [
+            "Funktioniert offline in der Halle",
+            "Jeder Tipp lässt sich rückgängig machen"
+          ],
+          "linkLabel": "Live-Erfassung im Detail",
+          "alt": "Statix auf dem Tablet: Ein Tor wird mit vier Tipps erfasst – Spieler, Tor, Wurfposition, Torecke und Assist –, danach springt der Spielstand auf 25:21."
         },
         {
-          "badge": "Sofort ausgewertet",
-          "title": "Spielerstatistiken in Echtzeit",
-          "description": "Tore, Würfe, Quote, Assists, Ballgewinne, Blocks und Disziplin – für jeden Spieler automatisch berechnet, schon während das Spiel läuft.",
-          "linkLabel": "Alle Handball-Statistiken erklärt"
+          "clock": "46:28",
+          "moment": "eine Sekunde später",
+          "title": "Wer heute trifft, siehst du sofort.",
+          "description": "Tore, Würfe, Quote, Assists, Ballgewinne, Strafen – für jeden Spieler gerechnet, während das Spiel läuft. Ein Tipp auf die Spalte, und oben steht, wer gerade heiß ist.",
+          "facts": [
+            "Nichts nachtragen, nichts zusammenzählen",
+            "Für Feldspieler und Torhüter"
+          ],
+          "linkLabel": "Alle Handball-Statistiken erklärt",
+          "alt": "Statix auf dem Tablet: Die Feldspieler-Tabelle mit Toren, Würfen und Quote zählt live hoch und wird per Tipp nach Wurfquote sortiert."
         },
         {
-          "badge": "Wurfbilder & Heatmaps",
-          "title": "Würfe & Tore auf dem Spielfeld",
-          "description": "Visualisiere jeden Wurf und jedes Tor direkt auf dem Feld. Erkenne Heatmaps, starke Zonen und Muster, die Spiele entscheiden – pro Spieler oder fürs ganze Team.",
-          "linkLabel": "Mehr zu Wurfbildern im Handball"
+          "clock": "46:33",
+          "moment": "vor der nächsten Auszeit",
+          "title": "Wo eure Würfe landen – und wo nicht.",
+          "description": "Jede Wurfposition mit Quote, jede Torecke mit Treffern. Tippst du auf „Rückraum Rechts“, zeigt das Tor nur noch die Würfe von dort – genau das, was auf keinem Zettel steht.",
+          "facts": [
+            "Pro Spieler oder fürs ganze Team",
+            "Auch die Paraden deines Torhüters"
+          ],
+          "linkLabel": "Mehr zu Wurfbildern im Handball",
+          "alt": "Statix auf dem Tablet: Wurfbild mit Wurfpositionen und Torecken; ein Tipp auf eine Wurfposition filtert die Torecken auf die Würfe von dort."
         }
-      ]
+      ],
+      "closingTitle": "Dein nächstes Spiel. Ohne Zettel.",
+      "primaryCta": "Kostenlos starten",
+      "secondaryCta": "Live-Demo – ohne Account",
+      "trust": "Kostenlos starten – keine Kreditkarte · Offline in der Halle",
+      "note": "Die Clips zeigen die Bildschirme der App mit einer Demo-Mannschaft."
     },
     "ai": {
       "kicker": "KI-Analyse",
