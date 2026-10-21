@@ -4,7 +4,7 @@ import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import AiFilm from './ai-film';
+import ChapterFilm from './chapter-film';
 import HeroActionButton from './hero-action-button';
 import { CourtDiagram, Grain, MarkerUnderline, SectionHeading } from './tactic';
 
@@ -60,7 +60,8 @@ export default function AiAnalyticsSection() {
         />
 
         <div className='mt-12 lg:mt-16'>
-          <AiFilm
+          <ChapterFilm
+            name='ki-analyse'
             chapters={chapters}
             alt={t('filmAlt')}
             chaptersLabel={t('chaptersLabel')}

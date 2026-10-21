@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Grain, PlayerMagnet, SectionHeading } from './tactic';
-import TickerMock from './ticker-mock';
 
 interface Point {
   title: string;
@@ -12,8 +11,10 @@ interface Point {
 }
 
 /**
- * "Und dann noch" — one band for everything past the single game: tournaments,
- * the public live ticker and the coaching staff.
+ * "Und dann noch" — one band for everything past the single game: tournaments
+ * and the coaching staff. The live ticker left this band again for its own
+ * (`live-ticker-section.tsx`, with a film); its old `#liveticker` anchor now
+ * belongs to that section.
  *
  * These were three full bands (tournament, live ticker, collaboration) with six
  * screenshots between them, roughly three viewports of scroll a visitor had to
@@ -22,7 +23,7 @@ interface Point {
  * exists. So the three collapse into three ruled entries and keep the one
  * visual that actually earns its place: the ticker a parent sees in the stands.
  *
- * The old `#tournament`, `#liveticker` and `#collaboration` anchors are kept as
+ * The old `#tournament` and `#collaboration` anchors are kept as
  * zero-height targets so links from the footer, the 404 page and anywhere off
  * site still land on the right band instead of the top of the page.
  */
@@ -34,14 +35,13 @@ export default function MoreSection() {
     <section
       id='mehr'
       className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-14 md:py-24'>
-      {/* Legacy anchors — the three bands this one replaced. */}
+      {/* Legacy anchors — the bands this one replaced. */}
       <span id='tournament' aria-hidden className='block scroll-mt-24' />
-      <span id='liveticker' aria-hidden className='block scroll-mt-24' />
       <span id='collaboration' aria-hidden className='block scroll-mt-24' />
 
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
-        <div className='grid items-center gap-14 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-20'>
+        <div>
           <div>
             <SectionHeading
               align='left'
@@ -50,7 +50,7 @@ export default function MoreSection() {
               description={t('description')}
             />
 
-            <div className='mt-10'>
+            <div className='mt-10 grid gap-x-12 md:grid-cols-2'>
               {points.map((point, index) => (
                 <div
                   key={point.title}
@@ -77,8 +77,6 @@ export default function MoreSection() {
               <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
             </Link>
           </div>
-
-          <TickerMock />
         </div>
       </div>
     </section>

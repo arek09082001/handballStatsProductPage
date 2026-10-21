@@ -1743,7 +1743,7 @@
     },
     "more": {
       "kicker": "And also",
-      "title": "Tournaments, live ticker and your coaching staff",
+      "title": "Tournaments and your coaching staff",
       "description": "Everything beyond the single game – without switching to another tool for it.",
       "linkLabel": "Every feature in detail",
       "points": [
@@ -1752,44 +1752,88 @@
           "description": "Set up a tournament with several teams and start live games straight from the schedule – the standings update themselves after every result."
         },
         {
-          "title": "Live ticker",
-          "description": "Publish your game as a public ticker. Parents, fans and club mates follow the score and the game flow by link or QR code – no account needed."
-        },
-        {
           "title": "Coaching staff & roster",
           "description": "Share games with fellow coaches, invite assistant coaches, involve players with surveys and export analyses as a PDF or a share link."
         }
       ],
-      "mock": {
-        "liveBadge": "Live",
-        "minute": "43:12",
-        "homeTeam": "HSG Statix",
-        "awayTeam": "TV Musterstadt",
-        "homeScore": "24",
-        "awayScore": "21",
-        "feedTitle": "Game flow",
-        "events": [
+      "linkTitle": "Every feature of Statix in detail"
+    },
+    "liveTicker": {
+      "kicker": "Live ticker",
+      "titleLead": "Can't make it to the hall?",
+      "titleHighlight": "Be there live anyway.",
+      "description": "One tap on LIVE, and every goal you record shows up seconds later on the phones of parents, grandparents and fans – in the browser, no app, no account.",
+      "filmAlt": "Film: the coach publishes the game as a live ticker and shares the link in the parents' chat. A goal is recorded and seconds later it appears on the family's phones – with a power-play countdown, a timeout, sponsors on goals, timeouts and in the banner, and finally the team's permanent link.",
+      "chaptersLabel": "Chapters of the film",
+      "play": "Play film",
+      "pause": "Pause film",
+      "chapters": [
+        {
+          "label": "Share",
+          "text": "One tap on LIVE, the link goes into the parents' chat."
+        },
+        {
+          "label": "A goal",
+          "text": "You tap “Goal” – seconds later the phone celebrates too."
+        },
+        {
+          "label": "Right there",
+          "text": "Grandma on the sofa, Dad on shift: everyone sees the same game."
+        },
+        {
+          "label": "Sponsors",
+          "text": "Banner, goal, timeout – your sponsor is part of every game."
+        },
+        {
+          "label": "Season",
+          "text": "One permanent link for all of the team's games."
+        }
+      ],
+      "benefitsTitle": "What you get",
+      "benefits": [
+        {
+          "title": "No extra work",
+          "description": "The ticker is built from what you record. Nobody has to type scores into the chat on the side."
+        },
+        {
+          "title": "No app, no account",
+          "description": "A link or QR code is enough – on Grandma's phone just as on the projector in the hall."
+        },
+        {
+          "title": "Made for youth teams",
+          "description": "Surnames are abbreviated by default, and one tap makes the game private again."
+        },
+        {
+          "title": "One link for the season",
+          "description": "Your team's permanent link shows every game you publish. Share it once and you're done."
+        }
+      ],
+      "sponsor": {
+        "kicker": "For your club",
+        "title": "Sponsor space every family sees.",
+        "description": "Everyone following the game looks at the ticker – on every goal, in every timeout, for the whole match. That is exactly where your sponsor appears. You upload the logo once; Statix adds the “presented by” label automatically.",
+        "keep": "of the sponsorship money stays with the club.",
+        "slotsTitle": "Three spots in the ticker",
+        "slots": [
           {
-            "minute": "43'",
-            "text": "Goal no. 7 – centre back court"
+            "title": "Banner",
+            "description": "Always at the bottom of the ticker. Several logos take turns."
           },
           {
-            "minute": "41'",
-            "text": "Save! 7-metre stopped"
+            "title": "Goal",
+            "description": "“Goal presented by …” – shown big on every one of your goals."
           },
           {
-            "minute": "39'",
-            "text": "2-minute suspension TV Musterstadt"
-          },
-          {
-            "minute": "38'",
-            "text": "Fast break – goal no. 11"
+            "title": "Timeout",
+            "description": "During every team timeout, right below the score."
           }
         ],
-        "qrLabel": "Scan & follow live",
-        "footnote": "This is what your live ticker looks like – sample data"
+        "note": "Sponsors in the ticker are part of the Coach tier – sign up before 1 January 2027 and you get it free until 30 June 2027.",
+        "pricingLink": "See pricing"
       },
-      "linkTitle": "Every feature of Statix in detail"
+      "primaryCta": "Start for free",
+      "secondaryCta": "Live demo – no account",
+      "note": "The live ticker itself stays free forever in the Basic tier. Example game with a demo team."
     }
   },
   "newsletterConfirm": {

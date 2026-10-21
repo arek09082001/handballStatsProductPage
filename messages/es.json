@@ -1743,8 +1743,8 @@
     },
     "more": {
       "kicker": "Y además",
-      "title": "Torneos, marcador en directo y tu cuerpo técnico",
-      "description": "Todo lo que va más allá del partido suelto, sin cambiar de herramienta para ello.",
+      "title": "Torneos y tu cuerpo técnico",
+      "description": "Todo lo que va más allá de un solo partido, sin cambiar de herramienta.",
       "linkLabel": "Todas las funciones en detalle",
       "points": [
         {
@@ -1752,44 +1752,88 @@
           "description": "Monta un torneo con varios equipos y arranca partidos en directo desde el propio calendario: la clasificación se actualiza sola tras cada resultado."
         },
         {
-          "title": "Marcador en directo",
-          "description": "Publica el partido como marcador público. Familias, aficionados y compañeros del club siguen el marcador y el desarrollo por enlace o código QR, sin cuenta."
-        },
-        {
           "title": "Cuerpo técnico y plantilla",
           "description": "Comparte partidos con otros entrenadores, invita a segundos entrenadores, implica a los jugadores con encuestas y exporta los análisis en PDF o como enlace."
         }
       ],
-      "mock": {
-        "liveBadge": "En directo",
-        "minute": "43:12",
-        "homeTeam": "HSG Statix",
-        "awayTeam": "TV Musterstadt",
-        "homeScore": "24",
-        "awayScore": "21",
-        "feedTitle": "Desarrollo del partido",
-        "events": [
+      "linkTitle": "Todas las funciones de Statix en detalle"
+    },
+    "liveTicker": {
+      "kicker": "Live ticker",
+      "titleLead": "¿No puedes ir al pabellón?",
+      "titleHighlight": "Vívelo en directo igualmente.",
+      "description": "Un toque en LIVE y cada gol que registras aparece segundos después en los móviles de padres, abuelos y aficionados: en el navegador, sin app y sin cuenta.",
+      "filmAlt": "Vídeo: el entrenador publica el partido como live ticker y comparte el enlace en el chat de padres. Registra un gol y segundos después aparece en los móviles de la familia, con la cuenta atrás de la superioridad, un tiempo muerto, patrocinadores en goles, tiempos muertos y en el banner y, al final, el enlace fijo del equipo.",
+      "chaptersLabel": "Capítulos del vídeo",
+      "play": "Reproducir vídeo",
+      "pause": "Pausar vídeo",
+      "chapters": [
+        {
+          "label": "Publicar",
+          "text": "Un toque en LIVE y el enlace va al chat de padres."
+        },
+        {
+          "label": "Un gol",
+          "text": "Tocas «Gol» y segundos después el móvil también lo celebra."
+        },
+        {
+          "label": "En pleno partido",
+          "text": "La abuela en el sofá, papá en el turno: todos ven el mismo partido."
+        },
+        {
+          "label": "Patrocinadores",
+          "text": "Banner, gol, tiempo muerto: vuestro patrocinador está en cada partido."
+        },
+        {
+          "label": "Temporada",
+          "text": "Un enlace fijo para todos los partidos del equipo."
+        }
+      ],
+      "benefitsTitle": "Lo que ganas",
+      "benefits": [
+        {
+          "title": "Sin trabajo extra",
+          "description": "El ticker se genera a partir de lo que registras. Nadie tiene que escribir el marcador en el chat."
+        },
+        {
+          "title": "Sin app ni cuenta",
+          "description": "Basta con un enlace o un código QR, en el móvil de la abuela igual que en el proyector del pabellón."
+        },
+        {
+          "title": "Pensado para equipos de base",
+          "description": "Los apellidos aparecen abreviados por defecto y con un toque el partido vuelve a ser privado."
+        },
+        {
+          "title": "Un enlace para la temporada",
+          "description": "El enlace fijo de tu equipo muestra cada partido que publicas. Se comparte una vez y listo."
+        }
+      ],
+      "sponsor": {
+        "kicker": "Para vuestro club",
+        "title": "Un espacio para patrocinadores que ve cada familia.",
+        "description": "Quien sigue el partido mira el ticker: en cada gol, en cada tiempo muerto, durante todo el encuentro. Justo ahí aparece vuestro patrocinador. Subes el logo una vez y Statix añade automáticamente la indicación «presentado por».",
+        "keep": "del dinero de los patrocinadores se queda en el club.",
+        "slotsTitle": "Tres espacios en el ticker",
+        "slots": [
           {
-            "minute": "43'",
-            "text": "Gol del 7 — central"
+            "title": "Banner",
+            "description": "Siempre en la parte inferior del ticker. Varios logos se van alternando."
           },
           {
-            "minute": "41'",
-            "text": "¡Parada! 7 metros detenido"
+            "title": "Gol",
+            "description": "«Gol presentado por …»: en grande en cada uno de vuestros goles."
           },
           {
-            "minute": "39'",
-            "text": "2 minutos para TV Musterstadt"
-          },
-          {
-            "minute": "38'",
-            "text": "Contraataque — gol del 11"
+            "title": "Tiempo muerto",
+            "description": "Durante cada tiempo muerto del equipo, justo debajo del marcador."
           }
         ],
-        "qrLabel": "Escanea y sigue en directo",
-        "footnote": "Así se ve tu marcador en directo — datos de ejemplo"
+        "note": "Los patrocinadores en el ticker forman parte del nivel Entrenador; quien se registre antes del 1 de enero de 2027 lo tiene gratis hasta el 30 de junio de 2027.",
+        "pricingLink": "Ver precios"
       },
-      "linkTitle": "Todas las funciones de Statix en detalle"
+      "primaryCta": "Empezar gratis",
+      "secondaryCta": "Demo en vivo, sin cuenta",
+      "note": "El live ticker en sí es gratuito para siempre en el nivel Básico. Partido de ejemplo con un equipo de demostración."
     }
   },
   "newsletterConfirm": {

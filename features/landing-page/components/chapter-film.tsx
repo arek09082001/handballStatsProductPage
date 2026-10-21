@@ -5,28 +5,31 @@ import Image from 'next/image';
 import { Pause, Play } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-/**
- * Wo die vier Akte des Films beginnen und enden, in Sekunden. Gespiegelt aus
- * `src/compositions/showcase/ai-film-timeline.ts` im Repo remotion-statix
- * (`ACTS`, 30 Bilder pro Sekunde) — wer dort einen Akt verschiebt, verschiebt
- * ihn hier mit, sonst springt die Kapitelleiste an die falsche Stelle.
- */
-const CHAPTER_BOUNDS: readonly [number, number][] = [
-  [0, 150 / 30],
-  [150 / 30, 400 / 30],
-  [400 / 30, 700 / 30],
-  [700 / 30, 960 / 30],
-];
-
 const VIDEO_W = 1600;
 const VIDEO_H = 900;
+
+/**
+ * Wo die Akte der Filme beginnen und enden, in Sekunden. Gespiegelt aus den
+ * Zeitplänen im Repo remotion-statix (`ACTS` in
+ * `src/compositions/showcase/{ai,ticker}-film-timeline.ts`, 30 Bilder pro
+ * Sekunde) — wer dort einen Akt verschiebt, verschiebt ihn hier mit, sonst
+ * springt die Kapitelleiste an die falsche Stelle.
+ */
+const acts = (...frames: number[]) => frames.slice(1).map((end, i) => [frames[i]! / 30, end / 30] as [number, number]);
+export const FILMS = {
+  'ki-analyse': acts(0, 150, 400, 700, 960),
+  'live-ticker': acts(0, 210, 450, 630, 960, 1170),
+} as const;
+export type FilmName = keyof typeof FILMS;
 
 interface Chapter {
   label: string;
   text: string;
 }
 
-interface AiFilmProps {
+interface ChapterFilmProps {
+  /** Dateiname unter `/videos/showcase/` (ohne Endung) und Schlüssel der Akte */
+  name: FilmName;
   chapters: Chapter[];
   alt: string;
   chaptersLabel: string;
@@ -35,8 +38,9 @@ interface AiFilmProps {
 }
 
 /**
- * Der Film der KI-Section: ein in Remotion gerendertes Video (Repo
- * remotion-statix, `AiFilm`) mit einer Kapitelleiste im Bild. Sie läuft mit — der
+ * Ein Film der Produktseite (KI-Analyse, Live-Ticker): ein in Remotion
+ * gerendertes Video (Repo remotion-statix, `AiFilm`/`TickerFilm`) mit einer
+ * Kapitelleiste im Bild. Sie läuft mit — der
  * Balken des laufenden Akts füllt sich — und springt beim Antippen an den
  * Anfang des Kapitels. So wird aus einem Hintergrundvideo eine Geschichte, die
  * man auch lesen kann, wenn man nicht hinschaut.
@@ -48,7 +52,8 @@ interface AiFilmProps {
  * Weil der Film länger als fünf Sekunden läuft, hat er einen Pause-Knopf
  * (WCAG 2.2.2).
  */
-export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseLabel }: AiFilmProps) {
+export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLabel, pauseLabel }: ChapterFilmProps) {
+  const bounds = FILMS[name];
   const frameRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [src, setSrc] = useState<string | null>(null);
@@ -66,7 +71,7 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
       return;
     }
     const small = window.matchMedia?.('(max-width: 767px)').matches;
-    const file = `/videos/showcase/ki-analyse${small ? '-sm' : ''}`;
+    const file = `/videos/showcase/${name}${small ? '-sm' : ''}`;
 
     const near = new IntersectionObserver(
       ([entry]) => {
@@ -92,7 +97,7 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
       near.disconnect();
       seen.disconnect();
     };
-  }, []);
+  }, [name]);
 
   // Sofort starten, falls die Bühne beim Setzen der Quelle schon zu sehen ist
   useEffect(() => {
@@ -132,21 +137,21 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
 
   const jump = useCallback((index: number) => {
     const video = videoRef.current;
-    const bounds = CHAPTER_BOUNDS[index];
-    if (!video || !bounds) return;
-    video.currentTime = bounds[0] + 0.05;
-    setTime(bounds[0]);
+    const chapter = bounds[index];
+    if (!video || !chapter) return;
+    video.currentTime = chapter[0] + 0.05;
+    setTime(chapter[0]);
     userPausedRef.current = false;
     setUserPaused(false);
     void video.play().catch(() => {});
-  }, []);
+  }, [bounds]);
 
-  const current = CHAPTER_BOUNDS.findIndex(([a, b]) => time >= a && time < b);
+  const current = bounds.findIndex(([a, b]) => time >= a && time < b);
   const live = Boolean(src) && !reduced;
   // Ohne laufenden Film zeigt die Leiste das erste Kapitel
   const shown = current >= 0 ? current : 0;
   const fillOf = (index: number) => {
-    const [a, b] = CHAPTER_BOUNDS[index] ?? [0, 1];
+    const [a, b] = bounds[index] ?? [0, 1];
     if (!live || current < 0) return 0;
     if (index < current) return 1;
     if (index > current) return 0;
@@ -206,7 +211,7 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
         className='board-shadow-court relative w-full overflow-hidden rounded-2xl border border-chalk/12 bg-court'
         style={{ aspectRatio: `${VIDEO_W} / ${VIDEO_H}` }}>
         <Image
-          src='/videos/showcase/ki-analyse.jpg'
+          src={`/videos/showcase/${name}.jpg`}
           alt={alt}
           width={VIDEO_W}
           height={VIDEO_H}
@@ -256,7 +261,7 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
           Geschichte als Text. */}
       {live ? hud('mt-3 sm:hidden', false) : null}
       {!live ? (
-        <ol aria-label={chaptersLabel} className='mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-4'>
+        <ol aria-label={chaptersLabel} className={cn('mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2', chapters.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4')}>
           {chapters.map((chapter, index) => (
             <li key={chapter.label}>
               <span className='font-display text-[15px] font-extrabold tracking-[-0.01em] text-chalk'>

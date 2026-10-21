@@ -1743,8 +1743,8 @@
     },
     "more": {
       "kicker": "A do tego",
-      "title": "Turnieje, relacja na żywo i Twój sztab",
-      "description": "Wszystko poza pojedynczym meczem — bez przesiadania się do innego narzędzia.",
+      "title": "Turnieje i twój sztab trenerski",
+      "description": "Wszystko, co wykracza poza pojedynczy mecz – bez zmiany narzędzia.",
       "linkLabel": "Wszystkie funkcje szczegółowo",
       "points": [
         {
@@ -1752,44 +1752,88 @@
           "description": "Ustaw turniej z kilkoma drużynami i startuj mecze na żywo wprost z terminarza — tabela aktualizuje się sama po każdym wyniku."
         },
         {
-          "title": "Relacja na żywo",
-          "description": "Opublikuj mecz jako publiczną relację. Rodzice, kibice i koledzy z klubu śledzą wynik i przebieg przez link albo kod QR, bez konta."
-        },
-        {
           "title": "Sztab i kadra",
           "description": "Udostępniaj mecze innym trenerom, zapraszaj asystentów, angażuj zawodników ankietami i eksportuj analizy do PDF albo jako link."
         }
       ],
-      "mock": {
-        "liveBadge": "Na żywo",
-        "minute": "43:12",
-        "homeTeam": "HSG Statix",
-        "awayTeam": "TV Musterstadt",
-        "homeScore": "24",
-        "awayScore": "21",
-        "feedTitle": "Przebieg meczu",
-        "events": [
+      "linkTitle": "Wszystkie funkcje Statix w szczegółach"
+    },
+    "liveTicker": {
+      "kicker": "Live ticker",
+      "titleLead": "Nie ma cię w hali?",
+      "titleHighlight": "I tak jesteś na żywo.",
+      "description": "Jedno dotknięcie LIVE i każda bramka, którą zapisujesz, po kilku sekundach pojawia się na telefonach rodziców, dziadków i kibiców – w przeglądarce, bez aplikacji i bez konta.",
+      "filmAlt": "Film: trener publikuje mecz jako live ticker i udostępnia link na czacie rodziców. Zapisuje bramkę, która po kilku sekundach pojawia się na telefonach rodziny – z odliczaniem przewagi, czasem drużyny, sponsorami przy bramkach, czasach i w banerze, a na końcu ze stałym linkiem drużyny.",
+      "chaptersLabel": "Rozdziały filmu",
+      "play": "Odtwórz film",
+      "pause": "Zatrzymaj film",
+      "chapters": [
+        {
+          "label": "Udostępnij",
+          "text": "Jedno dotknięcie LIVE, link trafia na czat rodziców."
+        },
+        {
+          "label": "Bramka",
+          "text": "Dotykasz „Bramka” – po kilku sekundach telefon też świętuje."
+        },
+        {
+          "label": "W środku meczu",
+          "text": "Babcia na kanapie, tata w pracy: wszyscy widzą ten sam mecz."
+        },
+        {
+          "label": "Sponsorzy",
+          "text": "Baner, bramka, czas – wasz sponsor jest przy każdym meczu."
+        },
+        {
+          "label": "Sezon",
+          "text": "Jeden stały link do wszystkich meczów drużyny."
+        }
+      ],
+      "benefitsTitle": "Co ci to daje",
+      "benefits": [
+        {
+          "title": "Bez dodatkowej pracy",
+          "description": "Ticker powstaje z twojego zapisu. Nikt nie musi przy okazji wpisywać wyniku na czat."
+        },
+        {
+          "title": "Bez aplikacji i konta",
+          "description": "Wystarczy link lub kod QR – na telefonie babci tak samo jak na rzutniku w hali."
+        },
+        {
+          "title": "Stworzony dla drużyn młodzieżowych",
+          "description": "Nazwiska są domyślnie skracane, a jednym dotknięciem mecz znów staje się prywatny."
+        },
+        {
+          "title": "Jeden link na sezon",
+          "description": "Stały link twojej drużyny pokazuje każdy opublikowany mecz. Udostępniasz raz i gotowe."
+        }
+      ],
+      "sponsor": {
+        "kicker": "Dla waszego klubu",
+        "title": "Miejsce dla sponsora, które widzi każda rodzina.",
+        "description": "Kto kibicuje, patrzy na ticker – przy każdej bramce, w każdym czasie, przez cały mecz. Właśnie tam pojawia się wasz sponsor. Logo wgrywasz raz, a oznaczenie „przedstawia” Statix dodaje automatycznie.",
+        "keep": "pieniędzy od sponsorów zostaje w klubie.",
+        "slotsTitle": "Trzy miejsca w tickerze",
+        "slots": [
           {
-            "minute": "43'",
-            "text": "Bramka nr 7 — środkowy rozgrywający"
+            "title": "Baner",
+            "description": "Stale na dole tickera. Kilka logo wyświetla się na zmianę."
           },
           {
-            "minute": "41'",
-            "text": "Obrona! Rzut karny zatrzymany"
+            "title": "Bramka",
+            "description": "„Bramkę przedstawia …” – duże przy każdej waszej bramce."
           },
           {
-            "minute": "39'",
-            "text": "2 minuty dla TV Musterstadt"
-          },
-          {
-            "minute": "38'",
-            "text": "Kontratak — bramka nr 11"
+            "title": "Czas",
+            "description": "Podczas każdego czasu drużyny, tuż pod wynikiem."
           }
         ],
-        "qrLabel": "Zeskanuj i śledź na żywo",
-        "footnote": "Tak wygląda Twoja relacja na żywo — dane przykładowe"
+        "note": "Sponsorzy w tickerze są dostępni od poziomu Trener – kto zarejestruje się przed 1 stycznia 2027, ma go za darmo do 30 czerwca 2027.",
+        "pricingLink": "Zobacz ceny"
       },
-      "linkTitle": "Wszystkie funkcje Statix w szczegółach"
+      "primaryCta": "Zacznij za darmo",
+      "secondaryCta": "Demo na żywo – bez konta",
+      "note": "Sam live ticker pozostaje na zawsze bezpłatny w poziomie Baza. Przykładowy mecz z drużyną demonstracyjną."
     }
   },
   "newsletterConfirm": {
