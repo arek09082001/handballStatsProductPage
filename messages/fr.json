@@ -1561,34 +1561,55 @@
       "note": "Les clips montrent les écrans de l’application avec une équipe de démonstration."
     },
     "ai": {
-      "kicker": "Analyse par IA",
-      "title": "Des statistiques de handball analysées par IA : le pourquoi, pas seulement le quoi",
-      "description": "Statix analyse vos matchs par IA : un match précis, toute l’équipe, un joueur en particulier ou un tournoi entier. Aucun carnet ni tableur ne sait faire cela.",
-      "privacyNote": "Confidentialité intégrée : les noms des joueurs sont pseudonymisés avant qu’aucune donnée n’atteigne une IA, et les rapports se génèrent en arrière-plan pendant que vous continuez à travailler.",
+      "kicker": "Analyse IA",
+      "titleLead": "Perdu ?",
+      "titleHighlight": "L’IA te montre où le match a basculé.",
+      "description": "Un tap après le coup de sifflet final et Statix lit ton match comme un entraîneur adjoint : il trouve les minutes où tout a basculé, les étaye avec tes chiffres et te dit sur quoi travailler au prochain entraînement.",
+      "filmAlt": "Film : après un 26:28, l’entraîneur lance l’analyse IA dans Statix. Les noms des joueurs sont pseudonymisés, le rapport montre la phase critique de la 38e à la 44e minute dans le déroulé du match et donne trois recommandations pour l’entraînement.",
+      "chaptersLabel": "Chapitres du film",
+      "play": "Lire le film",
+      "pause": "Mettre le film en pause",
+      "chapters": [
+        {
+          "label": "Coup de sifflet",
+          "text": "26:28. Défaite de justesse – et personne ne sait vraiment pourquoi."
+        },
+        {
+          "label": "Analyse",
+          "text": "Un tap. Les noms des joueurs deviennent des espaces réservés avant que l’IA ne voie quoi que ce soit."
+        },
+        {
+          "label": "Réponse",
+          "text": "De la 38e à la 44e minute : six pertes de balle, 19:17 devient 20:23."
+        },
+        {
+          "label": "Plan",
+          "text": "Trois recommandations à travailler au prochain entraînement."
+        }
+      ],
+      "scopesTitle": "Pas seulement pour un match",
       "scopes": [
         {
-          "title": "Un match",
-          "description": "Analyse en profondeur d’une rencontre : déroulé, séries, moments charnières, schémas tactiques et comportement sous pression, avec des recommandations claires pour l’entraîneur."
+          "title": "Match",
+          "description": "Déroulé, tournants, comportement sous pression."
         },
         {
           "title": "Toute l’équipe",
-          "description": "Plusieurs matchs vus comme un système : tendances, régularité, structure offensive et erreurs récurrentes sur l’ensemble de la saison."
+          "description": "Tendances et erreurs récurrentes sur la saison."
         },
         {
-          "title": "Un joueur",
-          "description": "Un profil de scouting par joueur sur tous les matchs : type de joueur, choix de tir, efficacité, courbe de forme et les situations où il excelle ou souffre."
+          "title": "Joueur",
+          "description": "Profil de scouting : type de joueur, choix de tir, forme."
         },
         {
           "title": "Tournoi",
-          "description": "L’IA considère tout le tournoi comme un ensemble : le fil du parcours, les schémas marquants et ce qui a fait la différence au bout du compte."
+          "description": "Le tournoi entier comme un tout – et ce qui a fait la différence."
         }
       ],
-      "showcase": {
-        "imageOneLabel": "Déroulé du match et efficacité par zone de tir",
-        "imageTwoLabel": "Moments charnières, répartition des erreurs et performance des joueurs",
-        "openImage": "Ouvrir l’analyse en grand",
-        "more": "Voir une autre analyse"
-      }
+      "privacyNote": "Protection des données intégrée : les noms des joueurs sont pseudonymisés avant que les données n’atteignent une IA – et les rapports sont générés en arrière-plan pendant que tu continues à travailler.",
+      "primaryCta": "Commencer gratuitement",
+      "secondaryCta": "Démo en direct – sans compte",
+      "note": "Rapport d’exemple avec une équipe de démonstration, montré avec les écrans de l’application."
     },
     "pros": {
       "kicker": "Au-delà de la feuille de match",

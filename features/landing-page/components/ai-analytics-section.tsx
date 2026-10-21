@@ -1,16 +1,34 @@
 'use client';
 
-import { ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { BoardScreenshot, CourtDiagram, Grain, PlayerMagnet, SectionHeading } from './tactic';
+import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
+import { CLUB_CONFIG } from '@/lib/club-config';
+import AiFilm from './ai-film';
+import HeroActionButton from './hero-action-button';
+import { CourtDiagram, Grain, MarkerUnderline, SectionHeading } from './tactic';
+
+interface Chapter {
+  label: string;
+  text: string;
+}
 
 interface Scope {
   title: string;
   description: string;
 }
 
+/**
+ * Die KI-Section erzählt EINE Geschichte statt einer Funktionsliste: ein knapp
+ * verlorenes Spiel, ein Tipp, die Antwort mit Minute und Zahlen, ein Plan fürs
+ * Training. Der Film trägt sie (gerendert in Remotion aus den
+ * Bericht-Komponenten der App), die Kapitelleiste darunter erzählt sie in
+ * Worten mit. Erst danach die vier Analyse-Arten — wer bis hier gelesen hat,
+ * weiss, wozu sie gut sind — und das Paar aus Registrierung und Demo.
+ */
 export default function AiAnalyticsSection() {
   const t = useTranslations('productPage.ai');
+  const chapters = t.raw('chapters') as Chapter[];
   const scopes = t.raw('scopes') as Scope[];
 
   return (
@@ -28,76 +46,68 @@ export default function AiAnalyticsSection() {
         <SectionHeading
           tone='court'
           kicker={t('kicker')}
-          title={t('title')}
+          title={
+            <>
+              {t('titleLead')}{' '}
+              <span className='relative inline-block'>
+                {t('titleHighlight')}
+                <MarkerUnderline color='marker' />
+              </span>
+            </>
+          }
           description={t('description')}
+          className='max-w-3xl'
         />
 
-        {/* Four scopes as scouting entries — hairline‑ruled, no card chrome */}
-        <div className='mx-auto mt-10 grid max-w-4xl gap-x-14 sm:grid-cols-2'>
-          {scopes.map((scope, index) => (
-            <div
-              key={scope.title}
-              className='flex items-start gap-4 border-t border-chalk/12 py-7'>
-              <PlayerMagnet number={index + 1} team='home' size='md' className='shrink-0' />
-              <div>
-                <p className='font-display text-lg font-bold tracking-tight text-chalk'>
-                  {scope.title}
-                </p>
-                <p className='mt-1.5 text-sm leading-7 text-chalk/70'>{scope.description}</p>
-              </div>
-            </div>
-          ))}
+        <div className='mt-12 lg:mt-16'>
+          <AiFilm
+            chapters={chapters}
+            alt={t('filmAlt')}
+            chaptersLabel={t('chaptersLabel')}
+            playLabel={t('play')}
+            pauseLabel={t('pause')}
+          />
         </div>
 
-        <p className='mx-auto mt-6 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-chalk/60'>
-          <ShieldCheck className='mt-0.5 size-4 shrink-0 text-success' />
-          <span>{t('privacyNote')}</span>
-        </p>
-
-        {/* The real reports, pinned to the board. The sub-heading that used to
-            sit here restated the band's own standfirst, so the screenshots now
-            speak for themselves under their labels. */}
-        <div className='mt-16'>
-          <div className='mx-auto grid max-w-4xl gap-10'>
-            <div>
-              <BoardScreenshot
-                src='/aiAnalyze.png'
-                alt={t('showcase.imageOneLabel')}
-                width={2560}
-                height={2000}
-                label={t('showcase.imageOneLabel')}
-                sizes='(max-width: 1024px) 90vw, 900px'
-                tone='court'
-                pin='tape'
-              />
-              <a href='/aiAnalyze.png' target='_blank' rel='noopener noreferrer'
-                className='board-detail-link mt-3 inline-flex items-center gap-2 text-sm font-semibold text-chalk'>
-                {t('showcase.openImage')}<ArrowUpRight className='size-4' aria-hidden='true' />
-              </a>
-            </div>
-            <details className='group border-t border-chalk/20 pt-2'>
-              <summary className='flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-3 font-display text-base font-bold text-chalk focus-visible:outline-2 focus-visible:outline-offset-4'>
-                {t('showcase.more')}
-                <span aria-hidden='true' className='text-2xl text-primary group-open:rotate-45'>+</span>
-              </summary>
-              <div className='pt-6'>
-                <BoardScreenshot
-                  src='/aiAnalyze2.png'
-                  alt={t('showcase.imageTwoLabel')}
-                  width={2560}
-                  height={2000}
-                  label={t('showcase.imageTwoLabel')}
-                  sizes='(max-width: 1024px) 90vw, 900px'
-                  tone='court'
-                  pin='magnet'
-                />
-                <a href='/aiAnalyze2.png' target='_blank' rel='noopener noreferrer'
-                  className='board-detail-link mt-3 inline-flex items-center gap-2 text-sm font-semibold text-chalk'>
-                  {t('showcase.openImage')}<ArrowUpRight className='size-4' aria-hidden='true' />
-                </a>
+        {/* Die vier Arten als Zeile eines Spielberichtsbogens: Haarlinie,
+            Titel, ein Satz — kein Kartenraster, die Geschichte oben ist das Bild. */}
+        <div className='mt-16 border-t border-chalk/15 pt-8 lg:mt-20'>
+          <p className='font-hand text-2xl text-primary'>{t('scopesTitle')}</p>
+          <dl className='mt-4 grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-4'>
+            {scopes.map((scope) => (
+              <div key={scope.title}>
+                <dt className='font-display text-lg font-bold tracking-tight text-chalk'>{scope.title}</dt>
+                <dd className='mt-1 text-[15px] leading-6 text-chalk/65'>{scope.description}</dd>
               </div>
-            </details>
+            ))}
+          </dl>
+        </div>
+
+        <div className='mt-12 flex flex-col items-center gap-6 text-center lg:mt-14'>
+          <p className='flex max-w-2xl items-start gap-2.5 text-left text-[15px] leading-6 text-chalk/70'>
+            <ShieldCheck className='mt-0.5 size-5 shrink-0 text-success' aria-hidden='true' />
+            <span>{t('privacyNote')}</span>
+          </p>
+          <div className='flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row'>
+            <HeroActionButton
+              variant='primary'
+              href={CLUB_CONFIG.website.appUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              trailing={<ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />}
+              onClick={() => trackRegisterClick('ai')}>
+              {t('primaryCta')}
+            </HeroActionButton>
+            <HeroActionButton
+              variant='secondary'
+              href={CLUB_CONFIG.website.demoUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => trackDemoClick('ai')}>
+              {t('secondaryCta')}
+            </HeroActionButton>
           </div>
+          <p className='text-[13px] leading-5 text-chalk/50'>{t('note')}</p>
         </div>
       </div>
     </section>

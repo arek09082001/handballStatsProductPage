@@ -1562,33 +1562,54 @@
     },
     "ai": {
       "kicker": "AI analysis",
-      "title": "Handball statistics analyzed by AI – explaining why, not just what",
-      "description": "Statix analyses your games with AI – for a single game, your whole team, individual players and entire tournaments. No notepad or spreadsheet can do that.",
-      "privacyNote": "Privacy built in: player names are pseudonymised before any data reaches an AI – and reports are generated in the background while you keep working.",
+      "titleLead": "Lost?",
+      "titleHighlight": "The AI shows you where it turned.",
+      "description": "One tap after the final whistle and Statix reads your game like an assistant coach: it finds the minutes where it turned, backs them with your numbers and tells you what to work on in the next training session.",
+      "filmAlt": "Film: after a 26:28 defeat the coach starts the AI analysis in Statix. Player names are pseudonymised, the report shows the critical phase from minute 38 to 44 in the game flow and gives three recommendations for training.",
+      "chaptersLabel": "Chapters of the film",
+      "play": "Play film",
+      "pause": "Pause film",
+      "chapters": [
+        {
+          "label": "Final whistle",
+          "text": "26:28. A narrow loss – and nobody quite knows why."
+        },
+        {
+          "label": "Analysis",
+          "text": "One tap. Player names become placeholders before the AI sees anything."
+        },
+        {
+          "label": "Answer",
+          "text": "Minutes 38 to 44: six turnovers, 19:17 becomes 20:23."
+        },
+        {
+          "label": "Plan",
+          "text": "Three recommendations to work on in your next training session."
+        }
+      ],
+      "scopesTitle": "Not just for one game",
       "scopes": [
         {
           "title": "Single game",
-          "description": "Deep dive into one match: game flow, scoring runs, turning points, tactical patterns and behaviour under pressure – with clear coaching recommendations."
+          "description": "Game flow, turning points, behaviour under pressure."
         },
         {
           "title": "Whole team",
-          "description": "Several games seen as one system: trends, stability, offensive structure and recurring error patterns across the season."
+          "description": "Trends and recurring error patterns across the season."
         },
         {
-          "title": "Individual player",
-          "description": "A scouting profile per player across all games: player type, shot selection, efficiency, form curve and the situations where they shine or struggle."
+          "title": "Single player",
+          "description": "Scouting profile: player type, shot selection, form curve."
         },
         {
           "title": "Tournament",
-          "description": "The AI looks at your whole tournament as one unit: the arc across all games, notable patterns and what made the difference in the end."
+          "description": "The whole tournament as one – and what decided it in the end."
         }
       ],
-      "showcase": {
-        "imageOneLabel": "Game flow & shot-zone efficiency",
-        "imageTwoLabel": "Turning points, error distribution & player performance",
-        "openImage": "Open full-size analysis",
-        "more": "See another analysis"
-      }
+      "privacyNote": "Privacy built in: player names are pseudonymised before any data reaches an AI – and reports are generated in the background while you keep working.",
+      "primaryCta": "Start for free",
+      "secondaryCta": "Live demo – no account",
+      "note": "Example report with a demo team, shown with the app's screens."
     },
     "pros": {
       "kicker": "Beyond the scoresheet",
