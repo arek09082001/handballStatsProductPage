@@ -68,6 +68,8 @@ export default function GlobalError({
                 }}>
                 Erneut versuchen
               </button>
+              {/* The root router may be broken; recovery must reload the document. */}
+              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
               <a
                 href='/'
                 style={{
