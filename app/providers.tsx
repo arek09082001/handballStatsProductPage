@@ -2,6 +2,7 @@
 
 import { ReactNode, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { MotionConfig } from 'framer-motion';
 
 interface ProvidersProps {
   children: ReactNode;
@@ -25,6 +26,8 @@ export default function Providers({ children }: ProvidersProps) {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <MotionConfig reducedMotion='user'>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    </MotionConfig>
   );
 }

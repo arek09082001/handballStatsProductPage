@@ -33,7 +33,7 @@ export default function DemoPreview({ url, liveLabel }: DemoPreviewProps) {
         <span className='truncate'>{url}</span>
         <span className='inline-flex items-center gap-1.5 font-hand text-base text-primary'>
           <span className='relative flex size-1.5'>
-            <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/70' />
+            <span className='absolute inline-flex h-full w-full motion-safe:animate-ping rounded-full bg-primary/70' />
             <span className='relative inline-flex size-1.5 rounded-full bg-primary' />
           </span>
           {liveLabel}

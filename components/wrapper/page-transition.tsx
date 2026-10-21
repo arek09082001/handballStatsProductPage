@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode, useState } from 'react';
 
 interface PageTransitionProps {
   children: ReactNode;
@@ -25,10 +25,11 @@ const getBasePath = (path: string): string => {
 
 export default function PageTransition({ children }: PageTransitionProps) {
   const pathname = usePathname();
+  const reduce = useReducedMotion();
   const [direction, setDirection] = useState(0);
   const [previousPath, setPreviousPath] = useState(pathname);
 
-  useEffect(() => {
+  if (pathname !== previousPath) {
     const currentBasePath = getBasePath(pathname);
     const previousBasePath = getBasePath(previousPath);
 
@@ -43,7 +44,7 @@ export default function PageTransition({ children }: PageTransitionProps) {
     }
 
     setPreviousPath(pathname);
-  }, [pathname, previousPath]);
+  }
 
   const variants = {
     enter: (direction: number) => ({
@@ -65,10 +66,10 @@ export default function PageTransition({ children }: PageTransitionProps) {
       key={pathname}
       custom={direction}
       variants={variants}
-      initial='enter'
+      initial={false}
       animate='center'
       exit='exit'
-      transition={{
+      transition={reduce ? { duration: 0 } : {
         x: {
           type: 'spring',
           stiffness: 200,

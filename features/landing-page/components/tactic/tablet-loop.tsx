@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { usePrefersReducedMotion } from '@/lib/hooks/use-prefers-reduced-motion';
 
 interface TabletLoopProps {
   /**
@@ -41,6 +42,7 @@ const RADIUS = `${((50 / VIDEO_W) * 100).toFixed(2)}% / ${((50 / VIDEO_H) * 100)
  * - Bei „Bewegung reduzieren“ bleibt es beim Standbild.
  */
 export default function TabletLoop({ name, alt, label, priority = false, pin = 'tape' }: TabletLoopProps) {
+  const reduce = usePrefersReducedMotion();
   const frameRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [src, setSrc] = useState<string | null>(null);
@@ -49,7 +51,7 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
   useEffect(() => {
     const frame = frameRef.current;
     if (!frame) return;
-    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+    if (reduce) return;
 
     const small = window.matchMedia?.('(max-width: 767px)').matches;
     const file = `/videos/showcase/${name}${small ? '-sm' : ''}`;
@@ -80,16 +82,16 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
       near.disconnect();
       seen.disconnect();
     };
-  }, [name]);
+  }, [name, reduce]);
 
   // Mit gesetzter Quelle sofort starten, falls es schon im Bild ist.
   useEffect(() => {
     const video = videoRef.current;
     const frame = frameRef.current;
-    if (!src || !video || !frame) return;
+    if (reduce || !src || !video || !frame) return;
     const r = frame.getBoundingClientRect();
     if (r.top < window.innerHeight && r.bottom > 0) void video.play().catch(() => {});
-  }, [src]);
+  }, [src, reduce]);
 
   return (
     <figure className='relative'>
@@ -128,13 +130,14 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
           loading={priority ? 'eager' : 'lazy'}
           className='absolute inset-0 h-full w-full object-cover'
         />
-        {src ? (
+        {!reduce && src ? (
           <video
             ref={videoRef}
             muted
             loop
             playsInline
             preload='none'
+            poster={`/videos/showcase/${name}.jpg`}
             aria-hidden='true'
             onPlaying={() => setPlaying(true)}
             className={cn(

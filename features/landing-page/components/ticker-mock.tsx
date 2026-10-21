@@ -27,8 +27,8 @@ export default function TickerMock() {
       <BoardCard tone='court' pin='magnet' pinColor='marker' className='overflow-hidden'>
         {/* Live badge + game clock */}
         <div className='flex items-center justify-between border-b border-chalk/10 px-5 py-3.5'>
-          <span className='inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-2.5 py-1 text-[13px] font-bold uppercase tracking-wider text-primary'>
-            <span className='size-1.5 animate-pulse rounded-full bg-primary' />
+          <span className='inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-2.5 py-1 text-[13px] font-bold uppercase tracking-wider text-chalk'>
+            <span className='size-1.5 motion-safe:animate-pulse rounded-full bg-primary' />
             {t('liveBadge')}
           </span>
           <span className='font-mono text-sm font-semibold tabular-nums text-chalk/80'>
@@ -40,7 +40,7 @@ export default function TickerMock() {
         <div className='grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-5 py-6'>
           <div className='flex flex-col items-center gap-2'>
             <span
-              className='flex size-11 items-center justify-center rounded-xl font-display text-[13px] font-extrabold text-white'
+              className='flex size-11 items-center justify-center rounded-xl font-display text-[13px] font-extrabold text-ink'
               style={{
                 background:
                   'radial-gradient(120% 120% at 32% 26%, hsl(22 96% 60%), hsl(22 92% 46%))',

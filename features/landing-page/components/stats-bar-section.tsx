@@ -1,11 +1,11 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { gsap } from '@/lib/gsap-config';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { useLocale, useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { compactFigure, LIVE_STAT_KEYS, type LiveStats } from '../data/live-stats';
-import SmokeCursor from './smoke-cursor';
+const SmokeCursor = dynamic(() => import('./smoke-cursor'), { ssr: false });
 
 interface StatItem {
   value: string;
@@ -68,68 +68,32 @@ export default function StatsBarSection({ stats }: { stats?: LiveStats | null })
   );
 
   const sectionRef = useRef<HTMLElement>(null);
-  const numberRefs = useRef<(HTMLSpanElement | null)[]>([]);
+  const [showDust, setShowDust] = useState(false);
 
   useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      const tiles = gsap.utils.toArray<HTMLElement>('[data-stat-tile]');
-      gsap.fromTo(
-        tiles,
-        { opacity: 0, y: 24 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          stagger: 0.1,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', once: true },
-        },
-      );
-
-      // Count each numeric value up from zero when the scoreboard scrolls in.
-      // The markup already carries the final figure (see below), so we only
-      // reset to zero once we know JavaScript is running.
-      items.forEach((item, i) => {
-        const el = numberRefs.current[i];
-        const { number } = item;
-        if (!el || number === null) return;
-
-        const counter = { v: 0 };
-        const step = 10 ** -item.decimals;
-        const render = () => {
-          el.textContent = format(item, Math.round(counter.v / step) * step);
-        };
-        render();
-
-        gsap.to(counter, {
-          v: number,
-          duration: 1.5,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', once: true },
-          onUpdate: render,
-        });
-      });
-    }, sectionRef);
-
+    const section = sectionRef.current;
+    if (!section) return;
+    const preference = window.matchMedia('(prefers-reduced-motion: no-preference) and (pointer: fine)');
+    let visible = false;
+    const update = () => setShowDust(visible && preference.matches);
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting && entry.intersectionRatio >= 0.25;
+      update();
+    }, { threshold: 0.25 });
+    observer.observe(section);
+    preference.addEventListener('change', update);
     return () => {
-      ctx.revert();
-      // gsap.context() only reverts what GSAP itself set – put the real
-      // figures back so an unmount never leaves a zeroed scoreboard behind.
-      items.forEach((item, i) => {
-        const el = numberRefs.current[i];
-        if (el) el.textContent = item.number === null ? item.prefix : format(item, item.number);
-      });
+      observer.disconnect();
+      preference.removeEventListener('change', update);
     };
-  }, [items, format]);
+  }, []);
 
   return (
     <section
       ref={sectionRef}
-      className='relative isolate w-full overflow-hidden bg-court py-16 text-chalk sm:py-20'>
+      className='relative isolate w-full overflow-hidden bg-court py-8 text-chalk sm:py-12'>
       {/* Kept effect, re-themed: chalk/marker dust reacting to the pointer */}
-      <SmokeCursor />
+      {showDust && <SmokeCursor />}
 
       {/* Depth vignette + scoreboard hairlines to seat the band */}
       <div
@@ -148,14 +112,11 @@ export default function StatsBarSection({ stats }: { stats?: LiveStats | null })
                 key={item.label}
                 data-stat-tile
                 className={cn(
-                  'flex flex-col items-center border-chalk/12 px-4 py-8 text-center sm:px-6 sm:py-4',
+                  'flex flex-col items-center border-chalk/12 px-4 py-5 text-center sm:px-6 sm:py-4',
                   DIVIDERS[i] ?? '',
                 )}>
                 <span className='flex items-baseline gap-1.5 font-display leading-none text-chalk'>
                   <span
-                    ref={(el) => {
-                      numberRefs.current[i] = el;
-                    }}
                     className='block text-[2.75rem] font-extrabold tracking-[-0.03em] tabular-nums sm:text-6xl'>
                     {item.number === null ? item.prefix : format(item, item.number)}
                   </span>
@@ -163,7 +124,7 @@ export default function StatsBarSection({ stats }: { stats?: LiveStats | null })
                     <span className='text-xl font-bold tracking-tight text-primary sm:text-2xl'>{item.unit}</span>
                   )}
                 </span>
-                <span className='mt-3.5 flex max-w-[18ch] items-center gap-2 text-sm font-medium leading-6 text-chalk/60 sm:mt-4'>
+                <span className='mt-3.5 flex max-w-[18ch] items-center gap-2 text-sm font-medium leading-6 text-chalk/75 sm:mt-4'>
                   <span aria-hidden className='size-1.5 shrink-0 rounded-[3px] bg-primary' />
                   {item.label}
                 </span>
