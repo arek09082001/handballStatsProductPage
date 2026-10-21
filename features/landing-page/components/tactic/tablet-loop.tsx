@@ -113,7 +113,10 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
 
       <div
         ref={frameRef}
-        className='board-shadow relative w-full overflow-hidden bg-court'
+        className='board-shadow relative w-full overflow-hidden bg-[#12161c]'
+        // Hintergrund in der Farbe des Gerätes: wo das Video bei krummen
+        // Pixelmassen nicht ganz bis an den Rand reicht, blitzte sonst die
+        // Spielfeldfarbe als grüne Linie durch.
         style={{ aspectRatio: `${VIDEO_W} / ${VIDEO_H}`, borderRadius: RADIUS }}>
         <Image
           src={`/videos/showcase/${name}.jpg`}
@@ -123,7 +126,7 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
           sizes='(max-width: 1024px) 100vw, 50vw'
           priority={priority}
           loading={priority ? 'eager' : 'lazy'}
-          className='absolute inset-0 h-full w-full'
+          className='absolute inset-0 h-full w-full object-cover'
         />
         {src ? (
           <video
@@ -135,7 +138,7 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
             aria-hidden='true'
             onPlaying={() => setPlaying(true)}
             className={cn(
-              'absolute inset-0 h-full w-full transition-opacity duration-300',
+              'absolute inset-0 h-full w-full object-cover transition-opacity duration-300',
               playing ? 'opacity-100' : 'opacity-0',
             )}>
             {/* VP9 zuerst: kleiner, und auch in Chromium-Builds ohne H.264

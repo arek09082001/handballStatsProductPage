@@ -1512,30 +1512,53 @@
       }
     },
     "showcase": {
-      "kicker": "En directo en la app",
-      "title": "Así registras y analizas estadísticas de balonmano con Statix",
-      "description": "Del registro en directo en el banquillo al análisis terminado para el vestuario: un vistazo por dentro de la app.",
-      "ctaLabel": "Pruébalo tú mismo en la demo en directo",
+      "kicker": "Un minuto de partido en la app",
+      "titleLead": "Registrado en el minuto 46.",
+      "titleHighlight": "Analizado en el minuto 46.",
+      "description": "Tú registras en el banquillo y Statix calcula: no después del pitido final, sino mientras el ataque sigue en marcha. Así se ve en la tableta, toque a toque.",
       "items": [
         {
-          "badge": "Registro en directo",
-          "title": "Cada acción con un solo toque",
-          "description": "Toca directamente sobre la pista: gol, gol de contraataque, robo, blocaje, 7 metros, exclusión o lanzamiento fallado. Banquillo, alineación y marcador siempre a la vista, sin apartar la mirada del partido.",
-          "linkLabel": "El registro en directo en detalle"
+          "clock": "46:27",
+          "moment": "Erik marca desde la primera línea",
+          "title": "Un gol en cuatro toques.",
+          "description": "Jugador, «Gol», posición de lanzamiento, esquina de la portería – y quién dio el pase. Unos segundos y tu mirada vuelve a la pista.",
+          "facts": [
+            "Funciona sin conexión en el pabellón",
+            "Cada toque se puede deshacer"
+          ],
+          "linkLabel": "El registro en directo en detalle",
+          "alt": "Statix en una tableta: un gol se registra en cuatro toques – jugador, gol, posición, esquina y asistencia – y el marcador pasa a 25:21."
         },
         {
-          "badge": "Calculado al instante",
-          "title": "Estadísticas de jugador en tiempo real",
-          "description": "Goles, lanzamientos, porcentaje, asistencias, robos, blocajes y disciplina: se calculan solos para cada jugador mientras el partido sigue en marcha.",
-          "linkLabel": "Todas las estadísticas de balonmano explicadas"
+          "clock": "46:28",
+          "moment": "un segundo después",
+          "title": "Quién acierta hoy, lo ves al instante.",
+          "description": "Goles, lanzamientos, porcentaje, asistencias, recuperaciones, sanciones: calculados para cada jugador mientras se juega. Un toque en la columna y arriba aparece quién está en racha.",
+          "facts": [
+            "Nada que sumar después",
+            "Para jugadores de campo y porteros"
+          ],
+          "linkLabel": "Todas las estadísticas de balonmano explicadas",
+          "alt": "Statix en una tableta: la tabla de jugadores de campo con goles, lanzamientos y porcentaje se actualiza en directo y se ordena por porcentaje con un toque."
         },
         {
-          "badge": "Mapas de lanzamiento y mapas de calor",
-          "title": "Lanzamientos y goles sobre la pista",
-          "description": "Visualiza cada lanzamiento y cada gol sobre la pista. Detecta mapas de calor, zonas fuertes y los patrones que deciden los partidos, por jugador o de todo el equipo.",
-          "linkLabel": "Más sobre mapas de tiro en balonmano"
+          "clock": "46:33",
+          "moment": "antes del próximo tiempo muerto",
+          "title": "Dónde acaban vuestros lanzamientos – y dónde no.",
+          "description": "Cada posición con su porcentaje, cada esquina de la portería con sus goles. Toca «Lateral derecho 9m» y la portería muestra solo los lanzamientos desde allí: justo lo que ninguna hoja de papel muestra.",
+          "facts": [
+            "Por jugador o para todo el equipo",
+            "También las paradas de tu portero"
+          ],
+          "linkLabel": "Más sobre mapas de lanzamiento en balonmano",
+          "alt": "Statix en una tableta: mapa de lanzamientos con posiciones y esquinas de portería; al tocar una posición se filtran las esquinas a los lanzamientos desde allí."
         }
-      ]
+      ],
+      "closingTitle": "Tu próximo partido. Sin papel.",
+      "primaryCta": "Empezar gratis",
+      "secondaryCta": "Demo en directo – sin cuenta",
+      "trust": "Empezar gratis – sin tarjeta de crédito · Sin conexión en el pabellón",
+      "note": "Los clips muestran las pantallas de la app con un equipo de demostración."
     },
     "ai": {
       "kicker": "Análisis con IA",

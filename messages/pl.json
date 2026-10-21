@@ -1512,30 +1512,53 @@
       }
     },
     "showcase": {
-      "kicker": "Na żywo w aplikacji",
-      "title": "Tak zapisujesz i analizujesz statystyki piłki ręcznej w Statix",
-      "description": "Od zapisu na żywo przy ławce po gotową analizę do szatni — spojrzenie do wnętrza aplikacji.",
-      "ctaLabel": "Wypróbuj sam w demie na żywo",
+      "kicker": "Jedna minuta meczu w aplikacji",
+      "titleLead": "Zapisane w 46. minucie.",
+      "titleHighlight": "Przeanalizowane w 46. minucie.",
+      "description": "Ty zapisujesz przy ławce, Statix liczy – nie po końcowym gwizdku, tylko gdy atak jeszcze trwa. Tak to wygląda na tablecie, dotknięcie po dotknięciu.",
       "items": [
         {
-          "badge": "Zapis na żywo",
-          "title": "Każda akcja jednym dotknięciem",
-          "description": "Dotykaj wprost na boisku: bramka, bramka z kontry, odbiór, blok, siódemka, wykluczenie albo niecelny rzut. Ławka, skład i wynik zawsze na oku — bez odrywania wzroku od meczu.",
-          "linkLabel": "Zapis na żywo w szczegółach"
+          "clock": "46:27",
+          "moment": "Erik trafia z drugiej linii",
+          "title": "Bramka w czterech dotknięciach.",
+          "description": "Zawodnik, „Bramka”, pozycja rzutu, róg bramki – i kto podał. Kilka sekund i wzrok znów jest na boisku.",
+          "facts": [
+            "Działa offline na hali",
+            "Każde dotknięcie można cofnąć"
+          ],
+          "linkLabel": "Zapis na żywo w szczegółach",
+          "alt": "Statix na tablecie: bramka zapisana w czterech dotknięciach – zawodnik, bramka, pozycja, róg i asysta – po czym wynik zmienia się na 25:21."
         },
         {
-          "badge": "Liczone od razu",
-          "title": "Statystyki zawodników w czasie rzeczywistym",
-          "description": "Bramki, rzuty, skuteczność, asysty, odbiory, bloki i dyscyplina — liczone automatycznie dla każdego zawodnika, jeszcze w trakcie meczu.",
-          "linkLabel": "Wszystkie statystyki piłki ręcznej wyjaśnione"
+          "clock": "46:28",
+          "moment": "sekundę później",
+          "title": "Kto dziś trafia, widzisz od razu.",
+          "description": "Bramki, rzuty, skuteczność, asysty, przechwyty, kary – liczone dla każdego zawodnika w trakcie meczu. Jedno dotknięcie kolumny i na górze jest ten, kto ma dziś rękę.",
+          "facts": [
+            "Nic do dopisywania i sumowania",
+            "Dla zawodników z pola i bramkarzy"
+          ],
+          "linkLabel": "Wszystkie statystyki piłki ręcznej wyjaśnione",
+          "alt": "Statix na tablecie: tabela zawodników z pola z bramkami, rzutami i skutecznością liczy się na żywo i jednym dotknięciem sortuje według skuteczności."
         },
         {
-          "badge": "Mapy rzutów i mapy ciepła",
-          "title": "Rzuty i bramki na boisku",
-          "description": "Zobacz każdy rzut i każdą bramkę wprost na boisku. Wyłap mapy ciepła, mocne strefy i schematy, które rozstrzygają mecze — dla zawodnika albo całej drużyny.",
-          "linkLabel": "Więcej o mapach rzutów"
+          "clock": "46:33",
+          "moment": "przed następnym czasem",
+          "title": "Gdzie lądują wasze rzuty – a gdzie nie.",
+          "description": "Każda pozycja rzutu ze skutecznością, każdy róg bramki z trafieniami. Dotknij „Prawe rozegranie 9m”, a bramka pokaże tylko rzuty stamtąd – dokładnie to, czego nie pokaże żadna kartka.",
+          "facts": [
+            "Dla zawodnika lub całej drużyny",
+            "Także obrony twojego bramkarza"
+          ],
+          "linkLabel": "Więcej o mapach rzutów w piłce ręcznej",
+          "alt": "Statix na tablecie: mapa rzutów z pozycjami i rogami bramki; dotknięcie pozycji filtruje rogi do rzutów z tego miejsca."
         }
-      ]
+      ],
+      "closingTitle": "Twój następny mecz. Bez kartki.",
+      "primaryCta": "Zacznij za darmo",
+      "secondaryCta": "Demo na żywo – bez konta",
+      "trust": "Zacznij za darmo – bez karty kredytowej · Offline na hali",
+      "note": "Klipy pokazują ekrany aplikacji z drużyną demonstracyjną."
     },
     "ai": {
       "kicker": "Analiza AI",

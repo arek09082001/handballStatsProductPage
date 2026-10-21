@@ -1512,30 +1512,53 @@
       }
     },
     "showcase": {
-      "kicker": "Live in the app",
-      "title": "How you track and analyze handball statistics with Statix",
-      "description": "From live tracking on the bench to the finished analysis for the locker room – a look inside the app.",
-      "ctaLabel": "Try it yourself in the live demo",
+      "kicker": "One match minute in the app",
+      "titleLead": "Tapped in minute 46.",
+      "titleHighlight": "Analysed in minute 46.",
+      "description": "You record on the bench, Statix does the maths – not after the final whistle, but while the attack is still running. This is what it looks like on the tablet, tap by tap.",
       "items": [
         {
-          "badge": "Track live",
-          "title": "Every action with a single tap",
-          "description": "Tap right on the court: goal, fast-break goal, ball win, block, 7m, suspension or missed shot. Bench, line-up and score always in view – without taking your eyes off the game.",
-          "linkLabel": "Live recording in detail"
+          "clock": "46:27",
+          "moment": "Erik scores from the back court",
+          "title": "A goal in four taps.",
+          "description": "Player, “Goal”, shot position, corner of the goal – and who made the pass. A few seconds, and your eyes are back on the court.",
+          "facts": [
+            "Works offline in the hall",
+            "Every tap can be undone"
+          ],
+          "linkLabel": "Live tracking in detail",
+          "alt": "Statix on a tablet: a goal is recorded in four taps – player, goal, shot position, corner and assist – then the score jumps to 25:21."
         },
         {
-          "badge": "Instantly calculated",
-          "title": "Player stats in real time",
-          "description": "Goals, shots, percentage, assists, ball wins, blocks and discipline – calculated automatically for every player, while the game is still running.",
-          "linkLabel": "All handball statistics explained"
+          "clock": "46:28",
+          "moment": "one second later",
+          "title": "See who's on target today – instantly.",
+          "description": "Goals, shots, rate, assists, steals, penalties – calculated for every player while the game runs. Tap a column and whoever is on fire moves to the top.",
+          "facts": [
+            "Nothing to add up afterwards",
+            "For field players and goalkeepers"
+          ],
+          "linkLabel": "All handball statistics explained",
+          "alt": "Statix on a tablet: the field player table with goals, shots and shooting rate counts up live and is sorted by shooting rate with one tap."
         },
         {
-          "badge": "Shot maps & heatmaps",
-          "title": "Shots & goals on the court",
-          "description": "Visualize every shot and goal right on the court. Spot heatmaps, strong zones and the patterns that decide games – per player or for the whole team.",
-          "linkLabel": "More on handball shot maps"
+          "clock": "46:33",
+          "moment": "before the next time-out",
+          "title": "Where your shots land – and where they don't.",
+          "description": "Every shot position with its rate, every corner of the goal with its hits. Tap “Right back” and the goal shows only the shots from there – exactly what no scoresheet shows.",
+          "facts": [
+            "Per player or for the whole team",
+            "Your goalkeeper's saves too"
+          ],
+          "linkLabel": "More on shot charts in handball",
+          "alt": "Statix on a tablet: shot chart with shot positions and goal corners; tapping a position filters the corners to the shots from there."
         }
-      ]
+      ],
+      "closingTitle": "Your next game. No scoresheet.",
+      "primaryCta": "Start for free",
+      "secondaryCta": "Live demo – no account",
+      "trust": "Start for free – no credit card · Offline in the hall",
+      "note": "The clips show the app's screens with a demo team."
     },
     "ai": {
       "kicker": "AI analysis",

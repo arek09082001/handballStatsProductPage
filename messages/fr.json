@@ -1512,30 +1512,53 @@
       }
     },
     "showcase": {
-      "kicker": "En direct dans l’application",
-      "title": "Comment saisir et analyser les statistiques de handball avec Statix",
-      "description": "De la saisie en direct sur le banc à l’analyse finie pour le vestiaire : un coup d’œil à l’intérieur de l’application.",
-      "ctaLabel": "Essayez vous-même dans la démo",
+      "kicker": "Une minute de match dans l’application",
+      "titleLead": "Saisi à la 46e minute.",
+      "titleHighlight": "Analysé à la 46e minute.",
+      "description": "Tu saisis depuis le banc, Statix calcule – pas après le coup de sifflet final, mais pendant que l’attaque est encore en cours. Voici à quoi cela ressemble sur la tablette, tap après tap.",
       "items": [
         {
-          "badge": "Saisie en direct",
-          "title": "Chaque action en un seul geste",
-          "description": "Touchez directement sur le terrain : but, but en contre-attaque, récupération, contre, 7 mètres, exclusion ou tir manqué. Banc, composition et score toujours visibles, sans quitter le match des yeux.",
-          "linkLabel": "La saisie en direct en détail"
+          "clock": "46:27",
+          "moment": "Erik marque depuis la base arrière",
+          "title": "Un but en quatre taps.",
+          "description": "Joueur, « But », position de tir, coin du but – et qui a fait la passe. Quelques secondes, et ton regard est de retour sur le terrain.",
+          "facts": [
+            "Fonctionne hors ligne dans la salle",
+            "Chaque tap peut être annulé"
+          ],
+          "linkLabel": "La saisie en direct en détail",
+          "alt": "Statix sur une tablette : un but est saisi en quatre taps – joueur, but, position, coin et passe décisive – puis le score passe à 25:21."
         },
         {
-          "badge": "Calculé aussitôt",
-          "title": "Statistiques individuelles en temps réel",
-          "description": "Buts, tirs, pourcentage, passes décisives, récupérations, contres et discipline : calculés automatiquement pour chaque joueur, pendant que le match se joue encore.",
-          "linkLabel": "Toutes les statistiques de handball expliquées"
+          "clock": "46:28",
+          "moment": "une seconde plus tard",
+          "title": "Qui est en réussite aujourd’hui, tu le vois tout de suite.",
+          "description": "Buts, tirs, taux de réussite, passes décisives, interceptions, sanctions – calculés pour chaque joueur pendant le match. Un tap sur la colonne, et celui qui est en feu passe en tête.",
+          "facts": [
+            "Rien à additionner après coup",
+            "Pour les joueurs de champ et les gardiens"
+          ],
+          "linkLabel": "Toutes les statistiques de handball expliquées",
+          "alt": "Statix sur une tablette : le tableau des joueurs de champ avec buts, tirs et taux de réussite se remplit en direct et se trie par taux de réussite en un tap."
         },
         {
-          "badge": "Cartes de tirs et cartes de chaleur",
-          "title": "Tirs et buts sur le terrain",
-          "description": "Visualisez chaque tir et chaque but directement sur le terrain. Repérez les cartes de chaleur, les zones fortes et les schémas qui font basculer les matchs, par joueur ou pour toute l’équipe.",
-          "linkLabel": "En savoir plus sur les cartes de tirs"
+          "clock": "46:33",
+          "moment": "avant le prochain temps mort",
+          "title": "Où atterrissent vos tirs – et où non.",
+          "description": "Chaque position de tir avec son taux, chaque coin du but avec ses buts. Tape sur « Arrière droit 9m » et le but n’affiche plus que les tirs de là – exactement ce qu’aucune feuille papier ne montre.",
+          "facts": [
+            "Par joueur ou pour toute l’équipe",
+            "Les arrêts de ton gardien aussi"
+          ],
+          "linkLabel": "En savoir plus sur les cartes de tirs au handball",
+          "alt": "Statix sur une tablette : carte des tirs avec positions et coins du but ; un tap sur une position filtre les coins sur les tirs de là."
         }
-      ]
+      ],
+      "closingTitle": "Ton prochain match. Sans papier.",
+      "primaryCta": "Commencer gratuitement",
+      "secondaryCta": "Démo en direct – sans compte",
+      "trust": "Commencer gratuitement – sans carte bancaire · Hors ligne dans la salle",
+      "note": "Les clips montrent les écrans de l’application avec une équipe de démonstration."
     },
     "ai": {
       "kicker": "Analyse par IA",
