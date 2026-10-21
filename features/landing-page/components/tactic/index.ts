@@ -7,3 +7,4 @@ export { default as BoardCard } from './board-card';
 export { default as BoardScreenshot } from './board-screenshot';
 export { default as SectionHeading } from './section-heading';
 export { default as Grain } from './grain';
+export { default as TabletLoop } from './tablet-loop';

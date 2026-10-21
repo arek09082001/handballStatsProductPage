@@ -7,7 +7,7 @@ import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
-import { BoardScreenshot, Grain, SectionHeading } from './tactic';
+import { Grain, SectionHeading, TabletLoop } from './tactic';
 
 interface ShowcaseItem {
   badge: string;
@@ -22,11 +22,15 @@ interface ShowcaseItem {
  * it computes, and the proof no scoresheet can show. The dashboard, roster and
  * export shots that used to sit here made the band six screenshots long — they
  * live on `/was-ist-statix` and in the live demo instead.
+ *
+ * Each beat is a short loop of the app on a tablet, rendered with Remotion from
+ * the app's own components (repo remotion-statix, `src/compositions/showcase/`)
+ * — a screenshot showed the result, the loop shows the tap that gets there.
  */
 const SHOTS = [
-  { src: '/recordStatsInGame.png', width: 2560, height: 1600, href: '/funktionen/live-erfassung' },
-  { src: '/statsTableInGame.png', width: 2560, height: 2000, href: '/handball-statistiken' },
-  { src: '/shotMaps.png', width: 2560, height: 2000, href: '/funktionen/wurfbilder' },
+  { video: 'live-erfassen', href: '/funktionen/live-erfassung' },
+  { video: 'statistik', href: '/handball-statistiken' },
+  { video: 'wurfbilder', href: '/funktionen/wurfbilder' },
 ] as const;
 
 export default function ShowcaseSection() {
@@ -105,13 +109,10 @@ export default function ShowcaseSection() {
                 </div>
 
                 <div className={reversed ? 'lg:order-1' : ''}>
-                  <BoardScreenshot
-                    src={shot.src}
+                  <TabletLoop
+                    name={shot.video}
                     alt={item.title}
-                    width={shot.width}
-                    height={shot.height}
                     label={item.title}
-                    tone='paper'
                     pin={reversed ? 'magnet' : 'tape'}
                     priority={index === 0}
                   />
