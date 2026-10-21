@@ -1743,8 +1743,8 @@
     },
     "more": {
       "kicker": "Et aussi",
-      "title": "Tournois, live et staff technique",
-      "description": "Tout ce qui dépasse le match isolé, sans changer d’outil pour autant.",
+      "title": "Tournois et ton staff",
+      "description": "Tout ce qui va au-delà d’un seul match – sans changer d’outil.",
       "linkLabel": "Toutes les fonctionnalités en détail",
       "points": [
         {
@@ -1752,44 +1752,88 @@
           "description": "Montez un tournoi à plusieurs équipes et lancez des matchs en direct depuis le calendrier : le classement se met à jour tout seul après chaque résultat."
         },
         {
-          "title": "Live",
-          "description": "Publiez votre match sous forme de live public. Parents, supporters et membres du club suivent le score et le déroulé par lien ou QR code, sans compte."
-        },
-        {
           "title": "Staff et effectif",
           "description": "Partagez des matchs avec vos collègues, invitez des adjoints, impliquez les joueurs avec des questionnaires et exportez les analyses en PDF ou par lien."
         }
       ],
-      "mock": {
-        "liveBadge": "En direct",
-        "minute": "43:12",
-        "homeTeam": "HSG Statix",
-        "awayTeam": "TV Musterstadt",
-        "homeScore": "24",
-        "awayScore": "21",
-        "feedTitle": "Déroulé du match",
-        "events": [
+      "linkTitle": "Toutes les fonctions de Statix en détail"
+    },
+    "liveTicker": {
+      "kicker": "Live ticker",
+      "titleLead": "Pas dans la salle ?",
+      "titleHighlight": "En direct quand même.",
+      "description": "Un geste sur LIVE, et chaque but que tu saisis s’affiche quelques secondes plus tard sur les téléphones des parents, des grands-parents et des supporters – dans le navigateur, sans appli ni compte.",
+      "filmAlt": "Film : l’entraîneur publie le match en live ticker et partage le lien dans le groupe des parents. Un but est saisi et apparaît quelques secondes plus tard sur les téléphones de la famille – avec le compte à rebours de la supériorité numérique, un temps mort, des sponsors sur les buts, les temps morts et dans la bannière, et enfin le lien permanent de l’équipe.",
+      "chaptersLabel": "Chapitres du film",
+      "play": "Lire le film",
+      "pause": "Mettre le film en pause",
+      "chapters": [
+        {
+          "label": "Publier",
+          "text": "Un geste sur LIVE, le lien part dans le groupe des parents."
+        },
+        {
+          "label": "Un but",
+          "text": "Tu touches « But » – quelques secondes plus tard, le téléphone fête aussi."
+        },
+        {
+          "label": "Au cœur du match",
+          "text": "Mamie sur le canapé, papa au travail : tout le monde voit le même match."
+        },
+        {
+          "label": "Sponsors",
+          "text": "Bannière, but, temps mort – votre sponsor est de chaque match."
+        },
+        {
+          "label": "Saison",
+          "text": "Un lien permanent pour tous les matchs de l’équipe."
+        }
+      ],
+      "benefitsTitle": "Ce que tu y gagnes",
+      "benefits": [
+        {
+          "title": "Aucun travail en plus",
+          "description": "Le ticker naît de ta saisie. Personne n’a besoin de taper le score dans le groupe à côté."
+        },
+        {
+          "title": "Sans appli ni compte",
+          "description": "Un lien ou un QR code suffit – sur le téléphone de mamie comme sur le projecteur de la salle."
+        },
+        {
+          "title": "Pensé pour les jeunes",
+          "description": "Les noms de famille sont abrégés par défaut, et un geste suffit pour rendre le match privé."
+        },
+        {
+          "title": "Un lien pour la saison",
+          "description": "Le lien permanent de ton équipe affiche chaque match que tu publies. Partagé une fois, c’est fait."
+        }
+      ],
+      "sponsor": {
+        "kicker": "Pour votre club",
+        "title": "Un espace sponsor que chaque famille voit.",
+        "description": "Ceux qui suivent le match regardent le ticker – à chaque but, à chaque temps mort, pendant tout le match. C’est exactement là qu’apparaît votre sponsor. Tu télécharges le logo une seule fois ; Statix ajoute automatiquement la mention « présenté par ».",
+        "keep": "de l’argent des sponsors reste au club.",
+        "slotsTitle": "Trois emplacements dans le ticker",
+        "slots": [
           {
-            "minute": "43'",
-            "text": "But du n° 7 — demi-centre"
+            "title": "Bannière",
+            "description": "En permanence en bas du ticker. Plusieurs logos s’y succèdent."
           },
           {
-            "minute": "41'",
-            "text": "Arrêt ! Jet de 7 mètres stoppé"
+            "title": "But",
+            "description": "« But présenté par … » – en grand à chacun de vos buts."
           },
           {
-            "minute": "39'",
-            "text": "2 minutes pour TV Musterstadt"
-          },
-          {
-            "minute": "38'",
-            "text": "Contre-attaque — but du n° 11"
+            "title": "Temps mort",
+            "description": "Pendant chaque temps mort de l’équipe, juste sous le score."
           }
         ],
-        "qrLabel": "Scannez et suivez en direct",
-        "footnote": "Voilà à quoi ressemble votre live — données d’exemple"
+        "note": "Les sponsors dans le ticker font partie du niveau Entraîneur – en t’inscrivant avant le 1er janvier 2027, tu l’as gratuitement jusqu’au 30 juin 2027.",
+        "pricingLink": "Voir les tarifs"
       },
-      "linkTitle": "Toutes les fonctions de Statix en détail"
+      "primaryCta": "Commencer gratuitement",
+      "secondaryCta": "Démo en direct – sans compte",
+      "note": "Le live ticker lui-même reste gratuit pour toujours dans le niveau Base. Match d’exemple avec une équipe de démonstration."
     }
   },
   "newsletterConfirm": {

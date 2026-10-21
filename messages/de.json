@@ -1743,8 +1743,8 @@
     },
     "more": {
       "kicker": "Und dann noch",
-      "title": "Turniere, Live-Ticker und dein Trainerteam",
-      "description": "Alles, was über das einzelne Spiel hinausgeht – ohne dass du dafür das Tool wechselst.",
+      "title": "Turniere und dein Trainerteam",
+      "description": "Was über das einzelne Spiel hinausgeht – ohne dass du dafür das Tool wechselst.",
       "linkLabel": "Alle Funktionen im Detail",
       "points": [
         {
@@ -1752,44 +1752,88 @@
           "description": "Turnier mit mehreren Mannschaften anlegen, Live-Spiele direkt aus dem Spielplan starten – die Tabelle aktualisiert sich nach jedem Ergebnis von selbst."
         },
         {
-          "title": "Live-Ticker",
-          "description": "Veröffentliche dein Spiel als öffentlichen Ticker. Eltern, Fans und Vereinskollegen verfolgen Spielstand und Verlauf per Link oder QR-Code – ohne Account."
-        },
-        {
           "title": "Trainerteam & Kader",
           "description": "Spiele mit Trainerkollegen teilen, Co-Trainer einladen, Spieler per Umfrage einbinden und Auswertungen als PDF oder Freigabelink exportieren."
         }
       ],
-      "mock": {
-        "liveBadge": "Live",
-        "minute": "43:12",
-        "homeTeam": "HSG Statix",
-        "awayTeam": "TV Musterstadt",
-        "homeScore": "24",
-        "awayScore": "21",
-        "feedTitle": "Spielverlauf",
-        "events": [
+      "linkTitle": "Alle Funktionen von Statix im Detail"
+    },
+    "liveTicker": {
+      "kicker": "Live-Ticker",
+      "titleLead": "Nicht in der Halle?",
+      "titleHighlight": "Trotzdem live dabei.",
+      "description": "Ein Tipp auf LIVE, und jedes Tor, das du erfasst, steht Sekunden später auf den Handys von Eltern, Großeltern und Fans – im Browser, ohne App und ohne Account.",
+      "filmAlt": "Film: Der Trainer veröffentlicht das Spiel als Live-Ticker und teilt den Link im Elternchat. Ein Tor wird erfasst und erscheint Sekunden später auf den Handys der Familie – mit Überzahl-Countdown, Auszeit, Sponsoren bei Tor, Auszeit und im Banner und am Ende dem festen Link der Mannschaft.",
+      "chaptersLabel": "Kapitel des Films",
+      "play": "Film abspielen",
+      "pause": "Film anhalten",
+      "chapters": [
+        {
+          "label": "Freigeben",
+          "text": "Ein Tipp auf LIVE, der Link geht in den Elternchat."
+        },
+        {
+          "label": "Ein Tor",
+          "text": "Du tippst „Tor“ – Sekunden später jubelt das Handy mit."
+        },
+        {
+          "label": "Mittendrin",
+          "text": "Oma auf dem Sofa, Papa auf Schicht: alle sehen dasselbe Spiel."
+        },
+        {
+          "label": "Sponsoren",
+          "text": "Banner, Tor, Auszeit – euer Sponsor ist bei jedem Spiel dabei."
+        },
+        {
+          "label": "Saison",
+          "text": "Ein fester Link für alle Spiele der Mannschaft."
+        }
+      ],
+      "benefitsTitle": "Was du davon hast",
+      "benefits": [
+        {
+          "title": "Kein Extra-Aufwand",
+          "description": "Der Ticker entsteht aus deiner Erfassung. Niemand muss nebenbei Spielstände in den Chat tippen."
+        },
+        {
+          "title": "Ohne App und Account",
+          "description": "Link oder QR-Code genügt – auf dem Handy der Oma genauso wie auf dem Beamer in der Halle."
+        },
+        {
+          "title": "Für Jugendteams gemacht",
+          "description": "Nachnamen stehen standardmäßig abgekürzt, und mit einem Tipp ist das Spiel wieder privat."
+        },
+        {
+          "title": "Ein Link für die Saison",
+          "description": "Der feste Link deiner Mannschaft zeigt jedes Spiel, das du veröffentlichst. Einmal teilen, fertig."
+        }
+      ],
+      "sponsor": {
+        "kicker": "Für euren Verein",
+        "title": "Eine Sponsorenfläche, die jede Familie sieht.",
+        "description": "Wer mitfiebert, schaut auf den Ticker – bei jedem Tor, in jeder Auszeit, das ganze Spiel lang. Genau dort steht euer Sponsor. Das Logo lädst du einmal hoch, die Kennzeichnung „präsentiert von“ setzt Statix automatisch.",
+        "keep": "der Sponsorengelder bleiben beim Verein.",
+        "slotsTitle": "Drei Stellen im Ticker",
+        "slots": [
           {
-            "minute": "43'",
-            "text": "Tor Nr. 7 – Rückraum Mitte"
+            "title": "Banner",
+            "description": "Dauerhaft unten im Ticker. Mehrere Logos wechseln sich ab."
           },
           {
-            "minute": "41'",
-            "text": "Parade! 7-Meter gehalten"
+            "title": "Tor",
+            "description": "„Tor präsentiert von …“ – bei jedem eurer Treffer groß im Bild."
           },
           {
-            "minute": "39'",
-            "text": "2-Minuten-Strafe TV Musterstadt"
-          },
-          {
-            "minute": "38'",
-            "text": "Tempo-Gegenstoß – Tor Nr. 11"
+            "title": "Auszeit",
+            "description": "Während jeder Team-Auszeit, direkt unter dem Spielstand."
           }
         ],
-        "qrLabel": "Scannen & live mitfiebern",
-        "footnote": "So sieht dein Live-Ticker aus – Beispieldaten"
+        "note": "Sponsoren im Ticker gibt es ab der Trainer-Stufe – wer sich vor dem 1. Januar 2027 registriert, hat sie bis zum 30. Juni 2027 kostenlos.",
+        "pricingLink": "Zu den Preisen"
       },
-      "linkTitle": "Alle Funktionen von Statix im Detail"
+      "primaryCta": "Kostenlos starten",
+      "secondaryCta": "Live-Demo – ohne Account",
+      "note": "Der Live-Ticker selbst ist in der Basis-Stufe dauerhaft kostenlos. Beispielspiel mit einer Demo-Mannschaft."
     }
   },
   "newsletterConfirm": {

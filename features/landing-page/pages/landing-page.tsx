@@ -4,6 +4,7 @@ import StatsBarSection from '../components/stats-bar-section';
 import ShowcaseSection from '../components/showcase-section';
 import AiAnalyticsSection from '../components/ai-analytics-section';
 import MoreSection from '../components/more-section';
+import LiveTickerSection from '../components/live-ticker-section';
 import ProsSection from '../components/pros-section';
 import TestimonialsSection from '../components/testimonials-section';
 import FaqSection from '../components/faq-section';
@@ -36,8 +37,9 @@ import { fetchLiveStats } from '../data/live-stats';
  * SECTION ORDER — one decision, reached fast. Hero states the mechanism and
  * offers the two ways in; the scoreboard makes it concrete; three screenshots
  * tell the whole product story (tap → stats → shot maps); AI is the thing no
- * scoresheet can do; "und dann noch" covers tournaments, ticker and the
- * coaching staff without three more bands; the scoresheet comparison and the
+ * scoresheet can do; "und dann noch" covers tournaments and the coaching
+ * staff; the live ticker gets its own film, because it is what parents see
+ * and what a club can sell to a sponsor; the scoresheet comparison and the
  * maker's note carry the sell and the trust; FAQ clears the objections; the
  * newsletter catches whoever will not register today; the final CTA asks.
  *
@@ -65,6 +67,7 @@ export default async function LandingPage() {
         <ShowcaseSection />
         <AiAnalyticsSection />
         <MoreSection />
+        <LiveTickerSection />
         <ProsSection />
         <TestimonialsSection />
         <FaqSection />
