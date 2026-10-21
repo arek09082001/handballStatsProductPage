@@ -87,7 +87,7 @@ export default function SiteNavbar() {
             <button
               type='button'
               onClick={handleBrandClick}
-              className='flex min-w-0 items-center gap-2 text-left transition-opacity hover:opacity-85 lg:gap-3'>
+              className='flex min-w-0 items-center gap-2 rounded-xl text-left transition-colors hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-700 lg:gap-3'>
               <span className='relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-2xl lg:size-11'>
                 <Image
                   src={CLUB_CONFIG.branding.logo.path}
@@ -225,7 +225,7 @@ export default function SiteNavbar() {
               rel='noopener noreferrer'
               title={t('registerCta')}
               onClick={() => trackRegisterClick('navbar')}
-              className='group inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-primary px-5 font-display text-sm font-bold tracking-tight text-white shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] active:translate-y-0 active:scale-95'>
+              className='group inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-primary px-5 font-display text-sm font-bold tracking-tight text-ink shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] active:translate-y-0 active:scale-95'>
               {t('registerCta')}
               <ArrowRight className='size-3.5 shrink-0 transition-transform group-hover:translate-x-0.5' />
             </Link>
@@ -241,7 +241,7 @@ export default function SiteNavbar() {
             rel='noopener noreferrer'
             title={t('registerCta')}
             onClick={() => trackRegisterClick('navbar')}
-            className='relative z-10 inline-flex h-10 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-primary px-3.5 font-display text-[13px] font-bold tracking-tight text-white shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-transform active:scale-95 sm:px-4 sm:text-sm lg:hidden'>
+            className='relative z-10 inline-flex h-10 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-primary px-3.5 font-display text-[13px] font-bold tracking-tight text-ink shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-transform active:scale-95 sm:px-4 sm:text-sm lg:hidden'>
             {t('registerCta')}
             <ArrowRight className='size-3.5 shrink-0' />
           </Link>
@@ -340,7 +340,7 @@ export default function SiteNavbar() {
                     trackRegisterClick('navbar');
                     closeMenu();
                   }}
-                  className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 font-display text-sm font-bold tracking-tight text-white shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
+                  className='inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 font-display text-sm font-bold tracking-tight text-ink shadow-[0_8px_18px_-10px_hsl(22_90%_45%/0.9)] transition-all duration-200 hover:bg-[#ea580c] active:scale-95'>
                   {t('registerCta')}
                   <ArrowRight className='size-4 shrink-0' />
                 </Link>

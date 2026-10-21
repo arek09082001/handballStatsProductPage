@@ -65,7 +65,7 @@ export default function NavSpotlight({
       <Link
         href={navigationSpotlight.href}
         title={t('title')}
-        aria-label={t('ariaLabel')}
+        aria-label={`${t('badge')}: ${t('ariaLabel')}`}
         aria-current={active ? 'page' : undefined}
         className='relative z-10 inline-flex size-11 shrink-0 items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2'>
         <Magnet size='lg' pulse={!active} />
@@ -80,7 +80,7 @@ export default function NavSpotlight({
     <Link
       href={navigationSpotlight.href}
       title={t('title')}
-      aria-label={t('ariaLabel')}
+      aria-label={`${t('badge')}: ${t('ariaLabel')}`}
       aria-current={active ? 'page' : undefined}
       className='relative inline-flex size-11 shrink-0 items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f97316] focus-visible:ring-offset-2'>
       <Magnet size='lg' pulse={!active} />

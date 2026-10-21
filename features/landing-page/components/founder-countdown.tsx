@@ -55,7 +55,7 @@ export default function FounderCountdown({
     <Link
       href='/preise#bestandsschutz'
       className={cn(
-        'group relative inline-flex max-w-full items-center gap-3 rounded-2xl border px-3.5 py-2.5 text-left transition-colors',
+        'board-offer group relative inline-flex max-w-full items-center gap-3 rounded-2xl border px-3.5 py-2.5 text-left transition-colors',
         onCourt
           ? 'border-primary/40 bg-primary/10 hover:bg-primary/15'
           : 'border-primary/30 bg-primary/5 hover:bg-primary/10',
@@ -65,7 +65,7 @@ export default function FounderCountdown({
           The word "Tage" lives in the title beside it — a unit squeezed into
           the magnet would fall under the page's 13px floor. */}
       <span
-        className='flex size-11 shrink-0 items-center justify-center rounded-full bg-primary font-display text-[17px] font-extrabold leading-none tabular-nums text-white shadow-[0_6px_12px_-6px_hsl(22_90%_40%/0.9)]'
+        className='flex size-11 shrink-0 items-center justify-center rounded-full bg-primary font-display text-[17px] font-extrabold leading-none tabular-nums text-ink shadow-[0_6px_12px_-6px_hsl(22_90%_40%/0.9)]'
         aria-hidden>
         {daysLeft ?? <Gift className='size-5' strokeWidth={2.5} />}
       </span>

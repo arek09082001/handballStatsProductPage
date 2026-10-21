@@ -59,7 +59,7 @@ export default async function LandingPage() {
   return (
     <>
       <StructuredData />
-      <div className='flex h-full w-full flex-col items-center bg-paper'>
+      <div className='statix-landing flex h-full w-full flex-col items-center bg-paper'>
         <ProductHero />
         <StatsBarSection stats={stats} />
         <ShowcaseSection />

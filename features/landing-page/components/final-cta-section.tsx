@@ -1,45 +1,19 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { gsap } from '@/lib/gsap-config';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import HeroActionButton from './hero-action-button';
 import DemoPreview from './demo-preview';
 import FounderCountdown from './founder-countdown';
 import { BoardKicker, CourtDiagram, Grain, MarkerArrow } from './tactic';
-import { drawMarkers } from './tactic/draw';
 
 export default function FinalCTASection() {
   const t = useTranslations('productPage.finalCta');
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-    const el = sectionRef.current;
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        contentRef.current,
-        { opacity: 0, y: 26 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: el, start: 'top 82%', once: true },
-        },
-      );
-      drawMarkers(el, { trigger: el, start: 'top 75%' });
-    }, el);
-    return () => ctx.revert();
-  }, []);
 
   return (
     <section
-      ref={sectionRef}
       id='demo'
       className='relative w-full scroll-mt-24 overflow-hidden bg-court py-24 text-chalk md:py-32'>
       <CourtDiagram
@@ -53,7 +27,6 @@ export default function FinalCTASection() {
       <Grain tone='court' />
 
       <div
-        ref={contentRef}
         className='relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:gap-16'>
         <div className='text-center lg:text-left'>
           <BoardKicker color='chalk' className='justify-center lg:justify-start'>

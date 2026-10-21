@@ -23,7 +23,7 @@ const legalLinks: { href: string; labelKey: string; titleKey?: string }[] = [
 ];
 
 const linkClassName =
-  'block rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court';
+  'flex min-h-7 items-center rounded-sm text-[13px] text-slate-300 transition-all duration-300 hover:translate-x-0.5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court';
 
 /**
  * The site footer. Its columns render from `siteLinkGroups` — the same
@@ -72,7 +72,7 @@ export default function Footer() {
               rel='noopener noreferrer'
               title={t('registerCta')}
               onClick={() => trackRegisterClick('footer')}
-              className='inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#f97316] px-5 text-sm font-semibold text-white shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 active:scale-95'>
+              className='inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#f97316] px-5 text-sm font-semibold text-ink shadow-[0_4px_16px_-4px_rgba(249,115,22,0.55)] ring-1 ring-orange-500/20 transition-all duration-200 hover:-translate-y-px hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:translate-y-0 active:scale-95'>
               <UserPlus className='size-4 shrink-0' />
               {t('registerCta')}
             </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
               <Link
                 href={`mailto:${CLUB_CONFIG.email.main}`}
                 title={`${t('titles.email')} ${CLUB_CONFIG.email.main}`}
-                className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-colors duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+                className='flex min-h-7 items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-colors duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 <Mail className='mt-0.5 size-4 shrink-0' />
                 <span>
                   {t('titles.email')} {CLUB_CONFIG.email.main}
@@ -91,9 +91,9 @@ export default function Footer() {
               <Link
                 href={CLUB_CONFIG.social.instagram.url}
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
                 title={`${t('contact.instagram')} ${CLUB_CONFIG.social.instagram.handle}`}
-                className='flex items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-colors duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+                className='flex min-h-7 items-start gap-3 rounded-sm text-[13px] text-slate-300 transition-colors duration-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 <Instagram className='mt-0.5 size-4 shrink-0' />
                 <span>
                   {t('contact.instagram')} {CLUB_CONFIG.social.instagram.handle}
@@ -136,7 +136,7 @@ export default function Footer() {
                         className={linkClassName}>
                         {link.external ? (
                           <span className='inline-flex items-center gap-2'>
-                            <span className='size-1.5 shrink-0 animate-pulse rounded-full bg-[#f97316]' />
+                            <span className='size-1.5 shrink-0 motion-safe:animate-pulse rounded-full bg-[#f97316]' />
                             {label}
                           </span>
                         ) : (
@@ -181,7 +181,7 @@ export default function Footer() {
                     ? t(`titles.${link.titleKey}`)
                     : t(`legal.${link.labelKey}`)
                 }
-                className='rounded-sm underline-offset-4 transition-colors duration-300 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+                className='inline-flex min-h-6 items-center rounded-sm underline-offset-4 transition-colors duration-300 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
                 {t(`legal.${link.labelKey}`)}
               </Link>
             ))}
@@ -193,7 +193,7 @@ export default function Footer() {
             <a
               href='/llms.txt'
               title={t('titles.llmsTxt')}
-              className='rounded-sm underline-offset-4 transition-colors duration-300 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+              className='inline-flex min-h-6 items-center rounded-sm underline-offset-4 transition-colors duration-300 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
               {t('legal.llmsTxt')}
             </a>
           </div>

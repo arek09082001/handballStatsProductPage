@@ -1,9 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { Grain, PlayerMagnet, SectionHeading } from './tactic';
 import TickerMock from './ticker-mock';
@@ -32,44 +30,10 @@ export default function MoreSection() {
   const t = useTranslations('productPage.more');
   const points = t.raw('points') as Point[];
 
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        '[data-more-row]',
-        { opacity: 0, y: 22 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          stagger: 0.1,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 80%', once: true },
-        },
-      );
-      gsap.fromTo(
-        '[data-ticker-event]',
-        { opacity: 0, x: 16 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.45,
-          stagger: 0.16,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 70%', once: true },
-        },
-      );
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
   return (
     <section
       id='mehr'
-      ref={sectionRef}
-      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-20 md:py-28'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-14 md:py-24'>
       {/* Legacy anchors — the three bands this one replaced. */}
       <span id='tournament' aria-hidden className='block scroll-mt-24' />
       <span id='liveticker' aria-hidden className='block scroll-mt-24' />
@@ -108,7 +72,7 @@ export default function MoreSection() {
             <Link
               href='/funktionen'
               title={t('linkTitle')}
-              className='group mt-8 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+              className='board-detail-link group mt-6 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
               {t('linkLabel')}
               <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
             </Link>

@@ -1459,16 +1459,16 @@
   },
   "productPage": {
     "hero": {
-      "badge": "App de statistiques de handball · par un handballeur",
-      "headlineLead": "Un geste par action.",
-      "headlineHighlight": "Des statistiques de handball",
-      "headlineTail": "qui montrent où votre match a basculé.",
-      "description": "Vous saisissez buts, tirs, arrêts et exclusions depuis le banc : Statix trace le déroulé du match, calcule les pourcentages de réussite et d’arrêts et montre qui a marqué et qui non. Pendant que le match se joue encore.",
+      "badge": "Application de statistiques de handball",
+      "headlineLead": "Saisis le match.",
+      "headlineHighlight": "Comprends où",
+      "headlineTail": "le jeu bascule.",
+      "description": "Saisis buts, tirs et arrêts. Consulte le déroulement et les taux immédiatement. Même hors ligne dans la salle.",
       "primaryCta": "Commencer gratuitement",
       "secondaryCta": "Démo en direct, sans compte",
-      "trust1": "Opérationnel en quelques minutes",
-      "trust2": "Démarrage gratuit, sans carte bancaire",
-      "trust3": "Fonctionne hors ligne dans la salle",
+      "trust1": "Prêt en quelques minutes",
+      "trust2": "Sans carte bancaire",
+      "trust3": "Hors ligne",
       "demoAlt": "Démo en direct de Statix – statistiques de match et analyses dans le navigateur",
       "tabletAlt": "Déroulé d’un match de handball dans Statix sur tablette : l’écart au score sur 60 minutes avec les phases de supériorité et d’infériorité, la plus grande avance et les séries de l’adversaire",
       "phoneAlt": "Statistiques du match dans Statix sur téléphone : pourcentage de réussite et d’arrêts en anneaux, avec buts, tirs, xG, passes décisives et arrêts",
@@ -1485,7 +1485,7 @@
       "items": [
         {
           "value": "1 geste",
-          "label": "par action, saisie en direct"
+          "label": "en mode rapide"
         },
         {
           "value": "20+",
@@ -1520,8 +1520,8 @@
         {
           "clock": "46:27",
           "moment": "Erik marque depuis la base arrière",
-          "title": "Un but en quatre taps.",
-          "description": "Joueur, « But », position de tir, coin du but – et qui a fait la passe. Quelques secondes, et ton regard est de retour sur le terrain.",
+          "title": "Un but. Tous les détails.",
+          "description": "Saisis le joueur, le but, la position et la zone du but. Ajoute la passe décisive si besoin. Le mode rapide permet une saisie rapide.",
           "facts": [
             "Fonctionne hors ligne dans la salle",
             "Chaque tap peut être annulé"
@@ -1585,7 +1585,9 @@
       ],
       "showcase": {
         "imageOneLabel": "Déroulé du match et efficacité par zone de tir",
-        "imageTwoLabel": "Moments charnières, répartition des erreurs et performance des joueurs"
+        "imageTwoLabel": "Moments charnières, répartition des erreurs et performance des joueurs",
+        "openImage": "Ouvrir l’analyse en grand",
+        "more": "Voir une autre analyse"
       }
     },
     "pros": {

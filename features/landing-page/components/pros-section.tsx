@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, X } from 'lucide-react';
-import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { inlineLink } from '@/components/custom-ui/rich-text';
 import { trackRegisterClick } from '@/lib/analytics';
@@ -15,42 +13,16 @@ export default function ProsSection() {
   const oldPoints = t.raw('oldPoints') as string[];
   const newPoints = t.raw('newPoints') as string[];
 
-  const sectionRef = useRef<HTMLElement>(null);
-  const cardsRef = useRef<HTMLDivElement[]>([]);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        cardsRef.current,
-        { opacity: 0, y: 28 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          stagger: 0.14,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 78%', once: true },
-        },
-      );
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
-      className='relative w-full overflow-hidden bg-paper py-20 md:py-28'>
+      className='relative w-full overflow-hidden bg-paper py-14 md:py-24'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-6xl px-6 sm:px-10'>
         <SectionHeading kicker={t('kicker')} title={t('title')} description={t('description')} />
 
-        <div className='mx-auto mt-16 grid max-w-5xl items-start gap-8 lg:grid-cols-2'>
+        <div className='mx-auto mt-10 grid max-w-5xl items-start gap-8 lg:grid-cols-2'>
           {/* The old way — a ruled paper scrap, taped to the board */}
           <div
-            ref={(el) => {
-              if (el) cardsRef.current[0] = el;
-            }}
             className='lg:-rotate-1'>
             <BoardCard tone='paper' pin='tape' className='overflow-hidden'>
               <div
@@ -66,7 +38,7 @@ export default function ProsSection() {
                 <div className='flex size-11 items-center justify-center rounded-xl bg-ink/8 text-ink/50'>
                   <X className='size-5' />
                 </div>
-                <p className='mt-5 font-display text-2xl font-extrabold tracking-tight text-ink/55'>
+                <p className='mt-5 font-display text-2xl font-extrabold tracking-tight text-ink/75'>
                   {t('oldTitle')}
                 </p>
                 <ul className='mt-6 space-y-4'>
@@ -75,7 +47,7 @@ export default function ProsSection() {
                       <span className='mt-1 flex size-4 shrink-0 items-center justify-center rounded-full bg-ink/15 text-paper'>
                         <X className='size-3' strokeWidth={3} />
                       </span>
-                      <span className='text-sm leading-7 text-ink/55 line-through decoration-ink/25'>
+                      <span className='text-sm leading-7 text-ink/75'>
                         {point}
                       </span>
                     </li>
@@ -87,9 +59,6 @@ export default function ProsSection() {
 
           {/* The new way — the board itself */}
           <div
-            ref={(el) => {
-              if (el) cardsRef.current[1] = el;
-            }}
             className='lg:rotate-1'>
             <BoardCard tone='court' pin='magnet' pinColor='marker' className='overflow-hidden'>
               <div className='px-7 py-8'>
@@ -120,7 +89,7 @@ export default function ProsSection() {
             target='_blank'
             rel='noopener noreferrer'
             onClick={() => trackRegisterClick('pros')}
-            className='inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 font-display text-sm font-bold text-white shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all hover:-translate-y-0.5 hover:bg-[#ea580c]'>
+            className='inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 font-display text-sm font-bold text-ink shadow-[0_14px_26px_-14px_hsl(22_90%_45%/0.85)] transition-all hover:-translate-y-0.5 hover:bg-[#ea580c]'>
             {t('cta')}
             <ArrowUpRight className='size-4' />
           </a>
@@ -137,7 +106,7 @@ export default function ProsSection() {
             is the only trust signal at the moment of decision — and it is the
             one thing that is true today: a handballer builds this in Germany
             out of his own sideline practice. */}
-        <div className='mx-auto mt-20 max-w-2xl border-t border-ink/12 pt-8 text-center'>
+        <div className='mx-auto mt-12 max-w-2xl border-t border-ink/12 pt-8 text-center'>
           <BoardKicker className='justify-center'>{t('founderKicker')}</BoardKicker>
           <p className='mx-auto mt-4 max-w-[60ch] text-base leading-7 text-ink/75'>
             {t('founderNote')}
@@ -145,7 +114,7 @@ export default function ProsSection() {
           <Link
             href='/erfahrungen'
             title={t('founderLinkTitle')}
-            className='group mt-5 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+            className='board-detail-link group mt-4 inline-flex items-center gap-2 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
             {t('founderLinkLabel')}
             <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
           </Link>

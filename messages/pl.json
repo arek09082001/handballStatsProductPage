@@ -1459,16 +1459,16 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Aplikacja statystyk piłki ręcznej · od zawodnika",
-      "headlineLead": "Jedno dotknięcie na akcję.",
-      "headlineHighlight": "Statystyki piłki ręcznej,",
-      "headlineTail": "które pokazują, gdzie mecz się odwrócił.",
-      "description": "Zapisujesz z ławki bramki, rzuty, obrony i wykluczenia — Statix rysuje przebieg meczu, liczy skuteczność rzutów i obron i pokazuje, kto trafiał, a kto nie. Jeszcze w trakcie meczu.",
+      "badge": "Aplikacja do statystyk piłki ręcznej",
+      "headlineLead": "Zapisuj mecz na żywo.",
+      "headlineHighlight": "Zobacz, kiedy",
+      "headlineTail": "zmienia się gra.",
+      "description": "Zapisuj gole, rzuty i obrony. Od razu zobacz przebieg meczu i skuteczność. Także bez internetu w hali.",
       "primaryCta": "Zacznij za darmo",
       "secondaryCta": "Demo na żywo, bez konta",
-      "trust1": "Gotowe w kilka minut",
-      "trust2": "Start za darmo, bez karty",
-      "trust3": "Działa offline w hali",
+      "trust1": "Gotowość w kilka minut",
+      "trust2": "Bez karty płatniczej",
+      "trust3": "Działa offline",
       "demoAlt": "Demo Statix na żywo – statystyki meczowe i analizy w przeglądarce",
       "tabletAlt": "Przebieg meczu piłki ręcznej w Statix na tablecie – różnica bramek przez 60 minut z fazami przewagi i osłabienia, najwyższym prowadzeniem i seriami rywala",
       "phoneAlt": "Statystyki meczu w Statix na telefonie – skuteczność rzutów i obron jako pierścienie, do tego bramki, rzuty, xG, asysty i obrony",
@@ -1485,7 +1485,7 @@
       "items": [
         {
           "value": "1 dotknięcie",
-          "label": "na akcję, zapisaną na żywo"
+          "label": "w trybie szybkim"
         },
         {
           "value": "20+",
@@ -1520,8 +1520,8 @@
         {
           "clock": "46:27",
           "moment": "Erik trafia z drugiej linii",
-          "title": "Bramka w czterech dotknięciach.",
-          "description": "Zawodnik, „Bramka”, pozycja rzutu, róg bramki – i kto podał. Kilka sekund i wzrok znów jest na boisku.",
+          "title": "Jeden gol. Wszystkie szczegóły.",
+          "description": "Zapisz zawodnika, gola, pozycję rzutu i strefę bramki. Możesz dodać asystę. Do szybkiego zapisu służy tryb szybki.",
           "facts": [
             "Działa offline na hali",
             "Każde dotknięcie można cofnąć"
@@ -1585,7 +1585,9 @@
       ],
       "showcase": {
         "imageOneLabel": "Przebieg meczu i skuteczność ze stref rzutowych",
-        "imageTwoLabel": "Momenty zwrotne, rozkład błędów i forma zawodników"
+        "imageTwoLabel": "Momenty zwrotne, rozkład błędów i forma zawodników",
+        "openImage": "Otwórz analizę w pełnym rozmiarze",
+        "more": "Zobacz kolejną analizę"
       }
     },
     "pros": {
