@@ -1,0 +1,8 @@
+{
+  "allBaselineTagsPreserved": true,
+  "comparedBaselineMetaAndCanonicalTags": 31,
+  "removedOrChangedBaselineTags": [],
+  "addedFrameworkTags": [
+    "<meta name=\"next-size-adjust\" content=\"\"/>"
+  ]
+}

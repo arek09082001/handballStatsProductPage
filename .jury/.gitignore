@@ -1,0 +1,10 @@
+# Full visual evidence remains available locally; keep compact review reports in Git.
+*.png
+*.report.html
+*.report.json
+logs/
+**/discarded-stale-server/
+**/aborted-gpu-pass/
+**/pass-1/
+**/pass-2/
+**/pass-3/

@@ -1,0 +1,238 @@
+{
+  "scope": "Only /; internal navigation is a transition test",
+  "pages": [
+    {
+      "url": "http://127.0.0.1:4400/",
+      "errors": [
+        "[desktop] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[desktop] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[desktop] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[desktop] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[keyboard] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[keyboard] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[keyboard] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[keyboard] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[hover] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[hover] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[hover] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[hover] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[mobile] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[mobile] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[mobile] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[mobile] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[reduced] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[reduced] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "[reduced] Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "[reduced] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failed": [
+        "[desktop] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+        "[desktop] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+        "[desktop] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+        "[desktop] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+        "[desktop] http://127.0.0.1:4400/newsletter/unsubscribe?_rsc=1r34m net::ERR_ABORTED",
+        "[desktop] http://127.0.0.1:4400/newsletter/unsubscribe?_rsc=p37cr net::ERR_ABORTED",
+        "[keyboard] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+        "[keyboard] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+        "[keyboard] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+        "[keyboard] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+        "[hover] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+        "[hover] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+        "[hover] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+        "[hover] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+        "[mobile] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+        "[mobile] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+        "[mobile] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+        "[mobile] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+        "[mobile] http://127.0.0.1:4400/videos/showcase/live-erfassen-sm.webm net::ERR_ABORTED",
+        "[mobile] http://127.0.0.1:4400/videos/showcase/statistik-sm.webm net::ERR_ABORTED",
+        "[mobile] http://127.0.0.1:4400/videos/showcase/wurfbilder-sm.webm net::ERR_ABORTED",
+        "[mobile] http://127.0.0.1:4400/newsletter/unsubscribe?_rsc=p37cr net::ERR_ABORTED",
+        "[reduced] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+        "[reduced] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+        "[reduced] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+        "[reduced] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED"
+      ],
+      "desktop": {
+        "loadMs": 678,
+        "loaderMs": null,
+        "settledMs": 3608,
+        "vitals": {
+          "lcpMs": 448,
+          "lcpElement": "img.block",
+          "cls": 0
+        },
+        "height": 11166,
+        "overflowX": false,
+        "offenders": [],
+        "h1": [
+          "Handball live erfassen. Sehen, wo dein\n Spiel kippt."
+        ],
+        "smallTargets": [
+          "Zum Inhalt springen 1x1"
+        ],
+        "glHidden": [],
+        "title": "Handball-Statistik-App \u2013 kostenlos live erfassen | Statix",
+        "glOn": false,
+        "scrollFps": {
+          "fps": 49,
+          "worstFrameMs": 117
+        },
+        "nav": {
+          "href": "/funktionen",
+          "scrollYAfter": 0,
+          "title": "Alle Funktionen der Handball-Statistik-App Statix | Statix"
+        },
+        "idleMotion": false,
+        "idleAt": null
+      },
+      "mobile": {
+        "throttled": true,
+        "loadMs": 3806,
+        "loaderMs": null,
+        "settledMs": 6400,
+        "vitals": {
+          "lcpMs": 1996,
+          "lcpElement": "img.block",
+          "cls": 0
+        },
+        "height": 15108,
+        "overflowX": false,
+        "offenders": [],
+        "h1": [
+          "Handball live erfassen. Sehen, wo dein\n Spiel kippt."
+        ],
+        "smallTargets": [
+          "Zum Inhalt springen 1x1"
+        ],
+        "glHidden": [],
+        "title": "Handball-Statistik-App \u2013 kostenlos live erfassen | Statix",
+        "glOn": false,
+        "scrollFps": {
+          "fps": 60,
+          "worstFrameMs": 17
+        }
+      },
+      "files": [
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-00-firstpaint.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-01-hero.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-02-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-03-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-04-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-05-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-06-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-07-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-08-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-09-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-10-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-11-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-90-transition-a.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-90-transition-b.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-90-transition-c.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-91-after-nav.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/d-92-back.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/k-01-focus.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/k-02-focus.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/k-03-focus.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/k-04-focus.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/h-01-rest.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/h-01-hover.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/h-02-rest.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/h-02-hover.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/h-03-rest.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/h-03-hover.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/m-01-hero.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/m-02-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/m-03-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/m-04-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/m-05-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/m-06-scroll.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/r-01-hero.png",
+        "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/after/final/shots/home/r-02-mid.png"
+      ],
+      "notes": [
+        "desktop FPS runs headless on a software GPU: treat it as a floor, not a measurement of real hardware",
+        "mobile runs at 4x CPU slowdown on slow 4G: mobile.vitals and mobile.scrollFps are the numbers that count",
+        "loadMs: ms from navigation to the load event, null if it had not fired after 30 s (desktop) or 60 s (phone); a heavy page takes long, while visitors see content at vitals.lcpMs. loaderMs: ms until the #loader ended, null when the page has none",
+        "settledMs: ms from navigation by which the first screen stopped changing, never before the fixed wait. null: still changing at the cap, either a long intro or continuous motion (a live shader, video); d-01-hero / m-01-hero tell which. reduced.moving: the screen was still changing 1.5 s after load with reduced motion on"
+      ],
+      "keyboard": {
+        "stops": [
+          "a \"Zum Inhalt springen\"",
+          "button \"Statistik-App f\u00fcr Handball\"",
+          "a \"Funktionen\"",
+          "a \"Preise\"",
+          "button \"F\u00fcr Trainer\"",
+          "a \"Ratgeber\"",
+          "a \"FAQ\"",
+          "a \"Neu\"",
+          "button \"DE\"",
+          "a \"Kostenlos starten\"",
+          "a \"Kostenlos starten\"",
+          "a \"Live-Demo \u2013 ohne Account\""
+        ],
+        "skipLinkFirst": false,
+        "noVisibleFocus": [],
+        "invisibleFocus": [],
+        "stuck": false
+      },
+      "hover": {
+        "targets": [
+          {
+            "shot": "h-01",
+            "label": "button \"Statistik-App f\u00fcr Handball\"",
+            "interactive": true,
+            "primary": true,
+            "react": "color",
+            "changed": [
+              "backgroundColor"
+            ]
+          },
+          {
+            "shot": "h-02",
+            "label": "button \"F\u00fcr Trainer\"",
+            "interactive": true,
+            "primary": true,
+            "react": "moves",
+            "changed": [
+              "color",
+              "textDecorationColor",
+              "backgroundColor",
+              "boxShadow",
+              "rotate"
+            ]
+          },
+          {
+            "shot": "h-03",
+            "label": "button \"de\"",
+            "interactive": true,
+            "primary": true,
+            "react": "moves",
+            "changed": [
+              "color",
+              "backgroundColor",
+              "borderColor",
+              "textDecorationColor",
+              "boxShadow"
+            ]
+          }
+        ],
+        "noHoverChange": [],
+        "colorOnly": [
+          "h-01 button \"Statistik-App f\u00fcr Handball\""
+        ],
+        "covered": [],
+        "cursorFollower": false
+      },
+      "reduced": {
+        "hiddenText": 7,
+        "moving": false
+      },
+      "a11y": {
+        "violations": [],
+        "serious": 0,
+        "contrastNeedsReview": 156
+      }
+    }
+  ]
+}
