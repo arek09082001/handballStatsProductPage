@@ -36,7 +36,7 @@ interface AiFilmProps {
 
 /**
  * Der Film der KI-Section: ein in Remotion gerendertes Video (Repo
- * remotion-statix, `AiFilm`), darunter die Kapitelleiste. Sie läuft mit — der
+ * remotion-statix, `AiFilm`) mit einer Kapitelleiste im Bild. Sie läuft mit — der
  * Balken des laufenden Akts füllt sich — und springt beim Antippen an den
  * Anfang des Kapitels. So wird aus einem Hintergrundvideo eine Geschichte, die
  * man auch lesen kann, wenn man nicht hinschaut.
@@ -143,9 +143,59 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
 
   const current = CHAPTER_BOUNDS.findIndex(([a, b]) => time >= a && time < b);
   const live = Boolean(src) && !reduced;
+  // Ohne laufenden Film zeigt die Leiste das erste Kapitel
+  const shown = current >= 0 ? current : 0;
+  const fillOf = (index: number) => {
+    const [a, b] = CHAPTER_BOUNDS[index] ?? [0, 1];
+    if (!live || current < 0) return 0;
+    if (index < current) return 1;
+    if (index > current) return 0;
+    return Math.min(1, Math.max(0, (time - a) / (b - a)));
+  };
+
+  /**
+   * Die Kapitel als Leiste IM Film (oben links, wo der Film nichts zeigt):
+   * vier Abschnitte wie bei einer Story, darunter das laufende Kapitel. Spart
+   * die Höhe einer Liste unter dem Film — die Bühne passt so auf einen
+   * Laptop-Bildschirm. Jeder Abschnitt springt an den Anfang seines Kapitels.
+   */
+  const hud = (className: string) => (
+    <div className={className}>
+      <ol aria-label={chaptersLabel} className='flex gap-1.5'>
+        {chapters.map((chapter, index) => (
+          <li key={chapter.label} className='flex-1'>
+            <button
+              type='button'
+              onClick={() => jump(index)}
+              disabled={!live}
+              aria-current={live && index === current ? 'step' : undefined}
+              aria-label={chapter.label}
+              className='group flex h-6 w-full items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 disabled:cursor-default'>
+              <span aria-hidden='true' className='relative block h-[3px] w-full overflow-hidden rounded-full bg-chalk/20 transition-colors group-hover:bg-chalk/35'>
+                <span
+                  className={cn('absolute inset-y-0 left-0 rounded-full', index === current ? 'bg-primary' : 'bg-chalk/60')}
+                  style={{ width: `${fillOf(index) * 100}%` }}
+                />
+              </span>
+            </button>
+          </li>
+        ))}
+      </ol>
+      <p aria-live='polite' className='mt-1.5'>
+        <span className='font-display text-[15px] font-extrabold tracking-[-0.01em] text-primary'>
+          <span className='mr-2 tabular-nums text-chalk/50'>{shown + 1}/{chapters.length}</span>
+          {chapters[shown]?.label}
+        </span>
+        <span className='mt-0.5 block text-[13px] leading-5 text-chalk/80 sm:text-sm'>{chapters[shown]?.text}</span>
+      </p>
+    </div>
+  );
 
   return (
-    <div>
+    // Die Bühne ist höchstens so hoch, wie der Bildschirm es erlaubt (minus
+    // Platz für die Navigation), und wird dafür schmaler — auf einem Laptop
+    // steht der ganze Film im Bild.
+    <div className='mx-auto' style={{ width: 'min(100%, calc((100svh - 8.5rem) * 16 / 9))' }}>
       <div
         ref={frameRef}
         className='board-shadow-court relative w-full overflow-hidden rounded-2xl border border-chalk/12 bg-court'
@@ -172,10 +222,18 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
               'absolute inset-0 h-full w-full object-cover transition-opacity duration-500',
               playing || time > 0 ? 'opacity-100' : 'opacity-0',
             )}>
-            <source src={`${src}.webm`} type='video/webm' />
+            {/* MP4 zuerst: Safari zeichnete beim VP9-WebM grüne Streifen an
+                den Kachelgrenzen oben ins Bild. Chromium-Builds ohne H.264
+                nehmen das WebM. */}
             <source src={`${src}.mp4`} type='video/mp4' />
+            <source src={`${src}.webm`} type='video/webm' />
           </video>
         ) : null}
+        {live
+          ? hud(
+              'absolute left-3 top-3 hidden w-[min(22rem,38%)] rounded-xl border border-chalk/12 bg-court-2/95 px-3.5 pb-3 pt-1.5 shadow-[0_10px_24px_-14px_hsl(199_50%_5%/0.9)] sm:left-4 sm:top-4 sm:block',
+            )
+          : null}
         {live ? (
           <button
             type='button'
@@ -187,46 +245,23 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
         ) : null}
       </div>
 
-      <ol aria-label={chaptersLabel} className='mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-4'>
-        {chapters.map((chapter, index) => {
-          const [a, b] = CHAPTER_BOUNDS[index] ?? [0, 1];
-          const fill = !live ? 0 : time >= b ? 1 : time <= a ? 0 : (time - a) / (b - a);
-          const active = live && index === current;
-          const body = (
-            <>
-              <span aria-hidden='true' className='relative block h-[3px] w-full overflow-hidden rounded-full bg-chalk/15'>
-                <span
-                  className={cn('absolute inset-y-0 left-0 rounded-full', active ? 'bg-primary' : 'bg-chalk/45')}
-                  style={{ width: `${(index < current ? 1 : index === current ? fill : 0) * 100}%` }}
-                />
-              </span>
-              <span className='mt-3 flex items-baseline gap-2'>
-                <span className={cn('font-display text-[15px] font-extrabold tracking-[-0.01em] transition-colors', active ? 'text-primary' : 'text-chalk')}>
-                  {chapter.label}
-                </span>
-              </span>
-              <span className={cn('mt-1 block text-[15px] leading-6 transition-colors', active ? 'text-chalk/90' : 'text-chalk/60')}>
-                {chapter.text}
-              </span>
-            </>
-          );
-          return (
+      {/* Auf dem Telefon wäre die Leiste im Film zu klein: dort steht sie
+          knapp darunter. Ohne Film (Bewegung reduzieren) die ganze
+          Geschichte als Text. */}
+      {live ? hud('mt-3 sm:hidden') : null}
+      {!live ? (
+        <ol aria-label={chaptersLabel} className='mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-4'>
+          {chapters.map((chapter, index) => (
             <li key={chapter.label}>
-              {live ? (
-                <button
-                  type='button'
-                  onClick={() => jump(index)}
-                  aria-current={active ? 'step' : undefined}
-                  className='group block w-full rounded-lg text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-4 focus-visible:ring-offset-court'>
-                  {body}
-                </button>
-              ) : (
-                <div className='block'>{body}</div>
-              )}
+              <span className='font-display text-[15px] font-extrabold tracking-[-0.01em] text-chalk'>
+                <span className='mr-2 tabular-nums text-chalk/50'>{index + 1}</span>
+                {chapter.label}
+              </span>
+              <span className='mt-1 block text-[15px] leading-6 text-chalk/65'>{chapter.text}</span>
             </li>
-          );
-        })}
-      </ol>
+          ))}
+        </ol>
+      ) : null}
     </div>
   );
 }

@@ -37,7 +37,7 @@ const RADIUS = `${((50 / VIDEO_W) * 100).toFixed(2)}% / ${((50 / VIDEO_H) * 100)
  *   und als grösstes Bild der Section genauso schnell wie vorher der Screenshot.
  * - Das Video wird erst kurz vor dem Hineinscrollen geladen (`preload='none'`,
  *   Quelle erst dann gesetzt), auf Telefonen in der schmalen Fassung, als
- *   VP9 und — für Safari — als H.264.
+ *   H.264 und — als Rückfall — VP9.
  * - Es läuft nur, solange es zu sehen ist, und hält ausserhalb an.
  * - Bei „Bewegung reduzieren“ bleibt es beim Standbild.
  */
@@ -144,10 +144,11 @@ export default function TabletLoop({ name, alt, label, priority = false, pin = '
               'absolute inset-0 h-full w-full object-cover transition-opacity duration-300',
               playing ? 'opacity-100' : 'opacity-0',
             )}>
-            {/* VP9 zuerst: kleiner, und auch in Chromium-Builds ohne H.264
-                abspielbar; Safari nimmt das MP4. */}
-            <source src={`${src}.webm`} type='video/webm' />
+            {/* MP4 zuerst: Safari spielt auch VP9-WebM, zeichnete dabei aber
+                grüne Streifen an den Kachelgrenzen oben ins Bild. Chromium-
+                Builds ohne H.264 nehmen das WebM. */}
             <source src={`${src}.mp4`} type='video/mp4' />
+            <source src={`${src}.webm`} type='video/webm' />
           </video>
         ) : null}
       </div>
