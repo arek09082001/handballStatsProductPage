@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { ArrowRight, Download, FileSpreadsheet } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import {
@@ -109,11 +110,11 @@ export default function TemplateHeader() {
               <p className='mt-1 text-[14px] leading-6 text-chalk/75'>
                 {t.rich('appText', {
                   shots: (chunks) => (
-                    <a
+                    <Link
                       href='/funktionen/wurfbilder'
                       className='font-semibold text-chalk underline underline-offset-4 hover:text-primary'>
                       {chunks}
-                    </a>
+                    </Link>
                   ),
                 })}
               </p>

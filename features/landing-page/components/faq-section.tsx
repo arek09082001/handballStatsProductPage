@@ -20,7 +20,7 @@ export default function FaqSection() {
   return (
     <section
       id='faq'
-      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-24 md:py-32'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-14 md:py-20'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-3xl px-6 sm:px-10'>
         <SectionHeading kicker={t('kicker')} title={t('title')} description={t('description')} />
@@ -71,7 +71,7 @@ export default function FaqSection() {
           {t('linkLead')}{' '}
           <Link
             href='/handball-statistiken'
-            className='group inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+            className='board-detail-link group inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
             {t('linkLabel')}
             <ArrowRight className='size-3.5 transition-transform duration-200 group-hover:translate-x-0.5' />
           </Link>

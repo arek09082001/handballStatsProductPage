@@ -1,0 +1,7 @@
+WARN  /                             meta description is 205 chars (aim 50-160)
+WARN  /                             40 em/en dash(es) in visible text (read as AI tell; rewrite)
+WARN  /                             JS 434 KB gzipped (aim < 300 KB; lazy-load heavy libraries)
+
+1 pages crawled from http://127.0.0.1:4400/
+heaviest page /: ~1357 KB | html 36 | JS 434 (gz) | CSS 28 (gz) | fonts 154 | images 704
+0 FAIL, 3 WARN

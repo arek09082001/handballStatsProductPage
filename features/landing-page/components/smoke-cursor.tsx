@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { gsap } from '@/lib/gsap-config';
 
 /**
  * SmokeCursor renders a WebGL fluid simulation that reacts to the pointer
@@ -73,19 +74,19 @@ export default function SmokeCursor() {
     // Tunable simulation parameters. Kept conservative so the effect stays
     // smooth on tablets/phones where the marketing page is commonly viewed.
     const config = {
-      SIM_RESOLUTION: 128,
-      DYE_RESOLUTION: 1024,
+      SIM_RESOLUTION: 64,
+      DYE_RESOLUTION: 256,
       DENSITY_DISSIPATION: 1.6,
       VELOCITY_DISSIPATION: 1.8,
       PRESSURE: 0.8,
-      PRESSURE_ITERATIONS: 20,
+      PRESSURE_ITERATIONS: 8,
       CURL: 34,
       SPLAT_RADIUS: 0.28,
       SPLAT_FORCE: 7200,
-      SHADING: true,
+      SHADING: false,
       // Ambient bursts keep the smoke alive even when the pointer is idle, so
       // the band reads as a living plume instead of a dead canvas.
-      AMBIENT_INTERVAL: 900,
+      AMBIENT_INTERVAL: 1800,
     };
 
     const pointers: Pointer[] = [createPointer()];
@@ -95,7 +96,7 @@ export default function SmokeCursor() {
     const { gl, ext } = ctx;
 
     if (!ext.supportLinearFiltering) {
-      config.DYE_RESOLUTION = 512;
+      config.DYE_RESOLUTION = 128;
       config.SHADING = false;
     }
 
@@ -716,8 +717,8 @@ export default function SmokeCursor() {
     }
 
     function resizeCanvas() {
-      const width = Math.floor(canvas!.clientWidth * window.devicePixelRatio);
-      const height = Math.floor(canvas!.clientHeight * window.devicePixelRatio);
+      const width = Math.floor(canvas!.clientWidth * Math.min(window.devicePixelRatio, 1));
+      const height = Math.floor(canvas!.clientHeight * Math.min(window.devicePixelRatio, 1));
       if (canvas!.width !== width || canvas!.height !== height) {
         canvas!.width = width;
         canvas!.height = height;
@@ -1023,14 +1024,13 @@ export default function SmokeCursor() {
     // overlay). Points outside the canvas simply fall out of [0,1] range and
     // contribute nothing visible.
 
-    const scaleByPixelRatio = (input: number) =>
-      Math.floor(input * (window.devicePixelRatio || 1));
-
     function getCanvasPos(clientX: number, clientY: number) {
       const rect = canvas!.getBoundingClientRect();
+      // Match the actual backing buffer, including its resolution cap and
+      // any CSS scaling. The device pixel ratio alone can differ from both.
       return {
-        x: scaleByPixelRatio(clientX - rect.left),
-        y: scaleByPixelRatio(clientY - rect.top),
+        x: (clientX - rect.left) * (canvas!.width / rect.width),
+        y: (clientY - rect.top) * (canvas!.height / rect.height),
       };
     }
 
@@ -1100,9 +1100,7 @@ export default function SmokeCursor() {
     // Seed the canvas with a few bursts so smoke is already present on load.
     for (let i = 0; i < 6; i++) ambientSplat();
 
-    let animationId = 0;
     let lastAmbientTime = Date.now();
-    let visible = true;
 
     function updateFrame() {
       const dt = calcDeltaTime();
@@ -1119,18 +1117,17 @@ export default function SmokeCursor() {
       }
       step(dt);
       render();
-      // Only keep the loop alive while the band is on screen.
-      animationId = visible ? requestAnimationFrame(updateFrame) : 0;
     }
 
     // Pause the simulation entirely when the section scrolls out of view.
     const observer = new IntersectionObserver(
       ([entry]) => {
-        visible = entry.isIntersecting;
-        if (visible && animationId === 0) {
+        if (entry.isIntersecting) {
           lastUpdateTime = Date.now();
           lastAmbientTime = Date.now();
-          animationId = requestAnimationFrame(updateFrame);
+          gsap.ticker.add(updateFrame);
+        } else {
+          gsap.ticker.remove(updateFrame);
         }
       },
       { threshold: 0 }
@@ -1147,7 +1144,7 @@ export default function SmokeCursor() {
     window.addEventListener('touchend', handleTouchEnd);
 
     return () => {
-      cancelAnimationFrame(animationId);
+      gsap.ticker.remove(updateFrame);
       observer.disconnect();
       window.removeEventListener('mousedown', handleMouseDown);
       window.removeEventListener('mousemove', handleFirstMouseMove);
@@ -1191,6 +1188,17 @@ function getWebGLContext(canvas: HTMLCanvasElement): GLContext | null {
       )) as WebGLRenderingContext | null;
   }
   if (!gl) return null;
+
+  // Software renderers can expose WebGL while still making a fluid solver
+  // prohibitively expensive. Keep the static scoreboard on those devices.
+  const rendererInfo = gl.getExtension('WEBGL_debug_renderer_info');
+  const renderer = rendererInfo
+    ? String(gl.getParameter(rendererInfo.UNMASKED_RENDERER_WEBGL))
+    : '';
+  if (/swiftshader|llvmpipe|softpipe|software/i.test(renderer)) {
+    gl.getExtension('WEBGL_lose_context')?.loseContext();
+    return null;
+  }
 
   let halfFloat: OES_texture_half_float | null = null;
   let supportLinearFiltering: OES_texture_half_float_linear | null = null;

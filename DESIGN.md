@@ -234,3 +234,39 @@ Contrast: body/placeholder ≥ 4.5:1, large ≥ 3:1 — tint secondary text from
 ground's hue (chalk on court, warm ink on paper), never flat gray on colour.
 Keep the app screenshots as the real proof; keep semantics, focus states, i18n
 (`de`/`en`), PWA and offline behavior intact.
+
+## Landing-page refinement after the October 2026 review
+
+The concept, grounds, type roles and two-marker logic above remain the system.
+These refinements take precedence over the earlier hero-device choreography:
+
+- Primary orange action surfaces carry **ink lettering**, including their hover
+  states. Small white lettering on marker orange does not meet AA contrast.
+  On paper, text uses the darker marker-ink tone (HSL 22 85% 34%); the orange
+  fill and decorative marker strokes keep the original primary colour.
+- On phones the short promise and registration/demo pair lead straight into the
+  real device captures; the trust notes and founder deadline follow the picture.
+  Product proof must be visible before an extra screen of assurances.
+- The hero devices are fully visible in their server-rendered rest pose. They
+  retain a slow vertical float and gentle, bounded pointer lean, as requested.
+  Float starts after three seconds, pauses outside the viewport and is disabled
+  under reduced motion. Pointer lean uses a fine pointer only and resets
+  immediately when motion is reduced. No invisible entrance delays the image.
+  The marker circle draws once around the actual turn in the game.
+- All content has a visible static default. Scroll choreography is enabled only
+  by a no-preference media context and is reverted when that preference changes.
+  Under reduced motion there are no counters, video loops, pulse/ping effects,
+  smooth scrolling or WebGL. Figures always show their real final value.
+- Marker dust remains a desktop enhancement on the scoreboard, loaded only
+  when its band is visible and the device has a fine pointer. It is absent on
+  touch devices, software-only renderers and under reduced motion, with the
+  same static scoreboard. The solver uses a small texture budget and eight
+  pressure passes; marker dust does not need retina-resolution simulation.
+- Real analysis screenshots use the full reading width rather than two tiny
+  columns. The second report is a native, keyboard-operable disclosure rather
+  than another mandatory screen of scrolling. Labelled full-size-image links
+  give phone readers a native zoom path.
+- Inline detail links keep an underline and at least a 44px clickable height;
+  secondary paper text remains legible rather than being faded and crossed out.
+
+Die Sektionen erscheinen ohne zusätzliche Einblend-Timelines. Die gezogene Markierung im Hero und das direkte Feedback der Bedienelemente tragen die Bewegung; der Lesefluss benötigt kein GSAP/ScrollTrigger im initialen Bundle. Der optionale Kreidestaub lädt weiterhin erst im sichtbaren Statistikband.

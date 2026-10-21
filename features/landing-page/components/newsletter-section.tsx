@@ -143,7 +143,7 @@ export default function NewsletterSection() {
                     <Link
                       href='/datenschutz'
                       title={tCommon('privacyLinkTitle')}
-                      className='font-semibold text-primary underline underline-offset-2'>
+                      className='inline-flex min-h-6 items-center font-semibold text-chalk underline underline-offset-2'>
                       {t('privacyLink')}
                     </Link>{' '}
                     {t('privacySuffix')}
@@ -153,7 +153,7 @@ export default function NewsletterSection() {
                 <Button
                   type='submit'
                   disabled={newsletterMutation.isPending || !isFormValid}
-                  className='mt-4 inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-4 font-display text-sm font-bold text-white shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:scale-[0.98] disabled:pointer-events-none disabled:bg-chalk/15 disabled:text-chalk/45'>
+                  className='mt-4 inline-flex h-12 w-full items-center justify-center rounded-xl bg-primary px-4 font-display text-sm font-bold text-ink shadow-none transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-court active:scale-[0.98] disabled:pointer-events-none disabled:bg-chalk/15 disabled:text-chalk/45'>
                   {newsletterMutation.isPending ? t('pending') : t('button')}
                 </Button>
 

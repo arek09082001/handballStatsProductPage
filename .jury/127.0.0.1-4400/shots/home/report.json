@@ -1,0 +1,274 @@
+{
+  "url": "http://127.0.0.1:4400/",
+  "errors": [
+    "[desktop] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[desktop] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[desktop] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[desktop] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[keyboard] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[keyboard] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[keyboard] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[keyboard] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[hover] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[hover] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[hover] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[hover] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[mobile] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[mobile] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[mobile] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[mobile] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[reduced] pageerror: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+    "[reduced] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[reduced] Refused to execute script from 'http://127.0.0.1:4400/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "[reduced] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[reduced] Refused to execute script from 'http://127.0.0.1:4400/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+  ],
+  "failed": [
+    "[desktop] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+    "[desktop] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+    "[desktop] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+    "[desktop] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+    "[desktop] http://127.0.0.1:4400/videos/showcase/statistik.webm net::ERR_ABORTED",
+    "[desktop] http://127.0.0.1:4400/newsletter/unsubscribe?_rsc=1r34m net::ERR_ABORTED",
+    "[desktop] http://127.0.0.1:4400/newsletter/unsubscribe?_rsc=p37cr net::ERR_ABORTED",
+    "[keyboard] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+    "[keyboard] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+    "[keyboard] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+    "[keyboard] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+    "[hover] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+    "[hover] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+    "[hover] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+    "[hover] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+    "[mobile] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+    "[mobile] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+    "[mobile] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+    "[mobile] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED",
+    "[mobile] http://127.0.0.1:4400/newsletter/unsubscribe?_rsc=p37cr net::ERR_ABORTED",
+    "[reduced] 404 http://127.0.0.1:4400/_vercel/speed-insights/script.js",
+    "[reduced] http://127.0.0.1:4400/_vercel/speed-insights/script.js net::ERR_ABORTED",
+    "[reduced] 404 http://127.0.0.1:4400/_vercel/insights/script.js",
+    "[reduced] http://127.0.0.1:4400/_vercel/insights/script.js net::ERR_ABORTED"
+  ],
+  "desktop": {
+    "loadMs": 996,
+    "loaderMs": null,
+    "settledMs": 6004,
+    "vitals": {
+      "lcpMs": 572,
+      "lcpElement": "img.block",
+      "cls": 0.005
+    },
+    "height": 11074,
+    "overflowX": false,
+    "offenders": [],
+    "h1": [
+      "Ein Tap pro Aktion. Handball-Statistiken,\n die zeigen, wo de"
+    ],
+    "smallTargets": [
+      "Zum Inhalt springen 1x1",
+      "Live-Erfassung im Detail 186x23",
+      "Alle Handball-Statistike 235x23",
+      "Mehr zu Wurfbildern im H 240x23",
+      "Alle Funktionen im Detai 191x23",
+      "So entsteht Statix 144x23",
+      "Datenschutzbestimmungen 187x17",
+      "E-Mail an kontakt@statix 312x20"
+    ],
+    "glHidden": [],
+    "title": "Handball-Statistik-App – kostenlos live erfassen | Statix",
+    "glOn": false,
+    "scrollFps": {
+      "fps": 55,
+      "worstFrameMs": 83
+    },
+    "nav": {
+      "href": "/funktionen",
+      "scrollYAfter": 0,
+      "title": "Alle Funktionen der Handball-Statistik-App Statix | Statix"
+    },
+    "idleMotion": true,
+    "idleAt": "35%"
+  },
+  "mobile": {
+    "throttled": true,
+    "loadMs": 6694,
+    "loaderMs": null,
+    "settledMs": null,
+    "vitals": {
+      "lcpMs": 2132,
+      "lcpElement": "h1.mt-5",
+      "cls": 0
+    },
+    "height": 15858,
+    "overflowX": false,
+    "offenders": [],
+    "h1": [
+      "Ein Tap pro Aktion. Handball-Statistiken,\n die zeigen, wo de"
+    ],
+    "smallTargets": [
+      "Zum Inhalt springen 1x1",
+      "Live-Erfassung im Detail 186x23",
+      "Alle Handball-Statistike 235x23",
+      "Mehr zu Wurfbildern im H 240x23",
+      "Alle Funktionen im Detai 191x23",
+      "So entsteht Statix 144x23",
+      "Datenschutzbestimmungen 187x17",
+      "E-Mail an kontakt@statix 350x20"
+    ],
+    "glHidden": [],
+    "title": "Handball-Statistik-App – kostenlos live erfassen | Statix",
+    "glOn": false,
+    "scrollFps": {
+      "fps": 58,
+      "worstFrameMs": 50
+    }
+  },
+  "files": [
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-00-firstpaint.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-01-hero.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-02-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-03-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-04-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-05-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-06-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-07-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-08-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-09-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-10-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-11-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-90-transition-a.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-90-transition-b.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-90-transition-c.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-91-after-nav.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/d-92-back.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/k-01-focus.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/k-02-focus.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/k-03-focus.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/k-04-focus.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-01-rest.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-01-hover.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-02-rest.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-02-hover.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-03-rest.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-03-hover.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-04-rest.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/h-04-hover.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/m-01-hero.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/m-02-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/m-03-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/m-04-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/m-05-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/m-06-scroll.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/r-01-hero.png",
+    "/workspace/handballStatsProductPage/.jury/127.0.0.1-4400/shots/home/r-02-mid.png"
+  ],
+  "notes": [
+    "desktop FPS runs headless on a software GPU: treat it as a floor, not a measurement of real hardware",
+    "mobile runs at 4x CPU slowdown on slow 4G: mobile.vitals and mobile.scrollFps are the numbers that count",
+    "loadMs: ms from navigation to the load event, null if it had not fired after 30 s (desktop) or 60 s (phone); a heavy page takes long, while visitors see content at vitals.lcpMs. loaderMs: ms until the #loader ended, null when the page has none",
+    "settledMs: ms from navigation by which the first screen stopped changing, never before the fixed wait. null: still changing at the cap, either a long intro or continuous motion (a live shader, video); d-01-hero / m-01-hero tell which. reduced.moving: the screen was still changing 1.5 s after load with reduced motion on"
+  ],
+  "keyboard": {
+    "stops": [
+      "a \"Zum Inhalt springen\"",
+      "button \"Statistik-App für Handball\"",
+      "a \"Funktionen\"",
+      "a \"Preise\"",
+      "button \"Für Trainer\"",
+      "a \"Ratgeber\"",
+      "a \"FAQ\"",
+      "a \"Neu\"",
+      "button \"DE\"",
+      "a \"Kostenlos starten\"",
+      "a \"Kostenlos starten\"",
+      "a \"Live-Demo – ohne Account\""
+    ],
+    "skipLinkFirst": false,
+    "noVisibleFocus": [],
+    "invisibleFocus": [],
+    "stuck": false
+  },
+  "hover": {
+    "targets": [
+      {
+        "shot": "h-01",
+        "label": "button \"Statistik-App für Handball\"",
+        "interactive": true,
+        "primary": true,
+        "react": "pixels",
+        "changed": []
+      },
+      {
+        "shot": "h-02",
+        "label": "button \"Für Trainer\"",
+        "interactive": true,
+        "primary": true,
+        "react": "moves",
+        "changed": [
+          "color",
+          "textDecorationColor",
+          "backgroundColor",
+          "boxShadow",
+          "rotate"
+        ]
+      },
+      {
+        "shot": "h-03",
+        "label": "button \"de\"",
+        "interactive": true,
+        "primary": true,
+        "react": "color",
+        "changed": [
+          "color",
+          "textDecorationColor"
+        ]
+      },
+      {
+        "shot": "h-04",
+        "label": "a \"Noch 72 Tage Gründerangebot Jetzt regist\"",
+        "interactive": true,
+        "primary": true,
+        "react": "masked",
+        "changed": []
+      }
+    ],
+    "noHoverChange": [],
+    "colorOnly": [
+      "h-03 button \"de\""
+    ],
+    "covered": [],
+    "cursorFollower": false
+  },
+  "reduced": {
+    "hiddenText": 7,
+    "moving": false
+  },
+  "a11y": {
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "count": 8,
+        "nodes": [
+          ".h-10.shadow-\\[0_8px_18px_-10px_hsl\\(22_90\\%_45\\%\\/0\\.9\\)\\].hover\\:-translate-y-px (#ffffff on #f56714, 3.07:1, needs 4.5:1)",
+          ".sm\\:flex-wrap > .hover\\:shadow-\\[0_18px_30px_-14px_hsl\\(22_90\\%_45\\%\\/0\\.8\\)\\].shadow-\\[0_14px_26px_-14px_hsl\\(22_90\\%_45\\%\\/0\\.85\\)\\].h-13 > span (#ffffff on #f56714, 3.07:1, needs 4.5:1)",
+          ".justify-start > .max-w-full.py-2\\.5.border-primary\\/40 > .text-\\[17px\\].shadow-\\[0_6px_12px_-6px_hsl\\(22_90\\%_40\\%\\/0\\.9\\)\\].size-11 (#ffffff on #f56714, 3.07:1, needs 4.5:1)",
+          ".focus-visible\\:ring-offset-court-2.hover\\:shadow-\\[0_18px_30px_-14px_hsl\\(22_90\\%_45\\%\\/0\\.8\\)\\].lg\\:min-w-0 > span (#ffffff on #f56714, 3.07:1, needs 4.5:1)"
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "count": 2,
+        "nodes": [
+          ".focus-visible\\:ring-\\[\\#f97316\\]",
+          "#radix-_r_1_"
+        ]
+      }
+    ],
+    "serious": 2,
+    "contrastNeedsReview": 95
+  }
+}

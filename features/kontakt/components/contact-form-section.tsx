@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useBrowserSearch } from '@/lib/hooks/use-browser-search';
 import { Mail, MessageSquare, Send, User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useApiErrorMessage } from '@/lib/hooks/use-api-error-message';
@@ -45,26 +46,13 @@ export default function ContactFormSection({
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [topic, setTopic] = useState(defaultTopic);
+  const search = useBrowserSearch();
+  const [enteredTopic, setTopic] = useState<string | null>(null);
+  const topic = enteredTopic ?? (defaultTopic || new URLSearchParams(search).get('thema') || '');
   const [message, setMessage] = useState('');
   const [acceptPrivacy, setAcceptPrivacy] = useState(false);
   // Honeypot
   const [website, setWebsite] = useState('');
-
-  // A `?thema=` parameter fills the subject once, and only while the field is
-  // still untouched — a visitor arriving from the club page finds "Vereins-
-  // anfrage" prepared, and anyone who has started typing keeps what they typed.
-  useEffect(() => {
-    if (defaultTopic) {
-      return;
-    }
-
-    const fromQuery = new URLSearchParams(window.location.search).get('thema');
-
-    if (fromQuery) {
-      setTopic((current) => (current.trim() === '' ? fromQuery : current));
-    }
-  }, [defaultTopic]);
 
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
   const isFormValid =

@@ -1,0 +1,26 @@
+{
+  "active": {
+    "transform": "matrix3d(1, -3.08579e-05, 0.000883172, 0, 0, 0.99939, 0.0349185, 0, -0.000883711, -0.0349185, 0.99939, 0, 0, 0, 0, 1)",
+    "floats": [
+      {
+        "state": "running",
+        "translate": "0px -0.789933px"
+      },
+      {
+        "state": "running",
+        "translate": "0px -1.08217px"
+      }
+    ],
+    "overflow": false
+  },
+  "reduced": {
+    "mode": "off",
+    "transform": "none",
+    "animations": 0
+  },
+  "offscreen": [
+    "paused",
+    "paused"
+  ],
+  "appErrors": []
+}

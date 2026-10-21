@@ -1,0 +1,68 @@
+[
+  {
+    "run": 1,
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "h1": "Ein Tap pro Aktion. Handball-Statistiken,\n die zeigen, wo dein Spiel kippt.",
+    "faqButtons": 16,
+    "names": [
+      {
+        "text": "Neu",
+        "ariaLabel": "Neue Funktion: Livestream ansehen"
+      },
+      {
+        "text": "de",
+        "ariaLabel": "Sprache wechseln"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Menü öffnen"
+      }
+    ]
+  },
+  {
+    "run": 2,
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "h1": "Ein Tap pro Aktion. Handball-Statistiken,\n die zeigen, wo dein Spiel kippt.",
+    "faqButtons": 16,
+    "names": [
+      {
+        "text": "Neu",
+        "ariaLabel": "Neue Funktion: Livestream ansehen"
+      },
+      {
+        "text": "de",
+        "ariaLabel": "Sprache wechseln"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Menü öffnen"
+      }
+    ]
+  },
+  {
+    "run": 3,
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ],
+    "h1": "Ein Tap pro Aktion. Handball-Statistiken,\n die zeigen, wo dein Spiel kippt.",
+    "faqButtons": 16,
+    "names": [
+      {
+        "text": "Neu",
+        "ariaLabel": "Neue Funktion: Livestream ansehen"
+      },
+      {
+        "text": "de",
+        "ariaLabel": "Sprache wechseln"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Menü öffnen"
+      }
+    ]
+  }
+]

@@ -1,8 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import { ShieldCheck } from 'lucide-react';
-import { gsap } from '@/lib/gsap-config';
+import { ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { BoardScreenshot, CourtDiagram, Grain, PlayerMagnet, SectionHeading } from './tactic';
 
@@ -15,44 +13,9 @@ export default function AiAnalyticsSection() {
   const t = useTranslations('productPage.ai');
   const scopes = t.raw('scopes') as Scope[];
 
-  const sectionRef = useRef<HTMLElement>(null);
-  const scopesRef = useRef<HTMLDivElement[]>([]);
-  const showcaseRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        scopesRef.current,
-        { opacity: 0, y: 22 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          stagger: 0.1,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: sectionRef.current, start: 'top 78%', once: true },
-        },
-      );
-      gsap.fromTo(
-        showcaseRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: showcaseRef.current, start: 'top 84%', once: true },
-        },
-      );
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
   return (
     <section
       id='ai'
-      ref={sectionRef}
       className='relative w-full scroll-mt-24 overflow-hidden bg-court py-20 text-chalk md:py-28'>
       <CourtDiagram
         variant='full'
@@ -70,13 +33,10 @@ export default function AiAnalyticsSection() {
         />
 
         {/* Four scopes as scouting entries — hairline‑ruled, no card chrome */}
-        <div className='mx-auto mt-16 grid max-w-4xl gap-x-14 sm:grid-cols-2'>
+        <div className='mx-auto mt-10 grid max-w-4xl gap-x-14 sm:grid-cols-2'>
           {scopes.map((scope, index) => (
             <div
               key={scope.title}
-              ref={(el) => {
-                if (el) scopesRef.current[index] = el;
-              }}
               className='flex items-start gap-4 border-t border-chalk/12 py-7'>
               <PlayerMagnet number={index + 1} team='home' size='md' className='shrink-0' />
               <div>
@@ -89,7 +49,7 @@ export default function AiAnalyticsSection() {
           ))}
         </div>
 
-        <p className='mx-auto mt-12 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-chalk/60'>
+        <p className='mx-auto mt-6 flex max-w-2xl items-start justify-center gap-2.5 text-center text-sm leading-6 text-chalk/60'>
           <ShieldCheck className='mt-0.5 size-4 shrink-0 text-success' />
           <span>{t('privacyNote')}</span>
         </p>
@@ -97,26 +57,46 @@ export default function AiAnalyticsSection() {
         {/* The real reports, pinned to the board. The sub-heading that used to
             sit here restated the band's own standfirst, so the screenshots now
             speak for themselves under their labels. */}
-        <div ref={showcaseRef} className='mt-16'>
-          <div className='grid gap-8 lg:grid-cols-2'>
-            <BoardScreenshot
-              src='/aiAnalyze.png'
-              alt={t('showcase.imageOneLabel')}
-              width={2560}
-              height={2000}
-              label={t('showcase.imageOneLabel')}
-              tone='court'
-              pin='tape'
-            />
-            <BoardScreenshot
-              src='/aiAnalyze2.png'
-              alt={t('showcase.imageTwoLabel')}
-              width={2560}
-              height={2000}
-              label={t('showcase.imageTwoLabel')}
-              tone='court'
-              pin='magnet'
-            />
+        <div className='mt-16'>
+          <div className='mx-auto grid max-w-4xl gap-10'>
+            <div>
+              <BoardScreenshot
+                src='/aiAnalyze.png'
+                alt={t('showcase.imageOneLabel')}
+                width={2560}
+                height={2000}
+                label={t('showcase.imageOneLabel')}
+                sizes='(max-width: 1024px) 90vw, 900px'
+                tone='court'
+                pin='tape'
+              />
+              <a href='/aiAnalyze.png' target='_blank' rel='noopener noreferrer'
+                className='board-detail-link mt-3 inline-flex items-center gap-2 text-sm font-semibold text-chalk'>
+                {t('showcase.openImage')}<ArrowUpRight className='size-4' aria-hidden='true' />
+              </a>
+            </div>
+            <details className='group border-t border-chalk/20 pt-2'>
+              <summary className='flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-3 font-display text-base font-bold text-chalk focus-visible:outline-2 focus-visible:outline-offset-4'>
+                {t('showcase.more')}
+                <span aria-hidden='true' className='text-2xl text-primary group-open:rotate-45'>+</span>
+              </summary>
+              <div className='pt-6'>
+                <BoardScreenshot
+                  src='/aiAnalyze2.png'
+                  alt={t('showcase.imageTwoLabel')}
+                  width={2560}
+                  height={2000}
+                  label={t('showcase.imageTwoLabel')}
+                  sizes='(max-width: 1024px) 90vw, 900px'
+                  tone='court'
+                  pin='magnet'
+                />
+                <a href='/aiAnalyze2.png' target='_blank' rel='noopener noreferrer'
+                  className='board-detail-link mt-3 inline-flex items-center gap-2 text-sm font-semibold text-chalk'>
+                  {t('showcase.openImage')}<ArrowUpRight className='size-4' aria-hidden='true' />
+                </a>
+              </div>
+            </details>
           </div>
         </div>
       </div>

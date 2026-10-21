@@ -1459,16 +1459,16 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Handball stats app · built by a handball player",
-      "headlineLead": "One tap per action.",
-      "headlineHighlight": "Handball stats",
-      "headlineTail": "that show where your game turned.",
-      "description": "Tap goals, shots, saves and suspensions from the bench – Statix draws the flow of the game, works out shooting and save percentages and shows who scored and who didn't. While the game is still running.",
+      "badge": "Handball statistics app",
+      "headlineLead": "Record handball live.",
+      "headlineHighlight": "See where your",
+      "headlineTail": "game turns.",
+      "description": "Record goals, shots and saves. See the game flow and rates instantly. Even offline in the hall.",
       "primaryCta": "Start for free",
       "secondaryCta": "Live demo – no account",
-      "trust1": "Ready to go in minutes",
-      "trust2": "Free to start – no credit card",
-      "trust3": "Works offline in the gym",
+      "trust1": "Ready in minutes",
+      "trust2": "No credit card",
+      "trust3": "Works offline",
       "demoAlt": "Statix live demo – match statistics and analyses in the browser",
       "tabletAlt": "Game flow of a handball match in Statix on a tablet – the goal difference over 60 minutes with power-play and short-handed phases, the biggest lead and the opponent's runs",
       "phoneAlt": "Game statistics in Statix on a phone – shooting and save percentage as rings, plus goals, shots, xG, assists and saves",
@@ -1485,7 +1485,7 @@
       "items": [
         {
           "value": "1-tap",
-          "label": "per action – logged live"
+          "label": "in quick mode"
         },
         {
           "value": "20+",
@@ -1520,8 +1520,8 @@
         {
           "clock": "46:27",
           "moment": "Erik scores from the back court",
-          "title": "A goal in four taps.",
-          "description": "Player, “Goal”, shot position, corner of the goal – and who made the pass. A few seconds, and your eyes are back on the court.",
+          "title": "One goal. Every detail.",
+          "description": "Record the player, goal, shot position and goal corner. Add the assist if needed. Use quick mode for fast capture.",
           "facts": [
             "Works offline in the hall",
             "Every tap can be undone"
@@ -1585,7 +1585,9 @@
       ],
       "showcase": {
         "imageOneLabel": "Game flow & shot-zone efficiency",
-        "imageTwoLabel": "Turning points, error distribution & player performance"
+        "imageTwoLabel": "Turning points, error distribution & player performance",
+        "openImage": "Open full-size analysis",
+        "more": "See another analysis"
       }
     },
     "pros": {

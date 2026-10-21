@@ -1459,15 +1459,15 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Handball-Statistik-App · von einem Handballer",
-      "headlineLead": "Ein Tap pro Aktion.",
-      "headlineHighlight": "Handball-Statistiken,",
-      "headlineTail": "die zeigen, wo dein Spiel kippt.",
-      "description": "Du tippst Tore, Würfe, Paraden und Zeitstrafen von der Bank – Statix zeichnet daraus den Spielverlauf, rechnet Wurf- und Paradenquote und zeigt, wer getroffen hat und wer nicht. Noch während das Spiel läuft.",
+      "badge": "Handball-Statistik-App",
+      "headlineLead": "Handball live erfassen.",
+      "headlineHighlight": "Sehen, wo dein",
+      "headlineTail": "Spiel kippt.",
+      "description": "Tore, Würfe und Paraden erfassen. Spielverlauf und Quoten sofort sehen. Auch offline in der Halle.",
       "primaryCta": "Kostenlos starten",
       "secondaryCta": "Live-Demo – ohne Account",
-      "trust1": "In wenigen Minuten startklar",
-      "trust2": "Kostenlos starten – keine Kreditkarte",
+      "trust1": "In Minuten startklar",
+      "trust2": "Keine Kreditkarte",
       "trust3": "Offline in der Halle",
       "demoAlt": "Statix Live-Demo – Spielstatistiken und Auswertungen im Browser",
       "tabletAlt": "Spielverlauf eines Handballspiels in Statix auf dem Tablet – die Tordifferenz über 60 Minuten mit Über- und Unterzahlphasen, höchster Führung und Läufen des Gegners",
@@ -1485,7 +1485,7 @@
       "items": [
         {
           "value": "1-Tap",
-          "label": "pro Aktion – live erfasst"
+          "label": "im Schnellmodus"
         },
         {
           "value": "20+",
@@ -1520,8 +1520,8 @@
         {
           "clock": "46:27",
           "moment": "Erik trifft aus dem Rückraum",
-          "title": "Ein Tor in vier Tipps.",
-          "description": "Spieler, „Tor“, Wurfposition, Torecke – und wer den Pass gespielt hat. Ein paar Sekunden, dann ist dein Blick wieder auf dem Feld.",
+          "title": "Ein Tor. Mit allen Details.",
+          "description": "Spieler, Tor, Wurfposition und Torecke erfassen. Den Assist kannst du ergänzen. Für die schnelle Erfassung gibt es den Schnellmodus.",
           "facts": [
             "Funktioniert offline in der Halle",
             "Jeder Tipp lässt sich rückgängig machen"
@@ -1585,7 +1585,9 @@
       ],
       "showcase": {
         "imageOneLabel": "Spielverlauf & Wurfzonen-Effizienz",
-        "imageTwoLabel": "Wendepunkte, Fehlerverteilung & Spieler-Performance"
+        "imageTwoLabel": "Wendepunkte, Fehlerverteilung & Spieler-Performance",
+        "openImage": "Analyse in voller Größe öffnen",
+        "more": "Weitere Analyse ansehen"
       }
     },
     "pros": {

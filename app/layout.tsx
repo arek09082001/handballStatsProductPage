@@ -22,6 +22,7 @@ import {
 const inter = Inter({ subsets: ['latin'] });
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
+  preload: false,
   weight: ['500', '600', '700'],
   variable: '--font-space-grotesk',
 });
@@ -39,7 +40,7 @@ const caveat = Caveat({
   variable: '--font-caveat',
 });
 
-export const revalidate = 60 * 60 * 24;
+export const revalidate = 86400;
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {

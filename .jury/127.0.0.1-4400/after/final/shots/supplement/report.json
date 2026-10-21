@@ -1,0 +1,714 @@
+{
+  "url": "http://127.0.0.1:4400/",
+  "scope": "Landing page only; supplemental section screenshots are not throttled performance measurements",
+  "modes": {
+    "mobile": {
+      "initialHiddenText": [
+        {
+          "tag": "P",
+          "text": "Ja. Die Live-Demo ist eine voll ausgestattete Version von Statix mit echten Spieldaten: Live-Statist"
+        },
+        {
+          "tag": "P",
+          "text": "Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut i"
+        },
+        {
+          "tag": "P",
+          "text": "Statix richtet sich an Handball-Trainer, Co-Trainer, Vereine und Mannschaften aller Spielklassen – v"
+        },
+        {
+          "tag": "P",
+          "text": "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldra"
+        },
+        {
+          "tag": "P",
+          "text": "Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minut"
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos – Live-Erfassung, Terminplan, Kaderkarten "
+        },
+        {
+          "tag": "P",
+          "text": "Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. "
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine D"
+        },
+        {
+          "tag": "P",
+          "text": "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwick"
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Veröffentliche dein Spiel als öffentlichen Live-Ticker und teile den Link oder QR-Code – perfekt"
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Du gibst Trainerkollegen Nur-Lese-Zugriff auf Statistik und KI-Analyse eines Spiels – per Link o"
+        },
+        {
+          "tag": "P",
+          "text": "Frag Verfügbarkeit, Feedback oder Themen wie Trainingszeiten ab: Du erstellst die Umfrage in Statix "
+        },
+        {
+          "tag": "P",
+          "text": "Datenschutz ist eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – die "
+        },
+        {
+          "tag": "P",
+          "text": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes S"
+        },
+        {
+          "tag": "P",
+          "text": "Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Pr"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "heading": "Handball live erfassen. Sehen, wo dein Spiel kippt.",
+          "y": 0,
+          "height": 1011.5,
+          "file": "mobile-section-01.png",
+          "state": {
+            "heading": "Handball live erfassen. Sehen, wo dein Spiel kippt.",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 1,
+          "heading": "Handball-Statistiken auf einen Blick",
+          "y": 1011.5,
+          "height": 333,
+          "file": "mobile-section-02.png",
+          "state": {
+            "heading": "Handball-Statistiken auf einen Blick",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 2,
+          "heading": "Getippt in Minute 46. Ausgewertet in Minute 46.",
+          "y": 1344.5,
+          "height": 2854.5625,
+          "file": "mobile-section-03.png",
+          "state": {
+            "heading": "Getippt in Minute 46. Ausgewertet in Minute 46.",
+            "videos": [
+              {
+                "src": "http://127.0.0.1:4400/videos/showcase/live-erfassen-sm.webm",
+                "paused": false
+              },
+              {
+                "src": "http://127.0.0.1:4400/videos/showcase/statistik-sm.webm",
+                "paused": true
+              }
+            ],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 3,
+          "heading": "Handball-Statistiken per KI ausgewertet – erklärt warum, nicht nur was",
+          "y": 4199.0625,
+          "height": 1961.875,
+          "file": "mobile-section-04.png",
+          "state": {
+            "heading": "Handball-Statistiken per KI ausgewertet – erklärt warum, nicht nur was",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 4,
+          "heading": "Turniere, Live-Ticker und dein Trainerteam",
+          "y": 6160.9375,
+          "height": 1549.6875,
+          "file": "mobile-section-05.png",
+          "state": {
+            "heading": "Turniere, Live-Ticker und dein Trainerteam",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": [
+              {
+                "name": "pulse",
+                "target": "<span class=\"size-1.5 motion-safe:animate-pulse rounded-full bg-primary\"></span>"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "heading": "Handball-Statistiken statt Zettel und Bierdeckel",
+          "y": 7710.625,
+          "height": 1820.78125,
+          "file": "mobile-section-06.png",
+          "state": {
+            "heading": "Handball-Statistiken statt Zettel und Bierdeckel",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 6,
+          "heading": "Häufige Fragen zu Handball-Statistiken",
+          "y": 9531.40625,
+          "height": 1969.1875,
+          "file": "mobile-section-07.png",
+          "state": {
+            "heading": "Häufige Fragen zu Handball-Statistiken",
+            "videos": [],
+            "hiddenByAncestor": [
+              "Ja. Die Live-Demo ist eine voll ausgestattete Version von Statix mit echten Spieldaten: Live-Statist",
+              "Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut i",
+              "Statix richtet sich an Handball-Trainer, Co-Trainer, Vereine und Mannschaften aller Spielklassen – v",
+              "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldra",
+              "Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minut",
+              "Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos – Live-Erfassung, Terminplan, Kaderkarten ",
+              "Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. ",
+              "Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine D",
+              "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwick",
+              "Ja. Veröffentliche dein Spiel als öffentlichen Live-Ticker und teile den Link oder QR-Code – perfekt",
+              "Ja. Du gibst Trainerkollegen Nur-Lese-Zugriff auf Statistik und KI-Analyse eines Spiels – per Link o",
+              "Frag Verfügbarkeit, Feedback oder Themen wie Trainingszeiten ab: Du erstellst die Umfrage in Statix ",
+              "Datenschutz ist eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – die ",
+              "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes S",
+              "Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Pr"
+            ],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 7,
+          "heading": "Bleib auf dem Laufenden – Neues aus der Halle",
+          "y": 11500.59375,
+          "height": 675,
+          "file": "mobile-section-08.png",
+          "state": {
+            "heading": "Bleib auf dem Laufenden – Neues aus der Halle",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 8,
+          "heading": "Dein nächstes Spiel kann das erste mit echten Zahlen sein.",
+          "y": 12175.59375,
+          "height": 1191.609375,
+          "file": "mobile-section-09.png",
+          "state": {
+            "heading": "Dein nächstes Spiel kann das erste mit echten Zahlen sein.",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": [
+              {
+                "name": "ping",
+                "target": "<span class=\"absolute inline-flex h-full w-full motion-safe:animate-ping rounded-full bg-primary/70\"></span>"
+              }
+            ]
+          }
+        }
+      ],
+      "pageHeight": 15108,
+      "links": [
+        {
+          "text": "Kostenlos starten",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "Live-Demo – ohne Account",
+          "href": "https://demo.statix-app.de"
+        },
+        {
+          "text": "72Noch 72 Tage GründerangebotJetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis.",
+          "href": "/preise#bestandsschutz"
+        },
+        {
+          "text": "72Noch 72 Tage GründerangebotJetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis.",
+          "href": "/preise#bestandsschutz"
+        },
+        {
+          "text": "Live-Erfassung im Detail",
+          "href": "/funktionen/live-erfassung"
+        },
+        {
+          "text": "Alle Handball-Statistiken erklärt",
+          "href": "/handball-statistiken"
+        },
+        {
+          "text": "Mehr zu Wurfbildern im Handball",
+          "href": "/funktionen/wurfbilder"
+        },
+        {
+          "text": "Kostenlos starten",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "Live-Demo – ohne Account",
+          "href": "https://demo.statix-app.de"
+        },
+        {
+          "text": "Analyse in voller Größe öffnen",
+          "href": "/aiAnalyze.png"
+        },
+        {
+          "text": "Analyse in voller Größe öffnen",
+          "href": "/aiAnalyze2.png"
+        },
+        {
+          "text": "Alle Funktionen im Detail",
+          "href": "/funktionen"
+        },
+        {
+          "text": "Registrieren & selbst ausprobieren",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "kostenlose Handball-Statistik Excel-Vorlage mit Wurfbild",
+          "href": "/handball-statistik-excel-vorlage"
+        },
+        {
+          "text": "So entsteht Statix",
+          "href": "/erfahrungen"
+        },
+        {
+          "text": "Alle Handball-Statistiken im Überblick",
+          "href": "/handball-statistiken"
+        },
+        {
+          "text": "Datenschutzbestimmungen",
+          "href": "/datenschutz"
+        },
+        {
+          "text": "Kostenlos starten",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "Live-Demo – ohne Account",
+          "href": "https://demo.statix-app.de"
+        },
+        {
+          "text": "72Noch 72 Tage GründerangebotJetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis.",
+          "href": "/preise#bestandsschutz"
+        }
+      ]
+    },
+    "reduced": {
+      "initialHiddenText": [
+        {
+          "tag": "P",
+          "text": "Ja. Die Live-Demo ist eine voll ausgestattete Version von Statix mit echten Spieldaten: Live-Statist"
+        },
+        {
+          "tag": "P",
+          "text": "Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut i"
+        },
+        {
+          "tag": "P",
+          "text": "Statix richtet sich an Handball-Trainer, Co-Trainer, Vereine und Mannschaften aller Spielklassen – v"
+        },
+        {
+          "tag": "P",
+          "text": "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldra"
+        },
+        {
+          "tag": "P",
+          "text": "Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minut"
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos – Live-Erfassung, Terminplan, Kaderkarten "
+        },
+        {
+          "tag": "P",
+          "text": "Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. "
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine D"
+        },
+        {
+          "tag": "P",
+          "text": "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwick"
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Veröffentliche dein Spiel als öffentlichen Live-Ticker und teile den Link oder QR-Code – perfekt"
+        },
+        {
+          "tag": "P",
+          "text": "Ja. Du gibst Trainerkollegen Nur-Lese-Zugriff auf Statistik und KI-Analyse eines Spiels – per Link o"
+        },
+        {
+          "tag": "P",
+          "text": "Frag Verfügbarkeit, Feedback oder Themen wie Trainingszeiten ab: Du erstellst die Umfrage in Statix "
+        },
+        {
+          "tag": "P",
+          "text": "Datenschutz ist eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – die "
+        },
+        {
+          "tag": "P",
+          "text": "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes S"
+        },
+        {
+          "tag": "P",
+          "text": "Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Pr"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "heading": "Handball live erfassen. Sehen, wo dein Spiel kippt.",
+          "y": 0,
+          "height": 850,
+          "file": "reduced-section-01.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.09",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Handball live erfassen. Sehen, wo dein Spiel kippt.",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 1,
+          "heading": "Handball-Statistiken auf einen Blick",
+          "y": 850,
+          "height": 252,
+          "file": "reduced-section-02.png",
+          "earlyState": [],
+          "state": {
+            "heading": "Handball-Statistiken auf einen Blick",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 2,
+          "heading": "Getippt in Minute 46. Ausgewertet in Minute 46.",
+          "y": 1102,
+          "height": 2238.78125,
+          "file": "reduced-section-03.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.05",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Getippt in Minute 46. Ausgewertet in Minute 46.",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 3,
+          "heading": "Handball-Statistiken per KI ausgewertet – erklärt warum, nicht nur was",
+          "y": 3340.78125,
+          "height": 1918.1875,
+          "file": "reduced-section-04.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.09",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Handball-Statistiken per KI ausgewertet – erklärt warum, nicht nur was",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 4,
+          "heading": "Turniere, Live-Ticker und dein Trainerteam",
+          "y": 5258.96875,
+          "height": 945,
+          "file": "reduced-section-05.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.05",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Turniere, Live-Ticker und dein Trainerteam",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 5,
+          "heading": "Handball-Statistiken statt Zettel und Bierdeckel",
+          "y": 6203.96875,
+          "height": 1223,
+          "file": "reduced-section-06.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.05",
+              "transform": "none"
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.5",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Handball-Statistiken statt Zettel und Bierdeckel",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 6,
+          "heading": "Häufige Fragen zu Handball-Statistiken",
+          "y": 7426.96875,
+          "height": 1711,
+          "file": "reduced-section-07.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.05",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Häufige Fragen zu Handball-Statistiken",
+            "videos": [],
+            "hiddenByAncestor": [
+              "Ja. Die Live-Demo ist eine voll ausgestattete Version von Statix mit echten Spieldaten: Live-Statist",
+              "Statix ist eine Handball-Statistik-App, die speziell für das Live-Erfassen am Spielfeldrand gebaut i",
+              "Statix richtet sich an Handball-Trainer, Co-Trainer, Vereine und Mannschaften aller Spielklassen – v",
+              "Statix läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop – am Spielfeldra",
+              "Du erfasst Tore, Würfe und Wurfquoten, Paraden, Tempogegenstöße, technische Fehler, Strafen (2 Minut",
+              "Ja. Die Basis-Stufe von Statix bleibt dauerhaft kostenlos – Live-Erfassung, Terminplan, Kaderkarten ",
+              "Nein. Statix ist so gestaltet, dass du nach wenigen Minuten dein erstes Spiel live erfassen kannst. ",
+              "Ja. Du kannst Spiele komplett offline erfassen. Sobald wieder Internet verfügbar ist, werden deine D",
+              "Selbstverständlich. Spieler und Co-Trainer erhalten Zugriff auf Auswertungen, Wurfbilder und Entwick",
+              "Ja. Veröffentliche dein Spiel als öffentlichen Live-Ticker und teile den Link oder QR-Code – perfekt",
+              "Ja. Du gibst Trainerkollegen Nur-Lese-Zugriff auf Statistik und KI-Analyse eines Spiels – per Link o",
+              "Frag Verfügbarkeit, Feedback oder Themen wie Trainingszeiten ab: Du erstellst die Umfrage in Statix ",
+              "Datenschutz ist eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – die ",
+              "Bis zum 31. Dezember 2026 nichts: Registriere dich unter app.statix-app.de und erfasse dein erstes S",
+              "Hinter Statix steht Arkadiusz Weiss – ein Handballer aus Deutschland, der die App aus der eigenen Pr"
+            ],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 7,
+          "heading": "Bleib auf dem Laufenden – Neues aus der Halle",
+          "y": 9137.96875,
+          "height": 414,
+          "file": "reduced-section-08.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.09",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Bleib auf dem Laufenden – Neues aus der Halle",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        },
+        {
+          "index": 8,
+          "heading": "Dein nächstes Spiel kann das erste mit echten Zahlen sein.",
+          "y": 9551.96875,
+          "height": 820.9375,
+          "file": "reduced-section-09.png",
+          "earlyState": [
+            {
+              "tag": "DIV",
+              "text": "",
+              "opacity": "0.09",
+              "transform": "none"
+            }
+          ],
+          "state": {
+            "heading": "Dein nächstes Spiel kann das erste mit echten Zahlen sein.",
+            "videos": [],
+            "hiddenByAncestor": [],
+            "activeCssAnimations": []
+          }
+        }
+      ],
+      "pageHeight": 11166,
+      "links": [
+        {
+          "text": "Kostenlos starten",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "Live-Demo – ohne Account",
+          "href": "https://demo.statix-app.de"
+        },
+        {
+          "text": "72Noch 72 Tage GründerangebotJetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis.",
+          "href": "/preise#bestandsschutz"
+        },
+        {
+          "text": "72Noch 72 Tage GründerangebotJetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis.",
+          "href": "/preise#bestandsschutz"
+        },
+        {
+          "text": "Live-Erfassung im Detail",
+          "href": "/funktionen/live-erfassung"
+        },
+        {
+          "text": "Alle Handball-Statistiken erklärt",
+          "href": "/handball-statistiken"
+        },
+        {
+          "text": "Mehr zu Wurfbildern im Handball",
+          "href": "/funktionen/wurfbilder"
+        },
+        {
+          "text": "Kostenlos starten",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "Live-Demo – ohne Account",
+          "href": "https://demo.statix-app.de"
+        },
+        {
+          "text": "Analyse in voller Größe öffnen",
+          "href": "/aiAnalyze.png"
+        },
+        {
+          "text": "Analyse in voller Größe öffnen",
+          "href": "/aiAnalyze2.png"
+        },
+        {
+          "text": "Alle Funktionen im Detail",
+          "href": "/funktionen"
+        },
+        {
+          "text": "Registrieren & selbst ausprobieren",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "kostenlose Handball-Statistik Excel-Vorlage mit Wurfbild",
+          "href": "/handball-statistik-excel-vorlage"
+        },
+        {
+          "text": "So entsteht Statix",
+          "href": "/erfahrungen"
+        },
+        {
+          "text": "Alle Handball-Statistiken im Überblick",
+          "href": "/handball-statistiken"
+        },
+        {
+          "text": "Datenschutzbestimmungen",
+          "href": "/datenschutz"
+        },
+        {
+          "text": "Kostenlos starten",
+          "href": "https://app.statix-app.de"
+        },
+        {
+          "text": "Live-Demo – ohne Account",
+          "href": "https://demo.statix-app.de"
+        },
+        {
+          "text": "72Noch 72 Tage GründerangebotJetzt registrieren: Trainer-Plan bis 30. Juni 2027 kostenlos, danach dauerhaft zum Gründerpreis.",
+          "href": "/preise#bestandsschutz"
+        }
+      ]
+    }
+  },
+  "skipLink": {
+    "focused": {
+      "text": "Zum Inhalt springen",
+      "href": "#main-content",
+      "box": {
+        "x": 16,
+        "y": 16,
+        "width": 175.140625,
+        "height": 44,
+        "top": 16,
+        "right": 191.140625,
+        "bottom": 60,
+        "left": 16
+      }
+    },
+    "targetAfterEnter": {
+      "tag": "MAIN",
+      "id": "main-content"
+    }
+  },
+  "primaryHover": [
+    {
+      "rest": {
+        "text": "Kostenlos starten",
+        "transform": "none",
+        "color": "rgb(25, 30, 41)",
+        "background": "rgb(245, 103, 20)",
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(218, 87, 11, 0.85) 0px 14px 26px -14px"
+      },
+      "hover": {
+        "text": "Kostenlos starten",
+        "transform": "none",
+        "color": "rgb(25, 30, 41)",
+        "background": "rgb(234, 88, 12)",
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(218, 87, 11, 0.8) 0px 18px 30px -14px"
+      }
+    },
+    {
+      "rest": {
+        "text": "Live-Demo – ohne Account",
+        "transform": "none",
+        "color": "rgb(255, 255, 255)",
+        "background": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+        "shadow": "none"
+      },
+      "hover": {
+        "text": "Live-Demo – ohne Account",
+        "transform": "none",
+        "color": "rgb(255, 255, 255)",
+        "background": "oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+        "shadow": "none"
+      }
+    }
+  ]
+}

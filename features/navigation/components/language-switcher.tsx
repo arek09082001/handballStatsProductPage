@@ -51,11 +51,11 @@ export default function LanguageSwitcher({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        aria-label={t('label')}
+        aria-label={`${activeLocale.toUpperCase()}: ${t('label')}`}
         title={APP_LOCALE_ENDONYMS[activeLocale]}
         className={cn(
           'inline-flex items-center gap-2 rounded-2xl border border-slate-200/90 bg-white/90 px-3 py-2 text-sm font-semibold text-slate-700 shadow-[0_12px_28px_-20px_rgba(15,23,42,0.45)] backdrop-blur transition-colors',
-          'hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60',
+          'hover:border-slate-400 hover:bg-slate-100 hover:text-slate-900 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60',
           className,
         )}>
         <LocaleFlag locale={activeLocale} />

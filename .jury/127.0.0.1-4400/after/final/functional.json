@@ -1,0 +1,102 @@
+{
+  "checks": [
+    {
+      "test": "Hero register_click and demo_click events, no external navigation",
+      "passed": true,
+      "events": [
+        [
+          "event",
+          {
+            "name": "register_click",
+            "data": {
+              "location": "hero"
+            }
+          }
+        ],
+        [
+          "pageview",
+          {
+            "route": "/",
+            "path": "/"
+          }
+        ],
+        [
+          "event",
+          {
+            "name": "demo_click",
+            "data": {
+              "location": "hero"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "test": "Lazy locale switch to English",
+      "passed": true,
+      "lang": "en-GB"
+    },
+    {
+      "test": "Lazy locale switch to Français",
+      "passed": true,
+      "lang": "fr-FR"
+    },
+    {
+      "test": "Lazy locale switch to Deutsch",
+      "passed": true,
+      "lang": "de-DE"
+    },
+    {
+      "test": "Live preference switch to reduced motion",
+      "passed": true,
+      "videos": 0,
+      "canvas": 0,
+      "cssAnimations": 0,
+      "hiddenHeadings": []
+    },
+    {
+      "test": "Additional real analysis opens with the keyboard",
+      "passed": true
+    },
+    {
+      "test": "Contact URL prefill and editable topic, no submission",
+      "passed": true
+    },
+    {
+      "test": "Video-request form has one selected tier, no submission",
+      "passed": true,
+      "tier": "team"
+    },
+    {
+      "test": "No horizontal overflow at six viewport widths",
+      "passed": true,
+      "responsive": [
+        {
+          "width": 320,
+          "scrollWidth": 320
+        },
+        {
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "width": 768,
+          "scrollWidth": 768
+        },
+        {
+          "width": 1024,
+          "scrollWidth": 1024
+        },
+        {
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "width": 1920,
+          "scrollWidth": 1920
+        }
+      ]
+    }
+  ],
+  "appErrors": []
+}

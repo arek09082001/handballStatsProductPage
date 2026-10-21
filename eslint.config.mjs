@@ -1,28 +1,23 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTypescript from 'eslint-config-next/typescript';
 
 const eslintConfig = [
-  // Built against the app repo (its `@/` and node_modules), not this one —
-  // see scripts/screenshots/README.md, "Livestream".
+  ...nextVitals,
+  ...nextTypescript,
+  {
+    files: ['scripts/**/*.js'],
+    languageOptions: { sourceType: 'commonjs' },
+    rules: { '@typescript-eslint/no-require-imports': 'off' },
+  },
   {
     ignores: [
-      "scripts/screenshots/livestream/regie/**",
-      "scripts/screenshots/statistik/harness.tsx",
-      "scripts/screenshots/sponsoren/harness.tsx",
-      "scripts/screenshots/besprechung/harness.tsx",
+      'app/api/**', '.next/**', 'out/**', 'build/**', '.jury/**', '.claude/skills/**',
+      'scripts/screenshots/livestream/regie/**',
+      'scripts/screenshots/statistik/harness.tsx',
+      'scripts/screenshots/sponsoren/harness.tsx',
+      'scripts/screenshots/besprechung/harness.tsx',
     ],
   },
-  ...compat.config({
-    extends: ["next/core-web-vitals", "next/typescript"],
-  }),
 ];
 
 export default eslintConfig;

@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useBrowserSearch } from '@/lib/hooks/use-browser-search';
 import { Mail, Send, User, Users } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
@@ -21,7 +22,6 @@ import {
   VIDEO_REQUEST_TIER_PARAM,
   isVideoRequestSourceId,
   isVideoRequestTierId,
-  type VideoRequestSourceId,
   type VideoRequestTierId,
 } from '../data/video-request-content';
 
@@ -49,27 +49,16 @@ export default function VideoRequestFormSection() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [team, setTeam] = useState('');
-  const [tier, setTier] = useState<VideoRequestTierId>(
-    DEFAULT_VIDEO_REQUEST_TIER,
-  );
+  const params = new URLSearchParams(useBrowserSearch());
+  const fromTier = params.get(VIDEO_REQUEST_TIER_PARAM);
+  const fromSource = params.get(VIDEO_REQUEST_SOURCE_PARAM);
+  const [enteredTier, setTier] = useState<VideoRequestTierId | null>(null);
+  const tier = enteredTier ?? (isVideoRequestTierId(fromTier) ? fromTier : DEFAULT_VIDEO_REQUEST_TIER);
+  const source = isVideoRequestSourceId(fromSource) ? fromSource : '';
   const [message, setMessage] = useState('');
-  const [source, setSource] = useState<VideoRequestSourceId | ''>('');
   const [acceptPrivacy, setAcceptPrivacy] = useState(false);
   // Honeypot
   const [website, setWebsite] = useState('');
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const fromTier = params.get(VIDEO_REQUEST_TIER_PARAM);
-    const fromSource = params.get(VIDEO_REQUEST_SOURCE_PARAM);
-
-    if (isVideoRequestTierId(fromTier)) {
-      setTier(fromTier);
-    }
-    if (isVideoRequestSourceId(fromSource)) {
-      setSource(fromSource);
-    }
-  }, []);
 
   const trimmedEmail = email.trim();
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail);

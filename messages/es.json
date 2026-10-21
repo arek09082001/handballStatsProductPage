@@ -1459,16 +1459,16 @@
   },
   "productPage": {
     "hero": {
-      "badge": "App de estadísticas de balonmano · de un jugador",
-      "headlineLead": "Un toque por acción.",
-      "headlineHighlight": "Estadísticas de balonmano",
-      "headlineTail": "que muestran dónde cambió tu partido.",
-      "description": "Registras goles, lanzamientos, paradas y exclusiones desde el banquillo: Statix dibuja el desarrollo del partido, calcula los porcentajes de acierto y de paradas y muestra quién marcó y quién no. Mientras el partido sigue en marcha.",
+      "badge": "App de estadísticas de balonmano",
+      "headlineLead": "Registra el partido.",
+      "headlineHighlight": "Entiende dónde",
+      "headlineTail": "cambia el juego.",
+      "description": "Registra goles, tiros y paradas. Consulta la evolución y los porcentajes al instante. También sin conexión.",
       "primaryCta": "Empieza gratis",
       "secondaryCta": "Demo en directo, sin cuenta",
       "trust1": "Listo en minutos",
-      "trust2": "Empezar es gratis, sin tarjeta",
-      "trust3": "Funciona sin conexión en el pabellón",
+      "trust2": "Sin tarjeta",
+      "trust3": "Sin conexión",
       "demoAlt": "Demo en directo de Statix: estadísticas de partido y análisis en el navegador",
       "tabletAlt": "Desarrollo de un partido de balonmano en Statix en una tableta: la diferencia de goles durante 60 minutos con fases de superioridad e inferioridad, la mayor ventaja y las rachas del rival",
       "phoneAlt": "Estadísticas del partido en Statix en el móvil: porcentaje de acierto y de paradas como anillos, además de goles, lanzamientos, xG, asistencias y paradas",
@@ -1485,7 +1485,7 @@
       "items": [
         {
           "value": "1 toque",
-          "label": "por acción, registrada en directo"
+          "label": "en modo rápido"
         },
         {
           "value": "+20",
@@ -1520,8 +1520,8 @@
         {
           "clock": "46:27",
           "moment": "Erik marca desde la primera línea",
-          "title": "Un gol en cuatro toques.",
-          "description": "Jugador, «Gol», posición de lanzamiento, esquina de la portería – y quién dio el pase. Unos segundos y tu mirada vuelve a la pista.",
+          "title": "Un gol. Todos los detalles.",
+          "description": "Registra jugador, gol, posición de tiro y zona de la portería. Añade la asistencia si la necesitas. Usa el modo rápido para la captura rápida.",
           "facts": [
             "Funciona sin conexión en el pabellón",
             "Cada toque se puede deshacer"
@@ -1585,7 +1585,9 @@
       ],
       "showcase": {
         "imageOneLabel": "Ritmo del partido y eficacia por zonas de lanzamiento",
-        "imageTwoLabel": "Momentos clave, reparto de errores y rendimiento de los jugadores"
+        "imageTwoLabel": "Momentos clave, reparto de errores y rendimiento de los jugadores",
+        "openImage": "Abrir el análisis a tamaño completo",
+        "more": "Ver otro análisis"
       }
     },
     "pros": {

@@ -1,12 +1,8 @@
 'use client';
 
-import { createContext, startTransition, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { createContext, startTransition, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import deMessages from '@/messages/de.json';
-import enMessages from '@/messages/en.json';
-import esMessages from '@/messages/es.json';
-import frMessages from '@/messages/fr.json';
-import plMessages from '@/messages/pl.json';
 import { DEFAULT_LOCALE, getHtmlLang, type AppLocale } from '@/i18n/config';
 
 type LocaleContextValue = {
@@ -21,12 +17,12 @@ const LocaleContext = createContext<LocaleContextValue | null>(null);
  * a bundle here would otherwise be offered by the switcher and then render
  * nothing.
  */
-const messagesByLocale: Record<AppLocale, typeof deMessages> = {
-    de: deMessages,
-    en: enMessages,
-    es: esMessages,
-    fr: frMessages,
-    pl: plMessages,
+const loadMessages: Record<AppLocale, () => Promise<typeof deMessages>> = {
+    de: async () => deMessages,
+    en: async () => (await import('@/messages/en.json')).default,
+    es: async () => (await import('@/messages/es.json')).default,
+    fr: async () => (await import('@/messages/fr.json')).default,
+    pl: async () => (await import('@/messages/pl.json')).default,
 };
 
 export function useAppLocale() {
@@ -45,16 +41,28 @@ export default function LocaleProvider({
     children: React.ReactNode;
 }) {
     const [locale, setLocaleState] = useState<AppLocale>(DEFAULT_LOCALE);
+    const [messages, setMessages] = useState(deMessages);
+    const requestId = useRef(0);
 
-    const setLocale = useCallback((nextLocale: AppLocale) => {
+    const setLocale = useCallback(async (nextLocale: AppLocale) => {
+        const request = ++requestId.current;
         if (nextLocale === locale) {
             return;
         }
 
+        let nextMessages: typeof deMessages;
+        try {
+            nextMessages = await loadMessages[nextLocale]();
+        } catch (error) {
+            console.error('Unable to load the selected language', error);
+            return;
+        }
+        if (request !== requestId.current) return;
         const currentScrollY = window.scrollY;
 
         startTransition(() => {
             setLocaleState(nextLocale);
+            setMessages(nextMessages);
         });
 
         window.requestAnimationFrame(() => {
@@ -82,7 +90,7 @@ export default function LocaleProvider({
 
     return (
         <LocaleContext.Provider value={contextValue}>
-            <NextIntlClientProvider locale={locale} messages={messagesByLocale[locale]} timeZone="Europe/Berlin">
+            <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Berlin">
                 {children}
             </NextIntlClientProvider>
         </LocaleContext.Provider>

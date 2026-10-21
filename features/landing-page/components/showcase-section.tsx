@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Check } from 'lucide-react';
-import { gsap } from '@/lib/gsap-config';
 import { useTranslations } from 'next-intl';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
@@ -44,29 +42,10 @@ export default function ShowcaseSection() {
   const t = useTranslations('productPage.showcase');
   const items = t.raw('items') as ShowcaseItem[];
 
-  const sectionRef = useRef<HTMLElement>(null);
-  const rowsRef = useRef<HTMLLIElement[]>([]);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-    const ctx = gsap.context(() => {
-      rowsRef.current.forEach((row) => {
-        // Der Text kommt eine Spur nach dem Tablet — erst das Bild, dann die Notiz dazu.
-        const [shot, copy] = [row.querySelector('[data-beat-shot]'), row.querySelector('[data-beat-copy]')];
-        gsap
-          .timeline({ scrollTrigger: { trigger: row, start: 'top 80%', once: true } })
-          .fromTo(shot, { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.8, ease: 'expo.out' })
-          .fromTo(copy, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out' }, '-=0.55');
-      });
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
   return (
     <section
       id='features'
-      ref={sectionRef}
-      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-20 md:py-28'>
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-14 md:py-24'>
       <Grain tone='paper' />
       <div className='relative mx-auto w-full max-w-7xl px-6 sm:px-10'>
         <SectionHeading
@@ -84,7 +63,7 @@ export default function ShowcaseSection() {
           className='max-w-3xl'
         />
 
-        <ol className='mt-16 flex flex-col gap-20 lg:mt-24 lg:gap-28'>
+        <ol className='mt-10 flex flex-col gap-12 lg:mt-16 lg:gap-20'>
           {items.map((item, index) => {
             const beat = BEATS[index];
             if (!beat) return null;
@@ -93,16 +72,12 @@ export default function ShowcaseSection() {
             return (
               <li
                 key={item.clock}
-                ref={(el) => {
-                  if (el) rowsRef.current[index] = el;
-                }}
                 className='grid items-center gap-8 lg:grid-cols-12 lg:gap-14'>
                 <div data-beat-shot className={reversed ? 'lg:order-2 lg:col-span-7' : 'lg:col-span-7'}>
                   <TabletLoop
                     name={beat.video}
                     alt={item.alt}
                     pin={reversed ? 'magnet' : 'tape'}
-                    priority={index === 0}
                   />
                 </div>
 
@@ -139,7 +114,7 @@ export default function ShowcaseSection() {
                       most clicks and passes them on. */}
                   <Link
                     href={beat.href}
-                    className='group mt-6 inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
+                    className='board-detail-link group mt-4 inline-flex items-center gap-1.5 font-display text-[15px] font-bold tracking-tight text-primary transition-colors hover:text-[#ea580c]'>
                     {item.linkLabel}
                     <ArrowRight className='size-4 transition-transform duration-200 group-hover:translate-x-0.5' />
                   </Link>
@@ -183,7 +158,7 @@ export default function ShowcaseSection() {
             </div>
           </div>
         </BoardCard>
-        <p className='mt-5 text-center text-[13px] leading-5 text-ink/55'>{t('note')}</p>
+        <p className='mt-5 text-center text-[13px] leading-5 text-ink/75'>{t('note')}</p>
       </div>
     </section>
   );
