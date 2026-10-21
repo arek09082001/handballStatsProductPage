@@ -247,9 +247,12 @@ These refinements take precedence over the earlier hero-device choreography:
 - On phones the short promise and registration/demo pair lead straight into the
   real device captures; the trust notes and founder deadline follow the picture.
   Product proof must be visible before an extra screen of assurances.
-- The hero devices sit in a quiet, server-rendered rest pose. The marker circle
-  draws once around the actual turn in the game; there is no continuous float
-  or pointer lean. This is a deliberate still resting state for a product page.
+- The hero devices are fully visible in their server-rendered rest pose. They
+  retain a slow vertical float and gentle, bounded pointer lean, as requested.
+  Float starts after three seconds, pauses outside the viewport and is disabled
+  under reduced motion. Pointer lean uses a fine pointer only and resets
+  immediately when motion is reduced. No invisible entrance delays the image.
+  The marker circle draws once around the actual turn in the game.
 - All content has a visible static default. Scroll choreography is enabled only
   by a no-preference media context and is reverted when that preference changes.
   Under reduced motion there are no counters, video loops, pulse/ping effects,
