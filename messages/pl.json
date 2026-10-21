@@ -1499,7 +1499,18 @@
           "value": "0 €",
           "label": "na start"
         }
-      ]
+      ],
+      "live": {
+        "labels": {
+          "users": "trenerów i użytkowników",
+          "games": "zapisanych meczów",
+          "events": "zapisanych akcji",
+          "goals": "zapisanych bramek"
+        },
+        "thousand": "tys.",
+        "million": "mln",
+        "note": "Na żywo z aplikacji · aktualizacja co 15 min"
+      }
     },
     "showcase": {
       "kicker": "Na żywo w aplikacji",

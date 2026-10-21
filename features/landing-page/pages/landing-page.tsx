@@ -9,6 +9,7 @@ import TestimonialsSection from '../components/testimonials-section';
 import FaqSection from '../components/faq-section';
 import NewsletterSection from '../components/newsletter-section';
 import FinalCTASection from '../components/final-cta-section';
+import { fetchLiveStats } from '../data/live-stats';
 
 /**
  * DIRECTION CONTRACT — "Die Trainertafel" (see DESIGN.md)
@@ -53,13 +54,14 @@ import FinalCTASection from '../components/final-cta-section';
  * no real coach quotes — the maker's note in `ProsSection` carries trust until
  * there are.
  */
-export default function LandingPage() {
+export default async function LandingPage() {
+  const stats = await fetchLiveStats();
   return (
     <>
       <StructuredData />
       <div className='flex h-full w-full flex-col items-center bg-paper'>
         <ProductHero />
-        <StatsBarSection />
+        <StatsBarSection stats={stats} />
         <ShowcaseSection />
         <AiAnalyticsSection />
         <MoreSection />

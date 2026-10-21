@@ -1499,7 +1499,18 @@
           "value": "0 €",
           "label": "pour commencer"
         }
-      ]
+      ],
+      "live": {
+        "labels": {
+          "users": "entraîneurs et utilisateurs",
+          "games": "matchs saisis",
+          "events": "actions saisies",
+          "goals": "buts enregistrés"
+        },
+        "thousand": "k",
+        "million": "M",
+        "note": "En direct depuis l’app · mis à jour toutes les 15 min"
+      }
     },
     "showcase": {
       "kicker": "En direct dans l’application",

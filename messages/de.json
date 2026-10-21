@@ -1499,7 +1499,18 @@
           "value": "0 €",
           "label": "kostenlos starten"
         }
-      ]
+      ],
+      "live": {
+        "labels": {
+          "users": "Trainer & Nutzer",
+          "games": "erfasste Spiele",
+          "events": "erfasste Aktionen",
+          "goals": "Tore protokolliert"
+        },
+        "thousand": "Tsd.",
+        "million": "Mio.",
+        "note": "Live aus der App · alle 15 Min. aktualisiert"
+      }
     },
     "showcase": {
       "kicker": "Live in der App",
