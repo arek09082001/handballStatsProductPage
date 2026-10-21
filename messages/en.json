@@ -1499,7 +1499,18 @@
           "value": "€0",
           "label": "to get started"
         }
-      ]
+      ],
+      "live": {
+        "labels": {
+          "users": "coaches & users",
+          "games": "games recorded",
+          "events": "actions logged",
+          "goals": "goals tracked"
+        },
+        "thousand": "k",
+        "million": "M",
+        "note": "Live from the app · updated every 15 min"
+      }
     },
     "showcase": {
       "kicker": "Live in the app",

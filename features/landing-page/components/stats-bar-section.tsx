@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { gsap } from '@/lib/gsap-config';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
+import { compactFigure, LIVE_STAT_KEYS, type LiveStats } from '../data/live-stats';
 import SmokeCursor from './smoke-cursor';
 
 interface StatItem {
@@ -11,12 +12,24 @@ interface StatItem {
   label: string;
 }
 
+/** One scoreboard figure: what the counter animates and what it ends on. */
+interface Figure {
+  label: string;
+  prefix: string;
+  number: number | null;
+  decimals: number;
+  /** Text right after the number ("+", "%" …). */
+  suffix: string;
+  /** Smaller unit after the number ("Tsd.", "k") for compacted live figures. */
+  unit: string;
+}
+
 /** Split a value like "20+" / "100%" / "0 €" into a countable number and its
  *  surrounding text so we can animate just the numeric part. */
-function parseValue(value: string) {
-  const match = value.match(/^(\D*?)(\d+)(.*)$/);
-  if (!match) return { prefix: value, number: null, suffix: '' };
-  return { prefix: match[1], number: Number(match[2]), suffix: match[3] };
+function parseValue(item: StatItem): Figure {
+  const match = item.value.match(/^(\D*?)(\d+)(.*)$/);
+  if (!match) return { label: item.label, prefix: item.value, number: null, decimals: 0, suffix: '', unit: '' };
+  return { label: item.label, prefix: match[1], number: Number(match[2]), decimals: 0, suffix: match[3], unit: '' };
 }
 
 // Hairlines between the four scoreboard figures: columns on desktop, a 2×2 grid
@@ -28,9 +41,31 @@ const DIVIDERS = [
   '',
 ];
 
-export default function StatsBarSection() {
+/**
+ * The scoreboard band on the smoke. With `stats` (read from the app, at most
+ * every 15 minutes — see `fetchLiveStats`) it shows real usage, compacted
+ * ("29 Tsd."); without, the static product claims from the messages.
+ */
+export default function StatsBarSection({ stats }: { stats?: LiveStats | null }) {
   const t = useTranslations('productPage.stats');
-  const items = t.raw('items') as StatItem[];
+  const locale = useLocale();
+
+  const items = useMemo<Figure[]>(() => {
+    if (!stats) return (t.raw('items') as StatItem[]).map(parseValue);
+    const units = { thousand: t('live.thousand'), million: t('live.million') };
+    return LIVE_STAT_KEYS.map((key) => ({
+      label: t(`live.labels.${key}`),
+      prefix: '',
+      suffix: '',
+      ...compactFigure(stats[key], units),
+    }));
+  }, [stats, t]);
+
+  const format = useCallback(
+    (f: Figure, n: number) =>
+      `${f.prefix}${n.toLocaleString(locale, { minimumFractionDigits: f.decimals, maximumFractionDigits: f.decimals })}${f.suffix}`,
+    [locale],
+  );
 
   const sectionRef = useRef<HTMLElement>(null);
   const numberRefs = useRef<(HTMLSpanElement | null)[]>([]);
@@ -58,12 +93,13 @@ export default function StatsBarSection() {
       // reset to zero once we know JavaScript is running.
       items.forEach((item, i) => {
         const el = numberRefs.current[i];
-        const { prefix, number, suffix } = parseValue(item.value);
+        const { number } = item;
         if (!el || number === null) return;
 
         const counter = { v: 0 };
+        const step = 10 ** -item.decimals;
         const render = () => {
-          el.textContent = `${prefix}${Math.round(counter.v)}${suffix}`;
+          el.textContent = format(item, Math.round(counter.v / step) * step);
         };
         render();
 
@@ -83,10 +119,10 @@ export default function StatsBarSection() {
       // figures back so an unmount never leaves a zeroed scoreboard behind.
       items.forEach((item, i) => {
         const el = numberRefs.current[i];
-        if (el) el.textContent = item.value;
+        if (el) el.textContent = item.number === null ? item.prefix : format(item, item.number);
       });
     };
-  }, [items]);
+  }, [items, format]);
 
   return (
     <section
@@ -115,12 +151,17 @@ export default function StatsBarSection() {
                   'flex flex-col items-center border-chalk/12 px-4 py-8 text-center sm:px-6 sm:py-4',
                   DIVIDERS[i] ?? '',
                 )}>
-                <span
-                  ref={(el) => {
-                    numberRefs.current[i] = el;
-                  }}
-                  className='block font-display text-[2.75rem] font-extrabold leading-none tracking-[-0.03em] text-chalk tabular-nums sm:text-6xl'>
-                  {item.value}
+                <span className='flex items-baseline gap-1.5 font-display leading-none text-chalk'>
+                  <span
+                    ref={(el) => {
+                      numberRefs.current[i] = el;
+                    }}
+                    className='block text-[2.75rem] font-extrabold tracking-[-0.03em] tabular-nums sm:text-6xl'>
+                    {item.number === null ? item.prefix : format(item, item.number)}
+                  </span>
+                  {item.unit && (
+                    <span className='text-xl font-bold tracking-tight text-primary sm:text-2xl'>{item.unit}</span>
+                  )}
                 </span>
                 <span className='mt-3.5 flex max-w-[18ch] items-center gap-2 text-sm font-medium leading-6 text-chalk/60 sm:mt-4'>
                   <span aria-hidden className='size-1.5 shrink-0 rounded-[3px] bg-primary' />
@@ -130,6 +171,15 @@ export default function StatsBarSection() {
             );
           })}
         </div>
+        {stats && (
+          <p className='mt-8 flex items-center justify-center gap-2 text-xs font-medium text-chalk/45'>
+            <span aria-hidden className='relative flex size-2'>
+              <span className='absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60 motion-reduce:hidden' />
+              <span className='relative inline-flex size-2 rounded-full bg-primary' />
+            </span>
+            {t('live.note')}
+          </p>
+        )}
       </div>
     </section>
   );
