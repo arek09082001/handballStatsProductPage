@@ -31,7 +31,7 @@ const baseConfig = {
     // Fewer sizes = fewer transformations and cache entries
     deviceSizes: [640, 768, 1024, 1280, 1920],
     // Reduced image sizes for smaller elements
-    imageSizes: [16, 32, 48, 64, 96, 128],
+    imageSizes: [16, 32, 48, 64, 96, 128, 192, 256, 384],
     // Extended cache to 31 days (max recommended)
     // Reduces cache writes and transformations
     minimumCacheTTL: 60 * 60 * 24 * 31, // 31 days

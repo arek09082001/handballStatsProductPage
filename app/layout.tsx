@@ -22,6 +22,7 @@ import {
 const inter = Inter({ subsets: ['latin'] });
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
+  preload: false,
   weight: ['500', '600', '700'],
   variable: '--font-space-grotesk',
 });
