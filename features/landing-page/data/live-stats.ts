@@ -25,9 +25,12 @@ function parseLiveStats(json: unknown): LiveStats | null {
  * unexpected returns `null` and the band falls back to its static claims.
  */
 export async function fetchLiveStats(): Promise<LiveStats | null> {
+  // Shared secret with the app; only ever read here on the server.
+  const token = process.env.PUBLIC_STATS_TOKEN;
+  if (!token) return null;
   try {
     const response = await fetch(`${CLUB_CONFIG.website.appUrl}/api/public/stats`, {
-      headers: { accept: 'application/json' },
+      headers: { accept: 'application/json', authorization: `Bearer ${token}` },
       next: { revalidate: LIVE_STATS_REVALIDATE_SECONDS },
       signal: AbortSignal.timeout(5000),
     });
