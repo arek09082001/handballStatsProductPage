@@ -154,14 +154,14 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
   };
 
   /**
-   * Die Kapitel als Leiste IM Film (oben links, wo der Film nichts zeigt):
-   * vier Abschnitte wie bei einer Story, darunter das laufende Kapitel. Spart
+   * Die Kapitel als schmale Leiste IM Film (oben links, wo der Film nichts
+   * zeigt): vier Abschnitte wie bei einer Story, darunter „1/4 Abpfiff“. Spart
    * die Höhe einer Liste unter dem Film — die Bühne passt so auf einen
    * Laptop-Bildschirm. Jeder Abschnitt springt an den Anfang seines Kapitels.
    */
-  const hud = (className: string) => (
+  const hud = (className: string, compact: boolean) => (
     <div className={className}>
-      <ol aria-label={chaptersLabel} className='flex gap-1.5'>
+      <ol aria-label={chaptersLabel} className='flex gap-1'>
         {chapters.map((chapter, index) => (
           <li key={chapter.label} className='flex-1'>
             <button
@@ -170,7 +170,10 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
               disabled={!live}
               aria-current={live && index === current ? 'step' : undefined}
               aria-label={chapter.label}
-              className='group flex h-6 w-full items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 disabled:cursor-default'>
+              className={cn(
+                'group flex w-full items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 disabled:cursor-default',
+                compact ? 'h-5' : 'h-6',
+              )}>
               <span aria-hidden='true' className='relative block h-[3px] w-full overflow-hidden rounded-full bg-chalk/20 transition-colors group-hover:bg-chalk/35'>
                 <span
                   className={cn('absolute inset-y-0 left-0 rounded-full', index === current ? 'bg-primary' : 'bg-chalk/60')}
@@ -181,12 +184,14 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
           </li>
         ))}
       </ol>
-      <p aria-live='polite' className='mt-1.5'>
-        <span className='font-display text-[15px] font-extrabold tracking-[-0.01em] text-primary'>
-          <span className='mr-2 tabular-nums text-chalk/50'>{shown + 1}/{chapters.length}</span>
+      <p aria-live='polite' className={compact ? 'mt-0.5' : 'mt-1.5'}>
+        <span className={cn('font-display font-extrabold tracking-[-0.01em] text-primary', compact ? 'text-[13px]' : 'text-[15px]')}>
+          <span className='mr-1.5 tabular-nums text-chalk/50'>{shown + 1}/{chapters.length}</span>
           {chapters[shown]?.label}
         </span>
-        <span className='mt-0.5 block text-[13px] leading-5 text-chalk/80 sm:text-sm'>{chapters[shown]?.text}</span>
+        {/* Im Bild nur das Kapitel: der Satz dazu verdeckte sonst, was der
+            Film gerade zeigt. Vorgelesen wird er trotzdem. */}
+        <span className={compact ? 'sr-only' : 'mt-0.5 block text-[13px] leading-5 text-chalk/80'}>{chapters[shown]?.text}</span>
       </p>
     </div>
   );
@@ -231,7 +236,8 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
         ) : null}
         {live
           ? hud(
-              'absolute left-3 top-3 hidden w-[min(22rem,38%)] rounded-xl border border-chalk/12 bg-court-2/95 px-3.5 pb-3 pt-1.5 shadow-[0_10px_24px_-14px_hsl(199_50%_5%/0.9)] sm:left-4 sm:top-4 sm:block',
+              'absolute left-3 top-3 hidden w-[min(13rem,24%)] rounded-lg border border-chalk/12 bg-court-2/95 px-2.5 pb-1.5 pt-0.5 shadow-[0_8px_20px_-12px_hsl(199_50%_5%/0.9)] sm:left-4 sm:top-4 sm:block',
+              true,
             )
           : null}
         {live ? (
@@ -248,7 +254,7 @@ export default function AiFilm({ chapters, alt, chaptersLabel, playLabel, pauseL
       {/* Auf dem Telefon wäre die Leiste im Film zu klein: dort steht sie
           knapp darunter. Ohne Film (Bewegung reduzieren) die ganze
           Geschichte als Text. */}
-      {live ? hud('mt-3 sm:hidden') : null}
+      {live ? hud('mt-3 sm:hidden', false) : null}
       {!live ? (
         <ol aria-label={chaptersLabel} className='mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-4'>
           {chapters.map((chapter, index) => (
