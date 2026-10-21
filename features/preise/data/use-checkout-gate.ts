@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useSyncExternalStore } from 'react';
+import { useBrowserSearch } from '@/lib/hooks/use-browser-search';
 import type { PriceSheet } from './price-sheet';
 
 /** `/preise?kasse=vorschau` makes the buy button clickable before the launch. */
@@ -32,31 +33,27 @@ export interface CheckoutGate {
  * cached `launched` flag and nothing else.
  */
 export function useCheckoutGate(sheet: PriceSheet): CheckoutGate {
-  const [launchedNow, setLaunchedNow] = useState(sheet.launched);
-  const [previewFlag, setPreviewFlag] = useState(false);
-
-  useEffect(() => {
+  const search = useBrowserSearch();
+  const previewFlag = new URLSearchParams(search).get(CHECKOUT_PREVIEW_PARAM) === CHECKOUT_PREVIEW_VALUE;
+  const subscribe = useCallback((notify: () => void) => {
     const launchAt = Date.parse(sheet.launchAt);
-    const params = new URLSearchParams(window.location.search);
-    setPreviewFlag(params.get(CHECKOUT_PREVIEW_PARAM) === CHECKOUT_PREVIEW_VALUE);
-
-    if (sheet.launched || Number.isNaN(launchAt)) {
-      setLaunchedNow(sheet.launched);
-      return;
-    }
+    if (sheet.launched || Number.isNaN(launchAt)) return () => {};
     const wait = launchAt - Date.now();
-    if (wait <= 0) {
-      setLaunchedNow(true);
-      return;
-    }
+    if (wait <= 0) return () => {};
     // A visitor who leaves the page open over midnight on New Year's Eve gets
     // the button without a reload. setTimeout cannot wait longer than ~24.8
     // days, so anything further out is left to the next visit.
     if (wait < 2_000_000_000) {
-      const timer = window.setTimeout(() => setLaunchedNow(true), wait);
+      const timer = window.setTimeout(notify, wait);
       return () => window.clearTimeout(timer);
     }
+    return () => {};
   }, [sheet.launched, sheet.launchAt]);
+  const launchedNow = useSyncExternalStore(
+    subscribe,
+    () => sheet.launched || Date.now() >= Date.parse(sheet.launchAt),
+    () => sheet.launched,
+  );
 
   return {
     open: launchedNow || previewFlag,

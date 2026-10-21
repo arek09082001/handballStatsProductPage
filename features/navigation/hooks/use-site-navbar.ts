@@ -26,9 +26,11 @@ export const useSiteNavbar = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  useEffect(() => {
+  const [menuPath, setMenuPath] = useState(pathname);
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
     setIsOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     let frameId = 0;
@@ -74,10 +76,7 @@ export const useSiteNavbar = () => {
   }, []);
 
   useEffect(() => {
-    if (pathname !== '/') {
-      setActiveSection(HOME_SECTION_ID);
-      return;
-    }
+    if (pathname !== '/') return;
 
     const trackedIds = scrollSpySectionIds.filter(
       (id) => id !== HOME_SECTION_ID,
@@ -115,7 +114,7 @@ export const useSiteNavbar = () => {
       frameId = window.requestAnimationFrame(resolveActiveSection);
     };
 
-    resolveActiveSection();
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll);
 
