@@ -1,0 +1,239 @@
+{
+  "scope": "Actual production WebGL shader point from mouse events; software renderer guard overridden only by test instrumentation; not visual or GPU performance evidence",
+  "checks": [
+    {
+      "dpr": 1,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "shader": {
+        "x": 0.2,
+        "y": 0.7529761904761905
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "shader": {
+        "x": 0.5,
+        "y": 0.5029761904761905
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.8,
+        "y": 0.75
+      },
+      "shader": {
+        "x": 0.8,
+        "y": 0.25297619047619047
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "shader": {
+        "x": 0.2,
+        "y": 0.7517361415967356
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "shader": {
+        "x": 0.5,
+        "y": 0.5037202385457646
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.8,
+        "y": 0.75
+      },
+      "shader": {
+        "x": 0.8,
+        "y": 0.25074401743377417
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1.5,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "shader": {
+        "x": 0.2,
+        "y": 0.7529761904761905
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1.5,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "shader": {
+        "x": 0.5,
+        "y": 0.5029761904761905
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1.5,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.8,
+        "y": 0.75
+      },
+      "shader": {
+        "x": 0.8,
+        "y": 0.25297619047619047
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1.5,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "shader": {
+        "x": 0.2,
+        "y": 0.7517361415967356
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1.5,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "shader": {
+        "x": 0.5,
+        "y": 0.5037202385457646
+      },
+      "passed": true
+    },
+    {
+      "dpr": 1.5,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.8,
+        "y": 0.75
+      },
+      "shader": {
+        "x": 0.8,
+        "y": 0.25074401743377417
+      },
+      "passed": true
+    },
+    {
+      "dpr": 2,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "shader": {
+        "x": 0.2,
+        "y": 0.7529761904761905
+      },
+      "passed": true
+    },
+    {
+      "dpr": 2,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "shader": {
+        "x": 0.5,
+        "y": 0.5029761904761905
+      },
+      "passed": true
+    },
+    {
+      "dpr": 2,
+      "cssScale": 1,
+      "cursor": {
+        "x": 0.8,
+        "y": 0.75
+      },
+      "shader": {
+        "x": 0.8,
+        "y": 0.25297619047619047
+      },
+      "passed": true
+    },
+    {
+      "dpr": 2,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.2,
+        "y": 0.25
+      },
+      "shader": {
+        "x": 0.2,
+        "y": 0.7517361415967356
+      },
+      "passed": true
+    },
+    {
+      "dpr": 2,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "shader": {
+        "x": 0.5,
+        "y": 0.5037202385457646
+      },
+      "passed": true
+    },
+    {
+      "dpr": 2,
+      "cssScale": 0.8,
+      "cursor": {
+        "x": 0.8,
+        "y": 0.75
+      },
+      "shader": {
+        "x": 0.8,
+        "y": 0.25074401743377417
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1024,14 +1024,13 @@ export default function SmokeCursor() {
     // overlay). Points outside the canvas simply fall out of [0,1] range and
     // contribute nothing visible.
 
-    const scaleByPixelRatio = (input: number) =>
-      Math.floor(input * (window.devicePixelRatio || 1));
-
     function getCanvasPos(clientX: number, clientY: number) {
       const rect = canvas!.getBoundingClientRect();
+      // Match the actual backing buffer, including its resolution cap and
+      // any CSS scaling. The device pixel ratio alone can differ from both.
       return {
-        x: scaleByPixelRatio(clientX - rect.left),
-        y: scaleByPixelRatio(clientY - rect.top),
+        x: (clientX - rect.left) * (canvas!.width / rect.width),
+        y: (clientY - rect.top) * (canvas!.height / rect.height),
       };
     }
 
