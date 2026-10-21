@@ -1562,33 +1562,54 @@
     },
     "ai": {
       "kicker": "KI-Analyse",
-      "title": "Handball-Statistiken per KI ausgewertet – erklärt warum, nicht nur was",
-      "description": "Statix wertet deine Spiele mit KI aus – für ein einzelnes Spiel, dein ganzes Team, einzelne Spieler und komplette Turniere. Das leistet kein Zettel und keine Excel-Tabelle.",
-      "privacyNote": "Datenschutz eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – und Berichte entstehen im Hintergrund, während du weiterarbeitest.",
+      "titleLead": "Verloren?",
+      "titleHighlight": "Die KI zeigt dir, wo es gekippt ist.",
+      "description": "Ein Tipp nach dem Abpfiff, und Statix liest dein Spiel wie ein Co-Trainer: findet die Minuten, in denen es gekippt ist, belegt sie mit deinen Zahlen und sagt dir, was du im nächsten Training angehen solltest.",
+      "filmAlt": "Film: Nach einem 26:28 startet der Trainer die KI-Analyse in Statix. Die Spielernamen werden pseudonymisiert, der Bericht zeigt die kritische Phase von Minute 38 bis 44 im Spielverlauf und gibt drei Empfehlungen fürs Training.",
+      "chaptersLabel": "Kapitel des Films",
+      "play": "Film abspielen",
+      "pause": "Film anhalten",
+      "chapters": [
+        {
+          "label": "Abpfiff",
+          "text": "26:28. Knapp verloren – und keiner weiß genau, warum."
+        },
+        {
+          "label": "Analyse",
+          "text": "Ein Tipp. Spielernamen werden zu Platzhaltern, bevor die KI etwas sieht."
+        },
+        {
+          "label": "Antwort",
+          "text": "Minute 38 bis 44: sechs Ballverluste, aus 19:17 wird 20:23."
+        },
+        {
+          "label": "Plan",
+          "text": "Drei Empfehlungen, die du im nächsten Training angehst."
+        }
+      ],
+      "scopesTitle": "Nicht nur für ein Spiel",
       "scopes": [
         {
           "title": "Einzelspiel",
-          "description": "Tiefenanalyse eines Spiels: Spielverlauf, Torläufe, Wendepunkte, taktische Muster und Verhalten unter Druck – mit klaren Trainer-Empfehlungen."
+          "description": "Spielverlauf, Wendepunkte, Verhalten unter Druck."
         },
         {
           "title": "Ganzes Team",
-          "description": "Mehrere Spiele als ein System betrachtet: Trends, Stabilität, Offensivsystem und wiederkehrende Fehlermuster über die Saison."
+          "description": "Trends und wiederkehrende Fehlermuster über die Saison."
         },
         {
           "title": "Einzelspieler",
-          "description": "Ein Scouting-Profil pro Spieler über alle Spiele: Spielertyp, Wurfauswahl, Effizienz, Formkurve und in welchen Situationen er stark oder schwach ist."
+          "description": "Scouting-Profil: Spielertyp, Wurfauswahl, Formkurve."
         },
         {
           "title": "Turnier",
-          "description": "Die KI betrachtet dein ganzes Turnier als Einheit: Verlauf über alle Spiele, auffällige Muster und was am Ende den Unterschied gemacht hat."
+          "description": "Das ganze Turnier als Einheit – und was am Ende entschieden hat."
         }
       ],
-      "showcase": {
-        "imageOneLabel": "Spielverlauf & Wurfzonen-Effizienz",
-        "imageTwoLabel": "Wendepunkte, Fehlerverteilung & Spieler-Performance",
-        "openImage": "Analyse in voller Größe öffnen",
-        "more": "Weitere Analyse ansehen"
-      }
+      "privacyNote": "Datenschutz eingebaut: Spielernamen werden pseudonymisiert, bevor Daten eine KI erreichen – und Berichte entstehen im Hintergrund, während du weiterarbeitest.",
+      "primaryCta": "Kostenlos starten",
+      "secondaryCta": "Live-Demo – ohne Account",
+      "note": "Beispielbericht mit einer Demo-Mannschaft, gezeigt mit den Bildschirmen der App."
     },
     "pros": {
       "kicker": "Zettel war gestern",

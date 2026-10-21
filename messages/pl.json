@@ -1562,33 +1562,54 @@
     },
     "ai": {
       "kicker": "Analiza AI",
-      "title": "Statystyki piłki ręcznej analizowane przez AI — tłumaczy dlaczego, nie tylko co",
-      "description": "Statix analizuje wasze mecze z pomocą AI: pojedynczy mecz, całą drużynę, poszczególnych zawodników i całe turnieje. Tego nie zrobi żaden notes ani arkusz.",
-      "privacyNote": "Prywatność w standardzie: nazwiska zawodników są pseudonimizowane, zanim jakiekolwiek dane trafią do AI, a raporty powstają w tle, gdy Ty pracujesz dalej.",
+      "titleLead": "Przegrana?",
+      "titleHighlight": "AI pokaże ci, gdzie mecz się odwrócił.",
+      "description": "Jedno dotknięcie po końcowym gwizdku, a Statix czyta twój mecz jak drugi trener: znajduje minuty, w których mecz się odwrócił, popiera je twoimi liczbami i mówi, nad czym pracować na następnym treningu.",
+      "filmAlt": "Film: po porażce 26:28 trener uruchamia analizę AI w Statix. Nazwiska zawodników są pseudonimizowane, raport pokazuje krytyczną fazę od 38. do 44. minuty w przebiegu meczu i daje trzy zalecenia na trening.",
+      "chaptersLabel": "Rozdziały filmu",
+      "play": "Odtwórz film",
+      "pause": "Zatrzymaj film",
+      "chapters": [
+        {
+          "label": "Końcowy gwizdek",
+          "text": "26:28. Minimalna porażka – i nikt nie wie dokładnie dlaczego."
+        },
+        {
+          "label": "Analiza",
+          "text": "Jedno dotknięcie. Nazwiska zamieniają się w symbole, zanim AI cokolwiek zobaczy."
+        },
+        {
+          "label": "Odpowiedź",
+          "text": "Minuty 38–44: sześć strat, z 19:17 robi się 20:23."
+        },
+        {
+          "label": "Plan",
+          "text": "Trzy zalecenia do przepracowania na następnym treningu."
+        }
+      ],
+      "scopesTitle": "Nie tylko dla jednego meczu",
       "scopes": [
         {
-          "title": "Pojedynczy mecz",
-          "description": "Pogłębione spojrzenie na jedno spotkanie: przebieg, serie, momenty zwrotne, schematy taktyczne i zachowanie pod presją — z konkretnymi zaleceniami dla trenera."
+          "title": "Mecz",
+          "description": "Przebieg, punkty zwrotne, zachowanie pod presją."
         },
         {
           "title": "Cała drużyna",
-          "description": "Kilka meczów widzianych jako jeden system: trendy, stabilność, struktura ataku i powtarzające się błędy w skali sezonu."
+          "description": "Trendy i powtarzające się błędy w całym sezonie."
         },
         {
-          "title": "Pojedynczy zawodnik",
-          "description": "Profil skautingowy zawodnika ze wszystkich meczów: typ zawodnika, wybór rzutów, skuteczność, krzywa formy i sytuacje, w których błyszczy albo się męczy."
+          "title": "Zawodnik",
+          "description": "Profil scoutingowy: typ zawodnika, wybór rzutów, forma."
         },
         {
           "title": "Turniej",
-          "description": "AI patrzy na cały turniej jak na całość: przebieg drogi przez wszystkie mecze, wyraźne schematy i to, co ostatecznie przeważyło."
+          "description": "Cały turniej jako całość – i co go ostatecznie rozstrzygnęło."
         }
       ],
-      "showcase": {
-        "imageOneLabel": "Przebieg meczu i skuteczność ze stref rzutowych",
-        "imageTwoLabel": "Momenty zwrotne, rozkład błędów i forma zawodników",
-        "openImage": "Otwórz analizę w pełnym rozmiarze",
-        "more": "Zobacz kolejną analizę"
-      }
+      "privacyNote": "Ochrona danych wbudowana: nazwiska zawodników są pseudonimizowane, zanim dane trafią do AI – a raporty powstają w tle, gdy ty pracujesz dalej.",
+      "primaryCta": "Zacznij za darmo",
+      "secondaryCta": "Demo na żywo – bez konta",
+      "note": "Przykładowy raport z drużyną demonstracyjną, pokazany na ekranach aplikacji."
     },
     "pros": {
       "kicker": "Więcej niż protokół",

@@ -1562,33 +1562,54 @@
     },
     "ai": {
       "kicker": "Análisis con IA",
-      "title": "Estadísticas de balonmano analizadas por IA: te explica el porqué, no solo el qué",
-      "description": "Statix analiza vuestros partidos con IA: un partido concreto, todo el equipo, jugadores individuales y torneos enteros. Eso no lo hace ninguna libreta ni ninguna hoja de cálculo.",
-      "privacyNote": "Privacidad de serie: los nombres de los jugadores se seudonimizan antes de que ningún dato llegue a una IA, y los informes se generan en segundo plano mientras tú sigues trabajando.",
+      "titleLead": "¿Perdiste?",
+      "titleHighlight": "La IA te muestra dónde se torció.",
+      "description": "Un toque tras el pitido final y Statix lee tu partido como un segundo entrenador: encuentra los minutos en los que se torció, los respalda con tus números y te dice qué trabajar en el próximo entrenamiento.",
+      "filmAlt": "Película: tras un 26:28 el entrenador inicia el análisis con IA en Statix. Los nombres de los jugadores se seudonimizan, el informe muestra la fase crítica del minuto 38 al 44 en la evolución del partido y da tres recomendaciones para el entrenamiento.",
+      "chaptersLabel": "Capítulos de la película",
+      "play": "Reproducir película",
+      "pause": "Pausar película",
+      "chapters": [
+        {
+          "label": "Pitido final",
+          "text": "26:28. Derrota por la mínima – y nadie sabe bien por qué."
+        },
+        {
+          "label": "Análisis",
+          "text": "Un toque. Los nombres pasan a ser marcadores antes de que la IA vea nada."
+        },
+        {
+          "label": "Respuesta",
+          "text": "Minutos 38 a 44: seis pérdidas, el 19:17 se convierte en 20:23."
+        },
+        {
+          "label": "Plan",
+          "text": "Tres recomendaciones para trabajar en el próximo entrenamiento."
+        }
+      ],
+      "scopesTitle": "No solo para un partido",
       "scopes": [
         {
-          "title": "Un partido",
-          "description": "Análisis a fondo de un encuentro: ritmo, parciales, momentos clave, patrones tácticos y comportamiento bajo presión, con recomendaciones claras para el entrenador."
+          "title": "Partido",
+          "description": "Evolución, momentos clave, comportamiento bajo presión."
         },
         {
-          "title": "Todo el equipo",
-          "description": "Varios partidos vistos como un sistema: tendencias, estabilidad, estructura ofensiva y patrones de error recurrentes a lo largo de la temporada."
+          "title": "Equipo completo",
+          "description": "Tendencias y errores recurrentes a lo largo de la temporada."
         },
         {
-          "title": "Un jugador",
-          "description": "Un perfil de scouting por jugador a lo largo de todos los partidos: tipo de jugador, selección de lanzamiento, eficacia, curva de forma y las situaciones en las que brilla o sufre."
+          "title": "Jugador",
+          "description": "Perfil de scouting: tipo de jugador, selección de tiro, estado de forma."
         },
         {
           "title": "Torneo",
-          "description": "La IA mira todo el torneo como una unidad: el recorrido a lo largo de los partidos, los patrones llamativos y lo que marcó la diferencia al final."
+          "description": "Todo el torneo como un conjunto – y qué lo decidió al final."
         }
       ],
-      "showcase": {
-        "imageOneLabel": "Ritmo del partido y eficacia por zonas de lanzamiento",
-        "imageTwoLabel": "Momentos clave, reparto de errores y rendimiento de los jugadores",
-        "openImage": "Abrir el análisis a tamaño completo",
-        "more": "Ver otro análisis"
-      }
+      "privacyNote": "Privacidad integrada: los nombres de los jugadores se seudonimizan antes de que los datos lleguen a una IA – y los informes se generan en segundo plano mientras sigues trabajando.",
+      "primaryCta": "Empezar gratis",
+      "secondaryCta": "Demo en directo – sin cuenta",
+      "note": "Informe de ejemplo con un equipo de demostración, mostrado con las pantallas de la app."
     },
     "pros": {
       "kicker": "Más allá del acta",
