@@ -171,15 +171,6 @@ export default function StatsBarSection({ stats }: { stats?: LiveStats | null })
             );
           })}
         </div>
-        {stats && (
-          <p className='mt-8 flex items-center justify-center gap-2 text-xs font-medium text-chalk/45'>
-            <span aria-hidden className='relative flex size-2'>
-              <span className='absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60 motion-reduce:hidden' />
-              <span className='relative inline-flex size-2 rounded-full bg-primary' />
-            </span>
-            {t('live.note')}
-          </p>
-        )}
       </div>
     </section>
   );
