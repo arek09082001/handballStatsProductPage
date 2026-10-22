@@ -7389,7 +7389,7 @@
     "title": "Analyse-Cookies",
     "description": "Wir nutzen Analyse-Cookies, um die Seite zu verbessern. Nur mit deiner Zustimmung.",
     "detailsToggle": "Details",
-    "details": "Anbieter ist PostHog (Server in der EU). Erfasst werden besuchte Seiten, Klicks und Scrollen, auch als Sitzungsaufzeichnung. Formulareingaben sind dabei unkenntlich. Ändern kannst du deine Wahl jederzeit im Footer unter „Cookie-Einstellungen“.",
+    "details": "Wir nutzen dafür PostHog mit Servern in der EU und sehen z. B., welche Seiten besucht und wo geklickt und gescrollt wird. Formulareingaben werden nicht erfasst. Deine Wahl kannst du jederzeit im Footer ändern.",
     "privacyLink": "Datenschutzerklärung",
     "reject": "Ablehnen",
     "accept": "Zustimmen"

@@ -7389,7 +7389,7 @@
     "title": "Analityczne pliki cookie",
     "description": "Używamy analitycznych plików cookie, aby ulepszać stronę. Tylko za Twoją zgodą.",
     "detailsToggle": "Szczegóły",
-    "details": "Dostawcą jest PostHog (serwery w UE). Rejestrowane są odwiedzone strony, kliknięcia i przewijanie, także jako nagranie sesji. Wpisy w formularzach są maskowane. Wybór możesz w każdej chwili zmienić w stopce w „Ustawieniach cookie”.",
+    "details": "Korzystamy z PostHog z serwerami w UE i widzimy np., które strony są odwiedzane oraz gdzie się klika i przewija. Wpisy w formularzach nie są zbierane. Wybór możesz w każdej chwili zmienić w stopce.",
     "privacyLink": "Polityka prywatności",
     "reject": "Odrzuć",
     "accept": "Zgadzam się"

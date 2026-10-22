@@ -7389,7 +7389,7 @@
     "title": "Analytics cookies",
     "description": "We use analytics cookies to improve this site. Only with your consent.",
     "detailsToggle": "Details",
-    "details": "The provider is PostHog (servers in the EU). It records pages visited, clicks and scrolling, including as a session recording. Anything typed into forms is masked. You can change your choice at any time via “Cookie settings” in the footer.",
+    "details": "We use PostHog with servers in the EU and see, for example, which pages are visited and where people click and scroll. Form entries are not captured. You can change your choice at any time in the footer.",
     "privacyLink": "Privacy policy",
     "reject": "Decline",
     "accept": "Accept"

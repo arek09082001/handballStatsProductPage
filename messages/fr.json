@@ -7389,7 +7389,7 @@
     "title": "Cookies d’analyse",
     "description": "Nous utilisons des cookies d’analyse pour améliorer le site. Uniquement avec votre accord.",
     "detailsToggle": "Détails",
-    "details": "Le fournisseur est PostHog (serveurs dans l’UE). Sont enregistrés les pages visitées, les clics et le défilement, y compris sous forme d’enregistrement de session. Les saisies dans les formulaires sont masquées. Vous pouvez modifier votre choix à tout moment via « Paramètres des cookies » en bas de page.",
+    "details": "Nous utilisons PostHog avec des serveurs dans l’UE et voyons par exemple quelles pages sont visitées et où l’on clique et fait défiler. Les saisies de formulaires ne sont pas collectées. Vous pouvez modifier votre choix à tout moment en bas de page.",
     "privacyLink": "Politique de confidentialité",
     "reject": "Refuser",
     "accept": "Accepter"
