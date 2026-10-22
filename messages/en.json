@@ -18,7 +18,8 @@
       "privacy": "Privacy",
       "agb": "Terms & Conditions",
       "newsletterUnsubscribe": "Unsubscribe from newsletter",
-      "llmsTxt": "llms.txt"
+      "llmsTxt": "llms.txt",
+      "consentSettings": "Cookie settings"
     },
     "preferredSource": {
       "kicker": "Reading Statix regularly?",
@@ -584,11 +585,47 @@
             "label": "Basis for third-country transfers:",
             "value": "Adequacy decision (EU-U.S. Data Privacy Framework) where the provider is certified, otherwise standard contractual clauses pursuant to Article 46(2)(c) GDPR."
           }
+        ],
+        "posthogTitle": "PostHog (product analytics and session recording)",
+        "posthogDescription": "Only if you agree in the consent banner do we use PostHog to understand how visitors use our website and where they run into difficulties. This records the pages viewed, clicks, scroll depth, time on page, the page on which the visit ends and technical details (browser, device type, screen size, approximate origin at country or city level). In addition, the visit is captured as a session recording: changes to the page as well as mouse movements, clicks and scrolling are recorded so that the visit can be replayed like a video. Anything typed into form fields is masked before transmission. IP addresses are anonymised by PostHog. The data is transmitted to PostHog via our own domain and processed on servers in the EU (Frankfurt am Main).",
+        "posthogItems": [
+          {
+            "label": "Service provider:",
+            "value": "PostHog Inc., 2261 Market St., #4008, San Francisco, CA 94114, USA; data processing in the EU cloud (Frankfurt am Main)."
+          },
+          {
+            "label": "Purpose of processing:",
+            "value": "Analysis of usage behaviour, identifying drop-off points and usability problems, improving content and user-friendliness."
+          },
+          {
+            "label": "Legal bases:",
+            "value": "Consent (Article 6(1)(1)(a) GDPR; section 25(1) TDDDG)."
+          },
+          {
+            "label": "Withdrawal:",
+            "value": "You can withdraw your consent at any time with effect for the future by clicking “Cookie settings” in the footer and choosing “Decline”. Recording stops immediately and the PostHog identifier on your device is deleted."
+          },
+          {
+            "label": "Storage period:",
+            "value": "Session recordings are deleted automatically after 30 days, usage events after 12 months at the latest."
+          },
+          {
+            "label": "Privacy policy:",
+            "url": "https://posthog.com/privacy"
+          },
+          {
+            "label": "Data processing agreement:",
+            "url": "https://posthog.com/dpa"
+          },
+          {
+            "label": "Basis for third-country transfers:",
+            "value": "The data is stored in the EU. Where the US provider accesses it in individual cases (e.g. for support), this is based on standard contractual clauses under Article 46(2)(c) GDPR."
+          }
         ]
       },
       "cookies": {
         "title": "Cookies and storage on your device",
-        "description": "The term cookies refers to functions that store information on users' devices and read information from them. We use exclusively cookies and storage techniques that are strictly necessary for the operation of the service you have expressly requested or that record a setting you have chosen yourself. Neither advertising nor tracking cookies are used. A consent banner is therefore not required (section 25(2) no. 2 TDDDG).",
+        "description": "The term cookies refers to functions that store information on users' devices and read information from them. Without your consent we use exclusively cookies and storage techniques that are strictly necessary for the operation of the service you have expressly requested or that record a setting you have chosen yourself (section 25(2) no. 2 TDDDG). Advertising cookies are not used. Only if you agree in the consent banner do we additionally use the analytics and session recording tool PostHog (section 25(1) TDDDG, see the section “PostHog”). You can withdraw your consent at any time via the “Cookie settings” link in the footer.",
         "tableTitle": "What is stored in concrete terms",
         "tableItems": [
           {
@@ -608,8 +645,16 @@
             "description": "Keeps match and squad data as well as program files available for offline use and remembers display settings such as the colour scheme or the view last selected. Remains on your device until you delete the app or browser data."
           },
           {
+            "title": "Your choice in the consent banner",
+            "description": "Records in local storage whether you accepted or declined analytics with PostHog, so that we do not ask again on every page. Remains on your device until you clear your browser data or change your choice."
+          },
+          {
+            "title": "PostHog (only with your consent)",
+            "description": "A cookie and a local storage entry (each starting with “ph_”) holding a randomly generated identifier, so that page views and the session recording can be attributed to one visit. Cookie lifetime 1 year. Deleted when you withdraw consent."
+          },
+          {
             "title": "No third-party cookies",
-            "description": "Reach measurement, map links and embedded content work without cookies. Only once you follow an external link (e.g. to Instagram or into a maps app) do the provisions of the provider there apply."
+            "description": "Vercel's reach measurement, map links and embedded content work without cookies; we set the PostHog cookie ourselves on our own domain. Only once you follow an external link (e.g. to Instagram or into a maps app) do the provisions of the provider there apply."
           }
         ],
         "storageDurationLabel": "Storage period:",
@@ -7339,5 +7384,12 @@
       "retryCta": "Try again",
       "help": "If the problem persists, please write to us."
     }
+  },
+  "consentBanner": {
+    "title": "May we learn from your visit?",
+    "description": "With your consent we use PostHog (servers in the EU) to understand how visitors use this site: which pages they view, where they leave and, as a session recording, how they scroll and click. Anything typed into forms is masked. You can change your choice at any time via “Cookie settings” in the footer.",
+    "privacyLink": "More in the privacy policy",
+    "reject": "Decline",
+    "accept": "Accept"
   }
 }

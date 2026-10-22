@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Footer from '@/components/custom-ui/footer';
 import { MAIN_CONTENT_ID, SiteNavbar, SkipLink } from '@/features/navigation';
+import { ConsentBanner } from '@/features/consent';
 import PageTransition from './page-transition';
 import ScrollToTop from './scroll-to-top';
 import { AnimatePresence } from 'framer-motion';
@@ -46,6 +47,9 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
           <Footer />
         </>
       )}
+      {/* Not on embeds: a banner inside a foreign page's iframe would be ours
+       * to answer for on their page, and widgets are not measured anyway. */}
+      <ConsentBanner />
     </div>
   );
 }

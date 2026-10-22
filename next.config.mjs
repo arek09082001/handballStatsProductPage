@@ -62,6 +62,30 @@ const baseConfig = {
    * `/ratgeber/handball-spielfeld-masse` bleibt unverändert bestehen und ist
    * hier bewusst nicht enthalten.
    */
+  // PostHog's ingestion endpoints expect trailing slashes as sent.
+  skipTrailingSlashRedirect: true,
+
+  /**
+   * PostHog (EU cloud) through our own domain, so ad blockers that list
+   * *.posthog.com do not silently drop events and replays. See lib/posthog.ts.
+   */
+  async rewrites() {
+    return [
+      {
+        source: '/ingest/static/:path*',
+        destination: 'https://eu-assets.i.posthog.com/static/:path*',
+      },
+      {
+        source: '/ingest/array/:path*',
+        destination: 'https://eu-assets.i.posthog.com/array/:path*',
+      },
+      {
+        source: '/ingest/:path*',
+        destination: 'https://eu.i.posthog.com/:path*',
+      },
+    ];
+  },
+
   async redirects() {
     const merged = {
       // Wurftraining planen

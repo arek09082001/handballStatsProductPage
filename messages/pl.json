@@ -18,7 +18,8 @@
       "privacy": "Prywatność",
       "agb": "Regulamin",
       "newsletterUnsubscribe": "Wypisz się z newslettera",
-      "llmsTxt": "llms.txt"
+      "llmsTxt": "llms.txt",
+      "consentSettings": "Ustawienia cookie"
     },
     "preferredSource": {
       "kicker": "Czytasz Statix regularnie?",
@@ -589,11 +590,47 @@
             "label": "Podstawa przekazywania do państw trzecich:",
             "value": "Decyzja stwierdzająca odpowiedni stopień ochrony (Ramy ochrony danych UE–USA), jeżeli dostawca posiada certyfikat, w pozostałych przypadkach standardowe klauzule umowne zgodnie z art. 46 ust. 2 lit. c RODO."
           }
+        ],
+        "posthogTitle": "PostHog (analiza produktu i nagrywanie sesji)",
+        "posthogDescription": "Tylko jeśli wyrażą Państwo zgodę w banerze, korzystamy z PostHog, aby zrozumieć, jak odwiedzający używają naszej strony i gdzie napotykają trudności. Rejestrowane są oglądane podstrony, kliknięcia, głębokość przewinięcia, czas pobytu, strona, na której kończy się wizyta, oraz dane techniczne (przeglądarka, typ urządzenia, rozmiar ekranu, przybliżone pochodzenie na poziomie kraju lub miasta). Ponadto wizyta jest zapisywana jako nagranie sesji: rejestrowane są zmiany strony oraz ruchy myszy, kliknięcia i przewijanie, tak aby przebieg wizyty można było odtworzyć jak film. Wpisy w polach formularzy są maskowane przed przesłaniem. Adresy IP są anonimizowane przez PostHog. Dane są przesyłane do PostHog przez naszą własną domenę i przetwarzane na serwerach w UE (Frankfurt nad Menem).",
+        "posthogItems": [
+          {
+            "label": "Dostawca:",
+            "value": "PostHog Inc., 2261 Market St., #4008, San Francisco, CA 94114, USA; przetwarzanie danych w chmurze UE (Frankfurt nad Menem)."
+          },
+          {
+            "label": "Cel przetwarzania:",
+            "value": "Analiza sposobu korzystania, wykrywanie miejsc rezygnacji i problemów z obsługą, ulepszanie treści i wygody korzystania."
+          },
+          {
+            "label": "Podstawy prawne:",
+            "value": "Zgoda (art. 6 ust. 1 zd. 1 lit. a RODO; § 25 ust. 1 TDDDG)."
+          },
+          {
+            "label": "Wycofanie zgody:",
+            "value": "Zgodę mogą Państwo w każdej chwili wycofać ze skutkiem na przyszłość, klikając w stopce „Ustawienia cookie” i wybierając „Odrzuć”. Nagrywanie kończy się natychmiast, a identyfikator PostHog na Państwa urządzeniu zostaje usunięty."
+          },
+          {
+            "label": "Okres przechowywania:",
+            "value": "Nagrania sesji są automatycznie usuwane po 30 dniach, zdarzenia dotyczące korzystania najpóźniej po 12 miesiącach."
+          },
+          {
+            "label": "Polityka prywatności:",
+            "url": "https://posthog.com/privacy"
+          },
+          {
+            "label": "Umowa powierzenia przetwarzania:",
+            "url": "https://posthog.com/dpa"
+          },
+          {
+            "label": "Podstawa przekazywania do państw trzecich:",
+            "value": "Dane są przechowywane w UE. Jeśli amerykański dostawca w pojedynczych przypadkach uzyskuje do nich dostęp (np. w ramach wsparcia), odbywa się to na podstawie standardowych klauzul umownych zgodnie z art. 46 ust. 2 lit. c RODO."
+          }
         ]
       },
       "cookies": {
         "title": "Pliki cookie i zapis danych w Państwa urządzeniu",
-        "description": "Pojęcie „pliki cookie” obejmuje funkcje zapisujące informacje w urządzeniach użytkowników i odczytujące z nich informacje. Stosujemy wyłącznie pliki cookie i techniki zapisu bezwzględnie konieczne do działania wyraźnie zamówionej przez Państwa usługi albo zapamiętujące wybrane przez Państwa ustawienie. Nie stosujemy plików cookie reklamowych ani śledzących. Dlatego baner zgody nie jest wymagany (§ 25 ust. 2 pkt 2 TDDDG).",
+        "description": "Pojęcie „pliki cookie” obejmuje funkcje zapisujące informacje w urządzeniach użytkowników i odczytujące z nich informacje. Bez Państwa zgody stosujemy wyłącznie pliki cookie i techniki zapisu bezwzględnie konieczne do działania wyraźnie zamówionej przez Państwa usługi albo zapamiętujące wybrane przez Państwa ustawienie (§ 25 ust. 2 pkt 2 TDDDG). Nie stosujemy plików cookie reklamowych. Tylko jeśli wyrażą Państwo zgodę w banerze, dodatkowo korzystamy z narzędzia do analizy i nagrywania sesji PostHog (§ 25 ust. 1 TDDDG, zob. punkt „PostHog”). Zgodę mogą Państwo w każdej chwili wycofać za pomocą linku „Ustawienia cookie” w stopce.",
         "tableTitle": "Co konkretnie jest zapisywane",
         "tableItems": [
           {
@@ -613,8 +650,16 @@
             "description": "Utrzymuje dostępne offline dane meczowe i kadrowe oraz pliki programu, a także zapamiętuje ustawienia wyświetlania, takie jak schemat kolorów czy ostatnio wybrany widok. Pozostaje w Państwa urządzeniu do czasu usunięcia aplikacji lub danych przeglądarki."
           },
           {
+            "title": "Państwa decyzja w banerze zgody",
+            "description": "Zapisuje w pamięci lokalnej, czy wyrazili Państwo zgodę na analizę za pomocą PostHog, czy ją odrzucili, abyśmy nie pytali ponownie na każdej stronie. Pozostaje na urządzeniu do czasu usunięcia danych przeglądarki lub zmiany decyzji."
+          },
+          {
+            "title": "PostHog (tylko za Państwa zgodą)",
+            "description": "Plik cookie i wpis w pamięci lokalnej (zaczynające się od „ph_”) z losowo wygenerowanym identyfikatorem, aby odsłony i nagranie sesji można było przypisać do jednej wizyty. Okres ważności pliku cookie: 1 rok. Usuwany po wycofaniu zgody."
+          },
+          {
             "title": "Brak plików cookie podmiotów trzecich",
-            "description": "Pomiar zasięgu, linki do map i osadzone treści działają bez plików cookie. Dopiero po przejściu przez link zewnętrzny (np. na Instagram lub do aplikacji map) obowiązują postanowienia tamtejszego dostawcy."
+            "description": "Pomiar zasięgu Vercel, linki do map i osadzone treści działają bez plików cookie; plik cookie PostHog ustawiamy sami w naszej własnej domenie. Dopiero po przejściu przez link zewnętrzny (np. na Instagram lub do aplikacji map) obowiązują postanowienia tamtejszego dostawcy."
           }
         ],
         "storageDurationLabel": "Okres przechowywania:",
@@ -7339,5 +7384,12 @@
       "retryCta": "Spróbuj ponownie",
       "help": "Jeśli problem się utrzymuje, napisz do nas."
     }
+  },
+  "consentBanner": {
+    "title": "Czy możemy uczyć się z Twojej wizyty?",
+    "description": "Za Twoją zgodą korzystamy z PostHog (serwery w UE), aby zrozumieć, jak odwiedzający korzystają ze strony: które podstrony oglądają, gdzie ją opuszczają oraz – w formie nagrania sesji – jak przewijają i klikają. Wpisy w formularzach są maskowane. Wybór możesz w każdej chwili zmienić w stopce w „Ustawieniach cookie”.",
+    "privacyLink": "Więcej w polityce prywatności",
+    "reject": "Odrzuć",
+    "accept": "Zgadzam się"
   }
 }

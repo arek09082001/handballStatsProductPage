@@ -57,6 +57,10 @@ export default function DatenschutzContent() {
     label: string;
     value?: string;
   }>;
+  const posthogItems = webHostingT.raw('posthogItems') as Array<{
+    label: string;
+    value?: string;
+  }>;
   const cookieTableItems = cookiesT.raw('tableItems') as Array<{
     title: string;
     description: string;
@@ -278,6 +282,19 @@ export default function DatenschutzContent() {
             <p className={`mt-4 ${bodyText}`}>{webHostingT('analyticsDescription')}</p>
             <LabelledList
               items={analyticsItems}
+              bodyText={bodyText}
+              linkClass={linkClass}
+            />
+          </div>
+
+          {/* PostHog — the consent banner links straight here. */}
+          <div id='posthog' className={`${subBlock} scroll-mt-28`}>
+            <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
+              {webHostingT('posthogTitle')}
+            </h3>
+            <p className={`mt-4 ${bodyText}`}>{webHostingT('posthogDescription')}</p>
+            <LabelledList
+              items={posthogItems}
               bodyText={bodyText}
               linkClass={linkClass}
             />

@@ -18,7 +18,8 @@
       "privacy": "Datenschutz",
       "agb": "AGB",
       "newsletterUnsubscribe": "Newsletter abmelden",
-      "llmsTxt": "llms.txt"
+      "llmsTxt": "llms.txt",
+      "consentSettings": "Cookie-Einstellungen"
     },
     "preferredSource": {
       "kicker": "Liest du Statix öfter?",
@@ -584,11 +585,47 @@
             "label": "Grundlage Drittlandtransfers:",
             "value": "Angemessenheitsbeschluss (EU-U.S. Data Privacy Framework), soweit der Anbieter zertifiziert ist, im Übrigen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
           }
+        ],
+        "posthogTitle": "PostHog (Produktanalyse und Sitzungsaufzeichnung)",
+        "posthogDescription": "Nur wenn Sie im Einwilligungsbanner zustimmen, nutzen wir PostHog, um zu verstehen, wie Besucher unsere Website verwenden und wo sie Schwierigkeiten haben. Dabei werden aufgerufene Seiten, Klicks, Scrolltiefe, Verweildauer, die Seite, auf der der Besuch endet, sowie technische Angaben (Browser, Gerätetyp, Bildschirmgröße, ungefähre Herkunft auf Länder- bzw. Stadtebene) erfasst. Zusätzlich wird der Besuch als Sitzungsaufzeichnung festgehalten: Aufgezeichnet werden Veränderungen der Seite und Mausbewegungen, Klicks und Scrollen, sodass sich der Ablauf wie ein Video nachvollziehen lässt. Eingaben in Formularfelder werden vor der Übertragung unkenntlich gemacht. IP-Adressen werden von PostHog anonymisiert. Die Daten werden über unsere eigene Domain an PostHog übermittelt und auf Servern in der EU (Frankfurt am Main) verarbeitet.",
+        "posthogItems": [
+          {
+            "label": "Dienstanbieter:",
+            "value": "PostHog Inc., 2261 Market St., #4008, San Francisco, CA 94114, USA; Datenverarbeitung in der EU-Cloud (Frankfurt am Main)."
+          },
+          {
+            "label": "Zweck der Verarbeitung:",
+            "value": "Analyse des Nutzungsverhaltens, Erkennen von Abbruchstellen und Bedienproblemen, Verbesserung von Inhalten und Nutzerfreundlichkeit."
+          },
+          {
+            "label": "Rechtsgrundlagen:",
+            "value": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO; § 25 Abs. 1 TDDDG)."
+          },
+          {
+            "label": "Widerruf:",
+            "value": "Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie im Footer auf „Cookie-Einstellungen“ klicken und „Ablehnen“ wählen. Die Aufzeichnung endet sofort, die PostHog-Kennung auf Ihrem Gerät wird gelöscht."
+          },
+          {
+            "label": "Speicherdauer:",
+            "value": "Sitzungsaufzeichnungen werden nach 30 Tagen automatisch gelöscht, Nutzungsereignisse spätestens nach 12 Monaten."
+          },
+          {
+            "label": "Datenschutzerklärung:",
+            "url": "https://posthog.com/privacy"
+          },
+          {
+            "label": "Auftragsverarbeitungsvertrag:",
+            "url": "https://posthog.com/dpa"
+          },
+          {
+            "label": "Grundlage Drittlandtransfers:",
+            "value": "Die Daten werden in der EU gespeichert. Soweit der US-Anbieter im Einzelfall darauf zugreift (z. B. für Support), erfolgt dies auf Grundlage von Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
+          }
         ]
       },
       "cookies": {
         "title": "Cookies und Speicherung auf dem Endgerät",
-        "description": "Unter dem Begriff Cookies werden Funktionen verstanden, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen. Wir setzen ausschließlich Cookies und Speichertechniken ein, die für den Betrieb des von Ihnen ausdrücklich gewünschten Dienstes unbedingt erforderlich sind oder eine von Ihnen selbst getroffene Einstellung festhalten. Weder Werbe- noch Tracking-Cookies kommen zum Einsatz. Ein Einwilligungsbanner ist deshalb nicht erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).",
+        "description": "Unter dem Begriff Cookies werden Funktionen verstanden, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen. Ohne Ihre Einwilligung setzen wir ausschließlich Cookies und Speichertechniken ein, die für den Betrieb des von Ihnen ausdrücklich gewünschten Dienstes unbedingt erforderlich sind oder eine von Ihnen selbst getroffene Einstellung festhalten (§ 25 Abs. 2 Nr. 2 TDDDG). Werbe-Cookies kommen nicht zum Einsatz. Nur wenn Sie im Einwilligungsbanner zustimmen, setzen wir zusätzlich das Analyse- und Sitzungsaufzeichnungswerkzeug PostHog ein (§ 25 Abs. 1 TDDDG, siehe Abschnitt „PostHog“). Ihre Einwilligung können Sie jederzeit über den Link „Cookie-Einstellungen“ im Footer widerrufen.",
         "tableTitle": "Was konkret gespeichert wird",
         "tableItems": [
           {
@@ -608,8 +645,16 @@
             "description": "Hält Spiel- und Kaderdaten sowie Programmdateien für die Offline-Nutzung vor und merkt sich Anzeigeeinstellungen wie das Farbschema oder die zuletzt gewählte Ansicht. Verbleibt auf Ihrem Gerät, bis Sie die App- bzw. Browserdaten löschen."
           },
           {
+            "title": "Ihre Entscheidung im Einwilligungsbanner",
+            "description": "Merkt sich im lokalen Speicher, ob Sie der Analyse mit PostHog zugestimmt oder sie abgelehnt haben, damit wir nicht bei jedem Seitenaufruf erneut fragen. Verbleibt auf Ihrem Gerät, bis Sie die Browserdaten löschen oder die Entscheidung ändern."
+          },
+          {
+            "title": "PostHog (nur mit Ihrer Einwilligung)",
+            "description": "Ein Cookie und ein Eintrag im lokalen Speicher (jeweils beginnend mit „ph_“) mit einer zufällig erzeugten Kennung, damit Seitenaufrufe und die Sitzungsaufzeichnung einem Besuch zugeordnet werden können. Laufzeit des Cookies 1 Jahr. Wird beim Widerruf gelöscht."
+          },
+          {
             "title": "Kein Einsatz von Drittanbieter-Cookies",
-            "description": "Reichweitenmessung, Kartenlinks und eingebettete Inhalte kommen ohne Cookies aus. Erst wenn Sie einem externen Link folgen (z. B. zu Instagram oder in eine Karten-App), gelten die Bestimmungen des dortigen Anbieters."
+            "description": "Die Reichweitenmessung von Vercel, Kartenlinks und eingebettete Inhalte kommen ohne Cookies aus; das PostHog-Cookie setzen wir selbst auf unserer Domain. Erst wenn Sie einem externen Link folgen (z. B. zu Instagram oder in eine Karten-App), gelten die Bestimmungen des dortigen Anbieters."
           }
         ],
         "storageDurationLabel": "Speicherdauer:",
@@ -7339,5 +7384,12 @@
       "retryCta": "Erneut versuchen",
       "help": "Wenn das Problem weiterhin besteht, schreib uns bitte."
     }
+  },
+  "consentBanner": {
+    "title": "Dürfen wir mitlernen?",
+    "description": "Mit deiner Zustimmung nutzen wir PostHog (Server in der EU), um zu verstehen, wie Besucher die Seite nutzen: welche Seiten sie ansehen, wo sie abspringen und – als Sitzungsaufzeichnung – wie sie scrollen und klicken. Eingaben in Formularen werden dabei unkenntlich gemacht. Du kannst deine Wahl jederzeit im Footer unter „Cookie-Einstellungen“ ändern.",
+    "privacyLink": "Mehr in der Datenschutzerklärung",
+    "reject": "Ablehnen",
+    "accept": "Zustimmen"
   }
 }
