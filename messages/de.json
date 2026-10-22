@@ -7386,9 +7386,11 @@
     }
   },
   "consentBanner": {
-    "title": "Dürfen wir mitlernen?",
-    "description": "Mit deiner Zustimmung nutzen wir PostHog (Server in der EU), um zu verstehen, wie Besucher die Seite nutzen: welche Seiten sie ansehen, wo sie abspringen und – als Sitzungsaufzeichnung – wie sie scrollen und klicken. Eingaben in Formularen werden dabei unkenntlich gemacht. Du kannst deine Wahl jederzeit im Footer unter „Cookie-Einstellungen“ ändern.",
-    "privacyLink": "Mehr in der Datenschutzerklärung",
+    "title": "Analyse-Cookies",
+    "description": "Wir nutzen Analyse-Cookies, um die Seite zu verbessern. Nur mit deiner Zustimmung.",
+    "detailsToggle": "Details",
+    "details": "Anbieter ist PostHog (Server in der EU). Erfasst werden besuchte Seiten, Klicks und Scrollen, auch als Sitzungsaufzeichnung. Formulareingaben sind dabei unkenntlich. Ändern kannst du deine Wahl jederzeit im Footer unter „Cookie-Einstellungen“.",
+    "privacyLink": "Datenschutzerklärung",
     "reject": "Ablehnen",
     "accept": "Zustimmen"
   }

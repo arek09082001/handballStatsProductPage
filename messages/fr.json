@@ -7386,9 +7386,11 @@
     }
   },
   "consentBanner": {
-    "title": "Pouvons-nous apprendre de votre visite ?",
-    "description": "Avec votre accord, nous utilisons PostHog (serveurs dans l’UE) pour comprendre comment ce site est utilisé : quelles pages sont consultées, où les visiteurs partent et, sous forme d’enregistrement de session, comment ils font défiler et cliquent. Les saisies dans les formulaires sont masquées. Vous pouvez modifier votre choix à tout moment via « Paramètres des cookies » en bas de page.",
-    "privacyLink": "En savoir plus dans la politique de confidentialité",
+    "title": "Cookies d’analyse",
+    "description": "Nous utilisons des cookies d’analyse pour améliorer le site. Uniquement avec votre accord.",
+    "detailsToggle": "Détails",
+    "details": "Le fournisseur est PostHog (serveurs dans l’UE). Sont enregistrés les pages visitées, les clics et le défilement, y compris sous forme d’enregistrement de session. Les saisies dans les formulaires sont masquées. Vous pouvez modifier votre choix à tout moment via « Paramètres des cookies » en bas de page.",
+    "privacyLink": "Politique de confidentialité",
     "reject": "Refuser",
     "accept": "Accepter"
   }

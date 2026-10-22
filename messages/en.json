@@ -7386,9 +7386,11 @@
     }
   },
   "consentBanner": {
-    "title": "May we learn from your visit?",
-    "description": "With your consent we use PostHog (servers in the EU) to understand how visitors use this site: which pages they view, where they leave and, as a session recording, how they scroll and click. Anything typed into forms is masked. You can change your choice at any time via “Cookie settings” in the footer.",
-    "privacyLink": "More in the privacy policy",
+    "title": "Analytics cookies",
+    "description": "We use analytics cookies to improve this site. Only with your consent.",
+    "detailsToggle": "Details",
+    "details": "The provider is PostHog (servers in the EU). It records pages visited, clicks and scrolling, including as a session recording. Anything typed into forms is masked. You can change your choice at any time via “Cookie settings” in the footer.",
+    "privacyLink": "Privacy policy",
     "reject": "Decline",
     "accept": "Accept"
   }

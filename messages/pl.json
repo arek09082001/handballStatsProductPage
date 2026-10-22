@@ -7386,9 +7386,11 @@
     }
   },
   "consentBanner": {
-    "title": "Czy możemy uczyć się z Twojej wizyty?",
-    "description": "Za Twoją zgodą korzystamy z PostHog (serwery w UE), aby zrozumieć, jak odwiedzający korzystają ze strony: które podstrony oglądają, gdzie ją opuszczają oraz – w formie nagrania sesji – jak przewijają i klikają. Wpisy w formularzach są maskowane. Wybór możesz w każdej chwili zmienić w stopce w „Ustawieniach cookie”.",
-    "privacyLink": "Więcej w polityce prywatności",
+    "title": "Analityczne pliki cookie",
+    "description": "Używamy analitycznych plików cookie, aby ulepszać stronę. Tylko za Twoją zgodą.",
+    "detailsToggle": "Szczegóły",
+    "details": "Dostawcą jest PostHog (serwery w UE). Rejestrowane są odwiedzone strony, kliknięcia i przewijanie, także jako nagranie sesji. Wpisy w formularzach są maskowane. Wybór możesz w każdej chwili zmienić w stopce w „Ustawieniach cookie”.",
+    "privacyLink": "Polityka prywatności",
     "reject": "Odrzuć",
     "accept": "Zgadzam się"
   }

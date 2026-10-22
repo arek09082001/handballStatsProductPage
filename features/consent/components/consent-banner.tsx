@@ -57,21 +57,31 @@ export default function ConsentBanner() {
       role='dialog'
       aria-modal='false'
       aria-labelledby='consent-banner-title'
-      className='fixed inset-x-4 bottom-4 z-[60] mx-auto max-w-xl rounded-lg border border-ink/10 bg-paper p-5 text-ink shadow-[0_18px_44px_-20px_hsl(var(--ink)/0.45)] sm:p-6'>
+      className='fixed inset-x-4 bottom-4 z-[60] mx-auto max-w-xl rounded-lg border border-ink/10 bg-paper p-4 text-ink shadow-[0_18px_44px_-20px_hsl(var(--ink)/0.45)] sm:p-5'>
       <h2
         id='consent-banner-title'
         className='font-display text-base font-bold tracking-tight'>
         {t('title')}
       </h2>
-      <p className='mt-2 text-sm leading-relaxed text-ink/75'>
-        {t('description')}{' '}
-        <Link
-          href='/datenschutz#posthog'
-          className='font-semibold text-ink underline underline-offset-4'>
-          {t('privacyLink')}
-        </Link>
+      <p className='mt-1.5 text-sm leading-relaxed text-ink/75'>
+        {t('description')}
       </p>
-      <div className='mt-4 flex flex-wrap gap-3'>
+      {/* Provider and replay details sit one click away: the purpose has to be
+       * on the first layer for the consent to count, the rest may fold. */}
+      <details className='group mt-2 text-sm text-ink/75'>
+        <summary className='cursor-pointer select-none font-semibold text-ink underline underline-offset-4 marker:content-none'>
+          {t('detailsToggle')}
+        </summary>
+        <p className='mt-2 leading-relaxed'>
+          {t('details')}{' '}
+          <Link
+            href='/datenschutz#posthog'
+            className='font-semibold text-ink underline underline-offset-4'>
+            {t('privacyLink')}
+          </Link>
+        </p>
+      </details>
+      <div className='mt-3 flex flex-wrap gap-3'>
         <button type='button' className={buttonClass} onClick={() => choose('denied')}>
           {t('reject')}
         </button>
