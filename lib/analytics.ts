@@ -1,4 +1,15 @@
-import { track } from '@vercel/analytics';
+import { track as vercelTrack } from '@vercel/analytics';
+import { capturePostHog } from '@/lib/posthog';
+
+/**
+ * Every custom event goes to Vercel Analytics (cookieless, always on) and to
+ * PostHog (only after consent), so funnels and replays there can filter on
+ * the same conversions.
+ */
+function track(event: string, properties?: Record<string, string>) {
+  vercelTrack(event, properties);
+  capturePostHog(event, properties);
+}
 
 export type DemoClickLocation =
   | 'hero'

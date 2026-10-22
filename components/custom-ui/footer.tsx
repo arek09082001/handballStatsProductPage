@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Mail, MapPin, UserPlus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { openConsentSettings } from '@/features/consent';
 import { trackDemoClick, trackRegisterClick } from '@/lib/analytics';
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { siteLinkGroups } from '@/features/navigation';
@@ -185,6 +186,16 @@ export default function Footer() {
                 {t(`legal.${link.labelKey}`)}
               </Link>
             ))}
+
+            {/* A button, not a link: it reopens the consent banner in place so
+             * a visitor can withdraw (or give) consent as easily as on the
+             * first visit. */}
+            <button
+              type='button'
+              onClick={openConsentSettings}
+              className='inline-flex min-h-6 items-center rounded-sm underline-offset-4 transition-colors duration-300 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-court'>
+              {t('legal.consentSettings')}
+            </button>
 
             {/* Plain anchor, not `Link`: /llms.txt is a route handler, not a
              * page, so there is nothing for the client router to prefetch. The

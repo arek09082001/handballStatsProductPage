@@ -18,7 +18,8 @@
       "privacy": "Privacidad",
       "agb": "Condiciones",
       "newsletterUnsubscribe": "Darse de baja del boletín",
-      "llmsTxt": "llms.txt"
+      "llmsTxt": "llms.txt",
+      "consentSettings": "Configuración de cookies"
     },
     "preferredSource": {
       "kicker": "¿Lees Statix a menudo?",
@@ -589,11 +590,47 @@
             "label": "Base para las transferencias a terceros países:",
             "value": "Decisión de adecuación (Marco de Privacidad de Datos UE-EE. UU.) cuando el proveedor está certificado y, en caso contrario, cláusulas contractuales tipo conforme al artículo 46, apartado 2, letra c), del RGPD."
           }
+        ],
+        "posthogTitle": "PostHog (análisis de producto y grabación de sesiones)",
+        "posthogDescription": "Solo si usted lo acepta en el banner de consentimiento utilizamos PostHog para entender cómo usan los visitantes nuestro sitio web y dónde encuentran dificultades. Se registran las páginas vistas, los clics, la profundidad de desplazamiento, el tiempo de permanencia, la página en la que termina la visita y datos técnicos (navegador, tipo de dispositivo, tamaño de pantalla, procedencia aproximada a nivel de país o ciudad). Además, la visita se registra como grabación de sesión: se graban los cambios de la página y los movimientos del ratón, los clics y el desplazamiento, de modo que la visita puede reproducirse como un vídeo. Lo que se escribe en los campos de formulario se oculta antes de la transmisión. PostHog anonimiza las direcciones IP. Los datos se transmiten a PostHog a través de nuestro propio dominio y se tratan en servidores de la UE (Fráncfort del Meno).",
+        "posthogItems": [
+          {
+            "label": "Proveedor del servicio:",
+            "value": "PostHog Inc., 2261 Market St., #4008, San Francisco, CA 94114, EE. UU.; tratamiento de datos en la nube de la UE (Fráncfort del Meno)."
+          },
+          {
+            "label": "Finalidad del tratamiento:",
+            "value": "Análisis del comportamiento de uso, detección de puntos de abandono y problemas de usabilidad, mejora de los contenidos y de la facilidad de uso."
+          },
+          {
+            "label": "Bases jurídicas:",
+            "value": "Consentimiento (art. 6, apdo. 1, frase 1, letra a) RGPD; § 25, apdo. 1 TDDDG)."
+          },
+          {
+            "label": "Revocación:",
+            "value": "Puede revocar su consentimiento en cualquier momento con efecto para el futuro haciendo clic en «Configuración de cookies» en el pie de página y eligiendo «Rechazar». La grabación se detiene de inmediato y se elimina el identificador de PostHog de su dispositivo."
+          },
+          {
+            "label": "Plazo de conservación:",
+            "value": "Las grabaciones de sesión se eliminan automáticamente a los 30 días; los eventos de uso, a más tardar a los 12 meses."
+          },
+          {
+            "label": "Política de privacidad:",
+            "url": "https://posthog.com/privacy"
+          },
+          {
+            "label": "Contrato de encargo del tratamiento:",
+            "url": "https://posthog.com/dpa"
+          },
+          {
+            "label": "Base de las transferencias a terceros países:",
+            "value": "Los datos se almacenan en la UE. Cuando el proveedor estadounidense accede a ellos en casos concretos (p. ej., para soporte), lo hace sobre la base de cláusulas contractuales tipo conforme al art. 46, apdo. 2, letra c) RGPD."
+          }
         ]
       },
       "cookies": {
         "title": "Cookies y almacenamiento en su dispositivo",
-        "description": "El término cookies designa funciones que almacenan información en los dispositivos de los usuarios y leen información de ellos. Utilizamos exclusivamente cookies y técnicas de almacenamiento estrictamente necesarias para el funcionamiento del servicio que usted ha solicitado expresamente o que registran un ajuste elegido por usted mismo. No se emplean cookies publicitarias ni de seguimiento. Por ello no se requiere un banner de consentimiento (§ 25, apdo. 2, n.º 2 de la TDDDG).",
+        "description": "Por cookies se entienden las funciones que almacenan información en los dispositivos de los usuarios y la leen de ellos. Sin su consentimiento utilizamos exclusivamente cookies y técnicas de almacenamiento estrictamente necesarias para el funcionamiento del servicio que usted ha solicitado expresamente o que guardan un ajuste elegido por usted (§ 25, apdo. 2, n.º 2 TDDDG). No se utilizan cookies publicitarias. Solo si usted lo acepta en el banner de consentimiento utilizamos además la herramienta de análisis y grabación de sesiones PostHog (§ 25, apdo. 1 TDDDG; véase el apartado «PostHog»). Puede revocar su consentimiento en cualquier momento mediante el enlace «Configuración de cookies» del pie de página.",
         "tableTitle": "Qué se almacena concretamente",
         "tableItems": [
           {
@@ -613,8 +650,16 @@
             "description": "Mantiene disponibles sin conexión los datos de partidos y plantillas, así como los archivos del programa, y recuerda ajustes de visualización como el esquema de color o la última vista seleccionada. Permanece en su dispositivo hasta que elimine la aplicación o los datos del navegador."
           },
           {
+            "title": "Su decisión en el banner de consentimiento",
+            "description": "Guarda en el almacenamiento local si ha aceptado o rechazado el análisis con PostHog, para no volver a preguntarle en cada página. Permanece en su dispositivo hasta que borre los datos del navegador o cambie su decisión."
+          },
+          {
+            "title": "PostHog (solo con su consentimiento)",
+            "description": "Una cookie y una entrada en el almacenamiento local (que empiezan por «ph_») con un identificador generado aleatoriamente, para poder asignar las páginas vistas y la grabación de sesión a una misma visita. Duración de la cookie: 1 año. Se elimina al revocar el consentimiento."
+          },
+          {
             "title": "Sin cookies de terceros",
-            "description": "La medición del alcance, los enlaces a mapas y los contenidos integrados funcionan sin cookies. Solo cuando sigue un enlace externo (p. ej. a Instagram o a una aplicación de mapas) se aplican las disposiciones del proveedor correspondiente."
+            "description": "La medición de audiencia de Vercel, los enlaces a mapas y los contenidos incrustados funcionan sin cookies; la cookie de PostHog la establecemos nosotros en nuestro propio dominio. Solo cuando usted sigue un enlace externo (p. ej., a Instagram o a una aplicación de mapas) se aplican las condiciones del proveedor correspondiente."
           }
         ],
         "storageDurationLabel": "Plazo de conservación:",
@@ -7339,5 +7384,14 @@
       "retryCta": "Intentar de nuevo",
       "help": "Si el problema continúa, escríbenos."
     }
+  },
+  "consentBanner": {
+    "title": "Cookies de análisis",
+    "description": "Usamos cookies de análisis para mejorar el sitio. Solo con tu consentimiento.",
+    "detailsToggle": "Detalles",
+    "details": "Usamos PostHog con servidores en la UE y vemos, por ejemplo, qué páginas se visitan y dónde se hace clic y se desplaza. No se registran los datos de formularios. Puedes cambiar tu elección en cualquier momento en el pie de página.",
+    "privacyLink": "Política de privacidad",
+    "reject": "Rechazar",
+    "accept": "Aceptar"
   }
 }
