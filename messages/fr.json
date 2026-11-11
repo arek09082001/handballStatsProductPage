@@ -58,7 +58,7 @@
       "title": "Préambule",
       "paragraph1": "Les présentes conditions générales d’utilisation (les « CGU ») régissent la relation contractuelle entre vous en qualité d’utilisateur (l’« Utilisateur » ou « vous ») et le fournisseur, concernant l’utilisation de l’application de statistiques de handball « Statix » ainsi que des sites web associés, de l’application web progressive et des services liés (ensemble, « Statix » ou le « Service »).",
       "paragraph2": "Tous les termes et désignations employés dans les présentes CGU s’entendent de manière neutre du point de vue du genre.",
-      "updatedAt": "Version : 5 octobre 2026"
+      "updatedAt": "Version : 11 novembre 2026"
     },
     "sections": {
       "scope": {
@@ -87,7 +87,8 @@
           "Analyse automatisée, assistée par intelligence artificielle, des matchs, des équipes et des joueurs pris individuellement.",
           "Diffusion publique facultative d’un match (« live ticker ») via un lien impossible à deviner, le cas échéant avec des logos de sponsors.",
           "Partage des analyses par lien, export de la feuille de match en PDF et export de tableaux statistiques en CSV.",
-          "Fonction vidéo : téléversement d’enregistrements de matchs et d’entraînements, marquage de scènes, envoi de compilations à des joueuses et joueurs, et analyse automatique des trajets et des trajectoires du ballon (§ 10).",
+          "Fonctions vidéo (selon le niveau vidéo souscrit) : import d’enregistrements de matchs et d’entraînements, marquage de scènes, envoi de montages à des joueuses et joueurs, assemblage de deux angles de caméra en panorama, cadrage qui suit le jeu, incrustation du score et – au niveau analyse – analyse automatique des déplacements et des trajectoires du ballon (§ 10).",
+          "Diffusion en direct (à partir du niveau vidéo « Team ») : diffusion d’un match avec jusqu’à deux caméras de smartphone appairées, au choix publiquement en livestream, et reprise de l’enregistrement dans la vidéothèque (§ 10).",
           "Caisse de l’équipe avec barème d’amendes, gestion des maillots et rappels d’anniversaires.",
           "Corbeille : les matchs, membres de l’effectif, tournois et équipes supprimés peuvent être restaurés pendant 30 jours (§ 12).",
           "Export des données : copie de toutes ses propres données ou – pour l’entraîneur principal – de toutes les données de l’équipe sous forme d’archive dans un format lisible par machine (§ 12)."
@@ -139,11 +140,15 @@
       "pricing": {
         "title": "§ 6 Prestations gratuites et payantes",
         "paragraphs": [
-          "Le Service est actuellement fourni à titre gratuit. Ni l’inscription ni les fonctions actuellement disponibles ne donnent lieu à des frais ; aucune obligation de paiement n’existe sans accord exprès et distinct.",
-          "Le fournisseur a l’intention de proposer à l’avenir des abonnements payants, en particulier pour les équipes et les clubs. L’étendue, les prix, les périodes de facturation et les détails des prestations d’un abonnement payant résultent de l’aperçu des prestations et des prix en vigueur au cours du processus de commande.",
-          "Un contrat payant n’est conclu que lorsque l’Utilisateur sélectionne expressément une prestation payante, confirme les informations tarifaires et achève le processus de commande au moyen d’un bouton portant une mention explicite d’obligation de paiement (§ 312j, al. 3 BGB). Avant la conclusion d’un tel contrat, l’Utilisateur est informé de tous les éléments essentiels du contrat, en particulier du prix total.",
-          "Tous les prix sont des prix définitifs. Le fournisseur facture la TVA uniquement dans la mesure où il y est tenu ; lorsque le régime des petites entreprises prévu au § 19 de la loi allemande relative à la TVA (UStG) s’applique, aucune TVA n’est indiquée et une mention correspondante figure sur la facture.",
-          "Les comptes gratuits existants ne deviennent pas automatiquement payants lors de l’introduction de prestations payantes. Si une fonction jusque-là gratuite ne devait à l’avenir être disponible que contre paiement, le fournisseur l’annoncerait dans un délai raisonnable ; le § 16 demeure inchangé."
+          "Statix est proposé dans un niveau de base gratuit et, à partir du 1er janvier 2027, également dans des niveaux payants (niveaux app et niveaux vidéo). L’étendue, les prix, les contingents (p. ex. stockage vidéo et crédits de calcul inclus) et les périodes de facturation résultent de la grille tarifaire sur les sites du fournisseur et du processus de commande dans leur version en vigueur à la conclusion du contrat.",
+          "Un contrat payant n’est conclu que lorsque l’utilisateur sélectionne expressément une prestation payante, confirme les prix et finalise la commande au moyen d’un bouton expressément désigné comme entraînant une obligation de paiement (§ 312j al. 3 BGB). Avant la conclusion, l’utilisateur est informé de tous les éléments essentiels du contrat, notamment du prix total.",
+          "Le paiement s’effectue d’avance via le prestataire de paiement Stripe avec les moyens de paiement proposés lors de la commande (p. ex. carte bancaire, prélèvement SEPA, PayPal). Les factures sont mises à disposition sous forme électronique et consultables dans l’app sous Paramètres → Offre et facturation.",
+          "Tous les prix sont des prix finaux. Le fournisseur n’indique la TVA que s’il y est tenu ; si le régime des petites entreprises du § 19 UStG s’applique, aucune TVA n’est indiquée et la facture comporte une mention en ce sens.",
+          "Les niveaux payants sont souscrits par l’entraîneuse ou l’entraîneur principal d’une équipe. Le niveau souscrit s’applique aux équipes dont cette personne est entraîneuse ou entraîneur principal, y compris leur staff ; le stockage vidéo et les crédits de calcul forment une réserve commune.",
+          "Les fonctions vidéo intensives en calcul (p. ex. panorama, version qui suit le jeu, réduction sur le serveur, score incrusté, panorama en direct par heure de diffusion entamée) consomment des crédits de calcul. Le coût d’une opération est affiché dans l’app avant son lancement. Les crédits inclus dans un niveau vidéo sont valables jusqu’à la fin de la saison (30 juin) pour laquelle ils ont été accordés ; les crédits achetés, jusqu’à la fin de la saison suivante. Les essais ainsi que les opérations échouées ou annulées ne consomment pas de crédits. Les crédits non utilisés expirent à la fin de leur validité et ne sont pas remboursés ; le droit de rétractation (§ 15) n’est pas affecté.",
+          "Si un paiement échoue, le niveau souscrit est maintenu pendant 14 jours. Si le paiement n’est pas régularisé d’ici là, l’équipe repasse au niveau de base.",
+          "Si un niveau payant prend fin ou est rétrogradé, les données sont conservées ; les équipes et fonctions dépassant le nouveau niveau passent en lecture seule. Par exception, les enregistrements vidéo peuvent encore être téléchargés pendant 30 jours après la fin d’un niveau vidéo, puis sont supprimés. Le fournisseur annonce la suppression par e-mail à la fin du niveau et sept jours auparavant.",
+          "Les comptes enregistrés avant le 1er janvier 2027 utilisent gratuitement le niveau app « Trainer » jusqu’au 30 juin 2027 ; les conditions du prix fondateur figurent dans la grille tarifaire. Les comptes gratuits existants ne deviennent pas automatiquement payants. Si une fonction jusqu’ici gratuite n’est plus proposée qu’à titre payant, le fournisseur en informe avec un préavis raisonnable ; le § 16 n’est pas affecté."
         ],
         "items": []
       },
@@ -175,11 +180,12 @@
           "Anthropic et OpenAI – analyses assistées par IA sur la base de données pseudonymisées",
           "Les services push des éditeurs de navigateurs (notamment Google, Mozilla, Apple) – distribution des notifications push activées",
           "Cloudflare – stockage d’objets (Cloudflare R2) pour les enregistrements vidéo, exclusivement dans des centres de données de l’Union européenne (uniquement en cas d’utilisation de la fonction vidéo)",
-          "Fly.io – préparation des enregistrements vidéo téléversés à Francfort-sur-le-Main (uniquement en cas d’utilisation de la fonction vidéo)",
-          "RunPod – traitement et analyse vidéo gourmands en calcul sur des processeurs graphiques dans des centres de données de l’Union européenne (uniquement en cas d’utilisation de la fonction vidéo)"
+          "Fly.io – préparation des enregistrements vidéo importés et assemblage des diffusions en direct enregistrées à Francfort-sur-le-Main (uniquement en cas d’utilisation de la fonction vidéo)",
+          "RunPod – traitement et analyse vidéo intensifs en calcul ainsi qu’assemblage des images des caméras pendant une diffusion en direct sur processeurs graphiques, exclusivement dans des centres de données de l’Union européenne (uniquement en cas d’utilisation de la fonction vidéo)"
         ],
         "paragraphsAfter": [
           "Le recours à certains prestataires peut entraîner un transfert de données vers des pays tiers (en particulier les États-Unis). Le fournisseur fonde de tels transferts sur une décision d’adéquation de la Commission européenne (cadre de protection des données UE–États-Unis) lorsque le prestataire concerné est certifié et, à défaut, sur des clauses contractuelles types conformes à l’article 46, paragraphe 2, point c), du RGPD. La politique de confidentialité contient de plus amples informations.",
+          "Pour les offres payantes, le fournisseur transmet les données contractuelles et de paiement nécessaires de la personne qui souscrit à Stripe (Stripe Payments Europe, Ltd., Irlande) et – en cas de paiement par PayPal – à PayPal (Europe) S.à r.l. et Cie, S.C.A., Luxembourg, qui les traitent sous leur propre responsabilité. Aucune donnée de joueuses ou joueurs n’est transmise.",
           "Le fournisseur informe l’Utilisateur sous forme de texte au moins 30 jours avant de faire appel à un nouveau sous-traitant ultérieur ; l’Utilisateur peut s’opposer à ce changement pour des motifs importants tenant à la protection des données."
         ]
       },
@@ -204,8 +210,10 @@
           "Le partage peut être interrompu à tout moment ; le lien n’est alors plus accessible. Le fournisseur n’a aucune influence sur le fait que des tiers aient copié, enregistré ou mis en cache dans des moteurs de recherche des contenus auparavant publics.",
           "Les logos de sponsors téléversés par l’Utilisateur pour le live ticker doivent être libres de droits de tiers ou faire l’objet d’une autorisation d’utilisation correspondante. Le § 7, al. 5 s’applique en conséquence.",
           "Si l’utilisateur téléverse des enregistrements vidéo, il garantit que l’enregistrement a été réalisé licitement et qu’il peut l’utiliser aux fins visées au § 2. Avant le téléversement, il recueille les consentements nécessaires des joueuses et joueurs filmés – pour les mineurs ceux des titulaires de l’autorité parentale – et respecte les droits des autres personnes enregistrées (adversaires, arbitres, spectateurs) ainsi que les éventuelles prescriptions de l’exploitant de la salle et de la fédération. Le prestataire stocke et traite les enregistrements exclusivement pour le compte de l’utilisateur (§ 8).",
+          "À partir du niveau vidéo « Team », l’utilisateur peut diffuser un match en direct avec des caméras de smartphone appairées et rendre la diffusion publique. Un livestream public montre toutes les personnes à l’image et – sauf désactivation – le son de la salle. Avant la publication, l’utilisateur s’assure de disposer d’une base juridique à l’égard de toutes les personnes enregistrées, notamment du consentement des joueuses et joueurs ou de leurs représentants légaux, et utilise si nécessaire les fonctions de protection proposées (couper le son ou le limiter à l’ambiance, flouter des zones). Une diffusion d’essai n’est jamais publique.",
+          "Au niveau analyse, Statix détecte automatiquement les personnes, le ballon et les numéros de maillot à l’image. Il n’y a ni reconnaissance faciale ni identification de personnes d’un enregistrement à l’autre ; l’utilisateur décide à quelle personne appartient une trajectoire détectée.",
           "Les compilations que l’utilisateur envoie à des joueuses et joueurs ne rendent accessibles que les scènes qu’elles contiennent. L’utilisateur décide des scènes qu’il envoie et en porte la responsabilité.",
-          "Les enregistrements vidéo ne sont soumis à aucun délai de suppression automatique ; ils restent stockés jusqu’à ce que l’utilisateur les supprime ou que l’équipe soit définitivement supprimée. L’utilisateur supprime les enregistrements dès que la finalité de l’analyse est atteinte. Le prestataire se réserve le droit d’introduire un quota de stockage ou une durée maximale de conservation pour les enregistrements vidéo ; il l’annoncera au moins 30 jours à l’avance sous forme de texte."
+          "Les enregistrements vidéo sont conservés jusqu’à leur suppression par l’utilisateur, au plus tard jusqu’à la fin du niveau vidéo (§ 6) ou jusqu’à la suppression définitive de l’équipe. Les enregistrements supprimés restent 30 jours dans la corbeille. Le stockage vidéo est limité par niveau ; une fois plein, de nouveaux imports ne sont possibles qu’après suppression d’enregistrements ou changement de niveau. Les segments d’une diffusion en direct sont supprimés 30 jours, ceux d’une diffusion d’essai 7 jours après leur fin. L’utilisateur supprime les enregistrements dès que la finalité de l’analyse est atteinte."
         ],
         "items": []
       },
@@ -216,7 +224,7 @@
           "Pour la durée du contrat, le fournisseur accorde à l’Utilisateur un droit d’utilisation simple, non exclusif, non cessible et non susceptible de sous-licence sur Statix, dans le cadre contractuellement prévu.",
           "L’Utilisateur conserve tous les droits sur les contenus et données qu’il saisit. Il accorde au fournisseur le droit d’utilisation simple nécessaire à la fourniture du Service, en particulier pour enregistrer, traiter, analyser et afficher ces contenus au sein du Service. Ce droit d’utilisation prend fin lors de la suppression du contenu concerné.",
           "Le fournisseur peut utiliser des données sous une forme agrégée et anonymisée, ne permettant aucune conclusion sur des personnes, des équipes ou des clubs déterminés, afin d’améliorer le Service et de l’évaluer statistiquement.",
-          "Les contenus de l’Utilisateur ne sont pas utilisés pour entraîner des modèles d’IA du fournisseur ou de tiers."
+          "Les contenus de l’utilisateur ne sont pas utilisés pour entraîner des modèles d’IA généraux du fournisseur ou de tiers. Seule exception : le réentraînement de la reconnaissance d’image pour sa propre équipe, déclenché expressément par l’utilisateur ; le modèle obtenu est utilisé exclusivement pour cette équipe et supprimé avec elle."
         ],
         "items": []
       },
@@ -248,7 +256,8 @@
         "title": "§ 14 Durée du contrat et résiliation",
         "paragraphs": [
           "Le contrat d’utilisation pour l’usage gratuit est conclu pour une durée indéterminée et peut être résilié par chacune des parties à tout moment sans préavis, notamment par la suppression du compte utilisateur. La résiliation par suppression du compte prend effet à l’expiration du délai de grâce prévu au § 12, al. 4 ; jusque-là, l’utilisateur peut la retirer en se connectant.",
-          "La durée, la reconduction et la résiliation d’un éventuel abonnement payant sont régies par les conditions indiquées lors du processus de commande correspondant. Lorsqu’une obligation continue payante est proposée à des consommateurs, le fournisseur met à disposition un bouton de résiliation conformément au § 312k BGB.",
+          "Les niveaux payants peuvent être souscrits sous forme d’abonnement mensuel ou de saison. L’abonnement mensuel est reconduit de mois en mois et peut être résilié à tout moment pour la fin du mois en cours. L’abonnement de saison court jusqu’à la fin de la saison en cours (30 juin) et est reconduit pour une saison supplémentaire s’il n’est pas résilié avant la fin de la saison en cours. Les consommateurs peuvent résilier à tout moment un abonnement de saison ainsi reconduit avec un préavis d’un mois ; le fournisseur rembourse au prorata les sommes payées d’avance pour la période postérieure à la prise d’effet de la résiliation.",
+          "La résiliation est possible à tout moment dans l’app via le bouton « Résilier le contrat » sous Paramètres → Offre et facturation (§ 312k BGB) ou sous forme textuelle. Les rétrogradations prennent effet à la fin de la période de facturation en cours.",
           "Le droit de résiliation extraordinaire pour motif grave demeure inchangé pour les deux parties. Pour le fournisseur, un motif grave existe notamment en cas de violation substantielle des présentes CGU par l’Utilisateur.",
           "Les résiliations requièrent la forme textuelle (p. ex. par e-mail) ; la suppression du compte dans l’application suffit."
         ],
@@ -427,7 +436,8 @@
           "Métadonnées, données de communication et de procédure (p. ex. adresses IP, informations sur l’appareil et le navigateur)",
           "Données de journalisation (p. ex. journaux techniques d’erreurs)",
           "Données d’image et de vidéo (photos-portraits des membres de l’effectif et du staff ; en cas d’utilisation de la fonction vidéo, enregistrements de matchs et d’entraînements avec piste audio et données de mouvement qui en sont dérivées, comme les trajets, distances et trajectoires du ballon)",
-          "Données de la caisse de l’équipe (barème d’amendes, amendes infligées, montants, statut de paiement)"
+          "Données de la caisse de l’équipe (barème d’amendes, amendes infligées, montants, statut de paiement)",
+          "Données contractuelles et de paiement (p. ex. niveau souscrit, adresse de facturation, statut du paiement, crédits de calcul) – uniquement pour les offres payantes"
         ],
         "affectedPeopleTitle": "Catégories de personnes concernées",
         "affectedPeople": [
@@ -455,7 +465,8 @@
           "Stockage, préparation et analyse d’enregistrements vidéo et envoi de scènes individuelles aux joueuses et joueurs (uniquement si la fonction vidéo est activée)",
           "Tenue de la caisse de l’équipe, gestion des maillots et rappels d’anniversaires",
           "Récupérabilité des données supprimées par erreur (corbeille) et fourniture de copies de données (accès et portabilité)",
-          "Communications contractuelles (p. ex. modifications de la présente déclaration ou des conditions générales)"
+          "Communications contractuelles (p. ex. modifications de la présente déclaration ou des conditions générales)",
+          "Gestion des offres payantes, y compris facturation et traitement des paiements"
         ]
       },
       "legalBasis": {
@@ -1176,13 +1187,15 @@
               "Les équipes peuvent téléverser des enregistrements de leurs matchs et entraînements pour marquer des scènes, analyser des joueuses et joueurs et leur envoyer des compilations. La fonction vidéo est facultative ; sans enregistrement téléversé, aucun des traitements décrits ici n’a lieu.",
               "Stockage : les enregistrements et les fichiers de segments qui en sont générés sont conservés dans un stockage d’objets non public du prestataire Cloudflare (Cloudflare R2). La zone de stockage est créée exclusivement pour des centres de données de l’Union européenne (désignation « jurisdiction: EU ») ; chaque consultation passe par une adresse signée à durée limitée que l’application ne génère qu’après vérification de l’autorisation. Les noms, les marqueurs et l’affectation à l’équipe et au match restent dans notre base de données ; le stockage vidéo ne les connaît pas.",
               "Préparation : après le téléversement, l’enregistrement est découpé en segments courts et converti pour la lecture. Cette étape est assurée par une instance de calcul du prestataire Fly.io à Francfort-sur-le-Main, qui ne conserve le fichier en mémoire que pendant la durée du traitement et n’a aucun accès à notre base de données. Les étapes gourmandes en calcul – l’assemblage de deux perspectives de caméra en un panorama, la réduction d’enregistrements très volumineux et la détection automatique des trajets des joueuses et joueurs et du ballon – s’exécutent sur des processeurs graphiques du prestataire RunPod, exclusivement dans des centres de données de l’Union européenne et également sans stockage permanent ; l’instance est arrêtée après la tâche. Le résultat de l’analyse des trajets est constitué de trajectoires, de distances et de profils de vitesse que l’entraîneur attribue à une joueuse ou un joueur. Aucune reconnaissance faciale automatique n’a lieu.",
+              "Diffusion en direct : à partir du niveau vidéo « Team », une équipe peut diffuser un match en direct avec jusqu’à deux smartphones qu’elle appaire au match par QR code. Les smartphones envoient de courts segments d’image et – sauf si l’équipe coupe le son ou le limite à l’ambiance – de son vers le stockage vidéo ; jusqu’à confirmation, ils sont aussi conservés sur le smartphone. Sont également enregistrés un identifiant aléatoire de l’appareil, le niveau de batterie et l’orientation des smartphones. Avec deux smartphones, une instance de calcul RunPod dans l’UE assemble les images en continu ; des zones comme la tribune peuvent être floutées. Si l’équipe rend la diffusion publique, elle est accessible via un lien non devinable sans connexion ; l’appareil du spectateur charge les données vidéo directement depuis le stockage de Cloudflare via des adresses temporaires, Cloudflare traitant techniquement l’adresse IP à cet effet. Le comptage des spectateurs suit ce qui est décrit pour le ticker en direct. Après la fin, l’enregistrement est repris dans la vidéothèque.",
+              "Analyse automatique (niveau analyse uniquement) : les personnes, le ballon et les numéros de maillot sont détectés automatiquement sur des processeurs graphiques dans l’UE. Pour distinguer les personnes au sein d’un enregistrement, une caractéristique est dérivée de leur apparence ; elle n’est ni enregistrée avec un nom ni comparée d’un enregistrement à l’autre ; les visages ne sont pas reconnus. Les modèles s’exécutent sur l’instance de calcul elle-même, sans autre service. Si le staff marque des zones d’image pour réentraîner la détection, nous n’enregistrons que l’instant et le rectangle, pas d’image ; le modèle réentraîné est utilisé exclusivement pour cette équipe.",
               "Envois : un entraîneur peut envoyer à une joueuse ou un joueur disposant d’un compte une compilation de scènes sélectionnées. Le destinataire ne reçoit que les scènes contenues, pas l’enregistrement complet ; sont enregistrés le titre, la note ainsi que les dates d’envoi et de première ouverture.",
-              "Responsabilité : un enregistrement en salle montre régulièrement, outre sa propre équipe, des adversaires, des arbitres et des spectateurs. Le club, en tant que responsable du traitement, décide seul si et sur quelle base il est permis de filmer ; il recueille les consentements nécessaires – pour les mineurs ceux des titulaires de l’autorité parentale – et informe les personnes concernées. Nous ne traitons les enregistrements que sur instruction. Il n’existe actuellement aucun délai de suppression automatique pour les enregistrements vidéo : un enregistrement reste stocké jusqu’à ce que l’équipe le supprime ou que l’équipe elle-même soit définitivement supprimée. Nous recommandons de supprimer les enregistrements une fois l’analyse terminée."
+              "Responsabilité : un enregistrement en salle montre régulièrement, outre l’équipe, des adversaires, des arbitres et des spectateurs. Seul le club, en tant que responsable, décide s’il est permis de filmer ou de diffuser et sur quelle base ; il recueille les consentements nécessaires – pour les mineurs, ceux des représentants légaux – et informe les personnes concernées. Nous traitons les enregistrements exclusivement sur instruction. Les enregistrements sont conservés jusqu’à leur suppression par l’équipe, au plus tard 30 jours après la fin du niveau vidéo ; les enregistrements supprimés restent 30 jours dans la corbeille. Nous recommandons de les supprimer une fois l’analyse terminée."
             ],
             "items": [
               {
                 "label": "Types de données traitées :",
-                "value": "Données d’image et de vidéo (enregistrements avec piste audio, images fixes pour la calibration), données de mouvement (trajets, distances, vitesses, trajectoires du ballon), données de contenu (scènes marquées, notes), données d’utilisation (dates de téléversement, d’envoi et d’ouverture)."
+                "value": "Données d’image et vidéo (enregistrements avec son, diffusions en direct, images fixes de calibration), données de mouvement (déplacements, distances, vitesses, trajectoires du ballon), numéros de maillot reconnus automatiquement et caractéristiques d’apparence (uniquement au sein d’un enregistrement), données d’appareil et d’appairage des caméras de smartphone, données de contenu (scènes marquées, notes), données d’utilisation (moments d’import, d’envoi et d’ouverture)."
               },
               {
                 "label": "Personnes concernées :",
@@ -1210,7 +1223,7 @@
               },
               {
                 "label": "Prestataire, analyse vidéo (processeurs graphiques) :",
-                "value": "RunPod, Inc., Mount Laurel, États-Unis ; traitement exclusivement dans des centres de données de l’Union européenne."
+                "value": "RunPod, Inc., Mount Laurel, États-Unis ; traitement exclusivement dans des centres de données de l’Union européenne (France, Roumanie, Suède, Pays-Bas, Tchéquie)."
               },
               {
                 "label": "Politique de confidentialité, RunPod :",
@@ -1222,7 +1235,7 @@
               },
               {
                 "label": "Durée de conservation :",
-                "value": "Enregistrements jusqu’à leur suppression par l’équipe ou avec l’équipe ; résultats intermédiaires de la préparation et de l’analyse uniquement pendant la durée du traitement."
+                "value": "Enregistrements jusqu’à leur suppression par l’équipe, au plus tard 30 jours après la fin du niveau vidéo ; corbeille 30 jours ; segments d’une diffusion en direct 30 jours, d’une diffusion d’essai 7 jours après leur fin ; versions téléchargeables avec score incrusté 7 jours ; résultats intermédiaires uniquement pendant le traitement."
               }
             ]
           },
@@ -1275,6 +1288,47 @@
               {
                 "label": "Durée de conservation :",
                 "value": "L’archive est uniquement générée et délivrée, pas conservée ; la limite de fréquence expire au bout d’une heure."
+              }
+            ]
+          },
+          {
+            "title": "Offres payantes et traitement des paiements (Stripe)",
+            "paragraphs": [
+              "Lorsqu’une entraîneuse ou un entraîneur principal souscrit une offre payante, nous traitons les données contractuelles nécessaires : niveau souscrit, durée, adresse de facturation, statut du paiement, factures et solde de crédits de calcul. Nous traitons ces données en tant que responsable propre ; elles ne concernent que la personne qui souscrit, pas les joueuses et joueurs enregistrés.",
+              "Les paiements sont traités par le prestataire Stripe. Les données de paiement (p. ex. numéro de carte, IBAN) sont saisies sur une page de Stripe ; nous ne recevons pas les données complètes de carte ou de compte, seulement un identifiant du moyen de paiement et le statut du paiement. En cas de paiement par PayPal, les données sont en outre transmises à PayPal. Stripe et PayPal traitent ces données sous leur propre responsabilité, y compris pour prévenir la fraude et respecter leurs obligations légales."
+            ],
+            "items": [
+              {
+                "label": "Types de données traitées :",
+                "value": "Données de base (nom, adresse e-mail, adresse de facturation), données contractuelles (niveau, durée, résiliation, rétractation), données de paiement (moyen et statut de paiement), factures, mouvements de crédits."
+              },
+              {
+                "label": "Personnes concernées :",
+                "value": "Utilisateurs qui souscrivent une offre payante."
+              },
+              {
+                "label": "Prestataire :",
+                "value": "Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Dublin 2, Irlande ; en cas de paiement par PayPal : PayPal (Europe) S.à r.l. et Cie, S.C.A., 22–24 Boulevard Royal, L-2449 Luxembourg."
+              },
+              {
+                "label": "Politique de confidentialité de Stripe :",
+                "url": "https://stripe.com/fr/privacy"
+              },
+              {
+                "label": "Politique de confidentialité de PayPal :",
+                "url": "https://www.paypal.com/fr/legalhub/privacy-full"
+              },
+              {
+                "label": "Base des transferts vers des pays tiers :",
+                "value": "Lorsque Stripe transfère des données aux États-Unis : décision d’adéquation (cadre de protection des données UE-États-Unis), sinon clauses contractuelles types selon l’art. 46, par. 2, point c) RGPD."
+              },
+              {
+                "label": "Bases juridiques :",
+                "value": "Exécution d’un contrat (art. 6, par. 1, point b) RGPD) ; obligations légales, notamment de conservation fiscale et commerciale (art. 6, par. 1, point c) RGPD)."
+              },
+              {
+                "label": "Durée de conservation :",
+                "value": "Données contractuelles pendant la durée du contrat ; factures et pièces comptables pendant les délais légaux de conservation (voir « Durée de conservation et suppression »)."
               }
             ]
           },
@@ -1419,6 +1473,18 @@
           {
             "title": "1 heure",
             "description": "Limite de fréquence des exports de données (cinq par heure et par compte)."
+          },
+          {
+            "title": "7 jours",
+            "description": "Segments d’une diffusion d’essai et versions téléchargeables avec score incrusté."
+          },
+          {
+            "title": "30 jours après la fin",
+            "description": "Segments d’une diffusion en direct (l’enregistrement se trouve alors dans la vidéothèque)."
+          },
+          {
+            "title": "30 jours après la fin du niveau vidéo",
+            "description": "Enregistrements vidéo d’une équipe dont le niveau vidéo a pris fin – annoncé par e-mail à la fin et sept jours avant la suppression."
           }
         ],
         "contentLabel": "Données de contenu de l’application :",
@@ -2036,7 +2102,7 @@
       "title": "Politique de confidentialité",
       "description": "Comment nous traitons les données personnelles sur statix-app.de et dans l’application Statix — par finalité, base légale, prestataire et durée de conservation.",
       "pseudonymBadge": "Les noms des joueurs ne quittent jamais l’application",
-      "lastUpdated": "Version : 24 septembre 2026",
+      "lastUpdated": "Mise à jour : 11 novembre 2026",
       "navLabel": "Autres informations légales",
       "imprintLink": "Mentions légales",
       "termsLink": "Conditions générales"

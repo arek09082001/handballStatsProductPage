@@ -58,7 +58,7 @@
       "title": "Preamble",
       "paragraph1": "These General Terms and Conditions (the “GTC”) govern the contractual relationship between you as a user (the “User” or “you”) and the provider regarding the use of the handball statistics app “Statix” as well as the associated websites, the progressive web app and the related services (together, “Statix” or the “Service”).",
       "paragraph2": "All terms and designations used in these GTC are to be understood as gender-neutral.",
-      "updatedAt": "Version: 5 October 2026"
+      "updatedAt": "Version: 11 November 2026"
     },
     "sections": {
       "scope": {
@@ -87,7 +87,8 @@
           "Automated, AI-assisted analysis of matches, teams and individual players.",
           "Optional public live coverage of a match (“live ticker”) via an unguessable link, optionally with sponsor logos.",
           "Sharing analyses via link, exporting the match report as a PDF and exporting individual statistics tables as CSV.",
-          "Video feature: uploading match and training recordings, marking scenes, sending compilations to individual players, and automatic analysis of running paths and ball trajectories (§ 10).",
+          "Video features (depending on the video tier booked): uploading match and training footage, tagging scenes, sending clips to individual players, stitching two camera views into a panorama, a camera-following crop, a score overlay and – in the analysis tier – automatic analysis of running paths and ball trajectories (§ 10).",
+          "Live broadcast (from the “Team” video tier): broadcasting a match with up to two paired phone cameras, optionally publicly as a livestream, and adding the recording to the video library (§ 10).",
           "Team fund with fine catalogue, jersey management and birthday reminders.",
           "Trash: deleted matches, squad members, tournaments and teams can be restored for 30 days (§ 12).",
           "Data export: a copy of all of your own data or – for the head coach – of all data of the team as an archive in a machine-readable format (§ 12)."
@@ -139,11 +140,15 @@
       "pricing": {
         "title": "§ 6 Free and paid services",
         "paragraphs": [
-          "The Service is currently provided free of charge. No fees apply for registration or for the functions currently available; there is no payment obligation without an express, separate agreement.",
-          "The provider intends to offer paid subscriptions in the future, in particular for teams and clubs. The scope, prices, billing periods and service details of a paid subscription follow from the applicable service and price overview in the ordering process.",
-          "A paid contract is only concluded once the User expressly selects a paid service, confirms the price information and completes the ordering process via a button expressly labelled as entailing an obligation to pay (section 312j para. 3 German Civil Code). Before such a contract is concluded, the User is informed of all essential elements of the contract, in particular the total price.",
-          "All prices are final prices. The provider charges VAT only to the extent it is obliged to do so; where the small business rule under section 19 German VAT Act applies, no VAT is shown and a corresponding note is included on the invoice.",
-          "Existing free accounts do not automatically become subject to charges when paid services are introduced. If a function previously offered free of charge will in future only be available for a fee, the provider will give reasonable advance notice; § 16 remains unaffected."
+          "Statix is offered as a free basic tier and, from 1 January 2027, additionally in paid tiers (app tiers and video tiers). Scope, prices, allowances (e.g. video storage and included compute credits) and billing periods follow from the price overview on the provider’s websites and from the order process in the version valid when the contract is concluded.",
+          "A paid contract is only concluded when the user expressly selects a paid service, confirms the price information and completes the order via a button expressly labelled as obliging payment (§ 312j(3) BGB). Before concluding such a contract, the user is informed of all essential contract terms, in particular the total price.",
+          "Payment is made in advance via the payment service provider Stripe using the payment methods offered in the order process (e.g. credit card, SEPA direct debit, PayPal). Invoices are provided electronically and can be retrieved in the app under Settings → Plan & billing.",
+          "All prices are final prices. The provider only shows VAT where required to do so; if the small business scheme under § 19 UStG applies, no VAT is shown and the invoice contains a corresponding note.",
+          "Paid tiers are booked by the head coach of a team. The booked tier applies to the teams in which this person is head coach, including their coaching staff; video storage and compute credits form one shared pool.",
+          "Compute-intensive video features (e.g. panorama, camera-following version, server-side shrinking, burning in the score, live panorama per started broadcast hour) consume compute credits. The cost of an operation is shown in the app before it is started. Credits included in a video tier are valid until the end of the season (30 June) for which they were granted; purchased credits until the end of the following season. Trial runs and failed or cancelled operations do not consume credits. Unused credits expire at the end of their validity and are not paid out; the right of withdrawal (§ 15) remains unaffected.",
+          "If a payment fails, the booked tier remains in place for 14 days. If the payment is not made up by then, the team falls back to the basic tier.",
+          "If a paid tier ends or is downgraded, the data is retained; teams and features beyond the scope of the new tier become read-only. By way of exception, video recordings can still be downloaded for 30 days after a video tier ends and are deleted afterwards. The provider announces the deletion by e-mail when the tier ends and seven days beforehand.",
+          "Accounts registered before 1 January 2027 use the “Trainer” app tier free of charge until 30 June 2027; the conditions of the founder price are stated in the price overview. Existing free accounts do not automatically become subject to payment. If a previously free feature is in future only offered for a fee, the provider gives reasonable advance notice; § 16 remains unaffected."
         ],
         "items": []
       },
@@ -175,11 +180,12 @@
           "Anthropic and OpenAI – AI-assisted analyses based on pseudonymised data",
           "The push services of the browser vendors (including Google, Mozilla, Apple) – delivery of push notifications that have been enabled",
           "Cloudflare – object storage (Cloudflare R2) for video recordings, exclusively in data centres in the European Union (only where the video feature is used)",
-          "Fly.io – preparation of uploaded video recordings in Frankfurt am Main (only where the video feature is used)",
-          "RunPod – compute-intensive video processing and analysis on graphics processors in data centres in the European Union (only where the video feature is used)"
+          "Fly.io – processing of uploaded video recordings and assembling recorded live broadcasts in Frankfurt am Main (only when the video feature is used)",
+          "RunPod – compute-intensive video processing and analysis as well as stitching the camera images during a live broadcast on graphics processors, exclusively in data centres in the European Union (only when the video feature is used)"
         ],
         "paragraphsAfter": [
           "When individual service providers are used, data may be transferred to third countries (in particular the USA). The provider bases such transfers on an adequacy decision of the European Commission (EU-U.S. Data Privacy Framework) where the respective service provider is certified, and otherwise on standard contractual clauses pursuant to Article 46(2)(c) GDPR. Further information is set out in the privacy policy.",
+          "For paid plans, the provider transmits the necessary contract and payment data of the booking person to Stripe (Stripe Payments Europe, Ltd., Ireland) and – when paying with PayPal – to PayPal (Europe) S.à r.l. et Cie, S.C.A., Luxembourg, which process this data under their own responsibility. No data of players is transmitted in the process.",
           "The provider will inform the User in text form at least 30 days in advance of engaging a new sub-processor; the User may object to the change on important data protection grounds."
         ]
       },
@@ -204,8 +210,10 @@
           "Sharing can be ended at any time; the link is then no longer accessible. The provider has no influence over whether third parties have copied, saved or cached previously public content in search engines.",
           "Sponsor logos uploaded by the User for the live ticker must be free of third-party rights or a corresponding permission to use them must exist. § 7 para. 5 applies accordingly.",
           "If the user uploads video recordings, they warrant that the recording was made lawfully and that they may use it for the purposes set out in § 2. Before uploading, they obtain the necessary consents of the players shown – for minors those of the legal guardians – and respect the rights of other persons recorded (opponents, referees, spectators) as well as any requirements of the hall operator and the federation. The provider stores and processes recordings exclusively on the user’s behalf (§ 8).",
+          "From the “Team” video tier, the user can broadcast a match live with paired phone cameras and release the broadcast publicly. A public livestream shows everyone in the picture and – unless switched off – the sound in the hall. Before releasing it, the user ensures that there is a legal basis with regard to all persons recorded, in particular the consent of the players or their legal guardians, and uses the protective features offered (switch off sound or limit it to ambient sound, blur areas) where necessary. A trial broadcast is never public.",
+          "In the analysis tier, Statix automatically detects people, the ball and shirt numbers in the picture. There is no facial recognition and no identification of people across different recordings; the user decides which person a detected track belongs to.",
           "Compilations that the user sends to individual players make only the scenes contained accessible. The user decides which scenes to send and bears the responsibility for it.",
-          "Video recordings are not subject to an automatic deletion period; they remain stored until the user deletes them or the team is finally deleted. The user deletes recordings as soon as the purpose of the analysis has been achieved. The provider reserves the right to introduce a storage quota or a maximum retention period for video recordings; it will announce this at least 30 days in advance in text form."
+          "Video recordings remain stored until the user deletes them, at most until the end of the video tier (§ 6) or the final deletion of the team. Deleted recordings stay in the bin for 30 days. Video storage is limited per video tier; once it is full, further uploads are only possible after deleting recordings or changing the tier. The segments of a live broadcast are deleted 30 days, those of a trial broadcast 7 days after it ends. The user deletes recordings as soon as the purpose of the analysis has been achieved."
         ],
         "items": []
       },
@@ -216,7 +224,7 @@
           "For the term of the contract, the provider grants the User a simple, non-exclusive, non-transferable and non-sublicensable right to use Statix within the contractually envisaged scope.",
           "The User retains all rights to the content and data they enter. They grant the provider the simple right of use necessary to provide the Service, in particular to store, process, analyse and display such content within the Service. This right of use ends when the respective content is deleted.",
           "The provider may use data in aggregated and anonymised form which does not permit any conclusions about individual persons, teams or clubs in order to improve and statistically evaluate the Service.",
-          "The User's content is not used to train AI models of the provider or of third parties."
+          "The user’s content is not used to train general AI models of the provider or third parties. The only exception is retraining the image recognition for the user’s own team, expressly triggered by the user: the resulting model is used exclusively for that team and deleted together with it."
         ],
         "items": []
       },
@@ -248,7 +256,8 @@
         "title": "§ 14 Contract term and termination",
         "paragraphs": [
           "The usage contract for free use is concluded for an indefinite period and may be terminated by either party at any time without notice, in particular by deleting the user account. Termination by deleting the account takes effect upon expiry of the grace period under § 12 para. 4; until then the user can withdraw it by signing in.",
-          "The term, renewal and termination of any paid subscription are governed by the conditions stated in the respective ordering process. Where a paid continuing obligation is offered to consumers, the provider will provide a termination button pursuant to section 312k German Civil Code.",
+          "Paid tiers can be booked as a monthly or a season subscription. The monthly subscription renews by one month at a time and can be cancelled at any time with effect from the end of the current month. The season subscription runs until the end of the current season (30 June) and renews by one further season at a time unless cancelled by the end of the current season. Consumers may cancel a season subscription renewed in this way at any time with one month’s notice; the provider refunds pro rata any fees paid in advance for the period after the cancellation takes effect.",
+          "Cancellation is possible at any time in the app via the “Cancel contract” button under Settings → Plan & billing (§ 312k BGB) or in text form. Downgrades take effect at the end of the current billing period.",
           "The right to extraordinary termination for good cause remains unaffected for both parties. For the provider, good cause exists in particular in the event of a material breach of these GTC by the User.",
           "Terminations require text form (e.g. by email); deleting the account within the application is sufficient."
         ],
@@ -422,7 +431,8 @@
           "Meta, communication and procedural data (e.g. IP addresses, device and browser information)",
           "Log data (e.g. technical error logs)",
           "Image and video data (portrait photos of squad members and coaches; where the video feature is used, recordings of matches and training sessions including the audio track, and movement data derived from them such as running paths, distances and ball trajectories)",
-          "Team fund details (fine catalogue, fines imposed, amounts, payment status)"
+          "Team fund details (fine catalogue, fines imposed, amounts, payment status)",
+          "Contract and payment data (e.g. booked tier, billing address, payment status, compute credits) – only for paid plans"
         ],
         "affectedPeopleTitle": "Categories of data subjects",
         "affectedPeople": [
@@ -450,7 +460,8 @@
           "Storage, processing and analysis of video recordings and sending individual scenes to players (only where the video feature is enabled)",
           "Keeping the team fund, managing jerseys and birthday reminders",
           "Recoverability of accidentally deleted data (trash) and provision of data copies (access and data portability)",
-          "Contract-related notices (e.g. changes to this policy or to the terms of service)"
+          "Contract-related notices (e.g. changes to this policy or to the terms of service)",
+          "Handling of paid plans including invoicing and payment processing"
         ]
       },
       "legalBasis": {
@@ -1171,13 +1182,15 @@
               "Teams can upload recordings of their matches and training sessions to mark scenes, analyse individual players and send them compilations. The video feature is voluntary; without an uploaded recording, none of the processing described here takes place.",
               "Storage: The recordings and the segment files generated from them are kept in a non-public object storage of the provider Cloudflare (Cloudflare R2). The storage area is created exclusively for data centres in the European Union (designation “jurisdiction: EU”); every retrieval goes through a time-limited, signed address that the app generates only after checking authorisation. Names, markers and the assignment to team and match remain in our database; the video storage does not know them.",
               "Preparation: After upload, a recording is split into short segments and converted for playback. This is done by a compute instance of the provider Fly.io in Frankfurt am Main, which holds the file in memory only for the duration of processing and has no access to our database. Compute-intensive steps – stitching two camera views into one panorama, shrinking very large recordings, and the automatic detection of players’ running paths and of the ball – run on graphics processors of the provider RunPod, exclusively in data centres in the European Union and likewise without permanent storage; the compute instance is terminated after the job. The result of the running-path analysis are movement tracks, distances and speed profiles that the coach assigns to a player. No automatic facial recognition takes place.",
+              "Live broadcast: from the “Team” video tier, a team can broadcast a match live with up to two phones that it pairs with the match via QR code. The phones send short segments of picture and – unless the team switches the sound off or limits it to ambient sound – audio to the video storage; until confirmed, they are also kept in the phone’s storage. A random device identifier, battery level and orientation of the phones are stored as well. With two phones, a RunPod compute instance in the EU continuously stitches the images; areas such as the stands can be blurred. If the team releases the broadcast publicly, it can be accessed via an unguessable link without logging in; the viewer’s device loads the video data directly from Cloudflare’s video storage via time-limited addresses, which technically processes the IP address for this. Viewer counting works as described for the live ticker. After the end, the recording is added to the video library.",
+              "Automatic analysis (analysis tier only): people, the ball and shirt numbers are detected automatically on graphics processors in the EU. To tell people apart within one recording, a feature is derived from their appearance that is neither stored with a name nor compared across recordings; faces are not recognised. The models run on the compute instance itself; no further service is involved. If the coaching staff marks image areas to retrain the detection, we store only the time and the rectangle, not an image; the retrained model is used exclusively for that team.",
               "Clip shares: A coach can send a player with their own account a compilation of selected scenes. The recipient receives only the scenes contained, not the whole recording; stored are title, note and the times of sending and of first opening.",
-              "Responsibility: A recording in a sports hall regularly shows, besides the own team, opponents, referees and spectators. Whether and on what basis filming is permitted is decided solely by the club as controller; it obtains the necessary consents – for minors those of the legal guardians – and informs the persons concerned. We process recordings exclusively on instruction. There is currently no automatic deletion period for video recordings: a recording remains stored until the team deletes it or the team itself is finally deleted. We recommend deleting recordings once the analysis is complete."
+              "Responsibility: a recording in a sports hall regularly shows not only the team but also opponents, referees and spectators. Whether and on what basis filming or broadcasting is permitted is decided solely by the club as controller; it obtains the necessary consents – for minors those of the legal guardians – and informs the persons concerned. We process recordings only on instruction. Recordings remain stored until the team deletes them, at most until 30 days after the video tier ends; deleted recordings stay in the bin for 30 days. We recommend deleting recordings once the analysis is complete."
             ],
             "items": [
               {
                 "label": "Data types processed:",
-                "value": "Image and video data (recordings including audio track, still images for calibration), movement data (running paths, distances, speeds, ball trajectories), content data (marked scenes, notes), usage data (times of upload, sending and opening)."
+                "value": "Image and video data (recordings including audio, live broadcasts, stills for calibration), movement data (running paths, distances, speeds, ball trajectories), automatically recognised shirt numbers and appearance features (only within one recording), device and pairing data of the phone cameras, content data (tagged scenes, notes), usage data (times of uploading, sending and opening)."
               },
               {
                 "label": "Data subjects:",
@@ -1205,7 +1218,7 @@
               },
               {
                 "label": "Provider, video analysis (graphics processors):",
-                "value": "RunPod, Inc., Mount Laurel, USA; processing exclusively in data centres in the European Union."
+                "value": "RunPod, Inc., Mount Laurel, USA; processing exclusively in data centres in the European Union (France, Romania, Sweden, the Netherlands, Czech Republic)."
               },
               {
                 "label": "Privacy policy, RunPod:",
@@ -1217,7 +1230,7 @@
               },
               {
                 "label": "Retention period:",
-                "value": "Recordings until deleted by the team or together with the team; intermediate results of preparation and analysis only for the duration of processing."
+                "value": "Recordings until deleted by the team, at most 30 days after the video tier ends; bin 30 days; segments of a live broadcast 30 days, of a trial broadcast 7 days after it ends; download versions with burned-in score 7 days; intermediate results of processing and analysis only for the duration of processing."
               }
             ]
           },
@@ -1270,6 +1283,47 @@
               {
                 "label": "Retention period:",
                 "value": "The archive is only generated and delivered, not stored; the rate limit expires after one hour."
+              }
+            ]
+          },
+          {
+            "title": "Paid plans and payment processing (Stripe)",
+            "paragraphs": [
+              "When a head coach books a paid plan, we process the necessary contract data: booked tier, term, billing address, payment status, invoices and the compute credit balance. We process this data as an independent controller; it only concerns the booking person, not the players recorded.",
+              "Payments are handled by the payment service provider Stripe. Payment details (e.g. card number, IBAN) are entered on a Stripe page; we do not receive full card or account details, only an identifier of the payment method and the payment status. When paying with PayPal, data is additionally transmitted to PayPal. Stripe and PayPal process this data under their own responsibility, including for fraud prevention and to comply with legal obligations."
+            ],
+            "items": [
+              {
+                "label": "Types of data processed:",
+                "value": "Master data (name, e-mail address, billing address), contract data (tier, term, cancellation, withdrawal), payment data (payment method, payment status), invoices, credit bookings."
+              },
+              {
+                "label": "Data subjects:",
+                "value": "Users who book a paid plan."
+              },
+              {
+                "label": "Service provider:",
+                "value": "Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Dublin 2, Ireland; when paying with PayPal: PayPal (Europe) S.à r.l. et Cie, S.C.A., 22–24 Boulevard Royal, L-2449 Luxembourg."
+              },
+              {
+                "label": "Stripe privacy policy:",
+                "url": "https://stripe.com/privacy"
+              },
+              {
+                "label": "PayPal privacy policy:",
+                "url": "https://www.paypal.com/uk/legalhub/privacy-full"
+              },
+              {
+                "label": "Basis for third-country transfers:",
+                "value": "Where Stripe transfers data to the USA: adequacy decision (EU-U.S. Data Privacy Framework), otherwise standard contractual clauses under Art. 46(2)(c) GDPR."
+              },
+              {
+                "label": "Legal bases:",
+                "value": "Performance of a contract (Art. 6(1)(b) GDPR); legal obligations, in particular tax and commercial retention (Art. 6(1)(c) GDPR)."
+              },
+              {
+                "label": "Retention period:",
+                "value": "Contract data for the term of the contract; invoices and accounting records for the statutory retention periods (see “Retention and deletion”)."
               }
             ]
           },
@@ -1414,6 +1468,18 @@
           {
             "title": "1 hour",
             "description": "Rate limit for data exports (five per hour and account)."
+          },
+          {
+            "title": "7 days",
+            "description": "Segments of a trial broadcast and download versions with a burned-in score."
+          },
+          {
+            "title": "30 days after the end",
+            "description": "Segments of a live broadcast (the recording is then in the video library)."
+          },
+          {
+            "title": "30 days after the video tier ends",
+            "description": "Video recordings of a team whose video tier has ended – announced by e-mail at the end and seven days before deletion."
           }
         ],
         "contentLabel": "Content data of the app:",
@@ -2036,7 +2102,7 @@
       "title": "Privacy policy",
       "description": "How we process personal data on statix-app.de and in the Statix app — broken down by purpose, legal basis, service provider and retention period.",
       "pseudonymBadge": "Player names never leave the app",
-      "lastUpdated": "Version: 24 September 2026",
+      "lastUpdated": "Last updated: 11 November 2026",
       "navLabel": "More legal information",
       "imprintLink": "Imprint",
       "termsLink": "Terms of service"

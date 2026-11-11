@@ -58,7 +58,7 @@
       "title": "Präambel",
       "paragraph1": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB“) regeln das Vertragsverhältnis zwischen Ihnen als Nutzer (nachfolgend „Nutzer“ oder „Sie“) und dem Anbieter über die Nutzung der Handball-Statistik-App „Statix“ sowie der zugehörigen Webseiten, der Progressive Web App und der damit verbundenen Dienste (nachfolgend zusammen „Statix“ oder „Dienst“).",
       "paragraph2": "Die in diesen AGB verwendeten Begriffe und Bezeichnungen sind geschlechtsneutral zu verstehen.",
-      "updatedAt": "Stand: 5. Oktober 2026"
+      "updatedAt": "Stand: 11. November 2026"
     },
     "sections": {
       "scope": {
@@ -87,7 +87,8 @@
           "Automatisierte, KI-gestützte Auswertung von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern.",
           "Optionale öffentliche Live-Übertragung eines Spiels („Live-Ticker“) über einen nicht erratbaren Link, auf Wunsch mit Sponsorenlogos.",
           "Teilen von Auswertungen per Link, Export des Spielberichts als PDF sowie Export einzelner Statistiktabellen als CSV.",
-          "Videofunktion: Hochladen von Spiel- und Trainingsaufnahmen, Markieren von Szenen, Versand von Zusammenschnitten an einzelne Spielerinnen und Spieler sowie automatische Auswertung von Laufwegen und Ballbahnen (§ 10).",
+          "Videofunktion (je nach gebuchter Video-Stufe): Hochladen von Spiel- und Trainingsaufnahmen, Markieren von Szenen, Versand von Zusammenschnitten an einzelne Spielerinnen und Spieler, Zusammenfügen zweier Kameraperspektiven zu einem Panorama, mitschwenkender Bildausschnitt, Einblendung des Spielstands sowie – in der Analysestufe – automatische Auswertung von Laufwegen und Ballbahnen (§ 10).",
+          "Live-Übertragung (ab der Video-Stufe „Team“): Übertragung eines Spiels mit bis zu zwei gekoppelten Handykameras, wahlweise öffentlich als Livestream, und Übernahme der Aufzeichnung in die Videobibliothek (§ 10).",
           "Mannschaftskasse mit Strafenkatalog, Trikotverwaltung und Geburtstagserinnerungen.",
           "Papierkorb: Gelöschte Spiele, Kadermitglieder, Turniere und Mannschaften können 30 Tage lang wiederhergestellt werden (§ 12).",
           "Datenexport: Kopie aller eigenen Daten bzw. – für die Cheftrainerin oder den Cheftrainer – aller Daten der Mannschaft als Archiv in einem maschinenlesbaren Format (§ 12)."
@@ -139,11 +140,15 @@
       "pricing": {
         "title": "§ 6 Kostenlose und kostenpflichtige Leistungen",
         "paragraphs": [
-          "Der Dienst wird derzeit kostenlos bereitgestellt. Für die Registrierung und die aktuell verfügbaren Funktionen fallen keine Gebühren an; eine Zahlungspflicht besteht ohne ausdrückliche, gesonderte Vereinbarung nicht.",
-          "Der Anbieter beabsichtigt, künftig kostenpflichtige Abonnements („Abos“) insbesondere für Mannschaften und Vereine anzubieten. Umfang, Preise, Abrechnungszeiträume und Leistungsdetails eines kostenpflichtigen Abos ergeben sich aus der jeweils gültigen Leistungs- und Preisübersicht im Bestellprozess.",
+          "Statix wird in einer kostenlosen Basisstufe und ab dem 1. Januar 2027 zusätzlich in kostenpflichtigen Stufen angeboten (App-Stufen und Video-Stufen). Umfang, Preise, Kontingente (z. B. Videospeicher und enthaltene Rechen-Credits) und Abrechnungszeiträume ergeben sich aus der Preisübersicht auf den Webseiten des Anbieters und aus dem Bestellprozess in der jeweils bei Vertragsschluss gültigen Fassung.",
           "Ein kostenpflichtiger Vertrag kommt erst zustande, wenn der Nutzer eine kostenpflichtige Leistung ausdrücklich auswählt, die Preisangaben bestätigt und den Bestellvorgang über eine ausdrücklich als zahlungspflichtig gekennzeichnete Schaltfläche (§ 312j Abs. 3 BGB) abschließt. Vor Abschluss eines solchen Vertrags wird der Nutzer über alle wesentlichen Vertragsbestandteile, insbesondere den Gesamtpreis, informiert.",
+          "Die Zahlung erfolgt im Voraus über den Zahlungsdienstleister Stripe mit den im Bestellprozess angebotenen Zahlungsarten (z. B. Kreditkarte, SEPA-Lastschrift, PayPal). Rechnungen werden elektronisch bereitgestellt und sind in der Anwendung unter Einstellungen → Plan & Abrechnung abrufbar.",
           "Sämtliche Preise verstehen sich als Endpreise. Der Anbieter weist Umsatzsteuer nur aus, soweit er hierzu verpflichtet ist; findet die Kleinunternehmerregelung nach § 19 UStG Anwendung, wird keine Umsatzsteuer ausgewiesen und ein entsprechender Hinweis in die Rechnung aufgenommen.",
-          "Bereits bestehende kostenlose Konten werden durch die Einführung kostenpflichtiger Leistungen nicht automatisch zahlungspflichtig. Wird eine bislang kostenlose Funktion künftig nur noch kostenpflichtig angeboten, informiert der Anbieter darüber mit angemessener Frist vorab; § 16 bleibt unberührt."
+          "Kostenpflichtige Stufen bucht die Cheftrainerin oder der Cheftrainer einer Mannschaft. Die gebuchte Stufe gilt für die Mannschaften, in denen diese Person Cheftrainerin oder Cheftrainer ist, einschließlich ihres Trainerteams; Videospeicher und Rechen-Credits bilden dabei einen gemeinsamen Topf.",
+          "Rechenintensive Videofunktionen (z. B. Panorama, Schwenk-Fassung, Verkleinern auf dem Server, Einbrennen des Spielstands, Live-Panorama je angefangener Sendestunde) verbrauchen Rechen-Credits. Die Kosten eines Vorgangs werden vor dem Auslösen in der Anwendung angezeigt. In einer Video-Stufe enthaltene Credits gelten bis zum Ende der Saison (30. Juni), für die sie gewährt wurden, nachgekaufte Credits bis zum Ende der darauffolgenden Saison. Probeläufe sowie gescheiterte oder abgebrochene Vorgänge verbrauchen keine Credits. Nicht verbrauchte Credits verfallen mit Ablauf ihrer Gültigkeit und werden nicht ausgezahlt; das Widerrufsrecht (§ 15) bleibt unberührt.",
+          "Schlägt eine Zahlung fehl, bleibt die gebuchte Stufe 14 Tage erhalten. Wird die Zahlung bis dahin nicht nachgeholt, gilt für die Mannschaft die Basisstufe.",
+          "Endet eine kostenpflichtige Stufe oder wird sie herabgestuft, bleiben die Daten erhalten; Mannschaften und Funktionen, die über den Umfang der neuen Stufe hinausgehen, sind nur noch lesbar. Abweichend davon können Videoaufnahmen nach dem Ende einer Video-Stufe noch 30 Tage heruntergeladen werden und werden danach gelöscht. Der Anbieter kündigt die Löschung beim Ende der Stufe und sieben Tage vorher per E-Mail an.",
+          "Konten, die vor dem 1. Januar 2027 registriert wurden, nutzen die App-Stufe „Trainer“ bis zum 30. Juni 2027 kostenlos; die Bedingungen des Gründerpreises nennt die Preisübersicht. Bestehende kostenlose Konten werden nicht automatisch zahlungspflichtig. Wird eine bislang kostenlose Funktion künftig nur noch kostenpflichtig angeboten, informiert der Anbieter darüber mit angemessener Frist vorab; § 16 bleibt unberührt."
         ],
         "items": []
       },
@@ -175,11 +180,12 @@
           "Anthropic und OpenAI – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
           "Die Push-Dienste der Browser-Hersteller (u. a. Google, Mozilla, Apple) – Zustellung aktivierter Push-Benachrichtigungen",
           "Cloudflare – Objektspeicher (Cloudflare R2) für Videoaufnahmen, ausschließlich in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)",
-          "Fly.io – Aufbereitung hochgeladener Videoaufnahmen in Frankfurt am Main (nur bei Nutzung der Videofunktion)",
-          "RunPod – rechenintensive Videoverarbeitung und -analyse auf Grafikprozessoren in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)"
+          "Fly.io – Aufbereitung hochgeladener Videoaufnahmen und Zusammenfügen aufgezeichneter Live-Übertragungen in Frankfurt am Main (nur bei Nutzung der Videofunktion)",
+          "RunPod – rechenintensive Videoverarbeitung und -analyse sowie das Zusammenfügen der Kamerabilder während einer Live-Übertragung auf Grafikprozessoren, ausschließlich in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)"
         ],
         "paragraphsAfter": [
           "Bei der Nutzung einzelner Dienstleister kann es zu einer Übermittlung von Daten in Drittländer (insbesondere die USA) kommen. Der Anbieter stützt diese Übermittlungen auf einen Angemessenheitsbeschluss der Europäischen Kommission (EU-U.S. Data Privacy Framework), soweit der jeweilige Dienstleister zertifiziert ist, und im Übrigen auf Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c DSGVO. Weitere Informationen enthält die Datenschutzerklärung.",
+          "Für kostenpflichtige Pläne übermittelt der Anbieter die erforderlichen Vertrags- und Zahlungsdaten der buchenden Person an Stripe (Stripe Payments Europe, Ltd., Irland) und – bei Zahlung mit PayPal – an PayPal (Europe) S.à r.l. et Cie, S.C.A., Luxemburg, die diese Daten in eigener Verantwortung verarbeiten. Daten von Spielerinnen und Spielern werden dabei nicht übermittelt.",
           "Der Anbieter wird den Nutzer über die Hinzuziehung eines neuen Unterauftragsverarbeiters mindestens 30 Tage vorab in Textform informieren; der Nutzer kann der Änderung aus wichtigem datenschutzrechtlichem Grund widersprechen."
         ]
       },
@@ -204,8 +210,10 @@
           "Eine Freigabe kann jederzeit beendet werden; der Link ist danach nicht mehr abrufbar. Der Anbieter hat keinen Einfluss darauf, ob Dritte einen zuvor öffentlichen Inhalt kopiert, gespeichert oder in Suchmaschinen zwischengespeichert haben.",
           "Sponsorenlogos, die der Nutzer für den Live-Ticker hochlädt, müssen frei von Rechten Dritter sein oder es muss eine entsprechende Nutzungserlaubnis vorliegen. § 7 Abs. 5 gilt entsprechend.",
           "Lädt der Nutzer Videoaufnahmen hoch, sichert er zu, dass die Aufnahme rechtmäßig entstanden ist und er sie zu den in § 2 genannten Zwecken verwenden darf. Er holt vor dem Hochladen die erforderlichen Einwilligungen der gezeigten Spielerinnen und Spieler – bei Minderjährigen der Erziehungsberechtigten – ein und beachtet die Rechte weiterer aufgenommener Personen (Gegner, Schiedsrichter, Zuschauer) sowie etwaige Vorgaben des Hallenbetreibers und des Verbands. Der Anbieter speichert und verarbeitet Aufnahmen ausschließlich im Auftrag des Nutzers (§ 8).",
+          "Ab der Video-Stufe „Team“ kann der Nutzer ein Spiel mit gekoppelten Handykameras live übertragen und die Übertragung öffentlich freigeben. Ein öffentlicher Livestream zeigt alle Personen im Bild und – sofern nicht abgeschaltet – den Ton der Halle. Der Nutzer stellt vor der Freigabe sicher, dass gegenüber allen aufgenommenen Personen eine Rechtsgrundlage besteht, insbesondere die Einwilligungen der Spielerinnen und Spieler bzw. ihrer Erziehungsberechtigten, und nutzt die angebotenen Schutzfunktionen (Ton abschalten oder auf Hallenton beschränken, Bereiche unscharf stellen), soweit erforderlich. Eine Probeübertragung wird nie öffentlich.",
+          "In der Analysestufe erkennt Statix Personen, Ball und Rückennummern automatisch im Bild. Eine Gesichtserkennung oder eine Identifizierung von Personen über verschiedene Aufnahmen hinweg findet nicht statt; welche Person zu einer erkannten Laufbahn gehört, legt der Nutzer fest.",
           "Zusammenschnitte, die der Nutzer einzelnen Spielerinnen und Spielern schickt, machen ausschließlich die enthaltenen Szenen zugänglich. Der Nutzer entscheidet, welche Szenen er versendet, und trägt dafür die Verantwortung.",
-          "Videoaufnahmen unterliegen keiner automatischen Löschfrist; sie bleiben gespeichert, bis der Nutzer sie löscht oder die Mannschaft endgültig gelöscht wird. Der Nutzer löscht Aufnahmen, sobald der Zweck der Auswertung erreicht ist. Der Anbieter behält sich vor, für Videoaufnahmen ein Speicherkontingent oder eine Höchstspeicherdauer einzuführen; er kündigt dies mindestens 30 Tage vorher in Textform an."
+          "Videoaufnahmen bleiben gespeichert, bis der Nutzer sie löscht, längstens bis zum Ende der Video-Stufe (§ 6) oder bis zur endgültigen Löschung der Mannschaft. Gelöschte Aufnahmen liegen 30 Tage im Papierkorb. Der Videospeicher ist je Video-Stufe begrenzt; ist er erschöpft, sind weitere Uploads erst nach dem Löschen von Aufnahmen oder einem Wechsel der Stufe möglich. Die Teilstücke einer Live-Übertragung werden 30 Tage, die einer Probeübertragung 7 Tage nach deren Ende gelöscht. Der Nutzer löscht Aufnahmen, sobald der Zweck der Auswertung erreicht ist."
         ],
         "items": []
       },
@@ -216,7 +224,7 @@
           "Der Anbieter räumt dem Nutzer für die Dauer des Vertrags ein einfaches, nicht ausschließliches, nicht übertragbares und nicht unterlizenzierbares Recht ein, Statix im vertraglich vorgesehenen Umfang zu nutzen.",
           "Der Nutzer behält sämtliche Rechte an den von ihm eingegebenen Inhalten und Daten. Er räumt dem Anbieter das zur Erbringung des Dienstes erforderliche, einfache Nutzungsrecht ein, insbesondere zur Speicherung, Verarbeitung, Auswertung und Anzeige dieser Inhalte im Rahmen des Dienstes. Das Nutzungsrecht endet mit der Löschung der jeweiligen Inhalte.",
           "Der Anbieter darf Daten in aggregierter und anonymisierter Form, die keinen Rückschluss auf einzelne Personen, Mannschaften oder Vereine zulassen, zur Verbesserung und statistischen Auswertung des Dienstes verwenden.",
-          "Eine Verwendung der Inhalte des Nutzers zum Training von KI-Modellen des Anbieters oder Dritter findet nicht statt."
+          "Eine Verwendung der Inhalte des Nutzers zum Training allgemeiner KI-Modelle des Anbieters oder Dritter findet nicht statt. Ausgenommen ist allein das vom Nutzer ausdrücklich ausgelöste Nachtrainieren der Bilderkennung für die eigene Mannschaft: Das dabei entstehende Modell wird ausschließlich für diese Mannschaft verwendet und mit ihr gelöscht."
         ],
         "items": []
       },
@@ -248,7 +256,8 @@
         "title": "§ 14 Vertragslaufzeit und Kündigung",
         "paragraphs": [
           "Der Nutzungsvertrag über die kostenlose Nutzung wird auf unbestimmte Zeit geschlossen und kann von beiden Parteien jederzeit ohne Einhaltung einer Frist gekündigt werden, insbesondere durch Löschung des Nutzerkontos. Die Kündigung durch Löschung des Kontos wird mit Ablauf der Karenzzeit nach § 12 Abs. 4 wirksam; bis dahin kann der Nutzer sie durch eine Anmeldung zurücknehmen.",
-          "Laufzeit, Verlängerung und Kündigung eines etwaigen kostenpflichtigen Abonnements richten sich nach den im jeweiligen Bestellprozess angegebenen Bedingungen. Wird ein kostenpflichtiges Dauerschuldverhältnis mit Verbrauchern angeboten, stellt der Anbieter hierfür eine Kündigungsschaltfläche nach § 312k BGB bereit.",
+          "Kostenpflichtige Stufen können als Monatsabo oder als Saisonabo gebucht werden. Das Monatsabo verlängert sich jeweils um einen Monat und kann jederzeit zum Ende des laufenden Monats gekündigt werden. Das Saisonabo läuft bis zum Ende der laufenden Saison (30. Juni) und verlängert sich um jeweils eine weitere Saison, wenn es nicht bis zum Ende der laufenden Saison gekündigt wird. Verbraucher können ein auf diese Weise verlängertes Saisonabo jederzeit mit einer Frist von einem Monat kündigen; im Voraus gezahlte Entgelte für die Zeit nach dem Wirksamwerden der Kündigung erstattet der Anbieter anteilig.",
+          "Gekündigt werden kann jederzeit in der Anwendung über die Schaltfläche „Vertrag kündigen“ unter Einstellungen → Plan & Abrechnung (§ 312k BGB) oder in Textform. Herabstufungen werden zum Ende des laufenden Abrechnungszeitraums wirksam.",
           "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Parteien unberührt. Ein wichtiger Grund liegt für den Anbieter insbesondere bei einem erheblichen Verstoß des Nutzers gegen diese AGB vor.",
           "Kündigungen bedürfen der Textform (z. B. per E-Mail); die Löschung des Kontos in der Anwendung genügt."
         ],
@@ -422,7 +431,8 @@
           "Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Geräte- und Browserangaben)",
           "Protokolldaten (z. B. technische Fehlerprotokolle)",
           "Bild- und Videodaten (Porträtfotos von Kadermitgliedern sowie Trainerinnen und Trainern; bei Nutzung der Videofunktion Aufnahmen von Spielen und Trainings samt Tonspur und daraus abgeleitete Bewegungsdaten wie Laufwege, Distanzen und Ballbahnen)",
-          "Angaben der Mannschaftskasse (Strafenkatalog, verhängte Strafen, Beträge, Zahlungsstatus)"
+          "Angaben der Mannschaftskasse (Strafenkatalog, verhängte Strafen, Beträge, Zahlungsstatus)",
+          "Vertrags- und Zahlungsdaten (z. B. gebuchte Stufe, Rechnungsanschrift, Zahlungsstatus, Rechen-Credits) – nur bei kostenpflichtigen Plänen"
         ],
         "affectedPeopleTitle": "Kategorien betroffener Personen",
         "affectedPeople": [
@@ -450,7 +460,8 @@
           "Speicherung, Aufbereitung und Auswertung von Videoaufnahmen sowie Versand einzelner Szenen an Spielerinnen und Spieler (nur bei aktivierter Videofunktion)",
           "Führung der Mannschaftskasse, Verwaltung von Trikots und Erinnerung an Geburtstage",
           "Wiederherstellbarkeit versehentlich gelöschter Daten (Papierkorb) und Bereitstellung von Datenkopien (Auskunft und Datenübertragbarkeit)",
-          "Vertragsbezogene Mitteilungen (z. B. Änderungen dieser Erklärung oder der AGB)"
+          "Vertragsbezogene Mitteilungen (z. B. Änderungen dieser Erklärung oder der AGB)",
+          "Abwicklung kostenpflichtiger Pläne einschließlich Rechnungsstellung und Zahlungsabwicklung"
         ]
       },
       "legalBasis": {
@@ -1171,13 +1182,15 @@
               "Mannschaften können Aufnahmen ihrer Spiele und Trainings hochladen, um Szenen zu markieren, einzelne Spielerinnen und Spieler zu analysieren und ihnen Zusammenschnitte zu schicken. Die Videofunktion ist freiwillig; ohne hochgeladene Aufnahme findet keine der hier beschriebenen Verarbeitungen statt.",
               "Speicherung: Die Aufnahmen und die daraus erzeugten Segmentdateien liegen in einem nicht öffentlichen Objektspeicher des Dienstleisters Cloudflare (Cloudflare R2). Der Speicherbereich ist ausschließlich für Rechenzentren in der Europäischen Union angelegt (Kennzeichnung „jurisdiction: EU“); jeder Abruf erfolgt über eine zeitlich befristete, signierte Adresse, die die App erst nach Prüfung der Berechtigung erzeugt. Namen, Markierungen und die Zuordnung zu Mannschaft und Spiel bleiben in unserer Datenbank; der Videospeicher kennt sie nicht.",
               "Aufbereitung: Nach dem Hochladen wird eine Aufnahme in kurze Segmente zerlegt und für die Wiedergabe umgerechnet. Das übernimmt eine Recheninstanz des Dienstleisters Fly.io in Frankfurt am Main, die die Datei nur für die Dauer der Verarbeitung im Arbeitsspeicher hält und keinen Zugang zu unserer Datenbank hat. Rechenintensive Schritte – das Zusammenfügen zweier Kameraperspektiven zu einem Panorama, das Verkleinern sehr großer Aufnahmen sowie die automatische Erkennung von Laufwegen der Spielerinnen und Spieler und des Balls – laufen auf Grafikprozessoren des Dienstleisters RunPod, ausschließlich in Rechenzentren in der Europäischen Union und ebenfalls ohne dauerhafte Speicherung; die Recheninstanz wird nach dem Auftrag beendet. Ergebnis der Laufweganalyse sind Bewegungsbahnen, Distanzen und Geschwindigkeitsprofile, die die Trainerin oder der Trainer einer Spielerin oder einem Spieler zuordnet. Eine automatische Gesichtserkennung findet nicht statt.",
+              "Live-Übertragung: Ab der Video-Stufe „Team“ kann eine Mannschaft ein Spiel mit bis zu zwei Handys live übertragen, die sie per QR-Code mit dem Spiel koppelt. Die Handys senden kurze Teilstücke aus Bild und – sofern die Mannschaft den Ton nicht abschaltet oder auf Hallenton beschränkt – Ton in den Videospeicher; bis zur Bestätigung liegen sie zusätzlich im Speicher des Handys. Gespeichert werden außerdem eine zufällige Gerätekennung, Akkustand und Ausrichtung der Handys. Mit zwei Handys fügt eine Recheninstanz von RunPod in der EU die Bilder fortlaufend zusammen; dabei können Bereiche wie die Tribüne unscharf gestellt werden. Gibt die Mannschaft die Übertragung öffentlich frei, ist sie unter einem nicht erratbaren Link ohne Anmeldung abrufbar; die Videodaten lädt das Gerät der Zuschauerin bzw. des Zuschauers dabei über befristete Adressen direkt aus dem Videospeicher von Cloudflare, der dafür die IP-Adresse technisch verarbeitet. Zur Zuschauerzählung gilt das zum Live-Ticker Gesagte. Nach dem Ende wird die Aufzeichnung als Aufnahme in die Videobibliothek übernommen.",
+              "Automatische Analyse (nur Analysestufe): Personen, Ball und Rückennummern werden auf Grafikprozessoren in der EU automatisch im Bild erkannt. Um Personen innerhalb einer Aufnahme auseinanderzuhalten, wird aus dem Erscheinungsbild ein Merkmal gebildet, das weder mit einem Namen gespeichert noch über verschiedene Aufnahmen hinweg verglichen wird; Gesichter werden nicht erkannt. Die Modelle dafür laufen auf der Recheninstanz selbst, es wird kein weiterer Dienst eingebunden. Markiert der Trainerstab Bildausschnitte, um die Erkennung nachzutrainieren, speichern wir nur Zeitpunkt und Rechteck, kein Bild; das nachtrainierte Modell wird ausschließlich für diese Mannschaft verwendet.",
               "Sendungen: Eine Trainerin oder ein Trainer kann einer Spielerin oder einem Spieler mit eigenem Konto einen Zusammenschnitt ausgewählter Szenen schicken. Die Empfängerin bzw. der Empfänger erhält ausschließlich die enthaltenen Szenen, nicht die gesamte Aufnahme; gespeichert werden Titel, Notiz sowie die Zeitpunkte des Versands und des ersten Öffnens.",
-              "Verantwortung: Eine Hallenaufnahme zeigt neben der eigenen Mannschaft regelmäßig auch Gegnerinnen und Gegner, Schiedsrichter und Zuschauer. Ob und auf welcher Grundlage gefilmt werden darf, entscheidet allein der Verein als Verantwortlicher; er holt die erforderlichen Einwilligungen ein – bei Minderjährigen die der Erziehungsberechtigten – und informiert die betroffenen Personen. Wir verarbeiten Aufnahmen ausschließlich weisungsgebunden. Für Videoaufnahmen gibt es derzeit keine automatische Löschfrist: Eine Aufnahme bleibt gespeichert, bis die Mannschaft sie löscht oder die Mannschaft selbst endgültig gelöscht wird. Wir empfehlen, Aufnahmen nach Abschluss der Auswertung zu löschen."
+              "Verantwortung: Eine Hallenaufnahme zeigt neben der eigenen Mannschaft regelmäßig auch Gegnerinnen und Gegner, Schiedsrichter und Zuschauer. Ob und auf welcher Grundlage gefilmt oder übertragen werden darf, entscheidet allein der Verein als Verantwortlicher; er holt die erforderlichen Einwilligungen ein – bei Minderjährigen die der Erziehungsberechtigten – und informiert die betroffenen Personen. Wir verarbeiten Aufnahmen ausschließlich weisungsgebunden. Aufnahmen bleiben gespeichert, bis die Mannschaft sie löscht, längstens bis 30 Tage nach dem Ende der Video-Stufe; gelöschte Aufnahmen liegen 30 Tage im Papierkorb. Wir empfehlen, Aufnahmen nach Abschluss der Auswertung zu löschen."
             ],
             "items": [
               {
                 "label": "Verarbeitete Datenarten:",
-                "value": "Bild- und Videodaten (Aufnahmen samt Tonspur, Standbilder zur Kalibrierung), Bewegungsdaten (Laufwege, Distanzen, Geschwindigkeiten, Ballbahnen), Inhaltsdaten (markierte Szenen, Notizen), Nutzungsdaten (Zeitpunkte des Hochladens, Versendens und Öffnens)."
+                "value": "Bild- und Videodaten (Aufnahmen samt Tonspur, Live-Übertragungen, Standbilder zur Kalibrierung), Bewegungsdaten (Laufwege, Distanzen, Geschwindigkeiten, Ballbahnen), automatisch erkannte Rückennummern und Erscheinungsmerkmale (nur innerhalb einer Aufnahme), Geräte- und Kopplungsdaten der Handykameras, Inhaltsdaten (markierte Szenen, Notizen), Nutzungsdaten (Zeitpunkte des Hochladens, Versendens und Öffnens)."
               },
               {
                 "label": "Betroffene Personen:",
@@ -1205,7 +1218,7 @@
               },
               {
                 "label": "Dienstanbieter Videoanalyse (Grafikprozessoren):",
-                "value": "RunPod, Inc., Mount Laurel, USA; Verarbeitung ausschließlich in Rechenzentren in der Europäischen Union."
+                "value": "RunPod, Inc., Mount Laurel, USA; Verarbeitung ausschließlich in Rechenzentren in der Europäischen Union (Frankreich, Rumänien, Schweden, Niederlande, Tschechien)."
               },
               {
                 "label": "Datenschutzerklärung RunPod:",
@@ -1217,7 +1230,7 @@
               },
               {
                 "label": "Speicherdauer:",
-                "value": "Aufnahmen bis zur Löschung durch die Mannschaft oder mit der Mannschaft; Zwischenergebnisse der Aufbereitung und Analyse nur für die Dauer der Verarbeitung."
+                "value": "Aufnahmen bis zur Löschung durch die Mannschaft, längstens 30 Tage nach dem Ende der Video-Stufe; Papierkorb 30 Tage; Teilstücke einer Live-Übertragung 30 Tage, einer Probeübertragung 7 Tage nach deren Ende; Downloadfassungen mit eingebranntem Spielstand 7 Tage; Zwischenergebnisse der Aufbereitung und Analyse nur für die Dauer der Verarbeitung."
               }
             ]
           },
@@ -1270,6 +1283,47 @@
               {
                 "label": "Speicherdauer:",
                 "value": "Das Archiv wird nur erzeugt und ausgeliefert, nicht gespeichert; die Zählgrenze verfällt nach einer Stunde."
+              }
+            ]
+          },
+          {
+            "title": "Kostenpflichtige Pläne und Zahlungsabwicklung (Stripe)",
+            "paragraphs": [
+              "Bucht eine Cheftrainerin oder ein Cheftrainer einen kostenpflichtigen Plan, verarbeiten wir die dafür erforderlichen Vertragsdaten: gebuchte Stufe, Laufzeit, Rechnungsanschrift, Zahlungsstatus, Rechnungen sowie den Stand der Rechen-Credits. Diese Daten verarbeiten wir als eigener Verantwortlicher; sie betreffen nur die buchende Person, nicht die erfassten Spielerinnen und Spieler.",
+              "Die Zahlung wickeln wir über den Zahlungsdienstleister Stripe ab. Die Eingabe der Zahlungsdaten (z. B. Kartennummer, IBAN) erfolgt auf einer Seite von Stripe; wir erhalten keine vollständigen Karten- oder Kontodaten, sondern nur eine Kennung des Zahlungsmittels und den Zahlungsstatus. Bei Zahlung mit PayPal werden die Daten zusätzlich an PayPal übermittelt. Stripe und PayPal verarbeiten diese Daten in eigener Verantwortung, auch zur Betrugsvorbeugung und zur Erfüllung gesetzlicher Pflichten."
+            ],
+            "items": [
+              {
+                "label": "Verarbeitete Datenarten:",
+                "value": "Bestandsdaten (Name, E-Mail-Adresse, Rechnungsanschrift), Vertragsdaten (Stufe, Laufzeit, Kündigung, Widerruf), Zahlungsdaten (Zahlungsart, Zahlungsstatus), Rechnungen, Credit-Buchungen."
+              },
+              {
+                "label": "Betroffene Personen:",
+                "value": "Nutzer, die einen kostenpflichtigen Plan buchen."
+              },
+              {
+                "label": "Dienstanbieter:",
+                "value": "Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Dublin 2, Irland; bei Zahlung mit PayPal: PayPal (Europe) S.à r.l. et Cie, S.C.A., 22–24 Boulevard Royal, L-2449 Luxemburg."
+              },
+              {
+                "label": "Datenschutzerklärung Stripe:",
+                "url": "https://stripe.com/de/privacy"
+              },
+              {
+                "label": "Datenschutzerklärung PayPal:",
+                "url": "https://www.paypal.com/de/legalhub/privacy-full"
+              },
+              {
+                "label": "Grundlage Drittlandtransfers:",
+                "value": "Soweit Stripe Daten in die USA übermittelt: Angemessenheitsbeschluss (EU-U.S. Data Privacy Framework), im Übrigen Standardvertragsklauseln nach Art. 46 Abs. 2 lit. c) DSGVO."
+              },
+              {
+                "label": "Rechtsgrundlagen:",
+                "value": "Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); gesetzliche Pflichten, insbesondere steuer- und handelsrechtliche Aufbewahrung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO)."
+              },
+              {
+                "label": "Speicherdauer:",
+                "value": "Vertragsdaten für die Dauer des Vertrags; Rechnungen und Buchungsbelege für die gesetzlichen Aufbewahrungsfristen (siehe „Speicherdauer und Löschung“)."
               }
             ]
           },
@@ -1414,6 +1468,18 @@
           {
             "title": "1 Stunde",
             "description": "Zählgrenze für Datenexporte (fünf je Stunde und Konto)."
+          },
+          {
+            "title": "7 Tage",
+            "description": "Teilstücke einer Probeübertragung sowie Downloadfassungen mit eingebranntem Spielstand."
+          },
+          {
+            "title": "30 Tage nach Ende",
+            "description": "Teilstücke einer Live-Übertragung (die Aufzeichnung liegt dann als Aufnahme in der Videobibliothek)."
+          },
+          {
+            "title": "30 Tage nach Ende der Video-Stufe",
+            "description": "Videoaufnahmen einer Mannschaft, deren Video-Stufe geendet hat – mit Ankündigung per E-Mail beim Ende und sieben Tage vor der Löschung."
           }
         ],
         "contentLabel": "Inhaltsdaten der App:",
@@ -2036,7 +2102,7 @@
       "title": "Datenschutzerklärung",
       "description": "Wie wir personenbezogene Daten auf statix-app.de und in der Statix App verarbeiten – verständlich aufgeschlüsselt nach Zweck, Rechtsgrundlage, Dienstleistern und Speicherdauer.",
       "pseudonymBadge": "Spielernamen bleiben in der App",
-      "lastUpdated": "Stand: 24. September 2026",
+      "lastUpdated": "Stand: 11. November 2026",
       "navLabel": "Weitere rechtliche Angaben",
       "imprintLink": "Impressum",
       "termsLink": "AGB"
