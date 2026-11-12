@@ -323,6 +323,24 @@ export default function PricingConfigurator({ sheet }: { sheet: PriceSheet }) {
                     />
                   );
                 })}
+                <div className='flex flex-col justify-between gap-3 rounded-2xl border border-dashed border-chalk/25 p-5'>
+                  <div>
+                    <p className='font-display text-lg font-bold tracking-tight text-chalk/80'>
+                      {t('video.soon.name')}
+                    </p>
+                    <p className='mt-1 text-[13px] font-semibold uppercase tracking-wide text-primary'>
+                      {t('video.soon.badge')}
+                    </p>
+                    <p className='mt-2 text-[14px] leading-6 text-chalk/65'>
+                      {t('video.soon.text')}
+                    </p>
+                  </div>
+                  <Link
+                    href={videoRequestHref({ tier: 'analyse', source: 'preise' })}
+                    className='text-[14px] font-semibold text-primary underline-offset-4 hover:underline'>
+                    {t('video.soon.cta')} →
+                  </Link>
+                </div>
               </div>
 
               <div className='mt-6 flex gap-3.5 rounded-2xl border border-chalk/12 bg-chalk/[0.04] p-5'>

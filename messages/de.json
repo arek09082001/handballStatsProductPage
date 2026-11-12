@@ -2233,16 +2233,6 @@
               "Panorama aus zwei Kameras, Schwenk-Fassung",
               "Spielstand-Einblendung und Livestream"
             ]
-          },
-          {
-            "id": "analyse",
-            "name": "Video Analyse",
-            "audience": "Für die Analyse aus dem Bild",
-            "highlights": [
-              "Alles aus Video Team",
-              "Feldkalibrierung, Laufwege, Heatmaps, Distanzen",
-              "Ballerkennung (Beta), Erkennung nachtrainieren"
-            ]
           }
         ],
         "storage": "{gb} GB",
@@ -2250,11 +2240,17 @@
         "creditsMonth": "{credits} Credits im Monat",
         "noCredits": "ohne Credits",
         "creditsTitle": "Rechen-Credits",
-        "creditsText": "Ein Credit ist eine Stunde auf einer Grafikkarte in der EU – für Panorama, Schwenk-Fassung, Laufwege oder Ballerkennung. Probeläufe kosten nichts, endgültig gescheiterte Läufe werden gutgeschrieben.",
+        "creditsText": "Ein Credit ist eine Stunde auf einer Grafikkarte in der EU – für Panorama, Schwenk-Fassung oder Panorama-Livestream. Probeläufe kosten nichts, endgültig gescheiterte Läufe werden gutgeschrieben.",
         "creditPacks": "Nachkaufen ab Video Team: {smallCredits} Credits für {smallPrice}, {largeCredits} Credits für {largePrice}.",
         "betaNote": "Das Video ist bis zum {launchDate} eine geschlossene Beta. Die Analyse aus dem Bild schlägt nur vor – sie legt nie selbst eine Szene oder einen Statistikeintrag an.",
         "requestCta": "Video-Freischaltung anfragen",
-        "requestHint": "Du willst das Video schon vor dem Start nutzen? Frag die Freischaltung für dein Konto an – in der Beta kostet es nichts."
+        "requestHint": "Du willst das Video schon vor dem Start nutzen? Frag die Freischaltung für dein Konto an – in der Beta kostet es nichts.",
+        "soon": {
+          "name": "Video Analyse",
+          "badge": "Auf Anfrage · noch in Arbeit",
+          "text": "Laufwege, Heatmaps und Ballerkennung aus dem Bild bauen wir noch aus – zum 1. Januar gibt es diese Stufe nicht zu buchen. Wer sie testen möchte, fragt einfach an.",
+          "cta": "Analyse anfragen"
+        }
       },
       "summary": {
         "title": "Deine Auswahl",
@@ -2650,7 +2646,8 @@
             "analyse": true
           }
         ]
-      }
+      },
+      "videoSoon": "Laufwege, Heatmaps, Distanzen und Ballerkennung aus dem Bild sind noch in Arbeit und nicht Teil der buchbaren Stufen – auf Anfrage."
     },
     "club": {
       "kicker": "Für die Vereinskasse",
@@ -2722,7 +2719,7 @@
       "items": [
         {
           "question": "Was kostet Statix?",
-          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es zwei Regler: die App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 149 € je Saison oder 14,90 € im Monat – und, wenn ihr filmt, eine Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist (Speicher und Credits teilen sie sich): Video Basis 149 €, Video Team 399 €, Video Analyse 849 € je Saison (14,90 €, 39,90 € bzw. 84,90 € im Monat). Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis: Trainer 39 €, Pro 75 €. Alle Preise sind Endpreise."
+          "answer": "Bis zum {founderDeadline} nichts. Ab dem {launchDate} gibt es zwei Regler: die App-Stufe – Basis bleibt dauerhaft kostenlos, Trainer kostet 79 € je Saison oder 9,90 € im Monat, Pro 149 € je Saison oder 14,90 € im Monat – und, wenn ihr filmt, eine Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist (Speicher und Credits teilen sie sich): Video Basis 149 €, Video Team 399 € je Saison (14,90 € bzw. 39,90 € im Monat); Video Analyse mit Laufwegen und Ballerkennung ist noch in Arbeit und auf Anfrage. Neben einer Video-Stufe kostet die App-Stufe in der Saison nur den Paketpreis: Trainer 39 €, Pro 75 €. Alle Preise sind Endpreise."
         },
         {
           "question": "Ich nutze Statix schon – muss ich ab Januar zahlen?",
@@ -2750,7 +2747,7 @@
         },
         {
           "question": "Wofür brauche ich eine Video-Stufe, und was sind Rechen-Credits?",
-          "answer": "Für Mannschaften, die ihre Spiele filmen. Eine Video-Stufe gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich. Video Basis bringt 100 GB Speicher, Tagging, Playlists, Sendungen und die Mediathek, synchron mit dem Protokoll. Video Team legt 300 GB, Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream dazu, Video Analyse 500 GB, Laufwege, Heatmaps und Ballerkennung. Die Auswertung aus dem Bild rechnet auf einer Grafikkarte; ein Credit ist eine Stunde davon. Enthalten sind 40 Credits je Saison bei Video Team und 180 bei Video Analyse (beim Monatsabo 3 bzw. 15 im Monat), nachkaufen kannst du 10 für 19 € oder 30 für 49 €. Probeläufe kosten nichts, gescheiterte Läufe werden gutgeschrieben."
+          "answer": "Für Mannschaften, die ihre Spiele filmen. Eine Video-Stufe gilt für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich. Video Basis bringt 100 GB Speicher, Tagging, Playlists, Sendungen und die Mediathek, synchron mit dem Protokoll. Video Team legt 300 GB, Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream dazu. Laufwege, Heatmaps und Ballerkennung (Video Analyse) sind noch in Arbeit und nur auf Anfrage. Die Auswertung aus dem Bild rechnet auf einer Grafikkarte; ein Credit ist eine Stunde davon. Enthalten sind 40 Credits je Saison bei Video Team (beim Monatsabo 3 im Monat), nachkaufen kannst du 10 für 19 € oder 30 für 49 €. Probeläufe kosten nichts, gescheiterte Läufe werden gutgeschrieben."
         },
         {
           "question": "Wie kaufe ich einen Plan?",

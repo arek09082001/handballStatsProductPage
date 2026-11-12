@@ -2233,16 +2233,6 @@
               "Panorámica de dos cámaras, versión con seguimiento",
               "Marcador sobreimpreso y retransmisión en directo"
             ]
-          },
-          {
-            "id": "analyse",
-            "name": "Vídeo Análisis",
-            "audience": "Para el análisis a partir de la imagen",
-            "highlights": [
-              "Todo lo de Vídeo Equipo",
-              "Calibración de pista, recorridos, mapas de calor, distancias",
-              "Detección del balón (beta), reentrenar la detección"
-            ]
           }
         ],
         "storage": "{gb} GB",
@@ -2254,7 +2244,13 @@
         "creditPacks": "Recarga a partir de Vídeo Equipo: {smallCredits} créditos por {smallPrice}, {largeCredits} créditos por {largePrice}.",
         "betaNote": "El vídeo es una beta cerrada hasta el {launchDate}. El análisis a partir de la imagen solo sugiere: nunca crea por sí mismo una escena ni una entrada estadística.",
         "requestCta": "Solicitar acceso al vídeo",
-        "requestHint": "¿Quieres usar el vídeo antes del lanzamiento? Solicita la activación para tu cuenta: durante la beta no cuesta nada."
+        "requestHint": "¿Quieres usar el vídeo antes del lanzamiento? Solicita la activación para tu cuenta: durante la beta no cuesta nada.",
+        "soon": {
+          "name": "Vídeo Análisis",
+          "badge": "Bajo petición · en desarrollo",
+          "text": "Recorridos, mapas de calor y detección del balón a partir del vídeo aún están en desarrollo: este nivel no se puede contratar el 1 de enero. Si quieres probarlo, pregúntanos.",
+          "cta": "Solicitar análisis"
+        }
       },
       "summary": {
         "title": "Tu selección",
@@ -2650,7 +2646,8 @@
             "analyse": true
           }
         ]
-      }
+      },
+      "videoSoon": "Recorridos, mapas de calor, distancias y detección del balón aún están en desarrollo y no forman parte de los niveles contratables – bajo petición."
     },
     "club": {
       "kicker": "Para la caja del club",

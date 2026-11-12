@@ -242,7 +242,7 @@ export default function PricingCompare({ sheet }: { sheet: PriceSheet }) {
     },
   ];
   const videoColumns: readonly TierColumn<VideoCompareRow>[] = (
-    ['basis', 'team', 'analyse'] as const
+    ['basis', 'team'] as const
   ).map((id) => ({
     key: id,
     label: nameOf(videoCopy, id),
@@ -309,8 +309,19 @@ export default function PricingCompare({ sheet }: { sheet: PriceSheet }) {
           {t('videoHeading')}
         </h3>
         <div className='mt-8'>
-          <CompareTable group={videoGroup} columns={videoColumns} {...tableProps} />
+          <CompareTable
+            group={{
+              ...videoGroup,
+              // Rows only the (not yet bookable) analysis tier had are dropped.
+              rows: videoGroup.rows.filter((row) => row.basis || row.team),
+            }}
+            columns={videoColumns}
+            {...tableProps}
+          />
         </div>
+        <p className='mt-6 max-w-[68ch] rounded-xl border border-dashed border-ink/25 px-4 py-3 text-[14px] leading-6 text-ink/70'>
+          {t('videoSoon')}
+        </p>
         <p className='mt-8 max-w-[68ch] text-[15px] leading-7 text-ink/70'>
           {t('videoClosing')}
         </p>
