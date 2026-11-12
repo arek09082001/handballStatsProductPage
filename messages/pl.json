@@ -2233,16 +2233,6 @@
               "Panorama z dwóch kamer, wersja z prowadzeniem kamery",
               "Wyświetlanie wyniku i transmisja na żywo"
             ]
-          },
-          {
-            "id": "analyse",
-            "name": "Wideo Analiza",
-            "audience": "Dla analizy z obrazu",
-            "highlights": [
-              "Wszystko z Wideo Drużyna",
-              "Kalibracja boiska, trasy biegu, mapy ciepła, dystanse",
-              "Wykrywanie piłki (beta), dotrenowanie wykrywania"
-            ]
           }
         ],
         "storage": "{gb} GB",
@@ -2254,7 +2244,13 @@
         "creditPacks": "Dokupienie od Wideo Drużyna: {smallCredits} kredytów za {smallPrice}, {largeCredits} kredytów za {largePrice}.",
         "betaNote": "Do {launchDate} wideo jest zamkniętą betą. Analiza z obrazu tylko podpowiada – nigdy sama nie tworzy sceny ani wpisu w statystyce.",
         "requestCta": "Poproś o dostęp do wideo",
-        "requestHint": "Chcesz używać wideo jeszcze przed startem? Poproś o odblokowanie dla swojego konta – w becie nic to nie kosztuje."
+        "requestHint": "Chcesz używać wideo jeszcze przed startem? Poproś o odblokowanie dla swojego konta – w becie nic to nie kosztuje.",
+        "soon": {
+          "name": "Wideo Analiza",
+          "badge": "Na zapytanie · w przygotowaniu",
+          "text": "Ścieżki ruchu, mapy cieplne i wykrywanie piłki z nagrania są jeszcze rozwijane – od 1 stycznia tego poziomu nie można wykupić. Chcesz przetestować? Zapytaj.",
+          "cta": "Zapytaj o analizę"
+        }
       },
       "summary": {
         "title": "Twój wybór",
@@ -2650,7 +2646,8 @@
             "analyse": true
           }
         ]
-      }
+      },
+      "videoSoon": "Ścieżki ruchu, mapy cieplne, dystanse i wykrywanie piłki są jeszcze w przygotowaniu i nie wchodzą w skład dostępnych poziomów – na zapytanie."
     },
     "club": {
       "kicker": "Dla klubowej kasy",

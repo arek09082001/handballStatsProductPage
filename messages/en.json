@@ -2233,16 +2233,6 @@
               "Panorama from two cameras, follow-cam version",
               "Score overlay and live stream"
             ]
-          },
-          {
-            "id": "analyse",
-            "name": "Video Analysis",
-            "audience": "For analysis from the picture",
-            "highlights": [
-              "Everything in Video Team",
-              "Court calibration, running paths, heatmaps, distances",
-              "Ball detection (beta), retraining the detection"
-            ]
           }
         ],
         "storage": "{gb} GB",
@@ -2254,7 +2244,13 @@
         "creditPacks": "Top up from Video Team: {smallCredits} credits for {smallPrice}, {largeCredits} credits for {largePrice}.",
         "betaNote": "Video is a closed beta until {launchDate}. The analysis from the picture only ever suggests – it never creates a scene or a statistics entry on its own.",
         "requestCta": "Request video access",
-        "requestHint": "Want to use the video before the launch? Request access for your account – during the beta it costs nothing."
+        "requestHint": "Want to use the video before the launch? Request access for your account – during the beta it costs nothing.",
+        "soon": {
+          "name": "Video Analysis",
+          "badge": "On request · in progress",
+          "text": "Player tracks, heatmaps and ball detection from the footage are still being built – this tier can't be booked on 1 January. If you'd like to try it, just ask.",
+          "cta": "Request analysis"
+        }
       },
       "summary": {
         "title": "Your selection",
@@ -2650,7 +2646,8 @@
             "analyse": true
           }
         ]
-      }
+      },
+      "videoSoon": "Player tracks, heatmaps, distances and ball detection from the footage are still in progress and not part of the bookable tiers – on request."
     },
     "club": {
       "kicker": "For the club treasury",
@@ -2722,7 +2719,7 @@
       "items": [
         {
           "question": "What does Statix cost?",
-          "answer": "Nothing until {founderDeadline}. From {launchDate} there are two dials: the app tier – Basic stays free forever, Coach costs €79 per season or €9.90 per month, Pro €149 per season or €14.90 per month – and, if you film, a video tier for every team you lead as head coach (they share storage and credits): Video Basic €149, Video Team €399, Video Analysis €849 per season (€14.90, €39.90 and €84.90 per month). Next to a video tier the app tier costs only the bundle price on a season: Coach €39, Pro €75. All prices are end prices."
+          "answer": "Nothing until {founderDeadline}. From {launchDate} there are two dials: the app tier – Basic stays free forever, Coach costs €79 per season or €9.90 per month, Pro €149 per season or €14.90 per month – and, if you film, a video tier for every team you lead as head coach (they share storage and credits): Video Basic €149, Video Team €399 per season (€14.90 and €39.90 per month); Video Analysis with running paths and ball detection is still in progress and available on request. Next to a video tier the app tier costs only the bundle price on a season: Coach €39, Pro €75. All prices are end prices."
         },
         {
           "question": "I already use Statix – do I have to pay from January?",
@@ -2750,7 +2747,7 @@
         },
         {
           "question": "What do I need a video tier for, and what are compute credits?",
-          "answer": "For teams that film their matches. A video tier applies to every team you lead as head coach – they share storage and credits. Video Basic brings 100 GB of storage, tagging, playlists, clips to players and the team library, in sync with the match log. Video Team adds 300 GB, panorama from two cameras, the follow-cam version, the score overlay and live streaming; Video Analysis 500 GB, running paths, heatmaps and ball detection. The analysis from the picture runs on a graphics card; one credit is one hour of it. Video Team includes 40 credits per season and Video Analysis 180 (3 and 15 per month on a monthly plan); you can top up 10 for €19 or 30 for €49. Trial runs cost nothing, failed runs are credited back."
+          "answer": "For teams that film their matches. A video tier applies to every team you lead as head coach – they share storage and credits. Video Basic brings 100 GB of storage, tagging, playlists, clips to players and the team library, in sync with the match log. Video Team adds 300 GB, panorama from two cameras, the follow-cam version, the score overlay and live streaming. Running paths, heatmaps and ball detection (Video Analysis) are still in progress and on request only. The analysis from the picture runs on a graphics card; one credit is one hour of it. Video Team includes 40 credits per season (3 per month on a monthly plan); you can top up 10 for €19 or 30 for €49. Trial runs cost nothing, failed runs are credited back."
         },
         {
           "question": "How do I buy a plan?",

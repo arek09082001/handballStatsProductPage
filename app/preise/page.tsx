@@ -157,18 +157,6 @@ export default async function Page() {
                 'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich: alles aus Video Basis, 300 GB Speicher und 40 Rechen-Credits je Saison, dazu Panorama aus zwei Kameras, Schwenk-Fassung, Spielstand-Einblendung und Livestream. 399 € je Saison oder 39,90 € im Monat, ab dem 1. Januar 2027.',
               url: pageUrl,
             },
-            {
-              '@type': 'Offer',
-              '@id': `${pageUrl}#offer-video-analyse`,
-              name: 'Video Analyse',
-              price: '849',
-              priceCurrency: 'EUR',
-              availability: 'https://schema.org/PreOrder',
-              priceValidFrom,
-              description:
-                'Video-Stufe für alle Mannschaften, in denen du Cheftrainer bist – Speicher und Credits teilen sie sich: alles aus Video Team, 500 GB Speicher und 180 Rechen-Credits je Saison, dazu Feldkalibrierung, Laufwege, Heatmaps und Distanzen, Ballerkennung (Beta) und Erkennung nachtrainieren. 849 € je Saison oder 84,90 € im Monat, ab dem 1. Januar 2027.',
-              url: pageUrl,
-            },
           ],
           publisher: {
             '@id': `${SITE_URL}/#organization`,

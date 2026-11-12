@@ -28,12 +28,15 @@ export const VIDEO_TIER_IDS: readonly VideoTierId[] = [
   'none',
   'basis',
   'team',
-  'analyse',
 ];
+/**
+ * 'analyse' stays in the types and the sheet (the app still knows the tier),
+ * but it is not bookable at launch: tracking and ball detection are still in
+ * progress, so the page offers it on request only.
+ */
 export const PAID_VIDEO_TIER_IDS: readonly PaidVideoTierId[] = [
   'basis',
   'team',
-  'analyse',
 ];
 
 export interface SeasonPrice {

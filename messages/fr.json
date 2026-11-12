@@ -2233,16 +2233,6 @@
               "Panorama à deux caméras, version panoramique suivie",
               "Incrustation du score et diffusion en direct"
             ]
-          },
-          {
-            "id": "analyse",
-            "name": "Vidéo Analyse",
-            "audience": "Pour l’analyse à partir de l’image",
-            "highlights": [
-              "Tout ce que contient Vidéo Équipe",
-              "Calibrage du terrain, déplacements, cartes de chaleur, distances",
-              "Détection du ballon (bêta), réentraîner la détection"
-            ]
           }
         ],
         "storage": "{gb} Go",
@@ -2254,7 +2244,13 @@
         "creditPacks": "Recharge à partir de Vidéo Équipe : {smallCredits} crédits pour {smallPrice}, {largeCredits} crédits pour {largePrice}.",
         "betaNote": "La vidéo est une bêta fermée jusqu’au {launchDate}. L’analyse à partir de l’image ne fait que proposer – elle ne crée jamais d’elle-même une scène ou une entrée statistique.",
         "requestCta": "Demander l’accès à la vidéo",
-        "requestHint": "Tu veux utiliser la vidéo avant le lancement ? Demande l’activation pour ton compte – pendant la bêta, elle ne coûte rien."
+        "requestHint": "Tu veux utiliser la vidéo avant le lancement ? Demande l’activation pour ton compte – pendant la bêta, elle ne coûte rien.",
+        "soon": {
+          "name": "Vidéo Analyse",
+          "badge": "Sur demande · en cours",
+          "text": "Déplacements, cartes de chaleur et détection du ballon à partir de la vidéo sont encore en développement : ce niveau n'est pas disponible au 1er janvier. Pour l'essayer, demande-nous.",
+          "cta": "Demander l'analyse"
+        }
       },
       "summary": {
         "title": "Votre sélection",
@@ -2650,7 +2646,8 @@
             "analyse": true
           }
         ]
-      }
+      },
+      "videoSoon": "Déplacements, cartes de chaleur, distances et détection du ballon sont encore en cours et ne font pas partie des niveaux réservables – sur demande."
     },
     "club": {
       "kicker": "Pour la caisse du club",
