@@ -953,7 +953,7 @@
             "items": [
               {
                 "label": "Dostawca:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur i San Francisco, USA; region hostingu: Frankfurt nad Menem, Niemcy (UE)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapur 049513; region hostingu: Frankfurt nad Menem, Niemcy (UE)."
               },
               {
                 "label": "Polityka prywatności:",
@@ -1207,7 +1207,7 @@
               },
               {
                 "label": "Dostawca, magazyn wideo:",
-                "value": "Cloudflare, Inc., San Francisco, USA (dla EOG: Cloudflare Germany GmbH, Monachium); przechowywanie i przetwarzanie wyłącznie w UE."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA; przechowywanie i przetwarzanie wyłącznie w UE."
               },
               {
                 "label": "Umowa powierzenia przetwarzania, Cloudflare:",
@@ -3120,7 +3120,7 @@
           "text": "Którzy podmioty przetwarzające biorą udział – hosting, baza danych, wysyłka e-maili i dostawcy AI – jest wymienione z nazwy w regulaminie i polityce prywatności, wraz z informacjami o przekazywaniu do państw trzecich."
         }
       ],
-      "closing": "Pełne zapisy znajdują się w <terms>regulaminie (§ 7 ochrona danych i powierzenie przetwarzania)</terms> oraz w <privacy>polityce prywatności</privacy>. Do umowy powierzenia wystarczy e-mail na <mail>{email}</mail>."
+      "closing": "Pełne zapisy znajdują się w <terms>regulaminie (§ 7 ochrona danych i powierzenie przetwarzania)</terms> oraz w <privacy>polityce prywatności</privacy>. Do umowy powierzenia wystarczy e-mail na <mail>{email}</mail>. Do nagrań wideo i transmisji na żywo dostępny jest <consent>wzór zgody</consent> (po niemiecku), który możecie wydrukować i dać do podpisu zawodniczkom, zawodnikom i rodzicom."
     },
     "rollout": {
       "kicker": "Wdrożenie",

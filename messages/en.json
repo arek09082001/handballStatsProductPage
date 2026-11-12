@@ -948,7 +948,7 @@
             "items": [
               {
                 "label": "Service provider:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapore and San Francisco, USA; hosting region: Frankfurt am Main, Germany (EU)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapore 049513; hosting region: Frankfurt am Main, Germany (EU)."
               },
               {
                 "label": "Privacy policy:",
@@ -1202,7 +1202,7 @@
               },
               {
                 "label": "Provider, video storage:",
-                "value": "Cloudflare, Inc., San Francisco, USA (for the EEA: Cloudflare Germany GmbH, Munich); storage and processing exclusively in the EU."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA; storage and processing exclusively in the EU."
               },
               {
                 "label": "Data processing agreement, Cloudflare:",
@@ -3120,7 +3120,7 @@
           "text": "Which processors are involved – hosting, database, email delivery and the AI providers – is named in the GTC and the privacy policy, together with notes on transfers to third countries."
         }
       ],
-      "closing": "The full provisions are in the <terms>GTC (§ 7 data protection and processing)</terms> and in the <privacy>privacy policy</privacy>. For a data processing agreement an email to <mail>{email}</mail> is enough."
+      "closing": "The full provisions are in the <terms>GTC (§ 7 data protection and processing)</terms> and in the <privacy>privacy policy</privacy>. For a data processing agreement an email to <mail>{email}</mail> is enough. For video recordings and livestreams there is a <consent>consent form template</consent> (in German) that you can print and have players and parents sign."
     },
     "rollout": {
       "kicker": "Getting started",

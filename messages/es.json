@@ -953,7 +953,7 @@
             "items": [
               {
                 "label": "Proveedor:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur y San Francisco, EE. UU.; región de alojamiento: Fráncfort del Meno, Alemania (UE)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapur 049513; región de alojamiento: Fráncfort del Meno, Alemania (UE)."
               },
               {
                 "label": "Política de privacidad:",
@@ -1207,7 +1207,7 @@
               },
               {
                 "label": "Proveedor, almacenamiento de vídeo:",
-                "value": "Cloudflare, Inc., San Francisco, EE. UU. (para el EEE: Cloudflare Germany GmbH, Múnich); almacenamiento y tratamiento exclusivamente en la UE."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, EE. UU.; almacenamiento y tratamiento exclusivamente en la UE."
               },
               {
                 "label": "Contrato de encargo de tratamiento, Cloudflare:",
@@ -3120,7 +3120,7 @@
           "text": "Qué encargados del tratamiento intervienen —alojamiento, base de datos, envío de correo y los proveedores de IA— consta con nombre en las condiciones generales y en la política de privacidad, junto con las indicaciones sobre transferencias a terceros países."
         }
       ],
-      "closing": "Las disposiciones completas están en las <terms>condiciones generales (§ 7, protección de datos y encargo del tratamiento)</terms> y en la <privacy>política de privacidad</privacy>. Para un contrato de encargo basta un correo a <mail>{email}</mail>."
+      "closing": "Las disposiciones completas están en las <terms>condiciones generales (§ 7, protección de datos y encargo del tratamiento)</terms> y en la <privacy>política de privacidad</privacy>. Para un contrato de encargo basta un correo a <mail>{email}</mail>. Para grabaciones de vídeo y livestreams hay una <consent>plantilla de consentimiento</consent> (en alemán) que podéis imprimir y hacer firmar a jugadoras, jugadores y familias."
     },
     "rollout": {
       "kicker": "Implantación",

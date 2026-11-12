@@ -948,7 +948,7 @@
             "items": [
               {
                 "label": "Dienstanbieter:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur bzw. San Francisco, USA; Hosting-Region: Frankfurt am Main, Deutschland (EU)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapur 049513; Hosting-Region: Frankfurt am Main, Deutschland (EU)."
               },
               {
                 "label": "Datenschutzerklärung:",
@@ -1202,7 +1202,7 @@
               },
               {
                 "label": "Dienstanbieter Videospeicher:",
-                "value": "Cloudflare, Inc., San Francisco, USA (für den EWR: Cloudflare Germany GmbH, München); Speicherung und Verarbeitung ausschließlich in der EU."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA; Speicherung und Verarbeitung ausschließlich in der EU."
               },
               {
                 "label": "Auftragsverarbeitungsvertrag Cloudflare:",
@@ -3120,7 +3120,7 @@
           "text": "Welche Auftragsverarbeiter beteiligt sind – Hosting, Datenbank, E-Mail-Versand und die KI-Anbieter – steht namentlich in den AGB und der Datenschutzerklärung, samt Hinweisen zu Drittlandübermittlungen."
         }
       ],
-      "closing": "Die vollständigen Regelungen stehen in den <terms>AGB (§ 7 Datenschutz und Auftragsverarbeitung)</terms> und in der <privacy>Datenschutzerklärung</privacy>. Für einen AVV genügt eine Mail an <mail>{email}</mail>."
+      "closing": "Die vollständigen Regelungen stehen in den <terms>AGB (§ 7 Datenschutz und Auftragsverarbeitung)</terms> und in der <privacy>Datenschutzerklärung</privacy>. Für einen AVV genügt eine Mail an <mail>{email}</mail>. Für Videoaufnahmen und Livestreams gibt es eine <consent>Vorlage zur Einwilligung</consent>, die ihr ausdrucken und von Spielerinnen, Spielern und Eltern unterschreiben lassen könnt."
     },
     "rollout": {
       "kicker": "Einführung",

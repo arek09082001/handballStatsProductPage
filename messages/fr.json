@@ -953,7 +953,7 @@
             "items": [
               {
                 "label": "Prestataire :",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapour et San Francisco, États-Unis ; région d’hébergement : Francfort-sur-le-Main, Allemagne (UE)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapour 049513 ; région d’hébergement : Francfort-sur-le-Main, Allemagne (UE)."
               },
               {
                 "label": "Politique de confidentialité :",
@@ -1207,7 +1207,7 @@
               },
               {
                 "label": "Prestataire, stockage vidéo :",
-                "value": "Cloudflare, Inc., San Francisco, États-Unis (pour l’EEE : Cloudflare Germany GmbH, Munich) ; stockage et traitement exclusivement dans l’UE."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis ; stockage et traitement exclusivement dans l’UE."
               },
               {
                 "label": "Contrat de sous-traitance, Cloudflare :",
@@ -3120,7 +3120,7 @@
           "text": "Quels sous-traitants interviennent – hébergement, base de données, envoi d’e-mails et fournisseurs d’IA – est indiqué nommément dans les CGU et la politique de confidentialité, avec les mentions sur les transferts vers des pays tiers."
         }
       ],
-      "closing": "Les dispositions complètes figurent dans les <terms>CGU (§ 7 protection des données et sous-traitance)</terms> et dans la <privacy>politique de confidentialité</privacy>. Pour un contrat de sous-traitance, un e-mail à <mail>{email}</mail> suffit."
+      "closing": "Les dispositions complètes figurent dans les <terms>CGU (§ 7 protection des données et sous-traitance)</terms> et dans la <privacy>politique de confidentialité</privacy>. Pour un contrat de sous-traitance, un e-mail à <mail>{email}</mail> suffit. Pour les enregistrements vidéo et les livestreams, un <consent>modèle de consentement</consent> (en allemand) peut être imprimé et signé par les joueuses, joueurs et parents."
     },
     "rollout": {
       "kicker": "Mise en place",
