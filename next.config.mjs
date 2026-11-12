@@ -121,11 +121,16 @@ const baseConfig = {
       'handball-harz-tipps': 'handball-ausruestung-einsteiger',
     };
 
-    return Object.entries(merged).map(([from, to]) => ({
-      source: `/ratgeber/${from}`,
-      destination: `/ratgeber/${to}`,
-      permanent: true,
-    }));
+    return [
+      // Auftragsverarbeitungsvertrag für Vereine (PDF aus docs/legal im App-Repo).
+      // Nicht permanent: die Datei bekommt bei einer neuen Fassung evtl. einen neuen Namen.
+      { source: '/avv', destination: '/downloads/statix-avv.pdf', permanent: false },
+      ...Object.entries(merged).map(([from, to]) => ({
+        source: `/ratgeber/${from}`,
+        destination: `/ratgeber/${to}`,
+        permanent: true,
+      })),
+    ];
   },
 
   async headers() {
