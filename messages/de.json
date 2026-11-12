@@ -177,7 +177,7 @@
           "Supabase – Datenbank- und Dateispeicherdienste (Hosting-Region Frankfurt am Main)",
           "Vercel – Hosting und Betrieb der Webseiten und der Anwendung sowie anonymisierte Reichweitenmessung",
           "Brevo – Versand von E-Mails (Registrierungsbestätigungen, Erinnerungen, Kontaktanfragen, Newsletter)",
-          "Anthropic und OpenAI – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
+          "Anthropic – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
           "Die Push-Dienste der Browser-Hersteller (u. a. Google, Mozilla, Apple) – Zustellung aktivierter Push-Benachrichtigungen",
           "Cloudflare – Objektspeicher (Cloudflare R2) für Videoaufnahmen, ausschließlich in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)",
           "Fly.io – Aufbereitung hochgeladener Videoaufnahmen und Zusammenfügen aufgezeichneter Live-Übertragungen in Frankfurt am Main (nur bei Nutzung der Videofunktion)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 KI-gestützte Analysen",
         "paragraphs": [
-          "Statix bietet automatisierte, KI-gestützte Analysen von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern an. Diese Analysen werden mithilfe von Diensten Dritter (insbesondere Anthropic und OpenAI) erstellt. Eine Analyse wird nie automatisch im Hintergrund erzeugt, sondern ausschließlich durch eine bewusste Aktion des Nutzers ausgelöst.",
+          "Statix bietet automatisierte, KI-gestützte Analysen von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern an. Diese Analysen werden mithilfe von Diensten Dritter (insbesondere Anthropic) erstellt. Eine Analyse wird nie automatisch im Hintergrund erzeugt, sondern ausschließlich durch eine bewusste Aktion des Nutzers ausgelöst.",
           "Vor der Übermittlung an den KI-Anbieter werden die Namen der Spielerinnen und Spieler durch bedeutungslose Kürzel ersetzt (Pseudonymisierung). Die Zuordnung der Kürzel zu den Personen verlässt den Dienst nicht. Einzelheiten beschreibt die Datenschutzerklärung.",
           "Die Ergebnisse sind KI-generierte Inhalte im Sinne der Verordnung (EU) 2024/1689 (KI-Verordnung). Sie werden in der Anwendung als solche gekennzeichnet. KI-generierte Auswertungen beruhen auf statistischen Verfahren und den vom Nutzer erfassten Daten. Sie können unvollständig, ungenau oder fehlerhaft sein und dienen ausschließlich zu Informations- und Unterstützungszwecken.",
           "Die Analysen stellen keine verbindliche Handlungsempfehlung dar und ersetzen nicht die eigene Bewertung und Entscheidung des Nutzers. Der Anbieter übernimmt keine Gewähr für die Richtigkeit, Vollständigkeit oder Eignung der KI-gestützten Ergebnisse für einen bestimmten Zweck.",
@@ -1086,15 +1086,11 @@
               },
               {
                 "label": "Dienstanbieter:",
-                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+                "value": "Anthropic PBC, San Francisco, USA."
               },
               {
                 "label": "Datenschutzerklärung Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Datenschutzerklärung OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Grundlage Drittlandtransfers:",

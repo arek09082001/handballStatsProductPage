@@ -177,7 +177,7 @@
           "Supabase – usługi bazodanowe i przechowywanie plików (region hostingu: Frankfurt nad Menem)",
           "Vercel – hosting i prowadzenie stron internetowych oraz aplikacji, a także zanonimizowany pomiar zasięgu",
           "Brevo – wysyłka wiadomości e-mail (potwierdzenia rejestracji, przypomnienia, zapytania kontaktowe, newsletter)",
-          "Anthropic i OpenAI – analizy wspierane przez AI na podstawie danych spseudonimizowanych",
+          "Anthropic – analizy wspierane przez AI na podstawie danych spseudonimizowanych",
           "Usługi push producentów przeglądarek (m.in. Google, Mozilla, Apple) – dostarczanie włączonych powiadomień push",
           "Cloudflare – magazyn obiektów (Cloudflare R2) dla nagrań wideo, wyłącznie w centrach danych w Unii Europejskiej (tylko przy korzystaniu z funkcji wideo)",
           "Fly.io – przygotowanie przesłanych nagrań wideo i łączenie nagranych transmisji na żywo we Frankfurcie nad Menem (tylko przy korzystaniu z funkcji wideo)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 Analizy wspierane przez sztuczną inteligencję",
         "paragraphs": [
-          "Statix oferuje zautomatyzowane, wspierane przez AI analizy meczów, drużyn i poszczególnych zawodników. Analizy te powstają przy pomocy usług podmiotów trzecich (w szczególności Anthropic i OpenAI). Analiza nigdy nie jest generowana automatycznie w tle, lecz zawsze uruchamiana świadomym działaniem Użytkownika.",
+          "Statix oferuje zautomatyzowane, wspierane przez AI analizy meczów, drużyn i poszczególnych zawodników. Analizy te powstają przy pomocy usług podmiotów trzecich (w szczególności Anthropic). Analiza nigdy nie jest generowana automatycznie w tle, lecz zawsze uruchamiana świadomym działaniem Użytkownika.",
           "Przed przekazaniem do dostawcy AI nazwiska zawodników są zastępowane pozbawionymi znaczenia identyfikatorami (pseudonimizacja). Przyporządkowanie identyfikatorów do osób nie opuszcza Usługi. Szczegóły opisuje polityka prywatności.",
           "Wyniki są treściami wygenerowanymi przez AI w rozumieniu rozporządzenia (UE) 2024/1689 (akt o sztucznej inteligencji). W aplikacji są oznaczone jako takie. Analizy wygenerowane przez AI opierają się na metodach statystycznych i na danych zarejestrowanych przez Użytkownika. Mogą być niepełne, nieprecyzyjne lub błędne i służą wyłącznie celom informacyjnym i pomocniczym.",
           "Analizy nie stanowią wiążącego zalecenia działania i nie zastępują własnej oceny ani decyzji Użytkownika. Usługodawca nie udziela gwarancji co do poprawności, kompletności ani przydatności wyników wspieranych przez AI do określonego celu.",
@@ -1091,15 +1091,11 @@
               },
               {
                 "label": "Dostawcy:",
-                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+                "value": "Anthropic PBC, San Francisco, USA."
               },
               {
                 "label": "Polityka prywatności Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Polityka prywatności OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Podstawa przekazywania do państw trzecich:",

@@ -177,7 +177,7 @@
           "Supabase – services de base de données et de stockage de fichiers (région d’hébergement : Francfort-sur-le-Main)",
           "Vercel – hébergement et exploitation des sites web et de l’application ainsi que mesure d’audience anonymisée",
           "Brevo – envoi d’e-mails (confirmations d’inscription, rappels, demandes de contact, newsletter)",
-          "Anthropic et OpenAI – analyses assistées par IA sur la base de données pseudonymisées",
+          "Anthropic – analyses assistées par IA sur la base de données pseudonymisées",
           "Les services push des éditeurs de navigateurs (notamment Google, Mozilla, Apple) – distribution des notifications push activées",
           "Cloudflare – stockage d’objets (Cloudflare R2) pour les enregistrements vidéo, exclusivement dans des centres de données de l’Union européenne (uniquement en cas d’utilisation de la fonction vidéo)",
           "Fly.io – préparation des enregistrements vidéo importés et assemblage des diffusions en direct enregistrées à Francfort-sur-le-Main (uniquement en cas d’utilisation de la fonction vidéo)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 Analyses assistées par intelligence artificielle",
         "paragraphs": [
-          "Statix propose des analyses automatisées et assistées par IA des matchs, des équipes et des joueurs pris individuellement. Ces analyses sont réalisées avec le concours de services tiers (en particulier Anthropic et OpenAI). Une analyse n’est jamais générée automatiquement en arrière-plan ; elle est toujours déclenchée par une action délibérée de l’Utilisateur.",
+          "Statix propose des analyses automatisées et assistées par IA des matchs, des équipes et des joueurs pris individuellement. Ces analyses sont réalisées avec le concours de services tiers (en particulier Anthropic). Une analyse n’est jamais générée automatiquement en arrière-plan ; elle est toujours déclenchée par une action délibérée de l’Utilisateur.",
           "Avant la transmission au fournisseur d’IA, les noms des joueurs sont remplacés par des identifiants dépourvus de signification (pseudonymisation). La correspondance entre les identifiants et les personnes ne quitte pas le Service. La politique de confidentialité en décrit les détails.",
           "Les résultats sont des contenus générés par IA au sens du règlement (UE) 2024/1689 (règlement sur l’intelligence artificielle). Ils sont signalés comme tels dans l’application. Les analyses générées par IA reposent sur des méthodes statistiques et sur les données saisies par l’Utilisateur. Elles peuvent être incomplètes, imprécises ou erronées et servent exclusivement à des fins d’information et d’aide.",
           "Les analyses ne constituent pas une recommandation d’action contraignante et ne remplacent pas l’appréciation ni la décision propres de l’Utilisateur. Le fournisseur ne donne aucune garantie quant à l’exactitude, à l’exhaustivité ou à l’adéquation des résultats assistés par IA à une finalité déterminée.",
@@ -1091,15 +1091,11 @@
               },
               {
                 "label": "Prestataires :",
-                "value": "Anthropic PBC, San Francisco, États-Unis ; OpenAI, L.L.C., San Francisco, États-Unis."
+                "value": "Anthropic PBC, San Francisco, États-Unis ."
               },
               {
                 "label": "Politique de confidentialité d’Anthropic :",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Politique de confidentialité d’OpenAI :",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Fondement des transferts vers des pays tiers :",

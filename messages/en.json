@@ -177,7 +177,7 @@
           "Supabase – database and file storage services (hosting region Frankfurt am Main)",
           "Vercel – hosting and operation of the websites and the application as well as anonymised reach measurement",
           "Brevo – sending emails (registration confirmations, reminders, contact requests, newsletter)",
-          "Anthropic and OpenAI – AI-assisted analyses based on pseudonymised data",
+          "Anthropic – AI-assisted analyses based on pseudonymised data",
           "The push services of the browser vendors (including Google, Mozilla, Apple) – delivery of push notifications that have been enabled",
           "Cloudflare – object storage (Cloudflare R2) for video recordings, exclusively in data centres in the European Union (only where the video feature is used)",
           "Fly.io – processing of uploaded video recordings and assembling recorded live broadcasts in Frankfurt am Main (only when the video feature is used)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 AI-assisted analyses",
         "paragraphs": [
-          "Statix offers automated, AI-assisted analyses of matches, teams and individual players. These analyses are produced with the help of third-party services (in particular Anthropic and OpenAI). An analysis is never generated automatically in the background but is always triggered by a deliberate action of the User.",
+          "Statix offers automated, AI-assisted analyses of matches, teams and individual players. These analyses are produced with the help of third-party services (in particular Anthropic). An analysis is never generated automatically in the background but is always triggered by a deliberate action of the User.",
           "Before transmission to the AI provider, the names of players are replaced with meaningless identifiers (pseudonymisation). The mapping between identifiers and persons does not leave the Service. The privacy policy describes the details.",
           "The results are AI-generated content within the meaning of Regulation (EU) 2024/1689 (AI Act). They are labelled as such in the application. AI-generated analyses are based on statistical methods and on the data recorded by the User. They may be incomplete, inaccurate or erroneous and serve exclusively for information and support purposes.",
           "The analyses do not constitute a binding recommendation for action and do not replace the User's own assessment and decision. The provider gives no warranty as to the accuracy, completeness or suitability of the AI-assisted results for any particular purpose.",
@@ -1086,15 +1086,11 @@
               },
               {
                 "label": "Service providers:",
-                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+                "value": "Anthropic PBC, San Francisco, USA."
               },
               {
                 "label": "Privacy policy Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Privacy policy OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Basis for third-country transfers:",
