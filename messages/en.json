@@ -35,7 +35,7 @@
       "title": "General Terms and Conditions (GTC)",
       "description": "Terms governing the use of the Statix handball statistics app and the associated websites and services.",
       "transparencyBadge": "Fair and transparent",
-      "lastUpdated": "Last updated: 24 September 2026"
+      "lastUpdated": "Last updated: 11 November 2026"
     },
     "documentTitle": "General Terms and Conditions",
     "documentTitleShort": "GTC",
@@ -177,7 +177,7 @@
           "Supabase – database and file storage services (hosting region Frankfurt am Main)",
           "Vercel – hosting and operation of the websites and the application as well as anonymised reach measurement",
           "Brevo – sending emails (registration confirmations, reminders, contact requests, newsletter)",
-          "Anthropic and OpenAI – AI-assisted analyses based on pseudonymised data",
+          "Anthropic – AI-assisted analyses based on pseudonymised data",
           "The push services of the browser vendors (including Google, Mozilla, Apple) – delivery of push notifications that have been enabled",
           "Cloudflare – object storage (Cloudflare R2) for video recordings, exclusively in data centres in the European Union (only where the video feature is used)",
           "Fly.io – processing of uploaded video recordings and assembling recorded live broadcasts in Frankfurt am Main (only when the video feature is used)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 AI-assisted analyses",
         "paragraphs": [
-          "Statix offers automated, AI-assisted analyses of matches, teams and individual players. These analyses are produced with the help of third-party services (in particular Anthropic and OpenAI). An analysis is never generated automatically in the background but is always triggered by a deliberate action of the User.",
+          "Statix offers automated, AI-assisted analyses of matches, teams and individual players. These analyses are produced with the help of third-party services (in particular Anthropic). An analysis is never generated automatically in the background but is always triggered by a deliberate action of the User.",
           "Before transmission to the AI provider, the names of players are replaced with meaningless identifiers (pseudonymisation). The mapping between identifiers and persons does not leave the Service. The privacy policy describes the details.",
           "The results are AI-generated content within the meaning of Regulation (EU) 2024/1689 (AI Act). They are labelled as such in the application. AI-generated analyses are based on statistical methods and on the data recorded by the User. They may be incomplete, inaccurate or erroneous and serve exclusively for information and support purposes.",
           "The analyses do not constitute a binding recommendation for action and do not replace the User's own assessment and decision. The provider gives no warranty as to the accuracy, completeness or suitability of the AI-assisted results for any particular purpose.",
@@ -948,7 +948,7 @@
             "items": [
               {
                 "label": "Service provider:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapore and San Francisco, USA; hosting region: Frankfurt am Main, Germany (EU)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapore 049513; hosting region: Frankfurt am Main, Germany (EU)."
               },
               {
                 "label": "Privacy policy:",
@@ -1086,15 +1086,11 @@
               },
               {
                 "label": "Service providers:",
-                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+                "value": "Anthropic PBC, San Francisco, USA."
               },
               {
                 "label": "Privacy policy Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Privacy policy OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Basis for third-country transfers:",
@@ -1202,7 +1198,7 @@
               },
               {
                 "label": "Provider, video storage:",
-                "value": "Cloudflare, Inc., San Francisco, USA (for the EEA: Cloudflare Germany GmbH, Munich); storage and processing exclusively in the EU."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA; storage and processing exclusively in the EU."
               },
               {
                 "label": "Data processing agreement, Cloudflare:",
@@ -3120,7 +3116,7 @@
           "text": "Which processors are involved – hosting, database, email delivery and the AI providers – is named in the GTC and the privacy policy, together with notes on transfers to third countries."
         }
       ],
-      "closing": "The full provisions are in the <terms>GTC (§ 7 data protection and processing)</terms> and in the <privacy>privacy policy</privacy>. For a data processing agreement an email to <mail>{email}</mail> is enough."
+      "closing": "The full provisions are in the <terms>GTC (§ 7 data protection and processing)</terms> and in the <privacy>privacy policy</privacy>. For a data processing agreement an email to <mail>{email}</mail> is enough. For video recordings and livestreams there is a <consent>consent form template</consent> (in German) that you can print and have players and parents sign."
     },
     "rollout": {
       "kicker": "Getting started",

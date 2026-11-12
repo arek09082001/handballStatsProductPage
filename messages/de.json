@@ -35,7 +35,7 @@
       "title": "Allgemeine Geschäftsbedingungen (AGB)",
       "description": "Bedingungen für die Nutzung der Statix Handball-Statistik-App sowie der zugehörigen Webseiten und Dienste.",
       "transparencyBadge": "Fair und transparent",
-      "lastUpdated": "Letzte Aktualisierung: 24. September 2026"
+      "lastUpdated": "Letzte Aktualisierung: 11. November 2026"
     },
     "documentTitle": "Allgemeine Geschäftsbedingungen",
     "documentTitleShort": "AGB",
@@ -177,7 +177,7 @@
           "Supabase – Datenbank- und Dateispeicherdienste (Hosting-Region Frankfurt am Main)",
           "Vercel – Hosting und Betrieb der Webseiten und der Anwendung sowie anonymisierte Reichweitenmessung",
           "Brevo – Versand von E-Mails (Registrierungsbestätigungen, Erinnerungen, Kontaktanfragen, Newsletter)",
-          "Anthropic und OpenAI – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
+          "Anthropic – KI-gestützte Analysen auf Basis pseudonymisierter Daten",
           "Die Push-Dienste der Browser-Hersteller (u. a. Google, Mozilla, Apple) – Zustellung aktivierter Push-Benachrichtigungen",
           "Cloudflare – Objektspeicher (Cloudflare R2) für Videoaufnahmen, ausschließlich in Rechenzentren der Europäischen Union (nur bei Nutzung der Videofunktion)",
           "Fly.io – Aufbereitung hochgeladener Videoaufnahmen und Zusammenfügen aufgezeichneter Live-Übertragungen in Frankfurt am Main (nur bei Nutzung der Videofunktion)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 KI-gestützte Analysen",
         "paragraphs": [
-          "Statix bietet automatisierte, KI-gestützte Analysen von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern an. Diese Analysen werden mithilfe von Diensten Dritter (insbesondere Anthropic und OpenAI) erstellt. Eine Analyse wird nie automatisch im Hintergrund erzeugt, sondern ausschließlich durch eine bewusste Aktion des Nutzers ausgelöst.",
+          "Statix bietet automatisierte, KI-gestützte Analysen von Spielen, Mannschaften und einzelnen Spielerinnen und Spielern an. Diese Analysen werden mithilfe von Diensten Dritter (insbesondere Anthropic) erstellt. Eine Analyse wird nie automatisch im Hintergrund erzeugt, sondern ausschließlich durch eine bewusste Aktion des Nutzers ausgelöst.",
           "Vor der Übermittlung an den KI-Anbieter werden die Namen der Spielerinnen und Spieler durch bedeutungslose Kürzel ersetzt (Pseudonymisierung). Die Zuordnung der Kürzel zu den Personen verlässt den Dienst nicht. Einzelheiten beschreibt die Datenschutzerklärung.",
           "Die Ergebnisse sind KI-generierte Inhalte im Sinne der Verordnung (EU) 2024/1689 (KI-Verordnung). Sie werden in der Anwendung als solche gekennzeichnet. KI-generierte Auswertungen beruhen auf statistischen Verfahren und den vom Nutzer erfassten Daten. Sie können unvollständig, ungenau oder fehlerhaft sein und dienen ausschließlich zu Informations- und Unterstützungszwecken.",
           "Die Analysen stellen keine verbindliche Handlungsempfehlung dar und ersetzen nicht die eigene Bewertung und Entscheidung des Nutzers. Der Anbieter übernimmt keine Gewähr für die Richtigkeit, Vollständigkeit oder Eignung der KI-gestützten Ergebnisse für einen bestimmten Zweck.",
@@ -948,7 +948,7 @@
             "items": [
               {
                 "label": "Dienstanbieter:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur bzw. San Francisco, USA; Hosting-Region: Frankfurt am Main, Deutschland (EU)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapur 049513; Hosting-Region: Frankfurt am Main, Deutschland (EU)."
               },
               {
                 "label": "Datenschutzerklärung:",
@@ -1086,15 +1086,11 @@
               },
               {
                 "label": "Dienstanbieter:",
-                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+                "value": "Anthropic PBC, San Francisco, USA."
               },
               {
                 "label": "Datenschutzerklärung Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Datenschutzerklärung OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Grundlage Drittlandtransfers:",
@@ -1202,7 +1198,7 @@
               },
               {
                 "label": "Dienstanbieter Videospeicher:",
-                "value": "Cloudflare, Inc., San Francisco, USA (für den EWR: Cloudflare Germany GmbH, München); Speicherung und Verarbeitung ausschließlich in der EU."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA; Speicherung und Verarbeitung ausschließlich in der EU."
               },
               {
                 "label": "Auftragsverarbeitungsvertrag Cloudflare:",
@@ -3120,7 +3116,7 @@
           "text": "Welche Auftragsverarbeiter beteiligt sind – Hosting, Datenbank, E-Mail-Versand und die KI-Anbieter – steht namentlich in den AGB und der Datenschutzerklärung, samt Hinweisen zu Drittlandübermittlungen."
         }
       ],
-      "closing": "Die vollständigen Regelungen stehen in den <terms>AGB (§ 7 Datenschutz und Auftragsverarbeitung)</terms> und in der <privacy>Datenschutzerklärung</privacy>. Für einen AVV genügt eine Mail an <mail>{email}</mail>."
+      "closing": "Die vollständigen Regelungen stehen in den <terms>AGB (§ 7 Datenschutz und Auftragsverarbeitung)</terms> und in der <privacy>Datenschutzerklärung</privacy>. Für einen AVV genügt eine Mail an <mail>{email}</mail>. Für Videoaufnahmen und Livestreams gibt es eine <consent>Vorlage zur Einwilligung</consent>, die ihr ausdrucken und von Spielerinnen, Spielern und Eltern unterschreiben lassen könnt."
     },
     "rollout": {
       "kicker": "Einführung",

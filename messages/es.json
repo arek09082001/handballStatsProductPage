@@ -35,7 +35,7 @@
       "title": "Condiciones Generales de Contratación (CGC)",
       "description": "Condiciones que rigen el uso de la aplicación de estadísticas de balonmano Statix y de los sitios web y servicios asociados.",
       "transparencyBadge": "Justas y transparentes",
-      "lastUpdated": "Última actualización: 24 de septiembre de 2026"
+      "lastUpdated": "Última actualización: 11 de noviembre de 2026"
     },
     "documentTitle": "Condiciones Generales de Contratación",
     "documentTitleShort": "CGC",
@@ -177,7 +177,7 @@
           "Supabase: servicios de base de datos y almacenamiento de archivos (región de alojamiento: Fráncfort del Meno)",
           "Vercel: alojamiento y explotación de los sitios web y de la aplicación, así como medición anonimizada del alcance",
           "Brevo: envío de correos electrónicos (confirmaciones de registro, recordatorios, solicitudes de contacto, boletín)",
-          "Anthropic y OpenAI: análisis asistidos por IA sobre la base de datos seudonimizados",
+          "Anthropic: análisis asistidos por IA sobre la base de datos seudonimizados",
           "Los servicios push de los fabricantes de navegadores (entre otros Google, Mozilla, Apple): entrega de las notificaciones push activadas",
           "Cloudflare – almacenamiento de objetos (Cloudflare R2) para grabaciones de vídeo, exclusivamente en centros de datos de la Unión Europea (solo si se usa la función de vídeo)",
           "Fly.io – preparación de las grabaciones de vídeo subidas y unión de retransmisiones en directo grabadas en Fráncfort del Meno (solo si se usa la función de vídeo)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 Análisis asistidos por inteligencia artificial",
         "paragraphs": [
-          "Statix ofrece análisis automatizados y asistidos por IA de partidos, equipos y jugadores individuales. Estos análisis se elaboran con ayuda de servicios de terceros (en particular Anthropic y OpenAI). Un análisis nunca se genera automáticamente en segundo plano, sino que siempre se activa mediante una acción deliberada del Usuario.",
+          "Statix ofrece análisis automatizados y asistidos por IA de partidos, equipos y jugadores individuales. Estos análisis se elaboran con ayuda de servicios de terceros (en particular Anthropic). Un análisis nunca se genera automáticamente en segundo plano, sino que siempre se activa mediante una acción deliberada del Usuario.",
           "Antes de la transmisión al proveedor de IA, los nombres de los jugadores se sustituyen por identificadores sin significado (seudonimización). La correspondencia entre identificadores y personas no sale del Servicio. La política de privacidad describe los detalles.",
           "Los resultados son contenidos generados por IA en el sentido del Reglamento (UE) 2024/1689 (Reglamento de Inteligencia Artificial). Se identifican como tales en la aplicación. Los análisis generados por IA se basan en métodos estadísticos y en los datos registrados por el Usuario. Pueden ser incompletos, imprecisos o erróneos y sirven exclusivamente a efectos de información y apoyo.",
           "Los análisis no constituyen una recomendación vinculante de actuación ni sustituyen la valoración y la decisión propias del Usuario. El prestador no ofrece garantía alguna sobre la exactitud, la integridad o la idoneidad de los resultados asistidos por IA para una finalidad concreta.",
@@ -953,7 +953,7 @@
             "items": [
               {
                 "label": "Proveedor:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur y San Francisco, EE. UU.; región de alojamiento: Fráncfort del Meno, Alemania (UE)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapur 049513; región de alojamiento: Fráncfort del Meno, Alemania (UE)."
               },
               {
                 "label": "Política de privacidad:",
@@ -1091,15 +1091,11 @@
               },
               {
                 "label": "Proveedores:",
-                "value": "Anthropic PBC, San Francisco, EE. UU.; OpenAI, L.L.C., San Francisco, EE. UU."
+                "value": "Anthropic PBC, San Francisco, EE. UU.."
               },
               {
                 "label": "Política de privacidad de Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Política de privacidad de OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Base para las transferencias a terceros países:",
@@ -1207,7 +1203,7 @@
               },
               {
                 "label": "Proveedor, almacenamiento de vídeo:",
-                "value": "Cloudflare, Inc., San Francisco, EE. UU. (para el EEE: Cloudflare Germany GmbH, Múnich); almacenamiento y tratamiento exclusivamente en la UE."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, EE. UU.; almacenamiento y tratamiento exclusivamente en la UE."
               },
               {
                 "label": "Contrato de encargo de tratamiento, Cloudflare:",
@@ -3120,7 +3116,7 @@
           "text": "Qué encargados del tratamiento intervienen —alojamiento, base de datos, envío de correo y los proveedores de IA— consta con nombre en las condiciones generales y en la política de privacidad, junto con las indicaciones sobre transferencias a terceros países."
         }
       ],
-      "closing": "Las disposiciones completas están en las <terms>condiciones generales (§ 7, protección de datos y encargo del tratamiento)</terms> y en la <privacy>política de privacidad</privacy>. Para un contrato de encargo basta un correo a <mail>{email}</mail>."
+      "closing": "Las disposiciones completas están en las <terms>condiciones generales (§ 7, protección de datos y encargo del tratamiento)</terms> y en la <privacy>política de privacidad</privacy>. Para un contrato de encargo basta un correo a <mail>{email}</mail>. Para grabaciones de vídeo y livestreams hay una <consent>plantilla de consentimiento</consent> (en alemán) que podéis imprimir y hacer firmar a jugadoras, jugadores y familias."
     },
     "rollout": {
       "kicker": "Implantación",

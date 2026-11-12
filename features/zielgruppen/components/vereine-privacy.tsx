@@ -69,6 +69,7 @@ export default function VereinePrivacy() {
             ...VEREINE_MAIL_ARGS,
             terms: inlineLink('/agb'),
             privacy: inlineLink('/datenschutz'),
+            consent: externalLink('/vorlagen/einwilligung-video.html'),
             mail: externalLink(`mailto:${CLUB_CONFIG.email.main}`),
           })}
         </p>

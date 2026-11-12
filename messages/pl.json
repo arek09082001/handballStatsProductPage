@@ -35,7 +35,7 @@
       "title": "Ogólne warunki korzystania (OWK)",
       "description": "Warunki regulujące korzystanie z aplikacji do statystyk piłki ręcznej Statix oraz z powiązanych stron internetowych i usług.",
       "transparencyBadge": "Uczciwe i przejrzyste",
-      "lastUpdated": "Ostatnia aktualizacja: 24 września 2026"
+      "lastUpdated": "Ostatnia aktualizacja: 11 listopada 2026"
     },
     "documentTitle": "Ogólne warunki korzystania",
     "documentTitleShort": "OWK",
@@ -177,7 +177,7 @@
           "Supabase – usługi bazodanowe i przechowywanie plików (region hostingu: Frankfurt nad Menem)",
           "Vercel – hosting i prowadzenie stron internetowych oraz aplikacji, a także zanonimizowany pomiar zasięgu",
           "Brevo – wysyłka wiadomości e-mail (potwierdzenia rejestracji, przypomnienia, zapytania kontaktowe, newsletter)",
-          "Anthropic i OpenAI – analizy wspierane przez AI na podstawie danych spseudonimizowanych",
+          "Anthropic – analizy wspierane przez AI na podstawie danych spseudonimizowanych",
           "Usługi push producentów przeglądarek (m.in. Google, Mozilla, Apple) – dostarczanie włączonych powiadomień push",
           "Cloudflare – magazyn obiektów (Cloudflare R2) dla nagrań wideo, wyłącznie w centrach danych w Unii Europejskiej (tylko przy korzystaniu z funkcji wideo)",
           "Fly.io – przygotowanie przesłanych nagrań wideo i łączenie nagranych transmisji na żywo we Frankfurcie nad Menem (tylko przy korzystaniu z funkcji wideo)",
@@ -192,7 +192,7 @@
       "ai": {
         "title": "§ 9 Analizy wspierane przez sztuczną inteligencję",
         "paragraphs": [
-          "Statix oferuje zautomatyzowane, wspierane przez AI analizy meczów, drużyn i poszczególnych zawodników. Analizy te powstają przy pomocy usług podmiotów trzecich (w szczególności Anthropic i OpenAI). Analiza nigdy nie jest generowana automatycznie w tle, lecz zawsze uruchamiana świadomym działaniem Użytkownika.",
+          "Statix oferuje zautomatyzowane, wspierane przez AI analizy meczów, drużyn i poszczególnych zawodników. Analizy te powstają przy pomocy usług podmiotów trzecich (w szczególności Anthropic). Analiza nigdy nie jest generowana automatycznie w tle, lecz zawsze uruchamiana świadomym działaniem Użytkownika.",
           "Przed przekazaniem do dostawcy AI nazwiska zawodników są zastępowane pozbawionymi znaczenia identyfikatorami (pseudonimizacja). Przyporządkowanie identyfikatorów do osób nie opuszcza Usługi. Szczegóły opisuje polityka prywatności.",
           "Wyniki są treściami wygenerowanymi przez AI w rozumieniu rozporządzenia (UE) 2024/1689 (akt o sztucznej inteligencji). W aplikacji są oznaczone jako takie. Analizy wygenerowane przez AI opierają się na metodach statystycznych i na danych zarejestrowanych przez Użytkownika. Mogą być niepełne, nieprecyzyjne lub błędne i służą wyłącznie celom informacyjnym i pomocniczym.",
           "Analizy nie stanowią wiążącego zalecenia działania i nie zastępują własnej oceny ani decyzji Użytkownika. Usługodawca nie udziela gwarancji co do poprawności, kompletności ani przydatności wyników wspieranych przez AI do określonego celu.",
@@ -953,7 +953,7 @@
             "items": [
               {
                 "label": "Dostawca:",
-                "value": "Supabase, Inc., 970 Toa Payoh North #07-04, Singapur i San Francisco, USA; region hostingu: Frankfurt nad Menem, Niemcy (UE)."
+                "value": "Supabase Pte. Ltd., 65 Chulia Street #38-02/03, OCBC Centre, Singapur 049513; region hostingu: Frankfurt nad Menem, Niemcy (UE)."
               },
               {
                 "label": "Polityka prywatności:",
@@ -1091,15 +1091,11 @@
               },
               {
                 "label": "Dostawcy:",
-                "value": "Anthropic PBC, San Francisco, USA; OpenAI, L.L.C., San Francisco, USA."
+                "value": "Anthropic PBC, San Francisco, USA."
               },
               {
                 "label": "Polityka prywatności Anthropic:",
                 "url": "https://www.anthropic.com/legal/privacy"
-              },
-              {
-                "label": "Polityka prywatności OpenAI:",
-                "url": "https://openai.com/policies/privacy-policy"
               },
               {
                 "label": "Podstawa przekazywania do państw trzecich:",
@@ -1207,7 +1203,7 @@
               },
               {
                 "label": "Dostawca, magazyn wideo:",
-                "value": "Cloudflare, Inc., San Francisco, USA (dla EOG: Cloudflare Germany GmbH, Monachium); przechowywanie i przetwarzanie wyłącznie w UE."
+                "value": "Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, USA; przechowywanie i przetwarzanie wyłącznie w UE."
               },
               {
                 "label": "Umowa powierzenia przetwarzania, Cloudflare:",
@@ -3120,7 +3116,7 @@
           "text": "Którzy podmioty przetwarzające biorą udział – hosting, baza danych, wysyłka e-maili i dostawcy AI – jest wymienione z nazwy w regulaminie i polityce prywatności, wraz z informacjami o przekazywaniu do państw trzecich."
         }
       ],
-      "closing": "Pełne zapisy znajdują się w <terms>regulaminie (§ 7 ochrona danych i powierzenie przetwarzania)</terms> oraz w <privacy>polityce prywatności</privacy>. Do umowy powierzenia wystarczy e-mail na <mail>{email}</mail>."
+      "closing": "Pełne zapisy znajdują się w <terms>regulaminie (§ 7 ochrona danych i powierzenie przetwarzania)</terms> oraz w <privacy>polityce prywatności</privacy>. Do umowy powierzenia wystarczy e-mail na <mail>{email}</mail>. Do nagrań wideo i transmisji na żywo dostępny jest <consent>wzór zgody</consent> (po niemiecku), który możecie wydrukować i dać do podpisu zawodniczkom, zawodnikom i rodzicom."
     },
     "rollout": {
       "kicker": "Wdrożenie",
