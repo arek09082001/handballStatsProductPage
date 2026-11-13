@@ -19,6 +19,7 @@
       "agb": "AGB",
       "newsletterUnsubscribe": "Newsletter abmelden",
       "llmsTxt": "llms.txt",
+      "cancelContract": "Verträge hier kündigen",
       "consentSettings": "Cookie-Einstellungen"
     },
     "preferredSource": {
@@ -41,6 +42,7 @@
     "documentTitleShort": "AGB",
     "providerLabel": "Anbieter und Vertragspartner",
     "privacyLinkLabel": "Zur Datenschutzerklärung",
+    "cancelLinkLabel": "Verträge hier kündigen",
     "imprintLinkLabel": "Zum Impressum",
     "withdrawalFormTitle": "Muster-Widerrufsformular",
     "withdrawalFormHint": "(Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es zurück.)",
@@ -257,7 +259,7 @@
         "paragraphs": [
           "Der Nutzungsvertrag über die kostenlose Nutzung wird auf unbestimmte Zeit geschlossen und kann von beiden Parteien jederzeit ohne Einhaltung einer Frist gekündigt werden, insbesondere durch Löschung des Nutzerkontos. Die Kündigung durch Löschung des Kontos wird mit Ablauf der Karenzzeit nach § 12 Abs. 4 wirksam; bis dahin kann der Nutzer sie durch eine Anmeldung zurücknehmen.",
           "Kostenpflichtige Stufen können als Monatsabo oder als Saisonabo gebucht werden. Das Monatsabo verlängert sich jeweils um einen Monat und kann jederzeit zum Ende des laufenden Monats gekündigt werden. Das Saisonabo läuft bis zum Ende der laufenden Saison (30. Juni) und verlängert sich um jeweils eine weitere Saison, wenn es nicht bis zum Ende der laufenden Saison gekündigt wird. Verbraucher können ein auf diese Weise verlängertes Saisonabo jederzeit mit einer Frist von einem Monat kündigen; im Voraus gezahlte Entgelte für die Zeit nach dem Wirksamwerden der Kündigung erstattet der Anbieter anteilig.",
-          "Gekündigt werden kann jederzeit in der Anwendung über die Schaltfläche „Vertrag kündigen“ unter Einstellungen → Plan & Abrechnung (§ 312k BGB) oder in Textform. Herabstufungen werden zum Ende des laufenden Abrechnungszeitraums wirksam.",
+          "Gekündigt werden kann jederzeit ohne Anmeldung über die Kündigungsschaltfläche „Verträge hier kündigen“ unter app.statix-app.de/kuendigen (§ 312k BGB), angemeldet auch unter Einstellungen → Plan & Abrechnung, oder in Textform. Nach dem Absenden erhält der Nutzer sofort eine Bestätigung per E-Mail mit Datum und Uhrzeit des Eingangs und dem Vertragsende. Herabstufungen werden zum Ende des laufenden Abrechnungszeitraums wirksam.",
           "Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt für beide Parteien unberührt. Ein wichtiger Grund liegt für den Anbieter insbesondere bei einem erheblichen Verstoß des Nutzers gegen diese AGB vor.",
           "Kündigungen bedürfen der Textform (z. B. per E-Mail); die Löschung des Kontos in der Anwendung genügt."
         ],

@@ -19,6 +19,7 @@
       "agb": "Terms & Conditions",
       "newsletterUnsubscribe": "Unsubscribe from newsletter",
       "llmsTxt": "llms.txt",
+      "cancelContract": "Cancel contract here",
       "consentSettings": "Cookie settings"
     },
     "preferredSource": {
@@ -41,6 +42,7 @@
     "documentTitleShort": "GTC",
     "providerLabel": "Provider and contracting party",
     "privacyLinkLabel": "To the privacy policy",
+    "cancelLinkLabel": "Cancel contract here",
     "imprintLinkLabel": "To the legal notice",
     "withdrawalFormTitle": "Model withdrawal form",
     "withdrawalFormHint": "(Complete and return this form only if you wish to withdraw from the contract.)",
@@ -257,7 +259,7 @@
         "paragraphs": [
           "The usage contract for free use is concluded for an indefinite period and may be terminated by either party at any time without notice, in particular by deleting the user account. Termination by deleting the account takes effect upon expiry of the grace period under § 12 para. 4; until then the user can withdraw it by signing in.",
           "Paid tiers can be booked as a monthly or a season subscription. The monthly subscription renews by one month at a time and can be cancelled at any time with effect from the end of the current month. The season subscription runs until the end of the current season (30 June) and renews by one further season at a time unless cancelled by the end of the current season. Consumers may cancel a season subscription renewed in this way at any time with one month’s notice; the provider refunds pro rata any fees paid in advance for the period after the cancellation takes effect.",
-          "Cancellation is possible at any time in the app via the “Cancel contract” button under Settings → Plan & billing (§ 312k BGB) or in text form. Downgrades take effect at the end of the current billing period.",
+          "Cancellation is possible at any time without signing in via the cancellation button “Cancel contract here” at app.statix-app.de/kuendigen (§ 312k BGB), when signed in also under Settings → Plan & billing, or in text form. After submitting, the user immediately receives a confirmation by email stating the date and time of receipt and the end of the contract. Downgrades take effect at the end of the current billing period.",
           "The right to extraordinary termination for good cause remains unaffected for both parties. For the provider, good cause exists in particular in the event of a material breach of these GTC by the User.",
           "Terminations require text form (e.g. by email); deleting the account within the application is sufficient."
         ],
