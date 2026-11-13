@@ -147,6 +147,17 @@ export default function AgbContent() {
                   </p>
                 ))}
 
+                {/* Kündigungsschaltfläche nach § 312k BGB in § 14 */}
+                {key === 'term' && (
+                  <p className={`mt-4 ${contentClassName}`}>
+                    <a
+                      href='https://app.statix-app.de/kuendigen'
+                      className={linkClassName}>
+                      {t('cancelLinkLabel')}
+                    </a>
+                  </p>
+                )}
+
                 {/* Verweis auf die Datenschutzerklärung in § 8 */}
                 {key === 'dataProtection' && (
                   <p className={`mt-4 ${contentClassName}`}>

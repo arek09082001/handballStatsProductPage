@@ -19,6 +19,7 @@
       "agb": "Condiciones",
       "newsletterUnsubscribe": "Darse de baja del boletín",
       "llmsTxt": "llms.txt",
+      "cancelContract": "Cancelar contrato aquí",
       "consentSettings": "Configuración de cookies"
     },
     "preferredSource": {
@@ -41,6 +42,7 @@
     "documentTitleShort": "CGC",
     "providerLabel": "Prestador y parte contratante",
     "privacyLinkLabel": "Ir a la política de privacidad",
+    "cancelLinkLabel": "Cancelar contrato aquí",
     "imprintLinkLabel": "Ir al aviso legal",
     "withdrawalFormTitle": "Modelo de formulario de desistimiento",
     "withdrawalFormHint": "(Cumplimente y envíe este formulario únicamente si desea desistir del contrato.)",
@@ -257,7 +259,7 @@
         "paragraphs": [
           "El contrato de uso para el uso gratuito se celebra por tiempo indefinido y puede ser resuelto por ambas partes en cualquier momento sin preaviso, en particular mediante la eliminación de la cuenta de usuario. La resolución mediante la eliminación de la cuenta surte efecto al expirar el periodo de gracia del § 12, apdo. 4; hasta entonces el usuario puede retirarla iniciando sesión.",
           "Los niveles de pago pueden contratarse como suscripción mensual o de temporada. La suscripción mensual se prorroga mes a mes y puede cancelarse en cualquier momento con efecto al final del mes en curso. La suscripción de temporada dura hasta el final de la temporada en curso (30 de junio) y se prorroga por otra temporada si no se cancela antes del final de la temporada en curso. Los consumidores pueden cancelar en cualquier momento una suscripción de temporada así prorrogada con un preaviso de un mes; el proveedor reembolsa proporcionalmente lo pagado por adelantado para el periodo posterior a la cancelación.",
-          "La cancelación es posible en cualquier momento en la app mediante el botón «Cancelar contrato» en Ajustes → Plan y facturación (§ 312k BGB) o en forma de texto. Las reducciones de nivel surten efecto al final del periodo de facturación en curso.",
+          "La cancelación es posible en cualquier momento sin iniciar sesión mediante el botón «Cancelar contrato aquí» en app.statix-app.de/kuendigen (§ 312k BGB), con sesión iniciada también en Ajustes → Plan y facturación, o en forma de texto. Tras el envío, el usuario recibe de inmediato una confirmación por correo con la fecha y hora de recepción y el fin del contrato. Las reducciones de nivel surten efecto al final del periodo de facturación en curso.",
           "El derecho de resolución extraordinaria por causa justificada no se ve afectado para ninguna de las partes. Para el prestador existe causa justificada, en particular, en caso de infracción sustancial de estas CGC por parte del Usuario.",
           "Las resoluciones requieren forma de texto (p. ej. por correo electrónico); basta con eliminar la cuenta dentro de la aplicación."
         ],

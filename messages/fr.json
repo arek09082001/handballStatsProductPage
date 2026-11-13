@@ -19,6 +19,7 @@
       "agb": "Conditions générales",
       "newsletterUnsubscribe": "Se désabonner de la newsletter",
       "llmsTxt": "llms.txt",
+      "cancelContract": "Résilier le contrat ici",
       "consentSettings": "Paramètres des cookies"
     },
     "preferredSource": {
@@ -41,6 +42,7 @@
     "documentTitleShort": "CGU",
     "providerLabel": "Fournisseur et cocontractant",
     "privacyLinkLabel": "Vers la politique de confidentialité",
+    "cancelLinkLabel": "Résilier le contrat ici",
     "imprintLinkLabel": "Vers les mentions légales",
     "withdrawalFormTitle": "Modèle de formulaire de rétractation",
     "withdrawalFormHint": "(Veuillez compléter et renvoyer le présent formulaire uniquement si vous souhaitez vous rétracter du contrat.)",
@@ -257,7 +259,7 @@
         "paragraphs": [
           "Le contrat d’utilisation pour l’usage gratuit est conclu pour une durée indéterminée et peut être résilié par chacune des parties à tout moment sans préavis, notamment par la suppression du compte utilisateur. La résiliation par suppression du compte prend effet à l’expiration du délai de grâce prévu au § 12, al. 4 ; jusque-là, l’utilisateur peut la retirer en se connectant.",
           "Les niveaux payants peuvent être souscrits sous forme d’abonnement mensuel ou de saison. L’abonnement mensuel est reconduit de mois en mois et peut être résilié à tout moment pour la fin du mois en cours. L’abonnement de saison court jusqu’à la fin de la saison en cours (30 juin) et est reconduit pour une saison supplémentaire s’il n’est pas résilié avant la fin de la saison en cours. Les consommateurs peuvent résilier à tout moment un abonnement de saison ainsi reconduit avec un préavis d’un mois ; le fournisseur rembourse au prorata les sommes payées d’avance pour la période postérieure à la prise d’effet de la résiliation.",
-          "La résiliation est possible à tout moment dans l’app via le bouton « Résilier le contrat » sous Paramètres → Offre et facturation (§ 312k BGB) ou sous forme textuelle. Les rétrogradations prennent effet à la fin de la période de facturation en cours.",
+          "La résiliation est possible à tout moment sans connexion via le bouton « Résilier le contrat ici » sur app.statix-app.de/kuendigen (§ 312k BGB), une fois connecté également sous Paramètres → Offre et facturation, ou sous forme textuelle. Après l’envoi, l’utilisateur reçoit immédiatement une confirmation par e-mail indiquant la date et l’heure de réception et la fin du contrat. Les rétrogradations prennent effet à la fin de la période de facturation en cours.",
           "Le droit de résiliation extraordinaire pour motif grave demeure inchangé pour les deux parties. Pour le fournisseur, un motif grave existe notamment en cas de violation substantielle des présentes CGU par l’Utilisateur.",
           "Les résiliations requièrent la forme textuelle (p. ex. par e-mail) ; la suppression du compte dans l’application suffit."
         ],

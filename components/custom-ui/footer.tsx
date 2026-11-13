@@ -20,6 +20,8 @@ const legalLinks: { href: string; labelKey: string; titleKey?: string }[] = [
   // it is the link a visitor (and a Play Store review) looks for by name.
   { href: '/datenschutz', labelKey: 'privacy', titleKey: 'privacy' },
   { href: '/agb', labelKey: 'agb', titleKey: 'agb' },
+  // Kündigungsschaltfläche nach § 312k BGB — liegt in der App, ohne Login.
+  { href: 'https://app.statix-app.de/kuendigen', labelKey: 'cancelContract' },
   { href: '/newsletter/unsubscribe', labelKey: 'newsletterUnsubscribe' },
 ];
 

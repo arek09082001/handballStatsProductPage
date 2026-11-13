@@ -19,6 +19,7 @@
       "agb": "Regulamin",
       "newsletterUnsubscribe": "Wypisz się z newslettera",
       "llmsTxt": "llms.txt",
+      "cancelContract": "Wypowiedz umowę tutaj",
       "consentSettings": "Ustawienia cookie"
     },
     "preferredSource": {
@@ -41,6 +42,7 @@
     "documentTitleShort": "OWK",
     "providerLabel": "Usługodawca i strona umowy",
     "privacyLinkLabel": "Przejdź do polityki prywatności",
+    "cancelLinkLabel": "Wypowiedz umowę tutaj",
     "imprintLinkLabel": "Przejdź do informacji o wydawcy",
     "withdrawalFormTitle": "Wzór formularza odstąpienia od umowy",
     "withdrawalFormHint": "(Formularz ten należy wypełnić i odesłać tylko wtedy, gdy chcą Państwo odstąpić od umowy.)",
@@ -257,7 +259,7 @@
         "paragraphs": [
           "Umowa o korzystanie w wersji bezpłatnej zostaje zawarta na czas nieokreślony i może zostać wypowiedziana przez obie strony w każdej chwili bez zachowania terminu, w szczególności przez usunięcie konta użytkownika. Wypowiedzenie przez usunięcie konta staje się skuteczne z upływem okresu karencji zgodnie z § 12 ust. 4; do tego czasu użytkownik może je wycofać, logując się.",
           "Płatne poziomy można wykupić jako abonament miesięczny lub sezonowy. Abonament miesięczny przedłuża się o kolejny miesiąc i można go w każdej chwili wypowiedzieć ze skutkiem na koniec bieżącego miesiąca. Abonament sezonowy trwa do końca bieżącego sezonu (30 czerwca) i przedłuża się o kolejny sezon, jeśli nie zostanie wypowiedziany do końca bieżącego sezonu. Konsumenci mogą w każdej chwili wypowiedzieć tak przedłużony abonament sezonowy z miesięcznym okresem wypowiedzenia; dostawca proporcjonalnie zwraca opłaty uiszczone z góry za okres po wejściu wypowiedzenia w życie.",
-          "Wypowiedzenie jest możliwe w każdej chwili w aplikacji przyciskiem „Wypowiedz umowę” w Ustawienia → Plan i rozliczenia (§ 312k BGB) lub w formie tekstowej. Obniżenie poziomu następuje z końcem bieżącego okresu rozliczeniowego.",
+          "Wypowiedzenie jest możliwe w każdej chwili bez logowania przyciskiem „Wypowiedz umowę tutaj” pod adresem app.statix-app.de/kuendigen (§ 312k BGB), po zalogowaniu także w Ustawienia → Plan i rozliczenia, lub w formie tekstowej. Po wysłaniu użytkownik od razu otrzymuje e-mailem potwierdzenie z datą i godziną wpływu oraz datą końca umowy. Obniżenie poziomu następuje z końcem bieżącego okresu rozliczeniowego.",
           "Prawo do nadzwyczajnego wypowiedzenia z ważnego powodu pozostaje nienaruszone dla obu stron. Po stronie usługodawcy ważny powód zachodzi w szczególności w przypadku istotnego naruszenia niniejszych OWK przez Użytkownika.",
           "Wypowiedzenie wymaga formy dokumentowej (np. wiadomości e-mail); wystarczające jest usunięcie konta w aplikacji."
         ],
