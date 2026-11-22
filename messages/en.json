@@ -339,7 +339,8 @@
       "videoTagging": "Video tagging",
       "videoBriefing": "Video briefing",
       "holdSwipe": "Hold & swipe",
-      "livestream": "Livestream"
+      "livestream": "Livestream",
+      "videoAnalysis": "Handball video analysis"
     },
     "spotlight": {
       "badge": "New",
@@ -7252,6 +7253,14 @@
         "recordingComparison": {
           "title": "Paper, Excel or app?",
           "text": "The three ways to keep handball statistics, compared honestly."
+        },
+        "videoGuide": {
+          "title": "Handball video analysis explained",
+          "text": "Film, tag, brief, send – and what software needs to do for it."
+        },
+        "filmingGuide": {
+          "title": "How to film a handball match",
+          "text": "Camera, tripod, position and sound – what a usable recording takes."
         }
       }
     },
@@ -7454,5 +7463,180 @@
     "privacyLink": "Privacy policy",
     "reject": "Decline",
     "accept": "Accept"
+  },
+  "videoAnalysisPage": {
+    "hero": {
+      "kicker": "Video analysis in handball",
+      "titleHighlight": "Handball video analysis",
+      "titleTail": "from match footage to team briefing",
+      "lede": "Handball video analysis means filming the match, marking the scenes that decided it and showing them to the team or to a single player so that something changes in the next training session. This page shows how that works without a staff of analysts – with a phone, a tripod and software that brings video and statistics together.",
+      "ctaPrimary": "Request access to the video beta",
+      "ctaSecondary": "Start statistics for free",
+      "betaNote": "The video features of Statix are in a closed beta and are enabled for individual accounts on request. Live statistics are open to everyone.",
+      "trust": [
+        "With a phone and a tripod",
+        "Video and statistics in one",
+        "Clips for individual players"
+      ]
+    },
+    "workflow": {
+      "kicker": "The process",
+      "title": "Handball video analysis in five steps",
+      "description": "From the tripod in the hall to the scene on a player's phone. Every step works without special software – the right software takes most of the manual work away.",
+      "steps": [
+        {
+          "title": "Film the match",
+          "text": "A phone on a high tripod at the centre line is enough for analysis. The higher the camera, the better you can read the defensive formation and running lines. With two phones side by side the whole court is in the picture without anybody panning."
+        },
+        {
+          "title": "Sync the video with the match",
+          "text": "Nobody watches through a 60-minute video without any orientation. If you keep statistics during the match, every action already has a match time – synced once with the game clock, every goal and every missed shot becomes a jump mark in the video."
+        },
+        {
+          "title": "Tag the scenes",
+          "text": "Mark the scenes that matter: action, player, phase of play, defensive system. Not everything – only what you want to discuss. Good tags are the ones you will filter by later, such as every back-court shot against a 6-0 defence."
+        },
+        {
+          "title": "Brief the team",
+          "text": "Show five to eight scenes instead of a whole match: pause, draw the running line, zoom in on the gap in the middle of the defence. Twenty minutes with one clear question achieve more than an hour of looking back."
+        },
+        {
+          "title": "Send scenes to players",
+          "text": "The strongest effect comes from a compilation for one person only: her shots, her defensive actions. She watches it on her phone whenever she likes – and you can see whether she opened it."
+        }
+      ]
+    },
+    "checklist": {
+      "kicker": "Checklist",
+      "title": "What video analysis software for handball must be able to do",
+      "description": "A video player can play things back. Analysing a handball match takes more – these six points separate a tool from a folder full of files.",
+      "items": [
+        {
+          "title": "Upload long recordings",
+          "text": "A match quickly adds up to several gigabytes. The upload has to run in chunks and continue after a dropped connection instead of starting over."
+        },
+        {
+          "title": "Sync with match time",
+          "text": "Without a link between the video and the course of the match you search every scene by hand. With it you jump from the goal in the statistics straight to the moment in the video."
+        },
+        {
+          "title": "Tags from handball",
+          "text": "Seven-metre throw, fast break, power play and short-handed, 6-0 or 5-1, shot position – handball terms rather than football ones, plus your own tags for your set plays."
+        },
+        {
+          "title": "Filters and playlists",
+          "text": "Every left-wing shot while short-handed across three matches: a question like that has to turn into a list within seconds, one you can save and reuse."
+        },
+        {
+          "title": "Draw and zoom in the briefing",
+          "text": "Arrow, running line, circle and zoom on the paused picture – on a laptop, tablet or projector, controlled by mouse, finger or presenter."
+        },
+        {
+          "title": "Share with players and coaching staff",
+          "text": "Clips for individual people instead of one huge file in the group chat. Players who only get their own scenes actually watch them."
+        }
+      ]
+    },
+    "ways": {
+      "kicker": "Three ways",
+      "title": "Free, general-purpose or built for handball",
+      "description": "Video analysis works with free tools, with general sports software or with a handball app. The difference is how many evenings it costs.",
+      "items": [
+        {
+          "name": "Phone video, player and notes",
+          "effort": "€0 and a lot of time",
+          "good": "A phone films, a free video player jumps to any minute, and a list of match times records the scenes. Good for finding out whether your team can do anything with video at all.",
+          "bad": "You search every scene by hand, cut clips one by one, and send one huge file through a messenger. It usually stops after three matches.",
+          "linkLabel": "Guide: how to film a handball match"
+        },
+        {
+          "name": "General sports video analysis",
+          "effort": "Powerful, for every sport",
+          "good": "Professional tools tag, cut and draw; many come from professional sport and bring ready-made workflows for analysts.",
+          "bad": "You build the handball tags yourself, keep the statistics somewhere else, and price and learning curve are often aimed at full-time analysts.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Handball app with statistics and video",
+          "effort": "The statistics do the groundwork",
+          "good": "Because every action from live recording already has a match time, the video is pre-sorted once synced: goals, saves and misses are jump marks, and the tags come from handball.",
+          "bad": "The head start only exists if statistics were kept during the match. In Statix the video features are still in a closed beta.",
+          "linkLabel": "See video tagging in Statix"
+        }
+      ]
+    },
+    "showcase": {
+      "kicker": "What it looks like",
+      "title": "Video analysis in Statix",
+      "description": "Three stations from the app: the scenes as lanes, the briefing in full screen and the clip that reaches the player. The video features are in beta and are enabled on request.",
+      "items": [
+        {
+          "label": "The lanes: one half, sorted by action",
+          "alt": "The lanes of the tagging bench in Statix: one row per action, one block on the timeline per scene",
+          "linkLabel": "More about video tagging"
+        },
+        {
+          "label": "Briefing: spotlight, pass, running line – the hall underneath is drawn",
+          "alt": "The briefing mode in Statix: a paused picture with a spotlight around a player, an arrow for the pass and a dashed running line",
+          "linkLabel": "More about video briefing"
+        },
+        {
+          "label": "Sent: every clip, to whom, and whether it was watched",
+          "alt": "The sent clips in Statix with recipient, date and whether the clip was opened",
+          "linkLabel": "Send clips to players"
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Read on",
+      "title": "Guides on video in handball",
+      "description": "How to film a match, structure a briefing and turn numbers and scenes into a training focus.",
+      "allLink": "All articles in the guide"
+    },
+    "faq": {
+      "kicker": "Asked",
+      "title": "Frequently asked questions about handball video analysis",
+      "description": "What coaches want to know before filming their first match.",
+      "items": [
+        {
+          "question": "What is handball video analysis?",
+          "answer": "The systematic evaluation of match or training videos: finding scenes, marking them by action, player and phase of play and discussing them with the team. The aim is not to watch the whole match again but to find the few scenes that lead to a training focus."
+        },
+        {
+          "question": "Which software is suitable for handball video analysis?",
+          "answer": "To get started, a phone video, a video player and notes are enough. If you analyse regularly, you need software that uploads long recordings, marks scenes with handball tags, filters them, lets you draw during the briefing and sends clips to players. Statix combines this with live statistics; the video features are currently in a closed beta."
+        },
+        {
+          "question": "Is there free handball video analysis?",
+          "answer": "Yes, with limits: filming with a phone, playing it back in a free player and noting match times on a list costs nothing but time. In Statix, live statistics are permanently free in the Basis tier; the video features belong to the paid video tiers and are currently enabled on request."
+        },
+        {
+          "question": "Where do I put the camera for handball video analysis?",
+          "answer": "As high as possible and level with the centre line, for example in the stands. From there you see the defensive formation and running lines; from the hall floor you mostly see backs. Don't film against windows, and plan battery or power for at least 90 minutes."
+        },
+        {
+          "question": "How long does the video analysis of a handball match take?",
+          "answer": "If you search and cut every scene by hand, you quickly spend longer than the match lasted. With jump marks from live statistics the searching disappears, and what remains is choosing and tagging the scenes you want to discuss."
+        },
+        {
+          "question": "May I film and analyse youth matches?",
+          "answer": "For recordings of minors you need the parents' consent. Settle it in writing at the start of the season and say what the video is used for and who sees it. An internal analysis that only the coaching staff and the team see is much simpler than a publication."
+        },
+        {
+          "question": "What is the difference between video analysis and a video briefing?",
+          "answer": "Analysis happens at the desk: finding, tagging and selecting scenes. The briefing happens in front of the team: showing the selected scenes, pausing, drawing, discussing. A good briefing rarely lasts longer than 20 minutes and has one clear question."
+        },
+        {
+          "question": "Does Statix detect scenes in the video automatically?",
+          "answer": "The jump marks in Statix come from the live statistics, not from the picture. Analysis from the picture – running paths, ball flight, a panorama from two cameras – is the youngest part of the beta and only makes suggestions; a scene or a statistics entry is never created on its own."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Video beta",
+      "title": "Statistics first, then every scene at the push of a button",
+      "description": "Live statistics are free for everyone today – and they are what later finds every scene in the video. We are currently enabling the video features for selected accounts.",
+      "linkLabel": "Request access to the video beta"
+    }
   }
 }

@@ -18,7 +18,7 @@ export const handballspieleLivestreamen: Article = {
   category: 'Kennzahlen & Analyse',
   archetype: 'entscheidung',
   datePublished: '2026-10-06',
-  dateModified: '2026-10-06',
+  dateModified: '2026-11-21',
   readingTimeMinutes: 7,
   excerpt:
     'Eltern, Großeltern, verletzte Spielerinnen: Viele würden gern zusehen und können nicht in die Halle. Was ein Livestream im Amateurhandball wirklich braucht – vom Stativ bis zur Spielstand-Einblendung.',
@@ -78,7 +78,7 @@ Dazu erscheint bei jedem Tor, jeder Parade und jedem Fehlwurf eine Karte mit Rü
 
 Der eigentliche Gewinn kommt nach dem Abpfiff. Die Handys zeichnen während des Livestreams auf, und die Aufzeichnung landet in der Videobibliothek – schon abgeglichen mit der Spieluhr. Jede erfasste Aktion ist damit eine Sprungmarke im Video: ein Tipp auf „Tor #7, 24. Minute“, und das Video steht an der Stelle.
 
-Daraus wird ohne Mehraufwand eine [Spielanalyse](/ratgeber/handball-spielanalyse): Szenen taggen, nach Aktion und Spielerin filtern, einer Spielerin genau ihre Szenen schicken oder das Spiel mit eingebranntem Spielstand herunterladen. Mehr dazu auf der Seite zum [Video-Tagging](/funktionen/video-tagging).
+Daraus wird ohne Mehraufwand eine [Handball-Videoanalyse](/handball-videoanalyse): Szenen taggen, nach Aktion und Spielerin filtern, einer Spielerin genau ihre Szenen schicken oder das Spiel mit eingebranntem Spielstand herunterladen. Mehr dazu auf der Seite zum [Video-Tagging](/funktionen/video-tagging).
 
 ## Häufige Fehler
 
@@ -144,5 +144,5 @@ Daraus wird ohne Mehraufwand eine [Spielanalyse](/ratgeber/handball-spielanalyse
         'Für Full HD mehrere Megabit pro Sekunde Upload je Handy, und zwar stabil über eine Stunde. Teste das vorher in der Halle. Statix senkt bei zu wenig Upload zuerst die Auflösung und nimmt ohne Netz weiter auf, um später nachzuladen.',
     },
   ],
-  relatedSlugs: ['handball-spielanalyse', 'handball-statistik-fuehren', 'handball-timeout-nutzen'],
+  relatedSlugs: ['handballspiel-filmen', 'handball-spielanalyse', 'handball-statistik-fuehren'],
 };

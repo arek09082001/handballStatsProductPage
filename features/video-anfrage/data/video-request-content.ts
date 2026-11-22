@@ -44,6 +44,7 @@ export const VIDEO_REQUEST_SOURCE_IDS = [
   'video-besprechung',
   'livestream',
   'funktionen',
+  'videoanalyse',
 ] as const;
 
 export type VideoRequestSourceId = (typeof VIDEO_REQUEST_SOURCE_IDS)[number];
@@ -124,6 +125,7 @@ export const VIDEO_REQUEST_SOURCE_EMAIL_LABELS: Record<
   'video-besprechung': 'Funktionsseite Video-Besprechung',
   livestream: 'Funktionsseite Livestream',
   funktionen: 'Funktionsübersicht',
+  videoanalyse: 'Themenseite Handball-Videoanalyse',
 };
 
 /** Field limits, mirrored by the client's validation. */

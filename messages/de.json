@@ -339,7 +339,8 @@
       "videoTagging": "Video-Tagging",
       "videoBriefing": "Video-Besprechung",
       "holdSwipe": "Halten & Wischen",
-      "livestream": "Livestream"
+      "livestream": "Livestream",
+      "videoAnalysis": "Handball-Videoanalyse"
     },
     "spotlight": {
       "badge": "Neu",
@@ -7252,6 +7253,14 @@
         "recordingComparison": {
           "title": "Zettel, Excel oder App?",
           "text": "Die drei Wege, eine Handball-Statistik zu führen, ehrlich verglichen."
+        },
+        "videoGuide": {
+          "title": "Handball-Videoanalyse erklärt",
+          "text": "Filmen, taggen, besprechen, verschicken – und was eine Software dafür können muss."
+        },
+        "filmingGuide": {
+          "title": "Ein Handballspiel richtig filmen",
+          "text": "Kamera, Stativ, Position und Ton – was für eine brauchbare Aufnahme reicht."
         }
       }
     },
@@ -7454,5 +7463,180 @@
     "privacyLink": "Datenschutzerklärung",
     "reject": "Ablehnen",
     "accept": "Zustimmen"
+  },
+  "videoAnalysisPage": {
+    "hero": {
+      "kicker": "Videoanalyse im Handball",
+      "titleHighlight": "Handball-Videoanalyse",
+      "titleTail": "vom Spielvideo zur Besprechung",
+      "lede": "Handball-Videoanalyse heißt: das Spiel filmen, die entscheidenden Szenen markieren und sie der Mannschaft oder einer einzelnen Spielerin so zeigen, dass sich im nächsten Training etwas ändert. Hier steht, wie das ohne Analystenstab funktioniert – mit Handy, Stativ und einer Software, die Video und Statistik zusammenbringt.",
+      "ctaPrimary": "Zugang zur Video-Beta anfragen",
+      "ctaSecondary": "Statistik kostenlos starten",
+      "betaNote": "Die Video-Funktionen von Statix sind in einer geschlossenen Beta und werden auf Anfrage für einzelne Konten freigeschaltet. Die Live-Statistik ist für alle offen.",
+      "trust": [
+        "Mit Handy und Stativ",
+        "Video und Statistik in einem",
+        "Clips an einzelne Spielerinnen"
+      ]
+    },
+    "workflow": {
+      "kicker": "Der Ablauf",
+      "title": "Handball-Videoanalyse in fünf Schritten",
+      "description": "Vom Stativ in der Halle bis zur Szene auf dem Handy der Spielerin. Jeder Schritt geht auch ohne spezielle Software – mit einer passenden fallen die meisten Handgriffe weg.",
+      "steps": [
+        {
+          "title": "Spiel filmen",
+          "text": "Ein Handy auf einem hohen Stativ an der Mittellinie reicht für die Analyse. Je höher die Kamera, desto besser liest du Abwehrformation und Laufwege. Mit zwei Handys nebeneinander ist das ganze Feld im Bild, ohne dass jemand schwenken muss."
+        },
+        {
+          "title": "Video mit dem Spiel abgleichen",
+          "text": "Ein 60-Minuten-Video ohne Orientierung schaut niemand durch. Wer während des Spiels Statistik führt, hat jede Aktion schon mit Spielzeit – einmal mit der Spieluhr abgeglichen, wird jedes Tor und jeder Fehlwurf zur Sprungmarke im Video."
+        },
+        {
+          "title": "Szenen taggen",
+          "text": "Markiere die Szenen, die zählen: Aktion, Spielerin, Spielphase, Abwehrsystem. Nicht alles, sondern das, was du besprechen willst. Gute Tags sind die, nach denen du später filterst – etwa alle Würfe aus dem Rückraum gegen eine 6:0-Abwehr."
+        },
+        {
+          "title": "Mit der Mannschaft besprechen",
+          "text": "Zeig fünf bis acht Szenen statt eines ganzen Spiels: anhalten, Laufweg einzeichnen, auf die Lücke im Mittelblock zoomen. Zwanzig Minuten mit einer klaren Frage bringen mehr als eine Stunde Rückblick."
+        },
+        {
+          "title": "Szenen an Spielerinnen schicken",
+          "text": "Am meisten bewirkt der Zusammenschnitt für eine einzige Person: ihre Würfe, ihre Abwehraktionen. Sie sieht ihn am Handy, wann sie will – und du siehst, ob sie ihn geöffnet hat."
+        }
+      ]
+    },
+    "checklist": {
+      "kicker": "Checkliste",
+      "title": "Was eine Videoanalyse-Software für Handball können muss",
+      "description": "Ein Videoplayer kann abspielen. Für die Analyse eines Handballspiels braucht es mehr – diese sechs Punkte trennen ein Werkzeug von einem Ordner voller Dateien.",
+      "items": [
+        {
+          "title": "Lange Aufnahmen hochladen",
+          "text": "Ein Spiel sind schnell mehrere Gigabyte. Der Upload muss in Etappen laufen und nach einem Netzabbruch weitermachen, statt von vorn zu beginnen."
+        },
+        {
+          "title": "Abgleich mit der Spielzeit",
+          "text": "Ohne Verbindung zwischen Video und Spielverlauf suchst du jede Szene von Hand. Mit ihr springst du vom Tor in der Statistik direkt an die Stelle im Video."
+        },
+        {
+          "title": "Tags aus dem Handball",
+          "text": "Siebenmeter, Tempogegenstoß, Über- und Unterzahl, 6:0 oder 5:1, Wurfposition – Begriffe aus dem Handball statt aus dem Fußball, dazu eigene Tags für eure Spielzüge."
+        },
+        {
+          "title": "Filter und Playlists",
+          "text": "Alle Würfe von Linksaußen in Unterzahl über drei Spiele: Eine solche Frage muss in Sekunden eine Liste ergeben, die du speichern und wiederverwenden kannst."
+        },
+        {
+          "title": "Zeichnen und zoomen in der Besprechung",
+          "text": "Pfeil, Laufweg, Kreis und Zoom auf dem angehaltenen Bild – am Laptop, Tablet oder Beamer, bedienbar mit Maus, Finger oder Presenter."
+        },
+        {
+          "title": "Teilen mit Spielerinnen und Trainerteam",
+          "text": "Clips an einzelne Personen statt einer großen Datei im Gruppenchat. Wer nur seine eigenen Szenen bekommt, sieht sie sich auch an."
+        }
+      ]
+    },
+    "ways": {
+      "kicker": "Drei Wege",
+      "title": "Kostenlos, allgemein oder für Handball gebaut",
+      "description": "Videoanalyse geht mit kostenlosen Mitteln, mit allgemeiner Sport-Software oder mit einer Handball-App. Der Unterschied ist, wie viele Abende sie kostet.",
+      "items": [
+        {
+          "name": "Handyvideo, Player und Notizen",
+          "effort": "0 € und viel Zeit",
+          "good": "Ein Handy filmt, ein kostenloser Videoplayer springt an jede Minute, und eine Liste mit Spielzeiten hält die Szenen fest. Gut, um herauszufinden, ob deine Mannschaft mit Video überhaupt etwas anfangen kann.",
+          "bad": "Jede Szene suchst du von Hand, Clips schneidest du einzeln, verschickt wird eine große Datei im Messenger. Nach drei Spielen hört es meistens auf.",
+          "linkLabel": "Anleitung: ein Handballspiel richtig filmen"
+        },
+        {
+          "name": "Allgemeine Sport-Videoanalyse",
+          "effort": "Mächtig, für alle Sportarten",
+          "good": "Professionelle Werkzeuge taggen, schneiden und zeichnen, viele kommen aus dem Profisport und bringen fertige Abläufe für Analysten mit.",
+          "bad": "Die Handball-Tags baust du selbst, die Statistik führst du woanders, und Preis und Einarbeitung sind oft auf hauptamtliche Analysten ausgelegt.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Handball-App mit Statistik und Video",
+          "effort": "Die Statistik macht die Vorarbeit",
+          "good": "Weil jede Aktion aus der Live-Erfassung schon eine Spielzeit hat, ist das Video nach dem Abgleich vorsortiert: Tore, Paraden und Fehlwürfe sind Sprungmarken, die Tags kommen aus dem Handball.",
+          "bad": "Der Vorsprung entsteht nur, wenn im Spiel Statistik geführt wurde. In Statix sind die Video-Funktionen noch in einer geschlossenen Beta.",
+          "linkLabel": "Video-Tagging in Statix ansehen"
+        }
+      ]
+    },
+    "showcase": {
+      "kicker": "So sieht es aus",
+      "title": "Videoanalyse in Statix",
+      "description": "Drei Stationen aus der App: die Szenen als Spuren, die Besprechung im Vollbild und der Clip, der bei der Spielerin ankommt. Die Video-Funktionen sind in der Beta und werden auf Anfrage freigeschaltet.",
+      "items": [
+        {
+          "label": "Die Spuren: eine Halbzeit, nach Aktion sortiert",
+          "alt": "Die Spuren der Tagging-Werkbank in Statix: jede Aktion eine Zeile, jede Szene ein Block auf der Zeitachse",
+          "linkLabel": "Mehr zum Video-Tagging"
+        },
+        {
+          "label": "Besprechung: Scheinwerfer, Pass, Laufweg – das Hallenbild darunter ist gezeichnet",
+          "alt": "Der Besprechungsmodus in Statix: ein angehaltenes Bild mit Scheinwerfer um eine Spielerin, Pfeil für den Pass und gestricheltem Laufweg",
+          "linkLabel": "Mehr zur Video-Besprechung"
+        },
+        {
+          "label": "Versendet: jeder Clip, an wen, und ob er angesehen wurde",
+          "alt": "Die versendeten Clips in Statix mit Empfängerin, Datum und ob der Clip geöffnet wurde",
+          "linkLabel": "Clips an Spielerinnen schicken"
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Weiterlesen",
+      "title": "Anleitungen rund um Video im Handball",
+      "description": "Wie du ein Spiel filmst, eine Besprechung aufbaust und aus Zahlen und Szenen einen Trainingsschwerpunkt machst.",
+      "allLink": "Alle Artikel im Ratgeber"
+    },
+    "faq": {
+      "kicker": "Nachgefragt",
+      "title": "Häufige Fragen zur Handball-Videoanalyse",
+      "description": "Was Trainer wissen wollen, bevor sie das erste Spiel filmen.",
+      "items": [
+        {
+          "question": "Was ist Handball-Videoanalyse?",
+          "answer": "Das systematische Auswerten von Spiel- oder Trainingsvideos: Szenen finden, nach Aktion, Spielerin und Spielphase markieren und mit der Mannschaft besprechen. Ziel ist nicht, das ganze Spiel noch einmal anzusehen, sondern die wenigen Szenen zu finden, aus denen ein Trainingsschwerpunkt folgt."
+        },
+        {
+          "question": "Welche Software eignet sich für Handball-Videoanalyse?",
+          "answer": "Für den Einstieg reichen Handyvideo, ein Videoplayer und Notizen. Wer regelmäßig analysiert, braucht eine Software, die lange Aufnahmen hochlädt, Szenen mit Handball-Tags markiert, filtert, Zeichnen in der Besprechung erlaubt und Clips an Spielerinnen schickt. Statix verbindet das mit der Live-Statistik; die Video-Funktionen sind derzeit in einer geschlossenen Beta."
+        },
+        {
+          "question": "Gibt es Handball-Videoanalyse kostenlos?",
+          "answer": "Ja, mit Einschränkungen: Mit dem Handy filmen, in einem kostenlosen Player abspielen und Spielzeiten auf einer Liste notieren kostet nichts außer Zeit. In Statix ist die Live-Statistik in der Basis-Stufe dauerhaft kostenlos; die Video-Funktionen gehören zu den kostenpflichtigen Video-Stufen und werden derzeit auf Anfrage freigeschaltet."
+        },
+        {
+          "question": "Wo stelle ich die Kamera für eine Handball-Videoanalyse auf?",
+          "answer": "Möglichst hoch und auf Höhe der Mittellinie, zum Beispiel auf der Tribüne. Von dort siehst du Abwehrformation und Laufwege; vom Hallenboden aus vor allem Rücken. Filme nicht gegen Fenster und plane Akku oder Strom für mindestens 90 Minuten ein."
+        },
+        {
+          "question": "Wie lange dauert die Videoanalyse eines Handballspiels?",
+          "answer": "Wer jede Szene von Hand sucht und schneidet, sitzt schnell länger, als das Spiel gedauert hat. Mit Sprungmarken aus der Live-Statistik fällt das Suchen weg, und es bleibt das Auswählen und Taggen der Szenen, die du besprechen willst."
+        },
+        {
+          "question": "Darf ich Jugendspiele filmen und analysieren?",
+          "answer": "Für Aufnahmen Minderjähriger brauchst du die Einwilligung der Eltern. Kläre das zu Saisonbeginn schriftlich und sag dazu, wofür das Video genutzt wird und wer es sieht. Eine interne Analyse, die nur Trainerteam und Mannschaft sehen, ist dabei deutlich einfacher als eine Veröffentlichung."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Videoanalyse und Videobesprechung?",
+          "answer": "Die Analyse passiert am Schreibtisch: Szenen finden, taggen, auswählen. Die Besprechung passiert vor der Mannschaft: die ausgewählten Szenen zeigen, anhalten, einzeichnen, diskutieren. Eine gute Besprechung dauert selten länger als 20 Minuten und hat eine klare Frage."
+        },
+        {
+          "question": "Erkennt Statix Szenen automatisch im Video?",
+          "answer": "Die Sprungmarken in Statix kommen aus der Live-Statistik, nicht aus dem Bild. Die Analyse aus dem Bild – Laufwege, Ballflug, Panorama aus zwei Kameras – ist der jüngste Teil der Beta und macht nur Vorschläge; eine Szene oder ein Statistikeintrag entsteht nie von selbst."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Video-Beta",
+      "title": "Erst die Statistik, dann jede Szene auf Knopfdruck",
+      "description": "Die Live-Statistik ist heute für alle kostenlos – und sie ist das, was später jede Szene im Video findet. Die Video-Funktionen schalten wir gerade für ausgewählte Konten frei.",
+      "linkLabel": "Zugang zur Video-Beta anfragen"
+    }
   }
 }

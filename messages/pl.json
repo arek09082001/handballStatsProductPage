@@ -339,7 +339,8 @@
       "videoTagging": "Tagowanie wideo",
       "videoBriefing": "Odprawa wideo",
       "holdSwipe": "Przytrzymaj i przesuń",
-      "livestream": "Transmisja"
+      "livestream": "Transmisja",
+      "videoAnalysis": "Analiza wideo"
     },
     "spotlight": {
       "badge": "Nowość",
@@ -7252,6 +7253,14 @@
         "recordingComparison": {
           "title": "Kartka, Excel czy aplikacja?",
           "text": "Trzy sposoby prowadzenia statystyk piłki ręcznej, uczciwie porównane."
+        },
+        "videoGuide": {
+          "title": "Analiza wideo w piłce ręcznej",
+          "text": "Nagraj, otaguj, omów, wyślij, i co musi umieć oprogramowanie."
+        },
+        "filmingGuide": {
+          "title": "Jak nagrać mecz piłki ręcznej",
+          "text": "Kamera, statyw, pozycja i dźwięk: czego potrzeba do użytecznego nagrania."
         }
       }
     },
@@ -7454,5 +7463,180 @@
     "privacyLink": "Polityka prywatności",
     "reject": "Odrzuć",
     "accept": "Zgadzam się"
+  },
+  "videoAnalysisPage": {
+    "hero": {
+      "kicker": "Analiza wideo w piłce ręcznej",
+      "titleHighlight": "Analiza wideo w piłce ręcznej",
+      "titleTail": "od nagrania meczu do omówienia",
+      "lede": "Analiza wideo w piłce ręcznej to nagranie meczu, zaznaczenie decydujących akcji i pokazanie ich drużynie albo jednej zawodniczce tak, żeby na następnym treningu coś się zmieniło. Tutaj zobaczysz, jak to zrobić bez sztabu analityków: z telefonem, statywem i oprogramowaniem, które łączy wideo ze statystyką.",
+      "ctaPrimary": "Poproś o dostęp do bety wideo",
+      "ctaSecondary": "Zacznij ze statystyką za darmo",
+      "betaNote": "Funkcje wideo w Statix są w zamkniętej becie i na prośbę włączamy je dla wybranych kont. Statystyka na żywo jest dostępna dla wszystkich.",
+      "trust": [
+        "Telefon i statyw",
+        "Wideo i statystyka w jednym",
+        "Klipy dla każdej zawodniczki"
+      ]
+    },
+    "workflow": {
+      "kicker": "Przebieg",
+      "title": "Analiza wideo w piłce ręcznej w pięciu krokach",
+      "description": "Od statywu w hali do akcji na telefonie zawodniczki. Każdy krok działa bez specjalnego oprogramowania, a z odpowiednim znika większość ręcznej pracy.",
+      "steps": [
+        {
+          "title": "Nagraj mecz",
+          "text": "Do analizy wystarczy telefon na wysokim statywie na wysokości linii środkowej. Im wyżej kamera, tym lepiej widać ustawienie obrony i linie biegu. Z dwoma telefonami obok siebie całe boisko jest w kadrze i nikt nie musi obracać kamery."
+        },
+        {
+          "title": "Zsynchronizuj wideo z meczem",
+          "text": "Nikt nie przegląda 60-minutowego nagrania bez punktów odniesienia. Kto prowadzi statystykę w trakcie meczu, ma każdą akcję z czasem gry: po jednorazowej synchronizacji z zegarem każda bramka i każdy niecelny rzut staje się znacznikiem w wideo."
+        },
+        {
+          "title": "Otaguj akcje",
+          "text": "Zaznacz akcje, które się liczą: akcja, zawodniczka, faza gry, system obrony. Nie wszystko, tylko to, co chcesz omówić. Dobre tagi to te, po których później filtrujesz, np. wszystkie rzuty z drugiej linii przeciw obronie 6:0."
+        },
+        {
+          "title": "Omów z drużyną",
+          "text": "Pokaż pięć do ośmiu akcji zamiast całego meczu: zatrzymaj, narysuj linię biegu, przybliż lukę w środku obrony. Dwadzieścia minut z jednym jasnym pytaniem daje więcej niż godzina wspominania."
+        },
+        {
+          "title": "Wyślij akcje zawodniczkom",
+          "text": "Najwięcej daje skrót dla jednej osoby: jej rzuty, jej akcje w obronie. Ogląda go na telefonie, kiedy chce, a ty widzisz, czy go otworzyła."
+        }
+      ]
+    },
+    "checklist": {
+      "kicker": "Lista kontrolna",
+      "title": "Co musi umieć oprogramowanie do analizy wideo w piłce ręcznej",
+      "description": "Odtwarzacz potrafi odtwarzać. Do analizy meczu piłki ręcznej potrzeba więcej: te sześć punktów odróżnia narzędzie od folderu pełnego plików.",
+      "items": [
+        {
+          "title": "Przesyłanie długich nagrań",
+          "text": "Mecz to szybko kilka gigabajtów. Przesyłanie musi iść w częściach i po zerwaniu połączenia działać dalej, zamiast zaczynać od nowa."
+        },
+        {
+          "title": "Synchronizacja z czasem gry",
+          "text": "Bez połączenia wideo z przebiegiem meczu szukasz każdej akcji ręcznie. Z nim przechodzisz z bramki w statystyce prosto do tego momentu w nagraniu."
+        },
+        {
+          "title": "Tagi z piłki ręcznej",
+          "text": "Rzut karny, kontratak, przewaga i osłabienie, 6:0 lub 5:1, pozycja rzutu: pojęcia z piłki ręcznej, a nie z piłki nożnej, do tego własne tagi dla waszych zagrywek."
+        },
+        {
+          "title": "Filtry i playlisty",
+          "text": "Wszystkie rzuty z lewego skrzydła w osłabieniu z trzech meczów: takie pytanie musi w kilka sekund dać listę, którą zapiszesz i wykorzystasz ponownie."
+        },
+        {
+          "title": "Rysowanie i zoom podczas omówienia",
+          "text": "Strzałka, linia biegu, okrąg i zoom na zatrzymanym obrazie: na laptopie, tablecie lub rzutniku, obsługiwane myszą, palcem albo pilotem do prezentacji."
+        },
+        {
+          "title": "Udostępnianie zawodniczkom i sztabowi",
+          "text": "Klipy dla konkretnych osób zamiast jednego ogromnego pliku na czacie grupowym. Kto dostaje tylko swoje akcje, naprawdę je ogląda."
+        }
+      ]
+    },
+    "ways": {
+      "kicker": "Trzy drogi",
+      "title": "Za darmo, ogólnie czy specjalnie dla piłki ręcznej",
+      "description": "Analiza wideo działa z darmowymi narzędziami, z ogólnym oprogramowaniem sportowym albo z aplikacją do piłki ręcznej. Różnica polega na tym, ile wieczorów kosztuje.",
+      "items": [
+        {
+          "name": "Nagranie z telefonu, odtwarzacz i notatki",
+          "effort": "0 € i dużo czasu",
+          "good": "Telefon nagrywa, darmowy odtwarzacz przeskakuje do dowolnej minuty, a lista z czasami gry zapisuje akcje. Dobre, by sprawdzić, czy drużyna w ogóle skorzysta z wideo.",
+          "bad": "Każdej akcji szukasz ręcznie, klipy wycinasz pojedynczo, a wysyłasz jeden ogromny plik przez komunikator. Zwykle kończy się to po trzech meczach.",
+          "linkLabel": "Poradnik: jak dobrze nagrać mecz piłki ręcznej"
+        },
+        {
+          "name": "Ogólna sportowa analiza wideo",
+          "effort": "Potężne, dla wszystkich dyscyplin",
+          "good": "Profesjonalne narzędzia tagują, tną i rysują; wiele pochodzi ze sportu zawodowego i ma gotowe procesy dla analityków.",
+          "bad": "Tagi do piłki ręcznej tworzysz sam, statystykę prowadzisz gdzie indziej, a cena i nauka obsługi są często nastawione na etatowych analityków.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Aplikacja do piłki ręcznej ze statystyką i wideo",
+          "effort": "Statystyka wykonuje pracę wstępną",
+          "good": "Ponieważ każda akcja z rejestracji na żywo ma już czas gry, wideo jest po synchronizacji uporządkowane: bramki, obrony i pudła to znaczniki, a tagi pochodzą z piłki ręcznej.",
+          "bad": "Przewaga istnieje tylko wtedy, gdy w trakcie meczu prowadzono statystykę. W Statix funkcje wideo są jeszcze w zamkniętej becie.",
+          "linkLabel": "Zobacz tagowanie wideo w Statix"
+        }
+      ]
+    },
+    "showcase": {
+      "kicker": "Tak to wygląda",
+      "title": "Analiza wideo w Statix",
+      "description": "Trzy etapy w aplikacji: akcje jako ścieżki, omówienie na pełnym ekranie i klip, który trafia do zawodniczki. Funkcje wideo są w becie i włączamy je na prośbę.",
+      "items": [
+        {
+          "label": "Ścieżki: jedna połowa, posortowana według akcji",
+          "alt": "Ścieżki stanowiska do tagowania w Statix: jeden wiersz na akcję, jeden blok na osi czasu na każdą sytuację",
+          "linkLabel": "Więcej o tagowaniu wideo"
+        },
+        {
+          "label": "Omówienie: reflektor, podanie, linia biegu; hala w tle jest narysowana",
+          "alt": "Tryb omówienia w Statix: zatrzymany obraz z reflektorem wokół zawodniczki, strzałką podania i przerywaną linią biegu",
+          "linkLabel": "Więcej o omówieniu wideo"
+        },
+        {
+          "label": "Wysłane: każdy klip, do kogo i czy został obejrzany",
+          "alt": "Wysłane klipy w Statix z odbiorczynią, datą i informacją, czy klip został otwarty",
+          "linkLabel": "Wysyłaj klipy zawodniczkom"
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Czytaj dalej",
+      "title": "Poradniki o wideo w piłce ręcznej",
+      "description": "Jak nagrać mecz, przygotować omówienie i zamienić liczby oraz akcje w cel treningowy.",
+      "allLink": "Wszystkie artykuły w poradniku"
+    },
+    "faq": {
+      "kicker": "Pytania",
+      "title": "Najczęstsze pytania o analizę wideo w piłce ręcznej",
+      "description": "Co trenerzy chcą wiedzieć, zanim nagrają pierwszy mecz.",
+      "items": [
+        {
+          "question": "Czym jest analiza wideo w piłce ręcznej?",
+          "answer": "To systematyczna ocena nagrań meczów lub treningów: znajdowanie akcji, oznaczanie ich według akcji, zawodniczki i fazy gry oraz omawianie z drużyną. Celem nie jest ponowne obejrzenie całego meczu, tylko znalezienie tych kilku akcji, z których wynika cel treningowy."
+        },
+        {
+          "question": "Jakie oprogramowanie nadaje się do analizy wideo w piłce ręcznej?",
+          "answer": "Na początek wystarczą nagranie z telefonu, odtwarzacz i notatki. Kto analizuje regularnie, potrzebuje oprogramowania, które przesyła długie nagrania, oznacza akcje tagami z piłki ręcznej, filtruje, pozwala rysować podczas omówienia i wysyła klipy zawodniczkom. Statix łączy to ze statystyką na żywo; funkcje wideo są obecnie w zamkniętej becie."
+        },
+        {
+          "question": "Czy istnieje darmowa analiza wideo w piłce ręcznej?",
+          "answer": "Tak, z ograniczeniami: nagranie telefonem, odtwarzanie w darmowym odtwarzaczu i zapisywanie czasów gry na liście kosztuje tylko czas. W Statix statystyka na żywo jest na stałe bezpłatna w poziomie Basis; funkcje wideo należą do płatnych poziomów wideo i obecnie włączamy je na prośbę."
+        },
+        {
+          "question": "Gdzie ustawić kamerę do analizy wideo w piłce ręcznej?",
+          "answer": "Jak najwyżej i na wysokości linii środkowej, na przykład na trybunie. Stamtąd widać ustawienie obrony i linie biegu; z parkietu widać głównie plecy. Nie nagrywaj pod światło okien i zaplanuj baterię lub zasilanie na co najmniej 90 minut."
+        },
+        {
+          "question": "Ile trwa analiza wideo meczu piłki ręcznej?",
+          "answer": "Kto szuka i wycina każdą akcję ręcznie, szybko spędza nad tym więcej czasu, niż trwał mecz. Ze znacznikami ze statystyki na żywo szukanie odpada i zostaje wybór oraz otagowanie akcji, które chcesz omówić."
+        },
+        {
+          "question": "Czy mogę nagrywać i analizować mecze młodzieżowe?",
+          "answer": "Do nagrywania niepełnoletnich potrzebujesz zgody rodziców. Ustal to na piśmie na początku sezonu i powiedz, do czego służy nagranie i kto je zobaczy. Wewnętrzna analiza, którą widzą tylko sztab i drużyna, jest znacznie prostsza niż publikacja."
+        },
+        {
+          "question": "Czym różni się analiza wideo od omówienia wideo?",
+          "answer": "Analiza odbywa się przy biurku: znajdowanie, tagowanie i wybór akcji. Omówienie odbywa się przed drużyną: pokazywanie wybranych akcji, zatrzymywanie, rysowanie, dyskusja. Dobre omówienie rzadko trwa dłużej niż 20 minut i ma jedno jasne pytanie."
+        },
+        {
+          "question": "Czy Statix sam rozpoznaje akcje w wideo?",
+          "answer": "Znaczniki w Statix pochodzą ze statystyki na żywo, a nie z obrazu. Analiza z obrazu (linie biegu, lot piłki, panorama z dwóch kamer) to najmłodsza część bety i podaje tylko propozycje; akcja ani wpis w statystyce nigdy nie powstaje sam."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Beta wideo",
+      "title": "Najpierw statystyka, potem każda akcja jednym kliknięciem",
+      "description": "Statystyka na żywo jest już dziś bezpłatna dla wszystkich i to ona później odnajduje każdą akcję w wideo. Funkcje wideo włączamy teraz dla wybranych kont.",
+      "linkLabel": "Poproś o dostęp do bety wideo"
+    }
   }
 }
