@@ -7262,7 +7262,14 @@
           "title": "How to film a handball match",
           "text": "Camera, tripod, position and sound – what a usable recording takes."
         }
-      }
+      },
+      "filmKicker": "The short version",
+      "filmTitle": "How {feature} works",
+      "filmAlt": "Short film (German): {feature} step by step on real app screens",
+      "filmPlay": "Play film",
+      "filmPause": "Pause film",
+      "filmTranscript": "The steps as text",
+      "overviewMore": "Read more"
     },
     "taggingBench": {
       "kicker": "How a scene comes about",
@@ -7504,7 +7511,11 @@
           "title": "Send scenes to players",
           "text": "The strongest effect comes from a compilation for one person only: her shots, her defensive actions. She watches it on her phone whenever she likes – and you can see whether she opened it."
         }
-      ]
+      ],
+      "filmAlt": "Short film (German): handball video analysis in five steps on real app screens",
+      "play": "Play film",
+      "pause": "Pause film",
+      "transcript": "The steps as text"
     },
     "checklist": {
       "kicker": "Checklist",

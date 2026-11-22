@@ -8,6 +8,7 @@ import FormationDiagram from './formation-diagram';
 import DecisionMatrix from './decision-matrix';
 import ArticleEmbed from './article-embed';
 import AppBridge from './app-bridge';
+import ArticleFilm from './article-film';
 
 /**
  * Dispatches an article module to its renderer. Every branch is a server
@@ -60,6 +61,15 @@ export default function ArticleModuleBlock({ module }: { module: ArticleModule }
         <AppBridge
           title={module.title}
           text={module.text}
+          feature={module.feature}
+          featureLabel={module.featureLabel}
+        />
+      );
+    case 'film':
+      return (
+        <ArticleFilm
+          film={module.film}
+          caption={module.caption}
           feature={module.feature}
           featureLabel={module.featureLabel}
         />

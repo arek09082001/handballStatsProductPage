@@ -130,6 +130,18 @@ export type ArticleModule = { after?: string } & (
       featureLabel: string;
     }
   | {
+      /**
+       * A step film of the product page (`public/videos/films/<film>.*`),
+       * placed where the article turns to "how does that look in practice".
+       * Native player, no client JavaScript. `feature` links its feature page.
+       */
+      kind: 'film';
+      film: string;
+      caption: string;
+      feature?: string;
+      featureLabel?: string;
+    }
+  | {
       /** One of the existing noindex tool routes, embedded in the article. */
       kind: 'embed';
       target: 'wurfquote-rechner' | 'handball-taktikboard';

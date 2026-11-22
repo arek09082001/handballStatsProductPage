@@ -7262,7 +7262,14 @@
           "title": "Bien filmer un match de handball",
           "text": "Caméra, trépied, position et son : ce qu'il faut pour un enregistrement exploitable."
         }
-      }
+      },
+      "filmKicker": "En bref",
+      "filmTitle": "Comment fonctionne {feature}",
+      "filmAlt": "Court film (en allemand) : {feature} étape par étape sur de vrais écrans de l'app",
+      "filmPlay": "Lire le film",
+      "filmPause": "Mettre le film en pause",
+      "filmTranscript": "Les étapes en texte",
+      "overviewMore": "En savoir plus"
     },
     "taggingBench": {
       "kicker": "Comment naît une scène",
@@ -7504,7 +7511,11 @@
           "title": "Envoyer les actions aux joueuses",
           "text": "Le montage destiné à une seule personne a le plus d'effet : ses tirs, ses actions défensives. Elle le regarde sur son téléphone quand elle veut, et tu vois si elle l'a ouvert."
         }
-      ]
+      ],
+      "filmAlt": "Court film (en allemand) : l'analyse vidéo au handball en cinq étapes sur de vrais écrans de l'app",
+      "play": "Lire le film",
+      "pause": "Mettre le film en pause",
+      "transcript": "Les étapes en texte"
     },
     "checklist": {
       "kicker": "Check-list",

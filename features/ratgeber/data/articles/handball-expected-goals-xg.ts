@@ -91,6 +91,14 @@ Wenn du an der Chancenqualität gearbeitet hast, zeigt sich das zuerst in der Ve
 Die Zonen mitzuschreiben ist der ganze Aufwand. Wenn du Abschlüsse ohnehin mit Position erfasst, etwa über das Wurfbild in einer [Handball-Statistik-App](/), fällt die Zonenverteilung als Nebenprodukt ab und du musst nur noch die Wahrscheinlichkeiten dranschreiben. Statix nimmt dir auch das ab: Aus der erfassten Wurfposition rechnet es [Expected Goals und Expected Saves](/funktionen/expected-goals) je Spielerin, je Torhüterin und über die Saison – mit einer festen Tabelle je Zone, gleich für alle Mannschaften.`,
   modules: [
     {
+      kind: 'film',
+      after: 'Woran du im Spiel siehst, ob es sitzt',
+      film: 'expected-goals',
+      caption: 'xG in Statix – von der Wurfposition zur Bilanz',
+      feature: 'expected-goals',
+      featureLabel: 'Zu Expected Goals',
+    },
+    {
       kind: 'answerBox',
       text: 'Expected Goals (xG) bewerten, wie gut eine Torchance war, statt nur, ob sie drin war. Im Amateurhandball reichen fünf Wurfzonen mit je einer Trefferwahrscheinlichkeit aus dem eigenen Saisonschnitt. Der wichtigste Befund ist nicht die Differenz zur Torzahl, sondern wo eure Abschlüsse entstehen.',
     },

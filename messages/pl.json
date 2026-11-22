@@ -7262,7 +7262,14 @@
           "title": "Jak nagrać mecz piłki ręcznej",
           "text": "Kamera, statyw, pozycja i dźwięk: czego potrzeba do użytecznego nagrania."
         }
-      }
+      },
+      "filmKicker": "W skrócie",
+      "filmTitle": "Tak działa {feature}",
+      "filmAlt": "Krótki film (po niemiecku): {feature} krok po kroku na prawdziwych ekranach aplikacji",
+      "filmPlay": "Odtwórz film",
+      "filmPause": "Wstrzymaj film",
+      "filmTranscript": "Kroki w formie tekstu",
+      "overviewMore": "Czytaj więcej"
     },
     "taggingBench": {
       "kicker": "Jak powstaje scena",
@@ -7504,7 +7511,11 @@
           "title": "Wyślij akcje zawodniczkom",
           "text": "Najwięcej daje skrót dla jednej osoby: jej rzuty, jej akcje w obronie. Ogląda go na telefonie, kiedy chce, a ty widzisz, czy go otworzyła."
         }
-      ]
+      ],
+      "filmAlt": "Krótki film (po niemiecku): analiza wideo w piłce ręcznej w pięciu krokach na prawdziwych ekranach aplikacji",
+      "play": "Odtwórz film",
+      "pause": "Wstrzymaj film",
+      "transcript": "Kroki w formie tekstu"
     },
     "checklist": {
       "kicker": "Lista kontrolna",

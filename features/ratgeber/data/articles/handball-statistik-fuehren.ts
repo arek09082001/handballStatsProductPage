@@ -99,6 +99,14 @@ Eine Statistik funktioniert nicht, wenn die Tabelle voll ist, sondern wenn sie d
 Ob du das auf Papier, in einer Tabelle oder in einer App machst, ist zweitrangig – wichtiger ist, dass ihr es durchhaltet. Für den Einstieg reicht die [Excel-Vorlage für die Handball-Statistik](/handball-statistik-excel-vorlage); wenn das Mitschreiben am Spielfeldrand zu langsam wird, übernimmt eine App die Erfassung per Tap, auch offline in der Halle. Welcher Weg zu deiner Situation passt, klärt der Vergleich [Zettel, Excel oder App](/ratgeber/handball-statistik-zettel-excel-app). Welche Kennzahlen es darüber hinaus gibt und wie sie gerechnet werden, steht gesammelt unter [Handball-Statistiken](/handball-statistiken).`,
   modules: [
     {
+      kind: 'film',
+      after: 'Wie viel Erfassung deine Spielklasse verträgt',
+      film: 'live-erfassung',
+      caption: 'Live erfassen in einer halben Minute',
+      feature: 'live-erfassung',
+      featureLabel: 'Zur Live-Erfassung',
+    },
+    {
       kind: 'answerBox',
       text: 'Für die meisten Trainerentscheidungen reichen vier Werte pro Spieler: Tore, Würfe, technische Fehler und ungefähre Einsatzzeit – plus die Zahl der Angriffe für die Mannschaft. Daraus rechnest du Wurfquote, Angriffseffektivität und Fehlerquote. Alles Weitere ist Ausbaustufe zwei.',
     },

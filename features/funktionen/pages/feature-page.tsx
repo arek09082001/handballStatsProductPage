@@ -14,6 +14,8 @@ import FeatureLimits from '../components/feature-limits';
 import FeatureRelated from '../components/feature-related';
 import TaggingBenchMock from '../components/tagging-bench-mock';
 import HoldGestureShowcase from '../components/hold-gesture-showcase';
+import FeatureFilm from '../components/feature-film';
+import { FEATURE_FILMS } from '@/features/films/data/films';
 
 /**
  * One feature page, `/funktionen/<slug>`.
@@ -55,15 +57,23 @@ export default function FeaturePage({ slug }: { slug: string }) {
   const bandShots = feature.mock ? feature.shots : feature.shots.slice(1);
   const hasCourtBand = bandShots.length > 0 || Boolean(feature.showcase);
 
+  // Wo es einen Schritt-Film gibt, ersetzt er die Textliste der Schritte und
+  // rückt direkt unter den Überblick: „Zeig mir, wie es geht“ ist die zweite
+  // Frage, nicht die fünfte. Folgt danach ein dunkles Band (Werkbank,
+  // Gesten-Band, Screenshots), steht der Film auf Papier, sonst auf dem Feld.
+  const film = FEATURE_FILMS[feature.slug];
+  const courtAfterFilm = Boolean(feature.mock || feature.showcase) || bandShots.length > 0;
+
   return (
     <div className='flex w-full flex-col items-center bg-paper'>
       <FeatureHeader feature={feature} />
       <FeatureOverview feature={feature} />
+      {film ? <FeatureFilm feature={feature} film={film} tone={courtAfterFilm ? 'paper' : 'court'} /> : null}
       {feature.mock === 'tagging-bench' ? <TaggingBenchMock /> : null}
       {feature.showcase === 'hold-gesture' ? <HoldGestureShowcase /> : null}
       <FeatureCapabilities feature={feature} />
       <FeatureShots feature={feature} />
-      <FeatureSteps feature={feature} tone={hasCourtBand ? 'paper' : 'court'} />
+      {film ? null : <FeatureSteps feature={feature} tone={hasCourtBand ? 'paper' : 'court'} />}
       <FeatureLimits feature={feature} />
       <BoardFaq
         id='faq'

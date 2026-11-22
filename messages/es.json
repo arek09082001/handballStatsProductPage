@@ -7262,7 +7262,14 @@
           "title": "Cómo grabar un partido de balonmano",
           "text": "Cámara, trípode, posición y sonido: lo que necesita una grabación útil."
         }
-      }
+      },
+      "filmKicker": "En corto",
+      "filmTitle": "Así funciona {feature}",
+      "filmAlt": "Vídeo corto (en alemán): {feature} paso a paso con pantallas reales de la app",
+      "filmPlay": "Reproducir vídeo",
+      "filmPause": "Pausar vídeo",
+      "filmTranscript": "Los pasos en texto",
+      "overviewMore": "Leer más"
     },
     "taggingBench": {
       "kicker": "Cómo nace una escena",
@@ -7504,7 +7511,11 @@
           "title": "Enviar jugadas a las jugadoras",
           "text": "El mayor efecto lo tiene un montaje para una sola persona: sus lanzamientos, sus acciones defensivas. Lo ve en el móvil cuando quiere, y tú ves si lo ha abierto."
         }
-      ]
+      ],
+      "filmAlt": "Vídeo corto (en alemán): análisis de vídeo de balonmano en cinco pasos con pantallas reales de la app",
+      "play": "Reproducir vídeo",
+      "pause": "Pausar vídeo",
+      "transcript": "Los pasos en texto"
     },
     "checklist": {
       "kicker": "Lista de control",

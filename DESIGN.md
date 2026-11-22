@@ -190,6 +190,18 @@ one thing they came for.
   every frame is a capture, never a drawing. It walks through the frames on
   its own only while on screen, never under reduced motion, and stops for good
   at the first touch.
+- **The steps are a film, not a list.** Where a feature has a step film
+  (`FEATURE_FILMS` in `features/films/data/films.ts`), it replaces the
+  "So läuft das" list and moves up under the overview: a 22–33 s Remotion film
+  (repo remotion-statix, `StepsFilm`) that shows each step on a real capture —
+  numbered magnet, one line, a margin note, the camera pans to the spot, a
+  finger taps, a marker circle. The chapter bar carries the steps' titles from
+  the bundle and jumps to each; the full step text stays in the document as a
+  transcript to unfold (and as the list itself under reduced motion). It sits
+  on paper when a dark band follows, on the court otherwise. The overview keeps
+  its first paragraph; the rest unfolds under "Mehr dazu lesen". The same film
+  pattern carries the five steps of `/handball-videoanalyse`, and a Ratgeber
+  article can place a film with the `film` module (native player, no client JS).
 - **New is a chip, and one place.** A feature marked `isNew` gets a solid
   orange "Neu" chip on its card and in its hero, and the header carries one
   spotlight magnet for it (`navigationSpotlight`). One at a time: two

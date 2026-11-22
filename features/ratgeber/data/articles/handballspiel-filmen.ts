@@ -87,6 +87,12 @@ export const handballspielFilmen: Article = {
 Film das nächste Heimspiel mit einem Handy auf dem höchsten Punkt, den du findest – und schau dir danach nicht das ganze Spiel an, sondern nur die fünf Szenen, die du im Kopf hast. Wenn du parallel die Statistik führst, findest du diese Szenen später über die Spielzeit statt über den Vorspulknopf. Wie es danach weitergeht, steht in der Anleitung zur [Videobesprechung](/ratgeber/handball-videobesprechung).`,
   modules: [
     {
+      kind: 'film',
+      after: 'Empfehlung je Ausgangslage',
+      film: 'videoanalyse',
+      caption: 'Vom Stativ bis aufs Handy der Spielerin – in einer halben Minute',
+    },
+    {
       kind: 'answerBox',
       text: 'Für eine Handball-Videoanalyse reicht ein Handy auf einem Stativ: möglichst hoch, auf Höhe der Mittellinie, im Weitwinkel und ohne Schwenken, damit das ganze Feld im Bild ist. Plane Strom für 90 Minuten ein, filme nicht gegen Fenster und kläre bei Jugendmannschaften vorher die Einwilligung der Eltern.',
     },

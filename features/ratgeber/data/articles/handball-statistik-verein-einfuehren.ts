@@ -84,6 +84,14 @@ Wenn es funktioniert hat, ist der Gewinn nicht die einzelne Wurfquote. Es sind d
 Der häufigste Fehler bleibt derselbe wie beim einzelnen Trainer: nach vier Spielen das System zu wechseln. Haltet eine Halbserie durch, bevor ihr etwas Grundsätzliches ändert – ein drittes Mal fängt in einem Verein niemand an.`,
   modules: [
     {
+      kind: 'film',
+      after: 'Was ihr am Ende der Saison in der Hand habt',
+      film: 'vereinsbereich',
+      caption: 'Alle Mannschaften auf einen Blick',
+      feature: 'vereinsbereich',
+      featureLabel: 'Zum Vereinsbereich',
+    },
+    {
       kind: 'answerBox',
       text: 'Legt zuerst fest, welche sechs Werte alle Mannschaften erfassen und nach welchen Zählregeln – erst danach das Werkzeug. Startet mit zwei freiwilligen Mannschaften, erfasst vier Spieltage lang ohne auszuwerten, und weitet erst aus, wenn diese zwei durchgehalten haben.',
     },

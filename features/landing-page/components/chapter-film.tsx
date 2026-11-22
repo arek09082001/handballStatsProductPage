@@ -1,8 +1,8 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
-import { Pause, Play } from 'lucide-react';
+import { ChevronDown, Pause, Play } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const VIDEO_W = 1600;
@@ -28,8 +28,20 @@ interface Chapter {
 }
 
 interface ChapterFilmProps {
-  /** Dateiname unter `/videos/showcase/` (ohne Endung) und Schlüssel der Akte */
-  name: FilmName;
+  /** Dateiname unter `/videos/<dir>/` (ohne Endung) und — ohne `bounds` — Schlüssel der Akte in `FILMS` */
+  name: string;
+  /** Ordner unter `/videos/` — `showcase` für die Filme der Startseite, `films` für die Schritt-Filme */
+  dir?: string;
+  /** Anfang und Ende jedes Kapitels in Sekunden; ohne Angabe aus `FILMS[name]` */
+  bounds?: readonly (readonly [number, number])[];
+  /** Untergrund des Bands, in dem der Film steht — färbt Leiste und Text unter dem Film */
+  tone?: 'court' | 'paper';
+  /**
+   * Beschriftung einer aufklappbaren Textfassung aller Kapitel unter dem Film.
+   * Wo der Film einen Text ersetzt, bleibt der Text so lesbar (und für
+   * Suchmaschinen und Bildschirmleser da), ohne die Seite zu füllen.
+   */
+  transcriptLabel?: string;
   chapters: Chapter[];
   alt: string;
   chaptersLabel: string;
@@ -52,8 +64,20 @@ interface ChapterFilmProps {
  * Weil der Film länger als fünf Sekunden läuft, hat er einen Pause-Knopf
  * (WCAG 2.2.2).
  */
-export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLabel, pauseLabel }: ChapterFilmProps) {
-  const bounds = FILMS[name];
+export default function ChapterFilm({
+  name,
+  dir = 'showcase',
+  bounds: givenBounds,
+  tone = 'court',
+  transcriptLabel,
+  chapters,
+  alt,
+  chaptersLabel,
+  playLabel,
+  pauseLabel,
+}: ChapterFilmProps) {
+  const bounds = useMemo(() => givenBounds ?? FILMS[name as FilmName] ?? [], [givenBounds, name]);
+  const onPaper = tone === 'paper';
   const frameRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [src, setSrc] = useState<string | null>(null);
@@ -71,7 +95,7 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
       return;
     }
     const small = window.matchMedia?.('(max-width: 767px)').matches;
-    const file = `/videos/showcase/${name}${small ? '-sm' : ''}`;
+    const file = `/videos/${dir}/${name}${small ? '-sm' : ''}`;
 
     const near = new IntersectionObserver(
       ([entry]) => {
@@ -97,7 +121,7 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
       near.disconnect();
       seen.disconnect();
     };
-  }, [name]);
+  }, [name, dir]);
 
   // Sofort starten, falls die Bühne beim Setzen der Quelle schon zu sehen ist
   useEffect(() => {
@@ -164,6 +188,8 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
    * die Höhe einer Liste unter dem Film — die Bühne passt so auf einen
    * Laptop-Bildschirm. Jeder Abschnitt springt an den Anfang seines Kapitels.
    */
+  // Im Bild liegt die Leiste immer auf dem dunklen Film; darunter auf dem Band
+  const dark = (compact: boolean) => compact || !onPaper;
   const hud = (className: string, compact: boolean) => (
     <div className={className}>
       <ol aria-label={chaptersLabel} className='flex gap-1'>
@@ -179,9 +205,14 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
                 'group flex w-full items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 disabled:cursor-default',
                 compact ? 'h-5' : 'h-6',
               )}>
-              <span aria-hidden='true' className='relative block h-[3px] w-full overflow-hidden rounded-full bg-chalk/20 transition-colors group-hover:bg-chalk/35'>
+              <span
+                aria-hidden='true'
+                className={cn(
+                  'relative block h-[3px] w-full overflow-hidden rounded-full transition-colors',
+                  dark(compact) ? 'bg-chalk/20 group-hover:bg-chalk/35' : 'bg-ink/15 group-hover:bg-ink/25',
+                )}>
                 <span
-                  className={cn('absolute inset-y-0 left-0 rounded-full', index === current ? 'bg-primary' : 'bg-chalk/60')}
+                  className={cn('absolute inset-y-0 left-0 rounded-full', index === current ? 'bg-primary' : dark(compact) ? 'bg-chalk/60' : 'bg-ink/50')}
                   style={{ width: `${fillOf(index) * 100}%` }}
                 />
               </span>
@@ -191,12 +222,12 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
       </ol>
       <p aria-live='polite' className={compact ? 'mt-0.5' : 'mt-1.5'}>
         <span className={cn('font-display font-extrabold tracking-[-0.01em] text-primary', compact ? 'text-[13px]' : 'text-[15px]')}>
-          <span className='mr-1.5 tabular-nums text-chalk/50'>{shown + 1}/{chapters.length}</span>
+          <span className={cn('mr-1.5 tabular-nums', dark(compact) ? 'text-chalk/50' : 'text-ink/45')}>{shown + 1}/{chapters.length}</span>
           {chapters[shown]?.label}
         </span>
         {/* Im Bild nur das Kapitel: der Satz dazu verdeckte sonst, was der
             Film gerade zeigt. Vorgelesen wird er trotzdem. */}
-        <span className={compact ? 'sr-only' : 'mt-0.5 block text-[13px] leading-5 text-chalk/80'}>{chapters[shown]?.text}</span>
+        <span className={compact ? 'sr-only' : cn('mt-0.5 block text-[13px] leading-5', dark(compact) ? 'text-chalk/80' : 'text-ink/70')}>{chapters[shown]?.text}</span>
       </p>
     </div>
   );
@@ -211,7 +242,7 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
         className='board-shadow-court relative w-full overflow-hidden rounded-2xl border border-chalk/12 bg-court'
         style={{ aspectRatio: `${VIDEO_W} / ${VIDEO_H}` }}>
         <Image
-          src={`/videos/showcase/${name}.jpg`}
+          src={`/videos/${dir}/${name}.jpg`}
           alt={alt}
           width={VIDEO_W}
           height={VIDEO_H}
@@ -264,14 +295,39 @@ export default function ChapterFilm({ name, chapters, alt, chaptersLabel, playLa
         <ol aria-label={chaptersLabel} className={cn('mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2', chapters.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4')}>
           {chapters.map((chapter, index) => (
             <li key={chapter.label}>
-              <span className='font-display text-[15px] font-extrabold tracking-[-0.01em] text-chalk'>
-                <span className='mr-2 tabular-nums text-chalk/50'>{index + 1}</span>
+              <span className={cn('font-display text-[15px] font-extrabold tracking-[-0.01em]', onPaper ? 'text-ink' : 'text-chalk')}>
+                <span className={cn('mr-2 tabular-nums', onPaper ? 'text-ink/45' : 'text-chalk/50')}>{index + 1}</span>
                 {chapter.label}
               </span>
-              <span className='mt-1 block text-[15px] leading-6 text-chalk/65'>{chapter.text}</span>
+              <span className={cn('mt-1 block text-[15px] leading-6', onPaper ? 'text-ink/70' : 'text-chalk/65')}>{chapter.text}</span>
             </li>
           ))}
         </ol>
+      ) : null}
+      {/* Wo der Film einen Text ersetzt: der Text zum Aufklappen. Steht er
+          ohnehin da (Bewegung reduzieren), entfällt er. */}
+      {live && transcriptLabel ? (
+        <details className='group mt-4'>
+          <summary
+            className={cn(
+              'inline-flex cursor-pointer list-none items-center gap-1.5 rounded text-[15px] font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 [&::-webkit-details-marker]:hidden',
+              onPaper ? 'text-ink/70 hover:text-ink' : 'text-chalk/70 hover:text-chalk',
+            )}>
+            <ChevronDown aria-hidden='true' className='size-4 transition-transform group-open:rotate-180' />
+            {transcriptLabel}
+          </summary>
+          <ol className='mt-4 grid gap-x-6 gap-y-4 sm:grid-cols-2'>
+            {chapters.map((chapter, index) => (
+              <li key={chapter.label}>
+                <span className={cn('font-display text-[15px] font-extrabold tracking-[-0.01em]', onPaper ? 'text-ink' : 'text-chalk')}>
+                  <span className={cn('mr-2 tabular-nums', onPaper ? 'text-ink/45' : 'text-chalk/50')}>{index + 1}</span>
+                  {chapter.label}
+                </span>
+                <span className={cn('mt-1 block text-[15px] leading-6', onPaper ? 'text-ink/70' : 'text-chalk/65')}>{chapter.text}</span>
+              </li>
+            ))}
+          </ol>
+        </details>
       ) : null}
     </div>
   );
