@@ -70,6 +70,8 @@ export const FEATURE_RESOURCES = {
   tacticsBoard: '/handball-taktikboard',
   xgGuide: '/ratgeber/handball-expected-goals-xg',
   recordingComparison: '/ratgeber/handball-statistik-zettel-excel-app',
+  videoGuide: '/handball-videoanalyse',
+  filmingGuide: '/ratgeber/handballspiel-filmen',
 } as const;
 
 export type FeatureResourceId = keyof typeof FEATURE_RESOURCES;
@@ -354,6 +356,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-livestream-aufzeichnung.png', width: 780, height: 1688 },
     ],
     related: ['live-ticker', 'video-tagging', 'live-erfassung'],
+    resources: ['filmingGuide', 'videoGuide'],
     ogImage: '/livestream-einblendung-tor.png',
     isNew: true,
     meta: {
@@ -537,19 +540,24 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/mobil-mediathek.png', width: 780, height: 1688 },
     ],
     related: ['video-besprechung', 'handball-livestream', 'live-erfassung'],
+    resources: ['videoGuide', 'filmingGuide', 'statsGuide'],
     ogImage: '/video-tagging-spuren.png',
     mock: 'tagging-bench',
     meta: {
+      // The head term "handball videoanalyse" belongs to the pillar page
+      // `/handball-videoanalyse`; this page keeps the tagging intent so the two
+      // do not compete for one query. It links the pillar under "Kostenlos dazu".
       title:
-        'Handball Videoanalyse & Tagging (Beta) – Szenen, Spuren, Playlists',
+        'Handball Video-Tagging (Beta) – Szenen taggen, filtern, teilen',
       description:
         'Spielaufnahmen hochladen, Szenen mit Aktion, Spielerin, Phase und Abwehr taggen, nach allem filtern, Zusammenschnitte an Spielerinnen schicken und Videos für die Mannschaft freigeben. Die Funktion ist im Aufbau und noch nicht für alle Konten freigeschaltet.',
       keywords: [
-        'handball videoanalyse',
         'handball video tagging',
         'handball szenen taggen',
-        'handball videoanalyse software',
+        'handball video schneiden',
+        'handball szenen filtern',
         'handball spielanalyse video',
+        'handball videoanalyse app',
       ],
     },
   },
@@ -570,6 +578,7 @@ export const FEATURE_RECORDS: FeatureRecord[] = [
       { src: '/besprechung-vorlauf.png', width: 1640, height: 836 },
     ],
     related: ['video-tagging', 'handball-livestream', 'spieler-zugang'],
+    resources: ['videoGuide', 'filmingGuide'],
     ogImage: '/besprechung-zeichnen.png',
     isNew: true,
     meta: {

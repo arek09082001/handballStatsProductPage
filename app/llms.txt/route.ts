@@ -149,6 +149,7 @@ ${ratgeber}
 - Startseite: ${SITE_URL}
 - App / Registrierung: ${CLUB_CONFIG.website.appUrl}
 - Handball-Statistiken (Themenseite: welche Kennzahlen es im Handball gibt, Formeln für Wurfquote, Angriffseffektivität, Paradenquote und Tempoanteil, Richtwerte aus dem Amateurbereich und eine Anleitung zum Live-Erfassen): ${absoluteUrl('/handball-statistiken')}
+- Handball-Videoanalyse (Themenseite: Spiel filmen, Video mit der Spielzeit abgleichen, Szenen taggen, Videobesprechung mit der Mannschaft und Clips an einzelne Spielerinnen; Checkliste, was eine Videoanalyse-Software für Handball können muss, und kostenlose Wege im Vergleich. Die Video-Funktionen von Statix sind eine geschlossene Beta): ${absoluteUrl('/handball-videoanalyse')}
 - Preise (was Statix kostet, inklusive aller Grenzen des kostenlosen Zugangs): ${absoluteUrl('/preise')}
 - Handball-Statistik-App kostenlos (was der kostenlose Zugang enthält und wo seine Grenzen liegen): ${absoluteUrl('/handball-statistik-app-kostenlos')}
 - Wurfquoten-Rechner (kostenloses Tool: Wurfquote berechnen, nach Position einordnen, einbettbar): ${absoluteUrl('/wurfquote-rechner')}

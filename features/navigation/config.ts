@@ -1,6 +1,7 @@
 import { CLUB_CONFIG } from '@/lib/club-config';
 import { TAKTIKBOARD_PAGE_PATH } from '@/features/handball-taktikboard/data/taktikboard-content';
 import { STATS_PAGE_PATH } from '@/features/handball-statistiken/data/stats-content';
+import { VIDEO_ANALYSIS_PAGE_PATH } from '@/features/handball-videoanalyse/data/video-analysis-content';
 import {
   FEATURES_PAGE_PATH,
   featurePath,
@@ -106,6 +107,11 @@ const resourcesGroup: NavigationGroup = {
       ident: 24,
       href: STATS_PAGE_PATH,
       labelKey: 'handballStats',
+    },
+    {
+      ident: 31,
+      href: VIDEO_ANALYSIS_PAGE_PATH,
+      labelKey: 'videoAnalysis',
     },
     { ident: 12, href: '/was-ist-statix', labelKey: 'aboutStatix' },
     { ident: 20, href: '/erfahrungen', labelKey: 'experiences' },

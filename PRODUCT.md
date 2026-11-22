@@ -194,6 +194,13 @@ The scope itself:
   sendable once processed. Not true, so never claimed: saved drawings,
   drawings in sent clips, a presenter view for a second screen. Its shots
   are the real component over the drawn hall (`scripts/screenshots/besprechung/`).
+- **Themenseite `/handball-videoanalyse`** (Nov 2026): the pillar for the
+  head term "Handball-Videoanalyse" and its app/software/kostenlos variants.
+  It answers the question first (workflow, software checklist, three ways)
+  and shows the beta last, with the request form as primary action. The
+  feature page `video-tagging` keeps the tagging intent in its title so the
+  two do not compete. The SEO and demo-footage plan (incl. the CC BY 3.0
+  full match on Wikimedia Commons) lives in `features/handball-videoanalyse/PLAN.md`.
 
 ## Commercial truth (do not invent beyond this)
 

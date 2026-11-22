@@ -1,0 +1,59 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import {
+  Grain,
+  PlayerMagnet,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import type { VideoAnalysisStep } from '../data/video-analysis-content';
+
+/**
+ * The five steps from the tripod in the hall to the clip on a player's phone.
+ * Rendered as an ordered list with jersey magnets as the numbers, and mirrored
+ * into `HowTo` schema by the route.
+ * @returns A JSX element rendering the numbered workflow band on paper.
+ */
+export default function VideoWorkflow() {
+  const t = useTranslations('videoAnalysisPage.workflow');
+  const steps = t.raw('steps') as VideoAnalysisStep[];
+
+  return (
+    <section
+      id='ablauf'
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-20 md:py-28'>
+      <Grain tone='paper' />
+      <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
+        <SectionHeading
+          align='left'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
+        />
+
+        <ol className='mt-12 flex flex-col'>
+          {steps.map((step, index) => (
+            <li
+              key={step.title}
+              className='flex items-start gap-4 border-t border-ink/10 py-6'>
+              <PlayerMagnet
+                number={index + 1}
+                team='home'
+                size='md'
+                className='shrink-0'
+              />
+              <div>
+                <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
+                  {step.title}
+                </h3>
+                <p className='mt-1.5 max-w-[64ch] text-[15px] leading-7 text-ink/70'>
+                  {step.text}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}

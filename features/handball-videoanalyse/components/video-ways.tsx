@@ -1,0 +1,74 @@
+'use client';
+
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import {
+  BoardCard,
+  Grain,
+  SectionHeading,
+} from '@/features/landing-page/components/tactic';
+import {
+  VIDEO_ANALYSIS_WAY_LINKS,
+  type VideoAnalysisWayCopy,
+} from '../data/video-analysis-content';
+
+/**
+ * "Kostenlos, allgemein oder Handball?" — the three real ways side by side,
+ * each with the part that does not work. It answers the "kostenlos" query
+ * honestly: free works, it just costs evenings.
+ * @returns A JSX element rendering the three ways on paper.
+ */
+export default function VideoWays() {
+  const t = useTranslations('videoAnalysisPage.ways');
+  const ways = t.raw('items') as VideoAnalysisWayCopy[];
+
+  return (
+    <section
+      id='wege'
+      className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-20 md:py-28'>
+      <Grain tone='paper' />
+      <div className='relative mx-auto max-w-6xl px-6 sm:px-10'>
+        <SectionHeading
+          align='left'
+          kicker={t('kicker')}
+          title={t('title')}
+          description={t('description')}
+        />
+
+        <div className='mt-12 grid gap-6 md:grid-cols-3'>
+          {ways.map((way, index) => {
+            const href = VIDEO_ANALYSIS_WAY_LINKS[index];
+
+            return (
+              <BoardCard
+                key={way.name}
+                pin='magnet'
+                pinColor={index === 2 ? 'marker' : 'ink'}
+                className='flex h-full flex-col p-6'>
+                <p className='font-hand text-lg text-primary'>{way.effort}</p>
+                <h3 className='mt-1 font-display text-xl font-bold tracking-tight text-ink'>
+                  {way.name}
+                </h3>
+                <p className='mt-3 text-[15px] leading-7 text-ink/75'>
+                  {way.good}
+                </p>
+                <p className='mt-3 flex-1 text-[15px] leading-7 text-ink/60'>
+                  {way.bad}
+                </p>
+                {href && way.linkLabel ? (
+                  <Link
+                    href={href}
+                    className='group mt-5 inline-flex items-center gap-1.5 font-display text-[14px] font-bold text-primary transition-colors hover:text-[#ea580c]'>
+                    {way.linkLabel}
+                    <ArrowRight className='size-3.5 transition-transform duration-200 group-hover:translate-x-0.5' />
+                  </Link>
+                ) : null}
+              </BoardCard>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

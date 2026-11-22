@@ -339,7 +339,8 @@
       "videoTagging": "Etiquetado de vídeo",
       "videoBriefing": "Charla con vídeo",
       "holdSwipe": "Mantener y deslizar",
-      "livestream": "Directo"
+      "livestream": "Directo",
+      "videoAnalysis": "Análisis de vídeo"
     },
     "spotlight": {
       "badge": "Nuevo",
@@ -7252,6 +7253,14 @@
         "recordingComparison": {
           "title": "¿Papel, Excel o app?",
           "text": "Las tres formas de llevar una estadística de balonmano, comparadas con honestidad."
+        },
+        "videoGuide": {
+          "title": "Análisis de vídeo en balonmano",
+          "text": "Grabar, etiquetar, comentar, enviar, y qué debe saber hacer el software."
+        },
+        "filmingGuide": {
+          "title": "Cómo grabar un partido de balonmano",
+          "text": "Cámara, trípode, posición y sonido: lo que necesita una grabación útil."
         }
       }
     },
@@ -7454,5 +7463,180 @@
     "privacyLink": "Política de privacidad",
     "reject": "Rechazar",
     "accept": "Aceptar"
+  },
+  "videoAnalysisPage": {
+    "hero": {
+      "kicker": "Análisis de vídeo en balonmano",
+      "titleHighlight": "Análisis de vídeo en balonmano",
+      "titleTail": "del vídeo del partido a la charla",
+      "lede": "El análisis de vídeo en balonmano consiste en grabar el partido, marcar las jugadas decisivas y mostrárselas al equipo o a una sola jugadora de forma que algo cambie en el siguiente entrenamiento. Aquí verás cómo hacerlo sin un equipo de analistas: con un móvil, un trípode y un software que une vídeo y estadística.",
+      "ctaPrimary": "Solicitar acceso a la beta de vídeo",
+      "ctaSecondary": "Empezar gratis con la estadística",
+      "betaNote": "Las funciones de vídeo de Statix están en una beta cerrada y se activan bajo petición para cuentas concretas. La estadística en directo está abierta a todos.",
+      "trust": [
+        "Con móvil y trípode",
+        "Vídeo y estadística en uno",
+        "Clips para cada jugadora"
+      ]
+    },
+    "workflow": {
+      "kicker": "El proceso",
+      "title": "Análisis de vídeo en balonmano en cinco pasos",
+      "description": "Del trípode en el pabellón a la jugada en el móvil de la jugadora. Cada paso funciona sin software especial; con el adecuado desaparece la mayor parte del trabajo manual.",
+      "steps": [
+        {
+          "title": "Grabar el partido",
+          "text": "Un móvil en un trípode alto a la altura de la línea central basta para el análisis. Cuanto más alta la cámara, mejor se leen la formación defensiva y las líneas de carrera. Con dos móviles uno junto a otro, toda la pista queda en imagen sin que nadie tenga que mover la cámara."
+        },
+        {
+          "title": "Sincronizar el vídeo con el partido",
+          "text": "Nadie revisa un vídeo de 60 minutos sin orientación. Quien lleva estadística durante el partido ya tiene cada acción con su minuto: sincronizado una vez con el reloj, cada gol y cada lanzamiento fallado se convierte en una marca de salto en el vídeo."
+        },
+        {
+          "title": "Etiquetar las jugadas",
+          "text": "Marca las jugadas que importan: acción, jugadora, fase del juego, sistema defensivo. No todo, sino lo que quieres comentar. Las buenas etiquetas son aquellas por las que luego filtras, por ejemplo todos los lanzamientos de primera línea contra una defensa 6:0."
+        },
+        {
+          "title": "Comentar con el equipo",
+          "text": "Muestra de cinco a ocho jugadas en lugar de un partido entero: pausa, dibuja la línea de carrera, haz zoom en el hueco del centro de la defensa. Veinte minutos con una pregunta clara aportan más que una hora de repaso."
+        },
+        {
+          "title": "Enviar jugadas a las jugadoras",
+          "text": "El mayor efecto lo tiene un montaje para una sola persona: sus lanzamientos, sus acciones defensivas. Lo ve en el móvil cuando quiere, y tú ves si lo ha abierto."
+        }
+      ]
+    },
+    "checklist": {
+      "kicker": "Lista de control",
+      "title": "Qué debe saber hacer un software de análisis de vídeo para balonmano",
+      "description": "Un reproductor reproduce. Para analizar un partido de balonmano hace falta más: estos seis puntos separan una herramienta de una carpeta llena de archivos.",
+      "items": [
+        {
+          "title": "Subir grabaciones largas",
+          "text": "Un partido ocupa enseguida varios gigabytes. La subida tiene que hacerse por partes y continuar tras un corte de red en lugar de empezar de nuevo."
+        },
+        {
+          "title": "Sincronización con el tiempo de juego",
+          "text": "Sin conexión entre el vídeo y el desarrollo del partido buscas cada jugada a mano. Con ella saltas del gol en la estadística directamente al momento del vídeo."
+        },
+        {
+          "title": "Etiquetas de balonmano",
+          "text": "Siete metros, contraataque, superioridad e inferioridad, 6:0 o 5:1, posición de lanzamiento: términos de balonmano y no de fútbol, además de etiquetas propias para vuestras jugadas."
+        },
+        {
+          "title": "Filtros y listas",
+          "text": "Todos los lanzamientos del extremo izquierdo en inferioridad en tres partidos: una pregunta así tiene que dar en segundos una lista que puedas guardar y reutilizar."
+        },
+        {
+          "title": "Dibujar y hacer zoom en la charla",
+          "text": "Flecha, línea de carrera, círculo y zoom sobre la imagen pausada, en portátil, tableta o proyector, con ratón, dedo o presentador."
+        },
+        {
+          "title": "Compartir con jugadoras y cuerpo técnico",
+          "text": "Clips para personas concretas en lugar de un archivo enorme en el chat del grupo. Quien recibe solo sus propias jugadas, las mira."
+        }
+      ]
+    },
+    "ways": {
+      "kicker": "Tres caminos",
+      "title": "Gratis, generalista o hecho para el balonmano",
+      "description": "El análisis de vídeo funciona con medios gratuitos, con software deportivo general o con una app de balonmano. La diferencia está en cuántas tardes te cuesta.",
+      "items": [
+        {
+          "name": "Vídeo del móvil, reproductor y notas",
+          "effort": "0 € y mucho tiempo",
+          "good": "Un móvil graba, un reproductor gratuito salta a cualquier minuto y una lista con los tiempos recoge las jugadas. Sirve para averiguar si tu equipo saca algo del vídeo.",
+          "bad": "Buscas cada jugada a mano, cortas los clips uno a uno y envías un archivo enorme por mensajería. Normalmente se abandona tras tres partidos.",
+          "linkLabel": "Guía: cómo grabar bien un partido de balonmano"
+        },
+        {
+          "name": "Análisis de vídeo deportivo general",
+          "effort": "Potente, para todos los deportes",
+          "good": "Las herramientas profesionales etiquetan, cortan y dibujan; muchas vienen del deporte profesional y traen flujos de trabajo listos para analistas.",
+          "bad": "Las etiquetas de balonmano las creas tú, la estadística la llevas en otro sitio, y el precio y el aprendizaje suelen estar pensados para analistas a tiempo completo.",
+          "linkLabel": ""
+        },
+        {
+          "name": "App de balonmano con estadística y vídeo",
+          "effort": "La estadística hace el trabajo previo",
+          "good": "Como cada acción del registro en directo ya tiene su minuto, el vídeo queda ordenado tras la sincronización: goles, paradas y fallos son marcas de salto y las etiquetas vienen del balonmano.",
+          "bad": "La ventaja solo existe si se llevó estadística durante el partido. En Statix las funciones de vídeo siguen en una beta cerrada.",
+          "linkLabel": "Ver el etiquetado de vídeo en Statix"
+        }
+      ]
+    },
+    "showcase": {
+      "kicker": "Así se ve",
+      "title": "Análisis de vídeo en Statix",
+      "description": "Tres estaciones de la app: las jugadas como pistas, la charla a pantalla completa y el clip que llega a la jugadora. Las funciones de vídeo están en beta y se activan bajo petición.",
+      "items": [
+        {
+          "label": "Las pistas: una parte, ordenada por acción",
+          "alt": "Las pistas del banco de etiquetado en Statix: una fila por acción, un bloque en la línea de tiempo por jugada",
+          "linkLabel": "Más sobre el etiquetado de vídeo"
+        },
+        {
+          "label": "Charla: foco, pase, línea de carrera; el pabellón de fondo está dibujado",
+          "alt": "El modo charla en Statix: una imagen pausada con un foco sobre una jugadora, una flecha para el pase y una línea de carrera discontinua",
+          "linkLabel": "Más sobre la charla de vídeo"
+        },
+        {
+          "label": "Enviados: cada clip, a quién y si se ha visto",
+          "alt": "Los clips enviados en Statix con destinataria, fecha y si el clip se ha abierto",
+          "linkLabel": "Enviar clips a las jugadoras"
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Seguir leyendo",
+      "title": "Guías sobre vídeo en balonmano",
+      "description": "Cómo grabar un partido, preparar una charla y convertir números y jugadas en un objetivo de entrenamiento.",
+      "allLink": "Todos los artículos de la guía"
+    },
+    "faq": {
+      "kicker": "Preguntas",
+      "title": "Preguntas frecuentes sobre el análisis de vídeo en balonmano",
+      "description": "Lo que los entrenadores quieren saber antes de grabar su primer partido.",
+      "items": [
+        {
+          "question": "¿Qué es el análisis de vídeo en balonmano?",
+          "answer": "La evaluación sistemática de vídeos de partidos o entrenamientos: encontrar jugadas, marcarlas por acción, jugadora y fase del juego y comentarlas con el equipo. El objetivo no es volver a ver el partido entero, sino encontrar las pocas jugadas de las que sale un objetivo de entrenamiento."
+        },
+        {
+          "question": "¿Qué software sirve para el análisis de vídeo en balonmano?",
+          "answer": "Para empezar bastan el vídeo del móvil, un reproductor y notas. Quien analiza con regularidad necesita un software que suba grabaciones largas, marque jugadas con etiquetas de balonmano, filtre, permita dibujar en la charla y envíe clips a las jugadoras. Statix lo combina con la estadística en directo; las funciones de vídeo están ahora en una beta cerrada."
+        },
+        {
+          "question": "¿Existe análisis de vídeo de balonmano gratis?",
+          "answer": "Sí, con límites: grabar con el móvil, verlo en un reproductor gratuito y anotar los tiempos en una lista no cuesta nada salvo tiempo. En Statix la estadística en directo es gratis para siempre en el nivel Basis; las funciones de vídeo forman parte de los niveles de vídeo de pago y ahora se activan bajo petición."
+        },
+        {
+          "question": "¿Dónde coloco la cámara para el análisis de vídeo?",
+          "answer": "Lo más alto posible y a la altura de la línea central, por ejemplo en la grada. Desde ahí ves la formación defensiva y las líneas de carrera; desde el suelo del pabellón ves sobre todo espaldas. No grabes contra las ventanas y prevé batería o corriente para al menos 90 minutos."
+        },
+        {
+          "question": "¿Cuánto tarda el análisis de vídeo de un partido de balonmano?",
+          "answer": "Si buscas y cortas cada jugada a mano, enseguida tardas más de lo que duró el partido. Con marcas de salto de la estadística en directo desaparece la búsqueda y queda elegir y etiquetar las jugadas que quieres comentar."
+        },
+        {
+          "question": "¿Puedo grabar y analizar partidos de categorías inferiores?",
+          "answer": "Para grabar a menores necesitas el consentimiento de los padres. Acuérdalo por escrito al inicio de la temporada e indica para qué se usa el vídeo y quién lo ve. Un análisis interno que solo ven el cuerpo técnico y el equipo es mucho más sencillo que una publicación."
+        },
+        {
+          "question": "¿Qué diferencia hay entre análisis de vídeo y charla de vídeo?",
+          "answer": "El análisis se hace en el escritorio: encontrar, etiquetar y seleccionar jugadas. La charla se hace delante del equipo: mostrar las jugadas elegidas, pausar, dibujar, debatir. Una buena charla rara vez dura más de 20 minutos y tiene una pregunta clara."
+        },
+        {
+          "question": "¿Detecta Statix las jugadas automáticamente en el vídeo?",
+          "answer": "Las marcas de salto de Statix salen de la estadística en directo, no de la imagen. El análisis a partir de la imagen (trayectorias, vuelo del balón, panorámica con dos cámaras) es la parte más reciente de la beta y solo hace sugerencias; nunca se crea por sí sola una jugada ni una entrada estadística."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Beta de vídeo",
+      "title": "Primero la estadística, después cada jugada con un clic",
+      "description": "La estadística en directo es hoy gratuita para todos, y es lo que después encuentra cada jugada en el vídeo. Estamos activando las funciones de vídeo para cuentas seleccionadas.",
+      "linkLabel": "Solicitar acceso a la beta de vídeo"
+    }
   }
 }

@@ -339,7 +339,8 @@
       "videoTagging": "Marquage vidéo",
       "videoBriefing": "Causerie vidéo",
       "holdSwipe": "Maintenir et glisser",
-      "livestream": "Livestream"
+      "livestream": "Livestream",
+      "videoAnalysis": "Analyse vidéo handball"
     },
     "spotlight": {
       "badge": "Nouveau",
@@ -7252,6 +7253,14 @@
         "recordingComparison": {
           "title": "Papier, Excel ou application ?",
           "text": "Les trois façons de tenir une statistique de handball, comparées honnêtement."
+        },
+        "videoGuide": {
+          "title": "L'analyse vidéo au handball expliquée",
+          "text": "Filmer, taguer, débriefer, envoyer, et ce qu'un logiciel doit savoir faire."
+        },
+        "filmingGuide": {
+          "title": "Bien filmer un match de handball",
+          "text": "Caméra, trépied, position et son : ce qu'il faut pour un enregistrement exploitable."
         }
       }
     },
@@ -7454,5 +7463,180 @@
     "privacyLink": "Politique de confidentialité",
     "reject": "Refuser",
     "accept": "Accepter"
+  },
+  "videoAnalysisPage": {
+    "hero": {
+      "kicker": "L'analyse vidéo au handball",
+      "titleHighlight": "Analyse vidéo handball",
+      "titleTail": "de la vidéo du match au débrief",
+      "lede": "L'analyse vidéo au handball consiste à filmer le match, à repérer les actions décisives et à les montrer à l'équipe ou à une seule joueuse de sorte que quelque chose change au prochain entraînement. Voici comment faire sans cellule d'analystes : avec un téléphone, un trépied et un logiciel qui réunit vidéo et statistiques.",
+      "ctaPrimary": "Demander l'accès à la bêta vidéo",
+      "ctaSecondary": "Démarrer les statistiques gratuitement",
+      "betaNote": "Les fonctions vidéo de Statix sont en bêta fermée et sont activées sur demande pour certains comptes. Les statistiques en direct sont ouvertes à tous.",
+      "trust": [
+        "Avec téléphone et trépied",
+        "Vidéo et statistiques réunies",
+        "Des clips pour chaque joueuse"
+      ]
+    },
+    "workflow": {
+      "kicker": "Le déroulé",
+      "title": "L'analyse vidéo au handball en cinq étapes",
+      "description": "Du trépied dans la salle à l'action sur le téléphone de la joueuse. Chaque étape fonctionne sans logiciel spécial ; avec le bon outil, la plupart des manipulations disparaissent.",
+      "steps": [
+        {
+          "title": "Filmer le match",
+          "text": "Un téléphone sur un trépied haut à hauteur de la ligne médiane suffit pour l'analyse. Plus la caméra est haute, mieux on lit l'organisation défensive et les courses. Avec deux téléphones côte à côte, tout le terrain est dans l'image sans que personne ne doive suivre le jeu."
+        },
+        {
+          "title": "Synchroniser la vidéo avec le match",
+          "text": "Personne ne regarde une vidéo de 60 minutes sans repères. Qui tient des statistiques pendant le match a déjà chaque action avec son temps de jeu : une fois synchronisé avec le chrono, chaque but et chaque tir manqué devient un repère dans la vidéo."
+        },
+        {
+          "title": "Taguer les actions",
+          "text": "Marque les actions qui comptent : action, joueuse, phase de jeu, système défensif. Pas tout, seulement ce dont tu veux parler. Les bons tags sont ceux par lesquels tu filtreras ensuite, par exemple tous les tirs de la base arrière contre une défense 0-6."
+        },
+        {
+          "title": "Débriefer avec l'équipe",
+          "text": "Montre cinq à huit actions plutôt qu'un match entier : pause, trace la course, zoome sur le trou au centre de la défense. Vingt minutes avec une question claire apportent plus qu'une heure de rétrospective."
+        },
+        {
+          "title": "Envoyer les actions aux joueuses",
+          "text": "Le montage destiné à une seule personne a le plus d'effet : ses tirs, ses actions défensives. Elle le regarde sur son téléphone quand elle veut, et tu vois si elle l'a ouvert."
+        }
+      ]
+    },
+    "checklist": {
+      "kicker": "Check-list",
+      "title": "Ce qu'un logiciel d'analyse vidéo pour le handball doit savoir faire",
+      "description": "Un lecteur vidéo sait lire. Pour analyser un match de handball, il faut plus : ces six points distinguent un outil d'un dossier plein de fichiers.",
+      "items": [
+        {
+          "title": "Téléverser de longues vidéos",
+          "text": "Un match pèse vite plusieurs gigaoctets. L'envoi doit se faire par morceaux et reprendre après une coupure réseau au lieu de tout recommencer."
+        },
+        {
+          "title": "Synchronisation avec le temps de jeu",
+          "text": "Sans lien entre la vidéo et le déroulé du match, tu cherches chaque action à la main. Avec lui, tu passes du but dans les statistiques directement au bon moment de la vidéo."
+        },
+        {
+          "title": "Des tags issus du handball",
+          "text": "Jet de 7 mètres, contre-attaque, supériorité et infériorité numérique, 0-6 ou 1-5, position de tir : du vocabulaire de handball et non de football, plus tes propres tags pour vos combinaisons."
+        },
+        {
+          "title": "Filtres et playlists",
+          "text": "Tous les tirs de l'ailière gauche en infériorité numérique sur trois matchs : une telle question doit donner en quelques secondes une liste que tu peux enregistrer et réutiliser."
+        },
+        {
+          "title": "Dessiner et zoomer pendant le débrief",
+          "text": "Flèche, course, cercle et zoom sur l'image en pause, sur ordinateur, tablette ou vidéoprojecteur, à la souris, au doigt ou avec un pointeur."
+        },
+        {
+          "title": "Partager avec les joueuses et le staff",
+          "text": "Des clips pour chaque personne au lieu d'un énorme fichier dans le groupe. Celle qui ne reçoit que ses propres actions les regarde vraiment."
+        }
+      ]
+    },
+    "ways": {
+      "kicker": "Trois façons",
+      "title": "Gratuit, généraliste ou pensé pour le handball",
+      "description": "L'analyse vidéo fonctionne avec des moyens gratuits, avec un logiciel sportif généraliste ou avec une application de handball. La différence, c'est le nombre de soirées qu'elle coûte.",
+      "items": [
+        {
+          "name": "Vidéo du téléphone, lecteur et notes",
+          "effort": "0 € et beaucoup de temps",
+          "good": "Un téléphone filme, un lecteur gratuit saute à n'importe quelle minute et une liste de temps de jeu garde les actions. Idéal pour savoir si ton équipe tire quelque chose de la vidéo.",
+          "bad": "Tu cherches chaque action à la main, tu coupes les clips un par un et tu envoies un énorme fichier par messagerie. En général, cela s'arrête après trois matchs.",
+          "linkLabel": "Guide : bien filmer un match de handball"
+        },
+        {
+          "name": "Analyse vidéo sportive généraliste",
+          "effort": "Puissant, pour tous les sports",
+          "good": "Les outils professionnels taguent, découpent et dessinent ; beaucoup viennent du sport professionnel et proposent des méthodes prêtes pour les analystes.",
+          "bad": "Tu crées toi-même les tags de handball, tu tiens les statistiques ailleurs, et le prix comme la prise en main visent souvent des analystes à plein temps.",
+          "linkLabel": ""
+        },
+        {
+          "name": "Application de handball avec statistiques et vidéo",
+          "effort": "Les statistiques font le travail préparatoire",
+          "good": "Comme chaque action saisie en direct a déjà son temps de jeu, la vidéo est triée dès la synchronisation : buts, arrêts et tirs manqués sont des repères, et les tags viennent du handball.",
+          "bad": "L'avance n'existe que si des statistiques ont été tenues pendant le match. Dans Statix, les fonctions vidéo sont encore en bêta fermée.",
+          "linkLabel": "Voir le tagging vidéo dans Statix"
+        }
+      ]
+    },
+    "showcase": {
+      "kicker": "En images",
+      "title": "L'analyse vidéo dans Statix",
+      "description": "Trois étapes dans l'application : les actions sous forme de pistes, le débrief en plein écran et le clip qui arrive chez la joueuse. Les fonctions vidéo sont en bêta et activées sur demande.",
+      "items": [
+        {
+          "label": "Les pistes : une mi-temps, triée par action",
+          "alt": "Les pistes du banc de tagging dans Statix : une ligne par action, un bloc sur la ligne de temps par action",
+          "linkLabel": "En savoir plus sur le tagging vidéo"
+        },
+        {
+          "label": "Débrief : projecteur, passe, course ; la salle en dessous est dessinée",
+          "alt": "Le mode débrief dans Statix : une image en pause avec un projecteur autour d'une joueuse, une flèche pour la passe et une course en pointillés",
+          "linkLabel": "En savoir plus sur le débrief vidéo"
+        },
+        {
+          "label": "Envoyés : chaque clip, à qui, et s'il a été regardé",
+          "alt": "Les clips envoyés dans Statix avec destinataire, date et ouverture du clip",
+          "linkLabel": "Envoyer des clips aux joueuses"
+        }
+      ]
+    },
+    "guides": {
+      "kicker": "Pour aller plus loin",
+      "title": "Guides sur la vidéo au handball",
+      "description": "Comment filmer un match, construire un débrief et transformer chiffres et actions en axe de travail.",
+      "allLink": "Tous les articles du guide"
+    },
+    "faq": {
+      "kicker": "Questions",
+      "title": "Questions fréquentes sur l'analyse vidéo au handball",
+      "description": "Ce que les entraîneurs veulent savoir avant de filmer leur premier match.",
+      "items": [
+        {
+          "question": "Qu'est-ce que l'analyse vidéo au handball ?",
+          "answer": "L'exploitation systématique de vidéos de matchs ou d'entraînements : trouver les actions, les marquer par action, joueuse et phase de jeu et en discuter avec l'équipe. Le but n'est pas de revoir tout le match, mais de trouver les quelques actions dont découle un axe de travail."
+        },
+        {
+          "question": "Quel logiciel choisir pour l'analyse vidéo au handball ?",
+          "answer": "Pour débuter, une vidéo de téléphone, un lecteur et des notes suffisent. Pour analyser régulièrement, il faut un logiciel qui téléverse de longues vidéos, tague les actions avec des termes de handball, filtre, permet de dessiner pendant le débrief et envoie des clips aux joueuses. Statix associe cela aux statistiques en direct ; les fonctions vidéo sont actuellement en bêta fermée."
+        },
+        {
+          "question": "Existe-t-il une analyse vidéo de handball gratuite ?",
+          "answer": "Oui, avec des limites : filmer au téléphone, regarder dans un lecteur gratuit et noter les temps de jeu sur une liste ne coûte que du temps. Dans Statix, les statistiques en direct sont gratuites pour toujours dans le niveau Basis ; les fonctions vidéo font partie des niveaux vidéo payants et sont actuellement activées sur demande."
+        },
+        {
+          "question": "Où placer la caméra pour l'analyse vidéo au handball ?",
+          "answer": "Le plus haut possible et à hauteur de la ligne médiane, par exemple en tribune. De là, tu vois l'organisation défensive et les courses ; depuis le sol de la salle, surtout des dos. Ne filme pas face aux fenêtres et prévois batterie ou alimentation pour au moins 90 minutes."
+        },
+        {
+          "question": "Combien de temps prend l'analyse vidéo d'un match de handball ?",
+          "answer": "Si tu cherches et découpes chaque action à la main, tu y passes vite plus de temps que la durée du match. Avec les repères issus des statistiques en direct, la recherche disparaît ; il reste à choisir et taguer les actions dont tu veux parler."
+        },
+        {
+          "question": "Ai-je le droit de filmer et d'analyser des matchs de jeunes ?",
+          "answer": "Pour filmer des mineurs, il faut le consentement des parents. Règle-le par écrit en début de saison en précisant à quoi sert la vidéo et qui la voit. Une analyse interne, vue uniquement par le staff et l'équipe, est bien plus simple qu'une publication."
+        },
+        {
+          "question": "Quelle différence entre analyse vidéo et débrief vidéo ?",
+          "answer": "L'analyse se fait au bureau : trouver, taguer et sélectionner les actions. Le débrief se fait devant l'équipe : montrer les actions choisies, mettre en pause, dessiner, discuter. Un bon débrief dure rarement plus de 20 minutes et pose une question claire."
+        },
+        {
+          "question": "Statix détecte-t-il automatiquement les actions dans la vidéo ?",
+          "answer": "Les repères de Statix viennent des statistiques en direct, pas de l'image. L'analyse à partir de l'image (courses, trajectoire du ballon, panorama à deux caméras) est la partie la plus récente de la bêta et ne fait que des suggestions ; aucune action ni aucune donnée statistique n'est jamais créée toute seule."
+        }
+      ]
+    },
+    "cta": {
+      "kicker": "Bêta vidéo",
+      "title": "D'abord les statistiques, puis chaque action en un clic",
+      "description": "Les statistiques en direct sont gratuites pour tous dès aujourd'hui, et ce sont elles qui retrouvent ensuite chaque action dans la vidéo. Nous activons actuellement les fonctions vidéo pour des comptes sélectionnés.",
+      "linkLabel": "Demander l'accès à la bêta vidéo"
+    }
   }
 }

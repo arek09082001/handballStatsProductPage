@@ -54,6 +54,8 @@ import { handballAbwehrsystemAuswaehlen } from './articles/handball-abwehrsystem
 import { handballJugendtrainerKennzahlenErstesJahr } from './articles/handball-jugendtrainer-kennzahlen-erstes-jahr';
 import { handballStatistikVereinEinfuehren } from './articles/handball-statistik-verein-einfuehren';
 import { handballspieleLivestreamen } from './articles/handballspiele-livestreamen';
+import { handballspielFilmen } from './articles/handballspiel-filmen';
+import { handballVideobesprechung } from './articles/handball-videobesprechung';
 
 /** URL segment for the Ratgeber section. Change here to rename the section. */
 export const RATGEBER_BASE_PATH = '/ratgeber';
@@ -128,6 +130,8 @@ export const ARTICLES: Article[] = [
   handballJugendtrainerKennzahlenErstesJahr,
   handballStatistikVereinEinfuehren,
   handballspieleLivestreamen,
+  handballspielFilmen,
+  handballVideobesprechung,
 ];
 
 /** Articles sorted newest-first by publication date. */

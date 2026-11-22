@@ -141,6 +141,12 @@ export const SITE_LINKS = [
             'Alle Handball-Statistiken im Überblick: welche Kennzahlen es gibt, wie Wurfquote, Angriffseffektivität, Paradenquote und Tempoanteil berechnet werden, welche Richtwerte im Amateurbereich gelten und wie du sie live erfasst.',
     },
     {
+        name: 'Handball-Videoanalyse',
+        path: '/handball-videoanalyse',
+        description:
+            'Handball-Videoanalyse für Trainer: Spiel filmen, Szenen taggen, mit der Mannschaft besprechen und Clips an einzelne Spielerinnen schicken – mit Checkliste für die Software-Wahl und kostenlosen Wegen im Vergleich. Die Video-Funktionen von Statix laufen als geschlossene Beta.',
+    },
+    {
         name: 'Preise',
         path: '/preise',
         description:

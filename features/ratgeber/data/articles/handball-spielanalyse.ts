@@ -18,7 +18,7 @@ export const handballSpielanalyse: Article = {
   category: 'Kennzahlen & Analyse',
   archetype: 'kennzahl',
   datePublished: '2026-06-10',
-  dateModified: '2026-08-07',
+  dateModified: '2026-11-21',
   readingTimeMinutes: 8,
   excerpt:
     'Ein Spiel zu analysieren heißt nicht, alles zu erfassen. Es heißt, die zwei Phasen zu finden, in denen das Spiel gekippt ist – und daraus eine Übung für Dienstag zu machen.',
@@ -87,7 +87,9 @@ Eine Analyse wirkt nicht, wenn sie stimmt, sondern wenn sie sich im Spiel zeigt:
 - **Deine Mannschaft erkennt die Phase selbst.** Wenn in der Auszeit jemand sagt "wir verlieren gerade drei Bälle hintereinander", hat die Analyse den Weg vom Zettel aufs Feld geschafft.
 - **Deine Ansprache am Dienstag dauert zwei Minuten.** Eine Zahl, eine Ursache, eine Übung – das ist das Format, das hängen bleibt.
 
-Für den Anfang reicht ein Blatt Papier mit vier Zeilen für die Viertel. Wer die Phasen live sehen will, ohne nachzurechnen, erfasst die Ereignisse mit [Statix](/) per Tap und bekommt Torfolge, Effektivität und Wurfbilder direkt nebeneinander – auch offline in der Halle.`,
+Für den Anfang reicht ein Blatt Papier mit vier Zeilen für die Viertel. Wer die Phasen live sehen will, ohne nachzurechnen, erfasst die Ereignisse mit [Statix](/) per Tap und bekommt Torfolge, Effektivität und Wurfbilder direkt nebeneinander – auch offline in der Halle.
+
+Hast du das Spiel gefilmt, schau dir nicht alle 60 Minuten an, sondern nur die eine Phase, die die Zahlen zeigen. Wie du dafür filmst, taggst und die Szenen mit der Mannschaft besprichst, steht auf der Seite zur [Handball-Videoanalyse](/handball-videoanalyse).`,
   modules: [
     {
       kind: 'answerBox',
