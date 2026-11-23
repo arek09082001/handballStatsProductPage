@@ -1569,7 +1569,7 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Handball statistics app",
+      "badge": "Handball stats & video analysis",
       "headlineLead": "Record handball live.",
       "headlineHighlight": "See where your",
       "headlineTail": "game turns.",
@@ -2807,7 +2807,7 @@
       "titlePrefix": "What is",
       "titleBrand": "Statix",
       "titleSuffix": "?",
-      "lede": "Statix is the handball statistics app for coaches, clubs and teams: record matches live with a tap – goals, shots, saves, suspensions and substitutions – and get shooting percentages, shot maps, player values and AI analyses worked out automatically. Built in Germany, straight in the browser, works offline in the hall.",
+      "lede": "Statix is the handball statistics app for coaches, clubs and teams: record matches live with a tap – goals, shots, saves, suspensions and substitutions – and get shooting percentages, shot maps, player values and AI analyses worked out automatically. Built in Germany, straight in the browser, works offline in the hall. Plus video analysis: tag match scenes, review them with the team and send clips to individual players (beta).",
       "ctaFeatures": "See all features",
       "trust": [
         "Made in Germany",

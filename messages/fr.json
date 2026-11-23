@@ -1569,7 +1569,7 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Application de statistiques de handball",
+      "badge": "Statistiques & analyse vidéo handball",
       "headlineLead": "Saisis le match.",
       "headlineHighlight": "Comprends où",
       "headlineTail": "le jeu bascule.",
@@ -2807,7 +2807,7 @@
       "titlePrefix": "Qu’est-ce que",
       "titleBrand": "Statix",
       "titleSuffix": " ?",
-      "lede": "Statix est l’application de statistiques de handball pour les entraîneurs, les clubs et les équipes : saisissez les matchs en direct d’un geste – buts, tirs, arrêts, exclusions et changements – et obtenez automatiquement pourcentages de tir, cartes de tirs, valeurs de joueurs et analyses par IA. Développée en Allemagne, directement dans le navigateur, utilisable hors ligne dans la salle.",
+      "lede": "Statix est l’application de statistiques de handball pour les entraîneurs, les clubs et les équipes : saisissez les matchs en direct d’un geste – buts, tirs, arrêts, exclusions et changements – et obtenez automatiquement pourcentages de tir, cartes de tirs, valeurs de joueurs et analyses par IA. Développée en Allemagne, directement dans le navigateur, utilisable hors ligne dans la salle. Et l’analyse vidéo : taguer les actions du match, les analyser avec l’équipe et envoyer des clips à chaque joueuse (bêta).",
       "ctaFeatures": "Voir toutes les fonctions",
       "trust": [
         "Fabriqué en Allemagne",

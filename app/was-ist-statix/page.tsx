@@ -9,9 +9,9 @@ import {
 } from '@/features/was-ist-statix/data/brand-content';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Was ist Statix? Die Handball-Statistik-App im Überblick',
+  title: 'Was ist Statix? Handball-Statistik- & Videoanalyse-App',
   description:
-    'Statix ist die Handball-Statistik-App aus Deutschland: Spiele live per Tap erfassen, Wurfquoten, Wurfbilder & KI-Analysen automatisch auswerten. Alles über Statix – Funktionen, Preise und die Live-Demo ohne Account.',
+    'Statix ist die Handball-Statistik- und Videoanalyse-App aus Deutschland: Spiele live per Tap erfassen, Wurfquoten, Wurfbilder & KI-Analysen auswerten, Spielszenen im Video taggen und besprechen. Funktionen, Preise, Live-Demo.',
   path: BRAND_PAGE_PATH,
   // Title already contains the brand ("Was ist Statix?") – suppress the
   // "| Statix" template suffix to avoid duplicating it.
@@ -23,6 +23,7 @@ export const metadata: Metadata = createPageMetadata({
     'statix handball',
     'statix handball app',
     'statix statistik app',
+    'statix videoanalyse',
     'statix demo',
     'statix kostenlos',
     'statix erfahrungen',
@@ -37,8 +38,8 @@ export default function Page() {
       <PageSchema
         id='was-ist-statix'
         type='AboutPage'
-        name='Was ist Statix? Die Handball-Statistik-App im Überblick'
-        description='Statix im Überblick: die Handball-Statistik-App aus Deutschland – Funktionen, Zielgruppe, Preise und die Geschichte hinter der App.'
+        name='Was ist Statix? Handball-Statistik- & Videoanalyse-App'
+        description='Statix im Überblick: die Handball-Statistik- und Videoanalyse-App aus Deutschland – Funktionen, Zielgruppe, Preise und die Geschichte hinter der App.'
         path={BRAND_PAGE_PATH}
         imagePath='/heroImage.png'
         breadcrumbs={[

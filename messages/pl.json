@@ -1569,7 +1569,7 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Aplikacja do statystyk piłki ręcznej",
+      "badge": "Statystyki i analiza wideo w piłce ręcznej",
       "headlineLead": "Zapisuj mecz na żywo.",
       "headlineHighlight": "Zobacz, kiedy",
       "headlineTail": "zmienia się gra.",
@@ -2807,7 +2807,7 @@
       "titlePrefix": "Czym jest",
       "titleBrand": "Statix",
       "titleSuffix": "?",
-      "lede": "Statix to aplikacja do statystyk piłki ręcznej dla trenerów, klubów i drużyn: rejestruj mecze na żywo jednym dotknięciem – bramki, rzuty, obrony, kary i zmiany – a skuteczność rzutów, mapy rzutów, wartości zawodników i analizy AI powstaną automatycznie. Powstała w Niemczech, działa wprost w przeglądarce i offline w hali.",
+      "lede": "Statix to aplikacja do statystyk piłki ręcznej dla trenerów, klubów i drużyn: rejestruj mecze na żywo jednym dotknięciem – bramki, rzuty, obrony, kary i zmiany – a skuteczność rzutów, mapy rzutów, wartości zawodników i analizy AI powstaną automatycznie. Powstała w Niemczech, działa wprost w przeglądarce i offline w hali. Do tego analiza wideo: tagowanie scen meczu, omawianie ich z drużyną i wysyłanie klipów poszczególnym zawodniczkom (beta).",
       "ctaFeatures": "Zobacz wszystkie funkcje",
       "trust": [
         "Made in Germany",

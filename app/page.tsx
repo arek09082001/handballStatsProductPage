@@ -4,7 +4,7 @@ import { createPageMetadata, HOME_TITLE } from '@/lib/seo';
 export const metadata = createPageMetadata({
   title: HOME_TITLE,
   description:
-    'Statix ist die Handball-Statistik-App für Trainer & Vereine: Statistiken live per Tap erfassen, Wurfquoten & Wurfbilder automatisch ausgewertet – offline, kostenlos starten. Live-Demo ohne Account.',
+    'Statix ist die Handball-Statistik- und Videoanalyse-App für Trainer & Vereine: Statistiken live per Tap erfassen, Wurfquoten & Wurfbilder automatisch, Spielszenen im Video taggen und besprechen – offline, kostenlos starten.',
   path: '/',
   absoluteTitle: true,
   keywords: [
@@ -24,6 +24,8 @@ export const metadata = createPageMetadata({
     'handball spielanalyse',
     'handball statistik app kostenlos testen',
     'handball statistik demo',
+    'handball videoanalyse',
+    'handball videoanalyse app',
   ],
 });
 

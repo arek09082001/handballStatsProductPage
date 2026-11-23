@@ -1569,7 +1569,7 @@
   },
   "productPage": {
     "hero": {
-      "badge": "App de estadísticas de balonmano",
+      "badge": "Estadísticas y videoanálisis de balonmano",
       "headlineLead": "Registra el partido.",
       "headlineHighlight": "Entiende dónde",
       "headlineTail": "cambia el juego.",
@@ -2807,7 +2807,7 @@
       "titlePrefix": "¿Qué es",
       "titleBrand": "Statix",
       "titleSuffix": "?",
-      "lede": "Statix es la app de estadísticas de balonmano para entrenadores, clubes y equipos: registra los partidos en directo con un toque —goles, tiros, paradas, exclusiones y cambios— y obtén automáticamente porcentajes de tiro, mapas de tiro, valores de jugador y análisis con IA. Desarrollada en Alemania, directamente en el navegador y con funcionamiento sin conexión en el pabellón.",
+      "lede": "Statix es la app de estadísticas de balonmano para entrenadores, clubes y equipos: registra los partidos en directo con un toque —goles, tiros, paradas, exclusiones y cambios— y obtén automáticamente porcentajes de tiro, mapas de tiro, valores de jugador y análisis con IA. Desarrollada en Alemania, directamente en el navegador y con funcionamiento sin conexión en el pabellón. Además, videoanálisis: etiquetar escenas del partido, analizarlas con el equipo y enviar clips a cada jugadora (beta).",
       "ctaFeatures": "Ver todas las funciones",
       "trust": [
         "Hecho en Alemania",
