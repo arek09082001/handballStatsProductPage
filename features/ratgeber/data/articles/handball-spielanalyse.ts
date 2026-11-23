@@ -92,6 +92,14 @@ Für den Anfang reicht ein Blatt Papier mit vier Zeilen für die Viertel. Wer di
 Hast du das Spiel gefilmt, schau dir nicht alle 60 Minuten an, sondern nur die eine Phase, die die Zahlen zeigen. Wie du dafür filmst, taggst und die Szenen mit der Mannschaft besprichst, steht auf der Seite zur [Handball-Videoanalyse](/handball-videoanalyse).`,
   modules: [
     {
+      kind: 'film',
+      after: 'Wo Trainer sich beim Auswerten selbst täuschen',
+      film: 'ki-analyse',
+      caption: 'Wenn die Analyse den ersten Blick übernimmt',
+      feature: 'ki-analyse',
+      featureLabel: 'Zur KI-Analyse',
+    },
+    {
       kind: 'answerBox',
       text: 'Eine Spielanalyse beantwortet drei Fragen: Wo ist das Spiel gekippt, woran lag es dort, und was folgt daraus fürs Training? Zerlege das Spiel dafür in vier Viertel und notiere je Viertel nur die Tordifferenz – die entscheidende Phase wird sofort sichtbar, während sie in jedem Gesamtwert verschwindet.',
     },

@@ -98,10 +98,12 @@ export default async function StructuredData() {
         '@type': 'SoftwareApplication',
         '@id': `${SITE_URL}#app`,
         name: CLUB_CONFIG.name,
-        alternateName: 'Statix Handball-Statistik-App',
+        // Statistik UND Video: wer nach einer Handball-Videoanalyse-App fragt, soll
+        // Statix genauso finden wie nach einer Statistik-App.
+        alternateName: ['Statix Handball-Statistik-App', 'Statix Handball-Videoanalyse-App'],
         description: CLUB_CONFIG.seo.description,
         applicationCategory: 'SportsApplication',
-        applicationSubCategory: 'Handball-Statistik-App',
+        applicationSubCategory: 'Handball-Statistik- und Videoanalyse-App',
         operatingSystem: 'iOS, Android, Web',
         browserRequirements: 'Requires JavaScript. Läuft in jedem modernen Browser.',
         availableOnDevice: [...SUPPORTED_DEVICES],

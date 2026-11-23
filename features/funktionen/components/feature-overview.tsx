@@ -1,5 +1,6 @@
 'use client';
 
+import { ChevronDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import {
   BoardCard,
@@ -33,14 +34,34 @@ export default function FeatureOverview({ feature }: { feature: Feature }) {
               title={feature.headline}
             />
 
+            {/* Der erste Absatz sagt, was es ist. Das Wie zeigt der Film
+                darunter; das Warum steht zum Aufklappen da — im Dokument,
+                aber nicht als Wand vor dem Film. */}
             <div className='mt-8 space-y-5'>
-              {feature.intro.map((paragraph) => (
+              {feature.intro.slice(0, 1).map((paragraph) => (
                 <p
                   key={paragraph.slice(0, 40)}
                   className='max-w-[68ch] text-base leading-8 text-ink/75'>
                   {paragraph}
                 </p>
               ))}
+              {feature.intro.length > 1 ? (
+                <details className='group'>
+                  <summary className='inline-flex cursor-pointer list-none items-center gap-1.5 rounded font-display text-[15px] font-bold tracking-tight text-primary hover:text-[#ea580c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 [&::-webkit-details-marker]:hidden'>
+                    <ChevronDown aria-hidden='true' className='size-4 transition-transform group-open:rotate-180' />
+                    {t('overviewMore')}
+                  </summary>
+                  <div className='mt-4 space-y-5'>
+                    {feature.intro.slice(1).map((paragraph) => (
+                      <p
+                        key={paragraph.slice(0, 40)}
+                        className='max-w-[68ch] text-base leading-8 text-ink/75'>
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </details>
+              ) : null}
             </div>
           </div>
 

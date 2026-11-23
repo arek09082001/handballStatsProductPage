@@ -75,6 +75,14 @@ Hilfreich ist, die Frage aus Zahlen abzuleiten statt aus dem Gefühl: Wer weiß,
 - **Über die Saison:** Ändert sich die Zahl, aus der die Frage kam – etwa die Quote aus dem Rückraum oder die Zahl der technischen Fehler im Positionsangriff?`,
   modules: [
     {
+      kind: 'film',
+      after: 'Der Ablauf im Detail',
+      film: 'video-besprechung',
+      caption: 'So sieht der Besprechungsmodus in Statix aus',
+      feature: 'video-besprechung',
+      featureLabel: 'Zum Besprechungsmodus',
+    },
+    {
       kind: 'answerBox',
       text: 'Eine Videobesprechung im Handball dauert höchstens 20 Minuten, beantwortet eine Frage und zeigt fünf bis acht Szenen – mehr gelungene als misslungene. Halte das Bild im Moment der Entscheidung an, zeichne Pass und Laufweg ein und frag die Spielerinnen, was sie sehen. Szenen, die nur eine Person betreffen, schickst du ihr einzeln.',
     },

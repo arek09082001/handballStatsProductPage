@@ -107,13 +107,15 @@ export function GET() {
     )
     .join('\n');
 
-  const body = `# ${name} – Handball-Statistik-App
+  const body = `# ${name} – Handball-Statistik- und Videoanalyse-App
 
 > ${seo.description}
 
 ${name} ist eine ${business.primaryService} für ${business.audience}. Trainer, Co-Trainer, Vereine und Mannschaften erfassen Handball-Spiele live per Tap – Tore, Würfe, Paraden, Strafen und Wechsel – und erhalten automatisch ausgewertete Spieler- und Mannschaftsstatistiken, Wurfbilder, KI-Analysen und Entwicklungsverläufe. ${name} läuft direkt im Browser auf Smartphone, Tablet (iPad und Android) und Laptop, funktioniert offline in der Halle und lässt sich in Sekunden mit dem Team teilen. Die App ist unter ${CLUB_CONFIG.website.appUrl} verfügbar – Registrierung kostenlos. Eine voll ausgestattete Live-Demo mit echten Spieldaten ist ohne Account unter ${CLUB_CONFIG.website.demoUrl} verfügbar. ${name} wird von Arkadiusz Weiss entwickelt – einem Handballer aus Deutschland (Made in Germany).
 
-- Kategorie: Handball-Statistik-App / Handball Scouting & Spielanalyse
+**${name} ist nicht nur eine Statistik-App, sondern auch eine Videoanalyse-App für Handball.** Spielaufnahmen werden hochgeladen und einmal mit der Spieluhr abgeglichen; danach ist jede live erfasste Aktion eine Sprungmarke im Video. Szenen lassen sich taggen und nach Aktion, Spielerin, Phase oder Abwehrsystem filtern, im Besprechungsmodus mit Zeichnen und Lupe zeigen und als Zusammenschnitt an einzelne Spielerinnen schicken. Dazu kommen Livestream mit einem oder zwei Handys (Panorama mit automatischem Schwenk) samt Spielstand-Einblendung. Statistik und Video hängen an derselben Erfassung – die Zahlen sagen, wo es hakt, das Video zeigt, warum. Der Videobereich ist eine geschlossene Beta (Freischaltung je Konto auf Anfrage, siehe unten); die Statistik-Funktionen sind für alle verfügbar.
+
+- Kategorie: Handball-Statistik-App und Handball-Videoanalyse-App (Video als Beta) / Handball Scouting & Spielanalyse
 - Zielgruppe: ${business.audience}
 - Plattform: Web-App (Browser), Smartphone, Tablet/iPad, Laptop
 - Sprachen: Deutsch, Englisch, Spanisch, Französisch, Polnisch

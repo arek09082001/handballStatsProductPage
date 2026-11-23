@@ -89,6 +89,14 @@ Daraus wird ohne Mehraufwand eine [Handball-Videoanalyse](/handball-videoanalyse
 5. **Niemand pflegt den Spielstand.** Ein Stream ohne Stand wird nach drei Minuten wieder geschlossen. Wer ohnehin Statistik führt, erledigt beides in einem Schritt.`,
   modules: [
     {
+      kind: 'film',
+      after: 'Schritt für Schritt: ein Livestream mit Statix',
+      film: 'handball-livestream',
+      caption: 'Die vier Schritte als Kurzfilm',
+      feature: 'handball-livestream',
+      featureLabel: 'Zum Livestream',
+    },
+    {
       kind: 'answerBox',
       text: 'Für einen Livestream im Amateurhandball reichen ein oder zwei Handys auf einem hohen Stativ an der Mittellinie, ausreichend Upload und Strom. Kläre vorher Verband, Gegner und das Einverständnis der Menschen im Bild. Am wenigsten Arbeit macht ein Weg, bei dem die Statistik, die du ohnehin erfasst, gleichzeitig den Spielstand im Bild pflegt.',
     },

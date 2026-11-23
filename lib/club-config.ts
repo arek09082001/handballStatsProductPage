@@ -18,9 +18,9 @@ export const CLUB_CONFIG = {
   // PRODUCT PROFILE
   // ============================================
   business: {
-    primaryService: 'Handball-Statistik-App',
+    primaryService: 'Handball-Statistik- und Videoanalyse-App',
     description:
-      'Live-Statistiken, Spieleranalyse und Team-Management für Handball',
+      'Live-Statistiken, Videoanalyse, Spieleranalyse und Team-Management für Handball',
     audience: 'Trainer, Vereine und Handball-Teams',
   },
 
@@ -200,7 +200,7 @@ export const CLUB_CONFIG = {
   seo: {
     // Default meta description
     description:
-      'Handball-Statistiken live per Tap erfassen: Wurfquoten, Wurfbilder & Spielerwerte automatisch ausgewertet – offline in der Halle. Live-Demo ohne Account testen.',
+      'Handball-Statistik & Videoanalyse in einer App: live per Tap erfassen, Wurfquoten & Wurfbilder automatisch, Spielszenen taggen und besprechen. Kostenlos starten.',
 
     // Short description for social media
     shortDescription:
@@ -228,6 +228,9 @@ export const CLUB_CONFIG = {
       'Handball KI-Analyse',
       'Handball Statistik kostenlos',
       'Handball Live-Demo',
+      'Handball Videoanalyse',
+      'Handball Videoanalyse App',
+      'Handball Video-Tagging',
     ],
 
     // Page-specific titles and descriptions
@@ -235,7 +238,7 @@ export const CLUB_CONFIG = {
       home: {
         title: 'Handball-Statistiken live erfassen & analysieren | Statix App',
         description:
-          'Handball-Statistiken live per Tap erfassen: Wurfquoten, Wurfbilder & Spielerwerte automatisch ausgewertet – offline in der Halle. Live-Demo ohne Account testen.',
+          'Handball-Statistik & Videoanalyse in einer App: live per Tap erfassen, Wurfquoten & Wurfbilder automatisch, Spielszenen taggen und besprechen. Kostenlos starten.',
       },
       impressum: {
         title: 'Impressum',

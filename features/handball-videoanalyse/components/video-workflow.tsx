@@ -1,17 +1,20 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import ChapterFilm from '@/features/landing-page/components/chapter-film';
 import {
   Grain,
-  PlayerMagnet,
   SectionHeading,
 } from '@/features/landing-page/components/tactic';
+import { stepsFilmBounds, VIDEO_ANALYSIS_FILM } from '@/features/films/data/films';
 import type { VideoAnalysisStep } from '../data/video-analysis-content';
 
 /**
- * The five steps from the tripod in the hall to the clip on a player's phone.
- * Rendered as an ordered list with jersey magnets as the numbers, and mirrored
- * into `HowTo` schema by the route.
+ * The five steps from the tripod in the hall to the clip on a player's phone,
+ * shown as a chaptered film (Remotion, repo remotion-statix, `FilmVideoanalyse`)
+ * instead of five paragraphs. The step texts stay in the document — as the
+ * chapter labels, as a transcript to unfold, and as the full list when motion
+ * is reduced — and are mirrored into `HowTo` schema by the route.
  * @returns A JSX element rendering the numbered workflow band on paper.
  */
 export default function VideoWorkflow() {
@@ -23,7 +26,7 @@ export default function VideoWorkflow() {
       id='ablauf'
       className='relative w-full scroll-mt-24 overflow-hidden bg-paper py-20 md:py-28'>
       <Grain tone='paper' />
-      <div className='relative mx-auto max-w-4xl px-6 sm:px-10'>
+      <div className='relative mx-auto max-w-6xl px-6 sm:px-10'>
         <SectionHeading
           align='left'
           kicker={t('kicker')}
@@ -31,28 +34,20 @@ export default function VideoWorkflow() {
           description={t('description')}
         />
 
-        <ol className='mt-12 flex flex-col'>
-          {steps.map((step, index) => (
-            <li
-              key={step.title}
-              className='flex items-start gap-4 border-t border-ink/10 py-6'>
-              <PlayerMagnet
-                number={index + 1}
-                team='home'
-                size='md'
-                className='shrink-0'
-              />
-              <div>
-                <h3 className='font-display text-lg font-bold tracking-tight text-ink'>
-                  {step.title}
-                </h3>
-                <p className='mt-1.5 max-w-[64ch] text-[15px] leading-7 text-ink/70'>
-                  {step.text}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <div className='mt-10'>
+          <ChapterFilm
+            name={VIDEO_ANALYSIS_FILM}
+            dir='films'
+            bounds={stepsFilmBounds(steps.length)}
+            tone='paper'
+            chapters={steps.map((step) => ({ label: step.title, text: step.text }))}
+            alt={t('filmAlt')}
+            chaptersLabel={t('title')}
+            playLabel={t('play')}
+            pauseLabel={t('pause')}
+            transcriptLabel={t('transcript')}
+          />
+        </div>
       </div>
     </section>
   );

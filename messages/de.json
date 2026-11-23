@@ -1569,7 +1569,7 @@
   },
   "productPage": {
     "hero": {
-      "badge": "Handball-Statistik-App",
+      "badge": "Handball-Statistik & Videoanalyse",
       "headlineLead": "Handball live erfassen.",
       "headlineHighlight": "Sehen, wo dein",
       "headlineTail": "Spiel kippt.",
@@ -2807,7 +2807,7 @@
       "titlePrefix": "Was ist",
       "titleBrand": "Statix",
       "titleSuffix": "?",
-      "lede": "Statix ist die Handball-Statistik-App für Trainer, Vereine und Teams: Spiele live per Tap erfassen – Tore, Würfe, Paraden, Strafen und Wechsel – und Wurfquoten, Wurfbilder, Spielerwerte und KI-Analysen automatisch auswerten. Entwickelt in Deutschland, direkt im Browser, offline-fähig in der Halle.",
+      "lede": "Statix ist die Handball-Statistik-App für Trainer, Vereine und Teams: Spiele live per Tap erfassen – Tore, Würfe, Paraden, Strafen und Wechsel – und Wurfquoten, Wurfbilder, Spielerwerte und KI-Analysen automatisch auswerten. Entwickelt in Deutschland, direkt im Browser, offline-fähig in der Halle. Dazu Videoanalyse: Spielszenen taggen, mit der Mannschaft besprechen und an einzelne Spielerinnen schicken (Beta).",
       "ctaFeatures": "Alle Funktionen ansehen",
       "trust": [
         "Made in Germany",
@@ -7262,7 +7262,14 @@
           "title": "Ein Handballspiel richtig filmen",
           "text": "Kamera, Stativ, Position und Ton – was für eine brauchbare Aufnahme reicht."
         }
-      }
+      },
+      "filmKicker": "Kurz gezeigt",
+      "filmTitle": "So geht {feature}",
+      "filmAlt": "Kurzfilm: {feature} Schritt für Schritt am echten Bild der App",
+      "filmPlay": "Film abspielen",
+      "filmPause": "Film anhalten",
+      "filmTranscript": "Die Schritte als Text",
+      "overviewMore": "Mehr dazu lesen"
     },
     "taggingBench": {
       "kicker": "Wie eine Szene entsteht",
@@ -7504,7 +7511,11 @@
           "title": "Szenen an Spielerinnen schicken",
           "text": "Am meisten bewirkt der Zusammenschnitt für eine einzige Person: ihre Würfe, ihre Abwehraktionen. Sie sieht ihn am Handy, wann sie will – und du siehst, ob sie ihn geöffnet hat."
         }
-      ]
+      ],
+      "filmAlt": "Kurzfilm: Handball-Videoanalyse in fünf Schritten am echten Bild der App",
+      "play": "Film abspielen",
+      "pause": "Film anhalten",
+      "transcript": "Die Schritte als Text"
     },
     "checklist": {
       "kicker": "Checkliste",
